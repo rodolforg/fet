@@ -1,0 +1,4131 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<fet version="5.30.3">
+
+<Institution_Name>Nile Theological College, Khartoum North - Bahri</Institution_Name>
+
+<Comments>Go and make disciples (Matth.28:19)</Comments>
+
+<Days_List>
+<Number_of_Days>5</Number_of_Days>
+<Day>
+	<Name>Monday</Name>
+</Day>
+<Day>
+	<Name>Tuesday</Name>
+</Day>
+<Day>
+	<Name>Wednesday</Name>
+</Day>
+<Day>
+	<Name>Thursday</Name>
+</Day>
+<Day>
+	<Name>Saturday</Name>
+</Day>
+</Days_List>
+
+<Hours_List>
+<Number_of_Hours>3</Number_of_Hours>
+<Hour>
+	<Name>1st</Name>
+</Hour>
+<Hour>
+	<Name>2nd</Name>
+</Hour>
+<Hour>
+	<Name>3rd</Name>
+</Hour>
+</Hours_List>
+
+<Subjects_List>
+<Subject>
+	<Name>RE 820 Isl. / Chr. </Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>MT 310 Backgr NT</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>OT 710/920 Ex. of Pent/Gen.</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>PM 780 Ch Admin</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>PM 781 Marr. &amp; fam.</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ED790 Curr dev.</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>MI 930/970 Ch.growth</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>NT921 Women/men in Bible</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ED791 Teach Engl.3</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ED792 Teach. Hist. 2</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>GS 101 Computer Science</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>CH 320 Ch Hist. 1</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>PS 340 Psychology</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>EN 350 Engl. 2</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>OT 910/911 Hebrew 2/3</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>NT 912 Ex of Matt</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>CO 920 Hist. of Missiology</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>CH 922 Hist. of Chr. thought</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>RE 921 Intro to world rel</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>MI 930 Ch Growth</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>LI 930 Mus in church</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>LI 931 Worship</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ED 940 Comm. publ. speaking</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TL 940 Teach Arabic 1</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TG 940 Teach Geogr 1</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TL 940 Teach Engl 1</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ED 793 Teaching Arabic 3</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Small Group</Name>
+	<Comments></Comments>
+</Subject>
+</Subjects_List>
+
+<Activity_Tags_List>
+<Activity_Tag>
+	<Name>(small group)</Name>
+	<Comments></Comments>
+</Activity_Tag>
+<Activity_Tag>
+	<Name>&lt;4</Name>
+	<Comments></Comments>
+</Activity_Tag>
+<Activity_Tag>
+	<Name>singing</Name>
+	<Comments></Comments>
+</Activity_Tag>
+<Activity_Tag>
+	<Name>office</Name>
+	<Comments></Comments>
+</Activity_Tag>
+</Activity_Tags_List>
+
+<Teachers_List>
+<Teacher>
+	<Name>Dr. Daniel Thabo</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Dr. Joshua Otor</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Rev. Ayman Mahrous</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Rev. Christoph Schilling</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Rev. Debbie Blane</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Rev. Francis Clement</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Rev. Hanna Refaat</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Rev. Ismail Kanani</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Rev. John Tong</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Rev. Michael Aban</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Father Dr. Philotheos Faraj</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Rev. Santino Odong</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Rev. Thomas Maluit</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Rev. Tut Kong</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Rev. Yahya A/Rahim</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Ust. Abdelgadir</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Ust. Francis Yukusuk</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Ust. Jackson Albino</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Rev. Musa Kody</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Ust. Simon Chuol</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Ust. Woldeyesus</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Usta. Aida Nasser</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Usta. Mistire Girma</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Ust. Ibrahim al-Sayyed</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+</Teachers_List>
+
+<Students_List>
+<Year>
+	<Name>Senior English</Name>
+	<Number_of_Students>15</Number_of_Students>
+	<Comments></Comments>
+	<Group>
+		<Name>Senior English PX</Name>
+		<Number_of_Students>5</Number_of_Students>
+		<Comments></Comments>
+		<Subgroup>
+			<Name>Senior English PX elective 1</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+		<Subgroup>
+			<Name>Senior English PX elective 2</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+	</Group>
+	<Group>
+		<Name>Senior English PG</Name>
+		<Number_of_Students>4</Number_of_Students>
+		<Comments></Comments>
+		<Subgroup>
+			<Name>Senior English PG elective 1</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+		<Subgroup>
+			<Name>Senior English PG elective 2</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+	</Group>
+	<Group>
+		<Name>Senior English CE</Name>
+		<Number_of_Students>3</Number_of_Students>
+		<Comments></Comments>
+		<Subgroup>
+			<Name>Senior English CE elective 1</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+		<Subgroup>
+			<Name>Senior English CE elective 2</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+	</Group>
+	<Group>
+		<Name>Senior English elective 1</Name>
+		<Number_of_Students>4</Number_of_Students>
+		<Comments></Comments>
+		<Subgroup>
+			<Name>Senior English PX elective 1</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+		<Subgroup>
+			<Name>Senior English PG elective 1</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+		<Subgroup>
+			<Name>Senior English CE elective 1</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+	</Group>
+	<Group>
+		<Name>Senior English elective 2</Name>
+		<Number_of_Students>8</Number_of_Students>
+		<Comments></Comments>
+		<Subgroup>
+			<Name>Senior English PX elective 2</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+		<Subgroup>
+			<Name>Senior English PG elective 2</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+		<Subgroup>
+			<Name>Senior English CE elective 2</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+	</Group>
+</Year>
+<Year>
+	<Name>Senior Arabic</Name>
+	<Number_of_Students>23</Number_of_Students>
+	<Comments></Comments>
+	<Group>
+		<Name>Senior Arabic/PX</Name>
+		<Number_of_Students>5</Number_of_Students>
+		<Comments></Comments>
+		<Subgroup>
+			<Name>Senior Arabic/PX/elective 1</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+		<Subgroup>
+			<Name>Senior Arabic/PX/elective 2</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+	</Group>
+	<Group>
+		<Name>Senior Arabic/PG</Name>
+		<Number_of_Students>10</Number_of_Students>
+		<Comments></Comments>
+		<Subgroup>
+			<Name>Senior Arabic/PG/elective 1</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+		<Subgroup>
+			<Name>Senior Arabic/PG/elective 2</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+	</Group>
+	<Group>
+		<Name>Senior Arabic/CE</Name>
+		<Number_of_Students>7</Number_of_Students>
+		<Comments></Comments>
+		<Subgroup>
+			<Name>Senior Arabic/CE/elective 1</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+		<Subgroup>
+			<Name>Senior Arabic/CE/elective 2</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+	</Group>
+	<Group>
+		<Name>Senior Arabic/elective 1</Name>
+		<Number_of_Students>7</Number_of_Students>
+		<Comments></Comments>
+		<Subgroup>
+			<Name>Senior Arabic/PX/elective 1</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+		<Subgroup>
+			<Name>Senior Arabic/PG/elective 1</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+		<Subgroup>
+			<Name>Senior Arabic/CE/elective 1</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+	</Group>
+	<Group>
+		<Name>Senior Arabic/elective 2</Name>
+		<Number_of_Students>15</Number_of_Students>
+		<Comments></Comments>
+		<Subgroup>
+			<Name>Senior Arabic/PX/elective 2</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+		<Subgroup>
+			<Name>Senior Arabic/PG/elective 2</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+		<Subgroup>
+			<Name>Senior Arabic/CE/elective 2</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+	</Group>
+</Year>
+<Year>
+	<Name>Junior English</Name>
+	<Number_of_Students>24</Number_of_Students>
+	<Comments></Comments>
+	<Group>
+		<Name>Junior English BS </Name>
+		<Number_of_Students>4</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+	<Group>
+		<Name>Junior English T/CH</Name>
+		<Number_of_Students>3</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+	<Group>
+		<Name>Junior English PM </Name>
+		<Number_of_Students>10</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+	<Group>
+		<Name>Junior English CE</Name>
+		<Number_of_Students>7</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+</Year>
+<Year>
+	<Name>Junior Arabic</Name>
+	<Number_of_Students>13</Number_of_Students>
+	<Comments></Comments>
+	<Group>
+		<Name>Junior Arabic BS</Name>
+		<Number_of_Students>3</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+	<Group>
+		<Name>Junior Arabic T/CH</Name>
+		<Number_of_Students>2</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+	<Group>
+		<Name>Junior Arabic PM</Name>
+		<Number_of_Students>3</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+	<Group>
+		<Name>Junior Arabic CE</Name>
+		<Number_of_Students>5</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+</Year>
+</Students_List>
+
+<Activities_List>
+<Activity>
+	<Teacher>Rev. Musa Kody</Teacher>
+	<Subject>OT 710/920 Ex. of Pent/Gen.</Subject>
+	<Students>Junior English BS </Students>
+	<Students>Senior English PX</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>3</Id>
+	<Activity_Group_Id>3</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Musa Kody</Teacher>
+	<Subject>OT 710/920 Ex. of Pent/Gen.</Subject>
+	<Students>Junior English BS </Students>
+	<Students>Senior English PX</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>4</Id>
+	<Activity_Group_Id>3</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Christoph Schilling</Teacher>
+	<Subject>LI 930 Mus in church</Subject>
+	<Activity_Tag>singing</Activity_Tag>
+	<Students>Junior Arabic PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>11</Id>
+	<Activity_Group_Id>11</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Christoph Schilling</Teacher>
+	<Subject>LI 930 Mus in church</Subject>
+	<Activity_Tag>singing</Activity_Tag>
+	<Students>Junior Arabic PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>12</Id>
+	<Activity_Group_Id>11</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ust. Francis Yukusuk</Teacher>
+	<Subject>EN 350 Engl. 2</Subject>
+	<Students>Junior Arabic</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>31</Id>
+	<Activity_Group_Id>31</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ust. Francis Yukusuk</Teacher>
+	<Subject>EN 350 Engl. 2</Subject>
+	<Students>Junior Arabic</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>32</Id>
+	<Activity_Group_Id>31</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Thomas Maluit</Teacher>
+	<Subject>PS 340 Psychology</Subject>
+	<Students>Junior English</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>45</Id>
+	<Activity_Group_Id>45</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Thomas Maluit</Teacher>
+	<Subject>PS 340 Psychology</Subject>
+	<Students>Junior English</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>46</Id>
+	<Activity_Group_Id>45</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Ayman Mahrous</Teacher>
+	<Subject>LI 931 Worship</Subject>
+	<Students>Junior Arabic PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>65</Id>
+	<Activity_Group_Id>65</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Ayman Mahrous</Teacher>
+	<Subject>LI 931 Worship</Subject>
+	<Students>Junior Arabic PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>66</Id>
+	<Activity_Group_Id>65</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Francis Clement</Teacher>
+	<Subject>ED 940 Comm. publ. speaking</Subject>
+	<Students>Junior English CE</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>71</Id>
+	<Activity_Group_Id>71</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Francis Clement</Teacher>
+	<Subject>ED 940 Comm. publ. speaking</Subject>
+	<Students>Junior English CE</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>72</Id>
+	<Activity_Group_Id>71</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Francis Clement</Teacher>
+	<Subject>CO 920 Hist. of Missiology</Subject>
+	<Students>Junior Arabic T/CH</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>73</Id>
+	<Activity_Group_Id>73</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Francis Clement</Teacher>
+	<Subject>CO 920 Hist. of Missiology</Subject>
+	<Students>Junior Arabic T/CH</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>74</Id>
+	<Activity_Group_Id>73</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ust. Abdelgadir</Teacher>
+	<Subject>TL 940 Teach Arabic 1</Subject>
+	<Students>Junior Arabic CE</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>75</Id>
+	<Activity_Group_Id>75</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ust. Abdelgadir</Teacher>
+	<Subject>TL 940 Teach Arabic 1</Subject>
+	<Students>Junior Arabic CE</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>76</Id>
+	<Activity_Group_Id>75</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ust. Francis Yukusuk</Teacher>
+	<Subject>TL 940 Teach Engl 1</Subject>
+	<Students>Junior English CE</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>77</Id>
+	<Activity_Group_Id>77</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ust. Francis Yukusuk</Teacher>
+	<Subject>TL 940 Teach Engl 1</Subject>
+	<Students>Junior English CE</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>78</Id>
+	<Activity_Group_Id>77</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Ayman Mahrous</Teacher>
+	<Subject>CH 922 Hist. of Chr. thought</Subject>
+	<Students>Junior Arabic T/CH</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>83</Id>
+	<Activity_Group_Id>83</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Ayman Mahrous</Teacher>
+	<Subject>CH 922 Hist. of Chr. thought</Subject>
+	<Students>Junior Arabic T/CH</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>84</Id>
+	<Activity_Group_Id>83</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Musa Kody</Teacher>
+	<Subject>CH 922 Hist. of Chr. thought</Subject>
+	<Students>Junior English T/CH</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>89</Id>
+	<Activity_Group_Id>89</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Musa Kody</Teacher>
+	<Subject>CH 922 Hist. of Chr. thought</Subject>
+	<Students>Junior English T/CH</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>90</Id>
+	<Activity_Group_Id>89</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Usta. Mistire Girma</Teacher>
+	<Subject>CH 320 Ch Hist. 1</Subject>
+	<Students>Junior English</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>91</Id>
+	<Activity_Group_Id>91</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Usta. Mistire Girma</Teacher>
+	<Subject>CH 320 Ch Hist. 1</Subject>
+	<Students>Junior English</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>92</Id>
+	<Activity_Group_Id>91</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Usta. Mistire Girma</Teacher>
+	<Subject>RE 921 Intro to world rel</Subject>
+	<Students>Junior English T/CH</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>93</Id>
+	<Activity_Group_Id>93</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Usta. Mistire Girma</Teacher>
+	<Subject>RE 921 Intro to world rel</Subject>
+	<Students>Junior English T/CH</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>94</Id>
+	<Activity_Group_Id>93</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Debbie Blane</Teacher>
+	<Subject>CO 920 Hist. of Missiology</Subject>
+	<Students>Junior English T/CH</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>97</Id>
+	<Activity_Group_Id>97</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Debbie Blane</Teacher>
+	<Subject>CO 920 Hist. of Missiology</Subject>
+	<Students>Junior English T/CH</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>98</Id>
+	<Activity_Group_Id>97</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Francis Clement</Teacher>
+	<Subject>LI 931 Worship</Subject>
+	<Students>Junior English PM </Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>99</Id>
+	<Activity_Group_Id>99</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Francis Clement</Teacher>
+	<Subject>LI 931 Worship</Subject>
+	<Students>Junior English PM </Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>100</Id>
+	<Activity_Group_Id>99</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Usta. Aida Nasser</Teacher>
+	<Subject>ED790 Curr dev.</Subject>
+	<Students>Senior English PG</Students>
+	<Students>Senior English CE</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>103</Id>
+	<Activity_Group_Id>103</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Usta. Aida Nasser</Teacher>
+	<Subject>ED790 Curr dev.</Subject>
+	<Students>Senior English PG</Students>
+	<Students>Senior English CE</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>104</Id>
+	<Activity_Group_Id>103</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Usta. Aida Nasser</Teacher>
+	<Subject>ED790 Curr dev.</Subject>
+	<Students>Senior Arabic/PG</Students>
+	<Students>Senior Arabic/CE</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>105</Id>
+	<Activity_Group_Id>105</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Usta. Aida Nasser</Teacher>
+	<Subject>ED790 Curr dev.</Subject>
+	<Students>Senior Arabic/PG</Students>
+	<Students>Senior Arabic/CE</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>106</Id>
+	<Activity_Group_Id>105</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. John Tong</Teacher>
+	<Subject>PM 780 Ch Admin</Subject>
+	<Students>Senior English PX</Students>
+	<Students>Senior English PG</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>109</Id>
+	<Activity_Group_Id>109</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. John Tong</Teacher>
+	<Subject>PM 780 Ch Admin</Subject>
+	<Students>Senior English PX</Students>
+	<Students>Senior English PG</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>110</Id>
+	<Activity_Group_Id>109</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Christoph Schilling</Teacher>
+	<Subject>PM 781 Marr. &amp; fam.</Subject>
+	<Students>Senior English PX</Students>
+	<Students>Senior English PG</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>111</Id>
+	<Activity_Group_Id>111</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Christoph Schilling</Teacher>
+	<Subject>PM 781 Marr. &amp; fam.</Subject>
+	<Students>Senior English PX</Students>
+	<Students>Senior English PG</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>112</Id>
+	<Activity_Group_Id>111</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Hanna Refaat</Teacher>
+	<Subject>MI 930/970 Ch.growth</Subject>
+	<Students>Senior English elective 2</Students>
+	<Students>Junior English PM </Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>113</Id>
+	<Activity_Group_Id>113</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Hanna Refaat</Teacher>
+	<Subject>MI 930/970 Ch.growth</Subject>
+	<Students>Senior English elective 2</Students>
+	<Students>Junior English PM </Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>114</Id>
+	<Activity_Group_Id>113</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Hanna Refaat</Teacher>
+	<Subject>MI 930/970 Ch.growth</Subject>
+	<Students>Senior Arabic/elective 2</Students>
+	<Students>Junior Arabic PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>115</Id>
+	<Activity_Group_Id>115</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Hanna Refaat</Teacher>
+	<Subject>MI 930/970 Ch.growth</Subject>
+	<Students>Senior Arabic/elective 2</Students>
+	<Students>Junior Arabic PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>116</Id>
+	<Activity_Group_Id>115</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ust. Francis Yukusuk</Teacher>
+	<Subject>ED791 Teach Engl.3</Subject>
+	<Students>Senior English CE</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>117</Id>
+	<Activity_Group_Id>117</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ust. Francis Yukusuk</Teacher>
+	<Subject>ED791 Teach Engl.3</Subject>
+	<Students>Senior English CE</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>118</Id>
+	<Activity_Group_Id>117</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Dr. Daniel Thabo</Teacher>
+	<Subject>ED792 Teach. Hist. 2</Subject>
+	<Students>Senior Arabic/CE</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>121</Id>
+	<Activity_Group_Id>121</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Dr. Daniel Thabo</Teacher>
+	<Subject>ED792 Teach. Hist. 2</Subject>
+	<Students>Senior Arabic/CE</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>122</Id>
+	<Activity_Group_Id>121</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Dr. Daniel Thabo</Teacher>
+	<Subject>ED792 Teach. Hist. 2</Subject>
+	<Students>Senior English CE</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>123</Id>
+	<Activity_Group_Id>123</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Dr. Daniel Thabo</Teacher>
+	<Subject>ED792 Teach. Hist. 2</Subject>
+	<Students>Senior English CE</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>124</Id>
+	<Activity_Group_Id>123</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ust. Jackson Albino</Teacher>
+	<Subject>NT921 Women/men in Bible</Subject>
+	<Students>Senior Arabic/elective 1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>127</Id>
+	<Activity_Group_Id>127</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ust. Jackson Albino</Teacher>
+	<Subject>NT921 Women/men in Bible</Subject>
+	<Students>Senior Arabic/elective 1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>128</Id>
+	<Activity_Group_Id>127</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Santino Odong</Teacher>
+	<Subject>PM 780 Ch Admin</Subject>
+	<Students>Senior Arabic/PX</Students>
+	<Students>Senior Arabic/PG</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>129</Id>
+	<Activity_Group_Id>129</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Santino Odong</Teacher>
+	<Subject>PM 780 Ch Admin</Subject>
+	<Students>Senior Arabic/PX</Students>
+	<Students>Senior Arabic/PG</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>130</Id>
+	<Activity_Group_Id>129</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Ayman Mahrous</Teacher>
+	<Subject>PM 781 Marr. &amp; fam.</Subject>
+	<Students>Senior Arabic/PX</Students>
+	<Students>Senior Arabic/PG</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>131</Id>
+	<Activity_Group_Id>131</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Ayman Mahrous</Teacher>
+	<Subject>PM 781 Marr. &amp; fam.</Subject>
+	<Students>Senior Arabic/PX</Students>
+	<Students>Senior Arabic/PG</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>132</Id>
+	<Activity_Group_Id>131</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ust. Woldeyesus</Teacher>
+	<Subject>GS 101 Computer Science</Subject>
+	<Students>Senior English</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>133</Id>
+	<Activity_Group_Id>133</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ust. Woldeyesus</Teacher>
+	<Subject>GS 101 Computer Science</Subject>
+	<Students>Senior English</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>134</Id>
+	<Activity_Group_Id>133</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Christoph Schilling</Teacher>
+	<Subject>LI 930 Mus in church</Subject>
+	<Activity_Tag>singing</Activity_Tag>
+	<Students>Junior English PM </Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>137</Id>
+	<Activity_Group_Id>137</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Christoph Schilling</Teacher>
+	<Subject>LI 930 Mus in church</Subject>
+	<Activity_Tag>singing</Activity_Tag>
+	<Students>Junior English PM </Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>138</Id>
+	<Activity_Group_Id>137</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Ismail Kanani</Teacher>
+	<Subject>CH 320 Ch Hist. 1</Subject>
+	<Students>Junior Arabic</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>139</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ust. Simon Chuol</Teacher>
+	<Subject>PS 340 Psychology</Subject>
+	<Students>Junior Arabic</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>141</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Tut Kong</Teacher>
+	<Subject>ED 940 Comm. publ. speaking</Subject>
+	<Students>Junior Arabic CE</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>142</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Yahya A/Rahim</Teacher>
+	<Subject>NT 912 Ex of Matt</Subject>
+	<Students>Junior English BS </Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>143</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Yahya A/Rahim</Teacher>
+	<Subject>NT 912 Ex of Matt</Subject>
+	<Students>Junior Arabic BS</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>144</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Michael Aban</Teacher>
+	<Subject>OT 910/911 Hebrew 2/3</Subject>
+	<Activity_Tag>office</Activity_Tag>
+	<Students>Junior English BS </Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>145</Id>
+	<Activity_Group_Id>145</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Michael Aban</Teacher>
+	<Subject>OT 910/911 Hebrew 2/3</Subject>
+	<Activity_Tag>office</Activity_Tag>
+	<Students>Junior English BS </Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>146</Id>
+	<Activity_Group_Id>145</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Michael Aban</Teacher>
+	<Subject>OT 910/911 Hebrew 2/3</Subject>
+	<Activity_Tag>office</Activity_Tag>
+	<Students>Junior Arabic BS</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>147</Id>
+	<Activity_Group_Id>147</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Michael Aban</Teacher>
+	<Subject>OT 910/911 Hebrew 2/3</Subject>
+	<Activity_Tag>office</Activity_Tag>
+	<Students>Junior Arabic BS</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>148</Id>
+	<Activity_Group_Id>147</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Michael Aban</Teacher>
+	<Subject>OT 710/920 Ex. of Pent/Gen.</Subject>
+	<Students>Senior Arabic/PX</Students>
+	<Students>Junior Arabic BS</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>149</Id>
+	<Activity_Group_Id>149</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Michael Aban</Teacher>
+	<Subject>OT 710/920 Ex. of Pent/Gen.</Subject>
+	<Students>Senior Arabic/PX</Students>
+	<Students>Junior Arabic BS</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>150</Id>
+	<Activity_Group_Id>149</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ust. Abdelgadir</Teacher>
+	<Subject>ED 793 Teaching Arabic 3</Subject>
+	<Students>Senior Arabic/CE</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>151</Id>
+	<Activity_Group_Id>151</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ust. Abdelgadir</Teacher>
+	<Subject>ED 793 Teaching Arabic 3</Subject>
+	<Students>Senior Arabic/CE</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>152</Id>
+	<Activity_Group_Id>151</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ust. Jackson Albino</Teacher>
+	<Subject>RE 921 Intro to world rel</Subject>
+	<Students>Junior Arabic T/CH</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>157</Id>
+	<Activity_Group_Id>157</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ust. Jackson Albino</Teacher>
+	<Subject>RE 921 Intro to world rel</Subject>
+	<Students>Junior Arabic T/CH</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>158</Id>
+	<Activity_Group_Id>157</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Father Dr. Philotheos Faraj</Teacher>
+	<Subject>RE 820 Isl. / Chr. </Subject>
+	<Students>Senior Arabic</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>159</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Debbie Blane</Teacher>
+	<Subject>EN 350 Engl. 2</Subject>
+	<Students>Junior English</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>160</Id>
+	<Activity_Group_Id>160</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Debbie Blane</Teacher>
+	<Subject>EN 350 Engl. 2</Subject>
+	<Students>Junior English</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>161</Id>
+	<Activity_Group_Id>160</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Dr. Joshua Otor</Teacher>
+	<Subject>TG 940 Teach Geogr 1</Subject>
+	<Students>Junior English CE</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>162</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ust. Ibrahim al-Sayyed</Teacher>
+	<Subject>TG 940 Teach Geogr 1</Subject>
+	<Students>Junior Arabic CE</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>163</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Santino Odong</Teacher>
+	<Subject>Small Group</Subject>
+	<Students>Senior English</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>164</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Debbie Blane</Teacher>
+	<Teacher>Rev. John Tong</Teacher>
+	<Subject>Small Group</Subject>
+	<Activity_Tag>(small group)</Activity_Tag>
+	<Students>Junior English</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>165</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rev. Hanna Refaat</Teacher>
+	<Teacher>Rev. Musa Kody</Teacher>
+	<Subject>Small Group</Subject>
+	<Activity_Tag>(small group)</Activity_Tag>
+	<Students>Senior Arabic</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>166</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Usta. Mistire Girma</Teacher>
+	<Subject>Small Group</Subject>
+	<Activity_Tag>(small group)</Activity_Tag>
+	<Students>Junior Arabic</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>167</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+</Activities_List>
+
+<Buildings_List>
+</Buildings_List>
+
+<Rooms_List>
+<Room>
+	<Name>R1</Name>
+	<Building></Building>
+	<Capacity>25</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>R2</Name>
+	<Building></Building>
+	<Capacity>24</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>R3</Name>
+	<Building></Building>
+	<Capacity>23</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>R4</Name>
+	<Building></Building>
+	<Capacity>22</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>Chapel</Name>
+	<Building></Building>
+	<Capacity>15</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>Rak</Name>
+	<Building></Building>
+	<Capacity>12</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>Office Reg</Name>
+	<Building></Building>
+	<Capacity>4</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>Staffroom</Name>
+	<Building></Building>
+	<Capacity>3</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>Lab</Name>
+	<Building></Building>
+	<Capacity>15</Capacity>
+	<Comments></Comments>
+</Room>
+</Rooms_List>
+
+<Time_Constraints_List>
+<ConstraintBasicCompulsoryTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintBasicCompulsoryTime>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Rev. Hanna Refaat</Teacher>
+	<Number_of_Not_Available_Times>9</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Rev. Santino Odong</Teacher>
+	<Number_of_Not_Available_Times>12</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Rev. Christoph Schilling</Teacher>
+	<Number_of_Not_Available_Times>9</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintBreakTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Break_Times>1</Number_of_Break_Times>
+	<Break_Time>
+		<Day>Wednesday</Day>
+		<Hour>2nd</Hour>
+	</Break_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintBreakTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Dr. Daniel Thabo</Teacher>
+	<Number_of_Not_Available_Times>11</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Usta. Aida Nasser</Teacher>
+	<Number_of_Not_Available_Times>11</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Rev. Debbie Blane</Teacher>
+	<Number_of_Not_Available_Times>9</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Ust. Abdelgadir</Teacher>
+	<Number_of_Not_Available_Times>11</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Rev. Michael Aban</Teacher>
+	<Number_of_Not_Available_Times>9</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>97</Activity_Id>
+	<Activity_Id>98</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>111</Activity_Id>
+	<Activity_Id>112</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Father Dr. Philotheos Faraj</Teacher>
+	<Number_of_Not_Available_Times>13</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Rev. Yahya A/Rahim</Teacher>
+	<Number_of_Not_Available_Times>11</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>98</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>145</Activity_Id>
+	<Activity_Id>146</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>98</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>147</Activity_Id>
+	<Activity_Id>148</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>98</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>149</Activity_Id>
+	<Activity_Id>150</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Rev. Francis Clement</Teacher>
+	<Number_of_Not_Available_Times>9</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Ust. Jackson Albino</Teacher>
+	<Number_of_Not_Available_Times>10</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Rev. Ismail Kanani</Teacher>
+	<Number_of_Not_Available_Times>13</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>160</Activity_Id>
+	<Activity_Id>161</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>160</Activity_Id>
+	<Activity_Id>161</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Ust. Simon Chuol</Teacher>
+	<Number_of_Not_Available_Times>13</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Rev. Thomas Maluit</Teacher>
+	<Number_of_Not_Available_Times>13</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Dr. Joshua Otor</Teacher>
+	<Number_of_Not_Available_Times>13</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Rev. Ayman Mahrous</Teacher>
+	<Number_of_Not_Available_Times>9</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Rev. John Tong</Teacher>
+	<Number_of_Not_Available_Times>12</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Rev. Tut Kong</Teacher>
+	<Number_of_Not_Available_Times>13</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Ust. Woldeyesus</Teacher>
+	<Number_of_Not_Available_Times>13</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Usta. Mistire Girma</Teacher>
+	<Number_of_Not_Available_Times>10</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Ust. Ibrahim al-Sayyed</Teacher>
+	<Number_of_Not_Available_Times>13</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>157</Activity_Id>
+	<Preferred_Day>Tuesday</Preferred_Day>
+	<Preferred_Hour>1st</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>167</Activity_Id>
+	<Preferred_Day>Tuesday</Preferred_Day>
+	<Preferred_Hour>3rd</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>166</Activity_Id>
+	<Preferred_Day>Tuesday</Preferred_Day>
+	<Preferred_Hour>3rd</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>165</Activity_Id>
+	<Preferred_Day>Tuesday</Preferred_Day>
+	<Preferred_Hour>3rd</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Ust. Francis Yukusuk</Teacher>
+	<Number_of_Not_Available_Times>8</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Rev. Musa Kody</Teacher>
+	<Number_of_Not_Available_Times>10</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Monday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Tuesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Wednesday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>1st</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>2nd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thursday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Saturday</Day>
+		<Hour>3rd</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+</Time_Constraints_List>
+
+<Space_Constraints_List>
+<ConstraintBasicCompulsorySpace>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintBasicCompulsorySpace>
+<ConstraintSubjectPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Subject>GS 101 Computer Science</Subject>
+	<Room>Lab</Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintSubjectPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>71</Activity_Id>
+	<Room>Lab</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>72</Activity_Id>
+	<Room>Lab</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>99</Activity_Id>
+	<Room>Lab</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>100</Activity_Id>
+	<Room>Lab</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintStudentsSetHomeRoom>
+	<Weight_Percentage>98</Weight_Percentage>
+	<Students>Senior Arabic</Students>
+	<Room>R3</Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintStudentsSetHomeRoom>
+<ConstraintStudentsSetHomeRoom>
+	<Weight_Percentage>98</Weight_Percentage>
+	<Students>Senior English</Students>
+	<Room>R4</Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintStudentsSetHomeRoom>
+<ConstraintStudentsSetHomeRoom>
+	<Weight_Percentage>98</Weight_Percentage>
+	<Students>Junior English</Students>
+	<Room>R1</Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintStudentsSetHomeRoom>
+<ConstraintStudentsSetHomeRoom>
+	<Weight_Percentage>98</Weight_Percentage>
+	<Students>Junior Arabic</Students>
+	<Room>R2</Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintStudentsSetHomeRoom>
+<ConstraintActivityTagPreferredRoom>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Tag>office</Activity_Tag>
+	<Room>Office Reg</Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityTagPreferredRoom>
+<ConstraintActivityTagPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Tag>singing</Activity_Tag>
+	<Number_of_Preferred_Rooms>3</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityTagPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>3</Activity_Id>
+	<Number_of_Preferred_Rooms>5</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Preferred_Room>R4</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>143</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>89</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>93</Activity_Id>
+	<Number_of_Preferred_Rooms>5</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Preferred_Room>R3</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>97</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>99</Activity_Id>
+	<Number_of_Preferred_Rooms>5</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Preferred_Room>Lab</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>113</Activity_Id>
+	<Number_of_Preferred_Rooms>5</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Preferred_Room>R4</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>137</Activity_Id>
+	<Number_of_Preferred_Rooms>3</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>71</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Lab</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>77</Activity_Id>
+	<Number_of_Preferred_Rooms>3</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>162</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>3</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>R4</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>143</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>145</Activity_Id>
+	<Number_of_Preferred_Rooms>3</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Office Reg</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>89</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>93</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>97</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>113</Activity_Id>
+	<Number_of_Preferred_Rooms>3</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>R4</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>77</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>144</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>144</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>73</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>73</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>83</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>83</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>157</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>157</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>11</Activity_Id>
+	<Number_of_Preferred_Rooms>3</Number_of_Preferred_Rooms>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>11</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>65</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>65</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>75</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>R1</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>75</Activity_Id>
+	<Number_of_Preferred_Rooms>3</Number_of_Preferred_Rooms>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>142</Activity_Id>
+	<Number_of_Preferred_Rooms>3</Number_of_Preferred_Rooms>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>142</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>R1</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>163</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>R1</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>163</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>109</Activity_Id>
+	<Number_of_Preferred_Rooms>3</Number_of_Preferred_Rooms>
+	<Preferred_Room>R4</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>111</Activity_Id>
+	<Number_of_Preferred_Rooms>3</Number_of_Preferred_Rooms>
+	<Preferred_Room>R4</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>109</Activity_Id>
+	<Room>R4</Room>
+	<Permanently_Locked>false</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>111</Activity_Id>
+	<Room>R4</Room>
+	<Permanently_Locked>false</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>103</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Preferred_Room>R4</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>103</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>R4</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>117</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>R4</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>117</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Preferred_Room>R4</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>123</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Preferred_Room>R4</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>123</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>R4</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>130</Activity_Id>
+	<Number_of_Preferred_Rooms>3</Number_of_Preferred_Rooms>
+	<Preferred_Room>R3</Preferred_Room>
+	<Preferred_Room>R4</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>129</Activity_Id>
+	<Room>R3</Room>
+	<Permanently_Locked>false</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>131</Activity_Id>
+	<Room>R3</Room>
+	<Permanently_Locked>false</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>105</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>R3</Preferred_Room>
+	<Preferred_Room>R4</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>121</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>R3</Preferred_Room>
+	<Preferred_Room>R4</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>121</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>R3</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>151</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>R3</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>151</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>R3</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>R4</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>127</Activity_Id>
+	<Number_of_Preferred_Rooms>5</Number_of_Preferred_Rooms>
+	<Preferred_Room>R3</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>R4</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>127</Activity_Id>
+	<Number_of_Preferred_Rooms>3</Number_of_Preferred_Rooms>
+	<Preferred_Room>R3</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>4</Activity_Id>
+	<Number_of_Preferred_Rooms>5</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Preferred_Room>R4</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>4</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>R4</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>90</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>90</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>94</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>94</Activity_Id>
+	<Number_of_Preferred_Rooms>5</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Preferred_Room>R3</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>98</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>98</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>114</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>R4</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>114</Activity_Id>
+	<Number_of_Preferred_Rooms>3</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>R4</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>115</Activity_Id>
+	<Number_of_Preferred_Rooms>3</Number_of_Preferred_Rooms>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>R4</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>116</Activity_Id>
+	<Number_of_Preferred_Rooms>3</Number_of_Preferred_Rooms>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>R4</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>138</Activity_Id>
+	<Number_of_Preferred_Rooms>3</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>138</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>100</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Lab</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>78</Activity_Id>
+	<Number_of_Preferred_Rooms>3</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>78</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>144</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>144</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>R2</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>74</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>74</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>R2</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>84</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>R2</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>84</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>158</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>158</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>R2</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>12</Activity_Id>
+	<Number_of_Preferred_Rooms>3</Number_of_Preferred_Rooms>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>12</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>R2</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>66</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>R2</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>66</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>76</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>R1</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>76</Activity_Id>
+	<Number_of_Preferred_Rooms>3</Number_of_Preferred_Rooms>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>110</Activity_Id>
+	<Number_of_Preferred_Rooms>3</Number_of_Preferred_Rooms>
+	<Preferred_Room>R4</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>112</Activity_Id>
+	<Number_of_Preferred_Rooms>3</Number_of_Preferred_Rooms>
+	<Preferred_Room>R4</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>104</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>R4</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>104</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>R4</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>118</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>R4</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>118</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>R4</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>124</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>R4</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>124</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>R4</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>129</Activity_Id>
+	<Number_of_Preferred_Rooms>3</Number_of_Preferred_Rooms>
+	<Preferred_Room>R3</Preferred_Room>
+	<Preferred_Room>R4</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>132</Activity_Id>
+	<Number_of_Preferred_Rooms>3</Number_of_Preferred_Rooms>
+	<Preferred_Room>R3</Preferred_Room>
+	<Preferred_Room>R4</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>131</Activity_Id>
+	<Number_of_Preferred_Rooms>3</Number_of_Preferred_Rooms>
+	<Preferred_Room>R3</Preferred_Room>
+	<Preferred_Room>R4</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>106</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>R1</Preferred_Room>
+	<Preferred_Room>R2</Preferred_Room>
+	<Preferred_Room>R3</Preferred_Room>
+	<Preferred_Room>R4</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>122</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>R3</Preferred_Room>
+	<Preferred_Room>R4</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>122</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>R3</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>152</Activity_Id>
+	<Number_of_Preferred_Rooms>2</Number_of_Preferred_Rooms>
+	<Preferred_Room>R3</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>152</Activity_Id>
+	<Number_of_Preferred_Rooms>4</Number_of_Preferred_Rooms>
+	<Preferred_Room>R3</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>R4</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>128</Activity_Id>
+	<Number_of_Preferred_Rooms>5</Number_of_Preferred_Rooms>
+	<Preferred_Room>R3</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>R4</Preferred_Room>
+	<Preferred_Room>Rak</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRooms>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>128</Activity_Id>
+	<Number_of_Preferred_Rooms>3</Number_of_Preferred_Rooms>
+	<Preferred_Room>R3</Preferred_Room>
+	<Preferred_Room>Chapel</Preferred_Room>
+	<Preferred_Room>Staffroom</Preferred_Room>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRooms>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>105</Activity_Id>
+	<Room>R3</Room>
+	<Permanently_Locked>false</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>106</Activity_Id>
+	<Room>R3</Room>
+	<Permanently_Locked>false</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>132</Activity_Id>
+	<Room>R3</Room>
+	<Permanently_Locked>false</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>130</Activity_Id>
+	<Room>R3</Room>
+	<Permanently_Locked>false</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>112</Activity_Id>
+	<Room>R4</Room>
+	<Permanently_Locked>false</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Activity_Id>110</Activity_Id>
+	<Room>R4</Room>
+	<Permanently_Locked>false</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+</Space_Constraints_List>
+
+</fet>

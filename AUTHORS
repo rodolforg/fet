@@ -1,0 +1,10 @@
+Liviu Lalescu (http://lalescu.ro/liviu/)
+
+Volker Dirr (http://www.timetabling.de/)
+	- XHTML timetable export.
+	- CSV import and export.
+	- Advanced statistics print/export.
+	- Speed improvements in the timetable generation.
+	- Locking the activities.
+	- Activity planning dialog.
+	- Print timetable dialog.

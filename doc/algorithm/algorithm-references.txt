@@ -1,0 +1,1 @@
+You may find references for the idea of the algorithm in the file REFERENCES from the main directory.

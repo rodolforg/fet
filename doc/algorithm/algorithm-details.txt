@@ -1,0 +1,60 @@
+Added on 19 January 2009: the implementation of the algorithm is good now, I changed it in 2008.
+
+Some words about the algorithm:
+
+FET uses a heuristic algorithm, placing the activities in turn, starting with the most difficult ones.
+If it cannot find a solution it points you to the potential impossible activities, so you can
+correct errors. The algorithm swaps activities recursively if that is possible in order to make
+space for a new activity, or, in extreme cases, backtracks and switches order of evaluation.
+The important code is in src/engine/generate.cpp. The algorithm mimics the operation of a human
+timetabler, I think.
+
+When placing an activity, I choose the place with lowest number of conflicting activities and
+recursively replace them. I use a tabu list to avoid cycles.
+
+The maximum depth (level) of recursion is 14.
+
+The maximum number of recursive calls is 2*nInternalActivities (found practically - modified 18 Aug. 2007).
+I tried with variable number, more precisely the 2*(number of already placed activities+1). I am not sure about
+the results, it might be better with variable number, but not sure.
+
+The recursion chooses only one variant from depth 5 (modified 15 Aug. 2007) above, then it returns.
+
+How to respect the students gaps (possible in combination with early)? Compute the number of
+total hours per week for each subgroup, then when generating, the total span of lessons
+should not exceed the total number of hours per week for the subgroup. The span is
+computed differently if you have no gaps or if you have no gaps+early
+
+
+Added on 16 Aug 2007, modified 22 Aug 2007:
+
+The structure of the solution is an array of times[MAX_ACTIVITIES] and
+rooms[MAX_ACTIVITIES], I hope you understand why. I begin with unallocated. I
+sort the activities, most difficult ones first. Sorting is done in
+generate_pre.cpp. In generate_pre.cpp I also compute various matrices which
+are faster to use than the internal constraints list. Generation is
+recursive. Suppose we are at activity no. permutation[added_act] (added_act
+from 0 to gt.rules.nInternalActivities - permutation[i] keeps the activities
+in order, most difficult ones first, and this order will possibly change in
+allocation). We scan each slot and for each slot record the activities which
+conflict with permutation[added_act]. We then order them, the emptiest slots
+first. Then, for the first, second, ... last slot: unallocate
+the activities in this slot, place permutation[added_act] and try to place
+the remaining activities recursively with the same procedure. The max level of
+recursion is 14 (humans use 10, but I found that sometimes 14 is better) and
+the total number of calls for this routine, random_swap(act, level) is 2*nInternalActivities
+(found practically - might not be the best).
+
+If I cannot place activity permutation[added_act] this way (the 2*nInternalActivities limit is
+reached), then I choose the best slot, place permutation[added_act] in this
+slot and pull out the other conflicting activities from this slot and add
+them to the list of unallocated activities. added_act might decrease this
+way. Now I keep track of old tried removals and avoid them (they are in the
+tabu list - with size tabu_size (nInternalActivities*nHoursPerWeek for now)) - to avoid cycles.
+
+The routine random_swap will only search (recursively) the first (best) 
+slot if level>=5. That is, we search at level 0 all slots, at level 1 the same,
+..., at level 4 the same, at level 5 only the first (best) slot, at level 6 only
+the first (best) slot, etc., we reach level 13, then we go back to level 4 and
+choose the next slot, etc. This is to allow FET more liberty, I think. This
+trick was found practically to be good. It might not always be good.

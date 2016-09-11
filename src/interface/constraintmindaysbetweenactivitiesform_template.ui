@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ConstraintMinDaysBetweenActivitiesForm_template</class>
+ <widget class="QDialog" name="ConstraintMinDaysBetweenActivitiesForm_template">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>584</width>
+    <height>528</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string extracomment="This is the title of the dialog to see the list of all constraints of this type">Constraints min days between activities</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QLabel" name="constraintsTextLabel">
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="text">
+      <string>Constraints</string>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2" colspan="2">
+    <widget class="QLabel" name="currentConstraintTextLabel">
+     <property name="text">
+      <string>Current constraint</string>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" rowspan="2" colspan="2">
+    <widget class="QListWidget" name="constraintsListWidget"/>
+   </item>
+   <item row="1" column="2" colspan="2">
+    <widget class="QPlainTextEdit" name="currentConstraintTextEdit"/>
+   </item>
+   <item row="2" column="2" colspan="2">
+    <widget class="QGroupBox" name="filterGroupBox">
+     <property name="title">
+      <string>Filter</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="teachersTextLabel">
+        <property name="text">
+         <string>Teacher</string>
+        </property>
+        <property name="wordWrap">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QComboBox" name="teachersComboBox"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="studentsTextLabel">
+        <property name="text">
+         <string>Students set</string>
+        </property>
+        <property name="wordWrap">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QComboBox" name="studentsComboBox"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="subjectsTextLabel">
+        <property name="text">
+         <string>Subject</string>
+        </property>
+        <property name="wordWrap">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QComboBox" name="subjectsComboBox"/>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="activityTagsTextLabel">
+        <property name="text">
+         <string>Activity tag</string>
+        </property>
+        <property name="wordWrap">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QComboBox" name="activityTagsComboBox"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QPushButton" name="addConstraintPushButton">
+     <property name="text">
+      <string>Add</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QPushButton" name="modifyConstraintPushButton">
+     <property name="text">
+      <string>Modify</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QPushButton" name="removeConstraintPushButton">
+     <property name="text">
+      <string>Remove</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="3">
+    <widget class="QPushButton" name="closePushButton">
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0" colspan="4">
+    <widget class="QPushButton" name="changeSelectivelyPushButton">
+     <property name="text">
+      <string>Modify multiple constraints at once</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

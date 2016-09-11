@@ -1,0 +1,5069 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<fet version="5.30.3">
+
+<Institution_Name>Γυμνάσιο Βαρθολομιού</Institution_Name>
+
+<Comments></Comments>
+
+<Days_List>
+<Number_of_Days>5</Number_of_Days>
+<Day>
+	<Name>Δευτέρα</Name>
+</Day>
+<Day>
+	<Name>Τρίτη</Name>
+</Day>
+<Day>
+	<Name>Τετάρτη</Name>
+</Day>
+<Day>
+	<Name>Πέμπτη</Name>
+</Day>
+<Day>
+	<Name>Παρασκευή</Name>
+</Day>
+</Days_List>
+
+<Hours_List>
+<Number_of_Hours>7</Number_of_Hours>
+<Hour>
+	<Name>1</Name>
+</Hour>
+<Hour>
+	<Name>2</Name>
+</Hour>
+<Hour>
+	<Name>3</Name>
+</Hour>
+<Hour>
+	<Name>4</Name>
+</Hour>
+<Hour>
+	<Name>5</Name>
+</Hour>
+<Hour>
+	<Name>6</Name>
+</Hour>
+<Hour>
+	<Name>7</Name>
+</Hour>
+</Hours_List>
+
+<Subjects_List>
+<Subject>
+	<Name>ΑΓΓΛΙΚΑ ΑΡΧ./Φ. ΑΓΩΓΗ</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ΑΓΓΛΙΚΑ ΠΡΟ./Φ. ΑΓΩΓΗ</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ΑΡΧ. ΕΛΛ. ΓΡΑΜΜΑΤΕΙΑ</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ΑΡΧ. ΕΛΛΗΝ. ΓΛΩΣΣΑ</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ΒΙΟΛΟΓΙΑ</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ΓΑΛΛΙΚΑ/ΓΕΡΜΑΝΙΚΑ</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ΓΕΩΓΡΑΦΙΑ</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ΕΡΓ</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ΘΡΗΣΚΕΥΤΙΚΑ</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ΙΣΤΟΡΙΑ</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ΚΑΛΛΙΤΕΧΝΙΚΑ</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ΚΟΙΝΩΝΙΚΗ &amp; ΠΟΛΙΤΙΚΗ ΑΓΩΓΗ</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ΛΥΚ</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ΜΑΘΗΜΑΤΙΚΑ</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ΜΟΥΣ</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ΜΟΥΣΙΚΗ</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ΝΕΟΕΛΛ. ΓΛΩΣΣΑ</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ΝΕΟΕΛΛ. ΓΡΑΜΜΑΤΕΙΑ</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ΟΙΚΙΑΚΗ ΟΙΚΟΝΟΜΙΑ</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ΠΛΗΡΟΦΟΡΙΚΗ/ΣΕΠ</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ΠΛΗΡΟΦΟΡΙΚΗ/ΤΕΧΝΟΛΟΓΙΑ</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ΣΕΠ</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ΤΕΧΝΟΛΟΓΙΑ</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ΦΥΣΙΚΗ</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ΦΥΣΙΚΗ ΑΓΩΓΗ</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ΧΗΜΕΙΑ</Name>
+	<Comments></Comments>
+</Subject>
+</Subjects_List>
+
+<Activity_Tags_List>
+</Activity_Tags_List>
+
+<Teachers_List>
+<Teacher>
+	<Name>ΠΕ01 ΖΩΓΟΠΟΥΛΟΣ</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>ΠΕ02 ΑΝΔΡΙΑΝΟΠΟΥΛΟΥ</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>ΠΕ02 ΓΚΙΑΦΗΣ</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>ΠΕ02 ΚΑΛΑΜΑΡΑ</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>ΠΕ02 ΠΑΡΙΣΗ</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>ΠΕ02 ΡΕΓΚΛΗ</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>ΠΕ02 ΣΠΕΝΤΖΑΡΗ</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>ΠΕ03 ΒΑΣΙΛΑΚΟΠΟΥΛΟΣ</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>ΠΕ03 ΣΟΥΛΙΩΤΗ</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>ΠΕ04 ΣΟΥΛΗΣ</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>ΠΕ04 ΣΤΑΘΟΥΛΙΑ</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>ΠΕ05 ΘΕΟΦΙΛΟΠΟΥΛΟΥ</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>ΠΕ06 ΝΤΑΗ</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>ΠΕ07 ΚΟΝΤΟΜΗΤΡΟΥ</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>ΠΕ08 ΠΑΠΑΔΗΜΗΤΡΙΟΥ</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>ΠΕ11 ΚΑΘΟΛΟΣ</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>ΠΕ15 ΒΑΡΒΑΡΕΣΟΥ</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>ΠΕ16 ΠΡΙΓΚΑΣ</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>ΠΕ18.13 ΑΛΕΞΙΟΥ</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>ΠΕ19 ΒΟΒΟΣ</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+</Teachers_List>
+
+<Students_List>
+<Year>
+	<Name>2008-2009</Name>
+	<Number_of_Students>0</Number_of_Students>
+	<Comments></Comments>
+	<Group>
+		<Name>Α</Name>
+		<Number_of_Students>0</Number_of_Students>
+		<Comments></Comments>
+		<Subgroup>
+			<Name>Α1</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+		<Subgroup>
+			<Name>Α2</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+	</Group>
+	<Group>
+		<Name>Β</Name>
+		<Number_of_Students>0</Number_of_Students>
+		<Comments></Comments>
+		<Subgroup>
+			<Name>Β1</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+		<Subgroup>
+			<Name>Β2</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+	</Group>
+	<Group>
+		<Name>Γ</Name>
+		<Number_of_Students>0</Number_of_Students>
+		<Comments></Comments>
+		<Subgroup>
+			<Name>Γ1</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+		<Subgroup>
+			<Name>Γ2</Name>
+			<Number_of_Students>0</Number_of_Students>
+			<Comments></Comments>
+		</Subgroup>
+	</Group>
+</Year>
+</Students_List>
+
+<Activities_List>
+<Activity>
+	<Teacher>ΠΕ01 ΖΩΓΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΘΡΗΣΚΕΥΤΙΚΑ</Subject>
+	<Students>Α1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>1</Id>
+	<Activity_Group_Id>1</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ01 ΖΩΓΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΘΡΗΣΚΕΥΤΙΚΑ</Subject>
+	<Students>Α1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>2</Id>
+	<Activity_Group_Id>1</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ01 ΖΩΓΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΘΡΗΣΚΕΥΤΙΚΑ</Subject>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>3</Id>
+	<Activity_Group_Id>3</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ01 ΖΩΓΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΘΡΗΣΚΕΥΤΙΚΑ</Subject>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>4</Id>
+	<Activity_Group_Id>3</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ01 ΖΩΓΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΘΡΗΣΚΕΥΤΙΚΑ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>5</Id>
+	<Activity_Group_Id>5</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ01 ΖΩΓΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΘΡΗΣΚΕΥΤΙΚΑ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>6</Id>
+	<Activity_Group_Id>5</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ01 ΖΩΓΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΘΡΗΣΚΕΥΤΙΚΑ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>9</Id>
+	<Activity_Group_Id>9</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ01 ΖΩΓΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΘΡΗΣΚΕΥΤΙΚΑ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>10</Id>
+	<Activity_Group_Id>9</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ01 ΖΩΓΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΘΡΗΣΚΕΥΤΙΚΑ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>11</Id>
+	<Activity_Group_Id>11</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ01 ΖΩΓΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΘΡΗΣΚΕΥΤΙΚΑ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>12</Id>
+	<Activity_Group_Id>11</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ01 ΖΩΓΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΘΡΗΣΚΕΥΤΙΚΑ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>13</Id>
+	<Activity_Group_Id>13</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ01 ΖΩΓΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΘΡΗΣΚΕΥΤΙΚΑ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>14</Id>
+	<Activity_Group_Id>13</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΠΑΡΙΣΗ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛΗΝ. ΓΛΩΣΣΑ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>15</Id>
+	<Activity_Group_Id>15</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΠΑΡΙΣΗ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛΗΝ. ΓΛΩΣΣΑ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>16</Id>
+	<Activity_Group_Id>15</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΠΑΡΙΣΗ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛΗΝ. ΓΛΩΣΣΑ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>17</Id>
+	<Activity_Group_Id>15</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΠΑΡΙΣΗ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛΗΝ. ΓΛΩΣΣΑ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>18</Id>
+	<Activity_Group_Id>18</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΠΑΡΙΣΗ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛΗΝ. ΓΛΩΣΣΑ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>19</Id>
+	<Activity_Group_Id>18</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΠΑΡΙΣΗ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛΗΝ. ΓΛΩΣΣΑ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>20</Id>
+	<Activity_Group_Id>18</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΠΑΡΙΣΗ</Teacher>
+	<Subject>ΝΕΟΕΛΛ. ΓΛΩΣΣΑ</Subject>
+	<Students>Α1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>21</Id>
+	<Activity_Group_Id>21</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΠΑΡΙΣΗ</Teacher>
+	<Subject>ΝΕΟΕΛΛ. ΓΛΩΣΣΑ</Subject>
+	<Students>Α1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>22</Id>
+	<Activity_Group_Id>21</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΠΑΡΙΣΗ</Teacher>
+	<Subject>ΝΕΟΕΛΛ. ΓΛΩΣΣΑ</Subject>
+	<Students>Α1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>23</Id>
+	<Activity_Group_Id>21</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΠΑΡΙΣΗ</Teacher>
+	<Subject>ΝΕΟΕΛΛ. ΓΛΩΣΣΑ</Subject>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>24</Id>
+	<Activity_Group_Id>24</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΠΑΡΙΣΗ</Teacher>
+	<Subject>ΝΕΟΕΛΛ. ΓΛΩΣΣΑ</Subject>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>25</Id>
+	<Activity_Group_Id>24</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΠΑΡΙΣΗ</Teacher>
+	<Subject>ΝΕΟΕΛΛ. ΓΛΩΣΣΑ</Subject>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>26</Id>
+	<Activity_Group_Id>24</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΠΑΡΙΣΗ</Teacher>
+	<Subject>ΝΕΟΕΛΛ. ΓΡΑΜΜΑΤΕΙΑ</Subject>
+	<Students>Α1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>27</Id>
+	<Activity_Group_Id>27</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΠΑΡΙΣΗ</Teacher>
+	<Subject>ΝΕΟΕΛΛ. ΓΡΑΜΜΑΤΕΙΑ</Subject>
+	<Students>Α1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>28</Id>
+	<Activity_Group_Id>27</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΠΑΡΙΣΗ</Teacher>
+	<Subject>ΝΕΟΕΛΛ. ΓΡΑΜΜΑΤΕΙΑ</Subject>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>29</Id>
+	<Activity_Group_Id>29</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΠΑΡΙΣΗ</Teacher>
+	<Subject>ΝΕΟΕΛΛ. ΓΡΑΜΜΑΤΕΙΑ</Subject>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>30</Id>
+	<Activity_Group_Id>29</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΡΕΓΚΛΗ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛΗΝ. ΓΛΩΣΣΑ</Subject>
+	<Students>Α1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>31</Id>
+	<Activity_Group_Id>31</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΡΕΓΚΛΗ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛΗΝ. ΓΛΩΣΣΑ</Subject>
+	<Students>Α1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>32</Id>
+	<Activity_Group_Id>31</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΡΕΓΚΛΗ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛΗΝ. ΓΛΩΣΣΑ</Subject>
+	<Students>Α1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>33</Id>
+	<Activity_Group_Id>31</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΡΕΓΚΛΗ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛΗΝ. ΓΛΩΣΣΑ</Subject>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>34</Id>
+	<Activity_Group_Id>34</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΡΕΓΚΛΗ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛΗΝ. ΓΛΩΣΣΑ</Subject>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>35</Id>
+	<Activity_Group_Id>34</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΡΕΓΚΛΗ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛΗΝ. ΓΛΩΣΣΑ</Subject>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>36</Id>
+	<Activity_Group_Id>34</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΡΕΓΚΛΗ</Teacher>
+	<Subject>ΙΣΤΟΡΙΑ</Subject>
+	<Students>Α1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>37</Id>
+	<Activity_Group_Id>37</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΡΕΓΚΛΗ</Teacher>
+	<Subject>ΙΣΤΟΡΙΑ</Subject>
+	<Students>Α1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>38</Id>
+	<Activity_Group_Id>37</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΡΕΓΚΛΗ</Teacher>
+	<Subject>ΙΣΤΟΡΙΑ</Subject>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>39</Id>
+	<Activity_Group_Id>39</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΡΕΓΚΛΗ</Teacher>
+	<Subject>ΙΣΤΟΡΙΑ</Subject>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>40</Id>
+	<Activity_Group_Id>39</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΡΕΓΚΛΗ</Teacher>
+	<Subject>ΝΕΟΕΛΛ. ΓΛΩΣΣΑ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>41</Id>
+	<Activity_Group_Id>41</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΡΕΓΚΛΗ</Teacher>
+	<Subject>ΝΕΟΕΛΛ. ΓΛΩΣΣΑ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>42</Id>
+	<Activity_Group_Id>41</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΡΕΓΚΛΗ</Teacher>
+	<Subject>ΝΕΟΕΛΛ. ΓΡΑΜΜΑΤΕΙΑ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>43</Id>
+	<Activity_Group_Id>43</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΡΕΓΚΛΗ</Teacher>
+	<Subject>ΝΕΟΕΛΛ. ΓΡΑΜΜΑΤΕΙΑ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>44</Id>
+	<Activity_Group_Id>43</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΡΕΓΚΛΗ</Teacher>
+	<Subject>ΝΕΟΕΛΛ. ΓΡΑΜΜΑΤΕΙΑ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>45</Id>
+	<Activity_Group_Id>45</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΡΕΓΚΛΗ</Teacher>
+	<Subject>ΝΕΟΕΛΛ. ΓΡΑΜΜΑΤΕΙΑ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>46</Id>
+	<Activity_Group_Id>45</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΑΝΔΡΙΑΝΟΠΟΥΛΟΥ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛ. ΓΡΑΜΜΑΤΕΙΑ</Subject>
+	<Students>Α1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>47</Id>
+	<Activity_Group_Id>47</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΑΝΔΡΙΑΝΟΠΟΥΛΟΥ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛ. ΓΡΑΜΜΑΤΕΙΑ</Subject>
+	<Students>Α1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>48</Id>
+	<Activity_Group_Id>47</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΑΝΔΡΙΑΝΟΠΟΥΛΟΥ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛ. ΓΡΑΜΜΑΤΕΙΑ</Subject>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>49</Id>
+	<Activity_Group_Id>49</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΑΝΔΡΙΑΝΟΠΟΥΛΟΥ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛ. ΓΡΑΜΜΑΤΕΙΑ</Subject>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>50</Id>
+	<Activity_Group_Id>49</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΑΝΔΡΙΑΝΟΠΟΥΛΟΥ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛΗΝ. ΓΛΩΣΣΑ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>51</Id>
+	<Activity_Group_Id>51</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΑΝΔΡΙΑΝΟΠΟΥΛΟΥ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛΗΝ. ΓΛΩΣΣΑ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>52</Id>
+	<Activity_Group_Id>51</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΑΝΔΡΙΑΝΟΠΟΥΛΟΥ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛΗΝ. ΓΛΩΣΣΑ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>53</Id>
+	<Activity_Group_Id>51</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΑΝΔΡΙΑΝΟΠΟΥΛΟΥ</Teacher>
+	<Subject>ΙΣΤΟΡΙΑ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>54</Id>
+	<Activity_Group_Id>54</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΑΝΔΡΙΑΝΟΠΟΥΛΟΥ</Teacher>
+	<Subject>ΙΣΤΟΡΙΑ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>55</Id>
+	<Activity_Group_Id>54</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΑΝΔΡΙΑΝΟΠΟΥΛΟΥ</Teacher>
+	<Subject>ΙΣΤΟΡΙΑ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>56</Id>
+	<Activity_Group_Id>54</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΑΝΔΡΙΑΝΟΠΟΥΛΟΥ</Teacher>
+	<Subject>ΙΣΤΟΡΙΑ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>57</Id>
+	<Activity_Group_Id>57</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΑΝΔΡΙΑΝΟΠΟΥΛΟΥ</Teacher>
+	<Subject>ΙΣΤΟΡΙΑ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>58</Id>
+	<Activity_Group_Id>57</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΑΝΔΡΙΑΝΟΠΟΥΛΟΥ</Teacher>
+	<Subject>ΙΣΤΟΡΙΑ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>59</Id>
+	<Activity_Group_Id>57</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΑΝΔΡΙΑΝΟΠΟΥΛΟΥ</Teacher>
+	<Subject>ΝΕΟΕΛΛ. ΓΛΩΣΣΑ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>60</Id>
+	<Activity_Group_Id>60</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΑΝΔΡΙΑΝΟΠΟΥΛΟΥ</Teacher>
+	<Subject>ΝΕΟΕΛΛ. ΓΛΩΣΣΑ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>61</Id>
+	<Activity_Group_Id>60</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΑΝΔΡΙΑΝΟΠΟΥΛΟΥ</Teacher>
+	<Subject>ΝΕΟΕΛΛ. ΓΡΑΜΜΑΤΕΙΑ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>62</Id>
+	<Activity_Group_Id>62</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΑΝΔΡΙΑΝΟΠΟΥΛΟΥ</Teacher>
+	<Subject>ΝΕΟΕΛΛ. ΓΡΑΜΜΑΤΕΙΑ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>63</Id>
+	<Activity_Group_Id>62</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΑΝΔΡΙΑΝΟΠΟΥΛΟΥ</Teacher>
+	<Subject>ΝΕΟΕΛΛ. ΓΡΑΜΜΑΤΕΙΑ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>64</Id>
+	<Activity_Group_Id>64</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΑΝΔΡΙΑΝΟΠΟΥΛΟΥ</Teacher>
+	<Subject>ΝΕΟΕΛΛ. ΓΡΑΜΜΑΤΕΙΑ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>65</Id>
+	<Activity_Group_Id>64</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΚΑΛΑΜΑΡΑ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛ. ΓΡΑΜΜΑΤΕΙΑ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>66</Id>
+	<Activity_Group_Id>66</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΚΑΛΑΜΑΡΑ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛ. ΓΡΑΜΜΑΤΕΙΑ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>67</Id>
+	<Activity_Group_Id>66</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΚΑΛΑΜΑΡΑ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛ. ΓΡΑΜΜΑΤΕΙΑ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>68</Id>
+	<Activity_Group_Id>68</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΚΑΛΑΜΑΡΑ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛ. ΓΡΑΜΜΑΤΕΙΑ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>69</Id>
+	<Activity_Group_Id>68</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΚΑΛΑΜΑΡΑ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛ. ΓΡΑΜΜΑΤΕΙΑ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>70</Id>
+	<Activity_Group_Id>70</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΚΑΛΑΜΑΡΑ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛ. ΓΡΑΜΜΑΤΕΙΑ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>71</Id>
+	<Activity_Group_Id>70</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΚΑΛΑΜΑΡΑ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛ. ΓΡΑΜΜΑΤΕΙΑ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>72</Id>
+	<Activity_Group_Id>72</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΚΑΛΑΜΑΡΑ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛ. ΓΡΑΜΜΑΤΕΙΑ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>73</Id>
+	<Activity_Group_Id>72</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΚΑΛΑΜΑΡΑ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛΗΝ. ΓΛΩΣΣΑ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>74</Id>
+	<Activity_Group_Id>74</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΚΑΛΑΜΑΡΑ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛΗΝ. ΓΛΩΣΣΑ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>75</Id>
+	<Activity_Group_Id>74</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΚΑΛΑΜΑΡΑ</Teacher>
+	<Subject>ΑΡΧ. ΕΛΛΗΝ. ΓΛΩΣΣΑ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>76</Id>
+	<Activity_Group_Id>74</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΚΑΛΑΜΑΡΑ</Teacher>
+	<Subject>ΙΣΤΟΡΙΑ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>77</Id>
+	<Activity_Group_Id>77</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΚΑΛΑΜΑΡΑ</Teacher>
+	<Subject>ΙΣΤΟΡΙΑ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>78</Id>
+	<Activity_Group_Id>77</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΚΑΛΑΜΑΡΑ</Teacher>
+	<Subject>ΙΣΤΟΡΙΑ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>79</Id>
+	<Activity_Group_Id>79</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΚΑΛΑΜΑΡΑ</Teacher>
+	<Subject>ΙΣΤΟΡΙΑ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>80</Id>
+	<Activity_Group_Id>79</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΚΑΛΑΜΑΡΑ</Teacher>
+	<Subject>ΝΕΟΕΛΛ. ΓΛΩΣΣΑ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>81</Id>
+	<Activity_Group_Id>81</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΚΑΛΑΜΑΡΑ</Teacher>
+	<Subject>ΝΕΟΕΛΛ. ΓΛΩΣΣΑ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>82</Id>
+	<Activity_Group_Id>81</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΚΑΛΑΜΑΡΑ</Teacher>
+	<Subject>ΝΕΟΕΛΛ. ΓΛΩΣΣΑ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>83</Id>
+	<Activity_Group_Id>83</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΚΑΛΑΜΑΡΑ</Teacher>
+	<Subject>ΝΕΟΕΛΛ. ΓΛΩΣΣΑ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>84</Id>
+	<Activity_Group_Id>83</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΓΚΙΑΦΗΣ</Teacher>
+	<Subject>ΚΟΙΝΩΝΙΚΗ &amp; ΠΟΛΙΤΙΚΗ ΑΓΩΓΗ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>85</Id>
+	<Activity_Group_Id>85</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΓΚΙΑΦΗΣ</Teacher>
+	<Subject>ΚΟΙΝΩΝΙΚΗ &amp; ΠΟΛΙΤΙΚΗ ΑΓΩΓΗ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>86</Id>
+	<Activity_Group_Id>85</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΓΚΙΑΦΗΣ</Teacher>
+	<Subject>ΚΟΙΝΩΝΙΚΗ &amp; ΠΟΛΙΤΙΚΗ ΑΓΩΓΗ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>87</Id>
+	<Activity_Group_Id>87</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ02 ΓΚΙΑΦΗΣ</Teacher>
+	<Subject>ΚΟΙΝΩΝΙΚΗ &amp; ΠΟΛΙΤΙΚΗ ΑΓΩΓΗ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>88</Id>
+	<Activity_Group_Id>87</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΣΟΥΛΙΩΤΗ</Teacher>
+	<Subject>ΜΑΘΗΜΑΤΙΚΑ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>89</Id>
+	<Activity_Group_Id>89</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΣΟΥΛΙΩΤΗ</Teacher>
+	<Subject>ΜΑΘΗΜΑΤΙΚΑ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>90</Id>
+	<Activity_Group_Id>89</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΣΟΥΛΙΩΤΗ</Teacher>
+	<Subject>ΜΑΘΗΜΑΤΙΚΑ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>91</Id>
+	<Activity_Group_Id>89</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΣΟΥΛΙΩΤΗ</Teacher>
+	<Subject>ΜΑΘΗΜΑΤΙΚΑ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>92</Id>
+	<Activity_Group_Id>89</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΣΟΥΛΙΩΤΗ</Teacher>
+	<Subject>ΜΑΘΗΜΑΤΙΚΑ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>93</Id>
+	<Activity_Group_Id>93</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΣΟΥΛΙΩΤΗ</Teacher>
+	<Subject>ΜΑΘΗΜΑΤΙΚΑ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>94</Id>
+	<Activity_Group_Id>93</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΣΟΥΛΙΩΤΗ</Teacher>
+	<Subject>ΜΑΘΗΜΑΤΙΚΑ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>95</Id>
+	<Activity_Group_Id>93</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΣΟΥΛΙΩΤΗ</Teacher>
+	<Subject>ΜΑΘΗΜΑΤΙΚΑ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>96</Id>
+	<Activity_Group_Id>93</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΣΟΥΛΙΩΤΗ</Teacher>
+	<Subject>ΜΑΘΗΜΑΤΙΚΑ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>97</Id>
+	<Activity_Group_Id>97</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΣΟΥΛΙΩΤΗ</Teacher>
+	<Subject>ΜΑΘΗΜΑΤΙΚΑ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>98</Id>
+	<Activity_Group_Id>97</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΣΟΥΛΙΩΤΗ</Teacher>
+	<Subject>ΜΑΘΗΜΑΤΙΚΑ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>99</Id>
+	<Activity_Group_Id>97</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΣΟΥΛΙΩΤΗ</Teacher>
+	<Subject>ΜΑΘΗΜΑΤΙΚΑ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>100</Id>
+	<Activity_Group_Id>97</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΣΟΥΛΙΩΤΗ</Teacher>
+	<Subject>ΜΑΘΗΜΑΤΙΚΑ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>101</Id>
+	<Activity_Group_Id>101</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΣΟΥΛΙΩΤΗ</Teacher>
+	<Subject>ΜΑΘΗΜΑΤΙΚΑ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>102</Id>
+	<Activity_Group_Id>101</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΣΟΥΛΙΩΤΗ</Teacher>
+	<Subject>ΜΑΘΗΜΑΤΙΚΑ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>103</Id>
+	<Activity_Group_Id>101</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΣΟΥΛΙΩΤΗ</Teacher>
+	<Subject>ΜΑΘΗΜΑΤΙΚΑ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>104</Id>
+	<Activity_Group_Id>101</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΒΑΣΙΛΑΚΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΜΑΘΗΜΑΤΙΚΑ</Subject>
+	<Students>Α1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>105</Id>
+	<Activity_Group_Id>105</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΒΑΣΙΛΑΚΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΜΑΘΗΜΑΤΙΚΑ</Subject>
+	<Students>Α1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>106</Id>
+	<Activity_Group_Id>105</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΒΑΣΙΛΑΚΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΜΑΘΗΜΑΤΙΚΑ</Subject>
+	<Students>Α1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>107</Id>
+	<Activity_Group_Id>105</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΒΑΣΙΛΑΚΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΜΑΘΗΜΑΤΙΚΑ</Subject>
+	<Students>Α1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>108</Id>
+	<Activity_Group_Id>105</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΒΑΣΙΛΑΚΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΜΑΘΗΜΑΤΙΚΑ</Subject>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>109</Id>
+	<Activity_Group_Id>109</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΒΑΣΙΛΑΚΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΜΑΘΗΜΑΤΙΚΑ</Subject>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>110</Id>
+	<Activity_Group_Id>109</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΒΑΣΙΛΑΚΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΜΑΘΗΜΑΤΙΚΑ</Subject>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>111</Id>
+	<Activity_Group_Id>109</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΒΑΣΙΛΑΚΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΜΑΘΗΜΑΤΙΚΑ</Subject>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>112</Id>
+	<Activity_Group_Id>109</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΟΥΛΗΣ</Teacher>
+	<Subject>ΦΥΣΙΚΗ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>113</Id>
+	<Activity_Group_Id>113</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΟΥΛΗΣ</Teacher>
+	<Subject>ΦΥΣΙΚΗ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>114</Id>
+	<Activity_Group_Id>113</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΟΥΛΗΣ</Teacher>
+	<Subject>ΦΥΣΙΚΗ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>115</Id>
+	<Activity_Group_Id>115</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΟΥΛΗΣ</Teacher>
+	<Subject>ΦΥΣΙΚΗ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>116</Id>
+	<Activity_Group_Id>115</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΟΥΛΗΣ</Teacher>
+	<Subject>ΦΥΣΙΚΗ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>117</Id>
+	<Activity_Group_Id>117</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΟΥΛΗΣ</Teacher>
+	<Subject>ΦΥΣΙΚΗ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>118</Id>
+	<Activity_Group_Id>117</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΟΥΛΗΣ</Teacher>
+	<Subject>ΦΥΣΙΚΗ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>119</Id>
+	<Activity_Group_Id>119</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΟΥΛΗΣ</Teacher>
+	<Subject>ΦΥΣΙΚΗ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>120</Id>
+	<Activity_Group_Id>119</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΟΥΛΗΣ</Teacher>
+	<Subject>ΓΕΩΓΡΑΦΙΑ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>121</Id>
+	<Activity_Group_Id>121</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΟΥΛΗΣ</Teacher>
+	<Subject>ΓΕΩΓΡΑΦΙΑ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>122</Id>
+	<Activity_Group_Id>121</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΟΥΛΗΣ</Teacher>
+	<Subject>ΧΗΜΕΙΑ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>123</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΟΥΛΗΣ</Teacher>
+	<Subject>ΧΗΜΕΙΑ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>124</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΟΥΛΗΣ</Teacher>
+	<Subject>ΧΗΜΕΙΑ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>125</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΟΥΛΗΣ</Teacher>
+	<Subject>ΧΗΜΕΙΑ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>126</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΤΑΘΟΥΛΙΑ</Teacher>
+	<Subject>ΓΕΩΓΡΑΦΙΑ</Subject>
+	<Students>Α1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>127</Id>
+	<Activity_Group_Id>127</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΤΑΘΟΥΛΙΑ</Teacher>
+	<Subject>ΓΕΩΓΡΑΦΙΑ</Subject>
+	<Students>Α1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>128</Id>
+	<Activity_Group_Id>127</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΤΑΘΟΥΛΙΑ</Teacher>
+	<Subject>ΓΕΩΓΡΑΦΙΑ</Subject>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>129</Id>
+	<Activity_Group_Id>129</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΤΑΘΟΥΛΙΑ</Teacher>
+	<Subject>ΓΕΩΓΡΑΦΙΑ</Subject>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>130</Id>
+	<Activity_Group_Id>129</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΤΑΘΟΥΛΙΑ</Teacher>
+	<Subject>ΓΕΩΓΡΑΦΙΑ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>131</Id>
+	<Activity_Group_Id>131</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΤΑΘΟΥΛΙΑ</Teacher>
+	<Subject>ΓΕΩΓΡΑΦΙΑ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>132</Id>
+	<Activity_Group_Id>131</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΤΑΘΟΥΛΙΑ</Teacher>
+	<Subject>ΒΙΟΛΟΓΙΑ</Subject>
+	<Students>Α1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>133</Id>
+	<Activity_Group_Id>133</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΤΑΘΟΥΛΙΑ</Teacher>
+	<Subject>ΒΙΟΛΟΓΙΑ</Subject>
+	<Students>Α1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>134</Id>
+	<Activity_Group_Id>133</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΤΑΘΟΥΛΙΑ</Teacher>
+	<Subject>ΒΙΟΛΟΓΙΑ</Subject>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>135</Id>
+	<Activity_Group_Id>135</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΤΑΘΟΥΛΙΑ</Teacher>
+	<Subject>ΒΙΟΛΟΓΙΑ</Subject>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>136</Id>
+	<Activity_Group_Id>135</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΤΑΘΟΥΛΙΑ</Teacher>
+	<Subject>ΒΙΟΛΟΓΙΑ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>137</Id>
+	<Activity_Group_Id>137</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΤΑΘΟΥΛΙΑ</Teacher>
+	<Subject>ΒΙΟΛΟΓΙΑ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>138</Id>
+	<Activity_Group_Id>137</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΤΑΘΟΥΛΙΑ</Teacher>
+	<Subject>ΒΙΟΛΟΓΙΑ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>139</Id>
+	<Activity_Group_Id>139</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΤΑΘΟΥΛΙΑ</Teacher>
+	<Subject>ΒΙΟΛΟΓΙΑ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>140</Id>
+	<Activity_Group_Id>139</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ05 ΘΕΟΦΙΛΟΠΟΥΛΟΥ</Teacher>
+	<Teacher>ΠΕ07 ΚΟΝΤΟΜΗΤΡΟΥ</Teacher>
+	<Subject>ΓΑΛΛΙΚΑ/ΓΕΡΜΑΝΙΚΑ</Subject>
+	<Students>Α1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>141</Id>
+	<Activity_Group_Id>141</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ05 ΘΕΟΦΙΛΟΠΟΥΛΟΥ</Teacher>
+	<Teacher>ΠΕ07 ΚΟΝΤΟΜΗΤΡΟΥ</Teacher>
+	<Subject>ΓΑΛΛΙΚΑ/ΓΕΡΜΑΝΙΚΑ</Subject>
+	<Students>Α1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>142</Id>
+	<Activity_Group_Id>141</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ05 ΘΕΟΦΙΛΟΠΟΥΛΟΥ</Teacher>
+	<Teacher>ΠΕ07 ΚΟΝΤΟΜΗΤΡΟΥ</Teacher>
+	<Subject>ΓΑΛΛΙΚΑ/ΓΕΡΜΑΝΙΚΑ</Subject>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>143</Id>
+	<Activity_Group_Id>143</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ05 ΘΕΟΦΙΛΟΠΟΥΛΟΥ</Teacher>
+	<Teacher>ΠΕ07 ΚΟΝΤΟΜΗΤΡΟΥ</Teacher>
+	<Subject>ΓΑΛΛΙΚΑ/ΓΕΡΜΑΝΙΚΑ</Subject>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>144</Id>
+	<Activity_Group_Id>143</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ05 ΘΕΟΦΙΛΟΠΟΥΛΟΥ</Teacher>
+	<Teacher>ΠΕ07 ΚΟΝΤΟΜΗΤΡΟΥ</Teacher>
+	<Subject>ΓΑΛΛΙΚΑ/ΓΕΡΜΑΝΙΚΑ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>145</Id>
+	<Activity_Group_Id>145</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ05 ΘΕΟΦΙΛΟΠΟΥΛΟΥ</Teacher>
+	<Teacher>ΠΕ07 ΚΟΝΤΟΜΗΤΡΟΥ</Teacher>
+	<Subject>ΓΑΛΛΙΚΑ/ΓΕΡΜΑΝΙΚΑ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>146</Id>
+	<Activity_Group_Id>145</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ05 ΘΕΟΦΙΛΟΠΟΥΛΟΥ</Teacher>
+	<Teacher>ΠΕ07 ΚΟΝΤΟΜΗΤΡΟΥ</Teacher>
+	<Subject>ΓΑΛΛΙΚΑ/ΓΕΡΜΑΝΙΚΑ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>147</Id>
+	<Activity_Group_Id>147</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ05 ΘΕΟΦΙΛΟΠΟΥΛΟΥ</Teacher>
+	<Teacher>ΠΕ07 ΚΟΝΤΟΜΗΤΡΟΥ</Teacher>
+	<Subject>ΓΑΛΛΙΚΑ/ΓΕΡΜΑΝΙΚΑ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>148</Id>
+	<Activity_Group_Id>147</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ05 ΘΕΟΦΙΛΟΠΟΥΛΟΥ</Teacher>
+	<Teacher>ΠΕ07 ΚΟΝΤΟΜΗΤΡΟΥ</Teacher>
+	<Subject>ΓΑΛΛΙΚΑ/ΓΕΡΜΑΝΙΚΑ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>149</Id>
+	<Activity_Group_Id>149</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ05 ΘΕΟΦΙΛΟΠΟΥΛΟΥ</Teacher>
+	<Teacher>ΠΕ07 ΚΟΝΤΟΜΗΤΡΟΥ</Teacher>
+	<Subject>ΓΑΛΛΙΚΑ/ΓΕΡΜΑΝΙΚΑ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>150</Id>
+	<Activity_Group_Id>149</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ05 ΘΕΟΦΙΛΟΠΟΥΛΟΥ</Teacher>
+	<Teacher>ΠΕ07 ΚΟΝΤΟΜΗΤΡΟΥ</Teacher>
+	<Subject>ΓΑΛΛΙΚΑ/ΓΕΡΜΑΝΙΚΑ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>151</Id>
+	<Activity_Group_Id>151</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ05 ΘΕΟΦΙΛΟΠΟΥΛΟΥ</Teacher>
+	<Teacher>ΠΕ07 ΚΟΝΤΟΜΗΤΡΟΥ</Teacher>
+	<Subject>ΓΑΛΛΙΚΑ/ΓΕΡΜΑΝΙΚΑ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>152</Id>
+	<Activity_Group_Id>151</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ06 ΝΤΑΗ</Teacher>
+	<Teacher>ΠΕ11 ΚΑΘΟΛΟΣ</Teacher>
+	<Subject>ΑΓΓΛΙΚΑ ΑΡΧ./Φ. ΑΓΩΓΗ</Subject>
+	<Students>Α1</Students>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>153</Id>
+	<Activity_Group_Id>153</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ06 ΝΤΑΗ</Teacher>
+	<Teacher>ΠΕ11 ΚΑΘΟΛΟΣ</Teacher>
+	<Subject>ΑΓΓΛΙΚΑ ΑΡΧ./Φ. ΑΓΩΓΗ</Subject>
+	<Students>Α1</Students>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>154</Id>
+	<Activity_Group_Id>153</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ06 ΝΤΑΗ</Teacher>
+	<Teacher>ΠΕ11 ΚΑΘΟΛΟΣ</Teacher>
+	<Subject>ΑΓΓΛΙΚΑ ΑΡΧ./Φ. ΑΓΩΓΗ</Subject>
+	<Students>Α1</Students>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>155</Id>
+	<Activity_Group_Id>153</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ06 ΝΤΑΗ</Teacher>
+	<Teacher>ΠΕ11 ΚΑΘΟΛΟΣ</Teacher>
+	<Subject>ΑΓΓΛΙΚΑ ΠΡΟ./Φ. ΑΓΩΓΗ</Subject>
+	<Students>Α1</Students>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>156</Id>
+	<Activity_Group_Id>156</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ06 ΝΤΑΗ</Teacher>
+	<Teacher>ΠΕ11 ΚΑΘΟΛΟΣ</Teacher>
+	<Subject>ΑΓΓΛΙΚΑ ΠΡΟ./Φ. ΑΓΩΓΗ</Subject>
+	<Students>Α1</Students>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>157</Id>
+	<Activity_Group_Id>156</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ06 ΝΤΑΗ</Teacher>
+	<Teacher>ΠΕ11 ΚΑΘΟΛΟΣ</Teacher>
+	<Subject>ΑΓΓΛΙΚΑ ΠΡΟ./Φ. ΑΓΩΓΗ</Subject>
+	<Students>Α1</Students>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>158</Id>
+	<Activity_Group_Id>156</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ06 ΝΤΑΗ</Teacher>
+	<Teacher>ΠΕ11 ΚΑΘΟΛΟΣ</Teacher>
+	<Subject>ΑΓΓΛΙΚΑ ΑΡΧ./Φ. ΑΓΩΓΗ</Subject>
+	<Students>Β1</Students>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>159</Id>
+	<Activity_Group_Id>159</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ06 ΝΤΑΗ</Teacher>
+	<Teacher>ΠΕ11 ΚΑΘΟΛΟΣ</Teacher>
+	<Subject>ΑΓΓΛΙΚΑ ΑΡΧ./Φ. ΑΓΩΓΗ</Subject>
+	<Students>Β1</Students>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>160</Id>
+	<Activity_Group_Id>159</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ06 ΝΤΑΗ</Teacher>
+	<Teacher>ΠΕ11 ΚΑΘΟΛΟΣ</Teacher>
+	<Subject>ΑΓΓΛΙΚΑ ΠΡΟ./Φ. ΑΓΩΓΗ</Subject>
+	<Students>Β1</Students>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>161</Id>
+	<Activity_Group_Id>161</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ06 ΝΤΑΗ</Teacher>
+	<Teacher>ΠΕ11 ΚΑΘΟΛΟΣ</Teacher>
+	<Subject>ΑΓΓΛΙΚΑ ΠΡΟ./Φ. ΑΓΩΓΗ</Subject>
+	<Students>Β1</Students>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>162</Id>
+	<Activity_Group_Id>161</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ06 ΝΤΑΗ</Teacher>
+	<Teacher>ΠΕ11 ΚΑΘΟΛΟΣ</Teacher>
+	<Subject>ΑΓΓΛΙΚΑ ΑΡΧ./Φ. ΑΓΩΓΗ</Subject>
+	<Students>Γ1</Students>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>163</Id>
+	<Activity_Group_Id>163</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ06 ΝΤΑΗ</Teacher>
+	<Teacher>ΠΕ11 ΚΑΘΟΛΟΣ</Teacher>
+	<Subject>ΑΓΓΛΙΚΑ ΑΡΧ./Φ. ΑΓΩΓΗ</Subject>
+	<Students>Γ1</Students>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>164</Id>
+	<Activity_Group_Id>163</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ06 ΝΤΑΗ</Teacher>
+	<Teacher>ΠΕ11 ΚΑΘΟΛΟΣ</Teacher>
+	<Subject>ΑΓΓΛΙΚΑ ΠΡΟ./Φ. ΑΓΩΓΗ</Subject>
+	<Students>Γ1</Students>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>165</Id>
+	<Activity_Group_Id>165</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ06 ΝΤΑΗ</Teacher>
+	<Teacher>ΠΕ11 ΚΑΘΟΛΟΣ</Teacher>
+	<Subject>ΑΓΓΛΙΚΑ ΠΡΟ./Φ. ΑΓΩΓΗ</Subject>
+	<Students>Γ1</Students>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>166</Id>
+	<Activity_Group_Id>165</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ08 ΠΑΠΑΔΗΜΗΤΡΙΟΥ</Teacher>
+	<Subject>ΚΑΛΛΙΤΕΧΝΙΚΑ</Subject>
+	<Students>Α1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>167</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ08 ΠΑΠΑΔΗΜΗΤΡΙΟΥ</Teacher>
+	<Subject>ΚΑΛΛΙΤΕΧΝΙΚΑ</Subject>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>168</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ08 ΠΑΠΑΔΗΜΗΤΡΙΟΥ</Teacher>
+	<Subject>ΚΑΛΛΙΤΕΧΝΙΚΑ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>169</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ08 ΠΑΠΑΔΗΜΗΤΡΙΟΥ</Teacher>
+	<Subject>ΚΑΛΛΙΤΕΧΝΙΚΑ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>170</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ08 ΠΑΠΑΔΗΜΗΤΡΙΟΥ</Teacher>
+	<Subject>ΚΑΛΛΙΤΕΧΝΙΚΑ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>171</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ08 ΠΑΠΑΔΗΜΗΤΡΙΟΥ</Teacher>
+	<Subject>ΚΑΛΛΙΤΕΧΝΙΚΑ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>172</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ15 ΒΑΡΒΑΡΕΣΟΥ</Teacher>
+	<Subject>ΟΙΚΙΑΚΗ ΟΙΚΟΝΟΜΙΑ</Subject>
+	<Students>Α1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>189</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ15 ΒΑΡΒΑΡΕΣΟΥ</Teacher>
+	<Subject>ΟΙΚΙΑΚΗ ΟΙΚΟΝΟΜΙΑ</Subject>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>190</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ15 ΒΑΡΒΑΡΕΣΟΥ</Teacher>
+	<Subject>ΟΙΚΙΑΚΗ ΟΙΚΟΝΟΜΙΑ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>191</Id>
+	<Activity_Group_Id>191</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ15 ΒΑΡΒΑΡΕΣΟΥ</Teacher>
+	<Subject>ΟΙΚΙΑΚΗ ΟΙΚΟΝΟΜΙΑ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>192</Id>
+	<Activity_Group_Id>191</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ15 ΒΑΡΒΑΡΕΣΟΥ</Teacher>
+	<Subject>ΟΙΚΙΑΚΗ ΟΙΚΟΝΟΜΙΑ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>193</Id>
+	<Activity_Group_Id>193</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ15 ΒΑΡΒΑΡΕΣΟΥ</Teacher>
+	<Subject>ΟΙΚΙΑΚΗ ΟΙΚΟΝΟΜΙΑ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>194</Id>
+	<Activity_Group_Id>193</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ19 ΒΟΒΟΣ</Teacher>
+	<Teacher>ΠΕ18.13 ΑΛΕΞΙΟΥ</Teacher>
+	<Subject>ΠΛΗΡΟΦΟΡΙΚΗ/ΤΕΧΝΟΛΟΓΙΑ</Subject>
+	<Students>Α1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>225</Id>
+	<Activity_Group_Id>225</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ19 ΒΟΒΟΣ</Teacher>
+	<Teacher>ΠΕ18.13 ΑΛΕΞΙΟΥ</Teacher>
+	<Subject>ΠΛΗΡΟΦΟΡΙΚΗ/ΤΕΧΝΟΛΟΓΙΑ</Subject>
+	<Students>Α1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>226</Id>
+	<Activity_Group_Id>225</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ19 ΒΟΒΟΣ</Teacher>
+	<Teacher>ΠΕ18.13 ΑΛΕΞΙΟΥ</Teacher>
+	<Subject>ΠΛΗΡΟΦΟΡΙΚΗ/ΤΕΧΝΟΛΟΓΙΑ</Subject>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>227</Id>
+	<Activity_Group_Id>227</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ19 ΒΟΒΟΣ</Teacher>
+	<Teacher>ΠΕ18.13 ΑΛΕΞΙΟΥ</Teacher>
+	<Subject>ΠΛΗΡΟΦΟΡΙΚΗ/ΤΕΧΝΟΛΟΓΙΑ</Subject>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>228</Id>
+	<Activity_Group_Id>227</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ19 ΒΟΒΟΣ</Teacher>
+	<Teacher>ΠΕ18.13 ΑΛΕΞΙΟΥ</Teacher>
+	<Subject>ΠΛΗΡΟΦΟΡΙΚΗ/ΤΕΧΝΟΛΟΓΙΑ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>229</Id>
+	<Activity_Group_Id>229</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ19 ΒΟΒΟΣ</Teacher>
+	<Teacher>ΠΕ18.13 ΑΛΕΞΙΟΥ</Teacher>
+	<Subject>ΠΛΗΡΟΦΟΡΙΚΗ/ΤΕΧΝΟΛΟΓΙΑ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>230</Id>
+	<Activity_Group_Id>229</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ19 ΒΟΒΟΣ</Teacher>
+	<Teacher>ΠΕ18.13 ΑΛΕΞΙΟΥ</Teacher>
+	<Subject>ΠΛΗΡΟΦΟΡΙΚΗ/ΤΕΧΝΟΛΟΓΙΑ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>231</Id>
+	<Activity_Group_Id>231</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ19 ΒΟΒΟΣ</Teacher>
+	<Teacher>ΠΕ18.13 ΑΛΕΞΙΟΥ</Teacher>
+	<Subject>ΠΛΗΡΟΦΟΡΙΚΗ/ΤΕΧΝΟΛΟΓΙΑ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>232</Id>
+	<Activity_Group_Id>231</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ19 ΒΟΒΟΣ</Teacher>
+	<Teacher>ΠΕ18.13 ΑΛΕΞΙΟΥ</Teacher>
+	<Subject>ΠΛΗΡΟΦΟΡΙΚΗ/ΣΕΠ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>233</Id>
+	<Activity_Group_Id>233</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ19 ΒΟΒΟΣ</Teacher>
+	<Teacher>ΠΕ18.13 ΑΛΕΞΙΟΥ</Teacher>
+	<Subject>ΠΛΗΡΟΦΟΡΙΚΗ/ΣΕΠ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>234</Id>
+	<Activity_Group_Id>233</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ19 ΒΟΒΟΣ</Teacher>
+	<Teacher>ΠΕ18.13 ΑΛΕΞΙΟΥ</Teacher>
+	<Subject>ΠΛΗΡΟΦΟΡΙΚΗ/ΣΕΠ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>235</Id>
+	<Activity_Group_Id>235</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ19 ΒΟΒΟΣ</Teacher>
+	<Teacher>ΠΕ18.13 ΑΛΕΞΙΟΥ</Teacher>
+	<Subject>ΠΛΗΡΟΦΟΡΙΚΗ/ΣΕΠ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>236</Id>
+	<Activity_Group_Id>235</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ18.13 ΑΛΕΞΙΟΥ</Teacher>
+	<Subject>ΜΟΥΣ</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>246</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ06 ΝΤΑΗ</Teacher>
+	<Subject>ΛΥΚ</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>247</Id>
+	<Activity_Group_Id>247</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ06 ΝΤΑΗ</Teacher>
+	<Subject>ΛΥΚ</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>248</Id>
+	<Activity_Group_Id>247</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ06 ΝΤΑΗ</Teacher>
+	<Subject>ΛΥΚ</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>249</Id>
+	<Activity_Group_Id>247</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ08 ΠΑΠΑΔΗΜΗΤΡΙΟΥ</Teacher>
+	<Subject>ΛΥΚ</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>250</Id>
+	<Activity_Group_Id>250</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ08 ΠΑΠΑΔΗΜΗΤΡΙΟΥ</Teacher>
+	<Subject>ΛΥΚ</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>251</Id>
+	<Activity_Group_Id>250</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΟΥΛΗΣ</Teacher>
+	<Subject>ΛΥΚ</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>252</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ18.13 ΑΛΕΞΙΟΥ</Teacher>
+	<Subject>ΛΥΚ</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>253</Id>
+	<Activity_Group_Id>253</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ18.13 ΑΛΕΞΙΟΥ</Teacher>
+	<Subject>ΛΥΚ</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>254</Id>
+	<Activity_Group_Id>253</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ18.13 ΑΛΕΞΙΟΥ</Teacher>
+	<Subject>ΛΥΚ</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>255</Id>
+	<Activity_Group_Id>253</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ18.13 ΑΛΕΞΙΟΥ</Teacher>
+	<Subject>ΛΥΚ</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>256</Id>
+	<Activity_Group_Id>253</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΤΑΘΟΥΛΙΑ</Teacher>
+	<Subject>ΛΥΚ</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>259</Id>
+	<Activity_Group_Id>259</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΤΑΘΟΥΛΙΑ</Teacher>
+	<Subject>ΛΥΚ</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>260</Id>
+	<Activity_Group_Id>259</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΤΑΘΟΥΛΙΑ</Teacher>
+	<Subject>ΛΥΚ</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>261</Id>
+	<Activity_Group_Id>259</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΤΑΘΟΥΛΙΑ</Teacher>
+	<Subject>ΛΥΚ</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>262</Id>
+	<Activity_Group_Id>259</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΤΑΘΟΥΛΙΑ</Teacher>
+	<Subject>ΛΥΚ</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>263</Id>
+	<Activity_Group_Id>259</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ04 ΣΤΑΘΟΥΛΙΑ</Teacher>
+	<Subject>ΛΥΚ</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>264</Id>
+	<Activity_Group_Id>259</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΒΑΣΙΛΑΚΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΛΥΚ</Subject>
+	<Duration>2</Duration>
+	<Total_Duration>12</Total_Duration>
+	<Id>265</Id>
+	<Activity_Group_Id>265</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΒΑΣΙΛΑΚΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΛΥΚ</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>12</Total_Duration>
+	<Id>266</Id>
+	<Activity_Group_Id>265</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΒΑΣΙΛΑΚΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΛΥΚ</Subject>
+	<Duration>2</Duration>
+	<Total_Duration>12</Total_Duration>
+	<Id>267</Id>
+	<Activity_Group_Id>265</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΒΑΣΙΛΑΚΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΛΥΚ</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>12</Total_Duration>
+	<Id>268</Id>
+	<Activity_Group_Id>265</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΒΑΣΙΛΑΚΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΛΥΚ</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>12</Total_Duration>
+	<Id>269</Id>
+	<Activity_Group_Id>265</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΒΑΣΙΛΑΚΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΛΥΚ</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>12</Total_Duration>
+	<Id>270</Id>
+	<Activity_Group_Id>265</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΒΑΣΙΛΑΚΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΛΥΚ</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>12</Total_Duration>
+	<Id>271</Id>
+	<Activity_Group_Id>265</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΒΑΣΙΛΑΚΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΛΥΚ</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>12</Total_Duration>
+	<Id>272</Id>
+	<Activity_Group_Id>265</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΒΑΣΙΛΑΚΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΛΥΚ</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>12</Total_Duration>
+	<Id>273</Id>
+	<Activity_Group_Id>265</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ03 ΒΑΣΙΛΑΚΟΠΟΥΛΟΣ</Teacher>
+	<Subject>ΛΥΚ</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>12</Total_Duration>
+	<Id>274</Id>
+	<Activity_Group_Id>265</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ11 ΚΑΘΟΛΟΣ</Teacher>
+	<Subject>ΦΥΣΙΚΗ ΑΓΩΓΗ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>275</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ11 ΚΑΘΟΛΟΣ</Teacher>
+	<Subject>ΦΥΣΙΚΗ ΑΓΩΓΗ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>276</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ05 ΘΕΟΦΙΛΟΠΟΥΛΟΥ</Teacher>
+	<Subject>ΛΥΚ</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>277</Id>
+	<Activity_Group_Id>277</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ05 ΘΕΟΦΙΛΟΠΟΥΛΟΥ</Teacher>
+	<Subject>ΛΥΚ</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>278</Id>
+	<Activity_Group_Id>277</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ05 ΘΕΟΦΙΛΟΠΟΥΛΟΥ</Teacher>
+	<Subject>ΛΥΚ</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>279</Id>
+	<Activity_Group_Id>277</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ16 ΠΡΙΓΚΑΣ</Teacher>
+	<Subject>ΜΟΥΣΙΚΗ</Subject>
+	<Students>Α1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>280</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ16 ΠΡΙΓΚΑΣ</Teacher>
+	<Subject>ΜΟΥΣΙΚΗ</Subject>
+	<Students>Α2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>281</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ16 ΠΡΙΓΚΑΣ</Teacher>
+	<Subject>ΜΟΥΣΙΚΗ</Subject>
+	<Students>Β1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>282</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ16 ΠΡΙΓΚΑΣ</Teacher>
+	<Subject>ΜΟΥΣΙΚΗ</Subject>
+	<Students>Β2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>283</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ16 ΠΡΙΓΚΑΣ</Teacher>
+	<Subject>ΜΟΥΣΙΚΗ</Subject>
+	<Students>Γ1</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>284</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ΠΕ16 ΠΡΙΓΚΑΣ</Teacher>
+	<Subject>ΜΟΥΣΙΚΗ</Subject>
+	<Students>Γ2</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>285</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+</Activities_List>
+
+<Buildings_List>
+</Buildings_List>
+
+<Rooms_List>
+</Rooms_List>
+
+<Time_Constraints_List>
+<ConstraintBasicCompulsoryTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintBasicCompulsoryTime>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>ΠΕ01 ΖΩΓΟΠΟΥΛΟΣ</Teacher>
+	<Number_of_Not_Available_Times>14</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>4</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>4</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>ΠΕ08 ΠΑΠΑΔΗΜΗΤΡΙΟΥ</Teacher>
+	<Number_of_Not_Available_Times>17</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Δευτέρα</Day>
+		<Hour>1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Δευτέρα</Day>
+		<Hour>2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>4</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>4</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>ΠΕ04 ΣΟΥΛΗΣ</Teacher>
+	<Number_of_Not_Available_Times>11</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Δευτέρα</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Δευτέρα</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>4</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>ΠΕ04 ΣΤΑΘΟΥΛΙΑ</Teacher>
+	<Number_of_Not_Available_Times>6</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>4</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>4</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>ΠΕ19 ΒΟΒΟΣ</Teacher>
+	<Number_of_Not_Available_Times>13</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Δευτέρα</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Δευτέρα</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>ΠΕ02 ΑΝΔΡΙΑΝΟΠΟΥΛΟΥ</Teacher>
+	<Number_of_Not_Available_Times>9</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Δευτέρα</Day>
+		<Hour>5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeachersMaxHoursDaily>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Maximum_Hours_Daily>5</Maximum_Hours_Daily>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeachersMaxHoursDaily>
+<ConstraintStudentsMaxGapsPerWeek>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Max_Gaps>0</Max_Gaps>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintStudentsMaxGapsPerWeek>
+<ConstraintStudentsEarlyMaxBeginningsAtSecondHour>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Max_Beginnings_At_Second_Hour>0</Max_Beginnings_At_Second_Hour>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintStudentsEarlyMaxBeginningsAtSecondHour>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>1</Activity_Id>
+	<Activity_Id>2</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>3</Activity_Id>
+	<Activity_Id>4</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>5</Activity_Id>
+	<Activity_Id>6</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>9</Activity_Id>
+	<Activity_Id>10</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>11</Activity_Id>
+	<Activity_Id>12</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>13</Activity_Id>
+	<Activity_Id>14</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>15</Activity_Id>
+	<Activity_Id>16</Activity_Id>
+	<Activity_Id>17</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>18</Activity_Id>
+	<Activity_Id>19</Activity_Id>
+	<Activity_Id>20</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>21</Activity_Id>
+	<Activity_Id>22</Activity_Id>
+	<Activity_Id>23</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>24</Activity_Id>
+	<Activity_Id>25</Activity_Id>
+	<Activity_Id>26</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>27</Activity_Id>
+	<Activity_Id>28</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>29</Activity_Id>
+	<Activity_Id>30</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>31</Activity_Id>
+	<Activity_Id>32</Activity_Id>
+	<Activity_Id>33</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>34</Activity_Id>
+	<Activity_Id>35</Activity_Id>
+	<Activity_Id>36</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>37</Activity_Id>
+	<Activity_Id>38</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>39</Activity_Id>
+	<Activity_Id>40</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>41</Activity_Id>
+	<Activity_Id>42</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>43</Activity_Id>
+	<Activity_Id>44</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>45</Activity_Id>
+	<Activity_Id>46</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>47</Activity_Id>
+	<Activity_Id>48</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>49</Activity_Id>
+	<Activity_Id>50</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>51</Activity_Id>
+	<Activity_Id>52</Activity_Id>
+	<Activity_Id>53</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>54</Activity_Id>
+	<Activity_Id>55</Activity_Id>
+	<Activity_Id>56</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>57</Activity_Id>
+	<Activity_Id>58</Activity_Id>
+	<Activity_Id>59</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>60</Activity_Id>
+	<Activity_Id>61</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>62</Activity_Id>
+	<Activity_Id>63</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>64</Activity_Id>
+	<Activity_Id>65</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>66</Activity_Id>
+	<Activity_Id>67</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>68</Activity_Id>
+	<Activity_Id>69</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>70</Activity_Id>
+	<Activity_Id>71</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>72</Activity_Id>
+	<Activity_Id>73</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>74</Activity_Id>
+	<Activity_Id>75</Activity_Id>
+	<Activity_Id>76</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>77</Activity_Id>
+	<Activity_Id>78</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>79</Activity_Id>
+	<Activity_Id>80</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>81</Activity_Id>
+	<Activity_Id>82</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>83</Activity_Id>
+	<Activity_Id>84</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>85</Activity_Id>
+	<Activity_Id>86</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>87</Activity_Id>
+	<Activity_Id>88</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>4</Number_of_Activities>
+	<Activity_Id>89</Activity_Id>
+	<Activity_Id>90</Activity_Id>
+	<Activity_Id>91</Activity_Id>
+	<Activity_Id>92</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>4</Number_of_Activities>
+	<Activity_Id>93</Activity_Id>
+	<Activity_Id>94</Activity_Id>
+	<Activity_Id>95</Activity_Id>
+	<Activity_Id>96</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>4</Number_of_Activities>
+	<Activity_Id>97</Activity_Id>
+	<Activity_Id>98</Activity_Id>
+	<Activity_Id>99</Activity_Id>
+	<Activity_Id>100</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>4</Number_of_Activities>
+	<Activity_Id>101</Activity_Id>
+	<Activity_Id>102</Activity_Id>
+	<Activity_Id>103</Activity_Id>
+	<Activity_Id>104</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>4</Number_of_Activities>
+	<Activity_Id>105</Activity_Id>
+	<Activity_Id>106</Activity_Id>
+	<Activity_Id>107</Activity_Id>
+	<Activity_Id>108</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>4</Number_of_Activities>
+	<Activity_Id>109</Activity_Id>
+	<Activity_Id>110</Activity_Id>
+	<Activity_Id>111</Activity_Id>
+	<Activity_Id>112</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>113</Activity_Id>
+	<Activity_Id>114</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>115</Activity_Id>
+	<Activity_Id>116</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>117</Activity_Id>
+	<Activity_Id>118</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>119</Activity_Id>
+	<Activity_Id>120</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>121</Activity_Id>
+	<Activity_Id>122</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>127</Activity_Id>
+	<Activity_Id>128</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>129</Activity_Id>
+	<Activity_Id>130</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>131</Activity_Id>
+	<Activity_Id>132</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>133</Activity_Id>
+	<Activity_Id>134</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>135</Activity_Id>
+	<Activity_Id>136</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>137</Activity_Id>
+	<Activity_Id>138</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>139</Activity_Id>
+	<Activity_Id>140</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>141</Activity_Id>
+	<Activity_Id>142</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>143</Activity_Id>
+	<Activity_Id>144</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>145</Activity_Id>
+	<Activity_Id>146</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>147</Activity_Id>
+	<Activity_Id>148</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>149</Activity_Id>
+	<Activity_Id>150</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>151</Activity_Id>
+	<Activity_Id>152</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>153</Activity_Id>
+	<Activity_Id>154</Activity_Id>
+	<Activity_Id>155</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>156</Activity_Id>
+	<Activity_Id>157</Activity_Id>
+	<Activity_Id>158</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>159</Activity_Id>
+	<Activity_Id>160</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>161</Activity_Id>
+	<Activity_Id>162</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>163</Activity_Id>
+	<Activity_Id>164</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>165</Activity_Id>
+	<Activity_Id>166</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>191</Activity_Id>
+	<Activity_Id>192</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>193</Activity_Id>
+	<Activity_Id>194</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>ΠΕ18.13 ΑΛΕΞΙΟΥ</Teacher>
+	<Number_of_Not_Available_Times>4</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Δευτέρα</Day>
+		<Hour>2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>ΠΕ02 ΓΚΙΑΦΗΣ</Teacher>
+	<Number_of_Not_Available_Times>29</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Δευτέρα</Day>
+		<Hour>1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Δευτέρα</Day>
+		<Hour>2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Δευτέρα</Day>
+		<Hour>3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Δευτέρα</Day>
+		<Hour>4</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Δευτέρα</Day>
+		<Hour>5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Δευτέρα</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Δευτέρα</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>4</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>4</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>4</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>4</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>ΠΕ15 ΒΑΡΒΑΡΕΣΟΥ</Teacher>
+	<Number_of_Not_Available_Times>26</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>4</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>4</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>4</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>4</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>ΠΕ02 ΠΑΡΙΣΗ</Teacher>
+	<Number_of_Not_Available_Times>9</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>ΠΕ03 ΒΑΣΙΛΑΚΟΠΟΥΛΟΣ</Teacher>
+	<Number_of_Not_Available_Times>9</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Δευτέρα</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Δευτέρα</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>ΠΕ07 ΚΟΝΤΟΜΗΤΡΟΥ</Teacher>
+	<Number_of_Not_Available_Times>17</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>4</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>4</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>ΠΕ02 ΡΕΓΚΛΗ</Teacher>
+	<Number_of_Not_Available_Times>6</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Δευτέρα</Day>
+		<Hour>1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Δευτέρα</Day>
+		<Hour>2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>246</Activity_Id>
+	<Preferred_Day>Δευτέρα</Preferred_Day>
+	<Preferred_Hour>1</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>259</Activity_Id>
+	<Preferred_Day>Τετάρτη</Preferred_Day>
+	<Preferred_Hour>3</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>260</Activity_Id>
+	<Preferred_Day>Τετάρτη</Preferred_Day>
+	<Preferred_Hour>5</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>261</Activity_Id>
+	<Preferred_Day>Πέμπτη</Preferred_Day>
+	<Preferred_Hour>1</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>262</Activity_Id>
+	<Preferred_Day>Παρασκευή</Preferred_Day>
+	<Preferred_Hour>3</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>263</Activity_Id>
+	<Preferred_Day>Παρασκευή</Preferred_Day>
+	<Preferred_Hour>4</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>264</Activity_Id>
+	<Preferred_Day>Παρασκευή</Preferred_Day>
+	<Preferred_Hour>5</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>250</Activity_Id>
+	<Preferred_Day>Δευτέρα</Preferred_Day>
+	<Preferred_Hour>4</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>251</Activity_Id>
+	<Preferred_Day>Παρασκευή</Preferred_Day>
+	<Preferred_Hour>2</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>277</Activity_Id>
+	<Preferred_Day>Τρίτη</Preferred_Day>
+	<Preferred_Hour>6</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>278</Activity_Id>
+	<Preferred_Day>Τρίτη</Preferred_Day>
+	<Preferred_Hour>7</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>279</Activity_Id>
+	<Preferred_Day>Τετάρτη</Preferred_Day>
+	<Preferred_Hour>5</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>253</Activity_Id>
+	<Preferred_Day>Δευτέρα</Preferred_Day>
+	<Preferred_Hour>6</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>254</Activity_Id>
+	<Preferred_Day>Τρίτη</Preferred_Day>
+	<Preferred_Hour>1</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>255</Activity_Id>
+	<Preferred_Day>Πέμπτη</Preferred_Day>
+	<Preferred_Hour>3</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>256</Activity_Id>
+	<Preferred_Day>Πέμπτη</Preferred_Day>
+	<Preferred_Hour>6</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>252</Activity_Id>
+	<Preferred_Day>Τετάρτη</Preferred_Day>
+	<Preferred_Hour>1</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>247</Activity_Id>
+	<Preferred_Day>Τρίτη</Preferred_Day>
+	<Preferred_Hour>6</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>248</Activity_Id>
+	<Preferred_Day>Τρίτη</Preferred_Day>
+	<Preferred_Hour>7</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>249</Activity_Id>
+	<Preferred_Day>Τετάρτη</Preferred_Day>
+	<Preferred_Hour>5</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>265</Activity_Id>
+	<Preferred_Day>Δευτέρα</Preferred_Day>
+	<Preferred_Hour>2</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>266</Activity_Id>
+	<Preferred_Day>Δευτέρα</Preferred_Day>
+	<Preferred_Hour>5</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>267</Activity_Id>
+	<Preferred_Day>Τρίτη</Preferred_Day>
+	<Preferred_Hour>1</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>268</Activity_Id>
+	<Preferred_Day>Τετάρτη</Preferred_Day>
+	<Preferred_Hour>1</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>269</Activity_Id>
+	<Preferred_Day>Τετάρτη</Preferred_Day>
+	<Preferred_Hour>2</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>270</Activity_Id>
+	<Preferred_Day>Τετάρτη</Preferred_Day>
+	<Preferred_Hour>5</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>271</Activity_Id>
+	<Preferred_Day>Πέμπτη</Preferred_Day>
+	<Preferred_Hour>3</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>272</Activity_Id>
+	<Preferred_Day>Πέμπτη</Preferred_Day>
+	<Preferred_Hour>4</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>273</Activity_Id>
+	<Preferred_Day>Παρασκευή</Preferred_Day>
+	<Preferred_Hour>5</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>274</Activity_Id>
+	<Preferred_Day>Παρασκευή</Preferred_Day>
+	<Preferred_Hour>6</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>161</Activity_Id>
+	<Activity_Id>162</Activity_Id>
+	<Activity_Id>275</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>159</Activity_Id>
+	<Activity_Id>160</Activity_Id>
+	<Activity_Id>275</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>159</Activity_Id>
+	<Activity_Id>160</Activity_Id>
+	<Activity_Id>276</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>161</Activity_Id>
+	<Activity_Id>162</Activity_Id>
+	<Activity_Id>276</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintTeachersMaxGapsPerWeek>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Max_Gaps>3</Max_Gaps>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeachersMaxGapsPerWeek>
+<ConstraintTeachersMaxGapsPerDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Max_Gaps>1</Max_Gaps>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeachersMaxGapsPerDay>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>ΠΕ16 ΠΡΙΓΚΑΣ</Teacher>
+	<Number_of_Not_Available_Times>27</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Δευτέρα</Day>
+		<Hour>1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Δευτέρα</Day>
+		<Hour>2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Δευτέρα</Day>
+		<Hour>3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>4</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τετάρτη</Day>
+		<Hour>3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>4</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Πέμπτη</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>4</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>6</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Παρασκευή</Day>
+		<Hour>7</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>225</Activity_Id>
+	<Activity_Id>226</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>227</Activity_Id>
+	<Activity_Id>228</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>229</Activity_Id>
+	<Activity_Id>230</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>231</Activity_Id>
+	<Activity_Id>232</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>233</Activity_Id>
+	<Activity_Id>234</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>235</Activity_Id>
+	<Activity_Id>236</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>21</Activity_Id>
+	<Activity_Id>22</Activity_Id>
+	<Activity_Id>23</Activity_Id>
+	<Activity_Id>27</Activity_Id>
+	<Activity_Id>28</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>24</Activity_Id>
+	<Activity_Id>25</Activity_Id>
+	<Activity_Id>26</Activity_Id>
+	<Activity_Id>29</Activity_Id>
+	<Activity_Id>30</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>31</Activity_Id>
+	<Activity_Id>32</Activity_Id>
+	<Activity_Id>33</Activity_Id>
+	<Activity_Id>37</Activity_Id>
+	<Activity_Id>38</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>34</Activity_Id>
+	<Activity_Id>35</Activity_Id>
+	<Activity_Id>36</Activity_Id>
+	<Activity_Id>39</Activity_Id>
+	<Activity_Id>40</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintTeacherIntervalMaxDaysPerWeek>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher_Name>ΠΕ02 ΑΝΔΡΙΑΝΟΠΟΥΛΟΥ</Teacher_Name>
+	<Interval_Start_Hour>7</Interval_Start_Hour>
+	<Interval_End_Hour></Interval_End_Hour>
+	<!-- Interval_End_Hour void means the end of the day (which has no name) -->
+	<Max_Days_Per_Week>2</Max_Days_Per_Week>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherIntervalMaxDaysPerWeek>
+<ConstraintTeacherIntervalMaxDaysPerWeek>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher_Name>ΠΕ02 ΚΑΛΑΜΑΡΑ</Teacher_Name>
+	<Interval_Start_Hour>7</Interval_Start_Hour>
+	<Interval_End_Hour></Interval_End_Hour>
+	<!-- Interval_End_Hour void means the end of the day (which has no name) -->
+	<Max_Days_Per_Week>2</Max_Days_Per_Week>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherIntervalMaxDaysPerWeek>
+<ConstraintTeacherIntervalMaxDaysPerWeek>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher_Name>ΠΕ02 ΠΑΡΙΣΗ</Teacher_Name>
+	<Interval_Start_Hour>7</Interval_Start_Hour>
+	<Interval_End_Hour></Interval_End_Hour>
+	<!-- Interval_End_Hour void means the end of the day (which has no name) -->
+	<Max_Days_Per_Week>3</Max_Days_Per_Week>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherIntervalMaxDaysPerWeek>
+<ConstraintTeacherIntervalMaxDaysPerWeek>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher_Name>ΠΕ02 ΡΕΓΚΛΗ</Teacher_Name>
+	<Interval_Start_Hour>7</Interval_Start_Hour>
+	<Interval_End_Hour></Interval_End_Hour>
+	<!-- Interval_End_Hour void means the end of the day (which has no name) -->
+	<Max_Days_Per_Week>2</Max_Days_Per_Week>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherIntervalMaxDaysPerWeek>
+<ConstraintTeacherIntervalMaxDaysPerWeek>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher_Name>ΠΕ03 ΣΟΥΛΙΩΤΗ</Teacher_Name>
+	<Interval_Start_Hour>7</Interval_Start_Hour>
+	<Interval_End_Hour></Interval_End_Hour>
+	<!-- Interval_End_Hour void means the end of the day (which has no name) -->
+	<Max_Days_Per_Week>2</Max_Days_Per_Week>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherIntervalMaxDaysPerWeek>
+<ConstraintTeachersMaxHoursContinuously>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Maximum_Hours_Continuously>4</Maximum_Hours_Continuously>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeachersMaxHoursContinuously>
+<ConstraintTeacherMaxHoursDaily>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher_Name>ΠΕ01 ΖΩΓΟΠΟΥΛΟΣ</Teacher_Name>
+	<Maximum_Hours_Daily>4</Maximum_Hours_Daily>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherMaxHoursDaily>
+<ConstraintTeacherIntervalMaxDaysPerWeek>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher_Name>ΠΕ06 ΝΤΑΗ</Teacher_Name>
+	<Interval_Start_Hour>7</Interval_Start_Hour>
+	<Interval_End_Hour></Interval_End_Hour>
+	<!-- Interval_End_Hour void means the end of the day (which has no name) -->
+	<Max_Days_Per_Week>3</Max_Days_Per_Week>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherIntervalMaxDaysPerWeek>
+<ConstraintActivityPreferredTimeSlots>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>235</Activity_Id>
+	<Number_of_Preferred_Time_Slots>7</Number_of_Preferred_Time_Slots>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Τρίτη</Preferred_Day>
+		<Preferred_Hour>1</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Τρίτη</Preferred_Day>
+		<Preferred_Hour>2</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Τρίτη</Preferred_Day>
+		<Preferred_Hour>3</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Τρίτη</Preferred_Day>
+		<Preferred_Hour>4</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Τρίτη</Preferred_Day>
+		<Preferred_Hour>5</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Τρίτη</Preferred_Day>
+		<Preferred_Hour>6</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Τρίτη</Preferred_Day>
+		<Preferred_Hour>7</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredTimeSlots>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>ΠΕ06 ΝΤΑΗ</Teacher>
+	<Number_of_Not_Available_Times>2</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Τρίτη</Day>
+		<Hour>5</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+</Time_Constraints_List>
+
+<Space_Constraints_List>
+<ConstraintBasicCompulsorySpace>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintBasicCompulsorySpace>
+</Space_Constraints_List>
+
+</fet>

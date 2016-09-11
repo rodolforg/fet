@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DaysForm_template</class>
+ <widget class="QDialog" name="DaysForm_template">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>572</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string extracomment="The title of the dialog to set the days of the week">The days of the week</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="numberGroupBox">
+     <property name="title">
+      <string>Number of working days per week</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QSpinBox" name="daysSpinBox">
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>100</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <spacer name="spacer4">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Expanding</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>31</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QVBoxLayout">
+       <item>
+        <widget class="QLabel" name="day1TextLabel">
+         <property name="text">
+          <string>Day 1</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day1LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day2TextLabel">
+         <property name="text">
+          <string>Day 2</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day2LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day3TextLabel">
+         <property name="text">
+          <string>Day 3</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day3LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day4TextLabel">
+         <property name="text">
+          <string>Day 4</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day4LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day5TextLabel">
+         <property name="text">
+          <string>Day 5</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day5LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day6TextLabel">
+         <property name="text">
+          <string>Day 6</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day6LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day7TextLabel">
+         <property name="text">
+          <string>Day 7</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day7LineEdit"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout">
+       <item>
+        <widget class="QLabel" name="day8TextLabel">
+         <property name="text">
+          <string>Day 8</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day8LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day9TextLabel">
+         <property name="text">
+          <string>Day 9</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day9LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day10TextLabel">
+         <property name="text">
+          <string>Day 10</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day10LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day11TextLabel">
+         <property name="text">
+          <string>Day 11</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day11LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day12TextLabel">
+         <property name="text">
+          <string>Day 12</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day12LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day13TextLabel">
+         <property name="text">
+          <string>Day 13</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day13LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day14TextLabel">
+         <property name="text">
+          <string>Day 14</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day14LineEdit"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout">
+       <item>
+        <widget class="QLabel" name="day15TextLabel">
+         <property name="text">
+          <string>Day 15</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day15LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day16TextLabel">
+         <property name="text">
+          <string>Day 16</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day16LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day17TextLabel">
+         <property name="text">
+          <string>Day 17</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day17LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day18TextLabel">
+         <property name="text">
+          <string>Day 18</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day18LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day19TextLabel">
+         <property name="text">
+          <string>Day 19</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day19LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day20TextLabel">
+         <property name="text">
+          <string>Day 20</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day20LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day21TextLabel">
+         <property name="text">
+          <string>Day 21</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day21LineEdit"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout">
+       <item>
+        <widget class="QLabel" name="day22TextLabel">
+         <property name="text">
+          <string>Day 22</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day22LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day23TextLabel">
+         <property name="text">
+          <string>Day 23</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day23LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day24TextLabel">
+         <property name="text">
+          <string>Day 24</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day24LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day25TextLabel">
+         <property name="text">
+          <string>Day 25</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day25LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day26TextLabel">
+         <property name="text">
+          <string>Day 26</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day26LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day27TextLabel">
+         <property name="text">
+          <string>Day 27</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day27LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day28TextLabel">
+         <property name="text">
+          <string>Day 28</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day28LineEdit"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="_2">
+       <item>
+        <widget class="QLabel" name="day29TextLabel">
+         <property name="text">
+          <string>Day 29</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day29LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day30TextLabel">
+         <property name="text">
+          <string>Day 30</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day30LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day31TextLabel">
+         <property name="text">
+          <string>Day 31</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day31LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day32TextLabel">
+         <property name="text">
+          <string>Day 32</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day32LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day33TextLabel">
+         <property name="text">
+          <string>Day 33</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day33LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day34TextLabel">
+         <property name="text">
+          <string>Day 34</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day34LineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="day35TextLabel">
+         <property name="text">
+          <string>Day 35</string>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="day35LineEdit"/>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item row="3" column="0">
+    <spacer name="spacer5">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Expanding</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>41</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="4" column="0">
+    <layout class="QHBoxLayout">
+     <item>
+      <widget class="QPushButton" name="okPushButton">
+       <property name="text">
+        <string>Ok</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cancelPushButton">
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

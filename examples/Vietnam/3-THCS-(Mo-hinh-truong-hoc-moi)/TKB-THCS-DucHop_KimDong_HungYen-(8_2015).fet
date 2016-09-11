@@ -1,0 +1,4448 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<fet version="5.30.3">
+
+<Institution_Name>TRƯỜNG THCS ĐỨC HỢP - KIM ĐỘNG - HƯNG YÊN</Institution_Name>
+
+<Comments>TKB TỰ ĐỘNG V2015
+Nguyễn Hữu Duyệt
+Giáo viên THCS Đức Hợp, Kim Động, Hưng Yên
+Rất vui hướng dẫn các trường xếp TKB</Comments>
+
+<Days_List>
+<Number_of_Days>6</Number_of_Days>
+<Day>
+	<Name>Thứ Hai</Name>
+</Day>
+<Day>
+	<Name>Thứ Ba</Name>
+</Day>
+<Day>
+	<Name>Thứ Tư</Name>
+</Day>
+<Day>
+	<Name>Thứ Năm</Name>
+</Day>
+<Day>
+	<Name>Thứ Sáu</Name>
+</Day>
+<Day>
+	<Name>Thứ Bảy</Name>
+</Day>
+</Days_List>
+
+<Hours_List>
+<Number_of_Hours>5</Number_of_Hours>
+<Hour>
+	<Name>Tiết 1</Name>
+</Hour>
+<Hour>
+	<Name>Tiết 2</Name>
+</Hour>
+<Hour>
+	<Name>Tiết 3</Name>
+</Hour>
+<Hour>
+	<Name>Tiết 4</Name>
+</Hour>
+<Hour>
+	<Name>Tiết 5</Name>
+</Hour>
+</Hours_List>
+
+<Subjects_List>
+<Subject>
+	<Name>Toán</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Vật lí</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Hóa học</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Sinh học</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Công nghệ</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Ngữ văn</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Lịch Sử</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Địa Lí</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>GDCD</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Thể dục</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Ngoại ngữ</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Tin học</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Mỹ thuật</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Âm nhạc</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>KHTN</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>KHXH</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Sinh hoạt</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Chào cờ</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>HĐGD</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TC</Name>
+	<Comments></Comments>
+</Subject>
+</Subjects_List>
+
+<Activity_Tags_List>
+</Activity_Tags_List>
+
+<Teachers_List>
+<Teacher>
+	<Name>Dung</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Duyệt</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Hoa</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Huyền</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Huệ</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Hà</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Hưng</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Hương</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Hải</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Lan</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Ngọ</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Nhinh</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Nụ</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Quang</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Quyên</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>T.Hường</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Thu</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Thắm</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Thủy</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Tiến</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Tuynh</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Tân</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Yến </Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Yến(GV)</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>super admin_(superadmin)</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+</Teachers_List>
+
+<Students_List>
+<Year>
+	<Name>Khối 6</Name>
+	<Number_of_Students>0</Number_of_Students>
+	<Comments></Comments>
+	<Group>
+		<Name>6A</Name>
+		<Number_of_Students>0</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+	<Group>
+		<Name>6B</Name>
+		<Number_of_Students>0</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+</Year>
+<Year>
+	<Name>Khối 7</Name>
+	<Number_of_Students>0</Number_of_Students>
+	<Comments></Comments>
+	<Group>
+		<Name>7A</Name>
+		<Number_of_Students>0</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+	<Group>
+		<Name>7B</Name>
+		<Number_of_Students>0</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+</Year>
+<Year>
+	<Name>Khối 8</Name>
+	<Number_of_Students>0</Number_of_Students>
+	<Comments></Comments>
+	<Group>
+		<Name>8A</Name>
+		<Number_of_Students>0</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+	<Group>
+		<Name>8B</Name>
+		<Number_of_Students>0</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+</Year>
+<Year>
+	<Name>Khối 9</Name>
+	<Number_of_Students>0</Number_of_Students>
+	<Comments></Comments>
+	<Group>
+		<Name>9A</Name>
+		<Number_of_Students>0</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+	<Group>
+		<Name>9B</Name>
+		<Number_of_Students>0</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+</Year>
+</Students_List>
+
+<Activities_List>
+<Activity>
+	<Teacher>Duyệt</Teacher>
+	<Subject>Toán</Subject>
+	<Students>6A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>1</Id>
+	<Activity_Group_Id>1</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Duyệt</Teacher>
+	<Subject>Toán</Subject>
+	<Students>6A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>2</Id>
+	<Activity_Group_Id>1</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Duyệt</Teacher>
+	<Subject>Toán</Subject>
+	<Students>6A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>3</Id>
+	<Activity_Group_Id>1</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Duyệt</Teacher>
+	<Subject>Toán</Subject>
+	<Students>6B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>4</Id>
+	<Activity_Group_Id>4</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Duyệt</Teacher>
+	<Subject>Toán</Subject>
+	<Students>6B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>5</Id>
+	<Activity_Group_Id>4</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Duyệt</Teacher>
+	<Subject>Toán</Subject>
+	<Students>6B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>6</Id>
+	<Activity_Group_Id>4</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Duyệt</Teacher>
+	<Subject>Tin học</Subject>
+	<Students>7B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>7</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Yến </Teacher>
+	<Subject>Vật lí</Subject>
+	<Students>9B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>8</Id>
+	<Activity_Group_Id>8</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Yến </Teacher>
+	<Subject>Vật lí</Subject>
+	<Students>9B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>9</Id>
+	<Activity_Group_Id>8</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Tuynh</Teacher>
+	<Subject>Toán</Subject>
+	<Students>8A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>10</Id>
+	<Activity_Group_Id>10</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Tuynh</Teacher>
+	<Subject>Toán</Subject>
+	<Students>8A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>11</Id>
+	<Activity_Group_Id>10</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Tuynh</Teacher>
+	<Subject>Toán</Subject>
+	<Students>8A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>12</Id>
+	<Activity_Group_Id>10</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Tân</Teacher>
+	<Subject>Toán</Subject>
+	<Students>7A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>13</Id>
+	<Activity_Group_Id>13</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Tân</Teacher>
+	<Subject>Toán</Subject>
+	<Students>7A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>14</Id>
+	<Activity_Group_Id>13</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Tân</Teacher>
+	<Subject>Toán</Subject>
+	<Students>7A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>15</Id>
+	<Activity_Group_Id>13</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Tân</Teacher>
+	<Subject>Toán</Subject>
+	<Students>7B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>16</Id>
+	<Activity_Group_Id>16</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Tân</Teacher>
+	<Subject>Toán</Subject>
+	<Students>7B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>17</Id>
+	<Activity_Group_Id>16</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Tân</Teacher>
+	<Subject>Toán</Subject>
+	<Students>7B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>18</Id>
+	<Activity_Group_Id>16</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Tân</Teacher>
+	<Subject>Vật lí</Subject>
+	<Students>9A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>19</Id>
+	<Activity_Group_Id>19</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Tân</Teacher>
+	<Subject>Vật lí</Subject>
+	<Students>9A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>20</Id>
+	<Activity_Group_Id>19</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Yến(GV)</Teacher>
+	<Subject>Toán</Subject>
+	<Students>9A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>21</Id>
+	<Activity_Group_Id>21</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Yến(GV)</Teacher>
+	<Subject>Toán</Subject>
+	<Students>9A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>22</Id>
+	<Activity_Group_Id>21</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Yến(GV)</Teacher>
+	<Subject>Toán</Subject>
+	<Students>9A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>23</Id>
+	<Activity_Group_Id>21</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Yến(GV)</Teacher>
+	<Subject>Toán</Subject>
+	<Students>9B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>24</Id>
+	<Activity_Group_Id>24</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Yến(GV)</Teacher>
+	<Subject>Toán</Subject>
+	<Students>9B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>25</Id>
+	<Activity_Group_Id>24</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Yến(GV)</Teacher>
+	<Subject>Toán</Subject>
+	<Students>9B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>26</Id>
+	<Activity_Group_Id>24</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Yến(GV)</Teacher>
+	<Subject>TC</Subject>
+	<Students>9A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>27</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Yến(GV)</Teacher>
+	<Subject>TC</Subject>
+	<Students>9B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>28</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Yến(GV)</Teacher>
+	<Subject>Vật lí</Subject>
+	<Students>8A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>29</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Yến(GV)</Teacher>
+	<Subject>Vật lí</Subject>
+	<Students>8B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>30</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hải</Teacher>
+	<Subject>Vật lí</Subject>
+	<Students>7A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>31</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hải</Teacher>
+	<Subject>Vật lí</Subject>
+	<Students>7B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>32</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hải</Teacher>
+	<Subject>Tin học</Subject>
+	<Students>6A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>33</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hải</Teacher>
+	<Subject>Tin học</Subject>
+	<Students>6B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>34</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hải</Teacher>
+	<Subject>Tin học</Subject>
+	<Students>8A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>35</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hải</Teacher>
+	<Subject>Toán</Subject>
+	<Students>8B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>36</Id>
+	<Activity_Group_Id>36</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hải</Teacher>
+	<Subject>Toán</Subject>
+	<Students>8B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>37</Id>
+	<Activity_Group_Id>36</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hải</Teacher>
+	<Subject>Toán</Subject>
+	<Students>8B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>38</Id>
+	<Activity_Group_Id>36</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hải</Teacher>
+	<Subject>Tin học</Subject>
+	<Students>8B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>39</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nụ</Teacher>
+	<Subject>KHTN</Subject>
+	<Students>6A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>40</Id>
+	<Activity_Group_Id>40</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nụ</Teacher>
+	<Subject>KHTN</Subject>
+	<Students>6A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>41</Id>
+	<Activity_Group_Id>40</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nụ</Teacher>
+	<Subject>KHTN</Subject>
+	<Students>6A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>42</Id>
+	<Activity_Group_Id>40</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nụ</Teacher>
+	<Subject>KHTN</Subject>
+	<Students>6B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>43</Id>
+	<Activity_Group_Id>43</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nụ</Teacher>
+	<Subject>KHTN</Subject>
+	<Students>6B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>44</Id>
+	<Activity_Group_Id>43</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nụ</Teacher>
+	<Subject>KHTN</Subject>
+	<Students>6B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>45</Id>
+	<Activity_Group_Id>43</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nụ</Teacher>
+	<Subject>Hóa học</Subject>
+	<Students>8A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>46</Id>
+	<Activity_Group_Id>46</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nụ</Teacher>
+	<Subject>Hóa học</Subject>
+	<Students>8A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>47</Id>
+	<Activity_Group_Id>46</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nụ</Teacher>
+	<Subject>Công nghệ</Subject>
+	<Students>8B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>48</Id>
+	<Activity_Group_Id>48</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nụ</Teacher>
+	<Subject>Công nghệ</Subject>
+	<Students>8B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>49</Id>
+	<Activity_Group_Id>48</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nhinh</Teacher>
+	<Subject>Hóa học</Subject>
+	<Students>9A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>50</Id>
+	<Activity_Group_Id>50</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nhinh</Teacher>
+	<Subject>Hóa học</Subject>
+	<Students>9A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>51</Id>
+	<Activity_Group_Id>50</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nhinh</Teacher>
+	<Subject>Hóa học</Subject>
+	<Students>9B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>52</Id>
+	<Activity_Group_Id>52</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nhinh</Teacher>
+	<Subject>Hóa học</Subject>
+	<Students>9B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>53</Id>
+	<Activity_Group_Id>52</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nhinh</Teacher>
+	<Subject>Công nghệ</Subject>
+	<Students>7A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>54</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nhinh</Teacher>
+	<Subject>Công nghệ</Subject>
+	<Students>7B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>55</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nhinh</Teacher>
+	<Subject>Sinh hoạt</Subject>
+	<Students>9A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>56</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nhinh</Teacher>
+	<Subject>Chào cờ</Subject>
+	<Students>9A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>57</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Huệ</Teacher>
+	<Subject>Công nghệ</Subject>
+	<Students>8A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>58</Id>
+	<Activity_Group_Id>58</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Huệ</Teacher>
+	<Subject>Công nghệ</Subject>
+	<Students>8A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>59</Id>
+	<Activity_Group_Id>58</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Huệ</Teacher>
+	<Subject>Sinh học</Subject>
+	<Students>9A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>60</Id>
+	<Activity_Group_Id>60</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Huệ</Teacher>
+	<Subject>Sinh học</Subject>
+	<Students>9A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>61</Id>
+	<Activity_Group_Id>60</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Huệ</Teacher>
+	<Subject>Sinh học</Subject>
+	<Students>9B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>62</Id>
+	<Activity_Group_Id>62</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Huệ</Teacher>
+	<Subject>Sinh học</Subject>
+	<Students>9B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>63</Id>
+	<Activity_Group_Id>62</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Huệ</Teacher>
+	<Subject>Tin học</Subject>
+	<Students>7A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>64</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Lan</Teacher>
+	<Subject>Sinh học</Subject>
+	<Students>7A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>65</Id>
+	<Activity_Group_Id>65</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Lan</Teacher>
+	<Subject>Sinh học</Subject>
+	<Students>7A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>66</Id>
+	<Activity_Group_Id>65</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Lan</Teacher>
+	<Subject>Sinh học</Subject>
+	<Students>7B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>67</Id>
+	<Activity_Group_Id>67</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Lan</Teacher>
+	<Subject>Sinh học</Subject>
+	<Students>7B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>68</Id>
+	<Activity_Group_Id>67</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Lan</Teacher>
+	<Subject>Sinh học</Subject>
+	<Students>8A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>69</Id>
+	<Activity_Group_Id>69</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Lan</Teacher>
+	<Subject>Sinh học</Subject>
+	<Students>8A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>70</Id>
+	<Activity_Group_Id>69</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Lan</Teacher>
+	<Subject>Sinh học</Subject>
+	<Students>8B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>71</Id>
+	<Activity_Group_Id>71</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Lan</Teacher>
+	<Subject>Sinh học</Subject>
+	<Students>8B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>72</Id>
+	<Activity_Group_Id>71</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Lan</Teacher>
+	<Subject>Hóa học</Subject>
+	<Students>8B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>73</Id>
+	<Activity_Group_Id>73</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Lan</Teacher>
+	<Subject>Hóa học</Subject>
+	<Students>8B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>74</Id>
+	<Activity_Group_Id>73</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Thắm</Teacher>
+	<Subject>Thể dục</Subject>
+	<Students>9A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>75</Id>
+	<Activity_Group_Id>75</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Thắm</Teacher>
+	<Subject>Thể dục</Subject>
+	<Students>9A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>76</Id>
+	<Activity_Group_Id>75</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Thắm</Teacher>
+	<Subject>Thể dục</Subject>
+	<Students>9B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>77</Id>
+	<Activity_Group_Id>77</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Thắm</Teacher>
+	<Subject>Thể dục</Subject>
+	<Students>9B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>78</Id>
+	<Activity_Group_Id>77</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hưng</Teacher>
+	<Subject>Thể dục</Subject>
+	<Students>6A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>79</Id>
+	<Activity_Group_Id>79</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hưng</Teacher>
+	<Subject>Thể dục</Subject>
+	<Students>6A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>80</Id>
+	<Activity_Group_Id>79</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hưng</Teacher>
+	<Subject>Thể dục</Subject>
+	<Students>6B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>81</Id>
+	<Activity_Group_Id>81</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hưng</Teacher>
+	<Subject>Thể dục</Subject>
+	<Students>6B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>82</Id>
+	<Activity_Group_Id>81</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hưng</Teacher>
+	<Subject>Thể dục</Subject>
+	<Students>7A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>83</Id>
+	<Activity_Group_Id>83</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hưng</Teacher>
+	<Subject>Thể dục</Subject>
+	<Students>7A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>84</Id>
+	<Activity_Group_Id>83</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hưng</Teacher>
+	<Subject>Thể dục</Subject>
+	<Students>7B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>85</Id>
+	<Activity_Group_Id>85</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hưng</Teacher>
+	<Subject>Thể dục</Subject>
+	<Students>7B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>86</Id>
+	<Activity_Group_Id>85</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hưng</Teacher>
+	<Subject>Thể dục</Subject>
+	<Students>8A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>87</Id>
+	<Activity_Group_Id>87</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hưng</Teacher>
+	<Subject>Thể dục</Subject>
+	<Students>8A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>88</Id>
+	<Activity_Group_Id>87</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hưng</Teacher>
+	<Subject>Thể dục</Subject>
+	<Students>8B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>89</Id>
+	<Activity_Group_Id>89</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hưng</Teacher>
+	<Subject>Thể dục</Subject>
+	<Students>8B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>90</Id>
+	<Activity_Group_Id>89</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Huyền</Teacher>
+	<Subject>Mỹ thuật</Subject>
+	<Students>6A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>91</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Huyền</Teacher>
+	<Subject>Mỹ thuật</Subject>
+	<Students>6B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>92</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Huyền</Teacher>
+	<Subject>Mỹ thuật</Subject>
+	<Students>7A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>93</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Huyền</Teacher>
+	<Subject>Mỹ thuật</Subject>
+	<Students>7B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>94</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Huyền</Teacher>
+	<Subject>Mỹ thuật</Subject>
+	<Students>8A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>95</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Huyền</Teacher>
+	<Subject>Mỹ thuật</Subject>
+	<Students>8B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>96</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Huyền</Teacher>
+	<Subject>Công nghệ</Subject>
+	<Students>6A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>97</Id>
+	<Activity_Group_Id>97</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Huyền</Teacher>
+	<Subject>Công nghệ</Subject>
+	<Students>6A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>98</Id>
+	<Activity_Group_Id>97</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Huyền</Teacher>
+	<Subject>Công nghệ</Subject>
+	<Students>6B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>99</Id>
+	<Activity_Group_Id>99</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Huyền</Teacher>
+	<Subject>Công nghệ</Subject>
+	<Students>6B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>100</Id>
+	<Activity_Group_Id>99</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Quyên</Teacher>
+	<Subject>Ngữ văn</Subject>
+	<Students>9A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>101</Id>
+	<Activity_Group_Id>101</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Quyên</Teacher>
+	<Subject>Ngữ văn</Subject>
+	<Students>9A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>102</Id>
+	<Activity_Group_Id>101</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Quyên</Teacher>
+	<Subject>Ngữ văn</Subject>
+	<Students>9A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>103</Id>
+	<Activity_Group_Id>101</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Quyên</Teacher>
+	<Subject>Ngữ văn</Subject>
+	<Students>9A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>104</Id>
+	<Activity_Group_Id>101</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Quyên</Teacher>
+	<Subject>TC</Subject>
+	<Students>9A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>105</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Quyên</Teacher>
+	<Subject>Địa Lí</Subject>
+	<Students>8A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>106</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Quyên</Teacher>
+	<Subject>Địa Lí</Subject>
+	<Students>8B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>107</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Quyên</Teacher>
+	<Teacher>Quang</Teacher>
+	<Subject>KHXH</Subject>
+	<Students>6B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>108</Id>
+	<Activity_Group_Id>108</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Quyên</Teacher>
+	<Teacher>Quang</Teacher>
+	<Subject>KHXH</Subject>
+	<Students>6B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>109</Id>
+	<Activity_Group_Id>108</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Thủy</Teacher>
+	<Subject>Ngữ văn</Subject>
+	<Students>7B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>110</Id>
+	<Activity_Group_Id>110</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Thủy</Teacher>
+	<Subject>Ngữ văn</Subject>
+	<Students>7B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>111</Id>
+	<Activity_Group_Id>110</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Thủy</Teacher>
+	<Subject>Ngữ văn</Subject>
+	<Students>7B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>112</Id>
+	<Activity_Group_Id>110</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Thủy</Teacher>
+	<Subject>Địa Lí</Subject>
+	<Students>9A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>113</Id>
+	<Activity_Group_Id>113</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Thủy</Teacher>
+	<Subject>Địa Lí</Subject>
+	<Students>9A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>114</Id>
+	<Activity_Group_Id>113</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Thủy</Teacher>
+	<Subject>Địa Lí</Subject>
+	<Students>9B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>115</Id>
+	<Activity_Group_Id>115</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Thủy</Teacher>
+	<Subject>Địa Lí</Subject>
+	<Students>9B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>116</Id>
+	<Activity_Group_Id>115</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Thủy</Teacher>
+	<Subject>Sinh hoạt</Subject>
+	<Students>7B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>117</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Thủy</Teacher>
+	<Subject>Chào cờ</Subject>
+	<Students>7B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>118</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Quang</Teacher>
+	<Subject>Ngữ văn</Subject>
+	<Students>9B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>119</Id>
+	<Activity_Group_Id>119</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Quang</Teacher>
+	<Subject>Ngữ văn</Subject>
+	<Students>9B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>120</Id>
+	<Activity_Group_Id>119</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Quang</Teacher>
+	<Subject>Ngữ văn</Subject>
+	<Students>9B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>121</Id>
+	<Activity_Group_Id>119</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Quang</Teacher>
+	<Subject>Ngữ văn</Subject>
+	<Students>9B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>122</Id>
+	<Activity_Group_Id>119</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Quang</Teacher>
+	<Subject>TC</Subject>
+	<Students>9B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>123</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Quang</Teacher>
+	<Teacher>Quyên</Teacher>
+	<Subject>KHXH</Subject>
+	<Students>6A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>124</Id>
+	<Activity_Group_Id>124</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Quang</Teacher>
+	<Teacher>Quyên</Teacher>
+	<Subject>KHXH</Subject>
+	<Students>6A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>125</Id>
+	<Activity_Group_Id>124</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Quang</Teacher>
+	<Subject>Sinh hoạt</Subject>
+	<Students>9B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>126</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Quang</Teacher>
+	<Subject>Chào cờ</Subject>
+	<Students>9B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>127</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hương</Teacher>
+	<Subject>Ngữ văn</Subject>
+	<Students>8B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>128</Id>
+	<Activity_Group_Id>128</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hương</Teacher>
+	<Subject>Ngữ văn</Subject>
+	<Students>8B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>129</Id>
+	<Activity_Group_Id>128</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hương</Teacher>
+	<Subject>Ngữ văn</Subject>
+	<Students>8B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>130</Id>
+	<Activity_Group_Id>128</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hương</Teacher>
+	<Subject>GDCD</Subject>
+	<Students>6A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>131</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hương</Teacher>
+	<Subject>GDCD</Subject>
+	<Students>6B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>132</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hương</Teacher>
+	<Subject>Sinh hoạt</Subject>
+	<Students>8B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>133</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hương</Teacher>
+	<Subject>Chào cờ</Subject>
+	<Students>8B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>134</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Tiến</Teacher>
+	<Subject>Ngữ văn</Subject>
+	<Students>7A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>135</Id>
+	<Activity_Group_Id>135</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Tiến</Teacher>
+	<Subject>Ngữ văn</Subject>
+	<Students>7A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>136</Id>
+	<Activity_Group_Id>135</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Tiến</Teacher>
+	<Subject>Ngữ văn</Subject>
+	<Students>7A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>137</Id>
+	<Activity_Group_Id>135</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Tiến</Teacher>
+	<Subject>Lịch Sử</Subject>
+	<Students>7A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>138</Id>
+	<Activity_Group_Id>138</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Tiến</Teacher>
+	<Subject>Lịch Sử</Subject>
+	<Students>7A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>139</Id>
+	<Activity_Group_Id>138</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Tiến</Teacher>
+	<Subject>Lịch Sử</Subject>
+	<Students>7B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>140</Id>
+	<Activity_Group_Id>140</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Tiến</Teacher>
+	<Subject>Lịch Sử</Subject>
+	<Students>7B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>141</Id>
+	<Activity_Group_Id>140</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Tiến</Teacher>
+	<Subject>Chào cờ</Subject>
+	<Students>7A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>144</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Tiến</Teacher>
+	<Subject>Sinh hoạt</Subject>
+	<Students>7A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>145</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hà</Teacher>
+	<Subject>Ngữ văn</Subject>
+	<Students>6B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>146</Id>
+	<Activity_Group_Id>146</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hà</Teacher>
+	<Subject>Ngữ văn</Subject>
+	<Students>6B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>147</Id>
+	<Activity_Group_Id>146</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hà</Teacher>
+	<Subject>Ngữ văn</Subject>
+	<Students>6B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>148</Id>
+	<Activity_Group_Id>146</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hà</Teacher>
+	<Subject>Lịch Sử</Subject>
+	<Students>9A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>149</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hà</Teacher>
+	<Subject>Lịch Sử</Subject>
+	<Students>9B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>150</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hà</Teacher>
+	<Subject>Sinh hoạt</Subject>
+	<Students>6B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>151</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hà</Teacher>
+	<Subject>Chào cờ</Subject>
+	<Students>6B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>152</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hoa</Teacher>
+	<Subject>GDCD</Subject>
+	<Students>7A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>153</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hoa</Teacher>
+	<Subject>GDCD</Subject>
+	<Students>7B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>154</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hoa</Teacher>
+	<Subject>GDCD</Subject>
+	<Students>8A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>155</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hoa</Teacher>
+	<Subject>GDCD</Subject>
+	<Students>8B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>156</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hoa</Teacher>
+	<Subject>GDCD</Subject>
+	<Students>9A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>157</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hoa</Teacher>
+	<Subject>GDCD</Subject>
+	<Students>9B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>158</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hoa</Teacher>
+	<Subject>Lịch Sử</Subject>
+	<Students>8A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>159</Id>
+	<Activity_Group_Id>159</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hoa</Teacher>
+	<Subject>Lịch Sử</Subject>
+	<Students>8A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>160</Id>
+	<Activity_Group_Id>159</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hoa</Teacher>
+	<Subject>Lịch Sử</Subject>
+	<Students>8B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>161</Id>
+	<Activity_Group_Id>161</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hoa</Teacher>
+	<Subject>Lịch Sử</Subject>
+	<Students>8B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>162</Id>
+	<Activity_Group_Id>161</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hoa</Teacher>
+	<Subject>Ngữ văn</Subject>
+	<Students>8A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>163</Id>
+	<Activity_Group_Id>163</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hoa</Teacher>
+	<Subject>Ngữ văn</Subject>
+	<Students>8A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>164</Id>
+	<Activity_Group_Id>163</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hoa</Teacher>
+	<Subject>Ngữ văn</Subject>
+	<Students>8A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>165</Id>
+	<Activity_Group_Id>163</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ngọ</Teacher>
+	<Subject>Ngữ văn</Subject>
+	<Students>6A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>166</Id>
+	<Activity_Group_Id>166</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ngọ</Teacher>
+	<Subject>Ngữ văn</Subject>
+	<Students>6A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>167</Id>
+	<Activity_Group_Id>166</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ngọ</Teacher>
+	<Subject>Ngữ văn</Subject>
+	<Students>6A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>4</Total_Duration>
+	<Id>168</Id>
+	<Activity_Group_Id>166</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ngọ</Teacher>
+	<Subject>Địa Lí</Subject>
+	<Students>7A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>169</Id>
+	<Activity_Group_Id>169</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ngọ</Teacher>
+	<Subject>Địa Lí</Subject>
+	<Students>7A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>170</Id>
+	<Activity_Group_Id>169</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ngọ</Teacher>
+	<Subject>Địa Lí</Subject>
+	<Students>7B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>171</Id>
+	<Activity_Group_Id>171</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ngọ</Teacher>
+	<Subject>Địa Lí</Subject>
+	<Students>7B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>172</Id>
+	<Activity_Group_Id>171</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ngọ</Teacher>
+	<Subject>Sinh hoạt</Subject>
+	<Students>6A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>173</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ngọ</Teacher>
+	<Subject>Chào cờ</Subject>
+	<Students>6A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>174</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>T.Hường</Teacher>
+	<Subject>Ngoại ngữ</Subject>
+	<Students>9A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>177</Id>
+	<Activity_Group_Id>177</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>T.Hường</Teacher>
+	<Subject>Ngoại ngữ</Subject>
+	<Students>9A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>178</Id>
+	<Activity_Group_Id>177</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>T.Hường</Teacher>
+	<Subject>Ngoại ngữ</Subject>
+	<Students>9B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>179</Id>
+	<Activity_Group_Id>179</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>T.Hường</Teacher>
+	<Subject>Ngoại ngữ</Subject>
+	<Students>9B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>180</Id>
+	<Activity_Group_Id>179</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>T.Hường</Teacher>
+	<Subject>Ngoại ngữ</Subject>
+	<Students>6A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>181</Id>
+	<Activity_Group_Id>181</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>T.Hường</Teacher>
+	<Subject>Ngoại ngữ</Subject>
+	<Students>6A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>182</Id>
+	<Activity_Group_Id>181</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>T.Hường</Teacher>
+	<Subject>Ngoại ngữ</Subject>
+	<Students>6A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>183</Id>
+	<Activity_Group_Id>181</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>T.Hường</Teacher>
+	<Subject>Ngoại ngữ</Subject>
+	<Students>6B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>184</Id>
+	<Activity_Group_Id>184</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>T.Hường</Teacher>
+	<Subject>Ngoại ngữ</Subject>
+	<Students>6B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>185</Id>
+	<Activity_Group_Id>184</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>T.Hường</Teacher>
+	<Subject>Ngoại ngữ</Subject>
+	<Students>6B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>186</Id>
+	<Activity_Group_Id>184</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Dung</Teacher>
+	<Subject>Ngoại ngữ</Subject>
+	<Students>8A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>187</Id>
+	<Activity_Group_Id>187</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Dung</Teacher>
+	<Subject>Ngoại ngữ</Subject>
+	<Students>8A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>188</Id>
+	<Activity_Group_Id>187</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Dung</Teacher>
+	<Subject>Ngoại ngữ</Subject>
+	<Students>8A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>189</Id>
+	<Activity_Group_Id>187</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Dung</Teacher>
+	<Subject>Ngoại ngữ</Subject>
+	<Students>8B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>190</Id>
+	<Activity_Group_Id>190</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Dung</Teacher>
+	<Subject>Ngoại ngữ</Subject>
+	<Students>8B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>191</Id>
+	<Activity_Group_Id>190</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Dung</Teacher>
+	<Subject>Ngoại ngữ</Subject>
+	<Students>8B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>192</Id>
+	<Activity_Group_Id>190</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Dung</Teacher>
+	<Subject>Ngoại ngữ</Subject>
+	<Students>7A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>193</Id>
+	<Activity_Group_Id>193</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Dung</Teacher>
+	<Subject>Ngoại ngữ</Subject>
+	<Students>7A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>194</Id>
+	<Activity_Group_Id>193</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Dung</Teacher>
+	<Subject>Ngoại ngữ</Subject>
+	<Students>7A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>195</Id>
+	<Activity_Group_Id>193</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Dung</Teacher>
+	<Subject>Ngoại ngữ</Subject>
+	<Students>7B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>196</Id>
+	<Activity_Group_Id>196</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Dung</Teacher>
+	<Subject>Ngoại ngữ</Subject>
+	<Students>7B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>197</Id>
+	<Activity_Group_Id>196</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Dung</Teacher>
+	<Subject>Ngoại ngữ</Subject>
+	<Students>7B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>198</Id>
+	<Activity_Group_Id>196</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Thu</Teacher>
+	<Subject>Âm nhạc</Subject>
+	<Students>6A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>199</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Thu</Teacher>
+	<Subject>Âm nhạc</Subject>
+	<Students>6B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>200</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Thu</Teacher>
+	<Subject>Âm nhạc</Subject>
+	<Students>7A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>201</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Thu</Teacher>
+	<Subject>Âm nhạc</Subject>
+	<Students>7B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>202</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Thu</Teacher>
+	<Subject>Âm nhạc</Subject>
+	<Students>8A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>203</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Thu</Teacher>
+	<Subject>Âm nhạc</Subject>
+	<Students>8B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>204</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Thu</Teacher>
+	<Subject>Âm nhạc</Subject>
+	<Students>9A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>205</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Thu</Teacher>
+	<Subject>Âm nhạc</Subject>
+	<Students>9B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>206</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Thu</Teacher>
+	<Subject>Công nghệ</Subject>
+	<Students>9A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>207</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Thu</Teacher>
+	<Subject>Công nghệ</Subject>
+	<Students>9B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>208</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Huệ</Teacher>
+	<Subject>Sinh hoạt</Subject>
+	<Students>8A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>209</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Huệ</Teacher>
+	<Subject>Chào cờ</Subject>
+	<Students>8A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>210</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+</Activities_List>
+
+<Buildings_List>
+</Buildings_List>
+
+<Rooms_List>
+</Rooms_List>
+
+<Time_Constraints_List>
+<ConstraintBasicCompulsoryTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintBasicCompulsoryTime>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>1</Activity_Id>
+	<Activity_Id>2</Activity_Id>
+	<Activity_Id>3</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>4</Activity_Id>
+	<Activity_Id>5</Activity_Id>
+	<Activity_Id>6</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>8</Activity_Id>
+	<Activity_Id>9</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>10</Activity_Id>
+	<Activity_Id>11</Activity_Id>
+	<Activity_Id>12</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>13</Activity_Id>
+	<Activity_Id>14</Activity_Id>
+	<Activity_Id>15</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>16</Activity_Id>
+	<Activity_Id>17</Activity_Id>
+	<Activity_Id>18</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>19</Activity_Id>
+	<Activity_Id>20</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>21</Activity_Id>
+	<Activity_Id>22</Activity_Id>
+	<Activity_Id>23</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>24</Activity_Id>
+	<Activity_Id>25</Activity_Id>
+	<Activity_Id>26</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>36</Activity_Id>
+	<Activity_Id>37</Activity_Id>
+	<Activity_Id>38</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>40</Activity_Id>
+	<Activity_Id>41</Activity_Id>
+	<Activity_Id>42</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>43</Activity_Id>
+	<Activity_Id>44</Activity_Id>
+	<Activity_Id>45</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>46</Activity_Id>
+	<Activity_Id>47</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>48</Activity_Id>
+	<Activity_Id>49</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>50</Activity_Id>
+	<Activity_Id>51</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>52</Activity_Id>
+	<Activity_Id>53</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>58</Activity_Id>
+	<Activity_Id>59</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>60</Activity_Id>
+	<Activity_Id>61</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>62</Activity_Id>
+	<Activity_Id>63</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>65</Activity_Id>
+	<Activity_Id>66</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>67</Activity_Id>
+	<Activity_Id>68</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>69</Activity_Id>
+	<Activity_Id>70</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>71</Activity_Id>
+	<Activity_Id>72</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>73</Activity_Id>
+	<Activity_Id>74</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>75</Activity_Id>
+	<Activity_Id>76</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>77</Activity_Id>
+	<Activity_Id>78</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>79</Activity_Id>
+	<Activity_Id>80</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>81</Activity_Id>
+	<Activity_Id>82</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>83</Activity_Id>
+	<Activity_Id>84</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>85</Activity_Id>
+	<Activity_Id>86</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>87</Activity_Id>
+	<Activity_Id>88</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>89</Activity_Id>
+	<Activity_Id>90</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>97</Activity_Id>
+	<Activity_Id>98</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>99</Activity_Id>
+	<Activity_Id>100</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>4</Number_of_Activities>
+	<Activity_Id>101</Activity_Id>
+	<Activity_Id>102</Activity_Id>
+	<Activity_Id>103</Activity_Id>
+	<Activity_Id>104</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>108</Activity_Id>
+	<Activity_Id>109</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>110</Activity_Id>
+	<Activity_Id>111</Activity_Id>
+	<Activity_Id>112</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>113</Activity_Id>
+	<Activity_Id>114</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>115</Activity_Id>
+	<Activity_Id>116</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>4</Number_of_Activities>
+	<Activity_Id>119</Activity_Id>
+	<Activity_Id>120</Activity_Id>
+	<Activity_Id>121</Activity_Id>
+	<Activity_Id>122</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>124</Activity_Id>
+	<Activity_Id>125</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>128</Activity_Id>
+	<Activity_Id>129</Activity_Id>
+	<Activity_Id>130</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>135</Activity_Id>
+	<Activity_Id>136</Activity_Id>
+	<Activity_Id>137</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>138</Activity_Id>
+	<Activity_Id>139</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>140</Activity_Id>
+	<Activity_Id>141</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>146</Activity_Id>
+	<Activity_Id>147</Activity_Id>
+	<Activity_Id>148</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>159</Activity_Id>
+	<Activity_Id>160</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>161</Activity_Id>
+	<Activity_Id>162</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>163</Activity_Id>
+	<Activity_Id>164</Activity_Id>
+	<Activity_Id>165</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>166</Activity_Id>
+	<Activity_Id>167</Activity_Id>
+	<Activity_Id>168</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>169</Activity_Id>
+	<Activity_Id>170</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>171</Activity_Id>
+	<Activity_Id>172</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>177</Activity_Id>
+	<Activity_Id>178</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>179</Activity_Id>
+	<Activity_Id>180</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>181</Activity_Id>
+	<Activity_Id>182</Activity_Id>
+	<Activity_Id>183</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>184</Activity_Id>
+	<Activity_Id>185</Activity_Id>
+	<Activity_Id>186</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>187</Activity_Id>
+	<Activity_Id>188</Activity_Id>
+	<Activity_Id>189</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>190</Activity_Id>
+	<Activity_Id>191</Activity_Id>
+	<Activity_Id>192</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>193</Activity_Id>
+	<Activity_Id>194</Activity_Id>
+	<Activity_Id>195</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>196</Activity_Id>
+	<Activity_Id>197</Activity_Id>
+	<Activity_Id>198</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintStudentsSetNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Students>Khối 6</Students>
+	<Number_of_Not_Available_Times>3</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Thứ Ba</Day>
+		<Hour>Tiết 5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Năm</Day>
+		<Hour>Tiết 5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Bảy</Day>
+		<Hour>Tiết 5</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintStudentsSetNotAvailableTimes>
+<ConstraintStudentsSetNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Students>Khối 7</Students>
+	<Number_of_Not_Available_Times>2</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Thứ Năm</Day>
+		<Hour>Tiết 5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Bảy</Day>
+		<Hour>Tiết 5</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintStudentsSetNotAvailableTimes>
+<ConstraintStudentsSetNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Students>Khối 9</Students>
+	<Number_of_Not_Available_Times>1</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Thứ Bảy</Day>
+		<Hour>Tiết 5</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintStudentsSetNotAvailableTimes>
+<ConstraintActivitiesPreferredTimeSlots>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher_Name></Teacher_Name>
+	<Students_Name></Students_Name>
+	<Subject_Name>Toán</Subject_Name>
+	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
+	<Number_of_Preferred_Time_Slots>25</Number_of_Preferred_Time_Slots>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Hai</Preferred_Day>
+		<Preferred_Hour>Tiết 1</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Hai</Preferred_Day>
+		<Preferred_Hour>Tiết 2</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Hai</Preferred_Day>
+		<Preferred_Hour>Tiết 3</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Hai</Preferred_Day>
+		<Preferred_Hour>Tiết 4</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Hai</Preferred_Day>
+		<Preferred_Hour>Tiết 5</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Ba</Preferred_Day>
+		<Preferred_Hour>Tiết 1</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Ba</Preferred_Day>
+		<Preferred_Hour>Tiết 2</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Ba</Preferred_Day>
+		<Preferred_Hour>Tiết 3</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Ba</Preferred_Day>
+		<Preferred_Hour>Tiết 4</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Tư</Preferred_Day>
+		<Preferred_Hour>Tiết 1</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Tư</Preferred_Day>
+		<Preferred_Hour>Tiết 2</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Tư</Preferred_Day>
+		<Preferred_Hour>Tiết 3</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Tư</Preferred_Day>
+		<Preferred_Hour>Tiết 4</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Năm</Preferred_Day>
+		<Preferred_Hour>Tiết 1</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Năm</Preferred_Day>
+		<Preferred_Hour>Tiết 2</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Năm</Preferred_Day>
+		<Preferred_Hour>Tiết 3</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Năm</Preferred_Day>
+		<Preferred_Hour>Tiết 4</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Sáu</Preferred_Day>
+		<Preferred_Hour>Tiết 1</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Sáu</Preferred_Day>
+		<Preferred_Hour>Tiết 2</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Sáu</Preferred_Day>
+		<Preferred_Hour>Tiết 3</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Sáu</Preferred_Day>
+		<Preferred_Hour>Tiết 4</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Bảy</Preferred_Day>
+		<Preferred_Hour>Tiết 1</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Bảy</Preferred_Day>
+		<Preferred_Hour>Tiết 2</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Bảy</Preferred_Day>
+		<Preferred_Hour>Tiết 3</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Bảy</Preferred_Day>
+		<Preferred_Hour>Tiết 4</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesPreferredTimeSlots>
+<ConstraintActivitiesPreferredTimeSlots>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher_Name></Teacher_Name>
+	<Students_Name></Students_Name>
+	<Subject_Name>Ngữ văn</Subject_Name>
+	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
+	<Number_of_Preferred_Time_Slots>25</Number_of_Preferred_Time_Slots>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Hai</Preferred_Day>
+		<Preferred_Hour>Tiết 1</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Hai</Preferred_Day>
+		<Preferred_Hour>Tiết 2</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Hai</Preferred_Day>
+		<Preferred_Hour>Tiết 3</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Hai</Preferred_Day>
+		<Preferred_Hour>Tiết 4</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Hai</Preferred_Day>
+		<Preferred_Hour>Tiết 5</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Ba</Preferred_Day>
+		<Preferred_Hour>Tiết 1</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Ba</Preferred_Day>
+		<Preferred_Hour>Tiết 2</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Ba</Preferred_Day>
+		<Preferred_Hour>Tiết 3</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Ba</Preferred_Day>
+		<Preferred_Hour>Tiết 4</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Tư</Preferred_Day>
+		<Preferred_Hour>Tiết 1</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Tư</Preferred_Day>
+		<Preferred_Hour>Tiết 2</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Tư</Preferred_Day>
+		<Preferred_Hour>Tiết 3</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Tư</Preferred_Day>
+		<Preferred_Hour>Tiết 4</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Năm</Preferred_Day>
+		<Preferred_Hour>Tiết 1</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Năm</Preferred_Day>
+		<Preferred_Hour>Tiết 2</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Năm</Preferred_Day>
+		<Preferred_Hour>Tiết 3</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Năm</Preferred_Day>
+		<Preferred_Hour>Tiết 4</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Sáu</Preferred_Day>
+		<Preferred_Hour>Tiết 1</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Sáu</Preferred_Day>
+		<Preferred_Hour>Tiết 2</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Sáu</Preferred_Day>
+		<Preferred_Hour>Tiết 3</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Sáu</Preferred_Day>
+		<Preferred_Hour>Tiết 4</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Bảy</Preferred_Day>
+		<Preferred_Hour>Tiết 1</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Bảy</Preferred_Day>
+		<Preferred_Hour>Tiết 2</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Bảy</Preferred_Day>
+		<Preferred_Hour>Tiết 3</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Bảy</Preferred_Day>
+		<Preferred_Hour>Tiết 4</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesPreferredTimeSlots>
+<ConstraintActivitiesPreferredTimeSlots>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher_Name></Teacher_Name>
+	<Students_Name></Students_Name>
+	<Subject_Name>Thể dục</Subject_Name>
+	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
+	<Number_of_Preferred_Time_Slots>24</Number_of_Preferred_Time_Slots>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Hai</Preferred_Day>
+		<Preferred_Hour>Tiết 1</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Hai</Preferred_Day>
+		<Preferred_Hour>Tiết 2</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Hai</Preferred_Day>
+		<Preferred_Hour>Tiết 3</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Hai</Preferred_Day>
+		<Preferred_Hour>Tiết 4</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Ba</Preferred_Day>
+		<Preferred_Hour>Tiết 1</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Ba</Preferred_Day>
+		<Preferred_Hour>Tiết 2</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Ba</Preferred_Day>
+		<Preferred_Hour>Tiết 3</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Ba</Preferred_Day>
+		<Preferred_Hour>Tiết 4</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Tư</Preferred_Day>
+		<Preferred_Hour>Tiết 1</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Tư</Preferred_Day>
+		<Preferred_Hour>Tiết 2</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Tư</Preferred_Day>
+		<Preferred_Hour>Tiết 3</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Tư</Preferred_Day>
+		<Preferred_Hour>Tiết 4</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Năm</Preferred_Day>
+		<Preferred_Hour>Tiết 1</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Năm</Preferred_Day>
+		<Preferred_Hour>Tiết 2</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Năm</Preferred_Day>
+		<Preferred_Hour>Tiết 3</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Năm</Preferred_Day>
+		<Preferred_Hour>Tiết 4</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Sáu</Preferred_Day>
+		<Preferred_Hour>Tiết 1</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Sáu</Preferred_Day>
+		<Preferred_Hour>Tiết 2</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Sáu</Preferred_Day>
+		<Preferred_Hour>Tiết 3</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Sáu</Preferred_Day>
+		<Preferred_Hour>Tiết 4</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Bảy</Preferred_Day>
+		<Preferred_Hour>Tiết 1</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Bảy</Preferred_Day>
+		<Preferred_Hour>Tiết 2</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Bảy</Preferred_Day>
+		<Preferred_Hour>Tiết 3</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Bảy</Preferred_Day>
+		<Preferred_Hour>Tiết 4</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesPreferredTimeSlots>
+<ConstraintActivitiesPreferredTimeSlots>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher_Name></Teacher_Name>
+	<Students_Name></Students_Name>
+	<Subject_Name>Sinh hoạt</Subject_Name>
+	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
+	<Number_of_Preferred_Time_Slots>1</Number_of_Preferred_Time_Slots>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Bảy</Preferred_Day>
+		<Preferred_Hour>Tiết 3</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesPreferredTimeSlots>
+<ConstraintActivitiesPreferredTimeSlots>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher_Name></Teacher_Name>
+	<Students_Name></Students_Name>
+	<Subject_Name>Chào cờ</Subject_Name>
+	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
+	<Number_of_Preferred_Time_Slots>1</Number_of_Preferred_Time_Slots>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thứ Hai</Preferred_Day>
+		<Preferred_Hour>Tiết 1</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesPreferredTimeSlots>
+<ConstraintTeachersMaxDaysPerWeek>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Max_Days_Per_Week>4</Max_Days_Per_Week>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeachersMaxDaysPerWeek>
+<ConstraintTeachersMaxGapsPerDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Max_Gaps>1</Max_Gaps>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeachersMaxGapsPerDay>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Duyệt</Teacher>
+	<Number_of_Not_Available_Times>5</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Thứ Hai</Day>
+		<Hour>Tiết 1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Hai</Day>
+		<Hour>Tiết 2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Hai</Day>
+		<Hour>Tiết 3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Hai</Day>
+		<Hour>Tiết 4</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Hai</Day>
+		<Hour>Tiết 5</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Quyên</Teacher>
+	<Number_of_Not_Available_Times>5</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Thứ Hai</Day>
+		<Hour>Tiết 1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Hai</Day>
+		<Hour>Tiết 2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Hai</Day>
+		<Hour>Tiết 3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Hai</Day>
+		<Hour>Tiết 4</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Hai</Day>
+		<Hour>Tiết 5</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Thủy</Teacher>
+	<Number_of_Not_Available_Times>4</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Thứ Hai</Day>
+		<Hour>Tiết 2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Hai</Day>
+		<Hour>Tiết 3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Hai</Day>
+		<Hour>Tiết 4</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Hai</Day>
+		<Hour>Tiết 5</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Tân</Teacher>
+	<Number_of_Not_Available_Times>5</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Thứ Hai</Day>
+		<Hour>Tiết 1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Hai</Day>
+		<Hour>Tiết 2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Hai</Day>
+		<Hour>Tiết 3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Hai</Day>
+		<Hour>Tiết 4</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Hai</Day>
+		<Hour>Tiết 5</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Yến </Teacher>
+	<Number_of_Not_Available_Times>14</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Thứ Hai</Day>
+		<Hour>Tiết 1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Hai</Day>
+		<Hour>Tiết 2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Hai</Day>
+		<Hour>Tiết 3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Hai</Day>
+		<Hour>Tiết 4</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Hai</Day>
+		<Hour>Tiết 5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Ba</Day>
+		<Hour>Tiết 5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Tư</Day>
+		<Hour>Tiết 5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Năm</Day>
+		<Hour>Tiết 5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Sáu</Day>
+		<Hour>Tiết 5</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Bảy</Day>
+		<Hour>Tiết 1</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Bảy</Day>
+		<Hour>Tiết 2</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Bảy</Day>
+		<Hour>Tiết 3</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Bảy</Day>
+		<Hour>Tiết 4</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Thứ Bảy</Day>
+		<Hour>Tiết 5</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintActivitiesNotOverlapping>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>6</Number_of_Activities>
+	<Activity_Id>7</Activity_Id>
+	<Activity_Id>33</Activity_Id>
+	<Activity_Id>34</Activity_Id>
+	<Activity_Id>35</Activity_Id>
+	<Activity_Id>39</Activity_Id>
+	<Activity_Id>64</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesNotOverlapping>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>187</Activity_Id>
+	<Activity_Id>190</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>188</Activity_Id>
+	<Activity_Id>191</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>189</Activity_Id>
+	<Activity_Id>192</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>193</Activity_Id>
+	<Activity_Id>196</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>194</Activity_Id>
+	<Activity_Id>197</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>195</Activity_Id>
+	<Activity_Id>198</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>1</Activity_Id>
+	<Activity_Id>4</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>2</Activity_Id>
+	<Activity_Id>5</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>3</Activity_Id>
+	<Activity_Id>6</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>153</Activity_Id>
+	<Activity_Id>154</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>155</Activity_Id>
+	<Activity_Id>156</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>157</Activity_Id>
+	<Activity_Id>158</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>159</Activity_Id>
+	<Activity_Id>161</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>160</Activity_Id>
+	<Activity_Id>162</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>91</Activity_Id>
+	<Activity_Id>92</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>93</Activity_Id>
+	<Activity_Id>94</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>95</Activity_Id>
+	<Activity_Id>96</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>97</Activity_Id>
+	<Activity_Id>99</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>98</Activity_Id>
+	<Activity_Id>100</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>60</Activity_Id>
+	<Activity_Id>62</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>61</Activity_Id>
+	<Activity_Id>63</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>149</Activity_Id>
+	<Activity_Id>150</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>79</Activity_Id>
+	<Activity_Id>81</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>80</Activity_Id>
+	<Activity_Id>82</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>83</Activity_Id>
+	<Activity_Id>85</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>84</Activity_Id>
+	<Activity_Id>86</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>87</Activity_Id>
+	<Activity_Id>89</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>88</Activity_Id>
+	<Activity_Id>90</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>131</Activity_Id>
+	<Activity_Id>132</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>31</Activity_Id>
+	<Activity_Id>32</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>33</Activity_Id>
+	<Activity_Id>34</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>35</Activity_Id>
+	<Activity_Id>39</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>65</Activity_Id>
+	<Activity_Id>67</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>66</Activity_Id>
+	<Activity_Id>68</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>69</Activity_Id>
+	<Activity_Id>71</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>70</Activity_Id>
+	<Activity_Id>72</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>169</Activity_Id>
+	<Activity_Id>171</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>170</Activity_Id>
+	<Activity_Id>172</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>50</Activity_Id>
+	<Activity_Id>52</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>51</Activity_Id>
+	<Activity_Id>53</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>54</Activity_Id>
+	<Activity_Id>55</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>40</Activity_Id>
+	<Activity_Id>43</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>41</Activity_Id>
+	<Activity_Id>44</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>42</Activity_Id>
+	<Activity_Id>45</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>106</Activity_Id>
+	<Activity_Id>107</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>177</Activity_Id>
+	<Activity_Id>179</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>178</Activity_Id>
+	<Activity_Id>180</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>181</Activity_Id>
+	<Activity_Id>184</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>182</Activity_Id>
+	<Activity_Id>185</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>183</Activity_Id>
+	<Activity_Id>186</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>199</Activity_Id>
+	<Activity_Id>200</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>201</Activity_Id>
+	<Activity_Id>202</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>203</Activity_Id>
+	<Activity_Id>204</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>205</Activity_Id>
+	<Activity_Id>206</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>207</Activity_Id>
+	<Activity_Id>208</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>75</Activity_Id>
+	<Activity_Id>77</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>76</Activity_Id>
+	<Activity_Id>78</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>113</Activity_Id>
+	<Activity_Id>115</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>114</Activity_Id>
+	<Activity_Id>116</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>138</Activity_Id>
+	<Activity_Id>140</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>139</Activity_Id>
+	<Activity_Id>141</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>13</Activity_Id>
+	<Activity_Id>16</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>14</Activity_Id>
+	<Activity_Id>17</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>15</Activity_Id>
+	<Activity_Id>18</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>21</Activity_Id>
+	<Activity_Id>24</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>22</Activity_Id>
+	<Activity_Id>25</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>23</Activity_Id>
+	<Activity_Id>26</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>27</Activity_Id>
+	<Activity_Id>28</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+<ConstraintActivitiesSameStartingDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>29</Activity_Id>
+	<Activity_Id>30</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingDay>
+</Time_Constraints_List>
+
+<Space_Constraints_List>
+<ConstraintBasicCompulsorySpace>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintBasicCompulsorySpace>
+</Space_Constraints_List>
+
+</fet>

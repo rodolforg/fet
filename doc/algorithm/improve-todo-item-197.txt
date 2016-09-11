@@ -1,0 +1,327 @@
+2014-10-09.
+
+For TODO item #197 (suggested by nouvakis), referring to max occurences of max hours daily.
+
+Just an idea of how modified code should be. Unstable code, to be added in src/engine/generate.cpp. By Liviu Lalescu, license GNU AGPL v3 or later.
+
+I am relying on max hours daily to check the gaps, and on a new added procedure to take care of the max occurences.
+
+But consider this, please:
+
+5 days per week, 6 hours per day, max gaps per week for teacher 4. Teacher has this partial matrix:
+
+ooooo
+    o
+    o
+    o
+    o
+oooo
+
+(o means occupied, space means free).
+
+This is valid for the program, but practically we need to remove 4 activities for it to be valid for a constraint of max 1 occurences per week of max 5 hours daily.
+
+
+		//allowed from teachers max hours daily
+		
+		//!!!after max gaps per week and max gaps per day
+		
+		okteachersmaxhoursdaily=true;
+		
+		foreach(int tch, act->iTeachersList){
+			for(int count=0; count<2; count++){
+				int limitHoursDaily;
+				double percentage;
+				if(count==0){
+					limitHoursDaily=teachersMaxHoursDailyMaxHours1[tch];
+					percentage=teachersMaxHoursDailyPercentages1[tch];
+					maxOccurs=teachersMaxHoursDailyMaxOccurs1[tch];
+				}
+				else{
+					limitHoursDaily=teachersMaxHoursDailyMaxHours2[tch];
+					percentage=teachersMaxHoursDailyPercentages2[tch];
+					maxOccurs=teachersMaxHoursDailyMaxOccurs2[tch];
+				}
+				
+				if(limitHoursDaily<0)
+					continue;
+				
+				//if(fixedTimeActivity[ai] && percentage<100.0) //added on 21 Feb. 2009 in FET 5.9.1, to solve a bug of impossible timetables for fixed timetables
+				//	continue;
+				
+				bool increased;
+				if(teachersMaxGapsPerWeekPercentage[tch]>=0 || teachersMaxGapsPerDayPercentage[tch]>=0){
+					if(newTeachersDayNHours(tch,d) > oldTeachersDayNHours(tch,d) 
+					  || newTeachersDayNHours(tch,d)+newTeachersDayNGaps(tch,d) > oldTeachersDayNHours(tch,d)+oldTeachersDayNGaps(tch,d))
+					  	increased=true;
+					else
+						increased=false;
+				}
+				else{
+					if(newTeachersDayNHours(tch,d) > oldTeachersDayNHours(tch,d))
+					  	increased=true;
+					else
+						increased=false;
+				}
+				/*
+				if(newTeachersDayNHours(tch,d) > oldTeachersDayNHours(tch,d))
+				  	increased=true;
+				else
+					increased=false;*/
+			
+				if(limitHoursDaily>=0 && !skipRandom(percentage) && increased){
+					if(limitHoursDaily<act->duration){
+						okteachersmaxhoursdaily=false;
+						goto impossibleteachersmaxhoursdaily;
+					}
+					
+					//preliminary test
+
+					//basically, see that the gaps are enough
+					bool _ok;
+					if(newTeachersDayNHours(tch,d)>limitHoursDaily){
+						_ok=false;
+					}
+					else{
+						if(teachersMaxGapsPerWeekPercentage[tch]>=0){
+							int rg=teachersMaxGapsPerWeekMaxGaps[tch];
+							for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++){
+								if(d2!=d){
+									int g=limitHoursDaily-newTeachersDayNHours(tch,d2);
+									//TODO: if g lower than 0 make g 0
+									//but with this change, speed decreases for test 25_2_2008_1.fet (private Greek sample from my80s)
+									g=newTeachersDayNGaps(tch,d2)-g;
+									if(g>0)
+										rg-=g;
+								}
+							}
+							
+							if(rg<0)
+								rg=0;
+							
+							if(teachersMaxGapsPerDayPercentage[tch]>=0)
+								if(rg>teachersMaxGapsPerDayMaxGaps[tch])
+									rg=teachersMaxGapsPerDayMaxGaps[tch];
+									
+							int hg=newTeachersDayNGaps(tch,d)-rg;
+							if(hg<0)
+								hg=0;
+								
+							if(hg+newTeachersDayNHours(tch,d) > limitHoursDaily){
+								_ok=false;
+							}
+							else
+								_ok=true;
+						}
+						else{
+							int rg=newTeachersDayNGaps(tch,d);
+							int hg=rg;
+							if(teachersMaxGapsPerDayPercentage[tch]>=0)
+								if(rg>teachersMaxGapsPerDayMaxGaps[tch])
+									rg=teachersMaxGapsPerDayMaxGaps[tch];
+							hg-=rg;
+							if(hg+newTeachersDayNHours(tch,d) > limitHoursDaily)
+								_ok=false;
+							else
+								_ok=true;
+						}
+					}
+					
+					if(newTeachersDayNHours(tch, d)>=limitHoursDaily){
+						if(maxOccurs>=0){
+							int cnt=0;
+							for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++)
+								if(newTeachersDayNHours(tch, d2)>=limitHoursDaily)
+									cnt++;
+							assert(cnt<=maxOccurs+1);
+							if(cnt==maxOccurs+1)
+								_ok=false;
+						}
+					}
+
+					if(_ok){
+						continue;
+					}
+					
+					if(level>=LEVEL_STOP_CONFLICTS_CALCULATION){
+						okteachersmaxhoursdaily=false;
+						goto impossibleteachersmaxhoursdaily;
+					}
+	
+					getTchTimetable(tch, conflActivities[newtime]);
+					tchGetNHoursGaps(tch);
+		
+					for(;;){
+						//basically, see that the gaps are enough
+						bool ok;
+						if(tchDayNHours[d]>limitHoursDaily){
+							ok=false;
+						}
+						else{
+							if(teachersMaxGapsPerWeekPercentage[tch]>=0){
+								int rg=teachersMaxGapsPerWeekMaxGaps[tch];
+								for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++){
+									if(d2!=d){
+										int g=limitHoursDaily-tchDayNHours[d2];
+										//TODO: if g lower than 0 make g 0
+										//but with this change, speed decreases for test 25_2_2008_1.fet (private Greek sample from my80s)
+										g=tchDayNGaps[d2]-g;
+										if(g>0)
+											rg-=g;
+									}
+								}	
+								
+								if(rg<0)
+									rg=0;
+								
+								if(teachersMaxGapsPerDayPercentage[tch]>=0)
+									if(rg>teachersMaxGapsPerDayMaxGaps[tch])
+										rg=teachersMaxGapsPerDayMaxGaps[tch];
+										
+								int hg=tchDayNGaps[d]-rg;
+								if(hg<0)
+									hg=0;
+								
+								if(hg+tchDayNHours[d] > limitHoursDaily){
+									ok=false;
+								}
+								else
+									ok=true;
+							}
+							else{
+								int rg=tchDayNGaps[d];
+								int hg=rg;
+								if(teachersMaxGapsPerDayPercentage[tch]>=0)
+									if(rg>teachersMaxGapsPerDayMaxGaps[tch])
+										rg=teachersMaxGapsPerDayMaxGaps[tch];
+								hg-=rg;
+								if(hg+tchDayNHours[d] > limitHoursDaily)
+									ok=false;
+								else
+									ok=true;
+							}
+						}
+
+						if(ok){
+							break;
+						}
+						
+						int ai2=-1;
+
+						bool k=teacherRemoveAnActivityFromBeginOrEndCertainDay(tch, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+						assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+						if(!k){
+							bool ka=teacherRemoveAnActivityFromAnywhereCertainDay(tch, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+							assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+							
+							if(!ka){
+								if(level==0){
+									/*cout<<"d=="<<d<<", h=="<<h<<", teacher=="<<qPrintable(gt.rules.internalTeachersList[tch]->name);
+									cout<<", ai=="<<ai<<endl;
+									for(int h2=0; h2<gt.rules.nHoursPerDay; h2++){
+										for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++)
+											cout<<"\t"<<tchTimetable(d2,h2)<<"\t";
+										cout<<endl;
+									}
+									
+									cout<<endl;
+									for(int h2=0; h2<gt.rules.nHoursPerDay; h2++){
+										for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++)
+											cout<<"\t"<<newTeachersTimetable(tch,d2,h2)<<"\t";
+										cout<<endl;
+									}*/
+								
+									//Liviu: inactivated from version 5.12.4 (7 Feb. 2010), because it may take too long for some files
+									//cout<<"WARNING - mb - file "<<__FILE__<<" line "<<__LINE__<<endl;
+								}
+								okteachersmaxhoursdaily=false;
+								goto impossibleteachersmaxhoursdaily;
+							}
+						}
+		
+						assert(ai2>=0);
+
+						removeAi2FromTchTimetable(ai2);
+						updateTchNHoursGaps(tch, c.times[ai2]%gt.rules.nDaysPerWeek);
+					}
+
+					for(;;){
+						QList<int> daysList;
+					
+						//second part
+						bool ok;
+						if(tchDayNHours[d]>limitHoursDaily){
+							assert(0);
+						
+							ok=false;
+						}
+						else{
+							if(tchDayNHours(tch, d)>=limitHoursDaily){
+								if(maxOccurs>=0){
+									int cnt=0;
+									for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++)
+										if(tchDayNHours(tch, d2)>=limitHoursDaily){
+											daysList.append(d2);
+											cnt++;
+										}
+									assert(cnt<=maxOccurs+1);
+									if(cnt==maxOccurs+1)
+										_ok=false;
+								}
+							}
+						}
+						
+						//randomize daysList
+						for(int i=0; i<daysList.count(); i++){
+							int t=daysList.at(i);
+							int r=randomKnuth(daysList.count()-i);
+							daysList[i]=daysList[i+r];
+							daysList[i+r]=t;
+						}
+						
+						int ai2=-1;
+						
+						foreach(int d2, daysList){
+							bool k=teacherRemoveAnActivityFromBeginOrEndCertainDay(tch, d2, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+							assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+							if(k)
+								break;
+							if(!k){
+								bool ka=teacherRemoveAnActivityFromAnywhereCertainDay(tch, d2, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+								assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+							
+								if(ka)
+									break;
+									
+								if(!ka){
+									if(level==0){
+									}
+									//okteachersmaxhoursdaily=false;
+									//goto impossibleteachersmaxhoursdaily;
+								}
+							}
+						}
+						
+						if(ai2<0){
+							okteachersmaxhoursdaily=false;
+							goto impossibleteachersmaxhoursdaily;
+						}
+			
+						assert(ai2>=0);
+	
+						removeAi2FromTchTimetable(ai2);
+						updateTchNHoursGaps(tch, c.times[ai2]%gt.rules.nDaysPerWeek);
+					}
+				}
+			}
+		}
+		
+impossibleteachersmaxhoursdaily:
+		if(!okteachersmaxhoursdaily){
+			if(updateSubgroups || updateTeachers)
+				removeAiFromNewTimetable(ai, act, d, h);
+			//removeConflActivities(conflActivities[newtime], nConflActivities[newtime], act, newtime);
+
+			nConflActivities[newtime]=MAX_ACTIVITIES;
+			continue;
+		}

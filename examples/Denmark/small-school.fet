@@ -1,0 +1,1006 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<fet version="5.30.3">
+
+<Institution_Name>Default institution</Institution_Name>
+
+<Comments>Default comments</Comments>
+
+<Days_List>
+<Number_of_Days>1</Number_of_Days>
+<Day>
+	<Name>Daily</Name>
+</Day>
+</Days_List>
+
+<Hours_List>
+<Number_of_Hours>4</Number_of_Hours>
+<Hour>
+	<Name>13.30 - 14.30</Name>
+</Hour>
+<Hour>
+	<Name>14.40 - 15.40</Name>
+</Hour>
+<Hour>
+	<Name>15.50 - 16.50</Name>
+</Hour>
+<Hour>
+	<Name>17.00 - 18.00</Name>
+</Hour>
+</Hours_List>
+
+<Subjects_List>
+<Subject>
+	<Name>Air</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Sangteknik</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Vokal een</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Bologna</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Venedig</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Fl. komsammen</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>CCR</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Tyskland</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Sevilla</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Improvisation</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Dans</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Wien</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Oxford</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Beg. Blaes</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Gambe</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Lut</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Vokal flere</Name>
+	<Comments></Comments>
+</Subject>
+</Subjects_List>
+
+<Activity_Tags_List>
+</Activity_Tags_List>
+
+<Teachers_List>
+<Teacher>
+	<Name>Glenda</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Hans</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Ingrid</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Jens</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Joergen</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Michael</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Oliver</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Per</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Ute</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+</Teachers_List>
+
+<Students_List>
+<Year>
+	<Name>Eric</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Anja</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Ryker</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Anne-Lise</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Agnes</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Emma</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Lucas</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Saffi</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Ari</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Caja</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Kalini</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Dane</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Magnus</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Oliver</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Andrea</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Alvilda</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Dagny</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Gunnar</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Kaj</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Tobias</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Elva</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Cecilie</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Agathe</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Ursula</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Dagmar</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Benedicte</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Freja</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Else</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Dana</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Jory</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Kobbi</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Ester</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Kol</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Mathias</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Kristina</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Abelone</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Viveka</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Berit</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Bodil</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Mikkel</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Dag</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Jorgen</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Bente</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Catrine</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Nikolaj</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Stina</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Emil</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Meta</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Viktor</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Ida</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Inga</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Elin</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Ditte</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Rand</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Ebba</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Lothen</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Riki</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Reifr</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Margarethe</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Manni</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Siv</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Ylva</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Una</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Karyn</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Vibeka</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Gren</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Klint</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Mathilde</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Alberte</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Lisbet</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Birthe</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Karl</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Gisla</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>Jarl</Name>
+	<Number_of_Students>1</Number_of_Students>
+	<Comments></Comments>
+</Year>
+</Students_List>
+
+<Activities_List>
+<Activity>
+	<Teacher>Glenda</Teacher>
+	<Subject>Air</Subject>
+	<Students>Agathe</Students>
+	<Students>Lothen</Students>
+	<Students>Una</Students>
+	<Students>Siv</Students>
+	<Students>Riki</Students>
+	<Students>Agnes</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>1</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Glenda</Teacher>
+	<Subject>Air</Subject>
+	<Students>Jorgen</Students>
+	<Students>Viveka</Students>
+	<Students>Bodil</Students>
+	<Students>Eric</Students>
+	<Students>Kristina</Students>
+	<Students>Viktor</Students>
+	<Students>Dane</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>2</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Glenda</Teacher>
+	<Subject>Sangteknik</Subject>
+	<Students>Anne-Lise</Students>
+	<Students>Emma</Students>
+	<Students>Saffi</Students>
+	<Students>Karyn</Students>
+	<Students>Alvilda</Students>
+	<Students>Emil</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>3</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Glenda</Teacher>
+	<Subject>Vokal een</Subject>
+	<Students>Lothen</Students>
+	<Students>Agnes</Students>
+	<Students>Berit</Students>
+	<Students>Kristina</Students>
+	<Students>Lisbet</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>4</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hans</Teacher>
+	<Subject>Bologna</Subject>
+	<Students>Stina</Students>
+	<Students>Freja</Students>
+	<Students>Margarethe</Students>
+	<Students>Ditte</Students>
+	<Students>Mathias</Students>
+	<Students>Anja</Students>
+	<Students>Lisbet</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>5</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Hans</Teacher>
+	<Subject>Venedig</Subject>
+	<Students>Birthe</Students>
+	<Students>Benedicte</Students>
+	<Students>Elva</Students>
+	<Students>Stina</Students>
+	<Students>Jory</Students>
+	<Students>Ida</Students>
+	<Students>Anja</Students>
+	<Students>Manni</Students>
+	<Students>Dag</Students>
+	<Students>Dagny</Students>
+	<Students>Kalini</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>6</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ingrid</Teacher>
+	<Subject>Fl. komsammen</Subject>
+	<Students>Kaj</Students>
+	<Students>Gisla</Students>
+	<Students>Ryker</Students>
+	<Students>Abelone</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>7</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ingrid</Teacher>
+	<Subject>CCR</Subject>
+	<Students>Jarl</Students>
+	<Students>Mikkel</Students>
+	<Students>Catrine</Students>
+	<Students>Ester</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>8</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ingrid</Teacher>
+	<Subject>CCR</Subject>
+	<Students>Ryker</Students>
+	<Students>Magnus</Students>
+	<Students>Caja</Students>
+	<Students>Klint</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>9</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ingrid</Teacher>
+	<Subject>Tyskland</Subject>
+	<Students>Benedicte</Students>
+	<Students>Karl</Students>
+	<Students>Nikolaj</Students>
+	<Students>Freja</Students>
+	<Students>Magnus</Students>
+	<Students>Meta</Students>
+	<Students>Dag</Students>
+	<Students>Rand</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>10</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Jens</Teacher>
+	<Subject>Sevilla</Subject>
+	<Students>Birthe</Students>
+	<Students>Kol</Students>
+	<Students>Jory</Students>
+	<Students>Margarethe</Students>
+	<Students>Ditte</Students>
+	<Students>Berit</Students>
+	<Students>Mathias</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>11</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Jens</Teacher>
+	<Subject>Improvisation</Subject>
+	<Students>Gren</Students>
+	<Students>Else</Students>
+	<Students>Kobbi</Students>
+	<Students>Andrea</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>12</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Joergen</Teacher>
+	<Subject>Vokal een</Subject>
+	<Students>Agathe</Students>
+	<Students>Manni</Students>
+	<Students>Caja</Students>
+	<Students>Riki</Students>
+	<Students>Saffi</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>13</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Joergen</Teacher>
+	<Subject>Dans</Subject>
+	<Students>Bente</Students>
+	<Students>Alberte</Students>
+	<Students>Andrea</Students>
+	<Students>Viveka</Students>
+	<Students>Mikkel</Students>
+	<Students>Anne-Lise</Students>
+	<Students>Else</Students>
+	<Students>Viktor</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>14</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Michael</Teacher>
+	<Subject>Wien</Subject>
+	<Students>Elva</Students>
+	<Students>Mathilde</Students>
+	<Students>Kobbi</Students>
+	<Students>Emma</Students>
+	<Students>Dagny</Students>
+	<Students>Rand</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>15</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Michael</Teacher>
+	<Subject>Oxford</Subject>
+	<Students>Kaj</Students>
+	<Students>Gren</Students>
+	<Students>Nikolaj</Students>
+	<Students>Gisla</Students>
+	<Students>Abelone</Students>
+	<Students>Kalini</Students>
+	<Students>Ari</Students>
+	<Students>Vibeka</Students>
+	<Students>Oliver</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>16</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Michael</Teacher>
+	<Subject>Beg. Blaes</Subject>
+	<Students>Dana</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>17</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Oliver</Teacher>
+	<Subject>Gambe</Subject>
+	<Students>Tobias</Students>
+	<Students>Andrea</Students>
+	<Students>Gunnar</Students>
+	<Students>Meta</Students>
+	<Students>Catrine</Students>
+	<Students>Ester</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>18</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Oliver</Teacher>
+	<Subject>Gambe</Subject>
+	<Students>Alberte</Students>
+	<Students>Inga</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>19</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Oliver</Teacher>
+	<Subject>Gambe</Subject>
+	<Students>Ylva</Students>
+	<Students>Jarl</Students>
+	<Students>Bodil</Students>
+	<Students>Eric</Students>
+	<Students>Ursula</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>20</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Oliver</Teacher>
+	<Subject>Gambe</Subject>
+	<Students>Ylva</Students>
+	<Students>Dagmar</Students>
+	<Students>Mathilde</Students>
+	<Students>Klint</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>21</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Per</Teacher>
+	<Subject>Lut</Subject>
+	<Students>Inga</Students>
+	<Students>Gunnar</Students>
+	<Students>Una</Students>
+	<Students>Elin</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>22</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ute</Teacher>
+	<Subject>Vokal flere</Subject>
+	<Students>Ari</Students>
+	<Students>Emil</Students>
+	<Students>Vibeka</Students>
+	<Students>Dana</Students>
+	<Students>Ursula</Students>
+	<Students>Kristina</Students>
+	<Students>Alvilda</Students>
+	<Students>Karl</Students>
+	<Students>Karyn</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>23</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ute</Teacher>
+	<Subject>Vokal een</Subject>
+	<Students>Siv</Students>
+	<Students>Dane</Students>
+	<Students>Berit</Students>
+	<Students>Reifr</Students>
+	<Students>Lisbet</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>24</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ute</Teacher>
+	<Subject>Vokal een</Subject>
+	<Students>Jorgen</Students>
+	<Students>Ida</Students>
+	<Students>Dana</Students>
+	<Students>Kol</Students>
+	<Students>Karyn</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>25</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+</Activities_List>
+
+<Buildings_List>
+</Buildings_List>
+
+<Rooms_List>
+</Rooms_List>
+
+<Time_Constraints_List>
+<ConstraintBasicCompulsoryTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintBasicCompulsoryTime>
+<ConstraintActivityPreferredStartingTimes>
+	<Weight_Percentage>0</Weight_Percentage>
+	<Activity_Id>18</Activity_Id>
+	<Number_of_Preferred_Starting_Times>1</Number_of_Preferred_Starting_Times>
+	<Preferred_Starting_Time>
+		<Preferred_Starting_Day>Daily</Preferred_Starting_Day>
+		<Preferred_Starting_Hour>13.30 - 14.30</Preferred_Starting_Hour>
+	</Preferred_Starting_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTimes>
+<ConstraintActivityPreferredStartingTimes>
+	<Weight_Percentage>0</Weight_Percentage>
+	<Activity_Id>19</Activity_Id>
+	<Number_of_Preferred_Starting_Times>1</Number_of_Preferred_Starting_Times>
+	<Preferred_Starting_Time>
+		<Preferred_Starting_Day>Daily</Preferred_Starting_Day>
+		<Preferred_Starting_Hour>14.40 - 15.40</Preferred_Starting_Hour>
+	</Preferred_Starting_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTimes>
+<ConstraintActivityPreferredStartingTimes>
+	<Weight_Percentage>0</Weight_Percentage>
+	<Activity_Id>20</Activity_Id>
+	<Number_of_Preferred_Starting_Times>1</Number_of_Preferred_Starting_Times>
+	<Preferred_Starting_Time>
+		<Preferred_Starting_Day>Daily</Preferred_Starting_Day>
+		<Preferred_Starting_Hour>15.50 - 16.50</Preferred_Starting_Hour>
+	</Preferred_Starting_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTimes>
+<ConstraintActivityPreferredStartingTimes>
+	<Weight_Percentage>0</Weight_Percentage>
+	<Activity_Id>21</Activity_Id>
+	<Number_of_Preferred_Starting_Times>1</Number_of_Preferred_Starting_Times>
+	<Preferred_Starting_Time>
+		<Preferred_Starting_Day>Daily</Preferred_Starting_Day>
+		<Preferred_Starting_Hour>17.00 - 18.00</Preferred_Starting_Hour>
+	</Preferred_Starting_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTimes>
+</Time_Constraints_List>
+
+<Space_Constraints_List>
+<ConstraintBasicCompulsorySpace>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintBasicCompulsorySpace>
+</Space_Constraints_List>
+
+</fet>

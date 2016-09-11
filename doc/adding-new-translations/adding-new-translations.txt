@@ -1,0 +1,164 @@
+FET - How to add new translations (languages):
+
+VERY IMPORTANT: Please announce your intention if you want to translate FET into your language.
+Another person might work on the same translation as you and time might be wasted.
+
+VERY IMPORTANT: Please follow the English words and do not translate incompletely
+a field. Either translate it or not, but not partially.
+
+
+Please read the instructions below very carefully and follow them:
+
+STEP 1: You can use the fet_untranslated.ts file, just rename it
+fet_**.ts (** means your language).
+
+(alternative procedure:
+Modify the file "fet-v.v.v/src/src.pro", by adding a line
+in the TRANSLATIONS section for your language (for instance, adding
+a backslash after the last translation and then "../translations/fet_it.ts" for Italian).
+Enter the directory "fet-v.v.v/src/" and type "lupdate src.pro".
+This will create the needed file, named "fet-v.v.v/translations/fet_**.ts").
+It is highly advisable to disable number heuristic, as it is not very good to FET translations
+(run "lupdate src.pro -disable-heuristic number"). Number heuristic comes up with weird looking translations
+for some fields, like "Weight 100.0% {100%}".
+
+STEP 2.
+
+Open the file "fet-v.v.v/translations/fet_**.ts" (for example, fet_it.ts)
+with the Qt Linguist and edit it, then save it.
+
+You do not have to translate all the fields. Just leave the corresponding fields marked as unfinished (untranslated).
+Especially, there are 5 weird looking large fields in HelpAboutForm_template. These fields begin with
+something like: "<!DOCTYPE HTML...". You are advised not to translate these 5 fields (but leave their translation
+empty and leave them marked as unfinished, because otherwise the corresponding text might appear incomplete when
+using FET in your language). They are big, difficult to translate and will suffer ulterior modifications.
+
+There are some comments in the translation file, they are not to be translated, they just help you.
+You can see that for instance in the "FET xml files" field.
+
+Please translate the FetMainForm_template section firstly. This is the main form (the menu and the shortcuts).
+Please double check the translation of the main menu practically from FET (see below how to check your translation
+in FET, by renaming it as an already existing translation). The main form is very important and there should be
+no mistakes here, especially in the constraints description.
+Send the file with the completely translated FetMainForm_template section to the FET authors. It may take a
+long time for you to translate all the fields in FET, but if you translate only the main form it takes usually
+a short time and your partial translation will be added to official FET, helping other users until the complete
+translation will be ready.
+
+STEP 3.
+
+From Qt Linguist, release the translation as "fet-v.v.v/translations/fet_**.qm"
+(for instance, fet_it.qm).
+
+STEP 4.
+
+Send all the three modified files to the FET authors (the important file is fet_**.ts, you may omit the others).
+
+
+Of course, anyone can redo/improve current translations. The best variants will be chosen.
+
+
+Some other details follow:
+
+First of all, you need a version of Qt Linguist.
+
+Qt homepage: http://www.qt.io/
+
+For GNU/Linux it is available if you type "linguist" (this is part of Qt development tools).
+For Windows, you will have to download the latest Qt from the Qt homepage.
+For Mac OS X, maybe you have Qt linguist precompiled available for download from your package manager,
+or you can download the latest Qt from the Qt homepage.
+
+fet_**.ts: You will have to open this file using Qt
+Linguist. The most useful keys are: Ctrl+Enter (activates current translation
+and jumps to the next untranslated phrase),Ctrl+1, Ctrl+2 (first or second
+suggestion). You can skip the large fields, like the FAQ and others. You can
+skip also fields you cannot translate, they will remain in English. But let them
+marked as untranslated (do NOT press Ctrl+Enter on an unfinished/untranslated field,
+skip it with the mouse or Ctrl+J)
+
+Important note: please translate, in FetMainForm_template, the field "Language" both in your language
+and in English, separated by a slash (like: Limba/Language). The reason is that people may become
+stuck with another language.
+
+Important: please take care of difference between activity and activities,
+teacher and teachers, students and students set, room and rooms, time (day+hour) and hour (alone). These
+are very important differences in constraints.
+
+Please try to keep the length of large fields (the ones relating to constraints) in FetMainForm_template
+to a minimum, otherwise they will look too big. This is the main menu.
+This way, the main menu will look good in your language
+(please check the main menu of FET with your translation).
+Also, in the FetMainForm_template there appear some terms like: &Help. This means that Help has
+as accelerator the letter H. You can translate in your language like: &Ajutor, preferably take care of this:
+in the same menu (like File menu) there should be unique accelerators.
+
+Please try to follow the original (English) line arrangement. That is, if you
+meet: "Current activity's<new line symbol>
+     description"
+you have to split your message if it is too wide (wider than the widest line).
+For instance, the translation would be:
+     "Descrierea activitatii<new line symbol>
+     curente"
+
+New line symbol is a special sign in Linguist, you'll see it, it is like Greek symbol for Pi.
+Also, in linguist there is a special character (a dot) for a space.
+
+New line means you need to put a new line character (press Enter).
+
+Please take care to punctuation, because Linguist requires it. You have to end
+each translation with the same punctuation mark as the English one. For
+instance:
+     "Compulsory conflicts:"
+would become:
+     "Conflicte obligatorii:"
+If you don't do that, you will get an exclamation mark for this translation.
+
+Please translate a field preferably word-by-word as in English, and if you
+translate a field, translate it completely.
+
+It would be a good idea to send the fet_**.ts file after only a few
+modifications, so that the FET authors can check it if it works, so your work
+is not wasted. If that goes well, you can continue working on it.
+
+If you do not want your email address to be listed in the TRANSLATORS section, please specify that,
+and maybe provide another method of contacting you.
+
+In order to test your translation you need to release it as fet_**.qm
+and put it into the directory "translations/". Then, rename the file as
+fet_ro.qm (or any other implemented translation), overwriting the old one, and try the Romanian language.
+
+Note: Arabic, Farsi and Hebrew are written right-to-left. If you want to test a usual left-to-right translation,
+rename it differently from fet_ar.qm, fet_fa.qm or fet_he.qm. If you want to test a right-to-left translation,
+rename it as fet_ar.qm, fet_fa.qm or fet_he.qm.
+
+Note: to add your translation into FET, without renaming it as an already existing language, you need to change
+these files/functions:
+- void usage(QTextStream& out, const QString& error) in the file src/interface/fet.cpp
+- void initLanguagesSet() in the file src/interface/fet.cpp
+- void FetMainForm::populateLanguagesMap(QMap<QString, QString>& languagesMap) in the file src/interface/fetmainform.cpp
+- the TRANSLATIONS section of the file src/src.pro (add your language, similar to the other languages. Please see
+also the alternative procedure for STEP 1).
+Then recompile. But this is complicated and unneeded.
+
+Note: under Mac OS X, to test your translation, you need to put it into the directory /usr/share/fet/translations/
+or fet.app/Contents/MaxOS/translations/ (information provided by a translator).
+More notes for the Mac OS X platform, from a user: copying the translation file fet_**.qm into the directory fet.app/Contents/MacOS/translations
+is possible from the command line in X11 xterm (but it is not possible with the finder program, because the file extension ".app" is
+exclusive for applications, so the program finder interprets a directory with the extension ".app" as an application).
+
+Please test your translation on the file named test-all-constraints.fet in the directory translations. Check the
+all time constraints and all space constraints dialogs, the constraints should look good (description and detailed description for each one).
+Also, the constraints should be different, like for instance starting times from time slots or same starting time from same starting hour.
+
+There are some variables written with uppercase letters, like: MAX_TOTAL_SUBGROUPS.
+These names must remain unchanged.
+
+
+Tips and tricks:
+
+There are many small fields which are repeated many times, in different contexts (sections). If you translated such a field at least once,
+running lupdate will automatically fill the other identical fields (using the 'same text' heuristic), so you will only need to check
+these fields and mark them as finished (if the field has a specific disambiguation/comment, check that it corresponds). These fields will
+be marked as translated, but unfinished (probably with a yellow question mark). Remember to disable 'number heuristic':
+"lupdate src.pro -disable-heuristic number", as recommended above.

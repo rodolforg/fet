@@ -1,0 +1,6545 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<fet version="5.30.3">
+
+<Institution_Name>Rehoboth Primary School</Institution_Name>
+
+<Comments>Default comments</Comments>
+
+<Days_List>
+<Number_of_Days>5</Number_of_Days>
+<Day>
+	<Name>Monday</Name>
+</Day>
+<Day>
+	<Name>Tuesday</Name>
+</Day>
+<Day>
+	<Name>Wednesday</Name>
+</Day>
+<Day>
+	<Name>Thursday</Name>
+</Day>
+<Day>
+	<Name>Friday</Name>
+</Day>
+</Days_List>
+
+<Hours_List>
+<Number_of_Hours>9</Number_of_Hours>
+<Hour>
+	<Name>Pd1</Name>
+</Hour>
+<Hour>
+	<Name>Pd2</Name>
+</Hour>
+<Hour>
+	<Name>Pd3</Name>
+</Hour>
+<Hour>
+	<Name>Pd4</Name>
+</Hour>
+<Hour>
+	<Name>Break</Name>
+</Hour>
+<Hour>
+	<Name>Pd5</Name>
+</Hour>
+<Hour>
+	<Name>Pd6</Name>
+</Hour>
+<Hour>
+	<Name>Pd7</Name>
+</Hour>
+<Hour>
+	<Name>Pd8</Name>
+</Hour>
+</Hours_List>
+
+<Subjects_List>
+<Subject>
+	<Name>Afr</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Art</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>BIS</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>D&amp;T</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Eng</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>HEc</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>IC</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>LSk</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Mat</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>NSc</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>PEd</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>RME</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Read</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>SSt</Name>
+	<Comments></Comments>
+</Subject>
+</Subjects_List>
+
+<Activity_Tags_List>
+</Activity_Tags_List>
+
+<Teachers_List>
+<Teacher>
+	<Name>Benade JN</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Bezuidenhout B</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>De Koe L</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Falleky F</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Gertze I</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Nickel EE</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Pedro M</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Philander S</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Prins E</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Rickerts C</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Rittmann C</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Steyn C</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Van Wyk JC</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Van Wyk L</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Van Wyk R</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Visagie S</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Vries GD</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+</Teachers_List>
+
+<Students_List>
+<Year>
+	<Name>4a</Name>
+	<Number_of_Students>0</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>4b</Name>
+	<Number_of_Students>0</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>4c</Name>
+	<Number_of_Students>0</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>5a</Name>
+	<Number_of_Students>0</Number_of_Students>
+	<Comments></Comments>
+	<Group>
+		<Name>5a D&amp;T</Name>
+		<Number_of_Students>0</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+	<Group>
+		<Name>5a HEc</Name>
+		<Number_of_Students>0</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+</Year>
+<Year>
+	<Name>5b</Name>
+	<Number_of_Students>0</Number_of_Students>
+	<Comments></Comments>
+	<Group>
+		<Name>5b D&amp;T</Name>
+		<Number_of_Students>0</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+	<Group>
+		<Name>5b HEc</Name>
+		<Number_of_Students>0</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+</Year>
+<Year>
+	<Name>5c</Name>
+	<Number_of_Students>0</Number_of_Students>
+	<Comments></Comments>
+	<Group>
+		<Name>5c D&amp;T</Name>
+		<Number_of_Students>0</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+	<Group>
+		<Name>5c HEc</Name>
+		<Number_of_Students>0</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+</Year>
+<Year>
+	<Name>6a</Name>
+	<Number_of_Students>0</Number_of_Students>
+	<Comments></Comments>
+	<Group>
+		<Name>6a D&amp;T</Name>
+		<Number_of_Students>0</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+	<Group>
+		<Name>6a HEc</Name>
+		<Number_of_Students>0</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+</Year>
+<Year>
+	<Name>6b</Name>
+	<Number_of_Students>0</Number_of_Students>
+	<Comments></Comments>
+	<Group>
+		<Name>6b D&amp;T</Name>
+		<Number_of_Students>0</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+	<Group>
+		<Name>6b HEc</Name>
+		<Number_of_Students>0</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+</Year>
+<Year>
+	<Name>6c</Name>
+	<Number_of_Students>0</Number_of_Students>
+	<Comments></Comments>
+	<Group>
+		<Name>6c D&amp;T</Name>
+		<Number_of_Students>0</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+	<Group>
+		<Name>6c HEc</Name>
+		<Number_of_Students>0</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+</Year>
+<Year>
+	<Name>7a</Name>
+	<Number_of_Students>0</Number_of_Students>
+	<Comments></Comments>
+	<Group>
+		<Name>7a D&amp;T</Name>
+		<Number_of_Students>0</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+	<Group>
+		<Name>7a HEc</Name>
+		<Number_of_Students>0</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+</Year>
+<Year>
+	<Name>7b</Name>
+	<Number_of_Students>0</Number_of_Students>
+	<Comments></Comments>
+	<Group>
+		<Name>7b D&amp;T</Name>
+		<Number_of_Students>0</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+	<Group>
+		<Name>7b HEc</Name>
+		<Number_of_Students>0</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+</Year>
+<Year>
+	<Name>7c</Name>
+	<Number_of_Students>0</Number_of_Students>
+	<Comments></Comments>
+	<Group>
+		<Name>7c D&amp;T</Name>
+		<Number_of_Students>0</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+	<Group>
+		<Name>7c HEc</Name>
+		<Number_of_Students>0</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+</Year>
+</Students_List>
+
+<Activities_List>
+<Activity>
+	<Teacher>Nickel EE</Teacher>
+	<Subject>HEc</Subject>
+	<Students>7a HEc</Students>
+	<Duration>2</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>20</Id>
+	<Activity_Group_Id>20</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nickel EE</Teacher>
+	<Subject>HEc</Subject>
+	<Students>7a HEc</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>21</Id>
+	<Activity_Group_Id>20</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nickel EE</Teacher>
+	<Subject>HEc</Subject>
+	<Students>7b HEc</Students>
+	<Duration>2</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>22</Id>
+	<Activity_Group_Id>22</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nickel EE</Teacher>
+	<Subject>HEc</Subject>
+	<Students>7b HEc</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>23</Id>
+	<Activity_Group_Id>22</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nickel EE</Teacher>
+	<Subject>HEc</Subject>
+	<Students>7c HEc</Students>
+	<Duration>2</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>24</Id>
+	<Activity_Group_Id>24</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nickel EE</Teacher>
+	<Subject>HEc</Subject>
+	<Students>7c HEc</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>25</Id>
+	<Activity_Group_Id>24</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nickel EE</Teacher>
+	<Subject>HEc</Subject>
+	<Students>6a HEc</Students>
+	<Duration>2</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>156</Id>
+	<Activity_Group_Id>156</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nickel EE</Teacher>
+	<Subject>HEc</Subject>
+	<Students>6a HEc</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>157</Id>
+	<Activity_Group_Id>156</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nickel EE</Teacher>
+	<Subject>HEc</Subject>
+	<Students>6b HEc</Students>
+	<Duration>2</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>158</Id>
+	<Activity_Group_Id>158</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nickel EE</Teacher>
+	<Subject>HEc</Subject>
+	<Students>6b HEc</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>159</Id>
+	<Activity_Group_Id>158</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nickel EE</Teacher>
+	<Subject>HEc</Subject>
+	<Students>6c HEc</Students>
+	<Duration>2</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>160</Id>
+	<Activity_Group_Id>160</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nickel EE</Teacher>
+	<Subject>HEc</Subject>
+	<Students>6c HEc</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>161</Id>
+	<Activity_Group_Id>160</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Prins E</Teacher>
+	<Subject>RME</Subject>
+	<Students>5a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>327</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Prins E</Teacher>
+	<Subject>RME</Subject>
+	<Students>5b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>328</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Prins E</Teacher>
+	<Subject>RME</Subject>
+	<Students>5c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>329</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Vries GD</Teacher>
+	<Subject>SSt</Subject>
+	<Students>7a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>351</Id>
+	<Activity_Group_Id>351</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Vries GD</Teacher>
+	<Subject>SSt</Subject>
+	<Students>7a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>352</Id>
+	<Activity_Group_Id>351</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Vries GD</Teacher>
+	<Subject>SSt</Subject>
+	<Students>7a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>353</Id>
+	<Activity_Group_Id>351</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Vries GD</Teacher>
+	<Subject>SSt</Subject>
+	<Students>7a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>354</Id>
+	<Activity_Group_Id>351</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Vries GD</Teacher>
+	<Subject>SSt</Subject>
+	<Students>7a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>355</Id>
+	<Activity_Group_Id>351</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Vries GD</Teacher>
+	<Subject>SSt</Subject>
+	<Students>7b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>356</Id>
+	<Activity_Group_Id>356</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Vries GD</Teacher>
+	<Subject>SSt</Subject>
+	<Students>7b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>357</Id>
+	<Activity_Group_Id>356</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Vries GD</Teacher>
+	<Subject>SSt</Subject>
+	<Students>7b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>358</Id>
+	<Activity_Group_Id>356</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Vries GD</Teacher>
+	<Subject>SSt</Subject>
+	<Students>7b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>359</Id>
+	<Activity_Group_Id>356</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Vries GD</Teacher>
+	<Subject>SSt</Subject>
+	<Students>7b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>360</Id>
+	<Activity_Group_Id>356</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Vries GD</Teacher>
+	<Subject>SSt</Subject>
+	<Students>7c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>361</Id>
+	<Activity_Group_Id>361</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Vries GD</Teacher>
+	<Subject>SSt</Subject>
+	<Students>7c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>362</Id>
+	<Activity_Group_Id>361</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Vries GD</Teacher>
+	<Subject>SSt</Subject>
+	<Students>7c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>363</Id>
+	<Activity_Group_Id>361</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Vries GD</Teacher>
+	<Subject>SSt</Subject>
+	<Students>7c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>364</Id>
+	<Activity_Group_Id>361</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Vries GD</Teacher>
+	<Subject>SSt</Subject>
+	<Students>7c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>365</Id>
+	<Activity_Group_Id>361</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Steyn C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>5a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>366</Id>
+	<Activity_Group_Id>366</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Steyn C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>5a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>367</Id>
+	<Activity_Group_Id>366</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Steyn C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>5a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>368</Id>
+	<Activity_Group_Id>366</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Steyn C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>5a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>369</Id>
+	<Activity_Group_Id>366</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Steyn C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>5a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>370</Id>
+	<Activity_Group_Id>366</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Steyn C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>5b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>371</Id>
+	<Activity_Group_Id>371</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Steyn C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>5b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>372</Id>
+	<Activity_Group_Id>371</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Steyn C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>5b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>373</Id>
+	<Activity_Group_Id>371</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Steyn C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>5b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>374</Id>
+	<Activity_Group_Id>371</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Steyn C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>5b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>375</Id>
+	<Activity_Group_Id>371</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Steyn C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>5c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>376</Id>
+	<Activity_Group_Id>376</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Steyn C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>5c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>377</Id>
+	<Activity_Group_Id>376</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Steyn C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>5c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>378</Id>
+	<Activity_Group_Id>376</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Steyn C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>5c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>379</Id>
+	<Activity_Group_Id>376</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Steyn C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>5c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>380</Id>
+	<Activity_Group_Id>376</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>6a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>381</Id>
+	<Activity_Group_Id>381</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>6a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>382</Id>
+	<Activity_Group_Id>381</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>6a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>383</Id>
+	<Activity_Group_Id>381</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>6a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>384</Id>
+	<Activity_Group_Id>381</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>6a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>385</Id>
+	<Activity_Group_Id>381</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>6b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>386</Id>
+	<Activity_Group_Id>386</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>6b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>387</Id>
+	<Activity_Group_Id>386</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>6b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>388</Id>
+	<Activity_Group_Id>386</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>6b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>389</Id>
+	<Activity_Group_Id>386</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>6b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>390</Id>
+	<Activity_Group_Id>386</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>6c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>391</Id>
+	<Activity_Group_Id>391</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>6c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>392</Id>
+	<Activity_Group_Id>391</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>6c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>393</Id>
+	<Activity_Group_Id>391</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>6c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>394</Id>
+	<Activity_Group_Id>391</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>SSt</Subject>
+	<Students>6c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>395</Id>
+	<Activity_Group_Id>391</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk JC</Teacher>
+	<Subject>SSt</Subject>
+	<Students>4b</Students>
+	<Duration>2</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>396</Id>
+	<Activity_Group_Id>396</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk JC</Teacher>
+	<Subject>SSt</Subject>
+	<Students>4b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>397</Id>
+	<Activity_Group_Id>396</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk JC</Teacher>
+	<Subject>SSt</Subject>
+	<Students>4b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>398</Id>
+	<Activity_Group_Id>396</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk JC</Teacher>
+	<Subject>SSt</Subject>
+	<Students>4b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>399</Id>
+	<Activity_Group_Id>396</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk JC</Teacher>
+	<Subject>SSt</Subject>
+	<Students>4b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>400</Id>
+	<Activity_Group_Id>396</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Gertze I</Teacher>
+	<Subject>SSt</Subject>
+	<Students>4c</Students>
+	<Duration>2</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>401</Id>
+	<Activity_Group_Id>401</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Gertze I</Teacher>
+	<Subject>SSt</Subject>
+	<Students>4c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>402</Id>
+	<Activity_Group_Id>401</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Gertze I</Teacher>
+	<Subject>SSt</Subject>
+	<Students>4c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>403</Id>
+	<Activity_Group_Id>401</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Gertze I</Teacher>
+	<Subject>SSt</Subject>
+	<Students>4c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>404</Id>
+	<Activity_Group_Id>401</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Gertze I</Teacher>
+	<Subject>SSt</Subject>
+	<Students>4c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>405</Id>
+	<Activity_Group_Id>401</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk JC</Teacher>
+	<Subject>SSt</Subject>
+	<Students>4a</Students>
+	<Duration>2</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>406</Id>
+	<Activity_Group_Id>406</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk JC</Teacher>
+	<Subject>SSt</Subject>
+	<Students>4a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>407</Id>
+	<Activity_Group_Id>406</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk JC</Teacher>
+	<Subject>SSt</Subject>
+	<Students>4a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>408</Id>
+	<Activity_Group_Id>406</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk JC</Teacher>
+	<Subject>SSt</Subject>
+	<Students>4a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>409</Id>
+	<Activity_Group_Id>406</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk JC</Teacher>
+	<Subject>SSt</Subject>
+	<Students>4a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>410</Id>
+	<Activity_Group_Id>406</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Steyn C</Teacher>
+	<Subject>HEc</Subject>
+	<Students>5a HEc</Students>
+	<Duration>2</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>411</Id>
+	<Activity_Group_Id>411</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Steyn C</Teacher>
+	<Subject>HEc</Subject>
+	<Students>5a HEc</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>412</Id>
+	<Activity_Group_Id>411</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Steyn C</Teacher>
+	<Subject>HEc</Subject>
+	<Students>5b HEc</Students>
+	<Duration>2</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>413</Id>
+	<Activity_Group_Id>413</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Steyn C</Teacher>
+	<Subject>HEc</Subject>
+	<Students>5b HEc</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>414</Id>
+	<Activity_Group_Id>413</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Steyn C</Teacher>
+	<Subject>HEc</Subject>
+	<Students>5c HEc</Students>
+	<Duration>2</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>415</Id>
+	<Activity_Group_Id>415</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Steyn C</Teacher>
+	<Subject>HEc</Subject>
+	<Students>5c HEc</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>416</Id>
+	<Activity_Group_Id>415</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nickel EE</Teacher>
+	<Subject>Art</Subject>
+	<Students>4a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>417</Id>
+	<Activity_Group_Id>417</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nickel EE</Teacher>
+	<Subject>Art</Subject>
+	<Students>4a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>418</Id>
+	<Activity_Group_Id>417</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nickel EE</Teacher>
+	<Subject>Art</Subject>
+	<Students>4b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>419</Id>
+	<Activity_Group_Id>419</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nickel EE</Teacher>
+	<Subject>Art</Subject>
+	<Students>4b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>420</Id>
+	<Activity_Group_Id>419</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nickel EE</Teacher>
+	<Subject>Art</Subject>
+	<Students>4c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>421</Id>
+	<Activity_Group_Id>421</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nickel EE</Teacher>
+	<Subject>Art</Subject>
+	<Students>4c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>422</Id>
+	<Activity_Group_Id>421</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Philander S</Teacher>
+	<Subject>Art</Subject>
+	<Students>5a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>423</Id>
+	<Activity_Group_Id>423</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Philander S</Teacher>
+	<Subject>Art</Subject>
+	<Students>5a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>424</Id>
+	<Activity_Group_Id>423</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Philander S</Teacher>
+	<Subject>Art</Subject>
+	<Students>5b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>425</Id>
+	<Activity_Group_Id>425</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Philander S</Teacher>
+	<Subject>Art</Subject>
+	<Students>5b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>426</Id>
+	<Activity_Group_Id>425</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Philander S</Teacher>
+	<Subject>Art</Subject>
+	<Students>5c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>427</Id>
+	<Activity_Group_Id>427</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Philander S</Teacher>
+	<Subject>Art</Subject>
+	<Students>5c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>428</Id>
+	<Activity_Group_Id>427</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Philander S</Teacher>
+	<Subject>Art</Subject>
+	<Students>6a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>429</Id>
+	<Activity_Group_Id>429</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Philander S</Teacher>
+	<Subject>Art</Subject>
+	<Students>6a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>430</Id>
+	<Activity_Group_Id>429</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Philander S</Teacher>
+	<Subject>Art</Subject>
+	<Students>6b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>431</Id>
+	<Activity_Group_Id>431</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Philander S</Teacher>
+	<Subject>Art</Subject>
+	<Students>6b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>432</Id>
+	<Activity_Group_Id>431</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Philander S</Teacher>
+	<Subject>Art</Subject>
+	<Students>6c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>433</Id>
+	<Activity_Group_Id>433</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Philander S</Teacher>
+	<Subject>Art</Subject>
+	<Students>6c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>434</Id>
+	<Activity_Group_Id>433</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Visagie S</Teacher>
+	<Subject>Art</Subject>
+	<Students>7a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>435</Id>
+	<Activity_Group_Id>435</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Visagie S</Teacher>
+	<Subject>Art</Subject>
+	<Students>7a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>436</Id>
+	<Activity_Group_Id>435</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Visagie S</Teacher>
+	<Subject>Art</Subject>
+	<Students>7b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>437</Id>
+	<Activity_Group_Id>437</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Visagie S</Teacher>
+	<Subject>Art</Subject>
+	<Students>7b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>438</Id>
+	<Activity_Group_Id>437</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Visagie S</Teacher>
+	<Subject>Art</Subject>
+	<Students>7c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>439</Id>
+	<Activity_Group_Id>439</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Visagie S</Teacher>
+	<Subject>Art</Subject>
+	<Students>7c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>440</Id>
+	<Activity_Group_Id>439</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Prins E</Teacher>
+	<Subject>D&amp;T</Subject>
+	<Students>5a D&amp;T</Students>
+	<Duration>2</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>441</Id>
+	<Activity_Group_Id>441</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Prins E</Teacher>
+	<Subject>D&amp;T</Subject>
+	<Students>5a D&amp;T</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>442</Id>
+	<Activity_Group_Id>441</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Prins E</Teacher>
+	<Subject>D&amp;T</Subject>
+	<Students>5b D&amp;T</Students>
+	<Duration>2</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>443</Id>
+	<Activity_Group_Id>443</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Prins E</Teacher>
+	<Subject>D&amp;T</Subject>
+	<Students>5b D&amp;T</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>444</Id>
+	<Activity_Group_Id>443</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Prins E</Teacher>
+	<Subject>D&amp;T</Subject>
+	<Students>5c D&amp;T</Students>
+	<Duration>2</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>445</Id>
+	<Activity_Group_Id>445</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Prins E</Teacher>
+	<Subject>D&amp;T</Subject>
+	<Students>5c D&amp;T</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>446</Id>
+	<Activity_Group_Id>445</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Prins E</Teacher>
+	<Subject>D&amp;T</Subject>
+	<Students>6a D&amp;T</Students>
+	<Duration>2</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>447</Id>
+	<Activity_Group_Id>447</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Prins E</Teacher>
+	<Subject>D&amp;T</Subject>
+	<Students>6a D&amp;T</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>448</Id>
+	<Activity_Group_Id>447</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Prins E</Teacher>
+	<Subject>D&amp;T</Subject>
+	<Students>6b D&amp;T</Students>
+	<Duration>2</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>449</Id>
+	<Activity_Group_Id>449</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Prins E</Teacher>
+	<Subject>D&amp;T</Subject>
+	<Students>6b D&amp;T</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>450</Id>
+	<Activity_Group_Id>449</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Prins E</Teacher>
+	<Subject>D&amp;T</Subject>
+	<Students>6c D&amp;T</Students>
+	<Duration>2</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>451</Id>
+	<Activity_Group_Id>451</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Prins E</Teacher>
+	<Subject>D&amp;T</Subject>
+	<Students>6c D&amp;T</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>452</Id>
+	<Activity_Group_Id>451</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Benade JN</Teacher>
+	<Subject>D&amp;T</Subject>
+	<Students>7a D&amp;T</Students>
+	<Duration>2</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>453</Id>
+	<Activity_Group_Id>453</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Benade JN</Teacher>
+	<Subject>D&amp;T</Subject>
+	<Students>7a D&amp;T</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>454</Id>
+	<Activity_Group_Id>453</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Benade JN</Teacher>
+	<Subject>D&amp;T</Subject>
+	<Students>7b D&amp;T</Students>
+	<Duration>2</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>455</Id>
+	<Activity_Group_Id>455</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Benade JN</Teacher>
+	<Subject>D&amp;T</Subject>
+	<Students>7b D&amp;T</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>456</Id>
+	<Activity_Group_Id>455</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Benade JN</Teacher>
+	<Subject>D&amp;T</Subject>
+	<Students>7c D&amp;T</Students>
+	<Duration>2</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>457</Id>
+	<Activity_Group_Id>457</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Benade JN</Teacher>
+	<Subject>D&amp;T</Subject>
+	<Students>7c D&amp;T</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>458</Id>
+	<Activity_Group_Id>457</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Prins E</Teacher>
+	<Subject>IC</Subject>
+	<Students>5a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>459</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Prins E</Teacher>
+	<Subject>IC</Subject>
+	<Students>5b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>460</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Prins E</Teacher>
+	<Subject>IC</Subject>
+	<Students>5c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>461</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk L</Teacher>
+	<Subject>IC</Subject>
+	<Students>6a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>462</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk L</Teacher>
+	<Subject>IC</Subject>
+	<Students>6b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>463</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk L</Teacher>
+	<Subject>IC</Subject>
+	<Students>6c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>464</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk L</Teacher>
+	<Subject>IC</Subject>
+	<Students>7a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>465</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk L</Teacher>
+	<Subject>IC</Subject>
+	<Students>7b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>466</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk L</Teacher>
+	<Subject>IC</Subject>
+	<Students>7c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>467</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk JC</Teacher>
+	<Subject>IC</Subject>
+	<Students>4c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>468</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Gertze I</Teacher>
+	<Subject>IC</Subject>
+	<Students>4b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>469</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bezuidenhout B</Teacher>
+	<Subject>IC</Subject>
+	<Students>4a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>470</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Prins E</Teacher>
+	<Subject>RME</Subject>
+	<Students>4a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>471</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Prins E</Teacher>
+	<Subject>RME</Subject>
+	<Students>4b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>472</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Prins E</Teacher>
+	<Subject>RME</Subject>
+	<Students>4c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>473</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Prins E</Teacher>
+	<Subject>RME</Subject>
+	<Students>6a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>474</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Prins E</Teacher>
+	<Subject>RME</Subject>
+	<Students>6b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>475</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Prins E</Teacher>
+	<Subject>RME</Subject>
+	<Students>6c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>476</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Benade JN</Teacher>
+	<Subject>RME</Subject>
+	<Students>7a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>477</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Benade JN</Teacher>
+	<Subject>RME</Subject>
+	<Students>7b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>478</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Benade JN</Teacher>
+	<Subject>RME</Subject>
+	<Students>7c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>479</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Prins E</Teacher>
+	<Subject>Read</Subject>
+	<Students>6b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>480</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>Read</Subject>
+	<Students>5b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>481</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Philander S</Teacher>
+	<Subject>Read</Subject>
+	<Students>7c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>482</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk R</Teacher>
+	<Subject>Read</Subject>
+	<Students>5c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>483</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>Read</Subject>
+	<Students>6a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>484</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>De Koe L</Teacher>
+	<Subject>Read</Subject>
+	<Students>7b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>485</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk L</Teacher>
+	<Subject>Read</Subject>
+	<Students>5a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>486</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Benade JN</Teacher>
+	<Subject>Read</Subject>
+	<Students>7a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>487</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Visagie S</Teacher>
+	<Subject>Read</Subject>
+	<Students>6c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>488</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk JC</Teacher>
+	<Subject>Read</Subject>
+	<Students>4c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>489</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Gertze I</Teacher>
+	<Subject>Read</Subject>
+	<Students>4b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>490</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bezuidenhout B</Teacher>
+	<Subject>Read</Subject>
+	<Students>4a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>491</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Pedro M</Teacher>
+	<Subject>LSk</Subject>
+	<Students>4a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>497</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Pedro M</Teacher>
+	<Subject>LSk</Subject>
+	<Students>4b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>498</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Pedro M</Teacher>
+	<Subject>LSk</Subject>
+	<Students>4c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>499</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Pedro M</Teacher>
+	<Subject>LSk</Subject>
+	<Students>5a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>500</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Pedro M</Teacher>
+	<Subject>LSk</Subject>
+	<Students>5b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>501</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Pedro M</Teacher>
+	<Subject>LSk</Subject>
+	<Students>5c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>502</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Pedro M</Teacher>
+	<Subject>LSk</Subject>
+	<Students>6a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>503</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Pedro M</Teacher>
+	<Subject>LSk</Subject>
+	<Students>6b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>504</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Pedro M</Teacher>
+	<Subject>LSk</Subject>
+	<Students>6c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>505</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Pedro M</Teacher>
+	<Subject>LSk</Subject>
+	<Students>7a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>506</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Pedro M</Teacher>
+	<Subject>LSk</Subject>
+	<Students>7b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>507</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Pedro M</Teacher>
+	<Subject>LSk</Subject>
+	<Students>7c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>508</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>NSc</Subject>
+	<Students>5a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>509</Id>
+	<Activity_Group_Id>509</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>NSc</Subject>
+	<Students>5a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>510</Id>
+	<Activity_Group_Id>509</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>NSc</Subject>
+	<Students>5a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>511</Id>
+	<Activity_Group_Id>509</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>NSc</Subject>
+	<Students>5a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>512</Id>
+	<Activity_Group_Id>509</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>NSc</Subject>
+	<Students>5a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>513</Id>
+	<Activity_Group_Id>509</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>NSc</Subject>
+	<Students>5b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>514</Id>
+	<Activity_Group_Id>514</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>NSc</Subject>
+	<Students>5b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>515</Id>
+	<Activity_Group_Id>514</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>NSc</Subject>
+	<Students>5b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>516</Id>
+	<Activity_Group_Id>514</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>NSc</Subject>
+	<Students>5b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>517</Id>
+	<Activity_Group_Id>514</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>NSc</Subject>
+	<Students>5b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>518</Id>
+	<Activity_Group_Id>514</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>NSc</Subject>
+	<Students>5c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>519</Id>
+	<Activity_Group_Id>519</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>NSc</Subject>
+	<Students>5c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>520</Id>
+	<Activity_Group_Id>519</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>NSc</Subject>
+	<Students>5c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>521</Id>
+	<Activity_Group_Id>519</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>NSc</Subject>
+	<Students>5c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>522</Id>
+	<Activity_Group_Id>519</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>NSc</Subject>
+	<Students>5c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>523</Id>
+	<Activity_Group_Id>519</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>NSc</Subject>
+	<Students>6a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>524</Id>
+	<Activity_Group_Id>524</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>NSc</Subject>
+	<Students>6a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>525</Id>
+	<Activity_Group_Id>524</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>NSc</Subject>
+	<Students>6a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>526</Id>
+	<Activity_Group_Id>524</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>NSc</Subject>
+	<Students>6a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>527</Id>
+	<Activity_Group_Id>524</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>NSc</Subject>
+	<Students>6a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>528</Id>
+	<Activity_Group_Id>524</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>NSc</Subject>
+	<Students>6b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>529</Id>
+	<Activity_Group_Id>529</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>NSc</Subject>
+	<Students>6b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>530</Id>
+	<Activity_Group_Id>529</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>NSc</Subject>
+	<Students>6b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>531</Id>
+	<Activity_Group_Id>529</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>NSc</Subject>
+	<Students>6b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>532</Id>
+	<Activity_Group_Id>529</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>NSc</Subject>
+	<Students>6b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>533</Id>
+	<Activity_Group_Id>529</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>NSc</Subject>
+	<Students>6c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>534</Id>
+	<Activity_Group_Id>534</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>NSc</Subject>
+	<Students>6c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>535</Id>
+	<Activity_Group_Id>534</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>NSc</Subject>
+	<Students>6c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>536</Id>
+	<Activity_Group_Id>534</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>NSc</Subject>
+	<Students>6c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>537</Id>
+	<Activity_Group_Id>534</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>NSc</Subject>
+	<Students>6c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>538</Id>
+	<Activity_Group_Id>534</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Visagie S</Teacher>
+	<Subject>NSc</Subject>
+	<Students>7a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>539</Id>
+	<Activity_Group_Id>539</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Visagie S</Teacher>
+	<Subject>NSc</Subject>
+	<Students>7a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>540</Id>
+	<Activity_Group_Id>539</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Visagie S</Teacher>
+	<Subject>NSc</Subject>
+	<Students>7a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>541</Id>
+	<Activity_Group_Id>539</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Visagie S</Teacher>
+	<Subject>NSc</Subject>
+	<Students>7a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>542</Id>
+	<Activity_Group_Id>539</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Visagie S</Teacher>
+	<Subject>NSc</Subject>
+	<Students>7a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>543</Id>
+	<Activity_Group_Id>539</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Visagie S</Teacher>
+	<Subject>NSc</Subject>
+	<Students>7b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>544</Id>
+	<Activity_Group_Id>544</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Visagie S</Teacher>
+	<Subject>NSc</Subject>
+	<Students>7b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>545</Id>
+	<Activity_Group_Id>544</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Visagie S</Teacher>
+	<Subject>NSc</Subject>
+	<Students>7b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>546</Id>
+	<Activity_Group_Id>544</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Visagie S</Teacher>
+	<Subject>NSc</Subject>
+	<Students>7b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>547</Id>
+	<Activity_Group_Id>544</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Visagie S</Teacher>
+	<Subject>NSc</Subject>
+	<Students>7b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>548</Id>
+	<Activity_Group_Id>544</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Visagie S</Teacher>
+	<Subject>NSc</Subject>
+	<Students>7c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>549</Id>
+	<Activity_Group_Id>549</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Visagie S</Teacher>
+	<Subject>NSc</Subject>
+	<Students>7c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>550</Id>
+	<Activity_Group_Id>549</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Visagie S</Teacher>
+	<Subject>NSc</Subject>
+	<Students>7c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>551</Id>
+	<Activity_Group_Id>549</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Visagie S</Teacher>
+	<Subject>NSc</Subject>
+	<Students>7c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>552</Id>
+	<Activity_Group_Id>549</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Visagie S</Teacher>
+	<Subject>NSc</Subject>
+	<Students>7c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>553</Id>
+	<Activity_Group_Id>549</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Gertze I</Teacher>
+	<Subject>NSc</Subject>
+	<Students>4a</Students>
+	<Duration>2</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>554</Id>
+	<Activity_Group_Id>554</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Gertze I</Teacher>
+	<Subject>NSc</Subject>
+	<Students>4a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>555</Id>
+	<Activity_Group_Id>554</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Gertze I</Teacher>
+	<Subject>NSc</Subject>
+	<Students>4a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>556</Id>
+	<Activity_Group_Id>554</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Gertze I</Teacher>
+	<Subject>NSc</Subject>
+	<Students>4a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>557</Id>
+	<Activity_Group_Id>554</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Gertze I</Teacher>
+	<Subject>NSc</Subject>
+	<Students>4a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>558</Id>
+	<Activity_Group_Id>554</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bezuidenhout B</Teacher>
+	<Subject>NSc</Subject>
+	<Students>4b</Students>
+	<Duration>2</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>559</Id>
+	<Activity_Group_Id>559</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bezuidenhout B</Teacher>
+	<Subject>NSc</Subject>
+	<Students>4b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>560</Id>
+	<Activity_Group_Id>559</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bezuidenhout B</Teacher>
+	<Subject>NSc</Subject>
+	<Students>4b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>561</Id>
+	<Activity_Group_Id>559</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bezuidenhout B</Teacher>
+	<Subject>NSc</Subject>
+	<Students>4b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>562</Id>
+	<Activity_Group_Id>559</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bezuidenhout B</Teacher>
+	<Subject>NSc</Subject>
+	<Students>4b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>563</Id>
+	<Activity_Group_Id>559</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bezuidenhout B</Teacher>
+	<Subject>NSc</Subject>
+	<Students>4c</Students>
+	<Duration>2</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>564</Id>
+	<Activity_Group_Id>564</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bezuidenhout B</Teacher>
+	<Subject>NSc</Subject>
+	<Students>4c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>565</Id>
+	<Activity_Group_Id>564</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bezuidenhout B</Teacher>
+	<Subject>NSc</Subject>
+	<Students>4c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>566</Id>
+	<Activity_Group_Id>564</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bezuidenhout B</Teacher>
+	<Subject>NSc</Subject>
+	<Students>4c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>567</Id>
+	<Activity_Group_Id>564</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bezuidenhout B</Teacher>
+	<Subject>NSc</Subject>
+	<Students>4c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>568</Id>
+	<Activity_Group_Id>564</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>Mat</Subject>
+	<Students>5a</Students>
+	<Duration>2</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>569</Id>
+	<Activity_Group_Id>569</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>Mat</Subject>
+	<Students>5a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>570</Id>
+	<Activity_Group_Id>569</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>Mat</Subject>
+	<Students>5a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>571</Id>
+	<Activity_Group_Id>569</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>Mat</Subject>
+	<Students>5a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>572</Id>
+	<Activity_Group_Id>569</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>Mat</Subject>
+	<Students>5a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>573</Id>
+	<Activity_Group_Id>569</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>Mat</Subject>
+	<Students>5b</Students>
+	<Duration>2</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>574</Id>
+	<Activity_Group_Id>574</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>Mat</Subject>
+	<Students>5b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>575</Id>
+	<Activity_Group_Id>574</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>Mat</Subject>
+	<Students>5b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>576</Id>
+	<Activity_Group_Id>574</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>Mat</Subject>
+	<Students>5b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>577</Id>
+	<Activity_Group_Id>574</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>Mat</Subject>
+	<Students>5b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>578</Id>
+	<Activity_Group_Id>574</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>Mat</Subject>
+	<Students>5c</Students>
+	<Duration>2</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>579</Id>
+	<Activity_Group_Id>579</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>Mat</Subject>
+	<Students>5c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>580</Id>
+	<Activity_Group_Id>579</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>Mat</Subject>
+	<Students>5c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>581</Id>
+	<Activity_Group_Id>579</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>Mat</Subject>
+	<Students>5c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>582</Id>
+	<Activity_Group_Id>579</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Falleky F</Teacher>
+	<Subject>Mat</Subject>
+	<Students>5c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>583</Id>
+	<Activity_Group_Id>579</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>Mat</Subject>
+	<Students>6a</Students>
+	<Duration>2</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>584</Id>
+	<Activity_Group_Id>584</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>Mat</Subject>
+	<Students>6a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>585</Id>
+	<Activity_Group_Id>584</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>Mat</Subject>
+	<Students>6a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>586</Id>
+	<Activity_Group_Id>584</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>Mat</Subject>
+	<Students>6a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>587</Id>
+	<Activity_Group_Id>584</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>Mat</Subject>
+	<Students>6a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>588</Id>
+	<Activity_Group_Id>584</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>Mat</Subject>
+	<Students>6b</Students>
+	<Duration>2</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>589</Id>
+	<Activity_Group_Id>589</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>Mat</Subject>
+	<Students>6b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>590</Id>
+	<Activity_Group_Id>589</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>Mat</Subject>
+	<Students>6b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>591</Id>
+	<Activity_Group_Id>589</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>Mat</Subject>
+	<Students>6b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>592</Id>
+	<Activity_Group_Id>589</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>Mat</Subject>
+	<Students>6b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>593</Id>
+	<Activity_Group_Id>589</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>Mat</Subject>
+	<Students>6c</Students>
+	<Duration>2</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>594</Id>
+	<Activity_Group_Id>594</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>Mat</Subject>
+	<Students>6c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>595</Id>
+	<Activity_Group_Id>594</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>Mat</Subject>
+	<Students>6c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>596</Id>
+	<Activity_Group_Id>594</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>Mat</Subject>
+	<Students>6c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>597</Id>
+	<Activity_Group_Id>594</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rickerts C</Teacher>
+	<Subject>Mat</Subject>
+	<Students>6c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>598</Id>
+	<Activity_Group_Id>594</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Benade JN</Teacher>
+	<Subject>Mat</Subject>
+	<Students>7a</Students>
+	<Duration>2</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>599</Id>
+	<Activity_Group_Id>599</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Benade JN</Teacher>
+	<Subject>Mat</Subject>
+	<Students>7a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>600</Id>
+	<Activity_Group_Id>599</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Benade JN</Teacher>
+	<Subject>Mat</Subject>
+	<Students>7a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>601</Id>
+	<Activity_Group_Id>599</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Benade JN</Teacher>
+	<Subject>Mat</Subject>
+	<Students>7a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>602</Id>
+	<Activity_Group_Id>599</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Benade JN</Teacher>
+	<Subject>Mat</Subject>
+	<Students>7a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>603</Id>
+	<Activity_Group_Id>599</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Benade JN</Teacher>
+	<Subject>Mat</Subject>
+	<Students>7b</Students>
+	<Duration>2</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>604</Id>
+	<Activity_Group_Id>604</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Benade JN</Teacher>
+	<Subject>Mat</Subject>
+	<Students>7b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>605</Id>
+	<Activity_Group_Id>604</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Benade JN</Teacher>
+	<Subject>Mat</Subject>
+	<Students>7b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>606</Id>
+	<Activity_Group_Id>604</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Benade JN</Teacher>
+	<Subject>Mat</Subject>
+	<Students>7b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>607</Id>
+	<Activity_Group_Id>604</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Benade JN</Teacher>
+	<Subject>Mat</Subject>
+	<Students>7b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>608</Id>
+	<Activity_Group_Id>604</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Benade JN</Teacher>
+	<Subject>Mat</Subject>
+	<Students>7c</Students>
+	<Duration>2</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>609</Id>
+	<Activity_Group_Id>609</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Benade JN</Teacher>
+	<Subject>Mat</Subject>
+	<Students>7c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>610</Id>
+	<Activity_Group_Id>609</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Benade JN</Teacher>
+	<Subject>Mat</Subject>
+	<Students>7c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>611</Id>
+	<Activity_Group_Id>609</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Benade JN</Teacher>
+	<Subject>Mat</Subject>
+	<Students>7c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>612</Id>
+	<Activity_Group_Id>609</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Benade JN</Teacher>
+	<Subject>Mat</Subject>
+	<Students>7c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>6</Total_Duration>
+	<Id>613</Id>
+	<Activity_Group_Id>609</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bezuidenhout B</Teacher>
+	<Subject>Mat</Subject>
+	<Students>4a</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>614</Id>
+	<Activity_Group_Id>614</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bezuidenhout B</Teacher>
+	<Subject>Mat</Subject>
+	<Students>4a</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>615</Id>
+	<Activity_Group_Id>614</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bezuidenhout B</Teacher>
+	<Subject>Mat</Subject>
+	<Students>4a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>616</Id>
+	<Activity_Group_Id>614</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bezuidenhout B</Teacher>
+	<Subject>Mat</Subject>
+	<Students>4a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>617</Id>
+	<Activity_Group_Id>614</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bezuidenhout B</Teacher>
+	<Subject>Mat</Subject>
+	<Students>4a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>618</Id>
+	<Activity_Group_Id>614</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bezuidenhout B</Teacher>
+	<Subject>Mat</Subject>
+	<Students>4b</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>619</Id>
+	<Activity_Group_Id>619</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bezuidenhout B</Teacher>
+	<Subject>Mat</Subject>
+	<Students>4b</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>620</Id>
+	<Activity_Group_Id>619</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bezuidenhout B</Teacher>
+	<Subject>Mat</Subject>
+	<Students>4b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>621</Id>
+	<Activity_Group_Id>619</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bezuidenhout B</Teacher>
+	<Subject>Mat</Subject>
+	<Students>4b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>622</Id>
+	<Activity_Group_Id>619</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bezuidenhout B</Teacher>
+	<Subject>Mat</Subject>
+	<Students>4b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>623</Id>
+	<Activity_Group_Id>619</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bezuidenhout B</Teacher>
+	<Subject>Mat</Subject>
+	<Students>4c</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>624</Id>
+	<Activity_Group_Id>624</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bezuidenhout B</Teacher>
+	<Subject>Mat</Subject>
+	<Students>4c</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>625</Id>
+	<Activity_Group_Id>624</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bezuidenhout B</Teacher>
+	<Subject>Mat</Subject>
+	<Students>4c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>626</Id>
+	<Activity_Group_Id>624</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bezuidenhout B</Teacher>
+	<Subject>Mat</Subject>
+	<Students>4c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>627</Id>
+	<Activity_Group_Id>624</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bezuidenhout B</Teacher>
+	<Subject>Mat</Subject>
+	<Students>4c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>628</Id>
+	<Activity_Group_Id>624</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Philander S</Teacher>
+	<Subject>Afr</Subject>
+	<Students>7a</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>629</Id>
+	<Activity_Group_Id>629</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Philander S</Teacher>
+	<Subject>Afr</Subject>
+	<Students>7a</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>630</Id>
+	<Activity_Group_Id>629</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Philander S</Teacher>
+	<Subject>Afr</Subject>
+	<Students>7a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>631</Id>
+	<Activity_Group_Id>629</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Philander S</Teacher>
+	<Subject>Afr</Subject>
+	<Students>7a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>632</Id>
+	<Activity_Group_Id>629</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Philander S</Teacher>
+	<Subject>Afr</Subject>
+	<Students>7a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>633</Id>
+	<Activity_Group_Id>629</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Philander S</Teacher>
+	<Subject>Afr</Subject>
+	<Students>7b</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>634</Id>
+	<Activity_Group_Id>634</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Philander S</Teacher>
+	<Subject>Afr</Subject>
+	<Students>7b</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>635</Id>
+	<Activity_Group_Id>634</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Philander S</Teacher>
+	<Subject>Afr</Subject>
+	<Students>7b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>636</Id>
+	<Activity_Group_Id>634</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Philander S</Teacher>
+	<Subject>Afr</Subject>
+	<Students>7b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>637</Id>
+	<Activity_Group_Id>634</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Philander S</Teacher>
+	<Subject>Afr</Subject>
+	<Students>7b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>638</Id>
+	<Activity_Group_Id>634</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Philander S</Teacher>
+	<Subject>Afr</Subject>
+	<Students>7c</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>639</Id>
+	<Activity_Group_Id>639</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Philander S</Teacher>
+	<Subject>Afr</Subject>
+	<Students>7c</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>640</Id>
+	<Activity_Group_Id>639</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Philander S</Teacher>
+	<Subject>Afr</Subject>
+	<Students>7c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>641</Id>
+	<Activity_Group_Id>639</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Philander S</Teacher>
+	<Subject>Afr</Subject>
+	<Students>7c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>642</Id>
+	<Activity_Group_Id>639</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Philander S</Teacher>
+	<Subject>Afr</Subject>
+	<Students>7c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>643</Id>
+	<Activity_Group_Id>639</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk R</Teacher>
+	<Subject>Afr</Subject>
+	<Students>5a</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>644</Id>
+	<Activity_Group_Id>644</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk R</Teacher>
+	<Subject>Afr</Subject>
+	<Students>5a</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>645</Id>
+	<Activity_Group_Id>644</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk R</Teacher>
+	<Subject>Afr</Subject>
+	<Students>5a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>646</Id>
+	<Activity_Group_Id>644</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk R</Teacher>
+	<Subject>Afr</Subject>
+	<Students>5a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>647</Id>
+	<Activity_Group_Id>644</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk R</Teacher>
+	<Subject>Afr</Subject>
+	<Students>5a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>648</Id>
+	<Activity_Group_Id>644</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk R</Teacher>
+	<Subject>Afr</Subject>
+	<Students>5b</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>649</Id>
+	<Activity_Group_Id>649</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk R</Teacher>
+	<Subject>Afr</Subject>
+	<Students>5b</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>650</Id>
+	<Activity_Group_Id>649</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk R</Teacher>
+	<Subject>Afr</Subject>
+	<Students>5b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>651</Id>
+	<Activity_Group_Id>649</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk R</Teacher>
+	<Subject>Afr</Subject>
+	<Students>5b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>652</Id>
+	<Activity_Group_Id>649</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk R</Teacher>
+	<Subject>Afr</Subject>
+	<Students>5b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>653</Id>
+	<Activity_Group_Id>649</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk R</Teacher>
+	<Subject>Afr</Subject>
+	<Students>5c</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>654</Id>
+	<Activity_Group_Id>654</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk R</Teacher>
+	<Subject>Afr</Subject>
+	<Students>5c</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>655</Id>
+	<Activity_Group_Id>654</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk R</Teacher>
+	<Subject>Afr</Subject>
+	<Students>5c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>656</Id>
+	<Activity_Group_Id>654</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk R</Teacher>
+	<Subject>Afr</Subject>
+	<Students>5c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>657</Id>
+	<Activity_Group_Id>654</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk R</Teacher>
+	<Subject>Afr</Subject>
+	<Students>5c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>658</Id>
+	<Activity_Group_Id>654</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>Afr</Subject>
+	<Students>6a</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>659</Id>
+	<Activity_Group_Id>659</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>Afr</Subject>
+	<Students>6a</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>660</Id>
+	<Activity_Group_Id>659</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>Afr</Subject>
+	<Students>6a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>661</Id>
+	<Activity_Group_Id>659</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>Afr</Subject>
+	<Students>6a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>662</Id>
+	<Activity_Group_Id>659</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>Afr</Subject>
+	<Students>6a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>663</Id>
+	<Activity_Group_Id>659</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>Afr</Subject>
+	<Students>6b</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>664</Id>
+	<Activity_Group_Id>664</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>Afr</Subject>
+	<Students>6b</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>665</Id>
+	<Activity_Group_Id>664</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>Afr</Subject>
+	<Students>6b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>666</Id>
+	<Activity_Group_Id>664</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>Afr</Subject>
+	<Students>6b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>667</Id>
+	<Activity_Group_Id>664</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>Afr</Subject>
+	<Students>6b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>668</Id>
+	<Activity_Group_Id>664</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>Afr</Subject>
+	<Students>6c</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>669</Id>
+	<Activity_Group_Id>669</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>Afr</Subject>
+	<Students>6c</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>670</Id>
+	<Activity_Group_Id>669</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>Afr</Subject>
+	<Students>6c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>671</Id>
+	<Activity_Group_Id>669</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>Afr</Subject>
+	<Students>6c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>672</Id>
+	<Activity_Group_Id>669</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rittmann C</Teacher>
+	<Subject>Afr</Subject>
+	<Students>6c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>673</Id>
+	<Activity_Group_Id>669</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Gertze I</Teacher>
+	<Subject>Afr</Subject>
+	<Students>4a</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>674</Id>
+	<Activity_Group_Id>674</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Gertze I</Teacher>
+	<Subject>Afr</Subject>
+	<Students>4a</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>675</Id>
+	<Activity_Group_Id>674</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Gertze I</Teacher>
+	<Subject>Afr</Subject>
+	<Students>4a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>676</Id>
+	<Activity_Group_Id>674</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Gertze I</Teacher>
+	<Subject>Afr</Subject>
+	<Students>4a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>677</Id>
+	<Activity_Group_Id>674</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Gertze I</Teacher>
+	<Subject>Afr</Subject>
+	<Students>4a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>678</Id>
+	<Activity_Group_Id>674</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Gertze I</Teacher>
+	<Subject>Afr</Subject>
+	<Students>4b</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>679</Id>
+	<Activity_Group_Id>679</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Gertze I</Teacher>
+	<Subject>Afr</Subject>
+	<Students>4b</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>680</Id>
+	<Activity_Group_Id>679</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Gertze I</Teacher>
+	<Subject>Afr</Subject>
+	<Students>4b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>681</Id>
+	<Activity_Group_Id>679</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Gertze I</Teacher>
+	<Subject>Afr</Subject>
+	<Students>4b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>682</Id>
+	<Activity_Group_Id>679</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Gertze I</Teacher>
+	<Subject>Afr</Subject>
+	<Students>4b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>683</Id>
+	<Activity_Group_Id>679</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Gertze I</Teacher>
+	<Subject>Afr</Subject>
+	<Students>4c</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>684</Id>
+	<Activity_Group_Id>684</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Gertze I</Teacher>
+	<Subject>Afr</Subject>
+	<Students>4c</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>685</Id>
+	<Activity_Group_Id>684</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Gertze I</Teacher>
+	<Subject>Afr</Subject>
+	<Students>4c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>686</Id>
+	<Activity_Group_Id>684</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Gertze I</Teacher>
+	<Subject>Afr</Subject>
+	<Students>4c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>687</Id>
+	<Activity_Group_Id>684</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Gertze I</Teacher>
+	<Subject>Afr</Subject>
+	<Students>4c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>688</Id>
+	<Activity_Group_Id>684</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk R</Teacher>
+	<Teacher>Visagie S</Teacher>
+	<Subject>PEd</Subject>
+	<Students>4a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>689</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk R</Teacher>
+	<Teacher>Visagie S</Teacher>
+	<Subject>PEd</Subject>
+	<Students>4b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>690</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk R</Teacher>
+	<Teacher>Visagie S</Teacher>
+	<Subject>PEd</Subject>
+	<Students>4c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>691</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk R</Teacher>
+	<Teacher>Visagie S</Teacher>
+	<Subject>PEd</Subject>
+	<Students>5a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>692</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk R</Teacher>
+	<Teacher>Visagie S</Teacher>
+	<Subject>PEd</Subject>
+	<Students>5b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>693</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk R</Teacher>
+	<Teacher>Visagie S</Teacher>
+	<Subject>PEd</Subject>
+	<Students>5c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>694</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk R</Teacher>
+	<Teacher>Visagie S</Teacher>
+	<Subject>PEd</Subject>
+	<Students>6a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>695</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk R</Teacher>
+	<Teacher>Visagie S</Teacher>
+	<Subject>PEd</Subject>
+	<Students>6b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>696</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk R</Teacher>
+	<Teacher>Visagie S</Teacher>
+	<Subject>PEd</Subject>
+	<Students>6c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>697</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk R</Teacher>
+	<Teacher>Visagie S</Teacher>
+	<Subject>PEd</Subject>
+	<Students>7a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>698</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk R</Teacher>
+	<Teacher>Visagie S</Teacher>
+	<Subject>PEd</Subject>
+	<Students>7b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>699</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk R</Teacher>
+	<Teacher>Visagie S</Teacher>
+	<Subject>PEd</Subject>
+	<Students>7c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>700</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>De Koe L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>6a</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>701</Id>
+	<Activity_Group_Id>701</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>De Koe L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>6a</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>702</Id>
+	<Activity_Group_Id>701</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>De Koe L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>6a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>703</Id>
+	<Activity_Group_Id>701</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>De Koe L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>6a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>704</Id>
+	<Activity_Group_Id>701</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>De Koe L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>6a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>705</Id>
+	<Activity_Group_Id>701</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>De Koe L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>6b</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>706</Id>
+	<Activity_Group_Id>706</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>De Koe L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>6b</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>707</Id>
+	<Activity_Group_Id>706</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>De Koe L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>6b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>708</Id>
+	<Activity_Group_Id>706</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>De Koe L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>6b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>709</Id>
+	<Activity_Group_Id>706</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>De Koe L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>6b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>710</Id>
+	<Activity_Group_Id>706</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>De Koe L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>7a</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>711</Id>
+	<Activity_Group_Id>711</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>De Koe L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>7a</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>712</Id>
+	<Activity_Group_Id>711</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>De Koe L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>7a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>713</Id>
+	<Activity_Group_Id>711</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>De Koe L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>7a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>714</Id>
+	<Activity_Group_Id>711</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>De Koe L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>7a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>715</Id>
+	<Activity_Group_Id>711</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>De Koe L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>7b</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>716</Id>
+	<Activity_Group_Id>716</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>De Koe L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>7b</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>717</Id>
+	<Activity_Group_Id>716</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>De Koe L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>7b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>718</Id>
+	<Activity_Group_Id>716</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>De Koe L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>7b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>719</Id>
+	<Activity_Group_Id>716</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>De Koe L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>7b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>720</Id>
+	<Activity_Group_Id>716</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>De Koe L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>7c</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>721</Id>
+	<Activity_Group_Id>721</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>De Koe L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>7c</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>722</Id>
+	<Activity_Group_Id>721</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>De Koe L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>7c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>723</Id>
+	<Activity_Group_Id>721</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>De Koe L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>7c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>724</Id>
+	<Activity_Group_Id>721</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>De Koe L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>7c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>725</Id>
+	<Activity_Group_Id>721</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>5a</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>726</Id>
+	<Activity_Group_Id>726</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>5a</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>727</Id>
+	<Activity_Group_Id>726</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>5a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>728</Id>
+	<Activity_Group_Id>726</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>5a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>729</Id>
+	<Activity_Group_Id>726</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>5a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>730</Id>
+	<Activity_Group_Id>726</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>5b</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>731</Id>
+	<Activity_Group_Id>731</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>5b</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>732</Id>
+	<Activity_Group_Id>731</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>5b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>733</Id>
+	<Activity_Group_Id>731</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>5b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>734</Id>
+	<Activity_Group_Id>731</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>5b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>735</Id>
+	<Activity_Group_Id>731</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>5c</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>736</Id>
+	<Activity_Group_Id>736</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>5c</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>737</Id>
+	<Activity_Group_Id>736</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>5c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>738</Id>
+	<Activity_Group_Id>736</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>5c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>739</Id>
+	<Activity_Group_Id>736</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>5c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>740</Id>
+	<Activity_Group_Id>736</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>6c</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>751</Id>
+	<Activity_Group_Id>751</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>6c</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>752</Id>
+	<Activity_Group_Id>751</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>6c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>753</Id>
+	<Activity_Group_Id>751</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>6c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>754</Id>
+	<Activity_Group_Id>751</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk L</Teacher>
+	<Subject>Eng</Subject>
+	<Students>6c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>755</Id>
+	<Activity_Group_Id>751</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk JC</Teacher>
+	<Subject>Eng</Subject>
+	<Students>4a</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>756</Id>
+	<Activity_Group_Id>756</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk JC</Teacher>
+	<Subject>Eng</Subject>
+	<Students>4a</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>757</Id>
+	<Activity_Group_Id>756</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk JC</Teacher>
+	<Subject>Eng</Subject>
+	<Students>4a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>758</Id>
+	<Activity_Group_Id>756</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk JC</Teacher>
+	<Subject>Eng</Subject>
+	<Students>4a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>759</Id>
+	<Activity_Group_Id>756</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk JC</Teacher>
+	<Subject>Eng</Subject>
+	<Students>4a</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>760</Id>
+	<Activity_Group_Id>756</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk JC</Teacher>
+	<Subject>Eng</Subject>
+	<Students>4b</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>761</Id>
+	<Activity_Group_Id>761</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk JC</Teacher>
+	<Subject>Eng</Subject>
+	<Students>4b</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>762</Id>
+	<Activity_Group_Id>761</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk JC</Teacher>
+	<Subject>Eng</Subject>
+	<Students>4b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>763</Id>
+	<Activity_Group_Id>761</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk JC</Teacher>
+	<Subject>Eng</Subject>
+	<Students>4b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>764</Id>
+	<Activity_Group_Id>761</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk JC</Teacher>
+	<Subject>Eng</Subject>
+	<Students>4b</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>765</Id>
+	<Activity_Group_Id>761</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk JC</Teacher>
+	<Subject>Eng</Subject>
+	<Students>4c</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>766</Id>
+	<Activity_Group_Id>766</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk JC</Teacher>
+	<Subject>Eng</Subject>
+	<Students>4c</Students>
+	<Duration>2</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>767</Id>
+	<Activity_Group_Id>766</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk JC</Teacher>
+	<Subject>Eng</Subject>
+	<Students>4c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>768</Id>
+	<Activity_Group_Id>766</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk JC</Teacher>
+	<Subject>Eng</Subject>
+	<Students>4c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>769</Id>
+	<Activity_Group_Id>766</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Van Wyk JC</Teacher>
+	<Subject>Eng</Subject>
+	<Students>4c</Students>
+	<Duration>1</Duration>
+	<Total_Duration>7</Total_Duration>
+	<Id>770</Id>
+	<Activity_Group_Id>766</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+</Activities_List>
+
+<Buildings_List>
+</Buildings_List>
+
+<Rooms_List>
+</Rooms_List>
+
+<Time_Constraints_List>
+<ConstraintBasicCompulsoryTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintBasicCompulsoryTime>
+<ConstraintBreakTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Break_Times>5</Number_of_Break_Times>
+	<Break_Time>
+		<Day>Monday</Day>
+		<Hour>Break</Hour>
+	</Break_Time>
+	<Break_Time>
+		<Day>Tuesday</Day>
+		<Hour>Break</Hour>
+	</Break_Time>
+	<Break_Time>
+		<Day>Wednesday</Day>
+		<Hour>Break</Hour>
+	</Break_Time>
+	<Break_Time>
+		<Day>Thursday</Day>
+		<Hour>Break</Hour>
+	</Break_Time>
+	<Break_Time>
+		<Day>Friday</Day>
+		<Hour>Break</Hour>
+	</Break_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintBreakTimes>
+<ConstraintActivitiesPreferredTimeSlots>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher_Name></Teacher_Name>
+	<Students_Name></Students_Name>
+	<Subject_Name>PEd</Subject_Name>
+	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
+	<Number_of_Preferred_Time_Slots>15</Number_of_Preferred_Time_Slots>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Monday</Preferred_Day>
+		<Preferred_Hour>Pd1</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Monday</Preferred_Day>
+		<Preferred_Hour>Pd2</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Monday</Preferred_Day>
+		<Preferred_Hour>Pd3</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Tuesday</Preferred_Day>
+		<Preferred_Hour>Pd1</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Tuesday</Preferred_Day>
+		<Preferred_Hour>Pd2</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Tuesday</Preferred_Day>
+		<Preferred_Hour>Pd3</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Wednesday</Preferred_Day>
+		<Preferred_Hour>Pd1</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Wednesday</Preferred_Day>
+		<Preferred_Hour>Pd2</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Wednesday</Preferred_Day>
+		<Preferred_Hour>Pd3</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thursday</Preferred_Day>
+		<Preferred_Hour>Pd1</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thursday</Preferred_Day>
+		<Preferred_Hour>Pd2</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Thursday</Preferred_Day>
+		<Preferred_Hour>Pd3</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Friday</Preferred_Day>
+		<Preferred_Hour>Pd1</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Friday</Preferred_Day>
+		<Preferred_Hour>Pd2</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Preferred_Time_Slot>
+		<Preferred_Day>Friday</Preferred_Day>
+		<Preferred_Hour>Pd3</Preferred_Hour>
+	</Preferred_Time_Slot>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesPreferredTimeSlots>
+<ConstraintActivitiesPreferredStartingTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher_Name></Teacher_Name>
+	<Students_Name></Students_Name>
+	<Subject_Name>Read</Subject_Name>
+	<Activity_Tag_Name></Activity_Tag_Name>
+	<Duration></Duration>
+	<Number_of_Preferred_Starting_Times>1</Number_of_Preferred_Starting_Times>
+	<Preferred_Starting_Time>
+		<Preferred_Starting_Day>Tuesday</Preferred_Starting_Day>
+		<Preferred_Starting_Hour>Pd1</Preferred_Starting_Hour>
+	</Preferred_Starting_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesPreferredStartingTimes>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>20</Activity_Id>
+	<Activity_Id>21</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>20</Activity_Id>
+	<Activity_Id>21</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>22</Activity_Id>
+	<Activity_Id>23</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>22</Activity_Id>
+	<Activity_Id>23</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>24</Activity_Id>
+	<Activity_Id>25</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>24</Activity_Id>
+	<Activity_Id>25</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>156</Activity_Id>
+	<Activity_Id>157</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>156</Activity_Id>
+	<Activity_Id>157</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>158</Activity_Id>
+	<Activity_Id>159</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>158</Activity_Id>
+	<Activity_Id>159</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>160</Activity_Id>
+	<Activity_Id>161</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>160</Activity_Id>
+	<Activity_Id>161</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>351</Activity_Id>
+	<Activity_Id>352</Activity_Id>
+	<Activity_Id>353</Activity_Id>
+	<Activity_Id>354</Activity_Id>
+	<Activity_Id>355</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>356</Activity_Id>
+	<Activity_Id>357</Activity_Id>
+	<Activity_Id>358</Activity_Id>
+	<Activity_Id>359</Activity_Id>
+	<Activity_Id>360</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>361</Activity_Id>
+	<Activity_Id>362</Activity_Id>
+	<Activity_Id>363</Activity_Id>
+	<Activity_Id>364</Activity_Id>
+	<Activity_Id>365</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>366</Activity_Id>
+	<Activity_Id>367</Activity_Id>
+	<Activity_Id>368</Activity_Id>
+	<Activity_Id>369</Activity_Id>
+	<Activity_Id>370</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>371</Activity_Id>
+	<Activity_Id>372</Activity_Id>
+	<Activity_Id>373</Activity_Id>
+	<Activity_Id>374</Activity_Id>
+	<Activity_Id>375</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>376</Activity_Id>
+	<Activity_Id>377</Activity_Id>
+	<Activity_Id>378</Activity_Id>
+	<Activity_Id>379</Activity_Id>
+	<Activity_Id>380</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>381</Activity_Id>
+	<Activity_Id>382</Activity_Id>
+	<Activity_Id>383</Activity_Id>
+	<Activity_Id>384</Activity_Id>
+	<Activity_Id>385</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>386</Activity_Id>
+	<Activity_Id>387</Activity_Id>
+	<Activity_Id>388</Activity_Id>
+	<Activity_Id>389</Activity_Id>
+	<Activity_Id>390</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>391</Activity_Id>
+	<Activity_Id>392</Activity_Id>
+	<Activity_Id>393</Activity_Id>
+	<Activity_Id>394</Activity_Id>
+	<Activity_Id>395</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>396</Activity_Id>
+	<Activity_Id>397</Activity_Id>
+	<Activity_Id>398</Activity_Id>
+	<Activity_Id>399</Activity_Id>
+	<Activity_Id>400</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>401</Activity_Id>
+	<Activity_Id>402</Activity_Id>
+	<Activity_Id>403</Activity_Id>
+	<Activity_Id>404</Activity_Id>
+	<Activity_Id>405</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>406</Activity_Id>
+	<Activity_Id>407</Activity_Id>
+	<Activity_Id>408</Activity_Id>
+	<Activity_Id>409</Activity_Id>
+	<Activity_Id>410</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>411</Activity_Id>
+	<Activity_Id>412</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>411</Activity_Id>
+	<Activity_Id>412</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>413</Activity_Id>
+	<Activity_Id>414</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>413</Activity_Id>
+	<Activity_Id>414</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>415</Activity_Id>
+	<Activity_Id>416</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>415</Activity_Id>
+	<Activity_Id>416</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>417</Activity_Id>
+	<Activity_Id>418</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>417</Activity_Id>
+	<Activity_Id>418</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>419</Activity_Id>
+	<Activity_Id>420</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>419</Activity_Id>
+	<Activity_Id>420</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>421</Activity_Id>
+	<Activity_Id>422</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>421</Activity_Id>
+	<Activity_Id>422</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>423</Activity_Id>
+	<Activity_Id>424</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>423</Activity_Id>
+	<Activity_Id>424</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>425</Activity_Id>
+	<Activity_Id>426</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>425</Activity_Id>
+	<Activity_Id>426</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>427</Activity_Id>
+	<Activity_Id>428</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>427</Activity_Id>
+	<Activity_Id>428</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>429</Activity_Id>
+	<Activity_Id>430</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>429</Activity_Id>
+	<Activity_Id>430</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>431</Activity_Id>
+	<Activity_Id>432</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>431</Activity_Id>
+	<Activity_Id>432</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>433</Activity_Id>
+	<Activity_Id>434</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>433</Activity_Id>
+	<Activity_Id>434</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>435</Activity_Id>
+	<Activity_Id>436</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>435</Activity_Id>
+	<Activity_Id>436</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>437</Activity_Id>
+	<Activity_Id>438</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>437</Activity_Id>
+	<Activity_Id>438</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>439</Activity_Id>
+	<Activity_Id>440</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>439</Activity_Id>
+	<Activity_Id>440</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>441</Activity_Id>
+	<Activity_Id>442</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>441</Activity_Id>
+	<Activity_Id>442</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>443</Activity_Id>
+	<Activity_Id>444</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>443</Activity_Id>
+	<Activity_Id>444</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>445</Activity_Id>
+	<Activity_Id>446</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>445</Activity_Id>
+	<Activity_Id>446</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>447</Activity_Id>
+	<Activity_Id>448</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>447</Activity_Id>
+	<Activity_Id>448</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>449</Activity_Id>
+	<Activity_Id>450</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>449</Activity_Id>
+	<Activity_Id>450</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>451</Activity_Id>
+	<Activity_Id>452</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>451</Activity_Id>
+	<Activity_Id>452</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>453</Activity_Id>
+	<Activity_Id>454</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>453</Activity_Id>
+	<Activity_Id>454</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>455</Activity_Id>
+	<Activity_Id>456</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>455</Activity_Id>
+	<Activity_Id>456</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>457</Activity_Id>
+	<Activity_Id>458</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>457</Activity_Id>
+	<Activity_Id>458</Activity_Id>
+	<MinDays>2</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>509</Activity_Id>
+	<Activity_Id>510</Activity_Id>
+	<Activity_Id>511</Activity_Id>
+	<Activity_Id>512</Activity_Id>
+	<Activity_Id>513</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>514</Activity_Id>
+	<Activity_Id>515</Activity_Id>
+	<Activity_Id>516</Activity_Id>
+	<Activity_Id>517</Activity_Id>
+	<Activity_Id>518</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>519</Activity_Id>
+	<Activity_Id>520</Activity_Id>
+	<Activity_Id>521</Activity_Id>
+	<Activity_Id>522</Activity_Id>
+	<Activity_Id>523</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>524</Activity_Id>
+	<Activity_Id>525</Activity_Id>
+	<Activity_Id>526</Activity_Id>
+	<Activity_Id>527</Activity_Id>
+	<Activity_Id>528</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>529</Activity_Id>
+	<Activity_Id>530</Activity_Id>
+	<Activity_Id>531</Activity_Id>
+	<Activity_Id>532</Activity_Id>
+	<Activity_Id>533</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>534</Activity_Id>
+	<Activity_Id>535</Activity_Id>
+	<Activity_Id>536</Activity_Id>
+	<Activity_Id>537</Activity_Id>
+	<Activity_Id>538</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>539</Activity_Id>
+	<Activity_Id>540</Activity_Id>
+	<Activity_Id>541</Activity_Id>
+	<Activity_Id>542</Activity_Id>
+	<Activity_Id>543</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>544</Activity_Id>
+	<Activity_Id>545</Activity_Id>
+	<Activity_Id>546</Activity_Id>
+	<Activity_Id>547</Activity_Id>
+	<Activity_Id>548</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>549</Activity_Id>
+	<Activity_Id>550</Activity_Id>
+	<Activity_Id>551</Activity_Id>
+	<Activity_Id>552</Activity_Id>
+	<Activity_Id>553</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>554</Activity_Id>
+	<Activity_Id>555</Activity_Id>
+	<Activity_Id>556</Activity_Id>
+	<Activity_Id>557</Activity_Id>
+	<Activity_Id>558</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>559</Activity_Id>
+	<Activity_Id>560</Activity_Id>
+	<Activity_Id>561</Activity_Id>
+	<Activity_Id>562</Activity_Id>
+	<Activity_Id>563</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>564</Activity_Id>
+	<Activity_Id>565</Activity_Id>
+	<Activity_Id>566</Activity_Id>
+	<Activity_Id>567</Activity_Id>
+	<Activity_Id>568</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>569</Activity_Id>
+	<Activity_Id>570</Activity_Id>
+	<Activity_Id>571</Activity_Id>
+	<Activity_Id>572</Activity_Id>
+	<Activity_Id>573</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>574</Activity_Id>
+	<Activity_Id>575</Activity_Id>
+	<Activity_Id>576</Activity_Id>
+	<Activity_Id>577</Activity_Id>
+	<Activity_Id>578</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>579</Activity_Id>
+	<Activity_Id>580</Activity_Id>
+	<Activity_Id>581</Activity_Id>
+	<Activity_Id>582</Activity_Id>
+	<Activity_Id>583</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>584</Activity_Id>
+	<Activity_Id>585</Activity_Id>
+	<Activity_Id>586</Activity_Id>
+	<Activity_Id>587</Activity_Id>
+	<Activity_Id>588</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>589</Activity_Id>
+	<Activity_Id>590</Activity_Id>
+	<Activity_Id>591</Activity_Id>
+	<Activity_Id>592</Activity_Id>
+	<Activity_Id>593</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>594</Activity_Id>
+	<Activity_Id>595</Activity_Id>
+	<Activity_Id>596</Activity_Id>
+	<Activity_Id>597</Activity_Id>
+	<Activity_Id>598</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>599</Activity_Id>
+	<Activity_Id>600</Activity_Id>
+	<Activity_Id>601</Activity_Id>
+	<Activity_Id>602</Activity_Id>
+	<Activity_Id>603</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>604</Activity_Id>
+	<Activity_Id>605</Activity_Id>
+	<Activity_Id>606</Activity_Id>
+	<Activity_Id>607</Activity_Id>
+	<Activity_Id>608</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>609</Activity_Id>
+	<Activity_Id>610</Activity_Id>
+	<Activity_Id>611</Activity_Id>
+	<Activity_Id>612</Activity_Id>
+	<Activity_Id>613</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>614</Activity_Id>
+	<Activity_Id>615</Activity_Id>
+	<Activity_Id>616</Activity_Id>
+	<Activity_Id>617</Activity_Id>
+	<Activity_Id>618</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>619</Activity_Id>
+	<Activity_Id>620</Activity_Id>
+	<Activity_Id>621</Activity_Id>
+	<Activity_Id>622</Activity_Id>
+	<Activity_Id>623</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>624</Activity_Id>
+	<Activity_Id>625</Activity_Id>
+	<Activity_Id>626</Activity_Id>
+	<Activity_Id>627</Activity_Id>
+	<Activity_Id>628</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>629</Activity_Id>
+	<Activity_Id>630</Activity_Id>
+	<Activity_Id>631</Activity_Id>
+	<Activity_Id>632</Activity_Id>
+	<Activity_Id>633</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>634</Activity_Id>
+	<Activity_Id>635</Activity_Id>
+	<Activity_Id>636</Activity_Id>
+	<Activity_Id>637</Activity_Id>
+	<Activity_Id>638</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>639</Activity_Id>
+	<Activity_Id>640</Activity_Id>
+	<Activity_Id>641</Activity_Id>
+	<Activity_Id>642</Activity_Id>
+	<Activity_Id>643</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>644</Activity_Id>
+	<Activity_Id>645</Activity_Id>
+	<Activity_Id>646</Activity_Id>
+	<Activity_Id>647</Activity_Id>
+	<Activity_Id>648</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>649</Activity_Id>
+	<Activity_Id>650</Activity_Id>
+	<Activity_Id>651</Activity_Id>
+	<Activity_Id>652</Activity_Id>
+	<Activity_Id>653</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>654</Activity_Id>
+	<Activity_Id>655</Activity_Id>
+	<Activity_Id>656</Activity_Id>
+	<Activity_Id>657</Activity_Id>
+	<Activity_Id>658</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>659</Activity_Id>
+	<Activity_Id>660</Activity_Id>
+	<Activity_Id>661</Activity_Id>
+	<Activity_Id>662</Activity_Id>
+	<Activity_Id>663</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>664</Activity_Id>
+	<Activity_Id>665</Activity_Id>
+	<Activity_Id>666</Activity_Id>
+	<Activity_Id>667</Activity_Id>
+	<Activity_Id>668</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>669</Activity_Id>
+	<Activity_Id>670</Activity_Id>
+	<Activity_Id>671</Activity_Id>
+	<Activity_Id>672</Activity_Id>
+	<Activity_Id>673</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>674</Activity_Id>
+	<Activity_Id>675</Activity_Id>
+	<Activity_Id>676</Activity_Id>
+	<Activity_Id>677</Activity_Id>
+	<Activity_Id>678</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>679</Activity_Id>
+	<Activity_Id>680</Activity_Id>
+	<Activity_Id>681</Activity_Id>
+	<Activity_Id>682</Activity_Id>
+	<Activity_Id>683</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>684</Activity_Id>
+	<Activity_Id>685</Activity_Id>
+	<Activity_Id>686</Activity_Id>
+	<Activity_Id>687</Activity_Id>
+	<Activity_Id>688</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>701</Activity_Id>
+	<Activity_Id>702</Activity_Id>
+	<Activity_Id>703</Activity_Id>
+	<Activity_Id>704</Activity_Id>
+	<Activity_Id>705</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>706</Activity_Id>
+	<Activity_Id>707</Activity_Id>
+	<Activity_Id>708</Activity_Id>
+	<Activity_Id>709</Activity_Id>
+	<Activity_Id>710</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>711</Activity_Id>
+	<Activity_Id>712</Activity_Id>
+	<Activity_Id>713</Activity_Id>
+	<Activity_Id>714</Activity_Id>
+	<Activity_Id>715</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>716</Activity_Id>
+	<Activity_Id>717</Activity_Id>
+	<Activity_Id>718</Activity_Id>
+	<Activity_Id>719</Activity_Id>
+	<Activity_Id>720</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>721</Activity_Id>
+	<Activity_Id>722</Activity_Id>
+	<Activity_Id>723</Activity_Id>
+	<Activity_Id>724</Activity_Id>
+	<Activity_Id>725</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>726</Activity_Id>
+	<Activity_Id>727</Activity_Id>
+	<Activity_Id>728</Activity_Id>
+	<Activity_Id>729</Activity_Id>
+	<Activity_Id>730</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>731</Activity_Id>
+	<Activity_Id>732</Activity_Id>
+	<Activity_Id>733</Activity_Id>
+	<Activity_Id>734</Activity_Id>
+	<Activity_Id>735</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>736</Activity_Id>
+	<Activity_Id>737</Activity_Id>
+	<Activity_Id>738</Activity_Id>
+	<Activity_Id>739</Activity_Id>
+	<Activity_Id>740</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>751</Activity_Id>
+	<Activity_Id>752</Activity_Id>
+	<Activity_Id>753</Activity_Id>
+	<Activity_Id>754</Activity_Id>
+	<Activity_Id>755</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>756</Activity_Id>
+	<Activity_Id>757</Activity_Id>
+	<Activity_Id>758</Activity_Id>
+	<Activity_Id>759</Activity_Id>
+	<Activity_Id>760</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>761</Activity_Id>
+	<Activity_Id>762</Activity_Id>
+	<Activity_Id>763</Activity_Id>
+	<Activity_Id>764</Activity_Id>
+	<Activity_Id>765</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>5</Number_of_Activities>
+	<Activity_Id>766</Activity_Id>
+	<Activity_Id>767</Activity_Id>
+	<Activity_Id>768</Activity_Id>
+	<Activity_Id>769</Activity_Id>
+	<Activity_Id>770</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+</Time_Constraints_List>
+
+<Space_Constraints_List>
+<ConstraintBasicCompulsorySpace>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintBasicCompulsorySpace>
+</Space_Constraints_List>
+
+</fet>

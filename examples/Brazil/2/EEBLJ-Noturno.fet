@@ -1,0 +1,2321 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<fet version="5.30.3">
+
+<Institution_Name>EEB Leopoldo Jacobsen</Institution_Name>
+
+<Comments>Default comments</Comments>
+
+<Days_List>
+<Number_of_Days>5</Number_of_Days>
+<Day>
+	<Name>Segunda</Name>
+</Day>
+<Day>
+	<Name>Terça</Name>
+</Day>
+<Day>
+	<Name>Quarta</Name>
+</Day>
+<Day>
+	<Name>Quinta</Name>
+</Day>
+<Day>
+	<Name>Sexta</Name>
+</Day>
+</Days_List>
+
+<Hours_List>
+<Number_of_Hours>5</Number_of_Hours>
+<Hour>
+	<Name>19:00</Name>
+</Hour>
+<Hour>
+	<Name>19:40</Name>
+</Hour>
+<Hour>
+	<Name>20:30</Name>
+</Hour>
+<Hour>
+	<Name>21:10</Name>
+</Hour>
+<Hour>
+	<Name>21:50</Name>
+</Hour>
+</Hours_List>
+
+<Subjects_List>
+<Subject>
+	<Name>LPL</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>LEI</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>HIS</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>FIS</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>QUI</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>SOC</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>FIL</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>ART</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>MAT</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>BIL</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>EFI</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>GEO</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>HA</Name>
+	<Comments></Comments>
+</Subject>
+</Subjects_List>
+
+<Activity_Tags_List>
+<Activity_Tag>
+	<Name>HA</Name>
+	<Comments></Comments>
+</Activity_Tag>
+<Activity_Tag>
+	<Name>HP</Name>
+	<Comments></Comments>
+</Activity_Tag>
+</Activity_Tags_List>
+
+<Teachers_List>
+<Teacher>
+	<Name>Alexandra</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Carlos</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Corine</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Guido</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Jean</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Joel</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Keyse</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Naici</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Nislaine</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Nádia</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Rubens</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Simone</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Sueli</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+</Teachers_List>
+
+<Students_List>
+<Year>
+	<Name>1 em 4</Name>
+	<Number_of_Students>0</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>2 em 3</Name>
+	<Number_of_Students>0</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>3 em 3</Name>
+	<Number_of_Students>0</Number_of_Students>
+	<Comments></Comments>
+</Year>
+</Students_List>
+
+<Activities_List>
+<Activity>
+	<Teacher>Simone</Teacher>
+	<Subject>LPL</Subject>
+	<Students>1 em 4</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>1</Id>
+	<Activity_Group_Id>1</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Simone</Teacher>
+	<Subject>LPL</Subject>
+	<Students>1 em 4</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>2</Id>
+	<Activity_Group_Id>1</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Simone</Teacher>
+	<Subject>LPL</Subject>
+	<Students>1 em 4</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>3</Id>
+	<Activity_Group_Id>1</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Alexandra</Teacher>
+	<Subject>LEI</Subject>
+	<Students>2 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>7</Id>
+	<Activity_Group_Id>7</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Alexandra</Teacher>
+	<Subject>LEI</Subject>
+	<Students>2 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>8</Id>
+	<Activity_Group_Id>7</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Alexandra</Teacher>
+	<Subject>LEI</Subject>
+	<Students>3 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>9</Id>
+	<Activity_Group_Id>9</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Alexandra</Teacher>
+	<Subject>LEI</Subject>
+	<Students>3 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>10</Id>
+	<Activity_Group_Id>9</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Carlos</Teacher>
+	<Subject>HIS</Subject>
+	<Students>1 em 4</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>11</Id>
+	<Activity_Group_Id>11</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Carlos</Teacher>
+	<Subject>HIS</Subject>
+	<Students>1 em 4</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>12</Id>
+	<Activity_Group_Id>11</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Sueli</Teacher>
+	<Subject>HIS</Subject>
+	<Students>2 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>13</Id>
+	<Activity_Group_Id>13</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Sueli</Teacher>
+	<Subject>HIS</Subject>
+	<Students>2 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>14</Id>
+	<Activity_Group_Id>13</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Sueli</Teacher>
+	<Subject>HIS</Subject>
+	<Students>3 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>15</Id>
+	<Activity_Group_Id>15</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Sueli</Teacher>
+	<Subject>HIS</Subject>
+	<Students>3 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>16</Id>
+	<Activity_Group_Id>15</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Jean</Teacher>
+	<Subject>FIS</Subject>
+	<Students>1 em 4</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>17</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Jean</Teacher>
+	<Subject>FIS</Subject>
+	<Students>3 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>18</Id>
+	<Activity_Group_Id>18</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Jean</Teacher>
+	<Subject>FIS</Subject>
+	<Students>3 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>19</Id>
+	<Activity_Group_Id>18</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Jean</Teacher>
+	<Subject>FIS</Subject>
+	<Students>2 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>20</Id>
+	<Activity_Group_Id>20</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Jean</Teacher>
+	<Subject>FIS</Subject>
+	<Students>2 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>21</Id>
+	<Activity_Group_Id>20</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Jean</Teacher>
+	<Subject>QUI</Subject>
+	<Students>1 em 4</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>22</Id>
+	<Activity_Group_Id>22</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Jean</Teacher>
+	<Subject>QUI</Subject>
+	<Students>1 em 4</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>23</Id>
+	<Activity_Group_Id>22</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Guido</Teacher>
+	<Subject>QUI</Subject>
+	<Students>2 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>24</Id>
+	<Activity_Group_Id>24</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Guido</Teacher>
+	<Subject>QUI</Subject>
+	<Students>2 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>25</Id>
+	<Activity_Group_Id>24</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Guido</Teacher>
+	<Subject>QUI</Subject>
+	<Students>3 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>26</Id>
+	<Activity_Group_Id>26</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Guido</Teacher>
+	<Subject>QUI</Subject>
+	<Students>3 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>27</Id>
+	<Activity_Group_Id>26</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Corine</Teacher>
+	<Subject>SOC</Subject>
+	<Students>3 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>28</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Joel</Teacher>
+	<Subject>SOC</Subject>
+	<Students>1 em 4</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>29</Id>
+	<Activity_Group_Id>29</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Joel</Teacher>
+	<Subject>SOC</Subject>
+	<Students>1 em 4</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>30</Id>
+	<Activity_Group_Id>29</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Joel</Teacher>
+	<Subject>SOC</Subject>
+	<Students>2 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>31</Id>
+	<Activity_Group_Id>31</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Joel</Teacher>
+	<Subject>SOC</Subject>
+	<Students>2 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>32</Id>
+	<Activity_Group_Id>31</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Joel</Teacher>
+	<Subject>FIL</Subject>
+	<Students>1 em 4</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>33</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Joel</Teacher>
+	<Subject>FIL</Subject>
+	<Students>2 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>34</Id>
+	<Activity_Group_Id>34</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Joel</Teacher>
+	<Subject>FIL</Subject>
+	<Students>2 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>35</Id>
+	<Activity_Group_Id>34</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Joel</Teacher>
+	<Subject>FIL</Subject>
+	<Students>3 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>36</Id>
+	<Activity_Group_Id>36</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Joel</Teacher>
+	<Subject>FIL</Subject>
+	<Students>3 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>37</Id>
+	<Activity_Group_Id>36</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Keyse</Teacher>
+	<Subject>ART</Subject>
+	<Students>3 em 3</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>38</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Naici</Teacher>
+	<Subject>ART</Subject>
+	<Students>1 em 4</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>39</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Naici</Teacher>
+	<Subject>ART</Subject>
+	<Students>2 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>40</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nádia</Teacher>
+	<Subject>MAT</Subject>
+	<Students>1 em 4</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>41</Id>
+	<Activity_Group_Id>41</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nádia</Teacher>
+	<Subject>MAT</Subject>
+	<Students>1 em 4</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>42</Id>
+	<Activity_Group_Id>41</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nádia</Teacher>
+	<Subject>MAT</Subject>
+	<Students>1 em 4</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>43</Id>
+	<Activity_Group_Id>41</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nádia</Teacher>
+	<Subject>MAT</Subject>
+	<Students>2 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>44</Id>
+	<Activity_Group_Id>44</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nádia</Teacher>
+	<Subject>MAT</Subject>
+	<Students>2 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>45</Id>
+	<Activity_Group_Id>44</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nádia</Teacher>
+	<Subject>MAT</Subject>
+	<Students>2 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>46</Id>
+	<Activity_Group_Id>44</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nádia</Teacher>
+	<Subject>MAT</Subject>
+	<Students>3 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>47</Id>
+	<Activity_Group_Id>47</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nádia</Teacher>
+	<Subject>MAT</Subject>
+	<Students>3 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>48</Id>
+	<Activity_Group_Id>47</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nádia</Teacher>
+	<Subject>MAT</Subject>
+	<Students>3 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>49</Id>
+	<Activity_Group_Id>47</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nislaine</Teacher>
+	<Subject>BIL</Subject>
+	<Students>1 em 4</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>50</Id>
+	<Activity_Group_Id>50</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nislaine</Teacher>
+	<Subject>BIL</Subject>
+	<Students>1 em 4</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>51</Id>
+	<Activity_Group_Id>50</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nislaine</Teacher>
+	<Subject>BIL</Subject>
+	<Students>2 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>52</Id>
+	<Activity_Group_Id>52</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nislaine</Teacher>
+	<Subject>BIL</Subject>
+	<Students>2 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>53</Id>
+	<Activity_Group_Id>52</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nislaine</Teacher>
+	<Subject>BIL</Subject>
+	<Students>3 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>54</Id>
+	<Activity_Group_Id>54</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nislaine</Teacher>
+	<Subject>BIL</Subject>
+	<Students>3 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>55</Id>
+	<Activity_Group_Id>54</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rubens</Teacher>
+	<Subject>EFI</Subject>
+	<Students>1 em 4</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>56</Id>
+	<Activity_Group_Id>56</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rubens</Teacher>
+	<Subject>EFI</Subject>
+	<Students>1 em 4</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>57</Id>
+	<Activity_Group_Id>56</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rubens</Teacher>
+	<Subject>EFI</Subject>
+	<Students>2 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>58</Id>
+	<Activity_Group_Id>58</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rubens</Teacher>
+	<Subject>EFI</Subject>
+	<Students>2 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>59</Id>
+	<Activity_Group_Id>58</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rubens</Teacher>
+	<Subject>EFI</Subject>
+	<Students>3 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>60</Id>
+	<Activity_Group_Id>60</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Rubens</Teacher>
+	<Subject>EFI</Subject>
+	<Students>3 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>61</Id>
+	<Activity_Group_Id>60</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Alexandra</Teacher>
+	<Subject>LPL</Subject>
+	<Students>2 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>62</Id>
+	<Activity_Group_Id>62</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Alexandra</Teacher>
+	<Subject>LPL</Subject>
+	<Students>2 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>63</Id>
+	<Activity_Group_Id>62</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Alexandra</Teacher>
+	<Subject>LPL</Subject>
+	<Students>2 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>64</Id>
+	<Activity_Group_Id>62</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Alexandra</Teacher>
+	<Subject>LPL</Subject>
+	<Students>3 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>65</Id>
+	<Activity_Group_Id>65</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Alexandra</Teacher>
+	<Subject>LPL</Subject>
+	<Students>3 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>66</Id>
+	<Activity_Group_Id>65</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Alexandra</Teacher>
+	<Subject>LPL</Subject>
+	<Students>3 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>67</Id>
+	<Activity_Group_Id>65</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Alexandra</Teacher>
+	<Subject>LEI</Subject>
+	<Students>1 em 4</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>68</Id>
+	<Activity_Group_Id>68</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Alexandra</Teacher>
+	<Subject>LEI</Subject>
+	<Students>1 em 4</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>69</Id>
+	<Activity_Group_Id>68</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Sueli</Teacher>
+	<Subject>GEO</Subject>
+	<Students>1 em 4</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>70</Id>
+	<Activity_Group_Id>70</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Sueli</Teacher>
+	<Subject>GEO</Subject>
+	<Students>1 em 4</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>71</Id>
+	<Activity_Group_Id>70</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Sueli</Teacher>
+	<Subject>GEO</Subject>
+	<Students>3 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>72</Id>
+	<Activity_Group_Id>72</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Sueli</Teacher>
+	<Subject>GEO</Subject>
+	<Students>3 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>73</Id>
+	<Activity_Group_Id>72</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Sueli</Teacher>
+	<Subject>GEO</Subject>
+	<Students>2 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>74</Id>
+	<Activity_Group_Id>74</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Sueli</Teacher>
+	<Subject>GEO</Subject>
+	<Students>2 em 3</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>75</Id>
+	<Activity_Group_Id>74</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nádia</Teacher>
+	<Subject>HA</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>76</Id>
+	<Activity_Group_Id>76</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nádia</Teacher>
+	<Subject>HA</Subject>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>77</Id>
+	<Activity_Group_Id>76</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+</Activities_List>
+
+<Buildings_List>
+</Buildings_List>
+
+<Rooms_List>
+</Rooms_List>
+
+<Time_Constraints_List>
+<ConstraintBasicCompulsoryTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintBasicCompulsoryTime>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>1</Activity_Id>
+	<Activity_Id>2</Activity_Id>
+	<Activity_Id>3</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>7</Activity_Id>
+	<Activity_Id>8</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>9</Activity_Id>
+	<Activity_Id>10</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>11</Activity_Id>
+	<Activity_Id>12</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>13</Activity_Id>
+	<Activity_Id>14</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>15</Activity_Id>
+	<Activity_Id>16</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>18</Activity_Id>
+	<Activity_Id>19</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>20</Activity_Id>
+	<Activity_Id>21</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>22</Activity_Id>
+	<Activity_Id>23</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>24</Activity_Id>
+	<Activity_Id>25</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>26</Activity_Id>
+	<Activity_Id>27</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>29</Activity_Id>
+	<Activity_Id>30</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>31</Activity_Id>
+	<Activity_Id>32</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>34</Activity_Id>
+	<Activity_Id>35</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>36</Activity_Id>
+	<Activity_Id>37</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>41</Activity_Id>
+	<Activity_Id>42</Activity_Id>
+	<Activity_Id>43</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>44</Activity_Id>
+	<Activity_Id>45</Activity_Id>
+	<Activity_Id>46</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>47</Activity_Id>
+	<Activity_Id>48</Activity_Id>
+	<Activity_Id>49</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>50</Activity_Id>
+	<Activity_Id>51</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>52</Activity_Id>
+	<Activity_Id>53</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>54</Activity_Id>
+	<Activity_Id>55</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>56</Activity_Id>
+	<Activity_Id>57</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>58</Activity_Id>
+	<Activity_Id>59</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>60</Activity_Id>
+	<Activity_Id>61</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>62</Activity_Id>
+	<Activity_Id>63</Activity_Id>
+	<Activity_Id>64</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>65</Activity_Id>
+	<Activity_Id>66</Activity_Id>
+	<Activity_Id>67</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>68</Activity_Id>
+	<Activity_Id>69</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>70</Activity_Id>
+	<Activity_Id>71</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>72</Activity_Id>
+	<Activity_Id>73</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>false</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>74</Activity_Id>
+	<Activity_Id>75</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Sueli</Teacher>
+	<Number_of_Not_Available_Times>13</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Rubens</Teacher>
+	<Number_of_Not_Available_Times>19</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Nislaine</Teacher>
+	<Number_of_Not_Available_Times>15</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Nádia</Teacher>
+	<Number_of_Not_Available_Times>14</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Alexandra</Teacher>
+	<Number_of_Not_Available_Times>12</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Jean</Teacher>
+	<Number_of_Not_Available_Times>15</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Guido</Teacher>
+	<Number_of_Not_Available_Times>21</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Corine</Teacher>
+	<Number_of_Not_Available_Times>24</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Simone</Teacher>
+	<Number_of_Not_Available_Times>15</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Joel</Teacher>
+	<Number_of_Not_Available_Times>15</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Carlos</Teacher>
+	<Number_of_Not_Available_Times>23</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>38</Activity_Id>
+	<Preferred_Day>Sexta</Preferred_Day>
+	<Preferred_Hour>21:10</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Naici</Teacher>
+	<Number_of_Not_Available_Times>22</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Segunda</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Terça</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quarta</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>19:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>19:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>20:30</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Quinta</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>21:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Sexta</Day>
+		<Hour>21:50</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>76</Activity_Id>
+	<Activity_Id>77</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>76</Activity_Id>
+	<Preferred_Day>Quarta</Preferred_Day>
+	<Preferred_Hour>21:10</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>77</Activity_Id>
+	<Preferred_Day>Quarta</Preferred_Day>
+	<Preferred_Hour>21:50</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+</Time_Constraints_List>
+
+<Space_Constraints_List>
+<ConstraintBasicCompulsorySpace>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintBasicCompulsorySpace>
+</Space_Constraints_List>
+
+</fet>

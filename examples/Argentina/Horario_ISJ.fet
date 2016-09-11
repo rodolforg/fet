@@ -1,0 +1,3168 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<fet version="5.30.3">
+
+<Institution_Name>Instituto San José Ñ12</Institution_Name>
+
+<Comments>Nivel Secundario</Comments>
+
+<Days_List>
+<Number_of_Days>5</Number_of_Days>
+<Day>
+	<Name>Lunes</Name>
+</Day>
+<Day>
+	<Name>Martes</Name>
+</Day>
+<Day>
+	<Name>Miércoles</Name>
+</Day>
+<Day>
+	<Name>Jueves</Name>
+</Day>
+<Day>
+	<Name>Viernes</Name>
+</Day>
+</Days_List>
+
+<Hours_List>
+<Number_of_Hours>7</Number_of_Hours>
+<Hour>
+	<Name>1º 07:30-08:10</Name>
+</Hour>
+<Hour>
+	<Name>2º 08:10-08:50</Name>
+</Hour>
+<Hour>
+	<Name>3º 09:00-09:40</Name>
+</Hour>
+<Hour>
+	<Name>4º 09:40-10:20</Name>
+</Hour>
+<Hour>
+	<Name>5º 10:30-11:10</Name>
+</Hour>
+<Hour>
+	<Name>6º 11:10-11:50</Name>
+</Hour>
+<Hour>
+	<Name>7º 11:55-12:35</Name>
+</Hour>
+</Hours_List>
+
+<Subjects_List>
+<Subject>
+	<Name>Lengua</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Lengua Extranjera</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Historia</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Geografía</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Biología</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Cs.Físico-Química</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Form.Ética y Ciud.</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Matemática</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Lenguaje Plástico</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Lenguaje Musical</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Tecnología</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Computación</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Catequesis</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Orientación y Tutoría</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Complemento de Tecnología</Name>
+	<Comments></Comments>
+</Subject>
+</Subjects_List>
+
+<Activity_Tags_List>
+<Activity_Tag>
+	<Name>Clase Normal</Name>
+	<Comments></Comments>
+</Activity_Tag>
+</Activity_Tags_List>
+
+<Teachers_List>
+<Teacher>
+	<Name>Alicia Boes</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Ana María Lezcano</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Ariel Céspedes</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Bruno Villaba</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Claudio Salinas</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Dario Alvarenga</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Graciela Ayala</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Griselda Gómez</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Jaqueline Gavilán</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>José Bombares</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Juan Carlos Insaurralde</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Liliana Sánchez</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Miriam Aquino</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Nilda Bóveda</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Norma Moreno</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Romina Medina</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Vanesa Sanabria</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+</Teachers_List>
+
+<Students_List>
+<Year>
+	<Name>1º A</Name>
+	<Number_of_Students>35</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>1º B</Name>
+	<Number_of_Students>35</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>2º A</Name>
+	<Number_of_Students>35</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>2º B</Name>
+	<Number_of_Students>35</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>3º A</Name>
+	<Number_of_Students>35</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>3º B</Name>
+	<Number_of_Students>35</Number_of_Students>
+	<Comments></Comments>
+</Year>
+</Students_List>
+
+<Activities_List>
+<Activity>
+	<Teacher>Alicia Boes</Teacher>
+	<Subject>Orientación y Tutoría</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>1</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Alicia Boes</Teacher>
+	<Subject>Orientación y Tutoría</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>2</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Alicia Boes</Teacher>
+	<Subject>Orientación y Tutoría</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>3</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Alicia Boes</Teacher>
+	<Subject>Orientación y Tutoría</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>4</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Alicia Boes</Teacher>
+	<Subject>Biología</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>5</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Alicia Boes</Teacher>
+	<Subject>Biología</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>6</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Alicia Boes</Teacher>
+	<Subject>Biología</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>7</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Miriam Aquino</Teacher>
+	<Subject>Geografía</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>10</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Miriam Aquino</Teacher>
+	<Subject>Geografía</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>11</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Miriam Aquino</Teacher>
+	<Subject>Geografía</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>12</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nilda Bóveda</Teacher>
+	<Subject>Catequesis</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>13</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nilda Bóveda</Teacher>
+	<Subject>Catequesis</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>14</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nilda Bóveda</Teacher>
+	<Subject>Catequesis</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>15</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nilda Bóveda</Teacher>
+	<Subject>Catequesis</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>16</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nilda Bóveda</Teacher>
+	<Subject>Catequesis</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>17</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Nilda Bóveda</Teacher>
+	<Subject>Catequesis</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>18</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Dario Alvarenga</Teacher>
+	<Subject>Tecnología</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>19</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Dario Alvarenga</Teacher>
+	<Subject>Tecnología</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>20</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Dario Alvarenga</Teacher>
+	<Subject>Tecnología</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>21</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Dario Alvarenga</Teacher>
+	<Subject>Tecnología</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>22</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Norma Moreno</Teacher>
+	<Subject>Biología</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>23</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Norma Moreno</Teacher>
+	<Subject>Biología</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>24</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Jaqueline Gavilán</Teacher>
+	<Subject>Biología</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>25</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Vanesa Sanabria</Teacher>
+	<Subject>Cs.Físico-Química</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>26</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Vanesa Sanabria</Teacher>
+	<Subject>Cs.Físico-Química</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>27</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Vanesa Sanabria</Teacher>
+	<Subject>Cs.Físico-Química</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>28</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Vanesa Sanabria</Teacher>
+	<Subject>Cs.Físico-Química</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>29</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Vanesa Sanabria</Teacher>
+	<Subject>Cs.Físico-Química</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>30</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Vanesa Sanabria</Teacher>
+	<Subject>Cs.Físico-Química</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>31</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Claudio Salinas</Teacher>
+	<Subject>Tecnología</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>32</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Claudio Salinas</Teacher>
+	<Subject>Tecnología</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>33</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ariel Céspedes</Teacher>
+	<Subject>Historia</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>34</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ariel Céspedes</Teacher>
+	<Subject>Historia</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>35</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ariel Céspedes</Teacher>
+	<Subject>Historia</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>36</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ariel Céspedes</Teacher>
+	<Subject>Historia</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>37</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ariel Céspedes</Teacher>
+	<Subject>Historia</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>38</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ariel Céspedes</Teacher>
+	<Subject>Historia</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>39</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ariel Céspedes</Teacher>
+	<Subject>Form.Ética y Ciud.</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>40</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ariel Céspedes</Teacher>
+	<Subject>Form.Ética y Ciud.</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>41</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ana María Lezcano</Teacher>
+	<Subject>Lenguaje Plástico</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>42</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ana María Lezcano</Teacher>
+	<Subject>Lenguaje Plástico</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>43</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ana María Lezcano</Teacher>
+	<Subject>Lenguaje Plástico</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>44</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ana María Lezcano</Teacher>
+	<Subject>Lenguaje Plástico</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>45</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ana María Lezcano</Teacher>
+	<Subject>Lenguaje Plástico</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>46</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ana María Lezcano</Teacher>
+	<Subject>Lenguaje Plástico</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>47</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ana María Lezcano</Teacher>
+	<Subject>Lenguaje Musical</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>48</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ana María Lezcano</Teacher>
+	<Subject>Lenguaje Musical</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>49</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ana María Lezcano</Teacher>
+	<Subject>Lenguaje Musical</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>50</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ana María Lezcano</Teacher>
+	<Subject>Lenguaje Musical</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>51</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ana María Lezcano</Teacher>
+	<Subject>Lenguaje Musical</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>52</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ana María Lezcano</Teacher>
+	<Subject>Lenguaje Musical</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>53</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ana María Lezcano</Teacher>
+	<Subject>Form.Ética y Ciud.</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>54</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ana María Lezcano</Teacher>
+	<Subject>Form.Ética y Ciud.</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>55</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ana María Lezcano</Teacher>
+	<Subject>Form.Ética y Ciud.</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>56</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ana María Lezcano</Teacher>
+	<Subject>Form.Ética y Ciud.</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>57</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Claudio Salinas</Teacher>
+	<Subject>Computación</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>74</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Claudio Salinas</Teacher>
+	<Subject>Computación</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>75</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Griselda Gómez</Teacher>
+	<Subject>Lengua Extranjera</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>78</Id>
+	<Activity_Group_Id>78</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Griselda Gómez</Teacher>
+	<Subject>Lengua Extranjera</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>79</Id>
+	<Activity_Group_Id>78</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Griselda Gómez</Teacher>
+	<Subject>Lengua Extranjera</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>80</Id>
+	<Activity_Group_Id>80</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Griselda Gómez</Teacher>
+	<Subject>Lengua Extranjera</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>81</Id>
+	<Activity_Group_Id>80</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Juan Carlos Insaurralde</Teacher>
+	<Subject>Matemática</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>82</Id>
+	<Activity_Group_Id>82</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Juan Carlos Insaurralde</Teacher>
+	<Subject>Matemática</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>83</Id>
+	<Activity_Group_Id>82</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Juan Carlos Insaurralde</Teacher>
+	<Subject>Matemática</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>84</Id>
+	<Activity_Group_Id>82</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Juan Carlos Insaurralde</Teacher>
+	<Subject>Matemática</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>85</Id>
+	<Activity_Group_Id>85</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Juan Carlos Insaurralde</Teacher>
+	<Subject>Matemática</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>86</Id>
+	<Activity_Group_Id>85</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Juan Carlos Insaurralde</Teacher>
+	<Subject>Matemática</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>87</Id>
+	<Activity_Group_Id>85</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>José Bombares</Teacher>
+	<Subject>Matemática</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>88</Id>
+	<Activity_Group_Id>88</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>José Bombares</Teacher>
+	<Subject>Matemática</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>89</Id>
+	<Activity_Group_Id>88</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>José Bombares</Teacher>
+	<Subject>Matemática</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>90</Id>
+	<Activity_Group_Id>88</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>José Bombares</Teacher>
+	<Subject>Matemática</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>91</Id>
+	<Activity_Group_Id>91</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>José Bombares</Teacher>
+	<Subject>Matemática</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>92</Id>
+	<Activity_Group_Id>91</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>José Bombares</Teacher>
+	<Subject>Matemática</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>93</Id>
+	<Activity_Group_Id>91</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>José Bombares</Teacher>
+	<Subject>Matemática</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>94</Id>
+	<Activity_Group_Id>94</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>José Bombares</Teacher>
+	<Subject>Matemática</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>95</Id>
+	<Activity_Group_Id>94</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>José Bombares</Teacher>
+	<Subject>Matemática</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>96</Id>
+	<Activity_Group_Id>94</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>José Bombares</Teacher>
+	<Subject>Matemática</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>97</Id>
+	<Activity_Group_Id>97</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>José Bombares</Teacher>
+	<Subject>Matemática</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>98</Id>
+	<Activity_Group_Id>97</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>José Bombares</Teacher>
+	<Subject>Matemática</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>99</Id>
+	<Activity_Group_Id>97</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Graciela Ayala</Teacher>
+	<Subject>Lengua Extranjera</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>100</Id>
+	<Activity_Group_Id>100</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Graciela Ayala</Teacher>
+	<Subject>Lengua Extranjera</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>101</Id>
+	<Activity_Group_Id>100</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Graciela Ayala</Teacher>
+	<Subject>Lengua Extranjera</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>102</Id>
+	<Activity_Group_Id>102</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Graciela Ayala</Teacher>
+	<Subject>Lengua Extranjera</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>103</Id>
+	<Activity_Group_Id>102</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Graciela Ayala</Teacher>
+	<Subject>Lengua Extranjera</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>104</Id>
+	<Activity_Group_Id>104</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Graciela Ayala</Teacher>
+	<Subject>Lengua Extranjera</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>105</Id>
+	<Activity_Group_Id>104</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Graciela Ayala</Teacher>
+	<Subject>Lengua Extranjera</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>106</Id>
+	<Activity_Group_Id>106</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Graciela Ayala</Teacher>
+	<Subject>Lengua Extranjera</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>107</Id>
+	<Activity_Group_Id>106</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Liliana Sánchez</Teacher>
+	<Subject>Lengua</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>108</Id>
+	<Activity_Group_Id>108</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Liliana Sánchez</Teacher>
+	<Subject>Lengua</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>109</Id>
+	<Activity_Group_Id>108</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Liliana Sánchez</Teacher>
+	<Subject>Lengua</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>110</Id>
+	<Activity_Group_Id>108</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Liliana Sánchez</Teacher>
+	<Subject>Lengua</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>111</Id>
+	<Activity_Group_Id>111</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Liliana Sánchez</Teacher>
+	<Subject>Lengua</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>112</Id>
+	<Activity_Group_Id>111</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Liliana Sánchez</Teacher>
+	<Subject>Lengua</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>113</Id>
+	<Activity_Group_Id>111</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Liliana Sánchez</Teacher>
+	<Subject>Lengua</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>114</Id>
+	<Activity_Group_Id>114</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Liliana Sánchez</Teacher>
+	<Subject>Lengua</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>115</Id>
+	<Activity_Group_Id>114</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Liliana Sánchez</Teacher>
+	<Subject>Lengua</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>116</Id>
+	<Activity_Group_Id>114</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Liliana Sánchez</Teacher>
+	<Subject>Lengua</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>117</Id>
+	<Activity_Group_Id>117</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Liliana Sánchez</Teacher>
+	<Subject>Lengua</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>118</Id>
+	<Activity_Group_Id>117</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Liliana Sánchez</Teacher>
+	<Subject>Lengua</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>119</Id>
+	<Activity_Group_Id>117</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Liliana Sánchez</Teacher>
+	<Subject>Lengua</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>120</Id>
+	<Activity_Group_Id>120</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Liliana Sánchez</Teacher>
+	<Subject>Lengua</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>121</Id>
+	<Activity_Group_Id>120</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Liliana Sánchez</Teacher>
+	<Subject>Lengua</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>122</Id>
+	<Activity_Group_Id>120</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Claudio Salinas</Teacher>
+	<Subject>Complemento de Tecnología</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>126</Id>
+	<Activity_Group_Id>126</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Claudio Salinas</Teacher>
+	<Subject>Complemento de Tecnología</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>127</Id>
+	<Activity_Group_Id>126</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Claudio Salinas</Teacher>
+	<Subject>Complemento de Tecnología</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>128</Id>
+	<Activity_Group_Id>128</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Claudio Salinas</Teacher>
+	<Subject>Complemento de Tecnología</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>3</Total_Duration>
+	<Id>129</Id>
+	<Activity_Group_Id>128</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Romina Medina</Teacher>
+	<Subject>Geografía</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>133</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Romina Medina</Teacher>
+	<Subject>Geografía</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>134</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Romina Medina</Teacher>
+	<Subject>Geografía</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>135</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Claudio Salinas</Teacher>
+	<Subject>Computación</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>142</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Claudio Salinas</Teacher>
+	<Subject>Computación</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>2º B</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>143</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bruno Villaba</Teacher>
+	<Subject>Lengua</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>144</Id>
+	<Activity_Group_Id>144</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bruno Villaba</Teacher>
+	<Subject>Lengua</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º A</Students>
+	<Duration>2</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>145</Id>
+	<Activity_Group_Id>144</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Bruno Villaba</Teacher>
+	<Subject>Lengua</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>1º A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>5</Total_Duration>
+	<Id>146</Id>
+	<Activity_Group_Id>144</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Ana María Lezcano</Teacher>
+	<Subject>Orientación y Tutoría</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º A</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>147</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Alicia Boes</Teacher>
+	<Subject>Orientación y Tutoría</Subject>
+	<Activity_Tag>Clase Normal</Activity_Tag>
+	<Students>3º B</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>148</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+</Activities_List>
+
+<Buildings_List>
+<Building>
+	<Name>Instituto San José Ñ12</Name>
+	<Comments></Comments>
+</Building>
+</Buildings_List>
+
+<Rooms_List>
+<Room>
+	<Name>1º A</Name>
+	<Building>Instituto San José Ñ12</Building>
+	<Capacity>35</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>1º B</Name>
+	<Building>Instituto San José Ñ12</Building>
+	<Capacity>35</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>2º A</Name>
+	<Building>Instituto San José Ñ12</Building>
+	<Capacity>35</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>2º B</Name>
+	<Building>Instituto San José Ñ12</Building>
+	<Capacity>35</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>3º A</Name>
+	<Building>Instituto San José Ñ12</Building>
+	<Capacity>35</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>3º B</Name>
+	<Building>Instituto San José Ñ12</Building>
+	<Capacity>35</Capacity>
+	<Comments></Comments>
+</Room>
+</Rooms_List>
+
+<Time_Constraints_List>
+<ConstraintBasicCompulsoryTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintBasicCompulsoryTime>
+<ConstraintTeacherMaxDaysPerWeek>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher_Name>Miriam Aquino</Teacher_Name>
+	<Max_Days_Per_Week>3</Max_Days_Per_Week>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherMaxDaysPerWeek>
+<ConstraintTeacherMaxDaysPerWeek>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher_Name>Griselda Gómez</Teacher_Name>
+	<Max_Days_Per_Week>2</Max_Days_Per_Week>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherMaxDaysPerWeek>
+<ConstraintTeacherMaxDaysPerWeek>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher_Name>Nilda Bóveda</Teacher_Name>
+	<Max_Days_Per_Week>3</Max_Days_Per_Week>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherMaxDaysPerWeek>
+<ConstraintTeacherMaxDaysPerWeek>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher_Name>Norma Moreno</Teacher_Name>
+	<Max_Days_Per_Week>2</Max_Days_Per_Week>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherMaxDaysPerWeek>
+<ConstraintTeacherMaxDaysPerWeek>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher_Name>Romina Medina</Teacher_Name>
+	<Max_Days_Per_Week>2</Max_Days_Per_Week>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherMaxDaysPerWeek>
+<ConstraintTeacherMaxDaysPerWeek>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher_Name>Vanesa Sanabria</Teacher_Name>
+	<Max_Days_Per_Week>3</Max_Days_Per_Week>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherMaxDaysPerWeek>
+<ConstraintTeacherMaxDaysPerWeek>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher_Name>Jaqueline Gavilán</Teacher_Name>
+	<Max_Days_Per_Week>1</Max_Days_Per_Week>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherMaxDaysPerWeek>
+<ConstraintTeacherMaxDaysPerWeek>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher_Name>Graciela Ayala</Teacher_Name>
+	<Max_Days_Per_Week>3</Max_Days_Per_Week>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherMaxDaysPerWeek>
+<ConstraintTeacherMaxDaysPerWeek>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher_Name>Bruno Villaba</Teacher_Name>
+	<Max_Days_Per_Week>2</Max_Days_Per_Week>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherMaxDaysPerWeek>
+<ConstraintTeacherMaxDaysPerWeek>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher_Name>Juan Carlos Insaurralde</Teacher_Name>
+	<Max_Days_Per_Week>3</Max_Days_Per_Week>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherMaxDaysPerWeek>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Griselda Gómez</Teacher>
+	<Number_of_Not_Available_Times>21</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Martes</Day>
+		<Hour>1º 07:30-08:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Martes</Day>
+		<Hour>2º 08:10-08:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Martes</Day>
+		<Hour>3º 09:00-09:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Martes</Day>
+		<Hour>4º 09:40-10:20</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Martes</Day>
+		<Hour>5º 10:30-11:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Martes</Day>
+		<Hour>6º 11:10-11:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Martes</Day>
+		<Hour>7º 11:55-12:35</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Jueves</Day>
+		<Hour>1º 07:30-08:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Jueves</Day>
+		<Hour>2º 08:10-08:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Jueves</Day>
+		<Hour>3º 09:00-09:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Jueves</Day>
+		<Hour>4º 09:40-10:20</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Jueves</Day>
+		<Hour>5º 10:30-11:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Jueves</Day>
+		<Hour>6º 11:10-11:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Jueves</Day>
+		<Hour>7º 11:55-12:35</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Viernes</Day>
+		<Hour>1º 07:30-08:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Viernes</Day>
+		<Hour>2º 08:10-08:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Viernes</Day>
+		<Hour>3º 09:00-09:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Viernes</Day>
+		<Hour>4º 09:40-10:20</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Viernes</Day>
+		<Hour>5º 10:30-11:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Viernes</Day>
+		<Hour>6º 11:10-11:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Viernes</Day>
+		<Hour>7º 11:55-12:35</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>78</Activity_Id>
+	<Activity_Id>79</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>80</Activity_Id>
+	<Activity_Id>81</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintTeacherMaxGapsPerDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher_Name>Griselda Gómez</Teacher_Name>
+	<Max_Gaps>1</Max_Gaps>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherMaxGapsPerDay>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>82</Activity_Id>
+	<Activity_Id>83</Activity_Id>
+	<Activity_Id>84</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>85</Activity_Id>
+	<Activity_Id>86</Activity_Id>
+	<Activity_Id>87</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>88</Activity_Id>
+	<Activity_Id>89</Activity_Id>
+	<Activity_Id>90</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>91</Activity_Id>
+	<Activity_Id>92</Activity_Id>
+	<Activity_Id>93</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>94</Activity_Id>
+	<Activity_Id>95</Activity_Id>
+	<Activity_Id>96</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>97</Activity_Id>
+	<Activity_Id>98</Activity_Id>
+	<Activity_Id>99</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>100</Activity_Id>
+	<Activity_Id>101</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>102</Activity_Id>
+	<Activity_Id>103</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>104</Activity_Id>
+	<Activity_Id>105</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>106</Activity_Id>
+	<Activity_Id>107</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>108</Activity_Id>
+	<Activity_Id>109</Activity_Id>
+	<Activity_Id>110</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>111</Activity_Id>
+	<Activity_Id>112</Activity_Id>
+	<Activity_Id>113</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>114</Activity_Id>
+	<Activity_Id>115</Activity_Id>
+	<Activity_Id>116</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>117</Activity_Id>
+	<Activity_Id>118</Activity_Id>
+	<Activity_Id>119</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>3</Number_of_Activities>
+	<Activity_Id>120</Activity_Id>
+	<Activity_Id>121</Activity_Id>
+	<Activity_Id>122</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>126</Activity_Id>
+	<Activity_Id>127</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>128</Activity_Id>
+	<Activity_Id>129</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>Graciela Ayala</Teacher>
+	<Number_of_Not_Available_Times>14</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Martes</Day>
+		<Hour>1º 07:30-08:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Martes</Day>
+		<Hour>2º 08:10-08:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Martes</Day>
+		<Hour>3º 09:00-09:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Martes</Day>
+		<Hour>4º 09:40-10:20</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Martes</Day>
+		<Hour>5º 10:30-11:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Martes</Day>
+		<Hour>6º 11:10-11:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Martes</Day>
+		<Hour>7º 11:55-12:35</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Jueves</Day>
+		<Hour>1º 07:30-08:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Jueves</Day>
+		<Hour>2º 08:10-08:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Jueves</Day>
+		<Hour>3º 09:00-09:40</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Jueves</Day>
+		<Hour>4º 09:40-10:20</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Jueves</Day>
+		<Hour>5º 10:30-11:10</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Jueves</Day>
+		<Hour>6º 11:10-11:50</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Jueves</Day>
+		<Hour>7º 11:55-12:35</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+<ConstraintTeacherMaxGapsPerDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher_Name>Graciela Ayala</Teacher_Name>
+	<Max_Gaps>0</Max_Gaps>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherMaxGapsPerDay>
+</Time_Constraints_List>
+
+<Space_Constraints_List>
+<ConstraintBasicCompulsorySpace>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintBasicCompulsorySpace>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>78</Activity_Id>
+	<Room>1º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>79</Activity_Id>
+	<Room>1º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>34</Activity_Id>
+	<Room>1º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>10</Activity_Id>
+	<Room>1º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>23</Activity_Id>
+	<Room>1º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>26</Activity_Id>
+	<Room>1º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>54</Activity_Id>
+	<Room>1º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>88</Activity_Id>
+	<Room>1º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>89</Activity_Id>
+	<Room>1º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>90</Activity_Id>
+	<Room>1º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>42</Activity_Id>
+	<Room>1º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>48</Activity_Id>
+	<Room>1º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>19</Activity_Id>
+	<Room>1º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>74</Activity_Id>
+	<Room>1º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>13</Activity_Id>
+	<Room>1º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>1</Activity_Id>
+	<Room>1º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>108</Activity_Id>
+	<Room>1º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>109</Activity_Id>
+	<Room>1º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>110</Activity_Id>
+	<Room>1º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>80</Activity_Id>
+	<Room>1º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>81</Activity_Id>
+	<Room>1º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>35</Activity_Id>
+	<Room>1º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>133</Activity_Id>
+	<Room>1º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>24</Activity_Id>
+	<Room>1º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>27</Activity_Id>
+	<Room>1º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>55</Activity_Id>
+	<Room>1º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>43</Activity_Id>
+	<Room>1º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>49</Activity_Id>
+	<Room>1º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>20</Activity_Id>
+	<Room>1º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>75</Activity_Id>
+	<Room>1º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>14</Activity_Id>
+	<Room>1º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>2</Activity_Id>
+	<Room>1º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>111</Activity_Id>
+	<Room>2º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>112</Activity_Id>
+	<Room>2º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>113</Activity_Id>
+	<Room>2º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>100</Activity_Id>
+	<Room>2º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>101</Activity_Id>
+	<Room>2º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>36</Activity_Id>
+	<Room>2º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>134</Activity_Id>
+	<Room>2º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>5</Activity_Id>
+	<Room>2º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>28</Activity_Id>
+	<Room>2º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>56</Activity_Id>
+	<Room>2º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>91</Activity_Id>
+	<Room>2º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>44</Activity_Id>
+	<Room>2º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>50</Activity_Id>
+	<Room>2º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>21</Activity_Id>
+	<Room>2º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>142</Activity_Id>
+	<Room>2º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>15</Activity_Id>
+	<Room>2º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>3</Activity_Id>
+	<Room>2º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>114</Activity_Id>
+	<Room>2º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>37</Activity_Id>
+	<Room>2º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>135</Activity_Id>
+	<Room>2º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>6</Activity_Id>
+	<Room>2º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>29</Activity_Id>
+	<Room>2º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>92</Activity_Id>
+	<Room>2º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>93</Activity_Id>
+	<Room>2º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>57</Activity_Id>
+	<Room>2º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>94</Activity_Id>
+	<Room>2º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>95</Activity_Id>
+	<Room>2º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>96</Activity_Id>
+	<Room>2º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>115</Activity_Id>
+	<Room>2º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>116</Activity_Id>
+	<Room>2º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>45</Activity_Id>
+	<Room>2º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>51</Activity_Id>
+	<Room>2º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>22</Activity_Id>
+	<Room>2º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>143</Activity_Id>
+	<Room>2º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>16</Activity_Id>
+	<Room>2º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>4</Activity_Id>
+	<Room>2º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>117</Activity_Id>
+	<Room>3º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>118</Activity_Id>
+	<Room>3º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>119</Activity_Id>
+	<Room>3º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>104</Activity_Id>
+	<Room>3º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>105</Activity_Id>
+	<Room>3º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>38</Activity_Id>
+	<Room>3º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>11</Activity_Id>
+	<Room>3º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>25</Activity_Id>
+	<Room>3º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>30</Activity_Id>
+	<Room>3º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>40</Activity_Id>
+	<Room>3º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>97</Activity_Id>
+	<Room>3º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>98</Activity_Id>
+	<Room>3º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>99</Activity_Id>
+	<Room>3º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>46</Activity_Id>
+	<Room>3º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>52</Activity_Id>
+	<Room>3º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>32</Activity_Id>
+	<Room>3º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>126</Activity_Id>
+	<Room>3º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>127</Activity_Id>
+	<Room>3º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>17</Activity_Id>
+	<Room>3º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>120</Activity_Id>
+	<Room>3º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>121</Activity_Id>
+	<Room>3º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>122</Activity_Id>
+	<Room>3º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>106</Activity_Id>
+	<Room>3º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>107</Activity_Id>
+	<Room>3º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>39</Activity_Id>
+	<Room>3º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>12</Activity_Id>
+	<Room>3º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>7</Activity_Id>
+	<Room>3º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>31</Activity_Id>
+	<Room>3º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>41</Activity_Id>
+	<Room>3º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>47</Activity_Id>
+	<Room>3º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>53</Activity_Id>
+	<Room>3º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>33</Activity_Id>
+	<Room>3º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>128</Activity_Id>
+	<Room>3º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>129</Activity_Id>
+	<Room>3º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>18</Activity_Id>
+	<Room>3º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>144</Activity_Id>
+	<Room>1º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>145</Activity_Id>
+	<Room>1º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>146</Activity_Id>
+	<Room>1º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>82</Activity_Id>
+	<Room>1º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>83</Activity_Id>
+	<Room>1º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>84</Activity_Id>
+	<Room>1º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>85</Activity_Id>
+	<Room>3º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>86</Activity_Id>
+	<Room>3º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>87</Activity_Id>
+	<Room>3º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>102</Activity_Id>
+	<Room>2º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>103</Activity_Id>
+	<Room>2º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>147</Activity_Id>
+	<Room>3º A</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>148</Activity_Id>
+	<Room>3º B</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintRoomNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Room>1º A</Room>
+	<Number_of_Not_Available_Times>1</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Viernes</Day>
+		<Hour>7º 11:55-12:35</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintRoomNotAvailableTimes>
+<ConstraintRoomNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Room>1º B</Room>
+	<Number_of_Not_Available_Times>1</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Martes</Day>
+		<Hour>7º 11:55-12:35</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintRoomNotAvailableTimes>
+<ConstraintRoomNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Room>2º A</Room>
+	<Number_of_Not_Available_Times>1</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Viernes</Day>
+		<Hour>7º 11:55-12:35</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintRoomNotAvailableTimes>
+<ConstraintRoomNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Room>2º B</Room>
+	<Number_of_Not_Available_Times>1</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Martes</Day>
+		<Hour>7º 11:55-12:35</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintRoomNotAvailableTimes>
+<ConstraintRoomNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Room>3º A</Room>
+	<Number_of_Not_Available_Times>1</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Lunes</Day>
+		<Hour>7º 11:55-12:35</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintRoomNotAvailableTimes>
+<ConstraintRoomNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Room>3º B</Room>
+	<Number_of_Not_Available_Times>1</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Martes</Day>
+		<Hour>7º 11:55-12:35</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintRoomNotAvailableTimes>
+</Space_Constraints_List>
+
+</fet>

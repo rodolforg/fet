@@ -1,0 +1,2486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FetMainForm_template</class>
+ <widget class="QMainWindow" name="FetMainForm_template">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>560</width>
+    <height>324</height>
+   </rect>
+  </property>
+  <widget class="QWidget" name="mainwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <spacer name="verticalSpacer_12">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>24</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="0">
+     <spacer name="horizontalSpacer_11">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>105</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="1">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="usesScrollButtons">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="fileTab">
+       <attribute name="title">
+        <string>File</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_11">
+        <item row="0" column="1">
+         <spacer name="verticalSpacer_10">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>0</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="0">
+         <spacer name="horizontalSpacer_9">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>0</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="1">
+         <widget class="QFrame" name="frameFile">
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_16">
+           <property name="leftMargin">
+            <number>16</number>
+           </property>
+           <property name="topMargin">
+            <number>16</number>
+           </property>
+           <property name="rightMargin">
+            <number>16</number>
+           </property>
+           <property name="bottomMargin">
+            <number>16</number>
+           </property>
+           <item row="0" column="0">
+            <layout class="QGridLayout" name="gridLayout_10">
+             <item row="2" column="0" colspan="2">
+              <widget class="Line" name="line_7">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0" colspan="2">
+              <widget class="Line" name="line_8">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="1">
+              <widget class="QPushButton" name="shortcutSaveAsPushButton">
+               <property name="text">
+                <string comment="It is an abbreviation for Save as. It is on the shortcuts tab buttons, so keep translation short">As</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0" colspan="2">
+              <widget class="QPushButton" name="shortcutOpenRecentPushButton">
+               <property name="text">
+                <string comment="It is an abbreaviation for Open recent. It is text on a push button, to show the list of recently used files and open one of them. Please keep translation short.">Recent</string>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="0">
+              <widget class="QPushButton" name="shortcutSavePushButton">
+               <property name="text">
+                <string comment="It is on the shortcuts tab buttons, so keep translation short">Save</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QPushButton" name="shortcutOpenPushButton">
+               <property name="text">
+                <string comment="It is on the shortcuts tab buttons, so keep translation short">Open</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QPushButton" name="shortcutNewPushButton">
+               <property name="text">
+                <string comment="It is on the shortcuts tab buttons, so keep translation short">New</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <spacer name="horizontalSpacer_10">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>0</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="1">
+         <spacer name="verticalSpacer_9">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>0</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="dataTab">
+       <attribute name="title">
+        <string>Data</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="0" column="1">
+         <spacer name="verticalSpacer_7">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>0</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="0">
+         <spacer name="horizontalSpacer_7">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>0</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="1">
+         <widget class="QFrame" name="frameData">
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_15">
+           <property name="leftMargin">
+            <number>16</number>
+           </property>
+           <property name="topMargin">
+            <number>16</number>
+           </property>
+           <property name="rightMargin">
+            <number>16</number>
+           </property>
+           <property name="bottomMargin">
+            <number>16</number>
+           </property>
+           <item row="0" column="0">
+            <layout class="QGridLayout" name="gridLayout_5">
+             <item row="0" column="0">
+              <widget class="QPushButton" name="shortcutBasicPushButton">
+               <property name="text">
+                <string comment="It is a shortcut button on the main form, activates a menu with institution information (name and comments) and days per week and hours per day. It is on the shortcuts tab buttons, so keep translation short">Basic</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QPushButton" name="shortcutActivitiesPushButton">
+               <property name="text">
+                <string comment="It is on the shortcuts tab buttons, so keep translation short">Activities</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QPushButton" name="shortcutSubjectsPushButton">
+               <property name="text">
+                <string comment="It is on the shortcuts tab buttons, so keep translation short">Subjects</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QPushButton" name="shortcutTeachersPushButton">
+               <property name="text">
+                <string comment="It is on the shortcuts tab buttons, so keep translation short">Teachers</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="shortcutActivityTagsPushButton">
+               <property name="text">
+                <string comment="It means activity tags, but I want to keep it short. It is on the shortcuts tab buttons, so keep translation short">Tags</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QPushButton" name="shortcutStudentsPushButton">
+               <property name="text">
+                <string comment="It is on the shortcuts tab buttons, so keep translation short">Students</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="2">
+              <widget class="QPushButton" name="shortcutDataSpacePushButton">
+               <property name="text">
+                <string comment="It is on the shortcuts tab buttons, so keep translation short. It contains submenu for buildings and rooms">Space</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QPushButton" name="shortcutSubactivitiesPushButton">
+               <property name="text">
+                <string comment="It is on the shortcuts tab buttons, so keep translation short">Subactivities</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="2">
+              <widget class="QPushButton" name="shortcutDataAdvancedPushButton">
+               <property name="text">
+                <string comment="It is on the shortcuts tab buttons, so keep translation short. It contains submenu for activity planning">Advanced</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0" colspan="3">
+              <widget class="Line" name="line">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0" colspan="3">
+              <widget class="Line" name="line_2">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <spacer name="horizontalSpacer_8">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>0</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="1">
+         <spacer name="verticalSpacer_8">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>0</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="timeConstraintsTab">
+       <attribute name="title">
+        <string comment="It is a tab for shortcut buttons to time constraints, so it refers to time constraints, but we need to keep it short, that is why I don't add also 'constraints'">Time</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_14">
+        <item row="0" column="1">
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>0</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="0">
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>0</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="1">
+         <widget class="QFrame" name="frameTime">
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_7">
+           <property name="leftMargin">
+            <number>16</number>
+           </property>
+           <property name="topMargin">
+            <number>16</number>
+           </property>
+           <property name="rightMargin">
+            <number>16</number>
+           </property>
+           <property name="bottomMargin">
+            <number>16</number>
+           </property>
+           <item row="0" column="0">
+            <layout class="QGridLayout" name="gridLayout_3">
+             <item row="0" column="0">
+              <widget class="QPushButton" name="shortcutAllTimeConstraintsPushButton">
+               <property name="text">
+                <string comment="It refers to all time constraints (it is the text of a button for activating all time constraints dialog on the main form). It is on the shortcuts tab buttons, so keep translation short">All</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QPushButton" name="shortcutBreakTimeConstraintsPushButton">
+               <property name="text">
+                <string comment="Refers to break constraints (it is a button in the shortcuts tab on main form)">Break</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QPushButton" name="shortcutTeachersTimeConstraintsPushButton">
+               <property name="text">
+                <string comment="It is on the shortcuts tab buttons, so keep translation short">Teachers</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QPushButton" name="shortcutStudentsTimeConstraintsPushButton">
+               <property name="text">
+                <string comment="It is on the shortcuts tab buttons, so keep translation short">Students</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QPushButton" name="shortcutActivitiesTimeConstraintsPushButton">
+               <property name="text">
+                <string comment="It is on the shortcuts tab buttons, so keep translation short">Activities</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QPushButton" name="shortcutAdvancedTimeConstraintsPushButton">
+               <property name="text">
+                <string>Advanced</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0" colspan="2">
+              <widget class="Line" name="line_9">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0" colspan="2">
+              <widget class="Line" name="line_10">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <spacer name="horizontalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>0</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="1">
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>0</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="spaceConstraintsTab">
+       <attribute name="title">
+        <string comment="It is a tab for shortcut buttons to space constraints, so it refers to space constraints, but we need to keep it short, that is why I don't add also 'constraints'">Space</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_12">
+        <item row="0" column="1">
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>0</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="0">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>0</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="1">
+         <widget class="QFrame" name="frameSpace">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_8">
+           <property name="leftMargin">
+            <number>16</number>
+           </property>
+           <property name="topMargin">
+            <number>16</number>
+           </property>
+           <property name="rightMargin">
+            <number>16</number>
+           </property>
+           <property name="bottomMargin">
+            <number>16</number>
+           </property>
+           <item row="0" column="0">
+            <layout class="QGridLayout" name="gridLayout_2">
+             <item row="0" column="0">
+              <widget class="QPushButton" name="shortcutAllSpaceConstraintsPushButton">
+               <property name="text">
+                <string comment="It refers to all space constraints (it is the text of a button for activating all space constraints dialog on the main form). It is on the shortcuts tab buttons, so keep translation short">All</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QPushButton" name="shortcutActivitiesSpaceConstraintsPushButton">
+               <property name="text">
+                <string comment="It is on the shortcuts tab buttons, so keep translation short">Activities</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="2">
+              <widget class="QPushButton" name="shortcutRoomsSpaceConstraintsPushButton">
+               <property name="text">
+                <string comment="It is on the shortcuts tab buttons, so keep translation short">Rooms</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QPushButton" name="shortcutTeachersSpaceConstraintsPushButton">
+               <property name="text">
+                <string comment="It is on the shortcuts tab buttons, so keep translation short">Teachers</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QPushButton" name="shortcutStudentsSpaceConstraintsPushButton">
+               <property name="text">
+                <string comment="It is on the shortcuts tab buttons, so keep translation short">Students</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QPushButton" name="shortcutSubjectsSpaceConstraintsPushButton">
+               <property name="text">
+                <string comment="It is on the shortcuts tab buttons, so keep translation short">Subjects</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="shortcutActivityTagsSpaceConstraintsPushButton">
+               <property name="text">
+                <string comment="It means activity tags, but I want to keep it short. It is on the shortcuts tab buttons, so keep translation short">Tags</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1" colspan="2">
+              <widget class="QPushButton" name="shortcutSubjectsAndActivityTagsSpaceConstraintsPushButton">
+               <property name="text">
+                <string comment="Tags means activity tags, but I want to keep it short. It is on the shortcuts tab buttons, so keep translation short">Subjects and tags</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0" colspan="3">
+              <widget class="Line" name="line_4">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0" colspan="3">
+              <widget class="Line" name="line_3">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>0</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="1">
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>0</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="timetableTab">
+       <attribute name="title">
+        <string>Timetable</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_13">
+        <item row="0" column="1">
+         <spacer name="verticalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>0</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="0">
+         <spacer name="horizontalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>0</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="1">
+         <widget class="QFrame" name="frameTimetable">
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_9">
+           <property name="leftMargin">
+            <number>16</number>
+           </property>
+           <property name="topMargin">
+            <number>16</number>
+           </property>
+           <property name="rightMargin">
+            <number>16</number>
+           </property>
+           <property name="bottomMargin">
+            <number>16</number>
+           </property>
+           <item row="0" column="0">
+            <layout class="QGridLayout" name="gridLayout_4">
+             <item row="0" column="0">
+              <widget class="QPushButton" name="shortcutGeneratePushButton">
+               <property name="text">
+                <string comment="It is on the shortcuts tab buttons, so keep translation short">Generate</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QPushButton" name="shortcutGenerateMultiplePushButton">
+               <property name="text">
+                <string comment="It means generate multiple timetables, but I wanted to keep field short, that is why I only write 'Multiple'.It is on the shortcuts tab buttons, so keep translation short">Multiple</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QPushButton" name="shortcutViewTeachersPushButton">
+               <property name="text">
+                <string comment="It is on the shortcuts tab buttons, so keep translation short">Teachers</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QPushButton" name="shortcutViewStudentsPushButton">
+               <property name="text">
+                <string comment="It is on the shortcuts tab buttons, so keep translation short">Students</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="shortcutShowSoftConflictsPushButton">
+               <property name="text">
+                <string comment="It means show soft conflicts, but I want to keep field short. It is on the shortcuts tab buttons, so keep translation short">Conflicts</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="2">
+              <widget class="QPushButton" name="shortcutsTimetableAdvancedPushButton">
+               <property name="text">
+                <string>Advanced</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="2">
+              <widget class="QPushButton" name="shortcutViewRoomsPushButton">
+               <property name="text">
+                <string comment="It is on the shortcuts tab buttons, so keep translation short">Rooms</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QPushButton" name="shortcutsTimetablePrintPushButton">
+               <property name="text">
+                <string>Print</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <widget class="QPushButton" name="shortcutsTimetableLockingPushButton">
+               <property name="text">
+                <string comment="Refers to timetable locking, means locking/unlocking activities, but we need to keep the field short.">Locking</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0" colspan="3">
+              <widget class="Line" name="line_5">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0" colspan="3">
+              <widget class="Line" name="line_6">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <spacer name="horizontalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>0</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="1">
+         <spacer name="verticalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>0</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <spacer name="horizontalSpacer_12">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>104</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="2" column="1">
+     <spacer name="verticalSpacer_11">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>24</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="mainmenubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>560</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="helpMenu">
+    <property name="title">
+     <string extracomment="Accelerator key (letter after ampersand) for &amp;File, &amp;Data, &amp;Timetable, &amp;Help, must be different">&amp;Help</string>
+    </property>
+    <widget class="QMenu" name="menu_help_On_line">
+     <property name="title">
+      <string extracomment="menu Help-&gt;Online (means on the internet)">Online</string>
+     </property>
+     <addaction name="helpHomepageAction"/>
+     <addaction name="helpContentsAction"/>
+     <addaction name="helpForumAction"/>
+     <addaction name="separator"/>
+     <addaction name="helpAddressesAction"/>
+    </widget>
+    <addaction name="menu_help_On_line"/>
+    <addaction name="separator"/>
+    <addaction name="helpInstructionsAction"/>
+    <addaction name="helpTipsAction"/>
+    <addaction name="helpFAQAction"/>
+    <addaction name="separator"/>
+    <addaction name="helpAboutAction"/>
+   </widget>
+   <widget class="QMenu" name="fileMenu">
+    <property name="title">
+     <string extracomment="Accelerator key (letter after ampersand) for &amp;File, &amp;Data, &amp;Timetable, &amp;Help, must be different">&amp;File</string>
+    </property>
+    <widget class="QMenu" name="menuExport">
+     <property name="title">
+      <string>Export</string>
+     </property>
+     <addaction name="fileExportCSVAction"/>
+    </widget>
+    <widget class="QMenu" name="menuImport">
+     <property name="title">
+      <string>Import</string>
+     </property>
+     <widget class="QMenu" name="menuImport_CSV">
+      <property name="title">
+       <string>Import comma separated values (text)</string>
+      </property>
+      <addaction name="fileImportCSVSubjectsAction"/>
+      <addaction name="fileImportCSVActivityTagsAction"/>
+      <addaction name="fileImportCSVTeachersAction"/>
+      <addaction name="fileImportCSVYearsGroupsSubgroupsAction"/>
+      <addaction name="fileImportCSVRoomsBuildingsAction"/>
+      <addaction name="fileImportCSVActivitiesAction"/>
+     </widget>
+     <addaction name="menuImport_CSV"/>
+    </widget>
+    <widget class="QMenu" name="fileOpenRecentMenu">
+     <property name="title">
+      <string extracomment="Accelerator key (letter after ampersand) for &amp;New, &amp;Open, Open &amp;recent, &amp;Save, Save &amp;as, &amp;Quit, must be different">Open &amp;recent</string>
+     </property>
+     <addaction name="fileClearRecentFilesListAction"/>
+    </widget>
+    <addaction name="fileNewAction"/>
+    <addaction name="fileOpenAction"/>
+    <addaction name="fileOpenRecentMenu"/>
+    <addaction name="separator"/>
+    <addaction name="fileSaveAction"/>
+    <addaction name="fileSaveAsAction"/>
+    <addaction name="separator"/>
+    <addaction name="menuImport"/>
+    <addaction name="menuExport"/>
+    <addaction name="separator"/>
+    <addaction name="fileExitAction"/>
+   </widget>
+   <widget class="QMenu" name="timetableMenu">
+    <property name="title">
+     <string extracomment="Accelerator key (letter after ampersand) for &amp;File, &amp;Data, &amp;Timetable, &amp;Help, must be different">&amp;Timetable</string>
+    </property>
+    <widget class="QMenu" name="menuAdvancedLockUnlock">
+     <property name="title">
+      <string>Advanced lock/unlock</string>
+     </property>
+     <addaction name="timetableLockAllActivitiesAction"/>
+     <addaction name="timetableUnlockAllActivitiesAction"/>
+     <addaction name="separator"/>
+     <addaction name="timetableLockActivitiesDayAction"/>
+     <addaction name="timetableUnlockActivitiesDayAction"/>
+     <addaction name="separator"/>
+     <addaction name="timetableLockActivitiesEndStudentsDayAction"/>
+     <addaction name="timetableUnlockActivitiesEndStudentsDayAction"/>
+    </widget>
+    <addaction name="timetableGenerateAction"/>
+    <addaction name="separator"/>
+    <addaction name="timetableViewTeachersAction"/>
+    <addaction name="timetableViewStudentsAction"/>
+    <addaction name="timetableViewRoomsAction"/>
+    <addaction name="timetableShowConflictsAction"/>
+    <addaction name="separator"/>
+    <addaction name="timetablePrintAction"/>
+    <addaction name="separator"/>
+    <addaction name="menuAdvancedLockUnlock"/>
+    <addaction name="separator"/>
+    <addaction name="timetableSaveTimetableAsAction"/>
+    <addaction name="separator"/>
+    <addaction name="timetableGenerateMultipleAction"/>
+   </widget>
+   <widget class="QMenu" name="menuStatistics">
+    <property name="title">
+     <string>Statistics</string>
+    </property>
+    <addaction name="dataTeachersStatisticsAction"/>
+    <addaction name="dataSubjectsStatisticsAction"/>
+    <addaction name="dataStudentsStatisticsAction"/>
+    <addaction name="separator"/>
+    <addaction name="dataActivitiesRoomsStatisticsAction"/>
+    <addaction name="separator"/>
+    <addaction name="dataTeachersSubjectsQualificationsStatisticsAction"/>
+    <addaction name="separator"/>
+    <addaction name="statisticsPrintAction"/>
+    <addaction name="statisticsExportToDiskAction"/>
+    <addaction name="separator"/>
+    <addaction name="dataHelpOnStatisticsAction"/>
+   </widget>
+   <widget class="QMenu" name="dataMenu">
+    <property name="title">
+     <string extracomment="Accelerator key (letter after ampersand) for &amp;File, &amp;Data, &amp;Timetable, &amp;Help, must be different">&amp;Data</string>
+    </property>
+    <widget class="QMenu" name="menuTime_constraints">
+     <property name="title">
+      <string>Time constraints</string>
+     </property>
+     <widget class="QMenu" name="menuMisc_time_constraints">
+      <property name="title">
+       <string>Miscellaneous</string>
+      </property>
+      <addaction name="dataTimeConstraintsBasicCompulsoryTimeAction"/>
+      <addaction name="dataTimeConstraintsBreakTimesAction"/>
+     </widget>
+     <widget class="QMenu" name="menuTeachers_time_constraints">
+      <property name="title">
+       <string>Teachers</string>
+      </property>
+      <addaction name="dataTimeConstraintsTeacherNotAvailableTimesAction"/>
+      <addaction name="separator"/>
+      <addaction name="dataTimeConstraintsTeacherMaxDaysPerWeekAction"/>
+      <addaction name="dataTimeConstraintsTeacherMinDaysPerWeekAction"/>
+      <addaction name="dataTimeConstraintsTeacherMaxGapsPerDayAction"/>
+      <addaction name="dataTimeConstraintsTeacherMaxGapsPerWeekAction"/>
+      <addaction name="dataTimeConstraintsTeacherMaxHoursDailyAction"/>
+      <addaction name="dataTimeConstraintsTeacherActivityTagMaxHoursDailyAction"/>
+      <addaction name="dataTimeConstraintsTeacherMinHoursDailyAction"/>
+      <addaction name="dataTimeConstraintsTeacherMaxHoursContinuouslyAction"/>
+      <addaction name="dataTimeConstraintsTeacherActivityTagMaxHoursContinuouslyAction"/>
+      <addaction name="dataTimeConstraintsTeacherIntervalMaxDaysPerWeekAction"/>
+      <addaction name="separator"/>
+      <addaction name="dataTimeConstraintsTeachersMaxDaysPerWeekAction"/>
+      <addaction name="dataTimeConstraintsTeachersMinDaysPerWeekAction"/>
+      <addaction name="dataTimeConstraintsTeachersMaxGapsPerDayAction"/>
+      <addaction name="dataTimeConstraintsTeachersMaxGapsPerWeekAction"/>
+      <addaction name="dataTimeConstraintsTeachersMaxHoursDailyAction"/>
+      <addaction name="dataTimeConstraintsTeachersActivityTagMaxHoursDailyAction"/>
+      <addaction name="dataTimeConstraintsTeachersMinHoursDailyAction"/>
+      <addaction name="dataTimeConstraintsTeachersMaxHoursContinuouslyAction"/>
+      <addaction name="dataTimeConstraintsTeachersActivityTagMaxHoursContinuouslyAction"/>
+      <addaction name="dataTimeConstraintsTeachersIntervalMaxDaysPerWeekAction"/>
+     </widget>
+     <widget class="QMenu" name="menuStudents_time_constraints">
+      <property name="title">
+       <string>Students</string>
+      </property>
+      <addaction name="dataTimeConstraintsStudentsSetNotAvailableTimesAction"/>
+      <addaction name="separator"/>
+      <addaction name="dataTimeConstraintsStudentsSetMaxDaysPerWeekAction"/>
+      <addaction name="dataTimeConstraintsStudentsSetMaxGapsPerDayAction"/>
+      <addaction name="dataTimeConstraintsStudentsSetMaxGapsPerWeekAction"/>
+      <addaction name="dataTimeConstraintsStudentsSetEarlyMaxBeginningsAtSecondHourAction"/>
+      <addaction name="dataTimeConstraintsStudentsSetMaxHoursDailyAction"/>
+      <addaction name="dataTimeConstraintsStudentsSetActivityTagMaxHoursDailyAction"/>
+      <addaction name="dataTimeConstraintsStudentsSetMinHoursDailyAction"/>
+      <addaction name="dataTimeConstraintsStudentsSetMaxHoursContinuouslyAction"/>
+      <addaction name="dataTimeConstraintsStudentsSetActivityTagMaxHoursContinuouslyAction"/>
+      <addaction name="dataTimeConstraintsStudentsSetIntervalMaxDaysPerWeekAction"/>
+      <addaction name="separator"/>
+      <addaction name="dataTimeConstraintsStudentsMaxDaysPerWeekAction"/>
+      <addaction name="dataTimeConstraintsStudentsMaxGapsPerDayAction"/>
+      <addaction name="dataTimeConstraintsStudentsMaxGapsPerWeekAction"/>
+      <addaction name="dataTimeConstraintsStudentsEarlyMaxBeginningsAtSecondHourAction"/>
+      <addaction name="dataTimeConstraintsStudentsMaxHoursDailyAction"/>
+      <addaction name="dataTimeConstraintsStudentsActivityTagMaxHoursDailyAction"/>
+      <addaction name="dataTimeConstraintsStudentsMinHoursDailyAction"/>
+      <addaction name="dataTimeConstraintsStudentsMaxHoursContinuouslyAction"/>
+      <addaction name="dataTimeConstraintsStudentsActivityTagMaxHoursContinuouslyAction"/>
+      <addaction name="dataTimeConstraintsStudentsIntervalMaxDaysPerWeekAction"/>
+     </widget>
+     <widget class="QMenu" name="menuActivities_time_constraints">
+      <property name="title">
+       <string>Activities</string>
+      </property>
+      <addaction name="dataTimeConstraintsActivityPreferredStartingTimeAction"/>
+      <addaction name="dataTimeConstraintsActivityPreferredStartingTimesAction"/>
+      <addaction name="dataTimeConstraintsActivityPreferredTimeSlotsAction"/>
+      <addaction name="separator"/>
+      <addaction name="dataTimeConstraintsActivitiesPreferredStartingTimesAction"/>
+      <addaction name="dataTimeConstraintsActivitiesPreferredTimeSlotsAction"/>
+      <addaction name="separator"/>
+      <addaction name="dataTimeConstraintsSubactivitiesPreferredStartingTimesAction"/>
+      <addaction name="dataTimeConstraintsSubactivitiesPreferredTimeSlotsAction"/>
+      <addaction name="separator"/>
+      <addaction name="dataTimeConstraintsMinDaysBetweenActivitiesAction"/>
+      <addaction name="dataTimeConstraintsMaxDaysBetweenActivitiesAction"/>
+      <addaction name="separator"/>
+      <addaction name="dataTimeConstraintsActivityEndsStudentsDayAction"/>
+      <addaction name="dataTimeConstraintsActivitiesEndStudentsDayAction"/>
+      <addaction name="separator"/>
+      <addaction name="dataTimeConstraintsActivitiesSameStartingTimeAction"/>
+      <addaction name="dataTimeConstraintsActivitiesSameStartingDayAction"/>
+      <addaction name="dataTimeConstraintsActivitiesSameStartingHourAction"/>
+      <addaction name="separator"/>
+      <addaction name="dataTimeConstraintsActivitiesOccupyMaxTimeSlotsFromSelectionAction"/>
+      <addaction name="separator"/>
+      <addaction name="dataTimeConstraintsTwoActivitiesOrderedAction"/>
+      <addaction name="separator"/>
+      <addaction name="dataTimeConstraintsTwoActivitiesConsecutiveAction"/>
+      <addaction name="dataTimeConstraintsTwoActivitiesGroupedAction"/>
+      <addaction name="dataTimeConstraintsThreeActivitiesGroupedAction"/>
+      <addaction name="separator"/>
+      <addaction name="dataTimeConstraintsActivitiesNotOverlappingAction"/>
+      <addaction name="dataTimeConstraintsActivitiesMaxSimultaneousInSelectedTimeSlotsAction"/>
+      <addaction name="separator"/>
+      <addaction name="dataTimeConstraintsMinGapsBetweenActivitiesAction"/>
+     </widget>
+     <addaction name="menuMisc_time_constraints"/>
+     <addaction name="menuTeachers_time_constraints"/>
+     <addaction name="menuStudents_time_constraints"/>
+     <addaction name="menuActivities_time_constraints"/>
+    </widget>
+    <widget class="QMenu" name="menuSpace_constraints">
+     <property name="title">
+      <string>Space constraints</string>
+     </property>
+     <widget class="QMenu" name="menuMisc_space_constraints">
+      <property name="title">
+       <string>Miscellaneous</string>
+      </property>
+      <addaction name="dataSpaceConstraintsBasicCompulsorySpaceAction"/>
+     </widget>
+     <widget class="QMenu" name="menuRooms_space_constraints">
+      <property name="title">
+       <string>Rooms</string>
+      </property>
+      <addaction name="dataSpaceConstraintsRoomNotAvailableTimesAction"/>
+     </widget>
+     <widget class="QMenu" name="menuActivities_space_constraints">
+      <property name="title">
+       <string>Activities</string>
+      </property>
+      <addaction name="dataSpaceConstraintsActivityPreferredRoomAction"/>
+      <addaction name="dataSpaceConstraintsActivityPreferredRoomsAction"/>
+      <addaction name="separator"/>
+      <addaction name="dataSpaceConstraintsActivitiesSameRoomIfConsecutiveAction"/>
+      <addaction name="dataSpaceConstraintsActivitiesOccupyMaxDifferentRoomsAction"/>
+     </widget>
+     <widget class="QMenu" name="menuSubjects_space_constraints">
+      <property name="title">
+       <string>Subjects</string>
+      </property>
+      <addaction name="dataSpaceConstraintsSubjectPreferredRoomAction"/>
+      <addaction name="dataSpaceConstraintsSubjectPreferredRoomsAction"/>
+     </widget>
+     <widget class="QMenu" name="menuSubjects_and_activity_tags_space_constraints">
+      <property name="title">
+       <string>Subjects and activity tags</string>
+      </property>
+      <addaction name="dataSpaceConstraintsSubjectActivityTagPreferredRoomAction"/>
+      <addaction name="dataSpaceConstraintsSubjectActivityTagPreferredRoomsAction"/>
+     </widget>
+     <widget class="QMenu" name="menuStudents_space_constraints">
+      <property name="title">
+       <string>Students</string>
+      </property>
+      <addaction name="dataSpaceConstraintsStudentsSetHomeRoomAction"/>
+      <addaction name="dataSpaceConstraintsStudentsSetHomeRoomsAction"/>
+      <addaction name="separator"/>
+      <addaction name="dataSpaceConstraintsStudentsSetMaxBuildingChangesPerDayAction"/>
+      <addaction name="dataSpaceConstraintsStudentsSetMaxBuildingChangesPerWeekAction"/>
+      <addaction name="dataSpaceConstraintsStudentsSetMinGapsBetweenBuildingChangesAction"/>
+      <addaction name="separator"/>
+      <addaction name="dataSpaceConstraintsStudentsMaxBuildingChangesPerDayAction"/>
+      <addaction name="dataSpaceConstraintsStudentsMaxBuildingChangesPerWeekAction"/>
+      <addaction name="dataSpaceConstraintsStudentsMinGapsBetweenBuildingChangesAction"/>
+     </widget>
+     <widget class="QMenu" name="menuTeachers_space_constraints">
+      <property name="title">
+       <string>Teachers</string>
+      </property>
+      <addaction name="dataSpaceConstraintsTeacherHomeRoomAction"/>
+      <addaction name="dataSpaceConstraintsTeacherHomeRoomsAction"/>
+      <addaction name="separator"/>
+      <addaction name="dataSpaceConstraintsTeacherMaxBuildingChangesPerDayAction"/>
+      <addaction name="dataSpaceConstraintsTeacherMaxBuildingChangesPerWeekAction"/>
+      <addaction name="dataSpaceConstraintsTeacherMinGapsBetweenBuildingChangesAction"/>
+      <addaction name="separator"/>
+      <addaction name="dataSpaceConstraintsTeachersMaxBuildingChangesPerDayAction"/>
+      <addaction name="dataSpaceConstraintsTeachersMaxBuildingChangesPerWeekAction"/>
+      <addaction name="dataSpaceConstraintsTeachersMinGapsBetweenBuildingChangesAction"/>
+     </widget>
+     <widget class="QMenu" name="menuActivity_tags_space_constraints">
+      <property name="title">
+       <string>Activity tags</string>
+      </property>
+      <addaction name="dataSpaceConstraintsActivityTagPreferredRoomAction"/>
+      <addaction name="dataSpaceConstraintsActivityTagPreferredRoomsAction"/>
+     </widget>
+     <addaction name="menuMisc_space_constraints"/>
+     <addaction name="menuRooms_space_constraints"/>
+     <addaction name="menuTeachers_space_constraints"/>
+     <addaction name="menuStudents_space_constraints"/>
+     <addaction name="menuSubjects_space_constraints"/>
+     <addaction name="menuActivity_tags_space_constraints"/>
+     <addaction name="menuSubjects_and_activity_tags_space_constraints"/>
+     <addaction name="menuActivities_space_constraints"/>
+    </widget>
+    <widget class="QMenu" name="menuStudents">
+     <property name="title">
+      <string extracomment="Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different">Stu&amp;dents</string>
+     </property>
+     <addaction name="dataYearsAction"/>
+     <addaction name="dataGroupsAction"/>
+     <addaction name="dataSubgroupsAction"/>
+    </widget>
+    <widget class="QMenu" name="menuInstitution_information">
+     <property name="title">
+      <string>Institution information</string>
+     </property>
+     <addaction name="dataInstitutionNameAction"/>
+     <addaction name="dataCommentsAction"/>
+    </widget>
+    <widget class="QMenu" name="menuDays_and_hours">
+     <property name="title">
+      <string>Days and hours</string>
+     </property>
+     <addaction name="dataDaysAction"/>
+     <addaction name="dataHoursAction"/>
+    </widget>
+    <addaction name="menuInstitution_information"/>
+    <addaction name="separator"/>
+    <addaction name="menuDays_and_hours"/>
+    <addaction name="separator"/>
+    <addaction name="dataSubjectsAction"/>
+    <addaction name="dataActivityTagsAction"/>
+    <addaction name="dataTeachersAction"/>
+    <addaction name="menuStudents"/>
+    <addaction name="separator"/>
+    <addaction name="dataActivitiesAction"/>
+    <addaction name="dataSubactivitiesAction"/>
+    <addaction name="separator"/>
+    <addaction name="dataBuildingsAction"/>
+    <addaction name="dataRoomsAction"/>
+    <addaction name="separator"/>
+    <addaction name="dataAllTimeConstraintsAction"/>
+    <addaction name="menuTime_constraints"/>
+    <addaction name="separator"/>
+    <addaction name="dataAllSpaceConstraintsAction"/>
+    <addaction name="menuSpace_constraints"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <widget class="QMenu" name="menuSettingsAdvanced">
+     <property name="title">
+      <string>Advanced</string>
+     </property>
+     <addaction name="randomSeedAction"/>
+     <addaction name="separator"/>
+     <addaction name="showWarningForSubgroupsWithTheSameActivitiesAction"/>
+     <addaction name="separator"/>
+     <addaction name="enableActivityTagMaxHoursDailyAction"/>
+     <addaction name="enableStudentsMaxGapsPerDayAction"/>
+     <addaction name="showWarningForNotPerfectConstraintsAction"/>
+     <addaction name="separator"/>
+     <addaction name="enableStudentsMinHoursDailyWithAllowEmptyDaysAction"/>
+     <addaction name="showWarningForStudentsMinHoursDailyWithAllowEmptyDaysAction"/>
+     <addaction name="separator"/>
+     <addaction name="enableGroupActivitiesInInitialOrderAction"/>
+     <addaction name="showWarningForGroupActivitiesInInitialOrderAction"/>
+    </widget>
+    <widget class="QMenu" name="menuFET_interface">
+     <property name="title">
+      <string>Interface</string>
+     </property>
+     <addaction name="settingsShowShortcutsOnMainWindowAction"/>
+     <addaction name="separator"/>
+     <addaction name="settingsUseColorsAction"/>
+     <addaction name="separator"/>
+     <addaction name="settingsShowToolTipsForConstraintsWithTablesAction"/>
+     <addaction name="separator"/>
+     <addaction name="settingsShowSubgroupsInComboBoxesAction"/>
+     <addaction name="settingsShowSubgroupsInActivityPlanningAction"/>
+    </widget>
+    <widget class="QMenu" name="menuTimetables">
+     <property name="title">
+      <string>Timetables</string>
+     </property>
+     <addaction name="timetablesToWriteOnDiskAction"/>
+     <addaction name="settingsTimetableHtmlLevelAction"/>
+     <addaction name="separator"/>
+     <addaction name="settingsPrintDetailedTimetablesAction"/>
+     <addaction name="settingsPrintDetailedTeachersFreePeriodsTimetablesAction"/>
+     <addaction name="separator"/>
+     <addaction name="settingsPrintActivityTagsAction"/>
+     <addaction name="separator"/>
+     <addaction name="settingsPrintNotAvailableSlotsAction"/>
+     <addaction name="settingsPrintBreakSlotsAction"/>
+     <addaction name="separator"/>
+     <addaction name="settingsDivideTimetablesByDaysAction"/>
+     <addaction name="settingsDuplicateVerticalNamesAction"/>
+     <addaction name="separator"/>
+     <addaction name="settingsPrintActivitiesWithSameStartingTimeAction"/>
+    </widget>
+    <widget class="QMenu" name="menuConfirmations">
+     <property name="title">
+      <string comment="This is a submenu, contains these settings: if a user wants to deactivate/activate a confirmation (instructions) dialog that appears before an advanced dialog">Confirmations</string>
+     </property>
+     <addaction name="settingsConfirmActivityPlanningAction"/>
+     <addaction name="separator"/>
+     <addaction name="settingsConfirmSpreadActivitiesAction"/>
+     <addaction name="separator"/>
+     <addaction name="settingsConfirmRemoveRedundantAction"/>
+     <addaction name="separator"/>
+     <addaction name="settingsConfirmSaveTimetableAction"/>
+    </widget>
+    <addaction name="checkForUpdatesAction"/>
+    <addaction name="separator"/>
+    <addaction name="languageAction"/>
+    <addaction name="separator"/>
+    <addaction name="menuTimetables"/>
+    <addaction name="menuFET_interface"/>
+    <addaction name="menuConfirmations"/>
+    <addaction name="selectOutputDirAction"/>
+    <addaction name="separator"/>
+    <addaction name="menuSettingsAdvanced"/>
+    <addaction name="separator"/>
+    <addaction name="settingsRestoreDefaultsAction"/>
+    <addaction name="separator"/>
+    <addaction name="helpSettingsAction"/>
+   </widget>
+   <widget class="QMenu" name="menuAdvanced">
+    <property name="title">
+     <string>Advanced</string>
+    </property>
+    <addaction name="activityPlanningAction"/>
+    <addaction name="separator"/>
+    <addaction name="spreadActivitiesAction"/>
+    <addaction name="separator"/>
+    <addaction name="removeRedundantConstraintsAction"/>
+    <addaction name="separator"/>
+    <addaction name="groupActivitiesInInitialOrderAction"/>
+   </widget>
+   <addaction name="fileMenu"/>
+   <addaction name="dataMenu"/>
+   <addaction name="menuStatistics"/>
+   <addaction name="menuAdvanced"/>
+   <addaction name="timetableMenu"/>
+   <addaction name="menuSettings"/>
+   <addaction name="helpMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="defaultStatusBar"/>
+  <action name="fileNewAction">
+   <property name="text">
+    <string extracomment="Accelerator key (letter after ampersand) for &amp;New, &amp;Open, Open &amp;recent, &amp;Save, Save &amp;as, &amp;Quit, must be different">&amp;New</string>
+   </property>
+   <property name="shortcut">
+    <string extracomment="This is the shortcut for menu item File-&gt;New. It is recommended to translate with Ctrl+N, the same as original, or with Ctrl+other letter you prefer (do not make duplicates with other shortcuts). All shortcuts are: Ctrl+N (New), Ctrl+O (Open), Ctrl+S (Save), Ctrl+Q (Quit), Ctrl+G (Generate), Ctrl+P (Print). Please use the English keyboard modifiers name, for instance Ctrl, because otherwise the shortcuts do not work (so, even if your keyboard has another name for the Ctrl key, write 'Ctrl'. It will work OK on all platforms. Even if you are on German keyboard, write 'Ctrl' as in English). Maybe it would be good to translate with 'Ctrl+N', the same as the English original, to keep things standard.">Ctrl+N</string>
+   </property>
+  </action>
+  <action name="fileOpenAction">
+   <property name="text">
+    <string extracomment="Accelerator key (letter after ampersand) for &amp;New, &amp;Open, Open &amp;recent, &amp;Save, Save &amp;as, &amp;Quit, must be different">&amp;Open...</string>
+   </property>
+   <property name="shortcut">
+    <string extracomment="This is the shortcut for menu item File-&gt;Open. It is recommended to translate with Ctrl+O, the same as original, or with Ctrl+other letter you prefer (do not make duplicates with other shortcuts). All shortcuts are: Ctrl+N (New), Ctrl+O (Open), Ctrl+S (Save), Ctrl+Q (Quit), Ctrl+G (Generate), Ctrl+P (Print). Please use the English keyboard modifiers name, for instance Ctrl, because otherwise the shortcuts do not work (so, even if your keyboard has another name for the Ctrl key, write 'Ctrl'. It will work OK on all platforms. Even if you are on German keyboard, write 'Ctrl' as in English). Maybe it would be good to translate with 'Ctrl+O', the same as the English original, to keep things standard.">Ctrl+O</string>
+   </property>
+  </action>
+  <action name="fileSaveAction">
+   <property name="text">
+    <string extracomment="Accelerator key (letter after ampersand) for &amp;New, &amp;Open, Open &amp;recent, &amp;Save, Save &amp;as, &amp;Quit, must be different">&amp;Save</string>
+   </property>
+   <property name="shortcut">
+    <string extracomment="This is the shortcut for menu item File-&gt;Save. It is recommended to translate with Ctrl+S, the same as original, or with Ctrl+other letter you prefer (do not make duplicates with other shortcuts). All shortcuts are: Ctrl+N (New), Ctrl+O (Open), Ctrl+S (Save), Ctrl+Q (Quit), Ctrl+G (Generate), Ctrl+P (Print). Please use the English keyboard modifiers name, for instance Ctrl, because otherwise the shortcuts do not work (so, even if your keyboard has another name for the Ctrl key, write 'Ctrl'. It will work OK on all platforms. Even if you are on German keyboard, write 'Ctrl' as in English). Maybe it would be good to translate with 'Ctrl+S', the same as the English original, to keep things standard.">Ctrl+S</string>
+   </property>
+  </action>
+  <action name="fileSaveAsAction">
+   <property name="text">
+    <string extracomment="Accelerator key (letter after ampersand) for &amp;New, &amp;Open, Open &amp;recent, &amp;Save, Save &amp;as, &amp;Quit, must be different">Save &amp;as...</string>
+   </property>
+   <property name="shortcut">
+    <string/>
+   </property>
+  </action>
+  <action name="fileExitAction">
+   <property name="text">
+    <string extracomment="Accelerator key (letter after ampersand) for &amp;New, &amp;Open, Open &amp;recent, &amp;Save, Save &amp;as, &amp;Quit, must be different">&amp;Quit</string>
+   </property>
+   <property name="shortcut">
+    <string extracomment="This is the shortcut for menu item File-&gt;Quit. It is recommended to translate with Ctrl+Q, the same as original, or with Ctrl+other letter you prefer (do not make duplicates with other shortcuts). All shortcuts are: Ctrl+N (New), Ctrl+O (Open), Ctrl+S (Save), Ctrl+Q (Quit), Ctrl+G (Generate), Ctrl+P (Print). Please use the English keyboard modifiers name, for instance Ctrl, because otherwise the shortcuts do not work (so, even if your keyboard has another name for the Ctrl key, write 'Ctrl'. It will work OK on all platforms. Even if you are on German keyboard, write 'Ctrl' as in English). Maybe it would be good to translate with 'Ctrl+Q', the same as the English original, to keep things standard.">Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="helpFAQAction">
+   <property name="text">
+    <string>Frequently asked questions</string>
+   </property>
+   <property name="shortcut">
+    <string/>
+   </property>
+  </action>
+  <action name="helpAboutAction">
+   <property name="text">
+    <string>About...</string>
+   </property>
+   <property name="shortcut">
+    <string/>
+   </property>
+  </action>
+  <action name="dataTeachersAction">
+   <property name="text">
+    <string extracomment="Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different">&amp;Teachers</string>
+   </property>
+  </action>
+  <action name="dataSubjectsAction">
+   <property name="text">
+    <string extracomment="Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different">&amp;Subjects</string>
+   </property>
+  </action>
+  <action name="dataYearsAction">
+   <property name="text">
+    <string extracomment="Accelerator key (letter after ampersand) must be different for &amp;Years, &amp;Groups, &amp;Subgroups">&amp;Years (forms, classes)</string>
+   </property>
+  </action>
+  <action name="dataGroupsAction">
+   <property name="text">
+    <string extracomment="Accelerator key (letter after ampersand) must be different for &amp;Years, &amp;Groups, &amp;Subgroups">&amp;Groups</string>
+   </property>
+  </action>
+  <action name="dataSubgroupsAction">
+   <property name="text">
+    <string extracomment="Accelerator key (letter after ampersand) must be different for &amp;Years, &amp;Groups, &amp;Subgroups">&amp;Subgroups</string>
+   </property>
+  </action>
+  <action name="dataActivitiesAction">
+   <property name="text">
+    <string extracomment="Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different">&amp;Activities</string>
+   </property>
+  </action>
+  <action name="timetableGenerateAction">
+   <property name="text">
+    <string extracomment="Accelerator key (letter after ampersand) for &amp;Generate new, View (&amp;teachers), View (&amp;students), View (&amp;rooms), Show soft &amp;conflicts, &amp;Print, Generate &amp;multiple, must be different">&amp;Generate new</string>
+   </property>
+   <property name="shortcut">
+    <string extracomment="This is the shortcut for menu item Timetable-&gt;Generate. It is recommended to translate with Ctrl+G, the same as original, or with Ctrl+other letter you prefer (do not make duplicates with other shortcuts). All shortcuts are: Ctrl+N (New), Ctrl+O (Open), Ctrl+S (Save), Ctrl+Q (Quit), Ctrl+G (Generate), Ctrl+P (Print). Please use the English keyboard modifiers name, for instance Ctrl, because otherwise the shortcuts do not work (so, even if your keyboard has another name for the Ctrl key, write 'Ctrl'. It will work OK on all platforms. Even if you are on German keyboard, write 'Ctrl' as in English). Maybe it would be good to translate with 'Ctrl+G', the same as the English original, to keep things standard.">Ctrl+G</string>
+   </property>
+  </action>
+  <action name="timetableViewStudentsAction">
+   <property name="text">
+    <string extracomment="Accelerator key (letter after ampersand) for &amp;Generate new, View (&amp;teachers), View (&amp;students), View (&amp;rooms), Show soft &amp;conflicts, &amp;Print, Generate &amp;multiple, must be different">View (&amp;students)</string>
+   </property>
+  </action>
+  <action name="timetableViewTeachersAction">
+   <property name="text">
+    <string extracomment="Accelerator key (letter after ampersand) for &amp;Generate new, View (&amp;teachers), View (&amp;students), View (&amp;rooms), Show soft &amp;conflicts, &amp;Print, Generate &amp;multiple, must be different">View (&amp;teachers)</string>
+   </property>
+  </action>
+  <action name="timetableShowConflictsAction">
+   <property name="text">
+    <string extracomment="Accelerator key (letter after ampersand) for &amp;Generate new, View (&amp;teachers), View (&amp;students), View (&amp;rooms), Show soft &amp;conflicts, &amp;Print, Generate &amp;multiple, must be different">Show soft &amp;conflicts</string>
+   </property>
+  </action>
+  <action name="dataDaysAction">
+   <property name="text">
+    <string extracomment="Accelerators (letters after &amp; - ampersand) for &amp;Days per week and &amp;Hours (periods) per day must be different">&amp;Days per week</string>
+   </property>
+  </action>
+  <action name="dataHoursAction">
+   <property name="text">
+    <string extracomment="Accelerators (letters after &amp; - ampersand) for &amp;Days per week and &amp;Hours (periods) per day must be different">&amp;Hours (periods) per day</string>
+   </property>
+  </action>
+  <action name="dataRoomsAction">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string extracomment="Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different">&amp;Rooms</string>
+   </property>
+  </action>
+  <action name="timetableViewRoomsAction">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string extracomment="Accelerator key (letter after ampersand) for &amp;Generate new, View (&amp;teachers), View (&amp;students), View (&amp;rooms), Show soft &amp;conflicts, &amp;Print, Generate &amp;multiple, must be different">View (&amp;rooms)</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsActivitiesPreferredTimeSlotsAction">
+   <property name="text">
+    <string>A set of activities has a set of preferred time slots</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsActivitiesSameStartingTimeAction">
+   <property name="text">
+    <string>A set of activities has same starting time (day+hour)</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsActivitiesOccupyMaxTimeSlotsFromSelectionAction">
+   <property name="text">
+    <string extracomment="It refers to a time constraint. It means: user chooses a set of activities, a set of time slots and a maximum number of slots from those selected which can be occupied by the selected activities">A set of activities occupies max time slots from selection</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsActivitiesMaxSimultaneousInSelectedTimeSlotsAction">
+   <property name="text">
+    <string extracomment="It refers to a time constraint. It means: user chooses a set of activities, a set of time slots and a maximum number of activities from those selected which can be simultaneous in each selected time slot">Max simultaneous activities from a set in selected time slots</string>
+   </property>
+  </action>
+  <action name="dataAllTimeConstraintsAction">
+   <property name="text">
+    <string extracomment="Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different">All t&amp;ime constraints</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTeacherNotAvailableTimesAction">
+   <property name="text">
+    <string>A teacher's not available times</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsBasicCompulsoryTimeAction">
+   <property name="text">
+    <string>Basic compulsory time constraints</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsStudentsSetNotAvailableTimesAction">
+   <property name="text">
+    <string>A students set's not available times</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsBreakTimesAction">
+   <property name="text">
+    <string>Break times (all teachers+all students not available)</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTeacherMaxDaysPerWeekAction">
+   <property name="text">
+    <string>Max days per week for a teacher</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTeachersMaxHoursDailyAction">
+   <property name="text">
+    <string>Max hours daily for all teachers</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsActivityPreferredStartingTimeAction">
+   <property name="text">
+    <string>An activity has a preferred starting time</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsStudentsSetMaxGapsPerWeekAction">
+   <property name="text">
+    <string>Max gaps per week for a students set</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsStudentsMaxGapsPerWeekAction">
+   <property name="text">
+    <string>Max gaps per week for all students</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsStudentsEarlyMaxBeginningsAtSecondHourAction">
+   <property name="text">
+    <string>All students begin early (max beginnings at second hour)</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsActivitiesNotOverlappingAction">
+   <property name="text">
+    <string>A set of activities are not overlapping</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsMinDaysBetweenActivitiesAction">
+   <property name="text">
+    <string>Min days between a set of activities</string>
+   </property>
+  </action>
+  <action name="dataAllSpaceConstraintsAction">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string extracomment="Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different">All s&amp;pace constraints</string>
+   </property>
+  </action>
+  <action name="dataSpaceConstraintsBasicCompulsorySpaceAction">
+   <property name="text">
+    <string>Basic compulsory space constraints</string>
+   </property>
+  </action>
+  <action name="dataSpaceConstraintsRoomNotAvailableTimesAction">
+   <property name="text">
+    <string>A room's not available times</string>
+   </property>
+  </action>
+  <action name="dataSpaceConstraintsActivityPreferredRoomAction">
+   <property name="text">
+    <string>An activity has a preferred room</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsActivitiesSameStartingHourAction">
+   <property name="text">
+    <string>A set of activities has same starting hour (any days)</string>
+   </property>
+  </action>
+  <action name="dataActivityTagsAction">
+   <property name="text">
+    <string extracomment="Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different">Activity ta&amp;gs</string>
+   </property>
+  </action>
+  <action name="dataInstitutionNameAction">
+   <property name="text">
+    <string extracomment="Accelerators (letters after &amp; - ampersand) for I&amp;nstitution name and &amp;Comments must be different">I&amp;nstitution name</string>
+   </property>
+  </action>
+  <action name="dataCommentsAction">
+   <property name="text">
+    <string extracomment="Accelerators (letters after &amp; - ampersand) for I&amp;nstitution name and &amp;Comments must be different">&amp;Comments</string>
+   </property>
+  </action>
+  <action name="dataSpaceConstraintsActivityPreferredRoomsAction">
+   <property name="text">
+    <string>An activity has a set of preferred rooms</string>
+   </property>
+  </action>
+  <action name="dataSpaceConstraintsStudentsSetHomeRoomAction">
+   <property name="text">
+    <string>A set of students has a home room</string>
+   </property>
+  </action>
+  <action name="dataSpaceConstraintsStudentsSetHomeRoomsAction">
+   <property name="text">
+    <string>A set of students has a set of home rooms</string>
+   </property>
+  </action>
+  <action name="dataTeachersStatisticsAction">
+   <property name="text">
+    <string>Teachers statistics</string>
+   </property>
+  </action>
+  <action name="dataStudentsStatisticsAction">
+   <property name="text">
+    <string>Students statistics</string>
+   </property>
+  </action>
+  <action name="dataSubjectsStatisticsAction">
+   <property name="text">
+    <string>Subjects statistics</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTeachersMaxGapsPerWeekAction">
+   <property name="text">
+    <string>Max gaps per week for all teachers</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTeacherMaxGapsPerWeekAction">
+   <property name="text">
+    <string>Max gaps per week for a teacher</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsStudentsSetEarlyMaxBeginningsAtSecondHourAction">
+   <property name="text">
+    <string>A students set begins early (max beginnings at second hour)</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTeacherMaxHoursDailyAction">
+   <property name="text">
+    <string>Max hours daily for a teacher</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsStudentsSetMaxHoursDailyAction">
+   <property name="text">
+    <string>Max hours daily for a students set</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsStudentsMaxHoursDailyAction">
+   <property name="text">
+    <string>Max hours daily for all students</string>
+   </property>
+  </action>
+  <action name="helpInstructionsAction">
+   <property name="text">
+    <string>Instructions</string>
+   </property>
+  </action>
+  <action name="checkForUpdatesAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Search for updates on startup</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsStudentsMinHoursDailyAction">
+   <property name="text">
+    <string>Min hours daily for all students</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsStudentsSetMinHoursDailyAction">
+   <property name="text">
+    <string>Min hours daily for a students set</string>
+   </property>
+  </action>
+  <action name="timetableGenerateMultipleAction">
+   <property name="text">
+    <string extracomment="Accelerator key (letter after ampersand) for &amp;Generate new, View (&amp;teachers), View (&amp;students), View (&amp;rooms), Show soft &amp;conflicts, &amp;Print, Generate &amp;multiple, must be different">Generate &amp;multiple</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTwoActivitiesConsecutiveAction">
+   <property name="text">
+    <string>Two activities are consecutive</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsActivityEndsStudentsDayAction">
+   <property name="text">
+    <string>An activity ends students day</string>
+   </property>
+  </action>
+  <action name="settingsRestoreDefaultsAction">
+   <property name="text">
+    <string>Restore default settings</string>
+   </property>
+  </action>
+  <action name="settingsTimetableHtmlLevelAction">
+   <property name="text">
+    <string>HTML level for generated timetables</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTeachersMinHoursDailyAction">
+   <property name="text">
+    <string>Min hours daily for all teachers</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTeacherMinHoursDailyAction">
+   <property name="text">
+    <string>Min hours daily for a teacher</string>
+   </property>
+  </action>
+  <action name="dataHelpOnStatisticsAction">
+   <property name="text">
+    <string>Help on statistics</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTeachersMaxGapsPerDayAction">
+   <property name="text">
+    <string>Max gaps per day for all teachers</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTeacherMaxGapsPerDayAction">
+   <property name="text">
+    <string>Max gaps per day for a teacher</string>
+   </property>
+  </action>
+  <action name="dataBuildingsAction">
+   <property name="text">
+    <string extracomment="Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different">&amp;Buildings</string>
+   </property>
+  </action>
+  <action name="dataSpaceConstraintsSubjectPreferredRoomAction">
+   <property name="text">
+    <string>A subject has a preferred room</string>
+   </property>
+  </action>
+  <action name="dataSpaceConstraintsSubjectPreferredRoomsAction">
+   <property name="text">
+    <string>A subject has a set of preferred rooms</string>
+   </property>
+  </action>
+  <action name="dataSpaceConstraintsSubjectActivityTagPreferredRoomAction">
+   <property name="text">
+    <string>A subject+an activity tag have a preferred room</string>
+   </property>
+  </action>
+  <action name="dataSpaceConstraintsSubjectActivityTagPreferredRoomsAction">
+   <property name="text">
+    <string>A subject+an activity tag have a set of preferred rooms</string>
+   </property>
+  </action>
+  <action name="dataSpaceConstraintsTeacherHomeRoomAction">
+   <property name="text">
+    <string>A teacher has a home room</string>
+   </property>
+  </action>
+  <action name="dataSpaceConstraintsTeacherHomeRoomsAction">
+   <property name="text">
+    <string>A teacher has a set of home rooms</string>
+   </property>
+  </action>
+  <action name="dataSpaceConstraintsStudentsSetMaxBuildingChangesPerDayAction">
+   <property name="text">
+    <string>Max building changes per day for a students set</string>
+   </property>
+  </action>
+  <action name="dataSpaceConstraintsStudentsMaxBuildingChangesPerDayAction">
+   <property name="text">
+    <string>Max building changes per day for all students</string>
+   </property>
+  </action>
+  <action name="dataSpaceConstraintsStudentsSetMaxBuildingChangesPerWeekAction">
+   <property name="text">
+    <string>Max building changes per week for a students set</string>
+   </property>
+  </action>
+  <action name="dataSpaceConstraintsStudentsMaxBuildingChangesPerWeekAction">
+   <property name="text">
+    <string>Max building changes per week for all students</string>
+   </property>
+  </action>
+  <action name="dataSpaceConstraintsStudentsSetMinGapsBetweenBuildingChangesAction">
+   <property name="text">
+    <string>Min gaps between building changes for a students set</string>
+   </property>
+  </action>
+  <action name="dataSpaceConstraintsStudentsMinGapsBetweenBuildingChangesAction">
+   <property name="text">
+    <string>Min gaps between building changes for all students</string>
+   </property>
+  </action>
+  <action name="dataSpaceConstraintsTeacherMaxBuildingChangesPerDayAction">
+   <property name="text">
+    <string>Max building changes per day for a teacher</string>
+   </property>
+  </action>
+  <action name="dataSpaceConstraintsTeachersMaxBuildingChangesPerDayAction">
+   <property name="text">
+    <string>Max building changes per day for all teachers</string>
+   </property>
+  </action>
+  <action name="dataSpaceConstraintsTeacherMaxBuildingChangesPerWeekAction">
+   <property name="text">
+    <string>Max building changes per week for a teacher</string>
+   </property>
+  </action>
+  <action name="dataSpaceConstraintsTeachersMaxBuildingChangesPerWeekAction">
+   <property name="text">
+    <string>Max building changes per week for all teachers</string>
+   </property>
+  </action>
+  <action name="dataSpaceConstraintsTeacherMinGapsBetweenBuildingChangesAction">
+   <property name="text">
+    <string>Min gaps between building changes for a teacher</string>
+   </property>
+  </action>
+  <action name="dataSpaceConstraintsTeachersMinGapsBetweenBuildingChangesAction">
+   <property name="text">
+    <string>Min gaps between building changes for all teachers</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsActivitiesSameStartingDayAction">
+   <property name="text">
+    <string>A set of activities has same starting day (any hours)</string>
+   </property>
+  </action>
+  <action name="timetableSaveTimetableAsAction">
+   <property name="text">
+    <string>Save data and timetable as...</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTwoActivitiesOrderedAction">
+   <property name="text">
+    <string>Two activities are ordered</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTeachersMaxHoursContinuouslyAction">
+   <property name="text">
+    <string>Max hours continuously for all teachers</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTeacherMaxHoursContinuouslyAction">
+   <property name="text">
+    <string>Max hours continuously for a teacher</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsStudentsSetMaxHoursContinuouslyAction">
+   <property name="text">
+    <string>Max hours continuously for a students set</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsStudentsMaxHoursContinuouslyAction">
+   <property name="text">
+    <string>Max hours continuously for all students</string>
+   </property>
+  </action>
+  <action name="helpTipsAction">
+   <property name="text">
+    <string>Important tips</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsActivitiesPreferredStartingTimesAction">
+   <property name="text">
+    <string>A set of activities has a set of preferred starting times</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsActivityPreferredTimeSlotsAction">
+   <property name="text">
+    <string>An activity has a set of preferred time slots</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsActivityPreferredStartingTimesAction">
+   <property name="text">
+    <string>An activity has a set of preferred starting times</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsMinGapsBetweenActivitiesAction">
+   <property name="text">
+    <string>Min gaps (hours) between a set of activities</string>
+   </property>
+  </action>
+  <action name="fileExportCSVAction">
+   <property name="text">
+    <string>Export comma separated values (text)</string>
+   </property>
+  </action>
+  <action name="fileImportCSVActivitiesAction">
+   <property name="text">
+    <string>Import activities from CSV file</string>
+   </property>
+  </action>
+  <action name="fileImportCSVActivityTagsAction">
+   <property name="text">
+    <string>Import activity tags from CSV file</string>
+   </property>
+  </action>
+  <action name="fileImportCSVRoomsBuildingsAction">
+   <property name="text">
+    <string>Import rooms and buildings from CSV file</string>
+   </property>
+  </action>
+  <action name="fileImportCSVSubjectsAction">
+   <property name="text">
+    <string>Import subjects from CSV file</string>
+   </property>
+  </action>
+  <action name="fileImportCSVTeachersAction">
+   <property name="text">
+    <string>Import teachers from CSV file</string>
+   </property>
+  </action>
+  <action name="fileImportCSVYearsGroupsSubgroupsAction">
+   <property name="text">
+    <string>Import years, groups and subgroups from CSV file</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsSubactivitiesPreferredTimeSlotsAction">
+   <property name="text">
+    <string>A set of subactivities has a set of preferred time slots</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsSubactivitiesPreferredStartingTimesAction">
+   <property name="text">
+    <string>A set of subactivities has a set of preferred starting times</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTeacherIntervalMaxDaysPerWeekAction">
+   <property name="text">
+    <string>A teacher works in an hourly interval max days per week</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTeachersIntervalMaxDaysPerWeekAction">
+   <property name="text">
+    <string>All teachers work in an hourly interval max days per week</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsStudentsSetIntervalMaxDaysPerWeekAction">
+   <property name="text">
+    <string>A students set works in an hourly interval max days per week</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsStudentsIntervalMaxDaysPerWeekAction">
+   <property name="text">
+    <string>All students work in an hourly interval max days per week</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsActivitiesEndStudentsDayAction">
+   <property name="text">
+    <string>A set of activities end students day</string>
+   </property>
+  </action>
+  <action name="settingsPrintNotAvailableSlotsAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string comment="It means to mark the slots which are not available in the timetable. Lowercase -x-">Mark not available slots with -x- in timetables</string>
+   </property>
+  </action>
+  <action name="spreadActivitiesAction">
+   <property name="text">
+    <string>Spread the activities evenly over the week</string>
+   </property>
+  </action>
+  <action name="statisticsExportToDiskAction">
+   <property name="text">
+    <string>Export advanced statistics to disk</string>
+   </property>
+  </action>
+  <action name="removeRedundantConstraintsAction">
+   <property name="text">
+    <string>Remove redundant constraints</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTwoActivitiesGroupedAction">
+   <property name="text">
+    <string>Two activities are grouped</string>
+   </property>
+  </action>
+  <action name="timetableLockActivitiesDayAction">
+   <property name="text">
+    <string>Lock all activities of a specified day</string>
+   </property>
+  </action>
+  <action name="timetableUnlockActivitiesDayAction">
+   <property name="text">
+    <string>Unlock all activities of a specified day</string>
+   </property>
+  </action>
+  <action name="timetableLockActivitiesEndStudentsDayAction">
+   <property name="text">
+    <string>Lock all activities which end students day</string>
+   </property>
+  </action>
+  <action name="timetableUnlockActivitiesEndStudentsDayAction">
+   <property name="text">
+    <string>Unlock all activities which end students day</string>
+   </property>
+  </action>
+  <action name="timetableLockAllActivitiesAction">
+   <property name="text">
+    <string>Lock all activities of the current timetable</string>
+   </property>
+  </action>
+  <action name="timetableUnlockAllActivitiesAction">
+   <property name="text">
+    <string>Unlock all activities of the current timetable</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsStudentsSetActivityTagMaxHoursContinuouslyAction">
+   <property name="text">
+    <string>Max hours continuously with an activity tag for a students set</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsStudentsActivityTagMaxHoursContinuouslyAction">
+   <property name="text">
+    <string>Max hours continuously with an activity tag for all students</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTeacherActivityTagMaxHoursContinuouslyAction">
+   <property name="text">
+    <string>Max hours continuously with an activity tag for a teacher</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTeachersActivityTagMaxHoursContinuouslyAction">
+   <property name="text">
+    <string>Max hours continuously with an activity tag for all teachers</string>
+   </property>
+  </action>
+  <action name="dataSubactivitiesAction">
+   <property name="text">
+    <string extracomment="Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different">&amp;Modify subactivities</string>
+   </property>
+  </action>
+  <action name="languageAction">
+   <property name="text">
+    <string extracomment="Please translate in your language and also add the original English term, like: 'Idioma/Language'. This is to ensure that people mistakingly selecting an unknown language do not become stuck with it (so that they can find this setting description also in English).">Language</string>
+   </property>
+  </action>
+  <action name="settingsDivideTimetablesByDaysAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Divide HTML timetables with time-axis by days</string>
+   </property>
+  </action>
+  <action name="helpSettingsAction">
+   <property name="text">
+    <string>Help on settings</string>
+   </property>
+  </action>
+  <action name="dataSpaceConstraintsActivityTagPreferredRoomAction">
+   <property name="text">
+    <string>An activity tag has a preferred room</string>
+   </property>
+  </action>
+  <action name="dataSpaceConstraintsActivityTagPreferredRoomsAction">
+   <property name="text">
+    <string>An activity tag has a set of preferred rooms</string>
+   </property>
+  </action>
+  <action name="selectOutputDirAction">
+   <property name="text">
+    <string>Select output directory</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTeachersMaxDaysPerWeekAction">
+   <property name="text">
+    <string>Max days per week for all teachers</string>
+   </property>
+  </action>
+  <action name="settingsPrintActivitiesWithSameStartingTimeAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Print activities with same starting time in timetables</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsThreeActivitiesGroupedAction">
+   <property name="text">
+    <string>Three activities are grouped</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsMaxDaysBetweenActivitiesAction">
+   <property name="text">
+    <string>Max days between a set of activities</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTeacherMinDaysPerWeekAction">
+   <property name="text">
+    <string>Min days per week for a teacher</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTeachersMinDaysPerWeekAction">
+   <property name="text">
+    <string>Min days per week for all teachers</string>
+   </property>
+  </action>
+  <action name="randomSeedAction">
+   <property name="text">
+    <string>Seed of random number generator</string>
+   </property>
+  </action>
+  <action name="settingsUseColorsAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Use colors in interface</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTeacherActivityTagMaxHoursDailyAction">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Max hours daily with an activity tag for a teacher</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTeachersActivityTagMaxHoursDailyAction">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Max hours daily with an activity tag for all teachers</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsStudentsSetActivityTagMaxHoursDailyAction">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Max hours daily with an activity tag for a students set</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsStudentsActivityTagMaxHoursDailyAction">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Max hours daily with an activity tag for all students</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsStudentsSetMaxGapsPerDayAction">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Max gaps per day for a students set</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsStudentsMaxGapsPerDayAction">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Max gaps per day for all students</string>
+   </property>
+  </action>
+  <action name="enableStudentsMaxGapsPerDayAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Enable students max gaps per day</string>
+   </property>
+  </action>
+  <action name="enableActivityTagMaxHoursDailyAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Enable activity tag max hours daily</string>
+   </property>
+  </action>
+  <action name="showWarningForNotPerfectConstraintsAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string extracomment="This is an option, which can be selected or deselected. It means warn before generating, if user uses not perfect constraints">Warn if using not perfect constraints</string>
+   </property>
+   <property name="shortcut">
+    <string/>
+   </property>
+  </action>
+  <action name="helpContentsAction">
+   <property name="text">
+    <string extracomment="menu Help-&gt;Online-&gt;Help contents, opens the webpage of FET documentation">Help contents</string>
+   </property>
+  </action>
+  <action name="helpForumAction">
+   <property name="text">
+    <string extracomment="menu Help-&gt;Forum, opens the webpage of FET forum">Forum</string>
+   </property>
+  </action>
+  <action name="helpAddressesAction">
+   <property name="text">
+    <string extracomment="menu Help-&gt;Online-&gt;Web addresses, shows the web addresses of FET homepage, documentation and forum">Web addresses</string>
+   </property>
+  </action>
+  <action name="helpHomepageAction">
+   <property name="text">
+    <string extracomment="menu Help-&gt;Online-&gt;Homepage, opens the homepage of FET">Homepage</string>
+   </property>
+  </action>
+  <action name="settingsShowShortcutsOnMainWindowAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show shortcut buttons in main window</string>
+   </property>
+  </action>
+  <action name="settingsPrintBreakSlotsAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string comment="It means to show or not the slots which are break slots, in the timetable, with an -X-. Uppercase -X-">Mark break slots with -X- in timetables</string>
+   </property>
+  </action>
+  <action name="enableStudentsMinHoursDailyWithAllowEmptyDaysAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Enable students min hours daily with empty days</string>
+   </property>
+  </action>
+  <action name="showWarningForStudentsMinHoursDailyWithAllowEmptyDaysAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Warn if using students min hours daily with empty days</string>
+   </property>
+  </action>
+  <action name="activityPlanningAction">
+   <property name="text">
+    <string>Activity planning</string>
+   </property>
+  </action>
+  <action name="settingsConfirmActivityPlanningAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string comment="This is a setting - a check box: if a user wants to deactivate/activate the confirmation (instructions) dialog that appears before activity planning dialog">Confirm activity planning</string>
+   </property>
+  </action>
+  <action name="settingsConfirmSpreadActivitiesAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string comment="This is a setting - a check box: if a user wants to deactivate/activate the confirmation (instructions) dialog that appears before spreading the activities over the week dialog">Confirm spread activities over the week</string>
+   </property>
+  </action>
+  <action name="settingsConfirmRemoveRedundantAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string comment="This is a setting - a check box: if a user wants to deactivate/activate the confirmation (instructions) dialog that appears before removing redundant constraints dialog">Confirm remove redundant constraints</string>
+   </property>
+  </action>
+  <action name="settingsConfirmSaveTimetableAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Confirm save data and timetable as</string>
+   </property>
+  </action>
+  <action name="fileClearRecentFilesListAction">
+   <property name="text">
+    <string extracomment="It means clearing the list of recently opened files">&amp;Clear list</string>
+   </property>
+  </action>
+  <action name="dataActivitiesRoomsStatisticsAction">
+   <property name="text">
+    <string extracomment="It refers to the statistics of each activity's possible room(s)">Activities rooms statistics</string>
+   </property>
+  </action>
+  <action name="timetablePrintAction">
+   <property name="text">
+    <string extracomment="Accelerator key (letter after ampersand) for &amp;Generate new, View (&amp;teachers), View (&amp;students), View (&amp;rooms), Show soft &amp;conflicts, &amp;Print, Generate &amp;multiple, must be different">&amp;Print</string>
+   </property>
+   <property name="shortcut">
+    <string extracomment="This is the shortcut for menu item Timetable-&gt;Print. It is recommended to translate with Ctrl+P, the same as original, or with Ctrl+other letter you prefer (do not make duplicates with other shortcuts). All shortcuts are: Ctrl+N (New), Ctrl+O (Open), Ctrl+S (Save), Ctrl+Q (Quit), Ctrl+G (Generate), Ctrl+P (Print). Please use the English keyboard modifiers name, for instance Ctrl, because otherwise the shortcuts do not work (so, even if your keyboard has another name for the Ctrl key, write 'Ctrl'. It will work OK on all platforms. Even if you are on German keyboard, write 'Ctrl' as in English). Maybe it would be good to translate with 'Ctrl+P', the same as the English original, to keep things standard.">Ctrl+P</string>
+   </property>
+  </action>
+  <action name="dataSpaceConstraintsActivitiesOccupyMaxDifferentRoomsAction">
+   <property name="text">
+    <string>A set of activities occupies max different rooms</string>
+   </property>
+  </action>
+  <action name="dataSpaceConstraintsActivitiesSameRoomIfConsecutiveAction">
+   <property name="text">
+    <string>A set of activities are in the same room if they are consecutive</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsStudentsSetMaxDaysPerWeekAction">
+   <property name="text">
+    <string>Max days per week for a students set</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsStudentsMaxDaysPerWeekAction">
+   <property name="text">
+    <string>Max days per week for all students</string>
+   </property>
+  </action>
+  <action name="settingsPrintActivityTagsAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Print activity tags in timetables</string>
+   </property>
+  </action>
+  <action name="statisticsPrintAction">
+   <property name="text">
+    <string>Print advanced statistics</string>
+   </property>
+  </action>
+  <action name="settingsDuplicateVerticalNamesAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Duplicate vertical headers to the right</string>
+   </property>
+  </action>
+  <action name="groupActivitiesInInitialOrderAction">
+   <property name="text">
+    <string>Group activities in the initial order of generation</string>
+   </property>
+  </action>
+  <action name="enableGroupActivitiesInInitialOrderAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Enable group activities in initial order</string>
+   </property>
+  </action>
+  <action name="showWarningForGroupActivitiesInInitialOrderAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Warn if using group activities in initial order</string>
+   </property>
+  </action>
+  <action name="settingsShowSubgroupsInComboBoxesAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show subgroups in combo boxes</string>
+   </property>
+  </action>
+  <action name="settingsShowSubgroupsInActivityPlanningAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show subgroups in activity planning</string>
+   </property>
+  </action>
+  <action name="settingsShowToolTipsForConstraintsWithTablesAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show tool tips for constraints with tables</string>
+   </property>
+  </action>
+  <action name="showWarningForSubgroupsWithTheSameActivitiesAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Warn subgroups with the same activities</string>
+   </property>
+  </action>
+  <action name="timetablesToWriteOnDiskAction">
+   <property name="text">
+    <string comment="It means that the user selects the categories of timetables to be written on disk after the generation (soft conflicts, XML, days horizontal, time vertical, subgroups, teachers, etc.)">Categories of timetables to be written on disk</string>
+   </property>
+  </action>
+  <action name="settingsPrintDetailedTimetablesAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Print detailed timetables</string>
+   </property>
+  </action>
+  <action name="settingsPrintDetailedTeachersFreePeriodsTimetablesAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Print detailed teachers' free periods timetables</string>
+   </property>
+  </action>
+  <action name="dataTeachersSubjectsQualificationsStatisticsAction">
+   <property name="text">
+    <string comment="It means the statistics for the teachers - check the teacher's subject qualification">Teachers subjects qualifications statistics</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

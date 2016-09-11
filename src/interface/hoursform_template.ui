@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HoursForm_template</class>
+ <widget class="QDialog" name="HoursForm_template">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>715</width>
+    <height>598</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string extracomment="The title of the dialog to modify the hours of the day">The hours of the day</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="hoursTextLabel">
+       <property name="text">
+        <string>Number of periods (start hours) per day</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="hoursSpinBox">
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="value">
+        <number>1</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>61</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="0">
+    <layout class="QGridLayout">
+     <item row="1" column="0">
+      <widget class="QLineEdit" name="hour1LineEdit"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="hour1TextLabel">
+       <property name="text">
+        <string>Hour 1</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLineEdit" name="hour2LineEdit"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="hour2TextLabel">
+       <property name="text">
+        <string>Hour 2</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLineEdit" name="hour3LineEdit"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="hour3TextLabel">
+       <property name="text">
+        <string>Hour 3</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="hour4TextLabel">
+       <property name="text">
+        <string>Hour 4</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLineEdit" name="hour4LineEdit"/>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLineEdit" name="hour5LineEdit"/>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="hour5TextLabel">
+       <property name="text">
+        <string>Hour 5</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QLabel" name="hour6TextLabel">
+       <property name="text">
+        <string>Hour 6</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="0">
+      <widget class="QLineEdit" name="hour6LineEdit"/>
+     </item>
+     <item row="12" column="0">
+      <widget class="QLabel" name="hour7TextLabel">
+       <property name="text">
+        <string>Hour 7</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="0">
+      <widget class="QLineEdit" name="hour7LineEdit"/>
+     </item>
+     <item row="15" column="0">
+      <widget class="QLineEdit" name="hour8LineEdit"/>
+     </item>
+     <item row="14" column="0">
+      <widget class="QLabel" name="hour8TextLabel">
+       <property name="text">
+        <string>Hour 8</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="hour9LineEdit"/>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="hour9TextLabel">
+       <property name="text">
+        <string>Hour 9</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="hour10LineEdit"/>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="hour10TextLabel">
+       <property name="text">
+        <string>Hour 10</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="hour11LineEdit"/>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLabel" name="hour11TextLabel">
+       <property name="text">
+        <string>Hour 11</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLineEdit" name="hour12LineEdit"/>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLabel" name="hour12TextLabel">
+       <property name="text">
+        <string>Hour 12</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QLabel" name="hour13TextLabel">
+       <property name="text">
+        <string>Hour 13</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QLineEdit" name="hour13LineEdit"/>
+     </item>
+     <item row="11" column="1">
+      <widget class="QLineEdit" name="hour14LineEdit"/>
+     </item>
+     <item row="10" column="1">
+      <widget class="QLabel" name="hour14TextLabel">
+       <property name="text">
+        <string>Hour 14</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="1">
+      <widget class="QLabel" name="hour15TextLabel">
+       <property name="text">
+        <string>Hour 15</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="1">
+      <widget class="QLineEdit" name="hour15LineEdit"/>
+     </item>
+     <item row="15" column="1">
+      <widget class="QLineEdit" name="hour16LineEdit"/>
+     </item>
+     <item row="14" column="1">
+      <widget class="QLabel" name="hour16TextLabel">
+       <property name="text">
+        <string>Hour 16</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="hour17TextLabel">
+       <property name="text">
+        <string>Hour 17</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLineEdit" name="hour17LineEdit"/>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLabel" name="hour18TextLabel">
+       <property name="text">
+        <string>Hour 18</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLineEdit" name="hour18LineEdit"/>
+     </item>
+     <item row="4" column="2">
+      <widget class="QLabel" name="hour19TextLabel">
+       <property name="text">
+        <string>Hour 19</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QLineEdit" name="hour19LineEdit"/>
+     </item>
+     <item row="6" column="2">
+      <widget class="QLabel" name="hour20TextLabel">
+       <property name="text">
+        <string>Hour 20</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="2">
+      <widget class="QLineEdit" name="hour20LineEdit"/>
+     </item>
+     <item row="9" column="2">
+      <widget class="QLineEdit" name="hour21LineEdit"/>
+     </item>
+     <item row="8" column="2">
+      <widget class="QLabel" name="hour21TextLabel">
+       <property name="text">
+        <string>Hour 21</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="2">
+      <widget class="QLabel" name="hour22TextLabel">
+       <property name="text">
+        <string>Hour 22</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="2">
+      <widget class="QLineEdit" name="hour22LineEdit"/>
+     </item>
+     <item row="12" column="2">
+      <widget class="QLabel" name="hour23TextLabel">
+       <property name="text">
+        <string>Hour 23</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="2">
+      <widget class="QLineEdit" name="hour23LineEdit"/>
+     </item>
+     <item row="15" column="2">
+      <widget class="QLineEdit" name="hour24LineEdit"/>
+     </item>
+     <item row="14" column="2">
+      <widget class="QLabel" name="hour24TextLabel">
+       <property name="text">
+        <string>Hour 24</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QLineEdit" name="hour25LineEdit"/>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLabel" name="hour25TextLabel">
+       <property name="text">
+        <string>Hour 25</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QLineEdit" name="hour26LineEdit"/>
+     </item>
+     <item row="2" column="3">
+      <widget class="QLabel" name="hour26TextLabel">
+       <property name="text">
+        <string>Hour 26</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <widget class="QLineEdit" name="hour27LineEdit"/>
+     </item>
+     <item row="4" column="3">
+      <widget class="QLabel" name="hour27TextLabel">
+       <property name="text">
+        <string>Hour 27</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="3">
+      <widget class="QLabel" name="hour28TextLabel">
+       <property name="text">
+        <string>Hour 28</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="3">
+      <widget class="QLineEdit" name="hour28LineEdit"/>
+     </item>
+     <item row="8" column="3">
+      <widget class="QLabel" name="hour29TextLabel">
+       <property name="text">
+        <string>Hour 29</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="3">
+      <widget class="QLineEdit" name="hour29LineEdit"/>
+     </item>
+     <item row="10" column="3">
+      <widget class="QLabel" name="hour30TextLabel">
+       <property name="text">
+        <string>Hour 30</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="3">
+      <widget class="QLineEdit" name="hour30LineEdit"/>
+     </item>
+     <item row="13" column="3">
+      <widget class="QLineEdit" name="hour31LineEdit"/>
+     </item>
+     <item row="12" column="3">
+      <widget class="QLabel" name="hour31TextLabel">
+       <property name="text">
+        <string>Hour 31</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="3">
+      <widget class="QLineEdit" name="hour32LineEdit"/>
+     </item>
+     <item row="14" column="3">
+      <widget class="QLabel" name="hour32TextLabel">
+       <property name="text">
+        <string>Hour 32</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QLineEdit" name="hour33LineEdit"/>
+     </item>
+     <item row="0" column="4">
+      <widget class="QLabel" name="hour33TextLabel">
+       <property name="text">
+        <string>Hour 33</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QLabel" name="hour34TextLabel">
+       <property name="text">
+        <string>Hour 34</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="QLineEdit" name="hour34LineEdit"/>
+     </item>
+     <item row="5" column="4">
+      <widget class="QLineEdit" name="hour35LineEdit"/>
+     </item>
+     <item row="4" column="4">
+      <widget class="QLabel" name="hour35TextLabel">
+       <property name="text">
+        <string>Hour 35</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="4">
+      <widget class="QLabel" name="hour36TextLabel">
+       <property name="text">
+        <string>Hour 36</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="4">
+      <widget class="QLineEdit" name="hour36LineEdit"/>
+     </item>
+     <item row="8" column="4">
+      <widget class="QLabel" name="hour37TextLabel">
+       <property name="text">
+        <string>Hour 37</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="4">
+      <widget class="QLineEdit" name="hour37LineEdit"/>
+     </item>
+     <item row="10" column="4">
+      <widget class="QLabel" name="hour38TextLabel">
+       <property name="text">
+        <string>Hour 38</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="4">
+      <widget class="QLineEdit" name="hour38LineEdit"/>
+     </item>
+     <item row="12" column="4">
+      <widget class="QLabel" name="hour39TextLabel">
+       <property name="text">
+        <string>Hour 39</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="4">
+      <widget class="QLineEdit" name="hour39LineEdit"/>
+     </item>
+     <item row="14" column="4">
+      <widget class="QLabel" name="hour40TextLabel">
+       <property name="text">
+        <string>Hour 40</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="4">
+      <widget class="QLineEdit" name="hour40LineEdit"/>
+     </item>
+     <item row="0" column="5">
+      <widget class="QLabel" name="hour41TextLabel">
+       <property name="text">
+        <string>Hour 41</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="5">
+      <widget class="QLineEdit" name="hour41LineEdit"/>
+     </item>
+     <item row="3" column="5">
+      <widget class="QLineEdit" name="hour42LineEdit"/>
+     </item>
+     <item row="2" column="5">
+      <widget class="QLabel" name="hour42TextLabel">
+       <property name="text">
+        <string>Hour 42</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="5">
+      <widget class="QLineEdit" name="hour43LineEdit"/>
+     </item>
+     <item row="4" column="5">
+      <widget class="QLabel" name="hour43TextLabel">
+       <property name="text">
+        <string>Hour 43</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="5">
+      <widget class="QLabel" name="hour44TextLabel">
+       <property name="text">
+        <string>Hour 44</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="5">
+      <widget class="QLineEdit" name="hour44LineEdit"/>
+     </item>
+     <item row="8" column="5">
+      <widget class="QLabel" name="hour45TextLabel">
+       <property name="text">
+        <string>Hour 45</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="5">
+      <widget class="QLineEdit" name="hour45LineEdit"/>
+     </item>
+     <item row="11" column="5">
+      <widget class="QLineEdit" name="hour46LineEdit"/>
+     </item>
+     <item row="10" column="5">
+      <widget class="QLabel" name="hour46TextLabel">
+       <property name="text">
+        <string>Hour 46</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="5">
+      <widget class="QLabel" name="hour47TextLabel">
+       <property name="text">
+        <string>Hour 47</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="5">
+      <widget class="QLineEdit" name="hour47LineEdit"/>
+     </item>
+     <item row="15" column="5">
+      <widget class="QLineEdit" name="hour48LineEdit"/>
+     </item>
+     <item row="14" column="5">
+      <widget class="QLabel" name="hour48TextLabel">
+       <property name="text">
+        <string>Hour 48</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="6">
+      <widget class="QLabel" name="hour49TextLabel">
+       <property name="text">
+        <string>Hour 49</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="6">
+      <widget class="QLineEdit" name="hour49LineEdit"/>
+     </item>
+     <item row="2" column="6">
+      <widget class="QLabel" name="hour50TextLabel">
+       <property name="text">
+        <string>Hour 50</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="6">
+      <widget class="QLineEdit" name="hour50LineEdit"/>
+     </item>
+     <item row="4" column="6">
+      <widget class="QLabel" name="hour51TextLabel">
+       <property name="text">
+        <string>Hour 51</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="6">
+      <widget class="QLineEdit" name="hour51LineEdit"/>
+     </item>
+     <item row="6" column="6">
+      <widget class="QLabel" name="hour52TextLabel">
+       <property name="text">
+        <string>Hour 52</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="6">
+      <widget class="QLineEdit" name="hour52LineEdit"/>
+     </item>
+     <item row="8" column="6">
+      <widget class="QLabel" name="hour53TextLabel">
+       <property name="text">
+        <string>Hour 53</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="6">
+      <widget class="QLineEdit" name="hour53LineEdit"/>
+     </item>
+     <item row="10" column="6">
+      <widget class="QLabel" name="hour54TextLabel">
+       <property name="text">
+        <string>Hour 54</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="6">
+      <widget class="QLineEdit" name="hour54LineEdit"/>
+     </item>
+     <item row="13" column="6">
+      <widget class="QLineEdit" name="hour55LineEdit"/>
+     </item>
+     <item row="12" column="6">
+      <widget class="QLabel" name="hour55TextLabel">
+       <property name="text">
+        <string>Hour 55</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="6">
+      <widget class="QLabel" name="hour56TextLabel">
+       <property name="text">
+        <string>Hour 56</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="6">
+      <widget class="QLineEdit" name="hour56LineEdit"/>
+     </item>
+     <item row="0" column="7">
+      <widget class="QLabel" name="hour57TextLabel">
+       <property name="text">
+        <string>Hour 57</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="7">
+      <widget class="QLineEdit" name="hour57LineEdit"/>
+     </item>
+     <item row="3" column="7">
+      <widget class="QLineEdit" name="hour58LineEdit"/>
+     </item>
+     <item row="2" column="7">
+      <widget class="QLabel" name="hour58TextLabel">
+       <property name="text">
+        <string>Hour 58</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="7">
+      <widget class="QLineEdit" name="hour59LineEdit"/>
+     </item>
+     <item row="4" column="7">
+      <widget class="QLabel" name="hour59TextLabel">
+       <property name="text">
+        <string>Hour 59</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="7">
+      <widget class="QLineEdit" name="hour60LineEdit"/>
+     </item>
+     <item row="6" column="7">
+      <widget class="QLabel" name="hour60TextLabel">
+       <property name="text">
+        <string>Hour 60</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="3" column="0">
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>60</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="4" column="0">
+    <layout class="QHBoxLayout">
+     <item>
+      <widget class="QPushButton" name="okPushButton">
+       <property name="text">
+        <string>Ok</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cancelPushButton">
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

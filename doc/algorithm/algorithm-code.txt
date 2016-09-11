@@ -1,0 +1,5 @@
+Please see the file src/engine/generate.cpp from the sources package of FET for the allocation (generation algorithm).
+Also, see the file src/engine/generate_pre.cpp for the algorithm of initial ordering of the activities, before the generation
+algorithm.
+
+You can download the FET sources from the FET homepage, http://lalescu.ro/liviu/fet/

@@ -1,0 +1,31 @@
+﻿File written by Volker Dirr on 12 Aug. 2007:
+
+
+Small note for German translation: (to keep FETs behaviour similar in every form)
+
+Activity	== Aktivität					(done)
+year		== Jahrgang						(done)
+group		== Gruppe						(done)
+subgroup	== Teilgruppe					(done)
+subject     == Unterrichtsfach				(please recheck)
+subject tag	== Unterrichtskennzeichnung		(done)
+(Note: "subject tag" was renamed to "activity tag" in FET)
+remove		== Enfernen oder Löschen		(different at the moment. please rethink about it)
+gap			== Freistunde					(maybe better "Leerstelle" oder "Unterbrechnung". please rethink about it)
+											Freistunde ist umgangssprachlich sehr gut im Schulbetrieb zu verstehen.
+											Das Wort "Stunde" ist jedoch falsch, wenn mit Fet die Zeiträume nicht in Stunden festgelegt werden. (Eine Schule hat die "Stunden" in "Halbe Stunden" festgelegt, da ihre Stunden 60 Minuten (also Periode 2) oder 90 Minuten (also Periode 3) beträgt.
+											Demensprechend müßte eventuell auch "hour" und "periode" oft nicht mit Stunde, sondern oft mit Periode übersett werden.
+											Leerstelle errinnert mich immer an Lehrstelle und finde ich daher etwas komisch.
+											Unterbrechnung scheint mit allgemeingültiger zu sein.
+you			== Sie (oder vermeiden)
+lesson		== Unterrichtsstunde (please rethink about it´s content. is "hour", "lesson", "duration", "period" always used similar in the english translation?)
+
+Bei Übersetzen von Dingen wie "add group" nicht "Gruppe hinzufügen" übersetzen, sondern "Hinzufügen von Gruppen". Grund: Das Wichtige zuerst. Hier geht es um das Hinzufügen. Das es eine Gruppe ist ist klar, da nichts anderes vorhanden ist was hinzugefügt werden könnte.
+
+Abkürkzungen für die Logdateien:
+L == Lehrer
+S == Schüler
+F == Unterrichtsfach
+K == Unterrichtskennzeichnung
+R == Raum
+G == Gewichtung

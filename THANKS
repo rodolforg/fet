@@ -1,0 +1,473 @@
+(chronologically):
+
+Costin Badica - he advised Liviu Lalescu to begin this project, offered suggestions and provided him with documentation.
+
+Carsten Niehaus - suggestions.
+
+Imre Nagy - old mailing list (does not work anymore), suggestions.
+
+Sajith V. K. - suggestions
+
+Michael Towers - lots of bugs reported, sample files, suggestions, front/back-end.
+
+Antti Leppik - sample file, suggestions.
+
+Ian Fantom - sample file, suggestions.
+
+Simon Ghetti - sample files, suggestions.
+
+Gibbon Tamba - sample file, bug reported.
+
+Jerome Durand - bug reported, French translation.
+
+Marek Jaszuk - bugs reported, suggestions, sample file.
+
+Ramanathan Srinivasan - suggested Constraint2ActivitiesConsecutive and Constraint2ActivitiesGrouped.
+
+Vimal Joseph - suggestions, a script to convert the .xml results into .tex.
+
+Cristian Gherman - bugs reported, suggestions.
+
+Nicholas Robinson - suggestions.
+
+Radu Spineanu - Debian package.
+
+Morten Piil - bug reported, sample file.
+
+Sebastian Canagaratna - lots of suggestions, bugs reported, sample files.
+
+Abdul Hadi Kamel - sample file, bugs reported, Malay translation.
+
+Miguel Gea Milvaques - Catalan translation.
+
+Frans de Bruijn - bug reported.
+
+Radoslaw Pasiok - Polish translation.
+
+Daan Huntjens - bug reported, sample file, suggestions, partial Dutch translation.
+
+Yush Yuen - sample file, bug report.
+
+Scott Sweeting - sample file, suggestions, icon for FET.
+
+Dragos Petrascu - suggestions.
+
+Daniel S. - suggestions, help files for the constraints.
+
+Gianluca Salvo - suggested Constraint2ActivitiesOrdered.
+
+Sebastian O'Halloran - suggestions.
+
+Mehmet Gezmisoglu - Turkish translation.
+
+Tom Hosty - sample file, bugs reported, user's guide.
+
+Niels Fikse - Dutch translation.
+
+Simon Bohlin - suggestions.
+
+Volker Dirr - German translation, bug reports, suggestions, 2-point and uniform crossover implementation and testing.
+
+Les Richardson - Update of the FAQ.
+
+Gabi Danon - instructions on how to compile/run FET on some platforms
+
+Manolo Par - suggested ConstraintTeachersMinHoursDaily.
+
+Viktor Ferenczi - bug report, Hungarian translation.
+
+Patrick Fox - improved French translation.
+
+Andres Chandia - icons.
+
+Zoran Zdravkovski - bug reports, Macedonian translation.
+
+Constantin Romulus - bug reports, sample file (private), small improvements in Romanian translation, testing, fet forum logo.
+
+L. W. Johnstone - suggestions, sample file.
+
+Zsolt Udvari - suggestions.
+
+mantas - bug reports.
+
+moryus - bug report.
+
+bb - suggestions.
+
+Maciej Deorowicz - suggestions.
+
+José César Fernández López - Spanish translation.
+
+Daniel Chiriac - suggestions.
+
+Dimitrios Ropokis - suggestions, Greek translation.
+
+Danail - suggestions.
+
+Peter Ambroz - suggestions.
+
+Nirwan Yus - Indonesian translation.
+
+Marco Barsotti - Italian translation, testing.
+
+Silver - Arabic translation, sample file.
+
+Horatiu Halmajan - suggestions.
+
+kdsayang - suggestions.
+
+didit - suggestions.
+
+Bobby Wise - sample files.
+
+Willy Henckert - sample file.
+
+Wilfred - suggestions.
+
+W. D. John - sample file.
+
+Darius Staigys - Lithuanian translation.
+
+George Miliotis [Ionio] - suggestions.
+
+Sílvia - suggestions, sample file.
+
+Chafik Graiguer - suggestions, testing.
+
+Niels Stargardt - sample file.
+
+Cristian Balint - sample files.
+
+sherman - suggestion.
+
+Azu Boba - suggestion.
+
+Thomas Schwartz - bug report.
+
+Catalin Maican - suggestions.
+
+Ilya V. Paramonov - Russian translation.
+
+Hamed SadeghiNeshat - Persian translation.
+
+Joan de Gracia - Catalan translation of the manual.
+
+Massimo Mancini - suggestions.
+
+Regina V. Kryvakovska - Russian translation additional checking.
+
+ßingen - suggestions.
+
+Angela - suggestions.
+
+T. Renganathan - sample file.
+
+Marco - sample file.
+
+sally sat - Persian translation update.
+
+sstt2 - bug report.
+
+Nikos Koutsoukos - suggestions, bug reports.
+
+pinco - suggestions.
+
+Ben Bauer - suggestions.
+
+Rodica Lalescu - suggestions.
+
+Gigica Nedelcu - icons design.
+
+Paolo Cataldi - suggestions.
+
+Gerrit Jan Veltink - sample file, suggestions.
+
+Soyeb Aswat - suggestions.
+
+Andriy Melnyk - Ukrainian translation.
+
+Frans - suggestions.
+
+m - suggestions.
+
+Christoph Schilling - sample file.
+
+Frank Mártin - Brazilian Portuguese translation.
+
+Werner Bruns - Brazilian Portuguese translation.
+
+aliponte - sample file.
+
+David Lamhauge - Danish translation.
+
+murad - suggestions.
+
+Achini Duisna - Sinhala translation.
+
+Ondrej Gregor - Slovak translation.
+
+Karel Rodríguez Varona - bug report.
+
+Remus Turea - help with the FET homepage.
+
+Joachim - suggestions.
+
+Chichi Lalescu - suggestions.
+
+Iftekhar Ahmad - suggestions.
+
+DT - suggestions.
+
+Yotam Medini - Hebrew translation.
+
+mohd - suggestions.
+
+Dimitris Kanatas - Greek translation update.
+
+waleed - sample file.
+
+aang - suggestions.
+
+M K Lohumi - sample file.
+
+Régis Bouguin - French translation update.
+
+Ivan Starchevicy - Serbian translation.
+
+Radan Putnik - Serbian translation.
+
+Asti Widayanti - sample file.
+
+uni_instructor - suggestions.
+
+liquid - suggestions.
+
+Juan Marcos Filgueira Gomis - Galician translation (based on the Spanish translation by José César Fernández López, as of April 2011).
+
+llantones - example file.
+
+Christian Kemmer - suggestions.
+
+Davide G. M. Salvetti - suggestions.
+
+lalloso - suggestions.
+
+drew - suggestions.
+
+Fabio Piedimonte - suggestions.
+
+K - suggestions.
+
+Karel Rodríguez Varona - suggestions.
+
+skinkone - suggestions.
+
+Jonathan Block - suggestions.
+
+Nguyen Truong Thang - Vietnamese translation.
+
+kdrosos - bug report.
+
+Ian Holden - suggestions and code.
+
+Sarwan Bangar - bug report.
+
+Petros Nouvakis - suggestions, sample file.
+
+mma - suggestions.
+
+Orzubek Eraliyev - Uzbek translation.
+
+k1aas - suggestions.
+
+nomad - suggestions.
+
+Robert Sutcliffe - suggestions.
+
+rjmillett - suggestions.
+
+yasin dehghan - suggestions.
+
+Daniel - sample file.
+
+Pietro - suggestions.
+
+arivasm - suggestion.
+
+AZ - suggestion.
+
+Etlau - suggestions.
+
+Nemo - suggestions.
+
+Anton Anthofer - suggestions.
+
+Danny Zitzman - suggestions.
+
+geaplanet - sample file.
+
+Leandro Bueno - suggestions.
+
+Laid Messaoudi - sample files.
+
+karim - suggestions.
+
+hicham_idrissi - bug report.
+
+Davide Cottignoli - suggestions.
+
+agemagician - suggestions.
+
+Vlăduţ Frăţiman - suggestions.
+
+vlad2005 - suggestions.
+
+mouiata - suggestions.
+
+rapsy - sample file.
+
+clouds - suggestions.
+
+MarioMic - suggestions.
+
+Cloves das Neves - Brazilian Portuguese translation.
+
+pedrobordon - sample file.
+
+Tonny Chan - suggestion.
+
+Artur Lugu - Albanian translation.
+
+plaldw - suggestion.
+
+jimmyjim - suggestions for a custom version.
+
+Curtis Wilson - suggestions for a custom version.
+
+Mohamed Bahaj - example file.
+
+Thomas Klausner - pkgsrc packager.
+
+Jörg Sonnenberger - patch to fix a building problem for the new C++11.
+
+Boubker - suggestions.
+
+Alexey Loginov - suggestions.
+
+_indianajones - suggestion.
+
+russell - suggestion.
+
+Nguyen Huu Tuyen - example files.
+
+fromturkey - suggestion.
+
+orange - Chinese Simplified translation.
+
+nguyenhuuduyet - example file.
+
+Vanyo Georgiev - suggestion.
+
+bharatstank - suggestion.
+
+alxgudea - suggestion.
+
+andrealva - suggestion.
+
+dotosouza - suggestion.
+
+Bob Hairgrove - suggestions.
+
+James - Chinese Traditional translation.
+
+Khalilullah Yosufi - suggestions.
+
+mercurialuser - suggestions.
+
+azaer - bug report.
+
+chintu - suggestion.
+
+khalafi - suggestion.
+
+jillali elghazoui - suggestion.
+
+Mohamed NAJARI - suggestions.
+
+youssouf - suggestion.
+
+Pascal Cohen - French translation.
+
+Asier Urio Larrea - Basque translation.
+
+Pavel Fric - Czech translation.
+
+Michel - bug report.
+
+MilesM - suggestion.
+
+adso - suggestions.
+
+locutusofborg - suggestions.
+
+Maouhoub - suggestion.
+
+flauta - Italian translation typos reported.
+
+Marco Vassura - suggestion and code.
+
+Luigi Valbonesi - suggestions.
+
+fernandolordao - suggestion.
+
+Wizard - suggestion.
+
+ant7 - suggestion.
+
+Lizio - suggestions.
+
+Omar Ben Ali - suggestions for the Morocco custom version.
+
+Nguyen Trong Hieu - help with the Vietnamese translation of the Algeria custom version.
+
+Arsenio Stabile - suggestions.
+
+Vangelis Karafillidis - suggestion.
+
+Handaya - suggestions.
+
+Sudharshan K M - example file.
+
+Nataraj Urs H D - example file.
+
+Alexandre R. Soares - Brazilian Portuguese translation.
+
+hudrea - suggestions.
+
+Udo Schütz - suggestions.
+
+Jijo Jose - example file.
+
+Fernando Poblete - suggestions.
+
+Benahmed Abdelkrim - suggestion.
+
+math user - suggestion.
+
+ChicagoPianoTuner - suggestion.
+
+MING-KIAN JONATHAN CEDRIC LEE KIM GNOK - suggestion.
+
+daltinkurt - suggestion.
+
+Léo-Paul Roch - suggestion.
+
+Matthias Söllner - suggestion.
+
+auriolar - suggestions.
+
+dmcdonald - suggestion.
+
+wahyuamin - example file.
+
+abautu - suggestions.

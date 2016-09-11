@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingsTimetableHtmlLevelForm_template</class>
+ <widget class="QDialog" name="SettingsTimetableHtmlLevelForm_template">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>832</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Settings - html level of timetables dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>The html level for generated timetables</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QRadioButton" name="level0RadioButton">
+        <property name="text">
+         <string>Level 0 - no css (smallest filesize, no css file)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QRadioButton" name="level1RadioButton">
+        <property name="text">
+         <string>Level 1 - basic css
+- less then 1 kb larger filesize than level 0
+- css file created to style elements table, caption, thead, tfoot, tbody, th and td
+- page-break after every or every second timetable (useful if you print timetables)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QRadioButton" name="level2RadioButton">
+        <property name="text">
+         <string>Level 2 - normal css (default)
+- all features of level 1 with around 5% larger filesize than level 1
+- style x-axis and y-axis of tablehead (useful to style width and height of the activity cells)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QRadioButton" name="level3RadioButton">
+        <property name="text">
+         <string>Level 3 - advanced css
+- all features of level 2 with around 2 times larger filesize than level 2
+- style (or hide) all subjects, activity tags, teachers, students sets and rooms
+- style (or hide) line 1, line 2 and line 3 of the activity cells</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QRadioButton" name="level4RadioButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Level 4 - full css
+- all features of level 3 with around 2.5 times larger filesize than level 2
+- style every single subject, activity tag, teacher, students set and room</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QRadioButton" name="level5RadioButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Level 5 - JavaScript
+- all features of level 4 with around 3.5 times larger filesize than level 2
+- highlighting of same subjects, activity tags, teachers, students sets and rooms
+(needs JavaScript - just move mouse over a word and wait a little bit)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QRadioButton" name="level6RadioButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Level 6 - overloaded css
+- all features of level 5 with around 4 times larger filesize than level 2
+- style the cell of every single subject, activity tag, teacher or student
+(also useful to hide activities with special activity tags)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QRadioButton" name="level7RadioButton">
+          <property name="text">
+           <string>Level 7 - colors (level 3 plus colors)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout">
+          <item>
+           <spacer>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="okPushButton">
+            <property name="text">
+             <string>OK</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="cancelPushButton">
+            <property name="text">
+             <string>Cancel</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

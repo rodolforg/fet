@@ -1,0 +1,7510 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<fet version="5.30.3">
+
+<Institution_Name>Département de Mécanique - Filière Mécanique. Emplois du temps S1 (2012/2013)</Institution_Name>
+
+<Comments>Emplois du temps S1 : Année Universitaire 2012/2013</Comments>
+
+<Days_List>
+<Number_of_Days>5</Number_of_Days>
+<Day>
+	<Name>Dimanche</Name>
+</Day>
+<Day>
+	<Name>Lundi</Name>
+</Day>
+<Day>
+	<Name>Mardi</Name>
+</Day>
+<Day>
+	<Name>Mercredi</Name>
+</Day>
+<Day>
+	<Name>Jeudi</Name>
+</Day>
+</Days_List>
+
+<Hours_List>
+<Number_of_Hours>6</Number_of_Hours>
+<Hour>
+	<Name>08:00</Name>
+</Hour>
+<Hour>
+	<Name>09:35</Name>
+</Hour>
+<Hour>
+	<Name>11:10</Name>
+</Hour>
+<Hour>
+	<Name>12:35</Name>
+</Hour>
+<Hour>
+	<Name>14:00</Name>
+</Hour>
+<Hour>
+	<Name>15:45</Name>
+</Hour>
+</Hours_List>
+
+<Subjects_List>
+<Subject>
+	<Name>AEP en Energétique</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Acoustique</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Anatomie Humaine Fonctionnel</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Anglais</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Anglais Technique</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Anglais Technique I</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Anglais Technique III</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Applications Thermique Solaire (SD)</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Automatismes Industriels</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Avionique de Puissance</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Biomécanique I</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>C.A.O</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>CAO-CFAO Médicale</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>CAO/DAO</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>CV/CND</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Cahier de Charges</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Captation de l&apos;Energie Solaire</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Capteurs Solaires</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Capteurs et IM</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Capteurs et Instrumentation</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Caractérisation MMM</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Caractérisation Métallurgique</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Caractérisation des Métaux</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Circuits Intégrés Linéaires</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Circuits à Semi-conducteurs</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Combustion</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Communication Ecrite et Orale</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Communication en Anglais</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Communication en Français</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Comportement Tribologique</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Comportement des Métaux et AMMP</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Conception Mécanique</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Conception des GF</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Conception et DSM</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Conduction</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Conduction de la Chaleur</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Construction Mécanique</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Contrôle Non Destructif</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Contrôle de Véhicule</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Contrôle des Systèmes</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Conversion d&apos;Energie</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Conversion de l&apos;Energie Solaire</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Corrosion</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Céramique à vocation BMBM</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Céramiques à Vocation</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>D.A.O</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Diagnostique et Contôle des TM</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Dynamique des Fluides</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Dynamique des Fluides Diphasiques</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Dynamique des Fluides Monophasiques</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Dynamique des Fluides et Turbulence</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Dynamique des Machines</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Dynamique du Mouvement et CC</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Démarche de Projet</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Echangeurs de Chaleur</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Ecoulements Diphasiques</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Ecoulements en Milieux Poreux</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Electonique</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Electonique Fondamentale 2</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Electricité Appliquée</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Electronique de Puissance</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Electrotechnique Fondamentale 2</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Energies Nouvelles</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Energies Renouvelables</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Essais Mécaniques</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Expertise des Pièces</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>FMS</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Fabrication</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Fatigue et Rupture des MS</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Fiabilité</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Fonderie</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Fonderie et TT</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Froid et Séchage </Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Gestion des SP</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Génération Electrique</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Habitat Solaire</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Imagerie Médicale</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Initiation à la CAO</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Insrumentation Médicale</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Instrumentation et Mesures en TF</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Instrumentation-Avionique</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Instruments de Bord</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Introduction aux Propulseurs</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Laboratoire de Contrôle Digital</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Langue Etrangère</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Le monde de l&apos;entreprise</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>MDF</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>MDF/TM</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Machines Electriques Aéro.</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Machines Hydrauliques</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Machines Hydrothermiques</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Maintenance ER</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Maintenance Industrielle</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Maintenance Véhicule</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Maintenance des MT</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Management</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Matériaux</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Matériaux Aéro. et Composites</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Matériaux Composites</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Matériaux Composites et BM</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Matériaux Métalliques</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Matériaux Photovoltaiques</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Matériaux Polymère et Composites </Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Matériaux et Eléments de Physiologie</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Matériaux et Milieu Vivant</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Matériaux pour les Applications AE</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Matériaux-Corrosion</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Mini Projet GMAO</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Modélisation en Biomécanique</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Modélisation et SN 1</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Moteur à Combustion Interne</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Mécanique Analytique</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Mécanique Avancée</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Mécanique de la Rupture</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Mécanique des Fluides</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Mécanique des Milieux Continus</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Mécanique des Structures AS</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Mécanique du Contact et Tribologie</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Mécanique du vol</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Méthode de Recherche Biblio.</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Méthodes Numériques AE I</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Méthodes Numériques Appliquées I</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Méthodes de Caractérisation SM</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Méthodes de Sélection des Matériaux</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Méthodes et FAO</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Méthodologie de Rédaction de RM</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Métrologie et Statistique</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Normes et Règlementations</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Numérique 1</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Optimisation Energétique des MT</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Ordinateurs de Bord</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Outils Informatique de MB</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Outils Informatiques</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Outils Mathématiques</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Outils Numériques</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Outils Numériques de Base</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Physico-Chimie des Alliages</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Physiologie et Anatomie</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Pilotage Automatique et DV</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Pompage Solaire</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Pompes et Compresseurs</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Pratique des Logiciels de Calcul</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Procédés d&apos;Usinage NC</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Procédés de MFM</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Procédés de MOM</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Projet GMAO</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Projet d&apos;Initiation à la RL</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Projet de Synthèse Avion</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Projet de Synthèse Lanceur</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Projets de Conception et DSM</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Propriétés des Biomatériaux</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Propulsion et Aérodynamique</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Qualité en CM</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>RDM</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>RDM Avancée</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Recherche Opérationnelle</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Robotique Médicale</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Régulation</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>SDM</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Science de la Matière</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Science des Matériaux</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Servomécanismes dans l&apos;aviation</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Simulation Numérique et MA</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Soudage</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Stabilité Dynamique des SM</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Station Météo</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Stockage de l&apos;Energie Solaire</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Stratégie et Management de l&apos; Entreprise</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Structure Aéronautique</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Synthèse et Formulation des Polymères</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Système Mécanique</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Systèmes Hydrauliques</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Systèmes Mécaniques Articulés</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TAT 300</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TC/THERMO</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TEC 323</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TEC 324</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TEC 325</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TEC 326</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TEC 329</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TEC 336</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TEC 337</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TEC 345</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TEC 348</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TEC 360</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TEC 365</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TEC 367</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TEC 368</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TEC 369</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TEC 374</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TEC 376</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TEC 401</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TEC 402</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TEC 403</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TEC 404</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TEC 405</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TEC 406</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TEC 500</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TEC 501</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TEC 502</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TEG 040</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>TT/CE</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Technique de Fab. Avancée</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Techniques de Fabrication</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Techniques de Fabrication CA</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Technologie Hydraulique</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Technologie de Conception</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Technologie des Métaux</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Thermodynamique</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Thermodynamique Avancée</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Thermodynamique Générale et DE</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Thermomécanique</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Théorie des Mécanismes</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Traitement de Signal pour le Mécanicien</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Traitements Thermiques</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Transfert Thermique</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Transfert Thermique CCR</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Transfert de Chaleur</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Transferts Radiatifs dans les MDG</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Transmission Hydraulique Industrielle</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Transmission de Puissancee MH</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Tribologie</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Turbomachines</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Usinage des Surfaces Gauches</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Utilisation de Logiciels de Simulation II</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Verre et Céramique</Name>
+	<Comments></Comments>
+</Subject>
+<Subject>
+	<Name>Vibration des Structures des MT</Name>
+	<Comments></Comments>
+</Subject>
+</Subjects_List>
+
+<Activity_Tags_List>
+<Activity_Tag>
+	<Name>(C)</Name>
+	<Comments></Comments>
+</Activity_Tag>
+<Activity_Tag>
+	<Name>(TD)</Name>
+	<Comments></Comments>
+</Activity_Tag>
+<Activity_Tag>
+	<Name>(TP)</Name>
+	<Comments></Comments>
+</Activity_Tag>
+<Activity_Tag>
+	<Name>(1/15j)</Name>
+	<Comments></Comments>
+</Activity_Tag>
+<Activity_Tag>
+	<Name>(TP/Projet)</Name>
+	<Comments></Comments>
+</Activity_Tag>
+</Activity_Tags_List>
+
+<Teachers_List>
+<Teacher>
+	<Name>A. BENDERRADJI 
+</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>A. BENHIZIA</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>A. BOURIH</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>A. BOUSSAHA</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>A. DJENANE</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>A. HASSAINIA</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>A. KHERRAF</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>A. MIHI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>A. SLIMANI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>A. TEMAGHOULT</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>ABDELHAMID</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>ABDESSEMED</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>ACHACHI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>AMEDAH</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>ATHAMNA</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>AZOUI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>B. BARKAT 
+</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>B. BENMOHAMED 
+</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>B. BOUHAZILA</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>B. KARI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>B. MOHAMMEDI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>B. ZAOUCH</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>BAHMANI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>BELLAALA</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>BELLAL</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>BENABES</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>BENACER</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>BENAICHA</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>BENBRAHIM</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>BENHASSINE</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>BENMESSAOUD</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>BENMOUSSA</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>BENOUDJIT</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>BENSEGHIR</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>BENYOUCEF</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>BENZAWAY</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>BOUGLOULA</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>BOUGUECHAL</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>BOUKHLOUF</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>BOUMELLA</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>BOUZGHAYA</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>BRIKI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>BRIOUA</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>C. BOUDAB 
+</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>C. BOUGRIOU</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>C. LAGGOUNE</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>CHERGUI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>D. AMEDDAH</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>D. BATACHE 
+</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>D. BOUTEGHMES</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>D. DJARI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>D. TITOUNA</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>DERARDJA</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>DJAABA</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>DJARALLAH</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>DJEBABRA</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>DJEFFAL</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>DRID</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Dr. CHIBA</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Dr. FARDJI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Dr. GHASSIRI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>Dr. MADOUI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>F. BOUGUERNE</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>FANTOUS</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>FEDALI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>G. MEBARKI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>GHERABLI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>GHODBANE</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>GOURMAT</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>GUENIFI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>H. BENMOUSSA</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>H. CHAABANE</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>H. MAZOUZ</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>H.MADANI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>IFERROUGENE</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>K. HACHANI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>K. SEGHIR</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>K. ZIDANI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>KACHA</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>KERCHA</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>KHAMARI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>KHIREDDINE</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>L. MESSAOUDI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>M. ABABSA
+</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>M. ABASSI
+</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>M. ASSAS 
+</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>M. BENBIA 
+</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>M. BENYAHIA 
+</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>M. BRIOUA</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>M. GHEZAL</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>M. LAHBARI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>M. MASMOUDI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>M. NAOUN</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>M. NEZAR</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>M. SIAMEUR</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>M. TRAD</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>M.T. GAID</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>MAATAR</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>MASMOUDI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>MECHENEN</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>MELAAB</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>MELLAL</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>MERARDA</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>MOUSS</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>N. AGGOUNE 
+</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>N. BESSANANE</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>N. SAIDANI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>N. SOLTANI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>OUAGHLENT</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>OUAZANI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>OUCHEN</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>OUNISSI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>R. BENBOUTA 
+</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>R. MANAA</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>R. MENINA</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>REGAI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>S. BELKHIR 
+</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>S. BOUGOUL</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>S. DERRADJI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>S. MADANI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>S. MANSOURI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>S. RAHAL</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>SMADI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>T. OUTTAS</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>W. KADDOURI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+<Teacher>
+	<Name>ZIDANI</Name>
+	<Target_Number_of_Hours>0</Target_Number_of_Hours>
+	<Qualified_Subjects>
+	</Qualified_Subjects>
+	<Comments></Comments>
+</Teacher>
+</Teachers_List>
+
+<Students_List>
+<Year>
+	<Name>5 SDM</Name>
+	<Number_of_Students>15</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>L2 AERO</Name>
+	<Number_of_Students>30</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>L3 AERO</Name>
+	<Number_of_Students>30</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>L3 BIO</Name>
+	<Number_of_Students>26</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>L3 CMAO</Name>
+	<Number_of_Students>19</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>L3 GEN</Name>
+	<Number_of_Students>40</Number_of_Students>
+	<Comments></Comments>
+	<Group>
+		<Name>Gr1</Name>
+		<Number_of_Students>20</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+	<Group>
+		<Name>Gr2</Name>
+		<Number_of_Students>20</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+</Year>
+<Year>
+	<Name>L3 GMM</Name>
+	<Number_of_Students>24</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>L3 MSP</Name>
+	<Number_of_Students>30</Number_of_Students>
+	<Comments></Comments>
+	<Group>
+		<Name>L3 MER</Name>
+		<Number_of_Students>15</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+	<Group>
+		<Name>L3 MMTH</Name>
+		<Number_of_Students>15</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+</Year>
+<Year>
+	<Name>L3 PM</Name>
+	<Number_of_Students>22</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>M1 BIO</Name>
+	<Number_of_Students>16</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>M1 CSM</Name>
+	<Number_of_Students>15</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>M1 EN</Name>
+	<Number_of_Students>14</Number_of_Students>
+	<Comments></Comments>
+	<Group>
+		<Name>G1</Name>
+		<Number_of_Students>8</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+	<Group>
+		<Name>G2</Name>
+		<Number_of_Students>14</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+</Year>
+<Year>
+	<Name>M1 GMM</Name>
+	<Number_of_Students>22</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>M1 IES</Name>
+	<Number_of_Students>12</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>M1 MP</Name>
+	<Number_of_Students>30</Number_of_Students>
+	<Comments></Comments>
+	<Group>
+		<Name>M1 MER</Name>
+		<Number_of_Students>22</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+	<Group>
+		<Name>M1 MMTH</Name>
+		<Number_of_Students>11</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+</Year>
+<Year>
+	<Name>M1 PM</Name>
+	<Number_of_Students>15</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>M1 TA</Name>
+	<Number_of_Students>27</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>M2 BIO</Name>
+	<Number_of_Students>27</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>M2 CSM</Name>
+	<Number_of_Students>13</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>M2 EN</Name>
+	<Number_of_Students>16</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>M2 GMM</Name>
+	<Number_of_Students>14</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>M2 MP</Name>
+	<Number_of_Students>16</Number_of_Students>
+	<Comments></Comments>
+	<Group>
+		<Name>M2 MER</Name>
+		<Number_of_Students>15</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+	<Group>
+		<Name>M2 MMTH</Name>
+		<Number_of_Students>15</Number_of_Students>
+		<Comments></Comments>
+	</Group>
+</Year>
+<Year>
+	<Name>M2 PM</Name>
+	<Number_of_Students>19</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>M2 IES</Name>
+	<Number_of_Students>10</Number_of_Students>
+	<Comments></Comments>
+</Year>
+<Year>
+	<Name>M2 TA</Name>
+	<Number_of_Students>20</Number_of_Students>
+	<Comments></Comments>
+</Year>
+</Students_List>
+
+<Activities_List>
+<Activity>
+	<Teacher>M. TRAD</Teacher>
+	<Subject>TEC 348</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>5 SDM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>1</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. BENMOHAMED 
+</Teacher>
+	<Subject>TEC 336</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>5 SDM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>2</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BELLAALA</Teacher>
+	<Subject>TAT 300</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>5 SDM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>3</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. BENMOHAMED 
+</Teacher>
+	<Subject>TEC 336</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>5 SDM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>4</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>H. CHAABANE</Teacher>
+	<Subject>TEG 040</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>5 SDM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>5</Id>
+	<Activity_Group_Id>5</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>H. CHAABANE</Teacher>
+	<Subject>TEG 040</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>5 SDM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>6</Id>
+	<Activity_Group_Id>5</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. TRAD</Teacher>
+	<Subject>TEC 348</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>5 SDM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>7</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>R. MANAA</Teacher>
+	<Subject>TEC 502</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>5 SDM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>8</Id>
+	<Activity_Group_Id>8</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>R. MANAA</Teacher>
+	<Subject>TEC 502</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>5 SDM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>9</Id>
+	<Activity_Group_Id>8</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>R. MANAA</Teacher>
+	<Subject>TEC 502</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>5 SDM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>10</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. BENMOHAMED 
+</Teacher>
+	<Subject>TEC 501</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>5 SDM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>11</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. BENMOHAMED 
+</Teacher>
+	<Subject>TEC 501</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>5 SDM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>12</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. BOURIH</Teacher>
+	<Subject>TEC 500</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>5 SDM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>14</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. BOURIH</Teacher>
+	<Subject>TEC 500</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>5 SDM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>15</Id>
+	<Activity_Group_Id>15</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. BOURIH</Teacher>
+	<Subject>TEC 500</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>5 SDM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>16</Id>
+	<Activity_Group_Id>15</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. TEMAGHOULT</Teacher>
+	<Subject>TEC 404</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>5 SDM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>17</Id>
+	<Activity_Group_Id>17</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. TEMAGHOULT</Teacher>
+	<Subject>TEC 404</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>5 SDM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>18</Id>
+	<Activity_Group_Id>17</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>R. MANAA</Teacher>
+	<Subject>TEC 337</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>5 SDM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>19</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>R. MANAA</Teacher>
+	<Subject>TEC 337</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>5 SDM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>20</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Dr. CHIBA</Teacher>
+	<Subject>Physiologie et Anatomie</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>35</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Dr. CHIBA</Teacher>
+	<Subject>Physiologie et Anatomie</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>L3 BIO</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>36</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>DJAABA</Teacher>
+	<Subject>Tribologie</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>37</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>DJAABA</Teacher>
+	<Subject>Tribologie</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>L3 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>38</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>CHERGUI</Teacher>
+	<Subject>Biomécanique I</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>39</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>CHERGUI</Teacher>
+	<Subject>Biomécanique I</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>40</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>H. MAZOUZ</Teacher>
+	<Subject>Matériaux et Milieu Vivant</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>41</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>H. MAZOUZ</Teacher>
+	<Subject>Matériaux et Milieu Vivant</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>42</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BOUKHLOUF</Teacher>
+	<Subject>Comportement des Métaux et AMMP</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>43</Id>
+	<Activity_Group_Id>43</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BOUKHLOUF</Teacher>
+	<Subject>Comportement des Métaux et AMMP</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>44</Id>
+	<Activity_Group_Id>43</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. DERRADJI</Teacher>
+	<Subject>Outils Informatique de MB</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>45</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BENHASSINE</Teacher>
+	<Subject>Capteurs et Instrumentation</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>47</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BELLAL</Teacher>
+	<Teacher>BENHASSINE</Teacher>
+	<Subject>Capteurs et Instrumentation</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Activity_Tag>(1/15j)</Activity_Tag>
+	<Students>L3 BIO</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>48</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>N. SAIDANI</Teacher>
+	<Subject>Anglais</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>49</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BOUGUECHAL</Teacher>
+	<Subject>Instrumentation-Avionique</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>50</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BOUGUECHAL</Teacher>
+	<Subject>Instrumentation-Avionique</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>L3 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>51</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ACHACHI</Teacher>
+	<Subject>Servomécanismes dans l&apos;aviation</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>52</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ACHACHI</Teacher>
+	<Subject>Servomécanismes dans l&apos;aviation</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>L3 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>53</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>SMADI</Teacher>
+	<Subject>Fiabilité</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>54</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>SMADI</Teacher>
+	<Subject>Fiabilité</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>55</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BENBRAHIM</Teacher>
+	<Subject>Ordinateurs de Bord</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>56</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BENBRAHIM</Teacher>
+	<Subject>Ordinateurs de Bord</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>L3 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>57</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BENBRAHIM</Teacher>
+	<Subject>Pilotage Automatique et DV</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>58</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BENBRAHIM</Teacher>
+	<Subject>Pilotage Automatique et DV</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>L3 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>59</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. MASMOUDI</Teacher>
+	<Subject>Structure Aéronautique</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>60</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. MASMOUDI</Teacher>
+	<Subject>Structure Aéronautique</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>61</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. MIHI</Teacher>
+	<Subject>Matériaux-Corrosion</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>62</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>K. ZIDANI</Teacher>
+	<Subject>Matériaux Aéro. et Composites</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>63</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>K. ZIDANI</Teacher>
+	<Subject>Matériaux Aéro. et Composites</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>64</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>OUNISSI</Teacher>
+	<Subject>Electonique</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>65</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>OUNISSI</Teacher>
+	<Subject>Electonique</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>66</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. NEZAR</Teacher>
+	<Subject>Génération Electrique</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>67</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. NEZAR</Teacher>
+	<Subject>Génération Electrique</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>68</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. SIAMEUR</Teacher>
+	<Subject>Systèmes Hydrauliques</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>69</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. SIAMEUR</Teacher>
+	<Subject>Systèmes Hydrauliques</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>70</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>GOURMAT</Teacher>
+	<Subject>Avionique de Puissance</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L2 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>71</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>GOURMAT</Teacher>
+	<Subject>Avionique de Puissance</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>L2 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>72</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BOUGUECHAL</Teacher>
+	<Subject>Instruments de Bord</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L2 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>73</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BOUGUECHAL</Teacher>
+	<Subject>Instruments de Bord</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L2 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>74</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>OUNISSI</Teacher>
+	<Subject>Circuits à Semi-conducteurs</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L2 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>75</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>OUNISSI</Teacher>
+	<Teacher>BENYOUCEF</Teacher>
+	<Subject>Circuits à Semi-conducteurs</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>L2 AERO</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>76</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BENABES</Teacher>
+	<Subject>Electricité Appliquée</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L2 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>77</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>GUENIFI</Teacher>
+	<Subject>Circuits Intégrés Linéaires</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L2 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>78</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>GUENIFI</Teacher>
+	<Teacher>OUCHEN</Teacher>
+	<Subject>Circuits Intégrés Linéaires</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Activity_Tag>(1/15j)</Activity_Tag>
+	<Students>L2 AERO</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>79</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. GHEZAL</Teacher>
+	<Subject>Introduction aux Propulseurs</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L2 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>80</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. GHEZAL</Teacher>
+	<Subject>Introduction aux Propulseurs</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Activity_Tag>(1/15j)</Activity_Tag>
+	<Students>L2 AERO</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>81</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. NEZAR</Teacher>
+	<Subject>Machines Electriques Aéro.</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L2 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>82</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. NEZAR</Teacher>
+	<Subject>Machines Electriques Aéro.</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L2 AERO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>83</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. RAHAL</Teacher>
+	<Subject>Thermodynamique</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 GEN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>84</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. RAHAL</Teacher>
+	<Subject>Thermodynamique</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 GEN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>85</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. BOUHAZILA</Teacher>
+	<Subject>Mécanique des Fluides</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 GEN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>86</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. BOUHAZILA</Teacher>
+	<Subject>Mécanique des Fluides</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 GEN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>87</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. BENDERRADJI 
+</Teacher>
+	<Subject>Transfert de Chaleur</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 GEN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>88</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. BENDERRADJI 
+</Teacher>
+	<Subject>Transfert de Chaleur</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 GEN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>89</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>N. SOLTANI</Teacher>
+	<Teacher>F. BOUGUERNE</Teacher>
+	<Subject>TC/THERMO</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>Gr2</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>90</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>L. MESSAOUDI</Teacher>
+	<Subject>Outils Numériques</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 GEN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>91</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>L. MESSAOUDI</Teacher>
+	<Subject>Outils Numériques</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 GEN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>92</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>L. MESSAOUDI</Teacher>
+	<Subject>Outils Numériques</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>L3 GEN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>93</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>C. BOUGRIOU</Teacher>
+	<Subject>Régulation</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 GEN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>94</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>C. BOUGRIOU</Teacher>
+	<Subject>Régulation</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 GEN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>95</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. RAHAL</Teacher>
+	<Subject>Thermomécanique</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 GEN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>96</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. RAHAL</Teacher>
+	<Subject>Thermomécanique</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 GEN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>97</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. RAHAL</Teacher>
+	<Subject>Anglais</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 GEN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>98</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>D. BATACHE 
+</Teacher>
+	<Subject>D.A.O</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 CMAO</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>99</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. BELKHIR 
+</Teacher>
+	<Subject>Conception Mécanique</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 CMAO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>100</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. BELKHIR 
+</Teacher>
+	<Subject>Conception Mécanique</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 CMAO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>101</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. KHERRAF</Teacher>
+	<Subject>Cahier de Charges</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 CMAO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>104</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. KHERRAF</Teacher>
+	<Subject>Cahier de Charges</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 CMAO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>105</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. MASMOUDI</Teacher>
+	<Subject>Mécanique Analytique</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 CMAO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>106</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. MASMOUDI</Teacher>
+	<Subject>Mécanique Analytique</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 CMAO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>107</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. BARKAT 
+</Teacher>
+	<Subject>Théorie des Mécanismes</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 CMAO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>108</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. BARKAT 
+</Teacher>
+	<Subject>Théorie des Mécanismes</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 CMAO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>109</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>W. KADDOURI</Teacher>
+	<Subject>Initiation à la CAO</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 CMAO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>110</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>W. KADDOURI</Teacher>
+	<Subject>Initiation à la CAO</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 CMAO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>111</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>T. OUTTAS</Teacher>
+	<Subject>Pratique des Logiciels de Calcul</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 CMAO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>112</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>T. OUTTAS</Teacher>
+	<Subject>Pratique des Logiciels de Calcul</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 CMAO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>113</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. BRIOUA</Teacher>
+	<Subject>Science des Matériaux</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>118</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. BRIOUA</Teacher>
+	<Subject>Science des Matériaux</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>119</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. MANSOURI</Teacher>
+	<Subject>Physico-Chimie des Alliages</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>120</Id>
+	<Activity_Group_Id>120</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. MANSOURI</Teacher>
+	<Subject>Physico-Chimie des Alliages</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>121</Id>
+	<Activity_Group_Id>120</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. MANSOURI</Teacher>
+	<Subject>Physico-Chimie des Alliages</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>122</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>DJARALLAH</Teacher>
+	<Subject>Caractérisation des Métaux</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>123</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>DJARALLAH</Teacher>
+	<Subject>Caractérisation des Métaux</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>124</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. BOURIH</Teacher>
+	<Subject>Traitements Thermiques</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>125</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. ABABSA
+</Teacher>
+	<Subject>Essais Mécaniques</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>126</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. ABABSA
+</Teacher>
+	<Subject>Fonderie</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>127</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>D. DJARI</Teacher>
+	<Subject>Outils Mathématiques</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>128</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>D. DJARI</Teacher>
+	<Subject>Outils Mathématiques</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>129</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>R. MANAA</Teacher>
+	<Subject>Mécanique de la Rupture</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>130</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. MANSOURI</Teacher>
+	<Subject>Matériaux</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>131</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. DERRADJI</Teacher>
+	<Subject>Outils Informatiques</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>132</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. DERRADJI</Teacher>
+	<Subject>Outils Informatiques</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>133</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. SLIMANI</Teacher>
+	<Subject>Technologie des Métaux</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>L3 PM</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>134</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>D. BOUTEGHMES</Teacher>
+	<Subject>Technologie de Conception</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>135</Id>
+	<Activity_Group_Id>135</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>D. BOUTEGHMES</Teacher>
+	<Subject>Technologie de Conception</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>136</Id>
+	<Activity_Group_Id>135</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>MELLAL</Teacher>
+	<Subject>Démarche de Projet</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>137</Id>
+	<Activity_Group_Id>137</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>MELLAL</Teacher>
+	<Subject>Démarche de Projet</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>138</Id>
+	<Activity_Group_Id>137</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BELLAALA</Teacher>
+	<Subject>Anglais</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>139</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. KHERRAF</Teacher>
+	<Subject>Le monde de l&apos;entreprise</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>140</Id>
+	<Activity_Group_Id>140</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. KHERRAF</Teacher>
+	<Subject>Le monde de l&apos;entreprise</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>141</Id>
+	<Activity_Group_Id>140</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. ZAOUCH</Teacher>
+	<Teacher>A. BOUSSAHA</Teacher>
+	<Subject>D.A.O</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 MSP</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>142</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>C. BOUDAB 
+</Teacher>
+	<Subject>Construction Mécanique</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 MSP</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>143</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>C. BOUDAB 
+</Teacher>
+	<Subject>Construction Mécanique</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 MSP</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>144</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>D. TITOUNA</Teacher>
+	<Subject>Transfert Thermique</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 MSP</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>147</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>D. TITOUNA</Teacher>
+	<Subject>Transfert Thermique</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 MSP</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>148</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. GHEZAL</Teacher>
+	<Subject>Moteur à Combustion Interne</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 MSP</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>149</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. GHEZAL</Teacher>
+	<Subject>Moteur à Combustion Interne</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 MSP</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>150</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>N. AGGOUNE 
+</Teacher>
+	<Subject>Electrotechnique Fondamentale 2</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 MSP</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>151</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>N. AGGOUNE 
+</Teacher>
+	<Subject>Electrotechnique Fondamentale 2</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 MSP</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>152</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BELLAL</Teacher>
+	<Subject>Electonique Fondamentale 2</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 MSP</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>153</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BELLAL</Teacher>
+	<Subject>Electonique Fondamentale 2</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>L3 MSP</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>154</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. NAOUN</Teacher>
+	<Subject>Maintenance ER</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 MER</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>155</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. NAOUN</Teacher>
+	<Subject>Maintenance ER</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 MER</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>156</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. BENDERRADJI 
+</Teacher>
+	<Subject>Pompes et Compresseurs</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 MMTH</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>157</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. BENDERRADJI 
+</Teacher>
+	<Subject>Pompes et Compresseurs</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 MMTH</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>158</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. BENBIA 
+</Teacher>
+	<Subject>Conversion d&apos;Energie</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 EN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>159</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. BENBIA 
+</Teacher>
+	<Subject>Conversion d&apos;Energie</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 EN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>160</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>L. MESSAOUDI</Teacher>
+	<Subject>Dynamique des Fluides</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 EN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>161</Id>
+	<Activity_Group_Id>161</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>L. MESSAOUDI</Teacher>
+	<Subject>Dynamique des Fluides</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 EN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>162</Id>
+	<Activity_Group_Id>161</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>L. MESSAOUDI</Teacher>
+	<Subject>Dynamique des Fluides</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 EN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>163</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. LAHBARI</Teacher>
+	<Subject>Conduction de la Chaleur</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 EN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>164</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. LAHBARI</Teacher>
+	<Subject>Conduction de la Chaleur</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 EN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>165</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>L. MESSAOUDI</Teacher>
+	<Subject>Méthodes Numériques Appliquées I</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 EN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>166</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>L. MESSAOUDI</Teacher>
+	<Subject>Méthodes Numériques Appliquées I</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 EN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>167</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>L. MESSAOUDI</Teacher>
+	<Subject>Méthodes Numériques Appliquées I</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M1 EN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>168</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>D. BATACHE 
+</Teacher>
+	<Subject>D.A.O</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Activity_Tag>(1/15j)</Activity_Tag>
+	<Students>M1 EN</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>169</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. BENBIA 
+</Teacher>
+	<Subject>Anglais Technique I</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 EN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>170</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>F. BOUGUERNE</Teacher>
+	<Subject>TT/CE</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>G2</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>171</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>D. TITOUNA</Teacher>
+	<Teacher>N. SOLTANI</Teacher>
+	<Subject>MDF</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>G1</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>172</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. BOUHAZILA</Teacher>
+	<Subject>MDF</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>Gr1</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>173</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>H. MAZOUZ</Teacher>
+	<Subject>Comportement Tribologique</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>174</Id>
+	<Activity_Group_Id>174</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>H. MAZOUZ</Teacher>
+	<Subject>Comportement Tribologique</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>175</Id>
+	<Activity_Group_Id>174</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>H. MAZOUZ</Teacher>
+	<Subject>Comportement Tribologique</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>176</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>H. MAZOUZ</Teacher>
+	<Subject>Propriétés des Biomatériaux</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>177</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>H. MAZOUZ</Teacher>
+	<Subject>Propriétés des Biomatériaux</Subject>
+	<Activity_Tag>(TP/Projet)</Activity_Tag>
+	<Students>M1 BIO</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>178</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>MERARDA</Teacher>
+	<Subject>CAO-CFAO Médicale</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>179</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>MERARDA</Teacher>
+	<Subject>CAO-CFAO Médicale</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M1 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>180</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>AMEDAH</Teacher>
+	<Subject>Robotique Médicale</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>181</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>AMEDAH</Teacher>
+	<Subject>Robotique Médicale</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>182</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>R. MANAA</Teacher>
+	<Subject>Dynamique du Mouvement et CC</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>183</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>R. MANAA</Teacher>
+	<Subject>Dynamique du Mouvement et CC</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>184</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>N. SAIDANI</Teacher>
+	<Subject>Communication en Anglais</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>185</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>N. SAIDANI</Teacher>
+	<Subject>Communication en Anglais</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>186</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BENHASSINE</Teacher>
+	<Subject>Communication en Français</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>187</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>D. BOUTEGHMES</Teacher>
+	<Subject>Procédés de MOM</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>188</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>D. BOUTEGHMES</Teacher>
+	<Subject>Procédés de MOM</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M1 PM</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>189</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>AMEDAH</Teacher>
+	<Subject>Usinage des Surfaces Gauches</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>190</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>AMEDAH</Teacher>
+	<Subject>Usinage des Surfaces Gauches</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M1 PM</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>191</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. SLIMANI</Teacher>
+	<Subject>Transmission de Puissancee MH</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>192</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. SLIMANI</Teacher>
+	<Subject>Transmission de Puissancee MH</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>193</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. TRAD</Teacher>
+	<Subject>Recherche Opérationnelle</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>194</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. TRAD</Teacher>
+	<Subject>Recherche Opérationnelle</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>195</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. DJENANE</Teacher>
+	<Subject>Qualité en CM</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>196</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. DJENANE</Teacher>
+	<Subject>Qualité en CM</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>197</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. DERRADJI</Teacher>
+	<Subject>Traitement de Signal pour le Mécanicien</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>198</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BRIOUA</Teacher>
+	<Subject>Traitement de Signal pour le Mécanicien</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>199</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. TRAD</Teacher>
+	<Subject>Communication en Français</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>200</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. DERRADJI</Teacher>
+	<Subject>Outils Numériques de Base</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 CSM</Students>
+	<Students>M1 GMM</Students>
+	<Students>M1 MP</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>201</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. DERRADJI</Teacher>
+	<Subject>Outils Numériques de Base</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 MP</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>202</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>K. SEGHIR</Teacher>
+	<Subject>Mécanique Analytique</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 MP</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>203</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>K. SEGHIR</Teacher>
+	<Subject>Mécanique Analytique</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 MP</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>204</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. MOHAMMEDI</Teacher>
+	<Subject>Mécanique des Milieux Continus</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 CSM</Students>
+	<Students>M1 MER</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>205</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. MOHAMMEDI</Teacher>
+	<Subject>Mécanique des Milieux Continus</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 CSM</Students>
+	<Students>M1 MER</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>206</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>K. SEGHIR</Teacher>
+	<Subject>RDM Avancée</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 CSM</Students>
+	<Students>M1 MP</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>207</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>R. BENBOUTA 
+</Teacher>
+	<Subject>RDM Avancée</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 CSM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>208</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. BENYAHIA 
+</Teacher>
+	<Subject>Techniques de Fabrication</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 MP</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>209</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. BENYAHIA 
+</Teacher>
+	<Subject>Techniques de Fabrication</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M1 MP</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>210</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. ABABSA
+</Teacher>
+	<Subject>Fonderie et TT</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 MP</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>211</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. ABABSA
+</Teacher>
+	<Subject>Fonderie et TT</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Activity_Tag>(1/15j)</Activity_Tag>
+	<Students>M1 MP</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>212</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. KARI</Teacher>
+	<Subject>Maintenance Industrielle</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 MP</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>213</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. TRAD</Teacher>
+	<Subject>Maintenance Véhicule</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 MER</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>214</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. MADANI</Teacher>
+	<Subject>Science des Matériaux</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 MP</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>215</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. MADANI</Teacher>
+	<Subject>Science des Matériaux</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 MP</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>216</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. BARKAT 
+</Teacher>
+	<Subject>Systèmes Mécaniques Articulés</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 CSM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>221</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. BARKAT 
+</Teacher>
+	<Subject>Systèmes Mécaniques Articulés</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 CSM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>222</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. BELKHIR 
+</Teacher>
+	<Subject>Conception et DSM</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 CSM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>225</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. BELKHIR 
+</Teacher>
+	<Subject>Conception et DSM</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M1 CSM</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>226</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>N. SAIDANI</Teacher>
+	<Subject>Anglais Technique</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 CSM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>227</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. BRIOUA</Teacher>
+	<Subject>Science des Matériaux</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 CSM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>228</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. NEZAR</Teacher>
+	<Subject>Electricité Appliquée</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 CSM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>229</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. NEZAR</Teacher>
+	<Subject>Electricité Appliquée</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 CSM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>230</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. MADANI</Teacher>
+	<Subject>Matériaux Métalliques</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>231</Id>
+	<Activity_Group_Id>231</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. MADANI</Teacher>
+	<Subject>Matériaux Métalliques</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>232</Id>
+	<Activity_Group_Id>231</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. MADANI</Teacher>
+	<Subject>Matériaux Métalliques</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>233</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. TEMAGHOULT</Teacher>
+	<Subject>Synthèse et Formulation des Polymères</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>234</Id>
+	<Activity_Group_Id>234</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. TEMAGHOULT</Teacher>
+	<Subject>Synthèse et Formulation des Polymères</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>235</Id>
+	<Activity_Group_Id>234</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. MANSOURI</Teacher>
+	<Subject>Verre et Céramique</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>236</Id>
+	<Activity_Group_Id>236</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. MANSOURI</Teacher>
+	<Subject>Verre et Céramique</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>237</Id>
+	<Activity_Group_Id>236</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. BENBIA 
+</Teacher>
+	<Subject>Thermodynamique Générale et DE</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>238</Id>
+	<Activity_Group_Id>238</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. BENBIA 
+</Teacher>
+	<Subject>Thermodynamique Générale et DE</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>239</Id>
+	<Activity_Group_Id>238</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. BENBIA 
+</Teacher>
+	<Subject>Thermodynamique Générale et DE</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>240</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. NAOUN</Teacher>
+	<Subject>Céramique à vocation BMBM</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>244</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>N. BESSANANE</Teacher>
+	<Subject>Mécanique des Fluides</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 TA</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>245</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>N. BESSANANE</Teacher>
+	<Subject>Mécanique des Fluides</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 TA</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>246</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>F. BOUGUERNE</Teacher>
+	<Teacher>N. SOLTANI</Teacher>
+	<Subject>MDF</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M1 TA</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>247</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. TEMAGHOULT</Teacher>
+	<Subject>Thermodynamique Avancée</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 TA</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>248</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>R. MENINA</Teacher>
+	<Subject>Turbomachines</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 TA</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>249</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>N. BESSANANE</Teacher>
+	<Subject>Modélisation et SN 1</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M1 TA</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>251</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Subject>Projet d&apos;Initiation à la RL</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M1 TA</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>252</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. SIAMEUR</Teacher>
+	<Subject>AEP en Energétique</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M1 TA</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>253</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BENBRAHIM</Teacher>
+	<Subject>Anglais</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 TA</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>254</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BOUKHLOUF</Teacher>
+	<Subject>Matériaux et Eléments de Physiologie</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>255</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BOUKHLOUF</Teacher>
+	<Subject>Matériaux et Eléments de Physiologie</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M2 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>256</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BOUKHLOUF</Teacher>
+	<Subject>Matériaux et Eléments de Physiologie</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M2 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>257</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Dr. CHIBA</Teacher>
+	<Subject>Anatomie Humaine Fonctionnel</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>258</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>Dr. CHIBA</Teacher>
+	<Subject>Anatomie Humaine Fonctionnel</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M2 BIO</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>259</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>KACHA</Teacher>
+	<Subject>Capteurs et IM</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>260</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>KACHA</Teacher>
+	<Subject>Capteurs et IM</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M2 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>261</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. DERRADJI</Teacher>
+	<Subject>Modélisation en Biomécanique</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>262</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. BENHIZIA</Teacher>
+	<Subject>Modélisation en Biomécanique</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M2 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>263</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>AMEDAH</Teacher>
+	<Subject>Imagerie Médicale</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>264</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>AMEDAH</Teacher>
+	<Subject>Imagerie Médicale</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M2 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>265</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>R. BENBOUTA 
+</Teacher>
+	<Subject>Méthode de Recherche Biblio.</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>266</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>R. BENBOUTA 
+</Teacher>
+	<Subject>Méthode de Recherche Biblio.</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M2 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>267</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>R. BENBOUTA 
+</Teacher>
+	<Subject>Méthodologie de Rédaction de RM</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 BIO</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>268</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>T. OUTTAS</Teacher>
+	<Subject>Stabilité Dynamique des SM</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 CSM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>269</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>T. OUTTAS</Teacher>
+	<Subject>Stabilité Dynamique des SM</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M2 CSM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>270</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. BENMOHAMED 
+</Teacher>
+	<Subject>Mécanique du Contact et Tribologie</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 CSM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>271</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. BENMOHAMED 
+</Teacher>
+	<Subject>Mécanique du Contact et Tribologie</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M2 CSM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>272</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>R. MANAA</Teacher>
+	<Subject>Fatigue et Rupture des MS</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 CSM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>275</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>R. MANAA</Teacher>
+	<Subject>Fatigue et Rupture des MS</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M2 CSM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>276</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. BELKHIR 
+</Teacher>
+	<Subject>Projets de Conception et DSM</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 CSM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>277</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. BELKHIR 
+</Teacher>
+	<Subject>Projets de Conception et DSM</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M2 CSM</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>278</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. BENYAHIA 
+</Teacher>
+	<Subject>Normes et Règlementations</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 CSM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>279</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>DJARALLAH</Teacher>
+	<Subject>Méthodes de Sélection des Matériaux</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>283</Id>
+	<Activity_Group_Id>283</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>DJARALLAH</Teacher>
+	<Subject>Méthodes de Sélection des Matériaux</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>284</Id>
+	<Activity_Group_Id>283</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>DJARALLAH</Teacher>
+	<Subject>Méthodes de Sélection des Matériaux</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M2 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>285</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. MIHI</Teacher>
+	<Subject>Méthodes de Caractérisation SM</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>286</Id>
+	<Activity_Group_Id>286</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. MIHI</Teacher>
+	<Subject>Méthodes de Caractérisation SM</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>287</Id>
+	<Activity_Group_Id>286</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>T. OUTTAS</Teacher>
+	<Subject>Matériaux Composites</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 GMM</Students>
+	<Students>M2 CSM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>288</Id>
+	<Activity_Group_Id>288</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>T. OUTTAS</Teacher>
+	<Subject>Matériaux Composites</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 GMM</Students>
+	<Students>M2 CSM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>289</Id>
+	<Activity_Group_Id>288</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>T. OUTTAS</Teacher>
+	<Subject>Matériaux Composites</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M2 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>290</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. BOUSSAHA</Teacher>
+	<Subject>Procédés de MFM</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>291</Id>
+	<Activity_Group_Id>291</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. BOUSSAHA</Teacher>
+	<Subject>Procédés de MFM</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>292</Id>
+	<Activity_Group_Id>291</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. MIHI</Teacher>
+	<Subject>Caractérisation MMM</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M2 GMM</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>293</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BAHMANI</Teacher>
+	<Subject>Stratégie et Management de l&apos; Entreprise</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 GMM</Students>
+	<Students>M2 CSM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>294</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. LAHBARI</Teacher>
+	<Subject>Froid et Séchage </Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 MER</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>296</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. LAHBARI</Teacher>
+	<Subject>Froid et Séchage </Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M2 MER</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>297</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. KARI</Teacher>
+	<Subject>Energies Nouvelles</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 MER</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>298</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. KARI</Teacher>
+	<Subject>Energies Nouvelles</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M2 MER</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>299</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. MIHI</Teacher>
+	<Subject>Corrosion</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 MP</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>300</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. KHERRAF</Teacher>
+	<Subject>Expertise des Pièces</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 MP</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>301</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. ABABSA
+</Teacher>
+	<Subject>Contrôle Non Destructif</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 MER</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>302</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. ABABSA
+</Teacher>
+	<Teacher>M. NAOUN</Teacher>
+	<Subject>CV/CND</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Activity_Tag>(1/15j)</Activity_Tag>
+	<Students>M2 MER</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>303</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. ZAOUCH</Teacher>
+	<Subject>Méthodes et FAO</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 MP</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>304</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. BENMOHAMED 
+</Teacher>
+	<Subject>Projet GMAO</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 MP</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>306</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. NAOUN</Teacher>
+	<Subject>Communication Ecrite et Orale</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 MP</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>307</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. TRAD</Teacher>
+	<Subject>Recherche Opérationnelle</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 MP</Students>
+	<Students>M2 CSM</Students>
+	<Students>M2 EN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>308</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. TRAD</Teacher>
+	<Subject>Recherche Opérationnelle</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M2 MP</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>309</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. MASMOUDI</Teacher>
+	<Subject>Dynamique des Machines</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>310</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. MASMOUDI</Teacher>
+	<Subject>Dynamique des Machines</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M2 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>311</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Subject>Dynamique des Machines</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M2 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>312</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>R. MANAA</Teacher>
+	<Subject>Matériaux Polymère et Composites </Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>313</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>R. MANAA</Teacher>
+	<Subject>Matériaux Polymère et Composites </Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M2 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>314</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. BENMOHAMED 
+</Teacher>
+	<Subject>Procédés d&apos;Usinage NC</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>315</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. BENMOHAMED 
+</Teacher>
+	<Subject>Procédés d&apos;Usinage NC</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M2 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>316</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>C. BOUDAB 
+</Teacher>
+	<Subject>Automatismes Industriels</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M2 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>318</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M.T. GAID</Teacher>
+	<Subject>Gestion des SP</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>319</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>D. BOUTEGHMES</Teacher>
+	<Subject>Conception des GF</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>321</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>D. BOUTEGHMES</Teacher>
+	<Subject>Conception des GF</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M2 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>322</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BELLAALA</Teacher>
+	<Subject>Communication en Anglais</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>323</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ABDESSEMED</Teacher>
+	<Subject>Electronique de Puissance</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>324</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. BENDERRADJI 
+</Teacher>
+	<Subject>Echangeurs de Chaleur</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 EN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>325</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. BENDERRADJI 
+</Teacher>
+	<Subject>Echangeurs de Chaleur</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M2 EN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>326</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>H. BENMOUSSA</Teacher>
+	<Subject>Ecoulements Diphasiques</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 EN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>327</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>H. BENMOUSSA</Teacher>
+	<Subject>Ecoulements Diphasiques</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M2 EN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>328</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>H. BENMOUSSA</Teacher>
+	<Subject>Ecoulements en Milieux Poreux</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 EN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>329</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>H. BENMOUSSA</Teacher>
+	<Subject>Ecoulements en Milieux Poreux</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M2 EN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>330</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>R. MENINA</Teacher>
+	<Subject>Machines Hydrothermiques</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 EN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>331</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>R. MENINA</Teacher>
+	<Subject>Machines Hydrothermiques</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M2 EN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>332</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. KARI</Teacher>
+	<Subject>Energies Renouvelables</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 EN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>335</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. KARI</Teacher>
+	<Subject>Energies Renouvelables</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M2 EN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>336</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>N. BESSANANE</Teacher>
+	<Subject>Utilisation de Logiciels de Simulation II</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M2 EN</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>337</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>N. SAIDANI</Teacher>
+	<Subject>Anglais Technique III</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 EN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>338</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BAHMANI</Teacher>
+	<Subject>Management</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 EN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>339</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BRIKI</Teacher>
+	<Subject>Mécanique Avancée</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 TA</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>340</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BRIKI</Teacher>
+	<Subject>Mécanique Avancée</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 TA</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>341</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>N. BESSANANE</Teacher>
+	<Subject>Modélisation et SN 1</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 TA</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>342</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>R. MENINA</Teacher>
+	<Subject>Turbomachines</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M1 TA</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>343</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. BENHIZIA</Teacher>
+	<Subject>Outils Informatique de MB</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>L3 BIO</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>344</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>R. BENBOUTA 
+</Teacher>
+	<Subject>RDM Avancée</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 MP</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>345</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>K. SEGHIR</Teacher>
+	<Subject>Vibration des Structures des MT</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 MMTH</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>346</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>K. SEGHIR</Teacher>
+	<Subject>Vibration des Structures des MT</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 MMTH</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>347</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>F. BOUGUERNE</Teacher>
+	<Subject>Maintenance des MT</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 MMTH</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>348</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>F. BOUGUERNE</Teacher>
+	<Subject>Maintenance des MT</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M1 MMTH</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>349</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. DERRADJI</Teacher>
+	<Subject>Outils Numériques de Base</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>350</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. DERRADJI</Teacher>
+	<Subject>Outils Numériques de Base</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 CSM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>351</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. DERRADJI</Teacher>
+	<Subject>Outils Mathématiques</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>L3 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>352</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BRIOUA</Teacher>
+	<Subject>Outils Mathématiques</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>L3 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>353</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. TRAD</Teacher>
+	<Subject>Recherche Opérationnelle</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M2 CSM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>354</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. TRAD</Teacher>
+	<Subject>Recherche Opérationnelle</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M2 EN</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>355</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. BENYAHIA 
+</Teacher>
+	<Teacher>A. SLIMANI</Teacher>
+	<Teacher>C. LAGGOUNE</Teacher>
+	<Teacher>A. BOUSSAHA</Teacher>
+	<Teacher>S. MANSOURI</Teacher>
+	<Subject>FMS</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>L3 GMM</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>356</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. BENYAHIA 
+</Teacher>
+	<Teacher>A. SLIMANI</Teacher>
+	<Teacher>C. LAGGOUNE</Teacher>
+	<Teacher>A. BOUSSAHA</Teacher>
+	<Teacher>S. MANSOURI</Teacher>
+	<Subject>FMS</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>L3 CMAO</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>357</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. BENYAHIA 
+</Teacher>
+	<Teacher>A. SLIMANI</Teacher>
+	<Teacher>C. LAGGOUNE</Teacher>
+	<Teacher>A. BOUSSAHA</Teacher>
+	<Teacher>S. MANSOURI</Teacher>
+	<Subject>FMS</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>L3 MSP</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>358</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. NAOUN</Teacher>
+	<Subject>Communication Ecrite et Orale</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>359</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. GHEZAL</Teacher>
+	<Subject>Dynamique des Fluides Monophasiques</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>360</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. GHEZAL</Teacher>
+	<Subject>Dynamique des Fluides Monophasiques</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>361</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>H. BENMOUSSA</Teacher>
+	<Subject>Dynamique des Fluides Diphasiques</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>362</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>H. BENMOUSSA</Teacher>
+	<Subject>Dynamique des Fluides Diphasiques</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>363</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>G. MEBARKI</Teacher>
+	<Subject>Transfert Thermique CCR</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>364</Id>
+	<Activity_Group_Id>364</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>G. MEBARKI</Teacher>
+	<Subject>Transfert Thermique CCR</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>365</Id>
+	<Activity_Group_Id>364</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>G. MEBARKI</Teacher>
+	<Subject>Transfert Thermique CCR</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>366</Id>
+	<Activity_Group_Id>366</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>G. MEBARKI</Teacher>
+	<Subject>Transfert Thermique CCR</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M1 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>367</Id>
+	<Activity_Group_Id>366</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>F. BOUGUERNE</Teacher>
+	<Subject>Instrumentation et Mesures en TF</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>368</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>F. BOUGUERNE</Teacher>
+	<Subject>Instrumentation et Mesures en TF</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M1 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>369</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>K. SEGHIR</Teacher>
+	<Subject>RDM</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M1 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>370</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>D. BATACHE 
+</Teacher>
+	<Teacher>W. KADDOURI</Teacher>
+	<Subject>CAO/DAO</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M1 IES</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>371</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>H.MADANI</Teacher>
+	<Subject>Méthodes Numériques AE I</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>372</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>H.MADANI</Teacher>
+	<Subject>Méthodes Numériques AE I</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M1 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>373</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BENMOUSSA</Teacher>
+	<Subject>Anglais Technique I</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>375</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. BENYAHIA 
+</Teacher>
+	<Subject>Techniques de Fabrication CA</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M1 GMM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>421</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. SIAMEUR</Teacher>
+	<Subject>Dynamique des Fluides et Turbulence</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 TA</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>422</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. SIAMEUR</Teacher>
+	<Teacher>OUAZANI</Teacher>
+	<Subject>Dynamique des Fluides et Turbulence</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M2 TA</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>423</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>S. RAHAL</Teacher>
+	<Subject>Propulsion et Aérodynamique</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 TA</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>424</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Subject>Propulsion et Aérodynamique</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M2 TA</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>425</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. BENDERRADJI 
+</Teacher>
+	<Subject>Combustion</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 TA</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>426</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. BENDERRADJI 
+</Teacher>
+	<Subject>Combustion</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M2 TA</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>427</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>OUAZANI</Teacher>
+	<Subject>Simulation Numérique et MA</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 TA</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>428</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>OUAZANI</Teacher>
+	<Subject>Simulation Numérique et MA</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M2 TA</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>429</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BOUGUECHAL</Teacher>
+	<Subject>Laboratoire de Contrôle Digital</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 TA</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>430</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>C. BOUGRIOU</Teacher>
+	<Subject>Transferts Radiatifs dans les MDG</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 TA</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>432</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. BRIOUA</Teacher>
+	<Subject>Matériaux pour les Applications AE</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 TA</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>434</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>K. ZIDANI</Teacher>
+	<Subject>Mécanique des Structures AS</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 TA</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>436</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>OUAZANI</Teacher>
+	<Subject>Projet de Synthèse Avion</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M2 TA</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>437</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>OUAZANI</Teacher>
+	<Subject>Projet de Synthèse Lanceur</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M2 TA</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>438</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ABDELHAMID</Teacher>
+	<Subject>Captation de l&apos;Energie Solaire</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>439</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ABDELHAMID</Teacher>
+	<Subject>Captation de l&apos;Energie Solaire</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M2 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>440</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. SIAMEUR</Teacher>
+	<Subject>Conversion de l&apos;Energie Solaire</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>441</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M. SIAMEUR</Teacher>
+	<Subject>Conversion de l&apos;Energie Solaire</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M2 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>442</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>DJEFFAL</Teacher>
+	<Subject>Matériaux Photovoltaiques</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>443</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>C. BOUGRIOU</Teacher>
+	<Subject>Habitat Solaire</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>444</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>C. BOUGRIOU</Teacher>
+	<Subject>Habitat Solaire</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M2 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>445</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. KARI</Teacher>
+	<Subject>Capteurs Solaires</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>446</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. KARI</Teacher>
+	<Subject>Capteurs Solaires</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M2 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>447</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>H. BENMOUSSA</Teacher>
+	<Subject>Stockage de l&apos;Energie Solaire</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>448</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>H. BENMOUSSA</Teacher>
+	<Subject>Stockage de l&apos;Energie Solaire</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M2 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>449</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. BARKAT 
+</Teacher>
+	<Subject>Station Météo</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>450</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. BARKAT 
+</Teacher>
+	<Subject>Station Météo</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M2 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>451</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>MASMOUDI</Teacher>
+	<Subject>Applications Thermique Solaire (SD)</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M2 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>454</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>BENMOUSSA</Teacher>
+	<Subject>Anglais Technique III</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>455</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>H. CHAABANE</Teacher>
+	<Subject>Management</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 IES</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>456</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>ABDELHAMID</Teacher>
+	<Subject>Pompage Solaire</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M2 IES</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>457</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>C. LAGGOUNE</Teacher>
+	<Subject>Diagnostique et Contôle des TM</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 MMTH</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>458</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>C. LAGGOUNE</Teacher>
+	<Subject>Diagnostique et Contôle des TM</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Activity_Tag>(1/15j)</Activity_Tag>
+	<Students>M2 MMTH</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>459</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. TEMAGHOULT</Teacher>
+	<Subject>Optimisation Energétique des MT</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 MMTH</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>460</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>A. TEMAGHOULT</Teacher>
+	<Subject>Optimisation Energétique des MT</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Activity_Tag>(1/15j)</Activity_Tag>
+	<Students>M2 MMTH</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>461</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>MAATAR</Teacher>
+	<Subject>Transmission Hydraulique Industrielle</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 MMTH</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>462</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>MAATAR</Teacher>
+	<Subject>Transmission Hydraulique Industrielle</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M2 MMTH</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>463</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Subject>Machines Hydrauliques</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 MMTH</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>464</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Subject>Machines Hydrauliques</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Students>M2 MMTH</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>465</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>C. BOUDAB 
+</Teacher>
+	<Subject>Automatismes Industriels</Subject>
+	<Activity_Tag>(C)</Activity_Tag>
+	<Students>M2 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>466</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>M.T. GAID</Teacher>
+	<Subject>Gestion des SP</Subject>
+	<Activity_Tag>(TD)</Activity_Tag>
+	<Students>M2 PM</Students>
+	<Duration>1</Duration>
+	<Total_Duration>1</Total_Duration>
+	<Id>467</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. ZAOUCH</Teacher>
+	<Subject>Méthodes et FAO</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Activity_Tag>(1/15j)</Activity_Tag>
+	<Students>M2 MER</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>468</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+<Activity>
+	<Teacher>B. ZAOUCH</Teacher>
+	<Teacher>A. BOUSSAHA</Teacher>
+	<Subject>Méthodes et FAO</Subject>
+	<Activity_Tag>(TP)</Activity_Tag>
+	<Activity_Tag>(1/15j)</Activity_Tag>
+	<Students>M2 MMTH</Students>
+	<Duration>2</Duration>
+	<Total_Duration>2</Total_Duration>
+	<Id>469</Id>
+	<Activity_Group_Id>0</Activity_Group_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</Activity>
+</Activities_List>
+
+<Buildings_List>
+<Building>
+	<Name>NB</Name>
+	<Comments></Comments>
+</Building>
+<Building>
+	<Name>HT</Name>
+	<Comments></Comments>
+</Building>
+<Building>
+	<Name>CR</Name>
+	<Comments></Comments>
+</Building>
+<Building>
+	<Name>Hop</Name>
+	<Comments></Comments>
+</Building>
+<Building>
+	<Name>SP</Name>
+	<Comments></Comments>
+</Building>
+</Buildings_List>
+
+<Rooms_List>
+<Room>
+	<Name>101</Name>
+	<Building></Building>
+	<Capacity>30</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>107</Name>
+	<Building></Building>
+	<Capacity>30</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>108</Name>
+	<Building>NB</Building>
+	<Capacity>30</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>109</Name>
+	<Building>NB</Building>
+	<Capacity>30</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>114</Name>
+	<Building></Building>
+	<Capacity>30</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>118</Name>
+	<Building></Building>
+	<Capacity>30</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>320</Name>
+	<Building>NB</Building>
+	<Capacity>60</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>321</Name>
+	<Building>NB</Building>
+	<Capacity>120</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>322</Name>
+	<Building>NB</Building>
+	<Capacity>120</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>323</Name>
+	<Building>NB</Building>
+	<Capacity>30</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>324</Name>
+	<Building>NB</Building>
+	<Capacity>30</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>325</Name>
+	<Building>NB</Building>
+	<Capacity>120</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>326</Name>
+	<Building>NB</Building>
+	<Capacity>50</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>328</Name>
+	<Building>NB</Building>
+	<Capacity>120</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>334</Name>
+	<Building>NB</Building>
+	<Capacity>50</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>350</Name>
+	<Building>NB</Building>
+	<Capacity>60</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>Amphi 118</Name>
+	<Building>NB</Building>
+	<Capacity>200</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>CC</Name>
+	<Building>NB</Building>
+	<Capacity>40</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>CHU</Name>
+	<Building>Hop</Building>
+	<Capacity>50</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>CR</Name>
+	<Building>CR</Building>
+	<Capacity>60</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>CR1</Name>
+	<Building>CR</Building>
+	<Capacity>30</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>DAO</Name>
+	<Building>HT</Building>
+	<Capacity>38</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>E18</Name>
+	<Building></Building>
+	<Capacity>30</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>F6</Name>
+	<Building>NB</Building>
+	<Capacity>50</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>Lab-4-ELT</Name>
+	<Building>NB</Building>
+	<Capacity>40</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>Lab-5-ELT</Name>
+	<Building>NB</Building>
+	<Capacity>40</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>Lab-AERO</Name>
+	<Building>NB</Building>
+	<Capacity>50</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>Lab-CNC</Name>
+	<Building>HT</Building>
+	<Capacity>30</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>Lab-ELN1</Name>
+	<Building>NB</Building>
+	<Capacity>50</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>Lab-ELN2</Name>
+	<Building>NB</Building>
+	<Capacity>50</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>Lab-EN</Name>
+	<Building>HT</Building>
+	<Capacity>30</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>Lab-GI</Name>
+	<Building></Building>
+	<Capacity>30</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>Lab-MDF</Name>
+	<Building>NB</Building>
+	<Capacity>40</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>Lab-MEC</Name>
+	<Building>HT</Building>
+	<Capacity>30</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>Lab-MET</Name>
+	<Building>NB</Building>
+	<Capacity>50</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>Lab-MFON</Name>
+	<Building>HT</Building>
+	<Capacity>30</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>Lab-MOT</Name>
+	<Building>HT</Building>
+	<Capacity>50</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>Lab-MTR</Name>
+	<Building>HT</Building>
+	<Capacity>50</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>Lab-RDM</Name>
+	<Building>HT</Building>
+	<Capacity>30</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>Lab-SOU</Name>
+	<Building>HT</Building>
+	<Capacity>30</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>S1</Name>
+	<Building>HT</Building>
+	<Capacity>30</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>S2</Name>
+	<Building>HT</Building>
+	<Capacity>30</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>S3</Name>
+	<Building>HT</Building>
+	<Capacity>30</Capacity>
+	<Comments></Comments>
+</Room>
+<Room>
+	<Name>SPS</Name>
+	<Building>SP</Building>
+	<Capacity>30</Capacity>
+	<Comments></Comments>
+</Room>
+</Rooms_List>
+
+<Time_Constraints_List>
+<ConstraintBasicCompulsoryTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintBasicCompulsoryTime>
+<ConstraintBreakTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Break_Times>5</Number_of_Break_Times>
+	<Break_Time>
+		<Day>Dimanche</Day>
+		<Hour>12:35</Hour>
+	</Break_Time>
+	<Break_Time>
+		<Day>Lundi</Day>
+		<Hour>12:35</Hour>
+	</Break_Time>
+	<Break_Time>
+		<Day>Mardi</Day>
+		<Hour>12:35</Hour>
+	</Break_Time>
+	<Break_Time>
+		<Day>Mercredi</Day>
+		<Hour>12:35</Hour>
+	</Break_Time>
+	<Break_Time>
+		<Day>Jeudi</Day>
+		<Hour>12:35</Hour>
+	</Break_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintBreakTimes>
+<ConstraintActivitiesSameStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>173</Activity_Id>
+	<Activity_Id>90</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingTime>
+<ConstraintActivitiesSameStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>155</Activity_Id>
+	<Activity_Id>157</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingTime>
+<ConstraintActivitiesSameStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>172</Activity_Id>
+	<Activity_Id>171</Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivitiesSameStartingTime>
+<ConstraintTwoActivitiesGrouped>
+	<Weight_Percentage>100</Weight_Percentage>
+	<First_Activity_Id>112</First_Activity_Id>
+	<Second_Activity_Id>113</Second_Activity_Id>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTwoActivitiesGrouped>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>266</Activity_Id>
+	<Preferred_Day>Mercredi</Preferred_Day>
+	<Preferred_Hour>08:00</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>240</Activity_Id>
+	<Preferred_Day>Mardi</Preferred_Day>
+	<Preferred_Hour>09:35</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>155</Activity_Id>
+	<Preferred_Day>Dimanche</Preferred_Day>
+	<Preferred_Hour>08:00</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>332</Activity_Id>
+	<Preferred_Day>Mercredi</Preferred_Day>
+	<Preferred_Hour>15:45</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>94</Activity_Id>
+	<Preferred_Day>Lundi</Preferred_Day>
+	<Preferred_Hour>09:35</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>65</Activity_Id>
+	<Preferred_Day>Dimanche</Preferred_Day>
+	<Preferred_Hour>09:35</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>66</Activity_Id>
+	<Preferred_Day>Mercredi</Preferred_Day>
+	<Preferred_Hour>11:10</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>47</Activity_Id>
+	<Preferred_Day>Jeudi</Preferred_Day>
+	<Preferred_Hour>08:00</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>48</Activity_Id>
+	<Preferred_Day>Jeudi</Preferred_Day>
+	<Preferred_Hour>09:35</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>77</Activity_Id>
+	<Preferred_Day>Mercredi</Preferred_Day>
+	<Preferred_Hour>09:35</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>118</Activity_Id>
+	<Preferred_Day>Dimanche</Preferred_Day>
+	<Preferred_Hour>09:35</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>202</Activity_Id>
+	<Preferred_Day>Jeudi</Preferred_Day>
+	<Preferred_Hour>09:35</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>352</Activity_Id>
+	<Preferred_Day>Jeudi</Preferred_Day>
+	<Preferred_Hour>08:00</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>160</Activity_Id>
+	<Preferred_Day>Jeudi</Preferred_Day>
+	<Preferred_Hour>09:35</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>228</Activity_Id>
+	<Preferred_Day>Mercredi</Preferred_Day>
+	<Preferred_Hour>09:35</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>263</Activity_Id>
+	<Preferred_Day>Mercredi</Preferred_Day>
+	<Preferred_Hour>09:35</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>267</Activity_Id>
+	<Preferred_Day>Mercredi</Preferred_Day>
+	<Preferred_Hour>14:00</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>321</Activity_Id>
+	<Preferred_Day>Dimanche</Preferred_Day>
+	<Preferred_Hour>08:00</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>112</Activity_Id>
+	<Preferred_Day>Lundi</Preferred_Day>
+	<Preferred_Hour>09:35</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>113</Activity_Id>
+	<Preferred_Day>Lundi</Preferred_Day>
+	<Preferred_Hour>11:10</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>108</Activity_Id>
+	<Preferred_Day>Lundi</Preferred_Day>
+	<Preferred_Hour>08:00</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>42</Activity_Id>
+	<Preferred_Day>Mardi</Preferred_Day>
+	<Preferred_Hour>08:00</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintActivityPreferredStartingTime>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>345</Activity_Id>
+	<Preferred_Day>Dimanche</Preferred_Day>
+	<Preferred_Hour>11:10</Preferred_Hour>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredStartingTime>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>364</Activity_Id>
+	<Activity_Id>365</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintMinDaysBetweenActivities>
+	<Weight_Percentage>95</Weight_Percentage>
+	<Consecutive_If_Same_Day>true</Consecutive_If_Same_Day>
+	<Number_of_Activities>2</Number_of_Activities>
+	<Activity_Id>366</Activity_Id>
+	<Activity_Id>367</Activity_Id>
+	<MinDays>1</MinDays>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintMinDaysBetweenActivities>
+<ConstraintTeacherNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher>H. BENMOUSSA</Teacher>
+	<Number_of_Not_Available_Times>1</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Lundi</Day>
+		<Hour>08:00</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherNotAvailableTimes>
+</Time_Constraints_List>
+
+<Space_Constraints_List>
+<ConstraintBasicCompulsorySpace>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintBasicCompulsorySpace>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>6</Activity_Id>
+	<Room>326</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>1</Activity_Id>
+	<Room>326</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>7</Activity_Id>
+	<Room>326</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>2</Activity_Id>
+	<Room>326</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>4</Activity_Id>
+	<Room>326</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>207</Activity_Id>
+	<Room>328</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>288</Activity_Id>
+	<Room>S1</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>308</Activity_Id>
+	<Room>350</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>337</Activity_Id>
+	<Room>CC</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>112</Activity_Id>
+	<Room>DAO</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>113</Activity_Id>
+	<Room>DAO</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>156</Activity_Id>
+	<Room>328</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>155</Activity_Id>
+	<Room>324</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>3</Activity_Id>
+	<Room>326</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>5</Activity_Id>
+	<Room>326</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>228</Activity_Id>
+	<Room>334</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>174</Activity_Id>
+	<Room>CR</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>266</Activity_Id>
+	<Room>334</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>267</Activity_Id>
+	<Room>334</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintActivityPreferredRoom>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Activity_Id>268</Activity_Id>
+	<Room>334</Room>
+	<Permanently_Locked>true</Permanently_Locked>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintActivityPreferredRoom>
+<ConstraintRoomNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Room>321</Room>
+	<Number_of_Not_Available_Times>4</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Mardi</Day>
+		<Hour>14:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Mardi</Day>
+		<Hour>15:45</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Jeudi</Day>
+		<Hour>14:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Jeudi</Day>
+		<Hour>15:45</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintRoomNotAvailableTimes>
+<ConstraintRoomNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Room>322</Room>
+	<Number_of_Not_Available_Times>4</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Mardi</Day>
+		<Hour>14:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Mardi</Day>
+		<Hour>15:45</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Jeudi</Day>
+		<Hour>14:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Jeudi</Day>
+		<Hour>15:45</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintRoomNotAvailableTimes>
+<ConstraintRoomNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Room>325</Room>
+	<Number_of_Not_Available_Times>4</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Mardi</Day>
+		<Hour>14:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Mardi</Day>
+		<Hour>15:45</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Jeudi</Day>
+		<Hour>14:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Jeudi</Day>
+		<Hour>15:45</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintRoomNotAvailableTimes>
+<ConstraintRoomNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Room>328</Room>
+	<Number_of_Not_Available_Times>4</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Mardi</Day>
+		<Hour>14:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Mardi</Day>
+		<Hour>15:45</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Jeudi</Day>
+		<Hour>14:00</Hour>
+	</Not_Available_Time>
+	<Not_Available_Time>
+		<Day>Jeudi</Day>
+		<Hour>15:45</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintRoomNotAvailableTimes>
+<ConstraintRoomNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Room>326</Room>
+	<Number_of_Not_Available_Times>1</Number_of_Not_Available_Times>
+	<Not_Available_Time>
+		<Day>Jeudi</Day>
+		<Hour>14:00</Hour>
+	</Not_Available_Time>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintRoomNotAvailableTimes>
+<ConstraintRoomNotAvailableTimes>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Room>350</Room>
+	<Number_of_Not_Available_Times>0</Number_of_Not_Available_Times>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintRoomNotAvailableTimes>
+</Space_Constraints_List>
+
+</fet>

@@ -1,0 +1,7 @@
+Sample Faculty Economics Timisoara, 2009-2010-sem1.
+
+Times are written for GNU/Linux, AMD dual core 4000+.
+
+This sample is very difficult. may solve in 2 hours or not solve at all (>12h), depends on luck.
+
+A timetable is indeed possible even if adding constraint students set max gaps per day=1 (in 2 hours if lucky), but again depends on luck, it may never solve.
