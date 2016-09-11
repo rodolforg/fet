@@ -28184,40 +28184,45 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>DaysForm</name>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="126"/>
-        <location filename="../src/interface/daysform.cpp" line="133"/>
+        <location filename="../src/interface/daysform.cpp" line="58"/>
+        <source>Day %1</source>
+        <translation>Tag %1</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/daysform.cpp" line="98"/>
+        <location filename="../src/interface/daysform.cpp" line="105"/>
         <source>FET information</source>
         <translation>FET-Information</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="127"/>
+        <location filename="../src/interface/daysform.cpp" line="99"/>
         <source>Empty names not allowed</source>
         <translation>Leere Namen sind nicht erlaubt</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="134"/>
+        <location filename="../src/interface/daysform.cpp" line="106"/>
         <source>Duplicates not allowed</source>
         <translation>Doppelte Namen sind nicht erlaubt</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="165"/>
+        <location filename="../src/interface/daysform.cpp" line="137"/>
         <source>%1 constraints will be removed.</source>
         <comment>%1 is the number of constraints</comment>
         <translation>%1 Einschränkungen werden entfernt.</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="169"/>
+        <location filename="../src/interface/daysform.cpp" line="141"/>
         <source>%1 constraints will be modified.</source>
         <comment>%1 is the number of constraints</comment>
         <translation>%1 Einschränkungen werden geändert.</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="172"/>
+        <location filename="../src/interface/daysform.cpp" line="144"/>
         <source>Do you want to continue?</source>
         <translation>Möchten Sie fortfahren?</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="174"/>
+        <location filename="../src/interface/daysform.cpp" line="146"/>
         <source>FET warning</source>
         <translation>FET-Warnung</translation>
     </message>
@@ -28225,112 +28230,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>DaysForm_template</name>
     <message>
-        <location filename="../src/interface/daysform_template.ui" line="180"/>
-        <source>Day 10</source>
-        <translation>Tag 10</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="85"/>
-        <source>Day 3</source>
-        <translation>Tag 3</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="124"/>
-        <source>Day 6</source>
-        <translation>Tag 6</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="232"/>
-        <source>Day 14</source>
-        <translation>Tag 14</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="137"/>
-        <source>Day 7</source>
-        <translation>Tag 7</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="72"/>
-        <source>Day 2</source>
-        <translation>Tag 2</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="167"/>
-        <source>Day 9</source>
-        <translation>Tag 9</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="111"/>
-        <source>Day 5</source>
-        <translation>Tag 5</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="219"/>
-        <source>Day 13</source>
-        <translation>Tag 13</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="193"/>
-        <source>Day 11</source>
-        <translation>Tag 11</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="154"/>
-        <source>Day 8</source>
-        <translation>Tag 8</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="98"/>
-        <source>Day 4</source>
-        <translation>Tag 4</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="59"/>
-        <source>Day 1</source>
-        <translation>Tag 1</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="206"/>
-        <source>Day 12</source>
-        <translation>Tag 12</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="439"/>
-        <source>Day 29</source>
-        <translation>Tag 29</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="452"/>
-        <source>Day 30</source>
-        <translation>Tag 30</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="465"/>
-        <source>Day 31</source>
-        <translation>Tag 31</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="478"/>
-        <source>Day 32</source>
-        <translation>Tag 32</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="491"/>
-        <source>Day 33</source>
-        <translation>Tag 33</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="504"/>
-        <source>Day 34</source>
-        <translation>Tag 34</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="517"/>
-        <source>Day 35</source>
-        <translation>Tag 35</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="552"/>
+        <location filename="../src/interface/daysform_template.ui" line="76"/>
         <source>Ok</source>
         <translation>Ok</translation>
     </message>
@@ -28341,84 +28241,14 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <translation>Tage der Woche</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform_template.ui" line="559"/>
+        <location filename="../src/interface/daysform_template.ui" line="83"/>
         <source>Cancel</source>
         <translation>Abbrechen</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform_template.ui" line="20"/>
+        <location filename="../src/interface/daysform_template.ui" line="55"/>
         <source>Number of working days per week</source>
         <translation>Anzahl an Arbeitstagen pro Woche</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="249"/>
-        <source>Day 15</source>
-        <translation>Tag 15</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="262"/>
-        <source>Day 16</source>
-        <translation>Tag 16</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="275"/>
-        <source>Day 17</source>
-        <translation>Tag 17</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="288"/>
-        <source>Day 18</source>
-        <translation>Tag 18</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="301"/>
-        <source>Day 19</source>
-        <translation>Tag 19</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="314"/>
-        <source>Day 20</source>
-        <translation>Tag 20</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="327"/>
-        <source>Day 21</source>
-        <translation>Tag 21</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="344"/>
-        <source>Day 22</source>
-        <translation>Tag 22</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="357"/>
-        <source>Day 23</source>
-        <translation>Tag 23</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="370"/>
-        <source>Day 24</source>
-        <translation>Tag 24</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="383"/>
-        <source>Day 25</source>
-        <translation>Tag 25</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="396"/>
-        <source>Day 26</source>
-        <translation>Tag 26</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="409"/>
-        <source>Day 27</source>
-        <translation>Tag 27</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="422"/>
-        <source>Day 28</source>
-        <translation>Tag 28</translation>
     </message>
 </context>
 <context>
@@ -36346,40 +36176,45 @@ Dieses Problem ist zugegeben eher theoretischer Natur; trotzdem könnte es einma
 <context>
     <name>HoursForm</name>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="153"/>
-        <location filename="../src/interface/hoursform.cpp" line="160"/>
+        <location filename="../src/interface/hoursform.cpp" line="62"/>
+        <source>Hour %1</source>
+        <translation>Stunde %1</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/hoursform.cpp" line="105"/>
+        <location filename="../src/interface/hoursform.cpp" line="112"/>
         <source>FET information</source>
         <translation>FET-Information</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="154"/>
+        <location filename="../src/interface/hoursform.cpp" line="106"/>
         <source>Empty names not allowed</source>
         <translation>Leere Namen sind nicht erlaubt</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="161"/>
+        <location filename="../src/interface/hoursform.cpp" line="113"/>
         <source>Duplicates not allowed</source>
         <translation>Doppelte Namen sind nicht erlaubt</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="192"/>
+        <location filename="../src/interface/hoursform.cpp" line="144"/>
         <source>%1 constraints will be removed.</source>
         <comment>%1 is the number of constraints</comment>
         <translation>%1 Einschränkungen werden entfernt.</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="196"/>
+        <location filename="../src/interface/hoursform.cpp" line="148"/>
         <source>%1 constraints will be modified.</source>
         <comment>%1 is the number of constraints</comment>
         <translation>%1 Einschränkungen werden geändert.</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="199"/>
+        <location filename="../src/interface/hoursform.cpp" line="151"/>
         <source>Do you want to continue?</source>
         <translation>Möchten Sie fortfahren?</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="201"/>
+        <location filename="../src/interface/hoursform.cpp" line="153"/>
         <source>FET warning</source>
         <translation>FET-Warnung</translation>
     </message>
@@ -36387,167 +36222,12 @@ Dieses Problem ist zugegeben eher theoretischer Natur; trotzdem könnte es einma
 <context>
     <name>HoursForm_template</name>
     <message>
-        <location filename="../src/interface/hoursform_template.ui" line="335"/>
-        <source>Hour 22</source>
-        <translation>Stunde 22</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="234"/>
-        <source>Hour 14</source>
-        <translation>Stunde 14</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="169"/>
-        <source>Hour 9</source>
-        <translation>Stunde 9</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="439"/>
-        <source>Hour 30</source>
-        <translation>Stunde 30</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="270"/>
-        <source>Hour 17</source>
-        <translation>Stunde 17</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="426"/>
-        <source>Hour 29</source>
-        <translation>Stunde 29</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="364"/>
-        <source>Hour 24</source>
-        <translation>Stunde 24</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="296"/>
-        <source>Hour 19</source>
-        <translation>Stunde 19</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="244"/>
-        <source>Hour 15</source>
-        <translation>Stunde 15</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="195"/>
-        <source>Hour 11</source>
-        <translation>Stunde 11</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="101"/>
-        <source>Hour 4</source>
-        <translation>Stunde 4</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="156"/>
-        <source>Hour 8</source>
-        <translation>Stunde 8</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="390"/>
-        <source>Hour 26</source>
-        <translation>Stunde 26</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="117"/>
-        <source>Hour 5</source>
-        <translation>Stunde Stunde 5</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="325"/>
-        <source>Hour 21</source>
-        <translation>Stunde 21</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="218"/>
-        <source>Hour 13</source>
-        <translation>Stunde 13</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="455"/>
-        <source>Hour 31</source>
-        <translation>Stunde 31</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="260"/>
-        <source>Hour 16</source>
-        <translation>Stunde 16</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="127"/>
-        <source>Hour 6</source>
-        <translation>Stunde 6</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="413"/>
-        <source>Hour 28</source>
-        <translation>Stunde 28</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="348"/>
-        <source>Hour 23</source>
-        <translation>Stunde 23</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="283"/>
-        <source>Hour 18</source>
-        <translation>Stunde 18</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="182"/>
-        <source>Hour 10</source>
-        <translation>Stunde 10</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="140"/>
-        <source>Hour 7</source>
-        <translation>Stunde 7</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="377"/>
-        <source>Hour 25</source>
-        <translation>Stunde 25</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="65"/>
-        <source>Hour 1</source>
-        <translation>Stunde 1</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="78"/>
-        <source>Hour 2</source>
-        <translation>Stunde 2</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="91"/>
-        <source>Hour 3</source>
-        <translation>Stunde 3</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="309"/>
-        <source>Hour 20</source>
-        <translation>Stunde 20</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="208"/>
-        <source>Hour 12</source>
-        <translation>Stunde 12</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="403"/>
-        <source>Hour 27</source>
-        <translation>Stunde 27</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="866"/>
+        <location filename="../src/interface/hoursform_template.ui" line="85"/>
         <source>Cancel</source>
         <translation>Abbrechen</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform_template.ui" line="859"/>
+        <location filename="../src/interface/hoursform_template.ui" line="78"/>
         <source>Ok</source>
         <translation>Ok</translation>
     </message>
@@ -36556,151 +36236,6 @@ Dieses Problem ist zugegeben eher theoretischer Natur; trotzdem könnte es einma
         <source>The hours of the day</source>
         <extracomment>The title of the dialog to modify the hours of the day</extracomment>
         <translation>Stunden eines Tages</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="686"/>
-        <source>Hour 49</source>
-        <translation>Stunde 49</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="790"/>
-        <source>Hour 57</source>
-        <translation>Stunde 57</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="468"/>
-        <source>Hour 32</source>
-        <translation>Stunde 32</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="517"/>
-        <source>Hour 36</source>
-        <translation>Stunde 36</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="650"/>
-        <source>Hour 46</source>
-        <translation>Stunde 46</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="556"/>
-        <source>Hour 39</source>
-        <translation>Stunde 39</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="507"/>
-        <source>Hour 35</source>
-        <translation>Stunde 35</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="819"/>
-        <source>Hour 59</source>
-        <translation>Stunde 59</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="660"/>
-        <source>Hour 47</source>
-        <translation>Stunde 47</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="611"/>
-        <source>Hour 43</source>
-        <translation>Stunde 43</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="767"/>
-        <source>Hour 55</source>
-        <translation>Stunde 55</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="543"/>
-        <source>Hour 38</source>
-        <translation>Stunde 38</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="777"/>
-        <source>Hour 56</source>
-        <translation>Stunde 56</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="621"/>
-        <source>Hour 44</source>
-        <translation>Stunde 44</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="598"/>
-        <source>Hour 42</source>
-        <translation>Stunde 42</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="491"/>
-        <source>Hour 34</source>
-        <translation>Stunde 34</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="712"/>
-        <source>Hour 51</source>
-        <translation>Stunde 51</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="832"/>
-        <source>Hour 60</source>
-        <translation>Stunde 60</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="751"/>
-        <source>Hour 54</source>
-        <translation>Stunde 54</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="530"/>
-        <source>Hour 37</source>
-        <translation>Stunde 37</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="569"/>
-        <source>Hour 40</source>
-        <translation>Stunde 40</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="582"/>
-        <source>Hour 41</source>
-        <translation>Stunde 41</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="806"/>
-        <source>Hour 58</source>
-        <translation>Stunde 58</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="725"/>
-        <source>Hour 52</source>
-        <translation>Stunde 52</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="699"/>
-        <source>Hour 50</source>
-        <translation>Stunde 50</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="634"/>
-        <source>Hour 45</source>
-        <translation>Stunde 45</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="481"/>
-        <source>Hour 33</source>
-        <translation>Stunde 33</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="738"/>
-        <source>Hour 53</source>
-        <translation>Stunde 53</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="676"/>
-        <source>Hour 48</source>
-        <translation>Stunde 48</translation>
     </message>
     <message>
         <location filename="../src/interface/hoursform_template.ui" line="22"/>

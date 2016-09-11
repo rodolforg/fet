@@ -28007,40 +28007,45 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>DaysForm</name>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="126"/>
-        <location filename="../src/interface/daysform.cpp" line="133"/>
+        <location filename="../src/interface/daysform.cpp" line="58"/>
+        <source>Day %1</source>
+        <translation>Ngày thứ %1</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/daysform.cpp" line="98"/>
+        <location filename="../src/interface/daysform.cpp" line="105"/>
         <source>FET information</source>
         <translation>Thông tin</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="127"/>
+        <location filename="../src/interface/daysform.cpp" line="99"/>
         <source>Empty names not allowed</source>
         <translation>Không cho phép để trống tên</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="134"/>
+        <location filename="../src/interface/daysform.cpp" line="106"/>
         <source>Duplicates not allowed</source>
         <translation>Không cho phép trùng tên</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="165"/>
+        <location filename="../src/interface/daysform.cpp" line="137"/>
         <source>%1 constraints will be removed.</source>
         <comment>%1 is the number of constraints</comment>
         <translation>%1 RB sẽ bị xóa.</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="169"/>
+        <location filename="../src/interface/daysform.cpp" line="141"/>
         <source>%1 constraints will be modified.</source>
         <comment>%1 is the number of constraints</comment>
         <translation>%1 RB sẽ bị thay đổi.</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="172"/>
+        <location filename="../src/interface/daysform.cpp" line="144"/>
         <source>Do you want to continue?</source>
         <translation>Bạn có muốn tiếp tục?</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform.cpp" line="174"/>
+        <location filename="../src/interface/daysform.cpp" line="146"/>
         <source>FET warning</source>
         <translation>Cảnh báo</translation>
     </message>
@@ -28048,112 +28053,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>DaysForm_template</name>
     <message>
-        <location filename="../src/interface/daysform_template.ui" line="180"/>
-        <source>Day 10</source>
-        <translation>Ngày thứ 10</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="85"/>
-        <source>Day 3</source>
-        <translation>Ngày thứ 3</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="124"/>
-        <source>Day 6</source>
-        <translation>Ngày thứ 6</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="232"/>
-        <source>Day 14</source>
-        <translation>Ngày thứ 14</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="137"/>
-        <source>Day 7</source>
-        <translation>Ngày thứ 7</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="72"/>
-        <source>Day 2</source>
-        <translation>Ngày thứ 2</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="167"/>
-        <source>Day 9</source>
-        <translation>Ngày thứ 9</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="111"/>
-        <source>Day 5</source>
-        <translation>Ngày thứ 5</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="219"/>
-        <source>Day 13</source>
-        <translation>Ngày thứ 13</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="193"/>
-        <source>Day 11</source>
-        <translation>Ngày thứ 11</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="154"/>
-        <source>Day 8</source>
-        <translation>Ngày thứ 8</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="98"/>
-        <source>Day 4</source>
-        <translation>Ngày thứ 4</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="59"/>
-        <source>Day 1</source>
-        <translation>Ngày thứ 1</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="206"/>
-        <source>Day 12</source>
-        <translation>Ngày thứ 12</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="439"/>
-        <source>Day 29</source>
-        <translation>Ngày thứ 29</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="452"/>
-        <source>Day 30</source>
-        <translation>Ngày thứ 30</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="465"/>
-        <source>Day 31</source>
-        <translation>Ngày thứ 31</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="478"/>
-        <source>Day 32</source>
-        <translation>Ngày thứ 32</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="491"/>
-        <source>Day 33</source>
-        <translation>Ngày thứ 33</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="504"/>
-        <source>Day 34</source>
-        <translation>Ngày thứ 34</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="517"/>
-        <source>Day 35</source>
-        <translation>Ngày thứ 35</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="552"/>
+        <location filename="../src/interface/daysform_template.ui" line="76"/>
         <source>Ok</source>
         <translation>Đồng ý</translation>
     </message>
@@ -28164,84 +28064,14 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <translation>Ngày trong tuần</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform_template.ui" line="559"/>
+        <location filename="../src/interface/daysform_template.ui" line="83"/>
         <source>Cancel</source>
         <translation>Thoát</translation>
     </message>
     <message>
-        <location filename="../src/interface/daysform_template.ui" line="20"/>
+        <location filename="../src/interface/daysform_template.ui" line="55"/>
         <source>Number of working days per week</source>
         <translation>Số ngày làm việc trong tuần</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="249"/>
-        <source>Day 15</source>
-        <translation>Ngày thứ 15</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="262"/>
-        <source>Day 16</source>
-        <translation>Ngày thứ 16</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="275"/>
-        <source>Day 17</source>
-        <translation>Ngày thứ 17</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="288"/>
-        <source>Day 18</source>
-        <translation>Ngày thứ 18</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="301"/>
-        <source>Day 19</source>
-        <translation>Ngày thứ 19</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="314"/>
-        <source>Day 20</source>
-        <translation>Ngày thứ 20</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="327"/>
-        <source>Day 21</source>
-        <translation>Ngày thứ 21</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="344"/>
-        <source>Day 22</source>
-        <translation>Ngày thứ 22</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="357"/>
-        <source>Day 23</source>
-        <translation>Ngày thứ 23</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="370"/>
-        <source>Day 24</source>
-        <translation>Ngày thứ 24</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="383"/>
-        <source>Day 25</source>
-        <translation>Ngày thứ 25</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="396"/>
-        <source>Day 26</source>
-        <translation>Ngày thứ 26</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="409"/>
-        <source>Day 27</source>
-        <translation>Ngày thứ 27</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/daysform_template.ui" line="422"/>
-        <source>Day 28</source>
-        <translation>Ngày thứ 28</translation>
     </message>
 </context>
 <context>
@@ -29389,12 +29219,12 @@ Nếu một nhóm con có quá ít giờ học, có lẽ bạn đã nhập các 
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4075"/>
         <source>44</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">44</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4078"/>
         <source>45</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">45</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4079"/>
@@ -29410,7 +29240,7 @@ Nếu một nhóm con có quá ít giờ học, có lẽ bạn đã nhập các 
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4081"/>
         <source>46</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">46</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4086"/>
@@ -29421,12 +29251,12 @@ Nếu một nhóm con có quá ít giờ học, có lẽ bạn đã nhập các 
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4084"/>
         <source>47</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">47</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4086"/>
         <source>48</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">48</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4088"/>
@@ -29437,7 +29267,7 @@ Nếu một nhóm con có quá ít giờ học, có lẽ bạn đã nhập các 
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4088"/>
         <source>49</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">49</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4090"/>
@@ -29572,7 +29402,7 @@ Nếu một nhóm con có quá ít giờ học, có lẽ bạn đã nhập các 
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4090"/>
         <source>50</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">50</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4487"/>
@@ -30167,7 +29997,7 @@ Nếu một nhóm con có quá ít giờ học, có lẽ bạn đã nhập các 
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4050"/>
         <source>36</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">36</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4058"/>
@@ -30177,7 +30007,7 @@ Nếu một nhóm con có quá ít giờ học, có lẽ bạn đã nhập các 
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4053"/>
         <source>37</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">37</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4061"/>
@@ -30187,7 +30017,7 @@ Nếu một nhóm con có quá ít giờ học, có lẽ bạn đã nhập các 
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4057"/>
         <source>38</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">38</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4064"/>
@@ -30197,7 +30027,7 @@ Nếu một nhóm con có quá ít giờ học, có lẽ bạn đã nhập các 
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4060"/>
         <source>39</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">39</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4067"/>
@@ -30207,7 +30037,7 @@ Nếu một nhóm con có quá ít giờ học, có lẽ bạn đã nhập các 
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4063"/>
         <source>40</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">40</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4070"/>
@@ -30217,7 +30047,7 @@ Nếu một nhóm con có quá ít giờ học, có lẽ bạn đã nhập các 
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4066"/>
         <source>41</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">41</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4073"/>
@@ -30227,7 +30057,7 @@ Nếu một nhóm con có quá ít giờ học, có lẽ bạn đã nhập các 
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4069"/>
         <source>42</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">42</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4076"/>
@@ -30237,7 +30067,7 @@ Nếu một nhóm con có quá ít giờ học, có lẽ bạn đã nhập các 
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4072"/>
         <source>43</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">43</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4082"/>
@@ -35811,40 +35641,45 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
 <context>
     <name>HoursForm</name>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="153"/>
-        <location filename="../src/interface/hoursform.cpp" line="160"/>
+        <location filename="../src/interface/hoursform.cpp" line="62"/>
+        <source>Hour %1</source>
+        <translation>Tiết %1</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/hoursform.cpp" line="105"/>
+        <location filename="../src/interface/hoursform.cpp" line="112"/>
         <source>FET information</source>
         <translation>Thông tin</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="154"/>
+        <location filename="../src/interface/hoursform.cpp" line="106"/>
         <source>Empty names not allowed</source>
         <translation>Không cho phép để trống tên</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="161"/>
+        <location filename="../src/interface/hoursform.cpp" line="113"/>
         <source>Duplicates not allowed</source>
         <translation>Không cho phép trùng tên</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="192"/>
+        <location filename="../src/interface/hoursform.cpp" line="144"/>
         <source>%1 constraints will be removed.</source>
         <comment>%1 is the number of constraints</comment>
         <translation>%1 RB sẽ bị xóa.</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="196"/>
+        <location filename="../src/interface/hoursform.cpp" line="148"/>
         <source>%1 constraints will be modified.</source>
         <comment>%1 is the number of constraints</comment>
         <translation>%1 RB sẽ bị thay đổi.</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="199"/>
+        <location filename="../src/interface/hoursform.cpp" line="151"/>
         <source>Do you want to continue?</source>
         <translation>Bạn có muốn tiếp tục?</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform.cpp" line="201"/>
+        <location filename="../src/interface/hoursform.cpp" line="153"/>
         <source>FET warning</source>
         <translation>Cảnh báo</translation>
     </message>
@@ -35852,167 +35687,12 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
 <context>
     <name>HoursForm_template</name>
     <message>
-        <location filename="../src/interface/hoursform_template.ui" line="335"/>
-        <source>Hour 22</source>
-        <translation>Tiết 22</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="234"/>
-        <source>Hour 14</source>
-        <translation>Tiết 14</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="169"/>
-        <source>Hour 9</source>
-        <translation>Tiết 9</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="439"/>
-        <source>Hour 30</source>
-        <translation>Tiết 30</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="270"/>
-        <source>Hour 17</source>
-        <translation>Tiết 17</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="426"/>
-        <source>Hour 29</source>
-        <translation>Tiết 29</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="364"/>
-        <source>Hour 24</source>
-        <translation>Tiết 24</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="296"/>
-        <source>Hour 19</source>
-        <translation>Tiết 19</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="244"/>
-        <source>Hour 15</source>
-        <translation>Tiết 15</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="195"/>
-        <source>Hour 11</source>
-        <translation>Tiết 11</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="101"/>
-        <source>Hour 4</source>
-        <translation>Tiết 4</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="156"/>
-        <source>Hour 8</source>
-        <translation>Tiết 8</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="390"/>
-        <source>Hour 26</source>
-        <translation>Tiết 26</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="117"/>
-        <source>Hour 5</source>
-        <translation>Tiết 5</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="325"/>
-        <source>Hour 21</source>
-        <translation>Tiết 21</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="218"/>
-        <source>Hour 13</source>
-        <translation>Tiết 13</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="455"/>
-        <source>Hour 31</source>
-        <translation>Tiết 31</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="260"/>
-        <source>Hour 16</source>
-        <translation>Tiết 16</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="127"/>
-        <source>Hour 6</source>
-        <translation>Tiết 6</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="413"/>
-        <source>Hour 28</source>
-        <translation>Tiết 28</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="348"/>
-        <source>Hour 23</source>
-        <translation>Tiết 23</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="283"/>
-        <source>Hour 18</source>
-        <translation>Tiết 18</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="182"/>
-        <source>Hour 10</source>
-        <translation>Tiết 10</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="140"/>
-        <source>Hour 7</source>
-        <translation>Tiết 7</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="377"/>
-        <source>Hour 25</source>
-        <translation>Tiết 25</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="65"/>
-        <source>Hour 1</source>
-        <translation>Tiết 1</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="78"/>
-        <source>Hour 2</source>
-        <translation>Tiết 2</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="91"/>
-        <source>Hour 3</source>
-        <translation>Tiết 3</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="309"/>
-        <source>Hour 20</source>
-        <translation>Tiết 20</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="208"/>
-        <source>Hour 12</source>
-        <translation>Tiết 12</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="403"/>
-        <source>Hour 27</source>
-        <translation>Tiết 27</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="866"/>
+        <location filename="../src/interface/hoursform_template.ui" line="85"/>
         <source>Cancel</source>
         <translation>Thoát</translation>
     </message>
     <message>
-        <location filename="../src/interface/hoursform_template.ui" line="859"/>
+        <location filename="../src/interface/hoursform_template.ui" line="78"/>
         <source>Ok</source>
         <translation>Đồng ý</translation>
     </message>
@@ -36021,151 +35701,6 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
         <source>The hours of the day</source>
         <extracomment>The title of the dialog to modify the hours of the day</extracomment>
         <translation>Giờ trong ngày</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="686"/>
-        <source>Hour 49</source>
-        <translation>Tiết 49</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="790"/>
-        <source>Hour 57</source>
-        <translation>Tiết 57</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="468"/>
-        <source>Hour 32</source>
-        <translation>Tiết 32</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="517"/>
-        <source>Hour 36</source>
-        <translation>Tiết 36</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="650"/>
-        <source>Hour 46</source>
-        <translation>Tiết 46</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="556"/>
-        <source>Hour 39</source>
-        <translation>Tiết 39</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="507"/>
-        <source>Hour 35</source>
-        <translation>Tiết 35</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="819"/>
-        <source>Hour 59</source>
-        <translation>Tiết 59</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="660"/>
-        <source>Hour 47</source>
-        <translation>Tiết 47</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="611"/>
-        <source>Hour 43</source>
-        <translation>Tiết 43</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="767"/>
-        <source>Hour 55</source>
-        <translation>Tiết 55</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="543"/>
-        <source>Hour 38</source>
-        <translation>Tiết 38</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="777"/>
-        <source>Hour 56</source>
-        <translation>Tiết 56</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="621"/>
-        <source>Hour 44</source>
-        <translation>Tiết 44</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="598"/>
-        <source>Hour 42</source>
-        <translation>Tiết 42</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="491"/>
-        <source>Hour 34</source>
-        <translation>Tiết 34</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="712"/>
-        <source>Hour 51</source>
-        <translation>Tiết 51</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="832"/>
-        <source>Hour 60</source>
-        <translation>Tiết 60</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="751"/>
-        <source>Hour 54</source>
-        <translation>Tiết 54</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="530"/>
-        <source>Hour 37</source>
-        <translation>Tiết 37</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="569"/>
-        <source>Hour 40</source>
-        <translation>Tiết 40</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="582"/>
-        <source>Hour 41</source>
-        <translation>Tiết 41</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="806"/>
-        <source>Hour 58</source>
-        <translation>Tiết 58</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="725"/>
-        <source>Hour 52</source>
-        <translation>Tiết 52</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="699"/>
-        <source>Hour 50</source>
-        <translation>Tiết 50</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="634"/>
-        <source>Hour 45</source>
-        <translation>Tiết 45</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="481"/>
-        <source>Hour 33</source>
-        <translation>Tiết 33</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="738"/>
-        <source>Hour 53</source>
-        <translation>Tiết 53</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/hoursform_template.ui" line="676"/>
-        <source>Hour 48</source>
-        <translation>Tiết 48</translation>
     </message>
     <message>
         <location filename="../src/interface/hoursform_template.ui" line="22"/>
@@ -45501,84 +45036,84 @@ Lưu ý: giáo viên bận và nghỉ giải lao không được tính vào ti�
         <location filename="../src/engine/rules.cpp" line="4654"/>
         <source>08:00</source>
         <comment>Hour name</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">08:00</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="113"/>
         <location filename="../src/engine/rules.cpp" line="4655"/>
         <source>09:00</source>
         <comment>Hour name</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">09:00</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="114"/>
         <location filename="../src/engine/rules.cpp" line="4656"/>
         <source>10:00</source>
         <comment>Hour name</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">10:00</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="115"/>
         <location filename="../src/engine/rules.cpp" line="4657"/>
         <source>11:00</source>
         <comment>Hour name</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">11:00</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="116"/>
         <location filename="../src/engine/rules.cpp" line="4658"/>
         <source>12:00</source>
         <comment>Hour name</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">12:00</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="117"/>
         <location filename="../src/engine/rules.cpp" line="4659"/>
         <source>13:00</source>
         <comment>Hour name</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">13:00</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="118"/>
         <location filename="../src/engine/rules.cpp" line="4660"/>
         <source>14:00</source>
         <comment>Hour name</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">14:00</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="119"/>
         <location filename="../src/engine/rules.cpp" line="4661"/>
         <source>15:00</source>
         <comment>Hour name</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">15:00</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="120"/>
         <location filename="../src/engine/rules.cpp" line="4662"/>
         <source>16:00</source>
         <comment>Hour name</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">16:00</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="121"/>
         <location filename="../src/engine/rules.cpp" line="4663"/>
         <source>17:00</source>
         <comment>Hour name</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">17:00</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="122"/>
         <location filename="../src/engine/rules.cpp" line="4664"/>
         <source>18:00</source>
         <comment>Hour name</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">18:00</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="123"/>
         <location filename="../src/engine/rules.cpp" line="4665"/>
         <source>19:00</source>
         <comment>Hour name</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">19:00</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="161"/>
@@ -46869,7 +46404,7 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="298"/>
         <source>0</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">0</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="431"/>

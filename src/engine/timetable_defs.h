@@ -166,7 +166,7 @@ DEPRECATED COMMENT BELOW
 IMPORTANT: max hours per day * max days per week = max hours per week must be qint16 (max 32767),
 because each time is qint16 and unallocated time is qint16
 */
-const int MAX_HOURS_PER_DAY=60;
+const int MAX_HOURS_PER_DAY=96;
 
 /**
 The maximum number of working days per week.

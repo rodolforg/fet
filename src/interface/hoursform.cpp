@@ -29,7 +29,7 @@
 
 extern Timetable gt;
 
-static QLineEdit* hoursNames[60];
+static QLineEdit* hoursNames[MAX_HOURS_PER_DAY];
 static int nHours;
 
 extern bool students_schedule_ready;
@@ -48,86 +48,32 @@ HoursForm::HoursForm(QWidget* parent): QDialog(parent)
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
-	
+
+	for(int i=0; i<MAX_HOURS_PER_DAY; i++) {
+		int row = i % 8;
+		int col = i / 8;
+		QLabel * hourLabel = new QLabel();
+		hourLabel->setText(tr("Hour %1").arg(i+1));
+		hourTable->addWidget(hourLabel, row*2, col);
+		QLineEdit * hourLineEdit = new QLineEdit();
+		hourTable->addWidget(hourLineEdit, row*2+1, col);
+		hoursNames[i] = hourLineEdit;
+	}
+
 	nHours=gt.rules.nHoursPerDay;
 
-	hoursNames[0]=hour1LineEdit;
-	hoursNames[1]=hour2LineEdit;
-	hoursNames[2]=hour3LineEdit;
-	hoursNames[3]=hour4LineEdit;
-	hoursNames[4]=hour5LineEdit;
-	hoursNames[5]=hour6LineEdit;
-	hoursNames[6]=hour7LineEdit;
-	hoursNames[7]=hour8LineEdit;
-	hoursNames[8]=hour9LineEdit;
-	hoursNames[9]=hour10LineEdit;
-
-	hoursNames[10]=hour11LineEdit;
-	hoursNames[11]=hour12LineEdit;
-	hoursNames[12]=hour13LineEdit;
-	hoursNames[13]=hour14LineEdit;
-	hoursNames[14]=hour15LineEdit;
-	hoursNames[15]=hour16LineEdit;
-	hoursNames[16]=hour17LineEdit;
-	hoursNames[17]=hour18LineEdit;
-	hoursNames[18]=hour19LineEdit;
-	hoursNames[19]=hour20LineEdit;
-
-	hoursNames[20]=hour21LineEdit;
-	hoursNames[21]=hour22LineEdit;
-	hoursNames[22]=hour23LineEdit;
-	hoursNames[23]=hour24LineEdit;
-	hoursNames[24]=hour25LineEdit;
-	hoursNames[25]=hour26LineEdit;
-	hoursNames[26]=hour27LineEdit;
-	hoursNames[27]=hour28LineEdit;
-	hoursNames[28]=hour29LineEdit;
-	hoursNames[29]=hour30LineEdit;
-
-	hoursNames[30]=hour31LineEdit;
-	hoursNames[31]=hour32LineEdit;
-	hoursNames[32]=hour33LineEdit;
-	hoursNames[33]=hour34LineEdit;
-	hoursNames[34]=hour35LineEdit;
-	hoursNames[35]=hour36LineEdit;
-	hoursNames[36]=hour37LineEdit;
-	hoursNames[37]=hour38LineEdit;
-	hoursNames[38]=hour39LineEdit;
-	hoursNames[39]=hour40LineEdit;
-
-	hoursNames[40]=hour41LineEdit;
-	hoursNames[41]=hour42LineEdit;
-	hoursNames[42]=hour43LineEdit;
-	hoursNames[43]=hour44LineEdit;
-	hoursNames[44]=hour45LineEdit;
-	hoursNames[45]=hour46LineEdit;
-	hoursNames[46]=hour47LineEdit;
-	hoursNames[47]=hour48LineEdit;
-	hoursNames[48]=hour49LineEdit;
-	hoursNames[49]=hour50LineEdit;
-
-	hoursNames[50]=hour51LineEdit;
-	hoursNames[51]=hour52LineEdit;
-	hoursNames[52]=hour53LineEdit;
-	hoursNames[53]=hour54LineEdit;
-	hoursNames[54]=hour55LineEdit;
-	hoursNames[55]=hour56LineEdit;
-	hoursNames[56]=hour57LineEdit;
-	hoursNames[57]=hour58LineEdit;
-	hoursNames[58]=hour59LineEdit;
-	hoursNames[59]=hour60LineEdit;
-
 	hoursSpinBox->setMinimum(1);
-	hoursSpinBox->setMaximum(60);
+	hoursSpinBox->setMaximum(MAX_HOURS_PER_DAY);
 	hoursSpinBox->setValue(gt.rules.nHoursPerDay);
 
-	for(int i=0; i<60; i++)
+	for(int i=0; i<MAX_HOURS_PER_DAY; i++) {
 		if(i<nHours){
 			hoursNames[i]->setEnabled(true);
 			hoursNames[i]->setText(gt.rules.hoursOfTheDay[i]);
 		}
 		else
 			hoursNames[i]->setDisabled(true);
+	}
 }
 
 HoursForm::~HoursForm()
@@ -139,7 +85,7 @@ void HoursForm::hoursChanged()
 {
 	nHours=hoursSpinBox->value();
 	assert(nHours <= MAX_HOURS_PER_DAY);
-	for(int i=0; i<60; i++)
+    for(int i=0; i<MAX_HOURS_PER_DAY; i++)
 		if(i<nHours)
 			hoursNames[i]->setEnabled(true);
 		else

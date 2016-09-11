@@ -23,12 +23,13 @@
 
 #include "daysform.h"
 
+#include <QLabel>
 #include <QLineEdit>
 #include <QMessageBox>
 
 extern Timetable gt;
 
-static QLineEdit* daysNames[35];
+static QLineEdit* daysNames[MAX_DAYS_PER_WEEK];
 static int nDays;
 
 extern bool students_schedule_ready;
@@ -50,51 +51,22 @@ DaysForm::DaysForm(QWidget* parent): QDialog(parent)
 	
 	nDays=gt.rules.nDaysPerWeek;
 	
-	daysNames[0]=day1LineEdit;
-	daysNames[1]=day2LineEdit;
-	daysNames[2]=day3LineEdit;
-	daysNames[3]=day4LineEdit;
-	daysNames[4]=day5LineEdit;
-	daysNames[5]=day6LineEdit;
-	daysNames[6]=day7LineEdit;
-
-	daysNames[7]=day8LineEdit;
-	daysNames[8]=day9LineEdit;
-	daysNames[9]=day10LineEdit;
-	daysNames[10]=day11LineEdit;
-	daysNames[11]=day12LineEdit;
-	daysNames[12]=day13LineEdit;
-	daysNames[13]=day14LineEdit;
-
-	daysNames[14]=day15LineEdit;
-	daysNames[15]=day16LineEdit;
-	daysNames[16]=day17LineEdit;
-	daysNames[17]=day18LineEdit;
-	daysNames[18]=day19LineEdit;
-	daysNames[19]=day20LineEdit;
-	daysNames[20]=day21LineEdit;
-
-	daysNames[21]=day22LineEdit;
-	daysNames[22]=day23LineEdit;
-	daysNames[23]=day24LineEdit;
-	daysNames[24]=day25LineEdit;
-	daysNames[25]=day26LineEdit;
-	daysNames[26]=day27LineEdit;
-	daysNames[27]=day28LineEdit;
-
-	daysNames[28]=day29LineEdit;
-	daysNames[29]=day30LineEdit;
-	daysNames[30]=day31LineEdit;
-	daysNames[31]=day32LineEdit;
-	daysNames[32]=day33LineEdit;
-	daysNames[33]=day34LineEdit;
-	daysNames[34]=day35LineEdit;
+    for(int i=0; i<MAX_DAYS_PER_WEEK; i++) {
+        int row = i % 7;
+        int col = i / 7;
+        QLabel * dayLabel = new QLabel();
+        dayLabel->setText(tr("Day %1").arg(i+1));
+        dayTable->addWidget(dayLabel, row*2, col);
+        QLineEdit * dayLineEdit = new QLineEdit();
+        dayTable->addWidget(dayLineEdit, row*2+1, col);
+        daysNames[i] = dayLineEdit;
+    }
 
 	daysSpinBox->setMinimum(1);
-	daysSpinBox->setMaximum(35);
+    daysSpinBox->setMaximum(MAX_DAYS_PER_WEEK);
 	daysSpinBox->setValue(gt.rules.nDaysPerWeek);
 
-	for(int i=0; i<35; i++)
+    for(int i=0; i<MAX_DAYS_PER_WEEK; i++)
 		if(i<nDays){
 			daysNames[i]->setEnabled(true);
 			daysNames[i]->setText(gt.rules.daysOfTheWeek[i]);
@@ -112,7 +84,7 @@ void DaysForm::daysChanged()
 {
 	nDays=daysSpinBox->value();
 	assert(nDays <= MAX_DAYS_PER_WEEK);
-	for(int i=0; i<35; i++)
+    for(int i=0; i<MAX_DAYS_PER_WEEK; i++)
 		if(i<nDays)
 			daysNames[i]->setEnabled(true);
 		else
