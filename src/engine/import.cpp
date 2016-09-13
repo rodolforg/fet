@@ -174,6 +174,10 @@ ChooseFieldsDialog::ChooseFieldsDialog(QWidget *parent): QDialog(parent)
 		fieldLine2CB[i] = new QComboBox();
 		fieldLine2CB[i]->setMaximumWidth(220);			//max
 		fieldLine2CB[i]->insertItems(0,fields);
+		int guessedFieldIndex = fields.indexOf(fieldName[i]);
+		if (guessedFieldIndex != -1) {
+			fieldLine2CB[i]->setCurrentIndex(guessedFieldIndex);
+		}
 		fieldLine2[i] = new QHBoxLayout();
 		fieldLine2[i]->addWidget(fieldRadio2[i]);
 		fieldLine2[i]->addWidget(fieldLine2CB[i]);
