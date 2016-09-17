@@ -203,159 +203,89 @@ double ConstraintBasicCompulsorySpace::fitness(
 		roomsConflicts=rooms_conflicts;
 	}
 
-	int i;
+	qint64 unallocated = 0; //unallocated activities
+	int nre = 0; //number of room exhaustions
+	int nor = 0; //number of overwhelmed rooms
 
-	qint64 unallocated; //unallocated activities
-	int nre; //number of room exhaustions
-	int nor; //number of overwhelmed rooms
+	for(int i=0; i<r.nInternalActivities; i++)
+		if(c.rooms[i]==UNALLOCATED_SPACE){
+			//Firstly, we consider a big clash each unallocated activity.
+			//Needs to be very a large constant, bigger than any other broken constraint.
+			unallocated += /*r.internalActivitiesList[i].duration * r.internalActivitiesList[i].nSubgroups * */ 10000;
+			//(an unallocated activity for a year is more important than an unallocated activity for a subgroup)
+			if(conflictsString != nullptr){
+				QString s=tr("Space constraint basic compulsory broken: unallocated activity with id=%1 (%2)",
+							 "%2 is the detailed description of the activity").arg(r.internalActivitiesList[i].id).arg(getActivityDetailedDescription(r, r.internalActivitiesList[i].id));
+				s+=QString(" - ");
+				s+=tr("this increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100*10000));
 
-	//part without logging....................................................................
-	if(conflictsString==NULL){
-		//Unallocated activities
-		unallocated=0;
-		nor=0;
-		for(i=0; i<r.nInternalActivities; i++)
-			if(c.rooms[i]==UNALLOCATED_SPACE){
-				//Firstly, we consider a big clash each unallocated activity.
-				//Needs to be very a large constant, bigger than any other broken constraint.
-				unallocated += /*r.internalActivitiesList[i].duration * r.internalActivitiesList[i].nSubgroups * */ 10000;
-				//(an unallocated activity for a year is more important than an unallocated activity for a subgroup)
+				dl.append(s);
+				cl.append(weightPercentage/100 * 10000);
+
+				*conflictsString+=s+"\n";
 			}
-			else if(c.rooms[i]!=UNSPECIFIED_ROOM){
-				//The capacity of each room must be respected
-				//(the number of students must be less than the capacity)
-				int rm=c.rooms[i];
-				if(r.internalActivitiesList[i].nTotalStudents>r.internalRoomsList[rm]->capacity){
-					int tmp;
-					//if(r.internalActivitiesList[i].parity==PARITY_WEEKLY)
-					//	tmp=2;
-					//else
-						tmp=1;
-	
-					nor+=tmp;
+		}
+		else if(c.rooms[i]!=UNSPECIFIED_ROOM){
+			//The capacity of each room must be respected
+			//(the number of students must be less than the capacity)
+			int rm=c.rooms[i];
+			if(r.internalActivitiesList[i].nTotalStudents>r.internalRoomsList[rm]->capacity){
+				int tmp;
+				//if(r.internalActivitiesList[i].parity==PARITY_WEEKLY)
+				//	tmp=2;
+				//else
+				tmp=1;
+
+				nor+=tmp;
+
+				if(conflictsString != nullptr){
+					QString s;
+					s=tr("Space constraint basic compulsory: room %1 has allocated activity with id %2 (%3) and the capacity of the room is overloaded",
+						 "%2 is act id, %3 is detailed description of activity")
+							.arg(r.internalRoomsList[rm]->name)
+							.arg(r.internalActivitiesList[i].id)
+							.arg(getActivityDetailedDescription(r, r.internalActivitiesList[i].id));
+					s+=". ";
+					s+=tr("This increases conflicts total by %1").arg(CustomFETString::number(weightPercentage/100));
+
+					dl.append(s);
+					cl.append(weightPercentage/100);
+
+					*conflictsString += s+"\n";
 				}
 			}
+		}
 
+	if (conflictsString == nullptr) {
+		nre = roomsConflicts;
+	} else {
 		//Calculates the number of rooms exhaustion (when a room is occupied
 		//for more than one activity at the same time)
-		/*nre=0;
-		for(i=0; i<r.nInternalRooms; i++)
-			for(int j=0; j<r.nDaysPerWeek; j++)
-				for(int k=0; k<r.nHoursPerDay; k++){
+		for(int i=0; i<r.nInternalRooms; i++) {
+			for(int j=0; j<r.nDaysPerWeek; j++) {
+				for(int k=0; k<r.nHoursPerDay; k++) {
 					int tmp=roomsMatrix[i][j][k]-1;
 					if(tmp>0){
-						if(conflictsString!=NULL){
-							QString s=tr("Space constraint basic compulsory: room with name %1 has more than one allocated activity on day %2, hour %3.")
+						nre+=tmp;
+
+						QString s=tr("Space constraint basic compulsory: room with name %1 has more than one allocated activity on day %2, hour %3.")
 								.arg(r.internalRoomsList[i]->name)
 								.arg(r.daysOfTheWeek[j])
 								.arg(r.hoursOfTheDay[k]);
-							s+=" ";
-							s+=tr("This increases the conflicts total by %1").arg(tmp*weightPercentage/100);
-						
-							dl.append(s);
-							cl.append(tmp*weightPercentage/100);
-						
-							*conflictsString += s+"\n";
-						}
-						nre+=tmp;
-					}
-				}
-		*/
-		nre=roomsConflicts;
-	}
-	//part with logging....................................................................
-	else{
-		//Unallocated activities
-		unallocated=0;
-		nor=0;
-		for(i=0; i<r.nInternalActivities; i++)
-			if(c.rooms[i]==UNALLOCATED_SPACE){
-				//Firstly, we consider a big clash each unallocated activity.
-				//Needs to be very a large constant, bigger than any other broken constraint.
-				unallocated += /*r.internalActivitiesList[i].duration * r.internalActivitiesList[i].nSubgroups * */ 10000;
-				//(an unallocated activity for a year is more important than an unallocated activity for a subgroup)
-				if(conflictsString!=NULL){
-					QString s=tr("Space constraint basic compulsory broken: unallocated activity with id=%1 (%2)",
-						"%2 is the detailed description of the activity").arg(r.internalActivitiesList[i].id).arg(getActivityDetailedDescription(r, r.internalActivitiesList[i].id));
-					s+=QString(" - ");
-					s+=tr("this increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100*10000));
-					
-					dl.append(s);
-					cl.append(weightPercentage/100 * 10000);
-					
-					*conflictsString+=s+"\n";
+						s+=" ";
+						s+=tr("This increases the conflicts total by %1").arg(CustomFETString::number(tmp*weightPercentage/100));
 
-					/*(*conflictsString) += tr("Space constraint basic compulsory: unallocated activity with id=%1").arg(r.internalActivitiesList[i].id);
-					(*conflictsString) += tr(" - this increases the conflicts total by %1")
-						.arg(weight*10000);
-					(*conflictsString) += "\n";*/
-				}
-			}
-			else if(c.rooms[i]!=UNSPECIFIED_ROOM){
-				//The capacity of each room must be respected
-				//(the number of students must be less than the capacity)
-				int rm=c.rooms[i];
-				if(r.internalActivitiesList[i].nTotalStudents>r.internalRoomsList[rm]->capacity){
-					int tmp;
-					//if(r.internalActivitiesList[i].parity==PARITY_WEEKLY)
-					//	tmp=2;
-					//else
-						tmp=1;
-	
-					nor+=tmp;
-
-					if(conflictsString!=NULL){
-						QString s;
-						s=tr("Space constraint basic compulsory: room %1 has allocated activity with id %2 (%3) and the capacity of the room is overloaded",
-							"%2 is act id, %3 is detailed description of activity")
-						.arg(r.internalRoomsList[rm]->name)
-						.arg(r.internalActivitiesList[i].id)
-						.arg(getActivityDetailedDescription(r, r.internalActivitiesList[i].id));
-						s+=". ";
-						s+=tr("This increases conflicts total by %1").arg(CustomFETString::number(weightPercentage/100));
-						
 						dl.append(s);
-						cl.append(weightPercentage/100);
-						
+						cl.append(tmp*weightPercentage/100);
+
 						*conflictsString += s+"\n";
 					}
 				}
 			}
-
-		//Calculates the number of rooms exhaustion (when a room is occupied
-		//for more than one activity at the same time)
-		nre=0;
-		for(i=0; i<r.nInternalRooms; i++)
-			for(int j=0; j<r.nDaysPerWeek; j++)
-				for(int k=0; k<r.nHoursPerDay; k++){
-					int tmp=roomsMatrix[i][j][k]-1;
-					if(tmp>0){
-						if(conflictsString!=NULL){
-							QString s=tr("Space constraint basic compulsory: room with name %1 has more than one allocated activity on day %2, hour %3.")
-								.arg(r.internalRoomsList[i]->name)
-								.arg(r.daysOfTheWeek[j])
-								.arg(r.hoursOfTheDay[k]);
-							s+=" ";
-							s+=tr("This increases the conflicts total by %1").arg(CustomFETString::number(tmp*weightPercentage/100));
-						
-							dl.append(s);
-							cl.append(tmp*weightPercentage/100);
-						
-							*conflictsString += s+"\n";
-							/*(*conflictsString)+=tr("Space constraint basic compulsory: room with name %1 has more than one allocated activity on day %2, hour %3.")
-								.arg(r.internalRoomsList[i]->name)
-								.arg(r.daysOfTheWeek[j])
-								.arg(r.hoursOfTheDay[k]);
-							(*conflictsString)+=" ";
-							(*conflictsString)+=tr("This increases the conflicts total by %1").arg(tmp*weight);
-							(*conflictsString)+="\n";*/
-						}
-						nre+=tmp;
-					}
-				}
+		}
+		if(roomsConflicts!=-1)
+			assert(nre==roomsConflicts);
 	}
-	/*if(roomsConflicts!=-1)
-		assert(nre==roomsConflicts);*/ //just a check, works only on logged fitness calculation
 		
 	if(this->weightPercentage==100){
 		//assert(unallocated==0);
@@ -603,9 +533,7 @@ double ConstraintRoomNotAvailableTimes::fitness(
 	//(currently it is 10)
 	int rm=this->room_ID;
 
-	int nbroken;
-
-	nbroken=0;
+	int nbroken = 0;
 
 	assert(days.count()==hours.count());
 	for(int k=0; k<days.count(); k++){
@@ -890,11 +818,9 @@ double ConstraintActivityPreferredRoom::fitness(
 
 	//Calculates the number of conflicts
 
-	int nbroken;
+	int nbroken = 0;
 	
 	bool ok=true;
-
-	nbroken=0;
 
 	int rm=c.rooms[this->_activity];
 	if(/*rm!=UNALLOCATED_SPACE &&*/ rm!=this->_room){
@@ -1137,11 +1063,9 @@ double ConstraintActivityPreferredRooms::fitness(
 
 	//Calculates the number of conflicts
 
-	int nbroken;
+	int nbroken = 0;
 	
 	bool ok=true;
-
-	nbroken=0;
 
 	int rm=c.rooms[this->_activity];
 	if(1 || rm!=UNALLOCATED_SPACE){
@@ -1397,11 +1321,10 @@ double ConstraintStudentsSetHomeRoom::fitness(
 	//find the scheduled room and check to see if this
 	//room is accepted or not.
 
-	int nbroken;
+	int nbroken = 0;
 	
 	bool ok2=true;
 
-	nbroken=0;
 	foreach(int ac, this->_activities){
 		int rm=c.rooms[ac];
 		if(rm==UNALLOCATED_SPACE) //counted as unallocated
@@ -1681,11 +1604,10 @@ double ConstraintStudentsSetHomeRooms::fitness(
 	//find the scheduled room and check to see if this
 	//room is accepted or not.
 
-	int nbroken;
+	int nbroken = 0;
 	
 	bool ok2=true;
 
-	nbroken=0;
 	foreach(int ac, this->_activities){
 		int rm=c.rooms[ac];
 		if(rm==UNALLOCATED_SPACE)
@@ -1954,11 +1876,10 @@ double ConstraintTeacherHomeRoom::fitness(
 	//find the scheduled room and check to see if this
 	//room is accepted or not.
 
-	int nbroken;
+	int nbroken = 0;
 	
 	bool ok2=true;
 
-	nbroken=0;
 	foreach(int ac, this->_activities){
 		int rm=c.rooms[ac];
 		if(rm==UNALLOCATED_SPACE) //counted as unallocated
@@ -2236,11 +2157,10 @@ double ConstraintTeacherHomeRooms::fitness(
 	//find the scheduled room and check to see if this
 	//room is accepted or not.
 
-	int nbroken;
+	int nbroken = 0;
 	
 	bool ok2=true;
 
-	nbroken=0;
 	foreach(int ac, this->_activities){
 		int rm=c.rooms[ac];
 		if(rm==UNALLOCATED_SPACE)
@@ -2484,11 +2404,10 @@ double ConstraintSubjectPreferredRoom::fitness(
 	//find the scheduled room and check to see if this
 	//room is accepted or not.
 
-	int nbroken;
+	int nbroken = 0;
 	
 	bool ok2=true;
 
-	nbroken=0;
 	foreach(int ac, this->_activities){
 		int rm=c.rooms[ac];
 		if(rm==UNALLOCATED_SPACE) //counted as unallocated
@@ -2732,11 +2651,10 @@ double ConstraintSubjectPreferredRooms::fitness(
 	//find the scheduled room and check to see if this
 	//room is accepted or not.
 
-	int nbroken;
+	int nbroken = 0;
 	
 	bool ok2=true;
 
-	nbroken=0;
 	foreach(int ac, this->_activities){
 		int rm=c.rooms[ac];
 		if(rm==UNALLOCATED_SPACE)
@@ -2979,11 +2897,10 @@ double ConstraintSubjectActivityTagPreferredRoom::fitness(
 	//find the scheduled room and check to see if this
 	//room is accepted or not.
 
-	int nbroken;
+	int nbroken = 0;
 	
 	bool ok2=true;
 
-	nbroken=0;
 	foreach(int ac, this->_activities){
 		int rm=c.rooms[ac];
 		if(rm==UNALLOCATED_SPACE) //counted as unallocated
@@ -3236,11 +3153,10 @@ double ConstraintSubjectActivityTagPreferredRooms::fitness(
 	//find the scheduled room and check to see if this
 	//room is accepted or not.
 
-	int nbroken;
+	int nbroken = 0;
 	
 	bool ok2=true;
 
-	nbroken=0;
 	foreach(int ac, this->_activities){
 		int rm=c.rooms[ac];
 		if(rm==UNALLOCATED_SPACE)
@@ -3476,11 +3392,10 @@ double ConstraintActivityTagPreferredRoom::fitness(
 	//find the scheduled room and check to see if this
 	//room is accepted or not.
 
-	int nbroken;
+	int nbroken = 0;
 	
 	bool ok2=true;
 
-	nbroken=0;
 	foreach(int ac, this->_activities){
 		int rm=c.rooms[ac];
 		if(rm==UNALLOCATED_SPACE) //counted as unallocated
@@ -3725,11 +3640,10 @@ double ConstraintActivityTagPreferredRooms::fitness(
 	//find the scheduled room and check to see if this
 	//room is accepted or not.
 
-	int nbroken;
+	int nbroken = 0;
 	
 	bool ok2=true;
 
-	nbroken=0;
 	foreach(int ac, this->_activities){
 		int rm=c.rooms[ac];
 		if(rm==UNALLOCATED_SPACE)
