@@ -36252,7 +36252,7 @@ Provavelmente, na prática, esse problema não aparecerá e você não precisa s
     <message>
         <location filename="../src/engine/import.cpp" line="121"/>
         <source>Split Duration</source>
-        <translation>Divisão dos Períodos</translation>
+        <translation>Divisões dos Períodos</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="132"/>
