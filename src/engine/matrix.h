@@ -30,6 +30,9 @@
 
 #include "timetable_defs.h"
 
+/**
+ * @brief Matrix3D is a simple 3D vector class with proper resource deallocation
+ */
 template <typename T>
 class Matrix3D
 {
@@ -45,12 +48,24 @@ public:
 	Matrix3D();
 	~Matrix3D();
 
+	/**
+	 * @brief clear all matrix contents and size
+	 */
 	void clear();
+	/**
+	 * @brief change the matrix size, DESTROYING original content
+	 * @param _d1 the new size for the first dimension
+	 * @param _d2 the new size for the second dimension
+	 * @param _d3 the new size for the third dimension
+	 */
 	void resize(int _d1, int _d2, int _d3);
 	T** operator[](int i);
 	T& operator()(int i, int j, int k);
 };
 
+/**
+ * @brief Matrix3D is a simple 2D vector class with proper resource deallocation
+ */
 template <typename T>
 class Matrix2D
 {
@@ -65,12 +80,23 @@ public:
 	Matrix2D();
 	~Matrix2D();
 
+	/**
+	 * @brief clear all matrix contents and size
+	 */
 	void clear();
+	/**
+	 * @brief change the matrix size, DESTROYING original content
+	 * @param _d1 the new size for the first dimension
+	 * @param _d2 the new size for the second dimension
+	 */
 	void resize(int _d1, int _d2);
 	T* operator[](int i);
 	T& operator()(int i, int j);
 };
 
+/**
+ * @brief Matrix3D is a simple vector class with proper resource deallocation
+ */
 template <typename T>
 class Matrix1D
 {
@@ -83,16 +109,22 @@ public:
 	Matrix1D();
 	~Matrix1D();
 
+	/**
+	 * @brief clear all matrix contents and size
+	 */
 	void clear();
+	/**
+	 * @brief change the matrix size, DESTROYING original content
+	 * @param _d1 the new dimension size
+	 */
 	void resize(int _d1);
 	T& operator[](int i);
-	//T& operator()(int i);
 };
 
 
 template <typename T> Matrix3D<T>::Matrix3D()
+	: d1(-1), d2(-1), d3(-1), a(nullptr), content(nullptr)
 {
-	d1=d2=d3=-1;
 }
 
 template <typename T> Matrix3D<T>::~Matrix3D()
@@ -102,14 +134,19 @@ template <typename T> Matrix3D<T>::~Matrix3D()
 
 template <typename T> void Matrix3D<T>::clear()
 {
-	if(d1>=0 || d2>=0 || d3>=0){
+	if(a != nullptr){
 		assert(d1>0 && d2>0 && d3>0);
 		
 		for(int i=0; i<d1; i++)
 			delete[] a[i];
 		delete[]a;
-		
+		a = nullptr;
+	}
+	if (content != nullptr) {
+		assert(d1>0 && d2>0 && d3>0);
+
 		delete[] content;
+		content = nullptr;
 	}
 	d1=d2=d3=-1;
 }
@@ -133,7 +170,7 @@ template <typename T> void Matrix3D<T>::resize(int _d1, int _d2, int _d3)
 		for(int i=0; i<d1; i++){
 			a[i]=new T*[d2];
 			for(int j=0; j<d2; j++)
-				a[i][j]=content+i*d2*d3+j*d3;
+				a[i][j]=content+(i*d2+j)*d3;
 		}
 	}
 }
@@ -145,14 +182,13 @@ template <typename T> inline T** Matrix3D<T>::operator[](int i)
 
 template <typename T> inline T& Matrix3D<T>::operator()(int i, int j, int k)
 {
-	//return content[i*d2*d3+j*d3+k];
 	return content[(i*d2+j)*d3+k];
 }
 
 
 template <typename T> Matrix2D<T>::Matrix2D()
+	: d1(-1), d2(-1), a(nullptr), content(nullptr)
 {
-	d1=d2=-1;
 }
 
 template <typename T> Matrix2D<T>::~Matrix2D()
@@ -162,12 +198,16 @@ template <typename T> Matrix2D<T>::~Matrix2D()
 
 template <typename T> void Matrix2D<T>::clear()
 {
-	if(d1>=0 || d2>=0){
+	if(a != nullptr){
 		assert(d1>0 && d2>0);
 		
 		delete[] a;
-		
+		a = nullptr;
+	}
+	if (content != nullptr) {
+		assert(d1>0 && d2>0);
 		delete[] content;
+		content = nullptr;
 	}
 	d1=d2=-1;
 }
@@ -204,8 +244,8 @@ template <typename T> inline T& Matrix2D<T>::operator()(int i, int j)
 
 
 template <typename T> Matrix1D<T>::Matrix1D()
+	: d1(-1), a(nullptr)
 {
-	d1=-1;
 }
 
 template <typename T> Matrix1D<T>::~Matrix1D()
@@ -215,9 +255,10 @@ template <typename T> Matrix1D<T>::~Matrix1D()
 
 template <typename T> void Matrix1D<T>::clear()
 {
-	if(d1>=0){
+	if(a != nullptr){
 		assert(d1>0);
 		delete[] a;
+		a = nullptr;
 	}
 	d1=-1;
 }
@@ -242,10 +283,5 @@ template <typename T> inline T& Matrix1D<T>::operator[](int i)
 {
 	return a[i];
 }
-
-/*template <typename T> inline T& Matrix1D<T>::operator()(int i)
-{
-	return a[i];
-}*/
 
 #endif
