@@ -241,214 +241,139 @@ double ConstraintBasicCompulsoryTime::fitness(Solution& c, Rules& r, QList<doubl
 		teachersConflicts = teachers_conflicts;
 	}
 
-	int i,dd;
-
-	qint64 unallocated; //unallocated activities
-	int late; //late activities
+	qint64 unallocated = 0; //unallocated activities
+	int late = 0; //late activities
 	int nte; //number of teacher exhaustions
 	int nse; //number of students exhaustions
 
-	//Part without logging..................................................................
-	if(conflictsString==NULL){
-		//Unallocated or late activities
-		unallocated=0;
-		late=0;
-		for(i=0; i<r.nInternalActivities; i++){
-			if(c.times[i]==UNALLOCATED_TIME){
-				//Firstly, we consider a big clash each unallocated activity.
-				//Needs to be very a large constant, bigger than any other broken constraint.
-				//Take care: MAX_ACTIVITIES*this_constant <= INT_MAX
-				unallocated += /*r.internalActivitiesList[i].duration * r.internalActivitiesList[i].nSubgroups * */ 10000;
-				//(an unallocated activity for a year is more important than an unallocated activity for a subgroup)
-			}
-			else{
-				//Calculates the number of activities that are scheduled too late (in fact we
-				//calculate a function that increases as the activity is getting late)
-				int h=c.times[i]/r.nDaysPerWeek;
-				dd=r.internalActivitiesList[i].duration;
-				if(h+dd>r.nHoursPerDay){
-					int tmp;
-					tmp=1;
-					late += (h+dd-r.nHoursPerDay) * tmp * r.internalActivitiesList[i].iSubgroupsList.count();
-					//multiplied with the number
-					//of subgroups implied, for seeing the importance of the
-					//activity
-				}
-			}
-		}
-		
-		assert(late==0);
+	for(int i=0; i<r.nInternalActivities; i++){
+		if(c.times[i]==UNALLOCATED_TIME){
+			//Firstly, we consider a big clash each unallocated activity.
+			//Needs to be very a large constant, bigger than any other broken constraint.
+			//Take care: MAX_ACTIVITIES*this_constant <= INT_MAX
+			unallocated += /*r.internalActivitiesList[i].duration * r.internalActivitiesList[i].nSubgroups * */ 10000;
+			//(an unallocated activity for a year is more important than an unallocated activity for a subgroup)
 
-		//Below, for teachers and students, please remember that 2 means a weekly activity
-		//and 1 fortnightly one. So, if the matrix teachersMatrix[teacher][day][hour]==2, it is ok.
-
-		//Calculates the number of teachers exhaustion (when he has to teach more than
-		//one activity at the same time)
-		/*nte=0;
-		for(i=0; i<r.nInternalTeachers; i++)
-			for(int j=0; j<r.nDaysPerWeek; j++)
-				for(int k=0; k<r.nHoursPerDay; k++){
-					int tmp=teachersMatrix[i][j][k]-2;
-					if(tmp>0)
-						nte+=tmp;
-				}*/
-		nte = teachersConflicts; //faster
-		
-		assert(nte==0);
-
-		//Calculates the number of subgroups exhaustion (a subgroup cannot attend two
-		//activities at the same time)
-		/*nse=0;
-		for(i=0; i<r.nInternalSubgroups; i++)
-			for(int j=0; j<r.nDaysPerWeek; j++)
-				for(int k=0; k<r.nHoursPerDay; k++){
-					int tmp=subgroupsMatrix[i][j][k]-2;
-					if(tmp>0)
-						nse += tmp;
-				}*/
-		nse = subgroupsConflicts; //faster
-		
-		assert(nse==0);			
-	}
-	//part with logging....................................................................
-	else{
-		//Unallocated or late activities
-		unallocated=0;
-		late=0;
-		for(i=0; i<r.nInternalActivities; i++){
-			if(c.times[i]==UNALLOCATED_TIME){
-				//Firstly, we consider a big clash each unallocated activity.
-				//Needs to be very a large constant, bigger than any other broken constraint.
-				//Take care: MAX_ACTIVITIES*this_constant <= INT_MAX
-				unallocated += /*r.internalActivitiesList[i].duration * r.internalActivitiesList[i].nSubgroups * */ 10000;
-				//(an unallocated activity for a year is more important than an unallocated activity for a subgroup)
-				if(conflictsString!=NULL){
-					QString s= tr("Time constraint basic compulsory broken: unallocated activity with id=%1 (%2)",
-						"%2 is the detailed description of activity - teachers, subject, students")
+			if(conflictsString!=NULL){
+				QString s= tr("Time constraint basic compulsory broken: unallocated activity with id=%1 (%2)",
+							  "%2 is the detailed description of activity - teachers, subject, students")
 						.arg(r.internalActivitiesList[i].id).arg(getActivityDetailedDescription(r, r.internalActivitiesList[i].id));
-					s+=" - ";
-					s += tr("this increases the conflicts total by %1")
-					 .arg(CustomFETString::number(weightPercentage/100 * 10000));
-					//s += "\n";
-					
-					dl.append(s);
-					cl.append(weightPercentage/100 * 10000);
+				s+=" - ";
+				s += tr("this increases the conflicts total by %1")
+						.arg(CustomFETString::number(weightPercentage/100 * 10000));
 
-					(*conflictsString) += s + "\n";
-				}
+				dl.append(s);
+				cl.append(weightPercentage/100 * 10000);
+
+				(*conflictsString) += s + "\n";
 			}
-			else{
-				//Calculates the number of activities that are scheduled too late (in fact we
-				//calculate a function that increases as the activity is getting late)
-				int h=c.times[i]/r.nDaysPerWeek;
-				dd=r.internalActivitiesList[i].duration;
-				if(h+dd>r.nHoursPerDay){
-					assert(0);	
-				
-					int tmp;
-					tmp=1;
-					late += (h+dd-r.nHoursPerDay) * tmp * r.internalActivitiesList[i].iSubgroupsList.count();
-					//multiplied with the number
-					//of subgroups implied, for seeing the importance of the
-					//activity
+		}
+		else{
+			//Calculates the number of activities that are scheduled too late (in fact we
+			//calculate a function that increases as the activity is getting late)
+			int h=c.times[i]/r.nDaysPerWeek;
+			int dd=r.internalActivitiesList[i].duration;
+			if(h+dd>r.nHoursPerDay){
+				int tmp = 1;
+				int lateIncrease = (h+dd-r.nHoursPerDay) * tmp * r.internalActivitiesList[i].iSubgroupsList.count();
+				late += lateIncrease;
+				//multiplied with the number of subgroups implied,
+				//for seeing the importance of the activity
 
-					if(conflictsString!=NULL){
-						QString s=tr("Time constraint basic compulsory");
-						s+=": ";
-						s+=tr("activity with id=%1 is late.")
-						 .arg(r.internalActivitiesList[i].id);
-						s+=" ";
-						s+=tr("This increases the conflicts total by %1")
-						 .arg(CustomFETString::number((h+dd-r.nHoursPerDay)*tmp*r.internalActivitiesList[i].iSubgroupsList.count()*weightPercentage/100));
-						s+="\n";
-						
-						dl.append(s);
-						cl.append((h+dd-r.nHoursPerDay)*tmp*r.internalActivitiesList[i].iSubgroupsList.count()*weightPercentage/100);
+				if(conflictsString!=NULL){
+					QString s=tr("Time constraint basic compulsory");
+					s+=": ";
+					s+=tr("activity with id=%1 is late.")
+							.arg(r.internalActivitiesList[i].id);
+					s+=" ";
+					s+=tr("This increases the conflicts total by %1")
+							.arg(CustomFETString::number(lateIncrease*weightPercentage/100));
+					s+="\n";
 
-						(*conflictsString) += s+"\n";
-					}
+					dl.append(s);
+					cl.append(lateIncrease*weightPercentage/100);
+
+					(*conflictsString) += s+"\n";
 				}
 			}
 		}
+	}
 
-		//Below, for teachers and students, please remember that 2 means a weekly activity
-		//and 1 fortnightly one. So, if the matrix teachersMatrix[teacher][day][hour]==2,
-		//that is ok.
+	assert(late==0);
 
-		//Calculates the number of teachers exhaustion (when he has to teach more than
-		//one activity at the same time)
+	//Below, for teachers and students, please remember that 2 means a weekly activity
+	//and 1 fortnightly one. So, if the matrix teachersMatrix[teacher][day][hour]==2,
+	//that is ok.
+
+	//Calculates the number of teachers exhaustion (when he has to teach more than
+	//one activity at the same time)
+	if (conflictsString == nullptr) {
+		nte = teachersConflicts; // faster
+	} else {
 		nte=0;
-		for(i=0; i<r.nInternalTeachers; i++)
-			for(int j=0; j<r.nDaysPerWeek; j++)
-				for(int k=0; k<r.nHoursPerDay; k++){
+		for(int i=0; i<r.nInternalTeachers; i++) {
+			for(int j=0; j<r.nDaysPerWeek; j++) {
+				for(int k=0; k<r.nHoursPerDay; k++) {
 					int tmp=teachersMatrix[i][j][k]-1;
 					if(tmp>0){
-						if(conflictsString!=NULL){
-							QString s=tr("Time constraint basic compulsory");
-							s+=": ";
-							s+=tr("teacher with name %1 has more than one allocated activity on day %2, hour %3")
-							 .arg(r.internalTeachersList[i]->name)
-							 .arg(r.daysOfTheWeek[j])
-							 .arg(r.hoursOfTheDay[k]);
-							s+=". ";
-							s+=tr("This increases the conflicts total by %1")
-							 .arg(CustomFETString::number(tmp*weightPercentage/100));
-						
-							(*conflictsString)+= s+"\n";
-							
-							dl.append(s);
-							cl.append(tmp*weightPercentage/100);
-						}
+						QString s=tr("Time constraint basic compulsory");
+						s+=": ";
+						s+=tr("teacher with name %1 has more than one allocated activity on day %2, hour %3")
+						 .arg(r.internalTeachersList[i]->name)
+						 .arg(r.daysOfTheWeek[j])
+						 .arg(r.hoursOfTheDay[k]);
+						s+=". ";
+						s+=tr("This increases the conflicts total by %1")
+						 .arg(CustomFETString::number(tmp*weightPercentage/100));
+
+						(*conflictsString)+= s+"\n";
+
+						dl.append(s);
+						cl.append(tmp*weightPercentage/100);
 						nte+=tmp;
 					}
 				}
+			}
+		}
+	}
+	assert(nte==0);
 
-		assert(nte==0);
-		
-		//Calculates the number of subgroups exhaustion (a subgroup cannot attend two
-		//activities at the same time)
+	//Calculates the number of subgroups exhaustion (a subgroup cannot attend two
+	//activities at the same time)
+	if (conflictsString == nullptr) {
+		nse = subgroupsConflicts; //faster
+	} else {
 		nse=0;
-		for(i=0; i<r.nInternalSubgroups; i++)
-			for(int j=0; j<r.nDaysPerWeek; j++)
-				for(int k=0; k<r.nHoursPerDay; k++){
+		for(int i=0; i<r.nInternalSubgroups; i++) {
+			for(int j=0; j<r.nDaysPerWeek; j++) {
+				for(int k=0; k<r.nHoursPerDay; k++) {
 					int tmp=subgroupsMatrix[i][j][k]-1;
 					if(tmp>0){
-						if(conflictsString!=NULL){
-							QString s=tr("Time constraint basic compulsory");
-							s+=": ";
-							s+=tr("subgroup %1 has more than one allocated activity on day %2, hour %3")
-							 .arg(r.internalSubgroupsList[i]->name)
-							 .arg(r.daysOfTheWeek[j])
-							 .arg(r.hoursOfTheDay[k]);
-							s+=". ";
-							s+=tr("This increases the conflicts total by %1")
-							 .arg(CustomFETString::number((subgroupsMatrix[i][j][k]-1)*weightPercentage/100));
-							 
-							dl.append(s);
-							cl.append((subgroupsMatrix[i][j][k]-1)*weightPercentage/100);
-						
-							*conflictsString += s+"\n";
-						}
+						QString s=tr("Time constraint basic compulsory");
+						s+=": ";
+						s+=tr("subgroup %1 has more than one allocated activity on day %2, hour %3")
+						 .arg(r.internalSubgroupsList[i]->name)
+						 .arg(r.daysOfTheWeek[j])
+						 .arg(r.hoursOfTheDay[k]);
+						s+=". ";
+						s+=tr("This increases the conflicts total by %1")
+						 .arg(CustomFETString::number((subgroupsMatrix[i][j][k]-1)*weightPercentage/100));
+
+						dl.append(s);
+						cl.append((subgroupsMatrix[i][j][k]-1)*weightPercentage/100);
+
+						*conflictsString += s+"\n";
 						nse += tmp;
 					}
 				}
-			
-		assert(nse==0);
+			}
+		}
 	}
+	assert(nse==0);
 
-	/*if(nte!=teachersConflicts){
-		cout<<"nte=="<<nte<<", teachersConflicts=="<<teachersConflicts<<endl;
-		cout<<c.getTeachersMatrix(r, teachersMatrix)<<endl;
-	}
-	if(nse!=subgroupsConflicts){
-		cout<<"nse=="<<nse<<", subgroupsConflicts=="<<subgroupsConflicts<<endl;
-		cout<<c.getSubgroupsMatrix(r, subgroupsMatrix)<<endl;
-	}*/
-	
 	/*assert(nte==teachersConflicts); //just a check, works only on logged fitness calculation
 	assert(nse==subgroupsConflicts);*/
 
-	//return int (ceil ( weight * (unallocated + late + nte + nse) ) ); //conflicts factor
 	return weightPercentage/100 * (unallocated + qint64(late) + qint64(nte) + qint64(nse)); //conflicts factor
 }
 
@@ -679,9 +604,7 @@ double ConstraintTeacherNotAvailableTimes::fitness(Solution& c, Rules& r, QList<
 	//(currently it is 10)
 	int tch=this->teacher_ID;
 
-	int nbroken;
-
-	nbroken=0;
+	int nbroken = 0;
 
 	assert(days.count()==hours.count());
 	for(int k=0; k<days.count(); k++){
@@ -994,9 +917,8 @@ double ConstraintStudentsSetNotAvailableTimes::fitness(Solution& c, Rules& r, QL
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
+	int nbroken = 0;
 
-	nbroken=0;
 	for(int m=0; m<this->iSubgroupsList.count(); m++){
 		int sbg=this->iSubgroupsList.at(m);
 		
@@ -1275,75 +1197,44 @@ double ConstraintActivitiesSameStartingTime::fitness(Solution& c, Rules& r, QLis
 {
 	assert(r.internalStructureComputed);
 
-	int nbroken;
+	int nbroken = 0;
 
 	//We do not use the matrices 'subgroupsMatrix' nor 'teachersMatrix'.
 
 	//sum the differences in the scheduled time for all pairs of activities.
 
-	//without logging
-	if(conflictsString==NULL){
-		nbroken=0;
-		for(int i=1; i<this->_n_activities; i++){
-			int t1=c.times[this->_activities[i]];
-			if(t1!=UNALLOCATED_TIME){
-				int day1=t1%r.nDaysPerWeek;
-				int hour1=t1/r.nDaysPerWeek;
-				for(int j=0; j<i; j++){
-					int t2=c.times[this->_activities[j]];
-					if(t2!=UNALLOCATED_TIME){
-						int day2=t2%r.nDaysPerWeek;
-						int hour2=t2/r.nDaysPerWeek;
-						int tmp=0;
+	for(int i=1; i<this->_n_activities; i++){
+		int t1=c.times[this->_activities[i]];
+		if(t1!=UNALLOCATED_TIME){
+			int day1=t1%r.nDaysPerWeek;
+			int hour1=t1/r.nDaysPerWeek;
+			for(int j=0; j<i; j++){
+				int t2=c.times[this->_activities[j]];
+				if(t2!=UNALLOCATED_TIME){
+					int day2=t2%r.nDaysPerWeek;
+					int hour2=t2/r.nDaysPerWeek;
 
-						tmp = abs(day1-day2) + abs(hour1-hour2);
-							
-						if(tmp>0)
-							tmp=1;
+					int tmp = abs(day1-day2) + abs(hour1-hour2);
 
-						nbroken+=tmp;
-					}
-				}
-			}
-		}
-	}
-	//with logging
-	else{
-		nbroken=0;
-		for(int i=1; i<this->_n_activities; i++){
-			int t1=c.times[this->_activities[i]];
-			if(t1!=UNALLOCATED_TIME){
-				int day1=t1%r.nDaysPerWeek;
-				int hour1=t1/r.nDaysPerWeek;
-				for(int j=0; j<i; j++){
-					int t2=c.times[this->_activities[j]];
-					if(t2!=UNALLOCATED_TIME){
-						int day2=t2%r.nDaysPerWeek;
-						int hour2=t2/r.nDaysPerWeek;
-						int tmp=0;
+					if(tmp>0)
+						tmp=1;
 
-						tmp = abs(day1-day2) + abs(hour1-hour2);
-							
-						if(tmp>0)
-							tmp=1;
+					nbroken+=tmp;
 
-						nbroken+=tmp;
+					if(tmp>0 && conflictsString!=nullptr){
+						QString s=tr("Time constraint activities same starting time broken, because activity with id=%1 (%2) is not at the same starting time with activity with id=%3 (%4)",
+						"%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.")
+						 .arg(this->activitiesId[i])
+						 .arg(getActivityDetailedDescription(r, this->activitiesId[i]))
+						 .arg(this->activitiesId[j])
+						 .arg(getActivityDetailedDescription(r, this->activitiesId[j]));
+						s+=". ";
+						s+=tr("Conflicts factor increase=%1").arg(CustomFETString::number(tmp*weightPercentage/100));
 
-						if(tmp>0 && conflictsString!=NULL){
-							QString s=tr("Time constraint activities same starting time broken, because activity with id=%1 (%2) is not at the same starting time with activity with id=%3 (%4)",
-							"%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.")
-							 .arg(this->activitiesId[i])
-							 .arg(getActivityDetailedDescription(r, this->activitiesId[i]))
-							 .arg(this->activitiesId[j])
-							 .arg(getActivityDetailedDescription(r, this->activitiesId[j]));
-							s+=". ";
-							s+=tr("Conflicts factor increase=%1").arg(CustomFETString::number(tmp*weightPercentage/100));
-						
-							dl.append(s);
-							cl.append(tmp*weightPercentage/100);
-							
-							*conflictsString+= s+"\n";
-						}
+						dl.append(s);
+						cl.append(tmp*weightPercentage/100);
+
+						*conflictsString+= s+"\n";
 					}
 				}
 			}
@@ -1579,91 +1470,54 @@ double ConstraintActivitiesNotOverlapping::fitness(Solution& c, Rules& r, QList<
 {
 	assert(r.internalStructureComputed);
 
-	int nbroken;
+	int nbroken = 0;
 
 	//We do not use the matrices 'subgroupsMatrix' nor 'teachersMatrix'.
 
 	//sum the overlapping hours for all pairs of activities.
-	//without logging
-	if(conflictsString==NULL){
-		nbroken=0;
-		for(int i=1; i<this->_n_activities; i++){
-			int t1=c.times[this->_activities[i]];
-			if(t1!=UNALLOCATED_TIME){
-				int day1=t1%r.nDaysPerWeek;
-				int hour1=t1/r.nDaysPerWeek;
-				int duration1=r.internalActivitiesList[this->_activities[i]].duration;
 
-				for(int j=0; j<i; j++){
-					int t2=c.times[this->_activities[j]];
-					if(t2!=UNALLOCATED_TIME){
-						int day2=t2%r.nDaysPerWeek;
-						int hour2=t2/r.nDaysPerWeek;
-						int duration2=r.internalActivitiesList[this->_activities[j]].duration;
+	for(int i=1; i<this->_n_activities; i++){
+		int t1=c.times[this->_activities[i]];
+		if(t1!=UNALLOCATED_TIME){
+			int day1=t1%r.nDaysPerWeek;
+			int hour1=t1/r.nDaysPerWeek;
+			int duration1=r.internalActivitiesList[this->_activities[i]].duration;
 
-						//the number of overlapping hours
-						int tt=0;
-						if(day1==day2){
-							int start=max(hour1, hour2);
-							int stop=min(hour1+duration1, hour2+duration2);
-							if(stop>start)
-								tt+=stop-start;
-						}
-						
-						nbroken+=tt;
+			for(int j=0; j<i; j++){
+				int t2=c.times[this->_activities[j]];
+				if(t2!=UNALLOCATED_TIME){
+					int day2=t2%r.nDaysPerWeek;
+					int hour2=t2/r.nDaysPerWeek;
+					int duration2=r.internalActivitiesList[this->_activities[j]].duration;
+
+					//the number of overlapping hours
+					int tt=0;
+					if(day1==day2){
+						int start=max(hour1, hour2);
+						int stop=min(hour1+duration1, hour2+duration2);
+						if(stop>start)
+							tt+=stop-start;
 					}
-				}
-			}
-		}
-	}
-	//with logging
-	else{
-		nbroken=0;
-		for(int i=1; i<this->_n_activities; i++){
-			int t1=c.times[this->_activities[i]];
-			if(t1!=UNALLOCATED_TIME){
-				int day1=t1%r.nDaysPerWeek;
-				int hour1=t1/r.nDaysPerWeek;
-				int duration1=r.internalActivitiesList[this->_activities[i]].duration;
 
-				for(int j=0; j<i; j++){
-					int t2=c.times[this->_activities[j]];
-					if(t2!=UNALLOCATED_TIME){
-						int day2=t2%r.nDaysPerWeek;
-						int hour2=t2/r.nDaysPerWeek;
-						int duration2=r.internalActivitiesList[this->_activities[j]].duration;
-	
-						//the number of overlapping hours
-						int tt=0;
-						if(day1==day2){
-							int start=max(hour1, hour2);
-							int stop=min(hour1+duration1, hour2+duration2);
-							if(stop>start)
-								tt+=stop-start;
-						}
+					//The overlapping hours, considering weekly activities more important than fortnightly ones
+					nbroken+=tt;
 
-						//The overlapping hours, considering weekly activities more important than fortnightly ones
-						int tmp=tt;
+					if(tt>0 && conflictsString!=nullptr){
 
-						nbroken+=tmp;
+						QString s=tr("Time constraint activities not overlapping broken: activity with id=%1 (%2) overlaps with activity with id=%3 (%4) on a number of %5 periods",
+						 "%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.")
+						 .arg(this->activitiesId[i])
+						 .arg(getActivityDetailedDescription(r, this->activitiesId[i]))
+						 .arg(this->activitiesId[j])
+						 .arg(getActivityDetailedDescription(r, this->activitiesId[j]))
+						 .arg(tt);
+						s+=", ";
+						s+=tr("conflicts factor increase=%1").arg(CustomFETString::number(tt*weightPercentage/100));
 
-						if(tt>0 && conflictsString!=NULL){
+						dl.append(s);
+						cl.append(tt*weightPercentage/100);
 
-							QString s=tr("Time constraint activities not overlapping broken: activity with id=%1 (%2) overlaps with activity with id=%3 (%4) on a number of %5 periods",
-							 "%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.")
-							 .arg(this->activitiesId[i])
-							 .arg(getActivityDetailedDescription(r, this->activitiesId[i]))
-							 .arg(this->activitiesId[j])
-							 .arg(getActivityDetailedDescription(r, this->activitiesId[j]))
-							 .arg(tt);
-							s+=", ";
-							s+=tr("conflicts factor increase=%1").arg(CustomFETString::number(tmp*weightPercentage/100));
-							
-							dl.append(s);
-							cl.append(tmp*weightPercentage/100);
-						
-							*conflictsString+= s+"\n";
-						}
+						*conflictsString+= s+"\n";
 					}
 				}
 			}
@@ -1926,105 +1780,65 @@ double ConstraintMinDaysBetweenActivities::fitness(Solution& c, Rules& r, QList<
 {
 	assert(r.internalStructureComputed);
 
-	int nbroken;
+	int nbroken = 0;
 
 	//We do not use the matrices 'subgroupsMatrix' nor 'teachersMatrix'.
 
 	//sum the overlapping hours for all pairs of activities.
 	//without logging
-	if(conflictsString==NULL){
-		nbroken=0;
-		for(int i=1; i<this->_n_activities; i++){
-			int t1=c.times[this->_activities[i]];
-			if(t1!=UNALLOCATED_TIME){
-				int day1=t1%r.nDaysPerWeek;
-				int hour1=t1/r.nDaysPerWeek;
-				int duration1=r.internalActivitiesList[this->_activities[i]].duration;
 
-				for(int j=0; j<i; j++){
-					int t2=c.times[this->_activities[j]];
-					if(t2!=UNALLOCATED_TIME){
-						int day2=t2%r.nDaysPerWeek;
-						int hour2=t2/r.nDaysPerWeek;
-						int duration2=r.internalActivitiesList[this->_activities[j]].duration;
+	for(int i=1; i<this->_n_activities; i++){
+		int t1=c.times[this->_activities[i]];
+		if(t1!=UNALLOCATED_TIME){
+			int day1=t1%r.nDaysPerWeek;
+			int hour1=t1/r.nDaysPerWeek;
+			int duration1=r.internalActivitiesList[this->_activities[i]].duration;
+
+			for(int j=0; j<i; j++){
+				int t2=c.times[this->_activities[j]];
+				if(t2!=UNALLOCATED_TIME){
+					int day2=t2%r.nDaysPerWeek;
+					int hour2=t2/r.nDaysPerWeek;
+					int duration2=r.internalActivitiesList[this->_activities[j]].duration;
 					
-						int tmp;
-						int tt=0;
-						int dist=abs(day1-day2);
-						if(dist<minDays){
-							tt=minDays-dist;
-							
-							if(this->consecutiveIfSameDay && day1==day2)
-								assert( day1==day2 && (hour1+duration1==hour2 || hour2+duration2==hour1) );
-						}
-						
-						tmp=tt;
-	
-						nbroken+=tmp;
+					int tt=0;
+					int dist=abs(day1-day2);
+
+					if(dist<minDays){
+						tt=minDays-dist;
+
+						if(this->consecutiveIfSameDay && day1==day2)
+							assert( day1==day2 && (hour1+duration1==hour2 || hour2+duration2==hour1) );
 					}
-				}
-			}
-		}
-	}
-	//with logging
-	else{
-		nbroken=0;
-		for(int i=1; i<this->_n_activities; i++){
-			int t1=c.times[this->_activities[i]];
-			if(t1!=UNALLOCATED_TIME){
-				int day1=t1%r.nDaysPerWeek;
-				int hour1=t1/r.nDaysPerWeek;
-				int duration1=r.internalActivitiesList[this->_activities[i]].duration;
 
-				for(int j=0; j<i; j++){
-					int t2=c.times[this->_activities[j]];
-					if(t2!=UNALLOCATED_TIME){
-						int day2=t2%r.nDaysPerWeek;
-						int hour2=t2/r.nDaysPerWeek;
-						int duration2=r.internalActivitiesList[this->_activities[j]].duration;
-					
-						int tmp;
-						int tt=0;
-						int dist=abs(day1-day2);
+					nbroken+=tt;
 
-						if(dist<minDays){
-							tt=minDays-dist;
-							
-							if(this->consecutiveIfSameDay && day1==day2)
-								assert( day1==day2 && (hour1+duration1==hour2 || hour2+duration2==hour1) );
+					if(tt>0 && conflictsString != nullptr){
+						QString s=tr("Time constraint min days between activities broken: activity with id=%1 (%2) conflicts with activity with id=%3 (%4), being %5 days too close, on days %6 and %7",
+									 "%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr. Close here means near")
+								.arg(this->activitiesId[i])
+								.arg(getActivityDetailedDescription(r, this->activitiesId[i]))
+								.arg(this->activitiesId[j])
+								.arg(getActivityDetailedDescription(r, this->activitiesId[j]))
+								.arg(tt)
+								.arg(r.daysOfTheWeek[day1])
+								.arg(r.daysOfTheWeek[day2]);
+						;
+
+						s+=", ";
+						s+=tr("conflicts factor increase=%1").arg(CustomFETString::number(tt*weightPercentage/100));
+						s+=".";
+
+						if(this->consecutiveIfSameDay && day1==day2){
+							s+=" ";
+							s+=tr("The activities are placed consecutively in the timetable, because you selected this option"
+								  " in case the activities are in the same day");
 						}
 
-						tmp=tt;
-	
-						nbroken+=tmp;
+						dl.append(s);
+						cl.append(tt*weightPercentage/100);
 
-						if(tt>0 && conflictsString!=NULL){
-							QString s=tr("Time constraint min days between activities broken: activity with id=%1 (%2) conflicts with activity with id=%3 (%4), being %5 days too close, on days %6 and %7",
-							 "%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr. Close here means near")
-							 .arg(this->activitiesId[i])
-							 .arg(getActivityDetailedDescription(r, this->activitiesId[i]))
-							 .arg(this->activitiesId[j])
-							 .arg(getActivityDetailedDescription(r, this->activitiesId[j]))
-							 .arg(tt)
-							 .arg(r.daysOfTheWeek[day1])
-							 .arg(r.daysOfTheWeek[day2]);
-							 ;
-
-							s+=", ";
-							s+=tr("conflicts factor increase=%1").arg(CustomFETString::number(tmp*weightPercentage/100));
-							s+=".";
-							
-							if(this->consecutiveIfSameDay && day1==day2){
-								s+=" ";
-								s+=tr("The activities are placed consecutively in the timetable, because you selected this option"
-								 " in case the activities are in the same day");
-							}
-							
-							dl.append(s);
-							cl.append(tmp*weightPercentage/100);
-							
-							*conflictsString+= s+"\n";
-						}
+						*conflictsString+= s+"\n";
 					}
 				}
 			}
@@ -2268,98 +2082,58 @@ double ConstraintMaxDaysBetweenActivities::fitness(Solution& c, Rules& r, QList<
 {
 	assert(r.internalStructureComputed);
 
-	int nbroken;
+	int nbroken = 0;
 
 	//We do not use the matrices 'subgroupsMatrix' nor 'teachersMatrix'.
 
 	//sum the overlapping hours for all pairs of activities.
 	//without logging
-	if(conflictsString==NULL){
-		nbroken=0;
-		for(int i=1; i<this->_n_activities; i++){
-			int t1=c.times[this->_activities[i]];
-			if(t1!=UNALLOCATED_TIME){
-				int day1=t1%r.nDaysPerWeek;
-				//int hour1=t1/r.nDaysPerWeek;
-				//int duration1=r.internalActivitiesList[this->_activities[i]].duration;
 
-				for(int j=0; j<i; j++){
-					int t2=c.times[this->_activities[j]];
-					if(t2!=UNALLOCATED_TIME){
-						int day2=t2%r.nDaysPerWeek;
-						//int hour2=t2/r.nDaysPerWeek;
-						//int duration2=r.internalActivitiesList[this->_activities[j]].duration;
-					
-						int tmp;
-						int tt=0;
-						int dist=abs(day1-day2);
-						if(dist>maxDays){
-							tt=dist-maxDays;
-							
-							//if(this->consecutiveIfSameDay && day1==day2)
-							//	assert( day1==day2 && (hour1+duration1==hour2 || hour2+duration2==hour1) );
-						}
-						
-						tmp=tt;
-	
-						nbroken+=tmp;
+	for(int i=1; i<this->_n_activities; i++){
+		int t1=c.times[this->_activities[i]];
+		if(t1!=UNALLOCATED_TIME){
+			int day1=t1%r.nDaysPerWeek;
+			//int hour1=t1/r.nDaysPerWeek;
+			//int duration1=r.internalActivitiesList[this->_activities[i]].duration;
+
+			for(int j=0; j<i; j++){
+				int t2=c.times[this->_activities[j]];
+				if(t2!=UNALLOCATED_TIME){
+					int day2=t2%r.nDaysPerWeek;
+					//int hour2=t2/r.nDaysPerWeek;
+					//int duration2=r.internalActivitiesList[this->_activities[j]].duration;
+
+					int tt=0;
+					int dist=abs(day1-day2);
+
+					if(dist>maxDays){
+						tt=dist-maxDays;
+
+						//if(this->consecutiveIfSameDay && day1==day2)
+						//	assert( day1==day2 && (hour1+duration1==hour2 || hour2+duration2==hour1) );
 					}
-				}
-			}
-		}
-	}
-	//with logging
-	else{
-		nbroken=0;
-		for(int i=1; i<this->_n_activities; i++){
-			int t1=c.times[this->_activities[i]];
-			if(t1!=UNALLOCATED_TIME){
-				int day1=t1%r.nDaysPerWeek;
-				//int hour1=t1/r.nDaysPerWeek;
-				//int duration1=r.internalActivitiesList[this->_activities[i]].duration;
 
-				for(int j=0; j<i; j++){
-					int t2=c.times[this->_activities[j]];
-					if(t2!=UNALLOCATED_TIME){
-						int day2=t2%r.nDaysPerWeek;
-						//int hour2=t2/r.nDaysPerWeek;
-						//int duration2=r.internalActivitiesList[this->_activities[j]].duration;
-					
-						int tmp;
-						int tt=0;
-						int dist=abs(day1-day2);
+					nbroken+=tt;
 
-						if(dist>maxDays){
-							tt=dist-maxDays;
-							
-							//if(this->consecutiveIfSameDay && day1==day2)
-							//	assert( day1==day2 && (hour1+duration1==hour2 || hour2+duration2==hour1) );
-						}
+					if(tt>0 && conflictsString != nullptr){
+						QString s=tr("Time constraint max days between activities broken: activity with id=%1 (%2) conflicts with activity with id=%3 (%4), being %5 days too far away"
+						 ", on days %6 and %7", "%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.")
+						 .arg(this->activitiesId[i])
+						 .arg(getActivityDetailedDescription(r, this->activitiesId[i]))
+						 .arg(this->activitiesId[j])
+						 .arg(getActivityDetailedDescription(r, this->activitiesId[j]))
+						 .arg(tt)
+						 .arg(r.daysOfTheWeek[day1])
+						 .arg(r.daysOfTheWeek[day2]);
 
-						tmp=tt;
-	
-						nbroken+=tmp;
+						s+=", ";
+						s+=tr("conflicts factor increase=%1").arg(CustomFETString::number(tt*weightPercentage/100));
+						s+=".";
 
-						if(tt>0 && conflictsString!=NULL){
-							QString s=tr("Time constraint max days between activities broken: activity with id=%1 (%2) conflicts with activity with id=%3 (%4), being %5 days too far away"
-							 ", on days %6 and %7", "%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.")
-							 .arg(this->activitiesId[i])
-							 .arg(getActivityDetailedDescription(r, this->activitiesId[i]))
-							 .arg(this->activitiesId[j])
-							 .arg(getActivityDetailedDescription(r, this->activitiesId[j]))
-							 .arg(tt)
-							 .arg(r.daysOfTheWeek[day1])
-							 .arg(r.daysOfTheWeek[day2]);
-							 
-							s+=", ";
-							s+=tr("conflicts factor increase=%1").arg(CustomFETString::number(tmp*weightPercentage/100));
-							s+=".";
-							
-							dl.append(s);
-							cl.append(tmp*weightPercentage/100);
-							
-							*conflictsString+= s+"\n";
-						}
+						dl.append(s);
+						cl.append(tt*weightPercentage/100);
+
+						*conflictsString+= s+"\n";
 					}
 				}
 			}
@@ -2602,11 +2376,10 @@ double ConstraintMinGapsBetweenActivities::fitness(Solution& c, Rules& r, QList<
 {
 	assert(r.internalStructureComputed);
 
-	int nbroken;
+	int nbroken = 0;
 
 	//We do not use the matrices 'subgroupsMatrix' nor 'teachersMatrix'.
 
-	nbroken=0;
 	for(int i=1; i<this->_n_activities; i++){
 		int t1=c.times[this->_activities[i]];
 		if(t1!=UNALLOCATED_TIME){
@@ -2831,54 +2604,35 @@ double ConstraintTeachersMaxHoursDaily::fitness(Solution& c, Rules& r, QList<dou
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
+	int nbroken = 0;
 
-	//without logging
-	if(conflictsString==NULL){
-		nbroken=0;
-		for(int i=0; i<r.nInternalTeachers; i++){
-			for(int d=0; d<r.nDaysPerWeek; d++){
-				int n_hours_daily=0;
-				for(int h=0; h<r.nHoursPerDay; h++)
-					if(teachersMatrix[i][d][h]>0)
-						n_hours_daily++;
+	for(int i=0; i<r.nInternalTeachers; i++){
+		for(int d=0; d<r.nDaysPerWeek; d++){
+			int n_hours_daily=0;
+			for(int h=0; h<r.nHoursPerDay; h++)
+				if(teachersMatrix[i][d][h]>0)
+					n_hours_daily++;
 
-				if(n_hours_daily>this->maxHoursDaily)
-					nbroken++;
-			}
-		}
-	}
-	//with logging
-	else{
-		nbroken=0;
-		for(int i=0; i<r.nInternalTeachers; i++){
-			for(int d=0; d<r.nDaysPerWeek; d++){
-				int n_hours_daily=0;
-				for(int h=0; h<r.nHoursPerDay; h++)
-					if(teachersMatrix[i][d][h]>0)
-						n_hours_daily++;
+			if(n_hours_daily>this->maxHoursDaily){
+				nbroken++;
 
-				if(n_hours_daily>this->maxHoursDaily){
-					nbroken++;
+				if(conflictsString != nullptr){
+					QString s=(tr(
+								   "Time constraint teachers max %1 hours daily broken for teacher %2, on day %3, length=%4.")
+							   .arg(CustomFETString::number(this->maxHoursDaily))
+							   .arg(r.internalTeachersList[i]->name)
+							   .arg(r.daysOfTheWeek[d])
+							   .arg(n_hours_daily)
+							   )
+							+
+							" "
+							+
+							(tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 
-					if(conflictsString!=NULL){
-						QString s=(tr(
-						 "Time constraint teachers max %1 hours daily broken for teacher %2, on day %3, length=%4.")
-						 .arg(CustomFETString::number(this->maxHoursDaily))
-						 .arg(r.internalTeachersList[i]->name)
-						 .arg(r.daysOfTheWeek[d])
-						 .arg(n_hours_daily)
-						 )
-						 +
-						 " "
-						 +
-						 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
-						
-						dl.append(s);
-						cl.append(weightPercentage/100);
+					dl.append(s);
+					cl.append(weightPercentage/100);
 					
-						*conflictsString+= s+"\n";
-					}
+					*conflictsString+= s+"\n";
 				}
 			}
 		}
@@ -3052,53 +2806,34 @@ double ConstraintTeacherMaxHoursDaily::fitness(Solution& c, Rules& r, QList<doub
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
+	int nbroken = 0;
 
-	//without logging
-	if(conflictsString==NULL){
-		nbroken=0;
-		int i=this->teacher_ID;
-		for(int d=0; d<r.nDaysPerWeek; d++){
-			int n_hours_daily=0;
-			for(int h=0; h<r.nHoursPerDay; h++)
-				if(teachersMatrix[i][d][h]>0)
-					n_hours_daily++;
+	int i=this->teacher_ID;
+	for(int d=0; d<r.nDaysPerWeek; d++){
+		int n_hours_daily=0;
+		for(int h=0; h<r.nHoursPerDay; h++)
+			if(teachersMatrix[i][d][h]>0)
+				n_hours_daily++;
 
-			if(n_hours_daily>this->maxHoursDaily){
-				nbroken++;
-			}
-		}
-	}
-	//with logging
-	else{
-		nbroken=0;
-		int i=this->teacher_ID;
-		for(int d=0; d<r.nDaysPerWeek; d++){
-			int n_hours_daily=0;
-			for(int h=0; h<r.nHoursPerDay; h++)
-				if(teachersMatrix[i][d][h]>0)
-					n_hours_daily++;
+		if(n_hours_daily>this->maxHoursDaily){
+			nbroken++;
 
-			if(n_hours_daily>this->maxHoursDaily){
-				nbroken++;
+			if(conflictsString != nullptr){
+				QString s=(tr(
+				 "Time constraint teacher max %1 hours daily broken for teacher %2, on day %3, length=%4.")
+				 .arg(CustomFETString::number(this->maxHoursDaily))
+				 .arg(r.internalTeachersList[i]->name)
+				 .arg(r.daysOfTheWeek[d])
+				 .arg(n_hours_daily)
+				 )
+				 +" "
+				 +
+				 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 
-				if(conflictsString!=NULL){
-					QString s=(tr(
-					 "Time constraint teacher max %1 hours daily broken for teacher %2, on day %3, length=%4.")
-					 .arg(CustomFETString::number(this->maxHoursDaily))
-					 .arg(r.internalTeachersList[i]->name)
-					 .arg(r.daysOfTheWeek[d])
-					 .arg(n_hours_daily)
-					 )
-					 +" "
-					 +
-					 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
-						
-					dl.append(s);
-					cl.append(weightPercentage/100);
-				
-					*conflictsString+= s+"\n";
-				}
+				dl.append(s);
+				cl.append(weightPercentage/100);
+
+				*conflictsString+= s+"\n";
 			}
 		}
 	}
@@ -3265,9 +3000,8 @@ double ConstraintTeachersMaxHoursContinuously::fitness(Solution& c, Rules& r, QL
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
+	int nbroken = 0;
 
-	nbroken=0;
 	for(int i=0; i<r.nInternalTeachers; i++){
 		for(int d=0; d<r.nDaysPerWeek; d++){
 			int nc=0;
@@ -3495,9 +3229,8 @@ double ConstraintTeacherMaxHoursContinuously::fitness(Solution& c, Rules& r, QLi
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
+	int nbroken = 0;
 
-	nbroken=0;
 	int i=this->teacher_ID;
 	for(int d=0; d<r.nDaysPerWeek; d++){
 		int nc=0;
@@ -3739,9 +3472,8 @@ double ConstraintTeachersActivityTagMaxHoursContinuously::fitness(Solution& c, R
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
+	int nbroken = 0;
 
-	nbroken=0;
 	foreach(int i, this->canonicalTeachersList){
 		Teacher* tch=r.internalTeachersList[i];
 		int crtTeacherTimetableActivityTag[MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
@@ -4010,9 +3742,8 @@ double ConstraintTeacherActivityTagMaxHoursContinuously::fitness(Solution& c, Ru
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
+	int nbroken = 0;
 
-	nbroken=0;
 	foreach(int i, this->canonicalTeachersList){
 		Teacher* tch=r.internalTeachersList[i];
 		int crtTeacherTimetableActivityTag[MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
@@ -4259,82 +3990,51 @@ double ConstraintTeacherMaxDaysPerWeek::fitness(Solution& c, Rules& r, QList<dou
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
+	int nbroken = 0;
 
-	//without logging
-	if(conflictsString==NULL){
-		nbroken=0;
-		//count sort
-		int t=this->teacher_ID;
-		int nd[MAX_HOURS_PER_DAY + 1];
-		for(int h=0; h<=r.nHoursPerDay; h++)
-			nd[h]=0;
-		for(int d=0; d<r.nDaysPerWeek; d++){
-			int nh=0;
-			for(int h=0; h<r.nHoursPerDay; h++)
-				nh += teachersMatrix[t][d][h]>=1 ? 1 : 0;
-			nd[nh]++;
-		}
-		//return the minimum occupied days which do not respect this constraint
-		int i = r.nDaysPerWeek - this->maxDaysPerWeek;
-		for(int k=0; k<=r.nHoursPerDay; k++){
-			if(nd[k]>0){
-				if(i>nd[k]){
-					i-=nd[k];
-					nbroken+=nd[k]*k;
-				}
-				else{
-					nbroken+=i*k;
-					break;
-				}
+	//count sort
+	int t=this->teacher_ID;
+	int nd[MAX_HOURS_PER_DAY + 1];
+	for(int h=0; h<=r.nHoursPerDay; h++)
+		nd[h]=0;
+	for(int d=0; d<r.nDaysPerWeek; d++){
+		int nh=0;
+		for(int h=0; h<r.nHoursPerDay; h++)
+			nh += teachersMatrix[t][d][h]>=1 ? 1 : 0;
+		nd[nh]++;
+	}
+	//return the minimum occupied days which do not respect this constraint
+	int i = r.nDaysPerWeek - this->maxDaysPerWeek;
+	for(int k=0; k<=r.nHoursPerDay; k++){
+		if(nd[k]>0){
+			if(i>nd[k]){
+				i-=nd[k];
+				nbroken+=nd[k]*k;
+			}
+			else{
+				nbroken+=i*k;
+				break;
 			}
 		}
 	}
-	//with logging
-	else{
-		nbroken=0;
-		//count sort
-		int t=this->teacher_ID;
-		int nd[MAX_HOURS_PER_DAY + 1];
-		for(int h=0; h<=r.nHoursPerDay; h++)
-			nd[h]=0;
-		for(int d=0; d<r.nDaysPerWeek; d++){
-			int nh=0;
-			for(int h=0; h<r.nHoursPerDay; h++)
-				nh += teachersMatrix[t][d][h]>=1 ? 1 : 0;
-			nd[nh]++;
-		}
-		//return the minimum occupied days which do not respect this constraint
-		int i = r.nDaysPerWeek - this->maxDaysPerWeek;
-		for(int k=0; k<=r.nHoursPerDay; k++){
-			if(nd[k]>0){
-				if(i>nd[k]){
-					i-=nd[k];
-					nbroken+=nd[k]*k;
-				}
-				else{
-					nbroken+=i*k;
-					break;
-				}
-			}
-		}
 
-		if(nbroken>0){
-			QString s= tr("Time constraint teacher max days per week broken for teacher: %1.")
-			 .arg(r.internalTeachersList[t]->name);
-			s += tr("This increases the conflicts total by %1")
-			 .arg(CustomFETString::number(nbroken*weightPercentage/100));
-			 
-			dl.append(s);
-			cl.append(nbroken*weightPercentage/100);
-		
-			*conflictsString += s+"\n";
-		}
+	double conflictIncrease = nbroken*weightPercentage/100;
+
+	if(conflictsString != nullptr && nbroken > 0){
+		QString s= tr("Time constraint teacher max days per week broken for teacher: %1.")
+			.arg(r.internalTeachersList[t]->name);
+		s += tr("This increases the conflicts total by %1")
+			.arg(CustomFETString::number(conflictIncrease));
+
+		dl.append(s);
+		cl.append(conflictIncrease);
+
+		*conflictsString += s+"\n";
 	}
 
 	if(weightPercentage==100)
 		assert(nbroken==0);
-	return weightPercentage/100 * nbroken;
+	return conflictIncrease;
 }
 
 bool ConstraintTeacherMaxDaysPerWeek::isRelatedToActivity(Rules& r, Activity* a)
@@ -4492,88 +4192,52 @@ double ConstraintTeachersMaxDaysPerWeek::fitness(Solution& c, Rules& r, QList<do
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
+	int nbroken = 0;
 
-	//without logging
-	if(conflictsString==NULL){
-		nbroken=0;
+	for(int t=0; t<r.nInternalTeachers; t++){
+		int nbr=0;
+
 		//count sort
-		
-		for(int t=0; t<r.nInternalTeachers; t++){
-			int nd[MAX_HOURS_PER_DAY + 1];
-			for(int h=0; h<=r.nHoursPerDay; h++)
-				nd[h]=0;
-			for(int d=0; d<r.nDaysPerWeek; d++){
-				int nh=0;
-				for(int h=0; h<r.nHoursPerDay; h++)
-					nh += teachersMatrix[t][d][h]>=1 ? 1 : 0;
-				nd[nh]++;
-			}
-			//return the minimum occupied days which do not respect this constraint
-			int i = r.nDaysPerWeek - this->maxDaysPerWeek;
-			for(int k=0; k<=r.nHoursPerDay; k++){
-				if(nd[k]>0){
-					if(i>nd[k]){
-						i-=nd[k];
-						nbroken+=nd[k]*k;
-					}
-					else{
-						nbroken+=i*k;
-						break;
-					}
+		int nd[MAX_HOURS_PER_DAY + 1];
+		for(int h=0; h<=r.nHoursPerDay; h++)
+			nd[h]=0;
+		for(int d=0; d<r.nDaysPerWeek; d++){
+			int nh=0;
+			for(int h=0; h<r.nHoursPerDay; h++)
+				nh += teachersMatrix[t][d][h]>=1 ? 1 : 0;
+			nd[nh]++;
+		}
+		//return the minimum occupied days which do not respect this constraint
+		int i = r.nDaysPerWeek - this->maxDaysPerWeek;
+		for(int k=0; k<=r.nHoursPerDay; k++){
+			if(nd[k]>0){
+				if(i>nd[k]){
+					i-=nd[k];
+					int val = nd[k]*k;
+					nbroken+=val;
+					nbr+=val;
+				}
+				else{
+					int val = i*k;
+					nbroken+=val;
+					nbr+=val;
+					break;
 				}
 			}
-		
 		}
-	}
-	//with logging
-	else{
-		nbroken=0;
 
-		for(int t=0; t<r.nInternalTeachers; t++){
-			int nbr=0;
+		if(nbr>0 && conflictsString != nullptr){
+			QString s= tr("Time constraint teachers max days per week broken for teacher: %1.")
+			.arg(r.internalTeachersList[t]->name);
+			s += tr("This increases the conflicts total by %1")
+			.arg(CustomFETString::number(nbr*weightPercentage/100));
 
-			//count sort
-			int nd[MAX_HOURS_PER_DAY + 1];
-			for(int h=0; h<=r.nHoursPerDay; h++)
-				nd[h]=0;
-			for(int d=0; d<r.nDaysPerWeek; d++){
-				int nh=0;
-				for(int h=0; h<r.nHoursPerDay; h++)
-					nh += teachersMatrix[t][d][h]>=1 ? 1 : 0;
-				nd[nh]++;
-			}
-			//return the minimum occupied days which do not respect this constraint
-			int i = r.nDaysPerWeek - this->maxDaysPerWeek;
-			for(int k=0; k<=r.nHoursPerDay; k++){
-				if(nd[k]>0){
-					if(i>nd[k]){
-						i-=nd[k];
-						nbroken+=nd[k]*k;
-						nbr+=nd[k]*k;
-					}
-					else{
-						nbroken+=i*k;
-						nbr+=i*k;
-						break;
-					}
-				}
-			}
+			dl.append(s);
+			cl.append(nbr*weightPercentage/100);
 
-			if(nbr>0){
-				QString s= tr("Time constraint teachers max days per week broken for teacher: %1.")
-				.arg(r.internalTeachersList[t]->name);
-				s += tr("This increases the conflicts total by %1")
-				.arg(CustomFETString::number(nbr*weightPercentage/100));
-				
-				dl.append(s);
-				cl.append(nbr*weightPercentage/100);
-			
-				*conflictsString += s+"\n";
-			}
-		
+			*conflictsString += s+"\n";
 		}
-		
+
 	}
 
 	if(weightPercentage==100)
@@ -5623,10 +5287,8 @@ double ConstraintBreakTimes::fitness(Solution& c, Rules& r, QList<double>& cl, Q
 	//TODO: decide if it is better to consider only 2 or 10 as a return value in this particular case
 	//(currently it is 10)
 	
-	int nbroken;
-	
-	nbroken=0;
-		
+	int nbroken = 0;
+
 	for(int i=0; i<r.nInternalActivities; i++){
 		int dayact=c.times[i]%r.nDaysPerWeek;
 		int houract=c.times[i]/r.nDaysPerWeek;
@@ -7303,9 +6965,8 @@ double ConstraintStudentsMaxHoursContinuously::fitness(Solution& c, Rules& r, QL
 		c.changedForMatrixCalculation=false;
 	}
 	
-	int nbroken;
+	int nbroken = 0;
 
-	nbroken=0;
 	for(int i=0; i<r.nInternalSubgroups; i++){
 		for(int d=0; d<r.nDaysPerWeek; d++){
 			int nc=0;
@@ -7582,9 +7243,8 @@ double ConstraintStudentsSetMaxHoursContinuously::fitness(Solution& c, Rules& r,
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
+	int nbroken = 0;
 
-	nbroken=0;
 	foreach(int i, this->iSubgroupsList){
 		for(int d=0; d<r.nDaysPerWeek; d++){
 			int nc=0;
@@ -7832,10 +7492,8 @@ double ConstraintStudentsActivityTagMaxHoursContinuously::fitness(Solution& c, R
 		c.changedForMatrixCalculation=false;
 	}
 	
-	int nbroken;
+	int nbroken = 0;
 
-	nbroken=0;
-	
 	foreach(int i, this->canonicalSubgroupsList){
 		StudentsSubgroup* sbg=r.internalSubgroupsList[i];
 		int crtSubgroupTimetableActivityTag[MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
@@ -8157,9 +7815,7 @@ double ConstraintStudentsSetActivityTagMaxHoursContinuously::fitness(Solution& c
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
-
-	nbroken=0;
+	int nbroken = 0;
 
 	foreach(int i, this->canonicalSubgroupsList){
 		StudentsSubgroup* sbg=r.internalSubgroupsList[i];
@@ -8989,11 +8645,10 @@ double ConstraintActivityPreferredStartingTime::fitness(Solution& c, Rules& r, Q
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
+	int nbroken = 0;
 
 	assert(r.internalStructureComputed);
 
-	nbroken=0;
 	if(c.times[this->activityIndex]!=UNALLOCATED_TIME){
 		int d=c.times[this->activityIndex]%r.nDaysPerWeek; //the day when this activity was scheduled
 		int h=c.times[this->activityIndex]/r.nDaysPerWeek; //the hour
@@ -9271,8 +8926,6 @@ double ConstraintActivityPreferredTimeSlots::fitness(Solution& c, Rules& r, QLis
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
-
 	assert(r.internalStructureComputed);
 	
 	Matrix2D<bool> allowed;
@@ -9288,7 +8941,8 @@ double ConstraintActivityPreferredTimeSlots::fitness(Solution& c, Rules& r, QLis
 			assert(0);
 	}
 
-	nbroken=0;
+	int nbroken = 0;
+
 	if(c.times[this->p_activityIndex]!=UNALLOCATED_TIME){
 		int d=c.times[this->p_activityIndex]%r.nDaysPerWeek; //the day when this activity was scheduled
 		int h=c.times[this->p_activityIndex]/r.nDaysPerWeek; //the hour
@@ -9737,8 +9391,6 @@ double ConstraintActivitiesPreferredTimeSlots::fitness(Solution& c, Rules& r, QL
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
-
 	assert(r.internalStructureComputed);
 
 ///////////////////
@@ -9756,7 +9408,7 @@ double ConstraintActivitiesPreferredTimeSlots::fitness(Solution& c, Rules& r, QL
 	}
 ////////////////////
 
-	nbroken=0;
+	int nbroken = 0;
 	int tmp;
 	
 	for(int i=0; i<this->p_nActivities; i++){
@@ -10230,8 +9882,6 @@ double ConstraintSubactivitiesPreferredTimeSlots::fitness(Solution& c, Rules& r,
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
-
 	assert(r.internalStructureComputed);
 
 ///////////////////
@@ -10249,7 +9899,7 @@ double ConstraintSubactivitiesPreferredTimeSlots::fitness(Solution& c, Rules& r,
 	}
 ////////////////////
 
-	nbroken=0;
+	int nbroken = 0;
 	int tmp;
 	
 	for(int i=0; i<this->p_nActivities; i++){
@@ -10579,11 +10229,10 @@ double ConstraintActivityPreferredStartingTimes::fitness(Solution& c, Rules& r, 
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
+	int nbroken = 0;
 
 	assert(r.internalStructureComputed);
 
-	nbroken=0;
 	if(c.times[this->activityIndex]!=UNALLOCATED_TIME){
 		int d=c.times[this->activityIndex]%r.nDaysPerWeek; //the day when this activity was scheduled
 		int h=c.times[this->activityIndex]/r.nDaysPerWeek; //the hour
@@ -11035,11 +10684,10 @@ double ConstraintActivitiesPreferredStartingTimes::fitness(Solution& c, Rules& r
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
+	int nbroken = 0;
 
 	assert(r.internalStructureComputed);
 
-	nbroken=0;
 	int tmp;
 	
 	for(int i=0; i<this->nActivities; i++){
@@ -11511,11 +11159,10 @@ double ConstraintSubactivitiesPreferredStartingTimes::fitness(Solution& c, Rules
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
+	int nbroken = 0;
 
 	assert(r.internalStructureComputed);
 
-	nbroken=0;
 	int tmp;
 	
 	for(int i=0; i<this->nActivities; i++){
@@ -11836,71 +11483,40 @@ double ConstraintActivitiesSameStartingHour::fitness(Solution& c, Rules& r, QLis
 {
 	assert(r.internalStructureComputed);
 
-	int nbroken;
+	int nbroken = 0;
 
 	//We do not use the matrices 'subgroupsMatrix' nor 'teachersMatrix'.
 
 	//sum the differences in the scheduled hour for all pairs of activities.
 
-	//without logging
-	if(conflictsString==NULL){
-		nbroken=0;
-		for(int i=1; i<this->_n_activities; i++){
-			int t1=c.times[this->_activities[i]];
-			if(t1!=UNALLOCATED_TIME){
-				//int day1=t1%r.nDaysPerWeek;
-				int hour1=t1/r.nDaysPerWeek;
-				for(int j=0; j<i; j++){
-					int t2=c.times[this->_activities[j]];
-					if(t2!=UNALLOCATED_TIME){
-						//int day2=t2%r.nDaysPerWeek;
-						int hour2=t2/r.nDaysPerWeek;
-						int tmp=0;
+	for(int i=1; i<this->_n_activities; i++){
+		int t1=c.times[this->_activities[i]];
+		if(t1!=UNALLOCATED_TIME){
+			//int day1=t1%r.nDaysPerWeek;
+			int hour1=t1/r.nDaysPerWeek;
+			for(int j=0; j<i; j++){
+				int t2=c.times[this->_activities[j]];
+				if(t2!=UNALLOCATED_TIME){
+					//int day2=t2%r.nDaysPerWeek;
+					int hour2=t2/r.nDaysPerWeek;
 
-						//	tmp = abs(hour1-hour2);
-						if(hour1!=hour2)
-							tmp=1;
+					//	tmp = abs(hour1-hour2);
+					if(hour1!=hour2) {
+						nbroken++;
 
-						nbroken+=tmp;
-					}
-				}
-			}
-		}
-	}
-	//with logging
-	else{
-		nbroken=0;
-		for(int i=1; i<this->_n_activities; i++){
-			int t1=c.times[this->_activities[i]];
-			if(t1!=UNALLOCATED_TIME){
-				//int day1=t1%r.nDaysPerWeek;
-				int hour1=t1/r.nDaysPerWeek;
-				for(int j=0; j<i; j++){
-					int t2=c.times[this->_activities[j]];
-					if(t2!=UNALLOCATED_TIME){
-						//int day2=t2%r.nDaysPerWeek;
-						int hour2=t2/r.nDaysPerWeek;
-						int tmp=0;
-
-						//	tmp = abs(hour1-hour2);						
-						if(hour1!=hour2)
-							tmp=1;
-
-						nbroken+=tmp;
-
-						if(tmp>0 && conflictsString!=NULL){
+						if(conflictsString != nullptr){
 							QString s=tr("Time constraint activities same starting hour broken, because activity with id=%1 (%2) is not at the same hour with activity with id=%3 (%4)"
-							 , "%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.")
-							 .arg(this->activitiesId[i])
-							 .arg(getActivityDetailedDescription(r, this->activitiesId[i]))
-							 .arg(this->activitiesId[j])
-							 .arg(getActivityDetailedDescription(r, this->activitiesId[j]));
+										 , "%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.")
+									.arg(this->activitiesId[i])
+									.arg(getActivityDetailedDescription(r, this->activitiesId[i]))
+									.arg(this->activitiesId[j])
+									.arg(getActivityDetailedDescription(r, this->activitiesId[j]));
 							s+=". ";
-							s+=tr("Conflicts factor increase=%1").arg(CustomFETString::number(tmp*weightPercentage/100));
-							
+							s+=tr("Conflicts factor increase=%1").arg(CustomFETString::number(weightPercentage/100));
+
 							dl.append(s);
-							cl.append(tmp*weightPercentage/100);
-						
+							cl.append(weightPercentage/100);
+
 							*conflictsString+= s+"\n";
 						}
 					}
@@ -12141,69 +11757,38 @@ double ConstraintActivitiesSameStartingDay::fitness(Solution& c, Rules& r, QList
 {
 	assert(r.internalStructureComputed);
 
-	int nbroken;
+	int nbroken = 0;
 
 	//We do not use the matrices 'subgroupsMatrix' nor 'teachersMatrix'.
 
 	//sum the differences in the scheduled hour for all pairs of activities.
 
-	//without logging
-	if(conflictsString==NULL){
-		nbroken=0;
-		for(int i=1; i<this->_n_activities; i++){
-			int t1=c.times[this->_activities[i]];
-			if(t1!=UNALLOCATED_TIME){
-				int day1=t1%r.nDaysPerWeek;
-				//int hour1=t1/r.nDaysPerWeek;
-				for(int j=0; j<i; j++){
-					int t2=c.times[this->_activities[j]];
-					if(t2!=UNALLOCATED_TIME){
-						int day2=t2%r.nDaysPerWeek;
-						//int hour2=t2/r.nDaysPerWeek;
-						int tmp=0;
+	for(int i=1; i<this->_n_activities; i++){
+		int t1=c.times[this->_activities[i]];
+		if(t1!=UNALLOCATED_TIME){
+			int day1=t1%r.nDaysPerWeek;
+			//int hour1=t1/r.nDaysPerWeek;
+			for(int j=0; j<i; j++){
+				int t2=c.times[this->_activities[j]];
+				if(t2!=UNALLOCATED_TIME){
+					int day2=t2%r.nDaysPerWeek;
+					//int hour2=t2/r.nDaysPerWeek;
 
-						if(day1!=day2)
-							tmp=1;
-
-						nbroken+=tmp;
-					}
-				}
-			}
-		}
-	}
-	//with logging
-	else{
-		nbroken=0;
-		for(int i=1; i<this->_n_activities; i++){
-			int t1=c.times[this->_activities[i]];
-			if(t1!=UNALLOCATED_TIME){
-				int day1=t1%r.nDaysPerWeek;
-				//int hour1=t1/r.nDaysPerWeek;
-				for(int j=0; j<i; j++){
-					int t2=c.times[this->_activities[j]];
-					if(t2!=UNALLOCATED_TIME){
-						int day2=t2%r.nDaysPerWeek;
-						//int hour2=t2/r.nDaysPerWeek;
-						int tmp=0;
-
-						if(day1!=day2)
-							tmp=1;
-
-						nbroken+=tmp;
-
-						if(tmp>0 && conflictsString!=NULL){
+					if(day1!=day2) {
+						nbroken++;
+						if(conflictsString != nullptr){
 							QString s=tr("Time constraint activities same starting day broken, because activity with id=%1 (%2) is not in the same day with activity with id=%3 (%4)"
-							 , "%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.")
-							 .arg(this->activitiesId[i])
-							 .arg(getActivityDetailedDescription(r, this->activitiesId[i]))
-							 .arg(this->activitiesId[j])
-							 .arg(getActivityDetailedDescription(r, this->activitiesId[j]));
+										 , "%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.")
+									.arg(this->activitiesId[i])
+									.arg(getActivityDetailedDescription(r, this->activitiesId[i]))
+									.arg(this->activitiesId[j])
+									.arg(getActivityDetailedDescription(r, this->activitiesId[j]));
 							s+=". ";
-							s+=tr("Conflicts factor increase=%1").arg(CustomFETString::number(tmp*weightPercentage/100));
-							
+							s+=tr("Conflicts factor increase=%1").arg(CustomFETString::number(weightPercentage/100));
+
 							dl.append(s);
-							cl.append(tmp*weightPercentage/100);
-						
+							cl.append(weightPercentage/100);
+
 							*conflictsString+= s+"\n";
 						}
 					}
@@ -12437,11 +12022,10 @@ double ConstraintTwoActivitiesConsecutive::fitness(Solution& c, Rules& r, QList<
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
+	int nbroken = 0;
 
 	assert(r.internalStructureComputed);
 
-	nbroken=0;
 	if(c.times[this->firstActivityIndex]!=UNALLOCATED_TIME && c.times[this->secondActivityIndex]!=UNALLOCATED_TIME){
 		int fd=c.times[this->firstActivityIndex]%r.nDaysPerWeek; //the day when first activity was scheduled
 		int fh=c.times[this->firstActivityIndex]/r.nDaysPerWeek; //the hour
@@ -12711,11 +12295,10 @@ double ConstraintTwoActivitiesGrouped::fitness(Solution& c, Rules& r, QList<doub
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
+	int nbroken = 0;
 
 	assert(r.internalStructureComputed);
 
-	nbroken=0;
 	if(c.times[this->firstActivityIndex]!=UNALLOCATED_TIME && c.times[this->secondActivityIndex]!=UNALLOCATED_TIME){
 		int fd=c.times[this->firstActivityIndex]%r.nDaysPerWeek; //the day when first activity was scheduled
 		int fh=c.times[this->firstActivityIndex]/r.nDaysPerWeek; //the hour
@@ -13027,11 +12610,10 @@ double ConstraintThreeActivitiesGrouped::fitness(Solution& c, Rules& r, QList<do
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
+	int nbroken = 0;
 
 	assert(r.internalStructureComputed);
 
-	nbroken=0;
 	if(c.times[this->firstActivityIndex]!=UNALLOCATED_TIME && c.times[this->secondActivityIndex]!=UNALLOCATED_TIME && c.times[this->thirdActivityIndex]!=UNALLOCATED_TIME){
 		int fd=c.times[this->firstActivityIndex]%r.nDaysPerWeek; //the day when first activity was scheduled
 		int fh=c.times[this->firstActivityIndex]/r.nDaysPerWeek; //the hour
@@ -13366,11 +12948,10 @@ double ConstraintTwoActivitiesOrdered::fitness(Solution& c, Rules& r, QList<doub
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
+	int nbroken = 0;
 
 	assert(r.internalStructureComputed);
 
-	nbroken=0;
 	if(c.times[this->firstActivityIndex]!=UNALLOCATED_TIME && c.times[this->secondActivityIndex]!=UNALLOCATED_TIME){
 		int fd=c.times[this->firstActivityIndex]%r.nDaysPerWeek; //the day when first activity was scheduled
 		int fh=c.times[this->firstActivityIndex]/r.nDaysPerWeek
@@ -13580,11 +13161,10 @@ double ConstraintActivityEndsStudentsDay::fitness(Solution& c, Rules& r, QList<d
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
+	int nbroken = 0;
 
 	assert(r.internalStructureComputed);
 
-	nbroken=0;
 	if(c.times[this->activityIndex]!=UNALLOCATED_TIME){
 		int d=c.times[this->activityIndex]%r.nDaysPerWeek; //the day when this activity was scheduled
 		int h=c.times[this->activityIndex]/r.nDaysPerWeek; //the hour
@@ -13796,54 +13376,34 @@ double ConstraintTeachersMinHoursDaily::fitness(Solution& c, Rules& r, QList<dou
 	
 	assert(this->allowEmptyDays==true);
 
-	int nbroken;
+	int nbroken = 0;
 
-	//without logging
-	if(conflictsString==NULL){
-		nbroken=0;
-		for(int i=0; i<r.nInternalTeachers; i++){
-			for(int d=0; d<r.nDaysPerWeek; d++){
-				int n_hours_daily=0;
-				for(int h=0; h<r.nHoursPerDay; h++)
-					if(teachersMatrix[i][d][h]>0)
-						n_hours_daily++;
+	for(int i=0; i<r.nInternalTeachers; i++){
+		for(int d=0; d<r.nDaysPerWeek; d++){
+			int n_hours_daily=0;
+			for(int h=0; h<r.nHoursPerDay; h++)
+				if(teachersMatrix[i][d][h]>0)
+					n_hours_daily++;
 
-				if(n_hours_daily>0 && n_hours_daily<this->minHoursDaily){
-					nbroken++;
-				}
-			}
-		}
-	}
-	//with logging
-	else{
-		nbroken=0;
-		for(int i=0; i<r.nInternalTeachers; i++){
-			for(int d=0; d<r.nDaysPerWeek; d++){
-				int n_hours_daily=0;
-				for(int h=0; h<r.nHoursPerDay; h++)
-					if(teachersMatrix[i][d][h]>0)
-						n_hours_daily++;
+			if(n_hours_daily>0 && n_hours_daily<this->minHoursDaily){
+				nbroken++;
 
-				if(n_hours_daily>0 && n_hours_daily<this->minHoursDaily){
-					nbroken++;
+				if(conflictsString != nullptr){
+					QString s=(tr("Time constraint teachers min %1 hours daily broken for teacher %2, on day %3, length=%4.")
+					 .arg(CustomFETString::number(this->minHoursDaily))
+					 .arg(r.internalTeachersList[i]->name)
+					 .arg(r.daysOfTheWeek[d])
+					 .arg(n_hours_daily)
+					 )
+					 +
+					 " "
+					 +
+					 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
 
-					if(conflictsString!=NULL){
-						QString s=(tr("Time constraint teachers min %1 hours daily broken for teacher %2, on day %3, length=%4.")
-						 .arg(CustomFETString::number(this->minHoursDaily))
-						 .arg(r.internalTeachersList[i]->name)
-						 .arg(r.daysOfTheWeek[d])
-						 .arg(n_hours_daily)
-						 )
-						 +
-						 " "
-						 +
-						 (tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100)));
-						
-						dl.append(s);
-						cl.append(weightPercentage/100);
-					
-						*conflictsString+= s+"\n";
-					}
+					dl.append(s);
+					cl.append(weightPercentage/100);
+
+					*conflictsString+= s+"\n";
 				}
 			}
 		}
@@ -14039,53 +13599,34 @@ double ConstraintTeacherMinHoursDaily::fitness(Solution& c, Rules& r, QList<doub
 	
 	assert(this->allowEmptyDays==true);
 
-	int nbroken;
+	int nbroken = 0;
 
-	//without logging
-	if(conflictsString==NULL){
-		nbroken=0;
-		int i=this->teacher_ID;
-		for(int d=0; d<r.nDaysPerWeek; d++){
-			int n_hours_daily=0;
-			for(int h=0; h<r.nHoursPerDay; h++)
-				if(teachersMatrix[i][d][h]>0)
-					n_hours_daily++;
+	int i=this->teacher_ID;
+	for(int d=0; d<r.nDaysPerWeek; d++){
+		int n_hours_daily=0;
+		for(int h=0; h<r.nHoursPerDay; h++)
+			if(teachersMatrix[i][d][h]>0)
+				n_hours_daily++;
 
-			if(n_hours_daily>0 && n_hours_daily<this->minHoursDaily){
-				nbroken++;
-			}
-		}
-	}
-	//with logging
-	else{
-		nbroken=0;
-		int i=this->teacher_ID;
-		for(int d=0; d<r.nDaysPerWeek; d++){
-			int n_hours_daily=0;
-			for(int h=0; h<r.nHoursPerDay; h++)
-				if(teachersMatrix[i][d][h]>0)
-					n_hours_daily++;
+		if(n_hours_daily>0 && n_hours_daily<this->minHoursDaily){
+			nbroken++;
 
-			if(n_hours_daily>0 && n_hours_daily<this->minHoursDaily){
-				nbroken++;
+			if(conflictsString != nullptr){
+				QString s=(tr(
+				 "Time constraint teacher min %1 hours daily broken for teacher %2, on day %3, length=%4.")
+				 .arg(CustomFETString::number(this->minHoursDaily))
+				 .arg(r.internalTeachersList[i]->name)
+				 .arg(r.daysOfTheWeek[d])
+				 .arg(n_hours_daily)
+				 )
+				 +" "
+				 +
+				 tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100));
 
-				if(conflictsString!=NULL){
-					QString s=(tr(
-					 "Time constraint teacher min %1 hours daily broken for teacher %2, on day %3, length=%4.")
-					 .arg(CustomFETString::number(this->minHoursDaily))
-					 .arg(r.internalTeachersList[i]->name)
-					 .arg(r.daysOfTheWeek[d])
-					 .arg(n_hours_daily)
-					 )
-					 +" "
-					 +
-					 tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100));
-						
-					dl.append(s);
-					cl.append(weightPercentage/100);
-				
-					*conflictsString+= s+"\n";
-				}
+				dl.append(s);
+				cl.append(weightPercentage/100);
+
+				*conflictsString+= s+"\n";
 			}
 		}
 	}
@@ -14260,9 +13801,7 @@ double ConstraintTeacherMinDaysPerWeek::fitness(Solution& c, Rules& r, QList<dou
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
-
-	nbroken=0;
+	int nbroken = 0;
 	int i=this->teacher_ID;
 	int nd=0;
 	for(int d=0; d<r.nDaysPerWeek; d++){
@@ -14460,10 +13999,8 @@ double ConstraintTeachersMinDaysPerWeek::fitness(Solution& c, Rules& r, QList<do
 
 	int nbrokentotal=0;
 	for(int i=0; i<r.nInternalTeachers; i++){
-		int nbroken;
+		int nbroken = 0;
 
-		nbroken=0;
-		//int i=this->teacher_ID;
 		int nd=0;
 		for(int d=0; d<r.nDaysPerWeek; d++){
 			for(int h=0; h<r.nHoursPerDay; h++){
@@ -14708,11 +14245,10 @@ double ConstraintTeacherIntervalMaxDaysPerWeek::fitness(Solution& c, Rules& r, Q
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
+	int nbroken = 0;
 	
 	int t=this->teacher_ID;
 
-	nbroken=0;
 	bool ocDay[MAX_DAYS_PER_WEEK];
 	for(int d=0; d<r.nDaysPerWeek; d++){
 		ocDay[d]=false;
@@ -15267,10 +14803,8 @@ double ConstraintStudentsSetIntervalMaxDaysPerWeek::fitness(Solution& c, Rules& 
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
-	
-	nbroken=0;
-	
+	int nbroken = 0;
+
 	foreach(int sbg, this->iSubgroupsList){
 		bool ocDay[MAX_DAYS_PER_WEEK];
 		for(int d=0; d<r.nDaysPerWeek; d++){
@@ -15516,10 +15050,8 @@ double ConstraintStudentsIntervalMaxDaysPerWeek::fitness(Solution& c, Rules& r, 
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
-	
-	nbroken=0;
-	
+	int nbroken = 0;
+
 	for(int sbg=0; sbg<r.nInternalSubgroups; sbg++){
 		bool ocDay[MAX_DAYS_PER_WEEK];
 		for(int d=0; d<r.nDaysPerWeek; d++){
@@ -16073,9 +15605,8 @@ double ConstraintTeachersActivityTagMaxHoursDaily::fitness(Solution& c, Rules& r
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
+	int nbroken = 0;
 
-	nbroken=0;
 	foreach(int i, this->canonicalTeachersList){
 		Teacher* tch=r.internalTeachersList[i];
 		int crtTeacherTimetableActivityTag[MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
@@ -16314,9 +15845,8 @@ double ConstraintTeacherActivityTagMaxHoursDaily::fitness(Solution& c, Rules& r,
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
+	int nbroken = 0;
 
-	nbroken=0;
 	foreach(int i, this->canonicalTeachersList){
 		Teacher* tch=r.internalTeachersList[i];
 		int crtTeacherTimetableActivityTag[MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
@@ -16557,10 +16087,8 @@ double ConstraintStudentsActivityTagMaxHoursDaily::fitness(Solution& c, Rules& r
 		c.changedForMatrixCalculation=false;
 	}
 	
-	int nbroken;
+	int nbroken = 0;
 
-	nbroken=0;
-	
 	foreach(int i, this->canonicalSubgroupsList){
 		StudentsSubgroup* sbg=r.internalSubgroupsList[i];
 		int crtSubgroupTimetableActivityTag[MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
@@ -16851,10 +16379,8 @@ double ConstraintStudentsSetActivityTagMaxHoursDaily::fitness(Solution& c, Rules
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
+	int nbroken = 0;
 
-	nbroken=0;
-	
 	foreach(int i, this->canonicalSubgroupsList){
 		StudentsSubgroup* sbg=r.internalSubgroupsList[i];
 		int crtSubgroupTimetableActivityTag[MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
@@ -17657,8 +17183,6 @@ double ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::fitness(Solution& c,
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
-
 	assert(r.internalStructureComputed);
 
 	///////////////////
@@ -17690,7 +17214,7 @@ double ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::fitness(Solution& c,
 			cnt++;
 	}
 
-	nbroken=0;
+	int nbroken = 0;
 	
 	if(cnt > this->maxOccupiedTimeSlots){
 		nbroken=1;
@@ -18026,8 +17550,6 @@ double ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::fitness(Solution&
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
-
 	assert(r.internalStructureComputed);
 
 ///////////////////
@@ -18050,7 +17572,7 @@ double ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::fitness(Solution&
 		}
 	}
 
-	nbroken=0;
+	int nbroken = 0;
 
 	assert(this->selectedDays.count()==this->selectedHours.count());
 	for(int t=0; t<this->selectedDays.count(); t++){
@@ -18328,10 +17850,8 @@ double ConstraintStudentsSetMaxDaysPerWeek::fitness(Solution& c, Rules& r, QList
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
-	
-	nbroken=0;
-	
+	int nbroken = 0;
+
 	foreach(int sbg, this->iSubgroupsList){
 		bool ocDay[MAX_DAYS_PER_WEEK];
 		for(int d=0; d<r.nDaysPerWeek; d++){
@@ -18522,10 +18042,8 @@ double ConstraintStudentsMaxDaysPerWeek::fitness(Solution& c, Rules& r, QList<do
 		c.changedForMatrixCalculation=false;
 	}
 
-	int nbroken;
-	
-	nbroken=0;
-	
+	int nbroken = 0;
+
 	for(int sbg=0; sbg<r.nInternalSubgroups; sbg++){
 		bool ocDay[MAX_DAYS_PER_WEEK];
 		for(int d=0; d<r.nDaysPerWeek; d++){
