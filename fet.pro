@@ -1,5 +1,7 @@
 TEMPLATE = subdirs
-SUBDIRS = src/src.pro src/src-cl.pro
+SUBDIRS = src/src.pro \
+          src/src-cl.pro \
+          tests
 
 unix {
 translations.path = /usr/share/fet/translations
