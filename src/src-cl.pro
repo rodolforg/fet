@@ -16,6 +16,7 @@ SOURCES += \
 	engine/timetable_defs.cpp \
 	engine/generate.cpp \
 	engine/lockunlock.cpp \
+	engine/randomknuth.cpp \
 	engine/messageboxes.cpp \
 	\
 	interface/centerwidgetonscreen.cpp \
@@ -42,6 +43,7 @@ HEADERS += \
 	engine/generate.h \
 	engine/lockunlock.h \
 	engine/matrix.h \
+	engine/randomknuth.h \
 	engine/messageboxes.h \
 	\
 	interface/centerwidgetonscreen.h \

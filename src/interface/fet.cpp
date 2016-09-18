@@ -25,6 +25,8 @@ File fet.cpp - this is where the program FET starts
 
 #include "messageboxes.h"
 
+#include "randomknuth.h"
+
 #ifndef FET_COMMAND_LINE
 #include <QMessageBox>
 
@@ -147,9 +149,6 @@ QApplication* pqapplication=NULL;
 
 FetMainForm* pFetMainForm=NULL;
 #endif
-
-extern int XX;
-extern int YY;
 
 Generate* terminateGeneratePointer;
 
@@ -722,9 +721,7 @@ int main(int argc, char **argv)
 	QObject::connect(&qapplication, SIGNAL(lastWindowClosed()), &qapplication, SLOT(quit()));
 #endif
 
-	srand(unsigned(time(NULL))); //useless, I use randomKnuth(), but just in case I use somewhere rand() by mistake...
-
-	initRandomKnuth();
+	RandomKnuth::init();
 
 	OUTPUT_DIR=QDir::homePath()+FILE_SEP+"fet-results";
 	
@@ -1156,15 +1153,15 @@ int main(int argc, char **argv)
 		}
 		assert(randomSeedXSpecified==randomSeedYSpecified);
 		if(randomSeedXSpecified){
-			if(randomSeedX<=0 || randomSeedX>=MM){
-				usage(&out, QString("Random seed X component must be at least 1 and at most %1").arg(MM-1));
+			if(randomSeedX<=0 || randomSeedX>=RandomKnuth::getMM()){
+				usage(&out, QString("Random seed X component must be at least 1 and at most %1").arg(RandomKnuth::getMM()-1));
 				logFile.close();
 				return 1;
 			}
 		}
 		if(randomSeedYSpecified){
-			if(randomSeedY<=0 || randomSeedY>=MMM){
-				usage(&out, QString("Random seed Y component must be at least 1 and at most %1").arg(MMM-1));
+			if(randomSeedY<=0 || randomSeedY>=RandomKnuth::getMMM()){
+				usage(&out, QString("Random seed Y component must be at least 1 and at most %1").arg(RandomKnuth::getMMM()-1));
 				logFile.close();
 				return 1;
 			}
@@ -1172,9 +1169,9 @@ int main(int argc, char **argv)
 		
 		if(randomSeedXSpecified){
 			assert(randomSeedYSpecified);
-			if(randomSeedX>0 && randomSeedX<MM && randomSeedY>0 && randomSeedY<MMM){
-				XX=randomSeedX;
-				YY=randomSeedY;
+			if(randomSeedX>0 && randomSeedX<RandomKnuth::getMM() && randomSeedY>0 && randomSeedY<RandomKnuth::getMMM()){
+				RandomKnuth::XX=randomSeedX;
+				RandomKnuth::YY=randomSeedY;
 			}
 		}
 		

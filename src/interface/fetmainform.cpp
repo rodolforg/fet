@@ -19,6 +19,8 @@
 #include "timetable.h"
 #include "solution.h"
 
+#include "randomknuth.h"
+
 #include <iostream>
 using namespace std;
 
@@ -323,10 +325,6 @@ bool CONFIRM_SPREAD_ACTIVITIES=true;
 bool CONFIRM_REMOVE_REDUNDANT=true;
 bool CONFIRM_SAVE_TIMETABLE=true;
 
-extern int XX;
-extern int YY;
-extern const int MM;
-
 const int STATUS_BAR_MILLISECONDS=2500;
 
 RandomSeedDialog::RandomSeedDialog(QWidget* parent): QDialog(parent)
@@ -334,16 +332,16 @@ RandomSeedDialog::RandomSeedDialog(QWidget* parent): QDialog(parent)
 	setWindowTitle(tr("Random seed"));
 
 	labelX=new QLabel(tr("Random seed X component:", "Means the X component of the random seed (random seed has 2 components, X and Y). Please keep translation short"));
-	lineEditX=new QLineEdit(CustomFETString::number(XX));
+	lineEditX=new QLineEdit(CustomFETString::number(RandomKnuth::XX));
 	labelY=new QLabel(tr("Random seed Y component:", "Means the Y component of the random seed (random seed has 2 components, X and Y). Please keep translation short"));
-	lineEditY=new QLineEdit(CustomFETString::number(YY));
+	lineEditY=new QLineEdit(CustomFETString::number(RandomKnuth::YY));
 	okPB=new QPushButton(tr("OK"));
 	okPB->setDefault(true);
 	helpPB=new QPushButton(tr("Help"));
 	cancelPB=new QPushButton(tr("Cancel"));
 
-	valuesLabelX=new QLabel(tr("Allowed minimum %1 to maximum %2").arg(1).arg(MM-1));
-	valuesLabelY=new QLabel(tr("Allowed minimum %1 to maximum %2").arg(1).arg(MMM-1));
+	valuesLabelX=new QLabel(tr("Allowed minimum %1 to maximum %2").arg(1).arg(RandomKnuth::getMM()-1));
+	valuesLabelY=new QLabel(tr("Allowed minimum %1 to maximum %2").arg(1).arg(RandomKnuth::getMMM()-1));
 	
 	seedLayoutX=new QGridLayout();
 	seedLayoutX->addWidget(labelX,0,0);
@@ -394,8 +392,8 @@ void RandomSeedDialog::help()
 		tr("You can control the random behaviour of FET with this function")+".\n\n"+
 		tr("The random seed is the state of the random number generator.")+" "+
 		tr("It has two components, X and Y.")+" "+
-		tr("X is a value at least %1 and at most %2.").arg(1).arg(MM-1)+" "+
-		tr("Y is a value at least %1 and at most %2.").arg(1).arg(MMM-1)+" "+
+		tr("X is a value at least %1 and at most %2.").arg(1).arg(RandomKnuth::getMM()-1)+" "+
+		tr("Y is a value at least %1 and at most %2.").arg(1).arg(RandomKnuth::getMMM()-1)+" "+
 		+"\n\n"+tr("The random seed before the generation of a timetable (the X and Y components) is saved on disk in the corresponding timetables directory,"
 		" so that you can simulate again the same generation after that.")+"\n\n"+
 		tr("Mode of operation: to obtain the same timetable twice, give the random seed"
@@ -426,14 +424,14 @@ void RandomSeedDialog::help()
 void RandomSeedDialog::ok()
 {
 	int tx=lineEditX->text().toInt();
-	if(!(tx>=1 && tx<MM)){
-		QMessageBox::warning(this, tr("FET warning"), tr("The random seed X component must be at least %1 and at most %2").arg(1).arg(MM-1));
+	if(!(tx>0 && tx<RandomKnuth::getMM())){
+		QMessageBox::warning(this, tr("FET warning"), tr("The random seed X component must be at least %1 and at most %2").arg(1).arg(RandomKnuth::getMM()-1));
 		return;
 	}
 	
 	int ty=lineEditY->text().toInt();
-	if(!(ty>=1 && ty<MMM)){
-		QMessageBox::warning(this, tr("FET warning"), tr("The random seed Y component must be at least %1 and at most %2").arg(1).arg(MMM-1));
+	if(!(ty>0 && ty<RandomKnuth::getMMM())){
+		QMessageBox::warning(this, tr("FET warning"), tr("The random seed Y component must be at least %1 and at most %2").arg(1).arg(RandomKnuth::getMMM()-1));
 		return;
 	}
 	
@@ -4463,21 +4461,21 @@ void FetMainForm::on_randomSeedAction_triggered()
 	
 	if(te==QDialog::Accepted){
 		int tx=dialog.lineEditX->text().toInt();
-		if(!(tx>=1 && tx<MM)){
+		if(!(tx>=1 && tx<RandomKnuth::getMM())){
 			assert(0);
 			//QMessageBox::warning(this, tr("FET warning"), tr("The random seed X component must be at least %1 and at most %2").arg(1).arg(MM-1));
 			//return;
 		}
 
 		int ty=dialog.lineEditY->text().toInt();
-		if(!(ty>=1 && ty<MMM)){
+		if(!(ty>=1 && ty<RandomKnuth::getMMM())){
 			assert(0);
 			//QMessageBox::warning(this, tr("FET warning"), tr("The random seed Y component must be at least %1 and at most %2").arg(1).arg(MMM-1));
 			//return;
 		}
 
-		XX=tx;
-		YY=ty;
+		RandomKnuth::XX=tx;
+		RandomKnuth::YY=ty;
 	}
 }
 

@@ -19,6 +19,7 @@ SOURCES += \
 	engine/generate.cpp \
 	engine/statisticsexport.cpp \
 	engine/lockunlock.cpp \
+	engine/randomknuth.cpp \
 	engine/messageboxes.cpp \
 	\
 	interface/fet.cpp \
@@ -457,6 +458,7 @@ HEADERS += \
 	engine/statisticsexport.h \
 	engine/lockunlock.h \
 	engine/matrix.h \
+	engine/randomknuth.h \
 	engine/messageboxes.h \
 	\
 	interface/fet.h \

@@ -318,25 +318,4 @@ public:
 double customFETStrToDouble(const QString& str, bool* ok=0);
 ///////end tricks
 
-//for random Knuth - from Knuth TAOCP Vol. 2 Seminumerical Algorithms section 3.6
-//these numbers are really important - please do not change them, NEVER!!!
-//if you want, write a new random number generator routine, with other name
-//I think I found a minor possible improvement, the author said: if(Z<=0) then Z+=MM,
-//but I think this would be better: if(Z<=0) then Z+=MM-1. - Yes, the author confirmed
-//extern int XX;
-//extern int YY;
-const int MM=2147483647;
-const int AA=48271;
-const int QQ=44488;
-const int RR=3399;
-
-const int MMM=2147483399;
-const int AAA=40692;
-const int QQQ=52774;
-const int RRR=3791;
-
-void initRandomKnuth();
-int randomKnuth1MM1(); //a random between 1 and MM-1
-int randomKnuth(int k); //a random between 0 and k-1
-
 #endif
