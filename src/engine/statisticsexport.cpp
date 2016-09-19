@@ -136,7 +136,7 @@ void StatisticsExport::exportStatistics(QWidget* parent){
 
 	QDate dat=QDate::currentDate();
 	QTime tim=QTime::currentTime();
-	QLocale loc(FET_LANGUAGE);
+	QLocale loc;
 	QString sTime=loc.toString(dat, QLocale::ShortFormat)+" "+loc.toString(tim, QLocale::ShortFormat);
 
 	ok=exportStatisticsStylesheetCss(parent, sTime, statisticValues);

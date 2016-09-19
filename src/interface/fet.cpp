@@ -532,6 +532,8 @@ void setLanguage(QWidget* parent)
 		FET_LANGUAGE="en_US";
 	}
 	
+	QLocale::setDefault(QLocale(FET_LANGUAGE));
+
 	if(FET_LANGUAGE=="ar" || FET_LANGUAGE=="he" || FET_LANGUAGE=="fa" || FET_LANGUAGE=="ur" /* and others? */){
 		LANGUAGE_STYLE_RIGHT_TO_LEFT=true;
 	}
@@ -1035,7 +1037,7 @@ int main(int argc, char **argv)
 		
 			QDate dat=QDate::currentDate();
 			QTime tim=QTime::currentTime();
-			QLocale loc(FET_LANGUAGE);
+			QLocale loc;
 			QString sTime=loc.toString(dat, QLocale::ShortFormat)+" "+loc.toString(tim, QLocale::ShortFormat);
 			out<<"FET command line request for version started on "<<qPrintable(sTime)<<endl<<endl;
 	
@@ -1082,7 +1084,7 @@ int main(int argc, char **argv)
 		
 		QDate dat=QDate::currentDate();
 		QTime tim=QTime::currentTime();
-		QLocale loc(FET_LANGUAGE);
+		QLocale loc;
 		QString sTime=loc.toString(dat, QLocale::ShortFormat)+" "+loc.toString(tim, QLocale::ShortFormat);
 		out<<"FET command line simulation started on "<<qPrintable(sTime)<<endl<<endl;
 		

@@ -310,6 +310,13 @@ void TimetableExport::getNumberOfPlacedActivities(int& number1, int& number2)
 			number2++;
 }
 
+static QString getDateTimeString() {
+	QDate dat=QDate::currentDate();
+	QTime tim=QTime::currentTime();
+	QLocale loc;
+	return loc.toString(dat, QLocale::ShortFormat)+" "+loc.toString(tim, QLocale::ShortFormat);
+}
+
 void TimetableExport::writeSimulationResults(QWidget* parent){
 	QDir dir;
 	
@@ -364,10 +371,7 @@ void TimetableExport::writeSimulationResults(QWidget* parent){
 	writeActivitiesTimetableXml(parent, s);
 
 	//now get the time. TODO: maybe write it in xml too? so do it a few lines earlier!
-	QDate dat=QDate::currentDate();
-	QTime tim=QTime::currentTime();
-	QLocale loc(FET_LANGUAGE);
-	QString sTime=loc.toString(dat, QLocale::ShortFormat)+" "+loc.toString(tim, QLocale::ShortFormat);
+	QString sTime=getDateTimeString();
 	generationLocalizedTime=sTime;
 	
 	//now get the number of placed activities. TODO: maybe write it in xml too? so do it a few lines earlier!
@@ -606,10 +610,7 @@ void TimetableExport::writeHighestStageResults(QWidget* parent){
 	writeActivitiesTimetableXml(parent, s);
 
 	//now get the time. TODO: maybe write it in xml too? so do it a few lines earlier!
-	QDate dat=QDate::currentDate();
-	QTime tim=QTime::currentTime();
-	QLocale loc(FET_LANGUAGE);
-	QString sTime=loc.toString(dat, QLocale::ShortFormat)+" "+loc.toString(tim, QLocale::ShortFormat);
+	QString sTime=getDateTimeString();
 	generationLocalizedTime=sTime;
 	
 	//now get the number of placed activities. TODO: maybe write it in xml too? so do it a few lines earlier!
@@ -851,11 +852,8 @@ void TimetableExport::writeRandomSeedFile(QWidget* parent, const QString& filena
 	tos.setCodec("UTF-8");
 	tos.setGenerateByteOrderMark(true);
 
-	QDate dat=QDate::currentDate();
-	QTime tim=QTime::currentTime();
-	QLocale loc(FET_LANGUAGE);
-	QString sTime=loc.toString(dat, QLocale::ShortFormat)+" "+loc.toString(tim, QLocale::ShortFormat);
-	
+	QString sTime=getDateTimeString();
+
 	if(before){
 		tos<<tr("Generation started on: %1", "%1 is the time").arg(sTime);
 		tos<<endl<<endl;
@@ -1132,10 +1130,7 @@ void TimetableExport::writeSimulationResults(QWidget* parent, int n){
 	writeActivitiesTimetableXml(parent, s);
 
 	//now get the time. TODO: maybe write it in xml too? so do it a few lines earlier!
-	QDate dat=QDate::currentDate();
-	QTime tim=QTime::currentTime();
-	QLocale loc(FET_LANGUAGE);
-	QString sTime=loc.toString(dat, QLocale::ShortFormat)+" "+loc.toString(tim, QLocale::ShortFormat);
+	QString sTime=getDateTimeString();
 	generationLocalizedTime=sTime;
 
 	//now get the number of placed activities. TODO: maybe write it in xml too? so do it a few lines earlier!
@@ -1429,10 +1424,7 @@ void TimetableExport::writeSimulationResultsCommandLine(QWidget* parent, const Q
 	TimetableExport::writeActivitiesTimetableXml(parent, outputDirectory+add+ACTIVITIES_TIMETABLE_FILENAME_XML);
 	
 	//get the time
-	QDate dat=QDate::currentDate();
-	QTime tim=QTime::currentTime();
-	QLocale loc(FET_LANGUAGE);
-	QString sTime=loc.toString(dat, QLocale::ShortFormat)+" "+loc.toString(tim, QLocale::ShortFormat);
+	QString sTime=getDateTimeString();
 	generationLocalizedTime=sTime; //really unneeded, but just to be similar to the other parts
 	
 	//now get the number of placed activities. TODO: maybe write it in xml too? so do it a few lines earlier!
