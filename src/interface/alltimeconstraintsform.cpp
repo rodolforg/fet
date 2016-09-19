@@ -131,9 +131,6 @@
 #include <algorithm>
 using namespace std;
 
-extern const QString COMPANY;
-extern const QString PROGRAM;
-
 const int DESCRIPTION=0;
 //const int DETDESCRIPTION=1;
 
@@ -174,7 +171,7 @@ AllTimeConstraintsForm::AllTimeConstraintsForm(QWidget* parent): QDialog(parent)
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
 	//restore splitter state
-	QSettings settings(COMPANY, PROGRAM);
+	QSettings settings;
 	if(settings.contains(this->metaObject()->className()+QString("/splitter-state")))
 		splitter->restoreState(settings.value(this->metaObject()->className()+QString("/splitter-state")).toByteArray());
 		
@@ -211,7 +208,7 @@ AllTimeConstraintsForm::~AllTimeConstraintsForm()
 {
 	saveFETDialogGeometry(this);
 	//save splitter state
-	QSettings settings(COMPANY, PROGRAM);
+	QSettings settings;
 	settings.setValue(this->metaObject()->className()+QString("/splitter-state"), splitter->saveState());
 
 	QString settingsName="AllTimeConstraintsAdvancedFilterForm";

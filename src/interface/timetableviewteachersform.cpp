@@ -60,9 +60,6 @@
 #include <QColor>
 //end by Marco Vassura
 
-extern const QString COMPANY;
-extern const QString PROGRAM;
-
 extern bool students_schedule_ready;
 extern bool teachers_schedule_ready;
 
@@ -112,12 +109,11 @@ TimetableViewTeachersForm::TimetableViewTeachersForm(QWidget* parent): QDialog(p
 	restoreFETDialogGeometry(this);
 
 	//restore vertical splitter state
-	QSettings settings(COMPANY, PROGRAM);
+	QSettings settings;
 	if(settings.contains(this->metaObject()->className()+QString("/vertical-splitter-state")))
 		verticalSplitter->restoreState(settings.value(this->metaObject()->className()+QString("/vertical-splitter-state")).toByteArray());
 
 	//restore horizontal splitter state
-	//QSettings settings(COMPANY, PROGRAM);
 	if(settings.contains(this->metaObject()->className()+QString("/horizontal-splitter-state")))
 		horizontalSplitter->restoreState(settings.value(this->metaObject()->className()+QString("/horizontal-splitter-state")).toByteArray());
 
@@ -202,11 +198,10 @@ TimetableViewTeachersForm::~TimetableViewTeachersForm()
 	saveFETDialogGeometry(this);
 
 	//save vertical splitter state
-	QSettings settings(COMPANY, PROGRAM);
+	QSettings settings;
 	settings.setValue(this->metaObject()->className()+QString("/vertical-splitter-state"), verticalSplitter->saveState());
 
 	//save horizontal splitter state
-	//QSettings settings(COMPANY, PROGRAM);
 	settings.setValue(this->metaObject()->className()+QString("/horizontal-splitter-state"), horizontalSplitter->saveState());
 }
 

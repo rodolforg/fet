@@ -46,9 +46,6 @@
 #include <QObject>
 #include <QMetaObject>
 
-extern const QString COMPANY;
-extern const QString PROGRAM;
-
 ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, const QString& studentsSetName, const QString& subjectName, const QString& activityTagName): QDialog(parent)
 {
 	setupUi(this);
@@ -76,7 +73,7 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
 	//restore splitter state
-	QSettings settings(COMPANY, PROGRAM);
+	QSettings settings;
 	if(settings.contains(this->metaObject()->className()+QString("/splitter-state")))
 		splitter->restoreState(settings.value(this->metaObject()->className()+QString("/splitter-state")).toByteArray());
 	
@@ -170,7 +167,7 @@ ActivitiesForm::~ActivitiesForm()
 {
 	saveFETDialogGeometry(this);
 	//save splitter state
-	QSettings settings(COMPANY, PROGRAM);
+	QSettings settings;
 	settings.setValue(this->metaObject()->className()+QString("/splitter-state"), splitter->saveState());
 }
 

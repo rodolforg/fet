@@ -44,9 +44,6 @@
 
 #include "longtextmessagebox.h"
 
-extern const QString COMPANY;
-extern const QString PROGRAM;
-
 SplitYearForm::SplitYearForm(QWidget* parent, const QString& _year): QDialog(parent)
 {
 	setupUi(this);
@@ -95,7 +92,7 @@ SplitYearForm::SplitYearForm(QWidget* parent, const QString& _year): QDialog(par
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
 	
-	QSettings settings(COMPANY, PROGRAM);
+	QSettings settings;
 	
 	_sep=settings.value(this->metaObject()->className()+QString("/separator-string"), QString(" ")).toString();
 	
@@ -142,7 +139,7 @@ SplitYearForm::~SplitYearForm()
 {
 	saveFETDialogGeometry(this);
 
-	QSettings settings(COMPANY, PROGRAM);
+	QSettings settings;
 	
 	settings.setValue(this->metaObject()->className()+QString("/separator-string"), _sep);
 	

@@ -53,9 +53,6 @@ File centerwidgetonscreen.cpp
 #include <QTableWidgetItem>
 #include <QAbstractItemView>
 
-extern const QString COMPANY;
-extern const QString PROGRAM;
-
 extern FetMainForm* pFetMainForm;
 
 extern Timetable gt;
@@ -113,7 +110,7 @@ int maxRecommendedWidth(QWidget* widget)
 
 void saveFETDialogGeometry(QWidget* widget, const QString& alternativeName)
 {
-	QSettings settings(COMPANY, PROGRAM);
+	QSettings settings;
 	QString name=QString(widget->metaObject()->className());
 	if(!alternativeName.isEmpty())
 		name=alternativeName;
@@ -124,7 +121,7 @@ void saveFETDialogGeometry(QWidget* widget, const QString& alternativeName)
 
 void restoreFETDialogGeometry(QWidget* widget, const QString& alternativeName)
 {
-	QSettings settings(COMPANY, PROGRAM);
+	QSettings settings;
 	QString name=QString(widget->metaObject()->className());
 	if(!alternativeName.isEmpty())
 		name=alternativeName;

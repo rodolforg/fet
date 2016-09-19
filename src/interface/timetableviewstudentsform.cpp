@@ -59,9 +59,6 @@
 #include <QColor>
 //end by Marco Vassura
 
-extern const QString COMPANY;
-extern const QString PROGRAM;
-
 extern bool students_schedule_ready;
 extern bool teachers_schedule_ready;
 
@@ -117,17 +114,15 @@ TimetableViewStudentsForm::TimetableViewStudentsForm(QWidget* parent): QDialog(p
 	restoreFETDialogGeometry(this);
 
 	//restore vertical students list splitter state
-	QSettings settings(COMPANY, PROGRAM);
+	QSettings settings;
 	if(settings.contains(this->metaObject()->className()+QString("/vertical-students-list-splitter-state")))
 		verticalStudentsListSplitter->restoreState(settings.value(this->metaObject()->className()+QString("/vertical-students-list-splitter-state")).toByteArray());
 
 	//restore vertical students table details splitter state
-	//QSettings settings(COMPANY, PROGRAM);
 	if(settings.contains(this->metaObject()->className()+QString("/vertical-students-table-details-splitter-state")))
 		verticalStudentsTableDetailsSplitter->restoreState(settings.value(this->metaObject()->className()+QString("/vertical-students-table-details-splitter-state")).toByteArray());
 
 	//restore horizontal splitter state
-	//QSettings settings(COMPANY, PROGRAM);
 	if(settings.contains(this->metaObject()->className()+QString("/horizontal-splitter-state")))
 		horizontalSplitter->restoreState(settings.value(this->metaObject()->className()+QString("/horizontal-splitter-state")).toByteArray());
 
@@ -206,15 +201,13 @@ TimetableViewStudentsForm::~TimetableViewStudentsForm()
 	saveFETDialogGeometry(this);
 
 	//save vertical students list splitter state
-	QSettings settings(COMPANY, PROGRAM);
+	QSettings settings;
 	settings.setValue(this->metaObject()->className()+QString("/vertical-students-list-splitter-state"), verticalStudentsListSplitter->saveState());
 
 	//save vertical students table details splitter state
-	//QSettings settings(COMPANY, PROGRAM);
 	settings.setValue(this->metaObject()->className()+QString("/vertical-students-table-details-splitter-state"), verticalStudentsTableDetailsSplitter->saveState());
 
 	//save horizontal splitter state
-	//QSettings settings(COMPANY, PROGRAM);
 	settings.setValue(this->metaObject()->className()+QString("/horizontal-splitter-state"), horizontalSplitter->saveState());
 }
 

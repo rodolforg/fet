@@ -246,7 +246,7 @@ void readSimulationParameters()
 {
 	const QString predefDir=QDir::homePath()+FILE_SEP+"fet-results";
 
-	QSettings newSettings(COMPANY, PROGRAM);
+	QSettings newSettings;
 
 	if(newSettings.contains("output-directory")){
 		OUTPUT_DIR=newSettings.value("output-directory").toString();
@@ -374,7 +374,7 @@ void readSimulationParameters()
 
 void writeSimulationParameters()
 {
-	QSettings settings(COMPANY, PROGRAM);
+	QSettings settings;
 
 	settings.setValue("output-directory", OUTPUT_DIR);
 	settings.setValue("language", FET_LANGUAGE);
@@ -701,6 +701,13 @@ int main(int argc, char **argv)
 #else
 	QCoreApplication app(argc, argv);
 #endif
+	Q_UNUSED(app);
+
+	const QString PROGRAM("fettimetabling");
+	const QString COMPANY("fet");
+	QCoreApplication::setApplicationName(PROGRAM);
+	QCoreApplication::setOrganizationName(COMPANY);
+	QCoreApplication::setApplicationVersion(FET_VERSION);
 
 	initLanguagesSet();
 

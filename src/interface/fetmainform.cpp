@@ -293,9 +293,6 @@ static int ORIGINAL_HEIGHT;
 //static int ORIGINAL_X;
 //static int ORIGINAL_Y;
 
-const QString COMPANY=QString("fet");
-const QString PROGRAM=QString("fettimetabling");
-
 bool USE_GUI_COLORS=false;
 
 bool SHOW_SUBGROUPS_IN_COMBO_BOXES=true;
@@ -444,7 +441,7 @@ FetMainForm::FetMainForm()
 	QIcon appIcon(":/images/appicon.png");
 	QGuiApplication::setWindowIcon(appIcon);
 
-	QSettings settings(COMPANY, PROGRAM);
+	QSettings settings;
 	int nRec=settings.value(QString("FetMainForm/number-of-recent-files"), 0).toInt();
 	if(nRec>MAX_RECENT_FILES)
 		nRec=MAX_RECENT_FILES;
@@ -971,7 +968,7 @@ void FetMainForm::closeEvent(QCloseEvent* event)
 
 FetMainForm::~FetMainForm()
 {
-	QSettings settings(COMPANY, PROGRAM);
+	QSettings settings;
 	settings.setValue(QString("FetMainForm/number-of-recent-files"), recentFiles.count());
 	settings.remove(QString("FetMainForm/recent-file"));
 	for(int i=0; i<recentFiles.count(); i++)
@@ -4077,7 +4074,7 @@ void FetMainForm::on_settingsRestoreDefaultsAction_triggered()
 		return;
 	}
 
-	QSettings settings(COMPANY, PROGRAM);
+	QSettings settings;
 	settings.clear();
 	
 	recentFiles.clear();

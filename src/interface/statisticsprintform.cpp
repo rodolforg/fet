@@ -49,9 +49,6 @@ extern Timetable gt;
 
 extern QString generationLocalizedTime;
 
-extern const QString COMPANY;
-extern const QString PROGRAM;
-
 //static int numberOfPlacedActivities1;
 
 #ifdef QT_NO_PRINTER
@@ -508,7 +505,7 @@ StatisticsPrintForm::StatisticsPrintForm(QWidget *parent): QDialog(parent){
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
 	
-	QSettings settings(COMPANY, PROGRAM);
+	QSettings settings;
 		
 	if(settings.contains(this->metaObject()->className()+studentSubjectRBState))
 		studentSubjectRB->setChecked(settings.value(this->metaObject()->className()+studentSubjectRBState).toBool());
@@ -559,7 +556,7 @@ StatisticsPrintForm::StatisticsPrintForm(QWidget *parent): QDialog(parent){
 StatisticsPrintForm::~StatisticsPrintForm(){
 	saveFETDialogGeometry(this);
 	
-	QSettings settings(COMPANY, PROGRAM);
+	QSettings settings;
 	//save other settings
 
 	settings.setValue(this->metaObject()->className()+studentSubjectRBState, studentSubjectRB->isChecked());

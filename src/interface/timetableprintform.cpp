@@ -62,9 +62,6 @@ extern QList<int> activeHashActivityColorBySubjectAndStudents;
 
 extern QString generationLocalizedTime;
 
-extern const QString COMPANY;
-extern const QString PROGRAM;
-
 static int numberOfPlacedActivities1;
 
 #ifdef QT_NO_PRINTER
@@ -589,7 +586,7 @@ TimetablePrintForm::TimetablePrintForm(QWidget *parent): QDialog(parent){
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
 	
-	QSettings settings(COMPANY, PROGRAM);
+	QSettings settings;
 	
 	if(settings.contains(this->metaObject()->className()+CBTablesState))
 		CBTables->setCurrentIndex(settings.value(this->metaObject()->className()+CBTablesState).toInt());
@@ -656,7 +653,7 @@ TimetablePrintForm::TimetablePrintForm(QWidget *parent): QDialog(parent){
 TimetablePrintForm::~TimetablePrintForm(){
 	saveFETDialogGeometry(this);
 	
-	QSettings settings(COMPANY, PROGRAM);
+	QSettings settings;
 	//save other settings
 	settings.setValue(this->metaObject()->className()+CBTablesState, CBTables->currentIndex());
 	

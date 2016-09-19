@@ -44,9 +44,6 @@
 class QNetworkAccessManager;
 class QNetworkReply;
 
-extern const QString COMPANY;
-extern const QString PROGRAM;
-
 const int MAX_RECENT_FILES=10;
 
 class RandomSeedDialog: public QDialog

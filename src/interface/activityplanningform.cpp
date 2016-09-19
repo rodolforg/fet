@@ -72,9 +72,6 @@
 #include <QObject>
 #include <QMetaObject>
 
-extern const QString COMPANY;
-extern const QString PROGRAM;
-
 const QString RBActivityState="/activity-radio-button-state";
 const QString RBSubactivityState="/subactivity-radio-button-state";
 const QString RBAddState="/add-activity-radio-button-state";
@@ -346,7 +343,7 @@ ActivityPlanningForm::ActivityPlanningForm(QWidget *parent): QDialog(parent)
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
 	//restore splitter state
-	QSettings settings(COMPANY, PROGRAM);
+	QSettings settings;
 	if(settings.contains(this->metaObject()->className()+QString("/splitter-state")))
 		leftSplitter->restoreState(settings.value(this->metaObject()->className()+QString("/splitter-state")).toByteArray());
 	////////
@@ -438,7 +435,7 @@ ActivityPlanningForm::~ActivityPlanningForm()
 	saveFETDialogGeometry(this);
 
 	//save splitter state
-	QSettings settings(COMPANY, PROGRAM);
+	QSettings settings;
 	settings.setValue(this->metaObject()->className()+QString("/splitter-state"), leftSplitter->saveState());
 
 	settings.setValue(this->metaObject()->className()+QString("/buttons-visible"), buttonsVisible);

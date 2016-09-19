@@ -32,9 +32,6 @@
 #include <QObject>
 #include <QMetaObject>
 
-extern const QString COMPANY;
-extern const QString PROGRAM;
-
 RoomsForm::RoomsForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);
@@ -62,7 +59,7 @@ RoomsForm::RoomsForm(QWidget* parent): QDialog(parent)
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
 	//restore splitter state
-	QSettings settings(COMPANY, PROGRAM);
+	QSettings settings;
 	if(settings.contains(this->metaObject()->className()+QString("/splitter-state")))
 		splitter->restoreState(settings.value(this->metaObject()->className()+QString("/splitter-state")).toByteArray());
 	
@@ -74,7 +71,7 @@ RoomsForm::~RoomsForm()
 {
 	saveFETDialogGeometry(this);
 	//save splitter state
-	QSettings settings(COMPANY, PROGRAM);
+	QSettings settings;
 	settings.setValue(this->metaObject()->className()+QString("/splitter-state"), splitter->saveState());
 }
 
