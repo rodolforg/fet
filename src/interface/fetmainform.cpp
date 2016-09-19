@@ -3822,7 +3822,9 @@ void FetMainForm::on_languageAction_triggered()
 	int eng=-1;
 	while(it.hasNext()){
 		it.next();
-		languagesComboBox->addItem( it.key() + " (" + it.value() + ")" );
+		//: Locale_Code (Language_Name). Ex.: en_US (US English)
+		QString text = tr("%1 (%2)").arg(it.key()).arg(tr(it.value().toStdString().c_str()));
+		languagesComboBox->addItem(text, it.key());
 		if(it.key()==FET_LANGUAGE)
 			j=i;
 		if(it.key()=="en_US")
@@ -3874,29 +3876,10 @@ void FetMainForm::on_languageAction_triggered()
 	if(!ok)
 		return;
 		
-	//QString newLang=languagesComboBox->currentText();
-	int k=languagesComboBox->currentIndex();
-	i=0;
-	bool found=false;
-	QMapIterator<QString, QString> it2(languagesMap);
-	while(it2.hasNext()){
-		it2.next();
-		if(i==k){
-			FET_LANGUAGE=it2.key();
-			found=true;
-		}
-		i++;
-	}
-	if(!found){
-		QMessageBox::warning(this, tr("FET warning"), tr("Invalid language selected - making it en_US (US English)"));
-		FET_LANGUAGE="en_US";
-	}
+	FET_LANGUAGE = languagesComboBox->currentData().toString();
 	
 	setLanguage(this);
 	setCurrentFile(INPUT_FILENAME_XML);
-
-	//QMessageBox::information(this, tr("FET information"), tr("Language %1 selected").arg( FET_LANGUAGE+" ("+languagesMap.value(FET_LANGUAGE)+")" )+"\n\n"+
-	// tr("Please exit and restart FET to activate language change"));
 }
 
 void FetMainForm::on_settingsRestoreDefaultsAction_triggered()
@@ -3951,8 +3934,7 @@ void FetMainForm::on_settingsRestoreDefaultsAction_triggered()
 	if(!ok)
 		NEW_FET_LANGUAGE="en_US";
 		
-	assert(languagesMap.contains(NEW_FET_LANGUAGE));
-	s+=tr("6")+QString(". ")+tr("Language will be %1", "%1 is the default language").arg(NEW_FET_LANGUAGE+QString(" (")+languagesMap.value(NEW_FET_LANGUAGE)+QString(")"));
+	s+=tr("6")+QString(". ")+tr("Language will be %1", "%1 is the default language").arg(tr("%1 (%2)").arg(NEW_FET_LANGUAGE).arg(languagesMap().value(NEW_FET_LANGUAGE)));
 #endif
 	s+="\n";
 
