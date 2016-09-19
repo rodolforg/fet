@@ -46,7 +46,6 @@
 #include <QList>
 
 #include <QCoreApplication>
-#include <QApplication>
 
 #include <QString>
 #include <QStringList>

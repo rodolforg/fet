@@ -27,12 +27,6 @@ File fet.h
 
 #include "matrix.h"
 
-#include <QTextStream>
-
-#ifndef FET_COMMAND_LINE
-#include <QApplication>
-#endif
-
 class QWidget;
 
 class FetTranslate: public QObject{
@@ -71,17 +65,8 @@ void readSimulationParameters();
 void writeSimulationParameters();
 //void writeDefaultSimulationParameters();
 
-#ifndef FET_COMMAND_LINE
-void setLanguage(QApplication& qapplication, QWidget* parent);
-#else
-void setLanguage(QCoreApplication& qapplication, QWidget* parent);
-#endif
+void setLanguage(QWidget* parent);
 
 void initLanguagesSet();
-
-/**
-The main function.
-*/
-int main(int argc, char **argv);
 
 #endif

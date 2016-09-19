@@ -19,8 +19,6 @@
 
 #include "settingstimetablehtmllevelform.h"
 
-extern QApplication* pqapplication;
-
 #include <QMessageBox>
 
 SettingsTimetableHtmlLevelForm::SettingsTimetableHtmlLevelForm(QWidget* parent): QDialog(parent)

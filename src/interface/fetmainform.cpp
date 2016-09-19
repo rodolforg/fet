@@ -283,7 +283,6 @@ bool WRITE_TIMETABLES_ACTIVITY_TAGS=true;
 bool WRITE_TIMETABLES_ACTIVITIES=true;
 
 #ifndef FET_COMMAND_LINE
-extern QApplication* pqapplication;
 #endif
 
 Rules rules2;
@@ -443,7 +442,7 @@ FetMainForm::FetMainForm()
 	setupUi(this);
 	
 	QIcon appIcon(":/images/appicon.png");
-	pqapplication->setWindowIcon(appIcon);
+	QGuiApplication::setWindowIcon(appIcon);
 
 	QSettings settings(COMPANY, PROGRAM);
 	int nRec=settings.value(QString("FetMainForm/number-of-recent-files"), 0).toInt();
@@ -1238,7 +1237,7 @@ void FetMainForm::openFile(const QString& fileName)
 			//QCursor orig=this->cursor();
 			//this->setCursor(Qt::WaitCursor);
 			statusBar()->showMessage(tr("Loading...", "This is a message in the status bar, that we are loading the file"), 0);
-			pqapplication->processEvents();
+			QCoreApplication::processEvents();
 		
 			//bool before=gt.rules.modified;
 			gt.rules.modified=true; //to avoid flicker of the main form modified flag
@@ -3893,7 +3892,7 @@ void FetMainForm::on_languageAction_triggered()
 		FET_LANGUAGE="en_US";
 	}
 	
-	setLanguage(*pqapplication, this);
+	setLanguage(this);
 	setCurrentFile(INPUT_FILENAME_XML);
 
 	//QMessageBox::information(this, tr("FET information"), tr("Language %1 selected").arg( FET_LANGUAGE+" ("+languagesMap.value(FET_LANGUAGE)+")" )+"\n\n"+
@@ -4237,7 +4236,7 @@ void FetMainForm::on_settingsRestoreDefaultsAction_triggered()
 	settingsPrintActivitiesWithSameStartingTimeAction->setChecked(false);
 	PRINT_ACTIVITIES_WITH_SAME_STARTING_TIME=false;
 
-	setLanguage(*pqapplication, this);
+	setLanguage(this);
 	setCurrentFile(INPUT_FILENAME_XML);
 
 	LockUnlock::increaseCommunicationSpinBox(); //for GUI colors in timetables

@@ -481,18 +481,12 @@ void initLanguagesSet()
 	languagesSet.insert("cs");
 }
 
-#ifndef FET_COMMAND_LINE
-void setLanguage(QApplication& qapplication, QWidget* parent)
-#else
-void setLanguage(QCoreApplication& qapplication, QWidget* parent)
-#endif
+void setLanguage(QWidget* parent)
 {
-	Q_UNUSED(qapplication); //silence MSVC wrong warning
-
 	static int cntTranslators=0;
 	
 	if(cntTranslators>0){
-		qapplication.removeTranslator(&translator);
+		QCoreApplication::removeTranslator(&translator);
 		cntTranslators=0;
 	}
 
@@ -502,9 +496,9 @@ void setLanguage(QCoreApplication& qapplication, QWidget* parent)
 	bool translation_loaded=false;
 	
 	if(FET_LANGUAGE!="en_US" && languagesSet.contains(FET_LANGUAGE)){
-		translation_loaded=translator.load("fet_"+FET_LANGUAGE, qapplication.applicationDirPath());
+		translation_loaded=translator.load("fet_"+FET_LANGUAGE, QCoreApplication::applicationDirPath());
 		if(!translation_loaded){
-			translation_loaded=translator.load("fet_"+FET_LANGUAGE, qapplication.applicationDirPath()+"/translations");
+			translation_loaded=translator.load("fet_"+FET_LANGUAGE, QCoreApplication::applicationDirPath()+"/translations");
 			if(!translation_loaded){
 				if(d.exists()){
 					translation_loaded=translator.load("fet_"+FET_LANGUAGE, "/usr/share/fet/translations");
@@ -531,8 +525,8 @@ void setLanguage(QCoreApplication& qapplication, QWidget* parent)
 		 QString("FET searched for the translation file %1 in the directory %2, then in the directory %3 and "
 		 "then in the directory %4 (under systems that support such a directory), but could not find it.")
 		 .arg("fet_"+FET_LANGUAGE+".qm")
-		 .arg(QDir::toNativeSeparators(qapplication.applicationDirPath()))
-		 .arg(QDir::toNativeSeparators(qapplication.applicationDirPath()+"/translations"))
+		 .arg(QDir::toNativeSeparators(QCoreApplication::applicationDirPath()))
+		 .arg(QDir::toNativeSeparators(QCoreApplication::applicationDirPath()+"/translations"))
 		 .arg("/usr/share/fet/translations")
 		 );
 		FET_LANGUAGE="en_US";
@@ -561,16 +555,16 @@ void setLanguage(QCoreApplication& qapplication, QWidget* parent)
 	
 	assert(cntTranslators==0);
 	if(FET_LANGUAGE!="en_US"){
-		qapplication.installTranslator(&translator);
+		QCoreApplication::installTranslator(&translator);
 		cntTranslators=1;
 	}
 	
 #ifndef FET_COMMAND_LINE
 	if(LANGUAGE_STYLE_RIGHT_TO_LEFT==true)
-		qapplication.setLayoutDirection(Qt::RightToLeft);
+		QGuiApplication::setLayoutDirection(Qt::RightToLeft);
 	
 	//retranslate
-	QList<QWidget*> tlwl=qapplication.topLevelWidgets();
+	QList<QWidget*> tlwl = QApplication::topLevelWidgets();
 
 	foreach(QWidget* wi, tlwl)
 		if(wi->isVisible()){
@@ -702,9 +696,9 @@ FET starts here
 int main(int argc, char **argv)
 {
 #ifndef FET_COMMAND_LINE
-	QApplication qapplication(argc, argv);
+	QApplication app(argc, argv);
 #else
-	QCoreApplication qCoreApplication(argc, argv);
+	QCoreApplication app(argc, argv);
 #endif
 
 	initLanguagesSet();
@@ -718,7 +712,7 @@ int main(int argc, char **argv)
 	rooms_schedule_ready=0;
 
 #ifndef FET_COMMAND_LINE
-	QObject::connect(&qapplication, SIGNAL(lastWindowClosed()), &qapplication, SLOT(quit()));
+	QObject::connect(QGuiApplication::instance(), SIGNAL(lastWindowClosed()), QGuiApplication::instance(), SLOT(quit()));
 #endif
 
 	RandomKnuth::init();
@@ -759,14 +753,13 @@ int main(int argc, char **argv)
 				test.remove();
 		}
 
-		setLanguage(qapplication, NULL);
+		setLanguage(NULL);
 
-		pqapplication=&qapplication;
 		FetMainForm fetMainForm;
 		pFetMainForm=&fetMainForm;
 		fetMainForm.show();
 
-		int tmp2=qapplication.exec();
+		int tmp2=QCoreApplication::exec();
 	
 		writeSimulationParameters();
 	
@@ -1035,7 +1028,7 @@ int main(int argc, char **argv)
 		QTextStream out(&logFile);
 		///////
 		
-		setLanguage(qCoreApplication, NULL);
+		setLanguage(NULL);
 		
 		if(showVersion){
 			out<<"This file contains the result (log) of last operation"<<endl<<endl;

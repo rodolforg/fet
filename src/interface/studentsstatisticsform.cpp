@@ -39,8 +39,6 @@
 #include <QHeaderView>
 #include <QTableWidget>
 
-extern QApplication* pqapplication;
-
 StudentsStatisticsForm::StudentsStatisticsForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);
