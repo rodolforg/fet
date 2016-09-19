@@ -33,6 +33,8 @@ File fet.cpp - this is where the program FET starts
 #include <QWidget>
 #endif
 
+#include <QStandardPaths>
+
 #include <QLocale>
 #include <QTime>
 #include <QDate>
@@ -491,19 +493,34 @@ void setLanguage(QWidget* parent)
 	}
 
 	//translator stuff
-	QDir d("/usr/share/fet/translations");
-	
-	bool translation_loaded=false;
 	
 	if(FET_LANGUAGE!="en_US" && languagesSet.contains(FET_LANGUAGE)){
-		translation_loaded=translator.load("fet_"+FET_LANGUAGE, QCoreApplication::applicationDirPath());
+		QString lang_filename = "fet_"+FET_LANGUAGE;
+		QStringList lang_dirs;
+		lang_dirs << QDir::currentPath()
+			<< QCoreApplication::applicationDirPath()
+			<< QStandardPaths::standardLocations(QStandardPaths::AppDataLocation);
+
+		bool translation_loaded=false;
+		for (int i=0; !translation_loaded && i < lang_dirs.size(); i++) {
+			translation_loaded=translator.load(lang_filename, lang_dirs[i]);
+			if (!translation_loaded)
+				translation_loaded=translator.load(lang_filename, lang_dirs[i]+"/translations");
+		}
+
 		if(!translation_loaded){
-			translation_loaded=translator.load("fet_"+FET_LANGUAGE, QCoreApplication::applicationDirPath()+"/translations");
-			if(!translation_loaded){
-				if(d.exists()){
-					translation_loaded=translator.load("fet_"+FET_LANGUAGE, "/usr/share/fet/translations");
-				}
+			QString message("Translation for specified language not loaded - maybe the translation file is missing - setting the language to en_US (US English)");
+			message += "\n\n";
+			message += QString("FET searched for the translation file '%1' in the following directory list, "
+					   "but could not find it:\n")
+					   .arg("fet_"+FET_LANGUAGE+".qm");
+			for (int i=0; !translation_loaded && i < lang_dirs.size(); i++) {
+				message += QDir::toNativeSeparators(lang_dirs[i]) + "\n";
+				message += QDir::toNativeSeparators(lang_dirs[i] + "/translations") + "\n";
 			}
+			FetMessage::warning(parent, QString("FET warning"), message);
+
+			FET_LANGUAGE="en_US";
 		}
 	}
 	else{
@@ -512,24 +529,6 @@ void setLanguage(QWidget* parent)
 			 QString("Specified language is incorrect - making it en_US (US English)"));
 			FET_LANGUAGE="en_US";
 		}
-		
-		assert(FET_LANGUAGE=="en_US");
-		
-		translation_loaded=true;
-	}
-	
-	if(!translation_loaded){
-		FetMessage::warning(parent, QString("FET warning"),
-		 QString("Translation for specified language not loaded - maybe the translation file is missing - setting the language to en_US (US English)")
-		 +"\n\n"+
-		 QString("FET searched for the translation file %1 in the directory %2, then in the directory %3 and "
-		 "then in the directory %4 (under systems that support such a directory), but could not find it.")
-		 .arg("fet_"+FET_LANGUAGE+".qm")
-		 .arg(QDir::toNativeSeparators(QCoreApplication::applicationDirPath()))
-		 .arg(QDir::toNativeSeparators(QCoreApplication::applicationDirPath()+"/translations"))
-		 .arg("/usr/share/fet/translations")
-		 );
-		FET_LANGUAGE="en_US";
 	}
 	
 	QLocale::setDefault(QLocale(FET_LANGUAGE));
