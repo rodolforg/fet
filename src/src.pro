@@ -468,7 +468,10 @@ SOURCES += \
 	interface/modifyconstraintstudentssetminrestinghoursform.cpp \
 	interface/constraintstudentsminrestinghoursform.cpp \
 	interface/addconstraintstudentsminrestinghoursform.cpp \
-	interface/modifyconstraintstudentsminrestinghoursform.cpp
+	interface/modifyconstraintstudentsminrestinghoursform.cpp \
+	\
+	interface/constraint_basedialog.cpp \
+	interface/teacherstudentsetsubjectactivitytag_filterwidget.cpp \
 
 HEADERS += \
 	engine/timetableexport.h \
@@ -943,7 +946,10 @@ HEADERS += \
 	interface/modifyconstraintstudentssetminrestinghoursform.h \
 	interface/constraintstudentsminrestinghoursform.h \
 	interface/addconstraintstudentsminrestinghoursform.h \
-	interface/modifyconstraintstudentsminrestinghoursform.h
+	interface/modifyconstraintstudentsminrestinghoursform.h \
+	\
+	interface/constraint_basedialog.h \
+	interface/teacherstudentsetsubjectactivitytag_filterwidget.h \
 
 FORMS += \
 	interface/fetmainform_template.ui \
@@ -1373,7 +1379,10 @@ FORMS += \
 	interface/modifyconstraintstudentssetminrestinghoursform_template.ui \
 	interface/constraintstudentsminrestinghoursform_template.ui \
 	interface/addconstraintstudentsminrestinghoursform_template.ui \
-	interface/modifyconstraintstudentsminrestinghoursform_template.ui
+	interface/modifyconstraintstudentsminrestinghoursform_template.ui \
+	\
+	interface/constraint_basedialog_template.ui \
+	interface/teacherstudentsetsubjectactivitytag_filterwidget.ui \
 
 TRANSLATIONS += \
 	../translations/fet_ar.ts \

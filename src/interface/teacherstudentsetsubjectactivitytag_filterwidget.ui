@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TeacherStudentSetSubjectActivityTag_FilterWidget</class>
+ <widget class="QWidget" name="TeacherStudentSetSubjectActivityTag_FilterWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <widget class="QGroupBox" name="filterGroupBox">
+     <property name="title">
+      <string>Filter</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QLabel" name="teachersLabel">
+        <property name="text">
+         <string>Teacher</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="studentsComboBox"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="studentsLabel">
+        <property name="text">
+         <string>Students set</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="teachersComboBox"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="subjectsLabel">
+        <property name="text">
+         <string>Subject</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="subjectsComboBox"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="activityTagsLabel">
+        <property name="text">
+         <string>Activity Tag</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="activityTagsComboBox"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>studentsComboBox</tabstop>
+  <tabstop>teachersComboBox</tabstop>
+  <tabstop>subjectsComboBox</tabstop>
+  <tabstop>activityTagsComboBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
