@@ -1213,7 +1213,6 @@ FORMS += \
 	interface/addconstraintactivityendsstudentsdayform_template.ui \
 	interface/modifyconstraintactivityendsstudentsdayform_template.ui \
 	\
-	interface/constraintactivitiesendstudentsdayform_template.ui \
 	interface/addconstraintactivitiesendstudentsdayform_template.ui \
 	interface/modifyconstraintactivitiesendstudentsdayform_template.ui \
 	\
