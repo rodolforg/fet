@@ -27,7 +27,7 @@ ConstraintBaseDialog::ConstraintBaseDialog(QWidget* parent): QDialog(parent),
 
 	helpPushButton->setVisible(false);
 
-	instructionsLabel->setText("");
+	instructionsLabel->setVisible(false);
 
 	constraintsListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
 
@@ -194,5 +194,6 @@ QWidget *ConstraintBaseDialog::getFilterWidget() const
 
 void ConstraintBaseDialog::setInstructionText(QString msg)
 {
+	instructionsLabel->setHidden(msg.isEmpty());
 	instructionsLabel->setText(msg);
 }
