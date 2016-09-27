@@ -49,6 +49,7 @@ ConstraintBaseDialog::ConstraintBaseDialog(QWidget* parent): QDialog(parent),
 ConstraintBaseDialog::~ConstraintBaseDialog()
 {
 	saveFETDialogGeometry(this);
+	delete filterWidget;
 }
 
 void ConstraintBaseDialog::setFilterWidget(QWidget *widget)
@@ -184,6 +185,11 @@ void ConstraintBaseDialog::setHelpText(QString msg) {
 void ConstraintBaseDialog::help()
 {
 	LongTextMessageBox::largeInformation(this, tr("FET help"), helpMsg);
+}
+
+QWidget *ConstraintBaseDialog::getFilterWidget() const
+{
+	return filterWidget;
 }
 
 void ConstraintBaseDialog::setInstructionText(QString msg)

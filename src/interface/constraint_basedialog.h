@@ -43,6 +43,7 @@ protected:
 	virtual bool filterOk(const TimeConstraint *ctr) const = 0;
 	void filterChanged();
 	void setFilterWidget(QWidget *widget);
+	QWidget *getFilterWidget() const;
 
 	TimeConstraintsList visibleConstraintsList;
 

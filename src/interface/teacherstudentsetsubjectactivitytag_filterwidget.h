@@ -18,10 +18,10 @@ signals:
 public:
 	explicit TeacherStudentSetSubjectActivityTag_FilterWidget(const Rules &rules);
 	~TeacherStudentSetSubjectActivityTag_FilterWidget();
-	QString teacher();
-	QString studentsSet();
-	QString subject();
-	QString activityTag();
+	QString teacher() const;
+	QString studentsSet() const;
+	QString subject() const;
+	QString activityTag() const;
 
 private:
 	Ui::TeacherStudentSetSubjectActivityTag_FilterWidget *ui;

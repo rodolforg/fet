@@ -69,22 +69,22 @@ void TeacherStudentSetSubjectActivityTag_FilterWidget::onChange()
 	emit FilterChanged();
 }
 
-QString TeacherStudentSetSubjectActivityTag_FilterWidget::teacher()
+QString TeacherStudentSetSubjectActivityTag_FilterWidget::teacher() const
 {
 	return ui->teachersComboBox->currentText();
 }
 
-QString TeacherStudentSetSubjectActivityTag_FilterWidget::studentsSet()
+QString TeacherStudentSetSubjectActivityTag_FilterWidget::studentsSet() const
 {
 	return ui->studentsComboBox->currentText();
 }
 
-QString TeacherStudentSetSubjectActivityTag_FilterWidget::subject()
+QString TeacherStudentSetSubjectActivityTag_FilterWidget::subject() const
 {
 	return ui->subjectsComboBox->currentText();
 }
 
-QString TeacherStudentSetSubjectActivityTag_FilterWidget::activityTag()
+QString TeacherStudentSetSubjectActivityTag_FilterWidget::activityTag() const
 {
 	return ui->activityTagsComboBox->currentText();
 }
