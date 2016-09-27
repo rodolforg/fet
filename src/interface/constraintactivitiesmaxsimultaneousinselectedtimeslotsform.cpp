@@ -15,111 +15,42 @@
  *                                                                         *
  ***************************************************************************/
 
-#include <QMessageBox>
-
-#include "longtextmessagebox.h"
-
 #include "constraintactivitiesmaxsimultaneousinselectedtimeslotsform.h"
 #include "addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.h"
 #include "modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.h"
 
-#include <QListWidget>
-#include <QScrollBar>
-#include <QAbstractItemView>
+#include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
-ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm(QWidget* parent): QDialog(parent)
+ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm(QWidget* parent): ConstraintBaseDialog(parent)
 {
-	setupUi(this);
+	//: This is the title of the dialog to see the list of all constraints of this type
+	setWindowTitle(QCoreApplication::translate("ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm_template", "Constraints activities max simultaneous in selected time slots"));
 
-	currentConstraintTextEdit->setReadOnly(true);
+	setInstructionText(QCoreApplication::translate("ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm_template", "IMPORTANT: Please do not overuse this constraint, because the generation may be slowed down very much. Please read Help for more details."));
+	setHelp();
 
-	modifyConstraintPushButton->setDefault(true);
-
-	constraintsListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
-
-	connect(constraintsListWidget, SIGNAL(currentRowChanged(int)), this, SLOT(constraintChanged(int)));
-	connect(addConstraintPushButton, SIGNAL(clicked()), this, SLOT(addConstraint()));
-	connect(closePushButton, SIGNAL(clicked()), this, SLOT(close()));
-	connect(removeConstraintPushButton, SIGNAL(clicked()), this, SLOT(removeConstraint()));
-	connect(modifyConstraintPushButton, SIGNAL(clicked()), this, SLOT(modifyConstraint()));
-	connect(constraintsListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(modifyConstraint()));
-
-	connect(teachersComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
-	connect(studentsComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
-	connect(subjectsComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
-	connect(activityTagsComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
-
-	connect(helpPushButton, SIGNAL(clicked()), this, SLOT(help()));
-
-	centerWidgetOnScreen(this);
-	restoreFETDialogGeometry(this);
-
-	QSize tmp1=teachersComboBox->minimumSizeHint();
-	Q_UNUSED(tmp1);
-	QSize tmp2=studentsComboBox->minimumSizeHint();
-	Q_UNUSED(tmp2);
-	QSize tmp3=subjectsComboBox->minimumSizeHint();
-	Q_UNUSED(tmp3);
-	QSize tmp4=activityTagsComboBox->minimumSizeHint();
-	Q_UNUSED(tmp4);
-	
-/////////////
-	teachersComboBox->addItem("");
-	for(int i=0; i<gt.rules.teachersList.size(); i++){
-		Teacher* tch=gt.rules.teachersList[i];
-		teachersComboBox->addItem(tch->name);
-	}
-	teachersComboBox->setCurrentIndex(0);
-
-	subjectsComboBox->addItem("");
-	for(int i=0; i<gt.rules.subjectsList.size(); i++){
-		Subject* sb=gt.rules.subjectsList[i];
-		subjectsComboBox->addItem(sb->name);
-	}
-	subjectsComboBox->setCurrentIndex(0);
-
-	activityTagsComboBox->addItem("");
-	for(int i=0; i<gt.rules.activityTagsList.size(); i++){
-		ActivityTag* st=gt.rules.activityTagsList[i];
-		activityTagsComboBox->addItem(st->name);
-	}
-	activityTagsComboBox->setCurrentIndex(0);
-
-	studentsComboBox->addItem("");
-	for(int i=0; i<gt.rules.yearsList.size(); i++){
-		StudentsYear* sty=gt.rules.yearsList[i];
-		studentsComboBox->addItem(sty->name);
-		for(int j=0; j<sty->groupsList.size(); j++){
-			StudentsGroup* stg=sty->groupsList[j];
-			studentsComboBox->addItem(stg->name);
-			if(SHOW_SUBGROUPS_IN_COMBO_BOXES) for(int k=0; k<stg->subgroupsList.size(); k++){
-				StudentsSubgroup* sts=stg->subgroupsList[k];
-				studentsComboBox->addItem(sts->name);
-			}
-		}
-	}
-	studentsComboBox->setCurrentIndex(0);
-///////////////
+	TeacherStudentSetSubjectActivityTag_FilterWidget *filterWidget = new TeacherStudentSetSubjectActivityTag_FilterWidget(gt.rules);
+	setFilterWidget(filterWidget);
+	connect(filterWidget, &TeacherStudentSetSubjectActivityTag_FilterWidget::FilterChanged, this, &ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::filterChanged);
 
 	this->filterChanged();
 }
 
 ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::~ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm()
 {
-	saveFETDialogGeometry(this);
 }
 
-bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::filterOk(TimeConstraint* ctr)
+bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::filterOk(const TimeConstraint* ctr) const
 {
 	if(ctr->type!=CONSTRAINT_ACTIVITIES_MAX_SIMULTANEOUS_IN_SELECTED_TIME_SLOTS)
 		return false;
 
-	ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots* c=(ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots*) ctr;
-	
-	QString tn=teachersComboBox->currentText();
-	QString sbn=subjectsComboBox->currentText();
-	QString sbtn=activityTagsComboBox->currentText();
-	QString stn=studentsComboBox->currentText();
+	const ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots* c=(const ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots*) ctr;
+	const TeacherStudentSetSubjectActivityTag_FilterWidget * filterWidget = static_cast<TeacherStudentSetSubjectActivityTag_FilterWidget*>(getFilterWidget());
+	QString tn=filterWidget->teacher();
+	QString sbn=filterWidget->subject();
+	QString sbtn=filterWidget->activityTag();
+	QString stn=filterWidget->studentsSet();
 	
 	if(tn=="" && sbn=="" && sbtn=="" && stn=="")
 		return true;
@@ -182,118 +113,19 @@ bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::filterOk(TimeCo
 		return false;
 }
 
-void ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::filterChanged()
+QDialog * ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::createAddDialog()
 {
-	this->visibleConstraintsList.clear();
-	constraintsListWidget->clear();
-	for(int i=0; i<gt.rules.timeConstraintsList.size(); i++){
-		TimeConstraint* ctr=gt.rules.timeConstraintsList[i];
-		if(filterOk(ctr)){
-			visibleConstraintsList.append(ctr);
-			constraintsListWidget->addItem(ctr->getDescription(gt.rules));
-		}
-	}
-	
-	if(constraintsListWidget->count()>0)
-		constraintsListWidget->setCurrentRow(0);
-	else
-		currentConstraintTextEdit->setPlainText(QString(""));
+	return new AddConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm(this);
 }
 
-void ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::constraintChanged(int index)
+QDialog * ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::createModifyDialog(TimeConstraint *ctr)
 {
-	if(index<0){
-		currentConstraintTextEdit->setPlainText("");
-		return;
-	}
-	assert(index<this->visibleConstraintsList.size());
-	TimeConstraint* ctr=this->visibleConstraintsList.at(index);
-	assert(ctr!=NULL);
-	currentConstraintTextEdit->setPlainText(ctr->getDetailedDescription(gt.rules));
+	return new ModifyConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm(this, (ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots*)ctr);
 }
 
-void ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::addConstraint()
+void ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::setHelp()
 {
-	AddConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-
-	filterChanged();
-	
-	constraintsListWidget->setCurrentRow(constraintsListWidget->count()-1);
-}
-
-void ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::modifyConstraint()
-{
-	int valv=constraintsListWidget->verticalScrollBar()->value();
-	int valh=constraintsListWidget->horizontalScrollBar()->value();
-
-	int i=constraintsListWidget->currentRow();
-	if(i<0){
-		QMessageBox::information(this, tr("FET information"), tr("Invalid selected constraint"));
-		return;
-	}
-	TimeConstraint* ctr=this->visibleConstraintsList.at(i);
-
-	ModifyConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm form(this, (ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots*)ctr);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-
-	filterChanged();
-	
-	constraintsListWidget->verticalScrollBar()->setValue(valv);
-	constraintsListWidget->horizontalScrollBar()->setValue(valh);
-	
-	if(i>=constraintsListWidget->count())
-		i=constraintsListWidget->count()-1;
-		
-	if(i>=0)
-		constraintsListWidget->setCurrentRow(i);
-	else
-		this->constraintChanged(-1);
-}
-
-void ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::removeConstraint()
-{
-	int i=constraintsListWidget->currentRow();
-	if(i<0){
-		QMessageBox::information(this, tr("FET information"), tr("Invalid selected constraint"));
-		return;
-	}
-	TimeConstraint* ctr=this->visibleConstraintsList.at(i);
 	QString s;
-	s=tr("Remove constraint?");
-	s+="\n\n";
-	s+=ctr->getDetailedDescription(gt.rules);
-	
-	QListWidgetItem* item;
-
-	switch( LongTextMessageBox::confirmation( this, tr("FET confirmation"),
-		s, tr("Yes"), tr("No"), 0, 0, 1 ) ){
-	case 0: // The user clicked the OK button or pressed Enter
-		gt.rules.removeTimeConstraint(ctr);
-		
-		visibleConstraintsList.removeAt(i);
-		constraintsListWidget->setCurrentRow(-1);
-		item=constraintsListWidget->takeItem(i);
-		delete item;
-
-		break;
-	case 1: // The user clicked the Cancel button or pressed Escape
-		break;
-	}
-	
-	if(i>=constraintsListWidget->count())
-		i=constraintsListWidget->count()-1;
-	if(i>=0)
-		constraintsListWidget->setCurrentRow(i);
-	else
-		this->constraintChanged(-1);
-}
-
-void ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::help()
-{
-	QString s=QString("");
 
 	s+=tr("IMPORTANT NOTE: Please use this constraint ONLY when strictly necessary, when it is really useful, when it has effect, "
 	 "when it is not implied by the other constraints, and in a non-redundant way. Otherwise it may slow down very much the generation.");
@@ -312,6 +144,6 @@ void ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::help()
 	s+=QString(" ");
 	s+=tr("Note that if you have activities with two or more teachers, you might need to use a trick for that: add one (or more) dummy activities, "
 	 "no teachers/no students, same starting time with the initial activity.");
-	
-	LongTextMessageBox::largeInformation(this, tr("FET help"), s);
+
+	setHelpText(s);
 }

@@ -1291,7 +1291,6 @@ FORMS += \
 	interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui \
 	interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui \
 	\
-	interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui \
 	interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui \
 	interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui \
 	\
