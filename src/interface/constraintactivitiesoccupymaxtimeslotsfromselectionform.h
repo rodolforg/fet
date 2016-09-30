@@ -18,30 +18,20 @@
 #ifndef CONSTRAINTACTIVITIESOCCUPYMAXTIMESLOTSFROMSELECTIONFORM_H
 #define CONSTRAINTACTIVITIESOCCUPYMAXTIMESLOTSFROMSELECTIONFORM_H
 
-#include "ui_constraintactivitiesoccupymaxtimeslotsfromselectionform_template.h"
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
+#include "constraint_basedialog.h"
 
-class ConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm : public QDialog, Ui::ConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm_template  {
+class ConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm : public ConstraintBaseDialog  {
 	Q_OBJECT
 public:
-	TimeConstraintsList visibleConstraintsList;
-
 	ConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm(QWidget* parent);
 	~ConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm();
 
-	bool filterOk(TimeConstraint* ctr);
+protected:
+	virtual QDialog *createAddDialog();
+	virtual QDialog *createModifyDialog(TimeConstraint *ctr);
+	virtual bool filterOk(const TimeConstraint *ctr) const;
 
-public slots:
-	void constraintChanged(int index);
-	void addConstraint();
-	void modifyConstraint();
-	void removeConstraint();
-
-	void filterChanged();
-	
-	void help();
+	void setHelp();
 };
 
 #endif

@@ -1286,7 +1286,6 @@ FORMS += \
 	interface/addconstraintactivitiesnotoverlappingform_template.ui \
 	interface/modifyconstraintactivitiesnotoverlappingform_template.ui \
 	\
-	interface/constraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui \
 	interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui \
 	interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui \
 	\
