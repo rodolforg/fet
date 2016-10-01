@@ -1111,7 +1111,6 @@ FORMS += \
 	interface/constraintactivitiessamestartinghourform_template.ui \
 	interface/addconstraintactivitiessamestartinghourform_template.ui \
 	\
-	interface/constraintactivitiessamestartingdayform_template.ui \
 	interface/addconstraintactivitiessamestartingdayform_template.ui \
 	interface/modifyconstraintactivitiessamestartingdayform_template.ui \
 	\

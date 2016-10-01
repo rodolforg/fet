@@ -15,68 +15,23 @@
  *                                                                         *
  ***************************************************************************/
 
-#include <QMessageBox>
-
-#include "longtextmessagebox.h"
-
 #include "constraintactivitiessamestartingdayform.h"
 #include "addconstraintactivitiessamestartingdayform.h"
 #include "modifyconstraintactivitiessamestartingdayform.h"
 
-#include <QListWidget>
-#include <QScrollBar>
-#include <QAbstractItemView>
-
-ConstraintActivitiesSameStartingDayForm::ConstraintActivitiesSameStartingDayForm(QWidget* parent): QDialog(parent)
+ConstraintActivitiesSameStartingDayForm::ConstraintActivitiesSameStartingDayForm(QWidget* parent): ConstraintBaseDialog(parent)
 {
-	setupUi(this);
+	//: This is the title of the dialog to see the list of all constraints of this type
+	setWindowTitle(QCoreApplication::translate("ConstraintActivitiesSameStartingDayForm_template", "Constraints activities same starting day"));
 
-	currentConstraintTextEdit->setReadOnly(true);
+	setInstructionText(QCoreApplication::translate("ConstraintActivitiesSameStartingDayForm_template", "Please try to read Help/Important tips, advice 2). It is IMPORTANT to remove redundant min days constraints after adding constraints same starting day. Please also click Help button here for information."));
+	setHelp();
 
-	modifyConstraintPushButton->setDefault(true);
-	
-	constraintsListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
-
-	connect(addConstraintPushButton, SIGNAL(clicked()), this, SLOT(addConstraint()));
-	connect(removeConstraintPushButton, SIGNAL(clicked()), this, SLOT(removeConstraint()));
-	connect(closePushButton, SIGNAL(clicked()), this, SLOT(close()));
-	connect(constraintsListWidget, SIGNAL(currentRowChanged(int)), this, SLOT(constraintChanged(int)));
-	connect(modifyConstraintPushButton, SIGNAL(clicked()), this, SLOT(modifyConstraint()));
-	connect(constraintsListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(modifyConstraint()));
-	connect(helpPushButton, SIGNAL(clicked()), this, SLOT(help()));
-
-	centerWidgetOnScreen(this);
-	restoreFETDialogGeometry(this);
-	
-	this->refreshConstraintsListWidget();
+//	populateFilters();
+	filterChanged();
 }
 
-ConstraintActivitiesSameStartingDayForm::~ConstraintActivitiesSameStartingDayForm()
-{
-	saveFETDialogGeometry(this);
-}
-
-void ConstraintActivitiesSameStartingDayForm::refreshConstraintsListWidget()
-{
-	this->visibleConstraintsList.clear();
-	constraintsListWidget->clear();
-	for(int i=0; i<gt.rules.timeConstraintsList.size(); i++){
-		TimeConstraint* ctr=gt.rules.timeConstraintsList[i];
-		if(filterOk(ctr)){
-			QString s;
-			s=ctr->getDescription(gt.rules);
-			visibleConstraintsList.append(ctr);
-			constraintsListWidget->addItem(s);
-		}
-	}
-
-	if(constraintsListWidget->count()>0)
-		constraintsListWidget->setCurrentRow(0);
-	else
-		this->constraintChanged(-1);
-}
-
-bool ConstraintActivitiesSameStartingDayForm::filterOk(TimeConstraint* ctr)
+bool ConstraintActivitiesSameStartingDayForm::filterOk(const TimeConstraint* ctr) const
 {
 	if(ctr->type==CONSTRAINT_ACTIVITIES_SAME_STARTING_DAY)
 		return true;
@@ -84,100 +39,17 @@ bool ConstraintActivitiesSameStartingDayForm::filterOk(TimeConstraint* ctr)
 		return false;
 }
 
-void ConstraintActivitiesSameStartingDayForm::constraintChanged(int index)
+QDialog * ConstraintActivitiesSameStartingDayForm::createAddDialog()
 {
-	if(index<0){
-		currentConstraintTextEdit->setPlainText("");
-		return;
-	}
-	QString s;
-	assert(index<this->visibleConstraintsList.size());
-	TimeConstraint* ctr=this->visibleConstraintsList.at(index);
-	assert(ctr!=NULL);
-	s=ctr->getDetailedDescription(gt.rules);
-	currentConstraintTextEdit->setPlainText(s);
+	return new AddConstraintActivitiesSameStartingDayForm(this);
 }
 
-void ConstraintActivitiesSameStartingDayForm::addConstraint()
+QDialog * ConstraintActivitiesSameStartingDayForm::createModifyDialog(TimeConstraint *ctr)
 {
-	AddConstraintActivitiesSameStartingDayForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-
-	this->refreshConstraintsListWidget();
-	
-	constraintsListWidget->setCurrentRow(constraintsListWidget->count()-1);
+	return new ModifyConstraintActivitiesSameStartingDayForm(this, (ConstraintActivitiesSameStartingDay*)ctr);
 }
 
-void ConstraintActivitiesSameStartingDayForm::modifyConstraint()
-{
-	int valv=constraintsListWidget->verticalScrollBar()->value();
-	int valh=constraintsListWidget->horizontalScrollBar()->value();
-
-	int i=constraintsListWidget->currentRow();
-	if(i<0){
-		QMessageBox::information(this, tr("FET information"), tr("Invalid selected constraint"));
-		return;
-	}
-	TimeConstraint* ctr=this->visibleConstraintsList.at(i);
-
-	ModifyConstraintActivitiesSameStartingDayForm form(this, (ConstraintActivitiesSameStartingDay*)ctr);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-
-	refreshConstraintsListWidget();
-
-	constraintsListWidget->verticalScrollBar()->setValue(valv);
-	constraintsListWidget->horizontalScrollBar()->setValue(valh);
-	
-	if(i>=constraintsListWidget->count())
-		i=constraintsListWidget->count()-1;
-	
-	if(i>=0)
-		constraintsListWidget->setCurrentRow(i);
-	else
-		this->constraintChanged(-1);
-}
-
-void ConstraintActivitiesSameStartingDayForm::removeConstraint()
-{
-	int i=constraintsListWidget->currentRow();
-	if(i<0){
-		QMessageBox::information(this, tr("FET information"), tr("Invalid selected constraint"));
-		return;
-	}
-	TimeConstraint* ctr=this->visibleConstraintsList.at(i);
-	QString s;
-	s=tr("Remove constraint?");
-	s+="\n\n";
-	s+=ctr->getDetailedDescription(gt.rules);
-	
-	QListWidgetItem* item;
-
-	switch( LongTextMessageBox::confirmation( this, tr("FET confirmation"),
-		s, tr("Yes"), tr("No"), 0, 0, 1 ) ){
-	case 0: // The user clicked the OK button or pressed Enter
-		gt.rules.removeTimeConstraint(ctr);
-		
-		visibleConstraintsList.removeAt(i);
-		constraintsListWidget->setCurrentRow(-1);
-		item=constraintsListWidget->takeItem(i);
-		delete item;
-		
-		break;
-	case 1: // The user clicked the Cancel button or pressed Escape
-		break;
-	}
-	
-	if(i>=constraintsListWidget->count())
-		i=constraintsListWidget->count()-1;
-	if(i>=0)
-		constraintsListWidget->setCurrentRow(i);
-	else
-		this->constraintChanged(-1);
-}
-
-void ConstraintActivitiesSameStartingDayForm::help()
+void ConstraintActivitiesSameStartingDayForm::setHelp()
 {
 	QString s;
 
@@ -186,5 +58,5 @@ void ConstraintActivitiesSameStartingDayForm::help()
 	" Also, you don't have to do that after each added constraint, but only once after adding more constraints of this type."
 	" Please read Help/Important tips - tip number 2 for details");
 
-	LongTextMessageBox::largeInformation(this, tr("FET help"), s);
+	setHelpText(s);
 }
