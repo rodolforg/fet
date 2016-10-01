@@ -1105,7 +1105,6 @@ FORMS += \
 	interface/modifyconstraintsubactivitiespreferredtimeslotsform_template.ui \
 	interface/modifyconstraintsubactivitiespreferredstartingtimesform_template.ui \
 	\
-	interface/constraintactivitiessamestartingtimeform_template.ui \
 	interface/addconstraintactivitiessamestartingtimeform_template.ui \
 	\
 	interface/addconstraintactivitiessamestartinghourform_template.ui \
