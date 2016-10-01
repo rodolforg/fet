@@ -28,7 +28,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QComboBox" name="studentsComboBox"/>
+       <widget class="QComboBox" name="teachersComboBox"/>
       </item>
       <item>
        <widget class="QLabel" name="studentsLabel">
@@ -38,7 +38,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QComboBox" name="teachersComboBox"/>
+       <widget class="QComboBox" name="studentsComboBox"/>
       </item>
       <item>
        <widget class="QLabel" name="subjectsLabel">
@@ -66,8 +66,8 @@
   </layout>
  </widget>
  <tabstops>
-  <tabstop>studentsComboBox</tabstop>
   <tabstop>teachersComboBox</tabstop>
+  <tabstop>studentsComboBox</tabstop>
   <tabstop>subjectsComboBox</tabstop>
   <tabstop>activityTagsComboBox</tabstop>
  </tabstops>
