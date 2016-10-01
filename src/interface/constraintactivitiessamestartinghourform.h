@@ -18,28 +18,18 @@
 #ifndef CONSTRAINTACTIVITIESSAMESTARTINGHOURFORM_H
 #define CONSTRAINTACTIVITIESSAMESTARTINGHOURFORM_H
 
-#include "ui_constraintactivitiessamestartinghourform_template.h"
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
+#include "constraint_basedialog.h"
 
-class ConstraintActivitiesSameStartingHourForm : public QDialog, Ui::ConstraintActivitiesSameStartingHourForm_template  {
+class ConstraintActivitiesSameStartingHourForm : public ConstraintBaseDialog  {
 	Q_OBJECT
 public:
-	TimeConstraintsList visibleConstraintsList;
-
 	ConstraintActivitiesSameStartingHourForm(QWidget* parent);
-	~ConstraintActivitiesSameStartingHourForm();
-	
-	void refreshConstraintsListWidget();
 
-	bool filterOk(TimeConstraint* ctr);
+	bool filterOk(const TimeConstraint *ctr) const;
 
-public slots:
-	void constraintChanged(int index);
-	void addConstraint();
-	void removeConstraint();
-	void modifyConstraint();
+protected:
+	virtual QDialog *createAddDialog();
+	virtual QDialog *createModifyDialog(TimeConstraint *ctr);
 };
 
 #endif
