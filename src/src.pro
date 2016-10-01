@@ -1095,7 +1095,6 @@ FORMS += \
 	interface/roomsform_template.ui \
 	interface/buildingsform_template.ui \
 	\
-	interface/constraintactivitiespreferredtimeslotsform_template.ui \
 	interface/addconstraintactivitiespreferredtimeslotsform_template.ui \
 	interface/addconstraintactivitiespreferredstartingtimesform_template.ui \
 	\
