@@ -157,13 +157,12 @@ void GenerateMultipleThread::run()
 			QString tmp;
 			genMulti.c.fitness(gt.rules, &tmp);
 			
-			s=tr("Timetable has %1 soft conflicts factor and was generated in %2 hours, %3 minutes and %4 seconds")
+			s=tr("Timetable breaks %1 soft constraints, has %2 soft conflicts total, and was generated in %3 hours, %4 minutes and %5 seconds.")
+			 .arg(genMulti.c.conflictsWeightList.count())
 			 .arg(CustomFETString::number(genMulti.c.conflictsTotal))
 			 .arg(hours)
 			 .arg(minutes)
 			 .arg(seconds);
-
-			s+=QString(".");
 		}
 		myMutex.unlock();
 		
@@ -350,9 +349,13 @@ void TimetableGenerateMultipleForm::timetableGenerated(int timetable, const QStr
 		//update the string representing the conflicts
 		conflictsStringTitle=tr("Soft conflicts", "Title of dialog");
 		conflictsString = "";
-		conflictsString+=tr("Total soft conflicts:");
-		conflictsString+=" ";
-		conflictsString+=CustomFETString::number(best_solution.conflictsTotal);
+
+		conflictsString+=tr("Number of broken soft constraints: %1").arg(best_solution.conflictsWeightList.count());
+
+		conflictsString+="\n";
+
+		conflictsString+=tr("Total soft conflicts: %1").arg(CustomFETString::number(best_solution.conflictsTotal));
+
 		conflictsString+="\n";
 		conflictsString += tr("Soft conflicts listing (in decreasing order):")+"\n";
 
@@ -437,7 +440,7 @@ void TimetableGenerateMultipleForm::simulationFinished()
 	s%=60;
 
 	QString ms=QString("");
-	ms+=TimetableGenerateMultipleForm::tr("Simulation terminated successfully!");
+	ms+=TimetableGenerateMultipleForm::tr("Simulation finished!");
 	ms+=QString("\n\n");
 	ms+=TimetableGenerateMultipleForm::tr("The results were saved in the directory %1").arg(QDir::toNativeSeparators(destDir));
 	ms+=QString("\n\n");
