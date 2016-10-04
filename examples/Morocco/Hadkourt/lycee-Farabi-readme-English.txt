@@ -113,7 +113,7 @@ Choose  "Max days per week for a teacher", then enter 10 days
 
 7. If there is no school on Saturday afternoon
 ==============================================
-If week study ends at saturady morning so there is no no school on Saturday afternoon, do the followins:
+If week study ends at saturady morning so there is no no school on Saturday afternoon, do the following:
 Go to Time ---> Students ---> A student set not available times
 press "Add"
 Choose a year, mark the 4 slots on Saturday afteroon with "X" then press "Add"
