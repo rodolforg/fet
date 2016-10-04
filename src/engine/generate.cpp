@@ -2354,6 +2354,8 @@ inline bool Generate::chooseRoom(const QList<int>& listOfRooms, const QList<int>
 			//The 'mapr' custom version disables the test below and always does an .append(q). But this
 			//gives a very bad behavior for the file examples/Egypt/Dakahlia/institution-2012-2013.fet
 			//(usually, the file seems not to solve anymore, and one time it solved very slowly).
+			//Update 2016-08-26: Also mapr for zt3's input is working much better with a code _with_ the test below
+			//(which does not always .append(q).
 			if(nConflActivitiesRooms.at(q)==optConflActivities){
 				allowedRoomsIndex.append(q);
 			}
