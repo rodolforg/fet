@@ -210,6 +210,8 @@ void TimetableGenerateForm::stop()
 	//update the string representing the conflicts
 	conflictsStringTitle=TimetableGenerateForm::tr("Conflicts", "Title of dialog");
 	conflictsString="";
+	conflictsString+=tr("Number of broken constraints: %1").arg(c.conflictsWeightList.count());
+	conflictsString+="\n";
 	conflictsString+=TimetableGenerateForm::tr("Total conflicts:");
 	conflictsString+=" ";
 	conflictsString+=CustomFETString::number(c.conflictsTotal);
@@ -361,6 +363,8 @@ void TimetableGenerateForm::stopHighest()
 	//update the string representing the conflicts
 	conflictsStringTitle=TimetableGenerateForm::tr("Conflicts", "Title of dialog");
 	conflictsString="";
+	conflictsString+=tr("Number of broken constraints: %1").arg(c.conflictsWeightList.count());
+	conflictsString+="\n";
 	conflictsString+=TimetableGenerateForm::tr("Total conflicts:");
 	conflictsString+=" ";
 	conflictsString+=CustomFETString::number(c.conflictsTotal);
@@ -491,6 +495,8 @@ void TimetableGenerateForm::impossibleToSolve()
 	conflictsStringTitle=TimetableGenerateForm::tr("Conflicts", "Title of dialog");
 	conflictsString="";
 	conflictsString+=TimetableGenerateForm::tr("Total conflicts:");
+	conflictsString+=tr("Number of broken constraints: %1").arg(c.conflictsWeightList.count());
+	conflictsString+="\n";
 	conflictsString+=" ";
 	conflictsString+=CustomFETString::number(c.conflictsTotal);
 	conflictsString+="\n";
@@ -611,6 +617,11 @@ void TimetableGenerateForm::simulationFinished()
 	//update the string representing the conflicts
 	conflictsStringTitle=TimetableGenerateForm::tr("Soft conflicts", "Title of dialog");
 	conflictsString="";
+
+	conflictsString+=tr("Number of broken soft constraints: %1").arg(c.conflictsWeightList.count());
+
+	conflictsString+="\n";
+
 	conflictsString+=tr("Total soft conflicts:");
 	conflictsString+=" ";
 	conflictsString+=CustomFETString::number(c.conflictsTotal);
@@ -650,6 +661,8 @@ void TimetableGenerateForm::simulationFinished()
 	QString s=QString("");
 	s+=tr("Generation successful!");
 	s+=QString("\n\n");
+	s+=tr("Number of broken soft constraints: %1").arg(c.conflictsWeightList.count());
+	s+=QString("\n");
 	s+=tr("Weighted soft conflicts: %1").arg(CustomFETString::number(c.conflictsTotal));
 	s+=QString("\n\n");
 	s+=tr("Results were saved in the directory %1").arg(QDir::toNativeSeparators(OUTPUT_DIR+FILE_SEP+"timetables"+kk));
@@ -787,6 +800,8 @@ void TimetableGenerateForm::write(){
 	//update the string representing the conflicts
 	conflictsStringTitle=TimetableGenerateForm::tr("Conflicts", "Title of dialog");
 	conflictsString="";
+	conflictsString+=tr("Number of broken constraints: %1").arg(c.conflictsWeightList.count());
+	conflictsString+="\n";
 	conflictsString+=TimetableGenerateForm::tr("Total conflicts:");
 	conflictsString+=" ";
 	conflictsString+=CustomFETString::number(c.conflictsTotal);
@@ -834,6 +849,8 @@ void TimetableGenerateForm::writeHighestStage(){
 	//update the string representing the conflicts
 	conflictsStringTitle=TimetableGenerateForm::tr("Conflicts", "Title of dialog");
 	conflictsString="";
+	conflictsString+=tr("Number of broken constraints: %1").arg(c.conflictsWeightList.count());
+	conflictsString+="\n";
 	conflictsString+=TimetableGenerateForm::tr("Total conflicts:");
 	conflictsString+=" ";
 	conflictsString+=CustomFETString::number(c.conflictsTotal);

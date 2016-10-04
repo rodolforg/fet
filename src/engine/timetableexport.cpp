@@ -1719,7 +1719,8 @@ void TimetableExport::writeConflictsTxt(QWidget* parent, const QString& filename
 		tos<<"\n";
 		tos<<TimetableExport::tr("Generated with FET %1 on %2", "%1 is FET version, %2 is the date and time of generation").arg(FET_VERSION).arg(saveTime)<<"\n\n";
 
-		tos<<TimetableExport::tr("Total soft conflicts:")<<QString(" ")<<best_solution.conflictsTotal<<endl<<endl;
+		tos<<TimetableExport::tr("Number of broken soft constraints: %1").arg(best_solution.conflictsWeightList.count())<<endl;
+		tos<<TimetableExport::tr("Total soft conflicts: %1").arg(CustomFETString::number(best_solution.conflictsTotal))<<endl<<endl;
 		tos<<TimetableExport::tr("Soft conflicts list (in decreasing order):")<<endl<<endl;
 		foreach(QString t, best_solution.conflictsDescriptionList)
 			tos<<t<<endl;
@@ -1734,7 +1735,8 @@ void TimetableExport::writeConflictsTxt(QWidget* parent, const QString& filename
 		tos<<TimetableExport::tr("Warning! Only %1 out of %2 activities placed!").arg(placedActivities).arg(gt.rules.nInternalActivities)<<"\n";
 		tos<<TimetableExport::tr("Generated with FET %1 on %2", "%1 is FET version, %2 is the date and time of generation").arg(FET_VERSION).arg(saveTime)<<"\n\n";
 
-		tos<<TimetableExport::tr("Total conflicts:")<<QString(" ")<<best_solution.conflictsTotal<<endl<<endl;
+		tos<<TimetableExport::tr("Number of broken constraints: %1").arg(best_solution.conflictsWeightList.count())<<endl;
+		tos<<TimetableExport::tr("Total conflicts: %1").arg(CustomFETString::number(best_solution.conflictsTotal))<<endl<<endl;
 		tos<<TimetableExport::tr("Conflicts list (in decreasing order):")<<endl<<endl;
 		foreach(QString t, best_solution.conflictsDescriptionList)
 			tos<<t<<endl;
