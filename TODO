@@ -19,11 +19,8 @@ in the dataset. Disable space constraints if there is no room in the
 dataset. (Disable means: Just make them unavailable/gray. Don't hide
 them. Do it like OpenOffice.org, Firefox, etc.)
 
-3----------------------------DONE--------------------------
+3----------------------------------------------------------
 From Horatiu Halmajan:
-
-DONE since FET-5.20.0 on 27 September 2013 --> Students set max days per week
-(but you can use for the moment students (set) interval max days per week). <--DONE
 
 Max gaps constraints with weight under 100% (this is very difficult)
 
@@ -219,10 +216,6 @@ no the timetablemaker can check every single student. of yourse by
 checking the studentsname must be added as subgroup into that group.
 
 13-------------------------DONE----------------------------
-From Maciej Deorowicz:
-
-DONE --> Possibility to disable contraint without removing it.
-Such 'Active' checkbox like on activities dialog. <--DONE
 
 14---------------------------------------------------------
 From more users:
@@ -429,20 +422,6 @@ english. it will be much easier and nice, if we don't write teacher here.
 maybe the same problem in other languages.
 
 24-------------------------DONE----------------------------
-From Volker Dirr:
-
-DONE ---> how about this:
-if you go to data->activities
-the you have 4 different filters where you can choose something.
-
-for example i choose filter subject "DE". now can see all "DE" activities
-at the left side. so it is ok like it is, or i see a missing one. if i see
-a missing one, then of course i want to add a subject "DE". so this
-subject should be default if i press add.
-
-so the function should have four parameters (the four filters),
-defaultsetting in the data->activities->add screen should have be the
-filters of data->activities. <--- DONE
 
 25---------------------------------------------------------
 From Volker Dirr:
@@ -738,9 +717,6 @@ Also, with this solution, if no activity group are defined all works as before, 
 the problem commented by Liviu of people not needing it.
 
 44-------DONE since FET-5.19.0-(10 January 2013)-----------
-From Zsolt Udvari:
-
-DONE --> command line version which needs no X server <--DONE
 
 45---------------------------------------------------------
 From Massimo Mancini:
@@ -776,11 +752,7 @@ But we try also that teachers who work two days per week in the afternoon to hav
 47---------------------------------------------------------
 From T. Renganathan:
 
-DONE since FET-5.28.6 on 7 February 2016 --> 2) You can give a provision for the user
-to perform his own sorting of years, teachers, etc., for e.g., using dragging and dropping. <-- DONE
-(DONE in a bit different manner, with two buttons, 'Move up' and 'Move down').
- 
-3) You can include a provision for multiple selection of subjects, teachers,
+You can include a provision for multiple selection of subjects, teachers,
 activities, etc., for example using Ctrl or Shift key. This will especially be useful for deleting
 multiple entries.
 
@@ -1123,33 +1095,8 @@ modifing later all to 100% isn't the best, because there are a few
 activities with min days = 0%.
 
 62------------------------DONE-----------------------------
-From Frans:
-
-DONE --> I came across the following:
-
-Let say one define the number of FET hours per day as 11. Now I enter prefered starting slots, not available constraints etc. and set the timetable.
-
-Next I change the number of FET hours per day from 11 to 10 and try to generate again. A timetable is now impossible.
-
-In changing the number FET hours from 11 to 10 the constraints were not automatically adjusted. I must now go to each constraint and change. Sometimes I had to remove the constraint and re-enter.
-
-I just want to know it it must be like that or if FET cannot change the constraints automatically. <-- DONE
 
 63-----------------------DONE------------------------------
-From Volker Dirr:
-
-DONE --> Our timetablemaker played a bit with FET. he done several changes in the
-dataset, sadly he used the FET file with locked activities.
-he tried to generated, but of course it failed, because of the changes in
-dataset, but locked times/rooms.
-
-Of course easy to solve, just remove all locking constraint.
-I tried with the unlock all activities feature, but it was not possible,
-because FET complains it must be generated first. but why? can't we unlock
-even it is not generated?
-(yes, i know i can remove constraints manualy. i just mean: unlocking a
-special day and unlocking all activities is possible, even if table is not
-generated.) <-- DONE
 
 64---------------------------------------------------------
 From aliponte:
@@ -1338,18 +1285,6 @@ or
 -..etc
 
 81----------------------------DONE-------------------------
-From Chafik Graiguer (on forum):
-
-DONE --->  More statistics after generation:
-
-FET has a stastics menu
-What about adding statistics after generation accessible from statistics menu
-(for teachers and students sets as well)
-- Total free days
-- Total working days
-- Total gaps
-
-Because the quality of a timetable depends on overall total of free days and gap  <--- DONE
 
 82---------------------------------------------------------
 From Valdo (on forum):
@@ -1578,18 +1513,8 @@ Another thing, for activities with same starting time, is it possible to have th
 of days or lessons (depending on the selected timetable)? This way it is easier to print.
 
 95--------------------------DONE---------------------------
-From Volker Dirr:
-
-DONE---> Activities preferred times constraints also need "duration".
-(because many schools allow activities with duration 2 only at special
-times. by this new feature it will be very easy to add (just one
-constraint - instead of adding a tag to every activity with duration 2). <---DONE
 
 96--------------------------DONE---------------------------
-From liquid (on forum):
-
-DONE---> Consider a split activity 2/5 - 1/5 - 1/5 - 1/5. FET places my 2 hour activity part in the same room. However in case of soft conflict when FET cannot place other 3 hours separately, it places them consecutively but not in the same room.
-I might agree with FET in some cases when it cannot do desired split but if FET must join some activities consecutively let it do this in the same room. How to tell it to do in such way in case of soft conflict? <---DONE
 
 97---------------------------------------------------------
 From liquid (on forum):
@@ -1603,45 +1528,8 @@ liquid: I'd like to mention something that might be worth to consider. As we sai
 Update: The maximum number of categories now is 4.
 
 98------------------------DONE-----------------------------
-From Juan Marcos Filgueira Gomis:
-
-DONE --> One question, the update dialog shows buttons '&No' and '&Yes' that I
-couldn't find in fet_gl.ts. How could I translate them?
-
-Liviu: These strings are in the Qt translation. It is a bit difficult to manage also the Qt translations.
-(we need some other files, qt_gl.ts, which complicate things). I'll think of some solution maybe in the future. <-- DONE
 
 99-------------------------DONE----------------------------
-DONE --> From Yush Yuen (in collaboration with Liviu Lalescu):
-
-Feature: Allow user to customize the initial order of activities for the
-generation.
-
-Benefit: Usually, a few activity converge to be "more difficult" toward the
-end of the generation. It might be beneficial (unproven) to put those
-activity earlier rather then later. Also, I can force some "important"
-activities to be completed first, and some "unimportant" ones to be
-completed later.
-
-Suggested solution: Add a "generate order" text box in the add/modify
-activity form. Values to be taken are 0-100%. The percentile represent what
-percentile out of all the activities should this one be placed. 0 = default
-(according to the original order)
-
-Of course, there could be a dedicated form just to manage generation order.
-
-Another solution: add some special activity tags, like: order##1, order##2, etc.
-Each activity can have one of this special tags, and those with order##1 will be
-placed before those with order##2 and greater orders.
-
-Even better: default order for each activity is 0, then order##1, 2 and so on will
-be after them, and order##-1, -2 and so on will be before them
-(-2 before -1 before 0 before 1 before 2).
-
-It would be nice if you can make it an "advance feature", so user can turn
-on or off the feature. It's useful for cases where I have added a lot of
-custom put order, then want to see how it work with or without it. Probably
-a setting check/uncheck under the menu. <-- DONE
 
 100---------------------------------------------------------
 From Chafik Graiguer (on forum):
@@ -1830,20 +1718,7 @@ When adding a constraint, a useful feature would be to check if an identical con
 
 Removing identical constraints reduces the clutter, and perhaps also speeds up the timetable generation?
 
-118-------1-->DONE------------------------------------------
-From k1aas:
-
-The new printing feature in 5.17.0 is very nice. Here are a few requests:
-
-DONE starting with Qt 5.6 or even Qt 5.5 --> 1. I can't find a selection to center the text in the boxes. It would be nice to have the text displayed as on the screen in the 'View students/teachers timetable'. <-- DONE
-
-2. Schedules are much easier to read if they are colour-coded. How about a range of selectable colours per teacher or per subject, and having these colours then inserted in the print file? See my attachment.
-
-Klaas
-
-Answer by Volker Dirr, on the first point:
-
-1. It's already included in the FET sources. Sadly it is a Qt bug. --> Qt bug solved in Qt 5.6 or even Qt 5.5.
+118------------------------DONE-----------------------------
 
 119---------------------------------------------------------
 From Yush Yuen:
@@ -2656,25 +2531,6 @@ Why not add a "Number of workdays per week for a teacher"?
 In the interface I am glad to see a button that add all teacher and set every single-type constraint to the same value so to be individually modified later.
 
 169-------------------------DONE----------------------------
-DONE ---> From agemagician (on forum):
-
-I have small problem now.
-
-Each student group contains about 250 students so if we having two consecutive lectures it's very hard to move 250 student from one room to another.
-
-Is there any constrain to make consecutive activity tag for any student set should be placed in the same room ?
-
-
-My current solution :-
-1- generate the schedule and look the time.
-2- check every and each consecutive lectures for each students set and make a new constrain for those from "A set of activities occupies max different room" and set to to "1".
-
-
-I can't mark all subjects for each student set to be placed in 1 room because we have limited lectures because after many hours the program only placed tiny fraction of the activities. I don't need student group to study all their subjects in a fixed room.
-
-So is there any automated solution ?
-
-Liviu: So, a constraint: a set of activities, if consecutive, get same room. Maybe, ConstraintActivitiesSameRoomIfConsecutive? <--- DONE
 
 170---------------------------------------------------------
 From agemagician (on forum):
@@ -2778,59 +2634,6 @@ repeated to the right side of the plan <---DONE
 and if the border between different days was thicker.
 
 181------DONE since FET-5.21.0 - 3 December 2013------------
-From Bobby Wise:
-
-DONE --> The suggestion/requirement that I would have is perhaps a list to be
-printed out directly from FET which lists the Activities.
-
-I know it can be exported into a CSV file and that is great, but I suggest a
-friendlier report similar to the time tables that can be printed directly
-out of FET.
-
-Something along these lines:
-
-Teacher Name		Subject Description		Student Group		Periods		Total Periods
-Amakutuwa			BIS						6a					1
-											6b					1
-											6c					1
-											6d					1			4
-
-					Social Studies			5b					5			5
-
-					RME						5a					1
-											5b					1
-											5c					1
-											5d					1			4
-											6a					1
-											6b					1
-											6c					1
-											6d					1			4
-
-					Agriculture				5d					3			3
-
-					Arts					5a					2
-											5d					2			4
-											6c					2
-											6d					2			4
-											7c					2
-											7d					2			4
-	
-Total		32
-
-Nangombe			English					5a					6
-											5b					6
-											5c					6
-											5d					6			24
-
-					Arts					5b					2			2
-											6a					2
-											6b					2			4
-											7a					2
-											7b					2			4
-	
-Total		34
-
-<-- DONE
 
 182---------------------------------------------------------
 From Bobby Wise (on forum):
@@ -2854,20 +2657,6 @@ From Tonny Chan:
 Please add a multiple select and then add to FET, then I need not to click the students one by one to a course.
 
 185------------------------DONE-----------------------------
-From Volker Dirr:
-
-DONE since FET-5.30.3 on 22 August 2016 --> There should be comment to the teachers, rooms, students and activities.
-(Maybe even instead of using the activity constraints). These comments
-should be visible (or accessible by a pushbutton) in the constraints
-dialogs.
-
-From Anton Anthofer:
-
-- Teachers, students, subjects comments.
-
-From Liviu Lalescu:
-
-- Also for activity tags and buildings. <-- DONE
 
 186---------------------------------------------------------
 From plaldw (on forum):
@@ -2895,68 +2684,6 @@ In some institutions the group and subject size are important in calculating wor
 The groups with the respective sizes are already exported but this is not always the same for all subjects as the number of students can be changed on the add activities page and this is not exported.
 
 189--------------------------DONE---------------------------
-DONE --> From Yush Yuen:
-
-I am finally getting some solution for my timetable. And I must thank you
-for making the custom version for me. Without it, it wouldn't have been
-possible. So, I think there is great value in being able to place certain
-activities with finer control.
-
-I was thinking about the customization you did for me and I realized that
-you may want to do it in another way, not binding it to set of activities
-occupy max time slot, but as a standalone constraint.
-
-What I mean is, you can add another constraint, call it something like
-"activities placed together". It will group the activities together, and
-place it in the earliest order out of the group. This way, you don't change
-the ordering logic for the activities occupy max timeslots constraint. It
-also provide a way for user to customize the placing order with great
-flexibility.
-
-(He talks about his particular case, in which his constraints activities
-occupy max time slots from selection force logically these activities
-to be placed in adjacent positions in the initial order).
-
----
-
-Liviu: I will add this in the TODO, right now. It is a good suggestion.
-
-The problems:
-
-- For same starting time / two activities grouped/consecutive
-  constraints I already take care of this. So it is not needed in this
-  case, but needed in the case of occupy max constraints. It is not
-  uniform treatment.
-
-- Few users might understand what is about it (advanced users, like
-  you). Maybe some will use it incorrectly.
-
-Do you think we should also take care of customizing the order as with
-##order## or how was it we did it?
-
----
-
-Yush: I think it can replace the ##order## customization as it is actually easier
-to use and more flexible. All I need to do is the generate once, see the
-order, then pick the activities at which I want to "insert" the custom
-order.
-
-The activities that I group together does not even need to have anything to
-do with each other. Say I have an activity that was originally placed
-toward to end of the order, but always cause trouble in the end, I can
-lookup the original order, find an activity that is placed earlier, apply
-this new constraint to force these activities to be placed together. Now,
-the activity causing trouble will be placed earlier.
-
-I sounds like a very good way to allow for custom ordering.
-
----
-
-Liviu: also make a way to inform the user of the groups of activities (either
-output nIncompatible for each activity, or output a line after the same group).
-
-I would prefer to add an advanced feature, not a constraint. Locked by
-default. What name to give it? Group activities in initial order? <-- DONE
 
 190---------------------------------------------------------
 From Volker Dirr:
@@ -3111,6 +2838,8 @@ From russell:
 
 Maybe adding a Pause/Resume to "Generate new timetable" window (changing Start button after press to Pause).
 
+(Related to item #277.)
+
 197---------------------------------------------------------
 From nouvakis (on forum):
 
@@ -3210,38 +2939,6 @@ Liviu:
 Unfortunately, I cannot think of how to adapt the FET algorithm to multiple cores.
 
 201-------------------------DONE----------------------------
-From liquid (on forum):
-
-DONE since FET-5.24.0 on 23 November 2014, constraints preferred/home rooms allow a single room -->
-
-Generally, constraints have the two forms:
-item has preferred other item
-item has preferred set of other items
-
-I experience that during data preparation for a timetable the things are often changing or are caused by planning progress in the way it's necessary to add to a constraint of first form some other item, making the constraint of the second form. In this case, I must delete the former constraint and create a new one, to respect a set of other items. It would be simpler to just add other item to previously set up one, making therefore a set of preferred other items automatically. I'm not sure if the set of preferred other items is equivalent to many constraints of the first form (with one other item). If it were I think it would be possible to abandon this distinction in a future "big" update of FET program.
-I wonder whether the reason for this rather technical (a matter of development) and difficult to change or may be not so difficult.
-
-Liviu:
-
-Are you referring to preferred times?
-
-An -X- means rejected with the corresponding weight. If there are more constraints, the maximum weight wins. This constraint applies as rejecting a (some) slot(s) (rather than accepting some).
-
-Preferred starting time is a locking constraint, you can play with it in the generated timetable.
-
-liquid:
-
-Thanks for your answer. I'll try to be more specific below.
-I used to work with schedules incrementally. This means for example that I don't specify at the beginning all existing rooms suitable for a subject as a set of preferred rooms. Only one at the beginning and then by the next group I'd like to add one or more rooms for the subject. I have two ways:
-Add the second constraint that assigns a subject for the new room
-Remove previously set constraint "one room for one subject" and introduce a new one "set of rooms for one subject"
-That's what I meant starting this thread. I'm sorry if the first post was misunderstood. I guess it would be more convenient to simply add the second room to previously set constraint rather than use of two described ways above. It would be, however, possible if I could add a constraint of form "set of rooms for one subject" with only one room at the beginning, predicting that in the future I'll add some more rooms to that. FET disables this though.
-
-Liviu:
-
-Variant 1 is wrong. You should use 2. Yes, I'll add this in the TODO.
-
-<-- DONE
 
 202---------------------------------------------------------
 From Vanyo Georgiev (on forum):
@@ -3880,13 +3577,6 @@ One use though, which can be given to sorting the comments, is to arrange togeth
 it would help to quickly identify them without using the filter ....
 
 210--------------------------DONE---------------------------
-From dotosouza:
-
-DONE since FET-5.26.1 on 6 February 2015 --> Since a min days between activities constraints with consecutive if same day true cannot place
-activities over a break, he suggests that the constraint of type break to be removed from FET. Also because activities with duration >=2 cannot
-be split over a break. He had impossible timetable because he didn't know this.
-
-Or add a warning about this in the break time constraint dialog. <-- DONE, it was added a warning in the break constraints dialog.
 
 211---------------------------------------------------------
 From Volker Dirr:
@@ -3917,10 +3607,6 @@ void AddConstraintStudentsSetNotAvailableTimesForm::colorItem(QTableWidgetItem* 
 I think the colors should be configurable. For example, I would like to use a light green background for available times and white for not available times in the "student set not available" dialog, whereas for the corresponding teacher dialog, perhaps different colors could be used (white = available; dark grey = not available). In case the colors are used, you could hide the "X" by setting the foreground color to the same as the background color since it would be superfluous. That way, you could keep the rest of the functionality the way it is.
 
 213-------------------------DONE----------------------------
-DONE--> From Volker Dirr:
-
-if a user removes a subgroup FET should also ask if this subgroup should
-be removed everywhere. <-- DONE
 
 214---------------------------------------------------------
 From Khalilullah Yosufi:
@@ -4117,48 +3803,6 @@ because :
 2. When we want to edit the task of a teacher , we find that the division button is not enabled and we will be forced to delete that task and we retype spot again.
 
 224------------------------DONE-----------------------------
-DONE--> From Volker Dirr:
-
-in modify/rename years form there should be a checkbox "Rename also groups
-and subgroups".
-
-Then add something like that (not ready yet, just an idea):
-
-void ModifyStudentsYearForm::renameAlsoGroupsAndSubgroups(){
-	QString warning;
-	foreach(StudentsYear* year, gt.rules.yearsList){
-		if(this->_initialYearName == year->name){
-			//TODO: rename year
-			foreach(StudentsGroup* group, year->groupsList){
-				if(group->name.left(this->_initialYearName.count())==this->_initialYearName){
-					//TODO rename: cut left old string and place the new one
-				} else {
-					warning+=tr("%1 in %2 not renamed.")+"\n";
-				}
-				foreach(StudentsSubgroup* subgroup, group->subgroupsList){
-					if(subgroup->name.left(this->_initialYearName.count())==this->_initialYearName){
-						//TODO rename: cut left old string and place the new one
-					} else {
-						warning+=tr("%1 in %2 not renamed.")+"\n";
-					}
-				}
-			}
-		} else {
-			foreach(StudentsGroup* group, year->groupsList){
-				if(group->name.left(this->_initialYearName.count())==this->_initialYearName){
-					warning+=tr("Please check if %1 in %2 must be renamed.")+"\n"; 
-//It's correct for example if there is year "1" and year "10"
-				}
-				foreach(StudentsSubgroup* subgroup, group->subgroupsList){
-					if(subgroup->name.left(this->_initialYearName.count())==this->_initialYearName){
-						warning+=tr("Please check if %1 in %2 must be renamed.")+"\n"; 
-//It's correct for example if there is year "1" and year "10"
-					}
-				}
-			}
-		}
-	}
-} <--DONE
 
 225---------------------------------------------------------
 From jillali elghazoui (on forum):
@@ -4230,16 +3874,6 @@ I think you should clarify it in the interface: In FET you call it only
 
 230---------------------------DONE--------------------------
 From Maouhoub:
-
-DONE since FET-5.28.3 on 16 November 2015 --> Add an option to play a sound when a timetable was found.
-
-Also, from uni_instructor, on the forum:
-
-I remember earlier versions of FET made an acoustic sound after successful  or aborted  timetable generation.
-The current version  5.28.2 does not report any signal.
-Sometimes timetable generation may take a longer time and it happens quite often, that I forget my last running computation if I don't check FET's current status (e.g. still running, timetable generation completed).
-
-So I'm asking if it is possible to re-enable the old acoustic signaling? <-- DONE
 
 231---------------------------------------------------------
 From Davide Cottignoli (on forum):
@@ -4850,13 +4484,6 @@ Or is there a better way?
 Liviu Lalescu: Did you notice that there is a file name_data_and_timetable.fet in the results? You can open this file and generate on it - it will go very fast, and after that you can export the CSV results.
 
 273---------------------------DONE--------------------------
-From dmcdonald (on forum):
-
-DONE since FET-5.30.3 on 22 August 2016 --> I use activity tags for subjects (English, Mathematics, Biology, etc.), and am often asked to produce departmental timetables (showing all and only Mathematics, or all and only English, etc.)
-
-Currently I've been doing this by deactivating all activities, then activating (through Data>Tags) only those activities with a given tag (Mathematics, etc.). After generating a timetable in this way, I can print the Activities timetable to get a timetable with only those activities for a particular department.
-
-It would be ideal for me if the HTML output had an "Activity Tag" row that produced individual timetables for each activity tag (in the way that "Subjects" produces individual timetables for each subject). <-- DONE
 
 274---------------------------------------------------------
 From Benahmed Abdelkrim (on forum):
@@ -4873,3 +4500,249 @@ From Anton Anthofer:
 - recalculate the ids
 - a complex calculation of the number of students.
 - generate very similar timetables
+
+276---------------------------------------------------------
+From Volker Dirr:
+
+a) Add also conflicting activities into
+activitiesConflictingPercentage if there is a constraint with:
+activities with min days between activities and weight 100%
+two grouped activities with weight 100%
+two consecutive activities with weight 100%
+two ordered activities with weight 100%
+min gaps between activities with weight 100%
+
+b) Check if it speedups if there is a QList/QSet timetable[hours_per_week] and
+checking the activitiesConflictingPercentage at the very beginning.
+because activitiesConflictingPercentage contains a lot of constraints.
+
+Liviu Lalescu: I think this is impossible/infeasible.
+
+277---------------------------------------------------------
+From mercurialuser (on forum):
+
+In a few minutes I will have to stop FET and switch off my computer. I need to change some activity so it is not a problem but is it
+possible to "pause" a run and "restart" it later, surviving a pc reboot?
+
+(Related to item #196.)
+
+278---------------------------------------------------------
+From mercurialuser (on forum):
+
+If you can't change a value (usually a 100% setting, or allow empty days) please disable the widget... it is misleading...
+
+279---------------------------------------------------------
+From mrtvillaret (on forum):
+
+In the add constraint teacher not available dialog mark with "b" the slots in which there is a global break.
+
+Liviu Lalescu: also in students set or room not available and activity(ies) preferred times?
+
+280---------------------------------------------------------
+From Lizio (on forum):
+
+It could be helpful to put disable and enable buttons in every windows about constraints, not only in the "All" ones.
+
+It could be helpful too to put those buttons also on windows about activities.
+
+281---------------------------------------------------------
+From Lizio (on forum):
+
+I think it could be very helpful to let multiple selection in every window about data and constraints.
+
+In this way you can select some of them to apply actions with buttons.
+
+282---------------------------------------------------------
+From Volker Dirr:
+
+Volker provided code for a faster generation if one uses constraints room not available times. But it is too risky for now.
+Maybe in the future.
+
+Volker: Disalow timeslots of activities if a room is not available.
+
+Volker's code:
+
+...
+Matrix2D<double> notAllowedTimesPercentages;
+Matrix2D<double> notAllowedTimesPercentagesFromSpaceConstraints;
+
+//breaks are no gaps - I keep track of this
+//bool breakTime[MAX_HOURS_PER_WEEK];
+...
+
+...
+	t=computeActivitiesRoomsPreferences(parent);
+	if(!t)
+		return false;
+	
+	//Before computeFixedActivities(...)
+	t=computeNotAllowedTimesPercentagesFromSpaceConstraints(parent);
+	if(!t)
+		return false;
+	//////////////////
+	
+	/////////buildings
+	t=computeMaxBuildingChangesPerDayForStudents(parent);
+	if(!t)
+		return false;
+...
+
+...
+bool computeNotAllowedTimesPercentagesFromSpaceConstraints(QWidget* parent)
+{
+	Q_UNUSED(parent);
+
+	//Speed improvement (start) by Volker Dirr
+	notAllowedTimesPercentagesFromSpaceConstraints.resize(gt.rules.nInternalActivities, gt.rules.nHoursPerWeek);
+	
+	//TODO: check if this is correct
+	for(int i=0; i<gt.rules.nInternalActivities; i++){
+		for(int hour=0; hour<gt.rules.nHoursPerWeek; hour++){
+			notAllowedTimesPercentagesFromSpaceConstraints[i][hour]=-1;
+		}
+	}
+
+	for(int i=0; i<gt.rules.nInternalActivities; i++){
+		if(!unspecifiedPreferredRoom[i]){
+			bool roomsWithWeight100Found=false;
+			QSet<int> allowedRoomsSet;
+			for(int kk=0; kk<activitiesPreferredRoomsList[i].count(); kk++){
+				PreferredRoomsItem& it=activitiesPreferredRoomsList[i][kk];
+				if(it.percentage==100){
+					if(!roomsWithWeight100Found){
+						allowedRoomsSet=it.preferredRooms;
+						roomsWithWeight100Found=true;
+					}
+					else{
+						allowedRoomsSet.intersect(it.preferredRooms);
+					}
+				}
+			}
+			if(roomsWithWeight100Found){
+				if(!allowedRoomsSet.isEmpty()){
+					for(int hour=0; hour<gt.rules.nHoursPerWeek; hour++){
+						bool noRoomAvailable=true;
+						foreach(int room, allowedRoomsSet){
+							if(notAllowedRoomTimePercentages[room][hour]!=100){
+								noRoomAvailable=false;
+								break;
+							}
+						}
+						if(noRoomAvailable){
+							if(notAllowedTimesPercentagesFromSpaceConstraints[i][hour]!=100){
+								notAllowedTimesPercentagesFromSpaceConstraints[i][hour]=100;
+							}
+						}
+					}
+				} else {
+					//TODO report a warning. There is no allowed slot at all
+				}
+			}
+		}
+		else{
+			if(!unspecifiedHomeRoom[i]){
+				if(activitiesHomeRoomsPercentage[i]==100){
+					for(int hour=0; hour<gt.rules.nHoursPerWeek; hour++){
+						bool noRoomAvailable=true;
+						foreach(int room, activitiesHomeRoomsHomeRooms[i]){
+							if(notAllowedRoomTimePercentages[room][hour]!=100){
+								noRoomAvailable=false;
+								break;
+							}
+						}
+						if(noRoomAvailable){
+							if(notAllowedTimesPercentagesFromSpaceConstraints[i][hour]!=100){
+								notAllowedTimesPercentagesFromSpaceConstraints[i][hour]=100;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	//Speed improvement (end) by Volker Dirr
+	
+	return true;
+}
+
+bool computeMinDays(QWidget* parent)
+...
+
+...
+bool computeFixedActivities(QWidget* parent)
+{
+	bool ok=true;
+
+	for(int ai=0; ai<gt.rules.nInternalActivities; ai++){
+		int notAllowedSlots=0;
+		for(int tim=0; tim<gt.rules.nHoursPerWeek; tim++)
+			if(notAllowedTimesPercentages[ai][tim]==100 || notAllowedTimesPercentagesFromSpaceConstraints[ai][tim]==100)
+				notAllowedSlots++;
+		
+		if(notAllowedSlots==gt.rules.nHoursPerWeek){
+...
+
+...
+	s+=GeneratePreTranslate::tr("End - the order of activities (id-s)");
+	s+="\n";
+	initialOrderOfActivities=s;
+	
+	if(initialOrderStream!=NULL){
+		(*initialOrderStream)<<s;
+		(*initialOrderStream).flush();
+	}
+
+	//After computing the initial order, because it is already taken care of.
+	//Speed improvement (start) by Volker Dirr
+	for(int i=0; i<gt.rules.nInternalActivities; i++)
+		for(int t=0; t<gt.rules.nHoursPerWeek; t++)
+			if(notAllowedTimesPercentagesFromSpaceConstraints[i][t]==100)
+				notAllowedTimesPercentages[i][t]=100;
+	//Speed improvement (end) by Volker Dirr
+}
+...
+
+283---------------------------------------------------------
+From flauta (on forum):
+
+Three teachers must guarantee presence of 1 or more of them in each hour of the timetable (medicine subminstration in emergency case)
+
+Liviu: There might be possible a new constraint, activities occupy min time slots.
+
+284---------------------------------------------------------
+From alienglow (on forum):
+
+Could you please add a setting to display the full file path of the data file in the title bar.
+e.g. Instead of showing just "datafile.fet" if there can be a setting to display "D:\Data\FET\datafile.fet".
+You can also think of doing this via a status bar, where if possible more info can be displayed.
+For the statusbar you can have display options like - data file name, current output directory etc.
+
+285---------------------------------------------------------
+From mercurialuser (on forum):
+
+In order to avoid that 3rd grade classes with 10h subject (3 2 2 1 1 1 or variants as we spoke in other thread) have more than 3 hours in one day I add a tag MAX3 to all that activities.
+
+I then added a "TEACHER max hour per day with a tag" constraint set to 3.
+
+All the test run with (where I disable the most strict constraints) completed the timetable.
+
+When all the constraints were enabled, no way to go upper than a value, in all the runs.
+
+I finally traced the problem to a teacher that has 2 10h subjects, so 20 hours... in a 5 days timetable it means at least 4 hours per day....
+
+I moved the constraint to Students....
+
+I think that this condition can be found at pre-compute... sum of the hours of all the splits with the tags / number of working days should be <= max daily hour with tag
+
+286---------------------------------------------------------
+From noddy11:
+
+He asks if there is an easier way to activate/deactivate activities. It is to complicated since he needs do it many times.
+A first solution might be that the "active" checkbox in activities will be related to all subactivities. Activating subactivities only by the modify subactivities form.
+An other solution might be activating similar to the activating of constraints.
+
+287---------------------------------------------------------
+From Davide Cottignoli (on forum):
+
+Is it possible to add a lock/unlock menu for all activities placed in a specific building and a lock/unlock menu for all activities with a specific key?
+This can speed up manual adjustment when a timetable is generated and, virtually, can speed up the locks for any activities aggregation.
