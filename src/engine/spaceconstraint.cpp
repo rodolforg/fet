@@ -6824,7 +6824,7 @@ QString ConstraintActivitiesOccupyMaxDifferentRooms::getDescription(const Rules&
 		actids+=CustomFETString::number(aid)+QString(", ");
 	actids.chop(2);
 
-	s+=tr("Activities occupy max different rooms, WP:%1, NA:%2, A: %3, MDR:%4", "Constraint description. WP means weight percentage, "
+	s+=tr("Activities occupy max different rooms, WP:%1%, NA:%2, A: %3, MDR:%4", "Constraint description. WP means weight percentage, "
 	 "NA means the number of activities, A means activities list, MDR means max different rooms")
 	 .arg(CustomFETString::number(this->weightPercentage))
 	 .arg(CustomFETString::number(this->activitiesIds.count()))
@@ -6846,7 +6846,7 @@ QString ConstraintActivitiesOccupyMaxDifferentRooms::getDetailedDescription(cons
 		
 	QString s=tr("Space constraint"); s+="\n";
 	s+=tr("Activities occupy max different rooms"); s+="\n";
-	s+=tr("Weight (percentage)=%1").arg(CustomFETString::number(this->weightPercentage)); s+="\n";
+	s+=tr("Weight (percentage)=%1%").arg(CustomFETString::number(this->weightPercentage)); s+="\n";
 	s+=tr("Number of activities=%1").arg(CustomFETString::number(this->activitiesIds.count())); s+="\n";
 	foreach(int id, this->activitiesIds){
 		s+=tr("Activity with id=%1 (%2)", "%1 is the id, %2 is the detailed description of the activity")
@@ -7093,7 +7093,7 @@ QString ConstraintActivitiesSameRoomIfConsecutive::getDescription(const Rules& r
 		actids+=CustomFETString::number(aid)+QString(", ");
 	actids.chop(2);
 
-	s+=tr("Activities same room if consecutive, WP:%1, NA:%2, A: %3", "Constraint description. WP means weight percentage, "
+	s+=tr("Activities same room if consecutive, WP:%1%, NA:%2, A: %3", "Constraint description. WP means weight percentage, "
 	 "NA means the number of activities, A means activities list")
 	 .arg(CustomFETString::number(this->weightPercentage))
 	 .arg(CustomFETString::number(this->activitiesIds.count()))
@@ -7114,7 +7114,7 @@ QString ConstraintActivitiesSameRoomIfConsecutive::getDetailedDescription(const 
 		
 	QString s=tr("Space constraint"); s+="\n";
 	s+=tr("Activities same room if consecutive"); s+="\n";
-	s+=tr("Weight (percentage)=%1").arg(CustomFETString::number(this->weightPercentage)); s+="\n";
+	s+=tr("Weight (percentage)=%1%").arg(CustomFETString::number(this->weightPercentage)); s+="\n";
 	s+=tr("Number of activities=%1").arg(CustomFETString::number(this->activitiesIds.count())); s+="\n";
 	foreach(int id, this->activitiesIds){
 		s+=tr("Activity with id=%1 (%2)", "%1 is the id, %2 is the detailed description of the activity")
