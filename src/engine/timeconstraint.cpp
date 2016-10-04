@@ -17595,7 +17595,7 @@ QString ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::getDescription(Rule
 		timeslots+=r.daysOfTheWeek[selectedDays.at(i)]+QString(" ")+r.hoursOfTheDay[selectedHours.at(i)]+QString(", ");
 	timeslots.chop(2);
 	
-	QString s=tr("Activities occupy max time slots from selection, WP:%1, NA:%2, A: %3, STS: %4, MTS:%5", "Constraint description. WP means weight percentage, "
+	QString s=tr("Activities occupy max time slots from selection, WP:%1%, NA:%2, A: %3, STS: %4, MTS:%5", "Constraint description. WP means weight percentage, "
 	 "NA means the number of activities, A means activities list, STS means selected time slots, MTS means max time slots")
 	 .arg(CustomFETString::number(this->weightPercentage))
 	 .arg(CustomFETString::number(this->activitiesIds.count()))
@@ -17622,7 +17622,7 @@ QString ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::getDetailedDescript
 	
 	QString s=tr("Time constraint"); s+="\n";
 	s+=tr("Activities occupy max time slots from selection"); s+="\n";
-	s+=tr("Weight (percentage)=%1").arg(CustomFETString::number(this->weightPercentage)); s+="\n";
+	s+=tr("Weight (percentage)=%1%").arg(CustomFETString::number(this->weightPercentage)); s+="\n";
 	s+=tr("Number of activities=%1").arg(CustomFETString::number(this->activitiesIds.count())); s+="\n";
 	foreach(int id, this->activitiesIds){
 		s+=tr("Activity with id=%1 (%2)", "%1 is the id, %2 is the detailed description of the activity")
@@ -17964,7 +17964,7 @@ QString ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::getDescription(R
 		timeslots+=r.daysOfTheWeek[selectedDays.at(i)]+QString(" ")+r.hoursOfTheDay[selectedHours.at(i)]+QString(", ");
 	timeslots.chop(2);
 	
-	QString s=tr("Activities max simultaneous in selected time slots, WP:%1, NA:%2, A: %3, STS: %4, MS:%5", "Constraint description. WP means weight percentage, "
+	QString s=tr("Activities max simultaneous in selected time slots, WP:%1%, NA:%2, A: %3, STS: %4, MS:%5", "Constraint description. WP means weight percentage, "
 	 "NA means the number of activities, A means activities list, STS means selected time slots, MS means max simultaneous (number of activities in each selected time slot)")
 	 .arg(CustomFETString::number(this->weightPercentage))
 	 .arg(CustomFETString::number(this->activitiesIds.count()))
@@ -17991,7 +17991,7 @@ QString ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::getDetailedDescr
 	
 	QString s=tr("Time constraint"); s+="\n";
 	s+=tr("Activities max simultaneous in selected time slots"); s+="\n";
-	s+=tr("Weight (percentage)=%1").arg(CustomFETString::number(this->weightPercentage)); s+="\n";
+	s+=tr("Weight (percentage)=%1%").arg(CustomFETString::number(this->weightPercentage)); s+="\n";
 	s+=tr("Number of activities=%1").arg(CustomFETString::number(this->activitiesIds.count())); s+="\n";
 	foreach(int id, this->activitiesIds){
 		s+=tr("Activity with id=%1 (%2)", "%1 is the id, %2 is the detailed description of the activity")
