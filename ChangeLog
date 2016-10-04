@@ -1899,3 +1899,7 @@ Versions 5.30.0 - 5.30.v
 	- Added comments for teachers, students, subjects, activity tags, rooms and buildings (suggested by Volker Dirr and Anton Anthofer, implemented by Liviu Lalescu).
 	- Very rare crash bugs fixed (reported by mouiata).
 	- Added a new example file from Indonesia, by wahyuamin.
+- Version 5.30.4
+	- Minor bug fix in the HTML timetables (reported by ant7, fixed by Volker Dirr).
+	- Reporting the number of broken (soft) constraints (suggested by Volker Dirr and mercurialuser).
+	- Added a new example file from United Arab Emirates, by Darren McDonald.
