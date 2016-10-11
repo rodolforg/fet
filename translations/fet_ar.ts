@@ -171,7 +171,7 @@
     <message>
         <location filename="../src/interface/activitiesform.cpp" line="588"/>
         <source>Activity comments</source>
-        <translation type="unfinished">شرح المهمة</translation>
+        <translation>شرح المهمة</translation>
     </message>
     <message>
         <location filename="../src/interface/activitiesform.cpp" line="590"/>
@@ -1012,17 +1012,17 @@
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="323"/>
         <source>Activity tag comments</source>
-        <translation type="unfinished"></translation>
+        <translation>شرح الوسم المشترك</translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="325"/>
         <source>OK</source>
-        <translation type="unfinished">موافق</translation>
+        <translation>موافق</translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="327"/>
         <source>Cancel</source>
-        <translation type="unfinished">الغاء</translation>
+        <translation>الغاء</translation>
     </message>
 </context>
 <context>
@@ -1031,7 +1031,7 @@
         <location filename="../src/interface/activitytagsform_template.ui" line="14"/>
         <source>Activity tags</source>
         <extracomment>This is the title of the activity tags dialog</extracomment>
-        <translation>وسم مشترك</translation>
+        <translation>الوسوم المشتركة</translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform_template.ui" line="37"/>
@@ -1067,13 +1067,13 @@
         <location filename="../src/interface/activitytagsform_template.ui" line="83"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">أعلى</translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform_template.ui" line="90"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">أدنى</translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform_template.ui" line="97"/>
@@ -10555,7 +10555,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="664"/>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="824"/>
         <source>FET warning</source>
-        <translation type="unfinished">فيت تحذير</translation>
+        <translation>فيت تحذير</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="824"/>
@@ -10565,17 +10565,17 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="896"/>
         <source>Constraint comments</source>
-        <translation>شروح القيود</translation>
+        <translation>شرح القيد</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="898"/>
         <source>OK</source>
-        <translation type="unfinished">موافق</translation>
+        <translation>موافق</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="900"/>
         <source>Cancel</source>
-        <translation type="unfinished">الغاء</translation>
+        <translation>الغاء</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="640"/>
@@ -10638,7 +10638,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/allspaceconstraintsform_template.ui" line="122"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">أدنى</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform_template.ui" line="129"/>
@@ -10675,7 +10675,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/allspaceconstraintsform_template.ui" line="83"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">أعلى</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform_template.ui" line="108"/>
@@ -10751,7 +10751,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="943"/>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="1103"/>
         <source>FET warning</source>
-        <translation type="unfinished">فيت تحذير</translation>
+        <translation>فيت تحذير</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="1103"/>
@@ -10761,12 +10761,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="1175"/>
         <source>Constraint comments</source>
-        <translation>شروح القيود</translation>
+        <translation>شرح القيد</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="1177"/>
         <source>OK</source>
-        <translation type="unfinished">موافق</translation>
+        <translation>موافق</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="1179"/>
@@ -10776,7 +10776,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="917"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">حذف القيد؟</translation>
+        <translation>حذف القيد؟</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="300"/>
@@ -10834,7 +10834,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/alltimeconstraintsform_template.ui" line="128"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">أدنى</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform_template.ui" line="135"/>
@@ -10871,7 +10871,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/alltimeconstraintsform_template.ui" line="89"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">أعلى</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform_template.ui" line="114"/>
@@ -10955,7 +10955,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/buildingsform.cpp" line="274"/>
         <source>Building comments</source>
-        <translation type="unfinished"></translation>
+        <translation>شرح البناء</translation>
     </message>
     <message>
         <location filename="../src/interface/buildingsform.cpp" line="276"/>
@@ -10965,7 +10965,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/buildingsform.cpp" line="278"/>
         <source>Cancel</source>
-        <translation type="unfinished">الغاء</translation>
+        <translation>الغاء</translation>
     </message>
 </context>
 <context>
@@ -10990,13 +10990,13 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/buildingsform_template.ui" line="62"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">أعلى</translation>
     </message>
     <message>
         <location filename="../src/interface/buildingsform_template.ui" line="69"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">أدنى</translation>
     </message>
     <message>
         <location filename="../src/interface/buildingsform_template.ui" line="76"/>
@@ -33685,17 +33685,17 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="475"/>
         <source>Students group comments</source>
-        <translation type="unfinished"></translation>
+        <translation>شرح طلاب المجموعة</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="477"/>
         <source>OK</source>
-        <translation type="unfinished">موافق</translation>
+        <translation>موافق</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="479"/>
         <source>Cancel</source>
-        <translation type="unfinished">الغاء</translation>
+        <translation>الغاء</translation>
     </message>
 </context>
 <context>
@@ -33752,13 +33752,13 @@ Please modify your data correspondingly and try again</source>
         <location filename="../src/interface/groupsform_template.ui" line="139"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">أعلى</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform_template.ui" line="146"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">أدنى</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform_template.ui" line="153"/>
@@ -33794,6 +33794,16 @@ Please modify your data correspondingly and try again</source>
         <translation>حول برنامج الجداول المدرسية فيت</translation>
     </message>
     <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="112"/>
+        <source>Translators</source>
+        <translation>المترجمون</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="27"/>
+        <source>About</source>
+        <translation>حول</translation>
+    </message>
+    <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -33810,16 +33820,6 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;FET homepage: &lt;a href=&quot;http://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="112"/>
-        <source>Translators</source>
-        <translation>المترجمون</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="27"/>
-        <source>About</source>
-        <translation>حول</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="90"/>
@@ -45043,17 +45043,17 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/roomsform.cpp" line="274"/>
         <source>Room comments</source>
-        <translation type="unfinished"></translation>
+        <translation>شرح القاعة</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform.cpp" line="276"/>
         <source>OK</source>
-        <translation type="unfinished">موافق</translation>
+        <translation>موافق</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform.cpp" line="278"/>
         <source>Cancel</source>
-        <translation type="unfinished">الغاء</translation>
+        <translation>الغاء</translation>
     </message>
 </context>
 <context>
@@ -45078,18 +45078,18 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/roomsform_template.ui" line="81"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">أعلى</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform_template.ui" line="88"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">أدنى</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform_template.ui" line="95"/>
         <source>Comments</source>
-        <translation type="unfinished">شرح</translation>
+        <translation>شرح</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform_template.ui" line="106"/>
@@ -45118,31 +45118,31 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/engine/rules.cpp" line="104"/>
         <location filename="../src/engine/rules.cpp" line="4647"/>
         <source>Monday</source>
-        <translation type="unfinished">السبت</translation>
+        <translation>الإثنين</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="105"/>
         <location filename="../src/engine/rules.cpp" line="4648"/>
         <source>Tuesday</source>
-        <translation type="unfinished">الاحد</translation>
+        <translation>الثلاثاء</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="106"/>
         <location filename="../src/engine/rules.cpp" line="4649"/>
         <source>Wednesday</source>
-        <translation type="unfinished">الاثنين</translation>
+        <translation>الاربعاء</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="107"/>
         <location filename="../src/engine/rules.cpp" line="4650"/>
         <source>Thursday</source>
-        <translation type="unfinished">الثلاثاء</translation>
+        <translation>الخميس</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="108"/>
         <location filename="../src/engine/rules.cpp" line="4651"/>
         <source>Friday</source>
-        <translation type="unfinished">الاربعاء</translation>
+        <translation>الجمعة</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="100"/>
@@ -45154,7 +45154,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/engine/rules.cpp" line="101"/>
         <location filename="../src/engine/rules.cpp" line="4644"/>
         <source>Default comments</source>
-        <translation type="unfinished">التعليق الافتراضي</translation>
+        <translation>الشرح الافتراضي</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="160"/>
@@ -48227,17 +48227,17 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/subactivitiesform.cpp" line="446"/>
         <source>Subactivity comments</source>
-        <translation type="unfinished"></translation>
+        <translation>شرح مهمة فرعية</translation>
     </message>
     <message>
         <location filename="../src/interface/subactivitiesform.cpp" line="448"/>
         <source>OK</source>
-        <translation type="unfinished">موافق</translation>
+        <translation>موافق</translation>
     </message>
     <message>
         <location filename="../src/interface/subactivitiesform.cpp" line="450"/>
         <source>Cancel</source>
-        <translation type="unfinished">الغاء</translation>
+        <translation>الغاء</translation>
     </message>
     <message>
         <location filename="../src/interface/subactivitiesform.cpp" line="412"/>
@@ -48419,17 +48419,17 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/subgroupsform.cpp" line="582"/>
         <source>Students subgroup comments</source>
-        <translation type="unfinished"></translation>
+        <translation>شرح طلاب مجموعة فرعية</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform.cpp" line="584"/>
         <source>OK</source>
-        <translation type="unfinished">موافق</translation>
+        <translation>موافق</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform.cpp" line="586"/>
         <source>Cancel</source>
-        <translation type="unfinished">الغاء</translation>
+        <translation>الغاء</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform.cpp" line="184"/>
@@ -48492,13 +48492,13 @@ Bottom: %4</source>
         <location filename="../src/interface/subgroupsform_template.ui" line="156"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">أعلى</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="163"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">أدنى</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="170"/>
@@ -48684,17 +48684,17 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="315"/>
         <source>Subject comments</source>
-        <translation type="unfinished"></translation>
+        <translation>شرح مادة</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="317"/>
         <source>OK</source>
-        <translation type="unfinished">موافق</translation>
+        <translation>موافق</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="319"/>
         <source>Cancel</source>
-        <translation type="unfinished">الغاء</translation>
+        <translation>الغاء</translation>
     </message>
 </context>
 <context>
@@ -48734,13 +48734,13 @@ Bottom: %4</source>
         <location filename="../src/interface/subjectsform_template.ui" line="83"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">أعلى</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform_template.ui" line="90"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">أدنى</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform_template.ui" line="97"/>
@@ -49019,17 +49019,17 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/teachersform.cpp" line="367"/>
         <source>Teacher comments</source>
-        <translation type="unfinished"></translation>
+        <translation>شرح مدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform.cpp" line="369"/>
         <source>OK</source>
-        <translation type="unfinished">موافق</translation>
+        <translation>موافق</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform.cpp" line="371"/>
         <source>Cancel</source>
-        <translation type="unfinished">الغاء</translation>
+        <translation>الغاء</translation>
     </message>
 </context>
 <context>
@@ -49081,13 +49081,13 @@ Bottom: %4</source>
         <location filename="../src/interface/teachersform_template.ui" line="101"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">أعلى</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform_template.ui" line="108"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">أدنى</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform_template.ui" line="115"/>
@@ -49276,8 +49276,8 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="2891"/>
         <location filename="../src/engine/timetableexport.cpp" line="3106"/>
         <location filename="../src/engine/timetableexport.cpp" line="3155"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10249"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10260"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10253"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10264"/>
         <source>Year</source>
         <translation>العام</translation>
     </message>
@@ -49286,8 +49286,8 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="2627"/>
         <location filename="../src/engine/timetableexport.cpp" line="2840"/>
         <location filename="../src/engine/timetableexport.cpp" line="2894"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10267"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10278"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10271"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10282"/>
         <source>Group</source>
         <translation>المجموعة</translation>
     </message>
@@ -49434,7 +49434,7 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="861"/>
         <source>Generation started on: %1</source>
         <comment>%1 is the time</comment>
-        <translation type="unfinished">الانتاج بدأ في: %1</translation>
+        <translation>الانتاج بدأ في: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="865"/>
@@ -49446,7 +49446,7 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="869"/>
         <source>Generation ended on: %1</source>
         <comment>%1 is the time</comment>
-        <translation type="unfinished"></translation>
+        <translation>الانتهاء من الانتاج في: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="871"/>
@@ -49480,12 +49480,12 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="1738"/>
         <source>Number of broken constraints: %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">عدد القيود المتجاهلة: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="1739"/>
         <source>Total conflicts: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>كل التعارضات:  %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="1981"/>
@@ -49501,34 +49501,34 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="1986"/>
         <source>File generated with FET %1 on %2</source>
         <comment>%1 is FET version, %2 is the date and time of generation</comment>
-        <translation type="unfinished"></translation>
+        <translation>الجدول أنتج بواسطة فيت %1 on %2</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="1999"/>
         <source>students</source>
-        <translation type="unfinished"></translation>
+        <translation>الطلاب</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2001"/>
         <source>students - disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>الطلاب - معطل</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2006"/>
         <source>teachers - disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>المدرسين - معطل</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2008"/>
         <source>View statistics: %1, %2.</source>
         <comment>%1 and %2 are two files in HTML format, to show statistics for students and teachers. The user can click on one file to view it</comment>
-        <translation type="unfinished"></translation>
+        <translation>عرض الاحصاءات: %1, %2.</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2028"/>
         <source>View XML: %1, %2, %3.</source>
         <comment>%1, %2 and %3 are three files in XML format, subgroups, teachers and activities timetables. The user can click on one file to view it</comment>
-        <translation type="unfinished">عرض XML: %1, %2, %3.</translation>
+        <translation>عرض XML: %1, %2, %3.</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2054"/>
@@ -49643,29 +49643,29 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="8190"/>
         <location filename="../src/engine/timetableexport.cpp" line="8270"/>
         <location filename="../src/engine/timetableexport.cpp" line="8345"/>
-        <location filename="../src/engine/timetableexport.cpp" line="8422"/>
-        <location filename="../src/engine/timetableexport.cpp" line="8494"/>
-        <location filename="../src/engine/timetableexport.cpp" line="8598"/>
-        <location filename="../src/engine/timetableexport.cpp" line="8703"/>
-        <location filename="../src/engine/timetableexport.cpp" line="8809"/>
-        <location filename="../src/engine/timetableexport.cpp" line="8918"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9020"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9125"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9207"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9288"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9373"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9459"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9540"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9622"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9739"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9857"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10013"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10038"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10206"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10236"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10370"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10379"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10409"/>
+        <location filename="../src/engine/timetableexport.cpp" line="8426"/>
+        <location filename="../src/engine/timetableexport.cpp" line="8498"/>
+        <location filename="../src/engine/timetableexport.cpp" line="8602"/>
+        <location filename="../src/engine/timetableexport.cpp" line="8707"/>
+        <location filename="../src/engine/timetableexport.cpp" line="8813"/>
+        <location filename="../src/engine/timetableexport.cpp" line="8922"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9024"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9129"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9211"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9292"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9377"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9463"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9544"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9626"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9743"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9861"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10017"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10042"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10210"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10240"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10374"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10383"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10413"/>
         <source>Timetable generated with FET %1 on %2</source>
         <comment>%1 is FET version, %2 is the date and time of generation</comment>
         <translation type="unfinished">انتج الجدول بواسطة فيت %1 في %2</translation>
@@ -49771,233 +49771,233 @@ Bottom: %4</source>
         <translation>مدرس غير متاح</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9681"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9800"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9685"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9804"/>
         <source>Single gap</source>
         <translation>فراغ واحد</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9682"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9801"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9686"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9805"/>
         <source>Border gap</source>
         <translation>حصتين فارغتين</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9683"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9802"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9687"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9806"/>
         <source>Big gap</source>
         <translation>فراغ كبير</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9684"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9803"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9688"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9807"/>
         <source>Must come earlier</source>
         <translation>يجب الحضور مبكراً</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9685"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9804"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9689"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9808"/>
         <source>Must stay longer</source>
         <translation>ينتظر طويلاً</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9686"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9805"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9690"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9809"/>
         <source>Must come much earlier</source>
         <translation>يجب الحضور مبكراً جداً</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9687"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9806"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9691"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9810"/>
         <source>Must stay much longer</source>
         <translation>ينتظر طويلاً جداً</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9688"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9807"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9692"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9811"/>
         <source>Free day</source>
         <translation>مفرغ اليوم</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9689"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9693"/>
         <source>Not available</source>
         <comment>It refers to a teacher</comment>
         <translation type="unfinished">غير متاح</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9808"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9812"/>
         <source>Not available</source>
         <translation>غير متاح</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9874"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10055"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9878"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10059"/>
         <source>This is a teaser only. Values are not correct!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9878"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10059"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9882"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10063"/>
         <source>This file doesn&apos;t list limits that are set by constraints. It contains statistics about the min and max values of the currently calculated solution.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9981"/>
-        <source>All teachers</source>
-        <translation type="unfinished">كل المدرسين</translation>
-    </message>
-    <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9982"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10024"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10175"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10222"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10395"/>
-        <source>Free days</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9983"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10176"/>
-        <source>Gaps</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9984"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10177"/>
-        <source>Gaps per day</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../src/engine/timetableexport.cpp" line="9985"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10178"/>
-        <source>Hours per day</source>
-        <translation type="unfinished"></translation>
+        <source>All teachers</source>
+        <translation>كل المدرسين</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timetableexport.cpp" line="9986"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10028"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10179"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10226"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10399"/>
+        <source>Free days</source>
+        <translation>أيام فارغة</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timetableexport.cpp" line="9987"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10180"/>
+        <source>Gaps</source>
+        <translation>الفراغات</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9988"/>
         <location filename="../src/engine/timetableexport.cpp" line="10181"/>
+        <source>Gaps per day</source>
+        <translation>فراغ / يوم</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timetableexport.cpp" line="9989"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10182"/>
+        <source>Hours per day</source>
+        <translation>ساعة / يوم</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timetableexport.cpp" line="9992"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10185"/>
         <source>Sum</source>
-        <translation type="unfinished">المجموع</translation>
+        <translation>المجموع</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9994"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10187"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9998"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10191"/>
         <source>Average</source>
-        <translation type="unfinished"></translation>
+        <translation>المتوسط</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10000"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10193"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10004"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10197"/>
         <source>Min</source>
-        <translation type="unfinished"></translation>
+        <translation>الأدنى</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10006"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10199"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10010"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10203"/>
         <source>Max</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10023"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10032"/>
-        <source>Teacher</source>
-        <translation type="unfinished">المدرس</translation>
-    </message>
-    <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10025"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10223"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10396"/>
-        <source>Total gaps</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10026"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10224"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10256"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10274"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10397"/>
-        <source>Min gaps per day</source>
-        <translation type="unfinished"></translation>
+        <translation>الأعلى</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10027"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10225"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10257"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10275"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10398"/>
-        <source>Max gaps per day</source>
-        <translation type="unfinished">العدد الأقصى للفراغات في اليوم</translation>
-    </message>
-    <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10028"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10226"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10252"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10270"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10399"/>
-        <source>Min hours per day</source>
-        <translation type="unfinished"></translation>
+        <location filename="../src/engine/timetableexport.cpp" line="10036"/>
+        <source>Teacher</source>
+        <translation>المدرس</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10029"/>
         <location filename="../src/engine/timetableexport.cpp" line="10227"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10253"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10271"/>
         <location filename="../src/engine/timetableexport.cpp" line="10400"/>
+        <source>Total gaps</source>
+        <translation>كل الفراغات</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timetableexport.cpp" line="10030"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10228"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10260"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10278"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10401"/>
+        <source>Min gaps per day</source>
+        <translation>أقل فراغات / يوم</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timetableexport.cpp" line="10031"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10229"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10261"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10279"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10402"/>
+        <source>Max gaps per day</source>
+        <translation>أقصى فراغات / يوم</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timetableexport.cpp" line="10032"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10230"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10256"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10274"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10403"/>
+        <source>Min hours per day</source>
+        <translation>أقل حصص / يوم</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timetableexport.cpp" line="10033"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10231"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10257"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10275"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10404"/>
         <source>Max hours per day</source>
-        <translation type="unfinished"></translation>
+        <translation>أقصى حصص / يوم</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10174"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10178"/>
         <source>All students</source>
-        <translation type="unfinished">كل الطلاب</translation>
-    </message>
-    <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10250"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10268"/>
-        <source>Min free days</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10251"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10269"/>
-        <source>Max free days</source>
-        <translation type="unfinished"></translation>
+        <translation>كل الطلاب</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10254"/>
         <location filename="../src/engine/timetableexport.cpp" line="10272"/>
-        <source>Min gaps per week</source>
-        <translation type="unfinished"></translation>
+        <source>Min free days</source>
+        <translation>أقل أيام فارغة</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10255"/>
         <location filename="../src/engine/timetableexport.cpp" line="10273"/>
+        <source>Max free days</source>
+        <translation>أقصى أيام فارغة</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timetableexport.cpp" line="10258"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10276"/>
+        <source>Min gaps per week</source>
+        <translation>أقل فراغات / أسبوع</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timetableexport.cpp" line="10259"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10277"/>
         <source>Max gaps per week</source>
-        <translation type="unfinished">الفراغات الاسبوعية القصوى</translation>
+        <translation>أقصى فراغات / أسبوع</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10221"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10230"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10394"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10403"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10225"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10234"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10398"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10407"/>
         <source>Subgroup</source>
-        <translation type="unfinished">المجموعة الفرعية</translation>
+        <translation>المجموعة الفرعية</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9640"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9758"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9644"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9762"/>
         <source>Teachers&apos; Free Periods</source>
         <translation>الحصص الفارغة للمدرسين</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="1724"/>
         <source>Soft conflicts list (in decreasing order):</source>
-        <translation type="unfinished">قائمة التعارضات البرمجية (مرتبة تنازلياً):</translation>
+        <translation>قائمة التعارضات البرمجية (مرتبة تنازلياً):</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="1740"/>
         <source>Conflicts list (in decreasing order):</source>
-        <translation type="unfinished">قائمة التعارضات (حسب حصولها):</translation>
+        <translation>قائمة التعارضات (حسب حصولها):</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="886"/>
@@ -50181,7 +50181,7 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="2023"/>
         <source>teachers - disabled</source>
         <comment>It means the teachers XML timetables are disabled</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">المدرسين - معطل</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2027"/>
@@ -50330,7 +50330,7 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="1732"/>
         <location filename="../src/engine/timetableexport.cpp" line="2328"/>
         <source>unnamed</source>
-        <translation type="unfinished">غير مسمى</translation>
+        <translation>بدون اسم</translation>
     </message>
 </context>
 <context>
@@ -50390,7 +50390,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="625"/>
         <source>Total soft conflicts:</source>
-        <translation type="unfinished">كل التعارضات:</translation>
+        <translation>كل التعارضات:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="897"/>
@@ -50421,7 +50421,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegenerateform.cpp" line="803"/>
         <location filename="../src/interface/timetablegenerateform.cpp" line="852"/>
         <source>Number of broken constraints: %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">عدد القيود المتجاهلة: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="312"/>
@@ -50436,7 +50436,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegenerateform.cpp" line="618"/>
         <source>Soft conflicts</source>
         <comment>Title of dialog</comment>
-        <translation type="unfinished">التعارضات</translation>
+        <translation>التعارضات</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="621"/>
@@ -52318,27 +52318,27 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="31"/>
         <source>Soft conflicts</source>
-        <translation type="unfinished">التعارضات</translation>
+        <translation>التعارضات</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="53"/>
         <source>Subgroups</source>
-        <translation type="unfinished">المجموعات الفرعية</translation>
+        <translation>المجموعات الفرعية</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="63"/>
         <source>Groups</source>
-        <translation type="unfinished">المجموعات</translation>
+        <translation>المجموعات</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="73"/>
         <source>Years</source>
-        <translation type="unfinished">الاعوام</translation>
+        <translation>الاعوام</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="83"/>
         <source>Teachers</source>
-        <translation type="unfinished"></translation>
+        <translation>المدرسين</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="93"/>
@@ -52358,12 +52358,12 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="123"/>
         <source>Activities</source>
-        <translation type="unfinished">المهام</translation>
+        <translation>المهام</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="133"/>
         <source>Activity tags</source>
-        <translation type="unfinished"></translation>
+        <translation>الوسوم المشتركة</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="155"/>
@@ -52393,17 +52393,17 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="205"/>
         <source>Time vertical</source>
-        <translation type="unfinished">الزمن رأسيا</translation>
+        <translation>الزمن رأسيا</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="248"/>
         <source>Cancel</source>
-        <translation type="unfinished">الغاء</translation>
+        <translation>الغاء</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="255"/>
         <source>OK</source>
-        <translation type="unfinished">موافق</translation>
+        <translation>موافق</translation>
     </message>
 </context>
 <context>
@@ -52495,17 +52495,17 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/yearsform.cpp" line="317"/>
         <source>Students year comments</source>
-        <translation type="unfinished"></translation>
+        <translation>شرح طلاب العام</translation>
     </message>
     <message>
         <location filename="../src/interface/yearsform.cpp" line="319"/>
         <source>OK</source>
-        <translation type="unfinished">موافق</translation>
+        <translation>موافق</translation>
     </message>
     <message>
         <location filename="../src/interface/yearsform.cpp" line="321"/>
         <source>Cancel</source>
-        <translation type="unfinished">الغاء</translation>
+        <translation>الغاء</translation>
     </message>
 </context>
 <context>
@@ -52534,7 +52534,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/yearsform_template.ui" line="58"/>
         <source>Comments</source>
-        <translation type="unfinished">شرح</translation>
+        <translation>شرح</translation>
     </message>
     <message>
         <location filename="../src/interface/yearsform_template.ui" line="74"/>
@@ -52550,13 +52550,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/yearsform_template.ui" line="90"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation>أعلى</translation>
     </message>
     <message>
         <location filename="../src/interface/yearsform_template.ui" line="97"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation>أدنى</translation>
     </message>
     <message>
         <location filename="../src/interface/yearsform_template.ui" line="111"/>
