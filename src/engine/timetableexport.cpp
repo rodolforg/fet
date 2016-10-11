@@ -8415,6 +8415,10 @@ QString TimetableExport::singleRoomsTimetableTimeVerticalDailyHtml(int htmlLevel
 			else
 				tmpString+="          <th>";
 			tmpString+=protect2(gt.rules.hoursOfTheDay[hour])+"</th>\n";
+			
+			if(hour==0)
+				tmpString+="        <th rowspan=\""+QString::number(gt.rules.nHoursPerDay)+ "\">"+protect2vert(gt.rules.daysOfTheWeek[day])+"</th>\n";
+			else tmpString+="          <!-- span -->\n";
 		}
 		tmpString+="        </tr>\n";
 	}
