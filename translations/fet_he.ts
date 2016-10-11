@@ -33746,24 +33746,6 @@ Please modify your data correspondingly and try again</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Copyright (C) 2002-2016 Liviu Lalescu, Volker Dirr.&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Version: 5.30.4 (October 2016).&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;FET homepage: &lt;a href=&quot;http://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="833"/>
         <source>Close</source>
         <translation type="unfinished"></translation>
@@ -33786,6 +33768,24 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="27"/>
         <source>About</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Copyright (C) 2002-2016 Liviu Lalescu, Volker Dirr.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Version: 5.30.5 (October 2016).&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;FET homepage: &lt;a href=&quot;http://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -49259,8 +49259,8 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="2891"/>
         <location filename="../src/engine/timetableexport.cpp" line="3106"/>
         <location filename="../src/engine/timetableexport.cpp" line="3155"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10249"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10260"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10253"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10264"/>
         <source>Year</source>
         <translation type="unfinished">שָנָה</translation>
     </message>
@@ -49269,8 +49269,8 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="2627"/>
         <location filename="../src/engine/timetableexport.cpp" line="2840"/>
         <location filename="../src/engine/timetableexport.cpp" line="2894"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10267"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10278"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10271"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10282"/>
         <source>Group</source>
         <translation type="unfinished">קבוצה</translation>
     </message>
@@ -49505,29 +49505,29 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="8190"/>
         <location filename="../src/engine/timetableexport.cpp" line="8270"/>
         <location filename="../src/engine/timetableexport.cpp" line="8345"/>
-        <location filename="../src/engine/timetableexport.cpp" line="8422"/>
-        <location filename="../src/engine/timetableexport.cpp" line="8494"/>
-        <location filename="../src/engine/timetableexport.cpp" line="8598"/>
-        <location filename="../src/engine/timetableexport.cpp" line="8703"/>
-        <location filename="../src/engine/timetableexport.cpp" line="8809"/>
-        <location filename="../src/engine/timetableexport.cpp" line="8918"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9020"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9125"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9207"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9288"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9373"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9459"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9540"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9622"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9739"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9857"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10013"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10038"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10206"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10236"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10370"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10379"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10409"/>
+        <location filename="../src/engine/timetableexport.cpp" line="8426"/>
+        <location filename="../src/engine/timetableexport.cpp" line="8498"/>
+        <location filename="../src/engine/timetableexport.cpp" line="8602"/>
+        <location filename="../src/engine/timetableexport.cpp" line="8707"/>
+        <location filename="../src/engine/timetableexport.cpp" line="8813"/>
+        <location filename="../src/engine/timetableexport.cpp" line="8922"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9024"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9129"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9211"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9292"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9377"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9463"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9544"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9626"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9743"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9861"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10017"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10042"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10210"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10240"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10374"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10383"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10413"/>
         <source>Timetable generated with FET %1 on %2</source>
         <comment>%1 is FET version, %2 is the date and time of generation</comment>
         <translation type="unfinished"></translation>
@@ -49592,8 +49592,8 @@ Bottom: %4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9640"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9758"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9644"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9762"/>
         <source>Teachers&apos; Free Periods</source>
         <translation type="unfinished"></translation>
     </message>
@@ -49683,215 +49683,215 @@ Bottom: %4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9681"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9800"/>
-        <source>Single gap</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9682"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9801"/>
-        <source>Border gap</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9683"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9802"/>
-        <source>Big gap</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9684"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9803"/>
-        <source>Must come earlier</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../src/engine/timetableexport.cpp" line="9685"/>
         <location filename="../src/engine/timetableexport.cpp" line="9804"/>
-        <source>Must stay longer</source>
+        <source>Single gap</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9686"/>
         <location filename="../src/engine/timetableexport.cpp" line="9805"/>
-        <source>Must come much earlier</source>
+        <source>Border gap</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9687"/>
         <location filename="../src/engine/timetableexport.cpp" line="9806"/>
-        <source>Must stay much longer</source>
+        <source>Big gap</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9688"/>
         <location filename="../src/engine/timetableexport.cpp" line="9807"/>
-        <source>Free day</source>
+        <source>Must come earlier</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9689"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9808"/>
+        <source>Must stay longer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timetableexport.cpp" line="9690"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9809"/>
+        <source>Must come much earlier</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timetableexport.cpp" line="9691"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9810"/>
+        <source>Must stay much longer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timetableexport.cpp" line="9692"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9811"/>
+        <source>Free day</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timetableexport.cpp" line="9693"/>
         <source>Not available</source>
         <comment>It refers to a teacher</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9808"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9812"/>
         <source>Not available</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9874"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10055"/>
-        <source>This is a teaser only. Values are not correct!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9878"/>
         <location filename="../src/engine/timetableexport.cpp" line="10059"/>
+        <source>This is a teaser only. Values are not correct!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timetableexport.cpp" line="9882"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10063"/>
         <source>This file doesn&apos;t list limits that are set by constraints. It contains statistics about the min and max values of the currently calculated solution.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9981"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9985"/>
         <source>All teachers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9982"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10024"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10175"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10222"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10395"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9986"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10028"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10179"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10226"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10399"/>
         <source>Free days</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9983"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10176"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9987"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10180"/>
         <source>Gaps</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9984"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10177"/>
-        <source>Gaps per day</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9985"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10178"/>
-        <source>Hours per day</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9988"/>
         <location filename="../src/engine/timetableexport.cpp" line="10181"/>
+        <source>Gaps per day</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timetableexport.cpp" line="9989"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10182"/>
+        <source>Hours per day</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timetableexport.cpp" line="9992"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10185"/>
         <source>Sum</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9994"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10187"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9998"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10191"/>
         <source>Average</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10000"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10193"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10004"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10197"/>
         <source>Min</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10006"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10199"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10010"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10203"/>
         <source>Max</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10023"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10032"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10027"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10036"/>
         <source>Teacher</source>
         <translation type="unfinished">מורה</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10025"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10223"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10396"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10029"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10227"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10400"/>
         <source>Total gaps</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10026"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10224"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10256"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10274"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10397"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10030"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10228"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10260"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10278"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10401"/>
         <source>Min gaps per day</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10027"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10225"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10257"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10275"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10398"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10031"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10229"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10261"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10279"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10402"/>
         <source>Max gaps per day</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10028"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10226"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10252"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10270"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10399"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10032"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10230"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10256"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10274"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10403"/>
         <source>Min hours per day</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10029"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10227"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10253"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10271"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10400"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10033"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10231"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10257"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10275"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10404"/>
         <source>Max hours per day</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10174"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10178"/>
         <source>All students</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10250"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10268"/>
-        <source>Min free days</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10251"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10269"/>
-        <source>Max free days</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10254"/>
         <location filename="../src/engine/timetableexport.cpp" line="10272"/>
-        <source>Min gaps per week</source>
+        <source>Min free days</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10255"/>
         <location filename="../src/engine/timetableexport.cpp" line="10273"/>
+        <source>Max free days</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timetableexport.cpp" line="10258"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10276"/>
+        <source>Min gaps per week</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timetableexport.cpp" line="10259"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10277"/>
         <source>Max gaps per week</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10221"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10230"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10394"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10403"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10225"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10234"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10398"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10407"/>
         <source>Subgroup</source>
         <translation type="unfinished"></translation>
     </message>
