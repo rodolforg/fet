@@ -1903,3 +1903,6 @@ Versions 5.30.0 - 5.30.v
 	- Minor bug fix in the HTML timetables (reported by ant7, fixed by Volker Dirr).
 	- Reporting the number of broken (soft) constraints (suggested by Volker Dirr and mercurialuser).
 	- Added a new example file from United Arab Emirates, by Darren McDonald.
+- Version 5.30.5
+	- Minor bug fix in the HTML timetables, by Volker Dirr.
+	- Updated the Arabic translation, by Silver.
