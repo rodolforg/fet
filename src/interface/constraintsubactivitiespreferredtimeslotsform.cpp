@@ -15,68 +15,26 @@
  *                                                                         *
  ***************************************************************************/
 
-#include <QMessageBox>
-
-#include "longtextmessagebox.h"
-
 #include "constraintsubactivitiespreferredtimeslotsform.h"
 #include "addconstraintsubactivitiespreferredtimeslotsform.h"
 #include "modifyconstraintsubactivitiespreferredtimeslotsform.h"
 
-#include <QListWidget>
-#include <QScrollBar>
-#include <QAbstractItemView>
-
-ConstraintSubactivitiesPreferredTimeSlotsForm::ConstraintSubactivitiesPreferredTimeSlotsForm(QWidget* parent): QDialog(parent)
+ConstraintSubactivitiesPreferredTimeSlotsForm::ConstraintSubactivitiesPreferredTimeSlotsForm(QWidget* parent): ConstraintBaseDialog(parent)
 {
-	setupUi(this);
+	//: This is the title of the dialog to see the list of all constraints of this type
+	setWindowTitle(QCoreApplication::translate("ConstraintSubactivitiesPreferredTimeSlotsForm_template", "Constraints subactivities preferred time slots"));
 
-	currentConstraintTextEdit->setReadOnly(true);
-	
-	modifyConstraintPushButton->setDefault(true);
+	setInstructionText(QCoreApplication::translate("ConstraintSubactivitiesPreferredTimeSlotsForm_template", "This constraint is useful to constrain only the n-th component for activities. Please click Help button for details."));
+	setHelp();
 
-	constraintsListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
-
-	connect(constraintsListWidget, SIGNAL(currentRowChanged(int)), this, SLOT(constraintChanged(int)));
-	connect(addConstraintPushButton, SIGNAL(clicked()), this, SLOT(addConstraint()));
-	connect(closePushButton, SIGNAL(clicked()), this, SLOT(close()));
-	connect(removeConstraintPushButton, SIGNAL(clicked()), this, SLOT(removeConstraint()));
-	connect(modifyConstraintPushButton, SIGNAL(clicked()), this, SLOT(modifyConstraint()));
-	connect(constraintsListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(modifyConstraint()));
-	connect(helpPushButton, SIGNAL(clicked()), this, SLOT(help()));
-
-	centerWidgetOnScreen(this);
-	restoreFETDialogGeometry(this);
-	
-	this->refreshConstraintsListWidget();
+	filterChanged();
 }
 
 ConstraintSubactivitiesPreferredTimeSlotsForm::~ConstraintSubactivitiesPreferredTimeSlotsForm()
 {
-	saveFETDialogGeometry(this);
 }
 
-void ConstraintSubactivitiesPreferredTimeSlotsForm::refreshConstraintsListWidget()
-{
-	this->visibleConstraintsList.clear();
-	constraintsListWidget->clear();
-	for(int i=0; i<gt.rules.timeConstraintsList.size(); i++){
-		TimeConstraint* ctr=gt.rules.timeConstraintsList[i];
-		if(filterOk(ctr)){
-			QString s;
-			s=ctr->getDescription(gt.rules);
-			visibleConstraintsList.append(ctr);
-			constraintsListWidget->addItem(s);
-		}
-	}
-
-	if(constraintsListWidget->count()>0)
-		constraintsListWidget->setCurrentRow(0);
-	else
-		this->constraintChanged(-1);
-}
-
-bool ConstraintSubactivitiesPreferredTimeSlotsForm::filterOk(TimeConstraint* ctr)
+bool ConstraintSubactivitiesPreferredTimeSlotsForm::filterOk(const TimeConstraint* ctr) const
 {
 	if(ctr->type==CONSTRAINT_SUBACTIVITIES_PREFERRED_TIME_SLOTS)
 		return true;
@@ -84,102 +42,19 @@ bool ConstraintSubactivitiesPreferredTimeSlotsForm::filterOk(TimeConstraint* ctr
 		return false;
 }
 
-void ConstraintSubactivitiesPreferredTimeSlotsForm::constraintChanged(int index)
+QDialog * ConstraintSubactivitiesPreferredTimeSlotsForm::createAddDialog()
 {
-	if(index<0){
-		currentConstraintTextEdit->setPlainText("");
-		return;
-	}
-	QString s;
-	assert(index<this->visibleConstraintsList.size());
-	TimeConstraint* ctr=this->visibleConstraintsList.at(index);
-	assert(ctr!=NULL);
-	s=ctr->getDetailedDescription(gt.rules);
-	currentConstraintTextEdit->setPlainText(s);
+	return new AddConstraintSubactivitiesPreferredTimeSlotsForm(this);
 }
 
-void ConstraintSubactivitiesPreferredTimeSlotsForm::addConstraint()
+QDialog * ConstraintSubactivitiesPreferredTimeSlotsForm::createModifyDialog(TimeConstraint *ctr)
 {
-	AddConstraintSubactivitiesPreferredTimeSlotsForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-
-	this->refreshConstraintsListWidget();
-	
-	constraintsListWidget->setCurrentRow(constraintsListWidget->count()-1);
+	return new ModifyConstraintSubactivitiesPreferredTimeSlotsForm(this, (ConstraintSubactivitiesPreferredTimeSlots*)ctr);
 }
 
-void ConstraintSubactivitiesPreferredTimeSlotsForm::modifyConstraint()
+void ConstraintSubactivitiesPreferredTimeSlotsForm::setHelp()
 {
-	int valv=constraintsListWidget->verticalScrollBar()->value();
-	int valh=constraintsListWidget->horizontalScrollBar()->value();
-
-	int i=constraintsListWidget->currentRow();
-	if(i<0){
-		QMessageBox::information(this, tr("FET information"), tr("Invalid selected constraint"));
-		return;
-	}
-	TimeConstraint* ctr=this->visibleConstraintsList.at(i);
-
-	ModifyConstraintSubactivitiesPreferredTimeSlotsForm form(this, (ConstraintSubactivitiesPreferredTimeSlots*)ctr);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-
-	this->refreshConstraintsListWidget();
-	
-	constraintsListWidget->verticalScrollBar()->setValue(valv);
-	constraintsListWidget->horizontalScrollBar()->setValue(valh);
-
-	if(i>=constraintsListWidget->count())
-		i=constraintsListWidget->count()-1;
-
-	if(i>=0)
-		constraintsListWidget->setCurrentRow(i);
-	else
-		this->constraintChanged(-1);
-}
-
-void ConstraintSubactivitiesPreferredTimeSlotsForm::removeConstraint()
-{
-	int i=constraintsListWidget->currentRow();
-	if(i<0){
-		QMessageBox::information(this, tr("FET information"), tr("Invalid selected constraint"));
-		return;
-	}
-	TimeConstraint* ctr=this->visibleConstraintsList.at(i);
-	QString s;
-	s=tr("Remove constraint?");
-	s+="\n\n";
-	s+=ctr->getDetailedDescription(gt.rules);
-	
-	QListWidgetItem* item;
-
-	switch( LongTextMessageBox::confirmation( this, tr("FET confirmation"),
-		s, tr("Yes"), tr("No"), 0, 0, 1 ) ){
-	case 0: // The user clicked the OK button or pressed Enter
-		gt.rules.removeTimeConstraint(ctr);
-		
-		visibleConstraintsList.removeAt(i);
-		constraintsListWidget->setCurrentRow(-1);
-		item=constraintsListWidget->takeItem(i);
-		delete item;
-		
-		break;
-	case 1: // The user clicked the Cancel button or pressed Escape
-		break;
-	}
-
-	if(i>=constraintsListWidget->count())
-		i=constraintsListWidget->count()-1;
-	if(i>=0)
-		constraintsListWidget->setCurrentRow(i);
-	else
-		this->constraintChanged(-1);
-}
-
-void ConstraintSubactivitiesPreferredTimeSlotsForm::help()
-{
-	LongTextMessageBox::largeInformation(this, tr("FET help"), tr(
+	QString s = tr(
 	 "This constraint is used to specify that for some components of a type of"
 	" activities, for instance for Mathematics activities, you need that from say 4-5"
 	" per week, at least the first 2 to be early (say in the first 4 hours).")
@@ -198,5 +73,7 @@ void ConstraintSubactivitiesPreferredTimeSlotsForm::help()
  	 " or 2 per week and want to constrain only one component if there are 2 per week, add a constraint for Biology with component number=2")
  	 +"\n\n"+
  	 tr("Note: if a teacher or a students set cannot have lessons in some slots because of this constraint, gaps will be counted (if you have max gaps constraints)"
- 	  ". So be careful if you add this constraint for all sub-activities, for only a teacher or for only a students set"));
+	  ". So be careful if you add this constraint for all sub-activities, for only a teacher or for only a students set");
+
+	setHelpText(s);
 }
