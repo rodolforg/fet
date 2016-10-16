@@ -18,31 +18,21 @@
 #ifndef CONSTRAINTMINGAPSBETWEENACTIVITIESFORM_H
 #define CONSTRAINTMINGAPSBETWEENACTIVITIESFORM_H
 
-#include "ui_constraintmingapsbetweenactivitiesform_template.h"
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
+#include "constraint_basedialog.h"
 
-class ConstraintMinGapsBetweenActivitiesForm : public QDialog, Ui::ConstraintMinGapsBetweenActivitiesForm_template  {
+class ConstraintMinGapsBetweenActivitiesForm : public ConstraintBaseDialog  {
 	Q_OBJECT
 
 public:
-	TimeConstraintsList visibleConstraintsList;
-
 	ConstraintMinGapsBetweenActivitiesForm(QWidget* parent);
 	~ConstraintMinGapsBetweenActivitiesForm();
 
-	bool filterOk(TimeConstraint* ctr);
-	
-public slots:
-	void constraintChanged(int index);
-	void addConstraint();
-	void modifyConstraint();
-	void removeConstraint();
+protected:
+	virtual QDialog *createAddDialog();
+	virtual QDialog *createModifyDialog(TimeConstraint *ctr);
+	virtual bool filterOk(const TimeConstraint *ctr) const;
 
-	void filterChanged();
-
-	void help();
+	void setHelp();
 };
 
 #endif

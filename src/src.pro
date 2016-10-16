@@ -1319,7 +1319,6 @@ FORMS += \
 	interface/addconstraintmaxdaysbetweenactivitiesform_template.ui \
 	interface/modifyconstraintmaxdaysbetweenactivitiesform_template.ui \
 	\
-	interface/constraintmingapsbetweenactivitiesform_template.ui \
 	interface/addconstraintmingapsbetweenactivitiesform_template.ui \
 	interface/modifyconstraintmingapsbetweenactivitiesform_template.ui \
 	\
