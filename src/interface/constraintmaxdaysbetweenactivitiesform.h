@@ -18,31 +18,21 @@
 #ifndef CONSTRAINTMAXDAYSBETWEENACTIVITIESFORM_H
 #define CONSTRAINTMAXDAYSBETWEENACTIVITIESFORM_H
 
-#include "ui_constraintmaxdaysbetweenactivitiesform_template.h"
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
+#include "constraint_basedialog.h"
 
-class ConstraintMaxDaysBetweenActivitiesForm : public QDialog, Ui::ConstraintMaxDaysBetweenActivitiesForm_template  {
+class ConstraintMaxDaysBetweenActivitiesForm : public ConstraintBaseDialog  {
 	Q_OBJECT
 
 public:
-	TimeConstraintsList visibleConstraintsList;
-
 	ConstraintMaxDaysBetweenActivitiesForm(QWidget* parent);
 	~ConstraintMaxDaysBetweenActivitiesForm();
 
-	bool filterOk(TimeConstraint* ctr);
-	
-public slots:
-	void constraintChanged(int index);
-	void addConstraint();
-	void modifyConstraint();
-	void removeConstraint();
+protected:
+	virtual QDialog *createAddDialog();
+	virtual QDialog *createModifyDialog(TimeConstraint *ctr);
+	virtual bool filterOk(const TimeConstraint *ctr) const;
 
-	void filterChanged();
-	
-	void help();
+	void setHelp();
 };
 
 #endif

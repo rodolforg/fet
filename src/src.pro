@@ -1316,7 +1316,6 @@ FORMS += \
 	interface/addgroupactivitiesininitialorderitemform_template.ui \
 	interface/modifygroupactivitiesininitialorderitemform_template.ui \
 	\
-	interface/constraintmaxdaysbetweenactivitiesform_template.ui \
 	interface/addconstraintmaxdaysbetweenactivitiesform_template.ui \
 	interface/modifyconstraintmaxdaysbetweenactivitiesform_template.ui \
 	\
