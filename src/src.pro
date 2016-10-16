@@ -1201,7 +1201,6 @@ FORMS += \
 	interface/constraintteacherminhoursdailyform_template.ui \
 	interface/addconstraintteacherminhoursdailyform_template.ui \
 	interface/modifyconstraintteacherminhoursdailyform_template.ui \
-	interface/constraintactivitypreferredstartingtimeform_template.ui \
 	interface/addconstraintactivitypreferredstartingtimeform_template.ui \
 	interface/modifyconstraintactivitypreferredstartingtimeform_template.ui \
 	interface/addconstraintactivityendsstudentsdayform_template.ui \
