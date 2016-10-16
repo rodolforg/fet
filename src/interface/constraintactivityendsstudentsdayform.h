@@ -26,7 +26,7 @@ public:
 	ConstraintActivityEndsStudentsDayForm(QWidget* parent);
 	~ConstraintActivityEndsStudentsDayForm();
 
-public slots:
+protected:
 	virtual QDialog *createAddDialog();
 	virtual QDialog *createModifyDialog(TimeConstraint *ctr);
 	virtual bool filterOk(const TimeConstraint *ctr) const;
