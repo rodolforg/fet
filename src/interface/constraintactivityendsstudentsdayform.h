@@ -18,28 +18,18 @@
 #ifndef CONSTRAINTACTIVITYENDSSTUDENTSDAYFORM_H
 #define CONSTRAINTACTIVITYENDSSTUDENTSDAYFORM_H
 
-#include "ui_constraintactivityendsstudentsdayform_template.h"
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
+#include "constraint_basedialog.h"
 
-class ConstraintActivityEndsStudentsDayForm : public QDialog, Ui::ConstraintActivityEndsStudentsDayForm_template  {
+class ConstraintActivityEndsStudentsDayForm : public ConstraintBaseDialog  {
 	Q_OBJECT
 public:
-	TimeConstraintsList visibleConstraintsList;
-
 	ConstraintActivityEndsStudentsDayForm(QWidget* parent);
 	~ConstraintActivityEndsStudentsDayForm();
 
-	bool filterOk(TimeConstraint* ctr);
-
 public slots:
-	void constraintChanged(int index);
-	void addConstraint();
-	void modifyConstraint();
-	void removeConstraint();
-
-	void filterChanged();
+	virtual QDialog *createAddDialog();
+	virtual QDialog *createModifyDialog(TimeConstraint *ctr);
+	virtual bool filterOk(const TimeConstraint *ctr) const;
 };
 
 #endif

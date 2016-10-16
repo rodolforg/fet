@@ -1204,7 +1204,6 @@ FORMS += \
 	interface/constraintactivitypreferredstartingtimeform_template.ui \
 	interface/addconstraintactivitypreferredstartingtimeform_template.ui \
 	interface/modifyconstraintactivitypreferredstartingtimeform_template.ui \
-	interface/constraintactivityendsstudentsdayform_template.ui \
 	interface/addconstraintactivityendsstudentsdayform_template.ui \
 	interface/modifyconstraintactivityendsstudentsdayform_template.ui \
 	\
