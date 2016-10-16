@@ -53,7 +53,7 @@
       <item>
        <widget class="QLabel" name="activityTagsLabel">
         <property name="text">
-         <string>Activity Tag</string>
+         <string>Activity tag</string>
         </property>
        </widget>
       </item>
