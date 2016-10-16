@@ -1292,7 +1292,6 @@ FORMS += \
 	interface/addconstraintactivitiessameroomifconsecutiveform_template.ui \
 	interface/modifyconstraintactivitiessameroomifconsecutiveform_template.ui \
 	\
-	interface/constrainttwoactivitiesconsecutiveform_template.ui \
 	interface/addconstrainttwoactivitiesconsecutiveform_template.ui \
 	interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui \
 	\

@@ -18,28 +18,18 @@
 #ifndef CONSTRAINTTWOACTIVITIESCONSECUTIVEFORM_H
 #define CONSTRAINTTWOACTIVITIESCONSECUTIVEFORM_H
 
-#include "ui_constrainttwoactivitiesconsecutiveform_template.h"
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
+#include "constraint_basedialog.h"
 
-class ConstraintTwoActivitiesConsecutiveForm : public QDialog, Ui::ConstraintTwoActivitiesConsecutiveForm_template  {
+class ConstraintTwoActivitiesConsecutiveForm : public ConstraintBaseDialog  {
 	Q_OBJECT
 public:
-	TimeConstraintsList visibleConstraintsList;
-
 	ConstraintTwoActivitiesConsecutiveForm(QWidget* parent);
 	~ConstraintTwoActivitiesConsecutiveForm();
 
-	bool filterOk(TimeConstraint* ctr);
-
-public slots:
-	void constraintChanged(int index);
-	void addConstraint();
-	void modifyConstraint();
-	void removeConstraint();
-
-	void filterChanged();
+protected:
+	virtual QDialog *createAddDialog();
+	virtual QDialog *createModifyDialog(TimeConstraint *ctr);
+	virtual bool filterOk(const TimeConstraint *ctr) const;
 };
 
 #endif
