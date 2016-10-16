@@ -1295,7 +1295,6 @@ FORMS += \
 	interface/addconstrainttwoactivitiesconsecutiveform_template.ui \
 	interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui \
 	\
-	interface/constrainttwoactivitiesgroupedform_template.ui \
 	interface/addconstrainttwoactivitiesgroupedform_template.ui \
 	interface/modifyconstrainttwoactivitiesgroupedform_template.ui \
 	\
