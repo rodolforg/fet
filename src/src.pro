@@ -1124,7 +1124,6 @@ FORMS += \
 	interface/constraintstudentssetnotavailabletimesform_template.ui \
 	interface/addconstraintstudentssetnotavailabletimesform_template.ui \
 	interface/modifyconstraintstudentssetnotavailabletimesform_template.ui \
-	interface/constraintbreaktimesform_template.ui \
 	interface/addconstraintbreaktimesform_template.ui \
 	interface/modifyconstraintbreaktimesform_template.ui \
 	interface/constraintteachermaxdaysperweekform_template.ui \
