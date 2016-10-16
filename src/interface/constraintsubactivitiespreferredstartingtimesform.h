@@ -18,30 +18,22 @@
 #ifndef CONSTRAINTSUBACTIVITIESPREFERREDSTARTINGTIMESFORM_H
 #define CONSTRAINTSUBACTIVITIESPREFERREDSTARTINGTIMESFORM_H
 
-#include "ui_constraintsubactivitiespreferredstartingtimesform_template.h"
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
+#include "constraint_basedialog.h"
 
-class ConstraintSubactivitiesPreferredStartingTimesForm : public QDialog, Ui::ConstraintSubactivitiesPreferredStartingTimesForm_template  {
+class ConstraintSubactivitiesPreferredStartingTimesForm : public ConstraintBaseDialog  {
 	Q_OBJECT
 public:
-	TimeConstraintsList visibleConstraintsList;
-
 	ConstraintSubactivitiesPreferredStartingTimesForm(QWidget* parent);
 	~ConstraintSubactivitiesPreferredStartingTimesForm();
 
-	void refreshConstraintsListWidget();
-
 	bool filterOk(TimeConstraint* ctr);
 
-public slots:
-	void constraintChanged(int index);
-	void addConstraint();
-	void modifyConstraint();
-	void removeConstraint();
+protected:
+	virtual QDialog *createAddDialog();
+	virtual QDialog *createModifyDialog(TimeConstraint *ctr);
+	virtual bool filterOk(const TimeConstraint* ctr) const;
 
-	void help();
+	void setHelp();
 };
 
 #endif
