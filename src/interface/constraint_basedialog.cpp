@@ -164,6 +164,8 @@ void ConstraintBaseDialog::removeConstraint()
 		item=constraintsListWidget->takeItem(i);
 		delete item;
 
+		afterRemoveConstraint();
+
 		break;
 	case 1: // The user clicked the Cancel button or pressed Escape
 		break;
@@ -177,7 +179,12 @@ void ConstraintBaseDialog::removeConstraint()
 		this->constraintChanged(-1);
 }
 
-void ConstraintBaseDialog::setHelpText(QString msg) {
+void ConstraintBaseDialog::afterRemoveConstraint()
+{
+}
+
+void ConstraintBaseDialog::setHelpText(QString msg)
+{
 	helpPushButton->setHidden(msg.isEmpty());
 	helpMsg = msg;
 }

@@ -25,7 +25,7 @@ protected:
 	 */
 	virtual QDialog *createAddDialog() = 0;
 	/**
-	 * @brief nstantiate a dialog (without executing it) for modifying an existing constraint
+	 * @brief Instantiate a dialog (without executing it) for modifying an existing constraint
 	 * @param ctr the constraint to be modified
 	 * @return the instantiated dialog
 	 */
@@ -44,6 +44,11 @@ protected:
 	void filterChanged();
 	void setFilterWidget(QWidget *widget);
 	QWidget *getFilterWidget() const;
+
+	/**
+	 * @brief A callback function called after a constraint is successfully removed from this dialog list
+	 */
+	virtual void afterRemoveConstraint();
 
 	TimeConstraintsList visibleConstraintsList;
 
