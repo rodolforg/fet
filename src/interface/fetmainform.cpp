@@ -1013,7 +1013,7 @@ QString FetMainForm::strippedName(const QString& fullFileName)
 void FetMainForm::setCurrentFile(const QString& fileName)
 {
 	QString currentFile=fileName;
-	QString shownName=QString("Untitled");
+	QString shownName=tr("Untitled");
 	
 	if(!currentFile.isEmpty()){
 		shownName=strippedName(currentFile);
