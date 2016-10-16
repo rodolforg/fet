@@ -1300,7 +1300,6 @@ FORMS += \
 	interface/addconstrainttwoactivitiesgroupedform_template.ui \
 	interface/modifyconstrainttwoactivitiesgroupedform_template.ui \
 	\
-	interface/constraintthreeactivitiesgroupedform_template.ui \
 	interface/addconstraintthreeactivitiesgroupedform_template.ui \
 	interface/modifyconstraintthreeactivitiesgroupedform_template.ui \
 	\
