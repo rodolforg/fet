@@ -24,8 +24,6 @@ File spaceconstraint.h
 
 #include <QCoreApplication>
 
-#include "timetable_defs.h"
-
 #include <QString>
 #include <QList>
 #include <QStringList>
@@ -134,19 +132,19 @@ public:
 	/**
 	Returns an XML description of this constraint
 	*/
-	virtual QString getXmlDescription(Rules& r)=0;
+	virtual QString getXmlDescription(const Rules& r) const = 0;
 
 	/**
 	Computes the internal structure for this constraint
 	*/
 	virtual bool computeInternalStructure(QWidget* parent, Rules& r)=0;
 	
-	virtual bool hasInactiveActivities(Rules& r)=0;
+	virtual bool hasInactiveActivities(const Rules& r) const = 0;
 
 	/**
 	Returns a small description string for this constraint
 	*/
-	virtual QString getDescription(Rules& r)=0;
+	virtual QString getDescription(const Rules& r) const = 0;
 
 	/**
 	Returns a detailed description string for this constraint
@@ -183,8 +181,8 @@ public:
 	*/
 	virtual bool isRelatedToRoom(const Room* r) const = 0;
 
-	virtual bool hasWrongDayOrHour(Rules& r)=0;
-	virtual bool canRepairWrongDayOrHour(Rules& r)=0;
+	virtual bool hasWrongDayOrHour(const Rules& r) const = 0;
+	virtual bool canRepairWrongDayOrHour(const Rules& r) const = 0;
 	virtual bool repairWrongDayOrHour(Rules& r)=0;
 };
 
@@ -202,11 +200,11 @@ public:
 
 	bool computeInternalStructure(QWidget* parent, Rules& r);
 
-	bool hasInactiveActivities(Rules& r);
+	bool hasInactiveActivities(const Rules& r) const;
 	
-	QString getXmlDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
 
-	QString getDescription(Rules& r);
+	QString getDescription(const Rules& r) const;
 
 	QString getDetailedDescription(const Rules& r) const;
 
@@ -224,8 +222,8 @@ public:
 
 	bool isRelatedToRoom(const Room* r) const;
 
-	bool hasWrongDayOrHour(Rules& r);
-	bool canRepairWrongDayOrHour(Rules& r);
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
 	bool repairWrongDayOrHour(Rules& r);
 };
 
@@ -253,11 +251,11 @@ public:
 
 	bool computeInternalStructure(QWidget* parent, Rules& r);
 
-	bool hasInactiveActivities(Rules& r);
+	bool hasInactiveActivities(const Rules& r) const;
 	
-	QString getXmlDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
 
-	QString getDescription(Rules& r);
+	QString getDescription(const Rules& r) const;
 
 	QString getDetailedDescription(const Rules& r) const;
 
@@ -275,8 +273,8 @@ public:
 
 	bool isRelatedToRoom(const Room* r) const;
 
-	bool hasWrongDayOrHour(Rules& r);
-	bool canRepairWrongDayOrHour(Rules& r);
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
 	bool repairWrongDayOrHour(Rules& r);
 };
 
@@ -315,11 +313,11 @@ public:
 
 	bool computeInternalStructure(QWidget* parent, Rules& r);
 
-	bool hasInactiveActivities(Rules& r);
+	bool hasInactiveActivities(const Rules& r) const;
 	
-	QString getXmlDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
 
-	QString getDescription(Rules& r);
+	QString getDescription(const Rules& r) const;
 
 	QString getDetailedDescription(const Rules& r) const;
 
@@ -338,8 +336,8 @@ public:
 
 	bool isRelatedToRoom(const Room* r) const;
 
-	bool hasWrongDayOrHour(Rules& r);
-	bool canRepairWrongDayOrHour(Rules& r);
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
 	bool repairWrongDayOrHour(Rules& r);
 };
 
@@ -371,11 +369,11 @@ public:
 
 	bool computeInternalStructure(QWidget* parent, Rules& r);
 
-	bool hasInactiveActivities(Rules& r);
+	bool hasInactiveActivities(const Rules& r) const;
 	
-	QString getXmlDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
 
-	QString getDescription(Rules& r);
+	QString getDescription(const Rules& r) const;
 
 	QString getDetailedDescription(const Rules& r) const;
 
@@ -393,8 +391,8 @@ public:
 
 	bool isRelatedToRoom(const Room* r) const;
 
-	bool hasWrongDayOrHour(Rules& r);
-	bool canRepairWrongDayOrHour(Rules& r);
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
 	bool repairWrongDayOrHour(Rules& r);
 };
 
@@ -420,11 +418,11 @@ public:
 
 	bool computeInternalStructure(QWidget* parent, Rules& r);
 
-	bool hasInactiveActivities(Rules& r);
+	bool hasInactiveActivities(const Rules& r) const;
 	
-	QString getXmlDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
 
-	QString getDescription(Rules& r);
+	QString getDescription(const Rules& r) const;
 
 	QString getDetailedDescription(const Rules& r) const;
 
@@ -442,8 +440,8 @@ public:
 
 	bool isRelatedToRoom(const Room* r) const;
 
-	bool hasWrongDayOrHour(Rules& r);
-	bool canRepairWrongDayOrHour(Rules& r);
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
 	bool repairWrongDayOrHour(Rules& r);
 };
 
@@ -471,11 +469,11 @@ public:
 
 	bool computeInternalStructure(QWidget* parent, Rules& r);
 
-	bool hasInactiveActivities(Rules& r);
+	bool hasInactiveActivities(const Rules& r) const;
 	
-	QString getXmlDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
 
-	QString getDescription(Rules& r);
+	QString getDescription(const Rules& r) const;
 
 	QString getDetailedDescription(const Rules& r) const;
 
@@ -493,8 +491,8 @@ public:
 
 	bool isRelatedToRoom(const Room* r) const;
 
-	bool hasWrongDayOrHour(Rules& r);
-	bool canRepairWrongDayOrHour(Rules& r);
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
 	bool repairWrongDayOrHour(Rules& r);
 };
 
@@ -520,11 +518,11 @@ public:
 
 	bool computeInternalStructure(QWidget* parent, Rules& r);
 
-	bool hasInactiveActivities(Rules& r);
+	bool hasInactiveActivities(const Rules& r) const;
 	
-	QString getXmlDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
 
-	QString getDescription(Rules& r);
+	QString getDescription(const Rules& r) const;
 
 	QString getDetailedDescription(const Rules& r) const;
 
@@ -542,8 +540,8 @@ public:
 
 	bool isRelatedToRoom(const Room* r) const;
 
-	bool hasWrongDayOrHour(Rules& r);
-	bool canRepairWrongDayOrHour(Rules& r);
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
 	bool repairWrongDayOrHour(Rules& r);
 };
 
@@ -571,11 +569,11 @@ public:
 
 	bool computeInternalStructure(QWidget* parent, Rules& r);
 
-	bool hasInactiveActivities(Rules& r);
+	bool hasInactiveActivities(const Rules& r) const;
 	
-	QString getXmlDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
 
-	QString getDescription(Rules& r);
+	QString getDescription(const Rules& r) const;
 
 	QString getDetailedDescription(const Rules& r) const;
 
@@ -593,8 +591,8 @@ public:
 
 	bool isRelatedToRoom(const Room* r) const;
 
-	bool hasWrongDayOrHour(Rules& r);
-	bool canRepairWrongDayOrHour(Rules& r);
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
 	bool repairWrongDayOrHour(Rules& r);
 };
 
@@ -624,11 +622,11 @@ public:
 
 	bool computeInternalStructure(QWidget* parent, Rules& r);
 
-	bool hasInactiveActivities(Rules& r);
+	bool hasInactiveActivities(const Rules& r) const;
 	
-	QString getXmlDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
 
-	QString getDescription(Rules& r);
+	QString getDescription(const Rules& r) const;
 
 	QString getDetailedDescription(const Rules& r) const;
 
@@ -647,8 +645,8 @@ public:
 
 	bool isRelatedToRoom(const Room* r) const;
 
-	bool hasWrongDayOrHour(Rules& r);
-	bool canRepairWrongDayOrHour(Rules& r);
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
 	bool repairWrongDayOrHour(Rules& r);
 };
 
@@ -677,11 +675,11 @@ public:
 
 	bool computeInternalStructure(QWidget* parent, Rules& r);
 
-	bool hasInactiveActivities(Rules& r);
+	bool hasInactiveActivities(const Rules& r) const;
 	
-	QString getXmlDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
 
-	QString getDescription(Rules& r);
+	QString getDescription(const Rules& r) const;
 
 	QString getDetailedDescription(const Rules& r) const;
 
@@ -700,8 +698,8 @@ public:
 
 	bool isRelatedToRoom(const Room* r) const;
 
-	bool hasWrongDayOrHour(Rules& r);
-	bool canRepairWrongDayOrHour(Rules& r);
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
 	bool repairWrongDayOrHour(Rules& r);
 };
 
@@ -733,11 +731,11 @@ public:
 
 	bool computeInternalStructure(QWidget* parent, Rules& r);
 
-	bool hasInactiveActivities(Rules& r);
+	bool hasInactiveActivities(const Rules& r) const;
 	
-	QString getXmlDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
 
-	QString getDescription(Rules& r);
+	QString getDescription(const Rules& r) const;
 
 	QString getDetailedDescription(const Rules& r) const;
 
@@ -756,8 +754,8 @@ public:
 
 	bool isRelatedToRoom(const Room* r) const;
 
-	bool hasWrongDayOrHour(Rules& r);
-	bool canRepairWrongDayOrHour(Rules& r);
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
 	bool repairWrongDayOrHour(Rules& r);
 };
 
@@ -788,11 +786,11 @@ public:
 
 	bool computeInternalStructure(QWidget* parent, Rules& r);
 
-	bool hasInactiveActivities(Rules& r);
+	bool hasInactiveActivities(const Rules& r) const;
 	
-	QString getXmlDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
 
-	QString getDescription(Rules& r);
+	QString getDescription(const Rules& r) const;
 
 	QString getDetailedDescription(const Rules& r) const;
 
@@ -810,8 +808,8 @@ public:
 
 	bool isRelatedToRoom(const Room* r) const;
 
-	bool hasWrongDayOrHour(Rules& r);
-	bool canRepairWrongDayOrHour(Rules& r);
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
 	bool repairWrongDayOrHour(Rules& r);
 };
 
@@ -838,11 +836,11 @@ public:
 
 	bool computeInternalStructure(QWidget* parent, Rules& r);
 
-	bool hasInactiveActivities(Rules& r);
+	bool hasInactiveActivities(const Rules& r) const;
 	
-	QString getXmlDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
 
-	QString getDescription(Rules& r);
+	QString getDescription(const Rules& r) const;
 
 	QString getDetailedDescription(const Rules& r) const;
 
@@ -860,8 +858,8 @@ public:
 
 	bool isRelatedToRoom(const Room* r) const;
 
-	bool hasWrongDayOrHour(Rules& r);
-	bool canRepairWrongDayOrHour(Rules& r);
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
 	bool repairWrongDayOrHour(Rules& r);
 };
 
@@ -886,11 +884,11 @@ public:
 
 	bool computeInternalStructure(QWidget* parent, Rules& r);
 
-	bool hasInactiveActivities(Rules& r);
+	bool hasInactiveActivities(const Rules& r) const;
 	
-	QString getXmlDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
 
-	QString getDescription(Rules& r);
+	QString getDescription(const Rules& r) const;
 
 	QString getDetailedDescription(const Rules& r) const;
 
@@ -908,8 +906,8 @@ public:
 
 	bool isRelatedToRoom(const Room* r) const;
 
-	bool hasWrongDayOrHour(Rules& r);
-	bool canRepairWrongDayOrHour(Rules& r);
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
 	bool repairWrongDayOrHour(Rules& r);
 };
 ///////
@@ -933,11 +931,11 @@ public:
 
 	bool computeInternalStructure(QWidget* parent, Rules& r);
 
-	QString getXmlDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
 
-	bool hasInactiveActivities(Rules& r);
+	bool hasInactiveActivities(const Rules& r) const;
 	
-	QString getDescription(Rules& r);
+	QString getDescription(const Rules& r) const;
 
 	QString getDetailedDescription(const Rules& r) const;
 
@@ -955,8 +953,8 @@ public:
 
 	bool isRelatedToRoom(const Room* r) const;
 
-	bool hasWrongDayOrHour(Rules& r);
-	bool canRepairWrongDayOrHour(Rules& r);
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
 	bool repairWrongDayOrHour(Rules& r);
 };
 
@@ -973,11 +971,11 @@ public:
 
 	bool computeInternalStructure(QWidget* parent, Rules& r);
 
-	QString getXmlDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
 
-	bool hasInactiveActivities(Rules& r);
+	bool hasInactiveActivities(const Rules& r) const;
 	
-	QString getDescription(Rules& r);
+	QString getDescription(const Rules& r) const;
 
 	QString getDetailedDescription(const Rules& r) const;
 
@@ -995,8 +993,8 @@ public:
 
 	bool isRelatedToRoom(const Room* r) const;
 
-	bool hasWrongDayOrHour(Rules& r);
-	bool canRepairWrongDayOrHour(Rules& r);
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
 	bool repairWrongDayOrHour(Rules& r);
 };
 
@@ -1019,11 +1017,11 @@ public:
 
 	bool computeInternalStructure(QWidget* parent, Rules& r);
 
-	QString getXmlDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
 
-	bool hasInactiveActivities(Rules& r);
+	bool hasInactiveActivities(const Rules& r) const;
 	
-	QString getDescription(Rules& r);
+	QString getDescription(const Rules& r) const;
 
 	QString getDetailedDescription(const Rules& r) const;
 
@@ -1041,8 +1039,8 @@ public:
 
 	bool isRelatedToRoom(const Room* r) const;
 
-	bool hasWrongDayOrHour(Rules& r);
-	bool canRepairWrongDayOrHour(Rules& r);
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
 	bool repairWrongDayOrHour(Rules& r);
 };
 
@@ -1059,11 +1057,11 @@ public:
 
 	bool computeInternalStructure(QWidget* parent, Rules& r);
 
-	QString getXmlDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
 
-	bool hasInactiveActivities(Rules& r);
+	bool hasInactiveActivities(const Rules& r) const;
 	
-	QString getDescription(Rules& r);
+	QString getDescription(const Rules& r) const;
 
 	QString getDetailedDescription(const Rules& r) const;
 
@@ -1081,8 +1079,8 @@ public:
 
 	bool isRelatedToRoom(const Room* r) const;
 
-	bool hasWrongDayOrHour(Rules& r);
-	bool canRepairWrongDayOrHour(Rules& r);
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
 	bool repairWrongDayOrHour(Rules& r);
 };
 
@@ -1105,11 +1103,11 @@ public:
 
 	bool computeInternalStructure(QWidget* parent, Rules& r);
 
-	QString getXmlDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
 
-	bool hasInactiveActivities(Rules& r);
+	bool hasInactiveActivities(const Rules& r) const;
 	
-	QString getDescription(Rules& r);
+	QString getDescription(const Rules& r) const;
 
 	QString getDetailedDescription(const Rules& r) const;
 
@@ -1127,8 +1125,8 @@ public:
 
 	bool isRelatedToRoom(const Room* r) const;
 
-	bool hasWrongDayOrHour(Rules& r);
-	bool canRepairWrongDayOrHour(Rules& r);
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
 	bool repairWrongDayOrHour(Rules& r);
 };
 
@@ -1145,11 +1143,11 @@ public:
 
 	bool computeInternalStructure(QWidget* parent, Rules& r);
 
-	QString getXmlDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
 
-	bool hasInactiveActivities(Rules& r);
+	bool hasInactiveActivities(const Rules& r) const;
 	
-	QString getDescription(Rules& r);
+	QString getDescription(const Rules& r) const;
 
 	QString getDetailedDescription(const Rules& r) const;
 
@@ -1167,8 +1165,8 @@ public:
 
 	bool isRelatedToRoom(const Room* r) const;
 
-	bool hasWrongDayOrHour(Rules& r);
-	bool canRepairWrongDayOrHour(Rules& r);
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
 	bool repairWrongDayOrHour(Rules& r);
 };
 
@@ -1191,11 +1189,11 @@ public:
 
 	bool computeInternalStructure(QWidget* parent, Rules& r);
 
-	QString getXmlDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
 
-	bool hasInactiveActivities(Rules& r);
+	bool hasInactiveActivities(const Rules& r) const;
 	
-	QString getDescription(Rules& r);
+	QString getDescription(const Rules& r) const;
 
 	QString getDetailedDescription(const Rules& r) const;
 
@@ -1213,8 +1211,8 @@ public:
 
 	bool isRelatedToRoom(const Room* r) const;
 
-	bool hasWrongDayOrHour(Rules& r);
-	bool canRepairWrongDayOrHour(Rules& r);
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
 	bool repairWrongDayOrHour(Rules& r);
 };
 
@@ -1231,11 +1229,11 @@ public:
 
 	bool computeInternalStructure(QWidget* parent, Rules& r);
 
-	bool hasInactiveActivities(Rules& r);
+	bool hasInactiveActivities(const Rules& r) const;
 	
-	QString getXmlDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
 
-	QString getDescription(Rules& r);
+	QString getDescription(const Rules& r) const;
 
 	QString getDetailedDescription(const Rules& r) const;
 
@@ -1253,8 +1251,8 @@ public:
 
 	bool isRelatedToRoom(const Room* r) const;
 
-	bool hasWrongDayOrHour(Rules& r);
-	bool canRepairWrongDayOrHour(Rules& r);
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
 	bool repairWrongDayOrHour(Rules& r);
 };
 
@@ -1277,11 +1275,11 @@ public:
 
 	bool computeInternalStructure(QWidget* parent, Rules& r);
 
-	bool hasInactiveActivities(Rules& r);
+	bool hasInactiveActivities(const Rules& r) const;
 	
-	QString getXmlDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
 
-	QString getDescription(Rules& r);
+	QString getDescription(const Rules& r) const;
 
 	QString getDetailedDescription(const Rules& r) const;
 
@@ -1299,8 +1297,8 @@ public:
 
 	bool isRelatedToRoom(const Room* r) const;
 
-	bool hasWrongDayOrHour(Rules& r);
-	bool canRepairWrongDayOrHour(Rules& r);
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
 	bool repairWrongDayOrHour(Rules& r);
 };
 
@@ -1317,11 +1315,11 @@ public:
 
 	bool computeInternalStructure(QWidget* parent, Rules& r);
 
-	bool hasInactiveActivities(Rules& r);
+	bool hasInactiveActivities(const Rules& r) const;
 	
-	QString getXmlDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
 
-	QString getDescription(Rules& r);
+	QString getDescription(const Rules& r) const;
 
 	QString getDetailedDescription(const Rules& r) const;
 
@@ -1339,8 +1337,8 @@ public:
 
 	bool isRelatedToRoom(const Room* r) const;
 
-	bool hasWrongDayOrHour(Rules& r);
-	bool canRepairWrongDayOrHour(Rules& r);
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
 	bool repairWrongDayOrHour(Rules& r);
 };
 
@@ -1363,11 +1361,11 @@ public:
 
 	bool computeInternalStructure(QWidget* parent, Rules& r);
 
-	bool hasInactiveActivities(Rules& r);
+	bool hasInactiveActivities(const Rules& r) const;
 	
-	QString getXmlDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
 
-	QString getDescription(Rules& r);
+	QString getDescription(const Rules& r) const;
 
 	QString getDetailedDescription(const Rules& r) const;
 
@@ -1385,8 +1383,8 @@ public:
 
 	bool isRelatedToRoom(const Room* r) const;
 
-	bool hasWrongDayOrHour(Rules& r);
-	bool canRepairWrongDayOrHour(Rules& r);
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
 	bool repairWrongDayOrHour(Rules& r);
 };
 
@@ -1403,11 +1401,11 @@ public:
 
 	bool computeInternalStructure(QWidget* parent, Rules& r);
 
-	bool hasInactiveActivities(Rules& r);
+	bool hasInactiveActivities(const Rules& r) const;
 	
-	QString getXmlDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
 
-	QString getDescription(Rules& r);
+	QString getDescription(const Rules& r) const;
 
 	QString getDetailedDescription(const Rules& r) const;
 
@@ -1425,8 +1423,8 @@ public:
 
 	bool isRelatedToRoom(const Room* r) const;
 
-	bool hasWrongDayOrHour(Rules& r);
-	bool canRepairWrongDayOrHour(Rules& r);
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
 	bool repairWrongDayOrHour(Rules& r);
 };
 
@@ -1447,11 +1445,11 @@ public:
 
 	bool computeInternalStructure(QWidget* parent, Rules& r);
 
-	bool hasInactiveActivities(Rules& r);
+	bool hasInactiveActivities(const Rules& r) const;
 
-	QString getXmlDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
 
-	QString getDescription(Rules& r);
+	QString getDescription(const Rules& r) const;
 
 	QString getDetailedDescription(const Rules& r) const;
 
@@ -1471,8 +1469,8 @@ public:
 
 	bool isRelatedToRoom(const Room* r) const;
 
-	bool hasWrongDayOrHour(Rules& r);
-	bool canRepairWrongDayOrHour(Rules& r);
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
 	bool repairWrongDayOrHour(Rules& r);
 };
 
@@ -1491,11 +1489,11 @@ public:
 
 	bool computeInternalStructure(QWidget* parent, Rules& r);
 
-	bool hasInactiveActivities(Rules& r);
+	bool hasInactiveActivities(const Rules& r) const;
 
-	QString getXmlDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
 
-	QString getDescription(Rules& r);
+	QString getDescription(const Rules& r) const;
 
 	QString getDetailedDescription(const Rules& r) const;
 
@@ -1515,8 +1513,8 @@ public:
 
 	bool isRelatedToRoom(const Room* r) const;
 
-	bool hasWrongDayOrHour(Rules& r);
-	bool canRepairWrongDayOrHour(Rules& r);
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
 	bool repairWrongDayOrHour(Rules& r);
 };
 

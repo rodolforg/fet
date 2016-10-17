@@ -158,13 +158,13 @@ bool ConstraintBasicCompulsoryTime::computeInternalStructure(QWidget* parent, Ru
 	return true;
 }
 
-bool ConstraintBasicCompulsoryTime::hasInactiveActivities(Rules& r)
+bool ConstraintBasicCompulsoryTime::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintBasicCompulsoryTime::getXmlDescription(Rules& r)
+QString ConstraintBasicCompulsoryTime::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -177,7 +177,7 @@ QString ConstraintBasicCompulsoryTime::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintBasicCompulsoryTime::getDescription(Rules& r)
+QString ConstraintBasicCompulsoryTime::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -414,13 +414,13 @@ bool ConstraintBasicCompulsoryTime::isRelatedToStudentsSet(const Rules& r, const
 	return false;
 }
 
-bool ConstraintBasicCompulsoryTime::hasWrongDayOrHour(Rules& r)
+bool ConstraintBasicCompulsoryTime::hasWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-bool ConstraintBasicCompulsoryTime::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintBasicCompulsoryTime::canRepairWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	assert(0);
@@ -455,7 +455,7 @@ ConstraintTeacherNotAvailableTimes::ConstraintTeacherNotAvailableTimes(double wp
 	this->type=CONSTRAINT_TEACHER_NOT_AVAILABLE_TIMES;
 }
 
-QString ConstraintTeacherNotAvailableTimes::getXmlDescription(Rules& r){
+QString ConstraintTeacherNotAvailableTimes::getXmlDescription(const Rules& r) const{
 	QString s="<ConstraintTeacherNotAvailableTimes>\n";
 	s+="	<Weight_Percentage>"+CustomFETString::number(weightPercentage)+"</Weight_Percentage>\n";
 	s+="	<Teacher>"+protect(this->teacher)+"</Teacher>\n";
@@ -477,7 +477,7 @@ QString ConstraintTeacherNotAvailableTimes::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintTeacherNotAvailableTimes::getDescription(Rules& r){
+QString ConstraintTeacherNotAvailableTimes::getDescription(const Rules& r) const{
 	QString begin=QString("");
 	if(!active)
 		begin="X - ";
@@ -576,7 +576,7 @@ bool ConstraintTeacherNotAvailableTimes::computeInternalStructure(QWidget* paren
 	return true;
 }
 
-bool ConstraintTeacherNotAvailableTimes::hasInactiveActivities(Rules& r)
+bool ConstraintTeacherNotAvailableTimes::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
@@ -675,7 +675,7 @@ bool ConstraintTeacherNotAvailableTimes::isRelatedToStudentsSet(const Rules& r, 
 	return false;
 }
 
-bool ConstraintTeacherNotAvailableTimes::hasWrongDayOrHour(Rules& r)
+bool ConstraintTeacherNotAvailableTimes::hasWrongDayOrHour(const Rules& r) const
 {
 	assert(days.count()==hours.count());
 	
@@ -687,7 +687,7 @@ bool ConstraintTeacherNotAvailableTimes::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintTeacherNotAvailableTimes::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTeacherNotAvailableTimes::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -810,13 +810,13 @@ bool ConstraintStudentsSetNotAvailableTimes::computeInternalStructure(QWidget* p
 	return true;
 }
 
-bool ConstraintStudentsSetNotAvailableTimes::hasInactiveActivities(Rules& r)
+bool ConstraintStudentsSetNotAvailableTimes::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintStudentsSetNotAvailableTimes::getXmlDescription(Rules& r){
+QString ConstraintStudentsSetNotAvailableTimes::getXmlDescription(const Rules& r) const{
 	QString s="<ConstraintStudentsSetNotAvailableTimes>\n";
 	s+="	<Weight_Percentage>"+CustomFETString::number(this->weightPercentage)+"</Weight_Percentage>\n";
 	s+="	<Students>"+protect(this->students)+"</Students>\n";
@@ -838,7 +838,7 @@ QString ConstraintStudentsSetNotAvailableTimes::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintStudentsSetNotAvailableTimes::getDescription(Rules& r){
+QString ConstraintStudentsSetNotAvailableTimes::getDescription(const Rules& r) const{
 	QString begin=QString("");
 	if(!active)
 		begin="X - ";
@@ -989,7 +989,7 @@ bool ConstraintStudentsSetNotAvailableTimes::isRelatedToStudentsSet(const Rules&
 	return r.setsShareStudents(this->students, s->name);
 }
 
-bool ConstraintStudentsSetNotAvailableTimes::hasWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetNotAvailableTimes::hasWrongDayOrHour(const Rules& r) const
 {
 	assert(days.count()==hours.count());
 	
@@ -1001,7 +1001,7 @@ bool ConstraintStudentsSetNotAvailableTimes::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintStudentsSetNotAvailableTimes::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetNotAvailableTimes::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -1117,7 +1117,7 @@ void ConstraintActivitiesSameStartingTime::removeUseless(Rules& r)
 	r.internalStructureComputed=false;
 }
 
-bool ConstraintActivitiesSameStartingTime::hasInactiveActivities(Rules& r)
+bool ConstraintActivitiesSameStartingTime::hasInactiveActivities(const Rules& r) const
 {
 	int count=0;
 
@@ -1131,7 +1131,7 @@ bool ConstraintActivitiesSameStartingTime::hasInactiveActivities(Rules& r)
 		return false;
 }
 
-QString ConstraintActivitiesSameStartingTime::getXmlDescription(Rules& r){
+QString ConstraintActivitiesSameStartingTime::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintActivitiesSameStartingTime>\n";
@@ -1145,7 +1145,7 @@ QString ConstraintActivitiesSameStartingTime::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintActivitiesSameStartingTime::getDescription(Rules& r){
+QString ConstraintActivitiesSameStartingTime::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -1285,13 +1285,13 @@ bool ConstraintActivitiesSameStartingTime::isRelatedToStudentsSet(const Rules& r
 	return false;
 }
 
-bool ConstraintActivitiesSameStartingTime::hasWrongDayOrHour(Rules& r)
+bool ConstraintActivitiesSameStartingTime::hasWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-bool ConstraintActivitiesSameStartingTime::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintActivitiesSameStartingTime::canRepairWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	assert(0);
@@ -1391,7 +1391,7 @@ void ConstraintActivitiesNotOverlapping::removeUseless(Rules& r)
 	r.internalStructureComputed=false;
 }
 
-bool ConstraintActivitiesNotOverlapping::hasInactiveActivities(Rules& r)
+bool ConstraintActivitiesNotOverlapping::hasInactiveActivities(const Rules& r) const
 {
 	int count=0;
 
@@ -1405,7 +1405,7 @@ bool ConstraintActivitiesNotOverlapping::hasInactiveActivities(Rules& r)
 		return false;
 }
 
-QString ConstraintActivitiesNotOverlapping::getXmlDescription(Rules& r){
+QString ConstraintActivitiesNotOverlapping::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintActivitiesNotOverlapping>\n";
@@ -1419,7 +1419,7 @@ QString ConstraintActivitiesNotOverlapping::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintActivitiesNotOverlapping::getDescription(Rules& r){
+QString ConstraintActivitiesNotOverlapping::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -1568,13 +1568,13 @@ bool ConstraintActivitiesNotOverlapping::isRelatedToStudentsSet(const Rules& r, 
 	return false;
 }
 
-bool ConstraintActivitiesNotOverlapping::hasWrongDayOrHour(Rules& r)
+bool ConstraintActivitiesNotOverlapping::hasWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-bool ConstraintActivitiesNotOverlapping::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintActivitiesNotOverlapping::canRepairWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	assert(0);
@@ -1696,7 +1696,7 @@ void ConstraintMinDaysBetweenActivities::removeUseless(Rules& r)
 	r.internalStructureComputed=false;
 }
 
-bool ConstraintMinDaysBetweenActivities::hasInactiveActivities(Rules& r)
+bool ConstraintMinDaysBetweenActivities::hasInactiveActivities(const Rules& r) const
 {
 	int count=0;
 
@@ -1710,7 +1710,7 @@ bool ConstraintMinDaysBetweenActivities::hasInactiveActivities(Rules& r)
 		return false;
 }
 
-QString ConstraintMinDaysBetweenActivities::getXmlDescription(Rules& r){
+QString ConstraintMinDaysBetweenActivities::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintMinDaysBetweenActivities>\n";
@@ -1726,7 +1726,7 @@ QString ConstraintMinDaysBetweenActivities::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintMinDaysBetweenActivities::getDescription(Rules& r){
+QString ConstraintMinDaysBetweenActivities::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -1889,7 +1889,7 @@ bool ConstraintMinDaysBetweenActivities::isRelatedToStudentsSet(const Rules& r, 
 	return false;
 }
 
-bool ConstraintMinDaysBetweenActivities::hasWrongDayOrHour(Rules& r)
+bool ConstraintMinDaysBetweenActivities::hasWrongDayOrHour(const Rules& r) const
 {
 	if(minDays>=r.nDaysPerWeek)
 		return true;
@@ -1897,7 +1897,7 @@ bool ConstraintMinDaysBetweenActivities::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintMinDaysBetweenActivities::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintMinDaysBetweenActivities::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -2001,7 +2001,7 @@ void ConstraintMaxDaysBetweenActivities::removeUseless(Rules& r)
 	r.internalStructureComputed=false;
 }
 
-bool ConstraintMaxDaysBetweenActivities::hasInactiveActivities(Rules& r)
+bool ConstraintMaxDaysBetweenActivities::hasInactiveActivities(const Rules& r) const
 {
 	int count=0;
 
@@ -2015,7 +2015,7 @@ bool ConstraintMaxDaysBetweenActivities::hasInactiveActivities(Rules& r)
 		return false;
 }
 
-QString ConstraintMaxDaysBetweenActivities::getXmlDescription(Rules& r){
+QString ConstraintMaxDaysBetweenActivities::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintMaxDaysBetweenActivities>\n";
@@ -2030,7 +2030,7 @@ QString ConstraintMaxDaysBetweenActivities::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintMaxDaysBetweenActivities::getDescription(Rules& r){
+QString ConstraintMaxDaysBetweenActivities::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -2184,7 +2184,7 @@ bool ConstraintMaxDaysBetweenActivities::isRelatedToStudentsSet(const Rules& r, 
 	return false;
 }
 
-bool ConstraintMaxDaysBetweenActivities::hasWrongDayOrHour(Rules& r)
+bool ConstraintMaxDaysBetweenActivities::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxDays>=r.nDaysPerWeek)
 		return true;
@@ -2192,7 +2192,7 @@ bool ConstraintMaxDaysBetweenActivities::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintMaxDaysBetweenActivities::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintMaxDaysBetweenActivities::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -2295,7 +2295,7 @@ void ConstraintMinGapsBetweenActivities::removeUseless(Rules& r)
 	r.internalStructureComputed=false;
 }
 
-bool ConstraintMinGapsBetweenActivities::hasInactiveActivities(Rules& r)
+bool ConstraintMinGapsBetweenActivities::hasInactiveActivities(const Rules& r) const
 {
 	int count=0;
 
@@ -2309,7 +2309,7 @@ bool ConstraintMinGapsBetweenActivities::hasInactiveActivities(Rules& r)
 		return false;
 }
 
-QString ConstraintMinGapsBetweenActivities::getXmlDescription(Rules& r){
+QString ConstraintMinGapsBetweenActivities::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintMinGapsBetweenActivities>\n";
@@ -2324,7 +2324,7 @@ QString ConstraintMinGapsBetweenActivities::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintMinGapsBetweenActivities::getDescription(Rules& r){
+QString ConstraintMinGapsBetweenActivities::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -2484,7 +2484,7 @@ bool ConstraintMinGapsBetweenActivities::isRelatedToStudentsSet(const Rules& r, 
 	return false;
 }
 
-bool ConstraintMinGapsBetweenActivities::hasWrongDayOrHour(Rules& r)
+bool ConstraintMinGapsBetweenActivities::hasWrongDayOrHour(const Rules& r) const
 {
 	if(minGaps>r.nHoursPerDay)
 		return true;
@@ -2492,7 +2492,7 @@ bool ConstraintMinGapsBetweenActivities::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintMinGapsBetweenActivities::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintMinGapsBetweenActivities::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -2535,13 +2535,13 @@ bool ConstraintTeachersMaxHoursDaily::computeInternalStructure(QWidget* parent, 
 	return true;
 }
 
-bool ConstraintTeachersMaxHoursDaily::hasInactiveActivities(Rules& r)
+bool ConstraintTeachersMaxHoursDaily::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintTeachersMaxHoursDaily::getXmlDescription(Rules& r){
+QString ConstraintTeachersMaxHoursDaily::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintTeachersMaxHoursDaily>\n";
@@ -2553,7 +2553,7 @@ QString ConstraintTeachersMaxHoursDaily::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintTeachersMaxHoursDaily::getDescription(Rules& r){
+QString ConstraintTeachersMaxHoursDaily::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -2680,7 +2680,7 @@ bool ConstraintTeachersMaxHoursDaily::isRelatedToStudentsSet(const Rules& r, con
 	return false;
 }
 
-bool ConstraintTeachersMaxHoursDaily::hasWrongDayOrHour(Rules& r)
+bool ConstraintTeachersMaxHoursDaily::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxHoursDaily>r.nHoursPerDay)
 		return true;
@@ -2688,7 +2688,7 @@ bool ConstraintTeachersMaxHoursDaily::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintTeachersMaxHoursDaily::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTeachersMaxHoursDaily::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -2734,13 +2734,13 @@ bool ConstraintTeacherMaxHoursDaily::computeInternalStructure(QWidget* parent, R
 	return true;
 }
 
-bool ConstraintTeacherMaxHoursDaily::hasInactiveActivities(Rules& r)
+bool ConstraintTeacherMaxHoursDaily::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintTeacherMaxHoursDaily::getXmlDescription(Rules& r){
+QString ConstraintTeacherMaxHoursDaily::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintTeacherMaxHoursDaily>\n";
@@ -2753,7 +2753,7 @@ QString ConstraintTeacherMaxHoursDaily::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintTeacherMaxHoursDaily::getDescription(Rules& r){
+QString ConstraintTeacherMaxHoursDaily::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -2880,7 +2880,7 @@ bool ConstraintTeacherMaxHoursDaily::isRelatedToStudentsSet(const Rules& r, cons
 	return false;
 }
 
-bool ConstraintTeacherMaxHoursDaily::hasWrongDayOrHour(Rules& r)
+bool ConstraintTeacherMaxHoursDaily::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxHoursDaily>r.nHoursPerDay)
 		return true;
@@ -2888,7 +2888,7 @@ bool ConstraintTeacherMaxHoursDaily::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintTeacherMaxHoursDaily::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTeacherMaxHoursDaily::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -2931,13 +2931,13 @@ bool ConstraintTeachersMaxHoursContinuously::computeInternalStructure(QWidget* p
 	return true;
 }
 
-bool ConstraintTeachersMaxHoursContinuously::hasInactiveActivities(Rules& r)
+bool ConstraintTeachersMaxHoursContinuously::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintTeachersMaxHoursContinuously::getXmlDescription(Rules& r){
+QString ConstraintTeachersMaxHoursContinuously::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintTeachersMaxHoursContinuously>\n";
@@ -2949,7 +2949,7 @@ QString ConstraintTeachersMaxHoursContinuously::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintTeachersMaxHoursContinuously::getDescription(Rules& r){
+QString ConstraintTeachersMaxHoursContinuously::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -3103,7 +3103,7 @@ bool ConstraintTeachersMaxHoursContinuously::isRelatedToStudentsSet(const Rules&
 	return false;
 }
 
-bool ConstraintTeachersMaxHoursContinuously::hasWrongDayOrHour(Rules& r)
+bool ConstraintTeachersMaxHoursContinuously::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxHoursContinuously>r.nHoursPerDay)
 		return true;
@@ -3111,7 +3111,7 @@ bool ConstraintTeachersMaxHoursContinuously::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintTeachersMaxHoursContinuously::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTeachersMaxHoursContinuously::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -3157,13 +3157,13 @@ bool ConstraintTeacherMaxHoursContinuously::computeInternalStructure(QWidget* pa
 	return true;
 }
 
-bool ConstraintTeacherMaxHoursContinuously::hasInactiveActivities(Rules& r)
+bool ConstraintTeacherMaxHoursContinuously::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintTeacherMaxHoursContinuously::getXmlDescription(Rules& r){
+QString ConstraintTeacherMaxHoursContinuously::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintTeacherMaxHoursContinuously>\n";
@@ -3176,7 +3176,7 @@ QString ConstraintTeacherMaxHoursContinuously::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintTeacherMaxHoursContinuously::getDescription(Rules& r){
+QString ConstraintTeacherMaxHoursContinuously::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -3331,7 +3331,7 @@ bool ConstraintTeacherMaxHoursContinuously::isRelatedToStudentsSet(const Rules& 
 	return false;
 }
 
-bool ConstraintTeacherMaxHoursContinuously::hasWrongDayOrHour(Rules& r)
+bool ConstraintTeacherMaxHoursContinuously::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxHoursContinuously>r.nHoursPerDay)
 		return true;
@@ -3339,7 +3339,7 @@ bool ConstraintTeacherMaxHoursContinuously::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintTeacherMaxHoursContinuously::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTeacherMaxHoursContinuously::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -3402,13 +3402,13 @@ bool ConstraintTeachersActivityTagMaxHoursContinuously::computeInternalStructure
 	return true;
 }
 
-bool ConstraintTeachersActivityTagMaxHoursContinuously::hasInactiveActivities(Rules& r)
+bool ConstraintTeachersActivityTagMaxHoursContinuously::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintTeachersActivityTagMaxHoursContinuously::getXmlDescription(Rules& r){
+QString ConstraintTeachersActivityTagMaxHoursContinuously::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintTeachersActivityTagMaxHoursContinuously>\n";
@@ -3421,7 +3421,7 @@ QString ConstraintTeachersActivityTagMaxHoursContinuously::getXmlDescription(Rul
 	return s;
 }
 
-QString ConstraintTeachersActivityTagMaxHoursContinuously::getDescription(Rules& r){
+QString ConstraintTeachersActivityTagMaxHoursContinuously::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -3596,7 +3596,7 @@ bool ConstraintTeachersActivityTagMaxHoursContinuously::isRelatedToStudentsSet(c
 	return false;
 }
 
-bool ConstraintTeachersActivityTagMaxHoursContinuously::hasWrongDayOrHour(Rules& r)
+bool ConstraintTeachersActivityTagMaxHoursContinuously::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxHoursContinuously>r.nHoursPerDay)
 		return true;
@@ -3604,7 +3604,7 @@ bool ConstraintTeachersActivityTagMaxHoursContinuously::hasWrongDayOrHour(Rules&
 	return false;
 }
 
-bool ConstraintTeachersActivityTagMaxHoursContinuously::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTeachersActivityTagMaxHoursContinuously::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -3670,13 +3670,13 @@ bool ConstraintTeacherActivityTagMaxHoursContinuously::computeInternalStructure(
 	return true;
 }
 
-bool ConstraintTeacherActivityTagMaxHoursContinuously::hasInactiveActivities(Rules& r)
+bool ConstraintTeacherActivityTagMaxHoursContinuously::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintTeacherActivityTagMaxHoursContinuously::getXmlDescription(Rules& r){
+QString ConstraintTeacherActivityTagMaxHoursContinuously::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintTeacherActivityTagMaxHoursContinuously>\n";
@@ -3690,7 +3690,7 @@ QString ConstraintTeacherActivityTagMaxHoursContinuously::getXmlDescription(Rule
 	return s;
 }
 
-QString ConstraintTeacherActivityTagMaxHoursContinuously::getDescription(Rules& r){
+QString ConstraintTeacherActivityTagMaxHoursContinuously::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -3866,7 +3866,7 @@ bool ConstraintTeacherActivityTagMaxHoursContinuously::isRelatedToStudentsSet(co
 	return false;
 }
 
-bool ConstraintTeacherActivityTagMaxHoursContinuously::hasWrongDayOrHour(Rules& r)
+bool ConstraintTeacherActivityTagMaxHoursContinuously::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxHoursContinuously>r.nHoursPerDay)
 		return true;
@@ -3874,7 +3874,7 @@ bool ConstraintTeacherActivityTagMaxHoursContinuously::hasWrongDayOrHour(Rules& 
 	return false;
 }
 
-bool ConstraintTeacherActivityTagMaxHoursContinuously::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTeacherActivityTagMaxHoursContinuously::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -3918,13 +3918,13 @@ bool ConstraintTeacherMaxDaysPerWeek::computeInternalStructure(QWidget* parent, 
 	return true;
 }
 
-bool ConstraintTeacherMaxDaysPerWeek::hasInactiveActivities(Rules& r)
+bool ConstraintTeacherMaxDaysPerWeek::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintTeacherMaxDaysPerWeek::getXmlDescription(Rules& r)
+QString ConstraintTeacherMaxDaysPerWeek::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -3938,7 +3938,7 @@ QString ConstraintTeacherMaxDaysPerWeek::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintTeacherMaxDaysPerWeek::getDescription(Rules& r){
+QString ConstraintTeacherMaxDaysPerWeek::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -4074,7 +4074,7 @@ bool ConstraintTeacherMaxDaysPerWeek::isRelatedToStudentsSet(const Rules& r, con
 	return false;
 }
 
-bool ConstraintTeacherMaxDaysPerWeek::hasWrongDayOrHour(Rules& r)
+bool ConstraintTeacherMaxDaysPerWeek::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxDaysPerWeek>r.nDaysPerWeek)
 		return true;
@@ -4082,7 +4082,7 @@ bool ConstraintTeacherMaxDaysPerWeek::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintTeacherMaxDaysPerWeek::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTeacherMaxDaysPerWeek::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -4123,13 +4123,13 @@ bool ConstraintTeachersMaxDaysPerWeek::computeInternalStructure(QWidget* parent,
 	return true;
 }
 
-bool ConstraintTeachersMaxDaysPerWeek::hasInactiveActivities(Rules& r)
+bool ConstraintTeachersMaxDaysPerWeek::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintTeachersMaxDaysPerWeek::getXmlDescription(Rules& r)
+QString ConstraintTeachersMaxDaysPerWeek::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -4142,7 +4142,7 @@ QString ConstraintTeachersMaxDaysPerWeek::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintTeachersMaxDaysPerWeek::getDescription(Rules& r){
+QString ConstraintTeachersMaxDaysPerWeek::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -4282,7 +4282,7 @@ bool ConstraintTeachersMaxDaysPerWeek::isRelatedToStudentsSet(const Rules& r, co
 	return false;
 }
 
-bool ConstraintTeachersMaxDaysPerWeek::hasWrongDayOrHour(Rules& r)
+bool ConstraintTeachersMaxDaysPerWeek::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxDaysPerWeek>r.nDaysPerWeek)
 		return true;
@@ -4290,7 +4290,7 @@ bool ConstraintTeachersMaxDaysPerWeek::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintTeachersMaxDaysPerWeek::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTeachersMaxDaysPerWeek::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -4331,13 +4331,13 @@ bool ConstraintTeachersMaxGapsPerWeek::computeInternalStructure(QWidget* parent,
 	return true;
 }
 
-bool ConstraintTeachersMaxGapsPerWeek::hasInactiveActivities(Rules& r)
+bool ConstraintTeachersMaxGapsPerWeek::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintTeachersMaxGapsPerWeek::getXmlDescription(Rules& r){
+QString ConstraintTeachersMaxGapsPerWeek::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintTeachersMaxGapsPerWeek>\n";
@@ -4349,7 +4349,7 @@ QString ConstraintTeachersMaxGapsPerWeek::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintTeachersMaxGapsPerWeek::getDescription(Rules& r){
+QString ConstraintTeachersMaxGapsPerWeek::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -4486,7 +4486,7 @@ bool ConstraintTeachersMaxGapsPerWeek::isRelatedToStudentsSet(const Rules& r, co
 	return false;
 }
 
-bool ConstraintTeachersMaxGapsPerWeek::hasWrongDayOrHour(Rules& r)
+bool ConstraintTeachersMaxGapsPerWeek::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxGaps>r.nDaysPerWeek*r.nHoursPerDay)
 		return true;
@@ -4494,7 +4494,7 @@ bool ConstraintTeachersMaxGapsPerWeek::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintTeachersMaxGapsPerWeek::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTeachersMaxGapsPerWeek::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -4538,13 +4538,13 @@ bool ConstraintTeacherMaxGapsPerWeek::computeInternalStructure(QWidget* parent, 
 	return true;
 }
 
-bool ConstraintTeacherMaxGapsPerWeek::hasInactiveActivities(Rules& r)
+bool ConstraintTeacherMaxGapsPerWeek::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintTeacherMaxGapsPerWeek::getXmlDescription(Rules& r){
+QString ConstraintTeacherMaxGapsPerWeek::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintTeacherMaxGapsPerWeek>\n";
@@ -4557,7 +4557,7 @@ QString ConstraintTeacherMaxGapsPerWeek::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintTeacherMaxGapsPerWeek::getDescription(Rules& r){
+QString ConstraintTeacherMaxGapsPerWeek::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -4695,7 +4695,7 @@ bool ConstraintTeacherMaxGapsPerWeek::isRelatedToStudentsSet(const Rules& r, con
 	return false;
 }
 
-bool ConstraintTeacherMaxGapsPerWeek::hasWrongDayOrHour(Rules& r)
+bool ConstraintTeacherMaxGapsPerWeek::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxGaps>r.nDaysPerWeek*r.nHoursPerDay)
 		return true;
@@ -4703,7 +4703,7 @@ bool ConstraintTeacherMaxGapsPerWeek::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintTeacherMaxGapsPerWeek::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTeacherMaxGapsPerWeek::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -4744,13 +4744,13 @@ bool ConstraintTeachersMaxGapsPerDay::computeInternalStructure(QWidget* parent, 
 	return true;
 }
 
-bool ConstraintTeachersMaxGapsPerDay::hasInactiveActivities(Rules& r)
+bool ConstraintTeachersMaxGapsPerDay::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintTeachersMaxGapsPerDay::getXmlDescription(Rules& r){
+QString ConstraintTeachersMaxGapsPerDay::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintTeachersMaxGapsPerDay>\n";
@@ -4762,7 +4762,7 @@ QString ConstraintTeachersMaxGapsPerDay::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintTeachersMaxGapsPerDay::getDescription(Rules& r){
+QString ConstraintTeachersMaxGapsPerDay::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -4898,7 +4898,7 @@ bool ConstraintTeachersMaxGapsPerDay::isRelatedToStudentsSet(const Rules& r, con
 	return false;
 }
 
-bool ConstraintTeachersMaxGapsPerDay::hasWrongDayOrHour(Rules& r)
+bool ConstraintTeachersMaxGapsPerDay::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxGaps>r.nHoursPerDay)
 		return true;
@@ -4906,7 +4906,7 @@ bool ConstraintTeachersMaxGapsPerDay::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintTeachersMaxGapsPerDay::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTeachersMaxGapsPerDay::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -4950,13 +4950,13 @@ bool ConstraintTeacherMaxGapsPerDay::computeInternalStructure(QWidget* parent, R
 	return true;
 }
 
-bool ConstraintTeacherMaxGapsPerDay::hasInactiveActivities(Rules& r)
+bool ConstraintTeacherMaxGapsPerDay::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintTeacherMaxGapsPerDay::getXmlDescription(Rules& r){
+QString ConstraintTeacherMaxGapsPerDay::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintTeacherMaxGapsPerDay>\n";
@@ -4969,7 +4969,7 @@ QString ConstraintTeacherMaxGapsPerDay::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintTeacherMaxGapsPerDay::getDescription(Rules& r){
+QString ConstraintTeacherMaxGapsPerDay::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -5108,7 +5108,7 @@ bool ConstraintTeacherMaxGapsPerDay::isRelatedToStudentsSet(const Rules& r, cons
 	return false;
 }
 
-bool ConstraintTeacherMaxGapsPerDay::hasWrongDayOrHour(Rules& r)
+bool ConstraintTeacherMaxGapsPerDay::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxGaps>r.nHoursPerDay)
 		return true;
@@ -5116,7 +5116,7 @@ bool ConstraintTeacherMaxGapsPerDay::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintTeacherMaxGapsPerDay::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTeacherMaxGapsPerDay::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -5150,13 +5150,13 @@ ConstraintBreakTimes::ConstraintBreakTimes(double wp, QList<int> d, QList<int> h
 	this->type = CONSTRAINT_BREAK_TIMES;
 }
 
-bool ConstraintBreakTimes::hasInactiveActivities(Rules& r)
+bool ConstraintBreakTimes::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintBreakTimes::getXmlDescription(Rules& r){
+QString ConstraintBreakTimes::getXmlDescription(const Rules& r) const{
 	QString s="<ConstraintBreakTimes>\n";
 	s+="	<Weight_Percentage>"+CustomFETString::number(this->weightPercentage)+"</Weight_Percentage>\n";
 
@@ -5177,7 +5177,7 @@ QString ConstraintBreakTimes::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintBreakTimes::getDescription(Rules& r){
+QString ConstraintBreakTimes::getDescription(const Rules& r) const{
 	QString begin=QString("");
 	if(!active)
 		begin="X - ";
@@ -5362,7 +5362,7 @@ bool ConstraintBreakTimes::isRelatedToStudentsSet(const Rules& r, const Students
 	return false;
 }
 
-bool ConstraintBreakTimes::hasWrongDayOrHour(Rules& r)
+bool ConstraintBreakTimes::hasWrongDayOrHour(const Rules& r) const
 {
 	assert(days.count()==hours.count());
 	
@@ -5374,7 +5374,7 @@ bool ConstraintBreakTimes::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintBreakTimes::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintBreakTimes::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -5430,13 +5430,13 @@ bool ConstraintStudentsMaxGapsPerWeek::computeInternalStructure(QWidget* parent,
 	return true;
 }
 
-bool ConstraintStudentsMaxGapsPerWeek::hasInactiveActivities(Rules& r)
+bool ConstraintStudentsMaxGapsPerWeek::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintStudentsMaxGapsPerWeek::getXmlDescription(Rules& r)
+QString ConstraintStudentsMaxGapsPerWeek::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -5449,7 +5449,7 @@ QString ConstraintStudentsMaxGapsPerWeek::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintStudentsMaxGapsPerWeek::getDescription(Rules& r)
+QString ConstraintStudentsMaxGapsPerWeek::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -5593,7 +5593,7 @@ bool ConstraintStudentsMaxGapsPerWeek::isRelatedToStudentsSet(const Rules& r, co
 	return true;
 }
 
-bool ConstraintStudentsMaxGapsPerWeek::hasWrongDayOrHour(Rules& r)
+bool ConstraintStudentsMaxGapsPerWeek::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxGaps>r.nDaysPerWeek*r.nHoursPerDay)
 		return true;
@@ -5601,7 +5601,7 @@ bool ConstraintStudentsMaxGapsPerWeek::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintStudentsMaxGapsPerWeek::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintStudentsMaxGapsPerWeek::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -5691,13 +5691,13 @@ bool ConstraintStudentsSetMaxGapsPerWeek::computeInternalStructure(QWidget* pare
 	return true;
 }
 
-bool ConstraintStudentsSetMaxGapsPerWeek::hasInactiveActivities(Rules& r)
+bool ConstraintStudentsSetMaxGapsPerWeek::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintStudentsSetMaxGapsPerWeek::getXmlDescription(Rules& r){
+QString ConstraintStudentsSetMaxGapsPerWeek::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintStudentsSetMaxGapsPerWeek>\n";
@@ -5710,7 +5710,7 @@ QString ConstraintStudentsSetMaxGapsPerWeek::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintStudentsSetMaxGapsPerWeek::getDescription(Rules& r){
+QString ConstraintStudentsSetMaxGapsPerWeek::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -5852,7 +5852,7 @@ bool ConstraintStudentsSetMaxGapsPerWeek::isRelatedToStudentsSet(const Rules& r,
 	return r.setsShareStudents(this->students, s->name);
 }
 
-bool ConstraintStudentsSetMaxGapsPerWeek::hasWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetMaxGapsPerWeek::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxGaps>r.nDaysPerWeek*r.nHoursPerDay)
 		return true;
@@ -5860,7 +5860,7 @@ bool ConstraintStudentsSetMaxGapsPerWeek::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintStudentsSetMaxGapsPerWeek::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetMaxGapsPerWeek::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -5901,13 +5901,13 @@ bool ConstraintStudentsEarlyMaxBeginningsAtSecondHour::computeInternalStructure(
 	return true;
 }
 
-bool ConstraintStudentsEarlyMaxBeginningsAtSecondHour::hasInactiveActivities(Rules& r)
+bool ConstraintStudentsEarlyMaxBeginningsAtSecondHour::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintStudentsEarlyMaxBeginningsAtSecondHour::getXmlDescription(Rules& r)
+QString ConstraintStudentsEarlyMaxBeginningsAtSecondHour::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -5920,7 +5920,7 @@ QString ConstraintStudentsEarlyMaxBeginningsAtSecondHour::getXmlDescription(Rule
 	return s;
 }
 
-QString ConstraintStudentsEarlyMaxBeginningsAtSecondHour::getDescription(Rules& r)
+QString ConstraintStudentsEarlyMaxBeginningsAtSecondHour::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -6094,7 +6094,7 @@ bool ConstraintStudentsEarlyMaxBeginningsAtSecondHour::isRelatedToStudentsSet(co
 	return true;
 }
 
-bool ConstraintStudentsEarlyMaxBeginningsAtSecondHour::hasWrongDayOrHour(Rules& r)
+bool ConstraintStudentsEarlyMaxBeginningsAtSecondHour::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxBeginningsAtSecondHour>r.nDaysPerWeek)
 		return true;
@@ -6102,7 +6102,7 @@ bool ConstraintStudentsEarlyMaxBeginningsAtSecondHour::hasWrongDayOrHour(Rules& 
 	return false;
 }
 
-bool ConstraintStudentsEarlyMaxBeginningsAtSecondHour::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintStudentsEarlyMaxBeginningsAtSecondHour::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -6192,13 +6192,13 @@ bool ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::computeInternalStructu
 	return true;
 }
 
-bool ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::hasInactiveActivities(Rules& r)
+bool ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::getXmlDescription(Rules& r)
+QString ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -6212,7 +6212,7 @@ QString ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::getXmlDescription(R
 	return s;
 }
 
-QString ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::getDescription(Rules& r)
+QString ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -6384,7 +6384,7 @@ bool ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::isRelatedToStudentsSet
 	return r.setsShareStudents(this->students, s->name);
 }
 
-bool ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::hasWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxBeginningsAtSecondHour>r.nDaysPerWeek)
 		return true;
@@ -6392,7 +6392,7 @@ bool ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::hasWrongDayOrHour(Rule
 	return false;
 }
 
-bool ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -6434,13 +6434,13 @@ bool ConstraintStudentsMaxHoursDaily::computeInternalStructure(QWidget* parent, 
 	return true;
 }
 
-bool ConstraintStudentsMaxHoursDaily::hasInactiveActivities(Rules& r)
+bool ConstraintStudentsMaxHoursDaily::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintStudentsMaxHoursDaily::getXmlDescription(Rules& r)
+QString ConstraintStudentsMaxHoursDaily::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -6456,7 +6456,7 @@ QString ConstraintStudentsMaxHoursDaily::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintStudentsMaxHoursDaily::getDescription(Rules& r)
+QString ConstraintStudentsMaxHoursDaily::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -6588,7 +6588,7 @@ bool ConstraintStudentsMaxHoursDaily::isRelatedToStudentsSet(const Rules& r, con
 	return true;
 }
 
-bool ConstraintStudentsMaxHoursDaily::hasWrongDayOrHour(Rules& r)
+bool ConstraintStudentsMaxHoursDaily::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxHoursDaily>r.nHoursPerDay)
 		return true;
@@ -6596,7 +6596,7 @@ bool ConstraintStudentsMaxHoursDaily::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintStudentsMaxHoursDaily::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintStudentsMaxHoursDaily::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -6631,13 +6631,13 @@ ConstraintStudentsSetMaxHoursDaily::ConstraintStudentsSetMaxHoursDaily(double wp
 	this->type = CONSTRAINT_STUDENTS_SET_MAX_HOURS_DAILY;
 }
 
-bool ConstraintStudentsSetMaxHoursDaily::hasInactiveActivities(Rules& r)
+bool ConstraintStudentsSetMaxHoursDaily::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintStudentsSetMaxHoursDaily::getXmlDescription(Rules& r)
+QString ConstraintStudentsSetMaxHoursDaily::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -6651,7 +6651,7 @@ QString ConstraintStudentsSetMaxHoursDaily::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintStudentsSetMaxHoursDaily::getDescription(Rules& r)
+QString ConstraintStudentsSetMaxHoursDaily::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -6840,7 +6840,7 @@ bool ConstraintStudentsSetMaxHoursDaily::isRelatedToStudentsSet(const Rules& r, 
 	return r.setsShareStudents(this->students, s->name);
 }
 
-bool ConstraintStudentsSetMaxHoursDaily::hasWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetMaxHoursDaily::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxHoursDaily>r.nHoursPerDay)
 		return true;
@@ -6848,7 +6848,7 @@ bool ConstraintStudentsSetMaxHoursDaily::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintStudentsSetMaxHoursDaily::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetMaxHoursDaily::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -6890,13 +6890,13 @@ bool ConstraintStudentsMaxHoursContinuously::computeInternalStructure(QWidget* p
 	return true;
 }
 
-bool ConstraintStudentsMaxHoursContinuously::hasInactiveActivities(Rules& r)
+bool ConstraintStudentsMaxHoursContinuously::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintStudentsMaxHoursContinuously::getXmlDescription(Rules& r)
+QString ConstraintStudentsMaxHoursContinuously::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -6912,7 +6912,7 @@ QString ConstraintStudentsMaxHoursContinuously::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintStudentsMaxHoursContinuously::getDescription(Rules& r)
+QString ConstraintStudentsMaxHoursContinuously::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -7068,7 +7068,7 @@ bool ConstraintStudentsMaxHoursContinuously::isRelatedToStudentsSet(const Rules&
 	return true;
 }
 
-bool ConstraintStudentsMaxHoursContinuously::hasWrongDayOrHour(Rules& r)
+bool ConstraintStudentsMaxHoursContinuously::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxHoursContinuously>r.nHoursPerDay)
 		return true;
@@ -7076,7 +7076,7 @@ bool ConstraintStudentsMaxHoursContinuously::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintStudentsMaxHoursContinuously::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintStudentsMaxHoursContinuously::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -7111,13 +7111,13 @@ ConstraintStudentsSetMaxHoursContinuously::ConstraintStudentsSetMaxHoursContinuo
 	this->type = CONSTRAINT_STUDENTS_SET_MAX_HOURS_CONTINUOUSLY;
 }
 
-bool ConstraintStudentsSetMaxHoursContinuously::hasInactiveActivities(Rules& r)
+bool ConstraintStudentsSetMaxHoursContinuously::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintStudentsSetMaxHoursContinuously::getXmlDescription(Rules& r)
+QString ConstraintStudentsSetMaxHoursContinuously::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -7131,7 +7131,7 @@ QString ConstraintStudentsSetMaxHoursContinuously::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintStudentsSetMaxHoursContinuously::getDescription(Rules& r)
+QString ConstraintStudentsSetMaxHoursContinuously::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -7343,7 +7343,7 @@ bool ConstraintStudentsSetMaxHoursContinuously::isRelatedToStudentsSet(const Rul
 	return r.setsShareStudents(this->students, s->name);
 }
 
-bool ConstraintStudentsSetMaxHoursContinuously::hasWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetMaxHoursContinuously::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxHoursContinuously>r.nHoursPerDay)
 		return true;
@@ -7351,7 +7351,7 @@ bool ConstraintStudentsSetMaxHoursContinuously::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintStudentsSetMaxHoursContinuously::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetMaxHoursContinuously::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -7413,13 +7413,13 @@ bool ConstraintStudentsActivityTagMaxHoursContinuously::computeInternalStructure
 	return true;
 }
 
-bool ConstraintStudentsActivityTagMaxHoursContinuously::hasInactiveActivities(Rules& r)
+bool ConstraintStudentsActivityTagMaxHoursContinuously::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintStudentsActivityTagMaxHoursContinuously::getXmlDescription(Rules& r)
+QString ConstraintStudentsActivityTagMaxHoursContinuously::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -7438,7 +7438,7 @@ QString ConstraintStudentsActivityTagMaxHoursContinuously::getXmlDescription(Rul
 	return s;
 }
 
-QString ConstraintStudentsActivityTagMaxHoursContinuously::getDescription(Rules& r)
+QString ConstraintStudentsActivityTagMaxHoursContinuously::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -7616,7 +7616,7 @@ bool ConstraintStudentsActivityTagMaxHoursContinuously::isRelatedToStudentsSet(c
 	return true;
 }
 
-bool ConstraintStudentsActivityTagMaxHoursContinuously::hasWrongDayOrHour(Rules& r)
+bool ConstraintStudentsActivityTagMaxHoursContinuously::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxHoursContinuously>r.nHoursPerDay)
 		return true;
@@ -7624,7 +7624,7 @@ bool ConstraintStudentsActivityTagMaxHoursContinuously::hasWrongDayOrHour(Rules&
 	return false;
 }
 
-bool ConstraintStudentsActivityTagMaxHoursContinuously::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintStudentsActivityTagMaxHoursContinuously::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -7660,13 +7660,13 @@ ConstraintStudentsSetActivityTagMaxHoursContinuously::ConstraintStudentsSetActiv
 	this->type = CONSTRAINT_STUDENTS_SET_ACTIVITY_TAG_MAX_HOURS_CONTINUOUSLY;
 }
 
-bool ConstraintStudentsSetActivityTagMaxHoursContinuously::hasInactiveActivities(Rules& r)
+bool ConstraintStudentsSetActivityTagMaxHoursContinuously::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintStudentsSetActivityTagMaxHoursContinuously::getXmlDescription(Rules& r)
+QString ConstraintStudentsSetActivityTagMaxHoursContinuously::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -7681,7 +7681,7 @@ QString ConstraintStudentsSetActivityTagMaxHoursContinuously::getXmlDescription(
 	return s;
 }
 
-QString ConstraintStudentsSetActivityTagMaxHoursContinuously::getDescription(Rules& r)
+QString ConstraintStudentsSetActivityTagMaxHoursContinuously::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -7936,7 +7936,7 @@ bool ConstraintStudentsSetActivityTagMaxHoursContinuously::isRelatedToStudentsSe
 	return r.setsShareStudents(this->students, s->name);
 }
 
-bool ConstraintStudentsSetActivityTagMaxHoursContinuously::hasWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetActivityTagMaxHoursContinuously::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxHoursContinuously>r.nHoursPerDay)
 		return true;
@@ -7944,7 +7944,7 @@ bool ConstraintStudentsSetActivityTagMaxHoursContinuously::hasWrongDayOrHour(Rul
 	return false;
 }
 
-bool ConstraintStudentsSetActivityTagMaxHoursContinuously::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetActivityTagMaxHoursContinuously::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -7990,13 +7990,13 @@ bool ConstraintStudentsMinHoursDaily::computeInternalStructure(QWidget* parent, 
 	return true;
 }
 
-bool ConstraintStudentsMinHoursDaily::hasInactiveActivities(Rules& r)
+bool ConstraintStudentsMinHoursDaily::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintStudentsMinHoursDaily::getXmlDescription(Rules& r)
+QString ConstraintStudentsMinHoursDaily::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -8016,7 +8016,7 @@ QString ConstraintStudentsMinHoursDaily::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintStudentsMinHoursDaily::getDescription(Rules& r)
+QString ConstraintStudentsMinHoursDaily::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -8164,7 +8164,7 @@ bool ConstraintStudentsMinHoursDaily::isRelatedToStudentsSet(const Rules& r, con
 	return true;
 }
 
-bool ConstraintStudentsMinHoursDaily::hasWrongDayOrHour(Rules& r)
+bool ConstraintStudentsMinHoursDaily::hasWrongDayOrHour(const Rules& r) const
 {
 	if(minHoursDaily>r.nHoursPerDay)
 		return true;
@@ -8172,7 +8172,7 @@ bool ConstraintStudentsMinHoursDaily::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintStudentsMinHoursDaily::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintStudentsMinHoursDaily::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -8211,13 +8211,13 @@ ConstraintStudentsSetMinHoursDaily::ConstraintStudentsSetMinHoursDaily(double wp
 	this->allowEmptyDays=_allowEmptyDays;
 }
 
-bool ConstraintStudentsSetMinHoursDaily::hasInactiveActivities(Rules& r)
+bool ConstraintStudentsSetMinHoursDaily::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintStudentsSetMinHoursDaily::getXmlDescription(Rules& r)
+QString ConstraintStudentsSetMinHoursDaily::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -8235,7 +8235,7 @@ QString ConstraintStudentsSetMinHoursDaily::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintStudentsSetMinHoursDaily::getDescription(Rules& r)
+QString ConstraintStudentsSetMinHoursDaily::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -8439,7 +8439,7 @@ bool ConstraintStudentsSetMinHoursDaily::isRelatedToStudentsSet(const Rules& r, 
 	return r.setsShareStudents(this->students, s->name);
 }
 
-bool ConstraintStudentsSetMinHoursDaily::hasWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetMinHoursDaily::hasWrongDayOrHour(const Rules& r) const
 {
 	if(minHoursDaily>r.nHoursPerDay)
 		return true;
@@ -8447,7 +8447,7 @@ bool ConstraintStudentsSetMinHoursDaily::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintStudentsSetMinHoursDaily::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetMinHoursDaily::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -8543,14 +8543,14 @@ bool ConstraintActivityPreferredStartingTime::computeInternalStructure(QWidget* 
 	return true;
 }
 
-bool ConstraintActivityPreferredStartingTime::hasInactiveActivities(Rules& r)
+bool ConstraintActivityPreferredStartingTime::hasInactiveActivities(const Rules& r) const
 {
 	if(r.inactiveActivities.contains(this->activityId))
 		return true;
 	return false;
 }
 
-QString ConstraintActivityPreferredStartingTime::getXmlDescription(Rules& r)
+QString ConstraintActivityPreferredStartingTime::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -8568,7 +8568,7 @@ QString ConstraintActivityPreferredStartingTime::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintActivityPreferredStartingTime::getDescription(Rules& r)
+QString ConstraintActivityPreferredStartingTime::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -8716,14 +8716,14 @@ bool ConstraintActivityPreferredStartingTime::isRelatedToStudentsSet(const Rules
 	return false;
 }
 
-bool ConstraintActivityPreferredStartingTime::hasWrongDayOrHour(Rules& r)
+bool ConstraintActivityPreferredStartingTime::hasWrongDayOrHour(const Rules& r) const
 {
 	if(day<0 || day>=r.nDaysPerWeek || hour<0 || hour>=r.nHoursPerDay)
 		return true;
 	return false;
 }
 
-bool ConstraintActivityPreferredStartingTime::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintActivityPreferredStartingTime::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -8814,14 +8814,14 @@ bool ConstraintActivityPreferredTimeSlots::computeInternalStructure(QWidget* par
 	return true;
 }
 
-bool ConstraintActivityPreferredTimeSlots::hasInactiveActivities(Rules& r)
+bool ConstraintActivityPreferredTimeSlots::hasInactiveActivities(const Rules& r) const
 {
 	if(r.inactiveActivities.contains(this->p_activityId))
 		return true;
 	return false;
 }
 
-QString ConstraintActivityPreferredTimeSlots::getXmlDescription(Rules& r)
+QString ConstraintActivityPreferredTimeSlots::getXmlDescription(const Rules& r) const
 {
 	QString s="<ConstraintActivityPreferredTimeSlots>\n";
 	s+="	<Weight_Percentage>"+CustomFETString::number(this->weightPercentage)+"</Weight_Percentage>\n";
@@ -8841,7 +8841,7 @@ QString ConstraintActivityPreferredTimeSlots::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintActivityPreferredTimeSlots::getDescription(Rules& r)
+QString ConstraintActivityPreferredTimeSlots::getDescription(const Rules& r) const
 {
 	QString begin=QString("");
 	if(!active)
@@ -9008,7 +9008,7 @@ bool ConstraintActivityPreferredTimeSlots::isRelatedToStudentsSet(const Rules& r
 	return false;
 }
 
-bool ConstraintActivityPreferredTimeSlots::hasWrongDayOrHour(Rules& r)
+bool ConstraintActivityPreferredTimeSlots::hasWrongDayOrHour(const Rules& r) const
 {
 	assert(p_nPreferredTimeSlots_L==p_days_L.count());
 	assert(p_nPreferredTimeSlots_L==p_hours_L.count());
@@ -9021,7 +9021,7 @@ bool ConstraintActivityPreferredTimeSlots::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintActivityPreferredTimeSlots::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintActivityPreferredTimeSlots::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -9176,7 +9176,7 @@ bool ConstraintActivitiesPreferredTimeSlots::computeInternalStructure(QWidget* p
 	}
 }
 
-bool ConstraintActivitiesPreferredTimeSlots::hasInactiveActivities(Rules& r)
+bool ConstraintActivitiesPreferredTimeSlots::hasInactiveActivities(const Rules& r) const
 {
 	QList<int> localActiveActs;
 	QList<int> localAllActs;
@@ -9232,7 +9232,7 @@ bool ConstraintActivitiesPreferredTimeSlots::hasInactiveActivities(Rules& r)
 		return false;
 }
 
-QString ConstraintActivitiesPreferredTimeSlots::getXmlDescription(Rules& r)
+QString ConstraintActivitiesPreferredTimeSlots::getXmlDescription(const Rules& r) const
 {
 	QString s="<ConstraintActivitiesPreferredTimeSlots>\n";
 	s+="	<Weight_Percentage>"+CustomFETString::number(this->weightPercentage)+"</Weight_Percentage>\n";
@@ -9259,7 +9259,7 @@ QString ConstraintActivitiesPreferredTimeSlots::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintActivitiesPreferredTimeSlots::getDescription(Rules& r)
+QString ConstraintActivitiesPreferredTimeSlots::getDescription(const Rules& r) const
 {
 	QString begin=QString("");
 	if(!active)
@@ -9508,7 +9508,7 @@ bool ConstraintActivitiesPreferredTimeSlots::isRelatedToStudentsSet(const Rules&
 	return false;
 }
 
-bool ConstraintActivitiesPreferredTimeSlots::hasWrongDayOrHour(Rules& r)
+bool ConstraintActivitiesPreferredTimeSlots::hasWrongDayOrHour(const Rules& r) const
 {
 	assert(p_nPreferredTimeSlots_L==p_days_L.count());
 	assert(p_nPreferredTimeSlots_L==p_hours_L.count());
@@ -9521,7 +9521,7 @@ bool ConstraintActivitiesPreferredTimeSlots::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintActivitiesPreferredTimeSlots::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintActivitiesPreferredTimeSlots::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -9674,7 +9674,7 @@ bool ConstraintSubactivitiesPreferredTimeSlots::computeInternalStructure(QWidget
 	}
 }
 
-bool ConstraintSubactivitiesPreferredTimeSlots::hasInactiveActivities(Rules& r)
+bool ConstraintSubactivitiesPreferredTimeSlots::hasInactiveActivities(const Rules& r) const
 {
 	QList<int> localActiveActs;
 	QList<int> localAllActs;
@@ -9728,7 +9728,7 @@ bool ConstraintSubactivitiesPreferredTimeSlots::hasInactiveActivities(Rules& r)
 		return false;
 }
 
-QString ConstraintSubactivitiesPreferredTimeSlots::getXmlDescription(Rules& r)
+QString ConstraintSubactivitiesPreferredTimeSlots::getXmlDescription(const Rules& r) const
 {
 	QString s="<ConstraintSubactivitiesPreferredTimeSlots>\n";
 	s+="	<Weight_Percentage>"+CustomFETString::number(this->weightPercentage)+"</Weight_Percentage>\n";
@@ -9752,7 +9752,7 @@ QString ConstraintSubactivitiesPreferredTimeSlots::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintSubactivitiesPreferredTimeSlots::getDescription(Rules& r)
+QString ConstraintSubactivitiesPreferredTimeSlots::getDescription(const Rules& r) const
 {
 	QString begin=QString("");
 	if(!active)
@@ -10000,7 +10000,7 @@ bool ConstraintSubactivitiesPreferredTimeSlots::isRelatedToStudentsSet(const Rul
 	return false;
 }
 
-bool ConstraintSubactivitiesPreferredTimeSlots::hasWrongDayOrHour(Rules& r)
+bool ConstraintSubactivitiesPreferredTimeSlots::hasWrongDayOrHour(const Rules& r) const
 {
 	assert(p_nPreferredTimeSlots_L==p_days_L.count());
 	assert(p_nPreferredTimeSlots_L==p_hours_L.count());
@@ -10013,7 +10013,7 @@ bool ConstraintSubactivitiesPreferredTimeSlots::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintSubactivitiesPreferredTimeSlots::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintSubactivitiesPreferredTimeSlots::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -10117,14 +10117,14 @@ bool ConstraintActivityPreferredStartingTimes::computeInternalStructure(QWidget*
 	return true;
 }
 
-bool ConstraintActivityPreferredStartingTimes::hasInactiveActivities(Rules& r)
+bool ConstraintActivityPreferredStartingTimes::hasInactiveActivities(const Rules& r) const
 {
 	if(r.inactiveActivities.contains(this->activityId))
 		return true;
 	return false;
 }
 
-QString ConstraintActivityPreferredStartingTimes::getXmlDescription(Rules& r)
+QString ConstraintActivityPreferredStartingTimes::getXmlDescription(const Rules& r) const
 {
 	QString s="<ConstraintActivityPreferredStartingTimes>\n";
 	s+="	<Weight_Percentage>"+CustomFETString::number(this->weightPercentage)+"</Weight_Percentage>\n";
@@ -10144,7 +10144,7 @@ QString ConstraintActivityPreferredStartingTimes::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintActivityPreferredStartingTimes::getDescription(Rules& r)
+QString ConstraintActivityPreferredStartingTimes::getDescription(const Rules& r) const
 {
 	QString begin=QString("");
 	if(!active)
@@ -10305,7 +10305,7 @@ bool ConstraintActivityPreferredStartingTimes::isRelatedToStudentsSet(const Rule
 	return false;
 }
 
-bool ConstraintActivityPreferredStartingTimes::hasWrongDayOrHour(Rules& r)
+bool ConstraintActivityPreferredStartingTimes::hasWrongDayOrHour(const Rules& r) const
 {
 	assert(nPreferredStartingTimes_L==days_L.count());
 	assert(nPreferredStartingTimes_L==hours_L.count());
@@ -10318,7 +10318,7 @@ bool ConstraintActivityPreferredStartingTimes::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintActivityPreferredStartingTimes::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintActivityPreferredStartingTimes::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -10467,7 +10467,7 @@ bool ConstraintActivitiesPreferredStartingTimes::computeInternalStructure(QWidge
 	}
 }
 
-bool ConstraintActivitiesPreferredStartingTimes::hasInactiveActivities(Rules& r)
+bool ConstraintActivitiesPreferredStartingTimes::hasInactiveActivities(const Rules& r) const
 {
 	QList<int> localActiveActs;
 	QList<int> localAllActs;
@@ -10521,7 +10521,7 @@ bool ConstraintActivitiesPreferredStartingTimes::hasInactiveActivities(Rules& r)
 		return false;
 }
 
-QString ConstraintActivitiesPreferredStartingTimes::getXmlDescription(Rules& r)
+QString ConstraintActivitiesPreferredStartingTimes::getXmlDescription(const Rules& r) const
 {
 	QString s="<ConstraintActivitiesPreferredStartingTimes>\n";
 	s+="	<Weight_Percentage>"+CustomFETString::number(this->weightPercentage)+"</Weight_Percentage>\n";
@@ -10548,7 +10548,7 @@ QString ConstraintActivitiesPreferredStartingTimes::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintActivitiesPreferredStartingTimes::getDescription(Rules& r)
+QString ConstraintActivitiesPreferredStartingTimes::getDescription(const Rules& r) const
 {
 	QString begin=QString("");
 	if(!active)
@@ -10793,7 +10793,7 @@ bool ConstraintActivitiesPreferredStartingTimes::isRelatedToStudentsSet(const Ru
 	return false;
 }
 
-bool ConstraintActivitiesPreferredStartingTimes::hasWrongDayOrHour(Rules& r)
+bool ConstraintActivitiesPreferredStartingTimes::hasWrongDayOrHour(const Rules& r) const
 {
 	assert(nPreferredStartingTimes_L==days_L.count());
 	assert(nPreferredStartingTimes_L==hours_L.count());
@@ -10806,7 +10806,7 @@ bool ConstraintActivitiesPreferredStartingTimes::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintActivitiesPreferredStartingTimes::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintActivitiesPreferredStartingTimes::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -10953,7 +10953,7 @@ bool ConstraintSubactivitiesPreferredStartingTimes::computeInternalStructure(QWi
 	}
 }
 
-bool ConstraintSubactivitiesPreferredStartingTimes::hasInactiveActivities(Rules& r)
+bool ConstraintSubactivitiesPreferredStartingTimes::hasInactiveActivities(const Rules& r) const
 {
 	QList<int> localActiveActs;
 	QList<int> localAllActs;
@@ -11007,7 +11007,7 @@ bool ConstraintSubactivitiesPreferredStartingTimes::hasInactiveActivities(Rules&
 		return false;
 }
 
-QString ConstraintSubactivitiesPreferredStartingTimes::getXmlDescription(Rules& r)
+QString ConstraintSubactivitiesPreferredStartingTimes::getXmlDescription(const Rules& r) const
 {
 	QString s="<ConstraintSubactivitiesPreferredStartingTimes>\n";
 	s+="	<Weight_Percentage>"+CustomFETString::number(this->weightPercentage)+"</Weight_Percentage>\n";
@@ -11031,7 +11031,7 @@ QString ConstraintSubactivitiesPreferredStartingTimes::getXmlDescription(Rules& 
 	return s;
 }
 
-QString ConstraintSubactivitiesPreferredStartingTimes::getDescription(Rules& r)
+QString ConstraintSubactivitiesPreferredStartingTimes::getDescription(const Rules& r) const
 {
 	QString begin=QString("");
 	if(!active)
@@ -11269,7 +11269,7 @@ bool ConstraintSubactivitiesPreferredStartingTimes::isRelatedToStudentsSet(const
 	return false;
 }
 
-bool ConstraintSubactivitiesPreferredStartingTimes::hasWrongDayOrHour(Rules& r)
+bool ConstraintSubactivitiesPreferredStartingTimes::hasWrongDayOrHour(const Rules& r) const
 {
 	assert(nPreferredStartingTimes_L==days_L.count());
 	assert(nPreferredStartingTimes_L==hours_L.count());
@@ -11282,7 +11282,7 @@ bool ConstraintSubactivitiesPreferredStartingTimes::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintSubactivitiesPreferredStartingTimes::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintSubactivitiesPreferredStartingTimes::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -11401,7 +11401,7 @@ void ConstraintActivitiesSameStartingHour::removeUseless(Rules& r)
 	r.internalStructureComputed=false;
 }
 
-bool ConstraintActivitiesSameStartingHour::hasInactiveActivities(Rules& r)
+bool ConstraintActivitiesSameStartingHour::hasInactiveActivities(const Rules& r) const
 {
 	int count=0;
 
@@ -11415,7 +11415,7 @@ bool ConstraintActivitiesSameStartingHour::hasInactiveActivities(Rules& r)
 		return false;
 }
 
-QString ConstraintActivitiesSameStartingHour::getXmlDescription(Rules& r){
+QString ConstraintActivitiesSameStartingHour::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintActivitiesSameStartingHour>\n";
@@ -11429,7 +11429,7 @@ QString ConstraintActivitiesSameStartingHour::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintActivitiesSameStartingHour::getDescription(Rules& r){
+QString ConstraintActivitiesSameStartingHour::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -11569,13 +11569,13 @@ bool ConstraintActivitiesSameStartingHour::isRelatedToStudentsSet(const Rules& r
 	return false;
 }
 
-bool ConstraintActivitiesSameStartingHour::hasWrongDayOrHour(Rules& r)
+bool ConstraintActivitiesSameStartingHour::hasWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-bool ConstraintActivitiesSameStartingHour::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintActivitiesSameStartingHour::canRepairWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	assert(0);
@@ -11675,7 +11675,7 @@ void ConstraintActivitiesSameStartingDay::removeUseless(Rules& r)
 	r.internalStructureComputed=false;
 }
 
-bool ConstraintActivitiesSameStartingDay::hasInactiveActivities(Rules& r)
+bool ConstraintActivitiesSameStartingDay::hasInactiveActivities(const Rules& r) const
 {
 	int count=0;
 
@@ -11689,7 +11689,7 @@ bool ConstraintActivitiesSameStartingDay::hasInactiveActivities(Rules& r)
 		return false;
 }
 
-QString ConstraintActivitiesSameStartingDay::getXmlDescription(Rules& r){
+QString ConstraintActivitiesSameStartingDay::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintActivitiesSameStartingDay>\n";
@@ -11703,7 +11703,7 @@ QString ConstraintActivitiesSameStartingDay::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintActivitiesSameStartingDay::getDescription(Rules& r){
+QString ConstraintActivitiesSameStartingDay::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -11841,13 +11841,13 @@ bool ConstraintActivitiesSameStartingDay::isRelatedToStudentsSet(const Rules& r,
 	return false;
 }
 
-bool ConstraintActivitiesSameStartingDay::hasWrongDayOrHour(Rules& r)
+bool ConstraintActivitiesSameStartingDay::hasWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-bool ConstraintActivitiesSameStartingDay::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintActivitiesSameStartingDay::canRepairWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	assert(0);
@@ -11931,7 +11931,7 @@ bool ConstraintTwoActivitiesConsecutive::computeInternalStructure(QWidget* paren
 	return true;
 }
 
-bool ConstraintTwoActivitiesConsecutive::hasInactiveActivities(Rules& r)
+bool ConstraintTwoActivitiesConsecutive::hasInactiveActivities(const Rules& r) const
 {
 	if(r.inactiveActivities.contains(this->firstActivityId))
 		return true;
@@ -11940,7 +11940,7 @@ bool ConstraintTwoActivitiesConsecutive::hasInactiveActivities(Rules& r)
 	return false;
 }
 
-QString ConstraintTwoActivitiesConsecutive::getXmlDescription(Rules& r)
+QString ConstraintTwoActivitiesConsecutive::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -11954,7 +11954,7 @@ QString ConstraintTwoActivitiesConsecutive::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintTwoActivitiesConsecutive::getDescription(Rules& r)
+QString ConstraintTwoActivitiesConsecutive::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -12114,13 +12114,13 @@ bool ConstraintTwoActivitiesConsecutive::isRelatedToStudentsSet(const Rules& r, 
 	return false;
 }
 
-bool ConstraintTwoActivitiesConsecutive::hasWrongDayOrHour(Rules& r)
+bool ConstraintTwoActivitiesConsecutive::hasWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-bool ConstraintTwoActivitiesConsecutive::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTwoActivitiesConsecutive::canRepairWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	assert(0);
@@ -12204,7 +12204,7 @@ bool ConstraintTwoActivitiesGrouped::computeInternalStructure(QWidget* parent, R
 	return true;
 }
 
-bool ConstraintTwoActivitiesGrouped::hasInactiveActivities(Rules& r)
+bool ConstraintTwoActivitiesGrouped::hasInactiveActivities(const Rules& r) const
 {
 	if(r.inactiveActivities.contains(this->firstActivityId))
 		return true;
@@ -12213,7 +12213,7 @@ bool ConstraintTwoActivitiesGrouped::hasInactiveActivities(Rules& r)
 	return false;
 }
 
-QString ConstraintTwoActivitiesGrouped::getXmlDescription(Rules& r)
+QString ConstraintTwoActivitiesGrouped::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -12227,7 +12227,7 @@ QString ConstraintTwoActivitiesGrouped::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintTwoActivitiesGrouped::getDescription(Rules& r)
+QString ConstraintTwoActivitiesGrouped::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -12399,13 +12399,13 @@ bool ConstraintTwoActivitiesGrouped::isRelatedToStudentsSet(const Rules& r, cons
 	return false;
 }
 
-bool ConstraintTwoActivitiesGrouped::hasWrongDayOrHour(Rules& r)
+bool ConstraintTwoActivitiesGrouped::hasWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-bool ConstraintTwoActivitiesGrouped::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTwoActivitiesGrouped::canRepairWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	assert(0);
@@ -12509,7 +12509,7 @@ bool ConstraintThreeActivitiesGrouped::computeInternalStructure(QWidget* parent,
 	return true;
 }
 
-bool ConstraintThreeActivitiesGrouped::hasInactiveActivities(Rules& r)
+bool ConstraintThreeActivitiesGrouped::hasInactiveActivities(const Rules& r) const
 {
 	if(r.inactiveActivities.contains(this->firstActivityId))
 		return true;
@@ -12520,7 +12520,7 @@ bool ConstraintThreeActivitiesGrouped::hasInactiveActivities(Rules& r)
 	return false;
 }
 
-QString ConstraintThreeActivitiesGrouped::getXmlDescription(Rules& r)
+QString ConstraintThreeActivitiesGrouped::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -12535,7 +12535,7 @@ QString ConstraintThreeActivitiesGrouped::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintThreeActivitiesGrouped::getDescription(Rules& r)
+QString ConstraintThreeActivitiesGrouped::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -12767,13 +12767,13 @@ bool ConstraintThreeActivitiesGrouped::isRelatedToStudentsSet(const Rules& r, co
 	return false;
 }
 
-bool ConstraintThreeActivitiesGrouped::hasWrongDayOrHour(Rules& r)
+bool ConstraintThreeActivitiesGrouped::hasWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-bool ConstraintThreeActivitiesGrouped::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintThreeActivitiesGrouped::canRepairWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	assert(0);
@@ -12857,7 +12857,7 @@ bool ConstraintTwoActivitiesOrdered::computeInternalStructure(QWidget* parent, R
 	return true;
 }
 
-bool ConstraintTwoActivitiesOrdered::hasInactiveActivities(Rules& r)
+bool ConstraintTwoActivitiesOrdered::hasInactiveActivities(const Rules& r) const
 {
 	if(r.inactiveActivities.contains(this->firstActivityId))
 		return true;
@@ -12866,7 +12866,7 @@ bool ConstraintTwoActivitiesOrdered::hasInactiveActivities(Rules& r)
 	return false;
 }
 
-QString ConstraintTwoActivitiesOrdered::getXmlDescription(Rules& r)
+QString ConstraintTwoActivitiesOrdered::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -12880,7 +12880,7 @@ QString ConstraintTwoActivitiesOrdered::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintTwoActivitiesOrdered::getDescription(Rules& r)
+QString ConstraintTwoActivitiesOrdered::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -13025,13 +13025,13 @@ bool ConstraintTwoActivitiesOrdered::isRelatedToStudentsSet(const Rules& r, cons
 	return false;
 }
 
-bool ConstraintTwoActivitiesOrdered::hasWrongDayOrHour(Rules& r)
+bool ConstraintTwoActivitiesOrdered::hasWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-bool ConstraintTwoActivitiesOrdered::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTwoActivitiesOrdered::canRepairWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	assert(0);
@@ -13086,14 +13086,14 @@ bool ConstraintActivityEndsStudentsDay::computeInternalStructure(QWidget* parent
 	return true;
 }
 
-bool ConstraintActivityEndsStudentsDay::hasInactiveActivities(Rules& r)
+bool ConstraintActivityEndsStudentsDay::hasInactiveActivities(const Rules& r) const
 {
 	if(r.inactiveActivities.contains(this->activityId))
 		return true;
 	return false;
 }
 
-QString ConstraintActivityEndsStudentsDay::getXmlDescription(Rules& r)
+QString ConstraintActivityEndsStudentsDay::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -13106,7 +13106,7 @@ QString ConstraintActivityEndsStudentsDay::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintActivityEndsStudentsDay::getDescription(Rules& r)
+QString ConstraintActivityEndsStudentsDay::getDescription(const Rules& r) const
 {
 	QString begin=QString("");
 	if(!active)
@@ -13238,13 +13238,13 @@ bool ConstraintActivityEndsStudentsDay::isRelatedToStudentsSet(const Rules& r, c
 	return false;
 }
 
-bool ConstraintActivityEndsStudentsDay::hasWrongDayOrHour(Rules& r)
+bool ConstraintActivityEndsStudentsDay::hasWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-bool ConstraintActivityEndsStudentsDay::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintActivityEndsStudentsDay::canRepairWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	assert(0);
@@ -13299,13 +13299,13 @@ bool ConstraintTeachersMinHoursDaily::computeInternalStructure(QWidget* parent, 
 	return true;
 }
 
-bool ConstraintTeachersMinHoursDaily::hasInactiveActivities(Rules& r)
+bool ConstraintTeachersMinHoursDaily::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintTeachersMinHoursDaily::getXmlDescription(Rules& r){
+QString ConstraintTeachersMinHoursDaily::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintTeachersMinHoursDaily>\n";
@@ -13321,7 +13321,7 @@ QString ConstraintTeachersMinHoursDaily::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintTeachersMinHoursDaily::getDescription(Rules& r){
+QString ConstraintTeachersMinHoursDaily::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -13452,7 +13452,7 @@ bool ConstraintTeachersMinHoursDaily::isRelatedToStudentsSet(const Rules& r, con
 	return false;
 }
 
-bool ConstraintTeachersMinHoursDaily::hasWrongDayOrHour(Rules& r)
+bool ConstraintTeachersMinHoursDaily::hasWrongDayOrHour(const Rules& r) const
 {
 	if(minHoursDaily>r.nHoursPerDay)
 		return true;
@@ -13460,7 +13460,7 @@ bool ConstraintTeachersMinHoursDaily::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintTeachersMinHoursDaily::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTeachersMinHoursDaily::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -13519,13 +13519,13 @@ bool ConstraintTeacherMinHoursDaily::computeInternalStructure(QWidget* parent, R
 	return true;
 }
 
-bool ConstraintTeacherMinHoursDaily::hasInactiveActivities(Rules& r)
+bool ConstraintTeacherMinHoursDaily::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintTeacherMinHoursDaily::getXmlDescription(Rules& r){
+QString ConstraintTeacherMinHoursDaily::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintTeacherMinHoursDaily>\n";
@@ -13542,7 +13542,7 @@ QString ConstraintTeacherMinHoursDaily::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintTeacherMinHoursDaily::getDescription(Rules& r){
+QString ConstraintTeacherMinHoursDaily::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -13675,7 +13675,7 @@ bool ConstraintTeacherMinHoursDaily::isRelatedToStudentsSet(const Rules& r, cons
 	return false;
 }
 
-bool ConstraintTeacherMinHoursDaily::hasWrongDayOrHour(Rules& r)
+bool ConstraintTeacherMinHoursDaily::hasWrongDayOrHour(const Rules& r) const
 {
 	if(minHoursDaily>r.nHoursPerDay)
 		return true;
@@ -13683,7 +13683,7 @@ bool ConstraintTeacherMinHoursDaily::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintTeacherMinHoursDaily::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTeacherMinHoursDaily::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -13729,13 +13729,13 @@ bool ConstraintTeacherMinDaysPerWeek::computeInternalStructure(QWidget* parent, 
 	return true;
 }
 
-bool ConstraintTeacherMinDaysPerWeek::hasInactiveActivities(Rules& r)
+bool ConstraintTeacherMinDaysPerWeek::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintTeacherMinDaysPerWeek::getXmlDescription(Rules& r){
+QString ConstraintTeacherMinDaysPerWeek::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintTeacherMinDaysPerWeek>\n";
@@ -13748,7 +13748,7 @@ QString ConstraintTeacherMinDaysPerWeek::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintTeacherMinDaysPerWeek::getDescription(Rules& r){
+QString ConstraintTeacherMinDaysPerWeek::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -13877,7 +13877,7 @@ bool ConstraintTeacherMinDaysPerWeek::isRelatedToStudentsSet(const Rules& r, con
 	return false;
 }
 
-bool ConstraintTeacherMinDaysPerWeek::hasWrongDayOrHour(Rules& r)
+bool ConstraintTeacherMinDaysPerWeek::hasWrongDayOrHour(const Rules& r) const
 {
 	if(minDaysPerWeek>r.nDaysPerWeek)
 		return true;
@@ -13885,7 +13885,7 @@ bool ConstraintTeacherMinDaysPerWeek::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintTeacherMinDaysPerWeek::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTeacherMinDaysPerWeek::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -13928,13 +13928,13 @@ bool ConstraintTeachersMinDaysPerWeek::computeInternalStructure(QWidget* parent,
 	return true;
 }
 
-bool ConstraintTeachersMinDaysPerWeek::hasInactiveActivities(Rules& r)
+bool ConstraintTeachersMinDaysPerWeek::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintTeachersMinDaysPerWeek::getXmlDescription(Rules& r){
+QString ConstraintTeachersMinDaysPerWeek::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintTeachersMinDaysPerWeek>\n";
@@ -13946,7 +13946,7 @@ QString ConstraintTeachersMinDaysPerWeek::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintTeachersMinDaysPerWeek::getDescription(Rules& r){
+QString ConstraintTeachersMinDaysPerWeek::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -14076,7 +14076,7 @@ bool ConstraintTeachersMinDaysPerWeek::isRelatedToStudentsSet(const Rules& r, co
 	return false;
 }
 
-bool ConstraintTeachersMinDaysPerWeek::hasWrongDayOrHour(Rules& r)
+bool ConstraintTeachersMinDaysPerWeek::hasWrongDayOrHour(const Rules& r) const
 {
 	if(minDaysPerWeek>r.nDaysPerWeek)
 		return true;
@@ -14084,7 +14084,7 @@ bool ConstraintTeachersMinDaysPerWeek::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintTeachersMinDaysPerWeek::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTeachersMinDaysPerWeek::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -14151,13 +14151,13 @@ bool ConstraintTeacherIntervalMaxDaysPerWeek::computeInternalStructure(QWidget* 
 	return true;
 }
 
-bool ConstraintTeacherIntervalMaxDaysPerWeek::hasInactiveActivities(Rules& r)
+bool ConstraintTeacherIntervalMaxDaysPerWeek::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintTeacherIntervalMaxDaysPerWeek::getXmlDescription(Rules& r)
+QString ConstraintTeacherIntervalMaxDaysPerWeek::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -14179,7 +14179,7 @@ QString ConstraintTeacherIntervalMaxDaysPerWeek::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintTeacherIntervalMaxDaysPerWeek::getDescription(Rules& r){
+QString ConstraintTeacherIntervalMaxDaysPerWeek::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -14323,7 +14323,7 @@ bool ConstraintTeacherIntervalMaxDaysPerWeek::isRelatedToStudentsSet(const Rules
 	return false;
 }
 
-bool ConstraintTeacherIntervalMaxDaysPerWeek::hasWrongDayOrHour(Rules& r)
+bool ConstraintTeacherIntervalMaxDaysPerWeek::hasWrongDayOrHour(const Rules& r) const
 {
 	if(this->startHour>=r.nHoursPerDay)
 		return true;
@@ -14335,7 +14335,7 @@ bool ConstraintTeacherIntervalMaxDaysPerWeek::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintTeacherIntervalMaxDaysPerWeek::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTeacherIntervalMaxDaysPerWeek::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -14403,13 +14403,13 @@ bool ConstraintTeachersIntervalMaxDaysPerWeek::computeInternalStructure(QWidget*
 	return true;
 }
 
-bool ConstraintTeachersIntervalMaxDaysPerWeek::hasInactiveActivities(Rules& r)
+bool ConstraintTeachersIntervalMaxDaysPerWeek::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintTeachersIntervalMaxDaysPerWeek::getXmlDescription(Rules& r)
+QString ConstraintTeachersIntervalMaxDaysPerWeek::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -14430,7 +14430,7 @@ QString ConstraintTeachersIntervalMaxDaysPerWeek::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintTeachersIntervalMaxDaysPerWeek::getDescription(Rules& r){
+QString ConstraintTeachersIntervalMaxDaysPerWeek::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -14573,7 +14573,7 @@ bool ConstraintTeachersIntervalMaxDaysPerWeek::isRelatedToStudentsSet(const Rule
 	return false;
 }
 
-bool ConstraintTeachersIntervalMaxDaysPerWeek::hasWrongDayOrHour(Rules& r)
+bool ConstraintTeachersIntervalMaxDaysPerWeek::hasWrongDayOrHour(const Rules& r) const
 {
 	if(this->startHour>=r.nHoursPerDay)
 		return true;
@@ -14585,7 +14585,7 @@ bool ConstraintTeachersIntervalMaxDaysPerWeek::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintTeachersIntervalMaxDaysPerWeek::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTeachersIntervalMaxDaysPerWeek::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -14708,13 +14708,13 @@ bool ConstraintStudentsSetIntervalMaxDaysPerWeek::computeInternalStructure(QWidg
 	return true;
 }
 
-bool ConstraintStudentsSetIntervalMaxDaysPerWeek::hasInactiveActivities(Rules& r)
+bool ConstraintStudentsSetIntervalMaxDaysPerWeek::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintStudentsSetIntervalMaxDaysPerWeek::getXmlDescription(Rules& r)
+QString ConstraintStudentsSetIntervalMaxDaysPerWeek::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -14736,7 +14736,7 @@ QString ConstraintStudentsSetIntervalMaxDaysPerWeek::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintStudentsSetIntervalMaxDaysPerWeek::getDescription(Rules& r){
+QString ConstraintStudentsSetIntervalMaxDaysPerWeek::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -14877,7 +14877,7 @@ bool ConstraintStudentsSetIntervalMaxDaysPerWeek::isRelatedToStudentsSet(const R
 	return r.setsShareStudents(this->students, s->name);
 }
 
-bool ConstraintStudentsSetIntervalMaxDaysPerWeek::hasWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetIntervalMaxDaysPerWeek::hasWrongDayOrHour(const Rules& r) const
 {
 	if(this->startHour>=r.nHoursPerDay)
 		return true;
@@ -14889,7 +14889,7 @@ bool ConstraintStudentsSetIntervalMaxDaysPerWeek::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintStudentsSetIntervalMaxDaysPerWeek::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetIntervalMaxDaysPerWeek::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -14958,13 +14958,13 @@ bool ConstraintStudentsIntervalMaxDaysPerWeek::computeInternalStructure(QWidget*
 	return true;
 }
 
-bool ConstraintStudentsIntervalMaxDaysPerWeek::hasInactiveActivities(Rules& r)
+bool ConstraintStudentsIntervalMaxDaysPerWeek::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintStudentsIntervalMaxDaysPerWeek::getXmlDescription(Rules& r)
+QString ConstraintStudentsIntervalMaxDaysPerWeek::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -14985,7 +14985,7 @@ QString ConstraintStudentsIntervalMaxDaysPerWeek::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintStudentsIntervalMaxDaysPerWeek::getDescription(Rules& r){
+QString ConstraintStudentsIntervalMaxDaysPerWeek::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -15126,7 +15126,7 @@ bool ConstraintStudentsIntervalMaxDaysPerWeek::isRelatedToStudentsSet(const Rule
 	return true;
 }
 
-bool ConstraintStudentsIntervalMaxDaysPerWeek::hasWrongDayOrHour(Rules& r)
+bool ConstraintStudentsIntervalMaxDaysPerWeek::hasWrongDayOrHour(const Rules& r) const
 {
 	if(this->startHour>=r.nHoursPerDay)
 		return true;
@@ -15138,7 +15138,7 @@ bool ConstraintStudentsIntervalMaxDaysPerWeek::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintStudentsIntervalMaxDaysPerWeek::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintStudentsIntervalMaxDaysPerWeek::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -15234,13 +15234,13 @@ bool ConstraintActivitiesEndStudentsDay::computeInternalStructure(QWidget* paren
 	}
 }
 
-bool ConstraintActivitiesEndStudentsDay::hasInactiveActivities(Rules& r)
+bool ConstraintActivitiesEndStudentsDay::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintActivitiesEndStudentsDay::getXmlDescription(Rules& r)
+QString ConstraintActivitiesEndStudentsDay::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -15256,7 +15256,7 @@ QString ConstraintActivitiesEndStudentsDay::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintActivitiesEndStudentsDay::getDescription(Rules& r)
+QString ConstraintActivitiesEndStudentsDay::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 	
@@ -15465,13 +15465,13 @@ bool ConstraintActivitiesEndStudentsDay::isRelatedToStudentsSet(const Rules& r, 
 	return false;
 }
 
-bool ConstraintActivitiesEndStudentsDay::hasWrongDayOrHour(Rules& r)
+bool ConstraintActivitiesEndStudentsDay::hasWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-bool ConstraintActivitiesEndStudentsDay::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintActivitiesEndStudentsDay::canRepairWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	assert(0);
@@ -15533,13 +15533,13 @@ bool ConstraintTeachersActivityTagMaxHoursDaily::computeInternalStructure(QWidge
 	return true;
 }
 
-bool ConstraintTeachersActivityTagMaxHoursDaily::hasInactiveActivities(Rules& r)
+bool ConstraintTeachersActivityTagMaxHoursDaily::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintTeachersActivityTagMaxHoursDaily::getXmlDescription(Rules& r){
+QString ConstraintTeachersActivityTagMaxHoursDaily::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintTeachersActivityTagMaxHoursDaily>\n";
@@ -15552,7 +15552,7 @@ QString ConstraintTeachersActivityTagMaxHoursDaily::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintTeachersActivityTagMaxHoursDaily::getDescription(Rules& r){
+QString ConstraintTeachersActivityTagMaxHoursDaily::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -15696,7 +15696,7 @@ bool ConstraintTeachersActivityTagMaxHoursDaily::isRelatedToStudentsSet(const Ru
 	return false;
 }
 
-bool ConstraintTeachersActivityTagMaxHoursDaily::hasWrongDayOrHour(Rules& r)
+bool ConstraintTeachersActivityTagMaxHoursDaily::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxHoursDaily>r.nHoursPerDay)
 		return true;
@@ -15704,7 +15704,7 @@ bool ConstraintTeachersActivityTagMaxHoursDaily::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintTeachersActivityTagMaxHoursDaily::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTeachersActivityTagMaxHoursDaily::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -15771,13 +15771,13 @@ bool ConstraintTeacherActivityTagMaxHoursDaily::computeInternalStructure(QWidget
 	return true;
 }
 
-bool ConstraintTeacherActivityTagMaxHoursDaily::hasInactiveActivities(Rules& r)
+bool ConstraintTeacherActivityTagMaxHoursDaily::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintTeacherActivityTagMaxHoursDaily::getXmlDescription(Rules& r){
+QString ConstraintTeacherActivityTagMaxHoursDaily::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintTeacherActivityTagMaxHoursDaily>\n";
@@ -15791,7 +15791,7 @@ QString ConstraintTeacherActivityTagMaxHoursDaily::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintTeacherActivityTagMaxHoursDaily::getDescription(Rules& r){
+QString ConstraintTeacherActivityTagMaxHoursDaily::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -15936,7 +15936,7 @@ bool ConstraintTeacherActivityTagMaxHoursDaily::isRelatedToStudentsSet(const Rul
 	return false;
 }
 
-bool ConstraintTeacherActivityTagMaxHoursDaily::hasWrongDayOrHour(Rules& r)
+bool ConstraintTeacherActivityTagMaxHoursDaily::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxHoursDaily>r.nHoursPerDay)
 		return true;
@@ -15944,7 +15944,7 @@ bool ConstraintTeacherActivityTagMaxHoursDaily::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintTeacherActivityTagMaxHoursDaily::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTeacherActivityTagMaxHoursDaily::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -16006,13 +16006,13 @@ bool ConstraintStudentsActivityTagMaxHoursDaily::computeInternalStructure(QWidge
 	return true;
 }
 
-bool ConstraintStudentsActivityTagMaxHoursDaily::hasInactiveActivities(Rules& r)
+bool ConstraintStudentsActivityTagMaxHoursDaily::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintStudentsActivityTagMaxHoursDaily::getXmlDescription(Rules& r)
+QString ConstraintStudentsActivityTagMaxHoursDaily::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -16031,7 +16031,7 @@ QString ConstraintStudentsActivityTagMaxHoursDaily::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintStudentsActivityTagMaxHoursDaily::getDescription(Rules& r)
+QString ConstraintStudentsActivityTagMaxHoursDaily::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -16178,7 +16178,7 @@ bool ConstraintStudentsActivityTagMaxHoursDaily::isRelatedToStudentsSet(const Ru
 	return true;
 }
 
-bool ConstraintStudentsActivityTagMaxHoursDaily::hasWrongDayOrHour(Rules& r)
+bool ConstraintStudentsActivityTagMaxHoursDaily::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxHoursDaily>r.nHoursPerDay)
 		return true;
@@ -16186,7 +16186,7 @@ bool ConstraintStudentsActivityTagMaxHoursDaily::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintStudentsActivityTagMaxHoursDaily::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintStudentsActivityTagMaxHoursDaily::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -16222,13 +16222,13 @@ ConstraintStudentsSetActivityTagMaxHoursDaily::ConstraintStudentsSetActivityTagM
 	this->type = CONSTRAINT_STUDENTS_SET_ACTIVITY_TAG_MAX_HOURS_DAILY;
 }
 
-bool ConstraintStudentsSetActivityTagMaxHoursDaily::hasInactiveActivities(Rules& r)
+bool ConstraintStudentsSetActivityTagMaxHoursDaily::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintStudentsSetActivityTagMaxHoursDaily::getXmlDescription(Rules& r)
+QString ConstraintStudentsSetActivityTagMaxHoursDaily::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -16243,7 +16243,7 @@ QString ConstraintStudentsSetActivityTagMaxHoursDaily::getXmlDescription(Rules& 
 	return s;
 }
 
-QString ConstraintStudentsSetActivityTagMaxHoursDaily::getDescription(Rules& r)
+QString ConstraintStudentsSetActivityTagMaxHoursDaily::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -16469,7 +16469,7 @@ bool ConstraintStudentsSetActivityTagMaxHoursDaily::isRelatedToStudentsSet(const
 	return r.setsShareStudents(this->students, s->name);
 }
 
-bool ConstraintStudentsSetActivityTagMaxHoursDaily::hasWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetActivityTagMaxHoursDaily::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxHoursDaily>r.nHoursPerDay)
 		return true;
@@ -16477,7 +16477,7 @@ bool ConstraintStudentsSetActivityTagMaxHoursDaily::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintStudentsSetActivityTagMaxHoursDaily::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetActivityTagMaxHoursDaily::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -16518,13 +16518,13 @@ bool ConstraintStudentsMaxGapsPerDay::computeInternalStructure(QWidget* parent, 
 	return true;
 }
 
-bool ConstraintStudentsMaxGapsPerDay::hasInactiveActivities(Rules& r)
+bool ConstraintStudentsMaxGapsPerDay::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintStudentsMaxGapsPerDay::getXmlDescription(Rules& r)
+QString ConstraintStudentsMaxGapsPerDay::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -16537,7 +16537,7 @@ QString ConstraintStudentsMaxGapsPerDay::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintStudentsMaxGapsPerDay::getDescription(Rules& r)
+QString ConstraintStudentsMaxGapsPerDay::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -16685,7 +16685,7 @@ bool ConstraintStudentsMaxGapsPerDay::isRelatedToStudentsSet(const Rules& r, con
 	return true;
 }
 
-bool ConstraintStudentsMaxGapsPerDay::hasWrongDayOrHour(Rules& r)
+bool ConstraintStudentsMaxGapsPerDay::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxGaps>r.nHoursPerDay)
 		return true;
@@ -16693,7 +16693,7 @@ bool ConstraintStudentsMaxGapsPerDay::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintStudentsMaxGapsPerDay::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintStudentsMaxGapsPerDay::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -16783,13 +16783,13 @@ bool ConstraintStudentsSetMaxGapsPerDay::computeInternalStructure(QWidget* paren
 	return true;
 }
 
-bool ConstraintStudentsSetMaxGapsPerDay::hasInactiveActivities(Rules& r)
+bool ConstraintStudentsSetMaxGapsPerDay::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintStudentsSetMaxGapsPerDay::getXmlDescription(Rules& r){
+QString ConstraintStudentsSetMaxGapsPerDay::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintStudentsSetMaxGapsPerDay>\n";
@@ -16802,7 +16802,7 @@ QString ConstraintStudentsSetMaxGapsPerDay::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintStudentsSetMaxGapsPerDay::getDescription(Rules& r){
+QString ConstraintStudentsSetMaxGapsPerDay::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -16948,7 +16948,7 @@ bool ConstraintStudentsSetMaxGapsPerDay::isRelatedToStudentsSet(const Rules& r, 
 	return r.setsShareStudents(this->students, s->name);
 }
 
-bool ConstraintStudentsSetMaxGapsPerDay::hasWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetMaxGapsPerDay::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxGaps>r.nHoursPerDay)
 		return true;
@@ -16956,7 +16956,7 @@ bool ConstraintStudentsSetMaxGapsPerDay::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintStudentsSetMaxGapsPerDay::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetMaxGapsPerDay::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -17061,7 +17061,7 @@ bool ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::computeInternalStructu
 	}
 }
 
-bool ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::hasInactiveActivities(Rules& r)
+bool ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::hasInactiveActivities(const Rules& r) const
 {
 	//returns true if all activities are inactive
 	
@@ -17072,7 +17072,7 @@ bool ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::hasInactiveActivities(
 	return true;
 }
 
-QString ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::getXmlDescription(Rules& r)
+QString ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::getXmlDescription(const Rules& r) const
 {
 	assert(this->selectedDays.count()==this->selectedHours.count());
 
@@ -17099,7 +17099,7 @@ QString ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::getXmlDescription(R
 	return s;
 }
 
-QString ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::getDescription(Rules& r)
+QString ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::getDescription(const Rules& r) const
 {
 	QString begin=QString("");
 	if(!active)
@@ -17290,7 +17290,7 @@ bool ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::isRelatedToStudentsSet
 	return false;
 }
 
-bool ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::hasWrongDayOrHour(Rules& r)
+bool ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::hasWrongDayOrHour(const Rules& r) const
 {
 	assert(selectedDays.count()==selectedHours.count());
 	
@@ -17305,7 +17305,7 @@ bool ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::hasWrongDayOrHour(Rule
 	return false;
 }
 
-bool ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -17428,7 +17428,7 @@ bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::computeInternalStru
 	}
 }
 
-bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::hasInactiveActivities(Rules& r)
+bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::hasInactiveActivities(const Rules& r) const
 {
 	//returns true if all activities are inactive
 	
@@ -17439,7 +17439,7 @@ bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::hasInactiveActiviti
 	return true;
 }
 
-QString ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::getXmlDescription(Rules& r)
+QString ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::getXmlDescription(const Rules& r) const
 {
 	assert(this->selectedDays.count()==this->selectedHours.count());
 
@@ -17466,7 +17466,7 @@ QString ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::getXmlDescriptio
 	return s;
 }
 
-QString ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::getDescription(Rules& r)
+QString ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::getDescription(const Rules& r) const
 {
 	QString begin=QString("");
 	if(!active)
@@ -17655,7 +17655,7 @@ bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::isRelatedToStudents
 	return false;
 }
 
-bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::hasWrongDayOrHour(Rules& r)
+bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::hasWrongDayOrHour(const Rules& r) const
 {
 	assert(selectedDays.count()==selectedHours.count());
 	
@@ -17669,7 +17669,7 @@ bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::hasWrongDayOrHour(R
 	return false;
 }
 
-bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	
@@ -17777,13 +17777,13 @@ bool ConstraintStudentsSetMaxDaysPerWeek::computeInternalStructure(QWidget* pare
 	return true;
 }
 
-bool ConstraintStudentsSetMaxDaysPerWeek::hasInactiveActivities(Rules& r)
+bool ConstraintStudentsSetMaxDaysPerWeek::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintStudentsSetMaxDaysPerWeek::getXmlDescription(Rules& r)
+QString ConstraintStudentsSetMaxDaysPerWeek::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -17797,7 +17797,7 @@ QString ConstraintStudentsSetMaxDaysPerWeek::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintStudentsSetMaxDaysPerWeek::getDescription(Rules& r){
+QString ConstraintStudentsSetMaxDaysPerWeek::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -17924,7 +17924,7 @@ bool ConstraintStudentsSetMaxDaysPerWeek::isRelatedToStudentsSet(const Rules& r,
 	return r.setsShareStudents(this->students, s->name);
 }
 
-bool ConstraintStudentsSetMaxDaysPerWeek::hasWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetMaxDaysPerWeek::hasWrongDayOrHour(const Rules& r) const
 {
 	if(this->maxDaysPerWeek>r.nDaysPerWeek)
 		return true;
@@ -17932,7 +17932,7 @@ bool ConstraintStudentsSetMaxDaysPerWeek::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintStudentsSetMaxDaysPerWeek::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetMaxDaysPerWeek::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 
@@ -17973,13 +17973,13 @@ bool ConstraintStudentsMaxDaysPerWeek::computeInternalStructure(QWidget* parent,
 	return true;
 }
 
-bool ConstraintStudentsMaxDaysPerWeek::hasInactiveActivities(Rules& r)
+bool ConstraintStudentsMaxDaysPerWeek::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-QString ConstraintStudentsMaxDaysPerWeek::getXmlDescription(Rules& r)
+QString ConstraintStudentsMaxDaysPerWeek::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -17992,7 +17992,7 @@ QString ConstraintStudentsMaxDaysPerWeek::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintStudentsMaxDaysPerWeek::getDescription(Rules& r){
+QString ConstraintStudentsMaxDaysPerWeek::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -18118,7 +18118,7 @@ bool ConstraintStudentsMaxDaysPerWeek::isRelatedToStudentsSet(const Rules& r, co
 	return true;
 }
 
-bool ConstraintStudentsMaxDaysPerWeek::hasWrongDayOrHour(Rules& r)
+bool ConstraintStudentsMaxDaysPerWeek::hasWrongDayOrHour(const Rules& r) const
 {
 	if(this->maxDaysPerWeek>r.nDaysPerWeek)
 		return true;
@@ -18126,7 +18126,7 @@ bool ConstraintStudentsMaxDaysPerWeek::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintStudentsMaxDaysPerWeek::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintStudentsMaxDaysPerWeek::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 	

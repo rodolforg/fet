@@ -116,14 +116,14 @@ bool ConstraintBasicCompulsorySpace::computeInternalStructure(QWidget* parent, R
 	return true;
 }
 
-bool ConstraintBasicCompulsorySpace::hasInactiveActivities(Rules& r)
+bool ConstraintBasicCompulsorySpace::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	
 	return false;
 }
 
-QString ConstraintBasicCompulsorySpace::getXmlDescription(Rules& r)
+QString ConstraintBasicCompulsorySpace::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -136,7 +136,7 @@ QString ConstraintBasicCompulsorySpace::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintBasicCompulsorySpace::getDescription(Rules& r)
+QString ConstraintBasicCompulsorySpace::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 	
@@ -339,13 +339,13 @@ bool ConstraintBasicCompulsorySpace::isRelatedToRoom(const Room* r) const
 	return false;
 }
 
-bool ConstraintBasicCompulsorySpace::hasWrongDayOrHour(Rules& r)
+bool ConstraintBasicCompulsorySpace::hasWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-bool ConstraintBasicCompulsorySpace::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintBasicCompulsorySpace::canRepairWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	assert(0);
@@ -379,14 +379,14 @@ ConstraintRoomNotAvailableTimes::ConstraintRoomNotAvailableTimes(double wp, cons
 	this->type=CONSTRAINT_ROOM_NOT_AVAILABLE_TIMES;
 }
 
-bool ConstraintRoomNotAvailableTimes::hasInactiveActivities(Rules& r)
+bool ConstraintRoomNotAvailableTimes::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	
 	return false;
 }
 
-QString ConstraintRoomNotAvailableTimes::getXmlDescription(Rules& r){
+QString ConstraintRoomNotAvailableTimes::getXmlDescription(const Rules& r) const{
 	QString s="<ConstraintRoomNotAvailableTimes>\n";
 	s+="	<Weight_Percentage>"+CustomFETString::number(weightPercentage)+"</Weight_Percentage>\n";
 	s+="	<Room>"+protect(this->room)+"</Room>\n";
@@ -408,7 +408,7 @@ QString ConstraintRoomNotAvailableTimes::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintRoomNotAvailableTimes::getDescription(Rules& r){
+QString ConstraintRoomNotAvailableTimes::getDescription(const Rules& r) const{
 	QString begin=QString("");
 	if(!active)
 		begin="X - ";
@@ -607,7 +607,7 @@ bool ConstraintRoomNotAvailableTimes::isRelatedToRoom(const Room* r) const
 	return this->room==r->name;
 }
 
-bool ConstraintRoomNotAvailableTimes::hasWrongDayOrHour(Rules& r)
+bool ConstraintRoomNotAvailableTimes::hasWrongDayOrHour(const Rules& r) const
 {
 	assert(days.count()==hours.count());
 	
@@ -619,7 +619,7 @@ bool ConstraintRoomNotAvailableTimes::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintRoomNotAvailableTimes::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintRoomNotAvailableTimes::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 
@@ -716,7 +716,7 @@ bool ConstraintActivityPreferredRoom::computeInternalStructure(QWidget* parent, 
 	return true;
 }
 
-bool ConstraintActivityPreferredRoom::hasInactiveActivities(Rules& r)
+bool ConstraintActivityPreferredRoom::hasInactiveActivities(const Rules& r) const
 {
 	if(r.inactiveActivities.contains(this->activityId))
 		return true;
@@ -724,7 +724,7 @@ bool ConstraintActivityPreferredRoom::hasInactiveActivities(Rules& r)
 	return false;
 }
 
-QString ConstraintActivityPreferredRoom::getXmlDescription(Rules& r){
+QString ConstraintActivityPreferredRoom::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintActivityPreferredRoom>\n";
@@ -741,7 +741,7 @@ QString ConstraintActivityPreferredRoom::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintActivityPreferredRoom::getDescription(Rules& r){
+QString ConstraintActivityPreferredRoom::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -892,13 +892,13 @@ bool ConstraintActivityPreferredRoom::isRelatedToRoom(const Room* r) const
 	return r->name==this->roomName;
 }
 
-bool ConstraintActivityPreferredRoom::hasWrongDayOrHour(Rules& r)
+bool ConstraintActivityPreferredRoom::hasWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-bool ConstraintActivityPreferredRoom::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintActivityPreferredRoom::canRepairWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	assert(0);
@@ -971,7 +971,7 @@ bool ConstraintActivityPreferredRooms::computeInternalStructure(QWidget* parent,
 	return true;
 }
 
-bool ConstraintActivityPreferredRooms::hasInactiveActivities(Rules& r)
+bool ConstraintActivityPreferredRooms::hasInactiveActivities(const Rules& r) const
 {
 	if(r.inactiveActivities.contains(this->activityId))
 		return true;
@@ -979,14 +979,14 @@ bool ConstraintActivityPreferredRooms::hasInactiveActivities(Rules& r)
 	return false;
 }
 
-QString ConstraintActivityPreferredRooms::getXmlDescription(Rules& r){
+QString ConstraintActivityPreferredRooms::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintActivityPreferredRooms>\n";
 	s+="	<Weight_Percentage>"+CustomFETString::number(weightPercentage)+"</Weight_Percentage>\n";
 	s+="	<Activity_Id>"+CustomFETString::number(this->activityId)+"</Activity_Id>\n";
 	s+="	<Number_of_Preferred_Rooms>"+CustomFETString::number(this->roomsNames.count())+"</Number_of_Preferred_Rooms>\n";
-	for(QStringList::Iterator it=this->roomsNames.begin(); it!=this->roomsNames.end(); it++)
+	for(QStringList::ConstIterator it=this->roomsNames.begin(); it!=this->roomsNames.end(); it++)
 		s+="	<Preferred_Room>"+protect(*it)+"</Preferred_Room>\n";
 		
 	s+="	<Active>"+trueFalse(active)+"</Active>\n";
@@ -996,7 +996,7 @@ QString ConstraintActivityPreferredRooms::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintActivityPreferredRooms::getDescription(Rules& r){
+QString ConstraintActivityPreferredRooms::getDescription(const Rules& r) const{
 	QString begin=QString("");
 	if(!active)
 		begin="X - ";
@@ -1011,7 +1011,7 @@ QString ConstraintActivityPreferredRooms::getDescription(Rules& r){
 		.arg(this->activityId)
 		.arg(getActivityDetailedDescription(r, this->activityId));
 
-	for(QStringList::Iterator it=this->roomsNames.begin(); it!=this->roomsNames.end(); it++){
+	for(QStringList::ConstIterator it=this->roomsNames.begin(); it!=this->roomsNames.end(); it++){
 		s+=", ";
 		s+=tr("R:%1", "Room").arg(*it);
 	}
@@ -1143,13 +1143,13 @@ bool ConstraintActivityPreferredRooms::isRelatedToRoom(const Room* r) const
 	return this->roomsNames.contains(r->name);
 }
 
-bool ConstraintActivityPreferredRooms::hasWrongDayOrHour(Rules& r)
+bool ConstraintActivityPreferredRooms::hasWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-bool ConstraintActivityPreferredRooms::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintActivityPreferredRooms::canRepairWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	assert(0);
@@ -1231,14 +1231,14 @@ bool ConstraintStudentsSetHomeRoom::computeInternalStructure(QWidget* parent, Ru
 	return true;
 }
 
-bool ConstraintStudentsSetHomeRoom::hasInactiveActivities(Rules& r)
+bool ConstraintStudentsSetHomeRoom::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	
 	return false;
 }
 
-QString ConstraintStudentsSetHomeRoom::getXmlDescription(Rules& r){
+QString ConstraintStudentsSetHomeRoom::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintStudentsSetHomeRoom>\n";
@@ -1253,7 +1253,7 @@ QString ConstraintStudentsSetHomeRoom::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintStudentsSetHomeRoom::getDescription(Rules& r)
+QString ConstraintStudentsSetHomeRoom::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -1413,13 +1413,13 @@ bool ConstraintStudentsSetHomeRoom::isRelatedToRoom(const Room* r) const
 	return r->name==this->roomName;
 }
 
-bool ConstraintStudentsSetHomeRoom::hasWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetHomeRoom::hasWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-bool ConstraintStudentsSetHomeRoom::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetHomeRoom::canRepairWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	assert(0);
@@ -1509,21 +1509,21 @@ bool ConstraintStudentsSetHomeRooms::computeInternalStructure(QWidget* parent, R
 	return true;
 }
 
-bool ConstraintStudentsSetHomeRooms::hasInactiveActivities(Rules& r)
+bool ConstraintStudentsSetHomeRooms::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	
 	return false;
 }
 
-QString ConstraintStudentsSetHomeRooms::getXmlDescription(Rules& r){
+QString ConstraintStudentsSetHomeRooms::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintStudentsSetHomeRooms>\n";
 	s+="	<Weight_Percentage>"+CustomFETString::number(weightPercentage)+"</Weight_Percentage>\n";
 	s+="	<Students>"+protect(this->studentsName)+"</Students>\n";
 	s+="	<Number_of_Preferred_Rooms>"+CustomFETString::number(this->roomsNames.count())+"</Number_of_Preferred_Rooms>\n";
-	for(QStringList::Iterator it=this->roomsNames.begin(); it!=this->roomsNames.end(); it++)
+	for(QStringList::ConstIterator it=this->roomsNames.begin(); it!=this->roomsNames.end(); it++)
 		s+="	<Preferred_Room>"+protect(*it)+"</Preferred_Room>\n";
 		
 	s+="	<Active>"+trueFalse(active)+"</Active>\n";
@@ -1533,7 +1533,7 @@ QString ConstraintStudentsSetHomeRooms::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintStudentsSetHomeRooms::getDescription(Rules& r){
+QString ConstraintStudentsSetHomeRooms::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -1549,7 +1549,7 @@ QString ConstraintStudentsSetHomeRooms::getDescription(Rules& r){
 
 	s+=tr("St:%1", "St means students").arg(this->studentsName);
 
-	for(QStringList::Iterator it=this->roomsNames.begin(); it!=this->roomsNames.end(); it++){
+	for(QStringList::ConstIterator it=this->roomsNames.begin(); it!=this->roomsNames.end(); it++){
 		s+=", ";
 		s+=tr("R:%1", "R means Room").arg(*it);
 	}
@@ -1698,13 +1698,13 @@ bool ConstraintStudentsSetHomeRooms::isRelatedToRoom(const Room* r) const
 	return this->roomsNames.contains(r->name);
 }
 
-bool ConstraintStudentsSetHomeRooms::hasWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetHomeRooms::hasWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-bool ConstraintStudentsSetHomeRooms::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetHomeRooms::canRepairWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	assert(0);
@@ -1786,14 +1786,14 @@ bool ConstraintTeacherHomeRoom::computeInternalStructure(QWidget* parent, Rules&
 	return true;
 }
 
-bool ConstraintTeacherHomeRoom::hasInactiveActivities(Rules& r)
+bool ConstraintTeacherHomeRoom::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	
 	return false;
 }
 
-QString ConstraintTeacherHomeRoom::getXmlDescription(Rules& r){
+QString ConstraintTeacherHomeRoom::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintTeacherHomeRoom>\n";
@@ -1808,7 +1808,7 @@ QString ConstraintTeacherHomeRoom::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintTeacherHomeRoom::getDescription(Rules& r)
+QString ConstraintTeacherHomeRoom::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -1966,13 +1966,13 @@ bool ConstraintTeacherHomeRoom::isRelatedToRoom(const Room* r) const
 	return r->name==this->roomName;
 }
 
-bool ConstraintTeacherHomeRoom::hasWrongDayOrHour(Rules& r)
+bool ConstraintTeacherHomeRoom::hasWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-bool ConstraintTeacherHomeRoom::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTeacherHomeRoom::canRepairWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	assert(0);
@@ -2062,21 +2062,21 @@ bool ConstraintTeacherHomeRooms::computeInternalStructure(QWidget* parent, Rules
 	return true;
 }
 
-bool ConstraintTeacherHomeRooms::hasInactiveActivities(Rules& r)
+bool ConstraintTeacherHomeRooms::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	
 	return false;
 }
 
-QString ConstraintTeacherHomeRooms::getXmlDescription(Rules& r){
+QString ConstraintTeacherHomeRooms::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintTeacherHomeRooms>\n";
 	s+="	<Weight_Percentage>"+CustomFETString::number(weightPercentage)+"</Weight_Percentage>\n";
 	s+="	<Teacher>"+protect(this->teacherName)+"</Teacher>\n";
 	s+="	<Number_of_Preferred_Rooms>"+CustomFETString::number(this->roomsNames.count())+"</Number_of_Preferred_Rooms>\n";
-	for(QStringList::Iterator it=this->roomsNames.begin(); it!=this->roomsNames.end(); it++)
+	for(QStringList::ConstIterator it=this->roomsNames.begin(); it!=this->roomsNames.end(); it++)
 		s+="	<Preferred_Room>"+protect(*it)+"</Preferred_Room>\n";
 		
 	s+="	<Active>"+trueFalse(active)+"</Active>\n";
@@ -2086,7 +2086,7 @@ QString ConstraintTeacherHomeRooms::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintTeacherHomeRooms::getDescription(Rules& r){
+QString ConstraintTeacherHomeRooms::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -2102,7 +2102,7 @@ QString ConstraintTeacherHomeRooms::getDescription(Rules& r){
 
 	s+=tr("T:%1", "T means teacher").arg(this->teacherName);
 
-	for(QStringList::Iterator it=this->roomsNames.begin(); it!=this->roomsNames.end(); it++){
+	for(QStringList::ConstIterator it=this->roomsNames.begin(); it!=this->roomsNames.end(); it++){
 		s+=", ";
 		s+=tr("R:%1", "R means Room").arg(*it);
 	}
@@ -2249,13 +2249,13 @@ bool ConstraintTeacherHomeRooms::isRelatedToRoom(const Room* r) const
 	return this->roomsNames.contains(r->name);
 }
 
-bool ConstraintTeacherHomeRooms::hasWrongDayOrHour(Rules& r)
+bool ConstraintTeacherHomeRooms::hasWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-bool ConstraintTeacherHomeRooms::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTeacherHomeRooms::canRepairWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	assert(0);
@@ -2321,14 +2321,14 @@ bool ConstraintSubjectPreferredRoom::computeInternalStructure(QWidget* parent, R
 	return true;
 }
 
-bool ConstraintSubjectPreferredRoom::hasInactiveActivities(Rules& r)
+bool ConstraintSubjectPreferredRoom::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	
 	return false;
 }
 
-QString ConstraintSubjectPreferredRoom::getXmlDescription(Rules& r){
+QString ConstraintSubjectPreferredRoom::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintSubjectPreferredRoom>\n";
@@ -2343,7 +2343,7 @@ QString ConstraintSubjectPreferredRoom::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintSubjectPreferredRoom::getDescription(Rules& r){
+QString ConstraintSubjectPreferredRoom::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -2484,13 +2484,13 @@ bool ConstraintSubjectPreferredRoom::isRelatedToRoom(const Room* r) const
 	return r->name==this->roomName;
 }
 
-bool ConstraintSubjectPreferredRoom::hasWrongDayOrHour(Rules& r)
+bool ConstraintSubjectPreferredRoom::hasWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-bool ConstraintSubjectPreferredRoom::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintSubjectPreferredRoom::canRepairWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	assert(0);
@@ -2560,21 +2560,21 @@ bool ConstraintSubjectPreferredRooms::computeInternalStructure(QWidget* parent, 
 	return true;
 }
 
-bool ConstraintSubjectPreferredRooms::hasInactiveActivities(Rules& r)
+bool ConstraintSubjectPreferredRooms::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	
 	return false;
 }
 
-QString ConstraintSubjectPreferredRooms::getXmlDescription(Rules& r){
+QString ConstraintSubjectPreferredRooms::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintSubjectPreferredRooms>\n";
 	s+="	<Weight_Percentage>"+CustomFETString::number(weightPercentage)+"</Weight_Percentage>\n";
 	s+="	<Subject>"+protect(this->subjectName)+"</Subject>\n";
 	s+="	<Number_of_Preferred_Rooms>"+CustomFETString::number(this->roomsNames.count())+"</Number_of_Preferred_Rooms>\n";
-	for(QStringList::Iterator it=this->roomsNames.begin(); it!=this->roomsNames.end(); it++)
+	for(QStringList::ConstIterator it=this->roomsNames.begin(); it!=this->roomsNames.end(); it++)
 		s+="	<Preferred_Room>"+protect(*it)+"</Preferred_Room>\n";
 		
 	s+="	<Active>"+trueFalse(active)+"</Active>\n";
@@ -2584,7 +2584,7 @@ QString ConstraintSubjectPreferredRooms::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintSubjectPreferredRooms::getDescription(Rules& r){
+QString ConstraintSubjectPreferredRooms::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -2598,7 +2598,7 @@ QString ConstraintSubjectPreferredRooms::getDescription(Rules& r){
 	QString s=tr("Subject preferred rooms"); s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("S:%1", "Subject").arg(this->subjectName);
-	for(QStringList::Iterator it=this->roomsNames.begin(); it!=this->roomsNames.end(); it++){
+	for(QStringList::ConstIterator it=this->roomsNames.begin(); it!=this->roomsNames.end(); it++){
 		s+=", ";
 		s+=tr("R:%1", "Room").arg(*it);
 	}
@@ -2734,13 +2734,13 @@ bool ConstraintSubjectPreferredRooms::isRelatedToRoom(const Room* r) const
 	return this->roomsNames.contains(r->name);
 }
 
-bool ConstraintSubjectPreferredRooms::hasWrongDayOrHour(Rules& r)
+bool ConstraintSubjectPreferredRooms::hasWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-bool ConstraintSubjectPreferredRooms::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintSubjectPreferredRooms::canRepairWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	assert(0);
@@ -2811,14 +2811,14 @@ bool ConstraintSubjectActivityTagPreferredRoom::computeInternalStructure(QWidget
 	return true;
 }
 
-bool ConstraintSubjectActivityTagPreferredRoom::hasInactiveActivities(Rules& r)
+bool ConstraintSubjectActivityTagPreferredRoom::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	
 	return false;
 }
 
-QString ConstraintSubjectActivityTagPreferredRoom::getXmlDescription(Rules& r){
+QString ConstraintSubjectActivityTagPreferredRoom::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintSubjectActivityTagPreferredRoom>\n";
@@ -2834,7 +2834,7 @@ QString ConstraintSubjectActivityTagPreferredRoom::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintSubjectActivityTagPreferredRoom::getDescription(Rules& r){
+QString ConstraintSubjectActivityTagPreferredRoom::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -2978,13 +2978,13 @@ bool ConstraintSubjectActivityTagPreferredRoom::isRelatedToRoom(const Room* r) c
 	return r->name==this->roomName;
 }
 
-bool ConstraintSubjectActivityTagPreferredRoom::hasWrongDayOrHour(Rules& r)
+bool ConstraintSubjectActivityTagPreferredRoom::hasWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-bool ConstraintSubjectActivityTagPreferredRoom::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintSubjectActivityTagPreferredRoom::canRepairWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	assert(0);
@@ -3059,14 +3059,14 @@ bool ConstraintSubjectActivityTagPreferredRooms::computeInternalStructure(QWidge
 	return true;
 }
 
-bool ConstraintSubjectActivityTagPreferredRooms::hasInactiveActivities(Rules& r)
+bool ConstraintSubjectActivityTagPreferredRooms::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	
 	return false;
 }
 
-QString ConstraintSubjectActivityTagPreferredRooms::getXmlDescription(Rules& r){
+QString ConstraintSubjectActivityTagPreferredRooms::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintSubjectActivityTagPreferredRooms>\n";
@@ -3074,7 +3074,7 @@ QString ConstraintSubjectActivityTagPreferredRooms::getXmlDescription(Rules& r){
 	s+="	<Subject>"+protect(this->subjectName)+"</Subject>\n";
 	s+="	<Activity_Tag>"+protect(this->activityTagName)+"</Activity_Tag>\n";
 	s+="	<Number_of_Preferred_Rooms>"+CustomFETString::number(this->roomsNames.count())+"</Number_of_Preferred_Rooms>\n";
-	for(QStringList::Iterator it=this->roomsNames.begin(); it!=this->roomsNames.end(); it++)
+	for(QStringList::ConstIterator it=this->roomsNames.begin(); it!=this->roomsNames.end(); it++)
 		s+="	<Preferred_Room>"+protect(*it)+"</Preferred_Room>\n";
 		
 	s+="	<Active>"+trueFalse(active)+"</Active>\n";
@@ -3084,7 +3084,7 @@ QString ConstraintSubjectActivityTagPreferredRooms::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintSubjectActivityTagPreferredRooms::getDescription(Rules& r){
+QString ConstraintSubjectActivityTagPreferredRooms::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -3099,7 +3099,7 @@ QString ConstraintSubjectActivityTagPreferredRooms::getDescription(Rules& r){
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("S:%1", "Subject").arg(this->subjectName);s+=", ";
 	s+=tr("AT:%1", "Activity tag").arg(this->activityTagName);
-	for(QStringList::Iterator it=this->roomsNames.begin(); it!=this->roomsNames.end(); it++){
+	for(QStringList::ConstIterator it=this->roomsNames.begin(); it!=this->roomsNames.end(); it++){
 		s+=", ";
 		s+=tr("R:%1", "Room").arg(*it);
 	}
@@ -3237,13 +3237,13 @@ bool ConstraintSubjectActivityTagPreferredRooms::isRelatedToRoom(const Room* r) 
 	return this->roomsNames.contains(r->name);
 }
 
-bool ConstraintSubjectActivityTagPreferredRooms::hasWrongDayOrHour(Rules& r)
+bool ConstraintSubjectActivityTagPreferredRooms::hasWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-bool ConstraintSubjectActivityTagPreferredRooms::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintSubjectActivityTagPreferredRooms::canRepairWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	assert(0);
@@ -3309,14 +3309,14 @@ bool ConstraintActivityTagPreferredRoom::computeInternalStructure(QWidget* paren
 	return true;
 }
 
-bool ConstraintActivityTagPreferredRoom::hasInactiveActivities(Rules& r)
+bool ConstraintActivityTagPreferredRoom::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	
 	return false;
 }
 
-QString ConstraintActivityTagPreferredRoom::getXmlDescription(Rules& r){
+QString ConstraintActivityTagPreferredRoom::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintActivityTagPreferredRoom>\n";
@@ -3331,7 +3331,7 @@ QString ConstraintActivityTagPreferredRoom::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintActivityTagPreferredRoom::getDescription(Rules& r){
+QString ConstraintActivityTagPreferredRoom::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -3473,13 +3473,13 @@ bool ConstraintActivityTagPreferredRoom::isRelatedToRoom(const Room* r) const
 	return r->name==this->roomName;
 }
 
-bool ConstraintActivityTagPreferredRoom::hasWrongDayOrHour(Rules& r)
+bool ConstraintActivityTagPreferredRoom::hasWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-bool ConstraintActivityTagPreferredRoom::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintActivityTagPreferredRoom::canRepairWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	assert(0);
@@ -3549,21 +3549,21 @@ bool ConstraintActivityTagPreferredRooms::computeInternalStructure(QWidget* pare
 	return true;
 }
 
-bool ConstraintActivityTagPreferredRooms::hasInactiveActivities(Rules& r)
+bool ConstraintActivityTagPreferredRooms::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	
 	return false;
 }
 
-QString ConstraintActivityTagPreferredRooms::getXmlDescription(Rules& r){
+QString ConstraintActivityTagPreferredRooms::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintActivityTagPreferredRooms>\n";
 	s+="	<Weight_Percentage>"+CustomFETString::number(weightPercentage)+"</Weight_Percentage>\n";
 	s+="	<Activity_Tag>"+protect(this->activityTagName)+"</Activity_Tag>\n";
 	s+="	<Number_of_Preferred_Rooms>"+CustomFETString::number(this->roomsNames.count())+"</Number_of_Preferred_Rooms>\n";
-	for(QStringList::Iterator it=this->roomsNames.begin(); it!=this->roomsNames.end(); it++)
+	for(QStringList::ConstIterator it=this->roomsNames.begin(); it!=this->roomsNames.end(); it++)
 		s+="	<Preferred_Room>"+protect(*it)+"</Preferred_Room>\n";
 		
 	s+="	<Active>"+trueFalse(active)+"</Active>\n";
@@ -3573,7 +3573,7 @@ QString ConstraintActivityTagPreferredRooms::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintActivityTagPreferredRooms::getDescription(Rules& r){
+QString ConstraintActivityTagPreferredRooms::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString begin=QString("");
@@ -3587,7 +3587,7 @@ QString ConstraintActivityTagPreferredRooms::getDescription(Rules& r){
 	QString s=tr("Activity tag preferred rooms"); s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("AT:%1", "Activity tag").arg(this->activityTagName);
-	for(QStringList::Iterator it=this->roomsNames.begin(); it!=this->roomsNames.end(); it++){
+	for(QStringList::ConstIterator it=this->roomsNames.begin(); it!=this->roomsNames.end(); it++){
 		s+=", ";
 		s+=tr("R:%1", "Room").arg(*it);
 	}
@@ -3724,13 +3724,13 @@ bool ConstraintActivityTagPreferredRooms::isRelatedToRoom(const Room* r) const
 	return this->roomsNames.contains(r->name);
 }
 
-bool ConstraintActivityTagPreferredRooms::hasWrongDayOrHour(Rules& r)
+bool ConstraintActivityTagPreferredRooms::hasWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-bool ConstraintActivityTagPreferredRooms::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintActivityTagPreferredRooms::canRepairWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	assert(0);
@@ -3816,14 +3816,14 @@ bool ConstraintStudentsSetMaxBuildingChangesPerDay::computeInternalStructure(QWi
 	return true;
 }
 
-bool ConstraintStudentsSetMaxBuildingChangesPerDay::hasInactiveActivities(Rules& r)
+bool ConstraintStudentsSetMaxBuildingChangesPerDay::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	
 	return false;
 }
 
-QString ConstraintStudentsSetMaxBuildingChangesPerDay::getXmlDescription(Rules& r){
+QString ConstraintStudentsSetMaxBuildingChangesPerDay::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintStudentsSetMaxBuildingChangesPerDay>\n";
@@ -3839,7 +3839,7 @@ QString ConstraintStudentsSetMaxBuildingChangesPerDay::getXmlDescription(Rules& 
 	return s;
 }
 
-QString ConstraintStudentsSetMaxBuildingChangesPerDay::getDescription(Rules& r)
+QString ConstraintStudentsSetMaxBuildingChangesPerDay::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -4007,7 +4007,7 @@ bool ConstraintStudentsSetMaxBuildingChangesPerDay::isRelatedToRoom(const Room* 
 	return false;
 }
 
-bool ConstraintStudentsSetMaxBuildingChangesPerDay::hasWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetMaxBuildingChangesPerDay::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxBuildingChangesPerDay>r.nHoursPerDay)
 		return true;
@@ -4015,7 +4015,7 @@ bool ConstraintStudentsSetMaxBuildingChangesPerDay::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintStudentsSetMaxBuildingChangesPerDay::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetMaxBuildingChangesPerDay::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 
@@ -4056,14 +4056,14 @@ bool ConstraintStudentsMaxBuildingChangesPerDay::computeInternalStructure(QWidge
 	return true;
 }
 
-bool ConstraintStudentsMaxBuildingChangesPerDay::hasInactiveActivities(Rules& r)
+bool ConstraintStudentsMaxBuildingChangesPerDay::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	
 	return false;
 }
 
-QString ConstraintStudentsMaxBuildingChangesPerDay::getXmlDescription(Rules& r){
+QString ConstraintStudentsMaxBuildingChangesPerDay::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintStudentsMaxBuildingChangesPerDay>\n";
@@ -4078,7 +4078,7 @@ QString ConstraintStudentsMaxBuildingChangesPerDay::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintStudentsMaxBuildingChangesPerDay::getDescription(Rules& r)
+QString ConstraintStudentsMaxBuildingChangesPerDay::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -4245,7 +4245,7 @@ bool ConstraintStudentsMaxBuildingChangesPerDay::isRelatedToRoom(const Room* r) 
 	return false;
 }
 
-bool ConstraintStudentsMaxBuildingChangesPerDay::hasWrongDayOrHour(Rules& r)
+bool ConstraintStudentsMaxBuildingChangesPerDay::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxBuildingChangesPerDay>r.nHoursPerDay)
 		return true;
@@ -4253,7 +4253,7 @@ bool ConstraintStudentsMaxBuildingChangesPerDay::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintStudentsMaxBuildingChangesPerDay::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintStudentsMaxBuildingChangesPerDay::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 
@@ -4340,14 +4340,14 @@ bool ConstraintStudentsSetMaxBuildingChangesPerWeek::computeInternalStructure(QW
 	return true;
 }
 
-bool ConstraintStudentsSetMaxBuildingChangesPerWeek::hasInactiveActivities(Rules& r)
+bool ConstraintStudentsSetMaxBuildingChangesPerWeek::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	
 	return false;
 }
 
-QString ConstraintStudentsSetMaxBuildingChangesPerWeek::getXmlDescription(Rules& r){
+QString ConstraintStudentsSetMaxBuildingChangesPerWeek::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintStudentsSetMaxBuildingChangesPerWeek>\n";
@@ -4363,7 +4363,7 @@ QString ConstraintStudentsSetMaxBuildingChangesPerWeek::getXmlDescription(Rules&
 	return s;
 }
 
-QString ConstraintStudentsSetMaxBuildingChangesPerWeek::getDescription(Rules& r)
+QString ConstraintStudentsSetMaxBuildingChangesPerWeek::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -4530,7 +4530,7 @@ bool ConstraintStudentsSetMaxBuildingChangesPerWeek::isRelatedToRoom(const Room*
 	return false;
 }
 
-bool ConstraintStudentsSetMaxBuildingChangesPerWeek::hasWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetMaxBuildingChangesPerWeek::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxBuildingChangesPerWeek>r.nDaysPerWeek*r.nHoursPerDay)
 		return true;
@@ -4538,7 +4538,7 @@ bool ConstraintStudentsSetMaxBuildingChangesPerWeek::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintStudentsSetMaxBuildingChangesPerWeek::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetMaxBuildingChangesPerWeek::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 
@@ -4580,14 +4580,14 @@ bool ConstraintStudentsMaxBuildingChangesPerWeek::computeInternalStructure(QWidg
 	return true;
 }
 
-bool ConstraintStudentsMaxBuildingChangesPerWeek::hasInactiveActivities(Rules& r)
+bool ConstraintStudentsMaxBuildingChangesPerWeek::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	
 	return false;
 }
 
-QString ConstraintStudentsMaxBuildingChangesPerWeek::getXmlDescription(Rules& r){
+QString ConstraintStudentsMaxBuildingChangesPerWeek::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintStudentsMaxBuildingChangesPerWeek>\n";
@@ -4602,7 +4602,7 @@ QString ConstraintStudentsMaxBuildingChangesPerWeek::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintStudentsMaxBuildingChangesPerWeek::getDescription(Rules& r)
+QString ConstraintStudentsMaxBuildingChangesPerWeek::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -4768,7 +4768,7 @@ bool ConstraintStudentsMaxBuildingChangesPerWeek::isRelatedToRoom(const Room* r)
 	return false;
 }
 
-bool ConstraintStudentsMaxBuildingChangesPerWeek::hasWrongDayOrHour(Rules& r)
+bool ConstraintStudentsMaxBuildingChangesPerWeek::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxBuildingChangesPerWeek>r.nDaysPerWeek*r.nHoursPerDay)
 		return true;
@@ -4776,7 +4776,7 @@ bool ConstraintStudentsMaxBuildingChangesPerWeek::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintStudentsMaxBuildingChangesPerWeek::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintStudentsMaxBuildingChangesPerWeek::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 
@@ -4863,14 +4863,14 @@ bool ConstraintStudentsSetMinGapsBetweenBuildingChanges::computeInternalStructur
 	return true;
 }
 
-bool ConstraintStudentsSetMinGapsBetweenBuildingChanges::hasInactiveActivities(Rules& r)
+bool ConstraintStudentsSetMinGapsBetweenBuildingChanges::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	
 	return false;
 }
 
-QString ConstraintStudentsSetMinGapsBetweenBuildingChanges::getXmlDescription(Rules& r){
+QString ConstraintStudentsSetMinGapsBetweenBuildingChanges::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintStudentsSetMinGapsBetweenBuildingChanges>\n";
@@ -4886,7 +4886,7 @@ QString ConstraintStudentsSetMinGapsBetweenBuildingChanges::getXmlDescription(Ru
 	return s;
 }
 
-QString ConstraintStudentsSetMinGapsBetweenBuildingChanges::getDescription(Rules& r)
+QString ConstraintStudentsSetMinGapsBetweenBuildingChanges::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -5066,7 +5066,7 @@ bool ConstraintStudentsSetMinGapsBetweenBuildingChanges::isRelatedToRoom(const R
 	return false;
 }
 
-bool ConstraintStudentsSetMinGapsBetweenBuildingChanges::hasWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetMinGapsBetweenBuildingChanges::hasWrongDayOrHour(const Rules& r) const
 {
 	if(minGapsBetweenBuildingChanges>r.nHoursPerDay)
 		return true;
@@ -5074,7 +5074,7 @@ bool ConstraintStudentsSetMinGapsBetweenBuildingChanges::hasWrongDayOrHour(Rules
 	return false;
 }
 
-bool ConstraintStudentsSetMinGapsBetweenBuildingChanges::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintStudentsSetMinGapsBetweenBuildingChanges::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 
@@ -5115,14 +5115,14 @@ bool ConstraintStudentsMinGapsBetweenBuildingChanges::computeInternalStructure(Q
 	return true;
 }
 
-bool ConstraintStudentsMinGapsBetweenBuildingChanges::hasInactiveActivities(Rules& r)
+bool ConstraintStudentsMinGapsBetweenBuildingChanges::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	
 	return false;
 }
 
-QString ConstraintStudentsMinGapsBetweenBuildingChanges::getXmlDescription(Rules& r){
+QString ConstraintStudentsMinGapsBetweenBuildingChanges::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintStudentsMinGapsBetweenBuildingChanges>\n";
@@ -5137,7 +5137,7 @@ QString ConstraintStudentsMinGapsBetweenBuildingChanges::getXmlDescription(Rules
 	return s;
 }
 
-QString ConstraintStudentsMinGapsBetweenBuildingChanges::getDescription(Rules& r)
+QString ConstraintStudentsMinGapsBetweenBuildingChanges::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -5316,7 +5316,7 @@ bool ConstraintStudentsMinGapsBetweenBuildingChanges::isRelatedToRoom(const Room
 	return false;
 }
 
-bool ConstraintStudentsMinGapsBetweenBuildingChanges::hasWrongDayOrHour(Rules& r)
+bool ConstraintStudentsMinGapsBetweenBuildingChanges::hasWrongDayOrHour(const Rules& r) const
 {
 	if(minGapsBetweenBuildingChanges>r.nHoursPerDay)
 		return true;
@@ -5324,7 +5324,7 @@ bool ConstraintStudentsMinGapsBetweenBuildingChanges::hasWrongDayOrHour(Rules& r
 	return false;
 }
 
-bool ConstraintStudentsMinGapsBetweenBuildingChanges::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintStudentsMinGapsBetweenBuildingChanges::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 
@@ -5374,14 +5374,14 @@ bool ConstraintTeacherMaxBuildingChangesPerDay::computeInternalStructure(QWidget
 	return true;
 }
 
-bool ConstraintTeacherMaxBuildingChangesPerDay::hasInactiveActivities(Rules& r)
+bool ConstraintTeacherMaxBuildingChangesPerDay::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	
 	return false;
 }
 
-QString ConstraintTeacherMaxBuildingChangesPerDay::getXmlDescription(Rules& r){
+QString ConstraintTeacherMaxBuildingChangesPerDay::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintTeacherMaxBuildingChangesPerDay>\n";
@@ -5397,7 +5397,7 @@ QString ConstraintTeacherMaxBuildingChangesPerDay::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintTeacherMaxBuildingChangesPerDay::getDescription(Rules& r)
+QString ConstraintTeacherMaxBuildingChangesPerDay::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -5566,7 +5566,7 @@ bool ConstraintTeacherMaxBuildingChangesPerDay::isRelatedToRoom(const Room* r) c
 	return false;
 }
 
-bool ConstraintTeacherMaxBuildingChangesPerDay::hasWrongDayOrHour(Rules& r)
+bool ConstraintTeacherMaxBuildingChangesPerDay::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxBuildingChangesPerDay>r.nHoursPerDay)
 		return true;
@@ -5574,7 +5574,7 @@ bool ConstraintTeacherMaxBuildingChangesPerDay::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintTeacherMaxBuildingChangesPerDay::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTeacherMaxBuildingChangesPerDay::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 
@@ -5615,14 +5615,14 @@ bool ConstraintTeachersMaxBuildingChangesPerDay::computeInternalStructure(QWidge
 	return true;
 }
 
-bool ConstraintTeachersMaxBuildingChangesPerDay::hasInactiveActivities(Rules& r)
+bool ConstraintTeachersMaxBuildingChangesPerDay::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	
 	return false;
 }
 
-QString ConstraintTeachersMaxBuildingChangesPerDay::getXmlDescription(Rules& r){
+QString ConstraintTeachersMaxBuildingChangesPerDay::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintTeachersMaxBuildingChangesPerDay>\n";
@@ -5637,7 +5637,7 @@ QString ConstraintTeachersMaxBuildingChangesPerDay::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintTeachersMaxBuildingChangesPerDay::getDescription(Rules& r)
+QString ConstraintTeachersMaxBuildingChangesPerDay::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -5804,7 +5804,7 @@ bool ConstraintTeachersMaxBuildingChangesPerDay::isRelatedToRoom(const Room* r) 
 	return false;
 }
 
-bool ConstraintTeachersMaxBuildingChangesPerDay::hasWrongDayOrHour(Rules& r)
+bool ConstraintTeachersMaxBuildingChangesPerDay::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxBuildingChangesPerDay>r.nHoursPerDay)
 		return true;
@@ -5812,7 +5812,7 @@ bool ConstraintTeachersMaxBuildingChangesPerDay::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintTeachersMaxBuildingChangesPerDay::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTeachersMaxBuildingChangesPerDay::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 
@@ -5862,14 +5862,14 @@ bool ConstraintTeacherMaxBuildingChangesPerWeek::computeInternalStructure(QWidge
 	return true;
 }
 
-bool ConstraintTeacherMaxBuildingChangesPerWeek::hasInactiveActivities(Rules& r)
+bool ConstraintTeacherMaxBuildingChangesPerWeek::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	
 	return false;
 }
 
-QString ConstraintTeacherMaxBuildingChangesPerWeek::getXmlDescription(Rules& r){
+QString ConstraintTeacherMaxBuildingChangesPerWeek::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintTeacherMaxBuildingChangesPerWeek>\n";
@@ -5885,7 +5885,7 @@ QString ConstraintTeacherMaxBuildingChangesPerWeek::getXmlDescription(Rules& r){
 	return s;
 }
 
-QString ConstraintTeacherMaxBuildingChangesPerWeek::getDescription(Rules& r)
+QString ConstraintTeacherMaxBuildingChangesPerWeek::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -6054,7 +6054,7 @@ bool ConstraintTeacherMaxBuildingChangesPerWeek::isRelatedToRoom(const Room* r) 
 	return false;
 }
 
-bool ConstraintTeacherMaxBuildingChangesPerWeek::hasWrongDayOrHour(Rules& r)
+bool ConstraintTeacherMaxBuildingChangesPerWeek::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxBuildingChangesPerWeek>r.nDaysPerWeek*r.nHoursPerDay)
 		return true;
@@ -6062,7 +6062,7 @@ bool ConstraintTeacherMaxBuildingChangesPerWeek::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintTeacherMaxBuildingChangesPerWeek::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTeacherMaxBuildingChangesPerWeek::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 
@@ -6103,14 +6103,14 @@ bool ConstraintTeachersMaxBuildingChangesPerWeek::computeInternalStructure(QWidg
 	return true;
 }
 
-bool ConstraintTeachersMaxBuildingChangesPerWeek::hasInactiveActivities(Rules& r)
+bool ConstraintTeachersMaxBuildingChangesPerWeek::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	
 	return false;
 }
 
-QString ConstraintTeachersMaxBuildingChangesPerWeek::getXmlDescription(Rules& r){
+QString ConstraintTeachersMaxBuildingChangesPerWeek::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintTeachersMaxBuildingChangesPerWeek>\n";
@@ -6125,7 +6125,7 @@ QString ConstraintTeachersMaxBuildingChangesPerWeek::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintTeachersMaxBuildingChangesPerWeek::getDescription(Rules& r)
+QString ConstraintTeachersMaxBuildingChangesPerWeek::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -6292,7 +6292,7 @@ bool ConstraintTeachersMaxBuildingChangesPerWeek::isRelatedToRoom(const Room* r)
 	return false;
 }
 
-bool ConstraintTeachersMaxBuildingChangesPerWeek::hasWrongDayOrHour(Rules& r)
+bool ConstraintTeachersMaxBuildingChangesPerWeek::hasWrongDayOrHour(const Rules& r) const
 {
 	if(maxBuildingChangesPerWeek>r.nDaysPerWeek*r.nHoursPerDay)
 		return true;
@@ -6300,7 +6300,7 @@ bool ConstraintTeachersMaxBuildingChangesPerWeek::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintTeachersMaxBuildingChangesPerWeek::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTeachersMaxBuildingChangesPerWeek::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 
@@ -6350,14 +6350,14 @@ bool ConstraintTeacherMinGapsBetweenBuildingChanges::computeInternalStructure(QW
 	return true;
 }
 
-bool ConstraintTeacherMinGapsBetweenBuildingChanges::hasInactiveActivities(Rules& r)
+bool ConstraintTeacherMinGapsBetweenBuildingChanges::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	
 	return false;
 }
 
-QString ConstraintTeacherMinGapsBetweenBuildingChanges::getXmlDescription(Rules& r){
+QString ConstraintTeacherMinGapsBetweenBuildingChanges::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintTeacherMinGapsBetweenBuildingChanges>\n";
@@ -6373,7 +6373,7 @@ QString ConstraintTeacherMinGapsBetweenBuildingChanges::getXmlDescription(Rules&
 	return s;
 }
 
-QString ConstraintTeacherMinGapsBetweenBuildingChanges::getDescription(Rules& r)
+QString ConstraintTeacherMinGapsBetweenBuildingChanges::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -6554,7 +6554,7 @@ bool ConstraintTeacherMinGapsBetweenBuildingChanges::isRelatedToRoom(const Room*
 	return false;
 }
 
-bool ConstraintTeacherMinGapsBetweenBuildingChanges::hasWrongDayOrHour(Rules& r)
+bool ConstraintTeacherMinGapsBetweenBuildingChanges::hasWrongDayOrHour(const Rules& r) const
 {
 	if(minGapsBetweenBuildingChanges>r.nHoursPerDay)
 		return true;
@@ -6562,7 +6562,7 @@ bool ConstraintTeacherMinGapsBetweenBuildingChanges::hasWrongDayOrHour(Rules& r)
 	return false;
 }
 
-bool ConstraintTeacherMinGapsBetweenBuildingChanges::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTeacherMinGapsBetweenBuildingChanges::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 
@@ -6603,14 +6603,14 @@ bool ConstraintTeachersMinGapsBetweenBuildingChanges::computeInternalStructure(Q
 	return true;
 }
 
-bool ConstraintTeachersMinGapsBetweenBuildingChanges::hasInactiveActivities(Rules& r)
+bool ConstraintTeachersMinGapsBetweenBuildingChanges::hasInactiveActivities(const Rules& r) const
 {
 	Q_UNUSED(r);
 	
 	return false;
 }
 
-QString ConstraintTeachersMinGapsBetweenBuildingChanges::getXmlDescription(Rules& r){
+QString ConstraintTeachersMinGapsBetweenBuildingChanges::getXmlDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
 	QString s="<ConstraintTeachersMinGapsBetweenBuildingChanges>\n";
@@ -6625,7 +6625,7 @@ QString ConstraintTeachersMinGapsBetweenBuildingChanges::getXmlDescription(Rules
 	return s;
 }
 
-QString ConstraintTeachersMinGapsBetweenBuildingChanges::getDescription(Rules& r)
+QString ConstraintTeachersMinGapsBetweenBuildingChanges::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -6804,7 +6804,7 @@ bool ConstraintTeachersMinGapsBetweenBuildingChanges::isRelatedToRoom(const Room
 	return false;
 }
 
-bool ConstraintTeachersMinGapsBetweenBuildingChanges::hasWrongDayOrHour(Rules& r)
+bool ConstraintTeachersMinGapsBetweenBuildingChanges::hasWrongDayOrHour(const Rules& r) const
 {
 	if(minGapsBetweenBuildingChanges>r.nHoursPerDay)
 		return true;
@@ -6812,7 +6812,7 @@ bool ConstraintTeachersMinGapsBetweenBuildingChanges::hasWrongDayOrHour(Rules& r
 	return false;
 }
 
-bool ConstraintTeachersMinGapsBetweenBuildingChanges::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintTeachersMinGapsBetweenBuildingChanges::canRepairWrongDayOrHour(const Rules& r) const
 {
 	assert(hasWrongDayOrHour(r));
 
@@ -6881,7 +6881,7 @@ bool ConstraintActivitiesOccupyMaxDifferentRooms::computeInternalStructure(QWidg
 	}
 }
 
-bool ConstraintActivitiesOccupyMaxDifferentRooms::hasInactiveActivities(Rules& r)
+bool ConstraintActivitiesOccupyMaxDifferentRooms::hasInactiveActivities(const Rules& r) const
 {
 	//returns true if all or all but one activities are inactive
 	
@@ -6896,7 +6896,7 @@ bool ConstraintActivitiesOccupyMaxDifferentRooms::hasInactiveActivities(Rules& r
 		return false;
 }
 
-QString ConstraintActivitiesOccupyMaxDifferentRooms::getXmlDescription(Rules& r)
+QString ConstraintActivitiesOccupyMaxDifferentRooms::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -6916,7 +6916,7 @@ QString ConstraintActivitiesOccupyMaxDifferentRooms::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintActivitiesOccupyMaxDifferentRooms::getDescription(Rules& r)
+QString ConstraintActivitiesOccupyMaxDifferentRooms::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -7082,13 +7082,13 @@ bool ConstraintActivitiesOccupyMaxDifferentRooms::isRelatedToRoom(const Room* r)
 	return false;
 }
 
-bool ConstraintActivitiesOccupyMaxDifferentRooms::hasWrongDayOrHour(Rules& r)
+bool ConstraintActivitiesOccupyMaxDifferentRooms::hasWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-bool ConstraintActivitiesOccupyMaxDifferentRooms::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintActivitiesOccupyMaxDifferentRooms::canRepairWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	assert(0);
@@ -7156,7 +7156,7 @@ bool ConstraintActivitiesSameRoomIfConsecutive::computeInternalStructure(QWidget
 	}
 }
 
-bool ConstraintActivitiesSameRoomIfConsecutive::hasInactiveActivities(Rules& r)
+bool ConstraintActivitiesSameRoomIfConsecutive::hasInactiveActivities(const Rules& r) const
 {
 	//returns true if all or all but one activities are inactive
 	
@@ -7171,7 +7171,7 @@ bool ConstraintActivitiesSameRoomIfConsecutive::hasInactiveActivities(Rules& r)
 		return false;
 }
 
-QString ConstraintActivitiesSameRoomIfConsecutive::getXmlDescription(Rules& r)
+QString ConstraintActivitiesSameRoomIfConsecutive::getXmlDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -7189,7 +7189,7 @@ QString ConstraintActivitiesSameRoomIfConsecutive::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString ConstraintActivitiesSameRoomIfConsecutive::getDescription(Rules& r)
+QString ConstraintActivitiesSameRoomIfConsecutive::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -7362,13 +7362,13 @@ bool ConstraintActivitiesSameRoomIfConsecutive::isRelatedToRoom(const Room* r) c
 	return false;
 }
 
-bool ConstraintActivitiesSameRoomIfConsecutive::hasWrongDayOrHour(Rules& r)
+bool ConstraintActivitiesSameRoomIfConsecutive::hasWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	return false;
 }
 
-bool ConstraintActivitiesSameRoomIfConsecutive::canRepairWrongDayOrHour(Rules& r)
+bool ConstraintActivitiesSameRoomIfConsecutive::canRepairWrongDayOrHour(const Rules& r) const
 {
 	Q_UNUSED(r);
 	assert(0);
