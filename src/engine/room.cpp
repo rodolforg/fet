@@ -39,7 +39,7 @@ void Room::computeInternalStructure(Rules& r)
 	}
 }
 
-QString Room::getDescription()
+QString Room::getDescription() const
 {
 	QString s=tr("N:%1", "Name of room").arg(this->name);
 	s+=", ";
@@ -64,7 +64,7 @@ QString Room::getDescription()
 	return s+end;
 }
 
-QString Room::getDetailedDescription()
+QString Room::getDetailedDescription() const
 {
 	QString s=tr("Room");
 	s+="\n";
@@ -87,7 +87,7 @@ QString Room::getDetailedDescription()
 	return s;
 }
 
-QString Room::getXmlDescription()
+QString Room::getXmlDescription() const
 {
 	QString s="<Room>\n";
 	s+="	<Name>"+protect(this->name)+"</Name>\n";
@@ -104,7 +104,7 @@ QString Room::getXmlDescription()
 	return s;
 }
 
-QString Room::getDetailedDescriptionWithConstraints(Rules& r)
+QString Room::getDetailedDescriptionWithConstraints(const Rules &r) const
 {
 	QString s=this->getDetailedDescription();
 

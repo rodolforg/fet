@@ -47,10 +47,10 @@ public:
 	
 	void computeInternalStructure(Rules& r);
 	
-	QString getXmlDescription();
-	QString getDescription();
-	QString getDetailedDescription();
-	QString getDetailedDescriptionWithConstraints(Rules& r);
+	QString getXmlDescription() const;
+	QString getDescription() const;
+	QString getDetailedDescription() const;
+	QString getDetailedDescriptionWithConstraints(const Rules& r) const;
 };
 
 int buildingsAscending(const Building* b1, const Building* b2);

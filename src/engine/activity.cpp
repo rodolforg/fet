@@ -22,7 +22,7 @@ File activity.cpp
 #include "activity.h"
 #include "rules.h"
 
-QString getActivityDetailedDescription(Rules& r, int id); //Implemented in timeconstraint.cpp
+QString getActivityDetailedDescription(const Rules& r, int id); //Implemented in timeconstraint.cpp
 
 GroupActivitiesInInitialOrderItem::GroupActivitiesInInitialOrderItem()
 {
@@ -47,7 +47,7 @@ void GroupActivitiesInInitialOrderItem::removeUseless(Rules& r)
 	ids=tmpList;
 }
 
-QString GroupActivitiesInInitialOrderItem::getXmlDescription(Rules& r)
+QString GroupActivitiesInInitialOrderItem::getXmlDescription(const Rules &r) const
 {
 	Q_UNUSED(r);
 
@@ -72,7 +72,7 @@ QString GroupActivitiesInInitialOrderItem::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString GroupActivitiesInInitialOrderItem::getDescription(Rules& r)
+QString GroupActivitiesInInitialOrderItem::getDescription(const Rules &r) const
 {
 	Q_UNUSED(r);
 
@@ -93,7 +93,7 @@ QString GroupActivitiesInInitialOrderItem::getDescription(Rules& r)
 	return begin+s+end;
 }
 
-QString GroupActivitiesInInitialOrderItem::getDetailedDescription(Rules& r)
+QString GroupActivitiesInInitialOrderItem::getDetailedDescription(const Rules &r) const
 {
 	QString s=tr("Timetable generation option"); s+=QString("\n");
 	s+=tr("Group activities in initial order item"); s+=QString("\n");
@@ -452,13 +452,13 @@ void Activity::computeInternalStructure(Rules& r)
 	}
 }
 
-QString Activity::getXmlDescription(Rules& r)
+QString Activity::getXmlDescription(const Rules &r) const
 {
 	Q_UNUSED(r);
 
 	QString s="<Activity>\n";
 
-	for(QStringList::Iterator it=this->teachersNames.begin(); it!=this->teachersNames.end(); it++)
+	for(QStringList::ConstIterator it=this->teachersNames.begin(); it!=this->teachersNames.end(); it++)
 		s+="	<Teacher>" + protect(*it) + "</Teacher>\n";
 
 	s+="	<Subject>" + protect(this->subjectName) + "</Subject>\n";
@@ -466,7 +466,7 @@ QString Activity::getXmlDescription(Rules& r)
 	foreach(QString tag, this->activityTagsNames)
 		s+="	<Activity_Tag>" + protect(tag) + "</Activity_Tag>\n";
 
-	for(QStringList::Iterator it=this->studentsNames.begin(); it!=this->studentsNames.end(); it++)
+	for(QStringList::ConstIterator it=this->studentsNames.begin(); it!=this->studentsNames.end(); it++)
 		s+="	<Students>" + protect(*it) + "</Students>\n";
 
 	s+="	<Duration>"+CustomFETString::number(this->duration)+"</Duration>\n";
@@ -491,7 +491,7 @@ QString Activity::getXmlDescription(Rules& r)
 	return s;
 }
 
-QString Activity::getDescription(Rules& r)
+QString Activity::getDescription(const Rules &r) const
 {
 	const int INDENT=4;
 
@@ -594,7 +594,7 @@ QString Activity::getDescription(Rules& r)
 	return s;
 }
 
-QString Activity::getDetailedDescription(Rules& r)
+QString Activity::getDetailedDescription(const Rules &r) const
 {
 	Q_UNUSED(r);
 
@@ -624,7 +624,7 @@ QString Activity::getDetailedDescription(Rules& r)
 		s+="\n";
 	}
 	else
-		for(QStringList::Iterator it=this->teachersNames.begin(); it!=this->teachersNames.end(); it++){
+		for(QStringList::ConstIterator it=this->teachersNames.begin(); it!=this->teachersNames.end(); it++){
 			s+=tr("Teacher=%1").arg(*it);
 			s+="\n";
 		}
@@ -642,7 +642,7 @@ QString Activity::getDetailedDescription(Rules& r)
 		s+="\n";
 	}
 	else
-		for(QStringList::Iterator it=this->studentsNames.begin(); it!=this->studentsNames.end(); it++){
+		for(QStringList::ConstIterator it=this->studentsNames.begin(); it!=this->studentsNames.end(); it++){
 			s += tr("Students=%1").arg(*it);
 			s+="\n";
 		}
@@ -683,7 +683,7 @@ QString Activity::getDetailedDescription(Rules& r)
 	return s;
 }
 
-QString Activity::getDetailedDescriptionWithConstraints(Rules& r)
+QString Activity::getDetailedDescriptionWithConstraints(const Rules &r) const
 {
 	QString s=this->getDetailedDescription(r);
 
@@ -726,12 +726,12 @@ QString Activity::getDetailedDescriptionWithConstraints(Rules& r)
 	return s;
 }
 
-bool Activity::isSplit()
+bool Activity::isSplit() const
 {
 	return this->totalDuration != this->duration;
 }
 
-bool Activity::representsComponentNumber(int index)
+bool Activity::representsComponentNumber(int index) const
 {
 	if(this->activityGroupId==0)
 		return index==1;

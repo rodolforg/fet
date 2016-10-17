@@ -30,7 +30,7 @@ Teacher::~Teacher()
 {
 }
 
-QString Teacher::getXmlDescription()
+QString Teacher::getXmlDescription() const
 {
 	QString s="<Teacher>\n";
 	s+="	<Name>"+protect(this->name)+"</Name>\n";
@@ -45,7 +45,7 @@ QString Teacher::getXmlDescription()
 	return s;
 }
 
-QString Teacher::getDescription()
+QString Teacher::getDescription() const
 {
 	QString s=tr("N:%1", "The name of the teacher").arg(name);
 	
@@ -56,7 +56,7 @@ QString Teacher::getDescription()
 	return s+end;
 }
 
-QString Teacher::getDetailedDescription()
+QString Teacher::getDetailedDescription() const
 {
 	QString s=tr("Teacher");
 	s+="\n";

@@ -27,7 +27,7 @@ ActivityTag::~ActivityTag()
 {
 }
 
-QString ActivityTag::getXmlDescription()
+QString ActivityTag::getXmlDescription() const
 {
 	QString s="<Activity_Tag>\n";
 	s+="	<Name>"+protect(this->name)+"</Name>\n";
@@ -37,7 +37,7 @@ QString ActivityTag::getXmlDescription()
 	return s;
 }
 
-QString ActivityTag::getDescription()
+QString ActivityTag::getDescription() const
 {
 	QString s=tr("N:%1", "The name of the activity tag").arg(name);
 	
@@ -48,7 +48,7 @@ QString ActivityTag::getDescription()
 	return s+end;
 }
 
-QString ActivityTag::getDetailedDescription()
+QString ActivityTag::getDetailedDescription() const
 {
 	QString s=tr("Activity tag");
 	s+="\n";
@@ -64,7 +64,7 @@ QString ActivityTag::getDetailedDescription()
 	return s;
 }
 
-QString ActivityTag::getDetailedDescriptionWithConstraints(Rules& r)
+QString ActivityTag::getDetailedDescriptionWithConstraints(const Rules &r) const
 {
 	QString s=this->getDetailedDescription();
 

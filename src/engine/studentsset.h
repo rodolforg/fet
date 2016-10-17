@@ -71,10 +71,10 @@ public:
 	StudentsYear();
 	~StudentsYear();
 
-	QString getXmlDescription();
-	QString getDescription();
-	QString getDetailedDescription();
-	QString getDetailedDescriptionWithConstraints(Rules& r);
+	QString getXmlDescription() const;
+	QString getDescription() const;
+	QString getDetailedDescription() const;
+	QString getDetailedDescriptionWithConstraints(const Rules& r) const;
 };
 
 class StudentsGroup: public StudentsSet
@@ -89,10 +89,10 @@ public:
 	StudentsGroup();
 	~StudentsGroup();
 
-	QString getXmlDescription();
-	QString getDescription();
-	QString getDetailedDescription();
-	QString getDetailedDescriptionWithConstraints(Rules& r);
+	QString getXmlDescription() const;
+	QString getDescription() const;
+	QString getDetailedDescription() const;
+	QString getDetailedDescriptionWithConstraints(Rules& r) const;
 };
 
 class StudentsSubgroup: public StudentsSet
@@ -107,10 +107,10 @@ public:
 	StudentsSubgroup();
 	~StudentsSubgroup();
 
-	QString getXmlDescription();
-	QString getDescription();
-	QString getDetailedDescription();
-	QString getDetailedDescriptionWithConstraints(Rules& r);
+	QString getXmlDescription() const;
+	QString getDescription() const;
+	QString getDetailedDescription() const;
+	QString getDetailedDescriptionWithConstraints(const Rules& r) const;
 };
 
 int yearsAscending(const StudentsYear* y1, const StudentsYear* y2);

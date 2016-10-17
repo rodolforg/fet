@@ -1568,10 +1568,10 @@ void Rules::sortActivityTagsAlphabetically()
 	setRulesModifiedAndOtherThings(this);
 }
 
-bool Rules::setsShareStudents(const QString& studentsSet1, const QString& studentsSet2)
+bool Rules::setsShareStudents(const QString& studentsSet1, const QString& studentsSet2) const
 {
-	StudentsSet* s1=this->searchStudentsSet(studentsSet1);
-	StudentsSet* s2=this->searchStudentsSet(studentsSet2);
+	const StudentsSet* s1=this->searchStudentsSet(studentsSet1);
+	const StudentsSet* s2=this->searchStudentsSet(studentsSet2);
 	assert(s1!=NULL);
 	assert(s2!=NULL);
 	
@@ -1731,7 +1731,7 @@ void Rules::computePermanentStudentsHash()
 	}
 }
 
-StudentsSet* Rules::searchStudentsSet(const QString& setName)
+StudentsSet* Rules::searchStudentsSet(const QString& setName) const
 {
 	return permanentStudentsHash.value(setName, NULL);
 

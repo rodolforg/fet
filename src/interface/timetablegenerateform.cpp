@@ -75,7 +75,7 @@ extern int maxActivitiesPlaced;
 extern QDateTime generationStartDateTime;
 extern QDateTime generationHighestStageDateTime;
 
-QString getActivityDetailedDescription(Rules& r, int id);
+QString getActivityDetailedDescription(const Rules& r, int id);
 
 const QString settingsName=QString("TimetableGenerateUnsuccessfulForm");
 

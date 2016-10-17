@@ -36,7 +36,7 @@ typedef QList<Teacher*> TeachersList;
 class Teacher
 {
 	Q_DECLARE_TR_FUNCTIONS(Teacher)
-	
+
 public:
 	QList<int> activitiesForTeacher;
 
@@ -52,10 +52,10 @@ public:
 	Teacher();
 	~Teacher();
 
-	QString getXmlDescription();
-	QString getDescription();
-	QString getDetailedDescription();
-	QString getDetailedDescriptionWithConstraints(Rules& r);
+	QString getXmlDescription() const;
+	QString getDescription() const;
+	QString getDetailedDescription() const;
+	QString getDetailedDescriptionWithConstraints(const Rules& r) const;
 };
 
 int teachersAscending(const Teacher* t1, const Teacher* t2);

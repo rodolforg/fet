@@ -381,7 +381,7 @@ public:
 	Returns a pointer to the structure containing this student set
 	(year, group or subgroup) or NULL.
 	*/
-	StudentsSet* searchStudentsSet(const QString& setName);
+	StudentsSet* searchStudentsSet(const QString& setName) const;
 	
 	StudentsSet* searchAugmentedStudentsSet(const QString& setName);
 	
@@ -389,7 +389,7 @@ public:
 	True if the students sets contain one common subgroup.
 	This function is used in constraints isRelatedToStudentsSet
 	*/
-	bool setsShareStudents(const QString& studentsSet1, const QString& studentsSet2);
+	bool setsShareStudents(const QString& studentsSet1, const QString& studentsSet2) const;
 
 	//Internal
 	bool augmentedSetsShareStudentsFaster(const QString& studentsSet1, const QString& studentsSet2);

@@ -79,7 +79,7 @@ extern Matrix3D<bool> subgroupNotAvailableDayHour;
 /////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////
 
-QString getActivityDetailedDescription(Rules& r, int id)
+QString getActivityDetailedDescription(const Rules& r, int id)
 {
 	QString s;
 
@@ -192,7 +192,7 @@ QString ConstraintBasicCompulsoryTime::getDescription(Rules& r)
 	return begin+tr("Basic compulsory constraints (time)") + ", " + tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage))+end;
 }
 
-QString ConstraintBasicCompulsoryTime::getDetailedDescription(Rules& r)
+QString ConstraintBasicCompulsoryTime::getDetailedDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -377,7 +377,7 @@ double ConstraintBasicCompulsoryTime::fitness(Solution& c, Rules& r, QList<doubl
 	return weightPercentage/100 * (unallocated + qint64(late) + qint64(nte) + qint64(nse)); //conflicts factor
 }
 
-bool ConstraintBasicCompulsoryTime::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintBasicCompulsoryTime::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(a);
 	Q_UNUSED(r);
@@ -385,28 +385,28 @@ bool ConstraintBasicCompulsoryTime::isRelatedToActivity(Rules& r, Activity* a)
 	return false;
 }
 
-bool ConstraintBasicCompulsoryTime::isRelatedToTeacher(Teacher* t)
+bool ConstraintBasicCompulsoryTime::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintBasicCompulsoryTime::isRelatedToSubject(Subject* s)
+bool ConstraintBasicCompulsoryTime::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintBasicCompulsoryTime::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintBasicCompulsoryTime::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintBasicCompulsoryTime::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintBasicCompulsoryTime::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -508,7 +508,7 @@ QString ConstraintTeacherNotAvailableTimes::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintTeacherNotAvailableTimes::getDetailedDescription(Rules& r){
+QString ConstraintTeacherNotAvailableTimes::getDetailedDescription(const Rules& r) const {
 	QString s=tr("Time constraint");s+="\n";
 	s+=tr("A teacher is not available");s+="\n";
 	s+=tr("Weight (percentage)=%1%").arg(CustomFETString::number(this->weightPercentage));s+="\n";
@@ -638,7 +638,7 @@ double ConstraintTeacherNotAvailableTimes::fitness(Solution& c, Rules& r, QList<
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintTeacherNotAvailableTimes::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintTeacherNotAvailableTimes::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(a);
 	Q_UNUSED(r);
@@ -646,28 +646,28 @@ bool ConstraintTeacherNotAvailableTimes::isRelatedToActivity(Rules& r, Activity*
 	return false;
 }
 
-bool ConstraintTeacherNotAvailableTimes::isRelatedToTeacher(Teacher* t)
+bool ConstraintTeacherNotAvailableTimes::isRelatedToTeacher(const Teacher* t) const
 {
 	if(this->teacher==t->name)
 		return true;
 	return false;
 }
 
-bool ConstraintTeacherNotAvailableTimes::isRelatedToSubject(Subject* s)
+bool ConstraintTeacherNotAvailableTimes::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeacherNotAvailableTimes::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintTeacherNotAvailableTimes::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeacherNotAvailableTimes::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintTeacherNotAvailableTimes::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -870,7 +870,7 @@ QString ConstraintStudentsSetNotAvailableTimes::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintStudentsSetNotAvailableTimes::getDetailedDescription(Rules& r){
+QString ConstraintStudentsSetNotAvailableTimes::getDetailedDescription(const Rules& r) const {
 	QString s=tr("Time constraint");s+="\n";
 	s+=tr("A students set is not available");s+="\n";
 	s+=tr("Weight (percentage)=%1%").arg(CustomFETString::number(this->weightPercentage));s+="\n";
@@ -955,7 +955,7 @@ double ConstraintStudentsSetNotAvailableTimes::fitness(Solution& c, Rules& r, QL
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintStudentsSetNotAvailableTimes::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintStudentsSetNotAvailableTimes::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(a);
 	Q_UNUSED(r);
@@ -963,28 +963,28 @@ bool ConstraintStudentsSetNotAvailableTimes::isRelatedToActivity(Rules& r, Activ
 	return false;
 }
 
-bool ConstraintStudentsSetNotAvailableTimes::isRelatedToTeacher(Teacher* t)
+bool ConstraintStudentsSetNotAvailableTimes::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintStudentsSetNotAvailableTimes::isRelatedToSubject(Subject* s)
+bool ConstraintStudentsSetNotAvailableTimes::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsSetNotAvailableTimes::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintStudentsSetNotAvailableTimes::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsSetNotAvailableTimes::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintStudentsSetNotAvailableTimes::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	return r.setsShareStudents(this->students, s->name);
 }
@@ -1169,7 +1169,7 @@ QString ConstraintActivitiesSameStartingTime::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintActivitiesSameStartingTime::getDetailedDescription(Rules& r){
+QString ConstraintActivitiesSameStartingTime::getDetailedDescription(const Rules& r) const {
 	QString s;
 	
 	s=tr("Time constraint");s+="\n";
@@ -1246,7 +1246,7 @@ double ConstraintActivitiesSameStartingTime::fitness(Solution& c, Rules& r, QLis
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintActivitiesSameStartingTime::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintActivitiesSameStartingTime::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 
@@ -1256,28 +1256,28 @@ bool ConstraintActivitiesSameStartingTime::isRelatedToActivity(Rules& r, Activit
 	return false;
 }
 
-bool ConstraintActivitiesSameStartingTime::isRelatedToTeacher(Teacher* t)
+bool ConstraintActivitiesSameStartingTime::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintActivitiesSameStartingTime::isRelatedToSubject(Subject* s)
+bool ConstraintActivitiesSameStartingTime::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintActivitiesSameStartingTime::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintActivitiesSameStartingTime::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintActivitiesSameStartingTime::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintActivitiesSameStartingTime::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -1443,7 +1443,7 @@ QString ConstraintActivitiesNotOverlapping::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintActivitiesNotOverlapping::getDetailedDescription(Rules& r){
+QString ConstraintActivitiesNotOverlapping::getDetailedDescription(const Rules& r) const {
 	QString s=tr("Time constraint");s+="\n";
 	s+=tr("Activities must not overlap");s+="\n";
 	s+=tr("Weight (percentage)=%1%").arg(CustomFETString::number(this->weightPercentage));s+="\n";
@@ -1529,7 +1529,7 @@ double ConstraintActivitiesNotOverlapping::fitness(Solution& c, Rules& r, QList<
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintActivitiesNotOverlapping::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintActivitiesNotOverlapping::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 
@@ -1539,28 +1539,28 @@ bool ConstraintActivitiesNotOverlapping::isRelatedToActivity(Rules& r, Activity*
 	return false;
 }
 
-bool ConstraintActivitiesNotOverlapping::isRelatedToTeacher(Teacher* t)
+bool ConstraintActivitiesNotOverlapping::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintActivitiesNotOverlapping::isRelatedToSubject(Subject* s)
+bool ConstraintActivitiesNotOverlapping::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintActivitiesNotOverlapping::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintActivitiesNotOverlapping::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintActivitiesNotOverlapping::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintActivitiesNotOverlapping::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -1750,7 +1750,7 @@ QString ConstraintMinDaysBetweenActivities::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintMinDaysBetweenActivities::getDetailedDescription(Rules& r){
+QString ConstraintMinDaysBetweenActivities::getDetailedDescription(const Rules& r) const {
 	QString s=tr("Time constraint");s+="\n";
 	s+=tr("Minimum number of days between activities");s+="\n";
 	s+=tr("Weight (percentage)=%1%").arg(CustomFETString::number(this->weightPercentage));s+="\n";
@@ -1850,7 +1850,7 @@ double ConstraintMinDaysBetweenActivities::fitness(Solution& c, Rules& r, QList<
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintMinDaysBetweenActivities::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintMinDaysBetweenActivities::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 
@@ -1860,28 +1860,28 @@ bool ConstraintMinDaysBetweenActivities::isRelatedToActivity(Rules& r, Activity*
 	return false;
 }
 
-bool ConstraintMinDaysBetweenActivities::isRelatedToTeacher(Teacher* t)
+bool ConstraintMinDaysBetweenActivities::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintMinDaysBetweenActivities::isRelatedToSubject(Subject* s)
+bool ConstraintMinDaysBetweenActivities::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintMinDaysBetweenActivities::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintMinDaysBetweenActivities::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintMinDaysBetweenActivities::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintMinDaysBetweenActivities::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -2053,7 +2053,7 @@ QString ConstraintMaxDaysBetweenActivities::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintMaxDaysBetweenActivities::getDetailedDescription(Rules& r){
+QString ConstraintMaxDaysBetweenActivities::getDetailedDescription(const Rules& r) const {
 	QString s=tr("Time constraint");s+="\n";
 	s+=tr("Maximum number of days between activities");s+="\n";
 	s+=tr("Weight (percentage)=%1%").arg(CustomFETString::number(this->weightPercentage));s+="\n";
@@ -2145,7 +2145,7 @@ double ConstraintMaxDaysBetweenActivities::fitness(Solution& c, Rules& r, QList<
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintMaxDaysBetweenActivities::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintMaxDaysBetweenActivities::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 
@@ -2155,28 +2155,28 @@ bool ConstraintMaxDaysBetweenActivities::isRelatedToActivity(Rules& r, Activity*
 	return false;
 }
 
-bool ConstraintMaxDaysBetweenActivities::isRelatedToTeacher(Teacher* t)
+bool ConstraintMaxDaysBetweenActivities::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintMaxDaysBetweenActivities::isRelatedToSubject(Subject* s)
+bool ConstraintMaxDaysBetweenActivities::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintMaxDaysBetweenActivities::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintMaxDaysBetweenActivities::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintMaxDaysBetweenActivities::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintMaxDaysBetweenActivities::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -2347,7 +2347,7 @@ QString ConstraintMinGapsBetweenActivities::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintMinGapsBetweenActivities::getDetailedDescription(Rules& r){
+QString ConstraintMinGapsBetweenActivities::getDetailedDescription(const Rules& r) const {
 	QString s=tr("Time constraint");s+="\n";
 	s+=tr("Minimum gaps between activities (if activities on the same day)");s+="\n";
 	s+=tr("Weight (percentage)=%1%").arg(CustomFETString::number(this->weightPercentage));s+="\n";
@@ -2445,7 +2445,7 @@ double ConstraintMinGapsBetweenActivities::fitness(Solution& c, Rules& r, QList<
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintMinGapsBetweenActivities::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintMinGapsBetweenActivities::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 
@@ -2455,28 +2455,28 @@ bool ConstraintMinGapsBetweenActivities::isRelatedToActivity(Rules& r, Activity*
 	return false;
 }
 
-bool ConstraintMinGapsBetweenActivities::isRelatedToTeacher(Teacher* t)
+bool ConstraintMinGapsBetweenActivities::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintMinGapsBetweenActivities::isRelatedToSubject(Subject* s)
+bool ConstraintMinGapsBetweenActivities::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintMinGapsBetweenActivities::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintMinGapsBetweenActivities::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintMinGapsBetweenActivities::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintMinGapsBetweenActivities::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -2572,7 +2572,7 @@ QString ConstraintTeachersMaxHoursDaily::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintTeachersMaxHoursDaily::getDetailedDescription(Rules& r){
+QString ConstraintTeachersMaxHoursDaily::getDetailedDescription(const Rules& r) const {
 	Q_UNUSED(r);
 
 	QString s=tr("Time constraint");s+="\n";
@@ -2643,7 +2643,7 @@ double ConstraintTeachersMaxHoursDaily::fitness(Solution& c, Rules& r, QList<dou
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintTeachersMaxHoursDaily::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintTeachersMaxHoursDaily::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -2651,28 +2651,28 @@ bool ConstraintTeachersMaxHoursDaily::isRelatedToActivity(Rules& r, Activity* a)
 	return false;
 }
 
-bool ConstraintTeachersMaxHoursDaily::isRelatedToTeacher(Teacher* t)
+bool ConstraintTeachersMaxHoursDaily::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return true;
 }
 
-bool ConstraintTeachersMaxHoursDaily::isRelatedToSubject(Subject* s)
+bool ConstraintTeachersMaxHoursDaily::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeachersMaxHoursDaily::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintTeachersMaxHoursDaily::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeachersMaxHoursDaily::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintTeachersMaxHoursDaily::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -2773,7 +2773,7 @@ QString ConstraintTeacherMaxHoursDaily::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintTeacherMaxHoursDaily::getDetailedDescription(Rules& r){
+QString ConstraintTeacherMaxHoursDaily::getDetailedDescription(const Rules& r) const {
 	Q_UNUSED(r);
 
 	QString s=tr("Time constraint");s+="\n";
@@ -2843,7 +2843,7 @@ double ConstraintTeacherMaxHoursDaily::fitness(Solution& c, Rules& r, QList<doub
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintTeacherMaxHoursDaily::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintTeacherMaxHoursDaily::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -2851,28 +2851,28 @@ bool ConstraintTeacherMaxHoursDaily::isRelatedToActivity(Rules& r, Activity* a)
 	return false;
 }
 
-bool ConstraintTeacherMaxHoursDaily::isRelatedToTeacher(Teacher* t)
+bool ConstraintTeacherMaxHoursDaily::isRelatedToTeacher(const Teacher* t) const
 {
 	if(this->teacherName==t->name)
 		return true;
 	return false;
 }
 
-bool ConstraintTeacherMaxHoursDaily::isRelatedToSubject(Subject* s)
+bool ConstraintTeacherMaxHoursDaily::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeacherMaxHoursDaily::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintTeacherMaxHoursDaily::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeacherMaxHoursDaily::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintTeacherMaxHoursDaily::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -2968,7 +2968,7 @@ QString ConstraintTeachersMaxHoursContinuously::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintTeachersMaxHoursContinuously::getDetailedDescription(Rules& r){
+QString ConstraintTeachersMaxHoursContinuously::getDetailedDescription(const Rules& r) const {
 	Q_UNUSED(r);
 
 	QString s=tr("Time constraint");s+="\n";
@@ -3066,7 +3066,7 @@ double ConstraintTeachersMaxHoursContinuously::fitness(Solution& c, Rules& r, QL
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintTeachersMaxHoursContinuously::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintTeachersMaxHoursContinuously::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -3074,28 +3074,28 @@ bool ConstraintTeachersMaxHoursContinuously::isRelatedToActivity(Rules& r, Activ
 	return false;
 }
 
-bool ConstraintTeachersMaxHoursContinuously::isRelatedToTeacher(Teacher* t)
+bool ConstraintTeachersMaxHoursContinuously::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return true;
 }
 
-bool ConstraintTeachersMaxHoursContinuously::isRelatedToSubject(Subject* s)
+bool ConstraintTeachersMaxHoursContinuously::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeachersMaxHoursContinuously::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintTeachersMaxHoursContinuously::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeachersMaxHoursContinuously::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintTeachersMaxHoursContinuously::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -3196,7 +3196,7 @@ QString ConstraintTeacherMaxHoursContinuously::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintTeacherMaxHoursContinuously::getDetailedDescription(Rules& r){
+QString ConstraintTeacherMaxHoursContinuously::getDetailedDescription(const Rules& r) const {
 	Q_UNUSED(r);
 
 	QString s=tr("Time constraint");s+="\n";
@@ -3294,7 +3294,7 @@ double ConstraintTeacherMaxHoursContinuously::fitness(Solution& c, Rules& r, QLi
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintTeacherMaxHoursContinuously::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintTeacherMaxHoursContinuously::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -3302,28 +3302,28 @@ bool ConstraintTeacherMaxHoursContinuously::isRelatedToActivity(Rules& r, Activi
 	return false;
 }
 
-bool ConstraintTeacherMaxHoursContinuously::isRelatedToTeacher(Teacher* t)
+bool ConstraintTeacherMaxHoursContinuously::isRelatedToTeacher(const Teacher* t) const
 {
 	if(this->teacherName==t->name)
 		return true;
 	return false;
 }
 
-bool ConstraintTeacherMaxHoursContinuously::isRelatedToSubject(Subject* s)
+bool ConstraintTeacherMaxHoursContinuously::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeacherMaxHoursContinuously::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintTeacherMaxHoursContinuously::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeacherMaxHoursContinuously::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintTeacherMaxHoursContinuously::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -3439,7 +3439,7 @@ QString ConstraintTeachersActivityTagMaxHoursContinuously::getDescription(Rules&
 	return begin+s+end;
 }
 
-QString ConstraintTeachersActivityTagMaxHoursContinuously::getDetailedDescription(Rules& r){
+QString ConstraintTeachersActivityTagMaxHoursContinuously::getDetailedDescription(const Rules& r) const {
 	Q_UNUSED(r);
 
 	QString s=tr("Time constraint");s+="\n";
@@ -3561,7 +3561,7 @@ double ConstraintTeachersActivityTagMaxHoursContinuously::fitness(Solution& c, R
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintTeachersActivityTagMaxHoursContinuously::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintTeachersActivityTagMaxHoursContinuously::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -3569,26 +3569,26 @@ bool ConstraintTeachersActivityTagMaxHoursContinuously::isRelatedToActivity(Rule
 	return false;
 }
 
-bool ConstraintTeachersActivityTagMaxHoursContinuously::isRelatedToTeacher(Teacher* t)
+bool ConstraintTeachersActivityTagMaxHoursContinuously::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return true;
 }
 
-bool ConstraintTeachersActivityTagMaxHoursContinuously::isRelatedToSubject(Subject* s)
+bool ConstraintTeachersActivityTagMaxHoursContinuously::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeachersActivityTagMaxHoursContinuously::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintTeachersActivityTagMaxHoursContinuously::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	return s->name==this->activityTagName;
 }
 
-bool ConstraintTeachersActivityTagMaxHoursContinuously::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintTeachersActivityTagMaxHoursContinuously::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -3708,7 +3708,7 @@ QString ConstraintTeacherActivityTagMaxHoursContinuously::getDescription(Rules& 
 	return begin+s+end;
 }
 
-QString ConstraintTeacherActivityTagMaxHoursContinuously::getDetailedDescription(Rules& r){
+QString ConstraintTeacherActivityTagMaxHoursContinuously::getDetailedDescription(const Rules& r) const {
 	Q_UNUSED(r);
 
 	QString s=tr("Time constraint");s+="\n";
@@ -3831,7 +3831,7 @@ double ConstraintTeacherActivityTagMaxHoursContinuously::fitness(Solution& c, Ru
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintTeacherActivityTagMaxHoursContinuously::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintTeacherActivityTagMaxHoursContinuously::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -3839,26 +3839,26 @@ bool ConstraintTeacherActivityTagMaxHoursContinuously::isRelatedToActivity(Rules
 	return false;
 }
 
-bool ConstraintTeacherActivityTagMaxHoursContinuously::isRelatedToTeacher(Teacher* t)
+bool ConstraintTeacherActivityTagMaxHoursContinuously::isRelatedToTeacher(const Teacher* t) const
 {
 	if(this->teacherName==t->name)
 		return true;
 	return false;
 }
 
-bool ConstraintTeacherActivityTagMaxHoursContinuously::isRelatedToSubject(Subject* s)
+bool ConstraintTeacherActivityTagMaxHoursContinuously::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeacherActivityTagMaxHoursContinuously::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintTeacherActivityTagMaxHoursContinuously::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	return this->activityTagName==s->name;
 }
 
-bool ConstraintTeacherActivityTagMaxHoursContinuously::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintTeacherActivityTagMaxHoursContinuously::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -3957,7 +3957,7 @@ QString ConstraintTeacherMaxDaysPerWeek::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintTeacherMaxDaysPerWeek::getDetailedDescription(Rules& r){
+QString ConstraintTeacherMaxDaysPerWeek::getDetailedDescription(const Rules& r) const {
 	Q_UNUSED(r);
 
 	QString s=tr("Time constraint");s+="\n";
@@ -4037,7 +4037,7 @@ double ConstraintTeacherMaxDaysPerWeek::fitness(Solution& c, Rules& r, QList<dou
 	return conflictIncrease;
 }
 
-bool ConstraintTeacherMaxDaysPerWeek::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintTeacherMaxDaysPerWeek::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -4045,28 +4045,28 @@ bool ConstraintTeacherMaxDaysPerWeek::isRelatedToActivity(Rules& r, Activity* a)
 	return false;
 }
 
-bool ConstraintTeacherMaxDaysPerWeek::isRelatedToTeacher(Teacher* t)
+bool ConstraintTeacherMaxDaysPerWeek::isRelatedToTeacher(const Teacher* t) const
 {
 	if(this->teacherName==t->name)
 		return true;
 	return false;
 }
 
-bool ConstraintTeacherMaxDaysPerWeek::isRelatedToSubject(Subject* s)
+bool ConstraintTeacherMaxDaysPerWeek::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeacherMaxDaysPerWeek::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintTeacherMaxDaysPerWeek::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeacherMaxDaysPerWeek::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintTeacherMaxDaysPerWeek::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -4160,7 +4160,7 @@ QString ConstraintTeachersMaxDaysPerWeek::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintTeachersMaxDaysPerWeek::getDetailedDescription(Rules& r){
+QString ConstraintTeachersMaxDaysPerWeek::getDetailedDescription(const Rules& r) const {
 	Q_UNUSED(r);
 
 	QString s=tr("Time constraint");s+="\n";
@@ -4245,7 +4245,7 @@ double ConstraintTeachersMaxDaysPerWeek::fitness(Solution& c, Rules& r, QList<do
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintTeachersMaxDaysPerWeek::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintTeachersMaxDaysPerWeek::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -4253,28 +4253,28 @@ bool ConstraintTeachersMaxDaysPerWeek::isRelatedToActivity(Rules& r, Activity* a
 	return false;
 }
 
-bool ConstraintTeachersMaxDaysPerWeek::isRelatedToTeacher(Teacher* t)
+bool ConstraintTeachersMaxDaysPerWeek::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return true;
 }
 
-bool ConstraintTeachersMaxDaysPerWeek::isRelatedToSubject(Subject* s)
+bool ConstraintTeachersMaxDaysPerWeek::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeachersMaxDaysPerWeek::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintTeachersMaxDaysPerWeek::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeachersMaxDaysPerWeek::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintTeachersMaxDaysPerWeek::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -4368,7 +4368,7 @@ QString ConstraintTeachersMaxGapsPerWeek::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintTeachersMaxGapsPerWeek::getDetailedDescription(Rules& r){
+QString ConstraintTeachersMaxGapsPerWeek::getDetailedDescription(const Rules& r) const {
 	Q_UNUSED(r);
 
 	QString s=tr("Time constraint");s+="\n";
@@ -4449,7 +4449,7 @@ double ConstraintTeachersMaxGapsPerWeek::fitness(Solution& c, Rules& r, QList<do
 	return weightPercentage/100 * totalGaps;
 }
 
-bool ConstraintTeachersMaxGapsPerWeek::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintTeachersMaxGapsPerWeek::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -4457,28 +4457,28 @@ bool ConstraintTeachersMaxGapsPerWeek::isRelatedToActivity(Rules& r, Activity* a
 	return false;
 }
 
-bool ConstraintTeachersMaxGapsPerWeek::isRelatedToTeacher(Teacher* t)
+bool ConstraintTeachersMaxGapsPerWeek::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return true;
 }
 
-bool ConstraintTeachersMaxGapsPerWeek::isRelatedToSubject(Subject* s)
+bool ConstraintTeachersMaxGapsPerWeek::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeachersMaxGapsPerWeek::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintTeachersMaxGapsPerWeek::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeachersMaxGapsPerWeek::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintTeachersMaxGapsPerWeek::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -4577,7 +4577,7 @@ QString ConstraintTeacherMaxGapsPerWeek::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintTeacherMaxGapsPerWeek::getDetailedDescription(Rules& r){
+QString ConstraintTeacherMaxGapsPerWeek::getDetailedDescription(const Rules& r) const {
 	Q_UNUSED(r);
 
 	QString s=tr("Time constraint"); s+="\n";
@@ -4658,7 +4658,7 @@ double ConstraintTeacherMaxGapsPerWeek::fitness(Solution& c, Rules& r, QList<dou
 	return weightPercentage/100 * totalGaps;
 }
 
-bool ConstraintTeacherMaxGapsPerWeek::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintTeacherMaxGapsPerWeek::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -4666,28 +4666,28 @@ bool ConstraintTeacherMaxGapsPerWeek::isRelatedToActivity(Rules& r, Activity* a)
 	return false;
 }
 
-bool ConstraintTeacherMaxGapsPerWeek::isRelatedToTeacher(Teacher* t)
+bool ConstraintTeacherMaxGapsPerWeek::isRelatedToTeacher(const Teacher* t) const
 {
 	if(this->teacherName==t->name)
 		return true;
 	return false;
 }
 
-bool ConstraintTeacherMaxGapsPerWeek::isRelatedToSubject(Subject* s)
+bool ConstraintTeacherMaxGapsPerWeek::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeacherMaxGapsPerWeek::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintTeacherMaxGapsPerWeek::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeacherMaxGapsPerWeek::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintTeacherMaxGapsPerWeek::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -4781,7 +4781,7 @@ QString ConstraintTeachersMaxGapsPerDay::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintTeachersMaxGapsPerDay::getDetailedDescription(Rules& r){
+QString ConstraintTeachersMaxGapsPerDay::getDetailedDescription(const Rules& r) const {
 	Q_UNUSED(r);
 
 	QString s=tr("Time constraint");s+="\n";
@@ -4861,7 +4861,7 @@ double ConstraintTeachersMaxGapsPerDay::fitness(Solution& c, Rules& r, QList<dou
 	return weightPercentage/100 * totalGaps;
 }
 
-bool ConstraintTeachersMaxGapsPerDay::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintTeachersMaxGapsPerDay::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -4869,28 +4869,28 @@ bool ConstraintTeachersMaxGapsPerDay::isRelatedToActivity(Rules& r, Activity* a)
 	return false;
 }
 
-bool ConstraintTeachersMaxGapsPerDay::isRelatedToTeacher(Teacher* t)
+bool ConstraintTeachersMaxGapsPerDay::isRelatedToTeacher(const Teacher* t) const
 {	
 	Q_UNUSED(t);
 
 	return true;
 }
 
-bool ConstraintTeachersMaxGapsPerDay::isRelatedToSubject(Subject* s)
+bool ConstraintTeachersMaxGapsPerDay::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeachersMaxGapsPerDay::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintTeachersMaxGapsPerDay::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeachersMaxGapsPerDay::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintTeachersMaxGapsPerDay::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -4989,7 +4989,7 @@ QString ConstraintTeacherMaxGapsPerDay::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintTeacherMaxGapsPerDay::getDetailedDescription(Rules& r){
+QString ConstraintTeacherMaxGapsPerDay::getDetailedDescription(const Rules& r) const {
 	Q_UNUSED(r);
 
 	QString s=tr("Time constraint"); s+="\n";
@@ -5071,7 +5071,7 @@ double ConstraintTeacherMaxGapsPerDay::fitness(Solution& c, Rules& r, QList<doub
 	return weightPercentage/100 * totalGaps;
 }
 
-bool ConstraintTeacherMaxGapsPerDay::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintTeacherMaxGapsPerDay::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -5079,28 +5079,28 @@ bool ConstraintTeacherMaxGapsPerDay::isRelatedToActivity(Rules& r, Activity* a)
 	return false;
 }
 
-bool ConstraintTeacherMaxGapsPerDay::isRelatedToTeacher(Teacher* t)
+bool ConstraintTeacherMaxGapsPerDay::isRelatedToTeacher(const Teacher* t) const
 {
 	if(this->teacherName==t->name)
 		return true;
 	return false;
 }
 
-bool ConstraintTeacherMaxGapsPerDay::isRelatedToSubject(Subject* s)
+bool ConstraintTeacherMaxGapsPerDay::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeacherMaxGapsPerDay::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintTeacherMaxGapsPerDay::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeacherMaxGapsPerDay::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintTeacherMaxGapsPerDay::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -5208,7 +5208,7 @@ QString ConstraintBreakTimes::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintBreakTimes::getDetailedDescription(Rules& r){
+QString ConstraintBreakTimes::getDetailedDescription(const Rules& r) const {
 	QString s=tr("Time constraint");s+="\n";
 	s+=tr("Break times");s+="\n";
 	s+=tr("Weight (percentage)=%1%").arg(CustomFETString::number(this->weightPercentage));s+="\n";
@@ -5325,7 +5325,7 @@ double ConstraintBreakTimes::fitness(Solution& c, Rules& r, QList<double>& cl, Q
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintBreakTimes::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintBreakTimes::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -5333,28 +5333,28 @@ bool ConstraintBreakTimes::isRelatedToActivity(Rules& r, Activity* a)
 	return false;
 }
 
-bool ConstraintBreakTimes::isRelatedToTeacher(Teacher* t)
+bool ConstraintBreakTimes::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintBreakTimes::isRelatedToSubject(Subject* s)
+bool ConstraintBreakTimes::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintBreakTimes::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintBreakTimes::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintBreakTimes::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintBreakTimes::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -5469,7 +5469,7 @@ QString ConstraintStudentsMaxGapsPerWeek::getDescription(Rules& r)
 	return begin+s+end;
 }
 
-QString ConstraintStudentsMaxGapsPerWeek::getDetailedDescription(Rules& r)
+QString ConstraintStudentsMaxGapsPerWeek::getDetailedDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -5556,7 +5556,7 @@ double ConstraintStudentsMaxGapsPerWeek::fitness(Solution& c, Rules& r, QList<do
 	return weightPercentage/100 * tIllegalGaps;
 }
 
-bool ConstraintStudentsMaxGapsPerWeek::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintStudentsMaxGapsPerWeek::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -5564,28 +5564,28 @@ bool ConstraintStudentsMaxGapsPerWeek::isRelatedToActivity(Rules& r, Activity* a
 	return false;
 }
 
-bool ConstraintStudentsMaxGapsPerWeek::isRelatedToTeacher(Teacher* t)
+bool ConstraintStudentsMaxGapsPerWeek::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintStudentsMaxGapsPerWeek::isRelatedToSubject(Subject* s)
+bool ConstraintStudentsMaxGapsPerWeek::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsMaxGapsPerWeek::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintStudentsMaxGapsPerWeek::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsMaxGapsPerWeek::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintStudentsMaxGapsPerWeek::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -5730,7 +5730,7 @@ QString ConstraintStudentsSetMaxGapsPerWeek::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintStudentsSetMaxGapsPerWeek::getDetailedDescription(Rules& r){
+QString ConstraintStudentsSetMaxGapsPerWeek::getDetailedDescription(const Rules& r) const {
 	Q_UNUSED(r);
 
 	QString s=tr("Time constraint");s+="\n";
@@ -5818,7 +5818,7 @@ double ConstraintStudentsSetMaxGapsPerWeek::fitness(Solution& c, Rules& r, QList
 	return weightPercentage/100 * tIllegalGaps;
 }
 
-bool ConstraintStudentsSetMaxGapsPerWeek::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintStudentsSetMaxGapsPerWeek::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -5826,28 +5826,28 @@ bool ConstraintStudentsSetMaxGapsPerWeek::isRelatedToActivity(Rules& r, Activity
 	return false;
 }
 
-bool ConstraintStudentsSetMaxGapsPerWeek::isRelatedToTeacher(Teacher* t)
+bool ConstraintStudentsSetMaxGapsPerWeek::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintStudentsSetMaxGapsPerWeek::isRelatedToSubject(Subject* s)
+bool ConstraintStudentsSetMaxGapsPerWeek::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsSetMaxGapsPerWeek::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintStudentsSetMaxGapsPerWeek::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsSetMaxGapsPerWeek::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintStudentsSetMaxGapsPerWeek::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	return r.setsShareStudents(this->students, s->name);
 }
@@ -5941,7 +5941,7 @@ QString ConstraintStudentsEarlyMaxBeginningsAtSecondHour::getDescription(Rules& 
 	return begin+s+end;
 }
 
-QString ConstraintStudentsEarlyMaxBeginningsAtSecondHour::getDetailedDescription(Rules& r)
+QString ConstraintStudentsEarlyMaxBeginningsAtSecondHour::getDetailedDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -6057,7 +6057,7 @@ double ConstraintStudentsEarlyMaxBeginningsAtSecondHour::fitness(Solution& c, Ru
 	return weightPercentage/100 * conflTotal;
 }
 
-bool ConstraintStudentsEarlyMaxBeginningsAtSecondHour::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintStudentsEarlyMaxBeginningsAtSecondHour::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -6065,28 +6065,28 @@ bool ConstraintStudentsEarlyMaxBeginningsAtSecondHour::isRelatedToActivity(Rules
 	return false;
 }
 
-bool ConstraintStudentsEarlyMaxBeginningsAtSecondHour::isRelatedToTeacher(Teacher* t)
+bool ConstraintStudentsEarlyMaxBeginningsAtSecondHour::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintStudentsEarlyMaxBeginningsAtSecondHour::isRelatedToSubject(Subject* s)
+bool ConstraintStudentsEarlyMaxBeginningsAtSecondHour::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsEarlyMaxBeginningsAtSecondHour::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintStudentsEarlyMaxBeginningsAtSecondHour::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsEarlyMaxBeginningsAtSecondHour::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintStudentsEarlyMaxBeginningsAtSecondHour::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -6234,7 +6234,7 @@ QString ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::getDescription(Rule
 	return begin+s+end;
 }
 
-QString ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::getDetailedDescription(Rules& r)
+QString ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::getDetailedDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -6350,7 +6350,7 @@ double ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::fitness(Solution& c,
 	return weightPercentage/100 * conflTotal;
 }
 
-bool ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -6358,28 +6358,28 @@ bool ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::isRelatedToActivity(Ru
 	return false;
 }
 
-bool ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::isRelatedToTeacher(Teacher* t)
+bool ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::isRelatedToSubject(Subject* s)
+bool ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	return r.setsShareStudents(this->students, s->name);
 }
@@ -6476,7 +6476,7 @@ QString ConstraintStudentsMaxHoursDaily::getDescription(Rules& r)
 	return begin+s+end;
 }
 
-QString ConstraintStudentsMaxHoursDaily::getDetailedDescription(Rules& r)
+QString ConstraintStudentsMaxHoursDaily::getDetailedDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -6551,7 +6551,7 @@ double ConstraintStudentsMaxHoursDaily::fitness(Solution& c, Rules& r, QList<dou
 	return too_much * weightPercentage/100;
 }
 
-bool ConstraintStudentsMaxHoursDaily::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintStudentsMaxHoursDaily::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -6559,28 +6559,28 @@ bool ConstraintStudentsMaxHoursDaily::isRelatedToActivity(Rules& r, Activity* a)
 	return false;
 }
 
-bool ConstraintStudentsMaxHoursDaily::isRelatedToTeacher(Teacher* t)
+bool ConstraintStudentsMaxHoursDaily::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintStudentsMaxHoursDaily::isRelatedToSubject(Subject* s)
+bool ConstraintStudentsMaxHoursDaily::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsMaxHoursDaily::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintStudentsMaxHoursDaily::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsMaxHoursDaily::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintStudentsMaxHoursDaily::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -6672,7 +6672,7 @@ QString ConstraintStudentsSetMaxHoursDaily::getDescription(Rules& r)
 	return begin+s+end;
 }
 
-QString ConstraintStudentsSetMaxHoursDaily::getDetailedDescription(Rules& r)
+QString ConstraintStudentsSetMaxHoursDaily::getDetailedDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -6806,7 +6806,7 @@ double ConstraintStudentsSetMaxHoursDaily::fitness(Solution& c, Rules& r, QList<
 	return too_much * weightPercentage / 100.0;
 }
 
-bool ConstraintStudentsSetMaxHoursDaily::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintStudentsSetMaxHoursDaily::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -6814,28 +6814,28 @@ bool ConstraintStudentsSetMaxHoursDaily::isRelatedToActivity(Rules& r, Activity*
 	return false;
 }
 
-bool ConstraintStudentsSetMaxHoursDaily::isRelatedToTeacher(Teacher* t)
+bool ConstraintStudentsSetMaxHoursDaily::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintStudentsSetMaxHoursDaily::isRelatedToSubject(Subject* s)
+bool ConstraintStudentsSetMaxHoursDaily::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsSetMaxHoursDaily::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintStudentsSetMaxHoursDaily::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsSetMaxHoursDaily::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintStudentsSetMaxHoursDaily::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	return r.setsShareStudents(this->students, s->name);
 }
@@ -6932,7 +6932,7 @@ QString ConstraintStudentsMaxHoursContinuously::getDescription(Rules& r)
 	return begin+s+end;
 }
 
-QString ConstraintStudentsMaxHoursContinuously::getDetailedDescription(Rules& r)
+QString ConstraintStudentsMaxHoursContinuously::getDetailedDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -7031,7 +7031,7 @@ double ConstraintStudentsMaxHoursContinuously::fitness(Solution& c, Rules& r, QL
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintStudentsMaxHoursContinuously::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintStudentsMaxHoursContinuously::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -7039,28 +7039,28 @@ bool ConstraintStudentsMaxHoursContinuously::isRelatedToActivity(Rules& r, Activ
 	return false;
 }
 
-bool ConstraintStudentsMaxHoursContinuously::isRelatedToTeacher(Teacher* t)
+bool ConstraintStudentsMaxHoursContinuously::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintStudentsMaxHoursContinuously::isRelatedToSubject(Subject* s)
+bool ConstraintStudentsMaxHoursContinuously::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsMaxHoursContinuously::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintStudentsMaxHoursContinuously::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsMaxHoursContinuously::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintStudentsMaxHoursContinuously::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -7152,7 +7152,7 @@ QString ConstraintStudentsSetMaxHoursContinuously::getDescription(Rules& r)
 	return begin+s+end;
 }
 
-QString ConstraintStudentsSetMaxHoursContinuously::getDetailedDescription(Rules& r)
+QString ConstraintStudentsSetMaxHoursContinuously::getDetailedDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -7309,7 +7309,7 @@ double ConstraintStudentsSetMaxHoursContinuously::fitness(Solution& c, Rules& r,
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintStudentsSetMaxHoursContinuously::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintStudentsSetMaxHoursContinuously::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -7317,28 +7317,28 @@ bool ConstraintStudentsSetMaxHoursContinuously::isRelatedToActivity(Rules& r, Ac
 	return false;
 }
 
-bool ConstraintStudentsSetMaxHoursContinuously::isRelatedToTeacher(Teacher* t)
+bool ConstraintStudentsSetMaxHoursContinuously::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintStudentsSetMaxHoursContinuously::isRelatedToSubject(Subject* s)
+bool ConstraintStudentsSetMaxHoursContinuously::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsSetMaxHoursContinuously::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintStudentsSetMaxHoursContinuously::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsSetMaxHoursContinuously::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintStudentsSetMaxHoursContinuously::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	return r.setsShareStudents(this->students, s->name);
 }
@@ -7458,7 +7458,7 @@ QString ConstraintStudentsActivityTagMaxHoursContinuously::getDescription(Rules&
 	return begin+s+end;
 }
 
-QString ConstraintStudentsActivityTagMaxHoursContinuously::getDetailedDescription(Rules& r)
+QString ConstraintStudentsActivityTagMaxHoursContinuously::getDetailedDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -7581,7 +7581,7 @@ double ConstraintStudentsActivityTagMaxHoursContinuously::fitness(Solution& c, R
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintStudentsActivityTagMaxHoursContinuously::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintStudentsActivityTagMaxHoursContinuously::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -7589,26 +7589,26 @@ bool ConstraintStudentsActivityTagMaxHoursContinuously::isRelatedToActivity(Rule
 	return false;
 }
 
-bool ConstraintStudentsActivityTagMaxHoursContinuously::isRelatedToTeacher(Teacher* t)
+bool ConstraintStudentsActivityTagMaxHoursContinuously::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintStudentsActivityTagMaxHoursContinuously::isRelatedToSubject(Subject* s)
+bool ConstraintStudentsActivityTagMaxHoursContinuously::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsActivityTagMaxHoursContinuously::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintStudentsActivityTagMaxHoursContinuously::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	return s->name==this->activityTagName;
 }
 
-bool ConstraintStudentsActivityTagMaxHoursContinuously::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintStudentsActivityTagMaxHoursContinuously::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -7701,7 +7701,7 @@ QString ConstraintStudentsSetActivityTagMaxHoursContinuously::getDescription(Rul
 	return begin+s+end;
 }
 
-QString ConstraintStudentsSetActivityTagMaxHoursContinuously::getDetailedDescription(Rules& r)
+QString ConstraintStudentsSetActivityTagMaxHoursContinuously::getDetailedDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -7902,7 +7902,7 @@ double ConstraintStudentsSetActivityTagMaxHoursContinuously::fitness(Solution& c
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintStudentsSetActivityTagMaxHoursContinuously::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintStudentsSetActivityTagMaxHoursContinuously::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -7910,28 +7910,28 @@ bool ConstraintStudentsSetActivityTagMaxHoursContinuously::isRelatedToActivity(R
 	return false;
 }
 
-bool ConstraintStudentsSetActivityTagMaxHoursContinuously::isRelatedToTeacher(Teacher* t)
+bool ConstraintStudentsSetActivityTagMaxHoursContinuously::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintStudentsSetActivityTagMaxHoursContinuously::isRelatedToSubject(Subject* s)
+bool ConstraintStudentsSetActivityTagMaxHoursContinuously::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsSetActivityTagMaxHoursContinuously::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintStudentsSetActivityTagMaxHoursContinuously::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsSetActivityTagMaxHoursContinuously::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintStudentsSetActivityTagMaxHoursContinuously::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	return r.setsShareStudents(this->students, s->name);
 }
@@ -8040,7 +8040,7 @@ QString ConstraintStudentsMinHoursDaily::getDescription(Rules& r)
 	return begin+s+end;
 }
 
-QString ConstraintStudentsMinHoursDaily::getDetailedDescription(Rules& r)
+QString ConstraintStudentsMinHoursDaily::getDetailedDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -8127,7 +8127,7 @@ double ConstraintStudentsMinHoursDaily::fitness(Solution& c, Rules& r, QList<dou
 	return too_little * weightPercentage/100;
 }
 
-bool ConstraintStudentsMinHoursDaily::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintStudentsMinHoursDaily::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -8135,28 +8135,28 @@ bool ConstraintStudentsMinHoursDaily::isRelatedToActivity(Rules& r, Activity* a)
 	return false;
 }
 
-bool ConstraintStudentsMinHoursDaily::isRelatedToTeacher(Teacher* t)
+bool ConstraintStudentsMinHoursDaily::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintStudentsMinHoursDaily::isRelatedToSubject(Subject* s)
+bool ConstraintStudentsMinHoursDaily::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsMinHoursDaily::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintStudentsMinHoursDaily::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsMinHoursDaily::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintStudentsMinHoursDaily::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -8260,7 +8260,7 @@ QString ConstraintStudentsSetMinHoursDaily::getDescription(Rules& r)
 	return begin+s+end;
 }
 
-QString ConstraintStudentsSetMinHoursDaily::getDetailedDescription(Rules& r)
+QString ConstraintStudentsSetMinHoursDaily::getDetailedDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -8405,7 +8405,7 @@ double ConstraintStudentsSetMinHoursDaily::fitness(Solution& c, Rules& r, QList<
 	return too_little * weightPercentage / 100.0;
 }
 
-bool ConstraintStudentsSetMinHoursDaily::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintStudentsSetMinHoursDaily::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -8413,28 +8413,28 @@ bool ConstraintStudentsSetMinHoursDaily::isRelatedToActivity(Rules& r, Activity*
 	return false;
 }
 
-bool ConstraintStudentsSetMinHoursDaily::isRelatedToTeacher(Teacher* t)
+bool ConstraintStudentsSetMinHoursDaily::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintStudentsSetMinHoursDaily::isRelatedToSubject(Subject* s)
+bool ConstraintStudentsSetMinHoursDaily::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsSetMinHoursDaily::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintStudentsSetMinHoursDaily::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsSetMinHoursDaily::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintStudentsSetMinHoursDaily::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	return r.setsShareStudents(this->students, s->name);
 }
@@ -8595,7 +8595,7 @@ QString ConstraintActivityPreferredStartingTime::getDescription(Rules& r)
 	return begin+s+end;
 }
 
-QString ConstraintActivityPreferredStartingTime::getDetailedDescription(Rules& r)
+QString ConstraintActivityPreferredStartingTime::getDetailedDescription(const Rules& r) const
 {
 	QString s=tr("Time constraint");s+="\n";
 	s+=tr("Activity with id=%1 (%2)", "%1 is the id, %2 is the detailed description of the activity")
@@ -8678,7 +8678,7 @@ double ConstraintActivityPreferredStartingTime::fitness(Solution& c, Rules& r, Q
 	return nbroken * weightPercentage/100;
 }
 
-bool ConstraintActivityPreferredStartingTime::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintActivityPreferredStartingTime::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 
@@ -8687,28 +8687,28 @@ bool ConstraintActivityPreferredStartingTime::isRelatedToActivity(Rules& r, Acti
 	return false;
 }
 
-bool ConstraintActivityPreferredStartingTime::isRelatedToTeacher(Teacher* t)
+bool ConstraintActivityPreferredStartingTime::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintActivityPreferredStartingTime::isRelatedToSubject(Subject* s)
+bool ConstraintActivityPreferredStartingTime::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintActivityPreferredStartingTime::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintActivityPreferredStartingTime::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintActivityPreferredStartingTime::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintActivityPreferredStartingTime::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -8877,7 +8877,7 @@ QString ConstraintActivityPreferredTimeSlots::getDescription(Rules& r)
 	return begin+s+end;
 }
 
-QString ConstraintActivityPreferredTimeSlots::getDetailedDescription(Rules& r)
+QString ConstraintActivityPreferredTimeSlots::getDetailedDescription(const Rules& r) const
 {
 	QString s=tr("Time constraint");s+="\n";
 	s+=tr("Activity with id=%1 (%2)", "%1 is the id, %2 is the detailed description of the activity")
@@ -8970,7 +8970,7 @@ double ConstraintActivityPreferredTimeSlots::fitness(Solution& c, Rules& r, QLis
 	return nbroken * weightPercentage/100;
 }
 
-bool ConstraintActivityPreferredTimeSlots::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintActivityPreferredTimeSlots::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 
@@ -8979,28 +8979,28 @@ bool ConstraintActivityPreferredTimeSlots::isRelatedToActivity(Rules& r, Activit
 	return false;
 }
 
-bool ConstraintActivityPreferredTimeSlots::isRelatedToTeacher(Teacher* t)
+bool ConstraintActivityPreferredTimeSlots::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintActivityPreferredTimeSlots::isRelatedToSubject(Subject* s)
+bool ConstraintActivityPreferredTimeSlots::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintActivityPreferredTimeSlots::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintActivityPreferredTimeSlots::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintActivityPreferredTimeSlots::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintActivityPreferredTimeSlots::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -9318,7 +9318,7 @@ QString ConstraintActivitiesPreferredTimeSlots::getDescription(Rules& r)
 	return begin+s+end;
 }
 
-QString ConstraintActivitiesPreferredTimeSlots::getDetailedDescription(Rules& r)
+QString ConstraintActivitiesPreferredTimeSlots::getDetailedDescription(const Rules& r) const
 {
 	QString s=tr("Time constraint");s+="\n";
 	s+=tr("Activities with:");s+="\n";
@@ -9444,7 +9444,7 @@ double ConstraintActivitiesPreferredTimeSlots::fitness(Solution& c, Rules& r, QL
 	return nbroken * weightPercentage / 100.0;
 }
 
-bool ConstraintActivitiesPreferredTimeSlots::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintActivitiesPreferredTimeSlots::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	int it;
 
@@ -9479,28 +9479,28 @@ bool ConstraintActivitiesPreferredTimeSlots::isRelatedToActivity(Rules& r, Activ
 	return true;
 }
 
-bool ConstraintActivitiesPreferredTimeSlots::isRelatedToTeacher(Teacher* t)
+bool ConstraintActivitiesPreferredTimeSlots::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintActivitiesPreferredTimeSlots::isRelatedToSubject(Subject* s)
+bool ConstraintActivitiesPreferredTimeSlots::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintActivitiesPreferredTimeSlots::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintActivitiesPreferredTimeSlots::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintActivitiesPreferredTimeSlots::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintActivitiesPreferredTimeSlots::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -9809,7 +9809,7 @@ QString ConstraintSubactivitiesPreferredTimeSlots::getDescription(Rules& r)
 	return begin+s+end;
 }
 
-QString ConstraintSubactivitiesPreferredTimeSlots::getDetailedDescription(Rules& r)
+QString ConstraintSubactivitiesPreferredTimeSlots::getDetailedDescription(const Rules& r) const
 {
 	QString s=tr("Time constraint");s+="\n";
 	s+=tr("Subactivities with:");s+="\n";
@@ -9936,7 +9936,7 @@ double ConstraintSubactivitiesPreferredTimeSlots::fitness(Solution& c, Rules& r,
 	return nbroken * weightPercentage / 100.0;
 }
 
-bool ConstraintSubactivitiesPreferredTimeSlots::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintSubactivitiesPreferredTimeSlots::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	if(!a->representsComponentNumber(this->componentNumber))
 		return false;
@@ -9971,28 +9971,28 @@ bool ConstraintSubactivitiesPreferredTimeSlots::isRelatedToActivity(Rules& r, Ac
 	return true;
 }
 
-bool ConstraintSubactivitiesPreferredTimeSlots::isRelatedToTeacher(Teacher* t)
+bool ConstraintSubactivitiesPreferredTimeSlots::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintSubactivitiesPreferredTimeSlots::isRelatedToSubject(Subject* s)
+bool ConstraintSubactivitiesPreferredTimeSlots::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintSubactivitiesPreferredTimeSlots::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintSubactivitiesPreferredTimeSlots::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintSubactivitiesPreferredTimeSlots::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintSubactivitiesPreferredTimeSlots::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -10180,7 +10180,7 @@ QString ConstraintActivityPreferredStartingTimes::getDescription(Rules& r)
 	return begin+s+end;
 }
 
-QString ConstraintActivityPreferredStartingTimes::getDetailedDescription(Rules& r)
+QString ConstraintActivityPreferredStartingTimes::getDetailedDescription(const Rules& r) const
 {
 	QString s=tr("Time constraint");s+="\n";
 	s+=tr("Activity with id=%1 (%2)", "%1 is the id, %2 is the detailed description of the activity")
@@ -10267,7 +10267,7 @@ double ConstraintActivityPreferredStartingTimes::fitness(Solution& c, Rules& r, 
 	return nbroken * weightPercentage/100;
 }
 
-bool ConstraintActivityPreferredStartingTimes::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintActivityPreferredStartingTimes::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 
@@ -10276,28 +10276,28 @@ bool ConstraintActivityPreferredStartingTimes::isRelatedToActivity(Rules& r, Act
 	return false;
 }
 
-bool ConstraintActivityPreferredStartingTimes::isRelatedToTeacher(Teacher* t)
+bool ConstraintActivityPreferredStartingTimes::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintActivityPreferredStartingTimes::isRelatedToSubject(Subject* s)
+bool ConstraintActivityPreferredStartingTimes::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintActivityPreferredStartingTimes::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintActivityPreferredStartingTimes::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintActivityPreferredStartingTimes::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintActivityPreferredStartingTimes::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -10608,7 +10608,7 @@ QString ConstraintActivitiesPreferredStartingTimes::getDescription(Rules& r)
 	return begin+s+end;
 }
 
-QString ConstraintActivitiesPreferredStartingTimes::getDetailedDescription(Rules& r)
+QString ConstraintActivitiesPreferredStartingTimes::getDetailedDescription(const Rules& r) const
 {
 	QString s=tr("Time constraint");s+="\n";
 	s+=tr("Activities with:");s+="\n";
@@ -10729,7 +10729,7 @@ double ConstraintActivitiesPreferredStartingTimes::fitness(Solution& c, Rules& r
 	return nbroken * weightPercentage / 100.0;
 }
 
-bool ConstraintActivitiesPreferredStartingTimes::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintActivitiesPreferredStartingTimes::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	int it;
 
@@ -10764,28 +10764,28 @@ bool ConstraintActivitiesPreferredStartingTimes::isRelatedToActivity(Rules& r, A
 	return true;
 }
 
-bool ConstraintActivitiesPreferredStartingTimes::isRelatedToTeacher(Teacher* t)
+bool ConstraintActivitiesPreferredStartingTimes::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintActivitiesPreferredStartingTimes::isRelatedToSubject(Subject* s)
+bool ConstraintActivitiesPreferredStartingTimes::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintActivitiesPreferredStartingTimes::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintActivitiesPreferredStartingTimes::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintActivitiesPreferredStartingTimes::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintActivitiesPreferredStartingTimes::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -11087,7 +11087,7 @@ QString ConstraintSubactivitiesPreferredStartingTimes::getDescription(Rules& r)
 	return begin+s+end;
 }
 
-QString ConstraintSubactivitiesPreferredStartingTimes::getDetailedDescription(Rules& r)
+QString ConstraintSubactivitiesPreferredStartingTimes::getDetailedDescription(const Rules& r) const
 {
 	QString s=tr("Time constraint");s+="\n";
 	s+=tr("Subactivities with:");s+="\n";
@@ -11205,7 +11205,7 @@ double ConstraintSubactivitiesPreferredStartingTimes::fitness(Solution& c, Rules
 	return nbroken * weightPercentage / 100.0;
 }
 
-bool ConstraintSubactivitiesPreferredStartingTimes::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintSubactivitiesPreferredStartingTimes::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	if(!a->representsComponentNumber(this->componentNumber))
 		return false;
@@ -11240,28 +11240,28 @@ bool ConstraintSubactivitiesPreferredStartingTimes::isRelatedToActivity(Rules& r
 	return true;
 }
 
-bool ConstraintSubactivitiesPreferredStartingTimes::isRelatedToTeacher(Teacher* t)
+bool ConstraintSubactivitiesPreferredStartingTimes::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintSubactivitiesPreferredStartingTimes::isRelatedToSubject(Subject* s)
+bool ConstraintSubactivitiesPreferredStartingTimes::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintSubactivitiesPreferredStartingTimes::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintSubactivitiesPreferredStartingTimes::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintSubactivitiesPreferredStartingTimes::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintSubactivitiesPreferredStartingTimes::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -11453,7 +11453,7 @@ QString ConstraintActivitiesSameStartingHour::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintActivitiesSameStartingHour::getDetailedDescription(Rules& r){
+QString ConstraintActivitiesSameStartingHour::getDetailedDescription(const Rules& r) const {
 	QString s;
 	
 	s=tr("Time constraint");s+="\n";
@@ -11530,7 +11530,7 @@ double ConstraintActivitiesSameStartingHour::fitness(Solution& c, Rules& r, QLis
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintActivitiesSameStartingHour::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintActivitiesSameStartingHour::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 
@@ -11540,28 +11540,28 @@ bool ConstraintActivitiesSameStartingHour::isRelatedToActivity(Rules& r, Activit
 	return false;
 }
 
-bool ConstraintActivitiesSameStartingHour::isRelatedToTeacher(Teacher* t)
+bool ConstraintActivitiesSameStartingHour::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintActivitiesSameStartingHour::isRelatedToSubject(Subject* s)
+bool ConstraintActivitiesSameStartingHour::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintActivitiesSameStartingHour::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintActivitiesSameStartingHour::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintActivitiesSameStartingHour::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintActivitiesSameStartingHour::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -11727,7 +11727,7 @@ QString ConstraintActivitiesSameStartingDay::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintActivitiesSameStartingDay::getDetailedDescription(Rules& r){
+QString ConstraintActivitiesSameStartingDay::getDetailedDescription(const Rules& r) const {
 	QString s;
 	
 	s=tr("Time constraint");s+="\n";
@@ -11802,7 +11802,7 @@ double ConstraintActivitiesSameStartingDay::fitness(Solution& c, Rules& r, QList
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintActivitiesSameStartingDay::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintActivitiesSameStartingDay::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 
@@ -11812,28 +11812,28 @@ bool ConstraintActivitiesSameStartingDay::isRelatedToActivity(Rules& r, Activity
 	return false;
 }
 
-bool ConstraintActivitiesSameStartingDay::isRelatedToTeacher(Teacher* t)
+bool ConstraintActivitiesSameStartingDay::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintActivitiesSameStartingDay::isRelatedToSubject(Subject* s)
+bool ConstraintActivitiesSameStartingDay::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintActivitiesSameStartingDay::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintActivitiesSameStartingDay::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintActivitiesSameStartingDay::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintActivitiesSameStartingDay::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -11980,7 +11980,7 @@ QString ConstraintTwoActivitiesConsecutive::getDescription(Rules& r)
 	return begin+s+end;
 }
 
-QString ConstraintTwoActivitiesConsecutive::getDetailedDescription(Rules& r)
+QString ConstraintTwoActivitiesConsecutive::getDetailedDescription(const Rules& r) const
 {
 	QString s=tr("Time constraint");s+="\n";
 	s+=tr("Two activities consecutive (second activity must be placed immediately after the first"
@@ -12074,7 +12074,7 @@ double ConstraintTwoActivitiesConsecutive::fitness(Solution& c, Rules& r, QList<
 	return nbroken * weightPercentage/100;
 }
 
-bool ConstraintTwoActivitiesConsecutive::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintTwoActivitiesConsecutive::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 
@@ -12085,28 +12085,28 @@ bool ConstraintTwoActivitiesConsecutive::isRelatedToActivity(Rules& r, Activity*
 	return false;
 }
 
-bool ConstraintTwoActivitiesConsecutive::isRelatedToTeacher(Teacher* t)
+bool ConstraintTwoActivitiesConsecutive::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintTwoActivitiesConsecutive::isRelatedToSubject(Subject* s)
+bool ConstraintTwoActivitiesConsecutive::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTwoActivitiesConsecutive::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintTwoActivitiesConsecutive::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTwoActivitiesConsecutive::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintTwoActivitiesConsecutive::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -12253,7 +12253,7 @@ QString ConstraintTwoActivitiesGrouped::getDescription(Rules& r)
 	return begin+s+end;
 }
 
-QString ConstraintTwoActivitiesGrouped::getDetailedDescription(Rules& r)
+QString ConstraintTwoActivitiesGrouped::getDetailedDescription(const Rules& r) const
 {
 	QString s=tr("Time constraint");s+="\n";
 	s+=tr("Two activities grouped (the activities must be placed in the same day, "
@@ -12359,7 +12359,7 @@ double ConstraintTwoActivitiesGrouped::fitness(Solution& c, Rules& r, QList<doub
 	return nbroken * weightPercentage/100;
 }
 
-bool ConstraintTwoActivitiesGrouped::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintTwoActivitiesGrouped::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 
@@ -12370,28 +12370,28 @@ bool ConstraintTwoActivitiesGrouped::isRelatedToActivity(Rules& r, Activity* a)
 	return false;
 }
 
-bool ConstraintTwoActivitiesGrouped::isRelatedToTeacher(Teacher* t)
+bool ConstraintTwoActivitiesGrouped::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintTwoActivitiesGrouped::isRelatedToSubject(Subject* s)
+bool ConstraintTwoActivitiesGrouped::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTwoActivitiesGrouped::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintTwoActivitiesGrouped::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTwoActivitiesGrouped::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintTwoActivitiesGrouped::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -12563,7 +12563,7 @@ QString ConstraintThreeActivitiesGrouped::getDescription(Rules& r)
 	return begin+s+end;
 }
 
-QString ConstraintThreeActivitiesGrouped::getDetailedDescription(Rules& r)
+QString ConstraintThreeActivitiesGrouped::getDetailedDescription(const Rules& r) const
 {
 	QString s=tr("Time constraint");s+="\n";
 	s+=tr("Three activities grouped (the activities must be placed in the same day, "
@@ -12725,7 +12725,7 @@ double ConstraintThreeActivitiesGrouped::fitness(Solution& c, Rules& r, QList<do
 	return nbroken * weightPercentage/100;
 }
 
-bool ConstraintThreeActivitiesGrouped::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintThreeActivitiesGrouped::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 
@@ -12738,28 +12738,28 @@ bool ConstraintThreeActivitiesGrouped::isRelatedToActivity(Rules& r, Activity* a
 	return false;
 }
 
-bool ConstraintThreeActivitiesGrouped::isRelatedToTeacher(Teacher* t)
+bool ConstraintThreeActivitiesGrouped::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintThreeActivitiesGrouped::isRelatedToSubject(Subject* s)
+bool ConstraintThreeActivitiesGrouped::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintThreeActivitiesGrouped::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintThreeActivitiesGrouped::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintThreeActivitiesGrouped::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintThreeActivitiesGrouped::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -12906,7 +12906,7 @@ QString ConstraintTwoActivitiesOrdered::getDescription(Rules& r)
 	return begin+s+end;
 }
 
-QString ConstraintTwoActivitiesOrdered::getDetailedDescription(Rules& r)
+QString ConstraintTwoActivitiesOrdered::getDetailedDescription(const Rules& r) const
 {
 	QString s=tr("Time constraint");s+="\n";
 	s+=tr("Two activities ordered (second activity must be placed at any time in the week after the first"
@@ -12985,7 +12985,7 @@ double ConstraintTwoActivitiesOrdered::fitness(Solution& c, Rules& r, QList<doub
 	return nbroken * weightPercentage/100;
 }
 
-bool ConstraintTwoActivitiesOrdered::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintTwoActivitiesOrdered::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 
@@ -12996,28 +12996,28 @@ bool ConstraintTwoActivitiesOrdered::isRelatedToActivity(Rules& r, Activity* a)
 	return false;
 }
 
-bool ConstraintTwoActivitiesOrdered::isRelatedToTeacher(Teacher* t)
+bool ConstraintTwoActivitiesOrdered::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintTwoActivitiesOrdered::isRelatedToSubject(Subject* s)
+bool ConstraintTwoActivitiesOrdered::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTwoActivitiesOrdered::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintTwoActivitiesOrdered::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTwoActivitiesOrdered::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintTwoActivitiesOrdered::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -13128,7 +13128,7 @@ QString ConstraintActivityEndsStudentsDay::getDescription(Rules& r)
 	return begin+s+end;
 }
 
-QString ConstraintActivityEndsStudentsDay::getDetailedDescription(Rules& r)
+QString ConstraintActivityEndsStudentsDay::getDetailedDescription(const Rules& r) const
 {
 	QString s=tr("Time constraint");s+="\n";
 	s+=tr("Activity must end students' day");s+="\n";
@@ -13200,7 +13200,7 @@ double ConstraintActivityEndsStudentsDay::fitness(Solution& c, Rules& r, QList<d
 	return nbroken * weightPercentage/100;
 }
 
-bool ConstraintActivityEndsStudentsDay::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintActivityEndsStudentsDay::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 
@@ -13209,28 +13209,28 @@ bool ConstraintActivityEndsStudentsDay::isRelatedToActivity(Rules& r, Activity* 
 	return false;
 }
 
-bool ConstraintActivityEndsStudentsDay::isRelatedToTeacher(Teacher* t)
+bool ConstraintActivityEndsStudentsDay::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintActivityEndsStudentsDay::isRelatedToSubject(Subject* s)
+bool ConstraintActivityEndsStudentsDay::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintActivityEndsStudentsDay::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintActivityEndsStudentsDay::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintActivityEndsStudentsDay::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintActivityEndsStudentsDay::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -13341,7 +13341,7 @@ QString ConstraintTeachersMinHoursDaily::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintTeachersMinHoursDaily::getDetailedDescription(Rules& r){
+QString ConstraintTeachersMinHoursDaily::getDetailedDescription(const Rules& r) const {
 	Q_UNUSED(r);
 
 	QString s=tr("Time constraint");s+="\n";
@@ -13415,7 +13415,7 @@ double ConstraintTeachersMinHoursDaily::fitness(Solution& c, Rules& r, QList<dou
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintTeachersMinHoursDaily::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintTeachersMinHoursDaily::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(a);
 	Q_UNUSED(r);
@@ -13423,28 +13423,28 @@ bool ConstraintTeachersMinHoursDaily::isRelatedToActivity(Rules& r, Activity* a)
 	return false;
 }
 
-bool ConstraintTeachersMinHoursDaily::isRelatedToTeacher(Teacher* t)
+bool ConstraintTeachersMinHoursDaily::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return true;
 }
 
-bool ConstraintTeachersMinHoursDaily::isRelatedToSubject(Subject* s)
+bool ConstraintTeachersMinHoursDaily::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeachersMinHoursDaily::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintTeachersMinHoursDaily::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeachersMinHoursDaily::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintTeachersMinHoursDaily::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -13563,7 +13563,7 @@ QString ConstraintTeacherMinHoursDaily::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintTeacherMinHoursDaily::getDetailedDescription(Rules& r){
+QString ConstraintTeacherMinHoursDaily::getDetailedDescription(const Rules& r) const {
 	Q_UNUSED(r);
 
 	QString s=tr("Time constraint");s+="\n";
@@ -13638,7 +13638,7 @@ double ConstraintTeacherMinHoursDaily::fitness(Solution& c, Rules& r, QList<doub
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintTeacherMinHoursDaily::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintTeacherMinHoursDaily::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -13646,28 +13646,28 @@ bool ConstraintTeacherMinHoursDaily::isRelatedToActivity(Rules& r, Activity* a)
 	return false;
 }
 
-bool ConstraintTeacherMinHoursDaily::isRelatedToTeacher(Teacher* t)
+bool ConstraintTeacherMinHoursDaily::isRelatedToTeacher(const Teacher* t) const
 {
 	if(this->teacherName==t->name)
 		return true;
 	return false;
 }
 
-bool ConstraintTeacherMinHoursDaily::isRelatedToSubject(Subject* s)
+bool ConstraintTeacherMinHoursDaily::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeacherMinHoursDaily::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintTeacherMinHoursDaily::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeacherMinHoursDaily::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintTeacherMinHoursDaily::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -13768,7 +13768,7 @@ QString ConstraintTeacherMinDaysPerWeek::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintTeacherMinDaysPerWeek::getDetailedDescription(Rules& r){
+QString ConstraintTeacherMinDaysPerWeek::getDetailedDescription(const Rules& r) const {
 	Q_UNUSED(r);
 
 	QString s=tr("Time constraint");s+="\n";
@@ -13840,7 +13840,7 @@ double ConstraintTeacherMinDaysPerWeek::fitness(Solution& c, Rules& r, QList<dou
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintTeacherMinDaysPerWeek::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintTeacherMinDaysPerWeek::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -13848,28 +13848,28 @@ bool ConstraintTeacherMinDaysPerWeek::isRelatedToActivity(Rules& r, Activity* a)
 	return false;
 }
 
-bool ConstraintTeacherMinDaysPerWeek::isRelatedToTeacher(Teacher* t)
+bool ConstraintTeacherMinDaysPerWeek::isRelatedToTeacher(const Teacher* t) const
 {
 	if(this->teacherName==t->name)
 		return true;
 	return false;
 }
 
-bool ConstraintTeacherMinDaysPerWeek::isRelatedToSubject(Subject* s)
+bool ConstraintTeacherMinDaysPerWeek::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeacherMinDaysPerWeek::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintTeacherMinDaysPerWeek::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeacherMinDaysPerWeek::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintTeacherMinDaysPerWeek::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -13965,7 +13965,7 @@ QString ConstraintTeachersMinDaysPerWeek::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintTeachersMinDaysPerWeek::getDetailedDescription(Rules& r){
+QString ConstraintTeachersMinDaysPerWeek::getDetailedDescription(const Rules& r) const {
 	Q_UNUSED(r);
 
 	QString s=tr("Time constraint");s+="\n";
@@ -14040,7 +14040,7 @@ double ConstraintTeachersMinDaysPerWeek::fitness(Solution& c, Rules& r, QList<do
 	return weightPercentage/100 * nbrokentotal;
 }
 
-bool ConstraintTeachersMinDaysPerWeek::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintTeachersMinDaysPerWeek::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -14048,27 +14048,27 @@ bool ConstraintTeachersMinDaysPerWeek::isRelatedToActivity(Rules& r, Activity* a
 	return false;
 }
 
-bool ConstraintTeachersMinDaysPerWeek::isRelatedToTeacher(Teacher* t)
+bool ConstraintTeachersMinDaysPerWeek::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 	return true;
 }
 
-bool ConstraintTeachersMinDaysPerWeek::isRelatedToSubject(Subject* s)
+bool ConstraintTeachersMinDaysPerWeek::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeachersMinDaysPerWeek::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintTeachersMinDaysPerWeek::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeachersMinDaysPerWeek::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintTeachersMinDaysPerWeek::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -14204,7 +14204,7 @@ QString ConstraintTeacherIntervalMaxDaysPerWeek::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintTeacherIntervalMaxDaysPerWeek::getDetailedDescription(Rules& r){
+QString ConstraintTeacherIntervalMaxDaysPerWeek::getDetailedDescription(const Rules& r) const {
 	Q_UNUSED(r);
 
 	QString s=tr("Time constraint");s+="\n";
@@ -14286,7 +14286,7 @@ double ConstraintTeacherIntervalMaxDaysPerWeek::fitness(Solution& c, Rules& r, Q
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintTeacherIntervalMaxDaysPerWeek::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintTeacherIntervalMaxDaysPerWeek::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -14294,28 +14294,28 @@ bool ConstraintTeacherIntervalMaxDaysPerWeek::isRelatedToActivity(Rules& r, Acti
 	return false;
 }
 
-bool ConstraintTeacherIntervalMaxDaysPerWeek::isRelatedToTeacher(Teacher* t)
+bool ConstraintTeacherIntervalMaxDaysPerWeek::isRelatedToTeacher(const Teacher* t) const
 {
 	if(this->teacherName==t->name)
 		return true;
 	return false;
 }
 
-bool ConstraintTeacherIntervalMaxDaysPerWeek::isRelatedToSubject(Subject* s)
+bool ConstraintTeacherIntervalMaxDaysPerWeek::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeacherIntervalMaxDaysPerWeek::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintTeacherIntervalMaxDaysPerWeek::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeacherIntervalMaxDaysPerWeek::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintTeacherIntervalMaxDaysPerWeek::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -14455,7 +14455,7 @@ QString ConstraintTeachersIntervalMaxDaysPerWeek::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintTeachersIntervalMaxDaysPerWeek::getDetailedDescription(Rules& r){
+QString ConstraintTeachersIntervalMaxDaysPerWeek::getDetailedDescription(const Rules& r) const {
 	Q_UNUSED(r);
 
 	QString s=tr("Time constraint");s+="\n";
@@ -14536,7 +14536,7 @@ double ConstraintTeachersIntervalMaxDaysPerWeek::fitness(Solution& c, Rules& r, 
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintTeachersIntervalMaxDaysPerWeek::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintTeachersIntervalMaxDaysPerWeek::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -14544,28 +14544,28 @@ bool ConstraintTeachersIntervalMaxDaysPerWeek::isRelatedToActivity(Rules& r, Act
 	return false;
 }
 
-bool ConstraintTeachersIntervalMaxDaysPerWeek::isRelatedToTeacher(Teacher* t)
+bool ConstraintTeachersIntervalMaxDaysPerWeek::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 	
 	return true;
 }
 
-bool ConstraintTeachersIntervalMaxDaysPerWeek::isRelatedToSubject(Subject* s)
+bool ConstraintTeachersIntervalMaxDaysPerWeek::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeachersIntervalMaxDaysPerWeek::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintTeachersIntervalMaxDaysPerWeek::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeachersIntervalMaxDaysPerWeek::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintTeachersIntervalMaxDaysPerWeek::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -14762,7 +14762,7 @@ QString ConstraintStudentsSetIntervalMaxDaysPerWeek::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintStudentsSetIntervalMaxDaysPerWeek::getDetailedDescription(Rules& r){
+QString ConstraintStudentsSetIntervalMaxDaysPerWeek::getDetailedDescription(const Rules& r) const {
 	Q_UNUSED(r);
 
 	QString s=tr("Time constraint");s+="\n";
@@ -14844,7 +14844,7 @@ double ConstraintStudentsSetIntervalMaxDaysPerWeek::fitness(Solution& c, Rules& 
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintStudentsSetIntervalMaxDaysPerWeek::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintStudentsSetIntervalMaxDaysPerWeek::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -14852,27 +14852,27 @@ bool ConstraintStudentsSetIntervalMaxDaysPerWeek::isRelatedToActivity(Rules& r, 
 	return false;
 }
 
-bool ConstraintStudentsSetIntervalMaxDaysPerWeek::isRelatedToTeacher(Teacher* t)
+bool ConstraintStudentsSetIntervalMaxDaysPerWeek::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 	return false;
 }
 
-bool ConstraintStudentsSetIntervalMaxDaysPerWeek::isRelatedToSubject(Subject* s)
+bool ConstraintStudentsSetIntervalMaxDaysPerWeek::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsSetIntervalMaxDaysPerWeek::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintStudentsSetIntervalMaxDaysPerWeek::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsSetIntervalMaxDaysPerWeek::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintStudentsSetIntervalMaxDaysPerWeek::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	return r.setsShareStudents(this->students, s->name);
 }
@@ -15010,7 +15010,7 @@ QString ConstraintStudentsIntervalMaxDaysPerWeek::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintStudentsIntervalMaxDaysPerWeek::getDetailedDescription(Rules& r){
+QString ConstraintStudentsIntervalMaxDaysPerWeek::getDetailedDescription(const Rules& r) const {
 	Q_UNUSED(r);
 
 	QString s=tr("Time constraint");s+="\n";
@@ -15091,7 +15091,7 @@ double ConstraintStudentsIntervalMaxDaysPerWeek::fitness(Solution& c, Rules& r, 
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintStudentsIntervalMaxDaysPerWeek::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintStudentsIntervalMaxDaysPerWeek::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -15099,27 +15099,27 @@ bool ConstraintStudentsIntervalMaxDaysPerWeek::isRelatedToActivity(Rules& r, Act
 	return false;
 }
 
-bool ConstraintStudentsIntervalMaxDaysPerWeek::isRelatedToTeacher(Teacher* t)
+bool ConstraintStudentsIntervalMaxDaysPerWeek::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 	return false;
 }
 
-bool ConstraintStudentsIntervalMaxDaysPerWeek::isRelatedToSubject(Subject* s)
+bool ConstraintStudentsIntervalMaxDaysPerWeek::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsIntervalMaxDaysPerWeek::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintStudentsIntervalMaxDaysPerWeek::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsIntervalMaxDaysPerWeek::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintStudentsIntervalMaxDaysPerWeek::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -15300,7 +15300,7 @@ QString ConstraintActivitiesEndStudentsDay::getDescription(Rules& r)
 	return begin+s+end;
 }
 
-QString ConstraintActivitiesEndStudentsDay::getDetailedDescription(Rules& r)
+QString ConstraintActivitiesEndStudentsDay::getDetailedDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -15404,7 +15404,7 @@ double ConstraintActivitiesEndStudentsDay::fitness(Solution& c, Rules& r, QList<
 	return nbroken * weightPercentage/100;
 }
 
-bool ConstraintActivitiesEndStudentsDay::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintActivitiesEndStudentsDay::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	int it;
 
@@ -15436,28 +15436,28 @@ bool ConstraintActivitiesEndStudentsDay::isRelatedToActivity(Rules& r, Activity*
 	return true;
 }
 
-bool ConstraintActivitiesEndStudentsDay::isRelatedToTeacher(Teacher* t)
+bool ConstraintActivitiesEndStudentsDay::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintActivitiesEndStudentsDay::isRelatedToSubject(Subject* s)
+bool ConstraintActivitiesEndStudentsDay::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintActivitiesEndStudentsDay::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintActivitiesEndStudentsDay::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintActivitiesEndStudentsDay::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintActivitiesEndStudentsDay::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -15571,7 +15571,7 @@ QString ConstraintTeachersActivityTagMaxHoursDaily::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintTeachersActivityTagMaxHoursDaily::getDetailedDescription(Rules& r){
+QString ConstraintTeachersActivityTagMaxHoursDaily::getDetailedDescription(const Rules& r) const {
 	Q_UNUSED(r);
 
 	QString s=tr("Time constraint");s+="\n";
@@ -15661,7 +15661,7 @@ double ConstraintTeachersActivityTagMaxHoursDaily::fitness(Solution& c, Rules& r
 	return weightPercentage/100.0 * nbroken;
 }
 
-bool ConstraintTeachersActivityTagMaxHoursDaily::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintTeachersActivityTagMaxHoursDaily::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -15669,26 +15669,26 @@ bool ConstraintTeachersActivityTagMaxHoursDaily::isRelatedToActivity(Rules& r, A
 	return false;
 }
 
-bool ConstraintTeachersActivityTagMaxHoursDaily::isRelatedToTeacher(Teacher* t)
+bool ConstraintTeachersActivityTagMaxHoursDaily::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return true;
 }
 
-bool ConstraintTeachersActivityTagMaxHoursDaily::isRelatedToSubject(Subject* s)
+bool ConstraintTeachersActivityTagMaxHoursDaily::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeachersActivityTagMaxHoursDaily::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintTeachersActivityTagMaxHoursDaily::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	return s->name==this->activityTagName;
 }
 
-bool ConstraintTeachersActivityTagMaxHoursDaily::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintTeachersActivityTagMaxHoursDaily::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -15810,7 +15810,7 @@ QString ConstraintTeacherActivityTagMaxHoursDaily::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintTeacherActivityTagMaxHoursDaily::getDetailedDescription(Rules& r){
+QString ConstraintTeacherActivityTagMaxHoursDaily::getDetailedDescription(const Rules& r) const {
 	Q_UNUSED(r);
 
 	QString s=tr("Time constraint");s+="\n";
@@ -15901,7 +15901,7 @@ double ConstraintTeacherActivityTagMaxHoursDaily::fitness(Solution& c, Rules& r,
 	return weightPercentage/100.0 * nbroken;
 }
 
-bool ConstraintTeacherActivityTagMaxHoursDaily::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintTeacherActivityTagMaxHoursDaily::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -15909,26 +15909,26 @@ bool ConstraintTeacherActivityTagMaxHoursDaily::isRelatedToActivity(Rules& r, Ac
 	return false;
 }
 
-bool ConstraintTeacherActivityTagMaxHoursDaily::isRelatedToTeacher(Teacher* t)
+bool ConstraintTeacherActivityTagMaxHoursDaily::isRelatedToTeacher(const Teacher* t) const
 {
 	if(this->teacherName==t->name)
 		return true;
 	return false;
 }
 
-bool ConstraintTeacherActivityTagMaxHoursDaily::isRelatedToSubject(Subject* s)
+bool ConstraintTeacherActivityTagMaxHoursDaily::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintTeacherActivityTagMaxHoursDaily::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintTeacherActivityTagMaxHoursDaily::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	return this->activityTagName==s->name;
 }
 
-bool ConstraintTeacherActivityTagMaxHoursDaily::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintTeacherActivityTagMaxHoursDaily::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -16052,7 +16052,7 @@ QString ConstraintStudentsActivityTagMaxHoursDaily::getDescription(Rules& r)
 	return begin+s+end;
 }
 
-QString ConstraintStudentsActivityTagMaxHoursDaily::getDetailedDescription(Rules& r)
+QString ConstraintStudentsActivityTagMaxHoursDaily::getDetailedDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -16143,7 +16143,7 @@ double ConstraintStudentsActivityTagMaxHoursDaily::fitness(Solution& c, Rules& r
 	return weightPercentage/100.0 * nbroken;
 }
 
-bool ConstraintStudentsActivityTagMaxHoursDaily::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintStudentsActivityTagMaxHoursDaily::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -16151,26 +16151,26 @@ bool ConstraintStudentsActivityTagMaxHoursDaily::isRelatedToActivity(Rules& r, A
 	return false;
 }
 
-bool ConstraintStudentsActivityTagMaxHoursDaily::isRelatedToTeacher(Teacher* t)
+bool ConstraintStudentsActivityTagMaxHoursDaily::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintStudentsActivityTagMaxHoursDaily::isRelatedToSubject(Subject* s)
+bool ConstraintStudentsActivityTagMaxHoursDaily::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsActivityTagMaxHoursDaily::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintStudentsActivityTagMaxHoursDaily::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	return s->name==this->activityTagName;
 }
 
-bool ConstraintStudentsActivityTagMaxHoursDaily::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintStudentsActivityTagMaxHoursDaily::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -16264,7 +16264,7 @@ QString ConstraintStudentsSetActivityTagMaxHoursDaily::getDescription(Rules& r)
 	return begin+s+end;
 }
 
-QString ConstraintStudentsSetActivityTagMaxHoursDaily::getDetailedDescription(Rules& r)
+QString ConstraintStudentsSetActivityTagMaxHoursDaily::getDetailedDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -16435,7 +16435,7 @@ double ConstraintStudentsSetActivityTagMaxHoursDaily::fitness(Solution& c, Rules
 	return weightPercentage/100.0 * nbroken;
 }
 
-bool ConstraintStudentsSetActivityTagMaxHoursDaily::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintStudentsSetActivityTagMaxHoursDaily::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -16443,28 +16443,28 @@ bool ConstraintStudentsSetActivityTagMaxHoursDaily::isRelatedToActivity(Rules& r
 	return false;
 }
 
-bool ConstraintStudentsSetActivityTagMaxHoursDaily::isRelatedToTeacher(Teacher* t)
+bool ConstraintStudentsSetActivityTagMaxHoursDaily::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintStudentsSetActivityTagMaxHoursDaily::isRelatedToSubject(Subject* s)
+bool ConstraintStudentsSetActivityTagMaxHoursDaily::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsSetActivityTagMaxHoursDaily::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintStudentsSetActivityTagMaxHoursDaily::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsSetActivityTagMaxHoursDaily::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintStudentsSetActivityTagMaxHoursDaily::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	return r.setsShareStudents(this->students, s->name);
 }
@@ -16558,7 +16558,7 @@ QString ConstraintStudentsMaxGapsPerDay::getDescription(Rules& r)
 	return begin+s+end;
 }
 
-QString ConstraintStudentsMaxGapsPerDay::getDetailedDescription(Rules& r)
+QString ConstraintStudentsMaxGapsPerDay::getDetailedDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
@@ -16648,7 +16648,7 @@ double ConstraintStudentsMaxGapsPerDay::fitness(Solution& c, Rules& r, QList<dou
 	return weightPercentage/100 * tIllegalGaps;
 }
 
-bool ConstraintStudentsMaxGapsPerDay::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintStudentsMaxGapsPerDay::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -16656,28 +16656,28 @@ bool ConstraintStudentsMaxGapsPerDay::isRelatedToActivity(Rules& r, Activity* a)
 	return false;
 }
 
-bool ConstraintStudentsMaxGapsPerDay::isRelatedToTeacher(Teacher* t)
+bool ConstraintStudentsMaxGapsPerDay::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintStudentsMaxGapsPerDay::isRelatedToSubject(Subject* s)
+bool ConstraintStudentsMaxGapsPerDay::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsMaxGapsPerDay::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintStudentsMaxGapsPerDay::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsMaxGapsPerDay::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintStudentsMaxGapsPerDay::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -16823,7 +16823,7 @@ QString ConstraintStudentsSetMaxGapsPerDay::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintStudentsSetMaxGapsPerDay::getDetailedDescription(Rules& r){
+QString ConstraintStudentsSetMaxGapsPerDay::getDetailedDescription(const Rules& r) const {
 	Q_UNUSED(r);
 
 	QString s=tr("Time constraint");s+="\n";
@@ -16914,7 +16914,7 @@ double ConstraintStudentsSetMaxGapsPerDay::fitness(Solution& c, Rules& r, QList<
 	return weightPercentage/100 * tIllegalGaps;
 }
 
-bool ConstraintStudentsSetMaxGapsPerDay::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintStudentsSetMaxGapsPerDay::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -16922,28 +16922,28 @@ bool ConstraintStudentsSetMaxGapsPerDay::isRelatedToActivity(Rules& r, Activity*
 	return false;
 }
 
-bool ConstraintStudentsSetMaxGapsPerDay::isRelatedToTeacher(Teacher* t)
+bool ConstraintStudentsSetMaxGapsPerDay::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintStudentsSetMaxGapsPerDay::isRelatedToSubject(Subject* s)
+bool ConstraintStudentsSetMaxGapsPerDay::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsSetMaxGapsPerDay::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintStudentsSetMaxGapsPerDay::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsSetMaxGapsPerDay::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintStudentsSetMaxGapsPerDay::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	return r.setsShareStudents(this->students, s->name);
 }
@@ -17132,7 +17132,7 @@ QString ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::getDescription(Rule
 	return begin+s+end;
 }
 
-QString ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::getDetailedDescription(Rules& r)
+QString ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::getDetailedDescription(const Rules& r) const
 {
 	assert(this->selectedDays.count()==this->selectedHours.count());
 
@@ -17254,35 +17254,35 @@ void ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::removeUseless(Rules& r
 	activitiesIds=newActs;
 }
 
-bool ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 
 	return this->activitiesIds.contains(a->id);
 }
 
-bool ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::isRelatedToTeacher(Teacher* t)
+bool ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::isRelatedToSubject(Subject* s)
+bool ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -17499,7 +17499,7 @@ QString ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::getDescription(R
 	return begin+s+end;
 }
 
-QString ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::getDetailedDescription(Rules& r)
+QString ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::getDetailedDescription(const Rules& r) const
 {
 	assert(this->selectedDays.count()==this->selectedHours.count());
 
@@ -17619,35 +17619,35 @@ void ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::removeUseless(Rules
 	activitiesIds=newActs;
 }
 
-bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 
 	return this->activitiesIds.contains(a->id);
 }
 
-bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::isRelatedToTeacher(Teacher* t)
+bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 
 	return false;
 }
 
-bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::isRelatedToSubject(Subject* s)
+bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);
@@ -17816,7 +17816,7 @@ QString ConstraintStudentsSetMaxDaysPerWeek::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintStudentsSetMaxDaysPerWeek::getDetailedDescription(Rules& r){
+QString ConstraintStudentsSetMaxDaysPerWeek::getDetailedDescription(const Rules& r) const {
 	Q_UNUSED(r);
 
 	QString s=tr("Time constraint");s+="\n";
@@ -17891,7 +17891,7 @@ double ConstraintStudentsSetMaxDaysPerWeek::fitness(Solution& c, Rules& r, QList
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintStudentsSetMaxDaysPerWeek::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintStudentsSetMaxDaysPerWeek::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -17899,27 +17899,27 @@ bool ConstraintStudentsSetMaxDaysPerWeek::isRelatedToActivity(Rules& r, Activity
 	return false;
 }
 
-bool ConstraintStudentsSetMaxDaysPerWeek::isRelatedToTeacher(Teacher* t)
+bool ConstraintStudentsSetMaxDaysPerWeek::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 	return false;
 }
 
-bool ConstraintStudentsSetMaxDaysPerWeek::isRelatedToSubject(Subject* s)
+bool ConstraintStudentsSetMaxDaysPerWeek::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsSetMaxDaysPerWeek::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintStudentsSetMaxDaysPerWeek::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsSetMaxDaysPerWeek::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintStudentsSetMaxDaysPerWeek::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	return r.setsShareStudents(this->students, s->name);
 }
@@ -18010,7 +18010,7 @@ QString ConstraintStudentsMaxDaysPerWeek::getDescription(Rules& r){
 	return begin+s+end;
 }
 
-QString ConstraintStudentsMaxDaysPerWeek::getDetailedDescription(Rules& r){
+QString ConstraintStudentsMaxDaysPerWeek::getDetailedDescription(const Rules& r) const {
 	Q_UNUSED(r);
 
 	QString s=tr("Time constraint");s+="\n";
@@ -18083,7 +18083,7 @@ double ConstraintStudentsMaxDaysPerWeek::fitness(Solution& c, Rules& r, QList<do
 	return weightPercentage/100 * nbroken;
 }
 
-bool ConstraintStudentsMaxDaysPerWeek::isRelatedToActivity(Rules& r, Activity* a)
+bool ConstraintStudentsMaxDaysPerWeek::isRelatedToActivity(const Rules& r, const Activity* a) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(a);
@@ -18091,27 +18091,27 @@ bool ConstraintStudentsMaxDaysPerWeek::isRelatedToActivity(Rules& r, Activity* a
 	return false;
 }
 
-bool ConstraintStudentsMaxDaysPerWeek::isRelatedToTeacher(Teacher* t)
+bool ConstraintStudentsMaxDaysPerWeek::isRelatedToTeacher(const Teacher* t) const
 {
 	Q_UNUSED(t);
 	return false;
 }
 
-bool ConstraintStudentsMaxDaysPerWeek::isRelatedToSubject(Subject* s)
+bool ConstraintStudentsMaxDaysPerWeek::isRelatedToSubject(const Subject* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsMaxDaysPerWeek::isRelatedToActivityTag(ActivityTag* s)
+bool ConstraintStudentsMaxDaysPerWeek::isRelatedToActivityTag(const ActivityTag* s) const
 {
 	Q_UNUSED(s);
 
 	return false;
 }
 
-bool ConstraintStudentsMaxDaysPerWeek::isRelatedToStudentsSet(Rules& r, StudentsSet* s)
+bool ConstraintStudentsMaxDaysPerWeek::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
 {
 	Q_UNUSED(r);
 	Q_UNUSED(s);

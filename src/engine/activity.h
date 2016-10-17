@@ -47,9 +47,9 @@ public:
 	QList<int> ids;
 	QList<int> indices; //in the rules internal activities list
 
-	QString getXmlDescription(Rules& r);
-	QString getDescription(Rules& r);
-	QString getDetailedDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
+	QString getDescription(const Rules& r) const;
+	QString getDetailedDescription(const Rules& r) const;
 	
 	void removeUseless(Rules& r);
 };
@@ -262,30 +262,30 @@ public:
 	/**
 	Returns a representation of this activity (xml format).
 	*/
-	QString getXmlDescription(Rules& r);
+	QString getXmlDescription(const Rules& r) const;
 
 	/**
 	Returns a representation of this activity.
 	*/
-	QString getDescription(Rules& r);
+	QString getDescription(const Rules& r) const;
 
 	/**
 	Returns a representation of this activity (more detailed).
 	*/
-	QString getDetailedDescription(Rules& r);
+	QString getDetailedDescription(const Rules& r) const;
 
 	/**
 	Returns a representation of this activity (detailed),
 	together with the constraints related to this activity.
 	*/
-	QString getDetailedDescriptionWithConstraints(Rules& r);
+	QString getDetailedDescriptionWithConstraints(const Rules& r) const;
 
 	/**
 	Returns true if this activity is split into more lessons per week.
 	*/
-	bool isSplit();
+	bool isSplit() const;
 	
-	bool representsComponentNumber(int compNumber);
+	bool representsComponentNumber(int compNumber) const;
 };
 
 #endif

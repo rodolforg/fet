@@ -58,7 +58,7 @@ StudentsYear::~StudentsYear()
 	}*/
 }
 
-QString StudentsYear::getXmlDescription()
+QString StudentsYear::getXmlDescription() const
 {
 	QString s="";
 	s+="<Year>\n";
@@ -74,7 +74,7 @@ QString StudentsYear::getXmlDescription()
 	return s;
 }
 
-QString StudentsYear::getDescription()
+QString StudentsYear::getDescription() const
 {
 	QString s;
 	s+=tr("YN:%1", "Year name").arg(this->name);
@@ -88,7 +88,7 @@ QString StudentsYear::getDescription()
 	return s+end;
 }
 
-QString StudentsYear::getDetailedDescription()
+QString StudentsYear::getDetailedDescription() const
 {
 	QString s="";
 	s+=tr("Students set - year");
@@ -107,7 +107,7 @@ QString StudentsYear::getDetailedDescription()
 	return s;
 }
 
-QString StudentsYear::getDetailedDescriptionWithConstraints(Rules& r)
+QString StudentsYear::getDetailedDescriptionWithConstraints(const Rules &r) const
 {
 	QString s=this->getDetailedDescription();
 
@@ -171,7 +171,7 @@ StudentsGroup::~StudentsGroup()
 	}*/
 }
 
-QString StudentsGroup::getXmlDescription()
+QString StudentsGroup::getXmlDescription() const
 {
 	QString s="";
 	s+="	<Group>\n";
@@ -187,7 +187,7 @@ QString StudentsGroup::getXmlDescription()
 	return s;
 }
 
-QString StudentsGroup::getDescription()
+QString StudentsGroup::getDescription() const
 {
 	QString s="";
 	s+=tr("GN:%1", "Group name").arg(this->name);
@@ -201,7 +201,7 @@ QString StudentsGroup::getDescription()
 	return s+end;
 }
 
-QString StudentsGroup::getDetailedDescription()
+QString StudentsGroup::getDetailedDescription() const
 {
 	QString s="";
 	s+=tr("Students set - group");
@@ -220,7 +220,7 @@ QString StudentsGroup::getDetailedDescription()
 	return s;
 }
 
-QString StudentsGroup::getDetailedDescriptionWithConstraints(Rules& r)
+QString StudentsGroup::getDetailedDescriptionWithConstraints(Rules& r) const
 {
 	QString s=this->getDetailedDescription();
 
@@ -263,7 +263,7 @@ StudentsSubgroup::~StudentsSubgroup()
 {
 }
 
-QString StudentsSubgroup::getXmlDescription()
+QString StudentsSubgroup::getXmlDescription() const
 {
 	QString s="";
 	s+="		<Subgroup>\n";
@@ -275,7 +275,7 @@ QString StudentsSubgroup::getXmlDescription()
 	return s;
 }
 
-QString StudentsSubgroup::getDescription()
+QString StudentsSubgroup::getDescription() const
 {
 	QString s="";
 	s+=tr("SgN:%1", "Subgroup name").arg(this->name);
@@ -289,7 +289,7 @@ QString StudentsSubgroup::getDescription()
 	return s+end;
 }
 
-QString StudentsSubgroup::getDetailedDescription()
+QString StudentsSubgroup::getDetailedDescription() const
 {
 	QString s="";
 	s+=tr("Students set - subgroup");
@@ -308,7 +308,7 @@ QString StudentsSubgroup::getDetailedDescription()
 	return s;
 }
 
-QString StudentsSubgroup::getDetailedDescriptionWithConstraints(Rules& r)
+QString StudentsSubgroup::getDetailedDescriptionWithConstraints(const Rules &r) const
 {
 	QString s=this->getDetailedDescription();
 

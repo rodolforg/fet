@@ -44,10 +44,10 @@ public:
 	ActivityTag();
 	~ActivityTag();
 
-	QString getXmlDescription();
-	QString getDescription();
-	QString getDetailedDescription();
-	QString getDetailedDescriptionWithConstraints(Rules& r);
+	QString getXmlDescription() const;
+	QString getDescription() const;
+	QString getDetailedDescription() const;
+	QString getDetailedDescriptionWithConstraints(const Rules& r) const;
 };
 
 int activityTagsAscending(const ActivityTag* st1, const ActivityTag* st2);

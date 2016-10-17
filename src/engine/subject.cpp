@@ -27,7 +27,7 @@ Subject::~Subject()
 {
 }
 
-QString Subject::getXmlDescription()
+QString Subject::getXmlDescription() const
 {
 	QString s="<Subject>\n";
 	s+="	<Name>"+protect(this->name)+"</Name>\n";
@@ -37,7 +37,7 @@ QString Subject::getXmlDescription()
 	return s;
 }
 
-QString Subject::getDescription()
+QString Subject::getDescription() const
 {
 	QString s=tr("N:%1", "The name of the subject").arg(name);
 	
@@ -48,7 +48,7 @@ QString Subject::getDescription()
 	return s+end;
 }
 
-QString Subject::getDetailedDescription()
+QString Subject::getDetailedDescription() const
 {
 	QString s=tr("Subject");
 	s+="\n";
@@ -64,7 +64,7 @@ QString Subject::getDetailedDescription()
 	return s;
 }
 
-QString Subject::getDetailedDescriptionWithConstraints(Rules& r)
+QString Subject::getDetailedDescriptionWithConstraints(const Rules &r) const
 {
 	QString s=this->getDetailedDescription();
 

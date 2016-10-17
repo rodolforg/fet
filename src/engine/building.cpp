@@ -32,7 +32,7 @@ void Building::computeInternalStructure(Rules& r)
 	Q_UNUSED(r);
 }
 
-QString Building::getDescription()
+QString Building::getDescription() const
 {
 	QString s=tr("N:%1", "The name of the building").arg(name);
 	
@@ -43,7 +43,7 @@ QString Building::getDescription()
 	return s+end;
 }
 
-QString Building::getDetailedDescription()
+QString Building::getDetailedDescription() const
 {
 	QString s=tr("Building");
 	s+="\n";
@@ -59,7 +59,7 @@ QString Building::getDetailedDescription()
 	return s;
 }
 
-QString Building::getXmlDescription()
+QString Building::getXmlDescription() const
 {
 	QString s="<Building>\n";
 	s+="	<Name>"+protect(this->name)+"</Name>\n";
@@ -69,7 +69,7 @@ QString Building::getXmlDescription()
 	return s;
 }
 
-QString Building::getDetailedDescriptionWithConstraints(Rules& r)
+QString Building::getDetailedDescriptionWithConstraints(const Rules &r) const
 {
 	Q_UNUSED(r);
 
