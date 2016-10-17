@@ -17,9 +17,6 @@
 
 #include "studentsset.h"
 #include "rules.h"
-#include "timetable.h"
-
-extern Timetable gt;
 
 StudentsSet::StudentsSet()
 {

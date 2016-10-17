@@ -20,8 +20,6 @@
 
 #include <QCoreApplication>
 
-#include "timetable_defs.h"
-
 #include <QList>
 #include <QString>
 

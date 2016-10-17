@@ -24,8 +24,6 @@ File activity.h
 
 #include <QCoreApplication>
 
-#include "timetable_defs.h"
-
 #include <QString>
 #include <QList>
 #include <QSet>

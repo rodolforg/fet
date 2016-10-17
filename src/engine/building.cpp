@@ -16,7 +16,7 @@
  ***************************************************************************/
 
 #include "building.h"
-#include "rules.h"
+#include "timetable_defs.h" // for protect*()
 
 Building::Building()
 {

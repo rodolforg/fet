@@ -19,11 +19,8 @@ File activity.cpp
  *                                                                         *
  ***************************************************************************/
 
-#include "timetable_defs.h"
 #include "activity.h"
 #include "rules.h"
-
-#include <QSet>
 
 QString getActivityDetailedDescription(Rules& r, int id); //Implemented in timeconstraint.cpp
 
