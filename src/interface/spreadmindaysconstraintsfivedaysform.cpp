@@ -143,7 +143,6 @@ void SpreadMinDaysConstraintsFiveDaysForm::wasAccepted()
 		activityGroupIdHash.insert(act->id, act->activityGroupId);
 	
 	for(int i=0; i<nActs; i++){
-		//qSort(activitiesForRepresentant[i]);
 		std::stable_sort(activitiesForRepresentant[i].begin(), activitiesForRepresentant[i].end());
 		int fid=activitiesForRepresentant[i].at(0);
 		assert(activityGroupIdHash.contains(fid));

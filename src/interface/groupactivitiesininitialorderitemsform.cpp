@@ -416,7 +416,6 @@ void GroupActivitiesInInitialOrderItemsForm::sortItemsByComments()
 	if(t==QMessageBox::Cancel)
 		return;
 	
-	//qStableSort(gt.rules.groupActivitiesInInitialOrderList.begin(), gt.rules.groupActivitiesInInitialOrderList.end(), itemsAscendingByComments);
 	std::stable_sort(gt.rules.groupActivitiesInInitialOrderList.begin(), gt.rules.groupActivitiesInInitialOrderList.end(), itemsAscendingByComments);
 
 	gt.rules.internalStructureComputed=false;

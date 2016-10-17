@@ -8691,7 +8691,6 @@ void sortActivities(QWidget* parent, const QHash<int, int> & reprSameStartingTim
 	//descending by nIncompatible, then by nMinDaysConstraintsBroken
 	//(by nMinDaysConstraintsBroken to alleviate an 'impossible to generate' bug if generating for a fixed timetable).
 	if(gt.rules.groupActivitiesInInitialOrderList.count()==0){
-		//qStableSort(permutation+0, permutation+gt.rules.nInternalActivities, compareFunctionGeneratePre);
 		std::stable_sort(permutation+0, permutation+gt.rules.nInternalActivities, compareFunctionGeneratePre);
 
 		for(int q=1; q<gt.rules.nInternalActivities; q++){
@@ -8749,7 +8748,6 @@ void sortActivities(QWidget* parent, const QHash<int, int> & reprSameStartingTim
 			nIncompatibleFromFather[i]=nInc_i;
 		}
 
-		//qStableSort(permutation+0, permutation+gt.rules.nInternalActivities, compareFunctionGeneratePreWithGroupedActivities);
 		std::stable_sort(permutation+0, permutation+gt.rules.nInternalActivities, compareFunctionGeneratePreWithGroupedActivities);
 		
 		for(int q=1; q<gt.rules.nInternalActivities; q++){

@@ -127,7 +127,6 @@ void RemoveRedundantForm::wasAccepted()
 			a1List.append(m);
 		}
 		
-		//qSort(a1List);
 		std::stable_sort(a1List.begin(), a1List.end());
 		
 		for(int j=i+1; j<mdcList.count(); j++){
@@ -140,7 +139,6 @@ void RemoveRedundantForm::wasAccepted()
 				a2List.append(m);
 			}
 			
-			//qSort(a2List);
 			std::stable_sort(a2List.begin(), a2List.end());
 			
 			bool equal=true;
