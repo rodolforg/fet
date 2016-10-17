@@ -58,6 +58,6 @@ public:
 	QString getDetailedDescriptionWithConstraints(const Rules& r) const;
 };
 
-int teachersAscending(const Teacher* t1, const Teacher* t2);
+bool teachersAscending(const Teacher* t1, const Teacher* t2);
 
 #endif

@@ -64,6 +64,6 @@ public:
 	QString getDetailedDescriptionWithConstraints(const Rules& r) const;
 };
 
-int roomsAscending(const Room* r1, const Room* r2);
+bool roomsAscending(const Room* r1, const Room* r2);
 
 #endif

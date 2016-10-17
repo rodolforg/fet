@@ -112,7 +112,7 @@ QString Teacher::getDetailedDescriptionWithConstraints(Rules& r)
 	return s;
 }
 
-int teachersAscending(const Teacher* t1, const Teacher* t2)
+bool teachersAscending(const Teacher* t1, const Teacher* t2)
 {
 	return t1->name < t2->name;
 }

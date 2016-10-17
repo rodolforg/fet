@@ -410,7 +410,7 @@ void AllTimeConstraintsForm::sortedChanged(bool checked)
 	filterChanged();
 }
 
-static int timeConstraintsAscendingByDescription(TimeConstraint* t1, TimeConstraint* t2)
+static bool timeConstraintsAscendingByDescription(const TimeConstraint* t1, const TimeConstraint* t2)
 {
 	return t1->getDescription(gt.rules) < t2->getDescription(gt.rules);
 }

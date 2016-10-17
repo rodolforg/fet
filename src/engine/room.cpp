@@ -123,7 +123,7 @@ QString Room::getDetailedDescriptionWithConstraints(const Rules &r) const
 	return s;
 }
 
-int roomsAscending(const Room* r1, const Room* r2)
+bool roomsAscending(const Room* r1, const Room* r2)
 {
 	return r1->name < r2->name;
 }

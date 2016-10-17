@@ -399,7 +399,7 @@ void GroupActivitiesInInitialOrderItemsForm::deactivateItem()
 	}
 }
 
-static int itemsAscendingByComments(const GroupActivitiesInInitialOrderItem* item1, const GroupActivitiesInInitialOrderItem* item2)
+static bool itemsAscendingByComments(const GroupActivitiesInInitialOrderItem* item1, const GroupActivitiesInInitialOrderItem* item2)
 {
 	return item1->comments < item2->comments;
 }

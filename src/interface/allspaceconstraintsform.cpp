@@ -362,7 +362,7 @@ void AllSpaceConstraintsForm::sortedChanged(bool checked)
 	filterChanged();
 }
 
-static int spaceConstraintsAscendingByDescription(SpaceConstraint* s1, SpaceConstraint* s2)
+static bool spaceConstraintsAscendingByDescription(const SpaceConstraint* s1, const SpaceConstraint* s2)
 {
 	return s1->getDescription(gt.rules) < s2->getDescription(gt.rules);
 }

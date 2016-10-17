@@ -94,7 +94,7 @@ QString ActivityTag::getDetailedDescriptionWithConstraints(const Rules &r) const
 	return s;
 }
 
-int activityTagsAscending(const ActivityTag* st1, const ActivityTag* st2)
+bool activityTagsAscending(const ActivityTag* st1, const ActivityTag* st2)
 {
 	return st1->name < st2->name;
 }

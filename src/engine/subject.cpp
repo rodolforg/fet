@@ -94,7 +94,7 @@ QString Subject::getDetailedDescriptionWithConstraints(const Rules &r) const
 	return s;
 }
 
-int subjectsAscending(const Subject* s1, const Subject* s2)
+bool subjectsAscending(const Subject* s1, const Subject* s2)
 {
 	return s1->name < s2->name;
 }

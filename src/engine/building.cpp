@@ -90,7 +90,7 @@ QString Building::getDetailedDescriptionWithConstraints(const Rules &r) const
 	return s;
 }
 
-int buildingsAscending (const Building* b1, const Building* b2)
+bool buildingsAscending(const Building* b1, const Building* b2)
 {
 	return b1->name < b2->name;
 }

@@ -338,17 +338,17 @@ QString StudentsSubgroup::getDetailedDescriptionWithConstraints(const Rules &r) 
 	return s;
 }
 
-int yearsAscending(const StudentsYear* y1, const StudentsYear* y2)
+bool yearsAscending(const StudentsYear* y1, const StudentsYear* y2)
 {
 	return y1->name < y2->name;
 }
 
-int groupsAscending(const StudentsGroup* g1, const StudentsGroup* g2)
+bool groupsAscending(const StudentsGroup* g1, const StudentsGroup* g2)
 {
 	return g1->name < g2->name;
 }
 
-int subgroupsAscending(const StudentsSubgroup* s1, const StudentsSubgroup* s2)
+bool subgroupsAscending(const StudentsSubgroup* s1, const StudentsSubgroup* s2)
 {
 	return s1->name < s2->name;
 }

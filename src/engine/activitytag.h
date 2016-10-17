@@ -50,6 +50,6 @@ public:
 	QString getDetailedDescriptionWithConstraints(const Rules& r) const;
 };
 
-int activityTagsAscending(const ActivityTag* st1, const ActivityTag* st2);
+bool activityTagsAscending(const ActivityTag* st1, const ActivityTag* st2);
 
 #endif

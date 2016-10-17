@@ -53,6 +53,6 @@ public:
 	QString getDetailedDescriptionWithConstraints(const Rules& r) const;
 };
 
-int buildingsAscending(const Building* b1, const Building* b2);
+bool buildingsAscending(const Building* b1, const Building* b2);
 
 #endif

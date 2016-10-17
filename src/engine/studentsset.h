@@ -113,10 +113,10 @@ public:
 	QString getDetailedDescriptionWithConstraints(const Rules& r) const;
 };
 
-int yearsAscending(const StudentsYear* y1, const StudentsYear* y2);
+bool yearsAscending(const StudentsYear* y1, const StudentsYear* y2);
 
-int groupsAscending(const StudentsGroup* g1, const StudentsGroup* g2);
+bool groupsAscending(const StudentsGroup* g1, const StudentsGroup* g2);
 
-int subgroupsAscending(const StudentsSubgroup* s1, const StudentsSubgroup* s2);
+bool subgroupsAscending(const StudentsSubgroup* s1, const StudentsSubgroup* s2);
 
 #endif
