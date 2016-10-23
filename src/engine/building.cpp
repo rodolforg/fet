@@ -60,7 +60,7 @@ QString Building::getDetailedDescription() const
 QString Building::getXmlDescription() const
 {
 	QString s="<Building>\n";
-	s+="	<Name>"+protect(this->name)+"</Name>\n";
+	s+="	<Name>"+protect(name)+"</Name>\n";
 	s+="	<Comments>"+protect(comments)+"</Comments>\n";
 	s+="</Building>\n";
 

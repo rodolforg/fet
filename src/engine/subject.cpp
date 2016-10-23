@@ -29,7 +29,7 @@ Subject::~Subject()
 QString Subject::getXmlDescription() const
 {
 	QString s="<Subject>\n";
-	s+="	<Name>"+protect(this->name)+"</Name>\n";
+	s+="	<Name>"+protect(name)+"</Name>\n";
 	s+="	<Comments>"+protect(comments)+"</Comments>\n";
 	s+="</Subject>\n";
 
