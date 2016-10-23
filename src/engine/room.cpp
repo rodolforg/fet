@@ -29,7 +29,7 @@ Room::~Room()
 {
 }
 
-void Room::computeInternalStructure(Rules& r)
+void Room::computeInternalStructure(const Rules& r)
 {
 	if(building=="")
 		buildingIndex=-1;

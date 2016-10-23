@@ -34,7 +34,7 @@ GroupActivitiesInInitialOrderItem::~GroupActivitiesInInitialOrderItem()
 {
 }
 
-void GroupActivitiesInInitialOrderItem::removeUseless(Rules& r)
+void GroupActivitiesInInitialOrderItem::removeUseless(const Rules& r)
 {
 	QList<int> tmpList;
 	
@@ -171,9 +171,7 @@ Activity::Activity()
 	}
 }*/
 
-Activity::Activity(
-	Rules& r,
-	int _id,
+Activity::Activity(int _id,
 	int _activityGroupId,
 	const QStringList& _teachersNames,
 	const QString& _subjectName,
@@ -186,9 +184,6 @@ Activity::Activity(
 	int _nTotalStudents,
 	int _computedNumberOfStudents)
 {
-	Q_UNUSED(r);
-	//Q_UNUSED(_nTotalStudents);
-
 	comments=QString("");
 
 	this->id=_id;
@@ -210,7 +205,7 @@ Activity::Activity(
 	this->nTotalStudents=_computedNumberOfStudents;
 }
 
-bool Activity::operator==(Activity& a)
+bool Activity::operator==(const Activity& a) const
 {
 	if(this->teachersNames != a.teachersNames)
 		return false;
@@ -227,7 +222,7 @@ bool Activity::operator==(Activity& a)
 	return true;
 }
 
-bool Activity::searchTeacher(const QString& teacherName)
+bool Activity::searchTeacher(const QString& teacherName) const
 {
 	return this->teachersNames.indexOf(teacherName)!=-1;
 }
@@ -252,7 +247,7 @@ void Activity::renameTeacher(const QString& initialTeacherName, const QString& f
 	assert(t<=1);
 }
 
-bool Activity::searchStudents(const QString& studentsName)
+bool Activity::searchStudents(const QString& studentsName) const
 {
 	return this->studentsNames.indexOf(studentsName)!=-1;
 }

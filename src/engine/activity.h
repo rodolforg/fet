@@ -51,7 +51,7 @@ public:
 	QString getDescription(const Rules& r) const;
 	QString getDetailedDescription(const Rules& r) const;
 	
-	void removeUseless(Rules& r);
+	void removeUseless(const Rules &r);
 };
 
 typedef QList<GroupActivitiesInInitialOrderItem*> GroupActivitiesInInitialOrderList;
@@ -145,7 +145,7 @@ public:
 	and the activity group id of both of them is 0 or of both of them is != 0, returns true.
 	TODO: add a more intelligent comparison
 	*/
-	bool operator==(Activity &a);
+	bool operator==(const Activity &a) const;
 
 	//internal structure
 	
@@ -214,9 +214,7 @@ public:
 		
 	//deprecated comment below - this function is used in more places.
 	//this is used only when reading a file (Rules), so that the computed number of students is known faster
-	Activity(
-		Rules& r,
-		int _id,
+	Activity(int _id,
 		int _activityGroupId,
 		const QStringList& _teachersNames,
 		const QString& _subjectName,
@@ -230,7 +228,7 @@ public:
 		int _nTotalStudents,
 		int _computedNumberOfStudents);
 		
-	bool searchTeacher(const QString& teacherName);
+	bool searchTeacher(const QString& teacherName) const;
 
 	/**
 	Removes this teacher from the list of teachers
@@ -242,7 +240,7 @@ public:
 	*/
 	void renameTeacher(const QString& initialTeacherName, const QString& finalTeacherName);
 	
-	bool searchStudents(const QString& studentsName);
+	bool searchStudents(const QString& studentsName) const;
 
 	/**
 	Removes this students set from the list of students

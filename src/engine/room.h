@@ -56,7 +56,7 @@ public:
 	Room();
 	~Room();
 	
-	void computeInternalStructure(Rules& r);
+	void computeInternalStructure(const Rules &r);
 
 	QString getXmlDescription() const;
 	QString getDescription() const;

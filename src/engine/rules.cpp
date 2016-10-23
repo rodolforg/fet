@@ -2772,7 +2772,7 @@ bool Rules::addSimpleActivityFast(
 		RulesReconcilableMessage::warning(parent, tr("FET warning"), tr("Activity with Id=%1 contains %2 duplicate activity tags - please correct that")
 		 .arg(_id).arg(t));
 
-	Activity *act=new Activity(*this, _id, _activityGroupId, _teachersNames, _subjectName, _activityTagsNames,
+	Activity *act=new Activity(_id, _activityGroupId, _teachersNames, _subjectName, _activityTagsNames,
 		_studentsNames, _duration, _totalDuration, _active, _computeNTotalStudents, _nTotalStudents, _computedNumberOfStudents);
 
 	this->activitiesList << act; //append
@@ -2914,7 +2914,7 @@ bool Rules::addSplitActivityFast(
 
 	acts.clear();
 	for(int i=0; i<_nSplits; i++){
-		Activity *act=new Activity(*this, _firstActivityId+i, _activityGroupId,
+		Activity *act=new Activity(_firstActivityId+i, _activityGroupId,
 		 _teachersNames, _subjectName, _activityTagsNames, _studentsNames,
 		 _durations[i], _totalDuration, _active[i], _computeNTotalStudents, _nTotalStudents, _computedNumberOfStudents);
 
@@ -3310,7 +3310,7 @@ bool Rules::addBuildingFast(Building* bu)
 	return true;
 }
 
-int Rules::searchBuilding(const QString& buildingName)
+int Rules::searchBuilding(const QString& buildingName) const
 {
 	for(int i=0; i<this->buildingsList.size(); i++)
 		if(this->buildingsList[i]->name==buildingName)

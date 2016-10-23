@@ -656,7 +656,7 @@ void AddActivityForm::addActivity()
 				activityid = act->id;
 		}
 		activityid++;
-		Activity a(gt.rules, activityid, 0, teachers_names, subject_name, activity_tags_names, students_names,
+		Activity a(activityid, 0, teachers_names, subject_name, activity_tags_names, students_names,
 			duration, duration, /*parity,*/ active, (nStudentsSpinBox->value()==-1), nStudentsSpinBox->value(), numberOfStudents);
 
 		bool already_existing=false;

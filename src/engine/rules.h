@@ -661,7 +661,7 @@ public:
 	/**
 	Returns -1 if not found or the index in the buildings list if found.
 	*/
-	int searchBuilding(const QString& buildingName);
+	int searchBuilding(const QString& buildingName) const;
 
 	/**
 	Removes the building with this name.
