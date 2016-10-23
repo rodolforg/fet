@@ -40,18 +40,17 @@ QString Subject::getDescription() const
 {
 	QString s=tr("N:%1", "The name of the subject").arg(name);
 	
-	QString end=QString("");
 	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
+		s+=", "+tr("C: %1", "Comments").arg(comments);
 	
-	return s+end;
+	return s;
 }
 
 QString Subject::getDetailedDescription() const
 {
 	QString s=tr("Subject");
 	s+="\n";
-	s+=tr("Name=%1", "The name of the subject").arg(this->name);
+	s+=tr("Name=%1", "The name of the subject").arg(name);
 	s+="\n";
 
 	//Has comments?

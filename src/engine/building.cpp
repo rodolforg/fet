@@ -35,18 +35,17 @@ QString Building::getDescription() const
 {
 	QString s=tr("N:%1", "The name of the building").arg(name);
 	
-	QString end=QString("");
 	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
+		s+=", "+tr("C: %1", "Comments").arg(comments);
 	
-	return s+end;
+	return s;
 }
 
 QString Building::getDetailedDescription() const
 {
 	QString s=tr("Building");
 	s+="\n";
-	s+=tr("Name=%1", "The name of the building").arg(this->name);
+	s+=tr("Name=%1", "The name of the building").arg(name);
 	s+="\n";
 
 	//Has comments?

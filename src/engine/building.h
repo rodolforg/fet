@@ -22,7 +22,6 @@
 
 #include <QString>
 #include <QList>
-#include <QStringList>
 
 class Building;
 class Rules;

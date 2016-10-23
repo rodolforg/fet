@@ -732,7 +732,6 @@ bool Activity::representsComponentNumber(int index) const
 {
 	if(this->activityGroupId==0)
 		return index==1;
-		//return false;
 		
 	//assert(this->activityGroupId>0);
 	

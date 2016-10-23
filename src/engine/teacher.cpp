@@ -46,18 +46,17 @@ QString Teacher::getDescription() const
 {
 	QString s=tr("N:%1", "The name of the teacher").arg(name);
 	
-	QString end=QString("");
 	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
+		s+=", "+tr("C: %1", "Comments").arg(comments);
 	
-	return s+end;
+	return s;
 }
 
 QString Teacher::getDetailedDescription() const
 {
 	QString s=tr("Teacher");
 	s+="\n";
-	s+=tr("Name=%1", "The name of the teacher").arg(this->name);
+	s+=tr("Name=%1", "The name of the teacher").arg(name);
 	s+="\n";
 	
 	s+=tr("Target number of hours=%1", "The target number of hours for the teacher").arg(targetNumberOfHours);
