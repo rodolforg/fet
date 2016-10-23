@@ -118,7 +118,7 @@ public:
 	 * @param _d1 the new dimension size
 	 */
 	void resize(int _d1);
-	T& operator[](int i);
+	T& operator[](int i) const;
 };
 
 
@@ -279,7 +279,7 @@ template <typename T> void Matrix1D<T>::resize(int _d1)
 	}
 }
 
-template <typename T> inline T& Matrix1D<T>::operator[](int i)
+template <typename T> inline T& Matrix1D<T>::operator[](int i) const
 {
 	return a[i];
 }

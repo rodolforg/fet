@@ -96,7 +96,7 @@ QString getActivityDetailedDescription(const Rules& r, int id)
 
 	Activity* act=r.activitiesList.at(ai);*/
 
-	Activity* act=r.activitiesPointerHash.value(id, NULL);
+	const Activity* act=r.activitiesPointerHash.value(id, NULL);
 	if(act==NULL){
 		s+=QCoreApplication::translate("Activity", "Invalid (inexistent) id for activity");
 		return s;
@@ -216,7 +216,7 @@ QString ConstraintBasicCompulsoryTime::getDetailedDescription(const Rules& r) co
 	return s;
 }
 
-double ConstraintBasicCompulsoryTime::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString){
+double ConstraintBasicCompulsoryTime::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString){
 	assert(r.internalStructureComputed);
 
 	int teachersConflicts, subgroupsConflicts;
@@ -582,7 +582,7 @@ bool ConstraintTeacherNotAvailableTimes::hasInactiveActivities(const Rules& r) c
 	return false;
 }
 
-double ConstraintTeacherNotAvailableTimes::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString *conflictsString)
+double ConstraintTeacherNotAvailableTimes::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString *conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -905,7 +905,7 @@ QString ConstraintStudentsSetNotAvailableTimes::getDetailedDescription(const Rul
 	return s;
 }
 
-double ConstraintStudentsSetNotAvailableTimes::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString *conflictsString)
+double ConstraintStudentsSetNotAvailableTimes::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString *conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -1193,7 +1193,7 @@ QString ConstraintActivitiesSameStartingTime::getDetailedDescription(const Rules
 	return s;
 }
 
-double ConstraintActivitiesSameStartingTime::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintActivitiesSameStartingTime::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	assert(r.internalStructureComputed);
 
@@ -1466,7 +1466,7 @@ QString ConstraintActivitiesNotOverlapping::getDetailedDescription(const Rules& 
 	return s;
 }
 
-double ConstraintActivitiesNotOverlapping::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintActivitiesNotOverlapping::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	assert(r.internalStructureComputed);
 
@@ -1776,7 +1776,7 @@ QString ConstraintMinDaysBetweenActivities::getDetailedDescription(const Rules& 
 	return s;
 }
 
-double ConstraintMinDaysBetweenActivities::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintMinDaysBetweenActivities::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	assert(r.internalStructureComputed);
 
@@ -2078,7 +2078,7 @@ QString ConstraintMaxDaysBetweenActivities::getDetailedDescription(const Rules& 
 	return s;
 }
 
-double ConstraintMaxDaysBetweenActivities::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintMaxDaysBetweenActivities::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	assert(r.internalStructureComputed);
 
@@ -2372,7 +2372,7 @@ QString ConstraintMinGapsBetweenActivities::getDetailedDescription(const Rules& 
 	return s;
 }
 
-double ConstraintMinGapsBetweenActivities::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintMinGapsBetweenActivities::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	assert(r.internalStructureComputed);
 
@@ -2592,7 +2592,7 @@ QString ConstraintTeachersMaxHoursDaily::getDetailedDescription(const Rules& r) 
 	return s;
 }
 
-double ConstraintTeachersMaxHoursDaily::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintTeachersMaxHoursDaily::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -2794,7 +2794,7 @@ QString ConstraintTeacherMaxHoursDaily::getDetailedDescription(const Rules& r) c
 	return s;
 }
 
-double ConstraintTeacherMaxHoursDaily::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintTeacherMaxHoursDaily::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -2988,7 +2988,7 @@ QString ConstraintTeachersMaxHoursContinuously::getDetailedDescription(const Rul
 	return s;
 }
 
-double ConstraintTeachersMaxHoursContinuously::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintTeachersMaxHoursContinuously::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -3217,7 +3217,7 @@ QString ConstraintTeacherMaxHoursContinuously::getDetailedDescription(const Rule
 	return s;
 }
 
-double ConstraintTeacherMaxHoursContinuously::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintTeacherMaxHoursContinuously::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -3460,7 +3460,7 @@ QString ConstraintTeachersActivityTagMaxHoursContinuously::getDetailedDescriptio
 	return s;
 }
 
-double ConstraintTeachersActivityTagMaxHoursContinuously::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintTeachersActivityTagMaxHoursContinuously::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -3730,7 +3730,7 @@ QString ConstraintTeacherActivityTagMaxHoursContinuously::getDetailedDescription
 	return s;
 }
 
-double ConstraintTeacherActivityTagMaxHoursContinuously::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintTeacherActivityTagMaxHoursContinuously::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -3978,7 +3978,7 @@ QString ConstraintTeacherMaxDaysPerWeek::getDetailedDescription(const Rules& r) 
 	return s;
 }
 
-double ConstraintTeacherMaxDaysPerWeek::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString *conflictsString)
+double ConstraintTeacherMaxDaysPerWeek::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString *conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -4180,7 +4180,7 @@ QString ConstraintTeachersMaxDaysPerWeek::getDetailedDescription(const Rules& r)
 	return s;
 }
 
-double ConstraintTeachersMaxDaysPerWeek::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString *conflictsString)
+double ConstraintTeachersMaxDaysPerWeek::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString *conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -4389,7 +4389,7 @@ QString ConstraintTeachersMaxGapsPerWeek::getDetailedDescription(const Rules& r)
 	return s;
 }
 
-double ConstraintTeachersMaxGapsPerWeek::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintTeachersMaxGapsPerWeek::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 { 
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -4599,7 +4599,7 @@ QString ConstraintTeacherMaxGapsPerWeek::getDetailedDescription(const Rules& r) 
 	return s;
 }
 
-double ConstraintTeacherMaxGapsPerWeek::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintTeacherMaxGapsPerWeek::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 { 
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -4802,7 +4802,7 @@ QString ConstraintTeachersMaxGapsPerDay::getDetailedDescription(const Rules& r) 
 	return s;
 }
 
-double ConstraintTeachersMaxGapsPerDay::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintTeachersMaxGapsPerDay::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 { 
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -5011,7 +5011,7 @@ QString ConstraintTeacherMaxGapsPerDay::getDetailedDescription(const Rules& r) c
 	return s;
 }
 
-double ConstraintTeacherMaxGapsPerDay::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintTeacherMaxGapsPerDay::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 { 
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -5265,7 +5265,7 @@ bool ConstraintBreakTimes::computeInternalStructure(QWidget* parent, Rules& r)
 	return true;
 }
 
-double ConstraintBreakTimes::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintBreakTimes::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -5491,7 +5491,7 @@ QString ConstraintStudentsMaxGapsPerWeek::getDetailedDescription(const Rules& r)
 	return s;
 }
 
-double ConstraintStudentsMaxGapsPerWeek::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintStudentsMaxGapsPerWeek::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//returns a number equal to the number of gaps of the subgroups (in hours)
 
@@ -5752,7 +5752,7 @@ QString ConstraintStudentsSetMaxGapsPerWeek::getDetailedDescription(const Rules&
 	return s;
 }
 
-double ConstraintStudentsSetMaxGapsPerWeek::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintStudentsSetMaxGapsPerWeek::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//OLD COMMENT
 	//returns a number equal to the number of gaps of the subgroups (in hours)
@@ -5963,7 +5963,7 @@ QString ConstraintStudentsEarlyMaxBeginningsAtSecondHour::getDetailedDescription
 	return s;
 }
 
-double ConstraintStudentsEarlyMaxBeginningsAtSecondHour::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintStudentsEarlyMaxBeginningsAtSecondHour::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//considers the condition that the hours of subgroups begin as early as possible
 
@@ -6258,7 +6258,7 @@ QString ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::getDetailedDescript
 	return s;
 }
 
-double ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//considers the condition that the hours of subgroups begin as early as possible
 
@@ -6497,7 +6497,7 @@ QString ConstraintStudentsMaxHoursDaily::getDetailedDescription(const Rules& r) 
 	return s;
 }
 
-double ConstraintStudentsMaxHoursDaily::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintStudentsMaxHoursDaily::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -6751,7 +6751,7 @@ bool ConstraintStudentsSetMaxHoursDaily::computeInternalStructure(QWidget* paren
 	return true;
 }
 
-double ConstraintStudentsSetMaxHoursDaily::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintStudentsSetMaxHoursDaily::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -6953,7 +6953,7 @@ QString ConstraintStudentsMaxHoursContinuously::getDetailedDescription(const Rul
 	return s;
 }
 
-double ConstraintStudentsMaxHoursContinuously::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintStudentsMaxHoursContinuously::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -7231,7 +7231,7 @@ bool ConstraintStudentsSetMaxHoursContinuously::computeInternalStructure(QWidget
 	return true;
 }
 
-double ConstraintStudentsSetMaxHoursContinuously::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintStudentsSetMaxHoursContinuously::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -7480,7 +7480,7 @@ QString ConstraintStudentsActivityTagMaxHoursContinuously::getDetailedDescriptio
 	return s;
 }
 
-double ConstraintStudentsActivityTagMaxHoursContinuously::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintStudentsActivityTagMaxHoursContinuously::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -7803,7 +7803,7 @@ bool ConstraintStudentsSetActivityTagMaxHoursContinuously::computeInternalStruct
 	return true;
 }
 
-double ConstraintStudentsSetActivityTagMaxHoursContinuously::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintStudentsSetActivityTagMaxHoursContinuously::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -8066,7 +8066,7 @@ QString ConstraintStudentsMinHoursDaily::getDetailedDescription(const Rules& r) 
 	return s;
 }
 
-double ConstraintStudentsMinHoursDaily::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintStudentsMinHoursDaily::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -8344,7 +8344,7 @@ bool ConstraintStudentsSetMinHoursDaily::computeInternalStructure(QWidget* paren
 	return true;
 }
 
-double ConstraintStudentsSetMinHoursDaily::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintStudentsSetMinHoursDaily::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -8633,7 +8633,7 @@ QString ConstraintActivityPreferredStartingTime::getDetailedDescription(const Ru
 	return s;
 }
 
-double ConstraintActivityPreferredStartingTime::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintActivityPreferredStartingTime::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -8914,7 +8914,7 @@ QString ConstraintActivityPreferredTimeSlots::getDetailedDescription(const Rules
 	return s;
 }
 
-double ConstraintActivityPreferredTimeSlots::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintActivityPreferredTimeSlots::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -9379,7 +9379,7 @@ QString ConstraintActivitiesPreferredTimeSlots::getDetailedDescription(const Rul
 	return s;
 }
 
-double ConstraintActivitiesPreferredTimeSlots::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintActivitiesPreferredTimeSlots::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -9870,7 +9870,7 @@ QString ConstraintSubactivitiesPreferredTimeSlots::getDetailedDescription(const 
 	return s;
 }
 
-double ConstraintSubactivitiesPreferredTimeSlots::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintSubactivitiesPreferredTimeSlots::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -10217,7 +10217,7 @@ QString ConstraintActivityPreferredStartingTimes::getDetailedDescription(const R
 	return s;
 }
 
-double ConstraintActivityPreferredStartingTimes::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintActivityPreferredStartingTimes::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -10672,7 +10672,7 @@ QString ConstraintActivitiesPreferredStartingTimes::getDetailedDescription(const
 	return s;
 }
 
-double ConstraintActivitiesPreferredStartingTimes::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintActivitiesPreferredStartingTimes::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -11147,7 +11147,7 @@ QString ConstraintSubactivitiesPreferredStartingTimes::getDetailedDescription(co
 	return s;
 }
 
-double ConstraintSubactivitiesPreferredStartingTimes::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintSubactivitiesPreferredStartingTimes::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -11479,7 +11479,7 @@ QString ConstraintActivitiesSameStartingHour::getDetailedDescription(const Rules
 	return s;
 }
 
-double ConstraintActivitiesSameStartingHour::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintActivitiesSameStartingHour::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	assert(r.internalStructureComputed);
 
@@ -11753,7 +11753,7 @@ QString ConstraintActivitiesSameStartingDay::getDetailedDescription(const Rules&
 	return s;
 }
 
-double ConstraintActivitiesSameStartingDay::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintActivitiesSameStartingDay::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	assert(r.internalStructureComputed);
 
@@ -12010,7 +12010,7 @@ QString ConstraintTwoActivitiesConsecutive::getDetailedDescription(const Rules& 
 	return s;
 }
 
-double ConstraintTwoActivitiesConsecutive::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintTwoActivitiesConsecutive::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -12283,7 +12283,7 @@ QString ConstraintTwoActivitiesGrouped::getDetailedDescription(const Rules& r) c
 	return s;
 }
 
-double ConstraintTwoActivitiesGrouped::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintTwoActivitiesGrouped::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -12598,7 +12598,7 @@ QString ConstraintThreeActivitiesGrouped::getDetailedDescription(const Rules& r)
 	return s;
 }
 
-double ConstraintThreeActivitiesGrouped::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintThreeActivitiesGrouped::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -12936,7 +12936,7 @@ QString ConstraintTwoActivitiesOrdered::getDetailedDescription(const Rules& r) c
 	return s;
 }
 
-double ConstraintTwoActivitiesOrdered::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintTwoActivitiesOrdered::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -13149,7 +13149,7 @@ QString ConstraintActivityEndsStudentsDay::getDetailedDescription(const Rules& r
 	return s;
 }
 
-double ConstraintActivityEndsStudentsDay::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintActivityEndsStudentsDay::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -13362,7 +13362,7 @@ QString ConstraintTeachersMinHoursDaily::getDetailedDescription(const Rules& r) 
 	return s;
 }
 
-double ConstraintTeachersMinHoursDaily::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintTeachersMinHoursDaily::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -13585,7 +13585,7 @@ QString ConstraintTeacherMinHoursDaily::getDetailedDescription(const Rules& r) c
 	return s;
 }
 
-double ConstraintTeacherMinHoursDaily::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintTeacherMinHoursDaily::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -13789,7 +13789,7 @@ QString ConstraintTeacherMinDaysPerWeek::getDetailedDescription(const Rules& r) 
 	return s;
 }
 
-double ConstraintTeacherMinDaysPerWeek::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintTeacherMinDaysPerWeek::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -13985,7 +13985,7 @@ QString ConstraintTeachersMinDaysPerWeek::getDetailedDescription(const Rules& r)
 	return s;
 }
 
-double ConstraintTeachersMinDaysPerWeek::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintTeachersMinDaysPerWeek::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -14233,7 +14233,7 @@ QString ConstraintTeacherIntervalMaxDaysPerWeek::getDetailedDescription(const Ru
 	return s;
 }
 
-double ConstraintTeacherIntervalMaxDaysPerWeek::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString *conflictsString)
+double ConstraintTeacherIntervalMaxDaysPerWeek::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString *conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -14483,7 +14483,7 @@ QString ConstraintTeachersIntervalMaxDaysPerWeek::getDetailedDescription(const R
 	return s;
 }
 
-double ConstraintTeachersIntervalMaxDaysPerWeek::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString *conflictsString)
+double ConstraintTeachersIntervalMaxDaysPerWeek::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString *conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -14791,7 +14791,7 @@ QString ConstraintStudentsSetIntervalMaxDaysPerWeek::getDetailedDescription(cons
 	return s;
 }
 
-double ConstraintStudentsSetIntervalMaxDaysPerWeek::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString *conflictsString)
+double ConstraintStudentsSetIntervalMaxDaysPerWeek::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString *conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -15038,7 +15038,7 @@ QString ConstraintStudentsIntervalMaxDaysPerWeek::getDetailedDescription(const R
 	return s;
 }
 
-double ConstraintStudentsIntervalMaxDaysPerWeek::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString *conflictsString)
+double ConstraintStudentsIntervalMaxDaysPerWeek::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString *conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -15348,7 +15348,7 @@ QString ConstraintActivitiesEndStudentsDay::getDetailedDescription(const Rules& 
 	return s;
 }
 
-double ConstraintActivitiesEndStudentsDay::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintActivitiesEndStudentsDay::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -15593,7 +15593,7 @@ QString ConstraintTeachersActivityTagMaxHoursDaily::getDetailedDescription(const
 	return s;
 }
 
-double ConstraintTeachersActivityTagMaxHoursDaily::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintTeachersActivityTagMaxHoursDaily::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -15833,7 +15833,7 @@ QString ConstraintTeacherActivityTagMaxHoursDaily::getDetailedDescription(const 
 	return s;
 }
 
-double ConstraintTeacherActivityTagMaxHoursDaily::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintTeacherActivityTagMaxHoursDaily::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -16075,7 +16075,7 @@ QString ConstraintStudentsActivityTagMaxHoursDaily::getDetailedDescription(const
 	return s;
 }
 
-double ConstraintStudentsActivityTagMaxHoursDaily::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintStudentsActivityTagMaxHoursDaily::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -16367,7 +16367,7 @@ bool ConstraintStudentsSetActivityTagMaxHoursDaily::computeInternalStructure(QWi
 	return true;
 }
 
-double ConstraintStudentsSetActivityTagMaxHoursDaily::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintStudentsSetActivityTagMaxHoursDaily::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -16581,7 +16581,7 @@ QString ConstraintStudentsMaxGapsPerDay::getDetailedDescription(const Rules& r) 
 	return s;
 }
 
-double ConstraintStudentsMaxGapsPerDay::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintStudentsMaxGapsPerDay::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//returns a number equal to the number of gaps of the subgroups (in hours)
 
@@ -16846,7 +16846,7 @@ QString ConstraintStudentsSetMaxGapsPerDay::getDetailedDescription(const Rules& 
 	return s;
 }
 
-double ConstraintStudentsSetMaxGapsPerDay::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintStudentsSetMaxGapsPerDay::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//OLD COMMENT
 	//returns a number equal to the number of gaps of the subgroups (in hours)
@@ -17171,7 +17171,7 @@ QString ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::getDetailedDescript
 	return s;
 }
 
-double ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -17538,7 +17538,7 @@ QString ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::getDetailedDescr
 	return s;
 }
 
-double ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
+double ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -17838,7 +17838,7 @@ QString ConstraintStudentsSetMaxDaysPerWeek::getDetailedDescription(const Rules&
 	return s;
 }
 
-double ConstraintStudentsSetMaxDaysPerWeek::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString *conflictsString)
+double ConstraintStudentsSetMaxDaysPerWeek::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString *conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){
@@ -18030,7 +18030,7 @@ QString ConstraintStudentsMaxDaysPerWeek::getDetailedDescription(const Rules& r)
 	return s;
 }
 
-double ConstraintStudentsMaxDaysPerWeek::fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString *conflictsString)
+double ConstraintStudentsMaxDaysPerWeek::fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>&dl, QString *conflictsString)
 {
 	//if the matrices subgroupsMatrix and teachersMatrix are already calculated, do not calculate them again!
 	if(!c.teachersMatrixReady || !c.subgroupsMatrixReady){

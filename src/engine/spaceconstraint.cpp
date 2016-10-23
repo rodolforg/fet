@@ -180,7 +180,7 @@ QString ConstraintBasicCompulsorySpace::getDetailedDescription(const Rules& r) c
 
 double ConstraintBasicCompulsorySpace::fitness(
 	Solution& c,
-	Rules& r,
+	const Rules& r,
 	QList<double>& cl,
 	QList<QString>& dl,
 	QString* conflictsString)
@@ -510,7 +510,7 @@ bool ConstraintRoomNotAvailableTimes::computeInternalStructure(QWidget* parent, 
 
 double ConstraintRoomNotAvailableTimes::fitness(
 	Solution& c,
-	Rules& r,
+	const Rules& r,
 	QList<double>& cl,
 	QList<QString>& dl,
 	QString* conflictsString)
@@ -803,7 +803,7 @@ QString ConstraintActivityPreferredRoom::getDetailedDescription(const Rules& r) 
 
 double ConstraintActivityPreferredRoom::fitness(
 	Solution& c,
-	Rules& r,
+	const Rules& r,
 	QList<double>& cl,
 	QList<QString>& dl,
 	QString* conflictsString)
@@ -1048,7 +1048,7 @@ QString ConstraintActivityPreferredRooms::getDetailedDescription(const Rules& r)
 
 double ConstraintActivityPreferredRooms::fitness(
 	Solution& c,
-	Rules& r,
+	const Rules& r,
 	QList<double>& cl,
 	QList<QString>& dl,
 	QString* conflictsString)
@@ -1302,7 +1302,7 @@ QString ConstraintStudentsSetHomeRoom::getDetailedDescription(const Rules& r) co
 
 double ConstraintStudentsSetHomeRoom::fitness(
 	Solution& c,
-	Rules& r,
+	const Rules& r,
 	QList<double>& cl,
 	QList<QString>& dl,
 	QString* conflictsString)
@@ -1585,7 +1585,7 @@ QString ConstraintStudentsSetHomeRooms::getDetailedDescription(const Rules& r) c
 
 double ConstraintStudentsSetHomeRooms::fitness(
 	Solution& c,
-	Rules& r,
+	const Rules& r,
 	QList<double>& cl,
 	QList<QString>& dl,
 	QString* conflictsString)
@@ -1857,7 +1857,7 @@ QString ConstraintTeacherHomeRoom::getDetailedDescription(const Rules& r) const
 
 double ConstraintTeacherHomeRoom::fitness(
 	Solution& c,
-	Rules& r,
+	const Rules& r,
 	QList<double>& cl,
 	QList<QString>& dl,
 	QString* conflictsString)
@@ -2138,7 +2138,7 @@ QString ConstraintTeacherHomeRooms::getDetailedDescription(const Rules& r) const
 
 double ConstraintTeacherHomeRooms::fitness(
 	Solution& c,
-	Rules& r,
+	const Rules& r,
 	QList<double>& cl,
 	QList<QString>& dl,
 	QString* conflictsString)
@@ -2385,7 +2385,7 @@ QString ConstraintSubjectPreferredRoom::getDetailedDescription(const Rules& r) c
 
 double ConstraintSubjectPreferredRoom::fitness(
 	Solution& c,
-	Rules& r,
+	const Rules& r,
 	QList<double>& cl,
 	QList<QString>& dl,
 	QString* conflictsString)
@@ -2632,7 +2632,7 @@ QString ConstraintSubjectPreferredRooms::getDetailedDescription(const Rules& r) 
 
 double ConstraintSubjectPreferredRooms::fitness(
 	Solution& c,
-	Rules& r,
+	const Rules& r,
 	QList<double>& cl,
 	QList<QString>& dl,
 	QString* conflictsString)
@@ -2878,7 +2878,7 @@ QString ConstraintSubjectActivityTagPreferredRoom::getDetailedDescription(const 
 
 double ConstraintSubjectActivityTagPreferredRoom::fitness(
 	Solution& c,
-	Rules& r,
+	const Rules& r,
 	QList<double>& cl,
 	QList<QString>& dl,
 	QString* conflictsString)
@@ -3134,7 +3134,7 @@ QString ConstraintSubjectActivityTagPreferredRooms::getDetailedDescription(const
 
 double ConstraintSubjectActivityTagPreferredRooms::fitness(
 	Solution& c,
-	Rules& r,
+	const Rules& r,
 	QList<double>& cl,
 	QList<QString>& dl,
 	QString* conflictsString)
@@ -3373,7 +3373,7 @@ QString ConstraintActivityTagPreferredRoom::getDetailedDescription(const Rules& 
 
 double ConstraintActivityTagPreferredRoom::fitness(
 	Solution& c,
-	Rules& r,
+	const Rules& r,
 	QList<double>& cl,
 	QList<QString>& dl,
 	QString* conflictsString)
@@ -3621,7 +3621,7 @@ QString ConstraintActivityTagPreferredRooms::getDetailedDescription(const Rules&
 
 double ConstraintActivityTagPreferredRooms::fitness(
 	Solution& c,
-	Rules& r,
+	const Rules& r,
 	QList<double>& cl,
 	QList<QString>& dl,
 	QString* conflictsString)
@@ -3890,7 +3890,7 @@ QString ConstraintStudentsSetMaxBuildingChangesPerDay::getDetailedDescription(co
 
 double ConstraintStudentsSetMaxBuildingChangesPerDay::fitness(
 	Solution& c,
-	Rules& r,
+	const Rules& r,
 	QList<double>& cl,
 	QList<QString>& dl,
 	QString* conflictsString)
@@ -4125,7 +4125,7 @@ QString ConstraintStudentsMaxBuildingChangesPerDay::getDetailedDescription(const
 
 double ConstraintStudentsMaxBuildingChangesPerDay::fitness(
 	Solution& c,
-	Rules& r,
+	const Rules& r,
 	QList<double>& cl,
 	QList<QString>& dl,
 	QString* conflictsString)
@@ -4414,7 +4414,7 @@ QString ConstraintStudentsSetMaxBuildingChangesPerWeek::getDetailedDescription(c
 
 double ConstraintStudentsSetMaxBuildingChangesPerWeek::fitness(
 	Solution& c,
-	Rules& r,
+	const Rules& r,
 	QList<double>& cl,
 	QList<QString>& dl,
 	QString* conflictsString)
@@ -4649,7 +4649,7 @@ QString ConstraintStudentsMaxBuildingChangesPerWeek::getDetailedDescription(cons
 
 double ConstraintStudentsMaxBuildingChangesPerWeek::fitness(
 	Solution& c,
-	Rules& r,
+	const Rules& r,
 	QList<double>& cl,
 	QList<QString>& dl,
 	QString* conflictsString)
@@ -4937,7 +4937,7 @@ QString ConstraintStudentsSetMinGapsBetweenBuildingChanges::getDetailedDescripti
 
 double ConstraintStudentsSetMinGapsBetweenBuildingChanges::fitness(
 	Solution& c,
-	Rules& r,
+	const Rules& r,
 	QList<double>& cl,
 	QList<QString>& dl,
 	QString* conflictsString)
@@ -5184,7 +5184,7 @@ QString ConstraintStudentsMinGapsBetweenBuildingChanges::getDetailedDescription(
 
 double ConstraintStudentsMinGapsBetweenBuildingChanges::fitness(
 	Solution& c,
-	Rules& r,
+	const Rules& r,
 	QList<double>& cl,
 	QList<QString>& dl,
 	QString* conflictsString)
@@ -5448,7 +5448,7 @@ QString ConstraintTeacherMaxBuildingChangesPerDay::getDetailedDescription(const 
 
 double ConstraintTeacherMaxBuildingChangesPerDay::fitness(
 	Solution& c,
-	Rules& r,
+	const Rules& r,
 	QList<double>& cl,
 	QList<QString>& dl,
 	QString* conflictsString)
@@ -5684,7 +5684,7 @@ QString ConstraintTeachersMaxBuildingChangesPerDay::getDetailedDescription(const
 
 double ConstraintTeachersMaxBuildingChangesPerDay::fitness(
 	Solution& c,
-	Rules& r,
+	const Rules& r,
 	QList<double>& cl,
 	QList<QString>& dl,
 	QString* conflictsString)
@@ -5936,7 +5936,7 @@ QString ConstraintTeacherMaxBuildingChangesPerWeek::getDetailedDescription(const
 
 double ConstraintTeacherMaxBuildingChangesPerWeek::fitness(
 	Solution& c,
-	Rules& r,
+	const Rules& r,
 	QList<double>& cl,
 	QList<QString>& dl,
 	QString* conflictsString)
@@ -6172,7 +6172,7 @@ QString ConstraintTeachersMaxBuildingChangesPerWeek::getDetailedDescription(cons
 
 double ConstraintTeachersMaxBuildingChangesPerWeek::fitness(
 	Solution& c,
-	Rules& r,
+	const Rules& r,
 	QList<double>& cl,
 	QList<QString>& dl,
 	QString* conflictsString)
@@ -6424,7 +6424,7 @@ QString ConstraintTeacherMinGapsBetweenBuildingChanges::getDetailedDescription(c
 
 double ConstraintTeacherMinGapsBetweenBuildingChanges::fitness(
 	Solution& c,
-	Rules& r,
+	const Rules& r,
 	QList<double>& cl,
 	QList<QString>& dl,
 	QString* conflictsString)
@@ -6672,7 +6672,7 @@ QString ConstraintTeachersMinGapsBetweenBuildingChanges::getDetailedDescription(
 
 double ConstraintTeachersMinGapsBetweenBuildingChanges::fitness(
 	Solution& c,
-	Rules& r,
+	const Rules& r,
 	QList<double>& cl,
 	QList<QString>& dl,
 	QString* conflictsString)
@@ -6976,7 +6976,7 @@ QString ConstraintActivitiesOccupyMaxDifferentRooms::getDetailedDescription(cons
 
 double ConstraintActivitiesOccupyMaxDifferentRooms::fitness(
 	Solution& c,
-	Rules& r,
+	const Rules& r,
 	QList<double>& cl,
 	QList<QString>& dl,
 	QString* conflictsString)
@@ -7246,7 +7246,7 @@ QString ConstraintActivitiesSameRoomIfConsecutive::getDetailedDescription(const 
 
 double ConstraintActivitiesSameRoomIfConsecutive::fitness(
 	Solution& c,
-	Rules& r,
+	const Rules& r,
 	QList<double>& cl,
 	QList<QString>& dl,
 	QString* conflictsString)

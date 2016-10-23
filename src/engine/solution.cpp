@@ -185,7 +185,7 @@ double Solution::fitness(Rules& r, QString* conflictsString){
 	return this->_fitness;
 }
 
-int Solution::getTeachersMatrix(Rules& r, Matrix3D<int>& a){
+int Solution::getTeachersMatrix(const Rules& r, Matrix3D<int>& a) {
 	assert(r.initialized);
 	assert(r.internalStructureComputed);
 	
@@ -203,10 +203,10 @@ int Solution::getTeachersMatrix(Rules& r, Matrix3D<int>& a){
 		if(this->times[i]!=UNALLOCATED_TIME) {
 			int hour = this->times[i] / r.nDaysPerWeek;
 			int day = this->times[i] % r.nDaysPerWeek;
-			Activity* act=&r.internalActivitiesList[i];
-			for(int dd=0; dd<act->duration && hour+dd<r.nHoursPerDay; dd++)
-				for(int it=0; it<act->iTeachersList.count(); it++){
-					int tch=act->iTeachersList.at(it);
+			const Activity& act=r.internalActivitiesList[i];
+			for(int dd=0; dd<act.duration && hour+dd<r.nHoursPerDay; dd++)
+				for(int it=0; it<act.iTeachersList.count(); it++){
+					int tch=act.iTeachersList.at(it);
 					int tmp=a[tch][day][hour+dd];
 					conflicts += tmp==0 ? 0 : 1;
 					a[tch][day][hour+dd]++;
@@ -218,7 +218,7 @@ int Solution::getTeachersMatrix(Rules& r, Matrix3D<int>& a){
 	return conflicts;
 }
 
-int Solution::getSubgroupsMatrix(Rules& r, Matrix3D<int>& a){
+int Solution::getSubgroupsMatrix(const Rules& r, Matrix3D<int>& a){
 	assert(r.initialized);
 	assert(r.internalStructureComputed);
 	
@@ -236,7 +236,7 @@ int Solution::getSubgroupsMatrix(Rules& r, Matrix3D<int>& a){
 		if(this->times[i]!=UNALLOCATED_TIME){
 			int hour=this->times[i]/r.nDaysPerWeek;
 			int day=this->times[i]%r.nDaysPerWeek;
-			Activity* act = &r.internalActivitiesList[i];
+			const Activity* act = &r.internalActivitiesList[i];
 			for(int dd=0; dd < act->duration && hour+dd < r.nHoursPerDay; dd++)
 				for(int isg=0; isg < act->iSubgroupsList.count(); isg++){ //isg => index subgroup
 					int sg = act->iSubgroupsList.at(isg); //sg => subgroup
@@ -411,7 +411,7 @@ void Solution::getSubgroupsTimetable(Rules& r, Matrix3D<int>& a){
 }
 
 int Solution::getRoomsMatrix(
-	Rules& r, 
+	const Rules& r,
 	Matrix3D<int>& a)
 {
 	assert(r.initialized);
@@ -463,7 +463,7 @@ void Solution::getRoomsTimetable(
 			for(k=0; k<r.nHoursPerDay; k++)
 				a[i][j][k]=UNALLOCATED_ACTIVITY;
 
-	Activity *act;
+	const Activity *act;
 	for(i=0; i<r.nInternalActivities; i++){
 		act=&r.internalActivitiesList[i];
 		int room=this->rooms[i];
