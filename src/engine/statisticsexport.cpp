@@ -77,7 +77,7 @@ public:
 	QStringList list2;
 };
 
-bool operator <(const StringListPair& pair1, const StringListPair& pair2)
+static bool operator <(const StringListPair& pair1, const StringListPair& pair2)
 {
 	return (pair1.list1.join("")+pair1.list2.join("")) < (pair2.list1.join("")+pair2.list2.join(""));
 }
