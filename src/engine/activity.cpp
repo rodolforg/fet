@@ -24,10 +24,9 @@ File activity.cpp
 
 QString getActivityDetailedDescription(const Rules& r, int id); //Implemented in timeconstraint.cpp
 
-GroupActivitiesInInitialOrderItem::GroupActivitiesInInitialOrderItem()
+GroupActivitiesInInitialOrderItem::GroupActivitiesInInitialOrderItem() :
+	active(true)
 {
-	active=true;
-	comments=QString("");
 }
 
 GroupActivitiesInInitialOrderItem::~GroupActivitiesInInitialOrderItem()
@@ -125,9 +124,16 @@ QString GroupActivitiesInInitialOrderItem::getDetailedDescription(const Rules &r
 	return s;
 }
 
-Activity::Activity()
+Activity::Activity() :
+	duration(0),
+	totalDuration(0),
+	id(-1),
+	activityGroupId(0),
+	nTotalStudents(0),
+	computeNTotalStudents(false),
+	active(false),
+	subjectIndex(0)
 {
-	comments=QString("");
 }
 
 /*Activity::Activity(
@@ -182,27 +188,23 @@ Activity::Activity(int _id,
 	bool _active,
 	bool _computeNTotalStudents,
 	int _nTotalStudents,
-	int _computedNumberOfStudents)
+	int _computedNumberOfStudents) :
+		teachersNames(_teachersNames),
+		subjectName(_subjectName),
+		activityTagsNames(_activityTagsNames),
+		studentsNames(_studentsNames),
+		duration(_duration),
+		totalDuration(_totalDuration),
+		id(_id),
+		activityGroupId(_activityGroupId),
+		computeNTotalStudents(_computeNTotalStudents),
+		active(_active)
 {
-	comments=QString("");
-
-	this->id=_id;
-	this->activityGroupId=_activityGroupId;
-	this->teachersNames = _teachersNames;
-	this->subjectName = _subjectName;
-	this->activityTagsNames = _activityTagsNames;
-	this->studentsNames = _studentsNames;
-	this->duration=_duration;
-	this->totalDuration=_totalDuration;
-	this->active=_active;
-	this->computeNTotalStudents=_computeNTotalStudents;
-	
-	//assert(_computeNTotalStudents);
 	if(_computeNTotalStudents)
 		assert(_nTotalStudents==-1);
 	else
 		assert(_nTotalStudents==_computedNumberOfStudents);
-	this->nTotalStudents=_computedNumberOfStudents;
+	nTotalStudents = _computedNumberOfStudents;
 }
 
 bool Activity::operator==(const Activity& a) const

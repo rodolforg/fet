@@ -18,11 +18,10 @@
 #include "studentsset.h"
 #include "rules.h"
 
-StudentsSet::StudentsSet()
+StudentsSet::StudentsSet() :
+	numberOfStudents(0),
+	type(STUDENTS_SET)
 {
-	this->type=STUDENTS_SET;
-	this->numberOfStudents=0;
-	comments=QString("");
 }
 
 StudentsSet::~StudentsSet()
@@ -30,11 +29,9 @@ StudentsSet::~StudentsSet()
 }
 
 StudentsYear::StudentsYear()
-	: StudentsSet()
+	: indexInAugmentedYearsList(-1)
 {
-	this->type=STUDENTS_YEAR;
-
-	indexInAugmentedYearsList=-1;
+	this->type = STUDENTS_YEAR;
 }
 
 StudentsYear::~StudentsYear()
@@ -139,11 +136,9 @@ QString StudentsYear::getDetailedDescriptionWithConstraints(const Rules &r) cons
 
 
 StudentsGroup::StudentsGroup()
-	: StudentsSet()
+	: indexInInternalGroupsList(-1)
 {
-	this->type=STUDENTS_GROUP;
-
-	indexInInternalGroupsList=-1;
+	this->type = STUDENTS_GROUP;
 }
 
 StudentsGroup::~StudentsGroup()
@@ -252,11 +247,9 @@ QString StudentsGroup::getDetailedDescriptionWithConstraints(Rules& r) const
 
 
 StudentsSubgroup::StudentsSubgroup()
-	: StudentsSet()
+	: indexInInternalSubgroupsList(-1)
 {
-	this->type=STUDENTS_SUBGROUP;
-	
-	indexInInternalSubgroupsList=-1;
+	this->type = STUDENTS_SUBGROUP;
 }
 
 StudentsSubgroup::~StudentsSubgroup()

@@ -20,7 +20,6 @@
 
 ActivityTag::ActivityTag()
 {
-	comments=QString("");
 }
 
 ActivityTag::~ActivityTag()

@@ -20,7 +20,6 @@
 
 Subject::Subject()
 {
-	comments=QString("");
 }
 
 Subject::~Subject()

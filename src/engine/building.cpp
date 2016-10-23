@@ -20,7 +20,6 @@
 
 Building::Building()
 {
-	comments=QString("");
 }
 
 Building::~Building()

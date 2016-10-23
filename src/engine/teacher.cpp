@@ -18,12 +18,9 @@
 #include "teacher.h"
 #include "rules.h"
 
-Teacher::Teacher()
+Teacher::Teacher() :
+	targetNumberOfHours(0)
 {
-	targetNumberOfHours=0;
-	comments=QString("");
-	qualifiedSubjectsList.clear();
-	qualifiedSubjectsHash.clear();
 }
 
 Teacher::~Teacher()

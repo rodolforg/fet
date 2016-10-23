@@ -38,7 +38,6 @@ class ActivityTag{
 
 public:
 	QString name;
-	
 	QString comments;
 
 	ActivityTag();

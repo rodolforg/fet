@@ -18,11 +18,10 @@
 #include "room.h"
 #include "rules.h"
 
-Room::Room()
+Room::Room() :
+	capacity(MAX_ROOM_CAPACITY),
+	buildingIndex(-1)
 {
-	this->capacity=MAX_ROOM_CAPACITY;
-	this->building=QString("");
-	comments=QString("");
 }
 
 Room::~Room()
