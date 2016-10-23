@@ -78,7 +78,7 @@ QString Teacher::getDetailedDescription() const
 	return s;
 }
 
-QString Teacher::getDetailedDescriptionWithConstraints(Rules& r)
+QString Teacher::getDetailedDescriptionWithConstraints(const Rules &r) const
 {
 	QString s=this->getDetailedDescription();
 
