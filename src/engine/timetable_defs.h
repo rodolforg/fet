@@ -33,8 +33,6 @@ File timetable_defs.h
 
 #include "centerwidgetonscreen.h"
 
-class QWidget;
-
 /**
 The version number
 */

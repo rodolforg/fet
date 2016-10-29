@@ -24,12 +24,7 @@
 
 #include <QObject>
 
-#ifndef FET_COMMAND_LINE
-#include <QWidget>
-#else
-class QWidget{
-};
-#endif
+class QWidget;
 
 #ifdef FET_COMMAND_LINE
 class FetCommandLine: public QObject{
