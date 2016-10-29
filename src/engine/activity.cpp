@@ -306,7 +306,7 @@ void Activity::renameStudents(Rules& r, const QString& initialStudentsName, cons
 	assert(t<=1);
 }
 
-void Activity::computeInternalStructure(Rules& r)
+void Activity::computeInternalStructure(const Rules& r)
 {
 	//the internal subgroups list must be computed before entering here.
 
@@ -314,7 +314,7 @@ void Activity::computeInternalStructure(Rules& r)
 	//this->nTeachers=0;
 	this->iTeachersList.clear();
 	QSet<int> iTeachersSet;
-	for(QStringList::Iterator it=this->teachersNames.begin(); it!=this->teachersNames.end(); it++){
+	for(QStringList::ConstIterator it=this->teachersNames.begin(); it!=this->teachersNames.end(); it++){
 		int tmp=r.teachersHash.value(*it, -1);
 		/*for(tmp=0; tmp<r.nInternalTeachers; tmp++){
 			if(r.internalTeachersList[tmp]->name == (*it))
@@ -348,7 +348,7 @@ void Activity::computeInternalStructure(Rules& r)
 	//this->nSubgroups=0;
 	this->iSubgroupsList.clear();
 	QSet<int> iSubgroupsSet;
-	for(QStringList::Iterator it=this->studentsNames.begin(); it!=this->studentsNames.end(); it++){
+	for(QStringList::ConstIterator it=this->studentsNames.begin(); it!=this->studentsNames.end(); it++){
 		StudentsSet* ss=r.studentsHash.value(*it, NULL); //r.searchAugmentedStudentsSet(*it);
 		assert(ss);
 		if(ss->type==STUDENTS_SUBGROUP){

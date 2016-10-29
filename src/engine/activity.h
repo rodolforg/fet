@@ -255,7 +255,7 @@ public:
 	/**
 	Computes the internal structure
 	*/
-	void computeInternalStructure(Rules& r);
+	void computeInternalStructure(const Rules &r);
 
 	/**
 	Returns a representation of this activity (xml format).
