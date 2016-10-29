@@ -40,11 +40,10 @@ QString ActivityTag::getDescription() const
 {
 	QString s=tr("N:%1", "The name of the activity tag").arg(name);
 	
-	QString end=QString("");
 	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
+		s+=", "+tr("C: %1", "Comments").arg(comments);
 	
-	return s+end;
+	return s;
 }
 
 QString ActivityTag::getDetailedDescription() const

@@ -47,20 +47,17 @@ QString Room::getDescription() const
 		s+=tr("B:%1", "Building").arg(this->building);
 		s+=", ";
 	}
-	/*s+=tr("T:");
-	s+=this->type;
-	s+=",";*/
+
 	s+=tr("C:%1", "Capacity").arg(CustomFETString::number(this->capacity));
 	//s+=",";
 
 	/*for(QStringList::Iterator it=this->equipments.begin(); it!=this->equipments.end(); it++)
 		s+="E:"+(*it)+", ";*/
 	
-	QString end=QString("");
 	if(!comments.isEmpty())
-		end=QString(", ")+tr("C: %1", "Comments").arg(comments);
+		s+=QString(", ")+tr("C: %1", "Comments").arg(comments);
 
-	return s+end;
+	return s;
 }
 
 QString Room::getDetailedDescription() const

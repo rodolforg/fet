@@ -75,21 +75,20 @@ QString GroupActivitiesInInitialOrderItem::getDescription(const Rules &r) const
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
+		s+="X - ";
 
-	QString s=tr("Group activities in initial order item");
+	s+=tr("Group activities in initial order item");
 	s+=QString(", ");
 	s+=tr("NA:%1", "Number of activities").arg(ids.count());
 	foreach(int id, ids)
 		s+=QString(", ")+tr("Id:%1", "Id of activity").arg(id);
 
-	QString end=QString("");
 	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
+		s+=", "+tr("C: %1", "Comments").arg(comments);
 
-	return begin+s+end;
+	return s;
 }
 
 QString GroupActivitiesInInitialOrderItem::getDetailedDescription(const Rules &r) const
