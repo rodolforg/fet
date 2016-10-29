@@ -334,7 +334,7 @@ void ModifyConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::ok()
 	this->_ctr->activitiesIds=selectedActivitiesList;
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	this->close();
 }

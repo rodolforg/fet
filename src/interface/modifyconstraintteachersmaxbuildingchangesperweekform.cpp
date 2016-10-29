@@ -67,7 +67,7 @@ void ModifyConstraintTeachersMaxBuildingChangesPerWeekForm::ok()
 	this->_ctr->maxBuildingChangesPerWeek=maxChangesSpinBox->value();
 
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	this->close();
 }

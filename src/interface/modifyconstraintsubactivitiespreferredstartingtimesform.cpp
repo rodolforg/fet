@@ -370,7 +370,7 @@ void ModifyConstraintSubactivitiesPreferredStartingTimesForm::ok()
 	this->_ctr->hours_L=hours_L;
 
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	this->close();
 }

@@ -385,7 +385,7 @@ void SpreadMinDaysConstraintsFiveDaysForm::wasAccepted()
 		assert(t==1);
 	}
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	foreach(ConstraintMinDaysBetweenActivities* mdc, constraintsToBeRemoved)
 		delete mdc;

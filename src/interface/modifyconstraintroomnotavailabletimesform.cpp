@@ -260,7 +260,7 @@ void ModifyConstraintRoomNotAvailableTimesForm::ok()
 	this->_ctr->hours=hours;
 
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	this->close();
 }

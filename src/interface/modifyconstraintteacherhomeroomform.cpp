@@ -111,7 +111,7 @@ void ModifyConstraintTeacherHomeRoomForm::ok()
 	this->_ctr->teacherName=teacher;
 
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	this->close();
 }

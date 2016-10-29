@@ -219,7 +219,7 @@ void ModifyGroupActivitiesInInitialOrderItemForm::ok()
 	_item->ids=ids;
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	this->close();
 }

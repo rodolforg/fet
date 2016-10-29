@@ -166,7 +166,7 @@ void YearsForm::moveYearUp()
 	StudentsYear* sy2=gt.rules.yearsList.at(i-1);
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	yearsListWidget->item(i)->setText(s2);
 	yearsListWidget->item(i-1)->setText(s1);
@@ -195,7 +195,7 @@ void YearsForm::moveYearDown()
 	StudentsYear* sy2=gt.rules.yearsList.at(i+1);
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	yearsListWidget->item(i)->setText(s2);
 	yearsListWidget->item(i+1)->setText(s1);
@@ -350,7 +350,7 @@ void YearsForm::comments()
 		sset->comments=commentsPT->toPlainText();
 	
 		gt.rules.internalStructureComputed=false;
-		setRulesModifiedAndOtherThings(&gt.rules);
+		gt.rules.setModified(true);
 
 		yearChanged();
 	}

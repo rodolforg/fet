@@ -181,7 +181,7 @@ void ModifyConstraintThreeActivitiesGroupedForm::ok()
 	this->_ctr->thirdActivityId=tid;
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 
 	this->close();
 }

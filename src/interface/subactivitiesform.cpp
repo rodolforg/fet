@@ -479,7 +479,7 @@ void SubactivitiesForm::subactivityComments()
 		act->comments=commentsPT->toPlainText();
 	
 		gt.rules.internalStructureComputed=false;
-		setRulesModifiedAndOtherThings(&gt.rules);
+		gt.rules.setModified(true);
 
 		subactivitiesListWidget->currentItem()->setText(act->getDescription(gt.rules));
 		subactivityChanged();

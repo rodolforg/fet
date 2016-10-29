@@ -311,7 +311,7 @@ void GroupsForm::moveGroupUp()
 	StudentsGroup* sg2=sy->groupsList.at(i-1);
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	groupsListWidget->item(i)->setText(s2);
 	groupsListWidget->item(i-1)->setText(s1);
@@ -344,7 +344,7 @@ void GroupsForm::moveGroupDown()
 	StudentsGroup* sg2=sy->groupsList.at(i+1);
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	groupsListWidget->item(i)->setText(s2);
 	groupsListWidget->item(i+1)->setText(s1);
@@ -508,7 +508,7 @@ void GroupsForm::comments()
 		sset->comments=commentsPT->toPlainText();
 	
 		gt.rules.internalStructureComputed=false;
-		setRulesModifiedAndOtherThings(&gt.rules);
+		gt.rules.setModified(true);
 
 		groupChanged(groupName);
 	}

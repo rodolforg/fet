@@ -179,7 +179,7 @@ void BuildingsForm::moveBuildingUp()
 	Building* bu2=gt.rules.buildingsList.at(i-1);
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	buildingsListWidget->item(i)->setText(s2);
 	buildingsListWidget->item(i-1)->setText(s1);
@@ -208,7 +208,7 @@ void BuildingsForm::moveBuildingDown()
 	Building* bu2=gt.rules.buildingsList.at(i+1);
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	buildingsListWidget->item(i)->setText(s2);
 	buildingsListWidget->item(i+1)->setText(s1);
@@ -307,7 +307,7 @@ void BuildingsForm::comments()
 		bu->comments=commentsPT->toPlainText();
 	
 		gt.rules.internalStructureComputed=false;
-		setRulesModifiedAndOtherThings(&gt.rules);
+		gt.rules.setModified(true);
 
 		buildingChanged(ind);
 	}

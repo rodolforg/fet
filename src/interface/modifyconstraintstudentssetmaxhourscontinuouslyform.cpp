@@ -119,7 +119,7 @@ void ModifyConstraintStudentsSetMaxHoursContinuouslyForm::ok()
 	this->_ctr->maxHoursContinuously=maxHoursSpinBox->value();
 
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	this->close();
 }

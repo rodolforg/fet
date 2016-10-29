@@ -65,12 +65,12 @@ public:
 This class contains all the information regarding
 the institution: teachers, students, activities, constraints, etc.
 */
-class Rules{
-	Q_DECLARE_TR_FUNCTIONS(Rules)
+class Rules : public QObject{
+	Q_OBJECT
 
-public:
 	bool modified;
 
+public:
 	/**
 	The name of the institution
 	*/
@@ -739,6 +739,17 @@ public:
 	void updateActivitiesWhenRemovingStudents(const QSet<StudentsSet*>& studentsSets, bool updateConstraints);
 	void updateGroupActivitiesInInitialOrderAfterRemoval();
 	void updateConstraintsAfterRemoval();
+
+	/**
+	 * @brief setChanged Set that a rule was modified
+	 * @param modified True if Rules object was modified
+	 */
+	void setModified(bool modified);
+	/**
+	 * @brief isModified tells if this object was modified. @see setModified()
+	 * @return true if the object has been modified
+	 */
+	bool isModified();
 	
 private:
 	TimeConstraint* readBasicCompulsoryTime(QXmlStreamReader& xml, FakeString& xmlReadingLog);
@@ -883,6 +894,9 @@ private:
 
 	SpaceConstraint* readActivitiesOccupyMaxDifferentRooms(QXmlStreamReader& xml, FakeString& xmlReadingLog);
 	SpaceConstraint* readActivitiesSameRoomIfConsecutive(QXmlStreamReader& xml, FakeString& xmlReadingLog);
+
+signals:
+	void contentsChanged();
 };
 
 #endif

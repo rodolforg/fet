@@ -81,7 +81,7 @@ void TeacherSubjectsQualificationsForm::ok()
 	_teacher->qualifiedSubjectsHash=newSubjectsHash;
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	this->close();
 }

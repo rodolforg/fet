@@ -220,7 +220,7 @@ void ModifyConstraintActivitiesSameStartingHourForm::ok()
 	this->_ctr->weightPercentage=weight;
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	this->close();
 }

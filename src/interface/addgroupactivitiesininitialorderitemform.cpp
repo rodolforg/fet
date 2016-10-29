@@ -215,7 +215,7 @@ void AddGroupActivitiesInInitialOrderItemForm::addItem()
 	gt.rules.groupActivitiesInInitialOrderList.append(item);
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 
 	QString s=tr("Added group activities in initial order item");
 	s+="\n\n";

@@ -269,7 +269,7 @@ void RemoveRedundantForm::wasAccepted()
 	assert(res==QDialog::Accepted);
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	foreach(ConstraintMinDaysBetweenActivities* mdc, toBeRemovedList)
 		mdc->weightPercentage=0.0;

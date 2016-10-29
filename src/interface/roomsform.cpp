@@ -179,7 +179,7 @@ void RoomsForm::moveRoomUp()
 	Room* rm2=gt.rules.roomsList.at(i-1);
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	roomsListWidget->item(i)->setText(s2);
 	roomsListWidget->item(i-1)->setText(s1);
@@ -208,7 +208,7 @@ void RoomsForm::moveRoomDown()
 	Room* rm2=gt.rules.roomsList.at(i+1);
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	roomsListWidget->item(i)->setText(s2);
 	roomsListWidget->item(i+1)->setText(s1);
@@ -307,7 +307,7 @@ void RoomsForm::comments()
 		rm->comments=commentsPT->toPlainText();
 	
 		gt.rules.internalStructureComputed=false;
-		setRulesModifiedAndOtherThings(&gt.rules);
+		gt.rules.setModified(true);
 
 		roomChanged(ind);
 	}

@@ -432,7 +432,7 @@ void ConstraintMinDaysBetweenActivitiesForm::changeSelectively()
 		 );
 
 		gt.rules.internalStructureComputed=false;
-		setRulesModifiedAndOtherThings(&gt.rules);
+		gt.rules.setModified(true);
 
 		this->filterChanged();
 	}

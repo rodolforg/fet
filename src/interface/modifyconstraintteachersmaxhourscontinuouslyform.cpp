@@ -72,7 +72,7 @@ void ModifyConstraintTeachersMaxHoursContinuouslyForm::ok()
 	this->_ctr->maxHoursContinuously=max_hours;
 
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	this->close();
 }

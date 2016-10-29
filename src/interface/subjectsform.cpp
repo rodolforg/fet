@@ -202,7 +202,7 @@ void SubjectsForm::moveSubjectUp()
 	Subject* sbj2=gt.rules.subjectsList.at(i-1);
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	subjectsListWidget->item(i)->setText(s2);
 	subjectsListWidget->item(i-1)->setText(s1);
@@ -231,7 +231,7 @@ void SubjectsForm::moveSubjectDown()
 	Subject* sbj2=gt.rules.subjectsList.at(i+1);
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	subjectsListWidget->item(i)->setText(s2);
 	subjectsListWidget->item(i+1)->setText(s1);
@@ -348,7 +348,7 @@ void SubjectsForm::comments()
 		sbj->comments=commentsPT->toPlainText();
 	
 		gt.rules.internalStructureComputed=false;
-		setRulesModifiedAndOtherThings(&gt.rules);
+		gt.rules.setModified(true);
 
 		subjectChanged(ind);
 	}

@@ -141,7 +141,7 @@ void ModifyConstraintActivityPreferredRoomForm::ok()
 	this->_ctr->permanentlyLocked=permLockedCheckBox->isChecked();
 
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	LockUnlock::computeLockedUnlockedActivitiesOnlySpace();
 	LockUnlock::increaseCommunicationSpinBox();

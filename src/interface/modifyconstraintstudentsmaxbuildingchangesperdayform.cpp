@@ -67,7 +67,7 @@ void ModifyConstraintStudentsMaxBuildingChangesPerDayForm::ok()
 	this->_ctr->maxBuildingChangesPerDay=maxChangesSpinBox->value();
 
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	this->close();
 }

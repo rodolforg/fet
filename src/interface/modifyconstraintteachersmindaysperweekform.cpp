@@ -75,7 +75,7 @@ void ModifyConstraintTeachersMinDaysPerWeekForm::ok()
 	this->_ctr->minDaysPerWeek=min_days;
 
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	this->close();
 }

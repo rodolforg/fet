@@ -118,7 +118,7 @@ void ModifyConstraintSubjectPreferredRoomForm::ok()
 	this->_ctr->subjectName=subject;
 
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	this->close();
 }

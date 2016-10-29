@@ -180,28 +180,6 @@ void setStretchAvailabilityTableNicely(QTableWidget* notAllowedTimesTable)
 	notAllowedTimesTable->setCornerButtonEnabled(false);
 }
 
-void setRulesModifiedAndOtherThings(Rules* rules)
-{
-	if(!rules->modified){
-		rules->modified=true;
-	
-		if(rules==&gt.rules && pFetMainForm!=NULL)
-			if(!pFetMainForm->isWindowModified())
-				pFetMainForm->setWindowModified(true);
-	}
-}
-
-void setRulesUnmodifiedAndOtherThings(Rules* rules)
-{
-	if(rules->modified){
-		rules->modified=false;
-	
-		if(rules==&gt.rules && pFetMainForm!=NULL)
-			if(pFetMainForm->isWindowModified())
-				pFetMainForm->setWindowModified(false);
-	}
-}
-
 void showWarningForInvisibleSubgroupConstraint(QWidget* parent, const QString& initialSubgroupName)
 {
 	QString title=QCoreApplication::translate("VariousGlobalWarningMessages", "FET warning");

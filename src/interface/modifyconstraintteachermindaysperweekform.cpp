@@ -99,7 +99,7 @@ void ModifyConstraintTeacherMinDaysPerWeekForm::ok()
 	this->_ctr->teacherName=teacher_name;
 
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	this->close();
 }

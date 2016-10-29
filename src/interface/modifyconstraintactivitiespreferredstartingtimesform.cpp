@@ -434,7 +434,7 @@ void ModifyConstraintActivitiesPreferredStartingTimesForm::ok()
 	this->_ctr->duration=duration;
 
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	this->close();
 }

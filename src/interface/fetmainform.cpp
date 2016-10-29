@@ -535,15 +535,14 @@ FetMainForm::FetMainForm()
 		gt.rules.kill();
 	gt.rules.init();
 
-	gt.rules.modified=true; //to avoid flicker of the main form modified flag
+	connect(&gt.rules, SIGNAL(contentsChanged()), this, SLOT(rules_contentsChanged()));
 
 	bool tmp=gt.rules.addTimeConstraint(new ConstraintBasicCompulsoryTime(100));
 	assert(tmp);
 	tmp=gt.rules.addSpaceConstraint(new ConstraintBasicCompulsorySpace(100));
 	assert(tmp);
 
-	gt.rules.modified=true; //force update of the modified flag of the main window
-	setRulesUnmodifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(false);
 
 	students_schedule_ready=false;
 	teachers_schedule_ready=false;
@@ -937,7 +936,7 @@ void FetMainForm::closeEvent(QCloseEvent* event)
 	
 	MAIN_FORM_SHORTCUTS_TAB_POSITION=tabWidget->currentIndex();
 	
-	if(gt.rules.modified){
+	if(gt.rules.isModified()){
 		QMessageBox::StandardButton res=QMessageBox::question( this, tr("FET - exiting"),
 		 tr("Your data file has been modified - do you want to save it?"), QMessageBox::Yes|QMessageBox::No|QMessageBox::Cancel);
 
@@ -1077,7 +1076,7 @@ void FetMainForm::on_fileNewAction_triggered()
 
 	int confirm=0;
 	
-	if(gt.rules.modified){
+	if(gt.rules.isModified()){
 		switch( QMessageBox::question(
 		 this,
 		 tr("FET application"),
@@ -1106,15 +1105,12 @@ void FetMainForm::on_fileNewAction_triggered()
 			gt.rules.kill();
 		gt.rules.init();
 		
-		gt.rules.modified=true; //to avoid flicker of the main form modified flag
-
 		bool tmp=gt.rules.addTimeConstraint(new ConstraintBasicCompulsoryTime(100));
 		assert(tmp);
 		tmp=gt.rules.addSpaceConstraint(new ConstraintBasicCompulsorySpace(100));
 		assert(tmp);
 		
-		gt.rules.modified=true; //force update of the modified flag of the main window
-		setRulesUnmodifiedAndOtherThings(&gt.rules);
+		gt.rules.setModified(false);
 
 		students_schedule_ready=false;
 		teachers_schedule_ready=false;
@@ -1149,7 +1145,7 @@ void FetMainForm::openFile(const QString& fileName)
 
 	int confirm=0;
 	
-	if(gt.rules.modified){
+	if(gt.rules.isModified()){
 		switch( QMessageBox::question(
 		 this,
 		 tr("FET application"),
@@ -1237,7 +1233,6 @@ void FetMainForm::openFile(const QString& fileName)
 			QCoreApplication::processEvents();
 		
 			//bool before=gt.rules.modified;
-			gt.rules.modified=true; //to avoid flicker of the main form modified flag
 
 			if(gt.rules.read(this, s)){
 				students_schedule_ready=false;
@@ -1251,8 +1246,7 @@ void FetMainForm::openFile(const QString& fileName)
 
 				statusBar()->showMessage(tr("File opened"), STATUS_BAR_MILLISECONDS);
 				
-				gt.rules.modified=true; //force update of the modified flag of the main window
-				setRulesUnmodifiedAndOtherThings(&gt.rules);
+				gt.rules.setModified(false);
 				
 				setCurrentFile(INPUT_FILENAME_XML);
 			}
@@ -1265,7 +1259,7 @@ void FetMainForm::openFile(const QString& fileName)
 				setCurrentFile(INPUT_FILENAME_XML);*/
 				
 				assert(!simulation_running);
-				gt.rules.modified=false;
+				gt.rules.setModified(false);
 				on_fileNewAction_triggered();
 			}
 			
@@ -1355,9 +1349,8 @@ bool FetMainForm::fileSaveAs()
 	bool t=gt.rules.write(this, s);
 	if(t){
 		INPUT_FILENAME_XML = s;
-	
-		gt.rules.modified=true; //force update of the modified flag of the main window
-		setRulesUnmodifiedAndOtherThings(&gt.rules);
+
+		gt.rules.setModified(false);
 	
 		setCurrentFile(INPUT_FILENAME_XML);
 	
@@ -1737,8 +1730,7 @@ bool FetMainForm::fileSave()
 		bool t=gt.rules.write(this, INPUT_FILENAME_XML);
 		
 		if(t){
-			gt.rules.modified=true; //force update of the modified flag of the main window
-			setRulesUnmodifiedAndOtherThings(&gt.rules);
+			gt.rules.setModified(false);
 		
 			setCurrentFile(INPUT_FILENAME_XML);
 	
@@ -4844,6 +4836,11 @@ void FetMainForm::on_shortcutSavePushButton_clicked()
 void FetMainForm::on_shortcutSaveAsPushButton_clicked()
 {
 	on_fileSaveAsAction_triggered();
+}
+
+void FetMainForm::rules_contentsChanged()
+{
+	setWindowModified(gt.rules.isModified());
 }
 
 #else

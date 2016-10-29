@@ -286,7 +286,7 @@ void ModifyConstraintActivityPreferredStartingTimeForm::ok()
 	this->_ctr->permanentlyLocked=permanentlyLocked;
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	LockUnlock::computeLockedUnlockedActivitiesOnlyTime();
 	LockUnlock::increaseCommunicationSpinBox();

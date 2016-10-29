@@ -204,7 +204,7 @@ void ActivityTagsForm::moveActivityTagUp()
 	ActivityTag* at2=gt.rules.activityTagsList.at(i-1);
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	activityTagsListWidget->item(i)->setText(s2);
 	activityTagsListWidget->item(i-1)->setText(s1);
@@ -233,7 +233,7 @@ void ActivityTagsForm::moveActivityTagDown()
 	ActivityTag* at2=gt.rules.activityTagsList.at(i+1);
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	activityTagsListWidget->item(i)->setText(s2);
 	activityTagsListWidget->item(i+1)->setText(s1);
@@ -356,7 +356,7 @@ void ActivityTagsForm::comments()
 		at->comments=commentsPT->toPlainText();
 	
 		gt.rules.internalStructureComputed=false;
-		setRulesModifiedAndOtherThings(&gt.rules);
+		gt.rules.setModified(true);
 
 		activityTagChanged(ind);
 	}

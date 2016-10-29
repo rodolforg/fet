@@ -236,7 +236,7 @@ void HoursForm::ok()
 		
 	gt.rules.nHoursPerWeek=gt.rules.nHoursPerDay*gt.rules.nDaysPerWeek; //not needed
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 
 	assert(gt.rules.nHoursPerDay<=MAX_HOURS_PER_DAY);
 		

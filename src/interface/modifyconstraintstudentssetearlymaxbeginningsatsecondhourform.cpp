@@ -118,7 +118,7 @@ void ModifyConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm::ok()
 	this->_ctr->maxBeginningsAtSecondHour=maxBeginningsSpinBox->value();
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	this->close();
 }

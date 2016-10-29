@@ -1455,7 +1455,7 @@ void ActivityPlanningForm::teachersCellSelected(const QModelIndex& index){
 			updateTablesVisual(0);
 			
 			gt.rules.internalStructureComputed=false;
-			setRulesModifiedAndOtherThings(&gt.rules);
+			gt.rules.setModified(true);
 		}
 	} else {
 		if(RBActivity->isChecked()){

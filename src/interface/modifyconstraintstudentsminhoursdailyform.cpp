@@ -91,7 +91,7 @@ void ModifyConstraintStudentsMinHoursDailyForm::ok()
 	this->_ctr->allowEmptyDays=allowEmptyDaysCheckBox->isChecked();
 
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	this->close();
 }

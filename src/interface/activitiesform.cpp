@@ -621,7 +621,7 @@ void ActivitiesForm::activityComments()
 		act->comments=commentsPT->toPlainText();
 	
 		gt.rules.internalStructureComputed=false;
-		setRulesModifiedAndOtherThings(&gt.rules);
+		gt.rules.setModified(true);
 
 		activitiesListWidget->currentItem()->setText(act->getDescription(gt.rules));
 		activityChanged();

@@ -210,7 +210,7 @@ void TeachersForm::targetNumberOfHours()
 		tch->targetNumberOfHours=newTargetNumberOfHours;
 
 		gt.rules.internalStructureComputed=false;
-		setRulesModifiedAndOtherThings(&gt.rules);
+		gt.rules.setModified(true);
 
 		teacherChanged(teachersListWidget->currentRow());
 	}
@@ -256,7 +256,7 @@ void TeachersForm::moveTeacherUp()
 	Teacher* at2=gt.rules.teachersList.at(i-1);
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	teachersListWidget->item(i)->setText(s2);
 	teachersListWidget->item(i-1)->setText(s1);
@@ -285,7 +285,7 @@ void TeachersForm::moveTeacherDown()
 	Teacher* at2=gt.rules.teachersList.at(i+1);
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	teachersListWidget->item(i)->setText(s2);
 	teachersListWidget->item(i+1)->setText(s1);
@@ -400,7 +400,7 @@ void TeachersForm::comments()
 		tch->comments=commentsPT->toPlainText();
 	
 		gt.rules.internalStructureComputed=false;
-		setRulesModifiedAndOtherThings(&gt.rules);
+		gt.rules.setModified(true);
 
 		teacherChanged(ind);
 	}

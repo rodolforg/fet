@@ -118,7 +118,7 @@ void ModifyConstraintActivityTagPreferredRoomForm::ok()
 	this->_ctr->activityTagName=activityTag;
 
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	this->close();
 }

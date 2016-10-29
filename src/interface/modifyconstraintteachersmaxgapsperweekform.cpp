@@ -71,7 +71,7 @@ void ModifyConstraintTeachersMaxGapsPerWeekForm::ok()
 	this->_ctr->maxGaps=maxGapsSpinBox->value();
 
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	this->close();
 }

@@ -382,7 +382,7 @@ void SubgroupsForm::moveSubgroupUp()
 	StudentsSubgroup* ss2=sg->subgroupsList.at(i-1);
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	subgroupsListWidget->item(i)->setText(s2);
 	subgroupsListWidget->item(i-1)->setText(s1);
@@ -419,7 +419,7 @@ void SubgroupsForm::moveSubgroupDown()
 	StudentsSubgroup* ss2=sg->subgroupsList.at(i+1);
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	subgroupsListWidget->item(i)->setText(s2);
 	subgroupsListWidget->item(i+1)->setText(s1);
@@ -615,7 +615,7 @@ void SubgroupsForm::comments()
 		sset->comments=commentsPT->toPlainText();
 	
 		gt.rules.internalStructureComputed=false;
-		setRulesModifiedAndOtherThings(&gt.rules);
+		gt.rules.setModified(true);
 
 		subgroupChanged(subgroupName);
 	}

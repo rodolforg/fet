@@ -96,7 +96,7 @@ void ModifyConstraintTeachersActivityTagMaxHoursContinuouslyForm::ok()
 	this->_ctr->activityTagName=activityTagName;
 
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	this->close();
 }

@@ -320,7 +320,7 @@ void AllTimeConstraintsForm::moveTimeConstraintUp()
 	assert(tc2==visibleTimeConstraintsList.at(i-1));
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	constraintsListWidget->item(i)->setText(s2);
 	constraintsListWidget->item(i-1)->setText(s1);
@@ -376,7 +376,7 @@ void AllTimeConstraintsForm::moveTimeConstraintDown()
 	assert(tc2==visibleTimeConstraintsList.at(i+1));
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	constraintsListWidget->item(i)->setText(s2);
 	constraintsListWidget->item(i+1)->setText(s1);
@@ -1054,7 +1054,7 @@ void AllTimeConstraintsForm::activateConstraint()
 		ctr->active=true;
 		
 		gt.rules.internalStructureComputed=false;
-		setRulesModifiedAndOtherThings(&gt.rules);
+		gt.rules.setModified(true);
 
 		constraintsListWidget->currentItem()->setText(ctr->getDescription(gt.rules));
 		if(USE_GUI_COLORS)
@@ -1104,7 +1104,7 @@ void AllTimeConstraintsForm::deactivateConstraint()
 		ctr->active=false;
 		
 		gt.rules.internalStructureComputed=false;
-		setRulesModifiedAndOtherThings(&gt.rules);
+		gt.rules.setModified(true);
 
 		constraintsListWidget->currentItem()->setText(ctr->getDescription(gt.rules));
 		if(USE_GUI_COLORS)
@@ -1151,7 +1151,7 @@ void AllTimeConstraintsForm::sortConstraintsByComments()
 	std::stable_sort(gt.rules.timeConstraintsList.begin(), gt.rules.timeConstraintsList.end(), timeConstraintsAscendingByComments);
 
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	filterChanged();
 }*/
@@ -1208,7 +1208,7 @@ void AllTimeConstraintsForm::constraintComments()
 		ctr->comments=commentsPT->toPlainText();
 	
 		gt.rules.internalStructureComputed=false;
-		setRulesModifiedAndOtherThings(&gt.rules);
+		gt.rules.setModified(true);
 
 		constraintsListWidget->currentItem()->setText(ctr->getDescription(gt.rules));
 		constraintChanged();

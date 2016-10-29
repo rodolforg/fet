@@ -79,7 +79,7 @@ void ModifyConstraintStudentsMaxDaysPerWeekForm::ok()
 	this->_ctr->maxDaysPerWeek=max_days;
 
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	this->close();
 }

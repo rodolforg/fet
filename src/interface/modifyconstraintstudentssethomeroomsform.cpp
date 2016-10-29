@@ -142,7 +142,7 @@ void ModifyConstraintStudentsSetHomeRoomsForm::ok()
 	this->_ctr->roomsNames=roomsList;
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	this->close();
 }

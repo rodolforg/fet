@@ -272,7 +272,7 @@ void AllSpaceConstraintsForm::moveSpaceConstraintUp()
 	assert(sc2==visibleSpaceConstraintsList.at(i-1));
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	constraintsListWidget->item(i)->setText(s2);
 	constraintsListWidget->item(i-1)->setText(s1);
@@ -328,7 +328,7 @@ void AllSpaceConstraintsForm::moveSpaceConstraintDown()
 	assert(sc2==visibleSpaceConstraintsList.at(i+1));
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	constraintsListWidget->item(i)->setText(s2);
 	constraintsListWidget->item(i+1)->setText(s1);
@@ -775,7 +775,7 @@ void AllSpaceConstraintsForm::activateConstraint()
 		ctr->active=true;
 		
 		gt.rules.internalStructureComputed=false;
-		setRulesModifiedAndOtherThings(&gt.rules);
+		gt.rules.setModified(true);
 
 		constraintsListWidget->currentItem()->setText(ctr->getDescription(gt.rules));
 		if(USE_GUI_COLORS)
@@ -825,7 +825,7 @@ void AllSpaceConstraintsForm::deactivateConstraint()
 		ctr->active=false;
 		
 		gt.rules.internalStructureComputed=false;
-		setRulesModifiedAndOtherThings(&gt.rules);
+		gt.rules.setModified(true);
 
 		constraintsListWidget->currentItem()->setText(ctr->getDescription(gt.rules));
 		if(USE_GUI_COLORS)
@@ -872,7 +872,7 @@ void AllSpaceConstraintsForm::sortConstraintsByComments()
 	std::stable_sort(gt.rules.spaceConstraintsList.begin(), gt.rules.spaceConstraintsList.end(), spaceConstraintsAscendingByComments);
 
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	filterChanged();
 }*/
@@ -929,7 +929,7 @@ void AllSpaceConstraintsForm::constraintComments()
 		ctr->comments=commentsPT->toPlainText();
 	
 		gt.rules.internalStructureComputed=false;
-		setRulesModifiedAndOtherThings(&gt.rules);
+		gt.rules.setModified(true);
 
 		constraintsListWidget->currentItem()->setText(ctr->getDescription(gt.rules));
 		constraintChanged();

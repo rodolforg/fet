@@ -646,7 +646,7 @@ bool ConstraintRoomNotAvailableTimes::repairWrongDayOrHour(Rules& r)
 	hours=newHours;
 	
 	r.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&r);
+	r.setModified(true);
 
 	return true;
 }

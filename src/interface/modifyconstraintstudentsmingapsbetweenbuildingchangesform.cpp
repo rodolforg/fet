@@ -67,7 +67,7 @@ void ModifyConstraintStudentsMinGapsBetweenBuildingChangesForm::ok()
 	this->_ctr->minGapsBetweenBuildingChanges=minGapsSpinBox->value();
 
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	this->close();
 }

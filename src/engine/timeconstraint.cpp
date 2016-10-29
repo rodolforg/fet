@@ -714,7 +714,7 @@ bool ConstraintTeacherNotAvailableTimes::repairWrongDayOrHour(Rules& r)
 	hours=newHours;
 	
 	r.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&r);
+	r.setModified(true);
 
 	return true;
 }
@@ -1028,7 +1028,7 @@ bool ConstraintStudentsSetNotAvailableTimes::repairWrongDayOrHour(Rules& r)
 	hours=newHours;
 	
 	r.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&r);
+	r.setModified(true);
 
 	return true;
 }
@@ -5401,7 +5401,7 @@ bool ConstraintBreakTimes::repairWrongDayOrHour(Rules& r)
 	hours=newHours;
 	
 	r.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&r);
+	r.setModified(true);
 
 	return true;
 }
@@ -9052,7 +9052,7 @@ bool ConstraintActivityPreferredTimeSlots::repairWrongDayOrHour(Rules& r)
 	p_hours_L=newHours;
 	
 	r.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&r);
+	r.setModified(true);
 
 	return true;
 }
@@ -9552,7 +9552,7 @@ bool ConstraintActivitiesPreferredTimeSlots::repairWrongDayOrHour(Rules& r)
 	p_hours_L=newHours;
 	
 	r.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&r);
+	r.setModified(true);
 
 	return true;
 }
@@ -10044,7 +10044,7 @@ bool ConstraintSubactivitiesPreferredTimeSlots::repairWrongDayOrHour(Rules& r)
 	p_hours_L=newHours;
 	
 	r.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&r);
+	r.setModified(true);
 
 	return true;
 }
@@ -10349,7 +10349,7 @@ bool ConstraintActivityPreferredStartingTimes::repairWrongDayOrHour(Rules& r)
 	hours_L=newHours;
 	
 	r.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&r);
+	r.setModified(true);
 
 	return true;
 }
@@ -10837,7 +10837,7 @@ bool ConstraintActivitiesPreferredStartingTimes::repairWrongDayOrHour(Rules& r)
 	hours_L=newHours;
 	
 	r.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&r);
+	r.setModified(true);
 
 	return true;
 }
@@ -11313,7 +11313,7 @@ bool ConstraintSubactivitiesPreferredStartingTimes::repairWrongDayOrHour(Rules& 
 	hours_L=newHours;
 	
 	r.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&r);
+	r.setModified(true);
 
 	return true;
 }
@@ -17335,7 +17335,7 @@ bool ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::repairWrongDayOrHour(R
 		maxOccupiedTimeSlots=r.nDaysPerWeek*r.nHoursPerDay;
 	
 	r.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&r);
+	r.setModified(true);
 
 	return true;
 }
@@ -17698,7 +17698,7 @@ bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::repairWrongDayOrHou
 	//Do not modify maxSimultaneous, which can be as high as MAX_ACTIVITIES
 	
 	r.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&r);
+	r.setModified(true);
 
 	return true;
 }

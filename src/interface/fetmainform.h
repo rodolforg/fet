@@ -407,6 +407,8 @@ public slots:
 	void on_shortcutNewPushButton_clicked();
 	void on_shortcutSavePushButton_clicked();
 	void on_shortcutSaveAsPushButton_clicked();
+
+	void rules_contentsChanged();
 	
 	void replyFinished(QNetworkReply* networkReply);
 	

@@ -944,14 +944,14 @@ void Rules::setInstitutionName(const QString& newInstitutionName)
 {
 	this->institutionName=newInstitutionName;
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 }
 
 void Rules::setComments(const QString& newComments)
 {
 	this->comments=newComments;
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 }
 
 bool Rules::addTeacher(Teacher* teacher)
@@ -963,7 +963,7 @@ bool Rules::addTeacher(Teacher* teacher)
 	}
 	
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 
 	teachers_schedule_ready=false;
 	students_schedule_ready=false;
@@ -976,7 +976,7 @@ bool Rules::addTeacher(Teacher* teacher)
 bool Rules::addTeacherFast(Teacher* teacher)
 {
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 
 	teachers_schedule_ready=false;
 	students_schedule_ready=false;
@@ -1016,7 +1016,7 @@ bool Rules::removeTeacher(const QString& teacherName)
 	updateConstraintsAfterRemoval();
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 
 	teachers_schedule_ready=false;
 	students_schedule_ready=false;
@@ -1163,7 +1163,7 @@ bool Rules::modifyTeacher(const QString& initialTeacherName, const QString& fina
 	}
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 
 	return true;
 }
@@ -1173,7 +1173,7 @@ void Rules::sortTeachersAlphabetically()
 	std::stable_sort(this->teachersList.begin(), this->teachersList.end(), teachersAscending);
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 }
 
 bool Rules::addSubject(Subject* subject)
@@ -1185,7 +1185,7 @@ bool Rules::addSubject(Subject* subject)
 	}
 	
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 
 	teachers_schedule_ready=false;
 	students_schedule_ready=false;
@@ -1198,7 +1198,7 @@ bool Rules::addSubject(Subject* subject)
 bool Rules::addSubjectFast(Subject* subject)
 {
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 
 	teachers_schedule_ready=false;
 	students_schedule_ready=false;
@@ -1250,7 +1250,7 @@ bool Rules::removeSubject(const QString& subjectName)
 	updateConstraintsAfterRemoval();
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 
 	teachers_schedule_ready=false;
 	students_schedule_ready=false;
@@ -1351,7 +1351,7 @@ bool Rules::modifySubject(const QString& initialSubjectName, const QString& fina
 	assert(t==1);
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 
 	return true;
 }
@@ -1361,7 +1361,7 @@ void Rules::sortSubjectsAlphabetically()
 	std::stable_sort(this->subjectsList.begin(), this->subjectsList.end(), subjectsAscending);
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 }
 
 bool Rules::addActivityTag(ActivityTag* activityTag)
@@ -1374,7 +1374,7 @@ bool Rules::addActivityTag(ActivityTag* activityTag)
 	}
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 
 	teachers_schedule_ready=false;
 	students_schedule_ready=false;
@@ -1387,7 +1387,7 @@ bool Rules::addActivityTag(ActivityTag* activityTag)
 bool Rules::addActivityTagFast(ActivityTag* activityTag)
 {
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 
 	teachers_schedule_ready=false;
 	students_schedule_ready=false;
@@ -1424,7 +1424,7 @@ bool Rules::removeActivityTag(const QString& activityTagName)
 	updateConstraintsAfterRemoval();
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 
 	teachers_schedule_ready=false;
 	students_schedule_ready=false;
@@ -1555,7 +1555,7 @@ bool Rules::modifyActivityTag(const QString& initialActivityTagName, const QStri
 	assert(t==1);
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 
 	return true;
 }
@@ -1565,7 +1565,7 @@ void Rules::sortActivityTagsAlphabetically()
 	std::stable_sort(this->activityTagsList.begin(), this->activityTagsList.end(), activityTagsAscending);
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 }
 
 bool Rules::setsShareStudents(const QString& studentsSet1, const QString& studentsSet2) const
@@ -1787,7 +1787,7 @@ bool Rules::addYear(StudentsYear* year)
 	permanentStudentsHash.insert(year->name, year);
 	
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 	return true;
 }
 
@@ -1795,7 +1795,7 @@ bool Rules::addYearFast(StudentsYear* year)
 {
 	this->yearsList << year;
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 	return true;
 }
 
@@ -1873,7 +1873,7 @@ bool Rules::removeYear(const QString& yearName/*, bool removeAlsoThisYear*/)
 		updateConstraintsAfterRemoval();
 	
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 	return true;
 }
 
@@ -1917,7 +1917,7 @@ bool Rules::removeYearPointerAfterSplit(StudentsYear* yearPointer)
 		updateConstraintsAfterRemoval();
 	
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 	return true;
 }
 
@@ -2084,8 +2084,8 @@ bool Rules::modifyStudentsSet(const QString& initialStudentsSetName, const QStri
 	}
 	
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
-	
+	setModified(true);
+
 	return true;
 }
 
@@ -2232,7 +2232,7 @@ bool Rules::modifyStudentsSets(const QHash<QString, QString>& oldAndNewStudentsS
 	}
 	
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 	
 	return true;
 }
@@ -2243,7 +2243,7 @@ void Rules::sortYearsAlphabetically()
 	std::stable_sort(this->yearsList.begin(), this->yearsList.end(), yearsAscending);
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 }
 
 bool Rules::addGroup(const QString& yearName, StudentsGroup* group)
@@ -2274,7 +2274,7 @@ bool Rules::addGroup(const QString& yearName, StudentsGroup* group)
 				g->numberOfStudents=group->numberOfStudents;*/
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 	return true;
 }
 
@@ -2283,7 +2283,7 @@ bool Rules::addGroupFast(StudentsYear* year, StudentsGroup* group)
 	year->groupsList << group; //append
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 	return true;
 }
 
@@ -2359,7 +2359,7 @@ bool Rules::removeGroup(const QString& yearName, const QString& groupName)
 		updateConstraintsAfterRemoval();
 	
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 	return true;
 }
 
@@ -2415,7 +2415,7 @@ bool Rules::purgeGroup(const QString& groupName)
 		updateConstraintsAfterRemoval();
 	
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 	return true;
 }
 
@@ -2461,7 +2461,7 @@ void Rules::sortGroupsAlphabetically(const QString& yearName)
 	std::stable_sort(sty->groupsList.begin(), sty->groupsList.end(), groupsAscending);
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 }
 
 bool Rules::addSubgroup(const QString& yearName, const QString& groupName, StudentsSubgroup* subgroup)
@@ -2490,7 +2490,7 @@ bool Rules::addSubgroup(const QString& yearName, const QString& groupName, Stude
 					s->numberOfStudents=subgroup->numberOfStudents;*/
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 	return true;
 }
 
@@ -2501,7 +2501,7 @@ bool Rules::addSubgroupFast(StudentsYear* year, StudentsGroup* group, StudentsSu
 	group->subgroupsList << subgroup; //append
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 	return true;
 }
 
@@ -2565,7 +2565,7 @@ bool Rules::removeSubgroup(const QString& yearName, const QString& groupName, co
 		updateConstraintsAfterRemoval();
 	
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 	return true;
 }
 
@@ -2608,7 +2608,7 @@ bool Rules::purgeSubgroup(const QString& subgroupName)
 		updateConstraintsAfterRemoval();
 	
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 	return true;
 }
 
@@ -2672,7 +2672,7 @@ void Rules::sortSubgroupsAlphabetically(const QString& yearName, const QString& 
 	std::stable_sort(stg->subgroupsList.begin(), stg->subgroupsList.end(), subgroupsAscending);
 	
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 }
 
 /*bool Rules::addSimpleActivity(
@@ -2736,7 +2736,7 @@ void Rules::sortSubgroupsAlphabetically(const QString& yearName, const QString& 
 	activitiesPointerHash.insert(act->id, act);
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 
 	return true;
 }*/
@@ -2781,7 +2781,7 @@ bool Rules::addSimpleActivityFast(
 	activitiesPointerHash.insert(act->id, act);
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 
 	return true;
 }
@@ -2868,7 +2868,7 @@ bool Rules::addSimpleActivityFast(
 	}
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 
 	return true;
 }*/
@@ -2933,7 +2933,7 @@ bool Rules::addSplitActivityFast(
 	}
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 
 	return true;
 }
@@ -3000,7 +3000,7 @@ void Rules::removeActivities(const QList<int>& _idsList, bool updateConstraints)
 		updateConstraintsAfterRemoval();
 	
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 }
 
 void Rules::modifyActivity(
@@ -3040,7 +3040,7 @@ void Rules::modifyActivity(
 	assert(i==_nSplits);
 	
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 }
 
 void Rules::modifySubactivity(
@@ -3088,7 +3088,7 @@ void Rules::modifySubactivity(
 	crtAct->nTotalStudents=_nTotalStudents;
 	
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 }
 
 bool Rules::addRoom(Room* rm)
@@ -3097,7 +3097,7 @@ bool Rules::addRoom(Room* rm)
 		return false;
 	this->roomsList << rm; //append
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 
 	teachers_schedule_ready=false;
 	students_schedule_ready=false;
@@ -3110,7 +3110,7 @@ bool Rules::addRoomFast(Room* rm)
 {
 	this->roomsList << rm; //append
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 
 	teachers_schedule_ready=false;
 	students_schedule_ready=false;
@@ -3143,7 +3143,7 @@ bool Rules::removeRoom(const QString& roomName)
 	updateConstraintsAfterRemoval();
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 
 	teachers_schedule_ready=false;
 	students_schedule_ready=false;
@@ -3270,7 +3270,7 @@ bool Rules::modifyRoom(const QString& initialRoomName, const QString& finalRoomN
 	searchedRoom->capacity=capacity;
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 	return true;
 }
 
@@ -3279,7 +3279,7 @@ void Rules::sortRoomsAlphabetically()
 	std::stable_sort(this->roomsList.begin(), this->roomsList.end(), roomsAscending);
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 }
 
 bool Rules::addBuilding(Building* bu)
@@ -3288,7 +3288,7 @@ bool Rules::addBuilding(Building* bu)
 		return false;
 	this->buildingsList << bu; //append
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 
 	teachers_schedule_ready=false;
 	students_schedule_ready=false;
@@ -3301,7 +3301,7 @@ bool Rules::addBuildingFast(Building* bu)
 {
 	this->buildingsList << bu; //append
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 
 	teachers_schedule_ready=false;
 	students_schedule_ready=false;
@@ -3336,7 +3336,7 @@ bool Rules::removeBuilding(const QString& buildingName)
 	this->buildingsList.removeAt(i);
 	
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 
 	teachers_schedule_ready=false;
 	students_schedule_ready=false;
@@ -3360,7 +3360,7 @@ bool Rules::modifyBuilding(const QString& initialBuildingName, const QString& fi
 	searchedBuilding->name=finalBuildingName;
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 	return true;
 }
 
@@ -3369,7 +3369,7 @@ void Rules::sortBuildingsAlphabetically()
 	std::stable_sort(this->buildingsList.begin(), this->buildingsList.end(), buildingsAscending);
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 }
 
 bool Rules::addTimeConstraint(TimeConstraint* ctr)
@@ -3568,7 +3568,7 @@ bool Rules::addTimeConstraint(TimeConstraint* ctr)
 		}
 
 		this->internalStructureComputed=false;
-		setRulesModifiedAndOtherThings(this);
+		setModified(true);
 		return true;
 	}
 	else
@@ -3628,7 +3628,7 @@ bool Rules::removeTimeConstraint(TimeConstraint* ctr)
 			delete ctr;
 			this->timeConstraintsList.removeAt(i);
 			this->internalStructureComputed=false;
-			setRulesModifiedAndOtherThings(this);
+			setModified(true);
 
 			return true;
 		}
@@ -3709,7 +3709,7 @@ bool Rules::removeTimeConstraints(QList<TimeConstraint*> _tcl)
 		timeConstraintsList=remaining;
 	
 		this->internalStructureComputed=false;
-		setRulesModifiedAndOtherThings(this);
+		setModified(true);
 	}
 
 	return ok;
@@ -3794,7 +3794,7 @@ bool Rules::addSpaceConstraint(SpaceConstraint* ctr)
 		}
 		
 		this->internalStructureComputed=false;
-		setRulesModifiedAndOtherThings(this);
+		setModified(true);
 		return true;
 	}
 	else
@@ -3823,7 +3823,7 @@ bool Rules::removeSpaceConstraint(SpaceConstraint* ctr)
 			delete ctr;
 			this->spaceConstraintsList.removeAt(i);
 			this->internalStructureComputed=false;
-			setRulesModifiedAndOtherThings(this);
+			setModified(true);
 
 			return true;
 		}
@@ -3873,7 +3873,7 @@ bool Rules::removeSpaceConstraints(QList<SpaceConstraint*> _scl)
 		spaceConstraintsList=remaining;
 		
 		this->internalStructureComputed=false;
-		setRulesModifiedAndOtherThings(this);
+		setModified(true);
 	}
 	
 	return ok;
@@ -7063,7 +7063,7 @@ int Rules::activateTeacher(const QString& teacherName)
 	}
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 	
 	return count;
 }
@@ -7107,7 +7107,7 @@ int Rules::activateStudents(const QString& studentsName)
 	}
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 	
 	return count;
 }
@@ -7125,7 +7125,7 @@ int Rules::activateSubject(const QString& subjectName)
 	}
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 	
 	return count;
 }
@@ -7143,7 +7143,7 @@ int Rules::activateActivityTag(const QString& activityTagName)
 	}
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 	
 	return count;
 }
@@ -7161,7 +7161,7 @@ int Rules::deactivateTeacher(const QString& teacherName)
 	}
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 	
 	return count;
 }
@@ -7205,7 +7205,7 @@ int Rules::deactivateStudents(const QString& studentsName)
 	}
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 	
 	return count;
 }
@@ -7223,7 +7223,7 @@ int Rules::deactivateSubject(const QString& subjectName)
 	}
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
+	setModified(true);
 	
 	return count;
 }
@@ -7241,9 +7241,21 @@ int Rules::deactivateActivityTag(const QString& activityTagName)
 	}
 
 	this->internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(this);
-	
+	setModified(true);
+
 	return count;
+}
+
+void Rules::setModified(bool changed) {
+	bool statusChanged = modified != changed;
+	modified = changed;
+	if (statusChanged)
+		emit contentsChanged();
+}
+
+bool Rules::isModified()
+{
+	return modified;
 }
 
 TimeConstraint* Rules::readBasicCompulsoryTime(QXmlStreamReader& xmlReader, FakeString& xmlReadingLog){

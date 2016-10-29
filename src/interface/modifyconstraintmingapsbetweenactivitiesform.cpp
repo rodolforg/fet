@@ -219,7 +219,7 @@ void ModifyConstraintMinGapsBetweenActivitiesForm::ok()
 	this->_ctr->minGaps=minGapsSpinBox->value();
 	
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	this->close();
 }

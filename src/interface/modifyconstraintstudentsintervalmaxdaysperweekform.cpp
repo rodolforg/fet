@@ -116,7 +116,7 @@ void ModifyConstraintStudentsIntervalMaxDaysPerWeekForm::ok()
 	this->_ctr->endHour=endHour;
 
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	this->close();
 }

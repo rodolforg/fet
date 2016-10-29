@@ -287,7 +287,7 @@ void GroupActivitiesInInitialOrderItemsForm::removeItem()
 				gt.rules.groupActivitiesInInitialOrderList.removeAt(j);
 				
 				gt.rules.internalStructureComputed=false;
-				setRulesModifiedAndOtherThings(&gt.rules);
+				gt.rules.setModified(true);
 
 				break;
 			}
@@ -344,7 +344,7 @@ void GroupActivitiesInInitialOrderItemsForm::activateItem()
 		item->active=true;
 		
 		gt.rules.internalStructureComputed=false;
-		setRulesModifiedAndOtherThings(&gt.rules);
+		gt.rules.setModified(true);
 
 		itemsListWidget->currentItem()->setText(item->getDescription(gt.rules));
 		if(USE_GUI_COLORS)
@@ -379,7 +379,7 @@ void GroupActivitiesInInitialOrderItemsForm::deactivateItem()
 		item->active=false;
 		
 		gt.rules.internalStructureComputed=false;
-		setRulesModifiedAndOtherThings(&gt.rules);
+		gt.rules.setModified(true);
 
 		itemsListWidget->currentItem()->setText(item->getDescription(gt.rules));
 		if(USE_GUI_COLORS)
@@ -419,7 +419,7 @@ void GroupActivitiesInInitialOrderItemsForm::sortItemsByComments()
 	std::stable_sort(gt.rules.groupActivitiesInInitialOrderList.begin(), gt.rules.groupActivitiesInInitialOrderList.end(), itemsAscendingByComments);
 
 	gt.rules.internalStructureComputed=false;
-	setRulesModifiedAndOtherThings(&gt.rules);
+	gt.rules.setModified(true);
 	
 	filterChanged();
 }
@@ -476,7 +476,7 @@ void GroupActivitiesInInitialOrderItemsForm::itemComments()
 		item->comments=commentsPT->toPlainText();
 	
 		gt.rules.internalStructureComputed=false;
-		setRulesModifiedAndOtherThings(&gt.rules);
+		gt.rules.setModified(true);
 
 		itemsListWidget->currentItem()->setText(item->getDescription(gt.rules));
 		itemChanged(itemsListWidget->currentRow());
