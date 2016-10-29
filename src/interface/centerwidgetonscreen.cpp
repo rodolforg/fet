@@ -218,15 +218,4 @@ void showWarningForInvisibleSubgroupActivity(QWidget* parent, const QString& ini
 
 	QMessageBox::warning(parent, title, message);
 }
-
-#else
-void setRulesModifiedAndOtherThings(Rules* rules)
-{
-	Q_UNUSED(rules);
-}
-
-void setRulesUnmodifiedAndOtherThings(Rules* rules)
-{
-	Q_UNUSED(rules);
-}
 #endif
