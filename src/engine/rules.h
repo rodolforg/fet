@@ -45,8 +45,6 @@ File rules.h
 
 class QXmlStreamReader;
 
-class QWidget;
-
 class FakeString
 /*
 fake string, so that the output log is not too large
