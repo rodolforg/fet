@@ -21,6 +21,7 @@ SOURCES += \
 	engine/lockunlock.cpp \
 	engine/randomknuth.cpp \
 	engine/messageboxes.cpp \
+	engine/xmllog.cpp \
 	\
 	interface/fet.cpp \
 	interface/helpaboutform.cpp \
@@ -460,6 +461,7 @@ HEADERS += \
 	engine/matrix.h \
 	engine/randomknuth.h \
 	engine/messageboxes.h \
+	engine/xmllog.h \
 	\
 	interface/fet.h \
 	interface/helpaboutform.h \

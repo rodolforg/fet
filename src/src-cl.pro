@@ -18,6 +18,7 @@ SOURCES += \
 	engine/lockunlock.cpp \
 	engine/randomknuth.cpp \
 	engine/messageboxes.cpp \
+	engine/xmllog.cpp \
 	\
 	interface/centerwidgetonscreen.cpp \
 	interface/fet.cpp \
@@ -45,6 +46,7 @@ HEADERS += \
 	engine/matrix.h \
 	engine/randomknuth.h \
 	engine/messageboxes.h \
+	engine/xmllog.h \
 	\
 	interface/centerwidgetonscreen.h \
 	interface/fet.h \
