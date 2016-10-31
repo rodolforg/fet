@@ -19,14 +19,13 @@ File centerwidgetonscreen.cpp
  *                                                                         *
  ***************************************************************************/
 
-#include <QtGlobal>
-
 #include "centerwidgetonscreen.h"
+
+#include <QtGlobal>
 
 #include "rules.h"
 #include "timetable.h"
 
-#ifndef FET_COMMAND_LINE
 #include "fetmainform.h"
 
 #include <QWidget>
@@ -40,14 +39,7 @@ File centerwidgetonscreen.cpp
 #include <QMessageBox>
 
 #include <QSettings>
-#endif
 
-#include <QObject>
-#include <QMetaObject>
-
-#include <QString>
-
-#ifndef FET_COMMAND_LINE
 #include <QHeaderView>
 #include <QTableWidget>
 #include <QTableWidgetItem>
@@ -218,4 +210,3 @@ void showWarningForInvisibleSubgroupActivity(QWidget* parent, const QString& ini
 
 	QMessageBox::warning(parent, title, message);
 }
-#endif

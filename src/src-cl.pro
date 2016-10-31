@@ -20,7 +20,6 @@ SOURCES += \
 	engine/messageboxes.cpp \
 	engine/xmllog.cpp \
 	\
-	interface/centerwidgetonscreen.cpp \
 	interface/fet.cpp \
 	interface/fetmainform.cpp \
 	interface/longtextmessagebox.cpp
@@ -48,7 +47,6 @@ HEADERS += \
 	engine/messageboxes.h \
 	engine/xmllog.h \
 	\
-	interface/centerwidgetonscreen.h \
 	interface/fet.h \
 	interface/longtextmessagebox.h
 
