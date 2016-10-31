@@ -113,10 +113,9 @@ QString getActivityDetailedDescription(const Rules& r, int id)
 	return s;
 }
 
-TimeConstraint::TimeConstraint()
+TimeConstraint::TimeConstraint(int type) :
+	type(type)
 {
-	type=CONSTRAINT_GENERIC_TIME;
-	
 	active=true;
 	comments=QString("");
 }
@@ -125,10 +124,9 @@ TimeConstraint::~TimeConstraint()
 {
 }
 
-TimeConstraint::TimeConstraint(double wp)
+TimeConstraint::TimeConstraint(int type, double wp) :
+	type(type)
 {
-	type=CONSTRAINT_GENERIC_TIME;
-
 	weightPercentage=wp;
 	assert(wp<=100 && wp>=0);
 
@@ -139,15 +137,15 @@ TimeConstraint::TimeConstraint(double wp)
 /////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintBasicCompulsoryTime::ConstraintBasicCompulsoryTime(): TimeConstraint()
+ConstraintBasicCompulsoryTime::ConstraintBasicCompulsoryTime() :
+	TimeConstraint(CONSTRAINT_BASIC_COMPULSORY_TIME)
 {
-	this->type=CONSTRAINT_BASIC_COMPULSORY_TIME;
 	this->weightPercentage=100;
 }
 
-ConstraintBasicCompulsoryTime::ConstraintBasicCompulsoryTime(double wp): TimeConstraint(wp)
+ConstraintBasicCompulsoryTime::ConstraintBasicCompulsoryTime(double wp) :
+	TimeConstraint(CONSTRAINT_BASIC_COMPULSORY_TIME, wp)
 {
-	this->type=CONSTRAINT_BASIC_COMPULSORY_TIME;
 }
 
 bool ConstraintBasicCompulsoryTime::computeInternalStructure(QWidget* parent, Rules& r)
@@ -439,20 +437,18 @@ bool ConstraintBasicCompulsoryTime::repairWrongDayOrHour(Rules& r)
 /////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintTeacherNotAvailableTimes::ConstraintTeacherNotAvailableTimes()
-	: TimeConstraint()
+ConstraintTeacherNotAvailableTimes::ConstraintTeacherNotAvailableTimes() :
+	TimeConstraint(CONSTRAINT_TEACHER_NOT_AVAILABLE_TIMES)
 {
-	this->type=CONSTRAINT_TEACHER_NOT_AVAILABLE_TIMES;
 }
 
-ConstraintTeacherNotAvailableTimes::ConstraintTeacherNotAvailableTimes(double wp, const QString& tn, QList<int> d, QList<int> h)
-	: TimeConstraint(wp)
+ConstraintTeacherNotAvailableTimes::ConstraintTeacherNotAvailableTimes(double wp, const QString& tn, QList<int> d, QList<int> h) :
+	TimeConstraint(CONSTRAINT_TEACHER_NOT_AVAILABLE_TIMES, wp)
 {
 	this->teacher=tn;
 	assert(d.count()==h.count());
 	this->days=d;
 	this->hours=h;
-	this->type=CONSTRAINT_TEACHER_NOT_AVAILABLE_TIMES;
 }
 
 QString ConstraintTeacherNotAvailableTimes::getXmlDescription(const Rules& r) const{
@@ -722,19 +718,18 @@ bool ConstraintTeacherNotAvailableTimes::repairWrongDayOrHour(Rules& r)
 /////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintStudentsSetNotAvailableTimes::ConstraintStudentsSetNotAvailableTimes()
-	: TimeConstraint()
+ConstraintStudentsSetNotAvailableTimes::ConstraintStudentsSetNotAvailableTimes() :
+	TimeConstraint(CONSTRAINT_STUDENTS_SET_NOT_AVAILABLE_TIMES)
 {
-	this->type=CONSTRAINT_STUDENTS_SET_NOT_AVAILABLE_TIMES;
 }
 
-ConstraintStudentsSetNotAvailableTimes::ConstraintStudentsSetNotAvailableTimes(double wp, const QString& sn, QList<int> d, QList<int> h)
-	 : TimeConstraint(wp){
+ConstraintStudentsSetNotAvailableTimes::ConstraintStudentsSetNotAvailableTimes(double wp, const QString& sn, QList<int> d, QList<int> h) :
+	TimeConstraint(CONSTRAINT_STUDENTS_SET_NOT_AVAILABLE_TIMES, wp)
+{
 	this->students = sn;
 	assert(d.count()==h.count());
 	this->days=d;
 	this->hours=h;
-	this->type=CONSTRAINT_STUDENTS_SET_NOT_AVAILABLE_TIMES;
 }
 
 bool ConstraintStudentsSetNotAvailableTimes::computeInternalStructure(QWidget* parent, Rules& r){
@@ -1036,15 +1031,14 @@ bool ConstraintStudentsSetNotAvailableTimes::repairWrongDayOrHour(Rules& r)
 /////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintActivitiesSameStartingTime::ConstraintActivitiesSameStartingTime()
-	: TimeConstraint()
+ConstraintActivitiesSameStartingTime::ConstraintActivitiesSameStartingTime() :
+	TimeConstraint(CONSTRAINT_ACTIVITIES_SAME_STARTING_TIME)
 {
-	type=CONSTRAINT_ACTIVITIES_SAME_STARTING_TIME;
 }
 
-ConstraintActivitiesSameStartingTime::ConstraintActivitiesSameStartingTime(double wp, int nact, const QList<int>& act)
- : TimeConstraint(wp)
- {
+ConstraintActivitiesSameStartingTime::ConstraintActivitiesSameStartingTime(double wp, int nact, const QList<int>& act) :
+	TimeConstraint(CONSTRAINT_ACTIVITIES_SAME_STARTING_TIME, wp)
+{
 	assert(nact>=2);
 	assert(act.count()==nact);
 	this->n_activities=nact;
@@ -1052,7 +1046,6 @@ ConstraintActivitiesSameStartingTime::ConstraintActivitiesSameStartingTime(doubl
 	for(int i=0; i<nact; i++)
 		this->activitiesId.append(act.at(i));
 
-	this->type=CONSTRAINT_ACTIVITIES_SAME_STARTING_TIME;
 }
 
 bool ConstraintActivitiesSameStartingTime::computeInternalStructure(QWidget* parent, Rules& r)
@@ -1310,15 +1303,14 @@ bool ConstraintActivitiesSameStartingTime::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintActivitiesNotOverlapping::ConstraintActivitiesNotOverlapping()
-	: TimeConstraint()
+ConstraintActivitiesNotOverlapping::ConstraintActivitiesNotOverlapping() :
+	TimeConstraint(CONSTRAINT_ACTIVITIES_NOT_OVERLAPPING)
 {
-	type=CONSTRAINT_ACTIVITIES_NOT_OVERLAPPING;
 }
 
-ConstraintActivitiesNotOverlapping::ConstraintActivitiesNotOverlapping(double wp, int nact, const QList<int>& act)
- : TimeConstraint(wp)
- {
+ConstraintActivitiesNotOverlapping::ConstraintActivitiesNotOverlapping(double wp, int nact, const QList<int>& act) :
+	TimeConstraint(CONSTRAINT_ACTIVITIES_NOT_OVERLAPPING, wp)
+{
   	assert(nact>=2);
   	assert(act.count()==nact);
 	this->n_activities=nact;
@@ -1326,7 +1318,6 @@ ConstraintActivitiesNotOverlapping::ConstraintActivitiesNotOverlapping(double wp
 	for(int i=0; i<nact; i++)
 		this->activitiesId.append(act.at(i));
 
-	this->type=CONSTRAINT_ACTIVITIES_NOT_OVERLAPPING;
 }
 
 bool ConstraintActivitiesNotOverlapping::computeInternalStructure(QWidget* parent, Rules& r)
@@ -1593,15 +1584,14 @@ bool ConstraintActivitiesNotOverlapping::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintMinDaysBetweenActivities::ConstraintMinDaysBetweenActivities()
-	: TimeConstraint()
+ConstraintMinDaysBetweenActivities::ConstraintMinDaysBetweenActivities() :
+	TimeConstraint(CONSTRAINT_MIN_DAYS_BETWEEN_ACTIVITIES)
 {
-	type=CONSTRAINT_MIN_DAYS_BETWEEN_ACTIVITIES;
 }
 
-ConstraintMinDaysBetweenActivities::ConstraintMinDaysBetweenActivities(double wp, bool cisd, int nact, const QList<int>& act, int n)
- : TimeConstraint(wp)
- {
+ConstraintMinDaysBetweenActivities::ConstraintMinDaysBetweenActivities(double wp, bool cisd, int nact, const QList<int>& act, int n) :
+	TimeConstraint(CONSTRAINT_MIN_DAYS_BETWEEN_ACTIVITIES, wp)
+{
 	this->consecutiveIfSameDay=cisd;
 
 	assert(nact>=2);
@@ -1613,8 +1603,6 @@ ConstraintMinDaysBetweenActivities::ConstraintMinDaysBetweenActivities(double wp
 
 	assert(n>0);
 	this->minDays=n;
-
-	this->type=CONSTRAINT_MIN_DAYS_BETWEEN_ACTIVITIES;
 }
 
 bool ConstraintMinDaysBetweenActivities::operator==(ConstraintMinDaysBetweenActivities& c){
@@ -1917,15 +1905,14 @@ bool ConstraintMinDaysBetweenActivities::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintMaxDaysBetweenActivities::ConstraintMaxDaysBetweenActivities()
-	: TimeConstraint()
+ConstraintMaxDaysBetweenActivities::ConstraintMaxDaysBetweenActivities() :
+	TimeConstraint(CONSTRAINT_MAX_DAYS_BETWEEN_ACTIVITIES)
 {
-	type=CONSTRAINT_MAX_DAYS_BETWEEN_ACTIVITIES;
 }
 
-ConstraintMaxDaysBetweenActivities::ConstraintMaxDaysBetweenActivities(double wp, int nact, const QList<int>& act, int n)
- : TimeConstraint(wp)
- {
+ConstraintMaxDaysBetweenActivities::ConstraintMaxDaysBetweenActivities(double wp, int nact, const QList<int>& act, int n) :
+	TimeConstraint(CONSTRAINT_MAX_DAYS_BETWEEN_ACTIVITIES, wp)
+{
   	assert(nact>=2);
   	assert(act.count()==nact);
 	this->n_activities=nact;
@@ -1935,8 +1922,6 @@ ConstraintMaxDaysBetweenActivities::ConstraintMaxDaysBetweenActivities(double wp
 
 	assert(n>=0);
 	this->maxDays=n;
-
-	this->type=CONSTRAINT_MAX_DAYS_BETWEEN_ACTIVITIES;
 }
 
 bool ConstraintMaxDaysBetweenActivities::computeInternalStructure(QWidget* parent, Rules& r)
@@ -2212,15 +2197,14 @@ bool ConstraintMaxDaysBetweenActivities::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintMinGapsBetweenActivities::ConstraintMinGapsBetweenActivities()
-	: TimeConstraint()
+ConstraintMinGapsBetweenActivities::ConstraintMinGapsBetweenActivities() :
+	TimeConstraint(CONSTRAINT_MIN_GAPS_BETWEEN_ACTIVITIES)
 {
-	type=CONSTRAINT_MIN_GAPS_BETWEEN_ACTIVITIES;
 }
 
-ConstraintMinGapsBetweenActivities::ConstraintMinGapsBetweenActivities(double wp, int nact, const QList<int>& actList, int ngaps)
- : TimeConstraint(wp)
- {
+ConstraintMinGapsBetweenActivities::ConstraintMinGapsBetweenActivities(double wp, int nact, const QList<int>& actList, int ngaps) :
+	TimeConstraint(CONSTRAINT_MIN_GAPS_BETWEEN_ACTIVITIES, wp)
+{
 	this->n_activities=nact;
 	assert(nact==actList.count());
 	this->activitiesId.clear();
@@ -2229,8 +2213,6 @@ ConstraintMinGapsBetweenActivities::ConstraintMinGapsBetweenActivities(double wp
 
 	assert(ngaps>0);
 	this->minGaps=ngaps;
-
-	this->type=CONSTRAINT_MIN_GAPS_BETWEEN_ACTIVITIES;
 }
 
 bool ConstraintMinGapsBetweenActivities::computeInternalStructure(QWidget* parent, Rules& r)
@@ -2512,19 +2494,16 @@ bool ConstraintMinGapsBetweenActivities::repairWrongDayOrHour(Rules& r)
 ///////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintTeachersMaxHoursDaily::ConstraintTeachersMaxHoursDaily()
-	: TimeConstraint()
+ConstraintTeachersMaxHoursDaily::ConstraintTeachersMaxHoursDaily() :
+	TimeConstraint(CONSTRAINT_TEACHERS_MAX_HOURS_DAILY)
 {
-	this->type=CONSTRAINT_TEACHERS_MAX_HOURS_DAILY;
 }
 
-ConstraintTeachersMaxHoursDaily::ConstraintTeachersMaxHoursDaily(double wp, int maxhours)
- : TimeConstraint(wp)
- {
+ConstraintTeachersMaxHoursDaily::ConstraintTeachersMaxHoursDaily(double wp, int maxhours) :
+	TimeConstraint(CONSTRAINT_TEACHERS_MAX_HOURS_DAILY, wp)
+{
 	assert(maxhours>0);
 	this->maxHoursDaily=maxhours;
-
-	this->type=CONSTRAINT_TEACHERS_MAX_HOURS_DAILY;
 }
 
 bool ConstraintTeachersMaxHoursDaily::computeInternalStructure(QWidget* parent, Rules& r)
@@ -2708,20 +2687,17 @@ bool ConstraintTeachersMaxHoursDaily::repairWrongDayOrHour(Rules& r)
 ///////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintTeacherMaxHoursDaily::ConstraintTeacherMaxHoursDaily()
-	: TimeConstraint()
+ConstraintTeacherMaxHoursDaily::ConstraintTeacherMaxHoursDaily() :
+	TimeConstraint(CONSTRAINT_TEACHER_MAX_HOURS_DAILY)
 {
-	this->type=CONSTRAINT_TEACHER_MAX_HOURS_DAILY;
 }
 
-ConstraintTeacherMaxHoursDaily::ConstraintTeacherMaxHoursDaily(double wp, int maxhours, const QString& teacher)
- : TimeConstraint(wp)
+ConstraintTeacherMaxHoursDaily::ConstraintTeacherMaxHoursDaily(double wp, int maxhours, const QString& teacher) :
+	TimeConstraint(CONSTRAINT_TEACHER_MAX_HOURS_DAILY, wp)
  {
 	assert(maxhours>0);
 	this->maxHoursDaily=maxhours;
 	this->teacherName=teacher;
-
-	this->type=CONSTRAINT_TEACHER_MAX_HOURS_DAILY;
 }
 
 bool ConstraintTeacherMaxHoursDaily::computeInternalStructure(QWidget* parent, Rules& r)
@@ -2908,19 +2884,16 @@ bool ConstraintTeacherMaxHoursDaily::repairWrongDayOrHour(Rules& r)
 ///////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintTeachersMaxHoursContinuously::ConstraintTeachersMaxHoursContinuously()
-	: TimeConstraint()
+ConstraintTeachersMaxHoursContinuously::ConstraintTeachersMaxHoursContinuously() :
+	TimeConstraint(CONSTRAINT_TEACHERS_MAX_HOURS_CONTINUOUSLY)
 {
-	this->type=CONSTRAINT_TEACHERS_MAX_HOURS_CONTINUOUSLY;
 }
 
-ConstraintTeachersMaxHoursContinuously::ConstraintTeachersMaxHoursContinuously(double wp, int maxhours)
- : TimeConstraint(wp)
- {
+ConstraintTeachersMaxHoursContinuously::ConstraintTeachersMaxHoursContinuously(double wp, int maxhours) :
+	TimeConstraint(CONSTRAINT_TEACHERS_MAX_HOURS_CONTINUOUSLY, wp)
+{
 	assert(maxhours>0);
 	this->maxHoursContinuously=maxhours;
-
-	this->type=CONSTRAINT_TEACHERS_MAX_HOURS_CONTINUOUSLY;
 }
 
 bool ConstraintTeachersMaxHoursContinuously::computeInternalStructure(QWidget* parent, Rules& r)
@@ -3131,20 +3104,17 @@ bool ConstraintTeachersMaxHoursContinuously::repairWrongDayOrHour(Rules& r)
 ///////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintTeacherMaxHoursContinuously::ConstraintTeacherMaxHoursContinuously()
-	: TimeConstraint()
+ConstraintTeacherMaxHoursContinuously::ConstraintTeacherMaxHoursContinuously() :
+	TimeConstraint(CONSTRAINT_TEACHER_MAX_HOURS_CONTINUOUSLY)
 {
-	this->type=CONSTRAINT_TEACHER_MAX_HOURS_CONTINUOUSLY;
 }
 
-ConstraintTeacherMaxHoursContinuously::ConstraintTeacherMaxHoursContinuously(double wp, int maxhours, const QString& teacher)
- : TimeConstraint(wp)
- {
+ConstraintTeacherMaxHoursContinuously::ConstraintTeacherMaxHoursContinuously(double wp, int maxhours, const QString& teacher) :
+	TimeConstraint(CONSTRAINT_TEACHER_MAX_HOURS_CONTINUOUSLY, wp)
+{
 	assert(maxhours>0);
 	this->maxHoursContinuously=maxhours;
 	this->teacherName=teacher;
-
-	this->type=CONSTRAINT_TEACHER_MAX_HOURS_CONTINUOUSLY;
 }
 
 bool ConstraintTeacherMaxHoursContinuously::computeInternalStructure(QWidget* parent, Rules& r)
@@ -3359,20 +3329,17 @@ bool ConstraintTeacherMaxHoursContinuously::repairWrongDayOrHour(Rules& r)
 ///////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintTeachersActivityTagMaxHoursContinuously::ConstraintTeachersActivityTagMaxHoursContinuously()
-	: TimeConstraint()
+ConstraintTeachersActivityTagMaxHoursContinuously::ConstraintTeachersActivityTagMaxHoursContinuously() :
+	TimeConstraint(CONSTRAINT_TEACHERS_ACTIVITY_TAG_MAX_HOURS_CONTINUOUSLY)
 {
-	this->type=CONSTRAINT_TEACHERS_ACTIVITY_TAG_MAX_HOURS_CONTINUOUSLY;
 }
 
-ConstraintTeachersActivityTagMaxHoursContinuously::ConstraintTeachersActivityTagMaxHoursContinuously(double wp, int maxhours, const QString& activityTag)
- : TimeConstraint(wp)
- {
+ConstraintTeachersActivityTagMaxHoursContinuously::ConstraintTeachersActivityTagMaxHoursContinuously(double wp, int maxhours, const QString& activityTag) :
+	TimeConstraint(CONSTRAINT_TEACHERS_ACTIVITY_TAG_MAX_HOURS_CONTINUOUSLY, wp)
+{
 	assert(maxhours>0);
 	this->maxHoursContinuously=maxhours;
 	this->activityTagName=activityTag;
-
-	this->type=CONSTRAINT_TEACHERS_ACTIVITY_TAG_MAX_HOURS_CONTINUOUSLY;
 }
 
 bool ConstraintTeachersActivityTagMaxHoursContinuously::computeInternalStructure(QWidget* parent, Rules& r)
@@ -3623,21 +3590,18 @@ bool ConstraintTeachersActivityTagMaxHoursContinuously::repairWrongDayOrHour(Rul
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////
-ConstraintTeacherActivityTagMaxHoursContinuously::ConstraintTeacherActivityTagMaxHoursContinuously()
-	: TimeConstraint()
+ConstraintTeacherActivityTagMaxHoursContinuously::ConstraintTeacherActivityTagMaxHoursContinuously() :
+	TimeConstraint(CONSTRAINT_TEACHER_ACTIVITY_TAG_MAX_HOURS_CONTINUOUSLY)
 {
-	this->type=CONSTRAINT_TEACHER_ACTIVITY_TAG_MAX_HOURS_CONTINUOUSLY;
 }
 
-ConstraintTeacherActivityTagMaxHoursContinuously::ConstraintTeacherActivityTagMaxHoursContinuously(double wp, int maxhours, const QString& teacher, const QString& activityTag)
- : TimeConstraint(wp)
- {
+ConstraintTeacherActivityTagMaxHoursContinuously::ConstraintTeacherActivityTagMaxHoursContinuously(double wp, int maxhours, const QString& teacher, const QString& activityTag) :
+	TimeConstraint(CONSTRAINT_TEACHER_ACTIVITY_TAG_MAX_HOURS_CONTINUOUSLY, wp)
+{
 	assert(maxhours>0);
 	this->maxHoursContinuously=maxhours;
 	this->teacherName=teacher;
 	this->activityTagName=activityTag;
-
-	this->type=CONSTRAINT_TEACHER_ACTIVITY_TAG_MAX_HOURS_CONTINUOUSLY;
 }
 
 bool ConstraintTeacherActivityTagMaxHoursContinuously::computeInternalStructure(QWidget* parent, Rules& r)
@@ -3894,18 +3858,16 @@ bool ConstraintTeacherActivityTagMaxHoursContinuously::repairWrongDayOrHour(Rule
 ///////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintTeacherMaxDaysPerWeek::ConstraintTeacherMaxDaysPerWeek()
-	: TimeConstraint()
+ConstraintTeacherMaxDaysPerWeek::ConstraintTeacherMaxDaysPerWeek() :
+	TimeConstraint(CONSTRAINT_TEACHER_MAX_DAYS_PER_WEEK)
 {
-	this->type=CONSTRAINT_TEACHER_MAX_DAYS_PER_WEEK;
 }
 
-ConstraintTeacherMaxDaysPerWeek::ConstraintTeacherMaxDaysPerWeek(double wp, int maxnd, QString tn)
-	 : TimeConstraint(wp)
+ConstraintTeacherMaxDaysPerWeek::ConstraintTeacherMaxDaysPerWeek(double wp, int maxnd, QString tn) :
+	TimeConstraint(CONSTRAINT_TEACHER_MAX_DAYS_PER_WEEK, wp)
 {
 	this->teacherName = tn;
 	this->maxDaysPerWeek=maxnd;
-	this->type=CONSTRAINT_TEACHER_MAX_DAYS_PER_WEEK;
 }
 
 bool ConstraintTeacherMaxDaysPerWeek::computeInternalStructure(QWidget* parent, Rules& r)
@@ -4102,17 +4064,15 @@ bool ConstraintTeacherMaxDaysPerWeek::repairWrongDayOrHour(Rules& r)
 ///////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintTeachersMaxDaysPerWeek::ConstraintTeachersMaxDaysPerWeek()
-	: TimeConstraint()
+ConstraintTeachersMaxDaysPerWeek::ConstraintTeachersMaxDaysPerWeek() :
+	TimeConstraint(CONSTRAINT_TEACHERS_MAX_DAYS_PER_WEEK)
 {
-	this->type=CONSTRAINT_TEACHERS_MAX_DAYS_PER_WEEK;
 }
 
-ConstraintTeachersMaxDaysPerWeek::ConstraintTeachersMaxDaysPerWeek(double wp, int maxnd)
-	 : TimeConstraint(wp)
+ConstraintTeachersMaxDaysPerWeek::ConstraintTeachersMaxDaysPerWeek(double wp, int maxnd) :
+	TimeConstraint(CONSTRAINT_TEACHERS_MAX_DAYS_PER_WEEK, wp)
 {
 	this->maxDaysPerWeek=maxnd;
-	this->type=CONSTRAINT_TEACHERS_MAX_DAYS_PER_WEEK;
 }
 
 bool ConstraintTeachersMaxDaysPerWeek::computeInternalStructure(QWidget* parent, Rules& r)
@@ -4310,16 +4270,14 @@ bool ConstraintTeachersMaxDaysPerWeek::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintTeachersMaxGapsPerWeek::ConstraintTeachersMaxGapsPerWeek()
-	: TimeConstraint()
+ConstraintTeachersMaxGapsPerWeek::ConstraintTeachersMaxGapsPerWeek() :
+	TimeConstraint(CONSTRAINT_TEACHERS_MAX_GAPS_PER_WEEK)
 {
-	this->type = CONSTRAINT_TEACHERS_MAX_GAPS_PER_WEEK;
 }
 
-ConstraintTeachersMaxGapsPerWeek::ConstraintTeachersMaxGapsPerWeek(double wp, int mg)
-	: TimeConstraint(wp)
+ConstraintTeachersMaxGapsPerWeek::ConstraintTeachersMaxGapsPerWeek(double wp, int mg) :
+	TimeConstraint(CONSTRAINT_TEACHERS_MAX_GAPS_PER_WEEK, wp)
 {
-	this->type = CONSTRAINT_TEACHERS_MAX_GAPS_PER_WEEK;
 	this->maxGaps=mg;
 }
 
@@ -4514,16 +4472,14 @@ bool ConstraintTeachersMaxGapsPerWeek::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintTeacherMaxGapsPerWeek::ConstraintTeacherMaxGapsPerWeek()
-	: TimeConstraint()
+ConstraintTeacherMaxGapsPerWeek::ConstraintTeacherMaxGapsPerWeek() :
+	TimeConstraint(CONSTRAINT_TEACHER_MAX_GAPS_PER_WEEK)
 {
-	this->type = CONSTRAINT_TEACHER_MAX_GAPS_PER_WEEK;
 }
 
-ConstraintTeacherMaxGapsPerWeek::ConstraintTeacherMaxGapsPerWeek(double wp, QString tn, int mg)
-	: TimeConstraint(wp)
+ConstraintTeacherMaxGapsPerWeek::ConstraintTeacherMaxGapsPerWeek(double wp, QString tn, int mg) :
+	TimeConstraint(CONSTRAINT_TEACHER_MAX_GAPS_PER_WEEK, wp)
 {
-	this->type = CONSTRAINT_TEACHER_MAX_GAPS_PER_WEEK;
 	this->teacherName=tn;
 	this->maxGaps=mg;
 }
@@ -4723,16 +4679,14 @@ bool ConstraintTeacherMaxGapsPerWeek::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintTeachersMaxGapsPerDay::ConstraintTeachersMaxGapsPerDay()
-	: TimeConstraint()
+ConstraintTeachersMaxGapsPerDay::ConstraintTeachersMaxGapsPerDay() :
+	TimeConstraint(CONSTRAINT_TEACHERS_MAX_GAPS_PER_DAY)
 {
-	this->type = CONSTRAINT_TEACHERS_MAX_GAPS_PER_DAY;
 }
 
-ConstraintTeachersMaxGapsPerDay::ConstraintTeachersMaxGapsPerDay(double wp, int mg)
-	: TimeConstraint(wp)
+ConstraintTeachersMaxGapsPerDay::ConstraintTeachersMaxGapsPerDay(double wp, int mg) :
+	TimeConstraint(CONSTRAINT_TEACHERS_MAX_GAPS_PER_DAY, wp)
 {
-	this->type = CONSTRAINT_TEACHERS_MAX_GAPS_PER_DAY;
 	this->maxGaps=mg;
 }
 
@@ -4926,16 +4880,14 @@ bool ConstraintTeachersMaxGapsPerDay::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintTeacherMaxGapsPerDay::ConstraintTeacherMaxGapsPerDay()
-	: TimeConstraint()
+ConstraintTeacherMaxGapsPerDay::ConstraintTeacherMaxGapsPerDay() :
+	TimeConstraint(CONSTRAINT_TEACHER_MAX_GAPS_PER_DAY)
 {
-	this->type = CONSTRAINT_TEACHER_MAX_GAPS_PER_DAY;
 }
 
-ConstraintTeacherMaxGapsPerDay::ConstraintTeacherMaxGapsPerDay(double wp, QString tn, int mg)
-	: TimeConstraint(wp)
+ConstraintTeacherMaxGapsPerDay::ConstraintTeacherMaxGapsPerDay(double wp, QString tn, int mg) :
+	TimeConstraint(CONSTRAINT_TEACHER_MAX_GAPS_PER_DAY, wp)
 {
-	this->type = CONSTRAINT_TEACHER_MAX_GAPS_PER_DAY;
 	this->teacherName=tn;
 	this->maxGaps=mg;
 }
@@ -5136,18 +5088,16 @@ bool ConstraintTeacherMaxGapsPerDay::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintBreakTimes::ConstraintBreakTimes()
-	: TimeConstraint()
+ConstraintBreakTimes::ConstraintBreakTimes() :
+	TimeConstraint(CONSTRAINT_BREAK_TIMES)
 {
-	this->type = CONSTRAINT_BREAK_TIMES;
 }
 
-ConstraintBreakTimes::ConstraintBreakTimes(double wp, QList<int> d, QList<int> h)
-	: TimeConstraint(wp)
+ConstraintBreakTimes::ConstraintBreakTimes(double wp, QList<int> d, QList<int> h) :
+	TimeConstraint(CONSTRAINT_BREAK_TIMES, wp)
 {
 	this->days = d;
 	this->hours = h;
-	this->type = CONSTRAINT_BREAK_TIMES;
 }
 
 bool ConstraintBreakTimes::hasInactiveActivities(const Rules& r) const
@@ -5409,16 +5359,14 @@ bool ConstraintBreakTimes::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintStudentsMaxGapsPerWeek::ConstraintStudentsMaxGapsPerWeek()
-	: TimeConstraint()
+ConstraintStudentsMaxGapsPerWeek::ConstraintStudentsMaxGapsPerWeek() :
+	TimeConstraint(CONSTRAINT_STUDENTS_MAX_GAPS_PER_WEEK)
 {
-	this->type = CONSTRAINT_STUDENTS_MAX_GAPS_PER_WEEK;
 }
 
-ConstraintStudentsMaxGapsPerWeek::ConstraintStudentsMaxGapsPerWeek(double wp, int mg)
-	: TimeConstraint(wp)
+ConstraintStudentsMaxGapsPerWeek::ConstraintStudentsMaxGapsPerWeek(double wp, int mg) :
+	TimeConstraint(CONSTRAINT_STUDENTS_MAX_GAPS_PER_WEEK, wp)
 {
-	this->type = CONSTRAINT_STUDENTS_MAX_GAPS_PER_WEEK;
 	this->maxGaps=mg;
 }
 
@@ -5621,16 +5569,14 @@ bool ConstraintStudentsMaxGapsPerWeek::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintStudentsSetMaxGapsPerWeek::ConstraintStudentsSetMaxGapsPerWeek()
-	: TimeConstraint()
+ConstraintStudentsSetMaxGapsPerWeek::ConstraintStudentsSetMaxGapsPerWeek() :
+	TimeConstraint(CONSTRAINT_STUDENTS_SET_MAX_GAPS_PER_WEEK)
 {
-	this->type = CONSTRAINT_STUDENTS_SET_MAX_GAPS_PER_WEEK;
 }
 
-ConstraintStudentsSetMaxGapsPerWeek::ConstraintStudentsSetMaxGapsPerWeek(double wp, int mg, const QString& st )
-	: TimeConstraint(wp)
+ConstraintStudentsSetMaxGapsPerWeek::ConstraintStudentsSetMaxGapsPerWeek(double wp, int mg, const QString& st ) :
+	TimeConstraint(CONSTRAINT_STUDENTS_SET_MAX_GAPS_PER_WEEK, wp)
 {
-	this->type = CONSTRAINT_STUDENTS_SET_MAX_GAPS_PER_WEEK;
 	this->maxGaps=mg;
 	this->students = st;
 }
@@ -5880,16 +5826,14 @@ bool ConstraintStudentsSetMaxGapsPerWeek::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintStudentsEarlyMaxBeginningsAtSecondHour::ConstraintStudentsEarlyMaxBeginningsAtSecondHour()
-	: TimeConstraint()
+ConstraintStudentsEarlyMaxBeginningsAtSecondHour::ConstraintStudentsEarlyMaxBeginningsAtSecondHour() :
+	TimeConstraint(CONSTRAINT_STUDENTS_EARLY_MAX_BEGINNINGS_AT_SECOND_HOUR)
 {
-	this->type = CONSTRAINT_STUDENTS_EARLY_MAX_BEGINNINGS_AT_SECOND_HOUR;
 }
 
-ConstraintStudentsEarlyMaxBeginningsAtSecondHour::ConstraintStudentsEarlyMaxBeginningsAtSecondHour(double wp, int mBSH)
-	: TimeConstraint(wp)
+ConstraintStudentsEarlyMaxBeginningsAtSecondHour::ConstraintStudentsEarlyMaxBeginningsAtSecondHour(double wp, int mBSH) :
+	TimeConstraint(CONSTRAINT_STUDENTS_EARLY_MAX_BEGINNINGS_AT_SECOND_HOUR, wp)
 {
-	this->type = CONSTRAINT_STUDENTS_EARLY_MAX_BEGINNINGS_AT_SECOND_HOUR;
 	this->maxBeginningsAtSecondHour=mBSH;
 }
 
@@ -6122,16 +6066,14 @@ bool ConstraintStudentsEarlyMaxBeginningsAtSecondHour::repairWrongDayOrHour(Rule
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour()
-	: TimeConstraint()
+ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour() :
+	TimeConstraint(CONSTRAINT_STUDENTS_SET_EARLY_MAX_BEGINNINGS_AT_SECOND_HOUR)
 {
-	this->type = CONSTRAINT_STUDENTS_SET_EARLY_MAX_BEGINNINGS_AT_SECOND_HOUR;
 }
 
-ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour(double wp, int mBSH, const QString& students)
-	: TimeConstraint(wp)
+ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour(double wp, int mBSH, const QString& students) :
+	TimeConstraint(CONSTRAINT_STUDENTS_SET_EARLY_MAX_BEGINNINGS_AT_SECOND_HOUR, wp)
 {
-	this->type = CONSTRAINT_STUDENTS_SET_EARLY_MAX_BEGINNINGS_AT_SECOND_HOUR;
 	this->students=students;
 	this->maxBeginningsAtSecondHour=mBSH;
 }
@@ -6412,18 +6354,16 @@ bool ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::repairWrongDayOrHour(R
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintStudentsMaxHoursDaily::ConstraintStudentsMaxHoursDaily()
-	: TimeConstraint()
+ConstraintStudentsMaxHoursDaily::ConstraintStudentsMaxHoursDaily() :
+	TimeConstraint(CONSTRAINT_STUDENTS_MAX_HOURS_DAILY)
 {
-	this->type = CONSTRAINT_STUDENTS_MAX_HOURS_DAILY;
 	this->maxHoursDaily = -1;
 }
 
-ConstraintStudentsMaxHoursDaily::ConstraintStudentsMaxHoursDaily(double wp, int maxnh)
-	: TimeConstraint(wp)
+ConstraintStudentsMaxHoursDaily::ConstraintStudentsMaxHoursDaily(double wp, int maxnh) :
+	TimeConstraint(CONSTRAINT_STUDENTS_MAX_HOURS_DAILY, wp)
 {
 	this->maxHoursDaily = maxnh;
-	this->type = CONSTRAINT_STUDENTS_MAX_HOURS_DAILY;
 }
 
 bool ConstraintStudentsMaxHoursDaily::computeInternalStructure(QWidget* parent, Rules& r)
@@ -6616,19 +6556,17 @@ bool ConstraintStudentsMaxHoursDaily::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintStudentsSetMaxHoursDaily::ConstraintStudentsSetMaxHoursDaily()
-	: TimeConstraint()
+ConstraintStudentsSetMaxHoursDaily::ConstraintStudentsSetMaxHoursDaily() :
+	TimeConstraint(CONSTRAINT_STUDENTS_SET_MAX_HOURS_DAILY)
 {
-	this->type = CONSTRAINT_STUDENTS_SET_MAX_HOURS_DAILY;
 	this->maxHoursDaily = -1;
 }
 
-ConstraintStudentsSetMaxHoursDaily::ConstraintStudentsSetMaxHoursDaily(double wp, int maxnh, QString s)
-	: TimeConstraint(wp)
+ConstraintStudentsSetMaxHoursDaily::ConstraintStudentsSetMaxHoursDaily(double wp, int maxnh, QString s) :
+	TimeConstraint(CONSTRAINT_STUDENTS_SET_MAX_HOURS_DAILY, wp)
 {
 	this->maxHoursDaily = maxnh;
 	this->students = s;
-	this->type = CONSTRAINT_STUDENTS_SET_MAX_HOURS_DAILY;
 }
 
 bool ConstraintStudentsSetMaxHoursDaily::hasInactiveActivities(const Rules& r) const
@@ -6868,18 +6806,16 @@ bool ConstraintStudentsSetMaxHoursDaily::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintStudentsMaxHoursContinuously::ConstraintStudentsMaxHoursContinuously()
-	: TimeConstraint()
+ConstraintStudentsMaxHoursContinuously::ConstraintStudentsMaxHoursContinuously() :
+	TimeConstraint(CONSTRAINT_STUDENTS_MAX_HOURS_CONTINUOUSLY)
 {
-	this->type = CONSTRAINT_STUDENTS_MAX_HOURS_CONTINUOUSLY;
 	this->maxHoursContinuously = -1;
 }
 
-ConstraintStudentsMaxHoursContinuously::ConstraintStudentsMaxHoursContinuously(double wp, int maxnh)
-	: TimeConstraint(wp)
+ConstraintStudentsMaxHoursContinuously::ConstraintStudentsMaxHoursContinuously(double wp, int maxnh) :
+	TimeConstraint(CONSTRAINT_STUDENTS_MAX_HOURS_CONTINUOUSLY, wp)
 {
 	this->maxHoursContinuously = maxnh;
-	this->type = CONSTRAINT_STUDENTS_MAX_HOURS_CONTINUOUSLY;
 }
 
 bool ConstraintStudentsMaxHoursContinuously::computeInternalStructure(QWidget* parent, Rules& r)
@@ -7096,19 +7032,17 @@ bool ConstraintStudentsMaxHoursContinuously::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintStudentsSetMaxHoursContinuously::ConstraintStudentsSetMaxHoursContinuously()
-	: TimeConstraint()
+ConstraintStudentsSetMaxHoursContinuously::ConstraintStudentsSetMaxHoursContinuously() :
+	TimeConstraint(CONSTRAINT_STUDENTS_SET_MAX_HOURS_CONTINUOUSLY)
 {
-	this->type = CONSTRAINT_STUDENTS_SET_MAX_HOURS_CONTINUOUSLY;
 	this->maxHoursContinuously = -1;
 }
 
-ConstraintStudentsSetMaxHoursContinuously::ConstraintStudentsSetMaxHoursContinuously(double wp, int maxnh, QString s)
-	: TimeConstraint(wp)
+ConstraintStudentsSetMaxHoursContinuously::ConstraintStudentsSetMaxHoursContinuously(double wp, int maxnh, QString s) :
+	TimeConstraint(CONSTRAINT_STUDENTS_SET_MAX_HOURS_CONTINUOUSLY, wp)
 {
 	this->maxHoursContinuously = maxnh;
 	this->students = s;
-	this->type = CONSTRAINT_STUDENTS_SET_MAX_HOURS_CONTINUOUSLY;
 }
 
 bool ConstraintStudentsSetMaxHoursContinuously::hasInactiveActivities(const Rules& r) const
@@ -7371,19 +7305,17 @@ bool ConstraintStudentsSetMaxHoursContinuously::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintStudentsActivityTagMaxHoursContinuously::ConstraintStudentsActivityTagMaxHoursContinuously()
-	: TimeConstraint()
+ConstraintStudentsActivityTagMaxHoursContinuously::ConstraintStudentsActivityTagMaxHoursContinuously() :
+	TimeConstraint(CONSTRAINT_STUDENTS_ACTIVITY_TAG_MAX_HOURS_CONTINUOUSLY)
 {
-	this->type = CONSTRAINT_STUDENTS_ACTIVITY_TAG_MAX_HOURS_CONTINUOUSLY;
 	this->maxHoursContinuously = -1;
 }
 
-ConstraintStudentsActivityTagMaxHoursContinuously::ConstraintStudentsActivityTagMaxHoursContinuously(double wp, int maxnh, const QString& activityTag)
-	: TimeConstraint(wp)
+ConstraintStudentsActivityTagMaxHoursContinuously::ConstraintStudentsActivityTagMaxHoursContinuously(double wp, int maxnh, const QString& activityTag) :
+	TimeConstraint(CONSTRAINT_STUDENTS_ACTIVITY_TAG_MAX_HOURS_CONTINUOUSLY, wp)
 {
 	this->maxHoursContinuously = maxnh;
 	this->activityTagName=activityTag;
-	this->type = CONSTRAINT_STUDENTS_ACTIVITY_TAG_MAX_HOURS_CONTINUOUSLY;
 }
 
 bool ConstraintStudentsActivityTagMaxHoursContinuously::computeInternalStructure(QWidget* parent, Rules& r)
@@ -7644,20 +7576,18 @@ bool ConstraintStudentsActivityTagMaxHoursContinuously::repairWrongDayOrHour(Rul
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintStudentsSetActivityTagMaxHoursContinuously::ConstraintStudentsSetActivityTagMaxHoursContinuously()
-	: TimeConstraint()
+ConstraintStudentsSetActivityTagMaxHoursContinuously::ConstraintStudentsSetActivityTagMaxHoursContinuously() :
+	TimeConstraint(CONSTRAINT_STUDENTS_SET_ACTIVITY_TAG_MAX_HOURS_CONTINUOUSLY)
 {
-	this->type = CONSTRAINT_STUDENTS_SET_ACTIVITY_TAG_MAX_HOURS_CONTINUOUSLY;
 	this->maxHoursContinuously = -1;
 }
 
-ConstraintStudentsSetActivityTagMaxHoursContinuously::ConstraintStudentsSetActivityTagMaxHoursContinuously(double wp, int maxnh, const QString& s, const QString& activityTag)
-	: TimeConstraint(wp)
+ConstraintStudentsSetActivityTagMaxHoursContinuously::ConstraintStudentsSetActivityTagMaxHoursContinuously(double wp, int maxnh, const QString& s, const QString& activityTag) :
+	TimeConstraint(CONSTRAINT_STUDENTS_SET_ACTIVITY_TAG_MAX_HOURS_CONTINUOUSLY, wp)
 {
 	this->maxHoursContinuously = maxnh;
 	this->students = s;
 	this->activityTagName=activityTag;
-	this->type = CONSTRAINT_STUDENTS_SET_ACTIVITY_TAG_MAX_HOURS_CONTINUOUSLY;
 }
 
 bool ConstraintStudentsSetActivityTagMaxHoursContinuously::hasInactiveActivities(const Rules& r) const
@@ -7964,21 +7894,18 @@ bool ConstraintStudentsSetActivityTagMaxHoursContinuously::repairWrongDayOrHour(
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintStudentsMinHoursDaily::ConstraintStudentsMinHoursDaily()
-	: TimeConstraint()
+ConstraintStudentsMinHoursDaily::ConstraintStudentsMinHoursDaily() :
+	TimeConstraint(CONSTRAINT_STUDENTS_MIN_HOURS_DAILY)
 {
-	this->type = CONSTRAINT_STUDENTS_MIN_HOURS_DAILY;
 	this->minHoursDaily = -1;
 	
 	this->allowEmptyDays=false;
 }
 
-ConstraintStudentsMinHoursDaily::ConstraintStudentsMinHoursDaily(double wp, int minnh, bool _allowEmptyDays)
-	: TimeConstraint(wp)
+ConstraintStudentsMinHoursDaily::ConstraintStudentsMinHoursDaily(double wp, int minnh, bool _allowEmptyDays) :
+	TimeConstraint(CONSTRAINT_STUDENTS_MIN_HOURS_DAILY, wp)
 {
 	this->minHoursDaily = minnh;
-	this->type = CONSTRAINT_STUDENTS_MIN_HOURS_DAILY;
-	
 	this->allowEmptyDays=_allowEmptyDays;
 }
 
@@ -8192,22 +8119,19 @@ bool ConstraintStudentsMinHoursDaily::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintStudentsSetMinHoursDaily::ConstraintStudentsSetMinHoursDaily()
-	: TimeConstraint()
+ConstraintStudentsSetMinHoursDaily::ConstraintStudentsSetMinHoursDaily() :
+	TimeConstraint(CONSTRAINT_STUDENTS_SET_MIN_HOURS_DAILY)
 {
-	this->type = CONSTRAINT_STUDENTS_SET_MIN_HOURS_DAILY;
 	this->minHoursDaily = -1;
 	
 	this->allowEmptyDays=false;
 }
 
-ConstraintStudentsSetMinHoursDaily::ConstraintStudentsSetMinHoursDaily(double wp, int minnh, QString s, bool _allowEmptyDays)
-	: TimeConstraint(wp)
+ConstraintStudentsSetMinHoursDaily::ConstraintStudentsSetMinHoursDaily(double wp, int minnh, QString s, bool _allowEmptyDays) :
+	TimeConstraint(CONSTRAINT_STUDENTS_SET_MIN_HOURS_DAILY, wp)
 {
 	this->minHoursDaily = minnh;
 	this->students = s;
-	this->type = CONSTRAINT_STUDENTS_SET_MIN_HOURS_DAILY;
-	
 	this->allowEmptyDays=_allowEmptyDays;
 }
 
@@ -8467,19 +8391,17 @@ bool ConstraintStudentsSetMinHoursDaily::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintActivityPreferredStartingTime::ConstraintActivityPreferredStartingTime()
-	: TimeConstraint()
+ConstraintActivityPreferredStartingTime::ConstraintActivityPreferredStartingTime() :
+	TimeConstraint(CONSTRAINT_ACTIVITY_PREFERRED_STARTING_TIME)
 {
-	this->type = CONSTRAINT_ACTIVITY_PREFERRED_STARTING_TIME;
 }
 
-ConstraintActivityPreferredStartingTime::ConstraintActivityPreferredStartingTime(double wp, int actId, int d, int h, bool perm)
-	: TimeConstraint(wp)
+ConstraintActivityPreferredStartingTime::ConstraintActivityPreferredStartingTime(double wp, int actId, int d, int h, bool perm) :
+	TimeConstraint(CONSTRAINT_ACTIVITY_PREFERRED_STARTING_TIME, wp)
 {
 	this->activityId = actId;
 	this->day = d;
 	this->hour = h;
-	this->type = CONSTRAINT_ACTIVITY_PREFERRED_STARTING_TIME;
 	this->permanentlyLocked=perm;
 }
 
@@ -8740,14 +8662,13 @@ bool ConstraintActivityPreferredStartingTime::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintActivityPreferredTimeSlots::ConstraintActivityPreferredTimeSlots()
-	: TimeConstraint()
+ConstraintActivityPreferredTimeSlots::ConstraintActivityPreferredTimeSlots() :
+	TimeConstraint(CONSTRAINT_ACTIVITY_PREFERRED_TIME_SLOTS)
 {
-	this->type = CONSTRAINT_ACTIVITY_PREFERRED_TIME_SLOTS;
 }
 
-ConstraintActivityPreferredTimeSlots::ConstraintActivityPreferredTimeSlots(double wp, int actId, int nPT_L, QList<int> d_L, QList<int> h_L)
-	: TimeConstraint(wp)
+ConstraintActivityPreferredTimeSlots::ConstraintActivityPreferredTimeSlots(double wp, int actId, int nPT_L, QList<int> d_L, QList<int> h_L) :
+	TimeConstraint(CONSTRAINT_ACTIVITY_PREFERRED_TIME_SLOTS, wp)
 {
 	assert(d_L.count()==nPT_L);
 	assert(h_L.count()==nPT_L);
@@ -8756,7 +8677,6 @@ ConstraintActivityPreferredTimeSlots::ConstraintActivityPreferredTimeSlots(doubl
 	this->p_nPreferredTimeSlots_L=nPT_L;
 	this->p_days_L=d_L;
 	this->p_hours_L=h_L;
-	this->type=CONSTRAINT_ACTIVITY_PREFERRED_TIME_SLOTS;
 }
 
 bool ConstraintActivityPreferredTimeSlots::computeInternalStructure(QWidget* parent, Rules& r)
@@ -9060,15 +8980,14 @@ bool ConstraintActivityPreferredTimeSlots::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintActivitiesPreferredTimeSlots::ConstraintActivitiesPreferredTimeSlots()
-	: TimeConstraint()
+ConstraintActivitiesPreferredTimeSlots::ConstraintActivitiesPreferredTimeSlots() :
+	TimeConstraint(CONSTRAINT_ACTIVITIES_PREFERRED_TIME_SLOTS)
 {
-	this->type = CONSTRAINT_ACTIVITIES_PREFERRED_TIME_SLOTS;
 }
 
 ConstraintActivitiesPreferredTimeSlots::ConstraintActivitiesPreferredTimeSlots(double wp, QString te,
-	QString st, QString su, QString sut, int dur, int nPT_L, QList<int> d_L, QList<int> h_L)
-	: TimeConstraint(wp)
+	QString st, QString su, QString sut, int dur, int nPT_L, QList<int> d_L, QList<int> h_L) :
+	TimeConstraint(CONSTRAINT_ACTIVITIES_PREFERRED_TIME_SLOTS, wp)
 {
 	assert(dur==-1 || dur>=1);
 	duration=dur;
@@ -9083,7 +9002,6 @@ ConstraintActivitiesPreferredTimeSlots::ConstraintActivitiesPreferredTimeSlots(d
 	this->p_nPreferredTimeSlots_L=nPT_L;
 	this->p_days_L=d_L;
 	this->p_hours_L=h_L;
-	this->type=CONSTRAINT_ACTIVITIES_PREFERRED_TIME_SLOTS;
 }
 
 bool ConstraintActivitiesPreferredTimeSlots::computeInternalStructure(QWidget* parent, Rules& r)
@@ -9560,15 +9478,14 @@ bool ConstraintActivitiesPreferredTimeSlots::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintSubactivitiesPreferredTimeSlots::ConstraintSubactivitiesPreferredTimeSlots()
-	: TimeConstraint()
+ConstraintSubactivitiesPreferredTimeSlots::ConstraintSubactivitiesPreferredTimeSlots() :
+	TimeConstraint(CONSTRAINT_SUBACTIVITIES_PREFERRED_TIME_SLOTS)
 {
-	this->type = CONSTRAINT_SUBACTIVITIES_PREFERRED_TIME_SLOTS;
 }
 
 ConstraintSubactivitiesPreferredTimeSlots::ConstraintSubactivitiesPreferredTimeSlots(double wp, int compNo, QString te,
-	QString st, QString su, QString sut, int nPT_L, QList<int> d_L, QList<int> h_L)
-	: TimeConstraint(wp)
+	QString st, QString su, QString sut, int nPT_L, QList<int> d_L, QList<int> h_L) :
+	TimeConstraint(CONSTRAINT_SUBACTIVITIES_PREFERRED_TIME_SLOTS, wp)
 {
 	assert(d_L.count()==nPT_L);
 	assert(h_L.count()==nPT_L);
@@ -9581,7 +9498,6 @@ ConstraintSubactivitiesPreferredTimeSlots::ConstraintSubactivitiesPreferredTimeS
 	this->p_nPreferredTimeSlots_L=nPT_L;
 	this->p_days_L=d_L;
 	this->p_hours_L=h_L;
-	this->type=CONSTRAINT_SUBACTIVITIES_PREFERRED_TIME_SLOTS;
 }
 
 bool ConstraintSubactivitiesPreferredTimeSlots::computeInternalStructure(QWidget* parent, Rules& r)
@@ -10052,14 +9968,13 @@ bool ConstraintSubactivitiesPreferredTimeSlots::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintActivityPreferredStartingTimes::ConstraintActivityPreferredStartingTimes()
-	: TimeConstraint()
+ConstraintActivityPreferredStartingTimes::ConstraintActivityPreferredStartingTimes() :
+	TimeConstraint(CONSTRAINT_ACTIVITY_PREFERRED_STARTING_TIMES)
 {
-	this->type = CONSTRAINT_ACTIVITY_PREFERRED_STARTING_TIMES;
 }
 
-ConstraintActivityPreferredStartingTimes::ConstraintActivityPreferredStartingTimes(double wp, int actId, int nPT_L, QList<int> d_L, QList<int> h_L)
-	: TimeConstraint(wp)
+ConstraintActivityPreferredStartingTimes::ConstraintActivityPreferredStartingTimes(double wp, int actId, int nPT_L, QList<int> d_L, QList<int> h_L) :
+	TimeConstraint(CONSTRAINT_ACTIVITY_PREFERRED_STARTING_TIMES, wp)
 {
 	assert(d_L.count()==nPT_L);
 	assert(h_L.count()==nPT_L);
@@ -10068,7 +9983,6 @@ ConstraintActivityPreferredStartingTimes::ConstraintActivityPreferredStartingTim
 	this->nPreferredStartingTimes_L=nPT_L;
 	this->days_L=d_L;
 	this->hours_L=h_L;
-	this->type=CONSTRAINT_ACTIVITY_PREFERRED_STARTING_TIMES;
 }
 
 bool ConstraintActivityPreferredStartingTimes::computeInternalStructure(QWidget* parent, Rules& r)
@@ -10357,15 +10271,14 @@ bool ConstraintActivityPreferredStartingTimes::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintActivitiesPreferredStartingTimes::ConstraintActivitiesPreferredStartingTimes()
-	: TimeConstraint()
+ConstraintActivitiesPreferredStartingTimes::ConstraintActivitiesPreferredStartingTimes() :
+	TimeConstraint(CONSTRAINT_ACTIVITIES_PREFERRED_STARTING_TIMES)
 {
-	this->type = CONSTRAINT_ACTIVITIES_PREFERRED_STARTING_TIMES;
 }
 
 ConstraintActivitiesPreferredStartingTimes::ConstraintActivitiesPreferredStartingTimes(double wp, QString te,
-	QString st, QString su, QString sut, int dur, int nPT_L, QList<int> d_L, QList<int> h_L)
-	: TimeConstraint(wp)
+	QString st, QString su, QString sut, int dur, int nPT_L, QList<int> d_L, QList<int> h_L) :
+	TimeConstraint(CONSTRAINT_ACTIVITIES_PREFERRED_STARTING_TIMES, wp)
 {
 	assert(dur==-1 || dur>=1);
 	duration=dur;
@@ -10380,7 +10293,6 @@ ConstraintActivitiesPreferredStartingTimes::ConstraintActivitiesPreferredStartin
 	this->nPreferredStartingTimes_L=nPT_L;
 	this->days_L=d_L;
 	this->hours_L=h_L;
-	this->type=CONSTRAINT_ACTIVITIES_PREFERRED_STARTING_TIMES;
 }
 
 bool ConstraintActivitiesPreferredStartingTimes::computeInternalStructure(QWidget* parent, Rules& r)
@@ -10845,15 +10757,14 @@ bool ConstraintActivitiesPreferredStartingTimes::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintSubactivitiesPreferredStartingTimes::ConstraintSubactivitiesPreferredStartingTimes()
-	: TimeConstraint()
+ConstraintSubactivitiesPreferredStartingTimes::ConstraintSubactivitiesPreferredStartingTimes() :
+	TimeConstraint(CONSTRAINT_SUBACTIVITIES_PREFERRED_STARTING_TIMES)
 {
-	this->type = CONSTRAINT_SUBACTIVITIES_PREFERRED_STARTING_TIMES;
 }
 
 ConstraintSubactivitiesPreferredStartingTimes::ConstraintSubactivitiesPreferredStartingTimes(double wp, int compNo, QString te,
-	QString st, QString su, QString sut, int nPT_L, QList<int> d_L, QList<int> h_L)
-	: TimeConstraint(wp)
+	QString st, QString su, QString sut, int nPT_L, QList<int> d_L, QList<int> h_L) :
+	TimeConstraint(CONSTRAINT_SUBACTIVITIES_PREFERRED_STARTING_TIMES, wp)
 {
 	assert(d_L.count()==nPT_L);
 	assert(h_L.count()==nPT_L);
@@ -10866,7 +10777,6 @@ ConstraintSubactivitiesPreferredStartingTimes::ConstraintSubactivitiesPreferredS
 	this->nPreferredStartingTimes_L=nPT_L;
 	this->days_L=d_L;
 	this->hours_L=h_L;
-	this->type=CONSTRAINT_SUBACTIVITIES_PREFERRED_STARTING_TIMES;
 }
 
 bool ConstraintSubactivitiesPreferredStartingTimes::computeInternalStructure(QWidget* parent, Rules& r)
@@ -11321,23 +11231,20 @@ bool ConstraintSubactivitiesPreferredStartingTimes::repairWrongDayOrHour(Rules& 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintActivitiesSameStartingHour::ConstraintActivitiesSameStartingHour()
-	: TimeConstraint()
+ConstraintActivitiesSameStartingHour::ConstraintActivitiesSameStartingHour() :
+	TimeConstraint(CONSTRAINT_ACTIVITIES_SAME_STARTING_HOUR)
 {
-	type=CONSTRAINT_ACTIVITIES_SAME_STARTING_HOUR;
 }
 
-ConstraintActivitiesSameStartingHour::ConstraintActivitiesSameStartingHour(double wp, int nact, const QList<int>& act)
- : TimeConstraint(wp)
- {
+ConstraintActivitiesSameStartingHour::ConstraintActivitiesSameStartingHour(double wp, int nact, const QList<int>& act) :
+	TimeConstraint(CONSTRAINT_ACTIVITIES_SAME_STARTING_HOUR, wp)
+{
 	assert(nact>=2);
 	assert(act.count()==nact);
 	this->n_activities=nact;
 	this->activitiesId.clear();
 	for(int i=0; i<nact; i++)
 		this->activitiesId.append(act.at(i));
-
-	this->type=CONSTRAINT_ACTIVITIES_SAME_STARTING_HOUR;
 }
 
 bool ConstraintActivitiesSameStartingHour::computeInternalStructure(QWidget* parent, Rules& r)
@@ -11594,23 +11501,20 @@ bool ConstraintActivitiesSameStartingHour::repairWrongDayOrHour(Rules& r)
 /////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintActivitiesSameStartingDay::ConstraintActivitiesSameStartingDay()
-	: TimeConstraint()
+ConstraintActivitiesSameStartingDay::ConstraintActivitiesSameStartingDay() :
+	TimeConstraint(CONSTRAINT_ACTIVITIES_SAME_STARTING_DAY)
 {
-	type=CONSTRAINT_ACTIVITIES_SAME_STARTING_DAY;
 }
 
-ConstraintActivitiesSameStartingDay::ConstraintActivitiesSameStartingDay(double wp, int nact, const QList<int>& act)
- : TimeConstraint(wp)
- {
+ConstraintActivitiesSameStartingDay::ConstraintActivitiesSameStartingDay(double wp, int nact, const QList<int>& act) :
+	TimeConstraint(CONSTRAINT_ACTIVITIES_SAME_STARTING_DAY, wp)
+{
 	assert(nact>=2);
 	assert(act.count()==nact);
 	this->n_activities=nact;
 	this->activitiesId.clear();
 	for(int i=0; i<nact; i++)
 		this->activitiesId.append(act.at(i));
-
-	this->type=CONSTRAINT_ACTIVITIES_SAME_STARTING_DAY;
 }
 
 bool ConstraintActivitiesSameStartingDay::computeInternalStructure(QWidget* parent, Rules& r)
@@ -11866,18 +11770,16 @@ bool ConstraintActivitiesSameStartingDay::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintTwoActivitiesConsecutive::ConstraintTwoActivitiesConsecutive()
-	: TimeConstraint()
+ConstraintTwoActivitiesConsecutive::ConstraintTwoActivitiesConsecutive() :
+	TimeConstraint(CONSTRAINT_TWO_ACTIVITIES_CONSECUTIVE)
 {
-	this->type = CONSTRAINT_TWO_ACTIVITIES_CONSECUTIVE;
 }
 
-ConstraintTwoActivitiesConsecutive::ConstraintTwoActivitiesConsecutive(double wp, int firstActId, int secondActId)
-	: TimeConstraint(wp)
+ConstraintTwoActivitiesConsecutive::ConstraintTwoActivitiesConsecutive(double wp, int firstActId, int secondActId) :
+	TimeConstraint(CONSTRAINT_TWO_ACTIVITIES_CONSECUTIVE, wp)
 {
 	this->firstActivityId = firstActId;
 	this->secondActivityId=secondActId;
-	this->type = CONSTRAINT_TWO_ACTIVITIES_CONSECUTIVE;
 }
 
 bool ConstraintTwoActivitiesConsecutive::computeInternalStructure(QWidget* parent, Rules& r)
@@ -12139,18 +12041,16 @@ bool ConstraintTwoActivitiesConsecutive::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintTwoActivitiesGrouped::ConstraintTwoActivitiesGrouped()
-	: TimeConstraint()
+ConstraintTwoActivitiesGrouped::ConstraintTwoActivitiesGrouped() :
+	TimeConstraint(CONSTRAINT_TWO_ACTIVITIES_GROUPED)
 {
-	this->type = CONSTRAINT_TWO_ACTIVITIES_GROUPED;
 }
 
-ConstraintTwoActivitiesGrouped::ConstraintTwoActivitiesGrouped(double wp, int firstActId, int secondActId)
-	: TimeConstraint(wp)
+ConstraintTwoActivitiesGrouped::ConstraintTwoActivitiesGrouped(double wp, int firstActId, int secondActId) :
+	TimeConstraint(CONSTRAINT_TWO_ACTIVITIES_GROUPED, wp)
 {
 	this->firstActivityId = firstActId;
 	this->secondActivityId=secondActId;
-	this->type = CONSTRAINT_TWO_ACTIVITIES_GROUPED;
 }
 
 bool ConstraintTwoActivitiesGrouped::computeInternalStructure(QWidget* parent, Rules& r)
@@ -12424,19 +12324,17 @@ bool ConstraintTwoActivitiesGrouped::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintThreeActivitiesGrouped::ConstraintThreeActivitiesGrouped()
-	: TimeConstraint()
+ConstraintThreeActivitiesGrouped::ConstraintThreeActivitiesGrouped() :
+	TimeConstraint(CONSTRAINT_THREE_ACTIVITIES_GROUPED)
 {
-	this->type = CONSTRAINT_THREE_ACTIVITIES_GROUPED;
 }
 
-ConstraintThreeActivitiesGrouped::ConstraintThreeActivitiesGrouped(double wp, int firstActId, int secondActId, int thirdActId)
-	: TimeConstraint(wp)
+ConstraintThreeActivitiesGrouped::ConstraintThreeActivitiesGrouped(double wp, int firstActId, int secondActId, int thirdActId) :
+	TimeConstraint(CONSTRAINT_THREE_ACTIVITIES_GROUPED, wp)
 {
 	this->firstActivityId = firstActId;
 	this->secondActivityId=secondActId;
 	this->thirdActivityId=thirdActId;
-	this->type = CONSTRAINT_THREE_ACTIVITIES_GROUPED;
 }
 
 bool ConstraintThreeActivitiesGrouped::computeInternalStructure(QWidget* parent, Rules& r)
@@ -12792,18 +12690,16 @@ bool ConstraintThreeActivitiesGrouped::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintTwoActivitiesOrdered::ConstraintTwoActivitiesOrdered()
-	: TimeConstraint()
+ConstraintTwoActivitiesOrdered::ConstraintTwoActivitiesOrdered() :
+	TimeConstraint(CONSTRAINT_TWO_ACTIVITIES_ORDERED)
 {
-	this->type = CONSTRAINT_TWO_ACTIVITIES_ORDERED;
 }
 
-ConstraintTwoActivitiesOrdered::ConstraintTwoActivitiesOrdered(double wp, int firstActId, int secondActId)
-	: TimeConstraint(wp)
+ConstraintTwoActivitiesOrdered::ConstraintTwoActivitiesOrdered(double wp, int firstActId, int secondActId) :
+	TimeConstraint(CONSTRAINT_TWO_ACTIVITIES_ORDERED, wp)
 {
 	this->firstActivityId = firstActId;
 	this->secondActivityId=secondActId;
-	this->type = CONSTRAINT_TWO_ACTIVITIES_ORDERED;
 }
 
 bool ConstraintTwoActivitiesOrdered::computeInternalStructure(QWidget* parent, Rules& r)
@@ -13050,17 +12946,15 @@ bool ConstraintTwoActivitiesOrdered::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintActivityEndsStudentsDay::ConstraintActivityEndsStudentsDay()
-	: TimeConstraint()
+ConstraintActivityEndsStudentsDay::ConstraintActivityEndsStudentsDay() :
+	TimeConstraint(CONSTRAINT_ACTIVITY_ENDS_STUDENTS_DAY)
 {
-	this->type = CONSTRAINT_ACTIVITY_ENDS_STUDENTS_DAY;
 }
 
-ConstraintActivityEndsStudentsDay::ConstraintActivityEndsStudentsDay(double wp, int actId)
-	: TimeConstraint(wp)
+ConstraintActivityEndsStudentsDay::ConstraintActivityEndsStudentsDay(double wp, int actId) :
+	TimeConstraint(CONSTRAINT_ACTIVITY_ENDS_STUDENTS_DAY, wp)
 {
 	this->activityId = actId;
-	this->type = CONSTRAINT_ACTIVITY_ENDS_STUDENTS_DAY;
 }
 
 bool ConstraintActivityEndsStudentsDay::computeInternalStructure(QWidget* parent, Rules& r)
@@ -13263,23 +13157,19 @@ bool ConstraintActivityEndsStudentsDay::repairWrongDayOrHour(Rules& r)
 ///////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintTeachersMinHoursDaily::ConstraintTeachersMinHoursDaily()
-	: TimeConstraint()
+ConstraintTeachersMinHoursDaily::ConstraintTeachersMinHoursDaily() :
+	TimeConstraint(CONSTRAINT_TEACHERS_MIN_HOURS_DAILY)
 {
-	this->type=CONSTRAINT_TEACHERS_MIN_HOURS_DAILY;
-	
 	this->allowEmptyDays=true;
 }
 
-ConstraintTeachersMinHoursDaily::ConstraintTeachersMinHoursDaily(double wp, int minhours, bool _allowEmptyDays)
- : TimeConstraint(wp)
- {
+ConstraintTeachersMinHoursDaily::ConstraintTeachersMinHoursDaily(double wp, int minhours, bool _allowEmptyDays) :
+	TimeConstraint(CONSTRAINT_TEACHERS_MIN_HOURS_DAILY, wp)
+{
 	assert(minhours>0);
 	this->minHoursDaily=minhours;
 	
 	this->allowEmptyDays=_allowEmptyDays;
-
-	this->type=CONSTRAINT_TEACHERS_MIN_HOURS_DAILY;
 }
 
 bool ConstraintTeachersMinHoursDaily::computeInternalStructure(QWidget* parent, Rules& r)
@@ -13480,24 +13370,20 @@ bool ConstraintTeachersMinHoursDaily::repairWrongDayOrHour(Rules& r)
 ///////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintTeacherMinHoursDaily::ConstraintTeacherMinHoursDaily()
-	: TimeConstraint()
+ConstraintTeacherMinHoursDaily::ConstraintTeacherMinHoursDaily() :
+	TimeConstraint(CONSTRAINT_TEACHER_MIN_HOURS_DAILY)
 {
-	this->type=CONSTRAINT_TEACHER_MIN_HOURS_DAILY;
-	
 	this->allowEmptyDays=true;
 }
 
-ConstraintTeacherMinHoursDaily::ConstraintTeacherMinHoursDaily(double wp, int minhours, const QString& teacher, bool _allowEmptyDays)
- : TimeConstraint(wp)
- {
+ConstraintTeacherMinHoursDaily::ConstraintTeacherMinHoursDaily(double wp, int minhours, const QString& teacher, bool _allowEmptyDays) :
+	TimeConstraint(CONSTRAINT_TEACHER_MIN_HOURS_DAILY, wp)
+{
 	assert(minhours>0);
 	this->minHoursDaily=minhours;
 	this->teacherName=teacher;
 	
 	this->allowEmptyDays=_allowEmptyDays;
-
-	this->type=CONSTRAINT_TEACHER_MIN_HOURS_DAILY;
 }
 
 bool ConstraintTeacherMinHoursDaily::computeInternalStructure(QWidget* parent, Rules& r)
@@ -13703,20 +13589,17 @@ bool ConstraintTeacherMinHoursDaily::repairWrongDayOrHour(Rules& r)
 ///////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintTeacherMinDaysPerWeek::ConstraintTeacherMinDaysPerWeek()
-	: TimeConstraint()
+ConstraintTeacherMinDaysPerWeek::ConstraintTeacherMinDaysPerWeek() :
+	TimeConstraint(CONSTRAINT_TEACHER_MIN_DAYS_PER_WEEK)
 {
-	this->type=CONSTRAINT_TEACHER_MIN_DAYS_PER_WEEK;
 }
 
-ConstraintTeacherMinDaysPerWeek::ConstraintTeacherMinDaysPerWeek(double wp, int mindays, const QString& teacher)
- : TimeConstraint(wp)
- {
+ConstraintTeacherMinDaysPerWeek::ConstraintTeacherMinDaysPerWeek(double wp, int mindays, const QString& teacher) :
+	TimeConstraint(CONSTRAINT_TEACHER_MIN_DAYS_PER_WEEK, wp)
+{
 	assert(mindays>0);
 	this->minDaysPerWeek=mindays;
 	this->teacherName=teacher;
-
-	this->type=CONSTRAINT_TEACHER_MIN_DAYS_PER_WEEK;
 }
 
 bool ConstraintTeacherMinDaysPerWeek::computeInternalStructure(QWidget* parent, Rules& r)
@@ -13905,19 +13788,16 @@ bool ConstraintTeacherMinDaysPerWeek::repairWrongDayOrHour(Rules& r)
 ///////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintTeachersMinDaysPerWeek::ConstraintTeachersMinDaysPerWeek()
-	: TimeConstraint()
+ConstraintTeachersMinDaysPerWeek::ConstraintTeachersMinDaysPerWeek() :
+	TimeConstraint(CONSTRAINT_TEACHERS_MIN_DAYS_PER_WEEK)
 {
-	this->type=CONSTRAINT_TEACHERS_MIN_DAYS_PER_WEEK;
 }
 
-ConstraintTeachersMinDaysPerWeek::ConstraintTeachersMinDaysPerWeek(double wp, int mindays)
- : TimeConstraint(wp)
- {
+ConstraintTeachersMinDaysPerWeek::ConstraintTeachersMinDaysPerWeek(double wp, int mindays) :
+	TimeConstraint(CONSTRAINT_TEACHERS_MIN_DAYS_PER_WEEK, wp)
+{
 	assert(mindays>0);
 	this->minDaysPerWeek=mindays;
-
-	this->type=CONSTRAINT_TEACHERS_MIN_DAYS_PER_WEEK;
 }
 
 bool ConstraintTeachersMinDaysPerWeek::computeInternalStructure(QWidget* parent, Rules& r)
@@ -14104,18 +13984,16 @@ bool ConstraintTeachersMinDaysPerWeek::repairWrongDayOrHour(Rules& r)
 ///////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintTeacherIntervalMaxDaysPerWeek::ConstraintTeacherIntervalMaxDaysPerWeek()
-	: TimeConstraint()
+ConstraintTeacherIntervalMaxDaysPerWeek::ConstraintTeacherIntervalMaxDaysPerWeek() :
+	TimeConstraint(CONSTRAINT_TEACHER_INTERVAL_MAX_DAYS_PER_WEEK)
 {
-	this->type=CONSTRAINT_TEACHER_INTERVAL_MAX_DAYS_PER_WEEK;
 }
 
-ConstraintTeacherIntervalMaxDaysPerWeek::ConstraintTeacherIntervalMaxDaysPerWeek(double wp, int maxnd, QString tn, int sh, int eh)
-	 : TimeConstraint(wp)
+ConstraintTeacherIntervalMaxDaysPerWeek::ConstraintTeacherIntervalMaxDaysPerWeek(double wp, int maxnd, QString tn, int sh, int eh) :
+	TimeConstraint(CONSTRAINT_TEACHER_INTERVAL_MAX_DAYS_PER_WEEK, wp)
 {
 	this->teacherName = tn;
 	this->maxDaysPerWeek=maxnd;
-	this->type=CONSTRAINT_TEACHER_INTERVAL_MAX_DAYS_PER_WEEK;
 	this->startHour=sh;
 	this->endHour=eh;
 	assert(sh<eh);
@@ -14360,17 +14238,15 @@ bool ConstraintTeacherIntervalMaxDaysPerWeek::repairWrongDayOrHour(Rules& r)
 ///////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintTeachersIntervalMaxDaysPerWeek::ConstraintTeachersIntervalMaxDaysPerWeek()
-	: TimeConstraint()
+ConstraintTeachersIntervalMaxDaysPerWeek::ConstraintTeachersIntervalMaxDaysPerWeek() :
+	TimeConstraint(CONSTRAINT_TEACHERS_INTERVAL_MAX_DAYS_PER_WEEK)
 {
-	this->type=CONSTRAINT_TEACHERS_INTERVAL_MAX_DAYS_PER_WEEK;
 }
 
-ConstraintTeachersIntervalMaxDaysPerWeek::ConstraintTeachersIntervalMaxDaysPerWeek(double wp, int maxnd, int sh, int eh)
-	 : TimeConstraint(wp)
+ConstraintTeachersIntervalMaxDaysPerWeek::ConstraintTeachersIntervalMaxDaysPerWeek(double wp, int maxnd, int sh, int eh) :
+	TimeConstraint(CONSTRAINT_TEACHERS_INTERVAL_MAX_DAYS_PER_WEEK, wp)
 {
 	this->maxDaysPerWeek=maxnd;
-	this->type=CONSTRAINT_TEACHERS_INTERVAL_MAX_DAYS_PER_WEEK;
 	this->startHour=sh;
 	this->endHour=eh;
 	assert(sh<eh);
@@ -14610,18 +14486,16 @@ bool ConstraintTeachersIntervalMaxDaysPerWeek::repairWrongDayOrHour(Rules& r)
 ///////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintStudentsSetIntervalMaxDaysPerWeek::ConstraintStudentsSetIntervalMaxDaysPerWeek()
-	: TimeConstraint()
+ConstraintStudentsSetIntervalMaxDaysPerWeek::ConstraintStudentsSetIntervalMaxDaysPerWeek() :
+	TimeConstraint(CONSTRAINT_STUDENTS_SET_INTERVAL_MAX_DAYS_PER_WEEK)
 {
-	this->type=CONSTRAINT_STUDENTS_SET_INTERVAL_MAX_DAYS_PER_WEEK;
 }
 
-ConstraintStudentsSetIntervalMaxDaysPerWeek::ConstraintStudentsSetIntervalMaxDaysPerWeek(double wp, int maxnd, QString sn, int sh, int eh)
-	 : TimeConstraint(wp)
+ConstraintStudentsSetIntervalMaxDaysPerWeek::ConstraintStudentsSetIntervalMaxDaysPerWeek(double wp, int maxnd, QString sn, int sh, int eh) :
+	TimeConstraint(CONSTRAINT_STUDENTS_SET_INTERVAL_MAX_DAYS_PER_WEEK, wp)
 {
 	this->students = sn;
 	this->maxDaysPerWeek=maxnd;
-	this->type=CONSTRAINT_STUDENTS_SET_INTERVAL_MAX_DAYS_PER_WEEK;
 	this->startHour=sh;
 	this->endHour=eh;
 	assert(sh<eh);
@@ -14914,17 +14788,15 @@ bool ConstraintStudentsSetIntervalMaxDaysPerWeek::repairWrongDayOrHour(Rules& r)
 ///////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintStudentsIntervalMaxDaysPerWeek::ConstraintStudentsIntervalMaxDaysPerWeek()
-	: TimeConstraint()
+ConstraintStudentsIntervalMaxDaysPerWeek::ConstraintStudentsIntervalMaxDaysPerWeek() :
+	TimeConstraint(CONSTRAINT_STUDENTS_INTERVAL_MAX_DAYS_PER_WEEK)
 {
-	this->type=CONSTRAINT_STUDENTS_INTERVAL_MAX_DAYS_PER_WEEK;
 }
 
-ConstraintStudentsIntervalMaxDaysPerWeek::ConstraintStudentsIntervalMaxDaysPerWeek(double wp, int maxnd, int sh, int eh)
-	 : TimeConstraint(wp)
+ConstraintStudentsIntervalMaxDaysPerWeek::ConstraintStudentsIntervalMaxDaysPerWeek(double wp, int maxnd, int sh, int eh) :
+	TimeConstraint(CONSTRAINT_STUDENTS_INTERVAL_MAX_DAYS_PER_WEEK, wp)
 {
 	this->maxDaysPerWeek=maxnd;
-	this->type=CONSTRAINT_STUDENTS_INTERVAL_MAX_DAYS_PER_WEEK;
 	this->startHour=sh;
 	this->endHour=eh;
 	assert(sh<eh);
@@ -15163,21 +15035,19 @@ bool ConstraintStudentsIntervalMaxDaysPerWeek::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintActivitiesEndStudentsDay::ConstraintActivitiesEndStudentsDay()
-	: TimeConstraint()
+ConstraintActivitiesEndStudentsDay::ConstraintActivitiesEndStudentsDay() :
+	TimeConstraint(CONSTRAINT_ACTIVITIES_END_STUDENTS_DAY)
 {
-	this->type = CONSTRAINT_ACTIVITIES_END_STUDENTS_DAY;
 }
 
 ConstraintActivitiesEndStudentsDay::ConstraintActivitiesEndStudentsDay(double wp, QString te,
-	QString st, QString su, QString sut)
-	: TimeConstraint(wp)
+	QString st, QString su, QString sut):
+	TimeConstraint(CONSTRAINT_ACTIVITIES_END_STUDENTS_DAY, wp)
 {
 	this->teacherName=te;
 	this->subjectName=su;
 	this->activityTagName=sut;
 	this->studentsName=st;
-	this->type=CONSTRAINT_ACTIVITIES_END_STUDENTS_DAY;
 }
 
 bool ConstraintActivitiesEndStudentsDay::computeInternalStructure(QWidget* parent, Rules& r)
@@ -15490,20 +15360,17 @@ bool ConstraintActivitiesEndStudentsDay::repairWrongDayOrHour(Rules& r)
 ///////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintTeachersActivityTagMaxHoursDaily::ConstraintTeachersActivityTagMaxHoursDaily()
-	: TimeConstraint()
+ConstraintTeachersActivityTagMaxHoursDaily::ConstraintTeachersActivityTagMaxHoursDaily() :
+	TimeConstraint(CONSTRAINT_TEACHERS_ACTIVITY_TAG_MAX_HOURS_DAILY)
 {
-	this->type=CONSTRAINT_TEACHERS_ACTIVITY_TAG_MAX_HOURS_DAILY;
 }
 
-ConstraintTeachersActivityTagMaxHoursDaily::ConstraintTeachersActivityTagMaxHoursDaily(double wp, int maxhours, const QString& activityTag)
- : TimeConstraint(wp)
- {
+ConstraintTeachersActivityTagMaxHoursDaily::ConstraintTeachersActivityTagMaxHoursDaily(double wp, int maxhours, const QString& activityTag) :
+	TimeConstraint(CONSTRAINT_TEACHERS_ACTIVITY_TAG_MAX_HOURS_DAILY, wp)
+{
 	assert(maxhours>0);
 	this->maxHoursDaily=maxhours;
 	this->activityTagName=activityTag;
-
-	this->type=CONSTRAINT_TEACHERS_ACTIVITY_TAG_MAX_HOURS_DAILY;
 }
 
 bool ConstraintTeachersActivityTagMaxHoursDaily::computeInternalStructure(QWidget* parent, Rules& r)
@@ -15724,21 +15591,18 @@ bool ConstraintTeachersActivityTagMaxHoursDaily::repairWrongDayOrHour(Rules& r)
 ///////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintTeacherActivityTagMaxHoursDaily::ConstraintTeacherActivityTagMaxHoursDaily()
-	: TimeConstraint()
+ConstraintTeacherActivityTagMaxHoursDaily::ConstraintTeacherActivityTagMaxHoursDaily() :
+	TimeConstraint(CONSTRAINT_TEACHER_ACTIVITY_TAG_MAX_HOURS_DAILY)
 {
-	this->type=CONSTRAINT_TEACHER_ACTIVITY_TAG_MAX_HOURS_DAILY;
 }
 
-ConstraintTeacherActivityTagMaxHoursDaily::ConstraintTeacherActivityTagMaxHoursDaily(double wp, int maxhours, const QString& teacher, const QString& activityTag)
- : TimeConstraint(wp)
- {
+ConstraintTeacherActivityTagMaxHoursDaily::ConstraintTeacherActivityTagMaxHoursDaily(double wp, int maxhours, const QString& teacher, const QString& activityTag) :
+	TimeConstraint(CONSTRAINT_TEACHER_ACTIVITY_TAG_MAX_HOURS_DAILY, wp)
+{
 	assert(maxhours>0);
 	this->maxHoursDaily=maxhours;
 	this->teacherName=teacher;
 	this->activityTagName=activityTag;
-
-	this->type=CONSTRAINT_TEACHER_ACTIVITY_TAG_MAX_HOURS_DAILY;
 }
 
 bool ConstraintTeacherActivityTagMaxHoursDaily::computeInternalStructure(QWidget* parent, Rules& r)
@@ -15964,19 +15828,17 @@ bool ConstraintTeacherActivityTagMaxHoursDaily::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintStudentsActivityTagMaxHoursDaily::ConstraintStudentsActivityTagMaxHoursDaily()
-	: TimeConstraint()
+ConstraintStudentsActivityTagMaxHoursDaily::ConstraintStudentsActivityTagMaxHoursDaily() :
+	TimeConstraint(CONSTRAINT_STUDENTS_ACTIVITY_TAG_MAX_HOURS_DAILY)
 {
-	this->type = CONSTRAINT_STUDENTS_ACTIVITY_TAG_MAX_HOURS_DAILY;
 	this->maxHoursDaily = -1;
 }
 
-ConstraintStudentsActivityTagMaxHoursDaily::ConstraintStudentsActivityTagMaxHoursDaily(double wp, int maxnh, const QString& activityTag)
-	: TimeConstraint(wp)
+ConstraintStudentsActivityTagMaxHoursDaily::ConstraintStudentsActivityTagMaxHoursDaily(double wp, int maxnh, const QString& activityTag) :
+	TimeConstraint(CONSTRAINT_STUDENTS_ACTIVITY_TAG_MAX_HOURS_DAILY, wp)
 {
 	this->maxHoursDaily = maxnh;
 	this->activityTagName=activityTag;
-	this->type = CONSTRAINT_STUDENTS_ACTIVITY_TAG_MAX_HOURS_DAILY;
 }
 
 bool ConstraintStudentsActivityTagMaxHoursDaily::computeInternalStructure(QWidget* parent, Rules& r)
@@ -16206,20 +16068,18 @@ bool ConstraintStudentsActivityTagMaxHoursDaily::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintStudentsSetActivityTagMaxHoursDaily::ConstraintStudentsSetActivityTagMaxHoursDaily()
-	: TimeConstraint()
+ConstraintStudentsSetActivityTagMaxHoursDaily::ConstraintStudentsSetActivityTagMaxHoursDaily() :
+	TimeConstraint(CONSTRAINT_STUDENTS_SET_ACTIVITY_TAG_MAX_HOURS_DAILY)
 {
-	this->type = CONSTRAINT_STUDENTS_SET_ACTIVITY_TAG_MAX_HOURS_DAILY;
 	this->maxHoursDaily = -1;
 }
 
-ConstraintStudentsSetActivityTagMaxHoursDaily::ConstraintStudentsSetActivityTagMaxHoursDaily(double wp, int maxnh, const QString& s, const QString& activityTag)
-	: TimeConstraint(wp)
+ConstraintStudentsSetActivityTagMaxHoursDaily::ConstraintStudentsSetActivityTagMaxHoursDaily(double wp, int maxnh, const QString& s, const QString& activityTag) :
+	TimeConstraint(CONSTRAINT_STUDENTS_SET_ACTIVITY_TAG_MAX_HOURS_DAILY, wp)
 {
 	this->maxHoursDaily = maxnh;
 	this->students = s;
 	this->activityTagName=activityTag;
-	this->type = CONSTRAINT_STUDENTS_SET_ACTIVITY_TAG_MAX_HOURS_DAILY;
 }
 
 bool ConstraintStudentsSetActivityTagMaxHoursDaily::hasInactiveActivities(const Rules& r) const
@@ -16497,16 +16357,14 @@ bool ConstraintStudentsSetActivityTagMaxHoursDaily::repairWrongDayOrHour(Rules& 
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintStudentsMaxGapsPerDay::ConstraintStudentsMaxGapsPerDay()
-	: TimeConstraint()
+ConstraintStudentsMaxGapsPerDay::ConstraintStudentsMaxGapsPerDay() :
+	TimeConstraint(CONSTRAINT_STUDENTS_MAX_GAPS_PER_DAY)
 {
-	this->type = CONSTRAINT_STUDENTS_MAX_GAPS_PER_DAY;
 }
 
-ConstraintStudentsMaxGapsPerDay::ConstraintStudentsMaxGapsPerDay(double wp, int mg)
-	: TimeConstraint(wp)
+ConstraintStudentsMaxGapsPerDay::ConstraintStudentsMaxGapsPerDay(double wp, int mg) :
+	TimeConstraint(CONSTRAINT_STUDENTS_MAX_GAPS_PER_DAY, wp)
 {
-	this->type = CONSTRAINT_STUDENTS_MAX_GAPS_PER_DAY;
 	this->maxGaps=mg;
 }
 
@@ -16713,16 +16571,14 @@ bool ConstraintStudentsMaxGapsPerDay::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintStudentsSetMaxGapsPerDay::ConstraintStudentsSetMaxGapsPerDay()
-	: TimeConstraint()
+ConstraintStudentsSetMaxGapsPerDay::ConstraintStudentsSetMaxGapsPerDay() :
+	TimeConstraint(CONSTRAINT_STUDENTS_SET_MAX_GAPS_PER_DAY)
 {
-	this->type = CONSTRAINT_STUDENTS_SET_MAX_GAPS_PER_DAY;
 }
 
-ConstraintStudentsSetMaxGapsPerDay::ConstraintStudentsSetMaxGapsPerDay(double wp, int mg, const QString& st )
-	: TimeConstraint(wp)
+ConstraintStudentsSetMaxGapsPerDay::ConstraintStudentsSetMaxGapsPerDay(double wp, int mg, const QString& st ) :
+	TimeConstraint(CONSTRAINT_STUDENTS_SET_MAX_GAPS_PER_DAY, wp)
 {
-	this->type = CONSTRAINT_STUDENTS_SET_MAX_GAPS_PER_DAY;
 	this->maxGaps=mg;
 	this->students = st;
 }
@@ -16976,15 +16832,14 @@ bool ConstraintStudentsSetMaxGapsPerDay::repairWrongDayOrHour(Rules& r)
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::ConstraintActivitiesOccupyMaxTimeSlotsFromSelection()
-	: TimeConstraint()
+ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::ConstraintActivitiesOccupyMaxTimeSlotsFromSelection() :
+	TimeConstraint(CONSTRAINT_ACTIVITIES_OCCUPY_MAX_TIME_SLOTS_FROM_SELECTION)
 {
-	this->type = CONSTRAINT_ACTIVITIES_OCCUPY_MAX_TIME_SLOTS_FROM_SELECTION;
 }
 
 ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::ConstraintActivitiesOccupyMaxTimeSlotsFromSelection(double wp,
-	QList<int> a_L, QList<int> d_L, QList<int> h_L, int max_slots)
-	: TimeConstraint(wp)
+	QList<int> a_L, QList<int> d_L, QList<int> h_L, int max_slots) :
+	TimeConstraint(CONSTRAINT_ACTIVITIES_OCCUPY_MAX_TIME_SLOTS_FROM_SELECTION, wp)
 {
 	assert(d_L.count()==h_L.count());
 
@@ -16992,8 +16847,6 @@ ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::ConstraintActivitiesOccupyM
 	this->selectedDays=d_L;
 	this->selectedHours=h_L;
 	this->maxOccupiedTimeSlots=max_slots;
-	
-	this->type=CONSTRAINT_ACTIVITIES_OCCUPY_MAX_TIME_SLOTS_FROM_SELECTION;
 }
 
 bool ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::computeInternalStructure(QWidget* parent, Rules& r)
@@ -17343,15 +17196,14 @@ bool ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::repairWrongDayOrHour(R
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots()
-	: TimeConstraint()
+ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots() :
+	TimeConstraint(CONSTRAINT_ACTIVITIES_MAX_SIMULTANEOUS_IN_SELECTED_TIME_SLOTS)
 {
-	this->type = CONSTRAINT_ACTIVITIES_MAX_SIMULTANEOUS_IN_SELECTED_TIME_SLOTS;
 }
 
 ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots(double wp,
-	QList<int> a_L, QList<int> d_L, QList<int> h_L, int max_simultaneous)
-	: TimeConstraint(wp)
+	QList<int> a_L, QList<int> d_L, QList<int> h_L, int max_simultaneous) :
+	TimeConstraint(CONSTRAINT_ACTIVITIES_MAX_SIMULTANEOUS_IN_SELECTED_TIME_SLOTS, wp)
 {
 	assert(d_L.count()==h_L.count());
 
@@ -17359,8 +17211,6 @@ ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::ConstraintActivitiesMaxS
 	this->selectedDays=d_L;
 	this->selectedHours=h_L;
 	this->maxSimultaneous=max_simultaneous;
-	
-	this->type=CONSTRAINT_ACTIVITIES_MAX_SIMULTANEOUS_IN_SELECTED_TIME_SLOTS;
 }
 
 bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::computeInternalStructure(QWidget* parent, Rules& r)
@@ -17706,18 +17556,16 @@ bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::repairWrongDayOrHou
 ///////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintStudentsSetMaxDaysPerWeek::ConstraintStudentsSetMaxDaysPerWeek()
-	: TimeConstraint()
+ConstraintStudentsSetMaxDaysPerWeek::ConstraintStudentsSetMaxDaysPerWeek() :
+	TimeConstraint(CONSTRAINT_STUDENTS_SET_MAX_DAYS_PER_WEEK)
 {
-	this->type=CONSTRAINT_STUDENTS_SET_MAX_DAYS_PER_WEEK;
 }
 
-ConstraintStudentsSetMaxDaysPerWeek::ConstraintStudentsSetMaxDaysPerWeek(double wp, int maxnd, QString sn)
-	 : TimeConstraint(wp)
+ConstraintStudentsSetMaxDaysPerWeek::ConstraintStudentsSetMaxDaysPerWeek(double wp, int maxnd, QString sn) :
+	TimeConstraint(CONSTRAINT_STUDENTS_SET_MAX_DAYS_PER_WEEK, wp)
 {
 	this->students = sn;
 	this->maxDaysPerWeek=maxnd;
-	this->type=CONSTRAINT_STUDENTS_SET_MAX_DAYS_PER_WEEK;
 }
 
 bool ConstraintStudentsSetMaxDaysPerWeek::computeInternalStructure(QWidget* parent, Rules& r)
@@ -17952,17 +17800,15 @@ bool ConstraintStudentsSetMaxDaysPerWeek::repairWrongDayOrHour(Rules& r)
 ///////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-ConstraintStudentsMaxDaysPerWeek::ConstraintStudentsMaxDaysPerWeek()
-	: TimeConstraint()
+ConstraintStudentsMaxDaysPerWeek::ConstraintStudentsMaxDaysPerWeek() :
+	TimeConstraint(CONSTRAINT_STUDENTS_MAX_DAYS_PER_WEEK)
 {
-	this->type=CONSTRAINT_STUDENTS_MAX_DAYS_PER_WEEK;
 }
 
-ConstraintStudentsMaxDaysPerWeek::ConstraintStudentsMaxDaysPerWeek(double wp, int maxnd)
-	 : TimeConstraint(wp)
+ConstraintStudentsMaxDaysPerWeek::ConstraintStudentsMaxDaysPerWeek(double wp, int maxnd) :
+	TimeConstraint(CONSTRAINT_STUDENTS_MAX_DAYS_PER_WEEK, wp)
 {
 	this->maxDaysPerWeek=maxnd;
-	this->type=CONSTRAINT_STUDENTS_MAX_DAYS_PER_WEEK;
 }
 
 bool ConstraintStudentsMaxDaysPerWeek::computeInternalStructure(QWidget* parent, Rules& r)

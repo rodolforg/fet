@@ -137,30 +137,25 @@ class TimeConstraint{
 
 public:
 	/**
+	Specifies the type of this constraint (using the above constants).
+	*/
+	const int type;
+
+	bool active;
+
+	/**
 	The percentage weight of this constraint, 100% compulsory, 0% non-compulsory
 	*/
 	double weightPercentage;
 	
-	bool active;
-	
 	QString comments;
-
-	/**
-	Specifies the type of this constraint (using the above constants).
-	*/
-	int type;
-
-	/**
-	True for mandatory constraints, false for non-mandatory constraints.
-	*/
-	//bool compulsory;
 
 	/**
 	Dummy constructor - needed for the static array of constraints.
 	Any other use should be avoided.
 	*/
-	TimeConstraint();
-	
+	TimeConstraint(int type);
+
 	virtual ~TimeConstraint()=0;
 
 	/**
@@ -170,7 +165,7 @@ public:
 	and any other restrictions must have much more lower weight,
 	so that the timetable can evolve when starting with uninitialized activities.
 	*/
-	TimeConstraint(double wp);
+	TimeConstraint(int type, double wp);
 
 	/**
 	The function that calculates the fitness of a solution, according to this
