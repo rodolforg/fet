@@ -686,8 +686,8 @@ QString Activity::getDetailedDescriptionWithConstraints(const Rules &r) const
 	s+="--------------------------------------------------\n";
 	s+=tr("Time constraints directly related to this activity:");
 	s+="\n";
-	for(int i=0; i<r.timeConstraintsList.size(); i++){
-		TimeConstraint* c=r.timeConstraintsList[i];
+	for(TimeConstraintsList::const_iterator it = r.timeConstraintsList.constBegin(); it != r.timeConstraintsList.constEnd(); ++it){
+		const TimeConstraint *c = *it;
 		if(c->isRelatedToActivity(r, this)){
 			s+="\n";
 			s+=c->getDetailedDescription(r);
@@ -697,8 +697,8 @@ QString Activity::getDetailedDescriptionWithConstraints(const Rules &r) const
 	s+="--------------------------------------------------\n";
 	s+=tr("Space constraints directly related to this activity:");
 	s+="\n";
-	for(int i=0; i<r.spaceConstraintsList.size(); i++){
-		SpaceConstraint* c=r.spaceConstraintsList[i];
+	for(SpaceConstraintsList::const_iterator it = r.spaceConstraintsList.constBegin(); it != r.spaceConstraintsList.constEnd(); ++it){
+		const SpaceConstraint *c = *it;
 		if(c->isRelatedToActivity(this)){
 			s+="\n";
 			s+=c->getDetailedDescription(r);
@@ -709,8 +709,9 @@ QString Activity::getDetailedDescriptionWithConstraints(const Rules &r) const
 	if(r.groupActivitiesInInitialOrderList.count()>0){
 		s+=tr("Timetable generation options directly related to this activity:");
 		s+="\n";
-		for(int i=0; i<r.groupActivitiesInInitialOrderList.count(); i++){
-			GroupActivitiesInInitialOrderItem* item=r.groupActivitiesInInitialOrderList[i];
+		for(GroupActivitiesInInitialOrderList::ConstIterator it = r.groupActivitiesInInitialOrderList.constBegin();
+			it != r.groupActivitiesInInitialOrderList.constEnd(); ++it){
+			const GroupActivitiesInInitialOrderItem* item = *it;
 			if(item->ids.contains(id)){
 				s+="\n";
 				s+=item->getDetailedDescription(r);

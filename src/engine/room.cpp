@@ -107,8 +107,8 @@ QString Room::getDetailedDescriptionWithConstraints(const Rules &r) const
 	s+="--------------------------------------------------\n";
 	s+=tr("Space constraints directly related to this room:");
 	s+="\n";
-	for(int i=0; i<r.spaceConstraintsList.size(); i++){
-		SpaceConstraint* c=r.spaceConstraintsList[i];
+	for(SpaceConstraintsList::const_iterator it = r.spaceConstraintsList.constBegin(); it != r.spaceConstraintsList.constEnd(); ++it){
+		const SpaceConstraint *c = *it;
 		if(c->isRelatedToRoom(this)){
 			s+="\n";
 			s+=c->getDetailedDescription(r);
