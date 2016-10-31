@@ -55,7 +55,6 @@ class Rules : public QObject{
 
 	bool modified;
 
-public:
 	/**
 	The name of the institution
 	*/
@@ -66,6 +65,7 @@ public:
 	*/
 	QString comments;
 
+public:
 	/**
 	The number of hours per day
 	*/
@@ -251,8 +251,10 @@ public:
 	~Rules();
 	
 	void setInstitutionName(const QString& newInstitutionName);
-	
+	const QString& getInstitutionName() const;
+
 	void setComments(const QString& newComments);
+	const QString& getComments() const;
 
 	/**
 	Adds a new teacher

@@ -41,7 +41,7 @@ CommentsForm::CommentsForm(QWidget* parent): QDialog(parent)
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
 	
-	commentsTextEdit->setPlainText(gt.rules.comments);
+	commentsTextEdit->setPlainText(gt.rules.getComments());
 	commentsTextEdit->selectAll();
 	commentsTextEdit->setFocus();
 }

@@ -39,7 +39,7 @@ InstitutionNameForm::InstitutionNameForm(QWidget* parent): QDialog(parent)
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
 	
-	institutionNameLineEdit->setText(gt.rules.institutionName);
+	institutionNameLineEdit->setText(gt.rules.getInstitutionName());
 	institutionNameLineEdit->selectAll();
 	institutionNameLineEdit->setFocus();
 }

@@ -1575,8 +1575,8 @@ void FetMainForm::on_timetableSaveTimetableAsAction_triggered()
 			
 		rules2.initialized=true;
 		
-		rules2.institutionName=gt.rules.institutionName;
-		rules2.comments=gt.rules.comments;
+		rules2.setInstitutionName(gt.rules.getInstitutionName());
+		rules2.setComments(gt.rules.getComments());
 		
 		rules2.nHoursPerDay=gt.rules.nHoursPerDay;
 		for(int i=0; i<gt.rules.nHoursPerDay; i++)

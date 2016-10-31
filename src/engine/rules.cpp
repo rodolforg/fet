@@ -921,11 +921,21 @@ void Rules::setInstitutionName(const QString& newInstitutionName)
 	setModified(true);
 }
 
+const QString& Rules::getInstitutionName() const
+{
+	return institutionName;
+}
+
 void Rules::setComments(const QString& newComments)
 {
 	this->comments=newComments;
 	this->internalStructureComputed=false;
 	setModified(true);
+}
+
+const QString &Rules::getComments() const
+{
+	return comments;
 }
 
 bool Rules::addTeacher(Teacher* teacher)

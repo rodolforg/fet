@@ -909,7 +909,7 @@ QString TimetablePrintForm::updateHtmlPrintString(bool printAll){
 	//QTBUG-9438
 	//QTBUG-2730
 	tmp+="  <head>\n";
-	tmp+="    <title>"+protect2(gt.rules.institutionName)+"</title>\n";
+	tmp+="    <title>"+protect2(gt.rules.getInstitutionName())+"</title>\n";
 	tmp+="    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\" />\n";
 	tmp+="    <style type=\"text/css\">\n";
 	

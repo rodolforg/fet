@@ -497,7 +497,7 @@ bool StatisticsExport::exportStatisticsIndex(QWidget* parent, QString saveTime){
 	else
 		tos<<"<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\""<<LANGUAGE_FOR_HTML<<"\" xml:lang=\""<<LANGUAGE_FOR_HTML<<"\" dir=\"rtl\">\n";
 	tos<<"  <head>\n";
-	tos<<"    <title>"<<protect2(gt.rules.institutionName)<<"</title>\n";
+	tos<<"    <title>"<<protect2(gt.rules.getInstitutionName())<<"</title>\n";
 	tos<<"    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n";
 
 	if(TIMETABLE_HTML_LEVEL>=1){
@@ -529,13 +529,13 @@ bool StatisticsExport::exportStatisticsIndex(QWidget* parent, QString saveTime){
 
 	tos<<"  <body>\n";
 
-	tos<<"    <table>\n      <tr align=\"left\" valign=\"top\">\n        <th>"+tr("Institution name")+":</th>\n        <td>"+protect2(gt.rules.institutionName)+"</td>\n      </tr>\n    </table>\n";
-	tos<<"    <table>\n      <tr align=\"left\" valign=\"top\">\n        <th>"+tr("Comments")+":</th>\n        <td>"+protect2(gt.rules.comments).replace(QString("\n"), QString("<br />\n"))+"</td>\n      </tr>\n    </table>\n";
+	tos<<"    <table>\n      <tr align=\"left\" valign=\"top\">\n        <th>"+tr("Institution name")+":</th>\n        <td>"+protect2(gt.rules.getInstitutionName())+"</td>\n      </tr>\n    </table>\n";
+	tos<<"    <table>\n      <tr align=\"left\" valign=\"top\">\n        <th>"+tr("Comments")+":</th>\n        <td>"+protect2(gt.rules.getComments()).replace(QString("\n"), QString("<br />\n"))+"</td>\n      </tr>\n    </table>\n";
 	tos<<"    <p>\n";
 	tos<<"    </p>\n";
 
 	tos<<"    <table border=\"1\">\n";
-	tos<<"      <caption>"<<protect2(gt.rules.institutionName)<<"</caption>\n";
+	tos<<"      <caption>"<<protect2(gt.rules.getInstitutionName())<<"</caption>\n";
 	tos<<"      <thead>\n        <tr><td rowspan=\"2\"></td><th colspan=\"3\">"+tr("Statistics")+"</th></tr>\n";
 	tos<<"        <tr>\n          <!-- span -->\n";
 	tos<<"          <th>"+tr("Teachers")+"</th><th>"+tr("Students")+"</th><th>"+tr("Subjects")+"</th>\n";
@@ -610,7 +610,7 @@ bool StatisticsExport::exportStatisticsTeachersSubjects(QWidget* parent, QString
 	else
 		tos<<"<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\""<<LANGUAGE_FOR_HTML<<"\" xml:lang=\""<<LANGUAGE_FOR_HTML<<"\" dir=\"rtl\">\n";
 	tos<<"  <head>\n";
-	tos<<"    <title>"<<protect2(gt.rules.institutionName)<<"</title>\n";
+	tos<<"    <title>"<<protect2(gt.rules.getInstitutionName())<<"</title>\n";
 	tos<<"    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n";
 	if(htmlLevel>=1){
 		QString bar;
@@ -662,7 +662,7 @@ QString StatisticsExport::exportStatisticsTeachersSubjectsHtml(QWidget* parent, 
 	}
 	QString tmp;
 	tmp+="    <table border=\"1\">\n";	
-	tmp+="      <caption>"+protect2(gt.rules.institutionName)+"</caption>\n";
+	tmp+="      <caption>"+protect2(gt.rules.getInstitutionName())+"</caption>\n";
 	tmp+="      <thead>\n        <tr><td rowspan=\"2\"></td><th colspan=\""+QString::number(colspan+1)+"\">"+tr("Teachers - Subjects Matrix")+"</th></tr>\n";
 	tmp+="        <tr>\n          <!-- span -->\n";
 	int currentCount=0;
@@ -887,7 +887,7 @@ bool StatisticsExport::exportStatisticsSubjectsTeachers(QWidget* parent, QString
 	else
 		tos<<"<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\""<<LANGUAGE_FOR_HTML<<"\" xml:lang=\""<<LANGUAGE_FOR_HTML<<"\" dir=\"rtl\">\n";
 	tos<<"  <head>\n";
-	tos<<"    <title>"<<protect2(gt.rules.institutionName)<<"</title>\n";
+	tos<<"    <title>"<<protect2(gt.rules.getInstitutionName())<<"</title>\n";
 	tos<<"    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n";
 	if(htmlLevel>=1){
 		QString bar;
@@ -939,7 +939,7 @@ QString StatisticsExport::exportStatisticsSubjectsTeachersHtml(QWidget* parent, 
 	}
 	QString tmp;
 	tmp+="    <table border=\"1\">\n";	
-	tmp+="      <caption>"+protect2(gt.rules.institutionName)+"</caption>\n";
+	tmp+="      <caption>"+protect2(gt.rules.getInstitutionName())+"</caption>\n";
 	tmp+="      <thead>\n        <tr><td rowspan=\"2\"></td><th colspan=\""+QString::number(colspan+1)+"\">"+tr("Subjects - Teachers Matrix")+"</th></tr>\n";
 	tmp+="        <tr>\n          <!-- span -->\n";
 	int currentCount=0;
@@ -1161,7 +1161,7 @@ bool StatisticsExport::exportStatisticsTeachersStudents(QWidget* parent, QString
 	else
 		tos<<"<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\""<<LANGUAGE_FOR_HTML<<"\" xml:lang=\""<<LANGUAGE_FOR_HTML<<"\" dir=\"rtl\">\n";
 	tos<<"  <head>\n";
-	tos<<"    <title>"<<protect2(gt.rules.institutionName)<<"</title>\n";
+	tos<<"    <title>"<<protect2(gt.rules.getInstitutionName())<<"</title>\n";
 	tos<<"    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n";
 	if(htmlLevel>=1){
 		QString bar;
@@ -1213,7 +1213,7 @@ QString StatisticsExport::exportStatisticsTeachersStudentsHtml(QWidget* parent, 
 	}
 	QString tmp;
 	tmp+="    <table border=\"1\">\n";	
-	tmp+="      <caption>"+protect2(gt.rules.institutionName)+"</caption>\n";
+	tmp+="      <caption>"+protect2(gt.rules.getInstitutionName())+"</caption>\n";
 	tmp+="      <thead>\n        <tr><td rowspan=\"2\"></td><th colspan=\""+QString::number(colspan+1)+"\">"+tr("Teachers - Students Matrix")+"</th></tr>\n";
 	tmp+="        <tr>\n          <!-- span -->\n";
 	int currentCount=0;
@@ -1436,7 +1436,7 @@ bool StatisticsExport::exportStatisticsStudentsTeachers(QWidget* parent, QString
 	else
 		tos<<"<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\""<<LANGUAGE_FOR_HTML<<"\" xml:lang=\""<<LANGUAGE_FOR_HTML<<"\" dir=\"rtl\">\n";
 	tos<<"  <head>\n";
-	tos<<"    <title>"<<protect2(gt.rules.institutionName)<<"</title>\n";
+	tos<<"    <title>"<<protect2(gt.rules.getInstitutionName())<<"</title>\n";
 	tos<<"    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n";
 	if(htmlLevel>=1){
 		QString bar;
@@ -1488,7 +1488,7 @@ QString StatisticsExport::exportStatisticsStudentsTeachersHtml(QWidget* parent, 
 	}
 	QString tmp;
 	tmp+="    <table border=\"1\">\n";	
-	tmp+="      <caption>"+protect2(gt.rules.institutionName)+"</caption>\n";
+	tmp+="      <caption>"+protect2(gt.rules.getInstitutionName())+"</caption>\n";
 	tmp+="      <thead>\n        <tr><td rowspan=\"2\"></td><th colspan=\""+QString::number(colspan+1)+"\">"+tr("Students -Teachers Matrix")+"</th></tr>\n";
 	tmp+="        <tr>\n          <!-- span -->\n";
 	int currentCount=0;
@@ -1711,7 +1711,7 @@ bool StatisticsExport::exportStatisticsSubjectsStudents(QWidget* parent, QString
 	else
 		tos<<"<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\""<<LANGUAGE_FOR_HTML<<"\" xml:lang=\""<<LANGUAGE_FOR_HTML<<"\" dir=\"rtl\">\n";
 	tos<<"  <head>\n";
-	tos<<"    <title>"<<protect2(gt.rules.institutionName)<<"</title>\n";
+	tos<<"    <title>"<<protect2(gt.rules.getInstitutionName())<<"</title>\n";
 	tos<<"    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n";
 	if(htmlLevel>=1){
 		QString bar;
@@ -1763,7 +1763,7 @@ QString StatisticsExport::exportStatisticsSubjectsStudentsHtml(QWidget* parent, 
 	}
 	QString tmp;
 	tmp+="    <table border=\"1\">\n";	
-	tmp+="      <caption>"+protect2(gt.rules.institutionName)+"</caption>\n";
+	tmp+="      <caption>"+protect2(gt.rules.getInstitutionName())+"</caption>\n";
 	tmp+="      <thead>\n        <tr><td rowspan=\"2\"></td><th colspan=\""+QString::number(colspan+1)+"\">"+tr("Subjects - Students Matrix")+"</th></tr>\n";
 	tmp+="        <tr>\n          <!-- span -->\n";
 	int currentCount=0;
@@ -1985,7 +1985,7 @@ bool StatisticsExport::exportStatisticsStudentsSubjects(QWidget* parent, QString
 	else
 		tos<<"<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\""<<LANGUAGE_FOR_HTML<<"\" xml:lang=\""<<LANGUAGE_FOR_HTML<<"\" dir=\"rtl\">\n";
 	tos<<"  <head>\n";
-	tos<<"    <title>"<<protect2(gt.rules.institutionName)<<"</title>\n";
+	tos<<"    <title>"<<protect2(gt.rules.getInstitutionName())<<"</title>\n";
 	tos<<"    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n";
 	if(htmlLevel>=1){
 		QString bar;
@@ -2037,7 +2037,7 @@ QString StatisticsExport::exportStatisticsStudentsSubjectsHtml(QWidget* parent, 
 	}
 	QString tmp;
 	tmp+="    <table border=\"1\">\n";	
-	tmp+="      <caption>"+protect2(gt.rules.institutionName)+"</caption>\n";
+	tmp+="      <caption>"+protect2(gt.rules.getInstitutionName())+"</caption>\n";
 	tmp+="      <thead>\n        <tr><td rowspan=\"2\"></td><th colspan=\""+QString::number(colspan+1)+"\">"+tr("Students -Subjects Matrix")+"</th></tr>\n";
 	tmp+="        <tr>\n          <!-- span -->\n";
 	int currentCount=0;
