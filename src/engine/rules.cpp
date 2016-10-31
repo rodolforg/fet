@@ -4619,31 +4619,6 @@ bool Rules::read(QWidget* parent, const QString& fileName, bool commandLine, QSt
 	if(this->initialized)
 		this->kill();
 	this->init();
-	
-	this->institutionName=tr("Default institution");
-	this->comments=tr("Default comments");
-
-	this->nDaysPerWeek=5;
-	this->daysOfTheWeek[0] = tr("Monday");
-	this->daysOfTheWeek[1] = tr("Tuesday");
-	this->daysOfTheWeek[2] = tr("Wednesday");
-	this->daysOfTheWeek[3] = tr("Thursday");
-	this->daysOfTheWeek[4] = tr("Friday");
-
-	this->nHoursPerDay=12;
-	this->hoursOfTheDay[0]=tr("08:00", "Hour name");
-	this->hoursOfTheDay[1]=tr("09:00", "Hour name");
-	this->hoursOfTheDay[2]=tr("10:00", "Hour name");
-	this->hoursOfTheDay[3]=tr("11:00", "Hour name");
-	this->hoursOfTheDay[4]=tr("12:00", "Hour name");
-	this->hoursOfTheDay[5]=tr("13:00", "Hour name");
-	this->hoursOfTheDay[6]=tr("14:00", "Hour name");
-	this->hoursOfTheDay[7]=tr("15:00", "Hour name");
-	this->hoursOfTheDay[8]=tr("16:00", "Hour name");
-	this->hoursOfTheDay[9]=tr("17:00", "Hour name");
-	this->hoursOfTheDay[10]=tr("18:00", "Hour name");
-	this->hoursOfTheDay[11]=tr("19:00", "Hour name");
-	//this->hoursOfTheDay[12]=tr("20:00", "Hour name");
 
 	bool skipDeprecatedConstraints=false;
 	
