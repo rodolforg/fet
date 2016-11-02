@@ -78,11 +78,10 @@ QString StudentsYear::getDescription() const
 	s+=", ";
 	s+=tr("NoS:%1", "Number of students").arg(this->numberOfStudents);
 	
-	QString end=QString("");
 	if(!comments.isEmpty())
-		end=QString(", ")+tr("C: %1", "Comments").arg(comments);
+		s+=QString(", ")+tr("C: %1", "Comments").arg(comments);
 
-	return s+end;
+	return s;
 }
 
 QString StudentsYear::getDetailedDescription() const
@@ -189,11 +188,10 @@ QString StudentsGroup::getDescription() const
 	s+=", ";
 	s+=tr("NoS:%1", "Number of students").arg(this->numberOfStudents);
 
-	QString end=QString("");
 	if(!comments.isEmpty())
-		end=QString(", ")+tr("C: %1", "Comments").arg(comments);
+		s+=QString(", ")+tr("C: %1", "Comments").arg(comments);
 
-	return s+end;
+	return s;
 }
 
 QString StudentsGroup::getDetailedDescription() const
@@ -275,11 +273,10 @@ QString StudentsSubgroup::getDescription() const
 	s+=", ";
 	s+=tr("NoS:%1", "Number of students").arg(this->numberOfStudents);
 
-	QString end=QString("");
 	if(!comments.isEmpty())
-		end=QString(", ")+tr("C: %1", "Comments").arg(comments);
+		s+=QString(", ")+tr("C: %1", "Comments").arg(comments);
 
-	return s+end;
+	return s;
 }
 
 QString StudentsSubgroup::getDetailedDescription() const

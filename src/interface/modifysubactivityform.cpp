@@ -301,19 +301,15 @@ void ModifySubactivityForm::updateStudentsListWidget()
 		for(int j=0; j<sty->groupsList.size(); j++){
 			StudentsGroup* stg=sty->groupsList[j];
 			if(showGroups){
-				QString begin=QString("");
-				QString end=QString("");
-				begin=QString(INDENT, ' ');
-				allStudentsListWidget->addItem(begin+stg->name+end);
+				QString ident=QString(INDENT, ' ');
+				allStudentsListWidget->addItem(ident+stg->name);
 				canonicalStudentsSetsNames.append(stg->name);
 			}
 			if(showSubgroups) for(int k=0; k<stg->subgroupsList.size(); k++){
 				StudentsSubgroup* sts=stg->subgroupsList[k];
 
-				QString begin=QString("");
-				QString end=QString("");
-				begin=QString(2*INDENT, ' ');
-				allStudentsListWidget->addItem(begin+sts->name+end);
+				QString ident=QString(2*INDENT, ' ');
+				allStudentsListWidget->addItem(ident+sts->name);
 				canonicalStudentsSetsNames.append(sts->name);
 			}
 		}
