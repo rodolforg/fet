@@ -135,20 +135,20 @@ QString ConstraintBasicCompulsorySpace::getXmlDescription(const Rules& r) const
 QString ConstraintBasicCompulsorySpace::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
-	
-	QString begin=QString("");
+
+	QString s;
 	if(!active)
-		begin="X - ";
+		s="X - ";
 
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-
-	QString s = tr("Basic compulsory constraints (space)");
+	s+= tr("Basic compulsory constraints (space)");
 	s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));
-	
-	return begin+s+end;
+
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+
+	return s;
 }
 
 QString ConstraintBasicCompulsorySpace::getDetailedDescription(const Rules& r) const
@@ -403,15 +403,11 @@ QString ConstraintRoomNotAvailableTimes::getXmlDescription(const Rules& r) const
 }
 
 QString ConstraintRoomNotAvailableTimes::getDescription(const Rules& r) const{
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
+		s="X - ";
 
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-
-	QString s=tr("Room not available");s+=", ";
+	s+=tr("Room not available");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("R:%1", "Room").arg(this->room);s+=", ";
 
@@ -430,7 +426,10 @@ QString ConstraintRoomNotAvailableTimes::getDescription(const Rules& r) const{
 			s+="; ";
 	}
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintRoomNotAvailableTimes::getDetailedDescription(const Rules& r) const {
@@ -736,15 +735,11 @@ QString ConstraintActivityPreferredRoom::getXmlDescription(const Rules& r) const
 QString ConstraintActivityPreferredRoom::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
+		s="X - ";
 
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-
-	QString s=tr("Activity preferred room"); s+=", ";
+	s+=tr("Activity preferred room"); s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("Id:%1 (%2)", "%1 is activity id, %2 is detailed description of activity")
 		.arg(this->activityId)
@@ -756,7 +751,10 @@ QString ConstraintActivityPreferredRoom::getDescription(const Rules& r) const{
 	s+=", ";
 	s+=tr("PL:%1", "Abbreviation for permanently locked").arg(yesNoTranslated(this->permanentlyLocked));
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintActivityPreferredRoom::getDetailedDescription(const Rules& r) const {
@@ -987,15 +985,11 @@ QString ConstraintActivityPreferredRooms::getXmlDescription(const Rules& r) cons
 }
 
 QString ConstraintActivityPreferredRooms::getDescription(const Rules& r) const{
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
+		s="X - ";
 
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-
-	QString s=tr("Activity preferred rooms"); s+=", ";
+	s+=tr("Activity preferred rooms"); s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("Id:%1 (%2)", "%1 is activity id, %2 is detailed description of activity")
 		.arg(this->activityId)
@@ -1006,7 +1000,10 @@ QString ConstraintActivityPreferredRooms::getDescription(const Rules& r) const{
 		s+=tr("R:%1", "Room").arg(*it);
 	}
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintActivityPreferredRooms::getDetailedDescription(const Rules& r) const {
@@ -1245,23 +1242,22 @@ QString ConstraintStudentsSetHomeRoom::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
+		s="X - ";
 
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-
-	QString s=tr("Students set home room"); s+=", ";
+	s+=tr("Students set home room"); s+=", ";
 
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
-	
+
 	s+=tr("St:%1", "St means students").arg(this->studentsName);s+=", ";
 
 	s+=tr("R:%1", "R means Room").arg(this->roomName);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintStudentsSetHomeRoom::getDetailedDescription(const Rules& r) const
@@ -1521,15 +1517,11 @@ QString ConstraintStudentsSetHomeRooms::getXmlDescription(const Rules& r) const{
 QString ConstraintStudentsSetHomeRooms::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
+		s="X - ";
 
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-
-	QString s=tr("Students set home rooms"); s+=", ";
+	s+=tr("Students set home rooms"); s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 
 	s+=tr("St:%1", "St means students").arg(this->studentsName);
@@ -1539,7 +1531,10 @@ QString ConstraintStudentsSetHomeRooms::getDescription(const Rules& r) const{
 		s+=tr("R:%1", "R means Room").arg(*it);
 	}
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintStudentsSetHomeRooms::getDetailedDescription(const Rules& r) const {
@@ -1795,23 +1790,22 @@ QString ConstraintTeacherHomeRoom::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
+		s="X - ";
 
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-
-	QString s=tr("Teacher home room"); s+=", ";
+	s+=tr("Teacher home room"); s+=", ";
 
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
-	
+
 	s+=tr("T:%1", "T means teacher").arg(this->teacherName);s+=", ";
 
 	s+=tr("R:%1", "R means Room").arg(this->roomName);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTeacherHomeRoom::getDetailedDescription(const Rules& r) const
@@ -2069,15 +2063,11 @@ QString ConstraintTeacherHomeRooms::getXmlDescription(const Rules& r) const{
 QString ConstraintTeacherHomeRooms::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
+		s="X - ";
 
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-
-	QString s=tr("Teacher home rooms"); s+=", ";
+	s+=tr("Teacher home rooms"); s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 
 	s+=tr("T:%1", "T means teacher").arg(this->teacherName);
@@ -2087,7 +2077,10 @@ QString ConstraintTeacherHomeRooms::getDescription(const Rules& r) const{
 		s+=tr("R:%1", "R means Room").arg(*it);
 	}
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTeacherHomeRooms::getDetailedDescription(const Rules& r) const {
@@ -2324,20 +2317,19 @@ QString ConstraintSubjectPreferredRoom::getXmlDescription(const Rules& r) const{
 QString ConstraintSubjectPreferredRoom::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
+		s="X - ";
 
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-
-	QString s=tr("Subject preferred room"); s+=", ";
+	s+=tr("Subject preferred room"); s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("S:%1", "Subject").arg(this->subjectName);s+=", ";
 	s+=tr("R:%1", "Room").arg(this->roomName);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintSubjectPreferredRoom::getDetailedDescription(const Rules& r) const {
@@ -2563,15 +2555,11 @@ QString ConstraintSubjectPreferredRooms::getXmlDescription(const Rules& r) const
 QString ConstraintSubjectPreferredRooms::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
+		s="X - ";
 
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-
-	QString s=tr("Subject preferred rooms"); s+=", ";
+	s+=tr("Subject preferred rooms"); s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("S:%1", "Subject").arg(this->subjectName);
 	for(QStringList::ConstIterator it=this->roomsNames.begin(); it!=this->roomsNames.end(); it++){
@@ -2579,7 +2567,10 @@ QString ConstraintSubjectPreferredRooms::getDescription(const Rules& r) const{
 		s+=tr("R:%1", "Room").arg(*it);
 	}
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintSubjectPreferredRooms::getDetailedDescription(const Rules& r) const {
@@ -2811,21 +2802,20 @@ QString ConstraintSubjectActivityTagPreferredRoom::getXmlDescription(const Rules
 QString ConstraintSubjectActivityTagPreferredRoom::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
+		s="X - ";
 
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-
-	QString s=tr("Subject activity tag preferred room"); s+=", ";
+	s+=tr("Subject activity tag preferred room"); s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("S:%1", "Subject").arg(this->subjectName);s+=", ";
 	s+=tr("AT:%1", "Activity tag").arg(this->activityTagName);s+=", ";
 	s+=tr("R:%1", "Room").arg(this->roomName);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintSubjectActivityTagPreferredRoom::getDetailedDescription(const Rules& r) const {
@@ -3059,15 +3049,11 @@ QString ConstraintSubjectActivityTagPreferredRooms::getXmlDescription(const Rule
 QString ConstraintSubjectActivityTagPreferredRooms::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
+		s="X - ";
 
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-
-	QString s=tr("Subject activity tag preferred rooms"); s+=", ";
+	s+=tr("Subject activity tag preferred rooms"); s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("S:%1", "Subject").arg(this->subjectName);s+=", ";
 	s+=tr("AT:%1", "Activity tag").arg(this->activityTagName);
@@ -3076,7 +3062,10 @@ QString ConstraintSubjectActivityTagPreferredRooms::getDescription(const Rules& 
 		s+=tr("R:%1", "Room").arg(*it);
 	}
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintSubjectActivityTagPreferredRooms::getDetailedDescription(const Rules& r) const {
@@ -3304,20 +3293,19 @@ QString ConstraintActivityTagPreferredRoom::getXmlDescription(const Rules& r) co
 QString ConstraintActivityTagPreferredRoom::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
+		s="X - ";
 
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-
-	QString s=tr("Activity tag preferred room"); s+=", ";
+	s+=tr("Activity tag preferred room"); s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("AT:%1", "Activity tag").arg(this->activityTagName);s+=", ";
 	s+=tr("R:%1", "Room").arg(this->roomName);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintActivityTagPreferredRoom::getDetailedDescription(const Rules& r) const {
@@ -3544,15 +3532,11 @@ QString ConstraintActivityTagPreferredRooms::getXmlDescription(const Rules& r) c
 QString ConstraintActivityTagPreferredRooms::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
+		s="X - ";
 
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-
-	QString s=tr("Activity tag preferred rooms"); s+=", ";
+	s+=tr("Activity tag preferred rooms"); s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("AT:%1", "Activity tag").arg(this->activityTagName);
 	for(QStringList::ConstIterator it=this->roomsNames.begin(); it!=this->roomsNames.end(); it++){
@@ -3560,7 +3544,10 @@ QString ConstraintActivityTagPreferredRooms::getDescription(const Rules& r) cons
 		s+=tr("R:%1", "Room").arg(*it);
 	}
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintActivityTagPreferredRooms::getDetailedDescription(const Rules& r) const {
@@ -3809,23 +3796,22 @@ QString ConstraintStudentsSetMaxBuildingChangesPerDay::getDescription(const Rule
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
+		s="X - ";
 
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-
-	QString s=tr("Students set max building changes per day"); s+=", ";
+	s+=tr("Students set max building changes per day"); s+=", ";
 
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
-	
+
 	s+=tr("St:%1", "St means students").arg(this->studentsName);s+=", ";
 
 	s+=tr("MC:%1", "MC means max changes").arg(this->maxBuildingChangesPerDay);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintStudentsSetMaxBuildingChangesPerDay::getDetailedDescription(const Rules& r) const
@@ -4046,21 +4032,20 @@ QString ConstraintStudentsMaxBuildingChangesPerDay::getDescription(const Rules& 
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
+		s="X - ";
 
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-
-	QString s=tr("Students max building changes per day"); s+=", ";
+	s+=tr("Students max building changes per day"); s+=", ";
 
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
-	
+
 	s+=tr("MC:%1", "MC means max changes").arg(this->maxBuildingChangesPerDay);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintStudentsMaxBuildingChangesPerDay::getDetailedDescription(const Rules& r) const
@@ -4329,23 +4314,22 @@ QString ConstraintStudentsSetMaxBuildingChangesPerWeek::getDescription(const Rul
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
+		s="X - ";
 
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-
-	QString s=tr("Students set max building changes per week"); s+=", ";
+	s+=tr("Students set max building changes per week"); s+=", ";
 
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
-	
+
 	s+=tr("St:%1", "St means students").arg(this->studentsName);s+=", ";
 
 	s+=tr("MC:%1", "MC means max changes").arg(this->maxBuildingChangesPerWeek);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintStudentsSetMaxBuildingChangesPerWeek::getDetailedDescription(const Rules& r) const
@@ -4566,21 +4550,20 @@ QString ConstraintStudentsMaxBuildingChangesPerWeek::getDescription(const Rules&
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
+		s="X - ";
 
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-
-	QString s=tr("Students max building changes per week"); s+=", ";
+	s+=tr("Students max building changes per week"); s+=", ";
 
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
-	
+
 	s+=tr("MC:%1", "MC means max changes").arg(this->maxBuildingChangesPerWeek);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintStudentsMaxBuildingChangesPerWeek::getDetailedDescription(const Rules& r) const
@@ -4848,23 +4831,22 @@ QString ConstraintStudentsSetMinGapsBetweenBuildingChanges::getDescription(const
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
+		s="X - ";
 
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-
-	QString s=tr("Students set min gaps between building changes"); s+=", ";
+	s+=tr("Students set min gaps between building changes"); s+=", ";
 
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
-	
+
 	s+=tr("St:%1", "St means students").arg(this->studentsName);s+=", ";
 
 	s+=tr("mG:%1", "mG means min gaps").arg(this->minGapsBetweenBuildingChanges);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintStudentsSetMinGapsBetweenBuildingChanges::getDetailedDescription(const Rules& r) const
@@ -5097,21 +5079,20 @@ QString ConstraintStudentsMinGapsBetweenBuildingChanges::getDescription(const Ru
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
+		s="X - ";
 
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-
-	QString s=tr("Students min gaps between building changes"); s+=", ";
+	s+=tr("Students min gaps between building changes"); s+=", ";
 
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
-	
+
 	s+=tr("mG:%1", "mG means min gaps").arg(this->minGapsBetweenBuildingChanges);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintStudentsMinGapsBetweenBuildingChanges::getDetailedDescription(const Rules& r) const
@@ -5355,23 +5336,22 @@ QString ConstraintTeacherMaxBuildingChangesPerDay::getDescription(const Rules& r
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
+		s="X - ";
 
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-
-	QString s=tr("Teacher max building changes per day"); s+=", ";
+	s+=tr("Teacher max building changes per day"); s+=", ";
 
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
-	
+
 	s+=tr("T:%1", "T means teacher").arg(this->teacherName);s+=", ";
 
 	s+=tr("MC:%1", "MC means max changes").arg(this->maxBuildingChangesPerDay);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTeacherMaxBuildingChangesPerDay::getDetailedDescription(const Rules& r) const
@@ -5593,21 +5573,20 @@ QString ConstraintTeachersMaxBuildingChangesPerDay::getDescription(const Rules& 
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
+		s="X - ";
 
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-
-	QString s=tr("Teachers max building changes per day"); s+=", ";
+	s+=tr("Teachers max building changes per day"); s+=", ";
 
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
-	
+
 	s+=tr("MC:%1", "MC means max changes").arg(this->maxBuildingChangesPerDay);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTeachersMaxBuildingChangesPerDay::getDetailedDescription(const Rules& r) const
@@ -5839,23 +5818,22 @@ QString ConstraintTeacherMaxBuildingChangesPerWeek::getDescription(const Rules& 
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
+		s="X - ";
 
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-
-	QString s=tr("Teacher max building changes per week"); s+=", ";
+	s+=tr("Teacher max building changes per week"); s+=", ";
 
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
-	
+
 	s+=tr("T:%1", "T means teacher").arg(this->teacherName);s+=", ";
 
 	s+=tr("MC:%1", "MC means max changes").arg(this->maxBuildingChangesPerWeek);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTeacherMaxBuildingChangesPerWeek::getDetailedDescription(const Rules& r) const
@@ -6077,21 +6055,20 @@ QString ConstraintTeachersMaxBuildingChangesPerWeek::getDescription(const Rules&
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
+		s="X - ";
 
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-
-	QString s=tr("Teachers max building changes per week"); s+=", ";
+	s+=tr("Teachers max building changes per week"); s+=", ";
 
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
-	
+
 	s+=tr("MC:%1", "MC means max changes").arg(this->maxBuildingChangesPerWeek);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTeachersMaxBuildingChangesPerWeek::getDetailedDescription(const Rules& r) const
@@ -6323,23 +6300,22 @@ QString ConstraintTeacherMinGapsBetweenBuildingChanges::getDescription(const Rul
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
+		s="X - ";
 
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-
-	QString s=tr("Teacher min gaps between building changes"); s+=", ";
+	s+=tr("Teacher min gaps between building changes"); s+=", ";
 
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
-	
+
 	s+=tr("T:%1", "T means teacher").arg(this->teacherName);s+=", ";
 
 	s+=tr("mG:%1", "mG means min gaps").arg(this->minGapsBetweenBuildingChanges);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTeacherMinGapsBetweenBuildingChanges::getDetailedDescription(const Rules& r) const
@@ -6573,21 +6549,20 @@ QString ConstraintTeachersMinGapsBetweenBuildingChanges::getDescription(const Ru
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
+		s="X - ";
 
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-
-	QString s=tr("Teachers min gaps between building changes"); s+=", ";
+	s+=tr("Teachers min gaps between building changes"); s+=", ";
 
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
-	
+
 	s+=tr("mG:%1", "mG means min gaps").arg(this->minGapsBetweenBuildingChanges);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTeachersMinGapsBetweenBuildingChanges::getDetailedDescription(const Rules& r) const
@@ -6861,27 +6836,26 @@ QString ConstraintActivitiesOccupyMaxDifferentRooms::getDescription(const Rules&
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
+		s="X - ";
+
 	QString actids=QString("");
 	foreach(int aid, this->activitiesIds)
 		actids+=CustomFETString::number(aid)+QString(", ");
 	actids.chop(2);
-		
-	QString s=tr("Activities occupy max different rooms, WP:%1, NA:%2, A: %3, MDR:%4", "Constraint description. WP means weight percentage, "
+
+	s+=tr("Activities occupy max different rooms, WP:%1, NA:%2, A: %3, MDR:%4", "Constraint description. WP means weight percentage, "
 	 "NA means the number of activities, A means activities list, MDR means max different rooms")
 	 .arg(CustomFETString::number(this->weightPercentage))
 	 .arg(CustomFETString::number(this->activitiesIds.count()))
 	 .arg(actids)
 	 .arg(CustomFETString::number(this->maxDifferentRooms));
-	
-	return begin+s+end;
+
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintActivitiesOccupyMaxDifferentRooms::getDetailedDescription(const Rules& r) const
@@ -7131,26 +7105,25 @@ QString ConstraintActivitiesSameRoomIfConsecutive::getDescription(const Rules& r
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
+		s="X - ";
+
 	QString actids=QString("");
 	foreach(int aid, this->activitiesIds)
 		actids+=CustomFETString::number(aid)+QString(", ");
 	actids.chop(2);
-		
-	QString s=tr("Activities same room if consecutive, WP:%1, NA:%2, A: %3", "Constraint description. WP means weight percentage, "
+
+	s+=tr("Activities same room if consecutive, WP:%1, NA:%2, A: %3", "Constraint description. WP means weight percentage, "
 	 "NA means the number of activities, A means activities list")
 	 .arg(CustomFETString::number(this->weightPercentage))
 	 .arg(CustomFETString::number(this->activitiesIds.count()))
 	 .arg(actids);
-	
-	return begin+s+end;
+
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintActivitiesSameRoomIfConsecutive::getDetailedDescription(const Rules& r) const

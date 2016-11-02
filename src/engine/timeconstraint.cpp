@@ -179,15 +179,16 @@ QString ConstraintBasicCompulsoryTime::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
+		s="X - ";
+
+	s += tr("Basic compulsory constraints (time)") + ", " + tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(weightPercentage));
+
 	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
-	return begin+tr("Basic compulsory constraints (time)") + ", " + tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage))+end;
+		s += ", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintBasicCompulsoryTime::getDetailedDescription(const Rules& r) const
@@ -474,15 +475,11 @@ QString ConstraintTeacherNotAvailableTimes::getXmlDescription(const Rules& r) co
 }
 
 QString ConstraintTeacherNotAvailableTimes::getDescription(const Rules& r) const{
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
-	QString s=tr("Teacher not available");s+=", ";
+		s="X - ";
+
+	s+=tr("Teacher not available");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("T:%1", "Teacher").arg(this->teacher);s+=", ";
 
@@ -501,7 +498,10 @@ QString ConstraintTeacherNotAvailableTimes::getDescription(const Rules& r) const
 			s+="; ";
 	}
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTeacherNotAvailableTimes::getDetailedDescription(const Rules& r) const {
@@ -834,16 +834,11 @@ QString ConstraintStudentsSetNotAvailableTimes::getXmlDescription(const Rules& r
 }
 
 QString ConstraintStudentsSetNotAvailableTimes::getDescription(const Rules& r) const{
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
-	s=tr("Students set not available");s+=", ";
+	if(!active)
+		s="X - ";
+
+	s+=tr("Students set not available");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("St:%1", "Students").arg(this->students);s+=", ";
 
@@ -862,7 +857,10 @@ QString ConstraintStudentsSetNotAvailableTimes::getDescription(const Rules& r) c
 			s+="; ";
 	}
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintStudentsSetNotAvailableTimes::getDetailedDescription(const Rules& r) const {
@@ -1141,15 +1139,10 @@ QString ConstraintActivitiesSameStartingTime::getXmlDescription(const Rules& r) 
 QString ConstraintActivitiesSameStartingTime::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Activities same starting time");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("NA:%1", "Number of activities").arg(this->n_activities);s+=", ";
@@ -1159,12 +1152,15 @@ QString ConstraintActivitiesSameStartingTime::getDescription(const Rules& r) con
 			s+=", ";
 	}
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintActivitiesSameStartingTime::getDetailedDescription(const Rules& r) const {
 	QString s;
-	
+
 	s=tr("Time constraint");s+="\n";
 	s+=tr("Activities must have the same starting time");s+="\n";
 	s+=tr("Weight (percentage)=%1%").arg(CustomFETString::number(this->weightPercentage));s+="\n";
@@ -1413,15 +1409,10 @@ QString ConstraintActivitiesNotOverlapping::getXmlDescription(const Rules& r) co
 QString ConstraintActivitiesNotOverlapping::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Activities not overlapping");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("NA:%1", "Number of activities").arg(this->n_activities);s+=", ";
@@ -1431,7 +1422,10 @@ QString ConstraintActivitiesNotOverlapping::getDescription(const Rules& r) const
 			s+=", ";
 	}
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintActivitiesNotOverlapping::getDetailedDescription(const Rules& r) const {
@@ -1717,15 +1711,10 @@ QString ConstraintMinDaysBetweenActivities::getXmlDescription(const Rules& r) co
 QString ConstraintMinDaysBetweenActivities::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Min days between activities");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("NA:%1", "Number of activities").arg(this->n_activities);s+=", ";
@@ -1735,7 +1724,10 @@ QString ConstraintMinDaysBetweenActivities::getDescription(const Rules& r) const
 	s+=tr("mD:%1", "Min days").arg(this->minDays);s+=", ";
 	s+=tr("CSD:%1", "Consecutive if same day").arg(yesNoTranslated(this->consecutiveIfSameDay));
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintMinDaysBetweenActivities::getDetailedDescription(const Rules& r) const {
@@ -2018,15 +2010,10 @@ QString ConstraintMaxDaysBetweenActivities::getXmlDescription(const Rules& r) co
 QString ConstraintMaxDaysBetweenActivities::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Max days between activities");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("NA:%1", "Number of activities").arg(this->n_activities);s+=", ";
@@ -2035,7 +2022,10 @@ QString ConstraintMaxDaysBetweenActivities::getDescription(const Rules& r) const
 	}
 	s+=tr("MD:%1", "Abbreviation for maximum days").arg(this->maxDays);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintMaxDaysBetweenActivities::getDetailedDescription(const Rules& r) const {
@@ -2309,15 +2299,10 @@ QString ConstraintMinGapsBetweenActivities::getXmlDescription(const Rules& r) co
 QString ConstraintMinGapsBetweenActivities::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Min gaps between activities");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("NA:%1", "Number of activities").arg(this->n_activities);s+=", ";
@@ -2326,7 +2311,10 @@ QString ConstraintMinGapsBetweenActivities::getDescription(const Rules& r) const
 	}
 	s+=tr("mG:%1", "Minimum number of gaps").arg(this->minGaps);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintMinGapsBetweenActivities::getDetailedDescription(const Rules& r) const {
@@ -2535,20 +2523,18 @@ QString ConstraintTeachersMaxHoursDaily::getXmlDescription(const Rules& r) const
 QString ConstraintTeachersMaxHoursDaily::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Teachers max hours daily"), s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("MH:%1", "Maximum hours (daily)").arg(this->maxHoursDaily);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTeachersMaxHoursDaily::getDetailedDescription(const Rules& r) const {
@@ -2732,21 +2718,19 @@ QString ConstraintTeacherMaxHoursDaily::getXmlDescription(const Rules& r) const{
 QString ConstraintTeacherMaxHoursDaily::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Teacher max hours daily");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("T:%1", "Teacher").arg(this->teacherName);s+=", ";
 	s+=tr("MH:%1", "Maximum hours (daily)").arg(this->maxHoursDaily);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTeacherMaxHoursDaily::getDetailedDescription(const Rules& r) const {
@@ -2925,20 +2909,18 @@ QString ConstraintTeachersMaxHoursContinuously::getXmlDescription(const Rules& r
 QString ConstraintTeachersMaxHoursContinuously::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Teachers max hours continuously");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("MH:%1", "Maximum hours (continuously)").arg(this->maxHoursContinuously);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTeachersMaxHoursContinuously::getDetailedDescription(const Rules& r) const {
@@ -3149,21 +3131,19 @@ QString ConstraintTeacherMaxHoursContinuously::getXmlDescription(const Rules& r)
 QString ConstraintTeacherMaxHoursContinuously::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Teacher max hours continuously");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("T:%1", "Teacher").arg(this->teacherName);s+=", ";
 	s+=tr("MH:%1", "Maximum hours continuously").arg(this->maxHoursContinuously);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTeacherMaxHoursContinuously::getDetailedDescription(const Rules& r) const {
@@ -3391,19 +3371,17 @@ QString ConstraintTeachersActivityTagMaxHoursContinuously::getXmlDescription(con
 QString ConstraintTeachersActivityTagMaxHoursContinuously::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Teachers for activity tag %1 have max %2 hours continuously").arg(this->activityTagName).arg(this->maxHoursContinuously);s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTeachersActivityTagMaxHoursContinuously::getDetailedDescription(const Rules& r) const {
@@ -3657,19 +3635,17 @@ QString ConstraintTeacherActivityTagMaxHoursContinuously::getXmlDescription(cons
 QString ConstraintTeacherActivityTagMaxHoursContinuously::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Teacher %1 for activity tag %2 has max %3 hours continuously").arg(this->teacherName).arg(this->activityTagName).arg(this->maxHoursContinuously);s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTeacherActivityTagMaxHoursContinuously::getDetailedDescription(const Rules& r) const {
@@ -3903,20 +3879,19 @@ QString ConstraintTeacherMaxDaysPerWeek::getXmlDescription(const Rules& r) const
 QString ConstraintTeacherMaxDaysPerWeek::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
-	QString s=tr("Teacher max days per week");s+=", ";
+		s="X - ";
+
+	s+=tr("Teacher max days per week");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("T:%1", "Teacher").arg(this->teacherName);s+=", ";
 	s+=tr("MD:%1", "Max days (per week)").arg(this->maxDaysPerWeek);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTeacherMaxDaysPerWeek::getDetailedDescription(const Rules& r) const {
@@ -4105,19 +4080,22 @@ QString ConstraintTeachersMaxDaysPerWeek::getXmlDescription(const Rules& r) cons
 QString ConstraintTeachersMaxDaysPerWeek::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
-		
+		s="X - ";
+
 	QString end=QString("");
 	if(!comments.isEmpty())
 		end=", "+tr("C: %1", "Comments").arg(comments);
-		
-	QString s=tr("Teachers max days per week");s+=", ";
+
+	s+=tr("Teachers max days per week");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("MD:%1", "Max days (per week)").arg(this->maxDaysPerWeek);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTeachersMaxDaysPerWeek::getDetailedDescription(const Rules& r) const {
@@ -4310,20 +4288,18 @@ QString ConstraintTeachersMaxGapsPerWeek::getXmlDescription(const Rules& r) cons
 QString ConstraintTeachersMaxGapsPerWeek::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Teachers max gaps per week");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("MG:%1", "Max gaps (per week)").arg(this->maxGaps);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTeachersMaxGapsPerWeek::getDetailedDescription(const Rules& r) const {
@@ -4516,21 +4492,19 @@ QString ConstraintTeacherMaxGapsPerWeek::getXmlDescription(const Rules& r) const
 QString ConstraintTeacherMaxGapsPerWeek::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Teacher max gaps per week");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("T:%1", "Teacher").arg(this->teacherName); s+=", ";
 	s+=tr("MG:%1", "Max gaps (per week").arg(this->maxGaps);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTeacherMaxGapsPerWeek::getDetailedDescription(const Rules& r) const {
@@ -4719,20 +4693,18 @@ QString ConstraintTeachersMaxGapsPerDay::getXmlDescription(const Rules& r) const
 QString ConstraintTeachersMaxGapsPerDay::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Teachers max gaps per day");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("MG:%1", "Max gaps (per day)").arg(this->maxGaps);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTeachersMaxGapsPerDay::getDetailedDescription(const Rules& r) const {
@@ -4924,21 +4896,19 @@ QString ConstraintTeacherMaxGapsPerDay::getXmlDescription(const Rules& r) const{
 QString ConstraintTeacherMaxGapsPerDay::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Teacher max gaps per day");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("T:%1", "Teacher").arg(this->teacherName); s+=", ";
 	s+=tr("MG:%1", "Max gaps (per day)").arg(this->maxGaps);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTeacherMaxGapsPerDay::getDetailedDescription(const Rules& r) const {
@@ -5128,15 +5098,10 @@ QString ConstraintBreakTimes::getXmlDescription(const Rules& r) const{
 }
 
 QString ConstraintBreakTimes::getDescription(const Rules& r) const{
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Break times");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 
@@ -5154,8 +5119,11 @@ QString ConstraintBreakTimes::getDescription(const Rules& r) const{
 		if(i<days.count()-1)
 			s+="; ";
 	}
-	
-	return begin+s+end;
+
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintBreakTimes::getDetailedDescription(const Rules& r) const {
@@ -5401,20 +5369,18 @@ QString ConstraintStudentsMaxGapsPerWeek::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Students max gaps per week");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("MG:%1", "Max gaps (per week)").arg(this->maxGaps);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintStudentsMaxGapsPerWeek::getDetailedDescription(const Rules& r) const
@@ -5659,21 +5625,19 @@ QString ConstraintStudentsSetMaxGapsPerWeek::getXmlDescription(const Rules& r) c
 QString ConstraintStudentsSetMaxGapsPerWeek::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Students set max gaps per week"); s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage)); s+=", ";
 	s+=tr("MG:%1", "Max gaps (per week)").arg(this->maxGaps);s+=", ";
 	s+=tr("St:%1", "Students").arg(this->students);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintStudentsSetMaxGapsPerWeek::getDetailedDescription(const Rules& r) const {
@@ -5868,21 +5832,19 @@ QString ConstraintStudentsEarlyMaxBeginningsAtSecondHour::getDescription(const R
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Students must arrive early, respecting maximum %1 arrivals at second hour")
 	 .arg(this->maxBeginningsAtSecondHour);
 	s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintStudentsEarlyMaxBeginningsAtSecondHour::getDetailedDescription(const Rules& r) const
@@ -6158,22 +6120,19 @@ QString ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::getDescription(cons
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
 
 	s+=tr("Students set must arrive early, respecting maximum %1 arrivals at second hour")
 	 .arg(this->maxBeginningsAtSecondHour); s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("St:%1", "Students set").arg(this->students);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::getDetailedDescription(const Rules& r) const
@@ -6400,20 +6359,18 @@ QString ConstraintStudentsMaxHoursDaily::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Students max hours daily");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("MH:%1", "Max hours (daily)").arg(this->maxHoursDaily);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintStudentsMaxHoursDaily::getDetailedDescription(const Rules& r) const
@@ -6593,21 +6550,19 @@ QString ConstraintStudentsSetMaxHoursDaily::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Students set max hours daily");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("St:%1", "Students (set)").arg(this->students); s+=", ";
 	s+=tr("MH:%1", "Max hours (daily)").arg(this->maxHoursDaily);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintStudentsSetMaxHoursDaily::getDetailedDescription(const Rules& r) const
@@ -6852,20 +6807,18 @@ QString ConstraintStudentsMaxHoursContinuously::getDescription(const Rules& r) c
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Students max hours continuously");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("MH:%1", "Max hours (continuously)").arg(this->maxHoursContinuously);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintStudentsMaxHoursContinuously::getDetailedDescription(const Rules& r) const
@@ -7069,21 +7022,19 @@ QString ConstraintStudentsSetMaxHoursContinuously::getDescription(const Rules& r
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Students set max hours continuously");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("St:%1", "Students (set)").arg(this->students);s+=", ";
 	s+=tr("MH:%1", "Max hours (continuously)").arg(this->maxHoursContinuously);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintStudentsSetMaxHoursContinuously::getDetailedDescription(const Rules& r) const
@@ -7374,20 +7325,18 @@ QString ConstraintStudentsActivityTagMaxHoursContinuously::getDescription(const 
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Students for activity tag %1 have max %2 hours continuously")
 		.arg(this->activityTagName).arg(this->maxHoursContinuously); s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintStudentsActivityTagMaxHoursContinuously::getDetailedDescription(const Rules& r) const
@@ -7615,20 +7564,18 @@ QString ConstraintStudentsSetActivityTagMaxHoursContinuously::getDescription(con
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Students set %1 for activity tag %2 has max %3 hours continuously").arg(this->students).arg(this->activityTagName).arg(this->maxHoursContinuously);
 	s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintStudentsSetActivityTagMaxHoursContinuously::getDetailedDescription(const Rules& r) const
@@ -7947,15 +7894,9 @@ QString ConstraintStudentsMinHoursDaily::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
 
 	if(this->allowEmptyDays)
 		s+="! ";
@@ -7964,7 +7905,10 @@ QString ConstraintStudentsMinHoursDaily::getDescription(const Rules& r) const
 	s+=tr("mH:%1", "Min hours (daily)").arg(this->minHoursDaily);s+=", ";
 	s+=tr("AED:%1", "Allow empty days").arg(yesNoTranslated(this->allowEmptyDays));
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintStudentsMinHoursDaily::getDetailedDescription(const Rules& r) const
@@ -8163,16 +8107,10 @@ QString ConstraintStudentsSetMinHoursDaily::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
-	
+	if(!active)
+		s="X - ";
+
 	if(this->allowEmptyDays)
 		s+="! ";
 	s+=tr("Students set min hours daily");s+=", ";
@@ -8181,7 +8119,10 @@ QString ConstraintStudentsSetMinHoursDaily::getDescription(const Rules& r) const
 	s+=tr("mH:%1", "Min hours (daily)").arg(this->minHoursDaily);s+=", ";
 	s+=tr("AED:%1", "Allow empty days").arg(yesNoTranslated(this->allowEmptyDays));
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintStudentsSetMinHoursDaily::getDetailedDescription(const Rules& r) const
@@ -8494,15 +8435,10 @@ QString ConstraintActivityPreferredStartingTime::getDescription(const Rules& r) 
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Act. id: %1 (%2) has a preferred starting time: %3", "%1 is the id, %2 is the detailed description of the activity. %3 is time (day and hour)")
 	 .arg(this->activityId)
 	 .arg(getActivityDetailedDescription(r, this->activityId))
@@ -8514,7 +8450,10 @@ QString ConstraintActivityPreferredStartingTime::getDescription(const Rules& r) 
 	s+=", ";
 	s+=tr("PL:%1", "Abbreviation for permanently locked").arg(yesNoTranslated(this->permanentlyLocked));
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintActivityPreferredStartingTime::getDetailedDescription(const Rules& r) const
@@ -8763,15 +8702,10 @@ QString ConstraintActivityPreferredTimeSlots::getXmlDescription(const Rules& r) 
 
 QString ConstraintActivityPreferredTimeSlots::getDescription(const Rules& r) const
 {
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Act. id: %1 (%2)", "%1 is the id, %2 is the detailed description of the activity")
 		.arg(this->p_activityId)
 		.arg(getActivityDetailedDescription(r, this->p_activityId));
@@ -8794,7 +8728,10 @@ QString ConstraintActivityPreferredTimeSlots::getDescription(const Rules& r) con
 
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintActivityPreferredTimeSlots::getDetailedDescription(const Rules& r) const
@@ -9179,15 +9116,9 @@ QString ConstraintActivitiesPreferredTimeSlots::getXmlDescription(const Rules& r
 
 QString ConstraintActivitiesPreferredTimeSlots::getDescription(const Rules& r) const
 {
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
 
 	QString tc, st, su, at, dur;
 	
@@ -9233,7 +9164,10 @@ QString ConstraintActivitiesPreferredTimeSlots::getDescription(const Rules& r) c
 
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintActivitiesPreferredTimeSlots::getDetailedDescription(const Rules& r) const
@@ -9670,16 +9604,10 @@ QString ConstraintSubactivitiesPreferredTimeSlots::getXmlDescription(const Rules
 
 QString ConstraintSubactivitiesPreferredTimeSlots::getDescription(const Rules& r) const
 {
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
-	
+	if(!active)
+		s="X - ";
+
 	QString tc, st, su, at;
 	
 	if(this->p_teacherName!="")
@@ -9722,7 +9650,10 @@ QString ConstraintSubactivitiesPreferredTimeSlots::getDescription(const Rules& r
 
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintSubactivitiesPreferredTimeSlots::getDetailedDescription(const Rules& r) const
@@ -10060,19 +9991,14 @@ QString ConstraintActivityPreferredStartingTimes::getXmlDescription(const Rules&
 
 QString ConstraintActivityPreferredStartingTimes::getDescription(const Rules& r) const
 {
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Act. id: %1 (%2)", "%1 is the id, %2 is the detailed description of the activity.")
 		.arg(this->activityId)
 		.arg(getActivityDetailedDescription(r, this->activityId));
-	
+
 	s+=" ";
 	s+=tr("has a set of preferred starting times:");
 	s+=" ";
@@ -10091,7 +10017,10 @@ QString ConstraintActivityPreferredStartingTimes::getDescription(const Rules& r)
 
 	s+=tr("WP:%1%", "Weight Percentage").arg(CustomFETString::number(this->weightPercentage));
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintActivityPreferredStartingTimes::getDetailedDescription(const Rules& r) const
@@ -10462,15 +10391,9 @@ QString ConstraintActivitiesPreferredStartingTimes::getXmlDescription(const Rule
 
 QString ConstraintActivitiesPreferredStartingTimes::getDescription(const Rules& r) const
 {
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
 
 	QString tc, st, su, at, dur;
 	
@@ -10514,10 +10437,13 @@ QString ConstraintActivitiesPreferredStartingTimes::getDescription(const Rules& 
 			s+="; ";
 	}
 	s+=", ";
-	
+
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintActivitiesPreferredStartingTimes::getDetailedDescription(const Rules& r) const
@@ -10943,14 +10869,10 @@ QString ConstraintSubactivitiesPreferredStartingTimes::getXmlDescription(const R
 
 QString ConstraintSubactivitiesPreferredStartingTimes::getDescription(const Rules& r) const
 {
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
+		s="X - ";
+
 	QString tc, st, su, at;
 	
 	if(this->teacherName!="")
@@ -10972,9 +10894,7 @@ QString ConstraintSubactivitiesPreferredStartingTimes::getDescription(const Rule
 		at=tr("activity tag=%1").arg(this->activityTagName);
 	else
 		at=tr("all activity tags");
-		
-	QString s;
-	
+
 	s+=tr("Subactivities with %1, %2, %3, %4, %5, have a set of preferred starting times:", "%1...%5 are conditions for the subactivities")
 		.arg(tr("component number=%1").arg(this->componentNumber)).arg(tc).arg(st).arg(su).arg(at);
 	s+=" ";
@@ -10994,7 +10914,10 @@ QString ConstraintSubactivitiesPreferredStartingTimes::getDescription(const Rule
 
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintSubactivitiesPreferredStartingTimes::getDetailedDescription(const Rules& r) const
@@ -11339,15 +11262,10 @@ QString ConstraintActivitiesSameStartingHour::getXmlDescription(const Rules& r) 
 QString ConstraintActivitiesSameStartingHour::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Activities same starting hour");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("NA:%1", "Number of activities").arg(this->n_activities);s+=", ";
@@ -11357,12 +11275,15 @@ QString ConstraintActivitiesSameStartingHour::getDescription(const Rules& r) con
 			s+=", ";
 	}
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintActivitiesSameStartingHour::getDetailedDescription(const Rules& r) const {
 	QString s;
-	
+
 	s=tr("Time constraint");s+="\n";
 	s+=tr("Activities must have the same starting hour");s+="\n";
 	s+=tr("Weight (percentage)=%1%").arg(CustomFETString::number(this->weightPercentage));s+="\n";
@@ -11610,15 +11531,10 @@ QString ConstraintActivitiesSameStartingDay::getXmlDescription(const Rules& r) c
 QString ConstraintActivitiesSameStartingDay::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Activities same starting day");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("NA:%1", "Number of activities").arg(this->n_activities);s+=", ";
@@ -11628,12 +11544,15 @@ QString ConstraintActivitiesSameStartingDay::getDescription(const Rules& r) cons
 			s+=", ";
 	}
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintActivitiesSameStartingDay::getDetailedDescription(const Rules& r) const {
 	QString s;
-	
+
 	s=tr("Time constraint");s+="\n";
 	s+=tr("Activities must have the same starting day");s+="\n";
 	s+=tr("Weight (percentage)=%1%").arg(CustomFETString::number(this->weightPercentage));s+="\n";
@@ -11860,26 +11779,23 @@ QString ConstraintTwoActivitiesConsecutive::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
-	
-	s=tr("Two activities consecutive:");
+	if(!active)
+		s="X - ";
+
+	s+=tr("Two activities consecutive:");
 	s+=" ";
-	
+
 	s+=tr("first act. id: %1", "act.=activity").arg(this->firstActivityId);
 	s+=", ";
 	s+=tr("second act. id: %1", "act.=activity").arg(this->secondActivityId);
 	s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTwoActivitiesConsecutive::getDetailedDescription(const Rules& r) const
@@ -12131,26 +12047,23 @@ QString ConstraintTwoActivitiesGrouped::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
-	
-	s=tr("Two activities grouped:");
+	if(!active)
+		s="X - ";
+
+	s+=tr("Two activities grouped:");
 	s+=" ";
-	
+
 	s+=tr("first act. id: %1", "act.=activity").arg(this->firstActivityId);
 	s+=", ";
 	s+=tr("second act. id: %1", "act.=activity").arg(this->secondActivityId);
 	s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTwoActivitiesGrouped::getDetailedDescription(const Rules& r) const
@@ -12437,19 +12350,13 @@ QString ConstraintThreeActivitiesGrouped::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
-	
-	s=tr("Three activities grouped:");
+	if(!active)
+		s="X - ";
+
+	s+=tr("Three activities grouped:");
 	s+=" ";
-	
+
 	s+=tr("first act. id: %1", "act.=activity").arg(this->firstActivityId);
 	s+=", ";
 	s+=tr("second act. id: %1", "act.=activity").arg(this->secondActivityId);
@@ -12458,7 +12365,10 @@ QString ConstraintThreeActivitiesGrouped::getDescription(const Rules& r) const
 	s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintThreeActivitiesGrouped::getDetailedDescription(const Rules& r) const
@@ -12780,26 +12690,23 @@ QString ConstraintTwoActivitiesOrdered::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
-	
-	s=tr("Two activities ordered:");
+	if(!active)
+		s="X - ";
+
+	s+=tr("Two activities ordered:");
 	s+=" ";
-	
+
 	s+=tr("first act. id: %1", "act.=activity").arg(this->firstActivityId);
 	s+=", ";
 	s+=tr("second act. id: %1", "act.=activity").arg(this->secondActivityId);
 	s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTwoActivitiesOrdered::getDetailedDescription(const Rules& r) const
@@ -13002,16 +12909,11 @@ QString ConstraintActivityEndsStudentsDay::getXmlDescription(const Rules& r) con
 
 QString ConstraintActivityEndsStudentsDay::getDescription(const Rules& r) const
 {
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
-	s+=tr("Act. id: %1 (%2) must end students' day", 
+	if(!active)
+		s="X - ";
+
+	s+=tr("Act. id: %1 (%2) must end students' day",
 		"%1 is the id, %2 is the detailed description of the activity.")
 		.arg(this->activityId)
 		.arg(getActivityDetailedDescription(r, this->activityId));
@@ -13019,7 +12921,10 @@ QString ConstraintActivityEndsStudentsDay::getDescription(const Rules& r) const
 
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintActivityEndsStudentsDay::getDetailedDescription(const Rules& r) const
@@ -13214,21 +13119,19 @@ QString ConstraintTeachersMinHoursDaily::getXmlDescription(const Rules& r) const
 QString ConstraintTeachersMinHoursDaily::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Teachers min hours daily");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("mH:%1", "Min hours (daily)").arg(this->minHoursDaily);s+=", ";
 	s+=tr("AED:%1", "Allow empty days").arg(yesNoTranslated(this->allowEmptyDays));
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTeachersMinHoursDaily::getDetailedDescription(const Rules& r) const {
@@ -13431,22 +13334,20 @@ QString ConstraintTeacherMinHoursDaily::getXmlDescription(const Rules& r) const{
 QString ConstraintTeacherMinHoursDaily::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Teacher min hours daily");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("T:%1", "Teacher").arg(this->teacherName);s+=", ";
 	s+=tr("mH:%1", "Minimum hours (daily)").arg(this->minHoursDaily);s+=", ";
 	s+=tr("AED:%1", "Allow empty days").arg(yesNoTranslated(this->allowEmptyDays));
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTeacherMinHoursDaily::getDetailedDescription(const Rules& r) const {
@@ -13634,21 +13535,19 @@ QString ConstraintTeacherMinDaysPerWeek::getXmlDescription(const Rules& r) const
 QString ConstraintTeacherMinDaysPerWeek::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Teacher min days per week");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("T:%1", "Teacher").arg(this->teacherName);s+=", ";
 	s+=tr("mD:%1", "Minimum days per week").arg(this->minDaysPerWeek);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTeacherMinDaysPerWeek::getDetailedDescription(const Rules& r) const {
@@ -13829,20 +13728,18 @@ QString ConstraintTeachersMinDaysPerWeek::getXmlDescription(const Rules& r) cons
 QString ConstraintTeachersMinDaysPerWeek::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+=tr("Teachers min days per week");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("mD:%1", "Minimum days per week").arg(this->minDaysPerWeek);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTeachersMinDaysPerWeek::getDetailedDescription(const Rules& r) const {
@@ -14060,15 +13957,11 @@ QString ConstraintTeacherIntervalMaxDaysPerWeek::getXmlDescription(const Rules& 
 QString ConstraintTeacherIntervalMaxDaysPerWeek::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
-	QString s=tr("Teacher interval max days per week");s+=", ";
+		s="X - ";
+
+	s+=tr("Teacher interval max days per week");s+=", ";
 	s+=tr("WP:%1%", "Abbreviation for weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("T:%1", "Abbreviation for teacher").arg(this->teacherName);s+=", ";
 	s+=tr("ISH:%1", "Abbreviation for interval start hour").arg(r.hoursOfTheDay[this->startHour]);s+=", ";
@@ -14079,7 +13972,10 @@ QString ConstraintTeacherIntervalMaxDaysPerWeek::getDescription(const Rules& r) 
 	s+=", ";
 	s+=tr("MD:%1", "Abbreviation for max days").arg(this->maxDaysPerWeek);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTeacherIntervalMaxDaysPerWeek::getDetailedDescription(const Rules& r) const {
@@ -14309,15 +14205,11 @@ QString ConstraintTeachersIntervalMaxDaysPerWeek::getXmlDescription(const Rules&
 QString ConstraintTeachersIntervalMaxDaysPerWeek::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
-	QString s=tr("Teachers interval max days per week");s+=", ";
+		s="X - ";
+
+	s+=tr("Teachers interval max days per week");s+=", ";
 	s+=tr("WP:%1%", "Abbreviation for weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("ISH:%1", "Abbreviation for interval start hour").arg(r.hoursOfTheDay[this->startHour]);
 	s+=", ";
@@ -14328,7 +14220,10 @@ QString ConstraintTeachersIntervalMaxDaysPerWeek::getDescription(const Rules& r)
 	s+=", ";
 	s+=tr("MD:%1", "Abbreviation for max days").arg(this->maxDaysPerWeek);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTeachersIntervalMaxDaysPerWeek::getDetailedDescription(const Rules& r) const {
@@ -14613,15 +14508,11 @@ QString ConstraintStudentsSetIntervalMaxDaysPerWeek::getXmlDescription(const Rul
 QString ConstraintStudentsSetIntervalMaxDaysPerWeek::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
-	QString s=tr("Students set interval max days per week");s+=", ";
+		s="X - ";
+
+	s+=tr("Students set interval max days per week");s+=", ";
 	s+=tr("WP:%1%", "Abbreviation for weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("St:%1", "Abbreviation for students (sets)").arg(this->students);s+=", ";
 	s+=tr("ISH:%1", "Abbreviation for interval start hour").arg(r.hoursOfTheDay[this->startHour]);
@@ -14633,7 +14524,10 @@ QString ConstraintStudentsSetIntervalMaxDaysPerWeek::getDescription(const Rules&
 	s+=", ";
 	s+=tr("MD:%1", "Abbreviation for max days").arg(this->maxDaysPerWeek);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintStudentsSetIntervalMaxDaysPerWeek::getDetailedDescription(const Rules& r) const {
@@ -14860,15 +14754,11 @@ QString ConstraintStudentsIntervalMaxDaysPerWeek::getXmlDescription(const Rules&
 QString ConstraintStudentsIntervalMaxDaysPerWeek::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
-	QString s=tr("Students interval max days per week");s+=", ";
+		s="X - ";
+
+	s+=tr("Students interval max days per week");s+=", ";
 	s+=tr("WP:%1%", "Abbreviation for weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("ISH:%1", "Abbreviation for interval start hour").arg(r.hoursOfTheDay[this->startHour]);
 	s+=", ";
@@ -14879,7 +14769,10 @@ QString ConstraintStudentsIntervalMaxDaysPerWeek::getDescription(const Rules& r)
 	s+=", ";
 	s+=tr("MD:%1", "Abbreviation for max days").arg(this->maxDaysPerWeek);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintStudentsIntervalMaxDaysPerWeek::getDetailedDescription(const Rules& r) const {
@@ -15129,45 +15022,43 @@ QString ConstraintActivitiesEndStudentsDay::getXmlDescription(const Rules& r) co
 QString ConstraintActivitiesEndStudentsDay::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
-	
-	QString begin=QString("");
+
+	QString s;
 	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
+		s="X - ";
+
 	QString tc, st, su, at;
-	
+
 	if(this->teacherName!="")
 		tc=tr("teacher=%1").arg(this->teacherName);
 	else
 		tc=tr("all teachers");
-		
+
 	if(this->studentsName!="")
 		st=tr("students=%1").arg(this->studentsName);
 	else
 		st=tr("all students");
-		
+
 	if(this->subjectName!="")
 		su=tr("subject=%1").arg(this->subjectName);
 	else
 		su=tr("all subjects");
-		
+
 	if(this->activityTagName!="")
 		at=tr("activity tag=%1").arg(this->activityTagName);
 	else
 		at=tr("all activity tags");
-	
-	QString s;
+
 	s+=tr("Activities with %1, %2, %3, %4, must end students' day", "%1...%4 are conditions for the activities").arg(tc).arg(st).arg(su).arg(at);
 
 	s+=", ";
 
 	s+=tr("WP:%1%", "Abbreviation for Weight Percentage").arg(CustomFETString::number(this->weightPercentage));
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintActivitiesEndStudentsDay::getDetailedDescription(const Rules& r) const
@@ -15422,20 +15313,18 @@ QString ConstraintTeachersActivityTagMaxHoursDaily::getXmlDescription(const Rule
 QString ConstraintTeachersActivityTagMaxHoursDaily::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+="! ";
 	s+=tr("Teachers for activity tag %1 have max %2 hours daily").arg(this->activityTagName).arg(this->maxHoursDaily);s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTeachersActivityTagMaxHoursDaily::getDetailedDescription(const Rules& r) const {
@@ -15658,20 +15547,18 @@ QString ConstraintTeacherActivityTagMaxHoursDaily::getXmlDescription(const Rules
 QString ConstraintTeacherActivityTagMaxHoursDaily::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+="! ";
 	s+=tr("Teacher %1 for activity tag %2 has max %3 hours daily").arg(this->teacherName).arg(this->activityTagName).arg(this->maxHoursDaily);s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintTeacherActivityTagMaxHoursDaily::getDetailedDescription(const Rules& r) const {
@@ -15897,21 +15784,19 @@ QString ConstraintStudentsActivityTagMaxHoursDaily::getDescription(const Rules& 
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+="! ";
 	s+=tr("Students for activity tag %1 have max %2 hours daily")
 		.arg(this->activityTagName).arg(this->maxHoursDaily); s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintStudentsActivityTagMaxHoursDaily::getDetailedDescription(const Rules& r) const
@@ -16107,21 +15992,19 @@ QString ConstraintStudentsSetActivityTagMaxHoursDaily::getDescription(const Rule
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+="! ";
 	s+=tr("Students set %1 for activity tag %2 has max %3 hours daily").arg(this->students).arg(this->activityTagName).arg(this->maxHoursDaily);
 	s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintStudentsSetActivityTagMaxHoursDaily::getDetailedDescription(const Rules& r) const
@@ -16399,21 +16282,19 @@ QString ConstraintStudentsMaxGapsPerDay::getDescription(const Rules& r) const
 {
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+="! ";
 	s+=tr("Students max gaps per day");s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("MG:%1", "Max gaps (per day)").arg(this->maxGaps);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintStudentsMaxGapsPerDay::getDetailedDescription(const Rules& r) const
@@ -16661,22 +16542,20 @@ QString ConstraintStudentsSetMaxGapsPerDay::getXmlDescription(const Rules& r) co
 QString ConstraintStudentsSetMaxGapsPerDay::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
-	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
 	QString s;
+	if(!active)
+		s="X - ";
+
 	s+="! ";
 	s+=tr("Students set max gaps per day"); s+=", ";
 	s+=tr("WP:%1%", "Weight percentage").arg(CustomFETString::number(this->weightPercentage)); s+=", ";
 	s+=tr("MG:%1", "Max gaps (per day)").arg(this->maxGaps);s+=", ";
 	s+=tr("St:%1", "Students").arg(this->students);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintStudentsSetMaxGapsPerDay::getDetailedDescription(const Rules& r) const {
@@ -16954,35 +16833,34 @@ QString ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::getXmlDescription(c
 
 QString ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::getDescription(const Rules& r) const
 {
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
+		s="X - ";
+
 	assert(this->selectedDays.count()==this->selectedHours.count());
 
 	QString actids=QString("");
 	foreach(int aid, this->activitiesIds)
 		actids+=CustomFETString::number(aid)+QString(", ");
 	actids.chop(2);
-		
+
 	QString timeslots=QString("");
 	for(int i=0; i<this->selectedDays.count(); i++)
 		timeslots+=r.daysOfTheWeek[selectedDays.at(i)]+QString(" ")+r.hoursOfTheDay[selectedHours.at(i)]+QString(", ");
 	timeslots.chop(2);
-	
-	QString s=tr("Activities occupy max time slots from selection, WP:%1, NA:%2, A: %3, STS: %4, MTS:%5", "Constraint description. WP means weight percentage, "
+
+	s+=tr("Activities occupy max time slots from selection, WP:%1, NA:%2, A: %3, STS: %4, MTS:%5", "Constraint description. WP means weight percentage, "
 	 "NA means the number of activities, A means activities list, STS means selected time slots, MTS means max time slots")
 	 .arg(CustomFETString::number(this->weightPercentage))
 	 .arg(CustomFETString::number(this->activitiesIds.count()))
 	 .arg(actids)
 	 .arg(timeslots)
 	 .arg(CustomFETString::number(this->maxOccupiedTimeSlots));
-	
-	return begin+s+end;
+
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::getDetailedDescription(const Rules& r) const
@@ -17318,35 +17196,34 @@ QString ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::getXmlDescriptio
 
 QString ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::getDescription(const Rules& r) const
 {
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
+		s="X - ";
+
 	assert(this->selectedDays.count()==this->selectedHours.count());
 
 	QString actids=QString("");
 	foreach(int aid, this->activitiesIds)
 		actids+=CustomFETString::number(aid)+QString(", ");
 	actids.chop(2);
-		
+
 	QString timeslots=QString("");
 	for(int i=0; i<this->selectedDays.count(); i++)
 		timeslots+=r.daysOfTheWeek[selectedDays.at(i)]+QString(" ")+r.hoursOfTheDay[selectedHours.at(i)]+QString(", ");
 	timeslots.chop(2);
-	
-	QString s=tr("Activities max simultaneous in selected time slots, WP:%1, NA:%2, A: %3, STS: %4, MS:%5", "Constraint description. WP means weight percentage, "
+
+	s+=tr("Activities max simultaneous in selected time slots, WP:%1, NA:%2, A: %3, STS: %4, MS:%5", "Constraint description. WP means weight percentage, "
 	 "NA means the number of activities, A means activities list, STS means selected time slots, MS means max simultaneous (number of activities in each selected time slot)")
 	 .arg(CustomFETString::number(this->weightPercentage))
 	 .arg(CustomFETString::number(this->activitiesIds.count()))
 	 .arg(actids)
 	 .arg(timeslots)
 	 .arg(CustomFETString::number(this->maxSimultaneous));
-	
-	return begin+s+end;
+
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::getDetailedDescription(const Rules& r) const
@@ -17648,20 +17525,19 @@ QString ConstraintStudentsSetMaxDaysPerWeek::getXmlDescription(const Rules& r) c
 QString ConstraintStudentsSetMaxDaysPerWeek::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
-	QString s=tr("Students set max days per week");s+=", ";
+		s="X - ";
+
+	s+=tr("Students set max days per week");s+=", ";
 	s+=tr("WP:%1%", "Abbreviation for weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("St:%1", "Abbreviation for students (sets)").arg(this->students);s+=", ";
 	s+=tr("MD:%1", "Abbreviation for max days").arg(this->maxDaysPerWeek);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintStudentsSetMaxDaysPerWeek::getDetailedDescription(const Rules& r) const {
@@ -17841,19 +17717,18 @@ QString ConstraintStudentsMaxDaysPerWeek::getXmlDescription(const Rules& r) cons
 QString ConstraintStudentsMaxDaysPerWeek::getDescription(const Rules& r) const{
 	Q_UNUSED(r);
 
-	QString begin=QString("");
+	QString s;
 	if(!active)
-		begin="X - ";
-		
-	QString end=QString("");
-	if(!comments.isEmpty())
-		end=", "+tr("C: %1", "Comments").arg(comments);
-		
-	QString s=tr("Students max days per week");s+=", ";
+		s="X - ";
+
+	s+=tr("Students max days per week");s+=", ";
 	s+=tr("WP:%1%", "Abbreviation for weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
 	s+=tr("MD:%1", "Abbreviation for max days").arg(this->maxDaysPerWeek);
 
-	return begin+s+end;
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
 }
 
 QString ConstraintStudentsMaxDaysPerWeek::getDetailedDescription(const Rules& r) const {
