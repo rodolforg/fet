@@ -110,8 +110,8 @@ QString StudentsYear::getDetailedDescriptionWithConstraints(const Rules &r) cons
 	s+="--------------------------------------------------\n";
 	s+=tr("Time constraints directly related to this students year:");
 	s+="\n";
-	for(int i=0; i<r.timeConstraintsList.size(); i++){
-		TimeConstraint* c=r.timeConstraintsList[i];
+	for(TimeConstraintsList::const_iterator it = r.timeConstraintsList.constBegin(); it != r.timeConstraintsList.constEnd(); ++it){
+		const TimeConstraint *c = *it;
 		if(c->isRelatedToStudentsSet(r, this)){
 			s+="\n";
 			s+=c->getDetailedDescription(r);
@@ -121,8 +121,8 @@ QString StudentsYear::getDetailedDescriptionWithConstraints(const Rules &r) cons
 	s+="--------------------------------------------------\n";
 	s+=tr("Space constraints directly related to this students year:");
 	s+="\n";
-	for(int i=0; i<r.spaceConstraintsList.size(); i++){
-		SpaceConstraint* c=r.spaceConstraintsList[i];
+	for(SpaceConstraintsList::const_iterator it = r.spaceConstraintsList.constBegin(); it != r.spaceConstraintsList.constEnd(); ++it){
+		const SpaceConstraint *c = *it;
 		if(c->isRelatedToStudentsSet(r, this)){
 			s+="\n";
 			s+=c->getDetailedDescription(r);
@@ -220,8 +220,8 @@ QString StudentsGroup::getDetailedDescriptionWithConstraints(Rules& r) const
 	s+="--------------------------------------------------\n";
 	s+=tr("Time constraints directly related to this students group:");
 	s+="\n";
-	for(int i=0; i<r.timeConstraintsList.size(); i++){
-		TimeConstraint* c=r.timeConstraintsList[i];
+	for(TimeConstraintsList::const_iterator it = r.timeConstraintsList.constBegin(); it != r.timeConstraintsList.constEnd(); ++it){
+		const TimeConstraint *c = *it;
 		if(c->isRelatedToStudentsSet(r, this)){
 			s+="\n";
 			s+=c->getDetailedDescription(r);
@@ -231,8 +231,8 @@ QString StudentsGroup::getDetailedDescriptionWithConstraints(Rules& r) const
 	s+="--------------------------------------------------\n";
 	s+=tr("Space constraints directly related to this students group:");
 	s+="\n";
-	for(int i=0; i<r.spaceConstraintsList.size(); i++){
-		SpaceConstraint* c=r.spaceConstraintsList[i];
+	for(SpaceConstraintsList::const_iterator it = r.spaceConstraintsList.constBegin(); it != r.spaceConstraintsList.constEnd(); ++it){
+		const SpaceConstraint *c = *it;
 		if(c->isRelatedToStudentsSet(r, this)){
 			s+="\n";
 			s+=c->getDetailedDescription(r);
@@ -305,8 +305,8 @@ QString StudentsSubgroup::getDetailedDescriptionWithConstraints(const Rules &r) 
 	s+="--------------------------------------------------\n";
 	s+=tr("Time constraints directly related to this students subgroup:");
 	s+="\n";
-	for(int i=0; i<r.timeConstraintsList.size(); i++){
-		TimeConstraint* c=r.timeConstraintsList[i];
+	for(TimeConstraintsList::const_iterator it = r.timeConstraintsList.constBegin(); it != r.timeConstraintsList.constEnd(); ++it){
+		const TimeConstraint *c = *it;
 		if(c->isRelatedToStudentsSet(r, this)){
 			s+="\n";
 			s+=c->getDetailedDescription(r);
@@ -316,8 +316,8 @@ QString StudentsSubgroup::getDetailedDescriptionWithConstraints(const Rules &r) 
 	s+="--------------------------------------------------\n";
 	s+=tr("Space constraints directly related to this students subgroup:");
 	s+="\n";
-	for(int i=0; i<r.spaceConstraintsList.size(); i++){
-		SpaceConstraint* c=r.spaceConstraintsList[i];
+	for(SpaceConstraintsList::const_iterator it = r.spaceConstraintsList.constBegin(); it != r.spaceConstraintsList.constEnd(); ++it){
+		const SpaceConstraint *c = *it;
 		if(c->isRelatedToStudentsSet(r, this)){
 			s+="\n";
 			s+=c->getDetailedDescription(r);

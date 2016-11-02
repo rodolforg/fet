@@ -940,9 +940,8 @@ const QString &Rules::getComments() const
 
 bool Rules::addTeacher(Teacher* teacher)
 {
-	for(int i=0; i<this->teachersList.size(); i++){
-		Teacher* tch=this->teachersList[i];
-		if(tch->name==teacher->name)
+	for (TeachersList::const_iterator iTeacher = teachersList.constBegin(); iTeacher != teachersList.constEnd(); ++iTeacher){
+		if((*iTeacher)->name == teacher->name)
 			return false;
 	}
 	
@@ -1162,9 +1161,8 @@ void Rules::sortTeachersAlphabetically()
 
 bool Rules::addSubject(Subject* subject)
 {
-	for(int i=0; i<this->subjectsList.size(); i++){
-		Subject* sbj=this->subjectsList[i];	
-		if(sbj->name==subject->name)
+	for(SubjectsList::const_iterator iSubject = subjectsList.constBegin(); iSubject != subjectsList.constEnd(); ++iSubject) {
+		if((*iSubject)->name==subject->name)
 			return false;
 	}
 	
