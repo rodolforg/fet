@@ -4451,6 +4451,7 @@ bool Rules::read(QWidget* parent, const QString& fileName, bool commandLine, QSt
 	}
 	
 	XmlLog log;
+	log.mode = XmlLog::MINIMUM;
 
 	QDate dat=QDate::currentDate();
 	QTime tim=QTime::currentTime();

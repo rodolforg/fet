@@ -1,6 +1,7 @@
 #include "xmllog.h"
 
 XmlLog::XmlLog() :
+	mode(VERBOSE),
 	numberOfUnrecognizedFields(0)
 {
 }
