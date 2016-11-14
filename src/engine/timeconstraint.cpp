@@ -113,6 +113,57 @@ QString getActivityDetailedDescription(const Rules& r, int id)
 	return s;
 }
 
+QString getTimelistDescription(const Rules& r, QList<int> days, QList<int> hours) {
+	QString s;
+	bool written = false;
+	bool tildeWritten = false;
+
+	assert(days.count()==hours.count());
+
+	for(int i=0; i<days.count(); i++){
+		written = false;
+		bool sameDayAsPreviousItem = false;
+		bool sameDayAsNextItem = false;
+		if(days.at(i)>=0){
+			sameDayAsPreviousItem = i > 0 && days.at(i) == days.at(i-1);
+			sameDayAsNextItem = i+1 < days.count() && days.at(i) == days.at(i+1);
+			if (!sameDayAsPreviousItem) {
+				s+=r.daysOfTheWeek[days.at(i)];
+				s+=" ";
+				written = true;
+			}
+		}
+		if(hours.at(i)>=0){
+			bool followsPreviousHour = i > 0 && (hours.at(i) - hours.at(i-1) == 1);
+			bool continuesAtNextHour = i+1 < days.count() && (hours.at(i+1) - hours.at(i) == 1);
+			if (!sameDayAsPreviousItem || !sameDayAsNextItem || !followsPreviousHour || !continuesAtNextHour) {
+				if (!tildeWritten) {
+					s+=r.hoursOfTheDay[hours.at(i)];
+				} else {
+					int hour = hours.at(i);
+					if (hour < r.nHoursPerDay - 1)
+						s+=r.hoursOfTheDay[hour+1];
+					else {
+						s+="[";
+						s+=r.hoursOfTheDay[hour];
+						s+="]";
+					}
+				}
+				if (sameDayAsNextItem && continuesAtNextHour) {
+					s+=" ~ ";
+					tildeWritten = true;
+				} else {
+					tildeWritten = false;
+				}
+				written = true;
+			}
+		}
+		if(written && !tildeWritten && i!=days.count()-1)
+			s+="; ";
+	}
+	return s;
+}
+
 TimeConstraint::TimeConstraint(int type) :
 	type(type)
 {
@@ -485,18 +536,7 @@ QString ConstraintTeacherNotAvailableTimes::getDescription(const Rules& r) const
 
 	s+=tr("NA at:", "Not available at");
 	s+=" ";
-	assert(days.count()==hours.count());
-	for(int i=0; i<days.count(); i++){
-		if(this->days.at(i)>=0){
-			s+=r.daysOfTheWeek[this->days.at(i)];
-			s+=" ";
-		}
-		if(this->hours.at(i)>=0){
-			s+=r.hoursOfTheDay[this->hours.at(i)];
-		}
-		if(i<days.count()-1)
-			s+="; ";
-	}
+	s+=getTimelistDescription(r, days, hours);
 
 	if(!comments.isEmpty())
 		s+=", "+tr("C: %1", "Comments").arg(comments);
@@ -512,18 +552,7 @@ QString ConstraintTeacherNotAvailableTimes::getDetailedDescription(const Rules& 
 
 	s+=tr("Not available at:", "It refers to a teacher");
 	s+="\n";
-	assert(days.count()==hours.count());
-	for(int i=0; i<days.count(); i++){
-		if(this->days.at(i)>=0){
-			s+=r.daysOfTheWeek[this->days.at(i)];
-			s+=" ";
-		}
-		if(this->hours.at(i)>=0){
-			s+=r.hoursOfTheDay[this->hours.at(i)];
-		}
-		if(i<days.count()-1)
-			s+="; ";
-	}
+	s+=getTimelistDescription(r, days, hours);
 	s+="\n";
 
 	if(!active){
@@ -844,18 +873,7 @@ QString ConstraintStudentsSetNotAvailableTimes::getDescription(const Rules& r) c
 
 	s+=tr("NA at:", "Not available at");
 	s+=" ";
-	assert(days.count()==hours.count());
-	for(int i=0; i<days.count(); i++){
-		if(this->days.at(i)>=0){
-			s+=r.daysOfTheWeek[this->days.at(i)];
-			s+=" ";
-		}
-		if(this->hours.at(i)>=0){
-			s+=r.hoursOfTheDay[this->hours.at(i)];
-		}
-		if(i<days.count()-1)
-			s+="; ";
-	}
+	s+=getTimelistDescription(r, days, hours);
 
 	if(!comments.isEmpty())
 		s+=", "+tr("C: %1", "Comments").arg(comments);
@@ -871,19 +889,7 @@ QString ConstraintStudentsSetNotAvailableTimes::getDetailedDescription(const Rul
 	s+=tr("Students=%1").arg(this->students);s+="\n";
 
 	s+=tr("Not available at:", "It refers to a students set");s+="\n";
-	
-	assert(days.count()==hours.count());
-	for(int i=0; i<days.count(); i++){
-		if(this->days.at(i)>=0){
-			s+=r.daysOfTheWeek[this->days.at(i)];
-			s+=" ";
-		}
-		if(this->hours.at(i)>=0){
-			s+=r.hoursOfTheDay[this->hours.at(i)];
-		}
-		if(i<days.count()-1)
-			s+="; ";
-	}
+	s+=getTimelistDescription(r, days, hours);
 	s+="\n";
 
 	if(!active){

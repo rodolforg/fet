@@ -65,6 +65,7 @@ static int rooms_conflicts=-1;
 //static qint8 teachersBuildingsTimetable[MAX_TEACHERS][MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
 
 QString getActivityDetailedDescription(const Rules& r, int id);
+QString getTimelistDescription(const Rules& r, QList<int> days, QList<int> hours);
 
 //////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////
@@ -413,18 +414,7 @@ QString ConstraintRoomNotAvailableTimes::getDescription(const Rules& r) const{
 
 	s+=tr("NA at:", "Not available at");
 	s+=" ";
-	assert(days.count()==hours.count());
-	for(int i=0; i<days.count(); i++){
-		if(this->days.at(i)>=0){
-			s+=r.daysOfTheWeek[this->days.at(i)];
-			s+=" ";
-		}
-		if(this->hours.at(i)>=0){
-			s+=r.hoursOfTheDay[this->hours.at(i)];
-		}
-		if(i<days.count()-1)
-			s+="; ";
-	}
+	s+=getTimelistDescription(r, days, hours);
 
 	if(!comments.isEmpty())
 		s+=", "+tr("C: %1", "Comments").arg(comments);
@@ -440,18 +430,7 @@ QString ConstraintRoomNotAvailableTimes::getDetailedDescription(const Rules& r) 
 
 	s+=tr("Not available at:", "It refers to a room");
 	s+="\n";
-	assert(days.count()==hours.count());
-	for(int i=0; i<days.count(); i++){
-		if(this->days.at(i)>=0){
-			s+=r.daysOfTheWeek[this->days.at(i)];
-			s+=" ";
-		}
-		if(this->hours.at(i)>=0){
-			s+=r.hoursOfTheDay[this->hours.at(i)];
-		}
-		if(i<days.count()-1)
-			s+="; ";
-	}
+	s+=getTimelistDescription(r, days, hours);
 	s+="\n";
 
 	if(!active){
