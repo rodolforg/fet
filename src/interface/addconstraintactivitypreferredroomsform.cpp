@@ -172,11 +172,11 @@ void AddConstraintActivityPreferredRoomsForm::filterChanged()
 void AddConstraintActivityPreferredRoomsForm::updateRoomsListWidget()
 {
 	roomsListWidget->clear();
-	selectedRoomsListWidget->clear();
 
 	for(int i=0; i<gt.rules.roomsList.size(); i++){
 		Room* rm= gt.rules.roomsList[i];
-		roomsListWidget->addItem(rm->name);
+		if (!isRoomAdded(rm->name))
+			roomsListWidget->addItem(rm->name);
 	}
 }
 
@@ -234,21 +234,25 @@ void AddConstraintActivityPreferredRoomsForm::addConstraint()
 	}
 }
 
+bool AddConstraintActivityPreferredRoomsForm::isRoomAdded(QString roomName) const {
+	for(int i=0; i<selectedRoomsListWidget->count(); i++)
+		if(roomName==selectedRoomsListWidget->item(i)->text())
+			return true;
+	return false;
+}
+
 void AddConstraintActivityPreferredRoomsForm::addRoom()
 {
 	if(roomsListWidget->currentRow()<0)
 		return;
 	QString rmName=roomsListWidget->currentItem()->text();
 	assert(rmName!="");
-	int i;
 	//duplicate?
-	for(i=0; i<selectedRoomsListWidget->count(); i++)
-		if(rmName==selectedRoomsListWidget->item(i)->text())
-			break;
-	if(i<selectedRoomsListWidget->count())
+	if (isRoomAdded(rmName))
 		return;
 	selectedRoomsListWidget->addItem(rmName);
 	selectedRoomsListWidget->setCurrentRow(selectedRoomsListWidget->count()-1);
+	updateRoomsListWidget();
 }
 
 void AddConstraintActivityPreferredRoomsForm::removeRoom()
@@ -264,9 +268,11 @@ void AddConstraintActivityPreferredRoomsForm::removeRoom()
 		selectedRoomsListWidget->setCurrentRow(tmp);
 	else
 		selectedRoomsListWidget->setCurrentRow(selectedRoomsListWidget->count()-1);
+	updateRoomsListWidget();
 }
 
 void AddConstraintActivityPreferredRoomsForm::clear()
 {
 	selectedRoomsListWidget->clear();
+	updateRoomsListWidget();
 }

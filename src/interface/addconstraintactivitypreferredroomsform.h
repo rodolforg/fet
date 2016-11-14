@@ -47,6 +47,7 @@ public slots:
 private:
 	//the id's of the activities listed in the activities combo
 	QList<int> activitiesList;
+	bool isRoomAdded(QString roomName) const;
 };
 
 #endif
