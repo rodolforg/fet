@@ -2511,15 +2511,19 @@ void Import::importCSVActivities(QWidget* parent){
 			if(already_existing){
 				lastWarning+=Import::tr("Activity %1 already exists. A duplicate activity is imported. Please check the dataset!").arg(activityid)+"\n";
 			}*/
-			bool tmp=gt.rules.addSimpleActivityFast(newParent, activityid, 0, teachers_names, subject_name, activity_tags_names,
-				students_names, duration, duration, active, true, -1, numberOfStudents);
-			activityid++;
-			if(tmp){
-				count++;
-				count2++;
+			if(duration>0){
+				bool tmp=gt.rules.addSimpleActivityFast(newParent, activityid, 0, teachers_names, subject_name, activity_tags_names,
+					students_names, duration, duration, active, true, -1, numberOfStudents);
+				activityid++;
+				if(tmp){
+					count++;
+					count2++;
+				}
+				else
+					QMessageBox::critical(newParent, tr("FET information"), tr("Activity NOT added - please report error"));
+			} else {
+				lastWarning+=tr("Line %1: Activity duration is lower than 1 - please correct that").arg(fieldList[FIELD_LINE_NUMBER][i])+"\n";
 			}
-			else
-				QMessageBox::critical(newParent, tr("FET information"), tr("Activity NOT added - please report error"));
 		}
 		else{ //split activity
 			int totalduration;
@@ -2527,53 +2531,61 @@ void Import::importCSVActivities(QWidget* parent){
 			bool active[MAX_SPLIT_OF_AN_ACTIVITY];
 	
 			totalduration=0;
+			bool durationOK=true;
 			for(int s=0; s<nsplit; s++){
 				durations[s]=splitDurationList[s].toInt(&ok2);
 				assert(ok2);
+				if(durations[s]<1){
+					durationOK=false;
+				}
 				active[s]=true;
 				totalduration+=durations[s];
 			}
-			assert(totalduration==fieldList[FIELD_TOTAL_DURATION][i].toInt(&ok2));
-			assert(ok2);
-	
-			int minD=fieldList[FIELD_MIN_DAYS][i].toInt(&ok2);
-			assert(ok2);
-			bool force;
-			
-			if(fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="YES" ||
-			 fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="Y" ||
-			 fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="TRUE" ||
-			 fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="T" ||
-			 fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="1"
-			 )
-				force=true;
-			else if(
-			 fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="NO" ||
-			 fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="N" ||
-			 fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="FALSE" ||
-			 fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="F" ||
-			 fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="0"
-			 )
-				force=false;
-			else{
-				incorrect_bool_consecutive=true;
-				force=true;
+			if(durationOK){
+				assert(totalduration==fieldList[FIELD_TOTAL_DURATION][i].toInt(&ok2));
+				assert(ok2);
+		
+				int minD=fieldList[FIELD_MIN_DAYS][i].toInt(&ok2);
+				assert(ok2);
+				bool force;
+				
+				if(fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="YES" ||
+				fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="Y" ||
+				fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="TRUE" ||
+				fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="T" ||
+				fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="1"
+				)
+					force=true;
+				else if(
+				fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="NO" ||
+				fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="N" ||
+				fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="FALSE" ||
+				fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="F" ||
+				fieldList[FIELD_MIN_DAYS_CONSECUTIVE][i].toUpper()=="0"
+				)
+					force=false;
+				else{
+					incorrect_bool_consecutive=true;
+					force=true;
+				}
+				//workaround only. Please rethink. (start)
+				/*QStringList activity_tag_names;
+				activity_tag_names<<activity_tag_name;*/
+				//workaround only. Please rethink. (end)
+				bool tmp=gt.rules.addSplitActivityFast(newParent, activityid, activityid,
+					teachers_names, subject_name, activity_tags_names, students_names,
+					nsplit, totalduration, durations,
+					active, minD, weight, force, true, -1, numberOfStudents);
+				activityid+=nsplit;
+				if(tmp){
+					count++;
+					count2+=nsplit;
+				}
+				else
+					QMessageBox::critical(newParent, tr("FET information"), tr("Split activity NOT added - error???"));
+			} else {
+				lastWarning+=tr("Line %1: Activity duration is lower than 1 - please correct that").arg(fieldList[FIELD_LINE_NUMBER][i])+"\n";
 			}
-			//workaround only. Please rethink. (start)
-			/*QStringList activity_tag_names;
-			activity_tag_names<<activity_tag_name;*/
-			//workaround only. Please rethink. (end)
-			bool tmp=gt.rules.addSplitActivityFast(newParent, activityid, activityid,
-				teachers_names, subject_name, activity_tags_names, students_names,
-				nsplit, totalduration, durations,
-				active, minD, weight, force, true, -1, numberOfStudents);
-			activityid+=nsplit;
-			if(tmp){
-				count++;
-				count2+=nsplit;
-			}
-			else
-				QMessageBox::critical(newParent, tr("FET information"), tr("Split activity NOT added - error???"));
 		}
 	}
 	progress4.setValue(fieldList[FIELD_SUBJECT_NAME].size());
