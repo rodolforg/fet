@@ -1906,3 +1906,7 @@ Versions 5.30.0 - 5.30.v
 - Version 5.30.5
 	- Minor bug fix in the HTML timetables, by Volker Dirr.
 	- Updated the Arabic translation, by Silver.
+- Version 5.30.6
+	- FET command-line now writes the impossible activity and the current and highest-stage timetables (which should be identical) after an impossible
+	generation (suggested by thanhnambkhn).
+	- Minor bug fix: when importing data from CSV, skipping the activity if its duration is less than 1 (reported by Malamojka, fixed by Volker Dirr).
