@@ -287,6 +287,20 @@
            <string>1</string>
           </attribute>
           <layout class="QGridLayout" name="gridLayout_6">
+           <item row="2" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_79">
+             <item>
+              <widget class="QCheckBox" name="breakableCheckBox">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="text">
+                <string>Breakable</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
            <item row="0" column="0">
             <layout class="QHBoxLayout" name="horizontalLayout_7">
              <item>
@@ -339,6 +353,27 @@
                </property>
                <property name="checked">
                 <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="3" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_80">
+             <item>
+              <widget class="QLabel" name="subdivisionLabel">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="text">
+                <string>Subdivision</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="subdivisionSpinbox">
+               <property name="enabled">
+                <bool>false</bool>
                </property>
               </widget>
              </item>

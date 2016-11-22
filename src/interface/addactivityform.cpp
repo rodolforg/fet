@@ -110,6 +110,8 @@ AddActivityForm::AddActivityForm(QWidget* parent, const QString& teacherName, co
 	for(int i=0; i<MAX_SPLIT_OF_AN_ACTIVITY; i++)
 		dur(i)->setMaximum(gt.rules.nHoursPerDay);
 
+	connect(duration1SpinBox, SIGNAL(valueChanged(int)), this, SLOT(durationChanged()));
+
 	activList.clear();
 	activList.append(active1CheckBox);
 	activList.append(active2CheckBox);
@@ -152,6 +154,7 @@ AddActivityForm::AddActivityForm(QWidget* parent, const QString& teacherName, co
 	connect(yearsCheckBox, SIGNAL(toggled(bool)), this, SLOT(showYearsChanged()));
 
 	connect(splitSpinBox, SIGNAL(valueChanged(int)), this, SLOT(splitChanged()));
+	connect(breakableCheckBox, SIGNAL(toggled(bool)), this, SLOT(splittableChanged()));
 
 	connect(closePushButton, SIGNAL(clicked()), this, SLOT(close()));
 	connect(addActivityPushButton, SIGNAL(clicked()), this, SLOT(addActivity()));
@@ -208,6 +211,8 @@ AddActivityForm::AddActivityForm(QWidget* parent, const QString& teacherName, co
 
 	addActivityPushButton->setDefault(true);
 	addActivityPushButton->setFocus();
+
+	updateSubdivisionWidgetState();
 	
 	if(teacherName!="")
 		selectedTeachersListWidget->addItem(teacherName);
@@ -561,6 +566,18 @@ void SecondMinDaysDialog::yesPressed()
 	accept();
 }
 
+static int getUnusedActivityId(const QList<Activity*> & activitiesList) {
+	//the group id of this split activity and the id of the first partial activity
+	//it is the maximum already existing id + 1
+	int firstactivityid=0;
+	for(int i=0; i<activitiesList.size(); i++){
+		Activity* act=activitiesList[i];
+		if(act->id > firstactivityid)
+			firstactivityid = act->id;
+	}
+	return firstactivityid+1;
+}
+
 void AddActivityForm::addActivity()
 {
 	double weight;
@@ -633,33 +650,55 @@ void AddActivityForm::addActivity()
 			numberOfStudents=nStudentsSpinBox->value();
 	}
 
-	if(splitSpinBox->value()==1){ //indivisible activity
-		int duration=duration1SpinBox->value();
-		if(duration<0){
+	int totalDuration = 0;
+	struct Subactivity{
+		int duration;
+		bool active;
+		int subdivSize;
+	};
+	Subactivity subactivities[MAX_SPLIT_OF_AN_ACTIVITY];
+	for (int i=0; i<splitSpinBox->value(); i++) {
+		subactivities[i].duration = durList[i]->value();
+		subactivities[i].active = activList[i]->isChecked();
+
+		if (subactivities[i].duration < 1) {
 			QMessageBox::warning(this, tr("FET information"),
-				tr("Invalid duration"));
+				tr("Invalid duration for split #%1").arg(i+1));
 			return;
 		}
 
-		bool active=false;
-		if(active1CheckBox->isChecked())
-			active=true;
-
-		int activityid=0; //We set the id of this newly added activity = (the largest existing id + 1)
-		for(int i=0; i<gt.rules.activitiesList.size(); i++){
-			Activity* act=gt.rules.activitiesList[i];
-			if(act->id > activityid)
-				activityid = act->id;
+		if (!breakableCheckBox->isChecked()) { // FIXME!!!
+			subactivities[i].subdivSize = -1;
+		} else {
+			int subdivisionSize = subdivisionSpinbox->value(); // FIXME!!!
+			assert(subdivisionSize > 0 && subdivisionSize < duration1SpinBox->value());
+			int numSubdivs = subactivities[i].duration / subdivisionSize;
+			if (subactivities[i].duration % subdivisionSize > 0)
+				numSubdivs++;
+			if (numSubdivs > 3) {
+				;// emit error
+			}
+			subactivities[i].subdivSize = subdivisionSize;
 		}
-		activityid++;
-		Activity a(activityid, 0, teachers_names, subject_name, activity_tags_names, students_names,
-			duration, duration, /*parity,*/ active, (nStudentsSpinBox->value()==-1), nStudentsSpinBox->value(), numberOfStudents);
+
+		totalDuration += subactivities[i].duration;
+	}
+
+	int firstActivityid = getUnusedActivityId(gt.rules.activitiesList);
+
+	if(splitSpinBox->value()==1){ //indivisible activity
+
+		Activity a(firstActivityid, 0, teachers_names, subject_name, activity_tags_names, students_names,
+			subactivities[0].duration, subactivities[0].duration, subactivities[0].active,
+			(nStudentsSpinBox->value()==-1), nStudentsSpinBox->value(), numberOfStudents);
 
 		bool already_existing=false;
 		for(int i=0; i<gt.rules.activitiesList.size(); i++){
 			Activity* act=gt.rules.activitiesList[i];
-			if((*act)==a)
+			if((*act)==a) {
 				already_existing=true;
+				break;
+			}
 		}
 
 		if(already_existing){
@@ -674,8 +713,8 @@ void AddActivityForm::addActivity()
 				return;
 		}
 
-		bool tmp=gt.rules.addSimpleActivityFast(this, activityid, 0, teachers_names, subject_name, activity_tags_names,
-			students_names, duration, duration, active,
+		bool tmp=gt.rules.addSimpleActivityFast(this, firstActivityid, 0, teachers_names, subject_name, activity_tags_names,
+			students_names, subactivities[0].duration, totalDuration, subactivities[0].active,
 			(nStudentsSpinBox->value()==-1), nStudentsSpinBox->value(), numberOfStudents);
 		if(tmp)
 			QMessageBox::information(this, tr("FET information"), tr("Activity added"));
@@ -709,35 +748,19 @@ void AddActivityForm::addActivity()
 				return;
 		}
 
-		int totalduration;
 		int durations[MAX_SPLIT_OF_AN_ACTIVITY];
 		bool active[MAX_SPLIT_OF_AN_ACTIVITY];
 		int nsplit=splitSpinBox->value();
 
-		totalduration=0;
 		for(int i=0; i<nsplit; i++){
-			durations[i]=dur(i)->value();
-			active[i]=false;
-			if(activ(i)->isChecked())
-				active[i]=true;
-
-			totalduration+=durations[i];
+			durations[i]=subactivities[i].duration;
+			active[i]=subactivities[i].active;
 		}
-
-		//the group id of this split activity and the id of the first partial activity
-		//it is the maximum already existing id + 1
-		int firstactivityid=0;
-		for(int i=0; i<gt.rules.activitiesList.size(); i++){
-			Activity* act=gt.rules.activitiesList[i];
-			if(act->id > firstactivityid)
-				firstactivityid = act->id;
-		}
-		firstactivityid++;
 
 		int minD=minDayDistanceSpinBox->value();
-		bool tmp=gt.rules.addSplitActivityFast(this, firstactivityid, firstactivityid,
+		bool tmp=gt.rules.addSplitActivityFast(this, firstActivityid, firstActivityid,
 			teachers_names, subject_name, activity_tags_names, students_names,
-			nsplit, totalduration, durations,
+			nsplit, totalDuration, durations,
 			active, minD, weight, forceConsecutiveCheckBox->isChecked(),
 			(nStudentsSpinBox->value()==-1), nStudentsSpinBox->value(), numberOfStudents);
 		if(tmp){
@@ -750,7 +773,7 @@ void AddActivityForm::addActivity()
 					assert(second.weight>=0 && second.weight<=100.0);
 					QList<int> acts;
 					for(int i=0; i<nsplit; i++){
-						acts.append(firstactivityid+i);
+						acts.append(firstActivityid+i);
 					}
 					TimeConstraint* c=new ConstraintMinDaysBetweenActivities(second.weight, forceConsecutiveCheckBox->isChecked(), nsplit, acts, minD-1);
 					bool tmp=gt.rules.addTimeConstraint(c);
@@ -764,6 +787,40 @@ void AddActivityForm::addActivity()
 		}
 		else
 			QMessageBox::critical(this, tr("FET information"), tr("Split activity NOT added - error???"));
+	}
+
+	for(int i = 0; i < splitSpinBox->value(); i++) {
+		if (subactivities[i].subdivSize > 0) {
+			Activity *initialActivity = gt.rules.activitiesPointerHash.value(firstActivityid);
+			QList<int> breakableList;
+			breakableList.append(initialActivity->id);
+
+			int subdivisionSize = subactivities[i].subdivSize;
+			initialActivity->duration = subdivisionSize;
+			initialActivity->activityGroupId = firstActivityid;
+
+			for (int i = duration1SpinBox->value()- subdivisionSize; i > 0; i-=subdivisionSize) {
+				int duration = i > subdivisionSize? subdivisionSize : i;
+
+				int activityid = getUnusedActivityId(gt.rules.activitiesList);
+				bool tmp = gt.rules.addSimpleActivityFast(this, activityid, firstActivityid,
+														  teachers_names, subject_name, activity_tags_names, students_names,
+														  duration, totalDuration, subactivities[i].active,
+														  (nStudentsSpinBox->value()==-1), nStudentsSpinBox->value(), numberOfStudents);
+				breakableList.append(activityid);
+			}
+			ConstraintActivitiesSameStartingDay * c1 = new ConstraintActivitiesSameStartingDay(100, breakableList.size(), breakableList);
+			bool tmp = gt.rules.addTimeConstraint(c1);
+			if (breakableList.size() == 2) {
+				ConstraintTwoActivitiesGrouped * c2 = new ConstraintTwoActivitiesGrouped(100, breakableList[0], breakableList[1]);
+				bool tmp = gt.rules.addTimeConstraint(c2);
+			} else if (breakableList.size() == 3){
+				ConstraintThreeActivitiesGrouped * c2 = new ConstraintThreeActivitiesGrouped(100, breakableList[0], breakableList[1], breakableList[2]);
+				bool tmp = gt.rules.addTimeConstraint(c2);
+			} else {
+				// TODO emit error
+			}
+		}
 	}
 
 	PlanningChanged::increasePlanningCommunicationSpinBox();
@@ -925,4 +982,24 @@ void AddActivityForm::minDaysChanged()
 	percentageTextLabel->setEnabled(splitSpinBox->value()>=2 && minDayDistanceSpinBox->value()>0);
 	percentageLineEdit->setEnabled(splitSpinBox->value()>=2 && minDayDistanceSpinBox->value()>0);
 	forceConsecutiveCheckBox->setEnabled(splitSpinBox->value()>=2 && minDayDistanceSpinBox->value()>0);
+}
+
+void AddActivityForm::durationChanged()
+{
+	updateSubdivisionWidgetState();
+}
+
+void AddActivityForm::splittableChanged()
+{
+	updateSubdivisionWidgetState();
+}
+
+void AddActivityForm::updateSubdivisionWidgetState()
+{
+	breakableCheckBox->setEnabled(duration1SpinBox->value() > 1);
+	subdivisionLabel->setEnabled(breakableCheckBox->isChecked());
+	subdivisionSpinbox->setEnabled(breakableCheckBox->isChecked());
+	subdivisionSpinbox->setMaximum(duration1SpinBox->value()-1);
+	subdivisionSpinbox->setMinimum(1);
+	subdivisionSpinbox->setValue(duration1SpinBox->value()/2);
 }

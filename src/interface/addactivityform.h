@@ -43,6 +43,7 @@ private:
 	QSet<QString> activityTagNamesSet;
 	//QHash<QString, int> numberOfStudentsHash;
 
+	void updateSubdivisionWidgetState();
 public:
 	QList<QString> canonicalStudentsSetsNames;
 
@@ -79,6 +80,10 @@ public slots:
 	void help();
 	
 	void minDaysChanged();
+
+private slots:
+	void splittableChanged();
+	void durationChanged();
 };
 
 class SecondMinDaysDialog: public QDialog
