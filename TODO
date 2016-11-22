@@ -4519,10 +4519,15 @@ because activitiesConflictingPercentage contains a lot of constraints.
 Liviu Lalescu: I think this is impossible/infeasible.
 
 277---------------------------------------------------------
-From mercurialuser (on forum):
+From mercurialuser (on forum) (and similar, from JBoss, also on forum):
 
 In a few minutes I will have to stop FET and switch off my computer. I need to change some activity so it is not a problem but is it
 possible to "pause" a run and "restart" it later, surviving a pc reboot?
+
+From JBoss:
+
+I was wondering if it was possible to stop and resume (at a later time) the generation of a timetable, for example if one needs badly
+to switch off the PC but doesn't want to loose the N-hours of elaboration done so far.
 
 (Related to item #196.)
 
@@ -4746,3 +4751,87 @@ From Davide Cottignoli (on forum):
 
 Is it possible to add a lock/unlock menu for all activities placed in a specific building and a lock/unlock menu for all activities with a specific key?
 This can speed up manual adjustment when a timetable is generated and, virtually, can speed up the locks for any activities aggregation.
+
+288---------------------------------------------------------
+From Devrim Altınkurt (on forum):
+
+ think, maybe you can think about only place AN ACTIVITY (not two acts / subacts) over a break.
+i know it is diffucult problem. but i know there are another schools which want you do this in Turkey.
+maybe you add an option ([ X ] can place over a break) for each activity (not subacts)
+and the users can choice if the lesson place like this or not.
+
+289---------------------------------------------------------
+From Davide Cottignoli (on forum):
+
+He suggests that it is possible for the user to change from LT (locked time) to PLT (permanently locked time) and viceversa and from
+LS (locked space) to PLS (permanently locked space) and viceversa, from the timetable view dialogs, by selecting cells.
+
+290---------------------------------------------------------
+From Devrim Altınkurt (on forum):
+
+i think there is a bug about "Activity tag preferred room(s)" constraint.
+i attached a fet file. you can take a look at it.
+
+bug steps:
+
+    time table: 1 day and 12 hours
+    added some lessons, student groups, ...
+    added 13 activities with 1 hour to different subgroups and subjects
+    added a tag to all activities
+    added an "Activity tag preferred room(s)" with this tag and one room.
+    there is not enough room but FET don't detect this.
+
+Liviu Lalescu:
+
+It is not a bug, it is more like a suggestion.
+
+291---------------------------------------------------------
+From thanhnambkhn (on forum):
+
+When investigating Fet command line source code, I see there are 2 types of return value: return 0 or 1 (fet.cpp), therein:
+- Value "1" means error (can not generate time table) always.
+- But value "0" somewhere mean success, but somewhere mean error (when time exceed or abort). (fet.cpp - line 1380)
+
+I think, "0" should mean "success" only. In order to do that, we should add "return 2;" when time exceed or abort. (fet.cpp - if/else - line 1239)
+
+Liviu: I consider that my way of treating this is better.
+
+292---------------------------------------------------------
+From Malamojka (on forum):
+
+Notebook:
+
+1. Could you add something like "Notepad" where you could write down various comments for yourself for current version of a timetable. It could be opened all the time and saved when you save the timetable.
+2. I really like "comments" of each activity, but I miss a possibility to add a comment when you create an activity (you have to create it, then go to Data/Activities, find the activity and then add comment.
+3. As I said, I really like comments, so I'm also missing a shortcut to create a comment on Time/Space constraints: I would like to be able to add comment, when I add a constraint (now I have to filter/find a constraint in Time/All or Space/All and then add a comment).
+
+293---------------------------------------------------------
+From Malamojka (on forum):
+
+I was looking for a way to "hide" some of tags in the timetable (I want some to be visible, but not all). As far as I can see you can do this by changing a certain file in program data folders. I was wondering if the same could be done by, say, naming tag "not wanted tag" in form "(*not wanted tag*)" (so basically adding (* in front of a tag name and *) at the end of tag name). So a tag of that form wouldn't be seen in timetable html. If a solution like that already exists, then I apologize (it didn't exist the last time I checked). Please let me know.
+
+294---------------------------------------------------------
+From Malamojka (on forum):
+
+When you generate a timetable, you have to select output directory in Settings/Select output directory. Could there be a possibility you could check/choose, so "Output directory" would automatically be directory, where your *.fet file is saved.
+
+295---------------------------------------------------------
+From Malamojka (on forum):
+
+Four suggestions on constraints:
+1. Would it be possible to add: space -> Activities -> An activity has a preferred building. It would help me a lot.
+2. Could you add: time -> Activities -> An activity either starts or ends students day (for when they don't actually do the activity for the entire semester)?
+3. Is it possible to have variable weight on teachers not available time (for their ideal time, set at maybe 99%)?
+4. Could you add: space -> Activities -> A set of activities has a set of preferred rooms? (there are several subjects with a certain tag that I want in just a few rooms).
+
+Liviu:
+
+1. You can add a new tag, then constraint activity tag preferred rooms, then add this tag to all implied activities. It should be easy.
+2. No. It is impossible to add in the algorithm. Maybe you could duplicate the students set and add all the activities which are taken the entire semester. This way, if the duplicated students set has max gaps 0, it will force what you want.
+3. Please use constraint activities preferred time slots.
+4. Activities preferred room(s) is not possible (the constraints are not correctly understood when you mix subject preferred room(s) with teacher preferred room(s)). But why don't you use subject+activity tag preferred room(s) or activity tag preferred room(s)? You can add more tags and constraints for an activity.
+
+296---------------------------------------------------------
+From Malamojka (on forum):
+
+My subjects have their own ID for the sake of our system (I'm talking about few activities with same subject and different teachers). Is it possible to import subject names and IDs? We sometime have two subjects with same name but different ID. Timetable for subjects puts those two in same timetable and adding an ID could solve that problem (subjects' timetable could be composed on the basis of subjects IDs and not name).
