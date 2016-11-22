@@ -4188,7 +4188,7 @@ impossibletwoactivitiesconsecutive:
 				else if(d==d2 && h2+gt.rules.internalActivitiesList[ai2].duration <= h){
 					int kk;
 					for(kk=h2+gt.rules.internalActivitiesList[ai2].duration; kk<gt.rules.nHoursPerDay; kk++)
-						if(!breakDayHour(d2,kk))
+						if(!breakDayHour(d2,kk) && !subgroupNotAvailableDayHour[sb][d2][kk])
 							break;
 					assert(kk<=h);
 					if(kk!=h)
@@ -4197,7 +4197,7 @@ impossibletwoactivitiesconsecutive:
 				else if(d==d2 && h+act->duration <= h2){
 					int kk;
 					for(kk=h+act->duration; kk<gt.rules.nHoursPerDay; kk++)
-						if(!breakDayHour(d,kk))
+						if(!breakDayHour(d,kk) && !subgroupNotAvailableDayHour[sb][d][kk])
 							break;
 					assert(kk<=h2);
 					if(kk!=h2)
