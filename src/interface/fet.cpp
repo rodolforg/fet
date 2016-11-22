@@ -1232,6 +1232,93 @@ int main(int argc, char **argv)
 		if(impossible){
 			cout<<"Impossible"<<endl;
 			out<<"Impossible"<<endl;
+			
+			//2016-11-17 - suggested by thanhnambkhn, FET will write the impossible activity and the current and highest-stage timetables
+			//(which should be identical)
+
+			Solution& cc=gen.c;
+
+			//needed to find the conflicts strings
+			QString tmp;
+			cc.fitness(gt.rules, &tmp);
+
+			TimetableExport::getStudentsTimetable(cc);
+			TimetableExport::getTeachersTimetable(cc);
+			TimetableExport::getRoomsTimetable(cc);
+
+			QString toc=outputDirectory;
+			if(toc!="" && toc.count()>=1 && toc.endsWith(FILE_SEP)){
+				toc.chop(1);
+				toc+=QString("-current"+FILE_SEP);
+			}
+			else if(toc==""){
+				toc=QString("current"+FILE_SEP);
+			}
+			
+			if(toc!="")
+				if(!dir.exists(toc))
+					dir.mkpath(toc);
+
+			TimetableExport::writeSimulationResultsCommandLine(NULL, toc);
+			
+			QString s;
+
+			s+=TimetableExport::tr("Please check the constraints related to the "
+			 "activity below, which might be impossible to schedule:");
+			s+="\n\n";
+			for(int i=0; i<gen.nDifficultActivities; i++){
+				int ai=gen.difficultActivities[i];
+
+				s+=TimetableExport::tr("No: %1").arg(i+1);
+
+				s+=", ";
+
+				s+=TimetableExport::tr("Id: %1 (%2)", "%1 is id of activity, %2 is detailed description of activity")
+					.arg(gt.rules.internalActivitiesList[ai].id)
+					.arg(getActivityDetailedDescription(gt.rules, gt.rules.internalActivitiesList[ai].id));
+
+				s+="\n";
+			}
+
+			QFile difficultActivitiesFile(logsDir+"difficult_activities.txt");
+			bool t=difficultActivitiesFile.open(QIODevice::WriteOnly);
+			if(!t){
+				cout<<"FET critical - you don't have write permissions in the output directory - (FET cannot open or create file "<<qPrintable(logsDir)<<"difficult_activities.txt)."
+				 " If this is a bug - please report it."<<endl;
+				return 1;
+			}
+			QTextStream difficultActivitiesOut(&difficultActivitiesFile);
+			difficultActivitiesOut.setCodec("UTF-8");
+			difficultActivitiesOut.setGenerateByteOrderMark(true);
+			
+			difficultActivitiesOut<<s<<endl;
+			
+			//2011-11-11 (2)
+			//write highest stage timetable
+			Solution& ch=highestStageSolution;
+
+			//needed to find the conflicts strings
+			QString tmp2;
+			ch.fitness(gt.rules, &tmp2);
+
+			TimetableExport::getStudentsTimetable(ch);
+			TimetableExport::getTeachersTimetable(ch);
+			TimetableExport::getRoomsTimetable(ch);
+
+			QString toh=outputDirectory;
+			if(toh!="" && toh.count()>=1 && toh.endsWith(FILE_SEP)){
+				toh.chop(1);
+				toh+=QString("-highest"+FILE_SEP);
+			}
+			else if(toh==""){
+				toh=QString("highest"+FILE_SEP);
+			}
+			
+			if(toh!="")
+				if(!dir.exists(toh))
+					dir.mkpath(toh);
+
+			TimetableExport::writeSimulationResultsCommandLine(NULL, toh);
 		}
 		//2012-01-24 - suggestion and code by Ian Holden (ian@ianholden.com), to write best and current timetable on time exceeded
 		//previously, FET saved best and current timetable only on receiving SIGTERM
