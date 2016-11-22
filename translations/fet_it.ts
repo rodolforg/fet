@@ -31909,29 +31909,29 @@ Se hai un sottogruppo con poche ore di lavoro alla settimana significa che hai i
         <translation>Questa è la lista del massimo numero di attività piazzate, in ordine cronologico. Se FET ha raggiunto al massimo la ennesima attività, esamina l&apos;attività numero enne+1 nell&apos;ordine iniziale delle attività</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1281"/>
+        <location filename="../src/interface/fet.cpp" line="1368"/>
         <source>FET managed to schedule correctly the first %1 most difficult activities. You can see initial order of placing the activities in the corresponding output file. The activity which might cause problems might be the next activity in the initial order of evaluation. This activity is listed below:</source>
         <translation>FET ha organizzato di ordinare correttamente le prime %1 attività più difficili. Si può osservare l&apos;ordine iniziale di piazzamento delle attività nella finestra di generazione. Le attività che poptrebbero creare problemi potrebbero essere le attività successive nell&apos;iniziale ordine di valutazione. Questa attività è indicata di seguito:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1288"/>
-        <location filename="../src/interface/fet.cpp" line="1308"/>
+        <location filename="../src/interface/fet.cpp" line="1375"/>
+        <location filename="../src/interface/fet.cpp" line="1395"/>
         <source>Id: %1 (%2)</source>
         <comment>%1 is id of activity, %2 is detailed description of activity</comment>
         <translation>Id:%1 (%2)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1293"/>
+        <location filename="../src/interface/fet.cpp" line="1380"/>
         <source>Difficult activity cannot be computed - please report possible bug</source>
         <translation>Una attività difficile non riesce ad essere sistemata - per favore riporta un possibile bug all&apos;autore</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1297"/>
+        <location filename="../src/interface/fet.cpp" line="1384"/>
         <source>Here are the placed activities which lead to an inconsistency, in order from the first one to the last (the last one FET failed to schedule and the last ones are most likely impossible):</source>
         <translation>Qui si trovano attività che portano ad una incoerenza, in ordine dalla prima all&apos;ultima (FET ha fallito la sistemazione dell&apos;ultima e il gruppo delle ultime è, probabilmente, impossibile da collocare): </translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1304"/>
+        <location filename="../src/interface/fet.cpp" line="1391"/>
         <source>No: %1</source>
         <translation>No: %1</translation>
     </message>
@@ -33820,7 +33820,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Copyright (C) 2002-2016 Liviu Lalescu, Volker Dirr.&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Version: 5.30.5 (October 2016).&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Version: 5.30.6 (November 2016).&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
@@ -33992,6 +33992,11 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;You may find references for the algorithms and techniques used in this program on the FET documentation web page, &lt;a href=&quot;http://lalescu.ro/liviu/fet/doc/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lalescu.ro/liviu/fet/doc/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="267"/>
+        <source>References</source>
+        <translation>Riferimenti</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="322"/>
@@ -34480,16 +34485,17 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;alienglow - suggestion.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;noddy11 - suggestion.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;JBoss - suggestion.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;thanhnambkhn - suggestion.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;Malamojka - bug report.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="267"/>
-        <source>References</source>
-        <translation>Riferimenti</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="833"/>
+        <location filename="../src/interface/helpaboutform_template.ui" line="839"/>
         <source>Close</source>
         <translation>Chiudi</translation>
     </message>
@@ -36214,8 +36220,8 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
         <location filename="../src/engine/import.cpp" line="1507"/>
         <location filename="../src/engine/import.cpp" line="1584"/>
         <location filename="../src/engine/import.cpp" line="1659"/>
-        <location filename="../src/engine/import.cpp" line="2522"/>
-        <location filename="../src/engine/import.cpp" line="2576"/>
+        <location filename="../src/engine/import.cpp" line="2523"/>
+        <location filename="../src/engine/import.cpp" line="2585"/>
         <source>FET information</source>
         <translation>FET - Informazione</translation>
     </message>
@@ -36330,12 +36336,18 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
         <translation>Riga %1: l&apos;attività contiene %2 insieme degli studenti duplicato - per favore correggi</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="2522"/>
+        <location filename="../src/engine/import.cpp" line="2523"/>
         <source>Activity NOT added - please report error</source>
         <translation>Attività NON inserita - Si prega di segnalare l&apos;errore</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="2576"/>
+        <location filename="../src/engine/import.cpp" line="2525"/>
+        <location filename="../src/engine/import.cpp" line="2587"/>
+        <source>Line %1: Activity duration is lower than 1 - please correct that</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/engine/import.cpp" line="2585"/>
         <source>Split activity NOT added - error???</source>
         <translation>Attività suddivise NON aggiunte - errore?!?</translation>
     </message>
@@ -36464,7 +36476,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="2053"/>
-        <location filename="../src/engine/import.cpp" line="2588"/>
+        <location filename="../src/engine/import.cpp" line="2600"/>
         <source>Notes:</source>
         <translation>Note:</translation>
     </message>
@@ -36490,12 +36502,12 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
         <translation>%1 chiavi dell&apos;attività aggiunte. Verifica la finestra delle chiavi.</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="2584"/>
+        <location filename="../src/engine/import.cpp" line="2596"/>
         <source>Warning: found tags for the &apos;consecutive&apos; field of min days which are not a valid boolean value (%1) - making them %2</source>
         <translation>Attenzione: trovate opzioni &apos;Consecutive&apos; per il vincolo Numero minimo di giorni con valore binario non valido (%1) - si assegna loro %2</translation>
     </message>
     <message>
-        <location filename="../src/engine/import.cpp" line="2590"/>
+        <location filename="../src/engine/import.cpp" line="2602"/>
         <source>%1 container activities (%2 total activities) added. Please check activities form.</source>
         <translation>%1 insiemi di attività (%2 attività totali) aggiunti. Controlla la finestra di riepilogo delle attività.</translation>
     </message>
@@ -50112,6 +50124,22 @@ Sotto %4</translation>
         <location filename="../src/engine/timetableexport.cpp" line="2328"/>
         <source>unnamed</source>
         <translation>senzanome</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fet.cpp" line="1266"/>
+        <source>Please check the constraints related to the activity below, which might be impossible to schedule:</source>
+        <translation type="unfinished">Controlla i vincoli connessi alle attività sottostanti, che sembrerebbe impossibile sistemare:</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fet.cpp" line="1272"/>
+        <source>No: %1</source>
+        <translation type="unfinished">No: %1</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fet.cpp" line="1276"/>
+        <source>Id: %1 (%2)</source>
+        <comment>%1 is id of activity, %2 is detailed description of activity</comment>
+        <translation type="unfinished">Id:%1 (%2)</translation>
     </message>
 </context>
 <context>
