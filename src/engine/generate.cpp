@@ -4187,6 +4187,7 @@ impossibletwoactivitiesconsecutive:
 				}
 				else if(d==d2 && h2+gt.rules.internalActivitiesList[ai2].duration <= h){
 					int kk;
+					int sb = gt.rules.internalActivitiesList[ai2].iSubgroupsList[0];
 					for(kk=h2+gt.rules.internalActivitiesList[ai2].duration; kk<gt.rules.nHoursPerDay; kk++)
 						if(!breakDayHour(d2,kk) && !subgroupNotAvailableDayHour[sb][d2][kk])
 							break;
@@ -4196,6 +4197,7 @@ impossibletwoactivitiesconsecutive:
 				}
 				else if(d==d2 && h+act->duration <= h2){
 					int kk;
+					int sb = gt.rules.internalActivitiesList[ai].iSubgroupsList[0];
 					for(kk=h+act->duration; kk<gt.rules.nHoursPerDay; kk++)
 						if(!breakDayHour(d,kk) && !subgroupNotAvailableDayHour[sb][d][kk])
 							break;

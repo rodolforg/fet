@@ -12129,6 +12129,7 @@ double ConstraintTwoActivitiesGrouped::fitness(Solution& c, const Rules& r, QLis
 		else if(fd==sd && fh+r.internalActivitiesList[this->firstActivityIndex].duration <= sh){
 			int h;
 			int d=fd;
+			int sb = r.internalActivitiesList[this->firstActivityIndex].iSubgroupsList[0];
 			assert(d==sd);
 			for(h=fh+r.internalActivitiesList[this->firstActivityIndex].duration; h<r.nHoursPerDay; h++)
 				if(!breakDayHour[d][h] && !subgroupNotAvailableDayHour[sb][d][h])
@@ -12142,6 +12143,7 @@ double ConstraintTwoActivitiesGrouped::fitness(Solution& c, const Rules& r, QLis
 		else if(fd==sd && sh+r.internalActivitiesList[this->secondActivityIndex].duration <= fh){
 			int h;
 			int d=sd;
+			int sb = r.internalActivitiesList[this->firstActivityIndex].iSubgroupsList[0];
 			assert(d==fd);
 			for(h=sh+r.internalActivitiesList[this->secondActivityIndex].duration; h<r.nHoursPerDay; h++)
 				if(!breakDayHour[d][h] && !subgroupNotAvailableDayHour[sb][d][h])
