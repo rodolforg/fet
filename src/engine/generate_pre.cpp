@@ -34,6 +34,7 @@ using namespace std;
 #include "messageboxes.h"
 
 #include <QtAlgorithms>
+#include <QtGlobal>
 
 #include <QPair>
 #include <QSet>
@@ -5407,7 +5408,7 @@ bool computeActivitiesConflictingPercentage(QWidget* parent)
 	QProgressDialog progress(parent);
 	progress.setWindowTitle(GeneratePreTranslate::tr("Precomputing", "Title of a progress dialog"));
 	progress.setLabelText(GeneratePreTranslate::tr("Precomputing ... please wait"));
-	progress.setRange(0, gt.rules.nInternalTeachers+gt.rules.nInternalSubgroups);
+	progress.setRange(0, qMax(gt.rules.nInternalTeachers+gt.rules.nInternalSubgroups, 1));
 	progress.setModal(true);
 	
 	int ttt=0;
@@ -5442,7 +5443,7 @@ bool computeActivitiesConflictingPercentage(QWidget* parent)
 				activitiesConflictingPercentage[i].insert(j, 100);
 	}
 
-	progress.setValue(gt.rules.nInternalTeachers+gt.rules.nInternalSubgroups);
+	progress.setValue(qMax(gt.rules.nInternalTeachers+gt.rules.nInternalSubgroups, 1));
 	
 	//new volker (start)
 	for(int i=0; i<gt.rules.nInternalTimeConstraints; i++){

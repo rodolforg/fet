@@ -38,6 +38,7 @@ File import.cpp
 #endif
 
 #include <QProgressDialog>
+#include <QtGlobal>
 
 #include <QSet>
 #include <QHash>
@@ -851,7 +852,7 @@ int Import::readFields(QWidget* parent){
 	progress.setWindowTitle(tr("Importing", "Title of a progress dialog"));
 	progress.setLabelText(tr("Loading file"));
 	progress.setModal(true);
-	progress.setRange(0, size);
+	progress.setRange(0, qMax(size, qint64(1)));
 	//cout<<"progress in readFields starts"<<endl;
 	qint64 crt=0;
 
@@ -1103,7 +1104,7 @@ int Import::readFields(QWidget* parent){
 				warnText+="   "+Import::tr("Line %1 is: %2").arg(lineNumber).arg(line)+"\n";
 		}
 	}
-	progress.setValue(size);
+	progress.setValue(qMax(size, qint64(1)));
 	//cout<<"progress in readFields ends"<<endl;
 	int max=0;
 	for(int i=0; i<NUMBER_OF_FIELDS; i++){
@@ -1217,10 +1218,10 @@ FILE_STRIPPED_NAME
 	//Start current data warning
 	QVBoxLayout* dataWarningBox=new QVBoxLayout();
 	QLabel* dataWarningText=new QLabel();
-	if(dataWarning.size()==1)
-		dataWarningText->setText(Import::tr("FET noticed %1 warning with the current data.").arg(dataWarning.size()));
-	else
-		dataWarningText->setText(Import::tr("FET noticed %1 warnings with the current data.").arg(dataWarning.size()));
+	/*if(dataWarning.size()==1)
+		dataWarningText->setText(Import::tr("FET noticed 1 warning with the current data."));
+	else*/
+	dataWarningText->setText(Import::tr("FET noticed %1 warnings with the current data.").arg(dataWarning.size()));
 	dataWarningBox->addWidget(dataWarningText);
 
 	QListWidget* dataWarningItems=new QListWidget();
@@ -1714,7 +1715,7 @@ void Import::importCSVStudents(QWidget* parent){
 	//cout<<"progress in importCSVStudents starts, range="<<fieldList[FIELD_YEAR_NAME].size()<<endl;
 	progress.setLabelText(tr("Checking CSV"));
 	progress.setModal(true);
-	progress.setRange(0, fieldList[FIELD_YEAR_NAME].size());
+	progress.setRange(0, qMax(fieldList[FIELD_YEAR_NAME].size(), 1));
 	for(int i=0; i<fieldList[FIELD_YEAR_NAME].size(); i++){
 		progress.setValue(i);
 		if(progress.wasCanceled()){
@@ -1763,7 +1764,7 @@ void Import::importCSVStudents(QWidget* parent){
 				warnText+=Import::tr("Problem in line %1: Year name %2 is taken for a subgroup - please consider another name").arg(fieldList[FIELD_LINE_NUMBER][i]).arg(yearName)+"\n";
 		}
 	}
-	progress.setValue(fieldList[FIELD_YEAR_NAME].size());
+	progress.setValue(qMax(fieldList[FIELD_YEAR_NAME].size(), 1));
 	//cout<<"progress in importCSVStudents ends"<<endl;
 
 	//check current data
@@ -1772,7 +1773,7 @@ void Import::importCSVStudents(QWidget* parent){
 	progress2.setWindowTitle(tr("Importing", "Title of a progress dialog"));
 	progress2.setLabelText(tr("Checking data"));
 	progress2.setModal(true);
-	progress2.setRange(0, fieldList[FIELD_YEAR_NAME].size());
+	progress2.setRange(0, qMax(fieldList[FIELD_YEAR_NAME].size(), 1));
 	//cout<<"progress2 in importCSVStudents starts, range="<<fieldList[FIELD_YEAR_NAME].size()<<endl;
 	int kk=0;
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
@@ -1826,7 +1827,7 @@ void Import::importCSVStudents(QWidget* parent){
 			}
 		}
 	}
-	progress2.setValue(fieldList[FIELD_YEAR_NAME].size());
+	progress2.setValue(qMax(fieldList[FIELD_YEAR_NAME].size(), 1));
 	//cout<<"progress2 in importCSVStudents ends"<<endl;
 
 	QDialog* newParent2;
@@ -1845,7 +1846,7 @@ void Import::importCSVStudents(QWidget* parent){
 	progress3.setWindowTitle(tr("Importing", "Title of a progress dialog"));
 	progress3.setLabelText(tr("Importing data"));
 	progress3.setModal(true);
-	progress3.setRange(0, fieldList[FIELD_YEAR_NAME].size());
+	progress3.setRange(0, qMax(fieldList[FIELD_YEAR_NAME].size(), 1));
 	//cout<<"progress3 in importCSVStudents starts, range="<<fieldList[FIELD_YEAR_NAME].size()<<endl;
 	
 	QHash<QString, StudentsSet*> studentsHash;
@@ -2043,7 +2044,7 @@ void Import::importCSVStudents(QWidget* parent){
 		}
 	}
 
-	progress3.setValue(fieldList[FIELD_YEAR_NAME].size());
+	progress3.setValue(qMax(fieldList[FIELD_YEAR_NAME].size(), 1));
 	//cout<<"progress3 in importCSVStudents ends"<<endl;
 	//add students (end) - similar to adding items by Liviu modified by Volker
 	
@@ -2399,7 +2400,7 @@ void Import::importCSVActivities(QWidget* parent){
 	if(count>0)
 		lastWarning+=Import::tr("%1 activity tags added. Please check activity tags form.").arg(count)+"\n";
 
-	//add activities (start) - similar to Livius code modified by Volker
+	//add activities (start) - similar to Liviu's code modified by Volker
 	count=0;
 	int count2=0;
 	int activityid=0; //We set the id of this newly added activity = (the largest existing id + 1)
@@ -2414,7 +2415,7 @@ void Import::importCSVActivities(QWidget* parent){
 	progress4.setWindowTitle(tr("Importing", "Title of a progress dialog"));
 	progress4.setLabelText(tr("Importing activities"));
 	progress4.setModal(true);
-	progress4.setRange(0, fieldList[FIELD_SUBJECT_NAME].size());
+	progress4.setRange(0, qMax(fieldList[FIELD_SUBJECT_NAME].size(), 1));
 
 	bool incorrect_bool_consecutive=false;
 	
@@ -2588,8 +2589,8 @@ void Import::importCSVActivities(QWidget* parent){
 			}
 		}
 	}
-	progress4.setValue(fieldList[FIELD_SUBJECT_NAME].size());
-	//add activities (end) - similar to Livius code modified by Volker
+	progress4.setValue(qMax(fieldList[FIELD_SUBJECT_NAME].size(), 1));
+	//add activities (end) - similar to Liviu's code modified by Volker
 ifUserCanceledProgress4:
 
 	if(incorrect_bool_consecutive){

@@ -51,6 +51,8 @@ File statisticsexport.cpp
 #include <QProgressDialog>
 //extern QApplication* pqapplication;
 
+#include <QtGlobal>
+
 extern Timetable gt;
 
 //extern bool simulation_running;	//needed?
@@ -688,7 +690,7 @@ QString StatisticsExport::exportStatisticsTeachersSubjectsHtml(QWidget* parent, 
 	QProgressDialog progress(parent);
 	progress.setWindowTitle(tr("Exporting statistics", "Title of a progress dialog"));
 	progress.setLabelText(tr("Processing teachers with subjects...please wait"));
-	progress.setRange(0, statisticValues.allSubjectsNames.count());
+	progress.setRange(0, qMax(statisticValues.allSubjectsNames.count(), 1));
 	progress.setModal(true);
 	
 	int ttt=0;
@@ -824,7 +826,7 @@ QString StatisticsExport::exportStatisticsTeachersSubjectsHtml(QWidget* parent, 
 		tmp+="        </tr>\n";
 	}
 	
-	progress.setValue(statisticValues.allSubjectsNames.count());
+	progress.setValue(qMax(statisticValues.allSubjectsNames.count(), 1));
 	
 	tmp+="        <tr>\n";
 	if(htmlLevel>=2)
@@ -965,7 +967,7 @@ QString StatisticsExport::exportStatisticsSubjectsTeachersHtml(QWidget* parent, 
 	QProgressDialog progress(parent);
 	progress.setWindowTitle(tr("Exporting statistics", "Title of a progress dialog"));
 	progress.setLabelText(tr("Processing subjects with teachers...please wait"));
-	progress.setRange(0, statisticValues.allTeachersNames.count());
+	progress.setRange(0, qMax(statisticValues.allTeachersNames.count(), 1));
 	progress.setModal(true);
 	
 	int ttt=0;
@@ -1098,7 +1100,7 @@ QString StatisticsExport::exportStatisticsSubjectsTeachersHtml(QWidget* parent, 
 		tmp+="        </tr>\n";
 	}
 	
-	progress.setValue(statisticValues.allTeachersNames.count());
+	progress.setValue(qMax(statisticValues.allTeachersNames.count(), 1));
 	
 	tmp+="        <tr>\n";
 	if(htmlLevel>=2)
@@ -1239,7 +1241,7 @@ QString StatisticsExport::exportStatisticsTeachersStudentsHtml(QWidget* parent, 
 	QProgressDialog progress(parent);
 	progress.setWindowTitle(tr("Exporting statistics", "Title of a progress dialog"));
 	progress.setLabelText(tr("Processing teachers with students...please wait"));
-	progress.setRange(0, statisticValues.allStudentsNames.count());
+	progress.setRange(0, qMax(statisticValues.allStudentsNames.count(), 1));
 	progress.setModal(true);
 	
 	int ttt=0;
@@ -1373,7 +1375,7 @@ QString StatisticsExport::exportStatisticsTeachersStudentsHtml(QWidget* parent, 
 		tmp+="        </tr>\n";
 	}
 	
-	progress.setValue(statisticValues.allStudentsNames.count());
+	progress.setValue(qMax(statisticValues.allStudentsNames.count(), 1));
 	
 	tmp+="        <tr>\n";
 	if(htmlLevel>=2)
@@ -1514,7 +1516,7 @@ QString StatisticsExport::exportStatisticsStudentsTeachersHtml(QWidget* parent, 
 	QProgressDialog progress(parent);
 	progress.setWindowTitle(tr("Exporting statistics", "Title of a progress dialog"));
 	progress.setLabelText(tr("Processing students with teachers...please wait"));
-	progress.setRange(0, statisticValues.allTeachersNames.count());
+	progress.setRange(0, qMax(statisticValues.allTeachersNames.count(), 1));
 	progress.setModal(true);
 	
 	int ttt=0;
@@ -1648,7 +1650,7 @@ QString StatisticsExport::exportStatisticsStudentsTeachersHtml(QWidget* parent, 
 		tmp+="        </tr>\n";
 	}
 	
-	progress.setValue(statisticValues.allTeachersNames.count());
+	progress.setValue(qMax(statisticValues.allTeachersNames.count(), 1));
 	
 	tmp+="        <tr>\n";
 	if(htmlLevel>=2)
@@ -1789,7 +1791,7 @@ QString StatisticsExport::exportStatisticsSubjectsStudentsHtml(QWidget* parent, 
 	QProgressDialog progress(parent);
 	progress.setWindowTitle(tr("Exporting statistics", "Title of a progress dialog"));
 	progress.setLabelText(tr("Processing subjects with students...please wait"));
-	progress.setRange(0, statisticValues.allStudentsNames.count());
+	progress.setRange(0, qMax(statisticValues.allStudentsNames.count(), 1));
 	progress.setModal(true);
 	
 	int ttt=0;
@@ -1923,7 +1925,7 @@ QString StatisticsExport::exportStatisticsSubjectsStudentsHtml(QWidget* parent, 
 		tmp+="        </tr>\n";
 	}
 	
-	progress.setValue(statisticValues.allStudentsNames.count());
+	progress.setValue(qMax(statisticValues.allStudentsNames.count(), 1));
 
 	tmp+="        <tr>\n";
 	if(htmlLevel>=2)
@@ -2063,7 +2065,7 @@ QString StatisticsExport::exportStatisticsStudentsSubjectsHtml(QWidget* parent, 
 	QProgressDialog progress(parent);
 	progress.setWindowTitle(tr("Exporting statistics", "Title of a progress dialog"));
 	progress.setLabelText(tr("Processing students with subjects...please wait"));
-	progress.setRange(0, statisticValues.allSubjectsNames.count());
+	progress.setRange(0, qMax(statisticValues.allSubjectsNames.count(), 1));
 	progress.setModal(true);
 	
 	int ttt=0;
@@ -2199,7 +2201,7 @@ QString StatisticsExport::exportStatisticsStudentsSubjectsHtml(QWidget* parent, 
 		tmp+="        </tr>\n";
 	}
 	
-	progress.setValue(statisticValues.allSubjectsNames.count());
+	progress.setValue(qMax(statisticValues.allSubjectsNames.count(), 1));
 
 	tmp+="        <tr>\n";
 	if(htmlLevel>=2)
