@@ -43,6 +43,7 @@ using namespace std;
 #include <QTranslator>
 
 #include <QtAlgorithms>
+#include <QtGlobal>
 
 #include <QSet>
 #include <QHash>
@@ -431,7 +432,7 @@ bool Rules::computeInternalStructure(QWidget* parent)
 	QProgressDialog progress(parent);
 	progress.setWindowTitle(tr("Computing internal structure", "Title of a progress dialog"));
 	progress.setLabelText(tr("Processing internally the activities ... please wait"));
-	progress.setRange(0, range);
+	progress.setRange(0, qMax(range, 1));
 	progress.setModal(true);
 	int ttt=0;
 		
@@ -459,7 +460,7 @@ bool Rules::computeInternalStructure(QWidget* parent)
 			inactiveActivities.insert(act->id);
 	}
 	
-	progress.setValue(range);
+	progress.setValue(qMax(range, 1));
 
 	for(int i=0; i<nInternalSubgroups; i++)
 		internalSubgroupsList[i]->activitiesForSubgroup.clear();
@@ -609,7 +610,7 @@ bool Rules::computeInternalStructure(QWidget* parent)
 	internalTimeConstraintsList.resize(_c);
 	
 	progress.setLabelText(tr("Processing internally the time constraints ... please wait"));
-	progress.setRange(0, timeConstraintsList.size());
+	progress.setRange(0, qMax(timeConstraintsList.size(), 1));
 	ttt=0;
 		
 	//assert(this->timeConstraintsList.size()<=MAX_TIME_CONSTRAINTS);
@@ -638,7 +639,7 @@ bool Rules::computeInternalStructure(QWidget* parent)
 		this->internalTimeConstraintsList[tctri++]=tctr;
 	}
 
-	progress.setValue(timeConstraintsList.size());
+	progress.setValue(qMax(timeConstraintsList.size(), 1));
 
 	this->nInternalTimeConstraints=tctri;
 	if(VERBOSE){
@@ -691,7 +692,7 @@ bool Rules::computeInternalStructure(QWidget* parent)
 	internalSpaceConstraintsList.resize(_c);
 	
 	progress.setLabelText(tr("Processing internally the space constraints ... please wait"));
-	progress.setRange(0, spaceConstraintsList.size());
+	progress.setRange(0, qMax(spaceConstraintsList.size(), 1));
 	ttt=0;
 	//assert(this->spaceConstraintsList.size()<=MAX_SPACE_CONSTRAINTS);
 
@@ -720,7 +721,7 @@ bool Rules::computeInternalStructure(QWidget* parent)
 		this->internalSpaceConstraintsList[sctri++]=sctr;
 	}
 
-	progress.setValue(spaceConstraintsList.size());
+	progress.setValue(qMax(spaceConstraintsList.size(), 1));
 
 	this->nInternalSpaceConstraints=sctri;
 	if(VERBOSE){
