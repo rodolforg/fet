@@ -1910,3 +1910,6 @@ Versions 5.30.0 - 5.30.v
 	- FET command-line now writes the impossible activity and the current and highest-stage timetables (which should be identical) after an impossible
 	generation (suggested by thanhnambkhn).
 	- Minor bug fix: when importing data from CSV, skipping the activity if its duration is less than 1 (reported by Malamojka, fixed by Volker Dirr).
+- Version 5.30.7
+	- Minor bug fix: when importing a file with 0 activities, there appeared a useless progress dialog. Also in other places with 0 data there might have appeared
+	a useless progress dialog. Reported by Malamojka.
