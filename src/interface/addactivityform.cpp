@@ -791,7 +791,7 @@ void AddActivityForm::addActivity()
 
 	for(int i = 0; i < splitSpinBox->value(); i++) {
 		if (subactivities[i].subdivSize > 0) {
-			Activity *initialActivity = gt.rules.activitiesPointerHash.value(firstActivityid);
+			Activity *initialActivity = gt.rules.activitiesPointerHash.value(firstActivityid+i);
 			QList<int> breakableList;
 			breakableList.append(initialActivity->id);
 
