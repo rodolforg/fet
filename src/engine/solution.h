@@ -75,18 +75,18 @@ public:
 	Assignment method. We need to have access to the Rules instantiation
 	to know the number of activities.
 	*/
-	void copy(Rules& r, Solution& c);
+	void copy(const Rules& r, const Solution& c);
 
 	/**
 	Initializes, marking all activities as unscheduled (time)
 	*/
-	void init(Rules& r);
+	void init(const Rules& r);
 
 	/**
 	Marks the starting time of all the activities as undefined
 	(all activities are unallocated).
 	*/
-	void makeUnallocated(Rules& r);
+	void makeUnallocated(const Rules& r);
 
 	/**
 	ATTENTION: if the rules change, the user has to reset _fitness to -1
@@ -94,15 +94,15 @@ public:
 	If conflictsString is not null, then this function will
 	append at this string an explanation of the conflicts.
 	*/
-	double fitness(Rules& r, QString* conflictsString=NULL);
+	double fitness(const Rules& r, QString* conflictsString=NULL);
 
-	void getTeachersTimetable(Rules& r, Matrix3D<int>& a, Matrix3D<QList<int> >& b);
+	void getTeachersTimetable(const Rules& r, Matrix3D<int>& a, Matrix3D<QList<int> >& b);
 	//return value is the number of conflicts, which must be 0
 
-	void getSubgroupsTimetable(Rules& r, Matrix3D<int>& a);
+	void getSubgroupsTimetable(const Rules& r, Matrix3D<int>& a);
 	//return value is the number of conflicts, which must be 0
 
-	void getRoomsTimetable(Rules& r, Matrix3D<int>& a);
+	void getRoomsTimetable(const Rules& r, Matrix3D<int>& a);
 	//return value is the number of conflicts, which must be 0
 
 	int getSubgroupsMatrix(const Rules &r, Matrix3D<int>& a);
