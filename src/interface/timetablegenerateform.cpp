@@ -53,12 +53,6 @@ QSemaphore finishedSemaphore;
 //Represents the current status of the simulation - running or stopped.
 extern bool simulation_running;
 
-extern bool students_schedule_ready;
-extern bool teachers_schedule_ready;
-extern bool rooms_schedule_ready;
-
-extern Solution best_solution;
-
 extern Solution highestStageSolution;
 
 extern QString conflictsStringTitle;
