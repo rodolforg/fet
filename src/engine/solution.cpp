@@ -21,17 +21,10 @@ File solution.cpp
 
 //Teachers free periods code contributed by Volker Dirr (http://timetabling.de/)
 
-#include <QFile>
-#include <QTextStream>
-
 #include "timetable_defs.h"
 #include "solution.h"
 #include "rules.h"
-#include "timeconstraint.h"
 
-#include "matrix.h"
-
-#include <QMap>
 #include <QMultiMap>
 
 //extern bool breakDayHour[MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];

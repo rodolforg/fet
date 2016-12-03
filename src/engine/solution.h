@@ -28,7 +28,6 @@ File solution.h
 
 #include <QString>
 #include <QList>
-#include <QTextStream>
 
 class Rules;
 
