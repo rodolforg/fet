@@ -33,7 +33,7 @@ extern Matrix2D<bool> breakDayHour;
 extern Matrix3D<bool> teacherNotAvailableDayHour;
 
 //critical function here - must be optimized for speed
-void Solution::copy(Rules& r, Solution& c){
+void Solution::copy(const Rules &r, const Solution &c){
 	this->_fitness=c._fitness;
 
 	assert(r.internalStructureComputed);
@@ -58,7 +58,7 @@ void Solution::copy(Rules& r, Solution& c){
 	nPlacedActivities=c.nPlacedActivities;
 }
 
-void Solution::init(Rules& r){
+void Solution::init(const Rules &r){
 	assert(r.internalStructureComputed);
 
 	for(int i=0; i<r.nInternalActivities; i++){
@@ -71,7 +71,7 @@ void Solution::init(Rules& r){
 	this->changedForMatrixCalculation=true;
 }
 
-void Solution::makeUnallocated(Rules& r){
+void Solution::makeUnallocated(const Rules &r){
 	assert(r.initialized);
 	assert(r.internalStructureComputed);
 
@@ -85,7 +85,7 @@ void Solution::makeUnallocated(Rules& r){
 	this->changedForMatrixCalculation=true;
 }
 
-double Solution::fitness(Rules& r, QString* conflictsString){
+double Solution::fitness(const Rules &r, QString* conflictsString){
 	assert(r.initialized);
 	assert(r.internalStructureComputed);
 
@@ -246,7 +246,7 @@ int Solution::getSubgroupsMatrix(const Rules& r, Matrix3D<int>& a){
 
 //The following 2 functions (GetTeachersTimetable & GetSubgroupsTimetable)
 //are very similar to the above 2 ones (GetTeachersMatrix & GetSubgroupsMatrix)
-void Solution::getTeachersTimetable(Rules& r, Matrix3D<int>& a, Matrix3D<QList<int> >& b){
+void Solution::getTeachersTimetable(const Rules &r, Matrix3D<int>& a, Matrix3D<QList<int> >& b){
 	assert(r.initialized);
 	assert(r.internalStructureComputed);
 	
@@ -373,7 +373,7 @@ void Solution::getTeachersTimetable(Rules& r, Matrix3D<int>& a, Matrix3D<QList<i
 	}
 }
 
-void Solution::getSubgroupsTimetable(Rules& r, Matrix3D<int>& a){
+void Solution::getSubgroupsTimetable(const Rules &r, Matrix3D<int>& a){
 	assert(r.initialized);
 	assert(r.internalStructureComputed);
 	
@@ -441,8 +441,7 @@ int Solution::getRoomsMatrix(
 	return conflicts;
 }
 
-void Solution::getRoomsTimetable(
-	Rules& r,
+void Solution::getRoomsTimetable(const Rules &r,
 	Matrix3D<int>& a)
 {
 	assert(r.initialized);
