@@ -451,6 +451,12 @@ void AddActivityForm::splitLineEditTextChanged(const QString &text)
 	}
 	splitSpinBox->setValue(divisions.count());
 	for (int i = 0; i < divisions.count(); i++) {
+		if (divisions[i].contains("b")) {
+			divisions[i].remove("b");
+			breakableCheckBox->setChecked(true);
+		} else {
+			breakableCheckBox->setChecked(false);
+		}
 		if (divisions[i].contains("!")) {
 			divisions[i].remove("!");
 			activList[i]->setChecked(false);
@@ -1013,11 +1019,13 @@ void AddActivityForm::minDaysChanged()
 void AddActivityForm::durationChanged()
 {
 	updateSubdivisionWidgetState();
+	rewriteSplitLineEdit();
 }
 
 void AddActivityForm::splittableChanged()
 {
 	updateSubdivisionWidgetState();
+	rewriteSplitLineEdit();
 }
 
 void AddActivityForm::updateSubdivisionWidgetState()
@@ -1038,6 +1046,8 @@ void AddActivityForm::rewriteSplitLineEdit()
 		if (!activList[i]->isChecked())
 			divisionTexts[i] += "!";
 		divisionTexts[i] += QString::number(durList[i]->value());
+		if (breakableCheckBox->isChecked())
+			divisionTexts[i] += 'b';
 	}
 	QString text = divisionTexts.join(" + ");
 	splitLineEdit->setText(text);
