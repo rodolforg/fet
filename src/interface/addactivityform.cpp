@@ -107,8 +107,10 @@ AddActivityForm::AddActivityForm(QWidget* parent, const QString& teacherName, co
 	durList.append(duration34SpinBox);
 	durList.append(duration35SpinBox);
 	
-	for(int i=0; i<MAX_SPLIT_OF_AN_ACTIVITY; i++)
+	for(int i=0; i<MAX_SPLIT_OF_AN_ACTIVITY; i++) {
 		dur(i)->setMaximum(gt.rules.nHoursPerDay);
+		connect(durList[i], SIGNAL(valueChanged(int)), this, SLOT(rewriteSplitLineEdit()));
+	}
 
 	activList.clear();
 	activList.append(active1CheckBox);
@@ -169,6 +171,10 @@ AddActivityForm::AddActivityForm(QWidget* parent, const QString& teacherName, co
 	connect(clearTeacherPushButton, SIGNAL(clicked()), this, SLOT(clearTeachers()));
 
 	connect(minDayDistanceSpinBox, SIGNAL(valueChanged(int)), this, SLOT(minDaysChanged()));
+
+	connect(splitLineEdit, SIGNAL(textChanged(const QString &)), this, SLOT(splitLineEditTextChanged(const QString &)));
+	for (int i = 0; i < MAX_SPLIT_OF_AN_ACTIVITY; i++)
+		connect(activList[i], SIGNAL(toggled(bool)), this, SLOT(rewriteSplitLineEdit()));
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
@@ -428,6 +434,27 @@ void AddActivityForm::updateStudentsListWidget()
 	
 	int q=allStudentsListWidget->verticalScrollBar()->minimum();
 	allStudentsListWidget->verticalScrollBar()->setValue(q);
+}
+
+void AddActivityForm::splitLineEditTextChanged(const QString &text)
+{
+	QString cleanText(text);
+	cleanText.remove(QRegExp("\\s*"));
+	QStringList divisions = cleanText.split("+", QString::SkipEmptyParts);
+	if (divisions.count() > MAX_SPLIT_OF_AN_ACTIVITY) {
+		// FIXM Emit error message
+		return;
+	}
+	splitSpinBox->setValue(divisions.count());
+	for (int i = 0; i < divisions.count(); i++) {
+		if (divisions[i].contains("!")) {
+			divisions[i].remove("!");
+			activList[i]->setChecked(false);
+		} else {
+			activList[i]->setChecked(true);
+		}
+		durList[i]->setValue(divisions[i].toInt());
+	}
 }
 
 void AddActivityForm::splitChanged()
@@ -925,4 +952,17 @@ void AddActivityForm::minDaysChanged()
 	percentageTextLabel->setEnabled(splitSpinBox->value()>=2 && minDayDistanceSpinBox->value()>0);
 	percentageLineEdit->setEnabled(splitSpinBox->value()>=2 && minDayDistanceSpinBox->value()>0);
 	forceConsecutiveCheckBox->setEnabled(splitSpinBox->value()>=2 && minDayDistanceSpinBox->value()>0);
+}
+
+void AddActivityForm::rewriteSplitLineEdit()
+{
+	QStringList divisionTexts;
+	for (int i = 0; i<splitSpinBox->value(); i++) {
+		divisionTexts << "";
+		if (!activList[i]->isChecked())
+			divisionTexts[i] += "!";
+		divisionTexts[i] += QString::number(durList[i]->value());
+	}
+	QString text = divisionTexts.join(" + ");
+	splitLineEdit->setText(text);
 }

@@ -79,6 +79,10 @@ public slots:
 	void help();
 	
 	void minDaysChanged();
+
+	void splitLineEditTextChanged(const QString &text);
+private slots:
+	void rewriteSplitLineEdit();
 };
 
 class SecondMinDaysDialog: public QDialog
