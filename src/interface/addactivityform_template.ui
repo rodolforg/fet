@@ -257,7 +257,7 @@
           <string comment="Refers to the number of components in an activity split into more components">Split</string>
          </property>
          <layout class="QGridLayout" name="gridLayout_2">
-          <item row="0" column="0">
+          <item row="1" column="0">
            <widget class="QSpinBox" name="splitSpinBox">
             <property name="minimum">
              <number>1</number>
@@ -266,6 +266,9 @@
              <number>35</number>
             </property>
            </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLineEdit" name="splitLineEdit"/>
           </item>
          </layout>
         </widget>
