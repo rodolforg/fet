@@ -38,12 +38,16 @@ public slots:
 
 	void itemClicked(QTableWidgetItem* item);
 	void horizontalHeaderClicked(int col);
+	void verticalHeaderPressed(int row);
 	void verticalHeaderClicked(int row);
 
 	void help();
 
 	void setAllAvailable();
 	void setAllNotAvailable();
+
+private:
+	int pressedRow;
 };
 
 #endif
