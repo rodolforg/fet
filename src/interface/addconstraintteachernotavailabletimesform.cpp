@@ -82,7 +82,8 @@ AddConstraintTeacherNotAvailableTimesForm::AddConstraintTeacherNotAvailableTimes
 
 	connect(notAllowedTimesTable->horizontalHeader(), SIGNAL(sectionClicked(int)), this, SLOT(horizontalHeaderClicked(int)));
 	connect(notAllowedTimesTable->verticalHeader(), SIGNAL(sectionClicked(int)), this, SLOT(verticalHeaderClicked(int)));
-	
+	connect(notAllowedTimesTable->verticalHeader(), SIGNAL(sectionPressed(int)), this, SLOT(verticalHeaderPressed(int)));
+
 	notAllowedTimesTable->setSelectionMode(QAbstractItemView::NoSelection);
 
 	tableWidgetUpdateBug(notAllowedTimesTable);
@@ -125,9 +126,20 @@ void AddConstraintTeacherNotAvailableTimesForm::horizontalHeaderClicked(int col)
 	}
 }
 
-void AddConstraintTeacherNotAvailableTimesForm::verticalHeaderClicked(int row)
+void AddConstraintTeacherNotAvailableTimesForm::verticalHeaderClicked(int clickedRow)
 {
-	if(row>=0 && row<gt.rules.nHoursPerDay){
+	if(clickedRow<0 && clickedRow>=gt.rules.nHoursPerDay)
+		return;
+
+	int firstRow, lastRow;
+	if (pressedRow < clickedRow) {
+		firstRow = pressedRow;
+		lastRow = clickedRow;
+	} else {
+		lastRow = pressedRow;
+		firstRow = clickedRow;
+	}
+	for (int row = firstRow; row <= lastRow; row++) {
 		QString s=notAllowedTimesTable->item(row, 0)->text();
 		if(s==YES)
 			s=NO;
@@ -135,12 +147,19 @@ void AddConstraintTeacherNotAvailableTimesForm::verticalHeaderClicked(int row)
 			assert(s==NO);
 			s=YES;
 		}
-	
+
 		for(int col=0; col<gt.rules.nDaysPerWeek; col++){
 			notAllowedTimesTable->item(row, col)->setText(s);
 			colorItem(notAllowedTimesTable->item(row,col));
 		}
-		tableWidgetUpdateBug(notAllowedTimesTable);
+	}
+	tableWidgetUpdateBug(notAllowedTimesTable);
+}
+
+void AddConstraintTeacherNotAvailableTimesForm::verticalHeaderPressed(int row)
+{
+	if(row>=0 && row<gt.rules.nHoursPerDay){
+		pressedRow = row;
 	}
 }
 
