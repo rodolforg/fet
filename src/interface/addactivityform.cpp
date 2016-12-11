@@ -285,6 +285,8 @@ void AddActivityForm::addTeacher()
 			
 	selectedTeachersListWidget->addItem(allTeachersListWidget->currentItem()->text());
 	selectedTeachersListWidget->setCurrentRow(selectedTeachersListWidget->count()-1);
+
+	selectedTeachersTextLabel->setText(QCoreApplication::translate("AddActivityForm_template", "Selected", "It refers to a list of selected teachers")+QString(" (%1)").arg(selectedTeachersListWidget->count()));
 }
 
 void AddActivityForm::removeTeacher()
@@ -301,6 +303,8 @@ void AddActivityForm::removeTeacher()
 		selectedTeachersListWidget->setCurrentRow(i);
 	else
 		selectedTeachersListWidget->setCurrentRow(selectedTeachersListWidget->count()-1);
+
+	selectedTeachersTextLabel->setText(QCoreApplication::translate("AddActivityForm_template", "Selected", "It refers to a list of selected teachers")+QString(" (%1)").arg(selectedTeachersListWidget->count()));
 }
 
 void AddActivityForm::addStudents()
@@ -799,6 +803,8 @@ void AddActivityForm::addActivity()
 void AddActivityForm::clearTeachers()
 {
 	selectedTeachersListWidget->clear();
+
+	selectedTeachersTextLabel->setText(QCoreApplication::translate("AddActivityForm_template", "Selected", "It refers to a list of selected teachers")+QString(" (%1)").arg(selectedTeachersListWidget->count()));
 }
 
 void AddActivityForm::clearStudents()
