@@ -1005,6 +1005,8 @@ int Import::readFields(QWidget* parent){
 									QString split;
 									while(ok && !splitList.isEmpty()){
 										split=splitList.takeFirst();
+										split.remove("b");
+										split.remove("!");
 										tmpInt+=split.toInt(&ok, 10);
 										if(!ok)
 											warnText+=Import::tr("Skipped line %1: Field '%2' doesn't contain an integer value.").arg(lineNumber).arg(fieldName[FIELD_SPLIT_DURATION])+"\n";
@@ -2075,6 +2077,18 @@ ifUserCanceledProgress3:
 	gt.rules.internalStructureComputed=false;
 }
 
+static int getUnusedActivityId(const QList<Activity*> & activitiesList) {
+	//the group id of this split activity and the id of the first partial activity
+	//it is the maximum already existing id + 1
+	int firstactivityid=0;
+	for(int i=0; i<activitiesList.size(); i++){
+		Activity* act=activitiesList[i];
+		if(act->id > firstactivityid)
+			firstactivityid = act->id;
+	}
+	return firstactivityid+1;
+}
+
 void Import::importCSVActivities(QWidget* parent){
 	prearrangement();
 	fieldNumber[FIELD_STUDENTS_SET]=IMPORT_DEFAULT_ITEM;
@@ -2407,13 +2421,7 @@ void Import::importCSVActivities(QWidget* parent){
 	//add activities (start) - similar to Liviu's code modified by Volker
 	count=0;
 	int count2=0;
-	int activityid=0; //We set the id of this newly added activity = (the largest existing id + 1)
-	for(int i=0; i<gt.rules.activitiesList.size(); i++){	//TODO: do it the same in addactivityform.cpp (calculate activity id just one time)
-		Activity* act=gt.rules.activitiesList[i];
-		if(act->id > activityid)
-			activityid = act->id;
-	}
-	activityid++;
+	int activityid=getUnusedActivityId(gt.rules.activitiesList); //We set the id of this newly added activity = (the largest existing id + 1)
 	QProgressDialog* _progress4=new QProgressDialog(newParent);
 	QProgressDialog& progress4=(*_progress4);
 	progress4.setWindowTitle(tr("Importing", "Title of a progress dialog"));
@@ -2492,9 +2500,52 @@ void Import::importCSVActivities(QWidget* parent){
 		}
 
 		QStringList splitDurationList;
-		splitDurationList.clear();
 		assert(!fieldList[FIELD_SPLIT_DURATION][i].isEmpty());
 		splitDurationList = fieldList[FIELD_SPLIT_DURATION][i].split("+", QString::SkipEmptyParts);
+		const int numDivisions = splitDurationList.count();
+
+		int totalDuration = 0;
+		struct Subactivity{
+			int duration;
+			bool active;
+			int subdivSize;
+		};
+
+		Subactivity subactivities[numDivisions];
+
+		for (int i = 0; i < numDivisions; i++) {
+			bool breakable = false;
+			bool active = true;
+			if (splitDurationList[i].contains("b")) {
+				splitDurationList[i].remove("b");
+				breakable = true;
+			}
+			if (splitDurationList[i].contains("!")) {
+				splitDurationList[i].remove("!");
+				active = false;
+			}
+			subactivities[i].duration = splitDurationList[i].toInt();
+			subactivities[i].active = active;
+
+			if (!breakable) {
+				subactivities[i].subdivSize = -1;
+			} else {
+				int subdivisionSize = subactivities[i].duration / 2; // FIXME!!!
+				assert(subdivisionSize > 0 && subdivisionSize < subactivities[i].duration);
+				int numSubdivs = subactivities[i].duration / subdivisionSize;
+				if (subactivities[i].duration % subdivisionSize > 0)
+					numSubdivs++;
+				if (numSubdivs > 3) {
+					;// emit error
+				}
+				subactivities[i].subdivSize = subdivisionSize;
+			}
+
+			totalDuration += subactivities[i].duration;
+		}
+
+		int firstActivityid = activityid;
+
 		int nsplit=splitDurationList.size();
 		if(nsplit==1){
 			int duration=fieldList[FIELD_TOTAL_DURATION][i].toInt(&ok2, 10);
@@ -2592,6 +2643,46 @@ void Import::importCSVActivities(QWidget* parent){
 				lastWarning+=tr("Line %1: Activity duration is lower than 1 - please correct that").arg(fieldList[FIELD_LINE_NUMBER][i])+"\n";
 			}
 		}
+
+		for(int iDiv = 0; iDiv < numDivisions; iDiv++) {
+			if (subactivities[iDiv].subdivSize > 0) {
+				Activity *initialActivity = gt.rules.activitiesPointerHash.value(firstActivityid+iDiv);
+				QList<int> breakableList;
+				breakableList.append(initialActivity->id);
+
+				int subdivisionSize = subactivities[iDiv].subdivSize;
+				initialActivity->duration = subdivisionSize;
+				initialActivity->activityGroupId = firstActivityid;
+
+				bool broke = false;
+				for (int i = subactivities[iDiv].duration - subdivisionSize; i > 0; i-=subdivisionSize) {
+					int duration = i > subdivisionSize? subdivisionSize : i;
+
+					int activityid = getUnusedActivityId(gt.rules.activitiesList);
+					bool tmp = gt.rules.addSimpleActivityFast(newParent, activityid, firstActivityid,
+															  teachers_names, subject_name, activity_tags_names, students_names,
+															  duration, totalDuration, subactivities[i].active,
+															  true, -1, numberOfStudents);
+					breakableList.append(activityid);
+					broke = true;
+				}
+				if (!broke)
+					continue;
+
+				ConstraintActivitiesSameStartingDay * c1 = new ConstraintActivitiesSameStartingDay(100, breakableList.size(), breakableList);
+				bool tmp = gt.rules.addTimeConstraint(c1);
+				if (breakableList.size() == 2) {
+					ConstraintTwoActivitiesGrouped * c2 = new ConstraintTwoActivitiesGrouped(100, breakableList[0], breakableList[1]);
+					bool tmp = gt.rules.addTimeConstraint(c2);
+				} else if (breakableList.size() == 3){
+					ConstraintThreeActivitiesGrouped * c2 = new ConstraintThreeActivitiesGrouped(100, breakableList[0], breakableList[1], breakableList[2]);
+					bool tmp = gt.rules.addTimeConstraint(c2);
+				} else {
+					// TODO emit error
+				}
+			}
+		}
+		activityid = getUnusedActivityId(gt.rules.activitiesList);
 	}
 	progress4.setValue(qMax(fieldList[FIELD_SUBJECT_NAME].size(), 1));
 	//add activities (end) - similar to Liviu's code modified by Volker
