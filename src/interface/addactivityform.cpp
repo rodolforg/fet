@@ -825,17 +825,18 @@ void AddActivityForm::addActivity()
 			QMessageBox::critical(this, tr("FET information"), tr("Split activity NOT added - error???"));
 	}
 
-	for(int i = 0; i < splitSpinBox->value(); i++) {
-		if (subactivities[i].subdivSize > 0) {
-			Activity *initialActivity = gt.rules.activitiesPointerHash.value(firstActivityid+i);
+	for(int iDiv = 0; iDiv < splitSpinBox->value(); iDiv++) {
+		if (subactivities[iDiv].subdivSize > 0) {
+			Activity *initialActivity = gt.rules.activitiesPointerHash.value(firstActivityid+iDiv);
 			QList<int> breakableList;
 			breakableList.append(initialActivity->id);
 
-			int subdivisionSize = subactivities[i].subdivSize;
+			int subdivisionSize = subactivities[iDiv].subdivSize;
 			initialActivity->duration = subdivisionSize;
 			initialActivity->activityGroupId = firstActivityid;
 
-			for (int i = duration1SpinBox->value()- subdivisionSize; i > 0; i-=subdivisionSize) {
+			bool broke = false;
+			for (int i = subactivities[iDiv].duration - subdivisionSize; i > 0; i-=subdivisionSize) {
 				int duration = i > subdivisionSize? subdivisionSize : i;
 
 				int activityid = getUnusedActivityId(gt.rules.activitiesList);
@@ -844,7 +845,11 @@ void AddActivityForm::addActivity()
 														  duration, totalDuration, subactivities[i].active,
 														  (nStudentsSpinBox->value()==-1), nStudentsSpinBox->value(), numberOfStudents);
 				breakableList.append(activityid);
+				broke = true;
 			}
+			if (!broke)
+				continue;
+
 			ConstraintActivitiesSameStartingDay * c1 = new ConstraintActivitiesSameStartingDay(100, breakableList.size(), breakableList);
 			bool tmp = gt.rules.addTimeConstraint(c1);
 			if (breakableList.size() == 2) {
