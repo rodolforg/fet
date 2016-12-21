@@ -3672,7 +3672,56 @@ again_if_impossible_activity:
 			}
 		}
 		///////////////////////////////////
-				
+
+		// check if it exceeds the max daily hours at work
+		foreach (int tch, act->iTeachersList) {
+			int startingHour = -1;
+			int endingHour = -1;
+			int startingAi = -1;
+			int endingAi = -1;
+			const int MAX_TEACHER_HOURS_AT_WORK = 9;
+			for (int hi = 0; hi < gt.rules.nHoursPerDay; hi++) {
+				int ai2=teachersTimetable(tch,d,hi);
+				if (ai2 >= 0) {
+					startingHour = hi;
+					startingAi = ai2;
+					break;
+				}
+			}
+			if (startingHour < 0)
+				continue;
+			for (int hi = gt.rules.nHoursPerDay - 1; hi >= startingHour; hi--) {
+				int ai2=teachersTimetable(tch,d,hi);
+				if (ai2 >= 0) {
+					endingHour = hi+1;// + gt.rules.internalActivitiesList[ai2].duration;
+					endingAi = ai2;
+					break;
+				}
+			}
+			if (h < startingHour) {
+				startingHour = h;
+				startingAi = ai;
+			}
+			if (h >= endingHour) {
+				endingHour = h + act->duration;
+				endingAi = ai;
+			}
+			if (startingHour >= 0) {
+				if (endingHour - startingHour > MAX_TEACHER_HOURS_AT_WORK) {
+					int ai2 = ai == startingAi? endingAi : startingAi;
+					if(fixedTimeActivity[ai2] || swappedActivities[ai2]){
+						okbasictime=false;
+						goto impossiblebasictime;
+					}
+
+					if(!conflActivities[newtime].contains(ai2)){
+						conflActivities[newtime].append(ai2);
+						nConflActivities[newtime]++;
+						assert(nConflActivities[newtime]==conflActivities[newtime].count());
+					}
+				}
+			}
+		}
 impossiblebasictime:
 		if(!okbasictime){
 			//if(updateSubgroups || updateTeachers)
