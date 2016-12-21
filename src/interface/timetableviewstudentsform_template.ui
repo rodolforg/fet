@@ -154,6 +154,16 @@
         <item>
          <widget class="QPlainTextEdit" name="detailsTextEdit"/>
         </item>
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Pending activities</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QListWidget" name="pendingActivitiesListWidget"/>
+        </item>
        </layout>
       </widget>
      </widget>

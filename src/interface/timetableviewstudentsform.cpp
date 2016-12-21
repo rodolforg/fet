@@ -298,6 +298,41 @@ void TimetableViewStudentsForm::subgroupChanged(const QString &subgroupName)
 	Q_UNUSED(subgroupName);
 	
 	updateStudentsTimetableTable();
+
+	pendingActivitiesListWidget->clear();
+	if(!(students_schedule_ready && teachers_schedule_ready))
+		return;
+	const QString subgroupname = subgroupsListWidget->currentItem()->text();
+
+	StudentsSubgroup* sts=(StudentsSubgroup*)gt.rules.searchAugmentedStudentsSet(subgroupname);
+	if(sts==NULL){
+		QMessageBox::information(this, tr("FET warning"), tr("You have an old timetable view students dialog opened - please close it"));
+		return;
+	}
+	int studentSetIdx = -1;
+	for(int i=0; i<gt.rules.nInternalSubgroups; i++)
+		if(gt.rules.internalSubgroupsList[i]==sts) {
+			studentSetIdx = i;
+			break;
+		}
+	if (studentSetIdx < 0)
+		return;
+	QList<int> aiList;
+	foreach (int ai, sts->activitiesForSubgroup) {
+		aiList << ai;
+	}
+	for(int h=0; h<gt.rules.nHoursPerDay && h<studentsTimetableTable->rowCount(); h++){
+		for(int d=0; d<gt.rules.nDaysPerWeek && d<studentsTimetableTable->columnCount(); d++){
+			int ai=students_timetable_weekly[studentSetIdx][d][h]; //activity index
+			if(ai!=UNALLOCATED_ACTIVITY) {
+				aiList.removeOne(ai);
+			}
+		}
+	}
+	foreach (int ai, aiList) {
+		const Activity* act=&gt.rules.internalActivitiesList[ai];
+		pendingActivitiesListWidget->addItem(act->getDescription(gt.rules));
+	}
 }
 
 void TimetableViewStudentsForm::updateStudentsTimetableTable(){
