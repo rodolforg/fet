@@ -4835,3 +4835,52 @@ Liviu:
 From Malamojka (on forum):
 
 My subjects have their own ID for the sake of our system (I'm talking about few activities with same subject and different teachers). Is it possible to import subject names and IDs? We sometime have two subjects with same name but different ID. Timetable for subjects puts those two in same timetable and adding an ID could solve that problem (subjects' timetable could be composed on the basis of subjects IDs and not name).
+
+297---------------------------------------------------------
+From thanhnambkhn (on forum):
+
+From my point, I see that FET-cl is very compact (minify) compare to FET-desktop. Most of people care about FET-desktop only, I do not.
+I think you should consider design Fet in the future in this way:
+- FET-cl is core
+    + With many options, apis,
+    + Allow to extend or customize but keep work with the official
+    + With standard output (xml, json ...)
+- FET desktop (or any other App) is only front-end, calls to these Fet-cl 's api.
+By this way, FET will able to more useful, and able to use in many cases, many projects. They can use Fet GUI or not. (it is my case)
+
+298---------------------------------------------------------
+From canhathuongnhau and Volker Dirr (on forum):
+
+Volker:
+
+The dataset is impossible.
+It is very easy to prove that.
+Please check teacher T.
+That teacher is teaching 24 hours.
+Now check his activities. All activities should be in the morning. In the morning are only 5*5=25 free time slots. But you set also 2 breaks in
+the morning. So there are only 25-2=23 slots left.
+It is impossible to set 24 hours into 23 free slots.
+
+Could we add a test for this?
+
+Liviu:
+
+It is easy to add such a test for such a case, but there are many more other situations in which this test will not work. Like there are more "groups" of
+activities, each one with its preferred time slots.
+
+299---------------------------------------------------------
+From Volker Dirr:
+
+don't always break/disallow generating if there is a warning at the 
+beginning. that is pretty bad. sometimes FET gives warnings, even if the 
+dataset is solveable. (For example if you add an activity tag, but no 
+activity is using that activity tag). i like that FET is reporting this 
+potential bug. But the FET behavior is bad, since 
+it shouldn't disallow generating.
+
+also maybe rethink about printing all warnings into a single 
+string/editor. since by this i can copy and paste those warnings and fix 
+them all at one. at the moment i always need to read and fix it always 
+step by step (because i can't remember always all reported bugs, especially 
+if i check datasets from other users and or if i can't even read the 
+characters (Arabic, Russian, ...)
