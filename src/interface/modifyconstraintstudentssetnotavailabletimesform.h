@@ -33,15 +33,9 @@ public:
 
 	void updateStudentsComboBox(QWidget* parent);
 
-	void colorItem(QTableWidgetItem* item);
-
 public slots:	
 	void ok();
 	void cancel();
-
-	void itemClicked(QTableWidgetItem* item);
-	void horizontalHeaderClicked(int col);
-	void verticalHeaderClicked(int row);
 
 	void setAllAvailable();
 	void setAllNotAvailable();

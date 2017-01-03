@@ -17,22 +17,10 @@
 
 #include <QMessageBox>
 
-#include "tablewidgetupdatebug.h"
-
 #include "longtextmessagebox.h"
 
 #include "addconstraintactivitypreferredstartingtimesform.h"
 #include "timeconstraint.h"
-
-#include <QHeaderView>
-#include <QTableWidget>
-#include <QTableWidgetItem>
-
-#include <QBrush>
-#include <QColor>
-
-#define YES		(QString(" "))
-#define NO		(QString("X"))
 
 AddConstraintActivityPreferredStartingTimesForm::AddConstraintActivityPreferredStartingTimesForm(QWidget* parent): QDialog(parent)
 {
@@ -40,7 +28,6 @@ AddConstraintActivityPreferredStartingTimesForm::AddConstraintActivityPreferredS
 
 	addConstraintPushButton->setDefault(true);
 
-	connect(preferredTimesTable, SIGNAL(itemClicked(QTableWidgetItem*)), this, SLOT(itemClicked(QTableWidgetItem*)));
 	connect(addConstraintPushButton, SIGNAL(clicked()), this, SLOT(addConstraint()));
 	connect(closePushButton, SIGNAL(clicked()), this, SLOT(close()));
 	connect(teachersComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
@@ -105,39 +92,7 @@ AddConstraintActivityPreferredStartingTimesForm::AddConstraintActivityPreferredS
 	
 	updateActivitiesComboBox();
 
-	preferredTimesTable->setRowCount(gt.rules.nHoursPerDay);
-	preferredTimesTable->setColumnCount(gt.rules.nDaysPerWeek);
-
-	for(int j=0; j<gt.rules.nDaysPerWeek; j++){
-		QTableWidgetItem* item=new QTableWidgetItem(gt.rules.daysOfTheWeek[j]);
-		preferredTimesTable->setHorizontalHeaderItem(j, item);
-	}
-	for(int i=0; i<gt.rules.nHoursPerDay; i++){
-		QTableWidgetItem* item=new QTableWidgetItem(gt.rules.hoursOfTheDay[i]);
-		preferredTimesTable->setVerticalHeaderItem(i, item);
-	}
-
-	for(int i=0; i<gt.rules.nHoursPerDay; i++)
-		for(int j=0; j<gt.rules.nDaysPerWeek; j++){
-			QTableWidgetItem* item=new QTableWidgetItem(YES);
-			item->setTextAlignment(Qt::AlignCenter);
-			item->setFlags(Qt::ItemIsSelectable | Qt::ItemIsEnabled);
-			colorItem(item);
-			if(SHOW_TOOLTIPS_FOR_CONSTRAINTS_WITH_TABLES)
-				item->setToolTip(gt.rules.daysOfTheWeek[j]+QString("\n")+gt.rules.hoursOfTheDay[i]);
-			preferredTimesTable->setItem(i, j, item);
-		}
-		
-	preferredTimesTable->resizeRowsToContents();
-
-	connect(preferredTimesTable->horizontalHeader(), SIGNAL(sectionClicked(int)), this, SLOT(horizontalHeaderClicked(int)));
-	connect(preferredTimesTable->verticalHeader(), SIGNAL(sectionClicked(int)), this, SLOT(verticalHeaderClicked(int)));
-
-	preferredTimesTable->setSelectionMode(QAbstractItemView::NoSelection);
-
-	tableWidgetUpdateBug(preferredTimesTable);
-	
-	setStretchAvailabilityTableNicely(preferredTimesTable);
+	preferredTimesTable->setHeaders(gt.rules);
 }
 
 AddConstraintActivityPreferredStartingTimesForm::~AddConstraintActivityPreferredStartingTimesForm()
@@ -145,87 +100,14 @@ AddConstraintActivityPreferredStartingTimesForm::~AddConstraintActivityPreferred
 	saveFETDialogGeometry(this);
 }
 
-void AddConstraintActivityPreferredStartingTimesForm::colorItem(QTableWidgetItem* item)
-{
-	if(USE_GUI_COLORS){
-		if(item->text()==YES)
-			item->setBackground(QBrush(Qt::darkGreen));
-		else
-			item->setBackground(QBrush(Qt::darkRed));
-		item->setForeground(QBrush(Qt::lightGray));
-	}
-}
-
-void AddConstraintActivityPreferredStartingTimesForm::horizontalHeaderClicked(int col)
-{
-	if(col>=0 && col<gt.rules.nDaysPerWeek){
-		QString s=preferredTimesTable->item(0, col)->text();
-		if(s==YES)
-			s=NO;
-		else{
-			assert(s==NO);
-			s=YES;
-		}
-
-		for(int row=0; row<gt.rules.nHoursPerDay; row++){
-			/*QString s=notAllowedTimesTable->text(row, col);
-			if(s==YES)
-				s=NO;
-			else{
-				assert(s==NO);
-				s=YES;
-			}*/
-			preferredTimesTable->item(row, col)->setText(s);
-			colorItem(preferredTimesTable->item(row,col));
-		}
-		tableWidgetUpdateBug(preferredTimesTable);
-	}
-}
-
-void AddConstraintActivityPreferredStartingTimesForm::verticalHeaderClicked(int row)
-{
-	if(row>=0 && row<gt.rules.nHoursPerDay){
-		QString s=preferredTimesTable->item(row, 0)->text();
-		if(s==YES)
-			s=NO;
-		else{
-			assert(s==NO);
-			s=YES;
-		}
-	
-		for(int col=0; col<gt.rules.nDaysPerWeek; col++){
-			/*QString s=notAllowedTimesTable->text(row, col);
-			if(s==YES)
-				s=NO;
-			else{
-				assert(s==NO);
-				s=YES;
-			}*/
-			preferredTimesTable->item(row, col)->setText(s);
-			colorItem(preferredTimesTable->item(row,col));
-		}
-		tableWidgetUpdateBug(preferredTimesTable);
-	}
-}
-
 void AddConstraintActivityPreferredStartingTimesForm::setAllSlotsAllowed()
 {
-	for(int i=0; i<gt.rules.nHoursPerDay; i++)
-		for(int j=0; j<gt.rules.nDaysPerWeek; j++){
-			preferredTimesTable->item(i, j)->setText(YES);
-			colorItem(preferredTimesTable->item(i, j));
-		}
-	tableWidgetUpdateBug(preferredTimesTable);
+	preferredTimesTable->setAllUnmarked();
 }
 
 void AddConstraintActivityPreferredStartingTimesForm::setAllSlotsNotAllowed()
 {
-	for(int i=0; i<gt.rules.nHoursPerDay; i++)
-		for(int j=0; j<gt.rules.nDaysPerWeek; j++){
-			preferredTimesTable->item(i, j)->setText(NO);
-			colorItem(preferredTimesTable->item(i, j));
-		}
-	tableWidgetUpdateBug(preferredTimesTable);
+	preferredTimesTable->setAllMarked();
 }
 
 bool AddConstraintActivityPreferredStartingTimesForm::filterOk(Activity* act)
@@ -277,22 +159,6 @@ void AddConstraintActivityPreferredStartingTimesForm::filterChanged()
 	this->updateActivitiesComboBox();
 }
 
-void AddConstraintActivityPreferredStartingTimesForm::itemClicked(QTableWidgetItem* item)
-{
-	QString s=item->text();
-	
-	if(s==YES)
-		s=NO;
-	else{
-		assert(s==NO);
-		s=YES;
-	}
-	item->setText(s);
-	colorItem(item);
-
-	tableWidgetUpdateBug(preferredTimesTable);
-}
-
 void AddConstraintActivityPreferredStartingTimesForm::updateActivitiesComboBox(){
 	activitiesComboBox->clear();
 	activitiesList.clear();
@@ -341,7 +207,7 @@ void AddConstraintActivityPreferredStartingTimesForm::addConstraint()
 	int n=0;
 	for(int j=0; j<gt.rules.nDaysPerWeek; j++)
 		for(i=0; i<gt.rules.nHoursPerDay; i++)
-			if(preferredTimesTable->item(i, j)->text()==YES){
+			if(!preferredTimesTable->isMarked(i, j)){
 				/*if(n>=MAX_N_CONSTRAINT_ACTIVITY_PREFERRED_STARTING_TIMES){
 					QString s=tr("Not enough slots (too many \"Yes\" values).");
 					s+="\n";
@@ -395,6 +261,3 @@ void AddConstraintActivityPreferredStartingTimesForm::addConstraint()
 		delete ctr;
 	}
 }
-
-#undef YES
-#undef NO

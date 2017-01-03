@@ -35,8 +35,6 @@ public:
 
 	bool filterOk(Activity* a);
 
-	void colorItem(QTableWidgetItem* item);
-
 private:
 	//the id's of the activities listed in the activities combo
 	QList<int> activitiesList;
@@ -46,10 +44,6 @@ public slots:
 	
 	void ok();
 	void cancel();
-	
-	void itemClicked(QTableWidgetItem* item);
-	void horizontalHeaderClicked(int col);
-	void verticalHeaderClicked(int row);
 	
 	void setAllSlotsAllowed();
 	void setAllSlotsNotAllowed();

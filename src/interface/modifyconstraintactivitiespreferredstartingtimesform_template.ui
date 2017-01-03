@@ -85,7 +85,7 @@
     </layout>
    </item>
    <item row="2" column="0">
-    <widget class="QTableWidget" name="preferredTimesTable"/>
+    <widget class="SelectableTimeTable" name="preferredTimesTable"/>
    </item>
    <item row="3" column="0">
     <layout class="QHBoxLayout" name="weightBoxLayout">
@@ -156,6 +156,13 @@
   </layout>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>SelectableTimeTable</class>
+   <extends>QTableWidget</extends>
+   <header>selectabletimetable.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

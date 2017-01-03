@@ -435,7 +435,8 @@ SOURCES += \
 	\
 	interface/timetablestowriteondiskform.cpp \
 	\
-	interface/teachersubjectsqualificationsform.cpp
+	interface/teachersubjectsqualificationsform.cpp \
+    interface/selectabletimetable.cpp
 
 HEADERS += \
 	engine/timetableexport.h \
@@ -877,7 +878,8 @@ HEADERS += \
 	\
 	interface/timetablestowriteondiskform.h \
 	\
-	interface/teachersubjectsqualificationsform.h
+	interface/teachersubjectsqualificationsform.h \
+    interface/selectabletimetable.h
 
 FORMS += \
 	interface/fetmainform_template.ui \

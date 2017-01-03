@@ -31,23 +31,13 @@ public:
 
 	void updateTeachersComboBox();
 
-	void colorItem(QTableWidgetItem* item);
-
 public slots:	
 	void addCurrentConstraint();
-
-	void itemClicked(QTableWidgetItem* item);
-	void horizontalHeaderClicked(int col);
-	void verticalHeaderClicked(int row);
-	void verticalHeaderPressed(int row);
 
 	void help();
 
 	void setAllAvailable();
 	void setAllNotAvailable();
-
-private:
-	int pressedRow;
 };
 
 #endif
