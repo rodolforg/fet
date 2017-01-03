@@ -1913,3 +1913,6 @@ Versions 5.30.0 - 5.30.v
 - Version 5.30.7
 	- Minor bug fix: when importing a file with 0 activities, there appeared a useless progress dialog. Also in other places with 0 data there might have appeared
 	a useless progress dialog. Reported by Malamojka.
+- Version 5.30.8
+	- Updated to Qt 5.7.1.
+	- A few Brazilian Portuguese translation bugs corrected (reported by rodolforg, fixed by Alexandre R. Soares).
