@@ -1349,7 +1349,7 @@ Você pode escolher a distância mínima em dias entre cada par de atividades. P
         <location filename="../src/interface/addactivityform_template.ui" line="88"/>
         <source>Selected</source>
         <comment>It refers to a list of selected students (in fact, students sets, but translate selected as in &apos;selected students&apos;)</comment>
-        <translation>Alunos selecionados</translation>
+        <translation>Turmas selecionadas</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="14"/>
@@ -1636,13 +1636,13 @@ Você pode escolher a distância mínima em dias entre cada par de atividades. P
         <location filename="../src/interface/addactivityform_template.ui" line="43"/>
         <source>Selected</source>
         <comment>It refers to a list of selected teachers</comment>
-        <translation>Selecionada</translation>
+        <translation>Professores selecionados</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="171"/>
         <source>Selected</source>
         <comment>It refers to a list of selected activity tags</comment>
-        <translation>Marcadores de atividade selecionados</translation>
+        <translation>Marcadores selecionados</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="154"/>
@@ -2062,7 +2062,7 @@ Você pode escolher a distância mínima em dias entre cada par de atividades. P
         <location filename="../src/interface/addconstraintactivitiesnotoverlappingform_template.ui" line="137"/>
         <source>Selected</source>
         <comment>It refers to a list of selected activities</comment>
-        <translation>Selecionados</translation>
+        <translation>Atividades selecionadas</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesnotoverlappingform_template.ui" line="150"/>
@@ -2771,7 +2771,7 @@ Se você precisa de peso inferior a 100%, então você pode usar esta restriçã
         <location filename="../src/interface/addconstraintactivitiessamestartingdayform_template.ui" line="121"/>
         <source>Selected</source>
         <comment>It refers to a list of selected activities</comment>
-        <translation>Selecionados</translation>
+        <translation>Atividades selecionadas</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartingdayform_template.ui" line="134"/>
@@ -2915,7 +2915,7 @@ Se você precisa de peso inferior a 100%, então você pode usar esta restriçã
         <location filename="../src/interface/addconstraintactivitiessamestartinghourform_template.ui" line="121"/>
         <source>Selected</source>
         <comment>It refers to a list of selected activities</comment>
-        <translation>Selecionados</translation>
+        <translation>Atividades selecionadas</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartinghourform_template.ui" line="134"/>
@@ -3023,7 +3023,7 @@ Se você precisa de peso inferior a 100%, então você pode usar esta restriçã
         <location filename="../src/interface/addconstraintactivitiessamestartingtimeform_template.ui" line="121"/>
         <source>Selected</source>
         <comment>It refers to a list of selected activities</comment>
-        <translation>Selecionados</translation>
+        <translation>Atividades selecionadas</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartingtimeform_template.ui" line="134"/>
@@ -4162,7 +4162,7 @@ Se você precisa de peso inferior a 100%, então você pode usar esta restriçã
         <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform_template.ui" line="121"/>
         <source>Selected</source>
         <comment>It refers to a list of selected activities</comment>
-        <translation>Selecionados</translation>
+        <translation>Atividades selecionadas</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform_template.ui" line="134"/>
@@ -4291,7 +4291,7 @@ Se você precisa de peso inferior a 100%, então você pode usar esta restriçã
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform_template.ui" line="121"/>
         <source>Selected</source>
         <comment>It refers to a list of selected activities</comment>
-        <translation>Selecionados</translation>
+        <translation>Atividades selecionadas</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform_template.ui" line="153"/>
@@ -4428,7 +4428,7 @@ mesmo dia, forçar consecutivas</translation>
         <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform_template.ui" line="121"/>
         <source>Selected</source>
         <comment>It refers to a list of selected activities</comment>
-        <translation>Selecionados</translation>
+        <translation>Atividades selecionadas</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform_template.ui" line="134"/>
@@ -16298,7 +16298,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="2571"/>
         <source>mG:%1</source>
         <comment>Minimum number of gaps</comment>
-        <translation>mLac:%1</translation>
+        <translation>MínLac:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="2577"/>
@@ -17762,7 +17762,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="17030"/>
         <source>MG:%1</source>
         <comment>Max gaps (per day)</comment>
-        <translation>Máx. lacunas diárias</translation>
+        <translation>MáxLac:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17039"/>
@@ -17919,7 +17919,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="5805"/>
         <source>MG:%1</source>
         <comment>Max gaps (per week)</comment>
-        <translation>Máx. lacunas semanais</translation>
+        <translation>MáxLac:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5814"/>
@@ -20234,7 +20234,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17292"/>
         <source>Students set max gaps per day</source>
-        <translation>Máx lacunas diárias para turma</translation>
+        <translation>Máx. lacunas diárias para turma</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17293"/>
@@ -37384,7 +37384,7 @@ Por favor, primeiro encerre a simulação</translation>
         <location filename="../src/interface/modifyactivityform_template.ui" line="71"/>
         <source>Students</source>
         <comment>Refers to sets of students, but I want to keep text short</comment>
-        <translation>Alunos</translation>
+        <translation>Turma</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="201"/>
@@ -37416,7 +37416,7 @@ Por favor, primeiro encerre a simulação</translation>
         <location filename="../src/interface/modifyactivityform_template.ui" line="168"/>
         <source>Selected</source>
         <comment>It refers to a list of selected activity tags</comment>
-        <translation>Marcadores de atividade selecionados</translation>
+        <translation>Marcadores selecionados</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="151"/>
@@ -37427,7 +37427,7 @@ Por favor, primeiro encerre a simulação</translation>
         <location filename="../src/interface/modifyactivityform_template.ui" line="43"/>
         <source>Selected</source>
         <comment>It refers to a list of selected teachers</comment>
-        <translation>Selecionados</translation>
+        <translation>Professores selecionados</translation>
     </message>
 </context>
 <context>
@@ -37742,7 +37742,7 @@ Por favor, primeiro encerre a simulação</translation>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="137"/>
         <source>Selected</source>
         <comment>It refers to a list of selected activities</comment>
-        <translation>Selecionados</translation>
+        <translation>Atividades selecionadas</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="150"/>
@@ -38415,7 +38415,7 @@ Se você precisa de peso inferior a 100%, então você pode usar esta restriçã
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform_template.ui" line="121"/>
         <source>Selected</source>
         <comment>It refers to a list of selected activities</comment>
-        <translation>Selecionados</translation>
+        <translation>Atividades selecionadas</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform_template.ui" line="134"/>
@@ -39518,7 +39518,7 @@ Se você precisa de peso inferior a 100%, então você pode usar esta restriçã
         <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform_template.ui" line="121"/>
         <source>Selected</source>
         <comment>It refers to a list of selected activities</comment>
-        <translation>Selecionados</translation>
+        <translation>Atividades selecionadas</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform_template.ui" line="156"/>
@@ -39641,7 +39641,7 @@ Se você precisa de peso inferior a 100%, então você pode usar esta restriçã
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform_template.ui" line="121"/>
         <source>Selected</source>
         <comment>It refers to a list of selected activities</comment>
-        <translation>Selecionados</translation>
+        <translation>Atividades selecionadas</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform_template.ui" line="153"/>
@@ -39766,7 +39766,7 @@ mesmo dia, forçar consecutivas</translation>
         <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform_template.ui" line="121"/>
         <source>Selected</source>
         <comment>It refers to a list of selected activities</comment>
-        <translation>Selecionados</translation>
+        <translation>Atividades selecionadas</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform_template.ui" line="134"/>
@@ -40884,7 +40884,7 @@ Nota: turmas não disponíveis e intervalos não são contados como lacunas (int
         <location filename="../src/interface/modifyconstraintstudentssethomeroomsform_template.ui" line="64"/>
         <source>Selected</source>
         <comment>It refers to a list of selected rooms</comment>
-        <translation>Selecionados</translation>
+        <translation>Salas selecionadas</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssethomeroomsform_template.ui" line="77"/>
@@ -41954,7 +41954,7 @@ Nota: turmas não disponíveis e intervalos não são contados como lacunas.</tr
         <location filename="../src/interface/modifyconstraintsubjectactivitytagpreferredroomsform_template.ui" line="77"/>
         <source>Selected</source>
         <comment>It refers to a list of selected rooms</comment>
-        <translation>Selecionados</translation>
+        <translation>Salas selecionadas</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubjectactivitytagpreferredroomsform_template.ui" line="90"/>
@@ -44560,7 +44560,7 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
         <location filename="../src/interface/modifysubactivityform_template.ui" line="174"/>
         <source>Selected</source>
         <comment>It refers to a list of selected activity tags</comment>
-        <translation>Selecionados</translation>
+        <translation>Marcadores selecionados</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="236"/>
