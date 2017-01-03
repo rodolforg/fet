@@ -29,14 +29,8 @@ public:
 	AddConstraintBreakTimesForm(QWidget* parent);
 	~AddConstraintBreakTimesForm();
 
-	void colorItem(QTableWidgetItem* item);
-
 public slots:
 	void addCurrentConstraint();
-
-	void itemClicked(QTableWidgetItem* item);
-	void horizontalHeaderClicked(int col);
-	void verticalHeaderClicked(int row);
 	
 	void setAllAllowed();
 	void setAllBreak();

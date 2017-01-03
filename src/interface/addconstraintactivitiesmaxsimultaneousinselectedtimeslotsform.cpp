@@ -17,26 +17,14 @@
 
 #include <QMessageBox>
 
-#include "tablewidgetupdatebug.h"
-
 #include "longtextmessagebox.h"
 
 #include "addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.h"
 #include "timeconstraint.h"
 
-#include <QHeaderView>
-#include <QTableWidget>
-#include <QTableWidgetItem>
-
 #include <QListWidget>
 #include <QAbstractItemView>
 #include <QScrollBar>
-
-#include <QBrush>
-#include <QColor>
-
-#define YES	(QString("X"))
-#define NO	(QString(" "))
 
 AddConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::AddConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm(QWidget* parent): QDialog(parent)
 {
@@ -49,7 +37,6 @@ AddConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::AddConstraintActi
 	
 	connect(addConstraintPushButton, SIGNAL(clicked()), this, SLOT(addCurrentConstraint()));
 	connect(closePushButton, SIGNAL(clicked()), this, SLOT(close()));
-	connect(selectedTimesTable, SIGNAL(itemClicked(QTableWidgetItem*)), this, SLOT(itemClicked(QTableWidgetItem*)));
 	connect(setAllUnselectedPushButton, SIGNAL(clicked()), this, SLOT(setAllUnselected()));
 	connect(setAllSelectedPushButton, SIGNAL(clicked()), this, SLOT(setAllSelected()));
 	connect(allActivitiesListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(addActivity()));
@@ -70,40 +57,7 @@ AddConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::AddConstraintActi
 	maxSimultaneousSpinBox->setMaximum(MAX_ACTIVITIES);
 	maxSimultaneousSpinBox->setValue(0);
 
-	selectedTimesTable->setRowCount(gt.rules.nHoursPerDay);
-	selectedTimesTable->setColumnCount(gt.rules.nDaysPerWeek);
-
-	for(int j=0; j<gt.rules.nDaysPerWeek; j++){
-		QTableWidgetItem* item=new QTableWidgetItem(gt.rules.daysOfTheWeek[j]);
-		selectedTimesTable->setHorizontalHeaderItem(j, item);
-	}
-	for(int i=0; i<gt.rules.nHoursPerDay; i++){
-		QTableWidgetItem* item=new QTableWidgetItem(gt.rules.hoursOfTheDay[i]);
-		selectedTimesTable->setVerticalHeaderItem(i, item);
-	}
-
-	for(int i=0; i<gt.rules.nHoursPerDay; i++)
-		for(int j=0; j<gt.rules.nDaysPerWeek; j++){
-			QTableWidgetItem* item=new QTableWidgetItem(NO);
-			item->setTextAlignment(Qt::AlignCenter);
-			item->setFlags(Qt::ItemIsSelectable | Qt::ItemIsEnabled);
-			colorItem(item);
-			if(SHOW_TOOLTIPS_FOR_CONSTRAINTS_WITH_TABLES)
-				item->setToolTip(gt.rules.daysOfTheWeek[j]+QString("\n")+gt.rules.hoursOfTheDay[i]);
-			selectedTimesTable->setItem(i, j, item);
-		}
-		
-	selectedTimesTable->resizeRowsToContents();
-	//selectedTimesTable->resizeColumnsToContents();
-
-	connect(selectedTimesTable->horizontalHeader(), SIGNAL(sectionClicked(int)), this, SLOT(horizontalHeaderClicked(int)));
-	connect(selectedTimesTable->verticalHeader(), SIGNAL(sectionClicked(int)), this, SLOT(verticalHeaderClicked(int)));
-
-	selectedTimesTable->setSelectionMode(QAbstractItemView::NoSelection);
-	
-	tableWidgetUpdateBug(selectedTimesTable);
-	
-	setStretchAvailabilityTableNicely(selectedTimesTable);
+	selectedTimesTable->setHeaders(gt.rules);
 	
 	//activities
 	QSize tmp1=teachersComboBox->minimumSizeHint();
@@ -162,88 +116,14 @@ AddConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::~AddConstraintAct
 	saveFETDialogGeometry(this);
 }
 
-void AddConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::colorItem(QTableWidgetItem* item)
-{
-	if(USE_GUI_COLORS){
-		if(item->text()==NO)
-			item->setBackground(QBrush(Qt::darkGreen));
-		else
-			item->setBackground(QBrush(Qt::darkRed));
-		item->setForeground(QBrush(Qt::lightGray));
-	}
-}
-
-void AddConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::horizontalHeaderClicked(int col)
-{
-	if(col>=0 && col<gt.rules.nDaysPerWeek){
-		QString s=selectedTimesTable->item(0, col)->text();
-		if(s==YES)
-			s=NO;
-		else{
-			assert(s==NO);
-			s=YES;
-		}
-
-		for(int row=0; row<gt.rules.nHoursPerDay; row++){
-			selectedTimesTable->item(row, col)->setText(s);
-			colorItem(selectedTimesTable->item(row,col));
-		}
-		tableWidgetUpdateBug(selectedTimesTable);
-	}
-}
-
-void AddConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::verticalHeaderClicked(int row)
-{
-	if(row>=0 && row<gt.rules.nHoursPerDay){
-		QString s=selectedTimesTable->item(row, 0)->text();
-		if(s==YES)
-			s=NO;
-		else{
-			assert(s==NO);
-			s=YES;
-		}
-	
-		for(int col=0; col<gt.rules.nDaysPerWeek; col++){
-			selectedTimesTable->item(row, col)->setText(s);
-			colorItem(selectedTimesTable->item(row,col));
-		}
-		tableWidgetUpdateBug(selectedTimesTable);
-	}
-}
-
 void AddConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::setAllUnselected()
 {
-	for(int i=0; i<gt.rules.nHoursPerDay; i++)
-		for(int j=0; j<gt.rules.nDaysPerWeek; j++){
-			selectedTimesTable->item(i, j)->setText(NO);
-			colorItem(selectedTimesTable->item(i,j));
-		}
-	tableWidgetUpdateBug(selectedTimesTable);
+	selectedTimesTable->setAllUnmarked();
 }
 
 void AddConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::setAllSelected()
 {
-	for(int i=0; i<gt.rules.nHoursPerDay; i++)
-		for(int j=0; j<gt.rules.nDaysPerWeek; j++){
-			selectedTimesTable->item(i, j)->setText(YES);
-			colorItem(selectedTimesTable->item(i,j));
-		}
-	tableWidgetUpdateBug(selectedTimesTable);
-}
-
-void AddConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::itemClicked(QTableWidgetItem* item)
-{
-	QString s=item->text();
-	if(s==YES)
-		s=NO;
-	else{
-		assert(s==NO);
-		s=YES;
-	}
-	item->setText(s);
-	colorItem(item);
-	
-	tableWidgetUpdateBug(selectedTimesTable);
+	selectedTimesTable->setAllMarked();
 }
 
 void AddConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::addCurrentConstraint()
@@ -263,7 +143,7 @@ void AddConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::addCurrentCo
 	QList<int> hours;
 	for(int j=0; j<gt.rules.nDaysPerWeek; j++)
 		for(int i=0; i<gt.rules.nHoursPerDay; i++)
-			if(selectedTimesTable->item(i, j)->text()==YES){
+			if(selectedTimesTable->isMarked(i, j)){
 				days.append(j);
 				hours.append(i);
 			}

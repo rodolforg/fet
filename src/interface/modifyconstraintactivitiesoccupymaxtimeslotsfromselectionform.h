@@ -32,8 +32,6 @@ public:
 	ModifyConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm(QWidget* parent, ConstraintActivitiesOccupyMaxTimeSlotsFromSelection* ctr);
 	~ModifyConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm();
 
-	void colorItem(QTableWidgetItem* item);
-	
 	void updateActivitiesListWidget();
 	
 	bool filterOk(Activity* act);
@@ -49,10 +47,6 @@ public slots:
 
 	void ok();
 	void cancel();
-
-	void itemClicked(QTableWidgetItem* item);
-	void horizontalHeaderClicked(int col);
-	void verticalHeaderClicked(int row);
 	
 	void setAllUnselected();
 	void setAllSelected();

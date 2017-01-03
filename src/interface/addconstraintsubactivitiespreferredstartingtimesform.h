@@ -35,14 +35,8 @@ public:
 	void updateSubjectsComboBox();
 	void updateActivityTagsComboBox();
 
-	void colorItem(QTableWidgetItem* item);
-
 public slots:
 	void addConstraint();
-	
-	void itemClicked(QTableWidgetItem* item);
-	void horizontalHeaderClicked(int col);
-	void verticalHeaderClicked(int row);
 	
 	void setAllSlotsAllowed();
 	void setAllSlotsNotAllowed();

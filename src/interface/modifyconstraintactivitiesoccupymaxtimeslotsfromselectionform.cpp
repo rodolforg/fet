@@ -17,26 +17,12 @@
 
 #include <QMessageBox>
 
-#include "tablewidgetupdatebug.h"
-
-#include "longtextmessagebox.h"
-
 #include "modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform.h"
 #include "timeconstraint.h"
-
-#include <QHeaderView>
-#include <QTableWidget>
-#include <QTableWidgetItem>
 
 #include <QListWidget>
 #include <QAbstractItemView>
 #include <QScrollBar>
-
-#include <QBrush>
-#include <QColor>
-
-#define YES	(QString("X"))
-#define NO	(QString(" "))
 
 ModifyConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm::ModifyConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm(QWidget* parent, ConstraintActivitiesOccupyMaxTimeSlotsFromSelection* ctr): QDialog(parent)
 {
@@ -49,7 +35,6 @@ ModifyConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm::ModifyConstraintA
 	
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
 	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
-	connect(selectedTimesTable, SIGNAL(itemClicked(QTableWidgetItem*)), this, SLOT(itemClicked(QTableWidgetItem*)));
 	connect(setAllUnselectedPushButton, SIGNAL(clicked()), this, SLOT(setAllUnselected()));
 	connect(setAllSelectedPushButton, SIGNAL(clicked()), this, SLOT(setAllSelected()));
 	connect(allActivitiesListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(addActivity()));
@@ -74,25 +59,8 @@ ModifyConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm::ModifyConstraintA
 	maxOccupiedSpinBox->setMaximum(gt.rules.nDaysPerWeek*gt.rules.nHoursPerDay);
 	maxOccupiedSpinBox->setValue(ctr->maxOccupiedTimeSlots);
 
-	selectedTimesTable->setRowCount(gt.rules.nHoursPerDay);
-	selectedTimesTable->setColumnCount(gt.rules.nDaysPerWeek);
+	selectedTimesTable->setHeaders(gt.rules);
 
-	for(int j=0; j<gt.rules.nDaysPerWeek; j++){
-		QTableWidgetItem* item=new QTableWidgetItem(gt.rules.daysOfTheWeek[j]);
-		selectedTimesTable->setHorizontalHeaderItem(j, item);
-	}
-	for(int i=0; i<gt.rules.nHoursPerDay; i++){
-		QTableWidgetItem* item=new QTableWidgetItem(gt.rules.hoursOfTheDay[i]);
-		selectedTimesTable->setVerticalHeaderItem(i, item);
-	}
-
-	//bool currentMatrix[MAX_HOURS_PER_DAY][MAX_DAYS_PER_WEEK];
-	Matrix2D<bool> currentMatrix;
-	currentMatrix.resize(gt.rules.nHoursPerDay, gt.rules.nDaysPerWeek);
-
-	for(int i=0; i<gt.rules.nHoursPerDay; i++)
-		for(int j=0; j<gt.rules.nDaysPerWeek; j++)
-			currentMatrix[i][j]=false;
 	assert(ctr->selectedDays.count()==ctr->selectedHours.count());
 	for(int k=0; k<ctr->selectedDays.count(); k++){
 		if(ctr->selectedHours.at(k)==-1 || ctr->selectedDays.at(k)==-1)
@@ -100,37 +68,9 @@ ModifyConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm::ModifyConstraintA
 		int i=ctr->selectedHours.at(k);
 		int j=ctr->selectedDays.at(k);
 		if(i>=0 && i<gt.rules.nHoursPerDay && j>=0 && j<gt.rules.nDaysPerWeek)
-			currentMatrix[i][j]=true;
+			selectedTimesTable->setMarked(i, j, true);
 	}
 
-	for(int i=0; i<gt.rules.nHoursPerDay; i++)
-		for(int j=0; j<gt.rules.nDaysPerWeek; j++){
-			QTableWidgetItem* item = new QTableWidgetItem();
-			item->setTextAlignment(Qt::AlignCenter);
-			item->setFlags(Qt::ItemIsSelectable|Qt::ItemIsEnabled);
-			if(SHOW_TOOLTIPS_FOR_CONSTRAINTS_WITH_TABLES)
-				item->setToolTip(gt.rules.daysOfTheWeek[j]+QString("\n")+gt.rules.hoursOfTheDay[i]);
-			selectedTimesTable->setItem(i, j, item);
-
-			if(!currentMatrix[i][j])
-				item->setText(NO);
-			else
-				item->setText(YES);
-				
-			colorItem(item);
-		}
-
-	selectedTimesTable->resizeRowsToContents();
-
-	connect(selectedTimesTable->horizontalHeader(), SIGNAL(sectionClicked(int)), this, SLOT(horizontalHeaderClicked(int)));
-	connect(selectedTimesTable->verticalHeader(), SIGNAL(sectionClicked(int)), this, SLOT(verticalHeaderClicked(int)));
-
-	selectedTimesTable->setSelectionMode(QAbstractItemView::NoSelection);
-	
-	tableWidgetUpdateBug(selectedTimesTable);
-	
-	setStretchAvailabilityTableNicely(selectedTimesTable);
-	
 	//activities
 	QSize tmp1=teachersComboBox->minimumSizeHint();
 	Q_UNUSED(tmp1);
@@ -200,88 +140,14 @@ ModifyConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm::~ModifyConstraint
 	saveFETDialogGeometry(this);
 }
 
-void ModifyConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm::colorItem(QTableWidgetItem* item)
-{
-	if(USE_GUI_COLORS){
-		if(item->text()==NO)
-			item->setBackground(QBrush(Qt::darkGreen));
-		else
-			item->setBackground(QBrush(Qt::darkRed));
-		item->setForeground(QBrush(Qt::lightGray));
-	}
-}
-
-void ModifyConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm::horizontalHeaderClicked(int col)
-{
-	if(col>=0 && col<gt.rules.nDaysPerWeek){
-		QString s=selectedTimesTable->item(0, col)->text();
-		if(s==YES)
-			s=NO;
-		else{
-			assert(s==NO);
-			s=YES;
-		}
-
-		for(int row=0; row<gt.rules.nHoursPerDay; row++){
-			selectedTimesTable->item(row, col)->setText(s);
-			colorItem(selectedTimesTable->item(row,col));
-		}
-		tableWidgetUpdateBug(selectedTimesTable);
-	}
-}
-
-void ModifyConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm::verticalHeaderClicked(int row)
-{
-	if(row>=0 && row<gt.rules.nHoursPerDay){
-		QString s=selectedTimesTable->item(row, 0)->text();
-		if(s==YES)
-			s=NO;
-		else{
-			assert(s==NO);
-			s=YES;
-		}
-	
-		for(int col=0; col<gt.rules.nDaysPerWeek; col++){
-			selectedTimesTable->item(row, col)->setText(s);
-			colorItem(selectedTimesTable->item(row,col));
-		}
-		tableWidgetUpdateBug(selectedTimesTable);
-	}
-}
-
 void ModifyConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm::setAllUnselected()
 {
-	for(int i=0; i<gt.rules.nHoursPerDay; i++)
-		for(int j=0; j<gt.rules.nDaysPerWeek; j++){
-			selectedTimesTable->item(i, j)->setText(NO);
-			colorItem(selectedTimesTable->item(i,j));
-		}
-	tableWidgetUpdateBug(selectedTimesTable);
+	selectedTimesTable->setAllUnmarked();
 }
 
 void ModifyConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm::setAllSelected()
 {
-	for(int i=0; i<gt.rules.nHoursPerDay; i++)
-		for(int j=0; j<gt.rules.nDaysPerWeek; j++){
-			selectedTimesTable->item(i, j)->setText(YES);
-			colorItem(selectedTimesTable->item(i,j));
-		}
-	tableWidgetUpdateBug(selectedTimesTable);
-}
-
-void ModifyConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm::itemClicked(QTableWidgetItem* item)
-{
-	QString s=item->text();
-	if(s==YES)
-		s=NO;
-	else{
-		assert(s==NO);
-		s=YES;
-	}
-	item->setText(s);
-	colorItem(item);
-	
-	tableWidgetUpdateBug(selectedTimesTable);
+	selectedTimesTable->setAllMarked();
 }
 
 void ModifyConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm::ok()
@@ -301,7 +167,7 @@ void ModifyConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm::ok()
 	QList<int> hours;
 	for(int j=0; j<gt.rules.nDaysPerWeek; j++)
 		for(int i=0; i<gt.rules.nHoursPerDay; i++)
-			if(selectedTimesTable->item(i, j)->text()==YES){
+			if(selectedTimesTable->isMarked(i, j)){
 				days.append(j);
 				hours.append(i);
 			}

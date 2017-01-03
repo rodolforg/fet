@@ -32,8 +32,6 @@ public:
 	AddConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm(QWidget* parent);
 	~AddConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm();
 
-	void colorItem(QTableWidgetItem* item);
-	
 	void updateActivitiesListWidget();
 	
 	bool filterOk(Activity* act);
@@ -48,10 +46,6 @@ public slots:
 	void clear();
 
 	void addCurrentConstraint();
-
-	void itemClicked(QTableWidgetItem* item);
-	void horizontalHeaderClicked(int col);
-	void verticalHeaderClicked(int row);
 	
 	void setAllUnselected();
 	void setAllSelected();
