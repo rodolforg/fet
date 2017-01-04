@@ -63,9 +63,8 @@ const QString settingsName=QString("TimetableGenerateUnsuccessfulForm");
 void GenerateThread::run()
 {
 	const int INF=2000000000;
-	bool impossible, timeExceeded;
 
-	gen.generate(INF, impossible, timeExceeded, true); //true means threaded
+	gen.generate(INF, true); //true means threaded
 }
 
 TimetableGenerateForm::TimetableGenerateForm(QWidget* parent): QDialog(parent)

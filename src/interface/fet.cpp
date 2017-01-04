@@ -1207,8 +1207,6 @@ int main(int argc, char **argv)
 			logFile.close();
 			return 1;
 		}
-	
-		bool impossible, timeExceeded;
 		
 		cout<<"Starting timetable generation..."<<endl;
 		out<<"Starting timetable generation..."<<endl;
@@ -1219,11 +1217,11 @@ int main(int argc, char **argv)
 				
 		TimetableExport::writeRandomSeedCommandLine(NULL, outputDirectory, true); //true represents 'before' state
 
-		gen.generate(secondsLimit, impossible, timeExceeded, false, &maxPlacedActivityStream); //false means no thread
+		Generate::Status status = gen.generate(secondsLimit, false, &maxPlacedActivityStream); //false means no thread
 		
 		maxPlacedActivityFile.close();
 	
-		if(impossible){
+		if(status == Generate::IMPOSSIBLE){
 			cout<<"Impossible"<<endl;
 			out<<"Impossible"<<endl;
 			
@@ -1317,12 +1315,12 @@ int main(int argc, char **argv)
 		//2012-01-24 - suggestion and code by Ian Holden (ian@ianholden.com), to write best and current timetable on time exceeded
 		//previously, FET saved best and current timetable only on receiving SIGTERM
 		//by Ian Holden (begin)
-		else if(timeExceeded || gen.abortOptimization){
-			if(timeExceeded){
+		else if(status == Generate::TIMEOUT || status == Generate::ABORTED){
+			if(status == Generate::TIMEOUT){
 				cout<<"Time exceeded"<<endl;
 				out<<"Time exceeded"<<endl;
 			}
-			else if(gen.abortOptimization){
+			else if(status == Generate::ABORTED){
 				cout<<"Simulation stopped"<<endl;
 				out<<"Simulation stopped"<<endl;
 			}

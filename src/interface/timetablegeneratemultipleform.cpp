@@ -75,9 +75,6 @@ void GenerateMultipleThread::run()
 
 	for(int i=0; i<nTimetables; i++){
 		time(&start_time);
-
-		bool impossible;
-		bool timeExceeded;
 		
 		for(int qq=0; qq<gt.rules.nInternalActivities; qq++)
 			permutation[qq]=savedPermutation[qq];
@@ -85,23 +82,24 @@ void GenerateMultipleThread::run()
 		emit(timetableStarted(i+1));
 		semaphoreTimetableStarted.acquire();
 
-		genMulti.generate(timeLimit, impossible, timeExceeded, true); //true means threaded
+		Generate::Status status = genMulti.generate(timeLimit, true); //true means threaded
 
 		QString s;
 		
-		bool ok;
+		bool ok = status == Generate::SUCCESS;
 
 		myMutex.lock();
-		if(genMulti.abortOptimization){
+		switch (status) {
+		case Generate::ABORTED:{
 			myMutex.unlock();
 			return;
 		}
-		else if(impossible){
+		case Generate::IMPOSSIBLE:{
 			s=tr("Timetable impossible to generate");
 			s+=QString(".");
-			ok=false;
+			break;
 		}
-		else if(timeExceeded){
+		case Generate::TIMEOUT:{
 			s=tr("Time exceeded for current timetable");
 
 			////////2011-05-26
@@ -136,12 +134,9 @@ void GenerateMultipleThread::run()
 			///////
 
 			s+=QString(".");
-
-			ok=false;
+			break;
 		}
-		else{
-			ok=true;
-
+		case Generate::SUCCESS:{
 			time_t finish_time;
 			time(&finish_time);
 			int seconds=int(finish_time-start_time);
@@ -159,6 +154,7 @@ void GenerateMultipleThread::run()
 			 .arg(hours)
 			 .arg(minutes)
 			 .arg(seconds);
+		}
 		}
 		myMutex.unlock();
 		

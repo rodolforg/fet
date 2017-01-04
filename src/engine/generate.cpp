@@ -2396,7 +2396,7 @@ inline bool Generate::getRoom(int level, const Activity* act, int ai, int d, int
 	}
 }
 
-void Generate::generate(int maxSeconds, bool& impossible, bool& timeExceeded, bool threaded, QTextStream* maxPlacedActivityStream)
+Generate::Status Generate::generate(int maxSeconds, bool threaded, QTextStream* maxPlacedActivityStream)
 {
 	this->isThreaded=threaded;
 
@@ -2451,9 +2451,6 @@ if(threaded){
 	c.makeUnallocated(gt.rules);
 
 	nDifficultActivities=0;
-
-	impossible=false;
-	timeExceeded=false;
 
 	maxncallsrandomswap=-1;
 
@@ -2522,7 +2519,7 @@ if(threaded){
 if(threaded){
 			myMutex.unlock();
 }
-			return;
+			return ABORTED;
 		}
 		time_t crt_time;
 		time(&crt_time);
@@ -2533,9 +2530,7 @@ if(threaded){
 			myMutex.unlock();
 }
 			
-			timeExceeded=true;
-
-			return;
+			return TIMEOUT;
 		}
 
 		for(int i=0; i<=added_act; i++)
@@ -2800,11 +2795,9 @@ if(threaded){
 				nDifficultActivities=1;
 				difficultActivities[0]=permutation[added_act];
 				
-				impossible=true;
-
 				emit(impossibleToSolve());
 				
-				return;
+				return IMPOSSIBLE;
 			}
 		
 			//update difficult activities (activities which are placed correctly so far, together with added_act)
@@ -3018,6 +3011,7 @@ if(threaded){
 	emit(simulationFinished());
 
 	finishedSemaphore.release();
+	return SUCCESS;
 }
 
 void Generate::moveActivity(int ai, int fromslot, int toslot, int fromroom, int toroom)
