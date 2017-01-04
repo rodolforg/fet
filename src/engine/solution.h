@@ -96,13 +96,13 @@ public:
 	*/
 	double fitness(const Rules& r, QString* conflictsString=NULL);
 
-	void getTeachersTimetable(const Rules& r, Matrix3D<int>& a, Matrix3D<QList<int> >& b);
+	void getTeachersTimetable(const Rules& r, Matrix3D<int>& a, Matrix3D<QList<int> >& b) const;
 	//return value is the number of conflicts, which must be 0
 
-	void getSubgroupsTimetable(const Rules& r, Matrix3D<int>& a);
+	void getSubgroupsTimetable(const Rules& r, Matrix3D<int>& a) const;
 	//return value is the number of conflicts, which must be 0
 
-	void getRoomsTimetable(const Rules& r, Matrix3D<int>& a);
+	void getRoomsTimetable(const Rules& r, Matrix3D<int>& a) const;
 	//return value is the number of conflicts, which must be 0
 
 	int getSubgroupsMatrix(const Rules &r, Matrix3D<int>& a);

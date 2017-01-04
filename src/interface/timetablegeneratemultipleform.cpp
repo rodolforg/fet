@@ -50,14 +50,10 @@ static QSemaphore semaphoreTimetableStarted;
 //Represents the current status of the simulation - running or stopped.
 extern bool simulation_running_multi;
 
-extern QSemaphore semaphorePlacedActivity;
-
-Generate genMulti;
+Generate genMulti(gt);
 
 static int nTimetables;
 static int timeLimit;
-
-extern int maxActivitiesPlaced;
 
 extern Solution best_solution;
 
@@ -74,12 +70,12 @@ int savedPermutation[MAX_ACTIVITIES];
 void GenerateMultipleThread::run()
 {
 	genMulti.abortOptimization=false;
-	
+
 	time(&initial_time);
 
 	for(int i=0; i<nTimetables; i++){
 		time(&start_time);
-	
+
 		bool impossible;
 		bool timeExceeded;
 		
@@ -109,7 +105,7 @@ void GenerateMultipleThread::run()
 			s=tr("Time exceeded for current timetable");
 
 			////////2011-05-26
-			int mact=maxActivitiesPlaced;
+			int mact=genMulti.getMaxActivitiesPlaced();
 			int mseconds=genMulti.timeToHighestStage;
 
 			bool zero=false;
@@ -145,7 +141,7 @@ void GenerateMultipleThread::run()
 		}
 		else{
 			ok=true;
-			
+
 			time_t finish_time;
 			time(&finish_time);
 			int seconds=int(finish_time-start_time);
@@ -477,7 +473,7 @@ void TimetableGenerateMultipleForm::activityPlaced(int na)
 	seconds%=60;
 			
 	////////2011-05-26
-	int mact=maxActivitiesPlaced;
+	int mact=genMulti.getMaxActivitiesPlaced();
 	int mseconds=genMulti.timeToHighestStage;
 
 	QString s;
@@ -516,7 +512,7 @@ void TimetableGenerateMultipleForm::activityPlaced(int na)
 	 .arg(minutes)
 	 .arg(seconds)+s);
 	
-	semaphorePlacedActivity.release();
+	genMulti.semaphorePlacedActivity.release();
 }
 
 void TimetableGenerateMultipleForm::closePressed()

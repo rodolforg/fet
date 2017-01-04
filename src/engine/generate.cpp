@@ -32,7 +32,6 @@ using namespace std;
 #include "randomknuth.h"
 
 #include "timetable_defs.h"
-#include "timetable.h"
 #include "generate.h"
 #include "rules.h"
 
@@ -42,164 +41,13 @@ using namespace std;
 
 #include <QMutex>
 
-#include <QDateTime>
-
 #include <QList>
 #include <QSet>
 #include <QHash>
 
-#include <QSemaphore>
-
 extern QMutex myMutex; //timetablegenerateform.cpp
 
-#ifndef FET_COMMAND_LINE
-extern QSemaphore semaphorePlacedActivity;
-extern QSemaphore finishedSemaphore;
-#else
-QSemaphore semaphorePlacedActivity;
-QSemaphore finishedSemaphore;
-#endif
-
-extern Timetable gt;
-
-static bool swappedActivities[MAX_ACTIVITIES];
-
-static bool foundGoodSwap;
-
-//not sure, it might be necessary 2*... or even more
-static int restoreActIndex[4*MAX_ACTIVITIES]; //the index of the act. to restore
-static int restoreTime[4*MAX_ACTIVITIES]; //the time when to restore
-static int restoreRoom[4*MAX_ACTIVITIES]; //the time when to restore
-static int nRestore;
-
-static int limitcallsrandomswap;
-
-const int MAX_LEVEL=31;
-
-const int LEVEL_STOP_CONFLICTS_CALCULATION=MAX_LEVEL;
-
-static int level_limit;
-
-static int ncallsrandomswap;
-static int maxncallsrandomswap;
-
-Solution highestStageSolution;
-
-
-//if level==0, choose best position with lowest number
-//of conflicting activities
-static QList<int> conflActivitiesTimeSlot;
-static int timeSlot;
-static int roomSlot;
-
-
-//int triedRemovals[MAX_ACTIVITIES][MAX_HOURS_PER_WEEK];
-static Matrix2D<int> triedRemovals;
-
-static bool impossibleActivity;
-
-static int invPermutation[MAX_ACTIVITIES];
-
-const int INF=2000000000;
-
-
-////////tabu list of tried removals (circular)
-//const int MAX_TABU=MAX_ACTIVITIES*MAX_HOURS_PER_WEEK;
-static int tabu_size;
-static int crt_tabu_index;
-/*qint16 tabu_activities[MAX_TABU];
-qint16 tabu_times[MAX_TABU];*/
-static Matrix1D<int> tabu_activities;
-static Matrix1D<int> tabu_times;
 ////////////
-
-/*static qint16 teachersTimetable[MAX_TEACHERS][MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
-static qint16 subgroupsTimetable[MAX_TOTAL_SUBGROUPS][MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
-static qint16 roomsTimetable[MAX_ROOMS][MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];*/
-static Matrix3D<int> teachersTimetable;
-static Matrix3D<int> subgroupsTimetable;
-static Matrix3D<int> roomsTimetable;
-
-
-/*static qint16 newTeachersTimetable[MAX_TEACHERS][MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
-static qint16 newSubgroupsTimetable[MAX_TOTAL_SUBGROUPS][MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
-static qint16 newTeachersDayNHours[MAX_TEACHERS][MAX_DAYS_PER_WEEK];
-static qint16 newTeachersDayNGaps[MAX_TEACHERS][MAX_DAYS_PER_WEEK];
-static qint16 newSubgroupsDayNHours[MAX_TOTAL_SUBGROUPS][MAX_DAYS_PER_WEEK];
-static qint16 newSubgroupsDayNGaps[MAX_TOTAL_SUBGROUPS][MAX_DAYS_PER_WEEK];
-static qint16 newSubgroupsDayNFirstGaps[MAX_TOTAL_SUBGROUPS][MAX_DAYS_PER_WEEK];*/
-static Matrix3D<int> newTeachersTimetable;
-static Matrix3D<int> newSubgroupsTimetable;
-static Matrix2D<int> newTeachersDayNHours;
-static Matrix2D<int> newTeachersDayNGaps;
-static Matrix2D<int> newSubgroupsDayNHours;
-static Matrix2D<int> newSubgroupsDayNGaps;
-static Matrix2D<int> newSubgroupsDayNFirstGaps;
-
-
-/*static qint16 oldTeachersTimetable[MAX_TEACHERS][MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
-static qint16 oldSubgroupsTimetable[MAX_TOTAL_SUBGROUPS][MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
-static qint16 oldTeachersDayNHours[MAX_TEACHERS][MAX_DAYS_PER_WEEK];
-static qint16 oldTeachersDayNGaps[MAX_TEACHERS][MAX_DAYS_PER_WEEK];
-static qint16 oldSubgroupsDayNHours[MAX_TOTAL_SUBGROUPS][MAX_DAYS_PER_WEEK];
-static qint16 oldSubgroupsDayNGaps[MAX_TOTAL_SUBGROUPS][MAX_DAYS_PER_WEEK];
-static qint16 oldSubgroupsDayNFirstGaps[MAX_TOTAL_SUBGROUPS][MAX_DAYS_PER_WEEK];*/
-static Matrix3D<int> oldTeachersTimetable;
-static Matrix3D<int> oldSubgroupsTimetable;
-static Matrix2D<int> oldTeachersDayNHours;
-static Matrix2D<int> oldTeachersDayNGaps;
-static Matrix2D<int> oldSubgroupsDayNHours;
-static Matrix2D<int> oldSubgroupsDayNGaps;
-static Matrix2D<int> oldSubgroupsDayNFirstGaps;
-
-
-/*static qint16 tchTimetable[MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
-static qint16 tchDayNHours[MAX_DAYS_PER_WEEK];
-static qint16 tchDayNGaps[MAX_DAYS_PER_WEEK];
-
-static qint16 sbgTimetable[MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
-static qint16 sbgDayNHours[MAX_DAYS_PER_WEEK];
-static qint16 sbgDayNGaps[MAX_DAYS_PER_WEEK];
-static qint16 sbgDayNFirstGaps[MAX_DAYS_PER_WEEK];*/
-static Matrix2D<int> tchTimetable;
-static Matrix1D<int> tchDayNHours;
-static Matrix1D<int> tchDayNGaps;
-
-static Matrix2D<int> sbgTimetable;
-static Matrix1D<int> sbgDayNHours;
-static Matrix1D<int> sbgDayNGaps;
-static Matrix1D<int> sbgDayNFirstGaps;
-
-//static QList<int> teacherActivitiesOfTheDay[MAX_TEACHERS][MAX_DAYS_PER_WEEK];
-static Matrix2D<QList<int> > teacherActivitiesOfTheDay;
-static Matrix2D<QList<int> > subgroupActivitiesOfTheDay;
-
-int maxActivitiesPlaced;
-
-QDateTime generationStartDateTime;
-QDateTime generationHighestStageDateTime;
-
-const int MAX_RETRIES_FOR_AN_ACTIVITY_AT_LEVEL_0=400000;
-
-//used at level 0
-static Matrix1D<int> l0nWrong;
-static Matrix1D<int> l0minWrong;
-static Matrix1D<int> l0minIndexAct;
-
-//2011-09-25
-static Matrix1D<QSet<int> > slotSetOfActivities;
-static Matrix1D<bool> slotCanEmpty;
-
-static Matrix1D<QSet<int> > activitiesAtTime;
-////////////
-
-/*inline int max(qint16 a, int b){
-	if(int(a)>=b)
-		return int(a);
-	else
-		return b;
-}*/
-
 inline void Generate::addAiToNewTimetable(int ai, const Activity* act, int d, int h)
 {
 	//foreach(int tch, act->iTeachersList){
@@ -1590,7 +1438,7 @@ inline bool Generate::subgroupRemoveAnActivityFromAnywhereCertainDayCertainActiv
 		return false;
 }
 
-
+//a probabilistic function to say if we can skip a constraint based on its percentage weight
 inline bool skipRandom(double weightPercentage)
 {
 	if(weightPercentage<0)
@@ -1612,7 +1460,8 @@ inline bool skipRandom(double weightPercentage)
 }
 
 
-Generate::Generate()
+Generate::Generate(const Timetable &gt)
+	: gt(gt), abortOptimization(false)
 {
 }
 
@@ -2685,7 +2534,7 @@ if(threaded){
 }
 			
 			timeExceeded=true;
-			
+
 			return;
 		}
 
@@ -2952,7 +2801,7 @@ if(threaded){
 				difficultActivities[0]=permutation[added_act];
 				
 				impossible=true;
-				
+
 				emit(impossibleToSolve());
 				
 				return;
@@ -3167,7 +3016,7 @@ if(threaded){
 #endif
 
 	emit(simulationFinished());
-	
+
 	finishedSemaphore.release();
 }
 
@@ -3377,22 +3226,16 @@ void Generate::moveActivity(int ai, int fromslot, int toslot, int fromroom, int 
 //faster: (to avoid allocating memory at each call)
 #if 1
 
-static double nMinDaysBrokenL[MAX_LEVEL][MAX_HOURS_PER_WEEK];
-static int selectedRoomL[MAX_LEVEL][MAX_HOURS_PER_WEEK];
-static int permL[MAX_LEVEL][MAX_HOURS_PER_WEEK];
-static QList<int> conflActivitiesL[MAX_LEVEL][MAX_HOURS_PER_WEEK];
-//static int conflPermL[MAX_LEVEL][MAX_HOURS_PER_WEEK]; //the permutation in increasing order of number of conflicting activities
-static int nConflActivitiesL[MAX_LEVEL][MAX_HOURS_PER_WEEK];
-static int roomSlotsL[MAX_LEVEL][MAX_HOURS_PER_WEEK];
-
-
-static int currentLevel;
-
-inline bool compareFunctionGenerate(int i, int j)
+Generate::cmp::cmp(const Generate *g)
+	: nMinDaysBrokenL(&g->nMinDaysBrokenL[g->currentLevel]), nConflActivitiesL(&g->nConflActivitiesL[g->currentLevel])
 {
-	if(nConflActivitiesL[currentLevel][i] < nConflActivitiesL[currentLevel][j] ||
-	 (nConflActivitiesL[currentLevel][i] == nConflActivitiesL[currentLevel][j] &&
-	 nMinDaysBrokenL[currentLevel][i] < nMinDaysBrokenL[currentLevel][j]))
+}
+
+inline bool Generate::cmp::operator ()(int i, int j)
+{
+	if((*nConflActivitiesL)[i] < (*nConflActivitiesL)[j] ||
+	 ((*nConflActivitiesL)[i] == (*nConflActivitiesL)[j] &&
+	 (*nMinDaysBrokenL)[i] < (*nMinDaysBrokenL)[j]))
 		return true;
 	
 	return false;
@@ -9090,7 +8933,7 @@ skip_here_if_already_allocated_in_time:
 			
 	//O(n*log(n)) stable sorting
 	currentLevel=level;
-	std::stable_sort(perm+0, perm+gt.rules.nHoursPerWeek, compareFunctionGenerate);
+	std::stable_sort(perm+0, perm+gt.rules.nHoursPerWeek, cmp(this));
 			
 	/*cout<<"perm[i]: ";
 	for(int i=0; i<gt.rules.nHoursPerWeek; i++)
@@ -9459,4 +9302,14 @@ if(this->isThreaded){
 				return;
 		}
 	}
+}
+
+int Generate::getMaxActivitiesPlaced() const
+{
+	return maxActivitiesPlaced;
+}
+
+Solution &Generate::getHighestStageSolution()
+{
+	return highestStageSolution;
 }

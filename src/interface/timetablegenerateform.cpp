@@ -44,30 +44,17 @@ QMutex myMutex;
 
 static GenerateThread generateThread;
 
-#include <QSemaphore>
-
-QSemaphore semaphorePlacedActivity; //used to update when an activity is placed
-
-QSemaphore finishedSemaphore;
-
 //Represents the current status of the simulation - running or stopped.
 extern bool simulation_running;
-
-extern Solution highestStageSolution;
 
 extern QString conflictsStringTitle;
 extern QString conflictsString;
 
-Generate gen;
+Generate gen(gt);
 
 QString initialOrderOfActivities;
 
 int initialOrderOfActivitiesIndices[MAX_ACTIVITIES];
-
-extern int maxActivitiesPlaced;
-
-extern QDateTime generationStartDateTime;
-extern QDateTime generationHighestStageDateTime;
 
 QString getActivityDetailedDescription(const Rules& r, int id);
 
@@ -243,6 +230,7 @@ void TimetableGenerateForm::stop()
 	s+=TimetableGenerateForm::tr("Additional information relating impossible to schedule activities:");
 	s+="\n\n";
 
+	const int maxActivitiesPlaced = gen.getMaxActivitiesPlaced();
 	s+=tr("FET managed to schedule correctly the first %1 most difficult activities."
 	 " You can see initial order of placing the activities in the generate dialog. The activity which might cause problems"
 	 " might be the next activity in the initial order of evaluation. This activity is listed below:")
@@ -344,7 +332,7 @@ void TimetableGenerateForm::stopHighest()
 
 	myMutex.lock();
 
-	Solution& c=highestStageSolution;
+	Solution& c=gen.getHighestStageSolution();
 
 	//needed to find the conflicts strings
 	QString tmp;
@@ -396,6 +384,7 @@ void TimetableGenerateForm::stopHighest()
 	s+=TimetableGenerateForm::tr("Additional information relating impossible to schedule activities:");
 	s+="\n\n";
 
+	const int maxActivitiesPlaced = gen.getMaxActivitiesPlaced();
 	s+=tr("FET managed to schedule correctly the first %1 most difficult activities."
 	 " You can see initial order of placing the activities in the generate dialog. The activity which might cause problems"
 	 " might be the next activity in the initial order of evaluation. This activity is listed below:")
@@ -594,7 +583,7 @@ void TimetableGenerateForm::simulationFinished()
 
 	simulation_running=false;
 
-	finishedSemaphore.acquire();
+	gen.finishedSemaphore.acquire();
 
 	TimetableExport::writeRandomSeed(this, false); //false represents 'before' state
 
@@ -686,7 +675,7 @@ void TimetableGenerateForm::activityPlaced(int na){
 
 	myMutex.lock();
 	int t=gen.searchTime; //seconds
-	int mact=maxActivitiesPlaced;
+	int mact=gen.getMaxActivitiesPlaced();
 	int seconds=gen.timeToHighestStage;
 	myMutex.unlock();
 
@@ -740,7 +729,7 @@ void TimetableGenerateForm::activityPlaced(int na){
 
 	currentResultsTextEdit->setPlainText(s);
 
-	semaphorePlacedActivity.release();
+	gen.semaphorePlacedActivity.release();
 }
 
 void TimetableGenerateForm::help()
@@ -830,7 +819,7 @@ void TimetableGenerateForm::write(){
 void TimetableGenerateForm::writeHighestStage(){
 	myMutex.lock();
 
-	Solution& c=highestStageSolution;
+	Solution& c=gen.getHighestStageSolution();
 
 	//needed to find the conflicts strings
 	QString tmp;

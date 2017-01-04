@@ -95,10 +95,6 @@ extern QRect mainFormSettingsRect;
 extern int MAIN_FORM_SHORTCUTS_TAB_POSITION;
 #endif
 
-extern Solution highestStageSolution;
-
-extern int maxActivitiesPlaced;
-
 #ifndef FET_COMMAND_LINE
 extern int initialOrderOfActivitiesIndices[MAX_ACTIVITIES];
 #else
@@ -1195,7 +1191,7 @@ int main(int argc, char **argv)
 			return 1;
 		}
 	
-		Generate gen;
+		Generate gen(gt);
 
 		terminateGeneratePointer=&gen;
 		signal(SIGTERM, terminate);
@@ -1293,7 +1289,7 @@ int main(int argc, char **argv)
 			
 			//2011-11-11 (2)
 			//write highest stage timetable
-			Solution& ch=highestStageSolution;
+			Solution& ch=gen.getHighestStageSolution();
 
 			//needed to find the conflicts strings
 			QString tmp2;
@@ -1360,7 +1356,7 @@ int main(int argc, char **argv)
 			TimetableExport::writeSimulationResultsCommandLine(NULL, toc);
 			
 			QString s;
-
+			const int maxActivitiesPlaced = gen.getMaxActivitiesPlaced();
 			if(maxActivitiesPlaced>=0 && maxActivitiesPlaced<gt.rules.nInternalActivities 
 			 && initialOrderOfActivitiesIndices[maxActivitiesPlaced]>=0 && initialOrderOfActivitiesIndices[maxActivitiesPlaced]<gt.rules.nInternalActivities){
 				s=FetTranslate::tr("FET managed to schedule correctly the first %1 most difficult activities."
@@ -1412,7 +1408,7 @@ int main(int argc, char **argv)
 			
 			//2011-11-11 (2)
 			//write highest stage timetable
-			Solution& ch=highestStageSolution;
+			Solution& ch=gen.getHighestStageSolution();
 
 			//needed to find the conflicts strings
 			QString tmp2;

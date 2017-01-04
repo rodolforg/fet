@@ -47,9 +47,9 @@ public:
 	
 	static void stringToColor(QString s, int *r, int *g, int *b);
 
-	static void getStudentsTimetable(Solution& c);
-	static void getTeachersTimetable(Solution& c);
-	static void getRoomsTimetable(Solution& c);
+	static void getStudentsTimetable(const Solution &c);
+	static void getTeachersTimetable(const Solution &c);
+	static void getRoomsTimetable(const Solution &c);
 	static void getNumberOfPlacedActivities(int& number1, int& number2);
 
 	static void writeSimulationResults(QWidget* parent);
