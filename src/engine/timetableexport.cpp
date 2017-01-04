@@ -273,7 +273,7 @@ TimetableExport::~TimetableExport()
 {
 }
 
-void TimetableExport::getStudentsTimetable(Solution &c){
+void TimetableExport::getStudentsTimetable(const Solution &c){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 
 	c.getSubgroupsTimetable(gt.rules, students_timetable_weekly);
@@ -281,7 +281,7 @@ void TimetableExport::getStudentsTimetable(Solution &c){
 	students_schedule_ready=true;
 }
 
-void TimetableExport::getTeachersTimetable(Solution &c){
+void TimetableExport::getTeachersTimetable(const Solution &c){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 
 	c.getTeachersTimetable(gt.rules, teachers_timetable_weekly, teachers_free_periods_timetable_weekly);
@@ -289,7 +289,7 @@ void TimetableExport::getTeachersTimetable(Solution &c){
 	teachers_schedule_ready=true;
 }
 
-void TimetableExport::getRoomsTimetable(Solution &c){
+void TimetableExport::getRoomsTimetable(const Solution &c){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 
 	c.getRoomsTimetable(gt.rules, rooms_timetable_weekly);
