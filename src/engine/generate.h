@@ -104,9 +104,10 @@ public:
 
 	bool abortOptimization;
 
+	enum Status {SUCCESS, IMPOSSIBLE, TIMEOUT, ABORTED};
 	bool precompute(QWidget* parent, QTextStream* maxPlacedActivityStream=NULL);
 
-	void generate(int maxSeconds, bool& impossible, bool& timeExceeded, bool threaded, QTextStream* maxPlacedActivityStream=NULL);
+	Status generate(int maxSeconds, bool threaded, QTextStream* maxPlacedActivityStream=NULL);
 
 	int getMaxActivitiesPlaced() const;
 
