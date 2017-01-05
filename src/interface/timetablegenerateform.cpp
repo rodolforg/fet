@@ -58,8 +58,6 @@ int initialOrderOfActivitiesIndices[MAX_ACTIVITIES];
 
 QString getActivityDetailedDescription(const Rules& r, int id);
 
-const QString settingsName=QString("TimetableGenerateUnsuccessfulForm");
-
 void GenerateThread::run()
 {
 	const int INF=2000000000;
@@ -282,31 +280,9 @@ void TimetableGenerateForm::stop()
 	myMutex.unlock();
 
 	//show the message in a dialog
-	QDialog dialog(this);
-	
-	dialog.setWindowTitle(TimetableGenerateForm::tr("Generation stopped", "The title of a dialog, meaning that the generation of the timetable was stopped."));
-
-	QVBoxLayout* vl=new QVBoxLayout(&dialog);
-	QPlainTextEdit* te=new QPlainTextEdit();
-	te->setPlainText(s);
-	te->setReadOnly(true);
-	QPushButton* pb=new QPushButton(TimetableGenerateForm::tr("OK"));
-
-	QHBoxLayout* hl=new QHBoxLayout(0);
-	hl->addStretch(1);
-	hl->addWidget(pb);
-
-	vl->addWidget(te);
-	vl->addLayout(hl);
-	connect(pb, SIGNAL(clicked()), &dialog, SLOT(close()));
-	
-	dialog.resize(700,500);
-	centerWidgetOnScreen(&dialog);
-	restoreFETDialogGeometry(&dialog, settingsName);
-	
-	setParentAndOtherThings(&dialog, this);
-	dialog.exec();
-	saveFETDialogGeometry(&dialog, settingsName);
+	showDialog(tr("Generation stopped", "The title of a dialog, meaning that the generation of the timetable was stopped."),
+			   s,
+			   false);
 
 	startPushButton->setEnabled(true);
 	stopPushButton->setDisabled(true);
@@ -412,32 +388,10 @@ void TimetableGenerateForm::stopHighest()
 	myMutex.unlock();
 
 	//show the message in a dialog
-	QDialog dialog(this);
-
-	dialog.setWindowTitle(TimetableGenerateForm::tr("Generation stopped (highest stage)", "The title of a dialog, meaning that the generation of the timetable was stopped "
-		"and highest stage timetable written."));
-
-	QVBoxLayout* vl=new QVBoxLayout(&dialog);
-	QPlainTextEdit* te=new QPlainTextEdit();
-	te->setPlainText(s);
-	te->setReadOnly(true);
-	QPushButton* pb=new QPushButton(TimetableGenerateForm::tr("OK"));
-
-	QHBoxLayout* hl=new QHBoxLayout(0);
-	hl->addStretch(1);
-	hl->addWidget(pb);
-
-	vl->addWidget(te);
-	vl->addLayout(hl);
-	connect(pb, SIGNAL(clicked()), &dialog, SLOT(close()));
-
-	dialog.resize(700,500);
-	centerWidgetOnScreen(&dialog);
-	restoreFETDialogGeometry(&dialog, settingsName);
-	
-	setParentAndOtherThings(&dialog, this);
-	dialog.exec();
-	saveFETDialogGeometry(&dialog, settingsName);
+	showDialog(tr("Generation stopped (highest stage)", "The title of a dialog, meaning that the generation of the timetable was stopped "
+																			   "and highest stage timetable written."),
+			   s,
+			   false);
 
 	startPushButton->setEnabled(true);
 	stopPushButton->setDisabled(true);
@@ -534,36 +488,9 @@ void TimetableGenerateForm::impossibleToSolve()
 	myMutex.unlock();
 
 	//show the message in a dialog
-	QDialog dialog(this);
-
-	dialog.setWindowTitle(TimetableGenerateForm::tr("Generation impossible", "The title of a dialog, meaning that the generation of the timetable is impossible."));
-
-	QVBoxLayout* vl=new QVBoxLayout(&dialog);
-	QPlainTextEdit* te=new QPlainTextEdit();
-	te->setPlainText(s);
-	te->setReadOnly(true);
-	QPushButton* pb=new QPushButton(TimetableGenerateForm::tr("OK"));
-
-	QHBoxLayout* hl=new QHBoxLayout(0);
-	hl->addStretch(1);
-	hl->addWidget(pb);
-
-	vl->addWidget(te);
-	vl->addLayout(hl);
-	connect(pb, SIGNAL(clicked()), &dialog, SLOT(close()));
-
-	dialog.resize(700,500);
-	centerWidgetOnScreen(&dialog);
-	restoreFETDialogGeometry(&dialog, settingsName);
-
-	setParentAndOtherThings(&dialog, this);
-
-#ifndef Q_WS_QWS
-	QApplication::beep();
-#endif
-
-	dialog.exec();
-	saveFETDialogGeometry(&dialog, settingsName);
+	showDialog(tr("Generation impossible", "The title of a dialog, meaning that the generation of the timetable is impossible."),
+			   s,
+			   true);
 
 	startPushButton->setEnabled(true);
 	stopPushButton->setDisabled(true);
@@ -902,31 +829,9 @@ void TimetableGenerateForm::seeImpossible()
 	myMutex.unlock();
 	
 	//show the message in a dialog
-	QDialog dialog(this);
-	
-	dialog.setWindowTitle(tr("FET - information about difficult activities"));
-
-	QVBoxLayout* vl=new QVBoxLayout(&dialog);
-	QPlainTextEdit* te=new QPlainTextEdit();
-	te->setPlainText(s);
-	te->setReadOnly(true);
-	QPushButton* pb=new QPushButton(tr("OK"));
-
-	QHBoxLayout* hl=new QHBoxLayout(0);
-	hl->addStretch(1);
-	hl->addWidget(pb);
-
-	vl->addWidget(te);
-	vl->addLayout(hl);
-	connect(pb, SIGNAL(clicked()), &dialog, SLOT(close()));
-
-	dialog.resize(700,500);
-	centerWidgetOnScreen(&dialog);
-	restoreFETDialogGeometry(&dialog, settingsName);
-
-	setParentAndOtherThings(&dialog, this);
-	dialog.exec();
-	saveFETDialogGeometry(&dialog, settingsName);
+	showDialog(tr("FET - information about difficult activities"),
+			   s,
+			   false);
 }
 
 void TimetableGenerateForm::seeInitialOrder()
@@ -934,13 +839,22 @@ void TimetableGenerateForm::seeInitialOrder()
 	QString s=initialOrderOfActivities;
 
 	//show the message in a dialog
+	showDialog(tr("FET - information about initial order of evaluation of activities"),
+			   s,
+			   false);
+}
+
+void TimetableGenerateForm::showDialog(const QString &title, const QString &msg, bool beep)
+{
+	const QString settingsName=QString("TimetableGenerateUnsuccessfulForm");
+
 	QDialog dialog(this);
-	
-	dialog.setWindowTitle(tr("FET - information about initial order of evaluation of activities"));
+
+	dialog.setWindowTitle(title);
 
 	QVBoxLayout* vl=new QVBoxLayout(&dialog);
 	QPlainTextEdit* te=new QPlainTextEdit();
-	te->setPlainText(s);
+	te->setPlainText(msg);
 	te->setReadOnly(true);
 	QPushButton* pb=new QPushButton(tr("OK"));
 
@@ -957,6 +871,11 @@ void TimetableGenerateForm::seeInitialOrder()
 	restoreFETDialogGeometry(&dialog, settingsName);
 
 	setParentAndOtherThings(&dialog, this);
+#ifndef Q_WS_QWS
+	if (beep) {
+		QApplication::beep();
+	}
+#endif
 	dialog.exec();
 	saveFETDialogGeometry(&dialog, settingsName);
 }
