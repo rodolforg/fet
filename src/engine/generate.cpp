@@ -2932,8 +2932,6 @@ if(threaded){
 //////////////////////
 		}			
 		else{ //if foundGoodSwap==true
-			nPlacedActivities=added_act+1;
-			
 			if(maxActivitiesPlaced<added_act+1){
 				generationHighestStageDateTime=QDateTime::currentDateTime();
 				time_t tmp;

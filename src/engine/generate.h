@@ -92,8 +92,6 @@ private:
 public:
 	Solution c;
 	
-	int nPlacedActivities;
-	
 	//difficult activities
 	int nDifficultActivities;
 	int difficultActivities[MAX_ACTIVITIES];
