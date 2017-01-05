@@ -67,6 +67,9 @@ private slots:
 	void seeInitialOrder();
 	
 //	void seeHighestStage();
+
+private:
+	void showDialog(const QString & title, const QString & msg, bool beep);
 };
 
 #endif
