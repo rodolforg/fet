@@ -3580,7 +3580,7 @@ again_if_impossible_activity:
 				int nextDay = d+1;
 				if (nextDay < gt.rules.nHoursPerDay) {
 					int remainingGapsToday = gt.rules.nHoursPerDay - (h + act->duration);
-					for (int hi = 0; hi < MIN_GAP_DIFF_BETWEEN_DAYS-remainingGapsToday; hi--) {
+					for (int hi = 0; hi < MIN_GAP_DIFF_BETWEEN_DAYS-remainingGapsToday; hi++) {
 						int ai2=teachersTimetable(tch,nextDay,hi);
 						if (ai2 >= 0) {
 							troubledAi = ai2;
