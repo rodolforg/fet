@@ -46,18 +46,12 @@ public:
 	
 	int nPlacedActivities;
 
-	/*
-	You will need to set this to true if altering the times array values.
-	The conflicts calculating routine will reset this to false
-	at the first teachers matrix and subgroups matrix calculation.
-	*/
-	bool changedForMatrixCalculation;
-
 	/**
 	This array represents every activity's start time
 	(time is a unified representation of hour and day,
 	stored as an integer value). We have a special value here:
 	UNALLOCATED_TIME, which is a large number.
+	If changed, resetFitness() must be called.
 	*/
 	int times[MAX_ACTIVITIES];
 	
@@ -88,7 +82,8 @@ public:
 	void resetFitness();
 
 	/**
-	ATTENTION: if the rules change, the user has to call resetFitness()
+	ATTENTION: if the rules or the times array change,
+	the user has to call resetFitness().
 	<p>
 	If conflictsString is not null, then this function will
 	append at this string an explanation of the conflicts.
