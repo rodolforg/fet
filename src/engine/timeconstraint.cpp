@@ -281,8 +281,6 @@ double ConstraintBasicCompulsoryTime::fitness(Solution& c, const Rules& r, QList
 	
 		subgroups_conflicts = subgroupsConflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = teachersConflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 	else{
 		assert(subgroups_conflicts>=0);
@@ -616,8 +614,6 @@ double ConstraintTeacherNotAvailableTimes::fitness(Solution& c, const Rules& r, 
 
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	//Calculates the number of hours when the teacher is supposed to be teaching, but he is not available
@@ -912,8 +908,6 @@ double ConstraintStudentsSetNotAvailableTimes::fitness(Solution& c, const Rules&
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken = 0;
@@ -2571,8 +2565,6 @@ double ConstraintTeachersMaxHoursDaily::fitness(Solution& c, const Rules& r, QLi
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken = 0;
@@ -2768,8 +2760,6 @@ double ConstraintTeacherMaxHoursDaily::fitness(Solution& c, const Rules& r, QLis
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken = 0;
@@ -2957,8 +2947,6 @@ double ConstraintTeachersMaxHoursContinuously::fitness(Solution& c, const Rules&
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken = 0;
@@ -3181,8 +3169,6 @@ double ConstraintTeacherMaxHoursContinuously::fitness(Solution& c, const Rules& 
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken = 0;
@@ -3419,8 +3405,6 @@ double ConstraintTeachersActivityTagMaxHoursContinuously::fitness(Solution& c, c
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken = 0;
@@ -3684,8 +3668,6 @@ double ConstraintTeacherActivityTagMaxHoursContinuously::fitness(Solution& c, co
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken = 0;
@@ -3929,8 +3911,6 @@ double ConstraintTeacherMaxDaysPerWeek::fitness(Solution& c, const Rules& r, QLi
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken = 0;
@@ -4132,8 +4112,6 @@ double ConstraintTeachersMaxDaysPerWeek::fitness(Solution& c, const Rules& r, QL
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken = 0;
@@ -4337,8 +4315,6 @@ double ConstraintTeachersMaxGapsPerWeek::fitness(Solution& c, const Rules& r, QL
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-		
-		c.changedForMatrixCalculation=false;
 	}
 	
 	int tg;
@@ -4543,8 +4519,6 @@ double ConstraintTeacherMaxGapsPerWeek::fitness(Solution& c, const Rules& r, QLi
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 	
 	int tg;
@@ -4742,8 +4716,6 @@ double ConstraintTeachersMaxGapsPerDay::fitness(Solution& c, const Rules& r, QLi
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 	
 	int tg;
@@ -4947,8 +4919,6 @@ double ConstraintTeacherMaxGapsPerDay::fitness(Solution& c, const Rules& r, QLis
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 	
 	int tg;
@@ -5197,8 +5167,6 @@ double ConstraintBreakTimes::fitness(Solution& c, const Rules& r, QList<double>&
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	//DEPRECATED COMMENT
@@ -5421,8 +5389,6 @@ double ConstraintStudentsMaxGapsPerWeek::fitness(Solution& c, const Rules& r, QL
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-		
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nGaps;
@@ -5679,8 +5645,6 @@ double ConstraintStudentsSetMaxGapsPerWeek::fitness(Solution& c, const Rules& r,
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 	
 	int nGaps;
@@ -5885,8 +5849,6 @@ double ConstraintStudentsEarlyMaxBeginningsAtSecondHour::fitness(Solution& c, co
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 	
 	int conflTotal=0;
@@ -6175,8 +6137,6 @@ double ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::fitness(Solution& c,
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 	
 	int conflTotal=0;
@@ -6408,8 +6368,6 @@ double ConstraintStudentsMaxHoursDaily::fitness(Solution& c, const Rules& r, QLi
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int tmp;
@@ -6658,8 +6616,6 @@ double ConstraintStudentsSetMaxHoursDaily::fitness(Solution& c, const Rules& r, 
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int tmp;
@@ -6856,8 +6812,6 @@ double ConstraintStudentsMaxHoursContinuously::fitness(Solution& c, const Rules&
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 	
 	int nbroken = 0;
@@ -7130,8 +7084,6 @@ double ConstraintStudentsSetMaxHoursContinuously::fitness(Solution& c, const Rul
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken = 0;
@@ -7375,8 +7327,6 @@ double ConstraintStudentsActivityTagMaxHoursContinuously::fitness(Solution& c, c
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-		
-		c.changedForMatrixCalculation=false;
 	}
 	
 	int nbroken = 0;
@@ -7694,8 +7644,6 @@ double ConstraintStudentsSetActivityTagMaxHoursContinuously::fitness(Solution& c
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken = 0;
@@ -7951,8 +7899,6 @@ double ConstraintStudentsMinHoursDaily::fitness(Solution& c, const Rules& r, QLi
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int tmp;
@@ -8223,8 +8169,6 @@ double ConstraintStudentsSetMinHoursDaily::fitness(Solution& c, const Rules& r, 
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int tmp;
@@ -8508,8 +8452,6 @@ double ConstraintActivityPreferredStartingTime::fitness(Solution& c, const Rules
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken = 0;
@@ -8785,8 +8727,6 @@ double ConstraintActivityPreferredTimeSlots::fitness(Solution& c, const Rules& r
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	assert(r.internalStructureComputed);
@@ -9245,8 +9185,6 @@ double ConstraintActivitiesPreferredTimeSlots::fitness(Solution& c, const Rules&
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	assert(r.internalStructureComputed);
@@ -9731,8 +9669,6 @@ double ConstraintSubactivitiesPreferredTimeSlots::fitness(Solution& c, const Rul
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	assert(r.internalStructureComputed);
@@ -10074,8 +10010,6 @@ double ConstraintActivityPreferredStartingTimes::fitness(Solution& c, const Rule
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken = 0;
@@ -10524,8 +10458,6 @@ double ConstraintActivitiesPreferredStartingTimes::fitness(Solution& c, const Ru
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken = 0;
@@ -10994,8 +10926,6 @@ double ConstraintSubactivitiesPreferredStartingTimes::fitness(Solution& c, const
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken = 0;
@@ -11842,8 +11772,6 @@ double ConstraintTwoActivitiesConsecutive::fitness(Solution& c, const Rules& r, 
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken = 0;
@@ -12110,8 +12038,6 @@ double ConstraintTwoActivitiesGrouped::fitness(Solution& c, const Rules& r, QLis
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken = 0;
@@ -12422,8 +12348,6 @@ double ConstraintThreeActivitiesGrouped::fitness(Solution& c, const Rules& r, QL
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken = 0;
@@ -12755,8 +12679,6 @@ double ConstraintTwoActivitiesOrdered::fitness(Solution& c, const Rules& r, QLis
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken = 0;
@@ -12964,8 +12886,6 @@ double ConstraintActivityEndsStudentsDay::fitness(Solution& c, const Rules& r, Q
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken = 0;
@@ -13171,8 +13091,6 @@ double ConstraintTeachersMinHoursDaily::fitness(Solution& c, const Rules& r, QLi
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 	
 	assert(this->allowEmptyDays==true);
@@ -13388,8 +13306,6 @@ double ConstraintTeacherMinHoursDaily::fitness(Solution& c, const Rules& r, QLis
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 	
 	assert(this->allowEmptyDays==true);
@@ -13587,8 +13503,6 @@ double ConstraintTeacherMinDaysPerWeek::fitness(Solution& c, const Rules& r, QLi
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken = 0;
@@ -13778,8 +13692,6 @@ double ConstraintTeachersMinDaysPerWeek::fitness(Solution& c, const Rules& r, QL
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbrokentotal=0;
@@ -14023,8 +13935,6 @@ double ConstraintTeacherIntervalMaxDaysPerWeek::fitness(Solution& c, const Rules
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken = 0;
@@ -14270,8 +14180,6 @@ double ConstraintTeachersIntervalMaxDaysPerWeek::fitness(Solution& c, const Rule
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken=0;
@@ -14575,8 +14483,6 @@ double ConstraintStudentsSetIntervalMaxDaysPerWeek::fitness(Solution& c, const R
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-		
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken = 0;
@@ -14819,8 +14725,6 @@ double ConstraintStudentsIntervalMaxDaysPerWeek::fitness(Solution& c, const Rule
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken = 0;
@@ -15125,8 +15029,6 @@ double ConstraintActivitiesEndStudentsDay::fitness(Solution& c, const Rules& r, 
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken=0;
@@ -15365,8 +15267,6 @@ double ConstraintTeachersActivityTagMaxHoursDaily::fitness(Solution& c, const Ru
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken = 0;
@@ -15600,8 +15500,6 @@ double ConstraintTeacherActivityTagMaxHoursDaily::fitness(Solution& c, const Rul
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken = 0;
@@ -15838,8 +15736,6 @@ double ConstraintStudentsActivityTagMaxHoursDaily::fitness(Solution& c, const Ru
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 	
 	int nbroken = 0;
@@ -16126,8 +16022,6 @@ double ConstraintStudentsSetActivityTagMaxHoursDaily::fitness(Solution& c, const
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken = 0;
@@ -16338,8 +16232,6 @@ double ConstraintStudentsMaxGapsPerDay::fitness(Solution& c, const Rules& r, QLi
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 	
 	int nGaps;
@@ -16600,8 +16492,6 @@ double ConstraintStudentsSetMaxGapsPerDay::fitness(Solution& c, const Rules& r, 
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 	
 	int nGaps;
@@ -16918,8 +16808,6 @@ double ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::fitness(Solution& c,
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	assert(r.internalStructureComputed);
@@ -17281,8 +17169,6 @@ double ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::fitness(Solution&
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	assert(r.internalStructureComputed);
@@ -17578,8 +17464,6 @@ double ConstraintStudentsSetMaxDaysPerWeek::fitness(Solution& c, const Rules& r,
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-		
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken = 0;
@@ -17767,8 +17651,6 @@ double ConstraintStudentsMaxDaysPerWeek::fitness(Solution& c, const Rules& r, QL
 		c.subgroupsMatrixReady=true;
 		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
 		teachers_conflicts = c.getTeachersMatrix(r, teachersMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken = 0;

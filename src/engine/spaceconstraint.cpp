@@ -192,8 +192,6 @@ double ConstraintBasicCompulsorySpace::fitness(
 	if(!c.roomsMatrixReady){
 		c.roomsMatrixReady=true;
 		rooms_conflicts = roomsConflicts = c.getRoomsMatrix(r, roomsMatrix);
-		
-		c.changedForMatrixCalculation=false;
 	}
 	else{
 		assert(rooms_conflicts>=0);
@@ -491,8 +489,6 @@ double ConstraintRoomNotAvailableTimes::fitness(
 	if(!c.roomsMatrixReady){
 		c.roomsMatrixReady=true;
 		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	//Calculates the number of hours when the roomr is supposed to be occupied,
@@ -781,8 +777,6 @@ double ConstraintActivityPreferredRoom::fitness(
 	if(!c.roomsMatrixReady){
 		c.roomsMatrixReady=true;
 		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	//Calculates the number of conflicts
@@ -1023,8 +1017,6 @@ double ConstraintActivityPreferredRooms::fitness(
 	if(!c.roomsMatrixReady){
 		c.roomsMatrixReady=true;
 		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	//Calculates the number of conflicts
@@ -1274,8 +1266,6 @@ double ConstraintStudentsSetHomeRoom::fitness(
 	if(!c.roomsMatrixReady){
 		c.roomsMatrixReady=true;
 		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	//Calculates the number of conflicts.
@@ -1553,8 +1543,6 @@ double ConstraintStudentsSetHomeRooms::fitness(
 	if(!c.roomsMatrixReady){
 		c.roomsMatrixReady=true;
 		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	//Calculates the number of conflicts.
@@ -1822,8 +1810,6 @@ double ConstraintTeacherHomeRoom::fitness(
 	if(!c.roomsMatrixReady){
 		c.roomsMatrixReady=true;
 		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	//Calculates the number of conflicts.
@@ -2099,8 +2085,6 @@ double ConstraintTeacherHomeRooms::fitness(
 	if(!c.roomsMatrixReady){
 		c.roomsMatrixReady=true;
 		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	//Calculates the number of conflicts.
@@ -2343,8 +2327,6 @@ double ConstraintSubjectPreferredRoom::fitness(
 	if(!c.roomsMatrixReady){
 		c.roomsMatrixReady=true;
 		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	//Calculates the number of conflicts.
@@ -2587,8 +2569,6 @@ double ConstraintSubjectPreferredRooms::fitness(
 	if(!c.roomsMatrixReady){
 		c.roomsMatrixReady=true;
 		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	//Calculates the number of conflicts.
@@ -2830,8 +2810,6 @@ double ConstraintSubjectActivityTagPreferredRoom::fitness(
 	if(!c.roomsMatrixReady){
 		c.roomsMatrixReady=true;
 		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	//Calculates the number of conflicts.
@@ -3083,8 +3061,6 @@ double ConstraintSubjectActivityTagPreferredRooms::fitness(
 	if(!c.roomsMatrixReady){
 		c.roomsMatrixReady=true;
 		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	//Calculates the number of conflicts.
@@ -3319,8 +3295,6 @@ double ConstraintActivityTagPreferredRoom::fitness(
 	if(!c.roomsMatrixReady){
 		c.roomsMatrixReady=true;
 		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	//Calculates the number of conflicts.
@@ -3564,8 +3538,6 @@ double ConstraintActivityTagPreferredRooms::fitness(
 	if(!c.roomsMatrixReady){
 		c.roomsMatrixReady=true;
 		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	//Calculates the number of conflicts.
@@ -3830,8 +3802,6 @@ double ConstraintStudentsSetMaxBuildingChangesPerDay::fitness(
 	if(!c.roomsMatrixReady){
 		c.roomsMatrixReady=true;
 		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken=0;
@@ -4062,8 +4032,6 @@ double ConstraintStudentsMaxBuildingChangesPerDay::fitness(
 	if(!c.roomsMatrixReady){
 		c.roomsMatrixReady=true;
 		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken=0;
@@ -4348,8 +4316,6 @@ double ConstraintStudentsSetMaxBuildingChangesPerWeek::fitness(
 	if(!c.roomsMatrixReady){
 		c.roomsMatrixReady=true;
 		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken=0;
@@ -4580,8 +4546,6 @@ double ConstraintStudentsMaxBuildingChangesPerWeek::fitness(
 	if(!c.roomsMatrixReady){
 		c.roomsMatrixReady=true;
 		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken=0;
@@ -4865,8 +4829,6 @@ double ConstraintStudentsSetMinGapsBetweenBuildingChanges::fitness(
 	if(!c.roomsMatrixReady){
 		c.roomsMatrixReady=true;
 		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken=0;
@@ -5109,8 +5071,6 @@ double ConstraintStudentsMinGapsBetweenBuildingChanges::fitness(
 	if(!c.roomsMatrixReady){
 		c.roomsMatrixReady=true;
 		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken=0;
@@ -5370,8 +5330,6 @@ double ConstraintTeacherMaxBuildingChangesPerDay::fitness(
 	if(!c.roomsMatrixReady){
 		c.roomsMatrixReady=true;
 		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken=0;
@@ -5603,8 +5561,6 @@ double ConstraintTeachersMaxBuildingChangesPerDay::fitness(
 	if(!c.roomsMatrixReady){
 		c.roomsMatrixReady=true;
 		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken=0;
@@ -5852,8 +5808,6 @@ double ConstraintTeacherMaxBuildingChangesPerWeek::fitness(
 	if(!c.roomsMatrixReady){
 		c.roomsMatrixReady=true;
 		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken=0;
@@ -6085,8 +6039,6 @@ double ConstraintTeachersMaxBuildingChangesPerWeek::fitness(
 	if(!c.roomsMatrixReady){
 		c.roomsMatrixReady=true;
 		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken=0;
@@ -6334,8 +6286,6 @@ double ConstraintTeacherMinGapsBetweenBuildingChanges::fitness(
 	if(!c.roomsMatrixReady){
 		c.roomsMatrixReady=true;
 		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken=0;
@@ -6579,8 +6529,6 @@ double ConstraintTeachersMinGapsBetweenBuildingChanges::fitness(
 	if(!c.roomsMatrixReady){
 		c.roomsMatrixReady=true;
 		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	int nbroken=0;
@@ -6879,8 +6827,6 @@ double ConstraintActivitiesOccupyMaxDifferentRooms::fitness(
 	if(!c.roomsMatrixReady){
 		c.roomsMatrixReady=true;
 		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	//Calculates the number of conflicts
@@ -7145,8 +7091,6 @@ double ConstraintActivitiesSameRoomIfConsecutive::fitness(
 	if(!c.roomsMatrixReady){
 		c.roomsMatrixReady=true;
 		rooms_conflicts = c.getRoomsMatrix(r, roomsMatrix);
-
-		c.changedForMatrixCalculation=false;
 	}
 
 	//Calculates the number of conflicts
