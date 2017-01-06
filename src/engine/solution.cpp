@@ -44,8 +44,6 @@ void Solution::copy(const Rules &r, const Solution &c){
 	}
 	//memcpy(times, c.times, r.nActivities * sizeof(times[0]));
 	
-	this->changedForMatrixCalculation=c.changedForMatrixCalculation;
-
 	//added in version 5.2.0
 	conflictsWeightList=c.conflictsWeightList;
 	conflictsDescriptionList=c.conflictsDescriptionList;
@@ -84,23 +82,17 @@ void Solution::makeUnallocated(const Rules &r){
 void Solution::resetFitness()
 {
 	_fitness = -1;
-	changedForMatrixCalculation = true;
 }
 
 double Solution::fitness(const Rules &r, QString* conflictsString){
 	assert(r.initialized);
 	assert(r.internalStructureComputed);
 
-	if(this->_fitness>=0)
-		assert(this->changedForMatrixCalculation==false);
-		
 	if(this->_fitness>=0 && conflictsString==NULL)
 	//If you want to see the log, you have to recompute the fitness, even if it is
 	//already computed
 		return this->_fitness;
 		
-	this->changedForMatrixCalculation=true;
-	
 	this->_fitness=0;
 	//I AM NOT SURE IF THE COMMENT BELOW IS DEPRECATED/FALSE NOW (IT IS OLD).
 	//here we must not have compulsory activity preferred time nor
@@ -175,8 +167,6 @@ double Solution::fitness(const Rules &r, QString* conflictsString){
 	assert(conflictsWeightList.count()==conflictsDescriptionList.count());
 	assert(conflictsWeightList.count()==ttt);
 	
-	this->changedForMatrixCalculation=false;
-
 	return this->_fitness;
 }
 
@@ -208,8 +198,6 @@ int Solution::getTeachersMatrix(const Rules& r, Matrix3D<int>& a) {
 				}
 		}
 
-	this->changedForMatrixCalculation=false;
-		
 	return conflicts;
 }
 
@@ -240,8 +228,6 @@ int Solution::getSubgroupsMatrix(const Rules& r, Matrix3D<int>& a){
 					a[sg][day][hour+dd]++;
 				}
 		}
-		
-	this->changedForMatrixCalculation=false;
 		
 	return conflicts;
 }
@@ -437,8 +423,6 @@ int Solution::getRoomsMatrix(
 			}
 		}
 	}
-	
-	this->changedForMatrixCalculation=false;
 	
 	return conflicts;
 }
