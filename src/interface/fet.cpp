@@ -1258,8 +1258,9 @@ int main(int argc, char **argv)
 			s+=TimetableExport::tr("Please check the constraints related to the "
 			 "activity below, which might be impossible to schedule:");
 			s+="\n\n";
-			for(int i=0; i<gen.nDifficultActivities; i++){
-				int ai=gen.difficultActivities[i];
+			const std::vector<int>& difficultActivities = gen.getDifficultActivities();
+			for(std::vector<int>::size_type i=0; i<difficultActivities.size(); i++){
+				int ai=difficultActivities[i];
 
 				s+=TimetableExport::tr("No: %1").arg(i+1);
 
@@ -1377,8 +1378,9 @@ int main(int argc, char **argv)
 			 "in order from the first one to the last (the last one FET failed to schedule "
 			 "and the last ones are most likely impossible):");
 			s+="\n\n";
-			for(int i=0; i<gen.nDifficultActivities; i++){
-				int ai=gen.difficultActivities[i];
+			const std::vector<int>& difficultActivities = gen.getDifficultActivities();
+			for(std::vector<int>::size_type i=0; i<difficultActivities.size(); i++){
+				int ai=difficultActivities[i];
 
 				s+=FetTranslate::tr("No: %1").arg(i+1);
 		

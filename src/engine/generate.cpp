@@ -1463,6 +1463,8 @@ inline bool skipRandom(double weightPercentage)
 Generate::Generate(const Timetable &gt)
 	: gt(gt), abortOptimization(false)
 {
+	difficultActivities.reserve(MAX_ACTIVITIES);
+	difficultActivities.resize(MAX_ACTIVITIES);
 }
 
 Generate::~Generate()
@@ -2396,6 +2398,11 @@ inline bool Generate::getRoom(int level, const Activity* act, int ai, int d, int
 	}
 }
 
+const std::vector<int> &Generate::getDifficultActivities() const
+{
+	return difficultActivities;
+}
+
 Generate::Status Generate::generate(int maxSeconds, bool threaded, QTextStream* maxPlacedActivityStream)
 {
 	this->isThreaded=threaded;
@@ -2450,8 +2457,7 @@ if(threaded){
 }
 	c.makeUnallocated(gt.rules);
 
-	nDifficultActivities=0;
-
+	difficultActivities.resize(0);
 	maxncallsrandomswap=-1;
 
 	impossibleActivity=false;
@@ -2789,21 +2795,20 @@ if(threaded){
 		
 		if(!foundGoodSwap){
 			if(impossibleActivity){
+				difficultActivities.resize(1);
+				difficultActivities[0]=permutation[added_act];
 if(threaded){
 				myMutex.unlock();
 }
-				nDifficultActivities=1;
-				difficultActivities[0]=permutation[added_act];
-				
 				emit(impossibleToSolve());
 				
 				return IMPOSSIBLE;
 			}
 		
 			//update difficult activities (activities which are placed correctly so far, together with added_act)
-			nDifficultActivities=added_act+1;
+			difficultActivities.resize(added_act+1);
 			if(VERBOSE){
-				cout<<"nDifficultActivities=="<<nDifficultActivities<<endl;
+				cout<<"nDifficultActivities=="<<difficultActivities.size()<<endl;
 			}
 			for(int j=0; j<=added_act; j++)
 				difficultActivities[j]=permutation[j];

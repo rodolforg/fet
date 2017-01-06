@@ -255,27 +255,7 @@ void TimetableGenerateForm::stop()
 	s+="-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- ";
 
 	s+="\n\n";
-
-	s+=TimetableGenerateForm::tr("Please check the constraints related to the last "
-	 "activities in the list below, which might be impossible to schedule:");
-	s+="\n\n";
-	s+=TimetableGenerateForm::tr("Here are the placed activities which lead to an inconsistency, "
-	 "in order from the first one to the last (the last one FET failed to schedule "
-	 "and the last ones are most likely impossible):");
-	s+="\n\n";
-	for(int i=0; i<gen.nDifficultActivities; i++){
-		int ai=gen.difficultActivities[i];
-
-		s+=TimetableGenerateForm::tr("No: %1").arg(i+1);
-
-		s+=", ";
-
-		s+=TimetableGenerateForm::tr("Id: %1 (%2)", "%1 is id of activity, %2 is detailed description of activity")
-			.arg(gt.rules.internalActivitiesList[ai].id)
-			.arg(getActivityDetailedDescription(gt.rules, gt.rules.internalActivitiesList[ai].id));
-
-		s+="\n";
-	}
+	s+=getDifficultActivityListString(gen.getDifficultActivities());
 
 	myMutex.unlock();
 
@@ -468,22 +448,7 @@ void TimetableGenerateForm::impossibleToSolve()
 
 	s+=TimetableGenerateForm::tr("Additional information relating impossible to schedule activities:");
 	s+="\n\n";
-	s+=TimetableGenerateForm::tr("Please check the constraints related to the "
-	 "activity below, which might be impossible to schedule:");
-	s+="\n\n";
-	for(int i=0; i<gen.nDifficultActivities; i++){
-		int ai=gen.difficultActivities[i];
-
-		s+=TimetableGenerateForm::tr("No: %1").arg(i+1);
-
-		s+=", ";
-
-		s+=TimetableGenerateForm::tr("Id: %1 (%2)", "%1 is id of activity, %2 is detailed description of activity")
-			.arg(gt.rules.internalActivitiesList[ai].id)
-			.arg(getActivityDetailedDescription(gt.rules, gt.rules.internalActivitiesList[ai].id));
-
-		s+="\n";
-	}
+	s+=getDifficultActivityListString(gen.getDifficultActivities());
 
 	myMutex.unlock();
 
@@ -805,26 +770,7 @@ void TimetableGenerateForm::seeImpossible()
 
 	s+=TimetableGenerateForm::tr("Information relating difficult to schedule activities:");
 	s+="\n\n";
-	s+=TimetableGenerateForm::tr("Please check the constraints related to the last "
-	 "activities in the list below, which might be difficult to schedule:");
-	s+="\n\n";
-	s+=TimetableGenerateForm::tr("Here are the placed activities which lead to a difficulty, "
-	 "in order from the first one to the last (the last one FET failed to schedule "
-	 "and the last ones are difficult):");
-	s+="\n\n";
-	for(int i=0; i<gen.nDifficultActivities; i++){
-		int ai=gen.difficultActivities[i];
-
-		s+=TimetableGenerateForm::tr("No: %1").arg(i+1);
-
-		s+=", ";
-
-		s+=TimetableGenerateForm::tr("Id: %1 (%2)", "%1 is id of activity, %2 is detailed description of activity")
-			.arg(gt.rules.internalActivitiesList[ai].id)
-			.arg(getActivityDetailedDescription(gt.rules, gt.rules.internalActivitiesList[ai].id));
-
-		s+="\n";
-	}
+	s+=getDifficultActivityListString(gen.getDifficultActivities());
 
 	myMutex.unlock();
 	
@@ -880,3 +826,27 @@ void TimetableGenerateForm::showDialog(const QString &title, const QString &msg,
 	saveFETDialogGeometry(&dialog, settingsName);
 }
 
+QString TimetableGenerateForm::getDifficultActivityListString(const std::vector<int> &difficultActivities)
+{
+	QString s=tr("Please check the constraints related to the last "
+	 "activities in the list below, which might be impossible to schedule:");
+	s+="\n\n";
+	s+=tr("Here are the placed activities which lead to an inconsistency, "
+	 "in order from the first one to the last (the last one FET failed to schedule "
+	 "and the last ones are most likely impossible):");
+	s+="\n\n";
+	for(std::vector<int>::size_type i=0; i<difficultActivities.size(); i++){
+		int ai=difficultActivities[i];
+
+		s+=tr("No: %1").arg(i+1);
+
+		s+=", ";
+
+		s+=tr("Id: %1 (%2)", "%1 is id of activity, %2 is detailed description of activity")
+			.arg(gt.rules.internalActivitiesList[ai].id)
+			.arg(getActivityDetailedDescription(gt.rules, gt.rules.internalActivitiesList[ai].id));
+
+		s+="\n";
+	}
+	return s;
+}
