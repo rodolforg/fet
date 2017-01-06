@@ -1227,7 +1227,7 @@ int main(int argc, char **argv)
 			//2016-11-17 - suggested by thanhnambkhn, FET will write the impossible activity and the current and highest-stage timetables
 			//(which should be identical)
 
-			Solution& cc=gen.c;
+			Solution& cc=gen.getSolution();
 
 			//needed to find the conflicts strings
 			QString tmp;
@@ -1328,7 +1328,7 @@ int main(int argc, char **argv)
 			
 			//2011-11-11 (1)
 			//write current stage timetable
-			Solution& cc=gen.c;
+			Solution& cc=gen.getSolution();
 
 			//needed to find the conflicts strings
 			QString tmp;
@@ -1438,7 +1438,7 @@ int main(int argc, char **argv)
 		
 			TimetableExport::writeRandomSeedCommandLine(NULL, outputDirectory, false); //false represents 'before' state
 
-			Solution& c=gen.c;
+			Solution& c=gen.getSolution();
 
 			//needed to find the conflicts strings
 			QString tmp;

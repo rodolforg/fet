@@ -90,8 +90,6 @@ private:
 	inline bool getHomeRoom(const QList<int>& globalConflActivities, int level, const Activity* act, int ai, int d, int h, int& roomSlot, int& selectedSlot, QList<int>& localConflActivities);
 	inline bool getPreferredRoom(const QList<int>& globalConflActivities, int level, const Activity* act, int ai, int d, int h, int& roomSlot, int& selectedSlot, QList<int>& localConflActivities, bool& canBeUnspecifiedPreferredRoom);
 	inline bool getRoom(int level, const Activity* act, int ai, int d, int h, int& roomSlot, int& selectedSlot, QList<int>& conflActivities, int& nConflActivities);
-public:
-	Solution c;
 	
 public:
 	const std::vector<int> & getDifficultActivities() const;
@@ -106,6 +104,8 @@ public:
 	int getSearchTime() const;
 
 	int getMaxActivitiesPlaced() const;
+
+	Solution& getSolution();
 
 	Solution& getHighestStageSolution();
 	int getTimeToHighestStage() const;
@@ -137,6 +137,7 @@ private:
 	const Timetable &gt;
 	int maxActivitiesPlaced;
 	Solution highestStageSolution;
+	Solution c;
 
 	QDateTime generationStartDateTime;
 	QDateTime generationHighestStageDateTime;

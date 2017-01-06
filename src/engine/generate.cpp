@@ -9410,6 +9410,11 @@ int Generate::getMaxActivitiesPlaced() const
 	return maxActivitiesPlaced;
 }
 
+Solution &Generate::getSolution()
+{
+	return c;
+}
+
 Solution &Generate::getHighestStageSolution()
 {
 	return highestStageSolution;
