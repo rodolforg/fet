@@ -93,10 +93,6 @@ private:
 public:
 	Solution c;
 	
-	int searchTime; //seconds
-	
-	int timeToHighestStage; //seconds
-
 	bool abortOptimization;
 
 public:
@@ -107,9 +103,12 @@ public:
 
 	Status generate(int maxSeconds, bool threaded, QTextStream* maxPlacedActivityStream=NULL);
 
+	int getSearchTime() const;
+
 	int getMaxActivitiesPlaced() const;
 
 	Solution& getHighestStageSolution();
+	int getTimeToHighestStage() const;
 
 	QSemaphore semaphorePlacedActivity;
 	QSemaphore finishedSemaphore;
@@ -117,6 +116,10 @@ public:
 private:
 	std::vector<int> difficultActivities;
 
+	/// How long lasts the generate() calling. In seconds.
+	int searchTime;
+	/// Time when the current highest stage was achieved since generate() was called. In seconds.
+	int timeToHighestStage;
 	void moveActivity(int ai, int fromslot, int toslot, int fromroom, int toroom);
 	
 	void randomSwap(int ai, int level);

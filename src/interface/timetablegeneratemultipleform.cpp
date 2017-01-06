@@ -104,7 +104,7 @@ void GenerateMultipleThread::run()
 
 			////////2011-05-26
 			int mact=genMulti.getMaxActivitiesPlaced();
-			int mseconds=genMulti.timeToHighestStage;
+			int mseconds=genMulti.getTimeToHighestStage();
 
 			bool zero=false;
 			if(mseconds==0)
@@ -470,7 +470,7 @@ void TimetableGenerateMultipleForm::activityPlaced(int na)
 			
 	////////2011-05-26
 	int mact=genMulti.getMaxActivitiesPlaced();
-	int mseconds=genMulti.timeToHighestStage;
+	int mseconds=genMulti.getTimeToHighestStage();
 
 	QString s;
 
