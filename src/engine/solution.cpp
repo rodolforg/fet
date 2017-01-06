@@ -170,7 +170,7 @@ double Solution::fitness(const Rules &r, QString* conflictsString){
 	return this->_fitness;
 }
 
-int Solution::getTeachersMatrix(const Rules& r, Matrix3D<int>& a) {
+int Solution::getTeachersMatrix(const Rules& r, Matrix3D<int>& a) const {
 	assert(r.initialized);
 	assert(r.internalStructureComputed);
 	
@@ -201,7 +201,7 @@ int Solution::getTeachersMatrix(const Rules& r, Matrix3D<int>& a) {
 	return conflicts;
 }
 
-int Solution::getSubgroupsMatrix(const Rules& r, Matrix3D<int>& a){
+int Solution::getSubgroupsMatrix(const Rules& r, Matrix3D<int>& a) const {
 	assert(r.initialized);
 	assert(r.internalStructureComputed);
 	
@@ -234,7 +234,7 @@ int Solution::getSubgroupsMatrix(const Rules& r, Matrix3D<int>& a){
 
 //The following 2 functions (GetTeachersTimetable & GetSubgroupsTimetable)
 //are very similar to the above 2 ones (GetTeachersMatrix & GetSubgroupsMatrix)
-void Solution::getTeachersTimetable(const Rules &r, Matrix3D<int>& a, Matrix3D<QList<int> >& b) const{
+void Solution::getTeachersTimetable(const Rules &r, Matrix3D<int>& a, Matrix3D<QList<int> >& b) const {
 	assert(r.initialized);
 	assert(r.internalStructureComputed);
 	
@@ -361,7 +361,7 @@ void Solution::getTeachersTimetable(const Rules &r, Matrix3D<int>& a, Matrix3D<Q
 	}
 }
 
-void Solution::getSubgroupsTimetable(const Rules &r, Matrix3D<int>& a) const{
+void Solution::getSubgroupsTimetable(const Rules &r, Matrix3D<int>& a) const {
 	assert(r.initialized);
 	assert(r.internalStructureComputed);
 	
@@ -393,7 +393,7 @@ void Solution::getSubgroupsTimetable(const Rules &r, Matrix3D<int>& a) const{
 
 int Solution::getRoomsMatrix(
 	const Rules& r,
-	Matrix3D<int>& a)
+	Matrix3D<int>& a) const
 {
 	assert(r.initialized);
 	assert(r.internalStructureComputed);

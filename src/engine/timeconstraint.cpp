@@ -28,6 +28,7 @@ File timeconstraint.cpp
 #include "subject.h"
 #include "activitytag.h"
 #include "studentsset.h"
+#include "solution.h"
 
 #include "matrix.h"
 
