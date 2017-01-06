@@ -1461,7 +1461,7 @@ inline bool skipRandom(double weightPercentage)
 
 
 Generate::Generate(const Timetable &gt)
-	: gt(gt), abortOptimization(false)
+	: abortOptimization(false), gt(gt)
 {
 	difficultActivities.reserve(MAX_ACTIVITIES);
 	difficultActivities.resize(MAX_ACTIVITIES);
@@ -2408,9 +2408,15 @@ int Generate::getSearchTime() const
 	return searchTime;
 }
 
+void Generate::abort()
+{
+	abortOptimization = true;
+}
+
 Generate::Status Generate::generate(int maxSeconds, bool threaded, QTextStream* maxPlacedActivityStream)
 {
 	this->isThreaded=threaded;
+	abortOptimization = false;
 
 	l0nWrong.resize(gt.rules.nHoursPerWeek);
 	l0minWrong.resize(gt.rules.nHoursPerWeek);

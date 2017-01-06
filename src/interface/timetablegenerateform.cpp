@@ -130,7 +130,6 @@ void TimetableGenerateForm::start(){
 
 	currentResultsTextEdit->setPlainText(TimetableGenerateForm::tr("Entering simulation....precomputing, please be patient"));
 	
-	gen.abortOptimization=false;
 	bool ok=gen.precompute(this);
 	
 	if(!ok){
@@ -170,7 +169,7 @@ void TimetableGenerateForm::stop()
 	simulation_running=false;
 
 	myMutex.lock();
-	gen.abortOptimization=true;
+	gen.abort();
 	myMutex.unlock();
 
 	myMutex.lock();
@@ -282,7 +281,7 @@ void TimetableGenerateForm::stopHighest()
 	simulation_running=false;
 
 	myMutex.lock();
-	gen.abortOptimization=true;
+	gen.abort();
 	myMutex.unlock();
 
 	myMutex.lock();
@@ -391,7 +390,7 @@ void TimetableGenerateForm::impossibleToSolve()
 	simulation_running=false;
 
 	myMutex.lock();
-	gen.abortOptimization=true;
+	gen.abort();
 	myMutex.unlock();
 
 	myMutex.lock();
