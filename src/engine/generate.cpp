@@ -2403,6 +2403,11 @@ const std::vector<int> &Generate::getDifficultActivities() const
 	return difficultActivities;
 }
 
+int Generate::getSearchTime() const
+{
+	return searchTime;
+}
+
 Generate::Status Generate::generate(int maxSeconds, bool threaded, QTextStream* maxPlacedActivityStream)
 {
 	this->isThreaded=threaded;
@@ -9402,4 +9407,9 @@ int Generate::getMaxActivitiesPlaced() const
 Solution &Generate::getHighestStageSolution()
 {
 	return highestStageSolution;
+}
+
+int Generate::getTimeToHighestStage() const
+{
+	return timeToHighestStage;
 }

@@ -565,9 +565,9 @@ void TimetableGenerateForm::activityPlaced(int na){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 
 	myMutex.lock();
-	int t=gen.searchTime; //seconds
+	int t=gen.getSearchTime(); //seconds
 	int mact=gen.getMaxActivitiesPlaced();
-	int seconds=gen.timeToHighestStage;
+	int seconds=gen.getTimeToHighestStage();
 	myMutex.unlock();
 
 	//write to the Qt interface
