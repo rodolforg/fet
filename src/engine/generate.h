@@ -26,6 +26,7 @@ File generate.h
 #include "timetable_defs.h"
 #include "solution.h"
 
+#include <vector>
 #include <QTextStream>
 #include <QDateTime>
 #include <QSemaphore>
@@ -92,15 +93,14 @@ private:
 public:
 	Solution c;
 	
-	//difficult activities
-	int nDifficultActivities;
-	int difficultActivities[MAX_ACTIVITIES];
-
 	int searchTime; //seconds
 	
 	int timeToHighestStage; //seconds
 
 	bool abortOptimization;
+
+public:
+	const std::vector<int> & getDifficultActivities() const;
 
 	enum Status {SUCCESS, IMPOSSIBLE, TIMEOUT, ABORTED};
 	bool precompute(QWidget* parent, QTextStream* maxPlacedActivityStream=NULL);
@@ -115,6 +115,8 @@ public:
 	QSemaphore finishedSemaphore;
 
 private:
+	std::vector<int> difficultActivities;
+
 	void moveActivity(int ai, int fromslot, int toslot, int fromroom, int toroom);
 	
 	void randomSwap(int ai, int level);

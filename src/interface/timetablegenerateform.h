@@ -19,9 +19,6 @@
 #define TIMETABLEGENERATEFORM_H
 
 #include "ui_timetablegenerateform_template.h"
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
 
 #include <QThread>
 
@@ -70,6 +67,7 @@ private slots:
 
 private:
 	void showDialog(const QString & title, const QString & msg, bool beep);
+	QString getDifficultActivityListString(const std::vector<int> &difficultActivities);
 };
 
 #endif
