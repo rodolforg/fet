@@ -66,9 +66,7 @@ void Solution::init(const Rules &r){
 		this->rooms[i]=UNALLOCATED_SPACE;
 	}
 
-	this->_fitness=-1;
-	
-	this->changedForMatrixCalculation=true;
+	resetFitness();
 }
 
 void Solution::makeUnallocated(const Rules &r){
@@ -80,9 +78,13 @@ void Solution::makeUnallocated(const Rules &r){
 		this->rooms[i]=UNALLOCATED_SPACE;
 	}
 
-	this->_fitness=-1;
+	resetFitness();
+}
 
-	this->changedForMatrixCalculation=true;
+void Solution::resetFitness()
+{
+	_fitness = -1;
+	changedForMatrixCalculation = true;
 }
 
 double Solution::fitness(const Rules &r, QString* conflictsString){
