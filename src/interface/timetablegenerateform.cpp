@@ -153,8 +153,6 @@ void TimetableGenerateForm::start(){
 
 	simulation_running=true;
 	
-	gen.c.makeUnallocated(gt.rules);
-	
 	TimetableExport::writeRandomSeed(this, true); //true represents 'before' state
 
 	generateThread.start();
@@ -174,7 +172,7 @@ void TimetableGenerateForm::stop()
 
 	myMutex.lock();
 
-	Solution& c=gen.c;
+	Solution& c=gen.getSolution();
 
 	//needed to find the conflicts strings
 	QString tmp;
@@ -396,7 +394,7 @@ void TimetableGenerateForm::impossibleToSolve()
 	myMutex.lock();
 
 
-	Solution& c=gen.c;
+	Solution& c=gen.getSolution();
 
 	//needed to find the conflicts strings
 	QString tmp;
@@ -477,7 +475,7 @@ void TimetableGenerateForm::simulationFinished()
 
 	TimetableExport::writeRandomSeed(this, false); //false represents 'before' state
 
-	Solution& c=gen.c;
+	Solution& c=gen.getSolution();
 
 	//needed to find the conflicts strings
 	QString tmp;
@@ -660,7 +658,7 @@ void TimetableGenerateForm::help()
 void TimetableGenerateForm::write(){
 	myMutex.lock();
 
-	Solution& c=gen.c;
+	Solution& c=gen.getSolution();
 
 	//needed to find the conflicts strings
 	QString tmp;

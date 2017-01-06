@@ -143,12 +143,13 @@ void GenerateMultipleThread::run()
 			int minutes=seconds/60;
 			seconds%=60;
 			
+			Solution c = genMulti.getSolution();
 			QString tmp;
-			genMulti.c.fitness(gt.rules, &tmp);
+			c.fitness(gt.rules, &tmp);
 			
 			s=tr("Timetable breaks %1 soft constraints, has %2 soft conflicts total, and was generated in %3 hours, %4 minutes and %5 seconds.")
-			 .arg(genMulti.c.conflictsWeightList.count())
-			 .arg(CustomFETString::number(genMulti.c.conflictsTotal))
+			 .arg(c.conflictsWeightList.count())
+			 .arg(CustomFETString::number(c.conflictsTotal))
 			 .arg(hours)
 			 .arg(minutes)
 			 .arg(seconds);
@@ -298,8 +299,6 @@ void TimetableGenerateMultipleForm::start(){
 	for(int qq=0; qq<gt.rules.nInternalActivities; qq++)
 		savedPermutation[qq]=permutation[qq];
 		
-	genMulti.c.makeUnallocated(gt.rules);
-
 	generateMultipleThread.start();
 }
 
@@ -326,13 +325,15 @@ void TimetableGenerateMultipleForm::timetableGenerated(int timetable, const QStr
 	TimetableExport::writeReportForMultiple(this, s, begin);
 
 	if(ok){
+		Solution& c=genMulti.getSolution();
+
 		//needed to get the conflicts string
 		QString tmp;
-		genMulti.c.fitness(gt.rules, &tmp);
+		c.fitness(gt.rules, &tmp);
 	
-		TimetableExport::getStudentsTimetable(genMulti.c);
-		TimetableExport::getTeachersTimetable(genMulti.c);
-		TimetableExport::getRoomsTimetable(genMulti.c);
+		TimetableExport::getStudentsTimetable(c);
+		TimetableExport::getTeachersTimetable(c);
+		TimetableExport::getRoomsTimetable(c);
 
 		TimetableExport::writeSimulationResults(this, timetable);
 
