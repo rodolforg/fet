@@ -69,8 +69,6 @@ int savedPermutation[MAX_ACTIVITIES];
 
 void GenerateMultipleThread::run()
 {
-	genMulti.abortOptimization=false;
-
 	time(&initial_time);
 
 	for(int i=0; i<nTimetables; i++){
@@ -367,7 +365,7 @@ void TimetableGenerateMultipleForm::stop()
 	simulation_running_multi=false;
 
 	myMutex.lock();
-	genMulti.abortOptimization=true;
+	genMulti.abort();
 	myMutex.unlock();
 
 	QString s=TimetableGenerateMultipleForm::tr("Simulation interrupted!");

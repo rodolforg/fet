@@ -158,7 +158,7 @@ void terminate(int param)
 
 	assert(terminateGeneratePointer!=NULL);
 	
-	terminateGeneratePointer->abortOptimization=true;
+	terminateGeneratePointer->abort();
 }
 
 void usage(QTextStream* out, const QString& error)
@@ -1196,7 +1196,6 @@ int main(int argc, char **argv)
 		terminateGeneratePointer=&gen;
 		signal(SIGTERM, terminate);
 	
-		gen.abortOptimization=false;
 		bool ok=gen.precompute(NULL, &initialOrderStream);
 		
 		initialOrderFile.close();

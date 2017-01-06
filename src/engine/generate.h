@@ -93,10 +93,10 @@ private:
 public:
 	Solution c;
 	
-	bool abortOptimization;
-
 public:
 	const std::vector<int> & getDifficultActivities() const;
+
+	void abort();
 
 	enum Status {SUCCESS, IMPOSSIBLE, TIMEOUT, ABORTED};
 	bool precompute(QWidget* parent, QTextStream* maxPlacedActivityStream=NULL);
@@ -114,6 +114,8 @@ public:
 	QSemaphore finishedSemaphore;
 
 private:
+	bool abortOptimization;
+
 	std::vector<int> difficultActivities;
 
 	/// How long lasts the generate() calling. In seconds.
