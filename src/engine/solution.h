@@ -64,14 +64,6 @@ public:
 	int rooms[MAX_ACTIVITIES];
 
 	/**
-	Fitness; it is calculated only at the initialization or
-	at the modification.
-	Important assumption: the rules have to ramain the same;
-	otherwise the user has to reset this value to -1
-	*/
-	double _fitness;
-
-	/**
 	Assignment method. We need to have access to the Rules instantiation
 	to know the number of activities.
 	*/
@@ -89,7 +81,14 @@ public:
 	void makeUnallocated(const Rules& r);
 
 	/**
-	ATTENTION: if the rules change, the user has to reset _fitness to -1
+	  Clean fitness cached value.
+	  It is needed to force recomputation when calling fitness().
+	  It must be called every time the rules change.
+	*/
+	void resetFitness();
+
+	/**
+	ATTENTION: if the rules change, the user has to call resetFitness()
 	<p>
 	If conflictsString is not null, then this function will
 	append at this string an explanation of the conflicts.
@@ -110,6 +109,15 @@ public:
 	int getTeachersMatrix(const Rules &r, Matrix3D<int>& a);
 
 	int getRoomsMatrix(const Rules &r, Matrix3D<int>& a);
+
+private:
+	/**
+	Fitness; it is calculated only at the initialization or
+	at the modification.
+	Important assumption: the rules have to ramain the same;
+	otherwise the user has to reset this value to -1
+	*/
+	double _fitness;
 };
 
 #endif

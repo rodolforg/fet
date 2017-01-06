@@ -2913,8 +2913,7 @@ if(threaded){
 					c.times[permutation[i]]=UNALLOCATED_TIME;
 				c.rooms[permutation[i]]=UNALLOCATED_SPACE;
 			}
-			c._fitness=-1;
-			c.changedForMatrixCalculation=true;
+			c.resetFitness();
 				
 			added_act=q+1;
 if(threaded){
@@ -3115,8 +3114,7 @@ void Generate::moveActivity(int ai, int fromslot, int toslot, int fromroom, int 
 	
 	c.times[ai]=toslot;
 	c.rooms[ai]=toroom;
-	c._fitness=-1;
-	c.changedForMatrixCalculation=true;
+	c.resetFitness();
 	
 	if(toslot!=UNALLOCATED_TIME){
 		int d=toslot%gt.rules.nDaysPerWeek;
