@@ -64,7 +64,7 @@ public:
 };
 
 /**
- * @brief Matrix3D is a simple 2D vector class with proper resource deallocation
+ * @brief Matrix2D is a simple 2D vector class with proper resource deallocation
  */
 template <typename T>
 class Matrix2D
@@ -95,7 +95,7 @@ public:
 };
 
 /**
- * @brief Matrix3D is a simple vector class with proper resource deallocation
+ * @brief Matrix1D is a simple vector class with proper resource deallocation
  */
 template <typename T>
 class Matrix1D
