@@ -99,11 +99,11 @@ public:
 	void getRoomsTimetable(const Rules& r, Matrix3D<int>& a) const;
 	//return value is the number of conflicts, which must be 0
 
-	int getSubgroupsMatrix(const Rules &r, Matrix3D<int>& a);
+	int getSubgroupsMatrix(const Rules &r, Matrix3D<int>& a) const;
 
-	int getTeachersMatrix(const Rules &r, Matrix3D<int>& a);
+	int getTeachersMatrix(const Rules &r, Matrix3D<int>& a) const;
 
-	int getRoomsMatrix(const Rules &r, Matrix3D<int>& a);
+	int getRoomsMatrix(const Rules &r, Matrix3D<int>& a) const;
 
 private:
 	/**
