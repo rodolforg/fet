@@ -27,9 +27,6 @@ class GenerateThread: public QThread{
 
 public:
 	void run();
-
-signals:
-	void generationComputed(int generation);
 };
 
 class TimetableGenerateForm : public QDialog, Ui::TimetableGenerateForm_template  {
