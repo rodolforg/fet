@@ -6805,7 +6805,7 @@ bool Rules::read(QWidget* parent, const QString& fileName, bool commandLine, QSt
 	return true;
 }
 
-bool Rules::write(QWidget *parent, const QString& filename)
+bool Rules::write(QWidget *parent, const QString& filename) const
 {
 	assert(this->initialized);
 
