@@ -703,7 +703,7 @@ public:
 	/**
 	Write the rules to the xml input file "inputfile".
 	*/
-	bool write(QWidget* parent, const QString& filename);
+	bool write(QWidget* parent, const QString& filename) const;
 	
 	int activateTeacher(const QString& teacherName);
 	
