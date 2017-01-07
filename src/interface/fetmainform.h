@@ -22,18 +22,6 @@
 
 #include "ui_fetmainform_template.h"
 
-#include <QMutex>
-#include <QThread>
-
-#if QT_VERSION >= 0x050000
-#include <QtWidgets>
-#else
-#include <QtGui>
-#endif
-
-#include <QResizeEvent>
-#include <QCloseEvent>
-
 #include <QString>
 #include <QStringList>
 
@@ -41,39 +29,12 @@
 
 #include <QMap>
 
+#include <QSpinBox>
+
 class QNetworkAccessManager;
 class QNetworkReply;
 
 const int MAX_RECENT_FILES=10;
-
-class RandomSeedDialog: public QDialog
-{
-	Q_OBJECT
-	
-public:
-	QLabel* labelX;
-	QLabel* labelY;
-	
-	QLabel* valuesLabelX;
-	QLabel* valuesLabelY;
-	
-	QLineEdit* lineEditX;
-	QLineEdit* lineEditY;
-	QPushButton* helpPB;
-	QPushButton* okPB;
-	QPushButton* cancelPB;
-	QGridLayout* seedLayoutX;
-	QGridLayout* seedLayoutY;
-	QHBoxLayout* buttonsLayout;
-	QVBoxLayout* mainLayout;
-
-	RandomSeedDialog(QWidget* parent);
-	~RandomSeedDialog();
-	
-public slots:
-	void help();
-	void ok();
-};
 
 class FetMainForm: public QMainWindow, public Ui::FetMainForm_template
 {
