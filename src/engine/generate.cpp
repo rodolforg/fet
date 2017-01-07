@@ -3365,8 +3365,8 @@ again_if_impossible_activity:
 		nConflActivities[newtime]=0;
 		conflActivities[newtime].clear();
 
-		int d=newtime%gt.rules.nDaysPerWeek;
-		int h=newtime/gt.rules.nDaysPerWeek;
+		const int d=newtime%gt.rules.nDaysPerWeek;
+		const int h=newtime/gt.rules.nDaysPerWeek;
 		
 		/*if(updateSubgroups || updateTeachers){
 			addAiToNewTimetable(ai, act, d, h);
