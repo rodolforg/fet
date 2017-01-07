@@ -850,8 +850,6 @@ void AddActivityForm::addActivity()
 			if (!broke)
 				continue;
 
-			ConstraintActivitiesSameStartingDay * c1 = new ConstraintActivitiesSameStartingDay(100, breakableList.size(), breakableList);
-			bool tmp = gt.rules.addTimeConstraint(c1);
 			if (breakableList.size() == 2) {
 				ConstraintTwoActivitiesGrouped * c2 = new ConstraintTwoActivitiesGrouped(100, breakableList[0], breakableList[1]);
 				bool tmp = gt.rules.addTimeConstraint(c2);
