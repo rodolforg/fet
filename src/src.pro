@@ -1282,7 +1282,8 @@ FORMS += \
 	\
 	interface/timetablestowriteondiskform_template.ui \
 	\
-	interface/teachersubjectsqualificationsform_template.ui
+	interface/teachersubjectsqualificationsform_template.ui \
+	interface/timetableprintform_template.ui
 
 TRANSLATIONS += \
 	../translations/fet_ar.ts \

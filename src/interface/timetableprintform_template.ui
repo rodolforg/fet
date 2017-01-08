@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TimetablePrintForm_template</class>
+ <widget class="QDialog" name="TimetablePrintForm_template">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>561</width>
+    <height>518</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Print timetable dialog</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <layout class="QVBoxLayout" name="leftDialogLayout">
+     <item>
+      <widget class="QComboBox" name="CBTables">
+       <item>
+        <property name="text">
+         <string>Subgroups</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Groups</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Years</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Teachers</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Teachers Free Periods</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Rooms</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Subjects</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Activity Tags</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>All activities</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Students Statistics</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Teachers Statistics</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListWidget" name="namesList">
+       <property name="selectionMode">
+        <enum>QAbstractItemView::MultiSelection</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="selectUnselectButtons">
+       <item>
+        <widget class="QPushButton" name="pbSelectAll">
+         <property name="text">
+          <string extracomment="Refers to a list of items, select all. Please keep translation short">All</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pbUnselectAll">
+         <property name="text">
+          <string extracomment="Refers to a list of items, select none. Please keep translation short">None</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="rightDialogLayout">
+     <item>
+      <widget class="QGroupBox" name="actionsBox">
+       <property name="title">
+        <string>Print</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="2" column="1">
+         <widget class="QRadioButton" name="RBTimeVerticalDay">
+          <property name="text">
+           <string>Time vertical per day</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QRadioButton" name="RBDaysVertical">
+          <property name="text">
+           <string>Days vertical</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QRadioButton" name="RBTimeHorizontal">
+          <property name="text">
+           <string>Time horizontal</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QRadioButton" name="RBTimeHorizontalDay">
+          <property name="text">
+           <string>Time horizontal per day</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QRadioButton" name="RBDaysHorizontal">
+          <property name="text">
+           <string>Days horizontal</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QRadioButton" name="RBTimeVertical">
+          <property name="text">
+           <string>Time vertical</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="optionsBox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="title">
+        <string>Options</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="6" column="1">
+         <widget class="QComboBox" name="CBWhiteSpace">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <item>
+           <property name="text">
+            <string notr="true">normal</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string notr="true">pre</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string notr="true">nowrap</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string notr="true">pre-wrap</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QComboBox" name="CBBreak">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="currentIndex">
+           <number>1</number>
+          </property>
+          <item>
+           <property name="text">
+            <string extracomment="No page-break between timetables. Please keep translation short">Page-break: none</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string extracomment="Page-break after each timetable. Please keep translation short">Page-break: always</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string extracomment="Page-break after each even timetable. Please keep translation short">Page-break: even</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QComboBox" name="CBpaperSize">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QSpinBox" name="fontSizeTable">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimum">
+           <number>4</number>
+          </property>
+          <property name="maximum">
+           <number>20</number>
+          </property>
+          <property name="value">
+           <number>8</number>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QCheckBox" name="repeatNames">
+          <property name="text">
+           <string>Repeat vertical names</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QSpinBox" name="activitiesPadding">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximum">
+           <number>25</number>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QCheckBox" name="printActivityTags">
+          <property name="text">
+           <string>Activity tags</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QSpinBox" name="leftPageMargin">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximum">
+           <number>50</number>
+          </property>
+          <property name="value">
+           <number>10</number>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="QCheckBox" name="automaticColors">
+          <property name="text">
+           <string>Colors</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSpinBox" name="maxNames">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>999</number>
+          </property>
+          <property name="value">
+           <number>10</number>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QSpinBox" name="tablePadding">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QComboBox" name="CBorientationMode">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <item>
+           <property name="text">
+            <string>Portrait</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Landscape</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QSpinBox" name="rightPageMargin">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximum">
+           <number>50</number>
+          </property>
+          <property name="value">
+           <number>10</number>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="QCheckBox" name="printDetailedTables">
+          <property name="text">
+           <string>Detailed tables</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QSpinBox" name="bottomPageMargin">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximum">
+           <number>50</number>
+          </property>
+          <property name="value">
+           <number>10</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QSpinBox" name="topPageMargin">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximum">
+           <number>50</number>
+          </property>
+          <property name="value">
+           <number>10</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="previewPrintClose">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pbPrintPreviewSmall">
+         <property name="text">
+          <string extracomment="Small print preview. Please keep translation short">Teaser</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pbPrintPreviewFull">
+         <property name="text">
+          <string extracomment="Full print preview. Please keep translation short">Preview</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pbPrint">
+         <property name="text">
+          <string extracomment="Please keep translation short">Print</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pbClose">
+         <property name="text">
+          <string extracomment="Please keep translation short">Close</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

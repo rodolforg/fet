@@ -43,6 +43,8 @@ class QToolButton;
 class QSizePolicy;
 class QListWidget;
 
+#include "ui_timetableprintform_template.h"
+
 class StartTimetablePrint: public QObject{
 	Q_OBJECT
 
@@ -50,59 +52,13 @@ public:
 	static void startTimetablePrint(QWidget* parent);
 };
 
-class TimetablePrintForm: public QDialog{
+class TimetablePrintForm: public QDialog, Ui::TimetablePrintForm_template
+{
 	Q_OBJECT
 	
 public:
 	TimetablePrintForm(QWidget* parent);
 	~TimetablePrintForm();
-
-private:
-	QComboBox* CBTables;
-	QListWidget* namesList;
-	QPushButton* pbSelectAll;
-	QPushButton* pbUnselectAll;
-
-	QGroupBox* actionsBox;
-	QRadioButton* RBDaysHorizontal;
-	QRadioButton* RBDaysVertical;
-	QRadioButton* RBTimeHorizontal;
-	QRadioButton* RBTimeVertical;
-	//By Liviu Lalescu - unused anymore
-	//QCheckBox* CBDivideTimeAxisByDay;
-	QRadioButton* RBTimeHorizontalDay;
-	QRadioButton* RBTimeVerticalDay;
-
-	QGroupBox* optionsBox;
-	QComboBox* CBBreak;
-	QComboBox* CBWhiteSpace;
-//	QComboBox* CBprinterMode;
-	QComboBox* CBpaperSize;
-	QComboBox* CBorientationMode;
-	QSpinBox* activitiesPadding;
-	QSpinBox* tablePadding;
-	QSpinBox* fontSizeTable;
-	QSpinBox* maxNames;
-	
-	QSpinBox* leftPageMargin;
-	QSpinBox* topPageMargin;
-	QSpinBox* rightPageMargin;
-	QSpinBox* bottomPageMargin;
-	
-//	QCheckBox* markNotAvailable;
-//	QCheckBox* markBreak;
-//	QCheckBox* printSameStartingTime;
-	QCheckBox* printDetailedTables;
-	QCheckBox* printActivityTags;	//TODO: to this with combo box: "always", "never", "if available".
-									//maybe TODO: do it similar with students, teachers, rooms, ...
-	QCheckBox* repeatNames;
-	QCheckBox* automaticColors;
-	
-	QPushButton* pbPrintPreviewSmall;
-	QPushButton* pbPrintPreviewFull;
-	QPushButton* pbPrint;
-	
-	QPushButton* pbClose;
 
 private slots:
 	void selectAll();
