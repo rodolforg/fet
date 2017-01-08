@@ -241,9 +241,6 @@ using namespace std;
 //for the icons of not perfect constraints
 #include <QIcon>
 
-#include <QRect>
-
-QRect mainFormSettingsRect;
 int MAIN_FORM_SHORTCUTS_TAB_POSITION;
 
 #include "spreadmindaysconstraintsfivedaysform.h"
@@ -290,10 +287,6 @@ bool WRITE_TIMETABLES_ACTIVITIES=true;
 Rules rules2;
 
 #ifndef FET_COMMAND_LINE
-static int ORIGINAL_WIDTH;
-static int ORIGINAL_HEIGHT;
-//static int ORIGINAL_X;
-//static int ORIGINAL_Y;
 
 bool USE_GUI_COLORS=false;
 
@@ -336,7 +329,6 @@ FetMainForm::FetMainForm()
 	int nRec=settings.value(QString("FetMainForm/number-of-recent-files"), 0).toInt();
 	if(nRec>MAX_RECENT_FILES)
 		nRec=MAX_RECENT_FILES;
-	recentFiles.clear();
 	for(int i=0; i<nRec; i++)
 		if(settings.contains(QString("FetMainForm/recent-file/")+CustomFETString::number(i+1)))
 			recentFiles.append(settings.value(QString("FetMainForm/recent-file/")+CustomFETString::number(i+1)).toString());
@@ -404,21 +396,14 @@ FetMainForm::FetMainForm()
 	shortcutTimetableAdvancedMenu=new QMenu();
 	shortcutTimetableAdvancedMenu->addAction(groupActivitiesInInitialOrderAction);
 	
-	ORIGINAL_WIDTH=width();
-	ORIGINAL_HEIGHT=height();
-	//ORIGINAL_X=x();
-	//ORIGINAL_Y=y();
-	
-	QRect rect=mainFormSettingsRect;
-	if(!rect.isValid()){
+	originalWindowSize = size();
+
+	windowSettingsRect=settings.value("FetMainForm/geometry", QRect(0,0,0,0)).toRect();
+	if(!windowSettingsRect.isValid()){
 		forceCenterWidgetOnScreen(this);
 	}
 	else{
-		//this->setWindowFlags(this->windowFlags() | Qt::CustomizeWindowHint | Qt::WindowCloseButtonHint | Qt::WindowMinMaxButtonsHint);
-		
-		/*resize(rect.size());
-		move(rect.topLeft());*/
-		this->setGeometry(rect);
+		this->setGeometry(windowSettingsRect);
 	}
 
 	//new data
@@ -821,9 +806,7 @@ void FetMainForm::closeOtherWindows()
 
 void FetMainForm::closeEvent(QCloseEvent* event)
 {
-	//QRect rect(x(), y(), width(), height());
-	QRect rect=this->geometry();
-	mainFormSettingsRect=rect;
+	windowSettingsRect=this->geometry();
 	
 	MAIN_FORM_SHORTCUTS_TAB_POSITION=tabWidget->currentIndex();
 	
@@ -863,6 +846,8 @@ FetMainForm::~FetMainForm()
 	settings.remove(QString("FetMainForm/recent-file"));
 	for(int i=0; i<recentFiles.count(); i++)
 		settings.setValue(QString("FetMainForm/recent-file/")+CustomFETString::number(i+1), recentFiles.at(i));
+
+	settings.setValue("FetMainForm/geometry", windowSettingsRect);
 
 	shortcutBasicMenu->clear();
 	delete shortcutBasicMenu;
@@ -3963,8 +3948,7 @@ void FetMainForm::on_settingsRestoreDefaultsAction_triggered()
 	recentFiles.clear();
 	updateRecentFileActions();
 
-	resize(ORIGINAL_WIDTH, ORIGINAL_HEIGHT);
-	//move(ORIGINAL_X, ORIGINAL_Y);
+	resize(originalWindowSize);
 	forceCenterWidgetOnScreen(this);
 	
 #ifndef USE_SYSTEM_LOCALE

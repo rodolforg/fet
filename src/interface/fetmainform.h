@@ -34,13 +34,16 @@
 class QNetworkAccessManager;
 class QNetworkReply;
 
-const int MAX_RECENT_FILES=10;
-
 class FetMainForm: public QMainWindow, public Ui::FetMainForm_template
 {
 	Q_OBJECT
 	
 private:
+	static const int MAX_RECENT_FILES=10;
+
+	QSize originalWindowSize;
+	QRect windowSettingsRect;
+
 	QSpinBox communicationSpinBox;
 	
 	QMenu* shortcutBasicMenu;

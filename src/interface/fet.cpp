@@ -91,7 +91,6 @@ static QSet<QString> languagesSet;
 using namespace std;
 
 #ifndef FET_COMMAND_LINE
-extern QRect mainFormSettingsRect;
 extern int MAIN_FORM_SHORTCUTS_TAB_POSITION;
 #endif
 
@@ -355,8 +354,6 @@ void readSimulationParameters()
 	SHOW_WARNING_FOR_GROUP_ACTIVITIES_IN_INITIAL_ORDER=newSettings.value("warn-if-using-group-activities-in-initial-order", "true").toBool();
 	
 	//main form
-	QRect rect=newSettings.value("FetMainForm/geometry", QRect(0,0,0,0)).toRect();
-	mainFormSettingsRect=rect;
 	//MAIN_FORM_SHORTCUTS_TAB_POSITION=newSettings.value("FetMainForm/shortcuts-tab-position", "0").toInt();
 	MAIN_FORM_SHORTCUTS_TAB_POSITION=0; //always restoring to the first page, as suggested by a user
 	SHOW_SHORTCUTS_ON_MAIN_WINDOW=newSettings.value("FetMainForm/show-shortcuts", "true").toBool();
@@ -430,7 +427,6 @@ void writeSimulationParameters()
 	settings.setValue("warn-if-using-group-activities-in-initial-order", SHOW_WARNING_FOR_GROUP_ACTIVITIES_IN_INITIAL_ORDER);
 
 	//main form
-	settings.setValue("FetMainForm/geometry", mainFormSettingsRect);
 	//settings.setValue("FetMainForm/shortcuts-tab-position", MAIN_FORM_SHORTCUTS_TAB_POSITION);
 	//settings.setValue("FetMainForm/shortcuts-tab-position", 0); //always starting on the first page, as suggested by a user
 	settings.setValue("FetMainForm/show-shortcuts", SHOW_SHORTCUTS_ON_MAIN_WINDOW);
