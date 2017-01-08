@@ -130,93 +130,7 @@ void StartTimetablePrint::startTimetablePrint(QWidget* parent)
 
 // this is very similar to statisticsexport.cpp. so please also check there if you change something here!
 TimetablePrintForm::TimetablePrintForm(QWidget *parent): QDialog(parent){
-	this->setWindowTitle(tr("Print timetable dialog"));
-	
-	QHBoxLayout* wholeDialog=new QHBoxLayout(this);
-	
-	QVBoxLayout* leftDialog=new QVBoxLayout();
-
-	QStringList timetableNames;
-	timetableNames<<tr("Subgroups")
-		<<tr("Groups")
-		<<tr("Years")
-		<<tr("Teachers")
-		<<tr("Teachers Free Periods")
-		<<tr("Rooms")
-		<<tr("Subjects")
-		<<tr("Activity Tags")
-		<<tr("All activities")
-		<<tr("Students Statistics")
-		<<tr("Teachers Statistics");
-	CBTables=new QComboBox();
-	CBTables->addItems(timetableNames);
-
-	namesList = new QListWidget();
-	namesList->setSelectionMode(QAbstractItemView::MultiSelection);
-
-	QHBoxLayout* selectUnselect=new QHBoxLayout();
-	pbSelectAll=new QPushButton(tr("All", "Refers to a list of items, select all. Please keep translation short"));
-	//pbSelectAll->setAutoDefault(false);
-	pbUnselectAll=new QPushButton(tr("None", "Refers to a list of items, select none. Please keep translation short"));
-	selectUnselect->addWidget(pbSelectAll);
-	selectUnselect->addWidget(pbUnselectAll);
-
-	leftDialog->addWidget(CBTables);
-	leftDialog->addWidget(namesList);
-	leftDialog->addLayout(selectUnselect);
-	
-	QVBoxLayout* rightDialog=new QVBoxLayout();
-	
-	/*QGroupBox**/ actionsBox=new QGroupBox(tr("Print"));
-	QGridLayout* actionsBoxGrid=new QGridLayout();
-	RBDaysHorizontal= new QRadioButton(tr("Days horizontal"));
-	RBDaysVertical= new QRadioButton(tr("Days vertical"));
-	RBTimeHorizontal= new QRadioButton(tr("Time horizontal"));
-	RBTimeVertical= new QRadioButton(tr("Time vertical"));
-	//By Liviu Lalescu - not used anymore
-	//CBDivideTimeAxisByDay=new QCheckBox(tr("Divide by days", "Refers to dividing time axis timetables by days"));
-	//CBDivideTimeAxisByDay->setChecked(false);
-	RBTimeHorizontalDay= new QRadioButton(tr("Time horizontal per day"));
-	RBTimeVerticalDay= new QRadioButton(tr("Time vertical per day"));
-
-	actionsBoxGrid->addWidget(RBDaysHorizontal,0,0);
-	actionsBoxGrid->addWidget(RBDaysVertical,0,1);
-	actionsBoxGrid->addWidget(RBTimeHorizontal,1,0);
-	actionsBoxGrid->addWidget(RBTimeVertical,1,1);
-	//actionsBoxGrid->addWidget(CBDivideTimeAxisByDay, 2, 0, 1, 2);
-	actionsBoxGrid->addWidget(RBTimeHorizontalDay,2,0);
-	actionsBoxGrid->addWidget(RBTimeVerticalDay,2,1);
-	RBDaysHorizontal->setChecked(true);
-	//CBDivideTimeAxisByDay->setDisabled(RBDaysHorizontal->isChecked() || RBDaysVertical->isChecked());
-	actionsBox->setLayout(actionsBoxGrid);
-	
-	/*QGroupBox**/ optionsBox=new QGroupBox(tr("Options"));
-	QGridLayout* optionsBoxGrid=new QGridLayout();
-	
-	QStringList breakStrings;
-	//strings by Liviu Lalescu
-	breakStrings<<tr("Page-break: none", "No page-break between timetables. Please keep translation short")
-		<<tr("Page-break: always", "Page-break after each timetable. Please keep translation short")
-		<<tr("Page-break: even", "Page-break after each even timetable. Please keep translation short");
-	CBBreak=new QComboBox();
-	CBBreak->addItems(breakStrings);
-	CBBreak->setCurrentIndex(1);
-	CBBreak->setSizePolicy(QSizePolicy::Expanding, CBBreak->sizePolicy().verticalPolicy());
-	
-	QStringList whiteSpaceStrings;
-	whiteSpaceStrings<<QString("normal")<<QString("pre")<<QString("nowrap")<<QString("pre-wrap");	//don't translate these strings, because they are css parameters!
-	CBWhiteSpace=new QComboBox();
-	CBWhiteSpace->addItems(whiteSpaceStrings);
-	CBWhiteSpace->setCurrentIndex(0);
-	CBWhiteSpace->setSizePolicy(QSizePolicy::Expanding, CBWhiteSpace->sizePolicy().verticalPolicy());
-	
-	QStringList printerOrientationStrings;
-	printerOrientationStrings<<tr("Portrait")<<tr("Landscape");
-	CBorientationMode=new QComboBox();
-	CBorientationMode->addItems(printerOrientationStrings);
-	CBorientationMode->setCurrentIndex(0);
-	//CBorientationMode->setDisabled(true);
-	CBorientationMode->setSizePolicy(QSizePolicy::Expanding, CBorientationMode->sizePolicy().verticalPolicy());
+	setupUi(this);
 	
 /*	QStringList printerModeStrings;
 	printerModeStrings<<tr("ScreenResolution")<<tr("PrinterResolution")<<tr("HighResolution");
@@ -225,7 +139,7 @@ TimetablePrintForm::TimetablePrintForm(QWidget *parent): QDialog(parent){
 	CBprinterMode->setCurrentIndex(2);
 	CBprinterMode->setDisabled(true);
 	CBprinterMode->setSizePolicy(QSizePolicy::Expanding, CBprinterMode->sizePolicy().verticalPolicy());
-*/	
+*/
 	paperSizesMap.clear();
 #ifdef QT_NO_PRINTER
 	paperSizesMap.insert(tr("Custom", "Type of paper size"), 30);
@@ -262,13 +176,11 @@ TimetablePrintForm::TimetablePrintForm(QWidget *parent): QDialog(parent){
 	paperSizesMap.insert(tr("Tabloid", "Type of paper size"), QPrinter::Tabloid);
 #endif
 
-	CBpaperSize=new QComboBox();
 	CBpaperSize->addItems(paperSizesMap.keys());
 	if(CBpaperSize->count()>=5)
 		CBpaperSize->setCurrentIndex(4);
 	else if(CBpaperSize->count()>=1)
 		CBpaperSize->setCurrentIndex(0);
-	CBpaperSize->setSizePolicy(QSizePolicy::Expanding, CBpaperSize->sizePolicy().verticalPolicy());
 	
 //	markNotAvailable=new QCheckBox(tr("Mark not available"));
 //	markNotAvailable->setChecked(true);
@@ -279,28 +191,6 @@ TimetablePrintForm::TimetablePrintForm(QWidget *parent): QDialog(parent){
 //	printSameStartingTime=new QCheckBox(tr("Print same starting time"));
 //	printSameStartingTime->setChecked(false);
 
-	printDetailedTables=new QCheckBox(tr("Detailed tables"));
-	printDetailedTables->setChecked(true);
-	
-	printActivityTags=new QCheckBox(tr("Activity tags"));
-	printActivityTags->setChecked(false);
-	
-	repeatNames=new QCheckBox(tr("Repeat vertical names"));
-	repeatNames->setChecked(false);
-	
-	automaticColors=new QCheckBox(tr("Colors"));
-	automaticColors->setChecked(false);
-	
-	fontSizeTable=new QSpinBox;
-	fontSizeTable->setRange(4, 20);
-	fontSizeTable->setValue(8);
-
-	/*QString str, left, right;
-	str=tr("Font size: %1 pt");
-	dividePrefixSuffix(str, left, right);
-	fontSizeTable->setPrefix(left);
-	fontSizeTable->setSuffix(right);*/
-	
 	QString s=tr("Font size: %1 pt", "pt means points for font size, when printing the timetable");
 	QStringList sl=s.split("%1");
 	QString prefix=sl.at(0);
@@ -311,19 +201,6 @@ TimetablePrintForm::TimetablePrintForm(QWidget *parent): QDialog(parent){
 		suffix=sl.at(1);
 	fontSizeTable->setPrefix(prefix);
 	fontSizeTable->setSuffix(suffix);
-	//fontSizeTable->setPrefix(tr("Font size:")+QString(" "));
-	//fontSizeTable->setSuffix(QString(" ")+tr("pt", "Means points for font size, when printing the timetable"));
-
-	fontSizeTable->setSizePolicy(QSizePolicy::Expanding, fontSizeTable->sizePolicy().verticalPolicy());
-	
-	activitiesPadding=new QSpinBox;
-	activitiesPadding->setRange(0, 25);
-	activitiesPadding->setValue(0);
-
-	/*str=tr("Activities padding: %1 px");
-	dividePrefixSuffix(str, left, right);
-	activitiesPadding->setPrefix(left);
-	activitiesPadding->setSuffix(right);*/
 
 	s=tr("Activities padding: %1 px", "px means pixels, when printing the timetable");
 	sl=s.split("%1");
@@ -334,19 +211,6 @@ TimetablePrintForm::TimetablePrintForm(QWidget *parent): QDialog(parent){
 		suffix=sl.at(1);
 	activitiesPadding->setPrefix(prefix);
 	activitiesPadding->setSuffix(suffix);
-	//activitiesPadding->setPrefix(tr("Activities padding:")+QString(" "));
-	//activitiesPadding->setSuffix(QString(" ")+tr("px", "Means pixels, when printing the timetable"));
-
-	activitiesPadding->setSizePolicy(QSizePolicy::Expanding, activitiesPadding->sizePolicy().verticalPolicy());
-	
-	tablePadding=new QSpinBox;
-	tablePadding->setRange(1, 99);
-	tablePadding->setValue(1);
-
-	/*str=tr("Space after table: +%1 px");
-	dividePrefixSuffix(str, left, right);
-	tablePadding->setPrefix(left);
-	tablePadding->setSuffix(right);*/
 
 	s=tr("Space after table: +%1 px", "px means pixels, when printing the timetable");
 	sl=s.split("%1");
@@ -357,19 +221,6 @@ TimetablePrintForm::TimetablePrintForm(QWidget *parent): QDialog(parent){
 		suffix=sl.at(1);
 	tablePadding->setPrefix(prefix);
 	tablePadding->setSuffix(suffix);
-	//tablePadding->setPrefix(tr("Space after table:")+QString(" +"));
-	//tablePadding->setSuffix(QString(" ")+tr("px", "Means pixels, when printing the timetable"));
-
-	tablePadding->setSizePolicy(QSizePolicy::Expanding, tablePadding->sizePolicy().verticalPolicy());
-	
-	maxNames=new QSpinBox;
-	maxNames->setRange(1, 999);
-	maxNames->setValue(10);
-	
-	/*str=tr("Split after %1 names");
-	dividePrefixSuffix(str, left, right);
-	maxNames->setPrefix(left);
-	maxNames->setSuffix(right);*/
 
 	s=tr("Split after: %1 names");
 	sl=s.split("%1");
@@ -380,19 +231,6 @@ TimetablePrintForm::TimetablePrintForm(QWidget *parent): QDialog(parent){
 		suffix=sl.at(1);
 	maxNames->setPrefix(prefix);
 	maxNames->setSuffix(suffix);
-	//maxNames->setPrefix(tr("Split after:", "When printing, the whole phrase is 'Split after ... names'")+QString(" "));
-	//maxNames->setSuffix(QString(" ")+tr("names", "When printing, the whole phrase is 'Split after ... names'"));
-	
-	maxNames->setSizePolicy(QSizePolicy::Expanding, maxNames->sizePolicy().verticalPolicy());
-
-	leftPageMargin=new QSpinBox;
-	leftPageMargin->setRange(0, 50);
-	leftPageMargin->setValue(10);
-
-	/*str=tr("Left margin: %1 mm");
-	dividePrefixSuffix(str, left, right);
-	leftPageMargin->setPrefix(left);
-	leftPageMargin->setSuffix(right);*/
 
 	s=tr("Left margin: %1 mm", "mm means millimeters");
 	sl=s.split("%1");
@@ -403,19 +241,6 @@ TimetablePrintForm::TimetablePrintForm(QWidget *parent): QDialog(parent){
 		suffix=sl.at(1);
 	leftPageMargin->setPrefix(prefix);
 	leftPageMargin->setSuffix(suffix);
-	//leftPageMargin->setPrefix(tr("Left margin:")+QString(" "));
-	//leftPageMargin->setSuffix(QString(" ")+tr("mm", "Means milimeter, when setting page margin"));
-
-	leftPageMargin->setSizePolicy(QSizePolicy::Expanding, leftPageMargin->sizePolicy().verticalPolicy());
-	
-	topPageMargin=new QSpinBox;
-	topPageMargin->setRange(0, 50);
-	topPageMargin->setValue(10);
-
-	/*str=tr("Top margin: %1 mm");
-	dividePrefixSuffix(str, left, right);
-	topPageMargin->setPrefix(left);
-	topPageMargin->setSuffix(right);*/
 
 	s=tr("Top margin: %1 mm", "mm means millimeters");
 	sl=s.split("%1");
@@ -426,19 +251,6 @@ TimetablePrintForm::TimetablePrintForm(QWidget *parent): QDialog(parent){
 		suffix=sl.at(1);
 	topPageMargin->setPrefix(prefix);
 	topPageMargin->setSuffix(suffix);
-	//topPageMargin->setPrefix(tr("Top margin:")+QString(" "));
-	//topPageMargin->setSuffix(QString(" ")+tr("mm", "Means milimeter, when setting page margin"));
-
-	topPageMargin->setSizePolicy(QSizePolicy::Expanding, topPageMargin->sizePolicy().verticalPolicy());
-	
-	rightPageMargin=new QSpinBox;
-	rightPageMargin->setRange(0, 50);
-	rightPageMargin->setValue(10);
-
-	/*str=tr("Right margin: %1 mm");
-	dividePrefixSuffix(str, left, right);
-	rightPageMargin->setPrefix(left);
-	rightPageMargin->setSuffix(right);*/
 
 	s=tr("Right margin: %1 mm", "mm means millimeters");
 	sl=s.split("%1");
@@ -449,19 +261,6 @@ TimetablePrintForm::TimetablePrintForm(QWidget *parent): QDialog(parent){
 		suffix=sl.at(1);
 	rightPageMargin->setPrefix(prefix);
 	rightPageMargin->setSuffix(suffix);
-	//rightPageMargin->setPrefix(tr("Right margin:")+QString(" "));
-	//rightPageMargin->setSuffix(QString(" ")+tr("mm", "Means milimeter, when setting page margin"));
-
-	rightPageMargin->setSizePolicy(QSizePolicy::Expanding, rightPageMargin->sizePolicy().verticalPolicy());
-	
-	bottomPageMargin=new QSpinBox;
-	bottomPageMargin->setRange(0, 50);
-	bottomPageMargin->setValue(10);
-
-	/*str=tr("Bottom margin: %1 mm");
-	dividePrefixSuffix(str, left, right);
-	bottomPageMargin->setPrefix(left);
-	bottomPageMargin->setSuffix(right);*/
 
 	s=tr("Bottom margin: %1 mm", "mm means millimeters");
 	sl=s.split("%1");
@@ -472,41 +271,6 @@ TimetablePrintForm::TimetablePrintForm(QWidget *parent): QDialog(parent){
 		suffix=sl.at(1);
 	bottomPageMargin->setPrefix(prefix);
 	bottomPageMargin->setSuffix(suffix);
-	//bottomPageMargin->setPrefix(tr("Bottom margin:")+QString(" "));
-	//bottomPageMargin->setSuffix(QString(" ")+tr("mm", "Means milimeter, when setting page margin"));
-
-	bottomPageMargin->setSizePolicy(QSizePolicy::Expanding, bottomPageMargin->sizePolicy().verticalPolicy());
-	
-	pbPrintPreviewSmall=new QPushButton(tr("Teaser", "Small print preview. Please keep translation short"));
-	pbPrintPreviewFull=new QPushButton(tr("Preview", "Full print preview. Please keep translation short"));
-	pbPrint=new QPushButton(tr("Print", "Please keep translation short"));
-
-	pbClose=new QPushButton(tr("Close", "Please keep translation short"));
-	pbClose->setAutoDefault(false);
-	
-	optionsBoxGrid->addWidget(leftPageMargin,0,0);
-	optionsBoxGrid->addWidget(rightPageMargin,1,0);
-	optionsBoxGrid->addWidget(topPageMargin,2,0);
-	optionsBoxGrid->addWidget(bottomPageMargin,3,0);
-	
-	optionsBoxGrid->addWidget(fontSizeTable,0,1);
-	optionsBoxGrid->addWidget(maxNames,1,1);
-	optionsBoxGrid->addWidget(activitiesPadding,2,1);
-	optionsBoxGrid->addWidget(tablePadding,3,1);
-	
-	optionsBoxGrid->addWidget(CBpaperSize,4,0);
-	optionsBoxGrid->addWidget(CBWhiteSpace,4,1);
-	optionsBoxGrid->addWidget(CBorientationMode,5,0);
-	optionsBoxGrid->addWidget(CBBreak,5,1);
-//	optionsBoxGrid->addWidget(CBprinterMode,5,0);
-	optionsBoxGrid->addWidget(printActivityTags,6,0);
-	optionsBoxGrid->addWidget(printDetailedTables,6,1);
-	
-	optionsBoxGrid->addWidget(repeatNames,7,0);
-	optionsBoxGrid->addWidget(automaticColors,7,1);
-
-	optionsBox->setLayout(optionsBoxGrid);
-	optionsBox->setSizePolicy(QSizePolicy::Expanding, optionsBox->sizePolicy().verticalPolicy());
 	
 // maybe TODO: be careful. the form is pretty full already!
 // be careful: these are global settings, so it will also change html output setting?! so it need parameter in each function!
@@ -515,22 +279,6 @@ TimetablePrintForm::TimetablePrintForm(QWidget *parent): QDialog(parent){
 //	optionsBoxVertical->addWidget(printSameStartingTime);
 // maybe TODO: select font, select color, select them also for line 0-4!
 
-	QHBoxLayout* previewPrintClose=new QHBoxLayout();
-	previewPrintClose->addStretch();
-	previewPrintClose->addWidget(pbPrintPreviewSmall);
-	previewPrintClose->addWidget(pbPrintPreviewFull);
-	previewPrintClose->addWidget(pbPrint);
-	previewPrintClose->addStretch();
-	previewPrintClose->addWidget(pbClose);
-
-	rightDialog->addWidget(actionsBox);
-	rightDialog->addWidget(optionsBox);
-	rightDialog->addStretch();
-	rightDialog->addLayout(previewPrintClose);
-
-	wholeDialog->addLayout(leftDialog);
-	wholeDialog->addLayout(rightDialog);
-	
 	updateNamesList();
 	
 	connect(CBTables, SIGNAL(currentIndexChanged(int)), this, SLOT(updateNamesList()));
