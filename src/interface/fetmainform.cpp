@@ -241,8 +241,6 @@ using namespace std;
 //for the icons of not perfect constraints
 #include <QIcon>
 
-int MAIN_FORM_SHORTCUTS_TAB_POSITION;
-
 #include "spreadmindaysconstraintsfivedaysform.h"
 
 #include "statisticsexport.h"
@@ -352,7 +350,6 @@ FetMainForm::FetMainForm()
 
 	//toolBox->setCurrentIndex(0);
 	tabWidget->setVisible(SHOW_SHORTCUTS_ON_MAIN_WINDOW);
-	tabWidget->setCurrentIndex(MAIN_FORM_SHORTCUTS_TAB_POSITION);
 	
 	shortcutBasicMenu=new QMenu();
 	shortcutBasicMenu->addMenu(menuInstitution_information);
@@ -807,8 +804,6 @@ void FetMainForm::closeOtherWindows()
 void FetMainForm::closeEvent(QCloseEvent* event)
 {
 	windowSettingsRect=this->geometry();
-	
-	MAIN_FORM_SHORTCUTS_TAB_POSITION=tabWidget->currentIndex();
 	
 	if(gt.rules.isModified()){
 		QMessageBox::StandardButton res=QMessageBox::question( this, tr("FET - exiting"),
