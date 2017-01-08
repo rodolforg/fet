@@ -47,9 +47,6 @@ class StartTimetablePrint: public QObject{
 	Q_OBJECT
 
 public:
-	StartTimetablePrint();
-	~StartTimetablePrint();
-
 	static void startTimetablePrint(QWidget* parent);
 };
 
