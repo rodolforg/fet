@@ -33,6 +33,13 @@ extern Matrix2D<bool> breakDayHour;
 extern Matrix3D<bool> teacherNotAvailableDayHour;
 
 //critical function here - must be optimized for speed
+Solution::Solution()
+	: conflictsTotal(0),
+	  teachersMatrixReady(false), subgroupsMatrixReady(false), roomsMatrixReady(false),
+	  nPlacedActivities(0)
+{
+}
+
 void Solution::copy(const Rules &r, const Solution &c){
 	this->_fitness=c._fitness;
 

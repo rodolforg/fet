@@ -36,6 +36,8 @@ This class represents a solution (time and space allocation for the activities).
 */
 class Solution{
 public:
+	Solution();
+
 	QList<double> conflictsWeightList;
 	QList<QString> conflictsDescriptionList;
 	double conflictsTotal;
