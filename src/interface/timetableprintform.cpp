@@ -104,30 +104,6 @@ const QString topPageMarginState="/top-page-margin-spin-box-value-state";
 const QString rightPageMarginState="/right-page-margin-spin-box-value-state";
 const QString bottomPageMarginState="/bottom-page-margin-spin-box-value-state";
 
-//by Liviu Lalescu - unused anymore
-/*static bool dividePrefixSuffix(const QString& str, QString& left, QString& right)
-{
-	QStringList list=str.split("%1");
-	assert(list.count()>=1);
-	left=list.at(0);
-	if(list.count()>=2){
-		right=list.at(1);
-		return true;
-	}
-	else{
-		right=QString("");
-		return false;
-	}
-}*/
-
-StartTimetablePrint::StartTimetablePrint()
-{
-}
-
-StartTimetablePrint::~StartTimetablePrint()
-{
-}
-
 void StartTimetablePrint::startTimetablePrint(QWidget* parent)
 {
 	if(gt.rules.initialized
