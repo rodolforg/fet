@@ -71,9 +71,11 @@ private slots:
 
 	void print();
 	void printPreviewFull();
-	void updatePreviewFull(QPrinter* printer);
 	void printPreviewSmall();
+#ifndef QT_NO_PRINTER
+	void updatePreviewFull(QPrinter* printer);
 	void updatePreviewSmall(QPrinter* printer);
+#endif
 };
 
 #endif

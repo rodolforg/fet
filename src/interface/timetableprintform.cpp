@@ -1080,20 +1080,15 @@ void TimetablePrintForm::printPreviewFull(){
 #endif
 }
 
+#ifndef QT_NO_PRINTER
 void TimetablePrintForm::updatePreviewFull(QPrinter* printer){
-#ifdef QT_NO_PRINTER
-	Q_UNUSED(printer);
-
-	QMessageBox::warning(this, tr("FET warning"), tr("FET is compiled without printer support "
-	 "- it is impossible to print from this dialog. Please open the HTML timetables from the results directory"));
-#else
 	QTextDocument textDocument;
 	textDocument.documentLayout()->setPaintDevice(printer);
 	textDocument.setPageSize(QSizeF(printer->pageRect().size()));
 	textDocument.setHtml(updateHtmlPrintString(true));
 	textDocument.print(printer);
-#endif
 }
+#endif
 
 void TimetablePrintForm::printPreviewSmall(){
 #ifdef QT_NO_PRINTER
@@ -1132,17 +1127,12 @@ void TimetablePrintForm::printPreviewSmall(){
 #endif
 }
 
+#ifndef QT_NO_PRINTER
 void TimetablePrintForm::updatePreviewSmall(QPrinter* printer){
-#ifdef QT_NO_PRINTER
-	Q_UNUSED(printer);
-
-	QMessageBox::warning(this, tr("FET warning"), tr("FET is compiled without printer support "
-	 "- it is impossible to print from this dialog. Please open the HTML timetables from the results directory"));
-#else
 	QTextDocument textDocument;
 	textDocument.documentLayout()->setPaintDevice(printer);
 	textDocument.setPageSize(QSizeF(printer->pageRect().size()));
 	textDocument.setHtml(updateHtmlPrintString(false));
 	textDocument.print(printer);
-#endif
 }
+#endif
