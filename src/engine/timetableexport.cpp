@@ -990,26 +990,23 @@ void TimetableExport::writeSimulationResultsCommandLine(QWidget* parent, const Q
 	doWriteResults(parent, dir+basename);
 }
 
-void TimetableExport::writeRandomSeedCommandLine(QWidget* parent, const QString& outputDirectory, bool before){ //outputDirectory contains trailing FILE_SEP
+void TimetableExport::writeRandomSeedCommandLine(QWidget* parent, const QString& outputDirectory, bool before){
 	QString RANDOM_SEED_FILENAME;
 	if(before)
 		RANDOM_SEED_FILENAME=RANDOM_SEED_FILENAME_BEFORE;
 	else
 		RANDOM_SEED_FILENAME=RANDOM_SEED_FILENAME_AFTER;
 
-	QString add=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);
-	if(add.right(4)==".fet")
-		add=add.left(add.length()-4);
-	//else if(INPUT_FILENAME_XML!="")
-	//	cout<<"Minor problem - input file does not end in .fet extension - might be a problem when saving the timetables"<<" (file:"<<__FILE__<<", line:"<<__LINE__<<")"<<endl;
-
+	QString add=getBasename();
 	if(add!="")
 		add.append("_");
 
-	QString s=add+RANDOM_SEED_FILENAME;
-	s.prepend(outputDirectory);
+	if(!outputDirectory.endsWith(FILE_SEP))
+		add.prepend(FILE_SEP);
+
+	QString filename=outputDirectory+add+RANDOM_SEED_FILENAME;
 	
-	writeRandomSeedFile(parent, s, before);
+	writeRandomSeedFile(parent, filename, before);
 }
 
 //by Volker Dirr (timetabling.de)
