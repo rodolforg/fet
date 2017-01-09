@@ -343,6 +343,19 @@ void TimetableExport::writeSimulationResults(QWidget* parent){
 	if(!dir.exists(OUTPUT_DIR_TIMETABLES))
 		dir.mkpath(OUTPUT_DIR_TIMETABLES);
 
+	if (!basename.isEmpty())
+		basename.append("_");
+
+	//now write the solution in xml files
+	doWriteResults(parent, OUTPUT_DIR_TIMETABLES+FILE_SEP+basename);
+
+	if(VERBOSE){
+		cout<<"Writing simulation results to disk completed successfully"<<endl;
+	}
+}
+
+void TimetableExport::doWriteResults(QWidget *parent, QString filenamePrefix)
+{
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
 	assert(TIMETABLE_HTML_LEVEL>=0);
@@ -352,30 +365,6 @@ void TimetableExport::writeSimulationResults(QWidget* parent){
 	computeActivitiesAtTime();
 	computeActivitiesWithSameStartingTime();
 
-	if (!basename.isEmpty())
-		basename.append("_");
-
-	//now write the solution in xml files
-	doWriteResults(parent, OUTPUT_DIR_TIMETABLES+FILE_SEP+basename);
-
-	hashSubjectIDsTimetable.clear();
-	hashActivityTagIDsTimetable.clear();
-	hashStudentIDsTimetable.clear();
-	hashTeacherIDsTimetable.clear();
-	hashRoomIDsTimetable.clear();
-	hashDayIDsTimetable.clear();
-	hashActivityColorBySubject.clear();
-	hashActivityColorBySubjectAndStudents.clear();
-	activeHashActivityColorBySubject.clear();
-	activeHashActivityColorBySubjectAndStudents.clear();
-
-	if(VERBOSE){
-		cout<<"Writing simulation results to disk completed successfully"<<endl;
-	}
-}
-
-void TimetableExport::doWriteResults(QWidget *parent, QString filenamePrefix)
-{
 	//subgroups
 	QString s=filenamePrefix+SUBGROUPS_TIMETABLE_FILENAME_XML;
 	writeSubgroupsTimetableXml(parent, s);
@@ -555,6 +544,17 @@ void TimetableExport::doWriteResults(QWidget *parent, QString filenamePrefix)
 	writeTeachersStatisticsHtml(parent, s, sTime, na);
 	s=filenamePrefix+STUDENTS_STATISTICS_FILENAME_HTML;
 	writeStudentsStatisticsHtml(parent, s, sTime, na);
+
+	hashSubjectIDsTimetable.clear();
+	hashActivityTagIDsTimetable.clear();
+	hashStudentIDsTimetable.clear();
+	hashTeacherIDsTimetable.clear();
+	hashRoomIDsTimetable.clear();
+	hashDayIDsTimetable.clear();
+	hashActivityColorBySubject.clear();
+	hashActivityColorBySubjectAndStudents.clear();
+	activeHashActivityColorBySubject.clear();
+	activeHashActivityColorBySubjectAndStudents.clear();
 }
 
 void TimetableExport::writeHighestStageResults(QWidget* parent){
@@ -576,31 +576,11 @@ void TimetableExport::writeHighestStageResults(QWidget* parent){
 	if(!dir.exists(OUTPUT_DIR_TIMETABLES))
 		dir.mkpath(OUTPUT_DIR_TIMETABLES);
 
-	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
-	assert(TIMETABLE_HTML_LEVEL>=0);
-	assert(TIMETABLE_HTML_LEVEL<=7);
-
-	computeHashForIDsTimetable();
-	computeActivitiesAtTime();
-	computeActivitiesWithSameStartingTime();
-
 	if(!basename.isEmpty())
 		basename.append("_");
 
 	//now write the solution in xml files
 	doWriteResults(parent, OUTPUT_DIR_TIMETABLES+FILE_SEP+basename);
-
-	hashSubjectIDsTimetable.clear();
-	hashActivityTagIDsTimetable.clear();
-	hashStudentIDsTimetable.clear();
-	hashTeacherIDsTimetable.clear();
-	hashRoomIDsTimetable.clear();
-	hashDayIDsTimetable.clear();
-	hashActivityColorBySubject.clear();
-	hashActivityColorBySubjectAndStudents.clear();
-	activeHashActivityColorBySubject.clear();
-	activeHashActivityColorBySubjectAndStudents.clear();
 
 	if(VERBOSE){
 		cout<<"Writing highest stage results to disk completed successfully"<<endl;
@@ -893,32 +873,12 @@ void TimetableExport::writeSimulationResults(QWidget* parent, int n){
 	if(!dir.exists(finalDestDir))
 		dir.mkpath(finalDestDir);
 
-	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
-	assert(TIMETABLE_HTML_LEVEL>=0);
-	assert(TIMETABLE_HTML_LEVEL<=7);
-
-	computeHashForIDsTimetable();
-	computeActivitiesAtTime();
-	computeActivitiesWithSameStartingTime();
-
 	finalDestDir+=FILE_SEP;
 	finalDestDir+=basename+"_";
 	
 	//now write the solution in xml files
 	doWriteResults(parent, finalDestDir);
 	
-	hashSubjectIDsTimetable.clear();
-	hashActivityTagIDsTimetable.clear();
-	hashStudentIDsTimetable.clear();
-	hashTeacherIDsTimetable.clear();
-	hashRoomIDsTimetable.clear();
-	hashDayIDsTimetable.clear();
-	hashActivityColorBySubject.clear();
-	hashActivityColorBySubjectAndStudents.clear();
-	activeHashActivityColorBySubject.clear();
-	activeHashActivityColorBySubjectAndStudents.clear();
-
 	if(VERBOSE){
 		cout<<"Writing multiple simulation results to disk completed successfully"<<endl;
 	}
@@ -1022,29 +982,9 @@ void TimetableExport::writeSimulationResultsCommandLine(QWidget* parent, const Q
 	if(!basename.isEmpty())
 		basename.append("_");
 
-	/////////
-
-	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
-	assert(TIMETABLE_HTML_LEVEL>=0);
-	assert(TIMETABLE_HTML_LEVEL<=7);
-
-	computeHashForIDsTimetable();
-	computeActivitiesAtTime();
-	computeActivitiesWithSameStartingTime();
 
 	doWriteResults(parent, outputDirectory+basename);
 
-	hashSubjectIDsTimetable.clear();
-	hashActivityTagIDsTimetable.clear();
-	hashStudentIDsTimetable.clear();
-	hashTeacherIDsTimetable.clear();
-	hashRoomIDsTimetable.clear();
-	hashDayIDsTimetable.clear();
-	hashActivityColorBySubject.clear();
-	hashActivityColorBySubjectAndStudents.clear();
-	activeHashActivityColorBySubject.clear();
-	activeHashActivityColorBySubjectAndStudents.clear();
 }
 
 void TimetableExport::writeRandomSeedCommandLine(QWidget* parent, const QString& outputDirectory, bool before){ //outputDirectory contains trailing FILE_SEP
