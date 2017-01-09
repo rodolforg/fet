@@ -977,14 +977,17 @@ void TimetableExport::writeReportForMultiple(QWidget* parent, const QString& des
 	file.close();
 }
 
-void TimetableExport::writeSimulationResultsCommandLine(QWidget* parent, const QString& outputDirectory){ //outputDirectory contains trailing FILE_SEP
+void TimetableExport::writeSimulationResultsCommandLine(QWidget* parent, const QString& outputDirectory){
 	QString basename=getBasename();
 	if(!basename.isEmpty())
 		basename.append("_");
 
+	QString dir = outputDirectory;
 
-	doWriteResults(parent, outputDirectory+basename);
+	if (!outputDirectory.endsWith(FILE_SEP))
+		dir.append(FILE_SEP);
 
+	doWriteResults(parent, dir+basename);
 }
 
 void TimetableExport::writeRandomSeedCommandLine(QWidget* parent, const QString& outputDirectory, bool before){ //outputDirectory contains trailing FILE_SEP
