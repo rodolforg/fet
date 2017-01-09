@@ -603,11 +603,7 @@ void TimetableExport::writeRandomSeed(QWidget* parent, bool before)
 	if(INPUT_FILENAME_XML=="")
 		OUTPUT_DIR_TIMETABLES.append("unnamed");
 	else{
-		OUTPUT_DIR_TIMETABLES.append(INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1));
-		if(OUTPUT_DIR_TIMETABLES.right(4)==".fet")
-			OUTPUT_DIR_TIMETABLES=OUTPUT_DIR_TIMETABLES.left(OUTPUT_DIR_TIMETABLES.length()-4);
-		//else if(INPUT_FILENAME_XML!="")
-		//	cout<<"Minor problem - input file does not end in .fet extension - might be a problem when saving the timetables"<<" (file:"<<__FILE__<<", line:"<<__LINE__<<")"<<endl;
+		OUTPUT_DIR_TIMETABLES.append(getBasename());
 	}
 	OUTPUT_DIR_TIMETABLES.append("-single");
 	
@@ -616,16 +612,11 @@ void TimetableExport::writeRandomSeed(QWidget* parent, bool before)
 		dir.mkpath(OUTPUT_DIR_TIMETABLES);
 
 	QString s;
-	QString bar;
-	if(INPUT_FILENAME_XML=="")
-		bar="";
-	else
-		bar="_";
-	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);
-	if(s2.right(4)==".fet")
-		s2=s2.left(s2.length()-4);
+	QString s2=getBasename();
+	if (!s2.isEmpty())
+		s2.append("_");
 
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+RANDOM_SEED_FILENAME;
+	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+RANDOM_SEED_FILENAME;
 	
 	writeRandomSeedFile(parent, s, before);
 }
@@ -900,12 +891,7 @@ void TimetableExport::writeRandomSeed(QWidget* parent, int n, bool before){
 		dir.mkpath(OUTPUT_DIR_TIMETABLES);
 
 	QString s;
-	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);
-	if(s2.right(4)==".fet")
-		s2=s2.left(s2.length()-4);
-	//else if(INPUT_FILENAME_XML!="")
-	//	cout<<"Minor problem - input file does not end in .fet extension - might be a problem when saving the timetables"<<" (file:"<<__FILE__<<", line:"<<__LINE__<<")"<<endl;
-	
+	QString s2=getBasename();
 	QString destDir=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+"-multi";
 	
 	if(!dir.exists(destDir))
@@ -918,12 +904,7 @@ void TimetableExport::writeRandomSeed(QWidget* parent, int n, bool before){
 		
 	finalDestDir+=FILE_SEP;
 
-	QString s3=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);
-
-	if(s3.right(4)==".fet")
-		s3=s3.left(s3.length()-4);
-	//else if(INPUT_FILENAME_XML!="")
-	//	cout<<"Minor problem - input file does not end in .fet extension - might be a problem when saving the timetables"<<" (file:"<<__FILE__<<", line:"<<__LINE__<<")"<<endl;
+	QString s3=getBasename();
 
 	finalDestDir+=s3+"_";
 	
@@ -943,11 +924,7 @@ void TimetableExport::writeReportForMultiple(QWidget* parent, const QString& des
 		dir.mkpath(OUTPUT_DIR_TIMETABLES);
 
 	QString s;
-	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);
-	if(s2.right(4)==".fet")
-		s2=s2.left(s2.length()-4);
-	//else if(INPUT_FILENAME_XML!="")
-	//	cout<<"Minor problem - input file does not end in .fet extension - might be a problem when saving the timetables"<<" (file:"<<__FILE__<<", line:"<<__LINE__<<")"<<endl;
+	QString s2=getBasename();
 	
 	QString destDir=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+"-multi";
 	
@@ -1031,10 +1008,11 @@ void TimetableExport::writeConflictsTxt(QWidget* parent, const QString& filename
 	tos.setCodec("UTF-8");
 	tos.setGenerateByteOrderMark(true);
 	
+	QString tt=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);
+	if(INPUT_FILENAME_XML=="")
+		tt=tr("unnamed");
+
 	if(placedActivities==gt.rules.nInternalActivities){
-		QString tt=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);
-		if(INPUT_FILENAME_XML=="")
-			tt=tr("unnamed");
 		tos<<TimetableExport::tr("Soft conflicts of %1", "%1 is the file name").arg(tt);
 		tos<<"\n";
 		tos<<TimetableExport::tr("Generated with FET %1 on %2", "%1 is FET version, %2 is the date and time of generation").arg(FET_VERSION).arg(saveTime)<<"\n\n";
@@ -1047,9 +1025,6 @@ void TimetableExport::writeConflictsTxt(QWidget* parent, const QString& filename
 		tos<<endl<<TimetableExport::tr("End of file.")<<"\n";
 	}
 	else{
-		QString tt=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);
-		if(INPUT_FILENAME_XML=="")
-			tt=tr("unnamed");
 		tos<<TimetableExport::tr("Conflicts of %1").arg(tt);
 		tos<<"\n";
 		tos<<TimetableExport::tr("Warning! Only %1 out of %2 activities placed!").arg(placedActivities).arg(gt.rules.nInternalActivities)<<"\n";
@@ -1282,19 +1257,10 @@ void TimetableExport::writeIndexHtml(QWidget* parent, const QString& htmlfilenam
 
 	tos<<writeHead(false, placedActivities, true);
 
-	QString bar;
-	QString s2="";
-	if(INPUT_FILENAME_XML=="")
-		bar="";
-	else{
-		bar="_";
-		s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);
+	QString s2=getBasename();
+	if(!s2.isEmpty())
+		s2.append("_");
 
-		if(s2.right(4)==".fet")
-			s2=s2.left(s2.length()-4);
-		//else if(INPUT_FILENAME_XML!="")
-		//	cout<<"Minor problem - input file does not end in .fet extension - might be a problem when saving the timetables"<<" (file:"<<__FILE__<<", line:"<<__LINE__<<")"<<endl;
-	}
 	tos<<"    <p>\n";
 	
 	if(!_writeAtLeastATimetable){
@@ -1308,7 +1274,7 @@ void TimetableExport::writeIndexHtml(QWidget* parent, const QString& htmlfilenam
 	}
 	else{
 		if(WRITE_TIMETABLE_CONFLICTS)
-			tos<<"      <a href=\""<<s2+bar+CONFLICTS_FILENAME<<"\">"<<tr("View the soft conflicts list.")<<"</a><br />\n";
+			tos<<"      <a href=\""<<s2+CONFLICTS_FILENAME<<"\">"<<tr("View the soft conflicts list.")<<"</a><br />\n";
 		else
 			tos<<"      "<<TimetableExport::tr("Soft conflicts list - disabled.")<<"<br />\n";
 
@@ -1316,12 +1282,12 @@ void TimetableExport::writeIndexHtml(QWidget* parent, const QString& htmlfilenam
 
 		QString tmps1, tmps2;
 		if(WRITE_TIMETABLES_STATISTICS && (WRITE_TIMETABLES_YEARS || WRITE_TIMETABLES_GROUPS || WRITE_TIMETABLES_SUBGROUPS) )
-			tmps1="      <a href=\""+s2+bar+STUDENTS_STATISTICS_FILENAME_HTML+"\">"+tr("students")+"</a>";
+			tmps1="      <a href=\""+s2+STUDENTS_STATISTICS_FILENAME_HTML+"\">"+tr("students")+"</a>";
 		else
 			tmps1=tr("students - disabled");
 		
 		if(WRITE_TIMETABLES_STATISTICS && WRITE_TIMETABLES_TEACHERS)
-			tmps2="<a href=\""+s2+bar+TEACHERS_STATISTICS_FILENAME_HTML+"\">"+tr("teachers")+"</a>";
+			tmps2="<a href=\""+s2+TEACHERS_STATISTICS_FILENAME_HTML+"\">"+tr("teachers")+"</a>";
 		else
 			tmps2=tr("teachers - disabled");
 			
@@ -1334,15 +1300,15 @@ void TimetableExport::writeIndexHtml(QWidget* parent, const QString& htmlfilenam
 		
 		QString tmp1, tmp2, tmp3;
 		if(WRITE_TIMETABLES_XML && WRITE_TIMETABLES_SUBGROUPS)
-			tmp1="<a href=\""+s2+bar+SUBGROUPS_TIMETABLE_FILENAME_XML+"\">"+tr("subgroups")+"</a>";
+			tmp1="<a href=\""+s2+SUBGROUPS_TIMETABLE_FILENAME_XML+"\">"+tr("subgroups")+"</a>";
 		else
 			tmp1=tr("subgroups - disabled", "It means the subgroups XML timetables are disabled");
 		if(WRITE_TIMETABLES_XML && WRITE_TIMETABLES_TEACHERS)
-			tmp2="<a href=\""+s2+bar+TEACHERS_TIMETABLE_FILENAME_XML+"\">"+tr("teachers")+"</a>";
+			tmp2="<a href=\""+s2+TEACHERS_TIMETABLE_FILENAME_XML+"\">"+tr("teachers")+"</a>";
 		else
 			tmp2=tr("teachers - disabled", "It means the teachers XML timetables are disabled");
 		if(WRITE_TIMETABLES_XML && WRITE_TIMETABLES_ACTIVITIES)
-			tmp3="<a href=\""+s2+bar+ACTIVITIES_TIMETABLE_FILENAME_XML+"\">"+tr("activities")+"</a>";
+			tmp3="<a href=\""+s2+ACTIVITIES_TIMETABLE_FILENAME_XML+"\">"+tr("activities")+"</a>";
 		else
 			tmp3=tr("activities - disabled", "It means the activities XML timetables are disabled");
 		QString tmp4=TimetableExport::tr("View XML: %1, %2, %3.", "%1, %2 and %3 are three files in XML format, subgroups, teachers and activities timetables. The user can click on one file to view it").arg(tmp1).arg(tmp2).arg(tmp3);
@@ -1369,19 +1335,19 @@ void TimetableExport::writeIndexHtml(QWidget* parent, const QString& htmlfilenam
 		tos<<"          <th>"+tr("Subgroups")+"</th>\n";
 		if(WRITE_TIMETABLES_SUBGROUPS){
 			if(WRITE_TIMETABLES_DAYS_HORIZONTAL)
-				tos<<"          <td><a href=\""<<s2+bar+SUBGROUPS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+SUBGROUPS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 			if(WRITE_TIMETABLES_DAYS_VERTICAL)
-				tos<<"          <td><a href=\""<<s2+bar+SUBGROUPS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+SUBGROUPS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 			if(WRITE_TIMETABLES_TIME_HORIZONTAL)
-				tos<<"          <td><a href=\""<<s2+bar+SUBGROUPS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+SUBGROUPS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 			if(WRITE_TIMETABLES_TIME_VERTICAL)
-				tos<<"          <td><a href=\""<<s2+bar+SUBGROUPS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+SUBGROUPS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 		} else {
@@ -1395,19 +1361,19 @@ void TimetableExport::writeIndexHtml(QWidget* parent, const QString& htmlfilenam
 		tos<<"          <th>"+tr("Groups")+"</th>\n";
 		if(WRITE_TIMETABLES_GROUPS){
 			if(WRITE_TIMETABLES_DAYS_HORIZONTAL)
-				tos<<"          <td><a href=\""<<s2+bar+GROUPS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+GROUPS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 			if(WRITE_TIMETABLES_DAYS_VERTICAL)
-				tos<<"          <td><a href=\""<<s2+bar+GROUPS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+GROUPS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 			if(WRITE_TIMETABLES_TIME_HORIZONTAL)
-				tos<<"          <td><a href=\""<<s2+bar+GROUPS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+GROUPS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 			if(WRITE_TIMETABLES_TIME_VERTICAL)
-				tos<<"          <td><a href=\""<<s2+bar+GROUPS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+GROUPS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 		} else {
@@ -1421,19 +1387,19 @@ void TimetableExport::writeIndexHtml(QWidget* parent, const QString& htmlfilenam
 		tos<<"          <th>"+tr("Years")+"</th>\n";
 		if(WRITE_TIMETABLES_YEARS){
 			if(WRITE_TIMETABLES_DAYS_HORIZONTAL)
-				tos<<"          <td><a href=\""<<s2+bar+YEARS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+YEARS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 			if(WRITE_TIMETABLES_DAYS_VERTICAL)
-				tos<<"          <td><a href=\""<<s2+bar+YEARS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+YEARS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 			if(WRITE_TIMETABLES_TIME_HORIZONTAL)
-				tos<<"          <td><a href=\""<<s2+bar+YEARS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+YEARS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 			if(WRITE_TIMETABLES_TIME_VERTICAL)
-				tos<<"          <td><a href=\""<<s2+bar+YEARS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+YEARS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 		} else {
@@ -1447,19 +1413,19 @@ void TimetableExport::writeIndexHtml(QWidget* parent, const QString& htmlfilenam
 		tos<<"          <th>"+tr("Teachers")+"</th>\n";
 		if(WRITE_TIMETABLES_TEACHERS){
 			if(WRITE_TIMETABLES_DAYS_HORIZONTAL)
-				tos<<"          <td><a href=\""<<s2+bar+TEACHERS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+TEACHERS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 			if(WRITE_TIMETABLES_DAYS_VERTICAL)
-				tos<<"          <td><a href=\""<<s2+bar+TEACHERS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+TEACHERS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 			if(WRITE_TIMETABLES_TIME_HORIZONTAL)
-				tos<<"          <td><a href=\""<<s2+bar+TEACHERS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+TEACHERS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 			if(WRITE_TIMETABLES_TIME_VERTICAL)
-				tos<<"          <td><a href=\""<<s2+bar+TEACHERS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+TEACHERS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 		} else {
@@ -1473,11 +1439,11 @@ void TimetableExport::writeIndexHtml(QWidget* parent, const QString& htmlfilenam
 		tos<<"          <th>"+tr("Teachers Free Periods")+"</th>\n";
 		if(WRITE_TIMETABLES_TEACHERS_FREE_PERIODS){
 			if(WRITE_TIMETABLES_DAYS_HORIZONTAL)
-				tos<<"          <td><a href=\""<<s2+bar+TEACHERS_FREE_PERIODS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+TEACHERS_FREE_PERIODS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 			if(WRITE_TIMETABLES_DAYS_VERTICAL)
-				tos<<"          <td><a href=\""<<s2+bar+TEACHERS_FREE_PERIODS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+TEACHERS_FREE_PERIODS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 		} else {
@@ -1491,19 +1457,19 @@ void TimetableExport::writeIndexHtml(QWidget* parent, const QString& htmlfilenam
 		tos<<"          <th>"+tr("Rooms")+"</th>\n";
 		if(WRITE_TIMETABLES_ROOMS){
 			if(WRITE_TIMETABLES_DAYS_HORIZONTAL)
-				tos<<"          <td><a href=\""<<s2+bar+ROOMS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+ROOMS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 			if(WRITE_TIMETABLES_DAYS_VERTICAL)
-				tos<<"          <td><a href=\""<<s2+bar+ROOMS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+ROOMS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 			if(WRITE_TIMETABLES_TIME_HORIZONTAL)
-				tos<<"          <td><a href=\""<<s2+bar+ROOMS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+ROOMS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 			if(WRITE_TIMETABLES_TIME_VERTICAL)
-				tos<<"          <td><a href=\""<<s2+bar+ROOMS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+ROOMS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 		} else {
@@ -1517,19 +1483,19 @@ void TimetableExport::writeIndexHtml(QWidget* parent, const QString& htmlfilenam
 		tos<<"          <th>"+tr("Subjects")+"</th>\n";
 		if(WRITE_TIMETABLES_SUBJECTS){
 			if(WRITE_TIMETABLES_DAYS_HORIZONTAL)
-				tos<<"          <td><a href=\""<<s2+bar+SUBJECTS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+SUBJECTS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 			if(WRITE_TIMETABLES_DAYS_VERTICAL)
-				tos<<"          <td><a href=\""<<s2+bar+SUBJECTS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+SUBJECTS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 			if(WRITE_TIMETABLES_TIME_HORIZONTAL)
-				tos<<"          <td><a href=\""<<s2+bar+SUBJECTS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+SUBJECTS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 			if(WRITE_TIMETABLES_TIME_VERTICAL)
-				tos<<"          <td><a href=\""<<s2+bar+SUBJECTS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+SUBJECTS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 		} else {
@@ -1543,19 +1509,19 @@ void TimetableExport::writeIndexHtml(QWidget* parent, const QString& htmlfilenam
 		tos<<"          <th>"+tr("Activity Tags")+"</th>\n";
 		if(WRITE_TIMETABLES_ACTIVITY_TAGS){
 			if(WRITE_TIMETABLES_DAYS_HORIZONTAL)
-				tos<<"          <td><a href=\""<<s2+bar+ACTIVITY_TAGS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+ACTIVITY_TAGS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 			if(WRITE_TIMETABLES_DAYS_VERTICAL)
-				tos<<"          <td><a href=\""<<s2+bar+ACTIVITY_TAGS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+ACTIVITY_TAGS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 			if(WRITE_TIMETABLES_TIME_HORIZONTAL)
-				tos<<"          <td><a href=\""<<s2+bar+ACTIVITY_TAGS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+ACTIVITY_TAGS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 			if(WRITE_TIMETABLES_TIME_VERTICAL)
-				tos<<"          <td><a href=\""<<s2+bar+ACTIVITY_TAGS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+ACTIVITY_TAGS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 		} else {
@@ -1569,19 +1535,19 @@ void TimetableExport::writeIndexHtml(QWidget* parent, const QString& htmlfilenam
 		tos<<"          <th>"+tr("Activities")+"</th>\n";
 		if(WRITE_TIMETABLES_ACTIVITIES){
 			if(WRITE_TIMETABLES_DAYS_HORIZONTAL)
-				tos<<"          <td><a href=\""<<s2+bar+ALL_ACTIVITIES_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+ALL_ACTIVITIES_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 			if(WRITE_TIMETABLES_DAYS_VERTICAL)
-				tos<<"          <td><a href=\""<<s2+bar+ALL_ACTIVITIES_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+ALL_ACTIVITIES_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 			if(WRITE_TIMETABLES_TIME_HORIZONTAL)
-				tos<<"          <td><a href=\""<<s2+bar+ALL_ACTIVITIES_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+ALL_ACTIVITIES_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 			if(WRITE_TIMETABLES_TIME_VERTICAL)
-				tos<<"          <td><a href=\""<<s2+bar+ALL_ACTIVITIES_TIMETABLE_TIME_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
+				tos<<"          <td><a href=\""<<s2+ALL_ACTIVITIES_TIMETABLE_TIME_VERTICAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
 			else
 				tos<<"          <td>"+tr("disabled")+"</td>\n";
 		} else {
@@ -4348,16 +4314,10 @@ QString TimetableExport::writeHead(bool java, int placedActivities, bool printIn
 	tmp+="    <title>"+protect2(gt.rules.getInstitutionName())+"</title>\n";
 	tmp+="    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n";
 	if(TIMETABLE_HTML_LEVEL>=1){
-		QString cssfilename=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);
-		
-		if(cssfilename.right(4)==".fet")
-			cssfilename=cssfilename.left(cssfilename.length()-4);
-		//else if(INPUT_FILENAME_XML!="")
-		//	cout<<"Minor problem - input file does not end in .fet extension - might be a problem when saving the timetables"<<" (file:"<<__FILE__<<", line:"<<__LINE__<<")"<<endl;
-		
-		cssfilename+="_"+STYLESHEET_CSS;
-		if(INPUT_FILENAME_XML=="")
-			cssfilename=STYLESHEET_CSS;
+		QString cssfilename=getBasename();
+		if (!cssfilename.isEmpty())
+			cssfilename.append("_");
+		cssfilename+=STYLESHEET_CSS;
 		tmp+="    <link rel=\"stylesheet\" media=\"all\" href=\""+cssfilename+"\" type=\"text/css\" />\n";
 	}
 	if(java){
