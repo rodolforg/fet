@@ -63,6 +63,20 @@ const char CSVTimetable[]="timetable.csv";
 QString DIRECTORY_CSV;
 QString PREFIX_CSV;
 
+static QString getBasename(){
+	QFileInfo input(INPUT_FILENAME_XML);
+	if (input.suffix() == "fet")
+		return input.baseName();
+	return input.fileName();
+}
+
+static QString getFilename(QString suffix) {
+	QString basename = getBasename();
+	if (!basename.isEmpty())
+		basename.append("_");
+	return PREFIX_CSV+basename+suffix;
+}
+
 Export::Export()
 {
 }
@@ -125,17 +139,9 @@ void Export::exportCSV(QWidget* parent){
 
 	DIRECTORY_CSV=OUTPUT_DIR+FILE_SEP+"csv";
 
-	QString s2;
-	if(INPUT_FILENAME_XML=="")
+	QString s2=getBasename();
+	if(s2.isEmpty())
 		s2="unnamed";
-	else{
-		s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because too long filenames!
-
-		if(s2.right(4)==".fet")
-			s2=s2.left(s2.length()-4);
-		//else if(INPUT_FILENAME_XML!="")
-		//	cout<<"Minor problem - input file does not end in .fet extension - might be a problem when saving the timetables"<<" (file:"<<__FILE__<<", line:"<<__LINE__<<")"<<endl;
-	}
 	DIRECTORY_CSV.append(FILE_SEP);
 	DIRECTORY_CSV.append(s2);
 	
@@ -194,9 +200,7 @@ QString Export::protectCSV(const QString& str){
 	return p;
 }
 
-
-
-bool Export::checkSetSeparator(const QString& str, const QString setSeparator){
+bool Export::checkSetSeparator(const QString& str, const QString& setSeparator){
 	if(str.contains(setSeparator))
 		return false;
 	return true;
@@ -438,17 +442,7 @@ LastWarningsDialogE::~LastWarningsDialogE()
 
 
 bool Export::exportCSVActivityTags(QWidget* parent, QString& lastWarnings, const QString textquote, const bool head, const QString setSeparator, QMessageBox::StandardButton& msgBoxButton){
-	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because too long filenames!
-
-	if(s2.right(4)==".fet")
-		s2=s2.left(s2.length()-4);
-	//else if(INPUT_FILENAME_XML!="")
-	//	cout<<"Minor problem - input file does not end in .fet extension - might be a problem when saving the timetables"<<" (file:"<<__FILE__<<", line:"<<__LINE__<<")"<<endl;
-
-	QString UNDERSCORE="_";
-	if(INPUT_FILENAME_XML=="")
-		UNDERSCORE="";
-	QString file=PREFIX_CSV+s2+UNDERSCORE+CSVActivityTags;
+	QString file=getFilename(CSVActivityTags);
 	
 	if(!Export::okToWrite(parent, file, msgBoxButton))
 		return false;
@@ -483,17 +477,7 @@ bool Export::exportCSVActivityTags(QWidget* parent, QString& lastWarnings, const
 
 
 bool Export::exportCSVRoomsAndBuildings(QWidget* parent, QString& lastWarnings, const QString textquote, const QString fieldSeparator, const bool head, QMessageBox::StandardButton& msgBoxButton){
-	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because too long filenames!
-
-	if(s2.right(4)==".fet")
-		s2=s2.left(s2.length()-4);
-	//else if(INPUT_FILENAME_XML!="")
-	//	cout<<"Minor problem - input file does not end in .fet extension - might be a problem when saving the timetables"<<" (file:"<<__FILE__<<", line:"<<__LINE__<<")"<<endl;
-
-	QString UNDERSCORE="_";
-	if(INPUT_FILENAME_XML=="")
-		UNDERSCORE="";
-	QString file=PREFIX_CSV+s2+UNDERSCORE+CSVRoomsAndBuildings;
+	QString file=getFilename(CSVRoomsAndBuildings);
 
 	if(!Export::okToWrite(parent, file, msgBoxButton))
 		return false;
@@ -537,17 +521,7 @@ bool Export::exportCSVRoomsAndBuildings(QWidget* parent, QString& lastWarnings, 
 
 
 bool Export::exportCSVSubjects(QWidget* parent, QString& lastWarnings, const QString textquote, const bool head, QMessageBox::StandardButton& msgBoxButton){
-	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because too long filenames!
-
-	if(s2.right(4)==".fet")
-		s2=s2.left(s2.length()-4);
-	//else if(INPUT_FILENAME_XML!="")
-	//	cout<<"Minor problem - input file does not end in .fet extension - might be a problem when saving the timetables"<<" (file:"<<__FILE__<<", line:"<<__LINE__<<")"<<endl;
-
-	QString UNDERSCORE="_";
-	if(INPUT_FILENAME_XML=="")
-		UNDERSCORE="";
-	QString file=PREFIX_CSV+s2+UNDERSCORE+CSVSubjects;
+	QString file=getFilename(CSVSubjects);
 
 	if(!Export::okToWrite(parent, file, msgBoxButton))
 		return false;
@@ -580,17 +554,7 @@ bool Export::exportCSVSubjects(QWidget* parent, QString& lastWarnings, const QSt
 
 
 bool Export::exportCSVTeachers(QWidget* parent, QString& lastWarnings, const QString textquote, const bool head, const QString setSeparator, QMessageBox::StandardButton& msgBoxButton){
-	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because too long filenames!
-
-	if(s2.right(4)==".fet")
-		s2=s2.left(s2.length()-4);
-	//else if(INPUT_FILENAME_XML!="")
-	//	cout<<"Minor problem - input file does not end in .fet extension - might be a problem when saving the timetables"<<" (file:"<<__FILE__<<", line:"<<__LINE__<<")"<<endl;
-
-	QString UNDERSCORE="_";
-	if(INPUT_FILENAME_XML=="")
-		UNDERSCORE="";
-	QString file=PREFIX_CSV+s2+UNDERSCORE+CSVTeachers;
+	QString file=getFilename(CSVTeachers);
 
 	if(!Export::okToWrite(parent, file, msgBoxButton))
 		return false;
@@ -625,17 +589,7 @@ bool Export::exportCSVTeachers(QWidget* parent, QString& lastWarnings, const QSt
 
 
 bool Export::exportCSVStudents(QWidget* parent, QString& lastWarnings, const QString textquote, const QString fieldSeparator, const bool head, const QString setSeparator, QMessageBox::StandardButton& msgBoxButton){
-	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because too long filenames!
-
-	if(s2.right(4)==".fet")
-		s2=s2.left(s2.length()-4);
-	//else if(INPUT_FILENAME_XML!="")
-	//	cout<<"Minor problem - input file does not end in .fet extension - might be a problem when saving the timetables"<<" (file:"<<__FILE__<<", line:"<<__LINE__<<")"<<endl;
-
-	QString UNDERSCORE="_";
-	if(INPUT_FILENAME_XML=="")
-		UNDERSCORE="";
-	QString file=PREFIX_CSV+s2+UNDERSCORE+CSVStudents;
+	QString file=getFilename(CSVStudents);
 
 	if(!Export::okToWrite(parent, file, msgBoxButton))
 		return false;
@@ -700,17 +654,7 @@ bool Export::exportCSVStudents(QWidget* parent, QString& lastWarnings, const QSt
 
 
 bool Export::exportCSVActivities(QWidget* parent, QString& lastWarnings, const QString textquote, const QString fieldSeparator, const bool head, QMessageBox::StandardButton& msgBoxButton){
-	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because too long filenames!
-
-	if(s2.right(4)==".fet")
-		s2=s2.left(s2.length()-4);
-	//else if(INPUT_FILENAME_XML!="")
-	//	cout<<"Minor problem - input file does not end in .fet extension - might be a problem when saving the timetables"<<" (file:"<<__FILE__<<", line:"<<__LINE__<<")"<<endl;
-
-	QString UNDERSCORE="_";
-	if(INPUT_FILENAME_XML=="")
-		UNDERSCORE="";
-	QString file=PREFIX_CSV+s2+UNDERSCORE+CSVActivities;
+	QString file=getFilename(CSVActivities);
 
 	if(!Export::okToWrite(parent, file, msgBoxButton))
 		return false;
@@ -974,17 +918,7 @@ bool Export::exportCSVActivities(QWidget* parent, QString& lastWarnings, const Q
 
 
 bool Export::exportCSVActivitiesStatistic(QWidget* parent, QString& lastWarnings, const QString textquote, const QString fieldSeparator, const bool head, QMessageBox::StandardButton& msgBoxButton){
-	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because too long filenames!
-
-	if(s2.right(4)==".fet")
-		s2=s2.left(s2.length()-4);
-	//else if(INPUT_FILENAME_XML!="")
-	//	cout<<"Minor problem - input file does not end in .fet extension - might be a problem when saving the timetables"<<" (file:"<<__FILE__<<", line:"<<__LINE__<<")"<<endl;
-
-	QString UNDERSCORE="_";
-	if(INPUT_FILENAME_XML=="")
-		UNDERSCORE="";
-	QString file=PREFIX_CSV+s2+UNDERSCORE+CSVActivitiesStatistic;
+	QString file=getFilename(CSVActivitiesStatistic);
 
 	if(!Export::okToWrite(parent, file, msgBoxButton))
 		return false;
@@ -1054,17 +988,7 @@ bool Export::exportCSVActivitiesStatistic(QWidget* parent, QString& lastWarnings
 
 
 bool Export::exportCSVTimetable(QWidget* parent, QString& lastWarnings, const QString textquote, const QString fieldSeparator, const bool head, QMessageBox::StandardButton& msgBoxButton){
-	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because too long filenames!
-
-	if(s2.right(4)==".fet")
-		s2=s2.left(s2.length()-4);
-	//else if(INPUT_FILENAME_XML!="")
-	//	cout<<"Minor problem - input file does not end in .fet extension - might be a problem when saving the timetables"<<" (file:"<<__FILE__<<", line:"<<__LINE__<<")"<<endl;
-
-	QString UNDERSCORE="_";
-	if(INPUT_FILENAME_XML=="")
-		UNDERSCORE="";
-	QString file=PREFIX_CSV+s2+UNDERSCORE+CSVTimetable;
+	QString file=getFilename(CSVTimetable);
 	
 	if(!Export::okToWrite(parent, file, msgBoxButton))
 		return false;
