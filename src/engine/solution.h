@@ -66,11 +66,6 @@ public:
 	void copy(const Rules& r, const Solution& c);
 
 	/**
-	Initializes, marking all activities as unscheduled (time)
-	*/
-	void init(const Rules& r);
-
-	/**
 	Marks the starting time of all the activities as undefined
 	(all activities are unallocated).
 	*/
