@@ -44,7 +44,7 @@ public:
 private:
 	static bool okToWrite(QWidget* parent, const QString& file, QMessageBox::StandardButton& msgBoxButton);
 
-	static bool checkSetSeparator(const QString& str, const QString setSeparator);
+	static bool checkSetSeparator(const QString& str, const QString &setSeparator);
 	static QString protectCSV(const QString& str);
 
 	static bool isActivityNotManualyEdited(const int activityIndex, bool& diffTeachers, bool& diffSubject, bool& diffActivityTags, bool& diffStudents, bool& diffCompNStud, bool& diffNStud, bool& diffActive);
