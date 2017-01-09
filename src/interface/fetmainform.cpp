@@ -1306,7 +1306,8 @@ void FetMainForm::on_fileExportCSVAction_triggered(){
 			tr("Allocation in course.\nPlease stop simulation before this."));
 		return;
 	}
-	Export::exportCSV(this);
+	Export exp(gt, best_solution);
+	exp.exportCSV(this);
 }
 // End of code contributed by Volker Dirr
 

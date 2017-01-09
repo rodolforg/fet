@@ -26,7 +26,6 @@ File export.h
 #define EXPORT_H
 
 #include "timetable.h"
-#include "timetable_defs.h"
 
 #include <QDialog>
 #include <QWidget>
@@ -37,28 +36,56 @@ class Export: public QObject{
 	Q_OBJECT
 
 public:
-	Export();
+	Export(const Timetable &gt, const Solution &solution);
 	~Export();
 
-	static void exportCSV(QWidget* parent);
+	void exportCSV(QWidget* parent);
+
+	QString getTextquote() const;
+	void setTextquote(const QString &value);
+
+	QString getFieldSeparator() const;
+	void setFieldSeparator(const QString &value);
+
+	bool getHeader() const;
+	void setHeader(bool value);
+
+	QString getSetSeparator() const;
+
+	QString getDirectoryCSV() const;
+	void setDirectoryCSV(const QString &value);
+
 private:
+	const Timetable &gt;
+	const Solution &solution;
+
+	QString directoryCSV;
+
+	QString textquote;
+	QString fieldSeparator;
+	bool header;
+	QString setSeparator;
+
+	QString lastWarnings;
+
 	static bool okToWrite(QWidget* parent, const QString& file, QMessageBox::StandardButton& msgBoxButton);
 
 	static bool checkSetSeparator(const QString& str, const QString &setSeparator);
 	static QString protectCSV(const QString& str);
 
-	static bool isActivityNotManualyEdited(const int activityIndex, bool& diffTeachers, bool& diffSubject, bool& diffActivityTags, bool& diffStudents, bool& diffCompNStud, bool& diffNStud, bool& diffActive);
+	bool isActivityNotManualyEdited(const int activityIndex, bool& diffTeachers, bool& diffSubject, bool& diffActivityTags, bool& diffStudents, bool& diffCompNStud, bool& diffNStud, bool& diffActive);
 
 	static bool selectSeparatorAndTextquote(QWidget* parent, QDialog* &newParent, QString& textquote, QString& fieldSeparator, bool& head);
 
-	static bool exportCSVActivities(QWidget* parent, QString& lastWarnings, const QString textquote, const QString fieldSeparator, const bool head, QMessageBox::StandardButton& msgBoxButton);
-	static bool exportCSVActivitiesStatistic(QWidget* parent, QString& lastWarnings, const QString textquote, const QString fieldSeparator, const bool head, QMessageBox::StandardButton& msgBoxButton);
-	static bool exportCSVActivityTags(QWidget* parent, QString& lastWarnings, const QString textquote, const bool head, const QString setSeparator, QMessageBox::StandardButton& msgBoxButton);
-	static bool exportCSVRoomsAndBuildings(QWidget* parent, QString& lastWarnings, const QString textquote, const QString fieldSeparator, const bool head, QMessageBox::StandardButton& msgBoxButton);
-	static bool exportCSVSubjects(QWidget* parent, QString& lastWarnings, const QString textquote, const bool head, QMessageBox::StandardButton& msgBoxButton);
-	static bool exportCSVTeachers(QWidget* parent, QString& lastWarnings, const QString textquote, const bool head, const QString setSeparator, QMessageBox::StandardButton& msgBoxButton);
-	static bool exportCSVStudents(QWidget* parent, QString& lastWarnings, const QString textquote, const QString fieldSeparator, const bool head, const QString setSeparator, QMessageBox::StandardButton& msgBoxButton);
-	static bool exportCSVTimetable(QWidget* parent, QString& lastWarnings, const QString textquote, const QString fieldSeparator, const bool head, QMessageBox::StandardButton& msgBoxButton);
+	bool exportCSVActivities(QWidget* parent, QMessageBox::StandardButton& msgBoxButton);
+	bool exportCSVActivitiesStatistic(QWidget* parent, QMessageBox::StandardButton& msgBoxButton);
+	bool exportCSVActivityTags(QWidget* parent, QMessageBox::StandardButton& msgBoxButton);
+	bool exportCSVRoomsAndBuildings(QWidget* parent, QMessageBox::StandardButton& msgBoxButton);
+	bool exportCSVSubjects(QWidget* parent,QMessageBox::StandardButton& msgBoxButton);
+	bool exportCSVTeachers(QWidget* parent, QMessageBox::StandardButton& msgBoxButton);
+	bool exportCSVStudents(QWidget* parent, QMessageBox::StandardButton& msgBoxButton);
+	bool exportCSVTimetable(QWidget* parent, QMessageBox::StandardButton& msgBoxButton);
+	QString getFilePath(QString suffix);
 };
 
 class LastWarningsDialogE: public QDialog{

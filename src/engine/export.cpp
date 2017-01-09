@@ -42,15 +42,8 @@ File export.cpp
 class QWidget;
 void centerWidgetOnScreen(QWidget* widget);
 
-#include "timetable_defs.h"		//needed, because of QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);
 #include "export.h"
 #include "solution.h"
-
-extern Timetable gt;
-extern Solution best_solution;
-extern bool teachers_schedule_ready;
-extern bool students_schedule_ready;
-extern bool rooms_schedule_ready;
 
 const char CSVActivities[]="activities.csv";
 const char CSVActivitiesStatistic[]="statistics_activities.csv";
@@ -60,8 +53,6 @@ const char CSVSubjects[]="subjects.csv";
 const char CSVTeachers[]="teachers.csv";
 const char CSVStudents[]="students.csv";
 const char CSVTimetable[]="timetable.csv";
-QString DIRECTORY_CSV;
-QString PREFIX_CSV;
 
 static QString getBasename(){
 	QFileInfo input(INPUT_FILENAME_XML);
@@ -70,14 +61,17 @@ static QString getBasename(){
 	return input.fileName();
 }
 
-static QString getFilename(QString suffix) {
+QString Export::getFilePath(QString suffix) {
 	QString basename = getBasename();
 	if (!basename.isEmpty())
 		basename.append("_");
-	return PREFIX_CSV+basename+suffix;
+	return directoryCSV+basename+suffix;
 }
 
-Export::Export()
+Export::Export(const Timetable &gt, const Solution &solution)
+	: gt(gt), solution(solution),
+	  textquote("\""), fieldSeparator(","),
+	  header(true), setSeparator("+")
 {
 }
 
@@ -130,32 +124,23 @@ bool Export::okToWrite(QWidget* parent, const QString& file, QMessageBox::Standa
 }
 
 
-void Export::exportCSV(QWidget* parent){
-	QString fieldSeparator=",";
-	QString textquote="\"";
-	QString setSeparator="+";
-	bool head=true;
+void Export::exportCSV(QWidget* parent) {
 	bool ok=true;
 
-	DIRECTORY_CSV=OUTPUT_DIR+FILE_SEP+"csv";
+	if (directoryCSV.isNull())
+		directoryCSV=OUTPUT_DIR+FILE_SEP+"csv";
 
 	QString s2=getBasename();
 	if(s2.isEmpty())
 		s2="unnamed";
-	DIRECTORY_CSV.append(FILE_SEP);
-	DIRECTORY_CSV.append(s2);
-	
-
-	PREFIX_CSV=DIRECTORY_CSV+FILE_SEP;
+	directoryCSV.append(FILE_SEP+s2+FILE_SEP);
 
 	QDir dir;
-	if(!dir.exists(OUTPUT_DIR))
-		dir.mkpath(OUTPUT_DIR);
-	if(!dir.exists(DIRECTORY_CSV))
-		dir.mkpath(DIRECTORY_CSV);
+	if(!dir.exists(directoryCSV))
+		dir.mkpath(directoryCSV);
 
 	QDialog* newParent;
-	ok=selectSeparatorAndTextquote(parent, newParent, textquote, fieldSeparator, head);
+	ok=selectSeparatorAndTextquote(parent, newParent, textquote, fieldSeparator, header);
 	
 	QString lastWarnings;
 	if(!ok){
@@ -165,18 +150,18 @@ void Export::exportCSV(QWidget* parent){
 
 		QMessageBox::StandardButton msgBoxButton=QMessageBox::NoButton;
 
-		okat=exportCSVActivityTags(newParent, lastWarnings, textquote, head, setSeparator, msgBoxButton);
-		okr=exportCSVRoomsAndBuildings(newParent, lastWarnings, textquote, fieldSeparator, head, msgBoxButton);
-		oks=exportCSVSubjects(newParent, lastWarnings, textquote, head, msgBoxButton);
-		okt=exportCSVTeachers(newParent, lastWarnings, textquote, head, setSeparator, msgBoxButton);
-		okst=exportCSVStudents(newParent, lastWarnings, textquote, fieldSeparator, head, setSeparator, msgBoxButton);
-		okact=exportCSVActivities(newParent, lastWarnings, textquote, fieldSeparator, head, msgBoxButton);
-		okacts=exportCSVActivitiesStatistic(newParent, lastWarnings, textquote, fieldSeparator, head, msgBoxButton);
-		oktim=exportCSVTimetable(newParent, lastWarnings, textquote, fieldSeparator, head, msgBoxButton);
+		okat=exportCSVActivityTags(newParent, msgBoxButton);
+		okr=exportCSVRoomsAndBuildings(newParent, msgBoxButton);
+		oks=exportCSVSubjects(newParent, msgBoxButton);
+		okt=exportCSVTeachers(newParent, msgBoxButton);
+		okst=exportCSVStudents(newParent, msgBoxButton);
+		okact=exportCSVActivities(newParent, msgBoxButton);
+		okacts=exportCSVActivitiesStatistic(newParent, msgBoxButton);
+		oktim=exportCSVTimetable(newParent, msgBoxButton);
 		
 		ok=okat && okr && oks && okt && okst && okact && okacts && oktim;
 			
-		lastWarnings.insert(0,Export::tr("CSV files were exported to directory %1.").arg(QDir::toNativeSeparators(DIRECTORY_CSV))+"\n");
+		lastWarnings.insert(0,Export::tr("CSV files were exported to directory %1.").arg(QDir::toNativeSeparators(directoryCSV))+"\n");
 		if(ok)
 			lastWarnings.insert(0,Export::tr("Exported complete")+"\n");
 		else
@@ -192,7 +177,50 @@ void Export::exportCSV(QWidget* parent){
 	ok=lwd.exec();
 }
 
+QString Export::getTextquote() const
+{
+	return textquote;
+}
 
+void Export::setTextquote(const QString &value)
+{
+	textquote = value;
+}
+
+QString Export::getFieldSeparator() const
+{
+	return fieldSeparator;
+}
+
+void Export::setFieldSeparator(const QString &value)
+{
+	fieldSeparator = value;
+}
+
+bool Export::getHeader() const
+{
+	return header;
+}
+
+void Export::setHeader(bool value)
+{
+	header = value;
+}
+
+QString Export::getSetSeparator() const
+{
+	return setSeparator;
+}
+
+QString Export::getDirectoryCSV() const
+{
+	return directoryCSV;
+}
+
+void Export::setDirectoryCSV(const QString &value)
+{
+	directoryCSV = value;
+}
 
 QString Export::protectCSV(const QString& str){
 	QString p=str;
@@ -270,8 +298,6 @@ bool Export::isActivityNotManualyEdited(const int activityIndex, bool& diffTeach
 
 
 bool Export::selectSeparatorAndTextquote(QWidget* parent, QDialog* &newParent, QString& textquote, QString& fieldSeparator, bool& head){
-	assert(gt.rules.initialized);
-
 	newParent=((QDialog*)parent);
 
 	QStringList separators;
@@ -441,8 +467,8 @@ LastWarningsDialogE::~LastWarningsDialogE()
 }
 
 
-bool Export::exportCSVActivityTags(QWidget* parent, QString& lastWarnings, const QString textquote, const bool head, const QString setSeparator, QMessageBox::StandardButton& msgBoxButton){
-	QString file=getFilename(CSVActivityTags);
+bool Export::exportCSVActivityTags(QWidget* parent, QMessageBox::StandardButton& msgBoxButton){
+	QString file=getFilePath(CSVActivityTags);
 	
 	if(!Export::okToWrite(parent, file, msgBoxButton))
 		return false;
@@ -456,7 +482,7 @@ bool Export::exportCSVActivityTags(QWidget* parent, QString& lastWarnings, const
 	tosExport.setCodec("UTF-8");
 	tosExport.setGenerateByteOrderMark(true);
 
-	if(head)
+	if(header)
 		tosExport<<textquote<<"Activity Tag"<<textquote<<endl;
 
 	foreach(ActivityTag* a, gt.rules.activityTagsList){
@@ -476,8 +502,8 @@ bool Export::exportCSVActivityTags(QWidget* parent, QString& lastWarnings, const
 
 
 
-bool Export::exportCSVRoomsAndBuildings(QWidget* parent, QString& lastWarnings, const QString textquote, const QString fieldSeparator, const bool head, QMessageBox::StandardButton& msgBoxButton){
-	QString file=getFilename(CSVRoomsAndBuildings);
+bool Export::exportCSVRoomsAndBuildings(QWidget* parent, QMessageBox::StandardButton& msgBoxButton){
+	QString file=getFilePath(CSVRoomsAndBuildings);
 
 	if(!Export::okToWrite(parent, file, msgBoxButton))
 		return false;
@@ -491,7 +517,7 @@ bool Export::exportCSVRoomsAndBuildings(QWidget* parent, QString& lastWarnings, 
 	tosExport.setCodec("UTF-8");
 	tosExport.setGenerateByteOrderMark(true);
 	
-	if(head)
+	if(header)
 		tosExport	<<textquote<<"Room"<<textquote<<fieldSeparator
 				<<textquote<<"Room Capacity"<<textquote<<fieldSeparator
 				<<textquote<<"Building"<<textquote<<endl;
@@ -520,8 +546,8 @@ bool Export::exportCSVRoomsAndBuildings(QWidget* parent, QString& lastWarnings, 
 
 
 
-bool Export::exportCSVSubjects(QWidget* parent, QString& lastWarnings, const QString textquote, const bool head, QMessageBox::StandardButton& msgBoxButton){
-	QString file=getFilename(CSVSubjects);
+bool Export::exportCSVSubjects(QWidget* parent, QMessageBox::StandardButton& msgBoxButton){
+	QString file=getFilePath(CSVSubjects);
 
 	if(!Export::okToWrite(parent, file, msgBoxButton))
 		return false;
@@ -535,7 +561,7 @@ bool Export::exportCSVSubjects(QWidget* parent, QString& lastWarnings, const QSt
 	tosExport.setCodec("UTF-8");
 	tosExport.setGenerateByteOrderMark(true);
 	
-	if(head)
+	if(header)
 		tosExport<<textquote<<"Subject"<<textquote<<endl;
 
 	foreach(Subject* s, gt.rules.subjectsList){
@@ -553,8 +579,8 @@ bool Export::exportCSVSubjects(QWidget* parent, QString& lastWarnings, const QSt
 
 
 
-bool Export::exportCSVTeachers(QWidget* parent, QString& lastWarnings, const QString textquote, const bool head, const QString setSeparator, QMessageBox::StandardButton& msgBoxButton){
-	QString file=getFilename(CSVTeachers);
+bool Export::exportCSVTeachers(QWidget* parent, QMessageBox::StandardButton& msgBoxButton){
+	QString file=getFilePath(CSVTeachers);
 
 	if(!Export::okToWrite(parent, file, msgBoxButton))
 		return false;
@@ -568,7 +594,7 @@ bool Export::exportCSVTeachers(QWidget* parent, QString& lastWarnings, const QSt
 	tosExport.setCodec("UTF-8");
 	tosExport.setGenerateByteOrderMark(true);
 	
-	if(head)
+	if(header)
 		tosExport<<textquote<<"Teacher"<<textquote<<endl;
 
 	foreach(Teacher* t, gt.rules.teachersList){
@@ -588,8 +614,8 @@ bool Export::exportCSVTeachers(QWidget* parent, QString& lastWarnings, const QSt
 
 
 
-bool Export::exportCSVStudents(QWidget* parent, QString& lastWarnings, const QString textquote, const QString fieldSeparator, const bool head, const QString setSeparator, QMessageBox::StandardButton& msgBoxButton){
-	QString file=getFilename(CSVStudents);
+bool Export::exportCSVStudents(QWidget* parent, QMessageBox::StandardButton& msgBoxButton){
+	QString file=getFilePath(CSVStudents);
 
 	if(!Export::okToWrite(parent, file, msgBoxButton))
 		return false;
@@ -603,7 +629,7 @@ bool Export::exportCSVStudents(QWidget* parent, QString& lastWarnings, const QSt
 	tosExport.setCodec("UTF-8");
 	tosExport.setGenerateByteOrderMark(true);
 	
-	if(head)
+	if(header)
 		tosExport	<<textquote<<"Year"<<textquote<<fieldSeparator
 				<<textquote<<"Number of Students per Year"<<textquote<<fieldSeparator
 				<<textquote<<"Group"<<textquote<<fieldSeparator
@@ -653,8 +679,8 @@ bool Export::exportCSVStudents(QWidget* parent, QString& lastWarnings, const QSt
 
 
 
-bool Export::exportCSVActivities(QWidget* parent, QString& lastWarnings, const QString textquote, const QString fieldSeparator, const bool head, QMessageBox::StandardButton& msgBoxButton){
-	QString file=getFilename(CSVActivities);
+bool Export::exportCSVActivities(QWidget* parent, QMessageBox::StandardButton& msgBoxButton){
+	QString file=getFilePath(CSVActivities);
 
 	if(!Export::okToWrite(parent, file, msgBoxButton))
 		return false;
@@ -668,7 +694,7 @@ bool Export::exportCSVActivities(QWidget* parent, QString& lastWarnings, const Q
 	tosExport.setCodec("UTF-8");
 	tosExport.setGenerateByteOrderMark(true);
 	
-	if(head)
+	if(header)
 		tosExport	<<textquote<<"Students Sets"<<textquote<<fieldSeparator
 				<<textquote<<"Subject"<<textquote<<fieldSeparator
 				<<textquote<<"Teachers"<<textquote<<fieldSeparator
@@ -917,8 +943,8 @@ bool Export::exportCSVActivities(QWidget* parent, QString& lastWarnings, const Q
 
 
 
-bool Export::exportCSVActivitiesStatistic(QWidget* parent, QString& lastWarnings, const QString textquote, const QString fieldSeparator, const bool head, QMessageBox::StandardButton& msgBoxButton){
-	QString file=getFilename(CSVActivitiesStatistic);
+bool Export::exportCSVActivitiesStatistic(QWidget* parent, QMessageBox::StandardButton& msgBoxButton){
+	QString file=getFilePath(CSVActivitiesStatistic);
 
 	if(!Export::okToWrite(parent, file, msgBoxButton))
 		return false;
@@ -932,7 +958,7 @@ bool Export::exportCSVActivitiesStatistic(QWidget* parent, QString& lastWarnings
 	tosExport.setCodec("UTF-8");
 	tosExport.setGenerateByteOrderMark(true);
 	
-	if(head)
+	if(header)
 		tosExport	<<textquote<<"Students Sets"<<textquote<<fieldSeparator
 				<<textquote<<"Subject"<<textquote<<fieldSeparator
 				<<textquote<<"Teachers"<<textquote<<fieldSeparator
@@ -987,8 +1013,8 @@ bool Export::exportCSVActivitiesStatistic(QWidget* parent, QString& lastWarnings
 
 
 
-bool Export::exportCSVTimetable(QWidget* parent, QString& lastWarnings, const QString textquote, const QString fieldSeparator, const bool head, QMessageBox::StandardButton& msgBoxButton){
-	QString file=getFilename(CSVTimetable);
+bool Export::exportCSVTimetable(QWidget* parent, QMessageBox::StandardButton& msgBoxButton){
+	QString file=getFilePath(CSVTimetable);
 	
 	if(!Export::okToWrite(parent, file, msgBoxButton))
 		return false;
@@ -1003,7 +1029,7 @@ bool Export::exportCSVTimetable(QWidget* parent, QString& lastWarnings, const QS
 	tosExport.setGenerateByteOrderMark(true);
 	
 	//section "Activity Id" was added by Liviu Lalescu on 2010-01-26, as suggested on the forum
-	if(head)
+	if(header)
 		tosExport
 				<<textquote<<"Activity Id"<<textquote<<fieldSeparator
 				<<textquote<<"Day"<<textquote<<fieldSeparator
@@ -1016,16 +1042,16 @@ bool Export::exportCSVTimetable(QWidget* parent, QString& lastWarnings, const QS
 				<<textquote<<"Comments"<<textquote<<endl;
 
 	if(gt.rules.initialized && gt.rules.internalStructureComputed
-	 && students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready){
+	 && solution.subgroupsMatrixReady && solution.teachersMatrixReady && solution.roomsMatrixReady){
 		Activity *act;
 		int exportedActivities=0;
 		for(int i=0; i<gt.rules.nInternalActivities; i++){
-			if(best_solution.times[i]!=UNALLOCATED_TIME) {
+			if(solution.times[i]!=UNALLOCATED_TIME) {
 				exportedActivities++;
 				act=&gt.rules.internalActivitiesList[i];
-				int hour=best_solution.times[i]/gt.rules.nDaysPerWeek;
-				int day=best_solution.times[i]%gt.rules.nDaysPerWeek;
-				int r=best_solution.rooms[i];
+				int hour=solution.times[i]/gt.rules.nDaysPerWeek;
+				int day=solution.times[i]%gt.rules.nDaysPerWeek;
+				int r=solution.rooms[i];
 				for(int dd=0; dd < act->duration; dd++){
 					assert(hour+dd<gt.rules.nHoursPerDay);
 					
@@ -1061,8 +1087,8 @@ bool Export::exportCSVTimetable(QWidget* parent, QString& lastWarnings, const QS
 					}
 					tosExport<<textquote<<fieldSeparator<<textquote;
 					//Room
-					if(best_solution.rooms[i] != UNSPECIFIED_ROOM && best_solution.rooms[i] != UNALLOCATED_SPACE){
-						assert(best_solution.rooms[i]>=0 && best_solution.rooms[i]<gt.rules.nInternalRooms);
+					if(solution.rooms[i] != UNSPECIFIED_ROOM && solution.rooms[i] != UNALLOCATED_SPACE){
+						assert(solution.rooms[i]>=0 && solution.rooms[i]<gt.rules.nInternalRooms);
 						tosExport<<protectCSV(gt.rules.internalRoomsList[r]->name);
 					}
 					tosExport<<textquote<<fieldSeparator<<textquote;
