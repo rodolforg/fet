@@ -218,6 +218,7 @@ private:
 	static QString writeNotAvailableSlot(int htmlLevel, const QString& weight);
 	static QString writeBreakSlot(int htmlLevel, const QString& weight);
 	static QString writeEmpty(int htmlLevel);
+	static void doWriteResults(QWidget *parent, QString filenamePrefix);
 };
 
 #endif
