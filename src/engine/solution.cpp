@@ -63,17 +63,6 @@ void Solution::copy(const Rules &r, const Solution &c){
 	nPlacedActivities=c.nPlacedActivities;
 }
 
-void Solution::init(const Rules &r){
-	assert(r.internalStructureComputed);
-
-	for(int i=0; i<r.nInternalActivities; i++){
-		this->times[i]=UNALLOCATED_TIME;
-		this->rooms[i]=UNALLOCATED_SPACE;
-	}
-
-	resetFitness();
-}
-
 void Solution::makeUnallocated(const Rules &r){
 	assert(r.initialized);
 	assert(r.internalStructureComputed);
