@@ -207,6 +207,13 @@ const QString RANDOM_SEED_FILENAME_AFTER="random_seed_after.txt";
 
 QString generationLocalizedTime=QString(""); //to be used in timetableprintform.cpp
 
+static QString getBasename(){
+	QFileInfo input(INPUT_FILENAME_XML);
+	if (input.suffix() == "fet")
+		return input.baseName();
+	return input.fileName();
+}
+
 //similar to code from Marco Vassura, modified by Volker Dirr to get rid of QColor and QBrush, since they need QtGui.
 //The command-line version does not have access to QtGui.
 void TimetableExport::stringToColor(QString s, int *r, int *g, int *b)
@@ -322,15 +329,13 @@ void TimetableExport::writeSimulationResults(QWidget* parent){
 	
 	QString OUTPUT_DIR_TIMETABLES=OUTPUT_DIR+FILE_SEP+"timetables";
 	
+	QString basename=getBasename();
+
 	OUTPUT_DIR_TIMETABLES.append(FILE_SEP);
 	if(INPUT_FILENAME_XML=="")
 		OUTPUT_DIR_TIMETABLES.append("unnamed");
 	else{
-		OUTPUT_DIR_TIMETABLES.append(INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1));
-		if(OUTPUT_DIR_TIMETABLES.right(4)==".fet")
-			OUTPUT_DIR_TIMETABLES=OUTPUT_DIR_TIMETABLES.left(OUTPUT_DIR_TIMETABLES.length()-4);
-		//else if(INPUT_FILENAME_XML!="")
-		//	cout<<"Minor problem - input file does not end in .fet extension - might be a problem when saving the timetables"<<" (file:"<<__FILE__<<", line:"<<__LINE__<<")"<<endl;
+		OUTPUT_DIR_TIMETABLES.append(basename);
 	}
 	OUTPUT_DIR_TIMETABLES.append("-single");
 	
@@ -347,198 +352,11 @@ void TimetableExport::writeSimulationResults(QWidget* parent){
 	computeActivitiesAtTime();
 	computeActivitiesWithSameStartingTime();
 
-	QString s;
-	QString bar;
-	if(INPUT_FILENAME_XML=="")
-		bar="";
-	else
-		bar="_";
-	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);
-	if(s2.right(4)==".fet")
-		s2=s2.left(s2.length()-4);
-	//else if(INPUT_FILENAME_XML!="")
-	//	cout<<"Minor problem - input file does not end in .fet extension - might be a problem when saving the timetables"<<" (file:"<<__FILE__<<", line:"<<__LINE__<<")"<<endl;
-	
-	//now write the solution in xml files
-	//subgroups
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+SUBGROUPS_TIMETABLE_FILENAME_XML;
-	writeSubgroupsTimetableXml(parent, s);
-	//teachers
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+TEACHERS_TIMETABLE_FILENAME_XML;
-	writeTeachersTimetableXml(parent, s);
-	//activities
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ACTIVITIES_TIMETABLE_FILENAME_XML;
-	writeActivitiesTimetableXml(parent, s);
+	if (!basename.isEmpty())
+		basename.append("_");
 
-	//now get the time. TODO: maybe write it in xml too? so do it a few lines earlier!
-	QString sTime=getDateTimeString();
-	generationLocalizedTime=sTime;
-	
-	//now get the number of placed activities. TODO: maybe write it in xml too? so do it a few lines earlier!
-	int na=0;
-	int na2=0;
-	getNumberOfPlacedActivities(na, na2);
-	
-	if(na==gt.rules.nInternalActivities && na==na2){
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+MULTIPLE_TIMETABLE_DATA_RESULTS_FILE;
-		if(VERBOSE){
-			cout<<"Since simulation is complete, FET will write also the timetable data file"<<endl;
-		}
-		writeTimetableDataFile(parent, s);
-	}
-	
-	//write the conflicts in txt mode
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+CONFLICTS_FILENAME;
-	writeConflictsTxt(parent, s, sTime, na);
-	
-	//now write the solution in html files
-	if(TIMETABLE_HTML_LEVEL>=1){
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+STYLESHEET_CSS;
-		writeStylesheetCss(parent, s, sTime, na);
-	}
-	
-	//indexHtml
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+INDEX_HTML;
-	writeIndexHtml(parent, s, sTime, na);
-	
-	//subgroups
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+SUBGROUPS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	writeSubgroupsTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+SUBGROUPS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	writeSubgroupsTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+SUBGROUPS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeSubgroupsTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+SUBGROUPS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeSubgroupsTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+SUBGROUPS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeSubgroupsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+SUBGROUPS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeSubgroupsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//groups
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+GROUPS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	writeGroupsTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+GROUPS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	writeGroupsTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+GROUPS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeGroupsTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+GROUPS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeGroupsTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+GROUPS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeGroupsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+GROUPS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeGroupsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//years
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+YEARS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	writeYearsTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+YEARS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	writeYearsTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+YEARS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeYearsTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+YEARS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeYearsTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+YEARS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeYearsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+YEARS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeYearsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//teachers
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+TEACHERS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	writeTeachersTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+TEACHERS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	writeTeachersTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+TEACHERS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeTeachersTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+TEACHERS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeTeachersTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+TEACHERS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeTeachersTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+TEACHERS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeTeachersTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//rooms
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ROOMS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	writeRoomsTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ROOMS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	writeRoomsTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ROOMS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeRoomsTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ROOMS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeRoomsTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ROOMS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeRoomsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ROOMS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeRoomsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//subjects
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+SUBJECTS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	writeSubjectsTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+SUBJECTS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	writeSubjectsTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+SUBJECTS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeSubjectsTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+SUBJECTS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeSubjectsTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+SUBJECTS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeSubjectsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+SUBJECTS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeSubjectsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//activty_tags
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ACTIVITY_TAGS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	writeActivityTagsTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ACTIVITY_TAGS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	writeActivityTagsTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ACTIVITY_TAGS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeActivityTagsTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ACTIVITY_TAGS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeActivityTagsTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ACTIVITY_TAGS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeActivityTagsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ACTIVITY_TAGS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeActivityTagsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//all activities
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ALL_ACTIVITIES_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	writeAllActivitiesTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ALL_ACTIVITIES_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	writeAllActivitiesTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ALL_ACTIVITIES_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeAllActivitiesTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ALL_ACTIVITIES_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeAllActivitiesTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ALL_ACTIVITIES_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeAllActivitiesTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ALL_ACTIVITIES_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeAllActivitiesTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//teachers free periods
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+TEACHERS_FREE_PERIODS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	writeTeachersFreePeriodsTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+TEACHERS_FREE_PERIODS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	writeTeachersFreePeriodsTimetableDaysVerticalHtml(parent, s, sTime, na);
-	//statistics
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+TEACHERS_STATISTICS_FILENAME_HTML;
-	writeTeachersStatisticsHtml(parent, s, sTime, na);
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+STUDENTS_STATISTICS_FILENAME_HTML;
-	writeStudentsStatisticsHtml(parent, s, sTime, na);
+	//now write the solution in xml files
+	doWriteResults(parent, OUTPUT_DIR_TIMETABLES+FILE_SEP+basename);
 
 	hashSubjectIDsTimetable.clear();
 	hashActivityTagIDsTimetable.clear();
@@ -556,20 +374,201 @@ void TimetableExport::writeSimulationResults(QWidget* parent){
 	}
 }
 
+void TimetableExport::doWriteResults(QWidget *parent, QString filenamePrefix)
+{
+	//subgroups
+	QString s=filenamePrefix+SUBGROUPS_TIMETABLE_FILENAME_XML;
+	writeSubgroupsTimetableXml(parent, s);
+	//teachers
+	s=filenamePrefix+TEACHERS_TIMETABLE_FILENAME_XML;
+	writeTeachersTimetableXml(parent, s);
+	//activities
+	s=filenamePrefix+ACTIVITIES_TIMETABLE_FILENAME_XML;
+	writeActivitiesTimetableXml(parent, s);
+
+	//now get the time. TODO: maybe write it in xml too? so do it a few lines earlier!
+	QString sTime=getDateTimeString();
+	generationLocalizedTime=sTime;
+	
+	//now get the number of placed activities. TODO: maybe write it in xml too? so do it a few lines earlier!
+	int na=0;
+	int na2=0;
+	getNumberOfPlacedActivities(na, na2);
+	
+	if(na==gt.rules.nInternalActivities && na==na2){
+		s=filenamePrefix+MULTIPLE_TIMETABLE_DATA_RESULTS_FILE;
+		if(VERBOSE){
+			cout<<"Since simulation is complete, FET will write also the timetable data file"<<endl;
+		}
+		writeTimetableDataFile(parent, s);
+	}
+	
+	//write the conflicts in txt mode
+	s=filenamePrefix+CONFLICTS_FILENAME;
+	writeConflictsTxt(parent, s, sTime, na);
+	
+	//now write the solution in html files
+	if(TIMETABLE_HTML_LEVEL>=1){
+		s=filenamePrefix+STYLESHEET_CSS;
+		writeStylesheetCss(parent, s, sTime, na);
+	}
+	
+	//indexHtml
+	s=filenamePrefix+INDEX_HTML;
+	writeIndexHtml(parent, s, sTime, na);
+	
+	//subgroups
+	s=filenamePrefix+SUBGROUPS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
+	writeSubgroupsTimetableDaysHorizontalHtml(parent, s, sTime, na);
+	s=filenamePrefix+SUBGROUPS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
+	writeSubgroupsTimetableDaysVerticalHtml(parent, s, sTime, na);
+	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
+		s=filenamePrefix+SUBGROUPS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
+		writeSubgroupsTimetableTimeHorizontalHtml(parent, s, sTime, na);
+		s=filenamePrefix+SUBGROUPS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
+		writeSubgroupsTimetableTimeVerticalHtml(parent, s, sTime, na);
+	} else {
+		s=filenamePrefix+SUBGROUPS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
+		writeSubgroupsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
+		s=filenamePrefix+SUBGROUPS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
+		writeSubgroupsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
+	}
+	//groups
+	s=filenamePrefix+GROUPS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
+	writeGroupsTimetableDaysHorizontalHtml(parent, s, sTime, na);
+	s=filenamePrefix+GROUPS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
+	writeGroupsTimetableDaysVerticalHtml(parent, s, sTime, na);
+	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
+		s=filenamePrefix+GROUPS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
+		writeGroupsTimetableTimeHorizontalHtml(parent, s, sTime, na);
+		s=filenamePrefix+GROUPS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
+		writeGroupsTimetableTimeVerticalHtml(parent, s, sTime, na);
+	} else {
+		s=filenamePrefix+GROUPS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
+		writeGroupsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
+		s=filenamePrefix+GROUPS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
+		writeGroupsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
+	}
+	//years
+	s=filenamePrefix+YEARS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
+	writeYearsTimetableDaysHorizontalHtml(parent, s, sTime, na);
+	s=filenamePrefix+YEARS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
+	writeYearsTimetableDaysVerticalHtml(parent, s, sTime, na);
+	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
+		s=filenamePrefix+YEARS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
+		writeYearsTimetableTimeHorizontalHtml(parent, s, sTime, na);
+		s=filenamePrefix+YEARS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
+		writeYearsTimetableTimeVerticalHtml(parent, s, sTime, na);
+	} else {
+		s=filenamePrefix+YEARS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
+		writeYearsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
+		s=filenamePrefix+YEARS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
+		writeYearsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
+	}
+	//teachers
+	s=filenamePrefix+TEACHERS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
+	writeTeachersTimetableDaysHorizontalHtml(parent, s, sTime, na);
+	s=filenamePrefix+TEACHERS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
+	writeTeachersTimetableDaysVerticalHtml(parent, s, sTime, na);
+	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
+		s=filenamePrefix+TEACHERS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
+		writeTeachersTimetableTimeHorizontalHtml(parent, s, sTime, na);
+		s=filenamePrefix+TEACHERS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
+		writeTeachersTimetableTimeVerticalHtml(parent, s, sTime, na);
+	} else {
+		s=filenamePrefix+TEACHERS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
+		writeTeachersTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
+		s=filenamePrefix+TEACHERS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
+		writeTeachersTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
+	}
+	//rooms
+	s=filenamePrefix+ROOMS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
+	writeRoomsTimetableDaysHorizontalHtml(parent, s, sTime, na);
+	s=filenamePrefix+ROOMS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
+	writeRoomsTimetableDaysVerticalHtml(parent, s, sTime, na);
+	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
+		s=filenamePrefix+ROOMS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
+		writeRoomsTimetableTimeHorizontalHtml(parent, s, sTime, na);
+		s=filenamePrefix+ROOMS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
+		writeRoomsTimetableTimeVerticalHtml(parent, s, sTime, na);
+	} else {
+		s=filenamePrefix+ROOMS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
+		writeRoomsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
+		s=filenamePrefix+ROOMS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
+		writeRoomsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
+	}
+	//subjects
+	s=filenamePrefix+SUBJECTS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
+	writeSubjectsTimetableDaysHorizontalHtml(parent, s, sTime, na);
+	s=filenamePrefix+SUBJECTS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
+	writeSubjectsTimetableDaysVerticalHtml(parent, s, sTime, na);
+	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
+		s=filenamePrefix+SUBJECTS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
+		writeSubjectsTimetableTimeHorizontalHtml(parent, s, sTime, na);
+		s=filenamePrefix+SUBJECTS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
+		writeSubjectsTimetableTimeVerticalHtml(parent, s, sTime, na);
+	} else {
+		s=filenamePrefix+SUBJECTS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
+		writeSubjectsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
+		s=filenamePrefix+SUBJECTS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
+		writeSubjectsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
+	}
+	//activity_tags
+	s=filenamePrefix+ACTIVITY_TAGS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
+	writeActivityTagsTimetableDaysHorizontalHtml(parent, s, sTime, na);
+	s=filenamePrefix+ACTIVITY_TAGS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
+	writeActivityTagsTimetableDaysVerticalHtml(parent, s, sTime, na);
+	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
+		s=filenamePrefix+ACTIVITY_TAGS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
+		writeActivityTagsTimetableTimeHorizontalHtml(parent, s, sTime, na);
+		s=filenamePrefix+ACTIVITY_TAGS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
+		writeActivityTagsTimetableTimeVerticalHtml(parent, s, sTime, na);
+	} else {
+		s=filenamePrefix+ACTIVITY_TAGS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
+		writeActivityTagsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
+		s=filenamePrefix+ACTIVITY_TAGS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
+		writeActivityTagsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
+	}
+	//all activities
+	s=filenamePrefix+ALL_ACTIVITIES_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
+	writeAllActivitiesTimetableDaysHorizontalHtml(parent, s, sTime, na);
+	s=filenamePrefix+ALL_ACTIVITIES_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
+	writeAllActivitiesTimetableDaysVerticalHtml(parent, s, sTime, na);
+	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
+		s=filenamePrefix+ALL_ACTIVITIES_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
+		writeAllActivitiesTimetableTimeHorizontalHtml(parent, s, sTime, na);
+		s=filenamePrefix+ALL_ACTIVITIES_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
+		writeAllActivitiesTimetableTimeVerticalHtml(parent, s, sTime, na);
+	} else {
+		s=filenamePrefix+ALL_ACTIVITIES_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
+		writeAllActivitiesTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
+		s=filenamePrefix+ALL_ACTIVITIES_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
+		writeAllActivitiesTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
+	}
+	//teachers free periods
+	s=filenamePrefix+TEACHERS_FREE_PERIODS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
+	writeTeachersFreePeriodsTimetableDaysHorizontalHtml(parent, s, sTime, na);
+	s=filenamePrefix+TEACHERS_FREE_PERIODS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
+	writeTeachersFreePeriodsTimetableDaysVerticalHtml(parent, s, sTime, na);
+	//statistics
+	s=filenamePrefix+TEACHERS_STATISTICS_FILENAME_HTML;
+	writeTeachersStatisticsHtml(parent, s, sTime, na);
+	s=filenamePrefix+STUDENTS_STATISTICS_FILENAME_HTML;
+	writeStudentsStatisticsHtml(parent, s, sTime, na);
+}
+
 void TimetableExport::writeHighestStageResults(QWidget* parent){
 	QDir dir;
 	
 	QString OUTPUT_DIR_TIMETABLES=OUTPUT_DIR+FILE_SEP+"timetables";
+
+	QString basename=getBasename();
 	
 	OUTPUT_DIR_TIMETABLES.append(FILE_SEP);
 	if(INPUT_FILENAME_XML=="")
 		OUTPUT_DIR_TIMETABLES.append("unnamed");
 	else{
-		OUTPUT_DIR_TIMETABLES.append(INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1));
-		if(OUTPUT_DIR_TIMETABLES.right(4)==".fet")
-			OUTPUT_DIR_TIMETABLES=OUTPUT_DIR_TIMETABLES.left(OUTPUT_DIR_TIMETABLES.length()-4);
-		//else if(INPUT_FILENAME_XML!="")
-		//	cout<<"Minor problem - input file does not end in .fet extension - might be a problem when saving the timetables"<<" (file:"<<__FILE__<<", line:"<<__LINE__<<")"<<endl;
+		OUTPUT_DIR_TIMETABLES.append(basename);
 	}
 	OUTPUT_DIR_TIMETABLES.append("-highest");
 	
@@ -586,198 +585,11 @@ void TimetableExport::writeHighestStageResults(QWidget* parent){
 	computeActivitiesAtTime();
 	computeActivitiesWithSameStartingTime();
 
-	QString s;
-	QString bar;
-	if(INPUT_FILENAME_XML=="")
-		bar="";
-	else
-		bar="_";
-	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);
-	if(s2.right(4)==".fet")
-		s2=s2.left(s2.length()-4);
-	//else if(INPUT_FILENAME_XML!="")
-	//	cout<<"Minor problem - input file does not end in .fet extension - might be a problem when saving the timetables"<<" (file:"<<__FILE__<<", line:"<<__LINE__<<")"<<endl;
-	
-	//now write the solution in xml files
-	//subgroups
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+SUBGROUPS_TIMETABLE_FILENAME_XML;
-	writeSubgroupsTimetableXml(parent, s);
-	//teachers
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+TEACHERS_TIMETABLE_FILENAME_XML;
-	writeTeachersTimetableXml(parent, s);
-	//activities
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ACTIVITIES_TIMETABLE_FILENAME_XML;
-	writeActivitiesTimetableXml(parent, s);
+	if(!basename.isEmpty())
+		basename.append("_");
 
-	//now get the time. TODO: maybe write it in xml too? so do it a few lines earlier!
-	QString sTime=getDateTimeString();
-	generationLocalizedTime=sTime;
-	
-	//now get the number of placed activities. TODO: maybe write it in xml too? so do it a few lines earlier!
-	int na=0;
-	int na2=0;
-	getNumberOfPlacedActivities(na, na2);
-	
-	if(na==gt.rules.nInternalActivities && na==na2){
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+MULTIPLE_TIMETABLE_DATA_RESULTS_FILE;
-		if(VERBOSE){
-			cout<<"Since simulation is complete, FET will write also the timetable data file"<<endl;
-		}
-		writeTimetableDataFile(parent, s);
-	}
-	
-	//write the conflicts in txt mode
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+CONFLICTS_FILENAME;
-	writeConflictsTxt(parent, s, sTime, na);
-	
-	//now write the solution in html files
-	if(TIMETABLE_HTML_LEVEL>=1){
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+STYLESHEET_CSS;
-		writeStylesheetCss(parent, s, sTime, na);
-	}
-	
-	//indexHtml
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+INDEX_HTML;
-	writeIndexHtml(parent, s, sTime, na);
-	
-	//subgroups
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+SUBGROUPS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	writeSubgroupsTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+SUBGROUPS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	writeSubgroupsTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+SUBGROUPS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeSubgroupsTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+SUBGROUPS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeSubgroupsTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+SUBGROUPS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeSubgroupsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+SUBGROUPS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeSubgroupsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//groups
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+GROUPS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	writeGroupsTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+GROUPS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	writeGroupsTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+GROUPS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeGroupsTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+GROUPS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeGroupsTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+GROUPS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeGroupsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+GROUPS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeGroupsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//years
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+YEARS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	writeYearsTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+YEARS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	writeYearsTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+YEARS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeYearsTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+YEARS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeYearsTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+YEARS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeYearsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+YEARS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeYearsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//teachers
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+TEACHERS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	writeTeachersTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+TEACHERS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	writeTeachersTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+TEACHERS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeTeachersTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+TEACHERS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeTeachersTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+TEACHERS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeTeachersTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+TEACHERS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeTeachersTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//rooms
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ROOMS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	writeRoomsTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ROOMS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	writeRoomsTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ROOMS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeRoomsTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ROOMS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeRoomsTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ROOMS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeRoomsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ROOMS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeRoomsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//subjects
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+SUBJECTS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	writeSubjectsTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+SUBJECTS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	writeSubjectsTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+SUBJECTS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeSubjectsTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+SUBJECTS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeSubjectsTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+SUBJECTS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeSubjectsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+SUBJECTS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeSubjectsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//activity_tags
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ACTIVITY_TAGS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	writeActivityTagsTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ACTIVITY_TAGS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	writeActivityTagsTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ACTIVITY_TAGS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeActivityTagsTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ACTIVITY_TAGS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeActivityTagsTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ACTIVITY_TAGS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeActivityTagsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ACTIVITY_TAGS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeActivityTagsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//all activities
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ALL_ACTIVITIES_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	writeAllActivitiesTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ALL_ACTIVITIES_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	writeAllActivitiesTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ALL_ACTIVITIES_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeAllActivitiesTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ALL_ACTIVITIES_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeAllActivitiesTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ALL_ACTIVITIES_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeAllActivitiesTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+ALL_ACTIVITIES_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeAllActivitiesTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//teachers free periods
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+TEACHERS_FREE_PERIODS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	writeTeachersFreePeriodsTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+TEACHERS_FREE_PERIODS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	writeTeachersFreePeriodsTimetableDaysVerticalHtml(parent, s, sTime, na);
-	//statistics
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+TEACHERS_STATISTICS_FILENAME_HTML;
-	writeTeachersStatisticsHtml(parent, s, sTime, na);
-	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+STUDENTS_STATISTICS_FILENAME_HTML;
-	writeStudentsStatisticsHtml(parent, s, sTime, na);
+	//now write the solution in xml files
+	doWriteResults(parent, OUTPUT_DIR_TIMETABLES+FILE_SEP+basename);
 
 	hashSubjectIDsTimetable.clear();
 	hashActivityTagIDsTimetable.clear();
@@ -1071,11 +883,15 @@ void TimetableExport::writeTimetableDataFile(QWidget* parent, const QString& fil
 void TimetableExport::writeSimulationResults(QWidget* parent, int n){
 	QDir dir;
 	
+	QString basename=getBasename();
+
 	QString OUTPUT_DIR_TIMETABLES=OUTPUT_DIR+FILE_SEP+"timetables";
+	QString destDir=OUTPUT_DIR_TIMETABLES+FILE_SEP+basename+"-multi";
+	QString finalDestDir=destDir+FILE_SEP+CustomFETString::number(n);
 
 	//make sure that the output directory exists
-	if(!dir.exists(OUTPUT_DIR_TIMETABLES))
-		dir.mkpath(OUTPUT_DIR_TIMETABLES);
+	if(!dir.exists(finalDestDir))
+		dir.mkpath(finalDestDir);
 
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
@@ -1086,208 +902,11 @@ void TimetableExport::writeSimulationResults(QWidget* parent, int n){
 	computeActivitiesAtTime();
 	computeActivitiesWithSameStartingTime();
 
-	QString s;
-	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);
-	if(s2.right(4)==".fet")
-		s2=s2.left(s2.length()-4);
-	//else if(INPUT_FILENAME_XML!="")
-	//	cout<<"Minor problem - input file does not end in .fet extension - might be a problem when saving the timetables"<<" (file:"<<__FILE__<<", line:"<<__LINE__<<")"<<endl;
-	
-	QString destDir=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+"-multi";
-	
-	if(!dir.exists(destDir))
-		dir.mkpath(destDir);
-		
-	QString finalDestDir=destDir+FILE_SEP+CustomFETString::number(n);
-
-	if(!dir.exists(finalDestDir))
-		dir.mkpath(finalDestDir);
-		
 	finalDestDir+=FILE_SEP;
-
-
-	QString s3=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);
-
-	if(s3.right(4)==".fet")
-		s3=s3.left(s3.length()-4);
-	//else if(INPUT_FILENAME_XML!="")
-	//	cout<<"Minor problem - input file does not end in .fet extension - might be a problem when saving the timetables"<<" (file:"<<__FILE__<<", line:"<<__LINE__<<")"<<endl;
-
-	finalDestDir+=s3+"_";
+	finalDestDir+=basename+"_";
 	
-	//write data+timetable in .fet format
-	writeTimetableDataFile(parent, finalDestDir+MULTIPLE_TIMETABLE_DATA_RESULTS_FILE);
-
 	//now write the solution in xml files
-	//subgroups
-	s=finalDestDir+SUBGROUPS_TIMETABLE_FILENAME_XML;
-	writeSubgroupsTimetableXml(parent, s);
-	//teachers
-	s=finalDestDir+TEACHERS_TIMETABLE_FILENAME_XML;
-	writeTeachersTimetableXml(parent, s);
-	//activities
-	s=finalDestDir+ACTIVITIES_TIMETABLE_FILENAME_XML;
-	writeActivitiesTimetableXml(parent, s);
-
-	//now get the time. TODO: maybe write it in xml too? so do it a few lines earlier!
-	QString sTime=getDateTimeString();
-	generationLocalizedTime=sTime;
-
-	//now get the number of placed activities. TODO: maybe write it in xml too? so do it a few lines earlier!
-	int na=0;
-	int na2=0;
-	getNumberOfPlacedActivities(na, na2);
-	
-	//write the conflicts in txt mode
-	s=finalDestDir+CONFLICTS_FILENAME;
-	writeConflictsTxt(parent, s, sTime, na);
-	
-	//now write the solution in html files
-	if(TIMETABLE_HTML_LEVEL>=1){
-		s=finalDestDir+STYLESHEET_CSS;
-		writeStylesheetCss(parent, s, sTime, na);
-	}
-	//indexHtml
-	s=finalDestDir+INDEX_HTML;
-	writeIndexHtml(parent, s, sTime, na);
-	//subgroups
-	s=finalDestDir+SUBGROUPS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	writeSubgroupsTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=finalDestDir+SUBGROUPS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	writeSubgroupsTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=finalDestDir+SUBGROUPS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeSubgroupsTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=finalDestDir+SUBGROUPS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeSubgroupsTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=finalDestDir+SUBGROUPS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeSubgroupsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=finalDestDir+SUBGROUPS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeSubgroupsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//groups
-	s=finalDestDir+GROUPS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	writeGroupsTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=finalDestDir+GROUPS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	writeGroupsTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=finalDestDir+GROUPS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeGroupsTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=finalDestDir+GROUPS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeGroupsTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=finalDestDir+GROUPS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeGroupsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=finalDestDir+GROUPS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeGroupsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//years
-	s=finalDestDir+YEARS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	writeYearsTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=finalDestDir+YEARS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	writeYearsTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=finalDestDir+YEARS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeYearsTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=finalDestDir+YEARS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeYearsTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=finalDestDir+YEARS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeYearsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=finalDestDir+YEARS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeYearsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//teachers
-	s=finalDestDir+TEACHERS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	writeTeachersTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=finalDestDir+TEACHERS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	writeTeachersTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=finalDestDir+TEACHERS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeTeachersTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=finalDestDir+TEACHERS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeTeachersTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=finalDestDir+TEACHERS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeTeachersTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=finalDestDir+TEACHERS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeTeachersTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//rooms
-	s=finalDestDir+ROOMS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	writeRoomsTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=finalDestDir+ROOMS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	writeRoomsTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=finalDestDir+ROOMS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeRoomsTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=finalDestDir+ROOMS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeRoomsTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=finalDestDir+ROOMS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeRoomsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=finalDestDir+ROOMS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeRoomsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//subjects
-	s=finalDestDir+SUBJECTS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	writeSubjectsTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=finalDestDir+SUBJECTS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	writeSubjectsTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=finalDestDir+SUBJECTS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeSubjectsTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=finalDestDir+SUBJECTS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeSubjectsTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=finalDestDir+SUBJECTS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeSubjectsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=finalDestDir+SUBJECTS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeSubjectsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//activity_tags
-	s=finalDestDir+ACTIVITY_TAGS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	writeActivityTagsTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=finalDestDir+ACTIVITY_TAGS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	writeActivityTagsTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=finalDestDir+ACTIVITY_TAGS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeActivityTagsTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=finalDestDir+ACTIVITY_TAGS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeActivityTagsTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=finalDestDir+ACTIVITY_TAGS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeActivityTagsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=finalDestDir+ACTIVITY_TAGS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeActivityTagsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//all activities
-	s=finalDestDir+ALL_ACTIVITIES_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	writeAllActivitiesTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=finalDestDir+ALL_ACTIVITIES_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	writeAllActivitiesTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=finalDestDir+ALL_ACTIVITIES_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeAllActivitiesTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=finalDestDir+ALL_ACTIVITIES_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeAllActivitiesTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=finalDestDir+ALL_ACTIVITIES_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		writeAllActivitiesTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=finalDestDir+ALL_ACTIVITIES_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		writeAllActivitiesTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//teachers free periods
-	s=finalDestDir+TEACHERS_FREE_PERIODS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	writeTeachersFreePeriodsTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=finalDestDir+TEACHERS_FREE_PERIODS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	writeTeachersFreePeriodsTimetableDaysVerticalHtml(parent, s, sTime, na);
-	//statistics
-	s=finalDestDir+TEACHERS_STATISTICS_FILENAME_HTML;
-	writeTeachersStatisticsHtml(parent, s, sTime, na);
-	s=finalDestDir+STUDENTS_STATISTICS_FILENAME_HTML;
-	writeStudentsStatisticsHtml(parent, s, sTime, na);
+	doWriteResults(parent, finalDestDir);
 	
 	hashSubjectIDsTimetable.clear();
 	hashActivityTagIDsTimetable.clear();
@@ -1399,14 +1018,9 @@ void TimetableExport::writeReportForMultiple(QWidget* parent, const QString& des
 }
 
 void TimetableExport::writeSimulationResultsCommandLine(QWidget* parent, const QString& outputDirectory){ //outputDirectory contains trailing FILE_SEP
-	QString add=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);
-	if(add.right(4)==".fet")
-		add=add.left(add.length()-4);
-	//else if(INPUT_FILENAME_XML!="")
-	//	cout<<"Minor problem - input file does not end in .fet extension - might be a problem when saving the timetables"<<" (file:"<<__FILE__<<", line:"<<__LINE__<<")"<<endl;
-
-	if(add!="")
-		add.append("_");
+	QString basename=getBasename();
+	if(!basename.isEmpty())
+		basename.append("_");
 
 	/////////
 
@@ -1419,232 +1033,7 @@ void TimetableExport::writeSimulationResultsCommandLine(QWidget* parent, const Q
 	computeActivitiesAtTime();
 	computeActivitiesWithSameStartingTime();
 
-	TimetableExport::writeSubgroupsTimetableXml(parent, outputDirectory+add+SUBGROUPS_TIMETABLE_FILENAME_XML);
-	TimetableExport::writeTeachersTimetableXml(parent, outputDirectory+add+TEACHERS_TIMETABLE_FILENAME_XML);
-	TimetableExport::writeActivitiesTimetableXml(parent, outputDirectory+add+ACTIVITIES_TIMETABLE_FILENAME_XML);
-	
-	//get the time
-	QString sTime=getDateTimeString();
-	generationLocalizedTime=sTime; //really unneeded, but just to be similar to the other parts
-	
-	//now get the number of placed activities. TODO: maybe write it in xml too? so do it a few lines earlier!
-	int na=0;
-	int na2=0;
-	getNumberOfPlacedActivities(na, na2);
-	
-	if(na==gt.rules.nInternalActivities && na==na2){
-		QString s=outputDirectory+add+MULTIPLE_TIMETABLE_DATA_RESULTS_FILE;
-		if(VERBOSE){
-			cout<<"Since simulation is complete, FET will write also the timetable data file"<<endl;
-		}
-		writeTimetableDataFile(parent, s);
-	}
-
-	//write the conflicts in txt mode
-	QString s=add+CONFLICTS_FILENAME;
-	s.prepend(outputDirectory);
-	TimetableExport::writeConflictsTxt(parent, s, sTime, na);
-	
-	//now write the solution in html files
-	if(TIMETABLE_HTML_LEVEL>=1){
-		s=add+STYLESHEET_CSS;
-		s.prepend(outputDirectory);
-		TimetableExport::writeStylesheetCss(parent, s, sTime, na);
-	}
-	//indexHtml
-	s=add+INDEX_HTML;
-	s.prepend(outputDirectory);
-	writeIndexHtml(parent, s, sTime, na);
-	//subgroups
-	s=add+SUBGROUPS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	s.prepend(outputDirectory);
-	TimetableExport::writeSubgroupsTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=add+SUBGROUPS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	s.prepend(outputDirectory);
-	TimetableExport::writeSubgroupsTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=add+SUBGROUPS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeSubgroupsTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=add+SUBGROUPS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeSubgroupsTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=add+SUBGROUPS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeSubgroupsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=add+SUBGROUPS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeSubgroupsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//groups
-	s=add+GROUPS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	s.prepend(outputDirectory);
-	TimetableExport::writeGroupsTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=add+GROUPS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	s.prepend(outputDirectory);
-	TimetableExport::writeGroupsTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=add+GROUPS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeGroupsTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=add+GROUPS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeGroupsTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=add+GROUPS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeGroupsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=add+GROUPS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeGroupsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//years
-	s=add+YEARS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	s.prepend(outputDirectory);
-	TimetableExport::writeYearsTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=add+YEARS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	s.prepend(outputDirectory);
-	TimetableExport::writeYearsTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=add+YEARS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeYearsTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=add+YEARS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeYearsTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=add+YEARS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeYearsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=add+YEARS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeYearsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//teachers
-	s=add+TEACHERS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	s.prepend(outputDirectory);
-	TimetableExport::writeTeachersTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=add+TEACHERS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	s.prepend(outputDirectory);
-	TimetableExport::writeTeachersTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=add+TEACHERS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeTeachersTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=add+TEACHERS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeTeachersTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=add+TEACHERS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeTeachersTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=add+TEACHERS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeTeachersTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//rooms
-	s=add+ROOMS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	s.prepend(outputDirectory);
-	TimetableExport::writeRoomsTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=add+ROOMS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	s.prepend(outputDirectory);
-	TimetableExport::writeRoomsTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=add+ROOMS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeRoomsTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=add+ROOMS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeRoomsTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=add+ROOMS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeRoomsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=add+ROOMS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeRoomsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//subjects
-	s=add+SUBJECTS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	s.prepend(outputDirectory);
-	TimetableExport::writeSubjectsTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=add+SUBJECTS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	s.prepend(outputDirectory);
-	TimetableExport::writeSubjectsTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=add+SUBJECTS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeSubjectsTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=add+SUBJECTS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeSubjectsTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=add+SUBJECTS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeSubjectsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=add+SUBJECTS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeSubjectsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//activity_tags
-	s=add+ACTIVITY_TAGS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	s.prepend(outputDirectory);
-	TimetableExport::writeActivityTagsTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=add+ACTIVITY_TAGS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	s.prepend(outputDirectory);
-	TimetableExport::writeActivityTagsTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=add+ACTIVITY_TAGS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeActivityTagsTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=add+ACTIVITY_TAGS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeActivityTagsTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=add+ACTIVITY_TAGS_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeActivityTagsTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=add+ACTIVITY_TAGS_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeActivityTagsTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//all activities
-	s=add+ALL_ACTIVITIES_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	s.prepend(outputDirectory);
-	TimetableExport::writeAllActivitiesTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=add+ALL_ACTIVITIES_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	s.prepend(outputDirectory);
-	TimetableExport::writeAllActivitiesTimetableDaysVerticalHtml(parent, s, sTime, na);
-	if(!DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS){
-		s=add+ALL_ACTIVITIES_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeAllActivitiesTimetableTimeHorizontalHtml(parent, s, sTime, na);
-		s=add+ALL_ACTIVITIES_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeAllActivitiesTimetableTimeVerticalHtml(parent, s, sTime, na);
-	} else {
-		s=add+ALL_ACTIVITIES_TIMETABLE_TIME_HORIZONTAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeAllActivitiesTimetableTimeHorizontalDailyHtml(parent, s, sTime, na);
-		s=add+ALL_ACTIVITIES_TIMETABLE_TIME_VERTICAL_FILENAME_HTML;
-		s.prepend(outputDirectory);
-		TimetableExport::writeAllActivitiesTimetableTimeVerticalDailyHtml(parent, s, sTime, na);
-	}
-	//teachers free periods
-	s=add+TEACHERS_FREE_PERIODS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML;
-	s.prepend(outputDirectory);
-	TimetableExport::writeTeachersFreePeriodsTimetableDaysHorizontalHtml(parent, s, sTime, na);
-	s=add+TEACHERS_FREE_PERIODS_TIMETABLE_DAYS_VERTICAL_FILENAME_HTML;
-	s.prepend(outputDirectory);
-	TimetableExport::writeTeachersFreePeriodsTimetableDaysVerticalHtml(parent, s, sTime, na);
-	//statistics
-	s=add+TEACHERS_STATISTICS_FILENAME_HTML;
-	s.prepend(outputDirectory);
-	TimetableExport::writeTeachersStatisticsHtml(parent, s, sTime, na);
-	s=add+STUDENTS_STATISTICS_FILENAME_HTML;
-	s.prepend(outputDirectory);
-	TimetableExport::writeStudentsStatisticsHtml(parent, s, sTime, na);
+	doWriteResults(parent, outputDirectory+basename);
 
 	hashSubjectIDsTimetable.clear();
 	hashActivityTagIDsTimetable.clear();
