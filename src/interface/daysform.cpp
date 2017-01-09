@@ -32,10 +32,6 @@ extern Timetable gt;
 static QLineEdit* daysNames[MAX_DAYS_PER_WEEK];
 static int nDays;
 
-extern bool students_schedule_ready;
-extern bool teachers_schedule_ready;
-extern bool rooms_schedule_ready;
-
 DaysForm::DaysForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);
@@ -219,23 +215,11 @@ void DaysForm::ok()
 	}
 	////////////
 
-	if(gt.rules.nDaysPerWeek!=nDays){
-		students_schedule_ready=false;
-		teachers_schedule_ready=false;
-		rooms_schedule_ready=false;
-	}
-		
-	//remove old names
-	for(int i=nDays; i<gt.rules.nDaysPerWeek; i++)
-		gt.rules.daysOfTheWeek[i]="";
-
-	gt.rules.nDaysPerWeek=nDays;
+	QStringList dayList;
 	for(int i=0; i<nDays; i++)
-		gt.rules.daysOfTheWeek[i]=daysNames[i]->text();
-		
-	gt.rules.nHoursPerWeek=gt.rules.nDaysPerWeek*gt.rules.nHoursPerDay; //not needed
-	gt.rules.internalStructureComputed=false;
-	gt.rules.setModified(true);
+		dayList << daysNames[i]->text();
+
+	gt.rules.setDays(dayList);
 
 	this->close();
 }

@@ -7189,6 +7189,54 @@ bool Rules::isModified()
 	return modified;
 }
 
+void Rules::setDays(QStringList dayList)
+{
+	int nDays = dayList.size();
+
+	bool sizeChanged = nDaysPerWeek!=nDays;
+
+	//remove old names
+	for(int i=nDays; i<nDaysPerWeek; i++)
+		daysOfTheWeek[i]="";
+
+	nDaysPerWeek=nDays;
+	for(int i=0; i<nDays; i++)
+		daysOfTheWeek[i]=dayList[i];
+
+	nHoursPerWeek=nDaysPerWeek*nHoursPerDay; //not needed
+	internalStructureComputed=false;
+	setModified(true);
+	if (sizeChanged) {
+		students_schedule_ready=false;
+		teachers_schedule_ready=false;
+		rooms_schedule_ready=false;
+	}
+}
+
+void Rules::setHours(QStringList hourList)
+{
+	int nHours = hourList.size();
+
+	bool sizeChanged = nDaysPerWeek!=nHours;
+
+	//remove old names
+	for(int i=nHours; i<nHoursPerDay; i++)
+		hoursOfTheDay[i]="";
+
+	nHoursPerDay=nHours;
+	for(int i=0; i<nHours; i++)
+		hoursOfTheDay[i]=hourList[i];
+
+	nHoursPerWeek=nDaysPerWeek*nHoursPerDay; //not needed
+	internalStructureComputed=false;
+	setModified(true);
+	if (sizeChanged) {
+		students_schedule_ready=false;
+		teachers_schedule_ready=false;
+		rooms_schedule_ready=false;
+	}
+}
+
 TimeConstraint* Rules::readBasicCompulsoryTime(QXmlStreamReader& xmlReader, XmlLog &log){
 	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintBasicCompulsoryTime");
 	ConstraintBasicCompulsoryTime* cn=new ConstraintBasicCompulsoryTime();

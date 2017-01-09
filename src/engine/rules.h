@@ -735,6 +735,11 @@ public:
 	 * @return true if the object has been modified
 	 */
 	bool isModified();
+
+	/// Set the day names - it can affect number of days also
+	void setDays(QStringList dayList);
+	/// Set the hour labels - it can affect number of hours per day also
+	void setHours(QStringList hourList);
 	
 private:
 	TimeConstraint* readBasicCompulsoryTime(QXmlStreamReader& xml, XmlLog &log);
