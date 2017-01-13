@@ -76,8 +76,6 @@ using namespace std;
 //Represents the current status of the simulation - running or stopped.
 extern bool simulation_running;
 
-
-extern Solution best_solution;
 extern bool LANGUAGE_STYLE_RIGHT_TO_LEFT;
 extern QString LANGUAGE_FOR_HTML;
 
@@ -196,6 +194,7 @@ const QString RANDOM_SEED_FILENAME_AFTER="random_seed_after.txt";
 QString generationLocalizedTime=QString(""); //to be used in timetableprintform.cpp
 
 bool CachedSchedule::cached_schedule_ready = false;
+Solution CachedSchedule::cachedSolution;
 
 Matrix3D<int> CachedSchedule::teachers_timetable_weekly;
 Matrix3D<int> CachedSchedule::students_timetable_weekly;
@@ -217,9 +216,14 @@ void CachedSchedule::update(const Solution &solution) {
 	solution.getTeachersTimetable(gt.rules, teachers_timetable_weekly, teachers_free_periods_timetable_weekly);
 	solution.getRoomsTimetable(gt.rules, rooms_timetable_weekly);
 
-	best_solution.copy(gt.rules, solution);
+	cachedSolution.copy(gt.rules, solution);
 
 	cached_schedule_ready=true;
+}
+
+const Solution &CachedSchedule::getCachedSolution()
+{
+	return cachedSolution;
 }
 
 static QString getBasename(){
@@ -297,6 +301,7 @@ TimetableExport::~TimetableExport()
 
 void TimetableExport::getNumberOfPlacedActivities(int& number1, int& number2)
 {
+	const Solution &best_solution = CachedSchedule::getCachedSolution();
 	number1=0;
 	for(int i=0; i<gt.rules.nInternalActivities; i++)
 		if(best_solution.times[i]!=UNALLOCATED_TIME)
@@ -658,7 +663,7 @@ void TimetableExport::writeTimetableDataFile(QWidget* parent, const QString& fil
 		return;
 	}
 
-	Solution* tc=&best_solution;
+	const Solution* tc=&CachedSchedule::getCachedSolution();
 
 	for(int ai=0; ai<gt.rules.nInternalActivities; ai++){
 		//Activity* act=&gt.rules.internalActivitiesList[ai];
@@ -1003,6 +1008,8 @@ void TimetableExport::writeConflictsTxt(QWidget* parent, const QString& filename
 	if(INPUT_FILENAME_XML=="")
 		tt=tr("unnamed");
 
+	const Solution& best_solution=CachedSchedule::getCachedSolution();
+
 	if(placedActivities==gt.rules.nInternalActivities){
 		tos<<TimetableExport::tr("Soft conflicts of %1", "%1 is the file name").arg(tt);
 		tos<<"\n";
@@ -1059,6 +1066,8 @@ void TimetableExport::writeSubgroupsTimetableXml(QWidget* parent, const QString&
 	tos.setGenerateByteOrderMark(true);
 	tos<<"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 	tos<<"<"<<protect(STUDENTS_TIMETABLE_TAG)<<">\n";
+
+	const Solution& best_solution=CachedSchedule::getCachedSolution();
 
 	for(int subgroup=0; subgroup<gt.rules.nInternalSubgroups; subgroup++){
 		tos<< "  <Subgroup name=\"";
@@ -1126,6 +1135,7 @@ void TimetableExport::writeTeachersTimetableXml(QWidget* parent, const QString& 
 	tos<<"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 	tos << "<" << protect(TEACHERS_TIMETABLE_TAG) << ">\n";
 
+	const Solution& best_solution=CachedSchedule::getCachedSolution();
 	for(int i=0; i<gt.rules.nInternalTeachers; i++){
 		tos << "  <Teacher name=\"" << protect(gt.rules.internalTeachersList[i]->name) << "\">\n";
 		for(int day=0; day<gt.rules.nDaysPerWeek; day++){
@@ -1189,7 +1199,9 @@ void TimetableExport::writeActivitiesTimetableXml(QWidget* parent, const QString
 	tos.setGenerateByteOrderMark(true);
 	tos<<"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 	tos << "<" << protect(ACTIVITIES_TIMETABLE_TAG) << ">\n";
-	
+
+	const Solution& best_solution=CachedSchedule::getCachedSolution();
+
 	for(int i=0; i<gt.rules.nInternalActivities; i++){
 		tos<<"<Activity>"<<endl;
 		
@@ -4111,6 +4123,7 @@ void TimetableExport::computeHashActivityColorBySubject(){
 
 	QSet<QString> alreadyAdded;
 	
+	const Solution& best_solution=CachedSchedule::getCachedSolution();
 	for(int i=0; i<gt.rules.nInternalActivities; i++){
 		if(best_solution.times[i]!=UNALLOCATED_TIME){
 			Activity* act=&gt.rules.internalActivitiesList[i];
@@ -4144,6 +4157,7 @@ void TimetableExport::computeHashActivityColorBySubjectAndStudents(){
 
 	QSet<QString> alreadyAdded;
 	
+	const Solution& best_solution=CachedSchedule::getCachedSolution();
 	for(int i=0; i<gt.rules.nInternalActivities; i++){
 		if(best_solution.times[i]!=UNALLOCATED_TIME){
 			Activity* act=&gt.rules.internalActivitiesList[i];
@@ -4204,6 +4218,7 @@ void TimetableExport::computeActivitiesAtTime(){		// by Liviu Lalescu
 	for(int day=0; day<gt.rules.nDaysPerWeek; day++)
 		for(int hour=0; hour<gt.rules.nHoursPerDay; hour++)
 			activitiesAtTime[day][hour].clear();
+	const Solution& best_solution=CachedSchedule::getCachedSolution();
 	for(int i=0; i<gt.rules.nInternalActivities; i++) {		//maybe TODO: maybe it is better to do this sorted by students or teachers?
 		Activity* act=&gt.rules.internalActivitiesList[i];
 		if(best_solution.times[i]!=UNALLOCATED_TIME) {
@@ -4220,6 +4235,7 @@ void TimetableExport::computeActivitiesWithSameStartingTime(){
 // by Volker Dirr
 	activitiesWithSameStartingTime.clear();
 
+	const Solution& best_solution=CachedSchedule::getCachedSolution();
 	if(PRINT_ACTIVITIES_WITH_SAME_STARTING_TIME){
 		for(int i=0; i<gt.rules.nInternalTimeConstraints; i++){
 			TimeConstraint* tc=gt.rules.internalTimeConstraintsList[i];
@@ -4260,6 +4276,7 @@ void TimetableExport::computeActivitiesWithSameStartingTime(){
 
 bool TimetableExport::addActivitiesWithSameStartingTime(QList<int>& allActivities, int hour){
 // by Volker Dirr
+	const Solution& best_solution=CachedSchedule::getCachedSolution();
 	if(PRINT_ACTIVITIES_WITH_SAME_STARTING_TIME){
 		bool activitiesWithSameStartingtime=false;
 		QList<int> allActivitiesNew;
@@ -4515,6 +4532,7 @@ QString TimetableExport::writeTeachers(int htmlLevel, const Activity* act, const
 // by Volker Dirr
 QString TimetableExport::writeRoom(int htmlLevel, int ai, const QString& startTag, const QString& startTagAttribute){
 	QString tmp;
+	const Solution& best_solution=CachedSchedule::getCachedSolution();
 	int r=best_solution.rooms[ai];
 	if(r!=UNALLOCATED_SPACE && r!=UNSPECIFIED_ROOM){
 		if(startTag=="div" && htmlLevel>=3)
@@ -4583,6 +4601,7 @@ QString TimetableExport::writeActivityStudents(int htmlLevel, int ai, int day, i
 	QString tmp;
 	int currentTime=day+gt.rules.nDaysPerWeek*hour;
 	if(ai!=UNALLOCATED_ACTIVITY){
+		const Solution& best_solution=CachedSchedule::getCachedSolution();
 		if(best_solution.times[ai]==currentTime){
 			Activity* act=&gt.rules.internalActivitiesList[ai];
 			tmp+=writeStartTagTDofActivities(htmlLevel, act, false, colspan, rowspan, COLOR_BY_SUBJECT);
@@ -4676,6 +4695,7 @@ QString TimetableExport::writeActivityTeacher(int htmlLevel, int teacher, int da
 	QString tmp;
 	int ai=CachedSchedule::teachers_timetable_weekly[teacher][day][hour];
 	int currentTime=day+gt.rules.nDaysPerWeek*hour;
+	const Solution& best_solution=CachedSchedule::getCachedSolution();
 	if(ai!=UNALLOCATED_ACTIVITY){
 		if(best_solution.times[ai]==currentTime){
 			Activity* act=&gt.rules.internalActivitiesList[ai];
@@ -4771,6 +4791,7 @@ QString TimetableExport::writeActivityRoom(int htmlLevel, int room, int day, int
 	QString tmp;
 	int ai=CachedSchedule::rooms_timetable_weekly[room][day][hour];
 	int currentTime=day+gt.rules.nDaysPerWeek*hour;
+	const Solution& best_solution=CachedSchedule::getCachedSolution();
 	if(ai!=UNALLOCATED_ACTIVITY){
 		if(best_solution.times[ai]==currentTime){
 			Activity* act=&gt.rules.internalActivitiesList[ai];
@@ -7786,6 +7807,7 @@ QString TimetableExport::singleSubjectsTimetableDaysHorizontalHtml(int htmlLevel
 	for(int d=0; d<gt.rules.nDaysPerWeek; d++)
 		for(int h=0; h<gt.rules.nHoursPerDay; h++)
 			activitiesForCurrentSubject[d][h].clear();
+	const Solution& best_solution=CachedSchedule::getCachedSolution();
 	foreach(int ai, gt.rules.activitiesForSubject[subject])
 		if(best_solution.times[ai]!=UNALLOCATED_TIME){
 			int d=best_solution.times[ai]%gt.rules.nDaysPerWeek;
@@ -7890,6 +7912,7 @@ QString TimetableExport::singleSubjectsTimetableDaysVerticalHtml(int htmlLevel, 
 	for(int d=0; d<gt.rules.nDaysPerWeek; d++)
 		for(int h=0; h<gt.rules.nHoursPerDay; h++)
 			activitiesForCurrentSubject[d][h].clear();
+	const Solution& best_solution=CachedSchedule::getCachedSolution();
 	foreach(int ai, gt.rules.activitiesForSubject[subject])
 		if(best_solution.times[ai]!=UNALLOCATED_TIME){
 			int d=best_solution.times[ai]%gt.rules.nDaysPerWeek;
@@ -8123,6 +8146,7 @@ QString TimetableExport::singleSubjectsTimetableTimeHorizontalHtml(int htmlLevel
 	*/
 	tmpString+="      <tbody>\n";
 	int currentCount=0;
+	const Solution& best_solution=CachedSchedule::getCachedSolution();
 	for(int subject=0; subject<gt.rules.nInternalSubjects && currentCount<maxSubjects; subject++){
 		if(!excludedNames.contains(subject)){	
 			currentCount++;
@@ -8332,6 +8356,7 @@ QString TimetableExport::singleSubjectsTimetableTimeHorizontalDailyHtml(int html
 	*/
 	tmpString+="      <tbody>\n";
 	int currentCount=0;
+	const Solution& best_solution=CachedSchedule::getCachedSolution();
 	for(int subject=0; subject<gt.rules.nInternalSubjects && currentCount<maxSubjects; subject++){
 		currentCount++;
 		if(!excludedNames.contains(subject)){
@@ -8418,6 +8443,7 @@ QString TimetableExport::singleActivityTagsTimetableDaysHorizontalHtml(int htmlL
 	for(int d=0; d<gt.rules.nDaysPerWeek; d++)
 		for(int h=0; h<gt.rules.nHoursPerDay; h++)
 			activitiesForCurrentActivityTag[d][h].clear();
+	const Solution& best_solution=CachedSchedule::getCachedSolution();
 	foreach(int ai, gt.rules.activitiesForActivityTagList[activityTag])
 		if(best_solution.times[ai]!=UNALLOCATED_TIME){
 			int d=best_solution.times[ai]%gt.rules.nDaysPerWeek;
@@ -8499,6 +8525,7 @@ QString TimetableExport::singleActivityTagsTimetableDaysVerticalHtml(int htmlLev
 	for(int d=0; d<gt.rules.nDaysPerWeek; d++)
 		for(int h=0; h<gt.rules.nHoursPerDay; h++)
 			activitiesForCurrentActivityTag[d][h].clear();
+	const Solution& best_solution=CachedSchedule::getCachedSolution();
 	foreach(int ai, gt.rules.activitiesForActivityTagList[activityTag])
 		if(best_solution.times[ai]!=UNALLOCATED_TIME){
 			int d=best_solution.times[ai]%gt.rules.nDaysPerWeek;
@@ -8687,6 +8714,7 @@ QString TimetableExport::singleActivityTagsTimetableTimeHorizontalHtml(int htmlL
 	*/
 	tmpString+="      <tbody>\n";
 	int currentCount=0;
+	const Solution& best_solution=CachedSchedule::getCachedSolution();
 	for(int activityTag=0; activityTag<gt.rules.nInternalActivityTags && currentCount<maxActivityTag; activityTag++){
 		if(!excludedNames.contains(activityTag)){	
 			currentCount++;
@@ -8852,6 +8880,7 @@ QString TimetableExport::singleActivityTagsTimetableTimeHorizontalDailyHtml(int 
 	*/
 	tmpString+="      <tbody>\n";
 	int currentCount=0;
+	const Solution& best_solution=CachedSchedule::getCachedSolution();
 	for(int activityTag=0; activityTag<gt.rules.nInternalActivityTags && currentCount<maxActivityTag; activityTag++){
 		currentCount++;
 		if(!excludedNames.contains(activityTag)){

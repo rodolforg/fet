@@ -65,8 +65,6 @@
 
 extern bool simulation_running;
 
-extern Solution best_solution;
-
 extern Matrix2D<double> notAllowedRoomTimePercentages;
 extern Matrix2D<bool> breakDayHour;
 
@@ -533,7 +531,7 @@ void TimetableViewRoomsForm::lock(bool lockTime, bool lockSpace)
 		return;
 	}
 	
-	Solution* c=&best_solution;
+	const Solution* c=&CachedSchedule::getCachedSolution();
 	
 	bool report=false; //the messages are annoying
 	

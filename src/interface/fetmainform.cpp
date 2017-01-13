@@ -252,8 +252,6 @@ bool simulation_running; //true if the user started an allocation of the timetab
 
 bool simulation_running_multi;
 
-Solution best_solution;
-
 QString conflictsString; //the string that contains a log of the broken constraints
 QString conflictsStringTitle;
 
@@ -1297,7 +1295,7 @@ void FetMainForm::on_fileExportCSVAction_triggered(){
 			tr("Allocation in course.\nPlease stop simulation before this."));
 		return;
 	}
-	Export exp(gt, best_solution);
+	Export exp(gt, CachedSchedule::getCachedSolution());
 	exp.exportCSV(this);
 }
 // End of code contributed by Volker Dirr
@@ -1309,7 +1307,7 @@ void FetMainForm::on_timetableSaveTimetableAsAction_triggered()
 		return;
 	}
 
-	Solution* tc=&best_solution;
+	const Solution* tc=&CachedSchedule::getCachedSolution();
 	
 	for(int ai=0; ai<gt.rules.nInternalActivities; ai++){
 		//Activity* act=&gt.rules.internalActivitiesList[ai];

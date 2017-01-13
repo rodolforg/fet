@@ -55,8 +55,6 @@ Generate genMulti(gt);
 static int nTimetables;
 static int timeLimit;
 
-extern Solution best_solution;
-
 extern QString conflictsStringTitle;
 extern QString conflictsString;
 
@@ -333,6 +331,8 @@ void TimetableGenerateMultipleForm::timetableGenerated(int timetable, const QStr
 		c.fitness(gt.rules, &tmp);
 	
 		CachedSchedule::update(c);
+
+		const Solution& best_solution=CachedSchedule::getCachedSolution();
 
 		TimetableExport::writeSimulationResults(this, timetable);
 
