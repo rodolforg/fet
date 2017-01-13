@@ -271,7 +271,7 @@ void TimetableViewTeachersForm::updateTeachersTimetableTable(){
 			// add colors (end)
 			//end by Marco Vassura
 			s = "";
-			int ai=teachers_timetable_weekly[teacher][k][j]; //activity index
+			int ai=CachedSchedule::teachers_timetable_weekly[teacher][k][j]; //activity index
 			//Activity* act=gt.rules.activitiesList.at(ai);
 			if(ai!=UNALLOCATED_ACTIVITY){
 				Activity* act=&gt.rules.internalActivitiesList[ai];
@@ -456,7 +456,7 @@ void TimetableViewTeachersForm::detailActivity(QTableWidgetItem* item){
 		int k=item->column();
 		s = "";
 		if(j>=0 && k>=0){
-			int ai=teachers_timetable_weekly[teacher][k][j]; //activity index
+			int ai=CachedSchedule::teachers_timetable_weekly[teacher][k][j]; //activity index
 			//Activity* act=gt.rules.activitiesList.at(ai);
 			if(ai!=UNALLOCATED_ACTIVITY){
 				Activity* act=&gt.rules.internalActivitiesList[ai];
@@ -573,7 +573,7 @@ void TimetableViewTeachersForm::lock(bool lockTime, bool lockSpace)
 	for(int j=0; j<gt.rules.nHoursPerDay && j<teachersTimetableTable->rowCount(); j++){
 		for(int k=0; k<gt.rules.nDaysPerWeek && k<teachersTimetableTable->columnCount(); k++){
 			if(teachersTimetableTable->item(j, k)->isSelected()){
-				int ai=teachers_timetable_weekly[i][k][j];
+				int ai=CachedSchedule::teachers_timetable_weekly[i][k][j];
 				if(ai!=UNALLOCATED_ACTIVITY && !careAboutIndex.contains(ai)){	//modified, because of activities with duration > 1
 					careAboutIndex.insert(ai);					//Needed, because of activities with duration > 1
 					int a_tim=tc->times[ai];

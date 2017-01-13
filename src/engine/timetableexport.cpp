@@ -82,15 +82,6 @@ extern bool LANGUAGE_STYLE_RIGHT_TO_LEFT;
 extern QString LANGUAGE_FOR_HTML;
 
 extern Timetable gt;
-/*extern qint16 teachers_timetable_weekly[MAX_TEACHERS][MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
-extern qint16 students_timetable_weekly[MAX_TOTAL_SUBGROUPS][MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
-extern qint16 rooms_timetable_weekly[MAX_ROOMS][MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];*/
-extern Matrix3D<int> teachers_timetable_weekly;
-extern Matrix3D<int> students_timetable_weekly;
-extern Matrix3D<int> rooms_timetable_weekly;
-
-//extern QList<qint16> teachers_free_periods_timetable_weekly[TEACHERS_FREE_PERIODS_N_CATEGORIES][MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
-extern Matrix3D<QList<int> > teachers_free_periods_timetable_weekly;
 
 //extern bool breakDayHour[MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
 extern Matrix2D<bool> breakDayHour;
@@ -204,9 +195,14 @@ const QString RANDOM_SEED_FILENAME_AFTER="random_seed_after.txt";
 
 QString generationLocalizedTime=QString(""); //to be used in timetableprintform.cpp
 
-bool students_schedule_ready;
-bool teachers_schedule_ready;
-bool rooms_schedule_ready;
+bool CachedSchedule::students_schedule_ready;
+bool CachedSchedule::teachers_schedule_ready;
+bool CachedSchedule::rooms_schedule_ready;
+
+Matrix3D<int> CachedSchedule::teachers_timetable_weekly;
+Matrix3D<int> CachedSchedule::students_timetable_weekly;
+Matrix3D<int> CachedSchedule::rooms_timetable_weekly;
+Matrix3D<QList<int> > CachedSchedule::teachers_free_periods_timetable_weekly;
 
 void CachedSchedule::invalidate() {
 	students_schedule_ready = false;
@@ -219,9 +215,33 @@ bool CachedSchedule::isValid() {
 }
 
 void CachedSchedule::update(const Solution &solution) {
-	TimetableExport::getStudentsTimetable(solution);
-	TimetableExport::getTeachersTimetable(solution);
-	TimetableExport::getRoomsTimetable(solution);
+	getStudentsTimetable(solution);
+	getTeachersTimetable(solution);
+	getRoomsTimetable(solution);
+}
+
+void CachedSchedule::getStudentsTimetable(const Solution &solution){
+	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
+
+	solution.getSubgroupsTimetable(gt.rules, students_timetable_weekly);
+	best_solution.copy(gt.rules, solution);
+	students_schedule_ready=true;
+}
+
+void CachedSchedule::getTeachersTimetable(const Solution &solution){
+	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
+
+	solution.getTeachersTimetable(gt.rules, teachers_timetable_weekly, teachers_free_periods_timetable_weekly);
+	best_solution.copy(gt.rules, solution);
+	teachers_schedule_ready=true;
+}
+
+void CachedSchedule::getRoomsTimetable(const Solution &solution){
+	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
+
+	best_solution.copy(gt.rules, solution);
+	solution.getRoomsTimetable(gt.rules, rooms_timetable_weekly);
+	rooms_schedule_ready=true;
 }
 
 static QString getBasename(){
@@ -295,30 +315,6 @@ TimetableExport::TimetableExport()
 
 TimetableExport::~TimetableExport()
 {
-}
-
-void TimetableExport::getStudentsTimetable(const Solution &c){
-	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-
-	c.getSubgroupsTimetable(gt.rules, students_timetable_weekly);
-	best_solution.copy(gt.rules, c);
-	students_schedule_ready=true;
-}
-
-void TimetableExport::getTeachersTimetable(const Solution &c){
-	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-
-	c.getTeachersTimetable(gt.rules, teachers_timetable_weekly, teachers_free_periods_timetable_weekly);
-	best_solution.copy(gt.rules, c);
-	teachers_schedule_ready=true;
-}
-
-void TimetableExport::getRoomsTimetable(const Solution &c){
-	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-
-	c.getRoomsTimetable(gt.rules, rooms_timetable_weekly);
-	best_solution.copy(gt.rules, c);
-	rooms_schedule_ready=true;
 }
 
 void TimetableExport::getNumberOfPlacedActivities(int& number1, int& number2)
@@ -1096,7 +1092,7 @@ void TimetableExport::writeSubgroupsTimetableXml(QWidget* parent, const QString&
 			for(int hour=0; hour<gt.rules.nHoursPerDay; hour++){
 				tos << "    <Hour name=\"" << protect(gt.rules.hoursOfTheDay[hour]) << "\">\n";
 				tos<<"     ";
-				int ai=students_timetable_weekly[subgroup][day][hour]; //activity index
+				int ai=CachedSchedule::students_timetable_weekly[subgroup][day][hour]; //activity index
 				if(ai!=UNALLOCATED_ACTIVITY){
 					//Activity* act=gt.rules.activitiesList.at(ai);
 					Activity* act=&gt.rules.internalActivitiesList[ai];
@@ -1160,7 +1156,7 @@ void TimetableExport::writeTeachersTimetableXml(QWidget* parent, const QString& 
 				tos << "    <Hour name=\"" << protect(gt.rules.hoursOfTheDay[hour]) << "\">\n";
 
 				tos<<"     ";
-				int ai=teachers_timetable_weekly[i][day][hour]; //activity index
+				int ai=CachedSchedule::teachers_timetable_weekly[i][day][hour]; //activity index
 				//Activity* act=gt.rules.activitiesList.at(ai);
 				if(ai!=UNALLOCATED_ACTIVITY){
 					Activity* act=&gt.rules.internalActivitiesList[ai];
@@ -4700,7 +4696,7 @@ QString TimetableExport::writeActivitiesStudents(int htmlLevel, const QList<int>
 //by Volker Dirr
 QString TimetableExport::writeActivityTeacher(int htmlLevel, int teacher, int day, int hour, bool colspan, bool rowspan, bool printActivityTags, QString skipTeacher){
 	QString tmp;
-	int ai=teachers_timetable_weekly[teacher][day][hour];
+	int ai=CachedSchedule::teachers_timetable_weekly[teacher][day][hour];
 	int currentTime=day+gt.rules.nDaysPerWeek*hour;
 	if(ai!=UNALLOCATED_ACTIVITY){
 		if(best_solution.times[ai]==currentTime){
@@ -4795,7 +4791,7 @@ QString TimetableExport::writeActivitiesTeachers(int htmlLevel, const QList<int>
 //by Volker Dirr
 QString TimetableExport::writeActivityRoom(int htmlLevel, int room, int day, int hour, bool colspan, bool rowspan, bool printActivityTags){
 	QString tmp;
-	int ai=rooms_timetable_weekly[room][day][hour];
+	int ai=CachedSchedule::rooms_timetable_weekly[room][day][hour];
 	int currentTime=day+gt.rules.nDaysPerWeek*hour;
 	if(ai!=UNALLOCATED_ACTIVITY){
 		if(best_solution.times[ai]==currentTime){
@@ -5026,10 +5022,10 @@ QString TimetableExport::singleSubgroupsTimetableDaysHorizontalHtml(int htmlLeve
 		for(int day=0; day<gt.rules.nDaysPerWeek; day++){
 			QList<int> allActivities;
 			allActivities.clear();
-			allActivities<<students_timetable_weekly[subgroup][day][hour];
+			allActivities<<CachedSchedule::students_timetable_weekly[subgroup][day][hour];
 			bool activitiesWithSameStartingtime=addActivitiesWithSameStartingTime(allActivities, hour);
 			if(allActivities.size()==1 && !activitiesWithSameStartingtime){  // because i am using colspan or rowspan!!!
-				tmpString+=writeActivityStudents(htmlLevel, students_timetable_weekly[subgroup][day][hour], day, hour, subgroupNotAvailableDayHour[subgroup][day][hour], false, true, printActivityTags, subgroup_name);
+				tmpString+=writeActivityStudents(htmlLevel, CachedSchedule::students_timetable_weekly[subgroup][day][hour], day, hour, subgroupNotAvailableDayHour[subgroup][day][hour], false, true, printActivityTags, subgroup_name);
 			} else{
 				tmpString+=writeActivitiesStudents(htmlLevel, allActivities, printActivityTags);
 			}
@@ -5096,10 +5092,10 @@ QString TimetableExport::singleSubgroupsTimetableDaysVerticalHtml(int htmlLevel,
 		for(int hour=0; hour<gt.rules.nHoursPerDay; hour++){
 			QList<int> allActivities;
 			allActivities.clear();
-			allActivities<<students_timetable_weekly[subgroup][day][hour];
+			allActivities<<CachedSchedule::students_timetable_weekly[subgroup][day][hour];
 			bool activitiesWithSameStartingtime=addActivitiesWithSameStartingTime(allActivities, hour);
 			if(allActivities.size()==1 && !activitiesWithSameStartingtime){  // because i am using colspan or rowspan!!!
-				tmpString+=writeActivityStudents(htmlLevel, students_timetable_weekly[subgroup][day][hour], day, hour, subgroupNotAvailableDayHour[subgroup][day][hour], true, false, printActivityTags, subgroup_name);
+				tmpString+=writeActivityStudents(htmlLevel, CachedSchedule::students_timetable_weekly[subgroup][day][hour], day, hour, subgroupNotAvailableDayHour[subgroup][day][hour], true, false, printActivityTags, subgroup_name);
 			} else{
 				tmpString+=writeActivitiesStudents(htmlLevel, allActivities, printActivityTags);
 			}
@@ -5172,10 +5168,10 @@ QString TimetableExport::singleSubgroupsTimetableTimeVerticalHtml(int htmlLevel,
 						excludedNames<<subgroup;
 					QList<int> allActivities;
 					allActivities.clear();
-					allActivities<<students_timetable_weekly[subgroup][day][hour];
+					allActivities<<CachedSchedule::students_timetable_weekly[subgroup][day][hour];
 					bool activitiesWithSameStartingtime=addActivitiesWithSameStartingTime(allActivities, hour);
 					if(allActivities.size()==1 && !activitiesWithSameStartingtime){  // because i am using colspan or rowspan!!!
-						tmpString+=writeActivityStudents(htmlLevel, students_timetable_weekly[subgroup][day][hour], day, hour, subgroupNotAvailableDayHour[subgroup][day][hour], false, true, printActivityTags, gt.rules.internalSubgroupsList[subgroup]->name);
+						tmpString+=writeActivityStudents(htmlLevel, CachedSchedule::students_timetable_weekly[subgroup][day][hour], day, hour, subgroupNotAvailableDayHour[subgroup][day][hour], false, true, printActivityTags, gt.rules.internalSubgroupsList[subgroup]->name);
 					} else{
 						tmpString+=writeActivitiesStudents(htmlLevel, allActivities, printActivityTags);
 					}
@@ -5252,10 +5248,10 @@ QString TimetableExport::singleSubgroupsTimetableTimeHorizontalHtml(int htmlLeve
 				for(int hour=0; hour<gt.rules.nHoursPerDay; hour++){
 					QList<int> allActivities;
 					allActivities.clear();
-					allActivities<<students_timetable_weekly[subgroup][day][hour];
+					allActivities<<CachedSchedule::students_timetable_weekly[subgroup][day][hour];
 					bool activitiesWithSameStartingtime=addActivitiesWithSameStartingTime(allActivities, hour);
 					if(allActivities.size()==1 && !activitiesWithSameStartingtime){  // because i am using colspan or rowspan!!!
-						tmpString+=writeActivityStudents(htmlLevel, students_timetable_weekly[subgroup][day][hour], day, hour, subgroupNotAvailableDayHour[subgroup][day][hour], true, false, printActivityTags, gt.rules.internalSubgroupsList[subgroup]->name);
+						tmpString+=writeActivityStudents(htmlLevel, CachedSchedule::students_timetable_weekly[subgroup][day][hour], day, hour, subgroupNotAvailableDayHour[subgroup][day][hour], true, false, printActivityTags, gt.rules.internalSubgroupsList[subgroup]->name);
 					} else{
 						tmpString+=writeActivitiesStudents(htmlLevel, allActivities, printActivityTags);
 					}
@@ -5329,10 +5325,10 @@ QString TimetableExport::singleSubgroupsTimetableTimeVerticalDailyHtml(int htmlL
 					excludedNames<<subgroup;
 				QList<int> allActivities;
 				allActivities.clear();
-				allActivities<<students_timetable_weekly[subgroup][day][hour];
+				allActivities<<CachedSchedule::students_timetable_weekly[subgroup][day][hour];
 				bool activitiesWithSameStartingtime=addActivitiesWithSameStartingTime(allActivities, hour);
 				if(allActivities.size()==1 && !activitiesWithSameStartingtime){  // because i am using colspan or rowspan!!!
-					tmpString+=writeActivityStudents(htmlLevel, students_timetable_weekly[subgroup][day][hour], day, hour, subgroupNotAvailableDayHour[subgroup][day][hour], false, true, printActivityTags, gt.rules.internalSubgroupsList[subgroup]->name);
+					tmpString+=writeActivityStudents(htmlLevel, CachedSchedule::students_timetable_weekly[subgroup][day][hour], day, hour, subgroupNotAvailableDayHour[subgroup][day][hour], false, true, printActivityTags, gt.rules.internalSubgroupsList[subgroup]->name);
 				} else{
 					tmpString+=writeActivitiesStudents(htmlLevel, allActivities, printActivityTags);
 				}
@@ -5406,10 +5402,10 @@ QString TimetableExport::singleSubgroupsTimetableTimeHorizontalDailyHtml(int htm
 			for(int hour=0; hour<gt.rules.nHoursPerDay; hour++){
 				QList<int> allActivities;
 				allActivities.clear();
-				allActivities<<students_timetable_weekly[subgroup][day][hour];
+				allActivities<<CachedSchedule::students_timetable_weekly[subgroup][day][hour];
 				bool activitiesWithSameStartingtime=addActivitiesWithSameStartingTime(allActivities, hour);
 				if(allActivities.size()==1 && !activitiesWithSameStartingtime){  // because i am using colspan or rowspan!!!
-					tmpString+=writeActivityStudents(htmlLevel, students_timetable_weekly[subgroup][day][hour], day, hour, subgroupNotAvailableDayHour[subgroup][day][hour], true, false, printActivityTags, gt.rules.internalSubgroupsList[subgroup]->name);
+					tmpString+=writeActivityStudents(htmlLevel, CachedSchedule::students_timetable_weekly[subgroup][day][hour], day, hour, subgroupNotAvailableDayHour[subgroup][day][hour], true, false, printActivityTags, gt.rules.internalSubgroupsList[subgroup]->name);
 				} else{
 					tmpString+=writeActivitiesStudents(htmlLevel, allActivities, printActivityTags);
 				}
@@ -5481,8 +5477,8 @@ QString TimetableExport::singleGroupsTimetableDaysHorizontalHtml(int htmlLevel, 
 			for(int sg=0; sg<gt.rules.internalGroupsList[group]->subgroupsList.size(); sg++){
 				StudentsSubgroup* sts=gt.rules.internalGroupsList[group]->subgroupsList[sg];
 				int subgroup=sts->indexInInternalSubgroupsList;
-				if(!(allActivities.contains(students_timetable_weekly[subgroup][day][hour])))
-					allActivities<<students_timetable_weekly[subgroup][day][hour];
+				if(!(allActivities.contains(CachedSchedule::students_timetable_weekly[subgroup][day][hour])))
+					allActivities<<CachedSchedule::students_timetable_weekly[subgroup][day][hour];
 				if(!subgroupNotAvailableDayHour[subgroup][day][hour])
 					isNotAvailable=false;
 				}
@@ -5563,8 +5559,8 @@ QString TimetableExport::singleGroupsTimetableDaysVerticalHtml(int htmlLevel, in
 			for(int sg=0; sg<gt.rules.internalGroupsList.at(group)->subgroupsList.size(); sg++){
 				StudentsSubgroup* sts=gt.rules.internalGroupsList.at(group)->subgroupsList[sg];
 				int subgroup=sts->indexInInternalSubgroupsList;
-				if(!(allActivities.contains(students_timetable_weekly[subgroup][day][hour])))
-					allActivities<<students_timetable_weekly[subgroup][day][hour];
+				if(!(allActivities.contains(CachedSchedule::students_timetable_weekly[subgroup][day][hour])))
+					allActivities<<CachedSchedule::students_timetable_weekly[subgroup][day][hour];
 				if(!subgroupNotAvailableDayHour[subgroup][day][hour])
 					isNotAvailable=false;
 			}
@@ -5649,8 +5645,8 @@ QString TimetableExport::singleGroupsTimetableTimeVerticalHtml(int htmlLevel, in
 					for(int sg=0; sg<gt.rules.internalGroupsList.at(group)->subgroupsList.size(); sg++){
 						StudentsSubgroup* sts=gt.rules.internalGroupsList.at(group)->subgroupsList[sg];
 						int subgroup=sts->indexInInternalSubgroupsList;
-						if(!(allActivities.contains(students_timetable_weekly[subgroup][day][hour])))
-							allActivities<<students_timetable_weekly[subgroup][day][hour];
+						if(!(allActivities.contains(CachedSchedule::students_timetable_weekly[subgroup][day][hour])))
+							allActivities<<CachedSchedule::students_timetable_weekly[subgroup][day][hour];
 						if(!subgroupNotAvailableDayHour[subgroup][day][hour])
 							isNotAvailable=false;
 					}
@@ -5741,8 +5737,8 @@ QString TimetableExport::singleGroupsTimetableTimeHorizontalHtml(int htmlLevel, 
 					for(int sg=0; sg<gt.rules.internalGroupsList.at(group)->subgroupsList.size(); sg++){
 						StudentsSubgroup* sts=gt.rules.internalGroupsList.at(group)->subgroupsList[sg];
 						int subgroup=sts->indexInInternalSubgroupsList;
-						if(!(allActivities.contains(students_timetable_weekly[subgroup][day][hour])))
-							allActivities<<students_timetable_weekly[subgroup][day][hour];
+						if(!(allActivities.contains(CachedSchedule::students_timetable_weekly[subgroup][day][hour])))
+							allActivities<<CachedSchedule::students_timetable_weekly[subgroup][day][hour];
 						if(!subgroupNotAvailableDayHour[subgroup][day][hour])
 							isNotAvailable=false;
 					}
@@ -5830,8 +5826,8 @@ QString TimetableExport::singleGroupsTimetableTimeVerticalDailyHtml(int htmlLeve
 				for(int sg=0; sg<gt.rules.internalGroupsList.at(group)->subgroupsList.size(); sg++){
 					StudentsSubgroup* sts=gt.rules.internalGroupsList.at(group)->subgroupsList[sg];
 					int subgroup=sts->indexInInternalSubgroupsList;
-					if(!(allActivities.contains(students_timetable_weekly[subgroup][day][hour])))
-						allActivities<<students_timetable_weekly[subgroup][day][hour];
+					if(!(allActivities.contains(CachedSchedule::students_timetable_weekly[subgroup][day][hour])))
+						allActivities<<CachedSchedule::students_timetable_weekly[subgroup][day][hour];
 					if(!subgroupNotAvailableDayHour[subgroup][day][hour])
 						isNotAvailable=false;
 				}
@@ -5919,8 +5915,8 @@ QString TimetableExport::singleGroupsTimetableTimeHorizontalDailyHtml(int htmlLe
 				for(int sg=0; sg<gt.rules.internalGroupsList.at(group)->subgroupsList.size(); sg++){
 					StudentsSubgroup* sts=gt.rules.internalGroupsList.at(group)->subgroupsList[sg];
 					int subgroup=sts->indexInInternalSubgroupsList;
-					if(!(allActivities.contains(students_timetable_weekly[subgroup][day][hour])))
-						allActivities<<students_timetable_weekly[subgroup][day][hour];
+					if(!(allActivities.contains(CachedSchedule::students_timetable_weekly[subgroup][day][hour])))
+						allActivities<<CachedSchedule::students_timetable_weekly[subgroup][day][hour];
 					if(!subgroupNotAvailableDayHour[subgroup][day][hour])
 						isNotAvailable=false;
 				}
@@ -6004,8 +6000,8 @@ QString TimetableExport::singleYearsTimetableDaysHorizontalHtml(int htmlLevel, i
 				for(int sg=0; sg<stg->subgroupsList.size(); sg++){
 					StudentsSubgroup* sts=stg->subgroupsList[sg];
 					int subgroup=sts->indexInInternalSubgroupsList;
-					if(!(allActivities.contains(students_timetable_weekly[subgroup][day][hour])))
-						allActivities<<students_timetable_weekly[subgroup][day][hour];
+					if(!(allActivities.contains(CachedSchedule::students_timetable_weekly[subgroup][day][hour])))
+						allActivities<<CachedSchedule::students_timetable_weekly[subgroup][day][hour];
 					if(!subgroupNotAvailableDayHour[subgroup][day][hour])
 						isNotAvailable=false;
 				}
@@ -6091,8 +6087,8 @@ QString TimetableExport::singleYearsTimetableDaysVerticalHtml(int htmlLevel, int
 				for(int sg=0; sg<stg->subgroupsList.size(); sg++){
 					StudentsSubgroup* sts=stg->subgroupsList[sg];
 					int subgroup=sts->indexInInternalSubgroupsList;
-					if(!(allActivities.contains(students_timetable_weekly[subgroup][day][hour])))
-						allActivities<<students_timetable_weekly[subgroup][day][hour];
+					if(!(allActivities.contains(CachedSchedule::students_timetable_weekly[subgroup][day][hour])))
+						allActivities<<CachedSchedule::students_timetable_weekly[subgroup][day][hour];
 					if(!subgroupNotAvailableDayHour[subgroup][day][hour])
 						isNotAvailable=false;
 				}
@@ -6183,8 +6179,8 @@ QString TimetableExport::singleYearsTimetableTimeVerticalHtml(int htmlLevel, int
 						for(int sg=0; sg<stg->subgroupsList.size(); sg++){
 							StudentsSubgroup* sts=stg->subgroupsList[sg];
 							int subgroup=sts->indexInInternalSubgroupsList;
-							if(!(allActivities.contains(students_timetable_weekly[subgroup][day][hour])))
-								allActivities<<students_timetable_weekly[subgroup][day][hour];
+							if(!(allActivities.contains(CachedSchedule::students_timetable_weekly[subgroup][day][hour])))
+								allActivities<<CachedSchedule::students_timetable_weekly[subgroup][day][hour];
 							if(!subgroupNotAvailableDayHour[subgroup][day][hour])
 								isNotAvailable=false;
 						}
@@ -6280,8 +6276,8 @@ QString TimetableExport::singleYearsTimetableTimeHorizontalHtml(int htmlLevel, i
 						for(int sg=0; sg<stg->subgroupsList.size(); sg++){
 							StudentsSubgroup* sts=stg->subgroupsList[sg];
 							int subgroup=sts->indexInInternalSubgroupsList;
-							if(!(allActivities.contains(students_timetable_weekly[subgroup][day][hour])))
-								allActivities<<students_timetable_weekly[subgroup][day][hour];
+							if(!(allActivities.contains(CachedSchedule::students_timetable_weekly[subgroup][day][hour])))
+								allActivities<<CachedSchedule::students_timetable_weekly[subgroup][day][hour];
 							if(!subgroupNotAvailableDayHour[subgroup][day][hour])
 								isNotAvailable=false;
 						}
@@ -6377,8 +6373,8 @@ QString TimetableExport::singleYearsTimetableTimeVerticalDailyHtml(int htmlLevel
 					for(int sg=0; sg<stg->subgroupsList.size(); sg++){
 						StudentsSubgroup* sts=stg->subgroupsList[sg];
 						int subgroup=sts->indexInInternalSubgroupsList;
-						if(!(allActivities.contains(students_timetable_weekly[subgroup][day][hour])))
-							allActivities<<students_timetable_weekly[subgroup][day][hour];
+						if(!(allActivities.contains(CachedSchedule::students_timetable_weekly[subgroup][day][hour])))
+							allActivities<<CachedSchedule::students_timetable_weekly[subgroup][day][hour];
 						if(!subgroupNotAvailableDayHour[subgroup][day][hour])
 							isNotAvailable=false;
 					}
@@ -6471,8 +6467,8 @@ QString TimetableExport::singleYearsTimetableTimeHorizontalDailyHtml(int htmlLev
 					for(int sg=0; sg<stg->subgroupsList.size(); sg++){
 						StudentsSubgroup* sts=stg->subgroupsList[sg];
 						int subgroup=sts->indexInInternalSubgroupsList;
-						if(!(allActivities.contains(students_timetable_weekly[subgroup][day][hour])))
-							allActivities<<students_timetable_weekly[subgroup][day][hour];
+						if(!(allActivities.contains(CachedSchedule::students_timetable_weekly[subgroup][day][hour])))
+							allActivities<<CachedSchedule::students_timetable_weekly[subgroup][day][hour];
 						if(!subgroupNotAvailableDayHour[subgroup][day][hour])
 							isNotAvailable=false;
 					}
@@ -6944,7 +6940,7 @@ QString TimetableExport::singleTeachersTimetableDaysHorizontalHtml(int htmlLevel
 		for(int day=0; day<gt.rules.nDaysPerWeek; day++){
 			QList<int> allActivities;
 			allActivities.clear();
-			allActivities<<teachers_timetable_weekly[teacher][day][hour];
+			allActivities<<CachedSchedule::teachers_timetable_weekly[teacher][day][hour];
 			bool activitiesWithSameStartingtime=addActivitiesWithSameStartingTime(allActivities, hour);
 			if(allActivities.size()==1 && !activitiesWithSameStartingtime){  // because i am using colspan or rowspan!!!
 				tmpString+=writeActivityTeacher(htmlLevel, teacher, day, hour, false, true, printActivityTags, teacher_name);
@@ -7017,7 +7013,7 @@ QString TimetableExport::singleTeachersTimetableDaysVerticalHtml(int htmlLevel, 
 		for(int hour=0; hour<gt.rules.nHoursPerDay; hour++){
 			QList<int> allActivities;
 			allActivities.clear();
-			allActivities<<teachers_timetable_weekly[teacher][day][hour];
+			allActivities<<CachedSchedule::teachers_timetable_weekly[teacher][day][hour];
 			bool activitiesWithSameStartingtime=addActivitiesWithSameStartingTime(allActivities, hour);
 			if(allActivities.size()==1 && !activitiesWithSameStartingtime){  // because i am using colspan or rowspan!!!
 				tmpString+=writeActivityTeacher(htmlLevel, teacher, day, hour, true, false, printActivityTags, teacher_name);
@@ -7092,7 +7088,7 @@ QString tmpString;
 						excludedNames<<teacher;
 					QList<int> allActivities;
 					allActivities.clear();
-					allActivities<<teachers_timetable_weekly[teacher][day][hour];
+					allActivities<<CachedSchedule::teachers_timetable_weekly[teacher][day][hour];
 					bool activitiesWithSameStartingtime=addActivitiesWithSameStartingTime(allActivities, hour);
 					if(allActivities.size()==1 && !activitiesWithSameStartingtime){  // because i am using colspan or rowspan!!!
 						tmpString+=writeActivityTeacher(htmlLevel, teacher, day, hour, false, true, printActivityTags, gt.rules.internalTeachersList[teacher]->name);
@@ -7169,7 +7165,7 @@ QString TimetableExport::singleTeachersTimetableTimeHorizontalHtml(int htmlLevel
 				for(int hour=0; hour<gt.rules.nHoursPerDay; hour++){
 					QList<int> allActivities;
 					allActivities.clear();
-					allActivities<<teachers_timetable_weekly[teacher][day][hour];
+					allActivities<<CachedSchedule::teachers_timetable_weekly[teacher][day][hour];
 					bool activitiesWithSameStartingtime=addActivitiesWithSameStartingTime(allActivities, hour);
 					if(allActivities.size()==1 && !activitiesWithSameStartingtime){  // because i am using colspan or rowspan!!!
 						tmpString+=writeActivityTeacher(htmlLevel, teacher, day, hour, true, false, printActivityTags, gt.rules.internalTeachersList[teacher]->name);
@@ -7246,7 +7242,7 @@ QString TimetableExport::singleTeachersTimetableTimeVerticalDailyHtml(int htmlLe
 					excludedNames<<teacher;
 				QList<int> allActivities;
 				allActivities.clear();
-				allActivities<<teachers_timetable_weekly[teacher][day][hour];
+				allActivities<<CachedSchedule::teachers_timetable_weekly[teacher][day][hour];
 				bool activitiesWithSameStartingtime=addActivitiesWithSameStartingTime(allActivities, hour);
 				if(allActivities.size()==1 && !activitiesWithSameStartingtime){  // because i am using colspan or rowspan!!!
 					tmpString+=writeActivityTeacher(htmlLevel, teacher, day, hour, false, true, printActivityTags, gt.rules.internalTeachersList[teacher]->name);
@@ -7322,7 +7318,7 @@ QString TimetableExport::singleTeachersTimetableTimeHorizontalDailyHtml(int html
 			for(int hour=0; hour<gt.rules.nHoursPerDay; hour++){
 				QList<int> allActivities;
 				allActivities.clear();
-				allActivities<<teachers_timetable_weekly[teacher][day][hour];
+				allActivities<<CachedSchedule::teachers_timetable_weekly[teacher][day][hour];
 				bool activitiesWithSameStartingtime=addActivitiesWithSameStartingTime(allActivities, hour);
 				if(allActivities.size()==1 && !activitiesWithSameStartingtime){  // because i am using colspan or rowspan!!!
 					tmpString+=writeActivityTeacher(htmlLevel, teacher, day, hour, true, false, printActivityTags, gt.rules.internalTeachersList[teacher]->name);
@@ -7394,7 +7390,7 @@ QString TimetableExport::singleRoomsTimetableDaysHorizontalHtml(int htmlLevel, i
 		for(int day=0; day<gt.rules.nDaysPerWeek; day++){
 			QList<int> allActivities;
 			allActivities.clear();
-			allActivities<<rooms_timetable_weekly[room][day][hour];
+			allActivities<<CachedSchedule::rooms_timetable_weekly[room][day][hour];
 			bool activitiesWithSameStartingtime=addActivitiesWithSameStartingTime(allActivities, hour);
 			if(allActivities.size()==1 && !activitiesWithSameStartingtime){  // because i am using colspan or rowspan!!!
 				tmpString+=writeActivityRoom(htmlLevel, room, day, hour, false, true, printActivityTags);
@@ -7466,7 +7462,7 @@ QString TimetableExport::singleRoomsTimetableDaysVerticalHtml(int htmlLevel, int
 		for(int hour=0; hour<gt.rules.nHoursPerDay; hour++){
 			QList<int> allActivities;
 			allActivities.clear();
-			allActivities<<rooms_timetable_weekly[room][day][hour];
+			allActivities<<CachedSchedule::rooms_timetable_weekly[room][day][hour];
 			bool activitiesWithSameStartingtime=addActivitiesWithSameStartingTime(allActivities, hour);
 			if(allActivities.size()==1 && !activitiesWithSameStartingtime){  // because i am using colspan or rowspan!!!
 				tmpString+=writeActivityRoom(htmlLevel, room, day, hour, true, false, printActivityTags);
@@ -7541,7 +7537,7 @@ QString TimetableExport::singleRoomsTimetableTimeVerticalHtml(int htmlLevel, int
 						excludedNames<<room;
 					QList<int> allActivities;
 					allActivities.clear();
-					allActivities<<rooms_timetable_weekly[room][day][hour];
+					allActivities<<CachedSchedule::rooms_timetable_weekly[room][day][hour];
 					bool activitiesWithSameStartingtime=addActivitiesWithSameStartingTime(allActivities, hour);
 					if(allActivities.size()==1 && !activitiesWithSameStartingtime){  // because i am using colspan or rowspan!!!
 						tmpString+=writeActivityRoom(htmlLevel, room, day, hour, false, true, printActivityTags);
@@ -7619,7 +7615,7 @@ QString TimetableExport::singleRoomsTimetableTimeHorizontalHtml(int htmlLevel, i
 				for(int hour=0; hour<gt.rules.nHoursPerDay; hour++){
 					QList<int> allActivities;
 					allActivities.clear();
-					allActivities<<rooms_timetable_weekly[room][day][hour];
+					allActivities<<CachedSchedule::rooms_timetable_weekly[room][day][hour];
 					bool activitiesWithSameStartingtime=addActivitiesWithSameStartingTime(allActivities, hour);
 					if(allActivities.size()==1 && !activitiesWithSameStartingtime){  // because i am using colspan or rowspan!!!
 						tmpString+=writeActivityRoom(htmlLevel, room, day, hour, true, false, printActivityTags);
@@ -7697,7 +7693,7 @@ QString TimetableExport::singleRoomsTimetableTimeVerticalDailyHtml(int htmlLevel
 					excludedNames<<room;
 				QList<int> allActivities;
 				allActivities.clear();
-				allActivities<<rooms_timetable_weekly[room][day][hour];
+				allActivities<<CachedSchedule::rooms_timetable_weekly[room][day][hour];
 				bool activitiesWithSameStartingtime=addActivitiesWithSameStartingTime(allActivities, hour);
 				if(allActivities.size()==1 && !activitiesWithSameStartingtime){  // because i am using colspan or rowspan!!!
 					tmpString+=writeActivityRoom(htmlLevel, room, day, hour, false, true, printActivityTags);
@@ -7773,7 +7769,7 @@ QString TimetableExport::singleRoomsTimetableTimeHorizontalDailyHtml(int htmlLev
 			for(int hour=0; hour<gt.rules.nHoursPerDay; hour++){
 				QList<int> allActivities;
 				allActivities.clear();
-				allActivities<<rooms_timetable_weekly[room][day][hour];
+				allActivities<<CachedSchedule::rooms_timetable_weekly[room][day][hour];
 				bool activitiesWithSameStartingtime=addActivitiesWithSameStartingTime(allActivities, hour);
 				if(allActivities.size()==1 && !activitiesWithSameStartingtime){  // because i am using colspan or rowspan!!!
 					tmpString+=writeActivityRoom(htmlLevel, room, day, hour, true, false, printActivityTags);
@@ -8968,14 +8964,14 @@ QString TimetableExport::singleTeachersFreePeriodsTimetableDaysHorizontalHtml(in
 			bool empty_slot;
 			empty_slot=true;
 			for(int tfp=0; tfp<TEACHERS_FREE_PERIODS_N_CATEGORIES; tfp++){
-				if(teachers_free_periods_timetable_weekly[tfp][day][hour].size()>0){
+				if(CachedSchedule::teachers_free_periods_timetable_weekly[tfp][day][hour].size()>0){
 					empty_slot=false;
 				}
 				if(!detailed&&tfp>=TEACHER_MUST_COME_EARLIER) break;
 			}
 			if(!empty_slot) tmpString+="          <td>";
 			for(int tfp=0; tfp<TEACHERS_FREE_PERIODS_N_CATEGORIES; tfp++){
-				if(teachers_free_periods_timetable_weekly[tfp][day][hour].size()>0){
+				if(CachedSchedule::teachers_free_periods_timetable_weekly[tfp][day][hour].size()>0){
 					if(htmlLevel>=2)
 						tmpString+="<div class=\"DESCRIPTION\">";
 					switch(tfp){
@@ -9006,8 +9002,8 @@ QString TimetableExport::singleTeachersFreePeriodsTimetableDaysHorizontalHtml(in
 							case TEACHER_IS_NOT_AVAILABLE		: tmpString+="<div class=\"TEACHER_IS_NOT_AVAILABLE\">"; break;
 							default: assert(0==1); break;
 						}
-					for(int t=0; t<teachers_free_periods_timetable_weekly[tfp][day][hour].size(); t++){
-						QString teacher_name = gt.rules.internalTeachersList[teachers_free_periods_timetable_weekly[tfp][day][hour].at(t)]->name;
+					for(int t=0; t<CachedSchedule::teachers_free_periods_timetable_weekly[tfp][day][hour].size(); t++){
+						QString teacher_name = gt.rules.internalTeachersList[CachedSchedule::teachers_free_periods_timetable_weekly[tfp][day][hour].at(t)]->name;
 							switch(htmlLevel){
 								case 4 : tmpString+="<span class=\"t_"+hashTeacherIDsTimetable.value(teacher_name)+"\">"+protect2(teacher_name)+"</span>"; break;
 								case 5 : ;
@@ -9087,14 +9083,14 @@ QString TimetableExport::singleTeachersFreePeriodsTimetableDaysVerticalHtml(int 
 			bool empty_slot;
 			empty_slot=true;
 			for(int tfp=0; tfp<TEACHERS_FREE_PERIODS_N_CATEGORIES; tfp++){
-				if(teachers_free_periods_timetable_weekly[tfp][day][hour].size()>0){
+				if(CachedSchedule::teachers_free_periods_timetable_weekly[tfp][day][hour].size()>0){
 					empty_slot=false;
 				}
 				if(!detailed&&tfp>=TEACHER_MUST_COME_EARLIER) break;
 			}
 			if(!empty_slot) tmpString+="          <td>";
 			for(int tfp=0; tfp<TEACHERS_FREE_PERIODS_N_CATEGORIES; tfp++){
-				if(teachers_free_periods_timetable_weekly[tfp][day][hour].size()>0){
+				if(CachedSchedule::teachers_free_periods_timetable_weekly[tfp][day][hour].size()>0){
 					if(htmlLevel>=2)
 						tmpString+="<div class=\"DESCRIPTION\">";
 					switch(tfp){
@@ -9125,8 +9121,8 @@ QString TimetableExport::singleTeachersFreePeriodsTimetableDaysVerticalHtml(int 
 							case TEACHER_IS_NOT_AVAILABLE		: tmpString+="<div class=\"TEACHER_IS_NOT_AVAILABLE\">"; break;
 							default: assert(0==1); break;
 						}
-					for(int t=0; t<teachers_free_periods_timetable_weekly[tfp][day][hour].size(); t++){
-						QString teacher_name = gt.rules.internalTeachersList[teachers_free_periods_timetable_weekly[tfp][day][hour].at(t)]->name;
+					for(int t=0; t<CachedSchedule::teachers_free_periods_timetable_weekly[tfp][day][hour].size(); t++){
+						QString teacher_name = gt.rules.internalTeachersList[CachedSchedule::teachers_free_periods_timetable_weekly[tfp][day][hour].at(t)]->name;
 							switch(htmlLevel){
 								case 4 : tmpString+="<span class=\"t_"+hashTeacherIDsTimetable.value(teacher_name)+"\">"+protect2(teacher_name)+"</span>"; break;
 								case 5 : ;
@@ -9203,7 +9199,7 @@ QString TimetableExport::singleTeachersStatisticsHtml(int htmlLevel, const QStri
 			int gapsPerDaySingleTeacher=0;
 			int hoursPerDaySingleTeacher=0;
 			for(int h=0; h<gt.rules.nHoursPerDay; h++){
-				if(teachers_timetable_weekly[tch][d][h]!=UNALLOCATED_ACTIVITY){
+				if(CachedSchedule::teachers_timetable_weekly[tch][d][h]!=UNALLOCATED_ACTIVITY){
 					if(firstPeriod==-1)
 						firstPeriod=h;
 					lastPeriod=h;
@@ -9214,7 +9210,7 @@ QString TimetableExport::singleTeachersStatisticsHtml(int htmlLevel, const QStri
 				freeDaysSingleTeacher++;
 			} else {
 				for(int h=firstPeriod; h<lastPeriod; h++){
-					if(teachers_timetable_weekly[tch][d][h]==UNALLOCATED_ACTIVITY && teacherNotAvailableDayHour[tch][d][h]==false && breakDayHour[d][h]==false){
+					if(CachedSchedule::teachers_timetable_weekly[tch][d][h]==UNALLOCATED_ACTIVITY && teacherNotAvailableDayHour[tch][d][h]==false && breakDayHour[d][h]==false){
 						gapsPerDaySingleTeacher++;
 					}
 				}
@@ -9391,7 +9387,7 @@ QString TimetableExport::singleStudentsStatisticsHtml(int htmlLevel, const QStri
 			int gapsPerDaySingleSubgroup=0;
 			int hoursPerDaySingleSubgroup=0;
 			for(int h=0; h<gt.rules.nHoursPerDay; h++){
-				if(students_timetable_weekly[subgroup][d][h]!=UNALLOCATED_ACTIVITY){
+				if(CachedSchedule::students_timetable_weekly[subgroup][d][h]!=UNALLOCATED_ACTIVITY){
 					if(firstPeriod==-1)
 						firstPeriod=h;
 					lastPeriod=h;
@@ -9402,7 +9398,7 @@ QString TimetableExport::singleStudentsStatisticsHtml(int htmlLevel, const QStri
 				freeDaysSingleSubgroup++;
 			} else {
 				for(int h=firstPeriod; h<lastPeriod; h++){
-					if(students_timetable_weekly[subgroup][d][h]==UNALLOCATED_ACTIVITY && subgroupNotAvailableDayHour[subgroup][d][h]==false && breakDayHour[d][h]==false){
+					if(CachedSchedule::students_timetable_weekly[subgroup][d][h]==UNALLOCATED_ACTIVITY && subgroupNotAvailableDayHour[subgroup][d][h]==false && breakDayHour[d][h]==false){
 						gapsPerDaySingleSubgroup++;
 					}
 				}

@@ -282,7 +282,7 @@ void TimetableViewRoomsForm::updateRoomsTimetableTable(){
 			// add colors (end)
 			//end by Marco Vassura
 			s = "";
-			int ai=rooms_timetable_weekly[roomIndex][k][j]; //activity index
+			int ai=CachedSchedule::rooms_timetable_weekly[roomIndex][k][j]; //activity index
 			//Activity* act=gt.rules.activitiesList.at(ai);
 			if(ai!=UNALLOCATED_ACTIVITY){
 				Activity* act=&gt.rules.internalActivitiesList[ai];
@@ -445,7 +445,7 @@ void TimetableViewRoomsForm::detailActivity(QTableWidgetItem* item){
 	int k=item->column();
 	s = "";
 	if(j>=0 && k>=0){
-		int ai=rooms_timetable_weekly[roomIndex][k][j]; //activity index
+		int ai=CachedSchedule::rooms_timetable_weekly[roomIndex][k][j]; //activity index
 		//Activity* act=gt.rules.activitiesList.at(ai);
 		if(ai!=UNALLOCATED_ACTIVITY){
 			Activity* act=&gt.rules.internalActivitiesList[ai];
@@ -546,7 +546,7 @@ void TimetableViewRoomsForm::lock(bool lockTime, bool lockSpace)
 	for(int j=0; j<gt.rules.nHoursPerDay && j<roomsTimetableTable->rowCount(); j++){
 		for(int k=0; k<gt.rules.nDaysPerWeek && k<roomsTimetableTable->columnCount(); k++){
 			if(roomsTimetableTable->item(j, k)->isSelected()){
-				int ai=rooms_timetable_weekly[i][k][j];
+				int ai=CachedSchedule::rooms_timetable_weekly[i][k][j];
 				if(ai!=UNALLOCATED_ACTIVITY && !careAboutIndex.contains(ai)){	//modified, because of activities with duration > 1
 					careAboutIndex.insert(ai);					//Needed, because of activities with duration > 1
 					int a_tim=c->times[ai];

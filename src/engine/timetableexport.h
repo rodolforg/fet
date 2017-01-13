@@ -42,6 +42,32 @@ public:
 	static void invalidate();
 	static bool isValid();
 	static void update(const Solution &solution);
+
+	/**
+	The timetable for the teachers
+	*/
+	static Matrix3D<int> teachers_timetable_weekly;
+
+	/**
+	The timetable for the students
+	*/
+	static Matrix3D<int> students_timetable_weekly;
+
+	/**
+	The timetable for the rooms
+	*/
+	static Matrix3D<int> rooms_timetable_weekly;
+
+	static Matrix3D<QList<int> > teachers_free_periods_timetable_weekly;
+
+private:
+	static bool students_schedule_ready;
+	static bool teachers_schedule_ready;
+	static bool rooms_schedule_ready;
+
+	static void getStudentsTimetable(const Solution &solution);
+	static void getTeachersTimetable(const Solution &solution);
+	static void getRoomsTimetable(const Solution &solution);
 };
 
 class TimetableExport: public QObject{
@@ -53,9 +79,6 @@ public:
 	
 	static void stringToColor(QString s, int *r, int *g, int *b);
 
-	static void getStudentsTimetable(const Solution &c);
-	static void getTeachersTimetable(const Solution &c);
-	static void getRoomsTimetable(const Solution &c);
 	static void getNumberOfPlacedActivities(int& number1, int& number2);
 
 	static void writeSimulationResults(QWidget* parent);
