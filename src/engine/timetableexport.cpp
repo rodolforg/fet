@@ -195,9 +195,7 @@ const QString RANDOM_SEED_FILENAME_AFTER="random_seed_after.txt";
 
 QString generationLocalizedTime=QString(""); //to be used in timetableprintform.cpp
 
-bool CachedSchedule::students_schedule_ready;
-bool CachedSchedule::teachers_schedule_ready;
-bool CachedSchedule::rooms_schedule_ready;
+bool CachedSchedule::cached_schedule_ready = false;
 
 Matrix3D<int> CachedSchedule::teachers_timetable_weekly;
 Matrix3D<int> CachedSchedule::students_timetable_weekly;
@@ -205,43 +203,23 @@ Matrix3D<int> CachedSchedule::rooms_timetable_weekly;
 Matrix3D<QList<int> > CachedSchedule::teachers_free_periods_timetable_weekly;
 
 void CachedSchedule::invalidate() {
-	students_schedule_ready = false;
-	teachers_schedule_ready = false;
-	rooms_schedule_ready = false;
+	cached_schedule_ready = false;
 }
 
 bool CachedSchedule::isValid() {
-	return students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready;
+	return cached_schedule_ready;
 }
 
 void CachedSchedule::update(const Solution &solution) {
-	getStudentsTimetable(solution);
-	getTeachersTimetable(solution);
-	getRoomsTimetable(solution);
-}
-
-void CachedSchedule::getStudentsTimetable(const Solution &solution){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 
 	solution.getSubgroupsTimetable(gt.rules, students_timetable_weekly);
-	best_solution.copy(gt.rules, solution);
-	students_schedule_ready=true;
-}
-
-void CachedSchedule::getTeachersTimetable(const Solution &solution){
-	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-
 	solution.getTeachersTimetable(gt.rules, teachers_timetable_weekly, teachers_free_periods_timetable_weekly);
-	best_solution.copy(gt.rules, solution);
-	teachers_schedule_ready=true;
-}
-
-void CachedSchedule::getRoomsTimetable(const Solution &solution){
-	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-
-	best_solution.copy(gt.rules, solution);
 	solution.getRoomsTimetable(gt.rules, rooms_timetable_weekly);
-	rooms_schedule_ready=true;
+
+	best_solution.copy(gt.rules, solution);
+
+	cached_schedule_ready=true;
 }
 
 static QString getBasename(){
