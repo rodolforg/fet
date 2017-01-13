@@ -24,6 +24,7 @@ File timetableexport.h
 
 #include "timetable_defs.h"
 #include "timetable.h"
+#include "solution.h"
 
 #include <QString>
 #include <QHash>
@@ -60,8 +61,10 @@ public:
 
 	static Matrix3D<QList<int> > teachers_free_periods_timetable_weekly;
 
-private:
+	static const Solution& getCachedSolution();
 
+private:
+	static Solution cachedSolution;
 	static bool cached_schedule_ready;
 };
 

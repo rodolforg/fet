@@ -37,8 +37,6 @@
 
 #include "fet.h"
 
-extern Solution best_solution;
-
 extern Timetable gt;
 
 extern QSet<int> idsOfLockedTime;
@@ -166,6 +164,8 @@ void AdvancedLockUnlockForm::lockDay(QWidget* parent)
 	
 	int addedTime=0, notAddedTime=0;
 	int addedSpace=0, notAddedSpace=0;
+
+	const Solution& best_solution=CachedSchedule::getCachedSolution();
 
 	for(int i=0; i<gt.rules.nInternalActivities; i++){
 		if(best_solution.times[i]!=UNALLOCATED_TIME){
@@ -441,6 +441,7 @@ void AdvancedLockUnlockForm::unlockDay(QWidget* parent)
 	
 	QList<int> lockedActivitiesIds;
 
+	const Solution& best_solution=CachedSchedule::getCachedSolution();
 	for(int i=0; i<gt.rules.nInternalActivities; i++){
 		if(best_solution.times[i]!=UNALLOCATED_TIME){
 			assert(best_solution.times[i]>=0 && best_solution.times[i]<gt.rules.nHoursPerWeek);
@@ -724,6 +725,8 @@ void AdvancedLockUnlockForm::lockEndStudentsDay(QWidget* parent)
 			}
 		}
 	}
+
+	const Solution& best_solution=CachedSchedule::getCachedSolution();
 
 	assert(activitiesIdsList.count()==activitiesIndexList.count());
 	for(int q=0; q<activitiesIdsList.count(); q++){
@@ -1249,6 +1252,8 @@ void AdvancedLockUnlockForm::lockAll(QWidget* parent)
 	int addedTime=0, notAddedTime=0;
 	int addedSpace=0, notAddedSpace=0;
 
+	const Solution& best_solution=CachedSchedule::getCachedSolution();
+
 	for(int i=0; i<gt.rules.nInternalActivities; i++){
 		if(best_solution.times[i]!=UNALLOCATED_TIME){
 			assert(best_solution.times[i]>=0 && best_solution.times[i]<gt.rules.nHoursPerWeek);
@@ -1509,6 +1514,7 @@ void AdvancedLockUnlockForm::unlockAll(QWidget* parent)
 	
 	QList<int> lockedActivitiesIds;
 
+	const Solution& best_solution=CachedSchedule::getCachedSolution();
 	for(int i=0; i<gt.rules.nInternalActivities; i++){
 		if(best_solution.times[i]!=UNALLOCATED_TIME){
 			assert(best_solution.times[i]>=0 && best_solution.times[i]<gt.rules.nHoursPerWeek);

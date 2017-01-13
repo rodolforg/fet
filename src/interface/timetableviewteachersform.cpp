@@ -62,8 +62,6 @@
 #include <QColor>
 //end by Marco Vassura
 
-extern Solution best_solution;
-
 extern bool simulation_running;
 
 extern Matrix3D<bool> teacherNotAvailableDayHour;
@@ -259,7 +257,8 @@ void TimetableViewTeachersForm::updateTeachersTimetableTable(){
 	teacherNameTextLabel->setText(s);
 
 	assert(gt.rules.initialized);
-	
+	const Solution& best_solution=CachedSchedule::getCachedSolution();
+
 	for(int j=0; j<gt.rules.nHoursPerDay && j<teachersTimetableTable->rowCount(); j++){
 		for(int k=0; k<gt.rules.nDaysPerWeek && k<teachersTimetableTable->columnCount(); k++){
 			//begin by Marco Vassura
@@ -465,7 +464,7 @@ void TimetableViewTeachersForm::detailActivity(QTableWidgetItem* item){
 				s += act->getDetailedDescription(gt.rules);
 
 				//int r=rooms_timetable_weekly[teacher][k][j];
-				int r=best_solution.rooms[ai];
+				int r=CachedSchedule::getCachedSolution().rooms[ai];
 				if(r!=UNALLOCATED_SPACE && r!=UNSPECIFIED_ROOM){
 					s+="\n";
 					s+=tr("Room: %1").arg(gt.rules.internalRoomsList[r]->name);
@@ -560,7 +559,7 @@ void TimetableViewTeachersForm::lock(bool lockTime, bool lockSpace)
 		return;
 	}
 
-	Solution* tc=&best_solution;
+	const Solution* tc=&CachedSchedule::getCachedSolution();
 	
 	bool report=false; //the messages are annoying
 	

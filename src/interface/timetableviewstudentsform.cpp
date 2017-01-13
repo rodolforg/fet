@@ -63,8 +63,6 @@
 
 extern bool simulation_running;
 
-extern Solution best_solution;
-
 extern Matrix3D<bool> subgroupNotAvailableDayHour;
 extern Matrix2D<bool> breakDayHour;
 
@@ -344,6 +342,7 @@ void TimetableViewStudentsForm::updateStudentsTimetableTable(){
 		if(gt.rules.internalSubgroupsList[i]==sts)
 			break;
 	assert(i<gt.rules.nInternalSubgroups);
+	const Solution& best_solution=CachedSchedule::getCachedSolution();
 	for(int j=0; j<gt.rules.nHoursPerDay && j<studentsTimetableTable->rowCount(); j++){
 		for(int k=0; k<gt.rules.nDaysPerWeek && k<studentsTimetableTable->columnCount(); k++){
 			//begin by Marco Vassura
@@ -550,7 +549,7 @@ void TimetableViewStudentsForm::detailActivity(QTableWidgetItem* item)
 			s+=act->getDetailedDescription(gt.rules);
 
 			//int r=rooms_timetable_weekly[i][k][j];
-			int r=best_solution.rooms[ai];
+			int r=CachedSchedule::getCachedSolution().rooms[ai];
 			if(r!=UNALLOCATED_SPACE && r!=UNSPECIFIED_ROOM){
 				s+="\n";
 				s+=tr("Room: %1").arg(gt.rules.internalRoomsList[r]->name);
@@ -648,7 +647,7 @@ void TimetableViewStudentsForm::lock(bool lockTime, bool lockSpace)
 	groupname = groupsListWidget->currentItem()->text();
 	subgroupname = subgroupsListWidget->currentItem()->text();
 
-	Solution* tc=&best_solution;
+	const Solution* tc=&CachedSchedule::getCachedSolution();
 
 	StudentsSubgroup* sts=(StudentsSubgroup*)gt.rules.searchAugmentedStudentsSet(subgroupname);
 	if(!sts){
