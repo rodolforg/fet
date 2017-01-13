@@ -67,6 +67,13 @@ static time_t initial_time;
 extern int permutation[MAX_ACTIVITIES];
 int savedPermutation[MAX_ACTIVITIES];
 
+static QString getBasename(){
+	QFileInfo input(INPUT_FILENAME_XML);
+	if (input.suffix() == "fet")
+		return input.baseName();
+	return input.fileName();
+}
+
 void GenerateMultipleThread::run()
 {
 	time(&initial_time);
@@ -210,10 +217,7 @@ TimetableGenerateMultipleForm::~TimetableGenerateMultipleForm()
 
 void TimetableGenerateMultipleForm::help()
 {
-	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);
-	
-	if(s2.right(4)==".fet")
-		s2=s2.left(s2.length()-4);
+	QString s2=getBasename();
 	
 	QString destDir=OUTPUT_DIR+FILE_SEP+"timetables"+FILE_SEP+s2+"-multi";
 
@@ -245,10 +249,7 @@ void TimetableGenerateMultipleForm::start(){
 	assert(timeLimit>0);
 
 	QDir dir;
-	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);
-
-	if(s2.right(4)==".fet")
-		s2=s2.left(s2.length()-4);
+	QString s2=getBasename();
 	
 	QString destDir=OUTPUT_DIR+FILE_SEP+"timetables"+FILE_SEP+s2+"-multi";
 	if(dir.exists(destDir)){
@@ -370,10 +371,7 @@ void TimetableGenerateMultipleForm::stop()
 	QString s=TimetableGenerateMultipleForm::tr("Simulation interrupted!");
 	s+="\n\n";
 
-	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);
-
-	if(s2.right(4)==".fet")
-		s2=s2.left(s2.length()-4);
+	QString s2=getBasename();
 	
 	QString destDir=OUTPUT_DIR+FILE_SEP+"timetables"+FILE_SEP+s2+"-multi";
 
@@ -413,10 +411,7 @@ void TimetableGenerateMultipleForm::simulationFinished()
 
 	simulation_running_multi=false;
 
-	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);
-
-	if(s2.right(4)==".fet")
-		s2=s2.left(s2.length()-4);
+	QString s2=getBasename();
 	
 	QString destDir=OUTPUT_DIR+FILE_SEP+"timetables"+FILE_SEP+s2+"-multi";
 	
