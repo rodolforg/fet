@@ -41,7 +41,7 @@ class CachedSchedule {
 public:
 	static void invalidate();
 	static bool isValid();
-	static void update(const Solution &solution);
+	static void update(const Solution &c);
 
 	/**
 	The timetable for the teachers
@@ -61,13 +61,8 @@ public:
 	static Matrix3D<QList<int> > teachers_free_periods_timetable_weekly;
 
 private:
-	static bool students_schedule_ready;
-	static bool teachers_schedule_ready;
-	static bool rooms_schedule_ready;
 
-	static void getStudentsTimetable(const Solution &solution);
-	static void getTeachersTimetable(const Solution &solution);
-	static void getRoomsTimetable(const Solution &solution);
+	static bool cached_schedule_ready;
 };
 
 class TimetableExport: public QObject{
