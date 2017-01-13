@@ -17,6 +17,7 @@
 
 #include "timetable_defs.h"
 #include "timetable.h"
+#include "timetableexport.h"
 #include "solution.h"
 
 #include "randomknuth.h"
@@ -251,10 +252,6 @@ bool simulation_running; //true if the user started an allocation of the timetab
 
 bool simulation_running_multi;
 
-bool students_schedule_ready;
-bool teachers_schedule_ready;
-bool rooms_schedule_ready;
-
 Solution best_solution;
 
 QString conflictsString; //the string that contains a log of the broken constraints
@@ -417,9 +414,7 @@ FetMainForm::FetMainForm()
 
 	gt.rules.setModified(false);
 
-	students_schedule_ready=false;
-	teachers_schedule_ready=false;
-	rooms_schedule_ready=false;
+	CachedSchedule::invalidate();
 	
 	settingsShowShortcutsOnMainWindowAction->setCheckable(true);
 	settingsShowShortcutsOnMainWindowAction->setChecked(SHOW_SHORTCUTS_ON_MAIN_WINDOW);
@@ -983,9 +978,7 @@ void FetMainForm::on_fileNewAction_triggered()
 		
 		gt.rules.setModified(false);
 
-		students_schedule_ready=false;
-		teachers_schedule_ready=false;
-		rooms_schedule_ready=false;
+		CachedSchedule::invalidate();
 
 		LockUnlock::computeLockedUnlockedActivitiesTimeSpace();
 		LockUnlock::increaseCommunicationSpinBox();
@@ -1106,9 +1099,7 @@ void FetMainForm::openFile(const QString& fileName)
 			//bool before=gt.rules.modified;
 
 			if(gt.rules.read(this, s)){
-				students_schedule_ready=false;
-				teachers_schedule_ready=false;
-				rooms_schedule_ready=false;
+				CachedSchedule::invalidate();
 
 				INPUT_FILENAME_XML = s;
 				
@@ -1313,7 +1304,7 @@ void FetMainForm::on_fileExportCSVAction_triggered(){
 
 void FetMainForm::on_timetableSaveTimetableAsAction_triggered()
 {
-	if(!students_schedule_ready || !teachers_schedule_ready || !rooms_schedule_ready){
+	if(!CachedSchedule::isValid()){
 		QMessageBox::warning(this, tr("FET - Warning"), tr("You have not yet generated a timetable - please generate firstly"));
 		return;
 	}
@@ -3480,7 +3471,7 @@ void FetMainForm::on_timetableGenerateMultipleAction_triggered()
 
 void FetMainForm::on_timetableViewStudentsAction_triggered()
 {
-	if(!(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready)){
+	if(!CachedSchedule::isValid()){
 		QMessageBox::information(this, tr("FET information"), tr("Please generate, firstly"));
 		return;
 	}
@@ -3501,7 +3492,7 @@ void FetMainForm::on_timetableViewStudentsAction_triggered()
 
 void FetMainForm::on_timetableViewTeachersAction_triggered()
 {
-	if(!(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready)){
+	if(!CachedSchedule::isValid()){
 		QMessageBox::information(this, tr("FET information"), tr("Please generate, firstly"));
 		return;
 	}
@@ -3526,7 +3517,7 @@ void FetMainForm::on_timetableViewTeachersAction_triggered()
 
 void FetMainForm::on_timetableShowConflictsAction_triggered()
 {
-	if(!(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready)){
+	if(!CachedSchedule::isValid()){
 		QMessageBox::information(this, tr("FET information"), tr("Please generate, firstly"));
 		return;
 	}
@@ -3541,7 +3532,7 @@ void FetMainForm::on_timetableShowConflictsAction_triggered()
 
 void FetMainForm::on_timetableViewRoomsAction_triggered()
 {
-	if(!(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready)){
+	if(!CachedSchedule::isValid()){
 		QMessageBox::information(this, tr("FET information"), tr("Please generate, firstly"));
 		return;
 	}
@@ -3562,7 +3553,7 @@ void FetMainForm::on_timetableViewRoomsAction_triggered()
 
 void FetMainForm::on_timetablePrintAction_triggered()
 {
-	if(!(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready)){
+	if(!CachedSchedule::isValid()){
 		QMessageBox::information(this, tr("FET information"), tr("Please generate, firstly"));
 		return;
 	}
@@ -3586,7 +3577,7 @@ void FetMainForm::on_statisticsPrintAction_triggered()
 
 void FetMainForm::on_timetableLockAllActivitiesAction_triggered()
 {
-	if(!(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready)){
+	if(!CachedSchedule::isValid()){
 		QMessageBox::information(this, tr("FET information"), tr("Please generate, firstly"));
 		return;
 	}
@@ -3596,7 +3587,7 @@ void FetMainForm::on_timetableLockAllActivitiesAction_triggered()
 
 void FetMainForm::on_timetableUnlockAllActivitiesAction_triggered()
 {
-	if(!(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready)){
+	if(!CachedSchedule::isValid()){
 		//QMessageBox::information(this, tr("FET information"), tr("Please generate, firstly"));
 		QMessageBox::information(this, tr("FET information"), tr("The timetable is not generated, but anyway FET will proceed now"));
 
@@ -3610,7 +3601,7 @@ void FetMainForm::on_timetableUnlockAllActivitiesAction_triggered()
 
 void FetMainForm::on_timetableLockActivitiesDayAction_triggered()
 {
-	if(!(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready)){
+	if(!CachedSchedule::isValid()){
 		QMessageBox::information(this, tr("FET information"), tr("Please generate, firstly"));
 		return;
 	}
@@ -3620,7 +3611,7 @@ void FetMainForm::on_timetableLockActivitiesDayAction_triggered()
 
 void FetMainForm::on_timetableUnlockActivitiesDayAction_triggered()
 {
-	if(!(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready)){
+	if(!CachedSchedule::isValid()){
 		//QMessageBox::information(this, tr("FET information"), tr("Please generate, firstly"));
 		QMessageBox::information(this, tr("FET information"), tr("The timetable is not generated, but anyway FET will proceed now"));
 		
@@ -3634,7 +3625,7 @@ void FetMainForm::on_timetableUnlockActivitiesDayAction_triggered()
 
 void FetMainForm::on_timetableLockActivitiesEndStudentsDayAction_triggered()
 {
-	if(!(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready)){
+	if(!CachedSchedule::isValid()){
 		QMessageBox::information(this, tr("FET information"), tr("Please generate, firstly"));
 		return;
 	}
@@ -3644,7 +3635,7 @@ void FetMainForm::on_timetableLockActivitiesEndStudentsDayAction_triggered()
 
 void FetMainForm::on_timetableUnlockActivitiesEndStudentsDayAction_triggered()
 {
-	if(!(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready)){
+	if(!CachedSchedule::isValid()){
 		QMessageBox::information(this, tr("FET information"), tr("Please generate, firstly"));
 		return;
 	}

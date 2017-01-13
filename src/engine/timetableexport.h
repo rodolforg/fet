@@ -37,6 +37,12 @@ extern QHash<int, int> hashActivityColorBySubject;
 extern QList<int> activeHashActivityColorBySubjectAndStudents;
 extern QHash<int, int> hashActivityColorBySubject;
 extern QList<int> activeHashActivityColorBySubjectAndStudents;
+class CachedSchedule {
+public:
+	static void invalidate();
+	static bool isValid();
+	static void update(const Solution &solution);
+};
 
 class TimetableExport: public QObject{
 	Q_OBJECT

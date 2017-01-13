@@ -61,14 +61,12 @@ using namespace std;
 
 #include "centerwidgetonscreen.h"
 
+#include "timetableexport.h"
+
 //static bool toSkipTime[MAX_TIME_CONSTRAINTS];
 //static bool toSkipSpace[MAX_SPACE_CONSTRAINTS];
 
 //extern QApplication* pqapplication;
-
-extern bool students_schedule_ready;
-extern bool rooms_schedule_ready;
-extern bool teachers_schedule_ready;
 
 void Rules::init() //initializes the rules (empty, but with default hours and days)
 {
@@ -120,9 +118,7 @@ bool Rules::computeInternalStructure(QWidget* parent)
 	//then if user views the timetable, the timetable of a teacher contains activities of other teacher.
 	//The bug appeared because it is possible to compute internal structure, so internal activities change the teacher, but the timetables remain the same,
 	//with the same activities indexes.
-	teachers_schedule_ready=false;
-	students_schedule_ready=false;
-	rooms_schedule_ready=false;
+	CachedSchedule::invalidate();
 
 	//The order is important - firstly the teachers, subjects, activity tags and students.
 	//After that, the buildings.
@@ -949,9 +945,7 @@ bool Rules::addTeacher(Teacher* teacher)
 	this->internalStructureComputed=false;
 	setModified(true);
 
-	teachers_schedule_ready=false;
-	students_schedule_ready=false;
-	rooms_schedule_ready=false;
+	CachedSchedule::invalidate();
 
 	this->teachersList.append(teacher);
 	return true;
@@ -962,9 +956,7 @@ bool Rules::addTeacherFast(Teacher* teacher)
 	this->internalStructureComputed=false;
 	setModified(true);
 
-	teachers_schedule_ready=false;
-	students_schedule_ready=false;
-	rooms_schedule_ready=false;
+	CachedSchedule::invalidate();
 
 	this->teachersList.append(teacher);
 	return true;
@@ -1002,9 +994,7 @@ bool Rules::removeTeacher(const QString& teacherName)
 	this->internalStructureComputed=false;
 	setModified(true);
 
-	teachers_schedule_ready=false;
-	students_schedule_ready=false;
-	rooms_schedule_ready=false;
+	CachedSchedule::invalidate();
 
 	return true;
 }
@@ -1170,9 +1160,7 @@ bool Rules::addSubject(Subject* subject)
 	this->internalStructureComputed=false;
 	setModified(true);
 
-	teachers_schedule_ready=false;
-	students_schedule_ready=false;
-	rooms_schedule_ready=false;
+	CachedSchedule::invalidate();
 
 	this->subjectsList << subject;
 	return true;
@@ -1183,9 +1171,7 @@ bool Rules::addSubjectFast(Subject* subject)
 	this->internalStructureComputed=false;
 	setModified(true);
 
-	teachers_schedule_ready=false;
-	students_schedule_ready=false;
-	rooms_schedule_ready=false;
+	CachedSchedule::invalidate();
 
 	this->subjectsList << subject;
 	return true;
@@ -1235,9 +1221,7 @@ bool Rules::removeSubject(const QString& subjectName)
 	this->internalStructureComputed=false;
 	setModified(true);
 
-	teachers_schedule_ready=false;
-	students_schedule_ready=false;
-	rooms_schedule_ready=false;
+	CachedSchedule::invalidate();
 
 	return true;
 }
@@ -1359,9 +1343,7 @@ bool Rules::addActivityTag(ActivityTag* activityTag)
 	this->internalStructureComputed=false;
 	setModified(true);
 
-	teachers_schedule_ready=false;
-	students_schedule_ready=false;
-	rooms_schedule_ready=false;
+	CachedSchedule::invalidate();
 
 	this->activityTagsList << activityTag;
 	return true;
@@ -1372,9 +1354,7 @@ bool Rules::addActivityTagFast(ActivityTag* activityTag)
 	this->internalStructureComputed=false;
 	setModified(true);
 
-	teachers_schedule_ready=false;
-	students_schedule_ready=false;
-	rooms_schedule_ready=false;
+	CachedSchedule::invalidate();
 
 	this->activityTagsList << activityTag;
 	return true;
@@ -1409,9 +1389,7 @@ bool Rules::removeActivityTag(const QString& activityTagName)
 	this->internalStructureComputed=false;
 	setModified(true);
 
-	teachers_schedule_ready=false;
-	students_schedule_ready=false;
-	rooms_schedule_ready=false;
+	CachedSchedule::invalidate();
 
 	return true;
 }
@@ -3082,9 +3060,7 @@ bool Rules::addRoom(Room* rm)
 	this->internalStructureComputed=false;
 	setModified(true);
 
-	teachers_schedule_ready=false;
-	students_schedule_ready=false;
-	rooms_schedule_ready=false;
+	CachedSchedule::invalidate();
 
 	return true;
 }
@@ -3095,9 +3071,7 @@ bool Rules::addRoomFast(Room* rm)
 	this->internalStructureComputed=false;
 	setModified(true);
 
-	teachers_schedule_ready=false;
-	students_schedule_ready=false;
-	rooms_schedule_ready=false;
+	CachedSchedule::invalidate();
 
 	return true;
 }
@@ -3128,9 +3102,7 @@ bool Rules::removeRoom(const QString& roomName)
 	this->internalStructureComputed=false;
 	setModified(true);
 
-	teachers_schedule_ready=false;
-	students_schedule_ready=false;
-	rooms_schedule_ready=false;
+	CachedSchedule::invalidate();
 
 	return true;
 }
@@ -3273,9 +3245,7 @@ bool Rules::addBuilding(Building* bu)
 	this->internalStructureComputed=false;
 	setModified(true);
 
-	teachers_schedule_ready=false;
-	students_schedule_ready=false;
-	rooms_schedule_ready=false;
+	CachedSchedule::invalidate();
 
 	return true;
 }
@@ -3286,9 +3256,7 @@ bool Rules::addBuildingFast(Building* bu)
 	this->internalStructureComputed=false;
 	setModified(true);
 
-	teachers_schedule_ready=false;
-	students_schedule_ready=false;
-	rooms_schedule_ready=false;
+	CachedSchedule::invalidate();
 
 	return true;
 }
@@ -3321,9 +3289,7 @@ bool Rules::removeBuilding(const QString& buildingName)
 	this->internalStructureComputed=false;
 	setModified(true);
 
-	teachers_schedule_ready=false;
-	students_schedule_ready=false;
-	rooms_schedule_ready=false;
+	CachedSchedule::invalidate();
 
 	return true;
 }
@@ -7207,9 +7173,7 @@ void Rules::setDays(QStringList dayList)
 	internalStructureComputed=false;
 	setModified(true);
 	if (sizeChanged) {
-		students_schedule_ready=false;
-		teachers_schedule_ready=false;
-		rooms_schedule_ready=false;
+		CachedSchedule::invalidate();
 	}
 }
 
@@ -7231,9 +7195,7 @@ void Rules::setHours(QStringList hourList)
 	internalStructureComputed=false;
 	setModified(true);
 	if (sizeChanged) {
-		students_schedule_ready=false;
-		teachers_schedule_ready=false;
-		rooms_schedule_ready=false;
+		CachedSchedule::invalidate();
 	}
 }
 

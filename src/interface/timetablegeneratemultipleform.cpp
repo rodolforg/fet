@@ -331,9 +331,7 @@ void TimetableGenerateMultipleForm::timetableGenerated(int timetable, const QStr
 		QString tmp;
 		c.fitness(gt.rules, &tmp);
 	
-		TimetableExport::getStudentsTimetable(c);
-		TimetableExport::getTeachersTimetable(c);
-		TimetableExport::getRoomsTimetable(c);
+		CachedSchedule::update(c);
 
 		TimetableExport::writeSimulationResults(this, timetable);
 

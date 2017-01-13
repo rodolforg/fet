@@ -29,6 +29,8 @@
 
 #include "fet.h"
 
+#include "timetableexport.h"
+
 #include "lockunlock.h"
 
 #include "matrix.h"
@@ -60,10 +62,6 @@
 #include <QBrush>
 #include <QColor>
 //end by Marco Vassura
-
-extern bool students_schedule_ready;
-extern bool teachers_schedule_ready;
-extern bool rooms_schedule_ready;
 
 extern bool simulation_running;
 
@@ -228,16 +226,10 @@ void TimetableViewRoomsForm::resizeRowsAfterShow()
 
 void TimetableViewRoomsForm::roomChanged(const QString &roomName)
 {
-	if(!(students_schedule_ready && teachers_schedule_ready)){
+	if(!CachedSchedule::isValid()){
 		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view rooms timetable dialog - please generate a new timetable"));
 		return;
 	}
-	if(!(rooms_schedule_ready)){
-		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view rooms timetable dialog - please generate a new timetable"));
-		return;
-	}
-	assert(students_schedule_ready && teachers_schedule_ready);
-	assert(rooms_schedule_ready);
 
 	if(roomName==QString())
 		return;
@@ -252,18 +244,11 @@ void TimetableViewRoomsForm::roomChanged(const QString &roomName)
 }
 
 void TimetableViewRoomsForm::updateRoomsTimetableTable(){
-	if(!(students_schedule_ready && teachers_schedule_ready)){
+	if(!CachedSchedule::isValid()){
 		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view rooms timetable dialog - please generate a new timetable "
 		"or close the timetable view rooms dialog"));
 		return;
 	}
-	if(!(rooms_schedule_ready)){
-		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view rooms timetable dialog - please generate a new timetable "
-		"or close the timetable view rooms dialog"));
-		return;
-	}
-	assert(students_schedule_ready && teachers_schedule_ready);
-	assert(rooms_schedule_ready);
 
 	QString s;
 	QString roomName;
@@ -433,16 +418,10 @@ void TimetableViewRoomsForm::detailActivity(QTableWidgetItem* item){
 		return;
 	}
 
-	if(!(students_schedule_ready && teachers_schedule_ready)){
+	if(!CachedSchedule::isValid()){
 		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view rooms timetable dialog - please generate a new timetable"));
 		return;
 	}
-	if(!(rooms_schedule_ready)){
-		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view rooms timetable dialog - please generate a new timetable"));
-		return;
-	}
-	assert(students_schedule_ready && teachers_schedule_ready);
-	assert(rooms_schedule_ready);
 
 	QString s;
 	QString roomName;
@@ -535,16 +514,10 @@ void TimetableViewRoomsForm::lock(bool lockTime, bool lockSpace)
 		return;
 	}
 
-	if(!(students_schedule_ready && teachers_schedule_ready)){
+	if(!CachedSchedule::isValid()){
 		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view rooms timetable dialog - please generate a new timetable"));
 		return;
 	}
-	if(!(rooms_schedule_ready)){
-		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view rooms timetable dialog - please generate a new timetable"));
-		return;
-	}
-	assert(students_schedule_ready && teachers_schedule_ready);
-	assert(rooms_schedule_ready);
 
 	//find room index
 	QString roomName;
@@ -554,12 +527,6 @@ void TimetableViewRoomsForm::lock(bool lockTime, bool lockSpace)
 	}
 	roomName = roomsListWidget->currentItem()->text();
 	int i=gt.rules.searchRoom(roomName);
-
-	if(!(rooms_schedule_ready)){
-		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view rooms timetable dialog - please generate a new timetable"));
-		return;
-	}
-	assert(rooms_schedule_ready);
 	
 	if(i<0){
 		QMessageBox::warning(this, tr("FET warning"), tr("Invalid room - please close this dialog and open a new view rooms timetable dialog"));

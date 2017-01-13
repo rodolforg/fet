@@ -100,8 +100,6 @@ extern int initialOrderOfActivitiesIndices[MAX_ACTIVITIES];
 int initialOrderOfActivitiesIndices[MAX_ACTIVITIES];
 #endif
 
-extern bool students_schedule_ready, teachers_schedule_ready, rooms_schedule_ready;
-
 #ifndef FET_COMMAND_LINE
 extern QMutex myMutex;
 #else
@@ -704,10 +702,8 @@ int main(int argc, char **argv)
 	VERBOSE=false;
 
 	terminateGeneratePointer=NULL;
-	
-	students_schedule_ready=0;
-	teachers_schedule_ready=0;
-	rooms_schedule_ready=0;
+
+	CachedSchedule::invalidate();
 
 #ifndef FET_COMMAND_LINE
 	QObject::connect(QGuiApplication::instance(), SIGNAL(lastWindowClosed()), QGuiApplication::instance(), SLOT(quit()));
@@ -1227,9 +1223,7 @@ int main(int argc, char **argv)
 			QString tmp;
 			cc.fitness(gt.rules, &tmp);
 
-			TimetableExport::getStudentsTimetable(cc);
-			TimetableExport::getTeachersTimetable(cc);
-			TimetableExport::getRoomsTimetable(cc);
+			CachedSchedule::update(cc);
 
 			QString toc=outputDirectory;
 			if(toc!="" && toc.count()>=1 && toc.endsWith(FILE_SEP)){
@@ -1287,9 +1281,7 @@ int main(int argc, char **argv)
 			QString tmp2;
 			ch.fitness(gt.rules, &tmp2);
 
-			TimetableExport::getStudentsTimetable(ch);
-			TimetableExport::getTeachersTimetable(ch);
-			TimetableExport::getRoomsTimetable(ch);
+			CachedSchedule::update(ch);
 
 			QString toh=outputDirectory;
 			if(toh!="" && toh.count()>=1 && toh.endsWith(FILE_SEP)){
@@ -1328,9 +1320,7 @@ int main(int argc, char **argv)
 			QString tmp;
 			cc.fitness(gt.rules, &tmp);
 
-			TimetableExport::getStudentsTimetable(cc);
-			TimetableExport::getTeachersTimetable(cc);
-			TimetableExport::getRoomsTimetable(cc);
+			CachedSchedule::update(cc);
 
 			QString toc=outputDirectory;
 			if(toc!="" && toc.count()>=1 && toc.endsWith(FILE_SEP)){
@@ -1407,9 +1397,7 @@ int main(int argc, char **argv)
 			QString tmp2;
 			ch.fitness(gt.rules, &tmp2);
 
-			TimetableExport::getStudentsTimetable(ch);
-			TimetableExport::getTeachersTimetable(ch);
-			TimetableExport::getRoomsTimetable(ch);
+			CachedSchedule::update(ch);
 
 			QString toh=outputDirectory;
 			if(toh!="" && toh.count()>=1 && toh.endsWith(FILE_SEP)){
@@ -1438,9 +1426,7 @@ int main(int argc, char **argv)
 			QString tmp;
 			c.fitness(gt.rules, &tmp);
 			
-			TimetableExport::getStudentsTimetable(c);
-			TimetableExport::getTeachersTimetable(c);
-			TimetableExport::getRoomsTimetable(c);
+			CachedSchedule::update(c);
 
 			TimetableExport::writeSimulationResultsCommandLine(NULL, outputDirectory);
 		}
