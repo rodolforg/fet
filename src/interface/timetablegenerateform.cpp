@@ -58,6 +58,20 @@ int initialOrderOfActivitiesIndices[MAX_ACTIVITIES];
 
 QString getActivityDetailedDescription(const Rules& r, int id);
 
+
+static QString getBasename(){
+	QFileInfo input(INPUT_FILENAME_XML);
+	if (input.suffix() == "fet")
+		return input.baseName();
+	return input.fileName();
+}
+
+static QString getBasenameOrDefault(){
+	if (INPUT_FILENAME_XML.isEmpty())
+		return "unnamed";
+	return getBasename();
+}
+
 void GenerateThread::run()
 {
 	const int INF=2000000000;
@@ -204,14 +218,7 @@ void TimetableGenerateForm::stop()
 	
 	QString kk;
 	kk=FILE_SEP;
-	if(INPUT_FILENAME_XML=="")
-		kk.append("unnamed");
-	else{
-		kk.append(INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1));
-
-		if(kk.right(4)==".fet")
-			kk=kk.left(kk.length()-4);
-	}
+	kk.append(getBasenameOrDefault());
 	kk.append("-single");
 
 	s+=TimetableGenerateForm::tr("The partial results were saved in the directory %1")
@@ -314,14 +321,7 @@ void TimetableGenerateForm::stopHighest()
 	
 	QString kk;
 	kk=FILE_SEP;
-	if(INPUT_FILENAME_XML=="")
-		kk.append("unnamed");
-	else{
-		kk.append(INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1));
-
-		if(kk.right(4)==".fet")
-			kk=kk.left(kk.length()-4);
-	}
+	kk.append(getBasenameOrDefault());
 	kk.append("-highest");
 
 	s+=TimetableGenerateForm::tr("The partial highest-stage results were saved in the directory %1")
@@ -422,14 +422,7 @@ void TimetableGenerateForm::impossibleToSolve()
 
 	QString kk;
 	kk=FILE_SEP;
-	if(INPUT_FILENAME_XML=="")
-		kk.append("unnamed");
-	else{
-		kk.append(INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1));
-
-		if(kk.right(4)==".fet")
-			kk=kk.left(kk.length()-4);
-	}
+	kk.append(getBasenameOrDefault());
 	kk.append("-single");
 
 	s+=TimetableGenerateForm::tr("The partial results were saved in the directory %1")
@@ -499,14 +492,7 @@ void TimetableGenerateForm::simulationFinished()
 
 	QString kk;
 	kk=FILE_SEP;
-	if(INPUT_FILENAME_XML=="")
-		kk.append("unnamed");
-	else{
-		kk.append(INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1));
-
-		if(kk.right(4)==".fet")
-			kk=kk.left(kk.length()-4);
-	}
+	kk.append(getBasenameOrDefault());
 	kk.append("-single");
 
 /*	QMessageBox::information(this, TimetableGenerateForm::tr("FET information"),
@@ -679,14 +665,7 @@ void TimetableGenerateForm::write(){
 
 	QString kk;
 	kk=FILE_SEP;
-	if(INPUT_FILENAME_XML=="")
-		kk.append("unnamed");
-	else{
-		kk.append(INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1));
-
-		if(kk.right(4)==".fet")
-			kk=kk.left(kk.length()-4);
-	}
+	kk.append(getBasenameOrDefault());
 	kk.append("-single");
 
 	QMessageBox::information(this, TimetableGenerateForm::tr("FET information"),
@@ -726,14 +705,7 @@ void TimetableGenerateForm::writeHighestStage(){
 
 	QString kk;
 	kk=FILE_SEP;
-	if(INPUT_FILENAME_XML=="")
-		kk.append("unnamed");
-	else{
-		kk.append(INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1));
-
-		if(kk.right(4)==".fet")
-			kk=kk.left(kk.length()-4);
-	}
+	kk.append(getBasenameOrDefault());
 	kk.append("-highest");
 
 	QMessageBox::information(this, TimetableGenerateForm::tr("FET information"),
