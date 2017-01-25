@@ -708,7 +708,7 @@ void AdvancedLockUnlockForm::lockEndStudentsDay(QWidget* parent)
 	for(int sg=0; sg<gt.rules.nInternalSubgroups; sg++){
 		for(int d=0; d<gt.rules.nDaysPerWeek; d++){
 			for(int h=gt.rules.nHoursPerDay-1; h>=0; h--){
-				int ai=students_timetable_weekly[sg][d][h];
+				int ai=CachedSchedule::students_timetable_weekly[sg][d][h];
 				
 				if(ai!=UNALLOCATED_ACTIVITY){
 					Activity* act=&gt.rules.internalActivitiesList[ai];
@@ -990,7 +990,7 @@ void AdvancedLockUnlockForm::unlockEndStudentsDay(QWidget* parent)
 	for(int sg=0; sg<gt.rules.nInternalSubgroups; sg++){
 		for(int d=0; d<gt.rules.nDaysPerWeek; d++){
 			for(int h=gt.rules.nHoursPerDay-1; h>=0; h--){
-				int ai=students_timetable_weekly[sg][d][h];
+				int ai=CachedSchedule::students_timetable_weekly[sg][d][h];
 				
 				if(ai!=UNALLOCATED_ACTIVITY){
 					Activity* act=&gt.rules.internalActivitiesList[ai];
