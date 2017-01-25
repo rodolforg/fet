@@ -28,6 +28,8 @@
 #include "fet.h"
 #include "solution.h"
 
+#include "timetableexport.h"
+
 #include "matrix.h"
 
 #include "lockunlock.h"
@@ -58,9 +60,6 @@
 #include <QBrush>
 #include <QColor>
 //end by Marco Vassura
-
-extern bool students_schedule_ready;
-extern bool teachers_schedule_ready;
 
 extern bool simulation_running;
 
@@ -219,11 +218,10 @@ void TimetableViewStudentsForm::resizeRowsAfterShow()
 
 void TimetableViewStudentsForm::yearChanged(const QString &yearName)
 {
-	if(!(students_schedule_ready && teachers_schedule_ready)){
+	if(!CachedSchedule::isValid()){
 		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view students timetable dialog - please generate a new timetable"));
 		return;
 	}
-	assert(students_schedule_ready && teachers_schedule_ready);
 
 	if(yearName==QString())
 		return;
@@ -250,11 +248,10 @@ void TimetableViewStudentsForm::yearChanged(const QString &yearName)
 
 void TimetableViewStudentsForm::groupChanged(const QString &groupName)
 {
-	if(!(students_schedule_ready && teachers_schedule_ready)){
+	if(!CachedSchedule::isValid()){
 		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view students timetable dialog - please generate a new timetable"));
 		return;
 	}
-	assert(students_schedule_ready && teachers_schedule_ready);
 
 	if(groupName==QString())
 		return;
@@ -301,12 +298,11 @@ void TimetableViewStudentsForm::subgroupChanged(const QString &subgroupName)
 }
 
 void TimetableViewStudentsForm::updateStudentsTimetableTable(){
-	if(!(students_schedule_ready && teachers_schedule_ready)){
+	if(!CachedSchedule::isValid()){
 		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view students timetable dialog - please generate a new timetable "
 		"or close the timetable view students dialog"));
 		return;
 	}
-	assert(students_schedule_ready && teachers_schedule_ready);
 	
 	if(gt.rules.nInternalRooms!=gt.rules.roomsList.count()){
 		QMessageBox::warning(this, tr("FET warning"), tr("Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it"));
@@ -500,11 +496,10 @@ void TimetableViewStudentsForm::detailActivity(QTableWidgetItem* item)
 		return;
 	}
 
-	if(!(students_schedule_ready && teachers_schedule_ready)){
+	if(!CachedSchedule::isValid()){
 		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view students timetable dialog - please generate a new timetable"));
 		return;
 	}
-	assert(students_schedule_ready && teachers_schedule_ready);
 
 	if(gt.rules.nInternalRooms!=gt.rules.roomsList.count()){
 		QMessageBox::warning(this, tr("FET warning"), tr("Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it"));
@@ -622,11 +617,10 @@ void TimetableViewStudentsForm::lock(bool lockTime, bool lockSpace)
 	}
 
 	//find subgroup index
-	if(!(students_schedule_ready && teachers_schedule_ready)){
+	if(!CachedSchedule::isValid()){
 		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view students timetable dialog - please generate a new timetable"));
 		return;
 	}
-	assert(students_schedule_ready && teachers_schedule_ready);
 
 	if(gt.rules.nInternalRooms!=gt.rules.roomsList.count()){
 		QMessageBox::warning(this, tr("FET warning"), tr("Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it"));

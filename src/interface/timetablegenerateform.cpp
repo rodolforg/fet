@@ -178,9 +178,7 @@ void TimetableGenerateForm::stop()
 	QString tmp;
 	c.fitness(gt.rules, &tmp);
 
-	TimetableExport::getStudentsTimetable(c);
-	TimetableExport::getTeachersTimetable(c);
-	TimetableExport::getRoomsTimetable(c);
+	CachedSchedule::update(c);
 
 	//update the string representing the conflicts
 	conflictsStringTitle=TimetableGenerateForm::tr("Conflicts", "Title of dialog");
@@ -290,9 +288,7 @@ void TimetableGenerateForm::stopHighest()
 	QString tmp;
 	c.fitness(gt.rules, &tmp);
 
-	TimetableExport::getStudentsTimetable(c);
-	TimetableExport::getTeachersTimetable(c);
-	TimetableExport::getRoomsTimetable(c);
+	CachedSchedule::update(c);
 
 	//update the string representing the conflicts
 	conflictsStringTitle=TimetableGenerateForm::tr("Conflicts", "Title of dialog");
@@ -400,9 +396,7 @@ void TimetableGenerateForm::impossibleToSolve()
 	QString tmp;
 	c.fitness(gt.rules, &tmp);
 
-	TimetableExport::getStudentsTimetable(c);
-	TimetableExport::getTeachersTimetable(c);
-	TimetableExport::getRoomsTimetable(c);
+	CachedSchedule::update(c);
 
 	//update the string representing the conflicts
 	conflictsStringTitle=TimetableGenerateForm::tr("Conflicts", "Title of dialog");
@@ -481,9 +475,7 @@ void TimetableGenerateForm::simulationFinished()
 	QString tmp;
 	c.fitness(gt.rules, &tmp);
 
-	TimetableExport::getStudentsTimetable(c);
-	TimetableExport::getTeachersTimetable(c);
-	TimetableExport::getRoomsTimetable(c);
+	CachedSchedule::update(c);
 
 	//update the string representing the conflicts
 	conflictsStringTitle=TimetableGenerateForm::tr("Soft conflicts", "Title of dialog");
@@ -664,9 +656,7 @@ void TimetableGenerateForm::write(){
 	QString tmp;
 	c.fitness(gt.rules, &tmp);
 
-	TimetableExport::getStudentsTimetable(c);
-	TimetableExport::getTeachersTimetable(c);
-	TimetableExport::getRoomsTimetable(c);
+	CachedSchedule::update(c);
 
 	//update the string representing the conflicts
 	conflictsStringTitle=TimetableGenerateForm::tr("Conflicts", "Title of dialog");
@@ -713,9 +703,7 @@ void TimetableGenerateForm::writeHighestStage(){
 	QString tmp;
 	c.fitness(gt.rules, &tmp);
 
-	TimetableExport::getStudentsTimetable(c);
-	TimetableExport::getTeachersTimetable(c);
-	TimetableExport::getRoomsTimetable(c);
+	CachedSchedule::update(c);
 
 	//update the string representing the conflicts
 	conflictsStringTitle=TimetableGenerateForm::tr("Conflicts", "Title of dialog");

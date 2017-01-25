@@ -76,9 +76,6 @@ using namespace std;
 //Represents the current status of the simulation - running or stopped.
 extern bool simulation_running;
 
-extern bool students_schedule_ready;
-extern bool teachers_schedule_ready;
-extern bool rooms_schedule_ready;
 
 extern Solution best_solution;
 extern bool LANGUAGE_STYLE_RIGHT_TO_LEFT;
@@ -206,6 +203,26 @@ const QString RANDOM_SEED_FILENAME_BEFORE="random_seed_before.txt";
 const QString RANDOM_SEED_FILENAME_AFTER="random_seed_after.txt";
 
 QString generationLocalizedTime=QString(""); //to be used in timetableprintform.cpp
+
+bool students_schedule_ready;
+bool teachers_schedule_ready;
+bool rooms_schedule_ready;
+
+void CachedSchedule::invalidate() {
+	students_schedule_ready = false;
+	teachers_schedule_ready = false;
+	rooms_schedule_ready = false;
+}
+
+bool CachedSchedule::isValid() {
+	return students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready;
+}
+
+void CachedSchedule::update(const Solution &solution) {
+	TimetableExport::getStudentsTimetable(solution);
+	TimetableExport::getTeachersTimetable(solution);
+	TimetableExport::getRoomsTimetable(solution);
+}
 
 static QString getBasename(){
 	QFileInfo input(INPUT_FILENAME_XML);
@@ -357,7 +374,7 @@ void TimetableExport::writeSimulationResults(QWidget* parent){
 void TimetableExport::doWriteResults(QWidget *parent, QString filenamePrefix)
 {
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 	assert(TIMETABLE_HTML_LEVEL>=0);
 	assert(TIMETABLE_HTML_LEVEL<=7);
 
@@ -662,7 +679,7 @@ void TimetableExport::writeRandomSeedFile(QWidget* parent, const QString& filena
 }
 
 void TimetableExport::writeTimetableDataFile(QWidget* parent, const QString& filename){
-	if(!students_schedule_ready || !teachers_schedule_ready || !rooms_schedule_ready){
+	if(!CachedSchedule::isValid()){
 		IrreconcilableCriticalMessage::critical(parent, tr("FET - Critical"), tr("Timetable not generated - cannot save it - this should not happen (please report bug)"));
 		return;
 	}
@@ -989,7 +1006,7 @@ void TimetableExport::writeRandomSeedCommandLine(QWidget* parent, const QString&
 //by Volker Dirr (timetabling.de)
 void TimetableExport::writeConflictsTxt(QWidget* parent, const QString& filename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLE_CONFLICTS){
 		if(QFile::exists(filename))
@@ -1047,7 +1064,7 @@ void TimetableExport::writeConflictsTxt(QWidget* parent, const QString& filename
 
 void TimetableExport::writeSubgroupsTimetableXml(QWidget* parent, const QString& xmlfilename){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_XML || !WRITE_TIMETABLES_SUBGROUPS){
 		if(QFile::exists(xmlfilename))
@@ -1113,7 +1130,7 @@ void TimetableExport::writeSubgroupsTimetableXml(QWidget* parent, const QString&
 
 void TimetableExport::writeTeachersTimetableXml(QWidget* parent, const QString& xmlfilename){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_XML || !WRITE_TIMETABLES_TEACHERS){
 		if(QFile::exists(xmlfilename))
@@ -1177,7 +1194,7 @@ void TimetableExport::writeTeachersTimetableXml(QWidget* parent, const QString& 
 
 void TimetableExport::writeActivitiesTimetableXml(QWidget* parent, const QString& xmlfilename){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_XML || !WRITE_TIMETABLES_ACTIVITIES){
 		if(QFile::exists(xmlfilename))
@@ -1240,7 +1257,7 @@ void TimetableExport::writeActivitiesTimetableXml(QWidget* parent, const QString
 // writing the index html file by Volker Dirr.
 void TimetableExport::writeIndexHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	bool _writeAtLeastATimetable = writeAtLeastATimetable();
 
@@ -1576,7 +1593,7 @@ void TimetableExport::writeIndexHtml(QWidget* parent, const QString& htmlfilenam
 // writing the stylesheet in css format to a file by Volker Dirr.
 void TimetableExport::writeStylesheetCss(QWidget* parent, const QString& cssfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 	
 	bool _writeAtLeastATimetable = writeAtLeastATimetable();
 
@@ -1825,7 +1842,7 @@ void TimetableExport::writeStylesheetCss(QWidget* parent, const QString& cssfile
 //XHTML generation code modified by Volker Dirr (timetabling.de) from old html generation code
 void TimetableExport::writeSubgroupsTimetableDaysHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_DAYS_HORIZONTAL || !WRITE_TIMETABLES_SUBGROUPS){
 		if(QFile::exists(htmlfilename))
@@ -1881,7 +1898,7 @@ void TimetableExport::writeSubgroupsTimetableDaysHorizontalHtml(QWidget* parent,
 //XHTML generation code modified by Volker Dirr (timetabling.de) from old html generation code
 void TimetableExport::writeSubgroupsTimetableDaysVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_DAYS_VERTICAL || !WRITE_TIMETABLES_SUBGROUPS){
 		if(QFile::exists(htmlfilename))
@@ -1938,7 +1955,7 @@ void TimetableExport::writeSubgroupsTimetableDaysVerticalHtml(QWidget* parent, c
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeSubgroupsTimetableTimeVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_VERTICAL || !WRITE_TIMETABLES_SUBGROUPS){
 		if(QFile::exists(htmlfilename))
@@ -1975,7 +1992,7 @@ void TimetableExport::writeSubgroupsTimetableTimeVerticalHtml(QWidget* parent, c
 //XHTML generation code modified by Volker Dirr (timetabling.de) from old html generation code
 void TimetableExport::writeSubgroupsTimetableTimeHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_HORIZONTAL || !WRITE_TIMETABLES_SUBGROUPS){
 		if(QFile::exists(htmlfilename))
@@ -2012,7 +2029,7 @@ void TimetableExport::writeSubgroupsTimetableTimeHorizontalHtml(QWidget* parent,
 // by Volker Dirr
 void TimetableExport::writeSubgroupsTimetableTimeVerticalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_VERTICAL || !WRITE_TIMETABLES_SUBGROUPS){
 		if(QFile::exists(htmlfilename))
@@ -2053,7 +2070,7 @@ void TimetableExport::writeSubgroupsTimetableTimeVerticalDailyHtml(QWidget* pare
 // by Volker Dirr
 void TimetableExport::writeSubgroupsTimetableTimeHorizontalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_HORIZONTAL || !WRITE_TIMETABLES_SUBGROUPS){
 		if(QFile::exists(htmlfilename))
@@ -2094,7 +2111,7 @@ void TimetableExport::writeSubgroupsTimetableTimeHorizontalDailyHtml(QWidget* pa
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeGroupsTimetableDaysHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_DAYS_HORIZONTAL || !WRITE_TIMETABLES_GROUPS){
 		if(QFile::exists(htmlfilename))
@@ -2148,7 +2165,7 @@ void TimetableExport::writeGroupsTimetableDaysHorizontalHtml(QWidget* parent, co
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeGroupsTimetableDaysVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_DAYS_VERTICAL || !WRITE_TIMETABLES_GROUPS){
 		if(QFile::exists(htmlfilename))
@@ -2202,7 +2219,7 @@ void TimetableExport::writeGroupsTimetableDaysVerticalHtml(QWidget* parent, cons
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeGroupsTimetableTimeVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_VERTICAL || !WRITE_TIMETABLES_GROUPS){
 		if(QFile::exists(htmlfilename))
@@ -2241,7 +2258,7 @@ void TimetableExport::writeGroupsTimetableTimeVerticalHtml(QWidget* parent, cons
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeGroupsTimetableTimeHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_HORIZONTAL || !WRITE_TIMETABLES_GROUPS){
 		if(QFile::exists(htmlfilename))
@@ -2279,7 +2296,7 @@ void TimetableExport::writeGroupsTimetableTimeHorizontalHtml(QWidget* parent, co
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeGroupsTimetableTimeVerticalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_VERTICAL || !WRITE_TIMETABLES_GROUPS){
 		if(QFile::exists(htmlfilename))
@@ -2320,7 +2337,7 @@ void TimetableExport::writeGroupsTimetableTimeVerticalDailyHtml(QWidget* parent,
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeGroupsTimetableTimeHorizontalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_HORIZONTAL || !WRITE_TIMETABLES_GROUPS){
 		if(QFile::exists(htmlfilename))
@@ -2363,7 +2380,7 @@ void TimetableExport::writeGroupsTimetableTimeHorizontalDailyHtml(QWidget* paren
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeYearsTimetableDaysHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_DAYS_HORIZONTAL || !WRITE_TIMETABLES_YEARS){
 		if(QFile::exists(htmlfilename))
@@ -2412,7 +2429,7 @@ void TimetableExport::writeYearsTimetableDaysHorizontalHtml(QWidget* parent, con
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeYearsTimetableDaysVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_DAYS_VERTICAL || !WRITE_TIMETABLES_YEARS){
 		if(QFile::exists(htmlfilename))
@@ -2461,7 +2478,7 @@ void TimetableExport::writeYearsTimetableDaysVerticalHtml(QWidget* parent, const
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeYearsTimetableTimeVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_VERTICAL || !WRITE_TIMETABLES_YEARS){
 		if(QFile::exists(htmlfilename))
@@ -2500,7 +2517,7 @@ void TimetableExport::writeYearsTimetableTimeVerticalHtml(QWidget* parent, const
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeYearsTimetableTimeHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_HORIZONTAL || !WRITE_TIMETABLES_YEARS){
 		if(QFile::exists(htmlfilename))
@@ -2539,7 +2556,7 @@ void TimetableExport::writeYearsTimetableTimeHorizontalHtml(QWidget* parent, con
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeYearsTimetableTimeVerticalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_VERTICAL || !WRITE_TIMETABLES_YEARS){
 		if(QFile::exists(htmlfilename))
@@ -2580,7 +2597,7 @@ void TimetableExport::writeYearsTimetableTimeVerticalDailyHtml(QWidget* parent, 
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeYearsTimetableTimeHorizontalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_HORIZONTAL || !WRITE_TIMETABLES_YEARS){
 		if(QFile::exists(htmlfilename))
@@ -2623,7 +2640,7 @@ void TimetableExport::writeYearsTimetableTimeHorizontalDailyHtml(QWidget* parent
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeAllActivitiesTimetableDaysHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_DAYS_HORIZONTAL || !WRITE_TIMETABLES_ACTIVITIES){
 		if(QFile::exists(htmlfilename))
@@ -2657,7 +2674,7 @@ void TimetableExport::writeAllActivitiesTimetableDaysHorizontalHtml(QWidget* par
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeAllActivitiesTimetableDaysVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_DAYS_VERTICAL || !WRITE_TIMETABLES_ACTIVITIES){
 		if(QFile::exists(htmlfilename))
@@ -2691,7 +2708,7 @@ void TimetableExport::writeAllActivitiesTimetableDaysVerticalHtml(QWidget* paren
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeAllActivitiesTimetableTimeVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_VERTICAL || !WRITE_TIMETABLES_ACTIVITIES){
 		if(QFile::exists(htmlfilename))
@@ -2727,7 +2744,7 @@ void TimetableExport::writeAllActivitiesTimetableTimeVerticalHtml(QWidget* paren
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeAllActivitiesTimetableTimeHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_HORIZONTAL || !WRITE_TIMETABLES_ACTIVITIES){
 		if(QFile::exists(htmlfilename))
@@ -2763,7 +2780,7 @@ void TimetableExport::writeAllActivitiesTimetableTimeHorizontalHtml(QWidget* par
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeAllActivitiesTimetableTimeVerticalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_VERTICAL || !WRITE_TIMETABLES_ACTIVITIES){
 		if(QFile::exists(htmlfilename))
@@ -2802,7 +2819,7 @@ void TimetableExport::writeAllActivitiesTimetableTimeVerticalDailyHtml(QWidget* 
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeAllActivitiesTimetableTimeHorizontalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_HORIZONTAL || !WRITE_TIMETABLES_ACTIVITIES){
 		if(QFile::exists(htmlfilename))
@@ -2845,7 +2862,7 @@ void TimetableExport::writeAllActivitiesTimetableTimeHorizontalDailyHtml(QWidget
 //XHTML generation code modified by Volker Dirr (timetabling.de) from old html generation code
 void TimetableExport::writeTeachersTimetableDaysHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_DAYS_HORIZONTAL || !WRITE_TIMETABLES_TEACHERS){
 		if(QFile::exists(htmlfilename))
@@ -2892,7 +2909,7 @@ void TimetableExport::writeTeachersTimetableDaysHorizontalHtml(QWidget* parent, 
 //XHTML generation code modified by Volker Dirr (timetabling.de) from old html generation code
 void TimetableExport::writeTeachersTimetableDaysVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_DAYS_VERTICAL || !WRITE_TIMETABLES_TEACHERS){
 		if(QFile::exists(htmlfilename))
@@ -2938,7 +2955,7 @@ void TimetableExport::writeTeachersTimetableDaysVerticalHtml(QWidget* parent, co
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeTeachersTimetableTimeVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_VERTICAL || !WRITE_TIMETABLES_TEACHERS){
 		if(QFile::exists(htmlfilename))
@@ -2973,7 +2990,7 @@ void TimetableExport::writeTeachersTimetableTimeVerticalHtml(QWidget* parent, co
 //XHTML generation code modified by Volker Dirr (timetabling.de) from old html generation code
 void TimetableExport::writeTeachersTimetableTimeHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_HORIZONTAL || !WRITE_TIMETABLES_TEACHERS){
 		if(QFile::exists(htmlfilename))
@@ -3008,7 +3025,7 @@ void TimetableExport::writeTeachersTimetableTimeHorizontalHtml(QWidget* parent, 
 //by Volker Dirr
 void TimetableExport::writeTeachersTimetableTimeVerticalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_VERTICAL || !WRITE_TIMETABLES_TEACHERS){
 		if(QFile::exists(htmlfilename))
@@ -3048,7 +3065,7 @@ void TimetableExport::writeTeachersTimetableTimeVerticalDailyHtml(QWidget* paren
 //by Volker Dirr
 void TimetableExport::writeTeachersTimetableTimeHorizontalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_HORIZONTAL || !WRITE_TIMETABLES_TEACHERS){
 		if(QFile::exists(htmlfilename))
@@ -3089,7 +3106,7 @@ void TimetableExport::writeTeachersTimetableTimeHorizontalDailyHtml(QWidget* par
 //writing the rooms' timetable html format to a file by Volker Dirr
 void TimetableExport::writeRoomsTimetableDaysHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_DAYS_HORIZONTAL || !WRITE_TIMETABLES_ROOMS){
 		if(QFile::exists(htmlfilename))
@@ -3139,7 +3156,7 @@ void TimetableExport::writeRoomsTimetableDaysHorizontalHtml(QWidget* parent, con
 //writing the rooms' timetable html format to a file by Volker Dirr
 void TimetableExport::writeRoomsTimetableDaysVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_DAYS_VERTICAL || !WRITE_TIMETABLES_ROOMS){
 		if(QFile::exists(htmlfilename))
@@ -3191,7 +3208,7 @@ void TimetableExport::writeRoomsTimetableDaysVerticalHtml(QWidget* parent, const
 //writing the rooms' timetable html format to a file by Volker Dirr
 void TimetableExport::writeRoomsTimetableTimeVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_VERTICAL || !WRITE_TIMETABLES_ROOMS){
 		if(QFile::exists(htmlfilename))
@@ -3231,7 +3248,7 @@ void TimetableExport::writeRoomsTimetableTimeVerticalHtml(QWidget* parent, const
 // writing the rooms' timetable html format to a file by Volker Dirr
 void TimetableExport::writeRoomsTimetableTimeHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_HORIZONTAL || !WRITE_TIMETABLES_ROOMS){
 		if(QFile::exists(htmlfilename))
@@ -3272,7 +3289,7 @@ void TimetableExport::writeRoomsTimetableTimeHorizontalHtml(QWidget* parent, con
 //by Volker Dirr
 void TimetableExport::writeRoomsTimetableTimeVerticalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_VERTICAL || !WRITE_TIMETABLES_ROOMS){
 		if(QFile::exists(htmlfilename))
@@ -3317,7 +3334,7 @@ void TimetableExport::writeRoomsTimetableTimeVerticalDailyHtml(QWidget* parent, 
 //by Volker Dirr
 void TimetableExport::writeRoomsTimetableTimeHorizontalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_HORIZONTAL || !WRITE_TIMETABLES_ROOMS){
 		if(QFile::exists(htmlfilename))
@@ -3365,7 +3382,7 @@ void TimetableExport::writeRoomsTimetableTimeHorizontalDailyHtml(QWidget* parent
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeSubjectsTimetableDaysHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_DAYS_HORIZONTAL || !WRITE_TIMETABLES_SUBJECTS){
 		if(QFile::exists(htmlfilename))
@@ -3413,7 +3430,7 @@ void TimetableExport::writeSubjectsTimetableDaysHorizontalHtml(QWidget* parent, 
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeSubjectsTimetableDaysVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_DAYS_VERTICAL || !WRITE_TIMETABLES_SUBJECTS){
 		if(QFile::exists(htmlfilename))
@@ -3460,7 +3477,7 @@ void TimetableExport::writeSubjectsTimetableDaysVerticalHtml(QWidget* parent, co
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeSubjectsTimetableTimeVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_VERTICAL || !WRITE_TIMETABLES_SUBJECTS){
 		if(QFile::exists(htmlfilename))
@@ -3496,7 +3513,7 @@ void TimetableExport::writeSubjectsTimetableTimeVerticalHtml(QWidget* parent, co
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeSubjectsTimetableTimeHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_HORIZONTAL || !WRITE_TIMETABLES_SUBJECTS){
 		if(QFile::exists(htmlfilename))
@@ -3533,7 +3550,7 @@ void TimetableExport::writeSubjectsTimetableTimeHorizontalHtml(QWidget* parent, 
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeSubjectsTimetableTimeVerticalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_VERTICAL || !WRITE_TIMETABLES_SUBJECTS){
 		if(QFile::exists(htmlfilename))
@@ -3575,7 +3592,7 @@ void TimetableExport::writeSubjectsTimetableTimeVerticalDailyHtml(QWidget* paren
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeSubjectsTimetableTimeHorizontalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_HORIZONTAL || !WRITE_TIMETABLES_SUBJECTS){
 		if(QFile::exists(htmlfilename))
@@ -3618,7 +3635,7 @@ void TimetableExport::writeSubjectsTimetableTimeHorizontalDailyHtml(QWidget* par
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeActivityTagsTimetableDaysHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_DAYS_HORIZONTAL || !WRITE_TIMETABLES_ACTIVITY_TAGS){
 		if(QFile::exists(htmlfilename))
@@ -3666,7 +3683,7 @@ void TimetableExport::writeActivityTagsTimetableDaysHorizontalHtml(QWidget* pare
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeActivityTagsTimetableDaysVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_DAYS_VERTICAL || !WRITE_TIMETABLES_ACTIVITY_TAGS){
 		if(QFile::exists(htmlfilename))
@@ -3713,7 +3730,7 @@ void TimetableExport::writeActivityTagsTimetableDaysVerticalHtml(QWidget* parent
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeActivityTagsTimetableTimeVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_VERTICAL || !WRITE_TIMETABLES_ACTIVITY_TAGS){
 		if(QFile::exists(htmlfilename))
@@ -3749,7 +3766,7 @@ void TimetableExport::writeActivityTagsTimetableTimeVerticalHtml(QWidget* parent
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeActivityTagsTimetableTimeHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_HORIZONTAL || !WRITE_TIMETABLES_ACTIVITY_TAGS){
 		if(QFile::exists(htmlfilename))
@@ -3786,7 +3803,7 @@ void TimetableExport::writeActivityTagsTimetableTimeHorizontalHtml(QWidget* pare
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeActivityTagsTimetableTimeVerticalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_VERTICAL || !WRITE_TIMETABLES_ACTIVITY_TAGS){
 		if(QFile::exists(htmlfilename))
@@ -3828,7 +3845,7 @@ void TimetableExport::writeActivityTagsTimetableTimeVerticalDailyHtml(QWidget* p
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeActivityTagsTimetableTimeHorizontalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_TIME_HORIZONTAL || !WRITE_TIMETABLES_ACTIVITY_TAGS){
 		if(QFile::exists(htmlfilename))
@@ -3869,7 +3886,7 @@ void TimetableExport::writeActivityTagsTimetableTimeHorizontalDailyHtml(QWidget*
 //Print the teachers free periods. Code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeTeachersFreePeriodsTimetableDaysHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_DAYS_HORIZONTAL || !WRITE_TIMETABLES_TEACHERS_FREE_PERIODS){
 		if(QFile::exists(htmlfilename))
@@ -3917,7 +3934,7 @@ void TimetableExport::writeTeachersFreePeriodsTimetableDaysHorizontalHtml(QWidge
 //XHTML generation code by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeTeachersFreePeriodsTimetableDaysVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_DAYS_VERTICAL || !WRITE_TIMETABLES_TEACHERS_FREE_PERIODS){
 		if(QFile::exists(htmlfilename))
@@ -3965,7 +3982,7 @@ void TimetableExport::writeTeachersFreePeriodsTimetableDaysVerticalHtml(QWidget*
 //Code contributed by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeTeachersStatisticsHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 	
 	if(!WRITE_TIMETABLES_STATISTICS || !WRITE_TIMETABLES_TEACHERS){
 		if(QFile::exists(htmlfilename))
@@ -4001,7 +4018,7 @@ void TimetableExport::writeTeachersStatisticsHtml(QWidget* parent, const QString
 //Code contributed by Volker Dirr (http://timetabling.de/)
 void TimetableExport::writeStudentsStatisticsHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	if(!WRITE_TIMETABLES_STATISTICS || !(WRITE_TIMETABLES_YEARS || WRITE_TIMETABLES_GROUPS || WRITE_TIMETABLES_SUBGROUPS) ){
 		if(QFile::exists(htmlfilename))
@@ -4051,7 +4068,7 @@ void TimetableExport::computeHashForIDsTimetable(){
 		}
 	}*/
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 	hashStudentIDsTimetable.clear();
 	int cnt=1;
 	for(int i=0; i<gt.rules.augmentedYearsList.size(); i++){
@@ -4116,7 +4133,7 @@ void TimetableExport::computeHashActivityColorBySubject(){
 	activeHashActivityColorBySubject.clear();
 	
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	QSet<QString> alreadyAdded;
 	
@@ -4149,7 +4166,7 @@ void TimetableExport::computeHashActivityColorBySubjectAndStudents(){
 	activeHashActivityColorBySubjectAndStudents.clear();
 	
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 
 	QSet<QString> alreadyAdded;
 	
@@ -4180,7 +4197,7 @@ void TimetableExport::computeHashActivityColorBySubjectAndStudents(){
 	qWarning("compute hash for colors");
 	hashColorStringIDsTimetable.clear();
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
-	assert(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready);
+	assert(CachedSchedule::isValid());
 	QSet<QString> alreadyAddedString;
 	for(int i=0; i<gt.rules.nInternalActivities; i++) {
 		Activity* act=&gt.rules.internalActivitiesList[i];

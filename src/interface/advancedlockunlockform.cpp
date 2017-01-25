@@ -33,12 +33,9 @@
 #include "timetable_defs.h"
 #include "timetable.h"
 #include "solution.h"
+#include "timetableexport.h"
 
 #include "fet.h"
-
-extern bool students_schedule_ready;
-extern bool teachers_schedule_ready;
-extern bool rooms_schedule_ready;
 
 extern Solution best_solution;
 
@@ -68,7 +65,7 @@ const QString unlockEndStudentsDayConfirmationSettingsString=QString("AdvancedLo
 
 void AdvancedLockUnlockForm::lockDay(QWidget* parent)
 {
-	if(!students_schedule_ready || !teachers_schedule_ready || !rooms_schedule_ready){
+	if(!CachedSchedule::isValid()){
 		return;
 	}
 	
@@ -352,7 +349,7 @@ void AdvancedLockUnlockForm::lockDay(QWidget* parent)
 
 void AdvancedLockUnlockForm::unlockDay(QWidget* parent)
 {
-	if(!students_schedule_ready || !teachers_schedule_ready || !rooms_schedule_ready){
+	if(!CachedSchedule::isValid()){
 		return;
 	}
 	
@@ -620,7 +617,7 @@ void AdvancedLockUnlockForm::unlockDay(QWidget* parent)
 
 void AdvancedLockUnlockForm::lockEndStudentsDay(QWidget* parent)
 {
-	if(!students_schedule_ready || !teachers_schedule_ready || !rooms_schedule_ready){
+	if(!CachedSchedule::isValid()){
 		return;
 	}
 	
@@ -914,7 +911,7 @@ void AdvancedLockUnlockForm::lockEndStudentsDay(QWidget* parent)
 
 void AdvancedLockUnlockForm::unlockEndStudentsDay(QWidget* parent)
 {
-	if(!students_schedule_ready || !teachers_schedule_ready || !rooms_schedule_ready){
+	if(!CachedSchedule::isValid()){
 		return;
 	}
 	
@@ -1167,7 +1164,7 @@ void AdvancedLockUnlockForm::unlockEndStudentsDay(QWidget* parent)
 
 void AdvancedLockUnlockForm::lockAll(QWidget* parent)
 {
-	if(!students_schedule_ready || !teachers_schedule_ready || !rooms_schedule_ready){
+	if(!CachedSchedule::isValid()){
 		return;
 	}
 	
@@ -1437,7 +1434,7 @@ void AdvancedLockUnlockForm::lockAll(QWidget* parent)
 
 void AdvancedLockUnlockForm::unlockAll(QWidget* parent)
 {
-	if(!students_schedule_ready || !teachers_schedule_ready || !rooms_schedule_ready){
+	if(!CachedSchedule::isValid()){
 		return;
 	}
 	

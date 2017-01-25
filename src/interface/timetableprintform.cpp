@@ -51,9 +51,6 @@
 #endif
 
 extern Timetable gt;
-extern bool students_schedule_ready;
-extern bool teachers_schedule_ready;
-extern bool rooms_schedule_ready;
 
 extern QHash<int, int> hashActivityColorBySubject;
 extern QList<int> activeHashActivityColorBySubject;
@@ -107,9 +104,7 @@ const QString bottomPageMarginState="/bottom-page-margin-spin-box-value-state";
 void StartTimetablePrint::startTimetablePrint(QWidget* parent)
 {
 	if(gt.rules.initialized
-		&& students_schedule_ready
-		&& teachers_schedule_ready
-		&& rooms_schedule_ready
+		&& CachedSchedule::isValid()
 		&& gt.rules.nInternalTeachers==gt.rules.teachersList.count()
 		&& gt.rules.nInternalRooms==gt.rules.roomsList.count()
 		&& gt.rules.internalStructureComputed){
