@@ -250,8 +250,6 @@ using namespace std;
 
 bool simulation_running; //true if the user started an allocation of the timetable
 
-bool simulation_running_multi;
-
 QString conflictsString; //the string that contains a log of the broken constraints
 QString conflictsStringTitle;
 

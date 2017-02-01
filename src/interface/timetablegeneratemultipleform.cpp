@@ -47,9 +47,6 @@ static QSemaphore semaphoreTimetableFinished;
 
 static QSemaphore semaphoreTimetableStarted;
 
-//Represents the current status of the simulation - running or stopped.
-extern bool simulation_running_multi;
-
 Generate genMulti(gt);
 
 static int nTimetables;
