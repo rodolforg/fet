@@ -193,6 +193,25 @@ const QString RANDOM_SEED_FILENAME_AFTER="random_seed_after.txt";
 
 QString generationLocalizedTime=QString(""); //to be used in timetableprintform.cpp
 
+bool WRITE_TIMETABLE_CONFLICTS=true;
+
+bool WRITE_TIMETABLES_STATISTICS=true;
+bool WRITE_TIMETABLES_XML=true;
+bool WRITE_TIMETABLES_DAYS_HORIZONTAL=true;
+bool WRITE_TIMETABLES_DAYS_VERTICAL=true;
+bool WRITE_TIMETABLES_TIME_HORIZONTAL=true;
+bool WRITE_TIMETABLES_TIME_VERTICAL=true;
+
+bool WRITE_TIMETABLES_SUBGROUPS=true;
+bool WRITE_TIMETABLES_GROUPS=true;
+bool WRITE_TIMETABLES_YEARS=true;
+bool WRITE_TIMETABLES_TEACHERS=true;
+bool WRITE_TIMETABLES_TEACHERS_FREE_PERIODS=true;
+bool WRITE_TIMETABLES_ROOMS=true;
+bool WRITE_TIMETABLES_SUBJECTS=true;
+bool WRITE_TIMETABLES_ACTIVITY_TAGS=true;
+bool WRITE_TIMETABLES_ACTIVITIES=true;
+
 bool CachedSchedule::cached_schedule_ready = false;
 Solution CachedSchedule::cachedSolution;
 
