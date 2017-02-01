@@ -330,15 +330,15 @@ QString StudentsSubgroup::getDetailedDescriptionWithConstraints(const Rules &r) 
 
 bool yearsAscending(const StudentsYear* y1, const StudentsYear* y2)
 {
-	return y1->name < y2->name;
+	return y1->name.localeAwareCompare(y2->name) < 0;
 }
 
 bool groupsAscending(const StudentsGroup* g1, const StudentsGroup* g2)
 {
-	return g1->name < g2->name;
+	return g1->name.localeAwareCompare(g2->name) < 0;
 }
 
 bool subgroupsAscending(const StudentsSubgroup* s1, const StudentsSubgroup* s2)
 {
-	return s1->name < s2->name;
+	return s1->name.localeAwareCompare(s2->name) < 0;
 }

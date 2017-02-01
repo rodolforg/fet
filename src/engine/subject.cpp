@@ -94,5 +94,5 @@ QString Subject::getDetailedDescriptionWithConstraints(const Rules &r) const
 
 bool subjectsAscending(const Subject* s1, const Subject* s2)
 {
-	return s1->name < s2->name;
+	return s1->name.localeAwareCompare(s2->name) < 0;
 }

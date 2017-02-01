@@ -94,5 +94,5 @@ QString ActivityTag::getDetailedDescriptionWithConstraints(const Rules &r) const
 
 bool activityTagsAscending(const ActivityTag* st1, const ActivityTag* st2)
 {
-	return st1->name < st2->name;
+	return st1->name.localeAwareCompare(st2->name);
 }
