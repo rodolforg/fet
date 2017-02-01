@@ -2795,14 +2795,12 @@ if(threaded){
 		}
 		//////////////
 		
-		foundGoodSwap=false;
-	
 		assert(!swappedActivities[permutation[added_act]]);
 		swappedActivities[permutation[added_act]]=true;
 
 		nRestore=0;
 		ncallsrandomswap=0;
-		randomSwap(permutation[added_act], 0);
+		bool foundGoodSwap = randomSwap(permutation[added_act], 0);
 		
 		if(!foundGoodSwap){
 			if(impossibleActivity){
@@ -3258,7 +3256,7 @@ inline bool Generate::cmp::operator ()(int i, int j)
 
 #endif
 
-void Generate::randomSwap(int ai, int level){
+bool Generate::randomSwap(int ai, int level){
 	//cout<<"level=="<<level<<endl;
 	
 	if(level==0){
@@ -3278,11 +3276,11 @@ void Generate::randomSwap(int ai, int level){
 	}
 
 	if(level>=level_limit){
-		return;
+		return false;
 	}
 	
 	if(ncallsrandomswap>=limitcallsrandomswap)
-		return;
+		return false;
 		
 	/*for(int i=0; i<gt.rules.nHoursPerWeek; i++){
 		nMinDaysBroken[i]=0;
@@ -8910,8 +8908,7 @@ skip_here_if_already_allocated_in_time:
 			
 			moveActivity(ai, c.times[ai], newtime, c.rooms[ai], selectedRoom[newtime]);
 			
-			foundGoodSwap=true;
-			return;
+			return true;
 		}
 		///////////////////////////////
 		
@@ -9105,8 +9102,7 @@ if(this->isThreaded){
 			
 			moveActivity(ai, c.times[ai], newtime, c.rooms[ai], selectedRoom[newtime]);
 			
-			foundGoodSwap=true;
-			return;
+			return true;
 		}
 		else{
 			/*foreach(int ai2, conflActivities[newtime])
@@ -9114,13 +9110,11 @@ if(this->isThreaded){
 				
 			if(level==level_limit-1){
 				//cout<<"level_limit-1==level=="<<level<<", for activity with id "<<gt.rules.internalActivitiesList[ai].id<<" returning"<<endl;
-				foundGoodSwap=false;
-				break;
+				return false;
 			}
 			
 			if(ncallsrandomswap>=limitcallsrandomswap){
-				foundGoodSwap=false;
-				break;
+				return false;
 			}
 		
 			/*
@@ -9226,22 +9220,19 @@ if(this->isThreaded){
 				foreach(int a, conflActivities[newtime])
 					swappedActivities[a]=true;
 
-			foundGoodSwap=false;
-			
 			ok=false;
 			if(1){
 				assert(conflActivities[newtime].size()>0);
 				ok=true;
 				
 				foreach(int a, conflActivities[newtime]){
-					randomSwap(a, level+1);
+					bool foundGoodSwap = randomSwap(a, level+1);
 					if(!foundGoodSwap){
 						ok=false;
 						break;
 					}
 					assert(c.times[a]!=UNALLOCATED_TIME);
 					assert(foundGoodSwap);
-					foundGoodSwap=false;
 				}
 			}
 			
@@ -9250,8 +9241,7 @@ if(this->isThreaded){
 					assert(c.times[a]!=UNALLOCATED_TIME);
 				assert(c.times[ai]!=UNALLOCATED_TIME);
 			
-				foundGoodSwap=true;
-				return;
+				return true;
 			}
 
 			/*if(1)
@@ -9302,12 +9292,11 @@ if(this->isThreaded){
 			}
 			//////////////////////////////
 			
-			assert(!foundGoodSwap);
-			
 			if(level>=5) //7 also might be used? This is a value found practically.
-				return;
+				return false;
 		}
 	}
+	return false;
 }
 
 int Generate::getMaxActivitiesPlaced() const
