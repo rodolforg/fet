@@ -253,24 +253,6 @@ bool simulation_running; //true if the user started an allocation of the timetab
 QString conflictsString; //the string that contains a log of the broken constraints
 QString conflictsStringTitle;
 
-bool WRITE_TIMETABLE_CONFLICTS=true;
-
-bool WRITE_TIMETABLES_STATISTICS=true;
-bool WRITE_TIMETABLES_XML=true;
-bool WRITE_TIMETABLES_DAYS_HORIZONTAL=true;
-bool WRITE_TIMETABLES_DAYS_VERTICAL=true;
-bool WRITE_TIMETABLES_TIME_HORIZONTAL=true;
-bool WRITE_TIMETABLES_TIME_VERTICAL=true;
-
-bool WRITE_TIMETABLES_SUBGROUPS=true;
-bool WRITE_TIMETABLES_GROUPS=true;
-bool WRITE_TIMETABLES_YEARS=true;
-bool WRITE_TIMETABLES_TEACHERS=true;
-bool WRITE_TIMETABLES_TEACHERS_FREE_PERIODS=true;
-bool WRITE_TIMETABLES_ROOMS=true;
-bool WRITE_TIMETABLES_SUBJECTS=true;
-bool WRITE_TIMETABLES_ACTIVITY_TAGS=true;
-bool WRITE_TIMETABLES_ACTIVITIES=true;
 
 #ifndef FET_COMMAND_LINE
 #endif
