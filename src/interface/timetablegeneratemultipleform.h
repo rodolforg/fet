@@ -69,6 +69,9 @@ private slots:
 	void finished();
 	
 	void activityPlaced(int na);
+private:
+	//Represents the current status of the simulation - running or stopped.
+	bool simulation_running_multi;
 };
 
 #endif
