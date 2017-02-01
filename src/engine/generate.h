@@ -124,7 +124,8 @@ private:
 	int timeToHighestStage;
 	void moveActivity(int ai, int fromslot, int toslot, int fromroom, int toroom);
 	
-	void randomSwap(int ai, int level);
+	/// return true if a good swap was found
+	bool randomSwap(int ai, int level);
 
 signals:
 	void activityPlaced(int);
@@ -145,8 +146,6 @@ private:
 	bool isThreaded;
 
 	bool swappedActivities[MAX_ACTIVITIES];
-
-	bool foundGoodSwap;
 
 	//not sure, it might be necessary 2*... or even more
 	int restoreActIndex[4*MAX_ACTIVITIES]; //the index of the act. to restore
