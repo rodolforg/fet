@@ -365,6 +365,11 @@ QList<ActivitiesSameRoomIfConsecutive_item> asricList;
 Matrix1D<QList<ActivitiesSameRoomIfConsecutive_item*> > asricListForActivity;
 //bool computeActivitiesSameRoomIfConsecutive(QWidget* parent);
 
+bool SHOW_WARNING_FOR_SUBGROUPS_WITH_THE_SAME_ACTIVITIES=true;
+
+bool SHOW_WARNING_FOR_NOT_PERFECT_CONSTRAINTS=true;
+bool SHOW_WARNING_FOR_STUDENTS_MIN_HOURS_DAILY_WITH_ALLOW_EMPTY_DAYS=true;
+bool SHOW_WARNING_FOR_GROUP_ACTIVITIES_IN_INITIAL_ORDER=true;
 
 #ifndef FET_COMMAND_LINE
 extern QString initialOrderOfActivities;
