@@ -25,8 +25,6 @@
 #include <iostream>
 using namespace std;
 
-#ifndef FET_COMMAND_LINE
-
 #include "fetmainform.h"
 
 #include "randomseeddialog.h"
@@ -4667,5 +4665,3 @@ void FetMainForm::rules_contentsChanged()
 	setWindowModified(gt.rules.isModified());
 }
 
-
-#endif

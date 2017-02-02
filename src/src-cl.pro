@@ -21,7 +21,6 @@ SOURCES += \
 	engine/xmllog.cpp \
 	\
 	interface/fet.cpp \
-	interface/fetmainform.cpp \
 	interface/longtextmessagebox.cpp
 
 HEADERS += \
