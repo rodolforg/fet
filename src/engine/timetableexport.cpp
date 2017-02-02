@@ -95,8 +95,6 @@ static QList<int> activitiesForCurrentActivityTag[MAX_DAYS_PER_WEEK][MAX_HOURS_P
 
 static QList<int> activitiesAtTime[MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
 
-extern Rules rules2;
-
 const QString STRING_EMPTY_SLOT="---";
 
 const QString STRING_SEVERAL_ACTIVITIES_IN_LESS_DETAILED_TABLES="???";
@@ -699,6 +697,7 @@ void TimetableExport::writeTimetableDataFile(QWidget* parent, const QString& fil
 		}
 	}
 	
+	Rules rules2;
 	rules2.initialized=true;
 	
 	rules2.setInstitutionName(gt.rules.getInstitutionName());
