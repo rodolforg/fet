@@ -246,20 +246,10 @@ using namespace std;
 
 #include "statisticsexport.h"
 
-#endif
-
 bool simulation_running; //true if the user started an allocation of the timetable
 
 QString conflictsString; //the string that contains a log of the broken constraints
 QString conflictsStringTitle;
-
-
-#ifndef FET_COMMAND_LINE
-#endif
-
-Rules rules2;
-
-#ifndef FET_COMMAND_LINE
 
 bool USE_GUI_COLORS=false;
 
@@ -1406,7 +1396,8 @@ void FetMainForm::on_timetableSaveTimetableAsAction_triggered()
 			else
 				break;
 		}
-			
+
+		Rules rules2;
 		rules2.initialized=true;
 		
 		rules2.setInstitutionName(gt.rules.getInstitutionName());
