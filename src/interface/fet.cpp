@@ -220,7 +220,7 @@ void usage(QTextStream* out, const QString& error)
 #endif
 
 #ifndef FET_COMMAND_LINE
-void readSimulationParameters()
+static void readSimulationParameters()
 {
 	const QString predefDir=QDir::homePath()+FILE_SEP+"fet-results";
 
@@ -346,7 +346,7 @@ void readSimulationParameters()
 	}
 }
 
-void writeSimulationParameters()
+static void writeSimulationParameters()
 {
 	QSettings settings;
 
@@ -414,7 +414,7 @@ void writeSimulationParameters()
 }
 #endif
 
-void initLanguagesSet()
+static void initLanguagesSet()
 {
 	//This is one of the two places to insert a new language in the sources (the other one is in fetmainform.cpp).
 	languagesSet.clear();

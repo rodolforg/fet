@@ -43,11 +43,6 @@ The name of the file from where the rules are read.
 */
 extern QString INPUT_FILENAME_XML;
 
-void readSimulationParameters();
-void writeSimulationParameters();
-
 void setLanguage(QWidget* parent);
-
-void initLanguagesSet();
 
 #endif
