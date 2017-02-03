@@ -886,7 +886,10 @@ private:
 	SpaceConstraint* readActivitiesSameRoomIfConsecutive(QXmlStreamReader& xml, XmlLog &log);
 
 signals:
+	/// Any object property changed
 	void contentsChanged();
+	/// Added or removed Days, Hours, Teachers, StudentsSets, Subject, Activities, Activity tags, Buildings or Rooms
+	void basicDataResized();
 };
 
 #endif

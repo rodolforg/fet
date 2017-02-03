@@ -373,7 +373,8 @@ public slots:
 	void on_shortcutSaveAsPushButton_clicked();
 
 	void rules_contentsChanged();
-	
+	void rules_basicDataResized();
+
 	void replyFinished(QNetworkReply* networkReply);
 	
 protected:
