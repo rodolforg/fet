@@ -22,7 +22,6 @@ File rules.h
 #ifndef RULES_H
 #define RULES_H
 
-#include "timetable_defs.h"
 #include "timeconstraint.h"
 #include "spaceconstraint.h"
 #include "activity.h"
@@ -40,8 +39,6 @@ File rules.h
 #include <QList>
 #include <QStringList>
 #include <QString>
-
-#include <QCoreApplication>
 
 class QXmlStreamReader;
 #include "xmllog.h"

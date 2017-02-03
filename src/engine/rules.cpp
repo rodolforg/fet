@@ -42,13 +42,6 @@ using namespace std;
 
 #include <QTranslator>
 
-#include <QtAlgorithms>
-#include <QtGlobal>
-
-#include <QSet>
-#include <QHash>
-
-//#include <QApplication>
 #ifndef FET_COMMAND_LINE
 #include <QProgressDialog>
 #endif
@@ -58,13 +51,6 @@ using namespace std;
 #include "messageboxes.h"
 
 #include "lockunlock.h"
-
-#include "centerwidgetonscreen.h"
-
-//static bool toSkipTime[MAX_TIME_CONSTRAINTS];
-//static bool toSkipSpace[MAX_SPACE_CONSTRAINTS];
-
-//extern QApplication* pqapplication;
 
 void Rules::init() //initializes the rules (empty, but with default hours and days)
 {
