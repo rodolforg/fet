@@ -55,8 +55,6 @@ File statisticsexport.cpp
 
 extern Timetable gt;
 
-//extern bool simulation_running;	//needed?
-
 //TODO: use the external string!!!
 //extern const QString STRING_EMPTY_SLOT;
 const QString STRING_EMPTY_SLOT_STATISTICS="---";
