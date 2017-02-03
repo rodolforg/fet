@@ -91,10 +91,6 @@ static QSet<QString> languagesSet;
 using namespace std;
 
 #ifndef FET_COMMAND_LINE
-extern int MAIN_FORM_SHORTCUTS_TAB_POSITION;
-#endif
-
-#ifndef FET_COMMAND_LINE
 extern int initialOrderOfActivitiesIndices[MAX_ACTIVITIES];
 #else
 int initialOrderOfActivitiesIndices[MAX_ACTIVITIES];
@@ -105,8 +101,6 @@ extern QMutex myMutex;
 #else
 QMutex myMutex;
 #endif
-
-void writeDefaultSimulationParameters();
 
 QTranslator translator;
 
@@ -414,8 +408,6 @@ void writeSimulationParameters()
 	settings.setValue("warn-if-using-group-activities-in-initial-order", SHOW_WARNING_FOR_GROUP_ACTIVITIES_IN_INITIAL_ORDER);
 
 	//main form
-	//settings.setValue("FetMainForm/shortcuts-tab-position", MAIN_FORM_SHORTCUTS_TAB_POSITION);
-	//settings.setValue("FetMainForm/shortcuts-tab-position", 0); //always starting on the first page, as suggested by a user
 	settings.setValue("FetMainForm/show-shortcuts", SHOW_SHORTCUTS_ON_MAIN_WINDOW);
 
 	settings.setValue("FetMainForm/show-tooltips-for-constraints-with-tables", SHOW_TOOLTIPS_FOR_CONSTRAINTS_WITH_TABLES);
