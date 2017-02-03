@@ -73,9 +73,6 @@ using namespace std;
 
 #include <QDir>
 
-//Represents the current status of the simulation - running or stopped.
-extern bool simulation_running;
-
 extern bool LANGUAGE_STYLE_RIGHT_TO_LEFT;
 extern QString LANGUAGE_FOR_HTML;
 
