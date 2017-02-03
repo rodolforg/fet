@@ -365,6 +365,7 @@ FetMainForm::FetMainForm()
 	gt.rules.init();
 
 	connect(&gt.rules, SIGNAL(contentsChanged()), this, SLOT(rules_contentsChanged()));
+	connect(&gt.rules, SIGNAL(basicDataResized()), this, SLOT(rules_basicDataResized()));
 
 	bool tmp=gt.rules.addTimeConstraint(new ConstraintBasicCompulsoryTime(100));
 	assert(tmp);
@@ -4665,3 +4666,8 @@ void FetMainForm::rules_contentsChanged()
 	setWindowModified(gt.rules.isModified());
 }
 
+void FetMainForm::rules_basicDataResized()
+{
+	// TODO Put this directly in Solution (connect Rules::contentsChanged signal internally and update these properties)
+	CachedSchedule::invalidate();
+}
