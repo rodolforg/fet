@@ -45,7 +45,6 @@ extern QString INPUT_FILENAME_XML;
 
 void readSimulationParameters();
 void writeSimulationParameters();
-//void writeDefaultSimulationParameters();
 
 void setLanguage(QWidget* parent);
 
