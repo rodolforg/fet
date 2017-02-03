@@ -3412,6 +3412,9 @@ again_if_impossible_activity:
 		bool okteachersactivitytagmaxhoursdaily;
 		bool okstudentsactivitytagmaxhoursdaily;
 
+		const int TEACHERS_MAX_SPAN_PER_DAY=9;
+		bool okteachersmaxspan9perday;
+
 		//2011-09-25
 		bool okactivitiesoccupymaxtimeslotsfromselection;
 		
@@ -3519,56 +3522,6 @@ again_if_impossible_activity:
 			}
 		}
 		///////////////////////////////////
-
-		// check if it exceeds the max daily hours at work
-		foreach (int tch, act->iTeachersList) {
-			int startingHour = -1;
-			int endingHour = -1;
-			int startingAi = -1;
-			int endingAi = -1;
-			const int MAX_TEACHER_HOURS_AT_WORK = 9;
-			for (int hi = 0; hi < gt.rules.nHoursPerDay; hi++) {
-				int ai2=teachersTimetable(tch,d,hi);
-				if (ai2 >= 0) {
-					startingHour = hi;
-					startingAi = ai2;
-					break;
-				}
-			}
-			if (startingHour < 0)
-				continue;
-			for (int hi = gt.rules.nHoursPerDay - 1; hi >= startingHour; hi--) {
-				int ai2=teachersTimetable(tch,d,hi);
-				if (ai2 >= 0) {
-					endingHour = hi+1;// + gt.rules.internalActivitiesList[ai2].duration;
-					endingAi = ai2;
-					break;
-				}
-			}
-			if (h < startingHour) {
-				startingHour = h;
-				startingAi = ai;
-			}
-			if (h >= endingHour) {
-				endingHour = h + act->duration;
-				endingAi = ai;
-			}
-			if (startingHour >= 0) {
-				if (endingHour - startingHour > MAX_TEACHER_HOURS_AT_WORK) {
-					int ai2 = ai == startingAi? endingAi : startingAi;
-					if(fixedTimeActivity[ai2] || swappedActivities[ai2]){
-						okbasictime=false;
-						goto impossiblebasictime;
-					}
-
-					if(!conflActivities[newtime].contains(ai2)){
-						conflActivities[newtime].append(ai2);
-						nConflActivities[newtime]++;
-						assert(nConflActivities[newtime]==conflActivities[newtime].count());
-					}
-				}
-			}
-		}
 
 		// check if there is a good time interval between last night and today
 		foreach (int tch, act->iTeachersList) {
@@ -7426,6 +7379,93 @@ impossibleteachersmaxgapsperday:
 		}
 
 		////////////////////////////END max gaps per day
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+		//for rodolforg, respecting max span = TEACHERS_MAX_SPAN_PER_DAY (currently 9).
+		//implemented not perfectly - should take care also of the interaction with the other teachers' constraints
+		okteachersmaxspan9perday=true;
+		foreach(int tch, act->iTeachersList)
+			if(1){
+				//preliminary test
+				int _cnt=0;
+				int _start=-1;
+				int _end=-1;
+				for(int h2=0; h2<gt.rules.nHoursPerDay; h2++)
+					if(newTeachersTimetable(tch, d, h2)>=0){
+						_start=h2;
+						break;
+					}
+				for(int h2=gt.rules.nHoursPerDay-1; h2>=0; h2--)
+					if(newTeachersTimetable(tch, d, h2)>=0){
+						_end=h2;
+						break;
+					}
+
+				if(_end>_start)
+					_cnt=_end-_start+1;
+
+				if(_cnt<=TEACHERS_MAX_SPAN_PER_DAY)
+					continue;
+
+				if(level>=LEVEL_STOP_CONFLICTS_CALCULATION){
+					okteachersmaxspan9perday=false;
+					goto impossibleteachersmaxspan9perday;
+				}
+
+				getTchTimetable(tch, conflActivities[newtime]);
+
+				for(;;){
+					int cnt=0;
+					int start=-1;
+					int end=-1;
+					for(int h2=0; h2<gt.rules.nHoursPerDay; h2++)
+						if(tchTimetable(d, h2)>=0){
+							start=h2;
+							break;
+						}
+					for(int h2=gt.rules.nHoursPerDay-1; h2>=0; h2--)
+						if(tchTimetable(d, h2)>=0){
+							end=h2;
+							break;
+						}
+
+					if(end>start)
+						cnt=end-start+1;
+
+					if(cnt<=TEACHERS_MAX_SPAN_PER_DAY)
+						break;
+
+					//remove an activity from the beginning or from the end of a day
+					//following code is identical to maxgapsperweek
+					//remove an activity
+					int ai2=-1;
+
+					//old comment below
+					//it should also be allowed to take from anywhere, but it is risky to change now
+					bool k=teacherRemoveAnActivityFromBeginOrEndCertainDay(tch, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+					assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+					if(!k){
+						okteachersmaxspan9perday=false;
+						goto impossibleteachersmaxspan9perday;
+					}
+
+					assert(ai2>=0);
+
+					removeAi2FromTchTimetable(ai2);
+				}
+			}
+
+impossibleteachersmaxspan9perday:
+		if(!okteachersmaxspan9perday){
+			if(updateSubgroups || updateTeachers)
+				removeAiFromNewTimetable(ai, act, d, h);
+
+			nConflActivities[newtime]=MAX_ACTIVITIES;
+			continue;
+		}
+
+		////////////////////////////END max teachers span 9 per day
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 
