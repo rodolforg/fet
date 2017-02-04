@@ -188,6 +188,27 @@ const QString RANDOM_SEED_FILENAME_AFTER="random_seed_after.txt";
 
 QString generationLocalizedTime=QString(""); //to be used in timetableprintform.cpp
 
+/**
+Timetable html css javaScript Level, by Volker Dirr
+*/
+int TIMETABLE_HTML_LEVEL;
+
+bool TIMETABLE_HTML_PRINT_ACTIVITY_TAGS;
+
+bool PRINT_DETAILED_HTML_TIMETABLES;
+
+bool PRINT_DETAILED_HTML_TEACHERS_FREE_PERIODS;
+
+bool PRINT_NOT_AVAILABLE_TIME_SLOTS;
+
+bool PRINT_BREAK_TIME_SLOTS;
+
+bool DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS;
+
+bool TIMETABLE_HTML_REPEAT_NAMES;
+
+bool PRINT_ACTIVITIES_WITH_SAME_STARTING_TIME;
+
 bool WRITE_TIMETABLE_CONFLICTS=true;
 
 bool WRITE_TIMETABLES_STATISTICS=true;

@@ -25,7 +25,7 @@ File statisticsexport.cpp
 // Code contributed by Volker Dirr ( http://www.timetabling.de/ )
 // Many thanks to Liviu Lalescu. He told me some speed optimizations.
 
-#include "timetable_defs.h"
+#include "timetableexport.h"
 #include "statisticsexport.h"
 
 // BE CAREFUL: DON'T USE INTERNAL VARIABLES HERE, because maybe computeInternalStructure() is not done!

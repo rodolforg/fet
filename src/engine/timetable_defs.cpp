@@ -53,27 +53,6 @@ bool LANGUAGE_STYLE_RIGHT_TO_LEFT;
 
 QString LANGUAGE_FOR_HTML;
 
-/**
-Timetable html css javaScript Level, by Volker Dirr
-*/
-int TIMETABLE_HTML_LEVEL;
-
-bool TIMETABLE_HTML_PRINT_ACTIVITY_TAGS;
-
-bool PRINT_DETAILED_HTML_TIMETABLES;
-
-bool PRINT_DETAILED_HTML_TEACHERS_FREE_PERIODS;
-
-bool PRINT_NOT_AVAILABLE_TIME_SLOTS;
-
-bool PRINT_BREAK_TIME_SLOTS;
-
-bool PRINT_ACTIVITIES_WITH_SAME_STARTING_TIME;
-
-bool DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS;
-
-bool TIMETABLE_HTML_REPEAT_NAMES;
-
 bool VERBOSE;
 
 //these hashes are needed to get the IDs for html and css in timetableexport and statistics
