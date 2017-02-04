@@ -47,11 +47,7 @@ File statisticsexport.cpp
 #include <QFile>
 #include <QTextStream>
 
-//#include <QApplication>
 #include <QProgressDialog>
-//extern QApplication* pqapplication;
-
-#include <QtGlobal>
 
 extern Timetable gt;
 

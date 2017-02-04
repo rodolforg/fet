@@ -29,8 +29,6 @@ File timetable_defs.h
 
 #include <QString>
 
-#include <QtGlobal>
-
 #ifndef FET_COMMAND_LINE
 #include "centerwidgetonscreen.h"
 #endif

@@ -18,8 +18,6 @@
 #ifndef FETMAINFORM_H
 #define FETMAINFORM_H
 
-#include <QtGlobal>
-
 #include "ui_fetmainform_template.h"
 
 #include <QString>

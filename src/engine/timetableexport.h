@@ -22,7 +22,6 @@ File timetableexport.h
 #ifndef TIMETABLEEXPORT_H
 #define TIMETABLEEXPORT_H
 
-#include "timetable_defs.h"
 #include "timetable.h"
 #include "solution.h"
 
