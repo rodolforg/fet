@@ -22,12 +22,8 @@
 
 //maybe TODO: maybe use only HTML level 1 instead of 3? advantage: a bit speedup. disadvantage: no coloring
 
-#include <QtGlobal>
-
 #include "timetableprintform.h"
 
-#include "timetable.h"
-#include "timetable_defs.h"
 #include "timetableexport.h"
 #include "solution.h"
 
