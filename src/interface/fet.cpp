@@ -314,13 +314,6 @@ static void readSimulationParameters()
 	WRITE_TIMETABLES_ACTIVITY_TAGS=newSettings.value("write-timetables-activity-tags", "true").toBool();
 	WRITE_TIMETABLES_ACTIVITIES=newSettings.value("write-timetables-activities", "true").toBool();
 
-/////////confirmations
-	CONFIRM_ACTIVITY_PLANNING=newSettings.value("confirm-activity-planning", "true").toBool();
-	CONFIRM_SPREAD_ACTIVITIES=newSettings.value("confirm-spread-activities", "true").toBool();
-	CONFIRM_REMOVE_REDUNDANT=newSettings.value("confirm-remove-redundant", "true").toBool();
-	CONFIRM_SAVE_TIMETABLE=newSettings.value("confirm-save-data-and-timetable", "true").toBool();
-/////////
-
 	ENABLE_ACTIVITY_TAG_MAX_HOURS_DAILY=newSettings.value("enable-activity-tag-max-hours-daily", "false").toBool();
 	ENABLE_STUDENTS_MAX_GAPS_PER_DAY=newSettings.value("enable-students-max-gaps-per-day", "false").toBool();
 	SHOW_WARNING_FOR_NOT_PERFECT_CONSTRAINTS=newSettings.value("warn-if-using-not-perfect-constraints", "true").toBool();
@@ -384,13 +377,6 @@ static void writeSimulationParameters()
 	settings.setValue("write-timetables-subjects", WRITE_TIMETABLES_SUBJECTS);
 	settings.setValue("write-timetables-activity-tags", WRITE_TIMETABLES_ACTIVITY_TAGS);
 	settings.setValue("write-timetables-activities", WRITE_TIMETABLES_ACTIVITIES);
-
-///////////confirmations
-	settings.setValue("confirm-activity-planning", CONFIRM_ACTIVITY_PLANNING);
-	settings.setValue("confirm-spread-activities", CONFIRM_SPREAD_ACTIVITIES);
-	settings.setValue("confirm-remove-redundant", CONFIRM_REMOVE_REDUNDANT);
-	settings.setValue("confirm-save-data-and-timetable", CONFIRM_SAVE_TIMETABLE);
-///////////
 
 	settings.setValue("enable-activity-tag-max-hours-daily", ENABLE_ACTIVITY_TAG_MAX_HOURS_DAILY);
 	settings.setValue("enable-students-max-gaps-per-day", ENABLE_STUDENTS_MAX_GAPS_PER_DAY);
@@ -731,6 +717,7 @@ int main(int argc, char **argv)
 		int tmp2=QCoreApplication::exec();
 	
 		writeSimulationParameters();
+		fetMainForm.saveSettings();
 	
 		if(VERBOSE){
 			cout<<"Settings saved"<<endl;

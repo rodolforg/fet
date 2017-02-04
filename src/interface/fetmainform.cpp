@@ -265,11 +265,6 @@ bool ENABLE_STUDENTS_MIN_HOURS_DAILY_WITH_ALLOW_EMPTY_DAYS=false;
 
 bool ENABLE_GROUP_ACTIVITIES_IN_INITIAL_ORDER=false;
 
-bool CONFIRM_ACTIVITY_PLANNING=true;
-bool CONFIRM_SPREAD_ACTIVITIES=true;
-bool CONFIRM_REMOVE_REDUNDANT=true;
-bool CONFIRM_SAVE_TIMETABLE=true;
-
 const int STATUS_BAR_MILLISECONDS=2500;
 
 FetMainForm::FetMainForm()
@@ -278,6 +273,8 @@ FetMainForm::FetMainForm()
 	
 	QIcon appIcon(":/images/appicon.png");
 	QGuiApplication::setWindowIcon(appIcon);
+
+	loadSettings();
 
 	QSettings settings;
 	int nRec=settings.value(QString("FetMainForm/number-of-recent-files"), 0).toInt();
@@ -392,16 +389,6 @@ FetMainForm::FetMainForm()
 	settingsShowSubgroupsInComboBoxesAction->setChecked(SHOW_SUBGROUPS_IN_COMBO_BOXES);
 	settingsShowSubgroupsInActivityPlanningAction->setCheckable(true);
 	settingsShowSubgroupsInActivityPlanningAction->setChecked(SHOW_SUBGROUPS_IN_ACTIVITY_PLANNING);
-	
-	////////confirmations
-	settingsConfirmActivityPlanningAction->setChecked(CONFIRM_ACTIVITY_PLANNING);
-	
-	settingsConfirmSpreadActivitiesAction->setChecked(CONFIRM_SPREAD_ACTIVITIES);
-	
-	settingsConfirmRemoveRedundantAction->setChecked(CONFIRM_REMOVE_REDUNDANT);
-	
-	settingsConfirmSaveTimetableAction->setChecked(CONFIRM_SAVE_TIMETABLE);
-	///////
 	
 	settingsDivideTimetablesByDaysAction->setCheckable(true);
 	settingsDivideTimetablesByDaysAction->setChecked(DIVIDE_HTML_TIMETABLES_WITH_TIME_AXIS_BY_DAYS);
@@ -621,28 +608,6 @@ void FetMainForm::showSubgroupsInActivityPlanningToggled(bool checked)
 	
 	SHOW_SUBGROUPS_IN_ACTIVITY_PLANNING=checked;
 }
-
-/////////confirmations
-void FetMainForm::on_settingsConfirmActivityPlanningAction_toggled()
-{
-	CONFIRM_ACTIVITY_PLANNING=settingsConfirmActivityPlanningAction->isChecked();
-}
-
-void FetMainForm::on_settingsConfirmSpreadActivitiesAction_toggled()
-{
-	CONFIRM_SPREAD_ACTIVITIES=settingsConfirmSpreadActivitiesAction->isChecked();
-}
-
-void FetMainForm::on_settingsConfirmRemoveRedundantAction_toggled()
-{
-	CONFIRM_REMOVE_REDUNDANT=settingsConfirmRemoveRedundantAction->isChecked();
-}
-
-void FetMainForm::on_settingsConfirmSaveTimetableAction_toggled()
-{
-	CONFIRM_SAVE_TIMETABLE=settingsConfirmSaveTimetableAction->isChecked();
-}
-/////////
 
 void FetMainForm::on_settingsShowShortcutsOnMainWindowAction_toggled()
 {
@@ -1181,6 +1146,32 @@ bool FetMainForm::fileSaveAs()
 	}
 }
 
+void FetMainForm::resetSettings()
+{
+	settingsConfirmActivityPlanningAction->setChecked(true);
+	settingsConfirmSpreadActivitiesAction->setChecked(true);
+	settingsConfirmRemoveRedundantAction->setChecked(true);
+	settingsConfirmSaveTimetableAction->setChecked(true);
+}
+
+void FetMainForm::loadSettings()
+{
+	QSettings settings;
+	settingsConfirmActivityPlanningAction->setChecked(settings.value("confirm-activity-planning", true).toBool());
+	settingsConfirmSpreadActivitiesAction->setChecked(settings.value("confirm-spread-activities", true).toBool());
+	settingsConfirmRemoveRedundantAction->setChecked(settings.value("confirm-remove-redundant", true).toBool());
+	settingsConfirmSaveTimetableAction->setChecked(settings.value("confirm-save-data-and-timetable", true).toBool());
+}
+
+void FetMainForm::saveSettings()
+{
+	QSettings settings;
+	settings.setValue("confirm-activity-planning", settingsConfirmActivityPlanningAction->isChecked());
+	settings.setValue("confirm-spread-activities", settingsConfirmSpreadActivitiesAction->isChecked());
+	settings.setValue("confirm-remove-redundant", settingsConfirmRemoveRedundantAction->isChecked());
+	settings.setValue("confirm-save-data-and-timetable", settingsConfirmSaveTimetableAction->isChecked());
+}
+
 void FetMainForm::on_fileSaveAsAction_triggered()
 {
 	fileSaveAs();
@@ -1288,7 +1279,7 @@ void FetMainForm::on_timetableSaveTimetableAsAction_triggered()
 
 	bool ok_to_continue;
 	SaveTimetableConfirmationForm* pc_form=NULL;
-	if(CONFIRM_SAVE_TIMETABLE){
+	if(settingsConfirmSaveTimetableAction->isChecked()){
 		int confirm;
 		
 		pc_form=new SaveTimetableConfirmationForm(this);
@@ -3943,19 +3934,7 @@ void FetMainForm::on_settingsRestoreDefaultsAction_triggered()
 	WRITE_TIMETABLES_ACTIVITIES=true;
 	//
 	
-	////////confirmations
-	CONFIRM_ACTIVITY_PLANNING=true;
-	settingsConfirmActivityPlanningAction->setChecked(CONFIRM_ACTIVITY_PLANNING);
-	
-	CONFIRM_SPREAD_ACTIVITIES=true;
-	settingsConfirmSpreadActivitiesAction->setChecked(CONFIRM_SPREAD_ACTIVITIES);
-	
-	CONFIRM_REMOVE_REDUNDANT=true;
-	settingsConfirmRemoveRedundantAction->setChecked(CONFIRM_REMOVE_REDUNDANT);
-	
-	CONFIRM_SAVE_TIMETABLE=true;
-	settingsConfirmSaveTimetableAction->setChecked(CONFIRM_SAVE_TIMETABLE);
-	///////
+	resetSettings();
 
 	///////////
 	SHOW_WARNING_FOR_SUBGROUPS_WITH_THE_SAME_ACTIVITIES=true;
@@ -4083,7 +4062,7 @@ void FetMainForm::on_activityPlanningAction_triggered()
 		return;
 	}
 
-	if(CONFIRM_ACTIVITY_PLANNING){
+	if(settingsConfirmActivityPlanningAction->isChecked()){
 		int confirm;
 	
 		ActivityPlanningConfirmationForm c_form(this);
@@ -4152,7 +4131,7 @@ void FetMainForm::on_spreadActivitiesAction_triggered()
 		}
 	}
 	
-	if(CONFIRM_SPREAD_ACTIVITIES){
+	if(settingsConfirmSpreadActivitiesAction->isChecked()){
 		int confirm;
 	
 		SpreadConfirmationForm c_form(this);
@@ -4194,7 +4173,7 @@ void FetMainForm::on_removeRedundantConstraintsAction_triggered()
 		return;
 	}
 	
-	if(CONFIRM_REMOVE_REDUNDANT){
+	if(settingsConfirmRemoveRedundantAction->isChecked()){
 		int confirm;
 	
 		RemoveRedundantConfirmationForm c_form(this);

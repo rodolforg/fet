@@ -37,11 +37,6 @@ extern bool ENABLE_STUDENTS_MAX_GAPS_PER_DAY;
 
 extern bool SHOW_SHORTCUTS_ON_MAIN_WINDOW;
 
-extern bool CONFIRM_ACTIVITY_PLANNING;
-extern bool CONFIRM_SPREAD_ACTIVITIES;
-extern bool CONFIRM_REMOVE_REDUNDANT;
-extern bool CONFIRM_SAVE_TIMETABLE;
-
 class FetMainForm: public QMainWindow, public Ui::FetMainForm_template
 {
 	Q_OBJECT
@@ -86,7 +81,11 @@ public:
 	void openFile(const QString& fileName);
 	bool fileSave();
 	bool fileSaveAs();
-	
+
+	void resetSettings();
+	void loadSettings();
+	void saveSettings();
+
 public slots:
 	void enableNotPerfectMessage();
 
@@ -132,13 +131,6 @@ public slots:
 	
 	void on_timetablesToWriteOnDiskAction_triggered();
 	///
-
-	//////confirmations
-	void on_settingsConfirmActivityPlanningAction_toggled();
-	void on_settingsConfirmSpreadActivitiesAction_toggled();
-	void on_settingsConfirmRemoveRedundantAction_toggled();
-	void on_settingsConfirmSaveTimetableAction_toggled();
-	//////
 
 	void showWarningForSubgroupsWithTheSameActivitiesToggled(bool checked);
 	
