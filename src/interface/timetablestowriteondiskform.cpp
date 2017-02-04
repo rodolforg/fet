@@ -15,7 +15,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#include "timetable_defs.h"
+#include "timetableexport.h"
 
 #include "timetablestowriteondiskform.h"
 
