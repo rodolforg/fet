@@ -52,9 +52,9 @@ extern QString conflictsString;
 
 Generate gen(gt);
 
-QString initialOrderOfActivities;
+extern QString initialOrderOfActivities;
 
-int initialOrderOfActivitiesIndices[MAX_ACTIVITIES];
+extern int initialOrderOfActivitiesIndices[MAX_ACTIVITIES];
 
 QString getActivityDetailedDescription(const Rules& r, int id);
 

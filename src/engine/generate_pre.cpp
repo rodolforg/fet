@@ -371,13 +371,8 @@ bool SHOW_WARNING_FOR_NOT_PERFECT_CONSTRAINTS=true;
 bool SHOW_WARNING_FOR_STUDENTS_MIN_HOURS_DAILY_WITH_ALLOW_EMPTY_DAYS=true;
 bool SHOW_WARNING_FOR_GROUP_ACTIVITIES_IN_INITIAL_ORDER=true;
 
-#ifndef FET_COMMAND_LINE
-extern QString initialOrderOfActivities;
-#else
 QString initialOrderOfActivities;
-#endif
-
-extern int initialOrderOfActivitiesIndices[MAX_ACTIVITIES];
+int initialOrderOfActivitiesIndices[MAX_ACTIVITIES];
 
 
 bool fixedTimeActivity[MAX_ACTIVITIES];
