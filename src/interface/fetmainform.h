@@ -34,6 +34,16 @@
 class QNetworkAccessManager;
 class QNetworkReply;
 
+extern bool ENABLE_ACTIVITY_TAG_MAX_HOURS_DAILY;
+extern bool ENABLE_STUDENTS_MAX_GAPS_PER_DAY;
+
+extern bool SHOW_SHORTCUTS_ON_MAIN_WINDOW;
+
+extern bool CONFIRM_ACTIVITY_PLANNING;
+extern bool CONFIRM_SPREAD_ACTIVITIES;
+extern bool CONFIRM_REMOVE_REDUNDANT;
+extern bool CONFIRM_SAVE_TIMETABLE;
+
 class FetMainForm: public QMainWindow, public Ui::FetMainForm_template
 {
 	Q_OBJECT
