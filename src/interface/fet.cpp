@@ -90,11 +90,7 @@ static QSet<QString> languagesSet;
 #include <iostream>
 using namespace std;
 
-#ifndef FET_COMMAND_LINE
 extern int initialOrderOfActivitiesIndices[MAX_ACTIVITIES];
-#else
-int initialOrderOfActivitiesIndices[MAX_ACTIVITIES];
-#endif
 
 #ifndef FET_COMMAND_LINE
 extern QMutex myMutex;
