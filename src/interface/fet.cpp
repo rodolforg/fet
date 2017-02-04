@@ -135,7 +135,7 @@ FetMainForm* pFetMainForm=NULL;
 
 Generate* terminateGeneratePointer = NULL;
 
-void terminate(int param)
+static void terminate(int param)
 {
 	Q_UNUSED(param);
 
@@ -144,7 +144,7 @@ void terminate(int param)
 	terminateGeneratePointer->abort();
 }
 
-void usage(QTextStream* out, const QString& error)
+static void usage(QTextStream* out, const QString& error)
 {
 	QString s="";
 	
