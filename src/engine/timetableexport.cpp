@@ -63,8 +63,6 @@ using namespace std;
 
 #include <QHash>
 
-//#include <QDesktopWidget>
-
 #include "messageboxes.h"
 
 #include <QLocale>

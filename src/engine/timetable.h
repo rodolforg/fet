@@ -22,7 +22,6 @@ File timetable.h
 #ifndef TIMETABLE_H
 #define TIMETABLE_H
 
-#include "timetable_defs.h"
 #include "rules.h"
 
 /**
