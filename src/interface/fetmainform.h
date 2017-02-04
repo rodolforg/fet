@@ -71,7 +71,9 @@ private:
 	void updateRecentFileActions();
 
 	void populateLanguagesMap(QMap<QString, QString>& languagesMap);
-	
+
+	bool isValidFilepathForSaving(const QString &filepath);
+
 public:
 	FetMainForm();
 	~FetMainForm();
