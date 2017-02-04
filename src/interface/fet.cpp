@@ -126,8 +126,6 @@ QString IMPORT_DIRECTORY;
 
 #ifndef FET_COMMAND_LINE
 QApplication* pqapplication=NULL;
-
-FetMainForm* pFetMainForm=NULL;
 #endif
 
 //for command line version, if the user stops using a signal
@@ -732,7 +730,6 @@ int main(int argc, char **argv)
 		setLanguage(NULL);
 
 		FetMainForm fetMainForm;
-		pFetMainForm=&fetMainForm;
 		fetMainForm.show();
 
 		int tmp2=QCoreApplication::exec();
@@ -742,8 +739,6 @@ int main(int argc, char **argv)
 		if(VERBOSE){
 			cout<<"Settings saved"<<endl;
 		}
-	
-		pFetMainForm=NULL;
 	
 		return tmp2;
 	}
