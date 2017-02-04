@@ -1277,36 +1277,26 @@ void FetMainForm::on_timetableSaveTimetableAsAction_triggered()
 		}
 	}
 
-	bool ok_to_continue;
-	SaveTimetableConfirmationForm* pc_form=NULL;
 	if(settingsConfirmSaveTimetableAction->isChecked()){
 		int confirm;
 		
-		pc_form=new SaveTimetableConfirmationForm(this);
-		setParentAndOtherThings(pc_form, this);
-		confirm=pc_form->exec();
+		SaveTimetableConfirmationForm c_form(this);
+		setParentAndOtherThings(&c_form, this);
+		confirm=c_form.exec();
 		
 		if(confirm==QDialog::Accepted){
-			if(pc_form->dontShowAgain)
+			if(c_form.dontShowAgain)
 				settingsConfirmSaveTimetableAction->setChecked(false);
-			
-			ok_to_continue=true;
+		} else {
+			return;
 		}
-		else
-			ok_to_continue=false;
 	}
-	else
-		ok_to_continue=true;
 		
-	if(ok_to_continue){
-		QWidget* parent=pc_form;
-		if(parent==NULL)
-			parent=this;
-
+	if(1){
 		QString s;
 
 		for(;;){
-			s = QFileDialog::getSaveFileName(parent, tr("Choose a filename for data and timetable"),
+			s = QFileDialog::getSaveFileName(this, tr("Choose a filename for data and timetable"),
 				INPUT_FILENAME_XML, tr("FET XML files", "Instructions for translators: FET XML is a type of file format (using text mode). "
 				"So this field means files in the FET XML format")+" (*.fet)"+";;"+tr("All files")+" (*)",
 				0, QFileDialog::DontConfirmOverwrite);
@@ -1348,17 +1338,17 @@ void FetMainForm::on_timetableSaveTimetableAsAction_triggered()
 				}
 			}
 			if(s2.indexOf("\"") >= 0){
-				QMessageBox::warning(parent, tr("FET information"), tr("Please do not use quotation marks \" in filename, the html css code does not work")
+				QMessageBox::warning(this, tr("FET information"), tr("Please do not use quotation marks \" in filename, the html css code does not work")
 				 +"\n\n"+tr("File was not saved."));
 				return;
 			}
 			if(s2.indexOf(";") >= 0){
-				QMessageBox::warning(parent, tr("FET information"), tr("Please do not use semicolon ; in filename, the html css code does not work")
+				QMessageBox::warning(this, tr("FET information"), tr("Please do not use semicolon ; in filename, the html css code does not work")
 				 +"\n\n"+tr("File was not saved."));
 				return;
 			}
 			if(s2.indexOf("#") >= 0){
-				QMessageBox::warning(parent, tr("FET information"), tr("Please do not use # in filename, the html css code does not work")
+				QMessageBox::warning(this, tr("FET information"), tr("Please do not use # in filename, the html css code does not work")
 				 +"\n\n"+tr("File was not saved."));
 				return;
 			}
@@ -1377,7 +1367,7 @@ void FetMainForm::on_timetableSaveTimetableAsAction_triggered()
 				t+="\n\n";
 				t+=tr("Please choose a non-existing name");
 		
-				QMessageBox::warning( parent, tr("FET warning"), t);
+				QMessageBox::warning( this, tr("FET warning"), t);
 			}
 			else
 				break;
@@ -1488,12 +1478,12 @@ void FetMainForm::on_timetableSaveTimetableAsAction_triggered()
 			}
 		}
 
-		LongTextMessageBox::largeInformation(parent, tr("FET information"), tr("Added %1 locking time constraints and %2 locking space constraints to saved file,"
+		LongTextMessageBox::largeInformation(this, tr("FET information"), tr("Added %1 locking time constraints and %2 locking space constraints to saved file,"
 		" ignored %3 activities which were already fixed in time and %4 activities which were already fixed in space.").arg(addedTime).arg(addedSpace).arg(duplicatesTime).arg(duplicatesSpace)
 		+QString("\n\n")+tr("Detailed information about each locking constraint which was added or not (if already existing) to the saved file:")+QString("\n")+constraintsString
 		+QString("\n")+tr("Your current data file remained untouched (no locking constraints were added), so you can save it also, or generate different timetables."));
 			
-		bool result=rules2.write(parent, s);
+		bool result=rules2.write(this, s);
 		
 		Q_UNUSED(result);
 		
@@ -1528,9 +1518,6 @@ void FetMainForm::on_timetableSaveTimetableAsAction_triggered()
 
 		rules2.groupActivitiesInInitialOrderList.clear();
 	}
-	
-	if(pc_form!=NULL)
-		delete pc_form;
 }
 
 bool FetMainForm::fileSave()
@@ -4072,13 +4059,12 @@ void FetMainForm::on_activityPlanningAction_triggered()
 		if(confirm==QDialog::Accepted){
 			if(c_form.dontShowAgain)
 				settingsConfirmActivityPlanningAction->setChecked(false);
-		
-			StartActivityPlanning::startActivityPlanning(&c_form);
+		} else {
+			return;
 		}
 	}
-	else{
-		StartActivityPlanning::startActivityPlanning(this);
-	}
+
+	StartActivityPlanning::startActivityPlanning(this);
 }
 
 void FetMainForm::on_spreadActivitiesAction_triggered()
@@ -4141,17 +4127,14 @@ void FetMainForm::on_spreadActivitiesAction_triggered()
 		if(confirm==QDialog::Accepted){
 			if(c_form.dontShowAgain)
 				settingsConfirmSpreadActivitiesAction->setChecked(false);
-			
-			SpreadMinDaysConstraintsFiveDaysForm form(&c_form);
-			setParentAndOtherThings(&form, &c_form);
-			form.exec();
+		} else {
+			return;
 		}
 	}
-	else{
-		SpreadMinDaysConstraintsFiveDaysForm form(this);
-		setParentAndOtherThings(&form, this);
-		form.exec();
-	}
+
+	SpreadMinDaysConstraintsFiveDaysForm form(this);
+	setParentAndOtherThings(&form, this);
+	form.exec();
 }
 
 void FetMainForm::on_statisticsExportToDiskAction_triggered()
@@ -4183,17 +4166,14 @@ void FetMainForm::on_removeRedundantConstraintsAction_triggered()
 		if(confirm==QDialog::Accepted){
 			if(c_form.dontShowAgain)
 				settingsConfirmRemoveRedundantAction->setChecked(false);
-
-			RemoveRedundantForm form(&c_form);
-			setParentAndOtherThings(&form, &c_form);
-			form.exec();
+		} else {
+			return;
 		}
 	}
-	else{
-		RemoveRedundantForm form(this);
-		setParentAndOtherThings(&form, this);
-		form.exec();
-	}
+
+	RemoveRedundantForm form(this);
+	setParentAndOtherThings(&form, this);
+	form.exec();
 }
 
 void FetMainForm::on_selectOutputDirAction_triggered()
