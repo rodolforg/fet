@@ -18,13 +18,10 @@
  *                                                                         *
  ***************************************************************************/
 
-#include <QtGlobal>
-
 #include "statisticsprintform.h"
 
 #include "timetable.h"
-#include "timetable_defs.h"
-//#include "timetableexport.h"		//TODO: remove?!
+#include "timetableexport.h"
 
 #include "longtextmessagebox.h"
 

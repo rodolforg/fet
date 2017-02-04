@@ -26,9 +26,8 @@ File statisticsexport.h
 #define STATISTICEXPORT_H
 
 #include <QString>
-
-#include "timetable.h"		//needed?
-#include "timetable_defs.h"	//needed?
+#include <QHash>
+#include <QObject>
 
 class FetStatistics{
 public:
