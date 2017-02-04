@@ -45,8 +45,6 @@ File centerwidgetonscreen.cpp
 #include <QTableWidgetItem>
 #include <QAbstractItemView>
 
-extern FetMainForm* pFetMainForm;
-
 extern Timetable gt;
 
 void centerWidgetOnScreen(QWidget* widget)
