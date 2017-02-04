@@ -394,16 +394,12 @@ FetMainForm::FetMainForm()
 	settingsShowSubgroupsInActivityPlanningAction->setChecked(SHOW_SUBGROUPS_IN_ACTIVITY_PLANNING);
 	
 	////////confirmations
-	settingsConfirmActivityPlanningAction->setCheckable(true);
 	settingsConfirmActivityPlanningAction->setChecked(CONFIRM_ACTIVITY_PLANNING);
 	
-	settingsConfirmSpreadActivitiesAction->setCheckable(true);
 	settingsConfirmSpreadActivitiesAction->setChecked(CONFIRM_SPREAD_ACTIVITIES);
 	
-	settingsConfirmRemoveRedundantAction->setCheckable(true);
 	settingsConfirmRemoveRedundantAction->setChecked(CONFIRM_REMOVE_REDUNDANT);
 	
-	settingsConfirmSaveTimetableAction->setCheckable(true);
 	settingsConfirmSaveTimetableAction->setChecked(CONFIRM_SAVE_TIMETABLE);
 	///////
 	
