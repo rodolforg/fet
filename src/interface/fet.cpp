@@ -130,10 +130,11 @@ QApplication* pqapplication=NULL;
 FetMainForm* pFetMainForm=NULL;
 #endif
 
-Generate* terminateGeneratePointer;
-
 //for command line version, if the user stops using a signal
 #ifdef FET_COMMAND_LINE
+
+Generate* terminateGeneratePointer = NULL;
+
 void terminate(int param)
 {
 	Q_UNUSED(param);
@@ -683,8 +684,6 @@ int main(int argc, char **argv)
 	initLanguagesSet();
 
 	VERBOSE=false;
-
-	terminateGeneratePointer=NULL;
 
 	CachedSchedule::invalidate();
 
