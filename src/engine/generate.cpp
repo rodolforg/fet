@@ -3415,6 +3415,9 @@ again_if_impossible_activity:
 		const int TEACHERS_MAX_SPAN_PER_DAY=9;
 		bool okteachersmaxspan9perday;
 
+		const int TEACHERS_MIN_RESTING_TIME_SLOTS=3;
+		bool okteachersminresting3timeslots;
+
 		//2011-09-25
 		bool okactivitiesoccupymaxtimeslotsfromselection;
 		
@@ -3522,49 +3525,6 @@ again_if_impossible_activity:
 			}
 		}
 		///////////////////////////////////
-
-		// check if there is a good time interval between last night and today
-		foreach (int tch, act->iTeachersList) {
-			const int MIN_GAP_DIFF_BETWEEN_DAYS = 3;
-			int troubledAi = -1;
-			if (h < MIN_GAP_DIFF_BETWEEN_DAYS) {
-				int previousDay = d-1;
-				if (previousDay >= 0) {
-					for (int hi = gt.rules.nHoursPerDay - 1; hi >= gt.rules.nHoursPerDay - MIN_GAP_DIFF_BETWEEN_DAYS + h; hi--) {
-						int ai2=teachersTimetable(tch,previousDay,hi);
-						if (ai2 >= 0) {
-							troubledAi = ai2;
-							break;
-						}
-					}
-				}
-			}
-			if (h + act->duration > gt.rules.nHoursPerDay - MIN_GAP_DIFF_BETWEEN_DAYS) {
-				int nextDay = d+1;
-				if (nextDay < gt.rules.nDaysPerWeek) {
-					int remainingGapsToday = gt.rules.nHoursPerDay - (h + act->duration);
-					for (int hi = 0; hi < MIN_GAP_DIFF_BETWEEN_DAYS-remainingGapsToday; hi++) {
-						int ai2=teachersTimetable(tch,nextDay,hi);
-						if (ai2 >= 0) {
-							troubledAi = ai2;
-							break;
-						}
-					}
-				}
-			}
-			if (troubledAi >= 0) {
-				if(fixedTimeActivity[troubledAi] || swappedActivities[troubledAi]){
-					okbasictime=false;
-					goto impossiblebasictime;
-				}
-
-				if(!conflActivities[newtime].contains(troubledAi)){
-					conflActivities[newtime].append(troubledAi);
-					nConflActivities[newtime]++;
-					assert(nConflActivities[newtime]==conflActivities[newtime].count());
-				}
-			}
-		}
 
 impossiblebasictime:
 		if(!okbasictime){
@@ -7466,6 +7426,247 @@ impossibleteachersmaxspan9perday:
 		}
 
 		////////////////////////////END max teachers span 9 per day
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+		//for rodolforg, respecting teachers min resting time (currently 3)
+		okteachersminresting3timeslots=true;
+
+		foreach(int tch, act->iTeachersList){
+			if(1){
+				//preliminary test
+
+				//phase 1 - activity is at the end of the day (last day not considered)
+				int _cnt1=0;
+				if(d <= gt.rules.nDaysPerWeek-2 && h+act->duration-1 >= gt.rules.nHoursPerDay-TEACHERS_MIN_RESTING_TIME_SLOTS){
+					if(d >= 0 && d <= gt.rules.nDaysPerWeek-2 && h+act->duration-1 >= gt.rules.nHoursPerDay-TEACHERS_MIN_RESTING_TIME_SLOTS){
+						for(int h2=gt.rules.nHoursPerDay-1; h2>h+act->duration-1; h2--){
+							int ai2=newTeachersTimetable(tch, d, h2);
+							if(ai2>=0 && !conflActivities[newtime].contains(ai2))
+								break;
+							else
+								_cnt1++;
+						}
+						for(int h2=0; h2<TEACHERS_MIN_RESTING_TIME_SLOTS; h2++){
+							int ai2=newTeachersTimetable(tch, d+1, h2);
+							if(ai2>=0 && !conflActivities[newtime].contains(ai2))
+								break;
+							else
+								_cnt1++;
+						}
+					}
+				}
+				else
+					_cnt1=TEACHERS_MIN_RESTING_TIME_SLOTS;
+
+				//phase 2 - activity is at the beginning of the day (first day not considered)
+				int _cnt2=0;
+				if(d>=1 && h<=TEACHERS_MIN_RESTING_TIME_SLOTS-1){
+					if(d>=1 && d<=gt.rules.nDaysPerWeek-1 && h<TEACHERS_MIN_RESTING_TIME_SLOTS){
+						for(int h2=gt.rules.nHoursPerDay-1; h2>=gt.rules.nHoursPerDay-TEACHERS_MIN_RESTING_TIME_SLOTS; h2--){
+							int ai2=newTeachersTimetable(tch, d-1, h2);
+							if(ai2>=0 && !conflActivities[newtime].contains(ai2))
+								break;
+							else
+								_cnt2++;
+						}
+						for(int h2=0; h2<h; h2++){
+							int ai2=newTeachersTimetable(tch, d, h2);
+							if(ai2>=0 && !conflActivities[newtime].contains(ai2))
+								break;
+							else
+								_cnt2++;
+						}
+					}
+				}
+				else
+					_cnt2=TEACHERS_MIN_RESTING_TIME_SLOTS;
+
+				if(_cnt1<TEACHERS_MIN_RESTING_TIME_SLOTS && _cnt2<TEACHERS_MIN_RESTING_TIME_SLOTS){
+					//TEACHERS_MIN_RESTING_TIME_SLOTS too large and gt.rules.nHoursPerDay too little
+					assert(0);
+				}
+
+				if(_cnt1>=TEACHERS_MIN_RESTING_TIME_SLOTS && _cnt2>=TEACHERS_MIN_RESTING_TIME_SLOTS)
+					//OK
+					continue;
+
+				if(_cnt1<TEACHERS_MIN_RESTING_TIME_SLOTS){
+					QList<int> removableActs;
+					for(int h2=gt.rules.nHoursPerDay-TEACHERS_MIN_RESTING_TIME_SLOTS; h2<gt.rules.nHoursPerDay; h2++){
+						int ai2=newTeachersTimetable(tch, d, h2);
+						if(ai2!=ai && !removableActs.contains(ai2) && !fixedTimeActivity[ai2] && !swappedActivities[ai2] && !conflActivities[newtime].contains(ai2))
+							removableActs.append(ai2);
+					}
+					for(int h2=0; h2<TEACHERS_MIN_RESTING_TIME_SLOTS; h2++){
+						int ai2=newTeachersTimetable(tch, d+1, h2);
+						if(ai2!=ai && !removableActs.contains(ai2) && !fixedTimeActivity[ai2] && !swappedActivities[ai2] && !conflActivities[newtime].contains(ai2))
+							removableActs.append(ai2);
+					}
+
+					for(;;){
+						int j;
+
+						if(removableActs.count()==0){
+							okteachersminresting3timeslots=false;
+							goto impossibleteachersminresting3timeslots;
+						}
+
+						if(level==0){
+							int optMinWrong=INF;
+
+							QList<int> tl;
+
+							for(int q=0; q<removableActs.count(); q++){
+								int ai2=removableActs.at(q);
+								if(optMinWrong>triedRemovals(ai2,c.times[ai2])){
+									optMinWrong=triedRemovals(ai2,c.times[ai2]);
+								}
+							}
+
+							for(int q=0; q<removableActs.count(); q++){
+								int ai2=removableActs.at(q);
+								if(optMinWrong==triedRemovals(ai2,c.times[ai2]))
+									tl.append(q);
+							}
+
+							assert(tl.size()>=1);
+							j=tl.at(RandomKnuth::pick(tl.size()));
+
+							assert(j>=0 && j<removableActs.count());
+						}
+						else{
+							j=RandomKnuth::pick(removableActs.count());
+						}
+
+						assert(j>=0);
+
+						int ai2=removableActs.at(j);
+
+						int t=removableActs.removeAll(ai2);
+						assert(t==1);
+
+						assert(!conflActivities[newtime].contains(ai2));
+						conflActivities[newtime].append(ai2);
+						nConflActivities[newtime]++;
+						assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+
+						int cnt1=0;
+						if(d >= 0 && d <= gt.rules.nDaysPerWeek-2 && h+act->duration-1 >= gt.rules.nHoursPerDay-TEACHERS_MIN_RESTING_TIME_SLOTS){
+							for(int h2=gt.rules.nHoursPerDay-1; h2>h+act->duration-1; h2--){
+								int ai2=newTeachersTimetable(tch, d, h2);
+								if(ai2>=0 && !conflActivities[newtime].contains(ai2))
+									break;
+								else
+									cnt1++;
+							}
+							for(int h2=0; h2<TEACHERS_MIN_RESTING_TIME_SLOTS; h2++){
+								int ai2=newTeachersTimetable(tch, d+1, h2);
+								if(ai2>=0 && !conflActivities[newtime].contains(ai2))
+									break;
+								else
+									cnt1++;
+							}
+						}
+						if(cnt1>=TEACHERS_MIN_RESTING_TIME_SLOTS)
+							break;
+					}
+				}
+				else if(_cnt2<TEACHERS_MIN_RESTING_TIME_SLOTS){
+					QList<int> removableActs;
+					for(int h2=gt.rules.nHoursPerDay-TEACHERS_MIN_RESTING_TIME_SLOTS; h2<gt.rules.nHoursPerDay; h2++){
+						int ai2=newTeachersTimetable(tch, d-1, h2);
+						if(ai2!=ai && !removableActs.contains(ai2) && !fixedTimeActivity[ai2] && !swappedActivities[ai2] && !conflActivities[newtime].contains(ai2))
+							removableActs.append(ai2);
+					}
+					for(int h2=0; h2<TEACHERS_MIN_RESTING_TIME_SLOTS; h2++){
+						int ai2=newTeachersTimetable(tch, d, h2);
+						if(ai2!=ai && !removableActs.contains(ai2) && !fixedTimeActivity[ai2] && !swappedActivities[ai2] && !conflActivities[newtime].contains(ai2))
+							removableActs.append(ai2);
+					}
+
+					for(;;){
+						int j;
+
+						if(removableActs.count()==0){
+							okteachersminresting3timeslots=false;
+							goto impossibleteachersminresting3timeslots;
+						}
+
+						if(level==0){
+							int optMinWrong=INF;
+
+							QList<int> tl;
+
+							for(int q=0; q<removableActs.count(); q++){
+								int ai2=removableActs.at(q);
+								if(optMinWrong>triedRemovals(ai2,c.times[ai2])){
+									optMinWrong=triedRemovals(ai2,c.times[ai2]);
+								}
+							}
+
+							for(int q=0; q<removableActs.count(); q++){
+								int ai2=removableActs.at(q);
+								if(optMinWrong==triedRemovals(ai2,c.times[ai2]))
+									tl.append(q);
+							}
+
+							assert(tl.size()>=1);
+							j=tl.at(RandomKnuth::pick(tl.size()));
+
+							assert(j>=0 && j<removableActs.count());
+						}
+						else{
+							j=RandomKnuth::pick(removableActs.count());
+						}
+
+						assert(j>=0);
+
+						int ai2=removableActs.at(j);
+
+						int t=removableActs.removeAll(ai2);
+						assert(t==1);
+
+						assert(!conflActivities[newtime].contains(ai2));
+						conflActivities[newtime].append(ai2);
+						nConflActivities[newtime]++;
+						assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+
+						int cnt2=0;
+						if(d>=1 && d<=gt.rules.nDaysPerWeek-1 && h<TEACHERS_MIN_RESTING_TIME_SLOTS){
+							for(int h2=gt.rules.nHoursPerDay-1; h2>=gt.rules.nHoursPerDay-TEACHERS_MIN_RESTING_TIME_SLOTS; h2--){
+								int ai2=newTeachersTimetable(tch, d-1, h2);
+								if(ai2>=0 && !conflActivities[newtime].contains(ai2))
+									break;
+								else
+									cnt2++;
+							}
+							for(int h2=0; h2<h; h2++){
+								int ai2=newTeachersTimetable(tch, d, h2);
+								if(ai2>=0 && !conflActivities[newtime].contains(ai2))
+									break;
+								else
+									cnt2++;
+							}
+						}
+						if(cnt2>=TEACHERS_MIN_RESTING_TIME_SLOTS)
+							break;
+					}
+				}
+			}
+		}
+
+impossibleteachersminresting3timeslots:
+		if(!okteachersminresting3timeslots){
+			if(updateSubgroups || updateTeachers)
+				removeAiFromNewTimetable(ai, act, d, h);
+
+			nConflActivities[newtime]=MAX_ACTIVITIES;
+			continue;
+		}
+
+		////////////////////////////END max teachers min resting time
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 
