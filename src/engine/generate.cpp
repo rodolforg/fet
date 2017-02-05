@@ -7440,21 +7440,19 @@ impossibleteachersmaxspan9perday:
 				//phase 1 - activity is at the end of the day (last day not considered)
 				int _cnt1=0;
 				if(d <= gt.rules.nDaysPerWeek-2 && h+act->duration-1 >= gt.rules.nHoursPerDay-TEACHERS_MIN_RESTING_TIME_SLOTS){
-					if(d >= 0 && d <= gt.rules.nDaysPerWeek-2 && h+act->duration-1 >= gt.rules.nHoursPerDay-TEACHERS_MIN_RESTING_TIME_SLOTS){
-						for(int h2=gt.rules.nHoursPerDay-1; h2>h+act->duration-1; h2--){
-							int ai2=newTeachersTimetable(tch, d, h2);
-							if(ai2>=0 && !conflActivities[newtime].contains(ai2))
-								break;
-							else
-								_cnt1++;
-						}
-						for(int h2=0; h2<TEACHERS_MIN_RESTING_TIME_SLOTS; h2++){
-							int ai2=newTeachersTimetable(tch, d+1, h2);
-							if(ai2>=0 && !conflActivities[newtime].contains(ai2))
-								break;
-							else
-								_cnt1++;
-						}
+					for(int h2=gt.rules.nHoursPerDay-1; h2>h+act->duration-1; h2--){
+						int ai2=newTeachersTimetable(tch, d, h2);
+						if(ai2>=0 && !conflActivities[newtime].contains(ai2))
+							break;
+						else
+							_cnt1++;
+					}
+					for(int h2=0; h2<TEACHERS_MIN_RESTING_TIME_SLOTS; h2++){
+						int ai2=newTeachersTimetable(tch, d+1, h2);
+						if(ai2>=0 && !conflActivities[newtime].contains(ai2))
+							break;
+						else
+							_cnt1++;
 					}
 				}
 				else
@@ -7463,21 +7461,19 @@ impossibleteachersmaxspan9perday:
 				//phase 2 - activity is at the beginning of the day (first day not considered)
 				int _cnt2=0;
 				if(d>=1 && h<=TEACHERS_MIN_RESTING_TIME_SLOTS-1){
-					if(d>=1 && d<=gt.rules.nDaysPerWeek-1 && h<TEACHERS_MIN_RESTING_TIME_SLOTS){
-						for(int h2=gt.rules.nHoursPerDay-1; h2>=gt.rules.nHoursPerDay-TEACHERS_MIN_RESTING_TIME_SLOTS; h2--){
-							int ai2=newTeachersTimetable(tch, d-1, h2);
-							if(ai2>=0 && !conflActivities[newtime].contains(ai2))
-								break;
-							else
-								_cnt2++;
-						}
-						for(int h2=0; h2<h; h2++){
-							int ai2=newTeachersTimetable(tch, d, h2);
-							if(ai2>=0 && !conflActivities[newtime].contains(ai2))
-								break;
-							else
-								_cnt2++;
-						}
+					for(int h2=gt.rules.nHoursPerDay-1; h2>=gt.rules.nHoursPerDay-TEACHERS_MIN_RESTING_TIME_SLOTS; h2--){
+						int ai2=newTeachersTimetable(tch, d-1, h2);
+						if(ai2>=0 && !conflActivities[newtime].contains(ai2))
+							break;
+						else
+							_cnt2++;
+					}
+					for(int h2=0; h2<h; h2++){
+						int ai2=newTeachersTimetable(tch, d, h2);
+						if(ai2>=0 && !conflActivities[newtime].contains(ai2))
+							break;
+						else
+							_cnt2++;
 					}
 				}
 				else
@@ -7553,7 +7549,7 @@ impossibleteachersmaxspan9perday:
 						assert(conflActivities[newtime].count()==nConflActivities[newtime]);
 
 						int cnt1=0;
-						if(d >= 0 && d <= gt.rules.nDaysPerWeek-2 && h+act->duration-1 >= gt.rules.nHoursPerDay-TEACHERS_MIN_RESTING_TIME_SLOTS){
+						if(d <= gt.rules.nDaysPerWeek-2 && h+act->duration-1 >= gt.rules.nHoursPerDay-TEACHERS_MIN_RESTING_TIME_SLOTS){
 							for(int h2=gt.rules.nHoursPerDay-1; h2>h+act->duration-1; h2--){
 								int ai2=newTeachersTimetable(tch, d, h2);
 								if(ai2>=0 && !conflActivities[newtime].contains(ai2))
@@ -7634,7 +7630,7 @@ impossibleteachersmaxspan9perday:
 						assert(conflActivities[newtime].count()==nConflActivities[newtime]);
 
 						int cnt2=0;
-						if(d>=1 && d<=gt.rules.nDaysPerWeek-1 && h<TEACHERS_MIN_RESTING_TIME_SLOTS){
+						if(d>=1 && h<TEACHERS_MIN_RESTING_TIME_SLOTS){
 							for(int h2=gt.rules.nHoursPerDay-1; h2>=gt.rules.nHoursPerDay-TEACHERS_MIN_RESTING_TIME_SLOTS; h2--){
 								int ai2=newTeachersTimetable(tch, d-1, h2);
 								if(ai2>=0 && !conflActivities[newtime].contains(ai2))
