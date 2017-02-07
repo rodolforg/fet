@@ -21,14 +21,8 @@ File lockunlock.cpp
  *                                                                         *
  ***************************************************************************/
 
-//#include <QSpinBox>
-
-//extern QSpinBox* pcommunicationSpinBox;
-
 #include "lockunlock.h"
-#include "timetable_defs.h"
 #include "timetable.h"
-#include "solution.h"
 
 extern Timetable gt;
 
@@ -121,16 +115,5 @@ void LockUnlock::computeLockedUnlockedActivitiesOnlySpace()
 
 void LockUnlock::increaseCommunicationSpinBox()
 {
-/*	assert(pcommunicationSpinBox!=NULL);
-	
-	int q=pcommunicationSpinBox->value();	//needed to display locked and unlocked times and rooms
-	//cout<<"communication spin box old value: "<<pcommunicationSpinBox->value()<<", ";
-	q++;
-	assert(pcommunicationSpinBox->maximum()>pcommunicationSpinBox->minimum());
-	if(q > pcommunicationSpinBox->maximum())
-		q=pcommunicationSpinBox->minimum();
-	pcommunicationSpinBox->setValue(q);*/
-	//cout<<"changed to new value: "<<pcommunicationSpinBox->value()<<endl;
-	
 	communicationSpinBox.increaseValue();
 }
