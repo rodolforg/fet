@@ -187,7 +187,7 @@ TimetableViewTeachersForm::TimetableViewTeachersForm(QWidget* parent): QDialog(p
 		teachersListWidget->setCurrentRow(0);
 
 	//added by Volker Dirr
-	connect(&communicationSpinBox, SIGNAL(valueChanged(int)), this, SLOT(updateTeachersTimetableTable()));
+	connect(&communicationSpinBox, SIGNAL(valueChanged()), this, SLOT(updateTeachersTimetableTable()));
 }
 
 TimetableViewTeachersForm::~TimetableViewTeachersForm()
