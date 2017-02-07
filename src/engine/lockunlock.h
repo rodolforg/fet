@@ -28,18 +28,12 @@ File lockunlock.h
 
 class CommunicationSpinBox: public QObject{
 	Q_OBJECT
-
-private:
-	int value;
-	int maxValue;
-	int minValue;
 	
 public:
 	CommunicationSpinBox();
-	~CommunicationSpinBox();
 	
 signals:
-	int valueChanged(int newValue);
+	int valueChanged();
 	
 public slots:
 	void increaseValue();

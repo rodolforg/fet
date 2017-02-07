@@ -190,7 +190,7 @@ TimetableViewStudentsForm::TimetableViewStudentsForm(QWidget* parent): QDialog(p
 		yearsListWidget->setCurrentRow(0);
 
 	//added by Volker Dirr
-	connect(&communicationSpinBox, SIGNAL(valueChanged(int)), this, SLOT(updateStudentsTimetableTable()));
+	connect(&communicationSpinBox, SIGNAL(valueChanged()), this, SLOT(updateStudentsTimetableTable()));
 }
 
 TimetableViewStudentsForm::~TimetableViewStudentsForm()

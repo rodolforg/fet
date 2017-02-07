@@ -42,26 +42,11 @@ CommunicationSpinBox communicationSpinBox;
 
 CommunicationSpinBox::CommunicationSpinBox()
 {
-	minValue=0;
-	maxValue=9;
-	value=0;
-}
-
-CommunicationSpinBox::~CommunicationSpinBox()
-{
 }
 
 void CommunicationSpinBox::increaseValue()
 {
-	assert(maxValue>minValue);
-	assert(value>=minValue && value<=maxValue);
-	value++;
-	if(value>maxValue)
-		value=minValue;
-		
-	//cout<<"comm. spin box: increased value, crt value=="<<value<<endl;
-	
-	emit(valueChanged(value));
+	emit(valueChanged());
 }
 
 

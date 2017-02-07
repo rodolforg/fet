@@ -201,7 +201,7 @@ TimetableViewRoomsForm::TimetableViewRoomsForm(QWidget* parent): QDialog(parent)
 		roomsListWidget->setCurrentRow(0);
 
 	//added by Volker Dirr
-	connect(&communicationSpinBox, SIGNAL(valueChanged(int)), this, SLOT(updateRoomsTimetableTable()));
+	connect(&communicationSpinBox, SIGNAL(valueChanged()), this, SLOT(updateRoomsTimetableTable()));
 }
 
 TimetableViewRoomsForm::~TimetableViewRoomsForm()
