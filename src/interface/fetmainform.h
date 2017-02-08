@@ -27,6 +27,7 @@
 
 #include <QMap>
 
+#include <QSignalMapper>
 
 class QNetworkAccessManager;
 class QNetworkReply;
@@ -70,6 +71,8 @@ private:
 	void populateLanguagesMap(QMap<QString, QString>& languagesMap);
 
 	bool isValidFilepathForSaving(const QString &filepath);
+
+	QSignalMapper signalMapper;
 
 public:
 	FetMainForm();
@@ -149,8 +152,9 @@ public slots:
 	void on_dataSubactivitiesAction_triggered();
 	void on_dataRoomsAction_triggered();
 	void on_dataBuildingsAction_triggered();
-	void on_dataAllTimeConstraintsAction_triggered();
-	void on_dataAllSpaceConstraintsAction_triggered();
+
+	void openConstraintDialog(int dialogIdx);
+	void openConstraintDialog(const QString& name);
 
 	void on_dataSpaceConstraintsRoomNotAvailableTimesAction_triggered();
 
