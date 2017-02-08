@@ -27,7 +27,6 @@
 
 #include <QMap>
 
-#include <QSpinBox>
 
 class QNetworkAccessManager;
 class QNetworkReply;
@@ -47,8 +46,6 @@ private:
 	QSize originalWindowSize;
 	QRect windowSettingsRect;
 
-	QSpinBox communicationSpinBox;
-	
 	QMenu* shortcutBasicMenu;
 	QMenu* shortcutDataSpaceMenu;
 	QMenu* shortcutDataAdvancedMenu;
