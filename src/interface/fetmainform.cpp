@@ -284,6 +284,123 @@ struct ConstraintDialogHelper {
 const ConstraintDialogHelper::Mapping ConstraintDialogHelper::constraintActions[] = {
 	{"AllTimeConstraints", fCreate<AllTimeConstraintsForm> },
 	{"AllSpaceConstraints", fCreate<AllSpaceConstraintsForm> },
+
+	{"SpaceConstraintsRoomNotAvailableTimes", fCreate<ConstraintRoomNotAvailableTimesForm> },
+	{"SpaceConstraintsBasicCompulsorySpace", fCreate<ConstraintBasicCompulsorySpaceForm>},
+	{"SpaceConstraintsActivityPreferredRoom", fCreate<ConstraintActivityPreferredRoomForm>},
+	{"SpaceConstraintsActivityPreferredRooms", fCreate<ConstraintActivityPreferredRoomsForm>},
+
+	{"SpaceConstraintsStudentsSetHomeRoom", fCreate<ConstraintStudentsSetHomeRoomForm>},
+	{"SpaceConstraintsStudentsSetHomeRooms", fCreate<ConstraintStudentsSetHomeRoomsForm>},
+	{"SpaceConstraintsTeacherHomeRoom", fCreate<ConstraintTeacherHomeRoomForm>},
+	{"SpaceConstraintsTeacherHomeRooms", fCreate<ConstraintTeacherHomeRoomsForm>},
+
+	{"SpaceConstraintsStudentsSetMaxBuildingChangesPerDay", fCreate<ConstraintStudentsSetMaxBuildingChangesPerDayForm>},
+	{"SpaceConstraintsStudentsMaxBuildingChangesPerDay", fCreate<ConstraintStudentsMaxBuildingChangesPerDayForm>},
+	{"SpaceConstraintsStudentsSetMaxBuildingChangesPerWeek", fCreate<ConstraintStudentsSetMaxBuildingChangesPerWeekForm>},
+	{"SpaceConstraintsStudentsMaxBuildingChangesPerWeek", fCreate<ConstraintStudentsMaxBuildingChangesPerWeekForm>},
+	{"SpaceConstraintsStudentsSetMinGapsBetweenBuildingChanges", fCreate<ConstraintStudentsSetMinGapsBetweenBuildingChangesForm>},
+	{"SpaceConstraintsStudentsMinGapsBetweenBuildingChanges", fCreate<ConstraintStudentsMinGapsBetweenBuildingChangesForm>},
+
+	{"SpaceConstraintsTeacherMaxBuildingChangesPerDay", fCreate<ConstraintTeacherMaxBuildingChangesPerDayForm>},
+	{"SpaceConstraintsTeachersMaxBuildingChangesPerDay", fCreate<ConstraintTeachersMaxBuildingChangesPerDayForm>},
+	{"SpaceConstraintsTeacherMaxBuildingChangesPerWeek", fCreate<ConstraintTeacherMaxBuildingChangesPerWeekForm>},
+	{"SpaceConstraintsTeachersMaxBuildingChangesPerWeek", fCreate<ConstraintTeachersMaxBuildingChangesPerWeekForm>},
+	{"SpaceConstraintsTeacherMinGapsBetweenBuildingChanges", fCreate<ConstraintTeacherMinGapsBetweenBuildingChangesForm>},
+	{"SpaceConstraintsTeachersMinGapsBetweenBuildingChanges", fCreate<ConstraintTeachersMinGapsBetweenBuildingChangesForm>},
+
+	{"SpaceConstraintsSubjectPreferredRoom", fCreate<ConstraintSubjectPreferredRoomForm>},
+	{"SpaceConstraintsSubjectPreferredRooms", fCreate<ConstraintSubjectPreferredRoomsForm>},
+	{"SpaceConstraintsSubjectActivityTagPreferredRoom", fCreate<ConstraintSubjectActivityTagPreferredRoomForm>},
+	{"SpaceConstraintsSubjectActivityTagPreferredRooms", fCreate<ConstraintSubjectActivityTagPreferredRoomsForm>},
+
+	{"SpaceConstraintsActivityTagPreferredRoom", fCreate<ConstraintActivityTagPreferredRoomForm>},
+	{"SpaceConstraintsActivityTagPreferredRooms", fCreate<ConstraintActivityTagPreferredRoomsForm>},
+
+	{"SpaceConstraintsActivitiesOccupyMaxDifferentRooms", fCreate<ConstraintActivitiesOccupyMaxDifferentRoomsForm>},
+	{"SpaceConstraintsActivitiesSameRoomIfConsecutive", fCreate<ConstraintActivitiesSameRoomIfConsecutiveForm>},
+
+	{"TimeConstraintsBasicCompulsoryTime", fCreate<ConstraintBasicCompulsoryTimeForm>},
+	{"TimeConstraintsBreakTimes", fCreate<ConstraintBreakTimesForm>},
+
+	{"TimeConstraintsTwoActivitiesConsecutive", fCreate<ConstraintTwoActivitiesConsecutiveForm>},
+	{"TimeConstraintsTwoActivitiesGrouped", fCreate<ConstraintTwoActivitiesGroupedForm>},
+	{"TimeConstraintsThreeActivitiesGrouped", fCreate<ConstraintThreeActivitiesGroupedForm>},
+	{"TimeConstraintsTwoActivitiesOrdered", fCreate<ConstraintTwoActivitiesOrderedForm>},
+	{"TimeConstraintsActivityPreferredStartingTime", fCreate<ConstraintActivityPreferredStartingTimeForm>},
+	{"TimeConstraintsActivityPreferredTimeSlots", fCreate<ConstraintActivityPreferredTimeSlotsForm>},
+	{"TimeConstraintsActivitiesPreferredTimeSlots", fCreate<ConstraintActivitiesPreferredTimeSlotsForm>},
+	{"TimeConstraintsSubactivitiesPreferredTimeSlots", fCreate<ConstraintSubactivitiesPreferredTimeSlotsForm>},
+	{"TimeConstraintsActivityPreferredStartingTimes", fCreate<ConstraintActivityPreferredStartingTimesForm>},
+	{"TimeConstraintsActivitiesPreferredStartingTimes", fCreate<ConstraintActivitiesPreferredStartingTimesForm>},
+	{"TimeConstraintsSubactivitiesPreferredStartingTimes", fCreate<ConstraintSubactivitiesPreferredStartingTimesForm>},
+	{"TimeConstraintsActivitiesSameStartingTime", fCreate<ConstraintActivitiesSameStartingTimeForm>},
+	{"TimeConstraintsActivitiesSameStartingHour", fCreate<ConstraintActivitiesSameStartingHourForm>},
+	{"TimeConstraintsActivitiesSameStartingDay", fCreate<ConstraintActivitiesSameStartingDayForm>},
+	{"TimeConstraintsActivitiesOccupyMaxTimeSlotsFromSelection", fCreate<ConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm>},
+	{"TimeConstraintsActivitiesMaxSimultaneousInSelectedTimeSlots", fCreate<ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm>},
+	{"TimeConstraintsActivitiesNotOverlapping", fCreate<ConstraintActivitiesNotOverlappingForm>},
+	{"TimeConstraintsMinDaysBetweenActivities", fCreate<ConstraintMinDaysBetweenActivitiesForm>},
+	{"TimeConstraintsMaxDaysBetweenActivities", fCreate<ConstraintMaxDaysBetweenActivitiesForm>},
+	{"TimeConstraintsMinGapsBetweenActivities", fCreate<ConstraintMinGapsBetweenActivitiesForm>},
+	{"TimeConstraintsActivityEndsStudentsDay", fCreate<ConstraintActivityEndsStudentsDayForm>},
+	{"TimeConstraintsActivitiesEndStudentsDay", fCreate<ConstraintActivitiesEndStudentsDayForm>},
+
+	{"TimeConstraintsTeacherNotAvailableTimes", fCreate<ConstraintTeacherNotAvailableTimesForm>},
+	{"TimeConstraintsTeacherMaxDaysPerWeek", fCreate<ConstraintTeacherMaxDaysPerWeekForm>},
+	{"TimeConstraintsTeachersMaxDaysPerWeek", fCreate<ConstraintTeachersMaxDaysPerWeekForm>},
+
+	{"TimeConstraintsTeacherMinDaysPerWeek", fCreate<ConstraintTeacherMinDaysPerWeekForm>},
+	{"TimeConstraintsTeachersMinDaysPerWeek", fCreate<ConstraintTeachersMinDaysPerWeekForm>},
+
+	{"TimeConstraintsTeachersMaxHoursDaily", fCreate<ConstraintTeachersMaxHoursDailyForm>},
+	{"TimeConstraintsTeacherMaxHoursDaily", fCreate<ConstraintTeacherMaxHoursDailyForm>},
+	{"TimeConstraintsTeachersMaxHoursContinuously", fCreate<ConstraintTeachersMaxHoursContinuouslyForm>},
+	{"TimeConstraintsTeacherMaxHoursContinuously", fCreate<ConstraintTeacherMaxHoursContinuouslyForm>},
+
+	{"TimeConstraintsTeachersActivityTagMaxHoursContinuously", fCreate<ConstraintTeachersActivityTagMaxHoursContinuouslyForm>},
+	{"TimeConstraintsTeacherActivityTagMaxHoursContinuously", fCreate<ConstraintTeacherActivityTagMaxHoursContinuouslyForm>},
+
+//	{"TimeConstraintsTeachersActivityTagMaxHoursDaily", fCreate<ConstraintTeachersActivityTagMaxHoursDailyForm>},
+//	{"TimeConstraintsTeacherActivityTagMaxHoursDaily", fCreate<ConstraintTeacherActivityTagMaxHoursDailyForm>},
+
+	{"TimeConstraintsTeachersMinHoursDaily", fCreate<ConstraintTeachersMinHoursDailyForm>},
+	{"TimeConstraintsTeacherMinHoursDaily", fCreate<ConstraintTeacherMinHoursDailyForm>},
+	{"TimeConstraintsTeachersMaxGapsPerWeek", fCreate<ConstraintTeachersMaxGapsPerWeekForm>},
+	{"TimeConstraintsTeacherMaxGapsPerWeek", fCreate<ConstraintTeacherMaxGapsPerWeekForm>},
+	{"TimeConstraintsTeachersMaxGapsPerDay", fCreate<ConstraintTeachersMaxGapsPerDayForm>},
+	{"TimeConstraintsTeacherMaxGapsPerDay", fCreate<ConstraintTeacherMaxGapsPerDayForm>},
+
+	{"TimeConstraintsTeacherIntervalMaxDaysPerWeek", fCreate<ConstraintTeacherIntervalMaxDaysPerWeekForm>},
+	{"TimeConstraintsTeachersIntervalMaxDaysPerWeek", fCreate<ConstraintTeachersIntervalMaxDaysPerWeekForm>},
+	{"TimeConstraintsStudentsSetIntervalMaxDaysPerWeek", fCreate<ConstraintStudentsSetIntervalMaxDaysPerWeekForm>},
+	{"TimeConstraintsStudentsIntervalMaxDaysPerWeek", fCreate<ConstraintStudentsIntervalMaxDaysPerWeekForm>},
+
+	{"TimeConstraintsStudentsSetMaxDaysPerWeek", fCreate<ConstraintStudentsSetMaxDaysPerWeekForm>},
+	{"TimeConstraintsStudentsMaxDaysPerWeek", fCreate<ConstraintStudentsMaxDaysPerWeekForm>},
+
+	{"TimeConstraintsStudentsSetNotAvailableTimes", fCreate<ConstraintStudentsSetNotAvailableTimesForm>},
+	{"TimeConstraintsStudentsSetMaxGapsPerWeek", fCreate<ConstraintStudentsSetMaxGapsPerWeekForm>},
+	{"TimeConstraintsStudentsMaxGapsPerWeek", fCreate<ConstraintStudentsMaxGapsPerWeekForm>},
+
+//	{"TimeConstraintsStudentsSetMaxGapsPerDay", fCreate<ConstraintStudentsSetMaxGapsPerDayForm>},
+//	{"TimeConstraintsStudentsMaxGapsPerDay", fCreate<ConstraintStudentsMaxGapsPerDayForm>},
+
+	{"TimeConstraintsStudentsEarlyMaxBeginningsAtSecondHour", fCreate<ConstraintStudentsEarlyMaxBeginningsAtSecondHourForm>},
+	{"TimeConstraintsStudentsSetEarlyMaxBeginningsAtSecondHour", fCreate<ConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm>},
+	{"TimeConstraintsStudentsMaxHoursDaily", fCreate<ConstraintStudentsMaxHoursDailyForm>},
+	{"TimeConstraintsStudentsSetMaxHoursDaily", fCreate<ConstraintStudentsSetMaxHoursDailyForm>},
+	{"TimeConstraintsStudentsMaxHoursContinuously", fCreate<ConstraintStudentsMaxHoursContinuouslyForm>},
+	{"TimeConstraintsStudentsSetMaxHoursContinuously", fCreate<ConstraintStudentsSetMaxHoursContinuouslyForm>},
+
+	{"TimeConstraintsStudentsActivityTagMaxHoursContinuously", fCreate<ConstraintStudentsActivityTagMaxHoursContinuouslyForm>},
+	{"TimeConstraintsStudentsSetActivityTagMaxHoursContinuously", fCreate<ConstraintStudentsSetActivityTagMaxHoursContinuouslyForm>},
+
+//	{"TimeConstraintsStudentsActivityTagMaxHoursDaily", fCreate<ConstraintStudentsActivityTagMaxHoursDailyForm>},
+//	{"TimeConstraintsStudentsSetActivityTagMaxHoursDaily", fCreate<ConstraintStudentsSetActivityTagMaxHoursDailyForm>},
+
+	{"TimeConstraintsStudentsMinHoursDaily", fCreate<ConstraintStudentsMinHoursDailyForm>},
+	{"TimeConstraintsStudentsSetMinHoursDaily", fCreate<ConstraintStudentsSetMinHoursDailyForm>},
 };
 
 const int ConstraintDialogHelper::numConstraintActions = sizeof(constraintActions)/sizeof(constraintActions[0]);
@@ -1969,801 +2086,6 @@ void FetMainForm::openConstraintDialog(const QString& name)
 		cerr << "Constraint Dialog not found: " << name.toStdString() << endl;
 }
 
-void FetMainForm::on_dataTimeConstraintsTwoActivitiesConsecutiveAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTwoActivitiesConsecutiveForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsTwoActivitiesGroupedAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTwoActivitiesGroupedForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsThreeActivitiesGroupedAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintThreeActivitiesGroupedForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsTwoActivitiesOrderedAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTwoActivitiesOrderedForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsActivitiesPreferredTimeSlotsAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintActivitiesPreferredTimeSlotsForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsActivitiesPreferredStartingTimesAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintActivitiesPreferredStartingTimesForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsSubactivitiesPreferredTimeSlotsAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintSubactivitiesPreferredTimeSlotsForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsSubactivitiesPreferredStartingTimesAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintSubactivitiesPreferredStartingTimesForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsActivityEndsStudentsDayAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintActivityEndsStudentsDayForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsActivitiesEndStudentsDayAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintActivitiesEndStudentsDayForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsActivitiesSameStartingTimeAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintActivitiesSameStartingTimeForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsActivitiesSameStartingHourAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintActivitiesSameStartingHourForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsActivitiesSameStartingDayAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintActivitiesSameStartingDayForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsActivitiesOccupyMaxTimeSlotsFromSelectionAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsActivitiesMaxSimultaneousInSelectedTimeSlotsAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsTeacherNotAvailableTimesAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTeacherNotAvailableTimesForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsBasicCompulsoryTimeAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintBasicCompulsoryTimeForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataSpaceConstraintsBasicCompulsorySpaceAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintBasicCompulsorySpaceForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataSpaceConstraintsRoomNotAvailableTimesAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintRoomNotAvailableTimesForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataSpaceConstraintsActivityPreferredRoomAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintActivityPreferredRoomForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataSpaceConstraintsActivityPreferredRoomsAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintActivityPreferredRoomsForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataSpaceConstraintsSubjectPreferredRoomAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintSubjectPreferredRoomForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataSpaceConstraintsSubjectPreferredRoomsAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintSubjectPreferredRoomsForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataSpaceConstraintsSubjectActivityTagPreferredRoomAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintSubjectActivityTagPreferredRoomForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataSpaceConstraintsSubjectActivityTagPreferredRoomsAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintSubjectActivityTagPreferredRoomsForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-///added 6 apr 2009
-void FetMainForm::on_dataSpaceConstraintsActivityTagPreferredRoomAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintActivityTagPreferredRoomForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataSpaceConstraintsActivityTagPreferredRoomsAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintActivityTagPreferredRoomsForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-///
-
-void FetMainForm::on_dataSpaceConstraintsStudentsSetHomeRoomAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintStudentsSetHomeRoomForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataSpaceConstraintsStudentsSetHomeRoomsAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintStudentsSetHomeRoomsForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-
-void FetMainForm::on_dataSpaceConstraintsStudentsSetMaxBuildingChangesPerDayAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintStudentsSetMaxBuildingChangesPerDayForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataSpaceConstraintsStudentsMaxBuildingChangesPerDayAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintStudentsMaxBuildingChangesPerDayForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataSpaceConstraintsStudentsSetMaxBuildingChangesPerWeekAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintStudentsSetMaxBuildingChangesPerWeekForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataSpaceConstraintsStudentsMaxBuildingChangesPerWeekAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintStudentsMaxBuildingChangesPerWeekForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataSpaceConstraintsStudentsSetMinGapsBetweenBuildingChangesAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintStudentsSetMinGapsBetweenBuildingChangesForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataSpaceConstraintsStudentsMinGapsBetweenBuildingChangesAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintStudentsMinGapsBetweenBuildingChangesForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataSpaceConstraintsTeacherMaxBuildingChangesPerDayAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTeacherMaxBuildingChangesPerDayForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-void FetMainForm::on_dataSpaceConstraintsTeachersMaxBuildingChangesPerDayAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTeachersMaxBuildingChangesPerDayForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataSpaceConstraintsTeacherMaxBuildingChangesPerWeekAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTeacherMaxBuildingChangesPerWeekForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataSpaceConstraintsTeachersMaxBuildingChangesPerWeekAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTeachersMaxBuildingChangesPerWeekForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataSpaceConstraintsTeacherMinGapsBetweenBuildingChangesAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTeacherMinGapsBetweenBuildingChangesForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataSpaceConstraintsTeachersMinGapsBetweenBuildingChangesAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTeachersMinGapsBetweenBuildingChangesForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataSpaceConstraintsTeacherHomeRoomAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTeacherHomeRoomForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataSpaceConstraintsTeacherHomeRoomsAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTeacherHomeRoomsForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsStudentsSetNotAvailableTimesAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintStudentsSetNotAvailableTimesForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsBreakTimesAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintBreakTimesForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsTeacherMaxDaysPerWeekAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTeacherMaxDaysPerWeekForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsTeachersMaxDaysPerWeekAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTeachersMaxDaysPerWeekForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsTeacherMinDaysPerWeekAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTeacherMinDaysPerWeekForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsTeachersMinDaysPerWeekAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTeachersMinDaysPerWeekForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsTeacherIntervalMaxDaysPerWeekAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTeacherIntervalMaxDaysPerWeekForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsTeachersIntervalMaxDaysPerWeekAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTeachersIntervalMaxDaysPerWeekForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsStudentsSetMaxDaysPerWeekAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintStudentsSetMaxDaysPerWeekForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsStudentsMaxDaysPerWeekAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintStudentsMaxDaysPerWeekForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsStudentsSetIntervalMaxDaysPerWeekAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintStudentsSetIntervalMaxDaysPerWeekForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsStudentsIntervalMaxDaysPerWeekAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintStudentsIntervalMaxDaysPerWeekForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsTeachersMaxHoursDailyAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTeachersMaxHoursDailyForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsTeacherMaxHoursDailyAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTeacherMaxHoursDailyForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsTeachersMaxHoursContinuouslyAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTeachersMaxHoursContinuouslyForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsTeacherMaxHoursContinuouslyAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTeacherMaxHoursContinuouslyForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsTeachersActivityTagMaxHoursContinuouslyAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTeachersActivityTagMaxHoursContinuouslyForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsTeacherActivityTagMaxHoursContinuouslyAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTeacherActivityTagMaxHoursContinuouslyForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
 void FetMainForm::on_dataTimeConstraintsTeachersActivityTagMaxHoursDailyAction_triggered()
 {
 	if(simulation_running){
@@ -2796,71 +2118,6 @@ void FetMainForm::on_dataTimeConstraintsTeacherActivityTagMaxHoursDailyAction_tr
 	}
 
 	ConstraintTeacherActivityTagMaxHoursDailyForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsTeachersMinHoursDailyAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTeachersMinHoursDailyForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsTeacherMinHoursDailyAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTeacherMinHoursDailyForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsActivityPreferredStartingTimeAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintActivityPreferredStartingTimeForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsStudentsSetMaxGapsPerWeekAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintStudentsSetMaxGapsPerWeekForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsStudentsMaxGapsPerWeekAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintStudentsMaxGapsPerWeekForm form(this);
 	setParentAndOtherThings(&form, this);
 	form.exec();
 }
@@ -2926,162 +2183,6 @@ void FetMainForm::on_dataTimeConstraintsStudentsMaxGapsPerDayAction_triggered()
 	form.exec();
 }
 
-void FetMainForm::on_dataTimeConstraintsTeachersMaxGapsPerWeekAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTeachersMaxGapsPerWeekForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsTeacherMaxGapsPerWeekAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTeacherMaxGapsPerWeekForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsTeachersMaxGapsPerDayAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTeachersMaxGapsPerDayForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsTeacherMaxGapsPerDayAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintTeacherMaxGapsPerDayForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsStudentsEarlyMaxBeginningsAtSecondHourAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintStudentsEarlyMaxBeginningsAtSecondHourForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsStudentsSetEarlyMaxBeginningsAtSecondHourAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsStudentsSetMaxHoursDailyAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintStudentsSetMaxHoursDailyForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsStudentsMaxHoursDailyAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintStudentsMaxHoursDailyForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsStudentsSetMaxHoursContinuouslyAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintStudentsSetMaxHoursContinuouslyForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsStudentsMaxHoursContinuouslyAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintStudentsMaxHoursContinuouslyForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsStudentsSetActivityTagMaxHoursContinuouslyAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintStudentsSetActivityTagMaxHoursContinuouslyForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsStudentsActivityTagMaxHoursContinuouslyAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintStudentsActivityTagMaxHoursContinuouslyForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
 void FetMainForm::on_dataTimeConstraintsStudentsSetActivityTagMaxHoursDailyAction_triggered()
 {
 	if(simulation_running){
@@ -3114,138 +2215,6 @@ void FetMainForm::on_dataTimeConstraintsStudentsActivityTagMaxHoursDailyAction_t
 	}
 
 	ConstraintStudentsActivityTagMaxHoursDailyForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsStudentsSetMinHoursDailyAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintStudentsSetMinHoursDailyForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsStudentsMinHoursDailyAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintStudentsMinHoursDailyForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsActivitiesNotOverlappingAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintActivitiesNotOverlappingForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsMinDaysBetweenActivitiesAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintMinDaysBetweenActivitiesForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsMaxDaysBetweenActivitiesAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintMaxDaysBetweenActivitiesForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsMinGapsBetweenActivitiesAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintMinGapsBetweenActivitiesForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsActivityPreferredTimeSlotsAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintActivityPreferredTimeSlotsForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-void FetMainForm::on_dataTimeConstraintsActivityPreferredStartingTimesAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintActivityPreferredStartingTimesForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-//2012-04-29
-void FetMainForm::on_dataSpaceConstraintsActivitiesOccupyMaxDifferentRoomsAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintActivitiesOccupyMaxDifferentRoomsForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-}
-
-//2013-09-14
-void FetMainForm::on_dataSpaceConstraintsActivitiesSameRoomIfConsecutiveAction_triggered()
-{
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
-	}
-
-	ConstraintActivitiesSameRoomIfConsecutiveForm form(this);
 	setParentAndOtherThings(&form, this);
 	form.exec();
 }
@@ -4427,7 +3396,7 @@ void FetMainForm::on_shortcutAdvancedTimeConstraintsPushButton_clicked()
 
 void FetMainForm::on_shortcutBreakTimeConstraintsPushButton_clicked()
 {
-	on_dataTimeConstraintsBreakTimesAction_triggered();
+	openConstraintDialog("TimeConstraintsBreakTimes");
 }
 
 void FetMainForm::on_shortcutTeachersTimeConstraintsPushButton_clicked()

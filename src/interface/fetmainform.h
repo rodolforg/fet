@@ -156,123 +156,12 @@ public slots:
 	void openConstraintDialog(int dialogIdx);
 	void openConstraintDialog(const QString& name);
 
-	void on_dataSpaceConstraintsRoomNotAvailableTimesAction_triggered();
-
-	void on_dataSpaceConstraintsBasicCompulsorySpaceAction_triggered();
-	void on_dataSpaceConstraintsActivityPreferredRoomAction_triggered();
-	void on_dataSpaceConstraintsActivityPreferredRoomsAction_triggered();
-	
-	void on_dataSpaceConstraintsStudentsSetHomeRoomAction_triggered();
-	void on_dataSpaceConstraintsStudentsSetHomeRoomsAction_triggered();
-	void on_dataSpaceConstraintsTeacherHomeRoomAction_triggered();
-	void on_dataSpaceConstraintsTeacherHomeRoomsAction_triggered();
-
-	void on_dataSpaceConstraintsStudentsSetMaxBuildingChangesPerDayAction_triggered();
-	void on_dataSpaceConstraintsStudentsMaxBuildingChangesPerDayAction_triggered();
-	void on_dataSpaceConstraintsStudentsSetMaxBuildingChangesPerWeekAction_triggered();
-	void on_dataSpaceConstraintsStudentsMaxBuildingChangesPerWeekAction_triggered();
-	void on_dataSpaceConstraintsStudentsSetMinGapsBetweenBuildingChangesAction_triggered();
-	void on_dataSpaceConstraintsStudentsMinGapsBetweenBuildingChangesAction_triggered();
-
-	void on_dataSpaceConstraintsTeacherMaxBuildingChangesPerDayAction_triggered();
-	void on_dataSpaceConstraintsTeachersMaxBuildingChangesPerDayAction_triggered();
-	void on_dataSpaceConstraintsTeacherMaxBuildingChangesPerWeekAction_triggered();
-	void on_dataSpaceConstraintsTeachersMaxBuildingChangesPerWeekAction_triggered();
-	void on_dataSpaceConstraintsTeacherMinGapsBetweenBuildingChangesAction_triggered();
-	void on_dataSpaceConstraintsTeachersMinGapsBetweenBuildingChangesAction_triggered();
-	
-	void on_dataSpaceConstraintsSubjectPreferredRoomAction_triggered();
-	void on_dataSpaceConstraintsSubjectPreferredRoomsAction_triggered();
-	void on_dataSpaceConstraintsSubjectActivityTagPreferredRoomAction_triggered();
-	void on_dataSpaceConstraintsSubjectActivityTagPreferredRoomsAction_triggered();
-
-	void on_dataSpaceConstraintsActivityTagPreferredRoomAction_triggered();
-	void on_dataSpaceConstraintsActivityTagPreferredRoomsAction_triggered();
-
-	void on_dataSpaceConstraintsActivitiesOccupyMaxDifferentRoomsAction_triggered();
-	void on_dataSpaceConstraintsActivitiesSameRoomIfConsecutiveAction_triggered();
-
-	void on_dataTimeConstraintsBasicCompulsoryTimeAction_triggered();
-	void on_dataTimeConstraintsBreakTimesAction_triggered();
-
-	void on_dataTimeConstraintsTwoActivitiesConsecutiveAction_triggered();
-	void on_dataTimeConstraintsTwoActivitiesGroupedAction_triggered();
-	void on_dataTimeConstraintsThreeActivitiesGroupedAction_triggered();
-	void on_dataTimeConstraintsTwoActivitiesOrderedAction_triggered();
-	void on_dataTimeConstraintsActivityPreferredStartingTimeAction_triggered();
-	void on_dataTimeConstraintsActivityPreferredTimeSlotsAction_triggered();
-	void on_dataTimeConstraintsActivitiesPreferredTimeSlotsAction_triggered();
-	void on_dataTimeConstraintsSubactivitiesPreferredTimeSlotsAction_triggered();
-	void on_dataTimeConstraintsActivityPreferredStartingTimesAction_triggered();
-	void on_dataTimeConstraintsActivitiesPreferredStartingTimesAction_triggered();
-	void on_dataTimeConstraintsSubactivitiesPreferredStartingTimesAction_triggered();
-	void on_dataTimeConstraintsActivitiesSameStartingTimeAction_triggered();
-	void on_dataTimeConstraintsActivitiesSameStartingHourAction_triggered();
-	void on_dataTimeConstraintsActivitiesSameStartingDayAction_triggered();
-	void on_dataTimeConstraintsActivitiesOccupyMaxTimeSlotsFromSelectionAction_triggered();
-	void on_dataTimeConstraintsActivitiesMaxSimultaneousInSelectedTimeSlotsAction_triggered();
-	void on_dataTimeConstraintsActivitiesNotOverlappingAction_triggered();
-	void on_dataTimeConstraintsMinDaysBetweenActivitiesAction_triggered();
-	void on_dataTimeConstraintsMaxDaysBetweenActivitiesAction_triggered();
-	void on_dataTimeConstraintsMinGapsBetweenActivitiesAction_triggered();
-	void on_dataTimeConstraintsActivityEndsStudentsDayAction_triggered();
-	void on_dataTimeConstraintsActivitiesEndStudentsDayAction_triggered();
-
-	void on_dataTimeConstraintsTeacherNotAvailableTimesAction_triggered();
-	void on_dataTimeConstraintsTeacherMaxDaysPerWeekAction_triggered();
-	void on_dataTimeConstraintsTeachersMaxDaysPerWeekAction_triggered();
-
-	void on_dataTimeConstraintsTeacherMinDaysPerWeekAction_triggered();
-	void on_dataTimeConstraintsTeachersMinDaysPerWeekAction_triggered();
-
-	void on_dataTimeConstraintsTeachersMaxHoursDailyAction_triggered();
-	void on_dataTimeConstraintsTeacherMaxHoursDailyAction_triggered();
-	void on_dataTimeConstraintsTeachersMaxHoursContinuouslyAction_triggered();
-	void on_dataTimeConstraintsTeacherMaxHoursContinuouslyAction_triggered();
-
-	void on_dataTimeConstraintsTeachersActivityTagMaxHoursContinuouslyAction_triggered();
-	void on_dataTimeConstraintsTeacherActivityTagMaxHoursContinuouslyAction_triggered();
-
 	void on_dataTimeConstraintsTeachersActivityTagMaxHoursDailyAction_triggered();
 	void on_dataTimeConstraintsTeacherActivityTagMaxHoursDailyAction_triggered();
-
-	void on_dataTimeConstraintsTeachersMinHoursDailyAction_triggered();
-	void on_dataTimeConstraintsTeacherMinHoursDailyAction_triggered();
-	void on_dataTimeConstraintsTeachersMaxGapsPerWeekAction_triggered();
-	void on_dataTimeConstraintsTeacherMaxGapsPerWeekAction_triggered();
-	void on_dataTimeConstraintsTeachersMaxGapsPerDayAction_triggered();
-	void on_dataTimeConstraintsTeacherMaxGapsPerDayAction_triggered();
-	
-	void on_dataTimeConstraintsTeacherIntervalMaxDaysPerWeekAction_triggered();
-	void on_dataTimeConstraintsTeachersIntervalMaxDaysPerWeekAction_triggered();
-	void on_dataTimeConstraintsStudentsSetIntervalMaxDaysPerWeekAction_triggered();
-	void on_dataTimeConstraintsStudentsIntervalMaxDaysPerWeekAction_triggered();
-
-	void on_dataTimeConstraintsStudentsSetMaxDaysPerWeekAction_triggered();
-	void on_dataTimeConstraintsStudentsMaxDaysPerWeekAction_triggered();
-
-	void on_dataTimeConstraintsStudentsSetNotAvailableTimesAction_triggered();
-	void on_dataTimeConstraintsStudentsSetMaxGapsPerWeekAction_triggered();
-	void on_dataTimeConstraintsStudentsMaxGapsPerWeekAction_triggered();
-
 	void on_dataTimeConstraintsStudentsSetMaxGapsPerDayAction_triggered();
 	void on_dataTimeConstraintsStudentsMaxGapsPerDayAction_triggered();
-
-	void on_dataTimeConstraintsStudentsEarlyMaxBeginningsAtSecondHourAction_triggered();
-	void on_dataTimeConstraintsStudentsSetEarlyMaxBeginningsAtSecondHourAction_triggered();
-	void on_dataTimeConstraintsStudentsMaxHoursDailyAction_triggered();
-	void on_dataTimeConstraintsStudentsSetMaxHoursDailyAction_triggered();
-	void on_dataTimeConstraintsStudentsMaxHoursContinuouslyAction_triggered();
-	void on_dataTimeConstraintsStudentsSetMaxHoursContinuouslyAction_triggered();
-
-	void on_dataTimeConstraintsStudentsActivityTagMaxHoursContinuouslyAction_triggered();
-	void on_dataTimeConstraintsStudentsSetActivityTagMaxHoursContinuouslyAction_triggered();
-
-	void on_dataTimeConstraintsStudentsActivityTagMaxHoursDailyAction_triggered();
 	void on_dataTimeConstraintsStudentsSetActivityTagMaxHoursDailyAction_triggered();
-
-	void on_dataTimeConstraintsStudentsMinHoursDailyAction_triggered();
-	void on_dataTimeConstraintsStudentsSetMinHoursDailyAction_triggered();
+	void on_dataTimeConstraintsStudentsActivityTagMaxHoursDailyAction_triggered();
 
 	void on_activityPlanningAction_triggered();
 	void on_spreadActivitiesAction_triggered();
