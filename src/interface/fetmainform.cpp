@@ -267,6 +267,27 @@ bool ENABLE_GROUP_ACTIVITIES_IN_INITIAL_ORDER=false;
 
 const int STATUS_BAR_MILLISECONDS=2500;
 
+// Constraint dialog constructor helpers
+template< typename T > QDialog* fCreate(QWidget* parent) {
+	return new T(parent);
+}
+struct ConstraintDialogHelper {
+	typedef QDialog* (*tConstructor)(QWidget*);
+
+	static const struct Mapping{
+		QString name;
+		tConstructor constructor;
+	} constraintActions[];
+	static const int numConstraintActions;
+};
+
+const ConstraintDialogHelper::Mapping ConstraintDialogHelper::constraintActions[] = {
+	{"AllTimeConstraints", fCreate<AllTimeConstraintsForm> },
+	{"AllSpaceConstraints", fCreate<AllSpaceConstraintsForm> },
+};
+
+const int ConstraintDialogHelper::numConstraintActions = sizeof(constraintActions)/sizeof(constraintActions[0]);
+
 FetMainForm::FetMainForm()
 {
 	setupUi(this);
@@ -486,6 +507,13 @@ FetMainForm::FetMainForm()
 	setEnabledIcon(dataTimeConstraintsStudentsMaxGapsPerDayAction, ENABLE_STUDENTS_MAX_GAPS_PER_DAY);
 
 	setEnabledIcon(groupActivitiesInInitialOrderAction, ENABLE_GROUP_ACTIVITIES_IN_INITIAL_ORDER);
+
+	for (int i = 0; i < ConstraintDialogHelper::numConstraintActions; ++i) {
+		QAction *action = findChild<QAction*>("data"+ConstraintDialogHelper::constraintActions[i].name+"Action");
+		connect(action, SIGNAL(triggered()), &signalMapper, SLOT(map()));
+		signalMapper.setMapping(action, i);
+	}
+	connect(&signalMapper, SIGNAL(mapped(int)), this, SLOT(openConstraintDialog(int)));
 }
 
 void FetMainForm::setEnabledIcon(QAction* action, bool enabled)
@@ -1913,30 +1941,32 @@ void FetMainForm::on_dataBuildingsAction_triggered()
 	form.exec();
 }
 
-void FetMainForm::on_dataAllTimeConstraintsAction_triggered()
+void FetMainForm::openConstraintDialog(int dialogIdx)
 {
+	assert(dialogIdx >= 0 && dialogIdx < ConstraintDialogHelper::numConstraintActions);
+
 	if(simulation_running){
 		QMessageBox::information(this, tr("FET information"),
 			tr("Allocation in course.\nPlease stop simulation before this."));
 		return;
 	}
 
-	AllTimeConstraintsForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
+	QDialog *form = ConstraintDialogHelper::constraintActions[dialogIdx].constructor(this);
+	setParentAndOtherThings(form, this);
+	form->exec();
+	delete form;
 }
 
-void FetMainForm::on_dataAllSpaceConstraintsAction_triggered()
+void FetMainForm::openConstraintDialog(const QString& name)
 {
-	if(simulation_running){
-		QMessageBox::information(this, tr("FET information"),
-			tr("Allocation in course.\nPlease stop simulation before this."));
-		return;
+	for (int i=0; i < ConstraintDialogHelper::numConstraintActions; i++) {
+		if (ConstraintDialogHelper::constraintActions[i].name == name) {
+			openConstraintDialog(i);
+			return;
+		}
 	}
-
-	AllSpaceConstraintsForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
+	if (VERBOSE)
+		cerr << "Constraint Dialog not found: " << name.toStdString() << endl;
 }
 
 void FetMainForm::on_dataTimeConstraintsTwoActivitiesConsecutiveAction_triggered()
@@ -4387,7 +4417,7 @@ void FetMainForm::showWarningForGroupActivitiesInInitialOrderToggled(bool checke
 //time constraints
 void FetMainForm::on_shortcutAllTimeConstraintsPushButton_clicked()
 {
-	on_dataAllTimeConstraintsAction_triggered();
+	openConstraintDialog("AllTimeConstraints");
 }
 
 void FetMainForm::on_shortcutAdvancedTimeConstraintsPushButton_clicked()
@@ -4419,7 +4449,7 @@ void FetMainForm::on_shortcutActivitiesTimeConstraintsPushButton_clicked()
 //space constraints
 void FetMainForm::on_shortcutAllSpaceConstraintsPushButton_clicked()
 {
-	on_dataAllSpaceConstraintsAction_triggered();
+	openConstraintDialog("AllSpaceConstraints");
 }
 
 void FetMainForm::on_shortcutRoomsSpaceConstraintsPushButton_clicked()
