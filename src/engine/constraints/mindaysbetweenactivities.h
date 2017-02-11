@@ -4,8 +4,6 @@
 #include "matrix.h"
 #include <QList>
 
-class QWidget;
-
 class MinDaysBetweenActivities
 {
 public:
@@ -14,9 +12,13 @@ public:
 	Matrix1D<QList<double> > weightPercentages;
 	Matrix1D<QList<bool> > consecutiveIfSameDay;
 
+	QStringList errors;
+
 	MinDaysBetweenActivities();
 
-	bool prepare(QWidget *parent);
+	bool prepare();
+
+	QStringList getErrors() const;
 };
 
 #endif // MINDAYSBETWEENACTIVITIES_H
