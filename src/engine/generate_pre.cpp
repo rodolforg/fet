@@ -624,7 +624,7 @@ bool processTimeSpaceConstraints(QWidget* parent, QTextStream* initialOrderStrea
 	//////////////////////////////
 	
 	/////2. min days between activities
-	t=minDaysBetweenActivitiesList.computeMinDays(parent);
+	t=minDaysBetweenActivitiesList.prepare(parent);
 	if(!t)
 		return false;
 	/////////////////////////////////////
@@ -8570,12 +8570,12 @@ void sortActivities(QWidget* parent, const QHash<int, int> & reprSameStartingTim
 			int si=allowedSlotForFixedActivity.value(i);
 			int di=si%gt.rules.nDaysPerWeek;
 		
-			for(int d=0; d<minDaysBetweenActivitiesList.minDaysListOfActivities[i].count(); d++){
-				int j=minDaysBetweenActivitiesList.minDaysListOfActivities[i].at(d);
+			for(int d=0; d<minDaysBetweenActivitiesList.activities[i].count(); d++){
+				int j=minDaysBetweenActivitiesList.activities[i].at(d);
 				if(!fixedTimeActivity[j])
 					continue;
-				int m=minDaysBetweenActivitiesList.minDaysListOfMinDays[i].at(d);
-				double w=minDaysBetweenActivitiesList.minDaysListOfWeightPercentages[i].at(d)/100.0;
+				int m=minDaysBetweenActivitiesList.minDays[i].at(d);
+				double w=minDaysBetweenActivitiesList.weightPercentages[i].at(d)/100.0;
 				
 				assert(allowedSlotForFixedActivity.contains(j));
 				int sj=allowedSlotForFixedActivity.value(j);
