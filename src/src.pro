@@ -22,6 +22,7 @@ SOURCES += \
 	engine/randomknuth.cpp \
 	engine/messageboxes.cpp \
 	engine/xmllog.cpp \
+	engine/constraints/mindaysbetweenactivities.cpp \
 	\
 	interface/fet.cpp \
 	interface/helpaboutform.cpp \
@@ -464,6 +465,7 @@ HEADERS += \
 	engine/randomknuth.h \
 	engine/messageboxes.h \
 	engine/xmllog.h \
+	engine/constraints/mindaysbetweenactivities.h \
 	\
 	interface/fet.h \
 	interface/helpaboutform.h \

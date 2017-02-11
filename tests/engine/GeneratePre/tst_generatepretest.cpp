@@ -21,7 +21,6 @@ private:
 		Rules &rules;
 	};
 	Rules * rules;
-	void prepareMinDays();
 
 private slots:
 	void initTestCase();
@@ -41,14 +40,6 @@ GeneratePreTest::GeneratePreTest()
 {
 }
 
-void GeneratePreTest::prepareMinDays()
-{
-	minDaysListOfActivities.resize(rules->nInternalActivities);
-	minDaysListOfMinDays.resize(rules->nInternalActivities);
-	minDaysListOfConsecutiveIfSameDay.resize(rules->nInternalActivities);
-	minDaysListOfWeightPercentages.resize(rules->nInternalActivities);
-}
-
 void GeneratePreTest::initTestCase()
 {
 	VERBOSE = false;
@@ -63,9 +54,8 @@ void GeneratePreTest::cleanupTestCase()
 void GeneratePreTest::MinDays_ReturnOkIfNoMinDaysConstraint()
 {
 	MockRules3Activities mock(*rules);
-	prepareMinDays();
 
-	bool result = computeMinDays(NULL);
+	bool result = minDaysBetweenActivitiesList.computeMinDays(NULL);
 
 	QVERIFY2(result, "Could not compute MinDays constraint list");
 }
@@ -73,7 +63,6 @@ void GeneratePreTest::MinDays_ReturnOkIfNoMinDaysConstraint()
 void GeneratePreTest::MinDays_InactiveConstraintIsIgnored()
 {
 	MockRules3Activities mock(*rules);
-	prepareMinDays();
 
 	QList<int> acts;
 	acts << 12345 << 23456;
@@ -82,28 +71,27 @@ void GeneratePreTest::MinDays_InactiveConstraintIsIgnored()
 	ctr->active = false;
 	rules->computeInternalStructure(NULL);
 
-	bool result = computeMinDays(NULL);
+	bool result = minDaysBetweenActivitiesList.computeMinDays(NULL);
 
 	QVERIFY2(result, "Could not compute MinDays constraint list");
 
-	QCOMPARE(minDaysListOfActivities.getD1(), 3);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfActivities.getD1(), 3);
 
-	QCOMPARE(minDaysListOfActivities[0].count(), 0);
-	QCOMPARE(minDaysListOfMinDays[0].count(), 0);
-	QCOMPARE(minDaysListOfConsecutiveIfSameDay[0].count(), 0);
-	QCOMPARE(minDaysListOfWeightPercentages[0].count(), 0);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfActivities[0].count(), 0);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfMinDays[0].count(), 0);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfConsecutiveIfSameDay[0].count(), 0);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfWeightPercentages[0].count(), 0);
 
-	QCOMPARE(minDaysListOfActivities[1].count(), 0);
-	QCOMPARE(minDaysListOfMinDays[1].count(), 0);
-	QCOMPARE(minDaysListOfConsecutiveIfSameDay[1].count(), 0);
-	QCOMPARE(minDaysListOfWeightPercentages[1].count(), 0);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfActivities[1].count(), 0);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfMinDays[1].count(), 0);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfConsecutiveIfSameDay[1].count(), 0);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfWeightPercentages[1].count(), 0);
 
 }
 
 void GeneratePreTest::MinDays_ComputedSize()
 {
 	MockRules3Activities mock(*rules);
-	prepareMinDays();
 
 	QList<int> acts;
 	acts << 12345 << 23456;
@@ -111,27 +99,26 @@ void GeneratePreTest::MinDays_ComputedSize()
 	rules->addTimeConstraint(ctr);
 	rules->computeInternalStructure(NULL);
 
-	bool result = computeMinDays(NULL);
+	bool result = minDaysBetweenActivitiesList.computeMinDays(NULL);
 
 	QVERIFY2(result, "Could not compute MinDays constraint list");
 
-	QCOMPARE(minDaysListOfActivities.getD1(), 3);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfActivities.getD1(), 3);
 
-	QCOMPARE(minDaysListOfActivities[0].count(), 1);
-	QCOMPARE(minDaysListOfMinDays[0].count(), 1);
-	QCOMPARE(minDaysListOfConsecutiveIfSameDay[0].count(), 1);
-	QCOMPARE(minDaysListOfWeightPercentages[0].count(), 1);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfActivities[0].count(), 1);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfMinDays[0].count(), 1);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfConsecutiveIfSameDay[0].count(), 1);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfWeightPercentages[0].count(), 1);
 
-	QCOMPARE(minDaysListOfActivities[1].count(), 1);
-	QCOMPARE(minDaysListOfMinDays[1].count(), 1);
-	QCOMPARE(minDaysListOfConsecutiveIfSameDay[1].count(), 1);
-	QCOMPARE(minDaysListOfWeightPercentages[1].count(), 1);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfActivities[1].count(), 1);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfMinDays[1].count(), 1);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfConsecutiveIfSameDay[1].count(), 1);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfWeightPercentages[1].count(), 1);
 }
 
 void GeneratePreTest::MinDays_CheckValues()
 {
 	MockRules3Activities mock(*rules);
-	prepareMinDays();
 
 	QList<int> acts;
 	acts << 12345 << 23456;
@@ -139,27 +126,26 @@ void GeneratePreTest::MinDays_CheckValues()
 	rules->addTimeConstraint(ctr);
 	rules->computeInternalStructure(NULL);
 
-	bool result = computeMinDays(NULL);
+	bool result = minDaysBetweenActivitiesList.computeMinDays(NULL);
 
 	QVERIFY2(result, "Could not compute MinDays constraint list");
 
-	QCOMPARE(minDaysListOfActivities.getD1(), 3);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfActivities.getD1(), 3);
 
-	QCOMPARE(minDaysListOfActivities[0][0], rules->activitiesHash.value(23456, -1));
-	QCOMPARE(minDaysListOfMinDays[0][0], 5);
-	QCOMPARE(minDaysListOfConsecutiveIfSameDay[0][0], false);
-	QCOMPARE(minDaysListOfWeightPercentages[0][0], 50.0);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfActivities[0][0], rules->activitiesHash.value(23456, -1));
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfMinDays[0][0], 5);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfConsecutiveIfSameDay[0][0], false);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfWeightPercentages[0][0], 50.0);
 
-	QCOMPARE(minDaysListOfActivities[1][0], rules->activitiesHash.value(12345, -1));
-	QCOMPARE(minDaysListOfMinDays[1][0], 5);
-	QCOMPARE(minDaysListOfConsecutiveIfSameDay[1][0], false);
-	QCOMPARE(minDaysListOfWeightPercentages[1][0], 50.0);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfActivities[1][0], rules->activitiesHash.value(12345, -1));
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfMinDays[1][0], 5);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfConsecutiveIfSameDay[1][0], false);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfWeightPercentages[1][0], 50.0);
 }
 
 void GeneratePreTest::MinDays_ActivityHasMoreThanOneOfThisConstraint()
 {
 	MockRules3Activities mock(*rules);
-	prepareMinDays();
 
 	QList<int> acts;
 	acts << 12345 << 23456;
@@ -171,32 +157,31 @@ void GeneratePreTest::MinDays_ActivityHasMoreThanOneOfThisConstraint()
 	rules->addTimeConstraint(ctr2);
 	rules->computeInternalStructure(NULL);
 
-	bool result = computeMinDays(NULL);
+	bool result = minDaysBetweenActivitiesList.computeMinDays(NULL);
 
 	QVERIFY2(result, "Could not compute MinDays constraint list");
 
-	QCOMPARE(minDaysListOfActivities.getD1(), 3);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfActivities.getD1(), 3);
 
-	QCOMPARE(minDaysListOfActivities[1].count(), 2);
-	QCOMPARE(minDaysListOfMinDays[1].count(), 2);
-	QCOMPARE(minDaysListOfConsecutiveIfSameDay[1].count(), 2);
-	QCOMPARE(minDaysListOfWeightPercentages[1].count(), 2);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfActivities[1].count(), 2);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfMinDays[1].count(), 2);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfConsecutiveIfSameDay[1].count(), 2);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfWeightPercentages[1].count(), 2);
 
-	QCOMPARE(minDaysListOfActivities[2].count(), 1);
-	QCOMPARE(minDaysListOfMinDays[2].count(), 1);
-	QCOMPARE(minDaysListOfConsecutiveIfSameDay[2].count(), 1);
-	QCOMPARE(minDaysListOfWeightPercentages[2].count(), 1);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfActivities[2].count(), 1);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfMinDays[2].count(), 1);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfConsecutiveIfSameDay[2].count(), 1);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfWeightPercentages[2].count(), 1);
 
-	QCOMPARE(minDaysListOfActivities[2][0], rules->activitiesHash.value(23456, -1));
-	QCOMPARE(minDaysListOfMinDays[2][0], 4);
-	QCOMPARE(minDaysListOfConsecutiveIfSameDay[2][0], true);
-	QCOMPARE(minDaysListOfWeightPercentages[2][0], 75.0);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfActivities[2][0], rules->activitiesHash.value(23456, -1));
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfMinDays[2][0], 4);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfConsecutiveIfSameDay[2][0], true);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfWeightPercentages[2][0], 75.0);
 }
 
 void GeneratePreTest::MinDays_FailIfActivityMinDaysToItself()
 {
 	MockRules3Activities mock(*rules);
-	prepareMinDays();
 
 	QList<int> acts;
 	acts << 12345 << 12345;
@@ -207,14 +192,13 @@ void GeneratePreTest::MinDays_FailIfActivityMinDaysToItself()
 	rules->addTimeConstraint(ctr1);
 	rules->computeInternalStructure(NULL);
 
-	bool result = computeMinDays(NULL);
+	bool result = minDaysBetweenActivitiesList.computeMinDays(NULL);
 	QVERIFY2(result == false, "Should not accept constraint MinDaysBetweenActivities if the activities are the same one");
 }
 
 void GeneratePreTest::MinDays_FailIfActivityMinDaysToItself_v2()
 {
 	MockRules3Activities mock(*rules);
-	prepareMinDays();
 
 	QList<int> acts;
 	acts << 12345 << 12345;
@@ -222,14 +206,13 @@ void GeneratePreTest::MinDays_FailIfActivityMinDaysToItself_v2()
 	rules->timeConstraintsList.append(ctr1);
 	rules->computeInternalStructure(NULL);
 
-	bool result = computeMinDays(NULL);
+	bool result = minDaysBetweenActivitiesList.computeMinDays(NULL);
 	QVERIFY2(result == false, "Should not accept constraint MinDaysBetweenActivities if the activities are the same one");
 }
 
 void GeneratePreTest::MinDays_ThreeActivitiesAtOnce()
 {
 	MockRules3Activities mock(*rules);
-	prepareMinDays();
 
 	QList<int> acts;
 	acts << 12345 << 23456 << 34567;
@@ -237,47 +220,47 @@ void GeneratePreTest::MinDays_ThreeActivitiesAtOnce()
 	rules->timeConstraintsList.append(ctr1);
 	rules->computeInternalStructure(NULL);
 
-	bool result = computeMinDays(NULL);
+	bool result = minDaysBetweenActivitiesList.computeMinDays(NULL);
 
 	QVERIFY2(result, "Could not compute MinDays constraint list");
 
-	QCOMPARE(minDaysListOfActivities.getD1(), 3);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfActivities.getD1(), 3);
 
-	QCOMPARE(minDaysListOfActivities[0].count(), 2);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfActivities[0].count(), 2);
 
-	QCOMPARE(minDaysListOfActivities[0][0], rules->activitiesHash.value(23456, -1));
-	QCOMPARE(minDaysListOfMinDays[0][0], 2);
-	QCOMPARE(minDaysListOfConsecutiveIfSameDay[0][0], true);
-	QCOMPARE(minDaysListOfWeightPercentages[0][0], 80.0);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfActivities[0][0], rules->activitiesHash.value(23456, -1));
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfMinDays[0][0], 2);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfConsecutiveIfSameDay[0][0], true);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfWeightPercentages[0][0], 80.0);
 
-	QCOMPARE(minDaysListOfActivities[0][1], rules->activitiesHash.value(34567, -1));
-	QCOMPARE(minDaysListOfMinDays[0][1], 2);
-	QCOMPARE(minDaysListOfConsecutiveIfSameDay[0][1], true);
-	QCOMPARE(minDaysListOfWeightPercentages[0][1], 80.0);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfActivities[0][1], rules->activitiesHash.value(34567, -1));
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfMinDays[0][1], 2);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfConsecutiveIfSameDay[0][1], true);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfWeightPercentages[0][1], 80.0);
 
-	QCOMPARE(minDaysListOfActivities[1].count(), 2);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfActivities[1].count(), 2);
 
-	QCOMPARE(minDaysListOfActivities[1][0], rules->activitiesHash.value(12345, -1));
-	QCOMPARE(minDaysListOfMinDays[1][0], 2);
-	QCOMPARE(minDaysListOfConsecutiveIfSameDay[1][0], true);
-	QCOMPARE(minDaysListOfWeightPercentages[1][0], 80.0);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfActivities[1][0], rules->activitiesHash.value(12345, -1));
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfMinDays[1][0], 2);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfConsecutiveIfSameDay[1][0], true);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfWeightPercentages[1][0], 80.0);
 
-	QCOMPARE(minDaysListOfActivities[1][1], rules->activitiesHash.value(34567, -1));
-	QCOMPARE(minDaysListOfMinDays[1][1], 2);
-	QCOMPARE(minDaysListOfConsecutiveIfSameDay[1][1], true);
-	QCOMPARE(minDaysListOfWeightPercentages[1][1], 80.0);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfActivities[1][1], rules->activitiesHash.value(34567, -1));
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfMinDays[1][1], 2);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfConsecutiveIfSameDay[1][1], true);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfWeightPercentages[1][1], 80.0);
 
-	QCOMPARE(minDaysListOfActivities[2].count(), 2);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfActivities[2].count(), 2);
 
-	QCOMPARE(minDaysListOfActivities[2][0], rules->activitiesHash.value(12345, -1));
-	QCOMPARE(minDaysListOfMinDays[2][0], 2);
-	QCOMPARE(minDaysListOfConsecutiveIfSameDay[2][0], true);
-	QCOMPARE(minDaysListOfWeightPercentages[2][0], 80.0);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfActivities[2][0], rules->activitiesHash.value(12345, -1));
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfMinDays[2][0], 2);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfConsecutiveIfSameDay[2][0], true);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfWeightPercentages[2][0], 80.0);
 
-	QCOMPARE(minDaysListOfActivities[2][1], rules->activitiesHash.value(23456, -1));
-	QCOMPARE(minDaysListOfMinDays[2][1], 2);
-	QCOMPARE(minDaysListOfConsecutiveIfSameDay[2][1], true);
-	QCOMPARE(minDaysListOfWeightPercentages[2][1], 80.0);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfActivities[2][1], rules->activitiesHash.value(23456, -1));
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfMinDays[2][1], 2);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfConsecutiveIfSameDay[2][1], true);
+	QCOMPARE(minDaysBetweenActivitiesList.minDaysListOfWeightPercentages[2][1], 80.0);
 }
 
 GeneratePreTest::MockRules3Activities::MockRules3Activities(Rules &_rules)
