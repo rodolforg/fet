@@ -32,6 +32,14 @@ private slots:
 	void MinDays_ThreeActivitiesAtOnce();
 
 	void MaxDays_ReturnOkIfNoMinDaysConstraint();
+	void MaxDays_ConstraintWithInactiveActivityIsIgnored();
+	void MaxDays_ComputedSize();
+	void MaxDays_CheckValues();
+	void MaxDays_ActivityHasMoreThanOneOfThisConstraint();
+	void MaxDays_FailIfActivityMaxDaysToItself();
+	void MaxDays_FailIfActivityMaxDaysToItself_v2();
+	void MaxDays_NumErrorMsgs_WhenPreparationOfMaxDaysFails();
+	void MaxDays_ThreeActivitiesAtOnce();
 };
 
 GeneratePreTest::GeneratePreTest()
@@ -323,6 +331,228 @@ void GeneratePreTest::MaxDays_ReturnOkIfNoMinDaysConstraint()
 	bool result = mdba.prepare(mock.rules);
 
 	QVERIFY2(result, "Could not compute MaxDays constraint list");
+}
+
+void GeneratePreTest::MaxDays_ConstraintWithInactiveActivityIsIgnored()
+{
+	MockRules3Activities mock;
+
+	QList<int> acts;
+	acts << mock.rules.activitiesList[0]->id << mock.rules.activitiesList[1]->id;
+	ConstraintMaxDaysBetweenActivities *ctr = new ConstraintMaxDaysBetweenActivities(85.0, 2, acts, 5);
+	mock.rules.addTimeConstraint(ctr);
+
+	mock.rules.activitiesList[0]->active = false;
+
+	MaxDaysBetweenActivities mdba;
+
+	bool result = mdba.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MaxDays constraint list");
+
+	QCOMPARE(mdba.getErrors().count(), 0);
+	QCOMPARE(mdba.activities.getD1(), 3);
+
+	QCOMPARE(mdba.activities[0].count(), 0);
+	QCOMPARE(mdba.activities[1].count(), 0);
+}
+
+void GeneratePreTest::MaxDays_ComputedSize()
+{
+	MockRules3Activities mock;
+
+	QList<int> acts;
+	acts << 12345 << 23456;
+	ConstraintMaxDaysBetweenActivities *ctr = new ConstraintMaxDaysBetweenActivities(50.0, 2, acts, 5);
+	mock.rules.addTimeConstraint(ctr);
+	mock.rules.computeInternalStructure(NULL);
+
+	MaxDaysBetweenActivities mdba;
+
+	bool result = mdba.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MaxDays constraint list");
+
+	QCOMPARE(mdba.activities.getD1(), 3);
+
+	QCOMPARE(mdba.activities[0].count(), 1);
+	QCOMPARE(mdba.maxDays[0].count(), 1);
+	QCOMPARE(mdba.weightPercentages[0].count(), 1);
+
+	QCOMPARE(mdba.activities[1].count(), 1);
+	QCOMPARE(mdba.maxDays[1].count(), 1);
+	QCOMPARE(mdba.weightPercentages[1].count(), 1);
+}
+
+void GeneratePreTest::MaxDays_CheckValues()
+{
+	MockRules3Activities mock;
+
+	QList<int> acts;
+	acts << 12345 << 23456;
+	ConstraintMaxDaysBetweenActivities *ctr = new ConstraintMaxDaysBetweenActivities(50.0, 2, acts, 5);
+	mock.rules.addTimeConstraint(ctr);
+	mock.rules.computeInternalStructure(NULL);
+
+	MaxDaysBetweenActivities mdba;
+
+	bool result = mdba.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MaxDays constraint list");
+
+	QCOMPARE(mdba.activities.getD1(), 3);
+
+	QCOMPARE(mdba.activities[0][0], mock.rules.activitiesHash.value(23456, -1));
+	QCOMPARE(mdba.maxDays[0][0], 5);
+	QCOMPARE(mdba.weightPercentages[0][0], 50.0);
+
+	QCOMPARE(mdba.activities[1][0], mock.rules.activitiesHash.value(12345, -1));
+	QCOMPARE(mdba.maxDays[1][0], 5);
+	QCOMPARE(mdba.weightPercentages[1][0], 50.0);
+}
+
+void GeneratePreTest::MaxDays_ActivityHasMoreThanOneOfThisConstraint()
+{
+	MockRules3Activities mock;
+
+	QList<int> acts;
+	acts << 12345 << 23456;
+	ConstraintMaxDaysBetweenActivities *ctr1 = new ConstraintMaxDaysBetweenActivities(50.0, 2, acts, 5);
+	mock.rules.addTimeConstraint(ctr1);
+	acts.clear();
+	acts << 23456 << 34567;
+	ConstraintMaxDaysBetweenActivities *ctr2 = new ConstraintMaxDaysBetweenActivities(75.0, 2, acts, 4);
+	mock.rules.addTimeConstraint(ctr2);
+	mock.rules.computeInternalStructure(NULL);
+
+	MaxDaysBetweenActivities mdba;
+
+	bool result = mdba.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MaxDays constraint list");
+
+	QCOMPARE(mdba.activities.getD1(), 3);
+
+	QCOMPARE(mdba.activities[1].count(), 2);
+	QCOMPARE(mdba.maxDays[1].count(), 2);
+	QCOMPARE(mdba.weightPercentages[1].count(), 2);
+
+	QCOMPARE(mdba.activities[2].count(), 1);
+	QCOMPARE(mdba.maxDays[2].count(), 1);
+	QCOMPARE(mdba.weightPercentages[2].count(), 1);
+
+	QCOMPARE(mdba.activities[2][0], mock.rules.activitiesHash.value(23456, -1));
+	QCOMPARE(mdba.maxDays[2][0], 4);
+	QCOMPARE(mdba.weightPercentages[2][0], 75.0);
+}
+
+void GeneratePreTest::MaxDays_FailIfActivityMaxDaysToItself()
+{
+	MockRules3Activities mock;
+
+	QList<int> acts;
+	acts << 12345 << 12345;
+
+	QSKIP("Disable test due to usage of assert in Rules::addTimeConstraint()");
+
+	ConstraintMaxDaysBetweenActivities *ctr1 = new ConstraintMaxDaysBetweenActivities(80.0, 2, acts, 5);
+	mock.rules.addTimeConstraint(ctr1);
+	mock.rules.computeInternalStructure(NULL);
+
+	MaxDaysBetweenActivities mdba;
+
+	bool result = mdba.prepare(mock.rules);
+	QVERIFY2(result == false, "Should not accept constraint MaxDaysBetweenActivities if the activities are the same one");
+}
+
+void GeneratePreTest::MaxDays_FailIfActivityMaxDaysToItself_v2()
+{
+	MockRules3Activities mock;
+
+	QList<int> acts;
+	acts << 12345 << 12345;
+	ConstraintMaxDaysBetweenActivities *ctr1 = new ConstraintMaxDaysBetweenActivities(80.0, 2, acts, 5);
+	mock.rules.timeConstraintsList.append(ctr1);
+	mock.rules.computeInternalStructure(NULL);
+
+	MaxDaysBetweenActivities mdba;
+
+	bool result = mdba.prepare(mock.rules);
+	QVERIFY2(result == false, "Should not accept constraint MaxDaysBetweenActivities if the activities are the same one");
+}
+
+void GeneratePreTest::MaxDays_NumErrorMsgs_WhenPreparationOfMaxDaysFails()
+{
+	MockRules3Activities mock;
+
+	QList<int> acts;
+	acts << 12345 << 12345;
+	ConstraintMaxDaysBetweenActivities *ctr1 = new ConstraintMaxDaysBetweenActivities(80.0, 2, acts, 5);
+	mock.rules.timeConstraintsList.append(ctr1);
+	mock.rules.computeInternalStructure(NULL);
+
+	MaxDaysBetweenActivities mdba;
+
+	mdba.prepare(mock.rules);
+	QCOMPARE(mdba.getErrors().count(), 1);
+
+	acts.clear();
+	acts << 23456 << 23456;
+	ConstraintMaxDaysBetweenActivities *ctr2 = new ConstraintMaxDaysBetweenActivities(100.0, 2, acts, 3);
+	mock.rules.timeConstraintsList.append(ctr2);
+	mock.rules.computeInternalStructure(NULL);
+
+	mdba.prepare(mock.rules);
+	QCOMPARE(mdba.getErrors().count(), 2);
+}
+
+void GeneratePreTest::MaxDays_ThreeActivitiesAtOnce()
+{
+	MockRules3Activities mock;
+
+	QList<int> acts;
+	acts << 12345 << 23456 << 34567;
+	ConstraintMaxDaysBetweenActivities *ctr1 = new ConstraintMaxDaysBetweenActivities(80.0, 3, acts, 2);
+	mock.rules.timeConstraintsList.append(ctr1);
+	mock.rules.computeInternalStructure(NULL);
+
+	MaxDaysBetweenActivities mdba;
+
+	bool result = mdba.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MaxDays constraint list");
+
+	QCOMPARE(mdba.activities.getD1(), 3);
+
+	QCOMPARE(mdba.activities[0].count(), 2);
+
+	QCOMPARE(mdba.activities[0][0], mock.rules.activitiesHash.value(23456, -1));
+	QCOMPARE(mdba.maxDays[0][0], 2);
+	QCOMPARE(mdba.weightPercentages[0][0], 80.0);
+
+	QCOMPARE(mdba.activities[0][1], mock.rules.activitiesHash.value(34567, -1));
+	QCOMPARE(mdba.maxDays[0][1], 2);
+	QCOMPARE(mdba.weightPercentages[0][1], 80.0);
+
+	QCOMPARE(mdba.activities[1].count(), 2);
+
+	QCOMPARE(mdba.activities[1][0], mock.rules.activitiesHash.value(12345, -1));
+	QCOMPARE(mdba.maxDays[1][0], 2);
+	QCOMPARE(mdba.weightPercentages[1][0], 80.0);
+
+	QCOMPARE(mdba.activities[1][1], mock.rules.activitiesHash.value(34567, -1));
+	QCOMPARE(mdba.maxDays[1][1], 2);
+	QCOMPARE(mdba.weightPercentages[1][1], 80.0);
+
+	QCOMPARE(mdba.activities[2].count(), 2);
+
+	QCOMPARE(mdba.activities[2][0], mock.rules.activitiesHash.value(12345, -1));
+	QCOMPARE(mdba.maxDays[2][0], 2);
+	QCOMPARE(mdba.weightPercentages[2][0], 80.0);
+
+	QCOMPARE(mdba.activities[2][1], mock.rules.activitiesHash.value(23456, -1));
+	QCOMPARE(mdba.maxDays[2][1], 2);
+	QCOMPARE(mdba.weightPercentages[2][1], 80.0);
 }
 
 GeneratePreTest::MockRules3Activities::MockRules3Activities()
