@@ -5184,8 +5184,7 @@ bool computeMaxDays(QWidget* parent)
 	}
 
 	for(int i=0; i<gt.rules.nInternalTimeConstraints; i++)
-		if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_MAX_DAYS_BETWEEN_ACTIVITIES
-		 /*&&gt.rules.internalTimeConstraintsList[i]->compulsory==true*/){
+		if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_MAX_DAYS_BETWEEN_ACTIVITIES){
 			ConstraintMaxDaysBetweenActivities* md=
 			 (ConstraintMaxDaysBetweenActivities*)gt.rules.internalTimeConstraintsList[i];
 			
@@ -5211,26 +5210,15 @@ bool computeMaxDays(QWidget* parent)
 							}
 						}
 						int m=md->maxDays;
-						/*if(m>minDays[ai1][ai2])
-							minDays[ai1][ai2]=minDays[ai2][ai1]=m;*/
 						
 						maxDaysListOfActivities[ai1].append(ai2);
 						maxDaysListOfMaxDays[ai1].append(m);
 						assert(md->weightPercentage >=0 && md->weightPercentage<=100);
 						maxDaysListOfWeightPercentages[ai1].append(md->weightPercentage);
-						//maxDaysListOfConsecutiveIfSameDay[ai1].append(md->consecutiveIfSameDay);
 					}
 			}
 		}
 
-	/*for(int j=0; j<gt.rules.nInternalActivities; j++)
-		for(int k=0; k<gt.rules.nInternalActivities; k++)
-			if(minDays[j][k]>0){
-				assert(j!=k);
-				minDaysListOfActivities[j].append(k);
-				minDaysListOfMinDays[j].append(minDays[j][k]);
-			}*/
-			
 	return ok;
 }
 
