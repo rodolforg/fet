@@ -14,18 +14,18 @@ MaxDaysBetweenActivities::MaxDaysBetweenActivities()
 
 bool MaxDaysBetweenActivities::prepare(const Rules &rules)
 {
-	maxDaysListOfActivities.resize(rules.nInternalActivities);
-	maxDaysListOfMaxDays.resize(rules.nInternalActivities);
-	maxDaysListOfWeightPercentages.resize(rules.nInternalActivities);
+	activities.resize(rules.nInternalActivities);
+	maxDays.resize(rules.nInternalActivities);
+	weightPercentages.resize(rules.nInternalActivities);
 
 	errors.clear();
 
 	bool ok=true;
 
 	for(int j=0; j<rules.nInternalActivities; j++){
-		maxDaysListOfActivities[j].clear();
-		maxDaysListOfMaxDays[j].clear();
-		maxDaysListOfWeightPercentages[j].clear();
+		activities[j].clear();
+		maxDays[j].clear();
+		weightPercentages[j].clear();
 	}
 
 	QSet<const ConstraintMaxDaysBetweenActivities*> mdset;
@@ -55,10 +55,10 @@ bool MaxDaysBetweenActivities::prepare(const Rules &rules)
 						}
 						int m=md->maxDays;
 
-						maxDaysListOfActivities[ai1].append(ai2);
-						maxDaysListOfMaxDays[ai1].append(m);
+						activities[ai1].append(ai2);
+						maxDays[ai1].append(m);
 						assert(md->weightPercentage >=0 && md->weightPercentage<=100);
-						maxDaysListOfWeightPercentages[ai1].append(md->weightPercentage);
+						weightPercentages[ai1].append(md->weightPercentage);
 					}
 			}
 		}

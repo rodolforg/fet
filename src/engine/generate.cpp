@@ -3618,15 +3618,15 @@ impossiblemindays:
 		//care about max days between activities
 		okmaxdays=true;
 		
-		for(int i=0; i<maxDaysBetweenActivitiesList.maxDaysListOfActivities[ai].count(); i++){
-			int ai2=maxDaysBetweenActivitiesList.maxDaysListOfActivities[ai].at(i);
-			int md=maxDaysBetweenActivitiesList.maxDaysListOfMaxDays[ai].at(i);
+		for(int i=0; i<maxDaysBetweenActivitiesList.activities[ai].count(); i++){
+			int ai2=maxDaysBetweenActivitiesList.activities[ai].at(i);
+			int md=maxDaysBetweenActivitiesList.maxDays[ai].at(i);
 			int ai2time=c.times[ai2];
 			if(ai2time!=UNALLOCATED_TIME){
 				int d2=ai2time%gt.rules.nDaysPerWeek;
 				//int h2=ai2time/gt.rules.nDaysPerWeek;
 				if(md<abs(d-d2)){
-					bool okrand=skipRandom(maxDaysBetweenActivitiesList.maxDaysListOfWeightPercentages[ai].at(i));
+					bool okrand=skipRandom(maxDaysBetweenActivitiesList.weightPercentages[ai].at(i));
 					if(!okrand){
 						if(fixedTimeActivity[ai2] || swappedActivities[ai2]){
 							okmaxdays=false;
