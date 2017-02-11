@@ -35,6 +35,7 @@ File generate_pre.h
 
 class QWidget;
 
+#include "constraints/mindaysbetweenactivities.h"
 
 extern int permutation[MAX_ACTIVITIES]; //the permutation matrix to obtain activities in
 //decreasing difficulty order
@@ -57,12 +58,7 @@ void sortActivities(QWidget* parent, const QHash<int, int> & reprSameStartingTim
 
 
 ////////BEGIN MIN DAYS TIME CONSTRAINTS
-extern Matrix1D<QList<int> > minDaysListOfActivities;
-extern Matrix1D<QList<int> > minDaysListOfMinDays;
-extern Matrix1D<QList<double> > minDaysListOfWeightPercentages;
-extern Matrix1D<QList<bool> > minDaysListOfConsecutiveIfSameDay;
-
-bool computeMinDays(QWidget* parent);
+extern MinDaysBetweenActivities minDaysBetweenActivitiesList;
 ////////END   MIN DAYS TIME CONSTRAINTS
 
 
