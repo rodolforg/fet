@@ -624,7 +624,7 @@ bool processTimeSpaceConstraints(QWidget* parent, QTextStream* initialOrderStrea
 	//////////////////////////////
 	
 	/////2. min days between activities
-	t=minDaysBetweenActivitiesList.prepare();
+	t=minDaysBetweenActivitiesList.prepare(gt.rules);
 	if(!t) {
 		foreach (QString errorMsg, minDaysBetweenActivitiesList.getErrors()) {
 			int r=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),

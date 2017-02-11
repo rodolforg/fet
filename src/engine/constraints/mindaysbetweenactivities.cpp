@@ -1,8 +1,5 @@
 #include "mindaysbetweenactivities.h"
 
-#include "timetable.h"
-extern Timetable gt;
-
 #include "generate_pre.h"
 
 QStringList MinDaysBetweenActivities::getErrors() const
@@ -15,30 +12,30 @@ MinDaysBetweenActivities::MinDaysBetweenActivities()
 
 }
 
-bool MinDaysBetweenActivities::prepare()
+bool MinDaysBetweenActivities::prepare(const Rules &rules)
 {
-	activities.resize(gt.rules.nInternalActivities);
-	minDays.resize(gt.rules.nInternalActivities);
-	weightPercentages.resize(gt.rules.nInternalActivities);
-	consecutiveIfSameDay.resize(gt.rules.nInternalActivities);
+	activities.resize(rules.nInternalActivities);
+	minDays.resize(rules.nInternalActivities);
+	weightPercentages.resize(rules.nInternalActivities);
+	consecutiveIfSameDay.resize(rules.nInternalActivities);
 
 	errors.clear();
 
 	bool ok=true;
 
-	for(int j=0; j<gt.rules.nInternalActivities; j++){
+	for(int j=0; j<rules.nInternalActivities; j++){
 		activities[j].clear();
 		minDays[j].clear();
 		consecutiveIfSameDay[j].clear();
 		weightPercentages[j].clear();
 	}
 
-	QSet<ConstraintMinDaysBetweenActivities*> mdset;
+	QSet<const ConstraintMinDaysBetweenActivities*> mdset;
 
-	for(int i=0; i<gt.rules.nInternalTimeConstraints; i++)
-		if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_MIN_DAYS_BETWEEN_ACTIVITIES){
-			ConstraintMinDaysBetweenActivities* md=
-					(ConstraintMinDaysBetweenActivities*)gt.rules.internalTimeConstraintsList[i];
+	for(int i=0; i<rules.nInternalTimeConstraints; i++)
+		if(rules.internalTimeConstraintsList[i]->type==CONSTRAINT_MIN_DAYS_BETWEEN_ACTIVITIES){
+			const ConstraintMinDaysBetweenActivities* md=
+					(const ConstraintMinDaysBetweenActivities*)rules.internalTimeConstraintsList[i];
 
 			for(int j=0; j<md->_n_activities; j++){
 				int ai1=md->_activities[j];
@@ -52,7 +49,7 @@ bool MinDaysBetweenActivities::prepare()
 								mdset.insert(md);
 								errors.append(
 											GeneratePreTranslate::tr("Cannot optimize, because you have a constraint min days with duplicate activities. The constraint "
-											"is: %1. Please correct that.").arg(md->getDetailedDescription(gt.rules))
+											"is: %1. Please correct that.").arg(md->getDetailedDescription(rules))
 											);
 								continue;
 							}

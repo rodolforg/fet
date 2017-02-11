@@ -1,8 +1,9 @@
 #ifndef MINDAYSBETWEENACTIVITIES_H
 #define MINDAYSBETWEENACTIVITIES_H
 
-#include "matrix.h"
 #include <QList>
+#include "matrix.h"
+#include "rules.h"
 
 class MinDaysBetweenActivities
 {
@@ -16,7 +17,7 @@ public:
 
 	MinDaysBetweenActivities();
 
-	bool prepare();
+	bool prepare(const Rules &rules);
 
 	QStringList getErrors() const;
 };
