@@ -22,6 +22,7 @@ private:
 private slots:
 	void MinDays_ReturnOkIfNoMinDaysConstraint();
 	void MinDays_InactiveConstraintIsIgnored();
+	void MinDays_ConstraintWithInactiveActivityIsIgnored();
 	void MinDays_ComputedSize();
 	void MinDays_CheckValues();
 	void MinDays_ActivityHasMoreThanOneOfThisConstraint();
@@ -74,6 +75,30 @@ void GeneratePreTest::MinDays_InactiveConstraintIsIgnored()
 	QCOMPARE(mdba.minDays[1].count(), 0);
 	QCOMPARE(mdba.consecutiveIfSameDay[1].count(), 0);
 	QCOMPARE(mdba.weightPercentages[1].count(), 0);
+}
+
+void GeneratePreTest::MinDays_ConstraintWithInactiveActivityIsIgnored()
+{
+	MockRules3Activities mock;
+
+	QList<int> acts;
+	acts << mock.rules.activitiesList[0]->id << mock.rules.activitiesList[1]->id;
+	ConstraintMinDaysBetweenActivities *ctr = new ConstraintMinDaysBetweenActivities(85.0, false, 2, acts, 5);
+	mock.rules.addTimeConstraint(ctr);
+
+	mock.rules.activitiesList[0]->active = false;
+
+	MinDaysBetweenActivities mdba;
+
+	bool result = mdba.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MinDays constraint list");
+
+	QCOMPARE(mdba.getErrors().count(), 0);
+	QCOMPARE(mdba.activities.getD1(), 3);
+
+	QCOMPARE(mdba.activities[0].count(), 0);
+	QCOMPARE(mdba.activities[1].count(), 0);
 }
 
 void GeneratePreTest::MinDays_ComputedSize()
