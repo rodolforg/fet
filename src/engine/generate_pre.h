@@ -35,7 +35,6 @@ File generate_pre.h
 
 class QWidget;
 
-bool compareFunctionGeneratePre(int i, int j);
 
 extern int permutation[MAX_ACTIVITIES]; //the permutation matrix to obtain activities in
 //decreasing difficulty order
