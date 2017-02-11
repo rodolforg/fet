@@ -42,6 +42,7 @@ SOURCES += tst_generatepretest.cpp \
     ../../../src/engine/timetable_defs.cpp \
     ../../../src/engine/xmllog.cpp \
     ../../../src/engine/constraints/mindaysbetweenactivities.cpp \
+    ../../../src/engine/constraints/maxdaysbetweenactivities.cpp \
     ../../../src/engine/messageboxes.cpp \
     ../../../src/engine/randomknuth.cpp \
     ../../../src/interface/longtextmessagebox.cpp

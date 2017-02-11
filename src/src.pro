@@ -23,6 +23,7 @@ SOURCES += \
 	engine/messageboxes.cpp \
 	engine/xmllog.cpp \
 	engine/constraints/mindaysbetweenactivities.cpp \
+	engine/constraints/maxdaysbetweenactivities.cpp \
 	\
 	interface/fet.cpp \
 	interface/helpaboutform.cpp \
@@ -466,6 +467,7 @@ HEADERS += \
 	engine/messageboxes.h \
 	engine/xmllog.h \
 	engine/constraints/mindaysbetweenactivities.h \
+	engine/constraints/maxdaysbetweenactivities.h \
 	\
 	interface/fet.h \
 	interface/helpaboutform.h \
