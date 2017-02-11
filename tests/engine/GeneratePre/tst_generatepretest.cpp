@@ -56,7 +56,7 @@ void GeneratePreTest::MinDays_ReturnOkIfNoMinDaysConstraint()
 {
 	MockRules3Activities mock(*rules);
 
-	bool result = minDaysBetweenActivitiesList.prepare();
+	bool result = minDaysBetweenActivitiesList.prepare(*rules);
 
 	QVERIFY2(result, "Could not compute MinDays constraint list");
 }
@@ -72,7 +72,7 @@ void GeneratePreTest::MinDays_InactiveConstraintIsIgnored()
 	ctr->active = false;
 	rules->computeInternalStructure(NULL);
 
-	bool result = minDaysBetweenActivitiesList.prepare();
+	bool result = minDaysBetweenActivitiesList.prepare(*rules);
 
 	QVERIFY2(result, "Could not compute MinDays constraint list");
 
@@ -100,7 +100,7 @@ void GeneratePreTest::MinDays_ComputedSize()
 	rules->addTimeConstraint(ctr);
 	rules->computeInternalStructure(NULL);
 
-	bool result = minDaysBetweenActivitiesList.prepare();
+	bool result = minDaysBetweenActivitiesList.prepare(*rules);
 
 	QVERIFY2(result, "Could not compute MinDays constraint list");
 
@@ -127,7 +127,7 @@ void GeneratePreTest::MinDays_CheckValues()
 	rules->addTimeConstraint(ctr);
 	rules->computeInternalStructure(NULL);
 
-	bool result = minDaysBetweenActivitiesList.prepare();
+	bool result = minDaysBetweenActivitiesList.prepare(*rules);
 
 	QVERIFY2(result, "Could not compute MinDays constraint list");
 
@@ -158,7 +158,7 @@ void GeneratePreTest::MinDays_ActivityHasMoreThanOneOfThisConstraint()
 	rules->addTimeConstraint(ctr2);
 	rules->computeInternalStructure(NULL);
 
-	bool result = minDaysBetweenActivitiesList.prepare();
+	bool result = minDaysBetweenActivitiesList.prepare(*rules);
 
 	QVERIFY2(result, "Could not compute MinDays constraint list");
 
@@ -193,7 +193,7 @@ void GeneratePreTest::MinDays_FailIfActivityMinDaysToItself()
 	rules->addTimeConstraint(ctr1);
 	rules->computeInternalStructure(NULL);
 
-	bool result = minDaysBetweenActivitiesList.prepare();
+	bool result = minDaysBetweenActivitiesList.prepare(*rules);
 	QVERIFY2(result == false, "Should not accept constraint MinDaysBetweenActivities if the activities are the same one");
 }
 
@@ -207,7 +207,7 @@ void GeneratePreTest::MinDays_FailIfActivityMinDaysToItself_v2()
 	rules->timeConstraintsList.append(ctr1);
 	rules->computeInternalStructure(NULL);
 
-	bool result = minDaysBetweenActivitiesList.prepare();
+	bool result = minDaysBetweenActivitiesList.prepare(*rules);
 	QVERIFY2(result == false, "Should not accept constraint MinDaysBetweenActivities if the activities are the same one");
 }
 
@@ -221,7 +221,7 @@ void GeneratePreTest::MinDays_NumErrorMsgs_WhenPreparationOfMinDaysFails()
 	rules->timeConstraintsList.append(ctr1);
 	rules->computeInternalStructure(NULL);
 
-	minDaysBetweenActivitiesList.prepare();
+	minDaysBetweenActivitiesList.prepare(*rules);
 	QCOMPARE(minDaysBetweenActivitiesList.getErrors().count(), 1);
 
 	acts.clear();
@@ -230,7 +230,7 @@ void GeneratePreTest::MinDays_NumErrorMsgs_WhenPreparationOfMinDaysFails()
 	rules->timeConstraintsList.append(ctr2);
 	rules->computeInternalStructure(NULL);
 
-	minDaysBetweenActivitiesList.prepare();
+	minDaysBetweenActivitiesList.prepare(*rules);
 	QCOMPARE(minDaysBetweenActivitiesList.getErrors().count(), 2);
 }
 
@@ -244,7 +244,7 @@ void GeneratePreTest::MinDays_ThreeActivitiesAtOnce()
 	rules->timeConstraintsList.append(ctr1);
 	rules->computeInternalStructure(NULL);
 
-	bool result = minDaysBetweenActivitiesList.prepare();
+	bool result = minDaysBetweenActivitiesList.prepare(*rules);
 
 	QVERIFY2(result, "Could not compute MinDays constraint list");
 
