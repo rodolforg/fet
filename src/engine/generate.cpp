@@ -3544,25 +3544,25 @@ impossiblebasictime:
 		//care about min days
 		okmindays=true;
 		
-		for(int i=0; i<minDaysBetweenActivitiesList.minDaysListOfActivities[ai].count(); i++){
-			int ai2=minDaysBetweenActivitiesList.minDaysListOfActivities[ai].at(i);
-			int md=minDaysBetweenActivitiesList.minDaysListOfMinDays[ai].at(i);
+		for(int i=0; i<minDaysBetweenActivitiesList.activities[ai].count(); i++){
+			int ai2=minDaysBetweenActivitiesList.activities[ai].at(i);
+			int md=minDaysBetweenActivitiesList.minDays[ai].at(i);
 			int ai2time=c.times[ai2];
 			if(ai2time!=UNALLOCATED_TIME){
 				int d2=ai2time%gt.rules.nDaysPerWeek;
 				int h2=ai2time/gt.rules.nDaysPerWeek;
 				if(md>abs(d-d2)){
-					bool okrand=skipRandom(minDaysBetweenActivitiesList.minDaysListOfWeightPercentages[ai].at(i));
+					bool okrand=skipRandom(minDaysBetweenActivitiesList.weightPercentages[ai].at(i));
 					//if(fixedTimeActivity[ai] && minDaysListOfWeightPercentages[ai].at(i)<100.0)
 					//	okrand=true;
 				
 					//broken min days - there is a minDaysBrokenAllowancePercentage% chance to place them adjacent
 					
-					if(minDaysBetweenActivitiesList.minDaysListOfConsecutiveIfSameDay[ai].at(i)==true){ //must place them adjacent if on same day
+					if(minDaysBetweenActivitiesList.consecutiveIfSameDay[ai].at(i)==true){ //must place them adjacent if on same day
 						if(okrand && 
 						 ( (d==d2 && (h+act->duration==h2 || h2+gt.rules.internalActivitiesList[ai2].duration==h)) || d!=d2 ) ){
 						 	//nMinDaysBroken[newtime]++;
-							nMinDaysBroken[newtime]+=minDaysBetweenActivitiesList.minDaysListOfWeightPercentages[ai].at(i)/100.0;
+							nMinDaysBroken[newtime]+=minDaysBetweenActivitiesList.weightPercentages[ai].at(i)/100.0;
 						}
 						else{
 							if(fixedTimeActivity[ai2] || swappedActivities[ai2]){
@@ -3584,7 +3584,7 @@ impossiblebasictime:
 					else{ //can place them anywhere
 						if(okrand){
 						 	//nMinDaysBroken[newtime]++;
-							nMinDaysBroken[newtime]+=minDaysBetweenActivitiesList.minDaysListOfWeightPercentages[ai].at(i)/100.0;
+							nMinDaysBroken[newtime]+=minDaysBetweenActivitiesList.weightPercentages[ai].at(i)/100.0;
 						}
 						else{
 							if(fixedTimeActivity[ai2] || swappedActivities[ai2]){

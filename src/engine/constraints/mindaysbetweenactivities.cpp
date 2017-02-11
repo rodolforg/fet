@@ -12,20 +12,20 @@ MinDaysBetweenActivities::MinDaysBetweenActivities()
 
 }
 
-bool MinDaysBetweenActivities::computeMinDays(QWidget *parent)
+bool MinDaysBetweenActivities::prepare(QWidget *parent)
 {
-	minDaysListOfActivities.resize(gt.rules.nInternalActivities);
-	minDaysListOfMinDays.resize(gt.rules.nInternalActivities);
-	minDaysListOfWeightPercentages.resize(gt.rules.nInternalActivities);
-	minDaysListOfConsecutiveIfSameDay.resize(gt.rules.nInternalActivities);
+	activities.resize(gt.rules.nInternalActivities);
+	minDays.resize(gt.rules.nInternalActivities);
+	weightPercentages.resize(gt.rules.nInternalActivities);
+	consecutiveIfSameDay.resize(gt.rules.nInternalActivities);
 
 	bool ok=true;
 
 	for(int j=0; j<gt.rules.nInternalActivities; j++){
-		minDaysListOfActivities[j].clear();
-		minDaysListOfMinDays[j].clear();
-		minDaysListOfConsecutiveIfSameDay[j].clear();
-		minDaysListOfWeightPercentages[j].clear();
+		activities[j].clear();
+		minDays[j].clear();
+		consecutiveIfSameDay[j].clear();
+		weightPercentages[j].clear();
 	}
 
 	QSet<ConstraintMinDaysBetweenActivities*> mdset;
@@ -57,11 +57,11 @@ bool MinDaysBetweenActivities::computeMinDays(QWidget *parent)
 						}
 						int m=md->minDays;
 
-						minDaysListOfActivities[ai1].append(ai2);
-						minDaysListOfMinDays[ai1].append(m);
+						activities[ai1].append(ai2);
+						minDays[ai1].append(m);
 						assert(md->weightPercentage >=0 && md->weightPercentage<=100);
-						minDaysListOfWeightPercentages[ai1].append(md->weightPercentage);
-						minDaysListOfConsecutiveIfSameDay[ai1].append(md->consecutiveIfSameDay);
+						weightPercentages[ai1].append(md->weightPercentage);
+						consecutiveIfSameDay[ai1].append(md->consecutiveIfSameDay);
 					}
 			}
 		}
