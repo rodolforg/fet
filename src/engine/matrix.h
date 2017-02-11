@@ -119,6 +119,11 @@ public:
 	 */
 	void resize(int _d1);
 	T& operator[](int i) const;
+	/**
+	 * @brief getD1 the current matrix dimension
+	 * @return the current 1-D matrix size
+	 */
+	int getD1() const;
 };
 
 
@@ -242,6 +247,11 @@ template <typename T> inline T& Matrix2D<T>::operator()(int i, int j)
 	return content[i*d2+j];
 }
 
+
+template <typename T> int Matrix1D<T>::getD1() const
+{
+return d1;
+}
 
 template <typename T> Matrix1D<T>::Matrix1D()
 	: d1(-1), a(nullptr)
