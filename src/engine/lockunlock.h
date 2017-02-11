@@ -33,7 +33,7 @@ public:
 	CommunicationSpinBox();
 	
 signals:
-	int valueChanged();
+	void valueChanged();
 	
 public slots:
 	void increaseValue();
