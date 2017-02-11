@@ -624,9 +624,19 @@ bool processTimeSpaceConstraints(QWidget* parent, QTextStream* initialOrderStrea
 	//////////////////////////////
 	
 	/////2. min days between activities
-	t=minDaysBetweenActivitiesList.prepare(parent);
-	if(!t)
+	t=minDaysBetweenActivitiesList.prepare();
+	if(!t) {
+		foreach (QString errorMsg, minDaysBetweenActivitiesList.getErrors()) {
+			int r=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
+				   errorMsg,
+				   GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
+				   1, 0 );
+
+			if(r==0)
+				break;
+		}
 		return false;
+	}
 	/////////////////////////////////////
 	
 	/////2.3. max days between activities

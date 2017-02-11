@@ -1,23 +1,28 @@
 #include "mindaysbetweenactivities.h"
 
-#include "messageboxes.h"
-
 #include "timetable.h"
 extern Timetable gt;
 
 #include "generate_pre.h"
+
+QStringList MinDaysBetweenActivities::getErrors() const
+{
+	return errors;
+}
 
 MinDaysBetweenActivities::MinDaysBetweenActivities()
 {
 
 }
 
-bool MinDaysBetweenActivities::prepare(QWidget *parent)
+bool MinDaysBetweenActivities::prepare()
 {
 	activities.resize(gt.rules.nInternalActivities);
 	minDays.resize(gt.rules.nInternalActivities);
 	weightPercentages.resize(gt.rules.nInternalActivities);
 	consecutiveIfSameDay.resize(gt.rules.nInternalActivities);
+
+	errors.clear();
 
 	bool ok=true;
 
@@ -45,14 +50,11 @@ bool MinDaysBetweenActivities::prepare(QWidget *parent)
 
 							if(!mdset.contains(md)){
 								mdset.insert(md);
-								int t=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
-									   GeneratePreTranslate::tr("Cannot optimize, because you have a constraint min days with duplicate activities. The constraint "
-									   "is: %1. Please correct that.").arg(md->getDetailedDescription(gt.rules)),
-									   GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
-									   1, 0 );
-
-								if(t==0)
-									return ok;
+								errors.append(
+											GeneratePreTranslate::tr("Cannot optimize, because you have a constraint min days with duplicate activities. The constraint "
+											"is: %1. Please correct that.").arg(md->getDetailedDescription(gt.rules))
+											);
+								continue;
 							}
 						}
 						int m=md->minDays;
