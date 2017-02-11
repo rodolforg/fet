@@ -5181,14 +5181,10 @@ bool computeMinDays(QWidget* parent)
 		minDaysListOfMinDays[j].clear();
 		minDaysListOfConsecutiveIfSameDay[j].clear();
 		minDaysListOfWeightPercentages[j].clear();
-				
-		//for(int k=0; k<gt.rules.nInternalActivities; k++)
-		//	minDays[j][k]=0;
 	}
 
 	for(int i=0; i<gt.rules.nInternalTimeConstraints; i++)
-		if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_MIN_DAYS_BETWEEN_ACTIVITIES
-		 /*&&gt.rules.internalTimeConstraintsList[i]->compulsory==true*/){
+		if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_MIN_DAYS_BETWEEN_ACTIVITIES){
 			ConstraintMinDaysBetweenActivities* md=
 			 (ConstraintMinDaysBetweenActivities*)gt.rules.internalTimeConstraintsList[i];
 			
@@ -5214,9 +5210,7 @@ bool computeMinDays(QWidget* parent)
 							}
 						}
 						int m=md->minDays;
-						/*if(m>minDays[ai1][ai2])
-							minDays[ai1][ai2]=minDays[ai2][ai1]=m;*/
-						
+
 						minDaysListOfActivities[ai1].append(ai2);
 						minDaysListOfMinDays[ai1].append(m);
 						assert(md->weightPercentage >=0 && md->weightPercentage<=100);
@@ -5226,14 +5220,6 @@ bool computeMinDays(QWidget* parent)
 			}
 		}
 
-	/*for(int j=0; j<gt.rules.nInternalActivities; j++)
-		for(int k=0; k<gt.rules.nInternalActivities; k++)
-			if(minDays[j][k]>0){
-				assert(j!=k);
-				minDaysListOfActivities[j].append(k);
-				minDaysListOfMinDays[j].append(minDays[j][k]);
-			}*/
-			
 	return ok;
 }
 
