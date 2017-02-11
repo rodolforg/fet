@@ -70,9 +70,7 @@ Matrix1D<QHash<int, int> > activitiesConflictingPercentage;
 MinDaysBetweenActivities minDaysBetweenActivitiesList;
 
 //MAX DAYS BETWEEN ACTIVITIES
-Matrix1D<QList<int> > maxDaysListOfActivities;
-Matrix1D<QList<int> > maxDaysListOfMaxDays;
-Matrix1D<QList<double> > maxDaysListOfWeightPercentages;
+MaxDaysBetweenActivities maxDaysBetweenActivitiesList;
 
 //MIN GAPS BETWEEN ACTIVITIES
 Matrix1D<QList<int> > minGapsBetweenActivitiesListOfActivities;
@@ -516,11 +514,6 @@ bool processTimeSpaceConstraints(QWidget* parent, QTextStream* initialOrderStrea
 
 	//////////////////begin resizing
 
-	//MAX DAYS BETWEEN ACTIVITIES
-	maxDaysListOfActivities.resize(gt.rules.nInternalActivities);
-	maxDaysListOfMaxDays.resize(gt.rules.nInternalActivities);
-	maxDaysListOfWeightPercentages.resize(gt.rules.nInternalActivities);
-
 	//MIN GAPS BETWEEN ACTIVITIES
 	minGapsBetweenActivitiesListOfActivities.resize(gt.rules.nInternalActivities);
 	minGapsBetweenActivitiesListOfMinGaps.resize(gt.rules.nInternalActivities);
@@ -640,9 +633,19 @@ bool processTimeSpaceConstraints(QWidget* parent, QTextStream* initialOrderStrea
 	/////////////////////////////////////
 	
 	/////2.3. max days between activities
-	t=computeMaxDays(parent);
-	if(!t)
+	t=maxDaysBetweenActivitiesList.prepare(gt.rules);
+	if(!t) {
+		foreach (QString errorMsg, maxDaysBetweenActivitiesList.getErrors()) {
+			int r=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
+				   errorMsg,
+				   GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
+				   1, 0 );
+
+			if(r==0)
+				break;
+		}
 		return false;
+	}
 	/////////////////////////////////////
 	
 	/////2.5. min gaps between activities
@@ -5168,57 +5171,6 @@ bool computeNotAllowedTimesPercentages(QWidget* parent)
 			}
 	}
 	
-	return ok;
-}
-
-bool computeMaxDays(QWidget* parent)
-{
-	QSet<ConstraintMaxDaysBetweenActivities*> mdset;
-
-	bool ok=true;
-
-	for(int j=0; j<gt.rules.nInternalActivities; j++){
-		maxDaysListOfActivities[j].clear();
-		maxDaysListOfMaxDays[j].clear();
-		maxDaysListOfWeightPercentages[j].clear();
-	}
-
-	for(int i=0; i<gt.rules.nInternalTimeConstraints; i++)
-		if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_MAX_DAYS_BETWEEN_ACTIVITIES){
-			ConstraintMaxDaysBetweenActivities* md=
-			 (ConstraintMaxDaysBetweenActivities*)gt.rules.internalTimeConstraintsList[i];
-			
-			for(int j=0; j<md->_n_activities; j++){
-				int ai1=md->_activities[j];
-				for(int k=0; k<md->_n_activities; k++)
-					if(j!=k){
-						int ai2=md->_activities[k];
-						if(ai1==ai2){						
-							ok=false;
-							
-							if(!mdset.contains(md)){
-								mdset.insert(md);
-						
-								int t=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
-								 GeneratePreTranslate::tr("Cannot optimize, because you have a constraint max days between activities with duplicate activities. The constraint "
-								 "is: %1. Please correct that.").arg(md->getDetailedDescription(gt.rules)),
-								 GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
-								 1, 0 );
-					
-								if(t==0)
-									return ok;
-							}
-						}
-						int m=md->maxDays;
-						
-						maxDaysListOfActivities[ai1].append(ai2);
-						maxDaysListOfMaxDays[ai1].append(m);
-						assert(md->weightPercentage >=0 && md->weightPercentage<=100);
-						maxDaysListOfWeightPercentages[ai1].append(md->weightPercentage);
-					}
-			}
-		}
-
 	return ok;
 }
 

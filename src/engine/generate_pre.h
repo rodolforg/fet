@@ -36,6 +36,7 @@ File generate_pre.h
 class QWidget;
 
 #include "constraints/mindaysbetweenactivities.h"
+#include "constraints/maxdaysbetweenactivities.h"
 
 extern int permutation[MAX_ACTIVITIES]; //the permutation matrix to obtain activities in
 //decreasing difficulty order
@@ -63,11 +64,7 @@ extern MinDaysBetweenActivities minDaysBetweenActivitiesList;
 
 
 ////////BEGIN MAX DAYS TIME CONSTRAINTS
-extern Matrix1D<QList<int> > maxDaysListOfActivities;
-extern Matrix1D<QList<int> > maxDaysListOfMaxDays;
-extern Matrix1D<QList<double> > maxDaysListOfWeightPercentages;
-
-bool computeMaxDays(QWidget* parent);
+extern MaxDaysBetweenActivities maxDaysBetweenActivitiesList;
 ////////END   MAX DAYS TIME CONSTRAINTS
 
 

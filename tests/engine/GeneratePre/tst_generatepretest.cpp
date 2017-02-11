@@ -30,6 +30,8 @@ private slots:
 	void MinDays_FailIfActivityMinDaysToItself_v2();
 	void MinDays_NumErrorMsgs_WhenPreparationOfMinDaysFails();
 	void MinDays_ThreeActivitiesAtOnce();
+
+	void MaxDays_ReturnOkIfNoMinDaysConstraint();
 };
 
 GeneratePreTest::GeneratePreTest()
@@ -310,6 +312,17 @@ void GeneratePreTest::MinDays_ThreeActivitiesAtOnce()
 	QCOMPARE(mdba.minDays[2][1], 2);
 	QCOMPARE(mdba.consecutiveIfSameDay[2][1], true);
 	QCOMPARE(mdba.weightPercentages[2][1], 80.0);
+}
+
+void GeneratePreTest::MaxDays_ReturnOkIfNoMinDaysConstraint()
+{
+	MockRules3Activities mock;
+
+	MaxDaysBetweenActivities mdba;
+
+	bool result = mdba.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MaxDays constraint list");
 }
 
 GeneratePreTest::MockRules3Activities::MockRules3Activities()
