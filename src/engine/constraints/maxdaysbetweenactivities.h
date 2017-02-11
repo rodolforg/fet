@@ -8,9 +8,9 @@
 class MaxDaysBetweenActivities
 {
 public:
-	Matrix1D<QList<int> > maxDaysListOfActivities;
-	Matrix1D<QList<int> > maxDaysListOfMaxDays;
-	Matrix1D<QList<double> > maxDaysListOfWeightPercentages;
+	Matrix1D<QList<int> > activities;
+	Matrix1D<QList<int> > maxDays;
+	Matrix1D<QList<double> > weightPercentages;
 
 	QStringList errors;
 
