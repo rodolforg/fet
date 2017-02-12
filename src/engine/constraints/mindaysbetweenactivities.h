@@ -7,13 +7,13 @@
 
 class MinDaysBetweenActivities
 {
+	QStringList errors;
+
 public:
 	Matrix1D<QList<int> > activities;
 	Matrix1D<QList<int> > minDays;
 	Matrix1D<QList<double> > weightPercentages;
 	Matrix1D<QList<bool> > consecutiveIfSameDay;
-
-	QStringList errors;
 
 	MinDaysBetweenActivities();
 

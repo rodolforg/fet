@@ -7,12 +7,12 @@
 
 class MaxDaysBetweenActivities
 {
+	QStringList errors;
+
 public:
 	Matrix1D<QList<int> > activities;
 	Matrix1D<QList<int> > maxDays;
 	Matrix1D<QList<double> > weightPercentages;
-
-	QStringList errors;
 
 	MaxDaysBetweenActivities();
 
