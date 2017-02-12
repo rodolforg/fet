@@ -400,6 +400,19 @@ static int nIncompatibleFromFather[MAX_ACTIVITIES];
 int fatherActivityInInitialOrder[MAX_ACTIVITIES];
 ////////////////////////////////////
 
+static void reportSkippableErrors(QWidget *parent, const QStringList& errorList)
+{
+	foreach (QString errorMsg, errorList) {
+		int r=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
+			   errorMsg,
+			   GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
+			   1, 0 );
+
+		if(r==0)
+			break;
+	}
+}
+
 inline bool findEquivalentSubgroupsCompareFunction(int i1, int i2)
 {
 	const QList<int>& a1=gt.rules.internalSubgroupsList[i1]->activitiesForSubgroup;
@@ -619,15 +632,7 @@ bool processTimeSpaceConstraints(QWidget* parent, QTextStream* initialOrderStrea
 	/////2. min days between activities
 	t=minDaysBetweenActivitiesList.prepare(gt.rules);
 	if(!t) {
-		foreach (QString errorMsg, minDaysBetweenActivitiesList.getErrors()) {
-			int r=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
-				   errorMsg,
-				   GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
-				   1, 0 );
-
-			if(r==0)
-				break;
-		}
+		reportSkippableErrors(parent, minDaysBetweenActivitiesList.getErrors());
 		return false;
 	}
 	/////////////////////////////////////
@@ -635,15 +640,7 @@ bool processTimeSpaceConstraints(QWidget* parent, QTextStream* initialOrderStrea
 	/////2.3. max days between activities
 	t=maxDaysBetweenActivitiesList.prepare(gt.rules);
 	if(!t) {
-		foreach (QString errorMsg, maxDaysBetweenActivitiesList.getErrors()) {
-			int r=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
-				   errorMsg,
-				   GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
-				   1, 0 );
-
-			if(r==0)
-				break;
-		}
+		reportSkippableErrors(parent, maxDaysBetweenActivitiesList.getErrors());
 		return false;
 	}
 	/////////////////////////////////////
