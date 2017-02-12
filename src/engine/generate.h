@@ -97,7 +97,7 @@ public:
 	void abort();
 
 	enum Status {SUCCESS, IMPOSSIBLE, TIMEOUT, ABORTED};
-	bool precompute(QWidget* parent, QTextStream* maxPlacedActivityStream=NULL);
+	bool precompute(QWidget* parent, QTextStream *initialOrderStream = NULL);
 
 	Status generate(int maxSeconds, bool threaded, QTextStream* maxPlacedActivityStream=NULL);
 
