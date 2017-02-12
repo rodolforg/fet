@@ -3662,9 +3662,9 @@ impossiblemaxdays:
 		//care about min gaps between activities
 		okmingapsbetweenactivities=true;
 		
-		for(int i=0; i<minGapsBetweenActivitiesListOfActivities[ai].count(); i++){
-			int ai2=minGapsBetweenActivitiesListOfActivities[ai].at(i);
-			int mg=minGapsBetweenActivitiesListOfMinGaps[ai].at(i);
+		for(int i=0; i<minGapsBetweenActivitiesList.activities[ai].count(); i++){
+			int ai2=minGapsBetweenActivitiesList.activities[ai].at(i);
+			int mg=minGapsBetweenActivitiesList.minGaps[ai].at(i);
 			int ai2time=c.times[ai2];
 			if(ai2time!=UNALLOCATED_TIME){
 				int d2=ai2time%gt.rules.nDaysPerWeek;
@@ -3685,7 +3685,7 @@ impossiblemaxdays:
 				}
 				
 				if(!oktmp){
-					bool okrand=skipRandom(minGapsBetweenActivitiesListOfWeightPercentages[ai].at(i));
+					bool okrand=skipRandom(minGapsBetweenActivitiesList.weightPercentages[ai].at(i));
 					
 					//if(fixedTimeActivity[ai] && minGapsBetweenActivitiesListOfWeightPercentages[ai].at(i)<100.0)
 					//	okrand=true;

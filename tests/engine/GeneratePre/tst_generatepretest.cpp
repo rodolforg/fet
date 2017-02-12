@@ -41,6 +41,17 @@ private slots:
 	void MaxDays_FailIfActivityMaxDaysToItself_v2();
 	void MaxDays_NumErrorMsgs_WhenPreparationOfMaxDaysFails();
 	void MaxDays_ThreeActivitiesAtOnce();
+
+	void MinGaps_ReturnOkIfNoMinGapsConstraint();
+	void MinGaps_InactiveConstraintIsIgnored();
+	void MinGaps_ConstraintWithInactiveActivityIsIgnored();
+	void MinGaps_ComputedSize();
+	void MinGaps_CheckValues();
+	void MinGaps_ActivityHasMoreThanOneOfThisConstraint();
+	void MinGaps_FailIfActivityMinGapsToItself();
+	void MinGaps_FailIfActivityMinGapsToItself_v2();
+	void MinGaps_NumErrorMsgs_WhenPreparationOfMinGapsFails();
+	void MinGaps_ThreeActivitiesAtOnce();
 };
 
 GeneratePreTest::GeneratePreTest()
@@ -583,6 +594,268 @@ void GeneratePreTest::MaxDays_ThreeActivitiesAtOnce()
 	QCOMPARE(mdba.activities[2][1], mock.rules.activitiesHash.value(23456, -1));
 	QCOMPARE(mdba.maxDays[2][1], 2);
 	QCOMPARE(mdba.weightPercentages[2][1], 80.0);
+}
+
+void GeneratePreTest::MinGaps_ReturnOkIfNoMinGapsConstraint()
+{
+	MockRules3Activities mock;
+
+	MinGapsBetweenActivities mgba;
+
+	bool result = mgba.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MinGaps constraint list");
+}
+
+void GeneratePreTest::MinGaps_InactiveConstraintIsIgnored()
+{
+	MockRules3Activities mock;
+
+	QList<int> acts;
+	acts << 12345 << 23456;
+	ConstraintMinGapsBetweenActivities *ctr = new ConstraintMinGapsBetweenActivities(50.0, 2, acts, 5);
+	mock.rules.addTimeConstraint(ctr);
+	ctr->active = false;
+	mock.rules.computeInternalStructure(NULL);
+
+	MinGapsBetweenActivities mgba;
+
+	bool result = mgba.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MinGaps constraint list");
+
+	QCOMPARE(mgba.activities.getD1(), 3);
+
+	QCOMPARE(mgba.activities[0].count(), 0);
+	QCOMPARE(mgba.minGaps[0].count(), 0);
+	QCOMPARE(mgba.weightPercentages[0].count(), 0);
+
+	QCOMPARE(mgba.activities[1].count(), 0);
+	QCOMPARE(mgba.minGaps[1].count(), 0);
+	QCOMPARE(mgba.weightPercentages[1].count(), 0);
+}
+
+
+void GeneratePreTest::MinGaps_ConstraintWithInactiveActivityIsIgnored()
+{
+	MockRules3Activities mock;
+
+	QList<int> acts;
+	acts << mock.rules.activitiesList[0]->id << mock.rules.activitiesList[1]->id;
+	ConstraintMinGapsBetweenActivities *ctr = new ConstraintMinGapsBetweenActivities(85.0, 2, acts, 5);
+	mock.rules.addTimeConstraint(ctr);
+
+	mock.rules.activitiesList[0]->active = false;
+
+	MinGapsBetweenActivities mgba;
+
+	bool result = mgba.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MinGaps constraint list");
+
+	QCOMPARE(mgba.getErrors().count(), 0);
+	QCOMPARE(mgba.activities.getD1(), 3);
+
+	QCOMPARE(mgba.activities[0].count(), 0);
+	QCOMPARE(mgba.activities[1].count(), 0);
+}
+
+void GeneratePreTest::MinGaps_ComputedSize()
+{
+	MockRules3Activities mock;
+
+	QList<int> acts;
+	acts << 12345 << 23456;
+	ConstraintMinGapsBetweenActivities *ctr = new ConstraintMinGapsBetweenActivities(50.0, 2, acts, 5);
+	mock.rules.addTimeConstraint(ctr);
+	mock.rules.computeInternalStructure(NULL);
+
+	MinGapsBetweenActivities mgba;
+
+	bool result = mgba.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MinGaps constraint list");
+
+	QCOMPARE(mgba.activities.getD1(), 3);
+
+	QCOMPARE(mgba.activities[0].count(), 1);
+	QCOMPARE(mgba.minGaps[0].count(), 1);
+	QCOMPARE(mgba.weightPercentages[0].count(), 1);
+
+	QCOMPARE(mgba.activities[1].count(), 1);
+	QCOMPARE(mgba.minGaps[1].count(), 1);
+	QCOMPARE(mgba.weightPercentages[1].count(), 1);
+}
+
+void GeneratePreTest::MinGaps_CheckValues()
+{
+	MockRules3Activities mock;
+
+	QList<int> acts;
+	acts << 12345 << 23456;
+	ConstraintMinGapsBetweenActivities *ctr = new ConstraintMinGapsBetweenActivities(50.0, 2, acts, 5);
+	mock.rules.addTimeConstraint(ctr);
+	mock.rules.computeInternalStructure(NULL);
+
+	MinGapsBetweenActivities mgba;
+
+	bool result = mgba.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MinGaps constraint list");
+
+	QCOMPARE(mgba.activities.getD1(), 3);
+
+	QCOMPARE(mgba.activities[0][0], mock.rules.activitiesHash.value(23456, -1));
+	QCOMPARE(mgba.minGaps[0][0], 5);
+	QCOMPARE(mgba.weightPercentages[0][0], 50.0);
+
+	QCOMPARE(mgba.activities[1][0], mock.rules.activitiesHash.value(12345, -1));
+	QCOMPARE(mgba.minGaps[1][0], 5);
+	QCOMPARE(mgba.weightPercentages[1][0], 50.0);
+}
+
+void GeneratePreTest::MinGaps_ActivityHasMoreThanOneOfThisConstraint()
+{
+	MockRules3Activities mock;
+
+	QList<int> acts;
+	acts << 12345 << 23456;
+	ConstraintMinGapsBetweenActivities *ctr1 = new ConstraintMinGapsBetweenActivities(50.0, 2, acts, 5);
+	mock.rules.addTimeConstraint(ctr1);
+	acts.clear();
+	acts << 23456 << 34567;
+	ConstraintMinGapsBetweenActivities *ctr2 = new ConstraintMinGapsBetweenActivities(75.0, 2, acts, 4);
+	mock.rules.addTimeConstraint(ctr2);
+	mock.rules.computeInternalStructure(NULL);
+
+	MinGapsBetweenActivities mgba;
+
+	bool result = mgba.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MinGaps constraint list");
+
+	QCOMPARE(mgba.activities.getD1(), 3);
+
+	QCOMPARE(mgba.activities[1].count(), 2);
+	QCOMPARE(mgba.minGaps[1].count(), 2);
+	QCOMPARE(mgba.weightPercentages[1].count(), 2);
+
+	QCOMPARE(mgba.activities[2].count(), 1);
+	QCOMPARE(mgba.minGaps[2].count(), 1);
+	QCOMPARE(mgba.weightPercentages[2].count(), 1);
+
+	QCOMPARE(mgba.activities[2][0], mock.rules.activitiesHash.value(23456, -1));
+	QCOMPARE(mgba.minGaps[2][0], 4);
+	QCOMPARE(mgba.weightPercentages[2][0], 75.0);
+}
+
+void GeneratePreTest::MinGaps_FailIfActivityMinGapsToItself()
+{
+	MockRules3Activities mock;
+
+	QList<int> acts;
+	acts << 12345 << 12345;
+
+	QSKIP("Disable test due to usage of assert in Rules::addTimeConstraint()");
+
+	ConstraintMinGapsBetweenActivities *ctr1 = new ConstraintMinGapsBetweenActivities(80.0, 2, acts, 5);
+	mock.rules.addTimeConstraint(ctr1);
+	mock.rules.computeInternalStructure(NULL);
+
+	MinGapsBetweenActivities mgba;
+
+	bool result = mgba.prepare(mock.rules);
+	QVERIFY2(result == false, "Should not accept constraint MinGapsBetweenActivities if the activities are the same one");
+}
+
+void GeneratePreTest::MinGaps_FailIfActivityMinGapsToItself_v2()
+{
+	MockRules3Activities mock;
+
+	QList<int> acts;
+	acts << 12345 << 12345;
+	ConstraintMinGapsBetweenActivities *ctr1 = new ConstraintMinGapsBetweenActivities(80.0, 2, acts, 5);
+	mock.rules.timeConstraintsList.append(ctr1);
+	mock.rules.computeInternalStructure(NULL);
+
+	MinGapsBetweenActivities mgba;
+
+	bool result = mgba.prepare(mock.rules);
+	QVERIFY2(result == false, "Should not accept constraint MinGapsBetweenActivities if the activities are the same one");
+}
+
+void GeneratePreTest::MinGaps_NumErrorMsgs_WhenPreparationOfMinGapsFails()
+{
+	MockRules3Activities mock;
+
+	QList<int> acts;
+	acts << 12345 << 12345;
+	ConstraintMinGapsBetweenActivities *ctr1 = new ConstraintMinGapsBetweenActivities(80.0, 2, acts, 5);
+	mock.rules.timeConstraintsList.append(ctr1);
+	mock.rules.computeInternalStructure(NULL);
+
+	MinGapsBetweenActivities mgba;
+
+	mgba.prepare(mock.rules);
+	QCOMPARE(mgba.getErrors().count(), 1);
+
+	acts.clear();
+	acts << 23456 << 23456;
+	ConstraintMinGapsBetweenActivities *ctr2 = new ConstraintMinGapsBetweenActivities(100.0, 2, acts, 3);
+	mock.rules.timeConstraintsList.append(ctr2);
+	mock.rules.computeInternalStructure(NULL);
+
+	mgba.prepare(mock.rules);
+	QCOMPARE(mgba.getErrors().count(), 2);
+}
+
+void GeneratePreTest::MinGaps_ThreeActivitiesAtOnce()
+{
+	MockRules3Activities mock;
+
+	QList<int> acts;
+	acts << 12345 << 23456 << 34567;
+	ConstraintMinGapsBetweenActivities *ctr1 = new ConstraintMinGapsBetweenActivities(80.0, 3, acts, 2);
+	mock.rules.timeConstraintsList.append(ctr1);
+	mock.rules.computeInternalStructure(NULL);
+
+	MinGapsBetweenActivities mgba;
+
+	bool result = mgba.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MinGaps constraint list");
+
+	QCOMPARE(mgba.activities.getD1(), 3);
+
+	QCOMPARE(mgba.activities[0].count(), 2);
+
+	QCOMPARE(mgba.activities[0][0], mock.rules.activitiesHash.value(23456, -1));
+	QCOMPARE(mgba.minGaps[0][0], 2);
+	QCOMPARE(mgba.weightPercentages[0][0], 80.0);
+
+	QCOMPARE(mgba.activities[0][1], mock.rules.activitiesHash.value(34567, -1));
+	QCOMPARE(mgba.minGaps[0][1], 2);
+	QCOMPARE(mgba.weightPercentages[0][1], 80.0);
+
+	QCOMPARE(mgba.activities[1].count(), 2);
+
+	QCOMPARE(mgba.activities[1][0], mock.rules.activitiesHash.value(12345, -1));
+	QCOMPARE(mgba.minGaps[1][0], 2);
+	QCOMPARE(mgba.weightPercentages[1][0], 80.0);
+
+	QCOMPARE(mgba.activities[1][1], mock.rules.activitiesHash.value(34567, -1));
+	QCOMPARE(mgba.minGaps[1][1], 2);
+	QCOMPARE(mgba.weightPercentages[1][1], 80.0);
+
+	QCOMPARE(mgba.activities[2].count(), 2);
+
+	QCOMPARE(mgba.activities[2][0], mock.rules.activitiesHash.value(12345, -1));
+	QCOMPARE(mgba.minGaps[2][0], 2);
+	QCOMPARE(mgba.weightPercentages[2][0], 80.0);
+
+	QCOMPARE(mgba.activities[2][1], mock.rules.activitiesHash.value(23456, -1));
+	QCOMPARE(mgba.minGaps[2][1], 2);
+	QCOMPARE(mgba.weightPercentages[2][1], 80.0);
 }
 
 GeneratePreTest::MockRules3Activities::MockRules3Activities()

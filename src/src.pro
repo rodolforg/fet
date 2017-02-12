@@ -24,6 +24,7 @@ SOURCES += \
 	engine/xmllog.cpp \
 	engine/constraints/mindaysbetweenactivities.cpp \
 	engine/constraints/maxdaysbetweenactivities.cpp \
+	engine/constraints/mingapsbetweenactivities.cpp \
 	\
 	interface/fet.cpp \
 	interface/helpaboutform.cpp \
@@ -468,6 +469,7 @@ HEADERS += \
 	engine/xmllog.h \
 	engine/constraints/mindaysbetweenactivities.h \
 	engine/constraints/maxdaysbetweenactivities.h \
+	engine/constraints/mingapsbetweenactivities.h \
 	\
 	interface/fet.h \
 	interface/helpaboutform.h \
