@@ -73,9 +73,7 @@ MinDaysBetweenActivities minDaysBetweenActivitiesList;
 MaxDaysBetweenActivities maxDaysBetweenActivitiesList;
 
 //MIN GAPS BETWEEN ACTIVITIES
-Matrix1D<QList<int> > minGapsBetweenActivitiesListOfActivities;
-Matrix1D<QList<int> > minGapsBetweenActivitiesListOfMinGaps;
-Matrix1D<QList<double> > minGapsBetweenActivitiesListOfWeightPercentages;
+MinGapsBetweenActivities minGapsBetweenActivitiesList;
 
 //TCH & ST NOT AVAIL, BREAK, ACT(S) PREFERRED TIME(S)
 //double notAllowedTimesPercentages[MAX_ACTIVITIES][MAX_HOURS_PER_WEEK];
@@ -527,11 +525,6 @@ bool processTimeSpaceConstraints(QWidget* parent, QTextStream* initialOrderStrea
 
 	//////////////////begin resizing
 
-	//MIN GAPS BETWEEN ACTIVITIES
-	minGapsBetweenActivitiesListOfActivities.resize(gt.rules.nInternalActivities);
-	minGapsBetweenActivitiesListOfMinGaps.resize(gt.rules.nInternalActivities);
-	minGapsBetweenActivitiesListOfWeightPercentages.resize(gt.rules.nInternalActivities);
-
 	teachersWithMaxDaysPerWeekForActivities.resize(gt.rules.nInternalActivities);
 	subgroupsWithMaxDaysPerWeekForActivities.resize(gt.rules.nInternalActivities);
 
@@ -646,9 +639,11 @@ bool processTimeSpaceConstraints(QWidget* parent, QTextStream* initialOrderStrea
 	/////////////////////////////////////
 	
 	/////2.5. min gaps between activities
-	t=computeMinGapsBetweenActivities(parent);
-	if(!t)
+	t=minGapsBetweenActivitiesList.prepare(gt.rules);
+	if(!t) {
+		reportSkippableErrors(parent, minGapsBetweenActivitiesList.getErrors());
 		return false;
+	}
 	/////////////////////////////////////
 	
 	/////3. st not avail, tch not avail, break, activity pref time,
@@ -5168,63 +5163,6 @@ bool computeNotAllowedTimesPercentages(QWidget* parent)
 			}
 	}
 	
-	return ok;
-}
-
-bool computeMinGapsBetweenActivities(QWidget* parent)
-{
-	QSet<ConstraintMinGapsBetweenActivities*> mgset;
-
-	bool ok=true;
-
-	for(int j=0; j<gt.rules.nInternalActivities; j++){
-		minGapsBetweenActivitiesListOfActivities[j].clear();
-		minGapsBetweenActivitiesListOfMinGaps[j].clear();
-		minGapsBetweenActivitiesListOfWeightPercentages[j].clear();
-				
-		//for(int k=0; k<gt.rules.nInternalActivities; k++)
-		//	minDays[j][k]=0;
-	}
-
-	for(int i=0; i<gt.rules.nInternalTimeConstraints; i++)
-		if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_MIN_GAPS_BETWEEN_ACTIVITIES
-		 /*&&gt.rules.internalTimeConstraintsList[i]->compulsory==true*/){
-			ConstraintMinGapsBetweenActivities* mg=
-			 (ConstraintMinGapsBetweenActivities*)gt.rules.internalTimeConstraintsList[i];
-			 
-			assert(mg->_n_activities==mg->_activities.count());
-			
-			for(int j=0; j<mg->_n_activities; j++){
-				int ai1=mg->_activities[j];
-				for(int k=0; k<mg->_n_activities; k++)
-					if(j!=k){
-						int ai2=mg->_activities[k];
-						if(ai1==ai2){						
-							ok=false;
-							
-							if(!mgset.contains(mg)){
-								mgset.insert(mg);
-						
-								int t=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
-								 GeneratePreTranslate::tr("Cannot optimize, because you have a constraint min gaps between activities with duplicate activities. The constraint "
-								 "is: %1. Please correct that.").arg(mg->getDetailedDescription(gt.rules)),
-								 GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
-								 1, 0 );
-					
-								if(t==0)
-									return ok;
-							}
-						}
-						int m=mg->minGaps;
-						
-						minGapsBetweenActivitiesListOfActivities[ai1].append(ai2);
-						minGapsBetweenActivitiesListOfMinGaps[ai1].append(m);
-						assert(mg->weightPercentage >=0 && mg->weightPercentage<=100);
-						minGapsBetweenActivitiesListOfWeightPercentages[ai1].append(mg->weightPercentage);
-					}
-			}
-		}
-
 	return ok;
 }
 
