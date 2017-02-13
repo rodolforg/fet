@@ -254,8 +254,6 @@ bool USE_GUI_COLORS=false;
 bool SHOW_SUBGROUPS_IN_COMBO_BOXES=true;
 bool SHOW_SUBGROUPS_IN_ACTIVITY_PLANNING=true;
 
-bool SHOW_SHORTCUTS_ON_MAIN_WINDOW=true;
-
 bool SHOW_TOOLTIPS_FOR_CONSTRAINTS_WITH_TABLES=false;
 
 bool ENABLE_ACTIVITY_TAG_MAX_HOURS_DAILY=false;
@@ -440,7 +438,6 @@ FetMainForm::FetMainForm()
 	setCurrentFile(INPUT_FILENAME_XML);
 
 	//toolBox->setCurrentIndex(0);
-	tabWidget->setVisible(SHOW_SHORTCUTS_ON_MAIN_WINDOW);
 	
 	shortcutBasicMenu=new QMenu();
 	shortcutBasicMenu->addMenu(menuInstitution_information);
@@ -510,9 +507,6 @@ FetMainForm::FetMainForm()
 	gt.rules.setModified(false);
 
 	CachedSchedule::invalidate();
-	
-	settingsShowShortcutsOnMainWindowAction->setCheckable(true);
-	settingsShowShortcutsOnMainWindowAction->setChecked(SHOW_SHORTCUTS_ON_MAIN_WINDOW);
 	
 	settingsShowToolTipsForConstraintsWithTablesAction->setCheckable(true);
 	settingsShowToolTipsForConstraintsWithTablesAction->setChecked(SHOW_TOOLTIPS_FOR_CONSTRAINTS_WITH_TABLES);
@@ -808,10 +802,9 @@ void FetMainForm::showSubgroupsInActivityPlanningToggled(bool checked)
 	SHOW_SUBGROUPS_IN_ACTIVITY_PLANNING=checked;
 }
 
-void FetMainForm::on_settingsShowShortcutsOnMainWindowAction_toggled()
+void FetMainForm::on_settingsShowShortcutsOnMainWindowAction_toggled(bool checked)
 {
-	SHOW_SHORTCUTS_ON_MAIN_WINDOW=settingsShowShortcutsOnMainWindowAction->isChecked();
-	tabWidget->setVisible(SHOW_SHORTCUTS_ON_MAIN_WINDOW);
+	tabWidget->setVisible(checked);
 }
 
 void FetMainForm::on_settingsShowToolTipsForConstraintsWithTablesAction_toggled()
@@ -1300,6 +1293,8 @@ bool FetMainForm::fileSaveAs()
 
 void FetMainForm::resetSettings()
 {
+	settingsShowShortcutsOnMainWindowAction->setChecked(true);
+
 	settingsConfirmActivityPlanningAction->setChecked(true);
 	settingsConfirmSpreadActivitiesAction->setChecked(true);
 	settingsConfirmRemoveRedundantAction->setChecked(true);
@@ -1309,6 +1304,8 @@ void FetMainForm::resetSettings()
 void FetMainForm::loadSettings()
 {
 	QSettings settings;
+	settingsShowShortcutsOnMainWindowAction->setChecked(settings.value("FetMainForm/show-shortcuts", true).toBool());
+
 	settingsConfirmActivityPlanningAction->setChecked(settings.value("confirm-activity-planning", true).toBool());
 	settingsConfirmSpreadActivitiesAction->setChecked(settings.value("confirm-spread-activities", true).toBool());
 	settingsConfirmRemoveRedundantAction->setChecked(settings.value("confirm-remove-redundant", true).toBool());
@@ -1318,6 +1315,8 @@ void FetMainForm::loadSettings()
 void FetMainForm::saveSettings()
 {
 	QSettings settings;
+	settings.setValue("FetMainForm/show-shortcuts", settingsShowShortcutsOnMainWindowAction->isChecked());
+
 	settings.setValue("confirm-activity-planning", settingsConfirmActivityPlanningAction->isChecked());
 	settings.setValue("confirm-spread-activities", settingsConfirmSpreadActivitiesAction->isChecked());
 	settings.setValue("confirm-remove-redundant", settingsConfirmRemoveRedundantAction->isChecked());
@@ -2172,7 +2171,7 @@ void FetMainForm::on_dataTimeConstraintsStudentsMaxGapsPerDayAction_triggered()
 			tr("Allocation in course.\nPlease stop simulation before this."));
 		return;
 	}
-	
+
 	if(!ENABLE_STUDENTS_MAX_GAPS_PER_DAY){
 		enableNotPerfectMessage();
 		return;
@@ -2841,10 +2840,6 @@ void FetMainForm::on_settingsRestoreDefaultsAction_triggered()
 	checkForUpdatesAction->setChecked(false);
 	checkForUpdates=0;
 	
-	SHOW_SHORTCUTS_ON_MAIN_WINDOW=true;
-	settingsShowShortcutsOnMainWindowAction->setChecked(SHOW_SHORTCUTS_ON_MAIN_WINDOW);
-	tabWidget->setVisible(SHOW_SHORTCUTS_ON_MAIN_WINDOW);
-
 	tabWidget->setCurrentIndex(0);
 	
 	SHOW_TOOLTIPS_FOR_CONSTRAINTS_WITH_TABLES=false;
