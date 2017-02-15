@@ -5256,6 +5256,66 @@ Notă: set de studenţi indisponibil şi pauzele nu sunt numărate ca ferestre.<
     </message>
 </context>
 <context>
+    <name>AddConstraintStudentsMaxSpanPerDayForm</name>
+    <message>
+        <location filename="../src/interface/addconstraintstudentsmaxspanperdayform.cpp" line="61"/>
+        <location filename="../src/interface/addconstraintstudentsmaxspanperdayform.cpp" line="66"/>
+        <location filename="../src/interface/addconstraintstudentsmaxspanperdayform.cpp" line="75"/>
+        <location filename="../src/interface/addconstraintstudentsmaxspanperdayform.cpp" line="78"/>
+        <source>FET information</source>
+        <translation>FET - informaţie</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentsmaxspanperdayform.cpp" line="62"/>
+        <source>Invalid weight(percentage)</source>
+        <translation>Importanţă invalidă (procent)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentsmaxspanperdayform.cpp" line="67"/>
+        <source>Invalid weight(percentage) - it must be 100%</source>
+        <translation>Importanţă (procentuală) invalidă - trebuie să fie 100%</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentsmaxspanperdayform.cpp" line="76"/>
+        <source>Constraint added:</source>
+        <translation>Constrângere adăugată:</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentsmaxspanperdayform.cpp" line="79"/>
+        <source>Constraint NOT added - please report error</source>
+        <translation>Constrângere NEadăugată - vă rog raportaţi eroarea</translation>
+    </message>
+</context>
+<context>
+    <name>AddConstraintStudentsMaxSpanPerDayForm_template</name>
+    <message>
+        <location filename="../src/interface/addconstraintstudentsmaxspanperdayform_template.ui" line="14"/>
+        <source>Add students max span per day</source>
+        <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
+        <translation>Adaugă studenţi max întindere pe zi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentsmaxspanperdayform_template.ui" line="26"/>
+        <source>Weight percentage (necessary: 100%)</source>
+        <translation>Importanţă - procente (necesar: 100%)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentsmaxspanperdayform_template.ui" line="54"/>
+        <source>Add constraint</source>
+        <translation>Adaugă constrângere</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentsmaxspanperdayform_template.ui" line="61"/>
+        <source>Close</source>
+        <translation>Închide</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentsmaxspanperdayform_template.ui" line="77"/>
+        <source>Max span per day</source>
+        <translation>Max întindere pe zi</translation>
+    </message>
+</context>
+<context>
     <name>AddConstraintStudentsMinGapsBetweenBuildingChangesForm</name>
     <message>
         <location filename="../src/interface/addconstraintstudentsmingapsbetweenbuildingchangesform.cpp" line="61"/>
@@ -5417,6 +5477,71 @@ Notă: set de studenţi indisponibil şi pauzele nu sunt numărate ca ferestre.<
         <location filename="../src/interface/addconstraintstudentsminhoursdailyform_template.ui" line="39"/>
         <source>Weight percentage (necessary: 100%)</source>
         <translation>Importanţa - procente (necesar: 100%)</translation>
+    </message>
+</context>
+<context>
+    <name>AddConstraintStudentsMinRestingHoursForm</name>
+    <message>
+        <location filename="../src/interface/addconstraintstudentsminrestinghoursform.cpp" line="63"/>
+        <location filename="../src/interface/addconstraintstudentsminrestinghoursform.cpp" line="68"/>
+        <location filename="../src/interface/addconstraintstudentsminrestinghoursform.cpp" line="77"/>
+        <location filename="../src/interface/addconstraintstudentsminrestinghoursform.cpp" line="80"/>
+        <source>FET information</source>
+        <translation>FET - informaţie</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentsminrestinghoursform.cpp" line="64"/>
+        <source>Invalid weight(percentage)</source>
+        <translation>Importanţă invalidă (procent)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentsminrestinghoursform.cpp" line="69"/>
+        <source>Invalid weight(percentage) - it must be 100%</source>
+        <translation>Importanţă (procentuală) invalidă - trebuie să fie 100%</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentsminrestinghoursform.cpp" line="78"/>
+        <source>Constraint added:</source>
+        <translation>Constrângere adăugată:</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentsminrestinghoursform.cpp" line="81"/>
+        <source>Constraint NOT added - please report error</source>
+        <translation>Constrângere NEadăugată - vă rog raportaţi eroarea</translation>
+    </message>
+</context>
+<context>
+    <name>AddConstraintStudentsMinRestingHoursForm_template</name>
+    <message>
+        <location filename="../src/interface/addconstraintstudentsminrestinghoursform_template.ui" line="14"/>
+        <source>Add students min resting hours</source>
+        <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
+        <translation>Adaugă studenţi min ore de odihnă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentsminrestinghoursform_template.ui" line="36"/>
+        <source>Weight percentage (necessary: 100%)</source>
+        <translation>Importanţă - procente (necesar: 100%)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentsminrestinghoursform_template.ui" line="46"/>
+        <source>Min resting hours</source>
+        <translation>Min ore de odihnă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentsminrestinghoursform_template.ui" line="58"/>
+        <source>Add constraint</source>
+        <translation>Adaugă constrângere</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentsminrestinghoursform_template.ui" line="65"/>
+        <source>Close</source>
+        <translation>Închide</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentsminrestinghoursform_template.ui" line="90"/>
+        <source>Circular</source>
+        <translation>Circular</translation>
     </message>
 </context>
 <context>
@@ -6407,6 +6532,77 @@ Notă: set de studenţi indisponibil şi pauzele nu sunt numărate ca ferestre.<
     </message>
 </context>
 <context>
+    <name>AddConstraintStudentsSetMaxSpanPerDayForm</name>
+    <message>
+        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="85"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="90"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="98"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="107"/>
+        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="110"/>
+        <source>FET information</source>
+        <translation>FET - informaţie</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="86"/>
+        <source>Invalid weight (percentage)</source>
+        <translation>Importanţă invalidă (procent)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="91"/>
+        <source>Invalid weight (percentage) - it must be 100%</source>
+        <translation>Importanţă (procentuală) invalidă - trebuie să fie 100%</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="99"/>
+        <source>Invalid students set</source>
+        <translation>Set de studenţi invalid</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="108"/>
+        <source>Constraint added:</source>
+        <translation>Constrângere adăugată:</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="111"/>
+        <source>Constraint NOT added - please report error</source>
+        <translation>Constrângere NEadăugată - vă rog raportaţi eroarea</translation>
+    </message>
+</context>
+<context>
+    <name>AddConstraintStudentsSetMaxSpanPerDayForm_template</name>
+    <message>
+        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform_template.ui" line="14"/>
+        <source>Add students set max span per day</source>
+        <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
+        <translation>Adaugă set de studenţi max întindere pe zi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform_template.ui" line="26"/>
+        <source>Students set</source>
+        <translation>Set de studenţi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform_template.ui" line="42"/>
+        <source>Weight percentage (necessary: 100%)</source>
+        <translation>Importanţă - procente (necesar: 100%)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform_template.ui" line="55"/>
+        <source>Max span per day</source>
+        <translation>Max întindere pe zi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform_template.ui" line="90"/>
+        <source>Add constraint</source>
+        <translation>Adaugă constrângere</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform_template.ui" line="97"/>
+        <source>Close</source>
+        <translation>Închide</translation>
+    </message>
+</context>
+<context>
     <name>AddConstraintStudentsSetMinGapsBetweenBuildingChangesForm</name>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="83"/>
@@ -6588,6 +6784,82 @@ Notă: set de studenţi indisponibil şi pauzele nu sunt numărate ca ferestre.<
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform_template.ui" line="136"/>
         <source>Add constraint</source>
         <translation>Adaugă constrângere</translation>
+    </message>
+</context>
+<context>
+    <name>AddConstraintStudentsSetMinRestingHoursForm</name>
+    <message>
+        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="87"/>
+        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="92"/>
+        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="100"/>
+        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="109"/>
+        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="112"/>
+        <source>FET information</source>
+        <translation>FET - informaţie</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="88"/>
+        <source>Invalid weight (percentage)</source>
+        <translation>Importanţă invalidă (procent)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="93"/>
+        <source>Invalid weight (percentage) - it must be 100%</source>
+        <translation>Importanţă (procentuală) invalidă - trebuie să fie 100%</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="101"/>
+        <source>Invalid students set</source>
+        <translation>Set de studenţi invalid</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="110"/>
+        <source>Constraint added:</source>
+        <translation>Constrângere adăugată:</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="113"/>
+        <source>Constraint NOT added - please report error</source>
+        <translation>Constrângere NEadăugată - vă rog raportaţi eroarea</translation>
+    </message>
+</context>
+<context>
+    <name>AddConstraintStudentsSetMinRestingHoursForm_template</name>
+    <message>
+        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform_template.ui" line="14"/>
+        <source>Add students set min resting hours</source>
+        <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
+        <translation>Adaugă set de studenţi min ore de odihnă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform_template.ui" line="44"/>
+        <source>Students set</source>
+        <translation>Set de studenţi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform_template.ui" line="80"/>
+        <source>Weight percentage (necessary: 100%)</source>
+        <translation>Importanţă - procente (necesar: 100%)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform_template.ui" line="101"/>
+        <source>Min resting hours</source>
+        <translation>Min ore de odihnă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform_template.ui" line="116"/>
+        <source>Circular</source>
+        <translation>Circular</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform_template.ui" line="125"/>
+        <source>Add constraint</source>
+        <translation>Adaugă constrângere</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintstudentssetminrestinghoursform_template.ui" line="132"/>
+        <source>Close</source>
+        <translation>Închide</translation>
     </message>
 </context>
 <context>
@@ -8138,6 +8410,77 @@ Notă: profesor indisponibil şi pauzele nu sunt socotite ca ferestre.</translat
     </message>
 </context>
 <context>
+    <name>AddConstraintTeacherMaxSpanPerDayForm</name>
+    <message>
+        <location filename="../src/interface/addconstraintteachermaxspanperdayform.cpp" line="70"/>
+        <location filename="../src/interface/addconstraintteachermaxspanperdayform.cpp" line="75"/>
+        <location filename="../src/interface/addconstraintteachermaxspanperdayform.cpp" line="83"/>
+        <location filename="../src/interface/addconstraintteachermaxspanperdayform.cpp" line="92"/>
+        <location filename="../src/interface/addconstraintteachermaxspanperdayform.cpp" line="95"/>
+        <source>FET information</source>
+        <translation>FET - informaţie</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteachermaxspanperdayform.cpp" line="71"/>
+        <source>Invalid weight (percentage)</source>
+        <translation>Importanţă invalidă (procent)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteachermaxspanperdayform.cpp" line="76"/>
+        <source>Invalid weight (percentage) - it must be 100%</source>
+        <translation>Importanţă (procentuală) invalidă - trebuie să fie 100%</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteachermaxspanperdayform.cpp" line="84"/>
+        <source>Invalid teacher</source>
+        <translation>Profesor invalid</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteachermaxspanperdayform.cpp" line="93"/>
+        <source>Constraint added:</source>
+        <translation>Constrângere adăugată:</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteachermaxspanperdayform.cpp" line="96"/>
+        <source>Constraint NOT added - please report error</source>
+        <translation>Constrângere NEadăugată - vă rog raportaţi eroarea</translation>
+    </message>
+</context>
+<context>
+    <name>AddConstraintTeacherMaxSpanPerDayForm_template</name>
+    <message>
+        <location filename="../src/interface/addconstraintteachermaxspanperdayform_template.ui" line="14"/>
+        <source>Add teacher max span per day</source>
+        <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
+        <translation>Adaugă profesor max întindere pe zi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteachermaxspanperdayform_template.ui" line="33"/>
+        <source>Teacher</source>
+        <translation>Profesor</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteachermaxspanperdayform_template.ui" line="45"/>
+        <source>Add constraint</source>
+        <translation>Adaugă constrângere</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteachermaxspanperdayform_template.ui" line="52"/>
+        <source>Close</source>
+        <translation>Închide</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteachermaxspanperdayform_template.ui" line="77"/>
+        <source>Max span per day</source>
+        <translation>Max întindere pe zi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteachermaxspanperdayform_template.ui" line="96"/>
+        <source>Weight percentage (necessary: 100%)</source>
+        <translation>Importanţă - procente (necesar: 100%)</translation>
+    </message>
+</context>
+<context>
     <name>AddConstraintTeacherMinDaysPerWeekForm</name>
     <message>
         <location filename="../src/interface/addconstraintteachermindaysperweekform.cpp" line="71"/>
@@ -8366,6 +8709,82 @@ Notă: profesor indisponibil şi pauzele nu sunt socotite ca ferestre.</translat
         <location filename="../src/interface/addconstraintteacherminhoursdailyform_template.ui" line="61"/>
         <source>Teacher</source>
         <translation>Profesor</translation>
+    </message>
+</context>
+<context>
+    <name>AddConstraintTeacherMinRestingHoursForm</name>
+    <message>
+        <location filename="../src/interface/addconstraintteacherminrestinghoursform.cpp" line="72"/>
+        <location filename="../src/interface/addconstraintteacherminrestinghoursform.cpp" line="77"/>
+        <location filename="../src/interface/addconstraintteacherminrestinghoursform.cpp" line="85"/>
+        <location filename="../src/interface/addconstraintteacherminrestinghoursform.cpp" line="94"/>
+        <location filename="../src/interface/addconstraintteacherminrestinghoursform.cpp" line="97"/>
+        <source>FET information</source>
+        <translation>FET - informaţie</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteacherminrestinghoursform.cpp" line="73"/>
+        <source>Invalid weight (percentage)</source>
+        <translation>Importanţă invalidă (procent)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteacherminrestinghoursform.cpp" line="78"/>
+        <source>Invalid weight (percentage) - it must be 100%</source>
+        <translation>Importanţă (procentuală) invalidă - trebuie să fie 100%</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteacherminrestinghoursform.cpp" line="86"/>
+        <source>Invalid teacher</source>
+        <translation>Profesor invalid</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteacherminrestinghoursform.cpp" line="95"/>
+        <source>Constraint added:</source>
+        <translation>Constrângere adăugată:</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteacherminrestinghoursform.cpp" line="98"/>
+        <source>Constraint NOT added - please report error</source>
+        <translation>Constrângere NEadăugată - vă rog raportaţi eroarea</translation>
+    </message>
+</context>
+<context>
+    <name>AddConstraintTeacherMinRestingHoursForm_template</name>
+    <message>
+        <location filename="../src/interface/addconstraintteacherminrestinghoursform_template.ui" line="14"/>
+        <source>Add teacher min resting hours</source>
+        <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
+        <translation>Adaugă profesor min ore de odihnă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteacherminrestinghoursform_template.ui" line="28"/>
+        <source>Teacher</source>
+        <translation>Profesor</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteacherminrestinghoursform_template.ui" line="58"/>
+        <source>Min resting hours</source>
+        <translation>Min ore de odihnă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteacherminrestinghoursform_template.ui" line="81"/>
+        <source>Weight percentage (necessary: 100%)</source>
+        <translation>Importanţă - procente (necesar: 100%)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteacherminrestinghoursform_template.ui" line="102"/>
+        <source>Add constraint</source>
+        <translation>Adaugă constrângere</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteacherminrestinghoursform_template.ui" line="109"/>
+        <source>Close</source>
+        <translation>Închide</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteacherminrestinghoursform_template.ui" line="118"/>
+        <source>Circular</source>
+        <translation>Circular</translation>
     </message>
 </context>
 <context>
@@ -9121,6 +9540,66 @@ Notă: profesor indisponibil şi pauzele nu sunt socotite ferestre.</translation
     </message>
 </context>
 <context>
+    <name>AddConstraintTeachersMaxSpanPerDayForm</name>
+    <message>
+        <location filename="../src/interface/addconstraintteachersmaxspanperdayform.cpp" line="61"/>
+        <location filename="../src/interface/addconstraintteachersmaxspanperdayform.cpp" line="66"/>
+        <location filename="../src/interface/addconstraintteachersmaxspanperdayform.cpp" line="75"/>
+        <location filename="../src/interface/addconstraintteachersmaxspanperdayform.cpp" line="78"/>
+        <source>FET information</source>
+        <translation>FET - informaţie</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteachersmaxspanperdayform.cpp" line="62"/>
+        <source>Invalid weight (percentage)</source>
+        <translation>Importanţă invalidă (procent)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteachersmaxspanperdayform.cpp" line="67"/>
+        <source>Invalid weight (percentage) - it must be 100%</source>
+        <translation>Importanţă (procentuală) invalidă - trebuie să fie 100%</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteachersmaxspanperdayform.cpp" line="76"/>
+        <source>Constraint added:</source>
+        <translation>Constrângere adăugată:</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteachersmaxspanperdayform.cpp" line="79"/>
+        <source>Constraint NOT added - please report error</source>
+        <translation>Constrângere NEadăugată - vă rog raportaţi eroarea</translation>
+    </message>
+</context>
+<context>
+    <name>AddConstraintTeachersMaxSpanPerDayForm_template</name>
+    <message>
+        <location filename="../src/interface/addconstraintteachersmaxspanperdayform_template.ui" line="14"/>
+        <source>Add teachers max span per day</source>
+        <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
+        <translation>Adaugă profesori max întindere pe zi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteachersmaxspanperdayform_template.ui" line="22"/>
+        <source>Add constraint</source>
+        <translation>Adaugă constrângere</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteachersmaxspanperdayform_template.ui" line="29"/>
+        <source>Close</source>
+        <translation>Închide</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteachersmaxspanperdayform_template.ui" line="40"/>
+        <source>Max span per day</source>
+        <translation>Max întindere pe zi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteachersmaxspanperdayform_template.ui" line="79"/>
+        <source>Weight percentage (necessary: 100%)</source>
+        <translation>Importanţă - procente (necesar: 100%)</translation>
+    </message>
+</context>
+<context>
     <name>AddConstraintTeachersMinDaysPerWeekForm</name>
     <message>
         <location filename="../src/interface/addconstraintteachersmindaysperweekform.cpp" line="59"/>
@@ -9314,6 +9793,71 @@ Notă: profesor indisponibil şi pauzele nu sunt socotite ferestre.</translation
         <location filename="../src/interface/addconstraintteachersminhoursdailyform_template.ui" line="101"/>
         <source>Allow empty days</source>
         <translation>Permite zile libere</translation>
+    </message>
+</context>
+<context>
+    <name>AddConstraintTeachersMinRestingHoursForm</name>
+    <message>
+        <location filename="../src/interface/addconstraintteachersminrestinghoursform.cpp" line="63"/>
+        <location filename="../src/interface/addconstraintteachersminrestinghoursform.cpp" line="68"/>
+        <location filename="../src/interface/addconstraintteachersminrestinghoursform.cpp" line="77"/>
+        <location filename="../src/interface/addconstraintteachersminrestinghoursform.cpp" line="80"/>
+        <source>FET information</source>
+        <translation>FET - informaţie</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteachersminrestinghoursform.cpp" line="64"/>
+        <source>Invalid weight (percentage)</source>
+        <translation>Importanţă invalidă (procent)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteachersminrestinghoursform.cpp" line="69"/>
+        <source>Invalid weight (percentage) - it must be 100%</source>
+        <translation>Importanţă (procentuală) invalidă - trebuie să fie 100%</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteachersminrestinghoursform.cpp" line="78"/>
+        <source>Constraint added:</source>
+        <translation>Constrângere adăugată:</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteachersminrestinghoursform.cpp" line="81"/>
+        <source>Constraint NOT added - please report error</source>
+        <translation>Constrângere NEadăugată - vă rog raportaţi eroarea</translation>
+    </message>
+</context>
+<context>
+    <name>AddConstraintTeachersMinRestingHoursForm_template</name>
+    <message>
+        <location filename="../src/interface/addconstraintteachersminrestinghoursform_template.ui" line="14"/>
+        <source>Add teachers min resting hours</source>
+        <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
+        <translation>Adaugă profesori min ore de odihnă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteachersminrestinghoursform_template.ui" line="22"/>
+        <source>Min resting hours</source>
+        <translation>Min ore de odihnă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteachersminrestinghoursform_template.ui" line="45"/>
+        <source>Weight percentage (necessary: 100%)</source>
+        <translation>Importanţă - procente (necesar: 100%)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteachersminrestinghoursform_template.ui" line="66"/>
+        <source>Add constraint</source>
+        <translation>Adaugă constrângere</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteachersminrestinghoursform_template.ui" line="73"/>
+        <source>Close</source>
+        <translation>Închide</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstraintteachersminrestinghoursform_template.ui" line="82"/>
+        <source>Circular</source>
+        <translation>Circular</translation>
     </message>
 </context>
 <context>
@@ -10737,121 +11281,121 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>AllTimeConstraintsForm</name>
     <message>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="962"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="1021"/>
         <source>%1 Time Constraints</source>
         <comment>%1 represents the number of constraints</comment>
         <translation>%1 constrângeri de timp</translation>
     </message>
     <message>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="300"/>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="304"/>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="356"/>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="360"/>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="472"/>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="909"/>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="1046"/>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="1091"/>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="1166"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="310"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="314"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="366"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="370"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="482"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="968"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="1105"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="1150"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="1225"/>
         <source>FET information</source>
         <translation>FET - informaţie</translation>
     </message>
     <message>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="300"/>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="356"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="310"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="366"/>
         <source>To move a time constraint, the &apos;Filter&apos; check box must not be checked.</source>
         <translation>Pentru a muta o constrângere de timp, check box-ul &apos;Filtru&apos; trebuie să nu fie selectat.</translation>
     </message>
     <message>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="304"/>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="360"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="314"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="370"/>
         <source>To move a time constraint, the &apos;Sorted&apos; check box must not be checked.</source>
         <translation>Pentru a muta o constrângere de timp, check box-ul &apos;Sortate&apos; trebuie să nu fie selectat.</translation>
     </message>
     <message>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="449"/>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="1079"/>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="1129"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="459"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="1138"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="1188"/>
         <source>%1 / %2 time constraints</source>
         <comment>%1 represents the number of visible active time constraints, %2 represents the total number of visible time constraints</comment>
         <translation>%1 / %2 constrângeri de timp</translation>
     </message>
     <message>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="472"/>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="909"/>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="1046"/>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="1091"/>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="1166"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="482"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="968"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="1105"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="1150"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="1225"/>
         <source>Invalid selected constraint</source>
         <translation>Constrângere selectată invalidă</translation>
     </message>
     <message>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="884"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="943"/>
         <source>FET critical</source>
         <translation>FET - critic</translation>
     </message>
     <message>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="884"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="943"/>
         <source>You have found a bug in FET. Please report it. This kind of constraint is not correctly recognized in all time constraints dialog. FET will skip this error, so that you can continue work. Probably the constraint can be modified from the specific constraint dialog.</source>
         <translation>Aţi găsit o eroare în FET. Vă rugăm raportaţi-o. Acest tip de constrângere nu este recunoscut corect în dialogul tuturor constrângerilor de timp. FET va trece peste această eroare, aşa încât veţi putea continua să lucraţi. Probabil constrângerea poate fi modificată din dialogul specific constrângerii.</translation>
     </message>
     <message>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="917"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="976"/>
         <source>Remove constraint?</source>
         <translation>Şterg constrângerea?</translation>
     </message>
     <message>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="927"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="986"/>
         <source>FET confirmation</source>
         <translation>FET - confirmare</translation>
     </message>
     <message>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="928"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="987"/>
         <source>Yes</source>
         <translation>Da</translation>
     </message>
     <message>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="928"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="987"/>
         <source>No</source>
         <translation>Nu</translation>
     </message>
     <message>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="936"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="995"/>
         <source>Do you really want to remove the basic compulsory time constraint?</source>
         <translation>Vreţi într-adevăr să ştergeţi constrângerea de bază obligatorie de timp?</translation>
     </message>
     <message>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="938"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="997"/>
         <source>You cannot generate a timetable without this constraint.</source>
         <translation>Nu puteţi genera un orar fără această constrângere.</translation>
     </message>
     <message>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="940"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="999"/>
         <source>Note: you can add again a constraint of this type from the menu Data -&gt; Time constraints -&gt; Miscellaneous -&gt; Basic compulsory time constraints.</source>
         <translation>Notă: puteţi să adăugaţi din nou o constrângere de acest tip din meniul Date -&gt; Constrângeri de timp -&gt; Diverse -&gt; Constrângeri de bază (timp).</translation>
     </message>
     <message>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="943"/>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="1103"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="1002"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="1162"/>
         <source>FET warning</source>
         <translation>FET - avertisment</translation>
     </message>
     <message>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="1103"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="1162"/>
         <source>You are not allowed to deactivate the basic compulsory time constraints</source>
         <translation>Nu aveţi voie să dezactivaţi constrângerile de bază de timp obligatorii</translation>
     </message>
     <message>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="1175"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="1234"/>
         <source>Constraint comments</source>
         <translation>Comentarii constrângere</translation>
     </message>
     <message>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="1177"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="1236"/>
         <source>OK</source>
         <translation>Bine</translation>
     </message>
     <message>
-        <location filename="../src/interface/alltimeconstraintsform.cpp" line="1179"/>
+        <location filename="../src/interface/alltimeconstraintsform.cpp" line="1238"/>
         <source>Cancel</source>
         <translation>Anulează</translation>
     </message>
@@ -18329,6 +18873,142 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     </message>
 </context>
 <context>
+    <name>ConstraintStudentsMaxSpanPerDay</name>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19308"/>
+        <source>C: %1</source>
+        <comment>Comments</comment>
+        <translation>C: %1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19311"/>
+        <source>Students max span per day</source>
+        <translation>Studenţi max întindere pe zi</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19312"/>
+        <source>WP:%1%</source>
+        <comment>Weight percentage</comment>
+        <translation>IP:%1%</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19313"/>
+        <source>MS:%1</source>
+        <comment>Max span (in hours, per day)</comment>
+        <translation>MÎ:%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19322"/>
+        <source>Time constraint</source>
+        <translation>Constrângere temporală</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19323"/>
+        <source>All students must respect the maximum number of span (in hours) per day</source>
+        <translation>Toţi studenţii trebuie să respecte numărul maxim de întindere (în ore) pe zi</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19324"/>
+        <source>Weight (percentage)=%1%</source>
+        <translation>Importanţa (procent)=%1%</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19325"/>
+        <source>Maximum span per day=%1</source>
+        <translation>Maxim întindere pe zi=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19328"/>
+        <source>Active=%1</source>
+        <comment>Refers to a constraint</comment>
+        <translation>Activă=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19332"/>
+        <source>Comments=%1</source>
+        <translation>Comentarii=%1</translation>
+    </message>
+</context>
+<context>
+    <name>ConstraintStudentsMaxSpanPerDayForm</name>
+    <message>
+        <location filename="../src/interface/constraintstudentsmaxspanperdayform.cpp" line="114"/>
+        <location filename="../src/interface/constraintstudentsmaxspanperdayform.cpp" line="141"/>
+        <source>FET information</source>
+        <translation>FET - informaţie</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentsmaxspanperdayform.cpp" line="114"/>
+        <location filename="../src/interface/constraintstudentsmaxspanperdayform.cpp" line="141"/>
+        <source>Invalid selected constraint</source>
+        <translation>Constrângere selectată invalidă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentsmaxspanperdayform.cpp" line="146"/>
+        <source>Remove constraint?</source>
+        <translation>Şterg constrângerea?</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentsmaxspanperdayform.cpp" line="152"/>
+        <source>FET confirmation</source>
+        <translation>FET - confirmare</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentsmaxspanperdayform.cpp" line="153"/>
+        <source>Yes</source>
+        <translation>Da</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentsmaxspanperdayform.cpp" line="153"/>
+        <source>No</source>
+        <translation>Nu</translation>
+    </message>
+</context>
+<context>
+    <name>ConstraintStudentsMaxSpanPerDayForm_template</name>
+    <message>
+        <location filename="../src/interface/constraintstudentsmaxspanperdayform_template.ui" line="14"/>
+        <source>Constraints students max span per day</source>
+        <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
+        <translation>Constrângeri studenţi max întindere pe zi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentsmaxspanperdayform_template.ui" line="26"/>
+        <source>This constraint ensures a maximum span of activities on each day. Span means the count of slots (free or occupied) starting with the first occupied slot of the day and ending with the last occupied slot of the day.</source>
+        <translation>Această constrângere asigură o întindere maximă a activităţilor în fiecare zi. Întindere înseamnă numărul sloturilor (libere sau ocupate) începând cu primul slot ocupat al zilei şi terminând cu ultimul slot ocupat al zilei.</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentsmaxspanperdayform_template.ui" line="44"/>
+        <source>Constraints</source>
+        <translation>Constrângeri</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentsmaxspanperdayform_template.ui" line="61"/>
+        <source>Current constraint</source>
+        <translation>Constrângere curentă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentsmaxspanperdayform_template.ui" line="78"/>
+        <source>Add</source>
+        <translation>Adaugă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentsmaxspanperdayform_template.ui" line="85"/>
+        <source>Modify</source>
+        <translation>Modifică</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentsmaxspanperdayform_template.ui" line="92"/>
+        <source>Remove</source>
+        <translation>Şterge</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentsmaxspanperdayform_template.ui" line="99"/>
+        <source>Close</source>
+        <translation>Închide</translation>
+    </message>
+</context>
+<context>
     <name>ConstraintStudentsMinGapsBetweenBuildingChanges</name>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5236"/>
@@ -18629,6 +19309,153 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsminhoursdailyform_template.ui" line="85"/>
         <source>Modify</source>
         <translation>Modifică</translation>
+    </message>
+</context>
+<context>
+    <name>ConstraintStudentsMinRestingHours</name>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="20148"/>
+        <source>C: %1</source>
+        <comment>Comments</comment>
+        <translation>C: %1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="20151"/>
+        <source>Students min resting hours</source>
+        <translation>Studenţi min ore de odihnă</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="20152"/>
+        <source>WP:%1%</source>
+        <comment>Weight percentage</comment>
+        <translation>IP:%1%</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="20153"/>
+        <source>mRH:%1</source>
+        <comment>Minimum resting hours</comment>
+        <translation>mOO:%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="20154"/>
+        <source>C:%1</source>
+        <comment>Circular</comment>
+        <translation>C:%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="20163"/>
+        <source>Time constraint</source>
+        <translation>Constrângere temporală</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="20164"/>
+        <source>All students must respect the minimum resting hours (between days)</source>
+        <translation>Toţi studenţii trebuie să respecte numărul minim de ore de odihnă (între zile)</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="20165"/>
+        <source>Weight (percentage)=%1%</source>
+        <translation>Importanţă (procent)=%1%</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="20166"/>
+        <source>Minimum resting hours=%1</source>
+        <translation>Minim ore de odihnă=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="20167"/>
+        <source>Circular=%1</source>
+        <translation>Circular=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="20170"/>
+        <source>Active=%1</source>
+        <comment>Refers to a constraint</comment>
+        <translation>Activă=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="20174"/>
+        <source>Comments=%1</source>
+        <translation>Comentarii=%1</translation>
+    </message>
+</context>
+<context>
+    <name>ConstraintStudentsMinRestingHoursForm</name>
+    <message>
+        <location filename="../src/interface/constraintstudentsminrestinghoursform.cpp" line="114"/>
+        <location filename="../src/interface/constraintstudentsminrestinghoursform.cpp" line="141"/>
+        <source>FET information</source>
+        <translation>FET - informaţie</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentsminrestinghoursform.cpp" line="114"/>
+        <location filename="../src/interface/constraintstudentsminrestinghoursform.cpp" line="141"/>
+        <source>Invalid selected constraint</source>
+        <translation>Constrângere selectată invalidă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentsminrestinghoursform.cpp" line="146"/>
+        <source>Remove constraint?</source>
+        <translation>Şterg constrângerea?</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentsminrestinghoursform.cpp" line="152"/>
+        <source>FET confirmation</source>
+        <translation>FET - confirmare</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentsminrestinghoursform.cpp" line="153"/>
+        <source>Yes</source>
+        <translation>Da</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentsminrestinghoursform.cpp" line="153"/>
+        <source>No</source>
+        <translation>Nu</translation>
+    </message>
+</context>
+<context>
+    <name>ConstraintStudentsMinRestingHoursForm_template</name>
+    <message>
+        <location filename="../src/interface/constraintstudentsminrestinghoursform_template.ui" line="14"/>
+        <source>Constraints students min resting hours</source>
+        <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
+        <translation>Constrângeri studenţi min ore de odihnă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentsminrestinghoursform_template.ui" line="26"/>
+        <source>This constraint ensures a minimum number of resting hours between the end of a day and the beginning of the next day. Circular means that the time between the end of the last day of the week and the beginning of the first day of the week is also considered.</source>
+        <translation>Această constrângere asigură un număr minim de ore de odihnă între sfârşitul unei zile şi începutul zilei următoare. Circular înseamnă că timpul dintre sfârşitul ultimei zile a săptămânii şi începutul primei zile a săptămânii este de asemenea considerat.</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentsminrestinghoursform_template.ui" line="44"/>
+        <source>Constraints</source>
+        <translation>Constrângeri</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentsminrestinghoursform_template.ui" line="61"/>
+        <source>Current constraint</source>
+        <translation>Constrângere curentă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentsminrestinghoursform_template.ui" line="78"/>
+        <source>Add</source>
+        <translation>Adaugă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentsminrestinghoursform_template.ui" line="85"/>
+        <source>Modify</source>
+        <translation>Modifică</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentsminrestinghoursform_template.ui" line="92"/>
+        <source>Remove</source>
+        <translation>Şterge</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentsminrestinghoursform_template.ui" line="99"/>
+        <source>Close</source>
+        <translation>Închide</translation>
     </message>
 </context>
 <context>
@@ -20913,6 +21740,170 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     </message>
 </context>
 <context>
+    <name>ConstraintStudentsSetMaxSpanPerDay</name>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19066"/>
+        <source>C: %1</source>
+        <comment>Comments</comment>
+        <translation>C: %1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19069"/>
+        <source>Students set max span per day</source>
+        <translation>Set de studenţi max întindere pe zi</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19070"/>
+        <source>WP:%1%</source>
+        <comment>Weight percentage</comment>
+        <translation>IP:%1%</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19071"/>
+        <source>St:%1</source>
+        <comment>Students (set)</comment>
+        <translation>St:%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19072"/>
+        <source>MS:%1</source>
+        <comment>Max span (in hours, per day)</comment>
+        <translation>MÎ:%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19081"/>
+        <source>Time constraint</source>
+        <translation>Constrângere temporală</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19082"/>
+        <source>A students set must respect the maximum number of span (in hours) per day</source>
+        <translation>Un set de studenţi trebuie să respecte numărul maxim de întindere (în ore) pe zi</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19083"/>
+        <source>Weight (percentage)=%1%</source>
+        <translation>Importanţă (procent)=%1%</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19084"/>
+        <source>Students set=%1</source>
+        <translation>Set de studenţi=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19085"/>
+        <source>Maximum span per day=%1</source>
+        <translation>Maxim întindere pe zi=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19088"/>
+        <source>Active=%1</source>
+        <comment>Refers to a constraint</comment>
+        <translation>Activă=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19092"/>
+        <source>Comments=%1</source>
+        <translation>Comentarii=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19105"/>
+        <source>FET warning</source>
+        <translation>FET - avertisment</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19106"/>
+        <source>Constraint students set max span per day is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
+%1</source>
+        <translation>Constrângerea set de studenţi max întindere pe zi este greşită deoarece se referă la un set de studenţi inexistent. Vă rog corectaţi-o (să o ştergeţi ar putea fi o soluţie). Vă rog raportaţi eroarea potenţială. Constrângerea este:
+%1</translation>
+    </message>
+</context>
+<context>
+    <name>ConstraintStudentsSetMaxSpanPerDayForm</name>
+    <message>
+        <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="135"/>
+        <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="162"/>
+        <source>FET information</source>
+        <translation>FET - informaţie</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="135"/>
+        <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="162"/>
+        <source>Invalid selected constraint</source>
+        <translation>Constrângere selectată invalidă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="167"/>
+        <source>Remove constraint?</source>
+        <translation>Şterg constrângerea?</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="173"/>
+        <source>FET confirmation</source>
+        <translation>FET - confirmare</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="174"/>
+        <source>Yes</source>
+        <translation>Da</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="174"/>
+        <source>No</source>
+        <translation>Nu</translation>
+    </message>
+</context>
+<context>
+    <name>ConstraintStudentsSetMaxSpanPerDayForm_template</name>
+    <message>
+        <location filename="../src/interface/constraintstudentssetmaxspanperdayform_template.ui" line="14"/>
+        <source>Constraints students set max span per day</source>
+        <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
+        <translation>Constrângeri set de studenţi max întindere pe zi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentssetmaxspanperdayform_template.ui" line="28"/>
+        <source>Constraints</source>
+        <translation>Constrângeri</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentssetmaxspanperdayform_template.ui" line="45"/>
+        <source>Current constraint</source>
+        <translation>Constrângere curentă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentssetmaxspanperdayform_template.ui" line="60"/>
+        <source>Filter</source>
+        <translation>Filtru</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentssetmaxspanperdayform_template.ui" line="74"/>
+        <source>Add</source>
+        <translation>Adaugă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentssetmaxspanperdayform_template.ui" line="81"/>
+        <source>Modify</source>
+        <translation>Modifică</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentssetmaxspanperdayform_template.ui" line="88"/>
+        <source>Remove</source>
+        <translation>Şterge</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentssetmaxspanperdayform_template.ui" line="95"/>
+        <source>Close</source>
+        <translation>Închide</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentssetmaxspanperdayform_template.ui" line="110"/>
+        <source>This constraint ensures a maximum span of activities on each day. Span means the count of slots (free or occupied) starting with the first occupied slot of the day and ending with the last occupied slot of the day.</source>
+        <translation>Această constrângere asigură o întindere maximă a activităţilor în fiecare zi. Întindere înseamnă numărul sloturilor (libere sau ocupate) începând cu primul slot ocupat al zilei şi terminând cu ultimul slot ocupat al zilei.</translation>
+    </message>
+</context>
+<context>
     <name>ConstraintStudentsSetMinGapsBetweenBuildingChanges</name>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4907"/>
@@ -21269,6 +22260,181 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetminhoursdailyform_template.ui" line="76"/>
         <source>Filter</source>
         <translation>Filtru</translation>
+    </message>
+</context>
+<context>
+    <name>ConstraintStudentsSetMinRestingHours</name>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19903"/>
+        <source>C: %1</source>
+        <comment>Comments</comment>
+        <translation>C: %1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19906"/>
+        <source>Students set min resting hours</source>
+        <translation>Set de studenţi min ore de odihnă</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19907"/>
+        <source>WP:%1%</source>
+        <comment>Weight percentage</comment>
+        <translation>IP:%1%</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19908"/>
+        <source>St:%1</source>
+        <comment>Students (set)</comment>
+        <translation>St:%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19909"/>
+        <source>mRH:%1</source>
+        <comment>Minimum resting hours</comment>
+        <translation>mOO:%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19910"/>
+        <source>C:%1</source>
+        <comment>Circular</comment>
+        <translation>C:%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19919"/>
+        <source>Time constraint</source>
+        <translation>Constrângere temporală</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19920"/>
+        <source>A students set must respect the minimum resting hours (between days)</source>
+        <translation>Un set de studenţi trebuie să respecte numărul minim de ore de odihnă (între zile)</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19921"/>
+        <source>Weight (percentage)=%1%</source>
+        <translation>Importanţă (procent)=%1%</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19922"/>
+        <source>Students set=%1</source>
+        <translation>Set de studenţi=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19923"/>
+        <source>Minimum resting hours=%1</source>
+        <translation>Minim ore de odihnă=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19924"/>
+        <source>Circular=%1</source>
+        <translation>Circular=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19927"/>
+        <source>Active=%1</source>
+        <comment>Refers to a constraint</comment>
+        <translation>Activă=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19931"/>
+        <source>Comments=%1</source>
+        <translation>Comentarii=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19944"/>
+        <source>FET warning</source>
+        <translation>FET - avertisment</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19945"/>
+        <source>Constraint students set min resting hours is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
+%1</source>
+        <translation>Constrângerea set de studenţi min ore de odihnă este greşită deoarece se referă la un set de studenţi inexistent. Vă rog corectaţi-o (ştergerea ei ar putea if o soluţie). Vă rog raportaţi eroarea potenţială. Constrângerea este:
+%1</translation>
+    </message>
+</context>
+<context>
+    <name>ConstraintStudentsSetMinRestingHoursForm</name>
+    <message>
+        <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="135"/>
+        <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="162"/>
+        <source>FET information</source>
+        <translation>FET - informaţie</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="135"/>
+        <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="162"/>
+        <source>Invalid selected constraint</source>
+        <translation>Constrângere selectată invalidă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="167"/>
+        <source>Remove constraint?</source>
+        <translation>Şterg constrângerea?</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="173"/>
+        <source>FET confirmation</source>
+        <translation>FET - confirmare</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="174"/>
+        <source>Yes</source>
+        <translation>Da</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="174"/>
+        <source>No</source>
+        <translation>Nu</translation>
+    </message>
+</context>
+<context>
+    <name>ConstraintStudentsSetMinRestingHoursForm_template</name>
+    <message>
+        <location filename="../src/interface/constraintstudentssetminrestinghoursform_template.ui" line="14"/>
+        <source>Constraints students set min resting hours</source>
+        <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
+        <translation>Constrângeri set de studenţi min ore de odihnă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentssetminrestinghoursform_template.ui" line="28"/>
+        <source>Constraints</source>
+        <translation>Constrângeri</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentssetminrestinghoursform_template.ui" line="45"/>
+        <source>Current constraint</source>
+        <translation>Constrângere curentă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentssetminrestinghoursform_template.ui" line="60"/>
+        <source>Filter</source>
+        <translation>Filtru</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentssetminrestinghoursform_template.ui" line="74"/>
+        <source>Add</source>
+        <translation>Adaugă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentssetminrestinghoursform_template.ui" line="81"/>
+        <source>Modify</source>
+        <translation>Modifică</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentssetminrestinghoursform_template.ui" line="88"/>
+        <source>Remove</source>
+        <translation>Şterge</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentssetminrestinghoursform_template.ui" line="95"/>
+        <source>Close</source>
+        <translation>Închide</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintstudentssetminrestinghoursform_template.ui" line="110"/>
+        <source>This constraint ensures a minimum number of resting hours between the end of a day and the beginning of the next day. Circular means that the time between the end of the last day of the week and the beginning of the first day of the week is also considered.</source>
+        <translation>Această constrângere asigură un număr minim de ore de odihnă între sfârşitul unei zile şi începutul zilei următoare. Circular înseamnă că timpul dintre sfârşitul ultimei zile a săptămânii şi începutul primei zile a săptămânii este de asemenea considerat.</translation>
     </message>
 </context>
 <context>
@@ -24774,6 +25940,158 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     </message>
 </context>
 <context>
+    <name>ConstraintTeacherMaxSpanPerDay</name>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="18686"/>
+        <source>C: %1</source>
+        <comment>Comments</comment>
+        <translation>C: %1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="18689"/>
+        <source>Teacher max span per day</source>
+        <translation>Profesor max întindere pe zi</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="18690"/>
+        <source>WP:%1%</source>
+        <comment>Weight percentage</comment>
+        <translation>IP:%1%</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="18691"/>
+        <source>T:%1</source>
+        <comment>Teacher</comment>
+        <translation>P:%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="18692"/>
+        <source>MS:%1</source>
+        <comment>Maximum span (in hours, per day)</comment>
+        <translation>MÎ:%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="18700"/>
+        <source>Time constraint</source>
+        <translation>Constrângere temporală</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="18701"/>
+        <source>A teacher must respect the maximum number of span (in hours) per day</source>
+        <translation>Un profesor trebuie să respecte numărul maxim de întindere (în ore) pe zi</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="18702"/>
+        <source>Weight (percentage)=%1%</source>
+        <translation>Importanţă (procent)=%1%</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="18703"/>
+        <source>Teacher=%1</source>
+        <translation>Profesor=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="18704"/>
+        <source>Maximum span per day=%1</source>
+        <translation>Maxim întindere pe zi=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="18707"/>
+        <source>Active=%1</source>
+        <comment>Refers to a constraint</comment>
+        <translation>Activă=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="18711"/>
+        <source>Comments=%1</source>
+        <translation>Comentarii=%1</translation>
+    </message>
+</context>
+<context>
+    <name>ConstraintTeacherMaxSpanPerDayForm</name>
+    <message>
+        <location filename="../src/interface/constraintteachermaxspanperdayform.cpp" line="126"/>
+        <location filename="../src/interface/constraintteachermaxspanperdayform.cpp" line="153"/>
+        <source>FET information</source>
+        <translation>FET - informaţie</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachermaxspanperdayform.cpp" line="126"/>
+        <location filename="../src/interface/constraintteachermaxspanperdayform.cpp" line="153"/>
+        <source>Invalid selected constraint</source>
+        <translation>Constrângere selectată invalidă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachermaxspanperdayform.cpp" line="158"/>
+        <source>Remove constraint?</source>
+        <translation>Şterg constrângerea?</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachermaxspanperdayform.cpp" line="164"/>
+        <source>FET confirmation</source>
+        <translation>FET - confirmare</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachermaxspanperdayform.cpp" line="165"/>
+        <source>Yes</source>
+        <translation>Da</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachermaxspanperdayform.cpp" line="165"/>
+        <source>No</source>
+        <translation>Nu</translation>
+    </message>
+</context>
+<context>
+    <name>ConstraintTeacherMaxSpanPerDayForm_template</name>
+    <message>
+        <location filename="../src/interface/constraintteachermaxspanperdayform_template.ui" line="14"/>
+        <source>Constraints teacher max span per day</source>
+        <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
+        <translation>Constrângeri profesor max întindere pe zi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachermaxspanperdayform_template.ui" line="26"/>
+        <source>This constraint ensures a maximum span of activities on each day. Span means the count of slots (free or occupied) starting with the first occupied slot of the day and ending with the last occupied slot of the day.</source>
+        <translation>Această constrângere asigură o întindere maximă a activităţilor în fiecare zi. Întindere înseamnă numărul sloturilor (libere sau ocupate) începând cu primul slot ocupat al zilei şi terminând cu ultimul slot ocupat al zilei.</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachermaxspanperdayform_template.ui" line="38"/>
+        <source>Current constraint</source>
+        <translation>Constrângere curentă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachermaxspanperdayform_template.ui" line="53"/>
+        <source>Filter</source>
+        <translation>Filtru</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachermaxspanperdayform_template.ui" line="67"/>
+        <source>Add</source>
+        <translation>Adaugă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachermaxspanperdayform_template.ui" line="74"/>
+        <source>Modify</source>
+        <translation>Modifică</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachermaxspanperdayform_template.ui" line="81"/>
+        <source>Remove</source>
+        <translation>Şterge</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachermaxspanperdayform_template.ui" line="88"/>
+        <source>Close</source>
+        <translation>Închide</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachermaxspanperdayform_template.ui" line="105"/>
+        <source>Constraints</source>
+        <translation>Constrângeri</translation>
+    </message>
+</context>
+<context>
     <name>ConstraintTeacherMinDaysPerWeek</name>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14224"/>
@@ -25280,6 +26598,169 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteacherminhoursdailyform_template.ui" line="60"/>
         <source>Filter</source>
         <translation>Filtru</translation>
+    </message>
+</context>
+<context>
+    <name>ConstraintTeacherMinRestingHours</name>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19517"/>
+        <source>C: %1</source>
+        <comment>Comments</comment>
+        <translation>C: %1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19520"/>
+        <source>Teacher min resting hours</source>
+        <translation>Profesor min ore de odihnă</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19521"/>
+        <source>WP:%1%</source>
+        <comment>Weight percentage</comment>
+        <translation>IP:%1%</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19522"/>
+        <source>T:%1</source>
+        <comment>Teacher</comment>
+        <translation>P:%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19523"/>
+        <source>mRH:%1</source>
+        <comment>Minimum resting hours</comment>
+        <translation>mOO:%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19524"/>
+        <source>C:%1</source>
+        <comment>Circular</comment>
+        <translation>C:%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19532"/>
+        <source>Time constraint</source>
+        <translation>Constrângere temporală</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19533"/>
+        <source>A teacher must respect the minimum resting hours (between days)</source>
+        <translation>Un profesor trebuie să respecte numărul minim de ore de odihnă (între zile)</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19534"/>
+        <source>Weight (percentage)=%1%</source>
+        <translation>Importanţă (procent)=%1%</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19535"/>
+        <source>Teacher=%1</source>
+        <translation>Profesor=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19536"/>
+        <source>Minimum resting hours=%1</source>
+        <translation>Minim ore de odihnă=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19537"/>
+        <source>Circular=%1</source>
+        <translation>Circular=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19540"/>
+        <source>Active=%1</source>
+        <comment>Refers to a constraint</comment>
+        <translation>Activă=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19544"/>
+        <source>Comments=%1</source>
+        <translation>Comentarii=%1</translation>
+    </message>
+</context>
+<context>
+    <name>ConstraintTeacherMinRestingHoursForm</name>
+    <message>
+        <location filename="../src/interface/constraintteacherminrestinghoursform.cpp" line="126"/>
+        <location filename="../src/interface/constraintteacherminrestinghoursform.cpp" line="153"/>
+        <source>FET information</source>
+        <translation>FET - informaţie</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteacherminrestinghoursform.cpp" line="126"/>
+        <location filename="../src/interface/constraintteacherminrestinghoursform.cpp" line="153"/>
+        <source>Invalid selected constraint</source>
+        <translation>Constrângere selectată invalidă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteacherminrestinghoursform.cpp" line="158"/>
+        <source>Remove constraint?</source>
+        <translation>Şterg constrângerea?</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteacherminrestinghoursform.cpp" line="164"/>
+        <source>FET confirmation</source>
+        <translation>FET - confirmare</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteacherminrestinghoursform.cpp" line="165"/>
+        <source>Yes</source>
+        <translation>Da</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteacherminrestinghoursform.cpp" line="165"/>
+        <source>No</source>
+        <translation>Nu</translation>
+    </message>
+</context>
+<context>
+    <name>ConstraintTeacherMinRestingHoursForm_template</name>
+    <message>
+        <location filename="../src/interface/constraintteacherminrestinghoursform_template.ui" line="14"/>
+        <source>Constraints teacher min resting hours</source>
+        <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
+        <translation>Constrângeri profesor min ore de odihnă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteacherminrestinghoursform_template.ui" line="26"/>
+        <source>This constraint ensures a minimum number of resting hours between the end of a day and the beginning of the next day. Circular means that the time between the end of the last day of the week and the beginning of the first day of the week is also considered.</source>
+        <translation>Această constrângere asigură un număr minim de ore de odihnă între sfârşitul unei zile şi începutul zilei următoare. Circular înseamnă că timpul dintre sfârşitul ultimei zile a săptămânii şi începutul primei zile a săptămânii este de asemenea considerat.</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteacherminrestinghoursform_template.ui" line="38"/>
+        <source>Current constraint</source>
+        <translation>Constrângere curentă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteacherminrestinghoursform_template.ui" line="53"/>
+        <source>Filter</source>
+        <translation>Filtru</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteacherminrestinghoursform_template.ui" line="67"/>
+        <source>Add</source>
+        <translation>Adaugă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteacherminrestinghoursform_template.ui" line="74"/>
+        <source>Modify</source>
+        <translation>Modifică</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteacherminrestinghoursform_template.ui" line="81"/>
+        <source>Remove</source>
+        <translation>Şterge</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteacherminrestinghoursform_template.ui" line="88"/>
+        <source>Close</source>
+        <translation>Închide</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteacherminrestinghoursform_template.ui" line="105"/>
+        <source>Constraints</source>
+        <translation>Constrângeri</translation>
     </message>
 </context>
 <context>
@@ -26984,6 +28465,142 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     </message>
 </context>
 <context>
+    <name>ConstraintTeachersMaxSpanPerDay</name>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="18879"/>
+        <source>C: %1</source>
+        <comment>Comments</comment>
+        <translation>C: %1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="18882"/>
+        <source>Teachers max span per day</source>
+        <translation>Profesori max întindere pe zi</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="18883"/>
+        <source>WP:%1%</source>
+        <comment>Weight percentage</comment>
+        <translation>IP:%1%</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="18884"/>
+        <source>MS:%1</source>
+        <comment>Maximum span (in hours, per day)</comment>
+        <translation>MÎ:%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="18892"/>
+        <source>Time constraint</source>
+        <translation>Constrângere temporală</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="18893"/>
+        <source>All teachers must respect the maximum number of span (in hours) per day</source>
+        <translation>Toţi profesorii trebuie să respecte numărul maxim de întindere (în ore) pe zi</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="18894"/>
+        <source>Weight (percentage)=%1%</source>
+        <translation>Importanţă (procent)=%1%</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="18895"/>
+        <source>Maximum span per day=%1</source>
+        <translation>Maxim întindere pe zi=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="18898"/>
+        <source>Active=%1</source>
+        <comment>Refers to a constraint</comment>
+        <translation>Activă=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="18902"/>
+        <source>Comments=%1</source>
+        <translation>Comentarii=%1</translation>
+    </message>
+</context>
+<context>
+    <name>ConstraintTeachersMaxSpanPerDayForm</name>
+    <message>
+        <location filename="../src/interface/constraintteachersmaxspanperdayform.cpp" line="114"/>
+        <location filename="../src/interface/constraintteachersmaxspanperdayform.cpp" line="141"/>
+        <source>FET information</source>
+        <translation>FET - informaţie</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachersmaxspanperdayform.cpp" line="114"/>
+        <location filename="../src/interface/constraintteachersmaxspanperdayform.cpp" line="141"/>
+        <source>Invalid selected constraint</source>
+        <translation>Constrângere selectată invalidă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachersmaxspanperdayform.cpp" line="146"/>
+        <source>Remove constraint?</source>
+        <translation>Şterg constrângerea?</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachersmaxspanperdayform.cpp" line="152"/>
+        <source>FET confirmation</source>
+        <translation>FET - confirmare</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachersmaxspanperdayform.cpp" line="153"/>
+        <source>Yes</source>
+        <translation>Da</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachersmaxspanperdayform.cpp" line="153"/>
+        <source>No</source>
+        <translation>Nu</translation>
+    </message>
+</context>
+<context>
+    <name>ConstraintTeachersMaxSpanPerDayForm_template</name>
+    <message>
+        <location filename="../src/interface/constraintteachersmaxspanperdayform_template.ui" line="14"/>
+        <source>Constraints teachers max span per day</source>
+        <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
+        <translation>Constrăngeri profesori max întindere pe zi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachersmaxspanperdayform_template.ui" line="26"/>
+        <source>This constraint ensures a maximum span of activities on each day. Span means the count of slots (free or occupied) starting with the first occupied slot of the day and ending with the last occupied slot of the day.</source>
+        <translation>Această constrângere asigură o întindere maximă a activităţilor în fiecare zi. Întindere înseamnă numărul sloturilor (libere sau ocupate) începând cu primul slot ocupat al zilei şi terminând cu ultimul slot ocupat al zilei.</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachersmaxspanperdayform_template.ui" line="44"/>
+        <source>Constraints</source>
+        <translation>Constrângeri</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachersmaxspanperdayform_template.ui" line="61"/>
+        <source>Current constraint</source>
+        <translation>Constrângere curentă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachersmaxspanperdayform_template.ui" line="78"/>
+        <source>Add</source>
+        <translation>Adaugă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachersmaxspanperdayform_template.ui" line="85"/>
+        <source>Modify</source>
+        <translation>Modifică</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachersmaxspanperdayform_template.ui" line="92"/>
+        <source>Remove</source>
+        <translation>Şterge</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachersmaxspanperdayform_template.ui" line="99"/>
+        <source>Close</source>
+        <translation>Închide</translation>
+    </message>
+</context>
+<context>
     <name>ConstraintTeachersMinDaysPerWeek</name>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14482"/>
@@ -27430,6 +29047,153 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachersminhoursdailyform_template.ui" line="28"/>
         <source>Constraints</source>
         <translation>Constrângeri</translation>
+    </message>
+</context>
+<context>
+    <name>ConstraintTeachersMinRestingHours</name>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19713"/>
+        <source>C: %1</source>
+        <comment>Comments</comment>
+        <translation>C: %1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19716"/>
+        <source>Teachers min resting hours</source>
+        <translation>Profesori min ore de odihnă</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19717"/>
+        <source>WP:%1%</source>
+        <comment>Weight percentage</comment>
+        <translation>IP:%1%</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19718"/>
+        <source>mRH:%1</source>
+        <comment>Minimum resting hours</comment>
+        <translation>mOO:%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19719"/>
+        <source>C:%1</source>
+        <comment>Circular</comment>
+        <translation>C:%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19727"/>
+        <source>Time constraint</source>
+        <translation>Constrângere temporală</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19728"/>
+        <source>All teachers must respect the minimum resting hours (between days)</source>
+        <translation>Toţi profesorii trebuie să respecte numărul minim de ore de odihnă (între zile)</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19729"/>
+        <source>Weight (percentage)=%1%</source>
+        <translation>Importanţă (procent)=%1%</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19730"/>
+        <source>Minimum resting hours=%1</source>
+        <translation>Minim ore de odihnă=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19731"/>
+        <source>Circular=%1</source>
+        <translation>Circular=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19734"/>
+        <source>Active=%1</source>
+        <comment>Refers to a constraint</comment>
+        <translation>Activă=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timeconstraint.cpp" line="19738"/>
+        <source>Comments=%1</source>
+        <translation>Comentarii=%1</translation>
+    </message>
+</context>
+<context>
+    <name>ConstraintTeachersMinRestingHoursForm</name>
+    <message>
+        <location filename="../src/interface/constraintteachersminrestinghoursform.cpp" line="114"/>
+        <location filename="../src/interface/constraintteachersminrestinghoursform.cpp" line="141"/>
+        <source>FET information</source>
+        <translation>FET - informaţie</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachersminrestinghoursform.cpp" line="114"/>
+        <location filename="../src/interface/constraintteachersminrestinghoursform.cpp" line="141"/>
+        <source>Invalid selected constraint</source>
+        <translation>Constrângere selectată invalidă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachersminrestinghoursform.cpp" line="146"/>
+        <source>Remove constraint?</source>
+        <translation>Şterg constrângerea?</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachersminrestinghoursform.cpp" line="152"/>
+        <source>FET confirmation</source>
+        <translation>FET - confirmare</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachersminrestinghoursform.cpp" line="153"/>
+        <source>Yes</source>
+        <translation>Da</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachersminrestinghoursform.cpp" line="153"/>
+        <source>No</source>
+        <translation>Nu</translation>
+    </message>
+</context>
+<context>
+    <name>ConstraintTeachersMinRestingHoursForm_template</name>
+    <message>
+        <location filename="../src/interface/constraintteachersminrestinghoursform_template.ui" line="14"/>
+        <source>Constraints teachers min resting hours</source>
+        <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
+        <translation>Constrângeri profesori min ore de odihnă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachersminrestinghoursform_template.ui" line="26"/>
+        <source>This constraint ensures a minimum number of resting hours between the end of a day and the beginning of the next day. Circular means that the time between the end of the last day of the week and the beginning of the first day of the week is also considered.</source>
+        <translation>Această constrângere asigură un număr minim de ore de odihnă între sfârşitul unei zile şi începutul zilei următoare. Circular înseamnă că timpul dintre sfârşitul ultimei zile a săptămânii şi începutul primei zile a săptămânii este de asemenea considerat.</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachersminrestinghoursform_template.ui" line="44"/>
+        <source>Constraints</source>
+        <translation>Constrângeri</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachersminrestinghoursform_template.ui" line="61"/>
+        <source>Current constraint</source>
+        <translation>Constrângere curentă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachersminrestinghoursform_template.ui" line="78"/>
+        <source>Add</source>
+        <translation>Adaugă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachersminrestinghoursform_template.ui" line="85"/>
+        <source>Modify</source>
+        <translation>Modifică</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachersminrestinghoursform_template.ui" line="92"/>
+        <source>Remove</source>
+        <translation>Şterge</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintteachersminrestinghoursform_template.ui" line="99"/>
+        <source>Close</source>
+        <translation>Închide</translation>
     </message>
 </context>
 <context>
@@ -28761,7 +30525,7 @@ Importul datelor va fi mai simplu cu aceste setări.</translation>
 <context>
     <name>FetMainForm</name>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2081"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2092"/>
         <source>Statistics for students might be the most difficult to understand. If you are using divisions of years: probably the most relevant statistics are the ones for each subgroup (so you may check only subgroups check box). You may see more hours for the years or groups, but these are not significant, please ignore them, because each year or group will count also activities of all contained subgroups.
 
 Each subgroup should have a number of hours per week close to the average of all subgroups and close to the normal number of working hours of each students set. If a subgroup has a much lower value, maybe you used incorrectly the years/groups/subgroups for activities.
@@ -28778,1895 +30542,1911 @@ Vă rog citiţi FAQ pentru o descriere detaliată despre cum funcţionează divi
 A avea un subgrup cu prea puţine ore de lucru pe săptămână înseamnă că aţi introdus activităţile într-o manieră greşită, şi de asemenea că unele constrângeri cum ar fi fără ferestre, devreme sau min ore zilnic pentru acest subgrup sunt interpretate într-o manieră greşită (dacă subgrupul are doar 2 activităţi, atunci acestea trebuie plasate în primele ore, ceea ce este prea dificil şi greşit).</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2117"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2128"/>
         <source>FET - information about statistics</source>
         <translation>FET - Informaţii despre statistici</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3805"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3920"/>
         <source>OK</source>
         <translation>Bine</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="774"/>
-        <location filename="../src/interface/fetmainform.cpp" line="795"/>
-        <location filename="../src/interface/fetmainform.cpp" line="875"/>
-        <location filename="../src/interface/fetmainform.cpp" line="892"/>
-        <location filename="../src/interface/fetmainform.cpp" line="918"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1583"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3494"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3504"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3514"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3631"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3652"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3656"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3692"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3713"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3717"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3837"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3894"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4446"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4496"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4526"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4551"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4573"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4600"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4622"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4643"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4667"/>
+        <location filename="../src/interface/fetmainform.cpp" line="785"/>
+        <location filename="../src/interface/fetmainform.cpp" line="806"/>
+        <location filename="../src/interface/fetmainform.cpp" line="886"/>
+        <location filename="../src/interface/fetmainform.cpp" line="903"/>
+        <location filename="../src/interface/fetmainform.cpp" line="929"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1594"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3609"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3619"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3629"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3746"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3767"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3771"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3807"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3828"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3832"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3952"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4009"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4561"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4611"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4641"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4666"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4688"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4715"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4737"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4758"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4782"/>
         <source>FET warning</source>
         <translation>FET - avertisment</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="751"/>
-        <location filename="../src/interface/fetmainform.cpp" line="854"/>
-        <location filename="../src/interface/fetmainform.cpp" line="913"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1006"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1067"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1079"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1151"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1197"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1210"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1218"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1224"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1230"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1304"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1323"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1327"/>
+        <location filename="../src/interface/fetmainform.cpp" line="762"/>
+        <location filename="../src/interface/fetmainform.cpp" line="865"/>
+        <location filename="../src/interface/fetmainform.cpp" line="924"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1017"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1078"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1090"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1162"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1208"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1221"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1229"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1235"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1241"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1315"/>
         <location filename="../src/interface/fetmainform.cpp" line="1334"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1339"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1344"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1387"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1396"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1405"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1414"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1429"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1438"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1447"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1524"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1543"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1547"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1338"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1345"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1350"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1355"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1398"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1407"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1416"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1425"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1440"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1449"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1458"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1535"/>
         <location filename="../src/interface/fetmainform.cpp" line="1554"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1559"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1564"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1693"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1768"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1781"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1794"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1807"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1820"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1840"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1860"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1873"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1886"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1899"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1965"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2070"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2123"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2136"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2149"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2162"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2175"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2188"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2201"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2214"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2227"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2240"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2253"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2266"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2279"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2292"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2305"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2318"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2331"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2344"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2357"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2370"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2383"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2396"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2409"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2422"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2435"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2448"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2461"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2474"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2487"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2500"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2513"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2527"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2540"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2554"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2567"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2581"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2594"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2607"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2620"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2633"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2646"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2659"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2671"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2684"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2697"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2710"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2723"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2736"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2749"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2762"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2775"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2788"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2801"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2814"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2827"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2840"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2853"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2866"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2879"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2892"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2905"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2918"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2931"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2944"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2957"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2970"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2983"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2996"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3014"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3032"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3045"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3058"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3071"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3084"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3097"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3109"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3122"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3140"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3158"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3171"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3184"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3197"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3210"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3223"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3236"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3249"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3262"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3275"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3288"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3301"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3314"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3332"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3350"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3363"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3376"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3389"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3402"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3415"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3428"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3441"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3455"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3469"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1558"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1565"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1570"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1575"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1704"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1779"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1792"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1805"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1818"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1831"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1851"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1871"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1884"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1897"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1910"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1976"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2081"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2134"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2147"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2160"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2173"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2186"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2199"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2212"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2225"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2238"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2251"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2264"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2277"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2290"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2303"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2316"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2329"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2342"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2355"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2368"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2381"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2394"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2407"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2420"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2433"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2446"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2459"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2472"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2485"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2498"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2511"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2524"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2538"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2551"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2565"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2578"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2592"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2605"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2618"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2631"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2644"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2657"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2670"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2682"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2695"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2708"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2721"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2734"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2747"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2760"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2773"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2786"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2799"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2812"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2825"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2838"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2851"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2864"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2877"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2890"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2903"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2916"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2929"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2942"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2955"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2968"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2981"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2994"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3007"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3025"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3043"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3056"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3069"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3082"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3095"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3108"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3120"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3133"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3151"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3169"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3182"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3195"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3208"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3221"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3234"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3247"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3260"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3273"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3286"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3299"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3312"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3325"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3343"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3361"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3374"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3387"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3400"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3413"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3426"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3439"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3452"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3465"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3478"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3491"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3504"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3517"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3530"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3543"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3556"/>
         <location filename="../src/interface/fetmainform.cpp" line="3570"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3582"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3595"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3601"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3613"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3626"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3647"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3672"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3687"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3708"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3732"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3743"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3756"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3767"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3780"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3790"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4251"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4294"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4321"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4394"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4405"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3584"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3685"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3697"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3710"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3716"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3728"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3741"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3762"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3787"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3802"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3823"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3847"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3858"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3871"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3882"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3895"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3905"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4366"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4409"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4436"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4509"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4520"/>
         <source>FET information</source>
         <translation>FET - informaţie</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="741"/>
+        <location filename="../src/interface/fetmainform.cpp" line="752"/>
         <source>Constraint is not enabled. To use this type of constraint you must enable it from the Settings-&gt;Advanced menu.</source>
         <translation>Constrângerea nu este activată. Ca să folosiţi acest tip de constrângere trebuie să o activaţi din meniul Setări-&gt;Avansat.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="749"/>
+        <location filename="../src/interface/fetmainform.cpp" line="760"/>
         <source>Use with caution.</source>
         <translation>Folosiţi cu precauţie.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="868"/>
+        <location filename="../src/interface/fetmainform.cpp" line="879"/>
         <source>Could not search for possible updates on the internet - error message is: %1.</source>
         <translation>Nu am putut să caut posibile aduceri la zi pe internet - mesajul de eroare este: %1.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="870"/>
+        <location filename="../src/interface/fetmainform.cpp" line="881"/>
         <source>Searching for file %1.</source>
         <translation>Caut fişierul %1.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="872"/>
+        <location filename="../src/interface/fetmainform.cpp" line="883"/>
         <source>Possible actions: check your network connection, try again later, try to visit FET homepage: %1, or try to search for the new FET page on the internet (maybe it has changed).</source>
         <translation>Acţiuni posibile: verificaţi conexiunea dvs. de reţea, încercaţi din nou mai târziu, încercaţi să vizitaţi pagina de start FET: %1, sau încercaţi să căutaţi noua pagină FET pe internet (poate s-a schimbat).</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="885"/>
+        <location filename="../src/interface/fetmainform.cpp" line="896"/>
         <source>The file %1 from the FET homepage, indicating the current FET version, is incorrect.</source>
         <translation>Fişierul %1 de pe pagina de start FET, care indică versiunea FET curentă, este incorect.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="887"/>
+        <location filename="../src/interface/fetmainform.cpp" line="898"/>
         <source>Maybe the FET homepage has some temporary problems, so try again later. Or maybe the current structure on FET homepage was changed. You may visit FET homepage: %1, and get latest version or, if it does not work, try to search for the new FET page on the internet (maybe it has changed).</source>
         <translation>Poate pagina de start FET are câteva probleme temporare, aşa că încercaţi din nou mai târziu. Sau poate structura curentă de pe pagina de start FET s-a schimbat. Puteţi vizita pagina de start FET: %1, şi să descărcaţi ultima versiune sau, dacă ea nu funcţionează, încercaţi să căutaţi noua pagină de start FET pe internet (poate s-a schimbat).</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="910"/>
+        <location filename="../src/interface/fetmainform.cpp" line="921"/>
         <source>Additional comments: %1</source>
         <translation>Comentarii adiţionale: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="918"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3494"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3504"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3514"/>
+        <location filename="../src/interface/fetmainform.cpp" line="929"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3609"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3619"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3629"/>
         <source>Could not start the default internet browser (trying to open the link %1). Maybe you can try to manually start your browser and open this link.</source>
         <translation>Nu pot porni navigatorul de internet predefinit (încercând să deschid legătura %1). Poate încercaţi să porniţi manual navigatorul dvs. şi să deschideţi această legătură.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="947"/>
+        <location filename="../src/interface/fetmainform.cpp" line="958"/>
         <source>FET - exiting</source>
         <translation>FET - ieşind</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4094"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4209"/>
         <source>&amp;Yes</source>
         <translation>&amp;Da</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4094"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4209"/>
         <source>&amp;No</source>
         <translation>&amp;Nu</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4333"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4354"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4448"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4469"/>
         <source>&amp;Cancel</source>
         <translation>&amp;Anulează</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="855"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1007"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1068"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1080"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1152"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1388"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1397"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1406"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1415"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1430"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1439"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1448"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1769"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1782"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1795"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1808"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1821"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1841"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1861"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1874"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1887"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1900"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2124"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2137"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2150"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2163"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2176"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2189"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2202"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2215"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2228"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2241"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2254"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2267"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2280"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2293"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2306"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2319"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2332"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2345"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2358"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2371"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2384"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2397"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2410"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2423"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2436"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2449"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2462"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2475"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2488"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2501"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2514"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2528"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2541"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2555"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2568"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2582"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2595"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2608"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2621"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2634"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2647"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2660"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2672"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2685"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2698"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2711"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2724"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2737"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2750"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2763"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2776"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2789"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2802"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2815"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2828"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2841"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2854"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2867"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2880"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2893"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2906"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2919"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2932"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2945"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2958"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2971"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2984"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2997"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3015"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3033"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3046"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3059"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3072"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3085"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3098"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3123"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3141"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3159"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3172"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3185"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3198"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3211"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3224"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3237"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3250"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3263"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3276"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3289"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3302"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3315"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3333"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3351"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3364"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3377"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3390"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3403"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3416"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3429"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3442"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3456"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3470"/>
+        <location filename="../src/interface/fetmainform.cpp" line="866"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1018"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1079"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1091"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1163"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1399"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1408"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1417"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1426"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1441"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1450"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1459"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1780"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1793"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1806"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1819"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1832"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1852"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1872"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1885"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1898"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1911"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2135"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2148"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2161"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2174"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2187"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2200"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2213"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2226"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2239"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2252"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2265"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2278"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2291"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2304"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2317"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2330"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2343"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2356"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2369"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2382"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2395"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2408"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2421"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2434"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2447"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2460"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2473"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2486"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2499"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2512"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2525"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2539"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2552"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2566"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2579"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2593"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2606"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2619"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2632"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2645"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2658"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2671"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2683"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2696"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2709"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2722"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2735"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2748"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2761"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2774"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2787"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2800"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2813"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2826"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2839"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2852"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2865"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2878"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2891"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2904"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2917"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2930"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2943"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2956"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2969"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2982"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2995"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3008"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3026"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3044"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3057"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3070"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3083"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3096"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3109"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3134"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3152"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3170"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3183"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3196"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3209"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3222"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3235"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3248"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3261"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3274"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3287"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3300"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3313"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3326"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3344"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3362"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3375"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3388"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3401"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3414"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3427"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3440"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3453"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3466"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3479"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3492"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3505"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3518"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3531"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3544"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3557"/>
         <location filename="../src/interface/fetmainform.cpp" line="3571"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3596"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4252"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4295"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4322"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4395"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4406"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3585"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3686"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3711"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4367"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4410"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4437"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4510"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4521"/>
         <source>Allocation in course.
 Please stop simulation before this.</source>
         <translation>Alocare în curs.
 Vă rog opriţi simularea înainte de aceasta.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="732"/>
+        <location filename="../src/interface/fetmainform.cpp" line="743"/>
         <source>Chinese Simplified</source>
         <translation>Chineză simplificată</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="769"/>
+        <location filename="../src/interface/fetmainform.cpp" line="780"/>
         <source>Note: if you disable this option, you will not be able to add/modify constraints for subgroups, and you will not be able to make filters using a particular subgroup, when selecting activities.</source>
         <translation>Notă: dacă dezactivaţi această opţiune, nu veţi putea să adăugaţi/modificaţi constrângeri pentru subgrupuri, şi nu veţi putea face filtre folosind un subgrup anume, când selectaţi activităţile.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1089"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1161"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1100"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1172"/>
         <source>FET application</source>
         <translation>FET - aplicaţie</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1198"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1209"/>
         <source>Please do not use a filename starting with white space(s), the html css code does not work. File was not loaded. Please rename it, removing the white space(s) from the beginning and open it after that with FET.</source>
         <translation>Vă rog nu folosiţi un nume de fişier care începe cu spaţiu(i) alb, codul html css nu funcţionează. Fişierul nu a fost încărcat. Vă rog redenumiţi-l, ştergând spaţiul(iile) alb de la început şi deschideţi-l după aceea cu FET.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1211"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1222"/>
         <source>Please do not use a filename ending with white space(s) before the &apos;.fet&apos; termination or at the end of the filename, problems might arise. File was not loaded. Please rename it, removing the white space(s) at the end and open it after that with FET.</source>
         <translation>Vă rog nu folosiţi un nume de fişier care se termină în spaţiu(i) alb înainte de terminaţia &apos;.fet&apos; sau la sfârşitul numelui de fişier, pot apărea probleme. Fişierul nu a fost încărcat. Vă rog redenumiţi-l, ştergând spaţiul(iile) alb de la sfârşit şi deschideţi-l după aceea cu FET.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1219"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1230"/>
         <source>Please do not use quotation marks &quot; in filename, the html css code does not work. File was not loaded. Please rename it, removing not allowed characters and open it after that with FET.</source>
         <translation>Vă rog nu folosiţi ghilimele &quot; în numele fişierului, codul html css nu funcţionează. Fişierul nu a fost încărcat. Vă rog redenumiţi-l, ştergând caracterele nepermise şi deschideţi-l după aceasta cu FET.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1225"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1236"/>
         <source>Please do not use semicolon ; in filename, the html css code does not work. File was not loaded. Please rename it, removing not allowed characters and open it after that with FET.</source>
         <translation>Vă rog nu folosiţi punct şi virgulă ; în numele fişierului, codul html css nu funcţionează. Fişierul nu a fost încărcat. Vă rog redenumiţi-l, ştergând caracterele nepermise şi deschideţi-l după aceasta cu FET.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1231"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1242"/>
         <source>Please do not use # in filename, the html css code does not work. File was not loaded. Please rename it, removing not allowed characters and open it after that with FET.</source>
         <translation>Vă rog nu folosiţi # în numele fişierului, codul html css nu funcţionează. Fişierul nu a fost încărcat. Vă rog redenumiţi-l, ştergând caracterele nepermise şi deschideţi-l după aceasta cu FET.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1292"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1303"/>
         <source>Choose a filename to save under</source>
         <translation>Alegeţi un nume pentru a salva fişierul</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1334"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1554"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1345"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1565"/>
         <source>Please do not use quotation marks &quot; in filename, the html css code does not work</source>
         <translation>Vă rog nu folosiţi ghilimele &quot; în numele fişierului, codul html css nu funcţionează</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1339"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1559"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1350"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1570"/>
         <source>Please do not use semicolon ; in filename, the html css code does not work</source>
         <translation>Vă rog nu folosiţi punct şi virgulă ; în numele fişierului, codul html css nu funcţionează</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1344"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1564"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1355"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1575"/>
         <source>Please do not use # in filename, the html css code does not work</source>
         <translation>Vă rog nu folosiţi # în numele fişierului, codul html css nu funcţionează</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1356"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1367"/>
         <source>FET</source>
         <translation>FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1512"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1523"/>
         <source>Choose a filename for data and timetable</source>
         <translation>Alegeţi un nume de fişier pentru date şi orar</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1657"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1682"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1668"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1693"/>
         <source>Added to the saved file:</source>
         <comment>It refers to a constraint</comment>
         <translation>Adăugată în fişierul salvat:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1659"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1684"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1670"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1695"/>
         <source>NOT added to the saved file (already existing):</source>
         <comment>It refers to a constraint</comment>
         <translation>NE-adăugată în fişierul salvat (există deja):</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1693"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1704"/>
         <source>Added %1 locking time constraints and %2 locking space constraints to saved file, ignored %3 activities which were already fixed in time and %4 activities which were already fixed in space.</source>
         <translation>Au fost adăugate %1 constrângeri de blocare timp şi %2 constrângeri de blocare spaţiu în fişierul salvat, ignorând %3 activităţi care erau deja blocate în timp şi %4 activităţi care erau deja blocate în spaţiu.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1695"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1706"/>
         <source>Detailed information about each locking constraint which was added or not (if already existing) to the saved file:</source>
         <translation>Informaţii detaliate despre fiecare constrângere de blocare care a fost adăugată sau nu (dacă exista deja) în fişierul salvat:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1696"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1707"/>
         <source>Your current data file remained untouched (no locking constraints were added), so you can save it also, or generate different timetables.</source>
         <translation>Fişierul dvs. curent de date a rămas neatins (nu au fost adăugate constrângeri de blocare), aşa încât puteţi să îl salvaţi şi pe el, sau să generaţi orare diferite.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1986"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1997"/>
         <source>Seed of random number generator: please read the help in the dialog of this option</source>
         <translation>Starea generatorului de numere aleatoare: vă rog citiţi ajutorul în dialogul acestei opţiuni</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1989"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2000"/>
         <source>Interface - use colors: the places with colors in FET interface are in:</source>
         <translation>Interfaţă - foloseşte culori: locurile cu culori în interfaţa FET sunt în:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1996"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2007"/>
         <source>activities and subactivities dialogs, the inactive activities will have a distinctive background color</source>
         <translation>dialogurile activităţilor şi subactivităţilor, activităţile inactive vor avea o culoare de fond distinctivă</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1999"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2010"/>
         <source>all time constraints and all space constraints dialogs, the inactive constraints will have a distinctive background color</source>
         <translation>dialogurile toate constrângerile de timp şi toate constrângerile de spaţiu, constrângerile inactive vor avea o culoare de fond distinctivă</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2005"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2016"/>
         <source>the three timetable view dialogs</source>
         <translation>cele trei dialoguri vizualizare orar</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2008"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2019"/>
         <source>Enable activity tag max hours daily:</source>
         <translation>Activează etichetă activitate max ore zilnic:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2010"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2021"/>
         <source>This will enable the menu for 4 constraints: teacher(s) or students (set) activity tag max hours daily. These 4 constraints are good, but not perfect and may bring slow down of generation or impossible timetables if used unproperly. Select only if you know what you&apos;re doing.</source>
         <translation>Aceasta va activa meniul pentru 4 constrângeri: profesor(i) sau (set de) studenţi etichetă activitate max ore zilnic. Aceste 4 constrângeri sunt bune, dar nu sunt perfecte şi ar putea aduce încetinirea generării sau orare imposibile dacă sunt folosite necorespunzător. Selectaţi doar dacă ştiţi ce faceţi.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2013"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2024"/>
         <source>Enable students max gaps per day:</source>
         <translation>Activează studenţi max ferestre pe zi:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2015"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2026"/>
         <source>This will enable the menu for 2 constraints: students (set) max gaps per day. These 2 constraints are good, but not perfect and may bring slow down of generation or impossible timetables if used unproperly. Select only if you know what you&apos;re doing.</source>
         <translation>Aceasta va activa meniul pentru 2 constrângeri: (set de) studenţi max ferestre pe zi. Aceste 2 constrângeri sunt bune, dar nu sunt perfecte şi ar putea aduce încetinirea generării sau orare imposibile dacă sunt folosite necorespunzător. Selectaţi doar dacă ştiţi ce faceţi.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2019"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2030"/>
         <source>Warn if using not perfect constraints:</source>
         <comment>this is a warning if user uses not perfect constraints</comment>
         <translation>Avertizează dacă sunt folosite constrângeri imperfecte:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2027"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2038"/>
         <source>This will enable you to modify the students min hours daily constraints, to allow empty days. It is IMPERATIVE (for performance reasons) to allow empty days for students min hours daily only if your institution allows empty days for students and if a solution with empty days is possible. Select only if you know what you&apos;re doing.</source>
         <translation>Aceasta vă va permite să modificaţi constrângeri studenţi min ore zilnic, să permită zile libere. Este IMPERATIV (pentru motive de performanţă) să permiteţi zile libere pentru studenţi min ore zilnic doar dacă instituţia dvs. permite zile libere pentru studenţi şi dacă o soluţie cu zile libere este posibilă. Selectaţi doar dacă ştiţi ceea ce faceţi.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2077"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2088"/>
         <source>You will find in the statistics only active activities count. The inactive ones are not counted.</source>
         <translation>Veţi găsi în statistici doar numărătoarea activităţilor active. Cele inactive nu sunt numărate.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2110"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2121"/>
         <source>Activities rooms statistics: this menu will show the activities which may be scheduled in an unspecified room, if they are referred to by space constraints with weight under 100.0%, and the activities which will certainly be scheduled in an unspecified room, if they are not referred to by any space constraints. Remember that home rooms constraints are effective only on activities which have only the exact specified teacher or students set (activities with more teachers or students sets are not affected by home rooms constraints, you need to have preferred rooms constraints for such activities to ensure they will not end up in an unspecified room).</source>
         <translation>Statisticile activităţi săli: acest meniu va arăta activităţile care pot fi programate într-o sală nespecificată, dacă ele sunt afectate de constrângeri de spaţiu cu importanţa sub 100.0%, şi activităţile care sigur vor fi programate într-o sală nespecificată, dacă ele nu sunt afectate de nicio constrângere de spaţiu. Ţineţi minte că constrângerile săli proprii au efect doar pe activităţile care au doar exact profesorul sau setul de studenţi specificat (activităţile cu mai mulţi profesori sau seturi de studenţi nu sunt afectate de constrângerile săli proprii, trebuie să aveţi constrângeri săli preferate pentru asemenea activităţi pentru a vă asigura că ele nu vor ajunge într-o sală nespecificată).</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3103"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3114"/>
         <source>Feature is not enabled. To use this type of feature you must enable it from the Settings-&gt;Advanced menu.</source>
         <translation>Opţiunea nu este activată. Pentru a folosi acest tip de opţiune trebuie să o activaţi din meniul Setări-&gt;Avansat.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3107"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3118"/>
         <source>The feature must be used with caution, by experienced users.</source>
         <translation>Opţiunea trebuie să fie folosită cu precauţie, de către utilizatori experimentaţi.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3522"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3637"/>
         <source>In case the Help/Online menus do not function, please write down these addresses and open them in an internet browser:</source>
         <translation>În caz ca meniurile Ajutor/Online nu funcţionează, vă rog notaţi aceste adrese şi deschideţi-le într-un navigator de internet:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3524"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3639"/>
         <source>FET homepage: %1</source>
         <comment>%1 is FET homepage, begins with http://...</comment>
         <translation>Pagina de start FET: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3528"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3643"/>
         <source>Forum: %1</source>
         <comment>%1 is web page of FET forum, begins with http://...</comment>
         <translation>Forum: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3530"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3645"/>
         <source>Additionally, you may find on the FET homepage other contact information.</source>
         <translation>Adiţional, puteţi găsi pe pagina de start FET alte metode de contact.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3532"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3647"/>
         <source>In case these addresses do not function, maybe the FET webpage has temporary problems, so try again later. Or maybe the FET webpage has changed, so search for the new page on the internet.</source>
         <translation>În caz că aceste adrese nu funcţionează, poate pagina de start FET are probleme temporare, aşa că încercaţi mai târziu. Sau poate pagina de start FET s-a schimbat, aşa că trebuie să căutaţi noua pagină pe internet.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3626"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3647"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3672"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3687"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3708"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3732"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3756"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3780"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3790"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3741"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3762"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3787"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3802"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3823"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3847"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3871"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3895"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3905"/>
         <source>Please generate, firstly</source>
         <translation>Vă rog generaţi, întâi</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3631"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3652"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3692"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3713"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3746"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3767"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3807"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3828"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
         <translation>Nu pot să afişez orarul, pentru că aţi adăugat sau şters nişte săli. Vă rog regeneraţi orarul şi apoi vizualizaţi-l</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3656"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3717"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3771"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3832"/>
         <source>Cannot display the timetable, because you added or removed some teachers. Please regenerate the timetable and then view it</source>
         <translation>Nu pot să afişez orarul, pentru că aţi adăugat sau şters nişte profesori. Vă rog regeneraţi orarul şi apoi vizualizaţi-l</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3743"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3767"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3858"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3882"/>
         <source>The timetable is not generated, but anyway FET will proceed now</source>
         <translation>Orarul nu este generat, dar oricum FET va continua acum</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="702"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3937"/>
+        <location filename="../src/interface/fetmainform.cpp" line="713"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4052"/>
         <source>US English</source>
         <translation>Engleză SUA</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="721"/>
+        <location filename="../src/interface/fetmainform.cpp" line="732"/>
         <source>Ukrainian</source>
         <translation>Ucraineană</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="723"/>
+        <location filename="../src/interface/fetmainform.cpp" line="734"/>
         <source>Danish</source>
         <translation>Daneză</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="724"/>
+        <location filename="../src/interface/fetmainform.cpp" line="735"/>
         <source>Sinhala</source>
         <translation>Singaleză</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="725"/>
+        <location filename="../src/interface/fetmainform.cpp" line="736"/>
         <source>Slovak</source>
         <translation>Slovacă</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="726"/>
+        <location filename="../src/interface/fetmainform.cpp" line="737"/>
         <source>Hebrew</source>
         <translation>Ebraică</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="727"/>
+        <location filename="../src/interface/fetmainform.cpp" line="738"/>
         <source>Serbian</source>
         <translation>Sârbă</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="728"/>
+        <location filename="../src/interface/fetmainform.cpp" line="739"/>
         <source>Galician</source>
         <translation>Galiciană</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="729"/>
+        <location filename="../src/interface/fetmainform.cpp" line="740"/>
         <source>Vietnamese</source>
         <translation>Vietnameză</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="730"/>
+        <location filename="../src/interface/fetmainform.cpp" line="741"/>
         <source>Uzbek</source>
         <translation>Uzbecă</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="731"/>
+        <location filename="../src/interface/fetmainform.cpp" line="742"/>
         <source>Albanian</source>
         <translation>Albaneză</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3917"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4032"/>
         <source>That means:</source>
         <translation>Aceasta înseamnă:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3923"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3977"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3980"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3992"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4001"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4008"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4012"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4014"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4016"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4018"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4024"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4028"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4030"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4035"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4039"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4042"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4045"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4048"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4051"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4054"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4058"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4061"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4064"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4067"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4070"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4073"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4076"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4079"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4082"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4086"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4088"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4090"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4038"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4092"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4095"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4107"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4116"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4123"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4127"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4129"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4131"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4133"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4139"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4143"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4145"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4150"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4154"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4157"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4160"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4163"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4166"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4169"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4173"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4176"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4179"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4182"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4185"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4188"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4191"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4194"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4197"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4201"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4203"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4205"/>
         <source>true</source>
         <translation>adevărat</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3992"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4107"/>
         <source>Print activities tags will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Tipăreşte etichetele activitate va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4018"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4133"/>
         <source>Confirm save data and timetable as will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Confirmarea salvării datelor şi orarului ca va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4022"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4137"/>
         <source>Enable group activities in the initial order of generation will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Activează grupează activităţile în ordinea iniţială a generării va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4024"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4139"/>
         <source>Warn if using group activities in the initial order of generation will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Avertizează dacă folosiţi grupează activităţile în ordinea iniţială a generării va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4079"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4194"/>
         <source>activity tags</source>
         <translation>etichete activitate</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4090"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4205"/>
         <source>50</source>
         <translation>50</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4487"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4517"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4602"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4632"/>
         <source>These kinds of constraints are good, but not perfectly optimized. Adding such constraints may make your timetable solve too slow or even impossible.</source>
         <translation>Aceste tipuri de constrângeri sunt bune, dar nu perfect optimizate. Adăugarea unor astfel de constrângeri ar putea face orarul dvs. să se rezolve prea încet sau chiar imposibil.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4490"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4520"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4605"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4635"/>
         <source>It is recommended to use such constraints only at the end, after you generated successfully with all the other constraints.</source>
         <translation>Este recomandat să folosiţi aşa constrângeri doar la sfârşit, după ce aţi generat cu succes cu toate celelalte constrângeri.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4492"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4522"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4607"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4637"/>
         <source>If your timetable is too difficult, it may be from these kinds of constraints, so you may need to remove them and retry.</source>
         <translation>Dacă orarul dvs. este prea dificil, poate fi de la aceste feluri de constrângeri, aşa că poate veţi fi nevoit să le ştergeţi şi să reîncercaţi.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4494"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4524"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4598"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4641"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4609"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4639"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4713"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4756"/>
         <source>Continue only if you know what you are doing.</source>
         <translation>Continuaţi doar dacă ştiţi ceea ce faceţi.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4545"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4567"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4616"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4661"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4660"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4682"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4731"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4776"/>
         <source>It is recommended to keep this warning active, but if you really want, you can disable it.</source>
         <translation>Este recomandat să păstraţi acest avertisment activ, dar dacă chiar vreţi, puteţi să îl dezactivaţi.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4547"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4569"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4618"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4663"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4662"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4684"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4733"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4778"/>
         <source>Disable it only if you know what you are doing.</source>
         <translation>Dezactivaţi aceasta doar dacă ştiţi ce faceţi.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4549"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4571"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4620"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4665"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4664"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4686"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4735"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4780"/>
         <source>Are you sure you want to disable it?</source>
         <translation>Sunteţi sigur că vreţi să îl dezactivaţi?</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4638"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4753"/>
         <source>This kind of option is good, but only in the right case. Adding such an option in the wrong circumstance may make your timetable solve too slow or even impossible.</source>
         <translation>Acest tip de opţiune este bun, dar doar în cazul potrivit. Adăugarea unei asemenea opţiuni în mod greşit poate face orarul dvs. să fie rezolvat prea încet sau chiar imposibil de rezolvat.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3582"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3697"/>
         <source>Please input at least one active activity before generating</source>
         <translation>Vă rugăm introduceţi cel puţin o activitate „activă” înainte de a genera</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3613"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3728"/>
         <source>Please input at least one active activity before generating multiple</source>
         <translation>Vă rugăm introduceţi cel puţin o activitate „activă” înainte de a genera multiple orare</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="743"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3105"/>
+        <location filename="../src/interface/fetmainform.cpp" line="754"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3116"/>
         <source>Explanation:</source>
         <translation>Explicaţie:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="747"/>
+        <location filename="../src/interface/fetmainform.cpp" line="758"/>
         <source>For some situations, the generation of the timetable may take too long or be impossible.</source>
         <translation>Pentru unele situaţii, generarea orarului s-ar putea să dureze prea mult sau să fie imposibilă.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="907"/>
+        <location filename="../src/interface/fetmainform.cpp" line="918"/>
         <source>Would you like to open the FET homepage now?</source>
         <translation>Aţi dori să deschideţi pagina de start FET acum?</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1458"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1468"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1476"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1469"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1479"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1487"/>
         <source>FET - Warning</source>
         <translation>FET - avertisment</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1458"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1469"/>
         <source>You have not yet generated a timetable - please generate firstly</source>
         <translation>Nu aţi generat un orar încă - vă rog generaţi mai întâi</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1468"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1476"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1479"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1487"/>
         <source>It seems that you have an incomplete timetable. Saving of timetable does not work for incomplete timetables. Please generate a complete timetable</source>
         <translation>Se pare că aveţi un orar incomplet. Salvarea orarului nu funcţionează pentru orare incomplete. Vă rog generaţi un orar complet</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1576"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1587"/>
         <source>File exists</source>
         <translation>Fişierul există deja</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1578"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1589"/>
         <source>For safety (so you don&apos;t lose work), it is not allowed to overwrite an existing file with locking and saving a current data+timetable</source>
         <translation>Pentru siguranţă (să nu pierdeţi munca), nu este permis să suprascrieţi un fişier existent când fixaţi şi salvaţi date+orar</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1581"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1592"/>
         <source>Please choose a non-existing name</source>
         <translation>Vă rog selectaţi un nume non-existent</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="745"/>
+        <location filename="../src/interface/fetmainform.cpp" line="756"/>
         <source>Constraints of this type are good, working, but they are not perfectly optimized.</source>
         <translation>Constrângerile de acest tip sunt bune, funcţionale, dar nu sunt perfect optimizate.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3914"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4029"/>
         <source>Are you sure you want to reset all settings to defaults?</source>
         <translation>Sigur doriţi să resetaţi toate setările la cele predefinite?</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1132"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1143"/>
         <source>New file generated</source>
         <translation>Nou fişier generat</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1036"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1047"/>
         <source>%1[*] - FET</source>
         <comment>The title of the main window, %1 is the name of the current file. Please keep the string [*] unmodified (three characters) - it is used to make the difference between modified files and unmodified files.</comment>
         <translation>%1[*] - FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1258"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1269"/>
         <source>File opened</source>
         <translation>Fişier deschis</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1370"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1751"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1381"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1762"/>
         <source>File saved</source>
         <translation>Fişier salvat</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2021"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2032"/>
         <source>If you use a not perfect constraint (activity tag max hours daily or students max gaps per day), you&apos;ll get a warning before generating. Uncheck this option to get rid of that warning (it is recommended to keep the warning).</source>
         <translation>Dacă folosiţi o constrângere care nu este perfectă (etichetă activitate max ore zilnic sau studenţi max ferestre pe zi), veţi primi un avertisment înainte de generare. Deselectaţi această opţiune pentru a scăpa de acel avertisment (este recomandat să păstraţi avertismentul).</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3837"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3952"/>
         <source>Invalid current language - making it en_US (US English)</source>
         <translation>Limbă curentă invalidă - o fac en_US (Engleză SUA)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3894"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4009"/>
         <source>Invalid language selected - making it en_US (US English)</source>
         <translation>Limbă invalidă selectată - o fac en_US (Engleză SUA)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3923"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4038"/>
         <source>Show shortcut buttons in main window will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Arată butoanele scurtătură în fereastra principală va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3926"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4041"/>
         <source>In the shortcuts tab from the main window, the first section will be selected/shown</source>
         <comment>Option refers to the main window tab widget for shortcuts, which currently contains 5 tabs: File, Data, Time, Space, Timetable (so it will select/show File tab).</comment>
         <translation>În tab-ul de scurtături din fereastra principală, prima secţiune va fi selectată/afişată</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3930"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4045"/>
         <source>Check for updates at startup will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Verifică aduceri la zi la pornire va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3965"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4080"/>
         <source>Working directory will be %1</source>
         <comment>%1 is the directory</comment>
         <translation>Directorul de lucru va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3968"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4083"/>
         <source>Output directory will be %1</source>
         <comment>%1 is the directory</comment>
         <translation>Directorul de ieşire va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3971"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4086"/>
         <source>Import directory will be %1</source>
         <comment>%1 is the directory</comment>
         <translation>Directorul de import va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3974"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4089"/>
         <source>Html level of the timetables will be %1</source>
         <comment>%1 is default html level</comment>
         <translation>Nivelul html al orarelor va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3977"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4092"/>
         <source>Mark not available slots with -x- in timetables will be %1</source>
         <comment>%1 is true or false. Lowercase -x-</comment>
         <translation>Marchează sloturile indisponibile cu -x- în orare va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3980"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4095"/>
         <source>Mark break slots with -X- in timetables will be %1</source>
         <comment>%1 is true or false. Uppercase -X-</comment>
         <translation>Marchează sloturile pauză cu -X- în orare va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3983"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4098"/>
         <source>Divide html timetables with time-axis by days will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Divide orarele html cu axă timp prin zile va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3989"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4104"/>
         <source>Print activities with same starting time will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Tipăreşte activităţile cu acelaşi timp de start va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3995"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4110"/>
         <source>Enable activity tag max hours daily will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Activează etichetă activitate max ore zilnic va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3998"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4113"/>
         <source>Enable students max gaps per day will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Activează studenţi max ferestre pe zi va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4004"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4119"/>
         <source>Enable constraints students min hours daily with empty days will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Activează constrângeri studenţi min ore zilnic cu zile libere va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4007"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4122"/>
         <source>Warn if using constraints students min hours daily with empty days will be %1</source>
         <comment>%1 is true or false. This is a warning if user uses a nonstandard constraint students min hours daily with allowed empty days</comment>
         <translation>Avertizează dacă sunt folosite constrângeri studenţi min ore zilnic cu zile libere va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4075"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4190"/>
         <source>44</source>
         <translation>44</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4078"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4193"/>
         <source>45</source>
         <translation>45</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4084"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4199"/>
         <source>Show tool tips for constraints with tables will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Arată &apos;tool tip&apos;-uri pentru constrângerile cu tabele va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4081"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4196"/>
         <source>46</source>
         <translation>46</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4086"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4201"/>
         <source>Show warning for subgroups with the same activities will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Arată avertisment pentru subgrupurile cu aceleaşi activităţi va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4084"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4199"/>
         <source>47</source>
         <translation>47</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4086"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4201"/>
         <source>48</source>
         <translation>48</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4088"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4203"/>
         <source>Print detailed timetables will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Tipăreşte orare detaliate va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4088"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4203"/>
         <source>49</source>
         <translation>49</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4090"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4205"/>
         <source>Print detailed teachers&apos; free periods timetables will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Tipăreşte orarele detaliate ale perioadelor libere ale profesorilor va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4328"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4443"/>
         <source>You have more than 6 days per week, so probably you won&apos;t need this feature. Do you still want to continue?</source>
         <translation>Aveţi mai mult de 6 zile pe săptămână, aşa că probabil nu aveţi nevoie de această facilitate. Doriţi să continuaţi?</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4331"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4352"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4446"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4467"/>
         <source>FET question</source>
         <translation>FET - întrebare</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4333"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4354"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4448"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4469"/>
         <source>&amp;Continue</source>
         <translation>&amp;Continuă</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4349"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4464"/>
         <source>You have less than 5 days per week, so probably you won&apos;t need this feature. Do you still want to continue?</source>
         <translation>Aveţi mai puţin de 5 zile pe săptămână, aşa că probabil nu aveţi nevoie de această facilitate. Doriţi să continuaţi?</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1186"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1294"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1514"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1197"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1305"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1525"/>
         <source>All files</source>
         <translation>Toate fişierele</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1185"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1293"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1513"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1196"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1304"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1524"/>
         <source>FET XML files</source>
         <comment>Instructions for translators: FET XML is a type of file format (using text mode). So this field means files in the FET XML format</comment>
         <translation>Fişiere FET XML</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="905"/>
+        <location filename="../src/interface/fetmainform.cpp" line="916"/>
         <source>Another version: %1, is available on the FET homepage: %2</source>
         <comment>%1 is new version, %2 is FET homepage</comment>
         <translation>O altă versiune: %1, este disponibilă pe pagina de start FET: %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="907"/>
+        <location filename="../src/interface/fetmainform.cpp" line="918"/>
         <source>You may need to hit Refresh in your web browser.</source>
         <translation>S-ar putea să trebuiască să apăsaţi „Reîncărcare” în navigatorul dvs. de internet.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="948"/>
+        <location filename="../src/interface/fetmainform.cpp" line="959"/>
         <source>Your data file has been modified - do you want to save it?</source>
         <translation>Fişierul de date curent al dvs. a fost modificat - doriţi să îl salvaţi?</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1090"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1101"/>
         <source>Your current data file has been modified. Are you sure you want to reset to new empty data?</source>
         <translation>Fişierul de date curent al dvs. a fost modificat. Sunteţi sigur că doriţi să resetaţi la date noi vide?</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1162"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1173"/>
         <source>Your current data file has been modified. Are you sure you want to open another data file?</source>
         <translation>Fişierul de date curent al dvs. a fost modificat. Sunteţi sigur că doriţi să încărcaţi alt fişier de date?</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1183"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1194"/>
         <source>Choose a file to open</source>
         <translation>Alegeţi un fişier pe care să îl deschideţi</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1242"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1253"/>
         <source>Loading...</source>
         <comment>This is a message in the status bar, that we are loading the file</comment>
         <translation>Încarc...</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1357"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1368"/>
         <source>File %1 exists - are you sure you want to overwrite it?</source>
         <translation>Fişierul %1 există - sunteţi sigur că doriţi să îl suprascrieţi?</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1992"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2003"/>
         <source>add/modify constraints break, not available, preferred starting times or time slots, occupy max time slots from selection or max simultaneous in selected time slots (the table cells will have green or red colors).</source>
         <translation>adaugă/modifică constrângeri pauză, indisponibil, timpi de start sau sloturi de timp preferate, ocupă max sloturi de timp din selecţie sau max simultane în sloturile de timp selectate (celulele tabelei vor avea culori verzi sau roşii).</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2002"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2013"/>
         <source>group activities in initial order items, the inactive items will have a distinctive background color</source>
         <translation>elementele grupează activităţile în ordinea iniţială, elementele inactive vor avea o culoare de fond distinctivă</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2025"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2036"/>
         <source>Enable students min hours daily with empty days:</source>
         <translation>Activează studenţi min ore zilnic cu zile libere:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2031"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2042"/>
         <source>Warn if using students min hours daily with empty days:</source>
         <comment>this is a warning if user has constraints min hours daily for students with allowed empty days</comment>
         <translation>Avertizează dacă foloseşte studenţi min ore zilnic cu zile libere:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2033"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2044"/>
         <source>If you use constraints students min hours daily with allowed empty days, you&apos;ll get a warning before generating. Uncheck this option to get rid of that warning (it is recommended to keep the warning).</source>
         <translation>Dacă folosiţi constrângeri studenţi min ore zilnic cu permite zile libere, veţi primi un avertisment înainte de generare. Deselectaţi această opţiune pentru a scăpa de acel avertisment (este recomandat să păstraţi avertismentul).</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2038"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2049"/>
         <source>Confirmations: unselect the corresponding check boxes if you want to skip introduction and confirmation to various advanced dialogs.</source>
         <translation>Confirmări: deselectaţi check box-urile corespunzătoare dacă doriţi să săriţi peste introducerea şi confirmarea variatelor dialoguri avansate.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2042"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2053"/>
         <source>Duplicate vertical headers to the right (in timetable settings) - select this if you want the timetables to duplicate the table left vertical headers to the right part of the tables</source>
         <translation>Copiază capetele de tabele verticale la dreapta (în setările orar) - selectaţi aceasta dacă doriţi ca orarele să copieze capetele de tabele verticale din stânga în partea dreaptă a tabelelor</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3526"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3641"/>
         <source>Documentation (online help contents): %1</source>
         <comment>%1 is web page of FET Doc(umentation), which is the contents of the online help, it begins with http://...</comment>
         <translation>Documentaţie (conţinut ajutor online): %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3534"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3649"/>
         <source>FET web addresses</source>
         <translation>Adresa de start FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3602"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3717"/>
         <source>Your current data has no name. Please save it as a file with a certain name before proceeding.</source>
         <translation>Datele dvs. curente nu au nume. Vă rugăm salvaţi-le ca un fişiere cu un nume specificat înainte de a merge mai departe.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3800"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3843"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3915"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3958"/>
         <source>Please select FET language</source>
         <translation>Vă rog selectaţi limba FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3804"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3919"/>
         <source>Cancel</source>
         <translation>Anulează</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="703"/>
+        <location filename="../src/interface/fetmainform.cpp" line="714"/>
         <source>Arabic</source>
         <translation>Arabă</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="704"/>
+        <location filename="../src/interface/fetmainform.cpp" line="715"/>
         <source>Catalan</source>
         <translation>Catalană</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="705"/>
+        <location filename="../src/interface/fetmainform.cpp" line="716"/>
         <source>German</source>
         <translation>Germană</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="706"/>
+        <location filename="../src/interface/fetmainform.cpp" line="717"/>
         <source>Greek</source>
         <translation>Greacă</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="707"/>
+        <location filename="../src/interface/fetmainform.cpp" line="718"/>
         <source>Spanish</source>
         <translation>Spaniolă</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="708"/>
+        <location filename="../src/interface/fetmainform.cpp" line="719"/>
         <source>French</source>
         <translation>Franceză</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="709"/>
+        <location filename="../src/interface/fetmainform.cpp" line="720"/>
         <source>Hungarian</source>
         <translation>Maghiară</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="710"/>
+        <location filename="../src/interface/fetmainform.cpp" line="721"/>
         <source>Indonesian</source>
         <translation>Indoneziană</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="711"/>
+        <location filename="../src/interface/fetmainform.cpp" line="722"/>
         <source>Italian</source>
         <translation>Italiană</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="712"/>
+        <location filename="../src/interface/fetmainform.cpp" line="723"/>
         <source>Lithuanian</source>
         <translation>Lituaniană</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="713"/>
+        <location filename="../src/interface/fetmainform.cpp" line="724"/>
         <source>Macedonian</source>
         <translation>Macedoniană</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="714"/>
+        <location filename="../src/interface/fetmainform.cpp" line="725"/>
         <source>Malay</source>
         <translation>Malaieziană</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="715"/>
+        <location filename="../src/interface/fetmainform.cpp" line="726"/>
         <source>Dutch</source>
         <translation>Olandeză</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="716"/>
+        <location filename="../src/interface/fetmainform.cpp" line="727"/>
         <source>Polish</source>
         <translation>Poloneză</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="717"/>
+        <location filename="../src/interface/fetmainform.cpp" line="728"/>
         <source>Romanian</source>
         <translation>Română</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="718"/>
+        <location filename="../src/interface/fetmainform.cpp" line="729"/>
         <source>Turkish</source>
         <translation>Turcă</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="722"/>
+        <location filename="../src/interface/fetmainform.cpp" line="733"/>
         <source>Brazilian Portuguese</source>
         <translation>Portugheză braziliană</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="733"/>
+        <location filename="../src/interface/fetmainform.cpp" line="744"/>
         <source>Chinese Traditional</source>
         <translation>Chineză tradiţională</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="734"/>
+        <location filename="../src/interface/fetmainform.cpp" line="745"/>
         <source>Basque</source>
         <translation>Bască</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="735"/>
+        <location filename="../src/interface/fetmainform.cpp" line="746"/>
         <source>Czech</source>
         <translation>Cehă</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="790"/>
+        <location filename="../src/interface/fetmainform.cpp" line="801"/>
         <source>Note: if you disable this option, you will not be able to view activities for subgroups in the activity planning dialog.</source>
         <translation>Notă: dacă dezactivaţi această opţiune, nu veţi mai putea să vizualizaţi activităţile pentru subgrupuri în dialogul de planificare a activitaţii.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="907"/>
+        <location filename="../src/interface/fetmainform.cpp" line="918"/>
         <source>You have to manually download and install.</source>
         <translation>Trebuie să descărcaţi şi să instalaţi manual.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1305"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1525"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1316"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1536"/>
         <source>Please do not use a filename starting with white space(s), the html css code does not work.</source>
         <translation>Vă rog nu folosiţi un nume de fişier care începe cu spaţiu(i) alb, codul html css nu funcţionează.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1306"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1325"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1329"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1335"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1317"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1336"/>
         <location filename="../src/interface/fetmainform.cpp" line="1340"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1345"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1526"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1545"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1549"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1555"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1346"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1351"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1356"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1537"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1556"/>
         <location filename="../src/interface/fetmainform.cpp" line="1560"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1565"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1566"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1571"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1576"/>
         <source>File was not saved.</source>
         <translation>Fişierul nu a fost salvat.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1324"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1544"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1335"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1555"/>
         <source>Please do not use a filename ending with white space(s) before the &apos;.fet&apos; termination, problems might arise.</source>
         <translation>Vă rog nu folosiţi un nume de fişier care se termină cu spaţiu(i) alb înainte de terminaţia &apos;.fet&apos;, pot apărea probleme.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1328"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1548"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1339"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1559"/>
         <source>Please do not use a filename ending with white space(s), problems might arise.</source>
         <translation>Vă rog nu folosiţi un nume de fişier care se termină cu spaţiu(i) alb, pot apărea probleme.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1932"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1943"/>
         <source>The teachers who are not qualified to teach a certain activity (in activities order):</source>
         <translation>Profesorii care nu sunt calificaţi pentru a preda o anume activitate (în ordinea activităţilor):</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1950"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1961"/>
         <source>For activity: %1</source>
         <translation>Pentru activitatea: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1955"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1966"/>
         <source>Teacher %1 is not qualified to teach subject %2.</source>
         <translation>Profesorul %1 nu este calificat să predea disciplina %2.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1962"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1973"/>
         <source>All the teachers are qualified to teach their activities.</source>
         <translation>Toţi profesorii sunt calificaţi să predea activităţile lor.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2047"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2058"/>
         <source>If you have many subgroups and you don&apos;t explicitly use them, it is recommended to use the three global settings: hide subgroups in combo boxes, hide subgroups in activity planning, and do not write subgroups timetables on hard disk.</source>
         <translation>Dacă aveţi multe subgrupuri şi nu le utilizaţi în mod explicit, este recomandat să folosiţi cele trei setări globale: ascunde subgrupurile în combo-box-uri, ascunde subgrupurile în planificarea activităţii, şi nu scrie orarele subgrupurilor pe discul fix.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2050"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2061"/>
         <source>Note that using the global menu setting to hide subgroups in activity planning is a different thing from the check box in the activity planning dialog, and the global setting works better and faster.</source>
         <translation>Notaţi că utilizarea setării globale din meniu pentru a ascunde subgrupurile în planificarea activităţii este un lucru diferit de check-box-ul din dialogul de planificare a activităţii, şi setarea globală funcţionează mai bine şi mai rapid.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2053"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2064"/>
         <source>If you hide subgroups in combo boxes, the affected dialogs (like the activities dialog or the add constraint students set not available times dialog) will load much faster if you have many subgroups.</source>
         <translation>Dacă ascundeţi subgrupurile în combo-box-uri, dialogurile afectate (cum ar fi dialogul activităţi sau adaugă constrângere set de studenţi timpi indisponibili) se vor încărca mult mai rapid dacă aveţi multe subgrupuri.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2058"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2069"/>
         <source>If you are only working on a timetable, and you do not need to publish it, you may want to disable writing some categories of timetables on the hard disk, for operativity (the generation speed is not affected, only the overhead to write the partial/complete timetables when stopping/finishing the simulation). The timetables taking the longest time are the subgroups, groups AND years ones.</source>
         <translation>Dacă doar lucraţi la un orar, şi nu aveţi nevoie să îl publicaţi, s-ar putea să doriţi să dezactivaţi scrierea câtorva categorii de orare pe discul fix, pentru operativitate (viteza de generare nu este afectată, doar durata scrierii orarelor parţiale/complete când opriţi/se termină simularea). Orarele care durează cel mai mult sunt cele ale subgrupurilor, grupurilor ŞI anilor.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2062"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2073"/>
         <source>(Also the conflicts timetable might take long to write, if the file is large.)</source>
         <translation>(De asemenea conflictele orarului pot dura mult până să fie scrise, dacă fişierul este mare.)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2064"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2075"/>
         <source>After that, you can re-enable writing of the timetables and re-generate.</source>
         <translation>După aceasta, puteţi re-activa scrierea orarului studenţilor pe disc, şi re-generaţi.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2067"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2078"/>
         <source>Show tool tips for constraints with tables: in the add/modify constraint dialogs which use tables, like the &apos;not available times&apos; ones, each table cell will have a tool tip to show the current day/hour (column/row name).</source>
         <translation>Arată &apos;tool tip&apos;-uri pentru constrângeri cu tabele: în dialogurile adaugă/modifică constrângeri care folosesc tabele, cum ar fi &apos;timpi indisponibili&apos;, fiecare celulă de tabel va avea o &apos;tool tip&apos; pentru a arăta ziua/ora curentă (numele coloanei/rândului).</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3920"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4035"/>
         <source>The geometry and any other saved settings of all the windows and dialogs will be reset to default</source>
         <translation>Geometria şi orice alte setări salvate ale tuturor ferestrelor şi dialogurilor vor fi resetate la valorile predefinite</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3920"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4035"/>
         <source>1</source>
         <translation>1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3923"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4038"/>
         <source>2</source>
         <translation>2</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3926"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4041"/>
         <source>3</source>
         <translation>3</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3930"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4045"/>
         <source>4</source>
         <translation>4</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3933"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4048"/>
         <source>Use colors in FET graphical user interface will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Foloseşte culori în interfaţa grafică FET va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3933"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4048"/>
         <source>5</source>
         <translation>5</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3937"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3958"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4052"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4073"/>
         <source>Language will be %1</source>
         <comment>%1 is the default language</comment>
         <translation>Limba va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3937"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3958"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4052"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4073"/>
         <source>6</source>
         <translation>6</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3962"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4077"/>
         <source>The list of recently used files will be cleared</source>
         <translation>Lista de fişiere recent utilizate va fi ştearsă</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3962"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4077"/>
         <source>7</source>
         <translation>7</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3965"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4080"/>
         <source>8</source>
         <translation>8</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3968"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4083"/>
         <source>9</source>
         <translation>9</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3971"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4086"/>
         <source>10</source>
         <translation>10</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3974"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4089"/>
         <source>11</source>
         <translation>11</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3977"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4092"/>
         <source>12</source>
         <translation>12</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3980"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4095"/>
         <source>13</source>
         <translation>13</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3983"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4098"/>
         <source>14</source>
         <translation>14</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3986"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4101"/>
         <source>Duplicate vertical headers to the right will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Copiază capetele de tabele verticale la dreapta va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3986"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4101"/>
         <source>15</source>
         <translation>15</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3989"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4104"/>
         <source>16</source>
         <translation>16</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3992"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4107"/>
         <source>17</source>
         <translation>17</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3995"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4110"/>
         <source>18</source>
         <translation>18</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3998"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4113"/>
         <source>19</source>
         <translation>19</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4001"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4116"/>
         <source>Warn if using not perfect constraints will be %1</source>
         <comment>%1 is true or false. This is a warning if user uses not perfect constraints</comment>
         <translation>Avertizează dacă foloseşte constrângeri care nu sunt perfecte va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4001"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4116"/>
         <source>20</source>
         <translation>20</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4004"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4119"/>
         <source>21</source>
         <translation>21</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4007"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4122"/>
         <source>22</source>
         <translation>22</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4012"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4127"/>
         <source>Confirm activity planning will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Confirmă planificare activităţii va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4012"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4127"/>
         <source>23</source>
         <translation>23</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4014"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4129"/>
         <source>Confirm spread activities over the week will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Confirmă distribuirea activităţilor de-a lungul săptămânii va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4014"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4129"/>
         <source>24</source>
         <translation>24</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4016"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4131"/>
         <source>Confirm remove redundant constraints will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Confirmă ştergerea constrângerilor redundante va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4016"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4131"/>
         <source>25</source>
         <translation>25</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4018"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4133"/>
         <source>26</source>
         <translation>26</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4022"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4137"/>
         <source>27</source>
         <translation>27</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4024"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4139"/>
         <source>28</source>
         <translation>28</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4028"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4143"/>
         <source>29</source>
         <translation>29</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4028"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4143"/>
         <source>Show subgroups in combo boxes will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Arată subgrupurile în combo-box-uri va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4030"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4145"/>
         <source>30</source>
         <translation>30</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4030"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4145"/>
         <source>Show subgroups in activity planning will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>Afişează subgrupurile în planificarea activităţii va fi %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4034"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4149"/>
         <source>31</source>
         <translation>31</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4034"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4149"/>
         <source>Write on disk the %1 timetable will be %2</source>
         <comment>%1 is a category of timetables, like conflicts, %2 is true or false</comment>
         <translation>Scrierea pe disc a orarului %1 va fi %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4035"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4150"/>
         <source>conflicts</source>
         <translation>conflicte</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4038"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4041"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4044"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4047"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4050"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4053"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4057"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4060"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4063"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4066"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4069"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4072"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4075"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4078"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4081"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4153"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4156"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4159"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4162"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4165"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4168"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4172"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4175"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4178"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4181"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4184"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4187"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4190"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4193"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4196"/>
         <source>Write on disk the %1 timetables will be %2</source>
         <comment>%1 is a category of timetables, like XML or subgroups timetables, %2 is true or false</comment>
         <translation>Scrierea pe disc a orarelor %1 va fi %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4039"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4154"/>
         <source>statistics</source>
         <translation>statistici</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4042"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4157"/>
         <source>XML</source>
         <translation>XML</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4038"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4153"/>
         <source>32</source>
         <translation>32</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4045"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4160"/>
         <source>days horizontal</source>
         <translation>zile orizontal</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4041"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4156"/>
         <source>33</source>
         <translation>33</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4048"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4163"/>
         <source>days vertical</source>
         <translation>zile vertical</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4044"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4159"/>
         <source>34</source>
         <translation>34</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4051"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4166"/>
         <source>time horizontal</source>
         <translation>timp orizontal</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4047"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4162"/>
         <source>35</source>
         <translation>35</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4054"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4169"/>
         <source>time vertical</source>
         <translation>timp vertical</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4050"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4165"/>
         <source>36</source>
         <translation>36</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4058"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4173"/>
         <source>subgroups</source>
         <translation>subgrupuri</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4053"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4168"/>
         <source>37</source>
         <translation>37</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4061"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4176"/>
         <source>groups</source>
         <translation>grupuri</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4057"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4172"/>
         <source>38</source>
         <translation>38</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4064"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4179"/>
         <source>years</source>
         <translation>ani</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4060"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4175"/>
         <source>39</source>
         <translation>39</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4067"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4182"/>
         <source>teachers</source>
         <translation>profesori</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4063"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4178"/>
         <source>40</source>
         <translation>40</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4070"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4185"/>
         <source>teachers free periods</source>
         <translation>perioade libere profesori</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4066"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4181"/>
         <source>41</source>
         <translation>41</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4073"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4188"/>
         <source>rooms</source>
         <translation>săli</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4069"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4184"/>
         <source>42</source>
         <translation>42</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4076"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4191"/>
         <source>subjects</source>
         <translation>discipline</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4072"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4187"/>
         <source>43</source>
         <translation>43</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4082"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4197"/>
         <source>activities</source>
         <translation>activităţi</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4590"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4705"/>
         <source>This kind of constraint is good, but only in the right case. Adding such constraints in the wrong circumstance may make your timetable solve too slow or even impossible.</source>
         <translation>Acest gen de constrângere este bun, dar doar în cazul potrivit. Dacă adăugaţi aşa constrângeri în cazurile greşite se poate să obţineţi un orar care se rezolvă prea greu sau chiar imposibil de rezolvat.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4593"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4708"/>
         <source>Please use such constraints only if you are sure that there exists a timetable with empty days for students. If your instution requires each day for the students to be not empty, or if there does not exist a solution with empty days for students, it is IMPERATIVE (for performance reasons) that you use the standard constraint which does not allow empty days. Otherwise, the timetable may be impossible to find.</source>
         <translation>Vă rugăm folosiţi acest gen de constrângeri doar dacă sunteţi sigur că există un orar cu zile libere pentru studenţi. Dacă instituţia dvs. cere ca fiecare zi pentru studenţi să nu fie goala, sau dacă nu există o soluţie cu zile libere pentru studenţi, este IMPERATIV (pentru motive de performanţă) să folosiţi constrângerea standard care nu permite zile libere. Altfel, orarul s-ar putea să fie imposibil de găsit.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="719"/>
+        <location filename="../src/interface/fetmainform.cpp" line="730"/>
         <source>Russian</source>
         <translation>Rusă</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="720"/>
+        <location filename="../src/interface/fetmainform.cpp" line="731"/>
         <source>Persian</source>
         <translation>Persană</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4437"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4552"/>
         <source>Choose results (output) directory</source>
         <translation>Alegeţi directorul de ieşire (rezultate)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4446"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4561"/>
         <source>You don&apos;t have write permissions in this directory</source>
         <translation>Nu aveţi permisiune de scriere în acest director</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2103"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2114"/>
         <source>Students&apos; statistics form contains a check box named &apos;%1&apos;. This has effect only if you have overlapping groups/years, and means that FET will show the complete tree structure, even if that means that some subgroups/groups will appear twice or more in the table, with the same information. For instance, if you have year Y1, groups G1 and G2, subgroups S1, S2, S3, with structure: Y1 (G1 (S1, S2), G2 (S1, S3)), S1 will appear twice in the table</source>
         <translation>Statisticile pentru studenţi conţin un check box numit &apos;%1&apos;. Aceasta are efect doar dacă aveţi grupuri/ani suprapuse şi înseamnă că FET va arăta structura completa a arborelui, chiar dacă aceasta înseamnă că unele subgrupuri/grupuri vor apărea de două sau mai multe ori în tabela, cu aceeaşi informaţie. De exemplu, dacă aveţi anul Y1, grupurile G1 şi G2, subgrupurile S1, S2, S3, cu structura: Y1 (G1 (S1, S2), G2 (S1, S3)), S1 va apărea de două ori în tabelă</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2107"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2118"/>
         <source>Show duplicates</source>
         <translation>Afişează duplicate</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3930"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3933"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3983"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3986"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3989"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3995"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3998"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4004"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4022"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4084"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4045"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4048"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4098"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4101"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4104"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4110"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4113"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4119"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4137"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4199"/>
         <source>false</source>
         <translation>fals</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4093"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4208"/>
         <source>FET confirmation</source>
         <translation>FET - confirmare</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1981"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1992"/>
         <source>Option &apos;Print activities with same starting time in timetables&apos;: selecting it means that the html timetables will contain for each slot all the activities which have the same starting time (fact specified by your constraints) as the activity(ies) which are normally shown in this slot. If you don&apos;t use constraints activities same starting time, this option has no effect for you.</source>
         <translation>Opţiunea &apos;Tipăreşte activităţile cu acelaşi timp de start în orare&apos;: selectarea înseamnă că orarele html vor conţine pentru fiecare slot toate activităţile care au acelaşi timp de start (fapt specificat de către constrângerile dvs.) ca activitatea(-ile) care sunt în mod normal afişate în acel slot. Dacă nu folosiţi constrângerile activităţi acelaşi timp de start, această opţiune nu are efect pentru dvs.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1974"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1985"/>
         <source>Option &apos;Divide html timetables with time-axis by days&apos;: This means simply that the html timetables of type &apos;time horizontal&apos; or &apos;time vertical&apos; (see the generated html timetables) should be or not divided according to the days.</source>
         <translation>Opţiunea &apos;Divide orarele html cu axa timp după zile&apos;: Aceasta înseamnă simplu că orarele html de tip „timp orizontal” sau „timp vertical” (vedeţi orarele html generate) trebuie sau nu să fie împărţite după zile.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1978"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1989"/>
         <source>If the &apos;time horizontal&apos; or &apos;time vertical&apos; html timetables are too large for you, then you might need to select this option</source>
         <translation>Dacă orarele html „timp orizontal” sau „timp vertical” sunt prea mari pentru dvs., atunci s-ar putea să aveţi nevoie să selectaţi această opţiune</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1972"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1983"/>
         <source>Probably some settings which are more difficult to understand are these ones:</source>
         <translation>Probabil câteva setări care sunt mai dificil de înţeles sunt acestea:</translation>
     </message>
@@ -30698,108 +32478,108 @@ Vă rog opriţi simularea înainte de aceasta.</translation>
         <translation>&amp;Ajutor</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1321"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1329"/>
         <source>&amp;New</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;New, &amp;Open, Open &amp;recent, &amp;Save, Save &amp;as, &amp;Quit, must be different</extracomment>
         <translation>&amp;Nou</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1324"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1332"/>
         <source>Ctrl+N</source>
         <extracomment>This is the shortcut for menu item File-&gt;New. It is recommended to translate with Ctrl+N, the same as original, or with Ctrl+other letter you prefer (do not make duplicates with other shortcuts). All shortcuts are: Ctrl+N (New), Ctrl+O (Open), Ctrl+S (Save), Ctrl+Q (Quit), Ctrl+G (Generate), Ctrl+P (Print). Please use the English keyboard modifiers name, for instance Ctrl, because otherwise the shortcuts do not work (so, even if your keyboard has another name for the Ctrl key, write &apos;Ctrl&apos;. It will work OK on all platforms. Even if you are on German keyboard, write &apos;Ctrl&apos; as in English). Maybe it would be good to translate with &apos;Ctrl+N&apos;, the same as the English original, to keep things standard.</extracomment>
         <translation>Ctrl+N</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1329"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1337"/>
         <source>&amp;Open...</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;New, &amp;Open, Open &amp;recent, &amp;Save, Save &amp;as, &amp;Quit, must be different</extracomment>
         <translation>&amp;Deschide...</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1332"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1340"/>
         <source>Ctrl+O</source>
         <extracomment>This is the shortcut for menu item File-&gt;Open. It is recommended to translate with Ctrl+O, the same as original, or with Ctrl+other letter you prefer (do not make duplicates with other shortcuts). All shortcuts are: Ctrl+N (New), Ctrl+O (Open), Ctrl+S (Save), Ctrl+Q (Quit), Ctrl+G (Generate), Ctrl+P (Print). Please use the English keyboard modifiers name, for instance Ctrl, because otherwise the shortcuts do not work (so, even if your keyboard has another name for the Ctrl key, write &apos;Ctrl&apos;. It will work OK on all platforms. Even if you are on German keyboard, write &apos;Ctrl&apos; as in English). Maybe it would be good to translate with &apos;Ctrl+O&apos;, the same as the English original, to keep things standard.</extracomment>
         <translation>Ctrl+O</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1337"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1345"/>
         <source>&amp;Save</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;New, &amp;Open, Open &amp;recent, &amp;Save, Save &amp;as, &amp;Quit, must be different</extracomment>
         <translation>&amp;Salvează</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1340"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1348"/>
         <source>Ctrl+S</source>
         <extracomment>This is the shortcut for menu item File-&gt;Save. It is recommended to translate with Ctrl+S, the same as original, or with Ctrl+other letter you prefer (do not make duplicates with other shortcuts). All shortcuts are: Ctrl+N (New), Ctrl+O (Open), Ctrl+S (Save), Ctrl+Q (Quit), Ctrl+G (Generate), Ctrl+P (Print). Please use the English keyboard modifiers name, for instance Ctrl, because otherwise the shortcuts do not work (so, even if your keyboard has another name for the Ctrl key, write &apos;Ctrl&apos;. It will work OK on all platforms. Even if you are on German keyboard, write &apos;Ctrl&apos; as in English). Maybe it would be good to translate with &apos;Ctrl+S&apos;, the same as the English original, to keep things standard.</extracomment>
         <translation>Ctrl+S</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="991"/>
-        <location filename="../src/interface/fetmainform_template.ui" line="1144"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1152"/>
         <source>Teachers</source>
         <translation>Profesori</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1377"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1385"/>
         <source>&amp;Teachers</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different</extracomment>
         <translation>&amp;Profesori</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1382"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1390"/>
         <source>&amp;Subjects</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different</extracomment>
         <translation>&amp;Discipline</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1392"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1400"/>
         <source>&amp;Groups</source>
         <extracomment>Accelerator key (letter after ampersand) must be different for &amp;Years, &amp;Groups, &amp;Subgroups</extracomment>
         <translation>&amp;Grupuri</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1402"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1410"/>
         <source>&amp;Activities</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different</extracomment>
         <translation>&amp;Activităţi</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1415"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1423"/>
         <source>View (&amp;students)</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Generate new, View (&amp;teachers), View (&amp;students), View (&amp;rooms), Show soft &amp;conflicts, &amp;Print, Generate &amp;multiple, must be different</extracomment>
         <translation>Vizualizare (&amp;studenţi)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1420"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1428"/>
         <source>View (&amp;teachers)</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Generate new, View (&amp;teachers), View (&amp;students), View (&amp;rooms), Show soft &amp;conflicts, &amp;Print, Generate &amp;multiple, must be different</extracomment>
         <translation>Vizualizare (&amp;profesori)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1430"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1438"/>
         <source>&amp;Days per week</source>
         <extracomment>Accelerators (letters after &amp; - ampersand) for &amp;Days per week and &amp;Hours (periods) per day must be different</extracomment>
         <translation>&amp;Zile pe săptămână</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1443"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1451"/>
         <source>&amp;Rooms</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different</extracomment>
         <translation>Să&amp;li</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1361"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1369"/>
         <source>Frequently asked questions</source>
         <translation>Întrebări frecvente</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1115"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1123"/>
         <source>Subjects</source>
         <translation>Discipline</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1047"/>
-        <location filename="../src/interface/fetmainform_template.ui" line="1105"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1055"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1113"/>
         <source>Activities</source>
         <translation>Activităţi</translation>
     </message>
@@ -30809,51 +32589,51 @@ Vă rog opriţi simularea înainte de aceasta.</translation>
         <translation>Constrângeri de timp</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1099"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1107"/>
         <source>Rooms</source>
         <translation>Săli</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1089"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1097"/>
         <source>Space constraints</source>
         <translation>Constrângeri de spaţiu</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1486"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1494"/>
         <source>Basic compulsory time constraints</source>
         <translation>Constrângeri de bază (timp)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1476"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1484"/>
         <source>All t&amp;ime constraints</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different</extracomment>
         <translation>Toate constrângerile de &amp;timp</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1544"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1552"/>
         <source>All s&amp;pace constraints</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different</extracomment>
         <translation>Toate constrângerile de spaţi&amp;u</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1574"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1582"/>
         <source>I&amp;nstitution name</source>
         <extracomment>Accelerators (letters after &amp; - ampersand) for I&amp;nstitution name and &amp;Comments must be different</extracomment>
         <translation>N&amp;umele instituţiei</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1579"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1587"/>
         <source>&amp;Comments</source>
         <extracomment>Accelerators (letters after &amp; - ampersand) for I&amp;nstitution name and &amp;Comments must be different</extracomment>
         <translation>&amp;Comentarii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1599"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1607"/>
         <source>Teachers statistics</source>
         <translation>Statistici pentru profesori</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1604"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1612"/>
         <source>Students statistics</source>
         <translation>Statistici pentru studenţi</translation>
     </message>
@@ -30863,201 +32643,201 @@ Vă rog opriţi simularea înainte de aceasta.</translation>
         <translation>Statistici</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1609"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1617"/>
         <source>Subjects statistics</source>
         <translation>Statistici pentru discipline</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1218"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1226"/>
         <source>Settings</source>
         <translation>Setări</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2031"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2079"/>
         <source>Language</source>
         <extracomment>Please translate in your language and also add the original English term, like: &apos;Idioma/Language&apos;. This is to ensure that people mistakingly selecting an unknown language do not become stuck with it (so that they can find this setting description also in English).</extracomment>
         <translation>Limbă/Language</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1655"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1663"/>
         <source>Search for updates on startup</source>
         <translation>Caută update pe internet la pornire</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1644"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1652"/>
         <source>Instructions</source>
         <translation>Instrucţiuni</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1387"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1395"/>
         <source>&amp;Years (forms, classes)</source>
         <extracomment>Accelerator key (letter after ampersand) must be different for &amp;Years, &amp;Groups, &amp;Subgroups</extracomment>
         <translation>&amp;Ani (forme, clase)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1407"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1415"/>
         <source>&amp;Generate new</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Generate new, View (&amp;teachers), View (&amp;students), View (&amp;rooms), Show soft &amp;conflicts, &amp;Print, Generate &amp;multiple, must be different</extracomment>
         <translation>&amp;Generează nou</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1685"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1693"/>
         <source>Restore default settings</source>
         <translation>Reface setări implicite</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1501"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1509"/>
         <source>Max days per week for a teacher</source>
         <translation>Max zile pe săptămână pentru un profesor</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1506"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1514"/>
         <source>Max hours daily for all teachers</source>
         <translation>Max ore zilnic pentru toţi profesorii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1549"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1557"/>
         <source>Basic compulsory space constraints</source>
         <translation>Constrângeri de bază (spaţiu)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1614"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1622"/>
         <source>Max gaps per week for all teachers</source>
         <translation>Max ferestre pe săptămână pentru toţi profesorii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1619"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1627"/>
         <source>Max gaps per week for a teacher</source>
         <translation>Max ferestre pe săptămână pentru un profesor</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1629"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1637"/>
         <source>Max hours daily for a teacher</source>
         <translation>Max ore zilnic pentru un profesor</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1634"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1642"/>
         <source>Max hours daily for a students set</source>
         <translation>Max ore zilnic pentru un set de studenţi</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1639"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1647"/>
         <source>Max hours daily for all students</source>
         <translation>Max ore zilnic pentru toţi studenţii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1660"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1668"/>
         <source>Min hours daily for all students</source>
         <translation>Min ore zilnic pentru toţi studenţii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1665"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1673"/>
         <source>Min hours daily for a students set</source>
         <translation>Min ore zilnic pentru un set de studenţi</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1680"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1688"/>
         <source>An activity ends students day</source>
         <translation>O activitate încheie ziua studenţilor</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1695"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1703"/>
         <source>Min hours daily for all teachers</source>
         <translation>Min ore zilnic pentru toţi profesorii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1700"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1708"/>
         <source>Min hours daily for a teacher</source>
         <translation>Min ore zilnic pentru un profesor</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1531"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1539"/>
         <source>A set of activities are not overlapping</source>
         <translation>Un set de activităţi nu se suprapun</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1461"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1469"/>
         <source>A set of activities has same starting time (day+hour)</source>
         <translation>Un set de activităţi are acelaşi timp de start (zi+ora)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1564"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1572"/>
         <source>A set of activities has same starting hour (any days)</source>
         <translation>Un set de activităţi are aceeaşi oră de început (orice zile)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1435"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1443"/>
         <source>&amp;Hours (periods) per day</source>
         <extracomment>Accelerators (letters after &amp; - ampersand) for &amp;Days per week and &amp;Hours (periods) per day must be different</extracomment>
         <translation>&amp;Ore (perioade) pe zi</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1559"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1567"/>
         <source>An activity has a preferred room</source>
         <translation>O activitate are o sală preferată</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1584"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1592"/>
         <source>An activity has a set of preferred rooms</source>
         <translation>O activitate are un set de săli preferate</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1725"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1773"/>
         <source>A subject has a preferred room</source>
         <translation>O disciplină are o sală preferată</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1730"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1778"/>
         <source>A subject has a set of preferred rooms</source>
         <translation>O disciplină are un set de săli preferate</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1705"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1713"/>
         <source>Help on statistics</source>
         <translation>Ajutor la statistici</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1690"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1698"/>
         <source>HTML level for generated timetables</source>
         <translation>Nivelul HTML pentru orarele generate</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1516"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1524"/>
         <source>Max gaps per week for a students set</source>
         <translation>Max ferestre pe săptămână pentru un set de studenţi</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1521"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1529"/>
         <source>Max gaps per week for all students</source>
         <translation>Max ferestre pe săptămână pentru toţi studenţii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1526"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1534"/>
         <source>All students begin early (max beginnings at second hour)</source>
         <translation>Toţi studenţii încep devreme (max începeri la ora a doua)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1159"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1167"/>
         <source>Activity tags</source>
         <translation>Etichete activitate</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1624"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1632"/>
         <source>A students set begins early (max beginnings at second hour)</source>
         <translation>Un set de studenţi începe devreme (max începeri la ora a doua)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1710"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1718"/>
         <source>Max gaps per day for all teachers</source>
         <translation>Max ferestre pe zi pentru toţi profesorii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1715"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1723"/>
         <source>Max gaps per day for a teacher</source>
         <translation>Max ferestre pe zi pentru un profesor</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1240"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1248"/>
         <source>Interface</source>
         <translation>Interfaţă</translation>
     </message>
@@ -31068,43 +32848,43 @@ Vă rog opriţi simularea înainte de aceasta.</translation>
         <translation>Online</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1253"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1261"/>
         <source>Timetables</source>
         <translation>Orare</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1410"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1418"/>
         <source>Ctrl+G</source>
         <extracomment>This is the shortcut for menu item Timetable-&gt;Generate. It is recommended to translate with Ctrl+G, the same as original, or with Ctrl+other letter you prefer (do not make duplicates with other shortcuts). All shortcuts are: Ctrl+N (New), Ctrl+O (Open), Ctrl+S (Save), Ctrl+Q (Quit), Ctrl+G (Generate), Ctrl+P (Print). Please use the English keyboard modifiers name, for instance Ctrl, because otherwise the shortcuts do not work (so, even if your keyboard has another name for the Ctrl key, write &apos;Ctrl&apos;. It will work OK on all platforms. Even if you are on German keyboard, write &apos;Ctrl&apos; as in English). Maybe it would be good to translate with &apos;Ctrl+G&apos;, the same as the English original, to keep things standard.</extracomment>
         <translation>Ctrl+G</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1481"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1489"/>
         <source>A teacher&apos;s not available times</source>
         <translation>Timpi indisponibili pentru un profesor</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1491"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1499"/>
         <source>A students set&apos;s not available times</source>
         <translation>Timpi indisponibili pentru un set de studenţi</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1496"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1504"/>
         <source>Break times (all teachers+all students not available)</source>
         <translation>Timpi pauză (toţi profesorii+toţi studenţii indisponibili)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1554"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1562"/>
         <source>A room&apos;s not available times</source>
         <translation>Timpi indisponibili pentru o sală</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1589"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1597"/>
         <source>A set of students has a home room</source>
         <translation>Un set de studenţi are o sală proprie</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1594"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1602"/>
         <source>A set of students has a set of home rooms</source>
         <translation>Un set de studenţi are un set de săli proprii</translation>
     </message>
@@ -31120,193 +32900,193 @@ Vă rog opriţi simularea înainte de aceasta.</translation>
         <translation>Blocări</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1345"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1353"/>
         <source>Save &amp;as...</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;New, &amp;Open, Open &amp;recent, &amp;Save, Save &amp;as, &amp;Quit, must be different</extracomment>
         <translation>Salvează &amp;ca...</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1735"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1783"/>
         <source>A subject+an activity tag have a preferred room</source>
         <translation>O disciplină+o etichetă activitate au o sală preferată</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1740"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1788"/>
         <source>A subject+an activity tag have a set of preferred rooms</source>
         <translation>O disciplină+o etichetă activitate au un set de săli preferate</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1745"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1793"/>
         <source>A teacher has a home room</source>
         <translation>Un profesor are o sală proprie</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1750"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1798"/>
         <source>A teacher has a set of home rooms</source>
         <translation>Un profesor are un set de săli proprii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1755"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1803"/>
         <source>Max building changes per day for a students set</source>
         <translation>Max schimbări de clădire pe zi pentru un set de studenţi</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1760"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1808"/>
         <source>Max building changes per day for all students</source>
         <translation>Max schimbări de clădire pe zi pentru toţi studenţii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1765"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1813"/>
         <source>Max building changes per week for a students set</source>
         <translation>Max schimbări de clădire pe săptămână pentru un set de studenţi</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1770"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1818"/>
         <source>Max building changes per week for all students</source>
         <translation>Max schimbări de clădire pe săptămână pentru toţi studenţii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1775"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1823"/>
         <source>Min gaps between building changes for a students set</source>
         <translation>Min ferestre între schimbări de clădiri pentru un set de studenţi</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1780"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1828"/>
         <source>Min gaps between building changes for all students</source>
         <translation>Min ferestre între schimbări de clădiri pentru toţi studenţii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1785"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1833"/>
         <source>Max building changes per day for a teacher</source>
         <translation>Max schimbări de clădire pe zi pentru un profesor</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1790"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1838"/>
         <source>Max building changes per day for all teachers</source>
         <translation>Max schimbări de clădire pe zi pentru toţi profesorii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1795"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1843"/>
         <source>Max building changes per week for a teacher</source>
         <translation>Max schimbări de clădire pe săptămână pentru un profesor</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1800"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1848"/>
         <source>Max building changes per week for all teachers</source>
         <translation>Max schimbări de clădire pe săptămână pentru toţi profesorii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1805"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1853"/>
         <source>Min gaps between building changes for a teacher</source>
         <translation>Min ferestre între schimbări de clădire pentru un profesor</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1810"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1858"/>
         <source>Min gaps between building changes for all teachers</source>
         <translation>Min ferestre între schimbări de clădire pentru toţi profesorii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1815"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1863"/>
         <source>A set of activities has same starting day (any hours)</source>
         <translation>Un set de activităţi are aceeaşi zi de start (orice ore)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2026"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2074"/>
         <source>&amp;Modify subactivities</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different</extracomment>
         <translation>&amp;Modifică subactivităţi</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2093"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2141"/>
         <source>Min days per week for a teacher</source>
         <translation>Min zile pe săptămână pentru un profesor</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2098"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2146"/>
         <source>Min days per week for all teachers</source>
         <translation>Min zile pe săptămână pentru toţi profesorii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2103"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2151"/>
         <source>Seed of random number generator</source>
         <translation>Starea generatorului de numere aleatoare</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2114"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2162"/>
         <source>Use colors in interface</source>
         <translation>Foloseşte culori în interfaţa</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2122"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2170"/>
         <source>Max hours daily with an activity tag for a teacher</source>
         <translation>Max ore zilnic cu o etichetă activitate pentru un profesor</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2130"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2178"/>
         <source>Max hours daily with an activity tag for all teachers</source>
         <translation>Max ore zilnic cu o etichetă activitate pentru toţi profesorii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2138"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2186"/>
         <source>Max hours daily with an activity tag for a students set</source>
         <translation>Max ore zilnic cu o etichetă activitate pentru un set de studenţi</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2146"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2194"/>
         <source>Max hours daily with an activity tag for all students</source>
         <translation>Max ore zilnic cu o etichetă activitate pentru toţi studenţii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2154"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2202"/>
         <source>Max gaps per day for a students set</source>
         <translation>Max ferestre pe zi pentru un set de studenţi</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2162"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2210"/>
         <source>Max gaps per day for all students</source>
         <translation>Max ferestre pe zi pentru toţi studenţii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2173"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2221"/>
         <source>Enable students max gaps per day</source>
         <translation>Activează studenţi max ferestre pe zi</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2184"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2232"/>
         <source>Enable activity tag max hours daily</source>
         <translation>Activează etichetă activitate max ore zilnic</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2195"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2243"/>
         <source>Warn if using not perfect constraints</source>
         <extracomment>This is an option, which can be selected or deselected. It means warn before generating, if user uses not perfect constraints</extracomment>
         <translation>Avertizează dacă sunt folosite constrângeri imperfecte</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2203"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2251"/>
         <source>Help contents</source>
         <extracomment>menu Help-&gt;Online-&gt;Help contents, opens the webpage of FET documentation</extracomment>
         <translation>Conţinut ajutor</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2213"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2261"/>
         <source>Web addresses</source>
         <extracomment>menu Help-&gt;Online-&gt;Web addresses, shows the web addresses of FET homepage, documentation and forum</extracomment>
         <translation>Adrese web</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2218"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2266"/>
         <source>Homepage</source>
         <extracomment>menu Help-&gt;Online-&gt;Homepage, opens the homepage of FET</extracomment>
         <translation>Pagină de start</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2229"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2277"/>
         <source>Show shortcut buttons in main window</source>
         <translation>Afişează butoane scurtătură în fereastra principală</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2208"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2256"/>
         <source>Forum</source>
         <extracomment>menu Help-&gt;Forum, opens the webpage of FET forum</extracomment>
         <translation>Forum</translation>
@@ -31330,57 +33110,57 @@ Vă rog opriţi simularea înainte de aceasta.</translation>
         <translation>Pauză</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1830"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1878"/>
         <source>Max hours continuously for all teachers</source>
         <translation>Max ore continuu pentru toţi profesorii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1835"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1883"/>
         <source>Max hours continuously for a teacher</source>
         <translation>Max ore continuu pentru un profesor</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1840"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1888"/>
         <source>Max hours continuously for a students set</source>
         <translation>Max ore continuu pentru un set de studenţi</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1845"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1893"/>
         <source>Max hours continuously for all students</source>
         <translation>Max ore continuu pentru toţi studenţii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1850"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1898"/>
         <source>Important tips</source>
         <translation>Sfaturi importante</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1511"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1519"/>
         <source>An activity has a preferred starting time</source>
         <translation>O activitate are un timp de start preferat</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1855"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1903"/>
         <source>A set of activities has a set of preferred starting times</source>
         <translation>Un set de activităţi are un set de timpi de start preferaţi</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1865"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1913"/>
         <source>An activity has a set of preferred starting times</source>
         <translation>O activitate are un set de timpi de start preferaţi</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1456"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1464"/>
         <source>A set of activities has a set of preferred time slots</source>
         <translation>Un set de activităţi are un set de sloturi de timp preferate</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1860"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1908"/>
         <source>An activity has a set of preferred time slots</source>
         <translation>O activitate are un set de sloturi de timp preferate</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1870"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1918"/>
         <source>Min gaps (hours) between a set of activities</source>
         <translation>Min ferestre (ore) între un set de activităţi</translation>
     </message>
@@ -31401,12 +33181,12 @@ Vă rog opriţi simularea înainte de aceasta.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="984"/>
-        <location filename="../src/interface/fetmainform_template.ui" line="1093"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1101"/>
         <source>Miscellaneous</source>
         <translation>Diverse</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1122"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1130"/>
         <source>Subjects and activity tags</source>
         <translation>Discipline şi etichete activitate</translation>
     </message>
@@ -31557,337 +33337,377 @@ Vă rog opriţi simularea înainte de aceasta.</translation>
         <translation>Deschide &amp;recent</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1175"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1183"/>
         <source>Stu&amp;dents</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different</extracomment>
         <translation>&amp;Studenţi</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1273"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1281"/>
         <source>Confirmations</source>
         <comment>This is a submenu, contains these settings: if a user wants to deactivate/activate a confirmation (instructions) dialog that appears before an advanced dialog</comment>
         <translation>Confirmări</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1353"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1361"/>
         <source>&amp;Quit</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;New, &amp;Open, Open &amp;recent, &amp;Save, Save &amp;as, &amp;Quit, must be different</extracomment>
         <translation>&amp;Închide programul</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1356"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1364"/>
         <source>Ctrl+Q</source>
         <extracomment>This is the shortcut for menu item File-&gt;Quit. It is recommended to translate with Ctrl+Q, the same as original, or with Ctrl+other letter you prefer (do not make duplicates with other shortcuts). All shortcuts are: Ctrl+N (New), Ctrl+O (Open), Ctrl+S (Save), Ctrl+Q (Quit), Ctrl+G (Generate), Ctrl+P (Print). Please use the English keyboard modifiers name, for instance Ctrl, because otherwise the shortcuts do not work (so, even if your keyboard has another name for the Ctrl key, write &apos;Ctrl&apos;. It will work OK on all platforms. Even if you are on German keyboard, write &apos;Ctrl&apos; as in English). Maybe it would be good to translate with &apos;Ctrl+Q&apos;, the same as the English original, to keep things standard.</extracomment>
         <translation>Ctrl+Q</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1369"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1377"/>
         <source>About...</source>
         <translation>Despre...</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1397"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1405"/>
         <source>&amp;Subgroups</source>
         <extracomment>Accelerator key (letter after ampersand) must be different for &amp;Years, &amp;Groups, &amp;Subgroups</extracomment>
         <translation>&amp;Subgrupuri</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1425"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1433"/>
         <source>Show soft &amp;conflicts</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Generate new, View (&amp;teachers), View (&amp;students), View (&amp;rooms), Show soft &amp;conflicts, &amp;Print, Generate &amp;multiple, must be different</extracomment>
         <translation>Vizualizare &amp;conflicte uşoare</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1451"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1459"/>
         <source>View (&amp;rooms)</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Generate new, View (&amp;teachers), View (&amp;students), View (&amp;rooms), Show soft &amp;conflicts, &amp;Print, Generate &amp;multiple, must be different</extracomment>
         <translation>Vizualizare (să&amp;li)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1466"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1474"/>
         <source>A set of activities occupies max time slots from selection</source>
         <extracomment>It refers to a time constraint. It means: user chooses a set of activities, a set of time slots and a maximum number of slots from those selected which can be occupied by the selected activities</extracomment>
         <translation>Un set de activităţi ocupă max sloturi de timp din selecţie</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1471"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1479"/>
         <source>Max simultaneous activities from a set in selected time slots</source>
         <extracomment>It refers to a time constraint. It means: user chooses a set of activities, a set of time slots and a maximum number of activities from those selected which can be simultaneous in each selected time slot</extracomment>
         <translation>Max activităţi dintr-un set simultane în sloturi de timp selectate</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1569"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1577"/>
         <source>Activity ta&amp;gs</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different</extracomment>
         <translation>&amp;Etichete activitate</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1670"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1678"/>
         <source>Generate &amp;multiple</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Generate new, View (&amp;teachers), View (&amp;students), View (&amp;rooms), Show soft &amp;conflicts, &amp;Print, Generate &amp;multiple, must be different</extracomment>
         <translation>Generează &amp;multiple</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1720"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1728"/>
+        <source>Max span per day for a teacher</source>
+        <translation>Max întindere pe zi pentru un profesor</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform_template.ui" line="1733"/>
+        <source>Max span per day for all teachers</source>
+        <translation>Max întindere pe zi pentru toţi profesorii</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform_template.ui" line="1738"/>
+        <source>Max span per day for a students set</source>
+        <translation>Max întindere pe zi pentru un set de studenţi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform_template.ui" line="1743"/>
+        <source>Max span per day for all students</source>
+        <translation>Max întindere pe zi pentru toţi studenţii</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform_template.ui" line="1748"/>
+        <source>Min resting hours for a teacher</source>
+        <translation>Min ore de odihnă pentru un profesor</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform_template.ui" line="1753"/>
+        <source>Min resting hours for all teachers</source>
+        <translation>Min ore de odihnă pentru toţi profesorii</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform_template.ui" line="1758"/>
+        <source>Min resting hours for a students set</source>
+        <translation>Min ore de odihnă pentru un set de studenţi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform_template.ui" line="1763"/>
+        <source>Min resting hours for all students</source>
+        <translation>Min ore de odihnă pentru toţi studenţii</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform_template.ui" line="1768"/>
         <source>&amp;Buildings</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different</extracomment>
         <translation>&amp;Clădiri</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1820"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1868"/>
         <source>Save data and timetable as...</source>
         <translation>Salvează datele şi orarul ca...</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1875"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1923"/>
         <source>Export comma separated values (text)</source>
         <translation>Exportă valori separate prin virgula (text)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1880"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1928"/>
         <source>Import activities from CSV file</source>
         <translation>Importă activităţi din fişier CSV</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1885"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1933"/>
         <source>Import activity tags from CSV file</source>
         <translation>Importă etichete activitate din fişier CSV</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1890"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1938"/>
         <source>Import rooms and buildings from CSV file</source>
         <translation>Importă săli şi clădiri din fişier CSV</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1895"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1943"/>
         <source>Import subjects from CSV file</source>
         <translation>Importă discipline din fişier CSV</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1900"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1948"/>
         <source>Import teachers from CSV file</source>
         <translation>Importă profesori din fişier CSV</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1905"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1953"/>
         <source>Import years, groups and subgroups from CSV file</source>
         <translation>Importă ani, grupuri şi subgrupuri din fişier CSV</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1910"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1958"/>
         <source>A set of subactivities has a set of preferred time slots</source>
         <translation>Un set de subactivităţi are un set de sloturi de timp preferate</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1915"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1963"/>
         <source>A set of subactivities has a set of preferred starting times</source>
         <translation>Un set de subactivităţi are un set de timpi de start preferaţi</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1920"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1968"/>
         <source>A teacher works in an hourly interval max days per week</source>
         <translation>Un profesor lucrează într-un interval orar max zile pe săptămână</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1925"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1973"/>
         <source>All teachers work in an hourly interval max days per week</source>
         <translation>Toţi profesorii lucrează într-un interval orar max zile pe săptămână</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1930"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1978"/>
         <source>A students set works in an hourly interval max days per week</source>
         <translation>Un set de studenţi lucrează într-un interval orar max zile pe săptămână</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1935"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1983"/>
         <source>All students work in an hourly interval max days per week</source>
         <translation>Toţi studenţii lucrează într-un interval orar max zile pe săptămână</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1940"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1988"/>
         <source>A set of activities end students day</source>
         <translation>Un set de activităţi încheie ziua studenţilor</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2240"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2288"/>
         <source>Mark break slots with -X- in timetables</source>
         <comment>It means to show or not the slots which are break slots, in the timetable, with an -X-. Uppercase -X-</comment>
         <translation>Marchează sloturile de pauză cu -X- în orare</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2251"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2299"/>
         <source>Enable students min hours daily with empty days</source>
         <translation>Activează studenţi min ore zilnic cu zile libere</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2262"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2310"/>
         <source>Warn if using students min hours daily with empty days</source>
         <translation>Avertizează dacă folosiţi studenţi min ore zilnic cu zile libere</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2267"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2315"/>
         <source>Activity planning</source>
         <translation>Planificarea activităţii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2278"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2326"/>
         <source>Confirm activity planning</source>
         <comment>This is a setting - a check box: if a user wants to deactivate/activate the confirmation (instructions) dialog that appears before activity planning dialog</comment>
         <translation>Confirmă planificarea activităţii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2289"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2337"/>
         <source>Confirm spread activities over the week</source>
         <comment>This is a setting - a check box: if a user wants to deactivate/activate the confirmation (instructions) dialog that appears before spreading the activities over the week dialog</comment>
         <translation>Confirmă distribuirea activităţilor de-a lungul săptămânii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2300"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2348"/>
         <source>Confirm remove redundant constraints</source>
         <comment>This is a setting - a check box: if a user wants to deactivate/activate the confirmation (instructions) dialog that appears before removing redundant constraints dialog</comment>
         <translation>Confirmă ştergerea constrângerilor redundante</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2311"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2359"/>
         <source>Confirm save data and timetable as</source>
         <translation>Confirmă salvarea datelor şi a orarului ca</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2316"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2364"/>
         <source>&amp;Clear list</source>
         <extracomment>It means clearing the list of recently opened files</extracomment>
         <translation>&amp;Şterge listă</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2321"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2369"/>
         <source>Activities rooms statistics</source>
         <extracomment>It refers to the statistics of each activity&apos;s possible room(s)</extracomment>
         <translation>Statistici activităţi săli</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2326"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2374"/>
         <source>&amp;Print</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Generate new, View (&amp;teachers), View (&amp;students), View (&amp;rooms), Show soft &amp;conflicts, &amp;Print, Generate &amp;multiple, must be different</extracomment>
         <translation>&amp;Tipăreşte</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2329"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2377"/>
         <source>Ctrl+P</source>
         <extracomment>This is the shortcut for menu item Timetable-&gt;Print. It is recommended to translate with Ctrl+P, the same as original, or with Ctrl+other letter you prefer (do not make duplicates with other shortcuts). All shortcuts are: Ctrl+N (New), Ctrl+O (Open), Ctrl+S (Save), Ctrl+Q (Quit), Ctrl+G (Generate), Ctrl+P (Print). Please use the English keyboard modifiers name, for instance Ctrl, because otherwise the shortcuts do not work (so, even if your keyboard has another name for the Ctrl key, write &apos;Ctrl&apos;. It will work OK on all platforms. Even if you are on German keyboard, write &apos;Ctrl&apos; as in English). Maybe it would be good to translate with &apos;Ctrl+P&apos;, the same as the English original, to keep things standard.</extracomment>
         <translation>Ctrl+P</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2334"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2382"/>
         <source>A set of activities occupies max different rooms</source>
         <translation>Un set de activităţi ocupă max săli diferite</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2339"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2387"/>
         <source>A set of activities are in the same room if they are consecutive</source>
         <translation>Un set de activităţi sunt în aceeaşi sală dacă sunt consecutive</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2344"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2392"/>
         <source>Max days per week for a students set</source>
         <translation>Max zile pe săptămână pentru un set de studenţi</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2349"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2397"/>
         <source>Max days per week for all students</source>
         <translation>Max zile pe săptămână pentru toţi studenţii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2360"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2408"/>
         <source>Print activity tags in timetables</source>
         <translation>Tipăreşte etichetele activitate în orare</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2365"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2413"/>
         <source>Print advanced statistics</source>
         <translation>Tipăreşte statistici avansate</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2376"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2424"/>
         <source>Duplicate vertical headers to the right</source>
         <translation>Copiază capetele de tabele verticale la dreapta</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2381"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2429"/>
         <source>Group activities in the initial order of generation</source>
         <translation>Grupează activităţile în ordinea iniţială a generării</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2392"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2440"/>
         <source>Enable group activities in initial order</source>
         <translation>Activează grupează activităţile în ordinea iniţială</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2403"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2451"/>
         <source>Warn if using group activities in initial order</source>
         <translation>Avertizează dacă folosiţi grupează activităţile în ordinea iniţială</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2414"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2462"/>
         <source>Show subgroups in combo boxes</source>
         <translation>Arată subgrupurile în combo-box-uri</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2425"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2473"/>
         <source>Show subgroups in activity planning</source>
         <translation>Arată subgrupurile în planificarea activităţii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2452"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2500"/>
         <source>Categories of timetables to be written on disk</source>
         <comment>It means that the user selects the categories of timetables to be written on disk after the generation (soft conflicts, XML, days horizontal, time vertical, subgroups, teachers, etc.)</comment>
         <translation>Categoriile de orare care vor fi scrise pe disc</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2463"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2511"/>
         <source>Print detailed timetables</source>
         <translation>Tipăreşte orare detaliate</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2474"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2522"/>
         <source>Print detailed teachers&apos; free periods timetables</source>
         <translation>Tipăreşte orare detaliate pentru perioadele libere ale profesorilor</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2479"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2527"/>
         <source>Teachers subjects qualifications statistics</source>
         <comment>It means the statistics for the teachers - check the teacher&apos;s subject qualification</comment>
         <translation>Statistici calificări profesori discipline</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2436"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2484"/>
         <source>Show tool tips for constraints with tables</source>
         <translation>Arată &apos;tool tip&apos;-uri pentru constrângeri cu tabele</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2447"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2495"/>
         <source>Warn subgroups with the same activities</source>
         <translation>Avertizează subgrupurile cu aceleaşi activităţi</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="444"/>
         <location filename="../src/interface/fetmainform_template.ui" line="747"/>
-        <location filename="../src/interface/fetmainform_template.ui" line="1222"/>
-        <location filename="../src/interface/fetmainform_template.ui" line="1300"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1230"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1308"/>
         <source>Advanced</source>
         <translation>Avansat</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1956"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2004"/>
         <source>Spread the activities evenly over the week</source>
         <translation>Distribuie activităţile uniform de-a lungul săptămânii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1961"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2009"/>
         <source>Export advanced statistics to disk</source>
         <translation>Exportă statistici avansate pe disc</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1966"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2014"/>
         <source>Remove redundant constraints</source>
         <translation>Şterge constrângerile redundante</translation>
     </message>
@@ -31903,74 +33723,74 @@ Vă rog opriţi simularea înainte de aceasta.</translation>
         <translation>Conflicte</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1951"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1999"/>
         <source>Mark not available slots with -x- in timetables</source>
         <comment>It means to mark the slots which are not available in the timetable. Lowercase -x-</comment>
         <translation>Marchează sloturile indisponibile cu -x- în orare</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1976"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2024"/>
         <source>Lock all activities of a specified day</source>
         <translation>Blochează toate activităţile dintr-o zi specificată</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1981"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2029"/>
         <source>Unlock all activities of a specified day</source>
         <translation>Deblochează toate activităţile dintr-o zi specificată</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1986"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2034"/>
         <source>Lock all activities which end students day</source>
         <translation>Blochează toate activităţile care încheie ziua studenţilor</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1991"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2039"/>
         <source>Unlock all activities which end students day</source>
         <translation>Deblochează toate activităţile care încheie ziua studenţilor</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1996"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2044"/>
         <source>Lock all activities of the current timetable</source>
         <translation>Blochează toate activităţile din orarul curent</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2001"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2049"/>
         <source>Unlock all activities of the current timetable</source>
         <translation>Deblochează toate activităţile din orarul curent</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2006"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2054"/>
         <source>Max hours continuously with an activity tag for a students set</source>
         <translation>Max ore continuu cu o etichetă activitate pentru un set de studenţi</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2011"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2059"/>
         <source>Max hours continuously with an activity tag for all students</source>
         <translation>Max ore continuu cu o etichetă activitate pentru toţi studenţii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2016"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2064"/>
         <source>Max hours continuously with an activity tag for a teacher</source>
         <translation>Max ore continuu cu o etichetă activitate pentru un profesor</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2021"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2069"/>
         <source>Max hours continuously with an activity tag for all teachers</source>
         <translation>Max ore continuu cu o etichetă activitate pentru toţi profesorii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1183"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1191"/>
         <source>Institution information</source>
         <translation>Informaţii instituţie</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1190"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1198"/>
         <source>Days and hours</source>
         <translation>Zile şi ore</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1019"/>
-        <location filename="../src/interface/fetmainform_template.ui" line="1129"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1023"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1137"/>
         <source>Students</source>
         <translation>Studenţi</translation>
     </message>
@@ -31981,67 +33801,67 @@ Vă rog opriţi simularea înainte de aceasta.</translation>
         <translation>Multiple</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2042"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2090"/>
         <source>Divide HTML timetables with time-axis by days</source>
         <translation>Divide orarele HTML cu axa-timp după zile</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2047"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2095"/>
         <source>Help on settings</source>
         <translation>Ajutor la setări</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2052"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2100"/>
         <source>An activity tag has a preferred room</source>
         <translation>O etichetă activitate are o sală preferată</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2057"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2105"/>
         <source>An activity tag has a set of preferred rooms</source>
         <translation>O etichetă activitate are un set de săli preferate</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2062"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2110"/>
         <source>Select output directory</source>
         <translation>Selectaţi directorul de ieşire</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2067"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2115"/>
         <source>Max days per week for all teachers</source>
         <translation>Max zile pe săptămână pentru toţi profesorii</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2078"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2126"/>
         <source>Print activities with same starting time in timetables</source>
         <translation>Tipăreşte activităţile cu acelaşi timp de început în orare</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2088"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2136"/>
         <source>Max days between a set of activities</source>
         <translation>Max zile între un set de activităţi</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1675"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1683"/>
         <source>Two activities are consecutive</source>
         <translation>Două activităţi sunt consecutive</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1825"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1873"/>
         <source>Two activities are ordered</source>
         <translation>Două activităţi sunt ordonate</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1971"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2019"/>
         <source>Two activities are grouped</source>
         <translation>Două activităţi sunt grupate</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2083"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2131"/>
         <source>Three activities are grouped</source>
         <translation>Trei activităţi sunt grupate</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1536"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1544"/>
         <source>Min days between a set of activities</source>
         <translation>Min zile între un set de activităţi</translation>
     </message>
@@ -32116,7 +33936,7 @@ Vă rog opriţi simularea înainte de aceasta.</translation>
 <context>
     <name>Generate</name>
     <message>
-        <location filename="../src/engine/generate.cpp" line="3114"/>
+        <location filename="../src/engine/generate.cpp" line="3195"/>
         <source>At time %1 h %2 m %3 s, FET reached %4 activities placed</source>
         <comment>h=hours, m=minutes, s=seconds. Please leave spaces between &apos;time&apos;, %1, h, %2, m, %3, s, so they are visible</comment>
         <translation>La timpul %1 h %2 m %3 s, FET a ajuns la %4 activităţi plasate</translation>
@@ -32167,446 +33987,498 @@ Vă rog opriţi simularea înainte de aceasta.</translation>
 <context>
     <name>GeneratePreTranslate</name>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="515"/>
-        <location filename="../src/engine/generate_pre.cpp" line="879"/>
-        <location filename="../src/engine/generate_pre.cpp" line="883"/>
-        <location filename="../src/engine/generate_pre.cpp" line="902"/>
-        <location filename="../src/engine/generate_pre.cpp" line="906"/>
-        <location filename="../src/engine/generate_pre.cpp" line="925"/>
-        <location filename="../src/engine/generate_pre.cpp" line="929"/>
-        <location filename="../src/engine/generate_pre.cpp" line="984"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1035"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1110"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1173"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1228"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1279"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1314"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1332"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1417"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1498"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1550"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1640"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1721"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1762"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1782"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1803"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1823"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1846"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1872"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1899"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1920"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1941"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1961"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1984"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2010"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2051"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2066"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2085"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2101"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2138"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2174"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2203"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2222"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2241"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2259"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2335"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2398"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2473"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2536"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2589"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2636"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2671"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2689"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2774"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2855"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2907"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2997"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3078"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3123"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3140"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3166"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3182"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3209"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3227"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3263"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3279"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3305"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3320"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3347"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3367"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3392"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3442"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3525"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3543"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3645"/>
+        <location filename="../src/engine/generate_pre.cpp" line="534"/>
+        <location filename="../src/engine/generate_pre.cpp" line="915"/>
+        <location filename="../src/engine/generate_pre.cpp" line="919"/>
+        <location filename="../src/engine/generate_pre.cpp" line="938"/>
+        <location filename="../src/engine/generate_pre.cpp" line="942"/>
+        <location filename="../src/engine/generate_pre.cpp" line="961"/>
+        <location filename="../src/engine/generate_pre.cpp" line="965"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1020"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1071"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1146"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1209"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1239"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1255"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1345"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1400"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1451"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1486"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1504"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1589"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1670"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1722"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1812"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1893"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1934"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1954"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1975"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1995"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2018"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2044"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2071"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2092"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2113"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2133"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2156"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2182"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2223"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2238"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2257"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2273"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2310"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2346"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2375"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2394"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2413"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2431"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2507"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2570"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2645"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2708"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2738"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2754"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2843"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2896"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2943"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2978"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2996"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3081"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3162"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3214"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3304"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3385"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3430"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3447"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3473"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3489"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3516"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3534"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3570"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3586"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3612"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3627"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3654"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3674"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3699"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3749"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3782"/>
         <location filename="../src/engine/generate_pre.cpp" line="3796"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3819"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3841"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3832"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3845"/>
         <location filename="../src/engine/generate_pre.cpp" line="3908"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3936"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3953"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3982"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4012"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4047"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4064"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4093"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4123"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4163"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4186"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4208"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4275"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4302"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4340"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4407"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4433"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4557"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3922"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3960"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3973"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4086"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4104"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4206"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4357"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4380"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4402"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4469"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4497"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4514"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4543"/>
         <location filename="../src/engine/generate_pre.cpp" line="4573"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4629"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4701"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4798"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4844"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4887"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4936"/>
-        <location filename="../src/engine/generate_pre.cpp" line="5206"/>
-        <location filename="../src/engine/generate_pre.cpp" line="5269"/>
-        <location filename="../src/engine/generate_pre.cpp" line="5337"/>
-        <location filename="../src/engine/generate_pre.cpp" line="5377"/>
-        <location filename="../src/engine/generate_pre.cpp" line="5756"/>
-        <location filename="../src/engine/generate_pre.cpp" line="5781"/>
-        <location filename="../src/engine/generate_pre.cpp" line="5876"/>
-        <location filename="../src/engine/generate_pre.cpp" line="5920"/>
-        <location filename="../src/engine/generate_pre.cpp" line="5943"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6038"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6074"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6116"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6149"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6167"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6200"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6246"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6280"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6299"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6335"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6372"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6420"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6465"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6507"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6547"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6629"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6667"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6712"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6750"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7305"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7328"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7349"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7399"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7433"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7468"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7492"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7531"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7555"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7594"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7618"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7658"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7680"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7719"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7741"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7780"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7802"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7917"/>
-        <location filename="../src/engine/generate_pre.cpp" line="8090"/>
-        <location filename="../src/engine/generate_pre.cpp" line="8545"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4608"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4625"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4654"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4684"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4724"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4747"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4769"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4836"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4863"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4901"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4968"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4994"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5118"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5134"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5190"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5262"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5359"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5405"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5448"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5497"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5767"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5830"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5898"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5938"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6317"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6342"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6437"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6481"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6504"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6599"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6635"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6677"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6710"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6728"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6761"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6807"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6841"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6860"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6896"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6933"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6981"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7026"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7068"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7108"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7190"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7228"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7273"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7311"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7866"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7889"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7910"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7960"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7994"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8029"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8053"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8092"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8116"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8155"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8179"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8219"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8241"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8280"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8302"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8341"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8363"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8486"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8659"/>
+        <location filename="../src/engine/generate_pre.cpp" line="9114"/>
         <source>FET warning</source>
         <translation>FET - avertisment</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="995"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1046"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1111"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1174"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1239"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1290"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1315"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1333"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1428"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1509"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1555"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1651"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1732"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1770"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1790"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1811"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1831"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1856"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1882"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1907"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1928"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1949"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1969"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1994"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2020"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2055"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2071"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2090"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2107"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2145"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2181"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2207"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2228"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2249"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2265"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2346"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2409"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2474"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2537"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2600"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2647"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2672"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2690"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2785"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2866"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2912"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3008"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3089"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3128"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3146"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3170"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3187"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3217"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3233"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3267"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3285"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3308"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3325"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3354"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3375"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3399"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3443"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3526"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3544"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3646"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3803"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3826"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3849"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3909"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3939"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3957"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3989"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4019"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4050"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4068"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4100"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4130"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4170"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4193"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4216"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4276"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4307"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4343"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4412"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4436"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4563"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4579"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4637"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4707"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4941"/>
-        <location filename="../src/engine/generate_pre.cpp" line="5209"/>
-        <location filename="../src/engine/generate_pre.cpp" line="5272"/>
-        <location filename="../src/engine/generate_pre.cpp" line="5340"/>
-        <location filename="../src/engine/generate_pre.cpp" line="5762"/>
-        <location filename="../src/engine/generate_pre.cpp" line="5786"/>
-        <location filename="../src/engine/generate_pre.cpp" line="5877"/>
-        <location filename="../src/engine/generate_pre.cpp" line="5921"/>
-        <location filename="../src/engine/generate_pre.cpp" line="5944"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6039"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6075"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6121"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6154"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6171"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6205"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6251"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6285"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6305"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6340"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6376"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6424"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6469"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6511"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6633"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6671"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6716"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6754"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7309"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7332"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7353"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7403"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7438"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7471"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7495"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7534"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7558"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7597"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7621"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7661"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7683"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7722"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7744"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7783"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7805"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7918"/>
-        <location filename="../src/engine/generate_pre.cpp" line="8091"/>
-        <location filename="../src/engine/generate_pre.cpp" line="8546"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1031"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1082"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1147"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1210"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1242"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1258"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1346"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1411"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1462"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1487"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1505"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1600"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1681"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1727"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1823"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1904"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1942"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1962"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1983"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2003"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2028"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2054"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2079"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2100"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2121"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2141"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2166"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2192"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2227"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2243"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2262"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2279"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2317"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2353"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2379"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2400"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2421"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2437"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2518"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2581"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2646"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2709"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2741"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2757"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2844"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2907"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2954"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2979"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2997"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3092"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3173"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3219"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3315"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3396"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3435"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3453"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3477"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3494"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3524"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3540"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3574"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3592"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3615"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3632"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3661"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3682"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3706"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3750"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3786"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3802"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3835"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3850"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3912"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3928"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3963"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3978"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4087"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4105"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4207"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4364"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4387"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4410"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4470"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4500"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4518"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4550"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4580"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4611"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4629"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4661"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4691"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4731"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4754"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4777"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4837"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4868"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4904"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4973"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4997"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5124"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5140"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5198"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5268"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5502"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5770"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5833"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5901"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6323"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6347"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6438"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6482"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6505"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6600"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6636"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6682"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6715"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6732"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6766"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6812"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6846"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6866"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6901"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6937"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6985"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7030"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7072"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7194"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7232"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7277"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7315"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7870"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7893"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7914"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7964"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7999"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8032"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8056"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8095"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8119"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8158"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8182"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8222"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8244"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8283"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8305"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8344"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8366"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8487"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8660"/>
+        <location filename="../src/engine/generate_pre.cpp" line="9115"/>
         <source>Skip rest</source>
         <translation>Trec peste restul</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="995"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1046"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1111"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1174"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1239"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1290"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1315"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1333"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1428"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1509"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1555"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1651"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1732"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1770"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1790"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1811"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1831"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1856"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1882"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1907"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1928"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1949"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1969"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1994"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2020"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2055"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2071"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2090"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2107"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2145"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2181"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2207"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2228"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2249"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2265"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2346"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2409"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2474"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2537"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2600"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2647"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2672"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2690"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2785"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2866"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2912"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3008"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3089"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3128"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3146"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3170"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3187"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3217"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3233"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3267"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3285"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3308"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3325"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3354"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3375"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3399"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3443"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3526"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3544"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3646"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3803"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3826"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3849"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3909"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3939"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3957"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3989"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4019"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4050"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4068"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4100"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4130"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4170"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4193"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4216"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4276"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4307"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4343"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4412"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4436"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4563"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4579"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4637"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4707"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4941"/>
-        <location filename="../src/engine/generate_pre.cpp" line="5209"/>
-        <location filename="../src/engine/generate_pre.cpp" line="5272"/>
-        <location filename="../src/engine/generate_pre.cpp" line="5340"/>
-        <location filename="../src/engine/generate_pre.cpp" line="5762"/>
-        <location filename="../src/engine/generate_pre.cpp" line="5786"/>
-        <location filename="../src/engine/generate_pre.cpp" line="5877"/>
-        <location filename="../src/engine/generate_pre.cpp" line="5921"/>
-        <location filename="../src/engine/generate_pre.cpp" line="5944"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6039"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6075"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6121"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6154"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6171"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6205"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6251"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6285"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6305"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6340"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6376"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6424"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6469"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6511"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6633"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6671"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6716"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6754"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7309"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7332"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7353"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7403"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7438"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7471"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7495"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7534"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7558"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7597"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7621"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7661"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7683"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7722"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7744"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7783"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7805"/>
-        <location filename="../src/engine/generate_pre.cpp" line="7918"/>
-        <location filename="../src/engine/generate_pre.cpp" line="8091"/>
-        <location filename="../src/engine/generate_pre.cpp" line="8546"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1031"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1082"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1147"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1210"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1242"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1258"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1346"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1411"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1462"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1487"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1505"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1600"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1681"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1727"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1823"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1904"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1942"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1962"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1983"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2003"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2028"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2054"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2079"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2100"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2121"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2141"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2166"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2192"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2227"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2243"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2262"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2279"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2317"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2353"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2379"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2400"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2421"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2437"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2518"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2581"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2646"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2709"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2741"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2757"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2844"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2907"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2954"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2979"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2997"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3092"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3173"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3219"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3315"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3396"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3435"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3453"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3477"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3494"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3524"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3540"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3574"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3592"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3615"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3632"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3661"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3682"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3706"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3750"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3786"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3802"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3835"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3850"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3912"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3928"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3963"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3978"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4087"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4105"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4207"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4364"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4387"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4410"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4470"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4500"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4518"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4550"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4580"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4611"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4629"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4661"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4691"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4731"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4754"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4777"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4837"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4868"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4904"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4973"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4997"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5124"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5140"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5198"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5268"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5502"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5770"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5833"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5901"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6323"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6347"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6438"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6482"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6505"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6600"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6636"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6682"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6715"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6732"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6766"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6812"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6846"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6866"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6901"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6937"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6985"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7030"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7072"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7194"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7232"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7277"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7315"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7870"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7893"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7914"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7964"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7999"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8032"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8056"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8095"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8119"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8158"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8182"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8222"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8244"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8283"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8305"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8344"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8366"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8487"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8660"/>
+        <location filename="../src/engine/generate_pre.cpp" line="9115"/>
         <source>See next</source>
         <translation>Văd următoarea</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="1305"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1323"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1240"/>
+        <source>Cannot optimize, because you have constraint students set max span per day for students %1 with weight (percentage) below 100. Please make weight 100% and try again</source>
+        <translation>Nu pot optimiza, deoarece aveţi constrângerea set de studenţi max întindere pe zi pentru studenţii %1 cu importanţa (procentuală) sub 100. Vă rog faceţi importanţa 100% şi încercaţi din nou</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/generate_pre.cpp" line="1256"/>
+        <source>Cannot optimize, because you have constraint students max span per day with weight (percentage) below 100. Please make weight 100% and try again</source>
+        <translation>Nu pot optimiza, deoarece aveţi constrângere studenţi max întindere pe zi cu importanţa (procente) sub 100. Vă rog faceţi importanţa 100% şi încercaţi din nou</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/generate_pre.cpp" line="1477"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1495"/>
         <source>Cannot optimize for subgroup %1, because there is a constraint of type max %2 hours continuously which cannot be respected because of activity with id %3 (which has duration %4).</source>
         <translation>Nu pot optimiza pentru subgrupul %1, deoarece există o constrângere de tipul max %2 ore continuu care nu poate fi respectată din cauza activităţii cu id %3 (care are durata %4).</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="1418"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1499"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1590"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1671"/>
         <source>Cannot optimize for subgroup %1, because there are too many constraints of type activity tag max hours daily relating to him, which cannot be compressed in 2 constraints of this type. Two constraints max hours can be compressed into a single one if the max hours are lower in the first one and the weight percentage is higher on the first one. It is possible to use any number of such constraints for a subgroup, but their resultant must be maximum 2 constraints of type activity tag max hours daily.
 
  Example: you are allowed to use 3 constraints: 6 hours 95%, 7 hours 100% and 8 hours 100%, which can be compressed into 2 constraints: 6 hours 95%, 7 hours 100%
@@ -32619,36 +34491,46 @@ Vă rog opriţi simularea înainte de aceasta.</translation>
  Vă rog modificaţi datele dvs. după cum s-a spus şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="1551"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1723"/>
         <source>Cannot optimize for subgroup %1, because there is a constraint activity tag %2 max %3 hours daily for it with weight 100% which cannot be satisfied, considering the number of available slots (%4) and total duration of activities with this activity tag (%5). Please correct and try again.</source>
         <comment>%2 is the activity tag for this constraint, %3 is the max number of hours daily for this constraint</comment>
         <translation>Nu pot optimiza pentru subgrupul %1, deoarece există o constrângere etichetă activitate %2 max %3 ore zilnic pentru el cu importanţa 100% care nu poate fi satisfăcută, considerând numărul de sloturi disponibile (%4) şi durata totală a activităţilor cu această etichetă activitate (%5). Vă rog corectaţi şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="1847"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2019"/>
         <source>Cannot optimize, because you have activity id = %1 with duration = %2 and a constraint teacher(s) activity tag max %3 hours daily with weight = 100% for the teacher %4 and activity tag %5. The activity&apos;s duration is higher than the teacher&apos;s max hours daily with this activity tag (which the activity contains). Please correct and try again.</source>
         <translation>Nu pot optimiza, deoarece aveţi activitatea cu id = %1 cu durata = %2 şi o constrângere profesor(i) etichetă activitate max %3 ore zilnic cu importanţa = 100% pentru profesorul %4 şi eticheta activitate %5. Durata activităţii este mai mare decât maximul de ore zilnic al profesorului pentru această etichetă activitate (pe care activitatea o conţine). Vă rog corectaţi şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="2242"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2414"/>
         <source>Cannot optimize, because you have constraint students min %1 hours daily for subgroup %2 (the constraint allows empty days). This subgroup has in total only %3 hours per week, so impossible constraint. Please correct and try again</source>
         <translation>Nu pot optimiza, deoarece aveţi constrângerea studenţi min %1 ore zilnic pentru subgrupul %2 (constrângerea permite zile libere). Acest subgrup are în total doar %3 ore pe săptămână, aşadar este o constrângere imposibilă. Vă rog corectaţi şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="2461"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2524"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2633"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2696"/>
         <source>Cannot optimize for teacher %1, because there is a constraint of type max %2 hours daily with 100% weight which cannot be respected because of number of days per week, number of hours per day, teacher max days per week, teacher not available and/or breaks. The number of total hours for this teacher is %3 and the number of available slots is, considering max hours daily and all other constraints, %4.</source>
         <translation>Nu pot optimiza pentru profesorul %1, deoarece există o constrângere de tipul max %2 ore zilnic cu importanţa procentuală 100% care nu poate fi respectată din cauza numărului de zile pe săptămână, numărului de ore pe zi, profesor max zile pe săptămână şi/sau pauze. Numărul total de ore pentru acest profesor este %3 şi numărul de sloturi disponibile este, considerând max ore zilnic şi celelalte constrângeri, %4.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="2662"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2680"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2739"/>
+        <source>Cannot optimize, because you have constraint teacher max span per day for teacher %1 with weight (percentage) below 100. Please make weight 100% and try again</source>
+        <translation>Nu pot optimiza, deoarece aveţi constrângerea profesor max întindere pe zi pentru profesorul %1 cu importanţa procentuală sub 100. Vă rog faceţi importanţa 100% şi încercaţi din nou</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/generate_pre.cpp" line="2755"/>
+        <source>Cannot optimize, because you have constraint teachers max span per day with weight (percentage) below 100. Please make weight 100% and try again</source>
+        <translation>Nu pot optimiza, deoarece aveţi constrângere profesori max întindere pe zi cu importanţa (procentuală) sub 100. Vă rog faceţi importanţa 100% şi încercaţi din nou</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/generate_pre.cpp" line="2969"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2987"/>
         <source>Cannot optimize for teacher %1, because there is a constraint of type max %2 hours continuously which cannot be respected because of activity with id %3 (which has duration %4).</source>
         <translation>Nu pot optimiza pentru profesorul %1, deoarece există o constrângere de tipul max %2 ore continuu care nu poate fi respectată din cauza activităţii cu id %3 (care are durata %4).</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="2775"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2856"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3082"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3163"/>
         <source>Cannot optimize for teacher %1, because there are too many constraints of type activity tag max hours daily relating to him, which cannot be compressed in 2 constraints of this type. Two constraints max hours can be compressed into a single one if the max hours are lower in the first one and the weight percentage is higher on the first one. It is possible to use any number of such constraints for a teacher, but their resultant must be maximum 2 constraints of type activity tag max hours daily.
 
  Example: you are allowed to use 3 constraints: 6 hours 95%, 7 hours 100% and 8 hours 100%, which can be compressed into 2 constraints: 6 hours 95%, 7 hours 100%
@@ -32661,229 +34543,229 @@ Vă rog opriţi simularea înainte de aceasta.</translation>
  Vă rog modificaţi datele dvs. după cum s-a spus şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="2908"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3215"/>
         <source>Cannot optimize for teacher %1, because there is a constraint activity tag %2 max %3 hours daily for it with weight 100% which cannot be satisfied, considering the number of available slots (%4) and total duration of activities with this activity tag (%5). Please correct and try again.</source>
         <comment>%2 is the activity tag for this constraint, %3 is the max number of hours daily for this constraint</comment>
         <translation>Nu pot optimiza pentru profesorul %1, deoarece există o constrângere etichetă activitate %2 max %3 ore zilnic pentru el cu importanţa 100% care nu poate fi satisfăcută, considerând numărul de sloturi disponibile (%4) şi durata totală a activităţilor cu această etichetă activitate (%5). Vă rog corectaţi şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="3124"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3431"/>
         <source>Cannot optimize, because you have constraint teacher min hours daily for teacher %1 with weight (percentage) below 100. Starting with FET version 5.4.0 it is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
         <translation>Nu pot optimiza, deoarece aveţi constrângerea profesor min ore zilnic pentru profesorul %1 cu importanţa (procentuală) sub 100. Începând cu FET versiunea 5.4.0 este posibil să folosiţi doar importanţa 100% pentru astfel de constrângeri. Vă rog faceţi importanţa 100% şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="3141"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3448"/>
         <source>Cannot optimize, because you have constraint teacher min hours daily for teacher %1 with %2 min hours daily, and the number of working hours per day is only %3. Please correct and try again</source>
         <translation>Nu pot optimiza, doarece aveţi constrângerea profesor min ore zilnic pentru profesorul %1 cu %2 min ore zilnic, şi numărul de ore lucrătoare pe zi este doar %3. Vă rog corectaţi şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="3167"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3474"/>
         <source>Cannot optimize, because you have constraint teachers min hours daily with weight (percentage) below 100. Starting with FET version 5.4.0 it is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
         <translation>Nu pot optimiza, deoarece aveţi constrângerea profesori min ore zilnic cu importanţa (procentuală) sub 100. Începând cu FET versiunea 5.4.0 este posibil să folosiţi doar importanţa 100% pentru astfel de constrângeri. Vă rog faceţi importanţa 100% şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="3183"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3490"/>
         <source>Cannot optimize, because you have constraint teachers min hours daily with %1 min hours daily, and the number of working hours per day is only %2. Please correct and try again</source>
         <translation>Nu pot optimiza, doarece aveţi constrângerea profesori min ore zilnic cu %1 min ore zilnic, şi numărul de ore lucrătoare pe zi este doar %2. Vă rog corectaţi şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="3264"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3571"/>
         <source>Cannot optimize, because you have constraint teacher min days per week for teacher %1 with weight (percentage) below 100. Please make weight 100% and try again</source>
         <translation>Nu pot optimiza, deoarece aveţi constrângerea profesor min zile pe săptămână pentru profesorul %1 cu importanţa (procentuală) sub 100. Vă rog faceţi importanţa 100% şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="3280"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3587"/>
         <source>Cannot optimize, because you have constraint teacher min days per week for teacher %1 with %2 min days per week, and the number of working days per week is only %3. Please correct and try again</source>
         <translation>Nu pot optimiza, deoarece aveţi constrângerea profesor min zile pe săptămână pentru profesorul %1 cu %2 min zile pe săptămână, şi numărul de zile lucrătoare pe săptămână este doar %3. Vă rog corectaţi şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="3306"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3613"/>
         <source>Cannot optimize, because you have constraint teachers min days per week with weight (percentage) below 100. Please make weight 100% and try again</source>
         <translation>Nu pot optimiza, deoarece aveţi constrângerea profesori min zile pe săptămână cu importanţa (procentuală) sub 100. Vă rog faceţi importanţa 100% şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="3321"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3628"/>
         <source>Cannot optimize, because you have constraint teachers min days per week with %1 min days per week, and the number of working days per week is only %2. Please correct and try again</source>
         <translation>Nu pot optimiza, doarece aveţi constrângerea profesori min zile pe săptămână cu %1 min zile pe săptămână, şi numărul de zile lucrătoare pe săptămână este doar %2. Vă rog corectaţi şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="3348"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3655"/>
         <source>Cannot optimize because for teacher %1 you have min days per week %2 and he has only %3 activities - impossible. Please correct and try again.</source>
         <translation>Nu pot optimiza deoarece pentru profesorul %1 aveţi min zile pe săptămână %2 şi el are doar %3 activităţi - imposibil. Vă rog corectaţi şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="3368"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3675"/>
         <source>Cannot optimize because for teacher %1 you have min days per week %2 and min hours daily %3 and he has only %4 working hours - impossible. Please correct and try again.</source>
         <translation>Nu pot optimiza doarece pentru profesorul %1 aveţi min zile pe săptămână %2 şi min ore zilnic %3 şi el are doar %4 ore lucrătoare - imposibil. Vă rog corectaţi şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="3393"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3700"/>
         <source>Cannot optimize because for teacher %1 you have min days per week %2 &gt; max days per week %3 - impossible (min days must be &lt;= max days). Please correct and try again.</source>
         <translation>Nu pot optimiza deoarece pentru profesorul %1 aveţi min zile pe săptămână %2 &gt; max zile pe săptămână %3 - imposibil (min zile trebuie să fie &lt;= max zile). Vă rog corectaţi şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="3428"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3735"/>
         <source>Cannot optimize because for teacher %1 you have min days per week %2 and only %3 available days considering breaks and not available and min hours daily for this teacher. Please correct and try again.</source>
         <translation>Nu pot optimiza deoarece pentru profesorul %1 aveţi min zile pe săptămână %2 şi doar %3 zile disponibile considerând pauze şi indisponibil şi min ore zilnic pentru acest profesor. Vă rog corectaţi şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="3435"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3742"/>
         <source>Cannot optimize because for teacher %1 you have min days per week %2 and only %3 available days considering breaks and not available for this teacher. Please correct and try again.</source>
         <translation>Nu pot optimiza deoarece pentru profesorul %1 aveţi min zile pe săptămână %2 şi doar %3 zile disponibile considerând pauze şi indisponibil pentru acest profesor. Vă rog corectaţi şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="3517"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4078"/>
         <source>The constraint is impossible to respect, because there are the activities with id-s %1 and %2 which conflict one with another, because they have common students sets or teachers or must be not overlapping. FET will allow you to continue, because the weight of this constraint is below 100.0%, but anyway most probably you have made a mistake in this constraint, so it is recommended to modify it.</source>
         <translation>Constrângerea este imposibil de respectat, deoarece există activităţile cu id-urile %1 şi %2 care sunt în conflict una cu cealaltă, deoarece ele au seturi de studenţi sau profesori în comun sau nu trebuie să se suprapună. FET vă va permite să continuaţi, deoarece importanţa acestei constrângeri este sub 100.0%, dar oricum cel mai probabil aţi făcut o greşeală în această constrângere, aşa că este recomandat să o modificaţi.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="3537"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4098"/>
         <source>The constraint is impossible to respect, because there are the activities with id-s %1 and %2 which conflict one with another, because they have common students sets or teachers or must be not overlapping. The weight of this constraint is 100.0%, so your timetable is impossible. Please correct this constraint.</source>
         <translation>Constrângerea este imposibil de respectat, deoarece există activităţile cu id-urile %1 şi %2 care sunt în conflict una cu cealaltă, deoarece ele au seturi de studenţi sau profesori în comun sau nu trebuie să se suprapună. Importanţa acestei constrângeri este 100%, aşa că orarul dvs. este imposibil. Vă rog corectaţi această constrângere.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="3639"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4200"/>
         <source>You have a set of impossible constraints activities same starting time, considering all the indirect links between activities same starting time constraints</source>
         <translation>Aveţi un set de constrângeri imposibile activităţi acelaşi timp de start, considerând toate legăturile indirecte între constrângerile activităţi acelaşi timp de start</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="3642"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4203"/>
         <source>The activities with ids %1 and %2 must be simultaneous (request determined indirectly), but they have common teachers and/or students sets or must be not overlapping</source>
         <translation>Activităţile cu id-urile %1 şi %2 trebuie să fie simultane (cerere determinată indirect), dar ele au în comun profesori şi/sau seturi de studenţi sau trebuie să nu se suprapună</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="3842"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4403"/>
         <source>Cannot optimize for teacher %1, because the number of hours for teacher is %2 and you have only %3 allowed days from constraint teacher max days per week x %4 hours in a day. Probably there is an error in your data</source>
         <translation>Nu pot optimiza pentru profesorul %1, deoarece numărul de ore pentru profesor este %2 şi aveţi doar %3 zile permise din constrângerea profesor max zile pe săptămână x %4 ore într-o zi. Probabil este o eroare în datele dvs</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="3898"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4459"/>
         <source>Cannot optimize for teacher %1, because of too constrained teacher max days per week, teacher not available and/or breaks. The number of total hours for this teacher is %2 and the number of available slots is, considering max days per week and all other constraints, %3.</source>
         <translation>Nu pot optimiza pentru profesorul %1, din cauza profesor max zile pe săptămână, profesor indisponibil şi/sau pauze prea constrânse. Numărul total de ore pentru acest profesor este %2 şi numărul de sloturi disponibile este, considerând max zile pe săptămână şi toate celelalte constrângeri, %3.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="3937"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4498"/>
         <source>Cannot optimize, because you have constraint teachers max gaps per week with weight (percentage) below 100. Please make weight 100% and try again</source>
         <translation>Nu pot optimiza, deoarece aveţi constrângere profesori max ferestre pe săptămână cu importanţa (procentuală) sub 100. Vă rog faceţi importanţa 100% şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="3954"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4515"/>
         <source>Cannot optimize, because you have constraint teacher max gaps per week with weight (percentage) below 100 for teacher %1. Please make weight 100% and try again</source>
         <translation>Nu pot optimiza, deoarece aveţi constrângerea profesor max ferestre pe săptămână cu importanţa (procentuală) sub 100 pentru profesorul %1. Vă rog faceţi importanţa 100% şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="4048"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4609"/>
         <source>Cannot optimize, because you have constraint teachers max gaps per day with weight (percentage) below 100. Please make weight 100% and try again</source>
         <translation>Nu pot optimiza, deoarece aveţi constrângere profesori max ferestre pe zi cu importanţa (procentuală) sub 100. Vă rog faceţi importanţa 100% şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="4065"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4626"/>
         <source>Cannot optimize, because you have constraint teacher max gaps per day with weight (percentage) below 100 for teacher %1. Please make weight 100% and try again</source>
         <translation>Nu pot optimiza, deoarece aveţi constrângerea profesor max ferestre pe zi cu importanţa (procentuală) sub 100 pentru profesorul %1. Vă rog faceţi importanţa 100% şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="4164"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4725"/>
         <source>Cannot optimize for subgroup %1, because the number of hours for subgroup is %2 and you have only %3 days x %4 hours in a week.</source>
         <translation>Nu pot optimiza pentru subgrupul %1, deoarece numărul de ore pentru subgrup este %2 şi aveţi doar %3 zile x %4 ore într-o săptămână.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="4187"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4748"/>
         <source>Cannot optimize for subgroup %1, because the number of hours for subgroup is %2 and you have only %3 free slots from constraints students set not available and/or break. Maybe you inputted wrong constraints students set not available or break or the number of hours per week is less because of a misunderstanding</source>
         <translation>Nu pot optimiza pentru subgrupul %1, deoarece numărul de ore pentru subgrup este %2 şi aveţi doar %3 sloturi libere din constrângerile set de studenţi indisponibil şi/sau pauză. Poate aţi introdus constrângeri greşite set de studenţi indisponibil sau pauză sau numărul de ore pe săptămână este mai mic din cauza unei neînţelegeri</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="5378"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5939"/>
         <source>Cannot generate, because you do not have a constraint of type basic compulsory time or its weight is lower than 100.0%.</source>
         <translation>Nu pot genera, deoarece nu aveţi o constrângere de tipul obligatorie de bază de timp sau importanţa ei este mai mică decât 100.0%.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="5380"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6550"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5941"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7111"/>
         <source>Please add a constraint of this type with weight 100%.</source>
         <translation>Vă rog adăugaţi o constrângere de acest tip cu importanţa 100%.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="5382"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5943"/>
         <source>You can add this constraint from the menu Data -&gt; Time constraints -&gt; Miscellaneous -&gt; Basic compulsory time constraints.</source>
         <translation>Puteţi adăuga această constrângere din meniul Date -&gt; Constrângeri de timp -&gt; Diverse -&gt; Constrângeri de bază obligatorii de timp.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="5388"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6558"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5949"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7119"/>
         <source>For complete flexibility, you are allowed to remove it (even if this is a wrong idea).</source>
         <translation>Pentru flexibilitate completă, vi se permite să o ştergeţi (chiar dacă este o idee greşită).</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="5390"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6560"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5951"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7121"/>
         <source>Maybe you removed it by mistake from your file.</source>
         <translation>Poate aţi şters-o din greşeală din fişierul dvs.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="5392"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6562"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5953"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7123"/>
         <source>By adding it again, everything should be all right.</source>
         <translation>Adăugând-o din nou, totul ar trebui să fie în regulă.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="5409"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5970"/>
         <source>Precomputing</source>
         <comment>Title of a progress dialog</comment>
         <translation>Precalculez</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="5782"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6343"/>
         <source>Cannot optimize, because you have constraints of type activities end students day with weight percentage under 100%. Constraint activities end students day can only have weight percentage 100%. Please modify your data accordingly (remove or edit constraint) and try again.</source>
         <translation>Nu pot optimiza, deoarece aveţi constrângeri de tip activităţi încheie ziua studenţilor cu importanţa procentuală sub 100%. Constrângerea activităţi încheie ziua studenţilor poate avea doar importanţa procentuală 100%. Vă rog modificaţi datele dvs. corespunzător (ştergeţi sau editaţi constrângerea) şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="5865"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6426"/>
         <source>%1 cannot be respected because it contains %2 activities, has weight 100% and has min number of days between activities=%3. The minimum required number of days per week for that would be (nactivities-1)*mindays+1=%4, and you have only %5 days per week - impossible. Please correct this constraint.</source>
         <comment>%1 is the detailed description of a constraint</comment>
         <translation>%1 nu poate fi respectată deoarece conţine %2 activităţi, are importanţa 100% şi are numărul minim de zile între activităţi=%3. Numărul minim de zile pe săptămână cerut pentru aceasta ar fi (nactivităţi-1)*minzile+1=%4, şi dvs. aveţi doar %5 zile pe săptămână - imposibil. Vă rog corectaţi această constrângere.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="5908"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6469"/>
         <source>%1 cannot be respected because teacher %2 has at most %3 available days from teacher not available, breaks and teacher max days per week. Please lower the weight of this constraint to a value below 100% (it depends on your situation, if 0% is too little, make it 90%, 95% or even 99.75%. Even a large weight should not slow down much the program. A situation where you may need to make it larger than 0% is for instance if you have 5 activities with 4 possible days. You want to spread them 1, 1, 1 and 2, not 2, 2 and 1)</source>
         <comment>%1 is the detailed description of a constraint</comment>
         <translation>%1 nu poate fi respectată deoarece profesorul %2 are cel mult %3 zile disponibile din profesor indisponibil, pauze şi profesor max zile pe săptămână. Vă rog micşoraţi importanţa acestei constrângeri la o valoare sub 100% (depinde de situaţia dvs, dacă 0% este prea puţin, făceţi-o 90%, 95% sau chiar 99.75%. Chiar şi o importanţă mare nu ar trebui să încetinească prea mult programul. O situaţie în care ar trebui să o faceţi mai mare de 0% este de exemplu dacă aveţi 5 activităţi cu 4 zile posibile. Doriţi să le distribuiţi 1, 1, 1 şi 2, nu 2, 2 şi 1)</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="5931"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6492"/>
         <source>%1 cannot be respected because subgroup %2 has at most %3 available days from students set not available and breaks. Please lower the weight of this constraint to a value below 100% (it depends on your situation, if 0% is too little, make it 90%, 95% or even 99.75%. Even a large weight should not slow down much the program. A situation where you may need to make it larger than 0% is for instance if you have 5 activities with 4 possible days. You want to spread them 1, 1, 1 and 2, not 2, 2 and 1)</source>
         <comment>%1 is the detailed description of a constraint</comment>
         <translation>%1 nu poate fi respectată deoarece subgrupul %2 are cel mult %3 zile disponibile din set de studenţi indisponibil si pauze. Vă rog micşoraţi importanţa acestei constrângeri la o valoare sub 100% (depinde de situaţia dvs, dacă 0% este prea puţin, făceţi-o 90%, 95% sau chiar 99.75%. Chiar şi o importanţă mare nu ar trebui să încetinească prea mult programul. O situaţie în care ar trebui să o faceţi mai mare de 0% este de exemplu dacă aveţi 5 activităţi cu 4 zile posibile. Doriţi să le distribuiţi 1, 1, 1 şi 2, nu 2, 2 şi 1)</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="6150"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6201"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6711"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6762"/>
         <source>Cannot optimize for teacher %1, because it has more than three constraints interval max days per week. Please modify your data correspondingly (leave maximum three constraints of type constraint teacher(s) interval max days per week for each teacher) and try again</source>
         <translation>Nu pot optimiza pentru profesorul %1, pentru că el are mai mult de trei constrângeri interval max zile pe săptămână. Vă rog modificaţi datele corespunzător (lăsaţi maximum trei constrângeri de tip profesor(i) interval max zile pe săptămână pentru fiecare profesor) şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="6281"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6336"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6842"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6897"/>
         <source>Cannot optimize for subgroup %1, because it has more than three constraints interval max days per week. Please modify your data correspondingly (leave maximum three constraints of type constraint students (set) interval max days per week for each subgroup) and try again</source>
         <translation>Nu pot optimiza pentru subgrupul %1, pentru că el are mai mult de trei constrângeri interval max zile pe săptămână. Vă rog modificaţi datele corespunzător (lăsaţi maximum trei constrângeri de tip (set de) studenţi interval max zile pe săptămână pentru fiecare subgrup) şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="6466"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7027"/>
         <source>Cannot optimize, because you have constraint(s) of type &apos;activities occupy max different rooms&apos; with weight (percentage) below 100.0%. Please make the weight 100.0% and try again</source>
         <translation>Nu pot optimiza, deoarece aveţi constrângere(i) de tipul &apos;activităţi ocupă max săli diferite&apos; cu importanţa (procentuală) sub 100%. Vă rog faceţi importanţa 100.0% şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="6548"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7109"/>
         <source>Cannot generate, because you do not have a constraint of type basic compulsory space or its weight is lower than 100.0%.</source>
         <translation>Nu pot genera, deoarece nu aveţi o constrângere de tipul obligatorie de bază de spaţiu sau importanţa ei este mai mică decât 100.0%.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="6552"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7113"/>
         <source>You can add this constraint from the menu Data -&gt; Space constraints -&gt; Miscellaneous -&gt; Basic compulsory space constraints.</source>
         <translation>Puteţi adăuga această constrângere din meniul Date -&gt; Constrângeri de spaţiu -&gt; Diverse -&gt; Constrângeri de bază obligatorii de spaţiu.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="985"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1036"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1021"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1072"/>
         <source>Cannot optimize for subgroup %1, because there are too many constraints of type max hours daily relating to him, which cannot be compressed in 2 constraints of this type. Two constraints max hours can be compressed into a single one if the max hours are lower in the first one and the weight percentage is higher on the first one. It is possible to use any number of such constraints for a subgroup, but their resultant must be maximum 2 constraints of type max hours daily.
 
  Example: you are allowed to use 3 constraints: 6 hours 95%, 7 hours 100% and 8 hours 100%, which can be compressed into 2 constraints: 6 hours 95%, 7 hours 100%
@@ -32896,115 +34778,122 @@ Vă rog opriţi simularea înainte de aceasta.</translation>
  Vă rog modificaţi datele dvs. după cum s-a spus şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="870"/>
+        <location filename="../src/engine/generate_pre.cpp" line="906"/>
         <source>Your data contains constraints students max gaps per day and/or activity tag max hours daily.</source>
         <translation>Datele dvs. conţin constrângeri studenţi max ferestre pe zi şi/sau etichetă activitate max ore zilnic.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="874"/>
-        <location filename="../src/engine/generate_pre.cpp" line="897"/>
+        <location filename="../src/engine/generate_pre.cpp" line="910"/>
+        <location filename="../src/engine/generate_pre.cpp" line="933"/>
         <source>It is recommended to use such constraints with caution.</source>
         <translation>Este recomandat să folosiţi aceste constrângeri cu precauţie.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="872"/>
+        <location filename="../src/engine/generate_pre.cpp" line="908"/>
         <source>These constraints are good, but they are not perfectly optimized for speed. You may obtain a long generation time or even impossible timetables.</source>
         <translation>Aceste constrângeri sunt bune, dar nu sunt perfect optimizate pentru viteză. S-ar putea să obţineţi un timp lung de generare sau chiar orare imposibile.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="492"/>
+        <location filename="../src/engine/generate_pre.cpp" line="511"/>
         <source>Subgroup %1 has the same activities as subgroup %2.</source>
         <translation>Subgrupul %1 are aceleaşi activităţi ca subgrupul %2.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="503"/>
+        <location filename="../src/engine/generate_pre.cpp" line="522"/>
         <source>Optimization tip:</source>
         <translation>Sfat de optimizare:</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="505"/>
+        <location filename="../src/engine/generate_pre.cpp" line="524"/>
         <source>There are %1 subgroups (from the total of %2 subgroups) which have the same activities as other subgroups. They are listed below. If the constraints relating to these subgroups are also the same, you can make the generation (directly proportional) faster by completely removing the subgroups which are equivalent to other subgroups (leaving only one representant for each equivalence set). (The generation algorithm will not completely remove the equivalent subgroups automatically.)</source>
         <translation>Sunt %1 subgrupuri (din totalul de %2 subgrupuri) care au aceleaşi activităţi ca alte subgrupuri. Ele sunt listate mai jos.Dacă constrângerile relative acestor subgrupuri sunt de asemenea aceleaşi, puteţi face generarea (direct proporţional) mai rapidă ştergând complet subgrupurile care sunt echivalente cu altele (lăsând doar un reprezentant pentru fiecare set de echivalenţă). (Algoritmul de generare nu va şterge complet subgrupurile echivalente automat.)</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="510"/>
+        <location filename="../src/engine/generate_pre.cpp" line="529"/>
         <source>If you did not add all the activities yet or if the number of equivalent subgroups compared to the total number of subgroups is small, probably you can safely ignore this message.</source>
         <translation>Dacă nu aţi adăugat toate activităţile încă sau dacă numărul de subgrupuri echivalente comparat la numărul total de subgrupuri este mic, probabil că puteţi ignora în siguranţă acest mesaj.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="513"/>
+        <location filename="../src/engine/generate_pre.cpp" line="532"/>
         <source>You can deactivate this message from the &apos;Settings&apos; menu.</source>
         <translation>Puteţi dezactiva acest mesaj din meniul &apos;Setări&apos;.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="876"/>
-        <location filename="../src/engine/generate_pre.cpp" line="899"/>
-        <location filename="../src/engine/generate_pre.cpp" line="922"/>
+        <location filename="../src/engine/generate_pre.cpp" line="912"/>
+        <location filename="../src/engine/generate_pre.cpp" line="935"/>
+        <location filename="../src/engine/generate_pre.cpp" line="958"/>
         <source>Are you sure you want to continue?</source>
         <translation>Sigur doriţi să continuaţi?</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="879"/>
-        <location filename="../src/engine/generate_pre.cpp" line="902"/>
-        <location filename="../src/engine/generate_pre.cpp" line="925"/>
+        <location filename="../src/engine/generate_pre.cpp" line="915"/>
+        <location filename="../src/engine/generate_pre.cpp" line="938"/>
+        <location filename="../src/engine/generate_pre.cpp" line="961"/>
         <source>Yes</source>
         <translation>Da</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="879"/>
-        <location filename="../src/engine/generate_pre.cpp" line="902"/>
-        <location filename="../src/engine/generate_pre.cpp" line="925"/>
+        <location filename="../src/engine/generate_pre.cpp" line="915"/>
+        <location filename="../src/engine/generate_pre.cpp" line="938"/>
+        <location filename="../src/engine/generate_pre.cpp" line="961"/>
         <source>No</source>
         <translation>Nu</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="892"/>
+        <location filename="../src/engine/generate_pre.cpp" line="928"/>
         <source>Your data contains constraints students min hours daily which allow empty days.</source>
         <translation>Datele dvs. conţin constrângeri studenţi min ore zilnic care permit zile libere.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="894"/>
+        <location filename="../src/engine/generate_pre.cpp" line="930"/>
         <source>These constraints are nonstandard. They are recommended only if the students can have free days and a solution with free days for students exists. Otherwise the solution might be impossible for FET to find.</source>
         <translation>Aceste constrângeri sunt nonstandard. Ele sunt recomandate doar dacă studenţii pot avea zile libere şi o soluţie cu zile libere pentru studenţi există. Altfel soluţia ar putea fi imposibil de găsit pentru FET.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="915"/>
+        <location filename="../src/engine/generate_pre.cpp" line="951"/>
         <source>Your data contains the option to group activities in the initial order.</source>
         <translation>Datele dvs. conţin opţiunea de a grupa activităţile în ordinea iniţială.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="917"/>
+        <location filename="../src/engine/generate_pre.cpp" line="953"/>
         <source>This option is nonstandard. It is recommended only if you know what you are doing, otherwise the solution might be impossible for FET to find.</source>
         <translation>Această opţiune este nonstandard. Este recomandată doar dacă ştiţi ceea ce faceţi, altfel soluţia ar putea fi imposibil de găsit pentru FET.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="920"/>
+        <location filename="../src/engine/generate_pre.cpp" line="956"/>
         <source>Use with caution.</source>
         <translation>Folosiţi cu precauţie.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="1098"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1161"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1134"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1197"/>
         <source>Cannot optimize for subgroup %1, because there is a constraint of type max %2 hours daily with 100% weight which cannot be respected because of number of days per week, number of hours per day, students (set) max days per week, students set not available and/or breaks. The number of total hours for this subgroup is %3 and the number of available slots is, considering max hours daily and all other constraints, %4.</source>
         <translation>Nu pot optimiza pentru subgrupul %1, pentru că există o constrângere de tip max %2 ore zilnic cu importanţa 100% care nu poate fi respectată din cauza numărului de zile pe săptămână, numărului de ore pe zi, (set de) studenţi max zile pe săptămână, set de studenţi indisponibil şi/sau pauze. Numărul total de ore pentru acest subgrup este %3 şi numărul de sloturi disponibile este, considerând max ore zilnic şi celelalte constrângeri, %4.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="1108"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1171"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1312"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1330"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2471"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2534"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2669"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2687"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3906"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4273"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1144"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1207"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1343"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1484"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1502"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2643"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2706"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2841"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2976"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2994"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4467"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4834"/>
         <source>Please modify your data accordingly and try again</source>
         <translation>Vă rog modificaţi datele dvs. corespunzător şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="1229"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1280"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1333"/>
+        <source>Cannot optimize for subgroup %1, because there is a constraint of type max %2 span per day with 100% weight which cannot be respected because of number of days per week, number of hours per day, students (set) max days per week, students set not available and/or breaks. The number of total hours for this subgroup is %3 and the number of available slots is, considering max span per day and all other constraints, %4.</source>
+        <translation>Nu pot optimiza pentru subgrupul %1, pentru că există o constrângere de tip max %2 întindere pe zi cu importanţa 100% care nu poate fi respectată din cauza numărului de zile pe săptămână, numărului de ore pe zi, (set de) studenţi max zile pe săptămână, set de studenţi indisponibil şi/sau pauze. Numărul total de ore pentru acest subgrup este %3 şi numărul de sloturi disponibile este, considerând max ore zilnic şi celelalte constrângeri, %4.</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/generate_pre.cpp" line="1401"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1452"/>
         <source>Cannot optimize for subgroup %1, because there are too many constraints of type max hours continuously relating to him, which cannot be compressed in 2 constraints of this type. Two constraints max hours can be compressed into a single one if the max hours are lower in the first one and the weight percentage is higher on the first one. It is possible to use any number of such constraints for a subgroup, but their resultant must be maximum 2 constraints of type max hours continuously.
 
  Example: you are allowed to use 3 constraints: 6 hours 95%, 7 hours 100% and 8 hours 100%, which can be compressed into 2 constraints: 6 hours 95%, 7 hours 100%
@@ -33017,8 +34906,8 @@ Vă rog opriţi simularea înainte de aceasta.</translation>
  Vă rog modificaţi datele dvs. după cum s-a spus şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="1641"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1722"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1813"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1894"/>
         <source>Cannot optimize for subgroup %1, because there are too many constraints of type activity tag max hours continuously relating to him, which cannot be compressed in 2 constraints of this type. Two constraints max hours can be compressed into a single one if the max hours are lower in the first one and the weight percentage is higher on the first one. It is possible to use any number of such constraints for a subgroup, but their resultant must be maximum 2 constraints of type activity tag max hours continuously.
 
  Example: you are allowed to use 3 constraints: 6 hours 95%, 7 hours 100% and 8 hours 100%, which can be compressed into 2 constraints: 6 hours 95%, 7 hours 100%
@@ -33031,88 +34920,88 @@ Vă rog opriţi simularea înainte de aceasta.</translation>
  Vă rog modificaţi datele dvs. după cum s-a spus şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="1763"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1783"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1935"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1955"/>
         <source>Cannot optimize, because you have activity id = %1 with duration = %2 and a constraint teacher(s) max %3 hours daily with weight = 100% for the teacher %4. The activity&apos;s duration is higher than the teacher&apos;s max hours daily. Please correct and try again.</source>
         <translation>Nu pot optimiza, deoarece aveţi activitatea cu id = %1 cu durata = %2 şi o constrângere profesor(i) max %3 ore zilnic cu importanţa = 100% pentru profesorul %4. Durata activităţii este mai mare decât maximul de ore zilnic al profesorului. Vă rog corectaţi şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="1804"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1824"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1976"/>
+        <location filename="../src/engine/generate_pre.cpp" line="1996"/>
         <source>Cannot optimize, because you have activity id = %1 with duration = %2 and a constraint teacher(s) max %3 hours continuously with weight = 100% for the teacher %4. The activity&apos;s duration is higher than the teacher&apos;s max hours continuously. Please correct and try again.</source>
         <translation>Nu pot optimiza, deoarece aveţi activitatea cu id = %1 cu durata = %2 şi o constrângere profesor(i) max %3 ore continuu cu importanţa = 100% pentru profesorul %4. Durata activităţii este mai mare decât maximul de ore continuu al profesorului. Vă rog corectaţi şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="1873"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2045"/>
         <source>Cannot optimize, because you have activity id = %1 with duration = %2 and a constraint teacher(s) activity tag max %3 hours continuously with weight = 100% for the teacher %4 and activity tag %5. The activity&apos;s duration is higher than the teacher&apos;s max hours continuously with this activity tag (which the activity contains). Please correct and try again.</source>
         <translation>Nu pot optimiza, deoarece aveţi activitatea cu id = %1 cu durata = %2 şi o constrângere profesor(i) etichetă activitate max %3 ore continuu cu importanţa = 100% pentru profesorul %4 şi eticheta activitate %5. Durata activităţii este mai mare decât maximul de ore continuu al profesorului pentru această etichetă activitate (pe care activitatea o conţine). Vă rog corectaţi şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="1900"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1921"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2072"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2093"/>
         <source>Cannot optimize, because you have activity id = %1 with duration = %2 and a constraint students (set) max %3 hours daily with weight = 100% for the subgroup %4. The activity&apos;s duration is higher than the subgroup&apos;s max hours daily. Please correct and try again.</source>
         <translation>Nu pot optimiza, deoarece aveţi activitatea cu id = %1 cu durata = %2 şi o constrângere (set de) studenţi max %3 ore zilnic cu importanţa = 100% pentru subgrupul %4. Durata activităţii este mai mare decât maximul de ore zilnic al subgrupului. Vă rog corectaţi şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="1942"/>
-        <location filename="../src/engine/generate_pre.cpp" line="1962"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2114"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2134"/>
         <source>Cannot optimize, because you have activity id = %1 with duration = %2 and a constraint students (set) max %3 hours continuously with weight = 100% for the subgroup %4. The activity&apos;s duration is higher than the subgroup&apos;s max hours continuously. Please correct and try again.</source>
         <translation>Nu pot optimiza, deoarece aveţi activitatea cu id = %1 cu durata = %2 şi o constrângere (set de) studenţi max %3 ore continuu cu importanţa = 100% pentru subgrupul %4. Durata activităţii este mai mare decât maximul de ore continuu al subgrupului. Vă rog corectaţi şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="1985"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2157"/>
         <source>Cannot optimize, because you have activity id = %1 with duration = %2 and a constraint students (set) activity tag max %3 hours daily with weight = 100% for the subgroup %4 and activity tag %5. The activity&apos;s duration is higher than the subgroup&apos;s max hours daily with this activity tag (which the activity contains). Please correct and try again.</source>
         <translation>Nu pot optimiza, deoarece aveţi activitatea cu id = %1 cu durata = %2 şi o constrângere (set de) studenţi etichetă activitate max %3 ore zilnic cu importanţa = 100% pentru subgrupul %4 şi eticheta activitate %5. Durata activităţii este mai mare decât maximul de ore zilnic al subgrupului cu această etichetă activitate (pe care activitatea o conţine). Vă rog corectaţi şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="2011"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2183"/>
         <source>Cannot optimize, because you have activity id = %1 with duration = %2 and a constraint students (set) activity tag max %3 hours continuously with weight = 100% for the subgroup %4 and activity tag %5. The activity&apos;s duration is higher than the subgroup&apos;s max hours continuously with this activity tag (which the activity contains). Please correct and try again.</source>
         <translation>Nu pot optimiza, deoarece aveţi activitatea cu id = %1 cu durata = %2 şi o constrângere (set de) studenţi etichetă activitate max %3 ore continuu cu importanţa = 100% pentru subgrupul %4 şi eticheta activitate %5. Durata activităţii este mai mare decât maximul de ore continuu al subgrupului cu această etichetă activitate (pe care activitatea o conţine). Vă rog corectaţi şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="2052"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2224"/>
         <source>Cannot optimize for students, because the constraint of type min hours daily relating to students has no 100% weight. Please modify your data accordingly and try again</source>
         <translation>Nu pot optimiza pentru studenţi, deoarece constrângerea de tip min ore zilnic relativă la studenţi nu are importanţa 100%. Vă rog modificaţi datele dvs. corespunzător şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="2067"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2239"/>
         <source>Cannot optimize, because you have constraint students min hours daily with %1 min hours daily, and the number of working hours per day is only %2. Please correct and try again</source>
         <translation>Nu pot optimiza, doarece aveţi constrângerea studenţi min ore zilnic cu %1 min ore zilnic, şi numărul de ore lucrătoare pe zi este doar %2. Vă rog corectaţi şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="2086"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2258"/>
         <source>Cannot optimize for students set %1, because the constraint of type min hours daily relating to him has no 100% weight. Please modify your data accordingly and try again</source>
         <translation>Nu pot optimiza pentru setul de studenţi %1, deoarece constrângerea de tip min ore zilnic relativă la el nu are importanţa 100%. Vă rog modificaţi datele dvs. corespunzător şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="2102"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2274"/>
         <source>Cannot optimize, because you have constraint students set min hours daily for students set %1 with %2 min hours daily, and the number of working hours per day is only %3. Please correct and try again</source>
         <translation>Nu pot optimiza, doarece aveţi constrângerea set de studenţi min ore zilnic pentru setul de studenţi %1 cu %2 min ore zilnic, şi numărul de ore lucrătoare pe zi este doar %3. Vă rog corectaţi şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="2139"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2175"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2311"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2347"/>
         <source>Cannot optimize for subgroup %1, because there are two constraints of type min hours daily relating to him, and the weight percentage is higher on the constraint with less minimum hours. You are allowed only to have for each subgroup the most important constraint with maximum weight percentage and largest minimum hours daily allowed. Please modify your data accordingly and try again</source>
         <translation>Nu pot optimiza pentru subgrupul %1, deoarece există două constrângeri de tip min ore zilnic relative la el, şi importanţa este mai mare la constrângerea cu mai puţine ore minim. Este permis să aveţi pentru fiecare subgrup doar cea mai importantă constrângere cu importanţa procentuală maximă şi cel mai mare minimum ore zilnic permise. Vă rog modificaţi datele corespunzător şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="2204"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2376"/>
         <source>For subgroup %1 you have too little activities to respect the constraint(s) of type min hours daily (the constraint(s) do not allow empty days). Please modify your data accordingly and try again.</source>
         <translation>Pentru subgrupul %1 aveţi prea puţine activităţi ca să respectaţi constrângerea(-ile) de tip min ore zilnic (constrângerea(-ile) nu permit zile libere). Vă rog modificaţi datele dvs. corespunzător şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="2223"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2395"/>
         <source>For subgroup %1 cannot respect the constraint(s) of type min hours daily (the constraint(s) do not allow empty days) on day %2, because of students set not available and/or break. Please modify your data accordingly and try again</source>
         <translation>Pentru subgrupul %1 nu pot respecta constrângere(-ile) de tip min ore zilnic (constrângerea(-ile) nu permit zile libere) în ziua %2, din cauza set de studenţi indisponibil şi/sau pauză. Vă rog modificaţi datele dvs. corespunzător şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="2260"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2432"/>
         <source>Cannot optimize, because you have constraint students min %1 hours daily for subgroup %2 and the constraint allows empty days. The number of min hours daily should be at least 2, to make a non-trivial constraint. Please correct and try again</source>
         <translation>Nu pot optimiza, deoarece aveţi constrângerea studenţi min %1 ore zilnic pentru subgrupul %2 şi constrângerea permite zile libere. Numărul de min ore zilnic trebuie să fie cel puţin 2, pentru a face o constrângere netrivială. Vă rog corectaţi şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="2336"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2399"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2508"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2571"/>
         <source>Cannot optimize for teacher %1, because there are too many constraints of type max hours daily relating to him, which cannot be compressed in 2 constraints of this type. Two constraints max hours can be compressed into a single one if the max hours are lower in the first one and the weight percentage is higher on the first one. It is possible to use any number of such constraints for a teacher, but their resultant must be maximum 2 constraints of type max hours daily.
 
  Example: you are allowed to use 3 constraints: 6 hours 95%, 7 hours 100% and 8 hours 100%, which can be compressed into 2 constraints: 6 hours 95%, 7 hours 100%
@@ -33125,8 +35014,13 @@ Vă rog opriţi simularea înainte de aceasta.</translation>
  Vă rog modificaţi datele dvs. după cum s-a spus şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="2590"/>
-        <location filename="../src/engine/generate_pre.cpp" line="2637"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2831"/>
+        <source>Cannot optimize for teacher %1, because there is a constraint of type max %2 span per day with 100% weight which cannot be respected because of number of days per week, number of hours per day, teacher max days per week, teacher not available and/or breaks. The number of total hours for this teacher is %3 and the number of available slots is, considering max span per day and all other constraints, %4.</source>
+        <translation>Nu pot optimiza pentru profesorul %1, deoarece există o constrângere de tipul max %2 întindere pe zi cu importanţa procentuală 100% care nu poate fi respectată din cauza numărului de zile pe săptămână, numărului de ore pe zi, profesor max zile pe săptămână şi/sau pauze. Numărul total de ore pentru acest profesor este %3 şi numărul de sloturi disponibile este, considerând max ore zilnic şi celelalte constrângeri, %4.</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/generate_pre.cpp" line="2897"/>
+        <location filename="../src/engine/generate_pre.cpp" line="2944"/>
         <source>Cannot optimize for teacher %1, because there are too many constraints of type max hours continuously relating to him, which cannot be compressed in 2 constraints of this type. Two constraints max hours can be compressed into a single one if the max hours are lower in the first one and the weight percentage is higher on the first one. It is possible to use any number of such constraints for a teacher, but their resultant must be maximum 2 constraints of type max hours continuously.
 
  Example: you are allowed to use 3 constraints: 6 hours 95%, 7 hours 100% and 8 hours 100%, which can be compressed into 2 constraints: 6 hours 95%, 7 hours 100%
@@ -33139,8 +35033,8 @@ Vă rog opriţi simularea înainte de aceasta.</translation>
  Vă rog modificaţi datele dvs. după cum s-a spus şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="2998"/>
-        <location filename="../src/engine/generate_pre.cpp" line="3079"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3305"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3386"/>
         <source>Cannot optimize for teacher %1, because there are too many constraints of type activity tag max hours continuously relating to him, which cannot be compressed in 2 constraints of this type. Two constraints max hours can be compressed into a single one if the max hours are lower in the first one and the weight percentage is higher on the first one. It is possible to use any number of such constraints for a teacher, but their resultant must be maximum 2 constraints of type activity tag max hours continuously.
 
  Example: you are allowed to use 3 constraints: 6 hours 95%, 7 hours 100% and 8 hours 100%, which can be compressed into 2 constraints: 6 hours 95%, 7 hours 100%
@@ -33153,372 +35047,412 @@ Vă rog opriţi simularea înainte de aceasta.</translation>
  Vă rog modificaţi datele dvs. după cum s-a spus şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="3210"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3517"/>
         <source>Cannot optimize, because you have constraint teacher min %1 hours daily for teacher %2 (the constraint allows empty days). This teacher has in total only %3 hours per week, so impossible constraint. Please correct and try again</source>
         <translation>Nu pot optimiza, deoarece aveţi constrângerea profesor min %1 ore zilnic pentru profesorul %2 (constrângerea permite zile libere). Acest profesor are în total doar %3 ore pe săptămână, aşadar este o constrângere imposibilă. Vă rog corectaţi şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="3228"/>
+        <location filename="../src/engine/generate_pre.cpp" line="3535"/>
         <source>Cannot optimize, because you have constraint teacher min %1 hours daily for teacher %2 (the constraint allows empty days). The number of min hours daily should be at least 2, to make a non-trivial constraint. Please correct and try again</source>
         <translation>Nu pot optimiza, deoarece aveţi constrângerea profesor min %1 ore zilnic pentru profesorul %2 (constrângerea permite zile libere). Numărul de min ore zilnic trebuie să fie cel puţin 2, pentru a face o constrângere netrivială. Vă rog corectaţi şi încercaţi din nou</translation>
     </message>
     <message>
+        <location filename="../src/engine/generate_pre.cpp" line="3783"/>
+        <source>Cannot optimize, because you have constraint teacher min resting hours for teacher %1 with weight (percentage) below 100. It is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
+        <translation>Nu pot optimiza, deoarece aveţi constrângere profesor min ore de odihnă pentru profesorul %1 cu importanţa (procentuală) sub 100. Este posibil să folosiţi doar importanţa 100% pentru asemenea constrângeri. Vă rog faceţi importanţa 100% şi încercaţi din nou</translation>
+    </message>
+    <message>
         <location filename="../src/engine/generate_pre.cpp" line="3797"/>
+        <source>Cannot optimize, because you have constraint teacher min resting hours for teacher %1 with %2 min resting hours, and the number of working hours per day is only %3. Please correct and try again</source>
+        <translation>Nu pot optimiza, deoarece aveţi constrângerea profesor min ore de odihnă pentru profesorul %1 cu %2 min ore de odihnă, şi numărul de zile lucrătoare pe zi este doar %3. Vă rog corectaţi şi încercaţi din nou</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/generate_pre.cpp" line="3833"/>
+        <source>Cannot optimize, because you have constraint teachers min resting hours with weight (percentage) below 100. It is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
+        <translation>Nu pot optimiza, deoarece aveţi constrângere profesori min ore de odihnă cu importanţa (procentuală) sub 100. Este posibil să folosiţi doar importanţa 100% pentru asemenea constrângeri. Vă rog faceţi importanţa 100% şi încercaţi din nou</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/generate_pre.cpp" line="3846"/>
+        <source>Cannot optimize, because you have constraint teachers min resting hours with %1 min resting hours, and the number of working hours per day is only %2. Please correct and try again</source>
+        <translation>Nu pot optimiza, deoarece aveţi constrângerea profesori min ore de odihnă cu %1 min ore de odihnă, şi numărul de zile lucrătoare pe zi este doar %2. Vă rog corectaţi şi încercaţi din nou</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/generate_pre.cpp" line="3909"/>
+        <source>Cannot optimize, because you have constraint students set min resting hours for students set %1 with weight (percentage) below 100. It is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
+        <translation>Nu pot optimiza, deoarece aveţi constrângere set de studenţi min ore de odihnă pentru setul de studenţi %1 cu importanţa (procentuală) sub 100. Este posibil să folosiţi doar 100% importanţă pentru asemenea constrângeri. Vă rog faceţi importanţa 100% şi încercaţi din nou</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/generate_pre.cpp" line="3923"/>
+        <source>Cannot optimize, because you have constraint students set min resting hours for students set %1 with %2 min resting hours, and the number of working hours per day is only %3. Please correct and try again</source>
+        <translation>Nu pot optimiza, deoarece aveţi constrângerea set de studenţi min ore de odihnă pentru setul de studenţi %1 cu %2 min ore de odihnă, şi numărul de zile lucrătoare pe zi este doar %3. Vă rog corectaţi şi încercaţi din nou</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/generate_pre.cpp" line="3961"/>
+        <source>Cannot optimize, because you have constraint students min resting hours with weight (percentage) below 100. It is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
+        <translation>Nu pot optimiza, deoarece aveţi constrângere studenţi min ore de odihnă cu importanţa (procentuală) sub 100. Este posibil să folosiţi doar importanţa 100% pentru asemenea constrângeri. Vă rog faceţi importanţa 100% şi încercaţi din nou</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/generate_pre.cpp" line="3974"/>
+        <source>Cannot optimize, because you have constraint students min resting hours with %1 min resting hours, and the number of working hours per day is only %2. Please correct and try again</source>
+        <translation>Nu pot optimiza, deoarece aveţi constrângerea studenţi min ore de odihnă cu %1 min ore de odihnă, şi numărul de zile lucrătoare pe zi este doar %2. Vă rog corectaţi şi încercaţi din nou</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/generate_pre.cpp" line="4358"/>
         <source>Cannot optimize for teacher %1, because the number of hours for teacher is %2 and you have only %3 days x %4 hours in a week.</source>
         <translation>Nu pot optimiza pentru profesorul %1, deoarece numărul de ore pentru profesor este %2 şi aveţi doar %3 zile x %4 ore într-o săptămână.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="3820"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4381"/>
         <source>Cannot optimize for teacher %1, because the number of hours for teacher is %2 and you have only %3 free slots from constraints teacher not available and/or break. Maybe you inputted wrong constraints teacher not available or break or the number of hours per week is less because of a misunderstanding</source>
         <translation>Nu pot optimiza pentru profesorul %1, deoarece numărul de ore pentru profesor este %2 şi aveţi doar %3 sloturi libere din constrângerile profesor indisponibil şi/sau pauză. Poate aţi introdus constrângeri greşite profesor indisponibil sau pauză sau numărul de ore pe săptămână este mai mic din cauza unei neînţelegeri</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="3983"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4013"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4544"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4574"/>
         <source>Cannot optimize for teacher %1, because there are two constraints of type max gaps per week relating to him, and the weight percentage is higher on the constraint with more gaps allowed. You are allowed only to have for each teacher the most important constraint with maximum weight percentage and minimum gaps allowed. Please modify your data accordingly and try again</source>
         <translation>Nu pot optimiza pentru profesorul %1, deoarece sunt două constrângeri de tip max ferestre pe săptămână relative la el, şi importanţa procentuală este mai mare la constrângerea cu mai multe ferestre permise. Este permis doar să aveţi pentru fiecare profesor cea mai importantă constrângere cu importanţa procentuală maximă şi ferestrele minime permise. Vă rog modificaţi datele dvs. corespunzător şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="4094"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4124"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4655"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4685"/>
         <source>Cannot optimize for teacher %1, because there are two constraints of type max gaps per day relating to him, and the weight percentage is higher on the constraint with more gaps allowed. You are allowed only to have for each teacher the most important constraint with maximum weight percentage and minimum gaps allowed. Please modify your data accordingly and try again</source>
         <translation>Nu pot optimiza pentru profesorul %1, deoarece sunt două constrângeri de tip max ferestre pe zi relative la el, şi importanţa procentuală este mai mare la constrângerea cu mai multe ferestre permise. Este permis doar să aveţi pentru fiecare profesor cea mai importantă constrângere cu importanţa procentuală maximă şi ferestrele minime permise. Vă rog modificaţi datele dvs. corespunzător şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="4209"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4770"/>
         <source>Cannot optimize for subgroup %1, because the number of hours for subgroup is %2 and you have only %3 allowed days from constraint students (set) max days per week x %4 hours in a day. Probably there is an error in your data</source>
         <translation>Nu pot optimiza pentru subgrupul %1, deoarece numărul de ore pentru subgrup este %2 şi aveţi doar %3 zile permise de constrângerea (set de) studenţi max zile pe săptămână x %4 ore pe zi. Probabil este o eroare în datele dvs</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="4265"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4826"/>
         <source>Cannot optimize for subgroup %1, because of too constrained students (set) max days per week, students set not available and/or breaks. The number of total hours for this subgroup is %2 and the number of available slots is, considering max days per week and all other constraints, %3.</source>
         <translation>Nu pot optimiza pentru subgrupul %1, din cauza prea constrânselor (set de) studenţi max zile pe săptămână, set de studenţi indisponibil şi/sau pauze. Numărul total de ore pentru acest subgrup este %2 şi numărul de sloturi disponibile este, considerând max zile pe săptămână şi toate celelalte constrângeri, %3.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="4303"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4864"/>
         <source>Cannot optimize, because you have constraint teacher max days per week with weight (percentage) below 100 for teacher %1. Starting with FET version 5.2.17 it is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
         <translation>Nu pot optimiza, deoarece aveţi constrângere profesor max zile pe săptămână cu importanţa (procentuală) sub 100 pentru profesorul %1. Începând cu FET versiunea 5.2.17 este posibil să folosiţi doar 100% importanţă pentru asemenea constrângeri. Vă rog faceţi importanţa 100% şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="4341"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4902"/>
         <source>Cannot optimize, because you have constraint teachers max days per week with weight (percentage) below 100. Please make weight 100% and try again</source>
         <translation>Nu pot optimiza, deoarece aveţi constrângerea profesori max zile pe săptămână cu importanţa (procentuală) sub 100. Vă rog faceţi importanţa 100% şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="4408"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4969"/>
         <source>Cannot optimize, because you have constraint students set max days per week with weight (percentage) below 100 for students set %1. It is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
-        <translation>Nu pot optimiza, deoarece aveţi constrângere set de studenţi max zile pe săptămână cu importanţa (procentuală) sub 100 pentru setul de studenţi %1. Este posibil să folosiţi doar 100% importanţa pentru asemenea constrângeri. Vă rog faceţi importanţa 100% şi încercaţi din nou</translation>
+        <translation>Nu pot optimiza, deoarece aveţi constrângere set de studenţi max zile pe săptămână cu importanţa (procentuală) sub 100 pentru setul de studenţi %1. Este posibil să folosiţi doar 100% importanţă pentru asemenea constrângeri. Vă rog faceţi importanţa 100% şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="4434"/>
+        <location filename="../src/engine/generate_pre.cpp" line="4995"/>
         <source>Cannot optimize, because you have constraint students max days per week with weight (percentage) below 100. Please make weight 100% and try again</source>
         <translation>Nu pot optimiza, deoarece aveţi constrângere studenţi max zile pe săptămână cu importanţa (procente) sub 100. Vă rog faceţi importanţa 100% şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="4558"/>
-        <location filename="../src/engine/generate_pre.cpp" line="4702"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5119"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5263"/>
         <source>Cannot optimize for subgroup %1, because you have a max gaps constraint with weight percentage less than 100%. Currently, the algorithm can only optimize with not existing constraint max gaps or existing with 100% weight for it. Please modify your data correspondingly and try again</source>
         <translation>Nu pot optimiza pentru subgrupul %1, pentru că aveţi o constrângere max ferestre cu importanţa procentuală sub 100%. În prezent algoritmul poate să optimizeze doar cu constrângere max ferestre inexistentă sau existentă cu 100% importanţă. Vă rog modificaţi datele corespunzător şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="4574"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5135"/>
         <source>Cannot optimize for subgroup %1, because you have an early max beginnings at second hour constraint with weight percentage less than 100%. Currently, the algorithm can only optimize with not existing constraint early m.b.a.s.h. or existing with 100% weight for it. Please modify your data correspondingly and try again</source>
         <translation>Nu pot optimiza pentru subgrupul %1, deoarece aveţi o constrângere devreme max începeri la ora a doua cu importanţa procentuală sub 100%. În prezent, algoritmul poate să optimizeze doar cu constrângere d.m.î.l.o.a.d inexistentă sau existentă cu importanţa 100% pentru ea. Vă rog modificaţi datele dvs. corespunzător şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="4630"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5191"/>
         <source>Cannot optimize for subgroup %1, because early max beginnings at second hour constraint has max beginnings at second hour %2, and the number of days per week is %3 which is less. It must be that the number of days per week must be greater or equal with the max beginnings at second hour
 Please modify your data correspondingly and try again</source>
         <translation>Nu pot optimiza pentru subgrupul %1, deoarece constrângerea devreme max începeri la ora a doua are max începeri la ora a doua %2, şi numărul de zile pe săptămână este %3, care este mai mic. Trebuie ca numărul de zile pe săptămână să fie mai mare sau egal cu max începeri la ora a doua
 Vă rog modificaţi datele dvs. corespunzător şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="4799"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5360"/>
         <source>Cannot optimize, because you have constraints of type teacher not available with weight percentage less than 100% for teacher %1. Currently, FET can only optimize with constraints teacher not available with 100% weight (or no constraint). Please modify your data accordingly and try again.</source>
         <translation>Nu pot optimiza, deoarece aveţi constrângeri de tip profesor indisponibil cu importanţa procentuală mai mică de 100% pentru profesorul %1. În prezent, FET poate optimiza doar cu constrângeri profesor indisponibil cu importanţa 100% (sau fără constrângere). Vă rog modificaţi datele dvs. corespunzător şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="4845"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5406"/>
         <source>Cannot optimize, because you have constraints of type students set not available with weight percentage less than 100% for students set %1. Currently, FET can only optimize with constraints students set not available with 100% weight (or no constraint). Please modify your data accordingly and try again.</source>
         <translation>Nu pot optimiza, deoarece aveţi constrângeri de tip set de studenţi indisponibil cu importanţa procentuală sub 100% pentru setul de studenţi %1. În prezent FET poate optimiza doar cu constrângeri set de studenţi indisponibil cu importanţa 100% (sau fără constrângere). Vă rog modificaţi datele dvs. corespunzător şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="4888"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5449"/>
         <source>Cannot optimize, because you have constraints of type break with weight percentage less than 100%. Currently, FET can only optimize with constraints break with 100% weight (or no constraint). Please modify your data accordingly and try again.</source>
         <translation>Nu pot optimiza, deoarece aveţi constrângeri de tipul pauză cu importanţa procentuală sub 100%. În prezent FET poate optimiza doar cu constrângeri pauză cu importanţa 100% (sau fără constrângere). Vă rog modificaţi datele dvs. corespunzător şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="4937"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5498"/>
         <source>Cannot optimize, because you have constraints of type activity preferred starting time with no day nor hour selected (for activity with id==%1). Please modify your data accordingly (remove or edit constraint) and try again.</source>
         <translation>Nu pot optimiza, deoarece aveţi constrângeri de tipul activitate timp de start preferat fără zi sau oră selectată (pentru activitatea cu id==%1). Vă rog modificaţi datele dvs. corespunzător (ştergeţi sau editaţi constrângerea) şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="5207"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5768"/>
         <source>Cannot optimize, because you have a constraint min days with duplicate activities. The constraint is: %1. Please correct that.</source>
         <translation>Nu pot optimiza, deoarece aveţi o constrângere min zile cu activităţi duplicat. Constrângerea este: %1. Vă rog corectaţi aceasta.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="5270"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5831"/>
         <source>Cannot optimize, because you have a constraint max days between activities with duplicate activities. The constraint is: %1. Please correct that.</source>
         <translation>Nu pot optimiza, deoarece aveţi o constrângere max zile între activităţi cu activităţi duplicat. Constrângerea este: %1. Vă rog corectaţi aceasta.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="5338"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5899"/>
         <source>Cannot optimize, because you have a constraint min gaps between activities with duplicate activities. The constraint is: %1. Please correct that.</source>
         <translation>Nu pot optimiza, deoarece aveţi o constrângere min ferestre între activităţi cu activităţi duplicat. Constrângerea este: %1. Vă rog corectaţi aceasta.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="5384"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6554"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5945"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7115"/>
         <source>Explanation:</source>
         <translation>Explicaţie:</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="5386"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6556"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5947"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7117"/>
         <source>Each time you create a new file, it contains an automatically added constraint of this type.</source>
         <translation>De fiecare dată când creaţi un nou fişier, el conţine o constrângere de acest tip adăugată automat.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="5410"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5971"/>
         <source>Precomputing ... please wait</source>
         <translation>Precalculez ... vă rog aşteptaţi</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="5420"/>
-        <location filename="../src/engine/generate_pre.cpp" line="5435"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5981"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5996"/>
         <source>FET information</source>
         <translation>FET - informaţie</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="5420"/>
-        <location filename="../src/engine/generate_pre.cpp" line="5435"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5981"/>
+        <location filename="../src/engine/generate_pre.cpp" line="5996"/>
         <source>Canceled</source>
         <translation>Anulat</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="5757"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6318"/>
         <source>Cannot optimize, because you have constraints of type activity activity ends students day for activity with id==%1 with weight percentage under 100%. Constraint activity ends students day can only have weight percentage 100%. Please modify your data accordingly (remove or edit constraint) and try again.</source>
         <translation>Nu pot optimiza, deoarece aveţi constrângeri de tip activitate încheie ziua studenţilor pentru activitatea cu id==%1 cu importanţa procentuală sub 100%. Constrângerea activitate încheie ziua studenţilor poate avea doar importanţa procentuală 100%. Vă rog modificaţi datele dvs. corespunzător (ştergeţi sau editaţi constrângerea) şi încercaţi din nou.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="6026"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6587"/>
         <source>%1 cannot be respected because teacher %2 has at most %3 available days. You specified for this constraint consecutive if same day=true. Currently FET cannot put more than 2 activities in the same day if consecutive if same day is true. You have 2*available days&lt;number of activities in this constraint. This is a very unlikely situation, that is why I didn&apos;t care too much about it. If you encounter it, please please modify your file (uncheck consecutive if same day or add other activities with larger duration).</source>
         <comment>%1 is the detailed description of a constraint</comment>
         <translation>%1 nu poate fi respectată deoarece profesorul %2 are cel mult %3 zile disponibile. Aţi specificat pentru această constrângere consecutiv dacă aceeaşi zi=adevărat. În implementarea actuală FET nu poate pune mai mult de 2 activităţi în aceeaşi zi dacă consecutiv dacă aceeaşi zi este adevărat. Aveţi 2*zile disponibile&lt;numărul de activităţi în această constrângere. Aceasta este o situaţie foarte improbabilă, de aceea nu m-am preocupat prea mult de ea. Dacă o întâlniţi, vă rog modificaţi fişierul dvs. (deselectaţi consecutiv dacă aceeaşi zi sau adăugaţi alte activităţi cu durată mai lungă).</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="6062"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6623"/>
         <source>%1 cannot be respected because subgroup %2 has at most %3 available days. You specified for this constraint consecutive if same day=true. Currently FET cannot put more than 2 activities in the same day if consecutive if same day is true. You have 2*available days&lt;number of activities in this constraint. This is a very unlikely situation, that is why I didn&apos;t care too much about it. If you encounter it, please modify your file (uncheck consecutive if same day or add other activities with larger duration).</source>
         <comment>%1 is the detailed description of a constraint</comment>
         <translation>%1 nu poate fi respectată deoarece subgrupul %2 are cel mult %3 zile disponibile. Aţi specificat pentru această constrângere consecutiv dacă aceeaşi zi=adevărat. În implementarea actuală FET nu poate pune mai mult de 2 activităţi în aceeaşi zi dacă consecutiv dacă aceeaşi zi este adevărat. Aveţi 2*zile disponibile&lt;numărul de activităţi în această constrângere. Aceasta este o situaţie foarte improbabilă, de aceea nu m-am preocupat prea mult de ea. Dacă o întâlniţi, vă rog modificaţi fişierul dvs. (deselectaţi consecutiv dacă aceeaşi zi sau adăugaţi alte activităţi cu durată mai lungă).</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="6117"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6678"/>
         <source>Cannot optimize, because you have constraint teacher interval max days per week with weight (percentage) below 100 for teacher %1. Starting with FET version 5.6.2 it is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
         <translation>Nu pot optimiza, deoarece aveţi constrângerea profesor interval max zile pe săptămână cu importanţa (procentuală) sub 100 pentru profesorul %1. Începând cu FET versiunea 5.6.2 este posibil să folosiţi doar importanţa 100% pentru asemenea constrângeri. Vă rog faceţi importanţa 100% şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="6168"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6729"/>
         <source>Cannot optimize, because you have constraint teachers interval max days per week with weight (percentage) below 100. Starting with FET version 5.6.2 it is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
         <translation>Nu pot optimiza, deoarece aveţi constrângerea profesori interval max zile pe săptămână cu importanţa (procentuală) sub 100. Începând cu FET versiunea 5.6.2 este posibil să folosiţi doar importanţa 100% pentru asemenea constrângeri. Vă rog faceţi importanţa 100% şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="6247"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6808"/>
         <source>Cannot optimize, because you have constraint students set interval max days per week with weight (percentage) below 100 for students set %1. Starting with FET version 5.6.2 it is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
         <translation>Nu pot optimiza, deoarece aveţi constrângerea set de studenţi interval max zile pe săptămână cu importanţa (procentuală) sub 100 pentru setul de studenţi %1. Începând cu FET versiunea 5.6.2 este posibil să folosiţi doar importanţa 100% pentru asemenea constrângeri. Vă rog faceţi importanţa 100% şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="6300"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6861"/>
         <source>Cannot optimize, because you have constraint students interval max days per week with weight (percentage) below 100. Starting with FET version 5.6.2 it is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
         <translation>Nu pot optimiza, deoarece aveţi constrângerea studenţi interval max zile pe săptămână cu importanţa (procentuală) sub 100. Începând cu FET versiunea 5.6.2 este posibil să folosiţi doar importanţa 100% pentru asemenea constrângeri. Vă rog faceţi importanţa 100% şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="6373"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6934"/>
         <source>Cannot optimize, because you have constraint(s) of type &apos;activities occupy max time slots from selection&apos; with weight (percentage) below 100.0%. Please make the weight 100.0% and try again</source>
         <translation>Nu pot optimiza, deoarece aveţi constrângere(-i) de tipul &apos;activităţi ocupă max sloturi de timp din selecţie&apos; cu importanţa (procentuală) sub 100.0%. Vă rog faceţi importanţa 100.0% şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="6421"/>
+        <location filename="../src/engine/generate_pre.cpp" line="6982"/>
         <source>Cannot optimize, because you have constraint(s) of type &apos;activities max simultaneous in selected time slots&apos; with weight (percentage) below 100.0%. Please make the weight 100.0% and try again</source>
         <translation>Nu pot optimiza, deoarece aveţi constrângere(-i) de tipul &apos;activităţi max simultane în sloturile de timp selectate&apos; cu importanţa (procentuală) sub 100.0%. Vă rog faceţi importanţa 100.0% şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="6508"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7069"/>
         <source>Cannot optimize, because you have constraint(s) of type &apos;activities same room if consecutive&apos; with weight (percentage) below 100.0%. Please make the weight 100.0% and try again</source>
         <translation>Nu pot optimiza, deoarece aveţi constrangere(i) de tipul &apos;activităţi aceeaşi sală dacă consecutive&apos; cu importanţa (procentuală) sub 100%. Vă rog faceţi importanţa 100% şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="6630"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6668"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7191"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7229"/>
         <source>Cannot generate timetable, because you have more than one constraint of type students set home room(s) for students set %1. Please leave only one of them</source>
         <translation>Nu pot genera orarul, deoarece aveţi mai mult de o constrângere de tipul set de studenţi sală(i) proprie(i) pentru setul de studenţi %1. Vă rog lăsaţi doar una dintre ele</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="6713"/>
-        <location filename="../src/engine/generate_pre.cpp" line="6751"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7274"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7312"/>
         <source>Cannot generate timetable, because you have more than one constraint of type teacher home room(s) for teacher %1. Please leave only one of them</source>
         <translation>Nu pot genera orarul, deoarece aveţi mai mult de o constrângere de tipul profesor sală(i) proprie(i) pentru profesorul %1. Vă rog lăsaţi doar una dintre ele</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="7306"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7867"/>
         <source>Cannot generate timetable, because for activity with id==%1 you have no allowed home room (from constraints students set home room(s) and teacher home room(s))</source>
         <translation>Nu pot genera orarul, deoarece pentru activitatea cu id==%1 nu aveţi săli proprii permise (din constrângerile set de studenţi sala(i) proprie(i) şi profesor sala(i) proprie(i))</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="7329"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7890"/>
         <source>Cannot generate timetable, because for activity with id==%1 you have no allowed preferred room (from preferred room(s) constraints).</source>
         <translation>Nu pot genera orarul, deoarece pentru activitatea cu id==%1 nu aveţi sală preferată permisă (din constrângerile sală(-i) preferata).</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="7350"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7911"/>
         <source>Cannot generate timetable, because for activity with id==%1 you have no allowed preferred room (from the allowed number of students and preferred room(s) constraints)</source>
         <translation>Nu pot genera orarul, deoarece pentru activitatea cu id==%1 nu aveţi sală preferată (din numărul permis de studenţi şi constrângeri sală(-i) preferată)</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="7400"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7961"/>
         <source>Cannot generate timetable, because for activity with id==%1 you have no allowed home room (from the allowed number of students)</source>
         <translation>Nu pot genera orarul, deoarece pentru activitatea cu id==%1 nu aveţi săli proprii permise (din numărul permis de studenţi)</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="7434"/>
+        <location filename="../src/engine/generate_pre.cpp" line="7995"/>
         <source>Cannot generate the timetable, because for activity with id==%1 you have no allowed preferred room (considering rooms&apos; capacities and constraints preferred room(s) with 100.0% weight percentage)</source>
         <translation>Nu pot genera orarul, deoarece pentru activitatea cu id==%1 nu aveţi sală preferată permisă (considerând capacităţile sălilor şi constrângerile sală(-i) preferate cu importanţa procentuală 100.0%)</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="7469"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8030"/>
         <source>Cannot optimize, because there is a space constraint students set max building changes per day with weight under 100%. Please correct and try again</source>
         <translation>Nu pot optimiza, deoarece există o constrângere de spaţiu set de studenţi max schimbări de clădire pe zi cu importanţa sub 100%. Vă rog corectaţi şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="7493"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8054"/>
         <source>Cannot optimize, because there is a space constraint students max building changes per day with weight under 100%. Please correct and try again</source>
         <translation>Nu pot optimiza, deoarece există o constrângere de spaţiu studenţi max schimbări de clădire pe zi cu importanţa sub 100%. Vă rog corectaţi şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="7532"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8093"/>
         <source>Cannot optimize, because there is a space constraint students set max building changes per week with weight under 100%. Please correct and try again</source>
         <translation>Nu pot optimiza, deoarece există o constrângere de spaţiu set de studenţi max schimbări de clădire pe săptămână cu importanţa sub 100%. Vă rog corectaţi şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="7556"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8117"/>
         <source>Cannot optimize, because there is a space constraint students max building changes per week with weight under 100%. Please correct and try again</source>
         <translation>Nu pot optimiza, deoarece există o constrângere de spaţiu studenţi max schimbări de clădire pe săptămână cu importanţa sub 100%. Vă rog corectaţi şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="7595"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8156"/>
         <source>Cannot optimize, because there is a space constraint students set min gaps between building changes with weight under 100%. Please correct and try again</source>
         <translation>Nu pot optimiza, deoarece există o constrângere de spaţiu set de studenţi min ferestre între schimbări de clădire cu importanţa sub 100%. Vă rog corectaţi şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="7619"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8180"/>
         <source>Cannot optimize, because there is a space constraint students min gaps between building changes with weight under 100%. Please correct and try again</source>
         <translation>Nu pot optimiza, deoarece există o constrângere de spaţiu studenţi min ferestre între schimbări de clădire cu importanţa sub 100%. Vă rog corectaţi şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="7659"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8220"/>
         <source>Cannot optimize, because there is a space constraint teacher max building changes per day with weight under 100%. Please correct and try again</source>
         <translation>Nu pot optimiza, deoarece există o constrângere de spaţiu profesor max schimbări de clădire pe zi cu importanţa sub 100%. Vă rog corectaţi şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="7681"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8242"/>
         <source>Cannot optimize, because there is a space constraint teachers max building changes per day with weight under 100%. Please correct and try again</source>
         <translation>Nu pot optimiza, deoarece există o constrângere de spaţiu profesori max schimbări de clădire pe zi cu importanţa sub 100%. Vă rog corectaţi şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="7720"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8281"/>
         <source>Cannot optimize, because there is a space constraint teacher max building changes per week with weight under 100%. Please correct and try again</source>
         <translation>Nu pot optimiza, deoarece există o constrângere de spaţiu profesor max schimbări de clădire pe săptămână cu importanţa sub 100%. Vă rog corectaţi şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="7742"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8303"/>
         <source>Cannot optimize, because there is a space constraint teachers max building changes per week with weight under 100%. Please correct and try again</source>
         <translation>Nu pot optimiza, deoarece există o constrângere de spaţiu profesori max schimbări de clădire pe săptămână cu importanţa sub 100%. Vă rog corectaţi şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="7781"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8342"/>
         <source>Cannot optimize, because there is a space constraint teacher min gaps between building changes with weight under 100%. Please correct and try again</source>
         <translation>Nu pot optimiza, deoarece există o constrângere de spaţiu profesor min ferestre între schimbări de clădire cu importanţa sub 100%. Vă rog corectaţi şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="7803"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8364"/>
         <source>Cannot optimize, because there is a space constraint teachers min gaps between building changes with weight under 100%. Please correct and try again</source>
         <translation>Nu pot optimiza, deoarece există o constrângere de spaţiu profesori min ferestre între schimbări de clădire cu importanţa sub 100%. Vă rog corectaţi şi încercaţi din nou</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="7916"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8485"/>
         <source>Activity with id=%1 has no allowed slot - please correct that</source>
         <translation>Activitatea cu id=%1 nu are slot permis - vă rog corectaţi</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="8088"/>
+        <location filename="../src/engine/generate_pre.cpp" line="8657"/>
         <source>Room %1 has not enough slots for home rooms constraints (requested %2, available %3) - please correct that</source>
         <translation>Sala %1 nu are destule sloturi pentru constrângerile săli proprii (cerut %2, disponibil%3) - vă rog corectaţi aceasta</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="8542"/>
+        <location filename="../src/engine/generate_pre.cpp" line="9111"/>
         <source>Group activities in initial order item number %1 is ignored, because it contains less than two active activities</source>
         <translation>Elementul grupează activităţile în ordinea iniţială numărul %1 este ignorat, deoarece conţine mai puţin de două activităţi active</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="8801"/>
+        <location filename="../src/engine/generate_pre.cpp" line="9370"/>
         <source>This is the initial evaluation order of activities computed by FET. If the generation gets stuck after a certain number of activities, please check the activity corresponding to this number+1. You might find errors in your input.</source>
         <translation>Aceasta este ordinea iniţială de evaluare a activităţilor în FET. Dacă generarea se împotmoleşte după un anumit număr de activităţi, vă rog verificaţi activitatea corespunzătoare acestui număr+1. Poate găsiţi erori în date.</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="8805"/>
+        <location filename="../src/engine/generate_pre.cpp" line="9374"/>
         <source>The initial order of activities (id-s):</source>
         <translation>Ordinea iniţiala a activităţilor (id-uri):</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="8810"/>
+        <location filename="../src/engine/generate_pre.cpp" line="9379"/>
         <source>No: %1</source>
         <comment>Number</comment>
         <translation>Nr: %1</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="8814"/>
+        <location filename="../src/engine/generate_pre.cpp" line="9383"/>
         <source>Id: %1</source>
         <comment>Id of activity</comment>
         <translation>Id: %1</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="8817"/>
+        <location filename="../src/engine/generate_pre.cpp" line="9386"/>
         <source>Teachers: %1</source>
         <translation>Profesori: %1</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="8819"/>
+        <location filename="../src/engine/generate_pre.cpp" line="9388"/>
         <source>Subject: %1</source>
         <translation>Disciplină: %1</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="8822"/>
+        <location filename="../src/engine/generate_pre.cpp" line="9391"/>
         <source>Activity tags: %1</source>
         <translation>Etichete activitate: %1</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="8824"/>
+        <location filename="../src/engine/generate_pre.cpp" line="9393"/>
         <source>Students: %1</source>
         <translation>Studenţi: %1</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="8828"/>
+        <location filename="../src/engine/generate_pre.cpp" line="9397"/>
         <source>nIncompatible: %1</source>
         <translation>nIncompatibile: %1</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="8831"/>
+        <location filename="../src/engine/generate_pre.cpp" line="9400"/>
         <source>nMinDaysConstraintsBroken: %1</source>
         <translation>nMinZileConstrângeriNerespectate: %1</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="8836"/>
+        <location filename="../src/engine/generate_pre.cpp" line="9405"/>
         <source>(grouped with id %1)</source>
         <translation>(grupată cu id %1)</translation>
     </message>
     <message>
-        <location filename="../src/engine/generate_pre.cpp" line="8842"/>
+        <location filename="../src/engine/generate_pre.cpp" line="9411"/>
         <source>End - the order of activities (id-s)</source>
         <translation>Sfârşit - ordinea activităţilor (id-uri)</translation>
     </message>
@@ -33972,24 +35906,6 @@ Vă rog modificaţi datele dvs. corespunzător şi încercaţi din nou</translat
         <location filename="../src/interface/helpaboutform_template.ui" line="27"/>
         <source>About</source>
         <translation>Despre</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr.&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Version: 5.30.8 (January 2017).&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;FET homepage: &lt;a href=&quot;http://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="90"/>
@@ -34658,11 +36574,15 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;canhathuongnhau - suggestion.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;rodolforg - bug reports in the Brazilian Portuguese translation.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;dasa - suggestion.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;Julio González Gil - suggestion.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="843"/>
+        <location filename="../src/interface/helpaboutform_template.ui" line="847"/>
         <source>Close</source>
         <translation>Închide</translation>
     </message>
@@ -34670,6 +36590,24 @@ p, li { white-space: pre-wrap; }
         <location filename="../src/interface/helpaboutform_template.ui" line="267"/>
         <source>References</source>
         <translation>Referinţe</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Version: 5.31.0 (February 2017).&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;FET homepage: &lt;a href=&quot;http://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="69"/>
@@ -40933,6 +42871,54 @@ Notă: set de studenţi indisponibil şi pauzele nu sunt numărate ca ferestre.<
     </message>
 </context>
 <context>
+    <name>ModifyConstraintStudentsMaxSpanPerDayForm</name>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentsmaxspanperdayform.cpp" line="59"/>
+        <location filename="../src/interface/modifyconstraintstudentsmaxspanperdayform.cpp" line="64"/>
+        <source>FET information</source>
+        <translation>FET - informaţie</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentsmaxspanperdayform.cpp" line="60"/>
+        <source>Invalid weight (percentage)</source>
+        <translation>Importanţă invalidă (procent)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentsmaxspanperdayform.cpp" line="65"/>
+        <source>Invalid weight (percentage) - it must be 100%</source>
+        <translation>Importanţă (procentuală) invalidă - trebuie să fie 100%</translation>
+    </message>
+</context>
+<context>
+    <name>ModifyConstraintStudentsMaxSpanPerDayForm_template</name>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentsmaxspanperdayform_template.ui" line="14"/>
+        <source>Modify students max span per day</source>
+        <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
+        <translation>Modifică studenţi max întindere pe zi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentsmaxspanperdayform_template.ui" line="44"/>
+        <source>Weight percentage (necessary: 100%)</source>
+        <translation>Importanţă - procente (necesar: 100%)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentsmaxspanperdayform_template.ui" line="65"/>
+        <source>Max span per day</source>
+        <translation>Max întindere pe zi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentsmaxspanperdayform_template.ui" line="82"/>
+        <source>Ok</source>
+        <translation>Bine</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentsmaxspanperdayform_template.ui" line="89"/>
+        <source>Cancel</source>
+        <translation>Anulează</translation>
+    </message>
+</context>
+<context>
     <name>ModifyConstraintStudentsMinGapsBetweenBuildingChangesForm</name>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmingapsbetweenbuildingchangesform.cpp" line="61"/>
@@ -41068,6 +43054,59 @@ Notă: set de studenţi indisponibil şi pauzele nu sunt numărate ca ferestre.<
         <location filename="../src/interface/modifyconstraintstudentsminhoursdailyform_template.ui" line="39"/>
         <source>Weight percentage (necessary: 100%)</source>
         <translation>Importanţă - procentaj (necesar: 100%)</translation>
+    </message>
+</context>
+<context>
+    <name>ModifyConstraintStudentsMinRestingHoursForm</name>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentsminrestinghoursform.cpp" line="61"/>
+        <location filename="../src/interface/modifyconstraintstudentsminrestinghoursform.cpp" line="66"/>
+        <source>FET information</source>
+        <translation>FET - informaţie</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentsminrestinghoursform.cpp" line="62"/>
+        <source>Invalid weight (percentage)</source>
+        <translation>Importanţă invalidă (procent)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentsminrestinghoursform.cpp" line="67"/>
+        <source>Invalid weight (percentage) - it must be 100%</source>
+        <translation>Importanţă (procentuală) invalidă - trebuie să fie 100%</translation>
+    </message>
+</context>
+<context>
+    <name>ModifyConstraintStudentsMinRestingHoursForm_template</name>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentsminrestinghoursform_template.ui" line="14"/>
+        <source>Modify students min resting hours</source>
+        <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
+        <translation>Modifică studenţi min ore de odihnă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentsminrestinghoursform_template.ui" line="28"/>
+        <source>Weight percentage (necessary: 100%)</source>
+        <translation>Importanţă - procente (necesar: 100%)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentsminrestinghoursform_template.ui" line="49"/>
+        <source>Min resting hours</source>
+        <translation>Min ore de odihnă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentsminrestinghoursform_template.ui" line="66"/>
+        <source>Ok</source>
+        <translation>Bine</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentsminrestinghoursform_template.ui" line="73"/>
+        <source>Cancel</source>
+        <translation>Anulează</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentsminrestinghoursform_template.ui" line="82"/>
+        <source>Circular</source>
+        <translation>Circular</translation>
     </message>
 </context>
 <context>
@@ -41895,6 +43934,65 @@ Notă: set de studenţi indisponibil şi pauzele nu sunt numărate ca ferestre.<
     </message>
 </context>
 <context>
+    <name>ModifyConstraintStudentsSetMaxSpanPerDayForm</name>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform.cpp" line="105"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform.cpp" line="110"/>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform.cpp" line="118"/>
+        <source>FET information</source>
+        <translation>FET - informaţie</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform.cpp" line="106"/>
+        <source>Invalid weight (percentage)</source>
+        <translation>Importanţă invalidă (procent)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform.cpp" line="111"/>
+        <source>Invalid weight (percentage) - it must be 100%</source>
+        <translation>Importanţă (procentuală) invalidă - trebuie să fie 100%</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform.cpp" line="119"/>
+        <source>Invalid students set</source>
+        <translation>Set de studenţi invalid</translation>
+    </message>
+</context>
+<context>
+    <name>ModifyConstraintStudentsSetMaxSpanPerDayForm_template</name>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform_template.ui" line="14"/>
+        <source>Modify students set max span per day</source>
+        <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
+        <translation>Modifică set de studenţi max întindere pe zi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform_template.ui" line="22"/>
+        <source>Max span per day</source>
+        <translation>Max întindere pe zi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform_template.ui" line="39"/>
+        <source>Ok</source>
+        <translation>Bine</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform_template.ui" line="46"/>
+        <source>Cancel</source>
+        <translation>Anulează</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform_template.ui" line="79"/>
+        <source>Students</source>
+        <translation>Studenţi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform_template.ui" line="115"/>
+        <source>Weight percentage (necessary: 100%)</source>
+        <translation>Importanţă - procente (necesar: 100%)</translation>
+    </message>
+</context>
+<context>
     <name>ModifyConstraintStudentsSetMinGapsBetweenBuildingChangesForm</name>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="104"/>
@@ -42052,6 +44150,70 @@ Notă: set de studenţi indisponibil şi pauzele nu sunt numărate ca ferestre.<
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform_template.ui" line="43"/>
         <source>Weight percentage (necessary: 100%)</source>
         <translation>Importanţă - procentaj (necesar: 100%)</translation>
+    </message>
+</context>
+<context>
+    <name>ModifyConstraintStudentsSetMinRestingHoursForm</name>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform.cpp" line="106"/>
+        <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform.cpp" line="111"/>
+        <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform.cpp" line="119"/>
+        <source>FET information</source>
+        <translation>FET - informaţie</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform.cpp" line="107"/>
+        <source>Invalid weight (percentage)</source>
+        <translation>Importanţă invalidă (procent)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform.cpp" line="112"/>
+        <source>Invalid weight (percentage) - it must be 100%</source>
+        <translation>Importanţă (procentuală) invalidă - trebuie să fie 100%</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform.cpp" line="120"/>
+        <source>Invalid students set</source>
+        <translation>Set de studenţi invalid</translation>
+    </message>
+</context>
+<context>
+    <name>ModifyConstraintStudentsSetMinRestingHoursForm_template</name>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform_template.ui" line="14"/>
+        <source>Modify students set min resting hours</source>
+        <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
+        <translation>Modifică set de studenţi min ore de odihnă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform_template.ui" line="28"/>
+        <source>Weight percentage (necessary: 100%)</source>
+        <translation>Importanţă - procente (necesar: 100%)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform_template.ui" line="49"/>
+        <source>Min resting hours</source>
+        <translation>Min ore de odihnă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform_template.ui" line="66"/>
+        <source>Ok</source>
+        <translation>Bine</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform_template.ui" line="73"/>
+        <source>Cancel</source>
+        <translation>Anulează</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform_template.ui" line="82"/>
+        <source>Circular</source>
+        <translation>Circular</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform_template.ui" line="113"/>
+        <source>Students</source>
+        <translation>Studenţi</translation>
     </message>
 </context>
 <context>
@@ -43347,6 +45509,65 @@ Note: teacher not available and break are not counted as gaps.</source>
     </message>
 </context>
 <context>
+    <name>ModifyConstraintTeacherMaxSpanPerDayForm</name>
+    <message>
+        <location filename="../src/interface/modifyconstraintteachermaxspanperdayform.cpp" line="75"/>
+        <location filename="../src/interface/modifyconstraintteachermaxspanperdayform.cpp" line="80"/>
+        <location filename="../src/interface/modifyconstraintteachermaxspanperdayform.cpp" line="92"/>
+        <source>FET information</source>
+        <translation>FET - informaţie</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteachermaxspanperdayform.cpp" line="76"/>
+        <source>Invalid weight (percentage)</source>
+        <translation>Importanţă invalidă (procent)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteachermaxspanperdayform.cpp" line="81"/>
+        <source>Invalid weight (percentage) - it must be 100%</source>
+        <translation>Importanţă (procentuală) invalidă - trebuie să fie 100%</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteachermaxspanperdayform.cpp" line="93"/>
+        <source>Invalid teacher</source>
+        <translation>Profesor invalid</translation>
+    </message>
+</context>
+<context>
+    <name>ModifyConstraintTeacherMaxSpanPerDayForm_template</name>
+    <message>
+        <location filename="../src/interface/modifyconstraintteachermaxspanperdayform_template.ui" line="14"/>
+        <source>Modify teacher max span per day</source>
+        <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
+        <translation>Modifică profesor max întindere pe zi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteachermaxspanperdayform_template.ui" line="44"/>
+        <source>Teacher</source>
+        <translation>Profesor</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteachermaxspanperdayform_template.ui" line="74"/>
+        <source>Max span per day</source>
+        <translation>Max întindere pe zi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteachermaxspanperdayform_template.ui" line="97"/>
+        <source>Weight percentage (necessary: 100%)</source>
+        <translation>Importanţă - procente (necesar: 100%)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteachermaxspanperdayform_template.ui" line="118"/>
+        <source>Ok</source>
+        <translation>Bine</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteachermaxspanperdayform_template.ui" line="125"/>
+        <source>Cancel</source>
+        <translation>Anulează</translation>
+    </message>
+</context>
+<context>
     <name>ModifyConstraintTeacherMinDaysPerWeekForm</name>
     <message>
         <location filename="../src/interface/modifyconstraintteachermindaysperweekform.cpp" line="77"/>
@@ -43537,6 +45758,70 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteacherminhoursdailyform_template.ui" line="93"/>
         <source>Weight percentage (necessary: 100%)</source>
         <translation>Importanţă - procente (necesar: 100%)</translation>
+    </message>
+</context>
+<context>
+    <name>ModifyConstraintTeacherMinRestingHoursForm</name>
+    <message>
+        <location filename="../src/interface/modifyconstraintteacherminrestinghoursform.cpp" line="77"/>
+        <location filename="../src/interface/modifyconstraintteacherminrestinghoursform.cpp" line="82"/>
+        <location filename="../src/interface/modifyconstraintteacherminrestinghoursform.cpp" line="95"/>
+        <source>FET information</source>
+        <translation>FET - informaţie</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteacherminrestinghoursform.cpp" line="78"/>
+        <source>Invalid weight (percentage)</source>
+        <translation>Importanţă invalidă (procent)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteacherminrestinghoursform.cpp" line="83"/>
+        <source>Invalid weight (percentage) - it must be 100%</source>
+        <translation>Importanţă (procentuală) invalidă - trebuie să fie 100%</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteacherminrestinghoursform.cpp" line="96"/>
+        <source>Invalid teacher</source>
+        <translation>Profesor invalid</translation>
+    </message>
+</context>
+<context>
+    <name>ModifyConstraintTeacherMinRestingHoursForm_template</name>
+    <message>
+        <location filename="../src/interface/modifyconstraintteacherminrestinghoursform_template.ui" line="14"/>
+        <source>Modify teacher min resting hours</source>
+        <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
+        <translation>Modifică profesor min ore de odihnă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteacherminrestinghoursform_template.ui" line="44"/>
+        <source>Teacher</source>
+        <translation>Profesor</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteacherminrestinghoursform_template.ui" line="74"/>
+        <source>Min resting hours</source>
+        <translation>Min ore de odihnă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteacherminrestinghoursform_template.ui" line="97"/>
+        <source>Weight percentage (necessary: 100%)</source>
+        <translation>Importanţă - procente (necesar: 100%)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteacherminrestinghoursform_template.ui" line="116"/>
+        <source>Circular</source>
+        <translation>Circular</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteacherminrestinghoursform_template.ui" line="125"/>
+        <source>Ok</source>
+        <translation>Bine</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteacherminrestinghoursform_template.ui" line="132"/>
+        <source>Cancel</source>
+        <translation>Anulează</translation>
     </message>
 </context>
 <context>
@@ -44152,6 +46437,54 @@ Notă: profesor indisponibil şi pauză nu sunt socotite ca ferestre.</translati
     </message>
 </context>
 <context>
+    <name>ModifyConstraintTeachersMaxSpanPerDayForm</name>
+    <message>
+        <location filename="../src/interface/modifyconstraintteachersmaxspanperdayform.cpp" line="59"/>
+        <location filename="../src/interface/modifyconstraintteachersmaxspanperdayform.cpp" line="64"/>
+        <source>FET information</source>
+        <translation>FET - informaţie</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteachersmaxspanperdayform.cpp" line="60"/>
+        <source>Invalid weight (percentage)</source>
+        <translation>Importanţă invalidă (procent)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteachersmaxspanperdayform.cpp" line="65"/>
+        <source>Invalid weight (percentage) - it must be 100%</source>
+        <translation>Importanţă (procentuală) invalidă - trebuie să fie 100%</translation>
+    </message>
+</context>
+<context>
+    <name>ModifyConstraintTeachersMaxSpanPerDayForm_template</name>
+    <message>
+        <location filename="../src/interface/modifyconstraintteachersmaxspanperdayform_template.ui" line="14"/>
+        <source>Modify teachers max span per day</source>
+        <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
+        <translation>Modifică profesori max întindere pe zi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteachersmaxspanperdayform_template.ui" line="38"/>
+        <source>Max span per day</source>
+        <translation>Max întindere pe zi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteachersmaxspanperdayform_template.ui" line="61"/>
+        <source>Weight percentage (necessary: 100%)</source>
+        <translation>Importanţă - procente (necesar: 100%)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteachersmaxspanperdayform_template.ui" line="82"/>
+        <source>Ok</source>
+        <translation>Bine</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteachersmaxspanperdayform_template.ui" line="89"/>
+        <source>Cancel</source>
+        <translation>Anulează</translation>
+    </message>
+</context>
+<context>
     <name>ModifyConstraintTeachersMinDaysPerWeekForm</name>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmindaysperweekform.cpp" line="62"/>
@@ -44311,6 +46644,59 @@ Notă: profesor indisponibil şi pauză nu sunt socotite ca ferestre.</translati
         <location filename="../src/interface/modifyconstraintteachersminhoursdailyform_template.ui" line="116"/>
         <source>Cancel</source>
         <translation>Anulează</translation>
+    </message>
+</context>
+<context>
+    <name>ModifyConstraintTeachersMinRestingHoursForm</name>
+    <message>
+        <location filename="../src/interface/modifyconstraintteachersminrestinghoursform.cpp" line="61"/>
+        <location filename="../src/interface/modifyconstraintteachersminrestinghoursform.cpp" line="66"/>
+        <source>FET information</source>
+        <translation>FET - informaţie</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteachersminrestinghoursform.cpp" line="62"/>
+        <source>Invalid weight (percentage)</source>
+        <translation>Importanţă invalidă (procent)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteachersminrestinghoursform.cpp" line="67"/>
+        <source>Invalid weight (percentage) - it must be 100%</source>
+        <translation>Importanţă (procentuală) invalidă - trebuie să fie 100%</translation>
+    </message>
+</context>
+<context>
+    <name>ModifyConstraintTeachersMinRestingHoursForm_template</name>
+    <message>
+        <location filename="../src/interface/modifyconstraintteachersminrestinghoursform_template.ui" line="14"/>
+        <source>Modify teachers min resting hours</source>
+        <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
+        <translation>Modifică profesori min ore de odihnă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteachersminrestinghoursform_template.ui" line="22"/>
+        <source>Min resting hours</source>
+        <translation>Min ore de odihnă</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteachersminrestinghoursform_template.ui" line="45"/>
+        <source>Weight percentage (necessary: 100%)</source>
+        <translation>Importanţă - procente (necesar: 100%)</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteachersminrestinghoursform_template.ui" line="66"/>
+        <source>Ok</source>
+        <translation>Bine</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteachersminrestinghoursform_template.ui" line="73"/>
+        <source>Cancel</source>
+        <translation>Anulează</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstraintteachersminrestinghoursform_template.ui" line="82"/>
+        <source>Circular</source>
+        <translation>Circular</translation>
     </message>
 </context>
 <context>
@@ -45245,121 +47631,121 @@ Notă: profesor indisponibil şi pauză nu sunt socotite ca ferestre.</translati
 <context>
     <name>RandomSeedDialog</name>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="345"/>
-        <location filename="../src/interface/fetmainform.cpp" line="346"/>
+        <location filename="../src/interface/fetmainform.cpp" line="356"/>
+        <location filename="../src/interface/fetmainform.cpp" line="357"/>
         <source>Allowed minimum %1 to maximum %2</source>
         <translation>Permis minim %1 până la maxim %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="334"/>
+        <location filename="../src/interface/fetmainform.cpp" line="345"/>
         <source>Random seed</source>
         <translation>Starea generatorului de numere aleatoare</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="336"/>
+        <location filename="../src/interface/fetmainform.cpp" line="347"/>
         <source>Random seed X component:</source>
         <comment>Means the X component of the random seed (random seed has 2 components, X and Y). Please keep translation short</comment>
         <translation>Starea aleatoare, componenta X:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="338"/>
+        <location filename="../src/interface/fetmainform.cpp" line="349"/>
         <source>Random seed Y component:</source>
         <comment>Means the Y component of the random seed (random seed has 2 components, X and Y). Please keep translation short</comment>
         <translation>Starea aleatoare, componenta Y:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="340"/>
+        <location filename="../src/interface/fetmainform.cpp" line="351"/>
         <source>OK</source>
         <translation>Bine</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="342"/>
+        <location filename="../src/interface/fetmainform.cpp" line="353"/>
         <source>Help</source>
         <translation>Ajutor</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="343"/>
+        <location filename="../src/interface/fetmainform.cpp" line="354"/>
         <source>Cancel</source>
         <translation>Anulează</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="393"/>
+        <location filename="../src/interface/fetmainform.cpp" line="404"/>
         <source>FET information</source>
         <translation>FET - informaţie</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="394"/>
+        <location filename="../src/interface/fetmainform.cpp" line="405"/>
         <source>You can control the random behaviour of FET with this function</source>
         <translation>Puteţi controla comportamentul aleator al FET cu această funcţie</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="395"/>
+        <location filename="../src/interface/fetmainform.cpp" line="406"/>
         <source>The random seed is the state of the random number generator.</source>
         <translation>Starea aleatoare este starea generatorului de numere aleatoare.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="396"/>
+        <location filename="../src/interface/fetmainform.cpp" line="407"/>
         <source>It has two components, X and Y.</source>
         <translation>Ea are două componente, X şi Y.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="397"/>
+        <location filename="../src/interface/fetmainform.cpp" line="408"/>
         <source>X is a value at least %1 and at most %2.</source>
         <translation>X este o valoare cel puţin %1 şi cel mult %2.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="398"/>
+        <location filename="../src/interface/fetmainform.cpp" line="409"/>
         <source>Y is a value at least %1 and at most %2.</source>
         <translation>Y este o valoare cel puţin %1 şi cel mult %2.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="399"/>
+        <location filename="../src/interface/fetmainform.cpp" line="410"/>
         <source>The random seed before the generation of a timetable (the X and Y components) is saved on disk in the corresponding timetables directory, so that you can simulate again the same generation after that.</source>
         <translation>Starea aleatoare înainte de generarea unui orar (componentele X şi Y) este salvată pe disc în directorul corespunzător de orare, aşa încât puteţi simula din nou aceeaşi generare după aceea.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="401"/>
+        <location filename="../src/interface/fetmainform.cpp" line="412"/>
         <source>Mode of operation: to obtain the same timetable twice, give the random seed two values (say X=1234, Y=12345), then generate single, then make it again the same values (X=1234 and Y=12345), then generate single again. The timetables will be the same. If you generate multiple instead of single, the first set of timetables will be the same as the second set (if you generate the same number of timetables) but of course timetables inside each set will be different. If you enter the same random seed (X and Y) on different computers (but using the same FET version, see note below) and generate single, the timetables will be the same (if you generate multiple, the sets of timetables will correspond, the first timetable from simulation 1 with first timetable from simulation 2, etc.)</source>
         <translation>Mod de operare: pentru a obţine acelaşi orar de două ori, daţi stării aleatoare două valori (să zicem X=1234, Y=12345), apoi generaţi un singur orar, apoi faceţi din nou aceleaşi valori (X=1234 şi Y=12345), apoi generaţi un singur orar din nou. Orarele vor fi aceleaşi. Dacă generaţi orare multiple în loc de singure, primul set de orare va fi acelaşi cu al doilea set (dacă generaţi acelaşi număr de orare) dar desigur orarele din fiecare set vor fi diferite. Dacă introduceţi aceeaşi stare aleatoare (X şi Y) pe calculatoare diferite (dar folosind aceeaşi versiune FET, vedeţi nota de mai jos) şi generaţi un singur orar, orarele vor fi la fel (dacă generaţi multiple orare, seturile de orare vor corespunde, primul orar din simularea 1 cu primul orar din simularea 2, etc.)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="410"/>
+        <location filename="../src/interface/fetmainform.cpp" line="421"/>
         <source>Note: of course you need exactly the same conditions to duplicate the same simulations (so, you need exactly the same data - activities, constraints, etc.).</source>
         <translation>Notă: desigur, aveţi nevoie de exact aceleaşi condiţii ca să duplicaţi aceleaşi simulări (aşadar, aveţi nevoie de exact aceleaşi date - activităţi, constrângeri, etc.).</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="412"/>
+        <location filename="../src/interface/fetmainform.cpp" line="423"/>
         <source>Note: for different versions of FET, the behavior of generation may be totally different, even for the same data and the same random seed (same X and same Y), due to possible changes in the algorithm. You need to consider this as a precaution.</source>
         <translation>Notă: pentru versiuni diferite FET, comportamentul generării poate fi complet diferit, chiar pentru aceleaşi date şi aceeaşi stare aleatoare (acelaşi X şi acelaşi Y), din cauza posibilelor schimbări în algoritm. Trebuie să vă gândiţi la aceasta ca o precauţie.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="415"/>
+        <location filename="../src/interface/fetmainform.cpp" line="426"/>
         <source>Note: when you start FET, each time, the random seed X is the number of seconds elapsed since 1 January 1970 and the random seed Y is the next number in the Y series, after the number of seconds elapsed since 1 January 1970</source>
         <translation>Notă: când porniţi FET, de fiecare dată, starea aleatoare X este numărul de secunde trecute de la 1 ianuarie 1970 şi starea aleatoare Y este următorul număr în seria Y, după numărul de secunde trecute de la 1 ianuarie 1970</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="418"/>
+        <location filename="../src/interface/fetmainform.cpp" line="429"/>
         <source>After you generate (even partially), the random seed (X and Y components) will change (each call of the random number generator updates the random seed components to the next numbers in the sequence, and there are many calls to this random generating routine in the generate function)</source>
         <translation>După ce generaţi (chiar şi parţial), starea aleatoare (componentele X şi Y) se vor schimba (fiecare apel la generatorul de numere aleatoare aduce la zi componentele aleatoare la următoarele numere în secvenţă, şi sunt multe apeluri către această rutină de generare aleatoare în funcţia de generare)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="421"/>
+        <location filename="../src/interface/fetmainform.cpp" line="432"/>
         <source>This setting is useful for more things, maybe one thing is bug report: send you file along with the random seed at the start of generating (the two components, X and Y, are saved in the timetable directory at the start of generation)</source>
         <translation>Această setare este folositoare pentru multe lucruri, poate un lucru este raportarea de erori: trimiteţi fişierul dvs. împreună cu starea aleatoare la începutul generării (cele două componente, X şi Y, sunt salvate în directorul de orare la începutul generării)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="430"/>
+        <location filename="../src/interface/fetmainform.cpp" line="441"/>
         <source>The random seed X component must be at least %1 and at most %2</source>
         <translation>Starea aleatoare componenta X trebuie să fie cel puţin %1 şi cel mult %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="436"/>
+        <location filename="../src/interface/fetmainform.cpp" line="447"/>
         <source>The random seed Y component must be at least %1 and at most %2</source>
         <translation>Starea aleatoare componenta Y trebuie să fie cel puţin %1 şi cel mult %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="430"/>
-        <location filename="../src/interface/fetmainform.cpp" line="436"/>
+        <location filename="../src/interface/fetmainform.cpp" line="441"/>
+        <location filename="../src/interface/fetmainform.cpp" line="447"/>
         <source>FET warning</source>
         <translation>FET - avertisment</translation>
     </message>
@@ -45671,43 +48057,43 @@ Notă: profesor indisponibil şi pauză nu sunt socotite ca ferestre.</translati
     <name>Rules</name>
     <message>
         <location filename="../src/engine/rules.cpp" line="105"/>
-        <location filename="../src/engine/rules.cpp" line="4648"/>
+        <location filename="../src/engine/rules.cpp" line="4702"/>
         <source>Monday</source>
         <translation>Luni</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="106"/>
-        <location filename="../src/engine/rules.cpp" line="4649"/>
+        <location filename="../src/engine/rules.cpp" line="4703"/>
         <source>Tuesday</source>
         <translation>Marţi</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="107"/>
-        <location filename="../src/engine/rules.cpp" line="4650"/>
+        <location filename="../src/engine/rules.cpp" line="4704"/>
         <source>Wednesday</source>
         <translation>Miercuri</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="108"/>
-        <location filename="../src/engine/rules.cpp" line="4651"/>
+        <location filename="../src/engine/rules.cpp" line="4705"/>
         <source>Thursday</source>
         <translation>Joi</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="109"/>
-        <location filename="../src/engine/rules.cpp" line="4652"/>
+        <location filename="../src/engine/rules.cpp" line="4706"/>
         <source>Friday</source>
         <translation>Vineri</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="101"/>
-        <location filename="../src/engine/rules.cpp" line="4644"/>
+        <location filename="../src/engine/rules.cpp" line="4698"/>
         <source>Default institution</source>
         <translation>Instituţie implicită</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="102"/>
-        <location filename="../src/engine/rules.cpp" line="4645"/>
+        <location filename="../src/engine/rules.cpp" line="4699"/>
         <source>Default comments</source>
         <translation>Comentarii implicite</translation>
     </message>
@@ -45723,33 +48109,33 @@ Notă: profesor indisponibil şi pauză nu sunt socotite ca ferestre.</translati
         <location filename="../src/engine/rules.cpp" line="704"/>
         <location filename="../src/engine/rules.cpp" line="732"/>
         <location filename="../src/engine/rules.cpp" line="792"/>
-        <location filename="../src/engine/rules.cpp" line="4622"/>
-        <location filename="../src/engine/rules.cpp" line="4634"/>
-        <location filename="../src/engine/rules.cpp" line="5010"/>
-        <location filename="../src/engine/rules.cpp" line="6016"/>
-        <location filename="../src/engine/rules.cpp" line="6063"/>
-        <location filename="../src/engine/rules.cpp" line="6201"/>
-        <location filename="../src/engine/rules.cpp" line="6263"/>
-        <location filename="../src/engine/rules.cpp" line="6284"/>
-        <location filename="../src/engine/rules.cpp" line="6314"/>
-        <location filename="../src/engine/rules.cpp" line="6328"/>
-        <location filename="../src/engine/rules.cpp" line="6356"/>
-        <location filename="../src/engine/rules.cpp" line="6373"/>
-        <location filename="../src/engine/rules.cpp" line="6390"/>
-        <location filename="../src/engine/rules.cpp" line="6461"/>
-        <location filename="../src/engine/rules.cpp" line="6495"/>
-        <location filename="../src/engine/rules.cpp" line="6756"/>
-        <location filename="../src/engine/rules.cpp" line="7842"/>
-        <location filename="../src/engine/rules.cpp" line="7958"/>
-        <location filename="../src/engine/rules.cpp" line="8053"/>
-        <location filename="../src/engine/rules.cpp" line="8093"/>
-        <location filename="../src/engine/rules.cpp" line="8159"/>
-        <location filename="../src/engine/rules.cpp" line="8275"/>
-        <location filename="../src/engine/rules.cpp" line="10588"/>
-        <location filename="../src/engine/rules.cpp" line="10610"/>
-        <location filename="../src/engine/rules.cpp" line="10766"/>
-        <location filename="../src/engine/rules.cpp" line="10788"/>
-        <location filename="../src/engine/rules.cpp" line="14477"/>
+        <location filename="../src/engine/rules.cpp" line="4676"/>
+        <location filename="../src/engine/rules.cpp" line="4688"/>
+        <location filename="../src/engine/rules.cpp" line="5064"/>
+        <location filename="../src/engine/rules.cpp" line="6070"/>
+        <location filename="../src/engine/rules.cpp" line="6117"/>
+        <location filename="../src/engine/rules.cpp" line="6255"/>
+        <location filename="../src/engine/rules.cpp" line="6317"/>
+        <location filename="../src/engine/rules.cpp" line="6338"/>
+        <location filename="../src/engine/rules.cpp" line="6368"/>
+        <location filename="../src/engine/rules.cpp" line="6382"/>
+        <location filename="../src/engine/rules.cpp" line="6410"/>
+        <location filename="../src/engine/rules.cpp" line="6427"/>
+        <location filename="../src/engine/rules.cpp" line="6444"/>
+        <location filename="../src/engine/rules.cpp" line="6541"/>
+        <location filename="../src/engine/rules.cpp" line="6575"/>
+        <location filename="../src/engine/rules.cpp" line="6836"/>
+        <location filename="../src/engine/rules.cpp" line="7922"/>
+        <location filename="../src/engine/rules.cpp" line="8038"/>
+        <location filename="../src/engine/rules.cpp" line="8133"/>
+        <location filename="../src/engine/rules.cpp" line="8173"/>
+        <location filename="../src/engine/rules.cpp" line="8239"/>
+        <location filename="../src/engine/rules.cpp" line="8355"/>
+        <location filename="../src/engine/rules.cpp" line="10668"/>
+        <location filename="../src/engine/rules.cpp" line="10690"/>
+        <location filename="../src/engine/rules.cpp" line="10846"/>
+        <location filename="../src/engine/rules.cpp" line="10868"/>
+        <location filename="../src/engine/rules.cpp" line="14871"/>
         <source>FET information</source>
         <translation>FET - informaţie</translation>
     </message>
@@ -45773,84 +48159,84 @@ Notă: profesor indisponibil şi pauză nu sunt socotite ca ferestre.</translati
     <message>
         <location filename="../src/engine/rules.cpp" line="623"/>
         <location filename="../src/engine/rules.cpp" line="705"/>
-        <location filename="../src/engine/rules.cpp" line="6019"/>
-        <location filename="../src/engine/rules.cpp" line="6066"/>
-        <location filename="../src/engine/rules.cpp" line="6137"/>
-        <location filename="../src/engine/rules.cpp" line="6148"/>
-        <location filename="../src/engine/rules.cpp" line="6159"/>
-        <location filename="../src/engine/rules.cpp" line="6205"/>
-        <location filename="../src/engine/rules.cpp" line="6253"/>
-        <location filename="../src/engine/rules.cpp" line="6269"/>
-        <location filename="../src/engine/rules.cpp" line="6287"/>
-        <location filename="../src/engine/rules.cpp" line="6319"/>
-        <location filename="../src/engine/rules.cpp" line="6333"/>
-        <location filename="../src/engine/rules.cpp" line="6361"/>
-        <location filename="../src/engine/rules.cpp" line="6378"/>
-        <location filename="../src/engine/rules.cpp" line="6396"/>
-        <location filename="../src/engine/rules.cpp" line="6430"/>
-        <location filename="../src/engine/rules.cpp" line="6441"/>
-        <location filename="../src/engine/rules.cpp" line="6463"/>
-        <location filename="../src/engine/rules.cpp" line="6498"/>
-        <location filename="../src/engine/rules.cpp" line="6512"/>
-        <location filename="../src/engine/rules.cpp" line="6524"/>
-        <location filename="../src/engine/rules.cpp" line="6537"/>
-        <location filename="../src/engine/rules.cpp" line="6549"/>
-        <location filename="../src/engine/rules.cpp" line="6561"/>
-        <location filename="../src/engine/rules.cpp" line="6573"/>
-        <location filename="../src/engine/rules.cpp" line="6585"/>
-        <location filename="../src/engine/rules.cpp" line="6603"/>
-        <location filename="../src/engine/rules.cpp" line="6652"/>
-        <location filename="../src/engine/rules.cpp" line="6664"/>
-        <location filename="../src/engine/rules.cpp" line="6676"/>
-        <location filename="../src/engine/rules.cpp" line="6688"/>
-        <location filename="../src/engine/rules.cpp" line="6758"/>
-        <location filename="../src/engine/rules.cpp" line="10603"/>
-        <location filename="../src/engine/rules.cpp" line="10615"/>
-        <location filename="../src/engine/rules.cpp" line="10781"/>
-        <location filename="../src/engine/rules.cpp" line="10793"/>
-        <location filename="../src/engine/rules.cpp" line="14492"/>
+        <location filename="../src/engine/rules.cpp" line="6073"/>
+        <location filename="../src/engine/rules.cpp" line="6120"/>
+        <location filename="../src/engine/rules.cpp" line="6191"/>
+        <location filename="../src/engine/rules.cpp" line="6202"/>
+        <location filename="../src/engine/rules.cpp" line="6213"/>
+        <location filename="../src/engine/rules.cpp" line="6259"/>
+        <location filename="../src/engine/rules.cpp" line="6307"/>
+        <location filename="../src/engine/rules.cpp" line="6323"/>
+        <location filename="../src/engine/rules.cpp" line="6341"/>
+        <location filename="../src/engine/rules.cpp" line="6373"/>
+        <location filename="../src/engine/rules.cpp" line="6387"/>
+        <location filename="../src/engine/rules.cpp" line="6415"/>
+        <location filename="../src/engine/rules.cpp" line="6432"/>
+        <location filename="../src/engine/rules.cpp" line="6450"/>
+        <location filename="../src/engine/rules.cpp" line="6484"/>
+        <location filename="../src/engine/rules.cpp" line="6495"/>
+        <location filename="../src/engine/rules.cpp" line="6543"/>
+        <location filename="../src/engine/rules.cpp" line="6578"/>
+        <location filename="../src/engine/rules.cpp" line="6592"/>
+        <location filename="../src/engine/rules.cpp" line="6604"/>
+        <location filename="../src/engine/rules.cpp" line="6617"/>
+        <location filename="../src/engine/rules.cpp" line="6629"/>
+        <location filename="../src/engine/rules.cpp" line="6641"/>
+        <location filename="../src/engine/rules.cpp" line="6653"/>
+        <location filename="../src/engine/rules.cpp" line="6665"/>
+        <location filename="../src/engine/rules.cpp" line="6683"/>
+        <location filename="../src/engine/rules.cpp" line="6732"/>
+        <location filename="../src/engine/rules.cpp" line="6744"/>
+        <location filename="../src/engine/rules.cpp" line="6756"/>
+        <location filename="../src/engine/rules.cpp" line="6768"/>
+        <location filename="../src/engine/rules.cpp" line="6838"/>
+        <location filename="../src/engine/rules.cpp" line="10683"/>
+        <location filename="../src/engine/rules.cpp" line="10695"/>
+        <location filename="../src/engine/rules.cpp" line="10861"/>
+        <location filename="../src/engine/rules.cpp" line="10873"/>
+        <location filename="../src/engine/rules.cpp" line="14886"/>
         <source>Skip rest</source>
         <translation>Trec peste restul</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="623"/>
         <location filename="../src/engine/rules.cpp" line="705"/>
-        <location filename="../src/engine/rules.cpp" line="6019"/>
-        <location filename="../src/engine/rules.cpp" line="6066"/>
-        <location filename="../src/engine/rules.cpp" line="6137"/>
-        <location filename="../src/engine/rules.cpp" line="6148"/>
-        <location filename="../src/engine/rules.cpp" line="6159"/>
-        <location filename="../src/engine/rules.cpp" line="6205"/>
-        <location filename="../src/engine/rules.cpp" line="6253"/>
-        <location filename="../src/engine/rules.cpp" line="6269"/>
-        <location filename="../src/engine/rules.cpp" line="6287"/>
-        <location filename="../src/engine/rules.cpp" line="6319"/>
-        <location filename="../src/engine/rules.cpp" line="6333"/>
-        <location filename="../src/engine/rules.cpp" line="6361"/>
-        <location filename="../src/engine/rules.cpp" line="6378"/>
-        <location filename="../src/engine/rules.cpp" line="6396"/>
-        <location filename="../src/engine/rules.cpp" line="6430"/>
-        <location filename="../src/engine/rules.cpp" line="6441"/>
-        <location filename="../src/engine/rules.cpp" line="6463"/>
-        <location filename="../src/engine/rules.cpp" line="6498"/>
-        <location filename="../src/engine/rules.cpp" line="6512"/>
-        <location filename="../src/engine/rules.cpp" line="6524"/>
-        <location filename="../src/engine/rules.cpp" line="6537"/>
-        <location filename="../src/engine/rules.cpp" line="6549"/>
-        <location filename="../src/engine/rules.cpp" line="6561"/>
-        <location filename="../src/engine/rules.cpp" line="6573"/>
-        <location filename="../src/engine/rules.cpp" line="6585"/>
-        <location filename="../src/engine/rules.cpp" line="6603"/>
-        <location filename="../src/engine/rules.cpp" line="6652"/>
-        <location filename="../src/engine/rules.cpp" line="6664"/>
-        <location filename="../src/engine/rules.cpp" line="6676"/>
-        <location filename="../src/engine/rules.cpp" line="6688"/>
-        <location filename="../src/engine/rules.cpp" line="6758"/>
-        <location filename="../src/engine/rules.cpp" line="10603"/>
-        <location filename="../src/engine/rules.cpp" line="10615"/>
-        <location filename="../src/engine/rules.cpp" line="10781"/>
-        <location filename="../src/engine/rules.cpp" line="10793"/>
-        <location filename="../src/engine/rules.cpp" line="14492"/>
+        <location filename="../src/engine/rules.cpp" line="6073"/>
+        <location filename="../src/engine/rules.cpp" line="6120"/>
+        <location filename="../src/engine/rules.cpp" line="6191"/>
+        <location filename="../src/engine/rules.cpp" line="6202"/>
+        <location filename="../src/engine/rules.cpp" line="6213"/>
+        <location filename="../src/engine/rules.cpp" line="6259"/>
+        <location filename="../src/engine/rules.cpp" line="6307"/>
+        <location filename="../src/engine/rules.cpp" line="6323"/>
+        <location filename="../src/engine/rules.cpp" line="6341"/>
+        <location filename="../src/engine/rules.cpp" line="6373"/>
+        <location filename="../src/engine/rules.cpp" line="6387"/>
+        <location filename="../src/engine/rules.cpp" line="6415"/>
+        <location filename="../src/engine/rules.cpp" line="6432"/>
+        <location filename="../src/engine/rules.cpp" line="6450"/>
+        <location filename="../src/engine/rules.cpp" line="6484"/>
+        <location filename="../src/engine/rules.cpp" line="6495"/>
+        <location filename="../src/engine/rules.cpp" line="6543"/>
+        <location filename="../src/engine/rules.cpp" line="6578"/>
+        <location filename="../src/engine/rules.cpp" line="6592"/>
+        <location filename="../src/engine/rules.cpp" line="6604"/>
+        <location filename="../src/engine/rules.cpp" line="6617"/>
+        <location filename="../src/engine/rules.cpp" line="6629"/>
+        <location filename="../src/engine/rules.cpp" line="6641"/>
+        <location filename="../src/engine/rules.cpp" line="6653"/>
+        <location filename="../src/engine/rules.cpp" line="6665"/>
+        <location filename="../src/engine/rules.cpp" line="6683"/>
+        <location filename="../src/engine/rules.cpp" line="6732"/>
+        <location filename="../src/engine/rules.cpp" line="6744"/>
+        <location filename="../src/engine/rules.cpp" line="6756"/>
+        <location filename="../src/engine/rules.cpp" line="6768"/>
+        <location filename="../src/engine/rules.cpp" line="6838"/>
+        <location filename="../src/engine/rules.cpp" line="10683"/>
+        <location filename="../src/engine/rules.cpp" line="10695"/>
+        <location filename="../src/engine/rules.cpp" line="10861"/>
+        <location filename="../src/engine/rules.cpp" line="10873"/>
+        <location filename="../src/engine/rules.cpp" line="14886"/>
         <source>See next</source>
         <translation>Văd următoarea</translation>
     </message>
@@ -45870,69 +48256,69 @@ Notă: profesor indisponibil şi pauză nu sunt socotite ca ferestre.</translati
         <translation>Procesez intern constrângerile de spaţiu ... vă rog aşteptaţi</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="2763"/>
-        <location filename="../src/engine/rules.cpp" line="2768"/>
-        <location filename="../src/engine/rules.cpp" line="2773"/>
-        <location filename="../src/engine/rules.cpp" line="2899"/>
-        <location filename="../src/engine/rules.cpp" line="2904"/>
-        <location filename="../src/engine/rules.cpp" line="2909"/>
-        <location filename="../src/engine/rules.cpp" line="4440"/>
-        <location filename="../src/engine/rules.cpp" line="4457"/>
-        <location filename="../src/engine/rules.cpp" line="4468"/>
-        <location filename="../src/engine/rules.cpp" line="4553"/>
-        <location filename="../src/engine/rules.cpp" line="4580"/>
-        <location filename="../src/engine/rules.cpp" line="4616"/>
-        <location filename="../src/engine/rules.cpp" line="4926"/>
-        <location filename="../src/engine/rules.cpp" line="4981"/>
-        <location filename="../src/engine/rules.cpp" line="5039"/>
-        <location filename="../src/engine/rules.cpp" line="5094"/>
-        <location filename="../src/engine/rules.cpp" line="5670"/>
-        <location filename="../src/engine/rules.cpp" line="5841"/>
-        <location filename="../src/engine/rules.cpp" line="5878"/>
-        <location filename="../src/engine/rules.cpp" line="5956"/>
-        <location filename="../src/engine/rules.cpp" line="6135"/>
-        <location filename="../src/engine/rules.cpp" line="6146"/>
-        <location filename="../src/engine/rules.cpp" line="6157"/>
-        <location filename="../src/engine/rules.cpp" line="6251"/>
-        <location filename="../src/engine/rules.cpp" line="6428"/>
-        <location filename="../src/engine/rules.cpp" line="6439"/>
-        <location filename="../src/engine/rules.cpp" line="6510"/>
-        <location filename="../src/engine/rules.cpp" line="6522"/>
-        <location filename="../src/engine/rules.cpp" line="6535"/>
-        <location filename="../src/engine/rules.cpp" line="6547"/>
-        <location filename="../src/engine/rules.cpp" line="6559"/>
-        <location filename="../src/engine/rules.cpp" line="6571"/>
-        <location filename="../src/engine/rules.cpp" line="6583"/>
-        <location filename="../src/engine/rules.cpp" line="6601"/>
-        <location filename="../src/engine/rules.cpp" line="6650"/>
-        <location filename="../src/engine/rules.cpp" line="6662"/>
-        <location filename="../src/engine/rules.cpp" line="6674"/>
-        <location filename="../src/engine/rules.cpp" line="6686"/>
-        <location filename="../src/engine/rules.cpp" line="6835"/>
-        <location filename="../src/engine/rules.cpp" line="8664"/>
-        <location filename="../src/engine/rules.cpp" line="8803"/>
-        <location filename="../src/engine/rules.cpp" line="9708"/>
-        <location filename="../src/engine/rules.cpp" line="9785"/>
-        <location filename="../src/engine/rules.cpp" line="10356"/>
-        <location filename="../src/engine/rules.cpp" line="10447"/>
-        <location filename="../src/engine/rules.cpp" line="10525"/>
-        <location filename="../src/engine/rules.cpp" line="10703"/>
-        <location filename="../src/engine/rules.cpp" line="14434"/>
+        <location filename="../src/engine/rules.cpp" line="2796"/>
+        <location filename="../src/engine/rules.cpp" line="2801"/>
+        <location filename="../src/engine/rules.cpp" line="2806"/>
+        <location filename="../src/engine/rules.cpp" line="2932"/>
+        <location filename="../src/engine/rules.cpp" line="2937"/>
+        <location filename="../src/engine/rules.cpp" line="2942"/>
+        <location filename="../src/engine/rules.cpp" line="4494"/>
+        <location filename="../src/engine/rules.cpp" line="4511"/>
+        <location filename="../src/engine/rules.cpp" line="4522"/>
+        <location filename="../src/engine/rules.cpp" line="4607"/>
+        <location filename="../src/engine/rules.cpp" line="4634"/>
+        <location filename="../src/engine/rules.cpp" line="4670"/>
+        <location filename="../src/engine/rules.cpp" line="4980"/>
+        <location filename="../src/engine/rules.cpp" line="5035"/>
+        <location filename="../src/engine/rules.cpp" line="5093"/>
+        <location filename="../src/engine/rules.cpp" line="5148"/>
+        <location filename="../src/engine/rules.cpp" line="5724"/>
+        <location filename="../src/engine/rules.cpp" line="5895"/>
+        <location filename="../src/engine/rules.cpp" line="5932"/>
+        <location filename="../src/engine/rules.cpp" line="6010"/>
+        <location filename="../src/engine/rules.cpp" line="6189"/>
+        <location filename="../src/engine/rules.cpp" line="6200"/>
+        <location filename="../src/engine/rules.cpp" line="6211"/>
+        <location filename="../src/engine/rules.cpp" line="6305"/>
+        <location filename="../src/engine/rules.cpp" line="6482"/>
+        <location filename="../src/engine/rules.cpp" line="6493"/>
+        <location filename="../src/engine/rules.cpp" line="6590"/>
+        <location filename="../src/engine/rules.cpp" line="6602"/>
+        <location filename="../src/engine/rules.cpp" line="6615"/>
+        <location filename="../src/engine/rules.cpp" line="6627"/>
+        <location filename="../src/engine/rules.cpp" line="6639"/>
+        <location filename="../src/engine/rules.cpp" line="6651"/>
+        <location filename="../src/engine/rules.cpp" line="6663"/>
+        <location filename="../src/engine/rules.cpp" line="6681"/>
+        <location filename="../src/engine/rules.cpp" line="6730"/>
+        <location filename="../src/engine/rules.cpp" line="6742"/>
+        <location filename="../src/engine/rules.cpp" line="6754"/>
+        <location filename="../src/engine/rules.cpp" line="6766"/>
+        <location filename="../src/engine/rules.cpp" line="6915"/>
+        <location filename="../src/engine/rules.cpp" line="8744"/>
+        <location filename="../src/engine/rules.cpp" line="8883"/>
+        <location filename="../src/engine/rules.cpp" line="9788"/>
+        <location filename="../src/engine/rules.cpp" line="9865"/>
+        <location filename="../src/engine/rules.cpp" line="10436"/>
+        <location filename="../src/engine/rules.cpp" line="10527"/>
+        <location filename="../src/engine/rules.cpp" line="10605"/>
+        <location filename="../src/engine/rules.cpp" line="10783"/>
+        <location filename="../src/engine/rules.cpp" line="14828"/>
         <source>FET warning</source>
         <translation>FET - avertisment</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="4440"/>
+        <location filename="../src/engine/rules.cpp" line="4494"/>
         <source>Could not open file - not existing or in use</source>
         <translation>Nu pot deschide fişierul - nu există sau este în uz</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="5826"/>
+        <location filename="../src/engine/rules.cpp" line="5880"/>
         <source>The activity with id=%1 contains incorrect data</source>
         <translation>Activitatea cu id=%1 conţine date incorecte</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6836"/>
+        <location filename="../src/engine/rules.cpp" line="6916"/>
         <source>Could not read file - XML parse error at line %1, column %2:
 %3</source>
         <comment>The error description is %3</comment>
@@ -45940,56 +48326,56 @@ Notă: profesor indisponibil şi pauză nu sunt socotite ca ferestre.</translati
 %3</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="4457"/>
-        <location filename="../src/engine/rules.cpp" line="4468"/>
+        <location filename="../src/engine/rules.cpp" line="4511"/>
+        <location filename="../src/engine/rules.cpp" line="4522"/>
         <source>Cannot create or use directory %1 - cannot continue</source>
         <translation>Nu pot crea sau folosi directorul %1 - nu pot continua</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="4498"/>
+        <location filename="../src/engine/rules.cpp" line="4552"/>
         <source>FET cannot open the log file %1 for writing. This might mean that you don&apos;t have write permissions in this location. You can continue operation, but you might not be able to save the generated timetables as html files</source>
         <translation>FET nu poate deschide fişierul de log %1 pentru scriere. Aceasta poate însemna că nu aveţi permisiuni de scriere în acel loc. Puteţi continua operaţiunea, dar s-ar putea să nu puteţi salva orarele generate ca fişiere html</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="4501"/>
+        <location filename="../src/engine/rules.cpp" line="4555"/>
         <source>A solution is to remove that file (if it exists already) or set its permissions to allow writing</source>
         <translation>O soluţie este să ştergeţi acel fişier (dacă el există deja) sau să setaţi permisiunile lui pentru a permite scrierea</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="4502"/>
+        <location filename="../src/engine/rules.cpp" line="4556"/>
         <source>Please report possible bug</source>
         <translation>Vă rog raportaţi posibila eroare</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="4503"/>
-        <location filename="../src/engine/rules.cpp" line="6865"/>
-        <location filename="../src/engine/rules.cpp" line="6908"/>
-        <location filename="../src/engine/rules.cpp" line="7034"/>
+        <location filename="../src/engine/rules.cpp" line="4557"/>
+        <location filename="../src/engine/rules.cpp" line="6945"/>
+        <location filename="../src/engine/rules.cpp" line="6988"/>
+        <location filename="../src/engine/rules.cpp" line="7114"/>
         <source>FET critical</source>
         <translation>FET - critic</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="4553"/>
+        <location filename="../src/engine/rules.cpp" line="4607"/>
         <source>File contains a version numbering scheme which is not matched by v.v.va (3 numbers separated by points, followed by any string a, which may be empty). File will be opened, but you are advised to check the version of the .fet file (in the beginning of the file). If this is a FET bug, please report it</source>
         <translation>Fişierul conţine o schema de numerotare a versiunii care nu se potriveşte cu v.v.va (3 numere separate de puncte, urmate de orice şir a, care poate fi vid). Fişierul va fi deschis, dar sunteţi sfătuit să verificaţi versiunea fişierului .fet (la începutul fişierului). Dacă este o eroare FET, vă rog raportaţi-o</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="4556"/>
+        <location filename="../src/engine/rules.cpp" line="4610"/>
         <source>If you are opening a file older than FET format version 5, it will be converted to latest FET data format</source>
         <translation>Dacă deschideţi un fişier mai vechi decât formatul FET versiunea 5, el va fi convertit la cel mai nou format de date FET</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="4580"/>
+        <location filename="../src/engine/rules.cpp" line="4634"/>
         <source>FET version does not respect the format v.v.va (3 numbers separated by points, followed by any string a, which may be empty). This is probably a bug in FET - please report it</source>
         <translation>Versiunea FET nu respectă formatul v.v.va (3 numere separate de puncte, urmate de orice şir a, care poate fi vid). Aceasta este probabil o eroare în FET - vă rog raportaţi-o</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="4616"/>
+        <location filename="../src/engine/rules.cpp" line="4670"/>
         <source>File does not have a corresponding beginning tag - it should be %1 or %2. File is incorrect...it cannot be opened</source>
         <translation>Fişierul nu are o etichetă corespunzătoare de început - ar trebui să fie %1 sau %2. Fişierul este incorect...nu poate fi deschis</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="4623"/>
+        <location filename="../src/engine/rules.cpp" line="4677"/>
         <source>Opening older file - it will be converted to latest format, automatically assigning weight percentages to constraints and dropping parity for activities. You are advised to make a backup of your old file before saving in new format.
 
 Please note that the default weight percentage of constraints min days between activities will be 95% (mainly satisfied, not always) and &apos;force consecutive if same day&apos; will be set to true (meaning that if the activities are in the same day, they will be placed continuously, in a bigger duration activity). If you want, you can modify this percent to be 100%, manually in the fet input file or from the interface</source>
@@ -45998,150 +48384,150 @@ Please note that the default weight percentage of constraints min days between a
 Vă rog luaţi aminte că importanţa procentuală predefinită a constrângerilor min zile între activităţi va fi 95% (în principal satisfăcută, nu totdeauna) şi &apos;forţează consecutive dacă în aceeaşi zi&apos; va fi setată la adevărat (însemnând că dacă activităţile sunt în aceeaşi zi ,ele vor fi plasate continuu, într-o activitate cu durată mai mare). Dacă doriţi, puteţi modifica acest procent să fie 100%, manual în fişierul fet de intrare sau din interfaţă</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="4635"/>
+        <location filename="../src/engine/rules.cpp" line="4689"/>
         <source>Opening a file generated with a newer version than your current FET software ... file will be opened but it is recommended to update your FET software to the latest version</source>
         <translation>Deschid un fişier generat cu o versiune mai nouă decât programul FET curent al dvs. ... fişierul va fi deschis dar este recomandat să aduceţi la zi programul FET al dvs. (la cea mai nouă versiune)</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="4636"/>
+        <location filename="../src/engine/rules.cpp" line="4690"/>
         <source>Your FET version: %1, file version: %2</source>
         <translation>Programul FET al dvs. are versiunea: %1, fişierul are versiunea: %2</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="4705"/>
-        <location filename="../src/engine/rules.cpp" line="4786"/>
-        <location filename="../src/engine/rules.cpp" line="4945"/>
-        <location filename="../src/engine/rules.cpp" line="5000"/>
-        <location filename="../src/engine/rules.cpp" line="5058"/>
-        <location filename="../src/engine/rules.cpp" line="5113"/>
-        <location filename="../src/engine/rules.cpp" line="5788"/>
-        <location filename="../src/engine/rules.cpp" line="5790"/>
-        <location filename="../src/engine/rules.cpp" line="5792"/>
-        <location filename="../src/engine/rules.cpp" line="5897"/>
-        <location filename="../src/engine/rules.cpp" line="5975"/>
-        <location filename="../src/engine/rules.cpp" line="7555"/>
-        <location filename="../src/engine/rules.cpp" line="7632"/>
-        <location filename="../src/engine/rules.cpp" line="7677"/>
-        <location filename="../src/engine/rules.cpp" line="7726"/>
-        <location filename="../src/engine/rules.cpp" line="7771"/>
-        <location filename="../src/engine/rules.cpp" line="8596"/>
-        <location filename="../src/engine/rules.cpp" line="9848"/>
-        <location filename="../src/engine/rules.cpp" line="9914"/>
-        <location filename="../src/engine/rules.cpp" line="9985"/>
-        <location filename="../src/engine/rules.cpp" line="10051"/>
-        <location filename="../src/engine/rules.cpp" line="10103"/>
-        <location filename="../src/engine/rules.cpp" line="10160"/>
-        <location filename="../src/engine/rules.cpp" line="10212"/>
-        <location filename="../src/engine/rules.cpp" line="10269"/>
-        <location filename="../src/engine/rules.cpp" line="10341"/>
-        <location filename="../src/engine/rules.cpp" line="10427"/>
-        <location filename="../src/engine/rules.cpp" line="11466"/>
-        <location filename="../src/engine/rules.cpp" line="11605"/>
-        <location filename="../src/engine/rules.cpp" line="11744"/>
-        <location filename="../src/engine/rules.cpp" line="12010"/>
-        <location filename="../src/engine/rules.cpp" line="12720"/>
-        <location filename="../src/engine/rules.cpp" line="12841"/>
-        <location filename="../src/engine/rules.cpp" line="13030"/>
-        <location filename="../src/engine/rules.cpp" line="13211"/>
-        <location filename="../src/engine/rules.cpp" line="13392"/>
-        <location filename="../src/engine/rules.cpp" line="13569"/>
-        <location filename="../src/engine/rules.cpp" line="13745"/>
-        <location filename="../src/engine/rules.cpp" line="13869"/>
-        <location filename="../src/engine/rules.cpp" line="14009"/>
-        <location filename="../src/engine/rules.cpp" line="14357"/>
+        <location filename="../src/engine/rules.cpp" line="4759"/>
+        <location filename="../src/engine/rules.cpp" line="4840"/>
+        <location filename="../src/engine/rules.cpp" line="4999"/>
+        <location filename="../src/engine/rules.cpp" line="5054"/>
+        <location filename="../src/engine/rules.cpp" line="5112"/>
+        <location filename="../src/engine/rules.cpp" line="5167"/>
+        <location filename="../src/engine/rules.cpp" line="5842"/>
+        <location filename="../src/engine/rules.cpp" line="5844"/>
+        <location filename="../src/engine/rules.cpp" line="5846"/>
+        <location filename="../src/engine/rules.cpp" line="5951"/>
+        <location filename="../src/engine/rules.cpp" line="6029"/>
+        <location filename="../src/engine/rules.cpp" line="7635"/>
+        <location filename="../src/engine/rules.cpp" line="7712"/>
+        <location filename="../src/engine/rules.cpp" line="7757"/>
+        <location filename="../src/engine/rules.cpp" line="7806"/>
+        <location filename="../src/engine/rules.cpp" line="7851"/>
+        <location filename="../src/engine/rules.cpp" line="8676"/>
+        <location filename="../src/engine/rules.cpp" line="9928"/>
+        <location filename="../src/engine/rules.cpp" line="9994"/>
+        <location filename="../src/engine/rules.cpp" line="10065"/>
+        <location filename="../src/engine/rules.cpp" line="10131"/>
+        <location filename="../src/engine/rules.cpp" line="10183"/>
+        <location filename="../src/engine/rules.cpp" line="10240"/>
+        <location filename="../src/engine/rules.cpp" line="10292"/>
+        <location filename="../src/engine/rules.cpp" line="10349"/>
+        <location filename="../src/engine/rules.cpp" line="10421"/>
+        <location filename="../src/engine/rules.cpp" line="10507"/>
+        <location filename="../src/engine/rules.cpp" line="11546"/>
+        <location filename="../src/engine/rules.cpp" line="11685"/>
+        <location filename="../src/engine/rules.cpp" line="11824"/>
+        <location filename="../src/engine/rules.cpp" line="12090"/>
+        <location filename="../src/engine/rules.cpp" line="12800"/>
+        <location filename="../src/engine/rules.cpp" line="12921"/>
+        <location filename="../src/engine/rules.cpp" line="13110"/>
+        <location filename="../src/engine/rules.cpp" line="13291"/>
+        <location filename="../src/engine/rules.cpp" line="13472"/>
+        <location filename="../src/engine/rules.cpp" line="13649"/>
+        <location filename="../src/engine/rules.cpp" line="13825"/>
+        <location filename="../src/engine/rules.cpp" line="13949"/>
+        <location filename="../src/engine/rules.cpp" line="14089"/>
+        <location filename="../src/engine/rules.cpp" line="14751"/>
         <source>%1 is incorrect</source>
         <translation>%1 este incorect</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="4708"/>
-        <location filename="../src/engine/rules.cpp" line="4789"/>
+        <location filename="../src/engine/rules.cpp" line="4762"/>
+        <location filename="../src/engine/rules.cpp" line="4843"/>
         <source>%1 is too large. Maximum allowed is %2.</source>
         <translation>%1 este prea mare. Maximul permis este %2.</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="4718"/>
-        <location filename="../src/engine/rules.cpp" line="4736"/>
-        <location filename="../src/engine/rules.cpp" line="4799"/>
-        <location filename="../src/engine/rules.cpp" line="4817"/>
+        <location filename="../src/engine/rules.cpp" line="4772"/>
+        <location filename="../src/engine/rules.cpp" line="4790"/>
+        <location filename="../src/engine/rules.cpp" line="4853"/>
+        <location filename="../src/engine/rules.cpp" line="4871"/>
         <source>Too many %1 items. Maximum allowed is %2.</source>
         <translation>Prea multe elemente %1. Maximul permis este %2.</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="4763"/>
-        <location filename="../src/engine/rules.cpp" line="4846"/>
-        <location filename="../src/engine/rules.cpp" line="4853"/>
+        <location filename="../src/engine/rules.cpp" line="4817"/>
+        <location filename="../src/engine/rules.cpp" line="4900"/>
+        <location filename="../src/engine/rules.cpp" line="4907"/>
         <source>%1: %2 and the number of %3 read do not correspond</source>
         <translation>%1: %2 şi numărul de %3 citite nu corespunde</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="4897"/>
+        <location filename="../src/engine/rules.cpp" line="4951"/>
         <source>The teacher %1 has attached an inexistent qualified subject %2. Please note that starting with FET version %3 the list of subjects (tag &lt;Subjects_List&gt; in the .fet XML file) must appear before the list of teachers (tag &lt;Teachers_List&gt; in the .fet XML file)</source>
         <comment>Please keep &lt;Subjects_List&gt; and &lt;Teachers_List&gt; untranslated, as in the original English string</comment>
         <translation>Profesorul %1 are ataşată o disciplină calificată inexistentă %2. Vă rog notaţi că începând cu FET versiunea %3 lista disciplinelor (eticheta &lt;Subjects_List&gt; în fişierul fet XML) trebuie să apară înainte de lista profesorilor (eticheta &lt;Teachers_List&gt; în fişierul fet XML) </translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="4927"/>
+        <location filename="../src/engine/rules.cpp" line="4981"/>
         <source>Duplicate teacher %1 found - ignoring</source>
         <translation>Profesor duplicat %1 întâlnit - este ignorat</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="4982"/>
+        <location filename="../src/engine/rules.cpp" line="5036"/>
         <source>Duplicate subject %1 found - ignoring</source>
         <translation>Disciplină duplicat %1 întâlnită - este ignorată</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="5010"/>
+        <location filename="../src/engine/rules.cpp" line="5064"/>
         <source>Your file contains subject tags list, which is named in versions&gt;=5.5.0 activity tags list</source>
         <translation>Fişierul dvs. conţine lista de etichete disciplină, care este numită în versiuni &gt;=5.5.0 lista de etichete activitate</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="5040"/>
-        <location filename="../src/engine/rules.cpp" line="5095"/>
+        <location filename="../src/engine/rules.cpp" line="5094"/>
+        <location filename="../src/engine/rules.cpp" line="5149"/>
         <source>Duplicate activity tag %1 found - ignoring</source>
         <translation>Etichetă activitate duplicat %1 întâlnită - este ignorată</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="5160"/>
+        <location filename="../src/engine/rules.cpp" line="5214"/>
         <source>Trying to add year %1, which is already added as another year.</source>
         <translation>Încerc să adaug anul %1, care este deja adăugat ca alt an.</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="5162"/>
+        <location filename="../src/engine/rules.cpp" line="5216"/>
         <source>Trying to add year %1, which is already added as another group.</source>
         <translation>Încerc să adaug anul %1, care este deja adăugat ca alt grup.</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="5164"/>
+        <location filename="../src/engine/rules.cpp" line="5218"/>
         <source>Trying to add year %1, which is already added as another subgroup.</source>
         <translation>Încerc să adaug anul %1, care este deja adăugat ca alt subgrup.</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="5229"/>
+        <location filename="../src/engine/rules.cpp" line="5283"/>
         <source>Trying to add group %1, which is already added as another year.</source>
         <translation>Încerc să adaug grupul %1, care este deja adăugat ca alt an.</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="5234"/>
+        <location filename="../src/engine/rules.cpp" line="5288"/>
         <source>Trying to add group %1 in year %2 but it is already added.</source>
         <translation>Încerc să adaug grupul %1 în anul %2, dar el este deja adăugat.</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="5243"/>
+        <location filename="../src/engine/rules.cpp" line="5297"/>
         <source>Trying to add group %1, which is already added as another subgroup.</source>
         <translation>Încerc să adaug grupul %1, care este deja adăugat ca alt subgrup.</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="5340"/>
+        <location filename="../src/engine/rules.cpp" line="5394"/>
         <source>Trying to add subgroup %1, which is already added as another year.</source>
         <translation>Încerc să adaug subgrupul %1, care este deja adăugat ca alt an.</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="5344"/>
+        <location filename="../src/engine/rules.cpp" line="5398"/>
         <source>Trying to add subgroup %1, which is already added as another group.</source>
         <translation>Încerc să adaug subgrupul %1, care este deja adăugat ca alt grup.</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="5349"/>
+        <location filename="../src/engine/rules.cpp" line="5403"/>
         <source>Trying to add subgroup %1 in year %2, group %3 but it is already added.</source>
         <translation>Încerc să adaug subgrupul %1 în anul %2, grupul %3, dar este deja adăugat.</translation>
     </message>
@@ -46153,84 +48539,84 @@ Vă rog luaţi aminte că importanţa procentuală predefinită a constrângeril
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="113"/>
-        <location filename="../src/engine/rules.cpp" line="4655"/>
+        <location filename="../src/engine/rules.cpp" line="4709"/>
         <source>08:00</source>
         <comment>Hour name</comment>
         <translation>08:00</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="114"/>
-        <location filename="../src/engine/rules.cpp" line="4656"/>
+        <location filename="../src/engine/rules.cpp" line="4710"/>
         <source>09:00</source>
         <comment>Hour name</comment>
         <translation>09:00</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="115"/>
-        <location filename="../src/engine/rules.cpp" line="4657"/>
+        <location filename="../src/engine/rules.cpp" line="4711"/>
         <source>10:00</source>
         <comment>Hour name</comment>
         <translation>10:00</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="116"/>
-        <location filename="../src/engine/rules.cpp" line="4658"/>
+        <location filename="../src/engine/rules.cpp" line="4712"/>
         <source>11:00</source>
         <comment>Hour name</comment>
         <translation>11:00</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="117"/>
-        <location filename="../src/engine/rules.cpp" line="4659"/>
+        <location filename="../src/engine/rules.cpp" line="4713"/>
         <source>12:00</source>
         <comment>Hour name</comment>
         <translation>12:00</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="118"/>
-        <location filename="../src/engine/rules.cpp" line="4660"/>
+        <location filename="../src/engine/rules.cpp" line="4714"/>
         <source>13:00</source>
         <comment>Hour name</comment>
         <translation>13:00</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="119"/>
-        <location filename="../src/engine/rules.cpp" line="4661"/>
+        <location filename="../src/engine/rules.cpp" line="4715"/>
         <source>14:00</source>
         <comment>Hour name</comment>
         <translation>14:00</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="120"/>
-        <location filename="../src/engine/rules.cpp" line="4662"/>
+        <location filename="../src/engine/rules.cpp" line="4716"/>
         <source>15:00</source>
         <comment>Hour name</comment>
         <translation>15:00</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="121"/>
-        <location filename="../src/engine/rules.cpp" line="4663"/>
+        <location filename="../src/engine/rules.cpp" line="4717"/>
         <source>16:00</source>
         <comment>Hour name</comment>
         <translation>16:00</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="122"/>
-        <location filename="../src/engine/rules.cpp" line="4664"/>
+        <location filename="../src/engine/rules.cpp" line="4718"/>
         <source>17:00</source>
         <comment>Hour name</comment>
         <translation>17:00</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="123"/>
-        <location filename="../src/engine/rules.cpp" line="4665"/>
+        <location filename="../src/engine/rules.cpp" line="4719"/>
         <source>18:00</source>
         <comment>Hour name</comment>
         <translation>18:00</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="124"/>
-        <location filename="../src/engine/rules.cpp" line="4666"/>
+        <location filename="../src/engine/rules.cpp" line="4720"/>
         <source>19:00</source>
         <comment>Hour name</comment>
         <translation>19:00</translation>
@@ -46278,153 +48664,153 @@ Vă rog luaţi aminte că importanţa procentuală predefinită a constrângeril
         <translation>Toate elementele &apos;grupează activităţile în ordinea iniţială pentru generarea orarului&apos; trebuie să conţină cel puţin două id-uri de activităţi. Acest lucru nu este respectat pentru elementul numărul %1. Vă rog raportaţi potenţiala eroare.</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="2763"/>
-        <location filename="../src/engine/rules.cpp" line="5794"/>
+        <location filename="../src/engine/rules.cpp" line="2796"/>
+        <location filename="../src/engine/rules.cpp" line="5848"/>
         <source>Activity with Id=%1 contains %2 duplicate teachers - please correct that</source>
         <translation>Activitatea cu Id=%1 conţine %2 profesori duplicat - vă rog corectaţi aceasta</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="2768"/>
-        <location filename="../src/engine/rules.cpp" line="5796"/>
+        <location filename="../src/engine/rules.cpp" line="2801"/>
+        <location filename="../src/engine/rules.cpp" line="5850"/>
         <source>Activity with Id=%1 contains %2 duplicate students sets - please correct that</source>
         <translation>Activitatea cu Id=%1 conţine %2 seturi de studenţi duplicat - vă rog corectaţi aceasta</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="2773"/>
-        <location filename="../src/engine/rules.cpp" line="5798"/>
+        <location filename="../src/engine/rules.cpp" line="2806"/>
+        <location filename="../src/engine/rules.cpp" line="5852"/>
         <source>Activity with Id=%1 contains %2 duplicate activity tags - please correct that</source>
         <translation>Activitatea cu Id=%1 conţine %2 etichete activitate duplicat - vă rog corectaţi aceasta</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="2899"/>
+        <location filename="../src/engine/rules.cpp" line="2932"/>
         <source>Activities with group_Id=%1 contain %2 duplicate teachers - please correct that</source>
         <translation>Activităţile cu Id grup=%1 conţin %2 profesori duplicat - vă rog corectaţi aceasta</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="2904"/>
+        <location filename="../src/engine/rules.cpp" line="2937"/>
         <source>Activities with group_Id=%1 contain %2 duplicate students sets - please correct that</source>
         <translation>Activităţile cu Id grup=%1 conţin %2 seturi de studenţi duplicat - vă rog corectaţi aceasta</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="2909"/>
+        <location filename="../src/engine/rules.cpp" line="2942"/>
         <source>Activities with group_Id=%1 contain %2 duplicate activity tags - please correct that</source>
         <translation>Activităţile cu Id grup=%1 conţin %2 etichete activitate duplicat - vă rog corectaţi aceasta</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="4894"/>
+        <location filename="../src/engine/rules.cpp" line="4948"/>
         <source>The teacher %1 has duplicate qualified subject %2.</source>
         <translation>Profesorul %1 are o disciplină calificată duplicat %2.</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="5671"/>
+        <location filename="../src/engine/rules.cpp" line="5725"/>
         <source>Found activity active tag which is not &apos;true&apos;, &apos;false&apos;, &apos;yes&apos;, &apos;no&apos;, &apos;1&apos; or &apos;0&apos;. The activity will be considered not active</source>
         <comment>Instructions for translators: please leave the &apos;true&apos;, &apos;false&apos;, &apos;yes&apos; and &apos;no&apos; fields untranslated, as they are in English</comment>
         <translation>Am găsit etichetă activă a activităţii care nu este &apos;true&apos;, &apos;false&apos;, &apos;yes&apos;, &apos;no&apos;, &apos;1&apos; sau &apos;0&apos;. Activitatea va fi considerată inactivă</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="5842"/>
+        <location filename="../src/engine/rules.cpp" line="5896"/>
         <source>File contains deprecated equipments list - will be ignored</source>
         <translation>Fişierul conţine lista de echipamente - depreciată - va fi ignorată</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="5879"/>
+        <location filename="../src/engine/rules.cpp" line="5933"/>
         <source>Duplicate building %1 found - ignoring</source>
         <translation>Clădire duplicat %1 întâlnită - este ignorată</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="5957"/>
+        <location filename="../src/engine/rules.cpp" line="6011"/>
         <source>Duplicate room %1 found - ignoring</source>
         <translation>Sală duplicat %1 întâlnită - este ignorată</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6017"/>
+        <location filename="../src/engine/rules.cpp" line="6071"/>
         <source>File contains constraint teacher not available, which is old (it was improved in FET 5.5.0), and will be converted to the similar constraint of this type, constraint teacher not available times (a matrix).</source>
         <translation>Fişierul dvs. conţine constrângere profesor indisponibil, care este veche (a fost îmbunătăţită în FET 5.5.0) şi va fi convertită la o constrângere similară, constrângerea profesor timpi de indisponibilitate (o matrice).</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6064"/>
+        <location filename="../src/engine/rules.cpp" line="6118"/>
         <source>File contains constraint students set not available, which is old (it was improved in FET 5.5.0), and will be converted to the similar constraint of this type, constraint students set not available times (a matrix).</source>
         <translation>Fişierul dvs. conţine constrângere set de studenţi indisponibil, care este veche (a fost îmbunătăţită în FET 5.5.0) şi va fi convertită la o constrângere similară, constrângerea set de studenţi timpi de indisponibilitate (o matrice).</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6136"/>
+        <location filename="../src/engine/rules.cpp" line="6190"/>
         <source>File contains deprecated constraint teachers subgroups max hours daily - will be ignored
 </source>
         <translation>Fişierul conţine constrângerea profesori subgrupuri max ore zilnic - depreciată - va fi ignorată</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6147"/>
+        <location filename="../src/engine/rules.cpp" line="6201"/>
         <source>File contains deprecated constraint students n hours daily - will be ignored
 </source>
         <translation>Fişierul conţine constrângerea studenţi n ore zilnic - depreciată - va fi ignorată</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6158"/>
+        <location filename="../src/engine/rules.cpp" line="6212"/>
         <source>File contains deprecated constraint students set n hours daily - will be ignored
 </source>
         <translation>Fişierul conţine constrângerea set de studenţi n ore zilnic - depreciată - va fi ignorată</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6202"/>
+        <location filename="../src/engine/rules.cpp" line="6256"/>
         <source>File contains old constraint type activity preferred time, which will be converted to the newer similar constraint of this type, constraint activity preferred STARTING time. This improvement is done in versions 5.5.9 and above</source>
         <translation>Fişierul conţine constrângerea veche de tip activitate timp preferat, care va fi convertită la noua constrângere similară de acest tip, constrângere activitate timp preferat DE START. Această îmbunătăţire este făcută în versiunile 5.5.9 şi mai mari</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6252"/>
+        <location filename="../src/engine/rules.cpp" line="6306"/>
         <source>File contains deprecated constraint activity ends day - will be ignored
 </source>
         <translation>Fişierul conţine constrângerea activitate încheie ziua - depreciată - va fi ignorată</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6264"/>
+        <location filename="../src/engine/rules.cpp" line="6318"/>
         <source>Your file contains old constraint activity preferred times, which will be converted to new equivalent constraint activity preferred starting times. Beginning with FET-5.5.9 it is possible to specify: 1. the starting times of an activity (constraint activity preferred starting times) or: 2. the accepted time slots (constraint activity preferred time slots). If what you need is type 2 of this constraint, you will have to add it by yourself from the interface.</source>
         <translation>Fişierul dvs. conţine constrângerea veche activitate timpi preferaţi, care va fi convertită la noua constrângere echivalentă activitate timpi de start preferaţi. Începând cu FET-5.5.9 este posibil să specificaţi: 1. timpii de start ai unei activităţi (constrângere activitate timpi de start preferaţi) sau: 2. sloturile de timp acceptate (constrângere activitate sloturi de timp preferate). Dacă aveţi nevoie de tipul 2 al acestei constrângeri, trebuie să o adăugaţi dumneavoastră din interfaţa.</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6285"/>
+        <location filename="../src/engine/rules.cpp" line="6339"/>
         <source>File contains constraint break, which is old (it was improved in FET 5.5.0), and will be converted to the similar constraint of this type, constraint break times (a matrix).</source>
         <translation>Fişierul dvs. conţine constrângere pauză, care este veche (a fost îmbunătăţită în FET 5.5.0) şi va fi convertită la o constrângere similară, constrângerea timpi de pauză (o matrice).</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6315"/>
+        <location filename="../src/engine/rules.cpp" line="6369"/>
         <source>File contains constraint students no gaps, which is old (it was improved in FET 5.5.0), and will be converted to the similar constraint of this type, constraint students max gaps per week, with max gaps=0. If you like, you can modify this constraint to allow more gaps per week (normally not accepted in schools)</source>
         <translation>Fişierul dvs. conţine constrângerea studenţi fără ferestre, care este veche (a fost îmbunătăţită în FET 5.5.0) şi va fi convertită la o constrângere similară, constrângere studenţi max ferestre pe săptămână, cu max ferestre=0. Dacă vreţi, puteţi modifica această constrângere pentru a permite mai multe ferestre pe săptămână (normal neacceptat în şcoli)</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6329"/>
+        <location filename="../src/engine/rules.cpp" line="6383"/>
         <source>File contains constraint students set no gaps, which is old (it was improved in FET 5.5.0), and will be converted to the similar constraint of this type, constraint students set max gaps per week, with max gaps=0. If you like, you can modify this constraint to allow more gaps per week (normally not accepted in schools)</source>
         <translation>Fişierul dvs. conţine constrângerea set de studenţi fără ferestre, care este veche (a fost îmbunătăţită în FET 5.5.0) şi va fi convertită la o constrângere similară, constrângere set de studenţi max ferestre pe săptămână, cu max ferestre=0. Dacă vreţi, puteţi modifica această constrângere pentru a permite mai multe ferestre pe săptămână (normal neacceptat în şcoli)</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6357"/>
+        <location filename="../src/engine/rules.cpp" line="6411"/>
         <source>File contains constraint students early, which is old (it was improved in FET 5.5.0), and will be converted to the similar constraint of this type, constraint students early max beginnings at second hour, with max beginnings=0. If you like, you can modify this constraint to allow more beginnings at second available hour (above 0 - this will make the timetable easier)</source>
         <translation>Fişierul dvs. conţine constrângere studenţi devreme, care este veche (a fost îmbunătăţită în FET 5.5.0) şi va fi convertită la o constrângere similară de acest tip, constrângere studenţi devreme max începeri la ora a doua, cu max începeri=0. Dacă doriţi, puteţi modifica această constrângere pentru a permite mai multe începuturi la ora a doua (peste 0, aceasta va face orarul mai uşor)</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6374"/>
+        <location filename="../src/engine/rules.cpp" line="6428"/>
         <source>File contains constraint students set early, which is old (it was improved in FET 5.5.0), and will be converted to the similar constraint of this type, constraint students set early max beginnings at second hour, with max beginnings=0. If you like, you can modify this constraint to allow more beginnings at second available hour (above 0 - this will make the timetable easier)</source>
         <translation>Fişierul dvs. conţine constrângere set de studenţi devreme, care este veche (a fost îmbunătăţită în FET 5.5.0) şi va fi convertită la o constrângere similară de acest tip, constrângere set de studenţi devreme max începeri la ora a doua, cu max începeri=0. Dacă doriţi, puteţi modifica această constrângere pentru a permite mai multe începuturi la ora a doua (peste 0, aceasta va face orarul mai uşor)</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6391"/>
+        <location filename="../src/engine/rules.cpp" line="6445"/>
         <source>Your file contains old constraint activities preferred times, which will be converted to new equivalent constraint activities preferred starting times. Beginning with FET-5.5.9 it is possible to specify: 1. the starting times of several activities (constraint activities preferred starting times) or: 2. the accepted time slots (constraint activities preferred time slots). If what you need is type 2 of this constraint, you will have to add it by yourself from the interface.</source>
         <translation>Fişierul dvs. conţine constrângerea veche activităţi timpi preferaţi, care va fi convertită la noua constrângere echivalentă activităţi timpi de start preferaţi. Începând cu FET-5.5.9 este posibil să specificaţi: 1. timpii de start ai unor activităţi (constrângere activităţi timpi de start preferaţi) sau: 2. sloturile de timp acceptate (constrângere activităţi sloturi de timp preferate). Dacă aveţi nevoie de tipul 2 al acestei constrângeri, trebuie să o adăugaţi dumneavoastră din interfaţă.</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6429"/>
+        <location filename="../src/engine/rules.cpp" line="6483"/>
         <source>File contains deprecated constraint teachers subject tags max hours continuously - will be ignored
 </source>
         <translation>Fişierul conţine constrângerea profesori etichete disciplină max ore continuu - depreciată - va fi ignorată</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6440"/>
+        <location filename="../src/engine/rules.cpp" line="6494"/>
         <source>File contains deprecated constraint teachers subject tag max hours continuously - will be ignored
 </source>
         <translation>Fişierul conţine constrângerea profesori etichetă disciplină max ore continuu - depreciată - va fi ignorată</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6462"/>
-        <location filename="../src/engine/rules.cpp" line="6757"/>
+        <location filename="../src/engine/rules.cpp" line="6542"/>
+        <location filename="../src/engine/rules.cpp" line="6837"/>
         <source>Constraint
 %1
 not added - must be a duplicate</source>
@@ -46433,265 +48819,265 @@ not added - must be a duplicate</source>
 neadăugată - trebuie să fie un duplicat</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6496"/>
+        <location filename="../src/engine/rules.cpp" line="6576"/>
         <source>File contains constraint room not available, which is old (it was improved in FET 5.5.0), and will be converted to the similar constraint of this type, constraint room not available times (a matrix).</source>
         <translation>Fişierul dvs. conţine constrângere sală indisponibilă, care este veche (a fost îmbunătăţită în FET 5.5.0) şi va fi convertită la o constrângere similară, constrângerea sală timpi de indisponibilitate (o matrice).</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6511"/>
+        <location filename="../src/engine/rules.cpp" line="6591"/>
         <source>File contains deprecated constraint room type not allowed subjects - will be ignored
 </source>
         <translation>Fişierul conţine constrângerea tip de sală discipline nepermise - depreciată - va fi ignorată</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6523"/>
+        <location filename="../src/engine/rules.cpp" line="6603"/>
         <source>File contains deprecated constraint subject requires equipments - will be ignored
 </source>
         <translation>Fişierul conţine constrângerea disciplină necesită echipamente - depreciată - va fi ignorată</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6536"/>
+        <location filename="../src/engine/rules.cpp" line="6616"/>
         <source>File contains deprecated constraint subject tag requires equipments - will be ignored
 </source>
         <translation>Fişierul conţine constrângerea etichetă disciplină necesită echipamente - depreciată - va fi ignorată</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6548"/>
+        <location filename="../src/engine/rules.cpp" line="6628"/>
         <source>File contains deprecated constraint teacher requires room - will be ignored
 </source>
         <translation>Fişierul conţine constrângerea profesor necesită sală - depreciată - va fi ignorată</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6560"/>
+        <location filename="../src/engine/rules.cpp" line="6640"/>
         <source>File contains deprecated constraint teacher subject require room - will be ignored
 </source>
         <translation>Fişierul conţine constrângerea profesor disciplină necesită sală - depreciată - va fi ignorată</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6572"/>
+        <location filename="../src/engine/rules.cpp" line="6652"/>
         <source>File contains deprecated constraint minimize number of rooms for students - will be ignored
 </source>
         <translation>Fişierul conţine constrângerea minimizează numărul de săli pentru studenţi - depreciată - va fi ignorată</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6584"/>
+        <location filename="../src/engine/rules.cpp" line="6664"/>
         <source>File contains deprecated constraint minimize number of rooms for teachers - will be ignored
 </source>
         <translation>Fişierul conţine constrângerea minimizează numărul de săli pentru profesori - depreciată - va fi ignorată</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6602"/>
+        <location filename="../src/engine/rules.cpp" line="6682"/>
         <source>File contains deprecated constraint activities same room - will be ignored
 </source>
         <translation>Fişierul conţine constrângerea activităţi aceeaşi sală - depreciată - va fi ignorată</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6651"/>
+        <location filename="../src/engine/rules.cpp" line="6731"/>
         <source>File contains deprecated constraint max building changes per day for teachers - will be ignored
 </source>
         <translation>Fişierul conţine constrângerea max schimbări de clădire pe zi pentru profesori - depreciată - va fi ignorată</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6663"/>
+        <location filename="../src/engine/rules.cpp" line="6743"/>
         <source>File contains deprecated constraint max building changes per day for students - will be ignored
 </source>
         <translation>Fişierul conţine constrângerea max schimbări de clădire pe zi pentru studenţi - depreciată - va fi ignorată</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6675"/>
+        <location filename="../src/engine/rules.cpp" line="6755"/>
         <source>File contains deprecated constraint max room changes per day for teachers - will be ignored
 </source>
         <translation>Fişierul conţine constrângerea max schimbări de sală pe zi pentru profesori - depreciată - va fi ignorată</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6687"/>
+        <location filename="../src/engine/rules.cpp" line="6767"/>
         <source>File contains deprecated constraint max room changes per day for students - will be ignored
 </source>
         <translation>Fişierul conţine constrângerea max schimbări de sală pe zi pentru studenţi - depreciată - va fi ignorată</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6812"/>
-        <location filename="../src/engine/rules.cpp" line="7573"/>
-        <location filename="../src/engine/rules.cpp" line="8614"/>
-        <location filename="../src/engine/rules.cpp" line="8721"/>
-        <location filename="../src/engine/rules.cpp" line="8860"/>
-        <location filename="../src/engine/rules.cpp" line="8950"/>
-        <location filename="../src/engine/rules.cpp" line="9005"/>
-        <location filename="../src/engine/rules.cpp" line="9075"/>
-        <location filename="../src/engine/rules.cpp" line="9145"/>
-        <location filename="../src/engine/rules.cpp" line="9215"/>
-        <location filename="../src/engine/rules.cpp" line="9266"/>
-        <location filename="../src/engine/rules.cpp" line="11480"/>
-        <location filename="../src/engine/rules.cpp" line="11619"/>
-        <location filename="../src/engine/rules.cpp" line="11758"/>
-        <location filename="../src/engine/rules.cpp" line="12022"/>
-        <location filename="../src/engine/rules.cpp" line="13044"/>
-        <location filename="../src/engine/rules.cpp" line="13225"/>
-        <location filename="../src/engine/rules.cpp" line="13406"/>
-        <location filename="../src/engine/rules.cpp" line="13583"/>
-        <location filename="../src/engine/rules.cpp" line="13759"/>
-        <location filename="../src/engine/rules.cpp" line="13889"/>
-        <location filename="../src/engine/rules.cpp" line="13896"/>
-        <location filename="../src/engine/rules.cpp" line="14029"/>
-        <location filename="../src/engine/rules.cpp" line="14036"/>
-        <location filename="../src/engine/rules.cpp" line="14375"/>
-        <location filename="../src/engine/rules.cpp" line="14576"/>
-        <location filename="../src/engine/rules.cpp" line="14704"/>
-        <location filename="../src/engine/rules.cpp" line="14842"/>
-        <location filename="../src/engine/rules.cpp" line="14980"/>
-        <location filename="../src/engine/rules.cpp" line="15071"/>
-        <location filename="../src/engine/rules.cpp" line="15161"/>
-        <location filename="../src/engine/rules.cpp" line="15251"/>
-        <location filename="../src/engine/rules.cpp" line="15733"/>
-        <location filename="../src/engine/rules.cpp" line="15787"/>
+        <location filename="../src/engine/rules.cpp" line="6892"/>
+        <location filename="../src/engine/rules.cpp" line="7653"/>
+        <location filename="../src/engine/rules.cpp" line="8694"/>
+        <location filename="../src/engine/rules.cpp" line="8801"/>
+        <location filename="../src/engine/rules.cpp" line="8940"/>
+        <location filename="../src/engine/rules.cpp" line="9030"/>
+        <location filename="../src/engine/rules.cpp" line="9085"/>
+        <location filename="../src/engine/rules.cpp" line="9155"/>
+        <location filename="../src/engine/rules.cpp" line="9225"/>
+        <location filename="../src/engine/rules.cpp" line="9295"/>
+        <location filename="../src/engine/rules.cpp" line="9346"/>
+        <location filename="../src/engine/rules.cpp" line="11560"/>
+        <location filename="../src/engine/rules.cpp" line="11699"/>
+        <location filename="../src/engine/rules.cpp" line="11838"/>
+        <location filename="../src/engine/rules.cpp" line="12102"/>
+        <location filename="../src/engine/rules.cpp" line="13124"/>
+        <location filename="../src/engine/rules.cpp" line="13305"/>
+        <location filename="../src/engine/rules.cpp" line="13486"/>
+        <location filename="../src/engine/rules.cpp" line="13663"/>
+        <location filename="../src/engine/rules.cpp" line="13839"/>
+        <location filename="../src/engine/rules.cpp" line="13969"/>
+        <location filename="../src/engine/rules.cpp" line="13976"/>
+        <location filename="../src/engine/rules.cpp" line="14109"/>
+        <location filename="../src/engine/rules.cpp" line="14116"/>
+        <location filename="../src/engine/rules.cpp" line="14769"/>
+        <location filename="../src/engine/rules.cpp" line="14970"/>
+        <location filename="../src/engine/rules.cpp" line="15098"/>
+        <location filename="../src/engine/rules.cpp" line="15236"/>
+        <location filename="../src/engine/rules.cpp" line="15374"/>
+        <location filename="../src/engine/rules.cpp" line="15465"/>
+        <location filename="../src/engine/rules.cpp" line="15555"/>
+        <location filename="../src/engine/rules.cpp" line="15645"/>
+        <location filename="../src/engine/rules.cpp" line="16127"/>
+        <location filename="../src/engine/rules.cpp" line="16181"/>
         <source>%1 does not coincide with the number of read %2</source>
         <translation>%1 nu coincide cu numărul de %2 citite</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6866"/>
+        <location filename="../src/engine/rules.cpp" line="6946"/>
         <source>Saving of logging gave error code %1, which means you cannot see the log of reading the file. Please check your disk free space</source>
         <translation>Salvarea logului a dat codul de eroare %1, ceea ce înseamnă că nu puteţi vedea logul citirii fişierului. Vă rog verificaţi spaţiul liber al discului dvs</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="6909"/>
+        <location filename="../src/engine/rules.cpp" line="6989"/>
         <source>Cannot open %1 for writing ... please check write permissions of the selected directory or your disk free space. Saving of file aborted</source>
         <translation>Nu pot deschide %1 pentru scriere ... vă rog verificaţi permisiunile de scriere ale directorului selectat sau spaţiul liber al discului dvs. Salvarea fişierului abandonată</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="7035"/>
+        <location filename="../src/engine/rules.cpp" line="7115"/>
         <source>Saved file gave error code %1, which means saving is compromised. Please check your disk free space</source>
         <translation>Fişierul salvat a dat codul de eroare %1, ceea ce înseamnă că salvarea este compromisă. Vă rog verificaţi spaţiul liber al fişierului dvs</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="7313"/>
-        <location filename="../src/engine/rules.cpp" line="8356"/>
-        <location filename="../src/engine/rules.cpp" line="11782"/>
+        <location filename="../src/engine/rules.cpp" line="7393"/>
+        <location filename="../src/engine/rules.cpp" line="8436"/>
+        <location filename="../src/engine/rules.cpp" line="11862"/>
         <source>Weight percentage incorrect</source>
         <translation>Importanţa procentuală este incorectă</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="7335"/>
-        <location filename="../src/engine/rules.cpp" line="7509"/>
-        <location filename="../src/engine/rules.cpp" line="8378"/>
-        <location filename="../src/engine/rules.cpp" line="8550"/>
-        <location filename="../src/engine/rules.cpp" line="10548"/>
-        <location filename="../src/engine/rules.cpp" line="10726"/>
-        <location filename="../src/engine/rules.cpp" line="11421"/>
-        <location filename="../src/engine/rules.cpp" line="11559"/>
-        <location filename="../src/engine/rules.cpp" line="11698"/>
-        <location filename="../src/engine/rules.cpp" line="11804"/>
-        <location filename="../src/engine/rules.cpp" line="11966"/>
-        <location filename="../src/engine/rules.cpp" line="12978"/>
-        <location filename="../src/engine/rules.cpp" line="13159"/>
-        <location filename="../src/engine/rules.cpp" line="13340"/>
-        <location filename="../src/engine/rules.cpp" line="13517"/>
-        <location filename="../src/engine/rules.cpp" line="13693"/>
-        <location filename="../src/engine/rules.cpp" line="13825"/>
-        <location filename="../src/engine/rules.cpp" line="13965"/>
-        <location filename="../src/engine/rules.cpp" line="13987"/>
-        <location filename="../src/engine/rules.cpp" line="14144"/>
-        <location filename="../src/engine/rules.cpp" line="14311"/>
+        <location filename="../src/engine/rules.cpp" line="7415"/>
+        <location filename="../src/engine/rules.cpp" line="7589"/>
+        <location filename="../src/engine/rules.cpp" line="8458"/>
+        <location filename="../src/engine/rules.cpp" line="8630"/>
+        <location filename="../src/engine/rules.cpp" line="10628"/>
+        <location filename="../src/engine/rules.cpp" line="10806"/>
+        <location filename="../src/engine/rules.cpp" line="11501"/>
+        <location filename="../src/engine/rules.cpp" line="11639"/>
+        <location filename="../src/engine/rules.cpp" line="11778"/>
+        <location filename="../src/engine/rules.cpp" line="11884"/>
+        <location filename="../src/engine/rules.cpp" line="12046"/>
+        <location filename="../src/engine/rules.cpp" line="13058"/>
+        <location filename="../src/engine/rules.cpp" line="13239"/>
+        <location filename="../src/engine/rules.cpp" line="13420"/>
+        <location filename="../src/engine/rules.cpp" line="13597"/>
+        <location filename="../src/engine/rules.cpp" line="13773"/>
+        <location filename="../src/engine/rules.cpp" line="13905"/>
+        <location filename="../src/engine/rules.cpp" line="14045"/>
+        <location filename="../src/engine/rules.cpp" line="14067"/>
+        <location filename="../src/engine/rules.cpp" line="14538"/>
+        <location filename="../src/engine/rules.cpp" line="14705"/>
         <source>Day %1 is inexistent</source>
         <translation>Ziua %1 este inexistentă</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="7354"/>
-        <location filename="../src/engine/rules.cpp" line="8396"/>
-        <location filename="../src/engine/rules.cpp" line="11821"/>
-        <location filename="../src/engine/rules.cpp" line="14162"/>
+        <location filename="../src/engine/rules.cpp" line="7434"/>
+        <location filename="../src/engine/rules.cpp" line="8476"/>
+        <location filename="../src/engine/rules.cpp" line="11901"/>
+        <location filename="../src/engine/rules.cpp" line="14556"/>
         <source>Hour %1 is the last hour - impossible</source>
         <translation>Ora %1 este ultima oră - imposibil</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="7358"/>
-        <location filename="../src/engine/rules.cpp" line="7381"/>
-        <location filename="../src/engine/rules.cpp" line="7530"/>
-        <location filename="../src/engine/rules.cpp" line="7859"/>
-        <location filename="../src/engine/rules.cpp" line="7975"/>
-        <location filename="../src/engine/rules.cpp" line="8176"/>
-        <location filename="../src/engine/rules.cpp" line="8291"/>
-        <location filename="../src/engine/rules.cpp" line="8400"/>
-        <location filename="../src/engine/rules.cpp" line="8422"/>
-        <location filename="../src/engine/rules.cpp" line="8571"/>
-        <location filename="../src/engine/rules.cpp" line="10567"/>
-        <location filename="../src/engine/rules.cpp" line="10745"/>
-        <location filename="../src/engine/rules.cpp" line="11444"/>
-        <location filename="../src/engine/rules.cpp" line="11582"/>
-        <location filename="../src/engine/rules.cpp" line="11721"/>
-        <location filename="../src/engine/rules.cpp" line="11825"/>
-        <location filename="../src/engine/rules.cpp" line="11846"/>
-        <location filename="../src/engine/rules.cpp" line="11986"/>
-        <location filename="../src/engine/rules.cpp" line="13004"/>
-        <location filename="../src/engine/rules.cpp" line="13185"/>
-        <location filename="../src/engine/rules.cpp" line="13366"/>
-        <location filename="../src/engine/rules.cpp" line="13543"/>
-        <location filename="../src/engine/rules.cpp" line="13719"/>
-        <location filename="../src/engine/rules.cpp" line="13847"/>
-        <location filename="../src/engine/rules.cpp" line="14166"/>
-        <location filename="../src/engine/rules.cpp" line="14188"/>
-        <location filename="../src/engine/rules.cpp" line="14332"/>
+        <location filename="../src/engine/rules.cpp" line="7438"/>
+        <location filename="../src/engine/rules.cpp" line="7461"/>
+        <location filename="../src/engine/rules.cpp" line="7610"/>
+        <location filename="../src/engine/rules.cpp" line="7939"/>
+        <location filename="../src/engine/rules.cpp" line="8055"/>
+        <location filename="../src/engine/rules.cpp" line="8256"/>
+        <location filename="../src/engine/rules.cpp" line="8371"/>
+        <location filename="../src/engine/rules.cpp" line="8480"/>
+        <location filename="../src/engine/rules.cpp" line="8502"/>
+        <location filename="../src/engine/rules.cpp" line="8651"/>
+        <location filename="../src/engine/rules.cpp" line="10647"/>
+        <location filename="../src/engine/rules.cpp" line="10825"/>
+        <location filename="../src/engine/rules.cpp" line="11524"/>
+        <location filename="../src/engine/rules.cpp" line="11662"/>
+        <location filename="../src/engine/rules.cpp" line="11801"/>
+        <location filename="../src/engine/rules.cpp" line="11905"/>
+        <location filename="../src/engine/rules.cpp" line="11926"/>
+        <location filename="../src/engine/rules.cpp" line="12066"/>
+        <location filename="../src/engine/rules.cpp" line="13084"/>
+        <location filename="../src/engine/rules.cpp" line="13265"/>
+        <location filename="../src/engine/rules.cpp" line="13446"/>
+        <location filename="../src/engine/rules.cpp" line="13623"/>
+        <location filename="../src/engine/rules.cpp" line="13799"/>
+        <location filename="../src/engine/rules.cpp" line="13927"/>
+        <location filename="../src/engine/rules.cpp" line="14560"/>
+        <location filename="../src/engine/rules.cpp" line="14582"/>
+        <location filename="../src/engine/rules.cpp" line="14726"/>
         <source>Hour %1 is inexistent</source>
         <translation>Ora %1 este inexistentă</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="7377"/>
-        <location filename="../src/engine/rules.cpp" line="8418"/>
-        <location filename="../src/engine/rules.cpp" line="11842"/>
-        <location filename="../src/engine/rules.cpp" line="14184"/>
+        <location filename="../src/engine/rules.cpp" line="7457"/>
+        <location filename="../src/engine/rules.cpp" line="8498"/>
+        <location filename="../src/engine/rules.cpp" line="11922"/>
+        <location filename="../src/engine/rules.cpp" line="14578"/>
         <source>Hour %1 is the first hour - impossible</source>
         <translation>Ora %1 este prima oră - imposibil</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="7409"/>
-        <location filename="../src/engine/rules.cpp" line="7413"/>
-        <location filename="../src/engine/rules.cpp" line="7417"/>
-        <location filename="../src/engine/rules.cpp" line="8449"/>
-        <location filename="../src/engine/rules.cpp" line="8453"/>
-        <location filename="../src/engine/rules.cpp" line="8457"/>
-        <location filename="../src/engine/rules.cpp" line="11867"/>
-        <location filename="../src/engine/rules.cpp" line="11871"/>
-        <location filename="../src/engine/rules.cpp" line="11875"/>
-        <location filename="../src/engine/rules.cpp" line="14211"/>
-        <location filename="../src/engine/rules.cpp" line="14215"/>
-        <location filename="../src/engine/rules.cpp" line="14219"/>
+        <location filename="../src/engine/rules.cpp" line="7489"/>
+        <location filename="../src/engine/rules.cpp" line="7493"/>
+        <location filename="../src/engine/rules.cpp" line="7497"/>
+        <location filename="../src/engine/rules.cpp" line="8529"/>
+        <location filename="../src/engine/rules.cpp" line="8533"/>
+        <location filename="../src/engine/rules.cpp" line="8537"/>
+        <location filename="../src/engine/rules.cpp" line="11947"/>
+        <location filename="../src/engine/rules.cpp" line="11951"/>
+        <location filename="../src/engine/rules.cpp" line="11955"/>
+        <location filename="../src/engine/rules.cpp" line="14605"/>
+        <location filename="../src/engine/rules.cpp" line="14609"/>
+        <location filename="../src/engine/rules.cpp" line="14613"/>
         <source>Field missing: %1</source>
         <translation>Lipseşte câmpul: %1</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="7884"/>
-        <location filename="../src/engine/rules.cpp" line="8000"/>
-        <location filename="../src/engine/rules.cpp" line="8201"/>
-        <location filename="../src/engine/rules.cpp" line="8316"/>
+        <location filename="../src/engine/rules.cpp" line="7964"/>
+        <location filename="../src/engine/rules.cpp" line="8080"/>
+        <location filename="../src/engine/rules.cpp" line="8281"/>
+        <location filename="../src/engine/rules.cpp" line="8396"/>
         <source>Hour %1 is inexistent (it is also not void, to specify end of the day)</source>
         <translation>Ora %1 este inexistentă (de asemenea, nu este vidă, pentru a specifica sfârşitul zilei)</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="7843"/>
+        <location filename="../src/engine/rules.cpp" line="7923"/>
         <source>Constraint TeacherIntervalMaxDaysPerWeek max days corrupt for teacher %1, max days %2 &gt;nDaysPerWeek, constraint added, please correct constraint</source>
         <translation>Constrângerea ProfesorIntervalMaxZilePeSăptămână max zile coruptă pentru profesorul %1, max zile %2 &gt;nZilePeSăptămână, constrângerea adăugată, vă rog corectaţi constrângerea</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="7959"/>
+        <location filename="../src/engine/rules.cpp" line="8039"/>
         <source>Constraint TeachersIntervalMaxDaysPerWeek max days corrupt, max days %1 &gt;nDaysPerWeek, constraint added, please correct constraint</source>
         <translation>Constrângerea ProfesoriIntervalMaxZilePeSăptămână max zile coruptă, max zile %1 &gt;nZilePeSăptămână, constrângerea adăugată, vă rog corectaţi constrângerea</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="8054"/>
+        <location filename="../src/engine/rules.cpp" line="8134"/>
         <source>Constraint StudentsSetMaxDaysPerWeek max days corrupt for students set %1, max days %2 &gt;nDaysPerWeek, constraint added, please correct constraint</source>
         <translation>Constrângere set de studenţi max zile pe săptămână max zile corupte pentru setul de studenţi %1, max zile %2 &gt;n zile pe săptămână, constrângere adăugată, vă rog corectaţi constrângerea</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="8094"/>
+        <location filename="../src/engine/rules.cpp" line="8174"/>
         <source>Constraint StudentsMaxDaysPerWeek max days corrupt, max days %1 &gt;nDaysPerWeek, constraint added, please correct constraint</source>
         <translation>Constrângere studenţi max zile pe săptămână max zile corupte, max zile %1 &gt;n zile pe săptămână, constrângere adăugată, vă rog corectaţi constrângerea</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="8276"/>
+        <location filename="../src/engine/rules.cpp" line="8356"/>
         <source>Constraint StudentsIntervalMaxDaysPerWeek max days corrupt: max days %1 &gt;nDaysPerWeek, constraint added, please correct constraint</source>
         <translation>Constrângerea StudenţiIntervalMaxZilePeSăptămână max zile coruptă, max zile %1 &gt;nZilePeSăptămână, constrângerea adăugată, vă rog corectaţi constrângerea</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="8160"/>
+        <location filename="../src/engine/rules.cpp" line="8240"/>
         <source>Constraint StudentsSetIntervalMaxDaysPerWeek max days corrupt for students set %1, max days %2 &gt;nDaysPerWeek, constraint added, please correct constraint</source>
         <translation>Constrângerea SetDeStudenţiIntervalMaxZilePeSăptămână max zile coruptă pentru setul de studenţi %1, max zile %2 &gt;nZilePeSăptămână, constrângerea adăugată, vă rog corectaţi constrângerea</translation>
     </message>
@@ -46701,92 +49087,92 @@ neadăugată - trebuie să fie un duplicat</translation>
         <translation>Toate elementele &apos;grupează activităţile în ordinea iniţială pentru generarea orarului&apos; trebuie să aibă id-uri de activitate diferite. (Fiecare id activitate trebuie să apară cel mult o dată în toate elementele.) Aceasta nu este adevărat pentru elementul numărul %1 şi activitatea cu id-ul %2.</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="8665"/>
-        <location filename="../src/engine/rules.cpp" line="8804"/>
+        <location filename="../src/engine/rules.cpp" line="8745"/>
+        <location filename="../src/engine/rules.cpp" line="8884"/>
         <source>Found constraint min days between activities with tag consecutive if same day which is not &apos;true&apos;, &apos;false&apos;, &apos;yes&apos;, &apos;no&apos;, &apos;1&apos; or &apos;0&apos;. The tag will be considered false</source>
         <comment>Instructions for translators: please leave the &apos;true&apos;, &apos;false&apos;, &apos;yes&apos; and &apos;no&apos; fields untranslated, as they are in English</comment>
         <translation>Am găsit constrângerea min zile între activităţi cu etichetă consecutive dacă în aceeaşi zi care nu este &apos;true&apos;, &apos;false&apos;, &apos;yes&apos;, &apos;no&apos;, &apos;1&apos; sau &apos;0&apos;. Eticheta va fi considerată falsă</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="9709"/>
+        <location filename="../src/engine/rules.cpp" line="9789"/>
         <source>Found constraint teachers min hours daily with tag allow empty days which is not &apos;true&apos;, &apos;false&apos;, &apos;yes&apos;, &apos;no&apos;, &apos;1&apos; or &apos;0&apos;. The tag will be considered false</source>
         <comment>Instructions for translators: please leave the &apos;true&apos;, &apos;false&apos;, &apos;yes&apos; and &apos;no&apos; fields untranslated, as they are in English</comment>
         <translation>Am găsit constrângerea profesori min ore zilnic cu etichetă permite zile libere care nu este &apos;true&apos;, &apos;false&apos;, &apos;yes&apos;, &apos;no&apos;, &apos;1&apos; sau &apos;0&apos;. Eticheta va fi considerată falsă</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="9786"/>
+        <location filename="../src/engine/rules.cpp" line="9866"/>
         <source>Found constraint teacher min hours daily with tag allow empty days which is not &apos;true&apos;, &apos;false&apos;, &apos;yes&apos;, &apos;no&apos;, &apos;1&apos; or &apos;0&apos;. The tag will be considered false</source>
         <comment>Instructions for translators: please leave the &apos;true&apos;, &apos;false&apos;, &apos;yes&apos; and &apos;no&apos; fields untranslated, as they are in English</comment>
         <translation>Am găsit constrângerea profesor min ore zilnic cu etichetă permite zile libere care nu este &apos;true&apos;, &apos;false&apos;, &apos;yes&apos;, &apos;no&apos;, &apos;1&apos; sau &apos;0&apos;. Eticheta va fi considerată falsă</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="4759"/>
-        <location filename="../src/engine/rules.cpp" line="4840"/>
-        <location filename="../src/engine/rules.cpp" line="9861"/>
-        <location filename="../src/engine/rules.cpp" line="9932"/>
-        <location filename="../src/engine/rules.cpp" line="9998"/>
-        <location filename="../src/engine/rules.cpp" line="10069"/>
-        <location filename="../src/engine/rules.cpp" line="10126"/>
-        <location filename="../src/engine/rules.cpp" line="10178"/>
-        <location filename="../src/engine/rules.cpp" line="10235"/>
-        <location filename="../src/engine/rules.cpp" line="10287"/>
-        <location filename="../src/engine/rules.cpp" line="10373"/>
-        <location filename="../src/engine/rules.cpp" line="10464"/>
-        <location filename="../src/engine/rules.cpp" line="12746"/>
-        <location filename="../src/engine/rules.cpp" line="12872"/>
+        <location filename="../src/engine/rules.cpp" line="4813"/>
+        <location filename="../src/engine/rules.cpp" line="4894"/>
+        <location filename="../src/engine/rules.cpp" line="9941"/>
+        <location filename="../src/engine/rules.cpp" line="10012"/>
+        <location filename="../src/engine/rules.cpp" line="10078"/>
+        <location filename="../src/engine/rules.cpp" line="10149"/>
+        <location filename="../src/engine/rules.cpp" line="10206"/>
+        <location filename="../src/engine/rules.cpp" line="10258"/>
+        <location filename="../src/engine/rules.cpp" line="10315"/>
+        <location filename="../src/engine/rules.cpp" line="10367"/>
+        <location filename="../src/engine/rules.cpp" line="10453"/>
+        <location filename="../src/engine/rules.cpp" line="10544"/>
+        <location filename="../src/engine/rules.cpp" line="12826"/>
+        <location filename="../src/engine/rules.cpp" line="12952"/>
         <source>%1 not found</source>
         <translation>%1 negăsit</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="10357"/>
+        <location filename="../src/engine/rules.cpp" line="10437"/>
         <source>Found constraint students min hours daily with tag allow empty days which is not &apos;true&apos;, &apos;false&apos;, &apos;yes&apos;, &apos;no&apos;, &apos;1&apos; or &apos;0&apos;. The tag will be considered false</source>
         <comment>Instructions for translators: please leave the &apos;true&apos;, &apos;false&apos;, &apos;yes&apos; and &apos;no&apos; fields untranslated, as they are in English</comment>
         <translation>Am găsit constrângerea studenţi min ore zilnic cu etichetă permite zile libere care nu este &apos;true&apos;, &apos;false&apos;, &apos;yes&apos;, &apos;no&apos;, &apos;1&apos; sau &apos;0&apos;. Eticheta va fi considerată falsă</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="10448"/>
+        <location filename="../src/engine/rules.cpp" line="10528"/>
         <source>Found constraint students set min hours daily with tag allow empty days which is not &apos;true&apos;, &apos;false&apos;, &apos;yes&apos;, &apos;no&apos;, &apos;1&apos; or &apos;0&apos;. The tag will be considered false</source>
         <comment>Instructions for translators: please leave the &apos;true&apos;, &apos;false&apos;, &apos;yes&apos; and &apos;no&apos; fields untranslated, as they are in English</comment>
         <translation>Am găsit constrângerea set de studenţi min ore zilnic cu etichetă permite zile libere care nu este &apos;true&apos;, &apos;false&apos;, &apos;yes&apos;, &apos;no&apos;, &apos;1&apos; sau &apos;0&apos;. Eticheta va fi considerată falsă</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="10526"/>
-        <location filename="../src/engine/rules.cpp" line="10704"/>
+        <location filename="../src/engine/rules.cpp" line="10606"/>
+        <location filename="../src/engine/rules.cpp" line="10784"/>
         <source>Found constraint activity preferred starting time with tag permanently locked which is not &apos;true&apos;, &apos;false&apos;, &apos;yes&apos;, &apos;no&apos;, &apos;1&apos; or &apos;0&apos;. The tag will be considered false</source>
         <comment>Instructions for translators: please leave the &apos;true&apos;, &apos;false&apos;, &apos;yes&apos; and &apos;no&apos; fields untranslated, as they are in English</comment>
         <translation>Am găsit constrângerea activitate timp de start preferat cu eticheta permanent blocată care nu este &apos;true&apos;, &apos;false&apos;, &apos;yes&apos;, &apos;no&apos;, &apos;1&apos; sau &apos;0&apos;. Eticheta va fi considerată falsă</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="10589"/>
-        <location filename="../src/engine/rules.cpp" line="10767"/>
+        <location filename="../src/engine/rules.cpp" line="10669"/>
+        <location filename="../src/engine/rules.cpp" line="10847"/>
         <source>Found constraint activity preferred starting time, with unspecified tag &apos;permanently locked&apos; - this tag will be set to &apos;false&apos; by default. You can always modify it by editing the constraint in the &apos;Data&apos; menu</source>
         <translation>Am găsit constrângere activitate timp de start preferat, cu eticheta &apos;permanent blocată&apos; nespecificată - această etichetă va fi setată &apos;fals&apos; predefinit. Puteţi să o modificaţi oricând editând constrângerea în meniul &apos;Date&apos;</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="10592"/>
-        <location filename="../src/engine/rules.cpp" line="10770"/>
+        <location filename="../src/engine/rules.cpp" line="10672"/>
+        <location filename="../src/engine/rules.cpp" line="10850"/>
         <source>Explanation: starting with version 5.8.0 (January 2009), the constraint activity preferred starting time has a new tag, &apos;permanently locked&apos; (true or false). It is recommended to make the tag &apos;permanently locked&apos; true for the constraints you need to be not modifiable from the &apos;Timetable&apos; menu and leave this tag false for the constraints you need to be modifiable from the &apos;Timetable&apos; menu (the &apos;permanently locked&apos; tag can be modified by editing the constraint from the &apos;Data&apos; menu). This way, when viewing the timetable and locking/unlocking some activities, you will not unlock the constraints which need to be locked all the time.</source>
         <translation>Explicaţie: începând cu versiunea 5.8.0 (ianuarie 2009), constrângerea activitate timp de start preferat are o nouă etichetă, &apos;permanent blocată&apos; (adevărat sau fals). Este recomandat să faceţi eticheta &apos;permanent blocată&apos; adevărată pentru constrângerile care trebuie să fie ne-modificabile din meniul &apos;Orar&apos; şi să lăsaţi această etichetă falsă pentru constrângerile care trebuie să fie modificabile din meniul &apos;Orar&apos; (această etichetă poate fi modificată editând constrângerea din meniul &apos;Date&apos;). În acest fel, când vizualizaţi orarul şi blocaţi/deblocaţi câteva activităţi, nu veţi debloca constrângerile care trebuie să fie blocate tot timpul.</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="10611"/>
-        <location filename="../src/engine/rules.cpp" line="10789"/>
+        <location filename="../src/engine/rules.cpp" line="10691"/>
+        <location filename="../src/engine/rules.cpp" line="10869"/>
         <source>Found constraint activity preferred starting time, with unspecified day or hour. This constraint will be transformed into constraint activity preferred starting times (a set of times, not only one). This change is done in FET versions 5.8.1 and higher.</source>
         <translation>Am găsit constrângerea activitate timp de start preferat, cu zi sau oră nespecificată. Această constrângere va fi transformată în constrângere de tip activitate timpi de start preferaţi (un set de timpi, nu unul singur). Această schimbare este făcută în FET versiunile 5.8.1 şi ulterioare.</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="14435"/>
+        <location filename="../src/engine/rules.cpp" line="14829"/>
         <source>Found constraint activity preferred room with tag permanently locked which is not &apos;true&apos;, &apos;false&apos;, &apos;yes&apos;, &apos;no&apos;, &apos;1&apos; or &apos;0&apos;. The tag will be considered false</source>
         <comment>Instructions for translators: please leave the &apos;true&apos;, &apos;false&apos;, &apos;yes&apos; and &apos;no&apos; fields untranslated, as they are in English</comment>
         <translation>Am găsit constrângerea activitate sală preferată cu eticheta permanent blocată care nu este &apos;true&apos;, &apos;false&apos;, &apos;yes&apos;, &apos;no&apos;, &apos;1&apos; sau &apos;0&apos;. Eticheta va fi considerată falsă</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="14478"/>
+        <location filename="../src/engine/rules.cpp" line="14872"/>
         <source>Found constraint activity preferred room, with unspecified tag &apos;permanently locked&apos; - this tag will be set to &apos;false&apos; by default. You can always modify it by editing the constraint in the &apos;Data&apos; menu</source>
         <translation>Am găsit constrângere activitate sală preferată, cu eticheta &apos;permanent blocată&apos; nespecificată - această etichetă va fi setată &apos;fals&apos; predefinit. Puteţi să o modificaţi oricând editând constrângerea în meniul &apos;Date&apos;</translation>
     </message>
     <message>
-        <location filename="../src/engine/rules.cpp" line="14481"/>
+        <location filename="../src/engine/rules.cpp" line="14875"/>
         <source>Explanation: starting with version 5.8.0 (January 2009), the constraint activity preferred room has a new tag, &apos;permanently locked&apos; (true or false). It is recommended to make the tag &apos;permanently locked&apos; true for the constraints you need to be not modifiable from the &apos;Timetable&apos; menu and leave this tag false for the constraints you need to be modifiable from the &apos;Timetable&apos; menu (the &apos;permanently locked&apos; tag can be modified by editing the constraint from the &apos;Data&apos; menu). This way, when viewing the timetable and locking/unlocking some activities, you will not unlock the constraints which need to be locked all the time.</source>
         <translation>Explicaţie: începând cu versiunea 5.8.0 (ianuarie 2009), constrângerea activitate sală preferată are o nouă etichetă, &apos;permanent blocată&apos; (adevărat sau fals). Este recomandat să faceţi eticheta &apos;permanent blocată&apos; adevărată pentru constrângerile care trebuie să fie ne-modificabile din meniul &apos;Orar&apos; şi să lăsaţi această etichetă falsă pentru constrângerile care trebuie să fie modificabile din meniul &apos;Orar&apos; (această etichetă poate fi modificată editând constrângerea din meniul &apos;Date&apos;). În acest fel, când vizualizaţi orarul şi blocaţi/deblocaţi câteva activităţi, nu veţi debloca constrângerile care trebuie să fie blocate tot timpul.</translation>
     </message>
