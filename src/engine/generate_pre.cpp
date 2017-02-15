@@ -669,7 +669,7 @@ bool processTimeSpaceConstraints(QWidget* parent, QTextStream* initialOrderStrea
 		return false;
 	/////////////////////////////////////
 	
-	/////3. st not avail, tch not avail, break, activity pref time,
+	/////3. students not available, teachers not available, break, activity preferred time,
 	/////   activity preferred times, activities preferred times
 	t=computeNotAllowedTimesPercentages(parent);
 	if(!t)
@@ -725,7 +725,7 @@ bool processTimeSpaceConstraints(QWidget* parent, QTextStream* initialOrderStrea
 	
 	computeActivitiesNotOverlapping();
 
-	//must be after allowed times, after n hours per teacher and after max days per week
+	//must be after allowed times, after n hours per teacher and after max days per week for teachers
 	t=computeTeachersMaxHoursDaily(parent);
 	if(!t)
 		return false;
@@ -752,7 +752,7 @@ bool processTimeSpaceConstraints(QWidget* parent, QTextStream* initialOrderStrea
 	if(!t)
 		return false;
 	
-	//must be after allowed times and after n hours per subgroup
+	//must be after allowed times, after n hours per subgroup and after max days per week for subgroups
 	t=computeSubgroupsMaxHoursDaily(parent);
 	if(!t)
 		return false;
@@ -974,7 +974,7 @@ bool processTimeSpaceConstraints(QWidget* parent, QTextStream* initialOrderStrea
 	return ok;
 }
 
-//must be after allowed times and after n hours per subgroup
+//must be after allowed times, after n hours per subgroup and after max days per week for subgroups
 bool computeSubgroupsMaxHoursDaily(QWidget* parent)
 {
 	bool ok=true;
@@ -2446,7 +2446,7 @@ bool computeSubgroupsMinHoursDaily(QWidget* parent)
 	return ok;
 }
 	
-//must be after allowed times, after n hours per teacher and after max days per week
+//must be after allowed times, after n hours per teacher and after max days per week for teachers
 bool computeTeachersMaxHoursDaily(QWidget* parent)
 {
 	bool ok=true;

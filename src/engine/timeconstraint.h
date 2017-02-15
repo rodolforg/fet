@@ -269,7 +269,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -317,7 +317,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -365,7 +365,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -427,7 +427,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	void removeUseless(Rules& r);
 
@@ -496,7 +496,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	void removeUseless(Rules &r);
 
@@ -579,7 +579,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	void removeUseless(Rules &r);
 
@@ -647,7 +647,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	void removeUseless(Rules &r);
 
@@ -716,7 +716,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	void removeUseless(Rules &r);
 
@@ -762,7 +762,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -806,7 +806,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -850,7 +850,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -894,7 +894,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -940,7 +940,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -990,7 +990,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -1046,7 +1046,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -1086,7 +1086,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -1133,7 +1133,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -1170,7 +1170,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -1213,7 +1213,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -1256,7 +1256,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -1315,7 +1315,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -1352,7 +1352,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -1393,7 +1393,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -1430,7 +1430,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -1471,7 +1471,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -1517,7 +1517,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -1570,7 +1570,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -1607,7 +1607,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -1662,7 +1662,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -1699,7 +1699,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -1754,7 +1754,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -1797,7 +1797,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -1858,7 +1858,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -1897,7 +1897,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -1954,7 +1954,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -2024,7 +2024,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -2093,7 +2093,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -2157,7 +2157,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -2255,7 +2255,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -2346,7 +2346,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -2437,7 +2437,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -2526,7 +2526,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -2588,7 +2588,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	void removeUseless(Rules& r);
 
@@ -2653,7 +2653,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	void removeUseless(Rules& r);
 
@@ -2711,7 +2711,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -2767,7 +2767,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -2827,7 +2827,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -2883,7 +2883,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -2929,7 +2929,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -2971,7 +2971,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -3017,7 +3017,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -3071,7 +3071,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -3116,7 +3116,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -3177,7 +3177,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -3222,7 +3222,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -3292,7 +3292,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -3338,7 +3338,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -3388,7 +3388,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -3431,7 +3431,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -3492,7 +3492,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -3529,7 +3529,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -3583,7 +3583,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
@@ -3628,7 +3628,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	void removeUseless(Rules& r);
 
@@ -3675,7 +3675,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	void removeUseless(Rules& r);
 
@@ -3734,7 +3734,7 @@ public:
 
 	QString getDetailedDescription(Rules& r);
 
-	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>&dl, QString* conflictsString=NULL);
+	double fitness(Solution& c, Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
 
 	bool isRelatedToActivity(Rules& r, Activity* a);
 	
