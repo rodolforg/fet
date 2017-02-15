@@ -1293,6 +1293,8 @@ Conclusion: he has many teachers, and almost all should have max 2 gaps per week
 does not want to add manually that many constraints. So, he suggests that FET should add constraints for all teachers,
 with a selected number of max gaps per week, and then the user can modify each one by hand.
 
+(Suggested indirectly also by Julio González Gil, on the forum.)
+
 83---------------------------------------------------------
 From Massimo Mancini:
 
@@ -1677,7 +1679,7 @@ Implement constraint "Activity needs several rooms". (I am not 100% sure if it i
 single activity or if it is also needed to get only some rooms from (a larger) selection. So maybe all current "roomS" constraints "just" need an
 option "number of used rooms from the selection". Currently it is always 1. It is needed to increase this number.)
 
-(Also suggested by Anton Anthofer)
+(Also suggested by Anton Anthofer, and dasa on the forum.)
 
 115---------------------------------------------------------
 From nouvakis:
@@ -4258,12 +4260,7 @@ So it is basically a Free Teacher timetable printout, but it does not have
 any comments like "Must come earlier" or "Single gap", it just displays the
 names of all the teachers who are not working in that period.
 
-252---------------------------------------------------------
-From Vangelis Karafillidis:
-
-Constraint teacher(s) max span per day (max hours + gaps per day).
-
-Also for this he showed how to use tricks using activities occupy max time slots from selection.
+252--------------------------DONE---------------------------
 
 253---------------------------------------------------------
 From Benahmed Abdelkrim (on forum):
@@ -4884,3 +4881,174 @@ them all at one. at the moment i always need to read and fix it always
 step by step (because i can't remember always all reported bugs, especially 
 if i check datasets from other users and or if i can't even read the 
 characters (Arabic, Russian, ...)
+
+300---------------------------------------------------------
+From Jijo Jose:
+
+1.  Export the result to Excel format
+2.  Add xml dtds for xml display
+
+301---------------------------------------------------------
+From Julio González Gil (on forum):
+
+Rephrased by Liviu Lalescu:
+
+We need more preliminary tests for the constraint teacher(s) min hours daily, to avoid
+unnecessary work to discover the bugs. For instance, if we have teacher(s) min 2 hours daily
+with allow empty days, and:
+
+- The teacher is only available one hour on a day, or
+- The teacher has one activity divided into two components, 100% min 1 days between them,
+each component having duration 1.
+
+302---------------------------------------------------------
+From Volker Dirr:
+
+generate multiple: instead of a fixed max time use a more flexible max 
+time. "Calculate max X minutes longer than the time the last max 
+activity was placed" or "Countdown x minutes if no new max placed 
+activity was found"
+so for example thre is a countdown timelimit with 5 minutes.
+as soon as a new max placed activity was found the counter restarts at 5 
+minutes.
+  so the time limit is 5 minutes.
+
+303---------------------------------------------------------
+From Julio González Gil (on forum):
+
+If we are sure that nobody can teach less hours than the global constraint (for all teachers), another option is to mark as unavailable the days for the teacher(s) with problems.
+
+For example if we have "min hours per day = 2" for all teachers, and TeacherA has Wednesday with only one free hour (time slot), it is clear we can mark the whole Wednesday as not available (as it won't be used anyway).
+
+---
+
+Liviu Lalescu: Maybe also for students?
+
+---
+
+Volker Dirr:
+
+a) fet should show a "speed warning" only. so user can modify hisself
+or
+b) fet should automatically disallow those timeslots for related activities. but this is a bit critical. (i wrote similar stuff for rooms and same starting time constraints but we didn't added it yet, since there where small problems with other example file. i think they only happen since the free time slot check where done after the "set disallowed" even if it must be done before. but that mean we must split that in the source, since currently Liviu done both very close at the same time.)
+
+---
+
+Julio González Gil:
+
+I would go with option A, with a warning for each problem found. In my opinion it's better to allow the user to fix it and least you are sending a warning to the user about the speed (I'd mention that in this case you can even have impossible timetables as it was in my case).
+
+---
+
+Liviu Lalescu:
+
+The code could look like:
+
+			for(int d=0; d<gt.rules.nDaysPerWeek; d++){
+				int nFreeSlotsDay=0;
+				for(int h=0; h<gt.rules.nHoursPerDay; h++){
+					if(!teacherNotAvailableDayHour[tc][d][h])
+						nFreeSlotsDay++;
+				}
+				if(nFreeSlotsDay>0 && nFreeSlotsDay<teachersMinHoursDailyMinHours[tc]){
+					ok=false;
+
+					int t=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
+					 GeneratePreTranslate::tr("For teacher %1, the constraint min %2 hours daily is useless on day %3. Please make this "
+					 "teacher not available on this whole day, for performance and better correctness checking.")
+					 .arg(gt.rules.internalTeachersList[tc]->name)
+					 .arg(teachersMinHoursDailyMinHours[tc])
+					 .arg(gt.rules.daysOfTheWeek[d])
+					 ,
+					 GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
+					 1, 0 );
+			 	
+					if(t==0)
+						return false;
+				}
+			}
+
+to be added at the end of the function "bool computeTeachersMinHoursDaily(QWidget* parent)" of file src/engine/generate_pre.cpp.
+
+304---------------------------------------------------------
+From jillali elghazoui:
+
+In the Add activity dialog, add a check box near Selected (students) list widget. The combo box may be called "Activities separately"
+and, if selected, will add more activities, one for each selected students set.
+
+Liviu Lalescu: I am so sorry, but I think it is not a good thing to add. It will complicate unnecessarily the interface.
+
+305-----------------------DONE------------------------------
+
+306---------------------------------------------------------
+From Volker Dirr (on forum):
+
+Teacher(s) max gaps continuously (a constraint that limits the number of continuous gaps).
+
+Liviu Lalescu: seems difficult. But you may use a trick: add a dummy activity with duration 1 for each allowed gap for the teacher,
+with activity tag "gaps", then make max gaps per week for that teacher 0, then use constraint teacher max hours continuously
+with activity tag "gaps".
+
+Volker Dirr:
+
+The workaround is fine for the full time teachers at my school; but it is bad for part time teachers, since the workaround affects
+also the min/max number of hours per day and also the number of days per week.
+
+307---------------------------------------------------------
+From math user (on forum):
+
+The links to each table (#table_12) are great.
+The only problem is that the link for a certain teacher changes when another teacher is added or removed.
+
+---
+
+Why not keep #table_12 and so on and just make them permanent (associated to a certain teacher, group, room, ...)?
+Say #table_12 belongs to teacher Abc: The ID #table_12 is stored for this teacher. Suppose the last stored ID is #table_50.
+Adding a new teacher will result in ID #table_51 being associated with that teacher, and so on.
+Removing say teacher with ID #table_34 will make no changes, i.e. the next new teacher gets ID #table_52.
+
+There should be a setting to change between consecutive IDs (default - as in the current version) and permenent IDs (my suggestion).
+When switching from permanent to consecutive, all IDs are reallocated when the timetable is generated.
+
+---
+
+Liviu Lalescu:
+
+Unfortunately, I think this is (very?) complicated.
+
+---
+
+rodolforg:
+
+Maybe a hash of room name?
+table_roomXXXX where XXXX is a hash?
+
+---
+
+Liviu Lalescu:
+
+I thought of this, too. But there might appear conflicts, and solving them is not easy. Also, numbers are nicer than a hash value.
+
+---
+
+rodolforg:
+
+Another option is to convert room/subject/teacher/etc. name to URL encoding? Like http://doc.qt.io/qt-5/qurl.html#toPercentEncoding
+
+---
+
+Volker Dirr:
+
+that will avoid duplicates.
+advantage is the permanent link.
+disadvantages are that Arabic (and other) users will have trouble to read it and the file size will grow.
+
+---
+
+Liviu Lalescu:
+
+I think white spaces should also be encoded, which is not done by default?
+
+But I would not like to implement this in the official version. I prefer the numbers, they are much shorter and nicer. And maybe safer.
+
+I can add this in the TODO, and if more people ask, I will reconsider.
