@@ -1517,6 +1517,87 @@ inline bool Generate::subgroupRemoveAnActivityFromAnywhereCertainDay(int sbg, in
 		return false;
 }
 
+inline bool Generate::subgroupRemoveAnActivityFromBeginOrEndCertainDay(int sbg, int d2, int level, int ai, QList<int>& conflActivities, int& nConflActivities, int& removedActivity) //returns true if successful, false if impossible
+{
+	Q_UNUSED(sbg);
+
+	int actIndexBegin=-1, actIndexEnd=-1;
+	
+	if(sbgDayNHours[d2]>0){
+		for(int h2=0; h2<gt.rules.nHoursPerDay; h2++){
+			if(sbgTimetable(d2,h2)>=0){
+				actIndexBegin=sbgTimetable(d2,h2);
+				break;
+			}
+		}
+		if(actIndexBegin>=0)
+			if(fixedTimeActivity[actIndexBegin] || swappedActivities[actIndexBegin] || actIndexBegin==ai)
+				actIndexBegin=-1;
+		for(int h2=gt.rules.nHoursPerDay-1; h2>=0; h2--){
+			if(sbgTimetable(d2,h2)>=0){
+				actIndexEnd=sbgTimetable(d2,h2);
+				break;
+			}
+		}
+		if(actIndexEnd>=0)
+			if(fixedTimeActivity[actIndexEnd] || swappedActivities[actIndexEnd] || actIndexEnd==ai || actIndexEnd==actIndexBegin)
+				actIndexEnd=-1;
+	}
+						
+	if(actIndexEnd>=0 || actIndexBegin>=0){
+		int ai2=-1;
+		if(level==0){
+			int optMinWrong=INF;
+
+			if(actIndexBegin>=0){
+				if(optMinWrong>triedRemovals(actIndexBegin,c.times[actIndexBegin])){
+				 	optMinWrong=triedRemovals(actIndexBegin,c.times[actIndexBegin]);
+				}
+				ai2=actIndexBegin;
+			}
+
+			if(actIndexEnd>=0){
+				if(optMinWrong>triedRemovals(actIndexEnd,c.times[actIndexEnd])){
+				 	optMinWrong=triedRemovals(actIndexEnd,c.times[actIndexEnd]);
+				}
+				ai2=actIndexEnd;
+			}
+			
+			if(actIndexBegin>=0 && actIndexEnd>=0 && optMinWrong==triedRemovals(actIndexEnd,c.times[actIndexEnd]) &&
+			  optMinWrong==triedRemovals(actIndexBegin,c.times[actIndexBegin])){
+				if(randomKnuth(2)==0)
+					ai2=actIndexBegin;
+				else
+					ai2=actIndexEnd;
+			}
+		}
+		else{
+			if(actIndexBegin>=0 && actIndexEnd<0)
+				ai2=actIndexBegin;
+			else if(actIndexEnd>=0 && actIndexBegin<0)
+				ai2=actIndexEnd;
+			else{
+				if(randomKnuth(2)==0)
+					ai2=actIndexBegin;
+				else
+					ai2=actIndexEnd;
+			}
+		}
+		assert(ai2>=0);
+								
+		removedActivity=ai2;
+							
+		assert(!conflActivities.contains(ai2));
+		conflActivities.append(ai2);
+		nConflActivities++;
+		assert(nConflActivities==conflActivities.count());
+		
+		return true;
+	}
+	else
+		return false;
+}
+
 inline bool Generate::subgroupRemoveAnActivityFromAnywhereCertainDayCertainActivityTag(int sbg, int d2, int actTag, int level, int ai, QList<int>& conflActivities, int& nConflActivities, int& removedActivity) //returns true if successful, false if impossible
 {
 	Q_UNUSED(sbg);
@@ -3544,22 +3625,32 @@ again_if_impossible_activity:
 		bool okthreeactivitiesgrouped;
 		bool oktwoactivitiesordered;
 		bool okactivityendsstudentsday;
+
 		bool okstudentsmaxdaysperweek;
+		bool okstudentsintervalmaxdaysperweek;
+
+		bool okstudentsmaxspanperday;
+		bool okstudentsminrestinghours;
+
 		bool okstudentsearlymaxbeginningsatsecondhour;
 		bool okstudentsmaxgapsperweek;
 		bool okstudentsmaxgapsperday;
 		bool okstudentsmaxhoursdaily;
 		bool okstudentsmaxhourscontinuously;
 		bool okstudentsminhoursdaily;
-		bool okstudentsintervalmaxdaysperweek;
 		bool okteachermaxdaysperweek;
 		bool okteachersintervalmaxdaysperweek;
+
+		bool okteachersmaxspanperday;
+		bool okteachersminrestinghours;
+
 		bool okteachersmaxgapsperweek;
 		bool okteachersmaxgapsperday;
 		bool okteachersmaxhoursdaily;
 		bool okteachersmaxhourscontinuously;
 		bool okteachersminhoursdaily;
 		bool okteachersmindaysperweek;
+
 		bool okmingapsbetweenactivities;
 
 		bool okteachersactivitytagmaxhourscontinuously;
@@ -5256,6 +5347,422 @@ impossiblestudentsintervalmaxdaysperweek:
 
 		////////////////////////////END students interval max days per week
 
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+		////////////////////////////BEGIN students max span per day
+
+		okstudentsmaxspanperday=true;
+		foreach(int sbg, act->iSubgroupsList)
+			if(subgroupsMaxSpanPerDayPercentages[sbg]>=0){
+				//percentage is 100%
+				int maxSpanPerDay=subgroupsMaxSpanPerDayMaxSpan[sbg];
+			
+				//preliminary test
+				int _cnt=0;
+				int _start=-1;
+				int _end=-1;
+				if(subgroupsEarlyMaxBeginningsAtSecondHourPercentage[sbg]>=0){
+					if(subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]==0){
+						for(int h2=0; h2<gt.rules.nHoursPerDay; h2++){
+							if(!breakDayHour(d,h2) && !subgroupNotAvailableDayHour(sbg,d,h2)){
+								_start=h2;
+								break;
+							}
+						}
+					}
+					else{
+						int h2;
+						for(h2=0; h2<gt.rules.nHoursPerDay; h2++){
+							if(newSubgroupsTimetable(sbg, d, h2)>=0){
+								_start=h2;
+								break;
+							}
+							else if(!breakDayHour(d,h2) && !subgroupNotAvailableDayHour(sbg,d,h2)){
+								break;
+							}
+						}
+						if(_start==-1){
+							h2++;
+							for(; h2<gt.rules.nHoursPerDay; h2++){
+								if(!breakDayHour(d,h2) && !subgroupNotAvailableDayHour(sbg,d,h2)){
+									_start=h2;
+									break;
+								}
+							}
+						}
+					}
+				}
+				else{
+					for(int h2=0; h2<gt.rules.nHoursPerDay; h2++){
+						if(newSubgroupsTimetable(sbg, d, h2)>=0){
+							_start=h2;
+							break;
+						}
+					}
+				}
+				for(int h2=gt.rules.nHoursPerDay-1; h2>=0; h2--){
+					if(newSubgroupsTimetable(sbg, d, h2)>=0){
+						_end=h2;
+						break;
+					}
+				}
+				
+				if(_start>=0 && _end>=0 && _end>=_start)
+					_cnt=_end-_start+1;
+					
+				if(_cnt<=maxSpanPerDay)
+					continue;
+				
+				if(level>=LEVEL_STOP_CONFLICTS_CALCULATION){
+					okstudentsmaxspanperday=false;
+					goto impossiblestudentsmaxspanperday;
+				}
+
+				getSbgTimetable(sbg, conflActivities[newtime]);
+				updateSbgNHoursGaps(sbg, d); //needed for subgroupRemoveAnActivityFromBeginOrEndCertainDay or
+				//subgroupRemoveAnActivityFromEndCertainDay or subgroupRemoveAnActivityFromBeginCertainDay below
+
+				for(;;){
+					int cnt=0;
+					int start=-1;
+					int end=-1;
+
+					if(subgroupsEarlyMaxBeginningsAtSecondHourPercentage[sbg]>=0){
+						if(subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]==0){
+							for(int h2=0; h2<gt.rules.nHoursPerDay; h2++){
+								if(!breakDayHour(d,h2) && !subgroupNotAvailableDayHour(sbg,d,h2)){
+									start=h2;
+									break;
+								}
+							}
+						}
+						else{
+							int h2;
+							for(h2=0; h2<gt.rules.nHoursPerDay; h2++){
+								if(sbgTimetable(d, h2)>=0){
+									start=h2;
+									break;
+								}
+								else if(!breakDayHour(d,h2) && !subgroupNotAvailableDayHour(sbg,d,h2)){
+									break;
+								}
+							}
+							if(start==-1){
+								h2++;
+								for(; h2<gt.rules.nHoursPerDay; h2++){
+									if(!breakDayHour(d,h2) && !subgroupNotAvailableDayHour(sbg,d,h2)){
+										start=h2;
+										break;
+									}
+								}
+							}
+						}
+					}
+					else{
+						for(int h2=0; h2<gt.rules.nHoursPerDay; h2++){
+							if(sbgTimetable(d, h2)>=0){
+								start=h2;
+								break;
+							}
+						}
+					}
+
+					for(int h2=gt.rules.nHoursPerDay-1; h2>=0; h2--){
+						if(sbgTimetable(d, h2)>=0){
+							end=h2;
+							break;
+						}
+					}
+					
+					if(start>=0 && end>=0 && end>=start)
+						cnt=end-start+1;
+						
+					if(cnt<=maxSpanPerDay)
+						break;
+				
+					int ai2=-1;
+					
+					if(subgroupsEarlyMaxBeginningsAtSecondHourPercentage[sbg]>=0){
+						if(subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]==0){
+							bool k=subgroupRemoveAnActivityFromEndCertainDay(sbg, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+							assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+							if(!k){
+								if(level==0){
+									//old comment below
+									//Liviu: inactivated from version 5.12.4 (7 Feb. 2010), because it may take too long for some files
+									//cout<<"WARNING - mb - file "<<__FILE__<<" line "<<__LINE__<<endl;
+								}
+								okstudentsmaxspanperday=false;
+								goto impossiblestudentsmaxspanperday;
+							}
+						}
+						else{
+							bool k=subgroupRemoveAnActivityFromEndCertainDay(sbg, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+							assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+							if(!k){
+								bool k2;
+								if(sbgTimetable(d, 0)>=0)
+									k2=subgroupRemoveAnActivityFromBeginCertainDay(sbg, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+								else
+									k2=false;
+								assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+								if(!k2){
+									if(level==0){
+										//old comment below
+										//Liviu: inactivated from version 5.12.4 (7 Feb. 2010), because it may take too long for some files
+										//cout<<"WARNING - mb - file "<<__FILE__<<" line "<<__LINE__<<endl;
+									}
+									okstudentsmaxspanperday=false;
+									goto impossiblestudentsmaxspanperday;
+								}
+							}
+						}
+					}
+					else{
+						bool k=subgroupRemoveAnActivityFromBeginOrEndCertainDay(sbg, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+						assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+						if(!k){
+							if(level==0){
+								//old comment below
+								//Liviu: inactivated from version 5.12.4 (7 Feb. 2010), because it may take too long for some files
+								//cout<<"WARNING - mb - file "<<__FILE__<<" line "<<__LINE__<<endl;
+							}
+							okstudentsmaxspanperday=false;
+							goto impossiblestudentsmaxspanperday;
+						}
+					}
+					
+					assert(ai2>=0);
+
+					removeAi2FromSbgTimetable(ai2);
+					sbgDayNHours[d]-=gt.rules.internalActivitiesList[ai2].duration; //needed for subgroupRemoveAnActivityFromBeginOrEndCertainDay or
+					//subgroupRemoveAnActivityFromEndCertainDay or subgroupRemoveAnActivityFromBeginCertainDay above
+					assert(sbgDayNHours[d]>=0);
+				}
+			}
+		
+impossiblestudentsmaxspanperday:
+		if(!okstudentsmaxspanperday){
+			if(updateSubgroups || updateTeachers)
+				removeAiFromNewTimetable(ai, act, d, h);
+			//removeConflActivities(conflActivities[newtime], nConflActivities[newtime], act, newtime);
+
+			nConflActivities[newtime]=MAX_ACTIVITIES;
+			continue;
+		}
+
+		////////////////////////////END students max span per day
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+		////////////////////////////BEGIN students min resting hours
+		okstudentsminrestinghours=true;
+
+		foreach(int sbg, act->iSubgroupsList){
+			for(int qq=0; qq<2; qq++){
+				double percentage;
+				int minRestingHours;
+				bool circular;
+				if(qq==0){
+					percentage=subgroupsMinRestingHoursCircularPercentages[sbg];
+					minRestingHours=subgroupsMinRestingHoursCircularMinHours[sbg];
+					circular=true;
+				}
+				else{
+					assert(qq==1);
+					percentage=subgroupsMinRestingHoursNotCircularPercentages[sbg];
+					minRestingHours=subgroupsMinRestingHoursNotCircularMinHours[sbg];
+					circular=false;
+				}
+				if(percentage>=0){
+					//percentage is 100%
+					assert(minRestingHours<=gt.rules.nHoursPerDay);
+					
+					//phase 1 - activity is at the end of the day
+					int _cnt1=0;
+					int _cnt1d=0;
+					if(d <= gt.rules.nDaysPerWeek-2+(circular?1:0) && h+act->duration-1 >= gt.rules.nHoursPerDay-minRestingHours){
+						for(int h2=gt.rules.nHoursPerDay-1; h2>h+act->duration-1; h2--){
+							int ai2=newSubgroupsTimetable(sbg, d, h2);
+							if(ai2>=0 && !conflActivities[newtime].contains(ai2))
+								break;
+							else
+								_cnt1++;
+						}
+						_cnt1d=_cnt1;
+						for(int h2=0; h2<minRestingHours-_cnt1d; h2++){
+							int ai2=newSubgroupsTimetable(sbg, (d+1<=gt.rules.nDaysPerWeek-1?d+1:0), h2);
+							if(ai2>=0 && !conflActivities[newtime].contains(ai2))
+								break;
+							else
+								_cnt1++;
+						}
+					}
+					else
+						_cnt1=minRestingHours;
+					
+					//phase 2 - activity is at the beginning of the day
+					int _cnt2=0;
+					int _cnt2d=0;
+					if(d>=1-(circular?1:0) && h<=minRestingHours-1){
+						for(int h2=0; h2<h; h2++){
+							int ai2=newSubgroupsTimetable(sbg, d, h2);
+							if(ai2>=0 && !conflActivities[newtime].contains(ai2))
+								break;
+							else
+								_cnt2++;
+						}
+						_cnt2d=_cnt2;
+						for(int h2=gt.rules.nHoursPerDay-1; h2>=gt.rules.nHoursPerDay-minRestingHours+_cnt2d; h2--){
+							int ai2=newSubgroupsTimetable(sbg, (d-1>=0?d-1:gt.rules.nDaysPerWeek-1), h2);
+							if(ai2>=0 && !conflActivities[newtime].contains(ai2))
+								break;
+							else
+								_cnt2++;
+						}
+					}
+					else
+						_cnt2=minRestingHours;
+						
+					if(_cnt1<minRestingHours){
+						QList<int> removableActs;
+						/*for(int h2=gt.rules.nHoursPerDay-minRestingHours; h2<gt.rules.nHoursPerDay; h2++){
+							int ai2=newSubgroupsTimetable(sbg, d, h2);
+							if(ai2>=0 && ai2!=ai && !removableActs.contains(ai2) && !fixedTimeActivity[ai2] && !swappedActivities[ai2] && !conflActivities[newtime].contains(ai2))
+								removableActs.append(ai2);
+						}*/
+						for(int h2=0; h2<minRestingHours-_cnt1d; h2++){
+							int ai2=newSubgroupsTimetable(sbg, (d+1<=gt.rules.nDaysPerWeek-1?d+1:0), h2);
+							if(ai2>=0 && !removableActs.contains(ai2) && !conflActivities[newtime].contains(ai2)){
+								if(!fixedTimeActivity[ai2] && !swappedActivities[ai2])
+									removableActs.append(ai2);
+								else
+									break;
+							}
+						}
+						
+						for(;;){
+							if(removableActs.count()==0){
+								okstudentsminrestinghours=false;
+								goto impossiblestudentsminrestinghours;
+							}
+							
+							int ai2=removableActs.at(0);
+							
+							int t=removableActs.removeAll(ai2);
+							assert(t==1);
+							
+							assert(!conflActivities[newtime].contains(ai2));
+							conflActivities[newtime].append(ai2);
+							nConflActivities[newtime]++;
+							assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+
+							int cnt1=0;
+							if(d <= gt.rules.nDaysPerWeek-2+(circular?1:0) && h+act->duration-1 >= gt.rules.nHoursPerDay-minRestingHours){
+								/*for(int h2=gt.rules.nHoursPerDay-1; h2>h+act->duration-1; h2--){
+									int ai2=newSubgroupsTimetable(sbg, d, h2);
+									if(ai2>=0 && !conflActivities[newtime].contains(ai2))
+										break;
+									else
+										cnt1++;
+								}*/
+								cnt1+=_cnt1d;
+								for(int h2=0; h2<minRestingHours-_cnt1d; h2++){
+									int ai2=newSubgroupsTimetable(sbg, (d+1<=gt.rules.nDaysPerWeek-1?d+1:0), h2);
+									if(ai2>=0 && !conflActivities[newtime].contains(ai2))
+										break;
+									else
+										cnt1++;
+								}
+							}
+							else{
+								assert(0);
+							}
+							
+							assert(cnt1>_cnt1);
+							_cnt1=cnt1;
+							
+							if(cnt1>=minRestingHours)
+								break;
+						}
+					}
+					if(_cnt2<minRestingHours){
+						QList<int> removableActs;
+						for(int h2=gt.rules.nHoursPerDay-1; h2>=gt.rules.nHoursPerDay-minRestingHours+_cnt2d; h2--){
+							int ai2=newSubgroupsTimetable(sbg, (d-1>=0?d-1:gt.rules.nDaysPerWeek-1), h2);
+							if(ai2>=0 && !removableActs.contains(ai2) && !conflActivities[newtime].contains(ai2)){
+								if(!fixedTimeActivity[ai2] && !swappedActivities[ai2])
+									removableActs.append(ai2);
+								else
+									break;
+							}
+						}
+						/*for(int h2=0; h2<minRestingHours; h2++){
+							int ai2=newSubgroupsTimetable(sbg, d, h2);
+							if(ai2>=0 && ai2!=ai && !removableActs.contains(ai2) && !fixedTimeActivity[ai2] && !swappedActivities[ai2] && !conflActivities[newtime].contains(ai2))
+								removableActs.append(ai2);
+						}*/
+						
+						for(;;){
+							if(removableActs.count()==0){
+								okstudentsminrestinghours=false;
+								goto impossiblestudentsminrestinghours;
+							}
+							
+							int ai2=removableActs.at(0);
+							
+							int t=removableActs.removeAll(ai2);
+							assert(t==1);
+							
+							assert(!conflActivities[newtime].contains(ai2));
+							conflActivities[newtime].append(ai2);
+							nConflActivities[newtime]++;
+							assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+
+							int cnt2=0;
+							if(d>=1-(circular?1:0) && h<minRestingHours){
+								/*for(int h2=0; h2<h; h2++){
+									int ai2=newSubgroupsTimetable(sbg, d, h2);
+									if(ai2>=0 && !conflActivities[newtime].contains(ai2))
+										break;
+									else
+										cnt2++;
+								}*/
+								cnt2+=_cnt2d;
+								for(int h2=gt.rules.nHoursPerDay-1; h2>=gt.rules.nHoursPerDay-minRestingHours+_cnt2d; h2--){
+									int ai2=newSubgroupsTimetable(sbg, (d-1>=0?d-1:gt.rules.nDaysPerWeek-1), h2);
+									if(ai2>=0 && !conflActivities[newtime].contains(ai2))
+										break;
+									else
+										cnt2++;
+								}
+							}
+							else{
+								assert(0);
+							}
+
+							assert(cnt2>_cnt2);
+							_cnt2=cnt2;
+
+							if(cnt2>=minRestingHours)
+								break;
+						}
+					}
+				}
+			}
+		}
+
+impossiblestudentsminrestinghours:
+		if(!okstudentsminrestinghours){
+			if(updateSubgroups || updateTeachers)
+				removeAiFromNewTimetable(ai, act, d, h);
+			//removeConflActivities(conflActivities[newtime], nConflActivities[newtime], act, newtime);
+
+			nConflActivities[newtime]=MAX_ACTIVITIES;
+			continue;
+		}
+
+		////////////////////////////END students min resting hours
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -7333,6 +7840,311 @@ impossibleteachersintervalmaxdaysperweek:
 		}
 
 		////////////////////////////END teachers interval max days per week
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+		////////////////////////////BEGIN teachers max span per day
+
+		okteachersmaxspanperday=true;
+		foreach(int tch, act->iTeachersList)
+			if(teachersMaxSpanPerDayPercentages[tch]>=0){
+				//percentage is 100%
+				int maxSpanPerDay=teachersMaxSpanPerDayMaxSpan[tch];
+			
+				//preliminary test
+				int _cnt=0;
+				int _start=-1;
+				int _end=-1;
+				for(int h2=0; h2<gt.rules.nHoursPerDay; h2++)
+					if(newTeachersTimetable(tch, d, h2)>=0){
+						_start=h2;
+						break;
+					}
+				for(int h2=gt.rules.nHoursPerDay-1; h2>=0; h2--)
+					if(newTeachersTimetable(tch, d, h2)>=0){
+						_end=h2;
+						break;
+					}
+					
+				if(_start>=0 && _end>=0 && _end>=_start)
+					_cnt=_end-_start+1;
+					
+				if(_cnt<=maxSpanPerDay)
+					continue;
+				
+				if(level>=LEVEL_STOP_CONFLICTS_CALCULATION){
+					okteachersmaxspanperday=false;
+					goto impossibleteachersmaxspanperday;
+				}
+
+				getTchTimetable(tch, conflActivities[newtime]);
+				updateTchNHoursGaps(tch, d); //needed for teacherRemoveAnActivityFromBeginOrEndCertainDay below
+
+				for(;;){
+					int cnt=0;
+					int start=-1;
+					int end=-1;
+					for(int h2=0; h2<gt.rules.nHoursPerDay; h2++)
+						if(tchTimetable(d, h2)>=0){
+							start=h2;
+							break;
+						}
+					for(int h2=gt.rules.nHoursPerDay-1; h2>=0; h2--)
+						if(tchTimetable(d, h2)>=0){
+							end=h2;
+							break;
+						}
+						
+					if(start>=0 && end>=0 && end>=start)
+						cnt=end-start+1;
+						
+					if(cnt<=maxSpanPerDay)
+						break;
+				
+					int ai2=-1;
+					
+					bool k=teacherRemoveAnActivityFromBeginOrEndCertainDay(tch, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+					assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+					if(!k){
+						if(level==0){
+							//old comment below
+							//Liviu: inactivated from version 5.12.4 (7 Feb. 2010), because it may take too long for some files
+							//cout<<"WARNING - mb - file "<<__FILE__<<" line "<<__LINE__<<endl;
+						}
+						okteachersmaxspanperday=false;
+						goto impossibleteachersmaxspanperday;
+					}
+					
+					assert(ai2>=0);
+
+					removeAi2FromTchTimetable(ai2);
+					tchDayNHours[d]-=gt.rules.internalActivitiesList[ai2].duration; //needed for teacherRemoveAnActivityFromBeginOrEndCertainDay above
+					assert(tchDayNHours[d]>=0);
+				}
+			}
+		
+impossibleteachersmaxspanperday:
+		if(!okteachersmaxspanperday){
+			if(updateSubgroups || updateTeachers)
+				removeAiFromNewTimetable(ai, act, d, h);
+			//removeConflActivities(conflActivities[newtime], nConflActivities[newtime], act, newtime);
+
+			nConflActivities[newtime]=MAX_ACTIVITIES;
+			continue;
+		}
+
+		////////////////////////////END teachers max span per day
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+		////////////////////////////BEGIN teachers min resting hours
+		okteachersminrestinghours=true;
+
+		foreach(int tch, act->iTeachersList){
+			for(int qq=0; qq<2; qq++){
+				double percentage;
+				int minRestingHours;
+				bool circular;
+				if(qq==0){
+					percentage=teachersMinRestingHoursCircularPercentages[tch];
+					minRestingHours=teachersMinRestingHoursCircularMinHours[tch];
+					circular=true;
+				}
+				else{
+					assert(qq==1);
+					percentage=teachersMinRestingHoursNotCircularPercentages[tch];
+					minRestingHours=teachersMinRestingHoursNotCircularMinHours[tch];
+					circular=false;
+				}
+				if(percentage>=0){
+					//percentage is 100%
+					assert(minRestingHours<=gt.rules.nHoursPerDay);
+					
+					//phase 1 - activity is at the end of the day
+					int _cnt1=0;
+					int _cnt1d=0;
+					if(d <= gt.rules.nDaysPerWeek-2+(circular?1:0) && h+act->duration-1 >= gt.rules.nHoursPerDay-minRestingHours){
+						for(int h2=gt.rules.nHoursPerDay-1; h2>h+act->duration-1; h2--){
+							int ai2=newTeachersTimetable(tch, d, h2);
+							if(ai2>=0 && !conflActivities[newtime].contains(ai2))
+								break;
+							else
+								_cnt1++;
+						}
+						_cnt1d=_cnt1;
+						for(int h2=0; h2<minRestingHours-_cnt1d; h2++){
+							int ai2=newTeachersTimetable(tch, (d+1<=gt.rules.nDaysPerWeek-1?d+1:0), h2);
+							if(ai2>=0 && !conflActivities[newtime].contains(ai2))
+								break;
+							else
+								_cnt1++;
+						}
+					}
+					else
+						_cnt1=minRestingHours;
+					
+					//phase 2 - activity is at the beginning of the day
+					int _cnt2=0;
+					int _cnt2d=0;
+					if(d>=1-(circular?1:0) && h<=minRestingHours-1){
+						for(int h2=0; h2<h; h2++){
+							int ai2=newTeachersTimetable(tch, d, h2);
+							if(ai2>=0 && !conflActivities[newtime].contains(ai2))
+								break;
+							else
+								_cnt2++;
+						}
+						_cnt2d=_cnt2;
+						for(int h2=gt.rules.nHoursPerDay-1; h2>=gt.rules.nHoursPerDay-minRestingHours+_cnt2d; h2--){
+							int ai2=newTeachersTimetable(tch, (d-1>=0?d-1:gt.rules.nDaysPerWeek-1), h2);
+							if(ai2>=0 && !conflActivities[newtime].contains(ai2))
+								break;
+							else
+								_cnt2++;
+						}
+					}
+					else
+						_cnt2=minRestingHours;
+						
+					if(_cnt1<minRestingHours){
+						QList<int> removableActs;
+						/*for(int h2=gt.rules.nHoursPerDay-minRestingHours; h2<gt.rules.nHoursPerDay; h2++){
+							int ai2=newTeachersTimetable(tch, d, h2);
+							if(ai2>=0 && ai2!=ai && !removableActs.contains(ai2) && !fixedTimeActivity[ai2] && !swappedActivities[ai2] && !conflActivities[newtime].contains(ai2))
+								removableActs.append(ai2);
+						}*/
+						for(int h2=0; h2<minRestingHours-_cnt1d; h2++){
+							int ai2=newTeachersTimetable(tch, (d+1<=gt.rules.nDaysPerWeek-1?d+1:0), h2);
+							if(ai2>=0 && !removableActs.contains(ai2) && !conflActivities[newtime].contains(ai2)){
+								if(!fixedTimeActivity[ai2] && !swappedActivities[ai2])
+									removableActs.append(ai2);
+								else
+									break;
+							}
+						}
+						
+						for(;;){
+							if(removableActs.count()==0){
+								okteachersminrestinghours=false;
+								goto impossibleteachersminrestinghours;
+							}
+							
+							int ai2=removableActs.at(0);
+							
+							int t=removableActs.removeAll(ai2);
+							assert(t==1);
+							
+							assert(!conflActivities[newtime].contains(ai2));
+							conflActivities[newtime].append(ai2);
+							nConflActivities[newtime]++;
+							assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+
+							int cnt1=0;
+							if(d <= gt.rules.nDaysPerWeek-2+(circular?1:0) && h+act->duration-1 >= gt.rules.nHoursPerDay-minRestingHours){
+								/*for(int h2=gt.rules.nHoursPerDay-1; h2>h+act->duration-1; h2--){
+									int ai2=newTeachersTimetable(tch, d, h2);
+									if(ai2>=0 && !conflActivities[newtime].contains(ai2))
+										break;
+									else
+										cnt1++;
+								}*/
+								cnt1+=_cnt1d;
+								for(int h2=0; h2<minRestingHours-_cnt1d; h2++){
+									int ai2=newTeachersTimetable(tch, (d+1<=gt.rules.nDaysPerWeek-1?d+1:0), h2);
+									if(ai2>=0 && !conflActivities[newtime].contains(ai2))
+										break;
+									else
+										cnt1++;
+								}
+							}
+							else{
+								assert(0);
+							}
+							
+							assert(cnt1>_cnt1);
+							_cnt1=cnt1;
+							
+							if(cnt1>=minRestingHours)
+								break;
+						}
+					}
+					if(_cnt2<minRestingHours){
+						QList<int> removableActs;
+						for(int h2=gt.rules.nHoursPerDay-1; h2>=gt.rules.nHoursPerDay-minRestingHours+_cnt2d; h2--){
+							int ai2=newTeachersTimetable(tch, (d-1>=0?d-1:gt.rules.nDaysPerWeek-1), h2);
+							if(ai2>=0 && !removableActs.contains(ai2) && !conflActivities[newtime].contains(ai2)){
+								if(!fixedTimeActivity[ai2] && !swappedActivities[ai2])
+									removableActs.append(ai2);
+								else
+									break;
+							}
+						}
+						/*for(int h2=0; h2<minRestingHours; h2++){
+							int ai2=newTeachersTimetable(tch, d, h2);
+							if(ai2>=0 && ai2!=ai && !removableActs.contains(ai2) && !fixedTimeActivity[ai2] && !swappedActivities[ai2] && !conflActivities[newtime].contains(ai2))
+								removableActs.append(ai2);
+						}*/
+						
+						for(;;){
+							if(removableActs.count()==0){
+								okteachersminrestinghours=false;
+								goto impossibleteachersminrestinghours;
+							}
+							
+							int ai2=removableActs.at(0);
+							
+							int t=removableActs.removeAll(ai2);
+							assert(t==1);
+							
+							assert(!conflActivities[newtime].contains(ai2));
+							conflActivities[newtime].append(ai2);
+							nConflActivities[newtime]++;
+							assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+
+							int cnt2=0;
+							if(d>=1-(circular?1:0) && h<minRestingHours){
+								/*for(int h2=0; h2<h; h2++){
+									int ai2=newTeachersTimetable(tch, d, h2);
+									if(ai2>=0 && !conflActivities[newtime].contains(ai2))
+										break;
+									else
+										cnt2++;
+								}*/
+								cnt2+=_cnt2d;
+								for(int h2=gt.rules.nHoursPerDay-1; h2>=gt.rules.nHoursPerDay-minRestingHours+_cnt2d; h2--){
+									int ai2=newTeachersTimetable(tch, (d-1>=0?d-1:gt.rules.nDaysPerWeek-1), h2);
+									if(ai2>=0 && !conflActivities[newtime].contains(ai2))
+										break;
+									else
+										cnt2++;
+								}
+							}
+							else{
+								assert(0);
+							}
+							
+							assert(cnt2>_cnt2);
+							_cnt2=cnt2;
+							
+							if(cnt2>=minRestingHours)
+								break;
+						}
+					}
+				}
+			}
+		}
+
+impossibleteachersminrestinghours:
+		if(!okteachersminrestinghours){
+			if(updateSubgroups || updateTeachers)
+				removeAiFromNewTimetable(ai, act, d, h);
+			//removeConflActivities(conflActivities[newtime], nConflActivities[newtime], act, newtime);
+
+			nConflActivities[newtime]=MAX_ACTIVITIES;
+			continue;
+		}
+
+		////////////////////////////END teachers min resting hours
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 

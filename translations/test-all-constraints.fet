@@ -1605,6 +1605,62 @@
 	<Active>true</Active>
 	<Comments></Comments>
 </ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots>
+<ConstraintTeacherMaxSpanPerDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher_Name>t1</Teacher_Name>
+	<Max_Span>8</Max_Span>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherMaxSpanPerDay>
+<ConstraintTeacherMinRestingHours>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher_Name>t1</Teacher_Name>
+	<Minimum_Resting_Hours>2</Minimum_Resting_Hours>
+	<Circular>true</Circular>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherMinRestingHours>
+<ConstraintTeachersMaxSpanPerDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Max_Span>9</Max_Span>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeachersMaxSpanPerDay>
+<ConstraintTeachersMinRestingHours>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Minimum_Resting_Hours>3</Minimum_Resting_Hours>
+	<Circular>false</Circular>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeachersMinRestingHours>
+<ConstraintStudentsSetMaxSpanPerDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Max_Span>9</Max_Span>
+	<Students>y1</Students>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintStudentsSetMaxSpanPerDay>
+<ConstraintStudentsSetMinRestingHours>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Minimum_Resting_Hours>3</Minimum_Resting_Hours>
+	<Students>y1 a</Students>
+	<Circular>false</Circular>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintStudentsSetMinRestingHours>
+<ConstraintStudentsMaxSpanPerDay>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Max_Span>11</Max_Span>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintStudentsMaxSpanPerDay>
+<ConstraintStudentsMinRestingHours>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Minimum_Resting_Hours>7</Minimum_Resting_Hours>
+	<Circular>true</Circular>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintStudentsMinRestingHours>
 </Time_Constraints_List>
 
 <Space_Constraints_List>

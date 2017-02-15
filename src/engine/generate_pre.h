@@ -410,6 +410,30 @@ extern int subgroupsIntervalMaxDaysPerWeekIntervalEnd3[MAX_TOTAL_SUBGROUPS];
 bool computeSubgroupsIntervalMaxDaysPerWeek(QWidget* parent);
 ///////END   subgroups interval max days per week
 
+//2017-02-06
+extern int teachersMaxSpanPerDayMaxSpan[MAX_TEACHERS]; //-1 for not existing
+extern double teachersMaxSpanPerDayPercentages[MAX_TEACHERS]; //-1 for not existing
+
+extern int teachersMinRestingHoursCircularMinHours[MAX_TEACHERS]; //-1 for not existing
+extern double teachersMinRestingHoursCircularPercentages[MAX_TEACHERS]; //-1 for not existing
+extern int teachersMinRestingHoursNotCircularMinHours[MAX_TEACHERS]; //-1 for not existing
+extern double teachersMinRestingHoursNotCircularPercentages[MAX_TEACHERS]; //-1 for not existing
+//extern bool teachersMinRestingHoursCircular[MAX_TEACHERS]; //true for circular
+
+extern int subgroupsMaxSpanPerDayMaxSpan[MAX_TOTAL_SUBGROUPS]; //-1 for not existing
+extern double subgroupsMaxSpanPerDayPercentages[MAX_TOTAL_SUBGROUPS]; //-1 for not existing
+
+extern int subgroupsMinRestingHoursCircularMinHours[MAX_TOTAL_SUBGROUPS]; //-1 for not existing
+extern double subgroupsMinRestingHoursCircularPercentages[MAX_TOTAL_SUBGROUPS]; //-1 for not existing
+extern int subgroupsMinRestingHoursNotCircularMinHours[MAX_TOTAL_SUBGROUPS]; //-1 for not existing
+extern double subgroupsMinRestingHoursNotCircularPercentages[MAX_TOTAL_SUBGROUPS]; //-1 for not existing
+//extern bool subgroupsMinRestingHoursCircular[MAX_TOTAL_SUBGROUPS]; //true for circular
+
+bool computeTeachersMaxSpanPerDay(QWidget* parent);
+bool computeTeachersMinRestingHours(QWidget* parent);
+bool computeSubgroupsMaxSpanPerDay(QWidget* parent);
+bool computeSubgroupsMinRestingHours(QWidget* parent);
+////////////
 
 ////////BEGIN rooms
 bool computeBasicSpace(QWidget* parent);

@@ -433,7 +433,35 @@ SOURCES += \
 	\
 	interface/timetablestowriteondiskform.cpp \
 	\
-	interface/teachersubjectsqualificationsform.cpp
+	interface/teachersubjectsqualificationsform.cpp \
+	\
+	interface/constraintteachermaxspanperdayform.cpp \
+	interface/addconstraintteachermaxspanperdayform.cpp \
+	interface/modifyconstraintteachermaxspanperdayform.cpp \
+	interface/constraintteachersmaxspanperdayform.cpp \
+	interface/addconstraintteachersmaxspanperdayform.cpp \
+	interface/modifyconstraintteachersmaxspanperdayform.cpp \
+	\
+	interface/constraintstudentssetmaxspanperdayform.cpp \
+	interface/addconstraintstudentssetmaxspanperdayform.cpp \
+	interface/modifyconstraintstudentssetmaxspanperdayform.cpp \
+	interface/constraintstudentsmaxspanperdayform.cpp \
+	interface/addconstraintstudentsmaxspanperdayform.cpp \
+	interface/modifyconstraintstudentsmaxspanperdayform.cpp \
+	\
+	interface/constraintteacherminrestinghoursform.cpp \
+	interface/addconstraintteacherminrestinghoursform.cpp \
+	interface/modifyconstraintteacherminrestinghoursform.cpp \
+	interface/constraintteachersminrestinghoursform.cpp \
+	interface/addconstraintteachersminrestinghoursform.cpp \
+	interface/modifyconstraintteachersminrestinghoursform.cpp \
+	\
+	interface/constraintstudentssetminrestinghoursform.cpp \
+	interface/addconstraintstudentssetminrestinghoursform.cpp \
+	interface/modifyconstraintstudentssetminrestinghoursform.cpp \
+	interface/constraintstudentsminrestinghoursform.cpp \
+	interface/addconstraintstudentsminrestinghoursform.cpp \
+	interface/modifyconstraintstudentsminrestinghoursform.cpp
 
 HEADERS += \
 	engine/timetableexport.h \
@@ -873,7 +901,35 @@ HEADERS += \
 	\
 	interface/timetablestowriteondiskform.h \
 	\
-	interface/teachersubjectsqualificationsform.h
+	interface/teachersubjectsqualificationsform.h \
+	\
+	interface/constraintteachermaxspanperdayform.h \
+	interface/addconstraintteachermaxspanperdayform.h \
+	interface/modifyconstraintteachermaxspanperdayform.h \
+	interface/constraintteachersmaxspanperdayform.h \
+	interface/addconstraintteachersmaxspanperdayform.h \
+	interface/modifyconstraintteachersmaxspanperdayform.h \
+	\
+	interface/constraintstudentssetmaxspanperdayform.h \
+	interface/addconstraintstudentssetmaxspanperdayform.h \
+	interface/modifyconstraintstudentssetmaxspanperdayform.h \
+	interface/constraintstudentsmaxspanperdayform.h \
+	interface/addconstraintstudentsmaxspanperdayform.h \
+	interface/modifyconstraintstudentsmaxspanperdayform.h \
+	\
+	interface/constraintteacherminrestinghoursform.h \
+	interface/addconstraintteacherminrestinghoursform.h \
+	interface/modifyconstraintteacherminrestinghoursform.h \
+	interface/constraintteachersminrestinghoursform.h \
+	interface/addconstraintteachersminrestinghoursform.h \
+	interface/modifyconstraintteachersminrestinghoursform.h \
+	\
+	interface/constraintstudentssetminrestinghoursform.h \
+	interface/addconstraintstudentssetminrestinghoursform.h \
+	interface/modifyconstraintstudentssetminrestinghoursform.h \
+	interface/constraintstudentsminrestinghoursform.h \
+	interface/addconstraintstudentsminrestinghoursform.h \
+	interface/modifyconstraintstudentsminrestinghoursform.h
 
 FORMS += \
 	interface/fetmainform_template.ui \
@@ -1274,7 +1330,35 @@ FORMS += \
 	\
 	interface/timetablestowriteondiskform_template.ui \
 	\
-	interface/teachersubjectsqualificationsform_template.ui
+	interface/teachersubjectsqualificationsform_template.ui \
+	\
+	interface/constraintteachermaxspanperdayform_template.ui \
+	interface/addconstraintteachermaxspanperdayform_template.ui \
+	interface/modifyconstraintteachermaxspanperdayform_template.ui \
+	interface/constraintteachersmaxspanperdayform_template.ui \
+	interface/addconstraintteachersmaxspanperdayform_template.ui \
+	interface/modifyconstraintteachersmaxspanperdayform_template.ui \
+	\
+	interface/constraintstudentssetmaxspanperdayform_template.ui \
+	interface/addconstraintstudentssetmaxspanperdayform_template.ui \
+	interface/modifyconstraintstudentssetmaxspanperdayform_template.ui \
+	interface/constraintstudentsmaxspanperdayform_template.ui \
+	interface/addconstraintstudentsmaxspanperdayform_template.ui \
+	interface/modifyconstraintstudentsmaxspanperdayform_template.ui \
+	\
+	interface/constraintteacherminrestinghoursform_template.ui \
+	interface/addconstraintteacherminrestinghoursform_template.ui \
+	interface/modifyconstraintteacherminrestinghoursform_template.ui \
+	interface/constraintteachersminrestinghoursform_template.ui \
+	interface/addconstraintteachersminrestinghoursform_template.ui \
+	interface/modifyconstraintteachersminrestinghoursform_template.ui \
+	\
+	interface/constraintstudentssetminrestinghoursform_template.ui \
+	interface/addconstraintstudentssetminrestinghoursform_template.ui \
+	interface/modifyconstraintstudentssetminrestinghoursform_template.ui \
+	interface/constraintstudentsminrestinghoursform_template.ui \
+	interface/addconstraintstudentsminrestinghoursform_template.ui \
+	interface/modifyconstraintstudentsminrestinghoursform_template.ui
 
 TRANSLATIONS += \
 	../translations/fet_ar.ts \

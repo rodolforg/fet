@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>560</width>
-    <height>324</height>
+    <height>338</height>
    </rect>
   </property>
   <widget class="QWidget" name="mainwidget">
@@ -852,7 +852,7 @@
      <x>0</x>
      <y>0</y>
      <width>560</width>
-     <height>24</height>
+     <height>28</height>
     </rect>
    </property>
    <widget class="QMenu" name="helpMenu">
@@ -997,22 +997,26 @@
       <addaction name="dataTimeConstraintsTeacherMaxGapsPerDayAction"/>
       <addaction name="dataTimeConstraintsTeacherMaxGapsPerWeekAction"/>
       <addaction name="dataTimeConstraintsTeacherMaxHoursDailyAction"/>
+      <addaction name="dataTimeConstraintsTeacherMaxSpanPerDayAction"/>
       <addaction name="dataTimeConstraintsTeacherActivityTagMaxHoursDailyAction"/>
       <addaction name="dataTimeConstraintsTeacherMinHoursDailyAction"/>
       <addaction name="dataTimeConstraintsTeacherMaxHoursContinuouslyAction"/>
       <addaction name="dataTimeConstraintsTeacherActivityTagMaxHoursContinuouslyAction"/>
       <addaction name="dataTimeConstraintsTeacherIntervalMaxDaysPerWeekAction"/>
+      <addaction name="dataTimeConstraintsTeacherMinRestingHoursAction"/>
       <addaction name="separator"/>
       <addaction name="dataTimeConstraintsTeachersMaxDaysPerWeekAction"/>
       <addaction name="dataTimeConstraintsTeachersMinDaysPerWeekAction"/>
       <addaction name="dataTimeConstraintsTeachersMaxGapsPerDayAction"/>
       <addaction name="dataTimeConstraintsTeachersMaxGapsPerWeekAction"/>
       <addaction name="dataTimeConstraintsTeachersMaxHoursDailyAction"/>
+      <addaction name="dataTimeConstraintsTeachersMaxSpanPerDayAction"/>
       <addaction name="dataTimeConstraintsTeachersActivityTagMaxHoursDailyAction"/>
       <addaction name="dataTimeConstraintsTeachersMinHoursDailyAction"/>
       <addaction name="dataTimeConstraintsTeachersMaxHoursContinuouslyAction"/>
       <addaction name="dataTimeConstraintsTeachersActivityTagMaxHoursContinuouslyAction"/>
       <addaction name="dataTimeConstraintsTeachersIntervalMaxDaysPerWeekAction"/>
+      <addaction name="dataTimeConstraintsTeachersMinRestingHoursAction"/>
      </widget>
      <widget class="QMenu" name="menuStudents_time_constraints">
       <property name="title">
@@ -1025,22 +1029,26 @@
       <addaction name="dataTimeConstraintsStudentsSetMaxGapsPerWeekAction"/>
       <addaction name="dataTimeConstraintsStudentsSetEarlyMaxBeginningsAtSecondHourAction"/>
       <addaction name="dataTimeConstraintsStudentsSetMaxHoursDailyAction"/>
+      <addaction name="dataTimeConstraintsStudentsSetMaxSpanPerDayAction"/>
       <addaction name="dataTimeConstraintsStudentsSetActivityTagMaxHoursDailyAction"/>
       <addaction name="dataTimeConstraintsStudentsSetMinHoursDailyAction"/>
       <addaction name="dataTimeConstraintsStudentsSetMaxHoursContinuouslyAction"/>
       <addaction name="dataTimeConstraintsStudentsSetActivityTagMaxHoursContinuouslyAction"/>
       <addaction name="dataTimeConstraintsStudentsSetIntervalMaxDaysPerWeekAction"/>
+      <addaction name="dataTimeConstraintsStudentsSetMinRestingHoursAction"/>
       <addaction name="separator"/>
       <addaction name="dataTimeConstraintsStudentsMaxDaysPerWeekAction"/>
       <addaction name="dataTimeConstraintsStudentsMaxGapsPerDayAction"/>
       <addaction name="dataTimeConstraintsStudentsMaxGapsPerWeekAction"/>
       <addaction name="dataTimeConstraintsStudentsEarlyMaxBeginningsAtSecondHourAction"/>
       <addaction name="dataTimeConstraintsStudentsMaxHoursDailyAction"/>
+      <addaction name="dataTimeConstraintsStudentsMaxSpanPerDayAction"/>
       <addaction name="dataTimeConstraintsStudentsActivityTagMaxHoursDailyAction"/>
       <addaction name="dataTimeConstraintsStudentsMinHoursDailyAction"/>
       <addaction name="dataTimeConstraintsStudentsMaxHoursContinuouslyAction"/>
       <addaction name="dataTimeConstraintsStudentsActivityTagMaxHoursContinuouslyAction"/>
       <addaction name="dataTimeConstraintsStudentsIntervalMaxDaysPerWeekAction"/>
+      <addaction name="dataTimeConstraintsStudentsMinRestingHoursAction"/>
      </widget>
      <widget class="QMenu" name="menuActivities_time_constraints">
       <property name="title">
@@ -1713,6 +1721,46 @@
   <action name="dataTimeConstraintsTeacherMaxGapsPerDayAction">
    <property name="text">
     <string>Max gaps per day for a teacher</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTeacherMaxSpanPerDayAction">
+   <property name="text">
+    <string>Max span per day for a teacher</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTeachersMaxSpanPerDayAction">
+   <property name="text">
+    <string>Max span per day for all teachers</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsStudentsSetMaxSpanPerDayAction">
+   <property name="text">
+    <string>Max span per day for a students set</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsStudentsMaxSpanPerDayAction">
+   <property name="text">
+    <string>Max span per day for all students</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTeacherMinRestingHoursAction">
+   <property name="text">
+    <string>Min resting hours for a teacher</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTeachersMinRestingHoursAction">
+   <property name="text">
+    <string>Min resting hours for all teachers</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsStudentsSetMinRestingHoursAction">
+   <property name="text">
+    <string>Min resting hours for a students set</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsStudentsMinRestingHoursAction">
+   <property name="text">
+    <string>Min resting hours for all students</string>
    </property>
   </action>
   <action name="dataBuildingsAction">

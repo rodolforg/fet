@@ -104,6 +104,16 @@
 #include "modifyconstraintstudentssetmaxdaysperweekform.h"
 #include "modifyconstraintstudentsmaxdaysperweekform.h"
 
+//2017-02-07
+#include "modifyconstraintteachermaxspanperdayform.h"
+#include "modifyconstraintteachersmaxspanperdayform.h"
+#include "modifyconstraintstudentssetmaxspanperdayform.h"
+#include "modifyconstraintstudentsmaxspanperdayform.h"
+#include "modifyconstraintteacherminrestinghoursform.h"
+#include "modifyconstraintteachersminrestinghoursform.h"
+#include "modifyconstraintstudentssetminrestinghoursform.h"
+#include "modifyconstraintstudentsminrestinghoursform.h"
+
 #include "lockunlock.h"
 
 #include "advancedfilterform.h"
@@ -876,6 +886,55 @@ void AllTimeConstraintsForm::modifyConstraint()
 	//66
 	else if(ctr->type==CONSTRAINT_STUDENTS_MAX_DAYS_PER_WEEK){
 		ModifyConstraintStudentsMaxDaysPerWeekForm form(this, (ConstraintStudentsMaxDaysPerWeek*)ctr);
+		setParentAndOtherThings(&form, this);
+		form.exec();
+	}
+	//2017-02-07
+	//67
+	else if(ctr->type==CONSTRAINT_TEACHER_MAX_SPAN_PER_DAY){
+		ModifyConstraintTeacherMaxSpanPerDayForm form(this, (ConstraintTeacherMaxSpanPerDay*)ctr);
+		setParentAndOtherThings(&form, this);
+		form.exec();
+	}
+	//68
+	else if(ctr->type==CONSTRAINT_TEACHERS_MAX_SPAN_PER_DAY){
+		ModifyConstraintTeachersMaxSpanPerDayForm form(this, (ConstraintTeachersMaxSpanPerDay*)ctr);
+		setParentAndOtherThings(&form, this);
+		form.exec();
+	}
+	//69
+	else if(ctr->type==CONSTRAINT_STUDENTS_SET_MAX_SPAN_PER_DAY){
+		ModifyConstraintStudentsSetMaxSpanPerDayForm form(this, (ConstraintStudentsSetMaxSpanPerDay*)ctr);
+		setParentAndOtherThings(&form, this);
+		form.exec();
+	}
+	//70
+	else if(ctr->type==CONSTRAINT_STUDENTS_MAX_SPAN_PER_DAY){
+		ModifyConstraintStudentsMaxSpanPerDayForm form(this, (ConstraintStudentsMaxSpanPerDay*)ctr);
+		setParentAndOtherThings(&form, this);
+		form.exec();
+	}
+	//71
+	else if(ctr->type==CONSTRAINT_TEACHER_MIN_RESTING_HOURS){
+		ModifyConstraintTeacherMinRestingHoursForm form(this, (ConstraintTeacherMinRestingHours*)ctr);
+		setParentAndOtherThings(&form, this);
+		form.exec();
+	}
+	//72
+	else if(ctr->type==CONSTRAINT_TEACHERS_MIN_RESTING_HOURS){
+		ModifyConstraintTeachersMinRestingHoursForm form(this, (ConstraintTeachersMinRestingHours*)ctr);
+		setParentAndOtherThings(&form, this);
+		form.exec();
+	}
+	//73
+	else if(ctr->type==CONSTRAINT_STUDENTS_SET_MIN_RESTING_HOURS){
+		ModifyConstraintStudentsSetMinRestingHoursForm form(this, (ConstraintStudentsSetMinRestingHours*)ctr);
+		setParentAndOtherThings(&form, this);
+		form.exec();
+	}
+	//74
+	else if(ctr->type==CONSTRAINT_STUDENTS_MIN_RESTING_HOURS){
+		ModifyConstraintStudentsMinRestingHoursForm form(this, (ConstraintStudentsMinRestingHours*)ctr);
 		setParentAndOtherThings(&form, this);
 		form.exec();
 	}

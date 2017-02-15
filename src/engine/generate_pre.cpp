@@ -294,6 +294,25 @@ int subgroupsIntervalMaxDaysPerWeekIntervalEnd3[MAX_TOTAL_SUBGROUPS];
 //bool computeSubgroupsIntervalMaxDaysPerWeek();
 ///////END   subgroups interval max days per week
 
+//2017-02-06
+int teachersMaxSpanPerDayMaxSpan[MAX_TEACHERS]; //-1 for not existing
+double teachersMaxSpanPerDayPercentages[MAX_TEACHERS]; //-1 for not existing
+
+int teachersMinRestingHoursCircularMinHours[MAX_TEACHERS]; //-1 for not existing
+double teachersMinRestingHoursCircularPercentages[MAX_TEACHERS]; //-1 for not existing
+int teachersMinRestingHoursNotCircularMinHours[MAX_TEACHERS]; //-1 for not existing
+double teachersMinRestingHoursNotCircularPercentages[MAX_TEACHERS]; //-1 for not existing
+//bool teachersMinRestingHoursCircular[MAX_TEACHERS]; //true for circular
+
+int subgroupsMaxSpanPerDayMaxSpan[MAX_TOTAL_SUBGROUPS]; //-1 for not existing
+double subgroupsMaxSpanPerDayPercentages[MAX_TOTAL_SUBGROUPS]; //-1 for not existing
+
+int subgroupsMinRestingHoursCircularMinHours[MAX_TOTAL_SUBGROUPS]; //-1 for not existing
+double subgroupsMinRestingHoursCircularPercentages[MAX_TOTAL_SUBGROUPS]; //-1 for not existing
+int subgroupsMinRestingHoursNotCircularMinHours[MAX_TOTAL_SUBGROUPS]; //-1 for not existing
+double subgroupsMinRestingHoursNotCircularPercentages[MAX_TOTAL_SUBGROUPS]; //-1 for not existing
+//bool subgroupsMinRestingHoursCircular[MAX_TOTAL_SUBGROUPS]; //true for circular
+////////////
 
 ////////rooms
 //double notAllowedRoomTimePercentages[MAX_ROOMS][MAX_HOURS_PER_WEEK]; //-1 for available
@@ -789,6 +808,23 @@ bool processTimeSpaceConstraints(QWidget* parent, QTextStream* initialOrderStrea
 	if(!t)
 		return false;
 		
+	//2017-02-06
+	t=computeTeachersMaxSpanPerDay(parent);
+	if(!t)
+		return false;
+
+	t=computeSubgroupsMaxSpanPerDay(parent);
+	if(!t)
+		return false;
+
+	t=computeTeachersMinRestingHours(parent);
+	if(!t)
+		return false;
+
+	t=computeSubgroupsMinRestingHours(parent);
+	if(!t)
+		return false;
+
 	////////////////
 	haveActivitiesOccupyOrSimultaneousConstraints=false;
 
@@ -1165,6 +1201,142 @@ bool computeSubgroupsMaxHoursDaily(QWidget* parent)
 				 " %3 and the number of available slots is, considering max hours daily and all other constraints, %4.")
 				 .arg(gt.rules.internalSubgroupsList[sb]->name)
 				 .arg(subgroupsMaxHoursDailyMaxHours2[sb])
+				 .arg(nHoursPerSubgroup[sb])
+				 .arg(total);
+				s+="\n\n";
+				s+=GeneratePreTranslate::tr("Please modify your data accordingly and try again");
+	
+				int t=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"), s,
+				 GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
+				 1, 0 );
+				 	
+				if(t==0)
+					return false;
+			}
+		}
+	}
+
+	return ok;
+}
+
+//must be after allowed times, after n hours per subgroup and after max days per week for subgroups
+bool computeSubgroupsMaxSpanPerDay(QWidget* parent)
+{
+	bool ok=true;
+	
+	for(int i=0; i<gt.rules.nInternalSubgroups; i++){
+		subgroupsMaxSpanPerDayMaxSpan[i]=-1;
+		subgroupsMaxSpanPerDayPercentages[i]=-1;
+	}
+	
+	for(int i=0; i<gt.rules.nInternalTimeConstraints; i++){
+		if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_STUDENTS_SET_MAX_SPAN_PER_DAY){
+			ConstraintStudentsSetMaxSpanPerDay* ssmsd=(ConstraintStudentsSetMaxSpanPerDay*)gt.rules.internalTimeConstraintsList[i];
+
+			if(ssmsd->weightPercentage!=100){
+				ok=false;
+
+				int t=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
+				 GeneratePreTranslate::tr("Cannot optimize, because you have constraint students set max span per day for students %1"
+				 " with weight (percentage) below 100. Please make weight 100% and try again").arg(ssmsd->students),
+				 GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
+				 1, 0 );
+			 	
+				if(t==0)
+					return false;
+			}
+		}
+		else if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_STUDENTS_MAX_SPAN_PER_DAY){
+			ConstraintStudentsMaxSpanPerDay* smsd=(ConstraintStudentsMaxSpanPerDay*)gt.rules.internalTimeConstraintsList[i];
+
+			if(smsd->weightPercentage!=100){
+				ok=false;
+
+				int t=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
+				 GeneratePreTranslate::tr("Cannot optimize, because you have constraint students max span per day"
+				 " with weight (percentage) below 100. Please make weight 100% and try again"),
+				 GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
+				 1, 0 );
+			 	
+				if(t==0)
+					return false;
+			}
+		}
+	}
+
+	for(int i=0; i<gt.rules.nInternalTimeConstraints; i++){
+		if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_STUDENTS_SET_MAX_SPAN_PER_DAY){
+			ConstraintStudentsSetMaxSpanPerDay* ssmsd=(ConstraintStudentsSetMaxSpanPerDay*)gt.rules.internalTimeConstraintsList[i];
+			
+			foreach(int sbg, ssmsd->iSubgroupsList)
+				if(subgroupsMaxSpanPerDayPercentages[sbg]==-1
+				 || (subgroupsMaxSpanPerDayPercentages[sbg]>=0 && subgroupsMaxSpanPerDayMaxSpan[sbg]>ssmsd->maxSpanPerDay)){
+					subgroupsMaxSpanPerDayPercentages[sbg]=100.0;
+					subgroupsMaxSpanPerDayMaxSpan[sbg]=ssmsd->maxSpanPerDay;
+				}
+		}
+		else if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_STUDENTS_MAX_SPAN_PER_DAY){
+			ConstraintStudentsMaxSpanPerDay* smsd=(ConstraintStudentsMaxSpanPerDay*)gt.rules.internalTimeConstraintsList[i];
+			
+			for(int sbg=0; sbg<gt.rules.nInternalSubgroups; sbg++){
+				if(subgroupsMaxSpanPerDayPercentages[sbg]==-1
+				 || (subgroupsMaxSpanPerDayPercentages[sbg]>=0 && subgroupsMaxSpanPerDayMaxSpan[sbg]>smsd->maxSpanPerDay)){
+					subgroupsMaxSpanPerDayPercentages[sbg]=100.0;
+					subgroupsMaxSpanPerDayMaxSpan[sbg]=smsd->maxSpanPerDay;
+				}
+			}
+		}
+	}
+	
+	//This is similar to subgroups max hours daily checking. It is not a very useful test, but does not hurt.
+	for(int sb=0; sb<gt.rules.nInternalSubgroups; sb++){
+		if(subgroupsMaxSpanPerDayPercentages[sb]==100){
+			int nAllowedSlotsPerDay[MAX_DAYS_PER_WEEK];
+			for(int d=0; d<gt.rules.nDaysPerWeek; d++){
+				nAllowedSlotsPerDay[d]=0;
+				for(int h=0; h<gt.rules.nHoursPerDay; h++)
+					if(!breakDayHour[d][h] && !subgroupNotAvailableDayHour[sb][d][h])
+						nAllowedSlotsPerDay[d]++;
+				nAllowedSlotsPerDay[d]=min(nAllowedSlotsPerDay[d],subgroupsMaxSpanPerDayMaxSpan[sb]);
+			}
+			
+			int dayAvailable[MAX_DAYS_PER_WEEK];
+			for(int d=0; d<gt.rules.nDaysPerWeek; d++)
+				dayAvailable[d]=1;
+			if(subgroupsMaxDaysPerWeekMaxDays[sb]>=0){
+				//n days per week has 100% weight
+				for(int d=0; d<gt.rules.nDaysPerWeek; d++)
+					dayAvailable[d]=0;
+				assert(subgroupsMaxDaysPerWeekMaxDays[sb]<=gt.rules.nDaysPerWeek);
+				for(int k=0; k<subgroupsMaxDaysPerWeekMaxDays[sb]; k++){
+					int maxPos=-1, maxVal=-1;
+					for(int d=0; d<gt.rules.nDaysPerWeek; d++)
+						if(dayAvailable[d]==0)
+							if(maxVal<nAllowedSlotsPerDay[d]){
+								maxVal=nAllowedSlotsPerDay[d];
+								maxPos=d;
+							}
+					assert(maxPos>=0);
+					assert(dayAvailable[maxPos]==0);
+					dayAvailable[maxPos]=1;
+				}
+			}
+			
+			int total=0;
+			for(int d=0; d<gt.rules.nDaysPerWeek; d++)
+				if(dayAvailable[d]==1)
+					total+=nAllowedSlotsPerDay[d];
+			if(total<nHoursPerSubgroup[sb]){
+				ok=false;
+				
+				QString s;
+				s=GeneratePreTranslate::tr("Cannot optimize for subgroup %1, because there is a constraint of type"
+				 " max %2 span per day with 100% weight which cannot be respected because of number of days per week,"
+				 " number of hours per day, students (set) max days per week, students set not available and/or breaks."
+				 " The number of total hours for this subgroup is"
+				 " %3 and the number of available slots is, considering max span per day and all other constraints, %4.")
+				 .arg(gt.rules.internalSubgroupsList[sb]->name)
+				 .arg(subgroupsMaxSpanPerDayMaxSpan[sb])
 				 .arg(nHoursPerSubgroup[sb])
 				 .arg(total);
 				s+="\n\n";
@@ -2546,6 +2718,141 @@ bool computeTeachersMaxHoursDaily(QWidget* parent)
 	return ok;
 }
 
+//must be after allowed times, after n hours per teacher and after max days per week for teachers
+bool computeTeachersMaxSpanPerDay(QWidget* parent)
+{
+	bool ok=true;
+	
+	for(int i=0; i<gt.rules.nInternalTeachers; i++){
+		teachersMaxSpanPerDayMaxSpan[i]=-1;
+		teachersMaxSpanPerDayPercentages[i]=-1;
+	}
+	
+	for(int i=0; i<gt.rules.nInternalTimeConstraints; i++){
+		if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_TEACHER_MAX_SPAN_PER_DAY){
+			ConstraintTeacherMaxSpanPerDay* tmsd=(ConstraintTeacherMaxSpanPerDay*)gt.rules.internalTimeConstraintsList[i];
+
+			if(tmsd->weightPercentage!=100){
+				ok=false;
+
+				int t=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
+				 GeneratePreTranslate::tr("Cannot optimize, because you have constraint teacher max span per day for teacher %1"
+				 " with weight (percentage) below 100. Please make weight 100% and try again").arg(tmsd->teacherName),
+				 GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
+				 1, 0 );
+			 	
+				if(t==0)
+					return false;
+			}
+		}
+		else if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_TEACHERS_MAX_SPAN_PER_DAY){
+			ConstraintTeachersMaxSpanPerDay* tmsd=(ConstraintTeachersMaxSpanPerDay*)gt.rules.internalTimeConstraintsList[i];
+
+			if(tmsd->weightPercentage!=100){
+				ok=false;
+
+				int t=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
+				 GeneratePreTranslate::tr("Cannot optimize, because you have constraint teachers max span per day"
+				 " with weight (percentage) below 100. Please make weight 100% and try again"),
+				 GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
+				 1, 0 );
+			 	
+				if(t==0)
+					return false;
+			}
+		}
+	}
+
+	for(int i=0; i<gt.rules.nInternalTimeConstraints; i++){
+		if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_TEACHER_MAX_SPAN_PER_DAY){
+			ConstraintTeacherMaxSpanPerDay* tmsd=(ConstraintTeacherMaxSpanPerDay*)gt.rules.internalTimeConstraintsList[i];
+			
+			if(teachersMaxSpanPerDayPercentages[tmsd->teacher_ID]==-1
+			 || (teachersMaxSpanPerDayPercentages[tmsd->teacher_ID]>=0 && teachersMaxSpanPerDayMaxSpan[tmsd->teacher_ID]>tmsd->maxSpanPerDay)){
+				teachersMaxSpanPerDayPercentages[tmsd->teacher_ID]=100.0;
+				teachersMaxSpanPerDayMaxSpan[tmsd->teacher_ID]=tmsd->maxSpanPerDay;
+			}
+		}
+		else if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_TEACHERS_MAX_SPAN_PER_DAY){
+			ConstraintTeachersMaxSpanPerDay* tmsd=(ConstraintTeachersMaxSpanPerDay*)gt.rules.internalTimeConstraintsList[i];
+			
+			for(int tch=0; tch<gt.rules.nInternalTeachers; tch++){
+				if(teachersMaxSpanPerDayPercentages[tch]==-1
+				 || (teachersMaxSpanPerDayPercentages[tch]>=0 && teachersMaxSpanPerDayMaxSpan[tch]>tmsd->maxSpanPerDay)){
+					teachersMaxSpanPerDayPercentages[tch]=100.0;
+					teachersMaxSpanPerDayMaxSpan[tch]=tmsd->maxSpanPerDay;
+				}
+			}
+		}
+	}
+	
+	//This is similar to teachers max hours daily checking. It is not a very useful test, but does not hurt.
+	for(int tc=0; tc<gt.rules.nInternalTeachers; tc++){
+		if(teachersMaxSpanPerDayPercentages[tc]==100){
+			int nAllowedSlotsPerDay[MAX_DAYS_PER_WEEK];
+			for(int d=0; d<gt.rules.nDaysPerWeek; d++){
+				nAllowedSlotsPerDay[d]=0;
+				for(int h=0; h<gt.rules.nHoursPerDay; h++)
+					if(!breakDayHour[d][h] && !teacherNotAvailableDayHour[tc][d][h])
+						nAllowedSlotsPerDay[d]++;
+				nAllowedSlotsPerDay[d]=min(nAllowedSlotsPerDay[d],teachersMaxSpanPerDayMaxSpan[tc]);
+			}
+			
+			int dayAvailable[MAX_DAYS_PER_WEEK];
+			for(int d=0; d<gt.rules.nDaysPerWeek; d++)
+				dayAvailable[d]=1;
+			if(teachersMaxDaysPerWeekMaxDays[tc]>=0){
+				//n days per week has 100% weight
+				for(int d=0; d<gt.rules.nDaysPerWeek; d++)
+					dayAvailable[d]=0;
+				assert(teachersMaxDaysPerWeekMaxDays[tc]<=gt.rules.nDaysPerWeek);
+				for(int k=0; k<teachersMaxDaysPerWeekMaxDays[tc]; k++){
+					int maxPos=-1, maxVal=-1;
+					for(int d=0; d<gt.rules.nDaysPerWeek; d++)
+						if(dayAvailable[d]==0)
+							if(maxVal<nAllowedSlotsPerDay[d]){
+								maxVal=nAllowedSlotsPerDay[d];
+								maxPos=d;
+							}
+					assert(maxPos>=0);
+					assert(dayAvailable[maxPos]==0);
+					dayAvailable[maxPos]=1;
+				}
+			}
+			
+			int total=0;
+			for(int d=0; d<gt.rules.nDaysPerWeek; d++)
+				if(dayAvailable[d]==1)
+					total+=nAllowedSlotsPerDay[d];
+			if(total<nHoursPerTeacher[tc]){
+				ok=false;
+				
+				QString s;
+				s=GeneratePreTranslate::tr("Cannot optimize for teacher %1, because there is a constraint of type"
+				 " max %2 span per day with 100% weight which cannot be respected because of number of days per week,"
+				 " number of hours per day, teacher max days per week, teacher not available and/or breaks."
+				 " The number of total hours for this teacher is"
+				 " %3 and the number of available slots is, considering max span per day and all other constraints, %4.")
+				 .arg(gt.rules.internalTeachersList[tc]->name)
+				 .arg(teachersMaxSpanPerDayMaxSpan[tc])
+				 .arg(nHoursPerTeacher[tc])
+				 .arg(total);
+				s+="\n\n";
+				s+=GeneratePreTranslate::tr("Please modify your data accordingly and try again");
+	
+				int t=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"), s,
+				 GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
+				 1, 0 );
+				 	
+				if(t==0)
+					return false;
+			}
+		}
+	}
+
+	return ok;
+}
+
 bool computeTeachersMaxHoursContinuously(QWidget* parent)
 {
 	bool ok=true;
@@ -3450,6 +3757,260 @@ bool computeTeachersMinDaysPerWeek(QWidget* parent)
 	}
 
 	
+	return ok;
+}
+
+bool computeTeachersMinRestingHours(QWidget* parent)
+{
+	bool ok=true;
+	
+	for(int i=0; i<gt.rules.nInternalTeachers; i++){
+		teachersMinRestingHoursCircularMinHours[i]=-1;
+		teachersMinRestingHoursCircularPercentages[i]=-1;
+		teachersMinRestingHoursNotCircularMinHours[i]=-1;
+		teachersMinRestingHoursNotCircularPercentages[i]=-1;
+	}
+	
+	for(int i=0; i<gt.rules.nInternalTimeConstraints; i++){
+		if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_TEACHER_MIN_RESTING_HOURS){
+			ConstraintTeacherMinRestingHours* tmrh=(ConstraintTeacherMinRestingHours*)gt.rules.internalTimeConstraintsList[i];
+
+			//////////
+			if(tmrh->weightPercentage!=100){
+				ok=false;
+
+				int t=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
+				 GeneratePreTranslate::tr("Cannot optimize, because you have constraint teacher min resting hours for teacher %1 with"
+				 " weight (percentage) below 100. It is only possible to use 100% weight for such constraints. Please make weight 100% and try again")
+				 .arg(tmrh->teacherName),
+				 GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
+				 1, 0 );
+			 	
+				if(t==0)
+					return false;
+			}
+			//////////
+			if(tmrh->minRestingHours>gt.rules.nHoursPerDay){
+				ok=false;
+
+				int t=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
+				 GeneratePreTranslate::tr("Cannot optimize, because you have constraint teacher min resting hours for teacher %1 with"
+				 " %2 min resting hours, and the number of working hours per day is only %3. Please correct and try again")
+				 .arg(tmrh->teacherName)
+				 .arg(tmrh->minRestingHours)
+				 .arg(gt.rules.nHoursPerDay),
+				 GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
+				 1, 0 );
+			 	
+				if(t==0)
+					return false;
+			}
+			//////////
+
+			if(tmrh->circular==true){
+				if(teachersMinRestingHoursCircularMinHours[tmrh->teacher_ID]==-1 ||
+				 (teachersMinRestingHoursCircularMinHours[tmrh->teacher_ID]>=0 && teachersMinRestingHoursCircularMinHours[tmrh->teacher_ID]<tmrh->minRestingHours)){
+					teachersMinRestingHoursCircularMinHours[tmrh->teacher_ID]=tmrh->minRestingHours;
+					teachersMinRestingHoursCircularPercentages[tmrh->teacher_ID]=100;
+				}
+			}
+			else{
+				if(teachersMinRestingHoursNotCircularMinHours[tmrh->teacher_ID]==-1 ||
+				 (teachersMinRestingHoursNotCircularMinHours[tmrh->teacher_ID]>=0 && teachersMinRestingHoursNotCircularMinHours[tmrh->teacher_ID]<tmrh->minRestingHours)){
+					teachersMinRestingHoursNotCircularMinHours[tmrh->teacher_ID]=tmrh->minRestingHours;
+					teachersMinRestingHoursNotCircularPercentages[tmrh->teacher_ID]=100;
+				}
+			}
+		}
+		else if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_TEACHERS_MIN_RESTING_HOURS){
+			ConstraintTeachersMinRestingHours* tmrh=(ConstraintTeachersMinRestingHours*)gt.rules.internalTimeConstraintsList[i];
+
+			//////////
+			if(tmrh->weightPercentage!=100){
+				ok=false;
+
+				int t=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
+				 GeneratePreTranslate::tr("Cannot optimize, because you have constraint teachers min resting hours with"
+				 " weight (percentage) below 100. It is only possible to use 100% weight for such constraints. Please make weight 100% and try again"),
+				 GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
+				 1, 0 );
+			 	
+				if(t==0)
+					return false;
+			}
+			//////////
+			if(tmrh->minRestingHours>gt.rules.nHoursPerDay){
+				ok=false;
+
+				int t=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
+				 GeneratePreTranslate::tr("Cannot optimize, because you have constraint teachers min resting hours with"
+				 " %1 min resting hours, and the number of working hours per day is only %2. Please correct and try again")
+				 .arg(tmrh->minRestingHours)
+				 .arg(gt.rules.nHoursPerDay),
+				 GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
+				 1, 0 );
+			 	
+				if(t==0)
+					return false;
+			}
+			//////////
+
+			for(int tch=0; tch<gt.rules.nInternalTeachers; tch++){
+				if(tmrh->circular==true){
+					if(teachersMinRestingHoursCircularMinHours[tch]==-1 ||
+					 (teachersMinRestingHoursCircularMinHours[tch]>=0 && teachersMinRestingHoursCircularMinHours[tch]<tmrh->minRestingHours)){
+						teachersMinRestingHoursCircularMinHours[tch]=tmrh->minRestingHours;
+						teachersMinRestingHoursCircularPercentages[tch]=100;
+					}
+				}
+				else{
+					if(teachersMinRestingHoursNotCircularMinHours[tch]==-1 ||
+					 (teachersMinRestingHoursNotCircularMinHours[tch]>=0 && teachersMinRestingHoursNotCircularMinHours[tch]<tmrh->minRestingHours)){
+						teachersMinRestingHoursNotCircularMinHours[tch]=tmrh->minRestingHours;
+						teachersMinRestingHoursNotCircularPercentages[tch]=100;
+					}
+				}
+			}
+		}
+	}
+
+	//small possible speedup
+	for(int tch=0; tch<gt.rules.nInternalTeachers; tch++){
+		if(teachersMinRestingHoursCircularMinHours[tch]>=0 && teachersMinRestingHoursNotCircularMinHours[tch]>=0 &&
+		 teachersMinRestingHoursCircularMinHours[tch]>=teachersMinRestingHoursNotCircularMinHours[tch]){
+			teachersMinRestingHoursNotCircularMinHours[tch]=-1;
+			teachersMinRestingHoursNotCircularPercentages[tch]=-1;
+		}
+	}
+
+	return ok;
+}
+
+bool computeSubgroupsMinRestingHours(QWidget* parent)
+{
+	bool ok=true;
+	
+	for(int i=0; i<gt.rules.nInternalSubgroups; i++){
+		subgroupsMinRestingHoursCircularMinHours[i]=-1;
+		subgroupsMinRestingHoursCircularPercentages[i]=-1;
+		subgroupsMinRestingHoursNotCircularMinHours[i]=-1;
+		subgroupsMinRestingHoursNotCircularPercentages[i]=-1;
+	}
+	
+	for(int i=0; i<gt.rules.nInternalTimeConstraints; i++){
+		if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_STUDENTS_SET_MIN_RESTING_HOURS){
+			ConstraintStudentsSetMinRestingHours* smrh=(ConstraintStudentsSetMinRestingHours*)gt.rules.internalTimeConstraintsList[i];
+
+			//////////
+			if(smrh->weightPercentage!=100){
+				ok=false;
+
+				int t=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
+				 GeneratePreTranslate::tr("Cannot optimize, because you have constraint students set min resting hours for students set %1 with"
+				 " weight (percentage) below 100. It is only possible to use 100% weight for such constraints. Please make weight 100% and try again")
+				 .arg(smrh->students),
+				 GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
+				 1, 0 );
+			 	
+				if(t==0)
+					return false;
+			}
+			//////////
+			if(smrh->minRestingHours>gt.rules.nHoursPerDay){
+				ok=false;
+
+				int t=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
+				 GeneratePreTranslate::tr("Cannot optimize, because you have constraint students set min resting hours for students set %1 with"
+				 " %2 min resting hours, and the number of working hours per day is only %3. Please correct and try again")
+				 .arg(smrh->students)
+				 .arg(smrh->minRestingHours)
+				 .arg(gt.rules.nHoursPerDay),
+				 GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
+				 1, 0 );
+			 	
+				if(t==0)
+					return false;
+			}
+			//////////
+
+			foreach(int sbg, smrh->iSubgroupsList){
+				if(smrh->circular==true){
+					if(subgroupsMinRestingHoursCircularMinHours[sbg]==-1 ||
+					 (subgroupsMinRestingHoursCircularMinHours[sbg]>=0 && subgroupsMinRestingHoursCircularMinHours[sbg]<smrh->minRestingHours)){
+						subgroupsMinRestingHoursCircularMinHours[sbg]=smrh->minRestingHours;
+						subgroupsMinRestingHoursCircularPercentages[sbg]=100;
+					}
+				}
+				else{
+					if(subgroupsMinRestingHoursNotCircularMinHours[sbg]==-1 ||
+					 (subgroupsMinRestingHoursNotCircularMinHours[sbg]>=0 && subgroupsMinRestingHoursNotCircularMinHours[sbg]<smrh->minRestingHours)){
+						subgroupsMinRestingHoursNotCircularMinHours[sbg]=smrh->minRestingHours;
+						subgroupsMinRestingHoursNotCircularPercentages[sbg]=100;
+					}
+				}
+			}
+		}
+		else if(gt.rules.internalTimeConstraintsList[i]->type==CONSTRAINT_STUDENTS_MIN_RESTING_HOURS){
+			ConstraintStudentsMinRestingHours* smrh=(ConstraintStudentsMinRestingHours*)gt.rules.internalTimeConstraintsList[i];
+
+			//////////
+			if(smrh->weightPercentage!=100){
+				ok=false;
+
+				int t=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
+				 GeneratePreTranslate::tr("Cannot optimize, because you have constraint students min resting hours with"
+				 " weight (percentage) below 100. It is only possible to use 100% weight for such constraints. Please make weight 100% and try again"),
+				 GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
+				 1, 0 );
+			 	
+				if(t==0)
+					return false;
+			}
+			//////////
+			if(smrh->minRestingHours>gt.rules.nHoursPerDay){
+				ok=false;
+
+				int t=GeneratePreIrreconcilableMessage::mediumConfirmation(parent, GeneratePreTranslate::tr("FET warning"),
+				 GeneratePreTranslate::tr("Cannot optimize, because you have constraint students min resting hours with"
+				 " %1 min resting hours, and the number of working hours per day is only %2. Please correct and try again")
+				 .arg(smrh->minRestingHours)
+				 .arg(gt.rules.nHoursPerDay),
+				 GeneratePreTranslate::tr("Skip rest"), GeneratePreTranslate::tr("See next"), QString(),
+				 1, 0 );
+			 	
+				if(t==0)
+					return false;
+			}
+			//////////
+
+			for(int sbg=0; sbg<gt.rules.nInternalSubgroups; sbg++){
+				if(smrh->circular==true){
+					if(subgroupsMinRestingHoursCircularMinHours[sbg]==-1 ||
+					 (subgroupsMinRestingHoursCircularMinHours[sbg]>=0 && subgroupsMinRestingHoursCircularMinHours[sbg]<smrh->minRestingHours)){
+						subgroupsMinRestingHoursCircularMinHours[sbg]=smrh->minRestingHours;
+						subgroupsMinRestingHoursCircularPercentages[sbg]=100;
+					}
+				}
+				else{
+					if(subgroupsMinRestingHoursNotCircularMinHours[sbg]==-1 ||
+					 (subgroupsMinRestingHoursNotCircularMinHours[sbg]>=0 && subgroupsMinRestingHoursNotCircularMinHours[sbg]<smrh->minRestingHours)){
+						subgroupsMinRestingHoursNotCircularMinHours[sbg]=smrh->minRestingHours;
+						subgroupsMinRestingHoursNotCircularPercentages[sbg]=100;
+					}
+				}
+			}
+		}
+	}
+
+	//small possible speedup
+	for(int sbg=0; sbg<gt.rules.nInternalSubgroups; sbg++){
+		if(subgroupsMinRestingHoursCircularMinHours[sbg]>=0 && subgroupsMinRestingHoursNotCircularMinHours[sbg]>=0 &&
+		 subgroupsMinRestingHoursCircularMinHours[sbg]>=subgroupsMinRestingHoursNotCircularMinHours[sbg]){
+			subgroupsMinRestingHoursNotCircularMinHours[sbg]=-1;
+			subgroupsMinRestingHoursNotCircularPercentages[sbg]=-1;
+		}
+	}
+
 	return ok;
 }
 
@@ -7842,6 +8403,10 @@ void computeMustComputeTimetableSubgroups()
 			  subgroupsMaxHoursContinuouslyPercentages2[sbg]>=0 ||
 			  subgroupsMinHoursDailyPercentages[sbg]>=0 ||
 			  
+			  subgroupsMaxSpanPerDayPercentages[sbg]>=0 ||
+			  subgroupsMinRestingHoursCircularPercentages[sbg]>=0 ||
+			  subgroupsMinRestingHoursNotCircularPercentages[sbg]>=0 ||
+			  
 			  subgroupsIntervalMaxDaysPerWeekPercentages1[sbg]>=0 ||
 			  subgroupsIntervalMaxDaysPerWeekPercentages2[sbg]>=0 ||
 			  subgroupsIntervalMaxDaysPerWeekPercentages3[sbg]>=0 ||
@@ -7881,6 +8446,10 @@ void computeMustComputeTimetableTeachers()
 			  
 			  teachersMinDaysPerWeekPercentages[tch]>=0 ||
 			  
+			  teachersMaxSpanPerDayPercentages[tch]>=0 ||
+			  teachersMinRestingHoursCircularPercentages[tch]>=0 ||
+			  teachersMinRestingHoursNotCircularPercentages[tch]>=0 ||
+
 			  teachersIntervalMaxDaysPerWeekPercentages1[tch]>=0 ||
 			  teachersIntervalMaxDaysPerWeekPercentages2[tch]>=0 ||
 			  teachersIntervalMaxDaysPerWeekPercentages3[tch]>=0 ||

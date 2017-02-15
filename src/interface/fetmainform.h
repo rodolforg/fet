@@ -310,6 +310,16 @@ public slots:
 	void on_dataTimeConstraintsStudentsMinHoursDailyAction_triggered();
 	void on_dataTimeConstraintsStudentsSetMinHoursDailyAction_triggered();
 
+	void on_dataTimeConstraintsTeacherMaxSpanPerDayAction_triggered();
+	void on_dataTimeConstraintsTeachersMaxSpanPerDayAction_triggered();
+	void on_dataTimeConstraintsStudentsSetMaxSpanPerDayAction_triggered();
+	void on_dataTimeConstraintsStudentsMaxSpanPerDayAction_triggered();
+
+	void on_dataTimeConstraintsTeacherMinRestingHoursAction_triggered();
+	void on_dataTimeConstraintsTeachersMinRestingHoursAction_triggered();
+	void on_dataTimeConstraintsStudentsSetMinRestingHoursAction_triggered();
+	void on_dataTimeConstraintsStudentsMinRestingHoursAction_triggered();
+
 	void on_activityPlanningAction_triggered();
 	void on_spreadActivitiesAction_triggered();
 	void on_removeRedundantConstraintsAction_triggered();
