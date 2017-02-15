@@ -1878,7 +1878,7 @@ Versions 5.29.0 - 5.29.6
 - Version 5.29.6
 	- Updated to Qt 5.7.0 (thus, the Windows version now uses MinGW 5.3.0).
 ---------------------------------------------------------------------------------
-Versions 5.30.0 - 5.30.v
+Versions 5.30.0 - 5.30.8
 - Version 5.30.0
 	- Bug fix: the 'Activities rooms statistics' did not work correctly: it considered even inactive constraints (reported by math user).
 	- Added the possibility of selecting whether to print the detailed or the less detailed HTML timetables for the groups and years (suggested by math user,
@@ -1916,3 +1916,13 @@ Versions 5.30.0 - 5.30.v
 - Version 5.30.8
 	- Updated to Qt 5.7.1.
 	- A few Brazilian Portuguese translation bugs corrected (reported by rodolforg, fixed by Alexandre R. Soares).
+---------------------------------------------------------------------------------
+Versions 5.31.0 - 5.31.v
+- Version 5.31.0
+	- Updated to Qt 5.8.0.
+	- Added a new type of constraint: teacher(s)/students (set) max span per day (the maximum time spent in the institution on a day).
+	Suggested by Vangelis Karafillidis and rodolforg.
+	- Added a new type of constraint: teacher(s)/students (set) min resting hours (the minimum free time slots between the last working hour on a day and
+	the first working hour on the next day). Suggested by rodolforg.
+	- Fixed some typos in the German translation (reported by math user, corrected by Bob Hairgrove).
+	- Added 3 new example files from Namibia, by Bobby Wise.
