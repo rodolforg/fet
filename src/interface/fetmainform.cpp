@@ -158,6 +158,17 @@ using namespace std;
 #include "constraintmingapsbetweenactivitiesform.h"
 #include "constraintactivitypreferredtimeslotsform.h"
 #include "constraintactivitypreferredstartingtimesform.h"
+
+#include "constraintteachermaxspanperdayform.h"
+#include "constraintteachersmaxspanperdayform.h"
+#include "constraintstudentssetmaxspanperdayform.h"
+#include "constraintstudentsmaxspanperdayform.h"
+
+#include "constraintteacherminrestinghoursform.h"
+#include "constraintteachersminrestinghoursform.h"
+#include "constraintstudentssetminrestinghoursform.h"
+#include "constraintstudentsminrestinghoursform.h"
+
 #include "constraintactivitypreferredroomsform.h"
 
 #include "constraintstudentssethomeroomform.h"
@@ -399,6 +410,16 @@ const ConstraintDialogHelper::Mapping ConstraintDialogHelper::constraintActions[
 
 	{"TimeConstraintsStudentsMinHoursDaily", fCreate<ConstraintStudentsMinHoursDailyForm>},
 	{"TimeConstraintsStudentsSetMinHoursDaily", fCreate<ConstraintStudentsSetMinHoursDailyForm>},
+
+	{"TimeConstraintsTeacherMaxSpanPerDay", fCreate<ConstraintTeacherMaxSpanPerDayForm>},
+	{"TimeConstraintsTeachersMaxSpanPerDay", fCreate<ConstraintTeachersMaxSpanPerDayForm>},
+	{"TimeConstraintsStudentsSetMaxSpanPerDay", fCreate<ConstraintStudentsSetMaxSpanPerDayForm>},
+	{"TimeConstraintsStudentsMaxSpanPerDay", fCreate<ConstraintStudentsMaxSpanPerDayForm>},
+
+	{"TimeConstraintsTeacherMinRestingHours", fCreate<ConstraintTeacherMinRestingHoursForm>},
+	{"TimeConstraintsTeachersMinRestingHours", fCreate<ConstraintTeachersMinRestingHoursForm>},
+	{"TimeConstraintsStudentsSetMinRestingHours", fCreate<ConstraintStudentsSetMinRestingHoursForm>},
+	{"TimeConstraintsStudentsMinRestingHours", fCreate<ConstraintStudentsMinRestingHoursForm>},
 };
 
 const int ConstraintDialogHelper::numConstraintActions = sizeof(constraintActions)/sizeof(constraintActions[0]);

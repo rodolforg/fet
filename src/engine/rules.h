@@ -845,6 +845,16 @@ private:
 	TimeConstraint* readActivitiesOccupyMaxTimeSlotsFromSelection(QXmlStreamReader& xml, XmlLog &log);
 	TimeConstraint* readActivitiesMaxSimultaneousInSelectedTimeSlots(QXmlStreamReader& xml, XmlLog &log);
 
+	TimeConstraint* readTeacherMaxSpanPerDay(QXmlStreamReader& xml, XmlLog& log);
+	TimeConstraint* readTeachersMaxSpanPerDay(QXmlStreamReader& xml, XmlLog& log);
+	TimeConstraint* readStudentsSetMaxSpanPerDay(QXmlStreamReader& xml, XmlLog& log);
+	TimeConstraint* readStudentsMaxSpanPerDay(QXmlStreamReader& xml, XmlLog& log);
+
+	TimeConstraint* readTeacherMinRestingHours(QXmlStreamReader& xml, XmlLog& log);
+	TimeConstraint* readTeachersMinRestingHours(QXmlStreamReader& xml, XmlLog& log);
+	TimeConstraint* readStudentsSetMinRestingHours(QXmlStreamReader& xml, XmlLog& log);
+	TimeConstraint* readStudentsMinRestingHours(QXmlStreamReader& xml, XmlLog& log);
+
 	SpaceConstraint* readBasicCompulsorySpace(QXmlStreamReader& xml, XmlLog &log);
 	SpaceConstraint* readRoomNotAvailable(QXmlStreamReader& xml, XmlLog &log);
 	SpaceConstraint* readRoomNotAvailableTimes(QXmlStreamReader& xml, XmlLog &log);

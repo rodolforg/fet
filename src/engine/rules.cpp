@@ -1072,6 +1072,17 @@ bool Rules::modifyTeacher(const QString& initialTeacherName, const QString& fina
 			if(initialTeacherName == crt_constraint->teacherName)
 				crt_constraint->teacherName=finalTeacherName;
 		}
+		//2017-02-07
+		else if(ctr->type==CONSTRAINT_TEACHER_MAX_SPAN_PER_DAY){
+			ConstraintTeacherMaxSpanPerDay* crt_constraint=(ConstraintTeacherMaxSpanPerDay*)ctr;
+			if(initialTeacherName == crt_constraint->teacherName)
+				crt_constraint->teacherName=finalTeacherName;
+		}
+		else if(ctr->type==CONSTRAINT_TEACHER_MIN_RESTING_HOURS){
+			ConstraintTeacherMinRestingHours* crt_constraint=(ConstraintTeacherMinRestingHours*)ctr;
+			if(initialTeacherName == crt_constraint->teacherName)
+				crt_constraint->teacherName=finalTeacherName;
+		}
 	}
 	
 	foreach(SpaceConstraint* ctr, spaceConstraintsList){
@@ -1977,6 +1988,17 @@ bool Rules::modifyStudentsSet(const QString& initialStudentsSetName, const QStri
 				if(initialStudentsSetName == crt_constraint->studentsName)
 					crt_constraint->studentsName=finalStudentsSetName;
 			}
+			//2017-02-07
+			else if(ctr->type==CONSTRAINT_STUDENTS_SET_MAX_SPAN_PER_DAY){
+				ConstraintStudentsSetMaxSpanPerDay* crt_constraint=(ConstraintStudentsSetMaxSpanPerDay*)ctr;
+				if(initialStudentsSetName == crt_constraint->students)
+					crt_constraint->students=finalStudentsSetName;
+			}
+			else if(ctr->type==CONSTRAINT_STUDENTS_SET_MIN_RESTING_HOURS){
+				ConstraintStudentsSetMinRestingHours* crt_constraint=(ConstraintStudentsSetMinRestingHours*)ctr;
+				if(initialStudentsSetName == crt_constraint->students)
+					crt_constraint->students=finalStudentsSetName;
+			}
 		}
 
 		foreach(SpaceConstraint* ctr, spaceConstraintsList){
@@ -2125,6 +2147,17 @@ bool Rules::modifyStudentsSets(const QHash<QString, QString>& oldAndNewStudentsS
 			ConstraintSubactivitiesPreferredStartingTimes* crt_constraint=(ConstraintSubactivitiesPreferredStartingTimes*)ctr;
 			if(oldAndNewStudentsSetNames.contains(crt_constraint->studentsName))
 				crt_constraint->studentsName=oldAndNewStudentsSetNames.value(crt_constraint->studentsName);
+		}
+		//2017-02-07
+		else if(ctr->type==CONSTRAINT_STUDENTS_SET_MAX_SPAN_PER_DAY){
+			ConstraintStudentsSetMaxSpanPerDay* crt_constraint=(ConstraintStudentsSetMaxSpanPerDay*)ctr;
+			if(oldAndNewStudentsSetNames.contains(crt_constraint->students))
+				crt_constraint->students=oldAndNewStudentsSetNames.value(crt_constraint->students);
+		}
+		else if(ctr->type==CONSTRAINT_STUDENTS_SET_MIN_RESTING_HOURS){
+			ConstraintStudentsSetMinRestingHours* crt_constraint=(ConstraintStudentsSetMinRestingHours*)ctr;
+			if(oldAndNewStudentsSetNames.contains(crt_constraint->students))
+				crt_constraint->students=oldAndNewStudentsSetNames.value(crt_constraint->students);
 		}
 	}
 
@@ -4171,6 +4204,27 @@ void Rules::updateConstraintsAfterRemoval()
 		}
 		else if(tc->type==CONSTRAINT_STUDENTS_SET_MAX_DAYS_PER_WEEK){
 			ConstraintStudentsSetMaxDaysPerWeek* c=(ConstraintStudentsSetMaxDaysPerWeek*)tc;
+			if(!permanentStudentsHash.contains(c->students))
+				toBeRemovedTime.append(tc);
+		}
+		//2017-02-07
+		else if(tc->type==CONSTRAINT_TEACHER_MAX_SPAN_PER_DAY){
+			ConstraintTeacherMaxSpanPerDay* c=(ConstraintTeacherMaxSpanPerDay*)tc;
+			if(!existingTeachersNames.contains(c->teacherName))
+				toBeRemovedTime.append(tc);
+		}
+		else if(tc->type==CONSTRAINT_TEACHER_MIN_RESTING_HOURS){
+			ConstraintTeacherMinRestingHours* c=(ConstraintTeacherMinRestingHours*)tc;
+			if(!existingTeachersNames.contains(c->teacherName))
+				toBeRemovedTime.append(tc);
+		}
+		else if(tc->type==CONSTRAINT_STUDENTS_SET_MAX_SPAN_PER_DAY){
+			ConstraintStudentsSetMaxSpanPerDay* c=(ConstraintStudentsSetMaxSpanPerDay*)tc;
+			if(!permanentStudentsHash.contains(c->students))
+				toBeRemovedTime.append(tc);
+		}
+		else if(tc->type==CONSTRAINT_STUDENTS_SET_MIN_RESTING_HOURS){
+			ConstraintStudentsSetMinRestingHours* c=(ConstraintStudentsSetMinRestingHours*)tc;
 			if(!permanentStudentsHash.contains(c->students))
 				toBeRemovedTime.append(tc);
 		}
@@ -6332,6 +6386,32 @@ bool Rules::read(QWidget* parent, const QString& fileName, bool commandLine, QSt
 					crt_constraint=NULL;
 					xmlReader.skipCurrentElement();
 				}
+				/////////begin 2017-02-07
+				else if(xmlReader.name()=="ConstraintTeacherMaxSpanPerDay"){
+					crt_constraint=readTeacherMaxSpanPerDay(xmlReader, log);
+				}
+				else if(xmlReader.name()=="ConstraintTeachersMaxSpanPerDay"){
+					crt_constraint=readTeachersMaxSpanPerDay(xmlReader, log);
+				}
+				else if(xmlReader.name()=="ConstraintStudentsSetMaxSpanPerDay"){
+					crt_constraint=readStudentsSetMaxSpanPerDay(xmlReader, log);
+				}
+				else if(xmlReader.name()=="ConstraintStudentsMaxSpanPerDay"){
+					crt_constraint=readStudentsMaxSpanPerDay(xmlReader, log);
+				}
+				else if(xmlReader.name()=="ConstraintTeacherMinRestingHours"){
+					crt_constraint=readTeacherMinRestingHours(xmlReader, log);
+				}
+				else if(xmlReader.name()=="ConstraintTeachersMinRestingHours"){
+					crt_constraint=readTeachersMinRestingHours(xmlReader, log);
+				}
+				else if(xmlReader.name()=="ConstraintStudentsSetMinRestingHours"){
+					crt_constraint=readStudentsSetMinRestingHours(xmlReader, log);
+				}
+				else if(xmlReader.name()=="ConstraintStudentsMinRestingHours"){
+					crt_constraint=readStudentsMinRestingHours(xmlReader, log);
+				}
+				/////////  end 2017-02-07
 				else{
 					xmlReader.skipCurrentElement();
 					log.numberOfUnrecognizedFields++;
@@ -13980,6 +14060,320 @@ TimeConstraint* Rules::readActivitiesMaxSimultaneousInSelectedTimeSlots(QXmlStre
 	return cn;
 }
 ////////////////
+
+/////2017-02-07
+TimeConstraint* Rules::readTeacherMaxSpanPerDay(QXmlStreamReader& xmlReader, XmlLog& log){
+	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintTeacherMaxSpanPerDay");
+	ConstraintTeacherMaxSpanPerDay* cn=new ConstraintTeacherMaxSpanPerDay();
+	while(xmlReader.readNextStartElement()){
+		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
+		if(xmlReader.name()=="Weight_Percentage"){
+			QString text=xmlReader.readElementText();
+			cn->weightPercentage=customFETStrToDouble(text);
+			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
+		}
+		else if(xmlReader.name()=="Active"){
+			QString text=xmlReader.readElementText();
+			if(text=="false"){
+				cn->active=false;
+			}
+		}
+		else if(xmlReader.name()=="Comments"){
+			QString text=xmlReader.readElementText();
+			cn->comments=text;
+		}
+		else if(xmlReader.name()=="Teacher_Name"){
+			QString text=xmlReader.readElementText();
+			cn->teacherName=text;
+			log.verbose("    Read teacher name="+cn->teacherName+"\n");
+		}
+		else if(xmlReader.name()=="Max_Span"){
+			QString text=xmlReader.readElementText();
+			cn->maxSpanPerDay=text.toInt();
+			log.verbose("    Adding max span per day="+CustomFETString::number(cn->maxSpanPerDay)+"\n");
+		}
+		else{
+			xmlReader.skipCurrentElement();
+			log.numberOfUnrecognizedFields++;
+		}
+	}
+	return cn;
+}
+
+TimeConstraint* Rules::readTeachersMaxSpanPerDay(QXmlStreamReader& xmlReader, XmlLog& log){
+	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintTeachersMaxSpanPerDay");
+	ConstraintTeachersMaxSpanPerDay* cn=new ConstraintTeachersMaxSpanPerDay();
+	while(xmlReader.readNextStartElement()){
+		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
+		if(xmlReader.name()=="Weight_Percentage"){
+			QString text=xmlReader.readElementText();
+			cn->weightPercentage=customFETStrToDouble(text);
+			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
+		}
+		else if(xmlReader.name()=="Active"){
+			QString text=xmlReader.readElementText();
+			if(text=="false"){
+				cn->active=false;
+			}
+		}
+		else if(xmlReader.name()=="Comments"){
+			QString text=xmlReader.readElementText();
+			cn->comments=text;
+		}
+		else if(xmlReader.name()=="Max_Span"){
+			QString text=xmlReader.readElementText();
+			cn->maxSpanPerDay=text.toInt();
+			log.verbose("    Adding max span per day="+CustomFETString::number(cn->maxSpanPerDay)+"\n");
+		}
+		else{
+			xmlReader.skipCurrentElement();
+			log.numberOfUnrecognizedFields++;
+		}
+	}
+	return cn;
+}
+
+TimeConstraint* Rules::readStudentsSetMaxSpanPerDay(QXmlStreamReader& xmlReader, XmlLog& log){
+	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintStudentsSetMaxSpanPerDay");
+	ConstraintStudentsSetMaxSpanPerDay* cn=new ConstraintStudentsSetMaxSpanPerDay();
+	while(xmlReader.readNextStartElement()){
+		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
+		if(xmlReader.name()=="Weight_Percentage"){
+			QString text=xmlReader.readElementText();
+			cn->weightPercentage=customFETStrToDouble(text);
+			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
+		}
+		else if(xmlReader.name()=="Active"){
+			QString text=xmlReader.readElementText();
+			if(text=="false"){
+				cn->active=false;
+			}
+		}
+		else if(xmlReader.name()=="Comments"){
+			QString text=xmlReader.readElementText();
+			cn->comments=text;
+		}
+		else if(xmlReader.name()=="Students"){
+			QString text=xmlReader.readElementText();
+			cn->students=text;
+			log.verbose("    Read students name="+cn->students+"\n");
+		}
+		else if(xmlReader.name()=="Max_Span"){
+			QString text=xmlReader.readElementText();
+			cn->maxSpanPerDay=text.toInt();
+			log.verbose("    Adding max span per day="+CustomFETString::number(cn->maxSpanPerDay)+"\n");
+		}
+		else{
+			xmlReader.skipCurrentElement();
+			log.numberOfUnrecognizedFields++;
+		}
+	}
+	return cn;
+}
+
+TimeConstraint* Rules::readStudentsMaxSpanPerDay(QXmlStreamReader& xmlReader, XmlLog& log){
+	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintStudentsMaxSpanPerDay");
+	ConstraintStudentsMaxSpanPerDay* cn=new ConstraintStudentsMaxSpanPerDay();
+	while(xmlReader.readNextStartElement()){
+		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
+		if(xmlReader.name()=="Weight_Percentage"){
+			QString text=xmlReader.readElementText();
+			cn->weightPercentage=customFETStrToDouble(text);
+			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
+		}
+		else if(xmlReader.name()=="Active"){
+			QString text=xmlReader.readElementText();
+			if(text=="false"){
+				cn->active=false;
+			}
+		}
+		else if(xmlReader.name()=="Comments"){
+			QString text=xmlReader.readElementText();
+			cn->comments=text;
+		}
+		else if(xmlReader.name()=="Max_Span"){
+			QString text=xmlReader.readElementText();
+			cn->maxSpanPerDay=text.toInt();
+			log.verbose("    Adding max span per day="+CustomFETString::number(cn->maxSpanPerDay)+"\n");
+		}
+		else{
+			xmlReader.skipCurrentElement();
+			log.numberOfUnrecognizedFields++;
+		}
+	}
+	return cn;
+}
+
+TimeConstraint* Rules::readTeacherMinRestingHours(QXmlStreamReader& xmlReader, XmlLog& log){
+	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintTeacherMinRestingHours");
+	ConstraintTeacherMinRestingHours* cn=new ConstraintTeacherMinRestingHours();
+	cn->circular=true;
+	while(xmlReader.readNextStartElement()){
+		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
+		if(xmlReader.name()=="Weight_Percentage"){
+			QString text=xmlReader.readElementText();
+			cn->weightPercentage=customFETStrToDouble(text);
+			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
+		}
+		else if(xmlReader.name()=="Active"){
+			QString text=xmlReader.readElementText();
+			if(text=="false"){
+				cn->active=false;
+			}
+		}
+		else if(xmlReader.name()=="Circular"){
+			QString text=xmlReader.readElementText();
+			if(text=="false"){
+				cn->circular=false;
+			}
+		}
+		else if(xmlReader.name()=="Comments"){
+			QString text=xmlReader.readElementText();
+			cn->comments=text;
+		}
+		else if(xmlReader.name()=="Teacher_Name"){
+			QString text=xmlReader.readElementText();
+			cn->teacherName=text;
+			log.verbose("    Read teacher name="+cn->teacherName+"\n");
+		}
+		else if(xmlReader.name()=="Minimum_Resting_Hours"){
+			QString text=xmlReader.readElementText();
+			cn->minRestingHours=text.toInt();
+			log.verbose("    Adding min resting hours="+CustomFETString::number(cn->minRestingHours)+"\n");
+		}
+		else{
+			xmlReader.skipCurrentElement();
+			log.numberOfUnrecognizedFields++;
+		}
+	}
+	return cn;
+}
+
+TimeConstraint* Rules::readTeachersMinRestingHours(QXmlStreamReader& xmlReader, XmlLog& log){
+	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintTeachersMinRestingHours");
+	ConstraintTeachersMinRestingHours* cn=new ConstraintTeachersMinRestingHours();
+	cn->circular=true;
+	while(xmlReader.readNextStartElement()){
+		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
+		if(xmlReader.name()=="Weight_Percentage"){
+			QString text=xmlReader.readElementText();
+			cn->weightPercentage=customFETStrToDouble(text);
+			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
+		}
+		else if(xmlReader.name()=="Active"){
+			QString text=xmlReader.readElementText();
+			if(text=="false"){
+				cn->active=false;
+			}
+		}
+		else if(xmlReader.name()=="Circular"){
+			QString text=xmlReader.readElementText();
+			if(text=="false"){
+				cn->circular=false;
+			}
+		}
+		else if(xmlReader.name()=="Comments"){
+			QString text=xmlReader.readElementText();
+			cn->comments=text;
+		}
+		else if(xmlReader.name()=="Minimum_Resting_Hours"){
+			QString text=xmlReader.readElementText();
+			cn->minRestingHours=text.toInt();
+			log.verbose("    Adding min resting hours="+CustomFETString::number(cn->minRestingHours)+"\n");
+		}
+		else{
+			xmlReader.skipCurrentElement();
+			log.numberOfUnrecognizedFields++;
+		}
+	}
+	return cn;
+}
+
+TimeConstraint* Rules::readStudentsSetMinRestingHours(QXmlStreamReader& xmlReader, XmlLog& log){
+	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintStudentsSetMinRestingHours");
+	ConstraintStudentsSetMinRestingHours* cn=new ConstraintStudentsSetMinRestingHours();
+	cn->circular=true;
+	while(xmlReader.readNextStartElement()){
+		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
+		if(xmlReader.name()=="Weight_Percentage"){
+			QString text=xmlReader.readElementText();
+			cn->weightPercentage=customFETStrToDouble(text);
+			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
+		}
+		else if(xmlReader.name()=="Active"){
+			QString text=xmlReader.readElementText();
+			if(text=="false"){
+				cn->active=false;
+			}
+		}
+		else if(xmlReader.name()=="Circular"){
+			QString text=xmlReader.readElementText();
+			if(text=="false"){
+				cn->circular=false;
+			}
+		}
+		else if(xmlReader.name()=="Comments"){
+			QString text=xmlReader.readElementText();
+			cn->comments=text;
+		}
+		else if(xmlReader.name()=="Students"){
+			QString text=xmlReader.readElementText();
+			cn->students=text;
+			log.verbose("    Read students name="+cn->students+"\n");
+		}
+		else if(xmlReader.name()=="Minimum_Resting_Hours"){
+			QString text=xmlReader.readElementText();
+			cn->minRestingHours=text.toInt();
+			log.verbose("    Adding min resting hours="+CustomFETString::number(cn->minRestingHours)+"\n");
+		}
+		else{
+			xmlReader.skipCurrentElement();
+			log.numberOfUnrecognizedFields++;
+		}
+	}
+	return cn;
+}
+
+TimeConstraint* Rules::readStudentsMinRestingHours(QXmlStreamReader& xmlReader, XmlLog& log){
+	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintStudentsMinRestingHours");
+	ConstraintStudentsMinRestingHours* cn=new ConstraintStudentsMinRestingHours();
+	cn->circular=true;
+	while(xmlReader.readNextStartElement()){
+		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
+		if(xmlReader.name()=="Weight_Percentage"){
+			QString text=xmlReader.readElementText();
+			cn->weightPercentage=customFETStrToDouble(text);
+			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
+		}
+		else if(xmlReader.name()=="Active"){
+			QString text=xmlReader.readElementText();
+			if(text=="false"){
+				cn->active=false;
+			}
+		}
+		else if(xmlReader.name()=="Circular"){
+			QString text=xmlReader.readElementText();
+			if(text=="false"){
+				cn->circular=false;
+			}
+		}
+		else if(xmlReader.name()=="Comments"){
+			QString text=xmlReader.readElementText();
+			cn->comments=text;
+		}
+		else if(xmlReader.name()=="Minimum_Resting_Hours"){
+			QString text=xmlReader.readElementText();
+			cn->minRestingHours=text.toInt();
+			log.verbose("    Adding min resting hours="+CustomFETString::number(cn->minRestingHours)+"\n");
+		}
+		else{
+			xmlReader.skipCurrentElement();
+			log.numberOfUnrecognizedFields++;
+		}
+	}
+	return cn;
+}
+///////////////
 
 ///space constraints reading routines
 SpaceConstraint* Rules::readBasicCompulsorySpace(QXmlStreamReader& xmlReader, XmlLog &log){
