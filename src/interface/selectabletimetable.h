@@ -2,6 +2,7 @@
 #define SELECTABLETIMETABLE_H
 
 #include <QTableWidget>
+#include <QUndoStack>
 #include "rules.h"
 
 class SelectableTimeTable : public QTableWidget
@@ -28,6 +29,10 @@ private:
 
 	void setMarked(QTableWidgetItem *item, bool isMarked);
 	void colorItem(QTableWidgetItem *item);
+
+	virtual void keyPressEvent(QKeyEvent * event);
+
+	QUndoStack undoStack;
 };
 
 #endif // SELECTABLETIMETABLE_H

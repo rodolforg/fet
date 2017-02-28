@@ -1,8 +1,49 @@
 #include "selectabletimetable.h"
 
 #include <QHeaderView>
+#include <QApplication>
+#include <QKeyEvent>
 
 #include "tablewidgetupdatebug.h"
+
+class ChangeRowCommand : public QUndoCommand
+{
+public:
+	ChangeRowCommand(SelectableTimeTable *table, int row, bool mark, QUndoCommand *parent = NULL);
+	virtual void undo();
+	virtual void redo();
+private:
+	SelectableTimeTable *tableWidget;
+	int row;
+	bool mark;
+	QList<bool> rowData;
+};
+
+class ChangeColumnCommand : public QUndoCommand
+{
+public:
+	ChangeColumnCommand(SelectableTimeTable *table, int column, bool mark, QUndoCommand *parent = NULL);
+	virtual void undo();
+	virtual void redo();
+private:
+	SelectableTimeTable *tableWidget;
+	int column;
+	bool mark;
+	QList<bool> columnData;
+};
+
+class ToggleCellCommand : public QUndoCommand
+{
+public:
+	ToggleCellCommand(SelectableTimeTable *table, int row, int column, QUndoCommand *parent = NULL);
+	virtual void undo();
+	virtual void redo();
+private:
+	void toggle();
+	SelectableTimeTable *tableWidget;
+	int row;
+	int column;
+};
 
 #define MARK		(QString("X"))
 #define BLANK		(QString())
@@ -54,11 +95,8 @@ void SelectableTimeTable::horizontalHeaderClicked(int col)
 {
 	if(col>=0 && col<columnCount()){
 		bool marked = isMarked(0, col);
-
-		for(int row=0; row<rowCount(); row++){
-			setMarked(row, col, !marked);
-		}
-		tableWidgetUpdateBug(this);
+		ChangeColumnCommand * command = new ChangeColumnCommand(this, col, !marked);
+		undoStack.push(command);
 	}
 }
 
@@ -75,14 +113,14 @@ void SelectableTimeTable::verticalHeaderClicked(int clickedRow)
 		lastRow = pressedRow;
 		firstRow = clickedRow;
 	}
+
+	QUndoCommand *changeRows = new QUndoCommand();
+
 	for (int row = firstRow; row <= lastRow; row++) {
 		bool marked = isMarked(row, 0);
-
-		for(int col=0; col<columnCount(); col++){
-			setMarked(row, col, !marked);
-		}
+		new ChangeRowCommand(this, row, !marked, changeRows);
 	}
-	tableWidgetUpdateBug(this);
+	undoStack.push(changeRows);
 }
 
 void SelectableTimeTable::verticalHeaderPressed(int row)
@@ -94,11 +132,7 @@ void SelectableTimeTable::verticalHeaderPressed(int row)
 
 void SelectableTimeTable::itemClicked(QTableWidgetItem* item)
 {
-	QString s=item->text() == MARK? BLANK : MARK;
-	item->setText(s);
-	colorItem(item);
-
-	tableWidgetUpdateBug(this);
+	undoStack.push(new ToggleCellCommand(this, item->row(), item->column()));
 }
 
 void SelectableTimeTable::colorItem(QTableWidgetItem* item)
@@ -110,6 +144,24 @@ void SelectableTimeTable::colorItem(QTableWidgetItem* item)
 			item->setBackground(QBrush(Qt::darkRed));
 		item->setForeground(QBrush(Qt::lightGray));
 	}
+}
+
+void SelectableTimeTable::keyPressEvent(QKeyEvent *event)
+{
+	if (event->matches(QKeySequence::Undo)) {
+		if (!undoStack.canUndo())
+			QApplication::beep();
+		else
+			undoStack.undo();
+	}
+	else if (event->matches(QKeySequence::Redo)) {
+		if (!undoStack.canRedo())
+			QApplication::beep();
+		else
+			undoStack.redo();
+	}
+	else
+		QTableWidget::keyPressEvent(event);
 }
 
 void SelectableTimeTable::setMarked(int row, int col, bool isMarked)
@@ -132,19 +184,96 @@ bool SelectableTimeTable::isMarked(int row, int col) const
 
 void SelectableTimeTable::setAllUnmarked()
 {
-	for(int i=0; i<rowCount(); i++)
-		for(int j=0; j<columnCount(); j++){
-			setMarked(i, j, false);
-		}
-	tableWidgetUpdateBug(this);
+	QUndoCommand *unmarkAll = new QUndoCommand();
+	for(int j=0; j<columnCount(); j++){
+		new ChangeColumnCommand(this, j, false, unmarkAll);
+	}
+	undoStack.push(unmarkAll);
 }
 
 void SelectableTimeTable::setAllMarked()
 {
-	for(int i=0; i<rowCount(); i++)
-		for(int j=0; j<columnCount(); j++){
-			setMarked(i, j, true);
-		}
-	tableWidgetUpdateBug(this);
+	QUndoCommand *markAll = new QUndoCommand();
+	for(int j=0; j<columnCount(); j++){
+		new ChangeColumnCommand(this, j, true, markAll);
+	}
+	undoStack.push(markAll);
 }
 
+ChangeRowCommand::ChangeRowCommand(SelectableTimeTable *table, int row, bool mark, QUndoCommand *parent)
+	: QUndoCommand(parent), tableWidget(table), row(row), mark(mark)
+{
+}
+
+void ChangeRowCommand::undo()
+{
+	int column = 0;
+	foreach(bool mark, rowData){
+		tableWidget->setMarked(row, column, mark);
+		column++;
+	}
+	tableWidgetUpdateBug(tableWidget);
+}
+
+void ChangeRowCommand::redo()
+{
+	if (rowData.count() != tableWidget->columnCount()) {
+		for(int col=0; col<tableWidget->columnCount(); col++){
+			rowData << tableWidget->isMarked(row, col);
+		}
+	}
+	for(int column=0; column<tableWidget->columnCount(); column++){
+		tableWidget->setMarked(row, column, mark);
+	}
+	tableWidgetUpdateBug(tableWidget);
+}
+
+ChangeColumnCommand::ChangeColumnCommand(SelectableTimeTable *table, int column, bool mark, QUndoCommand *parent)
+	: QUndoCommand(parent), tableWidget(table), column(column), mark(mark)
+{
+}
+
+void ChangeColumnCommand::undo()
+{
+	int row = 0;
+	foreach(bool mark, columnData){
+		tableWidget->setMarked(row, column, mark);
+		row++;
+	}
+	tableWidgetUpdateBug(tableWidget);
+}
+
+void ChangeColumnCommand::redo()
+{
+	if (columnData.count() != tableWidget->rowCount()) {
+		for(int row=0; row<tableWidget->rowCount(); row++){
+			columnData << tableWidget->isMarked(row, column);
+		}
+	}
+	for(int row=0; row<tableWidget->rowCount(); row++){
+		tableWidget->setMarked(row, column, mark);
+	}
+	tableWidgetUpdateBug(tableWidget);
+}
+
+ToggleCellCommand::ToggleCellCommand(SelectableTimeTable *table, int row, int column, QUndoCommand *parent)
+	: QUndoCommand(parent), tableWidget(table), row(row), column(column)
+{
+}
+
+void ToggleCellCommand::undo()
+{
+	toggle();
+}
+
+void ToggleCellCommand::redo()
+{
+	toggle();
+}
+
+void ToggleCellCommand::toggle()
+{
+	bool marked = tableWidget->isMarked(row, column);
+	tableWidget->setMarked(row, column, !marked);
+	tableWidgetUpdateBug(tableWidget);
+}
