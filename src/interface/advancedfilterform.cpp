@@ -150,6 +150,10 @@ AdvancedFilterForm::AdvancedFilterForm(QWidget* parent, bool all, QList<int> des
 		contNContReNReComboBoxList.at(i)->setVisible(i<rows);
 		textLineEditList.at(i)->setVisible(i<rows);
 	}
+	
+	assert(textLineEditList.at(0)!=NULL);
+	textLineEditList.at(0)->selectAll();
+	textLineEditList.at(0)->setFocus();
 }
 
 AdvancedFilterForm::~AdvancedFilterForm()
