@@ -1926,3 +1926,8 @@ Versions 5.31.0 - 5.31.v
 	the first working hour on the next day). Suggested by rodolforg.
 	- Fixed some typos in the German translation (reported by math user, corrected by Bob Hairgrove).
 	- Added 3 new example files from Namibia, by Bobby Wise.
+- Version 5.31.1
+	- Bug fix: when importing rooms and buildings, if some rooms were in the same building, the building was added more times. Reported by Abou, fixed
+	by Volker Dirr and Liviu Lalescu, along with other minor import things.
+	- When the user selects the filter in the all time/space constraints dialogs, the first line edit will get focus and its text will be selected,
+	for easier navigation with the keyboard. Suggested by math user.

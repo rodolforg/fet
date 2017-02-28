@@ -1,4 +1,4 @@
-This is FET version 5.31.0
+This is FET version 5.31.1
 
 
 Program description:
@@ -14,7 +14,7 @@ Program description:
 
 Requirements:
 
-	FET is created in the following environment: openSUSE Leap 42.2 GNU/Linux distribution, Linux 4.4.46, Xfce 4.12,
+	FET is created in the following environment: openSUSE Leap 42.2 GNU/Linux distribution, Linux 4.4.49, Xfce 4.12,
 	Midnight Commander 4.8.18, KDiff3 0.9.98, Qt 5.8.0, gcc 6.3.1, g++ 6.3.1, make 4.0, sed 4.2.2,
 	Valgrind 3.11.0, Coverity Scan 8.7.0, Cppcheck 1.77, other great free tools.
 	FET can be run on any platform supported by the free software Qt (GNU/Linux, Windows, Mac OS X).
