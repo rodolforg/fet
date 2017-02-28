@@ -1355,6 +1355,7 @@ void Import::importCSVActivityTags(QWidget* parent){
 	int count=0;
 	for(int i=0; i<fieldList[FIELD_ACTIVITY_TAG_NAME].size(); i++){
 		if(!fieldList[FIELD_ACTIVITY_TAG_NAME][i].isEmpty() && !tmpSet.contains(fieldList[FIELD_ACTIVITY_TAG_NAME][i])){
+			tmpSet.insert(fieldList[FIELD_ACTIVITY_TAG_NAME][i]);
 			ActivityTag* a=new ActivityTag();
 			a->name=fieldList[FIELD_ACTIVITY_TAG_NAME][i];
 			if(!gt.rules.addActivityTagFast(a)){
@@ -1404,7 +1405,7 @@ void Import::importCSVRoomsAndBuildings(QWidget* parent){
 	ok = readFields(newParent);
 	if(!ok) return;
 
-	QStringList duplicatesCheck;
+	QSet<QString> duplicatesCheck;
 	//check duplicates of rooms in csv
 	if(fieldNumber[FIELD_ROOM_NAME]!=DO_NOT_IMPORT)
 		for(int i=0; i<fieldList[FIELD_ROOM_NAME].size(); i++){
@@ -1469,6 +1470,7 @@ void Import::importCSVRoomsAndBuildings(QWidget* parent){
 	int count=0;
 	for(int i=0; i<fieldList[FIELD_BUILDING_NAME].size(); i++){
 		if(!fieldList[FIELD_BUILDING_NAME][i].isEmpty() && !tmpSet.contains(fieldList[FIELD_BUILDING_NAME][i])){
+			tmpSet.insert(fieldList[FIELD_BUILDING_NAME][i]);
 			Building* b=new Building();
 			b->name=fieldList[FIELD_BUILDING_NAME][i];
 			if(!gt.rules.addBuildingFast(b)){
@@ -1486,6 +1488,7 @@ void Import::importCSVRoomsAndBuildings(QWidget* parent){
 	int countroom=0;
 	for(int i=0; i<fieldList[FIELD_BUILDING_NAME].size(); i++){
 		if(!fieldList[FIELD_ROOM_NAME][i].isEmpty() && !tmpSet.contains(fieldList[FIELD_ROOM_NAME][i])){
+			tmpSet.insert(fieldList[FIELD_ROOM_NAME][i]);
 			Room* r=new Room();
 			r->name=fieldList[FIELD_ROOM_NAME][i];
 			if(fieldNumber[FIELD_BUILDING_NAME]!=DO_NOT_IMPORT)
@@ -1573,6 +1576,7 @@ void Import::importCSVSubjects(QWidget* parent){
 	int count=0;
 	for(int i=0; i<fieldList[FIELD_SUBJECT_NAME].size(); i++){
 		if(!fieldList[FIELD_SUBJECT_NAME][i].isEmpty() && !tmpSet.contains(fieldList[FIELD_SUBJECT_NAME][i])){
+			tmpSet.insert(fieldList[FIELD_SUBJECT_NAME][i]);
 			Subject* s=new Subject();
 			s->name=fieldList[FIELD_SUBJECT_NAME][i];
 			if(!gt.rules.addSubjectFast(s)){
@@ -1649,6 +1653,7 @@ void Import::importCSVTeachers(QWidget* parent){
 	int count=0;
 	for(int i=0; i<fieldList[FIELD_TEACHER_NAME].size(); i++){
 		if(!fieldList[FIELD_TEACHER_NAME][i].isEmpty() && !tmpSet.contains(fieldList[FIELD_TEACHER_NAME][i])){
+			tmpSet.insert(fieldList[FIELD_TEACHER_NAME][i]);
 			Teacher* tch=new Teacher();
 			tch->name=fieldList[FIELD_TEACHER_NAME][i];
 			if(!gt.rules.addTeacherFast(tch)){
