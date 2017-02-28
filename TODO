@@ -5052,3 +5052,16 @@ I think white spaces should also be encoded, which is not done by default?
 But I would not like to implement this in the official version. I prefer the numbers, they are much shorter and nicer. And maybe safer.
 
 I can add this in the TODO, and if more people ask, I will reconsider.
+
+308---------------------------------------------------------
+From math user (on forum):
+
+He refers to the all time/space constraints dialogs:
+
+What about CTRL+F to select Filter and CTRL+G to select Sorted? That would speed up usage (keyboard only - no mouse needed).
+
+309---------------------------------------------------------
+From rodolforg (on forum):
+
+Constraint teacher(s) min continous gaps in window (for instance, the teachers should have 6 continuous gaps on a day, for lunch, when
+the FET time slot corresponds in reality 10 minutes).
