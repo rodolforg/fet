@@ -24,6 +24,7 @@ class HelpOnImperfectConstraints{
 	Q_DECLARE_TR_FUNCTIONS(HelpOnImperfectConstraints)
 	
 public:
+	static QString getHelpText();
 	static void help(QWidget* parent);
 };
 

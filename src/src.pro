@@ -1263,7 +1263,6 @@ FORMS += \
 	interface/constraintstudentssetactivitytagmaxhoursdailyform_template.ui \
 	interface/addconstraintstudentssetactivitytagmaxhoursdailyform_template.ui \
 	interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform_template.ui \
-	interface/constraintstudentsactivitytagmaxhoursdailyform_template.ui \
 	interface/addconstraintstudentsactivitytagmaxhoursdailyform_template.ui \
 	interface/modifyconstraintstudentsactivitytagmaxhoursdailyform_template.ui \
 	\
