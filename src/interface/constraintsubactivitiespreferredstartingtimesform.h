@@ -26,8 +26,6 @@ public:
 	ConstraintSubactivitiesPreferredStartingTimesForm(QWidget* parent);
 	~ConstraintSubactivitiesPreferredStartingTimesForm();
 
-	bool filterOk(TimeConstraint* ctr);
-
 protected:
 	virtual QDialog *createAddDialog();
 	virtual QDialog *createModifyDialog(TimeConstraint *ctr);
