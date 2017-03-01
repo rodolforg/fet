@@ -24,6 +24,7 @@ class ConstraintActivitiesPreferredStartingTimesForm : public ConstraintBaseDial
 	Q_OBJECT
 public:
 	ConstraintActivitiesPreferredStartingTimesForm(QWidget* parent);
+	~ConstraintActivitiesPreferredStartingTimesForm();
 
 	bool filterOk(const TimeConstraint *ctr) const;
 

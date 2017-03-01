@@ -27,8 +27,13 @@ ConstraintActivitiesSameStartingDayForm::ConstraintActivitiesSameStartingDayForm
 	setInstructionText(QCoreApplication::translate("ConstraintActivitiesSameStartingDayForm_template", "Please try to read Help/Important tips, advice 2). It is IMPORTANT to remove redundant min days constraints after adding constraints same starting day. Please also click Help button here for information."));
 	setHelp();
 
-//	populateFilters();
+	restoreFETDialogGeometry(this);
 	filterChanged();
+}
+
+ConstraintActivitiesSameStartingDayForm::~ConstraintActivitiesSameStartingDayForm()
+{
+	saveFETDialogGeometry(this);
 }
 
 bool ConstraintActivitiesSameStartingDayForm::filterOk(const TimeConstraint* ctr) const

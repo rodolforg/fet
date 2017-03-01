@@ -27,11 +27,13 @@ ConstraintSubactivitiesPreferredStartingTimesForm::ConstraintSubactivitiesPrefer
 	setInstructionText(QCoreApplication::translate("ConstraintSubactivitiesPreferredStartingTimesForm_template", "This constraint is useful to constrain only the n-th component for activities. Please click Help button for details."));
 	setHelp();
 
+	restoreFETDialogGeometry(this);
 	filterChanged();
 }
 
 ConstraintSubactivitiesPreferredStartingTimesForm::~ConstraintSubactivitiesPreferredStartingTimesForm()
 {
+	saveFETDialogGeometry(this);
 }
 
 bool ConstraintSubactivitiesPreferredStartingTimesForm::filterOk(const TimeConstraint* ctr) const

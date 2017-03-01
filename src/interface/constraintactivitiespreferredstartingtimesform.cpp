@@ -23,8 +23,14 @@ ConstraintActivitiesPreferredStartingTimesForm::ConstraintActivitiesPreferredSta
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintActivitiesPreferredStartingTimesForm_template", "Constraints activities preferred starting times"));
-//	populateFilters();
+
+	restoreFETDialogGeometry(this);
 	filterChanged();
+}
+
+ConstraintActivitiesPreferredStartingTimesForm::~ConstraintActivitiesPreferredStartingTimesForm()
+{
+	saveFETDialogGeometry(this);
 }
 
 bool ConstraintActivitiesPreferredStartingTimesForm::filterOk(const TimeConstraint* ctr) const

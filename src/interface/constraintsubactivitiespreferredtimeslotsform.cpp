@@ -27,11 +27,13 @@ ConstraintSubactivitiesPreferredTimeSlotsForm::ConstraintSubactivitiesPreferredT
 	setInstructionText(QCoreApplication::translate("ConstraintSubactivitiesPreferredTimeSlotsForm_template", "This constraint is useful to constrain only the n-th component for activities. Please click Help button for details."));
 	setHelp();
 
+	restoreFETDialogGeometry(this);
 	filterChanged();
 }
 
 ConstraintSubactivitiesPreferredTimeSlotsForm::~ConstraintSubactivitiesPreferredTimeSlotsForm()
 {
+	saveFETDialogGeometry(this);
 }
 
 bool ConstraintSubactivitiesPreferredTimeSlotsForm::filterOk(const TimeConstraint* ctr) const

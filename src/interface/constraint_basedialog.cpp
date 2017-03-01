@@ -40,7 +40,6 @@ ConstraintBaseDialog::ConstraintBaseDialog(QWidget* parent): QDialog(parent),
 	connect(helpPushButton, SIGNAL(clicked()), this, SLOT(help()));
 
 	centerWidgetOnScreen(this);
-	restoreFETDialogGeometry(this);
 
 //	populateFilters();
 //	filterChanged();
@@ -48,7 +47,6 @@ ConstraintBaseDialog::ConstraintBaseDialog(QWidget* parent): QDialog(parent),
 
 ConstraintBaseDialog::~ConstraintBaseDialog()
 {
-	saveFETDialogGeometry(this);
 	delete filterWidget;
 }
 

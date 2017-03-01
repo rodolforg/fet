@@ -24,8 +24,13 @@ ConstraintActivitiesSameStartingHourForm::ConstraintActivitiesSameStartingHourFo
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintActivitiesSameStartingHourForm_template", "Constraints activities same starting hour"));
 
-//	populateFilters();
+	restoreFETDialogGeometry(this);
 	filterChanged();
+}
+
+ConstraintActivitiesSameStartingHourForm::~ConstraintActivitiesSameStartingHourForm()
+{
+	saveFETDialogGeometry(this);
 }
 
 bool ConstraintActivitiesSameStartingHourForm::filterOk(const TimeConstraint* ctr) const

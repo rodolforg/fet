@@ -26,8 +26,13 @@ ConstraintActivitiesPreferredTimeSlotsForm::ConstraintActivitiesPreferredTimeSlo
 
 	setInstructionText(QCoreApplication::translate("ConstraintActivitiesPreferredTimeSlotsForm_template", "Each hour slot of each considered activity must be allowed by this constraint (more restrictive than preferred starting times for activities with duration greater than 1)"));
 
-//	populateFilters();
+	restoreFETDialogGeometry(this);
 	filterChanged();
+}
+
+ConstraintActivitiesPreferredTimeSlotsForm::~ConstraintActivitiesPreferredTimeSlotsForm()
+{
+	saveFETDialogGeometry(this);
 }
 
 bool ConstraintActivitiesPreferredTimeSlotsForm::filterOk(const TimeConstraint* ctr) const

@@ -30,11 +30,13 @@ ConstraintActivityEndsStudentsDayForm::ConstraintActivityEndsStudentsDayForm(QWi
 	setFilterWidget(filterWidget);
 	connect(filterWidget, &TeacherStudentSetSubjectActivityTag_FilterWidget::FilterChanged, this, &ConstraintActivityEndsStudentsDayForm::filterChanged);
 
+	restoreFETDialogGeometry(this);
 	this->filterChanged();
 }
 
 ConstraintActivityEndsStudentsDayForm::~ConstraintActivityEndsStudentsDayForm()
 {
+	saveFETDialogGeometry(this);
 }
 
 bool ConstraintActivityEndsStudentsDayForm::filterOk(const TimeConstraint* ctr) const

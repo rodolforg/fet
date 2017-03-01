@@ -36,11 +36,13 @@ ConstraintActivitiesSameStartingTimeForm::ConstraintActivitiesSameStartingTimeFo
 	setFilterWidget(filterWidget);
 	connect(filterWidget, &TeacherStudentSetSubjectActivityTag_FilterWidget::FilterChanged, this, &ConstraintActivitiesSameStartingTimeForm::filterChanged);
 
+	restoreFETDialogGeometry(this);
 	this->filterChanged();
 }
 
 ConstraintActivitiesSameStartingTimeForm::~ConstraintActivitiesSameStartingTimeForm()
 {
+	saveFETDialogGeometry(this);
 }
 
 bool ConstraintActivitiesSameStartingTimeForm::filterOk(const TimeConstraint* ctr) const

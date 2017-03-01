@@ -33,11 +33,13 @@ ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::ConstraintActivities
 	setFilterWidget(filterWidget);
 	connect(filterWidget, &TeacherStudentSetSubjectActivityTag_FilterWidget::FilterChanged, this, &ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::filterChanged);
 
+	restoreFETDialogGeometry(this);
 	this->filterChanged();
 }
 
 ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::~ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm()
 {
+	saveFETDialogGeometry(this);
 }
 
 bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::filterOk(const TimeConstraint* ctr) const

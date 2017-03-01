@@ -23,8 +23,14 @@ ConstraintActivitiesEndStudentsDayForm::ConstraintActivitiesEndStudentsDayForm(Q
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintActivitiesEndStudentsDayForm_template", "Constraints activities end students day"));
-//	populateFilters();
+
+	restoreFETDialogGeometry(this);
 	filterChanged();
+}
+
+ConstraintActivitiesEndStudentsDayForm::~ConstraintActivitiesEndStudentsDayForm()
+{
+	saveFETDialogGeometry(this);
 }
 
 bool ConstraintActivitiesEndStudentsDayForm::filterOk(const TimeConstraint* ctr) const

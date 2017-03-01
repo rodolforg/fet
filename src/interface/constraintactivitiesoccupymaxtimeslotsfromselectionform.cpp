@@ -33,11 +33,13 @@ ConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm::ConstraintActivitiesOcc
 	setFilterWidget(filterWidget);
 	connect(filterWidget, &TeacherStudentSetSubjectActivityTag_FilterWidget::FilterChanged, this, &ConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm::filterChanged);
 
+	restoreFETDialogGeometry(this);
 	this->filterChanged();
 }
 
 ConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm::~ConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm()
 {
+	saveFETDialogGeometry(this);
 }
 
 

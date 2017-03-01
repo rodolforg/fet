@@ -33,11 +33,13 @@ ConstraintActivityPreferredTimeSlotsForm::ConstraintActivityPreferredTimeSlotsFo
 	setFilterWidget(filterWidget);
 	connect(filterWidget, &TeacherStudentSetSubjectActivityTag_FilterWidget::FilterChanged, this, &ConstraintActivityPreferredTimeSlotsForm::filterChanged);
 
+	restoreFETDialogGeometry(this);
 	this->filterChanged();
 }
 
 ConstraintActivityPreferredTimeSlotsForm::~ConstraintActivityPreferredTimeSlotsForm()
 {
+	saveFETDialogGeometry(this);
 }
 
 bool ConstraintActivityPreferredTimeSlotsForm::filterOk(const TimeConstraint* ctr) const

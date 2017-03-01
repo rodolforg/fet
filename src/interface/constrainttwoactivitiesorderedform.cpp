@@ -27,11 +27,13 @@ ConstraintTwoActivitiesOrderedForm::ConstraintTwoActivitiesOrderedForm(QWidget* 
 	QString instruction = QCoreApplication::translate("ConstraintTwoActivitiesOrderedForm_template", "This constraint forces two activities A1 and A2: A2 to be after A1, separated by any time interval in the week");
 	setInstructionText(instruction);
 
+	restoreFETDialogGeometry(this);
 	this->filterChanged();
 }
 
 ConstraintTwoActivitiesOrderedForm::~ConstraintTwoActivitiesOrderedForm()
 {
+	saveFETDialogGeometry(this);
 }
 
 bool ConstraintTwoActivitiesOrderedForm::filterOk(const TimeConstraint* ctr) const

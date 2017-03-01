@@ -28,11 +28,13 @@ ConstraintThreeActivitiesGroupedForm::ConstraintThreeActivitiesGroupedForm(QWidg
 	instruction += "\n\n" + QCoreApplication::translate("ConstraintThreeActivitiesGroupedForm_template", "It is a good practice NOT to add this type of constraint to activities which are constrained to be in different days by min days between activities constraints. Please read Help/Important tips, tip number 3).");
 	setInstructionText(instruction);
 
+	restoreFETDialogGeometry(this);
 	this->filterChanged();
 }
 
 ConstraintThreeActivitiesGroupedForm::~ConstraintThreeActivitiesGroupedForm()
 {
+	saveFETDialogGeometry(this);
 }
 
 bool ConstraintThreeActivitiesGroupedForm::filterOk(const TimeConstraint* ctr) const

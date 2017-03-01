@@ -27,11 +27,13 @@ ConstraintBreakTimesForm::ConstraintBreakTimesForm(QWidget* parent): ConstraintB
 	QString instruction = QCoreApplication::translate("ConstraintBreakTimesForm_template", "Note: An activity with duration greater than 1 cannot be split over a break. Also, the activities constrained by min days between activities constraints with 'consecutive if same day' = true cannot spread over a break.");
 	setInstructionText(instruction);
 
+	restoreFETDialogGeometry(this);
 	this->filterChanged();
 }
 
 ConstraintBreakTimesForm::~ConstraintBreakTimesForm()
 {
+	saveFETDialogGeometry(this);
 }
 
 bool ConstraintBreakTimesForm::filterOk(const TimeConstraint* ctr) const

@@ -33,11 +33,13 @@ ConstraintActivitiesNotOverlappingForm::ConstraintActivitiesNotOverlappingForm(Q
 	setFilterWidget(filterWidget);
 	connect(filterWidget, &TeacherStudentSetSubjectActivityTag_FilterWidget::FilterChanged, this, &ConstraintActivitiesNotOverlappingForm::filterChanged);
 
+	restoreFETDialogGeometry(this);
 	this->filterChanged();
 }
 
 ConstraintActivitiesNotOverlappingForm::~ConstraintActivitiesNotOverlappingForm()
 {
+	saveFETDialogGeometry(this);
 }
 
 bool ConstraintActivitiesNotOverlappingForm::filterOk(const TimeConstraint* ctr) const

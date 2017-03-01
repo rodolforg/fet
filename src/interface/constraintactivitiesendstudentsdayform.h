@@ -24,6 +24,7 @@ class ConstraintActivitiesEndStudentsDayForm : public ConstraintBaseDialog  {
 	Q_OBJECT
 public:
 	ConstraintActivitiesEndStudentsDayForm(QWidget* parent);
+	virtual ~ConstraintActivitiesEndStudentsDayForm();
 
 	bool filterOk(const TimeConstraint *ctr) const;
 

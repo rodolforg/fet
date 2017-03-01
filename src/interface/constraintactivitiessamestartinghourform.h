@@ -24,6 +24,7 @@ class ConstraintActivitiesSameStartingHourForm : public ConstraintBaseDialog  {
 	Q_OBJECT
 public:
 	ConstraintActivitiesSameStartingHourForm(QWidget* parent);
+	~ConstraintActivitiesSameStartingHourForm();
 
 	bool filterOk(const TimeConstraint *ctr) const;
 

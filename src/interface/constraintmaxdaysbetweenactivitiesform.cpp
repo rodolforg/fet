@@ -32,11 +32,13 @@ ConstraintMaxDaysBetweenActivitiesForm::ConstraintMaxDaysBetweenActivitiesForm(Q
 	setFilterWidget(filterWidget);
 	connect(filterWidget, &TeacherStudentSetSubjectActivityTag_FilterWidget::FilterChanged, this, &ConstraintMaxDaysBetweenActivitiesForm::filterChanged);
 
+	restoreFETDialogGeometry(this);
 	this->filterChanged();
 }
 
 ConstraintMaxDaysBetweenActivitiesForm::~ConstraintMaxDaysBetweenActivitiesForm()
 {
+	saveFETDialogGeometry(this);
 }
 
 bool ConstraintMaxDaysBetweenActivitiesForm::filterOk(const TimeConstraint* ctr) const

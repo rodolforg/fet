@@ -36,11 +36,13 @@ ConstraintMinGapsBetweenActivitiesForm::ConstraintMinGapsBetweenActivitiesForm(Q
 	setFilterWidget(filterWidget);
 	connect(filterWidget, &TeacherStudentSetSubjectActivityTag_FilterWidget::FilterChanged, this, &ConstraintMinGapsBetweenActivitiesForm::filterChanged);
 
+	restoreFETDialogGeometry(this);
 	this->filterChanged();
 }
 
 ConstraintMinGapsBetweenActivitiesForm::~ConstraintMinGapsBetweenActivitiesForm()
 {
+	saveFETDialogGeometry(this);
 }
 
 bool ConstraintMinGapsBetweenActivitiesForm::filterOk(const TimeConstraint* ctr) const

@@ -24,6 +24,7 @@ class ConstraintActivitiesPreferredTimeSlotsForm : public ConstraintBaseDialog  
 	Q_OBJECT
 public:
 	ConstraintActivitiesPreferredTimeSlotsForm(QWidget* parent);
+	~ConstraintActivitiesPreferredTimeSlotsForm();
 
 	bool filterOk(const TimeConstraint* ctr) const;
 
