@@ -46,6 +46,13 @@ protected:
 	QWidget *getFilterWidget() const;
 
 	/**
+	 * @brief A callback function called before a constraint is removed from this constraint list
+	 *
+	 * It is called after user has initially confirmed constraint removal. Useful for extra confirmation.
+	 * @return true if it should resume constraint removal
+	 */
+	virtual bool beforeRemoveConstraint();
+	/**
 	 * @brief A callback function called after a constraint is successfully removed from this dialog list
 	 */
 	virtual void afterRemoveConstraint();

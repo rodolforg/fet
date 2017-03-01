@@ -15,6 +15,7 @@
 #include "longtextmessagebox.h"
 
 #include "fet.h"
+#include "centerwidgetonscreen.h"
 
 ConstraintBaseDialog::ConstraintBaseDialog(QWidget* parent): QDialog(parent),
 	  filterWidget(nullptr)
@@ -155,6 +156,9 @@ void ConstraintBaseDialog::removeConstraint()
 	switch( LongTextMessageBox::confirmation( this, tr("FET confirmation"),
 		s, tr("Yes"), tr("No"), 0, 0, 1 ) ){
 	case 0: // The user clicked the OK button or pressed Enter
+		if (!beforeRemoveConstraint())
+			break;
+
 		gt.rules.removeTimeConstraint(ctr);
 
 		visibleConstraintsList.removeAt(i);
@@ -175,6 +179,11 @@ void ConstraintBaseDialog::removeConstraint()
 		constraintsListWidget->setCurrentRow(i);
 	else
 		this->constraintChanged(-1);
+}
+
+bool ConstraintBaseDialog::beforeRemoveConstraint()
+{
+	return true;
 }
 
 void ConstraintBaseDialog::afterRemoveConstraint()
