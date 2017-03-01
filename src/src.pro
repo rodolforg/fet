@@ -1113,7 +1113,6 @@ FORMS += \
 	interface/constraintteachernotavailabletimesform_template.ui \
 	interface/addconstraintteachernotavailabletimesform_template.ui \
 	interface/modifyconstraintteachernotavailabletimesform_template.ui \
-	interface/constraintbasiccompulsorytimeform_template.ui \
 	interface/addconstraintbasiccompulsorytimeform_template.ui \
 	interface/modifyconstraintbasiccompulsorytimeform_template.ui \
 	interface/constraintbasiccompulsoryspaceform_template.ui \

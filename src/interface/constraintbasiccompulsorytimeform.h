@@ -18,28 +18,19 @@
 #ifndef CONSTRAINTBASICCOMPULSORYTIMEFORM_H
 #define CONSTRAINTBASICCOMPULSORYTIMEFORM_H
 
-#include "ui_constraintbasiccompulsorytimeform_template.h"
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
+#include "constraint_basedialog.h"
 
-class ConstraintBasicCompulsoryTimeForm : public QDialog, Ui::ConstraintBasicCompulsoryTimeForm_template  {
+class ConstraintBasicCompulsoryTimeForm : public ConstraintBaseDialog  {
 	Q_OBJECT
 public:
-	TimeConstraintsList visibleConstraintsList;
-
 	ConstraintBasicCompulsoryTimeForm(QWidget* parent);
 	~ConstraintBasicCompulsoryTimeForm();
 
-	bool filterOk(TimeConstraint* ctr);
-
-public slots:
-	void constraintChanged(int index);
-	void addConstraint();
-	void modifyConstraint();
-	void removeConstraint();
-
-	void filterChanged();
+protected:
+	virtual QDialog *createAddDialog();
+	virtual QDialog *createModifyDialog(TimeConstraint *ctr);
+	bool beforeRemoveConstraint();
+	virtual bool filterOk(const TimeConstraint *ctr) const;
 };
 
 #endif
