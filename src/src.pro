@@ -472,6 +472,7 @@ SOURCES += \
 	\
 	interface/constraint_basedialog.cpp \
 	interface/teacherstudentsetsubjectactivitytag_filterwidget.cpp \
+	interface/activitytag_filterwidget.cpp \
 
 HEADERS += \
 	engine/timetableexport.h \
@@ -950,6 +951,7 @@ HEADERS += \
 	\
 	interface/constraint_basedialog.h \
 	interface/teacherstudentsetsubjectactivitytag_filterwidget.h \
+	interface/activitytag_filterwidget.h \
 
 FORMS += \
 	interface/fetmainform_template.ui \
@@ -1255,7 +1257,6 @@ FORMS += \
 	interface/constraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui \
 	interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui \
 	interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui \
-	interface/constraintstudentsactivitytagmaxhourscontinuouslyform_template.ui \
 	interface/addconstraintstudentsactivitytagmaxhourscontinuouslyform_template.ui \
 	interface/modifyconstraintstudentsactivitytagmaxhourscontinuouslyform_template.ui \
 	\
@@ -1360,6 +1361,7 @@ FORMS += \
 	\
 	interface/constraint_basedialog_template.ui \
 	interface/teacherstudentsetsubjectactivitytag_filterwidget.ui \
+	interface/activitytag_filterwidget.ui \
 
 TRANSLATIONS += \
 	../translations/fet_ar.ts \

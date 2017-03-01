@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ActivityTag_FilterWidget</class>
+ <widget class="QWidget" name="ActivityTag_FilterWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <widget class="QGroupBox" name="filterGroupBox">
+     <property name="title">
+      <string>Filter</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QLabel" name="activityTagsLabel">
+        <property name="text">
+         <string>Activity tag</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="activityTagsComboBox"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>activityTagsComboBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
