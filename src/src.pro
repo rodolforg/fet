@@ -1246,7 +1246,6 @@ FORMS += \
 	interface/constraintstudentssetmaxhourscontinuouslyform_template.ui \
 	interface/addconstraintstudentssetmaxhourscontinuouslyform_template.ui \
 	interface/modifyconstraintstudentssetmaxhourscontinuouslyform_template.ui \
-	interface/constraintstudentsmaxhourscontinuouslyform_template.ui \
 	interface/addconstraintstudentsmaxhourscontinuouslyform_template.ui \
 	interface/modifyconstraintstudentsmaxhourscontinuouslyform_template.ui \
 	\
