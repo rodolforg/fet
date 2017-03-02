@@ -1216,7 +1216,6 @@ FORMS += \
 	interface/constraintstudentssetmaxgapsperdayform_template.ui \
 	interface/addconstraintstudentssetmaxgapsperdayform_template.ui \
 	interface/modifyconstraintstudentssetmaxgapsperdayform_template.ui \
-	interface/constraintstudentsmaxgapsperdayform_template.ui \
 	interface/addconstraintstudentsmaxgapsperdayform_template.ui \
 	interface/modifyconstraintstudentsmaxgapsperdayform_template.ui \
 	\
