@@ -1333,7 +1333,6 @@ FORMS += \
 	interface/constraintstudentssetmaxspanperdayform_template.ui \
 	interface/addconstraintstudentssetmaxspanperdayform_template.ui \
 	interface/modifyconstraintstudentssetmaxspanperdayform_template.ui \
-	interface/constraintstudentsmaxspanperdayform_template.ui \
 	interface/addconstraintstudentsmaxspanperdayform_template.ui \
 	interface/modifyconstraintstudentsmaxspanperdayform_template.ui \
 	\
