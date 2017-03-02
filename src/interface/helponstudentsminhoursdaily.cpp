@@ -19,9 +19,7 @@
 
 #include "longtextmessagebox.h"
 
-#include <QApplication>
-
-void HelpOnStudentsMinHoursDaily::help(QWidget* parent)
+QString HelpOnStudentsMinHoursDaily::getHelpText()
 {
 	QString s=tr("Important information about constraints students (set) min hours daily:");
 	
@@ -42,5 +40,11 @@ void HelpOnStudentsMinHoursDaily::help(QWidget* parent)
 	s+="\n\n";
 	s+=tr("So, remember: don't allow empty days unless you need it.");
 	
+	return s;
+}
+
+void HelpOnStudentsMinHoursDaily::help(QWidget* parent)
+{
+	QString s = getHelpText();
 	LongTextMessageBox::largeInformation(parent, tr("FET information"), s);
 }

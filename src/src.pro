@@ -1262,7 +1262,6 @@ FORMS += \
 	interface/constraintstudentssetminhoursdailyform_template.ui \
 	interface/addconstraintstudentssetminhoursdailyform_template.ui \
 	interface/modifyconstraintstudentssetminhoursdailyform_template.ui \
-	interface/constraintstudentsminhoursdailyform_template.ui \
 	interface/addconstraintstudentsminhoursdailyform_template.ui \
 	interface/modifyconstraintstudentsminhoursdailyform_template.ui \
 	interface/addconstraintactivitiesnotoverlappingform_template.ui \
