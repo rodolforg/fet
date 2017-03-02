@@ -1345,7 +1345,6 @@ FORMS += \
 	interface/constraintstudentssetminrestinghoursform_template.ui \
 	interface/addconstraintstudentssetminrestinghoursform_template.ui \
 	interface/modifyconstraintstudentssetminrestinghoursform_template.ui \
-	interface/constraintstudentsminrestinghoursform_template.ui \
 	interface/addconstraintstudentsminrestinghoursform_template.ui \
 	interface/modifyconstraintstudentsminrestinghoursform_template.ui \
 	\
