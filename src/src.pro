@@ -1239,7 +1239,6 @@ FORMS += \
 	interface/constraintstudentssetmaxhoursdailyform_template.ui \
 	interface/addconstraintstudentssetmaxhoursdailyform_template.ui \
 	interface/modifyconstraintstudentssetmaxhoursdailyform_template.ui \
-	interface/constraintstudentsmaxhoursdailyform_template.ui \
 	interface/addconstraintstudentsmaxhoursdailyform_template.ui \
 	interface/modifyconstraintstudentsmaxhoursdailyform_template.ui \
 	\
