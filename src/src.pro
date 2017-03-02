@@ -1157,7 +1157,6 @@ FORMS += \
 	interface/addconstraintstudentssetmaxdaysperweekform_template.ui \
 	interface/modifyconstraintstudentssetmaxdaysperweekform_template.ui \
 	\
-	interface/constraintstudentsmaxdaysperweekform_template.ui \
 	interface/addconstraintstudentsmaxdaysperweekform_template.ui \
 	interface/modifyconstraintstudentsmaxdaysperweekform_template.ui \
 	\
