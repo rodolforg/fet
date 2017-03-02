@@ -1209,7 +1209,6 @@ FORMS += \
 	interface/constraintstudentssetmaxgapsperweekform_template.ui \
 	interface/addconstraintstudentssetmaxgapsperweekform_template.ui \
 	interface/modifyconstraintstudentssetmaxgapsperweekform_template.ui \
-	interface/constraintstudentsmaxgapsperweekform_template.ui \
 	interface/addconstraintstudentsmaxgapsperweekform_template.ui \
 	interface/modifyconstraintstudentsmaxgapsperweekform_template.ui \
 	\
