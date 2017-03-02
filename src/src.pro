@@ -1233,7 +1233,6 @@ FORMS += \
 	interface/constraintteachermaxgapsperdayform_template.ui \
 	interface/addconstraintteachermaxgapsperdayform_template.ui \
 	interface/modifyconstraintteachermaxgapsperdayform_template.ui \
-	interface/constraintstudentsearlymaxbeginningsatsecondhourform_template.ui \
 	interface/addconstraintstudentsearlymaxbeginningsatsecondhourform_template.ui \
 	interface/modifyconstraintstudentsearlymaxbeginningsatsecondhourform_template.ui \
 	interface/constraintstudentssetearlymaxbeginningsatsecondhourform_template.ui \
