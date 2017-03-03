@@ -1317,7 +1317,6 @@ FORMS += \
 	interface/constraintteachermaxspanperdayform_template.ui \
 	interface/addconstraintteachermaxspanperdayform_template.ui \
 	interface/modifyconstraintteachermaxspanperdayform_template.ui \
-	interface/constraintteachersmaxspanperdayform_template.ui \
 	interface/addconstraintteachersmaxspanperdayform_template.ui \
 	interface/modifyconstraintteachersmaxspanperdayform_template.ui \
 	\
