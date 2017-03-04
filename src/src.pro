@@ -1110,7 +1110,6 @@ FORMS += \
 	interface/addconstraintactivitiessamestartingdayform_template.ui \
 	interface/modifyconstraintactivitiessamestartingdayform_template.ui \
 	\
-	interface/constraintteachernotavailabletimesform_template.ui \
 	interface/addconstraintteachernotavailabletimesform_template.ui \
 	interface/modifyconstraintteachernotavailabletimesform_template.ui \
 	interface/addconstraintbasiccompulsorytimeform_template.ui \
