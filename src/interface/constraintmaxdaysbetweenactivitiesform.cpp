@@ -29,6 +29,10 @@ ConstraintMaxDaysBetweenActivitiesForm::ConstraintMaxDaysBetweenActivitiesForm(Q
 	setHelp();
 
 	TeacherStudentSetSubjectActivityTag_FilterWidget *filterWidget = new TeacherStudentSetSubjectActivityTag_FilterWidget(gt.rules);
+	filterWidget->setTeachersVisible(true);
+	filterWidget->setStudentSetsVisible(true);
+	filterWidget->setSubjectsVisible(true);
+	filterWidget->setActivityTagsVisible(true);
 	setFilterWidget(filterWidget);
 	connect(filterWidget, &TeacherStudentSetSubjectActivityTag_FilterWidget::FilterChanged, this, &ConstraintMaxDaysBetweenActivitiesForm::filterChanged);
 

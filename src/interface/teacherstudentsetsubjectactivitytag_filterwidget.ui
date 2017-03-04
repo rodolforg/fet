@@ -21,56 +21,66 @@
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_4">
       <item>
-       <widget class="QLabel" name="teachersLabel">
-        <property name="text">
-         <string>Teacher</string>
-        </property>
-       </widget>
+       <layout class="QVBoxLayout" name="teachersBox">
+        <item>
+         <widget class="QLabel" name="teachersLabel">
+          <property name="text">
+           <string>Teacher</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="teachersComboBox"/>
+        </item>
+       </layout>
       </item>
       <item>
-       <widget class="QComboBox" name="teachersComboBox"/>
+       <layout class="QVBoxLayout" name="studentsBox">
+        <item>
+         <widget class="QLabel" name="studentsLabel">
+          <property name="text">
+           <string>Students set</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="studentsComboBox"/>
+        </item>
+       </layout>
       </item>
       <item>
-       <widget class="QLabel" name="studentsLabel">
-        <property name="text">
-         <string>Students set</string>
-        </property>
-       </widget>
+       <layout class="QVBoxLayout" name="subjectsBox">
+        <item>
+         <widget class="QLabel" name="subjectsLabel">
+          <property name="text">
+           <string>Subject</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="subjectsComboBox"/>
+        </item>
+       </layout>
       </item>
       <item>
-       <widget class="QComboBox" name="studentsComboBox"/>
-      </item>
-      <item>
-       <widget class="QLabel" name="subjectsLabel">
-        <property name="text">
-         <string>Subject</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QComboBox" name="subjectsComboBox"/>
-      </item>
-      <item>
-       <widget class="QLabel" name="activityTagsLabel">
-        <property name="text">
-         <string>Activity tag</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QComboBox" name="activityTagsComboBox"/>
+       <layout class="QVBoxLayout" name="activityTagsBox">
+        <item>
+         <widget class="QLabel" name="activityTagsLabel">
+          <property name="text">
+           <string>Activity tag</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="activityTagsComboBox"/>
+        </item>
+       </layout>
       </item>
      </layout>
     </widget>
    </item>
   </layout>
  </widget>
- <tabstops>
-  <tabstop>teachersComboBox</tabstop>
-  <tabstop>studentsComboBox</tabstop>
-  <tabstop>subjectsComboBox</tabstop>
-  <tabstop>activityTagsComboBox</tabstop>
- </tabstops>
  <resources/>
  <connections/>
 </ui>

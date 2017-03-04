@@ -2,6 +2,7 @@
 #define TEACHERSTUDENTSETSUBJECTACTIVITYTAG_FILTERWIDGET_H
 
 #include <QWidget>
+#include <QBoxLayout>
 #include "rules.h"
 
 namespace Ui {
@@ -18,15 +19,32 @@ signals:
 public:
 	explicit TeacherStudentSetSubjectActivityTag_FilterWidget(const Rules &rules);
 	~TeacherStudentSetSubjectActivityTag_FilterWidget();
+
 	QString teacher() const;
 	QString studentsSet() const;
 	QString subject() const;
 	QString activityTag() const;
 
+	void setTeachersVisible(bool visible = true);
+	void setStudentSetsVisible(bool visible = true);
+	void setSubjectsVisible(bool visible = true);
+	void setActivityTagsVisible(bool visible = true);
+
+	/// Hide filter item labels
+	void hideLabels();
+
+	/// Organize filter items horizontally or vertically
+	void setDirection(QBoxLayout::Direction direction);
+
 private:
 	Ui::TeacherStudentSetSubjectActivityTag_FilterWidget *ui;
 
-public slots:
+	void populateTeachers(const Rules& rules);
+	void populateStudentsSets(const Rules& rules);
+	void populateSubjects(const Rules& rules);
+	void populateActivityTags(const Rules& rules);
+
+private slots:
 	void onChange();
 };
 

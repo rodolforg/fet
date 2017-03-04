@@ -28,6 +28,10 @@ ConstraintActivityPreferredStartingTimesForm::ConstraintActivityPreferredStartin
 	setWindowTitle(QCoreApplication::translate("ConstraintActivityPreferredStartingTimesForm_template", "Constraints activity preferred starting times"));
 
 	TeacherStudentSetSubjectActivityTag_FilterWidget *filterWidget = new TeacherStudentSetSubjectActivityTag_FilterWidget(gt.rules);
+	filterWidget->setTeachersVisible(true);
+	filterWidget->setStudentSetsVisible(true);
+	filterWidget->setSubjectsVisible(true);
+	filterWidget->setActivityTagsVisible(true);
 	setFilterWidget(filterWidget);
 	connect(filterWidget, &TeacherStudentSetSubjectActivityTag_FilterWidget::FilterChanged, this, &ConstraintActivityPreferredStartingTimesForm::filterChanged);
 

@@ -21,7 +21,7 @@
 #include "addconstraintstudentsactivitytagmaxhoursdailyform.h"
 #include "modifyconstraintstudentsactivitytagmaxhoursdailyform.h"
 
-#include "activitytag_filterwidget.h"
+#include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
 ConstraintStudentsActivityTagMaxHoursDailyForm::ConstraintStudentsActivityTagMaxHoursDailyForm(QWidget* parent): ConstraintBaseDialog(parent)
 {
@@ -34,9 +34,10 @@ ConstraintStudentsActivityTagMaxHoursDailyForm::ConstraintStudentsActivityTagMax
 
 	setHelp();
 
-	ActivityTag_FilterWidget *filterWidget = new ActivityTag_FilterWidget(gt.rules);
+	TeacherStudentSetSubjectActivityTag_FilterWidget *filterWidget = new TeacherStudentSetSubjectActivityTag_FilterWidget(gt.rules);
+	filterWidget->setActivityTagsVisible(true);
 	setFilterWidget(filterWidget);
-	connect(filterWidget, &ActivityTag_FilterWidget::FilterChanged, this, &ConstraintStudentsActivityTagMaxHoursDailyForm::filterChanged);
+	connect(filterWidget, &TeacherStudentSetSubjectActivityTag_FilterWidget::FilterChanged, this, &ConstraintStudentsActivityTagMaxHoursDailyForm::filterChanged);
 
 	restoreFETDialogGeometry(this);
 	this->filterChanged();
@@ -51,7 +52,7 @@ bool ConstraintStudentsActivityTagMaxHoursDailyForm::filterOk(const TimeConstrai
 {
 	if(ctr->type==CONSTRAINT_STUDENTS_ACTIVITY_TAG_MAX_HOURS_DAILY){
 		ConstraintStudentsActivityTagMaxHoursDaily* c=(ConstraintStudentsActivityTagMaxHoursDaily*) ctr;
-		const ActivityTag_FilterWidget * filterWidget = static_cast<ActivityTag_FilterWidget*>(getFilterWidget());
+		const TeacherStudentSetSubjectActivityTag_FilterWidget * filterWidget = static_cast<TeacherStudentSetSubjectActivityTag_FilterWidget*>(getFilterWidget());
 		QString filterActivityTagName = filterWidget->activityTag();
 		return (c->activityTagName == filterActivityTagName || filterActivityTagName.isEmpty());
 	}
