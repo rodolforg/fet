@@ -19,6 +19,7 @@ SOURCES += \
 	engine/randomknuth.cpp \
 	engine/messageboxes.cpp \
 	engine/xmllog.cpp \
+	engine/timetableexport_helper.cpp \
 	engine/constraints/mindaysbetweenactivities.cpp \
 	engine/constraints/maxdaysbetweenactivities.cpp \
 	engine/constraints/mingapsbetweenactivities.cpp \
@@ -48,6 +49,7 @@ HEADERS += \
 	engine/randomknuth.h \
 	engine/messageboxes.h \
 	engine/xmllog.h \
+	engine/timetableexport_helper.h \
 	engine/constraints/mindaysbetweenactivities.h \
 	engine/constraints/maxdaysbetweenactivities.h \
 	engine/constraints/mingapsbetweenactivities.h \
