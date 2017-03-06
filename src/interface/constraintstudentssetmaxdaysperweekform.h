@@ -18,28 +18,18 @@
 #ifndef CONSTRAINTSTUDENTSSETMAXDAYSPERWEEKFORM_H
 #define CONSTRAINTSTUDENTSSETMAXDAYSPERWEEKFORM_H
 
-#include "ui_constraintstudentssetmaxdaysperweekform_template.h"
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
+#include "constraint_basedialog.h"
 
-class ConstraintStudentsSetMaxDaysPerWeekForm : public QDialog, Ui::ConstraintStudentsSetMaxDaysPerWeekForm_template  {
+class ConstraintStudentsSetMaxDaysPerWeekForm : public ConstraintBaseDialog  {
 	Q_OBJECT
 public:
-	TimeConstraintsList visibleConstraintsList;
-
 	ConstraintStudentsSetMaxDaysPerWeekForm(QWidget* parent);
 	~ConstraintStudentsSetMaxDaysPerWeekForm();
 
-	bool filterOk(TimeConstraint* ctr);
-
-public slots:
-	void constraintChanged(int index);
-	void addConstraint();
-	void modifyConstraint();
-	void removeConstraint();
-
-	void filterChanged();
+protected:
+    virtual QDialog *createAddDialog();
+    virtual QDialog *createModifyDialog(TimeConstraint *ctr);
+    virtual bool filterOk(const TimeConstraint *ctr) const;
 };
 
 #endif
