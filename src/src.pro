@@ -1166,7 +1166,6 @@ FORMS += \
 	interface/addconstraintteachermaxhourscontinuouslyform_template.ui \
 	interface/modifyconstraintteachermaxhourscontinuouslyform_template.ui \
 	\
-	interface/constraintteachersactivitytagmaxhourscontinuouslyform_template.ui \
 	interface/addconstraintteachersactivitytagmaxhourscontinuouslyform_template.ui \
 	interface/modifyconstraintteachersactivitytagmaxhourscontinuouslyform_template.ui \
 	interface/addconstraintteacheractivitytagmaxhourscontinuouslyform_template.ui \
