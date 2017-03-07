@@ -1219,7 +1219,6 @@ FORMS += \
 	interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform_template.ui \
 	interface/modifyconstraintstudentssetearlymaxbeginningsatsecondhourform_template.ui \
 	\
-	interface/constraintstudentssetmaxhoursdailyform_template.ui \
 	interface/addconstraintstudentssetmaxhoursdailyform_template.ui \
 	interface/modifyconstraintstudentssetmaxhoursdailyform_template.ui \
 	interface/addconstraintstudentsmaxhoursdailyform_template.ui \
