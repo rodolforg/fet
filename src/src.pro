@@ -1204,7 +1204,6 @@ FORMS += \
 	interface/modifyconstraintteachermaxgapsperweekform_template.ui \
 	interface/addconstraintteachersmaxgapsperdayform_template.ui \
 	interface/modifyconstraintteachersmaxgapsperdayform_template.ui \
-	interface/constraintteachermaxgapsperdayform_template.ui \
 	interface/addconstraintteachermaxgapsperdayform_template.ui \
 	interface/modifyconstraintteachermaxgapsperdayform_template.ui \
 	interface/addconstraintstudentsearlymaxbeginningsatsecondhourform_template.ui \
