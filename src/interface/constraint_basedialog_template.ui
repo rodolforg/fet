@@ -101,6 +101,9 @@
      </item>
     </layout>
    </item>
+   <item>
+    <layout class="QHBoxLayout" name="buttons2HorizontalLayout"/>
+   </item>
   </layout>
  </widget>
  <tabstops>

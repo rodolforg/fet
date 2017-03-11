@@ -15,7 +15,7 @@
 
 #include "ui_constraint_basedialog_template.h"
 
-class ConstraintBaseDialog : public QDialog, Ui::ConstraintBaseDialog_template
+class ConstraintBaseDialog : public QDialog, protected Ui::ConstraintBaseDialog_template
 {
 	Q_OBJECT
 protected:

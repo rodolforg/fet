@@ -1259,7 +1259,6 @@ FORMS += \
 	interface/addconstrainttwoactivitiesorderedform_template.ui \
 	interface/modifyconstrainttwoactivitiesorderedform_template.ui \
 	\
-	interface/constraintmindaysbetweenactivitiesform_template.ui \
 	interface/addconstraintmindaysbetweenactivitiesform_template.ui \
 	interface/modifyconstraintmindaysbetweenactivitiesform_template.ui \
 	\
