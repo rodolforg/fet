@@ -1290,7 +1290,6 @@ FORMS += \
 	interface/teachersubjectsqualificationsform_template.ui \
 	interface/timetableprintform_template.ui \
 	\
-	interface/constraintteachermaxspanperdayform_template.ui \
 	interface/addconstraintteachermaxspanperdayform_template.ui \
 	interface/modifyconstraintteachermaxspanperdayform_template.ui \
 	interface/addconstraintteachersmaxspanperdayform_template.ui \
