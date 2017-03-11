@@ -1298,7 +1298,6 @@ FORMS += \
 	interface/addconstraintstudentsmaxspanperdayform_template.ui \
 	interface/modifyconstraintstudentsmaxspanperdayform_template.ui \
 	\
-	interface/constraintteacherminrestinghoursform_template.ui \
 	interface/addconstraintteacherminrestinghoursform_template.ui \
 	interface/modifyconstraintteacherminrestinghoursform_template.ui \
 	interface/addconstraintteachersminrestinghoursform_template.ui \
