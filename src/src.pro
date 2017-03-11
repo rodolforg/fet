@@ -1124,7 +1124,6 @@ FORMS += \
 	interface/addconstraintteachermaxdaysperweekform_template.ui \
 	interface/modifyconstraintteachermaxdaysperweekform_template.ui \
 	\
-	interface/constraintteachermindaysperweekform_template.ui \
 	interface/addconstraintteachermindaysperweekform_template.ui \
 	interface/modifyconstraintteachermindaysperweekform_template.ui \
 	\
