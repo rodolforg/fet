@@ -310,7 +310,7 @@ TimetablePrintForm::TimetablePrintForm(QWidget *parent): QDialog(parent){
 	printDetailedTables->setChecked(true);
 	
 	printActivityTags=new QCheckBox(tr("Activity tags"));
-	printActivityTags->setChecked(false);
+	printActivityTags->setChecked(true);
 	
 	repeatNames=new QCheckBox(tr("Repeat vertical names"));
 	repeatNames->setChecked(false);

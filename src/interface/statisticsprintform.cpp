@@ -243,7 +243,7 @@ StatisticsPrintForm::StatisticsPrintForm(QWidget *parent): QDialog(parent){
 //	printDetailedTables->setChecked(true);
 	
 	printActivityTags=new QCheckBox(tr("Activity tags"));
-	printActivityTags->setChecked(false);
+	printActivityTags->setChecked(true);
 	
 	fontSizeTable=new QSpinBox;
 	fontSizeTable->setRange(4, 20);
