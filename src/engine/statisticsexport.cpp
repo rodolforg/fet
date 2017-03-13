@@ -338,7 +338,7 @@ void StatisticsExport::getNamesAndHours(FetStatistics *statisticValues){
 
 bool StatisticsExport::exportStatisticsStylesheetCss(QWidget* parent, QString saveTime, FetStatistics statisticValues){
 	assert(gt.rules.initialized); // && gt.rules.internalStructureComputed);
-	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because to long filenames!
+	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because too long filenames!
 
 	if(s2.right(4)==".fet")
 		s2=s2.left(s2.length()-4);
@@ -467,7 +467,7 @@ bool StatisticsExport::exportStatisticsStylesheetCss(QWidget* parent, QString sa
 
 bool StatisticsExport::exportStatisticsIndex(QWidget* parent, QString saveTime){
 	assert(gt.rules.initialized); // && gt.rules.internalStructureComputed);
-	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because to long filenames!
+	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because too long filenames!
 	
 	if(s2.right(4)==".fet")
 		s2=s2.left(s2.length()-4);
@@ -580,7 +580,7 @@ bool StatisticsExport::exportStatisticsIndex(QWidget* parent, QString saveTime){
 
 bool StatisticsExport::exportStatisticsTeachersSubjects(QWidget* parent, QString saveTime, FetStatistics statisticValues, int htmlLevel){
 	assert(gt.rules.initialized); // && gt.rules.internalStructureComputed);
-	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because to long filenames!
+	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because too long filenames!
 
 	if(s2.right(4)==".fet")
 		s2=s2.left(s2.length()-4);
@@ -856,7 +856,7 @@ QString StatisticsExport::exportStatisticsTeachersSubjectsHtml(QWidget* parent, 
 
 bool StatisticsExport::exportStatisticsSubjectsTeachers(QWidget* parent, QString saveTime, FetStatistics statisticValues, int htmlLevel){
 	assert(gt.rules.initialized); // && gt.rules.internalStructureComputed);
-	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because to long filenames!
+	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because too long filenames!
 
 	if(s2.right(4)==".fet")
 		s2=s2.left(s2.length()-4);
@@ -1130,7 +1130,7 @@ QString StatisticsExport::exportStatisticsSubjectsTeachersHtml(QWidget* parent, 
 
 bool StatisticsExport::exportStatisticsTeachersStudents(QWidget* parent, QString saveTime, FetStatistics statisticValues, int htmlLevel){
 	assert(gt.rules.initialized); // && gt.rules.internalStructureComputed);
-	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because to long filenames!
+	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because too long filenames!
 
 	if(s2.right(4)==".fet")
 		s2=s2.left(s2.length()-4);
@@ -1405,7 +1405,7 @@ QString StatisticsExport::exportStatisticsTeachersStudentsHtml(QWidget* parent, 
 
 bool StatisticsExport::exportStatisticsStudentsTeachers(QWidget* parent, QString saveTime, FetStatistics statisticValues, int htmlLevel){
 	assert(gt.rules.initialized); // && gt.rules.internalStructureComputed);
-	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because to long filenames!
+	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because too long filenames!
 
 	if(s2.right(4)==".fet")
 		s2=s2.left(s2.length()-4);
@@ -1680,7 +1680,7 @@ QString StatisticsExport::exportStatisticsStudentsTeachersHtml(QWidget* parent, 
 
 bool StatisticsExport::exportStatisticsSubjectsStudents(QWidget* parent, QString saveTime, FetStatistics statisticValues, int htmlLevel){
 	assert(gt.rules.initialized); // && gt.rules.internalStructureComputed);
-	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because to long filenames!
+	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because too long filenames!
 
 	if(s2.right(4)==".fet")
 		s2=s2.left(s2.length()-4);
@@ -1955,7 +1955,7 @@ QString StatisticsExport::exportStatisticsSubjectsStudentsHtml(QWidget* parent, 
 
 bool StatisticsExport::exportStatisticsStudentsSubjects(QWidget* parent, QString saveTime, FetStatistics statisticValues, int htmlLevel){
 	assert(gt.rules.initialized); // && gt.rules.internalStructureComputed);
-	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because to long filenames!
+	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because too long filenames!
 
 	if(s2.right(4)==".fet")
 		s2=s2.left(s2.length()-4);
