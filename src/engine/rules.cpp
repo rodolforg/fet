@@ -527,9 +527,12 @@ bool Rules::computeInternalStructure(QWidget* parent)
 	}
 
 	//activities list for each subject - used for subjects timetable - in order for students and teachers
-	activitiesForSubject.resize(nInternalSubjects);
-	for(int sb=0; sb<nInternalSubjects; sb++)
-		activitiesForSubject[sb].clear();
+	activitiesForSubjectList.resize(nInternalSubjects);
+	activitiesForSubjectSet.resize(nInternalSubjects);
+	for(int sb=0; sb<nInternalSubjects; sb++){
+		activitiesForSubjectList[sb].clear();
+		activitiesForSubjectSet[sb].clear();
+	}
 
 	for(int i=0; i<this->augmentedYearsList.size(); i++){
 		StudentsYear* sty=this->augmentedYearsList[i];
@@ -541,16 +544,29 @@ bool Rules::computeInternalStructure(QWidget* parent)
 				StudentsSubgroup* sts=stg->subgroupsList[k];
 				
 				foreach(int ai, internalSubgroupsList[sts->indexInInternalSubgroupsList]->activitiesForSubgroup)
-					if(!activitiesForSubject[internalActivitiesList[ai].subjectIndex].contains(ai))
-						activitiesForSubject[internalActivitiesList[ai].subjectIndex].append(ai);
+					if(!activitiesForSubjectSet[internalActivitiesList[ai].subjectIndex].contains(ai)){
+						activitiesForSubjectList[internalActivitiesList[ai].subjectIndex].append(ai);
+						activitiesForSubjectSet[internalActivitiesList[ai].subjectIndex].insert(ai);
+					}
 			}
 		}
 	}
 	
 	for(int i=0; i<nInternalTeachers; i++){
 		foreach(int ai, internalTeachersList[i]->activitiesForTeacher)
-			if(!activitiesForSubject[internalActivitiesList[ai].subjectIndex].contains(ai))
-				activitiesForSubject[internalActivitiesList[ai].subjectIndex].append(ai);
+			if(!activitiesForSubjectSet[internalActivitiesList[ai].subjectIndex].contains(ai)){
+				activitiesForSubjectList[internalActivitiesList[ai].subjectIndex].append(ai);
+				activitiesForSubjectSet[internalActivitiesList[ai].subjectIndex].insert(ai);
+			}
+	}
+	
+	//for activities without students or teachers
+	for(int ai=0; ai<nInternalActivities; ai++){
+		int si=internalActivitiesList[ai].subjectIndex;
+		if(!activitiesForSubjectSet[si].contains(ai)){
+			activitiesForSubjectList[si].append(ai);
+			activitiesForSubjectSet[si].insert(ai);
+		}
 	}
 	/////////////////////////////////////////////////////////////////
 	

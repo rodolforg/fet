@@ -537,6 +537,8 @@ void TimetableExport::writeSimulationResults(QWidget* parent){
 	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+STUDENTS_STATISTICS_FILENAME_HTML;
 	writeStudentsStatisticsHtml(parent, s, sTime, na);
 
+/*
+	//needed for printing from the interface, so don't clear them! 
 	hashSubjectIDsTimetable.clear();
 	hashActivityTagIDsTimetable.clear();
 	hashStudentIDsTimetable.clear();
@@ -547,7 +549,7 @@ void TimetableExport::writeSimulationResults(QWidget* parent){
 	hashActivityColorBySubjectAndStudents.clear();
 	activeHashActivityColorBySubject.clear();
 	activeHashActivityColorBySubjectAndStudents.clear();
-
+*/
 	if(VERBOSE){
 		cout<<"Writing simulation results to disk completed successfully"<<endl;
 	}
@@ -779,7 +781,8 @@ void TimetableExport::writeHighestStageResults(QWidget* parent){
 	s=OUTPUT_DIR_TIMETABLES+FILE_SEP+s2+bar+STUDENTS_STATISTICS_FILENAME_HTML;
 	writeStudentsStatisticsHtml(parent, s, sTime, na);
 
-	hashSubjectIDsTimetable.clear();
+	//needed for printing from the interface, so don't clear them! 
+/*	hashSubjectIDsTimetable.clear();
 	hashActivityTagIDsTimetable.clear();
 	hashStudentIDsTimetable.clear();
 	hashTeacherIDsTimetable.clear();
@@ -789,7 +792,7 @@ void TimetableExport::writeHighestStageResults(QWidget* parent){
 	hashActivityColorBySubjectAndStudents.clear();
 	activeHashActivityColorBySubject.clear();
 	activeHashActivityColorBySubjectAndStudents.clear();
-
+*/
 	if(VERBOSE){
 		cout<<"Writing highest stage results to disk completed successfully"<<endl;
 	}
@@ -1294,8 +1297,9 @@ void TimetableExport::writeSimulationResults(QWidget* parent, int n){
 	writeTeachersStatisticsHtml(parent, s, sTime, na);
 	s=finalDestDir+STUDENTS_STATISTICS_FILENAME_HTML;
 	writeStudentsStatisticsHtml(parent, s, sTime, na);
-	
-	hashSubjectIDsTimetable.clear();
+
+	//needed for printing from the interface, so don't clear them! 	
+/*	hashSubjectIDsTimetable.clear();
 	hashActivityTagIDsTimetable.clear();
 	hashStudentIDsTimetable.clear();
 	hashTeacherIDsTimetable.clear();
@@ -1305,7 +1309,7 @@ void TimetableExport::writeSimulationResults(QWidget* parent, int n){
 	hashActivityColorBySubjectAndStudents.clear();
 	activeHashActivityColorBySubject.clear();
 	activeHashActivityColorBySubjectAndStudents.clear();
-
+*/
 	if(VERBOSE){
 		cout<<"Writing multiple simulation results to disk completed successfully"<<endl;
 	}
@@ -1655,7 +1659,8 @@ void TimetableExport::writeSimulationResultsCommandLine(QWidget* parent, const Q
 	s.prepend(outputDirectory);
 	TimetableExport::writeStudentsStatisticsHtml(parent, s, sTime, na);
 
-	hashSubjectIDsTimetable.clear();
+	//we can keep it, since it is for the command line version (but in fact we can also clear or delete these lines, since command line doesn't need interface printing)
+	/*hashSubjectIDsTimetable.clear();
 	hashActivityTagIDsTimetable.clear();
 	hashStudentIDsTimetable.clear();
 	hashTeacherIDsTimetable.clear();
@@ -1664,7 +1669,7 @@ void TimetableExport::writeSimulationResultsCommandLine(QWidget* parent, const Q
 	hashActivityColorBySubject.clear();
 	hashActivityColorBySubjectAndStudents.clear();
 	activeHashActivityColorBySubject.clear();
-	activeHashActivityColorBySubjectAndStudents.clear();
+	activeHashActivityColorBySubjectAndStudents.clear();*/
 }
 
 void TimetableExport::writeRandomSeedCommandLine(QWidget* parent, const QString& outputDirectory, bool before){ //outputDirectory contains trailing FILE_SEP
@@ -8554,7 +8559,7 @@ QString TimetableExport::singleSubjectsTimetableDaysHorizontalHtml(int htmlLevel
 	for(int d=0; d<gt.rules.nDaysPerWeek; d++)
 		for(int h=0; h<gt.rules.nHoursPerDay; h++)
 			activitiesForCurrentSubject[d][h].clear();
-	foreach(int ai, gt.rules.activitiesForSubject[subject])
+	foreach(int ai, gt.rules.activitiesForSubjectList[subject])
 		if(best_solution.times[ai]!=UNALLOCATED_TIME){
 			int d=best_solution.times[ai]%gt.rules.nDaysPerWeek;
 			int h=best_solution.times[ai]/gt.rules.nDaysPerWeek;
@@ -8658,7 +8663,7 @@ QString TimetableExport::singleSubjectsTimetableDaysVerticalHtml(int htmlLevel, 
 	for(int d=0; d<gt.rules.nDaysPerWeek; d++)
 		for(int h=0; h<gt.rules.nHoursPerDay; h++)
 			activitiesForCurrentSubject[d][h].clear();
-	foreach(int ai, gt.rules.activitiesForSubject[subject])
+	foreach(int ai, gt.rules.activitiesForSubjectList[subject])
 		if(best_solution.times[ai]!=UNALLOCATED_TIME){
 			int d=best_solution.times[ai]%gt.rules.nDaysPerWeek;
 			int h=best_solution.times[ai]/gt.rules.nDaysPerWeek;
@@ -8797,14 +8802,14 @@ QString TimetableExport::singleSubjectsTimetableTimeVerticalHtml(int htmlLevel, 
 
 			currentCount=0;
 			for(int subject=0; subject<gt.rules.nInternalSubjects && currentCount<maxSubjects; subject++){
-				currentCount++;
-				if(!excludedNames.contains(subject)){	
+				if(!excludedNames.contains(subject)){
+					currentCount++;
 					if(day+1==gt.rules.nDaysPerWeek && hour+1==gt.rules.nHoursPerDay)
 						excludedNames<<subject;	
 					QList<int> allActivities;
 					allActivities.clear();
 					
-					foreach(int ai, gt.rules.activitiesForSubject[subject])
+					foreach(int ai, gt.rules.activitiesForSubjectList[subject])
 						if(activitiesAtTime[day][hour].contains(ai)){
 							assert(!allActivities.contains(ai));
 							allActivities.append(ai);
@@ -8905,7 +8910,7 @@ QString TimetableExport::singleSubjectsTimetableTimeHorizontalHtml(int htmlLevel
 			for(int d=0; d<gt.rules.nDaysPerWeek; d++)
 				for(int h=0; h<gt.rules.nHoursPerDay; h++)
 					activitiesForCurrentSubject[d][h].clear();
-			foreach(int ai, gt.rules.activitiesForSubject[subject])
+			foreach(int ai, gt.rules.activitiesForSubjectList[subject])
 				if(best_solution.times[ai]!=UNALLOCATED_TIME){
 					int d=best_solution.times[ai]%gt.rules.nDaysPerWeek;
 					int h=best_solution.times[ai]/gt.rules.nDaysPerWeek;
@@ -9009,14 +9014,14 @@ QString TimetableExport::singleSubjectsTimetableTimeVerticalDailyHtml(int htmlLe
 
 		currentCount=0;
 		for(int subject=0; subject<gt.rules.nInternalSubjects && currentCount<maxSubjects; subject++){
-			currentCount++;
-			if(!excludedNames.contains(subject)){	
+			if(!excludedNames.contains(subject)){
+				currentCount++;
 				if(hour+1==gt.rules.nHoursPerDay)
 					excludedNames<<subject;	
 				QList<int> allActivities;
 				allActivities.clear();
 				
-				foreach(int ai, gt.rules.activitiesForSubject[subject])
+				foreach(int ai, gt.rules.activitiesForSubjectList[subject])
 					if(activitiesAtTime[day][hour].contains(ai)){
 						assert(!allActivities.contains(ai));
 						allActivities.append(ai);
@@ -9101,8 +9106,8 @@ QString TimetableExport::singleSubjectsTimetableTimeHorizontalDailyHtml(int html
 	tmpString+="      <tbody>\n";
 	int currentCount=0;
 	for(int subject=0; subject<gt.rules.nInternalSubjects && currentCount<maxSubjects; subject++){
-		currentCount++;
 		if(!excludedNames.contains(subject)){
+			currentCount++;
 			excludedNames<<subject;
 			tmpString+="        <tr>\n";
 			if(htmlLevel>=2)
@@ -9114,7 +9119,7 @@ QString TimetableExport::singleSubjectsTimetableTimeHorizontalDailyHtml(int html
 			for(int d=0; d<gt.rules.nDaysPerWeek; d++)
 				for(int h=0; h<gt.rules.nHoursPerDay; h++)
 					activitiesForCurrentSubject[d][h].clear();
-			foreach(int ai, gt.rules.activitiesForSubject[subject])
+			foreach(int ai, gt.rules.activitiesForSubjectList[subject])
 				if(best_solution.times[ai]!=UNALLOCATED_TIME){
 					int d=best_solution.times[ai]%gt.rules.nDaysPerWeek;
 					int h=best_solution.times[ai]/gt.rules.nDaysPerWeek;
