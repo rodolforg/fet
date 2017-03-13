@@ -283,6 +283,8 @@ From my80s:
 
 export as odt (OpenOffice.org) table (spreadsheet)
 
+See also TODO item #310
+
 19---------------------------------------------------------
 From Danail Traichev:
 
@@ -2628,12 +2630,16 @@ So, I recommend a new constraint like "frequency of max hours per day"
 For my example this new parameter would be 2 (5+5)
 
 180---------------------------------------------------------
-From Pietro (on forum):
+From Pietro (on forum), also by Matsumoto (on forum):
 
-I would like to suggest some improvements for the html timetables files.
-In detail, DONE since FET 5.21.0---> in "teachers_time_horizontal" it would be very nice if the teacher names was
-repeated to the right side of the plan <---DONE
-and if the border between different days was thicker.
+--> A part suggested by Pietro is DONE <--
+
+The second part, suggested by Pietro (on forum):
+
+It would be very nice if the border between different days was thicker.
+
+Or, as suggested by Matsumoto (on forum): A common point my colleagues present is that there's very little emphasis between different days
+(like on Teacher's Time table), and it'd be good to have a way to maybe add a thicker line between the different days to separate them better, is it achievable?
 
 181------DONE since FET-5.21.0 - 3 December 2013------------
 
@@ -5065,3 +5071,44 @@ From rodolforg (on forum):
 
 Constraint teacher(s) min continous gaps in window (for instance, the teachers should have 6 continuous gaps on a day, for lunch, when
 the FET time slot corresponds in reality 10 minutes).
+
+310---------------------------------------------------------
+From Matsumoto (on forum):
+
+Is LibreOffice exportation planned? Quite a lot of people I present FET to have little to no knowledge about HTML / CSS editing, so being able
+to export the timetables in LibreOffice would really help spread FET around my area.
+
+See also TODO item #18
+
+311---------------------------------------------------------
+From Matsumoto (on forum):
+
+To help see difficult days/times, FET could have a statistics that shows the amount of available teachers at every period of the timetable,
+for example, if only teachers A, B, C and D are available at the first hour of every day, I imagine it should show something like:
+
+	Day 1	Day 2 	Day 3
+Hour 1	4	4 	4
+Hour 2	6	2 	4
+
+I filled in random values for hour 2 just to have more detail
+
+This should allow the user to quickly spot times where more teachers could be needed before the generation starts. Maybe in addition to the
+number of teachers also have the names?
+
+From Volker Dirr:
+
+we can skip this dialog, since it is still too much work to check; it
+can be improved much more!
+
+add a new (locked) feature:
+"check min teachers per slots (except breaks)"
+Here a user can enter the number of classes (or: if smaller: the number
+of courses).
+
+Than in generate_pre it is always checked by default if that minimum
+number is fulfilled or not.
+
+Advantage: you don't always need to check manual
+number_of_slots_per_week every time you added/modified a constraint. You
+only need to add that number one time and it will always check
+automatically.
