@@ -1927,7 +1927,13 @@ Versions 5.31.0 - 5.31.v
 	- Fixed some typos in the German translation (reported by math user, corrected by Bob Hairgrove).
 	- Added 3 new example files from Namibia, by Bobby Wise.
 - Version 5.31.1
-	- Bug fix: when importing rooms and buildings, if some rooms were in the same building, the building was added more times. Reported by Abou, fixed
-	by Volker Dirr and Liviu Lalescu, along with other minor import things.
+	- Bug fix: when importing rooms and buildings from CSV (comma separated values) files, if some rooms were in the same building, the building was added
+	more times. Reported by Abou, fixed by Volker Dirr and Liviu Lalescu, along with other minor import things.
 	- When the user selects the filter in the all time/space constraints dialogs, the first line edit will get focus and its text will be selected,
 	for easier navigation with the keyboard. Suggested by math user.
+- Version 5.31.2
+	- Each activity tag now has an additional property, "Printable", so that you can show/hide each individual activity tag in the HTML timetables and in
+	the printout of the timetables from the interface (suggested by Malamojka, rodolforg, and math user).
+	- Minor bug fixes in the HTML timetables and in the printout of the timetables from the interface (reported by Volker Dirr and math user).
+	- Added a new example file from Russia, by Julio González Gil.
+	- Added a new anonymous example file, by Matsumoto.
