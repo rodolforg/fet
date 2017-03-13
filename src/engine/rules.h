@@ -736,6 +736,9 @@ public:
 	
 	int deactivateActivityTag(const QString& activityTagName);
 	
+	void makeActivityTagPrintable(const QString& activityTagName);
+	void makeActivityTagNotPrintable(const QString& activityTagName);
+	
 	void updateActivitiesWhenRemovingStudents(const QSet<StudentsSet*>& studentsSets, bool updateConstraints);
 	void updateGroupActivitiesInInitialOrderAfterRemoval();
 	void updateConstraintsAfterRemoval();

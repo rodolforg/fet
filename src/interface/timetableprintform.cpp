@@ -829,7 +829,13 @@ void TimetablePrintForm::updateNamesList(){
 			QString name = gt.rules.internalActivityTagsList[activityTag]->name;
 			namesList->addItem(name);
 			QListWidgetItem* tmpItem=namesList->item(activityTag);
-			tmpItem->setSelected(true);
+			if(gt.rules.internalActivityTagsList[activityTag]->printable){
+				tmpItem->setSelected(true);
+				
+			} else {
+				tmpItem->setHidden(true);	//Add and hide it (do not skip adding), because I work with the index and the index will be wrong if I don't add it.
+				//Maybe TODO: Rethink/check if I can skip adding it, if I also don't add them into the hash hashActivityTagIDsTimetable in timetableexport.cpp
+			}
 		}
 		printActivityTags->setDisabled(false);
 		printDetailedTables->setDisabled(true);

@@ -5143,6 +5143,14 @@ bool Rules::read(QWidget* parent, const QString& fileName, bool commandLine, QSt
 							activityTag->name=text;
 							xmlReadingLog+="    Read activity tag name: "+activityTag->name+"\n";
 						}
+						else if(xmlReader.name()=="Printable"){
+							QString text=xmlReader.readElementText();
+							if(text=="true")
+								activityTag->printable=true;
+							else
+								activityTag->printable=false;
+							xmlReadingLog+="    Read activity tag printable="+text+"\n";
+						}
 						else if(xmlReader.name()=="Comments"){
 							QString text=xmlReader.readElementText();
 							activityTag->comments=text;
@@ -7335,6 +7343,36 @@ int Rules::deactivateActivityTag(const QString& activityTagName)
 	setRulesModifiedAndOtherThings(this);
 	
 	return count;
+}
+
+void Rules::makeActivityTagPrintable(const QString& activityTagName)
+{
+	int i=searchActivityTag(activityTagName);
+	assert(i>=0 && i<activityTagsList.count());
+	
+	ActivityTag* at=activityTagsList[i];
+	
+	if(at->printable==false){
+		at->printable=true;
+
+		this->internalStructureComputed=false;
+		setRulesModifiedAndOtherThings(this);
+	}
+}
+
+void Rules::makeActivityTagNotPrintable(const QString& activityTagName)
+{
+	int i=searchActivityTag(activityTagName);
+	assert(i>=0 && i<activityTagsList.count());
+	
+	ActivityTag* at=activityTagsList[i];
+	
+	if(at->printable==true){
+		at->printable=false;
+
+		this->internalStructureComputed=false;
+		setRulesModifiedAndOtherThings(this);
+	}
 }
 
 TimeConstraint* Rules::readBasicCompulsoryTime(QXmlStreamReader& xmlReader, FakeString& xmlReadingLog){

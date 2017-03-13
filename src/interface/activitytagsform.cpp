@@ -64,6 +64,9 @@ ActivityTagsForm::ActivityTagsForm(QWidget* parent): QDialog(parent)
 	connect(activityTagsListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(renameActivityTag()));
 	connect(helpPushButton, SIGNAL(clicked()), this, SLOT(help()));
 
+	connect(printablePushButton, SIGNAL(clicked()), this, SLOT(printableActivityTag()));
+	connect(notPrintablePushButton, SIGNAL(clicked()), this, SLOT(notPrintableActivityTag()));
+
 	connect(commentsPushButton, SIGNAL(clicked()), this, SLOT(comments()));
 
 	centerWidgetOnScreen(this);
@@ -297,6 +300,34 @@ void ActivityTagsForm::deactivateActivityTag()
 	QString text=activityTagsListWidget->currentItem()->text();
 	int count=gt.rules.deactivateActivityTag(text);
 	QMessageBox::information(this, tr("FET information"), tr("De-activated a number of %1 activities").arg(count));
+}
+
+void ActivityTagsForm::printableActivityTag()
+{
+	if(activityTagsListWidget->currentRow()<0){
+		QMessageBox::information(this, tr("FET information"), tr("Invalid selected activity tag"));
+		return;
+	}
+
+	QString text=activityTagsListWidget->currentItem()->text();
+	
+	gt.rules.makeActivityTagPrintable(text);
+
+	activityTagChanged(activityTagsListWidget->currentRow());
+}
+
+void ActivityTagsForm::notPrintableActivityTag()
+{
+	if(activityTagsListWidget->currentRow()<0){
+		QMessageBox::information(this, tr("FET information"), tr("Invalid selected activity tag"));
+		return;
+	}
+
+	QString text=activityTagsListWidget->currentItem()->text();
+	
+	gt.rules.makeActivityTagNotPrintable(text);
+
+	activityTagChanged(activityTagsListWidget->currentRow());
 }
 
 void ActivityTagsForm::help()
