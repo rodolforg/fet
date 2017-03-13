@@ -168,7 +168,7 @@ TimetablePrintForm::TimetablePrintForm(QWidget *parent): QDialog(parent){
 		<<tr("Groups")
 		<<tr("Years")
 		<<tr("Teachers")
-		<<tr("Teachers Free Periods")
+		<<tr("Teachers' Free Periods")
 		<<tr("Rooms")
 		<<tr("Subjects")
 		<<tr("Activity Tags")

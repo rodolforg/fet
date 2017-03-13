@@ -2150,7 +2150,7 @@ void TimetableExport::writeIndexHtml(QWidget* parent, const QString& htmlfilenam
 		}
 		tos<<"        </tr>\n";
 		tos<<"        <tr>\n";
-		tos<<"          <th>"+tr("Teachers Free Periods")+"</th>\n";
+		tos<<"          <th>"+tr("Teachers' Free Periods")+"</th>\n";
 		if(WRITE_TIMETABLES_TEACHERS_FREE_PERIODS){
 			if(WRITE_TIMETABLES_DAYS_HORIZONTAL)
 				tos<<"          <td><a href=\""<<s2+bar+TEACHERS_FREE_PERIODS_TIMETABLE_DAYS_HORIZONTAL_FILENAME_HTML<<"\">"+tr("view")+"</a></td>\n";
@@ -2512,7 +2512,7 @@ void TimetableExport::writeStylesheetCss(QWidget* parent, const QString& cssfile
 		//	tos << "span.r_"<<hashRoomIDsTimetable.value(gt.rules.internalRoomsList[room]->name)<<" { /* room "<<gt.rules.internalRoomsList[room]->name<<" */\n\n}\n\n";
 		//}
 	}
-	tos<<"/* "<<TimetableExport::tr("Style the teachers free periods")<<" */\n\n";
+	tos<<"/* "<<TimetableExport::tr("Style the teachers' free periods")<<" */\n\n";
 	if(TIMETABLE_HTML_LEVEL>=2){
 		tos<<"div.DESCRIPTION {\n  text-align: left;\n  font-size: smaller;\n}\n\n";
 	}

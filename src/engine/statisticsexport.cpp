@@ -1491,7 +1491,7 @@ QString StatisticsExport::exportStatisticsStudentsTeachersHtml(QWidget* parent, 
 	QString tmp;
 	tmp+="    <table border=\"1\">\n";	
 	tmp+="      <caption>"+protect2(gt.rules.institutionName)+"</caption>\n";
-	tmp+="      <thead>\n        <tr><td rowspan=\"2\"></td><th colspan=\""+QString::number(colspan+1)+"\">"+tr("Students -Teachers Matrix")+"</th></tr>\n";
+	tmp+="      <thead>\n        <tr><td rowspan=\"2\"></td><th colspan=\""+QString::number(colspan+1)+"\">"+tr("Students - Teachers Matrix")+"</th></tr>\n";
 	tmp+="        <tr>\n          <!-- span -->\n";
 	int currentCount=0;
 	for(int students=0; students<statisticValues.allStudentsNames.count() && currentCount<maxNames; students++){
@@ -2040,7 +2040,7 @@ QString StatisticsExport::exportStatisticsStudentsSubjectsHtml(QWidget* parent, 
 	QString tmp;
 	tmp+="    <table border=\"1\">\n";	
 	tmp+="      <caption>"+protect2(gt.rules.institutionName)+"</caption>\n";
-	tmp+="      <thead>\n        <tr><td rowspan=\"2\"></td><th colspan=\""+QString::number(colspan+1)+"\">"+tr("Students -Subjects Matrix")+"</th></tr>\n";
+	tmp+="      <thead>\n        <tr><td rowspan=\"2\"></td><th colspan=\""+QString::number(colspan+1)+"\">"+tr("Students - Subjects Matrix")+"</th></tr>\n";
 	tmp+="        <tr>\n          <!-- span -->\n";
 	int currentCount=0;
 	for(int students=0; students<statisticValues.allStudentsNames.count() && currentCount<maxNames; students++){
