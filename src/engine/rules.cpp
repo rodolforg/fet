@@ -589,6 +589,16 @@ bool Rules::computeInternalStructure(QWidget* parent)
 					activitiesForActivityTagSet[activityTagInt].insert(ai);
 				}
 	}
+
+	//for activities without students or teachers
+	for(int ai=0; ai<nInternalActivities; ai++){
+		foreach(int ati, internalActivitiesList[ai].iActivityTagsSet){
+			if(!activitiesForActivityTagSet[ati].contains(ai)){
+				activitiesForActivityTagList[ati].append(ai);
+				activitiesForActivityTagSet[ati].insert(ai);
+			}
+		}
+	}
 	/////////////////////////////////////////////////////////////////
 
 	bool ok=true;
