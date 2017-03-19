@@ -66,8 +66,7 @@ void ConstraintBaseDialog::filterChanged()
 {
 	this->visibleConstraintsList.clear();
 	constraintsListWidget->clear();
-	for(int i=0; i<gt.rules.timeConstraintsList.size(); i++){
-		TimeConstraint* ctr=gt.rules.timeConstraintsList[i];
+	foreach (TimeConstraint *ctr, gt.rules.timeConstraintsList){
 		if(filterOk(ctr)){
 			QString s=ctr->getDescription(gt.rules);
 			visibleConstraintsList.append(ctr);
