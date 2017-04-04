@@ -28,7 +28,7 @@ ModifyConstraintActivityPreferredRoomForm::ModifyConstraintActivityPreferredRoom
 
 	okPushButton->setDefault(true);
 
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
 
 	centerWidgetOnScreen(this);
@@ -84,11 +84,6 @@ void ModifyConstraintActivityPreferredRoomForm::updateRoomsComboBox()
 	}
 	assert(j>=0);
 	roomsComboBox->setCurrentIndex(j);
-}
-
-void ModifyConstraintActivityPreferredRoomForm::cancel()
-{
-	this->close();
 }
 
 void ModifyConstraintActivityPreferredRoomForm::ok()

@@ -27,7 +27,7 @@ ModifyConstraintTeachersMaxBuildingChangesPerWeekForm::ModifyConstraintTeachersM
 	okPushButton->setDefault(true);
 
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
@@ -69,10 +69,5 @@ void ModifyConstraintTeachersMaxBuildingChangesPerWeekForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 	
-	this->close();
-}
-
-void ModifyConstraintTeachersMaxBuildingChangesPerWeekForm::cancel()
-{
 	this->close();
 }

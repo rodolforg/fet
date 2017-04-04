@@ -26,7 +26,7 @@ ModifyConstraintActivitiesEndStudentsDayForm::ModifyConstraintActivitiesEndStude
 
 	okPushButton->setDefault(true);
 
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
 
 	centerWidgetOnScreen(this);
@@ -191,10 +191,5 @@ void ModifyConstraintActivitiesEndStudentsDayForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 	
-	this->close();
-}
-
-void ModifyConstraintActivitiesEndStudentsDayForm::cancel()
-{
 	this->close();
 }

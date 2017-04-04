@@ -43,7 +43,6 @@ public slots:
 	void clear();
 
 	void ok();
-	void cancel();
 	
 private:
 	ConstraintActivitiesNotOverlapping* _ctr;

@@ -27,7 +27,7 @@ ModifyConstraintActivityPreferredTimeSlotsForm::ModifyConstraintActivityPreferre
 	okPushButton->setDefault(true);
 
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 	connect(teachersComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
 	connect(studentsComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
 	connect(subjectsComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
@@ -189,11 +189,6 @@ void ModifyConstraintActivityPreferredTimeSlotsForm::updateActivitiesComboBox(){
 	}
 	//assert(j>=0); only first time
 	activitiesComboBox->setCurrentIndex(j);
-}
-
-void ModifyConstraintActivityPreferredTimeSlotsForm::cancel()
-{
-	this->close();
 }
 
 void ModifyConstraintActivityPreferredTimeSlotsForm::ok()

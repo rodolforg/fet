@@ -46,7 +46,6 @@ public slots:
 	void clear();
 
 	void ok();
-	void cancel();
 
 private:
 	ConstraintActivitiesOccupyMaxDifferentRooms* _ctr;

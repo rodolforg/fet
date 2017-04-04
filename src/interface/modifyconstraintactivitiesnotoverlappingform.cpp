@@ -33,7 +33,7 @@ ModifyConstraintActivitiesNotOverlappingForm::ModifyConstraintActivitiesNotOverl
 	activitiesListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
 	notOverlappingActivitiesListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
 
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
 	connect(activitiesListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(addActivity()));
 	connect(addAllActivitiesPushButton, SIGNAL(clicked()), this, SLOT(addAllActivities()));
@@ -215,11 +215,6 @@ void ModifyConstraintActivitiesNotOverlappingForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 	
-	this->close();
-}
-
-void ModifyConstraintActivitiesNotOverlappingForm::cancel()
-{
 	this->close();
 }
 

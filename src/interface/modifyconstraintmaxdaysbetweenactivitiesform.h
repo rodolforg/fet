@@ -42,7 +42,6 @@ public slots:
 	void clear();
 
 	void ok();
-	void cancel();
 	
 	void filterChanged();
 

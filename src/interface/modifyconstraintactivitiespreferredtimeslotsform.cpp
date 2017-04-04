@@ -36,7 +36,7 @@ ModifyConstraintActivitiesPreferredTimeSlotsForm::ModifyConstraintActivitiesPref
 
 	okPushButton->setDefault(true);
 
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
 	connect(setAllAllowedPushButton, SIGNAL(clicked()), this, SLOT(setAllSlotsAllowed()));
 	connect(setAllNotAllowedPushButton, SIGNAL(clicked()), this, SLOT(setAllSlotsNotAllowed()));
@@ -307,11 +307,6 @@ void ModifyConstraintActivitiesPreferredTimeSlotsForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 	
-	this->close();
-}
-
-void ModifyConstraintActivitiesPreferredTimeSlotsForm::cancel()
-{
 	this->close();
 }
 

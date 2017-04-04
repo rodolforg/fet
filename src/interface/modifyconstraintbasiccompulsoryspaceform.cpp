@@ -27,7 +27,7 @@ ModifyConstraintBasicCompulsorySpaceForm::ModifyConstraintBasicCompulsorySpaceFo
 	okPushButton->setDefault(true);
 
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
@@ -68,10 +68,5 @@ void ModifyConstraintBasicCompulsorySpaceForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 
-	this->close();
-}
-
-void ModifyConstraintBasicCompulsorySpaceForm::cancel()
-{
 	this->close();
 }

@@ -26,7 +26,7 @@ ModifyConstraintTeacherHomeRoomForm::ModifyConstraintTeacherHomeRoomForm(QWidget
 
 	okPushButton->setDefault(true);
 
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
 
 	centerWidgetOnScreen(this);
@@ -77,11 +77,6 @@ void ModifyConstraintTeacherHomeRoomForm::updateRoomsComboBox()
 	}
 	assert(j>=0);
 	roomsComboBox->setCurrentIndex(j);
-}
-
-void ModifyConstraintTeacherHomeRoomForm::cancel()
-{
-	this->close();
 }
 
 void ModifyConstraintTeacherHomeRoomForm::ok()

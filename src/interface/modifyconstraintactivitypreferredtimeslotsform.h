@@ -43,7 +43,6 @@ public slots:
 	void filterChanged();
 	
 	void ok();
-	void cancel();
 	
 	void setAllSlotsAllowed();
 	void setAllSlotsNotAllowed();

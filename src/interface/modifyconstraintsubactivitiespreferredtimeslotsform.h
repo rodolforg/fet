@@ -39,7 +39,6 @@ public:
 
 public slots:
 	void ok();
-	void cancel();
 	
 	void setAllSlotsAllowed();
 	void setAllSlotsNotAllowed();

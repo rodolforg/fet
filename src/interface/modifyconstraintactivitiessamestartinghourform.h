@@ -45,7 +45,6 @@ public slots:
 	void removeActivity();
 
 	void ok();
-	void cancel();
 	
 private:
 	ConstraintActivitiesSameStartingHour* _ctr;
