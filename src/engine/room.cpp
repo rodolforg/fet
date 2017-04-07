@@ -18,6 +18,9 @@
 #include "room.h"
 #include "rules.h"
 
+#include <iostream>
+using namespace std;
+
 Room::Room()
 {
 	this->capacity=MAX_ROOM_CAPACITY;
@@ -34,7 +37,7 @@ void Room::computeInternalStructure(Rules& r)
 	if(building=="")
 		buildingIndex=-1;
 	else{
-		buildingIndex=r.searchBuilding(building);
+		buildingIndex=r.buildingsHash.value(building, -1);
 		assert(buildingIndex>=0 && buildingIndex<r.nInternalBuildings);
 	}
 }
