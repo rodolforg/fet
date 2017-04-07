@@ -1934,6 +1934,9 @@ Versions 5.31.0 - 5.31.v
 - Version 5.31.2
 	- Each activity tag now has an additional property, "Printable", so that you can show/hide each individual activity tag in the HTML timetables and in
 	the printout of the timetables from the interface (suggested by Malamojka, rodolforg, and math user).
-	- Minor bug fixes in the HTML timetables and in the printout of the timetables from the interface (reported by Volker Dirr and math user).
+	- Bug fixes in the HTML timetables and in the printout of the timetables from the interface (reported by Volker Dirr and math user).
 	- Added a new example file from Russia, by Julio González Gil.
 	- Added a new anonymous example file, by Matsumoto.
+- Version 5.31.3
+	- Speed improvement in the precomputation if using many rooms and many buildings.
+	- Updated the Arabic translation, by Benahmed Abdelkrim. It is now complete.
