@@ -5112,3 +5112,26 @@ Advantage: you don't always need to check manual
 number_of_slots_per_week every time you added/modified a constraint. You
 only need to add that number one time and it will always check
 automatically.
+
+312---------------------------------------------------------
+From Vangelis Karafillidis:
+
+New constraints:
+
+Teacher(s) max span per week;
+Teacher(s) min span per day;
+Teacher(s) min span per week;
+Teacher(s) min gaps per day;
+Teacher(s) min gaps per week;
+A set of activities has min common time slots with another set of activities.
+
+Min simultaneous activities from a set.
+
+A set of activities occupies MIN time slots from a selection.
+
+313---------------------------------------------------------
+From Silver (on forum):
+
+I suggest you add the split and duration in subject window, why we add the split and duration when we add activity for 1st teacher, and for 2nd teacher ... .
+With this suggestion, we add the splits and duration 1 time for the subject.
+Exmple: Physics1 have 2 split in the week, so why I add this info in every activity for Physics1?!
