@@ -97,38 +97,23 @@ void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::updateTeachersComboBox
 }
 
 void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::updateStudentsComboBox(QWidget* parent){
-	int i=0, j=-1;
 	studentsComboBox->clear();
 	studentsComboBox->addItem("");
-	if(this->_ctr->p_studentsName=="")
-		j=i;
-	i++;
 	for(int m=0; m<gt.rules.yearsList.size(); m++){
 		StudentsYear* sty=gt.rules.yearsList[m];
 		studentsComboBox->addItem(sty->name);
-		if(sty->name==this->_ctr->p_studentsName)
-			j=i;
-		i++;
 		for(int n=0; n<sty->groupsList.size(); n++){
 			StudentsGroup* stg=sty->groupsList[n];
 			studentsComboBox->addItem(stg->name);
-			if(stg->name==this->_ctr->p_studentsName)
-				j=i;
-			i++;
 			if(SHOW_SUBGROUPS_IN_COMBO_BOXES) for(int p=0; p<stg->subgroupsList.size(); p++){
 				StudentsSubgroup* sts=stg->subgroupsList[p];
 				studentsComboBox->addItem(sts->name);
-				if(sts->name==this->_ctr->p_studentsName)
-					j=i;
-				i++;
 			}
 		}
 	}
-	if(j<0)
+	if (studentsComboBox->findText(this->_ctr->p_studentsName) < 0)
 		showWarningForInvisibleSubgroupConstraint(parent, this->_ctr->p_studentsName);
-	else
-		assert(j>=0);
-	studentsComboBox->setCurrentIndex(j);
+	studentsComboBox->setCurrentText(this->_ctr->p_studentsName);
 }
 
 void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::updateSubjectsComboBox(){
