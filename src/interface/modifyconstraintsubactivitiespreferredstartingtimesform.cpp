@@ -140,21 +140,13 @@ void ModifyConstraintSubactivitiesPreferredStartingTimesForm::updateStudentsComb
 }
 
 void ModifyConstraintSubactivitiesPreferredStartingTimesForm::updateSubjectsComboBox(){
-	int i=0, j=-1;
 	subjectsComboBox->clear();
 	subjectsComboBox->addItem("");
-	if(this->_ctr->subjectName=="")
-		j=i;
-	i++;
-	for(int k=0; k<gt.rules.subjectsList.size(); k++){
-		Subject* s=gt.rules.subjectsList[k];
+	for(int i=0; i<gt.rules.subjectsList.size(); i++){
+		Subject* s=gt.rules.subjectsList[i];
 		subjectsComboBox->addItem(s->name);
-		if(s->name==this->_ctr->subjectName)
-			j=i;
-		i++;
 	}
-	assert(j>=0);
-	subjectsComboBox->setCurrentIndex(j);
+	subjectsComboBox->setCurrentText(this->_ctr->subjectName);
 }
 
 void ModifyConstraintSubactivitiesPreferredStartingTimesForm::updateActivityTagsComboBox(){
