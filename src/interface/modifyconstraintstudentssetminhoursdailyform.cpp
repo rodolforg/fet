@@ -48,7 +48,7 @@ ModifyConstraintStudentsSetMinHoursDailyForm::ModifyConstraintStudentsSetMinHour
 	else
 		allowLabel->setText(tr("Advanced usage: not enabled"));
 	
-	updateStudentsComboBox(parent);
+	updateStudentsComboBox();
 
 	minHoursSpinBox->setMinimum(1);
 	minHoursSpinBox->setMaximum(gt.rules.nHoursPerDay);
@@ -60,7 +60,7 @@ ModifyConstraintStudentsSetMinHoursDailyForm::~ModifyConstraintStudentsSetMinHou
 	saveFETDialogGeometry(this);
 }
 
-void ModifyConstraintStudentsSetMinHoursDailyForm::updateStudentsComboBox(QWidget* parent){
+void ModifyConstraintStudentsSetMinHoursDailyForm::updateStudentsComboBox(){
 	studentsComboBox->clear();
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];
@@ -75,7 +75,7 @@ void ModifyConstraintStudentsSetMinHoursDailyForm::updateStudentsComboBox(QWidge
 		}
 	}
 	if (studentsComboBox->findText(this->_ctr->students) < 0)
-		showWarningForInvisibleSubgroupConstraint(parent, this->_ctr->students);
+		showWarningForInvisibleSubgroupConstraint(this, this->_ctr->students);
 	studentsComboBox->setCurrentText(this->_ctr->students);
 }
 

@@ -39,7 +39,7 @@ ModifyConstraintStudentsSetMinGapsBetweenBuildingChangesForm::ModifyConstraintSt
 	
 	weightLineEdit->setText(CustomFETString::number(ctr->weightPercentage));
 	
-	updateStudentsComboBox(parent);
+	updateStudentsComboBox();
 
 	minGapsSpinBox->setMinimum(1);
 	minGapsSpinBox->setMaximum(gt.rules.nHoursPerDay);
@@ -51,7 +51,7 @@ ModifyConstraintStudentsSetMinGapsBetweenBuildingChangesForm::~ModifyConstraintS
 	saveFETDialogGeometry(this);
 }
 
-void ModifyConstraintStudentsSetMinGapsBetweenBuildingChangesForm::updateStudentsComboBox(QWidget* parent){
+void ModifyConstraintStudentsSetMinGapsBetweenBuildingChangesForm::updateStudentsComboBox(){
 	studentsComboBox->clear();
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];
@@ -66,7 +66,7 @@ void ModifyConstraintStudentsSetMinGapsBetweenBuildingChangesForm::updateStudent
 		}
 	}
 	if (studentsComboBox->findText(this->_ctr->studentsName) < 0)
-		showWarningForInvisibleSubgroupConstraint(parent, this->_ctr->studentsName);
+		showWarningForInvisibleSubgroupConstraint(this, this->_ctr->studentsName);
 	studentsComboBox->setCurrentText(this->_ctr->studentsName);
 }
 

@@ -31,7 +31,7 @@ public:
 	ModifyConstraintStudentsSetMinRestingHoursForm(QWidget* parent, ConstraintStudentsSetMinRestingHours* ctr);
 	~ModifyConstraintStudentsSetMinRestingHoursForm();
 
-	void updateStudentsComboBox(QWidget* parent);
+	void updateStudentsComboBox();
 
 public slots:
 	void ok();

@@ -39,7 +39,7 @@ ModifyConstraintStudentsSetMaxHoursDailyForm::ModifyConstraintStudentsSetMaxHour
 
 	weightLineEdit->setText(CustomFETString::number(ctr->weightPercentage));
 	
-	updateStudentsComboBox(parent);
+	updateStudentsComboBox();
 
 	maxHoursSpinBox->setMinimum(1);
 	maxHoursSpinBox->setMaximum(gt.rules.nHoursPerDay);
@@ -51,7 +51,7 @@ ModifyConstraintStudentsSetMaxHoursDailyForm::~ModifyConstraintStudentsSetMaxHou
 	saveFETDialogGeometry(this);
 }
 
-void ModifyConstraintStudentsSetMaxHoursDailyForm::updateStudentsComboBox(QWidget* parent){
+void ModifyConstraintStudentsSetMaxHoursDailyForm::updateStudentsComboBox(){
 	studentsComboBox->clear();
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];
@@ -66,7 +66,7 @@ void ModifyConstraintStudentsSetMaxHoursDailyForm::updateStudentsComboBox(QWidge
 		}
 	}
 	if (studentsComboBox->findText(this->_ctr->students) < 0)
-		showWarningForInvisibleSubgroupConstraint(parent, this->_ctr->students);
+		showWarningForInvisibleSubgroupConstraint(this, this->_ctr->students);
 	studentsComboBox->setCurrentText(this->_ctr->students);
 }
 

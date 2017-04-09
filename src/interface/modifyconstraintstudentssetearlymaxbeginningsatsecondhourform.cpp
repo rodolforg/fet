@@ -63,7 +63,7 @@ ModifyConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm::ModifyConstraintS
 		}
 	}
 	if(j<0)
-		showWarningForInvisibleSubgroupConstraint(parent, this->_ctr->students);
+		showWarningForInvisibleSubgroupConstraint(this, this->_ctr->students);
 	else
 		assert(j>=0);
 	studentsComboBox->setCurrentIndex(j);

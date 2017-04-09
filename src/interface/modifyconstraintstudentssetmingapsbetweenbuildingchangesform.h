@@ -31,7 +31,7 @@ public:
 	ModifyConstraintStudentsSetMinGapsBetweenBuildingChangesForm(QWidget* parent, ConstraintStudentsSetMinGapsBetweenBuildingChanges* ctr);
 	~ModifyConstraintStudentsSetMinGapsBetweenBuildingChangesForm();
 
-	void updateStudentsComboBox(QWidget* parent);
+	void updateStudentsComboBox();
 
 public slots:
 	void ok();

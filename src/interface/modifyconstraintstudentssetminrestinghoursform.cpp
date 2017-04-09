@@ -45,7 +45,7 @@ ModifyConstraintStudentsSetMinRestingHoursForm::ModifyConstraintStudentsSetMinRe
 	minRestingHoursSpinBox->setMaximum(gt.rules.nHoursPerDay);
 	minRestingHoursSpinBox->setValue(ctr->minRestingHours);
 	
-	updateStudentsComboBox(parent);
+	updateStudentsComboBox();
 }
 
 ModifyConstraintStudentsSetMinRestingHoursForm::~ModifyConstraintStudentsSetMinRestingHoursForm()
@@ -53,7 +53,7 @@ ModifyConstraintStudentsSetMinRestingHoursForm::~ModifyConstraintStudentsSetMinR
 	saveFETDialogGeometry(this);
 }
 
-void ModifyConstraintStudentsSetMinRestingHoursForm::updateStudentsComboBox(QWidget* parent){
+void ModifyConstraintStudentsSetMinRestingHoursForm::updateStudentsComboBox(){
 	studentsComboBox->clear();
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];
@@ -68,7 +68,7 @@ void ModifyConstraintStudentsSetMinRestingHoursForm::updateStudentsComboBox(QWid
 		}
 	}
 	if (studentsComboBox->findText(this->_ctr->students) < 0)
-		showWarningForInvisibleSubgroupConstraint(parent, this->_ctr->students);
+		showWarningForInvisibleSubgroupConstraint(this, this->_ctr->students);
 	studentsComboBox->setCurrentText(this->_ctr->students);
 }
 

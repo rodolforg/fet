@@ -31,7 +31,7 @@ public:
 	ModifyConstraintStudentsSetMaxSpanPerDayForm(QWidget* parent, ConstraintStudentsSetMaxSpanPerDay* ctr);
 	~ModifyConstraintStudentsSetMaxSpanPerDayForm();
 
-	void updateStudentsComboBox(QWidget* parent);
+	void updateStudentsComboBox();
 
 public slots:
 	void ok();

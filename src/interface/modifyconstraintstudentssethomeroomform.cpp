@@ -42,7 +42,7 @@ ModifyConstraintStudentsSetHomeRoomForm::ModifyConstraintStudentsSetHomeRoomForm
 	
 	weightLineEdit->setText(CustomFETString::number(ctr->weightPercentage));
 
-	updateStudentsComboBox(parent);
+	updateStudentsComboBox();
 	updateRoomsComboBox();
 }
 
@@ -51,7 +51,7 @@ ModifyConstraintStudentsSetHomeRoomForm::~ModifyConstraintStudentsSetHomeRoomFor
 	saveFETDialogGeometry(this);
 }
 
-void ModifyConstraintStudentsSetHomeRoomForm::updateStudentsComboBox(QWidget* parent){
+void ModifyConstraintStudentsSetHomeRoomForm::updateStudentsComboBox(){
 	studentsComboBox->clear();
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];
@@ -66,7 +66,7 @@ void ModifyConstraintStudentsSetHomeRoomForm::updateStudentsComboBox(QWidget* pa
 		}
 	}
 	if (studentsComboBox->findText(this->_ctr->studentsName) < 0)
-		showWarningForInvisibleSubgroupConstraint(parent, this->_ctr->studentsName);
+		showWarningForInvisibleSubgroupConstraint(this, this->_ctr->studentsName);
 	studentsComboBox->setCurrentText(this->_ctr->studentsName);
 }
 

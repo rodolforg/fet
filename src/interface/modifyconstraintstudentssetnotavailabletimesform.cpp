@@ -41,7 +41,7 @@ ModifyConstraintStudentsSetNotAvailableTimesForm::ModifyConstraintStudentsSetNot
 	
 	weightLineEdit->setText(CustomFETString::number(ctr->weightPercentage));
 	
-	updateStudentsComboBox(parent);
+	updateStudentsComboBox();
 
 	notAllowedTimesTable->setHeaders(gt.rules);
 
@@ -71,7 +71,7 @@ void ModifyConstraintStudentsSetNotAvailableTimesForm::setAllNotAvailable()
 	notAllowedTimesTable->setAllMarked();
 }
 
-void ModifyConstraintStudentsSetNotAvailableTimesForm::updateStudentsComboBox(QWidget* parent){
+void ModifyConstraintStudentsSetNotAvailableTimesForm::updateStudentsComboBox(){
 	studentsComboBox->clear();
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];
@@ -86,7 +86,7 @@ void ModifyConstraintStudentsSetNotAvailableTimesForm::updateStudentsComboBox(QW
 		}
 	}
 	if (studentsComboBox->findText(this->_ctr->students) < 0)
-		showWarningForInvisibleSubgroupConstraint(parent, this->_ctr->students);
+		showWarningForInvisibleSubgroupConstraint(this, this->_ctr->students);
 	studentsComboBox->setCurrentText(this->_ctr->students);
 }
 

@@ -31,7 +31,7 @@ public:
 	ModifyConstraintStudentsSetActivityTagMaxHoursDailyForm(QWidget* parent, ConstraintStudentsSetActivityTagMaxHoursDaily* ctr);
 	~ModifyConstraintStudentsSetActivityTagMaxHoursDailyForm();
 
-	void updateStudentsComboBox(QWidget* parent);
+	void updateStudentsComboBox();
 	void updateActivityTagsComboBox();
 
 public slots:

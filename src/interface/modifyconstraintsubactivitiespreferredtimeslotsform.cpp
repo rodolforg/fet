@@ -46,7 +46,7 @@ ModifyConstraintSubactivitiesPreferredTimeSlotsForm::ModifyConstraintSubactiviti
 	this->_ctr=ctr;
 
 	updateTeachersComboBox();
-	updateStudentsComboBox(parent);
+	updateStudentsComboBox();
 	updateSubjectsComboBox();
 	updateActivityTagsComboBox();
 	
@@ -96,7 +96,7 @@ void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::updateTeachersComboBox
 	teachersComboBox->setCurrentText(this->_ctr->p_teacherName);
 }
 
-void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::updateStudentsComboBox(QWidget* parent){
+void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::updateStudentsComboBox(){
 	studentsComboBox->clear();
 	studentsComboBox->addItem("");
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
@@ -112,7 +112,7 @@ void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::updateStudentsComboBox
 		}
 	}
 	if (studentsComboBox->findText(this->_ctr->p_studentsName) < 0)
-		showWarningForInvisibleSubgroupConstraint(parent, this->_ctr->p_studentsName);
+		showWarningForInvisibleSubgroupConstraint(this, this->_ctr->p_studentsName);
 	studentsComboBox->setCurrentText(this->_ctr->p_studentsName);
 }
 

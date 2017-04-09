@@ -44,7 +44,7 @@ ModifyConstraintStudentsSetMaxSpanPerDayForm::ModifyConstraintStudentsSetMaxSpan
 	maxSpanSpinBox->setMaximum(gt.rules.nHoursPerDay);
 	maxSpanSpinBox->setValue(ctr->maxSpanPerDay);
 	
-	updateStudentsComboBox(parent);
+	updateStudentsComboBox();
 }
 
 ModifyConstraintStudentsSetMaxSpanPerDayForm::~ModifyConstraintStudentsSetMaxSpanPerDayForm()
@@ -52,7 +52,7 @@ ModifyConstraintStudentsSetMaxSpanPerDayForm::~ModifyConstraintStudentsSetMaxSpa
 	saveFETDialogGeometry(this);
 }
 
-void ModifyConstraintStudentsSetMaxSpanPerDayForm::updateStudentsComboBox(QWidget* parent){
+void ModifyConstraintStudentsSetMaxSpanPerDayForm::updateStudentsComboBox(){
 	studentsComboBox->clear();
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];
@@ -67,7 +67,7 @@ void ModifyConstraintStudentsSetMaxSpanPerDayForm::updateStudentsComboBox(QWidge
 		}
 	}
 	if (studentsComboBox->findText(this->_ctr->students) < 0)
-		showWarningForInvisibleSubgroupConstraint(parent, this->_ctr->students);
+		showWarningForInvisibleSubgroupConstraint(this, this->_ctr->students);
 	studentsComboBox->setCurrentText(this->_ctr->students);
 }
 

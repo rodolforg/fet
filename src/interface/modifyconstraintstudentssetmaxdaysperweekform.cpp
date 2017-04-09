@@ -40,7 +40,7 @@ ModifyConstraintStudentsSetMaxDaysPerWeekForm::ModifyConstraintStudentsSetMaxDay
 	weightLineEdit->setText(CustomFETString::number(ctr->weightPercentage));
 	
 	updateMaxDaysSpinBox();
-	updateStudentsComboBox(parent);
+	updateStudentsComboBox();
 	
 	maxDaysSpinBox->setValue(ctr->maxDaysPerWeek);
 }
@@ -50,7 +50,7 @@ ModifyConstraintStudentsSetMaxDaysPerWeekForm::~ModifyConstraintStudentsSetMaxDa
 	saveFETDialogGeometry(this);
 }
 
-void ModifyConstraintStudentsSetMaxDaysPerWeekForm::updateStudentsComboBox(QWidget* parent){
+void ModifyConstraintStudentsSetMaxDaysPerWeekForm::updateStudentsComboBox(){
 	studentsComboBox->clear();
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
 		StudentsYear* sty=gt.rules.yearsList[i];
@@ -65,7 +65,7 @@ void ModifyConstraintStudentsSetMaxDaysPerWeekForm::updateStudentsComboBox(QWidg
 		}
 	}
 	if (studentsComboBox->findText(this->_ctr->students) < 0)
-		showWarningForInvisibleSubgroupConstraint(parent, this->_ctr->students);
+		showWarningForInvisibleSubgroupConstraint(this, this->_ctr->students);
 	studentsComboBox->setCurrentText(this->_ctr->students);
 }
 

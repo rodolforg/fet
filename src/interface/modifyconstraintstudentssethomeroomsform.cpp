@@ -73,7 +73,7 @@ ModifyConstraintStudentsSetHomeRoomsForm::ModifyConstraintStudentsSetHomeRoomsFo
 		}
 	}
 	if(j<0)
-		showWarningForInvisibleSubgroupConstraint(parent, this->_ctr->studentsName);
+		showWarningForInvisibleSubgroupConstraint(this, this->_ctr->studentsName);
 	else
 		assert(j>=0);
 	studentsComboBox->setCurrentIndex(j);
