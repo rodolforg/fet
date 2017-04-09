@@ -52,15 +52,11 @@ ModifyConstraintTeacherMinDaysPerWeekForm::~ModifyConstraintTeacherMinDaysPerWee
 
 void ModifyConstraintTeacherMinDaysPerWeekForm::updateTeachersComboBox(){
 	teachersComboBox->clear();
-	int i=0, j=-1;
-	for(int k=0; k<gt.rules.teachersList.size(); k++, i++){
-		Teacher* tch=gt.rules.teachersList[k];
-		teachersComboBox->addItem(tch->name);
-		if(tch->name==this->_ctr->teacherName)
-			j=i;
+	for(int i=0; i<gt.rules.teachersList.size(); i++){
+		Teacher* t=gt.rules.teachersList[i];
+		teachersComboBox->addItem(t->name);
 	}
-	assert(j>=0);
-	teachersComboBox->setCurrentIndex(j);
+	teachersComboBox->setCurrentText(this->_ctr->teacherName);
 }
 
 void ModifyConstraintTeacherMinDaysPerWeekForm::updateMinDaysSpinBox(){

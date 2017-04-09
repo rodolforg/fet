@@ -87,21 +87,13 @@ void ModifyConstraintSubactivitiesPreferredStartingTimesForm::setAllSlotsNotAllo
 }
 
 void ModifyConstraintSubactivitiesPreferredStartingTimesForm::updateTeachersComboBox(){
-	int i=0, j=-1;
 	teachersComboBox->clear();
 	teachersComboBox->addItem("");
-	if(this->_ctr->teacherName=="")
-		j=i;
-	i++;
-	for(int k=0; k<gt.rules.teachersList.size(); k++){
-		Teacher* t=gt.rules.teachersList[k];
+	for(int i=0; i<gt.rules.teachersList.size(); i++){
+		Teacher* t=gt.rules.teachersList[i];
 		teachersComboBox->addItem(t->name);
-		if(t->name==this->_ctr->teacherName)
-			j=i;
-		i++;
 	}
-	assert(j>=0);
-	teachersComboBox->setCurrentIndex(j);
+	teachersComboBox->setCurrentText(this->_ctr->teacherName);
 }
 
 void ModifyConstraintSubactivitiesPreferredStartingTimesForm::updateStudentsComboBox(QWidget* parent){
