@@ -66,17 +66,12 @@ void ModifyConstraintSubjectActivityTagPreferredRoomForm::updateSubjectsComboBox
 
 void ModifyConstraintSubjectActivityTagPreferredRoomForm::updateActivityTagsComboBox()
 {
-	int i=0, j=-1;
 	activityTagsComboBox->clear();
-	for(int k=0; k<gt.rules.activityTagsList.size(); k++){
-		ActivityTag* sb=gt.rules.activityTagsList[k];
-		activityTagsComboBox->addItem(sb->name);
-		if(sb->name==this->_ctr->activityTagName)
-			j=i;
-		i++;
+	for(int i=0; i<gt.rules.activityTagsList.size(); i++){
+		ActivityTag* s=gt.rules.activityTagsList[i];
+		activityTagsComboBox->addItem(s->name);
 	}
-	assert(j>=0);
-	activityTagsComboBox->setCurrentIndex(j);
+	activityTagsComboBox->setCurrentText(this->_ctr->activityTagName);
 }
 
 void ModifyConstraintSubjectActivityTagPreferredRoomForm::updateRoomsComboBox()

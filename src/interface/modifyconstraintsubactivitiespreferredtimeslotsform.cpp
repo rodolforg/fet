@@ -150,21 +150,13 @@ void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::updateSubjectsComboBox
 }
 
 void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::updateActivityTagsComboBox(){
-	int i=0, j=-1;
 	activityTagsComboBox->clear();
 	activityTagsComboBox->addItem("");
-	if(this->_ctr->p_activityTagName=="")
-		j=i;
-	i++;
-	for(int k=0; k<gt.rules.activityTagsList.size(); k++){
-		ActivityTag* s=gt.rules.activityTagsList[k];
+	for(int i=0; i<gt.rules.activityTagsList.size(); i++){
+		ActivityTag* s=gt.rules.activityTagsList[i];
 		activityTagsComboBox->addItem(s->name);
-		if(s->name==this->_ctr->p_activityTagName)
-			j=i;
-		i++;
 	}
-	assert(j>=0);
-	activityTagsComboBox->setCurrentIndex(j);
+	activityTagsComboBox->setCurrentText(this->_ctr->p_activityTagName);
 }
 
 void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::ok()

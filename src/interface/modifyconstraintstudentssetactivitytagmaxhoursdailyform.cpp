@@ -92,15 +92,11 @@ void ModifyConstraintStudentsSetActivityTagMaxHoursDailyForm::updateStudentsComb
 void ModifyConstraintStudentsSetActivityTagMaxHoursDailyForm::updateActivityTagsComboBox()
 {
 	activityTagsComboBox->clear();
-	int j=-1;
-	for(int i=0; i<gt.rules.activityTagsList.count(); i++){
-		ActivityTag* at=gt.rules.activityTagsList.at(i);
-		activityTagsComboBox->addItem(at->name);
-		if(at->name==this->_ctr->activityTagName)
-			j=i;
+	for(int i=0; i<gt.rules.activityTagsList.size(); i++){
+		ActivityTag* s=gt.rules.activityTagsList[i];
+		activityTagsComboBox->addItem(s->name);
 	}
-	assert(j>=0);
-	activityTagsComboBox->setCurrentIndex(j);
+	activityTagsComboBox->setCurrentText(this->_ctr->activityTagName);
 
 	constraintChanged();
 }
