@@ -46,10 +46,6 @@ ModifyConstraintStudentsMaxHoursDailyForm::~ModifyConstraintStudentsMaxHoursDail
 	saveFETDialogGeometry(this);
 }
 
-void ModifyConstraintStudentsMaxHoursDailyForm::constraintChanged()
-{
-}
-
 void ModifyConstraintStudentsMaxHoursDailyForm::ok()
 {
 	double weight;

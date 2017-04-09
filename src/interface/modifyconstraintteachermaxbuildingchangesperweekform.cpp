@@ -44,8 +44,6 @@ ModifyConstraintTeacherMaxBuildingChangesPerWeekForm::ModifyConstraintTeacherMax
 	maxChangesSpinBox->setMinimum(0);
 	maxChangesSpinBox->setMaximum(gt.rules.nDaysPerWeek*gt.rules.nHoursPerDay);
 	maxChangesSpinBox->setValue(ctr->maxBuildingChangesPerWeek);	
-		
-	constraintChanged();
 }
 
 ModifyConstraintTeacherMaxBuildingChangesPerWeekForm::~ModifyConstraintTeacherMaxBuildingChangesPerWeekForm()
@@ -61,12 +59,6 @@ void ModifyConstraintTeacherMaxBuildingChangesPerWeekForm::updateTeachersComboBo
 		teachersComboBox->addItem(t->name);
 	}
 	teachersComboBox->setCurrentText(this->_ctr->teacherName);
-
-	constraintChanged();
-}
-
-void ModifyConstraintTeacherMaxBuildingChangesPerWeekForm::constraintChanged()
-{
 }
 
 void ModifyConstraintTeacherMaxBuildingChangesPerWeekForm::ok()

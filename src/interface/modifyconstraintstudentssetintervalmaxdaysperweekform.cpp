@@ -59,8 +59,6 @@ ModifyConstraintStudentsSetIntervalMaxDaysPerWeekForm::ModifyConstraintStudentsS
 	}
 	endHourComboBox->addItem(tr("End of day"));
 	endHourComboBox->setCurrentIndex(ctr->endHour);
-
-	constraintChanged();
 }
 
 ModifyConstraintStudentsSetIntervalMaxDaysPerWeekForm::~ModifyConstraintStudentsSetIntervalMaxDaysPerWeekForm()
@@ -85,17 +83,11 @@ void ModifyConstraintStudentsSetIntervalMaxDaysPerWeekForm::updateStudentsComboB
 	if (studentsComboBox->findText(this->_ctr->students) < 0)
 		showWarningForInvisibleSubgroupConstraint(parent, this->_ctr->students);
 	studentsComboBox->setCurrentText(this->_ctr->students);
-
-	constraintChanged();
 }
 
 void ModifyConstraintStudentsSetIntervalMaxDaysPerWeekForm::updateMaxDaysSpinBox(){
 	maxDaysSpinBox->setMinimum(0);
 	maxDaysSpinBox->setMaximum(gt.rules.nDaysPerWeek);
-}
-
-void ModifyConstraintStudentsSetIntervalMaxDaysPerWeekForm::constraintChanged()
-{
 }
 
 void ModifyConstraintStudentsSetIntervalMaxDaysPerWeekForm::ok()

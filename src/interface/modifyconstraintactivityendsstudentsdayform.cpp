@@ -93,8 +93,6 @@ ModifyConstraintActivityEndsStudentsDayForm::ModifyConstraintActivityEndsStudent
 	studentsComboBox->setCurrentIndex(0);
 	
 	updateActivitiesComboBox();
-
-	constraintChanged();
 }
 
 ModifyConstraintActivityEndsStudentsDayForm::~ModifyConstraintActivityEndsStudentsDayForm()
@@ -167,12 +165,6 @@ void ModifyConstraintActivityEndsStudentsDayForm::updateActivitiesComboBox(){
 	}
 	//assert(j>=0); only first time
 	activitiesComboBox->setCurrentIndex(j);
-
-	constraintChanged();
-}
-
-void ModifyConstraintActivityEndsStudentsDayForm::constraintChanged()
-{
 }
 
 void ModifyConstraintActivityEndsStudentsDayForm::ok()

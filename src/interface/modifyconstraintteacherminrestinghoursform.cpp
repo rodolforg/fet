@@ -55,17 +55,11 @@ ModifyConstraintTeacherMinRestingHoursForm::ModifyConstraintTeacherMinRestingHou
 	}
 	assert(j>=0);
 	teachersComboBox->setCurrentIndex(j);
-
-	constraintChanged();
 }
 
 ModifyConstraintTeacherMinRestingHoursForm::~ModifyConstraintTeacherMinRestingHoursForm()
 {
 	saveFETDialogGeometry(this);
-}
-
-void ModifyConstraintTeacherMinRestingHoursForm::constraintChanged()
-{
 }
 
 void ModifyConstraintTeacherMinRestingHoursForm::ok()

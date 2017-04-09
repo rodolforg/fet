@@ -32,7 +32,6 @@ public:
 	~ModifyConstraintStudentsMaxHoursDailyForm();
 
 public slots:
-	void constraintChanged();
 	void ok();
 };
 

@@ -53,8 +53,6 @@ ModifyConstraintStudentsSetMinHoursDailyForm::ModifyConstraintStudentsSetMinHour
 	minHoursSpinBox->setMinimum(1);
 	minHoursSpinBox->setMaximum(gt.rules.nHoursPerDay);
 	minHoursSpinBox->setValue(ctr->minHoursDaily);
-
-	constraintChanged();
 }
 
 ModifyConstraintStudentsSetMinHoursDailyForm::~ModifyConstraintStudentsSetMinHoursDailyForm()
@@ -79,12 +77,6 @@ void ModifyConstraintStudentsSetMinHoursDailyForm::updateStudentsComboBox(QWidge
 	if (studentsComboBox->findText(this->_ctr->students) < 0)
 		showWarningForInvisibleSubgroupConstraint(parent, this->_ctr->students);
 	studentsComboBox->setCurrentText(this->_ctr->students);
-
-	constraintChanged();
-}
-
-void ModifyConstraintStudentsSetMinHoursDailyForm::constraintChanged()
-{
 }
 
 void ModifyConstraintStudentsSetMinHoursDailyForm::ok()

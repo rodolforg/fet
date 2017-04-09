@@ -32,7 +32,6 @@ public:
 	~ModifyConstraintStudentsEarlyMaxBeginningsAtSecondHourForm();
 
 public slots:
-	void constraintChanged();
 	void ok();
 };
 

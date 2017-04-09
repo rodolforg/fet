@@ -44,8 +44,6 @@ ModifyConstraintStudentsActivityTagMaxHoursContinuouslyForm::ModifyConstraintStu
 	maxHoursSpinBox->setMinimum(1);
 	maxHoursSpinBox->setMaximum(gt.rules.nHoursPerDay);
 	maxHoursSpinBox->setValue(ctr->maxHoursContinuously);
-
-	constraintChanged();
 }
 
 ModifyConstraintStudentsActivityTagMaxHoursContinuouslyForm::~ModifyConstraintStudentsActivityTagMaxHoursContinuouslyForm()
@@ -61,12 +59,6 @@ void ModifyConstraintStudentsActivityTagMaxHoursContinuouslyForm::updateActivity
 		activityTagsComboBox->addItem(s->name);
 	}
 	activityTagsComboBox->setCurrentText(this->_ctr->activityTagName);
-
-	constraintChanged();
-}
-
-void ModifyConstraintStudentsActivityTagMaxHoursContinuouslyForm::constraintChanged()
-{
 }
 
 void ModifyConstraintStudentsActivityTagMaxHoursContinuouslyForm::ok()

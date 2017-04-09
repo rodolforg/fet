@@ -44,8 +44,6 @@ ModifyConstraintStudentsSetMaxBuildingChangesPerWeekForm::ModifyConstraintStuden
 	maxChangesSpinBox->setMinimum(0);
 	maxChangesSpinBox->setMaximum(gt.rules.nHoursPerDay*gt.rules.nDaysPerWeek);
 	maxChangesSpinBox->setValue(ctr->maxBuildingChangesPerWeek);	
-		
-	constraintChanged();
 }
 
 ModifyConstraintStudentsSetMaxBuildingChangesPerWeekForm::~ModifyConstraintStudentsSetMaxBuildingChangesPerWeekForm()
@@ -70,12 +68,6 @@ void ModifyConstraintStudentsSetMaxBuildingChangesPerWeekForm::updateStudentsCom
 	if (studentsComboBox->findText(this->_ctr->studentsName) < 0)
 		showWarningForInvisibleSubgroupConstraint(parent, this->_ctr->studentsName);
 	studentsComboBox->setCurrentText(this->_ctr->studentsName);
-
-	constraintChanged();
-}
-
-void ModifyConstraintStudentsSetMaxBuildingChangesPerWeekForm::constraintChanged()
-{
 }
 
 void ModifyConstraintStudentsSetMaxBuildingChangesPerWeekForm::ok()

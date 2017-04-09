@@ -32,7 +32,6 @@ public:
 	~ModifyConstraintBasicCompulsoryTimeForm();
 
 public slots:
-	void constraintChanged();
 	void ok();
 };
 

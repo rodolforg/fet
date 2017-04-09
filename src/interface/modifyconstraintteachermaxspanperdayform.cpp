@@ -53,17 +53,11 @@ ModifyConstraintTeacherMaxSpanPerDayForm::ModifyConstraintTeacherMaxSpanPerDayFo
 	}
 	assert(j>=0);
 	teachersComboBox->setCurrentIndex(j);
-
-	constraintChanged();
 }
 
 ModifyConstraintTeacherMaxSpanPerDayForm::~ModifyConstraintTeacherMaxSpanPerDayForm()
 {
 	saveFETDialogGeometry(this);
-}
-
-void ModifyConstraintTeacherMaxSpanPerDayForm::constraintChanged()
-{
 }
 
 void ModifyConstraintTeacherMaxSpanPerDayForm::ok()

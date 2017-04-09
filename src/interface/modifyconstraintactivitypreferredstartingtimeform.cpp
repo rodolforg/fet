@@ -110,8 +110,6 @@ ModifyConstraintActivityPreferredStartingTimeForm::ModifyConstraintActivityPrefe
 		startHourComboBox->setCurrentIndex(-1);
 	
 	permLockedCheckBox->setChecked(this->_ctr->permanentlyLocked);
-	
-	constraintChanged();
 }
 
 ModifyConstraintActivityPreferredStartingTimeForm::~ModifyConstraintActivityPreferredStartingTimeForm()
@@ -184,8 +182,6 @@ void ModifyConstraintActivityPreferredStartingTimeForm::updateActivitiesComboBox
 	}
 	//assert(j>=0); only first time
 	activitiesComboBox->setCurrentIndex(j);
-
-	constraintChanged();
 }
 
 void ModifyConstraintActivityPreferredStartingTimeForm::updatePeriodGroupBox(){
@@ -196,10 +192,6 @@ void ModifyConstraintActivityPreferredStartingTimeForm::updatePeriodGroupBox(){
 	dayComboBox->clear();
 	for(int i=0; i<gt.rules.nDaysPerWeek; i++)
 		dayComboBox->addItem(gt.rules.daysOfTheWeek[i]);
-}
-
-void ModifyConstraintActivityPreferredStartingTimeForm::constraintChanged()
-{
 }
 
 void ModifyConstraintActivityPreferredStartingTimeForm::ok()

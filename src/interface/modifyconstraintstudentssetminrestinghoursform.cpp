@@ -46,8 +46,6 @@ ModifyConstraintStudentsSetMinRestingHoursForm::ModifyConstraintStudentsSetMinRe
 	minRestingHoursSpinBox->setValue(ctr->minRestingHours);
 	
 	updateStudentsComboBox(parent);
-
-	constraintChanged();
 }
 
 ModifyConstraintStudentsSetMinRestingHoursForm::~ModifyConstraintStudentsSetMinRestingHoursForm()
@@ -72,12 +70,6 @@ void ModifyConstraintStudentsSetMinRestingHoursForm::updateStudentsComboBox(QWid
 	if (studentsComboBox->findText(this->_ctr->students) < 0)
 		showWarningForInvisibleSubgroupConstraint(parent, this->_ctr->students);
 	studentsComboBox->setCurrentText(this->_ctr->students);
-
-	constraintChanged();
-}
-
-void ModifyConstraintStudentsSetMinRestingHoursForm::constraintChanged()
-{
 }
 
 void ModifyConstraintStudentsSetMinRestingHoursForm::ok()

@@ -43,8 +43,6 @@ ModifyConstraintStudentsSetMaxDaysPerWeekForm::ModifyConstraintStudentsSetMaxDay
 	updateStudentsComboBox(parent);
 	
 	maxDaysSpinBox->setValue(ctr->maxDaysPerWeek);
-	
-	constraintChanged();
 }
 
 ModifyConstraintStudentsSetMaxDaysPerWeekForm::~ModifyConstraintStudentsSetMaxDaysPerWeekForm()
@@ -69,17 +67,11 @@ void ModifyConstraintStudentsSetMaxDaysPerWeekForm::updateStudentsComboBox(QWidg
 	if (studentsComboBox->findText(this->_ctr->students) < 0)
 		showWarningForInvisibleSubgroupConstraint(parent, this->_ctr->students);
 	studentsComboBox->setCurrentText(this->_ctr->students);
-
-	constraintChanged();
 }
 
 void ModifyConstraintStudentsSetMaxDaysPerWeekForm::updateMaxDaysSpinBox(){
 	maxDaysSpinBox->setMinimum(0);
 	maxDaysSpinBox->setMaximum(gt.rules.nDaysPerWeek);
-}
-
-void ModifyConstraintStudentsSetMaxDaysPerWeekForm::constraintChanged()
-{
 }
 
 void ModifyConstraintStudentsSetMaxDaysPerWeekForm::ok()

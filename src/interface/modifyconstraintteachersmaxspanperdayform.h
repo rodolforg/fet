@@ -32,7 +32,6 @@ public:
 	~ModifyConstraintTeachersMaxSpanPerDayForm();
 
 public slots:
-	void constraintChanged();
 	void ok();
 };
 

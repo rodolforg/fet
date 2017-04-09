@@ -51,10 +51,6 @@ void ModifyConstraintTeachersMaxHoursDailyForm::updateMaxHoursSpinBox(){
 	maxHoursSpinBox->setMaximum(gt.rules.nHoursPerDay);
 }
 
-void ModifyConstraintTeachersMaxHoursDailyForm::constraintChanged()
-{
-}
-
 void ModifyConstraintTeachersMaxHoursDailyForm::ok()
 {
 	double weight;

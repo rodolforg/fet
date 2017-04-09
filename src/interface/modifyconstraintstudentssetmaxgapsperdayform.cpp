@@ -45,8 +45,6 @@ ModifyConstraintStudentsSetMaxGapsPerDayForm::ModifyConstraintStudentsSetMaxGaps
 	maxGapsSpinBox->setValue(ctr->maxGaps);
 	
 	updateStudentsComboBox(parent);
-
-	constraintChanged();
 }
 
 ModifyConstraintStudentsSetMaxGapsPerDayForm::~ModifyConstraintStudentsSetMaxGapsPerDayForm()
@@ -71,12 +69,6 @@ void ModifyConstraintStudentsSetMaxGapsPerDayForm::updateStudentsComboBox(QWidge
 	if (studentsComboBox->findText(this->_ctr->students) < 0)
 		showWarningForInvisibleSubgroupConstraint(parent, this->_ctr->students);
 	studentsComboBox->setCurrentText(this->_ctr->students);
-
-	constraintChanged();
-}
-
-void ModifyConstraintStudentsSetMaxGapsPerDayForm::constraintChanged()
-{
 }
 
 void ModifyConstraintStudentsSetMaxGapsPerDayForm::ok()

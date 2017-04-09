@@ -35,7 +35,6 @@ public:
 	void updateStudentsComboBox(QWidget* parent);
 
 public slots:
-	void constraintChanged();
 	void ok();
 };
 

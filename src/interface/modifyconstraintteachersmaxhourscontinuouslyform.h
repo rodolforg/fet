@@ -34,7 +34,6 @@ public:
 	void updateMaxHoursSpinBox();
 
 public slots:
-	void constraintChanged();
 	void ok();
 };
 

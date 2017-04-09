@@ -44,8 +44,6 @@ ModifyConstraintStudentsSetMinGapsBetweenBuildingChangesForm::ModifyConstraintSt
 	minGapsSpinBox->setMinimum(1);
 	minGapsSpinBox->setMaximum(gt.rules.nHoursPerDay);
 	minGapsSpinBox->setValue(ctr->minGapsBetweenBuildingChanges);
-		
-	constraintChanged();
 }
 
 ModifyConstraintStudentsSetMinGapsBetweenBuildingChangesForm::~ModifyConstraintStudentsSetMinGapsBetweenBuildingChangesForm()
@@ -70,12 +68,6 @@ void ModifyConstraintStudentsSetMinGapsBetweenBuildingChangesForm::updateStudent
 	if (studentsComboBox->findText(this->_ctr->studentsName) < 0)
 		showWarningForInvisibleSubgroupConstraint(parent, this->_ctr->studentsName);
 	studentsComboBox->setCurrentText(this->_ctr->studentsName);
-
-	constraintChanged();
-}
-
-void ModifyConstraintStudentsSetMinGapsBetweenBuildingChangesForm::constraintChanged()
-{
 }
 
 void ModifyConstraintStudentsSetMinGapsBetweenBuildingChangesForm::ok()

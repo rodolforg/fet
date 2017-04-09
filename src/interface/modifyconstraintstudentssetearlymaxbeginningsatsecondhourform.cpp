@@ -67,7 +67,6 @@ ModifyConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm::ModifyConstraintS
 	else
 		assert(j>=0);
 	studentsComboBox->setCurrentIndex(j);
-	constraintChanged();
 	
 	maxBeginningsSpinBox->setMinimum(0);
 	maxBeginningsSpinBox->setMaximum(gt.rules.nDaysPerWeek);
@@ -77,10 +76,6 @@ ModifyConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm::ModifyConstraintS
 ModifyConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm::~ModifyConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm()
 {
 	saveFETDialogGeometry(this);
-}
-
-void ModifyConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm::constraintChanged()
-{
 }
 
 void ModifyConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm::ok()

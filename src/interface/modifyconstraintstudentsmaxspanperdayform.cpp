@@ -46,10 +46,6 @@ ModifyConstraintStudentsMaxSpanPerDayForm::~ModifyConstraintStudentsMaxSpanPerDa
 	saveFETDialogGeometry(this);
 }
 
-void ModifyConstraintStudentsMaxSpanPerDayForm::constraintChanged()
-{
-}
-
 void ModifyConstraintStudentsMaxSpanPerDayForm::ok()
 {
 	double weight;

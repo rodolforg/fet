@@ -46,10 +46,6 @@ ModifyConstraintStudentsEarlyMaxBeginningsAtSecondHourForm::~ModifyConstraintStu
 	saveFETDialogGeometry(this);
 }
 
-void ModifyConstraintStudentsEarlyMaxBeginningsAtSecondHourForm::constraintChanged()
-{
-}
-
 void ModifyConstraintStudentsEarlyMaxBeginningsAtSecondHourForm::ok()
 {
 	double weight;

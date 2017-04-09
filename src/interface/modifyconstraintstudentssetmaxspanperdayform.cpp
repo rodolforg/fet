@@ -45,8 +45,6 @@ ModifyConstraintStudentsSetMaxSpanPerDayForm::ModifyConstraintStudentsSetMaxSpan
 	maxSpanSpinBox->setValue(ctr->maxSpanPerDay);
 	
 	updateStudentsComboBox(parent);
-
-	constraintChanged();
 }
 
 ModifyConstraintStudentsSetMaxSpanPerDayForm::~ModifyConstraintStudentsSetMaxSpanPerDayForm()
@@ -71,12 +69,6 @@ void ModifyConstraintStudentsSetMaxSpanPerDayForm::updateStudentsComboBox(QWidge
 	if (studentsComboBox->findText(this->_ctr->students) < 0)
 		showWarningForInvisibleSubgroupConstraint(parent, this->_ctr->students);
 	studentsComboBox->setCurrentText(this->_ctr->students);
-
-	constraintChanged();
-}
-
-void ModifyConstraintStudentsSetMaxSpanPerDayForm::constraintChanged()
-{
 }
 
 void ModifyConstraintStudentsSetMaxSpanPerDayForm::ok()

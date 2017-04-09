@@ -32,7 +32,6 @@ public:
 	~ModifyConstraintStudentsMaxBuildingChangesPerDayForm();
 
 public slots:
-	void constraintChanged();
 	void ok();
 };
 

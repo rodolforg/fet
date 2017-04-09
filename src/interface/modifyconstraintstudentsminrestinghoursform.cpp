@@ -48,10 +48,6 @@ ModifyConstraintStudentsMinRestingHoursForm::~ModifyConstraintStudentsMinResting
 	saveFETDialogGeometry(this);
 }
 
-void ModifyConstraintStudentsMinRestingHoursForm::constraintChanged()
-{
-}
-
 void ModifyConstraintStudentsMinRestingHoursForm::ok()
 {
 	double weight;

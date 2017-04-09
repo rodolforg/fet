@@ -32,7 +32,6 @@ public:
 	~ModifyConstraintStudentsMaxGapsPerWeekForm();
 
 public slots:
-	void constraintChanged();
 	void ok();
 };
 

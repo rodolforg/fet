@@ -42,10 +42,6 @@ ModifyConstraintBasicCompulsorySpaceForm::~ModifyConstraintBasicCompulsorySpaceF
 	saveFETDialogGeometry(this);
 }
 
-void ModifyConstraintBasicCompulsorySpaceForm::constraintChanged()
-{
-}
-
 void ModifyConstraintBasicCompulsorySpaceForm::ok()
 {
 	double weight;

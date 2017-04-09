@@ -44,8 +44,6 @@ ModifyConstraintTeacherMinGapsBetweenBuildingChangesForm::ModifyConstraintTeache
 	minGapsSpinBox->setMinimum(1);
 	minGapsSpinBox->setMaximum(gt.rules.nHoursPerDay);
 	minGapsSpinBox->setValue(ctr->minGapsBetweenBuildingChanges);	
-		
-	constraintChanged();
 }
 
 ModifyConstraintTeacherMinGapsBetweenBuildingChangesForm::~ModifyConstraintTeacherMinGapsBetweenBuildingChangesForm()
@@ -61,12 +59,6 @@ void ModifyConstraintTeacherMinGapsBetweenBuildingChangesForm::updateTeachersCom
 		teachersComboBox->addItem(t->name);
 	}
 	teachersComboBox->setCurrentText(this->_ctr->teacherName);
-
-	constraintChanged();
-}
-
-void ModifyConstraintTeacherMinGapsBetweenBuildingChangesForm::constraintChanged()
-{
 }
 
 void ModifyConstraintTeacherMinGapsBetweenBuildingChangesForm::ok()

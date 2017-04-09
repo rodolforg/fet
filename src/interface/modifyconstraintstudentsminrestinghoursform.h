@@ -32,7 +32,6 @@ public:
 	~ModifyConstraintStudentsMinRestingHoursForm();
 
 public slots:
-	void constraintChanged();
 	void ok();
 };
 

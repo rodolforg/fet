@@ -44,10 +44,6 @@ ModifyConstraintBasicCompulsoryTimeForm::~ModifyConstraintBasicCompulsoryTimeFor
 	saveFETDialogGeometry(this);
 }
 
-void ModifyConstraintBasicCompulsoryTimeForm::constraintChanged()
-{
-}
-
 void ModifyConstraintBasicCompulsoryTimeForm::ok()
 {
 	double weight;

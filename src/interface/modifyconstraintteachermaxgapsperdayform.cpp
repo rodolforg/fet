@@ -53,17 +53,11 @@ ModifyConstraintTeacherMaxGapsPerDayForm::ModifyConstraintTeacherMaxGapsPerDayFo
 	}
 	assert(j>=0);
 	teachersComboBox->setCurrentIndex(j);
-
-	constraintChanged();
 }
 
 ModifyConstraintTeacherMaxGapsPerDayForm::~ModifyConstraintTeacherMaxGapsPerDayForm()
 {
 	saveFETDialogGeometry(this);
-}
-
-void ModifyConstraintTeacherMaxGapsPerDayForm::constraintChanged()
-{
 }
 
 void ModifyConstraintTeacherMaxGapsPerDayForm::ok()

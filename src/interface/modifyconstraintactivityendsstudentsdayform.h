@@ -36,7 +36,6 @@ public:
 	bool filterOk(Activity* a);
 
 public slots:
-	void constraintChanged();
 	void ok();
 
 	void filterChanged();

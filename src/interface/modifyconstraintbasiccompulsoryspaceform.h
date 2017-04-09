@@ -32,7 +32,6 @@ public:
 	~ModifyConstraintBasicCompulsorySpaceForm();
 
 public slots:
-	void constraintChanged();
 	void ok();
 };
 

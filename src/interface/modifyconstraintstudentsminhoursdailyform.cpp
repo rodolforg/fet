@@ -55,10 +55,6 @@ ModifyConstraintStudentsMinHoursDailyForm::~ModifyConstraintStudentsMinHoursDail
 	saveFETDialogGeometry(this);
 }
 
-void ModifyConstraintStudentsMinHoursDailyForm::constraintChanged()
-{
-}
-
 void ModifyConstraintStudentsMinHoursDailyForm::ok()
 {
 	double weight;

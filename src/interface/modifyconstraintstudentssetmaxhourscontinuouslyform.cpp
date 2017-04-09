@@ -44,8 +44,6 @@ ModifyConstraintStudentsSetMaxHoursContinuouslyForm::ModifyConstraintStudentsSet
 	maxHoursSpinBox->setMinimum(1);
 	maxHoursSpinBox->setMaximum(gt.rules.nHoursPerDay);
 	maxHoursSpinBox->setValue(ctr->maxHoursContinuously);
-
-	constraintChanged();
 }
 
 ModifyConstraintStudentsSetMaxHoursContinuouslyForm::~ModifyConstraintStudentsSetMaxHoursContinuouslyForm()
@@ -70,12 +68,6 @@ void ModifyConstraintStudentsSetMaxHoursContinuouslyForm::updateStudentsComboBox
 	if (studentsComboBox->findText(this->_ctr->students) < 0)
 		showWarningForInvisibleSubgroupConstraint(parent, this->_ctr->students);
 	studentsComboBox->setCurrentText(this->_ctr->students);
-
-	constraintChanged();
-}
-
-void ModifyConstraintStudentsSetMaxHoursContinuouslyForm::constraintChanged()
-{
 }
 
 void ModifyConstraintStudentsSetMaxHoursContinuouslyForm::ok()

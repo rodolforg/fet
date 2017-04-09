@@ -57,8 +57,6 @@ ModifyConstraintTeacherMinHoursDailyForm::ModifyConstraintTeacherMinHoursDailyFo
 	}
 	assert(j>=0);
 	teachersComboBox->setCurrentIndex(j);
-
-	constraintChanged();
 }
 
 ModifyConstraintTeacherMinHoursDailyForm::~ModifyConstraintTeacherMinHoursDailyForm()
@@ -69,10 +67,6 @@ ModifyConstraintTeacherMinHoursDailyForm::~ModifyConstraintTeacherMinHoursDailyF
 void ModifyConstraintTeacherMinHoursDailyForm::updateMinHoursSpinBox(){
 	minHoursSpinBox->setMinimum(2);
 	minHoursSpinBox->setMaximum(gt.rules.nHoursPerDay);	
-}
-
-void ModifyConstraintTeacherMinHoursDailyForm::constraintChanged()
-{
 }
 
 void ModifyConstraintTeacherMinHoursDailyForm::ok()

@@ -45,8 +45,6 @@ ModifyConstraintTwoActivitiesGroupedForm::ModifyConstraintTwoActivitiesGroupedFo
 	weightLineEdit->setText(CustomFETString::number(ctr->weightPercentage));
 
 	updateActivitiesComboBox();
-
-	constraintChanged();
 }
 
 ModifyConstraintTwoActivitiesGroupedForm::~ModifyConstraintTwoActivitiesGroupedForm()
@@ -106,12 +104,6 @@ void ModifyConstraintTwoActivitiesGroupedForm::updateActivitiesComboBox(){
 	}
 	//assert(j>=0); only first time
 	secondActivitiesComboBox->setCurrentIndex(j);
-
-	constraintChanged();
-}
-
-void ModifyConstraintTwoActivitiesGroupedForm::constraintChanged()
-{
 }
 
 void ModifyConstraintTwoActivitiesGroupedForm::ok()

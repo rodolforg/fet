@@ -44,8 +44,6 @@ ModifyConstraintTeacherMaxBuildingChangesPerDayForm::ModifyConstraintTeacherMaxB
 	maxChangesSpinBox->setMinimum(0);
 	maxChangesSpinBox->setMaximum(gt.rules.nHoursPerDay);
 	maxChangesSpinBox->setValue(ctr->maxBuildingChangesPerDay);	
-		
-	constraintChanged();
 }
 
 ModifyConstraintTeacherMaxBuildingChangesPerDayForm::~ModifyConstraintTeacherMaxBuildingChangesPerDayForm()
@@ -61,12 +59,6 @@ void ModifyConstraintTeacherMaxBuildingChangesPerDayForm::updateTeachersComboBox
 		teachersComboBox->addItem(t->name);
 	}
 	teachersComboBox->setCurrentText(this->_ctr->teacherName);
-
-	constraintChanged();
-}
-
-void ModifyConstraintTeacherMaxBuildingChangesPerDayForm::constraintChanged()
-{
 }
 
 void ModifyConstraintTeacherMaxBuildingChangesPerDayForm::ok()
