@@ -52,13 +52,13 @@
         <location filename="../src/interface/activitiesform.cpp" line="320"/>
         <source>No: %1 / %2</source>
         <comment>No means number, %1 is the number of active activities, %2 is the number of total activities. Please leave spaces between fields, so that they are better visible</comment>
-        <translation>No: %1 / %2</translation>
+        <translation>رقم: %1 / %2</translation>
     </message>
     <message>
         <location filename="../src/interface/activitiesform.cpp" line="322"/>
         <source>Dur: %1 / %2</source>
         <comment>Dur means duration, %1 is the duration of active activities, %2 is the duration of total activities. Please leave spaces between fields, so that they are better visible</comment>
-        <translation>Dur: %1 / %2</translation>
+        <translation>فترة: %1 / %2</translation>
     </message>
     <message>
         <location filename="../src/interface/activitiesform.cpp" line="421"/>
@@ -123,12 +123,12 @@
     <message>
         <location filename="../src/interface/activitiesform.cpp" line="541"/>
         <source>Above the (sub)activities list, we have 2 labels, containing 4 numbers. The first label contains text: No: a / b. The first number a is the number of active (sub)activities (we number each individual subactivity as 1), while the second number b is the number of total (sub)activities. The second label contains text: Dur: c / d. The third number c is the duration of active (sub)activities, in periods (or FET hours), while the fourth number d is the duration of total (sub)activities, in periods (or FET hours). So, No means number and Dur means duration.</source>
-        <translation>فوق قائمة الأنشطة(الفرعية)، لدينا علامتان. العلامة الأولى تحتوي النص: &quot; No: a/ b &quot; أول عدد a هو عدد الأنشطة (الفرعية) المفعلة (نحسب على انفراد كل نشاط فرعي 1)، بينما ثاني عدد b هو العدد الاجمالي للأنشطة(الفرعية). العلامة الثانية تحتوي النص: المدة الزمنية &quot; Dur: c / d &quot; العدد الثالث c هو مدة الأنشطة (الفرعية) المفعلة، في الفترات الزمنية (أو حصص FET)، بينما العدد الرابع d هو المدة الاجمالية للأنشطة(الفرعية) في الفترات الزمنية (أو حصص FET). إذن، No تعني عدد أو رقم و Dur تعني مدة زمنية.</translation>
+        <translation>فوق قائمة الأنشطة(الفرعية)، لدينا علامتان. العلامة الأولى تحتوي النص: &quot; رقم: a/ b &quot; أول عدد a هو عدد الأنشطة (الفرعية) المفعلة (نحسب على انفراد كل نشاط فرعي 1)، بينما ثاني عدد b هو العدد الاجمالي للأنشطة(الفرعية). العلامة الثانية تحتوي النص: المدة الزمنية &quot; فترة: c / d &quot; العدد الثالث c هو مدة الأنشطة (الفرعية) المفعلة، في الفترات الزمنية (أو حصص FET)، بينما العدد الرابع d هو المدة الاجمالية للأنشطة(الفرعية) في الفترات الزمنية (أو حصص FET). إذن، رقم تعني عدد أو رقم و فترة تعني مدة زمنية.</translation>
     </message>
     <message>
         <location filename="../src/interface/activitiesform.cpp" line="547"/>
         <source>Example: No: 100 / 102, Dur: 114 / 117. They represent: 100 - the number of active (sub)activities, then 102 - the number of total (sub)activities, 114 - the duration of active activities (in periods or FET hours) and 117 - the duration of total activities (in periods or FET hours). In this example we have 2 inactive activities with their combined duration being 3 periods.</source>
-        <translation>مثال: No: 100/102، Dur: 114/117. تمثل: 100 - عدد الأنشطة(الفرعية) المفعلة، و 102 - العدد الاجمالي للأنشطة(الفرعية)، 114 - مدة الأنشطة(الفرعية) (في الفترات الزمنية أو حصص FET) و 117 - مدة الأنشطة الاجمالية (في الفترات الزمنية أو حصص FET). في هذا المثال لدينا نشاطين غير مفعلين مع كون مدتهما معا 3 فترات زمنية(أو 3 حصص FET).</translation>
+        <translation>مثال: رقم: 100/102، فترة: 114/117. تمثل: 100 - عدد الأنشطة(الفرعية) المفعلة، و 102 - العدد الاجمالي للأنشطة(الفرعية)، 114 - مدة الأنشطة(الفرعية) (في الفترات الزمنية أو حصص FET) و 117 - مدة الأنشطة الاجمالية (في الفترات الزمنية أو حصص FET). في هذا المثال لدينا نشاطين غير مفعلين مع كون مدتهما معا 3 فترات زمنية(أو 3 حصص FET).</translation>
     </message>
     <message>
         <location filename="../src/interface/activitiesform.cpp" line="553"/>
@@ -277,7 +277,7 @@
         <location filename="../src/interface/activitiesroomsstatisticsform.cpp" line="323"/>
         <source>No: %1, Id: %2 (%3)</source>
         <comment>%1 is the current number, %2 is the activity id, %3 is the detailed activity description</comment>
-        <translation>No: %1, Id: %2 (%3)</translation>
+        <translation>رقم: %1, Id: %2 (%3)</translation>
     </message>
     <message>
         <location filename="../src/interface/activitiesroomsstatisticsform.cpp" line="308"/>
@@ -517,7 +517,7 @@
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="212"/>
         <source>Activity Planning Dialog</source>
-        <translation>مربع الحوار مخطط الأنشطة</translation>
+        <translation>مربع حوار مخطط الأنشطة</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="232"/>
@@ -832,7 +832,7 @@
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2073"/>
         <source>Activities without teachers and without students:</source>
-        <translation>أنشطة بدون مدرسين و طلاب:</translation>
+        <translation>أنشطة بدون مدرسين و بدون طلاب:</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2076"/>
@@ -858,7 +858,7 @@
         <location filename="../src/interface/activityplanningform.cpp" line="2085"/>
         <source>Information about pseudo activities</source>
         <comment>Pseudo activities means activities without teachers and/or students sets</comment>
-        <translation>أنشطة بدون مدرسين أو طلاب</translation>
+        <translation>معلومات حول الأنشطة التخيلية</translation>
     </message>
 </context>
 <context>
@@ -2262,7 +2262,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="14"/>
         <source>Add activities occupy max time slots from selection</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الاقصى من الأنشطة في الفترات الزمنية المحددة</translation>
+        <translation>اضافة أنشطة تحتل أقصى فترات زمنية محددة</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="24"/>
@@ -2519,7 +2519,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="330"/>
         <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="372"/>
         <source>FET question</source>
-        <translation>فيت سؤال</translation>
+        <translation>FET سؤال</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="297"/>
@@ -3558,7 +3558,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform.cpp" line="362"/>
         <source>FET question</source>
-        <translation>فيت سؤال</translation>
+        <translation>FET سؤال</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform.cpp" line="363"/>
@@ -3671,7 +3671,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform.cpp" line="361"/>
         <source>FET question</source>
-        <translation>فيت سؤال</translation>
+        <translation>FET سؤال</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform.cpp" line="362"/>
@@ -4156,7 +4156,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform_template.ui" line="153"/>
         <source>Max days</source>
         <comment>It refers to the maximum number of days between activities</comment>
-        <translation>العدد الأقصى من الأيام</translation>
+        <translation>أقصى عدد من الأيام</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform_template.ui" line="20"/>
@@ -4575,7 +4575,7 @@ force activities consecutive</source>
     <message>
         <location filename="../src/interface/addconstraintstudentsactivitytagmaxhourscontinuouslyform.cpp" line="82"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsactivitytagmaxhourscontinuouslyform.cpp" line="82"/>
@@ -4646,7 +4646,7 @@ force activities consecutive</source>
     <message>
         <location filename="../src/interface/addconstraintstudentsactivitytagmaxhoursdailyform.cpp" line="82"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsactivitytagmaxhoursdailyform.cpp" line="82"/>
@@ -4687,7 +4687,7 @@ force activities consecutive</source>
     <message>
         <location filename="../src/interface/addconstraintstudentsactivitytagmaxhoursdailyform_template.ui" line="118"/>
         <source>Max hours daily</source>
-        <translation>العدد الأقصى من الحصص في اليوم</translation>
+        <translation>أقصى حصص يومية</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsactivitytagmaxhoursdailyform_template.ui" line="148"/>
@@ -4959,7 +4959,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/addconstraintstudentsmaxbuildingchangesperweekform_template.ui" line="14"/>
         <source>Add students max building changes per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>العدد الأقصى لتغيير البنيات في الأسبوع لكل الطلاب</translation>
+        <translation>اضافة أقصى تغيير للبنيات في الأسبوع للطلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxbuildingchangesperweekform_template.ui" line="22"/>
@@ -4969,7 +4969,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxbuildingchangesperweekform_template.ui" line="68"/>
         <source>Max building changes per week</source>
-        <translation>العدد الأقصى من البنايات في الأسبوع</translation>
+        <translation>أقصى تغيير للبنايات في الأسبوع</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxbuildingchangesperweekform_template.ui" line="46"/>
@@ -5077,7 +5077,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/addconstraintstudentsmaxgapsperdayform_template.ui" line="14"/>
         <source>Add students max gaps per day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>العدد الأقصى من الفجوات اليومية لمجموعة طلاب</translation>
+        <translation>اضافة أقصى فجوات يومية للطلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxgapsperdayform_template.ui" line="32"/>
@@ -5098,7 +5098,7 @@ IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this 
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxgapsperdayform_template.ui" line="84"/>
         <source>Max gaps per day</source>
-        <translation>العدد الأقصى للفجوات في اليوم</translation>
+        <translation>أقصى فجوات في اليوم</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxgapsperdayform_template.ui" line="99"/>
@@ -5209,7 +5209,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintstudentsmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Add students max hours continuously</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>أقصى أقصى حصص متصلة لمجموعة طلاب</translation>
+        <translation>اضافة أقصى حصص متصلة للطلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxhourscontinuouslyform_template.ui" line="73"/>
@@ -5597,7 +5597,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="105"/>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="113"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="106"/>
@@ -5626,7 +5626,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Add students set activity tag max hours continuously</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الاقصى من الحصص المتصلة لوسم مشترك لمجموعة طلاب</translation>
+        <translation>اضافة أقصى حصص متصلة مع وسم مشترك لمجموعة طلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="28"/>
@@ -5679,7 +5679,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="106"/>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="114"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="107"/>
@@ -5708,7 +5708,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Add students set activity tag max hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الاقصى من الحصص اليومية لوسم مشترك لمجموعة طلاب</translation>
+        <translation>اضافة أقصى حصص يومية مع وسم مشترك لمجموعة طلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="28"/>
@@ -5863,7 +5863,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/addconstraintstudentssethomeroomform_template.ui" line="14"/>
         <source>Add students set home room</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة قيد قاعة مخصّصة لمجموعة طلاب</translation>
+        <translation>اضافة قاعة مخصّصة لمجموعة طلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssethomeroomform_template.ui" line="45"/>
@@ -6178,7 +6178,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform_template.ui" line="14"/>
         <source>Add students set max building changes per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>العدد الأقصى لتغيير البنيات في الأسبوع لمجموعة طلاب</translation>
+        <translation>اضافة أقصى تغيير للبنيات في الأسبوع لمجموعة طلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform_template.ui" line="22"/>
@@ -6244,7 +6244,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform_template.ui" line="14"/>
         <source>Add students set max days per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>العدد الأقصى من الأيام في الأسبوع لمجموعة طلاب</translation>
+        <translation>اضافة أقصى أيام في الأسبوع لمجموعة طلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform_template.ui" line="22"/>
@@ -6315,7 +6315,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform_template.ui" line="14"/>
         <source>Add students set max gaps per day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>العدد الأقصى من الفجوات اليومية لمجموعة طلاب</translation>
+        <translation>اضافة أقصى فجوات في اليوم لمجموعة طلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform_template.ui" line="32"/>
@@ -6341,7 +6341,7 @@ IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this 
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform_template.ui" line="116"/>
         <source>Max gaps per day</source>
-        <translation>العدد الأقصى للفجوات في اليوم</translation>
+        <translation>أقصى فجوات في اليوم</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform_template.ui" line="131"/>
@@ -6469,7 +6469,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintstudentssetmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Add students set max hours continuously</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الاقصى من الحصص المتصلة لمجموعة طلاب</translation>
+        <translation>اضافة أقصى حصص متصلة لمجموعة طلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxhourscontinuouslyform_template.ui" line="148"/>
@@ -6536,7 +6536,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintstudentssetmaxhoursdailyform_template.ui" line="14"/>
         <source>Add students set max hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الاقصى من الحصص اليومية لمجموعة طلاب</translation>
+        <translation>اضافة أقصى حصص يومية لمجموعة طلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxhoursdailyform_template.ui" line="148"/>
@@ -6679,7 +6679,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform_template.ui" line="14"/>
         <source>Add students set min gaps between building changes</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الادنى من الفجوات بين تغيير البنايات لمجموعة طلاب</translation>
+        <translation>اضافة أدنى عدد من الفجوات بين تغيير البنايات لمجموعة طلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform_template.ui" line="22"/>
@@ -6803,7 +6803,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform_template.ui" line="14"/>
         <source>Add students set min hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الادنى من الحصص اليومية لمجموعة طلاب</translation>
+        <translation>اضافة أدنى عدد من الحصص اليومية لمجموعة طلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform_template.ui" line="94"/>
@@ -7017,7 +7017,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform.cpp" line="280"/>
         <source>FET question</source>
-        <translation>فيت سؤال</translation>
+        <translation>FET سؤال</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform.cpp" line="281"/>
@@ -7124,7 +7124,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform.cpp" line="281"/>
         <source>FET question</source>
-        <translation>فيت سؤال</translation>
+        <translation>FET سؤال</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform.cpp" line="282"/>
@@ -7549,7 +7549,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhourscontinuouslyform.cpp" line="88"/>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhourscontinuouslyform.cpp" line="96"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhourscontinuouslyform.cpp" line="81"/>
@@ -7631,7 +7631,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhoursdailyform.cpp" line="89"/>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhoursdailyform.cpp" line="97"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhoursdailyform.cpp" line="82"/>
@@ -7671,7 +7671,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Add teacher activity tag max hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الاقصى من الحصص اليومية لوسم مشترك ومدرس</translation>
+        <translation>اضافة أقصى حصص يومية مع وسم مشترك لمدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhoursdailyform_template.ui" line="28"/>
@@ -7693,7 +7693,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhoursdailyform_template.ui" line="150"/>
         <source>Max hours daily</source>
-        <translation>العدد الأقصى من الحصص في اليوم</translation>
+        <translation>أقصى حصص يومية</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhoursdailyform_template.ui" line="180"/>
@@ -7743,7 +7743,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteacherhomeroomform_template.ui" line="14"/>
         <source>Add teacher home room</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>قاعة مخصصة لمدرس</translation>
+        <translation>اضافة قاعة مخصصة لمدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherhomeroomform_template.ui" line="28"/>
@@ -7993,7 +7993,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermaxbuildingchangesperdayform_template.ui" line="14"/>
         <source>Add teacher max building changes per day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الاقصى من تغييرات المباني لمدرس في اليوم</translation>
+        <translation>اضافة أقصى تغيير للبنايات في اليوم لمدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxbuildingchangesperdayform_template.ui" line="22"/>
@@ -8013,7 +8013,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachermaxbuildingchangesperdayform_template.ui" line="103"/>
         <source>Max building changes per day</source>
-        <translation>العدد الأقصى للبنايات في اليوم</translation>
+        <translation>أقصى تغيير للبنايات في اليوم</translation>
     </message>
 </context>
 <context>
@@ -8058,7 +8058,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermaxbuildingchangesperweekform_template.ui" line="14"/>
         <source>Add teacher max building changes per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الاقصى من تغييرات المباني لمدرس في الأسبوع</translation>
+        <translation>اضافة أقصى تغيير للبنايات في الأسبوع لمدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxbuildingchangesperweekform_template.ui" line="22"/>
@@ -8124,7 +8124,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermaxdaysperweekform_template.ui" line="14"/>
         <source>Add teacher max days per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الاقصى من أيام عمل مدرس في الأسبوع</translation>
+        <translation>اضافة أقصى أيام في الأسبوع لمدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxdaysperweekform_template.ui" line="148"/>
@@ -8144,7 +8144,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachermaxdaysperweekform_template.ui" line="118"/>
         <source>Max days per week</source>
-        <translation>العدد الأقصى لأيام لدوام الأسبوعي</translation>
+        <translation>أقصى أيام في الأسبوع</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxdaysperweekform_template.ui" line="77"/>
@@ -8207,12 +8207,12 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermaxgapsperdayform_template.ui" line="14"/>
         <source>Add teacher max gaps per day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الاقصى من الفجوات اليومية لمدرس</translation>
+        <translation>اضافة أقصى فجوات في اليوم لمدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperdayform_template.ui" line="91"/>
         <source>Max gaps per day</source>
-        <translation>العدد الأقصى للفجوات في اليوم</translation>
+        <translation>أقصى فجوات في اليوم</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperdayform_template.ui" line="129"/>
@@ -8286,7 +8286,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermaxgapsperweekform_template.ui" line="14"/>
         <source>Add teacher max gaps per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الاقصى من الفجوات في الأسبوع لمدرس</translation>
+        <translation>اضافة أقصى فجوات في الأسبوع لمدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperweekform_template.ui" line="91"/>
@@ -8348,7 +8348,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Add teacher max hours continuously</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الاقصى من الحصص المتصلة لمدرس</translation>
+        <translation>اضافة أقصى حصص متصلة لمدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxhourscontinuouslyform_template.ui" line="148"/>
@@ -8415,7 +8415,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermaxhoursdailyform_template.ui" line="14"/>
         <source>Add teacher max hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الاقصى من الحصص اليومية لمدرس</translation>
+        <translation>اضافة أقصى حصص يومية لمدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxhoursdailyform_template.ui" line="148"/>
@@ -8559,7 +8559,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermindaysperweekform_template.ui" line="14"/>
         <source>Add teacher min days per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الادنى من أيام عمل مدرس في الأسبوع</translation>
+        <translation>اضافة أدنى عدد من الأيام في الأسبوع لمدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermindaysperweekform_template.ui" line="28"/>
@@ -8631,7 +8631,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermingapsbetweenbuildingchangesform_template.ui" line="14"/>
         <source>Add teacher min gaps between building changes</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الادنى من الفجوات بين بين تغييرات المباني لمدرس</translation>
+        <translation>اضافة أدنى فجوات بين تغيير البنايات لمدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermingapsbetweenbuildingchangesform_template.ui" line="22"/>
@@ -8718,7 +8718,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteacherminhoursdailyform_template.ui" line="116"/>
         <source>Min hours daily</source>
-        <translation>العدد الأدنى من الحصص اليومية</translation>
+        <translation>أدنى حصص يومية</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminhoursdailyform_template.ui" line="133"/>
@@ -8744,7 +8744,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteacherminhoursdailyform_template.ui" line="14"/>
         <source>Add teacher min hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الادنى من الحصص اليومية لمدرس</translation>
+        <translation>اضافة أدنى حصص يومية لمدرس</translation>
     </message>
 </context>
 <context>
@@ -8932,7 +8932,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhourscontinuouslyform.cpp" line="72"/>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhourscontinuouslyform.cpp" line="80"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhourscontinuouslyform.cpp" line="73"/>
@@ -8967,7 +8967,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Add teachers activity tag max hours continuously</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الاقصى من الحصص المتصلة للمدرسين ووسم مشترك</translation>
+        <translation>اضافة أقصى حصص متصلة مع وسم مشترك للمدرسين</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhourscontinuouslyform_template.ui" line="121"/>
@@ -9003,7 +9003,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhoursdailyform.cpp" line="73"/>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhoursdailyform.cpp" line="81"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhoursdailyform.cpp" line="74"/>
@@ -9038,7 +9038,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Add teachers activity tag max hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الاقصى من الحصص اليومية للمدرسين ووسم مشترك</translation>
+        <translation>اضافة أقصى حصص يومية مع وسم مشترك للمدرسين</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhoursdailyform_template.ui" line="28"/>
@@ -9055,7 +9055,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhoursdailyform_template.ui" line="121"/>
         <source>Max hours daily</source>
-        <translation>العدد الأقصى من الحصص في اليوم</translation>
+        <translation>أقصى حصص يومية</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhoursdailyform_template.ui" line="151"/>
@@ -9197,7 +9197,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmaxbuildingchangesperdayform_template.ui" line="14"/>
         <source>Add teachers max building changes per day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الاقصى من تغييرات البنايات للمدرسين في اليوم</translation>
+        <translation>اضافة أقصى تغيير للبنايات في اليوم للمدرسين</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxbuildingchangesperdayform_template.ui" line="22"/>
@@ -9212,7 +9212,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxbuildingchangesperdayform_template.ui" line="67"/>
         <source>Max building changes per day</source>
-        <translation>العدد الأقصى للبنايات في اليوم</translation>
+        <translation>أقصى تغيير للبنايات في اليوم</translation>
     </message>
 </context>
 <context>
@@ -9251,7 +9251,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmaxbuildingchangesperweekform_template.ui" line="14"/>
         <source>Add teachers max building changes per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الاقصى من تغييرات المباني للمدرسين في الأسبوع</translation>
+        <translation>اضافة أقصى تغيير للبنايات في الأسبوع للمدرسين</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxbuildingchangesperweekform_template.ui" line="22"/>
@@ -9316,12 +9316,12 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmaxdaysperweekform_template.ui" line="14"/>
         <source>Add teachers max days per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الاقصى من أيام عمل المدرسين في الأسبوع</translation>
+        <translation>اضافة أقصى أيام في الأسبوع للمدرسين</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxdaysperweekform_template.ui" line="55"/>
         <source>Max days per week</source>
-        <translation>العدد الأقصى لأيام العمل الأسبوعي</translation>
+        <translation>أقصى أيام في الأسبوع</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxdaysperweekform_template.ui" line="72"/>
@@ -9370,7 +9370,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperdayform_template.ui" line="61"/>
         <source>Max gaps per day</source>
-        <translation>العدد الأقصى للفجوات في اليوم</translation>
+        <translation>أقصى فجوات في اليوم</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperdayform_template.ui" line="32"/>
@@ -9383,7 +9383,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmaxgapsperdayform_template.ui" line="14"/>
         <source>Add teachers max gaps per day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الاقصى من الفجوات اليومية للمدرسين</translation>
+        <translation>اضافة أقصى فجوات في اليوم للمدرسين</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperdayform_template.ui" line="105"/>
@@ -9450,7 +9450,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmaxgapsperweekform_template.ui" line="14"/>
         <source>Add teachers max gaps per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الاقصى من الفجوات في الأسبوع للمدرسين</translation>
+        <translation>اضافة أقصى فجوات في الأسبوع للمدرسين</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperweekform_template.ui" line="105"/>
@@ -9494,7 +9494,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Add teachers max hours continuously</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الاقصى من الحصص المتصلة للمدرسين</translation>
+        <translation>اضافة أقصى حصص متصلة للمدرسين</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxhourscontinuouslyform_template.ui" line="73"/>
@@ -9550,7 +9550,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmaxhoursdailyform_template.ui" line="14"/>
         <source>Add teachers max hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الاقصى من الحصص اليومية للمدرسين</translation>
+        <translation>اضافة أقصى حصص يومية للمدرسين</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxhoursdailyform_template.ui" line="73"/>
@@ -9672,7 +9672,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmindaysperweekform_template.ui" line="14"/>
         <source>Add teachers min days per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الادنى من أيام عمل المدرسين في الأسبوع</translation>
+        <translation>اضافة أدنى أيام في الأسبوع للمدرسين</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmindaysperweekform_template.ui" line="28"/>
@@ -9682,7 +9682,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersmindaysperweekform_template.ui" line="55"/>
         <source>Min days per week</source>
-        <translation>العدد الأدنى من الأيام في الأسبوع</translation>
+        <translation>أدنى أيام في الأسبوع</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmindaysperweekform_template.ui" line="72"/>
@@ -9731,7 +9731,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmingapsbetweenbuildingchangesform_template.ui" line="14"/>
         <source>Add teachers min gaps between building changes</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الادنى من الفجوات بين تغيير البنايات للمدرسين</translation>
+        <translation>اضافة أدنى فجوات بين تغيير البنايات للمدرسين</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmingapsbetweenbuildingchangesform_template.ui" line="22"/>
@@ -9807,13 +9807,13 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersminhoursdailyform_template.ui" line="84"/>
         <source>Min hours daily</source>
-        <translation>العدد الأدنى من الحصص اليومية</translation>
+        <translation>أدنى حصص يومية</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminhoursdailyform_template.ui" line="14"/>
         <source>Add teachers min hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>اضافة العدد الادنى من الحصص اليومية للمدرسين</translation>
+        <translation>اضافة أدنى حصص يومية للمدرسين</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminhoursdailyform_template.ui" line="32"/>
@@ -10621,7 +10621,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addstudentssubgroupform.cpp" line="91"/>
         <source>FET</source>
-        <translation>فيت</translation>
+        <translation>FET</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentssubgroupform.cpp" line="92"/>
@@ -11426,7 +11426,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="986"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="987"/>
@@ -11679,7 +11679,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/changemindaysselectivelyform.cpp" line="102"/>
         <location filename="../src/interface/changemindaysselectivelyform.cpp" line="114"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/interface/changemindaysselectivelyform.cpp" line="83"/>
@@ -12000,7 +12000,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiesendstudentsdayform.cpp" line="156"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiesendstudentsdayform.cpp" line="157"/>
@@ -12190,7 +12190,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="271"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="272"/>
@@ -12429,7 +12429,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiesnotoverlappingform.cpp" line="271"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiesnotoverlappingform.cpp" line="272"/>
@@ -13188,7 +13188,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiespreferredstartingtimesform.cpp" line="156"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiespreferredstartingtimesform.cpp" line="157"/>
@@ -13468,7 +13468,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiespreferredtimeslotsform.cpp" line="156"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiespreferredtimeslotsform.cpp" line="157"/>
@@ -13813,7 +13813,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="157"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="158"/>
@@ -14169,7 +14169,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="295"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="296"/>
@@ -14995,7 +14995,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitypreferredstartingtimeform.cpp" line="259"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitypreferredstartingtimeform.cpp" line="260"/>
@@ -15195,7 +15195,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitypreferredstartingtimesform.cpp" line="257"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitypreferredstartingtimesform.cpp" line="258"/>
@@ -16970,7 +16970,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="2587"/>
         <source>Minimum number of gaps=%1</source>
-        <translation>العدد الأدنى من الفجوات=%1</translation>
+        <translation>أدنى عدد من الفجوات=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="2590"/>
@@ -17256,7 +17256,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintroomnotavailabletimesform.cpp" line="164"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintroomnotavailabletimesform.cpp" line="165"/>
@@ -17403,7 +17403,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentsactivitytagmaxhourscontinuouslyform.cpp" line="163"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsactivitytagmaxhourscontinuouslyform.cpp" line="164"/>
@@ -17559,7 +17559,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentsactivitytagmaxhoursdailyform.cpp" line="166"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsactivitytagmaxhoursdailyform.cpp" line="167"/>
@@ -17714,7 +17714,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentsearlymaxbeginningsatsecondhourform.cpp" line="152"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsearlymaxbeginningsatsecondhourform.cpp" line="153"/>
@@ -17913,7 +17913,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentsintervalmaxdaysperweekform.cpp" line="152"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsintervalmaxdaysperweekform.cpp" line="153"/>
@@ -17976,7 +17976,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4179"/>
         <source>Students max building changes per day</source>
-        <translation>العدد الأقصى من تغيير البنايات للطلاب في اليوم</translation>
+        <translation>أقصى تغيير للبنايات في اليوم لللطلاب</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4181"/>
@@ -18054,7 +18054,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentsmaxbuildingchangesperdayform.cpp" line="153"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxbuildingchangesperdayform.cpp" line="154"/>
@@ -18073,7 +18073,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxbuildingchangesperdayform_template.ui" line="14"/>
         <source>Constraints students max building changes per day</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>العدد الأقصى لتغيير البنايات في اليوم لمجموعة طلاب</translation>
+        <translation>قيود أقصى تغيير للبنايات في اليوم للطلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxbuildingchangesperdayform_template.ui" line="28"/>
@@ -18117,7 +18117,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4703"/>
         <source>Students max building changes per week</source>
-        <translation>العدد الأقصى من تغيير البنايات لمجموعة طلاب في الأسبوع</translation>
+        <translation>أقصى تغيير للبنايات في الأسبوع للطلاب</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4705"/>
@@ -18195,7 +18195,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentsmaxbuildingchangesperweekform.cpp" line="153"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxbuildingchangesperweekform.cpp" line="154"/>
@@ -18214,7 +18214,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxbuildingchangesperweekform_template.ui" line="14"/>
         <source>Constraints students max building changes per week</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>العدد الأقصى لتغيير البنايات في الأسبوع لمجموعة طلاب</translation>
+        <translation>قيود أقصى تغيير للبنايات في الأسبوع للطلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxbuildingchangesperweekform_template.ui" line="28"/>
@@ -18484,7 +18484,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperdayform.cpp" line="155"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperdayform.cpp" line="156"/>
@@ -18503,7 +18503,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxgapsperdayform_template.ui" line="14"/>
         <source>Constraints students max gaps per day</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>العدد الأقصى من الفجوات اليومية لمجموعة طلاب</translation>
+        <translation>قيود أقصى فجوات في اليوم للطلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperdayform_template.ui" line="26"/>
@@ -18635,7 +18635,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperweekform.cpp" line="152"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperweekform.cpp" line="153"/>
@@ -18778,7 +18778,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentsmaxhourscontinuouslyform.cpp" line="152"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxhourscontinuouslyform.cpp" line="153"/>
@@ -18863,7 +18863,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6822"/>
         <source>All students must respect the maximum number of hours daily</source>
-        <translation>العدد الأقصى من الحصص اليومية لكل الطلاب</translation>
+        <translation>كل الطلاب يجب عليهم احترام أقصى عدد من الحصص اليومية</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6823"/>
@@ -18914,7 +18914,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentsmaxhoursdailyform.cpp" line="152"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxhoursdailyform.cpp" line="153"/>
@@ -19135,7 +19135,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5253"/>
         <source>Students minimum gaps between building changes</source>
-        <translation>العدد الأدنى للفجوات بين تغيير البنايات للطلاب</translation>
+        <translation>أدنى فجوات بين تغيير البنايات لطلاب</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5255"/>
@@ -19191,7 +19191,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentsmingapsbetweenbuildingchangesform.cpp" line="153"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmingapsbetweenbuildingchangesform.cpp" line="154"/>
@@ -19343,7 +19343,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentsminhoursdailyform.cpp" line="156"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminhoursdailyform.cpp" line="157"/>
@@ -19615,7 +19615,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8079"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8080"/>
@@ -19658,7 +19658,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="183"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="184"/>
@@ -19789,7 +19789,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16773"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16774"/>
@@ -19830,7 +19830,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform.cpp" line="186"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform.cpp" line="187"/>
@@ -19849,7 +19849,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Constraints students set activity tag max hours daily</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>العدد الأقصى من الحصص اليومية لوسم مشترك لمجموعة طلاب</translation>
+        <translation>قيود أقصى حصص يومية مع وسم مشترك لمجموعة طلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="130"/>
@@ -19907,7 +19907,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6483"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6484"/>
@@ -20012,7 +20012,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="173"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="174"/>
@@ -20178,7 +20178,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomform.cpp" line="182"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomform.cpp" line="183"/>
@@ -20197,7 +20197,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssethomeroomform_template.ui" line="14"/>
         <source>Constraints students set home room</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>قاعة مخصّصة لمجموعة طلاب</translation>
+        <translation>قيود قاعة مخصّصة لمجموعة طلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomform_template.ui" line="104"/>
@@ -20245,7 +20245,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1575"/>
         <source>FET error in data</source>
-        <translation>فيت خطأ في البيانات</translation>
+        <translation>FET خطأ في البيانات</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1576"/>
@@ -20349,7 +20349,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomsform.cpp" line="191"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomsform.cpp" line="192"/>
@@ -20368,7 +20368,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssethomeroomsform_template.ui" line="14"/>
         <source>Constraints students set home rooms</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>قاعات مخصّصة لمجموعة طلاب</translation>
+        <translation>قيود قاعات مخصّصة لمجموعة طلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomsform_template.ui" line="104"/>
@@ -20408,7 +20408,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomsform_template.ui" line="26"/>
         <source>Note: a home room for a students set means that every activity which has this and ONLY this students set will have these home rooms (not other superior or inferior set). You can add home rooms for a group, for a year or for a subgroup, careful not to make impossible timetables. Preferred rooms override the home rooms.</source>
-        <translation>ملاحظة: قاعة مخصّصة لمجموعة طلاب تعني أن كل نشاط ترفق حصريا بهؤلاء الطلاب ستخصّص لهم هذه القاعة (ليس لمجموعة طلاب آخرين أعلى أو أقل مستوى). يمكنك اضافة قاعات مخصّصة لقسم، أو فوج، أو مستوى، مع الحذر أن تجعل الجدول الزمني صعبا. قيد قاعات مفضلة أقوى من قيد قاعات مخصّصة.</translation>
+        <translation>ملاحظة: قاعة مخصّصة لمجموعة طلاب تعني أن كل نشاط ترفق حصريا بهؤلاء الطلاب ستخصّص لهم هذه القاعة (ليس لمجموعة طلاب آخرين أعلى أو أقل مستوى). يمكنك اضافة قاعات مخصّصة لمجموعة، أو مجموعة فرعية، أو مستوى، مع الحذر أن تجعل الجدول الزمني صعبا. قيد قاعات مفضلة أقوى من قيد قاعات مخصّصة.</translation>
     </message>
 </context>
 <context>
@@ -20578,7 +20578,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssetintervalmaxdaysperweekform.cpp" line="173"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetintervalmaxdaysperweekform.cpp" line="174"/>
@@ -20685,7 +20685,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3957"/>
         <source>Students set maximum building changes per day</source>
-        <translation>العدد الأقصى لتغيير البنايات في اليوم لمجموعة طلاب</translation>
+        <translation>أقصى تغيير للبنايات في اليوم لمجموعة طلاب</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3959"/>
@@ -20746,7 +20746,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperdayform.cpp" line="173"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperdayform.cpp" line="174"/>
@@ -20765,7 +20765,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperdayform_template.ui" line="14"/>
         <source>Constraints students set max building changes per day</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>العدد الأقصى من تغيير البنايات في اليوم لمجموعة طلاب</translation>
+        <translation>قيود أقصى تغيير للبنايات في اليوم لمجموعة طلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperdayform_template.ui" line="28"/>
@@ -20915,7 +20915,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperweekform.cpp" line="173"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperweekform.cpp" line="174"/>
@@ -20934,7 +20934,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperweekform_template.ui" line="14"/>
         <source>Constraints students set max building changes per week</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>العدد الأقصى من تغيير البنايات في الأسبوع لمجموعة لطلاب</translation>
+        <translation>قيود أقصى تغيير للبنايات في الأسبوع لمجموعة لطلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperweekform_template.ui" line="28"/>
@@ -20994,7 +20994,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18289"/>
         <source>Students set max days per week</source>
-        <translation>العدد الأقصى من الأيام لمجموعة طلاب</translation>
+        <translation>أقصى أيام في الأسبوع لمجموعة طلاب</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18290"/>
@@ -21163,7 +21163,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17292"/>
         <source>Students set max gaps per day</source>
-        <translation>العدد الأقصى للفجوات لمجموعة طلاب</translation>
+        <translation>أقصى فجوات في اليوم لمجموعة طلاب</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17293"/>
@@ -21197,7 +21197,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17305"/>
         <source>A students set must respect the maximum number of gaps per day</source>
-        <translation>العدد الأقصى من الفجوات اليومية لمجموعة طلاب</translation>
+        <translation>مجموعة طلاب يجب عليها احترام أقصى عدد من الفجوات في اليوم</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17306"/>
@@ -21258,7 +21258,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssetmaxgapsperdayform.cpp" line="176"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxgapsperdayform.cpp" line="177"/>
@@ -21277,7 +21277,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetmaxgapsperdayform_template.ui" line="14"/>
         <source>Constraints students set max gaps per day</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>العدد الأقصى من الفجوات اليومية لمجموعة لطلاب</translation>
+        <translation>قيود أقصى فجوات يومية لمجموعة طلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxgapsperdayform_template.ui" line="26"/>
@@ -21437,7 +21437,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssetmaxgapsperweekform.cpp" line="173"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxgapsperweekform.cpp" line="174"/>
@@ -21533,7 +21533,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7499"/>
         <source>A students set must respect the maximum number of hours continuously</source>
-        <translation>يجب أنمجموعة طلاب يجب عليها أن تحترم أقصى عدد من الحصص المتصلة</translation>
+        <translation>مجموعة تلاميذ يجب عليها احترام أقصى عدد من الحصص المتصلة</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7500"/>
@@ -21564,7 +21564,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7522"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7523"/>
@@ -21608,7 +21608,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssetmaxhourscontinuouslyform.cpp" line="173"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxhourscontinuouslyform.cpp" line="174"/>
@@ -21735,7 +21735,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7041"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7042"/>
@@ -21772,7 +21772,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssetmaxhoursdailyform.cpp" line="173"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxhoursdailyform.cpp" line="174"/>
@@ -21998,7 +21998,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4907"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4908"/>
@@ -22044,7 +22044,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5004"/>
         <source>Students set minimum gaps between building changes</source>
-        <translation>العدد الأدنى من الفجوات بين تغيير البنايات لمجموعة طلاب</translation>
+        <translation>أدنى فجوات بين تغيير البنايات لمجموعة طلاب</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5006"/>
@@ -22105,7 +22105,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="173"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="174"/>
@@ -22174,7 +22174,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8598"/>
         <source>Students set min hours daily</source>
-        <translation>العدد الأدنى من الحصص اليومية لمجموعة طلاب</translation>
+        <translation>أدنى حصص يومية لمجموعة طلاب</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8599"/>
@@ -22249,7 +22249,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8640"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8641"/>
@@ -22285,7 +22285,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssetminhoursdailyform.cpp" line="176"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetminhoursdailyform.cpp" line="177"/>
@@ -22665,7 +22665,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssetnotavailabletimesform.cpp" line="173"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetnotavailabletimesform.cpp" line="174"/>
@@ -22935,7 +22935,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredstartingtimesform.cpp" line="157"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredstartingtimesform.cpp" line="158"/>
@@ -23221,7 +23221,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <source>Time constraint subactivities preferred time slots broken for activity with id=%1 (%2), component number %3, on %4 hours, increases conflicts total by %5</source>
         <comment>%1 is the id, %2 is the detailed description of the activity.</comment>
         <translation variants="yes">
-            <lengthvariant>قيد الزمن أنشطة فرعية لها فترات زمنية مفضلة تم تكسيره للنشاط id=%1 (%2)،رقم النشاط الفرعية %3 في %4 حصص،
+            <lengthvariant>قيد الزمن أنشطة فرعية لها فترات زمنية مفضلة تم تكسيره للنشاط id=%1 (%2)،رقم النشاط الفرعي %3 في %4 حصص،
 زيادة مجموع التعارضات %5</lengthvariant>
             <lengthvariant></lengthvariant>
         </translation>
@@ -23249,7 +23249,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredtimeslotsform.cpp" line="157"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredtimeslotsform.cpp" line="158"/>
@@ -23350,7 +23350,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="2886"/>
         <source>FET error in data</source>
-        <translation>فيت خطأ في البيانات</translation>
+        <translation>FET خطأ في البيانات</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="2887"/>
@@ -23460,7 +23460,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintsubjectactivitytagpreferredroomform.cpp" line="185"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintsubjectactivitytagpreferredroomform.cpp" line="186"/>
@@ -23522,7 +23522,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3133"/>
         <source>FET error in data</source>
-        <translation>فيت خطأ في البيانات</translation>
+        <translation>FET خطأ في البيانات</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3134"/>
@@ -23638,7 +23638,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintsubjectactivitytagpreferredroomsform.cpp" line="183"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintsubjectactivitytagpreferredroomsform.cpp" line="184"/>
@@ -23705,7 +23705,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="2394"/>
         <source>FET error in data</source>
-        <translation>فيت خطأ في البيانات</translation>
+        <translation>FET خطأ في البيانات</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="2395"/>
@@ -23804,7 +23804,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintsubjectpreferredroomform.cpp" line="173"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintsubjectpreferredroomform.cpp" line="174"/>
@@ -23866,7 +23866,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="2632"/>
         <source>FET error in data</source>
-        <translation>فيت خطأ في البيانات</translation>
+        <translation>FET خطأ في البيانات</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="2633"/>
@@ -23970,7 +23970,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintsubjectpreferredroomsform.cpp" line="173"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintsubjectpreferredroomsform.cpp" line="174"/>
@@ -24122,7 +24122,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteacheractivitytagmaxhourscontinuouslyform.cpp" line="174"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteacheractivitytagmaxhourscontinuouslyform.cpp" line="175"/>
@@ -24161,7 +24161,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteacheractivitytagmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Constraints teacher activity tag max hours continuously</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation> قيود أقصى  حصص متصلة لمدرس و وسم مشترك</translation>
+        <translation>قيود أقصى حصص متصلة مع وسم مشترك لمدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteacheractivitytagmaxhourscontinuouslyform_template.ui" line="100"/>
@@ -24284,7 +24284,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteacheractivitytagmaxhoursdailyform.cpp" line="175"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteacheractivitytagmaxhoursdailyform.cpp" line="176"/>
@@ -24303,7 +24303,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteacheractivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Constraints teacher activity tag max hours daily</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>العدد الاقصى من الحصص اليومية لمدرس ووسم مشترك</translation>
+        <translation>قيود أقصى حصص يومية مع وسم مشترك لمدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteacheractivitytagmaxhoursdailyform_template.ui" line="26"/>
@@ -24465,7 +24465,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteacherhomeroomform.cpp" line="171"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteacherhomeroomform.cpp" line="172"/>
@@ -24484,7 +24484,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteacherhomeroomform_template.ui" line="14"/>
         <source>Constraints teacher home room</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>قاعة مفضلة لمدرس</translation>
+        <translation>قيود قاعة مخصّصة لمدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteacherhomeroomform_template.ui" line="114"/>
@@ -24524,7 +24524,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteacherhomeroomform_template.ui" line="26"/>
         <source>Note: a home room for a teacher means that every activity which has this and ONLY this teacher will have this as home room. Preferred rooms override the home rooms.</source>
-        <translation>ملاحظة: قاعة مخصّصة لمدرس تعني أن كل نشاط له هذا و فقط هذا المدرس ستكون لها هذه القاعة كقاعة مخصّصة. قاعات مفضلة أقوى قيدا(أسبقية عليا) من قاعات مخصّصة.</translation>
+        <translation>ملاحظة: قاعة مخصّصة لمدرس تعني أن كل نشاط له هذا و فقط هذا المدرس ستكون له هذه القاعة، كقاعة مخصّصة. قاعات مفضلة أقوى قيدا(أسبقية عليا) من قاعات مخصّصة.</translation>
     </message>
 </context>
 <context>
@@ -24532,7 +24532,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="2130"/>
         <source>FET error in data</source>
-        <translation>فيت خطأ في البيانات</translation>
+        <translation>FET خطأ في البيانات</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="2131"/>
@@ -24636,7 +24636,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteacherhomeroomsform.cpp" line="180"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteacherhomeroomsform.cpp" line="181"/>
@@ -24655,7 +24655,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteacherhomeroomsform_template.ui" line="14"/>
         <source>Constraints teacher home rooms</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>قاعات مفضلة لمدرس</translation>
+        <translation>قيود قاعات مخصّصة لمدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteacherhomeroomsform_template.ui" line="114"/>
@@ -24695,7 +24695,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteacherhomeroomsform_template.ui" line="26"/>
         <source>Note: home rooms for a teacher means that every activity which has this and ONLY this teacher will have these home rooms. Preferred rooms override the home rooms.</source>
-        <translation>ملاحظة: قاعة مخصّصة لمدرس تعني أن كل نشاط له هذا و فقط هذا المدرس ستكون لها هذه القاعة كقاعة مخصّصة. قاعات مفضلة أقوى قيدا(أسبقية عليا) من قاعات مخصّصة.</translation>
+        <translation>ملاحظة: قاعات مخصّصة لمدرس تعني أن كل نشاط له هذا و فقط هذا المدرس ستكون لها هذه القاعات كقاعات مخصّصة. قاعات مفضلة أقوى قيدا(أسبقية عليا) من قاعات مخصّصة.</translation>
     </message>
 </context>
 <context>
@@ -24858,7 +24858,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteacherintervalmaxdaysperweekform.cpp" line="164"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteacherintervalmaxdaysperweekform.cpp" line="165"/>
@@ -24938,7 +24938,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5498"/>
         <source>Teacher max building changes per day</source>
-        <translation>العدد الأقصى من تغيير المباني للمدرس في اليوم</translation>
+        <translation>أقصى تغيير للبنايات في اليوم لمدرس</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5500"/>
@@ -25028,7 +25028,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachermaxbuildingchangesperdayform.cpp" line="162"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxbuildingchangesperdayform.cpp" line="163"/>
@@ -25047,7 +25047,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachermaxbuildingchangesperdayform_template.ui" line="14"/>
         <source>Constraints teacher max building changes per day</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>العدد الاقصى من تغيير المباني لمدرس في اليوم</translation>
+        <translation>قيود أقصى تغيير للبنايات في اليوم لمدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxbuildingchangesperdayform_template.ui" line="28"/>
@@ -25197,7 +25197,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachermaxbuildingchangesperweekform.cpp" line="162"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxbuildingchangesperweekform.cpp" line="163"/>
@@ -25216,7 +25216,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachermaxbuildingchangesperweekform_template.ui" line="14"/>
         <source>Constraints teacher max building changes per week</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>العدد الاقصى من تغيير المباني لمدرس في الأسبوع</translation>
+        <translation>قيود أقصى تغيير للبنايات في الأسبوع لمدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxbuildingchangesperweekform_template.ui" line="28"/>
@@ -25354,7 +25354,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachermaxdaysperweekform.cpp" line="164"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxdaysperweekform.cpp" line="165"/>
@@ -25373,7 +25373,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachermaxdaysperweekform_template.ui" line="14"/>
         <source>Constraints teacher max days per week</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>العدد الاقصى من الأيام لمدرس في الأسبوع</translation>
+        <translation>قيود أقصى أيام في الأسبوع لمدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxdaysperweekform_template.ui" line="28"/>
@@ -25451,7 +25451,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5332"/>
         <source>A teacher must respect the maximum number of gaps per day</source>
-        <translation>العدد الأقصى من عدد الفجوات في اليوم للمدرس</translation>
+        <translation>المدرس يجب عليه احترام أقصى عدد من الفجوات في اليوم</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5333"/>
@@ -25512,7 +25512,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachermaxgapsperdayform.cpp" line="164"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxgapsperdayform.cpp" line="165"/>
@@ -25531,7 +25531,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachermaxgapsperdayform_template.ui" line="14"/>
         <source>Constraints teacher max gaps per day</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>العدد الاقصى من الفجوات لمدرس في اليوم</translation>
+        <translation>قيود أقصى فجوات في اليوم لمدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxgapsperdayform_template.ui" line="28"/>
@@ -25581,7 +25581,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4908"/>
         <source>Teacher max gaps per week</source>
-        <translation>العدد الأقصى للفجوات في الأسبوع للمدرس</translation>
+        <translation>أقصى فجوات في الأسبوع لمدرس</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4909"/>
@@ -25609,7 +25609,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4920"/>
         <source>A teacher must respect the maximum number of gaps per week</source>
-        <translation>العدد الأقصى من عدد الفجوات في الأسبوع للمدرس</translation>
+        <translation>المدرس يجب عليه احترام أقصى عدد من الفجوات في الأسبوع</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4921"/>
@@ -25670,7 +25670,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachermaxgapsperweekform.cpp" line="164"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxgapsperweekform.cpp" line="165"/>
@@ -25689,7 +25689,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachermaxgapsperweekform_template.ui" line="14"/>
         <source>Constraints teacher max gaps per week</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>العدد الاقصى من الفجوات لمدرس في الأسبوع</translation>
+        <translation>قيود أقصى فجوات في الأسبوع لمدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxgapsperweekform_template.ui" line="28"/>
@@ -25830,7 +25830,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachermaxhourscontinuouslyform.cpp" line="164"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxhourscontinuouslyform.cpp" line="165"/>
@@ -25849,7 +25849,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachermaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Constraints teacher max hours continuously</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>أقصى حصص متصلة لمدرس</translation>
+        <translation>قيود أقصى حصص متصلة لمدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxhourscontinuouslyform_template.ui" line="95"/>
@@ -25899,7 +25899,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3014"/>
         <source>Teacher max hours daily</source>
-        <translation>العدد الأقصى من الحصص اليومية للمدرس</translation>
+        <translation>أقصى حصص يومية لمدرس</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3011"/>
@@ -25928,7 +25928,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3026"/>
         <source>A teacher must respect the maximum number of hours daily</source>
-        <translation>العدد الأقصى من الحصص في اليوم للمدرس</translation>
+        <translation>المدرس يجب عليه احترام أقصى عدد من الحصص اليومية</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3027"/>
@@ -25989,7 +25989,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachermaxhoursdailyform.cpp" line="164"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxhoursdailyform.cpp" line="165"/>
@@ -26008,7 +26008,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachermaxhoursdailyform_template.ui" line="14"/>
         <source>Constraints teacher max hours daily</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>العدد الاقصى من الحصص اليومية لمدرس</translation>
+        <translation>قيود أقصى حصص يومية لمدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxhoursdailyform_template.ui" line="95"/>
@@ -26237,7 +26237,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14234"/>
         <source>A teacher must respect the minimum number of days per week</source>
-        <translation>العدد الأدنى من أيام العمل الأسبوعي للمدرس</translation>
+        <translation>المدرس يجب عليه احترام أدنى عدد من الأيام في الأسبوع</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14235"/>
@@ -26252,7 +26252,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14237"/>
         <source>Minimum days per week=%1</source>
-        <translation>العدد الأدنى لأيام العمل=%1</translation>
+        <translation>أدنى أيام في الأسبوع=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14240"/>
@@ -26298,7 +26298,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachermindaysperweekform.cpp" line="164"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermindaysperweekform.cpp" line="165"/>
@@ -26317,7 +26317,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachermindaysperweekform_template.ui" line="14"/>
         <source>Constraints teacher min days per week</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>العدد الادنى من الأيام لمدرس في الأسبوع</translation>
+        <translation>قيود أدنى أيام في الأسبوع لمدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermindaysperweekform_template.ui" line="28"/>
@@ -26360,7 +26360,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6429"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6430"/>
@@ -26467,7 +26467,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachermingapsbetweenbuildingchangesform.cpp" line="162"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermingapsbetweenbuildingchangesform.cpp" line="163"/>
@@ -26486,7 +26486,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachermingapsbetweenbuildingchangesform_template.ui" line="14"/>
         <source>Constraints teacher min gaps between building changes</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>العدد الادنى من الفجوات بين تغيير المباني لمدرس</translation>
+        <translation>قيود أدنى فجوات بين تغيير البنايات لمدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermingapsbetweenbuildingchangesform_template.ui" line="28"/>
@@ -26650,7 +26650,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteacherminhoursdailyform.cpp" line="164"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteacherminhoursdailyform.cpp" line="165"/>
@@ -26669,7 +26669,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteacherminhoursdailyform_template.ui" line="14"/>
         <source>Constraints teacher min hours daily</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>العدد الادنى من الحصص اليومية لمدرس</translation>
+        <translation>قيود أدنى حصص يومية لمدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteacherminhoursdailyform_template.ui" line="95"/>
@@ -27010,7 +27010,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachernotavailabletimesform.cpp" line="164"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachernotavailabletimesform.cpp" line="165"/>
@@ -27157,7 +27157,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachersactivitytagmaxhourscontinuouslyform.cpp" line="163"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersactivitytagmaxhourscontinuouslyform.cpp" line="164"/>
@@ -27181,7 +27181,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachersactivitytagmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Constraints teachers activity tag max hours continuously</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>العدد الاقصى من الحصص المتصلة للمدرسين ووسم مشترك</translation>
+        <translation>قيود أقصى حصص متصلة مع وسم مشترك للمدرسين</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersactivitytagmaxhourscontinuouslyform_template.ui" line="90"/>
@@ -27313,7 +27313,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachersactivitytagmaxhoursdailyform.cpp" line="166"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersactivitytagmaxhoursdailyform.cpp" line="167"/>
@@ -27332,7 +27332,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachersactivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Constraints teachers activity tag max hours daily</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>العدد الاقصى من الحصص اليومية للمدرسين ووسم مشترك</translation>
+        <translation>قيود أقصى حصص يومية مع وسم مشترك للمدرسين</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersactivitytagmaxhoursdailyform_template.ui" line="26"/>
@@ -27392,7 +27392,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="14854"/>
         <location filename="../src/engine/timeconstraint.cpp" line="14861"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14848"/>
@@ -27532,7 +27532,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachersintervalmaxdaysperweekform.cpp" line="154"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersintervalmaxdaysperweekform.cpp" line="155"/>
@@ -27551,7 +27551,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachersintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Constraints teachers interval max days per week</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>قيود أقصى تكرار لحصص معينة في الأسبوع لكل المدرسين</translation>
+        <translation>قيود أقصى تكرار لحصص معينة في الأسبوع للمدرسين</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersintervalmaxdaysperweekform_template.ui" line="28"/>
@@ -27595,7 +27595,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5738"/>
         <source>Teachers max building changes per day</source>
-        <translation>العدد الأقصى من تغيير المباني للمدرسين في اليوم</translation>
+        <translation>أقصى تغيير للبنايات في اليوم للمدرسين</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5740"/>
@@ -27673,7 +27673,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachersmaxbuildingchangesperdayform.cpp" line="153"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxbuildingchangesperdayform.cpp" line="154"/>
@@ -27692,7 +27692,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachersmaxbuildingchangesperdayform_template.ui" line="14"/>
         <source>Constraints teachers max building changes per day</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>قيود قصى تغيير للبنايات في اليوم للمدرسين</translation>
+        <translation>قيود أقصى تغيير للبنايات في اليوم للمدرسين</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxbuildingchangesperdayform_template.ui" line="28"/>
@@ -27814,7 +27814,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachersmaxbuildingchangesperweekform.cpp" line="153"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxbuildingchangesperweekform.cpp" line="154"/>
@@ -27833,7 +27833,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachersmaxbuildingchangesperweekform_template.ui" line="14"/>
         <source>Constraints teachers max building changes per week</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>العدد الاقصى من تغيير المباني للمدرسين في الأسبوع</translation>
+        <translation>قيود أقصى تغيير للبنايات في الأسبوع للمدرسين</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxbuildingchangesperweekform_template.ui" line="28"/>
@@ -27955,7 +27955,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachersmaxdaysperweekform.cpp" line="152"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxdaysperweekform.cpp" line="153"/>
@@ -27974,7 +27974,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachersmaxdaysperweekform_template.ui" line="14"/>
         <source>Constraints teachers max days per week</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>قيود أقصى أيام في الأسبوع لمدرسين</translation>
+        <translation>قيود أقصى أيام في الأسبوع للمدرسين</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxdaysperweekform_template.ui" line="28"/>
@@ -28096,7 +28096,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachersmaxgapsperdayform.cpp" line="152"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxgapsperdayform.cpp" line="153"/>
@@ -28115,7 +28115,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachersmaxgapsperdayform_template.ui" line="14"/>
         <source>Constraints teachers max gaps per day</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>العدد الاقصى من الفجوات للمدرسين في اليوم</translation>
+        <translation>قيود أقصى فجوات في اليوم للمدرسين</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxgapsperdayform_template.ui" line="28"/>
@@ -28159,7 +28159,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4700"/>
         <source>Teachers max gaps per week</source>
-        <translation>العدد الأقصى للفجوات في الأسبوع للمدرسين</translation>
+        <translation>أقصى فجوات في الأسبوع للمدرسين</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4701"/>
@@ -28237,7 +28237,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachersmaxgapsperweekform.cpp" line="152"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxgapsperweekform.cpp" line="153"/>
@@ -28256,7 +28256,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachersmaxgapsperweekform_template.ui" line="14"/>
         <source>Constraints teachers max gaps per week</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>العدد الاقصى من الفجوات للمدرسين في الأسبوع</translation>
+        <translation>قيود أقصى فجوات في الأسبوع للمدرسين</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxgapsperweekform_template.ui" line="28"/>
@@ -28322,7 +28322,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3240"/>
         <source>All teachers must respect the maximum number of hours continuously</source>
-        <translation>العدد الأقصى من الحصص المتصلة لكل المدرسين</translation>
+        <translation>كل المدرسين ينبغي عليهم احترام أقصى عدد من الحصص المتصلة</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3241"/>
@@ -28380,7 +28380,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachersmaxhourscontinuouslyform.cpp" line="152"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxhourscontinuouslyform.cpp" line="153"/>
@@ -28399,7 +28399,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachersmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Constraints teachers max hours continuously</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>العدد الاقصى من الحصص المتصلة للمدرسين</translation>
+        <translation>قيود أقصى حصص متصلة للمدرسين</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxhourscontinuouslyform_template.ui" line="83"/>
@@ -28465,7 +28465,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="2806"/>
         <source>All teachers must respect the maximum number of hours daily</source>
-        <translation>العدد الأقصى من الحصص اليومية للمدرس</translation>
+        <translation>كل المدرسين يجب عليهم احترام أقصى عدد من الحصص اليومية</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="2807"/>
@@ -28521,7 +28521,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachersmaxhoursdailyform.cpp" line="152"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxhoursdailyform.cpp" line="153"/>
@@ -28540,7 +28540,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachersmaxhoursdailyform_template.ui" line="14"/>
         <source>Constraints teachers max hours daily</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>العدد الاقصى من الحصص اليومية للمدرسين</translation>
+        <translation>قيود أقصى حصص يومية للمدرسين</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxhoursdailyform_template.ui" line="83"/>
@@ -28757,7 +28757,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14435"/>
         <source>Minimum days per week=%1</source>
-        <translation>العدد الأدنى لأيام العمل=%1</translation>
+        <translation>أدنى أيام في الأسبوع=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14438"/>
@@ -28798,7 +28798,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachersmindaysperweekform.cpp" line="152"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmindaysperweekform.cpp" line="153"/>
@@ -28817,7 +28817,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachersmindaysperweekform_template.ui" line="14"/>
         <source>Constraints teachers min days per week</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>العدد الادنى من أيام العمل الأسبوعي للمدرسين</translation>
+        <translation>قيود أدنى أيام في الأسبوع للمدرسين</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmindaysperweekform_template.ui" line="28"/>
@@ -28861,7 +28861,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6726"/>
         <source>Teachers min gaps between building changes</source>
-        <translation>العدد الأدنى للفجوات بين تغيير البنايات للمدرسين</translation>
+        <translation>أدنى فجوات بين تغيير البنايات للمدرسين</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6728"/>
@@ -28939,7 +28939,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachersmingapsbetweenbuildingchangesform.cpp" line="153"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmingapsbetweenbuildingchangesform.cpp" line="154"/>
@@ -28958,7 +28958,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachersmingapsbetweenbuildingchangesform_template.ui" line="14"/>
         <source>Constraints teachers min gaps between building changes</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>العدد الأدنى من الفجوات بين تغيير البنايات للمدرسين</translation>
+        <translation>قيود أدنى فجوات بين تغيير البنايات للمدرسين</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmingapsbetweenbuildingchangesform_template.ui" line="28"/>
@@ -29106,7 +29106,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachersminhoursdailyform.cpp" line="152"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersminhoursdailyform.cpp" line="153"/>
@@ -29125,7 +29125,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachersminhoursdailyform_template.ui" line="14"/>
         <source>Constraints teachers min hours daily</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>العدد الأدنى من الحصص اليومية للمدرسين</translation>
+        <translation>قيود أدنى حصص يومية للمدرسين</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersminhoursdailyform_template.ui" line="83"/>
@@ -29314,7 +29314,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="12911"/>
         <location filename="../src/engine/timeconstraint.cpp" line="12920"/>
         <source>FET error in data</source>
-        <translation>فيت خطأ في البيانات</translation>
+        <translation>FET خطأ في البيانات</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12874"/>
@@ -29440,7 +29440,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="150"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="151"/>
@@ -29509,7 +29509,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="12331"/>
         <location filename="../src/engine/timeconstraint.cpp" line="12340"/>
         <source>FET error in data</source>
-        <translation>فيت خطأ في البيانات</translation>
+        <translation>FET خطأ في البيانات</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12313"/>
@@ -29622,7 +29622,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="150"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="151"/>
@@ -29804,7 +29804,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="150"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="151"/>
@@ -29987,7 +29987,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="150"/>
         <source>FET confirmation</source>
-        <translation>فيت تأكيد</translation>
+        <translation>FET تأكيد</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="151"/>
@@ -30082,7 +30082,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/daysform.cpp" line="174"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
 </context>
 <context>
@@ -32285,7 +32285,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="918"/>
         <source>Would you like to open the FET homepage now?</source>
-        <translation>هل ترغب بزيارة موقع فيت الآن؟</translation>
+        <translation>هل ترغب بزيارة موقع FET الآن؟</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="959"/>
@@ -33632,22 +33632,22 @@ G1 ستظهر مرتين في الجدول</translation>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1938"/>
         <source>Import rooms and buildings from CSV file</source>
-        <translation>استيراد القاعات والبنايات من ملف CSV</translation>
+        <translation>استيراد قاعات و بنايات من ملف CSV</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1943"/>
         <source>Import subjects from CSV file</source>
-        <translation>استيراد المواد من ملف CSV</translation>
+        <translation>استيراد مواد من ملف CSV</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1948"/>
         <source>Import teachers from CSV file</source>
-        <translation>استيراد المدرسين من ملف CSV</translation>
+        <translation>استيراد مدرسين من ملف CSV</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1953"/>
         <source>Import years, groups and subgroups from CSV file</source>
-        <translation>استيراد، الأعوام، المجموعات و المجموعات الفرعية من ملف CSV</translation>
+        <translation>استيراد، أعوام، مجموعات و مجموعات فرعية من ملف CSV</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1958"/>
@@ -33887,7 +33887,7 @@ G1 ستظهر مرتين في الجدول</translation>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2054"/>
         <source>Max hours continuously with an activity tag for a students set</source>
-        <translation>أقصى حصص متصلة مع وسم مشترك و مجموعة طلاب</translation>
+        <translation>أقصى حصص متصلة مع وسم مشترك لمجموعة طلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2059"/>
@@ -33982,7 +33982,7 @@ G1 ستظهر مرتين في الجدول</translation>
         <location filename="../src/interface/fet.cpp" line="256"/>
         <location filename="../src/interface/fet.cpp" line="785"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="256"/>
@@ -34030,7 +34030,7 @@ G1 ستظهر مرتين في الجدول</translation>
     <message>
         <location filename="../src/interface/fet.cpp" line="1391"/>
         <source>No: %1</source>
-        <translation>No: %1</translation>
+        <translation>رقم: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="746"/>
@@ -34265,7 +34265,7 @@ G1 ستظهر مرتين في الجدول</translation>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="930"/>
         <source>These constraints are nonstandard. They are recommended only if the students can have free days and a solution with free days for students exists. Otherwise the solution might be impossible for FET to find.</source>
-        <translation>هذة القيود ليست ذات مواصفات قياسية. هي مستحسنة فقط إذا كان الطلاب بامكانهم الحصول على أيام فارغة، و الحل مع أيام فارغة موجود. بخلاف ذلك الحل قد يكون مستحيلا على FET id^h$i.</translation>
+        <translation>هذه القيود ليست ذات مواصفات قياسية. هي مستحسنة فقط إذا كان الطلاب بامكانهم الحصول على أيام فارغة، و الحل مع أيام فارغة موجود. بخلاف ذلك الحل قد يكون مستحيلا على FET.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="1031"/>
@@ -35508,7 +35508,7 @@ Please modify your data correspondingly and try again</source>
         <location filename="../src/engine/generate_pre.cpp" line="9379"/>
         <source>No: %1</source>
         <comment>Number</comment>
-        <translation>No: %1</translation>
+        <translation>رقم: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9383"/>
@@ -35989,7 +35989,7 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/interface/groupsform_template.ui" line="123"/>
         <source>Deactivate all activities for selected group</source>
-        <translation>الغاء تفعيل كل الأنشطة للمجموعة المحددة</translation>
+        <translation>تعطيل كل الأنشطة للمجموعة المحددة</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform_template.ui" line="67"/>
@@ -36028,24 +36028,6 @@ p, li { white-space: pre-wrap; }
         <location filename="../src/interface/helpaboutform_template.ui" line="27"/>
         <source>About</source>
         <translation>حول</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.31.3 (April 2017).&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET homepage: &lt;/span&gt;&lt;a href=&quot;http://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;http://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="90"/>
@@ -36580,6 +36562,24 @@ p, li { white-space: pre-wrap; }
         <translation>المراجع</translation>
     </message>
     <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.31.4 (April 2017).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET homepage: &lt;/span&gt;&lt;a href=&quot;http://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;http://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="133"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -36714,7 +36714,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="302"/>
         <source>Thanks to</source>
-        <translation>شكر إلى</translation>
+        <translation>شكر</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="852"/>
@@ -39512,7 +39512,7 @@ Please stop simulation before this</source>
         <location filename="../src/engine/import.cpp" line="444"/>
         <source>FET - import %1 comment</source>
         <comment>The comment of the importing of the category named %1</comment>
-        <translation>فيت - استيراد %1 تعليق</translation>
+        <translation>FET - استيراد %1 تعليق</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="455"/>
@@ -39526,7 +39526,7 @@ Please stop simulation before this</source>
         <location filename="../src/engine/export.cpp" line="405"/>
         <source>FET - export comment</source>
         <comment>The comment of the exporting operation</comment>
-        <translation>فيت - تصدير تعليق</translation>
+        <translation>FET - تصدير تعليق</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="416"/>
@@ -39558,7 +39558,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyactivityform.cpp" line="446"/>
         <location filename="../src/interface/modifyactivityform.cpp" line="484"/>
         <source>FET question</source>
-        <translation>فيت سؤال</translation>
+        <translation>FET سؤال</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform.cpp" line="447"/>
@@ -40514,7 +40514,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="386"/>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="417"/>
         <source>FET question</source>
-        <translation>فيت سؤال</translation>
+        <translation>FET سؤال</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="353"/>
@@ -40651,7 +40651,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="385"/>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="416"/>
         <source>FET question</source>
-        <translation>فيت سؤال</translation>
+        <translation>FET سؤال</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="352"/>
@@ -41499,7 +41499,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform.cpp" line="361"/>
         <source>FET question</source>
-        <translation>فيت سؤال</translation>
+        <translation>FET سؤال</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform.cpp" line="362"/>
@@ -41600,7 +41600,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform.cpp" line="361"/>
         <source>FET question</source>
-        <translation>فيت سؤال</translation>
+        <translation>FET سؤال</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform.cpp" line="362"/>
@@ -42053,7 +42053,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform_template.ui" line="156"/>
         <source>Max days</source>
         <comment>It refers to maximum number of days between activities.</comment>
-        <translation>العدد الأقصى من الأيام</translation>
+        <translation>أقصى أيام</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform_template.ui" line="134"/>
@@ -42114,7 +42114,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="236"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="268"/>
@@ -42382,7 +42382,7 @@ force activities consecutive</source>
         <location filename="../src/interface/modifyconstraintstudentsactivitytagmaxhourscontinuouslyform.cpp" line="82"/>
         <location filename="../src/interface/modifyconstraintstudentsactivitytagmaxhourscontinuouslyform.cpp" line="90"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsactivitytagmaxhourscontinuouslyform.cpp" line="83"/>
@@ -42437,7 +42437,7 @@ force activities consecutive</source>
         <location filename="../src/interface/modifyconstraintstudentsactivitytagmaxhoursdailyform.cpp" line="83"/>
         <location filename="../src/interface/modifyconstraintstudentsactivitytagmaxhoursdailyform.cpp" line="91"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsactivitytagmaxhoursdailyform.cpp" line="84"/>
@@ -42710,7 +42710,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxbuildingchangesperweekform_template.ui" line="67"/>
         <source>Max building changes per week</source>
-        <translation>العدد الأقصى من البنايات في الأسبوع</translation>
+        <translation>أقصى تغيير للبنايات في الأسبوع</translation>
     </message>
 </context>
 <context>
@@ -42791,7 +42791,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxgapsperdayform_template.ui" line="90"/>
         <source>Max gaps per day</source>
-        <translation>العدد الأقصى للفجوات في اليوم</translation>
+        <translation>أقصى فجوات في اليوم</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxgapsperdayform_template.ui" line="32"/>
@@ -42909,7 +42909,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentsmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Modify constraint students max hours continuously</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>العدد الأقصى من الحصص المتصلة لمجموعة طلاب</translation>
+        <translation>تعديل قيد أقصى حصص متصلة للطلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxhourscontinuouslyform_template.ui" line="28"/>
@@ -42948,7 +42948,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentsmaxhoursdailyform_template.ui" line="14"/>
         <source>Modify students max hours daily</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>العدد الأقصى من الحصص اليومية للطلاب</translation>
+        <translation>تعديل أقصى حصص يومية للطلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxhoursdailyform_template.ui" line="56"/>
@@ -43126,7 +43126,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentsminhoursdailyform_template.ui" line="14"/>
         <source>Modify students min hours daily</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>العدد الأدنى من الحصص اليومية للطلاب</translation>
+        <translation>تعديل أدنى عدد من الحصص اليومية للطلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsminhoursdailyform_template.ui" line="62"/>
@@ -43209,7 +43209,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="131"/>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="139"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="124"/>
@@ -43275,7 +43275,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="132"/>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="140"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="125"/>
@@ -43717,7 +43717,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperweekform_template.ui" line="119"/>
         <source>Max building changes per week</source>
-        <translation>العدد الأقصى من البنايات في الأسبوع</translation>
+        <translation>أقصى تغيير للبنايات في الأسبوع</translation>
     </message>
 </context>
 <context>
@@ -44860,7 +44860,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhourscontinuouslyform.cpp" line="103"/>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhourscontinuouslyform.cpp" line="111"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhourscontinuouslyform.cpp" line="104"/>
@@ -44930,7 +44930,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhoursdailyform.cpp" line="104"/>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhoursdailyform.cpp" line="112"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhoursdailyform.cpp" line="105"/>
@@ -45355,7 +45355,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxdaysperweekform_template.ui" line="117"/>
         <source>Max days per week</source>
-        <translation>العدد الأقصى لأيام العمل الأسبوعي</translation>
+        <translation>أقصى أيام في الأسبوع</translation>
     </message>
 </context>
 <context>
@@ -46008,7 +46008,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachersactivitytagmaxhourscontinuouslyform.cpp" line="90"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersactivitytagmaxhourscontinuouslyform.cpp" line="90"/>
@@ -46067,7 +46067,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachersactivitytagmaxhoursdailyform.cpp" line="91"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersactivitytagmaxhoursdailyform.cpp" line="91"/>
@@ -46270,7 +46270,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxbuildingchangesperweekform_template.ui" line="68"/>
         <source>Max building changes per week</source>
-        <translation>العدد الأقصى من البنايات في الأسبوع</translation>
+        <translation>أقصى تغيير للبنايات في الأسبوع</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxbuildingchangesperweekform_template.ui" line="28"/>
@@ -46375,7 +46375,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxgapsperdayform_template.ui" line="61"/>
         <source>Max gaps per day</source>
-        <translation>العدد الأقصى للفجوات في اليوم</translation>
+        <translation>أقصى فجوات في اليوم</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxgapsperdayform_template.ui" line="32"/>
@@ -46703,7 +46703,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachersminhoursdailyform_template.ui" line="84"/>
         <source>Min hours daily</source>
-        <translation>العدد الأدنى من الحصص اليومية</translation>
+        <translation>أدنى حصص يومية</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersminhoursdailyform_template.ui" line="14"/>
@@ -47486,7 +47486,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifysubactivityform.cpp" line="87"/>
         <source>Current subactivity has split index %1 out of %2</source>
-        <translation>النشاط الفرعية الحالية ترتيبها %1 من %2</translation>
+        <translation>النشاط الفرعي الحالي ترتيبها %1 من %2</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform.cpp" line="88"/>
@@ -48150,31 +48150,31 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/engine/rules.cpp" line="105"/>
         <location filename="../src/engine/rules.cpp" line="4728"/>
         <source>Monday</source>
-        <translation>الاثنين</translation>
+        <translation>الأحد</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="106"/>
         <location filename="../src/engine/rules.cpp" line="4729"/>
         <source>Tuesday</source>
-        <translation>الثلاثاء</translation>
+        <translation>الاثنين</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="107"/>
         <location filename="../src/engine/rules.cpp" line="4730"/>
         <source>Wednesday</source>
-        <translation>الأربعاء</translation>
+        <translation>الثلاثاء</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="108"/>
         <location filename="../src/engine/rules.cpp" line="4731"/>
         <source>Thursday</source>
-        <translation>الخميس</translation>
+        <translation>الأربعاء</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="109"/>
         <location filename="../src/engine/rules.cpp" line="4732"/>
         <source>Friday</source>
-        <translation>الجمعة</translation>
+        <translation>الخميس</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="101"/>
@@ -48561,7 +48561,7 @@ Please note that the default weight percentage of constraints min days between a
     <message>
         <location filename="../src/engine/rules.cpp" line="4715"/>
         <source>Opening a file generated with a newer version than your current FET software ... file will be opened but it is recommended to update your FET software to the latest version</source>
-        <translation>سيتم فتح ملف تم إنشاؤه باستخدام إصدار أحدث من برنامج FET الحالي ... الملف سيُفتَح ولكن من المستحسن تحيين برنامج فيت إلى أحدث إصدار</translation>
+        <translation>سيتم فتح ملف تم إنشاؤه باستخدام إصدار أحدث من برنامج FET الحالي ... الملف سيُفتَح ولكن من المستحسن تحيين برنامج FET إلى أحدث إصدار</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="4716"/>
@@ -49394,7 +49394,7 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/settingstimetablehtmllevelform.cpp" line="81"/>
         <source>FET warning</source>
-        <translation>فيت تحذير</translation>
+        <translation>FET تحذير</translation>
     </message>
     <message>
         <location filename="../src/interface/settingstimetablehtmllevelform.cpp" line="81"/>
@@ -51245,13 +51245,13 @@ N1 ( C1(G1,G2), C2(G1, G3) )
         <location filename="../src/interface/subactivitiesform.cpp" line="318"/>
         <source>No: %1 / %2</source>
         <comment>No means number, %1 is the number of active activities, %2 is the number of total activities.Please leave space between fields, so that they are better visible</comment>
-        <translation>No: %1 / %2</translation>
+        <translation>رقم: %1 / %2</translation>
     </message>
     <message>
         <location filename="../src/interface/subactivitiesform.cpp" line="320"/>
         <source>Dur: %1 / %2</source>
         <comment>Dur means duration, %1 is the duration of active activities, %2 is the duration of total activities.Please leave space between fields, so that they are better visible</comment>
-        <translation>Dur: %1 / %2</translation>
+        <translation>فترة: %1 / %2</translation>
     </message>
     <message>
         <location filename="../src/interface/subactivitiesform.cpp" line="333"/>
@@ -51273,12 +51273,12 @@ N1 ( C1(G1,G2), C2(G1, G3) )
     <message>
         <location filename="../src/interface/subactivitiesform.cpp" line="396"/>
         <source>Above the (sub)activities list, we have 2 labels, containing 4 numbers. The first label contains text: No: a / b. The first number a is the number of active (sub)activities (we number each individual subactivity as 1), while the second number b is the number of total (sub)activities. The second label contains text: Dur: c / d. The third number c is the duration of active (sub)activities, in periods (or FET hours), while the fourth number d is the duration of total (sub)activities, in periods (or FET hours). So, No means number and Dur means duration.</source>
-        <translation>فوق قائمة الأنشطة(الفرعية)، لدينا علامتان. العلامة الأولى تحتوي النص: &quot; No: a/ b &quot; أول عدد a هو عدد الأنشطة (الفرعية) المفعلة (نحسب على انفراد كل نشاط فرعي 1)، بينما ثاني عدد b هو العدد الاجمالي للأنشطة(الفرعية). العلامة الثانية تحتوي النص: المدة الزمنية &quot; Dur: c / d &quot; العدد الثالث c هو مدة الأنشطة (الفرعية) المفعلة، في الفترات الزمنية (أو حصص FET)، بينما العدد الرابع d هو المدة الاجمالية للأنشطة(الفرعية) في الفترات الزمنية (أو حصص FET). إذن، No تعني عدد أو رقم و Dur تعني مدة زمنية.</translation>
+        <translation>فوق قائمة الأنشطة(الفرعية)، لدينا علامتان. العلامة الأولى تحتوي النص: &quot; رقم: a/ b &quot; أول عدد a هو عدد الأنشطة (الفرعية) المفعلة (نحسب على انفراد كل نشاط فرعي 1)، بينما ثاني عدد b هو العدد الاجمالي للأنشطة(الفرعية). العلامة الثانية تحتوي النص: المدة الزمنية &quot; فترة: c / d &quot; العدد الثالث c هو مدة الأنشطة (الفرعية) المفعلة، في الفترات الزمنية (أو حصص FET)، بينما العدد الرابع d هو المدة الاجمالية للأنشطة(الفرعية) في الفترات الزمنية (أو حصص FET). إذن، No تعني عدد أو رقم و Dur تعني مدة زمنية.</translation>
     </message>
     <message>
         <location filename="../src/interface/subactivitiesform.cpp" line="402"/>
         <source>Example: No: 100 / 102, Dur: 114 / 117. They represent: 100 - the number of active (sub)activities, then 102 - the number of total (sub)activities, 114 - the duration of active activities (in periods or FET hours) and 117 - the duration of total activities (in periods or FET hours). In this example we have 2 inactive activities with their combined duration being 3 periods.</source>
-        <translation>مثال: No: 100/102، Dur: 114/117. تمثل: 100 - عدد الأنشطة(الفرعية) المفعلة، و 102 - العدد الاجمالي للأنشطة(الفرعية)، 114 - مدة الأنشطة(الفرعية) (في الفترات الزمنية أو حصص FET) و 117 - مدة الأنشطة الاجمالية (في الفترات الزمنية أو حصص FET). في هذا المثال لدينا نشاطين غير مفعلين مع كون مدتهما معا 3 فترات زمنية(أو 3 حصص FET).</translation>
+        <translation>مثال: رقم: 100/102، فترة: 114/117. تمثل: 100 - عدد الأنشطة(الفرعية) المفعلة، و 102 - العدد الاجمالي للأنشطة(الفرعية)، 114 - مدة الأنشطة(الفرعية) (في الفترات الزمنية أو حصص FET) و 117 - مدة الأنشطة الاجمالية (في الفترات الزمنية أو حصص FET). في هذا المثال لدينا نشاطين غير مفعلين مع كون مدتهما معا 3 فترات زمنية(أو 3 حصص FET).</translation>
     </message>
     <message>
         <location filename="../src/interface/subactivitiesform.cpp" line="408"/>
@@ -51293,7 +51293,7 @@ N1 ( C1(G1,G2), C2(G1, G3) )
     <message>
         <location filename="../src/interface/subactivitiesform.cpp" line="446"/>
         <source>Subactivity comments</source>
-        <translation>تعليقات النشاط الفرعية</translation>
+        <translation>تعليقات النشاط الفرعي</translation>
     </message>
     <message>
         <location filename="../src/interface/subactivitiesform.cpp" line="448"/>
@@ -51318,7 +51318,7 @@ N1 ( C1(G1,G2), C2(G1, G3) )
     <message>
         <location filename="../src/interface/subactivitiesform.cpp" line="423"/>
         <source>To modify a subactivity, you can also double click it.</source>
-        <translation>لتعديل النشاط الفرعية، يمكنك أيضا بالنقر عليها نقرتين.</translation>
+        <translation>لتعديل النشاط الفرعي، يمكنك أيضا بالنقر عليها نقرتين.</translation>
     </message>
     <message>
         <location filename="../src/interface/subactivitiesform.cpp" line="425"/>
@@ -51352,7 +51352,7 @@ N1 ( C1(G1,G2), C2(G1, G3) )
     <message>
         <location filename="../src/interface/subactivitiesform_template.ui" line="60"/>
         <source>Current subactivity</source>
-        <translation>النشاط الفرعية الحالية</translation>
+        <translation>النشاط الفرعي الحالي</translation>
     </message>
     <message>
         <location filename="../src/interface/subactivitiesform_template.ui" line="91"/>
@@ -51579,7 +51579,7 @@ N1 ( C1(G1,G2), C2(G1, G3) )
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="140"/>
         <source>Deactivate all activities for selected subgroup</source>
-        <translation>الغاء تفعيل كل الأنشطة للمجموعة الفرعية المحددة</translation>
+        <translation>تعطيل كل الأنشطة للمجموعة الفرعية المحددة</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="177"/>
@@ -51706,7 +51706,7 @@ N1 ( C1(G1,G2), C2(G1, G3) )
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="135"/>
         <source>FET</source>
-        <translation>فيت</translation>
+        <translation>FET</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="136"/>
@@ -52143,7 +52143,7 @@ N1 ( C1(G1,G2), C2(G1, G3) )
     <message>
         <location filename="../src/interface/teachersform_template.ui" line="92"/>
         <source>Deactivate all activities for selected teacher</source>
-        <translation>الغاء تفعيل كل الأنشطة للمدرس المحدد</translation>
+        <translation>تعطيل كل الأنشطة للمدرس المحدد</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform_template.ui" line="101"/>
@@ -52344,8 +52344,8 @@ N1 ( C1(G1,G2), C2(G1, G3) )
         <location filename="../src/engine/timetableexport.cpp" line="2900"/>
         <location filename="../src/engine/timetableexport.cpp" line="3115"/>
         <location filename="../src/engine/timetableexport.cpp" line="3164"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10309"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10320"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10314"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10325"/>
         <source>Year</source>
         <translation>العام</translation>
     </message>
@@ -52354,8 +52354,8 @@ N1 ( C1(G1,G2), C2(G1, G3) )
         <location filename="../src/engine/timetableexport.cpp" line="2636"/>
         <location filename="../src/engine/timetableexport.cpp" line="2849"/>
         <location filename="../src/engine/timetableexport.cpp" line="2903"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10327"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10338"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10332"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10343"/>
         <source>Group</source>
         <translation>المجموعة</translation>
     </message>
@@ -52672,63 +52672,63 @@ N1 ( C1(G1,G2), C2(G1, G3) )
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2280"/>
-        <location filename="../src/engine/timetableexport.cpp" line="5794"/>
-        <location filename="../src/engine/timetableexport.cpp" line="5864"/>
-        <location filename="../src/engine/timetableexport.cpp" line="5946"/>
-        <location filename="../src/engine/timetableexport.cpp" line="6022"/>
-        <location filename="../src/engine/timetableexport.cpp" line="6102"/>
-        <location filename="../src/engine/timetableexport.cpp" line="6175"/>
-        <location filename="../src/engine/timetableexport.cpp" line="6257"/>
-        <location filename="../src/engine/timetableexport.cpp" line="6339"/>
-        <location filename="../src/engine/timetableexport.cpp" line="6430"/>
-        <location filename="../src/engine/timetableexport.cpp" line="6519"/>
-        <location filename="../src/engine/timetableexport.cpp" line="6610"/>
-        <location filename="../src/engine/timetableexport.cpp" line="6696"/>
-        <location filename="../src/engine/timetableexport.cpp" line="6781"/>
-        <location filename="../src/engine/timetableexport.cpp" line="6868"/>
-        <location filename="../src/engine/timetableexport.cpp" line="6965"/>
-        <location filename="../src/engine/timetableexport.cpp" line="7059"/>
-        <location filename="../src/engine/timetableexport.cpp" line="7158"/>
-        <location filename="../src/engine/timetableexport.cpp" line="7249"/>
-        <location filename="../src/engine/timetableexport.cpp" line="7312"/>
-        <location filename="../src/engine/timetableexport.cpp" line="7375"/>
-        <location filename="../src/engine/timetableexport.cpp" line="7441"/>
-        <location filename="../src/engine/timetableexport.cpp" line="7510"/>
-        <location filename="../src/engine/timetableexport.cpp" line="7576"/>
-        <location filename="../src/engine/timetableexport.cpp" line="7641"/>
-        <location filename="../src/engine/timetableexport.cpp" line="7712"/>
-        <location filename="../src/engine/timetableexport.cpp" line="7785"/>
-        <location filename="../src/engine/timetableexport.cpp" line="7865"/>
-        <location filename="../src/engine/timetableexport.cpp" line="7939"/>
-        <location filename="../src/engine/timetableexport.cpp" line="8018"/>
-        <location filename="../src/engine/timetableexport.cpp" line="8091"/>
-        <location filename="../src/engine/timetableexport.cpp" line="8162"/>
-        <location filename="../src/engine/timetableexport.cpp" line="8234"/>
-        <location filename="../src/engine/timetableexport.cpp" line="8314"/>
-        <location filename="../src/engine/timetableexport.cpp" line="8389"/>
-        <location filename="../src/engine/timetableexport.cpp" line="8470"/>
-        <location filename="../src/engine/timetableexport.cpp" line="8542"/>
-        <location filename="../src/engine/timetableexport.cpp" line="8646"/>
-        <location filename="../src/engine/timetableexport.cpp" line="8751"/>
-        <location filename="../src/engine/timetableexport.cpp" line="8857"/>
-        <location filename="../src/engine/timetableexport.cpp" line="8966"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9068"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9173"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9255"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9336"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9425"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9513"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9598"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9682"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9799"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9917"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10073"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10098"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10266"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10296"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10430"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10439"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10469"/>
+        <location filename="../src/engine/timetableexport.cpp" line="5799"/>
+        <location filename="../src/engine/timetableexport.cpp" line="5869"/>
+        <location filename="../src/engine/timetableexport.cpp" line="5951"/>
+        <location filename="../src/engine/timetableexport.cpp" line="6027"/>
+        <location filename="../src/engine/timetableexport.cpp" line="6107"/>
+        <location filename="../src/engine/timetableexport.cpp" line="6180"/>
+        <location filename="../src/engine/timetableexport.cpp" line="6262"/>
+        <location filename="../src/engine/timetableexport.cpp" line="6344"/>
+        <location filename="../src/engine/timetableexport.cpp" line="6435"/>
+        <location filename="../src/engine/timetableexport.cpp" line="6524"/>
+        <location filename="../src/engine/timetableexport.cpp" line="6615"/>
+        <location filename="../src/engine/timetableexport.cpp" line="6701"/>
+        <location filename="../src/engine/timetableexport.cpp" line="6786"/>
+        <location filename="../src/engine/timetableexport.cpp" line="6873"/>
+        <location filename="../src/engine/timetableexport.cpp" line="6970"/>
+        <location filename="../src/engine/timetableexport.cpp" line="7064"/>
+        <location filename="../src/engine/timetableexport.cpp" line="7163"/>
+        <location filename="../src/engine/timetableexport.cpp" line="7254"/>
+        <location filename="../src/engine/timetableexport.cpp" line="7317"/>
+        <location filename="../src/engine/timetableexport.cpp" line="7380"/>
+        <location filename="../src/engine/timetableexport.cpp" line="7446"/>
+        <location filename="../src/engine/timetableexport.cpp" line="7515"/>
+        <location filename="../src/engine/timetableexport.cpp" line="7581"/>
+        <location filename="../src/engine/timetableexport.cpp" line="7646"/>
+        <location filename="../src/engine/timetableexport.cpp" line="7717"/>
+        <location filename="../src/engine/timetableexport.cpp" line="7790"/>
+        <location filename="../src/engine/timetableexport.cpp" line="7870"/>
+        <location filename="../src/engine/timetableexport.cpp" line="7944"/>
+        <location filename="../src/engine/timetableexport.cpp" line="8023"/>
+        <location filename="../src/engine/timetableexport.cpp" line="8096"/>
+        <location filename="../src/engine/timetableexport.cpp" line="8167"/>
+        <location filename="../src/engine/timetableexport.cpp" line="8239"/>
+        <location filename="../src/engine/timetableexport.cpp" line="8319"/>
+        <location filename="../src/engine/timetableexport.cpp" line="8394"/>
+        <location filename="../src/engine/timetableexport.cpp" line="8475"/>
+        <location filename="../src/engine/timetableexport.cpp" line="8547"/>
+        <location filename="../src/engine/timetableexport.cpp" line="8651"/>
+        <location filename="../src/engine/timetableexport.cpp" line="8756"/>
+        <location filename="../src/engine/timetableexport.cpp" line="8862"/>
+        <location filename="../src/engine/timetableexport.cpp" line="8971"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9073"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9178"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9260"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9341"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9430"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9518"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9603"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9687"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9804"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9922"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10078"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10103"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10271"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10301"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10435"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10444"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10474"/>
         <source>Timetable generated with FET %1 on %2</source>
         <comment>%1 is FET version, %2 is the date and time of generation</comment>
         <translation>انتج الجدول بواسطة FET %1 في %2</translation>
@@ -52839,222 +52839,222 @@ N1 ( C1(G1,G2), C2(G1, G3) )
         <translation>مدرس غير متاح</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9741"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9860"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9746"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9865"/>
         <source>Single gap</source>
         <translation>فجوة واحدة</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9742"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9861"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9747"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9866"/>
         <source>Border gap</source>
         <translation>حصتين فارغتين</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9743"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9862"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9748"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9867"/>
         <source>Big gap</source>
         <translation>فجوة كلبرة</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9744"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9863"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9749"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9868"/>
         <source>Must come earlier</source>
         <translation>يجب الحضور مبكراً</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9745"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9864"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9750"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9869"/>
         <source>Must stay longer</source>
         <translation>ينتظر طويلاً</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9746"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9865"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9751"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9870"/>
         <source>Must come much earlier</source>
         <translation>يجب الحضور مبكراً جداً</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9747"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9866"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9752"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9871"/>
         <source>Must stay much longer</source>
         <translation>ينتظر طويلاً جداً</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9748"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9867"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9753"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9872"/>
         <source>Free day</source>
         <translation>مفرغ اليوم</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9749"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9754"/>
         <source>Not available</source>
         <comment>It refers to a teacher</comment>
         <translation>غير متاح</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9868"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9873"/>
         <source>Not available</source>
         <translation>غير متاح</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9934"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10115"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9939"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10120"/>
         <source>This is a teaser only. Values are not correct!</source>
         <translation>هذه دعابة فقط. القيم غير صحيحة!</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="9938"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10119"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9943"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10124"/>
         <source>This file doesn&apos;t list limits that are set by constraints. It contains statistics about the min and max values of the currently calculated solution.</source>
         <translation>هذا الملف لا يَسْرُد الحدود التي تم تعيينها بواسطة قيود. إنه يحتوي على احصاءات حول أدنى و أقصى قيم محسوبة في الحل الحالي.</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10041"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10046"/>
         <source>All teachers</source>
         <translation>كل المدرسين</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10042"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10084"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10235"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10282"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10455"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10047"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10089"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10240"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10287"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10460"/>
         <source>Free days</source>
         <translation>الأيام الحرة</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10043"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10236"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10048"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10241"/>
         <source>Gaps</source>
         <translation>فجوات</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10044"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10237"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10049"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10242"/>
         <source>Gaps per day</source>
         <translation>فجوات في اليوم</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10045"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10238"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10050"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10243"/>
         <source>Hours per day</source>
         <translation>حصص في اليوم</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10048"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10241"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10053"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10246"/>
         <source>Sum</source>
         <translation>مجموع</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10054"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10247"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10059"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10252"/>
         <source>Average</source>
         <translation>متوسط</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10060"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10253"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10065"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10258"/>
         <source>Min</source>
         <translation>أدنى</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10066"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10259"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10071"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10264"/>
         <source>Max</source>
         <translation>أقصى</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10083"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10092"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10088"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10097"/>
         <source>Teacher</source>
         <translation>مدرس</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10085"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10283"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10456"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10090"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10288"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10461"/>
         <source>Total gaps</source>
         <translation>مجموع الفجوات</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10086"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10284"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10316"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10334"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10457"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10091"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10289"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10321"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10339"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10462"/>
         <source>Min gaps per day</source>
         <translation>أدنى فجوات في اليوم</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10087"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10285"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10317"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10335"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10458"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10092"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10290"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10322"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10340"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10463"/>
         <source>Max gaps per day</source>
         <translation>أقصى فجوات في اليوم</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10088"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10286"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10312"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10330"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10459"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10093"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10291"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10317"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10335"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10464"/>
         <source>Min hours per day</source>
         <translation>أدنى حصص في اليوم</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10089"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10287"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10313"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10331"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10460"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10094"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10292"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10318"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10336"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10465"/>
         <source>Max hours per day</source>
         <translation>أقصى حصص في اليوم</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10234"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10239"/>
         <source>All students</source>
         <translation>كل الطلاب</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10310"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10328"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10315"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10333"/>
         <source>Min free days</source>
         <translation>أدنى أيام حرة</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10311"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10329"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10316"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10334"/>
         <source>Max free days</source>
         <translation>أقصى أيام حرة</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10314"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10332"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10319"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10337"/>
         <source>Min gaps per week</source>
         <translation>أدنى فجوات في الأسبوع</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10315"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10333"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10320"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10338"/>
         <source>Max gaps per week</source>
         <translation>أقصى فجوات في الأسبوع</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10281"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10290"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10454"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10463"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10286"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10295"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10459"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10468"/>
         <source>Subgroup</source>
         <translation>مجموعة فرعية</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2158"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9700"/>
-        <location filename="../src/engine/timetableexport.cpp" line="9818"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9705"/>
+        <location filename="../src/engine/timetableexport.cpp" line="9823"/>
         <source>Teachers&apos; Free Periods</source>
         <translation>الحصص الفارغة للمدرسين</translation>
     </message>
@@ -53362,14 +53362,14 @@ N1 ( C1(G1,G2), C2(G1, G3) )
         <translation>الأنشطة</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="7265"/>
-        <location filename="../src/engine/timetableexport.cpp" line="7328"/>
-        <location filename="../src/engine/timetableexport.cpp" line="7397"/>
-        <location filename="../src/engine/timetableexport.cpp" line="7487"/>
-        <location filename="../src/engine/timetableexport.cpp" line="7506"/>
-        <location filename="../src/engine/timetableexport.cpp" line="7533"/>
-        <location filename="../src/engine/timetableexport.cpp" line="7620"/>
-        <location filename="../src/engine/timetableexport.cpp" line="7637"/>
+        <location filename="../src/engine/timetableexport.cpp" line="7270"/>
+        <location filename="../src/engine/timetableexport.cpp" line="7333"/>
+        <location filename="../src/engine/timetableexport.cpp" line="7402"/>
+        <location filename="../src/engine/timetableexport.cpp" line="7492"/>
+        <location filename="../src/engine/timetableexport.cpp" line="7511"/>
+        <location filename="../src/engine/timetableexport.cpp" line="7538"/>
+        <location filename="../src/engine/timetableexport.cpp" line="7625"/>
+        <location filename="../src/engine/timetableexport.cpp" line="7642"/>
         <source>All Activities</source>
         <translation>كل الأنشطة</translation>
     </message>
@@ -53404,7 +53404,7 @@ N1 ( C1(G1,G2), C2(G1, G3) )
     <message>
         <location filename="../src/interface/fet.cpp" line="1272"/>
         <source>No: %1</source>
-        <translation>No: %1</translation>
+        <translation>رقم: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="1276"/>
@@ -53492,7 +53492,7 @@ N1 ( C1(G1,G2), C2(G1, G3) )
         <location filename="../src/interface/timetablegenerateform.cpp" line="541"/>
         <location filename="../src/interface/timetablegenerateform.cpp" line="909"/>
         <source>No: %1</source>
-        <translation>No: %1</translation>
+        <translation>رقم: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="213"/>
@@ -53674,7 +53674,7 @@ N1 ( C1(G1,G2), C2(G1, G3) )
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="957"/>
         <source>FET - information about initial order of evaluation of activities</source>
-        <translation>FET - ملومات تتعلق بتقدير الترتيب الأولي للأنشطة</translation>
+        <translation>FET - معلومات تتعلق بتقدير الترتيب الأولي للأنشطة</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="763"/>
