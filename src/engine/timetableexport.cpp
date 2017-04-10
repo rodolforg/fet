@@ -5642,7 +5642,12 @@ QString TimetableExport::writeActivitiesSubjects(int htmlLevel, const QList<int>
 			else	tmp+="<tr>";
 			for(int a=0; a<allActivities.size(); a++){
 				Activity* act=&gt.rules.internalActivitiesList[allActivities[a]];
-				tmp+=writeStartTagTDofActivities(htmlLevel, act, true, false, false, COLOR_BY_SUBJECT_STUDENTS)+writeSubjectAndActivityTags(htmlLevel, act, "", "", true, printActivityTags)+"</td>";
+				Activity* act0=&gt.rules.internalActivitiesList[allActivities[0]];	//Because this is always the original subject. We don't need to repeat it, because it is displayed in the tables head
+				if(act->subjectName==act0->subjectName){
+					tmp+=writeStartTagTDofActivities(htmlLevel, act, true, false, false, COLOR_BY_SUBJECT_STUDENTS)+writeSubjectAndActivityTags(htmlLevel, act, "", "", true, printActivityTags)+"</td>";
+				} else {
+					tmp+=writeStartTagTDofActivities(htmlLevel, act, true, false, false, COLOR_BY_SUBJECT_STUDENTS)+writeSubjectAndActivityTags(htmlLevel, act, "", "", false, printActivityTags)+"</td>";
+				}
 			}
 			tmp+="</tr>";
 		}
