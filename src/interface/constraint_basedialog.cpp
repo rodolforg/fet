@@ -1,4 +1,12 @@
 /***************************************************************************
+						  constraint_basedialog.cpp  -  description
+							 -------------------
+	begin                : 2017
+	copyright            : (C) 2017 by Rodolfo RG
+	This file is part of a modification of FET timetable (the original is developed by Liviu Lalescu)
+ ***************************************************************************/
+
+/***************************************************************************
  *                                                                         *
  *   This program is free software: you can redistribute it and/or modify  *
  *   it under the terms of the GNU Affero General Public License as        *
@@ -12,9 +20,10 @@
 #include <QMessageBox>
 #include <QScrollBar>
 
+#include <cassert>
+
 #include "longtextmessagebox.h"
 
-#include "fet.h"
 #include "centerwidgetonscreen.h"
 
 ConstraintBaseDialog::ConstraintBaseDialog(QWidget* parent): QDialog(parent),
@@ -64,15 +73,10 @@ void ConstraintBaseDialog::setFilterWidget(QWidget *widget)
 
 void ConstraintBaseDialog::filterChanged()
 {
-	this->visibleConstraintsList.clear();
+	visibleConstraintsList.clear();
 	constraintsListWidget->clear();
-	foreach (TimeConstraint *ctr, gt.rules.timeConstraintsList){
-		if(filterOk(ctr)){
-			QString s=ctr->getDescription(gt.rules);
-			visibleConstraintsList.append(ctr);
-			constraintsListWidget->addItem(s);
-		}
-	}
+
+	fillConstraintList(visibleConstraintsList);
 
 	if(constraintsListWidget->count()>0)
 		constraintsListWidget->setCurrentRow(0);
@@ -88,9 +92,7 @@ void ConstraintBaseDialog::constraintChanged(int index)
 	}
 
 	assert(index<this->visibleConstraintsList.size());
-	TimeConstraint* ctr=this->visibleConstraintsList.at(index);
-	assert(ctr!=NULL);
-	QString s=ctr->getDetailedDescription(gt.rules);
+	QString s=getConstraintDetailedDescription(visibleConstraintsList.at(index));
 	currentConstraintTextEdit->setPlainText(s);
 }
 
@@ -116,7 +118,7 @@ void ConstraintBaseDialog::modifyConstraint()
 		QMessageBox::information(this, tr("FET information"), tr("Invalid selected constraint"));
 		return;
 	}
-	TimeConstraint* ctr=this->visibleConstraintsList.at(i);
+	void* ctr=this->visibleConstraintsList.at(i);
 
 	QDialog *form = createModifyDialog(ctr);
 //	setParentAndOtherThings(form, this);
@@ -144,11 +146,11 @@ void ConstraintBaseDialog::removeConstraint()
 		QMessageBox::information(this, tr("FET information"), tr("Invalid selected constraint"));
 		return;
 	}
-	TimeConstraint* ctr=this->visibleConstraintsList.at(i);
+	void* ctr=this->visibleConstraintsList.at(i);
 	QString s;
 	s=tr("Remove constraint?");
 	s+="\n\n";
-	s+=ctr->getDetailedDescription(gt.rules);
+	s+=getConstraintDetailedDescription(ctr);
 
 	QListWidgetItem* item;
 
@@ -158,7 +160,7 @@ void ConstraintBaseDialog::removeConstraint()
 		if (!beforeRemoveConstraint())
 			break;
 
-		gt.rules.removeTimeConstraint(ctr);
+		doRemoveConstraint(ctr);
 
 		visibleConstraintsList.removeAt(i);
 		constraintsListWidget->setCurrentRow(-1);

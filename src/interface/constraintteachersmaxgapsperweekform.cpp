@@ -19,7 +19,7 @@
 #include "addconstraintteachersmaxgapsperweekform.h"
 #include "modifyconstraintteachersmaxgapsperweekform.h"
 
-ConstraintTeachersMaxGapsPerWeekForm::ConstraintTeachersMaxGapsPerWeekForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintTeachersMaxGapsPerWeekForm::ConstraintTeachersMaxGapsPerWeekForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintTeachersMaxGapsPerWeekForm_template", "Constraints teachers max gaps per week"));

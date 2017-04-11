@@ -18,9 +18,9 @@
 #ifndef CONSTRAINTACTIVITYPREFERREDSTARTINGTIMEFORM_H
 #define CONSTRAINTACTIVITYPREFERREDSTARTINGTIMEFORM_H
 
-#include "constraint_basedialog.h"
+#include "timeconstraint_basedialog.h"
 
-class ConstraintActivityPreferredStartingTimeForm : public ConstraintBaseDialog  {
+class ConstraintActivityPreferredStartingTimeForm : public TimeConstraintBaseDialog  {
 	Q_OBJECT
 
 public:

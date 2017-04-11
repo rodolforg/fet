@@ -18,9 +18,9 @@
 #ifndef CONSTRAINTSTUDENTSMAXHOURSDAILYFORM_H
 #define CONSTRAINTSTUDENTSMAXHOURSDAILYFORM_H
 
-#include "constraint_basedialog.h"
+#include "timeconstraint_basedialog.h"
 
-class ConstraintStudentsMaxHoursDailyForm : public ConstraintBaseDialog  {
+class ConstraintStudentsMaxHoursDailyForm : public TimeConstraintBaseDialog  {
 	Q_OBJECT
 public:
 	ConstraintStudentsMaxHoursDailyForm(QWidget* parent);

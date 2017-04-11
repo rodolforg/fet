@@ -21,7 +21,7 @@
 
 #include <QMessageBox>
 
-ConstraintBasicCompulsoryTimeForm::ConstraintBasicCompulsoryTimeForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintBasicCompulsoryTimeForm::ConstraintBasicCompulsoryTimeForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintBasicCompulsoryTimeForm_template", "Constraints basic compulsory time"));

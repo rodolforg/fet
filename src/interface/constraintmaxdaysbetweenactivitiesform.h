@@ -18,9 +18,9 @@
 #ifndef CONSTRAINTMAXDAYSBETWEENACTIVITIESFORM_H
 #define CONSTRAINTMAXDAYSBETWEENACTIVITIESFORM_H
 
-#include "constraint_basedialog.h"
+#include "timeconstraint_basedialog.h"
 
-class ConstraintMaxDaysBetweenActivitiesForm : public ConstraintBaseDialog  {
+class ConstraintMaxDaysBetweenActivitiesForm : public TimeConstraintBaseDialog  {
 	Q_OBJECT
 
 public:

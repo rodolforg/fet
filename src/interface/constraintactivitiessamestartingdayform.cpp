@@ -19,7 +19,7 @@
 #include "addconstraintactivitiessamestartingdayform.h"
 #include "modifyconstraintactivitiessamestartingdayform.h"
 
-ConstraintActivitiesSameStartingDayForm::ConstraintActivitiesSameStartingDayForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintActivitiesSameStartingDayForm::ConstraintActivitiesSameStartingDayForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintActivitiesSameStartingDayForm_template", "Constraints activities same starting day"));

@@ -18,9 +18,9 @@
 #ifndef CONSTRAINTTEACHERSMAXHOURSCONTINUOUSLYFORM_H
 #define CONSTRAINTTEACHERSMAXHOURSCONTINUOUSLYFORM_H
 
-#include "constraint_basedialog.h"
+#include "timeconstraint_basedialog.h"
 
-class ConstraintTeachersMaxHoursContinuouslyForm : public ConstraintBaseDialog  {
+class ConstraintTeachersMaxHoursContinuouslyForm : public TimeConstraintBaseDialog  {
 	Q_OBJECT
 public:
 	ConstraintTeachersMaxHoursContinuouslyForm(QWidget* parent);

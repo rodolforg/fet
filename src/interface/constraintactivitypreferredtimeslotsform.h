@@ -18,9 +18,9 @@
 #ifndef CONSTRAINTACTIVITYPREFERREDTIMESLOTSFORM_H
 #define CONSTRAINTACTIVITYPREFERREDTIMESLOTSFORM_H
 
-#include "constraint_basedialog.h"
+#include "timeconstraint_basedialog.h"
 
-class ConstraintActivityPreferredTimeSlotsForm : public ConstraintBaseDialog  {
+class ConstraintActivityPreferredTimeSlotsForm : public TimeConstraintBaseDialog  {
 	Q_OBJECT
 
 public:

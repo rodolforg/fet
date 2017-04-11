@@ -18,9 +18,9 @@
 #ifndef CONSTRAINTMINGAPSBETWEENACTIVITIESFORM_H
 #define CONSTRAINTMINGAPSBETWEENACTIVITIESFORM_H
 
-#include "constraint_basedialog.h"
+#include "timeconstraint_basedialog.h"
 
-class ConstraintMinGapsBetweenActivitiesForm : public ConstraintBaseDialog  {
+class ConstraintMinGapsBetweenActivitiesForm : public TimeConstraintBaseDialog  {
 	Q_OBJECT
 
 public:

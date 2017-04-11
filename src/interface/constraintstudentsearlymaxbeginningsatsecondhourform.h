@@ -18,9 +18,9 @@
 #ifndef CONSTRAINTSTUDENTSEARLYMAXBEGINNINGSATSECONDHOURFORM_H
 #define CONSTRAINTSTUDENTSEARLYMAXBEGINNINGSATSECONDHOURFORM_H
 
-#include "constraint_basedialog.h"
+#include "timeconstraint_basedialog.h"
 
-class ConstraintStudentsEarlyMaxBeginningsAtSecondHourForm : public ConstraintBaseDialog {
+class ConstraintStudentsEarlyMaxBeginningsAtSecondHourForm : public TimeConstraintBaseDialog {
 	Q_OBJECT
 public:
 	ConstraintStudentsEarlyMaxBeginningsAtSecondHourForm(QWidget* parent);

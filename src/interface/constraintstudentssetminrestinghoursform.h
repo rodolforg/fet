@@ -18,9 +18,9 @@
 #ifndef CONSTRAINTSTUDENTSSETMINRESTINGHOURSFORM_H
 #define CONSTRAINTSTUDENTSSETMINRESTINGHOURSFORM_H
 
-#include "constraint_basedialog.h"
+#include "timeconstraint_basedialog.h"
 
-class ConstraintStudentsSetMinRestingHoursForm : public ConstraintBaseDialog  {
+class ConstraintStudentsSetMinRestingHoursForm : public TimeConstraintBaseDialog  {
 	Q_OBJECT
 public:
 	ConstraintStudentsSetMinRestingHoursForm(QWidget* parent);

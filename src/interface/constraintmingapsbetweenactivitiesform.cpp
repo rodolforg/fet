@@ -21,7 +21,7 @@
 
 #include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
-ConstraintMinGapsBetweenActivitiesForm::ConstraintMinGapsBetweenActivitiesForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintMinGapsBetweenActivitiesForm::ConstraintMinGapsBetweenActivitiesForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintMinGapsBetweenActivitiesForm_template", "Constraints min gaps between activities"));

@@ -19,7 +19,7 @@
 #include "addconstraintstudentsminrestinghoursform.h"
 #include "modifyconstraintstudentsminrestinghoursform.h"
 
-ConstraintStudentsMinRestingHoursForm::ConstraintStudentsMinRestingHoursForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintStudentsMinRestingHoursForm::ConstraintStudentsMinRestingHoursForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintStudentsMinRestingHoursForm_template", "Constraints students min resting hours"));

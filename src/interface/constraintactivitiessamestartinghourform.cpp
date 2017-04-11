@@ -19,7 +19,7 @@
 #include "addconstraintactivitiessamestartinghourform.h"
 #include "modifyconstraintactivitiessamestartinghourform.h"
 
-ConstraintActivitiesSameStartingHourForm::ConstraintActivitiesSameStartingHourForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintActivitiesSameStartingHourForm::ConstraintActivitiesSameStartingHourForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintActivitiesSameStartingHourForm_template", "Constraints activities same starting hour"));

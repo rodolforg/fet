@@ -21,7 +21,7 @@
 
 #include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
-ConstraintStudentsSetMaxSpanPerDayForm::ConstraintStudentsSetMaxSpanPerDayForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintStudentsSetMaxSpanPerDayForm::ConstraintStudentsSetMaxSpanPerDayForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintStudentsSetMaxSpanPerDayForm_template", "Constraints students set max span per day"));

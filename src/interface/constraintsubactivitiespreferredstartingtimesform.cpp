@@ -19,7 +19,7 @@
 #include "addconstraintsubactivitiespreferredstartingtimesform.h"
 #include "modifyconstraintsubactivitiespreferredstartingtimesform.h"
 
-ConstraintSubactivitiesPreferredStartingTimesForm::ConstraintSubactivitiesPreferredStartingTimesForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintSubactivitiesPreferredStartingTimesForm::ConstraintSubactivitiesPreferredStartingTimesForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintSubactivitiesPreferredStartingTimesForm_template", "Constraints subactivities preferred starting times"));

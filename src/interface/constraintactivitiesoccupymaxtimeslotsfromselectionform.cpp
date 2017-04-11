@@ -21,7 +21,7 @@
 
 #include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
-ConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm::ConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm::ConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm_template", "Constraints activities occupy max time slots from selection"));

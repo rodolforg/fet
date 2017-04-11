@@ -21,7 +21,7 @@
 
 #include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
-ConstraintStudentsSetMaxHoursDailyForm::ConstraintStudentsSetMaxHoursDailyForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintStudentsSetMaxHoursDailyForm::ConstraintStudentsSetMaxHoursDailyForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintStudentsSetMaxHoursDailyForm_template", "Constraints students set max hours daily"));

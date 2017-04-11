@@ -18,9 +18,9 @@
 #ifndef CONSTRAINTTEACHERNOTAVAILABLETIMESFORM_H
 #define CONSTRAINTTEACHERNOTAVAILABLETIMESFORM_H
 
-#include "constraint_basedialog.h"
+#include "timeconstraint_basedialog.h"
 
-class ConstraintTeacherNotAvailableTimesForm : public ConstraintBaseDialog  {
+class ConstraintTeacherNotAvailableTimesForm : public TimeConstraintBaseDialog  {
 	Q_OBJECT
 public:
 	ConstraintTeacherNotAvailableTimesForm(QWidget* parent);

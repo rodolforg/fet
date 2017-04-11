@@ -21,7 +21,7 @@
 
 #include "helponstudentsminhoursdaily.h"
 
-ConstraintStudentsMinHoursDailyForm::ConstraintStudentsMinHoursDailyForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintStudentsMinHoursDailyForm::ConstraintStudentsMinHoursDailyForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintStudentsMinHoursDailyForm_template", "Constraints students min hours daily"));

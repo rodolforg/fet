@@ -21,7 +21,7 @@
 
 #include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
-ConstraintTeacherNotAvailableTimesForm::ConstraintTeacherNotAvailableTimesForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintTeacherNotAvailableTimesForm::ConstraintTeacherNotAvailableTimesForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintTeacherNotAvailableTimesForm_template", "Constraints teacher not available times"));

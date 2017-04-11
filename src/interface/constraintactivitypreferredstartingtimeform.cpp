@@ -23,7 +23,7 @@
 
 #include "lockunlock.h"
 
-ConstraintActivityPreferredStartingTimeForm::ConstraintActivityPreferredStartingTimeForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintActivityPreferredStartingTimeForm::ConstraintActivityPreferredStartingTimeForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintActivityPreferredStartingTimeForm_template", "Constraints activity preferred starting time"));

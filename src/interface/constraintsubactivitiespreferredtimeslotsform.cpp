@@ -19,7 +19,7 @@
 #include "addconstraintsubactivitiespreferredtimeslotsform.h"
 #include "modifyconstraintsubactivitiespreferredtimeslotsform.h"
 
-ConstraintSubactivitiesPreferredTimeSlotsForm::ConstraintSubactivitiesPreferredTimeSlotsForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintSubactivitiesPreferredTimeSlotsForm::ConstraintSubactivitiesPreferredTimeSlotsForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintSubactivitiesPreferredTimeSlotsForm_template", "Constraints subactivities preferred time slots"));

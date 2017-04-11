@@ -18,9 +18,9 @@
 #ifndef CONSTRAINTBASICCOMPULSORYTIMEFORM_H
 #define CONSTRAINTBASICCOMPULSORYTIMEFORM_H
 
-#include "constraint_basedialog.h"
+#include "timeconstraint_basedialog.h"
 
-class ConstraintBasicCompulsoryTimeForm : public ConstraintBaseDialog  {
+class ConstraintBasicCompulsoryTimeForm : public TimeConstraintBaseDialog  {
 	Q_OBJECT
 public:
 	ConstraintBasicCompulsoryTimeForm(QWidget* parent);

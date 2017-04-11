@@ -18,9 +18,9 @@
 #ifndef CONSTRAINTTEACHERSMINHOURSDAILYFORM_H
 #define CONSTRAINTTEACHERSMINHOURSDAILYFORM_H
 
-#include "constraint_basedialog.h"
+#include "timeconstraint_basedialog.h"
 
-class ConstraintTeachersMinHoursDailyForm : public ConstraintBaseDialog  {
+class ConstraintTeachersMinHoursDailyForm : public TimeConstraintBaseDialog  {
 	Q_OBJECT
 public:
 	ConstraintTeachersMinHoursDailyForm(QWidget* parent);

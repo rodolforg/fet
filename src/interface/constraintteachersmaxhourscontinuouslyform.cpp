@@ -19,7 +19,7 @@
 #include "addconstraintteachersmaxhourscontinuouslyform.h"
 #include "modifyconstraintteachersmaxhourscontinuouslyform.h"
 
-ConstraintTeachersMaxHoursContinuouslyForm::ConstraintTeachersMaxHoursContinuouslyForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintTeachersMaxHoursContinuouslyForm::ConstraintTeachersMaxHoursContinuouslyForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintTeachersMaxHoursContinuouslyForm_template", "Constraints teachers max hours continuously"));

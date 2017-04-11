@@ -22,7 +22,7 @@
 #include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
 
-ConstraintActivityPreferredStartingTimesForm::ConstraintActivityPreferredStartingTimesForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintActivityPreferredStartingTimesForm::ConstraintActivityPreferredStartingTimesForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintActivityPreferredStartingTimesForm_template", "Constraints activity preferred starting times"));

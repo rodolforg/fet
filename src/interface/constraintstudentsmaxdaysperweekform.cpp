@@ -19,7 +19,7 @@
 #include "addconstraintstudentsmaxdaysperweekform.h"
 #include "modifyconstraintstudentsmaxdaysperweekform.h"
 
-ConstraintStudentsMaxDaysPerWeekForm::ConstraintStudentsMaxDaysPerWeekForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintStudentsMaxDaysPerWeekForm::ConstraintStudentsMaxDaysPerWeekForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintStudentsMaxDaysPerWeekForm_template", "Constraints students max days per week"));

@@ -21,7 +21,7 @@
 
 #include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
-ConstraintActivitiesSameStartingTimeForm::ConstraintActivitiesSameStartingTimeForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintActivitiesSameStartingTimeForm::ConstraintActivitiesSameStartingTimeForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintActivitiesSameStartingTimeForm_template", "Constraints activities same starting time"));

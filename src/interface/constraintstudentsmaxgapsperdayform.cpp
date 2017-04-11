@@ -21,7 +21,7 @@
 #include "addconstraintstudentsmaxgapsperdayform.h"
 #include "modifyconstraintstudentsmaxgapsperdayform.h"
 
-ConstraintStudentsMaxGapsPerDayForm::ConstraintStudentsMaxGapsPerDayForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintStudentsMaxGapsPerDayForm::ConstraintStudentsMaxGapsPerDayForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintStudentsMaxGapsPerDayForm_template", "Constraints students max gaps per day"));

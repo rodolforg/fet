@@ -21,7 +21,7 @@
 
 #include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
-ConstraintStudentsSetMinRestingHoursForm::ConstraintStudentsSetMinRestingHoursForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintStudentsSetMinRestingHoursForm::ConstraintStudentsSetMinRestingHoursForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintStudentsSetMinRestingHoursForm_template", "Constraints students set min resting hours"));

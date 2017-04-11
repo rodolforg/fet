@@ -19,7 +19,7 @@
 #include "addconstrainttwoactivitiesconsecutiveform.h"
 #include "modifyconstrainttwoactivitiesconsecutiveform.h"
 
-ConstraintTwoActivitiesConsecutiveForm::ConstraintTwoActivitiesConsecutiveForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintTwoActivitiesConsecutiveForm::ConstraintTwoActivitiesConsecutiveForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintTwoActivitiesConsecutiveForm_template", "Constraints two activies consecutive"));

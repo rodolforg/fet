@@ -19,7 +19,7 @@
 #include "addconstraintstudentsmaxspanperdayform.h"
 #include "modifyconstraintstudentsmaxspanperdayform.h"
 
-ConstraintStudentsMaxSpanPerDayForm::ConstraintStudentsMaxSpanPerDayForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintStudentsMaxSpanPerDayForm::ConstraintStudentsMaxSpanPerDayForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintStudentsMaxSpanPerDayForm_template", "Constraints students max span per day"));

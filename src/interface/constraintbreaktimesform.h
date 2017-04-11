@@ -18,9 +18,9 @@
 #ifndef CONSTRAINTBREAKTIMESFORM_H
 #define CONSTRAINTBREAKTIMESFORM_H
 
-#include "constraint_basedialog.h"
+#include "timeconstraint_basedialog.h"
 
-class ConstraintBreakTimesForm : public ConstraintBaseDialog  {
+class ConstraintBreakTimesForm : public TimeConstraintBaseDialog  {
 	Q_OBJECT
 public:
 	ConstraintBreakTimesForm(QWidget* parent);

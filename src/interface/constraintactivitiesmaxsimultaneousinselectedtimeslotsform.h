@@ -18,9 +18,9 @@
 #ifndef CONSTRAINTACTIVITIESMAXSIMULTANEOUSINSELECTEDTIMESLOTSFORM_H
 #define CONSTRAINTACTIVITIESMAXSIMULTANEOUSINSELECTEDTIMESLOTSFORM_H
 
-#include "constraint_basedialog.h"
+#include "timeconstraint_basedialog.h"
 
-class ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm : public ConstraintBaseDialog  {
+class ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm : public TimeConstraintBaseDialog  {
 	Q_OBJECT
 public:
 

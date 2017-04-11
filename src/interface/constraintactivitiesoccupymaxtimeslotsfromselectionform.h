@@ -18,9 +18,9 @@
 #ifndef CONSTRAINTACTIVITIESOCCUPYMAXTIMESLOTSFROMSELECTIONFORM_H
 #define CONSTRAINTACTIVITIESOCCUPYMAXTIMESLOTSFROMSELECTIONFORM_H
 
-#include "constraint_basedialog.h"
+#include "timeconstraint_basedialog.h"
 
-class ConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm : public ConstraintBaseDialog  {
+class ConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm : public TimeConstraintBaseDialog  {
 	Q_OBJECT
 public:
 	ConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm(QWidget* parent);

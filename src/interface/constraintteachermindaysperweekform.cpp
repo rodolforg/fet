@@ -21,7 +21,7 @@
 
 #include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
-ConstraintTeacherMinDaysPerWeekForm::ConstraintTeacherMinDaysPerWeekForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintTeacherMinDaysPerWeekForm::ConstraintTeacherMinDaysPerWeekForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintTeacherMinDaysPerWeekForm_template", "Constraints teacher min days per week"));

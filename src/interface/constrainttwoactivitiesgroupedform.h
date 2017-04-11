@@ -18,9 +18,9 @@
 #ifndef CONSTRAINTTWOACTIVITIESGROUPEDFORM_H
 #define CONSTRAINTTWOACTIVITIESGROUPEDFORM_H
 
-#include "constraint_basedialog.h"
+#include "timeconstraint_basedialog.h"
 
-class ConstraintTwoActivitiesGroupedForm : public ConstraintBaseDialog  {
+class ConstraintTwoActivitiesGroupedForm : public TimeConstraintBaseDialog  {
 	Q_OBJECT
 public:
 	ConstraintTwoActivitiesGroupedForm(QWidget* parent);

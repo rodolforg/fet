@@ -21,7 +21,7 @@
 
 #include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
-ConstraintActivitiesNotOverlappingForm::ConstraintActivitiesNotOverlappingForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintActivitiesNotOverlappingForm::ConstraintActivitiesNotOverlappingForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintActivitiesNotOverlappingForm_template", "Constraints activities not overlapping"));

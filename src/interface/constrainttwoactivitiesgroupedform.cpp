@@ -19,7 +19,7 @@
 #include "addconstrainttwoactivitiesgroupedform.h"
 #include "modifyconstrainttwoactivitiesgroupedform.h"
 
-ConstraintTwoActivitiesGroupedForm::ConstraintTwoActivitiesGroupedForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintTwoActivitiesGroupedForm::ConstraintTwoActivitiesGroupedForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintTwoActivitiesGroupedForm_template", "Constraints two activies grouped"));

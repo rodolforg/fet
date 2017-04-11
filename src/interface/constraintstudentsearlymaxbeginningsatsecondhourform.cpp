@@ -19,7 +19,7 @@
 #include "addconstraintstudentsearlymaxbeginningsatsecondhourform.h"
 #include "modifyconstraintstudentsearlymaxbeginningsatsecondhourform.h"
 
-ConstraintStudentsEarlyMaxBeginningsAtSecondHourForm::ConstraintStudentsEarlyMaxBeginningsAtSecondHourForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintStudentsEarlyMaxBeginningsAtSecondHourForm::ConstraintStudentsEarlyMaxBeginningsAtSecondHourForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintStudentsEarlyMaxBeginningsAtSecondHourForm_template", "Constraints students early max beginnings at second hour"));

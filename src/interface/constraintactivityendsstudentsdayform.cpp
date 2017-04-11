@@ -21,7 +21,7 @@
 
 #include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
-ConstraintActivityEndsStudentsDayForm::ConstraintActivityEndsStudentsDayForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintActivityEndsStudentsDayForm::ConstraintActivityEndsStudentsDayForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintActivityEndsStudentsDayForm_template", "Constraints activity ends students day"));

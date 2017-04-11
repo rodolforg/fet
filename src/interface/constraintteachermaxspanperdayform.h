@@ -18,9 +18,9 @@
 #ifndef CONSTRAINTTEACHERMAXSPANPERDAYFORM_H
 #define CONSTRAINTTEACHERMAXSPANPERDAYFORM_H
 
-#include "constraint_basedialog.h"
+#include "timeconstraint_basedialog.h"
 
-class ConstraintTeacherMaxSpanPerDayForm : public ConstraintBaseDialog  {
+class ConstraintTeacherMaxSpanPerDayForm : public TimeConstraintBaseDialog  {
 	Q_OBJECT
 public:
 	ConstraintTeacherMaxSpanPerDayForm(QWidget* parent);

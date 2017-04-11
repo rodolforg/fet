@@ -23,7 +23,7 @@
 
 #include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
-ConstraintStudentsSetMinHoursDailyForm::ConstraintStudentsSetMinHoursDailyForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintStudentsSetMinHoursDailyForm::ConstraintStudentsSetMinHoursDailyForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintStudentsSetMinHoursDailyForm_template", "Constraints students set min hours daily"));

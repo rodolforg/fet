@@ -21,7 +21,7 @@
 
 #include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
-ConstraintTeacherIntervalMaxDaysPerWeekForm::ConstraintTeacherIntervalMaxDaysPerWeekForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintTeacherIntervalMaxDaysPerWeekForm::ConstraintTeacherIntervalMaxDaysPerWeekForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintTeacherIntervalMaxDaysPerWeekForm_template", "Constraints teacher interval max days per week"));

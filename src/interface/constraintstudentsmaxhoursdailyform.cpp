@@ -19,7 +19,7 @@
 #include "addconstraintstudentsmaxhoursdailyform.h"
 #include "modifyconstraintstudentsmaxhoursdailyform.h"
 
-ConstraintStudentsMaxHoursDailyForm::ConstraintStudentsMaxHoursDailyForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintStudentsMaxHoursDailyForm::ConstraintStudentsMaxHoursDailyForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintStudentsMaxHoursDailyForm_template", "Constraints students max hours daily"));

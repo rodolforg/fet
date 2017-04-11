@@ -19,7 +19,7 @@
 #include "addconstrainttwoactivitiesorderedform.h"
 #include "modifyconstrainttwoactivitiesorderedform.h"
 
-ConstraintTwoActivitiesOrderedForm::ConstraintTwoActivitiesOrderedForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintTwoActivitiesOrderedForm::ConstraintTwoActivitiesOrderedForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintTwoActivitiesOrderedForm_template", "Constraints two activies ordered"));

@@ -18,9 +18,9 @@
 #ifndef CONSTRAINTTEACHERMAXDAYSPERWEEKFORM_H
 #define CONSTRAINTTEACHERMAXDAYSPERWEEKFORM_H
 
-#include "constraint_basedialog.h"
+#include "timeconstraint_basedialog.h"
 
-class ConstraintTeacherMaxDaysPerWeekForm : public ConstraintBaseDialog  {
+class ConstraintTeacherMaxDaysPerWeekForm : public TimeConstraintBaseDialog  {
 	Q_OBJECT
 public:
 	ConstraintTeacherMaxDaysPerWeekForm(QWidget* parent);

@@ -18,9 +18,9 @@
 #ifndef CONSTRAINTTEACHERMAXGAPSPERDAYFORM_H
 #define CONSTRAINTTEACHERMAXGAPSPERDAYFORM_H
 
-#include "constraint_basedialog.h"
+#include "timeconstraint_basedialog.h"
 
-class ConstraintTeacherMaxGapsPerDayForm : public ConstraintBaseDialog  {
+class ConstraintTeacherMaxGapsPerDayForm : public TimeConstraintBaseDialog  {
 	Q_OBJECT
 public:
 	ConstraintTeacherMaxGapsPerDayForm(QWidget* parent);

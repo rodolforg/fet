@@ -18,9 +18,9 @@
 #ifndef CONSTRAINTACTIVITIESSAMESTARTINGDAYFORM_H
 #define CONSTRAINTACTIVITIESSAMESTARTINGDAYFORM_H
 
-#include "constraint_basedialog.h"
+#include "timeconstraint_basedialog.h"
 
-class ConstraintActivitiesSameStartingDayForm : public ConstraintBaseDialog  {
+class ConstraintActivitiesSameStartingDayForm : public TimeConstraintBaseDialog  {
 	Q_OBJECT
 public:
 	ConstraintActivitiesSameStartingDayForm(QWidget* parent);

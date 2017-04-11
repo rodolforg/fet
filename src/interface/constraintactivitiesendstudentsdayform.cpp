@@ -19,7 +19,7 @@
 #include "addconstraintactivitiesendstudentsdayform.h"
 #include "modifyconstraintactivitiesendstudentsdayform.h"
 
-ConstraintActivitiesEndStudentsDayForm::ConstraintActivitiesEndStudentsDayForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintActivitiesEndStudentsDayForm::ConstraintActivitiesEndStudentsDayForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintActivitiesEndStudentsDayForm_template", "Constraints activities end students day"));

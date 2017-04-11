@@ -18,9 +18,9 @@
 #ifndef CONSTRAINTSUBACTIVITIESPREFERREDSTARTINGTIMESFORM_H
 #define CONSTRAINTSUBACTIVITIESPREFERREDSTARTINGTIMESFORM_H
 
-#include "constraint_basedialog.h"
+#include "timeconstraint_basedialog.h"
 
-class ConstraintSubactivitiesPreferredStartingTimesForm : public ConstraintBaseDialog  {
+class ConstraintSubactivitiesPreferredStartingTimesForm : public TimeConstraintBaseDialog  {
 	Q_OBJECT
 public:
 	ConstraintSubactivitiesPreferredStartingTimesForm(QWidget* parent);

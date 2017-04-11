@@ -1,4 +1,12 @@
 /***************************************************************************
+						  constraint_basedialog.h  -  description
+							 -------------------
+	begin                : 2017
+	copyright            : (C) 2017 by Rodolfo RG
+	This file is part of a modification of FET timetable (the original is developed by Liviu Lalescu)
+ ***************************************************************************/
+
+/***************************************************************************
  *                                                                         *
  *   This program is free software: you can redistribute it and/or modify  *
  *   it under the terms of the GNU Affero General Public License as        *
@@ -11,7 +19,6 @@
 #define CONSTRAINTBASEDIALOG_H
 
 #include <QDialog>
-#include "timetable.h"
 
 #include "ui_constraint_basedialog_template.h"
 
@@ -29,18 +36,12 @@ protected:
 	 * @param ctr the constraint to be modified
 	 * @return the instantiated dialog
 	 */
-	virtual QDialog *createModifyDialog(TimeConstraint *ctr) = 0;
+	virtual QDialog *createModifyDialog(void *ctr) = 0;
 
 	void setHelpText(QString msg);
 
 	void setInstructionText(QString msg);
 
-	/**
-	 * @brief Check if a constraint passes in the filter, i.e it should be shown in constraint list
-	 * @param ctr the constraint
-	 * @return true if it matches the filter
-	 */
-	virtual bool filterOk(const TimeConstraint *ctr) const = 0;
 	void filterChanged();
 	void setFilterWidget(QWidget *widget);
 	QWidget *getFilterWidget() const;
@@ -53,11 +54,25 @@ protected:
 	 */
 	virtual bool beforeRemoveConstraint();
 	/**
+	 * @brief doRemoveConstraint Remove constraint from timetable rules
+	 * @param ctr generic pointer to a constraint (TimeConstraint or SpaceConstraint) in constraint list
+	 */
+	virtual void doRemoveConstraint(void * ctr) = 0;
+
+	/**
 	 * @brief A callback function called after a constraint is successfully removed from this dialog list
 	 */
 	virtual void afterRemoveConstraint();
 
-	TimeConstraintsList visibleConstraintsList;
+	QList<void*> visibleConstraintsList;
+
+	/**
+	 * @brief fillConstraintList
+	 * @param list List of filtered constraints (those that aproved by filterOk() )
+	 */
+	virtual void fillConstraintList(QList<void*>& list) = 0;
+
+	virtual QString getConstraintDetailedDescription(const void *ctr) const = 0;
 
 public:
 	ConstraintBaseDialog(QWidget* parent);

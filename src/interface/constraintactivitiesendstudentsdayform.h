@@ -18,9 +18,9 @@
 #ifndef CONSTRAINTACTIVITIESENDSTUDENTSDAYFORM_H
 #define CONSTRAINTACTIVITIESENDSTUDENTSDAYFORM_H
 
-#include "constraint_basedialog.h"
+#include "timeconstraint_basedialog.h"
 
-class ConstraintActivitiesEndStudentsDayForm : public ConstraintBaseDialog  {
+class ConstraintActivitiesEndStudentsDayForm : public TimeConstraintBaseDialog  {
 	Q_OBJECT
 public:
 	ConstraintActivitiesEndStudentsDayForm(QWidget* parent);

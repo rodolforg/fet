@@ -18,9 +18,9 @@
 #ifndef CONSTRAINTTWOACTIVITIESCONSECUTIVEFORM_H
 #define CONSTRAINTTWOACTIVITIESCONSECUTIVEFORM_H
 
-#include "constraint_basedialog.h"
+#include "timeconstraint_basedialog.h"
 
-class ConstraintTwoActivitiesConsecutiveForm : public ConstraintBaseDialog  {
+class ConstraintTwoActivitiesConsecutiveForm : public TimeConstraintBaseDialog  {
 	Q_OBJECT
 public:
 	ConstraintTwoActivitiesConsecutiveForm(QWidget* parent);

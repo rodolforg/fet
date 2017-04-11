@@ -21,7 +21,7 @@
 
 #include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
-ConstraintStudentsSetMaxGapsPerWeekForm::ConstraintStudentsSetMaxGapsPerWeekForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintStudentsSetMaxGapsPerWeekForm::ConstraintStudentsSetMaxGapsPerWeekForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
     //: This is the title of the dialog to see the list of all constraints of this type
     setWindowTitle(QCoreApplication::translate("ConstraintStudentsSetMaxGapsPerWeekForm_template", "Constraints students set max gaps per week"));

@@ -18,9 +18,9 @@
 #ifndef CONSTRAINTACTIVITIESNOTOVERLAPPINGFORM_H
 #define CONSTRAINTACTIVITIESNOTOVERLAPPINGFORM_H
 
-#include "constraint_basedialog.h"
+#include "timeconstraint_basedialog.h"
 
-class ConstraintActivitiesNotOverlappingForm : public ConstraintBaseDialog  {
+class ConstraintActivitiesNotOverlappingForm : public TimeConstraintBaseDialog  {
 	Q_OBJECT
 public:
 	ConstraintActivitiesNotOverlappingForm(QWidget* parent);

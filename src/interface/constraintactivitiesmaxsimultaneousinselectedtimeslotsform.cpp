@@ -21,7 +21,7 @@
 
 #include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
-ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm(QWidget* parent): ConstraintBaseDialog(parent)
+ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
 	//: This is the title of the dialog to see the list of all constraints of this type
 	setWindowTitle(QCoreApplication::translate("ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm_template", "Constraints activities max simultaneous in selected time slots"));
