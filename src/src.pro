@@ -1246,7 +1246,6 @@ FORMS += \
 	interface/addconstraintactivitiesoccupymaxdifferentroomsform_template.ui \
 	interface/modifyconstraintactivitiesoccupymaxdifferentroomsform_template.ui \
 	\
-	interface/constraintactivitiessameroomifconsecutiveform_template.ui \
 	interface/addconstraintactivitiessameroomifconsecutiveform_template.ui \
 	interface/modifyconstraintactivitiessameroomifconsecutiveform_template.ui \
 	\

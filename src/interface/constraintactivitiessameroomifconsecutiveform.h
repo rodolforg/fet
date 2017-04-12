@@ -18,30 +18,18 @@
 #ifndef CONSTRAINTACTIVITIESSAMEROOMIFCONSECUTIVEFORM_H
 #define CONSTRAINTACTIVITIESSAMEROOMIFCONSECUTIVEFORM_H
 
-#include "ui_constraintactivitiessameroomifconsecutiveform_template.h"
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
+#include "spaceconstraint_basedialog.h"
 
-class ConstraintActivitiesSameRoomIfConsecutiveForm : public QDialog, Ui::ConstraintActivitiesSameRoomIfConsecutiveForm_template  {
+class ConstraintActivitiesSameRoomIfConsecutiveForm : public SpaceConstraintBaseDialog  {
 	Q_OBJECT
 public:
-	SpaceConstraintsList visibleConstraintsList;
-
 	ConstraintActivitiesSameRoomIfConsecutiveForm(QWidget* parent);
 	~ConstraintActivitiesSameRoomIfConsecutiveForm();
 
-	bool filterOk(SpaceConstraint* ctr);
-
-public slots:
-	void constraintChanged(int index);
-	void addConstraint();
-	void modifyConstraint();
-	void removeConstraint();
-
-	void filterChanged();
-	
-//	void help();
+protected:
+	virtual QDialog *createAddDialog();
+	virtual QDialog *createModifyDialog(SpaceConstraint *ctr);
+	virtual bool filterOk(const SpaceConstraint *ctr) const;
 };
 
 #endif
