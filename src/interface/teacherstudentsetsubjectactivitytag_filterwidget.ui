@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>300</height>
+    <height>307</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -73,6 +73,20 @@
         </item>
         <item>
          <widget class="QComboBox" name="activityTagsComboBox"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="roomsBox">
+        <item>
+         <widget class="QLabel" name="roomsLabel">
+          <property name="text">
+           <string>Room</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="roomsComboBox"/>
         </item>
        </layout>
       </item>

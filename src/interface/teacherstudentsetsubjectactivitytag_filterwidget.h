@@ -24,11 +24,13 @@ public:
 	QString studentsSet() const;
 	QString subject() const;
 	QString activityTag() const;
+	QString room() const;
 
 	void setTeachersVisible(bool visible = true);
 	void setStudentSetsVisible(bool visible = true);
 	void setSubjectsVisible(bool visible = true);
 	void setActivityTagsVisible(bool visible = true);
+	void setRoomsVisible(bool visible = true);
 
 	/// Hide filter item labels
 	void hideLabels();
@@ -43,6 +45,7 @@ private:
 	void populateStudentsSets(const Rules& rules);
 	void populateSubjects(const Rules& rules);
 	void populateActivityTags(const Rules& rules);
+	void populateRooms(const Rules& rules);
 
 private slots:
 	void onChange();

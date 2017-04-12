@@ -1003,7 +1003,6 @@ FORMS += \
 	interface/constraintroomnotavailabletimesform_template.ui \
 	interface/modifyconstraintroomnotavailabletimesform_template.ui \
 	interface/addconstraintactivitypreferredroomform_template.ui \
-	interface/constraintactivitypreferredroomform_template.ui \
 	interface/modifyconstraintactivitypreferredroomform_template.ui \
 	interface/addconstraintsubjectpreferredroomform_template.ui \
 	interface/constraintsubjectpreferredroomform_template.ui \

@@ -16,6 +16,8 @@ TeacherStudentSetSubjectActivityTag_FilterWidget::TeacherStudentSetSubjectActivi
 	Q_UNUSED(tmp3);
 	QSize tmp4=ui->activityTagsComboBox->minimumSizeHint();
 	Q_UNUSED(tmp4);
+	QSize tmp5=ui->roomsComboBox->minimumSizeHint();
+	Q_UNUSED(tmp5);
 
 	populateTeachers(rules);
 	ui->teachersComboBox->setCurrentIndex(0);
@@ -29,15 +31,20 @@ TeacherStudentSetSubjectActivityTag_FilterWidget::TeacherStudentSetSubjectActivi
 	populateStudentsSets(rules);
 	ui->studentsComboBox->setCurrentIndex(0);
 
+	populateRooms(rules);
+	ui->roomsComboBox->setCurrentIndex(0);
+
 	connect(ui->teachersComboBox, SIGNAL(activated(QString)), this, SLOT(onChange()));
 	connect(ui->studentsComboBox, SIGNAL(activated(QString)), this, SLOT(onChange()));
 	connect(ui->subjectsComboBox, SIGNAL(activated(QString)), this, SLOT(onChange()));
 	connect(ui->activityTagsComboBox, SIGNAL(activated(QString)), this, SLOT(onChange()));
+	connect(ui->roomsComboBox, SIGNAL(activated(QString)), this, SLOT(onChange()));
 
 	setTeachersVisible(false);
 	setSubjectsVisible(false);
 	setStudentSetsVisible(false);
 	setActivityTagsVisible(false);
+	setRoomsVisible(false);
 }
 
 TeacherStudentSetSubjectActivityTag_FilterWidget::~TeacherStudentSetSubjectActivityTag_FilterWidget()
@@ -70,6 +77,11 @@ QString TeacherStudentSetSubjectActivityTag_FilterWidget::activityTag() const
 	return ui->activityTagsComboBox->currentText();
 }
 
+QString TeacherStudentSetSubjectActivityTag_FilterWidget::room() const
+{
+	return ui->roomsComboBox->currentText();
+}
+
 void TeacherStudentSetSubjectActivityTag_FilterWidget::setTeachersVisible(bool visible)
 {
 	ui->teachersLabel->setVisible(visible);
@@ -94,12 +106,19 @@ void TeacherStudentSetSubjectActivityTag_FilterWidget::setActivityTagsVisible(bo
 	ui->activityTagsComboBox->setVisible(visible);
 }
 
+void TeacherStudentSetSubjectActivityTag_FilterWidget::setRoomsVisible(bool visible)
+{
+	ui->roomsLabel->setVisible(visible);
+	ui->roomsComboBox->setVisible(visible);
+}
+
 void TeacherStudentSetSubjectActivityTag_FilterWidget::hideLabels()
 {
 	ui->teachersLabel->hide();
 	ui->studentsLabel->hide();
 	ui->subjectsLabel->hide();
 	ui->activityTagsLabel->hide();
+	ui->roomsLabel->hide();
 }
 
 void TeacherStudentSetSubjectActivityTag_FilterWidget::setDirection(QBoxLayout::Direction direction)
@@ -152,5 +171,14 @@ void TeacherStudentSetSubjectActivityTag_FilterWidget::populateActivityTags(cons
 	for(int i=0; i<rules.activityTagsList.size(); i++){
 		ActivityTag* st=rules.activityTagsList[i];
 		ui->activityTagsComboBox->addItem(st->name);
+	}
+}
+
+void TeacherStudentSetSubjectActivityTag_FilterWidget::populateRooms(const Rules &rules)
+{
+	ui->roomsComboBox->addItem("");
+	for(int i=0; i<rules.roomsList.size(); i++){
+		Room* room=rules.roomsList[i];
+		ui->roomsComboBox->addItem(room->name);
 	}
 }
