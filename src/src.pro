@@ -1243,7 +1243,6 @@ FORMS += \
 	interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui \
 	interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui \
 	\
-	interface/constraintactivitiesoccupymaxdifferentroomsform_template.ui \
 	interface/addconstraintactivitiesoccupymaxdifferentroomsform_template.ui \
 	interface/modifyconstraintactivitiesoccupymaxdifferentroomsform_template.ui \
 	\

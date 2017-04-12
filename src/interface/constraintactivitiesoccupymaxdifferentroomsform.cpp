@@ -15,91 +15,31 @@
  *                                                                         *
  ***************************************************************************/
 
-#include <QMessageBox>
-
-#include "longtextmessagebox.h"
-
 #include "constraintactivitiesoccupymaxdifferentroomsform.h"
 #include "addconstraintactivitiesoccupymaxdifferentroomsform.h"
 #include "modifyconstraintactivitiesoccupymaxdifferentroomsform.h"
 
-#include <QListWidget>
-#include <QScrollBar>
-#include <QAbstractItemView>
+#include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
-ConstraintActivitiesOccupyMaxDifferentRoomsForm::ConstraintActivitiesOccupyMaxDifferentRoomsForm(QWidget* parent): QDialog(parent)
+ConstraintActivitiesOccupyMaxDifferentRoomsForm::ConstraintActivitiesOccupyMaxDifferentRoomsForm(QWidget* parent): SpaceConstraintBaseDialog(parent)
 {
-	setupUi(this);
+	const char *context = "ConstraintActivitiesOccupyMaxDifferentRoomsForm_template";
+	//: This is the title of the dialog to see the list of all constraints of this type
+	setWindowTitle(QCoreApplication::translate(context, "Constraints activities occupy max different rooms"));
 
-	currentConstraintTextEdit->setReadOnly(true);
+	QString s = QCoreApplication::translate(context, "IMPORTANT: Please be careful with this constraint, because the generation may become too slow or impossible if you overuse it. Press Help for more details.");
+	setInstructionText(s);
+	setHelp();
 
-	modifyConstraintPushButton->setDefault(true);
+	TeacherStudentSetSubjectActivityTag_FilterWidget *filterWidget = new TeacherStudentSetSubjectActivityTag_FilterWidget(gt.rules);
+	filterWidget->setTeachersVisible(true);
+	filterWidget->setStudentSetsVisible(true);
+	filterWidget->setSubjectsVisible(true);
+	filterWidget->setActivityTagsVisible(true);
+	setFilterWidget(filterWidget);
+	connect(filterWidget, &TeacherStudentSetSubjectActivityTag_FilterWidget::FilterChanged, this, &ConstraintActivitiesOccupyMaxDifferentRoomsForm::filterChanged);
 
-	constraintsListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
-
-	connect(constraintsListWidget, SIGNAL(currentRowChanged(int)), this, SLOT(constraintChanged(int)));
-	connect(addConstraintPushButton, SIGNAL(clicked()), this, SLOT(addConstraint()));
-	connect(closePushButton, SIGNAL(clicked()), this, SLOT(close()));
-	connect(removeConstraintPushButton, SIGNAL(clicked()), this, SLOT(removeConstraint()));
-	connect(modifyConstraintPushButton, SIGNAL(clicked()), this, SLOT(modifyConstraint()));
-	connect(constraintsListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(modifyConstraint()));
-
-	connect(teachersComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
-	connect(studentsComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
-	connect(subjectsComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
-	connect(activityTagsComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
-
-	connect(helpPushButton, SIGNAL(clicked()), this, SLOT(help()));
-
-	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
-
-	QSize tmp1=teachersComboBox->minimumSizeHint();
-	Q_UNUSED(tmp1);
-	QSize tmp2=studentsComboBox->minimumSizeHint();
-	Q_UNUSED(tmp2);
-	QSize tmp3=subjectsComboBox->minimumSizeHint();
-	Q_UNUSED(tmp3);
-	QSize tmp4=activityTagsComboBox->minimumSizeHint();
-	Q_UNUSED(tmp4);
-	
-/////////////
-	teachersComboBox->addItem("");
-	for(int i=0; i<gt.rules.teachersList.size(); i++){
-		Teacher* tch=gt.rules.teachersList[i];
-		teachersComboBox->addItem(tch->name);
-	}
-	teachersComboBox->setCurrentIndex(0);
-
-	subjectsComboBox->addItem("");
-	for(int i=0; i<gt.rules.subjectsList.size(); i++){
-		Subject* sb=gt.rules.subjectsList[i];
-		subjectsComboBox->addItem(sb->name);
-	}
-	subjectsComboBox->setCurrentIndex(0);
-
-	activityTagsComboBox->addItem("");
-	for(int i=0; i<gt.rules.activityTagsList.size(); i++){
-		ActivityTag* st=gt.rules.activityTagsList[i];
-		activityTagsComboBox->addItem(st->name);
-	}
-	activityTagsComboBox->setCurrentIndex(0);
-
-	studentsComboBox->addItem("");
-	for(int i=0; i<gt.rules.yearsList.size(); i++){
-		StudentsYear* sty=gt.rules.yearsList[i];
-		studentsComboBox->addItem(sty->name);
-		for(int j=0; j<sty->groupsList.size(); j++){
-			StudentsGroup* stg=sty->groupsList[j];
-			studentsComboBox->addItem(stg->name);
-			if(SHOW_SUBGROUPS_IN_COMBO_BOXES) for(int k=0; k<stg->subgroupsList.size(); k++){
-				StudentsSubgroup* sts=stg->subgroupsList[k];
-				studentsComboBox->addItem(sts->name);
-			}
-		}
-	}
-	studentsComboBox->setCurrentIndex(0);
-///////////////
 
 	this->filterChanged();
 }
@@ -109,17 +49,19 @@ ConstraintActivitiesOccupyMaxDifferentRoomsForm::~ConstraintActivitiesOccupyMaxD
 	saveFETDialogGeometry(this);
 }
 
-bool ConstraintActivitiesOccupyMaxDifferentRoomsForm::filterOk(SpaceConstraint* ctr)
+bool ConstraintActivitiesOccupyMaxDifferentRoomsForm::filterOk(const SpaceConstraint* ctr) const
 {
 	if(ctr->type!=CONSTRAINT_ACTIVITIES_OCCUPY_MAX_DIFFERENT_ROOMS)
 		return false;
 
 	ConstraintActivitiesOccupyMaxDifferentRooms* c=(ConstraintActivitiesOccupyMaxDifferentRooms*) ctr;
+
+	TeacherStudentSetSubjectActivityTag_FilterWidget *filterWidget = static_cast<TeacherStudentSetSubjectActivityTag_FilterWidget*>(getFilterWidget());
 	
-	QString tn=teachersComboBox->currentText();
-	QString sbn=subjectsComboBox->currentText();
-	QString sbtn=activityTagsComboBox->currentText();
-	QString stn=studentsComboBox->currentText();
+	QString tn=filterWidget->teacher();
+	QString sbn=filterWidget->subject();
+	QString sbtn=filterWidget->activityTag();
+	QString stn=filterWidget->studentsSet();
 	
 	if(tn=="" && sbn=="" && sbtn=="" && stn=="")
 		return true;
@@ -182,118 +124,19 @@ bool ConstraintActivitiesOccupyMaxDifferentRoomsForm::filterOk(SpaceConstraint* 
 		return false;
 }
 
-void ConstraintActivitiesOccupyMaxDifferentRoomsForm::filterChanged()
+QDialog * ConstraintActivitiesOccupyMaxDifferentRoomsForm::createAddDialog()
 {
-	this->visibleConstraintsList.clear();
-	constraintsListWidget->clear();
-	for(int i=0; i<gt.rules.spaceConstraintsList.size(); i++){
-		SpaceConstraint* ctr=gt.rules.spaceConstraintsList[i];
-		if(filterOk(ctr)){
-			visibleConstraintsList.append(ctr);
-			constraintsListWidget->addItem(ctr->getDescription(gt.rules));
-		}
-	}
-	
-	if(constraintsListWidget->count()>0)
-		constraintsListWidget->setCurrentRow(0);
-	else
-		currentConstraintTextEdit->setPlainText(QString(""));
+	return new AddConstraintActivitiesOccupyMaxDifferentRoomsForm(this);
 }
 
-void ConstraintActivitiesOccupyMaxDifferentRoomsForm::constraintChanged(int index)
+QDialog * ConstraintActivitiesOccupyMaxDifferentRoomsForm::createModifyDialog(SpaceConstraint *ctr)
 {
-	if(index<0){
-		currentConstraintTextEdit->setPlainText("");
-		return;
-	}
-	assert(index<this->visibleConstraintsList.size());
-	SpaceConstraint* ctr=this->visibleConstraintsList.at(index);
-	assert(ctr!=NULL);
-	currentConstraintTextEdit->setPlainText(ctr->getDetailedDescription(gt.rules));
+	return new ModifyConstraintActivitiesOccupyMaxDifferentRoomsForm(this, (ConstraintActivitiesOccupyMaxDifferentRooms*)ctr);
 }
 
-void ConstraintActivitiesOccupyMaxDifferentRoomsForm::addConstraint()
+void ConstraintActivitiesOccupyMaxDifferentRoomsForm::setHelp()
 {
-	AddConstraintActivitiesOccupyMaxDifferentRoomsForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-
-	filterChanged();
-	
-	constraintsListWidget->setCurrentRow(constraintsListWidget->count()-1);
-}
-
-void ConstraintActivitiesOccupyMaxDifferentRoomsForm::modifyConstraint()
-{
-	int valv=constraintsListWidget->verticalScrollBar()->value();
-	int valh=constraintsListWidget->horizontalScrollBar()->value();
-
-	int i=constraintsListWidget->currentRow();
-	if(i<0){
-		QMessageBox::information(this, tr("FET information"), tr("Invalid selected constraint"));
-		return;
-	}
-	SpaceConstraint* ctr=this->visibleConstraintsList.at(i);
-
-	ModifyConstraintActivitiesOccupyMaxDifferentRoomsForm form(this, (ConstraintActivitiesOccupyMaxDifferentRooms*)ctr);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-
-	filterChanged();
-	
-	constraintsListWidget->verticalScrollBar()->setValue(valv);
-	constraintsListWidget->horizontalScrollBar()->setValue(valh);
-	
-	if(i>=constraintsListWidget->count())
-		i=constraintsListWidget->count()-1;
-		
-	if(i>=0)
-		constraintsListWidget->setCurrentRow(i);
-	else
-		this->constraintChanged(-1);
-}
-
-void ConstraintActivitiesOccupyMaxDifferentRoomsForm::removeConstraint()
-{
-	int i=constraintsListWidget->currentRow();
-	if(i<0){
-		QMessageBox::information(this, tr("FET information"), tr("Invalid selected constraint"));
-		return;
-	}
-	SpaceConstraint* ctr=this->visibleConstraintsList.at(i);
 	QString s;
-	s=tr("Remove constraint?");
-	s+="\n\n";
-	s+=ctr->getDetailedDescription(gt.rules);
-	
-	QListWidgetItem* item;
-
-	switch( LongTextMessageBox::confirmation( this, tr("FET confirmation"),
-		s, tr("Yes"), tr("No"), 0, 0, 1 ) ){
-	case 0: // The user clicked the OK button or pressed Enter
-		gt.rules.removeSpaceConstraint(ctr);
-		
-		visibleConstraintsList.removeAt(i);
-		constraintsListWidget->setCurrentRow(-1);
-		item=constraintsListWidget->takeItem(i);
-		delete item;
-
-		break;
-	case 1: // The user clicked the Cancel button or pressed Escape
-		break;
-	}
-	
-	if(i>=constraintsListWidget->count())
-		i=constraintsListWidget->count()-1;
-	if(i>=0)
-		constraintsListWidget->setCurrentRow(i);
-	else
-		this->constraintChanged(-1);
-}
-
-void ConstraintActivitiesOccupyMaxDifferentRoomsForm::help()
-{
-	QString s=QString("");
 	
 	s+=tr("IMPORTANT NOTE: Please be careful with this constraint, as its overuse may lead to a slowdown of generation or even to an impossible timetable.");
 	s+=QString("\n\n");
@@ -304,5 +147,5 @@ void ConstraintActivitiesOccupyMaxDifferentRoomsForm::help()
 	 "This constraint may be used for instance to constrain all activities of type Physics of a certain students set to be in the same room "
 	 "throughout the week, by adding all Physics activities for this students set and making max different rooms = 1.");
 
-	LongTextMessageBox::largeInformation(this, tr("FET help"), s);
+	setHelpText(s);
 }
