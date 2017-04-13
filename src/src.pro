@@ -1078,7 +1078,6 @@ FORMS += \
 	interface/constraintteacherhomeroomsform_template.ui \
 	interface/modifyconstraintteacherhomeroomsform_template.ui \
 	interface/addconstraintactivitypreferredroomsform_template.ui \
-	interface/constraintactivitypreferredroomsform_template.ui \
 	interface/modifyconstraintactivitypreferredroomsform_template.ui \
 	interface/alltimeconstraintsform_template.ui \
 	interface/allspaceconstraintsform_template.ui \
