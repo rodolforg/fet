@@ -25,6 +25,10 @@
 
 ConstraintActivityPreferredRoomForm::ConstraintActivityPreferredRoomForm(QWidget* parent): SpaceConstraintBaseDialog(parent)
 {
+	const char *context = "ConstraintActivityPreferredRoomForm_template";
+	//: This is the title of the dialog to see the list of all constraints of this type
+	setWindowTitle(QCoreApplication::translate(context, "Constraints activity preferred room"));
+
 	TeacherStudentSetSubjectActivityTag_FilterWidget *filterWidget = new TeacherStudentSetSubjectActivityTag_FilterWidget(gt.rules);
 	filterWidget->setTeachersVisible(true);
 	filterWidget->setStudentSetsVisible(true);
