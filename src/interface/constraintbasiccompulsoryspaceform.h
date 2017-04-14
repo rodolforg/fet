@@ -18,28 +18,20 @@
 #ifndef CONSTRAINTBASICCOMPULSORYSPACEFORM_H
 #define CONSTRAINTBASICCOMPULSORYSPACEFORM_H
 
-#include "ui_constraintbasiccompulsoryspaceform_template.h"
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
+#include "spaceconstraint_basedialog.h"
 
-class ConstraintBasicCompulsorySpaceForm : public QDialog, Ui::ConstraintBasicCompulsorySpaceForm_template  {
+class ConstraintBasicCompulsorySpaceForm : public SpaceConstraintBaseDialog  {
 	Q_OBJECT
 public:
-	SpaceConstraintsList visibleConstraintsList;
-
 	ConstraintBasicCompulsorySpaceForm(QWidget* parent);
 	~ConstraintBasicCompulsorySpaceForm();
 
-	bool filterOk(SpaceConstraint* ctr);
+protected:
+	virtual QDialog *createAddDialog();
+	virtual QDialog *createModifyDialog(SpaceConstraint *ctr);
+	virtual bool filterOk(const SpaceConstraint *ctr) const;
 
-public slots:
-	void constraintChanged(int index);
-	void addConstraint();
-	void modifyConstraint();
-	void removeConstraint();
-
-	void filterChanged();
+	virtual bool beforeRemoveConstraint();
 };
 
 #endif
