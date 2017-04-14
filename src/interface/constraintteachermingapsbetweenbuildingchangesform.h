@@ -18,28 +18,18 @@
 #ifndef CONSTRAINTTEACHERMINGAPSBETWEENBUILDINGCHANGESFORM_H
 #define CONSTRAINTTEACHERMINGAPSBETWEENBUILDINGCHANGESFORM_H
 
-#include "ui_constraintteachermingapsbetweenbuildingchangesform_template.h"
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
+#include "spaceconstraint_basedialog.h"
 
-class ConstraintTeacherMinGapsBetweenBuildingChangesForm : public QDialog, Ui::ConstraintTeacherMinGapsBetweenBuildingChangesForm_template  {
+class ConstraintTeacherMinGapsBetweenBuildingChangesForm : public SpaceConstraintBaseDialog  {
 	Q_OBJECT
 public:
-	SpaceConstraintsList visibleConstraintsList;
-
 	ConstraintTeacherMinGapsBetweenBuildingChangesForm(QWidget* parent);
 	~ConstraintTeacherMinGapsBetweenBuildingChangesForm();
 
-	bool filterOk(SpaceConstraint* ctr);
-
-public slots:
-	void constraintChanged(int index);
-	void addConstraint();
-	void modifyConstraint();
-	void removeConstraint();
-
-	void filterChanged();
+protected:
+	virtual QDialog *createAddDialog();
+	virtual QDialog *createModifyDialog(SpaceConstraint *ctr);
+	virtual bool filterOk(const SpaceConstraint *ctr) const;
 };
 
 #endif
