@@ -1047,7 +1047,6 @@ FORMS += \
 	interface/modifyconstraintstudentsmingapsbetweenbuildingchangesform_template.ui \
 	\
 	interface/addconstraintteachermaxbuildingchangesperdayform_template.ui \
-	interface/constraintteachermaxbuildingchangesperdayform_template.ui \
 	interface/modifyconstraintteachermaxbuildingchangesperdayform_template.ui \
 	interface/addconstraintteachersmaxbuildingchangesperdayform_template.ui \
 	interface/modifyconstraintteachersmaxbuildingchangesperdayform_template.ui \
