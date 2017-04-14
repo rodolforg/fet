@@ -1022,7 +1022,6 @@ FORMS += \
 	interface/modifyconstraintsubjectactivitytagpreferredroomsform_template.ui \
 	\
 	interface/addconstraintactivitytagpreferredroomsform_template.ui \
-	interface/constraintactivitytagpreferredroomsform_template.ui \
 	interface/modifyconstraintactivitytagpreferredroomsform_template.ui \
 	\
 	interface/addconstraintstudentssethomeroomform_template.ui \
