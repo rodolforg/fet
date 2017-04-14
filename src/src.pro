@@ -1000,7 +1000,6 @@ FORMS += \
 	interface/addconstraintactivitypreferredstartingtimesform_template.ui \
 	interface/modifyconstraintactivitypreferredstartingtimesform_template.ui \
 	interface/addconstraintroomnotavailabletimesform_template.ui \
-	interface/constraintroomnotavailabletimesform_template.ui \
 	interface/modifyconstraintroomnotavailabletimesform_template.ui \
 	interface/addconstraintactivitypreferredroomform_template.ui \
 	interface/modifyconstraintactivitypreferredroomform_template.ui \
