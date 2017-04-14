@@ -47,7 +47,6 @@ bool ConstraintActivityTagPreferredRoomsForm::filterOk(const SpaceConstraint* ct
 		ConstraintActivityTagPreferredRooms* c=(ConstraintActivityTagPreferredRooms*)ctr;
 		const TeacherStudentSetSubjectActivityTag_FilterWidget * filterWidget = static_cast<TeacherStudentSetSubjectActivityTag_FilterWidget*>(getFilterWidget());
 		QString activityTag=filterWidget->activityTag();
-		QString room=filterWidget->room();
 		return (c->activityTagName==activityTag || activityTag=="");
 	}
 	else
