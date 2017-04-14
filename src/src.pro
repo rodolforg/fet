@@ -1039,7 +1039,6 @@ FORMS += \
 	interface/constraintstudentssetmaxbuildingchangesperweekform_template.ui \
 	interface/modifyconstraintstudentssetmaxbuildingchangesperweekform_template.ui \
 	interface/addconstraintstudentsmaxbuildingchangesperweekform_template.ui \
-	interface/constraintstudentsmaxbuildingchangesperweekform_template.ui \
 	interface/modifyconstraintstudentsmaxbuildingchangesperweekform_template.ui \
 	interface/addconstraintstudentssetmingapsbetweenbuildingchangesform_template.ui \
 	interface/constraintstudentssetmingapsbetweenbuildingchangesform_template.ui \
