@@ -395,4 +395,3 @@ void ActivityTagsForm::comments()
 		activityTagChanged(ind);
 	}
 }
-
