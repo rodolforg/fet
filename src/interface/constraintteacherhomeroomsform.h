@@ -18,30 +18,17 @@
 #ifndef CONSTRAINTTEACHERHOMEROOMSFORM_H
 #define CONSTRAINTTEACHERHOMEROOMSFORM_H
 
-#include "ui_constraintteacherhomeroomsform_template.h"
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
+#include "spaceconstraint_basedialog.h"
 
-class ConstraintTeacherHomeRoomsForm : public QDialog, Ui::ConstraintTeacherHomeRoomsForm_template  {
+class ConstraintTeacherHomeRoomsForm : public SpaceConstraintBaseDialog  {
 	Q_OBJECT
 public:
-	SpaceConstraintsList visibleConstraintsList;
-
 	ConstraintTeacherHomeRoomsForm(QWidget* parent);
 	~ConstraintTeacherHomeRoomsForm();
 
-	void refreshConstraintsListWidget();
-
-	bool filterOk(SpaceConstraint* ctr);
-	
-public slots:
-	void constraintChanged(int index);
-	void addConstraint();
-	void removeConstraint();
-	void modifyConstraint();
-	
-	void filterChanged();
+protected:
+	virtual QDialog *createAddDialog();
+	virtual QDialog *createModifyDialog(SpaceConstraint *ctr);
+	virtual bool filterOk(const SpaceConstraint *ctr) const;
 };
-
 #endif

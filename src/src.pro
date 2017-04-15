@@ -1051,10 +1051,8 @@ FORMS += \
 	interface/modifyconstraintteachersmingapsbetweenbuildingchangesform_template.ui \
 	\
 	interface/addconstraintteacherhomeroomform_template.ui \
-	interface/constraintteacherhomeroomform_template.ui \
 	interface/modifyconstraintteacherhomeroomform_template.ui \
 	interface/addconstraintteacherhomeroomsform_template.ui \
-	interface/constraintteacherhomeroomsform_template.ui \
 	interface/modifyconstraintteacherhomeroomsform_template.ui \
 	interface/addconstraintactivitypreferredroomsform_template.ui \
 	interface/modifyconstraintactivitypreferredroomsform_template.ui \
