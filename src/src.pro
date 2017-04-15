@@ -1020,10 +1020,8 @@ FORMS += \
 	interface/modifyconstraintactivitytagpreferredroomsform_template.ui \
 	\
 	interface/addconstraintstudentssethomeroomform_template.ui \
-	interface/constraintstudentssethomeroomform_template.ui \
 	interface/modifyconstraintstudentssethomeroomform_template.ui \
 	interface/addconstraintstudentssethomeroomsform_template.ui \
-	interface/constraintstudentssethomeroomsform_template.ui \
 	interface/modifyconstraintstudentssethomeroomsform_template.ui \
 	\
 	interface/addconstraintstudentssetmaxbuildingchangesperdayform_template.ui \
