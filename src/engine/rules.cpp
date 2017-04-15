@@ -3644,7 +3644,13 @@ bool Rules::removeTimeConstraint(TimeConstraint* ctr)
 				QSet<ConstraintActivityPreferredStartingTime*> cs=apstHash.value(c->activityId, QSet<ConstraintActivityPreferredStartingTime*>());
 				assert(cs.contains(c));
 				cs.remove(c);
-				apstHash.insert(c->activityId, cs);
+				if(!cs.isEmpty()){
+					apstHash.insert(c->activityId, cs);
+				}
+				else{
+					int t=apstHash.remove(c->activityId);
+					assert(t==1);
+				}
 			}
 
 			else if(ctr->type==CONSTRAINT_MIN_DAYS_BETWEEN_ACTIVITIES){
@@ -3653,7 +3659,13 @@ bool Rules::removeTimeConstraint(TimeConstraint* ctr)
 					QSet<ConstraintMinDaysBetweenActivities*> cs=mdbaHash.value(aid, QSet<ConstraintMinDaysBetweenActivities*>());
 					assert(cs.contains(c));
 					cs.remove(c);
-					mdbaHash.insert(aid, cs);
+					if(!cs.isEmpty()){
+						mdbaHash.insert(aid, cs);
+					}
+					else{
+						int t=mdbaHash.remove(aid);
+						assert(t==1);
+					}
 				}
 			}
 
@@ -3662,7 +3674,14 @@ bool Rules::removeTimeConstraint(TimeConstraint* ctr)
 				QSet<ConstraintTeacherNotAvailableTimes*> cs=tnatHash.value(c->teacher, QSet<ConstraintTeacherNotAvailableTimes*>());
 				assert(cs.contains(c));
 				cs.remove(c);
-				tnatHash.insert(c->teacher, cs);
+				if(!cs.isEmpty()){
+					assert(0);
+					tnatHash.insert(c->teacher, cs);
+				}
+				else{
+					int t=tnatHash.remove(c->teacher);
+					assert(t==1);
+				}
 			}
 
 			else if(ctr->type==CONSTRAINT_STUDENTS_SET_NOT_AVAILABLE_TIMES){
@@ -3670,7 +3689,14 @@ bool Rules::removeTimeConstraint(TimeConstraint* ctr)
 				QSet<ConstraintStudentsSetNotAvailableTimes*> cs=ssnatHash.value(c->students, QSet<ConstraintStudentsSetNotAvailableTimes*>());
 				assert(cs.contains(c));
 				cs.remove(c);
-				ssnatHash.insert(c->students, cs);
+				if(!cs.isEmpty()){
+					assert(0);
+					ssnatHash.insert(c->students, cs);
+				}
+				else{
+					int t=ssnatHash.remove(c->students);
+					assert(t==1);
+				}
 			}
 			else if(ctr->type==CONSTRAINT_BASIC_COMPULSORY_TIME){
 				ConstraintBasicCompulsoryTime* c=(ConstraintBasicCompulsoryTime*) ctr;
@@ -3710,7 +3736,13 @@ bool Rules::removeTimeConstraints(QList<TimeConstraint*> _tcl)
 				QSet<ConstraintActivityPreferredStartingTime*> cs=apstHash.value(c->activityId, QSet<ConstraintActivityPreferredStartingTime*>());
 				assert(cs.contains(c));
 				cs.remove(c);
-				apstHash.insert(c->activityId, cs);
+				if(!cs.isEmpty()){
+					apstHash.insert(c->activityId, cs);
+				}
+				else{
+					int t=apstHash.remove(c->activityId);
+					assert(t==1);
+				}
 			}
 
 			else if(ctr->type==CONSTRAINT_MIN_DAYS_BETWEEN_ACTIVITIES){
@@ -3719,7 +3751,13 @@ bool Rules::removeTimeConstraints(QList<TimeConstraint*> _tcl)
 					QSet<ConstraintMinDaysBetweenActivities*> cs=mdbaHash.value(aid, QSet<ConstraintMinDaysBetweenActivities*>());
 					assert(cs.contains(c));
 					cs.remove(c);
-					mdbaHash.insert(aid, cs);
+					if(!cs.isEmpty()){
+						mdbaHash.insert(aid, cs);
+					}
+					else{
+						int t=mdbaHash.remove(aid);
+						assert(t==1);
+					}
 				}
 			}
 
@@ -3728,7 +3766,14 @@ bool Rules::removeTimeConstraints(QList<TimeConstraint*> _tcl)
 				QSet<ConstraintTeacherNotAvailableTimes*> cs=tnatHash.value(c->teacher, QSet<ConstraintTeacherNotAvailableTimes*>());
 				assert(cs.contains(c));
 				cs.remove(c);
-				tnatHash.insert(c->teacher, cs);
+				if(!cs.isEmpty()){
+					assert(0);
+					tnatHash.insert(c->teacher, cs);
+				}
+				else{
+					int t=tnatHash.remove(c->teacher);
+					assert(t==1);
+				}
 			}
 
 			else if(ctr->type==CONSTRAINT_STUDENTS_SET_NOT_AVAILABLE_TIMES){
@@ -3736,7 +3781,14 @@ bool Rules::removeTimeConstraints(QList<TimeConstraint*> _tcl)
 				QSet<ConstraintStudentsSetNotAvailableTimes*> cs=ssnatHash.value(c->students, QSet<ConstraintStudentsSetNotAvailableTimes*>());
 				assert(cs.contains(c));
 				cs.remove(c);
-				ssnatHash.insert(c->students, cs);
+				if(!cs.isEmpty()){
+					assert(0);
+					ssnatHash.insert(c->students, cs);
+				}
+				else{
+					int t=ssnatHash.remove(c->students);
+					assert(t==1);
+				}
 			}
 			else if(ctr->type==CONSTRAINT_BASIC_COMPULSORY_TIME){
 				ConstraintBasicCompulsoryTime* c=(ConstraintBasicCompulsoryTime*) ctr;
