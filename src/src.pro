@@ -1004,7 +1004,6 @@ FORMS += \
 	interface/addconstraintactivitypreferredroomform_template.ui \
 	interface/modifyconstraintactivitypreferredroomform_template.ui \
 	interface/addconstraintsubjectpreferredroomform_template.ui \
-	interface/constraintsubjectpreferredroomform_template.ui \
 	interface/modifyconstraintsubjectpreferredroomform_template.ui \
 	interface/addconstraintsubjectactivitytagpreferredroomform_template.ui \
 	interface/modifyconstraintsubjectactivitytagpreferredroomform_template.ui \
@@ -1013,7 +1012,6 @@ FORMS += \
 	interface/modifyconstraintactivitytagpreferredroomform_template.ui \
 	\
 	interface/addconstraintsubjectpreferredroomsform_template.ui \
-	interface/constraintsubjectpreferredroomsform_template.ui \
 	interface/modifyconstraintsubjectpreferredroomsform_template.ui \
 	interface/addconstraintsubjectactivitytagpreferredroomsform_template.ui \
 	interface/modifyconstraintsubjectactivitytagpreferredroomsform_template.ui \
