@@ -1943,3 +1943,6 @@ Versions 5.31.0 - 5.31.v
 - Version 5.31.4
 	- Bug fix in the printout of the subjects' timetables (reported by math user).
 	- Updated the Arabic translation, by Benahmed Abdelkrim and Silver.
+- Version 5.31.5
+	- Rare crash bugs fixed. These bugs appeared when removing a teacher/students set with attached constraints not available. Reported by Benahmed Abdelkrim.
+	- Updated the Arabic translation, by Benahmed Abdelkrim.
