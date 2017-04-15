@@ -1031,7 +1031,6 @@ FORMS += \
 	interface/modifyconstraintstudentssethomeroomsform_template.ui \
 	\
 	interface/addconstraintstudentssetmaxbuildingchangesperdayform_template.ui \
-	interface/constraintstudentssetmaxbuildingchangesperdayform_template.ui \
 	interface/modifyconstraintstudentssetmaxbuildingchangesperdayform_template.ui \
 	interface/addconstraintstudentsmaxbuildingchangesperdayform_template.ui \
 	interface/modifyconstraintstudentsmaxbuildingchangesperdayform_template.ui \
