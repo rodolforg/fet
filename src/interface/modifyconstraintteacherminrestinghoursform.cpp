@@ -27,7 +27,7 @@ ModifyConstraintTeacherMinRestingHoursForm::ModifyConstraintTeacherMinRestingHou
 	okPushButton->setDefault(true);
 
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
@@ -55,17 +55,11 @@ ModifyConstraintTeacherMinRestingHoursForm::ModifyConstraintTeacherMinRestingHou
 	}
 	assert(j>=0);
 	teachersComboBox->setCurrentIndex(j);
-
-	constraintChanged();
 }
 
 ModifyConstraintTeacherMinRestingHoursForm::~ModifyConstraintTeacherMinRestingHoursForm()
 {
 	saveFETDialogGeometry(this);
-}
-
-void ModifyConstraintTeacherMinRestingHoursForm::constraintChanged()
-{
 }
 
 void ModifyConstraintTeacherMinRestingHoursForm::ok()
@@ -101,10 +95,5 @@ void ModifyConstraintTeacherMinRestingHoursForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 
-	this->close();
-}
-
-void ModifyConstraintTeacherMinRestingHoursForm::cancel()
-{
 	this->close();
 }

@@ -27,7 +27,7 @@ ModifyConstraintTeacherActivityTagMaxHoursContinuouslyForm::ModifyConstraintTeac
 	okPushButton->setDefault(true);
 
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
@@ -66,8 +66,6 @@ ModifyConstraintTeacherActivityTagMaxHoursContinuouslyForm::ModifyConstraintTeac
 	}
 	assert(j>=0);
 	activityTagsComboBox->setCurrentIndex(j);
-
-	constraintChanged();
 }
 
 ModifyConstraintTeacherActivityTagMaxHoursContinuouslyForm::~ModifyConstraintTeacherActivityTagMaxHoursContinuouslyForm()
@@ -78,10 +76,6 @@ ModifyConstraintTeacherActivityTagMaxHoursContinuouslyForm::~ModifyConstraintTea
 void ModifyConstraintTeacherActivityTagMaxHoursContinuouslyForm::updateMaxHoursSpinBox(){
 	maxHoursSpinBox->setMinimum(1);
 	maxHoursSpinBox->setMaximum(gt.rules.nHoursPerDay);	
-}
-
-void ModifyConstraintTeacherActivityTagMaxHoursContinuouslyForm::constraintChanged()
-{
 }
 
 void ModifyConstraintTeacherActivityTagMaxHoursContinuouslyForm::ok()
@@ -120,10 +114,5 @@ void ModifyConstraintTeacherActivityTagMaxHoursContinuouslyForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 	
-	this->close();
-}
-
-void ModifyConstraintTeacherActivityTagMaxHoursContinuouslyForm::cancel()
-{
 	this->close();
 }

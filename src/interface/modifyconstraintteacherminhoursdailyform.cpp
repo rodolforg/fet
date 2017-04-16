@@ -27,7 +27,7 @@ ModifyConstraintTeacherMinHoursDailyForm::ModifyConstraintTeacherMinHoursDailyFo
 	okPushButton->setDefault(true);
 
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
@@ -57,8 +57,6 @@ ModifyConstraintTeacherMinHoursDailyForm::ModifyConstraintTeacherMinHoursDailyFo
 	}
 	assert(j>=0);
 	teachersComboBox->setCurrentIndex(j);
-
-	constraintChanged();
 }
 
 ModifyConstraintTeacherMinHoursDailyForm::~ModifyConstraintTeacherMinHoursDailyForm()
@@ -69,10 +67,6 @@ ModifyConstraintTeacherMinHoursDailyForm::~ModifyConstraintTeacherMinHoursDailyF
 void ModifyConstraintTeacherMinHoursDailyForm::updateMinHoursSpinBox(){
 	minHoursSpinBox->setMinimum(2);
 	minHoursSpinBox->setMaximum(gt.rules.nHoursPerDay);	
-}
-
-void ModifyConstraintTeacherMinHoursDailyForm::constraintChanged()
-{
 }
 
 void ModifyConstraintTeacherMinHoursDailyForm::ok()
@@ -116,11 +110,6 @@ void ModifyConstraintTeacherMinHoursDailyForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 	
-	this->close();
-}
-
-void ModifyConstraintTeacherMinHoursDailyForm::cancel()
-{
 	this->close();
 }
 

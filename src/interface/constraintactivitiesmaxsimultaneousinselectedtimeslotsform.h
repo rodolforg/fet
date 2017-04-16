@@ -18,30 +18,21 @@
 #ifndef CONSTRAINTACTIVITIESMAXSIMULTANEOUSINSELECTEDTIMESLOTSFORM_H
 #define CONSTRAINTACTIVITIESMAXSIMULTANEOUSINSELECTEDTIMESLOTSFORM_H
 
-#include "ui_constraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.h"
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
+#include "timeconstraint_basedialog.h"
 
-class ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm : public QDialog, Ui::ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm_template  {
+class ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm : public TimeConstraintBaseDialog  {
 	Q_OBJECT
 public:
-	TimeConstraintsList visibleConstraintsList;
 
 	ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm(QWidget* parent);
 	~ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm();
 
-	bool filterOk(TimeConstraint* ctr);
+protected:
+	virtual QDialog *createAddDialog();
+	virtual QDialog *createModifyDialog(TimeConstraint *ctr);
+	virtual bool filterOk(const TimeConstraint *ctr) const;
 
-public slots:
-	void constraintChanged(int index);
-	void addConstraint();
-	void modifyConstraint();
-	void removeConstraint();
-
-	void filterChanged();
-	
-	void help();
+	void setHelp();
 };
 
 #endif

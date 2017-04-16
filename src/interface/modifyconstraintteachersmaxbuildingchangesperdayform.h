@@ -32,9 +32,7 @@ public:
 	~ModifyConstraintTeachersMaxBuildingChangesPerDayForm();
 
 public slots:
-	void constraintChanged();
 	void ok();
-	void cancel();
 };
 
 #endif

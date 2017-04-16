@@ -15,38 +15,20 @@
  *                                                                         *
  ***************************************************************************/
 
-#include "longtextmessagebox.h"
-
 #include "constraintthreeactivitiesgroupedform.h"
 #include "addconstraintthreeactivitiesgroupedform.h"
 #include "modifyconstraintthreeactivitiesgroupedform.h"
 
-#include <QMessageBox>
-
-#include <QListWidget>
-#include <QScrollBar>
-#include <QAbstractItemView>
-
-ConstraintThreeActivitiesGroupedForm::ConstraintThreeActivitiesGroupedForm(QWidget* parent): QDialog(parent)
+ConstraintThreeActivitiesGroupedForm::ConstraintThreeActivitiesGroupedForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
-	setupUi(this);
+	//: This is the title of the dialog to see the list of all constraints of this type
+	setWindowTitle(QCoreApplication::translate("ConstraintThreeActivitiesGroupedForm_template", "Constraints three activies grouped"));
 
-	currentConstraintTextEdit->setReadOnly(true);
-	
-	modifyConstraintPushButton->setDefault(true);
+	QString instruction = QCoreApplication::translate("ConstraintThreeActivitiesGroupedForm_template", "This constraint forces 3 activities to be in the same day, one immediately following the other, as a block of 3 activities, in any order, possibly separated by breaks");
+	instruction += "\n\n" + QCoreApplication::translate("ConstraintThreeActivitiesGroupedForm_template", "It is a good practice NOT to add this type of constraint to activities which are constrained to be in different days by min days between activities constraints. Please read Help/Important tips, tip number 3).");
+	setInstructionText(instruction);
 
-	constraintsListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
-
-	connect(constraintsListWidget, SIGNAL(currentRowChanged(int)), this, SLOT(constraintChanged(int)));
-	connect(addConstraintPushButton, SIGNAL(clicked()), this, SLOT(addConstraint()));
-	connect(closePushButton, SIGNAL(clicked()), this, SLOT(close()));
-	connect(removeConstraintPushButton, SIGNAL(clicked()), this, SLOT(removeConstraint()));
-	connect(modifyConstraintPushButton, SIGNAL(clicked()), this, SLOT(modifyConstraint()));
-	connect(constraintsListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(modifyConstraint()));
-
-	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
-	
 	this->filterChanged();
 }
 
@@ -55,7 +37,7 @@ ConstraintThreeActivitiesGroupedForm::~ConstraintThreeActivitiesGroupedForm()
 	saveFETDialogGeometry(this);
 }
 
-bool ConstraintThreeActivitiesGroupedForm::filterOk(TimeConstraint* ctr)
+bool ConstraintThreeActivitiesGroupedForm::filterOk(const TimeConstraint* ctr) const
 {
 	if(ctr->type==CONSTRAINT_THREE_ACTIVITIES_GROUPED)
 		return true;
@@ -63,109 +45,12 @@ bool ConstraintThreeActivitiesGroupedForm::filterOk(TimeConstraint* ctr)
 		return false;
 }
 
-void ConstraintThreeActivitiesGroupedForm::filterChanged()
+QDialog * ConstraintThreeActivitiesGroupedForm::createAddDialog()
 {
-	this->visibleConstraintsList.clear();
-	constraintsListWidget->clear();
-	for(int i=0; i<gt.rules.timeConstraintsList.size(); i++){
-		TimeConstraint* ctr=gt.rules.timeConstraintsList[i];
-		if(filterOk(ctr)){
-			visibleConstraintsList.append(ctr);
-			constraintsListWidget->addItem(ctr->getDescription(gt.rules));
-		}
-	}
-	
-	if(constraintsListWidget->count()>0)
-		constraintsListWidget->setCurrentRow(0);
-	else
-		this->constraintChanged(-1);
+	return new AddConstraintThreeActivitiesGroupedForm(this);
 }
 
-void ConstraintThreeActivitiesGroupedForm::constraintChanged(int index)
+QDialog * ConstraintThreeActivitiesGroupedForm::createModifyDialog(TimeConstraint *ctr)
 {
-	if(index<0){
-		currentConstraintTextEdit->setPlainText("");
-		return;
-	}
-	assert(index<this->visibleConstraintsList.size());
-	TimeConstraint* ctr=this->visibleConstraintsList.at(index);
-	assert(ctr!=NULL);
-	currentConstraintTextEdit->setPlainText(ctr->getDetailedDescription(gt.rules));
-}
-
-void ConstraintThreeActivitiesGroupedForm::addConstraint()
-{
-	AddConstraintThreeActivitiesGroupedForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-
-	filterChanged();
-	
-	constraintsListWidget->setCurrentRow(constraintsListWidget->count()-1);
-}
-
-void ConstraintThreeActivitiesGroupedForm::modifyConstraint()
-{
-	int valv=constraintsListWidget->verticalScrollBar()->value();
-	int valh=constraintsListWidget->horizontalScrollBar()->value();
-
-	int i=constraintsListWidget->currentRow();
-	if(i<0){
-		QMessageBox::information(this, tr("FET information"), tr("Invalid selected constraint"));
-		return;
-	}
-	TimeConstraint* ctr=this->visibleConstraintsList.at(i);
-
-	ModifyConstraintThreeActivitiesGroupedForm form(this, (ConstraintThreeActivitiesGrouped*)ctr);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-
-	filterChanged();
-
-	constraintsListWidget->verticalScrollBar()->setValue(valv);
-	constraintsListWidget->horizontalScrollBar()->setValue(valh);
-
-	if(i>=constraintsListWidget->count())
-		i=constraintsListWidget->count()-1;
-
-	if(i>=0)
-		constraintsListWidget->setCurrentRow(i);
-}
-
-void ConstraintThreeActivitiesGroupedForm::removeConstraint()
-{
-	int i=constraintsListWidget->currentRow();
-	if(i<0){
-		QMessageBox::information(this, tr("FET information"), tr("Invalid selected constraint"));
-		return;
-	}
-	TimeConstraint* ctr=this->visibleConstraintsList.at(i);
-	QString s;
-	s=tr("Remove constraint?");
-	s+="\n\n";
-	s+=ctr->getDetailedDescription(gt.rules);
-	
-	QListWidgetItem* item;
-
-	switch( LongTextMessageBox::confirmation( this, tr("FET confirmation"),
-		s, tr("Yes"), tr("No"), 0, 0, 1 ) ){
-	case 0: // The user clicked the OK button or pressed Enter
-		gt.rules.removeTimeConstraint(ctr);
-
-		visibleConstraintsList.removeAt(i);
-		constraintsListWidget->setCurrentRow(-1);
-		item=constraintsListWidget->takeItem(i);
-		delete item;
-
-		break;
-	case 1: // The user clicked the Cancel button or pressed Escape
-		break;
-	}
-	
-	if(i>=constraintsListWidget->count())
-		i=constraintsListWidget->count()-1;
-	if(i>=0)
-		constraintsListWidget->setCurrentRow(i);
-	else
-		currentConstraintTextEdit->setPlainText(QString(""));
+	return new ModifyConstraintThreeActivitiesGroupedForm(this, (ConstraintThreeActivitiesGrouped*)ctr);
 }

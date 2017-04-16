@@ -27,7 +27,7 @@ ModifyConstraintStudentsMaxBuildingChangesPerWeekForm::ModifyConstraintStudentsM
 	okPushButton->setDefault(true);
 
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
@@ -39,17 +39,11 @@ ModifyConstraintStudentsMaxBuildingChangesPerWeekForm::ModifyConstraintStudentsM
 	maxChangesSpinBox->setMinimum(0);
 	maxChangesSpinBox->setMaximum(gt.rules.nDaysPerWeek*gt.rules.nHoursPerDay);
 	maxChangesSpinBox->setValue(ctr->maxBuildingChangesPerWeek);
-		
-	constraintChanged();
 }
 
 ModifyConstraintStudentsMaxBuildingChangesPerWeekForm::~ModifyConstraintStudentsMaxBuildingChangesPerWeekForm()
 {
 	saveFETDialogGeometry(this);
-}
-
-void ModifyConstraintStudentsMaxBuildingChangesPerWeekForm::constraintChanged()
-{
 }
 
 void ModifyConstraintStudentsMaxBuildingChangesPerWeekForm::ok()
@@ -69,10 +63,5 @@ void ModifyConstraintStudentsMaxBuildingChangesPerWeekForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 	
-	this->close();
-}
-
-void ModifyConstraintStudentsMaxBuildingChangesPerWeekForm::cancel()
-{
 	this->close();
 }

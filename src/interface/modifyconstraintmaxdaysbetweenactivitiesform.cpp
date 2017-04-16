@@ -35,7 +35,7 @@ ModifyConstraintMaxDaysBetweenActivitiesForm::ModifyConstraintMaxDaysBetweenActi
 	activitiesListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
 	selectedActivitiesListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
 
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
 	connect(activitiesListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(addActivity()));
 	connect(addAllActivitiesPushButton, SIGNAL(clicked()), this, SLOT(addAllActivities()));
@@ -223,11 +223,6 @@ void ModifyConstraintMaxDaysBetweenActivitiesForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 	
-	this->close();
-}
-
-void ModifyConstraintMaxDaysBetweenActivitiesForm::cancel()
-{
 	this->close();
 }
 

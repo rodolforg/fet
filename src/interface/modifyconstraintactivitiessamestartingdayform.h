@@ -45,7 +45,6 @@ public slots:
 	void clear();
 
 	void ok();
-	void cancel();
 	
 private:
 	ConstraintActivitiesSameStartingDay* _ctr;

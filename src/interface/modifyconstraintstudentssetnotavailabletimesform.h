@@ -31,11 +31,10 @@ public:
 	ModifyConstraintStudentsSetNotAvailableTimesForm(QWidget* parent, ConstraintStudentsSetNotAvailableTimes* ctr);
 	~ModifyConstraintStudentsSetNotAvailableTimesForm();
 
-	void updateStudentsComboBox(QWidget* parent);
+	void updateStudentsComboBox();
 
 public slots:	
 	void ok();
-	void cancel();
 
 	void setAllAvailable();
 	void setAllNotAvailable();

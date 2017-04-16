@@ -18,30 +18,18 @@
 #ifndef CONSTRAINTSUBJECTACTIVITYTAGPREFERREDROOMSFORM_H
 #define CONSTRAINTSUBJECTACTIVITYTAGPREFERREDROOMSFORM_H
 
-#include "ui_constraintsubjectactivitytagpreferredroomsform_template.h"
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
+#include "spaceconstraint_basedialog.h"
 
-class ConstraintSubjectActivityTagPreferredRoomsForm : public QDialog, Ui::ConstraintSubjectActivityTagPreferredRoomsForm_template  {
+class ConstraintSubjectActivityTagPreferredRoomsForm : public SpaceConstraintBaseDialog  {
 	Q_OBJECT
 public:
-	SpaceConstraintsList visibleConstraintsList;
-
 	ConstraintSubjectActivityTagPreferredRoomsForm(QWidget* parent);
 	~ConstraintSubjectActivityTagPreferredRoomsForm();
 
-	void refreshConstraintsListWidget();
-
-	bool filterOk(SpaceConstraint* ctr);
-	
-public slots:
-	void constraintChanged(int index);
-	void addConstraint();
-	void removeConstraint();
-	void modifyConstraint();
-	
-	void filterChanged();
+protected:
+	virtual QDialog *createAddDialog();
+	virtual QDialog *createModifyDialog(SpaceConstraint *ctr);
+	virtual bool filterOk(const SpaceConstraint *ctr) const;
 };
 
 #endif

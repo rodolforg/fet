@@ -31,13 +31,11 @@ public:
 	ModifyConstraintStudentsSetActivityTagMaxHoursContinuouslyForm(QWidget* parent, ConstraintStudentsSetActivityTagMaxHoursContinuously* ctr);
 	~ModifyConstraintStudentsSetActivityTagMaxHoursContinuouslyForm();
 
-	void updateStudentsComboBox(QWidget* parent);
+	void updateStudentsComboBox();
 	void updateActivityTagsComboBox();
 
 public slots:
-	void constraintChanged();
 	void ok();
-	void cancel();
 };
 
 #endif

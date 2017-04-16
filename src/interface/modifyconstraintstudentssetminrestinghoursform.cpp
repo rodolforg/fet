@@ -27,7 +27,7 @@ ModifyConstraintStudentsSetMinRestingHoursForm::ModifyConstraintStudentsSetMinRe
 	okPushButton->setDefault(true);
 
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
@@ -45,9 +45,7 @@ ModifyConstraintStudentsSetMinRestingHoursForm::ModifyConstraintStudentsSetMinRe
 	minRestingHoursSpinBox->setMaximum(gt.rules.nHoursPerDay);
 	minRestingHoursSpinBox->setValue(ctr->minRestingHours);
 	
-	updateStudentsComboBox(parent);
-
-	constraintChanged();
+	updateStudentsComboBox();
 }
 
 ModifyConstraintStudentsSetMinRestingHoursForm::~ModifyConstraintStudentsSetMinRestingHoursForm()
@@ -55,41 +53,23 @@ ModifyConstraintStudentsSetMinRestingHoursForm::~ModifyConstraintStudentsSetMinR
 	saveFETDialogGeometry(this);
 }
 
-void ModifyConstraintStudentsSetMinRestingHoursForm::updateStudentsComboBox(QWidget* parent){
+void ModifyConstraintStudentsSetMinRestingHoursForm::updateStudentsComboBox(){
 	studentsComboBox->clear();
-	int i=0, j=-1;
-	for(int m=0; m<gt.rules.yearsList.size(); m++){
-		StudentsYear* sty=gt.rules.yearsList[m];
+	for(int i=0; i<gt.rules.yearsList.size(); i++){
+		StudentsYear* sty=gt.rules.yearsList[i];
 		studentsComboBox->addItem(sty->name);
-		if(sty->name==this->_ctr->students)
-			j=i;
-		i++;
-		for(int n=0; n<sty->groupsList.size(); n++){
-			StudentsGroup* stg=sty->groupsList[n];
+		for(int j=0; j<sty->groupsList.size(); j++){
+			StudentsGroup* stg=sty->groupsList[j];
 			studentsComboBox->addItem(stg->name);
-			if(stg->name==this->_ctr->students)
-				j=i;
-			i++;
-			if(SHOW_SUBGROUPS_IN_COMBO_BOXES) for(int p=0; p<stg->subgroupsList.size(); p++){
-				StudentsSubgroup* sts=stg->subgroupsList[p];
+			if(SHOW_SUBGROUPS_IN_COMBO_BOXES) for(int k=0; k<stg->subgroupsList.size(); k++){
+				StudentsSubgroup* sts=stg->subgroupsList[k];
 				studentsComboBox->addItem(sts->name);
-				if(sts->name==this->_ctr->students)
-					j=i;
-				i++;
 			}
 		}
 	}
-	if(j<0)
-		showWarningForInvisibleSubgroupConstraint(parent, this->_ctr->students);
-	else
-		assert(j>=0);
-	studentsComboBox->setCurrentIndex(j);
-
-	constraintChanged();
-}
-
-void ModifyConstraintStudentsSetMinRestingHoursForm::constraintChanged()
-{
+	if (studentsComboBox->findText(this->_ctr->students) < 0)
+		showWarningForInvisibleSubgroupConstraint(this, this->_ctr->students);
+	studentsComboBox->setCurrentText(this->_ctr->students);
 }
 
 void ModifyConstraintStudentsSetMinRestingHoursForm::ok()
@@ -130,10 +110,5 @@ void ModifyConstraintStudentsSetMinRestingHoursForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 
-	this->close();
-}
-
-void ModifyConstraintStudentsSetMinRestingHoursForm::cancel()
-{
 	this->close();
 }

@@ -27,7 +27,7 @@ ModifyConstraintBreakTimesForm::ModifyConstraintBreakTimesForm(QWidget* parent, 
 	okPushButton->setDefault(true);
 
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 	connect(setAllAllowedPushButton, SIGNAL(clicked()), this, SLOT(setAllAllowed()));
 	connect(setAllBreakPushButton, SIGNAL(clicked()), this, SLOT(setAllBreak()));
 
@@ -93,10 +93,5 @@ void ModifyConstraintBreakTimesForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 	
-	this->close();
-}
-
-void ModifyConstraintBreakTimesForm::cancel()
-{
 	this->close();
 }

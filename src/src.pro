@@ -468,7 +468,12 @@ SOURCES += \
 	interface/modifyconstraintstudentssetminrestinghoursform.cpp \
 	interface/constraintstudentsminrestinghoursform.cpp \
 	interface/addconstraintstudentsminrestinghoursform.cpp \
-	interface/modifyconstraintstudentsminrestinghoursform.cpp
+	interface/modifyconstraintstudentsminrestinghoursform.cpp \
+	\
+	interface/constraint_basedialog.cpp \
+	interface/teacherstudentsetsubjectactivitytag_filterwidget.cpp \
+	interface/timeconstraint_basedialog.cpp \
+	interface/spaceconstraint_basedialog.cpp \
 
 HEADERS += \
 	engine/timetableexport.h \
@@ -943,7 +948,12 @@ HEADERS += \
 	interface/modifyconstraintstudentssetminrestinghoursform.h \
 	interface/constraintstudentsminrestinghoursform.h \
 	interface/addconstraintstudentsminrestinghoursform.h \
-	interface/modifyconstraintstudentsminrestinghoursform.h
+	interface/modifyconstraintstudentsminrestinghoursform.h \
+	\
+	interface/constraint_basedialog.h \
+	interface/teacherstudentsetsubjectactivitytag_filterwidget.h \
+	interface/timeconstraint_basedialog.h \
+	interface/spaceconstraint_basedialog.h \
 
 FORMS += \
 	interface/fetmainform_template.ui \
@@ -990,86 +1000,61 @@ FORMS += \
 	interface/addconstraintactivitypreferredstartingtimesform_template.ui \
 	interface/modifyconstraintactivitypreferredstartingtimesform_template.ui \
 	interface/addconstraintroomnotavailabletimesform_template.ui \
-	interface/constraintroomnotavailabletimesform_template.ui \
 	interface/modifyconstraintroomnotavailabletimesform_template.ui \
 	interface/addconstraintactivitypreferredroomform_template.ui \
-	interface/constraintactivitypreferredroomform_template.ui \
 	interface/modifyconstraintactivitypreferredroomform_template.ui \
 	interface/addconstraintsubjectpreferredroomform_template.ui \
-	interface/constraintsubjectpreferredroomform_template.ui \
 	interface/modifyconstraintsubjectpreferredroomform_template.ui \
 	interface/addconstraintsubjectactivitytagpreferredroomform_template.ui \
-	interface/constraintsubjectactivitytagpreferredroomform_template.ui \
 	interface/modifyconstraintsubjectactivitytagpreferredroomform_template.ui \
 	\
 	interface/addconstraintactivitytagpreferredroomform_template.ui \
-	interface/constraintactivitytagpreferredroomform_template.ui \
 	interface/modifyconstraintactivitytagpreferredroomform_template.ui \
 	\
 	interface/addconstraintsubjectpreferredroomsform_template.ui \
-	interface/constraintsubjectpreferredroomsform_template.ui \
 	interface/modifyconstraintsubjectpreferredroomsform_template.ui \
 	interface/addconstraintsubjectactivitytagpreferredroomsform_template.ui \
-	interface/constraintsubjectactivitytagpreferredroomsform_template.ui \
 	interface/modifyconstraintsubjectactivitytagpreferredroomsform_template.ui \
 	\
 	interface/addconstraintactivitytagpreferredroomsform_template.ui \
-	interface/constraintactivitytagpreferredroomsform_template.ui \
 	interface/modifyconstraintactivitytagpreferredroomsform_template.ui \
 	\
 	interface/addconstraintstudentssethomeroomform_template.ui \
-	interface/constraintstudentssethomeroomform_template.ui \
 	interface/modifyconstraintstudentssethomeroomform_template.ui \
 	interface/addconstraintstudentssethomeroomsform_template.ui \
-	interface/constraintstudentssethomeroomsform_template.ui \
 	interface/modifyconstraintstudentssethomeroomsform_template.ui \
 	\
 	interface/addconstraintstudentssetmaxbuildingchangesperdayform_template.ui \
-	interface/constraintstudentssetmaxbuildingchangesperdayform_template.ui \
 	interface/modifyconstraintstudentssetmaxbuildingchangesperdayform_template.ui \
 	interface/addconstraintstudentsmaxbuildingchangesperdayform_template.ui \
-	interface/constraintstudentsmaxbuildingchangesperdayform_template.ui \
 	interface/modifyconstraintstudentsmaxbuildingchangesperdayform_template.ui \
 	interface/addconstraintstudentssetmaxbuildingchangesperweekform_template.ui \
-	interface/constraintstudentssetmaxbuildingchangesperweekform_template.ui \
 	interface/modifyconstraintstudentssetmaxbuildingchangesperweekform_template.ui \
 	interface/addconstraintstudentsmaxbuildingchangesperweekform_template.ui \
-	interface/constraintstudentsmaxbuildingchangesperweekform_template.ui \
 	interface/modifyconstraintstudentsmaxbuildingchangesperweekform_template.ui \
 	interface/addconstraintstudentssetmingapsbetweenbuildingchangesform_template.ui \
-	interface/constraintstudentssetmingapsbetweenbuildingchangesform_template.ui \
 	interface/modifyconstraintstudentssetmingapsbetweenbuildingchangesform_template.ui \
 	interface/addconstraintstudentsmingapsbetweenbuildingchangesform_template.ui \
-	interface/constraintstudentsmingapsbetweenbuildingchangesform_template.ui \
 	interface/modifyconstraintstudentsmingapsbetweenbuildingchangesform_template.ui \
 	\
 	interface/addconstraintteachermaxbuildingchangesperdayform_template.ui \
-	interface/constraintteachermaxbuildingchangesperdayform_template.ui \
 	interface/modifyconstraintteachermaxbuildingchangesperdayform_template.ui \
 	interface/addconstraintteachersmaxbuildingchangesperdayform_template.ui \
-	interface/constraintteachersmaxbuildingchangesperdayform_template.ui \
 	interface/modifyconstraintteachersmaxbuildingchangesperdayform_template.ui \
 	interface/addconstraintteachermaxbuildingchangesperweekform_template.ui \
-	interface/constraintteachermaxbuildingchangesperweekform_template.ui \
 	interface/modifyconstraintteachermaxbuildingchangesperweekform_template.ui \
 	interface/addconstraintteachersmaxbuildingchangesperweekform_template.ui \
-	interface/constraintteachersmaxbuildingchangesperweekform_template.ui \
 	interface/modifyconstraintteachersmaxbuildingchangesperweekform_template.ui \
 	interface/addconstraintteachermingapsbetweenbuildingchangesform_template.ui \
-	interface/constraintteachermingapsbetweenbuildingchangesform_template.ui \
 	interface/modifyconstraintteachermingapsbetweenbuildingchangesform_template.ui \
 	interface/addconstraintteachersmingapsbetweenbuildingchangesform_template.ui \
-	interface/constraintteachersmingapsbetweenbuildingchangesform_template.ui \
 	interface/modifyconstraintteachersmingapsbetweenbuildingchangesform_template.ui \
 	\
 	interface/addconstraintteacherhomeroomform_template.ui \
-	interface/constraintteacherhomeroomform_template.ui \
 	interface/modifyconstraintteacherhomeroomform_template.ui \
 	interface/addconstraintteacherhomeroomsform_template.ui \
-	interface/constraintteacherhomeroomsform_template.ui \
 	interface/modifyconstraintteacherhomeroomsform_template.ui \
 	interface/addconstraintactivitypreferredroomsform_template.ui \
-	interface/constraintactivitypreferredroomsform_template.ui \
 	interface/modifyconstraintactivitypreferredroomsform_template.ui \
 	interface/alltimeconstraintsform_template.ui \
 	interface/allspaceconstraintsform_template.ui \
@@ -1089,232 +1074,167 @@ FORMS += \
 	interface/roomsform_template.ui \
 	interface/buildingsform_template.ui \
 	\
-	interface/constraintactivitiespreferredtimeslotsform_template.ui \
 	interface/addconstraintactivitiespreferredtimeslotsform_template.ui \
-	interface/constraintactivitiespreferredstartingtimesform_template.ui \
 	interface/addconstraintactivitiespreferredstartingtimesform_template.ui \
 	\
-	interface/constraintsubactivitiespreferredtimeslotsform_template.ui \
 	interface/addconstraintsubactivitiespreferredtimeslotsform_template.ui \
-	interface/constraintsubactivitiespreferredstartingtimesform_template.ui \
 	interface/addconstraintsubactivitiespreferredstartingtimesform_template.ui \
 	interface/modifyconstraintsubactivitiespreferredtimeslotsform_template.ui \
 	interface/modifyconstraintsubactivitiespreferredstartingtimesform_template.ui \
 	\
-	interface/constraintactivitiessamestartingtimeform_template.ui \
 	interface/addconstraintactivitiessamestartingtimeform_template.ui \
 	\
-	interface/constraintactivitiessamestartinghourform_template.ui \
 	interface/addconstraintactivitiessamestartinghourform_template.ui \
 	\
-	interface/constraintactivitiessamestartingdayform_template.ui \
 	interface/addconstraintactivitiessamestartingdayform_template.ui \
 	interface/modifyconstraintactivitiessamestartingdayform_template.ui \
 	\
-	interface/constraintteachernotavailabletimesform_template.ui \
 	interface/addconstraintteachernotavailabletimesform_template.ui \
 	interface/modifyconstraintteachernotavailabletimesform_template.ui \
-	interface/constraintbasiccompulsorytimeform_template.ui \
 	interface/addconstraintbasiccompulsorytimeform_template.ui \
 	interface/modifyconstraintbasiccompulsorytimeform_template.ui \
-	interface/constraintbasiccompulsoryspaceform_template.ui \
 	interface/addconstraintbasiccompulsoryspaceform_template.ui \
 	interface/modifyconstraintbasiccompulsoryspaceform_template.ui \
-	interface/constraintstudentssetnotavailabletimesform_template.ui \
 	interface/addconstraintstudentssetnotavailabletimesform_template.ui \
 	interface/modifyconstraintstudentssetnotavailabletimesform_template.ui \
-	interface/constraintbreaktimesform_template.ui \
 	interface/addconstraintbreaktimesform_template.ui \
 	interface/modifyconstraintbreaktimesform_template.ui \
-	interface/constraintteachermaxdaysperweekform_template.ui \
 	interface/addconstraintteachermaxdaysperweekform_template.ui \
 	interface/modifyconstraintteachermaxdaysperweekform_template.ui \
 	\
-	interface/constraintteachermindaysperweekform_template.ui \
 	interface/addconstraintteachermindaysperweekform_template.ui \
 	interface/modifyconstraintteachermindaysperweekform_template.ui \
 	\
-	interface/constraintteachersmaxdaysperweekform_template.ui \
 	interface/addconstraintteachersmaxdaysperweekform_template.ui \
 	interface/modifyconstraintteachersmaxdaysperweekform_template.ui \
 	\
-	interface/constraintteachersmindaysperweekform_template.ui \
 	interface/addconstraintteachersmindaysperweekform_template.ui \
 	interface/modifyconstraintteachersmindaysperweekform_template.ui \
 	\
-	interface/constraintteacherintervalmaxdaysperweekform_template.ui \
 	interface/addconstraintteacherintervalmaxdaysperweekform_template.ui \
 	interface/modifyconstraintteacherintervalmaxdaysperweekform_template.ui \
 	\
-	interface/constraintstudentssetintervalmaxdaysperweekform_template.ui \
 	interface/addconstraintstudentssetintervalmaxdaysperweekform_template.ui \
 	interface/modifyconstraintstudentssetintervalmaxdaysperweekform_template.ui \
 	\
-	interface/constraintstudentsintervalmaxdaysperweekform_template.ui \
 	interface/addconstraintstudentsintervalmaxdaysperweekform_template.ui \
 	interface/modifyconstraintstudentsintervalmaxdaysperweekform_template.ui \
 	\
-	interface/constraintstudentssetmaxdaysperweekform_template.ui \
 	interface/addconstraintstudentssetmaxdaysperweekform_template.ui \
 	interface/modifyconstraintstudentssetmaxdaysperweekform_template.ui \
 	\
-	interface/constraintstudentsmaxdaysperweekform_template.ui \
 	interface/addconstraintstudentsmaxdaysperweekform_template.ui \
 	interface/modifyconstraintstudentsmaxdaysperweekform_template.ui \
 	\
-	interface/constraintteachersintervalmaxdaysperweekform_template.ui \
 	interface/addconstraintteachersintervalmaxdaysperweekform_template.ui \
 	interface/modifyconstraintteachersintervalmaxdaysperweekform_template.ui \
 	\
-	interface/constraintteachersmaxhoursdailyform_template.ui \
 	interface/addconstraintteachersmaxhoursdailyform_template.ui \
 	interface/modifyconstraintteachersmaxhoursdailyform_template.ui \
-	interface/constraintteachermaxhoursdailyform_template.ui \
 	interface/addconstraintteachermaxhoursdailyform_template.ui \
 	interface/modifyconstraintteachermaxhoursdailyform_template.ui \
 	\
-	interface/constraintteachersmaxhourscontinuouslyform_template.ui \
 	interface/addconstraintteachersmaxhourscontinuouslyform_template.ui \
 	interface/modifyconstraintteachersmaxhourscontinuouslyform_template.ui \
-	interface/constraintteachermaxhourscontinuouslyform_template.ui \
 	interface/addconstraintteachermaxhourscontinuouslyform_template.ui \
 	interface/modifyconstraintteachermaxhourscontinuouslyform_template.ui \
 	\
-	interface/constraintteachersactivitytagmaxhourscontinuouslyform_template.ui \
 	interface/addconstraintteachersactivitytagmaxhourscontinuouslyform_template.ui \
 	interface/modifyconstraintteachersactivitytagmaxhourscontinuouslyform_template.ui \
-	interface/constraintteacheractivitytagmaxhourscontinuouslyform_template.ui \
 	interface/addconstraintteacheractivitytagmaxhourscontinuouslyform_template.ui \
 	interface/modifyconstraintteacheractivitytagmaxhourscontinuouslyform_template.ui \
 	\
-	interface/constraintteachersactivitytagmaxhoursdailyform_template.ui \
 	interface/addconstraintteachersactivitytagmaxhoursdailyform_template.ui \
 	interface/modifyconstraintteachersactivitytagmaxhoursdailyform_template.ui \
-	interface/constraintteacheractivitytagmaxhoursdailyform_template.ui \
 	interface/addconstraintteacheractivitytagmaxhoursdailyform_template.ui \
 	interface/modifyconstraintteacheractivitytagmaxhoursdailyform_template.ui \
 	\
-	interface/constraintteachersminhoursdailyform_template.ui \
 	interface/addconstraintteachersminhoursdailyform_template.ui \
 	interface/modifyconstraintteachersminhoursdailyform_template.ui \
-	interface/constraintteacherminhoursdailyform_template.ui \
 	interface/addconstraintteacherminhoursdailyform_template.ui \
 	interface/modifyconstraintteacherminhoursdailyform_template.ui \
-	interface/constraintactivitypreferredstartingtimeform_template.ui \
 	interface/addconstraintactivitypreferredstartingtimeform_template.ui \
 	interface/modifyconstraintactivitypreferredstartingtimeform_template.ui \
-	interface/constraintactivityendsstudentsdayform_template.ui \
 	interface/addconstraintactivityendsstudentsdayform_template.ui \
 	interface/modifyconstraintactivityendsstudentsdayform_template.ui \
 	\
-	interface/constraintactivitiesendstudentsdayform_template.ui \
 	interface/addconstraintactivitiesendstudentsdayform_template.ui \
 	interface/modifyconstraintactivitiesendstudentsdayform_template.ui \
 	\
-	interface/constraintstudentssetmaxgapsperweekform_template.ui \
 	interface/addconstraintstudentssetmaxgapsperweekform_template.ui \
 	interface/modifyconstraintstudentssetmaxgapsperweekform_template.ui \
-	interface/constraintstudentsmaxgapsperweekform_template.ui \
 	interface/addconstraintstudentsmaxgapsperweekform_template.ui \
 	interface/modifyconstraintstudentsmaxgapsperweekform_template.ui \
 	\
-	interface/constraintstudentssetmaxgapsperdayform_template.ui \
 	interface/addconstraintstudentssetmaxgapsperdayform_template.ui \
 	interface/modifyconstraintstudentssetmaxgapsperdayform_template.ui \
-	interface/constraintstudentsmaxgapsperdayform_template.ui \
 	interface/addconstraintstudentsmaxgapsperdayform_template.ui \
 	interface/modifyconstraintstudentsmaxgapsperdayform_template.ui \
 	\
-	interface/constraintteachersmaxgapsperweekform_template.ui \
 	interface/addconstraintteachersmaxgapsperweekform_template.ui \
 	interface/modifyconstraintteachersmaxgapsperweekform_template.ui \
-	interface/constraintteachermaxgapsperweekform_template.ui \
 	interface/addconstraintteachermaxgapsperweekform_template.ui \
 	interface/modifyconstraintteachermaxgapsperweekform_template.ui \
-	interface/constraintteachersmaxgapsperdayform_template.ui \
 	interface/addconstraintteachersmaxgapsperdayform_template.ui \
 	interface/modifyconstraintteachersmaxgapsperdayform_template.ui \
-	interface/constraintteachermaxgapsperdayform_template.ui \
 	interface/addconstraintteachermaxgapsperdayform_template.ui \
 	interface/modifyconstraintteachermaxgapsperdayform_template.ui \
-	interface/constraintstudentsearlymaxbeginningsatsecondhourform_template.ui \
 	interface/addconstraintstudentsearlymaxbeginningsatsecondhourform_template.ui \
 	interface/modifyconstraintstudentsearlymaxbeginningsatsecondhourform_template.ui \
-	interface/constraintstudentssetearlymaxbeginningsatsecondhourform_template.ui \
 	interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform_template.ui \
 	interface/modifyconstraintstudentssetearlymaxbeginningsatsecondhourform_template.ui \
 	\
-	interface/constraintstudentssetmaxhoursdailyform_template.ui \
 	interface/addconstraintstudentssetmaxhoursdailyform_template.ui \
 	interface/modifyconstraintstudentssetmaxhoursdailyform_template.ui \
-	interface/constraintstudentsmaxhoursdailyform_template.ui \
 	interface/addconstraintstudentsmaxhoursdailyform_template.ui \
 	interface/modifyconstraintstudentsmaxhoursdailyform_template.ui \
 	\
-	interface/constraintstudentssetmaxhourscontinuouslyform_template.ui \
 	interface/addconstraintstudentssetmaxhourscontinuouslyform_template.ui \
 	interface/modifyconstraintstudentssetmaxhourscontinuouslyform_template.ui \
-	interface/constraintstudentsmaxhourscontinuouslyform_template.ui \
 	interface/addconstraintstudentsmaxhourscontinuouslyform_template.ui \
 	interface/modifyconstraintstudentsmaxhourscontinuouslyform_template.ui \
 	\
-	interface/constraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui \
 	interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui \
 	interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui \
-	interface/constraintstudentsactivitytagmaxhourscontinuouslyform_template.ui \
 	interface/addconstraintstudentsactivitytagmaxhourscontinuouslyform_template.ui \
 	interface/modifyconstraintstudentsactivitytagmaxhourscontinuouslyform_template.ui \
 	\
-	interface/constraintstudentssetactivitytagmaxhoursdailyform_template.ui \
 	interface/addconstraintstudentssetactivitytagmaxhoursdailyform_template.ui \
 	interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform_template.ui \
-	interface/constraintstudentsactivitytagmaxhoursdailyform_template.ui \
 	interface/addconstraintstudentsactivitytagmaxhoursdailyform_template.ui \
 	interface/modifyconstraintstudentsactivitytagmaxhoursdailyform_template.ui \
 	\
-	interface/constraintstudentssetminhoursdailyform_template.ui \
 	interface/addconstraintstudentssetminhoursdailyform_template.ui \
 	interface/modifyconstraintstudentssetminhoursdailyform_template.ui \
-	interface/constraintstudentsminhoursdailyform_template.ui \
 	interface/addconstraintstudentsminhoursdailyform_template.ui \
 	interface/modifyconstraintstudentsminhoursdailyform_template.ui \
-	interface/constraintactivitiesnotoverlappingform_template.ui \
 	interface/addconstraintactivitiesnotoverlappingform_template.ui \
 	interface/modifyconstraintactivitiesnotoverlappingform_template.ui \
 	\
-	interface/constraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui \
 	interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui \
 	interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui \
 	\
-	interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui \
 	interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui \
 	interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui \
 	\
-	interface/constraintactivitiesoccupymaxdifferentroomsform_template.ui \
 	interface/addconstraintactivitiesoccupymaxdifferentroomsform_template.ui \
 	interface/modifyconstraintactivitiesoccupymaxdifferentroomsform_template.ui \
 	\
-	interface/constraintactivitiessameroomifconsecutiveform_template.ui \
 	interface/addconstraintactivitiessameroomifconsecutiveform_template.ui \
 	interface/modifyconstraintactivitiessameroomifconsecutiveform_template.ui \
 	\
-	interface/constrainttwoactivitiesconsecutiveform_template.ui \
 	interface/addconstrainttwoactivitiesconsecutiveform_template.ui \
 	interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui \
 	\
-	interface/constrainttwoactivitiesgroupedform_template.ui \
 	interface/addconstrainttwoactivitiesgroupedform_template.ui \
 	interface/modifyconstrainttwoactivitiesgroupedform_template.ui \
 	\
-	interface/constraintthreeactivitiesgroupedform_template.ui \
 	interface/addconstraintthreeactivitiesgroupedform_template.ui \
 	interface/modifyconstraintthreeactivitiesgroupedform_template.ui \
 	\
-	interface/constrainttwoactivitiesorderedform_template.ui \
 	interface/addconstrainttwoactivitiesorderedform_template.ui \
 	interface/modifyconstrainttwoactivitiesorderedform_template.ui \
 	\
-	interface/constraintmindaysbetweenactivitiesform_template.ui \
 	interface/addconstraintmindaysbetweenactivitiesform_template.ui \
 	interface/modifyconstraintmindaysbetweenactivitiesform_template.ui \
 	\
@@ -1322,17 +1242,13 @@ FORMS += \
 	interface/addgroupactivitiesininitialorderitemform_template.ui \
 	interface/modifygroupactivitiesininitialorderitemform_template.ui \
 	\
-	interface/constraintmaxdaysbetweenactivitiesform_template.ui \
 	interface/addconstraintmaxdaysbetweenactivitiesform_template.ui \
 	interface/modifyconstraintmaxdaysbetweenactivitiesform_template.ui \
 	\
-	interface/constraintmingapsbetweenactivitiesform_template.ui \
 	interface/addconstraintmingapsbetweenactivitiesform_template.ui \
 	interface/modifyconstraintmingapsbetweenactivitiesform_template.ui \
 	\
-	interface/constraintactivitypreferredtimeslotsform_template.ui \
 	interface/modifyconstraintactivitiespreferredtimeslotsform_template.ui \
-	interface/constraintactivitypreferredstartingtimesform_template.ui \
 	interface/modifyconstraintactivitiespreferredstartingtimesform_template.ui \
 	interface/modifyconstraintactivitiessamestartingtimeform_template.ui \
 	interface/modifyconstraintactivitiessamestartinghourform_template.ui \
@@ -1347,33 +1263,28 @@ FORMS += \
 	interface/teachersubjectsqualificationsform_template.ui \
 	interface/timetableprintform_template.ui \
 	\
-	interface/constraintteachermaxspanperdayform_template.ui \
 	interface/addconstraintteachermaxspanperdayform_template.ui \
 	interface/modifyconstraintteachermaxspanperdayform_template.ui \
-	interface/constraintteachersmaxspanperdayform_template.ui \
 	interface/addconstraintteachersmaxspanperdayform_template.ui \
 	interface/modifyconstraintteachersmaxspanperdayform_template.ui \
 	\
-	interface/constraintstudentssetmaxspanperdayform_template.ui \
 	interface/addconstraintstudentssetmaxspanperdayform_template.ui \
 	interface/modifyconstraintstudentssetmaxspanperdayform_template.ui \
-	interface/constraintstudentsmaxspanperdayform_template.ui \
 	interface/addconstraintstudentsmaxspanperdayform_template.ui \
 	interface/modifyconstraintstudentsmaxspanperdayform_template.ui \
 	\
-	interface/constraintteacherminrestinghoursform_template.ui \
 	interface/addconstraintteacherminrestinghoursform_template.ui \
 	interface/modifyconstraintteacherminrestinghoursform_template.ui \
-	interface/constraintteachersminrestinghoursform_template.ui \
 	interface/addconstraintteachersminrestinghoursform_template.ui \
 	interface/modifyconstraintteachersminrestinghoursform_template.ui \
 	\
-	interface/constraintstudentssetminrestinghoursform_template.ui \
 	interface/addconstraintstudentssetminrestinghoursform_template.ui \
 	interface/modifyconstraintstudentssetminrestinghoursform_template.ui \
-	interface/constraintstudentsminrestinghoursform_template.ui \
 	interface/addconstraintstudentsminrestinghoursform_template.ui \
-	interface/modifyconstraintstudentsminrestinghoursform_template.ui
+	interface/modifyconstraintstudentsminrestinghoursform_template.ui \
+	\
+	interface/constraint_basedialog_template.ui \
+	interface/teacherstudentsetsubjectactivitytag_filterwidget.ui \
 
 TRANSLATIONS += \
 	../translations/fet_ar.ts \

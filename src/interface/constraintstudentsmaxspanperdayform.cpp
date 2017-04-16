@@ -15,39 +15,20 @@
  *                                                                         *
  ***************************************************************************/
 
-#include <QMessageBox>
-
-#include "longtextmessagebox.h"
-
 #include "constraintstudentsmaxspanperdayform.h"
 #include "addconstraintstudentsmaxspanperdayform.h"
 #include "modifyconstraintstudentsmaxspanperdayform.h"
 
-#include <QListWidget>
-#include <QScrollBar>
-#include <QAbstractItemView>
-
-ConstraintStudentsMaxSpanPerDayForm::ConstraintStudentsMaxSpanPerDayForm(QWidget* parent): QDialog(parent)
+ConstraintStudentsMaxSpanPerDayForm::ConstraintStudentsMaxSpanPerDayForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
-	setupUi(this);
+	//: This is the title of the dialog to see the list of all constraints of this type
+	setWindowTitle(QCoreApplication::translate("ConstraintStudentsMaxSpanPerDayForm_template", "Constraints students max span per day"));
 
-	currentConstraintTextEdit->setReadOnly(true);
+	QString s = QCoreApplication::translate("ConstraintStudentsMaxSpanPerDayForm_template", "This constraint ensures a maximum span of activities on each day. Span means the count of slots (free or occupied) starting with the first occupied slot of the day and ending with the last occupied slot of the day.");
+	setInstructionText(s);
 
-	modifyConstraintPushButton->setDefault(true);
-
-	constraintsListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
-
-	connect(constraintsListWidget, SIGNAL(currentRowChanged(int)), this, SLOT(constraintChanged(int)));
-	connect(addConstraintPushButton, SIGNAL(clicked()), this, SLOT(addConstraint()));
-	connect(closePushButton, SIGNAL(clicked()), this, SLOT(close()));
-	connect(removeConstraintPushButton, SIGNAL(clicked()), this, SLOT(removeConstraint()));
-	connect(modifyConstraintPushButton, SIGNAL(clicked()), this, SLOT(modifyConstraint()));
-	connect(constraintsListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(modifyConstraint()));
-
-	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
-	
-	this->filterChanged();
+	filterChanged();
 }
 
 ConstraintStudentsMaxSpanPerDayForm::~ConstraintStudentsMaxSpanPerDayForm()
@@ -55,7 +36,7 @@ ConstraintStudentsMaxSpanPerDayForm::~ConstraintStudentsMaxSpanPerDayForm()
 	saveFETDialogGeometry(this);
 }
 
-bool ConstraintStudentsMaxSpanPerDayForm::filterOk(TimeConstraint* ctr)
+bool ConstraintStudentsMaxSpanPerDayForm::filterOk(const TimeConstraint* ctr) const
 {
 	if(ctr->type==CONSTRAINT_STUDENTS_MAX_SPAN_PER_DAY)
 		return true;
@@ -63,111 +44,12 @@ bool ConstraintStudentsMaxSpanPerDayForm::filterOk(TimeConstraint* ctr)
 		return false;
 }
 
-void ConstraintStudentsMaxSpanPerDayForm::filterChanged()
+QDialog * ConstraintStudentsMaxSpanPerDayForm::createAddDialog()
 {
-	this->visibleConstraintsList.clear();
-	constraintsListWidget->clear();
-	for(int i=0; i<gt.rules.timeConstraintsList.size(); i++){
-		TimeConstraint* ctr=gt.rules.timeConstraintsList[i];
-		if(filterOk(ctr)){
-			visibleConstraintsList.append(ctr);
-			constraintsListWidget->addItem(ctr->getDescription(gt.rules));
-		}
-	}
-
-	if(constraintsListWidget->count()>0)
-		constraintsListWidget->setCurrentRow(0);
-	else
-		this->constraintChanged(-1);
+	return new AddConstraintStudentsMaxSpanPerDayForm(this);
 }
 
-void ConstraintStudentsMaxSpanPerDayForm::constraintChanged(int index)
+QDialog * ConstraintStudentsMaxSpanPerDayForm::createModifyDialog(TimeConstraint *ctr)
 {
-	if(index<0){
-		currentConstraintTextEdit->setPlainText("");
-		return;
-	}
-	assert(index<this->visibleConstraintsList.size());
-	TimeConstraint* ctr=this->visibleConstraintsList.at(index);
-	assert(ctr!=NULL);
-	currentConstraintTextEdit->setPlainText(ctr->getDetailedDescription(gt.rules));
-}
-
-void ConstraintStudentsMaxSpanPerDayForm::addConstraint()
-{
-	AddConstraintStudentsMaxSpanPerDayForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-
-	filterChanged();
-	
-	constraintsListWidget->setCurrentRow(constraintsListWidget->count()-1);
-}
-
-void ConstraintStudentsMaxSpanPerDayForm::modifyConstraint()
-{
-	int valv=constraintsListWidget->verticalScrollBar()->value();
-	int valh=constraintsListWidget->horizontalScrollBar()->value();
-
-	int i=constraintsListWidget->currentRow();
-	if(i<0){
-		QMessageBox::information(this, tr("FET information"), tr("Invalid selected constraint"));
-		return;
-	}
-	TimeConstraint* ctr=this->visibleConstraintsList.at(i);
-
-	ModifyConstraintStudentsMaxSpanPerDayForm form(this, (ConstraintStudentsMaxSpanPerDay*)ctr);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-
-	filterChanged();
-
-	constraintsListWidget->verticalScrollBar()->setValue(valv);
-	constraintsListWidget->horizontalScrollBar()->setValue(valh);
-
-	if(i>=constraintsListWidget->count())
-		i=constraintsListWidget->count()-1;
-
-	if(i>=0)
-		constraintsListWidget->setCurrentRow(i);
-	else
-		this->constraintChanged(-1);
-}
-
-void ConstraintStudentsMaxSpanPerDayForm::removeConstraint()
-{
-	int i=constraintsListWidget->currentRow();
-	if(i<0){
-		QMessageBox::information(this, tr("FET information"), tr("Invalid selected constraint"));
-		return;
-	}
-	TimeConstraint* ctr=this->visibleConstraintsList.at(i);
-	QString s;
-	s=tr("Remove constraint?");
-	s+="\n\n";
-	s+=ctr->getDetailedDescription(gt.rules);
-	
-	QListWidgetItem* item;
-
-	switch( LongTextMessageBox::confirmation( this, tr("FET confirmation"),
-		s, tr("Yes"), tr("No"), 0, 0, 1 ) ){
-	case 0: // The user clicked the OK button or pressed Enter
-		gt.rules.removeTimeConstraint(ctr);
-		
-		visibleConstraintsList.removeAt(i);
-		constraintsListWidget->setCurrentRow(-1);
-		item=constraintsListWidget->takeItem(i);
-		delete item;
-		
-		break;
-	case 1: // The user clicked the Cancel button or pressed Escape
-		break;
-	}
-	
-	if(i>=constraintsListWidget->count())
-		i=constraintsListWidget->count()-1;
-	if(i>=0)
-		constraintsListWidget->setCurrentRow(i);
-	else
-		this->constraintChanged(-1);
+	return new ModifyConstraintStudentsMaxSpanPerDayForm(this, (ConstraintStudentsMaxSpanPerDay*)ctr);
 }

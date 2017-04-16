@@ -27,7 +27,7 @@ ModifyConstraintTeachersMaxHoursContinuouslyForm::ModifyConstraintTeachersMaxHou
 	okPushButton->setDefault(true);
 
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
@@ -51,10 +51,6 @@ void ModifyConstraintTeachersMaxHoursContinuouslyForm::updateMaxHoursSpinBox(){
 	maxHoursSpinBox->setMaximum(gt.rules.nHoursPerDay);	
 }
 
-void ModifyConstraintTeachersMaxHoursContinuouslyForm::constraintChanged()
-{
-}
-
 void ModifyConstraintTeachersMaxHoursContinuouslyForm::ok()
 {
 	double weight;
@@ -74,10 +70,5 @@ void ModifyConstraintTeachersMaxHoursContinuouslyForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 	
-	this->close();
-}
-
-void ModifyConstraintTeachersMaxHoursContinuouslyForm::cancel()
-{
 	this->close();
 }

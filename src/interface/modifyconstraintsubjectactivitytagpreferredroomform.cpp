@@ -26,7 +26,7 @@ ModifyConstraintSubjectActivityTagPreferredRoomForm::ModifyConstraintSubjectActi
 
 	okPushButton->setDefault(true);
 
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
 
 	centerWidgetOnScreen(this);
@@ -56,32 +56,22 @@ ModifyConstraintSubjectActivityTagPreferredRoomForm::~ModifyConstraintSubjectAct
 
 void ModifyConstraintSubjectActivityTagPreferredRoomForm::updateSubjectsComboBox()
 {
-	int i=0, j=-1;
 	subjectsComboBox->clear();
-	for(int k=0; k<gt.rules.subjectsList.size(); k++){
-		Subject* sb=gt.rules.subjectsList[k];
-		subjectsComboBox->addItem(sb->name);
-		if(sb->name==this->_ctr->subjectName)
-			j=i;
-		i++;
+	for(int i=0; i<gt.rules.subjectsList.size(); i++){
+		Subject* s=gt.rules.subjectsList[i];
+		subjectsComboBox->addItem(s->name);
 	}
-	assert(j>=0);
-	subjectsComboBox->setCurrentIndex(j);
+	subjectsComboBox->setCurrentText(this->_ctr->subjectName);
 }
 
 void ModifyConstraintSubjectActivityTagPreferredRoomForm::updateActivityTagsComboBox()
 {
-	int i=0, j=-1;
 	activityTagsComboBox->clear();
-	for(int k=0; k<gt.rules.activityTagsList.size(); k++){
-		ActivityTag* sb=gt.rules.activityTagsList[k];
-		activityTagsComboBox->addItem(sb->name);
-		if(sb->name==this->_ctr->activityTagName)
-			j=i;
-		i++;
+	for(int i=0; i<gt.rules.activityTagsList.size(); i++){
+		ActivityTag* s=gt.rules.activityTagsList[i];
+		activityTagsComboBox->addItem(s->name);
 	}
-	assert(j>=0);
-	activityTagsComboBox->setCurrentIndex(j);
+	activityTagsComboBox->setCurrentText(this->_ctr->activityTagName);
 }
 
 void ModifyConstraintSubjectActivityTagPreferredRoomForm::updateRoomsComboBox()
@@ -97,11 +87,6 @@ void ModifyConstraintSubjectActivityTagPreferredRoomForm::updateRoomsComboBox()
 	}
 	assert(j>=0);
 	roomsComboBox->setCurrentIndex(j);
-}
-
-void ModifyConstraintSubjectActivityTagPreferredRoomForm::cancel()
-{
-	this->close();
 }
 
 void ModifyConstraintSubjectActivityTagPreferredRoomForm::ok()

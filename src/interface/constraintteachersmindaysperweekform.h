@@ -18,28 +18,18 @@
 #ifndef CONSTRAINTTEACHERSMINDAYSPERWEEKFORM_H
 #define CONSTRAINTTEACHERSMINDAYSPERWEEKFORM_H
 
-#include "ui_constraintteachersmindaysperweekform_template.h"
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
+#include "timeconstraint_basedialog.h"
 
-class ConstraintTeachersMinDaysPerWeekForm : public QDialog, Ui::ConstraintTeachersMinDaysPerWeekForm_template  {
+class ConstraintTeachersMinDaysPerWeekForm : public TimeConstraintBaseDialog  {
 	Q_OBJECT
 public:
-	TimeConstraintsList visibleConstraintsList;
-
 	ConstraintTeachersMinDaysPerWeekForm(QWidget* parent);
 	~ConstraintTeachersMinDaysPerWeekForm();
 
-	bool filterOk(TimeConstraint* ctr);
-
-public slots:
-	void constraintChanged(int index);
-	void addConstraint();
-	void modifyConstraint();
-	void removeConstraint();
-
-	void filterChanged();
+protected:
+	virtual QDialog *createAddDialog();
+	virtual QDialog *createModifyDialog(TimeConstraint *ctr);
+	virtual bool filterOk(const TimeConstraint *ctr) const;
 };
 
 #endif

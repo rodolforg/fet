@@ -27,7 +27,7 @@ ModifyConstraintStudentsEarlyMaxBeginningsAtSecondHourForm::ModifyConstraintStud
 	okPushButton->setDefault(true);
 
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
@@ -44,10 +44,6 @@ ModifyConstraintStudentsEarlyMaxBeginningsAtSecondHourForm::ModifyConstraintStud
 ModifyConstraintStudentsEarlyMaxBeginningsAtSecondHourForm::~ModifyConstraintStudentsEarlyMaxBeginningsAtSecondHourForm()
 {
 	saveFETDialogGeometry(this);
-}
-
-void ModifyConstraintStudentsEarlyMaxBeginningsAtSecondHourForm::constraintChanged()
-{
 }
 
 void ModifyConstraintStudentsEarlyMaxBeginningsAtSecondHourForm::ok()
@@ -73,10 +69,5 @@ void ModifyConstraintStudentsEarlyMaxBeginningsAtSecondHourForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 	
-	this->close();
-}
-
-void ModifyConstraintStudentsEarlyMaxBeginningsAtSecondHourForm::cancel()
-{
 	this->close();
 }

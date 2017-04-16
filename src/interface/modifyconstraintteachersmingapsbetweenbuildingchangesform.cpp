@@ -29,7 +29,7 @@ ModifyConstraintTeachersMinGapsBetweenBuildingChangesForm::ModifyConstraintTeach
 	okPushButton->setDefault(true);
 
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
@@ -41,17 +41,11 @@ ModifyConstraintTeachersMinGapsBetweenBuildingChangesForm::ModifyConstraintTeach
 	minGapsSpinBox->setMinimum(1);
 	minGapsSpinBox->setMaximum(gt.rules.nHoursPerDay);
 	minGapsSpinBox->setValue(ctr->minGapsBetweenBuildingChanges);	
-		
-	constraintChanged();
 }
 
 ModifyConstraintTeachersMinGapsBetweenBuildingChangesForm::~ModifyConstraintTeachersMinGapsBetweenBuildingChangesForm()
 {
 	saveFETDialogGeometry(this);
-}
-
-void ModifyConstraintTeachersMinGapsBetweenBuildingChangesForm::constraintChanged()
-{
 }
 
 void ModifyConstraintTeachersMinGapsBetweenBuildingChangesForm::ok()
@@ -71,10 +65,5 @@ void ModifyConstraintTeachersMinGapsBetweenBuildingChangesForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 	
-	this->close();
-}
-
-void ModifyConstraintTeachersMinGapsBetweenBuildingChangesForm::cancel()
-{
 	this->close();
 }

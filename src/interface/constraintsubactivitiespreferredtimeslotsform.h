@@ -18,30 +18,20 @@
 #ifndef CONSTRAINTSUBACTIVITIESPREFERREDTIMESLOTSFORM_H
 #define CONSTRAINTSUBACTIVITIESPREFERREDTIMESLOTSFORM_H
 
-#include "ui_constraintsubactivitiespreferredtimeslotsform_template.h"
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
+#include "timeconstraint_basedialog.h"
 
-class ConstraintSubactivitiesPreferredTimeSlotsForm : public QDialog, Ui::ConstraintSubactivitiesPreferredTimeSlotsForm_template  {
+class ConstraintSubactivitiesPreferredTimeSlotsForm : public TimeConstraintBaseDialog  {
 	Q_OBJECT
 public:
-	TimeConstraintsList visibleConstraintsList;
-
 	ConstraintSubactivitiesPreferredTimeSlotsForm(QWidget* parent);
 	~ConstraintSubactivitiesPreferredTimeSlotsForm();
 
-	void refreshConstraintsListWidget();
+protected:
+	virtual QDialog *createAddDialog();
+	virtual QDialog *createModifyDialog(TimeConstraint *ctr);
+	virtual bool filterOk(const TimeConstraint *ctr) const;
 
-	bool filterOk(TimeConstraint* ctr);
-	
-public slots:
-	void constraintChanged(int index);
-	void addConstraint();
-	void modifyConstraint();
-	void removeConstraint();
-	
-	void help();
+	void setHelp();
 };
 
 #endif

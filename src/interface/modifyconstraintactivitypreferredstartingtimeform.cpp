@@ -29,7 +29,7 @@ ModifyConstraintActivityPreferredStartingTimeForm::ModifyConstraintActivityPrefe
 	okPushButton->setDefault(true);
 
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 	connect(teachersComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
 	connect(studentsComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
 	connect(subjectsComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
@@ -110,8 +110,6 @@ ModifyConstraintActivityPreferredStartingTimeForm::ModifyConstraintActivityPrefe
 		startHourComboBox->setCurrentIndex(-1);
 	
 	permLockedCheckBox->setChecked(this->_ctr->permanentlyLocked);
-	
-	constraintChanged();
 }
 
 ModifyConstraintActivityPreferredStartingTimeForm::~ModifyConstraintActivityPreferredStartingTimeForm()
@@ -184,8 +182,6 @@ void ModifyConstraintActivityPreferredStartingTimeForm::updateActivitiesComboBox
 	}
 	//assert(j>=0); only first time
 	activitiesComboBox->setCurrentIndex(j);
-
-	constraintChanged();
 }
 
 void ModifyConstraintActivityPreferredStartingTimeForm::updatePeriodGroupBox(){
@@ -196,10 +192,6 @@ void ModifyConstraintActivityPreferredStartingTimeForm::updatePeriodGroupBox(){
 	dayComboBox->clear();
 	for(int i=0; i<gt.rules.nDaysPerWeek; i++)
 		dayComboBox->addItem(gt.rules.daysOfTheWeek[i]);
-}
-
-void ModifyConstraintActivityPreferredStartingTimeForm::constraintChanged()
-{
 }
 
 void ModifyConstraintActivityPreferredStartingTimeForm::ok()
@@ -291,10 +283,5 @@ void ModifyConstraintActivityPreferredStartingTimeForm::ok()
 	LockUnlock::computeLockedUnlockedActivitiesOnlyTime();
 	LockUnlock::increaseCommunicationSpinBox();
 
-	this->close();
-}
-
-void ModifyConstraintActivityPreferredStartingTimeForm::cancel()
-{
 	this->close();
 }

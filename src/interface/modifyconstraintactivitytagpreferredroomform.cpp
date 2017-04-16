@@ -26,7 +26,7 @@ ModifyConstraintActivityTagPreferredRoomForm::ModifyConstraintActivityTagPreferr
 
 	okPushButton->setDefault(true);
 
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
 
 	centerWidgetOnScreen(this);
@@ -53,17 +53,12 @@ ModifyConstraintActivityTagPreferredRoomForm::~ModifyConstraintActivityTagPrefer
 
 void ModifyConstraintActivityTagPreferredRoomForm::updateActivityTagsComboBox()
 {
-	int i=0, j=-1;
 	activityTagsComboBox->clear();
-	for(int k=0; k<gt.rules.activityTagsList.size(); k++){
-		ActivityTag* sb=gt.rules.activityTagsList[k];
-		activityTagsComboBox->addItem(sb->name);
-		if(sb->name==this->_ctr->activityTagName)
-			j=i;
-		i++;
+	for(int i=0; i<gt.rules.activityTagsList.size(); i++){
+		ActivityTag* s=gt.rules.activityTagsList[i];
+		activityTagsComboBox->addItem(s->name);
 	}
-	assert(j>=0);
-	activityTagsComboBox->setCurrentIndex(j);
+	activityTagsComboBox->setCurrentText(this->_ctr->activityTagName);
 }
 
 void ModifyConstraintActivityTagPreferredRoomForm::updateRoomsComboBox()
@@ -79,11 +74,6 @@ void ModifyConstraintActivityTagPreferredRoomForm::updateRoomsComboBox()
 	}
 	assert(j>=0);
 	roomsComboBox->setCurrentIndex(j);
-}
-
-void ModifyConstraintActivityTagPreferredRoomForm::cancel()
-{
-	this->close();
 }
 
 void ModifyConstraintActivityTagPreferredRoomForm::ok()

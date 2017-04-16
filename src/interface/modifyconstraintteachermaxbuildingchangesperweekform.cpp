@@ -27,7 +27,7 @@ ModifyConstraintTeacherMaxBuildingChangesPerWeekForm::ModifyConstraintTeacherMax
 	okPushButton->setDefault(true);
 
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
@@ -44,8 +44,6 @@ ModifyConstraintTeacherMaxBuildingChangesPerWeekForm::ModifyConstraintTeacherMax
 	maxChangesSpinBox->setMinimum(0);
 	maxChangesSpinBox->setMaximum(gt.rules.nDaysPerWeek*gt.rules.nHoursPerDay);
 	maxChangesSpinBox->setValue(ctr->maxBuildingChangesPerWeek);	
-		
-	constraintChanged();
 }
 
 ModifyConstraintTeacherMaxBuildingChangesPerWeekForm::~ModifyConstraintTeacherMaxBuildingChangesPerWeekForm()
@@ -56,21 +54,11 @@ ModifyConstraintTeacherMaxBuildingChangesPerWeekForm::~ModifyConstraintTeacherMa
 void ModifyConstraintTeacherMaxBuildingChangesPerWeekForm::updateTeachersComboBox()
 {
 	teachersComboBox->clear();
-	int i=0, j=-1;
-	for(int k=0; k<gt.rules.teachersList.size(); k++, i++){
-		Teacher* tch=gt.rules.teachersList[k];
-		teachersComboBox->addItem(tch->name);
-		if(tch->name==this->_ctr->teacherName)
-			j=i;
+	for(int i=0; i<gt.rules.teachersList.size(); i++){
+		Teacher* t=gt.rules.teachersList[i];
+		teachersComboBox->addItem(t->name);
 	}
-	assert(j>=0);
-	teachersComboBox->setCurrentIndex(j);
-
-	constraintChanged();
-}
-
-void ModifyConstraintTeacherMaxBuildingChangesPerWeekForm::constraintChanged()
-{
+	teachersComboBox->setCurrentText(this->_ctr->teacherName);
 }
 
 void ModifyConstraintTeacherMaxBuildingChangesPerWeekForm::ok()
@@ -99,10 +87,5 @@ void ModifyConstraintTeacherMaxBuildingChangesPerWeekForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 	
-	this->close();
-}
-
-void ModifyConstraintTeacherMaxBuildingChangesPerWeekForm::cancel()
-{
 	this->close();
 }

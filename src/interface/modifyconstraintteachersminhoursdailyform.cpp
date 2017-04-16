@@ -27,7 +27,7 @@ ModifyConstraintTeachersMinHoursDailyForm::ModifyConstraintTeachersMinHoursDaily
 	okPushButton->setDefault(true);
 
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
@@ -53,10 +53,6 @@ ModifyConstraintTeachersMinHoursDailyForm::~ModifyConstraintTeachersMinHoursDail
 void ModifyConstraintTeachersMinHoursDailyForm::updateMinHoursSpinBox(){
 	minHoursSpinBox->setMinimum(2);
 	minHoursSpinBox->setMaximum(gt.rules.nHoursPerDay);	
-}
-
-void ModifyConstraintTeachersMinHoursDailyForm::constraintChanged()
-{
 }
 
 void ModifyConstraintTeachersMinHoursDailyForm::ok()
@@ -91,11 +87,6 @@ void ModifyConstraintTeachersMinHoursDailyForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 	
-	this->close();
-}
-
-void ModifyConstraintTeachersMinHoursDailyForm::cancel()
-{
 	this->close();
 }
 

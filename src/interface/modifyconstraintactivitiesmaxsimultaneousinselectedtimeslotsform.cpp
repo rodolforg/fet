@@ -34,7 +34,7 @@ ModifyConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::ModifyConstrai
 	selectedActivitiesListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
 	
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 	connect(setAllUnselectedPushButton, SIGNAL(clicked()), this, SLOT(setAllUnselected()));
 	connect(setAllSelectedPushButton, SIGNAL(clicked()), this, SLOT(setAllSelected()));
 	connect(allActivitiesListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(addActivity()));
@@ -202,11 +202,6 @@ void ModifyConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 	
-	this->close();
-}
-
-void ModifyConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::cancel()
-{
 	this->close();
 }
 

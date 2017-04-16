@@ -27,7 +27,7 @@ ModifyConstraintTeacherMaxSpanPerDayForm::ModifyConstraintTeacherMaxSpanPerDayFo
 	okPushButton->setDefault(true);
 
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
@@ -53,17 +53,11 @@ ModifyConstraintTeacherMaxSpanPerDayForm::ModifyConstraintTeacherMaxSpanPerDayFo
 	}
 	assert(j>=0);
 	teachersComboBox->setCurrentIndex(j);
-
-	constraintChanged();
 }
 
 ModifyConstraintTeacherMaxSpanPerDayForm::~ModifyConstraintTeacherMaxSpanPerDayForm()
 {
 	saveFETDialogGeometry(this);
-}
-
-void ModifyConstraintTeacherMaxSpanPerDayForm::constraintChanged()
-{
 }
 
 void ModifyConstraintTeacherMaxSpanPerDayForm::ok()
@@ -98,10 +92,5 @@ void ModifyConstraintTeacherMaxSpanPerDayForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 
-	this->close();
-}
-
-void ModifyConstraintTeacherMaxSpanPerDayForm::cancel()
-{
 	this->close();
 }

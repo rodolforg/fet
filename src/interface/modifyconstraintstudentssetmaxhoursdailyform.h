@@ -31,12 +31,10 @@ public:
 	ModifyConstraintStudentsSetMaxHoursDailyForm(QWidget* parent, ConstraintStudentsSetMaxHoursDaily* ctr);
 	~ModifyConstraintStudentsSetMaxHoursDailyForm();
 
-	void updateStudentsComboBox(QWidget* parent);
+	void updateStudentsComboBox();
 
 public slots:
-	void constraintChanged();
 	void ok();
-	void cancel();
 };
 
 #endif

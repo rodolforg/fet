@@ -33,13 +33,12 @@ public:
 	~ModifyConstraintSubactivitiesPreferredTimeSlotsForm();
 
 	void updateTeachersComboBox();
-	void updateStudentsComboBox(QWidget* parent);
+	void updateStudentsComboBox();
 	void updateSubjectsComboBox();
 	void updateActivityTagsComboBox();
 
 public slots:
 	void ok();
-	void cancel();
 	
 	void setAllSlotsAllowed();
 	void setAllSlotsNotAllowed();

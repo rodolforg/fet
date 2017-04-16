@@ -18,28 +18,18 @@
 #ifndef CONSTRAINTSTUDENTSMAXBUILDINGCHANGESPERDAYFORM_H
 #define CONSTRAINTSTUDENTSMAXBUILDINGCHANGESPERDAYFORM_H
 
-#include "ui_constraintstudentsmaxbuildingchangesperdayform_template.h"
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
+#include "spaceconstraint_basedialog.h"
 
-class ConstraintStudentsMaxBuildingChangesPerDayForm : public QDialog, Ui::ConstraintStudentsMaxBuildingChangesPerDayForm_template  {
+class ConstraintStudentsMaxBuildingChangesPerDayForm : public SpaceConstraintBaseDialog  {
 	Q_OBJECT
 public:
-	SpaceConstraintsList visibleConstraintsList;
-
 	ConstraintStudentsMaxBuildingChangesPerDayForm(QWidget* parent);
 	~ConstraintStudentsMaxBuildingChangesPerDayForm();
 
-	bool filterOk(SpaceConstraint* ctr);
-
-public slots:
-	void constraintChanged(int index);
-	void addConstraint();
-	void modifyConstraint();
-	void removeConstraint();
-
-	void filterChanged();
+protected:
+	virtual QDialog *createAddDialog();
+	virtual QDialog *createModifyDialog(SpaceConstraint *ctr);
+	virtual bool filterOk(const SpaceConstraint *ctr) const;
 };
 
 #endif

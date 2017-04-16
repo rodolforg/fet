@@ -15,38 +15,20 @@
  *                                                                         *
  ***************************************************************************/
 
-#include "longtextmessagebox.h"
-
 #include "constrainttwoactivitiesgroupedform.h"
 #include "addconstrainttwoactivitiesgroupedform.h"
 #include "modifyconstrainttwoactivitiesgroupedform.h"
 
-#include <QMessageBox>
-
-#include <QListWidget>
-#include <QScrollBar>
-#include <QAbstractItemView>
-
-ConstraintTwoActivitiesGroupedForm::ConstraintTwoActivitiesGroupedForm(QWidget* parent): QDialog(parent)
+ConstraintTwoActivitiesGroupedForm::ConstraintTwoActivitiesGroupedForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
-	setupUi(this);
+	//: This is the title of the dialog to see the list of all constraints of this type
+	setWindowTitle(QCoreApplication::translate("ConstraintTwoActivitiesGroupedForm_template", "Constraints two activies grouped"));
 
-	currentConstraintTextEdit->setReadOnly(true);
-	
-	modifyConstraintPushButton->setDefault(true);
+	QString instruction = QCoreApplication::translate("ConstraintTwoActivitiesGroupedForm_template", "This constraint forces two activities to be in the same day, one immediately following the other, in any order, possibly separated by breaks");
+	instruction += "\n\n" + QCoreApplication::translate("ConstraintTwoActivitiesGroupedForm_template", "It is a good practice NOT to add this type of constraint to activities which are constrained to be in different days by min days between activities constraints. Please read Help/Important tips, tip number 3).");
+	setInstructionText(instruction);
 
-	constraintsListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
-
-	connect(constraintsListWidget, SIGNAL(currentRowChanged(int)), this, SLOT(constraintChanged(int)));
-	connect(addConstraintPushButton, SIGNAL(clicked()), this, SLOT(addConstraint()));
-	connect(closePushButton, SIGNAL(clicked()), this, SLOT(close()));
-	connect(removeConstraintPushButton, SIGNAL(clicked()), this, SLOT(removeConstraint()));
-	connect(modifyConstraintPushButton, SIGNAL(clicked()), this, SLOT(modifyConstraint()));
-	connect(constraintsListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(modifyConstraint()));
-
-	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
-	
 	this->filterChanged();
 }
 
@@ -55,7 +37,7 @@ ConstraintTwoActivitiesGroupedForm::~ConstraintTwoActivitiesGroupedForm()
 	saveFETDialogGeometry(this);
 }
 
-bool ConstraintTwoActivitiesGroupedForm::filterOk(TimeConstraint* ctr)
+bool ConstraintTwoActivitiesGroupedForm::filterOk(const TimeConstraint* ctr) const
 {
 	if(ctr->type==CONSTRAINT_TWO_ACTIVITIES_GROUPED)
 		return true;
@@ -63,109 +45,12 @@ bool ConstraintTwoActivitiesGroupedForm::filterOk(TimeConstraint* ctr)
 		return false;
 }
 
-void ConstraintTwoActivitiesGroupedForm::filterChanged()
+QDialog * ConstraintTwoActivitiesGroupedForm::createAddDialog()
 {
-	this->visibleConstraintsList.clear();
-	constraintsListWidget->clear();
-	for(int i=0; i<gt.rules.timeConstraintsList.size(); i++){
-		TimeConstraint* ctr=gt.rules.timeConstraintsList[i];
-		if(filterOk(ctr)){
-			visibleConstraintsList.append(ctr);
-			constraintsListWidget->addItem(ctr->getDescription(gt.rules));
-		}
-	}
-	
-	if(constraintsListWidget->count()>0)
-		constraintsListWidget->setCurrentRow(0);
-	else
-		this->constraintChanged(-1);
+	return new AddConstraintTwoActivitiesGroupedForm(this);
 }
 
-void ConstraintTwoActivitiesGroupedForm::constraintChanged(int index)
+QDialog * ConstraintTwoActivitiesGroupedForm::createModifyDialog(TimeConstraint *ctr)
 {
-	if(index<0){
-		currentConstraintTextEdit->setPlainText("");
-		return;
-	}
-	assert(index<this->visibleConstraintsList.size());
-	TimeConstraint* ctr=this->visibleConstraintsList.at(index);
-	assert(ctr!=NULL);
-	currentConstraintTextEdit->setPlainText(ctr->getDetailedDescription(gt.rules));
-}
-
-void ConstraintTwoActivitiesGroupedForm::addConstraint()
-{
-	AddConstraintTwoActivitiesGroupedForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-
-	filterChanged();
-	
-	constraintsListWidget->setCurrentRow(constraintsListWidget->count()-1);
-}
-
-void ConstraintTwoActivitiesGroupedForm::modifyConstraint()
-{
-	int valv=constraintsListWidget->verticalScrollBar()->value();
-	int valh=constraintsListWidget->horizontalScrollBar()->value();
-
-	int i=constraintsListWidget->currentRow();
-	if(i<0){
-		QMessageBox::information(this, tr("FET information"), tr("Invalid selected constraint"));
-		return;
-	}
-	TimeConstraint* ctr=this->visibleConstraintsList.at(i);
-
-	ModifyConstraintTwoActivitiesGroupedForm form(this, (ConstraintTwoActivitiesGrouped*)ctr);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-
-	filterChanged();
-	
-	constraintsListWidget->verticalScrollBar()->setValue(valv);
-	constraintsListWidget->horizontalScrollBar()->setValue(valh);
-
-	if(i>=constraintsListWidget->count())
-		i=constraintsListWidget->count()-1;
-
-	if(i>=0)
-		constraintsListWidget->setCurrentRow(i);
-}
-
-void ConstraintTwoActivitiesGroupedForm::removeConstraint()
-{
-	int i=constraintsListWidget->currentRow();
-	if(i<0){
-		QMessageBox::information(this, tr("FET information"), tr("Invalid selected constraint"));
-		return;
-	}
-	TimeConstraint* ctr=this->visibleConstraintsList.at(i);
-	QString s;
-	s=tr("Remove constraint?");
-	s+="\n\n";
-	s+=ctr->getDetailedDescription(gt.rules);
-	
-	QListWidgetItem* item;
-
-	switch( LongTextMessageBox::confirmation( this, tr("FET confirmation"),
-		s, tr("Yes"), tr("No"), 0, 0, 1 ) ){
-	case 0: // The user clicked the OK button or pressed Enter
-		gt.rules.removeTimeConstraint(ctr);
-
-		visibleConstraintsList.removeAt(i);
-		constraintsListWidget->setCurrentRow(-1);
-		item=constraintsListWidget->takeItem(i);
-		delete item;
-
-		break;
-	case 1: // The user clicked the Cancel button or pressed Escape
-		break;
-	}
-	
-	if(i>=constraintsListWidget->count())
-		i=constraintsListWidget->count()-1;
-	if(i>=0)
-		constraintsListWidget->setCurrentRow(i);
-	else
-		currentConstraintTextEdit->setPlainText(QString(""));
+	return new ModifyConstraintTwoActivitiesGroupedForm(this, (ConstraintTwoActivitiesGrouped*)ctr);
 }

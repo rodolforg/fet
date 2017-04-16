@@ -15,61 +15,32 @@
  *                                                                         *
  ***************************************************************************/
 
-#include <QMessageBox>
-
 #include "helponimperfectconstraints.h"
-
-#include "longtextmessagebox.h"
 
 #include "constraintstudentssetmaxgapsperdayform.h"
 #include "addconstraintstudentssetmaxgapsperdayform.h"
 #include "modifyconstraintstudentssetmaxgapsperdayform.h"
 
-#include <QListWidget>
-#include <QScrollBar>
-#include <QAbstractItemView>
+#include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
-ConstraintStudentsSetMaxGapsPerDayForm::ConstraintStudentsSetMaxGapsPerDayForm(QWidget* parent): QDialog(parent)
+ConstraintStudentsSetMaxGapsPerDayForm::ConstraintStudentsSetMaxGapsPerDayForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
-	setupUi(this);
+    //: This is the title of the dialog to see the list of all constraints of this type
+    setWindowTitle(QCoreApplication::translate("ConstraintStudentsSetMaxGapsPerDayForm_template", "Constraints students set max gaps per day"));
 
-	currentConstraintTextEdit->setReadOnly(true);
+    QString s = QCoreApplication::translate("ConstraintStudentsSetMaxGapsPerDayForm_template", "IMPORTANT: this constraint is not perfectly optimized. Press Help button for more information. Use with caution, as explained.");
+    setInstructionText(s);
 
-	modifyConstraintPushButton->setDefault(true);
+    s = HelpOnImperfectConstraints::getHelpText();
+    setHelpText(s);
 
-	constraintsListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
+    TeacherStudentSetSubjectActivityTag_FilterWidget *filterWidget = new TeacherStudentSetSubjectActivityTag_FilterWidget(gt.rules);
+    filterWidget->setStudentSetsVisible(true);
+    setFilterWidget(filterWidget);
+    connect(filterWidget, &TeacherStudentSetSubjectActivityTag_FilterWidget::FilterChanged, this, &ConstraintStudentsSetMaxGapsPerDayForm::filterChanged);
 
-	connect(constraintsListWidget, SIGNAL(currentRowChanged(int)), this, SLOT(constraintChanged(int)));
-	connect(addConstraintPushButton, SIGNAL(clicked()), this, SLOT(addConstraint()));
-	connect(closePushButton, SIGNAL(clicked()), this, SLOT(close()));
-	connect(removeConstraintPushButton, SIGNAL(clicked()), this, SLOT(removeConstraint()));
-	connect(modifyConstraintPushButton, SIGNAL(clicked()), this, SLOT(modifyConstraint()));
-	connect(studentsComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
-	connect(constraintsListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(modifyConstraint()));
-	connect(helpPushButton, SIGNAL(clicked()), this, SLOT(help()));
-
-	centerWidgetOnScreen(this);
-	restoreFETDialogGeometry(this);
-
-	QSize tmp2=studentsComboBox->minimumSizeHint();
-	Q_UNUSED(tmp2);
-	
-	studentsComboBox->addItem("");
-
-	for(int i=0; i<gt.rules.yearsList.size(); i++){
-		StudentsYear* sty=gt.rules.yearsList[i];
-		studentsComboBox->addItem(sty->name);
-		for(int j=0; j<sty->groupsList.size(); j++){
-			StudentsGroup* stg=sty->groupsList[j];
-			studentsComboBox->addItem(stg->name);
-			if(SHOW_SUBGROUPS_IN_COMBO_BOXES) for(int k=0; k<stg->subgroupsList.size(); k++){
-				StudentsSubgroup* sts=stg->subgroupsList[k];
-				studentsComboBox->addItem(sts->name);
-			}
-		}
-	}
-
-	this->filterChanged();
+    restoreFETDialogGeometry(this);
+    this->filterChanged();
 }
 
 ConstraintStudentsSetMaxGapsPerDayForm::~ConstraintStudentsSetMaxGapsPerDayForm()
@@ -77,126 +48,24 @@ ConstraintStudentsSetMaxGapsPerDayForm::~ConstraintStudentsSetMaxGapsPerDayForm(
 	saveFETDialogGeometry(this);
 }
 
-bool ConstraintStudentsSetMaxGapsPerDayForm::filterOk(TimeConstraint* ctr)
+bool ConstraintStudentsSetMaxGapsPerDayForm::filterOk(const TimeConstraint* ctr) const
 {
 	if(ctr->type==CONSTRAINT_STUDENTS_SET_MAX_GAPS_PER_DAY){
 		ConstraintStudentsSetMaxGapsPerDay* c=(ConstraintStudentsSetMaxGapsPerDay*) ctr;
-		return c->students==studentsComboBox->currentText() || studentsComboBox->currentText()=="";
-	}
+        TeacherStudentSetSubjectActivityTag_FilterWidget *filter_widget = static_cast<TeacherStudentSetSubjectActivityTag_FilterWidget*>(getFilterWidget());
+        QString studentsName = filter_widget->studentsSet();
+        return c->students==studentsName || studentsName.isEmpty();
+    }
 	else
 		return false;
 }
 
-void ConstraintStudentsSetMaxGapsPerDayForm::filterChanged()
+QDialog * ConstraintStudentsSetMaxGapsPerDayForm::createAddDialog()
 {
-	this->visibleConstraintsList.clear();
-	constraintsListWidget->clear();
-	for(int i=0; i<gt.rules.timeConstraintsList.size(); i++){
-		TimeConstraint* ctr=gt.rules.timeConstraintsList[i];
-		if(filterOk(ctr)){
-			visibleConstraintsList.append(ctr);
-			constraintsListWidget->addItem(ctr->getDescription(gt.rules));
-		}
-	}
-
-	if(constraintsListWidget->count()>0)
-		constraintsListWidget->setCurrentRow(0);
-	else
-		this->constraintChanged(-1);
+    return new AddConstraintStudentsSetMaxGapsPerDayForm(this);
 }
 
-void ConstraintStudentsSetMaxGapsPerDayForm::constraintChanged(int index)
+QDialog * ConstraintStudentsSetMaxGapsPerDayForm::createModifyDialog(TimeConstraint *ctr)
 {
-	if(index<0){
-		currentConstraintTextEdit->setPlainText("");
-		return;
-	}
-	assert(index<this->visibleConstraintsList.size());
-	TimeConstraint* ctr=this->visibleConstraintsList.at(index);
-	assert(ctr!=NULL);
-	currentConstraintTextEdit->setPlainText(ctr->getDetailedDescription(gt.rules));
-}
-
-void ConstraintStudentsSetMaxGapsPerDayForm::addConstraint()
-{
-	AddConstraintStudentsSetMaxGapsPerDayForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-
-	filterChanged();
-	
-	constraintsListWidget->setCurrentRow(constraintsListWidget->count()-1);
-}
-
-void ConstraintStudentsSetMaxGapsPerDayForm::modifyConstraint()
-{
-	int valv=constraintsListWidget->verticalScrollBar()->value();
-	int valh=constraintsListWidget->horizontalScrollBar()->value();
-
-	int i=constraintsListWidget->currentRow();
-	if(i<0){
-		QMessageBox::information(this, tr("FET information"), tr("Invalid selected constraint"));
-		return;
-	}
-	TimeConstraint* ctr=this->visibleConstraintsList.at(i);
-
-	ModifyConstraintStudentsSetMaxGapsPerDayForm form(this, (ConstraintStudentsSetMaxGapsPerDay*)ctr);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-
-	filterChanged();
-	
-	constraintsListWidget->verticalScrollBar()->setValue(valv);
-	constraintsListWidget->horizontalScrollBar()->setValue(valh);
-
-	if(i>=constraintsListWidget->count())
-		i=constraintsListWidget->count()-1;
-
-	if(i>=0)
-		constraintsListWidget->setCurrentRow(i);
-	else
-		this->constraintChanged(-1);
-}
-
-void ConstraintStudentsSetMaxGapsPerDayForm::removeConstraint()
-{
-	int i=constraintsListWidget->currentRow();
-	if(i<0){
-		QMessageBox::information(this, tr("FET information"), tr("Invalid selected constraint"));
-		return;
-	}
-	TimeConstraint* ctr=this->visibleConstraintsList.at(i);
-	QString s;
-	s=tr("Remove constraint?");
-	s+="\n\n";
-	s+=ctr->getDetailedDescription(gt.rules);
-	
-	QListWidgetItem* item;
-
-	switch( LongTextMessageBox::confirmation( this, tr("FET confirmation"),
-		s, tr("Yes"), tr("No"), 0, 0, 1 ) ){
-	case 0: // The user clicked the OK button or pressed Enter
-		gt.rules.removeTimeConstraint(ctr);
-		
-		visibleConstraintsList.removeAt(i);
-		constraintsListWidget->setCurrentRow(-1);
-		item=constraintsListWidget->takeItem(i);
-		delete item;
-		
-		break;
-	case 1: // The user clicked the Cancel button or pressed Escape
-		break;
-	}
-	
-	if(i>=constraintsListWidget->count())
-		i=constraintsListWidget->count()-1;
-	if(i>=0)
-		constraintsListWidget->setCurrentRow(i);
-	else
-		this->constraintChanged(-1);
-}
-
-void ConstraintStudentsSetMaxGapsPerDayForm::help()
-{
-	HelpOnImperfectConstraints::help(this);
+    return new ModifyConstraintStudentsSetMaxGapsPerDayForm(this, (ConstraintStudentsSetMaxGapsPerDay*)ctr);
 }

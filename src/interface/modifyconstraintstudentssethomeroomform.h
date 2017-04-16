@@ -31,12 +31,11 @@ public:
 	ModifyConstraintStudentsSetHomeRoomForm(QWidget* parent, ConstraintStudentsSetHomeRoom* ctr);
 	~ModifyConstraintStudentsSetHomeRoomForm();
 
-	void updateStudentsComboBox(QWidget* parent);
+	void updateStudentsComboBox();
 	void updateRoomsComboBox();
 
 public slots:
 	void ok();
-	void cancel();
 };
 
 #endif

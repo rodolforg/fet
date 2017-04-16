@@ -18,30 +18,18 @@
 #ifndef CONSTRAINTACTIVITIESOCCUPYMAXDIFFERENTROOMSFORM_H
 #define CONSTRAINTACTIVITIESOCCUPYMAXDIFFERENTROOMSFORM_H
 
-#include "ui_constraintactivitiesoccupymaxdifferentroomsform_template.h"
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
+#include "spaceconstraint_basedialog.h"
 
-class ConstraintActivitiesOccupyMaxDifferentRoomsForm : public QDialog, Ui::ConstraintActivitiesOccupyMaxDifferentRoomsForm_template  {
+class ConstraintActivitiesOccupyMaxDifferentRoomsForm : public SpaceConstraintBaseDialog  {
 	Q_OBJECT
 public:
-	SpaceConstraintsList visibleConstraintsList;
-
 	ConstraintActivitiesOccupyMaxDifferentRoomsForm(QWidget* parent);
 	~ConstraintActivitiesOccupyMaxDifferentRoomsForm();
-
-	bool filterOk(SpaceConstraint* ctr);
-
-public slots:
-	void constraintChanged(int index);
-	void addConstraint();
-	void modifyConstraint();
-	void removeConstraint();
-
-	void filterChanged();
-	
-	void help();
+protected:
+	virtual QDialog *createAddDialog();
+	virtual QDialog *createModifyDialog(SpaceConstraint *ctr);
+	virtual bool filterOk(const SpaceConstraint *ctr) const;
+	void setHelp();
 };
 
 #endif

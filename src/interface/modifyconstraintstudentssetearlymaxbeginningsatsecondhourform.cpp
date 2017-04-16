@@ -27,7 +27,7 @@ ModifyConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm::ModifyConstraintS
 	okPushButton->setDefault(true);
 
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
@@ -63,11 +63,10 @@ ModifyConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm::ModifyConstraintS
 		}
 	}
 	if(j<0)
-		showWarningForInvisibleSubgroupConstraint(parent, this->_ctr->students);
+		showWarningForInvisibleSubgroupConstraint(this, this->_ctr->students);
 	else
 		assert(j>=0);
 	studentsComboBox->setCurrentIndex(j);
-	constraintChanged();
 	
 	maxBeginningsSpinBox->setMinimum(0);
 	maxBeginningsSpinBox->setMaximum(gt.rules.nDaysPerWeek);
@@ -77,10 +76,6 @@ ModifyConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm::ModifyConstraintS
 ModifyConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm::~ModifyConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm()
 {
 	saveFETDialogGeometry(this);
-}
-
-void ModifyConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm::constraintChanged()
-{
 }
 
 void ModifyConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm::ok()
@@ -120,10 +115,5 @@ void ModifyConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 	
-	this->close();
-}
-
-void ModifyConstraintStudentsSetEarlyMaxBeginningsAtSecondHourForm::cancel()
-{
 	this->close();
 }

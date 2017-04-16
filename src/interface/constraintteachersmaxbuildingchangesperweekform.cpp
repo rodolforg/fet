@@ -15,38 +15,17 @@
  *                                                                         *
  ***************************************************************************/
 
-#include <QMessageBox>
-
-#include "longtextmessagebox.h"
-
 #include "constraintteachersmaxbuildingchangesperweekform.h"
 #include "addconstraintteachersmaxbuildingchangesperweekform.h"
 #include "modifyconstraintteachersmaxbuildingchangesperweekform.h"
 
-#include <QListWidget>
-#include <QScrollBar>
-#include <QAbstractItemView>
-
-ConstraintTeachersMaxBuildingChangesPerWeekForm::ConstraintTeachersMaxBuildingChangesPerWeekForm(QWidget* parent): QDialog(parent)
+ConstraintTeachersMaxBuildingChangesPerWeekForm::ConstraintTeachersMaxBuildingChangesPerWeekForm(QWidget* parent): SpaceConstraintBaseDialog(parent)
 {
-	setupUi(this);
+	const char *context = "ConstraintTeachersMaxBuildingChangesPerWeekForm_template";
+	//: This is the title of the dialog to see the list of all constraints of this type
+	setWindowTitle(QCoreApplication::translate(context, "Constraints teachers max building changes per week"));
 
-	currentConstraintTextEdit->setReadOnly(true);
-
-	modifyConstraintPushButton->setDefault(true);
-
-	constraintsListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
-
-	connect(constraintsListWidget, SIGNAL(currentRowChanged(int)), this, SLOT(constraintChanged(int)));
-	connect(addConstraintPushButton, SIGNAL(clicked()), this, SLOT(addConstraint()));
-	connect(closePushButton, SIGNAL(clicked()), this, SLOT(close()));
-	connect(removeConstraintPushButton, SIGNAL(clicked()), this, SLOT(removeConstraint()));
-	connect(modifyConstraintPushButton, SIGNAL(clicked()), this, SLOT(modifyConstraint()));
-	connect(constraintsListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(modifyConstraint()));
-
-	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
-		
 	this->filterChanged();
 }
 
@@ -55,7 +34,7 @@ ConstraintTeachersMaxBuildingChangesPerWeekForm::~ConstraintTeachersMaxBuildingC
 	saveFETDialogGeometry(this);
 }
 
-bool ConstraintTeachersMaxBuildingChangesPerWeekForm::filterOk(SpaceConstraint* ctr)
+bool ConstraintTeachersMaxBuildingChangesPerWeekForm::filterOk(const SpaceConstraint* ctr) const
 {
 	if(ctr->type==CONSTRAINT_TEACHERS_MAX_BUILDING_CHANGES_PER_WEEK){
 		return true;
@@ -64,111 +43,12 @@ bool ConstraintTeachersMaxBuildingChangesPerWeekForm::filterOk(SpaceConstraint* 
 		return false;
 }
 
-void ConstraintTeachersMaxBuildingChangesPerWeekForm::filterChanged()
+QDialog * ConstraintTeachersMaxBuildingChangesPerWeekForm::createAddDialog()
 {
-	this->visibleConstraintsList.clear();
-	constraintsListWidget->clear();
-	for(int i=0; i<gt.rules.spaceConstraintsList.size(); i++){
-		SpaceConstraint* ctr=gt.rules.spaceConstraintsList[i];
-		if(filterOk(ctr)){
-			visibleConstraintsList.append(ctr);
-			constraintsListWidget->addItem(ctr->getDescription(gt.rules));
-		}
-	}
-
-	if(constraintsListWidget->count()>0)
-		constraintsListWidget->setCurrentRow(0);
-	else
-		constraintChanged(-1);
+	return new AddConstraintTeachersMaxBuildingChangesPerWeekForm(this);
 }
 
-void ConstraintTeachersMaxBuildingChangesPerWeekForm::constraintChanged(int index)
+QDialog * ConstraintTeachersMaxBuildingChangesPerWeekForm::createModifyDialog(SpaceConstraint *ctr)
 {
-	if(index<0){
-		currentConstraintTextEdit->setPlainText("");
-		return;
-	}
-	assert(index<this->visibleConstraintsList.size());
-	SpaceConstraint* ctr=this->visibleConstraintsList.at(index);
-	assert(ctr!=NULL);
-	currentConstraintTextEdit->setPlainText(ctr->getDetailedDescription(gt.rules));
-}
-
-void ConstraintTeachersMaxBuildingChangesPerWeekForm::addConstraint()
-{
-	AddConstraintTeachersMaxBuildingChangesPerWeekForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-
-	filterChanged();
-	
-	constraintsListWidget->setCurrentRow(constraintsListWidget->count()-1);
-}
-
-void ConstraintTeachersMaxBuildingChangesPerWeekForm::modifyConstraint()
-{
-	int valv=constraintsListWidget->verticalScrollBar()->value();
-	int valh=constraintsListWidget->horizontalScrollBar()->value();
-
-	int i=constraintsListWidget->currentRow();
-	if(i<0){
-		QMessageBox::information(this, tr("FET information"), tr("Invalid selected constraint"));
-		return;
-	}
-	SpaceConstraint* ctr=this->visibleConstraintsList.at(i);
-
-	ModifyConstraintTeachersMaxBuildingChangesPerWeekForm form(this, (ConstraintTeachersMaxBuildingChangesPerWeek*)ctr);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-
-	filterChanged();
-	
-	constraintsListWidget->verticalScrollBar()->setValue(valv);
-	constraintsListWidget->horizontalScrollBar()->setValue(valh);
-
-	if(i>=constraintsListWidget->count())
-		i=constraintsListWidget->count()-1;
-
-	if(i>=0)
-		constraintsListWidget->setCurrentRow(i);
-	else
-		this->constraintChanged(-1);
-}
-
-void ConstraintTeachersMaxBuildingChangesPerWeekForm::removeConstraint()
-{
-	int i=constraintsListWidget->currentRow();
-	if(i<0){
-		QMessageBox::information(this, tr("FET information"), tr("Invalid selected constraint"));
-		return;
-	}
-	SpaceConstraint* ctr=this->visibleConstraintsList.at(i);
-	QString s;
-	s=tr("Remove constraint?");
-	s+="\n\n";
-	s+=ctr->getDetailedDescription(gt.rules);
-	
-	QListWidgetItem* item;
-
-	switch( LongTextMessageBox::confirmation( this, tr("FET confirmation"),
-		s, tr("Yes"), tr("No"), 0, 0, 1 ) ){
-	case 0: // The user clicked the OK button or pressed Enter
-		gt.rules.removeSpaceConstraint(ctr);
-		
-		visibleConstraintsList.removeAt(i);
-		constraintsListWidget->setCurrentRow(-1);
-		item=constraintsListWidget->takeItem(i);
-		delete item;
-		
-		break;
-	case 1: // The user clicked the Cancel button or pressed Escape
-		break;
-	}
-	
-	if(i>=constraintsListWidget->count())
-		i=constraintsListWidget->count()-1;
-	if(i>=0)
-		constraintsListWidget->setCurrentRow(i);
-	else
-		this->constraintChanged(-1);
+	return new ModifyConstraintTeachersMaxBuildingChangesPerWeekForm(this, (ConstraintTeachersMaxBuildingChangesPerWeek*)ctr);
 }

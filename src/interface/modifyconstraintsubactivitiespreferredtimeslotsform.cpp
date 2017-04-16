@@ -26,7 +26,7 @@ ModifyConstraintSubactivitiesPreferredTimeSlotsForm::ModifyConstraintSubactiviti
 
 	okPushButton->setDefault(true);
 
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
 	connect(setAllAllowedPushButton, SIGNAL(clicked()), this, SLOT(setAllSlotsAllowed()));
 	connect(setAllNotAllowedPushButton, SIGNAL(clicked()), this, SLOT(setAllSlotsNotAllowed()));
@@ -46,7 +46,7 @@ ModifyConstraintSubactivitiesPreferredTimeSlotsForm::ModifyConstraintSubactiviti
 	this->_ctr=ctr;
 
 	updateTeachersComboBox();
-	updateStudentsComboBox(parent);
+	updateStudentsComboBox();
 	updateSubjectsComboBox();
 	updateActivityTagsComboBox();
 	
@@ -87,92 +87,53 @@ void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::setAllSlotsNotAllowed(
 }
 
 void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::updateTeachersComboBox(){
-	int i=0, j=-1;
 	teachersComboBox->clear();
 	teachersComboBox->addItem("");
-	if(this->_ctr->p_teacherName=="")
-		j=i;
-	i++;
-	for(int k=0; k<gt.rules.teachersList.size(); k++){
-		Teacher* t=gt.rules.teachersList[k];
+	for(int i=0; i<gt.rules.teachersList.size(); i++){
+		Teacher* t=gt.rules.teachersList[i];
 		teachersComboBox->addItem(t->name);
-		if(t->name==this->_ctr->p_teacherName)
-			j=i;
-		i++;
 	}
-	assert(j>=0);
-	teachersComboBox->setCurrentIndex(j);
+	teachersComboBox->setCurrentText(this->_ctr->p_teacherName);
 }
 
-void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::updateStudentsComboBox(QWidget* parent){
-	int i=0, j=-1;
+void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::updateStudentsComboBox(){
 	studentsComboBox->clear();
 	studentsComboBox->addItem("");
-	if(this->_ctr->p_studentsName=="")
-		j=i;
-	i++;
-	for(int m=0; m<gt.rules.yearsList.size(); m++){
-		StudentsYear* sty=gt.rules.yearsList[m];
+	for(int i=0; i<gt.rules.yearsList.size(); i++){
+		StudentsYear* sty=gt.rules.yearsList[i];
 		studentsComboBox->addItem(sty->name);
-		if(sty->name==this->_ctr->p_studentsName)
-			j=i;
-		i++;
-		for(int n=0; n<sty->groupsList.size(); n++){
-			StudentsGroup* stg=sty->groupsList[n];
+		for(int j=0; j<sty->groupsList.size(); j++){
+			StudentsGroup* stg=sty->groupsList[j];
 			studentsComboBox->addItem(stg->name);
-			if(stg->name==this->_ctr->p_studentsName)
-				j=i;
-			i++;
-			if(SHOW_SUBGROUPS_IN_COMBO_BOXES) for(int p=0; p<stg->subgroupsList.size(); p++){
-				StudentsSubgroup* sts=stg->subgroupsList[p];
+			if(SHOW_SUBGROUPS_IN_COMBO_BOXES) for(int k=0; k<stg->subgroupsList.size(); k++){
+				StudentsSubgroup* sts=stg->subgroupsList[k];
 				studentsComboBox->addItem(sts->name);
-				if(sts->name==this->_ctr->p_studentsName)
-					j=i;
-				i++;
 			}
 		}
 	}
-	if(j<0)
-		showWarningForInvisibleSubgroupConstraint(parent, this->_ctr->p_studentsName);
-	else
-		assert(j>=0);
-	studentsComboBox->setCurrentIndex(j);
+	if (studentsComboBox->findText(this->_ctr->p_studentsName) < 0)
+		showWarningForInvisibleSubgroupConstraint(this, this->_ctr->p_studentsName);
+	studentsComboBox->setCurrentText(this->_ctr->p_studentsName);
 }
 
 void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::updateSubjectsComboBox(){
-	int i=0, j=-1;
 	subjectsComboBox->clear();
 	subjectsComboBox->addItem("");
-	if(this->_ctr->p_subjectName=="")
-		j=i;
-	i++;
-	for(int k=0; k<gt.rules.subjectsList.size(); k++){
-		Subject* s=gt.rules.subjectsList[k];
+	for(int i=0; i<gt.rules.subjectsList.size(); i++){
+		Subject* s=gt.rules.subjectsList[i];
 		subjectsComboBox->addItem(s->name);
-		if(s->name==this->_ctr->p_subjectName)
-			j=i;
-		i++;
 	}
-	assert(j>=0);
-	subjectsComboBox->setCurrentIndex(j);
+	subjectsComboBox->setCurrentText(this->_ctr->p_subjectName);
 }
 
 void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::updateActivityTagsComboBox(){
-	int i=0, j=-1;
 	activityTagsComboBox->clear();
 	activityTagsComboBox->addItem("");
-	if(this->_ctr->p_activityTagName=="")
-		j=i;
-	i++;
-	for(int k=0; k<gt.rules.activityTagsList.size(); k++){
-		ActivityTag* s=gt.rules.activityTagsList[k];
+	for(int i=0; i<gt.rules.activityTagsList.size(); i++){
+		ActivityTag* s=gt.rules.activityTagsList[i];
 		activityTagsComboBox->addItem(s->name);
-		if(s->name==this->_ctr->p_activityTagName)
-			j=i;
-		i++;
 	}
-	assert(j>=0);
-	activityTagsComboBox->setCurrentIndex(j);
+	activityTagsComboBox->setCurrentText(this->_ctr->p_activityTagName);
 }
 
 void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::ok()
@@ -244,10 +205,5 @@ void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 	
-	this->close();
-}
-
-void ModifyConstraintSubactivitiesPreferredTimeSlotsForm::cancel()
-{
 	this->close();
 }

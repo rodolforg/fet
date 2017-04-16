@@ -34,9 +34,7 @@ public:
 	void updateMaxDaysSpinBox();
 
 public slots:
-	void constraintChanged();
 	void ok();
-	void cancel();
 };
 
 #endif

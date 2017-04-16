@@ -36,7 +36,7 @@ ModifyConstraintActivitiesSameRoomIfConsecutiveForm::ModifyConstraintActivitiesS
 	selectedActivitiesListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
 	
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 	connect(allActivitiesListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(addActivity()));
 	connect(addAllActivitiesPushButton, SIGNAL(clicked()), this, SLOT(addAllActivities()));
 	connect(selectedActivitiesListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(removeActivity()));
@@ -151,11 +151,6 @@ void ModifyConstraintActivitiesSameRoomIfConsecutiveForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 	
-	this->close();
-}
-
-void ModifyConstraintActivitiesSameRoomIfConsecutiveForm::cancel()
-{
 	this->close();
 }
 

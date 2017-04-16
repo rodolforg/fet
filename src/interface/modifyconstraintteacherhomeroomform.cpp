@@ -26,7 +26,7 @@ ModifyConstraintTeacherHomeRoomForm::ModifyConstraintTeacherHomeRoomForm(QWidget
 
 	okPushButton->setDefault(true);
 
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
 
 	centerWidgetOnScreen(this);
@@ -53,15 +53,11 @@ ModifyConstraintTeacherHomeRoomForm::~ModifyConstraintTeacherHomeRoomForm()
 
 void ModifyConstraintTeacherHomeRoomForm::updateTeachersComboBox(){
 	teachersComboBox->clear();
-	int i=0, j=-1;
-	for(int k=0; k<gt.rules.teachersList.size(); k++, i++){
-		Teacher* tch=gt.rules.teachersList[k];
-		teachersComboBox->addItem(tch->name);
-		if(tch->name==this->_ctr->teacherName)
-			j=i;
+	for(int i=0; i<gt.rules.teachersList.size(); i++){
+		Teacher* t=gt.rules.teachersList[i];
+		teachersComboBox->addItem(t->name);
 	}
-	assert(j>=0);
-	teachersComboBox->setCurrentIndex(j);
+	teachersComboBox->setCurrentText(this->_ctr->teacherName);
 }
 
 void ModifyConstraintTeacherHomeRoomForm::updateRoomsComboBox()
@@ -77,11 +73,6 @@ void ModifyConstraintTeacherHomeRoomForm::updateRoomsComboBox()
 	}
 	assert(j>=0);
 	roomsComboBox->setCurrentIndex(j);
-}
-
-void ModifyConstraintTeacherHomeRoomForm::cancel()
-{
-	this->close();
 }
 
 void ModifyConstraintTeacherHomeRoomForm::ok()

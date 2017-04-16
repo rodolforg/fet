@@ -29,7 +29,7 @@ ModifyConstraintStudentsMaxHoursContinuouslyForm::ModifyConstraintStudentsMaxHou
 	okPushButton->setDefault(true);
 
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
@@ -46,10 +46,6 @@ ModifyConstraintStudentsMaxHoursContinuouslyForm::ModifyConstraintStudentsMaxHou
 ModifyConstraintStudentsMaxHoursContinuouslyForm::~ModifyConstraintStudentsMaxHoursContinuouslyForm()
 {
 	saveFETDialogGeometry(this);
-}
-
-void ModifyConstraintStudentsMaxHoursContinuouslyForm::constraintChanged()
-{
 }
 
 void ModifyConstraintStudentsMaxHoursContinuouslyForm::ok()
@@ -69,10 +65,5 @@ void ModifyConstraintStudentsMaxHoursContinuouslyForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 	
-	this->close();
-}
-
-void ModifyConstraintStudentsMaxHoursContinuouslyForm::cancel()
-{
 	this->close();
 }

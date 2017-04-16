@@ -17,90 +17,33 @@
 
 #include <QMessageBox>
 
-#include "longtextmessagebox.h"
-
 #include "constraintmindaysbetweenactivitiesform.h"
 #include "addconstraintmindaysbetweenactivitiesform.h"
 #include "modifyconstraintmindaysbetweenactivitiesform.h"
 
 #include "changemindaysselectivelyform.h"
 
-#include <QListWidget>
-#include <QScrollBar>
-#include <QAbstractItemView>
+#include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
-ConstraintMinDaysBetweenActivitiesForm::ConstraintMinDaysBetweenActivitiesForm(QWidget* parent): QDialog(parent)
+ConstraintMinDaysBetweenActivitiesForm::ConstraintMinDaysBetweenActivitiesForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
-	setupUi(this);
+	//: This is the title of the dialog to see the list of all constraints of this type
+	setWindowTitle(QCoreApplication::translate("ConstraintMinDaysBetweenActivitiesForm_template", "Constraints min days between activities"));
 
-	currentConstraintTextEdit->setReadOnly(true);
-	
-	modifyConstraintPushButton->setDefault(true);
-
-	constraintsListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
-
-	connect(constraintsListWidget, SIGNAL(currentRowChanged(int)), this, SLOT(constraintChanged(int)));
-	connect(addConstraintPushButton, SIGNAL(clicked()), this, SLOT(addConstraint()));
-	connect(closePushButton, SIGNAL(clicked()), this, SLOT(close()));
-	connect(removeConstraintPushButton, SIGNAL(clicked()), this, SLOT(removeConstraint()));
-	connect(modifyConstraintPushButton, SIGNAL(clicked()), this, SLOT(modifyConstraint()));
-	connect(constraintsListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(modifyConstraint()));
-	connect(teachersComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
-	connect(studentsComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
-	connect(subjectsComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
-	connect(activityTagsComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
+	QString label = QCoreApplication::translate("ConstraintMinDaysBetweenActivitiesForm_template", "Modify multiple constraints at once");
+	QPushButton *changeSelectivelyPushButton = new QPushButton(label);
+	buttons2HorizontalLayout->addWidget(changeSelectivelyPushButton);
 	connect(changeSelectivelyPushButton, SIGNAL(clicked()), this, SLOT(changeSelectively()));
 
-	centerWidgetOnScreen(this);
+	TeacherStudentSetSubjectActivityTag_FilterWidget *filterWidget = new TeacherStudentSetSubjectActivityTag_FilterWidget(gt.rules);
+	filterWidget->setTeachersVisible(true);
+	filterWidget->setStudentSetsVisible(true);
+	filterWidget->setSubjectsVisible(true);
+	filterWidget->setActivityTagsVisible(true);
+	setFilterWidget(filterWidget);
+	connect(filterWidget, &TeacherStudentSetSubjectActivityTag_FilterWidget::FilterChanged, this, &ConstraintMinDaysBetweenActivitiesForm::filterChanged);
+
 	restoreFETDialogGeometry(this);
-
-	QSize tmp1=teachersComboBox->minimumSizeHint();
-	Q_UNUSED(tmp1);
-	QSize tmp2=studentsComboBox->minimumSizeHint();
-	Q_UNUSED(tmp2);
-	QSize tmp3=subjectsComboBox->minimumSizeHint();
-	Q_UNUSED(tmp3);
-	QSize tmp4=activityTagsComboBox->minimumSizeHint();
-	Q_UNUSED(tmp4);
-	
-/////////////
-	teachersComboBox->addItem("");
-	for(int i=0; i<gt.rules.teachersList.size(); i++){
-		Teacher* tch=gt.rules.teachersList[i];
-		teachersComboBox->addItem(tch->name);
-	}
-	teachersComboBox->setCurrentIndex(0);
-
-	subjectsComboBox->addItem("");
-	for(int i=0; i<gt.rules.subjectsList.size(); i++){
-		Subject* sb=gt.rules.subjectsList[i];
-		subjectsComboBox->addItem(sb->name);
-	}
-	subjectsComboBox->setCurrentIndex(0);
-
-	activityTagsComboBox->addItem("");
-	for(int i=0; i<gt.rules.activityTagsList.size(); i++){
-		ActivityTag* st=gt.rules.activityTagsList[i];
-		activityTagsComboBox->addItem(st->name);
-	}
-	activityTagsComboBox->setCurrentIndex(0);
-
-	studentsComboBox->addItem("");
-	for(int i=0; i<gt.rules.yearsList.size(); i++){
-		StudentsYear* sty=gt.rules.yearsList[i];
-		studentsComboBox->addItem(sty->name);
-		for(int j=0; j<sty->groupsList.size(); j++){
-			StudentsGroup* stg=sty->groupsList[j];
-			studentsComboBox->addItem(stg->name);
-			if(SHOW_SUBGROUPS_IN_COMBO_BOXES) for(int k=0; k<stg->subgroupsList.size(); k++){
-				StudentsSubgroup* sts=stg->subgroupsList[k];
-				studentsComboBox->addItem(sts->name);
-			}
-		}
-	}
-	studentsComboBox->setCurrentIndex(0);
-///////////////
-
 	this->filterChanged();
 }
 
@@ -109,17 +52,19 @@ ConstraintMinDaysBetweenActivitiesForm::~ConstraintMinDaysBetweenActivitiesForm(
 	saveFETDialogGeometry(this);
 }
 
-bool ConstraintMinDaysBetweenActivitiesForm::filterOk(TimeConstraint* ctr)
+bool ConstraintMinDaysBetweenActivitiesForm::filterOk(const TimeConstraint* ctr) const
 {
 	if(ctr->type!=CONSTRAINT_MIN_DAYS_BETWEEN_ACTIVITIES)
 		return false;
 		
 	ConstraintMinDaysBetweenActivities* c=(ConstraintMinDaysBetweenActivities*) ctr;
-	
-	QString tn=teachersComboBox->currentText();
-	QString sbn=subjectsComboBox->currentText();
-	QString sbtn=activityTagsComboBox->currentText();
-	QString stn=studentsComboBox->currentText();
+
+	TeacherStudentSetSubjectActivityTag_FilterWidget *filter_widget = static_cast<TeacherStudentSetSubjectActivityTag_FilterWidget*>(getFilterWidget());
+
+	QString tn=filter_widget->teacher();
+	QString sbn=filter_widget->subject();
+	QString sbtn=filter_widget->activityTag();
+	QString stn=filter_widget->studentsSet();
 	
 	if(tn=="" && sbn=="" && sbtn=="" && stn=="")
 		return true;
@@ -182,114 +127,14 @@ bool ConstraintMinDaysBetweenActivitiesForm::filterOk(TimeConstraint* ctr)
 		return false;
 }
 
-void ConstraintMinDaysBetweenActivitiesForm::filterChanged()
+QDialog * ConstraintMinDaysBetweenActivitiesForm::createAddDialog()
 {
-	this->visibleConstraintsList.clear();
-	constraintsListWidget->clear();
-	for(int i=0; i<gt.rules.timeConstraintsList.size(); i++){
-		TimeConstraint* ctr=gt.rules.timeConstraintsList[i];
-		if(filterOk(ctr)){
-			visibleConstraintsList.append(ctr);
-			constraintsListWidget->addItem(ctr->getDescription(gt.rules));
-		}
-	}
-	
-	if(constraintsListWidget->count()>0)
-		constraintsListWidget->setCurrentRow(0);
-	else
-		currentConstraintTextEdit->setPlainText(QString(""));
+	return new AddConstraintMinDaysBetweenActivitiesForm(this);
 }
 
-void ConstraintMinDaysBetweenActivitiesForm::constraintChanged(int index)
+QDialog * ConstraintMinDaysBetweenActivitiesForm::createModifyDialog(TimeConstraint *ctr)
 {
-	if(index<0){
-		currentConstraintTextEdit->setPlainText("");
-	
-		return;
-	}
-	assert(index<this->visibleConstraintsList.size());
-	TimeConstraint* ctr=this->visibleConstraintsList.at(index);
-	assert(ctr!=NULL);
-	currentConstraintTextEdit->setPlainText(ctr->getDetailedDescription(gt.rules));
-}
-
-void ConstraintMinDaysBetweenActivitiesForm::addConstraint()
-{
-	AddConstraintMinDaysBetweenActivitiesForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-
-	filterChanged();
-	
-	constraintsListWidget->setCurrentRow(constraintsListWidget->count()-1);
-}
-
-void ConstraintMinDaysBetweenActivitiesForm::modifyConstraint()
-{
-	int valv=constraintsListWidget->verticalScrollBar()->value();
-	int valh=constraintsListWidget->horizontalScrollBar()->value();
-
-	int i=constraintsListWidget->currentRow();
-	if(i<0){
-		QMessageBox::information(this, tr("FET information"), tr("Invalid selected constraint"));
-		return;
-	}
-	TimeConstraint* ctr=this->visibleConstraintsList.at(i);
-
-	ModifyConstraintMinDaysBetweenActivitiesForm form(this, (ConstraintMinDaysBetweenActivities*)ctr);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-
-	filterChanged();
-
-	constraintsListWidget->verticalScrollBar()->setValue(valv);
-	constraintsListWidget->horizontalScrollBar()->setValue(valh);
-	
-	if(i>=constraintsListWidget->count())
-		i=constraintsListWidget->count()-1;
-
-	if(i>=0)
-		constraintsListWidget->setCurrentRow(i);
-	else
-		this->constraintChanged(-1);
-}
-
-void ConstraintMinDaysBetweenActivitiesForm::removeConstraint()
-{
-	int i=constraintsListWidget->currentRow();
-	if(i<0){
-		QMessageBox::information(this, tr("FET information"), tr("Invalid selected constraint"));
-		return;
-	}
-	TimeConstraint* ctr=this->visibleConstraintsList.at(i);
-	QString s;
-	s=tr("Remove constraint?");
-	s+="\n\n";
-	s+=ctr->getDetailedDescription(gt.rules);
-	
-	QListWidgetItem* item;
-
-	switch( LongTextMessageBox::confirmation( this, tr("FET confirmation"),
-		s, tr("Yes"), tr("No"), 0, 0, 1 ) ){
-	case 0: // The user clicked the OK button or pressed Enter
-		gt.rules.removeTimeConstraint(ctr);
-
-		visibleConstraintsList.removeAt(i);
-		constraintsListWidget->setCurrentRow(-1);
-		item=constraintsListWidget->takeItem(i);
-		delete item;
-
-		break;
-	case 1: // The user clicked the Cancel button or pressed Escape
-		break;
-	}
-	
-	if(i>=constraintsListWidget->count())
-		i=constraintsListWidget->count()-1;
-	if(i>=0)
-		constraintsListWidget->setCurrentRow(i);
-	else
-		this->constraintChanged(-1);
+	return new ModifyConstraintMinDaysBetweenActivitiesForm(this, (ConstraintMinDaysBetweenActivities*)ctr);
 }
 
 void ConstraintMinDaysBetweenActivitiesForm::changeSelectively()

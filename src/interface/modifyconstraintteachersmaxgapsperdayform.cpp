@@ -27,7 +27,7 @@ ModifyConstraintTeachersMaxGapsPerDayForm::ModifyConstraintTeachersMaxGapsPerDay
 	okPushButton->setDefault(true);
 
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
@@ -44,10 +44,6 @@ ModifyConstraintTeachersMaxGapsPerDayForm::ModifyConstraintTeachersMaxGapsPerDay
 ModifyConstraintTeachersMaxGapsPerDayForm::~ModifyConstraintTeachersMaxGapsPerDayForm()
 {
 	saveFETDialogGeometry(this);
-}
-
-void ModifyConstraintTeachersMaxGapsPerDayForm::constraintChanged()
-{
 }
 
 void ModifyConstraintTeachersMaxGapsPerDayForm::ok()
@@ -73,10 +69,5 @@ void ModifyConstraintTeachersMaxGapsPerDayForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 	
-	this->close();
-}
-
-void ModifyConstraintTeachersMaxGapsPerDayForm::cancel()
-{
 	this->close();
 }

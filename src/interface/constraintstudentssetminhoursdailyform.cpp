@@ -15,60 +15,31 @@
  *                                                                         *
  ***************************************************************************/
 
-#include <QMessageBox>
-
-#include "longtextmessagebox.h"
-
 #include "constraintstudentssetminhoursdailyform.h"
 #include "addconstraintstudentssetminhoursdailyform.h"
 #include "modifyconstraintstudentssetminhoursdailyform.h"
 
 #include "helponstudentsminhoursdaily.h"
 
-#include <QListWidget>
-#include <QScrollBar>
-#include <QAbstractItemView>
+#include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
-ConstraintStudentsSetMinHoursDailyForm::ConstraintStudentsSetMinHoursDailyForm(QWidget* parent): QDialog(parent)
+ConstraintStudentsSetMinHoursDailyForm::ConstraintStudentsSetMinHoursDailyForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
-	setupUi(this);
+	//: This is the title of the dialog to see the list of all constraints of this type
+	setWindowTitle(QCoreApplication::translate("ConstraintStudentsSetMinHoursDailyForm_template", "Constraints students set min hours daily"));
 
-	currentConstraintTextEdit->setReadOnly(true);
-	
-	modifyConstraintPushButton->setDefault(true);
+	QString s = QCoreApplication::translate("ConstraintStudentsSetMinHoursDailyForm_template", "IMPORTANT: allow empty days for students is a nonstandard option. Only select it if your institution permits that and if a timetable with empty days for students exists. Otherwise do not select it, for a good performance of generation. Press Help button for more information.");
+	setInstructionText(s);
 
-	constraintsListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
+	s = HelpOnStudentsMinHoursDaily::getHelpText();
+	setHelpText(s);
 
-	connect(constraintsListWidget, SIGNAL(currentRowChanged(int)), this, SLOT(constraintChanged(int)));
-	connect(addConstraintPushButton, SIGNAL(clicked()), this, SLOT(addConstraint()));
-	connect(closePushButton, SIGNAL(clicked()), this, SLOT(close()));
-	connect(removeConstraintPushButton, SIGNAL(clicked()), this, SLOT(removeConstraint()));
-	connect(modifyConstraintPushButton, SIGNAL(clicked()), this, SLOT(modifyConstraint()));
-	connect(studentsComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
-	connect(constraintsListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(modifyConstraint()));
-	connect(helpPushButton, SIGNAL(clicked()), this, SLOT(help()));
-	
-	centerWidgetOnScreen(this);
+	TeacherStudentSetSubjectActivityTag_FilterWidget *filterWidget = new TeacherStudentSetSubjectActivityTag_FilterWidget(gt.rules);
+	filterWidget->setStudentSetsVisible(true);
+	setFilterWidget(filterWidget);
+	connect(filterWidget, &TeacherStudentSetSubjectActivityTag_FilterWidget::FilterChanged, this, &ConstraintStudentsSetMinHoursDailyForm::filterChanged);
+
 	restoreFETDialogGeometry(this);
-	
-	QSize tmp2=studentsComboBox->minimumSizeHint();
-	Q_UNUSED(tmp2);
-
-	studentsComboBox->addItem("");
-
-	for(int i=0; i<gt.rules.yearsList.size(); i++){
-		StudentsYear* sty=gt.rules.yearsList[i];
-		studentsComboBox->addItem(sty->name);
-		for(int j=0; j<sty->groupsList.size(); j++){
-			StudentsGroup* stg=sty->groupsList[j];
-			studentsComboBox->addItem(stg->name);
-			if(SHOW_SUBGROUPS_IN_COMBO_BOXES) for(int k=0; k<stg->subgroupsList.size(); k++){
-				StudentsSubgroup* sts=stg->subgroupsList[k];
-				studentsComboBox->addItem(sts->name);
-			}
-		}
-	}
-
 	this->filterChanged();
 }
 
@@ -77,126 +48,24 @@ ConstraintStudentsSetMinHoursDailyForm::~ConstraintStudentsSetMinHoursDailyForm(
 	saveFETDialogGeometry(this);
 }
 
-bool ConstraintStudentsSetMinHoursDailyForm::filterOk(TimeConstraint* ctr)
+bool ConstraintStudentsSetMinHoursDailyForm::filterOk(const TimeConstraint* ctr) const
 {
 	if(ctr->type==CONSTRAINT_STUDENTS_SET_MIN_HOURS_DAILY){
 		ConstraintStudentsSetMinHoursDaily* c=(ConstraintStudentsSetMinHoursDaily*) ctr;
-		return c->students==studentsComboBox->currentText() || studentsComboBox->currentText()=="";
+		TeacherStudentSetSubjectActivityTag_FilterWidget *filter_widget = static_cast<TeacherStudentSetSubjectActivityTag_FilterWidget*>(getFilterWidget());
+		QString studentsName = filter_widget->studentsSet();
+		return c->students==studentsName || studentsName.isEmpty();
 	}
 	else
 		return false;
 }
 
-void ConstraintStudentsSetMinHoursDailyForm::filterChanged()
+QDialog * ConstraintStudentsSetMinHoursDailyForm::createAddDialog()
 {
-	this->visibleConstraintsList.clear();
-	constraintsListWidget->clear();
-	for(int i=0; i<gt.rules.timeConstraintsList.size(); i++){
-		TimeConstraint* ctr=gt.rules.timeConstraintsList[i];
-		if(filterOk(ctr)){
-			visibleConstraintsList.append(ctr);
-			constraintsListWidget->addItem(ctr->getDescription(gt.rules));
-		}
-	}
-
-	if(constraintsListWidget->count()>0)
-		constraintsListWidget->setCurrentRow(0);
-	else
-		this->constraintChanged(-1);
+	return new AddConstraintStudentsSetMinHoursDailyForm(this);
 }
 
-void ConstraintStudentsSetMinHoursDailyForm::constraintChanged(int index)
+QDialog * ConstraintStudentsSetMinHoursDailyForm::createModifyDialog(TimeConstraint *ctr)
 {
-	if(index<0){
-		currentConstraintTextEdit->setPlainText("");
-		return;
-	}
-	assert(index<this->visibleConstraintsList.size());
-	TimeConstraint* ctr=this->visibleConstraintsList.at(index);
-	assert(ctr!=NULL);
-	currentConstraintTextEdit->setPlainText(ctr->getDetailedDescription(gt.rules));
-}
-
-void ConstraintStudentsSetMinHoursDailyForm::addConstraint()
-{
-	AddConstraintStudentsSetMinHoursDailyForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-
-	filterChanged();
-	
-	constraintsListWidget->setCurrentRow(constraintsListWidget->count()-1);
-}
-
-void ConstraintStudentsSetMinHoursDailyForm::modifyConstraint()
-{
-	int valv=constraintsListWidget->verticalScrollBar()->value();
-	int valh=constraintsListWidget->horizontalScrollBar()->value();
-
-	int i=constraintsListWidget->currentRow();
-	if(i<0){
-		QMessageBox::information(this, tr("FET information"), tr("Invalid selected constraint"));
-		return;
-	}
-	TimeConstraint* ctr=this->visibleConstraintsList.at(i);
-
-	ModifyConstraintStudentsSetMinHoursDailyForm form(this, (ConstraintStudentsSetMinHoursDaily*)ctr);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-
-	filterChanged();
-	
-	constraintsListWidget->verticalScrollBar()->setValue(valv);
-	constraintsListWidget->horizontalScrollBar()->setValue(valh);
-
-	if(i>=constraintsListWidget->count())
-		i=constraintsListWidget->count()-1;
-
-	if(i>=0)
-		constraintsListWidget->setCurrentRow(i);
-	else
-		this->constraintChanged(-1);
-}
-
-void ConstraintStudentsSetMinHoursDailyForm::removeConstraint()
-{
-	int i=constraintsListWidget->currentRow();
-	if(i<0){
-		QMessageBox::information(this, tr("FET information"), tr("Invalid selected constraint"));
-		return;
-	}
-	TimeConstraint* ctr=this->visibleConstraintsList.at(i);
-	QString s;
-	s=tr("Remove constraint?");
-	s+="\n\n";
-	s+=ctr->getDetailedDescription(gt.rules);
-	
-	QListWidgetItem* item;
-
-	switch( LongTextMessageBox::confirmation( this, tr("FET confirmation"),
-		s, tr("Yes"), tr("No"), 0, 0, 1 ) ){
-	case 0: // The user clicked the OK button or pressed Enter
-		gt.rules.removeTimeConstraint(ctr);
-		
-		visibleConstraintsList.removeAt(i);
-		constraintsListWidget->setCurrentRow(-1);
-		item=constraintsListWidget->takeItem(i);
-		delete item;
-		
-		break;
-	case 1: // The user clicked the Cancel button or pressed Escape
-		break;
-	}
-	
-	if(i>=constraintsListWidget->count())
-		i=constraintsListWidget->count()-1;
-	if(i>=0)
-		constraintsListWidget->setCurrentRow(i);
-	else
-		this->constraintChanged(-1);
-}
-
-void ConstraintStudentsSetMinHoursDailyForm::help()
-{
-	HelpOnStudentsMinHoursDaily::help(this);
+	return new ModifyConstraintStudentsSetMinHoursDailyForm(this, (ConstraintStudentsSetMinHoursDaily*)ctr);
 }

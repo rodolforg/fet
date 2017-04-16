@@ -18,28 +18,18 @@
 #ifndef CONSTRAINTTEACHERNOTAVAILABLETIMESFORM_H
 #define CONSTRAINTTEACHERNOTAVAILABLETIMESFORM_H
 
-#include "ui_constraintteachernotavailabletimesform_template.h"
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
+#include "timeconstraint_basedialog.h"
 
-class ConstraintTeacherNotAvailableTimesForm : public QDialog, Ui::ConstraintTeacherNotAvailableTimesForm_template  {
+class ConstraintTeacherNotAvailableTimesForm : public TimeConstraintBaseDialog  {
 	Q_OBJECT
 public:
-	TimeConstraintsList visibleConstraintsList;
-
 	ConstraintTeacherNotAvailableTimesForm(QWidget* parent);
 	~ConstraintTeacherNotAvailableTimesForm();
 
-	bool filterOk(TimeConstraint* ctr);
-
-public slots:
-	void constraintChanged(int index);
-	void addConstraint();
-	void modifyConstraint();
-	void removeConstraint();
-
-	void filterChanged();
+protected:
+	virtual QDialog *createAddDialog();
+	virtual QDialog *createModifyDialog(TimeConstraint *ctr);
+	virtual bool filterOk(const TimeConstraint *ctr) const;
 };
 
 #endif

@@ -27,7 +27,7 @@ ModifyConstraintTwoActivitiesOrderedForm::ModifyConstraintTwoActivitiesOrderedFo
 	okPushButton->setDefault(true);
 
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
@@ -45,8 +45,6 @@ ModifyConstraintTwoActivitiesOrderedForm::ModifyConstraintTwoActivitiesOrderedFo
 	weightLineEdit->setText(CustomFETString::number(ctr->weightPercentage));
 
 	updateActivitiesComboBox();
-
-	constraintChanged();
 }
 
 ModifyConstraintTwoActivitiesOrderedForm::~ModifyConstraintTwoActivitiesOrderedForm()
@@ -106,12 +104,6 @@ void ModifyConstraintTwoActivitiesOrderedForm::updateActivitiesComboBox(){
 	}
 	//assert(j>=0); only first time
 	secondActivitiesComboBox->setCurrentIndex(j);
-
-	constraintChanged();
-}
-
-void ModifyConstraintTwoActivitiesOrderedForm::constraintChanged()
-{
 }
 
 void ModifyConstraintTwoActivitiesOrderedForm::ok()
@@ -158,10 +150,5 @@ void ModifyConstraintTwoActivitiesOrderedForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 
-	this->close();
-}
-
-void ModifyConstraintTwoActivitiesOrderedForm::cancel()
-{
 	this->close();
 }

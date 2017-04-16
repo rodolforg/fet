@@ -26,7 +26,7 @@ ModifyConstraintStudentsSetHomeRoomForm::ModifyConstraintStudentsSetHomeRoomForm
 
 	okPushButton->setDefault(true);
 
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
 
 	centerWidgetOnScreen(this);
@@ -42,7 +42,7 @@ ModifyConstraintStudentsSetHomeRoomForm::ModifyConstraintStudentsSetHomeRoomForm
 	
 	weightLineEdit->setText(CustomFETString::number(ctr->weightPercentage));
 
-	updateStudentsComboBox(parent);
+	updateStudentsComboBox();
 	updateRoomsComboBox();
 }
 
@@ -51,35 +51,23 @@ ModifyConstraintStudentsSetHomeRoomForm::~ModifyConstraintStudentsSetHomeRoomFor
 	saveFETDialogGeometry(this);
 }
 
-void ModifyConstraintStudentsSetHomeRoomForm::updateStudentsComboBox(QWidget* parent){
-	int i=0, j=-1;
+void ModifyConstraintStudentsSetHomeRoomForm::updateStudentsComboBox(){
 	studentsComboBox->clear();
-	for(int m=0; m<gt.rules.yearsList.size(); m++){
-		StudentsYear* sty=gt.rules.yearsList[m];
+	for(int i=0; i<gt.rules.yearsList.size(); i++){
+		StudentsYear* sty=gt.rules.yearsList[i];
 		studentsComboBox->addItem(sty->name);
-		if(sty->name==this->_ctr->studentsName)
-			j=i;
-		i++;
-		for(int n=0; n<sty->groupsList.size(); n++){
-			StudentsGroup* stg=sty->groupsList[n];
+		for(int j=0; j<sty->groupsList.size(); j++){
+			StudentsGroup* stg=sty->groupsList[j];
 			studentsComboBox->addItem(stg->name);
-			if(stg->name==this->_ctr->studentsName)
-				j=i;
-			i++;
-			if(SHOW_SUBGROUPS_IN_COMBO_BOXES) for(int p=0; p<stg->subgroupsList.size(); p++){
-				StudentsSubgroup* sts=stg->subgroupsList[p];
+			if(SHOW_SUBGROUPS_IN_COMBO_BOXES) for(int k=0; k<stg->subgroupsList.size(); k++){
+				StudentsSubgroup* sts=stg->subgroupsList[k];
 				studentsComboBox->addItem(sts->name);
-				if(sts->name==this->_ctr->studentsName)
-					j=i;
-				i++;
 			}
 		}
 	}
-	if(j<0)
-		showWarningForInvisibleSubgroupConstraint(parent, this->_ctr->studentsName);
-	else
-		assert(j>=0);
-	studentsComboBox->setCurrentIndex(j);
+	if (studentsComboBox->findText(this->_ctr->studentsName) < 0)
+		showWarningForInvisibleSubgroupConstraint(this, this->_ctr->studentsName);
+	studentsComboBox->setCurrentText(this->_ctr->studentsName);
 }
 
 void ModifyConstraintStudentsSetHomeRoomForm::updateRoomsComboBox()
@@ -95,11 +83,6 @@ void ModifyConstraintStudentsSetHomeRoomForm::updateRoomsComboBox()
 	}
 	assert(j>=0);
 	roomsComboBox->setCurrentIndex(j);
-}
-
-void ModifyConstraintStudentsSetHomeRoomForm::cancel()
-{
-	this->close();
 }
 
 void ModifyConstraintStudentsSetHomeRoomForm::ok()

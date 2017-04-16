@@ -27,7 +27,7 @@ ModifyConstraintStudentsMaxSpanPerDayForm::ModifyConstraintStudentsMaxSpanPerDay
 	okPushButton->setDefault(true);
 
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
@@ -44,10 +44,6 @@ ModifyConstraintStudentsMaxSpanPerDayForm::ModifyConstraintStudentsMaxSpanPerDay
 ModifyConstraintStudentsMaxSpanPerDayForm::~ModifyConstraintStudentsMaxSpanPerDayForm()
 {
 	saveFETDialogGeometry(this);
-}
-
-void ModifyConstraintStudentsMaxSpanPerDayForm::constraintChanged()
-{
 }
 
 void ModifyConstraintStudentsMaxSpanPerDayForm::ok()
@@ -73,10 +69,5 @@ void ModifyConstraintStudentsMaxSpanPerDayForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 
-	this->close();
-}
-
-void ModifyConstraintStudentsMaxSpanPerDayForm::cancel()
-{
 	this->close();
 }

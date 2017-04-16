@@ -27,7 +27,7 @@ ModifyConstraintStudentsMinHoursDailyForm::ModifyConstraintStudentsMinHoursDaily
 	okPushButton->setDefault(true);
 
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
@@ -53,10 +53,6 @@ ModifyConstraintStudentsMinHoursDailyForm::ModifyConstraintStudentsMinHoursDaily
 ModifyConstraintStudentsMinHoursDailyForm::~ModifyConstraintStudentsMinHoursDailyForm()
 {
 	saveFETDialogGeometry(this);
-}
-
-void ModifyConstraintStudentsMinHoursDailyForm::constraintChanged()
-{
 }
 
 void ModifyConstraintStudentsMinHoursDailyForm::ok()
@@ -93,11 +89,6 @@ void ModifyConstraintStudentsMinHoursDailyForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 	
-	this->close();
-}
-
-void ModifyConstraintStudentsMinHoursDailyForm::cancel()
-{
 	this->close();
 }
 

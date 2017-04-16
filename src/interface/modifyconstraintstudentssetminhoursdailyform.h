@@ -31,12 +31,10 @@ public:
 	ModifyConstraintStudentsSetMinHoursDailyForm(QWidget* parent, ConstraintStudentsSetMinHoursDaily* ctr);
 	~ModifyConstraintStudentsSetMinHoursDailyForm();
 
-	void updateStudentsComboBox(QWidget* parent);
+	void updateStudentsComboBox();
 
 public slots:
-	void constraintChanged();
 	void ok();
-	void cancel();
 
 	void allowEmptyDaysCheckBoxToggled();
 };

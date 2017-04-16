@@ -18,30 +18,21 @@
 #ifndef CONSTRAINTSTUDENTSACTIVITYTAGMAXHOURSDAILYFORM_H
 #define CONSTRAINTSTUDENTSACTIVITYTAGMAXHOURSDAILYFORM_H
 
-#include "ui_constraintstudentsactivitytagmaxhoursdailyform_template.h"
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
+#include "timeconstraint_basedialog.h"
 
-class ConstraintStudentsActivityTagMaxHoursDailyForm : public QDialog, Ui::ConstraintStudentsActivityTagMaxHoursDailyForm_template  {
+class ConstraintStudentsActivityTagMaxHoursDailyForm : public TimeConstraintBaseDialog  {
 	Q_OBJECT
 public:
-	TimeConstraintsList visibleConstraintsList;
-
 	ConstraintStudentsActivityTagMaxHoursDailyForm(QWidget* parent);
 	~ConstraintStudentsActivityTagMaxHoursDailyForm();
 
-	bool filterOk(TimeConstraint* ctr);
 
-public slots:
-	void constraintChanged(int index);
-	void addConstraint();
-	void modifyConstraint();
-	void removeConstraint();
-	
-	void help();
+protected:
+	virtual bool filterOk(const TimeConstraint* ctr) const;
+	virtual QDialog *createAddDialog();
+	virtual QDialog *createModifyDialog(TimeConstraint *ctr);
 
-	void filterChanged();
+	virtual void setHelp();
 };
 
 #endif

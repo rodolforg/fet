@@ -32,9 +32,7 @@ public:
 	~ModifyConstraintStudentsMinHoursDailyForm();
 
 public slots:
-	void constraintChanged();
 	void ok();
-	void cancel();
 
 	void allowEmptyDaysCheckBoxToggled();
 };

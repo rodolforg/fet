@@ -27,7 +27,7 @@ ModifyConstraintTeacherNotAvailableTimesForm::ModifyConstraintTeacherNotAvailabl
 	okPushButton->setDefault(true);
 
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 	connect(setAllAvailablePushButton, SIGNAL(clicked()), this, SLOT(setAllAvailable()));
 	connect(setAllNotAvailablePushButton, SIGNAL(clicked()), this, SLOT(setAllNotAvailable()));
 
@@ -73,15 +73,11 @@ void ModifyConstraintTeacherNotAvailableTimesForm::setAllNotAvailable()
 
 void ModifyConstraintTeacherNotAvailableTimesForm::updateTeachersComboBox(){
 	teachersComboBox->clear();
-	int i=0, j=-1;
-	for(int k=0; k<gt.rules.teachersList.size(); k++, i++){
-		Teacher* tch=gt.rules.teachersList[k];
-		teachersComboBox->addItem(tch->name);
-		if(tch->name==this->_ctr->teacher)
-			j=i;
+	for(int i=0; i<gt.rules.teachersList.size(); i++){
+		Teacher* t=gt.rules.teachersList[i];
+		teachersComboBox->addItem(t->name);
 	}
-	assert(j>=0);
-	teachersComboBox->setCurrentIndex(j);
+	teachersComboBox->setCurrentText(this->_ctr->teacher);
 }
 
 void ModifyConstraintTeacherNotAvailableTimesForm::ok()
@@ -147,10 +143,5 @@ void ModifyConstraintTeacherNotAvailableTimesForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 	
-	this->close();
-}
-
-void ModifyConstraintTeacherNotAvailableTimesForm::cancel()
-{
 	this->close();
 }

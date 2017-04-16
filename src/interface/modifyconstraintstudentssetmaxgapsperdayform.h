@@ -31,12 +31,10 @@ public:
 	ModifyConstraintStudentsSetMaxGapsPerDayForm(QWidget* parent, ConstraintStudentsSetMaxGapsPerDay* ctr);
 	~ModifyConstraintStudentsSetMaxGapsPerDayForm();
 
-	void updateStudentsComboBox(QWidget* parent);
+	void updateStudentsComboBox();
 
 public slots:
-	void constraintChanged();
 	void ok();
-	void cancel();
 };
 
 #endif

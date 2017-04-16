@@ -15,90 +15,32 @@
  *                                                                         *
  ***************************************************************************/
 
-#include <QMessageBox>
-
-#include "longtextmessagebox.h"
-
 #include "constraintactivitiessamestartingtimeform.h"
 #include "addconstraintactivitiessamestartingtimeform.h"
 #include "modifyconstraintactivitiessamestartingtimeform.h"
 
-#include <QListWidget>
-#include <QScrollBar>
-#include <QAbstractItemView>
+#include "teacherstudentsetsubjectactivitytag_filterwidget.h"
 
-ConstraintActivitiesSameStartingTimeForm::ConstraintActivitiesSameStartingTimeForm(QWidget* parent): QDialog(parent)
+ConstraintActivitiesSameStartingTimeForm::ConstraintActivitiesSameStartingTimeForm(QWidget* parent): TimeConstraintBaseDialog(parent)
 {
-	setupUi(this);
+	//: This is the title of the dialog to see the list of all constraints of this type
+	setWindowTitle(QCoreApplication::translate("ConstraintActivitiesSameStartingTimeForm_template", "Constraints activities same starting time"));
 
-	currentConstraintTextEdit->setReadOnly(true);
+	QString instruction = QCoreApplication::translate("ConstraintActivitiesSameStartingTimeForm_template", "Please read Help/Important tips, advice 2). It is IMPORTANT to remove redundant min days constraints after adding constraints same starting time. Click the Help button!");
+	instruction += "\n\n" + QCoreApplication::translate("ConstraintActivitiesSameStartingTimeForm_template", "NOTE: You might not need this constraint. Press Help!");
+	setInstructionText(instruction);
 
-	modifyConstraintPushButton->setDefault(true);
-	
-	constraintsListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
+	setHelp();
 
-	connect(addConstraintPushButton, SIGNAL(clicked()), this, SLOT(addConstraint()));
-	connect(removeConstraintPushButton, SIGNAL(clicked()), this, SLOT(removeConstraint()));
-	connect(closePushButton, SIGNAL(clicked()), this, SLOT(close()));
-	connect(constraintsListWidget, SIGNAL(currentRowChanged(int)), this, SLOT(constraintChanged(int)));
-	connect(modifyConstraintPushButton, SIGNAL(clicked()), this, SLOT(modifyConstraint()));
-	connect(constraintsListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(modifyConstraint()));
-	connect(teachersComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
-	connect(studentsComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
-	connect(subjectsComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
-	connect(activityTagsComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
-	connect(helpPushButton, SIGNAL(clicked()), this, SLOT(help()));
+	TeacherStudentSetSubjectActivityTag_FilterWidget *filterWidget = new TeacherStudentSetSubjectActivityTag_FilterWidget(gt.rules);
+	filterWidget->setTeachersVisible(true);
+	filterWidget->setStudentSetsVisible(true);
+	filterWidget->setSubjectsVisible(true);
+	filterWidget->setActivityTagsVisible(true);
+	setFilterWidget(filterWidget);
+	connect(filterWidget, &TeacherStudentSetSubjectActivityTag_FilterWidget::FilterChanged, this, &ConstraintActivitiesSameStartingTimeForm::filterChanged);
 
-	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
-
-	QSize tmp1=teachersComboBox->minimumSizeHint();
-	Q_UNUSED(tmp1);
-	QSize tmp2=studentsComboBox->minimumSizeHint();
-	Q_UNUSED(tmp2);
-	QSize tmp3=subjectsComboBox->minimumSizeHint();
-	Q_UNUSED(tmp3);
-	QSize tmp4=activityTagsComboBox->minimumSizeHint();
-	Q_UNUSED(tmp4);
-	
-/////////////
-	teachersComboBox->addItem("");
-	for(int i=0; i<gt.rules.teachersList.size(); i++){
-		Teacher* tch=gt.rules.teachersList[i];
-		teachersComboBox->addItem(tch->name);
-	}
-	teachersComboBox->setCurrentIndex(0);
-
-	subjectsComboBox->addItem("");
-	for(int i=0; i<gt.rules.subjectsList.size(); i++){
-		Subject* sb=gt.rules.subjectsList[i];
-		subjectsComboBox->addItem(sb->name);
-	}
-	subjectsComboBox->setCurrentIndex(0);
-
-	activityTagsComboBox->addItem("");
-	for(int i=0; i<gt.rules.activityTagsList.size(); i++){
-		ActivityTag* st=gt.rules.activityTagsList[i];
-		activityTagsComboBox->addItem(st->name);
-	}
-	activityTagsComboBox->setCurrentIndex(0);
-
-	studentsComboBox->addItem("");
-	for(int i=0; i<gt.rules.yearsList.size(); i++){
-		StudentsYear* sty=gt.rules.yearsList[i];
-		studentsComboBox->addItem(sty->name);
-		for(int j=0; j<sty->groupsList.size(); j++){
-			StudentsGroup* stg=sty->groupsList[j];
-			studentsComboBox->addItem(stg->name);
-			if(SHOW_SUBGROUPS_IN_COMBO_BOXES) for(int k=0; k<stg->subgroupsList.size(); k++){
-				StudentsSubgroup* sts=stg->subgroupsList[k];
-				studentsComboBox->addItem(sts->name);
-			}
-		}
-	}
-	studentsComboBox->setCurrentIndex(0);
-///////////////
-
 	this->filterChanged();
 }
 
@@ -107,40 +49,18 @@ ConstraintActivitiesSameStartingTimeForm::~ConstraintActivitiesSameStartingTimeF
 	saveFETDialogGeometry(this);
 }
 
-void ConstraintActivitiesSameStartingTimeForm::refreshConstraintsListWidget()
-{
-	this->visibleConstraintsList.clear();
-	constraintsListWidget->clear();
-	for(int i=0; i<gt.rules.timeConstraintsList.size(); i++){
-		TimeConstraint* ctr=gt.rules.timeConstraintsList[i];
-		if(filterOk(ctr)){
-			QString s;
-			s=ctr->getDescription(gt.rules);
-			visibleConstraintsList.append(ctr);
-			constraintsListWidget->addItem(s);
-		}
-	}
-
-	if(constraintsListWidget->count()>0){
-		constraintsListWidget->setCurrentRow(0);
-		constraintChanged(constraintsListWidget->currentRow());
-	}
-	else
-		constraintChanged(-1);
-}
-
-bool ConstraintActivitiesSameStartingTimeForm::filterOk(TimeConstraint* ctr)
+bool ConstraintActivitiesSameStartingTimeForm::filterOk(const TimeConstraint* ctr) const
 {
 	if(ctr->type!=CONSTRAINT_ACTIVITIES_SAME_STARTING_TIME)
 		return false;
 		
-	ConstraintActivitiesSameStartingTime* c=(ConstraintActivitiesSameStartingTime*) ctr;
-	
-	QString tn=teachersComboBox->currentText();
-	QString sbn=subjectsComboBox->currentText();
-	QString sbtn=activityTagsComboBox->currentText();
-	QString stn=studentsComboBox->currentText();
-	
+	const ConstraintActivitiesSameStartingTime* c=(const ConstraintActivitiesSameStartingTime*) ctr;
+	const TeacherStudentSetSubjectActivityTag_FilterWidget * filterWidget = static_cast<TeacherStudentSetSubjectActivityTag_FilterWidget*>(getFilterWidget());
+	QString tn=filterWidget->teacher();
+	QString sbn=filterWidget->subject();
+	QString sbtn=filterWidget->activityTag();
+	QString stn=filterWidget->studentsSet();
+
 	if(tn=="" && sbn=="" && sbtn=="" && stn=="")
 		return true;
 	
@@ -204,118 +124,17 @@ bool ConstraintActivitiesSameStartingTimeForm::filterOk(TimeConstraint* ctr)
 		return false;
 }
 
-void ConstraintActivitiesSameStartingTimeForm::filterChanged()
+QDialog * ConstraintActivitiesSameStartingTimeForm::createAddDialog()
 {
-	this->visibleConstraintsList.clear();
-	constraintsListWidget->clear();
-	for(int i=0; i<gt.rules.timeConstraintsList.size(); i++){
-		TimeConstraint* ctr=gt.rules.timeConstraintsList[i];
-		if(filterOk(ctr)){
-			visibleConstraintsList.append(ctr);
-			constraintsListWidget->addItem(ctr->getDescription(gt.rules));
-		}
-	}
-	
-	if(constraintsListWidget->count()>0)
-		constraintsListWidget->setCurrentRow(0);
-	else
-		constraintChanged(-1);
+	return new AddConstraintActivitiesSameStartingTimeForm(this);
 }
 
-void ConstraintActivitiesSameStartingTimeForm::constraintChanged(int index)
+QDialog * ConstraintActivitiesSameStartingTimeForm::createModifyDialog(TimeConstraint *ctr)
 {
-	if(index<0){
-		currentConstraintTextEdit->setPlainText("");
-		return;
-	}
-	QString s;
-	assert(index<this->visibleConstraintsList.size());
-	TimeConstraint* ctr=this->visibleConstraintsList.at(index);
-	assert(ctr!=NULL);
-	s=ctr->getDetailedDescription(gt.rules);
-	currentConstraintTextEdit->setPlainText(s);
+	return new ModifyConstraintActivitiesSameStartingTimeForm(this, (ConstraintActivitiesSameStartingTime*)ctr);
 }
 
-void ConstraintActivitiesSameStartingTimeForm::addConstraint()
-{
-	AddConstraintActivitiesSameStartingTimeForm form(this);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-
-	this->refreshConstraintsListWidget();
-	
-	constraintsListWidget->setCurrentRow(constraintsListWidget->count()-1);
-}
-
-void ConstraintActivitiesSameStartingTimeForm::modifyConstraint()
-{
-	int valv=constraintsListWidget->verticalScrollBar()->value();
-	int valh=constraintsListWidget->horizontalScrollBar()->value();
-
-	int i=constraintsListWidget->currentRow();
-	if(i<0){
-		QMessageBox::information(this, tr("FET information"), tr("Invalid selected constraint"));
-		return;
-	}
-	TimeConstraint* ctr=this->visibleConstraintsList.at(i);
-
-	ModifyConstraintActivitiesSameStartingTimeForm form(this, (ConstraintActivitiesSameStartingTime*)ctr);
-	setParentAndOtherThings(&form, this);
-	form.exec();
-
-	refreshConstraintsListWidget();
-	
-	constraintsListWidget->verticalScrollBar()->setValue(valv);
-	constraintsListWidget->horizontalScrollBar()->setValue(valh);
-	
-	if(i>=constraintsListWidget->count())
-		i=constraintsListWidget->count()-1;
-	
-	if(i>=0)
-		constraintsListWidget->setCurrentRow(i);
-	else
-		this->constraintChanged(-1);
-}
-
-void ConstraintActivitiesSameStartingTimeForm::removeConstraint()
-{
-	int i=constraintsListWidget->currentRow();
-	if(i<0){
-		QMessageBox::information(this, tr("FET information"), tr("Invalid selected constraint"));
-		return;
-	}
-	TimeConstraint* ctr=this->visibleConstraintsList.at(i);
-	QString s;
-	s=tr("Remove constraint?");
-	s+="\n\n";
-	s+=ctr->getDetailedDescription(gt.rules);
-	
-	QListWidgetItem* item;
-
-	switch( LongTextMessageBox::confirmation( this, tr("FET confirmation"),
-		s, tr("Yes"), tr("No"), 0, 0, 1 ) ){
-	case 0: // The user clicked the OK button or pressed Enter
-		gt.rules.removeTimeConstraint(ctr);
-		
-		visibleConstraintsList.removeAt(i);
-		constraintsListWidget->setCurrentRow(-1);
-		item=constraintsListWidget->takeItem(i);
-		delete item;
-		
-		break;
-	case 1: // The user clicked the Cancel button or pressed Escape
-		break;
-	}
-
-	if(i>=constraintsListWidget->count())
-		i=constraintsListWidget->count()-1;
-	if(i>=0)
-		constraintsListWidget->setCurrentRow(i);
-	else
-		this->constraintChanged(-1);
-}
-
-void ConstraintActivitiesSameStartingTimeForm::help()
+void ConstraintActivitiesSameStartingTimeForm::setHelp()
 {
 	QString s;
 
@@ -331,5 +150,5 @@ void ConstraintActivitiesSameStartingTimeForm::help()
 	 " constraint. The correct way is to add a max 0 gaps per week constraint for students and maybe also an early max 0 beginnings at second"
 	 " hour constraint for students.");
 
-	LongTextMessageBox::largeInformation(this, tr("FET help"), s);
+	setHelpText(s);
 }

@@ -29,7 +29,7 @@ ModifyConstraintTeachersIntervalMaxDaysPerWeekForm::ModifyConstraintTeachersInte
 	okPushButton->setDefault(true);
 
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
@@ -56,8 +56,6 @@ ModifyConstraintTeachersIntervalMaxDaysPerWeekForm::ModifyConstraintTeachersInte
 	}
 	endHourComboBox->addItem(tr("End of day"));
 	endHourComboBox->setCurrentIndex(ctr->endHour);
-
-	constraintChanged();
 }
 
 ModifyConstraintTeachersIntervalMaxDaysPerWeekForm::~ModifyConstraintTeachersIntervalMaxDaysPerWeekForm()
@@ -68,10 +66,6 @@ ModifyConstraintTeachersIntervalMaxDaysPerWeekForm::~ModifyConstraintTeachersInt
 void ModifyConstraintTeachersIntervalMaxDaysPerWeekForm::updateMaxDaysSpinBox(){
 	maxDaysSpinBox->setMinimum(0);
 	maxDaysSpinBox->setMaximum(gt.rules.nDaysPerWeek);	
-}
-
-void ModifyConstraintTeachersIntervalMaxDaysPerWeekForm::constraintChanged()
-{
 }
 
 void ModifyConstraintTeachersIntervalMaxDaysPerWeekForm::ok()
@@ -119,10 +113,5 @@ void ModifyConstraintTeachersIntervalMaxDaysPerWeekForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 	
-	this->close();
-}
-
-void ModifyConstraintTeachersIntervalMaxDaysPerWeekForm::cancel()
-{
 	this->close();
 }

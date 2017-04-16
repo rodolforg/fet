@@ -33,13 +33,12 @@ public:
 	~ModifyConstraintActivitiesEndStudentsDayForm();
 
 	void updateTeachersComboBox();
-	void updateStudentsComboBox(QWidget* parent);
+	void updateStudentsComboBox();
 	void updateSubjectsComboBox();
 	void updateActivityTagsComboBox();
 
 public slots:
 	void ok();
-	void cancel();
 };
 
 #endif

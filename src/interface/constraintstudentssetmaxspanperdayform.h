@@ -18,28 +18,18 @@
 #ifndef CONSTRAINTSTUDENTSSETMAXSPANPERDAYFORM_H
 #define CONSTRAINTSTUDENTSSETMAXSPANPERDAYFORM_H
 
-#include "ui_constraintstudentssetmaxspanperdayform_template.h"
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
+#include "timeconstraint_basedialog.h"
 
-class ConstraintStudentsSetMaxSpanPerDayForm : public QDialog, Ui::ConstraintStudentsSetMaxSpanPerDayForm_template  {
+class ConstraintStudentsSetMaxSpanPerDayForm : public TimeConstraintBaseDialog  {
 	Q_OBJECT
 public:
-	TimeConstraintsList visibleConstraintsList;
-
 	ConstraintStudentsSetMaxSpanPerDayForm(QWidget* parent);
 	~ConstraintStudentsSetMaxSpanPerDayForm();
 
-	bool filterOk(TimeConstraint* ctr);
-
-public slots:
-	void constraintChanged(int index);
-	void addConstraint();
-	void modifyConstraint();
-	void removeConstraint();
-	
-	void filterChanged();
+protected:
+	virtual QDialog *createAddDialog();
+	virtual QDialog *createModifyDialog(TimeConstraint *ctr);
+	virtual bool filterOk(const TimeConstraint *ctr) const;
 };
 
 #endif

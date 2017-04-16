@@ -29,7 +29,7 @@ ModifyConstraintActivityEndsStudentsDayForm::ModifyConstraintActivityEndsStudent
 	okPushButton->setDefault(true);
 
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 	connect(teachersComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
 	connect(studentsComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
 	connect(subjectsComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
@@ -93,8 +93,6 @@ ModifyConstraintActivityEndsStudentsDayForm::ModifyConstraintActivityEndsStudent
 	studentsComboBox->setCurrentIndex(0);
 	
 	updateActivitiesComboBox();
-
-	constraintChanged();
 }
 
 ModifyConstraintActivityEndsStudentsDayForm::~ModifyConstraintActivityEndsStudentsDayForm()
@@ -167,12 +165,6 @@ void ModifyConstraintActivityEndsStudentsDayForm::updateActivitiesComboBox(){
 	}
 	//assert(j>=0); only first time
 	activitiesComboBox->setCurrentIndex(j);
-
-	constraintChanged();
-}
-
-void ModifyConstraintActivityEndsStudentsDayForm::constraintChanged()
-{
 }
 
 void ModifyConstraintActivityEndsStudentsDayForm::ok()
@@ -207,10 +199,5 @@ void ModifyConstraintActivityEndsStudentsDayForm::ok()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 
-	this->close();
-}
-
-void ModifyConstraintActivityEndsStudentsDayForm::cancel()
-{
 	this->close();
 }
