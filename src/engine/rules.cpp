@@ -481,9 +481,12 @@ bool Rules::computeInternalStructure(QWidget* parent)
 	}
 
 	//activities list for each subject - used for subjects timetable - in order for students and teachers
-	activitiesForSubject.resize(nInternalSubjects);
-	for(int sb=0; sb<nInternalSubjects; sb++)
-		activitiesForSubject[sb].clear();
+	activitiesForSubjectList.resize(nInternalSubjects);
+	activitiesForSubjectSet.resize(nInternalSubjects);
+	for(int sb=0; sb<nInternalSubjects; sb++){
+		activitiesForSubjectList[sb].clear();
+		activitiesForSubjectSet[sb].clear();
+	}
 
 	for(int i=0; i<this->augmentedYearsList.size(); i++){
 		StudentsYear* sty=this->augmentedYearsList[i];
@@ -495,16 +498,29 @@ bool Rules::computeInternalStructure(QWidget* parent)
 				StudentsSubgroup* sts=stg->subgroupsList[k];
 				
 				foreach(int ai, internalSubgroupsList[sts->indexInInternalSubgroupsList]->activitiesForSubgroup)
-					if(!activitiesForSubject[internalActivitiesList[ai].subjectIndex].contains(ai))
-						activitiesForSubject[internalActivitiesList[ai].subjectIndex].append(ai);
+					if(!activitiesForSubjectSet[internalActivitiesList[ai].subjectIndex].contains(ai)){
+						activitiesForSubjectList[internalActivitiesList[ai].subjectIndex].append(ai);
+						activitiesForSubjectSet[internalActivitiesList[ai].subjectIndex].insert(ai);
+					}
 			}
 		}
 	}
 	
 	for(int i=0; i<nInternalTeachers; i++){
 		foreach(int ai, internalTeachersList[i]->activitiesForTeacher)
-			if(!activitiesForSubject[internalActivitiesList[ai].subjectIndex].contains(ai))
-				activitiesForSubject[internalActivitiesList[ai].subjectIndex].append(ai);
+			if(!activitiesForSubjectSet[internalActivitiesList[ai].subjectIndex].contains(ai)){
+				activitiesForSubjectList[internalActivitiesList[ai].subjectIndex].append(ai);
+				activitiesForSubjectSet[internalActivitiesList[ai].subjectIndex].insert(ai);
+			}
+	}
+	
+	//for activities without students or teachers
+	for(int ai=0; ai<nInternalActivities; ai++){
+		int si=internalActivitiesList[ai].subjectIndex;
+		if(!activitiesForSubjectSet[si].contains(ai)){
+			activitiesForSubjectList[si].append(ai);
+			activitiesForSubjectSet[si].insert(ai);
+		}
 	}
 	/////////////////////////////////////////////////////////////////
 	
@@ -542,6 +558,16 @@ bool Rules::computeInternalStructure(QWidget* parent)
 					activitiesForActivityTagList[activityTagInt].append(ai);
 					activitiesForActivityTagSet[activityTagInt].insert(ai);
 				}
+	}
+
+	//for activities without students or teachers
+	for(int ai=0; ai<nInternalActivities; ai++){
+		foreach(int ati, internalActivitiesList[ai].iActivityTagsSet){
+			if(!activitiesForActivityTagSet[ati].contains(ai)){
+				activitiesForActivityTagList[ati].append(ai);
+				activitiesForActivityTagSet[ati].insert(ai);
+			}
+		}
 	}
 	/////////////////////////////////////////////////////////////////
 
@@ -3550,7 +3576,13 @@ bool Rules::removeTimeConstraint(TimeConstraint* ctr)
 				QSet<ConstraintActivityPreferredStartingTime*> cs=apstHash.value(c->activityId, QSet<ConstraintActivityPreferredStartingTime*>());
 				assert(cs.contains(c));
 				cs.remove(c);
-				apstHash.insert(c->activityId, cs);
+				if(!cs.isEmpty()){
+					apstHash.insert(c->activityId, cs);
+				}
+				else{
+					int t=apstHash.remove(c->activityId);
+					assert(t==1);
+				}
 			}
 
 			else if(ctr->type==CONSTRAINT_MIN_DAYS_BETWEEN_ACTIVITIES){
@@ -3559,7 +3591,13 @@ bool Rules::removeTimeConstraint(TimeConstraint* ctr)
 					QSet<ConstraintMinDaysBetweenActivities*> cs=mdbaHash.value(aid, QSet<ConstraintMinDaysBetweenActivities*>());
 					assert(cs.contains(c));
 					cs.remove(c);
-					mdbaHash.insert(aid, cs);
+					if(!cs.isEmpty()){
+						mdbaHash.insert(aid, cs);
+					}
+					else{
+						int t=mdbaHash.remove(aid);
+						assert(t==1);
+					}
 				}
 			}
 
@@ -3568,7 +3606,14 @@ bool Rules::removeTimeConstraint(TimeConstraint* ctr)
 				QSet<ConstraintTeacherNotAvailableTimes*> cs=tnatHash.value(c->teacher, QSet<ConstraintTeacherNotAvailableTimes*>());
 				assert(cs.contains(c));
 				cs.remove(c);
-				tnatHash.insert(c->teacher, cs);
+				if(!cs.isEmpty()){
+					assert(0);
+					tnatHash.insert(c->teacher, cs);
+				}
+				else{
+					int t=tnatHash.remove(c->teacher);
+					assert(t==1);
+				}
 			}
 
 			else if(ctr->type==CONSTRAINT_STUDENTS_SET_NOT_AVAILABLE_TIMES){
@@ -3576,7 +3621,14 @@ bool Rules::removeTimeConstraint(TimeConstraint* ctr)
 				QSet<ConstraintStudentsSetNotAvailableTimes*> cs=ssnatHash.value(c->students, QSet<ConstraintStudentsSetNotAvailableTimes*>());
 				assert(cs.contains(c));
 				cs.remove(c);
-				ssnatHash.insert(c->students, cs);
+				if(!cs.isEmpty()){
+					assert(0);
+					ssnatHash.insert(c->students, cs);
+				}
+				else{
+					int t=ssnatHash.remove(c->students);
+					assert(t==1);
+				}
 			}
 			else if(ctr->type==CONSTRAINT_BASIC_COMPULSORY_TIME){
 				ConstraintBasicCompulsoryTime* c=(ConstraintBasicCompulsoryTime*) ctr;
@@ -3616,7 +3668,13 @@ bool Rules::removeTimeConstraints(QList<TimeConstraint*> _tcl)
 				QSet<ConstraintActivityPreferredStartingTime*> cs=apstHash.value(c->activityId, QSet<ConstraintActivityPreferredStartingTime*>());
 				assert(cs.contains(c));
 				cs.remove(c);
-				apstHash.insert(c->activityId, cs);
+				if(!cs.isEmpty()){
+					apstHash.insert(c->activityId, cs);
+				}
+				else{
+					int t=apstHash.remove(c->activityId);
+					assert(t==1);
+				}
 			}
 
 			else if(ctr->type==CONSTRAINT_MIN_DAYS_BETWEEN_ACTIVITIES){
@@ -3625,7 +3683,13 @@ bool Rules::removeTimeConstraints(QList<TimeConstraint*> _tcl)
 					QSet<ConstraintMinDaysBetweenActivities*> cs=mdbaHash.value(aid, QSet<ConstraintMinDaysBetweenActivities*>());
 					assert(cs.contains(c));
 					cs.remove(c);
-					mdbaHash.insert(aid, cs);
+					if(!cs.isEmpty()){
+						mdbaHash.insert(aid, cs);
+					}
+					else{
+						int t=mdbaHash.remove(aid);
+						assert(t==1);
+					}
 				}
 			}
 
@@ -3634,7 +3698,14 @@ bool Rules::removeTimeConstraints(QList<TimeConstraint*> _tcl)
 				QSet<ConstraintTeacherNotAvailableTimes*> cs=tnatHash.value(c->teacher, QSet<ConstraintTeacherNotAvailableTimes*>());
 				assert(cs.contains(c));
 				cs.remove(c);
-				tnatHash.insert(c->teacher, cs);
+				if(!cs.isEmpty()){
+					assert(0);
+					tnatHash.insert(c->teacher, cs);
+				}
+				else{
+					int t=tnatHash.remove(c->teacher);
+					assert(t==1);
+				}
 			}
 
 			else if(ctr->type==CONSTRAINT_STUDENTS_SET_NOT_AVAILABLE_TIMES){
@@ -3642,7 +3713,14 @@ bool Rules::removeTimeConstraints(QList<TimeConstraint*> _tcl)
 				QSet<ConstraintStudentsSetNotAvailableTimes*> cs=ssnatHash.value(c->students, QSet<ConstraintStudentsSetNotAvailableTimes*>());
 				assert(cs.contains(c));
 				cs.remove(c);
-				ssnatHash.insert(c->students, cs);
+				if(!cs.isEmpty()){
+					assert(0);
+					ssnatHash.insert(c->students, cs);
+				}
+				else{
+					int t=ssnatHash.remove(c->students);
+					assert(t==1);
+				}
 			}
 			else if(ctr->type==CONSTRAINT_BASIC_COMPULSORY_TIME){
 				ConstraintBasicCompulsoryTime* c=(ConstraintBasicCompulsoryTime*) ctr;
@@ -5030,6 +5108,14 @@ bool Rules::read(QWidget* parent, const QString& fileName, bool commandLine, QSt
 							activityTag->name=text;
 							log.verbose("    Read activity tag name: "+activityTag->name+"\n");
 						}
+						else if(xmlReader.name()=="Printable"){
+							QString text=xmlReader.readElementText();
+							if(text=="true")
+								activityTag->printable=true;
+							else
+								activityTag->printable=false;
+							log.verbose("    Read activity tag printable="+text+"\n");
+						}
 						else if(xmlReader.name()=="Comments"){
 							QString text=xmlReader.readElementText();
 							activityTag->comments=text;
@@ -6410,6 +6496,7 @@ bool Rules::read(QWidget* parent, const QString& fileName, bool commandLine, QSt
 				}
 				else if(xmlReader.name()=="ConstraintStudentsMinRestingHours"){
 					crt_constraint=readStudentsMinRestingHours(xmlReader, log);
+
 				}
 				/////////  end 2017-02-07
 				else{
@@ -7260,6 +7347,36 @@ void Rules::setHours(QStringList hourList)
 	setModified(true);
 	if (sizeChanged) {
 		emit basicDataResized();
+	}
+}
+
+void Rules::makeActivityTagPrintable(const QString& activityTagName)
+{
+	int i=searchActivityTag(activityTagName);
+	assert(i>=0 && i<activityTagsList.count());
+	
+	ActivityTag* at=activityTagsList[i];
+	
+	if(at->printable==false){
+		at->printable=true;
+
+		this->internalStructureComputed=false;
+		setModified(true);
+	}
+}
+
+void Rules::makeActivityTagNotPrintable(const QString& activityTagName)
+{
+	int i=searchActivityTag(activityTagName);
+	assert(i>=0 && i<activityTagsList.count());
+	
+	ActivityTag* at=activityTagsList[i];
+	
+	if(at->printable==true){
+		at->printable=false;
+
+		this->internalStructureComputed=false;
+		setModified(true);
 	}
 }
 

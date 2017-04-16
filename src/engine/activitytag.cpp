@@ -20,6 +20,7 @@
 
 ActivityTag::ActivityTag()
 {
+	printable=true;
 }
 
 ActivityTag::~ActivityTag()
@@ -30,6 +31,14 @@ QString ActivityTag::getXmlDescription() const
 {
 	QString s="<Activity_Tag>\n";
 	s+="	<Name>"+protect(this->name)+"</Name>\n";
+	
+	s+="	<Printable>";
+	if(this->printable)
+		s+="true";
+	else
+		s+="false";
+	s+="</Printable>\n";
+	
 	s+="	<Comments>"+protect(comments)+"</Comments>\n";
 	s+="</Activity_Tag>\n";
 
@@ -39,6 +48,14 @@ QString ActivityTag::getXmlDescription() const
 QString ActivityTag::getDescription() const
 {
 	QString s=tr("N:%1", "The name of the activity tag").arg(name);
+	
+	s+=", ";
+	QString printableYesNo;
+	if(this->printable)
+		printableYesNo=tr("yes");
+	else
+		printableYesNo=tr("no");
+	s+=tr("P:%1", "Whether the activity tag is Printable - can be true or false").arg(printableYesNo);
 	
 	if(!comments.isEmpty())
 		s+=", "+tr("C: %1", "Comments").arg(comments);
@@ -51,6 +68,14 @@ QString ActivityTag::getDetailedDescription() const
 	QString s=tr("Activity tag");
 	s+="\n";
 	s+=tr("Name=%1", "The name of the activity tag").arg(this->name);
+	s+="\n";
+
+	QString printableYesNo;
+	if(this->printable)
+		printableYesNo=tr("yes");
+	else
+		printableYesNo=tr("no");
+	s+=tr("Printable=%1", "Whether the activity tag is Printable - can be true or false").arg(printableYesNo);
 	s+="\n";
 
 	//Has comments?

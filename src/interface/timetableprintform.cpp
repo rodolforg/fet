@@ -541,7 +541,13 @@ void TimetablePrintForm::updateNamesList(){
 			QString name = gt.rules.internalActivityTagsList[activityTag]->name;
 			namesList->addItem(name);
 			QListWidgetItem* tmpItem=namesList->item(activityTag);
-			tmpItem->setSelected(true);
+			if(gt.rules.internalActivityTagsList[activityTag]->printable){
+				tmpItem->setSelected(true);
+				
+			} else {
+				tmpItem->setHidden(true);	//Add and hide it (do not skip adding), because I work with the index and the index will be wrong if I don't add it.
+				//Maybe TODO: Rethink/check if I can skip adding it, if I also don't add them into the hash hashActivityTagIDsTimetable in timetableexport.cpp
+			}
 		}
 		printActivityTags->setDisabled(false);
 		printDetailedTables->setDisabled(true);
@@ -648,7 +654,7 @@ QString TimetablePrintForm::updateHtmlPrintString(bool printAll){
 	tmp+="      }\n";
 */
 	
-	//start. the "back" stuff is needed because of an qt bug (*1*). it also solve the last empty page problem.
+	//start. the "back" stuff is needed because of a qt bug (*1*). it also solve the last empty page problem.
 	tmp+="      p.back0 {\n";	//i can't to that with a class in table, because of a qt bug
 	if(CBBreak->currentIndex()==0)
 		tmp+="        font-size: "+QString::number(tablePadding->value())+"pt;\n";	//i can't do that in table, because it will also affect detailed table cells. it is not possible with a class, because of a qt bug.

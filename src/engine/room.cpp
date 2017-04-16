@@ -33,7 +33,7 @@ void Room::computeInternalStructure(const Rules& r)
 	if(building=="")
 		buildingIndex=-1;
 	else{
-		buildingIndex=r.searchBuilding(building);
+		buildingIndex=r.buildingsHash.value(building, -1);
 		assert(buildingIndex>=0 && buildingIndex<r.nInternalBuildings);
 	}
 }

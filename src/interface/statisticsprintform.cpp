@@ -237,7 +237,7 @@ StatisticsPrintForm::StatisticsPrintForm(QWidget *parent): QDialog(parent){
 //	printDetailedTables->setChecked(true);
 	
 	printActivityTags=new QCheckBox(tr("Activity tags"));
-	printActivityTags->setChecked(false);
+	printActivityTags->setChecked(true);
 	
 	fontSizeTable=new QSpinBox;
 	fontSizeTable->setRange(4, 20);
@@ -661,7 +661,7 @@ QString StatisticsPrintForm::updateHTMLprintString(bool printAll){
 	tmp+="      }\n";
 */
 	
-	//start. the "back" stuff is needed because of an qt bug (*1*). it also solve the last empty page problem.
+	//start. the "back" stuff is needed because of a qt bug (*1*). it also solve the last empty page problem.
 	tmp+="      p.back0 {\n";	//i can't to that with a class in table, because of a qt bug
 	if(CBBreak->currentIndex()==0)
 		tmp+="        font-size: "+QString::number(tablePadding->value())+"pt;\n";	//i can't do that in table, because it will also effect detailed table cells. it is not possible with a class, because of a qt bug.
@@ -682,19 +682,19 @@ QString StatisticsPrintForm::updateHTMLprintString(bool printAll){
 	if(CBBreak->currentIndex()==1)
 		tmp+="        page-break-after: always;";
 	tmp+="      }\n";
-	//end. the "back" stuff is only needed because of an qt bug (*1*). delete this as soon as bug is solved
+	//end. the "back" stuff is only needed because of a qt bug (*1*). delete this as soon as bug is solved
 	
 	tmp+="      table {\n";
 	tmp+="        font-size: "+QString::number(fontSizeTable->value())+"pt;\n";
 	tmp+="        padding-top: "+QString::number(tablePadding->value())+"px;\n";
 	tmp+="      }\n";
 	tmp+="      th {\n";
-	tmp+="        text-align: center;\n"; //currently no effect because of an qt bug (compare http://bugreports.qt.nokia.com/browse/QTBUG-2730 )
+	tmp+="        text-align: center;\n"; //currently no effect because of a qt bug (compare http://bugreports.qt.nokia.com/browse/QTBUG-2730 )
 	tmp+="        vertical-align: middle;\n";
 	tmp+="        white-space: "+CBWhiteSpace->currentText()+";\n";
 	tmp+="      }\n";
 	tmp+="      td {\n";
-	tmp+="        text-align: center;\n"; //currently no effect because of an qt bug (compare http://bugreports.qt.nokia.com/browse/QTBUG-2730 )
+	tmp+="        text-align: center;\n"; //currently no effect because of a qt bug (compare http://bugreports.qt.nokia.com/browse/QTBUG-2730 )
 	tmp+="        vertical-align: middle;\n";
 	tmp+="        white-space: "+CBWhiteSpace->currentText()+";\n";
 	tmp+="        padding-left: "+QString::number(activitiesPadding->value())+"px;\n";

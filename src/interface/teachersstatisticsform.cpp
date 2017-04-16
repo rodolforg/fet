@@ -1,5 +1,5 @@
 /***************************************************************************
-                          teacherstatisticform.cpp  -  description
+                          teachersstatisticform.cpp  -  description
                              -------------------
     begin                : March 25, 2006
     copyright            : (C) 2006 by Lalescu Liviu

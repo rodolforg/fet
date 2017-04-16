@@ -6,4 +6,4 @@ starting time (for a single activity), preferred starting times (for a single ac
 set of subactivities) and preferred time slots (for a single activity, for a set of activities and for a set of subactivities).
 Please make sure all these kinds of constraints are clearly separable one from each other.
 
-This file is not solvable, of course, it just contains all constraints.
+This file is not solvable, it just contains all constraints.

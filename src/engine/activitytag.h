@@ -38,6 +38,9 @@ class ActivityTag{
 
 public:
 	QString name;
+	
+	bool printable;
+
 	QString comments;
 
 	ActivityTag();
