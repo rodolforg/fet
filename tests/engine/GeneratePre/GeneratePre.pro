@@ -73,6 +73,8 @@ HEADERS += \
 	\
 	../../../src/interface/longtextmessagebox.h
 
+DESTDIR = ../../
+
 OBJECTS_DIR = ../../../tmp/tests
 UI_DIR = ../../../tmp/tests
 MOC_DIR = ../../../tmp/tests

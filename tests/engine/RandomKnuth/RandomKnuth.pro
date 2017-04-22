@@ -20,6 +20,8 @@ SOURCES += tst_randomknuthtest.cpp \
 
 DEFINES += SRCDIR=\\\"$$PWD/\\\"
 
+DESTDIR = ../../
+
 OBJECTS_DIR = ../../../tmp/tests
 UI_DIR = ../../../tmp/tests
 MOC_DIR = ../../../tmp/tests
