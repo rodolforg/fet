@@ -377,7 +377,7 @@ public:
 	bool setsShareStudents(const QString& studentsSet1, const QString& studentsSet2) const;
 
 	//Internal
-	bool augmentedSetsShareStudentsFaster(const QString& studentsSet1, const QString& studentsSet2);
+	bool augmentedSetsShareStudentsFaster(const QString& studentsSet1, const QString& studentsSet2) const;
 
 	/**
 	Adds a new year of study to the academic structure

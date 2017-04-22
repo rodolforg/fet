@@ -196,7 +196,7 @@ public:
 	It returns false if the constraint is an activity related
 	one and it depends on only inactive activities.
 	*/
-	virtual bool computeInternalStructure(QWidget* parent, Rules& r)=0;
+	virtual bool computeInternalStructure(QWidget* parent, const Rules& r)=0;
 	
 	virtual bool hasInactiveActivities(const Rules& r) const = 0;
 
@@ -252,7 +252,7 @@ public:
 
 	ConstraintBasicCompulsoryTime(double wp);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 	
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -300,7 +300,7 @@ public:
 
 	ConstraintTeacherNotAvailableTimes(double wp, const QString& tn, QList<int> d, QList<int> h);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -348,7 +348,7 @@ public:
 
 	ConstraintStudentsSetNotAvailableTimes(double wp, const QString& sn, QList<int> d, QList<int> h);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -410,7 +410,7 @@ public:
 	//ConstraintActivitiesSameStartingTime(double wp, int n_act, const int act[]);
 	ConstraintActivitiesSameStartingTime(double wp, int n_act, const QList<int>& act);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -479,7 +479,7 @@ public:
 	*/
 	ConstraintActivitiesNotOverlapping(double wp, int n_act, const QList<int>& act);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -562,7 +562,7 @@ public:
 	*/
 	bool operator==(ConstraintMinDaysBetweenActivities& c);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -630,7 +630,7 @@ public:
 	*/
 	ConstraintMaxDaysBetweenActivities(double wp, int n_act, const QList<int>& act, int n);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -699,7 +699,7 @@ public:
 	//ConstraintMinGapsBetweenActivities(double wp, int n_act, const int act[], int ngaps);
 	ConstraintMinGapsBetweenActivities(double wp, int n_act, const QList<int>& actList, int ngaps);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -747,7 +747,7 @@ public:
 
 	QString getXmlDescription(const Rules& r) const;
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -791,7 +791,7 @@ public:
 
 	QString getXmlDescription(const Rules& r) const;
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -835,7 +835,7 @@ public:
 
 	QString getXmlDescription(const Rules& r) const;
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -879,7 +879,7 @@ public:
 
 	QString getXmlDescription(const Rules& r) const;
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -925,7 +925,7 @@ public:
 
 	QString getXmlDescription(const Rules& r) const;
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -975,7 +975,7 @@ public:
 
 	QString getXmlDescription(const Rules& r) const;
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -1029,7 +1029,7 @@ public:
 
 	ConstraintTeacherMaxDaysPerWeek(double wp, int maxnd, QString t);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -1069,7 +1069,7 @@ public:
 
 	ConstraintTeachersMaxDaysPerWeek(double wp, int maxnd);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -1116,7 +1116,7 @@ public:
 
 	ConstraintTeacherMinDaysPerWeek(double wp, int mindays, const QString& t);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -1153,7 +1153,7 @@ public:
 
 	ConstraintTeachersMinDaysPerWeek(double wp, int mindays);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -1196,7 +1196,7 @@ public:
 
 	ConstraintBreakTimes(double wp, QList<int> d, QList<int> h);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -1239,7 +1239,7 @@ public:
 
 	ConstraintStudentsMaxGapsPerWeek(double wp, int mg);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -1298,7 +1298,7 @@ public:
 
 	ConstraintStudentsSetMaxGapsPerWeek(double wp, int mg, const QString& st );
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -1335,7 +1335,7 @@ public:
 
 	ConstraintTeachersMaxGapsPerWeek(double wp, int maxGaps);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -1376,7 +1376,7 @@ public:
 
 	ConstraintTeacherMaxGapsPerWeek(double wp, QString tn, int maxGaps);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -1413,7 +1413,7 @@ public:
 
 	ConstraintTeachersMaxGapsPerDay(double wp, int maxGaps);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -1454,7 +1454,7 @@ public:
 
 	ConstraintTeacherMaxGapsPerDay(double wp, QString tn, int maxGaps);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -1500,7 +1500,7 @@ public:
 
 	ConstraintStudentsEarlyMaxBeginningsAtSecondHour(double wp, int mBSH);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -1553,7 +1553,7 @@ public:
 
 	ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour(double wp, int mBSH, const QString& students);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -1590,7 +1590,7 @@ public:
 
 	ConstraintStudentsMaxHoursDaily(double wp, int maxnh);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -1645,7 +1645,7 @@ public:
 
 	ConstraintStudentsSetMaxHoursDaily(double wp, int maxnh, QString s);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -1682,7 +1682,7 @@ public:
 
 	ConstraintStudentsMaxHoursContinuously(double wp, int maxnh);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -1737,7 +1737,7 @@ public:
 
 	ConstraintStudentsSetMaxHoursContinuously(double wp, int maxnh, QString s);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -1780,7 +1780,7 @@ public:
 
 	ConstraintStudentsActivityTagMaxHoursContinuously(double wp, int maxnh, const QString& activityTag);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -1841,7 +1841,7 @@ public:
 
 	ConstraintStudentsSetActivityTagMaxHoursContinuously(double wp, int maxnh, const QString& s, const QString& activityTag);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -1880,7 +1880,7 @@ public:
 
 	ConstraintStudentsMinHoursDaily(double wp, int minnh, bool _allowEmptyDays);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -1937,7 +1937,7 @@ public:
 
 	ConstraintStudentsSetMinHoursDaily(double wp, int minnh, QString s, bool _allowEmptyDays);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -2007,7 +2007,7 @@ public:
 	*/
 	bool operator==(ConstraintActivityPreferredStartingTime& c);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -2076,7 +2076,7 @@ public:
 	//ConstraintActivityPreferredTimeSlots(double wp, int actId, int nPT, int d[], int h[]);
 	ConstraintActivityPreferredTimeSlots(double wp, int actId, int nPT_L, QList<int> d_L, QList<int> h_L);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -2140,7 +2140,7 @@ public:
 	//ConstraintActivityPreferredStartingTimes(double wp, int actId, int nPT, int d[], int h[]);
 	ConstraintActivityPreferredStartingTimes(double wp, int actId, int nPT_L, QList<int> d_L, QList<int> h_L);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -2238,7 +2238,7 @@ public:
 	ConstraintActivitiesPreferredTimeSlots(double wp, QString te,
 		QString st, QString su, QString sut, int dur, int nPT_L, QList<int> d_L, QList<int> h_L);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -2329,7 +2329,7 @@ public:
 	ConstraintSubactivitiesPreferredTimeSlots(double wp, int compNo, QString te,
 		QString st, QString su, QString sut, int nPT_L, QList<int> d_L, QList<int> h_L);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -2420,7 +2420,7 @@ public:
 	ConstraintActivitiesPreferredStartingTimes(double wp, QString te,
 		QString st, QString su, QString sut, int dur, int nPT_L, QList<int> d_L, QList<int> h_L);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -2509,7 +2509,7 @@ public:
 	ConstraintSubactivitiesPreferredStartingTimes(double wp, int compNo, QString te,
 		QString st, QString su, QString sut, int nPT_L, QList<int> d_L, QList<int> h_L);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -2571,7 +2571,7 @@ public:
 	//ConstraintActivitiesSameStartingHour(double wp, int n_act, const int act[]);
 	ConstraintActivitiesSameStartingHour(double wp, int n_act, const QList<int>& act);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -2636,7 +2636,7 @@ public:
 	//ConstraintActivitiesSameStartingDay(double wp, int n_act, const int act[]);
 	ConstraintActivitiesSameStartingDay(double wp, int n_act, const QList<int>& act);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -2694,7 +2694,7 @@ public:
 
 	ConstraintTwoActivitiesConsecutive(double wp, int firstActId, int secondActId);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -2750,7 +2750,7 @@ public:
 
 	ConstraintTwoActivitiesGrouped(double wp, int firstActId, int secondActId);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -2810,7 +2810,7 @@ public:
 
 	ConstraintThreeActivitiesGrouped(double wp, int firstActId, int secondActId, int thirdActId);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -2866,7 +2866,7 @@ public:
 
 	ConstraintTwoActivitiesOrdered(double wp, int firstActId, int secondActId);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -2912,7 +2912,7 @@ public:
 
 	ConstraintActivityEndsStudentsDay(double wp, int actId);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -2956,7 +2956,7 @@ public:
 
 	QString getXmlDescription(const Rules& r) const;
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -3002,7 +3002,7 @@ public:
 
 	QString getXmlDescription(const Rules& r) const;
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -3054,7 +3054,7 @@ public:
 
 	ConstraintTeacherIntervalMaxDaysPerWeek(double wp, int maxnd, QString tn, int sh, int eh);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -3099,7 +3099,7 @@ public:
 
 	ConstraintTeachersIntervalMaxDaysPerWeek(double wp, int maxnd, int sh, int eh);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -3160,7 +3160,7 @@ public:
 
 	ConstraintStudentsSetIntervalMaxDaysPerWeek(double wp, int maxnd, QString sn, int sh, int eh);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -3205,7 +3205,7 @@ public:
 
 	ConstraintStudentsIntervalMaxDaysPerWeek(double wp, int maxnd, int sh, int eh);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -3275,7 +3275,7 @@ public:
 
 	ConstraintActivitiesEndStudentsDay(double wp, QString te, QString st, QString su, QString sut);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -3323,7 +3323,7 @@ public:
 
 	QString getXmlDescription(const Rules& r) const;
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -3373,7 +3373,7 @@ public:
 
 	QString getXmlDescription(const Rules& r) const;
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -3414,7 +3414,7 @@ public:
 
 	ConstraintStudentsActivityTagMaxHoursDaily(double wp, int maxnh, const QString& activityTag);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -3475,7 +3475,7 @@ public:
 
 	ConstraintStudentsSetActivityTagMaxHoursDaily(double wp, int maxnh, const QString& s, const QString& activityTag);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -3512,7 +3512,7 @@ public:
 
 	ConstraintStudentsMaxGapsPerDay(double wp, int mg);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -3566,7 +3566,7 @@ public:
 
 	ConstraintStudentsSetMaxGapsPerDay(double wp, int mg, const QString& st );
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -3611,7 +3611,7 @@ public:
 
 	ConstraintActivitiesOccupyMaxTimeSlotsFromSelection(double wp, QList<int> a_L, QList<int> d_L, QList<int> h_L, int max_slots);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -3658,7 +3658,7 @@ public:
 
 	ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots(double wp, QList<int> a_L, QList<int> d_L, QList<int> h_L, int max_simultaneous);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -3717,7 +3717,7 @@ public:
 
 	ConstraintStudentsSetMaxDaysPerWeek(double wp, int maxnd, QString sn);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -3757,7 +3757,7 @@ public:
 
 	ConstraintStudentsMaxDaysPerWeek(double wp, int maxnd);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -3803,7 +3803,7 @@ public:
 
 	QString getXmlDescription(const Rules& r) const ;
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const ;
 
@@ -3843,7 +3843,7 @@ public:
 
 	QString getXmlDescription(const Rules& r) const ;
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const ;
 
@@ -3886,7 +3886,7 @@ public:
 
 	QString getXmlDescription(const Rules& r) const ;
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const ;
 
@@ -3925,7 +3925,7 @@ public:
 
 	QString getXmlDescription(const Rules& r) const ;
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const ;
 
@@ -3977,7 +3977,7 @@ public:
 
 	ConstraintStudentsSetMaxSpanPerDay(double wp, int maxspan, QString sn);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const ;
 
@@ -4014,7 +4014,7 @@ public:
 
 	ConstraintStudentsMaxSpanPerDay(double wp, int maxspan);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const ;
 
@@ -4070,7 +4070,7 @@ public:
 
 	ConstraintStudentsSetMinRestingHours(double wp, int minrestinghours, bool circ, QString sn);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const ;
 
@@ -4109,7 +4109,7 @@ public:
 
 	ConstraintStudentsMinRestingHours(double wp, int minrestinghours, bool circ);
 
-	bool computeInternalStructure(QWidget* parent, Rules& r);
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const ;
 

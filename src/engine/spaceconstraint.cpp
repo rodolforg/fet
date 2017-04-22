@@ -105,7 +105,7 @@ ConstraintBasicCompulsorySpace::ConstraintBasicCompulsorySpace(double wp) :
 {
 }
 
-bool ConstraintBasicCompulsorySpace::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintBasicCompulsorySpace::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 	Q_UNUSED(r);
@@ -443,7 +443,7 @@ QString ConstraintRoomNotAvailableTimes::getDetailedDescription(const Rules& r) 
 	return s;
 }
 
-bool ConstraintRoomNotAvailableTimes::computeInternalStructure(QWidget* parent, Rules& r){
+bool ConstraintRoomNotAvailableTimes::computeInternalStructure(QWidget* parent, const Rules& r){
 	//this->room_ID=r.searchRoom(this->room);
 	room_ID=r.roomsHash.value(room, -1);
 	
@@ -648,7 +648,7 @@ bool ConstraintActivityPreferredRoom::operator==(ConstraintActivityPreferredRoom
 	return true;
 }
 
-bool ConstraintActivityPreferredRoom::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintActivityPreferredRoom::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	this->_activity=-1;
 	int ac=r.activitiesHash.value(activityId, -1);
@@ -892,7 +892,7 @@ ConstraintActivityPreferredRooms::ConstraintActivityPreferredRooms(double wp, in
 	this->roomsNames=roomsList;
 }
 
-bool ConstraintActivityPreferredRooms::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintActivityPreferredRooms::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	_activity=r.activitiesHash.value(activityId, r.nInternalActivities);
 	int ac=_activity;
@@ -1138,7 +1138,7 @@ ConstraintStudentsSetHomeRoom::ConstraintStudentsSetHomeRoom(double wp, QString 
 	this->roomName=rm;
 }
 
-bool ConstraintStudentsSetHomeRoom::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsSetHomeRoom::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 
@@ -1404,7 +1404,7 @@ ConstraintStudentsSetHomeRooms::ConstraintStudentsSetHomeRooms(double wp, QStrin
 	this->roomsNames=rms;
 }
 
-bool ConstraintStudentsSetHomeRooms::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsSetHomeRooms::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//This procedure computes the internal list of all the activities
 	//which correspond to the constraint.
@@ -1682,7 +1682,7 @@ ConstraintTeacherHomeRoom::ConstraintTeacherHomeRoom(double wp, QString tc, QStr
 	this->roomName=rm;
 }
 
-bool ConstraintTeacherHomeRoom::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeacherHomeRoom::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 
@@ -1946,7 +1946,7 @@ ConstraintTeacherHomeRooms::ConstraintTeacherHomeRooms(double wp, QString tc, co
 	this->roomsNames=rms;
 }
 
-bool ConstraintTeacherHomeRooms::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeacherHomeRooms::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//This procedure computes the internal list of all the activities
 	//which correspond to the constraint.
@@ -2222,7 +2222,7 @@ ConstraintSubjectPreferredRoom::ConstraintSubjectPreferredRoom(double wp, const 
 	this->roomName=rm;
 }
 
-bool ConstraintSubjectPreferredRoom::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintSubjectPreferredRoom::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//This procedure computes the internal list of all the activities
 	//which correspond to the subject of the constraint.
@@ -2452,7 +2452,7 @@ ConstraintSubjectPreferredRooms::ConstraintSubjectPreferredRooms(double wp, cons
 	this->roomsNames=rms;
 }
 
-bool ConstraintSubjectPreferredRooms::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintSubjectPreferredRooms::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//This procedure computes the internal list of all the activities
 	//which correspond to the subject of the constraint.
@@ -2698,7 +2698,7 @@ ConstraintSubjectActivityTagPreferredRoom::ConstraintSubjectActivityTagPreferred
 	this->roomName=rm;
 }
 
-bool ConstraintSubjectActivityTagPreferredRoom::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintSubjectActivityTagPreferredRoom::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//This procedure computes the internal list of all the activities
 	//which correspond to the subject of the constraint.
@@ -2937,7 +2937,7 @@ ConstraintSubjectActivityTagPreferredRooms::ConstraintSubjectActivityTagPreferre
 	this->roomsNames=rms;
 }
 
-bool ConstraintSubjectActivityTagPreferredRooms::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintSubjectActivityTagPreferredRooms::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//This procedure computes the internal list of all the activities
 	//which correspond to the subject of the constraint.
@@ -3190,7 +3190,7 @@ ConstraintActivityTagPreferredRoom::ConstraintActivityTagPreferredRoom(double wp
 	this->roomName=rm;
 }
 
-bool ConstraintActivityTagPreferredRoom::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintActivityTagPreferredRoom::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//This procedure computes the internal list of all the activities
 	//which correspond to the subject of the constraint.
@@ -3421,7 +3421,7 @@ ConstraintActivityTagPreferredRooms::ConstraintActivityTagPreferredRooms(double 
 	this->roomsNames=rms;
 }
 
-bool ConstraintActivityTagPreferredRooms::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintActivityTagPreferredRooms::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//This procedure computes the internal list of all the activities
 	//which correspond to the subject of the constraint.
@@ -3667,7 +3667,7 @@ ConstraintStudentsSetMaxBuildingChangesPerDay::ConstraintStudentsSetMaxBuildingC
 	this->maxBuildingChangesPerDay=mc;
 }
 
-bool ConstraintStudentsSetMaxBuildingChangesPerDay::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsSetMaxBuildingChangesPerDay::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	this->iSubgroupsList.clear();
 	
@@ -3947,7 +3947,7 @@ ConstraintStudentsMaxBuildingChangesPerDay::ConstraintStudentsMaxBuildingChanges
 	this->maxBuildingChangesPerDay=mc;
 }
 
-bool ConstraintStudentsMaxBuildingChangesPerDay::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsMaxBuildingChangesPerDay::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 	Q_UNUSED(r);
@@ -4181,7 +4181,7 @@ ConstraintStudentsSetMaxBuildingChangesPerWeek::ConstraintStudentsSetMaxBuilding
 	this->maxBuildingChangesPerWeek=mc;
 }
 
-bool ConstraintStudentsSetMaxBuildingChangesPerWeek::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsSetMaxBuildingChangesPerWeek::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	this->iSubgroupsList.clear();
 	
@@ -4460,7 +4460,7 @@ ConstraintStudentsMaxBuildingChangesPerWeek::ConstraintStudentsMaxBuildingChange
 	this->maxBuildingChangesPerWeek=mc;
 }
 
-bool ConstraintStudentsMaxBuildingChangesPerWeek::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsMaxBuildingChangesPerWeek::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 
@@ -4694,7 +4694,7 @@ ConstraintStudentsSetMinGapsBetweenBuildingChanges::ConstraintStudentsSetMinGaps
 	this->minGapsBetweenBuildingChanges=mg;
 }
 
-bool ConstraintStudentsSetMinGapsBetweenBuildingChanges::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsSetMinGapsBetweenBuildingChanges::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	this->iSubgroupsList.clear();
 	
@@ -4986,7 +4986,7 @@ ConstraintStudentsMinGapsBetweenBuildingChanges::ConstraintStudentsMinGapsBetwee
 	this->minGapsBetweenBuildingChanges=mg;
 }
 
-bool ConstraintStudentsMinGapsBetweenBuildingChanges::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsMinGapsBetweenBuildingChanges::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 	Q_UNUSED(r);
@@ -5232,7 +5232,7 @@ ConstraintTeacherMaxBuildingChangesPerDay::ConstraintTeacherMaxBuildingChangesPe
 	this->maxBuildingChangesPerDay=mc;
 }
 
-bool ConstraintTeacherMaxBuildingChangesPerDay::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeacherMaxBuildingChangesPerDay::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//this->teacher_ID=r.searchTeacher(this->teacherName);
 	teacher_ID=r.teachersHash.value(teacherName, -1);
@@ -5476,7 +5476,7 @@ ConstraintTeachersMaxBuildingChangesPerDay::ConstraintTeachersMaxBuildingChanges
 	this->maxBuildingChangesPerDay=mc;
 }
 
-bool ConstraintTeachersMaxBuildingChangesPerDay::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeachersMaxBuildingChangesPerDay::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 	Q_UNUSED(r);
@@ -5710,7 +5710,7 @@ ConstraintTeacherMaxBuildingChangesPerWeek::ConstraintTeacherMaxBuildingChangesP
 	this->maxBuildingChangesPerWeek=mc;
 }
 
-bool ConstraintTeacherMaxBuildingChangesPerWeek::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeacherMaxBuildingChangesPerWeek::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//this->teacher_ID=r.searchTeacher(this->teacherName);
 	teacher_ID=r.teachersHash.value(teacherName, -1);
@@ -5954,7 +5954,7 @@ ConstraintTeachersMaxBuildingChangesPerWeek::ConstraintTeachersMaxBuildingChange
 	this->maxBuildingChangesPerWeek=mc;
 }
 
-bool ConstraintTeachersMaxBuildingChangesPerWeek::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeachersMaxBuildingChangesPerWeek::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 	Q_UNUSED(r);
@@ -6188,7 +6188,7 @@ ConstraintTeacherMinGapsBetweenBuildingChanges::ConstraintTeacherMinGapsBetweenB
 	this->minGapsBetweenBuildingChanges=mg;
 }
 
-bool ConstraintTeacherMinGapsBetweenBuildingChanges::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeacherMinGapsBetweenBuildingChanges::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//this->teacher_ID=r.searchTeacher(this->teacherName);
 	teacher_ID=r.teachersHash.value(teacherName, -1);
@@ -6444,7 +6444,7 @@ ConstraintTeachersMinGapsBetweenBuildingChanges::ConstraintTeachersMinGapsBetwee
 	this->minGapsBetweenBuildingChanges=mg;
 }
 
-bool ConstraintTeachersMinGapsBetweenBuildingChanges::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeachersMinGapsBetweenBuildingChanges::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 	Q_UNUSED(r);
@@ -6691,7 +6691,7 @@ ConstraintActivitiesOccupyMaxDifferentRooms::ConstraintActivitiesOccupyMaxDiffer
 	this->maxDifferentRooms=max_different_rooms;
 }
 
-bool ConstraintActivitiesOccupyMaxDifferentRooms::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintActivitiesOccupyMaxDifferentRooms::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	this->_activitiesIndices.clear();
 	
@@ -6959,7 +6959,7 @@ ConstraintActivitiesSameRoomIfConsecutive::ConstraintActivitiesSameRoomIfConsecu
 	this->activitiesIds=a_L;
 }
 
-bool ConstraintActivitiesSameRoomIfConsecutive::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintActivitiesSameRoomIfConsecutive::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//this cares about inactive activities, also, so do not assert this->_actIndices.count()==this->actIds.count()
 	_activitiesIndices.clear();

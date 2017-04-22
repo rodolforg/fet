@@ -1613,7 +1613,7 @@ bool Rules::setsShareStudents(const QString& studentsSet1, const QString& studen
 	
 }
 
-bool Rules::augmentedSetsShareStudentsFaster(const QString& studentsSet1, const QString& studentsSet2)
+bool Rules::augmentedSetsShareStudentsFaster(const QString& studentsSet1, const QString& studentsSet2) const
 {
 	//StudentsSet* s1=this->searchStudentsSet(studentsSet1);
 	StudentsSet* s1=studentsHash.value(studentsSet1, NULL);

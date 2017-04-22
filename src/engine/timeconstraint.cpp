@@ -200,7 +200,7 @@ ConstraintBasicCompulsoryTime::ConstraintBasicCompulsoryTime(double wp) :
 {
 }
 
-bool ConstraintBasicCompulsoryTime::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintBasicCompulsoryTime::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 	Q_UNUSED(r);
@@ -566,7 +566,7 @@ QString ConstraintTeacherNotAvailableTimes::getDetailedDescription(const Rules& 
 	return s;
 }
 
-bool ConstraintTeacherNotAvailableTimes::computeInternalStructure(QWidget* parent, Rules& r){
+bool ConstraintTeacherNotAvailableTimes::computeInternalStructure(QWidget* parent, const Rules& r){
 	//this->teacher_ID=r.searchTeacher(this->teacher);
 	teacher_ID=r.teachersHash.value(teacher, -1);
 
@@ -758,7 +758,7 @@ ConstraintStudentsSetNotAvailableTimes::ConstraintStudentsSetNotAvailableTimes(d
 	this->hours=h;
 }
 
-bool ConstraintStudentsSetNotAvailableTimes::computeInternalStructure(QWidget* parent, Rules& r){
+bool ConstraintStudentsSetNotAvailableTimes::computeInternalStructure(QWidget* parent, const Rules& r){
 	//StudentsSet* ss=r.searchAugmentedStudentsSet(this->students);
 	StudentsSet* ss=r.studentsHash.value(students, NULL);
 	
@@ -1047,7 +1047,7 @@ ConstraintActivitiesSameStartingTime::ConstraintActivitiesSameStartingTime(doubl
 
 }
 
-bool ConstraintActivitiesSameStartingTime::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintActivitiesSameStartingTime::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//compute the indices of the activities,
 	//based on their unique ID
@@ -1317,7 +1317,7 @@ ConstraintActivitiesNotOverlapping::ConstraintActivitiesNotOverlapping(double wp
 
 }
 
-bool ConstraintActivitiesNotOverlapping::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintActivitiesNotOverlapping::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//compute the indices of the activities,
 	//based on their unique ID
@@ -1618,7 +1618,7 @@ bool ConstraintMinDaysBetweenActivities::operator==(ConstraintMinDaysBetweenActi
 	return true;
 }
 
-bool ConstraintMinDaysBetweenActivities::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintMinDaysBetweenActivities::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//compute the indices of the activities,
 	//based on their unique ID
@@ -1917,7 +1917,7 @@ ConstraintMaxDaysBetweenActivities::ConstraintMaxDaysBetweenActivities(double wp
 	this->maxDays=n;
 }
 
-bool ConstraintMaxDaysBetweenActivities::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintMaxDaysBetweenActivities::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//compute the indices of the activities,
 	//based on their unique ID
@@ -2206,7 +2206,7 @@ ConstraintMinGapsBetweenActivities::ConstraintMinGapsBetweenActivities(double wp
 	this->minGaps=ngaps;
 }
 
-bool ConstraintMinGapsBetweenActivities::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintMinGapsBetweenActivities::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//compute the indices of the activities,
 	//based on their unique ID
@@ -2495,7 +2495,7 @@ ConstraintTeachersMaxHoursDaily::ConstraintTeachersMaxHoursDaily(double wp, int 
 	this->maxHoursDaily=maxhours;
 }
 
-bool ConstraintTeachersMaxHoursDaily::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeachersMaxHoursDaily::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 	Q_UNUSED(r);
@@ -2685,7 +2685,7 @@ ConstraintTeacherMaxHoursDaily::ConstraintTeacherMaxHoursDaily(double wp, int ma
 	this->teacherName=teacher;
 }
 
-bool ConstraintTeacherMaxHoursDaily::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeacherMaxHoursDaily::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 
@@ -2877,7 +2877,7 @@ ConstraintTeachersMaxHoursContinuously::ConstraintTeachersMaxHoursContinuously(d
 	this->maxHoursContinuously=maxhours;
 }
 
-bool ConstraintTeachersMaxHoursContinuously::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeachersMaxHoursContinuously::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 	Q_UNUSED(r);
@@ -3094,7 +3094,7 @@ ConstraintTeacherMaxHoursContinuously::ConstraintTeacherMaxHoursContinuously(dou
 	this->teacherName=teacher;
 }
 
-bool ConstraintTeacherMaxHoursContinuously::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeacherMaxHoursContinuously::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 
@@ -3315,7 +3315,7 @@ ConstraintTeachersActivityTagMaxHoursContinuously::ConstraintTeachersActivityTag
 	this->activityTagName=activityTag;
 }
 
-bool ConstraintTeachersActivityTagMaxHoursContinuously::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeachersActivityTagMaxHoursContinuously::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 
@@ -3573,7 +3573,7 @@ ConstraintTeacherActivityTagMaxHoursContinuously::ConstraintTeacherActivityTagMa
 	this->activityTagName=activityTag;
 }
 
-bool ConstraintTeacherActivityTagMaxHoursContinuously::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeacherActivityTagMaxHoursContinuously::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 
@@ -3835,7 +3835,7 @@ ConstraintTeacherMaxDaysPerWeek::ConstraintTeacherMaxDaysPerWeek(double wp, int 
 	this->maxDaysPerWeek=maxnd;
 }
 
-bool ConstraintTeacherMaxDaysPerWeek::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeacherMaxDaysPerWeek::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 
@@ -4037,7 +4037,7 @@ ConstraintTeachersMaxDaysPerWeek::ConstraintTeachersMaxDaysPerWeek(double wp, in
 	this->maxDaysPerWeek=maxnd;
 }
 
-bool ConstraintTeachersMaxDaysPerWeek::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeachersMaxDaysPerWeek::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 	Q_UNUSED(r);
@@ -4244,7 +4244,7 @@ ConstraintTeachersMaxGapsPerWeek::ConstraintTeachersMaxGapsPerWeek(double wp, in
 	this->maxGaps=mg;
 }
 
-bool ConstraintTeachersMaxGapsPerWeek::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeachersMaxGapsPerWeek::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 	Q_UNUSED(r);
@@ -4443,7 +4443,7 @@ ConstraintTeacherMaxGapsPerWeek::ConstraintTeacherMaxGapsPerWeek(double wp, QStr
 	this->maxGaps=mg;
 }
 
-bool ConstraintTeacherMaxGapsPerWeek::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeacherMaxGapsPerWeek::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 
@@ -4645,7 +4645,7 @@ ConstraintTeachersMaxGapsPerDay::ConstraintTeachersMaxGapsPerDay(double wp, int 
 	this->maxGaps=mg;
 }
 
-bool ConstraintTeachersMaxGapsPerDay::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeachersMaxGapsPerDay::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 	Q_UNUSED(r);
@@ -4843,7 +4843,7 @@ ConstraintTeacherMaxGapsPerDay::ConstraintTeacherMaxGapsPerDay(double wp, QStrin
 	this->maxGaps=mg;
 }
 
-bool ConstraintTeacherMaxGapsPerDay::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeacherMaxGapsPerDay::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 
@@ -5135,7 +5135,7 @@ QString ConstraintBreakTimes::getDetailedDescription(const Rules& r) const {
 	return s;
 }
 
-bool ConstraintBreakTimes::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintBreakTimes::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(r);
 	
@@ -5313,7 +5313,7 @@ ConstraintStudentsMaxGapsPerWeek::ConstraintStudentsMaxGapsPerWeek(double wp, in
 	this->maxGaps=mg;
 }
 
-bool ConstraintStudentsMaxGapsPerWeek::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsMaxGapsPerWeek::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 	Q_UNUSED(r);
@@ -5520,7 +5520,7 @@ ConstraintStudentsSetMaxGapsPerWeek::ConstraintStudentsSetMaxGapsPerWeek(double 
 	this->students = st;
 }
 
-bool ConstraintStudentsSetMaxGapsPerWeek::computeInternalStructure(QWidget* parent, Rules& r){
+bool ConstraintStudentsSetMaxGapsPerWeek::computeInternalStructure(QWidget* parent, const Rules& r){
 	//StudentsSet* ss=r.searchAugmentedStudentsSet(this->students);
 	StudentsSet* ss=r.studentsHash.value(students, NULL);
 
@@ -5772,7 +5772,7 @@ ConstraintStudentsEarlyMaxBeginningsAtSecondHour::ConstraintStudentsEarlyMaxBegi
 	this->maxBeginningsAtSecondHour=mBSH;
 }
 
-bool ConstraintStudentsEarlyMaxBeginningsAtSecondHour::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsEarlyMaxBeginningsAtSecondHour::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 	Q_UNUSED(r);
@@ -6009,7 +6009,7 @@ ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::ConstraintStudentsSetEarlyM
 	this->maxBeginningsAtSecondHour=mBSH;
 }
 
-bool ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//StudentsSet* ss=r.searchAugmentedStudentsSet(this->students);
 	StudentsSet* ss=r.studentsHash.value(students, NULL);
@@ -6292,7 +6292,7 @@ ConstraintStudentsMaxHoursDaily::ConstraintStudentsMaxHoursDaily(double wp, int 
 	this->maxHoursDaily = maxnh;
 }
 
-bool ConstraintStudentsMaxHoursDaily::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsMaxHoursDaily::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 	Q_UNUSED(r);
@@ -6552,7 +6552,7 @@ QString ConstraintStudentsSetMaxHoursDaily::getDetailedDescription(const Rules& 
 	return s;
 }
 
-bool ConstraintStudentsSetMaxHoursDaily::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsSetMaxHoursDaily::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//StudentsSet* ss=r.searchAugmentedStudentsSet(this->students);
 	StudentsSet* ss=r.studentsHash.value(students, NULL);
@@ -6736,7 +6736,7 @@ ConstraintStudentsMaxHoursContinuously::ConstraintStudentsMaxHoursContinuously(d
 	this->maxHoursContinuously = maxnh;
 }
 
-bool ConstraintStudentsMaxHoursContinuously::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsMaxHoursContinuously::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 	Q_UNUSED(r);
@@ -7020,7 +7020,7 @@ QString ConstraintStudentsSetMaxHoursContinuously::getDetailedDescription(const 
 	return s;
 }
 
-bool ConstraintStudentsSetMaxHoursContinuously::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsSetMaxHoursContinuously::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//StudentsSet* ss=r.searchAugmentedStudentsSet(this->students);
 	StudentsSet* ss=r.studentsHash.value(students, NULL);
@@ -7228,7 +7228,7 @@ ConstraintStudentsActivityTagMaxHoursContinuously::ConstraintStudentsActivityTag
 	this->activityTagName=activityTag;
 }
 
-bool ConstraintStudentsActivityTagMaxHoursContinuously::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsActivityTagMaxHoursContinuously::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 
@@ -7558,7 +7558,7 @@ QString ConstraintStudentsSetActivityTagMaxHoursContinuously::getDetailedDescrip
 	return s;
 }
 
-bool ConstraintStudentsSetActivityTagMaxHoursContinuously::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsSetActivityTagMaxHoursContinuously::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//this->activityTagIndex=r.searchActivityTag(this->activityTagName);
 	activityTagIndex=r.activityTagsHash.value(activityTagName, -1);
@@ -7811,7 +7811,7 @@ ConstraintStudentsMinHoursDaily::ConstraintStudentsMinHoursDaily(double wp, int 
 	this->allowEmptyDays=_allowEmptyDays;
 }
 
-bool ConstraintStudentsMinHoursDaily::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsMinHoursDaily::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 	Q_UNUSED(r);
@@ -8105,7 +8105,7 @@ QString ConstraintStudentsSetMinHoursDaily::getDetailedDescription(const Rules& 
 	return s;
 }
 
-bool ConstraintStudentsSetMinHoursDaily::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsSetMinHoursDaily::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//StudentsSet* ss=r.searchAugmentedStudentsSet(this->students);
 	StudentsSet* ss=r.studentsHash.value(students, NULL);
@@ -8312,7 +8312,7 @@ bool ConstraintActivityPreferredStartingTime::operator==(ConstraintActivityPrefe
 	return true;
 }
 
-bool ConstraintActivityPreferredStartingTime::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintActivityPreferredStartingTime::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	/*Activity* act;
 	int i;
@@ -8567,7 +8567,7 @@ ConstraintActivityPreferredTimeSlots::ConstraintActivityPreferredTimeSlots(doubl
 	this->p_hours_L=h_L;
 }
 
-bool ConstraintActivityPreferredTimeSlots::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintActivityPreferredTimeSlots::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	/*Activity* act;
 	int i;
@@ -8888,7 +8888,7 @@ ConstraintActivitiesPreferredTimeSlots::ConstraintActivitiesPreferredTimeSlots(d
 	this->p_hours_L=h_L;
 }
 
-bool ConstraintActivitiesPreferredTimeSlots::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintActivitiesPreferredTimeSlots::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	this->p_nActivities=0;
 	this->p_activitiesIndices.clear();
@@ -9379,7 +9379,7 @@ ConstraintSubactivitiesPreferredTimeSlots::ConstraintSubactivitiesPreferredTimeS
 	this->p_hours_L=h_L;
 }
 
-bool ConstraintSubactivitiesPreferredTimeSlots::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintSubactivitiesPreferredTimeSlots::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	this->p_nActivities=0;
 	this->p_activitiesIndices.clear();
@@ -9859,7 +9859,7 @@ ConstraintActivityPreferredStartingTimes::ConstraintActivityPreferredStartingTim
 	this->hours_L=h_L;
 }
 
-bool ConstraintActivityPreferredStartingTimes::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintActivityPreferredStartingTimes::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	/*Activity* act;
 	int i;
@@ -10165,7 +10165,7 @@ ConstraintActivitiesPreferredStartingTimes::ConstraintActivitiesPreferredStartin
 	this->hours_L=h_L;
 }
 
-bool ConstraintActivitiesPreferredStartingTimes::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintActivitiesPreferredStartingTimes::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	this->nActivities=0;
 	this->activitiesIndices.clear();
@@ -10644,7 +10644,7 @@ ConstraintSubactivitiesPreferredStartingTimes::ConstraintSubactivitiesPreferredS
 	this->hours_L=h_L;
 }
 
-bool ConstraintSubactivitiesPreferredStartingTimes::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintSubactivitiesPreferredStartingTimes::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	this->nActivities=0;
 	this->activitiesIndices.clear();
@@ -11107,7 +11107,7 @@ ConstraintActivitiesSameStartingHour::ConstraintActivitiesSameStartingHour(doubl
 		this->activitiesId.append(act.at(i));
 }
 
-bool ConstraintActivitiesSameStartingHour::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintActivitiesSameStartingHour::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//compute the indices of the activities,
 	//based on their unique ID
@@ -11375,7 +11375,7 @@ ConstraintActivitiesSameStartingDay::ConstraintActivitiesSameStartingDay(double 
 		this->activitiesId.append(act.at(i));
 }
 
-bool ConstraintActivitiesSameStartingDay::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintActivitiesSameStartingDay::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//compute the indices of the activities,
 	//based on their unique ID
@@ -11638,7 +11638,7 @@ ConstraintTwoActivitiesConsecutive::ConstraintTwoActivitiesConsecutive(double wp
 	this->secondActivityId=secondActId;
 }
 
-bool ConstraintTwoActivitiesConsecutive::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTwoActivitiesConsecutive::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	/*Activity* act;
 	int i;
@@ -11904,7 +11904,7 @@ ConstraintTwoActivitiesGrouped::ConstraintTwoActivitiesGrouped(double wp, int fi
 	this->secondActivityId=secondActId;
 }
 
-bool ConstraintTwoActivitiesGrouped::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTwoActivitiesGrouped::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	/*Activity* act;
 	int i;
@@ -12183,7 +12183,7 @@ ConstraintThreeActivitiesGrouped::ConstraintThreeActivitiesGrouped(double wp, in
 	this->thirdActivityId=thirdActId;
 }
 
-bool ConstraintThreeActivitiesGrouped::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintThreeActivitiesGrouped::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	/*Activity* act;
 	int i;
@@ -12543,7 +12543,7 @@ ConstraintTwoActivitiesOrdered::ConstraintTwoActivitiesOrdered(double wp, int fi
 	this->secondActivityId=secondActId;
 }
 
-bool ConstraintTwoActivitiesOrdered::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTwoActivitiesOrdered::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	/*Activity* act;
 	int i;
@@ -12793,7 +12793,7 @@ ConstraintActivityEndsStudentsDay::ConstraintActivityEndsStudentsDay(double wp, 
 	this->activityId = actId;
 }
 
-bool ConstraintActivityEndsStudentsDay::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintActivityEndsStudentsDay::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	/*Activity* act;
 	int i;
@@ -13004,7 +13004,7 @@ ConstraintTeachersMinHoursDaily::ConstraintTeachersMinHoursDaily(double wp, int 
 	this->allowEmptyDays=_allowEmptyDays;
 }
 
-bool ConstraintTeachersMinHoursDaily::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeachersMinHoursDaily::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(r);
 	
@@ -13214,7 +13214,7 @@ ConstraintTeacherMinHoursDaily::ConstraintTeacherMinHoursDaily(double wp, int mi
 	this->allowEmptyDays=_allowEmptyDays;
 }
 
-bool ConstraintTeacherMinHoursDaily::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeacherMinHoursDaily::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//this->teacher_ID=r.searchTeacher(this->teacherName);
 	teacher_ID=r.teachersHash.value(teacherName, -1);
@@ -13426,7 +13426,7 @@ ConstraintTeacherMinDaysPerWeek::ConstraintTeacherMinDaysPerWeek(double wp, int 
 	this->teacherName=teacher;
 }
 
-bool ConstraintTeacherMinDaysPerWeek::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeacherMinDaysPerWeek::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 
@@ -13620,7 +13620,7 @@ ConstraintTeachersMinDaysPerWeek::ConstraintTeachersMinDaysPerWeek(double wp, in
 	this->minDaysPerWeek=mindays;
 }
 
-bool ConstraintTeachersMinDaysPerWeek::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeachersMinDaysPerWeek::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 	Q_UNUSED(r);
@@ -13816,7 +13816,7 @@ ConstraintTeacherIntervalMaxDaysPerWeek::ConstraintTeacherIntervalMaxDaysPerWeek
 	assert(sh>=0);
 }
 
-bool ConstraintTeacherIntervalMaxDaysPerWeek::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeacherIntervalMaxDaysPerWeek::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//this->teacher_ID=r.searchTeacher(this->teacherName);
 	teacher_ID=r.teachersHash.value(teacherName, -1);
@@ -14066,7 +14066,7 @@ ConstraintTeachersIntervalMaxDaysPerWeek::ConstraintTeachersIntervalMaxDaysPerWe
 	assert(sh>=0);
 }
 
-bool ConstraintTeachersIntervalMaxDaysPerWeek::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeachersIntervalMaxDaysPerWeek::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	if(this->startHour>=this->endHour){
 		TimeConstraintIrreconcilableMessage::warning(parent, tr("FET warning"),
@@ -14312,7 +14312,7 @@ ConstraintStudentsSetIntervalMaxDaysPerWeek::ConstraintStudentsSetIntervalMaxDay
 	assert(sh>=0);
 }
 
-bool ConstraintStudentsSetIntervalMaxDaysPerWeek::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsSetIntervalMaxDaysPerWeek::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	if(this->startHour>=this->endHour){
 		TimeConstraintIrreconcilableMessage::warning(parent, tr("FET warning"),
@@ -14610,7 +14610,7 @@ ConstraintStudentsIntervalMaxDaysPerWeek::ConstraintStudentsIntervalMaxDaysPerWe
 	assert(sh>=0);
 }
 
-bool ConstraintStudentsIntervalMaxDaysPerWeek::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsIntervalMaxDaysPerWeek::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	if(this->startHour>=this->endHour){
 		TimeConstraintIrreconcilableMessage::warning(parent, tr("FET warning"),
@@ -14854,7 +14854,7 @@ ConstraintActivitiesEndStudentsDay::ConstraintActivitiesEndStudentsDay(double wp
 	this->studentsName=st;
 }
 
-bool ConstraintActivitiesEndStudentsDay::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintActivitiesEndStudentsDay::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	this->nActivities=0;
 	this->activitiesIndices.clear();
@@ -15173,7 +15173,7 @@ ConstraintTeachersActivityTagMaxHoursDaily::ConstraintTeachersActivityTagMaxHour
 	this->activityTagName=activityTag;
 }
 
-bool ConstraintTeachersActivityTagMaxHoursDaily::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeachersActivityTagMaxHoursDaily::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 
@@ -15401,7 +15401,7 @@ ConstraintTeacherActivityTagMaxHoursDaily::ConstraintTeacherActivityTagMaxHoursD
 	this->activityTagName=activityTag;
 }
 
-bool ConstraintTeacherActivityTagMaxHoursDaily::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeacherActivityTagMaxHoursDaily::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 
@@ -15633,7 +15633,7 @@ ConstraintStudentsActivityTagMaxHoursDaily::ConstraintStudentsActivityTagMaxHour
 	this->activityTagName=activityTag;
 }
 
-bool ConstraintStudentsActivityTagMaxHoursDaily::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsActivityTagMaxHoursDaily::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 
@@ -15934,7 +15934,7 @@ QString ConstraintStudentsSetActivityTagMaxHoursDaily::getDetailedDescription(co
 	return s;
 }
 
-bool ConstraintStudentsSetActivityTagMaxHoursDaily::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsSetActivityTagMaxHoursDaily::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//this->activityTagIndex=r.searchActivityTag(this->activityTagName);
 	activityTagIndex=r.activityTagsHash.value(activityTagName, -1);
@@ -16152,7 +16152,7 @@ ConstraintStudentsMaxGapsPerDay::ConstraintStudentsMaxGapsPerDay(double wp, int 
 	this->maxGaps=mg;
 }
 
-bool ConstraintStudentsMaxGapsPerDay::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsMaxGapsPerDay::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 	Q_UNUSED(r);
@@ -16363,7 +16363,7 @@ ConstraintStudentsSetMaxGapsPerDay::ConstraintStudentsSetMaxGapsPerDay(double wp
 	this->students = st;
 }
 
-bool ConstraintStudentsSetMaxGapsPerDay::computeInternalStructure(QWidget* parent, Rules& r){
+bool ConstraintStudentsSetMaxGapsPerDay::computeInternalStructure(QWidget* parent, const Rules& r){
 	//StudentsSet* ss=r.searchAugmentedStudentsSet(this->students);
 	StudentsSet* ss=r.studentsHash.value(students, NULL);
 
@@ -16625,7 +16625,7 @@ ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::ConstraintActivitiesOccupyM
 	this->maxOccupiedTimeSlots=max_slots;
 }
 
-bool ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//this cares about inactive activities, also, so do not assert this->_actIndices.count()==this->actIds.count()
 	_activitiesIndices.clear();
@@ -16986,7 +16986,7 @@ ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::ConstraintActivitiesMaxS
 	this->maxSimultaneous=max_simultaneous;
 }
 
-bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//this cares about inactive activities, also, so do not assert this->_actIndices.count()==this->actIds.count()
 	_activitiesIndices.clear();
@@ -17338,7 +17338,7 @@ ConstraintStudentsSetMaxDaysPerWeek::ConstraintStudentsSetMaxDaysPerWeek(double 
 	this->maxDaysPerWeek=maxnd;
 }
 
-bool ConstraintStudentsSetMaxDaysPerWeek::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsSetMaxDaysPerWeek::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//StudentsSet* ss=r.searchAugmentedStudentsSet(this->students);
 	StudentsSet* ss=r.studentsHash.value(students, NULL);
@@ -17578,7 +17578,7 @@ ConstraintStudentsMaxDaysPerWeek::ConstraintStudentsMaxDaysPerWeek(double wp, in
 	this->maxDaysPerWeek=maxnd;
 }
 
-bool ConstraintStudentsMaxDaysPerWeek::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsMaxDaysPerWeek::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 	Q_UNUSED(r);
@@ -17770,7 +17770,7 @@ ConstraintTeacherMaxSpanPerDay::ConstraintTeacherMaxSpanPerDay(double wp, int ma
 	this->teacherName=teacher;
 }
 
-bool ConstraintTeacherMaxSpanPerDay::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeacherMaxSpanPerDay::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 
@@ -17961,7 +17961,7 @@ ConstraintTeachersMaxSpanPerDay::ConstraintTeachersMaxSpanPerDay(double wp, int 
 	this->maxSpanPerDay=maxspan;
 }
 
-bool ConstraintTeachersMaxSpanPerDay::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeachersMaxSpanPerDay::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 	Q_UNUSED(r);
@@ -18212,7 +18212,7 @@ QString ConstraintStudentsSetMaxSpanPerDay::getDetailedDescription(const Rules& 
 	return s;
 }
 
-bool ConstraintStudentsSetMaxSpanPerDay::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsSetMaxSpanPerDay::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//StudentsSet* ss=r.searchAugmentedStudentsSet(this->students);
 	StudentsSet* ss=r.studentsHash.value(students, NULL);
@@ -18448,7 +18448,7 @@ QString ConstraintStudentsMaxSpanPerDay::getDetailedDescription(const Rules& r) 
 	return s;
 }
 
-bool ConstraintStudentsMaxSpanPerDay::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsMaxSpanPerDay::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 	Q_UNUSED(r);
@@ -18582,7 +18582,7 @@ ConstraintTeacherMinRestingHours::ConstraintTeacherMinRestingHours(double wp, in
 	this->teacherName=teacher;
 }
 
-bool ConstraintTeacherMinRestingHours::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeacherMinRestingHours::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 
@@ -18776,7 +18776,7 @@ ConstraintTeachersMinRestingHours::ConstraintTeachersMinRestingHours(double wp, 
 	this->circular=circ;
 }
 
-bool ConstraintTeachersMinRestingHours::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintTeachersMinRestingHours::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 	Q_UNUSED(r);
@@ -19033,7 +19033,7 @@ QString ConstraintStudentsSetMinRestingHours::getDetailedDescription(const Rules
 	return s;
 }
 
-bool ConstraintStudentsSetMinRestingHours::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsSetMinRestingHours::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	//StudentsSet* ss=r.searchAugmentedStudentsSet(this->students);
 	StudentsSet* ss=r.studentsHash.value(students, NULL);
@@ -19272,7 +19272,7 @@ QString ConstraintStudentsMinRestingHours::getDetailedDescription(const Rules& r
 	return s;
 }
 
-bool ConstraintStudentsMinRestingHours::computeInternalStructure(QWidget* parent, Rules& r)
+bool ConstraintStudentsMinRestingHours::computeInternalStructure(QWidget* parent, const Rules& r)
 {
 	Q_UNUSED(parent);
 	Q_UNUSED(r);
