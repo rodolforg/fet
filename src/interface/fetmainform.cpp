@@ -169,6 +169,9 @@ using namespace std;
 #include "constraintstudentssetminrestinghoursform.h"
 #include "constraintstudentsminrestinghoursform.h"
 
+#include "constraintteachermincontinuousgapinintervalform.h"
+#include "constraintteachersmincontinuousgapinintervalform.h"
+
 #include "constraintactivitypreferredroomsform.h"
 
 #include "constraintstudentssethomeroomform.h"
@@ -420,6 +423,9 @@ const ConstraintDialogHelper::Mapping ConstraintDialogHelper::constraintActions[
 	{"TimeConstraintsTeachersMinRestingHours", fCreate<ConstraintTeachersMinRestingHoursForm>},
 	{"TimeConstraintsStudentsSetMinRestingHours", fCreate<ConstraintStudentsSetMinRestingHoursForm>},
 	{"TimeConstraintsStudentsMinRestingHours", fCreate<ConstraintStudentsMinRestingHoursForm>},
+
+	{"TimeConstraintsTeacherMinContinuousGapInInterval", fCreate<ConstraintTeacherMinContinuousGapInIntervalForm>},
+	{"TimeConstraintsTeachersMinContinuousGapInInterval", fCreate<ConstraintTeachersMinContinuousGapInIntervalForm>},
 };
 
 const int ConstraintDialogHelper::numConstraintActions = sizeof(constraintActions)/sizeof(constraintActions[0]);

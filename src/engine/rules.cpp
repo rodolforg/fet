@@ -1109,6 +1109,11 @@ bool Rules::modifyTeacher(const QString& initialTeacherName, const QString& fina
 			if(initialTeacherName == crt_constraint->teacherName)
 				crt_constraint->teacherName=finalTeacherName;
 		}
+		else if(ctr->type==CONSTRAINT_TEACHER_MIN_CONTINUOUS_GAP_IN_INTERVAL){
+			ConstraintTeacherMinContinuousGapInInterval* crt_constraint=(ConstraintTeacherMinContinuousGapInInterval*)ctr;
+			if(initialTeacherName == crt_constraint->teacherName)
+				crt_constraint->teacherName=finalTeacherName;
+		}
 	}
 	
 	foreach(SpaceConstraint* ctr, spaceConstraintsList){
@@ -4306,6 +4311,11 @@ void Rules::updateConstraintsAfterRemoval()
 			if(!permanentStudentsHash.contains(c->students))
 				toBeRemovedTime.append(tc);
 		}
+		else if(tc->type==CONSTRAINT_TEACHER_MIN_CONTINUOUS_GAP_IN_INTERVAL){
+			ConstraintTeacherMinContinuousGapInInterval* c=(ConstraintTeacherMinContinuousGapInInterval*)tc;
+			if(!existingTeachersNames.contains(c->teacherName))
+				toBeRemovedTime.append(tc);
+		}
 	}
 
 	foreach(SpaceConstraint* sc, spaceConstraintsList){
@@ -6496,9 +6506,15 @@ bool Rules::read(QWidget* parent, const QString& fileName, bool commandLine, QSt
 				}
 				else if(xmlReader.name()=="ConstraintStudentsMinRestingHours"){
 					crt_constraint=readStudentsMinRestingHours(xmlReader, log);
-
 				}
 				/////////  end 2017-02-07
+				else if(xmlReader.name()=="ConstraintTeacherMinContinuousGapInInterval"){
+					crt_constraint=readTeacherMinContinuousGapInInterval(xmlReader, log);
+				}
+				else if(xmlReader.name()=="ConstraintTeachersMinContinuousGapInInterval"){
+					crt_constraint=readTeachersMinContinuousGapInInterval(xmlReader, log);
+				}
+				/////////
 				else{
 					xmlReader.skipCurrentElement();
 					log.numberOfUnrecognizedFields++;
@@ -14490,6 +14506,110 @@ TimeConstraint* Rules::readStudentsMinRestingHours(QXmlStreamReader& xmlReader, 
 	}
 	return cn;
 }
+
+TimeConstraint *Rules::readTeacherMinContinuousGapInInterval(QXmlStreamReader &xmlReader, XmlLog &log)
+{
+	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintTeacherMinContinuousGapInInterval");
+	ConstraintTeacherMinContinuousGapInInterval* cn = new ConstraintTeacherMinContinuousGapInInterval();
+	while(xmlReader.readNextStartElement()){
+		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
+		if(xmlReader.name()=="Weight_Percentage"){
+			QString text=xmlReader.readElementText();
+			cn->weightPercentage=customFETStrToDouble(text);
+			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
+		}
+		else if(xmlReader.name()=="Active"){
+			QString text=xmlReader.readElementText();
+			if(text=="false"){
+				cn->active=false;
+			}
+		}
+		else if(xmlReader.name()=="Comments"){
+			QString text=xmlReader.readElementText();
+			cn->comments=text;
+		}
+		else if(xmlReader.name()=="Teacher_Name"){
+			QString text=xmlReader.readElementText();
+			cn->teacherName=text;
+		}
+		else if(xmlReader.name()=="Minimum_Gap_Duration"){
+			QString text=xmlReader.readElementText();
+			cn->minGapDuration=text.toInt();
+			log.verbose("    Adding min gap duration="+CustomFETString::number(cn->minGapDuration)+"\n");
+		}
+		else if(xmlReader.name()=="Interval_Start_Hour"){
+			cn->startHour = readHourTag(xmlReader, log, false);
+			if (cn->startHour < 0) {
+				delete cn;
+				return NULL;
+			}
+			log.verbose("    Interval start hour="+hoursOfTheDay[cn->startHour]+"\n");
+		}
+		else if(xmlReader.name()=="Interval_End_Hour"){
+			cn->endHour = readHourTag(xmlReader, log, true);
+			if (cn->endHour < 0) {
+				delete cn;
+				return NULL;
+			}
+			log.verbose("    Interval end hour="+hoursOfTheDay[cn->endHour]+"\n");
+		}
+		else{
+			xmlReader.skipCurrentElement();
+			log.numberOfUnrecognizedFields++;
+		}
+	}
+	return cn;
+}
+
+TimeConstraint *Rules::readTeachersMinContinuousGapInInterval(QXmlStreamReader &xmlReader, XmlLog &log)
+{
+	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintTeachersMinContinuousGapInInterval");
+	ConstraintTeachersMinContinuousGapInInterval* cn = new ConstraintTeachersMinContinuousGapInInterval();
+	while(xmlReader.readNextStartElement()){
+		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
+		if(xmlReader.name()=="Weight_Percentage"){
+			QString text=xmlReader.readElementText();
+			cn->weightPercentage=customFETStrToDouble(text);
+			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
+		}
+		else if(xmlReader.name()=="Active"){
+			QString text=xmlReader.readElementText();
+			if(text=="false"){
+				cn->active=false;
+			}
+		}
+		else if(xmlReader.name()=="Comments"){
+			QString text=xmlReader.readElementText();
+			cn->comments=text;
+		}
+		else if(xmlReader.name()=="Minimum_Gap_Duration"){
+			QString text=xmlReader.readElementText();
+			cn->minGapDuration=text.toInt();
+			log.verbose("    Adding min gap duration="+CustomFETString::number(cn->minGapDuration)+"\n");
+		}
+		else if(xmlReader.name()=="Interval_Start_Hour"){
+			cn->startHour = readHourTag(xmlReader, log, false);
+			if (cn->startHour < 0) {
+				delete cn;
+				return NULL;
+			}
+			log.verbose("    Interval start hour="+hoursOfTheDay[cn->startHour]+"\n");
+		}
+		else if(xmlReader.name()=="Interval_End_Hour"){
+			cn->endHour = readHourTag(xmlReader, log, true);
+			if (cn->endHour < 0) {
+				delete cn;
+				return NULL;
+			}
+			log.verbose("    Interval end hour="+hoursOfTheDay[cn->endHour]+"\n");
+		}
+		else{
+			xmlReader.skipCurrentElement();
+			log.numberOfUnrecognizedFields++;
+		}
+	}
+	return cn;
+}
 ///////////////
 
 ///space constraints reading routines
@@ -16239,6 +16359,25 @@ SpaceConstraint* Rules::readActivitiesSameRoomIfConsecutive(QXmlStreamReader& xm
 	assert(ac==cn->activitiesIds.count());
 
 	return cn;
+}
+
+int Rules::readHourTag(QXmlStreamReader &xmlReader, XmlLog &log, bool acceptEndOfDay) const
+{
+	QString text=xmlReader.readElementText();
+	if(text.isEmpty()) {
+		if (!acceptEndOfDay)
+			return -1;
+		log.verbose("    Hour field void, meaning end of day\n");
+		return nHoursPerDay;
+	}
+	for(int h=0; h < nHoursPerDay; h++)
+		if(hoursOfTheDay[h] == text)
+			return h;
+	if (acceptEndOfDay)
+		xmlReader.raiseError(tr("Hour %1 is inexistent (it is also not void, to specify end of the day)").arg(text));
+	else
+		xmlReader.raiseError(tr("Hour %1 is inexistent").arg(text));
+	return -1;
 }
 
 ////////////////

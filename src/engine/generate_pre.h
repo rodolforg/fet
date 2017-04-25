@@ -38,6 +38,7 @@ class QWidget;
 #include "constraints/mindaysbetweenactivities.h"
 #include "constraints/maxdaysbetweenactivities.h"
 #include "constraints/mingapsbetweenactivities.h"
+#include "constraints/teachersmincontinuousgapininterval.h"
 
 extern int permutation[MAX_ACTIVITIES]; //the permutation matrix to obtain activities in
 //decreasing difficulty order
@@ -423,6 +424,8 @@ bool computeTeachersMinRestingHours(QWidget* parent);
 bool computeSubgroupsMaxSpanPerDay(QWidget* parent);
 bool computeSubgroupsMinRestingHours(QWidget* parent);
 ////////////
+
+extern MinContinuousGapInIntervalForTeachers minContinuousGapInIntervalForTeachersList;
 
 ////////BEGIN rooms
 bool computeBasicSpace(QWidget* parent);

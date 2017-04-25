@@ -66,6 +66,7 @@ private:
 	inline bool teacherRemoveAnActivityFromAnywhere(int tch, int level, int ai, QList<int>& conflActivities, int& nConflActivities, int& removedActivity);
 	inline bool teacherRemoveAnActivityFromBeginOrEndCertainDay(int tch, int d2, int level, int ai, QList<int>& conflActivities, int& nConflActivities, int& removedActivity);
 	inline bool teacherRemoveAnActivityFromAnywhereCertainDay(int tch, int d2, int level, int ai, QList<int>& conflActivities, int& nConflActivities, int& removedActivity);
+	inline bool teacherRemoveAnActivityFromIntervalCertainDay(int tch, int d2, const int h0, const int h1, int level, int ai, QList<int> &conflActivities, int &nConflActivities, int &removedActivity);
 
 	inline bool teacherRemoveAnActivityFromAnywhereCertainDayCertainActivityTag(int tch, int d2, int actTag, int level, int ai, QList<int>& conflActivities, int& nConflActivities, int& removedActivity);
 
