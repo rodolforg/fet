@@ -8267,6 +8267,8 @@ void computeMustComputeTimetableTeachers()
 			  teachersMinRestingHoursCircularPercentages[tch]>=0 ||
 			  teachersMinRestingHoursNotCircularPercentages[tch]>=0 ||
 
+			  minContinuousGapInIntervalForTeachersList.data[tch][0].weightPercentage >=0 ||
+
 			  teachersIntervalMaxDaysPerWeekPercentages1[tch]>=0 ||
 			  teachersIntervalMaxDaysPerWeekPercentages2[tch]>=0 ||
 			  teachersIntervalMaxDaysPerWeekPercentages3[tch]>=0 ||
