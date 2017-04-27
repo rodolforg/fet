@@ -37,7 +37,7 @@ QString Teacher::getXmlDescription()
 	s+="	<Target_Number_of_Hours>"+CustomFETString::number(targetNumberOfHours)+"</Target_Number_of_Hours>\n";
 	s+="	<Qualified_Subjects>\n";
 	foreach(QString sbj, qualifiedSubjectsList)
-		s+="		<Qualified_Subject>"+sbj+"</Qualified_Subject>\n";
+		s+="		<Qualified_Subject>"+protect(sbj)+"</Qualified_Subject>\n";
 	s+="	</Qualified_Subjects>\n";
 	s+="	<Comments>"+protect(comments)+"</Comments>\n";
 	s+="</Teacher>\n";
