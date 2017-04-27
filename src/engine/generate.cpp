@@ -8077,7 +8077,7 @@ impossibleteachersminrestinghours:
 				const int startHour = minContinuousGapInIntervalForTeachersList.data[tch][iv].startHour;
 				const int endHour = minContinuousGapInIntervalForTeachersList.data[tch][iv].endHour;
 				const int minRequiredGap = minContinuousGapInIntervalForTeachersList.data[tch][iv].minGapDuration;
-				if (h+act->duration < startHour || h > endHour )
+				if (h+act->duration < startHour || h >= endHour )
 					break;
 
 				int _gap = 0;
@@ -8100,7 +8100,7 @@ impossibleteachersminrestinghours:
 				}
 
 				getTchTimetable(tch, conflActivities[newtime]);
-				updateTchNHoursGaps(tch, d); //needed for teacherRemoveAnActivityFromAnywhereCertainDay below
+				updateTchNHoursGaps(tch, d); //needed for teacherRemoveAnActivityFromIntervalCertainDay below
 
 				for(;;){
 					int continuousGap = 0;
@@ -8129,7 +8129,7 @@ impossibleteachersminrestinghours:
 					assert(ai2>=0);
 
 					removeAi2FromTchTimetable(ai2);
-					tchDayNHours[d]-=gt.rules.internalActivitiesList[ai2].duration; //needed for teacherRemoveAnActivityFromAnywhereCertainDay above
+					tchDayNHours[d]-=gt.rules.internalActivitiesList[ai2].duration; //needed for teacherRemoveAnActivityFromIntervalCertainDay above
 					assert(tchDayNHours[d]>=0);
 				}
 			}
