@@ -1121,7 +1121,7 @@ Since there are two dialogs, one for activities and one for subactivities the (n
 By the way, is it really necessary to have two dialogs? I could imagine a check box "subactivity only" in a common dialog for both, activities and subactivities. This would make this comment obsolete.
 
 66---------------------------------------------------------
-From Chafik Graiguer and Pietro:
+From Chafik Graiguer and Pietro (see also items #145 and #248):
 
 -Min hours daily with an activity tag (to count real activities only leaving pseudo activities out of count)
 -Min hours continuously with an activity tag 
@@ -2252,7 +2252,7 @@ Liviu Lalescu: I'll add this in the TODO. But if students begin at first hour,
 add preferred times for the activities in the first hours.
 
 145---------------------------------------------------------
-From Pietro (on forum):
+From Pietro (on forum) (see also items #66 and #248):
 
 Do you think it is possible to have a "MIN hours daily with activity tag" constraint?
 
@@ -4200,7 +4200,7 @@ add a QSet and a QList together. But this will require more memory
 allocation and operation. I am not sure.
 
 248---------------------------------------------------------
-From Vangelis Karafillidis (on forum):
+From Vangelis Karafillidis (on forum) (see also items #66 and #145):
 
 Is there ANY way to achieve a constraint like: "Min hours daily with an activity tag for a students set"? The polar
 opposite (max hours) is available in FET, but what about MIN HOURS? I was thinking of the equivalent of inserting
@@ -4213,6 +4213,9 @@ On each day, or only on non-empty days?
 
 If on each day: Please try with activities occupy max time slots from selection; it will not slow down the process.
 This constraint is highly optimized.
+
+Also from Benahmed Abdelkrim, on forum: I suggest adding the following constraint: min hours daily whith an activity tag.
+It allows to impose a minimum of daily hours with a tag. Especially to distinguish real and pseudo-activities in several cases.
 
 249---------------------------------------------------------
 From Handaya:
@@ -5135,3 +5138,90 @@ From Silver (on forum):
 I suggest you add the split and duration in subject window, why we add the split and duration when we add activity for 1st teacher, and for 2nd teacher ... .
 With this suggestion, we add the splits and duration 1 time for the subject.
 Exmple: Physics1 have 2 split in the week, so why I add this info in every activity for Physics1?!
+
+314---------------------------------------------------------
+From Benahmed Abdelkrim and Volker Dirr (on forum):
+
+http://lalescu.ro/liviu/fet/forum/index.php?topic=3141.0
+
+1. Volker Dirr suggests renaming the Algeria and Morocco version to other better names, since they can be used more generally in other countries/institutions.
+
+2. They suggest to implement some new constraints in the official FET, so that the Algeria and Morocco versions can be simulated by the official FET.
+
+Volker Dirr:
+
+I think one (maybe) needed is following constraint:
+constraint teacher is working only in one out of two set of times.
+
+So if teachers should work only in the morning or in the evening, you need to add as many constraint as you have got days:
+the first constraint:
+    1. set of times contains all morning hours on Monday.
+    2. set of times contains all evening hours of Monday.
+
+the second constraint:
+similar with Tuesday.
+...
+
+
+This constraint can be also used to avoid the problem of an other user. I remember a guy with 3 shifts (morning, evening, night). His request was, that a teacher is not allowed to teach the night shift and then the next morning shift.
+That could be also solved with the constraint above: "constraint teacher is working only in one out of two set of times."
+So this time he need to setup like this:
+the first constraint:
+    1. set of times contains all night hours on Monday.
+    2. set of times contains all morning hours of Tuesday.
+
+the second constraint:
+...
+
+So again as many constraint as you have days (or days-1 if you don't work over weekend).
+
+---
+
+Volker Dirr:
+
+The other will be the gaps constraints.
+So a constraint like:
+"max gaps per day in an interval" and "max gaps per week in an interval" might be maybe enough.
+
+So you maybe need to add only 2 constraints:
+1. "max gaps per day in an interval" with the interval : "first hour of of morning" up to "last hour of morning"
+2. "max gaps per day in an interval" with the interval : "first hour of of evening" up to "last hour of evening"
+
+---
+
+Benahmed Abdelkrim:
+
+I believe it's time to rethink the 2 variants of FET with the official version.
+This work is feasible by the addition of new time constraints for teachers and students. I myself realized this fact through adding pseudo activities to teachers and student groups. These are considered gaps. I got acceptable timetables with all student groups. But for teachers there was one or two that I have to manually edit.
+
+It is while working on the official version that I recently discovered this bug that accelerated the release of version 5.31.5.
+
+There was a lot of work to be done, especially for teachers because they did not have the same number of hours per week, and I had to think of teachers one by one.
+
+The time was lengthened in this way (of the hours of waiting), which I have now abandoned this project.
+
+Now the idea has been raised again but in another way that has encouraged me to intervene here.
+
+I believe it is possible to use the official version to realize time tables in the Algerian or Moroccan way.
+For this purpose it must consider the addition of the following time constraints:
+
+1. Min hours in a time interval
+Interval = first hour of morning(or afternoon) - last hour of morning(or afternoon)
+2. max gaps in the last(or first) hour of morning(or afternoon) for students (set)
+3. activity(ies) ends students interval.
+
+---
+
+Benahmed Abdelkrim:
+
+...So it is possible -in my opinion - to integrate both versions in official FET, reasoning not by day, but by interval.
+Can open a dialog with the user to define the number of intervals he wants.
+
+ for example:
+Interval1 = first hour of morning - last hour of morning
+interval2 = first hour of afternoon - last hour of afternoon
+interval3 = first hour of evening - last hour of evening
+...etc.
+And can also define between each interval a constraint of break time.
+
+In this way can integrate the time constraints specific to 2 versions customized in official FET.
