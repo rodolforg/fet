@@ -5030,7 +5030,7 @@ bool Rules::read(QWidget* parent, const QString& fileName, bool commandLine, QSt
 										 " Please note that starting with FET version %3 the list of subjects (tag <Subjects_List> in the .fet XML file)"
 										 " must appear before the list of teachers (tag <Teachers_List> in the .fet XML file)", "Please keep <Subjects_List> and"
 										 " <Teachers_List> untranslated, as in the original English string")
-										 .arg(teacher->name).arg(text).arg(FET_VERSION));
+										 .arg(teacher->name).arg(text).arg("5.30.0"));
 									}
 									else{
 										teacher->qualifiedSubjectsList.append(text);
