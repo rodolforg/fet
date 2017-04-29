@@ -51,6 +51,8 @@ ConstraintBaseDialog::ConstraintBaseDialog(QWidget* parent): QDialog(parent),
 
 	centerWidgetOnScreen(this);
 
+	modifyConstraintPushButton->setEnabled(false);
+	removeConstraintPushButton->setEnabled(false);
 //	populateFilters();
 //	filterChanged();
 }
@@ -88,12 +90,16 @@ void ConstraintBaseDialog::constraintChanged(int index)
 {
 	if(index<0){
 		currentConstraintTextEdit->setPlainText("");
+		modifyConstraintPushButton->setEnabled(false);
+		removeConstraintPushButton->setEnabled(false);
 		return;
 	}
 
 	assert(index<this->visibleConstraintsList.size());
 	QString s=getConstraintDetailedDescription(visibleConstraintsList.at(index));
 	currentConstraintTextEdit->setPlainText(s);
+	modifyConstraintPushButton->setEnabled(true);
+	removeConstraintPushButton->setEnabled(true);
 }
 
 void ConstraintBaseDialog::addConstraint()
