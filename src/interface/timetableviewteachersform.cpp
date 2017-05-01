@@ -247,7 +247,7 @@ void TimetableViewTeachersForm::updateTeachersTimetableTable(){
 
 	teachername = teachersListWidget->currentItem()->text();
 	
-	int teacher=gt.rules.searchTeacher(teachername);
+	const int teacher=gt.rules.searchTeacher(teachername);
 	if(teacher<0){
 		QMessageBox::warning(this, tr("FET warning"), tr("You have an old timetable view teachers dialog opened - please close it"));
 		return;
@@ -259,8 +259,17 @@ void TimetableViewTeachersForm::updateTeachersTimetableTable(){
 	assert(gt.rules.initialized);
 	const Solution& best_solution=CachedSchedule::getCachedSolution();
 
-	for(int j=0; j<gt.rules.nHoursPerDay && j<teachersTimetableTable->rowCount(); j++){
-		for(int k=0; k<gt.rules.nDaysPerWeek && k<teachersTimetableTable->columnCount(); k++){
+	for(int k=0; k<teachersTimetableTable->columnCount(); k++){
+		for(int j=0; j<teachersTimetableTable->rowCount(); j++){
+			if (teachersTimetableTable->rowSpan(j,k) != 1 || teachersTimetableTable->columnSpan(j,k) != 1)
+				teachersTimetableTable->setSpan(j, k, 1, 1);
+		}
+	}
+
+	for(int k=0; k<gt.rules.nDaysPerWeek && k<teachersTimetableTable->columnCount(); k++){
+		for(int j=0; j<gt.rules.nHoursPerDay && j<teachersTimetableTable->rowCount(); ){
+			int nextJ = j+1;
+
 			//begin by Marco Vassura
 			// add colors (start)
 			//if(USE_GUI_COLORS) {
@@ -357,14 +366,31 @@ void TimetableViewTeachersForm::updateTeachersTimetableTable(){
 				}
 				// add colors (end)
 				//end by Marco Vassura
+
+				while (nextJ < gt.rules.nHoursPerDay && ai == CachedSchedule::teachers_timetable_weekly[teacher][k][nextJ])
+					nextJ++;
 			}
 			else{
-				if(teacherNotAvailableDayHour[teacher][k][j] && PRINT_NOT_AVAILABLE_TIME_SLOTS)
-					s+="-x-";
-				else if(breakDayHour[k][j] && PRINT_BREAK_TIME_SLOTS)
-					s+="-X-";
+				if(teacherNotAvailableDayHour[teacher][k][j]) {
+					if (PRINT_NOT_AVAILABLE_TIME_SLOTS)
+						s+="-x-";
+					while (nextJ < gt.rules.nHoursPerDay && teacherNotAvailableDayHour[teacher][k][nextJ])
+						nextJ++;
+				}
+				else if(breakDayHour[k][j]) {
+					if (PRINT_BREAK_TIME_SLOTS)
+						s+="-X-";
+					while (nextJ < gt.rules.nHoursPerDay && breakDayHour[k][nextJ])
+						nextJ++;
+				}
 			}
 			teachersTimetableTable->item(j, k)->setText(s);
+
+			int rowspan = nextJ - j;
+			if (rowspan != teachersTimetableTable->rowSpan(j,k))
+				teachersTimetableTable->setSpan(j, k, rowspan, 1);
+
+			j = nextJ;
 		}
 	}
 	//	for(int i=0; i<gt.rules.nHoursPerDay; i++) //added in version 3_9_16, on 16 Oct. 2004

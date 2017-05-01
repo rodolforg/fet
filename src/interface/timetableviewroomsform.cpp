@@ -258,7 +258,7 @@ void TimetableViewRoomsForm::updateRoomsTimetableTable(){
 	s = roomName;
 	roomNameTextLabel->setText(s);
 	
-	int roomIndex=gt.rules.searchRoom(roomName);
+	const int roomIndex=gt.rules.searchRoom(roomName);
 
 	if(roomIndex<0){
 		QMessageBox::warning(this, tr("FET warning"), tr("You have an old timetable view rooms dialog opened - please close it"));
@@ -269,8 +269,17 @@ void TimetableViewRoomsForm::updateRoomsTimetableTable(){
 
 	assert(roomIndex>=0);
 
-	for(int j=0; j<gt.rules.nHoursPerDay && j<roomsTimetableTable->rowCount(); j++){
-		for(int k=0; k<gt.rules.nDaysPerWeek && k<roomsTimetableTable->columnCount(); k++){
+	for(int k=0; k<roomsTimetableTable->columnCount(); k++){
+		for(int j=0; j<roomsTimetableTable->rowCount(); j++){
+			if (roomsTimetableTable->rowSpan(j,k) != 1 || roomsTimetableTable->columnSpan(j,k) != 1)
+				roomsTimetableTable->setSpan(j, k, 1, 1);
+		}
+	}
+
+	for(int k=0; k<gt.rules.nDaysPerWeek && k<roomsTimetableTable->columnCount(); k++){
+		for(int j=0; j<gt.rules.nHoursPerDay && j<roomsTimetableTable->rowCount(); ){
+			int nextJ = j+1;
+
 			//begin by Marco Vassura
 			// add colors (start)
 			//if(USE_GUI_COLORS) {
@@ -349,14 +358,31 @@ void TimetableViewRoomsForm::updateRoomsTimetableTable(){
 				}
 				// add colors (end)
 				//end by Marco Vassura
+
+				while (nextJ < gt.rules.nHoursPerDay && ai == CachedSchedule::rooms_timetable_weekly[roomIndex][k][nextJ])
+					nextJ++;
 			}
 			else{
-				if(notAllowedRoomTimePercentages[roomIndex][k+j*gt.rules.nDaysPerWeek]>=0 && PRINT_NOT_AVAILABLE_TIME_SLOTS)
-					s+="-x-";
-				else if(breakDayHour[k][j] && PRINT_BREAK_TIME_SLOTS)
-					s+="-X-";
+				if(notAllowedRoomTimePercentages[roomIndex][k+j*gt.rules.nDaysPerWeek] >= 0) {
+					if (PRINT_NOT_AVAILABLE_TIME_SLOTS)
+						s+="-x-";
+					while (nextJ < gt.rules.nHoursPerDay && CachedSchedule::rooms_timetable_weekly[roomIndex][k][nextJ] == UNALLOCATED_ACTIVITY && notAllowedRoomTimePercentages[roomIndex][k+nextJ*gt.rules.nDaysPerWeek] >= 0)
+						nextJ++;
+				}
+				else if(breakDayHour[k][j]) {
+					if (PRINT_BREAK_TIME_SLOTS)
+						s+="-X-";
+					while (nextJ < gt.rules.nHoursPerDay && breakDayHour[k][nextJ])
+						nextJ++;
+				}
 			}
 			roomsTimetableTable->item(j, k)->setText(s);
+
+			int rowspan = nextJ - j;
+			if (rowspan != roomsTimetableTable->rowSpan(j,k))
+				roomsTimetableTable->setSpan(j, k, rowspan, 1);
+
+			j = nextJ;
 		}
 	}
 	//for(int i=0; i<gt.rules.nHoursPerDay; i++)

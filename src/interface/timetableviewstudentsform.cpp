@@ -343,8 +343,18 @@ void TimetableViewStudentsForm::updateStudentsTimetableTable(){
 			break;
 	assert(i<gt.rules.nInternalSubgroups);
 	const Solution& best_solution=CachedSchedule::getCachedSolution();
-	for(int j=0; j<gt.rules.nHoursPerDay && j<studentsTimetableTable->rowCount(); j++){
-		for(int k=0; k<gt.rules.nDaysPerWeek && k<studentsTimetableTable->columnCount(); k++){
+
+	for(int k=0; k<studentsTimetableTable->columnCount(); k++){
+		for(int j=0; j<studentsTimetableTable->rowCount(); j++){
+			if (studentsTimetableTable->rowSpan(j,k) != 1 || studentsTimetableTable->columnSpan(j,k) != 1)
+				studentsTimetableTable->setSpan(j, k, 1, 1);
+		}
+	}
+
+	for(int k=0; k<gt.rules.nDaysPerWeek && k<studentsTimetableTable->columnCount(); k++){
+		for(int j=0; j<gt.rules.nHoursPerDay && j<studentsTimetableTable->rowCount(); ){
+			int nextJ = j+1;
+
 			//begin by Marco Vassura
 			// add colors (start)
 			//if(USE_GUI_COLORS) {
@@ -430,14 +440,31 @@ void TimetableViewStudentsForm::updateStudentsTimetableTable(){
 				}
 				// add colors (end)
 				//end by Marco Vassura
+
+				while (nextJ < gt.rules.nHoursPerDay && ai == CachedSchedule::students_timetable_weekly[i][k][nextJ])
+					nextJ++;
 			}
 			else{
-				if(subgroupNotAvailableDayHour[i][k][j] && PRINT_NOT_AVAILABLE_TIME_SLOTS)
-					s+="-x-";
-				else if(breakDayHour[k][j] && PRINT_BREAK_TIME_SLOTS)
-					s+="-X-";
+				if(subgroupNotAvailableDayHour[i][k][j]) {
+					if (PRINT_NOT_AVAILABLE_TIME_SLOTS)
+						s+="-x-";
+					while (nextJ < gt.rules.nHoursPerDay && subgroupNotAvailableDayHour[i][k][nextJ])
+						nextJ++;
+				}
+				else if(breakDayHour[k][j]) {
+					if (PRINT_BREAK_TIME_SLOTS)
+						s+="-X-";
+					while (nextJ < gt.rules.nHoursPerDay && breakDayHour[k][nextJ])
+						nextJ++;
+				}
 			}
 			studentsTimetableTable->item(j, k)->setText(s);
+
+			int rowspan = nextJ - j;
+			if (rowspan != studentsTimetableTable->rowSpan(j,k))
+				studentsTimetableTable->setSpan(j, k, rowspan, 1);
+
+			j = nextJ;
 		}
 	}
 
