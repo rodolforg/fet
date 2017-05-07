@@ -8078,7 +8078,7 @@ impossibleteachersminrestinghours:
 				const int endHour = minContinuousGapInIntervalForTeachersList.data[tch][iv].endHour;
 				const int minRequiredGap = minContinuousGapInIntervalForTeachersList.data[tch][iv].minGapDuration;
 				if (h+act->duration < startHour || h >= endHour )
-					break;
+					continue;
 
 				int _gap = 0;
 				for (int h1 = startHour; h1 < endHour; h1++) {
