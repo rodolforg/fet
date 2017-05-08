@@ -61,8 +61,8 @@ private slots:
 //	void TeachersMinContinuousGapInInterval_FailsWithNegativeMinGap();
 //	void TeachersMinContinuousGapInInterval_FailsWithMinGapGreaterThanInterval();
 	void TeachersMinContinuousGapInInterval_NumErrorMsgs_WhenPreparationOfTeachersMinContinuousGapInIntervalFails();
-	void TeachersMinContinuousGapInInterval_TwoTottallyDifferentOnesToSameTeacher_StoresBoth();
-	void TeachersMinContinuousGapInInterval_TwoTottallyDifferentOnesToAllTeachers_StoresBoth();
+	void TeachersMinContinuousGapInInterval_TwoTotallyDifferentOnesToSameTeacher_StoresBoth();
+	void TeachersMinContinuousGapInInterval_TwoTotallyDifferentOnesToAllTeachers_StoresBoth();
 	void TeachersMinContinuousGapInInterval_MoreThanOneToSameTeacherWithSameData_StoresOnlyMostRestrictiveOne();
 	void TeachersMinContinuousGapInInterval_OneThatIncludesAnotherOfSameTeacher_StoresMostRestrictiveCase();
 	void TeachersMinContinuousGapInInterval_WithSameIntervalOfSameTeacher_WithWeight100_StoresLeastGap();
@@ -1056,7 +1056,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_NumErrorMsgs_WhenPrepar
 	QCOMPARE(mcgi.getErrors().count(), 1);
 }
 
-void GeneratePreTest::TeachersMinContinuousGapInInterval_TwoTottallyDifferentOnesToSameTeacher_StoresBoth()
+void GeneratePreTest::TeachersMinContinuousGapInInterval_TwoTotallyDifferentOnesToSameTeacher_StoresBoth()
 {
 	MockRules3Activities mock;
 	mock.addTeachers(2);
@@ -1086,7 +1086,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_TwoTottallyDifferentOne
 	QCOMPARE(mcgi.data[0][1].endHour, 9);
 }
 
-void GeneratePreTest::TeachersMinContinuousGapInInterval_TwoTottallyDifferentOnesToAllTeachers_StoresBoth()
+void GeneratePreTest::TeachersMinContinuousGapInInterval_TwoTotallyDifferentOnesToAllTeachers_StoresBoth()
 {
 	MockRules3Activities mock;
 	mock.addTeachers(2);
