@@ -63,6 +63,7 @@ private slots:
 	void TeachersMinContinuousGapInInterval_NumErrorMsgs_WhenPreparationOfTeachersMinContinuousGapInIntervalFails();
 	void TeachersMinContinuousGapInInterval_TwoTotallyDifferentOnesToSameTeacher_StoresBoth();
 	void TeachersMinContinuousGapInInterval_TwoTotallyDifferentOnesToAllTeachers_StoresBoth();
+	void TeachersMinContinuousGapInInterval_YellsWhenTeacherHasMoreConstraintsThanAllowed();
 	void TeachersMinContinuousGapInInterval_MoreThanOneToSameTeacherWithSameData_StoresOnlyMostRestrictiveOne();
 	void TeachersMinContinuousGapInInterval_OneThatIncludesAnotherOfSameTeacher_StoresMostRestrictiveCase();
 	void TeachersMinContinuousGapInInterval_WithSameIntervalOfSameTeacher_WithWeight100_StoresLeastGap();
@@ -1126,6 +1127,28 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_TwoTotallyDifferentOnes
 	QCOMPARE(mcgi.data[1][1].minGapDuration, 2);
 	QCOMPARE(mcgi.data[1][1].startHour, 6);
 	QCOMPARE(mcgi.data[1][1].endHour, 9);
+}
+
+void GeneratePreTest::TeachersMinContinuousGapInInterval_YellsWhenTeacherHasMoreConstraintsThanAllowed()
+{
+	MockRules3Activities mock;
+	mock.addTeachers(1);
+
+	ConstraintTeacherMinContinuousGapInInterval *ctr = new ConstraintTeacherMinContinuousGapInInterval(90.0, 2, "t1", 1, 3);
+	mock.rules.addTimeConstraint(ctr);
+	ctr = new ConstraintTeacherMinContinuousGapInInterval(50.0, 2, "t1", 2, 4);
+	mock.rules.addTimeConstraint(ctr);
+	ctr = new ConstraintTeacherMinContinuousGapInInterval(75.0, 2, "t1", 4, 6);
+	mock.rules.addTimeConstraint(ctr);
+	ctr = new ConstraintTeacherMinContinuousGapInInterval(60.0, 2, "t1", 7, 9);
+	mock.rules.addTimeConstraint(ctr);
+	mock.rules.computeInternalStructure(NULL);
+
+	MinContinuousGapInIntervalForTeachers mcgi;
+
+	bool result = mcgi.prepare(mock.rules);
+
+	QVERIFY2(!result, "Did not alert that there is more MinContinuousGapsForTeachers constraints than supported for one teacher");
 }
 
 void GeneratePreTest::TeachersMinContinuousGapInInterval_MoreThanOneToSameTeacherWithSameData_StoresOnlyMostRestrictiveOne()
