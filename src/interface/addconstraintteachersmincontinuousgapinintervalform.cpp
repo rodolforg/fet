@@ -1,5 +1,5 @@
 #include "addconstraintteachersmincontinuousgapinintervalform.h"
-#include "ui_addconstraintteachersmincontinuousgapinintervalform.h"
+#include "ui_addconstraintteachersmincontinuousgapinintervalform_template.h"
 
 #include "fet.h"
 #include "timeconstraint.h"
