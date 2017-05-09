@@ -114,6 +114,8 @@
 #include "modifyconstraintstudentssetminrestinghoursform.h"
 #include "modifyconstraintstudentsminrestinghoursform.h"
 
+#include "addconstraintteachersmincontinuousgapinintervalform.h"
+
 #include "lockunlock.h"
 
 #include "advancedfilterform.h"
@@ -932,6 +934,18 @@ void AllTimeConstraintsForm::modifyConstraint()
 	//74
 	else if(ctr->type==CONSTRAINT_STUDENTS_MIN_RESTING_HOURS){
 		ModifyConstraintStudentsMinRestingHoursForm form(this, (ConstraintStudentsMinRestingHours*)ctr);
+		setParentAndOtherThings(&form, this);
+		form.exec();
+	}
+	//75
+	else if(ctr->type==CONSTRAINT_TEACHER_MIN_CONTINUOUS_GAP_IN_INTERVAL){
+		AddConstraintTeachersMinContinuousGapInIntervalForm form(this, (ConstraintTeacherMinContinuousGapInInterval*)ctr);
+		setParentAndOtherThings(&form, this);
+		form.exec();
+	}
+	//76
+	else if(ctr->type==CONSTRAINT_TEACHERS_MIN_CONTINUOUS_GAP_IN_INTERVAL){
+		AddConstraintTeachersMinContinuousGapInIntervalForm form(this, (ConstraintTeachersMinContinuousGapInInterval*)ctr);
 		setParentAndOtherThings(&form, this);
 		form.exec();
 	}

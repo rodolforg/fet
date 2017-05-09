@@ -25,6 +25,7 @@ SOURCES += \
 	engine/constraints/mindaysbetweenactivities.cpp \
 	engine/constraints/maxdaysbetweenactivities.cpp \
 	engine/constraints/mingapsbetweenactivities.cpp \
+	engine/constraints/teachersmincontinuousgapininterval.cpp \
 	\
 	interface/fet.cpp \
 	interface/helpaboutform.cpp \
@@ -474,6 +475,9 @@ SOURCES += \
 	interface/teacherstudentsetsubjectactivitytag_filterwidget.cpp \
 	interface/timeconstraint_basedialog.cpp \
 	interface/spaceconstraint_basedialog.cpp \
+    interface/addconstraintteachersmincontinuousgapinintervalform.cpp \
+    interface/constraintteachersmincontinuousgapinintervalform.cpp \
+    interface/constraintteachermincontinuousgapinintervalform.cpp
 
 HEADERS += \
 	engine/timetableexport.h \
@@ -503,6 +507,7 @@ HEADERS += \
 	engine/constraints/mindaysbetweenactivities.h \
 	engine/constraints/maxdaysbetweenactivities.h \
 	engine/constraints/mingapsbetweenactivities.h \
+	engine/constraints/teachersmincontinuousgapininterval.h \
 	\
 	interface/fet.h \
 	interface/helpaboutform.h \
@@ -954,6 +959,9 @@ HEADERS += \
 	interface/teacherstudentsetsubjectactivitytag_filterwidget.h \
 	interface/timeconstraint_basedialog.h \
 	interface/spaceconstraint_basedialog.h \
+    interface/addconstraintteachersmincontinuousgapinintervalform.h \
+    interface/constraintteachersmincontinuousgapinintervalform.h \
+    interface/constraintteachermincontinuousgapinintervalform.h
 
 FORMS += \
 	interface/fetmainform_template.ui \
@@ -1285,6 +1293,7 @@ FORMS += \
 	\
 	interface/constraint_basedialog_template.ui \
 	interface/teacherstudentsetsubjectactivitytag_filterwidget.ui \
+    interface/addconstraintteachersmincontinuousgapinintervalform_template.ui
 
 TRANSLATIONS += \
 	../translations/fet_ar.ts \

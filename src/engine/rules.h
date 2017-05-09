@@ -859,6 +859,9 @@ private:
 	TimeConstraint* readStudentsSetMinRestingHours(QXmlStreamReader& xml, XmlLog& log);
 	TimeConstraint* readStudentsMinRestingHours(QXmlStreamReader& xml, XmlLog& log);
 
+	TimeConstraint* readTeacherMinContinuousGapInInterval(QXmlStreamReader& xml, XmlLog& log);
+	TimeConstraint* readTeachersMinContinuousGapInInterval(QXmlStreamReader& xml, XmlLog& log);
+
 	SpaceConstraint* readBasicCompulsorySpace(QXmlStreamReader& xml, XmlLog &log);
 	SpaceConstraint* readRoomNotAvailable(QXmlStreamReader& xml, XmlLog &log);
 	SpaceConstraint* readRoomNotAvailableTimes(QXmlStreamReader& xml, XmlLog &log);
@@ -895,6 +898,8 @@ private:
 
 	SpaceConstraint* readActivitiesOccupyMaxDifferentRooms(QXmlStreamReader& xml, XmlLog &log);
 	SpaceConstraint* readActivitiesSameRoomIfConsecutive(QXmlStreamReader& xml, XmlLog &log);
+
+	int readHourTag(QXmlStreamReader& xml, XmlLog &log, bool acceptEndOfDay) const;
 
 signals:
 	/// Any object property changed

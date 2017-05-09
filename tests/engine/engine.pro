@@ -2,5 +2,6 @@ TEMPLATE = subdirs
 
 SUBDIRS += \
     RandomKnuth \
-    GeneratePre
+    GeneratePre \
+    timeconstraints/ConstraintTeachersMinContinuousGapInInterval
 

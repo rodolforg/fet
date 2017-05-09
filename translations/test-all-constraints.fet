@@ -1661,6 +1661,23 @@
 	<Active>true</Active>
 	<Comments></Comments>
 </ConstraintStudentsMinRestingHours>
+<ConstraintTeacherMinContinuousGapInInterval>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Teacher_Name>t1</Teacher_Name>
+	<Minimum_Gap_Duration>2</Minimum_Gap_Duration>
+	<Interval_Start_Hour>10:00</Interval_Start_Hour>
+	<Interval_End_Hour>13:00</Interval_End_Hour>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeacherMinContinuousGapInInterval>
+<ConstraintTeachersMinContinuousGapInInterval>
+	<Weight_Percentage>100</Weight_Percentage>
+	<Minimum_Gap_Duration>2</Minimum_Gap_Duration>
+	<Interval_Start_Hour>11:00</Interval_Start_Hour>
+	<Interval_End_Hour>14:00</Interval_End_Hour>
+	<Active>true</Active>
+	<Comments></Comments>
+</ConstraintTeachersMinContinuousGapInInterval>
 </Time_Constraints_List>
 
 <Space_Constraints_List>

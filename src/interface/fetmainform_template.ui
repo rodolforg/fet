@@ -1003,6 +1003,7 @@
       <addaction name="dataTimeConstraintsTeacherMaxHoursContinuouslyAction"/>
       <addaction name="dataTimeConstraintsTeacherActivityTagMaxHoursContinuouslyAction"/>
       <addaction name="dataTimeConstraintsTeacherIntervalMaxDaysPerWeekAction"/>
+      <addaction name="dataTimeConstraintsTeacherMinContinuousGapInIntervalAction"/>
       <addaction name="dataTimeConstraintsTeacherMinRestingHoursAction"/>
       <addaction name="separator"/>
       <addaction name="dataTimeConstraintsTeachersMaxDaysPerWeekAction"/>
@@ -1016,6 +1017,7 @@
       <addaction name="dataTimeConstraintsTeachersMaxHoursContinuouslyAction"/>
       <addaction name="dataTimeConstraintsTeachersActivityTagMaxHoursContinuouslyAction"/>
       <addaction name="dataTimeConstraintsTeachersIntervalMaxDaysPerWeekAction"/>
+      <addaction name="dataTimeConstraintsTeachersMinContinuousGapInIntervalAction"/>
       <addaction name="dataTimeConstraintsTeachersMinRestingHoursAction"/>
      </widget>
      <widget class="QMenu" name="menuStudents_time_constraints">
@@ -2525,6 +2527,16 @@
   <action name="dataTeachersSubjectsQualificationsStatisticsAction">
    <property name="text">
     <string comment="It means the statistics for the teachers - check the teacher's subject qualification">Teachers subjects qualifications statistics</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTeachersMinContinuousGapInIntervalAction">
+   <property name="text">
+    <string>Min continuous gap in interval for all teachers</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsTeacherMinContinuousGapInIntervalAction">
+   <property name="text">
+    <string>A teacher has a min continuous gap in an hourly interval</string>
    </property>
   </action>
  </widget>

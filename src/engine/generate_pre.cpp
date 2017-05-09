@@ -307,6 +307,8 @@ double subgroupsMinRestingHoursNotCircularPercentages[MAX_TOTAL_SUBGROUPS]; //-1
 //bool subgroupsMinRestingHoursCircular[MAX_TOTAL_SUBGROUPS]; //true for circular
 ////////////
 
+MinContinuousGapInIntervalForTeachers minContinuousGapInIntervalForTeachersList;
+
 ////////rooms
 //double notAllowedRoomTimePercentages[MAX_ROOMS][MAX_HOURS_PER_WEEK]; //-1 for available
 Matrix2D<double> notAllowedRoomTimePercentages; //-1 for available
@@ -820,6 +822,12 @@ bool processTimeSpaceConstraints(QWidget* parent, QTextStream* initialOrderStrea
 	t=computeSubgroupsMinRestingHours(parent);
 	if(!t)
 		return false;
+
+	t=minContinuousGapInIntervalForTeachersList.prepare(gt.rules);
+	if(!t) {
+		reportSkippableErrors(parent, minContinuousGapInIntervalForTeachersList.getErrors());
+		return false;
+	}
 
 	////////////////
 	haveActivitiesOccupyOrSimultaneousConstraints=false;
@@ -8258,6 +8266,8 @@ void computeMustComputeTimetableTeachers()
 			  teachersMaxSpanPerDayPercentages[tch]>=0 ||
 			  teachersMinRestingHoursCircularPercentages[tch]>=0 ||
 			  teachersMinRestingHoursNotCircularPercentages[tch]>=0 ||
+
+			  minContinuousGapInIntervalForTeachersList.data[tch][0].weightPercentage >=0 ||
 
 			  teachersIntervalMaxDaysPerWeekPercentages1[tch]>=0 ||
 			  teachersIntervalMaxDaysPerWeekPercentages2[tch]>=0 ||

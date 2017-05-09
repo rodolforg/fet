@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddConstraintTeachersMinContinuousGapInIntervalForm</class>
+ <widget class="QDialog" name="AddConstraintTeachersMinContinuousGapInIntervalForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>399</width>
+    <height>293</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string extracomment="This is the title of the dialog to add a new constraint of this type">Add teachers min continuous gap in interval</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QWidget" name="teacherVerticalWidget" native="true">
+     <layout class="QVBoxLayout" name="teacherVerticalLayout">
+      <item>
+       <widget class="QLabel" name="teacherLabel">
+        <property name="text">
+         <string>Teacher</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="teacherComboBox"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="startHourLabel">
+       <property name="text">
+        <string>Interval start hour</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="startHourComboBox"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QLabel" name="endHourLabel">
+       <property name="text">
+        <string>Interval end hour</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="endHourComboBox"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="minContinuousGapLabel">
+       <property name="text">
+        <string>Min continuous gap</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="minContinuousGapSpinBox"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="weightLabel">
+       <property name="text">
+        <string>Weight percentage (necessary: 100%)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="weightLineEdit">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>100</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="okPushButton">
+       <property name="text">
+        <string>Add constraint</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="closePushButton">
+       <property name="text">
+        <string>Close</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

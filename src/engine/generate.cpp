@@ -661,7 +661,78 @@ inline bool Generate::teacherRemoveAnActivityFromAnywhereCertainDay(int tch, int
 		conflActivities.append(ai2);
 		nConflActivities++;
 		assert(nConflActivities==conflActivities.count());
-		
+
+		return true;
+	}
+	else
+		return false;
+}
+
+inline bool Generate::teacherRemoveAnActivityFromIntervalCertainDay(int tch, int d2, const int h0, const int h1, int level, int ai, QList<int>& conflActivities, int& nConflActivities, int& removedActivity) //returns true if successful, false if impossible
+{
+	Q_UNUSED(tch);
+
+	//remove an activity from anywhere
+	QList<int> acts;
+	//for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++){
+		if(tchDayNHours[d2]>0){
+			int actIndex=-1;
+			int h2;
+			for(h2=h0; h2<h1; h2++)
+				if(tchTimetable(d2,h2)>=0){
+					actIndex=tchTimetable(d2,h2);
+
+					if(fixedTimeActivity[actIndex] || swappedActivities[actIndex] || actIndex==ai || acts.contains(actIndex))
+						actIndex=-1;
+
+					if(actIndex>=0){
+						assert(!acts.contains(actIndex));
+						acts.append(actIndex);
+					}
+				}
+		}
+	//}
+
+	if(acts.count()>0){
+		int t;
+
+		if(level==0){
+			int optMinWrong=INF;
+
+			QList<int> tl;
+
+			for(int q=0; q<acts.count(); q++){
+				int ai2=acts.at(q);
+				if(optMinWrong>triedRemovals(ai2,c.times[ai2])){
+					optMinWrong=triedRemovals(ai2,c.times[ai2]);
+				}
+			}
+
+			for(int q=0; q<acts.count(); q++){
+				int ai2=acts.at(q);
+				if(optMinWrong==triedRemovals(ai2,c.times[ai2]))
+					tl.append(q);
+			}
+
+			assert(tl.size()>=1);
+			int mpos=tl.at(RandomKnuth::pick(tl.size()));
+
+			assert(mpos>=0 && mpos<acts.count());
+			t=mpos;
+		}
+		else{
+			t=RandomKnuth::pick(acts.count());
+		}
+
+		int ai2=acts.at(t);
+
+		removedActivity=ai2;
+
+		assert(!conflActivities.contains(ai2));
+		conflActivities.append(ai2);
+		nConflActivities++;
+		assert(nConflActivities==conflActivities.count());
+
 		return true;
 	}
 	else
@@ -3487,6 +3558,8 @@ again_if_impossible_activity:
 
 		bool okteachersmaxspanperday;
 		bool okteachersminrestinghours;
+
+		bool okteachersmincontinuousgapininterval;
 
 		bool okteachersmaxgapsperweek;
 		bool okteachersmaxgapsperday;
@@ -7989,6 +8062,91 @@ impossibleteachersminrestinghours:
 		}
 
 		////////////////////////////END teachers min resting hours
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+		////////////////////////////BEGIN teachers min continuous gap in interval
+
+		okteachersmincontinuousgapininterval = true;
+		foreach(int tch, act->iTeachersList) {
+			for (int iv = 0; iv < MinContinuousGapInIntervalForTeachers::MAX; iv++) {
+				if (minContinuousGapInIntervalForTeachersList.data[tch][iv].weightPercentage < 0)
+					break;
+				if(skipRandom(minContinuousGapInIntervalForTeachersList.data[tch][iv].weightPercentage))
+					continue;
+				const int startHour = minContinuousGapInIntervalForTeachersList.data[tch][iv].startHour;
+				const int endHour = minContinuousGapInIntervalForTeachersList.data[tch][iv].endHour;
+				const int minRequiredGap = minContinuousGapInIntervalForTeachersList.data[tch][iv].minGapDuration;
+				if (h+act->duration < startHour || h >= endHour )
+					continue;
+
+				int _gap = 0;
+				for (int h1 = startHour; h1 < endHour; h1++) {
+					if (newTeachersTimetable[tch][d][h1] < 0) {
+						_gap++;
+						if (_gap >= minRequiredGap)
+							break;
+					} else {
+						_gap = 0;
+					}
+				}
+				if (_gap >= minRequiredGap) {
+					continue;
+				}
+
+				if(level>=LEVEL_STOP_CONFLICTS_CALCULATION){
+					okteachersmincontinuousgapininterval=false;
+					goto impossibleteachersmincontinuousgapininterval;
+				}
+
+				getTchTimetable(tch, conflActivities[newtime]);
+				updateTchNHoursGaps(tch, d); //needed for teacherRemoveAnActivityFromIntervalCertainDay below
+
+				for(;;){
+					int continuousGap = 0;
+					for (int h1 = startHour; h1 < endHour; h1++) {
+						if (tchTimetable(d, h1) < 0) {
+							continuousGap++;
+							if (continuousGap >= minRequiredGap)
+								break;
+						} else {
+							continuousGap = 0;
+						}
+					}
+					if (continuousGap >= minRequiredGap) {
+						break;
+					}
+
+					int ai2=-1;
+
+					bool k=teacherRemoveAnActivityFromIntervalCertainDay(tch, d, startHour, endHour, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+					assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+					if(!k){
+						okteachersmincontinuousgapininterval=false;
+						goto impossibleteachersmincontinuousgapininterval;
+					}
+
+					assert(ai2>=0);
+
+					removeAi2FromTchTimetable(ai2);
+					tchDayNHours[d]-=gt.rules.internalActivitiesList[ai2].duration; //needed for teacherRemoveAnActivityFromIntervalCertainDay above
+					assert(tchDayNHours[d]>=0);
+				}
+			}
+		}
+
+impossibleteachersmincontinuousgapininterval:
+		if(!okteachersmincontinuousgapininterval){
+			if(updateSubgroups || updateTeachers)
+				removeAiFromNewTimetable(ai, act, d, h);
+			//removeConflActivities(conflActivities[newtime], nConflActivities[newtime], act, newtime);
+
+			nConflActivities[newtime]=MAX_ACTIVITIES;
+			continue;
+		}
+
+		////////////////////////////END teachers min continuous gap in interval
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 
