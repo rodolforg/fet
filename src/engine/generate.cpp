@@ -544,7 +544,6 @@ inline bool Generate::teacherRemoveAnActivityFromAnywhere(int tch, int level, in
 						actIndex=-1;
 
 					if(actIndex>=0){
-						assert(!acts.contains(actIndex));
 						acts.append(actIndex);
 					}
 				}
@@ -615,7 +614,6 @@ inline bool Generate::teacherRemoveAnActivityFromAnywhereCertainDay(int tch, int
 						actIndex=-1;
 
 					if(actIndex>=0){
-						assert(!acts.contains(actIndex));
 						acts.append(actIndex);
 					}
 				}
@@ -686,7 +684,6 @@ inline bool Generate::teacherRemoveAnActivityFromIntervalCertainDay(int tch, int
 						actIndex=-1;
 
 					if(actIndex>=0){
-						assert(!acts.contains(actIndex));
 						acts.append(actIndex);
 					}
 				}
@@ -757,7 +754,6 @@ inline bool Generate::teacherRemoveAnActivityFromAnywhereCertainDayCertainActivi
 						actIndex=-1;
 
 					if(actIndex>=0){
-						assert(!acts.contains(actIndex));
 						acts.append(actIndex);
 					}
 				}
@@ -1314,7 +1310,6 @@ inline bool Generate::subgroupRemoveAnActivityFromAnywhere(int sbg, int level, i
 						actIndex=-1;
 
 					if(actIndex>=0){
-						assert(!acts.contains(actIndex));
 						acts.append(actIndex);
 					}
 				}
@@ -1385,7 +1380,6 @@ inline bool Generate::subgroupRemoveAnActivityFromAnywhereCertainDay(int sbg, in
 						actIndex=-1;
 
 					if(actIndex>=0){
-						assert(!acts.contains(actIndex));
 						acts.append(actIndex);
 					}
 				}
@@ -1537,7 +1531,6 @@ inline bool Generate::subgroupRemoveAnActivityFromAnywhereCertainDayCertainActiv
 						actIndex=-1;
 
 					if(actIndex>=0){
-						assert(!acts.contains(actIndex));
 						acts.append(actIndex);
 					}
 				}
