@@ -335,21 +335,19 @@ inline bool Generate::teacherRemoveAnActivityFromBeginOrEnd(int tch, int level, 
 			for(int h2=0; h2<gt.rules.nHoursPerDay; h2++){
 				if(tchTimetable(d2,h2)>=0){
 					actIndexBegin=tchTimetable(d2,h2);
+					if(fixedTimeActivity[actIndexBegin] || swappedActivities[actIndexBegin] || actIndexBegin==ai)
+						actIndexBegin=-1;
 					break;
 				}
 			}
-			if(actIndexBegin>=0)
-				if(fixedTimeActivity[actIndexBegin] || swappedActivities[actIndexBegin] || actIndexBegin==ai)
-					actIndexBegin=-1;
 			for(int h2=gt.rules.nHoursPerDay-1; h2>=0; h2--){
 				if(tchTimetable(d2,h2)>=0){
 					actIndexEnd=tchTimetable(d2,h2);
+					if(fixedTimeActivity[actIndexEnd] || swappedActivities[actIndexEnd] || actIndexEnd==ai || actIndexEnd==actIndexBegin)
+						actIndexEnd=-1;
 					break;
 				}
 			}
-			if(actIndexEnd>=0)
-				if(fixedTimeActivity[actIndexEnd] || swappedActivities[actIndexEnd] || actIndexEnd==ai || actIndexEnd==actIndexBegin)
-					actIndexEnd=-1;
 
 			if(actIndexBegin>=0){
 				assert(!acts.contains(actIndexBegin));
@@ -454,21 +452,19 @@ inline bool Generate::teacherRemoveAnActivityFromBeginOrEndCertainDay(int tch, i
 		for(int h2=0; h2<gt.rules.nHoursPerDay; h2++){
 			if(tchTimetable(d2,h2)>=0){
 				actIndexBegin=tchTimetable(d2,h2);
+				if(fixedTimeActivity[actIndexBegin] || swappedActivities[actIndexBegin] || actIndexBegin==ai)
+					actIndexBegin=-1;
 				break;
 			}
 		}
-		if(actIndexBegin>=0)
-			if(fixedTimeActivity[actIndexBegin] || swappedActivities[actIndexBegin] || actIndexBegin==ai)
-				actIndexBegin=-1;
 		for(int h2=gt.rules.nHoursPerDay-1; h2>=0; h2--){
 			if(tchTimetable(d2,h2)>=0){
 				actIndexEnd=tchTimetable(d2,h2);
+				if(fixedTimeActivity[actIndexEnd] || swappedActivities[actIndexEnd] || actIndexEnd==ai || actIndexEnd==actIndexBegin)
+					actIndexEnd=-1;
 				break;
 			}
 		}
-		if(actIndexEnd>=0)
-			if(fixedTimeActivity[actIndexEnd] || swappedActivities[actIndexEnd] || actIndexEnd==ai || actIndexEnd==actIndexBegin)
-				actIndexEnd=-1;
 	}
 						
 	if(actIndexEnd>=0 || actIndexBegin>=0){
@@ -538,12 +534,8 @@ inline bool Generate::teacherRemoveAnActivityFromAnywhere(int tch, int level, in
 				if(tchTimetable(d2,h2)>=0){
 					actIndex=tchTimetable(d2,h2);
 					
-					if(fixedTimeActivity[actIndex] || swappedActivities[actIndex] || actIndex==ai || acts.contains(actIndex))
-						actIndex=-1;
-
-					if(actIndex>=0){
+					if(!fixedTimeActivity[actIndex] && !swappedActivities[actIndex] && actIndex!=ai && !acts.contains(actIndex))
 						acts.append(actIndex);
-					}
 				}
 			}
 		}
@@ -608,12 +600,8 @@ inline bool Generate::teacherRemoveAnActivityFromAnywhereCertainDay(int tch, int
 				if(tchTimetable(d2,h2)>=0){
 					actIndex=tchTimetable(d2,h2);
 					
-					if(fixedTimeActivity[actIndex] || swappedActivities[actIndex] || actIndex==ai || acts.contains(actIndex))
-						actIndex=-1;
-
-					if(actIndex>=0){
+					if(!fixedTimeActivity[actIndex] && !swappedActivities[actIndex] && actIndex!=ai && !acts.contains(actIndex))
 						acts.append(actIndex);
-					}
 				}
 			}
 		}
@@ -678,12 +666,8 @@ inline bool Generate::teacherRemoveAnActivityFromIntervalCertainDay(int tch, int
 				if(tchTimetable(d2,h2)>=0){
 					actIndex=tchTimetable(d2,h2);
 
-					if(fixedTimeActivity[actIndex] || swappedActivities[actIndex] || actIndex==ai || acts.contains(actIndex))
-						actIndex=-1;
-
-					if(actIndex>=0){
+					if(!fixedTimeActivity[actIndex] && !swappedActivities[actIndex] && actIndex!=ai && !acts.contains(actIndex))
 						acts.append(actIndex);
-					}
 				}
 			}
 		}
@@ -748,12 +732,8 @@ inline bool Generate::teacherRemoveAnActivityFromAnywhereCertainDayCertainActivi
 				if(tchTimetable(d2,h2)>=0){
 					actIndex=tchTimetable(d2,h2);
 					
-					if(fixedTimeActivity[actIndex] || swappedActivities[actIndex] || actIndex==ai || acts.contains(actIndex) || !gt.rules.internalActivitiesList[actIndex].iActivityTagsSet.contains(actTag))
-						actIndex=-1;
-
-					if(actIndex>=0){
+					if(!fixedTimeActivity[actIndex] && !swappedActivities[actIndex] && actIndex!=ai && !acts.contains(actIndex) && gt.rules.internalActivitiesList[actIndex].iActivityTagsSet.contains(actTag))
 						acts.append(actIndex);
-					}
 				}
 			}
 		}
@@ -931,21 +911,19 @@ inline bool Generate::subgroupRemoveAnActivityFromBeginOrEnd(int sbg, int level,
 			for(int h2=0; h2<gt.rules.nHoursPerDay; h2++){
 				if(sbgTimetable(d2,h2)>=0){
 					actIndexBegin=sbgTimetable(d2,h2);
+					if(fixedTimeActivity[actIndexBegin] || swappedActivities[actIndexBegin] || actIndexBegin==ai)
+						actIndexBegin=-1;
 					break;
 				}
 			}
-			if(actIndexBegin>=0)
-				if(fixedTimeActivity[actIndexBegin] || swappedActivities[actIndexBegin] || actIndexBegin==ai)
-					actIndexBegin=-1;
 			for(int h2=gt.rules.nHoursPerDay-1; h2>=0; h2--){
 				if(sbgTimetable(d2,h2)>=0){
 					actIndexEnd=sbgTimetable(d2,h2);
+					if(fixedTimeActivity[actIndexEnd] || swappedActivities[actIndexEnd] || actIndexEnd==ai || actIndexEnd==actIndexBegin)
+						actIndexEnd=-1;
 					break;
 				}
 			}
-			if(actIndexEnd>=0)
-				if(fixedTimeActivity[actIndexEnd] || swappedActivities[actIndexEnd] || actIndexEnd==ai || actIndexEnd==actIndexBegin)
-					actIndexEnd=-1;
 
 			if(actIndexBegin>=0){
 				assert(!acts.contains(actIndexBegin));
@@ -1056,14 +1034,12 @@ inline bool Generate::subgroupRemoveAnActivityFromBegin(int sbg, int level, int 
 					break;
 				}
 			}
-			if(actIndexBegin>=0)
-				if(fixedTimeActivity[actIndexBegin] || swappedActivities[actIndexBegin] || actIndexBegin==ai)
-					actIndexBegin=-1;
-
-			if(actIndexBegin>=0){
-				assert(!acts.contains(actIndexBegin));
-				possibleDays.append(d2);
-				acts.append(actIndexBegin);
+			if(actIndexBegin>=0) {
+				if(!fixedTimeActivity[actIndexBegin] && !swappedActivities[actIndexBegin] && actIndexBegin!=ai){
+					assert(!acts.contains(actIndexBegin));
+					possibleDays.append(d2);
+					acts.append(actIndexBegin);
+				}
 			}
 		}
 	}
@@ -1142,11 +1118,7 @@ inline bool Generate::subgroupRemoveAnActivityFromBeginCertainDay(int sbg, int d
 				break;
 			}
 		}
-		if(actIndexBegin>=0)
-			if(fixedTimeActivity[actIndexBegin] || swappedActivities[actIndexBegin] || actIndexBegin==ai)
-				actIndexBegin=-1;
-
-		if(actIndexBegin>=0){
+		if(actIndexBegin>=0 && !fixedTimeActivity[actIndexBegin] && !swappedActivities[actIndexBegin] && actIndexBegin!=ai) {
 			removedActivity=actIndexBegin;
 	
 			assert(!conflActivities.contains(actIndexBegin));
@@ -1179,11 +1151,7 @@ inline bool Generate::subgroupRemoveAnActivityFromEnd(int sbg, int level, int ai
 					break;
 				}
 			}
-			if(actIndexEnd>=0)
-				if(fixedTimeActivity[actIndexEnd] || swappedActivities[actIndexEnd] || actIndexEnd==ai)
-					actIndexEnd=-1;
-
-			if(actIndexEnd>=0){
+			if(actIndexEnd>=0 && !fixedTimeActivity[actIndexEnd] && !swappedActivities[actIndexEnd] && actIndexEnd!=ai) {
 				assert(!acts.contains(actIndexEnd));
 				possibleDays.append(d2);
 				acts.append(actIndexEnd);
@@ -1265,11 +1233,7 @@ inline bool Generate::subgroupRemoveAnActivityFromEndCertainDay(int sbg, int d2,
 				break;
 			}
 		}
-		if(actIndexEnd>=0)
-			if(fixedTimeActivity[actIndexEnd] || swappedActivities[actIndexEnd] || actIndexEnd==ai)
-				actIndexEnd=-1;
-
-		if(actIndexEnd>=0){
+		if(actIndexEnd>=0 && !fixedTimeActivity[actIndexEnd] && !swappedActivities[actIndexEnd] && actIndexEnd!=ai) {
 			removedActivity=actIndexEnd;
 	
 			assert(!conflActivities.contains(actIndexEnd));
@@ -1299,12 +1263,8 @@ inline bool Generate::subgroupRemoveAnActivityFromAnywhere(int sbg, int level, i
 				if(sbgTimetable(d2,h2)>=0){
 					actIndex=sbgTimetable(d2,h2);
 					
-					if(fixedTimeActivity[actIndex] || swappedActivities[actIndex] || actIndex==ai || acts.contains(actIndex))
-						actIndex=-1;
-
-					if(actIndex>=0){
+					if(!fixedTimeActivity[actIndex] && !swappedActivities[actIndex] && actIndex!=ai && !acts.contains(actIndex))
 						acts.append(actIndex);
-					}
 				}
 		}
 	}
@@ -1368,12 +1328,8 @@ inline bool Generate::subgroupRemoveAnActivityFromAnywhereCertainDay(int sbg, in
 				if(sbgTimetable(d2,h2)>=0){
 					actIndex=sbgTimetable(d2,h2);
 					
-					if(fixedTimeActivity[actIndex] || swappedActivities[actIndex] || actIndex==ai || acts.contains(actIndex))
-						actIndex=-1;
-
-					if(actIndex>=0){
+					if(!fixedTimeActivity[actIndex] && !swappedActivities[actIndex] && actIndex!=ai && !acts.contains(actIndex))
 						acts.append(actIndex);
-					}
 				}
 			}
 		}
@@ -1435,21 +1391,19 @@ inline bool Generate::subgroupRemoveAnActivityFromBeginOrEndCertainDay(int sbg, 
 		for(int h2=0; h2<gt.rules.nHoursPerDay; h2++){
 			if(sbgTimetable(d2,h2)>=0){
 				actIndexBegin=sbgTimetable(d2,h2);
+				if(fixedTimeActivity[actIndexBegin] || swappedActivities[actIndexBegin] || actIndexBegin==ai)
+					actIndexBegin=-1;
 				break;
 			}
 		}
-		if(actIndexBegin>=0)
-			if(fixedTimeActivity[actIndexBegin] || swappedActivities[actIndexBegin] || actIndexBegin==ai)
-				actIndexBegin=-1;
 		for(int h2=gt.rules.nHoursPerDay-1; h2>=0; h2--){
 			if(sbgTimetable(d2,h2)>=0){
 				actIndexEnd=sbgTimetable(d2,h2);
+				if(fixedTimeActivity[actIndexEnd] || swappedActivities[actIndexEnd] || actIndexEnd==ai || actIndexEnd==actIndexBegin)
+					actIndexEnd=-1;
 				break;
 			}
 		}
-		if(actIndexEnd>=0)
-			if(fixedTimeActivity[actIndexEnd] || swappedActivities[actIndexEnd] || actIndexEnd==ai || actIndexEnd==actIndexBegin)
-				actIndexEnd=-1;
 	}
 						
 	if(actIndexEnd>=0 || actIndexBegin>=0){
@@ -1519,12 +1473,8 @@ inline bool Generate::subgroupRemoveAnActivityFromAnywhereCertainDayCertainActiv
 				if(sbgTimetable(d2,h2)>=0){
 					actIndex=sbgTimetable(d2,h2);
 					
-					if(fixedTimeActivity[actIndex] || swappedActivities[actIndex] || actIndex==ai || acts.contains(actIndex) || !gt.rules.internalActivitiesList[actIndex].iActivityTagsSet.contains(actTag))
-						actIndex=-1;
-
-					if(actIndex>=0){
+					if(!fixedTimeActivity[actIndex] && !swappedActivities[actIndex] && actIndex!=ai && !acts.contains(actIndex) && gt.rules.internalActivitiesList[actIndex].iActivityTagsSet.contains(actTag))
 						acts.append(actIndex);
-					}
 				}
 			}
 		}
