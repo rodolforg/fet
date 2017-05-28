@@ -390,14 +390,10 @@ inline bool Generate::teacherRemoveAnActivityFromBeginOrEnd(int tch, int level, 
 			}
 			
 			assert(tl.size()>=1);
-			int mpos=tl.at(RandomKnuth::pick(tl.size()));
-			
-			assert(mpos>=0 && mpos<acts.count());
-			t=mpos;
+			t=tl.at(RandomKnuth::pick(tl.size()));
 		}
 		else{
 			t=RandomKnuth::pick(acts.count());
-			assert(t>=0 && t<acts.count());
 		}
 							
 		int d2=possibleDays.at(t);
@@ -555,10 +551,7 @@ inline bool Generate::teacherRemoveAnActivityFromAnywhere(int tch, int level, in
 			}
 			
 			assert(tl.size()>=1);
-			int mpos=tl.at(RandomKnuth::pick(tl.size()));
-			
-			assert(mpos>=0 && mpos<acts.count());
-			t=mpos;
+			t=tl.at(RandomKnuth::pick(tl.size()));
 		}
 		else{
 			t=RandomKnuth::pick(acts.count());
@@ -619,10 +612,7 @@ inline bool Generate::teacherRemoveAnActivityFromAnywhereCertainDay(int tch, int
 			}
 			
 			assert(tl.size()>=1);
-			int mpos=tl.at(RandomKnuth::pick(tl.size()));
-			
-			assert(mpos>=0 && mpos<acts.count());
-			t=mpos;
+			t=tl.at(RandomKnuth::pick(tl.size()));
 		}
 		else{
 			t=RandomKnuth::pick(acts.count());
@@ -683,10 +673,7 @@ inline bool Generate::teacherRemoveAnActivityFromIntervalCertainDay(int tch, int
 			}
 
 			assert(tl.size()>=1);
-			int mpos=tl.at(RandomKnuth::pick(tl.size()));
-
-			assert(mpos>=0 && mpos<acts.count());
-			t=mpos;
+			t=tl.at(RandomKnuth::pick(tl.size()));
 		}
 		else{
 			t=RandomKnuth::pick(acts.count());
@@ -747,10 +734,7 @@ inline bool Generate::teacherRemoveAnActivityFromAnywhereCertainDayCertainActivi
 			}
 			
 			assert(tl.size()>=1);
-			int mpos=tl.at(RandomKnuth::pick(tl.size()));
-			
-			assert(mpos>=0 && mpos<acts.count());
-			t=mpos;
+			t=tl.at(RandomKnuth::pick(tl.size()));
 		}
 		else{
 			t=RandomKnuth::pick(acts.count());
@@ -952,14 +936,10 @@ inline bool Generate::subgroupRemoveAnActivityFromBeginOrEnd(int sbg, int level,
 			}
 			
 			assert(tl.size()>=1);
-			int mpos=tl.at(RandomKnuth::pick(tl.size()));
-			
-			assert(mpos>=0 && mpos<acts.count());
-			t=mpos;
+			t=tl.at(RandomKnuth::pick(tl.size()));
 		}
 		else{
 			t=RandomKnuth::pick(acts.count());
-			assert(t>=0 && t<acts.count());
 		}
 							
 		int d2=possibleDays.at(t);
@@ -1051,14 +1031,10 @@ inline bool Generate::subgroupRemoveAnActivityFromBegin(int sbg, int level, int 
 			}
 			
 			assert(tl.size()>=1);
-			int mpos=tl.at(RandomKnuth::pick(tl.size()));
-			
-			assert(mpos>=0 && mpos<acts.count());
-			t=mpos;
+			t=tl.at(RandomKnuth::pick(tl.size()));
 		}
 		else{
 			t=RandomKnuth::pick(acts.count());
-			assert(t>=0 && t<acts.count());
 		}
 							
 		int d2=possibleDays.at(t);
@@ -1165,14 +1141,10 @@ inline bool Generate::subgroupRemoveAnActivityFromEnd(int sbg, int level, int ai
 			}
 			
 			assert(tl.size()>=1);
-			int mpos=tl.at(RandomKnuth::pick(tl.size()));
-			
-			assert(mpos>=0 && mpos<acts.count());
-			t=mpos;
+			t=tl.at(RandomKnuth::pick(tl.size()));
 		}
 		else{
 			t=RandomKnuth::pick(acts.count());
-			assert(t>=0 && t<acts.count());
 		}
 							
 		int d2=possibleDays.at(t);
@@ -1269,10 +1241,7 @@ inline bool Generate::subgroupRemoveAnActivityFromAnywhere(int sbg, int level, i
 			}
 			
 			assert(tl.size()>=1);
-			int mpos=tl.at(RandomKnuth::pick(tl.size()));
-			
-			assert(mpos>=0 && mpos<acts.count());
-			t=mpos;
+			t=tl.at(RandomKnuth::pick(tl.size()));
 		}
 		else{
 			t=RandomKnuth::pick(acts.count());
@@ -1333,10 +1302,7 @@ inline bool Generate::subgroupRemoveAnActivityFromAnywhereCertainDay(int sbg, in
 			}
 			
 			assert(tl.size()>=1);
-			int mpos=tl.at(RandomKnuth::pick(tl.size()));
-			
-			assert(mpos>=0 && mpos<acts.count());
-			t=mpos;
+			t=tl.at(RandomKnuth::pick(tl.size()));
 		}
 		else{
 			t=RandomKnuth::pick(acts.count());
@@ -1476,10 +1442,7 @@ inline bool Generate::subgroupRemoveAnActivityFromAnywhereCertainDayCertainActiv
 			}
 			
 			assert(tl.size()>=1);
-			int mpos=tl.at(RandomKnuth::pick(tl.size()));
-			
-			assert(mpos>=0 && mpos<acts.count());
-			t=mpos;
+			t=tl.at(RandomKnuth::pick(tl.size()));
 		}
 		else{
 			t=RandomKnuth::pick(acts.count());
