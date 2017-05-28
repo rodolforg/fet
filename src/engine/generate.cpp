@@ -415,11 +415,6 @@ inline bool Generate::teacherRemoveAnActivityFromBeginOrEnd(int tch, int level, 
 			assert(h2<gt.rules.nHoursPerDay);
 			
 			assert(tchTimetable(d2,h2)==ai2);
-								
-			assert(!conflActivities.contains(ai2));
-			conflActivities.append(ai2);
-			nConflActivities++;
-			assert(nConflActivities==conflActivities.count());
 		}
 		else{
 			int h2;
@@ -429,13 +424,13 @@ inline bool Generate::teacherRemoveAnActivityFromBeginOrEnd(int tch, int level, 
 			assert(h2>=0);
 			
 			assert(tchTimetable(d2,h2)==ai2);
-							
-			assert(!conflActivities.contains(ai2));
-			conflActivities.append(ai2);
-			nConflActivities++;
-			assert(nConflActivities==conflActivities.count());
 		}
-		
+#endif
+		assert(!conflActivities.contains(ai2));
+		conflActivities.append(ai2);
+		nConflActivities++;
+		assert(nConflActivities==conflActivities.count());
+
 		return true;
 	}
 	else
@@ -983,11 +978,6 @@ inline bool Generate::subgroupRemoveAnActivityFromBeginOrEnd(int sbg, int level,
 			assert(h2<gt.rules.nHoursPerDay);
 		
 			assert(sbgTimetable(d2,h2)==ai2);
-								
-			assert(!conflActivities.contains(ai2));
-			conflActivities.append(ai2);
-			nConflActivities++;
-			assert(nConflActivities==conflActivities.count());
 		}
 		else{
 			int h2;
@@ -997,12 +987,13 @@ inline bool Generate::subgroupRemoveAnActivityFromBeginOrEnd(int sbg, int level,
 			assert(h2>=0);
 			
 			assert(sbgTimetable(d2,h2)==ai2);
-							
-			assert(!conflActivities.contains(ai2));
-			conflActivities.append(ai2);
-			nConflActivities++;
-			assert(nConflActivities==conflActivities.count());
 		}
+#endif
+
+		assert(!conflActivities.contains(ai2));
+		conflActivities.append(ai2);
+		nConflActivities++;
+		assert(nConflActivities==conflActivities.count());
 		
 		return true;
 	}
