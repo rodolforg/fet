@@ -326,8 +326,10 @@ inline bool Generate::teacherRemoveAnActivityFromBeginOrEnd(int tch, int level, 
 	Q_UNUSED(tch);
 
 	//remove an activity from begin or from end of any day
+#ifndef NDEBUG
 	QList<int> possibleDays;
 	QList<bool> atBeginning;
+#endif
 	QList<int> acts;
 	for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++){
 		if(tchDayNHours[d2]>0){
@@ -350,15 +352,19 @@ inline bool Generate::teacherRemoveAnActivityFromBeginOrEnd(int tch, int level, 
 			}
 
 			if(actIndexBegin>=0){
+#ifndef NDEBUG
 				assert(!acts.contains(actIndexBegin));
 				possibleDays.append(d2);
 				atBeginning.append(true);
+#endif
 				acts.append(actIndexBegin);
 			}
 			if(actIndexEnd>=0){
+#ifndef NDEBUG
 				assert(!acts.contains(actIndexEnd));
 				possibleDays.append(d2);
 				atBeginning.append(false);
+#endif
 				acts.append(actIndexEnd);
 			}
 		}
@@ -396,12 +402,13 @@ inline bool Generate::teacherRemoveAnActivityFromBeginOrEnd(int tch, int level, 
 			t=RandomKnuth::pick(acts.count());
 		}
 							
-		int d2=possibleDays.at(t);
-		bool begin=atBeginning.at(t);
 		int ai2=acts.at(t);
 		
 		removedActivity=ai2;
-							
+
+#ifndef NDEBUG
+		int d2=possibleDays.at(t);
+		bool begin=atBeginning.at(t);
 		if(begin){
 			int h2;
 			for(h2=0; h2<gt.rules.nHoursPerDay; h2++)
@@ -872,8 +879,10 @@ inline bool Generate::subgroupRemoveAnActivityFromBeginOrEnd(int sbg, int level,
 	Q_UNUSED(sbg);
 
 	//remove an activity from begin or from end of any day
+#ifndef NDEBUG
 	QList<int> possibleDays;
 	QList<bool> atBeginning;
+#endif
 	QList<int> acts;
 	for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++){
 		if(sbgDayNHours[d2]>0){
@@ -896,15 +905,19 @@ inline bool Generate::subgroupRemoveAnActivityFromBeginOrEnd(int sbg, int level,
 			}
 
 			if(actIndexBegin>=0){
+#ifndef NDEBUG
 				assert(!acts.contains(actIndexBegin));
 				possibleDays.append(d2);
 				atBeginning.append(true);
+#endif
 				acts.append(actIndexBegin);
 			}
 			if(actIndexEnd>=0){
+#ifndef NDEBUG
 				assert(!acts.contains(actIndexEnd));
 				possibleDays.append(d2);
 				atBeginning.append(false);
+#endif
 				acts.append(actIndexEnd);
 			}
 		}
@@ -942,12 +955,14 @@ inline bool Generate::subgroupRemoveAnActivityFromBeginOrEnd(int sbg, int level,
 			t=RandomKnuth::pick(acts.count());
 		}
 							
-		int d2=possibleDays.at(t);
-		bool begin=atBeginning.at(t);
 		int ai2=acts.at(t);
 		
 		removedActivity=ai2;
-							
+
+#ifndef NDEBUG
+		int d2=possibleDays.at(t);
+		bool begin=atBeginning.at(t);
+
 		if(begin){
 			int h2;
 			for(h2=0; h2<gt.rules.nHoursPerDay; h2++)
@@ -984,7 +999,9 @@ inline bool Generate::subgroupRemoveAnActivityFromBegin(int sbg, int level, int 
 	Q_UNUSED(sbg);
 
 	//remove an activity from begin of any day
+#ifndef NDEBUG
 	QList<int> possibleDays;
+#endif
 	QList<int> acts;
 	for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++){
 		if(sbgDayNHours[d2]>0){
@@ -997,8 +1014,10 @@ inline bool Generate::subgroupRemoveAnActivityFromBegin(int sbg, int level, int 
 			}
 			if(actIndexBegin>=0) {
 				if(!fixedTimeActivity[actIndexBegin] && !swappedActivities[actIndexBegin] && actIndexBegin!=ai){
+#ifndef NDEBUG
 					assert(!acts.contains(actIndexBegin));
 					possibleDays.append(d2);
+#endif
 					acts.append(actIndexBegin);
 				}
 			}
@@ -1037,11 +1056,12 @@ inline bool Generate::subgroupRemoveAnActivityFromBegin(int sbg, int level, int 
 			t=RandomKnuth::pick(acts.count());
 		}
 							
-		int d2=possibleDays.at(t);
 		int ai2=acts.at(t);
 		
 		removedActivity=ai2;
-							
+
+#ifndef NDEBUG
+		int d2=possibleDays.at(t);
 		int h2;
 		for(h2=0; h2<gt.rules.nHoursPerDay; h2++)
 			if(sbgTimetable(d2,h2)>=0)
@@ -1049,6 +1069,7 @@ inline bool Generate::subgroupRemoveAnActivityFromBegin(int sbg, int level, int 
 		assert(h2<gt.rules.nHoursPerDay);
 	
 		assert(sbgTimetable(d2,h2)==ai2);
+#endif
 							
 		assert(!conflActivities.contains(ai2));
 		conflActivities.append(ai2);
@@ -1096,7 +1117,9 @@ inline bool Generate::subgroupRemoveAnActivityFromEnd(int sbg, int level, int ai
 	Q_UNUSED(sbg);
 
 	//remove an activity from begin or from end of any day
+#ifndef NDEBUG
 	QList<int> possibleDays;
+#endif
 	QList<int> acts;
 	for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++){
 		if(sbgDayNHours[d2]>0){
@@ -1108,8 +1131,10 @@ inline bool Generate::subgroupRemoveAnActivityFromEnd(int sbg, int level, int ai
 				}
 			}
 			if(actIndexEnd>=0 && !fixedTimeActivity[actIndexEnd] && !swappedActivities[actIndexEnd] && actIndexEnd!=ai) {
+#ifndef NDEBUG
 				assert(!acts.contains(actIndexEnd));
 				possibleDays.append(d2);
+#endif
 				acts.append(actIndexEnd);
 			}
 		}
@@ -1147,11 +1172,12 @@ inline bool Generate::subgroupRemoveAnActivityFromEnd(int sbg, int level, int ai
 			t=RandomKnuth::pick(acts.count());
 		}
 							
-		int d2=possibleDays.at(t);
 		int ai2=acts.at(t);
 		
 		removedActivity=ai2;
-							
+
+#ifndef NDEBUG
+		int d2=possibleDays.at(t);
 		int h2;
 		for(h2=gt.rules.nHoursPerDay-1; h2>=0; h2--)
 			if(sbgTimetable(d2,h2)>=0)
@@ -1159,7 +1185,8 @@ inline bool Generate::subgroupRemoveAnActivityFromEnd(int sbg, int level, int ai
 		assert(h2>=0);
 		
 		assert(sbgTimetable(d2,h2)==ai2);
-							
+#endif
+
 		assert(!conflActivities.contains(ai2));
 		conflActivities.append(ai2);
 		nConflActivities++;
