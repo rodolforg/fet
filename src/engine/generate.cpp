@@ -529,11 +529,9 @@ inline bool Generate::teacherRemoveAnActivityFromAnywhere(int tch, int level, in
 	QList<int> acts;
 	for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++){
 		if(tchDayNHours[d2]>0){
-			int actIndex=-1;
 			for(int h2=0; h2<gt.rules.nHoursPerDay; h2++) {
-				if(tchTimetable(d2,h2)>=0){
-					actIndex=tchTimetable(d2,h2);
-					
+				int actIndex=tchTimetable(d2,h2);
+				if(actIndex>=0){
 					if(!fixedTimeActivity[actIndex] && !swappedActivities[actIndex] && actIndex!=ai && !acts.contains(actIndex))
 						acts.append(actIndex);
 				}
@@ -595,11 +593,9 @@ inline bool Generate::teacherRemoveAnActivityFromAnywhereCertainDay(int tch, int
 	QList<int> acts;
 	//for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++){
 		if(tchDayNHours[d2]>0){
-			int actIndex=-1;
 			for(int h2=0; h2<gt.rules.nHoursPerDay; h2++) {
-				if(tchTimetable(d2,h2)>=0){
-					actIndex=tchTimetable(d2,h2);
-					
+				int actIndex=tchTimetable(d2,h2);
+				if(actIndex>=0){
 					if(!fixedTimeActivity[actIndex] && !swappedActivities[actIndex] && actIndex!=ai && !acts.contains(actIndex))
 						acts.append(actIndex);
 				}
@@ -661,11 +657,9 @@ inline bool Generate::teacherRemoveAnActivityFromIntervalCertainDay(int tch, int
 	QList<int> acts;
 	//for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++){
 		if(tchDayNHours[d2]>0){
-			int actIndex=-1;
 			for(int h2=h0; h2<h1; h2++) {
-				if(tchTimetable(d2,h2)>=0){
-					actIndex=tchTimetable(d2,h2);
-
+				int actIndex=tchTimetable(d2,h2);
+				if(actIndex>=0){
 					if(!fixedTimeActivity[actIndex] && !swappedActivities[actIndex] && actIndex!=ai && !acts.contains(actIndex))
 						acts.append(actIndex);
 				}
@@ -727,11 +721,9 @@ inline bool Generate::teacherRemoveAnActivityFromAnywhereCertainDayCertainActivi
 	QList<int> acts;
 	//for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++){
 		if(tchDayNHours[d2]>0){
-			int actIndex=-1;
 			for(int h2=0; h2<gt.rules.nHoursPerDay; h2++) {
-				if(tchTimetable(d2,h2)>=0){
-					actIndex=tchTimetable(d2,h2);
-					
+				int actIndex=tchTimetable(d2,h2);
+				if(actIndex>=0){
 					if(!fixedTimeActivity[actIndex] && !swappedActivities[actIndex] && actIndex!=ai && !acts.contains(actIndex) && gt.rules.internalActivitiesList[actIndex].iActivityTagsSet.contains(actTag))
 						acts.append(actIndex);
 				}
@@ -1258,14 +1250,13 @@ inline bool Generate::subgroupRemoveAnActivityFromAnywhere(int sbg, int level, i
 	QList<int> acts;
 	for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++){
 		if(sbgDayNHours[d2]>0){
-			int actIndex=-1;
-			for(int h2=0; h2<gt.rules.nHoursPerDay; h2++)
-				if(sbgTimetable(d2,h2)>=0){
-					actIndex=sbgTimetable(d2,h2);
-					
+			for(int h2=0; h2<gt.rules.nHoursPerDay; h2++) {
+				int actIndex=sbgTimetable(d2,h2);
+				if(actIndex>=0){
 					if(!fixedTimeActivity[actIndex] && !swappedActivities[actIndex] && actIndex!=ai && !acts.contains(actIndex))
 						acts.append(actIndex);
 				}
+			}
 		}
 	}
 						
@@ -1323,11 +1314,9 @@ inline bool Generate::subgroupRemoveAnActivityFromAnywhereCertainDay(int sbg, in
 	QList<int> acts;
 	//for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++){
 		if(sbgDayNHours[d2]>0){
-			int actIndex=-1;
 			for(int h2=0; h2<gt.rules.nHoursPerDay; h2++) {
-				if(sbgTimetable(d2,h2)>=0){
-					actIndex=sbgTimetable(d2,h2);
-					
+				int actIndex = sbgTimetable(d2,h2);
+				if(actIndex>=0){
 					if(!fixedTimeActivity[actIndex] && !swappedActivities[actIndex] && actIndex!=ai && !acts.contains(actIndex))
 						acts.append(actIndex);
 				}
@@ -1468,11 +1457,9 @@ inline bool Generate::subgroupRemoveAnActivityFromAnywhereCertainDayCertainActiv
 	QList<int> acts;
 	//for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++){
 		if(sbgDayNHours[d2]>0){
-			int actIndex=-1;
 			for(int h2=0; h2<gt.rules.nHoursPerDay; h2++) {
-				if(sbgTimetable(d2,h2)>=0){
-					actIndex=sbgTimetable(d2,h2);
-					
+				int actIndex=sbgTimetable(d2,h2);
+				if(actIndex>=0){
 					if(!fixedTimeActivity[actIndex] && !swappedActivities[actIndex] && actIndex!=ai && !acts.contains(actIndex) && gt.rules.internalActivitiesList[actIndex].iActivityTagsSet.contains(actTag))
 						acts.append(actIndex);
 				}
