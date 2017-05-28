@@ -365,7 +365,7 @@ inline bool Generate::teacherRemoveAnActivityFromBeginOrEnd(int tch, int level, 
 	}
 						
 	bool possibleBeginOrEnd=true;
-	if(possibleDays.count()==0)
+	if(acts.count()==0)
 		possibleBeginOrEnd=false;
 				
 	if(possibleBeginOrEnd){
@@ -396,10 +396,9 @@ inline bool Generate::teacherRemoveAnActivityFromBeginOrEnd(int tch, int level, 
 			t=mpos;
 		}
 		else{
-			t=RandomKnuth::pick(possibleDays.count());
+			t=RandomKnuth::pick(acts.count());
+			assert(t>=0 && t<acts.count());
 		}
-								
-		assert(t>=0 && t<possibleDays.count());
 							
 		int d2=possibleDays.at(t);
 		bool begin=atBeginning.at(t);
@@ -928,7 +927,7 @@ inline bool Generate::subgroupRemoveAnActivityFromBeginOrEnd(int sbg, int level,
 	}
 						
 	bool possibleBeginOrEnd=true;						
-	if(possibleDays.count()==0)
+	if(acts.count()==0)
 		possibleBeginOrEnd=false;
 				
 	if(possibleBeginOrEnd){
@@ -959,10 +958,9 @@ inline bool Generate::subgroupRemoveAnActivityFromBeginOrEnd(int sbg, int level,
 			t=mpos;
 		}
 		else{
-			t=RandomKnuth::pick(possibleDays.count());
+			t=RandomKnuth::pick(acts.count());
+			assert(t>=0 && t<acts.count());
 		}
-								
-		assert(t>=0 && t<possibleDays.count());
 							
 		int d2=possibleDays.at(t);
 		bool begin=atBeginning.at(t);
@@ -1028,7 +1026,7 @@ inline bool Generate::subgroupRemoveAnActivityFromBegin(int sbg, int level, int 
 	}
 						
 	bool possibleBegin=true;
-	if(possibleDays.count()==0)
+	if(acts.count()==0)
 		possibleBegin=false;
 				
 	if(possibleBegin){
@@ -1059,10 +1057,9 @@ inline bool Generate::subgroupRemoveAnActivityFromBegin(int sbg, int level, int 
 			t=mpos;
 		}
 		else{
-			t=RandomKnuth::pick(possibleDays.count());
+			t=RandomKnuth::pick(acts.count());
+			assert(t>=0 && t<acts.count());
 		}
-								
-		assert(t>=0 && t<possibleDays.count());
 							
 		int d2=possibleDays.at(t);
 		int ai2=acts.at(t);
@@ -1143,7 +1140,7 @@ inline bool Generate::subgroupRemoveAnActivityFromEnd(int sbg, int level, int ai
 	}
 						
 	bool possibleEnd=true;
-	if(possibleDays.count()==0)
+	if(acts.count()==0)
 		possibleEnd=false;
 				
 	if(possibleEnd){
@@ -1174,10 +1171,9 @@ inline bool Generate::subgroupRemoveAnActivityFromEnd(int sbg, int level, int ai
 			t=mpos;
 		}
 		else{
-			t=RandomKnuth::pick(possibleDays.count());
+			t=RandomKnuth::pick(acts.count());
+			assert(t>=0 && t<acts.count());
 		}
-								
-		assert(t>=0 && t<possibleDays.count());
 							
 		int d2=possibleDays.at(t);
 		int ai2=acts.at(t);
