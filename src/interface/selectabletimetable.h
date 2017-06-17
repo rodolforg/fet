@@ -30,6 +30,9 @@ private:
 	int pressedRow;
 	int pressedColumn;
 
+	static const QString MARK;
+	static const QString BLANK;
+
 	void setMarked(QTableWidgetItem *item, bool isMarked);
 	void colorItem(QTableWidgetItem *item);
 

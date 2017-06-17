@@ -62,8 +62,8 @@ private:
 	QVector<QVector<bool> > cellData;
 };
 
-#define MARK		(QString("X"))
-#define BLANK		(QString())
+const QString SelectableTimeTable::MARK("X");
+const QString SelectableTimeTable::BLANK;
 
 SelectableTimeTable::SelectableTimeTable(QWidget *parent)
 	: QTableWidget(parent), pressedRow(-1), pressedColumn(-1)
