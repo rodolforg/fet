@@ -17,6 +17,13 @@
    <item row="4" column="0" colspan="2">
     <layout class="QHBoxLayout">
      <item>
+      <widget class="QPushButton" name="swapPushButton">
+       <property name="text">
+        <string comment="Interchange (swap) the two selected activities in the dialog">Swap</string>
+       </property>
+      </widget>
+     </item>
+     <item>
       <widget class="QPushButton" name="okPushButton">
        <property name="text">
         <string>Ok</string>

@@ -40,6 +40,8 @@ public slots:
 	void ok();
 	void cancel();
 
+	void swap();
+	
 	void filterChanged();
 	
 private:

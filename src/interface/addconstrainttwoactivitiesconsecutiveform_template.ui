@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>679</width>
-    <height>419</height>
+    <height>447</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -193,6 +193,13 @@
    </item>
    <item row="5" column="0">
     <layout class="QHBoxLayout">
+     <item>
+      <widget class="QPushButton" name="swapPushButton">
+       <property name="text">
+        <string comment="Interchange (swap) the two selected activities in the dialog">Swap</string>
+       </property>
+      </widget>
+     </item>
      <item>
       <widget class="QPushButton" name="addConstraintPushButton">
        <property name="text">

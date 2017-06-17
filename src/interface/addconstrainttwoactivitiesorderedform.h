@@ -39,6 +39,8 @@ public slots:
 	void constraintChanged();
 	void addCurrentConstraint();
 	
+	void swap();
+	
 	void filterChanged();
 	
 private:

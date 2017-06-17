@@ -35,6 +35,8 @@ AddConstraintTwoActivitiesOrderedForm::AddConstraintTwoActivitiesOrderedForm(QWi
 	connect(subjectsComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
 	connect(activityTagsComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
 
+	connect(swapPushButton, SIGNAL(clicked()), this, SLOT(swap()));
+
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
 	
@@ -227,4 +229,12 @@ void AddConstraintTwoActivitiesOrderedForm::addCurrentConstraint()
 			tr("Constraint NOT added - error?"));
 		delete ctr;
 	}
+}
+
+void AddConstraintTwoActivitiesOrderedForm::swap()
+{
+	int t1=firstActivitiesComboBox->currentIndex();
+	int t2=secondActivitiesComboBox->currentIndex();
+	firstActivitiesComboBox->setCurrentIndex(t2);
+	secondActivitiesComboBox->setCurrentIndex(t1);
 }

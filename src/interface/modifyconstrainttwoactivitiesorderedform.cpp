@@ -29,6 +29,8 @@ ModifyConstraintTwoActivitiesOrderedForm::ModifyConstraintTwoActivitiesOrderedFo
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
 	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
 
+	connect(swapPushButton, SIGNAL(clicked()), this, SLOT(swap()));
+
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
 
@@ -164,4 +166,12 @@ void ModifyConstraintTwoActivitiesOrderedForm::ok()
 void ModifyConstraintTwoActivitiesOrderedForm::cancel()
 {
 	this->close();
+}
+
+void ModifyConstraintTwoActivitiesOrderedForm::swap()
+{
+	int t1=firstActivitiesComboBox->currentIndex();
+	int t2=secondActivitiesComboBox->currentIndex();
+	firstActivitiesComboBox->setCurrentIndex(t2);
+	secondActivitiesComboBox->setCurrentIndex(t1);
 }
