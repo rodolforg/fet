@@ -3,6 +3,7 @@
 #include <QHeaderView>
 #include <QApplication>
 #include <QKeyEvent>
+#include <QVector>
 
 #include "tablewidgetupdatebug.h"
 
@@ -45,11 +46,27 @@ private:
 	int column;
 };
 
+class ChangeContiguousCellsCommand : public QUndoCommand
+{
+public:
+	ChangeContiguousCellsCommand(SelectableTimeTable *table, bool marked, int initialRow, int initialColumn, int lastRow, int lastColumn, QUndoCommand *parent = NULL);
+	virtual void undo();
+	virtual void redo();
+private:
+	SelectableTimeTable *tableWidget;
+	bool marked;
+	int initialRow;
+	int initialColumn;
+	int lastRow;
+	int lastColumn;
+	QVector<QVector<bool> > cellData;
+};
+
 #define MARK		(QString("X"))
 #define BLANK		(QString())
 
 SelectableTimeTable::SelectableTimeTable(QWidget *parent)
-	: QTableWidget(parent)
+	: QTableWidget(parent), pressedRow(-1), pressedColumn(-1)
 {
 }
 
@@ -83,6 +100,7 @@ void SelectableTimeTable::setHeaders(const Rules &rules)
 	connect(verticalHeader(), SIGNAL(sectionClicked(int)), this, SLOT(verticalHeaderClicked(int)));
 	connect(verticalHeader(), SIGNAL(sectionPressed(int)), this, SLOT(verticalHeaderPressed(int)));
 	connect(this, SIGNAL(itemClicked(QTableWidgetItem*)), this, SLOT(itemClicked(QTableWidgetItem*)));
+	connect(this, SIGNAL(itemPressed(QTableWidgetItem*)), this, SLOT(itemPressed(QTableWidgetItem*)));
 
 	setSelectionMode(QAbstractItemView::NoSelection);
 
@@ -113,6 +131,7 @@ void SelectableTimeTable::verticalHeaderClicked(int clickedRow)
 		lastRow = pressedRow;
 		firstRow = clickedRow;
 	}
+	pressedRow = -1;
 
 	QUndoCommand *changeRows = new QUndoCommand();
 
@@ -133,6 +152,41 @@ void SelectableTimeTable::verticalHeaderPressed(int row)
 void SelectableTimeTable::itemClicked(QTableWidgetItem* item)
 {
 	undoStack.push(new ToggleCellCommand(this, item->row(), item->column()));
+	pressedRow = -1;
+	pressedColumn = -1;
+}
+
+void SelectableTimeTable::itemPressed(QTableWidgetItem *item)
+{
+	pressedRow = item->row();
+	pressedColumn = item->column();
+}
+
+void SelectableTimeTable::contiguousCellsSelected(QTableWidgetItem *itemOnRelease)
+{
+	int releasedRow = itemOnRelease->row();
+	int releasedColumn = itemOnRelease->column();
+	int firstRow, lastRow;
+	if (pressedRow < releasedRow) {
+		firstRow = pressedRow;
+		lastRow = releasedRow;
+	} else {
+		lastRow = pressedRow;
+		firstRow = releasedRow;
+	}
+
+	int firstColumn, lastColumn;
+	if (pressedColumn < releasedColumn) {
+		firstColumn = pressedColumn;
+		lastColumn = releasedColumn;
+	} else {
+		lastColumn = pressedColumn;
+		firstColumn = releasedColumn;
+	}
+	bool marked = !isMarked(pressedRow, pressedColumn);
+	undoStack.push(new ChangeContiguousCellsCommand(this, marked, firstRow, firstColumn, lastRow, lastColumn));
+	pressedRow = -1;
+	pressedColumn = -1;
 }
 
 void SelectableTimeTable::colorItem(QTableWidgetItem* item)
@@ -162,6 +216,29 @@ void SelectableTimeTable::keyPressEvent(QKeyEvent *event)
 	}
 	else
 		QTableWidget::keyPressEvent(event);
+}
+
+void SelectableTimeTable::mouseReleaseEvent(QMouseEvent *event)
+{
+	QTableWidgetItem * item = itemAt(event->pos());
+	if (!item) {
+		QTableWidget::mouseReleaseEvent(event);
+		return;
+	}
+
+	if (pressedRow < 0 || pressedColumn < 0) {
+		QTableWidget::mouseReleaseEvent(event);
+		return;
+	}
+
+	int releasedRow = item->row();
+	int releasedColumn = item->column();
+	if (releasedRow == pressedRow && releasedColumn == pressedColumn) {
+		QTableWidget::mouseReleaseEvent(event);
+		return;
+	}
+
+	contiguousCellsSelected(item);
 }
 
 void SelectableTimeTable::setMarked(int row, int col, bool isMarked)
@@ -275,5 +352,39 @@ void ToggleCellCommand::toggle()
 {
 	bool marked = tableWidget->isMarked(row, column);
 	tableWidget->setMarked(row, column, !marked);
+	tableWidgetUpdateBug(tableWidget);
+}
+
+ChangeContiguousCellsCommand::ChangeContiguousCellsCommand(SelectableTimeTable *table, bool marked, int initialRow, int initialColumn, int lastRow, int lastColumn, QUndoCommand *parent)
+	: QUndoCommand(parent), tableWidget(table), marked(marked), initialRow(initialRow), initialColumn(initialColumn), lastRow(lastRow), lastColumn(lastColumn)
+{
+}
+
+void ChangeContiguousCellsCommand::undo()
+{
+	for(int row=initialRow, r=0; row<=lastRow; row++, r++){
+		for(int col=initialColumn, c=0; col<=lastColumn; col++, c++){
+			tableWidget->setMarked(row, col, cellData[r][c]);
+		}
+	}
+	tableWidgetUpdateBug(tableWidget);
+}
+
+void ChangeContiguousCellsCommand::redo()
+{
+	if (cellData.isEmpty()) {
+		for(int row=initialRow; row<=lastRow; row++){
+			QVector<bool> r;
+			for(int col=initialColumn; col<=lastColumn; col++){
+				r << tableWidget->isMarked(row, col);
+			}
+			cellData << r;
+		}
+	}
+	for(int row=initialRow; row<=lastRow; row++){
+		for(int col=initialColumn; col<=lastColumn; col++){
+			tableWidget->setMarked(row, col, marked);
+		}
+	}
 	tableWidgetUpdateBug(tableWidget);
 }

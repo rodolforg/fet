@@ -23,14 +23,18 @@ public slots:
 	void verticalHeaderClicked(int clickedRow);
 	void horizontalHeaderClicked(int col);
 	void itemClicked(QTableWidgetItem *item);
+	void itemPressed(QTableWidgetItem *item);
+	void contiguousCellsSelected(QTableWidgetItem *itemOnRelease);
 
 private:
 	int pressedRow;
+	int pressedColumn;
 
 	void setMarked(QTableWidgetItem *item, bool isMarked);
 	void colorItem(QTableWidgetItem *item);
 
 	virtual void keyPressEvent(QKeyEvent * event);
+	virtual void mouseReleaseEvent(QMouseEvent *event);
 
 	QUndoStack undoStack;
 };
