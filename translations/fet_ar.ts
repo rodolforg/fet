@@ -21,7 +21,7 @@
     <message>
         <location filename="../src/interface/activitiesform.cpp" line="412"/>
         <source>Cannot modify this large activity, because it contains more than %1 activities.</source>
-        <translation>لم يتم تعديل هذه النشاط الكبيرة، لاحتوائها على أكثر من %1 نشاط.</translation>
+        <translation>لم يتم تعديل هذا النشاط الكبير، لاحتوائه على أكثر من %1 نشاط.</translation>
     </message>
     <message>
         <location filename="../src/interface/activitiesform.cpp" line="485"/>
@@ -93,7 +93,7 @@
     <message>
         <location filename="../src/interface/activitiesform.cpp" line="434"/>
         <source>The current split activity has subactivities which were individually modified. It is recommended to abort now and modify individual subactivities from the corresponding menu. Otherwise you will modify the fields for all the subactivities from this larger split activity.</source>
-        <translation>النشاط الحالي المقسمة لها أنشطة فرعية و التي تم تغييرها كل واحدة على حدة. ينصح بتركها الآن و تغيير الأنشطة الفرعية كل واحدة على حدة من القائمة المناسبة. و إلا ستغير الحقول لجميع الأنشطة الفرعية من هذه النشاط الكبيرة المقسمة.</translation>
+        <translation>النشاط الحالي المقسم له أنشطة فرعية و التي تم تغييرها كل واحدة على حدة. ينصح بتركها الآن و تغيير الأنشطة الفرعية كل واحدة على حدة من القائمة المناسبة. و إلا ستغير الحقول لجميع الأنشطة الفرعية من هذا النشاط الكبير المقسم.</translation>
     </message>
     <message>
         <location filename="../src/interface/activitiesform.cpp" line="438"/>
@@ -415,17 +415,17 @@
     <message>
         <location filename="../src/engine/activity.cpp" line="694"/>
         <source>Time constraints directly related to this activity:</source>
-        <translation>القيود الزمنية لهذه النشاط:</translation>
+        <translation>القيود الزمنية المرتبطة مباشرة بهذا النشاط:</translation>
     </message>
     <message>
         <location filename="../src/engine/activity.cpp" line="705"/>
         <source>Space constraints directly related to this activity:</source>
-        <translation>القيود المكانية لهذه النشاط:</translation>
+        <translation>القيود المكانية المرتبطة مباشرة بهذا النشاط:</translation>
     </message>
     <message>
         <location filename="../src/engine/activity.cpp" line="717"/>
         <source>Timetable generation options directly related to this activity:</source>
-        <translation>خيارات انتاج جدول زمني لها صلة مباشرة بهذه النشاط:</translation>
+        <translation>خيارات انتاج الجدول الزمني لها صلة مباشرة بهذا النشاط:</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="101"/>
@@ -671,7 +671,7 @@
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1124"/>
         <source>Cannot modify this large activity, because it contains more than %1 activities.</source>
-        <translation>لا يمكن تعديل هذه النشاط الكبيرة, لاحتوائها على أكثر من %1 نشاط.</translation>
+        <translation>لا يمكن تعديل هذا النشاط الكبير, لاحتوائه على أكثر من %1 نشاط.</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1409"/>
@@ -10005,38 +10005,38 @@ Note: teacher not available and break are not counted as gaps.</source>
 <context>
     <name>AddConstraintTwoActivitiesConsecutiveForm</name>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="184"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="194"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="206"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="214"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="223"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="226"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="186"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="196"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="208"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="216"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="225"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="228"/>
         <source>FET information</source>
         <translation>FET معلومات</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="185"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="187"/>
         <source>Invalid weight (percentage)</source>
         <translation>وزن غير صحيح(النسبي)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="195"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="207"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="197"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="209"/>
         <source>Invalid activity</source>
         <translation>لم يتم اختيار نشاط</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="215"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="217"/>
         <source>Same activities - impossible</source>
         <translation>نفس المهمات - مستحيل</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="224"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="226"/>
         <source>Constraint added:</source>
         <translation>القيد أُضيف:</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="227"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="229"/>
         <source>Constraint NOT added - error?</source>
         <translation>خطأ - التقييد لم يضف؟</translation>
     </message>
@@ -10044,7 +10044,7 @@ Note: teacher not available and break are not counted as gaps.</source>
 <context>
     <name>AddConstraintTwoActivitiesConsecutiveForm_template</name>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="206"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="213"/>
         <source>Close</source>
         <translation>غلق</translation>
     </message>
@@ -10062,7 +10062,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <translation>اضافة نشاطين متتاليين</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="199"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="206"/>
         <source>Add constraint</source>
         <translation>اضافة القيد</translation>
     </message>
@@ -10100,6 +10100,12 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="62"/>
         <source>Activity tag</source>
         <translation>الوسم المشترك</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="199"/>
+        <source>Swap</source>
+        <comment>Interchange (swap) the two selected activities in the dialog</comment>
+        <translation>تبادل</translation>
     </message>
 </context>
 <context>
@@ -10205,38 +10211,38 @@ Note: teacher not available and break are not counted as gaps.</source>
 <context>
     <name>AddConstraintTwoActivitiesOrderedForm</name>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="184"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="194"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="206"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="214"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="223"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="226"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="186"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="196"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="208"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="216"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="225"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="228"/>
         <source>FET information</source>
         <translation>FET معلومات</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="185"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="187"/>
         <source>Invalid weight (percentage)</source>
         <translation>وزن غير صحيح(النسبي)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="195"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="207"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="197"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="209"/>
         <source>Invalid activity</source>
         <translation>لم يتم اختيار نشاط</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="215"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="217"/>
         <source>Same activities - impossible</source>
         <translation>نفس المهمات - مستحيل</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="224"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="226"/>
         <source>Constraint added:</source>
         <translation>القيد أُضيف:</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="227"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="229"/>
         <source>Constraint NOT added - error?</source>
         <translation>خطأ - التقييد لم يضف؟</translation>
     </message>
@@ -10244,7 +10250,7 @@ Note: teacher not available and break are not counted as gaps.</source>
 <context>
     <name>AddConstraintTwoActivitiesOrderedForm_template</name>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="206"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="213"/>
         <source>Close</source>
         <translation>غلق</translation>
     </message>
@@ -10262,7 +10268,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <translation>اضافة نشاطين متعاقبين</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="199"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="206"/>
         <source>Add constraint</source>
         <translation>اضافة القيد</translation>
     </message>
@@ -10300,6 +10306,12 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="62"/>
         <source>Activity tag</source>
         <translation>الوسم المشترك</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="199"/>
+        <source>Swap</source>
+        <comment>Interchange (swap) the two selected activities in the dialog</comment>
+        <translation>تبادل</translation>
     </message>
 </context>
 <context>
@@ -12883,7 +12895,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="306"/>
         <source>Uses of this constraint are probably very wide. The main reason it was added was to enable users to specify that a teacher should have activities in certain time slots. Example: we have a week with 30 hours. Teacher T has 20 hours of activities, and we would like him to have activities Monday and Tuesday on the first two hours. Add a constraint of this type, with the set of activities being all the activities of teacher T, selected time slots being the remaining 30-2*2=26 slots of the week, and the maximum number of selected time slots which can be occupied by these activities being 20-2*2=16.</source>
-        <translation>استخدام هذا القيد هو على الأرحح جدّ واسع. السبب الرئيسي الذي أُضيف من أجله هو تمكين مستعملي البرنامج من اجبار مدرس(أو طلاب) كي يكون له(أو لهم) أنشطة خلال فترات زمنية معينة.
+        <translation>استخدام هذا القيد هو على الأرحح جدّ واسع. السبب الرئيسي الذي أُضيف من أجله هو تمكين مستعملي البرنامج من تحديد أن مدرسًا(أو تلاميذ) ينبغي أن يكون له أنشطة خلال فترات زمنية معينة.
 
 مثال: لدينا أسبوع يتكوّن من 30 حصة(أو ساعة). المدرس - T - له 20 حصة(ساعة) من الأنشطة، و نرغب أن يكون له أنشطة في يومي الاثنين و الثلاثاء أثناء أول حصتين. اضافة قيد من هذا النوع، مع مجموعة الأنشطة التي هي كل أنشطة المدرس T، تحديد الفترات الزمنية التي هي الفترات المتبقية 30-2*2=26 فترة في الأسبوع، و أقصى عدد من الفترات المحددة التي يمكن أن تُحتَل من طرف هذه الأنشطة هو 20-2*2=16.</translation>
     </message>
@@ -13349,7 +13361,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="9647"/>
         <source>Activities with %1, %2, %3, %4, %5, have a set of preferred time slots:</source>
         <comment>%1...%5 are conditions for the activities</comment>
-        <translation></translation>
+        <translation>أنشطة مع %1, %2, %3, %4, %5, لها مجموعة أوقات بدء مفضلة:</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9662"/>
@@ -13793,44 +13805,44 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintActivitiesSameStartingDayForm</name>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="119"/>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="146"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="257"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="284"/>
         <source>FET information</source>
         <translation>FET معلومات</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="119"/>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="146"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="257"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="284"/>
         <source>Invalid selected constraint</source>
         <translation>لم يتم اختيار قيد</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="151"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="289"/>
         <source>Remove constraint?</source>
         <translation>حذف القيد؟</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="157"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="295"/>
         <source>FET confirmation</source>
         <translation>FET تأكيد</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="158"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="296"/>
         <source>Yes</source>
         <translation>نعم</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="158"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="296"/>
         <source>No</source>
         <translation>لا</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="184"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="322"/>
         <source>IMPORTANT: after adding such constraints, it is necessary (otherwise generation might be impossible) to remove redundant constraints min days between activities. If you are sure that you don&apos;t have redundant constraints, you can skip this step, but it doesn&apos;t hurt to do it as a precaution. Also, you don&apos;t have to do that after each added constraint, but only once after adding more constraints of this type. Please read Help/Important tips - tip number 2 for details</source>
         <translation>ملاحظة: بعد اضافة هذه القيود، من الضروري (خلاف ذلك الانتاج قد يكون مستحيلا) ازالة القيود الزائدة أدنى أيام بين الأنشطة. إذا كنت متأكدا أنه ليس لك قيود زائدة، يمكنك تجاوز هذه الخطوة، لكن لا حرج إذا قمت بذلك على سبيل الاحتياط. أيضا ليس عليك القيام بهذا بعد كل قيد يضاف، ولكن مرة واحدة فقط بعد إضافة المزيد من القيود من هذا النوع. فضلا اقرأ مساعدة/نصائح هامة - رقم 2 لمزيد من التفاصيل</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="189"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="327"/>
         <source>FET help</source>
         <translation>FET مساعدة</translation>
     </message>
@@ -13838,12 +13850,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintActivitiesSameStartingDayForm_template</name>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="110"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="177"/>
         <source>Close</source>
         <translation>غلق</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="82"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="145"/>
         <source>Add</source>
         <translation>اضافة</translation>
     </message>
@@ -13864,17 +13876,42 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <translation>قيود أنشطة لها نفس يوم البدء</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="96"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="80"/>
+        <source>Filter</source>
+        <translation type="unfinished">فرز</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="86"/>
+        <source>Teacher</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="99"/>
+        <source>Students set</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="112"/>
+        <source>Subject</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="125"/>
+        <source>Activity tag</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="159"/>
         <source>Remove</source>
         <translation>حذف</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="89"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="152"/>
         <source>Modify</source>
         <translation>تعديل</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="103"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="170"/>
         <source>Help</source>
         <translation>مساعدة</translation>
     </message>
@@ -13980,34 +14017,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintActivitiesSameStartingHourForm</name>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="118"/>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="145"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="256"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="283"/>
         <source>FET information</source>
         <translation>FET معلومات</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="118"/>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="145"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="256"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="283"/>
         <source>Invalid selected constraint</source>
         <translation>اختيار غير صحيح للقيد</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="150"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="288"/>
         <source>Remove constraint?</source>
         <translation>حذف القيد؟</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="156"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="294"/>
         <source>FET confirmation</source>
         <translation>FET تأكيد</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="157"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="295"/>
         <source>Yes</source>
         <translation>نعم</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="157"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="295"/>
         <source>No</source>
         <translation>لا</translation>
     </message>
@@ -14021,12 +14058,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <translation>قيود أنشطة تبدأ في نفس الحصة</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="81"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="146"/>
         <source>Close</source>
         <translation>غلق</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="60"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="123"/>
         <source>Add</source>
         <translation>اضافة</translation>
     </message>
@@ -14041,12 +14078,37 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <translation>القيد الحالي</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="74"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="58"/>
+        <source>Filter</source>
+        <translation type="unfinished">فرز</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="64"/>
+        <source>Teacher</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="77"/>
+        <source>Students set</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="90"/>
+        <source>Subject</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="103"/>
+        <source>Activity tag</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="137"/>
         <source>Remove</source>
         <translation>حذف</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="67"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="130"/>
         <source>Modify</source>
         <translation>تعديل</translation>
     </message>
@@ -14121,7 +14183,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="1258"/>
         <source>Activity with id=%1 (%2)</source>
         <comment>%1 is the id, %2 is the detailed description of the activity</comment>
-        <translation>نشاط (id)مع معرفها=%1 (%2)</translation>
+        <translation>نشاط (id)مع معرفه=%1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="1263"/>
@@ -14300,7 +14362,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="13539"/>
         <source>Act. id: %1 (%2) must end students&apos; day</source>
         <comment>%1 is the id, %2 is the detailed description of the activity.</comment>
-        <translation>نشاط بمعرفها (id): %1 (%2) يجب أن تنهي يوم الطلاب</translation>
+        <translation>نشاط بمعرفه (id): %1 (%2) يجب أن ينهي يوم الطلاب</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13545"/>
@@ -14327,7 +14389,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="13555"/>
         <source>Activity id=%1 (%2)</source>
         <comment>%1 is the id, %2 is the detailed description of the activity.</comment>
-        <translation>نشاط (id) بمعرفها=%1 (%2)</translation>
+        <translation>نشاط (id) بمعرفه=%1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13560"/>
@@ -14513,7 +14575,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="847"/>
         <source>Activity id=%1 (%2)</source>
         <comment>%1 is activity id, %2 is detailed description of activity</comment>
-        <translation>نشاط (id) بمعرفها=%1 (%2)</translation>
+        <translation>نشاط (id) بمعرفه=%1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="852"/>
@@ -14523,7 +14585,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="855"/>
         <source>This activity is permanently locked, which means you cannot unlock it from the &apos;Timetable&apos; menu (you can unlock this activity by removing the constraint from the constraints dialog or by setting the &apos;permanently locked&apos; attribute false when editing this constraint)</source>
-        <translation>هذه النشاط مقفلة بشكل دائم، مما يعني أنه لا يمكنك فتحها من قائمة &quot;الجدول&quot; (يمكنك فتح هذه النشاط عن طريق حذف القيد من مربع الحوار أو عن طريق ضبط &quot;قفل دائم&quot; بازالة اشارة &quot;صحيح&quot; عند تعديل هذا القيد)</translation>
+        <translation>هذا النشاط مقفل بشكل دائم، مما يعني أنه لا يمكنك فتحه من قائمة &quot;الجدول&quot; (يمكنك فتح هذا النشاط عن طريق حذف القيد من مربع الحوار أو عن طريق ضبط &quot;قفل دائم&quot; بازالة اشارة &quot;صحيح&quot; عند تعديل هذا القيد)</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="860"/>
@@ -14717,7 +14779,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="1101"/>
         <source>Activity id=%1 (%2)</source>
         <comment>%1 is activity id, %2 is detailed description of activity</comment>
-        <translation>نشاط (id) بمعرفها=%1 (%2)</translation>
+        <translation>نشاط (id) بمعرفه=%1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1107"/>
@@ -14916,12 +14978,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8959"/>
         <source>This activity is permanently locked, which means you cannot unlock it from the &apos;Timetable&apos; menu (you can unlock this activity by removing the constraint from the constraints dialog or by setting the &apos;permanently locked&apos; attribute false when editing this constraint)</source>
-        <translation>هذه النشاط مقفلة بشكل دائم، مما يعني أنه لا يمكنك فتحها من قائمة &quot;الجدول&quot; (يمكنك فتح هذه النشاط عن طريق حذف القيد من مربع الحوار أو عن طريق ضبط &quot;قفل دائم&quot; بازالة اشارة &quot;صحيح&quot; عند تعديل هذا القيد)</translation>
+        <translation>هذا النشاط مقفل بشكل دائم، مما يعني أنه لا يمكنك فتحه من قائمة &quot;الجدول&quot; (يمكنك فتح هذا النشاط عن طريق حذف القيد من مربع الحوار أو عن طريق ضبط &quot;قفل دائم&quot; بازالة اشارة &quot;صحيح&quot; عند تعديل هذا القيد)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8964"/>
         <source>This activity is not permanently locked, which means you can unlock it from the &apos;Timetable&apos; menu</source>
-        <translation>هذا النشاط غير مقفل بشكل دائم، و الذي يعني أنه بامكانك فتحه من قائمة &quot;جدول&quot;</translation>
+        <translation>هذا النشاط غير مقفل بشكل دائم، و الذي يعني أنه بامكانك فتحه من قائمة &apos;جدول&apos;</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8969"/>
@@ -16716,7 +16778,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="2002"/>
         <source>Time constraint min days between activities broken: activity with id=%1 (%2) conflicts with activity with id=%3 (%4), being %5 days too close, on days %6 and %7</source>
         <comment>%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr. Close here means near</comment>
-        <translation>قيد أدنى عدد من الأيام بين الأنشطة تم كسره : النشاط ذات مع=%1 (%2) تتعارض مع النشاط ذات مع=%3 (%4), حالياً بينهما %5 أيام جدّ قريبة , في يومي %6 و %7</translation>
+        <translation>قيد أدنى عدد من الأيام بين الأنشطة تم كسره : النشاط ذات مع=%1 (%2) تتعارض مع النشاط ذات مع=%3 (%4), حالياً بينهما %5 يوم جدّ قريبة , في يومي %6 و %7</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="2014"/>
@@ -23126,7 +23188,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="10137"/>
         <source>Subactivities with %1, %2, %3, %4, %5, have a set of preferred time slots:</source>
         <comment>%1...%5 are conditions for the subactivities</comment>
-        <translation>الأنشطة مع %1, %2, %3, %4, %5, لها مجموعة فترات زمنية مفضلة:</translation>
+        <translation>أنشطة فرعية مع %1, %2, %3, %4, %5, لها مجموعة فترات زمنية مفضلة:</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10138"/>
@@ -29420,34 +29482,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintThreeActivitiesGroupedForm</name>
     <message>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="114"/>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="139"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="244"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="269"/>
         <source>FET information</source>
         <translation>FET معلومات</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="114"/>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="139"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="244"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="269"/>
         <source>Invalid selected constraint</source>
         <translation>لم يتم اختيار قيد</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="144"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="274"/>
         <source>Remove constraint?</source>
         <translation>حذف القيد؟</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="150"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="280"/>
         <source>FET confirmation</source>
         <translation>FET تأكيد</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="151"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="281"/>
         <source>Yes</source>
         <translation>نعم</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="151"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="281"/>
         <source>No</source>
         <translation>لا</translation>
     </message>
@@ -29461,22 +29523,47 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <translation>قيود ثلاث أنشطة متجاورة</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="115"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="90"/>
+        <source>Filter</source>
+        <translation type="unfinished">فرز</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="96"/>
+        <source>Teacher</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="109"/>
+        <source>Students set</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="122"/>
+        <source>Subject</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="135"/>
+        <source>Activity tag</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="176"/>
         <source>Close</source>
         <translation>غلق</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="94"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="155"/>
         <source>Add</source>
         <translation>اضافة</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="108"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="169"/>
         <source>Remove</source>
         <translation>حذف</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="101"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="162"/>
         <source>Modify</source>
         <translation>تعديل</translation>
     </message>
@@ -29596,40 +29683,40 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="12474"/>
         <source>Time constraint two activities consecutive broken for first activity with id=%1 (%2) and second activity with id=%3 (%4), increases conflicts total by %5</source>
         <comment>%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.</comment>
-        <translation>قيد الزمن نشاطان متتاليان تم كسره للنشاط الأولى ذات المعرف مع=%1(%2)، و النشاط الثاني ذات المعرف مع=%3(%4)، زيادة معامل التعارضات %5</translation>
+        <translation>قيد الزمن نشاطان متتاليان تم كسره للنشاط الأول ذات المعرف مع=%1(%2)، و النشاط الثاني ذات المعرف مع=%3(%4)، زيادة معامل التعارضات %5</translation>
     </message>
 </context>
 <context>
     <name>ConstraintTwoActivitiesConsecutiveForm</name>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="114"/>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="139"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="241"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="266"/>
         <source>FET information</source>
         <translation>FET معلومات</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="114"/>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="139"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="241"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="266"/>
         <source>Invalid selected constraint</source>
         <translation>لم يتم اختيار قيد</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="144"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="271"/>
         <source>Remove constraint?</source>
         <translation>حذف القيد؟</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="150"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="277"/>
         <source>FET confirmation</source>
         <translation>FET تأكيد</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="151"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="278"/>
         <source>Yes</source>
         <translation>نعم</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="151"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="278"/>
         <source>No</source>
         <translation>لا</translation>
     </message>
@@ -29637,22 +29724,47 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintTwoActivitiesConsecutiveForm_template</name>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="115"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="176"/>
         <source>Close</source>
         <translation>غلق</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="94"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="155"/>
         <source>Add</source>
         <translation>اضافة</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="108"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="90"/>
+        <source>Filter</source>
+        <translation type="unfinished">فرز</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="96"/>
+        <source>Teacher</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="109"/>
+        <source>Students set</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="122"/>
+        <source>Subject</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="135"/>
+        <source>Activity tag</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="169"/>
         <source>Remove</source>
         <translation>حذف</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="101"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="162"/>
         <source>Modify</source>
         <translation>تعديل</translation>
     </message>
@@ -29778,40 +29890,40 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="12760"/>
         <source>Time constraint two activities grouped broken for first activity with id=%1 (%2) and second activity with id=%3 (%4), increases conflicts total by %5</source>
         <comment>%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.</comment>
-        <translation>قيد الزمن نشاطان متجاوران تم كسره للنشاط الأولى ذات المعرف مع=%1(%2)، و النشاط الثاني ذات المعرف مع=%3(%4)، زيادة مجموع التعارضات %5</translation>
+        <translation>قيد الزمن نشاطان متجاوران تم كسره للنشاط الأول ذات المعرف مع=%1(%2)، و النشاط الثاني ذات المعرف مع=%3(%4)، زيادة مجموع التعارضات %5</translation>
     </message>
 </context>
 <context>
     <name>ConstraintTwoActivitiesGroupedForm</name>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="114"/>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="139"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="241"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="266"/>
         <source>FET information</source>
         <translation>FET معلومات</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="114"/>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="139"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="241"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="266"/>
         <source>Invalid selected constraint</source>
         <translation>لم يتم اختيار قيد</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="144"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="271"/>
         <source>Remove constraint?</source>
         <translation>حذف القيد؟</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="150"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="277"/>
         <source>FET confirmation</source>
         <translation>FET تأكيد</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="151"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="278"/>
         <source>Yes</source>
         <translation>نعم</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="151"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="278"/>
         <source>No</source>
         <translation>لا</translation>
     </message>
@@ -29819,22 +29931,47 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintTwoActivitiesGroupedForm_template</name>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="115"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="176"/>
         <source>Close</source>
         <translation>غلق</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="94"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="155"/>
         <source>Add</source>
         <translation>اضافة</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="108"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="90"/>
+        <source>Filter</source>
+        <translation type="unfinished">فرز</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="96"/>
+        <source>Teacher</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="109"/>
+        <source>Students set</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="122"/>
+        <source>Subject</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="135"/>
+        <source>Activity tag</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="169"/>
         <source>Remove</source>
         <translation>حذف</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="101"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="162"/>
         <source>Modify</source>
         <translation>تعديل</translation>
     </message>
@@ -29967,34 +30104,34 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>ConstraintTwoActivitiesOrderedForm</name>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="114"/>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="139"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="241"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="266"/>
         <source>FET information</source>
         <translation>FET معلومات</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="114"/>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="139"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="241"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="266"/>
         <source>Invalid selected constraint</source>
         <translation>لم يتم اختيار قيد</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="144"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="271"/>
         <source>Remove constraint?</source>
         <translation>حذف القيد؟</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="150"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="277"/>
         <source>FET confirmation</source>
         <translation>FET تأكيد</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="151"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="278"/>
         <source>Yes</source>
         <translation>نعم</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="151"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="278"/>
         <source>No</source>
         <translation>لا</translation>
     </message>
@@ -30008,22 +30145,47 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <translation>قيود نشاطين متعاقبين</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="99"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="74"/>
+        <source>Filter</source>
+        <translation type="unfinished">فرز</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="80"/>
+        <source>Teacher</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="93"/>
+        <source>Students set</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="106"/>
+        <source>Subject</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="119"/>
+        <source>Activity tag</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="160"/>
         <source>Close</source>
         <translation>غلق</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="78"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="139"/>
         <source>Add</source>
         <translation>اضافة</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="92"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="153"/>
         <source>Remove</source>
         <translation>حذف</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="85"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="146"/>
         <source>Modify</source>
         <translation>تعديل</translation>
     </message>
@@ -30445,7 +30607,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/export.cpp" line="873"/>
         <source>Activity with id %1 has disabled active flag but it is exported.</source>
-        <translation>نشاط بمعرفها.مع %1 لها علم نشط معطل لكن قد تم تصديرها.</translation>
+        <translation>نشاط بمعرفه.مع %1 له علم نشط معطل لكن قد تم تصديره.</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="875"/>
@@ -36038,7 +36200,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.31.6 (April 2017).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.31.7 (June 2017).&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
@@ -36714,11 +36876,15 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Matsumoto - suggestions.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;bart.leyen - bug report.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;math - suggestion.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;s.lanore - suggestion.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="854"/>
+        <location filename="../src/interface/helpaboutform_template.ui" line="858"/>
         <source>Close</source>
         <translation>غلق</translation>
     </message>
@@ -38164,7 +38330,7 @@ ATS = affected teacher or students set
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="145"/>
         <source>13) If you have for instance 7 hours of Maths on a 5 days week (more lessons than days), please respect the correct way to add these as a split activity. See question Q-1-27-March-2008 from FAQ. It is important!</source>
-        <translation>13) إذا كان لديك على سبيل المثال 7 ساعات(حصص) من الرياضيات على مدار 5 أيام في الأسبوع (عدد دروس أكثر من عدد الأيام)، يرجى احترام الطريقة الصحيحة لإضافة هذه النشاط كنشاط مقسم. راجع السؤال Q-1-27-مارس-2008 من الأسئلة الشائعة. انه مهم!</translation>
+        <translation>13) إذا كان لديك على سبيل المثال 7 ساعات(حصص) من الرياضيات على مدار 5 أيام في الأسبوع (عدد دروس أكثر من عدد الأيام)، يرجى احترام الطريقة الصحيحة لإضافة هذا النشاط كنشاط مقسم. راجع السؤال Q-1-27-مارس-2008 من الأسئلة الشائعة. انه مهم!</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="158"/>
@@ -46872,30 +47038,30 @@ Note: teacher not available and break are not counted as gaps.</source>
 <context>
     <name>ModifyConstraintTwoActivitiesConsecutiveForm</name>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="123"/>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="132"/>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="142"/>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="149"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="125"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="134"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="144"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="151"/>
         <source>FET information</source>
         <translation>FET معلومات</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="124"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="126"/>
         <source>Invalid weight (percentage)</source>
         <translation>وزن غير صحيح(النسبي)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="133"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="135"/>
         <source>Invalid first activity</source>
         <translation>لم يتم اختيار النشاط الاول</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="143"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="145"/>
         <source>Invalid second activity</source>
         <translation>لم يتم اختيار النشاط الثاني</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="150"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="152"/>
         <source>Same activities - impossible</source>
         <translation>نفس المهمات - مستحيل</translation>
     </message>
@@ -46903,12 +47069,12 @@ Note: teacher not available and break are not counted as gaps.</source>
 <context>
     <name>ModifyConstraintTwoActivitiesConsecutiveForm_template</name>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="22"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="29"/>
         <source>Ok</source>
         <translation>موافق</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="29"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="36"/>
         <source>Cancel</source>
         <translation>الغاء</translation>
     </message>
@@ -46918,19 +47084,25 @@ Note: teacher not available and break are not counted as gaps.</source>
         <translation>تعديل نشاطين متتاليين</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="46"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="22"/>
+        <source>Swap</source>
+        <comment>Interchange (swap) the two selected activities in the dialog</comment>
+        <translation>تبادل</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="53"/>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>الوزن النسبي
 (يقبل: 0.0%-100.0%)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="90"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="97"/>
         <source>First activity</source>
         <translation>النشاط الاول</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="126"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="133"/>
         <source>Second activity</source>
         <translation>النشاط الثاني</translation>
     </message>
@@ -47005,30 +47177,30 @@ Note: teacher not available and break are not counted as gaps.</source>
 <context>
     <name>ModifyConstraintTwoActivitiesOrderedForm</name>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="123"/>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="132"/>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="142"/>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="149"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="125"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="134"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="144"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="151"/>
         <source>FET information</source>
         <translation>FET معلومات</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="124"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="126"/>
         <source>Invalid weight (percentage)</source>
         <translation>وزن غير صحيح(النسبي)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="133"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="135"/>
         <source>Invalid first activity</source>
         <translation>لم يتم اختيار النشاط الاول</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="143"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="145"/>
         <source>Invalid second activity</source>
         <translation>لم يتم اختيار النشاط الثاني</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="150"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="152"/>
         <source>Same activities - impossible</source>
         <translation>نفس الأنشطة - مستحيل</translation>
     </message>
@@ -47036,12 +47208,12 @@ Note: teacher not available and break are not counted as gaps.</source>
 <context>
     <name>ModifyConstraintTwoActivitiesOrderedForm_template</name>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="22"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="29"/>
         <source>Ok</source>
         <translation>موافق</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="29"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="36"/>
         <source>Cancel</source>
         <translation>الغاء</translation>
     </message>
@@ -47052,19 +47224,25 @@ Note: teacher not available and break are not counted as gaps.</source>
         <translation>تعديل نشاطين متعاقبين</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="46"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="22"/>
+        <source>Swap</source>
+        <comment>Interchange (swap) the two selected activities in the dialog</comment>
+        <translation>تبادل</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="53"/>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>الوزن النسبي
 (يقبل: 0.0%-100.0%)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="90"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="97"/>
         <source>First activity</source>
         <translation>النشاط الاول</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="126"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="133"/>
         <source>Second activity</source>
         <translation>النشاط الثاني</translation>
     </message>
@@ -47798,7 +47976,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="412"/>
         <source>Mode of operation: to obtain the same timetable twice, give the random seed two values (say X=1234, Y=12345), then generate single, then make it again the same values (X=1234 and Y=12345), then generate single again. The timetables will be the same. If you generate multiple instead of single, the first set of timetables will be the same as the second set (if you generate the same number of timetables) but of course timetables inside each set will be different. If you enter the same random seed (X and Y) on different computers (but using the same FET version, see note below) and generate single, the timetables will be the same (if you generate multiple, the sets of timetables will correspond, the first timetable from simulation 1 with first timetable from simulation 2, etc.)</source>
-        <translation>طريقة العمل: للحصول على نفس الجدول مرتين، امنح للبذرة العشوائية قيمتين (مثل: X=1234 و Y=12345)، ثم قم بانتاج واحد ،ثم امنحها مرة أخرى نفس القيمتين (X=1234 و Y=12345)K ثم قم بانتاج واحد مجددا.  ستحصل على نفس الجدولين. إذا قمت بانتاج متعدد بدلا من انتاج واحد، جداول المجموعة الأولى ستكون نفس جداول المجموعة الثانية (إذا قمت بانتاج نفس العدد من الجداول في كلا المجموعتين) لكن طبعا الجداول داخل كل مجموعة ستكون مختلفة. إذا أدخلت نفس البذرة العشوائية (X و Y) في حواسيب مختلفة (لمن باستعمال نفس النسخة من FET، أنظر الملاحظة أدناه) و تقوم بانتاج واحد، الجداول ستكون نفسها (إذا قمت بانتاج متعدد، مجموعات الجداول ستكون متوافقة، الجدول الأول للمحاكاة الأولى مع الجدول الأول للمحاكاة الثانية، الخ.)</translation>
+        <translation>طريقة العمل: للحصول على نفس الجدول مرتين، امنح للبذرة العشوائية قيمتين (مثل: X=1234 و Y=12345)، ثم قم بانتاج واحد ،ثم امنحها مرة أخرى نفس القيمتين (X=1234 و Y=12345)K ثم قم بانتاج واحد مجددا.  ستحصل على نفس الجدولين. إذا قمت بانتاج متعدد بدلا من انتاج واحد، جداول المجموعة الأولى ستكون نفس جداول المجموعة الثانية (إذا قمت بانتاج نفس العدد من الجداول في كلا المجموعتين) لكن طبعا الجداول داخل كل مجموعة ستكون مختلفة. إذا أدخلت نفس البذرة العشوائية (X و Y) في حواسيب مختلفة (لكن باستعمال نفس النسخة من FET، أنظر الملاحظة أدناه) و تقوم بانتاج واحد، الجداول ستكون نفسها (إذا قمت بانتاج متعدد، مجموعات الجداول ستكون متوافقة، الجدول الأول للمحاكاة الأولى مع الجدول الأول للمحاكاة الثانية، الخ.)</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="421"/>
@@ -47823,7 +48001,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="432"/>
         <source>This setting is useful for more things, maybe one thing is bug report: send you file along with the random seed at the start of generating (the two components, X and Y, are saved in the timetable directory at the start of generation)</source>
-        <translation>هذا الاعداد هو مفيد لمزيد من الأغراض، ربما أحد الأغراض هو هو من أجل رفع تقرير عن خطأ برمجي محتمل: ابعث ملفك مرفقا مع البذرة العشوائية عند انطلاق الانتاج (الاحداثيتان، X و Y، محفوظتان في مجلد الجدول عند انطلاق التشغيل)</translation>
+        <translation>هذا الاعداد هو مفيد لمزيد من الأغراض، ربما أحد الأغراض هو من أجل رفع تقرير عن خطأ برمجي محتمل: ابعث ملفك مرفقا مع البذرة العشوائية عند انطلاق الانتاج (الاحداثيتان، X و Y، محفوظتان في مجلد الجدول عند انطلاق التشغيل)</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="441"/>
@@ -49418,7 +49596,7 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/settingstimetablehtmllevelform_template.ui" line="20"/>
         <source>The html level for generated timetables</source>
-        <translation>أعوام html لانتاج الجدول</translation>
+        <translation>مستويات html لانتاج الجدول</translation>
     </message>
     <message>
         <location filename="../src/interface/settingstimetablehtmllevelform_template.ui" line="83"/>
