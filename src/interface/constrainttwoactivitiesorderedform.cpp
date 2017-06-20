@@ -44,9 +44,61 @@ ConstraintTwoActivitiesOrderedForm::ConstraintTwoActivitiesOrderedForm(QWidget* 
 	connect(modifyConstraintPushButton, SIGNAL(clicked()), this, SLOT(modifyConstraint()));
 	connect(constraintsListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(modifyConstraint()));
 
+	connect(teachersComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
+	connect(studentsComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
+	connect(subjectsComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
+	connect(activityTagsComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
+
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
 	
+	QSize tmp1=teachersComboBox->minimumSizeHint();
+	Q_UNUSED(tmp1);
+	QSize tmp2=studentsComboBox->minimumSizeHint();
+	Q_UNUSED(tmp2);
+	QSize tmp3=subjectsComboBox->minimumSizeHint();
+	Q_UNUSED(tmp3);
+	QSize tmp4=activityTagsComboBox->minimumSizeHint();
+	Q_UNUSED(tmp4);
+	
+/////////////
+	teachersComboBox->addItem("");
+	for(int i=0; i<gt.rules.teachersList.size(); i++){
+		Teacher* tch=gt.rules.teachersList[i];
+		teachersComboBox->addItem(tch->name);
+	}
+	teachersComboBox->setCurrentIndex(0);
+
+	subjectsComboBox->addItem("");
+	for(int i=0; i<gt.rules.subjectsList.size(); i++){
+		Subject* sb=gt.rules.subjectsList[i];
+		subjectsComboBox->addItem(sb->name);
+	}
+	subjectsComboBox->setCurrentIndex(0);
+
+	activityTagsComboBox->addItem("");
+	for(int i=0; i<gt.rules.activityTagsList.size(); i++){
+		ActivityTag* st=gt.rules.activityTagsList[i];
+		activityTagsComboBox->addItem(st->name);
+	}
+	activityTagsComboBox->setCurrentIndex(0);
+
+	studentsComboBox->addItem("");
+	for(int i=0; i<gt.rules.yearsList.size(); i++){
+		StudentsYear* sty=gt.rules.yearsList[i];
+		studentsComboBox->addItem(sty->name);
+		for(int j=0; j<sty->groupsList.size(); j++){
+			StudentsGroup* stg=sty->groupsList[j];
+			studentsComboBox->addItem(stg->name);
+			if(SHOW_SUBGROUPS_IN_COMBO_BOXES) for(int k=0; k<stg->subgroupsList.size(); k++){
+				StudentsSubgroup* sts=stg->subgroupsList[k];
+				studentsComboBox->addItem(sts->name);
+			}
+		}
+	}
+	studentsComboBox->setCurrentIndex(0);
+///////////////
+
 	this->filterChanged();
 }
 
@@ -57,7 +109,82 @@ ConstraintTwoActivitiesOrderedForm::~ConstraintTwoActivitiesOrderedForm()
 
 bool ConstraintTwoActivitiesOrderedForm::filterOk(TimeConstraint* ctr)
 {
-	if(ctr->type==CONSTRAINT_TWO_ACTIVITIES_ORDERED)
+	if(ctr->type!=CONSTRAINT_TWO_ACTIVITIES_ORDERED)
+		return false;
+
+	ConstraintTwoActivitiesOrdered* c=(ConstraintTwoActivitiesOrdered*) ctr;
+	
+	QString tn=teachersComboBox->currentText();
+	QString sbn=subjectsComboBox->currentText();
+	QString sbtn=activityTagsComboBox->currentText();
+	QString stn=studentsComboBox->currentText();
+	
+	if(tn=="" && sbn=="" && sbtn=="" && stn=="")
+		return true;
+	
+	bool foundTeacher=false, foundStudents=false, foundSubject=false, foundActivityTag=false;
+		
+	for(int i=0; i<2; i++){
+		//bool found=true;
+	
+		int id=-1;
+		
+		if(i==0)
+			id=c->firstActivityId;
+		else if(i==1)
+			id=c->secondActivityId;
+			
+		assert(id>=0);
+
+		Activity* act=NULL;
+		foreach(Activity* a, gt.rules.activitiesList)
+			if(a->id==id)
+				act=a;
+		
+		if(act!=NULL){
+			//teacher
+			if(tn!=""){
+				bool ok2=false;
+				for(QStringList::Iterator it=act->teachersNames.begin(); it!=act->teachersNames.end(); it++)
+					if(*it == tn){
+						ok2=true;
+						break;
+					}
+				if(ok2)
+					foundTeacher=true;
+			}
+			else
+				foundTeacher=true;
+
+			//subject
+			if(sbn!="" && sbn!=act->subjectName)
+				;
+			else
+				foundSubject=true;
+		
+			//activity tag
+			if(sbtn!="" && !act->activityTagsNames.contains(sbtn))
+				;
+			else
+				foundActivityTag=true;
+		
+			//students
+			if(stn!=""){
+				bool ok2=false;
+				for(QStringList::Iterator it=act->studentsNames.begin(); it!=act->studentsNames.end(); it++)
+					if(*it == stn){
+						ok2=true;
+						break;
+				}
+				if(ok2)
+					foundStudents=true;
+			}
+			else
+				foundStudents=true;
+		}
+	}
+	
+	if(foundTeacher && foundStudents && foundSubject && foundActivityTag)
 		return true;
 	else
 		return false;

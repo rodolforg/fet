@@ -40,6 +40,8 @@ public slots:
 	void addConstraint();
 	void removeConstraint();
 	void modifyConstraint();
+
+	void filterChanged();
 };
 
 #endif
