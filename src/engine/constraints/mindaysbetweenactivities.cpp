@@ -2,11 +2,6 @@
 
 #include "generate_pre.h"
 
-QStringList MinDaysBetweenActivities::getErrors() const
-{
-	return errors;
-}
-
 MinDaysBetweenActivities::MinDaysBetweenActivities()
 {
 

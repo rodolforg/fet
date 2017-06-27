@@ -44,6 +44,7 @@ SOURCES += tst_constraintteachersmincontinuousgapinintervaltest.cpp \
     ../../../../src/engine/timetable_defs.cpp \
     ../../../../src/engine/generate_pre.cpp \
     ../../../../src/interface/longtextmessagebox.cpp \
+    ../../../../src/engine/constraints/constraintpre.cpp \
     ../../../../src/engine/constraints/mindaysbetweenactivities.cpp \
     ../../../../src/engine/constraints/maxdaysbetweenactivities.cpp \
     ../../../../src/engine/constraints/mingapsbetweenactivities.cpp \

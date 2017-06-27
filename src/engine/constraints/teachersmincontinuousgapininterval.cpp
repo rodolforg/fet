@@ -2,11 +2,6 @@
 
 #include "generate_pre.h"
 
-QStringList MinContinuousGapInIntervalForTeachers::getErrors() const
-{
-	return errors;
-}
-
 MinContinuousGapInIntervalForTeachers::MinContinuousGapInIntervalForTeachers()
 {
 

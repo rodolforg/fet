@@ -3,12 +3,10 @@
 
 #include <QList>
 #include "matrix.h"
-#include "rules.h"
+#include "constraints/constraintpre.h"
 
-class MinDaysBetweenActivities
+class MinDaysBetweenActivities : public ConstraintPre
 {
-	QStringList errors;
-
 public:
 	Matrix1D<QList<int> > activities;
 	Matrix1D<QList<int> > minDays;
@@ -18,8 +16,6 @@ public:
 	MinDaysBetweenActivities();
 
 	bool prepare(const Rules &rules);
-
-	QStringList getErrors() const;
 };
 
 #endif // MINDAYSBETWEENACTIVITIES_H

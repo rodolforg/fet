@@ -2,11 +2,6 @@
 
 #include "generate_pre.h"
 
-QStringList MaxDaysBetweenActivities::getErrors() const
-{
-	return errors;
-}
-
 MaxDaysBetweenActivities::MaxDaysBetweenActivities()
 {
 

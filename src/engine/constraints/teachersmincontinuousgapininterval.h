@@ -3,12 +3,10 @@
 
 #include <QList>
 #include "matrix.h"
-#include "rules.h"
+#include "constraints/constraintpre.h"
 
-class MinContinuousGapInIntervalForTeachers
+class MinContinuousGapInIntervalForTeachers : public ConstraintPre
 {
-	QStringList errors;
-
 public:
 	static const int MAX = 3;
 	struct Data {
@@ -21,8 +19,6 @@ public:
 	MinContinuousGapInIntervalForTeachers();
 
 	bool prepare(const Rules &rules);
-
-	QStringList getErrors() const;
 };
 
 #endif // TEACHERSMINCONTINUOUSGAPININTERVAL_H

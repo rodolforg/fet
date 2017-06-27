@@ -3,12 +3,10 @@
 
 #include <QList>
 #include "matrix.h"
-#include "rules.h"
+#include "constraints/constraintpre.h"
 
-class MaxDaysBetweenActivities
+class MaxDaysBetweenActivities : public ConstraintPre
 {
-	QStringList errors;
-
 public:
 	Matrix1D<QList<int> > activities;
 	Matrix1D<QList<int> > maxDays;
@@ -17,8 +15,6 @@ public:
 	MaxDaysBetweenActivities();
 
 	bool prepare(const Rules &rules);
-
-	QStringList getErrors() const;
 };
 
 #endif // MAXDAYSBETWEENACTIVITIES_H

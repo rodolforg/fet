@@ -2,11 +2,6 @@
 
 #include "generate_pre.h"
 
-QStringList MinGapsBetweenActivities::getErrors() const
-{
-	return errors;
-}
-
 MinGapsBetweenActivities::MinGapsBetweenActivities()
 {
 
