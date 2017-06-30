@@ -9969,38 +9969,38 @@ Note: teacher not available and break are not counted as gaps.</source>
 <context>
     <name>AddConstraintTwoActivitiesConsecutiveForm</name>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="184"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="194"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="206"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="214"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="223"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="226"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="186"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="196"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="208"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="216"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="225"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="228"/>
         <source>FET information</source>
         <translation>FET informazioa</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="185"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="187"/>
         <source>Invalid weight (percentage)</source>
         <translation>Pisu ezegokia (ehunekoa)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="195"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="207"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="197"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="209"/>
         <source>Invalid activity</source>
         <translation>Jarduera baliogabea</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="215"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="217"/>
         <source>Same activities - impossible</source>
         <translation>Jarduera berdinak - ezinezkoa</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="224"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="226"/>
         <source>Constraint added:</source>
         <translation>Murrizketa gehituta:</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="227"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="229"/>
         <source>Constraint NOT added - error?</source>
         <translation type="unfinished"></translation>
     </message>
@@ -10014,12 +10014,12 @@ Note: teacher not available and break are not counted as gaps.</source>
         <translation>Gehitu bi jarduera jarraian</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="199"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="206"/>
         <source>Add constraint</source>
         <translation>Gehitu murrizketa</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="206"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="213"/>
         <source>Close</source>
         <translation>Itxi</translation>
     </message>
@@ -10039,6 +10039,12 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="125"/>
         <source>Second activity</source>
         <translation>Bigarren jarduera</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="199"/>
+        <source>Swap</source>
+        <comment>Interchange (swap) the two selected activities in the dialog</comment>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="20"/>
@@ -10169,38 +10175,38 @@ Note: teacher not available and break are not counted as gaps.</source>
 <context>
     <name>AddConstraintTwoActivitiesOrderedForm</name>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="184"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="194"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="206"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="214"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="223"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="226"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="186"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="196"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="208"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="216"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="225"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="228"/>
         <source>FET information</source>
         <translation>FET informazioa</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="185"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="187"/>
         <source>Invalid weight (percentage)</source>
         <translation>Pisu ezegokia (ehunekoa)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="195"/>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="207"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="197"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="209"/>
         <source>Invalid activity</source>
         <translation>Jarduera baliogabea</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="215"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="217"/>
         <source>Same activities - impossible</source>
         <translation>Jarduera berdinak - ezinezkoa</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="224"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="226"/>
         <source>Constraint added:</source>
         <translation>Murrizketa gehituta:</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="227"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="229"/>
         <source>Constraint NOT added - error?</source>
         <translation type="unfinished"></translation>
     </message>
@@ -10214,12 +10220,12 @@ Note: teacher not available and break are not counted as gaps.</source>
         <translation>Gehitu ordenatutako bi jarduera</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="199"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="206"/>
         <source>Add constraint</source>
         <translation>Gehitu murrizketa</translation>
     </message>
     <message>
-        <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="206"/>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="213"/>
         <source>Close</source>
         <translation>Itxi</translation>
     </message>
@@ -10239,6 +10245,12 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="125"/>
         <source>Second activity</source>
         <translation>Bigarren jarduera</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="199"/>
+        <source>Swap</source>
+        <comment>Interchange (swap) the two selected activities in the dialog</comment>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="20"/>
@@ -13726,44 +13738,44 @@ Mesedez gelditu lehenengo simulazioa</translation>
 <context>
     <name>ConstraintActivitiesSameStartingDayForm</name>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="119"/>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="146"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="257"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="284"/>
         <source>FET information</source>
         <translation>FET informazioa</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="119"/>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="146"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="257"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="284"/>
         <source>Invalid selected constraint</source>
         <translation>Hautatutako murrizketa baliogabea</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="151"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="289"/>
         <source>Remove constraint?</source>
         <translation>Ezabatu murrizketa?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="157"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="295"/>
         <source>FET confirmation</source>
         <translation>FET baieztapena</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="158"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="296"/>
         <source>Yes</source>
         <translation>Bai</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="158"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="296"/>
         <source>No</source>
         <translation>Ez</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="184"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="322"/>
         <source>IMPORTANT: after adding such constraints, it is necessary (otherwise generation might be impossible) to remove redundant constraints min days between activities. If you are sure that you don&apos;t have redundant constraints, you can skip this step, but it doesn&apos;t hurt to do it as a precaution. Also, you don&apos;t have to do that after each added constraint, but only once after adding more constraints of this type. Please read Help/Important tips - tip number 2 for details</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="189"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="327"/>
         <source>FET help</source>
         <translation>FET laguntza</translation>
     </message>
@@ -13771,12 +13783,12 @@ Mesedez gelditu lehenengo simulazioa</translation>
 <context>
     <name>ConstraintActivitiesSameStartingDayForm_template</name>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="110"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="177"/>
         <source>Close</source>
         <translation>Itxi</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="82"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="145"/>
         <source>Add</source>
         <translation>Gehitu</translation>
     </message>
@@ -13797,17 +13809,42 @@ Mesedez gelditu lehenengo simulazioa</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="96"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="80"/>
+        <source>Filter</source>
+        <translation type="unfinished">Iragazi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="86"/>
+        <source>Teacher</source>
+        <translation type="unfinished">Irakaslea</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="99"/>
+        <source>Students set</source>
+        <translation type="unfinished">Ikasle multzoa</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="112"/>
+        <source>Subject</source>
+        <translation type="unfinished">Ikasgaia</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="125"/>
+        <source>Activity tag</source>
+        <translation type="unfinished">Jarduera etiketa</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="159"/>
         <source>Remove</source>
         <translation>Ezbatu</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="89"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="152"/>
         <source>Modify</source>
         <translation>Aldatu</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="103"/>
+        <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="170"/>
         <source>Help</source>
         <translation>Laguntza</translation>
     </message>
@@ -13912,34 +13949,34 @@ Mesedez gelditu lehenengo simulazioa</translation>
 <context>
     <name>ConstraintActivitiesSameStartingHourForm</name>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="118"/>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="145"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="256"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="283"/>
         <source>FET information</source>
         <translation>FET informazioa</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="118"/>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="145"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="256"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="283"/>
         <source>Invalid selected constraint</source>
         <translation>Hautatutako murrizketa baliogabea</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="150"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="288"/>
         <source>Remove constraint?</source>
         <translation>Ezabatu murrizketa?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="156"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="294"/>
         <source>FET confirmation</source>
         <translation>FET baieztapena</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="157"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="295"/>
         <source>Yes</source>
         <translation>Bai</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="157"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform.cpp" line="295"/>
         <source>No</source>
         <translation>Ez</translation>
     </message>
@@ -13953,12 +13990,12 @@ Mesedez gelditu lehenengo simulazioa</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="81"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="146"/>
         <source>Close</source>
         <translation>Itxi</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="60"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="123"/>
         <source>Add</source>
         <translation>Gehitu</translation>
     </message>
@@ -13973,12 +14010,37 @@ Mesedez gelditu lehenengo simulazioa</translation>
         <translation>Uneko murrizketa</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="74"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="58"/>
+        <source>Filter</source>
+        <translation type="unfinished">Iragazi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="64"/>
+        <source>Teacher</source>
+        <translation type="unfinished">Irakaslea</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="77"/>
+        <source>Students set</source>
+        <translation type="unfinished">Ikasle multzoa</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="90"/>
+        <source>Subject</source>
+        <translation type="unfinished">Ikasgaia</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="103"/>
+        <source>Activity tag</source>
+        <translation type="unfinished">Jarduera etiketa</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="137"/>
         <source>Remove</source>
         <translation>Ezbatu</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="67"/>
+        <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="130"/>
         <source>Modify</source>
         <translation>Aldatu</translation>
     </message>
@@ -29217,34 +29279,34 @@ Mesedez gelditu lehenengo simulazioa</translation>
 <context>
     <name>ConstraintThreeActivitiesGroupedForm</name>
     <message>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="114"/>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="139"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="244"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="269"/>
         <source>FET information</source>
         <translation>FET informazioa</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="114"/>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="139"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="244"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="269"/>
         <source>Invalid selected constraint</source>
         <translation>Hautatutako murrizketa baliogabea</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="144"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="274"/>
         <source>Remove constraint?</source>
         <translation>Ezabatu murrizketa?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="150"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="280"/>
         <source>FET confirmation</source>
         <translation>FET baieztapena</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="151"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="281"/>
         <source>Yes</source>
         <translation>Bai</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="151"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform.cpp" line="281"/>
         <source>No</source>
         <translation>Ez</translation>
     </message>
@@ -29258,22 +29320,47 @@ Mesedez gelditu lehenengo simulazioa</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="115"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="90"/>
+        <source>Filter</source>
+        <translation type="unfinished">Iragazi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="96"/>
+        <source>Teacher</source>
+        <translation type="unfinished">Irakaslea</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="109"/>
+        <source>Students set</source>
+        <translation type="unfinished">Ikasle multzoa</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="122"/>
+        <source>Subject</source>
+        <translation type="unfinished">Ikasgaia</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="135"/>
+        <source>Activity tag</source>
+        <translation type="unfinished">Jarduera etiketa</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="176"/>
         <source>Close</source>
         <translation>Itxi</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="94"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="155"/>
         <source>Add</source>
         <translation>Gehitu</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="108"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="169"/>
         <source>Remove</source>
         <translation>Ezbatu</translation>
     </message>
     <message>
-        <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="101"/>
+        <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="162"/>
         <source>Modify</source>
         <translation>Aldatu</translation>
     </message>
@@ -29397,34 +29484,34 @@ Mesedez gelditu lehenengo simulazioa</translation>
 <context>
     <name>ConstraintTwoActivitiesConsecutiveForm</name>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="114"/>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="139"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="241"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="266"/>
         <source>FET information</source>
         <translation>FET informazioa</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="114"/>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="139"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="241"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="266"/>
         <source>Invalid selected constraint</source>
         <translation>Hautatutako murrizketa baliogabea</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="144"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="271"/>
         <source>Remove constraint?</source>
         <translation>Ezabatu murrizketa?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="150"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="277"/>
         <source>FET confirmation</source>
         <translation>FET baieztapena</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="151"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="278"/>
         <source>Yes</source>
         <translation>Bai</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="151"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform.cpp" line="278"/>
         <source>No</source>
         <translation>Ez</translation>
     </message>
@@ -29432,22 +29519,47 @@ Mesedez gelditu lehenengo simulazioa</translation>
 <context>
     <name>ConstraintTwoActivitiesConsecutiveForm_template</name>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="115"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="176"/>
         <source>Close</source>
         <translation>Itxi</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="94"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="155"/>
         <source>Add</source>
         <translation>Gehitu</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="108"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="90"/>
+        <source>Filter</source>
+        <translation type="unfinished">Iragazi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="96"/>
+        <source>Teacher</source>
+        <translation type="unfinished">Irakaslea</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="109"/>
+        <source>Students set</source>
+        <translation type="unfinished">Ikasle multzoa</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="122"/>
+        <source>Subject</source>
+        <translation type="unfinished">Ikasgaia</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="135"/>
+        <source>Activity tag</source>
+        <translation type="unfinished">Jarduera etiketa</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="169"/>
         <source>Remove</source>
         <translation>Ezbatu</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="101"/>
+        <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="162"/>
         <source>Modify</source>
         <translation>Aldatu</translation>
     </message>
@@ -29577,34 +29689,34 @@ Mesedez gelditu lehenengo simulazioa</translation>
 <context>
     <name>ConstraintTwoActivitiesGroupedForm</name>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="114"/>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="139"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="241"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="266"/>
         <source>FET information</source>
         <translation>FET informazioa</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="114"/>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="139"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="241"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="266"/>
         <source>Invalid selected constraint</source>
         <translation>Hautatutako murrizketa baliogabea</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="144"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="271"/>
         <source>Remove constraint?</source>
         <translation>Ezabatu murrizketa?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="150"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="277"/>
         <source>FET confirmation</source>
         <translation>FET baieztapena</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="151"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="278"/>
         <source>Yes</source>
         <translation>Bai</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="151"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform.cpp" line="278"/>
         <source>No</source>
         <translation>Ez</translation>
     </message>
@@ -29612,22 +29724,47 @@ Mesedez gelditu lehenengo simulazioa</translation>
 <context>
     <name>ConstraintTwoActivitiesGroupedForm_template</name>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="115"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="176"/>
         <source>Close</source>
         <translation>Itxi</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="94"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="155"/>
         <source>Add</source>
         <translation>Gehitu</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="108"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="90"/>
+        <source>Filter</source>
+        <translation type="unfinished">Iragazi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="96"/>
+        <source>Teacher</source>
+        <translation type="unfinished">Irakaslea</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="109"/>
+        <source>Students set</source>
+        <translation type="unfinished">Ikasle multzoa</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="122"/>
+        <source>Subject</source>
+        <translation type="unfinished">Ikasgaia</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="135"/>
+        <source>Activity tag</source>
+        <translation type="unfinished">Jarduera etiketa</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="169"/>
         <source>Remove</source>
         <translation>Ezbatu</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="101"/>
+        <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="162"/>
         <source>Modify</source>
         <translation>Aldatu</translation>
     </message>
@@ -29757,34 +29894,34 @@ Mesedez gelditu lehenengo simulazioa</translation>
 <context>
     <name>ConstraintTwoActivitiesOrderedForm</name>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="114"/>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="139"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="241"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="266"/>
         <source>FET information</source>
         <translation>FET informazioa</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="114"/>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="139"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="241"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="266"/>
         <source>Invalid selected constraint</source>
         <translation>Hautatutako murrizketa baliogabea</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="144"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="271"/>
         <source>Remove constraint?</source>
         <translation>Ezabatu murrizketa?</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="150"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="277"/>
         <source>FET confirmation</source>
         <translation>FET baieztapena</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="151"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="278"/>
         <source>Yes</source>
         <translation>Bai</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="151"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform.cpp" line="278"/>
         <source>No</source>
         <translation>Ez</translation>
     </message>
@@ -29798,22 +29935,47 @@ Mesedez gelditu lehenengo simulazioa</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="99"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="74"/>
+        <source>Filter</source>
+        <translation type="unfinished">Iragazi</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="80"/>
+        <source>Teacher</source>
+        <translation type="unfinished">Irakaslea</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="93"/>
+        <source>Students set</source>
+        <translation type="unfinished">Ikasle multzoa</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="106"/>
+        <source>Subject</source>
+        <translation type="unfinished">Ikasgaia</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="119"/>
+        <source>Activity tag</source>
+        <translation type="unfinished">Jarduera etiketa</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="160"/>
         <source>Close</source>
         <translation>Itxi</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="78"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="139"/>
         <source>Add</source>
         <translation>Gehitu</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="92"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="153"/>
         <source>Remove</source>
         <translation>Ezbatu</translation>
     </message>
     <message>
-        <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="85"/>
+        <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="146"/>
         <source>Modify</source>
         <translation>Aldatu</translation>
     </message>
@@ -35768,24 +35930,6 @@ Please modify your data correspondingly and try again</source>
         <translation>Honi buruz</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.31.6 (April 2017).&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET homepage: &lt;/span&gt;&lt;a href=&quot;http://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;http://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="112"/>
         <source>Translators</source>
         <translation>Itzultzaileak</translation>
@@ -36434,11 +36578,15 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Matsumoto - suggestions.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;bart.leyen - bug report.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;math - suggestion.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;s.lanore - suggestion.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="854"/>
+        <location filename="../src/interface/helpaboutform_template.ui" line="858"/>
         <source>Close</source>
         <translation>Itxi</translation>
     </message>
@@ -36446,6 +36594,24 @@ p, li { white-space: pre-wrap; }
         <location filename="../src/interface/helpaboutform_template.ui" line="69"/>
         <source>Authors</source>
         <translation>Egileak</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.31.7 (June 2017).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET homepage: &lt;/span&gt;&lt;a href=&quot;http://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;http://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="90"/>
@@ -46286,30 +46452,30 @@ Note: teacher not available and break are not counted as gaps.</source>
 <context>
     <name>ModifyConstraintTwoActivitiesConsecutiveForm</name>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="123"/>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="132"/>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="142"/>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="149"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="125"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="134"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="144"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="151"/>
         <source>FET information</source>
         <translation>FET informazioa</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="124"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="126"/>
         <source>Invalid weight (percentage)</source>
         <translation>Pisu ezegokia (ehunekoa)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="133"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="135"/>
         <source>Invalid first activity</source>
         <translation>Lehenengo jarduera baliogabea</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="143"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="145"/>
         <source>Invalid second activity</source>
         <translation>Bigarren jarduera baliogabea</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="150"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="152"/>
         <source>Same activities - impossible</source>
         <translation>Jarduera berdinak - ezinezkoa</translation>
     </message>
@@ -46323,28 +46489,34 @@ Note: teacher not available and break are not counted as gaps.</source>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="22"/>
+        <source>Swap</source>
+        <comment>Interchange (swap) the two selected activities in the dialog</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="29"/>
         <source>Ok</source>
         <translation>Ados</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="29"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="36"/>
         <source>Cancel</source>
         <translation>Ezeztatu</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="46"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="53"/>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Pisu ehunekoa 
 (aholkatuta: %0.0-%100.0)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="90"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="97"/>
         <source>First activity</source>
         <translation>Lehenego jarduera</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="126"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="133"/>
         <source>Second activity</source>
         <translation>Bigarren jarduera</translation>
     </message>
@@ -46419,30 +46591,30 @@ Note: teacher not available and break are not counted as gaps.</source>
 <context>
     <name>ModifyConstraintTwoActivitiesOrderedForm</name>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="123"/>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="132"/>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="142"/>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="149"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="125"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="134"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="144"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="151"/>
         <source>FET information</source>
         <translation>FET informazioa</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="124"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="126"/>
         <source>Invalid weight (percentage)</source>
         <translation>Pisu ezegokia (ehunekoa)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="133"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="135"/>
         <source>Invalid first activity</source>
         <translation>Lehenengo jarduera baliogabea</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="143"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="145"/>
         <source>Invalid second activity</source>
         <translation>Bigarren jarduera baliogabea</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="150"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="152"/>
         <source>Same activities - impossible</source>
         <translation>Jarduera berdinak - ezinezkoa</translation>
     </message>
@@ -46457,28 +46629,34 @@ Note: teacher not available and break are not counted as gaps.</source>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="22"/>
+        <source>Swap</source>
+        <comment>Interchange (swap) the two selected activities in the dialog</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="29"/>
         <source>Ok</source>
         <translation>Ados</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="29"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="36"/>
         <source>Cancel</source>
         <translation>Ezeztatu</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="46"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="53"/>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Pisu ehunekoa 
 (aholkatuta: %0.0-%100.0)</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="90"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="97"/>
         <source>First activity</source>
         <translation>Lehenego jarduera</translation>
     </message>
     <message>
-        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="126"/>
+        <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="133"/>
         <source>Second activity</source>
         <translation>Bigarren jarduera</translation>
     </message>

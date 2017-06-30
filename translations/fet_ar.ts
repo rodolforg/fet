@@ -13878,27 +13878,27 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="80"/>
         <source>Filter</source>
-        <translation type="unfinished">فرز</translation>
+        <translation>فرز</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="86"/>
         <source>Teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>المدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="99"/>
         <source>Students set</source>
-        <translation type="unfinished"></translation>
+        <translation>مجموعة الطلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="112"/>
         <source>Subject</source>
-        <translation type="unfinished"></translation>
+        <translation>المادة</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="125"/>
         <source>Activity tag</source>
-        <translation type="unfinished"></translation>
+        <translation>الوسم المشترك</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="159"/>
@@ -14080,27 +14080,27 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="58"/>
         <source>Filter</source>
-        <translation type="unfinished">فرز</translation>
+        <translation>فرز</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="64"/>
         <source>Teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>مدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="77"/>
         <source>Students set</source>
-        <translation type="unfinished"></translation>
+        <translation>مجموعة الطلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="90"/>
         <source>Subject</source>
-        <translation type="unfinished"></translation>
+        <translation>المادة</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="103"/>
         <source>Activity tag</source>
-        <translation type="unfinished"></translation>
+        <translation>الوسم المشترك</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="137"/>
@@ -29525,27 +29525,27 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="90"/>
         <source>Filter</source>
-        <translation type="unfinished">فرز</translation>
+        <translation>فرز</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="96"/>
         <source>Teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>المدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="109"/>
         <source>Students set</source>
-        <translation type="unfinished"></translation>
+        <translation>مجموعة الطلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="122"/>
         <source>Subject</source>
-        <translation type="unfinished"></translation>
+        <translation>المادة</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="135"/>
         <source>Activity tag</source>
-        <translation type="unfinished"></translation>
+        <translation>الوسم المشترك</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="176"/>
@@ -29736,27 +29736,27 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="90"/>
         <source>Filter</source>
-        <translation type="unfinished">فرز</translation>
+        <translation>فرز</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="96"/>
         <source>Teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>المدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="109"/>
         <source>Students set</source>
-        <translation type="unfinished"></translation>
+        <translation>مجموعة الطلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="122"/>
         <source>Subject</source>
-        <translation type="unfinished"></translation>
+        <translation>المادة</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="135"/>
         <source>Activity tag</source>
-        <translation type="unfinished"></translation>
+        <translation>الوسم المشترك</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="169"/>
@@ -29943,27 +29943,27 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="90"/>
         <source>Filter</source>
-        <translation type="unfinished">فرز</translation>
+        <translation>فرز</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="96"/>
         <source>Teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>المدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="109"/>
         <source>Students set</source>
-        <translation type="unfinished"></translation>
+        <translation>مجموعة الطلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="122"/>
         <source>Subject</source>
-        <translation type="unfinished"></translation>
+        <translation>المادة</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="135"/>
         <source>Activity tag</source>
-        <translation type="unfinished"></translation>
+        <translation>الوسم المشترك</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="169"/>
@@ -30147,27 +30147,27 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="74"/>
         <source>Filter</source>
-        <translation type="unfinished">فرز</translation>
+        <translation>فرز</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="80"/>
         <source>Teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>المدرس</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="93"/>
         <source>Students set</source>
-        <translation type="unfinished"></translation>
+        <translation>مجموعة الطلاب</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="106"/>
         <source>Subject</source>
-        <translation type="unfinished"></translation>
+        <translation>المادة</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="119"/>
         <source>Activity tag</source>
-        <translation type="unfinished"></translation>
+        <translation>الوسم المشترك</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="160"/>
