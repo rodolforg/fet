@@ -81,6 +81,9 @@ public slots:
 	void minDaysChanged();
 
 	void splitLineEditTextChanged(const QString &text);
+
+	void createSubject();
+
 private slots:
 	void rewriteSplitLineEdit();
 };

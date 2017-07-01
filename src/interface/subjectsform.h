@@ -29,7 +29,7 @@ public:
 	~SubjectsForm();
 
 public slots:
-	void addSubject();
+	bool addSubject();
 	void removeSubject();
 	void renameSubject();
 	

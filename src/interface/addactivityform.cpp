@@ -176,6 +176,8 @@ AddActivityForm::AddActivityForm(QWidget* parent, const QString& teacherName, co
 	for (int i = 0; i < MAX_SPLIT_OF_AN_ACTIVITY; i++)
 		connect(activList[i], SIGNAL(toggled(bool)), this, SLOT(rewriteSplitLineEdit()));
 
+	connect(createSubjectToolButton, SIGNAL(clicked(bool)), this, SLOT(createSubject()));
+
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
 	
@@ -459,6 +461,17 @@ void AddActivityForm::splitLineEditTextChanged(const QString &text)
 		}
 		durList[i]->setValue(divisions[i].toInt());
 	}
+}
+
+#include "interface/subjectsform.h"
+
+void AddActivityForm::createSubject()
+{
+	SubjectsForm form(this);
+	form.addSubject();
+	updateSubjectsComboBox();
+	int addedSubjectIndex = subjectsComboBox->count()-1;
+	subjectsComboBox->setCurrentIndex(addedSubjectIndex);
 }
 
 void AddActivityForm::splitChanged()

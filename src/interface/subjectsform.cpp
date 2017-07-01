@@ -87,7 +87,7 @@ SubjectsForm::~SubjectsForm()
 	settings.setValue(this->metaObject()->className()+QString("/splitter-state"), splitter->saveState());
 }
 
-void SubjectsForm::addSubject()
+bool SubjectsForm::addSubject()
 {
 	bool ok = false;
 	Subject* sbj=new Subject();
@@ -104,6 +104,7 @@ void SubjectsForm::addSubject()
 		else{
 			subjectsListWidget->addItem(sbj->name);
 			subjectsListWidget->setCurrentRow(subjectsListWidget->count()-1);
+			return true;
 		}
 	}
 	else{
@@ -112,6 +113,7 @@ void SubjectsForm::addSubject()
 		}
 		delete sbj;// user entered nothing or pressed Cancel
 	}
+	return false;
 }
 
 void SubjectsForm::removeSubject()
