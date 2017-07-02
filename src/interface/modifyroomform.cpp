@@ -26,7 +26,7 @@ ModifyRoomForm::ModifyRoomForm(QWidget* parent, const QString& initialRoomName, 
 	okPushButton->setDefault(true);
 
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
@@ -66,11 +66,6 @@ ModifyRoomForm::ModifyRoomForm(QWidget* parent, const QString& initialRoomName, 
 ModifyRoomForm::~ModifyRoomForm()
 {
 	saveFETDialogGeometry(this);
-}
-
-void ModifyRoomForm::cancel()
-{
-	this->close();
 }
 
 void ModifyRoomForm::ok()

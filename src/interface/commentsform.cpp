@@ -35,7 +35,7 @@ CommentsForm::CommentsForm(QWidget* parent): QDialog(parent)
 	
 	okPushButton->setDefault(true);
 
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
 
 	centerWidgetOnScreen(this);
@@ -62,10 +62,5 @@ void CommentsForm::ok()
 		return;
 	}
 
-	this->close();
-}
-
-void CommentsForm::cancel()
-{
 	this->close();
 }

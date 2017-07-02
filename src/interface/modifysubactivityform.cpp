@@ -41,7 +41,7 @@ ModifySubactivityForm::ModifySubactivityForm(QWidget* parent, int id, int activi
 	allActivityTagsListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
 	selectedActivityTagsListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
 
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(reject()));
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
 	connect(clearTeacherPushButton, SIGNAL(clicked()), this, SLOT(clearTeachers()));
 	connect(clearStudentsPushButton, SIGNAL(clicked()), this, SLOT(clearStudents()));
@@ -317,11 +317,6 @@ void ModifySubactivityForm::updateStudentsListWidget()
 
 	int q=allStudentsListWidget->verticalScrollBar()->minimum();
 	allStudentsListWidget->verticalScrollBar()->setValue(q);
-}
-
-void ModifySubactivityForm::cancel()
-{
-	this->reject();
 }
 
 void ModifySubactivityForm::ok()

@@ -39,7 +39,7 @@ DaysForm::DaysForm(QWidget* parent): QDialog(parent)
 	okPushButton->setDefault(true);
 
 	connect(daysSpinBox, SIGNAL(valueChanged(int)), this, SLOT(daysChanged()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
 
 	centerWidgetOnScreen(this);
@@ -224,7 +224,3 @@ void DaysForm::ok()
 	this->close();
 }
 
-void DaysForm::cancel()
-{
-	this->close();
-}

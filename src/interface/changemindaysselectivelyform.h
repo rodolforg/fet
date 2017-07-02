@@ -43,7 +43,6 @@ public:
 
 public slots:
 	void ok();
-	void cancel();
 };
 
 #endif

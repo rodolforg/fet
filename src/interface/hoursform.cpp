@@ -40,7 +40,7 @@ HoursForm::HoursForm(QWidget* parent): QDialog(parent)
 
 	connect(hoursSpinBox, SIGNAL(valueChanged(int)), this, SLOT(hoursChanged()));
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
@@ -225,10 +225,5 @@ void HoursForm::ok()
 
 	assert(gt.rules.nHoursPerDay<=MAX_HOURS_PER_DAY);
 		
-	this->close();
-}
-
-void HoursForm::cancel()
-{
 	this->close();
 }

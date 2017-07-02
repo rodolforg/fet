@@ -31,7 +31,6 @@ public:
 public slots:
 	void daysChanged();
 	void ok();
-	void cancel();
 };
 
 #endif

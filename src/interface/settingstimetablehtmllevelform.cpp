@@ -28,7 +28,7 @@ SettingsTimetableHtmlLevelForm::SettingsTimetableHtmlLevelForm(QWidget* parent):
 	okPushButton->setDefault(true);
 	
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 	
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
@@ -94,10 +94,5 @@ void SettingsTimetableHtmlLevelForm::ok()
 	
 	TIMETABLE_HTML_LEVEL=level;
 	
-	this->close();
-}
-
-void SettingsTimetableHtmlLevelForm::cancel()
-{
 	this->close();
 }

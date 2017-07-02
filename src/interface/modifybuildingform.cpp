@@ -26,7 +26,7 @@ ModifyBuildingForm::ModifyBuildingForm(QWidget* parent, const QString& initialBu
 	okPushButton->setDefault(true);
 
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
@@ -41,11 +41,6 @@ ModifyBuildingForm::ModifyBuildingForm(QWidget* parent, const QString& initialBu
 ModifyBuildingForm::~ModifyBuildingForm()
 {
 	saveFETDialogGeometry(this);
-}
-
-void ModifyBuildingForm::cancel()
-{
-	this->close();
 }
 
 void ModifyBuildingForm::ok()

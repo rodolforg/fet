@@ -134,7 +134,7 @@ ModifyActivityForm::ModifyActivityForm(QWidget* parent, int id, int activityGrou
 	allActivityTagsListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
 	selectedActivityTagsListWidget->setSelectionMode(QAbstractItemView::SingleSelection);
 
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(reject()));
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
 	connect(clearTeacherPushButton, SIGNAL(clicked()), this, SLOT(clearTeachers()));
 	connect(clearStudentsPushButton, SIGNAL(clicked()), this, SLOT(clearStudents()));
@@ -427,11 +427,6 @@ void ModifyActivityForm::updateStudentsListWidget()
 	
 	int q=allStudentsListWidget->verticalScrollBar()->minimum();
 	allStudentsListWidget->verticalScrollBar()->setValue(q);
-}
-
-void ModifyActivityForm::cancel()
-{
-	this->reject();
 }
 
 void ModifyActivityForm::ok()

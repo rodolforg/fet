@@ -40,7 +40,6 @@ public slots:
 	void removeActivity();
 
 	void ok();
-	void cancel();
 	
 	void clear();
 

@@ -33,7 +33,7 @@ InstitutionNameForm::InstitutionNameForm(QWidget* parent): QDialog(parent)
 	
 	okPushButton->setDefault(true);
 
-	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(cancel()));
+	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
 
 	centerWidgetOnScreen(this);
@@ -60,10 +60,5 @@ void InstitutionNameForm::ok()
 		return;
 	}
 
-	this->close();
-}
-
-void InstitutionNameForm::cancel()
-{
 	this->close();
 }

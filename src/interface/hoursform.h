@@ -31,7 +31,6 @@ public:
 public slots:
 	void hoursChanged();
 	void ok();
-	void cancel();
 };
 
 #endif
