@@ -952,13 +952,7 @@ bool Rules::addTeacher(Teacher* teacher)
 			return false;
 	}
 	
-	this->internalStructureComputed=false;
-	setModified(true);
-
-	emit basicDataResized();
-
-	this->teachersList.append(teacher);
-	return true;
+	return addTeacherFast(teacher);
 }
 
 bool Rules::addTeacherFast(Teacher* teacher)
@@ -1183,13 +1177,7 @@ bool Rules::addSubject(Subject* subject)
 			return false;
 	}
 	
-	this->internalStructureComputed=false;
-	setModified(true);
-
-	emit basicDataResized();
-
-	this->subjectsList << subject;
-	return true;
+	return addSubjectFast(subject);
 }
 
 bool Rules::addSubjectFast(Subject* subject)
@@ -1359,20 +1347,10 @@ void Rules::sortSubjectsAlphabetically()
 
 bool Rules::addActivityTag(ActivityTag* activityTag)
 {
-	for(int i=0; i<this->activityTagsList.size(); i++){
-		ActivityTag* sbt=this->activityTagsList[i];
+	if (searchActivityTag(activityTag->name) >= 0)
+		return false;
 
-		if(sbt->name==activityTag->name)
-			return false;
-	}
-
-	this->internalStructureComputed=false;
-	setModified(true);
-
-	emit basicDataResized();
-
-	this->activityTagsList << activityTag;
-	return true;
+	return addActivityTagFast(activityTag);
 }
 
 bool Rules::addActivityTagFast(ActivityTag* activityTag)
@@ -3104,13 +3082,8 @@ bool Rules::addRoom(Room* rm)
 {
 	if(this->searchRoom(rm->name) >= 0)
 		return false;
-	this->roomsList << rm; //append
-	this->internalStructureComputed=false;
-	setModified(true);
 
-	emit basicDataResized();
-
-	return true;
+	return addRoomFast(rm);
 }
 
 bool Rules::addRoomFast(Room* rm)
@@ -3289,13 +3262,7 @@ bool Rules::addBuilding(Building* bu)
 {
 	if(this->searchBuilding(bu->name) >= 0)
 		return false;
-	this->buildingsList << bu; //append
-	this->internalStructureComputed=false;
-	setModified(true);
-
-	emit basicDataResized();
-
-	return true;
+	return addBuildingFast(bu);
 }
 
 bool Rules::addBuildingFast(Building* bu)
