@@ -15,12 +15,9 @@
  *                                                                         *
  ***************************************************************************/
 
-#include "timetable_defs.h"
 #include "timetable.h"
 #include "fet.h"
 #include "subjectsform.h"
-#include "studentsset.h"
-#include "teacher.h"
 #include "subject.h"
 #include "interface/editcommentsform.h"
 
