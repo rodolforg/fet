@@ -201,18 +201,13 @@ void SubjectsForm::moveSubjectUp()
 	QString s1=subjectsListWidget->item(i)->text();
 	QString s2=subjectsListWidget->item(i-1)->text();
 	
-	Subject* sbj1=gt.rules.subjectsList.at(i);
-	Subject* sbj2=gt.rules.subjectsList.at(i-1);
-	
-	gt.rules.internalStructureComputed=false;
-	gt.rules.setModified(true);
-	
 	subjectsListWidget->item(i)->setText(s2);
 	subjectsListWidget->item(i-1)->setText(s1);
 	
-	gt.rules.subjectsList[i]=sbj2;
-	gt.rules.subjectsList[i-1]=sbj1;
-	
+	gt.rules.subjectsList.swap(i, i-1);
+	gt.rules.internalStructureComputed=false;
+	gt.rules.setModified(true);
+
 	subjectsListWidget->setCurrentRow(i-1);
 	subjectChanged(i-1);
 }
@@ -230,18 +225,13 @@ void SubjectsForm::moveSubjectDown()
 	QString s1=subjectsListWidget->item(i)->text();
 	QString s2=subjectsListWidget->item(i+1)->text();
 	
-	Subject* sbj1=gt.rules.subjectsList.at(i);
-	Subject* sbj2=gt.rules.subjectsList.at(i+1);
-	
-	gt.rules.internalStructureComputed=false;
-	gt.rules.setModified(true);
-	
 	subjectsListWidget->item(i)->setText(s2);
 	subjectsListWidget->item(i+1)->setText(s1);
 	
-	gt.rules.subjectsList[i]=sbj2;
-	gt.rules.subjectsList[i+1]=sbj1;
-	
+	gt.rules.subjectsList.swap(i, i+1);
+	gt.rules.internalStructureComputed=false;
+	gt.rules.setModified(true);
+
 	subjectsListWidget->setCurrentRow(i+1);
 	subjectChanged(i+1);
 }

@@ -271,15 +271,13 @@ void AllSpaceConstraintsForm::moveSpaceConstraintUp()
 	SpaceConstraint* sc2=gt.rules.spaceConstraintsList.at(i-1);
 	assert(sc2==visibleSpaceConstraintsList.at(i-1));
 	
-	gt.rules.internalStructureComputed=false;
-	gt.rules.setModified(true);
-	
 	constraintsListWidget->item(i)->setText(s2);
 	constraintsListWidget->item(i-1)->setText(s1);
 	
-	gt.rules.spaceConstraintsList[i]=sc2;
-	gt.rules.spaceConstraintsList[i-1]=sc1;
-	
+	gt.rules.spaceConstraintsList.swap(i,i-1);
+	gt.rules.internalStructureComputed=false;
+	gt.rules.setModified(true);
+
 	visibleSpaceConstraintsList[i]=sc2;
 	visibleSpaceConstraintsList[i-1]=sc1;
 	
@@ -327,15 +325,13 @@ void AllSpaceConstraintsForm::moveSpaceConstraintDown()
 	SpaceConstraint* sc2=gt.rules.spaceConstraintsList.at(i+1);
 	assert(sc2==visibleSpaceConstraintsList.at(i+1));
 	
-	gt.rules.internalStructureComputed=false;
-	gt.rules.setModified(true);
-	
 	constraintsListWidget->item(i)->setText(s2);
 	constraintsListWidget->item(i+1)->setText(s1);
 	
-	gt.rules.spaceConstraintsList[i]=sc2;
-	gt.rules.spaceConstraintsList[i+1]=sc1;
-	
+	gt.rules.spaceConstraintsList.swap(i, i+1);
+	gt.rules.internalStructureComputed=false;
+	gt.rules.setModified(true);
+
 	visibleSpaceConstraintsList[i]=sc2;
 	visibleSpaceConstraintsList[i+1]=sc1;
 	

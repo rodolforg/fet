@@ -308,18 +308,13 @@ void GroupsForm::moveGroupUp()
 	assert(yearsListWidget->currentRow()<gt.rules.yearsList.count());
 	StudentsYear* sy=gt.rules.yearsList.at(yearsListWidget->currentRow());
 	
-	StudentsGroup* sg1=sy->groupsList.at(i);
-	StudentsGroup* sg2=sy->groupsList.at(i-1);
-	
-	gt.rules.internalStructureComputed=false;
-	gt.rules.setModified(true);
-	
 	groupsListWidget->item(i)->setText(s2);
 	groupsListWidget->item(i-1)->setText(s1);
 	
-	sy->groupsList[i]=sg2;
-	sy->groupsList[i-1]=sg1;
-	
+	sy->groupsList.swap(i, i-1);
+	gt.rules.internalStructureComputed=false;
+	gt.rules.setModified(true);
+
 	groupsListWidget->setCurrentRow(i-1);
 	groupChanged(/*i-1*/s1);
 }
@@ -341,18 +336,13 @@ void GroupsForm::moveGroupDown()
 	assert(yearsListWidget->currentRow()<gt.rules.yearsList.count());
 	StudentsYear* sy=gt.rules.yearsList.at(yearsListWidget->currentRow());
 	
-	StudentsGroup* sg1=sy->groupsList.at(i);
-	StudentsGroup* sg2=sy->groupsList.at(i+1);
-	
-	gt.rules.internalStructureComputed=false;
-	gt.rules.setModified(true);
-	
 	groupsListWidget->item(i)->setText(s2);
 	groupsListWidget->item(i+1)->setText(s1);
 	
-	sy->groupsList[i]=sg2;
-	sy->groupsList[i+1]=sg1;
-	
+	sy->groupsList.swap(i, i+1);
+	gt.rules.internalStructureComputed=false;
+	gt.rules.setModified(true);
+
 	groupsListWidget->setCurrentRow(i+1);
 	groupChanged(/*i+1*/s1);
 }

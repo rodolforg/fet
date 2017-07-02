@@ -176,18 +176,13 @@ void RoomsForm::moveRoomUp()
 	QString s1=roomsListWidget->item(i)->text();
 	QString s2=roomsListWidget->item(i-1)->text();
 	
-	Room* rm1=gt.rules.roomsList.at(i);
-	Room* rm2=gt.rules.roomsList.at(i-1);
-	
-	gt.rules.internalStructureComputed=false;
-	gt.rules.setModified(true);
-	
 	roomsListWidget->item(i)->setText(s2);
 	roomsListWidget->item(i-1)->setText(s1);
 	
-	gt.rules.roomsList[i]=rm2;
-	gt.rules.roomsList[i-1]=rm1;
-	
+	gt.rules.roomsList.swap(i, i-1);
+	gt.rules.internalStructureComputed=false;
+	gt.rules.setModified(true);
+
 	roomsListWidget->setCurrentRow(i-1);
 	roomChanged(i-1);
 }
@@ -205,18 +200,13 @@ void RoomsForm::moveRoomDown()
 	QString s1=roomsListWidget->item(i)->text();
 	QString s2=roomsListWidget->item(i+1)->text();
 	
-	Room* rm1=gt.rules.roomsList.at(i);
-	Room* rm2=gt.rules.roomsList.at(i+1);
-	
-	gt.rules.internalStructureComputed=false;
-	gt.rules.setModified(true);
-	
 	roomsListWidget->item(i)->setText(s2);
 	roomsListWidget->item(i+1)->setText(s1);
 	
-	gt.rules.roomsList[i]=rm2;
-	gt.rules.roomsList[i+1]=rm1;
-	
+	gt.rules.roomsList.swap(i, i+1);
+	gt.rules.internalStructureComputed=false;
+	gt.rules.setModified(true);
+
 	roomsListWidget->setCurrentRow(i+1);
 	roomChanged(i+1);
 }

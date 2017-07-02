@@ -379,18 +379,13 @@ void SubgroupsForm::moveSubgroupUp()
 	assert(groupsListWidget->currentRow()<sy->groupsList.count());
 	StudentsGroup* sg=sy->groupsList.at(groupsListWidget->currentRow());
 	
-	StudentsSubgroup* ss1=sg->subgroupsList.at(i);
-	StudentsSubgroup* ss2=sg->subgroupsList.at(i-1);
-	
-	gt.rules.internalStructureComputed=false;
-	gt.rules.setModified(true);
-	
 	subgroupsListWidget->item(i)->setText(s2);
 	subgroupsListWidget->item(i-1)->setText(s1);
 	
-	sg->subgroupsList[i]=ss2;
-	sg->subgroupsList[i-1]=ss1;
-	
+	sg->subgroupsList.swap(i, i-1);
+	gt.rules.internalStructureComputed=false;
+	gt.rules.setModified(true);
+
 	subgroupsListWidget->setCurrentRow(i-1);
 	subgroupChanged(/*i-1*/s1);
 }
@@ -416,18 +411,13 @@ void SubgroupsForm::moveSubgroupDown()
 	assert(groupsListWidget->currentRow()<sy->groupsList.count());
 	StudentsGroup* sg=sy->groupsList.at(groupsListWidget->currentRow());
 	
-	StudentsSubgroup* ss1=sg->subgroupsList.at(i);
-	StudentsSubgroup* ss2=sg->subgroupsList.at(i+1);
-	
-	gt.rules.internalStructureComputed=false;
-	gt.rules.setModified(true);
-	
 	subgroupsListWidget->item(i)->setText(s2);
 	subgroupsListWidget->item(i+1)->setText(s1);
 	
-	sg->subgroupsList[i]=ss2;
-	sg->subgroupsList[i+1]=ss1;
-	
+	sg->subgroupsList.swap(i, i+1);
+	gt.rules.internalStructureComputed=false;
+	gt.rules.setModified(true);
+
 	subgroupsListWidget->setCurrentRow(i+1);
 	subgroupChanged(/*i+1*/s1);
 }

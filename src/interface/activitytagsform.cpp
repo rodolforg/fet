@@ -204,18 +204,13 @@ void ActivityTagsForm::moveActivityTagUp()
 	QString s1=activityTagsListWidget->item(i)->text();
 	QString s2=activityTagsListWidget->item(i-1)->text();
 	
-	ActivityTag* at1=gt.rules.activityTagsList.at(i);
-	ActivityTag* at2=gt.rules.activityTagsList.at(i-1);
-	
-	gt.rules.internalStructureComputed=false;
-	gt.rules.setModified(true);
-	
 	activityTagsListWidget->item(i)->setText(s2);
 	activityTagsListWidget->item(i-1)->setText(s1);
 	
-	gt.rules.activityTagsList[i]=at2;
-	gt.rules.activityTagsList[i-1]=at1;
-	
+	gt.rules.activityTagsList.swap(i, i-1);
+	gt.rules.internalStructureComputed=false;
+	gt.rules.setModified(true);
+
 	activityTagsListWidget->setCurrentRow(i-1);
 	activityTagChanged(i-1);
 }
@@ -233,18 +228,13 @@ void ActivityTagsForm::moveActivityTagDown()
 	QString s1=activityTagsListWidget->item(i)->text();
 	QString s2=activityTagsListWidget->item(i+1)->text();
 	
-	ActivityTag* at1=gt.rules.activityTagsList.at(i);
-	ActivityTag* at2=gt.rules.activityTagsList.at(i+1);
-	
-	gt.rules.internalStructureComputed=false;
-	gt.rules.setModified(true);
-	
 	activityTagsListWidget->item(i)->setText(s2);
 	activityTagsListWidget->item(i+1)->setText(s1);
 	
-	gt.rules.activityTagsList[i]=at2;
-	gt.rules.activityTagsList[i+1]=at1;
-	
+	gt.rules.activityTagsList.swap(i, i+1);
+	gt.rules.internalStructureComputed=false;
+	gt.rules.setModified(true);
+
 	activityTagsListWidget->setCurrentRow(i+1);
 	activityTagChanged(i+1);
 }

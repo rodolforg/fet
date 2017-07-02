@@ -176,18 +176,13 @@ void BuildingsForm::moveBuildingUp()
 	QString s1=buildingsListWidget->item(i)->text();
 	QString s2=buildingsListWidget->item(i-1)->text();
 	
-	Building* bu1=gt.rules.buildingsList.at(i);
-	Building* bu2=gt.rules.buildingsList.at(i-1);
-	
-	gt.rules.internalStructureComputed=false;
-	gt.rules.setModified(true);
-	
 	buildingsListWidget->item(i)->setText(s2);
 	buildingsListWidget->item(i-1)->setText(s1);
 	
-	gt.rules.buildingsList[i]=bu2;
-	gt.rules.buildingsList[i-1]=bu1;
-	
+	gt.rules.buildingsList.swap(i, i-1);
+	gt.rules.internalStructureComputed=false;
+	gt.rules.setModified(true);
+
 	buildingsListWidget->setCurrentRow(i-1);
 	buildingChanged(i-1);
 }
@@ -205,18 +200,13 @@ void BuildingsForm::moveBuildingDown()
 	QString s1=buildingsListWidget->item(i)->text();
 	QString s2=buildingsListWidget->item(i+1)->text();
 	
-	Building* bu1=gt.rules.buildingsList.at(i);
-	Building* bu2=gt.rules.buildingsList.at(i+1);
-	
-	gt.rules.internalStructureComputed=false;
-	gt.rules.setModified(true);
-	
 	buildingsListWidget->item(i)->setText(s2);
 	buildingsListWidget->item(i+1)->setText(s1);
 	
-	gt.rules.buildingsList[i]=bu2;
-	gt.rules.buildingsList[i+1]=bu1;
-	
+	gt.rules.buildingsList.swap(i, i+1);
+	gt.rules.internalStructureComputed=false;
+	gt.rules.setModified(true);
+
 	buildingsListWidget->setCurrentRow(i+1);
 	buildingChanged(i+1);
 }

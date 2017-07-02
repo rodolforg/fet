@@ -337,8 +337,7 @@ void AllTimeConstraintsForm::moveTimeConstraintUp()
 	constraintsListWidget->item(i)->setText(s2);
 	constraintsListWidget->item(i-1)->setText(s1);
 	
-	gt.rules.timeConstraintsList[i]=tc2;
-	gt.rules.timeConstraintsList[i-1]=tc1;
+	gt.rules.timeConstraintsList.swap(i, i-1);
 	
 	visibleTimeConstraintsList[i]=tc2;
 	visibleTimeConstraintsList[i-1]=tc1;
@@ -393,8 +392,7 @@ void AllTimeConstraintsForm::moveTimeConstraintDown()
 	constraintsListWidget->item(i)->setText(s2);
 	constraintsListWidget->item(i+1)->setText(s1);
 	
-	gt.rules.timeConstraintsList[i]=tc2;
-	gt.rules.timeConstraintsList[i+1]=tc1;
+	gt.rules.timeConstraintsList.swap(i, i+1);
 	
 	visibleTimeConstraintsList[i]=tc2;
 	visibleTimeConstraintsList[i+1]=tc1;

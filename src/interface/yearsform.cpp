@@ -163,18 +163,14 @@ void YearsForm::moveYearUp()
 	QString s1=yearsListWidget->item(i)->text();
 	QString s2=yearsListWidget->item(i-1)->text();
 	
-	StudentsYear* sy1=gt.rules.yearsList.at(i);
-	StudentsYear* sy2=gt.rules.yearsList.at(i-1);
-	
-	gt.rules.internalStructureComputed=false;
-	gt.rules.setModified(true);
-	
 	yearsListWidget->item(i)->setText(s2);
 	yearsListWidget->item(i-1)->setText(s1);
 	
-	gt.rules.yearsList[i]=sy2;
-	gt.rules.yearsList[i-1]=sy1;
-	
+	gt.rules.yearsList.swap(i, i-1);
+	gt.rules.internalStructureComputed=false;
+	gt.rules.setModified(true);
+
+
 	yearsListWidget->setCurrentRow(i-1);
 	yearChanged(/*i-1*/);
 }
@@ -192,18 +188,13 @@ void YearsForm::moveYearDown()
 	QString s1=yearsListWidget->item(i)->text();
 	QString s2=yearsListWidget->item(i+1)->text();
 	
-	StudentsYear* sy1=gt.rules.yearsList.at(i);
-	StudentsYear* sy2=gt.rules.yearsList.at(i+1);
-	
-	gt.rules.internalStructureComputed=false;
-	gt.rules.setModified(true);
-	
 	yearsListWidget->item(i)->setText(s2);
 	yearsListWidget->item(i+1)->setText(s1);
 	
-	gt.rules.yearsList[i]=sy2;
-	gt.rules.yearsList[i+1]=sy1;
-	
+	gt.rules.yearsList.swap(i, i+1);
+	gt.rules.internalStructureComputed=false;
+	gt.rules.setModified(true);
+
 	yearsListWidget->setCurrentRow(i+1);
 	yearChanged(/*i+1*/);
 }
