@@ -21,6 +21,7 @@
 #include "teachersform.h"
 #include "teacher.h"
 #include "teachersubjectsqualificationsform.h"
+#include "interface/editcommentsform.h"
 
 #include <QInputDialog>
 
@@ -359,46 +360,14 @@ void TeachersForm::comments()
 	Teacher* tch=gt.rules.teachersList[ind];
 	assert(tch!=NULL);
 
-	QDialog getCommentsDialog(this);
-	
-	getCommentsDialog.setWindowTitle(tr("Teacher comments"));
-	
-	QPushButton* okPB=new QPushButton(tr("OK"));
-	okPB->setDefault(true);
-	QPushButton* cancelPB=new QPushButton(tr("Cancel"));
-	
-	connect(okPB, SIGNAL(clicked()), &getCommentsDialog, SLOT(accept()));
-	connect(cancelPB, SIGNAL(clicked()), &getCommentsDialog, SLOT(reject()));
+	EditCommentsForm dialog("TeacherCommentsDialog", this, tr("Teacher comments"));
+	dialog.setComments(tch->comments);
 
-	QHBoxLayout* hl=new QHBoxLayout();
-	hl->addStretch();
-	hl->addWidget(okPB);
-	hl->addWidget(cancelPB);
-	
-	QVBoxLayout* vl=new QVBoxLayout();
-	
-	QPlainTextEdit* commentsPT=new QPlainTextEdit();
-	commentsPT->setPlainText(tch->comments);
-	commentsPT->selectAll();
-	commentsPT->setFocus();
-	
-	vl->addWidget(commentsPT);
-	vl->addLayout(hl);
-	
-	getCommentsDialog.setLayout(vl);
-	
-	const QString settingsName=QString("TeacherCommentsDialog");
-	
-	getCommentsDialog.resize(500, 320);
-	centerWidgetOnScreen(&getCommentsDialog);
-	restoreFETDialogGeometry(&getCommentsDialog, settingsName);
-	
-	int t=getCommentsDialog.exec();
-	saveFETDialogGeometry(&getCommentsDialog, settingsName);
-	
+	int t=dialog.exec();
+
 	if(t==QDialog::Accepted){
-		tch->comments=commentsPT->toPlainText();
-	
+		tch->comments=dialog.getComments();
+
 		gt.rules.internalStructureComputed=false;
 		gt.rules.setModified(true);
 

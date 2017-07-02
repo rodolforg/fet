@@ -478,7 +478,8 @@ SOURCES += \
 	interface/spaceconstraint_basedialog.cpp \
     interface/addconstraintteachersmincontinuousgapinintervalform.cpp \
     interface/constraintteachersmincontinuousgapinintervalform.cpp \
-    interface/constraintteachermincontinuousgapinintervalform.cpp
+    interface/constraintteachermincontinuousgapinintervalform.cpp \
+    interface/editcommentsform.cpp
 
 HEADERS += \
 	engine/timetableexport.h \
@@ -963,7 +964,8 @@ HEADERS += \
 	interface/spaceconstraint_basedialog.h \
     interface/addconstraintteachersmincontinuousgapinintervalform.h \
     interface/constraintteachersmincontinuousgapinintervalform.h \
-    interface/constraintteachermincontinuousgapinintervalform.h
+    interface/constraintteachermincontinuousgapinintervalform.h \
+    interface/editcommentsform.h
 
 FORMS += \
 	interface/fetmainform_template.ui \
@@ -1295,7 +1297,8 @@ FORMS += \
 	\
 	interface/constraint_basedialog_template.ui \
 	interface/teacherstudentsetsubjectactivitytag_filterwidget.ui \
-    interface/addconstraintteachersmincontinuousgapinintervalform_template.ui
+    interface/addconstraintteachersmincontinuousgapinintervalform_template.ui \
+    interface/editcommentsform_template.ui
 
 TRANSLATIONS += \
 	../translations/fet_ar.ts \

@@ -22,6 +22,7 @@
 #include "fet.h"
 #include "yearsform.h"
 #include "studentsset.h"
+#include "interface/editcommentsform.h"
 
 #include "splityearform.h"
 
@@ -308,47 +309,15 @@ void YearsForm::comments()
 	
 	StudentsSet* sset=gt.rules.searchStudentsSet(yearName);
 	assert(sset!=NULL);
+	
+	EditCommentsForm dialog("StudentsYearCommentsDialog", this, tr("Students year comments"));
+	dialog.setComments(sset->comments);
 
-	QDialog getCommentsDialog(this);
-	
-	getCommentsDialog.setWindowTitle(tr("Students year comments"));
-	
-	QPushButton* okPB=new QPushButton(tr("OK"));
-	okPB->setDefault(true);
-	QPushButton* cancelPB=new QPushButton(tr("Cancel"));
-	
-	connect(okPB, SIGNAL(clicked()), &getCommentsDialog, SLOT(accept()));
-	connect(cancelPB, SIGNAL(clicked()), &getCommentsDialog, SLOT(reject()));
+	int t=dialog.exec();
 
-	QHBoxLayout* hl=new QHBoxLayout();
-	hl->addStretch();
-	hl->addWidget(okPB);
-	hl->addWidget(cancelPB);
-	
-	QVBoxLayout* vl=new QVBoxLayout();
-	
-	QPlainTextEdit* commentsPT=new QPlainTextEdit();
-	commentsPT->setPlainText(sset->comments);
-	commentsPT->selectAll();
-	commentsPT->setFocus();
-	
-	vl->addWidget(commentsPT);
-	vl->addLayout(hl);
-	
-	getCommentsDialog.setLayout(vl);
-	
-	const QString settingsName=QString("StudentsYearCommentsDialog");
-	
-	getCommentsDialog.resize(500, 320);
-	centerWidgetOnScreen(&getCommentsDialog);
-	restoreFETDialogGeometry(&getCommentsDialog, settingsName);
-	
-	int t=getCommentsDialog.exec();
-	saveFETDialogGeometry(&getCommentsDialog, settingsName);
-	
 	if(t==QDialog::Accepted){
-		sset->comments=commentsPT->toPlainText();
-	
+		sset->comments=dialog.getComments();
+
 		gt.rules.internalStructureComputed=false;
 		gt.rules.setModified(true);
 
