@@ -294,7 +294,6 @@ void AllSpaceConstraintsForm::moveSpaceConstraintUp()
 	}
 
 	constraintsListWidget->setCurrentRow(i-1);
-	constraintChanged(/*i-1*/);
 }
 
 void AllSpaceConstraintsForm::moveSpaceConstraintDown()
@@ -348,7 +347,6 @@ void AllSpaceConstraintsForm::moveSpaceConstraintDown()
 	}
 
 	constraintsListWidget->setCurrentRow(i+1);
-	constraintChanged(/*i+1*/);
 }
 
 void AllSpaceConstraintsForm::sortedChanged(bool checked)

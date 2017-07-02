@@ -209,7 +209,6 @@ void SubjectsForm::moveSubjectUp()
 	gt.rules.setModified(true);
 
 	subjectsListWidget->setCurrentRow(i-1);
-	subjectChanged(i-1);
 }
 
 void SubjectsForm::moveSubjectDown()
@@ -233,7 +232,6 @@ void SubjectsForm::moveSubjectDown()
 	gt.rules.setModified(true);
 
 	subjectsListWidget->setCurrentRow(i+1);
-	subjectChanged(i+1);
 }
 
 void SubjectsForm::sortSubjects()

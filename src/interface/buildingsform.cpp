@@ -184,7 +184,6 @@ void BuildingsForm::moveBuildingUp()
 	gt.rules.setModified(true);
 
 	buildingsListWidget->setCurrentRow(i-1);
-	buildingChanged(i-1);
 }
 
 void BuildingsForm::moveBuildingDown()
@@ -208,7 +207,6 @@ void BuildingsForm::moveBuildingDown()
 	gt.rules.setModified(true);
 
 	buildingsListWidget->setCurrentRow(i+1);
-	buildingChanged(i+1);
 }
 
 void BuildingsForm::sortBuildings()

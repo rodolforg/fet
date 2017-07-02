@@ -212,7 +212,6 @@ void ActivityTagsForm::moveActivityTagUp()
 	gt.rules.setModified(true);
 
 	activityTagsListWidget->setCurrentRow(i-1);
-	activityTagChanged(i-1);
 }
 
 void ActivityTagsForm::moveActivityTagDown()
@@ -236,7 +235,6 @@ void ActivityTagsForm::moveActivityTagDown()
 	gt.rules.setModified(true);
 
 	activityTagsListWidget->setCurrentRow(i+1);
-	activityTagChanged(i+1);
 }
 
 void ActivityTagsForm::sortActivityTags()

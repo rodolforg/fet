@@ -316,7 +316,6 @@ void GroupsForm::moveGroupUp()
 	gt.rules.setModified(true);
 
 	groupsListWidget->setCurrentRow(i-1);
-	groupChanged(/*i-1*/s1);
 }
 
 void GroupsForm::moveGroupDown()
@@ -344,7 +343,6 @@ void GroupsForm::moveGroupDown()
 	gt.rules.setModified(true);
 
 	groupsListWidget->setCurrentRow(i+1);
-	groupChanged(/*i+1*/s1);
 }
 
 void GroupsForm::sortGroups()

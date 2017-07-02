@@ -387,7 +387,6 @@ void SubgroupsForm::moveSubgroupUp()
 	gt.rules.setModified(true);
 
 	subgroupsListWidget->setCurrentRow(i-1);
-	subgroupChanged(/*i-1*/s1);
 }
 
 void SubgroupsForm::moveSubgroupDown()
@@ -419,7 +418,6 @@ void SubgroupsForm::moveSubgroupDown()
 	gt.rules.setModified(true);
 
 	subgroupsListWidget->setCurrentRow(i+1);
-	subgroupChanged(/*i+1*/s1);
 }
 
 void SubgroupsForm::sortSubgroups()

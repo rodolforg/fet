@@ -261,7 +261,6 @@ void TeachersForm::moveTeacherUp()
 	gt.rules.setModified(true);
 
 	teachersListWidget->setCurrentRow(i-1);
-	teacherChanged(i-1);
 }
 
 void TeachersForm::moveTeacherDown()
@@ -285,7 +284,6 @@ void TeachersForm::moveTeacherDown()
 	gt.rules.setModified(true);
 
 	teachersListWidget->setCurrentRow(i+1);
-	teacherChanged(i+1);
 }
 
 void TeachersForm::sortTeachers()

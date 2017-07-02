@@ -172,7 +172,6 @@ void YearsForm::moveYearUp()
 
 
 	yearsListWidget->setCurrentRow(i-1);
-	yearChanged(/*i-1*/);
 }
 
 void YearsForm::moveYearDown()
@@ -196,7 +195,6 @@ void YearsForm::moveYearDown()
 	gt.rules.setModified(true);
 
 	yearsListWidget->setCurrentRow(i+1);
-	yearChanged(/*i+1*/);
 }
 
 void YearsForm::sortYears()

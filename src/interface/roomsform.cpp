@@ -184,7 +184,6 @@ void RoomsForm::moveRoomUp()
 	gt.rules.setModified(true);
 
 	roomsListWidget->setCurrentRow(i-1);
-	roomChanged(i-1);
 }
 
 void RoomsForm::moveRoomDown()
@@ -208,7 +207,6 @@ void RoomsForm::moveRoomDown()
 	gt.rules.setModified(true);
 
 	roomsListWidget->setCurrentRow(i+1);
-	roomChanged(i+1);
 }
 
 void RoomsForm::sortRooms()

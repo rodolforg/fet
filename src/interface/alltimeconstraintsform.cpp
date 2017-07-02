@@ -355,7 +355,6 @@ void AllTimeConstraintsForm::moveTimeConstraintUp()
 	}
 
 	constraintsListWidget->setCurrentRow(i-1);
-	constraintChanged(/*i-1*/);
 }
 
 void AllTimeConstraintsForm::moveTimeConstraintDown()
@@ -410,7 +409,6 @@ void AllTimeConstraintsForm::moveTimeConstraintDown()
 	}
 
 	constraintsListWidget->setCurrentRow(i+1);
-	constraintChanged(/*i+1*/);
 }
 
 void AllTimeConstraintsForm::sortedChanged(bool checked)
