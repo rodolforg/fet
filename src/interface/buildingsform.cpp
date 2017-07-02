@@ -21,6 +21,7 @@
 #include "buildingsform.h"
 #include "addbuildingform.h"
 #include "modifybuildingform.h"
+#include "interface/editcommentsform.h"
 
 #include <QMessageBox>
 
@@ -266,45 +267,13 @@ void BuildingsForm::comments()
 	Building* bu=gt.rules.buildingsList[ind];
 	assert(bu!=NULL);
 
-	QDialog getCommentsDialog(this);
+	EditCommentsForm dialog("BuildingsCommentsDialog", this, tr("Building comments"));
+	dialog.setComments(bu->comments);
 	
-	getCommentsDialog.setWindowTitle(tr("Building comments"));
-	
-	QPushButton* okPB=new QPushButton(tr("OK"));
-	okPB->setDefault(true);
-	QPushButton* cancelPB=new QPushButton(tr("Cancel"));
-	
-	connect(okPB, SIGNAL(clicked()), &getCommentsDialog, SLOT(accept()));
-	connect(cancelPB, SIGNAL(clicked()), &getCommentsDialog, SLOT(reject()));
-
-	QHBoxLayout* hl=new QHBoxLayout();
-	hl->addStretch();
-	hl->addWidget(okPB);
-	hl->addWidget(cancelPB);
-	
-	QVBoxLayout* vl=new QVBoxLayout();
-	
-	QPlainTextEdit* commentsPT=new QPlainTextEdit();
-	commentsPT->setPlainText(bu->comments);
-	commentsPT->selectAll();
-	commentsPT->setFocus();
-	
-	vl->addWidget(commentsPT);
-	vl->addLayout(hl);
-	
-	getCommentsDialog.setLayout(vl);
-	
-	const QString settingsName=QString("BuildingsCommentsDialog");
-	
-	getCommentsDialog.resize(500, 320);
-	centerWidgetOnScreen(&getCommentsDialog);
-	restoreFETDialogGeometry(&getCommentsDialog, settingsName);
-	
-	int t=getCommentsDialog.exec();
-	saveFETDialogGeometry(&getCommentsDialog, settingsName);
+	int t=dialog.exec();
 	
 	if(t==QDialog::Accepted){
-		bu->comments=commentsPT->toPlainText();
+		bu->comments=dialog.getComments();
 	
 		gt.rules.internalStructureComputed=false;
 		gt.rules.setModified(true);

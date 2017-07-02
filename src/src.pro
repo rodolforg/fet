@@ -474,6 +474,7 @@ SOURCES += \
 	interface/teacherstudentsetsubjectactivitytag_filterwidget.cpp \
 	interface/timeconstraint_basedialog.cpp \
 	interface/spaceconstraint_basedialog.cpp \
+    interface/editcommentsform.cpp
 
 HEADERS += \
 	engine/timetableexport.h \
@@ -954,6 +955,7 @@ HEADERS += \
 	interface/teacherstudentsetsubjectactivitytag_filterwidget.h \
 	interface/timeconstraint_basedialog.h \
 	interface/spaceconstraint_basedialog.h \
+    interface/editcommentsform.h
 
 FORMS += \
 	interface/fetmainform_template.ui \
@@ -1285,6 +1287,7 @@ FORMS += \
 	\
 	interface/constraint_basedialog_template.ui \
 	interface/teacherstudentsetsubjectactivitytag_filterwidget.ui \
+    interface/editcommentsform_template.ui
 
 TRANSLATIONS += \
 	../translations/fet_ar.ts \

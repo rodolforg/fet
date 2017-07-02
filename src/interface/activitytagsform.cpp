@@ -23,6 +23,7 @@
 #include "teacher.h"
 #include "subject.h"
 #include "activitytag.h"
+#include "interface/editcommentsform.h"
 
 #include <QInputDialog>
 
@@ -315,45 +316,13 @@ void ActivityTagsForm::comments()
 	ActivityTag* at=gt.rules.activityTagsList[ind];
 	assert(at!=NULL);
 
-	QDialog getCommentsDialog(this);
-	
-	getCommentsDialog.setWindowTitle(tr("Activity tag comments"));
-	
-	QPushButton* okPB=new QPushButton(tr("OK"));
-	okPB->setDefault(true);
-	QPushButton* cancelPB=new QPushButton(tr("Cancel"));
-	
-	connect(okPB, SIGNAL(clicked()), &getCommentsDialog, SLOT(accept()));
-	connect(cancelPB, SIGNAL(clicked()), &getCommentsDialog, SLOT(reject()));
+	EditCommentsForm dialog("ActivityTagCommentsDialog", this, tr("Activity tag comments"));
+	dialog.setComments(at->comments);
 
-	QHBoxLayout* hl=new QHBoxLayout();
-	hl->addStretch();
-	hl->addWidget(okPB);
-	hl->addWidget(cancelPB);
-	
-	QVBoxLayout* vl=new QVBoxLayout();
-	
-	QPlainTextEdit* commentsPT=new QPlainTextEdit();
-	commentsPT->setPlainText(at->comments);
-	commentsPT->selectAll();
-	commentsPT->setFocus();
-	
-	vl->addWidget(commentsPT);
-	vl->addLayout(hl);
-	
-	getCommentsDialog.setLayout(vl);
-	
-	const QString settingsName=QString("ActivityTagCommentsDialog");
-	
-	getCommentsDialog.resize(500, 320);
-	centerWidgetOnScreen(&getCommentsDialog);
-	restoreFETDialogGeometry(&getCommentsDialog, settingsName);
-	
-	int t=getCommentsDialog.exec();
-	saveFETDialogGeometry(&getCommentsDialog, settingsName);
-	
+	int t=dialog.exec();
+
 	if(t==QDialog::Accepted){
-		at->comments=commentsPT->toPlainText();
+		at->comments=dialog.getComments();
 	
 		gt.rules.internalStructureComputed=false;
 		gt.rules.setModified(true);

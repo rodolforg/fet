@@ -22,6 +22,7 @@
 #include "timetable.h"
 #include "fet.h"
 #include "studentsset.h"
+#include "interface/editcommentsform.h"
 
 #include "longtextmessagebox.h"
 
@@ -467,45 +468,13 @@ void GroupsForm::comments()
 	StudentsSet* sset=gt.rules.searchStudentsSet(groupName);
 	assert(sset!=NULL);
 
-	QDialog getCommentsDialog(this);
-	
-	getCommentsDialog.setWindowTitle(tr("Students group comments"));
-	
-	QPushButton* okPB=new QPushButton(tr("OK"));
-	okPB->setDefault(true);
-	QPushButton* cancelPB=new QPushButton(tr("Cancel"));
-	
-	connect(okPB, SIGNAL(clicked()), &getCommentsDialog, SLOT(accept()));
-	connect(cancelPB, SIGNAL(clicked()), &getCommentsDialog, SLOT(reject()));
+	EditCommentsForm dialog("StudentsGroupCommentsDialog", this, tr("Students group comments"));
+	dialog.setComments(sset->comments);
 
-	QHBoxLayout* hl=new QHBoxLayout();
-	hl->addStretch();
-	hl->addWidget(okPB);
-	hl->addWidget(cancelPB);
-	
-	QVBoxLayout* vl=new QVBoxLayout();
-	
-	QPlainTextEdit* commentsPT=new QPlainTextEdit();
-	commentsPT->setPlainText(sset->comments);
-	commentsPT->selectAll();
-	commentsPT->setFocus();
-	
-	vl->addWidget(commentsPT);
-	vl->addLayout(hl);
-	
-	getCommentsDialog.setLayout(vl);
-	
-	const QString settingsName=QString("StudentsGroupCommentsDialog");
-	
-	getCommentsDialog.resize(500, 320);
-	centerWidgetOnScreen(&getCommentsDialog);
-	restoreFETDialogGeometry(&getCommentsDialog, settingsName);
-	
-	int t=getCommentsDialog.exec();
-	saveFETDialogGeometry(&getCommentsDialog, settingsName);
+	int t=dialog.exec();
 	
 	if(t==QDialog::Accepted){
-		sset->comments=commentsPT->toPlainText();
+		sset->comments=dialog.getComments();
 	
 		gt.rules.internalStructureComputed=false;
 		gt.rules.setModified(true);

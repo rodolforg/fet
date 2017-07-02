@@ -20,6 +20,7 @@
 #include "roomsform.h"
 #include "addroomform.h"
 #include "modifyroomform.h"
+#include "interface/editcommentsform.h"
 
 #include <QMessageBox>
 
@@ -266,45 +267,13 @@ void RoomsForm::comments()
 	Room* rm=gt.rules.roomsList[ind];
 	assert(rm!=NULL);
 
-	QDialog getCommentsDialog(this);
-	
-	getCommentsDialog.setWindowTitle(tr("Room comments"));
-	
-	QPushButton* okPB=new QPushButton(tr("OK"));
-	okPB->setDefault(true);
-	QPushButton* cancelPB=new QPushButton(tr("Cancel"));
-	
-	connect(okPB, SIGNAL(clicked()), &getCommentsDialog, SLOT(accept()));
-	connect(cancelPB, SIGNAL(clicked()), &getCommentsDialog, SLOT(reject()));
+	EditCommentsForm dialog("RoomCommentsDialog", this, tr("Room comments"));
+	dialog.setComments(rm->comments);
 
-	QHBoxLayout* hl=new QHBoxLayout();
-	hl->addStretch();
-	hl->addWidget(okPB);
-	hl->addWidget(cancelPB);
-	
-	QVBoxLayout* vl=new QVBoxLayout();
-	
-	QPlainTextEdit* commentsPT=new QPlainTextEdit();
-	commentsPT->setPlainText(rm->comments);
-	commentsPT->selectAll();
-	commentsPT->setFocus();
-	
-	vl->addWidget(commentsPT);
-	vl->addLayout(hl);
-	
-	getCommentsDialog.setLayout(vl);
-	
-	const QString settingsName=QString("RoomCommentsDialog");
-	
-	getCommentsDialog.resize(500, 320);
-	centerWidgetOnScreen(&getCommentsDialog);
-	restoreFETDialogGeometry(&getCommentsDialog, settingsName);
-	
-	int t=getCommentsDialog.exec();
-	saveFETDialogGeometry(&getCommentsDialog, settingsName);
-	
+	int t=dialog.exec();
+
 	if(t==QDialog::Accepted){
-		rm->comments=commentsPT->toPlainText();
+		rm->comments=dialog.getComments();
 	
 		gt.rules.internalStructureComputed=false;
 		gt.rules.setModified(true);
