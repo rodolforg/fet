@@ -1486,7 +1486,7 @@ void Import::importCSVRoomsAndBuildings(QWidget* parent){
 	foreach(Room* rm, gt.rules.roomsList)
 		tmpSet.insert(rm->name);
 	int countroom=0;
-	for(int i=0; i<fieldList[FIELD_BUILDING_NAME].size(); i++){
+	for(int i=0; i<fieldList[FIELD_ROOM_NAME].size(); i++){
 		if(!fieldList[FIELD_ROOM_NAME][i].isEmpty() && !tmpSet.contains(fieldList[FIELD_ROOM_NAME][i])){
 			tmpSet.insert(fieldList[FIELD_ROOM_NAME][i]);
 			Room* r=new Room();
