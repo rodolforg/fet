@@ -1952,9 +1952,11 @@ Versions 5.31.0 - 5.31.v
 	- Updated the Arabic translation, by Benahmed Abdelkrim.
 - Version 5.31.7
 	- Updated to Qt 5.9.1.
-	- Added filters in the following constraints for activities: same starting day, same starting hour, two activities ordered, two activities consecutive,
-	two activities grouped, three activities grouped (suggested by math).
+	- Added filters in the following dialogs of constraints for activities: same starting day, same starting hour, two activities ordered,
+	two activities consecutive, two activities grouped, three activities grouped (suggested by math).
 	- Added the possibility to swap the two selected activities in the add/modify constraint dialogs for the constraints of type two activities ordered and
 	two activities consecutive (suggested by math).
 	- Updated the German translation, by Volker Dirr.
 	- Updated the Arabic translation, by Benahmed Abdelkrim.
+- Version 5.31.8
+	- Bug fix: when importing rooms without any building from a CSV file there were added no rooms to the data. Reported by rbnsn, fixed by Volker Dirr.
