@@ -1959,4 +1959,5 @@ Versions 5.31.0 - 5.31.v
 	- Updated the German translation, by Volker Dirr.
 	- Updated the Arabic translation, by Benahmed Abdelkrim.
 - Version 5.31.8
-	- Bug fix: when importing rooms without any building from a CSV file there were added no rooms to the data. Reported by rbnsn, fixed by Volker Dirr.
+	- Bug fix: when importing rooms without any building from a CSV file there were added no rooms to the data. Reported by Robinson A. Lemos and Maurino C. Maria,
+	fixed by Volker Dirr.
