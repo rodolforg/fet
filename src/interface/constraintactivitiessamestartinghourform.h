@@ -26,11 +26,10 @@ public:
 	ConstraintActivitiesSameStartingHourForm(QWidget* parent);
 	~ConstraintActivitiesSameStartingHourForm();
 
-	bool filterOk(const TimeConstraint *ctr) const;
-
 protected:
 	virtual QDialog *createAddDialog();
 	virtual QDialog *createModifyDialog(TimeConstraint *ctr);
+	virtual bool filterOk(const TimeConstraint *ctr) const;
 };
 
 #endif

@@ -25,13 +25,12 @@ class ConstraintActivitiesSameStartingDayForm : public TimeConstraintBaseDialog 
 public:
 	ConstraintActivitiesSameStartingDayForm(QWidget* parent);
 	~ConstraintActivitiesSameStartingDayForm();
-
-	bool filterOk(const TimeConstraint* ctr) const;
 	
 protected:
 	virtual QDialog *createAddDialog();
 	virtual QDialog *createModifyDialog(TimeConstraint *ctr);
 
+	virtual bool filterOk(const TimeConstraint* ctr) const;
 	void setHelp();
 };
 

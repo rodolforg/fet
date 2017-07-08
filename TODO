@@ -4217,10 +4217,22 @@ This constraint is highly optimized.
 Also from Benahmed Abdelkrim, on forum: I suggest adding the following constraint: min hours daily whith an activity tag.
 It allows to impose a minimum of daily hours with a tag. Especially to distinguish real and pseudo-activities in several cases.
 
+Also from s.lanore, on forum:
+
+I have 5 lunch activities with preferred time slots for each student. One for each day of the week.
+
+My issue is that I would like to use the ConstraintStudentsSetMinHoursDaily and that I don't have a way to ignore my lunch activities with this constraint.
+Meaning that if fet finds a timetable with a day off (which is allowed) the ConstraintStudentsSetMinHoursDaily will make it impossible because there will
+be the lunch activity no matter what. Indeed, if we have a day with only the 30 min lunch activity for the student and the minHoursdaily constraint is set
+to 1 hours it won't be good..
+
+One way to solve it would be to have a ConstraintStudentsSetMinHoursDaily with an activity_tag and i'd add an activity_tag to all my activities except
+the lunch ones.
+
 249---------------------------------------------------------
 From Handaya:
 
-DONE since FET-5.29.0 on 15 March 2016 --> 1) what if the html result be colorfull also as in the program ?
+DONE since FET-5.29.0 on 15 March 2016 --> 1) what if the html result be colorful also as in the program ?
 (This point was also suggested by hudrea and by Udo Schütz). <-- DONE
 2) what if the colors be the same for the same teacher ?
 3) what if the program allows marking a weekly meeting for all teachers
@@ -5225,3 +5237,98 @@ interval3 = first hour of evening - last hour of evening
 And can also define between each interval a constraint of break time.
 
 In this way can integrate the time constraints specific to 2 versions customized in official FET.
+
+315---------------------------------------------------------
+From math and Volker Dirr (on forum):
+
+Constraint order two lists of activities, so that the first list is before the second list.
+
+316---------------------------------------------------------
+From math (on forum):
+
+I'm using FET for generating the timetable for the computer science departement of a mid-sized university. In this posting I would like to suggest something that
+I call "collection of rooms". Since I'm not a native speaker, please feel free to change this term to whatever seems to be appropriate for you.
+
+We have a wide variety of rooms in our university, ranging from small meeting rooms or seminar rooms up to large lecture halls for hundreds of students. But it's
+not only the size of the rooms that is important, it's also the equippment in these rooms. A very important differentiation is the question whether a room is
+equipped with a chalk board or a white board. While most lecturers prefer white boards, lecturers of math related courses usually prefer chalk boards.
+
+At the moment I'm first adding all the activities, then usually selecting all appropriate rooms in "Space->Subjects->A Subject has a set of Preferred Rooms".
+In case of activities with the same subject but different space requirements, I even have to specify them in "Space->Activities->An Activitiy has a set of
+Preferred Rooms" for each of these activities. My problem is exactly the following process of assigning rooms.
+
+When adding such a constraint in "Add subject preferred rooms", I select the subject on the top of the dialog. Below the subject there are two lists. The list
+of all available rooms on the left and the list of selected rooms on the right. Now I have to go through the (looooooooong) list of available rooms, selecting
+all appropriate rooms. Since I can't remember each and every room, I coded relevant information to the name of a room, e.g. "N3-106-C-SPW-50P" for "room 106
+on third floor of building N", "managed by the Computer science department", "Seminar room equipped with Projector and Whiteboard", "capacity for 50 students".
+So if I need a mid-sized seminar room, I have to go all through the list, selecting all matching rooms.
+
+First, this manual selection of rooms is quite time consuming. Second, there's a good chance of missing an appropriate room. Second is much worse since we suffer
+a general lack of rooms, so that generating a timetable usually fails due to a lack of rooms. So it would be highly helpful if FET could support me in not missing
+appropriate rooms.
+
+And I would like to suggest a way that should be easy to implement, not demanding any changes to the timetabling algorithm at all.
+
+I would like to be able to specify collections, e.g. "Data->Space->Collections". When adding a collection, I would like to specify a name of the collection on
+the top of the dialog. Below this edit field there could be two list fields (just like in the constraints dialog mentioned above). In the left list there are
+all the available room, in the right list field there are all the rooms that are part of the collection. This way I would be abe to generate a collection
+"mid-sized seminar room" with all appropriate rooms.
+
+Coming back to the "Space->Subjects->A Subject has a set of Preferred Rooms" dialog. Here, in the left list there are all the available rooms. I beside this
+list of rooms, I would like to see all collections at the top of the list. This way I could assign a collection to a subject instead of assigning room by room.
+As a matter of fact, I could also select multiple collections or other rooms.
+
+When generating a timetable, these collections could be dissolved by a pre-problem, as Volker called it. A collection is just replaced with the rooms it
+contains. If multiple collections were selected and a specific room was listed in more than one of these collections, all duplicates are removed from the list.
+This way the algorithm gets the very same input as before, not requiring any changes here.
+
+I would be more than happy if you could add this collection feature to FET.
+
+317---------------------------------------------------------
+From math (on forum):
+
+When preparing a timetable generation I specify a bunch of rooms that are appropriate for a given subject and/or activity. Based in this information FET assigns
+one of the specified rooms at timetable generation time. However, even though I specify the rooms as appropriate, some of the given rooms are more appropriate
+than others.
+
+For instance lecture halls. Some of them are brand new, some of them not. Since both kinds of lecture halls are ok for a lecture, I specify both of them as space
+constraint. At generation time FET assigns for room types to the activities since there is no difference from FET's point of view. But when I'm looking to the
+generated schedule and see that the lecture is assigned to an old lecture hall while a new lecture hall is available at the same time, I would like to be able to
+manually move the activity from the old lecture hall to the new.
+
+I would highly appreciate if such "manual optimization" of rooms would be possible in FET. In fact, this is something that all commercial tools are able to do and
+the feature that I miss most in FET.
+
+In my naive way of looking to FET I don't expect this feature to be difficult in implementation. FET knows which rooms are appropriate for an activity and it
+knows which of these rooms are already allocated (since the timetable has just been generated). So when right-clicking on an activity in the timetable, a menu
+option "change room to..." could appear with a sub menu holding all the available alternative rooms.
+
+I'd be really happy if you could integrate such functionality and I'm a bit afraid that you say something like "sorry dude, this is out of scope since FET does
+not focus on post-generation optimization at all".
+
+318---------------------------------------------------------
+From Volker Dirr:
+
+since multicore CPU are more and more normal today we should rethink 
+about that.
+as i can see it will be impossible ((also?) because of speed) to 
+generate only ONE timetable with multicore.
+so the "only" variant is to generate multiple tables on different core.
+
+we should already "prepare" the source for this. (it mainly just mean: 
+tidy up. no real "new code" is needed for that.)
+
+so it mean:
+all variables that didn't change after generate_pre is calculated should 
+be store in a single structure. so all cores can read from that single 
+structure.
+
+all variables in generate that will be "modified" while generating 
+should be stored into an other structure.
+
+by that we prepared the source for later. so as soon as we start coding 
+multi core support we just need to do a list of that structure, so each 
+core get/care about its own data.
+
+(even if we never add multicore this tidy up migth be useful, since it 
+might help reading the source)

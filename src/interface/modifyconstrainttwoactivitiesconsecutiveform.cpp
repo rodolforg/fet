@@ -29,6 +29,8 @@ ModifyConstraintTwoActivitiesConsecutiveForm::ModifyConstraintTwoActivitiesConse
 	connect(okPushButton, SIGNAL(clicked()), this, SLOT(ok()));
 	connect(cancelPushButton, SIGNAL(clicked()), this, SLOT(close()));
 
+	connect(swapPushButton, SIGNAL(clicked()), this, SLOT(swap()));
+
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
 	
@@ -151,4 +153,12 @@ void ModifyConstraintTwoActivitiesConsecutiveForm::ok()
 	gt.rules.setModified(true);
 
 	this->close();
+}
+
+void ModifyConstraintTwoActivitiesConsecutiveForm::swap()
+{
+	int t1=firstActivitiesComboBox->currentIndex();
+	int t2=secondActivitiesComboBox->currentIndex();
+	firstActivitiesComboBox->setCurrentIndex(t2);
+	secondActivitiesComboBox->setCurrentIndex(t1);
 }
