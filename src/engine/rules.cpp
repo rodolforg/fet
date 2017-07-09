@@ -14531,6 +14531,7 @@ TimeConstraint *Rules::readTeacherMinContinuousGapInInterval(QXmlStreamReader &x
 		else if(xmlReader.name()=="Teacher_Name"){
 			QString text=xmlReader.readElementText();
 			cn->teacherName=text;
+			log.verbose("    Read teacher name="+cn->teacherName+"\n");
 		}
 		else if(xmlReader.name()=="Minimum_Gap_Duration"){
 			QString text=xmlReader.readElementText();
