@@ -19462,14 +19462,14 @@ bool ConstraintTeacherMinContinuousGapInInterval::computeInternalStructure(QWidg
 	}
 	if (minGapDuration < 0){
 		TimeConstraintIrreconcilableMessage::warning(parent, tr("FET warning"),
-		 tr("Constraint teachers min continuous gap in interval is wrong because gap duration < 0."
+		 tr("Constraint teacher min continuous gap in interval is wrong because gap duration < 0."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 
 		return false;
 	}
 	if (minGapDuration > endHour-startHour){
 		TimeConstraintIrreconcilableMessage::warning(parent, tr("FET warning"),
-		 tr("Constraint teachers min continuous gap in interval is wrong because minimum gap duration > interval."
+		 tr("Constraint teacher min continuous gap in interval is wrong because minimum gap duration > interval."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 
 		return false;
@@ -19693,14 +19693,14 @@ bool ConstraintTeachersMinContinuousGapInInterval::computeInternalStructure(QWid
 {
 	if (weightPercentage < 0) {
 		TimeConstraintIrreconcilableMessage::warning(parent, tr("FET warning"),
-		 tr("Constraint teacher min continuous gap in interval is wrong because weight < 0%."
+		 tr("Constraint teachers min continuous gap in interval is wrong because weight < 0%."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 
 		return false;
 	}
 	if (weightPercentage > 100) {
 		TimeConstraintIrreconcilableMessage::warning(parent, tr("FET warning"),
-		 tr("Constraint teacher min continuous gap in interval is wrong because weight > 100%."
+		 tr("Constraint teachers min continuous gap in interval is wrong because weight > 100%."
 		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
 
 		return false;
