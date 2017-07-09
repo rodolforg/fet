@@ -883,7 +883,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_ReturnOkIfNoTeachersMin
 
 	bool result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 }
 
 void GeneratePreTest::TeachersMinContinuousGapInInterval_InactiveConstraintIsIgnored()
@@ -900,7 +900,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_InactiveConstraintIsIgn
 
 	bool result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, -1.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
@@ -917,7 +917,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_InactiveConstraintIsIgn
 
 	result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, -1.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
@@ -941,7 +941,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_TeachersAffectAll()
 
 	bool result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
@@ -973,7 +973,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_TeacherAffectOnlyOne()
 
 	bool result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, -1.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
@@ -1003,7 +1003,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_TeacherHasMoreThanOneOf
 
 	bool result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, 100.0);
@@ -1023,7 +1023,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_TeacherHasMoreThanOneOf
 
 	result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, 100.0);
@@ -1053,7 +1053,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_NumErrorMsgs_WhenPrepar
 
 	bool result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(!result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(!result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 	QCOMPARE(mcgi.getErrors().count(), 1);
 }
 
@@ -1072,7 +1072,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_TwoTotallyDifferentOnes
 
 	bool result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, 100.0);
@@ -1102,7 +1102,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_TwoTotallyDifferentOnes
 
 	bool result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, 100.0);
@@ -1148,7 +1148,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_YellsWhenTeacherHasMore
 
 	bool result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(!result, "Did not alert that there is more MinContinuousGapsForTeachers constraints than supported for one teacher");
+	QVERIFY2(!result, "Did not alert that there is more MinContinuousGapInIntervalForTeachers constraints than supported for one teacher");
 }
 
 void GeneratePreTest::TeachersMinContinuousGapInInterval_MoreThanOneToSameTeacherWithSameData_StoresOnlyMostRestrictiveOne()
@@ -1166,7 +1166,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_MoreThanOneToSameTeache
 
 	bool result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 90.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
@@ -1182,7 +1182,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_MoreThanOneToSameTeache
 
 	result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
@@ -1213,7 +1213,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_OneThatIncludesAnotherO
 
 	bool result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
@@ -1229,7 +1229,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_OneThatIncludesAnotherO
 
 	result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
@@ -1245,7 +1245,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_OneThatIncludesAnotherO
 
 	result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
@@ -1271,7 +1271,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_WithSameIntervalOfSameT
 
 	bool result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, 90.0);
@@ -1290,7 +1290,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_WithSameIntervalOfSameT
 	mock.rules.computeInternalStructure(NULL);
 	result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, 90.0);
@@ -1320,7 +1320,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_OneThatIncludesAnotherO
 
 	bool result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, 90.0);
@@ -1350,7 +1350,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_OneThatIncludesAnotherO
 
 	bool result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, 100.0);
