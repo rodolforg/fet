@@ -37,8 +37,11 @@ ConstraintTeacherMinContinuousGapInIntervalForm::~ConstraintTeacherMinContinuous
 
 bool ConstraintTeacherMinContinuousGapInIntervalForm::filterOk(const TimeConstraint* ctr) const
 {
-	if(ctr->type == CONSTRAINT_TEACHER_MIN_CONTINUOUS_GAP_IN_INTERVAL)
-		return true;
+	if(ctr->type == CONSTRAINT_TEACHER_MIN_CONTINUOUS_GAP_IN_INTERVAL) {
+		ConstraintTeacherMinContinuousGapInInterval *c = (ConstraintTeacherMinContinuousGapInInterval*)ctr;
+		QString teacher = ((TeacherStudentSetSubjectActivityTag_FilterWidget*)getFilterWidget())->teacher();
+		return teacher.isEmpty() || c->teacherName == teacher;
+	}
 	else
 		return false;
 }
