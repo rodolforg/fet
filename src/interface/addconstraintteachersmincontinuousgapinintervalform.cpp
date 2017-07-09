@@ -159,19 +159,20 @@ void AddConstraintTeachersMinContinuousGapInIntervalForm::handleConstraint()
 	}
 
 	if (ctr == NULL) {
+		TimeConstraint *c;
 		if (teacher_name.isEmpty())
-			ctr = new ConstraintTeachersMinContinuousGapInInterval(weight, min_gap, startHour, endHour);
+			c = new ConstraintTeachersMinContinuousGapInInterval(weight, min_gap, startHour, endHour);
 		else
-			ctr = new ConstraintTeacherMinContinuousGapInInterval(weight, min_gap, teacher_name, startHour, endHour);
+			c = new ConstraintTeacherMinContinuousGapInInterval(weight, min_gap, teacher_name, startHour, endHour);
 
-		bool ok = rules.addTimeConstraint(ctr);
+		bool ok = rules.addTimeConstraint(c);
 		if(ok)
 			LongTextMessageBox::information(this, tr("FET information"),
-				tr("Constraint added:")+"\n\n"+ctr->getDetailedDescription(gt.rules));
+				tr("Constraint added:")+"\n\n"+c->getDetailedDescription(gt.rules));
 		else{
 			QMessageBox::warning(this, tr("FET information"),
 				tr("Constraint NOT added - please report error"));
-			delete ctr;
+			delete c;
 		}
 	} else {
 		if (ctr->type == CONSTRAINT_TEACHER_MIN_CONTINUOUS_GAP_IN_INTERVAL) {
