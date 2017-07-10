@@ -45,6 +45,7 @@ SOURCES += tst_generatepretest.cpp \
     ../../../src/engine/constraints/maxdaysbetweenactivities.cpp \
     ../../../src/engine/constraints/mingapsbetweenactivities.cpp \
     ../../../src/engine/constraints/teachersmincontinuousgapininterval.cpp \
+    ../../../src/engine/constraints/studentsmincontinuousgapininterval.cpp \
     ../../../src/engine/messageboxes.cpp \
     ../../../src/engine/randomknuth.cpp \
     ../../../src/interface/longtextmessagebox.cpp

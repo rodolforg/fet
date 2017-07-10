@@ -2030,6 +2030,11 @@ bool Rules::modifyStudentsSet(const QString& initialStudentsSetName, const QStri
 				if(initialStudentsSetName == crt_constraint->students)
 					crt_constraint->students=finalStudentsSetName;
 			}
+			else if(ctr->type==CONSTRAINT_STUDENTS_MIN_CONTINUOUS_GAP_IN_INTERVAL){
+				ConstraintStudentsSetMinContinuousGapInInterval* crt_constraint=(ConstraintStudentsSetMinContinuousGapInInterval*)ctr;
+				if(initialStudentsSetName == crt_constraint->students)
+					crt_constraint->students=finalStudentsSetName;
+			}
 		}
 
 		foreach(SpaceConstraint* ctr, spaceConstraintsList){
@@ -2187,6 +2192,11 @@ bool Rules::modifyStudentsSets(const QHash<QString, QString>& oldAndNewStudentsS
 		}
 		else if(ctr->type==CONSTRAINT_STUDENTS_SET_MIN_RESTING_HOURS){
 			ConstraintStudentsSetMinRestingHours* crt_constraint=(ConstraintStudentsSetMinRestingHours*)ctr;
+			if(oldAndNewStudentsSetNames.contains(crt_constraint->students))
+				crt_constraint->students=oldAndNewStudentsSetNames.value(crt_constraint->students);
+		}
+		else if(ctr->type==CONSTRAINT_STUDENTS_MIN_CONTINUOUS_GAP_IN_INTERVAL){
+			ConstraintStudentsSetMinContinuousGapInInterval* crt_constraint=(ConstraintStudentsSetMinContinuousGapInInterval*)ctr;
 			if(oldAndNewStudentsSetNames.contains(crt_constraint->students))
 				crt_constraint->students=oldAndNewStudentsSetNames.value(crt_constraint->students);
 		}
@@ -4314,6 +4324,11 @@ void Rules::updateConstraintsAfterRemoval()
 		else if(tc->type==CONSTRAINT_TEACHER_MIN_CONTINUOUS_GAP_IN_INTERVAL){
 			ConstraintTeacherMinContinuousGapInInterval* c=(ConstraintTeacherMinContinuousGapInInterval*)tc;
 			if(!existingTeachersNames.contains(c->teacherName))
+				toBeRemovedTime.append(tc);
+		}
+		else if(tc->type==CONSTRAINT_STUDENTSSET_MIN_CONTINUOUS_GAP_IN_INTERVAL){
+			ConstraintStudentsSetMinContinuousGapInInterval* c=(ConstraintStudentsSetMinContinuousGapInInterval*)tc;
+			if(!permanentStudentsHash.contains(c->students))
 				toBeRemovedTime.append(tc);
 		}
 	}
@@ -6513,6 +6528,12 @@ bool Rules::read(QWidget* parent, const QString& fileName, bool commandLine, QSt
 				}
 				else if(xmlReader.name()=="ConstraintTeachersMinContinuousGapInInterval"){
 					crt_constraint=readTeachersMinContinuousGapInInterval(xmlReader, log);
+				}
+				else if(xmlReader.name()=="ConstraintStudentsSetMinContinuousGapInInterval"){
+					crt_constraint=readStudentsSetMinContinuousGapInInterval(xmlReader, log);
+				}
+				else if(xmlReader.name()=="ConstraintStudentsMinContinuousGapInInterval"){
+					crt_constraint=readStudentsMinContinuousGapInInterval(xmlReader, log);
 				}
 				/////////
 				else{
@@ -14566,6 +14587,111 @@ TimeConstraint *Rules::readTeachersMinContinuousGapInInterval(QXmlStreamReader &
 {
 	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintTeachersMinContinuousGapInInterval");
 	ConstraintTeachersMinContinuousGapInInterval* cn = new ConstraintTeachersMinContinuousGapInInterval();
+	while(xmlReader.readNextStartElement()){
+		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
+		if(xmlReader.name()=="Weight_Percentage"){
+			QString text=xmlReader.readElementText();
+			cn->weightPercentage=customFETStrToDouble(text);
+			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
+		}
+		else if(xmlReader.name()=="Active"){
+			QString text=xmlReader.readElementText();
+			if(text=="false"){
+				cn->active=false;
+			}
+		}
+		else if(xmlReader.name()=="Comments"){
+			QString text=xmlReader.readElementText();
+			cn->comments=text;
+		}
+		else if(xmlReader.name()=="Minimum_Gap_Duration"){
+			QString text=xmlReader.readElementText();
+			cn->minGapDuration=text.toInt();
+			log.verbose("    Adding min gap duration="+CustomFETString::number(cn->minGapDuration)+"\n");
+		}
+		else if(xmlReader.name()=="Interval_Start_Hour"){
+			cn->startHour = readHourTag(xmlReader, log, false);
+			if (cn->startHour < 0) {
+				delete cn;
+				return NULL;
+			}
+			log.verbose("    Interval start hour="+hoursOfTheDay[cn->startHour]+"\n");
+		}
+		else if(xmlReader.name()=="Interval_End_Hour"){
+			cn->endHour = readHourTag(xmlReader, log, true);
+			if (cn->endHour < 0) {
+				delete cn;
+				return NULL;
+			}
+			log.verbose("    Interval end hour="+hoursOfTheDay[cn->endHour]+"\n");
+		}
+		else{
+			xmlReader.skipCurrentElement();
+			log.numberOfUnrecognizedFields++;
+		}
+	}
+	return cn;
+}
+
+TimeConstraint *Rules::readStudentsSetMinContinuousGapInInterval(QXmlStreamReader &xmlReader, XmlLog &log)
+{
+	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintStudentsSetMinContinuousGapInInterval");
+	ConstraintStudentsSetMinContinuousGapInInterval* cn = new ConstraintStudentsSetMinContinuousGapInInterval();
+	while(xmlReader.readNextStartElement()){
+		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
+		if(xmlReader.name()=="Weight_Percentage"){
+			QString text=xmlReader.readElementText();
+			cn->weightPercentage=customFETStrToDouble(text);
+			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
+		}
+		else if(xmlReader.name()=="Active"){
+			QString text=xmlReader.readElementText();
+			if(text=="false"){
+				cn->active=false;
+			}
+		}
+		else if(xmlReader.name()=="Comments"){
+			QString text=xmlReader.readElementText();
+			cn->comments=text;
+		}
+		else if(xmlReader.name()=="Students"){
+			QString text=xmlReader.readElementText();
+			cn->students=text;
+			log.verbose("    Read students name="+cn->students+"\n");
+		}
+		else if(xmlReader.name()=="Minimum_Gap_Duration"){
+			QString text=xmlReader.readElementText();
+			cn->minGapDuration=text.toInt();
+			log.verbose("    Adding min gap duration="+CustomFETString::number(cn->minGapDuration)+"\n");
+		}
+		else if(xmlReader.name()=="Interval_Start_Hour"){
+			cn->startHour = readHourTag(xmlReader, log, false);
+			if (cn->startHour < 0) {
+				delete cn;
+				return NULL;
+			}
+			log.verbose("    Interval start hour="+hoursOfTheDay[cn->startHour]+"\n");
+		}
+		else if(xmlReader.name()=="Interval_End_Hour"){
+			cn->endHour = readHourTag(xmlReader, log, true);
+			if (cn->endHour < 0) {
+				delete cn;
+				return NULL;
+			}
+			log.verbose("    Interval end hour="+hoursOfTheDay[cn->endHour]+"\n");
+		}
+		else{
+			xmlReader.skipCurrentElement();
+			log.numberOfUnrecognizedFields++;
+		}
+	}
+	return cn;
+}
+
+TimeConstraint *Rules::readStudentsMinContinuousGapInInterval(QXmlStreamReader &xmlReader, XmlLog &log)
+{
+	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintStudentsMinContinuousGapInInterval");
+	ConstraintStudentsMinContinuousGapInInterval* cn = new ConstraintStudentsMinContinuousGapInInterval();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
 		if(xmlReader.name()=="Weight_Percentage"){

@@ -852,7 +852,7 @@
      <x>0</x>
      <y>0</y>
      <width>560</width>
-     <height>28</height>
+     <height>25</height>
     </rect>
    </property>
    <widget class="QMenu" name="helpMenu">
@@ -1037,6 +1037,7 @@
       <addaction name="dataTimeConstraintsStudentsSetMaxHoursContinuouslyAction"/>
       <addaction name="dataTimeConstraintsStudentsSetActivityTagMaxHoursContinuouslyAction"/>
       <addaction name="dataTimeConstraintsStudentsSetIntervalMaxDaysPerWeekAction"/>
+      <addaction name="dataTimeConstraintsStudentsSetMinContinuousGapInIntervalAction"/>
       <addaction name="dataTimeConstraintsStudentsSetMinRestingHoursAction"/>
       <addaction name="separator"/>
       <addaction name="dataTimeConstraintsStudentsMaxDaysPerWeekAction"/>
@@ -1050,6 +1051,7 @@
       <addaction name="dataTimeConstraintsStudentsMaxHoursContinuouslyAction"/>
       <addaction name="dataTimeConstraintsStudentsActivityTagMaxHoursContinuouslyAction"/>
       <addaction name="dataTimeConstraintsStudentsIntervalMaxDaysPerWeekAction"/>
+      <addaction name="dataTimeConstraintsStudentsMinContinuousGapInIntervalAction"/>
       <addaction name="dataTimeConstraintsStudentsMinRestingHoursAction"/>
      </widget>
      <widget class="QMenu" name="menuActivities_time_constraints">
@@ -2537,6 +2539,16 @@
   <action name="dataTimeConstraintsTeacherMinContinuousGapInIntervalAction">
    <property name="text">
     <string>A teacher has a min continuous gap in an hourly interval</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsStudentsMinContinuousGapInIntervalAction">
+   <property name="text">
+    <string>Min continuous gap in interval for all students</string>
+   </property>
+  </action>
+  <action name="dataTimeConstraintsStudentsSetMinContinuousGapInIntervalAction">
+   <property name="text">
+    <string>A students set has a min continuous gap in an hourly interval</string>
    </property>
   </action>
  </widget>

@@ -26,6 +26,7 @@ SOURCES += \
 	engine/constraints/maxdaysbetweenactivities.cpp \
 	engine/constraints/mingapsbetweenactivities.cpp \
 	engine/constraints/teachersmincontinuousgapininterval.cpp \
+	engine/constraints/studentsmincontinuousgapininterval.cpp \
 	\
 	interface/fet.cpp \
 	interface/helpaboutform.cpp \
@@ -477,7 +478,10 @@ SOURCES += \
 	interface/spaceconstraint_basedialog.cpp \
     interface/addconstraintteachersmincontinuousgapinintervalform.cpp \
     interface/constraintteachersmincontinuousgapinintervalform.cpp \
-    interface/constraintteachermincontinuousgapinintervalform.cpp
+    interface/constraintteachermincontinuousgapinintervalform.cpp \
+    interface/addconstraintstudentsmincontinuousgapinintervalform.cpp \
+    interface/constraintstudentssetmincontinuousgapinintervalform.cpp \
+    interface/constraintstudentsmincontinuousgapinintervalform.cpp
 
 HEADERS += \
 	engine/timetableexport.h \
@@ -508,6 +512,7 @@ HEADERS += \
 	engine/constraints/maxdaysbetweenactivities.h \
 	engine/constraints/mingapsbetweenactivities.h \
 	engine/constraints/teachersmincontinuousgapininterval.h \
+	engine/constraints/studentsmincontinuousgapininterval.h \
 	\
 	interface/fet.h \
 	interface/helpaboutform.h \
@@ -961,7 +966,10 @@ HEADERS += \
 	interface/spaceconstraint_basedialog.h \
     interface/addconstraintteachersmincontinuousgapinintervalform.h \
     interface/constraintteachersmincontinuousgapinintervalform.h \
-    interface/constraintteachermincontinuousgapinintervalform.h
+    interface/constraintteachermincontinuousgapinintervalform.h \
+    interface/addconstraintstudentsmincontinuousgapinintervalform.h \
+    interface/constraintstudentssetmincontinuousgapinintervalform.h \
+    interface/constraintstudentsmincontinuousgapinintervalform.h
 
 FORMS += \
 	interface/fetmainform_template.ui \
@@ -1293,7 +1301,8 @@ FORMS += \
 	\
 	interface/constraint_basedialog_template.ui \
 	interface/teacherstudentsetsubjectactivitytag_filterwidget.ui \
-    interface/addconstraintteachersmincontinuousgapinintervalform_template.ui
+    interface/addconstraintteachersmincontinuousgapinintervalform_template.ui \
+    interface/addconstraintstudentsmincontinuousgapinintervalform_template.ui
 
 TRANSLATIONS += \
 	../translations/fet_ar.ts \

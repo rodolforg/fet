@@ -19919,3 +19919,583 @@ bool ConstraintTeachersMinContinuousGapInInterval::repairWrongDayOrHour(Rules& r
 
 	return true;
 }
+
+
+ConstraintStudentsSetMinContinuousGapInInterval::ConstraintStudentsSetMinContinuousGapInInterval()
+	: TimeConstraint(CONSTRAINT_STUDENTSSET_MIN_CONTINUOUS_GAP_IN_INTERVAL),
+	  minGapDuration(1), startHour(0), endHour(0)
+{
+}
+
+ConstraintStudentsSetMinContinuousGapInInterval::ConstraintStudentsSetMinContinuousGapInInterval(double wp, int minGapDuration, const QString &students, int startHour, int endHour)
+	: TimeConstraint(CONSTRAINT_STUDENTSSET_MIN_CONTINUOUS_GAP_IN_INTERVAL, wp),
+	  minGapDuration(minGapDuration), startHour(startHour), endHour(endHour), students(students)
+{
+	assert(startHour < endHour);
+	assert(startHour >= 0);
+}
+
+QString ConstraintStudentsSetMinContinuousGapInInterval::getXmlDescription(const Rules &r) const
+{
+	QString s="<ConstraintStudentsSetMinContinuousGapInInterval>\n";
+	s+="	<Weight_Percentage>"+CustomFETString::number(this->weightPercentage)+"</Weight_Percentage>\n";
+	s+="	<Students>"+protect(students)+"</Students>\n";
+	s+="	<Minimum_Gap_Duration>"+CustomFETString::number(this->minGapDuration)+"</Minimum_Gap_Duration>\n";
+	s+="	<Interval_Start_Hour>"+protect(r.hoursOfTheDay[this->startHour])+"</Interval_Start_Hour>\n";
+	if(this->endHour < r.nHoursPerDay){
+		s+="	<Interval_End_Hour>"+protect(r.hoursOfTheDay[this->endHour])+"</Interval_End_Hour>\n";
+	}
+	else{
+		s+="	<Interval_End_Hour></Interval_End_Hour>\n";
+		s+="	<!-- Interval_End_Hour void means the end of the day (which has no name) -->\n";
+	}
+	s+="	<Active>"+trueFalse(active)+"</Active>\n";
+	s+="	<Comments>"+protect(comments)+"</Comments>\n";
+	s+="</ConstraintStudentsSetMinContinuousGapInInterval>\n";
+	return s;
+}
+
+bool ConstraintStudentsSetMinContinuousGapInInterval::computeInternalStructure(QWidget* parent, const Rules& r)
+{
+	StudentsSet* ss=r.studentsHash.value(students, NULL);
+	if(ss==NULL){
+		TimeConstraintIrreconcilableMessage::warning(parent, tr("FET warning"),
+		 tr("Constraint students set min continuous gap in interval is wrong because it refers to inexistent students set."
+		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
+
+		return false;
+	}
+
+	iSubgroupsList.clear();
+
+	if(ss->type==STUDENTS_SUBGROUP){
+		int tmp;
+		tmp=((StudentsSubgroup*)ss)->indexInInternalSubgroupsList;
+		assert(tmp>=0);
+		assert(tmp<r.nInternalSubgroups);
+		if(!this->iSubgroupsList.contains(tmp))
+			this->iSubgroupsList.append(tmp);
+	}
+	else if(ss->type==STUDENTS_GROUP){
+		StudentsGroup* stg=(StudentsGroup*)ss;
+		for(int i=0; i<stg->subgroupsList.size(); i++){
+			StudentsSubgroup* sts=stg->subgroupsList[i];
+			int tmp;
+			tmp=sts->indexInInternalSubgroupsList;
+			assert(tmp>=0);
+			assert(tmp<r.nInternalSubgroups);
+			if(!this->iSubgroupsList.contains(tmp))
+				this->iSubgroupsList.append(tmp);
+		}
+	}
+	else if(ss->type==STUDENTS_YEAR){
+		StudentsYear* sty=(StudentsYear*)ss;
+		for(int i=0; i<sty->groupsList.size(); i++){
+			StudentsGroup* stg=sty->groupsList[i];
+			for(int j=0; j<stg->subgroupsList.size(); j++){
+				StudentsSubgroup* sts=stg->subgroupsList[j];
+				int tmp;
+				tmp=sts->indexInInternalSubgroupsList;
+				assert(tmp>=0);
+				assert(tmp<r.nInternalSubgroups);
+				if(!this->iSubgroupsList.contains(tmp))
+					this->iSubgroupsList.append(tmp);
+			}
+		}
+	}
+	else
+		assert(0);
+
+	if (weightPercentage < 0) {
+		TimeConstraintIrreconcilableMessage::warning(parent, tr("FET warning"),
+		 tr("Constraint students set min continuous gap in interval is wrong because weight < 0%."
+		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
+
+		return false;
+	}
+	if (weightPercentage > 100) {
+		TimeConstraintIrreconcilableMessage::warning(parent, tr("FET warning"),
+		 tr("Constraint students set min continuous gap in interval is wrong because weight > 100%."
+		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
+
+		return false;
+	}
+	if (startHour >= endHour){
+		TimeConstraintIrreconcilableMessage::warning(parent, tr("FET warning"),
+		 tr("Constraint students set min continuous gap in interval is wrong because start hour >= end hour."
+		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
+
+		return false;
+	}
+	if (startHour < 0){
+		TimeConstraintIrreconcilableMessage::warning(parent, tr("FET warning"),
+		 tr("Constraint students set min continuous gap in interval is wrong because start hour < first hour of the day."
+		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
+
+		return false;
+	}
+	if (endHour > r.nHoursPerDay){
+		TimeConstraintIrreconcilableMessage::warning(parent, tr("FET warning"),
+		 tr("Constraint students set min continuous gap in interval is wrong because end hour > number of hours per day."
+		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
+
+		return false;
+	}
+	if (minGapDuration < 0){
+		TimeConstraintIrreconcilableMessage::warning(parent, tr("FET warning"),
+		 tr("Constraint students set min continuous gap in interval is wrong because gap duration < 0."
+		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
+
+		return false;
+	}
+	if (minGapDuration > endHour-startHour){
+		TimeConstraintIrreconcilableMessage::warning(parent, tr("FET warning"),
+		 tr("Constraint students set min continuous gap in interval is wrong because minimum gap duration > interval."
+		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
+
+		return false;
+	}
+	return true;
+}
+
+bool ConstraintStudentsSetMinContinuousGapInInterval::hasInactiveActivities(const Rules &r) const
+{
+	Q_UNUSED(r);
+	return false;
+}
+
+QString ConstraintStudentsSetMinContinuousGapInInterval::getDescription(const Rules &r) const
+{
+	QString s;
+	if(!active)
+		s="X - ";
+
+	s+=tr("Students set min continuous gap in interval");s+=", ";
+	s+=tr("WP:%1%", "Abbreviation for weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
+	s+=tr("St:%1", "Abbreviation for Students set").arg(this->students);s+=", ";
+	s+=tr("G:%1", "Abbreviation for minimum continuous gap duration").arg(this->minGapDuration);s+=", ";
+	s+=tr("ISH:%1", "Abbreviation for interval start hour").arg(r.hoursOfTheDay[this->startHour]);s+=", ";
+	if(this->endHour<r.nHoursPerDay)
+		s+=tr("IEH:%1", "Abbreviation for interval end hour").arg(r.hoursOfTheDay[this->endHour]);
+	else
+		s+=tr("IEH:%1", "Abbreviation for interval end hour").arg(tr("End of the day"));
+	s+=", ";
+
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
+}
+
+QString ConstraintStudentsSetMinContinuousGapInInterval::getDetailedDescription(const Rules& r) const {
+	QString s=tr("Time constraint");s+="\n";
+	s+=tr("A students set has a minimum continuous gap in an hourly interval");s+="\n";
+	s+=tr("Weight (percentage)=%1%").arg(CustomFETString::number(this->weightPercentage));s+="\n";
+	s+=tr("Students set=%1").arg(this->students);s+="\n";
+	s+=tr("Min gap duration=%1").arg(this->minGapDuration);s+="\n";
+	s+=tr("Interval start hour=%1").arg(r.hoursOfTheDay[this->startHour]);s+="\n";
+
+	if(this->endHour<r.nHoursPerDay)
+		s+=tr("Interval end hour=%1").arg(r.hoursOfTheDay[this->endHour]);
+	else
+		s+=tr("Interval end hour=%1").arg(tr("End of the day"));
+	s+="\n";
+
+	if(!active){
+		s+=tr("Active=%1", "Refers to a constraint").arg(yesNoTranslated(active));
+		s+="\n";
+	}
+	if(!comments.isEmpty()){
+		s+=tr("Comments=%1").arg(comments);
+		s+="\n";
+	}
+
+	return s;
+}
+
+double ConstraintStudentsSetMinContinuousGapInInterval::fitness(Solution &c, const Rules &r, QList<double> &cl, QList<QString> &dl, QString *conflictsString)
+{
+	//if the matrix subgroupsMatrix is already calculated, do not calculate it again!
+	if(!c.subgroupsMatrixReady){
+		c.subgroupsMatrixReady=true;
+		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
+	}
+
+	double fitness = 0;
+
+	foreach (int sbg, iSubgroupsList) {
+		for (int d = 0; d < r.nDaysPerWeek; d++) {
+			int maxFoundGap = 0;
+			int gap = 0;
+			for (int h1 = startHour; h1 < endHour; h1++) {
+				if (subgroupsMatrix[sbg][d][h1] == 0) {
+					gap++;
+					if (gap > maxFoundGap)
+						maxFoundGap = gap;
+					if (gap >= minGapDuration)
+						break;
+				} else {
+					gap = 0;
+				}
+			}
+			if (gap >= minGapDuration) {
+				continue;
+			}
+			if (gap > maxFoundGap)
+				maxFoundGap = gap;
+			int increase = minGapDuration - maxFoundGap;
+			double weightIncrease = increase*weightPercentage/100;
+
+			QString s= tr("Time constraint students set min continuous gap in interval broken for students set: %1, on day %2, requires %3 hours, has only %4 hours.")
+					.arg(r.internalSubgroupsList[sbg]->name)
+					.arg(r.daysOfTheWeek[d])
+					.arg(this->minGapDuration)
+					.arg(maxFoundGap);
+			s+=" ";
+			s += tr("This increases the conflicts total by %1")
+					.arg(CustomFETString::number(increase*weightPercentage/100));
+
+			dl.append(s);
+			cl.append(weightIncrease);
+			fitness += weightIncrease;
+
+			if (conflictsString != NULL)
+				*conflictsString += s+"\n";
+		}
+	}
+	return fitness;
+}
+
+bool ConstraintStudentsSetMinContinuousGapInInterval::isRelatedToActivity(const Rules& r, const Activity* a) const
+{
+	Q_UNUSED(r);
+	Q_UNUSED(a);
+
+	return false;
+}
+
+bool ConstraintStudentsSetMinContinuousGapInInterval::isRelatedToTeacher(const Teacher* t) const
+{
+	Q_UNUSED(t);
+
+	return false;
+}
+
+bool ConstraintStudentsSetMinContinuousGapInInterval::isRelatedToSubject(const Subject* s) const
+{
+	Q_UNUSED(s);
+
+	return false;
+}
+
+bool ConstraintStudentsSetMinContinuousGapInInterval::isRelatedToActivityTag(const ActivityTag* s) const
+{
+	Q_UNUSED(s);
+
+	return false;
+}
+
+bool ConstraintStudentsSetMinContinuousGapInInterval::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
+{
+	return r.setsShareStudents(this->students, s->name);
+}
+
+bool ConstraintStudentsSetMinContinuousGapInInterval::hasWrongDayOrHour(const Rules& r) const
+{
+	if(this->startHour>=r.nHoursPerDay)
+		return true;
+	if(this->endHour>r.nHoursPerDay)
+		return true;
+	if(this->minGapDuration>r.nHoursPerDay)
+		return true;
+
+	return false;
+}
+
+bool ConstraintStudentsSetMinContinuousGapInInterval::canRepairWrongDayOrHour(const Rules& r) const
+{
+	assert(hasWrongDayOrHour(r));
+
+	if(this->startHour<r.nHoursPerDay && this->endHour<=r.nHoursPerDay)
+		return true;
+
+	return false;
+}
+
+bool ConstraintStudentsSetMinContinuousGapInInterval::repairWrongDayOrHour(Rules& r)
+{
+	assert(hasWrongDayOrHour(r));
+
+	assert(this->startHour<r.nHoursPerDay && this->endHour<=r.nHoursPerDay);
+
+	if(this->minGapDuration>r.nHoursPerDay)
+		this->minGapDuration=r.nHoursPerDay-1;
+
+	return true;
+}
+
+//////////////
+
+ConstraintStudentsMinContinuousGapInInterval::ConstraintStudentsMinContinuousGapInInterval()
+	: TimeConstraint(CONSTRAINT_STUDENTS_MIN_CONTINUOUS_GAP_IN_INTERVAL),
+	  minGapDuration(1), startHour(0), endHour(0)
+{
+}
+
+ConstraintStudentsMinContinuousGapInInterval::ConstraintStudentsMinContinuousGapInInterval(double wp, int minGapDuration, int startHour, int endHour)
+	: TimeConstraint(CONSTRAINT_STUDENTS_MIN_CONTINUOUS_GAP_IN_INTERVAL, wp),
+	  minGapDuration(minGapDuration), startHour(startHour), endHour(endHour)
+{
+	assert(startHour < endHour);
+	assert(startHour >= 0);
+}
+
+QString ConstraintStudentsMinContinuousGapInInterval::getXmlDescription(const Rules &r) const
+{
+	QString s="<ConstraintStudentsMinContinuousGapInInterval>\n";
+	s+="	<Weight_Percentage>"+CustomFETString::number(this->weightPercentage)+"</Weight_Percentage>\n";
+	s+="	<Minimum_Gap_Duration>"+CustomFETString::number(this->minGapDuration)+"</Minimum_Gap_Duration>\n";
+	s+="	<Interval_Start_Hour>"+protect(r.hoursOfTheDay[this->startHour])+"</Interval_Start_Hour>\n";
+	if(this->endHour < r.nHoursPerDay){
+		s+="	<Interval_End_Hour>"+protect(r.hoursOfTheDay[this->endHour])+"</Interval_End_Hour>\n";
+	}
+	else{
+		s+="	<Interval_End_Hour></Interval_End_Hour>\n";
+		s+="	<!-- Interval_End_Hour void means the end of the day (which has no name) -->\n";
+	}
+	s+="	<Active>"+trueFalse(active)+"</Active>\n";
+	s+="	<Comments>"+protect(comments)+"</Comments>\n";
+	s+="</ConstraintStudentsMinContinuousGapInInterval>\n";
+	return s;
+}
+
+bool ConstraintStudentsMinContinuousGapInInterval::computeInternalStructure(QWidget* parent, const Rules& r)
+{
+	if (weightPercentage < 0) {
+		TimeConstraintIrreconcilableMessage::warning(parent, tr("FET warning"),
+		 tr("Constraint students min continuous gap in interval is wrong because weight < 0%."
+		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
+
+		return false;
+	}
+	if (weightPercentage > 100) {
+		TimeConstraintIrreconcilableMessage::warning(parent, tr("FET warning"),
+		 tr("Constraint students min continuous gap in interval is wrong because weight > 100%."
+		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
+
+		return false;
+	}
+	if (startHour >= endHour){
+		TimeConstraintIrreconcilableMessage::warning(parent, tr("FET warning"),
+		 tr("Constraint students min continuous gap in interval is wrong because start hour >= end hour."
+		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
+
+		return false;
+	}
+	if (startHour < 0){
+		TimeConstraintIrreconcilableMessage::warning(parent, tr("FET warning"),
+		 tr("Constraint students min continuous gap in interval is wrong because start hour < first hour of the day."
+		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
+
+		return false;
+	}
+	if (endHour > r.nHoursPerDay){
+		TimeConstraintIrreconcilableMessage::warning(parent, tr("FET warning"),
+		 tr("Constraint students min continuous gap in interval is wrong because end hour > number of hours per day."
+		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
+
+		return false;
+	}
+	if (minGapDuration < 0){
+		TimeConstraintIrreconcilableMessage::warning(parent, tr("FET warning"),
+		 tr("Constraint students min continuous gap in interval is wrong because gap duration < 0."
+		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
+
+		return false;
+	}
+	if (minGapDuration > endHour-startHour){
+		TimeConstraintIrreconcilableMessage::warning(parent, tr("FET warning"),
+		 tr("Constraint students min continuous gap in interval is wrong because minimum gap duration > interval."
+		 " Please correct it. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
+
+		return false;
+	}
+	return true;
+}
+
+bool ConstraintStudentsMinContinuousGapInInterval::hasInactiveActivities(const Rules &r) const
+{
+	Q_UNUSED(r);
+	return false;
+}
+
+QString ConstraintStudentsMinContinuousGapInInterval::getDescription(const Rules &r) const
+{
+	QString s;
+	if(!active)
+		s="X - ";
+
+	s+=tr("Students min continuous gap in interval");s+=", ";
+	s+=tr("WP:%1%", "Abbreviation for weight percentage").arg(CustomFETString::number(this->weightPercentage));s+=", ";
+	s+=tr("G:%1", "Abbreviation for minimum continuous gap duration").arg(this->minGapDuration);s+=", ";
+	s+=tr("ISH:%1", "Abbreviation for interval start hour").arg(r.hoursOfTheDay[this->startHour]);s+=", ";
+	if(this->endHour<r.nHoursPerDay)
+		s+=tr("IEH:%1", "Abbreviation for interval end hour").arg(r.hoursOfTheDay[this->endHour]);
+	else
+		s+=tr("IEH:%1", "Abbreviation for interval end hour").arg(tr("End of the day"));
+	s+=", ";
+
+	if(!comments.isEmpty())
+		s+=", "+tr("C: %1", "Comments").arg(comments);
+
+	return s;
+}
+
+QString ConstraintStudentsMinContinuousGapInInterval::getDetailedDescription(const Rules& r) const {
+	QString s=tr("Time constraint");s+="\n";
+	s+=tr("All students have a minimum continuous gap in an hourly interval");s+="\n";
+	s+=tr("Weight (percentage)=%1%").arg(CustomFETString::number(this->weightPercentage));s+="\n";
+	s+=tr("Min gap duration=%1").arg(this->minGapDuration);s+="\n";
+	s+=tr("Interval start hour=%1").arg(r.hoursOfTheDay[this->startHour]);s+="\n";
+
+	if(this->endHour<r.nHoursPerDay)
+		s+=tr("Interval end hour=%1").arg(r.hoursOfTheDay[this->endHour]);
+	else
+		s+=tr("Interval end hour=%1").arg(tr("End of the day"));
+	s+="\n";
+
+	if(!active){
+		s+=tr("Active=%1", "Refers to a constraint").arg(yesNoTranslated(active));
+		s+="\n";
+	}
+	if(!comments.isEmpty()){
+		s+=tr("Comments=%1").arg(comments);
+		s+="\n";
+	}
+
+	return s;
+}
+
+double ConstraintStudentsMinContinuousGapInInterval::fitness(Solution &c, const Rules &r, QList<double> &cl, QList<QString> &dl, QString *conflictsString)
+{
+	//if the matrix subgroupsMatrix is already calculated, do not calculate it again!
+	if(!c.subgroupsMatrixReady){
+		c.subgroupsMatrixReady=true;
+		subgroups_conflicts = c.getSubgroupsMatrix(r, subgroupsMatrix);
+	}
+
+	int nbroken = 0;
+
+	for(int sbg=0; sbg<r.nInternalSubgroups; sbg++){
+		for (int d = 0; d < r.nDaysPerWeek; d++) {
+			int maxFoundGap = 0;
+			int gap = 0;
+			for (int h1 = startHour; h1 < endHour; h1++) {
+				if (subgroupsMatrix[sbg][d][h1] == 0) {
+					gap++;
+					if (gap > maxFoundGap)
+						maxFoundGap = gap;
+					if (gap >= minGapDuration)
+						break;
+				} else {
+					gap = 0;
+				}
+			}
+			if (gap >= minGapDuration) {
+				continue;
+			}
+			if (gap > maxFoundGap)
+				maxFoundGap = gap;
+			int increase = minGapDuration - maxFoundGap;
+			nbroken += increase;
+
+			QString s= tr("Time constraint students min continuous gap in interval broken for students set: %1, on day %2, requires %3 hours, has only %4 hours.")
+					.arg(r.internalSubgroupsList[sbg]->name)
+					.arg(r.daysOfTheWeek[d])
+					.arg(this->minGapDuration)
+					.arg(maxFoundGap);
+			s+=" ";
+			s += tr("This increases the conflicts total by %1")
+			 .arg(CustomFETString::number(increase*weightPercentage/100));
+
+			dl.append(s);
+			cl.append(increase*weightPercentage/100);
+
+			if (conflictsString != NULL)
+				*conflictsString += s+"\n";
+		}
+	}
+
+	return weightPercentage/100 * nbroken;
+}
+
+bool ConstraintStudentsMinContinuousGapInInterval::isRelatedToActivity(const Rules& r, const Activity* a) const
+{
+	Q_UNUSED(r);
+	Q_UNUSED(a);
+
+	return false;
+}
+
+bool ConstraintStudentsMinContinuousGapInInterval::isRelatedToTeacher(const Teacher* t) const
+{
+	Q_UNUSED(t);
+
+	return false;
+}
+
+bool ConstraintStudentsMinContinuousGapInInterval::isRelatedToSubject(const Subject* s) const
+{
+	Q_UNUSED(s);
+
+	return false;
+}
+
+bool ConstraintStudentsMinContinuousGapInInterval::isRelatedToActivityTag(const ActivityTag* s) const
+{
+	Q_UNUSED(s);
+
+	return false;
+}
+
+bool ConstraintStudentsMinContinuousGapInInterval::isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const
+{
+	Q_UNUSED(r);
+	Q_UNUSED(s);
+
+	return true;
+}
+
+bool ConstraintStudentsMinContinuousGapInInterval::hasWrongDayOrHour(const Rules& r) const
+{
+	if(this->startHour>=r.nHoursPerDay)
+		return true;
+	if(this->endHour>r.nHoursPerDay)
+		return true;
+	if(this->minGapDuration>r.nHoursPerDay)
+		return true;
+
+	return false;
+}
+
+bool ConstraintStudentsMinContinuousGapInInterval::canRepairWrongDayOrHour(const Rules& r) const
+{
+	assert(hasWrongDayOrHour(r));
+
+	if(this->startHour<r.nHoursPerDay && this->endHour<=r.nHoursPerDay)
+		return true;
+
+	return false;
+}
+
+bool ConstraintStudentsMinContinuousGapInInterval::repairWrongDayOrHour(Rules& r)
+{
+	assert(hasWrongDayOrHour(r));
+
+	assert(this->startHour<r.nHoursPerDay && this->endHour<=r.nHoursPerDay);
+
+	if(this->minGapDuration>r.nHoursPerDay)
+		this->minGapDuration=r.nHoursPerDay-1;
+
+	return true;
+}

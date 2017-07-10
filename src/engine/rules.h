@@ -861,6 +861,8 @@ private:
 
 	TimeConstraint* readTeacherMinContinuousGapInInterval(QXmlStreamReader& xml, XmlLog& log);
 	TimeConstraint* readTeachersMinContinuousGapInInterval(QXmlStreamReader& xml, XmlLog& log);
+	TimeConstraint* readStudentsSetMinContinuousGapInInterval(QXmlStreamReader& xml, XmlLog& log);
+	TimeConstraint* readStudentsMinContinuousGapInInterval(QXmlStreamReader& xml, XmlLog& log);
 
 	SpaceConstraint* readBasicCompulsorySpace(QXmlStreamReader& xml, XmlLog &log);
 	SpaceConstraint* readRoomNotAvailable(QXmlStreamReader& xml, XmlLog &log);

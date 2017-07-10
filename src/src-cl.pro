@@ -23,6 +23,7 @@ SOURCES += \
 	engine/constraints/maxdaysbetweenactivities.cpp \
 	engine/constraints/mingapsbetweenactivities.cpp \
 	engine/constraints/teachersmincontinuousgapininterval.cpp \
+	engine/constraints/studentsmincontinuousgapininterval.cpp \
 	\
 	interface/fet.cpp \
 	interface/longtextmessagebox.cpp
@@ -53,6 +54,7 @@ HEADERS += \
 	engine/constraints/maxdaysbetweenactivities.h \
 	engine/constraints/mingapsbetweenactivities.h \
 	engine/constraints/teachersmincontinuousgapininterval.h \
+	engine/constraints/studentsmincontinuousgapininterval.h \
 	\
 	interface/fet.h \
 	interface/longtextmessagebox.h

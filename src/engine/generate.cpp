@@ -1519,6 +1519,77 @@ inline bool Generate::subgroupRemoveAnActivityFromBeginOrEndCertainDay(int sbg, 
 		return false;
 }
 
+inline bool Generate::subgroupRemoveAnActivityFromIntervalCertainDay(int sbg, int d2, const int h0, const int h1, int level, int ai, QList<int>& conflActivities, int& nConflActivities, int& removedActivity) //returns true if successful, false if impossible
+{
+	Q_UNUSED(sbg);
+
+	//remove an activity from anywhere
+	QList<int> acts;
+	//for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++){
+		if(sbgDayNHours[d2]>0){
+			int actIndex=-1;
+			int h2;
+			for(h2=h0; h2<h1; h2++)
+				if(sbgTimetable(d2,h2)>=0){
+					actIndex=sbgTimetable(d2,h2);
+
+					if(fixedTimeActivity[actIndex] || swappedActivities[actIndex] || actIndex==ai || acts.contains(actIndex))
+						actIndex=-1;
+
+					if(actIndex>=0){
+						assert(!acts.contains(actIndex));
+						acts.append(actIndex);
+					}
+				}
+		}
+	//}
+
+	if(acts.count()>0){
+		int t;
+
+		if(level==0){
+			int optMinWrong=INF;
+
+			QList<int> tl;
+
+			for(int q=0; q<acts.count(); q++){
+				int ai2=acts.at(q);
+				if(optMinWrong>triedRemovals(ai2,c.times[ai2])){
+					optMinWrong=triedRemovals(ai2,c.times[ai2]);
+				}
+			}
+
+			for(int q=0; q<acts.count(); q++){
+				int ai2=acts.at(q);
+				if(optMinWrong==triedRemovals(ai2,c.times[ai2]))
+					tl.append(q);
+			}
+
+			assert(tl.size()>=1);
+			int mpos=tl.at(RandomKnuth::pick(tl.size()));
+
+			assert(mpos>=0 && mpos<acts.count());
+			t=mpos;
+		}
+		else{
+			t=RandomKnuth::pick(acts.count());
+		}
+
+		int ai2=acts.at(t);
+
+		removedActivity=ai2;
+
+		assert(!conflActivities.contains(ai2));
+		conflActivities.append(ai2);
+		nConflActivities++;
+		assert(nConflActivities==conflActivities.count());
+
+		return true;
+	}
+	else
+		return false;
+}
+
 inline bool Generate::subgroupRemoveAnActivityFromAnywhereCertainDayCertainActivityTag(int sbg, int d2, int actTag, int level, int ai, QList<int>& conflActivities, int& nConflActivities, int& removedActivity) //returns true if successful, false if impossible
 {
 	Q_UNUSED(sbg);
@@ -3548,6 +3619,7 @@ again_if_impossible_activity:
 		bool okstudentsminrestinghours;
 
 		bool okstudentsearlymaxbeginningsatsecondhour;
+		bool okstudentsmincontinuousgapininterval;
 		bool okstudentsmaxgapsperweek;
 		bool okstudentsmaxgapsperday;
 		bool okstudentsmaxhoursdaily;
@@ -5837,6 +5909,89 @@ impossiblestudentsearlymaxbeginningsatsecondhour:
 		}
 
 		////////////////////////////END students early max beginnings at second hour
+
+		////////////////////////////BEGIN students min continuous gap in interval
+
+		okstudentsmincontinuousgapininterval = true;
+		foreach(int sbg, act->iSubgroupsList) {
+			for (int iv = 0; iv < MinContinuousGapInIntervalForStudents::MAX; iv++) {
+				if (minContinuousGapInIntervalForStudentsList.data[sbg][iv].weightPercentage < 0)
+					break;
+				if(skipRandom(minContinuousGapInIntervalForStudentsList.data[sbg][iv].weightPercentage))
+					continue;
+				const int startHour = minContinuousGapInIntervalForStudentsList.data[sbg][iv].startHour;
+				const int endHour = minContinuousGapInIntervalForStudentsList.data[sbg][iv].endHour;
+				const int minRequiredGap = minContinuousGapInIntervalForStudentsList.data[sbg][iv].minGapDuration;
+				if (h+act->duration < startHour || h >= endHour )
+					continue;
+
+				int _gap = 0;
+				for (int h1 = startHour; h1 < endHour; h1++) {
+					if (newSubgroupsTimetable[sbg][d][h1] < 0) {
+						_gap++;
+						if (_gap >= minRequiredGap)
+							break;
+					} else {
+						_gap = 0;
+					}
+				}
+				if (_gap >= minRequiredGap) {
+					continue;
+				}
+
+				if(level>=LEVEL_STOP_CONFLICTS_CALCULATION){
+					okstudentsmincontinuousgapininterval=false;
+					goto impossiblestudentsmincontinuousgapininterval;
+				}
+
+				getSbgTimetable(sbg, conflActivities[newtime]);
+				updateSbgNHoursGaps(sbg, d); //needed for subgroupRemoveAnActivityFromIntervalCertainDay below
+
+				for(;;){
+					int continuousGap = 0;
+					for (int h1 = startHour; h1 < endHour; h1++) {
+						if (sbgTimetable(d, h1) < 0) {
+							continuousGap++;
+							if (continuousGap >= minRequiredGap)
+								break;
+						} else {
+							continuousGap = 0;
+						}
+					}
+					if (continuousGap >= minRequiredGap) {
+						break;
+					}
+
+					int ai2=-1;
+
+					bool k=subgroupRemoveAnActivityFromIntervalCertainDay(sbg, d, startHour, endHour, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+					assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+					if(!k){
+						okstudentsmincontinuousgapininterval=false;
+						goto impossiblestudentsmincontinuousgapininterval;
+					}
+
+					assert(ai2>=0);
+
+					removeAi2FromSbgTimetable(ai2);
+					sbgDayNHours[d]-=gt.rules.internalActivitiesList[ai2].duration; //needed for subgroupRemoveAnActivityFromIntervalCertainDay above
+					assert(sbgDayNHours[d]>=0);
+				}
+			}
+		}
+
+impossiblestudentsmincontinuousgapininterval:
+		if(!okstudentsmincontinuousgapininterval){
+			if(updateSubgroups || updateTeachers)
+				removeAiFromNewTimetable(ai, act, d, h);
+			//removeConflActivities(conflActivities[newtime], nConflActivities[newtime], act, newtime);
+
+			nConflActivities[newtime]=MAX_ACTIVITIES;
+			continue;
+		}
+
+		////////////////////////////END teachers min continuous gap in interval
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 

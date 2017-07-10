@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2017-04-21T11:11:21
+# Project created by QtCreator 2017-07-09T19:39:50
 #
 #-------------------------------------------------
 
@@ -8,7 +8,7 @@ QT       += testlib
 
 QT       -= gui
 
-TARGET = tst_constraintteachersmincontinuousgapinintervaltest
+TARGET = tst_constraintstudentsmincontinuousgapinintervaltest
 CONFIG   += console testcase
 CONFIG   -= app_bundle
 
@@ -26,7 +26,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 
-SOURCES += tst_constraintteachersmincontinuousgapinintervaltest.cpp \
+SOURCES += tst_constraintstudentsmincontinuousgapinintervaltest.cpp \
     ../../../../src/engine/activity.cpp \
     ../../../../src/engine/activitytag.cpp \
     ../../../../src/engine/building.cpp \
