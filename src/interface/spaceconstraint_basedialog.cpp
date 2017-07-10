@@ -50,3 +50,16 @@ QString SpaceConstraintBaseDialog::getConstraintDetailedDescription(const void *
 {
 	return static_cast<const SpaceConstraint *>(ctr)->getDetailedDescription(gt.rules);
 }
+
+bool SpaceConstraintBaseDialog::isConstraintActive(const void *ctr) const
+{
+	return static_cast<const SpaceConstraint *>(ctr)->active;
+}
+
+void SpaceConstraintBaseDialog::toggleActiveConstraint(void *ctr, bool checked) const
+{
+	SpaceConstraint *tctr = static_cast<SpaceConstraint *>(ctr);
+	tctr->active = checked;
+	gt.rules.internalStructureComputed = false;
+	gt.rules.setModified(true);
+}

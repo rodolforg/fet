@@ -50,3 +50,16 @@ QString TimeConstraintBaseDialog::getConstraintDetailedDescription(const void *c
 {
 	return static_cast<const TimeConstraint *>(ctr)->getDetailedDescription(gt.rules);
 }
+
+bool TimeConstraintBaseDialog::isConstraintActive(const void *ctr) const
+{
+	return static_cast<const TimeConstraint *>(ctr)->active;
+}
+
+void TimeConstraintBaseDialog::toggleActiveConstraint(void *ctr, bool checked) const
+{
+	TimeConstraint *tctr = static_cast<TimeConstraint *>(ctr);
+	tctr->active = checked;
+	gt.rules.internalStructureComputed = false;
+	gt.rules.setModified(true);
+}
