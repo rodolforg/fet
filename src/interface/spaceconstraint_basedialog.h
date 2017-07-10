@@ -45,6 +45,8 @@ private:
 
 	virtual QString getConstraintDetailedDescription(const void* ctr) const;
 
+	virtual void editComments(void *ctr);
+
 	virtual bool isConstraintActive(const void *ctr) const;
 	virtual void toggleActiveConstraint(void *ctr, bool checked) const;
 };

@@ -67,6 +67,13 @@
            </property>
           </widget>
          </item>
+         <item>
+          <widget class="QPushButton" name="commentsPushButton">
+           <property name="text">
+            <string>Comm&amp;ents</string>
+           </property>
+          </widget>
+         </item>
         </layout>
        </item>
       </layout>
