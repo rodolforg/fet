@@ -46,11 +46,17 @@ ConstraintBaseDialog::ConstraintBaseDialog(QWidget* parent): QDialog(parent),
 	connect(closePushButton, SIGNAL(clicked()), this, SLOT(close()));
 	connect(removeConstraintPushButton, SIGNAL(clicked()), this, SLOT(removeConstraint()));
 	connect(modifyConstraintPushButton, SIGNAL(clicked()), this, SLOT(modifyConstraint()));
+	connect(commentsPushButton, SIGNAL(clicked()), this, SLOT(editComments()));
+	connect(activeCheckBox, SIGNAL(clicked(bool)), this, SLOT(toggleActiveConstraint(bool)));
 	connect(constraintsListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(modifyConstraint()));
 	connect(helpPushButton, SIGNAL(clicked()), this, SLOT(help()));
 
 	centerWidgetOnScreen(this);
 
+	modifyConstraintPushButton->setEnabled(false);
+	removeConstraintPushButton->setEnabled(false);
+	commentsPushButton->setEnabled(false);
+	activeCheckBox->setEnabled(false);
 //	populateFilters();
 //	filterChanged();
 }
@@ -88,12 +94,22 @@ void ConstraintBaseDialog::constraintChanged(int index)
 {
 	if(index<0){
 		currentConstraintTextEdit->setPlainText("");
+		modifyConstraintPushButton->setEnabled(false);
+		removeConstraintPushButton->setEnabled(false);
+		commentsPushButton->setEnabled(false);
+		activeCheckBox->setEnabled(false);
+		activeCheckBox->setChecked(false);
 		return;
 	}
 
 	assert(index<this->visibleConstraintsList.size());
 	QString s=getConstraintDetailedDescription(visibleConstraintsList.at(index));
 	currentConstraintTextEdit->setPlainText(s);
+	modifyConstraintPushButton->setEnabled(true);
+	removeConstraintPushButton->setEnabled(true);
+	commentsPushButton->setEnabled(true);
+	activeCheckBox->setEnabled(true);
+	activeCheckBox->setChecked(isConstraintActive(visibleConstraintsList.at(index)));
 }
 
 void ConstraintBaseDialog::addConstraint()
@@ -180,6 +196,36 @@ void ConstraintBaseDialog::removeConstraint()
 		constraintsListWidget->setCurrentRow(i);
 	else
 		this->constraintChanged(-1);
+}
+
+void ConstraintBaseDialog::editComments()
+{
+	int i=constraintsListWidget->currentRow();
+	if(i<0){
+		QMessageBox::information(this, tr("FET information"), tr("Invalid selected constraint"));
+		return;
+	}
+
+	void* ctr=this->visibleConstraintsList.at(i);
+	editComments(ctr);
+
+	filterChanged();
+	constraintsListWidget->setCurrentRow(i);
+}
+
+void ConstraintBaseDialog::toggleActiveConstraint(bool checked)
+{
+	int i=constraintsListWidget->currentRow();
+	if(i<0){
+		QMessageBox::information(this, tr("FET information"), tr("Invalid selected constraint"));
+		return;
+	}
+
+	void* ctr=this->visibleConstraintsList.at(i);
+	toggleActiveConstraint(ctr, checked);
+
+	filterChanged();
+	constraintsListWidget->setCurrentRow(i);
 }
 
 bool ConstraintBaseDialog::beforeRemoveConstraint()

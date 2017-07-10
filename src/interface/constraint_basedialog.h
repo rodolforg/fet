@@ -74,6 +74,14 @@ protected:
 
 	virtual QString getConstraintDetailedDescription(const void *ctr) const = 0;
 
+	/// Allows user to edit constraint comments
+	virtual void editComments(void *ctr) = 0;
+
+	/// Returns true if constraint is active
+	virtual bool isConstraintActive(const void *ctr) const = 0;
+	/// Returns true if constraint is active
+	virtual void toggleActiveConstraint(void *ctr, bool checked) const = 0;
+
 public:
 	ConstraintBaseDialog(QWidget* parent);
 	virtual ~ConstraintBaseDialog();
@@ -83,6 +91,8 @@ public slots:
 	void addConstraint();
 	void modifyConstraint();
 	void removeConstraint();
+	void editComments();
+	void toggleActiveConstraint(bool checked);
 	void help();
 
 private:

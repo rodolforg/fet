@@ -58,6 +58,24 @@
        <item>
         <widget class="QTextEdit" name="currentConstraintTextEdit"/>
        </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QCheckBox" name="activeCheckBox">
+           <property name="text">
+            <string>Acti&amp;ve</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="commentsPushButton">
+           <property name="text">
+            <string>Comm&amp;ents</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
       </layout>
      </item>
     </layout>
@@ -67,35 +85,35 @@
      <item>
       <widget class="QPushButton" name="addConstraintPushButton">
        <property name="text">
-        <string>Add</string>
+        <string>&amp;Add</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="modifyConstraintPushButton">
        <property name="text">
-        <string>Modify</string>
+        <string>&amp;Modify</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="removeConstraintPushButton">
        <property name="text">
-        <string>Remove</string>
+        <string>&amp;Remove</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="helpPushButton">
        <property name="text">
-        <string>Help</string>
+        <string>&amp;Help</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="closePushButton">
        <property name="text">
-        <string>Close</string>
+        <string>&amp;Close</string>
        </property>
       </widget>
      </item>

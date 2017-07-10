@@ -17,6 +17,8 @@
 
 #include "spaceconstraint_basedialog.h"
 
+#include "editcommentsform.h"
+
 #include "fet.h"
 
 SpaceConstraintBaseDialog::SpaceConstraintBaseDialog(QWidget *parent)
@@ -49,4 +51,34 @@ void SpaceConstraintBaseDialog::fillConstraintList(QList<void *> &list)
 QString SpaceConstraintBaseDialog::getConstraintDetailedDescription(const void *ctr) const
 {
 	return static_cast<const SpaceConstraint *>(ctr)->getDetailedDescription(gt.rules);
+}
+
+void SpaceConstraintBaseDialog::editComments(void *ctr)
+{
+	SpaceConstraint *tctr = static_cast<SpaceConstraint *>(ctr);
+	EditCommentsForm dialog("SpaceConstraintCommentsDialog", this, tr("Constraint comments"));
+	dialog.setComments(tctr->comments);
+
+	int t=dialog.exec();
+	if(t!=QDialog::Accepted)
+		return;
+
+	if (tctr->comments == dialog.getComments())
+		return;
+	tctr->comments=dialog.getComments();
+	gt.rules.internalStructureComputed=false;
+	gt.rules.setModified(true);
+}
+
+bool SpaceConstraintBaseDialog::isConstraintActive(const void *ctr) const
+{
+	return static_cast<const SpaceConstraint *>(ctr)->active;
+}
+
+void SpaceConstraintBaseDialog::toggleActiveConstraint(void *ctr, bool checked) const
+{
+	SpaceConstraint *tctr = static_cast<SpaceConstraint *>(ctr);
+	tctr->active = checked;
+	gt.rules.internalStructureComputed = false;
+	gt.rules.setModified(true);
 }

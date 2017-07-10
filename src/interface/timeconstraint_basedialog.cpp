@@ -17,6 +17,8 @@
 
 #include "timeconstraint_basedialog.h"
 
+#include "editcommentsform.h"
+
 #include "fet.h"
 
 TimeConstraintBaseDialog::TimeConstraintBaseDialog(QWidget *parent)
@@ -49,4 +51,34 @@ void TimeConstraintBaseDialog::fillConstraintList(QList<void *> &list)
 QString TimeConstraintBaseDialog::getConstraintDetailedDescription(const void *ctr) const
 {
 	return static_cast<const TimeConstraint *>(ctr)->getDetailedDescription(gt.rules);
+}
+
+void TimeConstraintBaseDialog::editComments(void *ctr)
+{
+	TimeConstraint *tctr = static_cast<TimeConstraint *>(ctr);
+	EditCommentsForm dialog("TimeConstraintCommentsDialog", this, tr("Constraint comments"));
+	dialog.setComments(tctr->comments);
+
+	int t=dialog.exec();
+	if(t!=QDialog::Accepted)
+		return;
+
+	if (tctr->comments == dialog.getComments())
+		return;
+	tctr->comments=dialog.getComments();
+	gt.rules.internalStructureComputed=false;
+	gt.rules.setModified(true);
+}
+
+bool TimeConstraintBaseDialog::isConstraintActive(const void *ctr) const
+{
+	return static_cast<const TimeConstraint *>(ctr)->active;
+}
+
+void TimeConstraintBaseDialog::toggleActiveConstraint(void *ctr, bool checked) const
+{
+	TimeConstraint *tctr = static_cast<TimeConstraint *>(ctr);
+	tctr->active = checked;
+	gt.rules.internalStructureComputed = false;
+	gt.rules.setModified(true);
 }
