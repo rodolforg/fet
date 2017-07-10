@@ -27,6 +27,7 @@ SOURCES += \
 	engine/constraints/maxdaysbetweenactivities.cpp \
 	engine/constraints/mingapsbetweenactivities.cpp \
 	engine/constraints/teachersmincontinuousgapininterval.cpp \
+	engine/constraints/studentsmincontinuousgapininterval.cpp \
 	\
 	interface/fet.cpp \
 	interface/helpaboutform.cpp \
@@ -479,6 +480,9 @@ SOURCES += \
     interface/addconstraintteachersmincontinuousgapinintervalform.cpp \
     interface/constraintteachersmincontinuousgapinintervalform.cpp \
     interface/constraintteachermincontinuousgapinintervalform.cpp \
+    interface/addconstraintstudentsmincontinuousgapinintervalform.cpp \
+    interface/constraintstudentssetmincontinuousgapinintervalform.cpp \
+    interface/constraintstudentsmincontinuousgapinintervalform.cpp \
     interface/editcommentsform.cpp
 
 HEADERS += \
@@ -511,6 +515,7 @@ HEADERS += \
 	engine/constraints/maxdaysbetweenactivities.h \
 	engine/constraints/mingapsbetweenactivities.h \
 	engine/constraints/teachersmincontinuousgapininterval.h \
+	engine/constraints/studentsmincontinuousgapininterval.h \
 	\
 	interface/fet.h \
 	interface/helpaboutform.h \
@@ -965,6 +970,9 @@ HEADERS += \
     interface/addconstraintteachersmincontinuousgapinintervalform.h \
     interface/constraintteachersmincontinuousgapinintervalform.h \
     interface/constraintteachermincontinuousgapinintervalform.h \
+    interface/addconstraintstudentsmincontinuousgapinintervalform.h \
+    interface/constraintstudentssetmincontinuousgapinintervalform.h \
+    interface/constraintstudentsmincontinuousgapinintervalform.h \
     interface/editcommentsform.h
 
 FORMS += \
@@ -1298,6 +1306,7 @@ FORMS += \
 	interface/constraint_basedialog_template.ui \
 	interface/teacherstudentsetsubjectactivitytag_filterwidget.ui \
     interface/addconstraintteachersmincontinuousgapinintervalform_template.ui \
+    interface/addconstraintstudentsmincontinuousgapinintervalform_template.ui \
     interface/editcommentsform_template.ui
 
 TRANSLATIONS += \

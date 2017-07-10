@@ -7,27 +7,22 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TEACHERSMINCONTINUOUSGAPININTERVAL_H
-#define TEACHERSMINCONTINUOUSGAPININTERVAL_H
+#ifndef CONSTRAINTSTUDENTSMINCONTINUOUSGAPININTERVALFORM_H
+#define CONSTRAINTSTUDENTSMINCONTINUOUSGAPININTERVALFORM_H
 
-#include <QList>
-#include "matrix.h"
-#include "constraints/constraintpre.h"
+#include "timeconstraint_basedialog.h"
 
-class MinContinuousGapInIntervalForTeachers : public ConstraintPre
+class ConstraintStudentsMinContinuousGapInIntervalForm : public TimeConstraintBaseDialog
 {
+	Q_OBJECT
 public:
-	static const int MAX = 3;
-	struct Data {
-		int minGapDuration;
-		int startHour;
-		int endHour;
-		double weightPercentage;
-	} data[MAX_TEACHERS][MAX];
+	ConstraintStudentsMinContinuousGapInIntervalForm(QWidget *parent);
+	virtual ~ConstraintStudentsMinContinuousGapInIntervalForm();
 
-	MinContinuousGapInIntervalForTeachers();
-
-	bool prepare(const Rules &rules);
+protected:
+	virtual QDialog *createAddDialog();
+	virtual QDialog *createModifyDialog(TimeConstraint *ctr);
+	bool filterOk(const TimeConstraint *ctr) const;
 };
 
-#endif // TEACHERSMINCONTINUOUSGAPININTERVAL_H
+#endif // CONSTRAINTSTUDENTSMINCONTINUOUSGAPININTERVALFORM_H

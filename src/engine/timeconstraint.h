@@ -139,6 +139,8 @@ const int CONSTRAINT_STUDENTS_MIN_RESTING_HOURS							=74;
 
 const int CONSTRAINT_TEACHER_MIN_CONTINUOUS_GAP_IN_INTERVAL             =75;
 const int CONSTRAINT_TEACHERS_MIN_CONTINUOUS_GAP_IN_INTERVAL            =76;
+const int CONSTRAINT_STUDENTSSET_MIN_CONTINUOUS_GAP_IN_INTERVAL         =77;
+const int CONSTRAINT_STUDENTS_MIN_CONTINUOUS_GAP_IN_INTERVAL            =78;
 
 QString getActivityDetailedDescription(const Rules &r, int id);
 
@@ -4197,6 +4199,92 @@ public:
 	ConstraintTeachersMinContinuousGapInInterval();
 
 	ConstraintTeachersMinContinuousGapInInterval(double wp, int minGapDuration, int startHour, int endHour);
+
+	QString getXmlDescription(const Rules& r) const ;
+
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
+
+	bool hasInactiveActivities(const Rules& r) const ;
+
+	QString getDescription(const Rules& r) const ;
+
+	QString getDetailedDescription(const Rules& r) const ;
+
+	double fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
+
+	bool isRelatedToActivity(const Rules& r, const Activity* a) const;
+
+	bool isRelatedToTeacher(const Teacher* t) const;
+
+	bool isRelatedToSubject(const Subject* s) const;
+
+	bool isRelatedToActivityTag(const ActivityTag* s) const;
+
+	bool isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const;
+
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
+	bool repairWrongDayOrHour(Rules& r);
+};
+
+class ConstraintStudentsSetMinContinuousGapInInterval: public TimeConstraint{
+	Q_DECLARE_TR_FUNCTIONS(ConstraintStudentsSetMinContinuousGapInInterval)
+
+public:
+	int minGapDuration;
+	int startHour;
+	int endHour;
+	/**
+	The name of the students set for this constraint
+	*/
+	QString students;
+	/**
+	The subgroups
+	*/
+	QList<int> iSubgroupsList;
+
+	ConstraintStudentsSetMinContinuousGapInInterval();
+
+	ConstraintStudentsSetMinContinuousGapInInterval(double wp, int minGapDuration, const QString& students, int startHour, int endHour);
+
+	QString getXmlDescription(const Rules& r) const ;
+
+	bool computeInternalStructure(QWidget* parent, const Rules& r);
+
+	bool hasInactiveActivities(const Rules& r) const ;
+
+	QString getDescription(const Rules& r) const ;
+
+	QString getDetailedDescription(const Rules& r) const ;
+
+	double fitness(Solution& c, const Rules& r, QList<double>& cl, QList<QString>& dl, QString* conflictsString=NULL);
+
+	bool isRelatedToActivity(const Rules& r, const Activity* a) const;
+
+	bool isRelatedToTeacher(const Teacher* t) const;
+
+	bool isRelatedToSubject(const Subject* s) const;
+
+	bool isRelatedToActivityTag(const ActivityTag* s) const;
+
+	bool isRelatedToStudentsSet(const Rules& r, const StudentsSet* s) const;
+
+	bool hasWrongDayOrHour(const Rules& r) const;
+	bool canRepairWrongDayOrHour(const Rules& r) const;
+	bool repairWrongDayOrHour(Rules& r);
+};
+
+class ConstraintStudentsMinContinuousGapInInterval: public TimeConstraint{
+	Q_DECLARE_TR_FUNCTIONS(ConstraintStudentsMinContinuousGapInInterval)
+
+public:
+	int minGapDuration;
+	int startHour;
+	int endHour;
+
+	ConstraintStudentsMinContinuousGapInInterval();
+
+	ConstraintStudentsMinContinuousGapInInterval(double wp, int minGapDuration, int startHour, int endHour);
 
 	QString getXmlDescription(const Rules& r) const ;
 

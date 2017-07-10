@@ -7,8 +7,8 @@
  *                                                                         *
  ***************************************************************************/
 
-#include "addconstraintteachersmincontinuousgapinintervalform.h"
-#include "ui_addconstraintteachersmincontinuousgapinintervalform_template.h"
+#include "addconstraintstudentsmincontinuousgapinintervalform.h"
+#include "ui_addconstraintstudentsmincontinuousgapinintervalform_template.h"
 
 #include "fet.h"
 #include "timeconstraint.h"
@@ -16,9 +16,9 @@
 #include <QMessageBox>
 #include "longtextmessagebox.h"
 
-AddConstraintTeachersMinContinuousGapInIntervalForm::AddConstraintTeachersMinContinuousGapInIntervalForm(QWidget *parent, bool forAllTeachers) :
+AddConstraintStudentsMinContinuousGapInIntervalForm::AddConstraintStudentsMinContinuousGapInIntervalForm(QWidget *parent, bool forAllStudents) :
 	QDialog(parent),
-	ui(new Ui::AddConstraintTeachersMinContinuousGapInIntervalForm),
+	ui(new Ui::AddConstraintStudentsMinContinuousGapInIntervalForm),
 	ctr(NULL)
 {
 	Rules &rules = gt.rules;
@@ -27,15 +27,15 @@ AddConstraintTeachersMinContinuousGapInIntervalForm::AddConstraintTeachersMinCon
 	ui->startHourComboBox->setCurrentIndex(0);
 	ui->endHourComboBox->setCurrentIndex(rules.nHoursPerDay);
 
-	if (forAllTeachers) {
-		ui->teacherComboBox->clear();
-		ui->teacherVerticalWidget->hide();
+	if (forAllStudents) {
+		ui->studentsComboBox->clear();
+		ui->studentsVerticalWidget->hide();
 	}
 }
 
-AddConstraintTeachersMinContinuousGapInIntervalForm::AddConstraintTeachersMinContinuousGapInIntervalForm(QWidget *parent, ConstraintTeachersMinContinuousGapInInterval *c) :
+AddConstraintStudentsMinContinuousGapInIntervalForm::AddConstraintStudentsMinContinuousGapInIntervalForm(QWidget *parent, ConstraintStudentsMinContinuousGapInInterval *c) :
 	QDialog(parent),
-	ui(new Ui::AddConstraintTeachersMinContinuousGapInIntervalForm),
+	ui(new Ui::AddConstraintStudentsMinContinuousGapInIntervalForm),
 	ctr(c)
 {
 	assert(c != NULL);
@@ -44,20 +44,20 @@ AddConstraintTeachersMinContinuousGapInIntervalForm::AddConstraintTeachersMinCon
 	fillCommomUiData(rules);
 
 	//: This is the title of the dialog to add a new constraint of this type
-	setWindowTitle("Modify teachers min continuous gap in interval");
+	setWindowTitle("Modify students min continuous gap in interval");
 	ui->okPushButton->setText(tr("Ok"));
 	ui->closePushButton->setText(tr("Cancel"));
 
 	ui->startHourComboBox->setCurrentIndex(c->startHour);
 	ui->endHourComboBox->setCurrentIndex(c->endHour);
 	ui->minContinuousGapSpinBox->setValue(c->minGapDuration);
-	ui->teacherComboBox->clear();
-	ui->teacherVerticalWidget->hide();
+	ui->studentsComboBox->clear();
+	ui->studentsVerticalWidget->hide();
 }
 
-AddConstraintTeachersMinContinuousGapInIntervalForm::AddConstraintTeachersMinContinuousGapInIntervalForm(QWidget *parent, ConstraintTeacherMinContinuousGapInInterval *c) :
+AddConstraintStudentsMinContinuousGapInIntervalForm::AddConstraintStudentsMinContinuousGapInIntervalForm(QWidget *parent, ConstraintStudentsSetMinContinuousGapInInterval *c) :
 	QDialog(parent),
-	ui(new Ui::AddConstraintTeachersMinContinuousGapInIntervalForm),
+	ui(new Ui::AddConstraintStudentsMinContinuousGapInIntervalForm),
 	ctr(c)
 {
 	assert(c != NULL);
@@ -73,16 +73,16 @@ AddConstraintTeachersMinContinuousGapInIntervalForm::AddConstraintTeachersMinCon
 	ui->startHourComboBox->setCurrentIndex(c->startHour);
 	ui->endHourComboBox->setCurrentIndex(c->endHour);
 	ui->minContinuousGapSpinBox->setValue(c->minGapDuration);
-	ui->teacherComboBox->setCurrentText(c->teacherName);
+	ui->studentsComboBox->setCurrentText(c->students);
 }
 
-AddConstraintTeachersMinContinuousGapInIntervalForm::~AddConstraintTeachersMinContinuousGapInIntervalForm()
+AddConstraintStudentsMinContinuousGapInIntervalForm::~AddConstraintStudentsMinContinuousGapInIntervalForm()
 {
 	saveFETDialogGeometry(this);
 	delete ui;
 }
 
-void AddConstraintTeachersMinContinuousGapInIntervalForm::fillCommomUiData(Rules &rules)
+void AddConstraintStudentsMinContinuousGapInIntervalForm::fillCommomUiData(Rules &rules)
 {
 	ui->setupUi(this);
 
@@ -107,11 +107,22 @@ void AddConstraintTeachersMinContinuousGapInIntervalForm::fillCommomUiData(Rules
 	connect(ui->startHourComboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(hourIntervalChanged()));
 	connect(ui->endHourComboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(hourIntervalChanged()));
 
-	foreach (Teacher *tch, rules.teachersList)
-		ui->teacherComboBox->addItem(tch->name);
+	ui->studentsComboBox->clear();
+	for(int i=0; i<gt.rules.yearsList.size(); i++){
+		StudentsYear* sty=gt.rules.yearsList[i];
+		ui->studentsComboBox->addItem(sty->name);
+		for(int j=0; j<sty->groupsList.size(); j++){
+			StudentsGroup* stg=sty->groupsList[j];
+			ui->studentsComboBox->addItem(stg->name);
+			if(SHOW_SUBGROUPS_IN_COMBO_BOXES) for(int k=0; k<stg->subgroupsList.size(); k++){
+				StudentsSubgroup* sts=stg->subgroupsList[k];
+				ui->studentsComboBox->addItem(sts->name);
+			}
+		}
+	}
 }
 
-void AddConstraintTeachersMinContinuousGapInIntervalForm::handleConstraint()
+void AddConstraintStudentsMinContinuousGapInIntervalForm::handleConstraint()
 {
 	Rules &rules = gt.rules;
 
@@ -130,12 +141,12 @@ void AddConstraintTeachersMinContinuousGapInIntervalForm::handleConstraint()
 
 	int min_gap = ui->minContinuousGapSpinBox->value();
 
-	QString teacher_name = ui->teacherComboBox->currentText();
-	if (!teacher_name.isEmpty()) {
-		int teacher_ID = gt.rules.searchTeacher(teacher_name);
-		if(teacher_ID<0){
+	QString students = ui->studentsComboBox->currentText();
+	if (!students.isEmpty()) {
+		StudentsSet * ss = gt.rules.searchStudentsSet(students);
+		if(ss == NULL){
 			QMessageBox::warning(this, tr("FET information"),
-				tr("Invalid teacher"));
+				tr("Invalid students set"));
 			return;
 		}
 	}
@@ -160,10 +171,10 @@ void AddConstraintTeachersMinContinuousGapInIntervalForm::handleConstraint()
 
 	if (ctr == NULL) {
 		TimeConstraint *c;
-		if (teacher_name.isEmpty())
-			c = new ConstraintTeachersMinContinuousGapInInterval(weight, min_gap, startHour, endHour);
+		if (students.isEmpty())
+			c = new ConstraintStudentsMinContinuousGapInInterval(weight, min_gap, startHour, endHour);
 		else
-			c = new ConstraintTeacherMinContinuousGapInInterval(weight, min_gap, teacher_name, startHour, endHour);
+			c = new ConstraintStudentsSetMinContinuousGapInInterval(weight, min_gap, students, startHour, endHour);
 
 		bool ok = rules.addTimeConstraint(c);
 		if(ok)
@@ -175,16 +186,16 @@ void AddConstraintTeachersMinContinuousGapInIntervalForm::handleConstraint()
 			delete c;
 		}
 	} else {
-		if (ctr->type == CONSTRAINT_TEACHER_MIN_CONTINUOUS_GAP_IN_INTERVAL) {
-			ConstraintTeacherMinContinuousGapInInterval *c = (ConstraintTeacherMinContinuousGapInInterval*)ctr;
+		if (ctr->type == CONSTRAINT_STUDENTSSET_MIN_CONTINUOUS_GAP_IN_INTERVAL) {
+			ConstraintStudentsSetMinContinuousGapInInterval *c = (ConstraintStudentsSetMinContinuousGapInInterval*)ctr;
 			c->weightPercentage = weight;
 			c->minGapDuration = min_gap;
 			c->startHour = startHour;
 			c->endHour = endHour;
-			c->teacherName = teacher_name;
+			c->students = students;
 		} else {
-			assert(ctr->type == CONSTRAINT_TEACHERS_MIN_CONTINUOUS_GAP_IN_INTERVAL);
-			ConstraintTeachersMinContinuousGapInInterval *c = (ConstraintTeachersMinContinuousGapInInterval*)ctr;
+			assert(ctr->type == CONSTRAINT_STUDENTS_MIN_CONTINUOUS_GAP_IN_INTERVAL);
+			ConstraintStudentsMinContinuousGapInInterval *c = (ConstraintStudentsMinContinuousGapInInterval*)ctr;
 			c->weightPercentage = weight;
 			c->minGapDuration = min_gap;
 			c->startHour = startHour;
@@ -198,7 +209,7 @@ void AddConstraintTeachersMinContinuousGapInIntervalForm::handleConstraint()
 	}
 }
 
-void AddConstraintTeachersMinContinuousGapInIntervalForm::hourIntervalChanged()
+void AddConstraintStudentsMinContinuousGapInIntervalForm::hourIntervalChanged()
 {
 	int start = ui->startHourComboBox->currentIndex();
 	int end = ui->endHourComboBox->currentIndex();

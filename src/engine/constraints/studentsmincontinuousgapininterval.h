@@ -7,14 +7,14 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TEACHERSMINCONTINUOUSGAPININTERVAL_H
-#define TEACHERSMINCONTINUOUSGAPININTERVAL_H
+#ifndef STUDENTSMINCONTINUOUSGAPININTERVAL_H
+#define STUDENTSMINCONTINUOUSGAPININTERVAL_H
 
 #include <QList>
 #include "matrix.h"
 #include "constraints/constraintpre.h"
 
-class MinContinuousGapInIntervalForTeachers : public ConstraintPre
+class MinContinuousGapInIntervalForStudents : public ConstraintPre
 {
 public:
 	static const int MAX = 3;
@@ -23,11 +23,11 @@ public:
 		int startHour;
 		int endHour;
 		double weightPercentage;
-	} data[MAX_TEACHERS][MAX];
+	} data[MAX_TOTAL_SUBGROUPS][MAX];
 
-	MinContinuousGapInIntervalForTeachers();
+	MinContinuousGapInIntervalForStudents();
 
 	bool prepare(const Rules &rules);
 };
 
-#endif // TEACHERSMINCONTINUOUSGAPININTERVAL_H
+#endif // STUDENTSMINCONTINUOUSGAPININTERVAL_H

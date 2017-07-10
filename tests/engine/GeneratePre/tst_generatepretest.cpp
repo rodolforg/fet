@@ -17,6 +17,8 @@ private:
 		MockRules3Activities();
 		Rules rules;
 		void addTeachers(int n);
+		void addYears(int n);
+		void addGroups(QString year, int n);
 	};
 
 private slots:
@@ -69,6 +71,23 @@ private slots:
 	void TeachersMinContinuousGapInInterval_WithSameIntervalOfSameTeacher_WithWeight100_StoresLeastGap();
 	void TeachersMinContinuousGapInInterval_OneThatIncludesAnotherOfSameTeacher_WithWeightNot100_StoresBoth();
 	void TeachersMinContinuousGapInInterval_OneThatIncludesAnotherOfSameTeacher_WithDiffMinGap_StoresBoth();
+
+	void StudentsMinContinuousGapInInterval_ReturnOkIfNoStudentsMinContinuousGapInIntervalConstraint();
+	void StudentsMinContinuousGapInInterval_InactiveConstraintIsIgnored();
+	void StudentsMinContinuousGapInInterval_StudentsAffectAll();
+	void StudentsMinContinuousGapInInterval_StudentsSetAffectOnlyOne();
+	void StudentsMinContinuousGapInInterval_StudentsSetHasMoreThanOneOfThisConstraint();
+//	void StudentsMinContinuousGapInInterval_FailsWithNegativeMinGap();
+//	void StudentsMinContinuousGapInInterval_FailsWithMinGapGreaterThanInterval();
+	void StudentsMinContinuousGapInInterval_NumErrorMsgs_WhenPreparationOfStudentsMinContinuousGapInIntervalFails();
+	void StudentsMinContinuousGapInInterval_TwoTotallyDifferentOnesToSameStudentsSet_StoresBoth();
+	void StudentsMinContinuousGapInInterval_TwoTotallyDifferentOnesToAllStudents_StoresBoth();
+	void StudentsMinContinuousGapInInterval_YellsWhenStudentsSetHasMoreConstraintsThanAllowed();
+	void StudentsMinContinuousGapInInterval_MoreThanOneToSameStudentsSetWithSameData_StoresOnlyMostRestrictiveOne();
+	void StudentsMinContinuousGapInInterval_OneThatIncludesAnotherOfSameStudentsSet_StoresMostRestrictiveCase();
+	void StudentsMinContinuousGapInInterval_WithSameIntervalOfSameStudentsSet_WithWeight100_StoresLeastGap();
+	void StudentsMinContinuousGapInInterval_OneThatIncludesAnotherOfSameStudentsSet_WithWeightNot100_StoresBoth();
+	void StudentsMinContinuousGapInInterval_OneThatIncludesAnotherOfSameStudentsSet_WithDiffMinGap_StoresBoth();
 };
 
 GeneratePreTest::GeneratePreTest()
@@ -883,7 +902,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_ReturnOkIfNoTeachersMin
 
 	bool result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 }
 
 void GeneratePreTest::TeachersMinContinuousGapInInterval_InactiveConstraintIsIgnored()
@@ -900,7 +919,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_InactiveConstraintIsIgn
 
 	bool result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, -1.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
@@ -917,7 +936,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_InactiveConstraintIsIgn
 
 	result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, -1.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
@@ -941,7 +960,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_TeachersAffectAll()
 
 	bool result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
@@ -973,7 +992,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_TeacherAffectOnlyOne()
 
 	bool result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, -1.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
@@ -1003,7 +1022,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_TeacherHasMoreThanOneOf
 
 	bool result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, 100.0);
@@ -1023,7 +1042,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_TeacherHasMoreThanOneOf
 
 	result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, 100.0);
@@ -1053,7 +1072,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_NumErrorMsgs_WhenPrepar
 
 	bool result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(!result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(!result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 	QCOMPARE(mcgi.getErrors().count(), 1);
 }
 
@@ -1072,7 +1091,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_TwoTotallyDifferentOnes
 
 	bool result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, 100.0);
@@ -1102,7 +1121,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_TwoTotallyDifferentOnes
 
 	bool result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, 100.0);
@@ -1148,7 +1167,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_YellsWhenTeacherHasMore
 
 	bool result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(!result, "Did not alert that there is more MinContinuousGapsForTeachers constraints than supported for one teacher");
+	QVERIFY2(!result, "Did not alert that there is more MinContinuousGapInIntervalForTeachers constraints than supported for one teacher");
 }
 
 void GeneratePreTest::TeachersMinContinuousGapInInterval_MoreThanOneToSameTeacherWithSameData_StoresOnlyMostRestrictiveOne()
@@ -1166,7 +1185,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_MoreThanOneToSameTeache
 
 	bool result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 90.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
@@ -1182,7 +1201,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_MoreThanOneToSameTeache
 
 	result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
@@ -1213,7 +1232,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_OneThatIncludesAnotherO
 
 	bool result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
@@ -1229,7 +1248,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_OneThatIncludesAnotherO
 
 	result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
@@ -1245,7 +1264,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_OneThatIncludesAnotherO
 
 	result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
@@ -1271,7 +1290,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_WithSameIntervalOfSameT
 
 	bool result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, 90.0);
@@ -1290,7 +1309,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_WithSameIntervalOfSameT
 	mock.rules.computeInternalStructure(NULL);
 	result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, 90.0);
@@ -1320,7 +1339,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_OneThatIncludesAnotherO
 
 	bool result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, 90.0);
@@ -1350,7 +1369,493 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_OneThatIncludesAnotherO
 
 	bool result = mcgi.prepare(mock.rules);
 
-	QVERIFY2(result, "Could not compute MinContinuousGapsForTeachers constraint list");
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
+
+	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
+
+	QCOMPARE(mcgi.data[0][0].minGapDuration, 2);
+	QCOMPARE(mcgi.data[0][0].startHour, 1);
+	QCOMPARE(mcgi.data[0][0].endHour, 7);
+}
+
+void GeneratePreTest::StudentsMinContinuousGapInInterval_ReturnOkIfNoStudentsMinContinuousGapInIntervalConstraint()
+{
+	MockRules3Activities mock;
+
+	MinContinuousGapInIntervalForStudents mcgi;
+
+	bool result = mcgi.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MinContinuousGapsForStudents constraint list");
+}
+
+void GeneratePreTest::StudentsMinContinuousGapInInterval_InactiveConstraintIsIgnored()
+{
+	MockRules3Activities mock;
+	mock.addYears(2);
+
+	ConstraintStudentsMinContinuousGapInInterval *ctr = new ConstraintStudentsMinContinuousGapInInterval(100.0, 2, 1, 5);
+	mock.rules.addTimeConstraint(ctr);
+	ctr->active = false;
+	mock.rules.computeInternalStructure(NULL);
+
+	MinContinuousGapInIntervalForStudents mcgi;
+
+	bool result = mcgi.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForStudents constraint list");
+
+	QCOMPARE(mcgi.data[0][0].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
+
+	QCOMPARE(mcgi.data[1][0].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[1][1].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[1][2].weightPercentage, -1.0);
+
+	ConstraintStudentsSetMinContinuousGapInInterval *ctr2 = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 2, "y2", 1, 5);
+	mock.rules.addTimeConstraint(ctr2);
+	ctr2->active = false;
+	mock.rules.computeInternalStructure(NULL);
+
+	result = mcgi.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForStudents constraint list");
+
+	QCOMPARE(mcgi.data[0][0].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
+
+	QCOMPARE(mcgi.data[1][0].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[1][1].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[1][2].weightPercentage, -1.0);
+}
+
+void GeneratePreTest::StudentsMinContinuousGapInInterval_StudentsAffectAll()
+{
+	MockRules3Activities mock;
+	mock.addYears(2);
+
+	ConstraintStudentsMinContinuousGapInInterval *ctr = new ConstraintStudentsMinContinuousGapInInterval(100.0, 2, 1, 5);
+	mock.rules.addTimeConstraint(ctr);
+	mock.rules.computeInternalStructure(NULL);
+
+	MinContinuousGapInIntervalForStudents mcgi;
+
+	bool result = mcgi.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForStudents constraint list");
+
+	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
+
+	QCOMPARE(mcgi.data[1][0].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[1][1].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[1][2].weightPercentage, -1.0);
+
+//	QCOMPARE(mcgi.data[0][0].minGapDuration, 2);
+//	QCOMPARE(mcgi.data[0][0].startHour, 1);
+//	QCOMPARE(mcgi.data[0][0].endHour, 5);
+
+//	QCOMPARE(mcgi.data[1][0].minGapDuration, 2);
+//	QCOMPARE(mcgi.data[1][0].startHour, 1);
+//	QCOMPARE(mcgi.data[1][0].endHour, 5);
+}
+
+void GeneratePreTest::StudentsMinContinuousGapInInterval_StudentsSetAffectOnlyOne()
+{
+	MockRules3Activities mock;
+	mock.addYears(2);
+
+	ConstraintStudentsSetMinContinuousGapInInterval *ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 2, "y2", 1, 5);
+	mock.rules.addTimeConstraint(ctr);
+	mock.rules.computeInternalStructure(NULL);
+
+	MinContinuousGapInIntervalForStudents mcgi;
+
+	bool result = mcgi.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForStudents constraint list");
+
+	QCOMPARE(mcgi.data[0][0].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
+
+	QCOMPARE(mcgi.data[1][0].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[1][1].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[1][2].weightPercentage, -1.0);
+
+	QCOMPARE(mcgi.data[1][0].minGapDuration, 2);
+	QCOMPARE(mcgi.data[1][0].startHour, 1);
+	QCOMPARE(mcgi.data[1][0].endHour, 5);
+}
+
+void GeneratePreTest::StudentsMinContinuousGapInInterval_StudentsSetHasMoreThanOneOfThisConstraint()
+{
+	MockRules3Activities mock;
+	mock.addYears(1);
+
+	ConstraintStudentsSetMinContinuousGapInInterval *ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 2, "y1", 1, 5);
+	mock.rules.addTimeConstraint(ctr);
+	ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 3, "y1", 3, 7);
+	mock.rules.addTimeConstraint(ctr);
+	mock.rules.computeInternalStructure(NULL);
+
+	MinContinuousGapInIntervalForStudents mcgi;
+
+	bool result = mcgi.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForStudents constraint list");
+
+	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
+
+	QCOMPARE(mcgi.data[0][0].minGapDuration, 2);
+	QCOMPARE(mcgi.data[0][0].startHour, 1);
+	QCOMPARE(mcgi.data[0][0].endHour, 5);
+
+	QCOMPARE(mcgi.data[0][1].minGapDuration, 3);
+	QCOMPARE(mcgi.data[0][1].startHour, 3);
+	QCOMPARE(mcgi.data[0][1].endHour, 7);
+
+	ConstraintStudentsMinContinuousGapInInterval *ctr2 = new ConstraintStudentsMinContinuousGapInInterval(100.0, 2, 4, 9);
+	mock.rules.addTimeConstraint(ctr2);
+	mock.rules.computeInternalStructure(NULL);
+
+	result = mcgi.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForStudents constraint list");
+
+	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, 100.0);
+
+	QCOMPARE(mcgi.data[0][2].minGapDuration, 2);
+	QCOMPARE(mcgi.data[0][2].startHour, 4);
+	QCOMPARE(mcgi.data[0][2].endHour, 9);
+}
+
+void GeneratePreTest::StudentsMinContinuousGapInInterval_NumErrorMsgs_WhenPreparationOfStudentsMinContinuousGapInIntervalFails()
+{
+	MockRules3Activities mock;
+	mock.addYears(1);
+
+	ConstraintStudentsSetMinContinuousGapInInterval *ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 2, "y1", 1, 5);
+	mock.rules.addTimeConstraint(ctr);
+	ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 3, "y1", 3, 7);
+	mock.rules.addTimeConstraint(ctr);
+	ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 4, "y1", 5, 10);
+	mock.rules.addTimeConstraint(ctr);
+	ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 2, "y1", 4, 8);
+	mock.rules.addTimeConstraint(ctr);
+	mock.rules.computeInternalStructure(NULL);
+
+	MinContinuousGapInIntervalForStudents mcgi;
+
+	bool result = mcgi.prepare(mock.rules);
+
+	QVERIFY2(!result, "Could not compute MinContinuousGapInIntervalForStudents constraint list");
+	QCOMPARE(mcgi.getErrors().count(), 1);
+}
+
+void GeneratePreTest::StudentsMinContinuousGapInInterval_TwoTotallyDifferentOnesToSameStudentsSet_StoresBoth()
+{
+	MockRules3Activities mock;
+	mock.addYears(2);
+
+	ConstraintStudentsSetMinContinuousGapInInterval *ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 2, "y1", 1, 5);
+	mock.rules.addTimeConstraint(ctr);
+	ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 2, "y1", 6, 9);
+	mock.rules.addTimeConstraint(ctr);
+	mock.rules.computeInternalStructure(NULL);
+
+	MinContinuousGapInIntervalForStudents mcgi;
+
+	bool result = mcgi.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForStudents constraint list");
+
+	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
+
+	QCOMPARE(mcgi.data[0][0].minGapDuration, 2);
+	QCOMPARE(mcgi.data[0][0].startHour, 1);
+	QCOMPARE(mcgi.data[0][0].endHour, 5);
+
+	QCOMPARE(mcgi.data[0][1].minGapDuration, 2);
+	QCOMPARE(mcgi.data[0][1].startHour, 6);
+	QCOMPARE(mcgi.data[0][1].endHour, 9);
+}
+
+void GeneratePreTest::StudentsMinContinuousGapInInterval_TwoTotallyDifferentOnesToAllStudents_StoresBoth()
+{
+	MockRules3Activities mock;
+	mock.addYears(2);
+
+	ConstraintStudentsMinContinuousGapInInterval *ctr = new ConstraintStudentsMinContinuousGapInInterval(100.0, 2, 1, 4);
+	mock.rules.addTimeConstraint(ctr);
+	ctr = new ConstraintStudentsMinContinuousGapInInterval(100.0, 2, 6, 9);
+	mock.rules.addTimeConstraint(ctr);
+	mock.rules.computeInternalStructure(NULL);
+
+	MinContinuousGapInIntervalForStudents mcgi;
+
+	bool result = mcgi.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForStudents constraint list");
+
+	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
+
+	QCOMPARE(mcgi.data[0][0].minGapDuration, 2);
+	QCOMPARE(mcgi.data[0][0].startHour, 1);
+	QCOMPARE(mcgi.data[0][0].endHour, 4);
+
+	QCOMPARE(mcgi.data[0][1].minGapDuration, 2);
+	QCOMPARE(mcgi.data[0][1].startHour, 6);
+	QCOMPARE(mcgi.data[0][1].endHour, 9);
+
+	QCOMPARE(mcgi.data[1][0].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[1][1].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[1][2].weightPercentage, -1.0);
+
+	QCOMPARE(mcgi.data[1][0].minGapDuration, 2);
+	QCOMPARE(mcgi.data[1][0].startHour, 1);
+	QCOMPARE(mcgi.data[1][0].endHour, 4);
+
+	QCOMPARE(mcgi.data[1][1].minGapDuration, 2);
+	QCOMPARE(mcgi.data[1][1].startHour, 6);
+	QCOMPARE(mcgi.data[1][1].endHour, 9);
+}
+
+void GeneratePreTest::StudentsMinContinuousGapInInterval_YellsWhenStudentsSetHasMoreConstraintsThanAllowed()
+{
+	MockRules3Activities mock;
+	mock.addYears(1);
+
+	ConstraintStudentsSetMinContinuousGapInInterval *ctr = new ConstraintStudentsSetMinContinuousGapInInterval(90.0, 2, "y1", 1, 3);
+	mock.rules.addTimeConstraint(ctr);
+	ctr = new ConstraintStudentsSetMinContinuousGapInInterval(50.0, 2, "y1", 2, 4);
+	mock.rules.addTimeConstraint(ctr);
+	ctr = new ConstraintStudentsSetMinContinuousGapInInterval(75.0, 2, "y1", 4, 6);
+	mock.rules.addTimeConstraint(ctr);
+	ctr = new ConstraintStudentsSetMinContinuousGapInInterval(60.0, 2, "y1", 7, 9);
+	mock.rules.addTimeConstraint(ctr);
+	mock.rules.computeInternalStructure(NULL);
+
+	MinContinuousGapInIntervalForStudents mcgi;
+
+	bool result = mcgi.prepare(mock.rules);
+
+	QVERIFY2(!result, "Did not alert that there is more MinContinuousGapInIntervalForStudents constraints than supported for one teacher");
+}
+
+void GeneratePreTest::StudentsMinContinuousGapInInterval_MoreThanOneToSameStudentsSetWithSameData_StoresOnlyMostRestrictiveOne()
+{
+	MockRules3Activities mock;
+	mock.addYears(2);
+
+	ConstraintStudentsSetMinContinuousGapInInterval *ctr = new ConstraintStudentsSetMinContinuousGapInInterval(90.0, 2, "y1", 1, 5);
+	mock.rules.addTimeConstraint(ctr);
+	ctr = new ConstraintStudentsSetMinContinuousGapInInterval(50.0, 2, "y1", 1, 5);
+	mock.rules.addTimeConstraint(ctr);
+	mock.rules.computeInternalStructure(NULL);
+
+	MinContinuousGapInIntervalForStudents mcgi;
+
+	bool result = mcgi.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForStudents constraint list");
+
+	QCOMPARE(mcgi.data[0][0].weightPercentage, 90.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
+
+	QCOMPARE(mcgi.data[0][0].minGapDuration, 2);
+	QCOMPARE(mcgi.data[0][0].startHour, 1);
+	QCOMPARE(mcgi.data[0][0].endHour, 5);
+
+	ConstraintStudentsMinContinuousGapInInterval *ctr2 = new ConstraintStudentsMinContinuousGapInInterval(100.0, 2, 1, 5);
+	mock.rules.addTimeConstraint(ctr2);
+	mock.rules.computeInternalStructure(NULL);
+
+	result = mcgi.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForStudents constraint list");
+
+	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
+
+	QCOMPARE(mcgi.data[0][0].minGapDuration, 2);
+	QCOMPARE(mcgi.data[0][0].startHour, 1);
+	QCOMPARE(mcgi.data[0][0].endHour, 5);
+
+	QCOMPARE(mcgi.data[1][0].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[1][0].minGapDuration, 2);
+	QCOMPARE(mcgi.data[1][0].startHour, 1);
+	QCOMPARE(mcgi.data[1][0].endHour, 5);
+}
+
+void GeneratePreTest::StudentsMinContinuousGapInInterval_OneThatIncludesAnotherOfSameStudentsSet_StoresMostRestrictiveCase()
+{
+	MockRules3Activities mock;
+	mock.addYears(1);
+
+	ConstraintStudentsSetMinContinuousGapInInterval *ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 2, "y1", 1, 7);
+	mock.rules.addTimeConstraint(ctr);
+	ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 2, "y1", 2, 6);
+	mock.rules.addTimeConstraint(ctr);
+	mock.rules.computeInternalStructure(NULL);
+
+	MinContinuousGapInIntervalForStudents mcgi;
+
+	bool result = mcgi.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForStudents constraint list");
+
+	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
+
+	QCOMPARE(mcgi.data[0][0].minGapDuration, 2);
+	QCOMPARE(mcgi.data[0][0].startHour, 2);
+	QCOMPARE(mcgi.data[0][0].endHour, 6);
+
+	ConstraintStudentsMinContinuousGapInInterval *ctr2 = new ConstraintStudentsMinContinuousGapInInterval(100.0, 2, 2, 5);
+	mock.rules.addTimeConstraint(ctr2);
+	mock.rules.computeInternalStructure(NULL);
+
+	result = mcgi.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForStudents constraint list");
+
+	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
+
+	QCOMPARE(mcgi.data[0][0].minGapDuration, 2);
+	QCOMPARE(mcgi.data[0][0].startHour, 2);
+	QCOMPARE(mcgi.data[0][0].endHour, 5);
+
+	ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 2, "y1", 3, 5);
+	mock.rules.addTimeConstraint(ctr);
+	mock.rules.computeInternalStructure(NULL);
+
+	result = mcgi.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForStudents constraint list");
+
+	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, -1.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
+
+	QCOMPARE(mcgi.data[0][0].minGapDuration, 2);
+	QCOMPARE(mcgi.data[0][0].startHour, 3);
+	QCOMPARE(mcgi.data[0][0].endHour, 5);
+}
+
+void GeneratePreTest::StudentsMinContinuousGapInInterval_WithSameIntervalOfSameStudentsSet_WithWeight100_StoresLeastGap()
+{
+	MockRules3Activities mock;
+	mock.addYears(1);
+
+	ConstraintStudentsSetMinContinuousGapInInterval *ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 3, "y1", 1, 7);
+	mock.rules.addTimeConstraint(ctr);
+	ctr = new ConstraintStudentsSetMinContinuousGapInInterval(90.0, 2, "y1", 1, 7);
+	mock.rules.addTimeConstraint(ctr);
+	mock.rules.computeInternalStructure(NULL);
+
+	MinContinuousGapInIntervalForStudents mcgi;
+
+	bool result = mcgi.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForStudents constraint list");
+
+	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, 90.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
+
+	QCOMPARE(mcgi.data[0][0].minGapDuration, 3);
+	QCOMPARE(mcgi.data[0][0].startHour, 1);
+	QCOMPARE(mcgi.data[0][0].endHour, 7);
+
+	QCOMPARE(mcgi.data[0][1].minGapDuration, 2);
+	QCOMPARE(mcgi.data[0][1].startHour, 1);
+	QCOMPARE(mcgi.data[0][1].endHour, 7);
+
+	ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 4, "y1", 1, 7);
+	mock.rules.addTimeConstraint(ctr);
+	mock.rules.computeInternalStructure(NULL);
+	result = mcgi.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForStudents constraint list");
+
+	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, 90.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
+
+	QCOMPARE(mcgi.data[0][0].minGapDuration, 4);
+	QCOMPARE(mcgi.data[0][0].startHour, 1);
+	QCOMPARE(mcgi.data[0][0].endHour, 7);
+
+	QCOMPARE(mcgi.data[0][1].minGapDuration, 2);
+	QCOMPARE(mcgi.data[0][1].startHour, 1);
+	QCOMPARE(mcgi.data[0][1].endHour, 7);
+}
+
+void GeneratePreTest::StudentsMinContinuousGapInInterval_OneThatIncludesAnotherOfSameStudentsSet_WithWeightNot100_StoresBoth()
+{
+	MockRules3Activities mock;
+	mock.addYears(1);
+
+	ConstraintStudentsSetMinContinuousGapInInterval *ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 2, "y1", 1, 7);
+	mock.rules.addTimeConstraint(ctr);
+	ctr = new ConstraintStudentsSetMinContinuousGapInInterval(90.0, 2, "y1", 2, 6);
+	mock.rules.addTimeConstraint(ctr);
+	mock.rules.computeInternalStructure(NULL);
+
+	MinContinuousGapInIntervalForStudents mcgi;
+
+	bool result = mcgi.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForStudents constraint list");
+
+	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
+	QCOMPARE(mcgi.data[0][1].weightPercentage, 90.0);
+	QCOMPARE(mcgi.data[0][2].weightPercentage, -1.0);
+
+	QCOMPARE(mcgi.data[0][0].minGapDuration, 2);
+	QCOMPARE(mcgi.data[0][0].startHour, 1);
+	QCOMPARE(mcgi.data[0][0].endHour, 7);
+
+	QCOMPARE(mcgi.data[0][1].minGapDuration, 2);
+	QCOMPARE(mcgi.data[0][1].startHour, 2);
+	QCOMPARE(mcgi.data[0][1].endHour, 6);
+}
+
+void GeneratePreTest::StudentsMinContinuousGapInInterval_OneThatIncludesAnotherOfSameStudentsSet_WithDiffMinGap_StoresBoth()
+{
+	MockRules3Activities mock;
+	mock.addYears(1);
+
+	ConstraintStudentsSetMinContinuousGapInInterval *ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 2, "y1", 1, 7);
+	mock.rules.addTimeConstraint(ctr);
+	ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 3, "y1", 2, 6);
+	mock.rules.addTimeConstraint(ctr);
+	mock.rules.computeInternalStructure(NULL);
+
+	MinContinuousGapInIntervalForStudents mcgi;
+
+	bool result = mcgi.prepare(mock.rules);
+
+	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForStudents constraint list");
 
 	QCOMPARE(mcgi.data[0][0].weightPercentage, 100.0);
 	QCOMPARE(mcgi.data[0][1].weightPercentage, 100.0);
@@ -1387,6 +1892,26 @@ void GeneratePreTest::MockRules3Activities::addTeachers(int n)
 		t->name = QString("t%1").arg(i);
 		bool ok = rules.addTeacher(t);
 		QVERIFY2(ok, "Teacher not inserted");
+	}
+}
+
+void GeneratePreTest::MockRules3Activities::addYears(int n)
+{
+	for (int i = 1; i <= n; i++) {
+		StudentsYear *sty = new StudentsYear;
+		sty->name = QString("y%1").arg(i);
+		bool ok = rules.addYear(sty);
+		QVERIFY2(ok, "Students Year not inserted");
+	}
+}
+
+void GeneratePreTest::MockRules3Activities::addGroups(QString year, int n)
+{
+	for (int i = 1; i <= n; i++) {
+		StudentsGroup *stg = new StudentsGroup;
+		stg->name = QString("y%1 g%2").arg(year).arg(i);
+		bool ok = rules.addGroup(year, stg);
+		QVERIFY2(ok, "Students group not inserted");
 	}
 }
 

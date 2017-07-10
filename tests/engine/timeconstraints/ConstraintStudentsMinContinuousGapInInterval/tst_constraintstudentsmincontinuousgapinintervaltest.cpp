@@ -16,39 +16,40 @@
 #include "timetable.h"
 Timetable gt; // Just to please generate_pre.cpp and lockunlock.cpp that yet require it. It must be not used in tests
 
-class ConstraintTeachersMinContinuousGapInIntervalTest : public QObject
+class ConstraintStudentsMinContinuousGapInIntervalTest : public QObject
 {
 	Q_OBJECT
 
 public:
-	ConstraintTeachersMinContinuousGapInIntervalTest();
+	ConstraintStudentsMinContinuousGapInIntervalTest();
 
 private Q_SLOTS:
-	void OneTeacher_CheckInvalidValues();
-	void AllTeachers_CheckInvalidValues();
-	void OneTeacher_FitnessAcceptsNullString();
-	void AllTeachers_FitnessAcceptsNullString();
-	void OneTeacher_CheckFitness();
-	void AllTeachers_CheckFitness();
-	void OneTeacher_CheckFitness_EnoughGapButNotContinuous();
-	void AllTeachers_CheckFitness_EnoughGapButNotContinuous();
+	void OneStudentSet_CheckInvalidValues();
+	void AllStudents_CheckInvalidValues();
+	void OneStudentsSet_FitnessAcceptsNullString();
+	void AllStudents_FitnessAcceptsNullString();
+	void OneStudentsSet_CheckFitness();
+	void OneStudentsGroup_CheckFitness();
+	void AllStudents_CheckFitness();
+	void OneStudentsSet_CheckFitness_EnoughGapButNotContinuous();
+	void AllStudents_CheckFitness_EnoughGapButNotContinuous();
 	// TODO check read/write xml
 };
 
-ConstraintTeachersMinContinuousGapInIntervalTest::ConstraintTeachersMinContinuousGapInIntervalTest()
+ConstraintStudentsMinContinuousGapInIntervalTest::ConstraintStudentsMinContinuousGapInIntervalTest()
 {
 }
 
-void ConstraintTeachersMinContinuousGapInIntervalTest::OneTeacher_CheckInvalidValues()
+void ConstraintStudentsMinContinuousGapInIntervalTest::OneStudentSet_CheckInvalidValues()
 {
 	Rules rules;
 	rules.init();
-	Teacher *t = new Teacher();
-	t->name = "t1";
-	rules.addTeacher(t);
+	StudentsYear *sty = new StudentsYear();
+	sty->name = "y1";
+	rules.addYear(sty);
 	rules.computeInternalStructure(NULL);
 
-	ConstraintTeacherMinContinuousGapInInterval *ctr = new ConstraintTeacherMinContinuousGapInInterval(100.0, 2, "t1", 1, 5);
+	ConstraintStudentsSetMinContinuousGapInInterval *ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 2, "y1", 1, 5);
 
 	ctr->weightPercentage = 120;
 	bool result = ctr->computeInternalStructure(NULL, rules);
@@ -97,13 +98,13 @@ void ConstraintTeachersMinContinuousGapInIntervalTest::OneTeacher_CheckInvalidVa
 	QVERIFY2(result, "Does not accept end-of-day as end hour");
 }
 
-void ConstraintTeachersMinContinuousGapInIntervalTest::AllTeachers_CheckInvalidValues()
+void ConstraintStudentsMinContinuousGapInIntervalTest::AllStudents_CheckInvalidValues()
 {
 	Rules rules;
 	rules.init();
 	rules.computeInternalStructure(NULL);
 
-	ConstraintTeachersMinContinuousGapInInterval *ctr = new ConstraintTeachersMinContinuousGapInInterval(100.0, 2, 1, 5);
+	ConstraintStudentsMinContinuousGapInInterval *ctr = new ConstraintStudentsMinContinuousGapInInterval(100.0, 2, 1, 5);
 
 	ctr->weightPercentage = 120;
 	bool result = ctr->computeInternalStructure(NULL, rules);
@@ -152,16 +153,16 @@ void ConstraintTeachersMinContinuousGapInIntervalTest::AllTeachers_CheckInvalidV
 	QVERIFY2(result, "Does not accept end-of-day as end hour");
 }
 
-void ConstraintTeachersMinContinuousGapInIntervalTest::OneTeacher_FitnessAcceptsNullString()
+void ConstraintStudentsMinContinuousGapInIntervalTest::OneStudentsSet_FitnessAcceptsNullString()
 {
 	Rules rules;
 	rules.init();
-	Teacher *t1 = new Teacher();
-	t1->name = "t1";
-	bool ok = rules.addTeacherFast(t1);
-	QVERIFY2(ok, "Could not add teacher");
+	StudentsYear *sty1 = new StudentsYear();
+	sty1->name = "y1";
+	bool ok = rules.addYearFast(sty1);
+	QVERIFY2(ok, "Could not add students year");
 
-	ConstraintTeacherMinContinuousGapInInterval *ctr = new ConstraintTeacherMinContinuousGapInInterval(100.0, 2, "t1", 1, 3);
+	ConstraintStudentsSetMinContinuousGapInInterval *ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 2, "y1", 1, 3);
 	ok = rules.addTimeConstraint(ctr);
 	QVERIFY2(ok, "Could not add constraint");
 
@@ -176,12 +177,12 @@ void ConstraintTeachersMinContinuousGapInIntervalTest::OneTeacher_FitnessAccepts
 	ctr->fitness(c, rules, cl, dl, NULL);
 }
 
-void ConstraintTeachersMinContinuousGapInIntervalTest::AllTeachers_FitnessAcceptsNullString()
+void ConstraintStudentsMinContinuousGapInIntervalTest::AllStudents_FitnessAcceptsNullString()
 {
 	Rules rules;
 	rules.init();
 
-	ConstraintTeachersMinContinuousGapInInterval *ctr = new ConstraintTeachersMinContinuousGapInInterval(100.0, 2, 1, 3);
+	ConstraintStudentsMinContinuousGapInInterval *ctr = new ConstraintStudentsMinContinuousGapInInterval(100.0, 2, 1, 3);
 	bool ok = rules.addTimeConstraint(ctr);
 	QVERIFY2(ok, "Could not add constraint");
 
@@ -196,25 +197,25 @@ void ConstraintTeachersMinContinuousGapInIntervalTest::AllTeachers_FitnessAccept
 	ctr->fitness(c, rules, cl, dl, NULL);
 }
 
-void ConstraintTeachersMinContinuousGapInIntervalTest::OneTeacher_CheckFitness()
+void ConstraintStudentsMinContinuousGapInIntervalTest::OneStudentsSet_CheckFitness()
 {
 	Rules rules;
 	rules.init();
-	Teacher *t1 = new Teacher();
-	t1->name = "t1";
-	rules.addTeacherFast(t1);
+	StudentsYear *sty1 = new StudentsYear();
+	sty1->name = "y1";
+	rules.addYearFast(sty1);
 	Subject *s1 = new Subject();
 	s1->name = "subject1";
 	rules.addSubjectFast(s1);
 
 	QStringList tags, students;
 	QStringList teachers;
-	teachers << t1->name;
+	students << sty1->name;
 	const int duration = 2;
 	bool ok = rules.addSimpleActivityFast(NULL, 1, 1, teachers, "subject1", tags, students, duration, duration, true, false, 0, 0);
 	QVERIFY2(ok, "Could not add activity");
 
-	ConstraintTeacherMinContinuousGapInInterval *ctr = new ConstraintTeacherMinContinuousGapInInterval(100.0, 2, "t1", 2, 4);
+	ConstraintStudentsSetMinContinuousGapInInterval *ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 2, "y1", 2, 4);
 	ok = rules.addTimeConstraint(ctr);
 	QVERIFY2(ok, "Could not add constraint");
 
@@ -229,27 +230,27 @@ void ConstraintTeachersMinContinuousGapInIntervalTest::OneTeacher_CheckFitness()
 	QCOMPARE(fitness, 0.0);
 
 	c.times[0] = rules.nDaysPerWeek*0+0;
-	c.teachersMatrixReady = false;
+	c.subgroupsMatrixReady = false;
 	fitness = ctr->fitness(c, rules, cl, dl);
 	QCOMPARE(fitness, 0.0);
 
 	c.times[0] = rules.nDaysPerWeek*1+0;
-	c.teachersMatrixReady = false;
+	c.subgroupsMatrixReady = false;
 	fitness = ctr->fitness(c, rules, cl, dl);
 	QCOMPARE(fitness, 1.0);
 
 	c.times[0] = rules.nDaysPerWeek*2+0;
-	c.teachersMatrixReady = false;
+	c.subgroupsMatrixReady = false;
 	fitness = ctr->fitness(c, rules, cl, dl);
 	QCOMPARE(fitness, 2.0);
 
 	c.times[0] = rules.nDaysPerWeek*3+0;
-	c.teachersMatrixReady = false;
+	c.subgroupsMatrixReady = false;
 	fitness = ctr->fitness(c, rules, cl, dl);
 	QCOMPARE(fitness, 1.0);
 
 	c.times[0] = rules.nDaysPerWeek*4+0;
-	c.teachersMatrixReady = false;
+	c.subgroupsMatrixReady = false;
 	fitness = ctr->fitness(c, rules, cl, dl);
 	QCOMPARE(fitness, 0.0);
 
@@ -259,48 +260,48 @@ void ConstraintTeachersMinContinuousGapInIntervalTest::OneTeacher_CheckFitness()
 	QCOMPARE(fitness, 0.0);
 
 	c.times[0] = rules.nDaysPerWeek*1+2;
-	c.teachersMatrixReady = false;
+	c.subgroupsMatrixReady = false;
 	fitness = ctr->fitness(c, rules, cl, dl);
 	QCOMPARE(fitness, 1.0);
 
 	c.times[0] = rules.nDaysPerWeek*2+2;
-	c.teachersMatrixReady = false;
+	c.subgroupsMatrixReady = false;
 	fitness = ctr->fitness(c, rules, cl, dl);
 	QCOMPARE(fitness, 2.0);
 
 	c.times[0] = rules.nDaysPerWeek*3+2;
-	c.teachersMatrixReady = false;
+	c.subgroupsMatrixReady = false;
 	fitness = ctr->fitness(c, rules, cl, dl);
 	QCOMPARE(fitness, 1.0);
 
 	c.times[0] = rules.nDaysPerWeek*4+2;
-	c.teachersMatrixReady = false;
+	c.subgroupsMatrixReady = false;
 	fitness = ctr->fitness(c, rules, cl, dl);
 	QCOMPARE(fitness, 0.0);
 }
 
-void ConstraintTeachersMinContinuousGapInIntervalTest::AllTeachers_CheckFitness()
+void ConstraintStudentsMinContinuousGapInIntervalTest::OneStudentsGroup_CheckFitness()
 {
 	Rules rules;
 	rules.init();
-	Teacher *t1 = new Teacher();
-	t1->name = "t1";
-	rules.addTeacherFast(t1);
-	t1 = new Teacher();
-	t1->name = "t2";
-	rules.addTeacherFast(t1);
+	StudentsYear *sty1 = new StudentsYear();
+	sty1->name = "y1";
+	rules.addYearFast(sty1);
+	StudentsGroup *stg1 = new StudentsGroup();
+	stg1->name = "y1 g1";
+	rules.addGroupFast(sty1, stg1);
 	Subject *s1 = new Subject();
 	s1->name = "subject1";
 	rules.addSubjectFast(s1);
 
 	QStringList tags, students;
 	QStringList teachers;
-	teachers << "t1" << "t2";
+	students << sty1->name;
 	const int duration = 2;
 	bool ok = rules.addSimpleActivityFast(NULL, 1, 1, teachers, "subject1", tags, students, duration, duration, true, false, 0, 0);
 	QVERIFY2(ok, "Could not add activity");
 
-	ConstraintTeachersMinContinuousGapInInterval *ctr = new ConstraintTeachersMinContinuousGapInInterval(100.0, 2, 2, 4);
+	ConstraintStudentsSetMinContinuousGapInInterval *ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 2, "y1 g1", 2, 4);
 	ok = rules.addTimeConstraint(ctr);
 	QVERIFY2(ok, "Could not add constraint");
 
@@ -315,27 +316,27 @@ void ConstraintTeachersMinContinuousGapInIntervalTest::AllTeachers_CheckFitness(
 	QCOMPARE(fitness, 0.0);
 
 	c.times[0] = rules.nDaysPerWeek*0+0;
-	c.teachersMatrixReady = false;
+	c.subgroupsMatrixReady = false;
 	fitness = ctr->fitness(c, rules, cl, dl);
 	QCOMPARE(fitness, 0.0);
 
 	c.times[0] = rules.nDaysPerWeek*1+0;
-	c.teachersMatrixReady = false;
+	c.subgroupsMatrixReady = false;
 	fitness = ctr->fitness(c, rules, cl, dl);
-	QCOMPARE(fitness, 2.0);
+	QCOMPARE(fitness, 1.0);
 
 	c.times[0] = rules.nDaysPerWeek*2+0;
-	c.teachersMatrixReady = false;
-	fitness = ctr->fitness(c, rules, cl, dl);
-	QCOMPARE(fitness, 4.0);
-
-	c.times[0] = rules.nDaysPerWeek*3+0;
-	c.teachersMatrixReady = false;
+	c.subgroupsMatrixReady = false;
 	fitness = ctr->fitness(c, rules, cl, dl);
 	QCOMPARE(fitness, 2.0);
 
+	c.times[0] = rules.nDaysPerWeek*3+0;
+	c.subgroupsMatrixReady = false;
+	fitness = ctr->fitness(c, rules, cl, dl);
+	QCOMPARE(fitness, 1.0);
+
 	c.times[0] = rules.nDaysPerWeek*4+0;
-	c.teachersMatrixReady = false;
+	c.subgroupsMatrixReady = false;
 	fitness = ctr->fitness(c, rules, cl, dl);
 	QCOMPARE(fitness, 0.0);
 
@@ -345,49 +346,135 @@ void ConstraintTeachersMinContinuousGapInIntervalTest::AllTeachers_CheckFitness(
 	QCOMPARE(fitness, 0.0);
 
 	c.times[0] = rules.nDaysPerWeek*1+2;
-	c.teachersMatrixReady = false;
+	c.subgroupsMatrixReady = false;
+	fitness = ctr->fitness(c, rules, cl, dl);
+	QCOMPARE(fitness, 1.0);
+
+	c.times[0] = rules.nDaysPerWeek*2+2;
+	c.subgroupsMatrixReady = false;
+	fitness = ctr->fitness(c, rules, cl, dl);
+	QCOMPARE(fitness, 2.0);
+
+	c.times[0] = rules.nDaysPerWeek*3+2;
+	c.subgroupsMatrixReady = false;
+	fitness = ctr->fitness(c, rules, cl, dl);
+	QCOMPARE(fitness, 1.0);
+
+	c.times[0] = rules.nDaysPerWeek*4+2;
+	c.subgroupsMatrixReady = false;
+	fitness = ctr->fitness(c, rules, cl, dl);
+	QCOMPARE(fitness, 0.0);
+}
+
+void ConstraintStudentsMinContinuousGapInIntervalTest::AllStudents_CheckFitness()
+{
+	Rules rules;
+	rules.init();
+	StudentsYear *sty1 = new StudentsYear();
+	sty1->name = "y1";
+	rules.addYearFast(sty1);
+	sty1 = new StudentsYear();
+	sty1->name = "y2";
+	rules.addYearFast(sty1);
+	Subject *s1 = new Subject();
+	s1->name = "subject1";
+	rules.addSubjectFast(s1);
+
+	QStringList tags, students;
+	QStringList teachers;
+	students << "y1" << "y2";
+	const int duration = 2;
+	bool ok = rules.addSimpleActivityFast(NULL, 1, 1, teachers, "subject1", tags, students, duration, duration, true, false, 0, 0);
+	QVERIFY2(ok, "Could not add activity");
+
+	ConstraintStudentsMinContinuousGapInInterval *ctr = new ConstraintStudentsMinContinuousGapInInterval(100.0, 2, 2, 4);
+	ok = rules.addTimeConstraint(ctr);
+	QVERIFY2(ok, "Could not add constraint");
+
+	rules.computeInternalStructure(NULL);
+
+	Solution c;
+	c.makeUnallocated(rules);
+
+	QList<double> cl;
+	QStringList dl;
+	double fitness = ctr->fitness(c, rules, cl, dl);
+	QCOMPARE(fitness, 0.0);
+
+	c.times[0] = rules.nDaysPerWeek*0+0;
+	c.subgroupsMatrixReady = false;
+	fitness = ctr->fitness(c, rules, cl, dl);
+	QCOMPARE(fitness, 0.0);
+
+	c.times[0] = rules.nDaysPerWeek*1+0;
+	c.subgroupsMatrixReady = false;
+	fitness = ctr->fitness(c, rules, cl, dl);
+	QCOMPARE(fitness, 2.0);
+
+	c.times[0] = rules.nDaysPerWeek*2+0;
+	c.subgroupsMatrixReady = false;
+	fitness = ctr->fitness(c, rules, cl, dl);
+	QCOMPARE(fitness, 4.0);
+
+	c.times[0] = rules.nDaysPerWeek*3+0;
+	c.subgroupsMatrixReady = false;
+	fitness = ctr->fitness(c, rules, cl, dl);
+	QCOMPARE(fitness, 2.0);
+
+	c.times[0] = rules.nDaysPerWeek*4+0;
+	c.subgroupsMatrixReady = false;
+	fitness = ctr->fitness(c, rules, cl, dl);
+	QCOMPARE(fitness, 0.0);
+
+
+	c.times[0] = rules.nDaysPerWeek*0+2;
+	fitness = ctr->fitness(c, rules, cl, dl);
+	QCOMPARE(fitness, 0.0);
+
+	c.times[0] = rules.nDaysPerWeek*1+2;
+	c.subgroupsMatrixReady = false;
 	fitness = ctr->fitness(c, rules, cl, dl);
 	QCOMPARE(fitness, 2.0);
 
 	cl.clear();
 	dl.clear();
 	c.times[0] = rules.nDaysPerWeek*2+2;
-	c.teachersMatrixReady = false;
+	c.subgroupsMatrixReady = false;
 	fitness = ctr->fitness(c, rules, cl, dl);
 	QCOMPARE(fitness, 4.0);
 	QCOMPARE(cl.count(), 2);
 	QCOMPARE(cl[0], 2.0);
 
 	c.times[0] = rules.nDaysPerWeek*3+2;
-	c.teachersMatrixReady = false;
+	c.subgroupsMatrixReady = false;
 	fitness = ctr->fitness(c, rules, cl, dl);
 	QCOMPARE(fitness, 2.0);
 
 	c.times[0] = rules.nDaysPerWeek*4+2;
-	c.teachersMatrixReady = false;
+	c.subgroupsMatrixReady = false;
 	fitness = ctr->fitness(c, rules, cl, dl);
 	QCOMPARE(fitness, 0.0);
 }
 
-void ConstraintTeachersMinContinuousGapInIntervalTest::OneTeacher_CheckFitness_EnoughGapButNotContinuous()
+void ConstraintStudentsMinContinuousGapInIntervalTest::OneStudentsSet_CheckFitness_EnoughGapButNotContinuous()
 {
 	Rules rules;
 	rules.init();
-	Teacher *t1 = new Teacher();
-	t1->name = "t1";
-	rules.addTeacherFast(t1);
+	StudentsYear *sty1 = new StudentsYear();
+	sty1->name = "y1";
+	rules.addYearFast(sty1);
 	Subject *s1 = new Subject();
 	s1->name = "subject1";
 	rules.addSubjectFast(s1);
 
 	QStringList tags, students;
 	QStringList teachers;
-	teachers << t1->name;
+	students << sty1->name;
 	const int duration = 2;
 	bool ok = rules.addSimpleActivityFast(NULL, 1, 1, teachers, "subject1", tags, students, duration, duration, true, false, 0, 0);
 	QVERIFY2(ok, "Could not add activity");
 
-	ConstraintTeacherMinContinuousGapInInterval *ctr = new ConstraintTeacherMinContinuousGapInInterval(100.0, 2, "t1", 2, 6);
+	ConstraintStudentsSetMinContinuousGapInInterval *ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 2, "y1", 2, 6);
 	ok = rules.addTimeConstraint(ctr);
 	QVERIFY2(ok, "Could not add constraint");
 
@@ -402,33 +489,33 @@ void ConstraintTeachersMinContinuousGapInIntervalTest::OneTeacher_CheckFitness_E
 	QCOMPARE(fitness, 0.0);
 
 	c.times[0] = rules.nDaysPerWeek*3+0;
-	c.teachersMatrixReady = false;
+	c.subgroupsMatrixReady = false;
 	fitness = ctr->fitness(c, rules, cl, dl);
 	QCOMPARE(fitness, 1.0);
 }
 
-void ConstraintTeachersMinContinuousGapInIntervalTest::AllTeachers_CheckFitness_EnoughGapButNotContinuous()
+void ConstraintStudentsMinContinuousGapInIntervalTest::AllStudents_CheckFitness_EnoughGapButNotContinuous()
 {
 	Rules rules;
 	rules.init();
-	Teacher *t1 = new Teacher();
-	t1->name = "t1";
-	rules.addTeacherFast(t1);
-	t1 = new Teacher();
-	t1->name = "t2";
-	rules.addTeacherFast(t1);
+	StudentsYear *sty1 = new StudentsYear();
+	sty1->name = "y1";
+	rules.addYearFast(sty1);
+	sty1 = new StudentsYear();
+	sty1->name = "y2";
+	rules.addYearFast(sty1);
 	Subject *s1 = new Subject();
 	s1->name = "subject1";
 	rules.addSubjectFast(s1);
 
 	QStringList tags, students;
 	QStringList teachers;
-	teachers << "t1" << "t2";
+	students << "y1" << "y2";
 	const int duration = 2;
 	bool ok = rules.addSimpleActivityFast(NULL, 1, 1, teachers, "subject1", tags, students, duration, duration, true, false, 0, 0);
 	QVERIFY2(ok, "Could not add activity");
 
-	ConstraintTeachersMinContinuousGapInInterval *ctr = new ConstraintTeachersMinContinuousGapInInterval(100.0, 2, 2, 6);
+	ConstraintStudentsMinContinuousGapInInterval *ctr = new ConstraintStudentsMinContinuousGapInInterval(100.0, 2, 2, 6);
 	ok = rules.addTimeConstraint(ctr);
 	QVERIFY2(ok, "Could not add constraint");
 
@@ -444,7 +531,7 @@ void ConstraintTeachersMinContinuousGapInIntervalTest::AllTeachers_CheckFitness_
 	QCOMPARE(cl.count(), 0);
 
 	c.times[0] = rules.nDaysPerWeek*3+0;
-	c.teachersMatrixReady = false;
+	c.subgroupsMatrixReady = false;
 	fitness = ctr->fitness(c, rules, cl, dl);
 	QCOMPARE(fitness, 2.0);
 	QCOMPARE(cl.count(), 2);
@@ -452,6 +539,6 @@ void ConstraintTeachersMinContinuousGapInIntervalTest::AllTeachers_CheckFitness_
 	QCOMPARE(dl.count(), 2);
 }
 
-QTEST_APPLESS_MAIN(ConstraintTeachersMinContinuousGapInIntervalTest)
+QTEST_APPLESS_MAIN(ConstraintStudentsMinContinuousGapInIntervalTest)
 
-#include "tst_constraintteachersmincontinuousgapinintervaltest.moc"
+#include "tst_constraintstudentsmincontinuousgapinintervaltest.moc"
