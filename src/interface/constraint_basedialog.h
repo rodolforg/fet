@@ -93,6 +93,7 @@ public slots:
 	void removeConstraint();
 	void editComments();
 	void toggleActiveConstraint(bool checked);
+	void deleteItem();
 	void help();
 
 private:

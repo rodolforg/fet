@@ -19,6 +19,7 @@
 
 #include <QMessageBox>
 #include <QScrollBar>
+#include <QShortcut>
 
 #include <cassert>
 
@@ -50,6 +51,9 @@ ConstraintBaseDialog::ConstraintBaseDialog(QWidget* parent): QDialog(parent),
 	connect(activeCheckBox, SIGNAL(clicked(bool)), this, SLOT(toggleActiveConstraint(bool)));
 	connect(constraintsListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(modifyConstraint()));
 	connect(helpPushButton, SIGNAL(clicked()), this, SLOT(help()));
+
+	QShortcut* shortcut = new QShortcut(QKeySequence(Qt::Key_Delete), constraintsListWidget);
+	connect(shortcut, SIGNAL(activated()), this, SLOT(deleteItem()));
 
 	centerWidgetOnScreen(this);
 
@@ -226,6 +230,14 @@ void ConstraintBaseDialog::toggleActiveConstraint(bool checked)
 
 	filterChanged();
 	constraintsListWidget->setCurrentRow(i);
+}
+
+void ConstraintBaseDialog::deleteItem()
+{
+	QListWidgetItem * item = constraintsListWidget->currentItem();
+
+	if (item)
+		removeConstraint();
 }
 
 bool ConstraintBaseDialog::beforeRemoveConstraint()
