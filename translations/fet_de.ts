@@ -28482,7 +28482,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="2808"/>
         <source>Maximum hours daily=%1</source>
-        <translation>Minimale tägliche Stundenanzahl=%1</translation>
+        <translation>Maximale tägliche Stundenanzahl=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="2811"/>
