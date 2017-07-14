@@ -19,6 +19,7 @@
 
 #include <QMessageBox>
 #include <QScrollBar>
+#include <QShortcut>
 
 #include <cassert>
 
@@ -51,6 +52,9 @@ ConstraintBaseDialog::ConstraintBaseDialog(QWidget* parent): QDialog(parent),
 	connect(constraintsListWidget, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(modifyConstraint()));
 	connect(helpPushButton, SIGNAL(clicked()), this, SLOT(help()));
 
+	QShortcut* shortcut = new QShortcut(QKeySequence(Qt::Key_Delete), constraintsListWidget);
+	connect(shortcut, SIGNAL(activated()), this, SLOT(deleteItem()));
+
 	centerWidgetOnScreen(this);
 
 	modifyConstraintPushButton->setEnabled(false);
@@ -79,8 +83,13 @@ void ConstraintBaseDialog::setFilterWidget(QWidget *widget)
 
 void ConstraintBaseDialog::filterChanged()
 {
-	visibleConstraintsList.clear();
+	// The clear order matters.
+	// When clearing QListWidget, it emits currentRowChanged signal that
+	// with index 0 and QList size 0 also if in the inverse clearing order.
+	// Better solution: use model-view concept instead of this approach.
+	// Or may just use QObject::blockSignals(bool)
 	constraintsListWidget->clear();
+	visibleConstraintsList.clear();
 
 	fillConstraintList(visibleConstraintsList);
 
@@ -171,7 +180,7 @@ void ConstraintBaseDialog::removeConstraint()
 	QListWidgetItem* item;
 
 	switch( LongTextMessageBox::confirmation( this, tr("FET confirmation"),
-		s, tr("Yes"), tr("No"), 0, 0, 1 ) ){
+		s, tr("&Yes"), tr("&No"), 0, 0, 1 ) ){
 	case 0: // The user clicked the OK button or pressed Enter
 		if (!beforeRemoveConstraint())
 			break;
@@ -226,6 +235,14 @@ void ConstraintBaseDialog::toggleActiveConstraint(bool checked)
 
 	filterChanged();
 	constraintsListWidget->setCurrentRow(i);
+}
+
+void ConstraintBaseDialog::deleteItem()
+{
+	QListWidgetItem * item = constraintsListWidget->currentItem();
+
+	if (item)
+		removeConstraint();
 }
 
 bool ConstraintBaseDialog::beforeRemoveConstraint()
