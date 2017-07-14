@@ -26,6 +26,7 @@
 #include "longtextmessagebox.h"
 
 #include "centerwidgetonscreen.h"
+#include "timetable_defs.h"
 
 ConstraintBaseDialog::ConstraintBaseDialog(QWidget* parent): QDialog(parent),
 	  filterWidget(nullptr)
@@ -92,6 +93,17 @@ void ConstraintBaseDialog::filterChanged()
 	visibleConstraintsList.clear();
 
 	fillConstraintList(visibleConstraintsList);
+
+	if(USE_GUI_COLORS) {
+		for(int i = 0; i < constraintsListWidget->count(); ++i)
+		{
+			QListWidgetItem* item = constraintsListWidget->item(i);
+			if (isConstraintActive(visibleConstraintsList[i]))
+				item->setBackground(constraintsListWidget->palette().base());
+			else
+				item->setBackground(constraintsListWidget->palette().alternateBase());
+		}
+	}
 
 	if(constraintsListWidget->count()>0)
 		constraintsListWidget->setCurrentRow(0);
