@@ -33,6 +33,7 @@ using namespace std;
 
 #include "timetableviewstudentsform.h"
 #include "timetableviewteachersdayshorizontalform.h"
+#include "timetableviewteacherstimehorizontalform.h"
 #include "timetableviewroomsform.h"
 #include "timetableshowconflictsform.h"
 #include "timetableprintform.h"
@@ -3781,6 +3782,31 @@ void FetMainForm::on_timetableViewTeachersDaysHorizontalAction_triggered()
 	form->resizeRowsAfterShow();
 }
 
+void FetMainForm::on_timetableViewTeachersTimeHorizontalAction_triggered()
+{
+	if(!(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready)){
+		QMessageBox::information(this, tr("FET information"), tr("Please generate, firstly"));
+		return;
+	}
+
+	if(gt.rules.nInternalRooms!=gt.rules.roomsList.count()){
+		QMessageBox::warning(this, tr("FET warning"), tr("Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it"));
+		return;
+	}
+	if(gt.rules.nInternalTeachers!=gt.rules.teachersList.count()){
+		QMessageBox::warning(this, tr("FET warning"), tr("Cannot display the timetable, because you added or removed some teachers. Please regenerate the timetable and then view it"));
+		return;
+	}
+	
+	TimetableViewTeachersTimeHorizontalForm *form=new TimetableViewTeachersTimeHorizontalForm(this);
+	form->setWindowFlags(Qt::Window);
+	form->setAttribute(Qt::WA_DeleteOnClose);
+	forceCenterWidgetOnScreen(form);
+	restoreFETDialogGeometry(form);
+	form->show();
+	form->resizeRowsAfterShow();
+}
+
 void FetMainForm::on_timetableShowConflictsAction_triggered()
 {
 	if(!(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready)){
@@ -4879,7 +4905,9 @@ void FetMainForm::on_shortcutGenerateMultiplePushButton_clicked()
 
 void FetMainForm::on_shortcutViewTeachersPushButton_clicked()
 {
-	on_timetableViewTeachersDaysHorizontalAction_triggered();
+	menuView_teachers->popup(QCursor::pos());
+	//old
+	//on_timetableViewTeachersAction_triggered();
 }
 
 void FetMainForm::on_shortcutViewStudentsPushButton_clicked()

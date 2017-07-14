@@ -939,9 +939,16 @@
      <addaction name="timetableLockActivitiesEndStudentsDayAction"/>
      <addaction name="timetableUnlockActivitiesEndStudentsDayAction"/>
     </widget>
+    <widget class="QMenu" name="menuView_teachers">
+     <property name="title">
+      <string>View (&amp;teachers)</string>
+     </property>
+     <addaction name="timetableViewTeachersDaysHorizontalAction"/>
+     <addaction name="timetableViewTeachersTimeHorizontalAction"/>
+    </widget>
     <addaction name="timetableGenerateAction"/>
     <addaction name="separator"/>
-    <addaction name="timetableViewTeachersDaysHorizontalAction"/>
+    <addaction name="menuView_teachers"/>
     <addaction name="timetableViewStudentsAction"/>
     <addaction name="timetableViewRoomsAction"/>
     <addaction name="timetableShowConflictsAction"/>
@@ -1421,11 +1428,6 @@
   <action name="timetableViewStudentsAction">
    <property name="text">
     <string extracomment="Accelerator key (letter after ampersand) for &amp;Generate new, View (&amp;teachers), View (&amp;students), View (&amp;rooms), Show soft &amp;conflicts, &amp;Print, Generate &amp;multiple, must be different">View (&amp;students)</string>
-   </property>
-  </action>
-  <action name="timetableViewTeachersDaysHorizontalAction">
-   <property name="text">
-    <string extracomment="Accelerator key (letter after ampersand) for &amp;Generate new, View (&amp;teachers), View (&amp;students), View (&amp;rooms), Show soft &amp;conflicts, &amp;Print, Generate &amp;multiple, must be different">View (&amp;teachers)</string>
    </property>
   </action>
   <action name="timetableShowConflictsAction">
@@ -2525,6 +2527,16 @@
   <action name="dataTeachersSubjectsQualificationsStatisticsAction">
    <property name="text">
     <string comment="It means the statistics for the teachers - check the teacher's subject qualification">Teachers subjects qualifications statistics</string>
+   </property>
+  </action>
+  <action name="timetableViewTeachersDaysHorizontalAction">
+   <property name="text">
+    <string>Days horizontal</string>
+   </property>
+  </action>
+  <action name="timetableViewTeachersTimeHorizontalAction">
+   <property name="text">
+    <string>Time horizontal</string>
    </property>
   </action>
  </widget>
