@@ -83,8 +83,13 @@ void ConstraintBaseDialog::setFilterWidget(QWidget *widget)
 
 void ConstraintBaseDialog::filterChanged()
 {
-	visibleConstraintsList.clear();
+	// The clear order matters.
+	// When clearing QListWidget, it emits currentRowChanged signal that
+	// with index 0 and QList size 0 also if in the inverse clearing order.
+	// Better solution: use model-view concept instead of this approach.
+	// Or may just use QObject::blockSignals(bool)
 	constraintsListWidget->clear();
+	visibleConstraintsList.clear();
 
 	fillConstraintList(visibleConstraintsList);
 
