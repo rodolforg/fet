@@ -199,9 +199,8 @@ void ConstraintBaseDialog::removeConstraint()
 
 		doRemoveConstraint(ctr);
 
-		visibleConstraintsList.removeAt(i);
-		constraintsListWidget->setCurrentRow(-1);
 		item=constraintsListWidget->takeItem(i);
+		visibleConstraintsList.removeAt(i);
 		delete item;
 
 		afterRemoveConstraint();
