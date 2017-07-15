@@ -187,24 +187,21 @@ void ConstraintBaseDialog::removeConstraint()
 
 	QListWidgetItem* item;
 
-	switch( LongTextMessageBox::confirmation( this, tr("FET confirmation"),
-		s, tr("&Yes"), tr("&No"), 0, 0, 1 ) ){
-	case 0: // The user clicked the OK button or pressed Enter
-		if (!beforeRemoveConstraint())
-			break;
+	bool confirmedRemoval = 0 == LongTextMessageBox::confirmation( this, tr("FET confirmation"),
+														 s, tr("&Yes"), tr("&No"), 0, 0, 1 );
+	if (!confirmedRemoval) // The user clicked the Cancel button or pressed Escape
+		return;
 
-		doRemoveConstraint(ctr);
+	if (!beforeRemoveConstraint())
+		return;
 
-		item=constraintsListWidget->takeItem(i);
-		visibleConstraintsList.removeAt(i);
-		delete item;
+	doRemoveConstraint(ctr);
 
-		afterRemoveConstraint();
+	item=constraintsListWidget->takeItem(i);
+	visibleConstraintsList.removeAt(i);
+	delete item;
 
-		break;
-	case 1: // The user clicked the Cancel button or pressed Escape
-		break;
-	}
+	afterRemoveConstraint();
 
 	if(i>=constraintsListWidget->count())
 		i=constraintsListWidget->count()-1;
