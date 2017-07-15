@@ -169,11 +169,7 @@ void ConstraintBaseDialog::modifyConstraint()
 
 	if(i>=constraintsListWidget->count())
 		i=constraintsListWidget->count()-1;
-
-	if(i>=0)
-		constraintsListWidget->setCurrentRow(i);
-	else
-		this->constraintChanged(-1);
+	constraintsListWidget->setCurrentRow(i);
 }
 
 void ConstraintBaseDialog::removeConstraint()
@@ -212,10 +208,7 @@ void ConstraintBaseDialog::removeConstraint()
 
 	if(i>=constraintsListWidget->count())
 		i=constraintsListWidget->count()-1;
-	if(i>=0)
-		constraintsListWidget->setCurrentRow(i);
-	else
-		this->constraintChanged(-1);
+	constraintsListWidget->setCurrentRow(i);
 }
 
 void ConstraintBaseDialog::editComments()
