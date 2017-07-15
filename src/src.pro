@@ -146,7 +146,7 @@ SOURCES += \
 	interface/timetableviewroomsform.cpp \
 	interface/yearsform.cpp \
 	interface/timetableshowconflictsform.cpp \
-	interface/timetableviewteachersform.cpp \
+	interface/timetableviewteachersdayshorizontalform.cpp \
 	interface/hoursform.cpp \
 	interface/daysform.cpp \
 	interface/roomsform.cpp \
@@ -614,7 +614,7 @@ HEADERS += \
 	interface/timetableviewroomsform.h \
 	interface/yearsform.h \
 	interface/timetableshowconflictsform.h \
-	interface/timetableviewteachersform.h \
+	interface/timetableviewteachersdayshorizontalform.h \
 	interface/hoursform.h \
 	interface/daysform.h \
 	interface/roomsform.h \
@@ -1069,7 +1069,7 @@ FORMS += \
 	interface/timetableviewroomsform_template.ui \
 	interface/yearsform_template.ui \
 	interface/timetableshowconflictsform_template.ui \
-	interface/timetableviewteachersform_template.ui \
+	interface/timetableviewteachersdayshorizontalform_template.ui \
 	interface/daysform_template.ui \
 	interface/hoursform_template.ui \
 	interface/roomsform_template.ui \

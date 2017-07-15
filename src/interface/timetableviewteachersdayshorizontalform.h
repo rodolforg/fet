@@ -1,5 +1,5 @@
 /***************************************************************************
-                          timetableviewteachersform.h  -  description
+                          timetableviewteachersdayshorizontalform.h  -  description
                              -------------------
     begin                : Wed May 14 2003
     copyright            : (C) 2003 by Lalescu Liviu
@@ -15,22 +15,22 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TIMETABLEVIEWTEACHERSFORM_H
-#define TIMETABLEVIEWTEACHERSFORM_H
+#ifndef TIMETABLEVIEWTEACHERSDAYSHORIZONTALFORM_H
+#define TIMETABLEVIEWTEACHERSDAYSHORIZONTALFORM_H
 
 #include <QResizeEvent>
 
 class QColor; //by Marco Vassura
 
-#include "ui_timetableviewteachersform_template.h"
+#include "ui_timetableviewteachersdayshorizontalform_template.h"
 
-class TimetableViewTeachersForm : public QDialog, public Ui::TimetableViewTeachersForm_template
+class TimetableViewTeachersDaysHorizontalForm : public QDialog, public Ui::TimetableViewTeachersDaysHorizontalForm_template
 {
 	Q_OBJECT
 
 public:
-	TimetableViewTeachersForm(QWidget* parent);
-	~TimetableViewTeachersForm();
+	TimetableViewTeachersDaysHorizontalForm(QWidget* parent);
+	~TimetableViewTeachersDaysHorizontalForm();
 	
 	void lock(bool lockTime, bool lockSpace);
 	

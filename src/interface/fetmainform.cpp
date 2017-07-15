@@ -32,7 +32,7 @@ using namespace std;
 #include "timetablegeneratemultipleform.h"
 
 #include "timetableviewstudentsform.h"
-#include "timetableviewteachersform.h"
+#include "timetableviewteachersdayshorizontalform.h"
 #include "timetableviewroomsform.h"
 #include "timetableshowconflictsform.h"
 #include "timetableprintform.h"
@@ -3756,7 +3756,7 @@ void FetMainForm::on_timetableViewStudentsAction_triggered()
 	form->resizeRowsAfterShow();
 }
 
-void FetMainForm::on_timetableViewTeachersAction_triggered()
+void FetMainForm::on_timetableViewTeachersDaysHorizontalAction_triggered()
 {
 	if(!(students_schedule_ready && teachers_schedule_ready && rooms_schedule_ready)){
 		QMessageBox::information(this, tr("FET information"), tr("Please generate, firstly"));
@@ -3772,7 +3772,7 @@ void FetMainForm::on_timetableViewTeachersAction_triggered()
 		return;
 	}
 	
-	TimetableViewTeachersForm *form=new TimetableViewTeachersForm(this);
+	TimetableViewTeachersDaysHorizontalForm *form=new TimetableViewTeachersDaysHorizontalForm(this);
 	form->setWindowFlags(Qt::Window);
 	form->setAttribute(Qt::WA_DeleteOnClose);
 	forceCenterWidgetOnScreen(form);
@@ -4879,7 +4879,7 @@ void FetMainForm::on_shortcutGenerateMultiplePushButton_clicked()
 
 void FetMainForm::on_shortcutViewTeachersPushButton_clicked()
 {
-	on_timetableViewTeachersAction_triggered();
+	on_timetableViewTeachersDaysHorizontalAction_triggered();
 }
 
 void FetMainForm::on_shortcutViewStudentsPushButton_clicked()

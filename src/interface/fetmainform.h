@@ -338,7 +338,7 @@ public slots:
 
 	void on_timetableGenerateAction_triggered();
 	void on_timetableViewStudentsAction_triggered();
-	void on_timetableViewTeachersAction_triggered();
+	void on_timetableViewTeachersDaysHorizontalAction_triggered();
 	void on_timetableViewRoomsAction_triggered();
 	void on_timetableShowConflictsAction_triggered();
 	void on_timetablePrintAction_triggered();

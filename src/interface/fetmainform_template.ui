@@ -941,7 +941,7 @@
     </widget>
     <addaction name="timetableGenerateAction"/>
     <addaction name="separator"/>
-    <addaction name="timetableViewTeachersAction"/>
+    <addaction name="timetableViewTeachersDaysHorizontalAction"/>
     <addaction name="timetableViewStudentsAction"/>
     <addaction name="timetableViewRoomsAction"/>
     <addaction name="timetableShowConflictsAction"/>
@@ -1423,7 +1423,7 @@
     <string extracomment="Accelerator key (letter after ampersand) for &amp;Generate new, View (&amp;teachers), View (&amp;students), View (&amp;rooms), Show soft &amp;conflicts, &amp;Print, Generate &amp;multiple, must be different">View (&amp;students)</string>
    </property>
   </action>
-  <action name="timetableViewTeachersAction">
+  <action name="timetableViewTeachersDaysHorizontalAction">
    <property name="text">
     <string extracomment="Accelerator key (letter after ampersand) for &amp;Generate new, View (&amp;teachers), View (&amp;students), View (&amp;rooms), Show soft &amp;conflicts, &amp;Print, Generate &amp;multiple, must be different">View (&amp;teachers)</string>
    </property>

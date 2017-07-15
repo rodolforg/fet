@@ -1,5 +1,5 @@
 /***************************************************************************
-                          timetableviewteachersform.cpp  -  description
+                          timetableviewteachersdayshorizontalform.cpp  -  description
                              -------------------
     begin                : Wed May 14 2003
     copyright            : (C) 2003 by Lalescu Liviu
@@ -22,7 +22,7 @@
 #include "longtextmessagebox.h"
 
 #include "fetmainform.h"
-#include "timetableviewteachersform.h"
+#include "timetableviewteachersdayshorizontalform.h"
 #include "timetable_defs.h"
 #include "timetable.h"
 #include "solution.h"
@@ -81,7 +81,7 @@ extern QSet <int> idsOfPermanentlyLockedSpace;	//care about locked activities in
 
 extern CommunicationSpinBox communicationSpinBox;	//small hint to sync the forms
 
-TimetableViewTeachersForm::TimetableViewTeachersForm(QWidget* parent): QDialog(parent)
+TimetableViewTeachersDaysHorizontalForm::TimetableViewTeachersDaysHorizontalForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);
 	
@@ -198,7 +198,7 @@ TimetableViewTeachersForm::TimetableViewTeachersForm(QWidget* parent): QDialog(p
 	connect(&communicationSpinBox, SIGNAL(valueChanged(int)), this, SLOT(updateTeachersTimetableTable()));
 }
 
-TimetableViewTeachersForm::~TimetableViewTeachersForm()
+TimetableViewTeachersDaysHorizontalForm::~TimetableViewTeachersDaysHorizontalForm()
 {
 	saveFETDialogGeometry(this);
 
@@ -211,13 +211,13 @@ TimetableViewTeachersForm::~TimetableViewTeachersForm()
 	settings.setValue(this->metaObject()->className()+QString("/horizontal-splitter-state"), horizontalSplitter->saveState());
 }
 
-void TimetableViewTeachersForm::resizeRowsAfterShow()
+void TimetableViewTeachersDaysHorizontalForm::resizeRowsAfterShow()
 {
 	teachersTimetableTable->resizeRowsToContents();
 //	tableWidgetUpdateBug(teachersTimetableTable);
 }
 
-void TimetableViewTeachersForm::teacherChanged(const QString &teacherName)
+void TimetableViewTeachersDaysHorizontalForm::teacherChanged(const QString &teacherName)
 {
 	if(!(students_schedule_ready && teachers_schedule_ready)){
 		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view teachers timetable dialog - please generate a new timetable"));
@@ -237,7 +237,7 @@ void TimetableViewTeachersForm::teacherChanged(const QString &teacherName)
 	updateTeachersTimetableTable();
 }
 
-void TimetableViewTeachersForm::updateTeachersTimetableTable(){
+void TimetableViewTeachersDaysHorizontalForm::updateTeachersTimetableTable(){
 	if(!(students_schedule_ready && teachers_schedule_ready)){
 		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view teachers timetable dialog - please generate a new timetable "
 		"or close the timetable view teachers dialog"));
@@ -387,7 +387,7 @@ void TimetableViewTeachersForm::updateTeachersTimetableTable(){
 	detailActivity(teachersTimetableTable->currentItem());
 }
 
-void TimetableViewTeachersForm::resizeEvent(QResizeEvent* event)
+void TimetableViewTeachersDaysHorizontalForm::resizeEvent(QResizeEvent* event)
 {
 	QDialog::resizeEvent(event);
 
@@ -395,7 +395,7 @@ void TimetableViewTeachersForm::resizeEvent(QResizeEvent* event)
 }
 
 //begin by Marco Vassura
-QColor TimetableViewTeachersForm::stringToColor(QString s)
+QColor TimetableViewTeachersDaysHorizontalForm::stringToColor(QString s)
 {
 	// CRC-24 Based on RFC 2440 Section 6.1
 	unsigned long crc = 0xB704CEL;
@@ -414,14 +414,14 @@ QColor TimetableViewTeachersForm::stringToColor(QString s)
 }
 //end by Marco Vassura
 
-void TimetableViewTeachersForm::currentItemChanged(QTableWidgetItem* current, QTableWidgetItem* previous)
+void TimetableViewTeachersDaysHorizontalForm::currentItemChanged(QTableWidgetItem* current, QTableWidgetItem* previous)
 {
 	Q_UNUSED(previous);
 	
 	detailActivity(current);
 }
 
-void TimetableViewTeachersForm::detailActivity(QTableWidgetItem* item){
+void TimetableViewTeachersDaysHorizontalForm::detailActivity(QTableWidgetItem* item){
 	if(item==NULL){
 		detailsTextEdit->setPlainText(QString(""));
 		return;
@@ -519,22 +519,22 @@ void TimetableViewTeachersForm::detailActivity(QTableWidgetItem* item){
 	}
 }
 
-void TimetableViewTeachersForm::lockTime()
+void TimetableViewTeachersDaysHorizontalForm::lockTime()
 {
 	this->lock(true, false);
 }
 	
-void TimetableViewTeachersForm::lockSpace()
+void TimetableViewTeachersDaysHorizontalForm::lockSpace()
 {
 	this->lock(false, true);
 }
 
-void TimetableViewTeachersForm::lockTimeSpace()
+void TimetableViewTeachersDaysHorizontalForm::lockTimeSpace()
 {
 	this->lock(true, true);
 }
 			
-void TimetableViewTeachersForm::lock(bool lockTime, bool lockSpace)
+void TimetableViewTeachersDaysHorizontalForm::lock(bool lockTime, bool lockSpace)
 {
 	//cout<<"teachers begin, isc="<<gt.rules.internalStructureComputed<<endl;
 
@@ -803,7 +803,7 @@ void TimetableViewTeachersForm::lock(bool lockTime, bool lockSpace)
 	//cout<<endl;
 }
 
-void TimetableViewTeachersForm::help()
+void TimetableViewTeachersDaysHorizontalForm::help()
 {
 	QString s="";
 	//s+=QCoreApplication::translate("TimetableViewForm", "You can drag sections to increase/decrease them.");
