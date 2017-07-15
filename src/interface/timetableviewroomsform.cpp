@@ -75,10 +75,10 @@ extern Solution best_solution;
 extern Matrix2D<double> notAllowedRoomTimePercentages;
 extern Matrix2D<bool> breakDayHour;
 
-extern QSet <int> idsOfLockedTime;		//care about locked activities in view forms
-extern QSet <int> idsOfLockedSpace;		//care about locked activities in view forms
-extern QSet <int> idsOfPermanentlyLockedTime;	//care about locked activities in view forms
-extern QSet <int> idsOfPermanentlyLockedSpace;	//care about locked activities in view forms
+extern QSet<int> idsOfLockedTime;		//care about locked activities in view forms
+extern QSet<int> idsOfLockedSpace;		//care about locked activities in view forms
+extern QSet<int> idsOfPermanentlyLockedTime;	//care about locked activities in view forms
+extern QSet<int> idsOfPermanentlyLockedSpace;	//care about locked activities in view forms
 
 extern CommunicationSpinBox communicationSpinBox;	//small hint to sync the forms
 
