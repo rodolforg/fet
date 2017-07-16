@@ -20,9 +20,21 @@
 
 #include <QResizeEvent>
 
+#include <QStyledItemDelegate>
+
 class QColor; //by Marco Vassura
 
 #include "ui_timetableviewteacherstimehorizontalform_template.h"
+
+class TimetableViewTeachersTimeHorizontalDelegate: public QStyledItemDelegate
+{
+	Q_OBJECT
+	
+public:
+	TimetableViewTeachersTimeHorizontalDelegate(QWidget* parent=NULL): QStyledItemDelegate(parent){}
+	
+	void paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const override;
+};
 
 class TimetableViewTeachersTimeHorizontalForm : public QDialog, public Ui::TimetableViewTeachersTimeHorizontalForm_template
 {

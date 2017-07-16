@@ -82,6 +82,51 @@ extern QSet<int> idsOfPermanentlyLockedSpace;	//care about locked activities in 
 extern CommunicationSpinBox communicationSpinBox;	//small hint to sync the forms
 
 static int initialRecommendedHeight;
+static const int MINIMUM_WIDTH_SPIN_BOX_VALUE=9;
+static const int MINIMUM_HEIGHT_SPIN_BOX_VALUE=9;
+
+static QAbstractItemDelegate* oldItemDelegate;
+static TimetableViewTeachersTimeHorizontalDelegate* itemDelegate;
+
+//static QTableWidget* table;
+
+void TimetableViewTeachersTimeHorizontalDelegate::paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const
+{
+	QStyledItemDelegate::paint(painter, option, index);
+
+	//int day=index.column()/gt.rules.nHoursPerDay;
+	int hour=index.column()%gt.rules.nHoursPerDay;
+
+	/*if(day>=0 && day<gt.rules.nDaysPerWeek-1 && hour==gt.rules.nHoursPerDay-1){
+		QPen pen(painter->pen());
+		pen.setWidth(2);
+		painter->setPen(pen);
+		painter->drawLine(option.rect.topRight(), option.rect.bottomRight());
+	}*/
+	
+	/*assert(table!=NULL);
+	QBrush bg(table->item(index.row(), index.column())->background());
+	QPen pen(painter->pen());
+
+	double brightness = bg.color().redF()*0.299 + bg.color().greenF()*0.587 + bg.color().blueF()*0.114;
+	if (brightness<0.5)
+		pen.setColor(Qt::white);
+	else
+		pen.setColor(Qt::black);
+
+	painter->setPen(pen);*/
+	
+	if(hour==0)
+		painter->drawLine(option.rect.topLeft(), option.rect.bottomLeft());
+	if(hour==gt.rules.nHoursPerDay-1)
+		painter->drawLine(option.rect.topRight(), option.rect.bottomRight());
+
+	if(index.row()==0)
+		painter->drawLine(option.rect.topLeft(), option.rect.topRight());
+	if(index.row()==gt.rules.nInternalTeachers-1)
+		painter->drawLine(option.rect.bottomLeft(), option.rect.bottomRight());
+}
+
 
 TimetableViewTeachersTimeHorizontalForm::TimetableViewTeachersTimeHorizontalForm(QWidget* parent): QDialog(parent)
 {
@@ -160,6 +205,11 @@ TimetableViewTeachersTimeHorizontalForm::TimetableViewTeachersTimeHorizontalForm
 
 	LockUnlock::increaseCommunicationSpinBox();
 	
+	//table=teachersTimetableTable;
+	oldItemDelegate=teachersTimetableTable->itemDelegate();
+	itemDelegate=new TimetableViewTeachersTimeHorizontalDelegate();
+	teachersTimetableTable->setItemDelegate(itemDelegate);
+	
 	teachersTimetableTable->setRowCount(gt.rules.nInternalTeachers);
 	teachersTimetableTable->setColumnCount(gt.rules.nDaysPerWeek*gt.rules.nHoursPerDay);
 	for(int d=0; d<gt.rules.nDaysPerWeek; d++){
@@ -197,37 +247,47 @@ TimetableViewTeachersTimeHorizontalForm::TimetableViewTeachersTimeHorizontalForm
 	int h;
 	int w;
 
-	if(settings.contains(this->metaObject()->className()+QString("/vertical-header-size")))
+	if(settings.contains(this->metaObject()->className()+QString("/vertical-header-size"))){
 		h=settings.value(this->metaObject()->className()+QString("/vertical-header-size")).toInt();
-	else
-		h=0;
+		if(h==0)
+			h=MINIMUM_HEIGHT_SPIN_BOX_VALUE;
+	}
+	else{
+		h=MINIMUM_HEIGHT_SPIN_BOX_VALUE;
+	}
 //	if(h==0)
 //		h=initialRecommendedHeight;
 
-	if(settings.contains(this->metaObject()->className()+QString("/horizontal-header-size")))
+	if(settings.contains(this->metaObject()->className()+QString("/horizontal-header-size"))){
 		w=settings.value(this->metaObject()->className()+QString("/horizontal-header-size")).toInt();
-	else
-		w=0;
+		if(w==0)
+			w=MINIMUM_WIDTH_SPIN_BOX_VALUE;
+	}
+	else{
+		w=MINIMUM_WIDTH_SPIN_BOX_VALUE;
+	}
 //	if(w==0)
 //		w=2*initialRecommendedHeight;
 		
 	widthSpinBox->setSuffix(QString(" ")+tr("px", "Abbreviation for pixels"));
-	widthSpinBox->setMinimum(0);
+	widthSpinBox->setMinimum(MINIMUM_WIDTH_SPIN_BOX_VALUE);
 #if QT_VERSION >= 0x050200
 	widthSpinBox->setMaximum(teachersTimetableTable->verticalHeader()->maximumSectionSize());
 #else
 	widthSpinBox->setMaximum(maxScreenWidth(this));
 #endif
 	widthSpinBox->setValue(w);
+	widthSpinBox->setSpecialValueText(tr("Automatic"));
 	
 	heightSpinBox->setSuffix(QString(" ")+tr("px", "Abbreviation for pixels"));
-	heightSpinBox->setMinimum(0);
+	heightSpinBox->setMinimum(MINIMUM_HEIGHT_SPIN_BOX_VALUE);
 #if QT_VERSION >= 0x050200
 	heightSpinBox->setMaximum(teachersTimetableTable->verticalHeader()->maximumSectionSize());
 #else
 	heightSpinBox->setMaximum(maxScreenWidth(this));
 #endif
 	heightSpinBox->setValue(h);
+	heightSpinBox->setSpecialValueText(tr("Automatic"));
 	
 	widthSpinBoxValueChanged();
 	heightSpinBoxValueChanged();
@@ -270,8 +330,20 @@ TimetableViewTeachersTimeHorizontalForm::~TimetableViewTeachersTimeHorizontalFor
 	settings.setValue(this->metaObject()->className()+QString("/unlock-radio-button"), unlockRadioButton->isChecked());
 	settings.setValue(this->metaObject()->className()+QString("/toggle-radio-button"), toggleRadioButton->isChecked());
 
-	settings.setValue(this->metaObject()->className()+QString("/vertical-header-size"), heightSpinBox->value());
-	settings.setValue(this->metaObject()->className()+QString("/horizontal-header-size"), widthSpinBox->value());
+	if(heightSpinBox->value()<=MINIMUM_HEIGHT_SPIN_BOX_VALUE)
+		settings.setValue(this->metaObject()->className()+QString("/vertical-header-size"), 0);
+	else
+		settings.setValue(this->metaObject()->className()+QString("/vertical-header-size"), heightSpinBox->value());
+		
+	if(widthSpinBox->value()<=MINIMUM_WIDTH_SPIN_BOX_VALUE)
+		settings.setValue(this->metaObject()->className()+QString("/horizontal-header-size"), 0);
+	else
+		settings.setValue(this->metaObject()->className()+QString("/horizontal-header-size"), widthSpinBox->value());
+		
+	teachersTimetableTable->setItemDelegate(oldItemDelegate);
+	delete itemDelegate;
+	
+	//table=NULL;
 }
 
 void TimetableViewTeachersTimeHorizontalForm::resizeRowsAfterShow()
@@ -898,7 +970,7 @@ void TimetableViewTeachersTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 
 void TimetableViewTeachersTimeHorizontalForm::widthSpinBoxValueChanged()
 {
-	if(widthSpinBox->value()==0)
+	if(widthSpinBox->value()==MINIMUM_WIDTH_SPIN_BOX_VALUE)
 		teachersTimetableTable->horizontalHeader()->setDefaultSectionSize(2*initialRecommendedHeight);
 	else
 		teachersTimetableTable->horizontalHeader()->setDefaultSectionSize(widthSpinBox->value());
@@ -906,7 +978,7 @@ void TimetableViewTeachersTimeHorizontalForm::widthSpinBoxValueChanged()
 
 void TimetableViewTeachersTimeHorizontalForm::heightSpinBoxValueChanged()
 {
-	if(heightSpinBox->value()==0)
+	if(heightSpinBox->value()==MINIMUM_HEIGHT_SPIN_BOX_VALUE)
 		teachersTimetableTable->verticalHeader()->setDefaultSectionSize(initialRecommendedHeight);
 	else
 		teachersTimetableTable->verticalHeader()->setDefaultSectionSize(heightSpinBox->value());
