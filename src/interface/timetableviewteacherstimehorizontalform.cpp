@@ -1004,7 +1004,7 @@ void TimetableViewTeachersTimeHorizontalForm::help()
 	s+=tr("If a whole column (day+hour) is selected, there will be locked/unlocked also the dummy activities (activities with no teacher) from that column.");
 	
 	s+="\n\n";
-	s+=tr("TimetableViewForm", "A bold font cell means that the activity is locked in time, either permanently or not.");
+	s+=tr("A bold font cell means that the activity is locked in time, either permanently or not.");
 
 	LongTextMessageBox::largeInformation(this, tr("FET help"), s);
 }
