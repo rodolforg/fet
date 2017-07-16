@@ -142,7 +142,8 @@ SOURCES += \
 	interface/helponimperfectconstraints.cpp \
 	interface/helponstudentsminhoursdaily.cpp \
 	interface/settingstimetablehtmllevelform.cpp \
-	interface/timetableviewstudentsform.cpp \
+	interface/timetableviewstudentsdayshorizontalform.cpp \
+	interface/timetableviewstudentstimehorizontalform.cpp \
 	interface/timetableviewroomsform.cpp \
 	interface/yearsform.cpp \
 	interface/timetableshowconflictsform.cpp \
@@ -611,7 +612,8 @@ HEADERS += \
 	interface/helponimperfectconstraints.h \
 	interface/helponstudentsminhoursdaily.h \
 	interface/settingstimetablehtmllevelform.h \
-	interface/timetableviewstudentsform.h \
+	interface/timetableviewstudentsdayshorizontalform.h \
+	interface/timetableviewstudentstimehorizontalform.h \
 	interface/timetableviewroomsform.h \
 	interface/yearsform.h \
 	interface/timetableshowconflictsform.h \
@@ -1067,7 +1069,8 @@ FORMS += \
 	interface/teachersform_template.ui \
 	interface/timetablegenerateform_template.ui \
 	interface/timetablegeneratemultipleform_template.ui \
-	interface/timetableviewstudentsform_template.ui \
+	interface/timetableviewstudentsdayshorizontalform_template.ui \
+	interface/timetableviewstudentstimehorizontalform_template.ui \
 	interface/timetableviewroomsform_template.ui \
 	interface/yearsform_template.ui \
 	interface/timetableshowconflictsform_template.ui \

@@ -58,7 +58,8 @@ static QSet<QString> languagesSet;
 #include "helpinstructionsform.h"
 
 #include "timetableshowconflictsform.h"
-#include "timetableviewstudentsform.h"
+#include "timetableviewstudentsdayshorizontalform.h"
+#include "timetableviewstudentstimehorizontalform.h"
 #include "timetableviewteachersdayshorizontalform.h"
 #include "timetableviewteacherstimehorizontalform.h"
 #include "timetableviewroomsform.h"
@@ -612,10 +613,17 @@ void setLanguage(QCoreApplication& qapplication, QWidget* parent)
 			//////
 			
 			//timetable
-			TimetableViewStudentsForm* vsf=qobject_cast<TimetableViewStudentsForm*>(wi);
-			if(vsf!=NULL){
-				vsf->retranslateUi(vsf);
-				vsf->updateStudentsTimetableTable();
+			TimetableViewStudentsDaysHorizontalForm* vsdf=qobject_cast<TimetableViewStudentsDaysHorizontalForm*>(wi);
+			if(vsdf!=NULL){
+				vsdf->retranslateUi(vsdf);
+				vsdf->updateStudentsTimetableTable();
+				continue;
+			}
+
+			TimetableViewStudentsTimeHorizontalForm* vstf=qobject_cast<TimetableViewStudentsTimeHorizontalForm*>(wi);
+			if(vstf!=NULL){
+				vstf->retranslateUi(vstf);
+				vstf->updateStudentsTimetableTable();
 				continue;
 			}
 

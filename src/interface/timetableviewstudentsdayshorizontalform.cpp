@@ -1,5 +1,5 @@
 /***************************************************************************
-                          timetableviewstudentsform.cpp  -  description
+                          timetableviewstudentsdayshorizontalform.cpp  -  description
                              -------------------
     begin                : Tue Apr 22 2003
     copyright            : (C) 2003 by Lalescu Liviu
@@ -22,7 +22,7 @@
 #include "longtextmessagebox.h"
 
 #include "fetmainform.h"
-#include "timetableviewstudentsform.h"
+#include "timetableviewstudentsdayshorizontalform.h"
 #include "timetable_defs.h"
 #include "timetable.h"
 #include "fet.h"
@@ -79,7 +79,7 @@ extern QSet<int> idsOfPermanentlyLockedSpace;	//care about locked activities in 
 
 extern CommunicationSpinBox communicationSpinBox;	//small hint to sync the forms
 
-TimetableViewStudentsForm::TimetableViewStudentsForm(QWidget* parent): QDialog(parent)
+TimetableViewStudentsDaysHorizontalForm::TimetableViewStudentsDaysHorizontalForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);
 	
@@ -201,7 +201,7 @@ TimetableViewStudentsForm::TimetableViewStudentsForm(QWidget* parent): QDialog(p
 	connect(&communicationSpinBox, SIGNAL(valueChanged(int)), this, SLOT(updateStudentsTimetableTable()));
 }
 
-TimetableViewStudentsForm::~TimetableViewStudentsForm()
+TimetableViewStudentsDaysHorizontalForm::~TimetableViewStudentsDaysHorizontalForm()
 {
 	saveFETDialogGeometry(this);
 
@@ -218,13 +218,13 @@ TimetableViewStudentsForm::~TimetableViewStudentsForm()
 	settings.setValue(this->metaObject()->className()+QString("/horizontal-splitter-state"), horizontalSplitter->saveState());
 }
 
-void TimetableViewStudentsForm::resizeRowsAfterShow()
+void TimetableViewStudentsDaysHorizontalForm::resizeRowsAfterShow()
 {
 	studentsTimetableTable->resizeRowsToContents();
 //	tableWidgetUpdateBug(studentsTimetableTable);
 }
 
-void TimetableViewStudentsForm::yearChanged(const QString &yearName)
+void TimetableViewStudentsDaysHorizontalForm::yearChanged(const QString &yearName)
 {
 	if(!(students_schedule_ready && teachers_schedule_ready)){
 		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view students timetable dialog - please generate a new timetable"));
@@ -255,7 +255,7 @@ void TimetableViewStudentsForm::yearChanged(const QString &yearName)
 		groupsListWidget->setCurrentRow(0);
 }
 
-void TimetableViewStudentsForm::groupChanged(const QString &groupName)
+void TimetableViewStudentsDaysHorizontalForm::groupChanged(const QString &groupName)
 {
 	if(!(students_schedule_ready && teachers_schedule_ready)){
 		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view students timetable dialog - please generate a new timetable"));
@@ -300,14 +300,14 @@ void TimetableViewStudentsForm::groupChanged(const QString &groupName)
 		subgroupsListWidget->setCurrentRow(0);
 }
 
-void TimetableViewStudentsForm::subgroupChanged(const QString &subgroupName)
+void TimetableViewStudentsDaysHorizontalForm::subgroupChanged(const QString &subgroupName)
 {
 	Q_UNUSED(subgroupName);
 	
 	updateStudentsTimetableTable();
 }
 
-void TimetableViewStudentsForm::updateStudentsTimetableTable(){
+void TimetableViewStudentsDaysHorizontalForm::updateStudentsTimetableTable(){
 	if(!(students_schedule_ready && teachers_schedule_ready)){
 		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view students timetable dialog - please generate a new timetable "
 		"or close the timetable view students dialog"));
@@ -461,7 +461,7 @@ void TimetableViewStudentsForm::updateStudentsTimetableTable(){
 }
 
 //begin by Marco Vassura
-QColor TimetableViewStudentsForm::stringToColor(QString s)
+QColor TimetableViewStudentsDaysHorizontalForm::stringToColor(QString s)
 {
 	// CRC-24 Based on RFC 2440 Section 6.1
 	unsigned long crc = 0xB704CEL;
@@ -480,21 +480,21 @@ QColor TimetableViewStudentsForm::stringToColor(QString s)
 }
 //end by Marco Vassura
 
-void TimetableViewStudentsForm::resizeEvent(QResizeEvent* event)
+void TimetableViewStudentsDaysHorizontalForm::resizeEvent(QResizeEvent* event)
 {
 	QDialog::resizeEvent(event);
 
 	studentsTimetableTable->resizeRowsToContents();
 }
 
-void TimetableViewStudentsForm::currentItemChanged(QTableWidgetItem* current, QTableWidgetItem* previous)
+void TimetableViewStudentsDaysHorizontalForm::currentItemChanged(QTableWidgetItem* current, QTableWidgetItem* previous)
 {
 	Q_UNUSED(previous);
 	
 	detailActivity(current);
 }
 
-void TimetableViewStudentsForm::detailActivity(QTableWidgetItem* item)
+void TimetableViewStudentsDaysHorizontalForm::detailActivity(QTableWidgetItem* item)
 {
 	if(item==NULL){
 		detailsTextEdit->setPlainText(QString(""));
@@ -605,22 +605,22 @@ void TimetableViewStudentsForm::detailActivity(QTableWidgetItem* item)
 	detailsTextEdit->setPlainText(s);
 }
 
-void TimetableViewStudentsForm::lockTime()
+void TimetableViewStudentsDaysHorizontalForm::lockTime()
 {
 	lock(true, false);
 }
 
-void TimetableViewStudentsForm::lockSpace()
+void TimetableViewStudentsDaysHorizontalForm::lockSpace()
 {
 	lock(false, true);
 }
 
-void TimetableViewStudentsForm::lockTimeSpace()
+void TimetableViewStudentsDaysHorizontalForm::lockTimeSpace()
 {
 	lock(true, true);
 }
 
-void TimetableViewStudentsForm::lock(bool lockTime, bool lockSpace)
+void TimetableViewStudentsDaysHorizontalForm::lock(bool lockTime, bool lockSpace)
 {
 	if(simulation_running){
 		QMessageBox::information(this, tr("FET information"),
@@ -905,7 +905,7 @@ void TimetableViewStudentsForm::lock(bool lockTime, bool lockSpace)
 	//cout<<endl;
 }
 
-void TimetableViewStudentsForm::help()
+void TimetableViewStudentsDaysHorizontalForm::help()
 {
 	QString s="";
 	//s+=QCoreApplication::translate("TimetableViewForm", "You can drag sections to increase/decrease them.");
