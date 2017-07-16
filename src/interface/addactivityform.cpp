@@ -468,10 +468,13 @@ void AddActivityForm::splitLineEditTextChanged(const QString &text)
 void AddActivityForm::createSubject()
 {
 	SubjectsForm form(this);
-	form.addSubject();
+	bool added = form.addSubject();
+	if (!added)
+		return;
 	updateSubjectsComboBox();
 	int addedSubjectIndex = subjectsComboBox->count()-1;
 	subjectsComboBox->setCurrentIndex(addedSubjectIndex);
+	subjectNamesSet.insert(subjectsComboBox->currentText());
 }
 
 void AddActivityForm::splitChanged()
