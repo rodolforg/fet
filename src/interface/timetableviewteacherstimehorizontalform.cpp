@@ -212,9 +212,47 @@ TimetableViewTeachersTimeHorizontalForm::TimetableViewTeachersTimeHorizontalForm
 	
 	teachersTimetableTable->setRowCount(gt.rules.nInternalTeachers);
 	teachersTimetableTable->setColumnCount(gt.rules.nDaysPerWeek*gt.rules.nHoursPerDay);
+	
+	bool min2letters=false;
 	for(int d=0; d<gt.rules.nDaysPerWeek; d++){
 		for(int h=0; h<gt.rules.nHoursPerDay; h++){
-			QTableWidgetItem* item=new QTableWidgetItem(gt.rules.daysOfTheWeek[d]+"\n"+gt.rules.hoursOfTheDay[h]);
+			if(gt.rules.daysOfTheWeek[d].size()>gt.rules.nHoursPerDay){
+				min2letters=true;
+				break;
+			}
+		}
+		if(min2letters)
+			break;
+	}
+	//QMessageBox::information(this, "", QString::number(min2letters));
+	for(int d=0; d<gt.rules.nDaysPerWeek; d++){
+		QString dayName=gt.rules.daysOfTheWeek[d];
+		int t=dayName.size();
+		int q=t/gt.rules.nHoursPerDay;
+		int r=t%gt.rules.nHoursPerDay;
+		QStringList list;
+		
+		if(q==0)
+			q=1;
+		
+		for(int i=0; i<gt.rules.nHoursPerDay; i++){
+			if(!min2letters){
+				list.append(dayName.left(1));
+				dayName.remove(0, 1);
+			}
+			else if(i<r || q<=1){
+				assert(q==1);
+				list.append(dayName.left(q+1));
+				dayName.remove(0, q+1);
+			}
+			else{
+				list.append(dayName.left(q));
+				dayName.remove(0, q);
+			}
+		}
+	
+		for(int h=0; h<gt.rules.nHoursPerDay; h++){
+			QTableWidgetItem* item=new QTableWidgetItem(list.at(h)+"\n"+gt.rules.hoursOfTheDay[h]);
 			item->setToolTip(gt.rules.daysOfTheWeek[d]+"\n"+gt.rules.hoursOfTheDay[h]);
 			teachersTimetableTable->setHorizontalHeaderItem(d*gt.rules.nHoursPerDay+h, item);
 		}
@@ -382,6 +420,7 @@ void TimetableViewTeachersTimeHorizontalForm::updateTeachersTimetableTable(){
 				//end by Marco Vassura
 
 				QString s = "";
+				QString shortString="";
 				int ai=teachers_timetable_weekly[t][d][h]; //activity index
 				//Activity* act=gt.rules.activitiesList.at(ai);
 				if(ai!=UNALLOCATED_ACTIVITY){
@@ -391,19 +430,20 @@ void TimetableViewTeachersTimeHorizontalForm::updateTeachersTimetableTable(){
 					//students
 					if(act->studentsNames.count()>0){
 						s+=act->studentsNames.join(", ");
+						shortString+=act->studentsNames.join(", ")+" "+"\n";
+						s+=" ";
+						s+="\n";
 					}
 					
 					if(TIMETABLE_HTML_PRINT_ACTIVITY_TAGS){
 						QString ats=act->activityTagsNames.join(", ");
-						s+=" ";
-						s+="\n";
 						s += act->subjectName+" "+ats;
 					}
 					else{
-						s+=" ";
-						s+="\n";
 						s += act->subjectName;
 					}
+					
+					shortString+=act->subjectName;
 					
 					if(act->teachersNames.count()==1){
 						//Don't do the assert below, because it crashes if you change the teacher's name and view the teachers' timetable,
@@ -487,14 +527,15 @@ void TimetableViewTeachersTimeHorizontalForm::updateTeachersTimetableTable(){
 					}
 					// add colors (end)
 					//end by Marco Vassura
+					teachersTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setText(shortString);
 				}
 				else{
 					if(teacherNotAvailableDayHour[t][d][h] && PRINT_NOT_AVAILABLE_TIME_SLOTS)
 						s+="-x-";
 					else if(breakDayHour[d][h] && PRINT_BREAK_TIME_SLOTS)
 						s+="-X-";
+					teachersTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setText(s);
 				}
-				teachersTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setText(s);
 				teachersTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setToolTip(s);
 			}
 		}
