@@ -5332,3 +5332,43 @@ core get/care about its own data.
 
 (even if we never add multicore this tidy up migth be useful, since it 
 might help reading the source)
+
+319---------------------------------------------------------
+From Vangelis Karafillidis:
+
+Two activities are not consecutive. For example A1 and A2 are not consecutive means that FET forces the A2 activity not to be placed immediately after A1.
+(But A1 may be placed immediately after A2).
+
+Vangelis suggested that this can be solved by using a trick: It can be achieved indirectly with pseudo-activities. let's say A1 real activity,
+P1 pseudo-activity, and A2 real activity. If you want A1 and A2 not to be consecutive, you can demand A1 and P1 to be consecutive and A2 not to overlap with P1.
+
+320---------------------------------------------------------
+From Volker Dirr:
+
+get rid of max_days_per_week and max_hours_per_day.
+one needed step for that is redisigning the interface, since the 
+interface use it.
+it won't be too difficult to fix that.
+just add hours per day and days per week as a QStringList (like teacher 
+names, subject names, ...)
+this dialog should get buttons like in teachers, rooms, subjects, ...
+so add a button with "up" and "down" to move the name.
+"rename"
+"clear all"
+"delete"
+"add"
+
+the hours per day dialog should maybe also get a button with a spinbox 
+to add X names at once.
+Like name "1", "2", ...
+or "1.", "2.", ...
+or ...
+
+the days per week dialog should get 3 buttons like:
+"add Monday to Friday" (so it add those 5 days. if you press that button 
+again, it should add once again. so there will be 10 days added (maybe 
+with an attached small string).
+"add Monday to Saturday"
+"add Monday to Sunday"
+"add From a date To a date" So you can select 2 calender dates and it 
+just add all that dates.
