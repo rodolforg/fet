@@ -97,7 +97,7 @@ SplitYearForm::SplitYearForm(QWidget* parent, const QString& _year): QDialog(par
 	
 	QSettings settings(COMPANY, PROGRAM);
 	
-	_sep=settings.value(this->metaObject()->className()+QString("/separator-string"), QString(" ")).toString();
+	_sep=settings.value(this->metaObject()->className()+QString("/separator-string"), QString("")).toString();
 	
 	_nCategories=settings.value(this->metaObject()->className()+QString("/number-of-categories"), 1).toInt();
 	
