@@ -5389,4 +5389,8 @@ I think that the above are necessary. Of course ALL the existing options for the
 For example, modifying the data (teacher name, etc). THIS WOULD BE MUCH BETTER, SO ONE COULD MAKE MODIFICATIONS ON ALL FET FIELDS WITHOUT EXISTING THESE WINDOWS.
 But, I don't know how complicated this part is. I have no C++ programming skills, but it seems easy.
 The above suggested options focus on MODIFYING AN EXISTING TIMETABLE WHICH IS A COMMON PRACTICE IN REAL LIFE SITUATIONS AT SCHOOLS. I KNOW AND I ACCEPT THAT
-MATHEMATICALLY AND COMPUTATIONALLY MODIFYING AND EXISTING TIMETABLE IT'S NOT THE BEST APPROACH.
+MATHEMATICALLY AND COMPUTATIONALLY MODIFYING AN EXISTING TIMETABLE IT'S NOT THE BEST APPROACH.
+
+Liviu Lalescu:
+
+Your suggestions are not so easy to implement.
