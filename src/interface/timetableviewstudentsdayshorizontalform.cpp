@@ -32,7 +32,6 @@
 
 #include "lockunlock.h"
 
-#include <QSplitter>
 #include <QList>
 
 #include <QMessageBox>

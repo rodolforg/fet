@@ -33,7 +33,7 @@ class TimetableViewTeachersTimeHorizontalDelegate: public QStyledItemDelegate
 public:
 	TimetableViewTeachersTimeHorizontalDelegate(QWidget* parent=NULL): QStyledItemDelegate(parent){}
 	
-	void paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const override;
+	void paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const override; //As in a Qt example
 };
 
 class TimetableViewTeachersTimeHorizontalForm : public QDialog, public Ui::TimetableViewTeachersTimeHorizontalForm_template

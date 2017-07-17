@@ -33,7 +33,7 @@ class TimetableViewStudentsTimeHorizontalDelegate: public QStyledItemDelegate
 public:
 	TimetableViewStudentsTimeHorizontalDelegate(QWidget* parent=NULL): QStyledItemDelegate(parent){}
 	
-	void paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const override;
+	void paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const override; //As in a Qt example
 };
 
 class TimetableViewStudentsTimeHorizontalForm : public QDialog, public Ui::TimetableViewStudentsTimeHorizontalForm_template
@@ -62,7 +62,7 @@ public slots:
 	
 	void widthSpinBoxValueChanged();
 	void heightSpinBoxValueChanged();
-
+	
 protected:
 //	void resizeEvent(QResizeEvent* event);
 	QColor stringToColor(QString s); //by Marco Vassura

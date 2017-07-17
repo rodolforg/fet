@@ -255,14 +255,10 @@ TimetableViewStudentsTimeHorizontalForm::TimetableViewStudentsTimeHorizontalForm
 	
 	bool min2letters=false;
 	for(int d=0; d<gt.rules.nDaysPerWeek; d++){
-		for(int h=0; h<gt.rules.nHoursPerDay; h++){
-			if(gt.rules.daysOfTheWeek[d].size()>gt.rules.nHoursPerDay){
-				min2letters=true;
-				break;
-			}
-		}
-		if(min2letters)
+		if(gt.rules.daysOfTheWeek[d].size()>gt.rules.nHoursPerDay){
+			min2letters=true;
 			break;
+		}
 	}
 	for(int d=0; d<gt.rules.nDaysPerWeek; d++){
 		QString dayName=gt.rules.daysOfTheWeek[d];
@@ -280,7 +276,7 @@ TimetableViewStudentsTimeHorizontalForm::TimetableViewStudentsTimeHorizontalForm
 				dayName.remove(0, 1);
 			}
 			else if(i<r || q<=1){
-				assert(q==1);
+				assert(q>=1);
 				list.append(dayName.left(q+1));
 				dayName.remove(0, q+1);
 			}
