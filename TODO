@@ -5372,3 +5372,21 @@ with an attached small string).
 "add Monday to Sunday"
 "add From a date To a date" So you can select 2 calender dates and it 
 just add all that dates.
+
+321---------------------------------------------------------
+From Vangelis Karafillidis:
+
+These new views of FET (teachers/students time horizontal) for modifying an existing timetable seem to work very well. Some more suggestions mainly for facilitating
+the modifications of an existing timetable... The code actually exists! Just to be "connected" to these windows (views).
+Teachers view:
+1) When right-clicking on the name of a teacher (left column), a menu opens. The options are the constraints (time, room, etc) for the specific teacher. For example,
+teacher available times, max days per week, home room etc.
+2) When right-clicking on an activity (in the timetable), a menu with two sub-menus opens. The first sub-menu has the options of modifying the specific activity.
+The second sub-menu is actually all the of the time constraints for the specific activity (for example an activity has a preferred starting time, etc).
+Students view:The corresponding options for the students, as mentioned above.
+
+I think that the above are necessary. Of course ALL the existing options for the teachers, students etc might be displayed in these menus, when right-clicking.
+For example, modifying the data (teacher name, etc). THIS WOULD BE MUCH BETTER, SO ONE COULD MAKE MODIFICATIONS ON ALL FET FIELDS WITHOUT EXISTING THESE WINDOWS.
+But, I don't know how complicated this part is. I have no C++ programming skills, but it seems easy.
+The above suggested options focus on MODIFYING AN EXISTING TIMETABLE WHICH IS A COMMON PRACTICE IN REAL LIFE SITUATIONS AT SCHOOLS. I KNOW AND I ACCEPT THAT
+MATHEMATICALLY AND COMPUTATIONALLY MODIFYING AND EXISTING TIMETABLE IT'S NOT THE BEST APPROACH.
