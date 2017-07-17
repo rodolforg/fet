@@ -342,6 +342,21 @@ TimetableViewTeachersTimeHorizontalForm::TimetableViewTeachersTimeHorizontalForm
 	//}
 	////////////////
 	
+	subjectsCheckBox->setChecked(true);
+	studentsCheckBox->setChecked(false);
+	
+	if(settings.contains(this->metaObject()->className()+QString("/subjects-check-box-state"))){
+		bool state=settings.value(this->metaObject()->className()+QString("/subjects-check-box-state")).toBool();
+		subjectsCheckBox->setChecked(state);
+	}
+	if(settings.contains(this->metaObject()->className()+QString("/students-check-box-state"))){
+		bool state=settings.value(this->metaObject()->className()+QString("/students-check-box-state")).toBool();
+		studentsCheckBox->setChecked(state);
+	}
+	
+	connect(subjectsCheckBox, SIGNAL(toggled(bool)), this, SLOT(updateTeachersTimetableTable()));
+	connect(studentsCheckBox, SIGNAL(toggled(bool)), this, SLOT(updateTeachersTimetableTable()));
+	
 	//added by Volker Dirr
 	connect(&communicationSpinBox, SIGNAL(valueChanged(int)), this, SLOT(updateTeachersTimetableTable()));
 	
@@ -373,6 +388,9 @@ TimetableViewTeachersTimeHorizontalForm::~TimetableViewTeachersTimeHorizontalFor
 		settings.setValue(this->metaObject()->className()+QString("/horizontal-header-size"), 0);
 	else
 		settings.setValue(this->metaObject()->className()+QString("/horizontal-header-size"), widthSpinBox->value());
+		
+	settings.setValue(this->metaObject()->className()+QString("/subjects-check-box-state"), subjectsCheckBox->isChecked());
+	settings.setValue(this->metaObject()->className()+QString("/students-check-box-state"), studentsCheckBox->isChecked());
 		
 	teachersTimetableTable->setItemDelegate(oldItemDelegate);
 	delete itemDelegate;
@@ -426,7 +444,9 @@ void TimetableViewTeachersTimeHorizontalForm::updateTeachersTimetableTable(){
 					//students
 					if(act->studentsNames.count()>0){
 						s+=act->studentsNames.join(", ");
-						shortString+=act->studentsNames.join(", ")+" "+"\n";
+						if(studentsCheckBox->isChecked()){
+							shortString+=act->studentsNames.join(", ");
+						}
 						s+=" ";
 						s+="\n";
 					}
@@ -439,7 +459,13 @@ void TimetableViewTeachersTimeHorizontalForm::updateTeachersTimetableTable(){
 						s += act->subjectName;
 					}
 					
-					shortString+=act->subjectName;
+					if(subjectsCheckBox->isChecked()){
+						if(!shortString.isEmpty()){
+							shortString+=" ";
+							shortString+="\n";
+						}
+						shortString+=act->subjectName;
+					}
 					
 					if(act->teachersNames.count()==1){
 						//Don't do the assert below, because it crashes if you change the teacher's name and view the teachers' timetable,

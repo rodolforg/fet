@@ -62,6 +62,8 @@
 //end by Marco Vassura
 
 #include <QHash>
+#include <QSet>
+#include <QPair>
 
 extern const QString COMPANY;
 extern const QString PROGRAM;
@@ -381,6 +383,21 @@ TimetableViewStudentsTimeHorizontalForm::TimetableViewStudentsTimeHorizontalForm
 	//}
 	////////////////
 	
+	subjectsCheckBox->setChecked(true);
+	teachersCheckBox->setChecked(false);
+	
+	if(settings.contains(this->metaObject()->className()+QString("/subjects-check-box-state"))){
+		bool state=settings.value(this->metaObject()->className()+QString("/subjects-check-box-state")).toBool();
+		subjectsCheckBox->setChecked(state);
+	}
+	if(settings.contains(this->metaObject()->className()+QString("/teachers-check-box-state"))){
+		bool state=settings.value(this->metaObject()->className()+QString("/teachers-check-box-state")).toBool();
+		teachersCheckBox->setChecked(state);
+	}
+	
+	connect(subjectsCheckBox, SIGNAL(toggled(bool)), this, SLOT(updateStudentsTimetableTable()));
+	connect(teachersCheckBox, SIGNAL(toggled(bool)), this, SLOT(updateStudentsTimetableTable()));
+	
 	//added by Volker Dirr
 	connect(&communicationSpinBox, SIGNAL(valueChanged(int)), this, SLOT(updateStudentsTimetableTable()));
 	
@@ -413,6 +430,9 @@ TimetableViewStudentsTimeHorizontalForm::~TimetableViewStudentsTimeHorizontalFor
 	else
 		settings.setValue(this->metaObject()->className()+QString("/horizontal-header-size"), widthSpinBox->value());
 		
+	settings.setValue(this->metaObject()->className()+QString("/subjects-check-box-state"), subjectsCheckBox->isChecked());
+	settings.setValue(this->metaObject()->className()+QString("/teachers-check-box-state"), teachersCheckBox->isChecked());
+		
 	studentsTimetableTable->setItemDelegate(oldItemDelegate);
 	delete itemDelegate;
 	
@@ -444,6 +464,20 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 	
 	for(int t=0; t<usedStudentsList.count(); t++){
 		assert(t<studentsTimetableTable->rowCount());
+		
+		QSet<QPair<int, int> > notAvailableDayHour;
+		QSet<ConstraintStudentsSetNotAvailableTimes*> cs=gt.rules.ssnatHash.value(usedStudentsList.at(t), QSet<ConstraintStudentsSetNotAvailableTimes*>());
+		if(!cs.isEmpty()){
+			assert(cs.count()==1);
+			ConstraintStudentsSetNotAvailableTimes* ctr=*(cs.begin());
+			
+			for(int i=0; i<ctr->days.count(); i++){
+				int d=ctr->days.at(i);
+				int h=ctr->hours.at(i);
+				notAvailableDayHour.insert(QPair<int,int>(d,h));
+			}
+		}
+		
 		for(int d=0; d<gt.rules.nDaysPerWeek; d++){
 			for(int h=0; h<gt.rules.nHoursPerDay; h++){
 				assert(d*gt.rules.nHoursPerDay+h<studentsTimetableTable->columnCount());
@@ -599,13 +633,27 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 					//end by Marco Vassura
 				}
 				else{
-					if(subgroupNotAvailableDayHour[sbg][d][h] && PRINT_NOT_AVAILABLE_TIME_SLOTS)
+//					if(subgroupNotAvailableDayHour[sbg][d][h] && PRINT_NOT_AVAILABLE_TIME_SLOTS)
+					if(notAvailableDayHour.contains(QPair<int,int>(d,h)) && PRINT_NOT_AVAILABLE_TIME_SLOTS)
 						s+="-x-";
 					else if(breakDayHour[d][h] && PRINT_BREAK_TIME_SLOTS)
 						s+="-X-";
 				}
-				if(ok)
-					studentsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setText(gt.rules.internalActivitiesList[ai].subjectName);
+				if(ok){
+					QString s2;
+					Activity* act=&gt.rules.internalActivitiesList[ai];
+					if(teachersCheckBox->isChecked() && !act->teachersNames.isEmpty()){
+						s2+=act->teachersNames.join(", ");
+					}
+					if(subjectsCheckBox->isChecked()){
+						if(!s2.isEmpty()){
+							s2+=" ";
+							s2+="\n";
+						}
+						s2+=act->subjectName;
+					}
+					studentsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setText(s2);
+				}
 				else
 					studentsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setText(s);
 				studentsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setToolTip(s);
@@ -714,6 +762,19 @@ void TimetableViewStudentsTimeHorizontalForm::detailActivity(QTableWidgetItem* i
 	}
 	
 	assert(sbg>=0 && sbg<gt.rules.nInternalSubgroups);
+	
+	QSet<QPair<int, int> > notAvailableDayHour;
+	QSet<ConstraintStudentsSetNotAvailableTimes*> cs=gt.rules.ssnatHash.value(usedStudentsList.at(t), QSet<ConstraintStudentsSetNotAvailableTimes*>());
+	if(!cs.isEmpty()){
+		assert(cs.count()==1);
+		ConstraintStudentsSetNotAvailableTimes* ctr=*(cs.begin());
+		
+		for(int i=0; i<ctr->days.count(); i++){
+			int d=ctr->days.at(i);
+			int h=ctr->hours.at(i);
+			notAvailableDayHour.insert(QPair<int,int>(d,h));
+		}
+	}
 
 	/*int teacher=gt.rules.searchTeacher(gt.rules.internalTeachersList[t]->name);
 	if(teacher<0){
@@ -772,7 +833,8 @@ void TimetableViewStudentsTimeHorizontalForm::detailActivity(QTableWidgetItem* i
 			//added by Volker Dirr (end)
 		}
 		else{
-			if(subgroupNotAvailableDayHour[sbg][d][h]){
+			//if(subgroupNotAvailableDayHour[sbg][d][h]){
+			if(notAvailableDayHour.contains(QPair<int,int>(d,h))){
 				s+=tr("Students set is not available 100% in this slot");
 				s+="\n";
 			}
