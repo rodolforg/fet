@@ -429,22 +429,23 @@ void TimetableViewTeachersTimeHorizontalForm::updateTeachersTimetableTable(){
 					Activity* act=&gt.rules.internalActivitiesList[ai];
 					assert(act!=NULL);
 					
-					//students
-					if(act->studentsNames.count()>0){
-						s+=act->studentsNames.join(", ");
-						if(studentsCheckBox->isChecked()){
-							shortString+=act->studentsNames.join(", ");
-						}
-						s+=" ";
-						s+="\n";
-					}
-					
 					if(TIMETABLE_HTML_PRINT_ACTIVITY_TAGS){
 						QString ats=act->activityTagsNames.join(", ");
 						s += act->subjectName+" "+ats;
 					}
 					else{
 						s += act->subjectName;
+					}
+					
+					//students
+					if(act->studentsNames.count()>0){
+						s+=" ";
+						s+="\n";
+						s+=act->studentsNames.join(", ");
+						
+						if(studentsCheckBox->isChecked()){
+							shortString+=act->studentsNames.join(", ");
+						}
 					}
 					
 					if(subjectsCheckBox->isChecked()){
