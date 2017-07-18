@@ -85,19 +85,6 @@ extern QSet<int> idsOfPermanentlyLockedSpace;	//care about locked activities in 
 
 extern CommunicationSpinBox communicationSpinBox;	//small hint to sync the forms
 
-static int initialRecommendedHeight;
-static const int MINIMUM_WIDTH_SPIN_BOX_VALUE=9;
-static const int MINIMUM_HEIGHT_SPIN_BOX_VALUE=9;
-
-static QAbstractItemDelegate* oldItemDelegate;
-static TimetableViewStudentsTimeHorizontalDelegate* itemDelegate;
-
-static QStringList usedStudentsList;
-static QSet<QString> usedStudentsSet;
-static QHash<QString, QList<int> > activitiesForStudentsSet; //activity index in internal activities list
-
-//static QTableWidget* table;
-
 void TimetableViewStudentsTimeHorizontalDelegate::paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const
 {
 	QStyledItemDelegate::paint(painter, option, index);
@@ -215,8 +202,8 @@ TimetableViewStudentsTimeHorizontalForm::TimetableViewStudentsTimeHorizontalForm
 	
 	//table=teachersTimetableTable;
 	oldItemDelegate=studentsTimetableTable->itemDelegate();
-	itemDelegate=new TimetableViewStudentsTimeHorizontalDelegate();
-	studentsTimetableTable->setItemDelegate(itemDelegate);
+	newItemDelegate=new TimetableViewStudentsTimeHorizontalDelegate();
+	studentsTimetableTable->setItemDelegate(newItemDelegate);
 	
 	usedStudentsSet.clear();
 	for(int i=0; i<gt.rules.nInternalActivities; i++){
@@ -434,9 +421,8 @@ TimetableViewStudentsTimeHorizontalForm::~TimetableViewStudentsTimeHorizontalFor
 	settings.setValue(this->metaObject()->className()+QString("/teachers-check-box-state"), teachersCheckBox->isChecked());
 		
 	studentsTimetableTable->setItemDelegate(oldItemDelegate);
-	delete itemDelegate;
+	delete newItemDelegate;
 	
-	//table=NULL;
 	usedStudentsList.clear();
 	usedStudentsSet.clear();
 	activitiesForStudentsSet.clear();

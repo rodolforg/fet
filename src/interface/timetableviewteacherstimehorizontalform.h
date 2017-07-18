@@ -20,6 +20,7 @@
 
 #include <QResizeEvent>
 
+#include <QAbstractItemDelegate>
 #include <QStyledItemDelegate>
 
 class QColor; //by Marco Vassura
@@ -39,6 +40,14 @@ public:
 class TimetableViewTeachersTimeHorizontalForm : public QDialog, public Ui::TimetableViewTeachersTimeHorizontalForm_template
 {
 	Q_OBJECT
+	
+private:
+	int initialRecommendedHeight;
+	const int MINIMUM_WIDTH_SPIN_BOX_VALUE=9;
+	const int MINIMUM_HEIGHT_SPIN_BOX_VALUE=9;
+
+	QAbstractItemDelegate* oldItemDelegate;
+	TimetableViewTeachersTimeHorizontalDelegate* newItemDelegate;
 
 public:
 	TimetableViewTeachersTimeHorizontalForm(QWidget* parent);
