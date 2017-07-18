@@ -31,8 +31,15 @@ class TimetableViewTeachersTimeHorizontalDelegate: public QStyledItemDelegate
 {
 	Q_OBJECT
 	
+private:
+	int nRows;
+	int nColumns;
+	
 public:
-	TimetableViewTeachersTimeHorizontalDelegate(QWidget* parent=NULL): QStyledItemDelegate(parent){}
+	TimetableViewTeachersTimeHorizontalDelegate(QWidget* parent, int _nRows, int _nColumns): QStyledItemDelegate(parent){
+		nRows=_nRows;
+		nColumns=_nColumns;
+	}
 	
 	void paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const override; //As in a Qt example
 };

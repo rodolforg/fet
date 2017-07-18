@@ -109,12 +109,12 @@ void TimetableViewTeachersTimeHorizontalDelegate::paint(QPainter* painter, const
 	
 	if(hour==0)
 		painter->drawLine(option.rect.topLeft(), option.rect.bottomLeft());
-	if(hour==gt.rules.nHoursPerDay-1)
+	if(hour==nColumns-1)
 		painter->drawLine(option.rect.topRight(), option.rect.bottomRight());
 
 	if(index.row()==0)
 		painter->drawLine(option.rect.topLeft(), option.rect.topRight());
-	if(index.row()==gt.rules.nInternalTeachers-1)
+	if(index.row()==nRows-1)
 		painter->drawLine(option.rect.bottomLeft(), option.rect.bottomRight());
 }
 
@@ -196,13 +196,12 @@ TimetableViewTeachersTimeHorizontalForm::TimetableViewTeachersTimeHorizontalForm
 
 	LockUnlock::increaseCommunicationSpinBox();
 	
-	//table=teachersTimetableTable;
-	oldItemDelegate=teachersTimetableTable->itemDelegate();
-	newItemDelegate=new TimetableViewTeachersTimeHorizontalDelegate();
-	teachersTimetableTable->setItemDelegate(newItemDelegate);
-	
 	teachersTimetableTable->setRowCount(gt.rules.nInternalTeachers);
 	teachersTimetableTable->setColumnCount(gt.rules.nDaysPerWeek*gt.rules.nHoursPerDay);
+	
+	oldItemDelegate=teachersTimetableTable->itemDelegate();
+	newItemDelegate=new TimetableViewTeachersTimeHorizontalDelegate(NULL, teachersTimetableTable->rowCount(), gt.rules.nHoursPerDay);
+	teachersTimetableTable->setItemDelegate(newItemDelegate);
 	
 	bool min2letters=false;
 	for(int d=0; d<gt.rules.nDaysPerWeek; d++){
