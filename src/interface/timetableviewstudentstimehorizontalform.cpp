@@ -207,9 +207,9 @@ TimetableViewStudentsTimeHorizontalForm::TimetableViewStudentsTimeHorizontalForm
 			if(!usedStudentsSet.contains(students))
 				usedStudentsSet.insert(students);
 			
-			QList<int> list=activitiesForStudentsSet.value(students, QList<int>());
+			/*QList<int> list=activitiesForStudentsSet.value(students, QList<int>());
 			list.append(i);
-			activitiesForStudentsSet.insert(students, list);
+			activitiesForStudentsSet.insert(students, list);*/
 		}
 	}
 	
@@ -424,7 +424,7 @@ TimetableViewStudentsTimeHorizontalForm::~TimetableViewStudentsTimeHorizontalFor
 	
 	usedStudentsList.clear();
 	usedStudentsSet.clear();
-	activitiesForStudentsSet.clear();
+	//activitiesForStudentsSet.clear();
 }
 
 void TimetableViewStudentsTimeHorizontalForm::resizeRowsAfterShow()
