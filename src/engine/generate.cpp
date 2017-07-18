@@ -40,7 +40,7 @@ using namespace std;
 
 #include <QMutex>
 
-#include <QDateTime>
+//#include <QDateTime>
 
 #include <QList>
 #include <QSet>
@@ -174,8 +174,8 @@ static Matrix2D<QList<int> > subgroupActivitiesOfTheDay;
 
 int maxActivitiesPlaced;
 
-QDateTime generationStartDateTime;
-QDateTime generationHighestStageDateTime;
+//QDateTime generationStartDateTime;
+//QDateTime generationHighestStageDateTime;
 
 const int MAX_RETRIES_FOR_AN_ACTIVITY_AT_LEVEL_0=400000;
 
@@ -2734,7 +2734,7 @@ if(threaded){
 }
 	timeToHighestStage=0;
 	searchTime=0;
-	generationStartDateTime=QDateTime::currentDateTime();
+//	generationStartDateTime=QDateTime::currentDateTime();
 if(threaded){
 		myMutex.unlock();
 }
@@ -3177,7 +3177,7 @@ if(threaded){
 			nPlacedActivities=added_act+1;
 			
 			if(maxActivitiesPlaced<added_act+1){
-				generationHighestStageDateTime=QDateTime::currentDateTime();
+//				generationHighestStageDateTime=QDateTime::currentDateTime();
 				time_t tmp;
 				time(&tmp);
 				timeToHighestStage=int(tmp-starting_time);

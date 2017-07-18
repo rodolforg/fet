@@ -27,8 +27,8 @@
 
 #include <QPlainTextEdit>
 
-#include <QDateTime>
-#include <QLocale>
+//#include <QDateTime>
+//#include <QLocale>
 
 #include <QMessageBox>
 
@@ -72,8 +72,8 @@ int initialOrderOfActivitiesIndices[MAX_ACTIVITIES];
 
 extern int maxActivitiesPlaced;
 
-extern QDateTime generationStartDateTime;
-extern QDateTime generationHighestStageDateTime;
+//extern QDateTime generationStartDateTime;
+//extern QDateTime generationHighestStageDateTime;
 
 QString getActivityDetailedDescription(Rules& r, int id);
 
