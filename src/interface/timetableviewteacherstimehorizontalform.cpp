@@ -601,17 +601,17 @@ void TimetableViewTeachersTimeHorizontalForm::detailActivity(QTableWidgetItem* i
 		return;
 	}
 
-	if(item->row()>=gt.rules.nInternalTeachers || item->column()>=gt.rules.nDaysPerWeek*gt.rules.nHoursPerDay){
-		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view teachers timetable dialog - please generate a new timetable "
-		"or close the timetable view teachers dialog"));
-		return;
-	}
-
 	if(!(students_schedule_ready && teachers_schedule_ready)){
 		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view teachers timetable dialog - please generate a new timetable"));
 		return;
 	}
 	assert(students_schedule_ready && teachers_schedule_ready);
+
+	if(item->row()>=gt.rules.nInternalTeachers || item->column()>=gt.rules.nDaysPerWeek*gt.rules.nHoursPerDay){
+		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view teachers timetable dialog - please generate a new timetable "
+		"or close the timetable view teachers dialog"));
+		return;
+	}
 
 	if(gt.rules.nInternalRooms!=gt.rules.roomsList.count()){
 		QMessageBox::warning(this, tr("FET warning"), tr("Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it"));
