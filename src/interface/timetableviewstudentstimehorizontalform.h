@@ -37,7 +37,7 @@ class TimetableViewStudentsTimeHorizontalDelegate: public QStyledItemDelegate
 	
 private:
 	int nRows;
-	int nColumns;
+	int nColumns; //The number of columns after which a line is drawn
 	
 public:
 	TimetableViewStudentsTimeHorizontalDelegate(QWidget* parent, int _nRows, int _nColumns): QStyledItemDelegate(parent){
