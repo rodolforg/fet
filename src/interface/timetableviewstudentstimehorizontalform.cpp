@@ -78,6 +78,8 @@ extern bool simulation_running;
 extern Matrix3D<bool> subgroupNotAvailableDayHour;
 extern Matrix2D<bool> breakDayHour;
 
+extern QHash<QString, QSet<QPair<int, int> > > studentsSetNotAvailableDayHour;
+
 extern QSet<int> idsOfLockedTime;		//care about locked activities in view forms
 extern QSet<int> idsOfLockedSpace;		//care about locked activities in view forms
 extern QSet<int> idsOfPermanentlyLockedTime;	//care about locked activities in view forms
@@ -212,6 +214,47 @@ TimetableViewStudentsTimeHorizontalForm::TimetableViewStudentsTimeHorizontalForm
 			activitiesForStudentsSet.insert(students, list);*/
 		}
 	}
+	
+	QHash<QString, QSet<QPair<int, int> > >::const_iterator it=studentsSetNotAvailableDayHour.constBegin();
+	while(it!=studentsSetNotAvailableDayHour.constEnd()){
+		if(!usedStudentsSet.contains(it.key()))
+			usedStudentsSet.insert(it.key());
+			
+		it++;
+	}
+	
+	//Students not available constraints
+	/*QSet<QString> studentsSet3;
+	foreach(StudentsYear* year, gt.rules.augmentedYearsList){
+		if(!studentsSet3.contains(year->name)){
+			studentsSet3.insert(year->name);
+		}
+		foreach(StudentsGroup* group, year->groupsList){
+			if(!studentsSet3.contains(group->name)){
+				studentsSet3.insert(group->name);
+			}
+			foreach(StudentsSubgroup* subgroup, group->subgroupsList){
+				if(!studentsSet3.contains(subgroup->name)){
+					studentsSet3.insert(subgroup->name);
+				}
+			}
+		}
+	}
+	
+	//notAvailableHash.clear();
+	for(int i=0; i<gt.rules.nInternalTimeConstraints; i++){
+		TimeConstraint* ctr=gt.rules.internalTimeConstraintsList[i];
+		if(ctr->type==CONSTRAINT_STUDENTS_SET_NOT_AVAILABLE_TIMES){
+			ConstraintStudentsSetNotAvailableTimes* csna=(ConstraintStudentsSetNotAvailableTimes*)ctr;
+			assert(csna->active);
+			if(studentsSet3.contains(csna->students) && !usedStudentsSet.contains(csna->students))
+				usedStudentsSet.insert(csna->students);
+			if(studentsSet3.contains(csna->students)){
+				assert(!notAvailableHash.contains(csna->students));
+				notAvailableHash.insert(csna->students, csna);
+			}
+		}
+	}*/
 	
 	QSet<QString> studentsSet2;
 	usedStudentsList.clear();
@@ -425,6 +468,8 @@ TimetableViewStudentsTimeHorizontalForm::~TimetableViewStudentsTimeHorizontalFor
 	usedStudentsList.clear();
 	usedStudentsSet.clear();
 	//activitiesForStudentsSet.clear();
+	
+	//notAvailableHash.clear();
 }
 
 void TimetableViewStudentsTimeHorizontalForm::resizeRowsAfterShow()
@@ -450,18 +495,41 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 	for(int t=0; t<usedStudentsList.count(); t++){
 		assert(t<studentsTimetableTable->rowCount());
 		
-		QSet<QPair<int, int> > notAvailableDayHour;
-		QSet<ConstraintStudentsSetNotAvailableTimes*> cs=gt.rules.ssnatHash.value(usedStudentsList.at(t), QSet<ConstraintStudentsSetNotAvailableTimes*>());
-		if(!cs.isEmpty()){
-			assert(cs.count()==1);
-			ConstraintStudentsSetNotAvailableTimes* ctr=*(cs.begin());
-			
+		if(!gt.rules.studentsHash.contains(usedStudentsList.at(t)))
+			continue;
+		
+		assert(gt.rules.studentsHash.contains(usedStudentsList.at(t)));
+		StudentsSet* ss=gt.rules.studentsHash.value(usedStudentsList.at(t), NULL);
+		assert(ss!=NULL);
+		int sbg=-1;
+		if(ss->type==STUDENTS_YEAR){
+			StudentsYear* year=(StudentsYear*)ss;
+			sbg=year->groupsList.at(0)->subgroupsList.at(0)->indexInInternalSubgroupsList;
+		}
+		else if(ss->type==STUDENTS_GROUP){
+			StudentsGroup* group=(StudentsGroup*)ss;
+			sbg=group->subgroupsList.at(0)->indexInInternalSubgroupsList;
+		}
+		else if(ss->type==STUDENTS_SUBGROUP){
+			StudentsSubgroup* subgroup=(StudentsSubgroup*)ss;
+			sbg=subgroup->indexInInternalSubgroupsList;
+		}
+		else{
+			assert(0);
+		}
+		
+		assert(sbg>=0 && sbg<gt.rules.nInternalSubgroups);
+		
+		QSet<QPair<int, int> > notAvailableDayHour=studentsSetNotAvailableDayHour.value(usedStudentsList.at(t), QSet<QPair<int, int> >());
+		
+		/*ConstraintStudentsSetNotAvailableTimes* ctr=notAvailableHash.value(usedStudentsList.at(t), NULL);
+		if(ctr!=NULL){
 			for(int i=0; i<ctr->days.count(); i++){
 				int d=ctr->days.at(i);
 				int h=ctr->hours.at(i);
 				notAvailableDayHour.insert(QPair<int,int>(d,h));
 			}
-		}
+		}*/
 		
 		for(int d=0; d<gt.rules.nDaysPerWeek; d++){
 			for(int h=0; h<gt.rules.nHoursPerDay; h++){
@@ -477,28 +545,6 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 				//end by Marco Vassura
 
 				QString s = "";
-				
-				int sbg=-1;
-				
-				assert(gt.rules.studentsHash.contains(usedStudentsList.at(t)));
-				StudentsSet* ss=gt.rules.studentsHash.value(usedStudentsList.at(t), NULL);
-				if(ss->type==STUDENTS_YEAR){
-					StudentsYear* year=(StudentsYear*)ss;
-					sbg=year->groupsList.at(0)->subgroupsList.at(0)->indexInInternalSubgroupsList;
-				}
-				else if(ss->type==STUDENTS_GROUP){
-					StudentsGroup* group=(StudentsGroup*)ss;
-					sbg=group->subgroupsList.at(0)->indexInInternalSubgroupsList;
-				}
-				else if(ss->type==STUDENTS_SUBGROUP){
-					StudentsSubgroup* subgroup=(StudentsSubgroup*)ss;
-					sbg=subgroup->indexInInternalSubgroupsList;
-				}
-				else{
-					assert(0);
-				}
-				
-				assert(sbg>=0 && sbg<gt.rules.nInternalSubgroups);
 				
 				int ai=students_timetable_weekly[sbg][d][h]; //activity index
 				
@@ -730,6 +776,7 @@ void TimetableViewStudentsTimeHorizontalForm::detailActivity(QTableWidgetItem* i
 	}
 	assert(gt.rules.studentsHash.contains(usedStudentsList.at(t)));
 	StudentsSet* ss=gt.rules.studentsHash.value(usedStudentsList.at(t), NULL);
+	assert(ss!=NULL);
 	if(ss->type==STUDENTS_YEAR){
 		StudentsYear* year=(StudentsYear*)ss;
 		sbg=year->groupsList.at(0)->subgroupsList.at(0)->indexInInternalSubgroupsList;
@@ -748,7 +795,9 @@ void TimetableViewStudentsTimeHorizontalForm::detailActivity(QTableWidgetItem* i
 	
 	assert(sbg>=0 && sbg<gt.rules.nInternalSubgroups);
 	
-	QSet<QPair<int, int> > notAvailableDayHour;
+	QSet<QPair<int, int> > notAvailableDayHour=studentsSetNotAvailableDayHour.value(usedStudentsList.at(t), QSet<QPair<int, int> >());
+
+	/*QSet<QPair<int, int> > notAvailableDayHour;
 	QSet<ConstraintStudentsSetNotAvailableTimes*> cs=gt.rules.ssnatHash.value(usedStudentsList.at(t), QSet<ConstraintStudentsSetNotAvailableTimes*>());
 	if(!cs.isEmpty()){
 		assert(cs.count()==1);
@@ -759,7 +808,7 @@ void TimetableViewStudentsTimeHorizontalForm::detailActivity(QTableWidgetItem* i
 			int h=ctr->hours.at(i);
 			notAvailableDayHour.insert(QPair<int,int>(d,h));
 		}
-	}
+	}*/
 
 	/*int teacher=gt.rules.searchTeacher(gt.rules.internalTeachersList[t]->name);
 	if(teacher<0){
@@ -910,35 +959,40 @@ void TimetableViewStudentsTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 	QSet<int> realActivities;
 	for(int t=0; t<usedStudentsList.count(); t++){
 		assert(t<studentsTimetableTable->rowCount());
+
+		/*if(!gt.rules.studentsHash.contains(usedStudentsList.at(t))){
+			QMessagebox::warning(this, tr("FET warning"), tr("The students set is invalid - please close this dialog and open a new view students timetable"));
+			return;
+		}*/
+
+		if(!gt.rules.studentsHash.contains(usedStudentsList.at(t)))
+			continue;
+		assert(gt.rules.studentsHash.contains(usedStudentsList.at(t)));
+		StudentsSet* ss=gt.rules.studentsHash.value(usedStudentsList.at(t), NULL);
+		assert(ss!=NULL);
+		int sbg=-1;
+		if(ss->type==STUDENTS_YEAR){
+			StudentsYear* year=(StudentsYear*)ss;
+			sbg=year->groupsList.at(0)->subgroupsList.at(0)->indexInInternalSubgroupsList;
+		}
+		else if(ss->type==STUDENTS_GROUP){
+			StudentsGroup* group=(StudentsGroup*)ss;
+			sbg=group->subgroupsList.at(0)->indexInInternalSubgroupsList;
+		}
+		else if(ss->type==STUDENTS_SUBGROUP){
+			StudentsSubgroup* subgroup=(StudentsSubgroup*)ss;
+			sbg=subgroup->indexInInternalSubgroupsList;
+		}
+		else{
+			assert(0);
+		}
+	
+		assert(sbg>=0 && sbg<gt.rules.nInternalSubgroups);
+
 		for(int d=0; d<gt.rules.nDaysPerWeek; d++){
 			for(int h=0; h<gt.rules.nHoursPerDay; h++){
 				assert(d*gt.rules.nHoursPerDay+h<studentsTimetableTable->columnCount());
 				if(studentsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->isSelected()){
-					/*if(!gt.rules.studentsHash.contains(usedStudentsList.at(t))){
-						QMessagebox::warning(this, tr("FET warning"), tr("The students set is invalid - please close this dialog and open a new view students timetable"));
-						return;
-					}*/
-					int sbg=-1;
-
-					assert(gt.rules.studentsHash.contains(usedStudentsList.at(t)));
-					StudentsSet* ss=gt.rules.studentsHash.value(usedStudentsList.at(t), NULL);
-					if(ss->type==STUDENTS_YEAR){
-						StudentsYear* year=(StudentsYear*)ss;
-						sbg=year->groupsList.at(0)->subgroupsList.at(0)->indexInInternalSubgroupsList;
-					}
-					else if(ss->type==STUDENTS_GROUP){
-						StudentsGroup* group=(StudentsGroup*)ss;
-						sbg=group->subgroupsList.at(0)->indexInInternalSubgroupsList;
-					}
-					else if(ss->type==STUDENTS_SUBGROUP){
-						StudentsSubgroup* subgroup=(StudentsSubgroup*)ss;
-						sbg=subgroup->indexInInternalSubgroupsList;
-					}
-					else{
-						assert(0);
-					}
-	
-					assert(sbg>=0 && sbg<gt.rules.nInternalSubgroups);
 
 					int ai=students_timetable_weekly[sbg][d][h];
 					

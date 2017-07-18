@@ -94,6 +94,9 @@ Matrix2D<bool> breakDayHour;
 //bool subgroupNotAvailableDayHour[MAX_TOTAL_SUBGROUPS][MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
 Matrix3D<bool> subgroupNotAvailableDayHour;
 
+//used in students timetable view time horizontal dialog
+QHash<QString, QSet<QPair<int, int> > > studentsSetNotAvailableDayHour;
+
 //bool teacherNotAvailableDayHour[MAX_TEACHERS][MAX_DAYS_PER_WEEK][MAX_HOURS_PER_DAY];
 Matrix3D<bool> teacherNotAvailableDayHour;
 
@@ -5310,7 +5313,29 @@ bool computeNotAllowedTimesPercentages(QWidget* parent)
 	for(int i=0; i<gt.rules.nInternalSubgroups; i++)
 		for(int j=0; j<gt.rules.nDaysPerWeek; j++)
 			for(int k=0; k<gt.rules.nHoursPerDay; k++)
-				subgroupNotAvailableDayHour[i][j][k]=false;	
+				subgroupNotAvailableDayHour[i][j][k]=false;
+				
+	//used in students timetable view time horizontal dialog
+	studentsSetNotAvailableDayHour.clear();
+	for(int i=0; i<gt.rules.nInternalTimeConstraints; i++){
+		TimeConstraint* ctr=gt.rules.internalTimeConstraintsList[i];
+		if(ctr->type==CONSTRAINT_STUDENTS_SET_NOT_AVAILABLE_TIMES){
+			ConstraintStudentsSetNotAvailableTimes* csna=(ConstraintStudentsSetNotAvailableTimes*)ctr;
+			assert(csna->active);
+			
+			assert(gt.rules.studentsHash.contains(csna->students));
+			
+			assert(!studentsSetNotAvailableDayHour.contains(csna->students));
+			QSet<QPair<int, int> > mySet;
+			for(int j=0; j<csna->days.count(); j++){
+				int d=csna->days.at(j);
+				int h=csna->hours.at(j);
+				assert(!mySet.contains(QPair<int, int>(d,h)));
+				mySet.insert(QPair<int, int>(d,h));
+			}
+			studentsSetNotAvailableDayHour.insert(csna->students, mySet);
+		}
+	}
 	
 	teacherNotAvailableDayHour.resize(gt.rules.nInternalTeachers, gt.rules.nDaysPerWeek, gt.rules.nHoursPerDay);
 	//TEACHER NOT AVAILABLE

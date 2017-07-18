@@ -25,9 +25,12 @@
 
 #include <QString>
 #include <QSet>
+//#include <QHash>
 #include <QStringList>
 
 class QColor; //by Marco Vassura
+
+//class ConstraintStudentsSetNotAvailableTimes;
 
 #include "ui_timetableviewstudentstimehorizontalform_template.h"
 
@@ -60,6 +63,8 @@ private:
 	QStringList usedStudentsList;
 	QSet<QString> usedStudentsSet;
 	//QHash<QString, QList<int> > activitiesForStudentsSet; //activity index in internal activities list
+	
+	//QHash<QString, ConstraintStudentsSetNotAvailableTimes*> notAvailableHash;
 
 	QAbstractItemDelegate* oldItemDelegate;
 	TimetableViewStudentsTimeHorizontalDelegate* newItemDelegate;
