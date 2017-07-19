@@ -75,9 +75,8 @@ extern Solution best_solution;
 
 extern bool simulation_running;
 
-extern Matrix3D<bool> subgroupNotAvailableDayHour;
+//extern Matrix3D<bool> subgroupNotAvailableDayHour;
 extern Matrix2D<bool> breakDayHour;
-
 extern QHash<QString, QSet<QPair<int, int> > > studentsSetNotAvailableDayHour;
 
 extern QSet<int> idsOfLockedTime;		//care about locked activities in view forms
