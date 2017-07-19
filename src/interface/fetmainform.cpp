@@ -712,11 +712,12 @@ void FetMainForm::setEnabledIcon(QAction* action, bool enabled)
 void FetMainForm::populateLanguagesMap(QMap<QString, QString>& languagesMap)
 {
 	languagesMap.clear();
-	languagesMap.insert("en_US", tr("US English"));
 	languagesMap.insert("ar", tr("Arabic"));
 	languagesMap.insert("ca", tr("Catalan"));
 	languagesMap.insert("de", tr("German"));
 	languagesMap.insert("el", tr("Greek"));
+	languagesMap.insert("en_GB", tr("British English"));
+	languagesMap.insert("en_US", tr("US English"));
 	languagesMap.insert("es", tr("Spanish"));
 	languagesMap.insert("fr", tr("French"));
 	languagesMap.insert("hu", tr("Hungarian"));

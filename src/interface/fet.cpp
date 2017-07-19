@@ -201,7 +201,7 @@ void usage(QTextStream* out, const QString& error)
 		"y is integer (seconds) (default 2000000000, which is practically infinite).\n"
 		"z is integer from 0 to 7 and represents the detail level for the generated HTML timetables "
 		"(default 2, larger values have more details/facilities and larger file sizes).\n"
-		"t is one of en_US, ar, ca, cs, da, de, el, es, eu, fa, fr, gl, he, hu, id, it, lt, mk, ms, nl, pl, pt_BR, ro, ru, si, sk, sq, sr, tr, uk, "
+		"t is one of ar, ca, cs, da, de, el, en_GB, en_US, es, eu, fa, fr, gl, he, hu, id, it, lt, mk, ms, nl, pl, pt_BR, ro, ru, si, sk, sq, sr, tr, uk, "
 		"uz, vi, zh_CN, zh_TW (default en_US).\n"
 		"wt1 to wt15 are either true or false and represent whether you want the corresponding timetables to be written on the disk (default true).\n"
 		"a is either true or false and represets if you want activity tags to be present in the final HTML timetables (default true).\n"
@@ -448,11 +448,12 @@ void initLanguagesSet()
 {
 	//This is one of the two places to insert a new language in the sources (the other one is in fetmainform.cpp).
 	languagesSet.clear();
-	languagesSet.insert("en_US");
 	languagesSet.insert("ar");
 	languagesSet.insert("ca");
 	languagesSet.insert("de");
 	languagesSet.insert("el");
+	languagesSet.insert("en_GB");
+	languagesSet.insert("en_US");
 	languagesSet.insert("es");
 	languagesSet.insert("fr");
 	languagesSet.insert("hu");
@@ -554,9 +555,9 @@ void setLanguage(QCoreApplication& qapplication, QWidget* parent)
 	else if(FET_LANGUAGE=="zh_TW"){
 		LANGUAGE_FOR_HTML="zh-Hant";
 	}
-	else if(FET_LANGUAGE=="en_US"){
+	/*else if(FET_LANGUAGE=="en_US"){
 		LANGUAGE_FOR_HTML=FET_LANGUAGE.left(2);
-	}
+	}*/
 	else{
 		LANGUAGE_FOR_HTML=FET_LANGUAGE;
 		LANGUAGE_FOR_HTML.replace(QString("_"), QString("-"));

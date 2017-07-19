@@ -1373,6 +1373,7 @@ TRANSLATIONS += \
 	../translations/fet_da.ts \
 	../translations/fet_de.ts \
 	../translations/fet_el.ts \
+	../translations/fet_en_GB.ts \
 	../translations/fet_es.ts \
 	../translations/fet_eu.ts \
 	../translations/fet_fa.ts \
