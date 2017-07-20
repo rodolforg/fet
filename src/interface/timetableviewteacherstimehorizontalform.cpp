@@ -193,6 +193,14 @@ TimetableViewTeachersTimeHorizontalForm::TimetableViewTeachersTimeHorizontalForm
 ///////////
 
 	if(gt.rules.nInternalTeachers!=gt.rules.teachersList.count()){
+		assert(0); //should be taken care of by Rules - teachers_schedule_ready is false in the Rules if adding or removing teachers.
+
+		initialRecommendedHeight=10;
+
+		oldItemDelegate=teachersTimetableTable->itemDelegate();
+		newItemDelegate=new TimetableViewTeachersTimeHorizontalDelegate(NULL, 1, 1);
+		teachersTimetableTable->setItemDelegate(newItemDelegate);
+
 		QMessageBox::warning(this, tr("FET warning"), tr("Cannot display the timetable, because you added or removed some teachers. Please regenerate the timetable and then view it"));
 		return;
 	}
@@ -620,6 +628,9 @@ void TimetableViewTeachersTimeHorizontalForm::detailActivity(QTableWidgetItem* i
 		QMessageBox::warning(this, tr("FET warning"), tr("Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it"));
 		return;
 	}
+	
+	assert(item->row()>=0);
+	assert(item->column()>=0);
 
 	int t=item->row();
 	

@@ -759,6 +759,9 @@ void TimetableViewStudentsTimeHorizontalForm::detailActivity(QTableWidgetItem* i
 		QMessageBox::warning(this, tr("FET warning"), tr("Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it"));
 		return;
 	}
+	
+	assert(item->row()>=0);
+	assert(item->column()>=0);
 
 	int t=item->row();
 	
