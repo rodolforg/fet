@@ -1968,4 +1968,5 @@ Versions 5.32.0 - 5.32.v
 - Version 5.32.0
 	- Implemented the teachers' and students' timetable view time horizontal from the FET interface, for easier locking/unlocking/generating a partially locked timetable.
 	Suggested by Vangelis Karafillidis, who did a great job with his useful suggestions and reports. Also Volker Dirr had some useful suggestions for this new feature.
-	- Added the en_GB (British English) locale, so that the date/time in the generated timetables can be shown in British format (suggested by rjmillett).
+	- Added the en_GB (British English) locale, so that the date/time in the generated timetables can be shown in British format (suggested by rjmillett. It was also
+	previously suggested by Mr Robo).
