@@ -1,4 +1,4 @@
-This is FET version 5.31.9
+This is FET version 5.32.0
 
 
 Program description:
@@ -16,7 +16,7 @@ Requirements:
 
 	FET is created in the following environment: openSUSE Leap 42.2 GNU/Linux distribution, Linux 4.4.74, Xfce 4.12,
 	Midnight Commander 4.8.18, KDiff3 0.9.98, Qt 5.9.1, gcc 7.1.1, g++ 7.1.1, make 4.0, sed 4.2.2,
-	Valgrind 3.11.0, Coverity Scan 8.7.0, Cppcheck 1.79, other great free tools.
+	Valgrind 3.12.0, Coverity Scan 8.7.0, Cppcheck 1.79, other great free tools.
 	FET can be run on any platform supported by the free software Qt (GNU/Linux, Windows, Mac OS X).
 
 	GNU/Linux, Mac OS X:
@@ -252,7 +252,7 @@ Running FET:
 			y is integer (seconds) (default 2000000000, which is practically infinite).
 			z is integer from 0 to 7 and represents the detail level for the generated HTML timetables
 				(default 2, larger values have more details/facilities and larger file sizes).
-			t is one of en_US, ar, ca, cs, da, de, el, es, eu, fa, fr, gl, he, hu, id, it, lt, mk, ms, nl, pl, pt_BR, ro, ru, si, sk, sq, sr, tr, uk,
+			t is one of ar, ca, cs, da, de, el, en_GB, en_US, es, eu, fa, fr, gl, he, hu, id, it, lt, mk, ms, nl, pl, pt_BR, ro, ru, si, sk, sq, sr, tr, uk,
 				uz, vi, zh_CN, zh_TW (default en_US).
 			wt1 to wt16 are either true or false and represent whether you want the corresponding timetables to be written on the disk (default true).
 			a is either true or false and represets if you want activity tags to be present in the final HTML timetables (default true).

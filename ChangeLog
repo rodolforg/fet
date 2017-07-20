@@ -1917,7 +1917,7 @@ Versions 5.30.0 - 5.30.8
 	- Updated to Qt 5.7.1.
 	- A few Brazilian Portuguese translation bugs corrected (reported by rodolforg, fixed by Alexandre R. Soares).
 ---------------------------------------------------------------------------------
-Versions 5.31.0 - 5.31.v
+Versions 5.31.0 - 5.31.9
 - Version 5.31.0
 	- Updated to Qt 5.8.0.
 	- Added a new type of constraint: teacher(s)/students (set) max span per day (the maximum time spent in the institution on a day).
@@ -1963,3 +1963,9 @@ Versions 5.31.0 - 5.31.v
 	fixed by Volker Dirr.
 - Version 5.31.9
 	- Bug fix in the German translation. Reported by math, corrected by Bob Hairgrove.
+---------------------------------------------------------------------------------
+Versions 5.32.0 - 5.32.v
+- Version 5.32.0
+	- Implemented the teachers' and students' timetable view time horizontal from the FET interface, for easier locking/unlocking/generating a partially locked timetable.
+	Suggested by Vangelis Karafillidis, who did a great job with his useful suggestions and reports. Also Volker Dirr had some useful suggestions for this new feature.
+	- Added the en_GB (British English) locale, so that the date/time in the generated timetables can be shown in British format (suggested by rjmillett).
