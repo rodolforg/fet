@@ -333,7 +333,7 @@ TimetableViewTeachersTimeHorizontalForm::TimetableViewTeachersTimeHorizontalForm
 	////////////////
 	
 	subjectsCheckBox->setChecked(true);
-	studentsCheckBox->setChecked(false);
+	studentsCheckBox->setChecked(true);
 	
 	if(settings.contains(this->metaObject()->className()+QString("/subjects-check-box-state"))){
 		bool state=settings.value(this->metaObject()->className()+QString("/subjects-check-box-state")).toBool();
