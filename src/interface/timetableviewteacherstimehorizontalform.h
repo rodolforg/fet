@@ -50,8 +50,6 @@ class TimetableViewTeachersTimeHorizontalForm : public QDialog, public Ui::Timet
 	
 private:
 	int initialRecommendedHeight;
-	const int MINIMUM_WIDTH_SPIN_BOX_VALUE=9;
-	const int MINIMUM_HEIGHT_SPIN_BOX_VALUE=9;
 
 	QAbstractItemDelegate* oldItemDelegate;
 	TimetableViewTeachersTimeHorizontalDelegate* newItemDelegate;
