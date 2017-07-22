@@ -1,8 +1,8 @@
 /***************************************************************************
-                          timetableviewteachersform.h  -  description
+                          timetableviewteacherstimehorizontalform.h  -  description
                              -------------------
-    begin                : Wed May 14 2003
-    copyright            : (C) 2003 by Lalescu Liviu
+    begin                : 2017
+    copyright            : (C) 2017 by Lalescu Liviu
     email                : Please see http://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
  ***************************************************************************/
 
@@ -15,22 +15,50 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TIMETABLEVIEWTEACHERSFORM_H
-#define TIMETABLEVIEWTEACHERSFORM_H
+#ifndef TIMETABLEVIEWTEACHERSTIMEHORIZONTALFORM_H
+#define TIMETABLEVIEWTEACHERSTIMEHORIZONTALFORM_H
 
 #include <QResizeEvent>
 
+#include <QAbstractItemDelegate>
+#include <QStyledItemDelegate>
+
 class QColor; //by Marco Vassura
 
-#include "ui_timetableviewteachersform_template.h"
+#include "ui_timetableviewteacherstimehorizontalform_template.h"
 
-class TimetableViewTeachersForm : public QDialog, public Ui::TimetableViewTeachersForm_template
+class TimetableViewTeachersTimeHorizontalDelegate: public QStyledItemDelegate
 {
 	Q_OBJECT
+	
+private:
+	int nRows;
+	int nColumns; //The number of columns after which a line is drawn.
+	
+public:
+	TimetableViewTeachersTimeHorizontalDelegate(QWidget* parent, int _nRows, int _nColumns): QStyledItemDelegate(parent){
+		nRows=_nRows;
+		nColumns=_nColumns;
+	}
+	
+	void paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const override; //As in a Qt example
+};
+
+class TimetableViewTeachersTimeHorizontalForm : public QDialog, public Ui::TimetableViewTeachersTimeHorizontalForm_template
+{
+	Q_OBJECT
+	
+private:
+	int initialRecommendedHeight;
+	const int MINIMUM_WIDTH_SPIN_BOX_VALUE=9;
+	const int MINIMUM_HEIGHT_SPIN_BOX_VALUE=9;
+
+	QAbstractItemDelegate* oldItemDelegate;
+	TimetableViewTeachersTimeHorizontalDelegate* newItemDelegate;
 
 public:
-	TimetableViewTeachersForm(QWidget* parent);
-	~TimetableViewTeachersForm();
+	TimetableViewTeachersTimeHorizontalForm(QWidget* parent);
+	~TimetableViewTeachersTimeHorizontalForm();
 	
 	void lock(bool lockTime, bool lockSpace);
 	
@@ -44,14 +72,15 @@ public slots:
 	void lockTimeSpace();
 	void updateTeachersTimetableTable();
 
-	void teacherChanged(const QString& teacherName);
-
 	void currentItemChanged(QTableWidgetItem* current, QTableWidgetItem* previous);
 
 	void help();
+	
+	void widthSpinBoxValueChanged();
+	void heightSpinBoxValueChanged();
 
 protected:
-	void resizeEvent(QResizeEvent* event);
+//	void resizeEvent(QResizeEvent* event);
 	QColor stringToColor(QString s); //by Marco Vassura
 };
 

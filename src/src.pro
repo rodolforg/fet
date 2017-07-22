@@ -150,11 +150,13 @@ SOURCES += \
 	interface/helponimperfectconstraints.cpp \
 	interface/helponstudentsminhoursdaily.cpp \
 	interface/settingstimetablehtmllevelform.cpp \
-	interface/timetableviewstudentsform.cpp \
+	interface/timetableviewstudentsdayshorizontalform.cpp \
+	interface/timetableviewstudentstimehorizontalform.cpp \
 	interface/timetableviewroomsform.cpp \
 	interface/yearsform.cpp \
 	interface/timetableshowconflictsform.cpp \
-	interface/timetableviewteachersform.cpp \
+	interface/timetableviewteachersdayshorizontalform.cpp \
+	interface/timetableviewteacherstimehorizontalform.cpp \
 	interface/hoursform.cpp \
 	interface/daysform.cpp \
 	interface/roomsform.cpp \
@@ -640,11 +642,13 @@ HEADERS += \
 	interface/helponimperfectconstraints.h \
 	interface/helponstudentsminhoursdaily.h \
 	interface/settingstimetablehtmllevelform.h \
-	interface/timetableviewstudentsform.h \
+	interface/timetableviewstudentsdayshorizontalform.h \
+	interface/timetableviewstudentstimehorizontalform.h \
 	interface/timetableviewroomsform.h \
 	interface/yearsform.h \
 	interface/timetableshowconflictsform.h \
-	interface/timetableviewteachersform.h \
+	interface/timetableviewteachersdayshorizontalform.h \
+	interface/timetableviewteacherstimehorizontalform.h \
 	interface/hoursform.h \
 	interface/daysform.h \
 	interface/roomsform.h \
@@ -1084,11 +1088,13 @@ FORMS += \
 	interface/teachersform_template.ui \
 	interface/timetablegenerateform_template.ui \
 	interface/timetablegeneratemultipleform_template.ui \
-	interface/timetableviewstudentsform_template.ui \
+	interface/timetableviewstudentsdayshorizontalform_template.ui \
+	interface/timetableviewstudentstimehorizontalform_template.ui \
 	interface/timetableviewroomsform_template.ui \
 	interface/yearsform_template.ui \
 	interface/timetableshowconflictsform_template.ui \
-	interface/timetableviewteachersform_template.ui \
+	interface/timetableviewteachersdayshorizontalform_template.ui \
+	interface/timetableviewteacherstimehorizontalform_template.ui \
 	interface/daysform_template.ui \
 	interface/hoursform_template.ui \
 	interface/roomsform_template.ui \
@@ -1316,6 +1322,7 @@ TRANSLATIONS += \
 	../translations/fet_da.ts \
 	../translations/fet_de.ts \
 	../translations/fet_el.ts \
+	../translations/fet_en_GB.ts \
 	../translations/fet_es.ts \
 	../translations/fet_eu.ts \
 	../translations/fet_fa.ts \

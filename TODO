@@ -2935,6 +2935,8 @@ Also from abautu, on forum: Could you add an extra field for subjects and teache
 For example, for a subject called "Classical literature" a short name could be "CL" or "C-101". Then the print timetable features
 would allow to print the short names (i.e. compact timetable) or long names (i.e. normal timetable).
 
+See also item #324
+
 200---------------------------------------------------------
 (Added on 2014-10-12)
 From fromturkey (on forum):
@@ -5332,3 +5334,98 @@ core get/care about its own data.
 
 (even if we never add multicore this tidy up migth be useful, since it 
 might help reading the source)
+
+319---------------------------------------------------------
+From Vangelis Karafillidis:
+
+Two activities are not consecutive. For example A1 and A2 are not consecutive means that FET forces the A2 activity not to be placed immediately after A1.
+(But A1 may be placed immediately after A2).
+
+Vangelis suggested that this can be solved by using a trick: It can be achieved indirectly with pseudo-activities. let's say A1 real activity,
+P1 pseudo-activity, and A2 real activity. If you want A1 and A2 not to be consecutive, you can demand A1 and P1 to be consecutive and A2 not to overlap with P1.
+
+320---------------------------------------------------------
+From Volker Dirr:
+
+get rid of max_days_per_week and max_hours_per_day.
+one needed step for that is redisigning the interface, since the 
+interface use it.
+it won't be too difficult to fix that.
+just add hours per day and days per week as a QStringList (like teacher 
+names, subject names, ...)
+this dialog should get buttons like in teachers, rooms, subjects, ...
+so add a button with "up" and "down" to move the name.
+"rename"
+"clear all"
+"delete"
+"add"
+
+the hours per day dialog should maybe also get a button with a spinbox 
+to add X names at once.
+Like name "1", "2", ...
+or "1.", "2.", ...
+or ...
+
+the days per week dialog should get 3 buttons like:
+"add Monday to Friday" (so it add those 5 days. if you press that button 
+again, it should add once again. so there will be 10 days added (maybe 
+with an attached small string).
+"add Monday to Saturday"
+"add Monday to Sunday"
+"add From a date To a date" So you can select 2 calender dates and it 
+just add all that dates.
+
+321---------------------------------------------------------
+From Vangelis Karafillidis:
+
+These new views of FET (teachers/students time horizontal) for modifying an existing timetable seem to work very well. Some more suggestions mainly for facilitating
+the modifications of an existing timetable... The code actually exists! Just to be "connected" to these windows (views).
+Teachers view:
+1) When right-clicking on the name of a teacher (left column), a menu opens. The options are the constraints (time, room, etc) for the specific teacher. For example,
+teacher available times, max days per week, home room etc.
+2) When right-clicking on an activity (in the timetable), a menu with two sub-menus opens. The first sub-menu has the options of modifying the specific activity.
+The second sub-menu is actually all the of the time constraints for the specific activity (for example an activity has a preferred starting time, etc).
+Students view:The corresponding options for the students, as mentioned above.
+
+I think that the above are necessary. Of course ALL the existing options for the teachers, students etc might be displayed in these menus, when right-clicking.
+For example, modifying the data (teacher name, etc). THIS WOULD BE MUCH BETTER, SO ONE COULD MAKE MODIFICATIONS ON ALL FET FIELDS WITHOUT EXISTING THESE WINDOWS.
+But, I don't know how complicated this part is. I have no C++ programming skills, but it seems easy.
+The above suggested options focus on MODIFYING AN EXISTING TIMETABLE WHICH IS A COMMON PRACTICE IN REAL LIFE SITUATIONS AT SCHOOLS. I KNOW AND I ACCEPT THAT
+MATHEMATICALLY AND COMPUTATIONALLY MODIFYING AN EXISTING TIMETABLE IT'S NOT THE BEST APPROACH.
+
+Liviu Lalescu:
+
+Your suggestions are not so easy to implement.
+
+322---------------------------------------------------------
+From Vangelis Karafillidis:
+
+After testing the new display (mainly teachers time horizontal) for partially modifying an existing timetable, I thought of a suggestion.Most likely, it's
+similar to "remove redundant constraints". The suggestion is to add a (percentage) multiplication factor for each one of the "groups" or time constraints.
+This means that the user should be able to add a different multiplication factor for each one of the following groups of constraints: Teachers' time constraints
+(for example 98%)Students' time constraints (for example 90%)Activities time constraints (for example 20%) This would affect ONLY the constraints that can have
+weight (percentage) less than 100%. For example, teachers not available times can have ONLY 100% as a percentage. These constraints are not going to be affected.
+But, all the other constraints (for example: teachers max gaps per day, max hours continuously) are going to be affected since they are going to be multiplied
+by this factor. For example if there is a constraint for the TEACHER_1 such as max hours continuously = 3, weight = 100%, it is going to be now 98%.
+If there is a constraint teacher max gaps per day = 1, weight = 98%, the new weight would become 96,04% (98%x98%). This should (more or less) relax these
+constraints, so a temporary timetable is going to be solvable, with roughly similar (to identical) characteristics to the initial one. I don't know if the
+above can be easily coded... It might be difficult.... But this was what I thought for facilitating the generation of a temporary timetable by slightly
+modifying the existing one.
+
+Liviu Lalescu:
+
+I do not agree with this idea. But I added it in the TODO.
+
+Please note that max gaps per week/day for students/teachers constraints can only have 100% weight.
+
+323---------------------------------------------------------
+From Vangelis Karafillidis:
+
+He suggest that all the constraints teacher not available could be presented in a teachers time horizontal manner (teacher as row, day/hour as column).
+
+324---------------------------------------------------------
+From rodolforg (on forum):
+
+Add short names for teachers (and maybe students, subjects, activity tags, rooms).
+
+See also item #199.

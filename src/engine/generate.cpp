@@ -48,6 +48,7 @@ using namespace std;
 extern QMutex myMutex; //timetablegenerateform.cpp
 
 ////////////
+
 inline void Generate::addAiToNewTimetable(int ai, const Activity* act, int d, int h)
 {
 	//foreach(int tch, act->iTeachersList){
@@ -2636,7 +2637,7 @@ if(threaded){
 }
 	timeToHighestStage=0;
 	searchTime=0;
-	generationStartDateTime=QDateTime::currentDateTime();
+//	generationStartDateTime=QDateTime::currentDateTime();
 if(threaded){
 		myMutex.unlock();
 }
@@ -3069,7 +3070,7 @@ if(threaded){
 		}			
 		else{ //if foundGoodSwap==true
 			if(maxActivitiesPlaced<added_act+1){
-				generationHighestStageDateTime=QDateTime::currentDateTime();
+//				generationHighestStageDateTime=QDateTime::currentDateTime();
 				time_t tmp;
 				time(&tmp);
 				timeToHighestStage=int(tmp-starting_time);

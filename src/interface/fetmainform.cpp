@@ -34,8 +34,10 @@ using namespace std;
 #include "timetablegenerateform.h"
 #include "timetablegeneratemultipleform.h"
 
-#include "timetableviewstudentsform.h"
-#include "timetableviewteachersform.h"
+#include "timetableviewstudentsdayshorizontalform.h"
+#include "timetableviewstudentstimehorizontalform.h"
+#include "timetableviewteachersdayshorizontalform.h"
+#include "timetableviewteacherstimehorizontalform.h"
 #include "timetableviewroomsform.h"
 #include "timetableshowconflictsform.h"
 #include "timetableprintform.h"
@@ -673,11 +675,12 @@ void FetMainForm::setEnabledIcon(QAction* action, bool enabled)
 void FetMainForm::populateLanguagesMap(QMap<QString, QString>& languagesMap)
 {
 	languagesMap.clear();
-	languagesMap.insert("en_US", tr("US English"));
 	languagesMap.insert("ar", tr("Arabic"));
 	languagesMap.insert("ca", tr("Catalan"));
 	languagesMap.insert("de", tr("German"));
 	languagesMap.insert("el", tr("Greek"));
+	languagesMap.insert("en_GB", tr("British English"));
+	languagesMap.insert("en_US", tr("US English"));
 	languagesMap.insert("es", tr("Spanish"));
 	languagesMap.insert("fr", tr("French"));
 	languagesMap.insert("hu", tr("Hungarian"));
@@ -2393,7 +2396,7 @@ void FetMainForm::on_timetableGenerateMultipleAction_triggered()
 	LockUnlock::increaseCommunicationSpinBox();
 }
 
-void FetMainForm::on_timetableViewStudentsAction_triggered()
+void FetMainForm::on_timetableViewStudentsDaysHorizontalAction_triggered()
 {
 	if(!CachedSchedule::isValid()){
 		QMessageBox::information(this, tr("FET information"), tr("Please generate, firstly"));
@@ -2405,7 +2408,7 @@ void FetMainForm::on_timetableViewStudentsAction_triggered()
 		return;
 	}
 
-	TimetableViewStudentsForm *form=new TimetableViewStudentsForm(this);
+	TimetableViewStudentsDaysHorizontalForm *form=new TimetableViewStudentsDaysHorizontalForm(this);
 	form->setWindowFlags(Qt::Window);
 	form->setAttribute(Qt::WA_DeleteOnClose);
 	forceCenterWidgetOnScreen(form);
@@ -2414,7 +2417,28 @@ void FetMainForm::on_timetableViewStudentsAction_triggered()
 	form->resizeRowsAfterShow();
 }
 
-void FetMainForm::on_timetableViewTeachersAction_triggered()
+void FetMainForm::on_timetableViewStudentsTimeHorizontalAction_triggered()
+{
+	if(!CachedSchedule::isValid()){
+		QMessageBox::information(this, tr("FET information"), tr("Please generate, firstly"));
+		return;
+	}
+
+	if(gt.rules.nInternalRooms!=gt.rules.roomsList.count()){
+		QMessageBox::warning(this, tr("FET warning"), tr("Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it"));
+		return;
+	}
+
+	TimetableViewStudentsTimeHorizontalForm *form=new TimetableViewStudentsTimeHorizontalForm(this);
+	form->setWindowFlags(Qt::Window);
+	form->setAttribute(Qt::WA_DeleteOnClose);
+	forceCenterWidgetOnScreen(form);
+	restoreFETDialogGeometry(form);
+	form->show();
+	form->resizeRowsAfterShow();
+}
+
+void FetMainForm::on_timetableViewTeachersDaysHorizontalAction_triggered()
 {
 	if(!CachedSchedule::isValid()){
 		QMessageBox::information(this, tr("FET information"), tr("Please generate, firstly"));
@@ -2430,7 +2454,32 @@ void FetMainForm::on_timetableViewTeachersAction_triggered()
 		return;
 	}
 	
-	TimetableViewTeachersForm *form=new TimetableViewTeachersForm(this);
+	TimetableViewTeachersDaysHorizontalForm *form=new TimetableViewTeachersDaysHorizontalForm(this);
+	form->setWindowFlags(Qt::Window);
+	form->setAttribute(Qt::WA_DeleteOnClose);
+	forceCenterWidgetOnScreen(form);
+	restoreFETDialogGeometry(form);
+	form->show();
+	form->resizeRowsAfterShow();
+}
+
+void FetMainForm::on_timetableViewTeachersTimeHorizontalAction_triggered()
+{
+	if(!CachedSchedule::isValid()){
+		QMessageBox::information(this, tr("FET information"), tr("Please generate, firstly"));
+		return;
+	}
+
+	if(gt.rules.nInternalRooms!=gt.rules.roomsList.count()){
+		QMessageBox::warning(this, tr("FET warning"), tr("Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it"));
+		return;
+	}
+	if(gt.rules.nInternalTeachers!=gt.rules.teachersList.count()){
+		QMessageBox::warning(this, tr("FET warning"), tr("Cannot display the timetable, because you added or removed some teachers. Please regenerate the timetable and then view it"));
+		return;
+	}
+	
+	TimetableViewTeachersTimeHorizontalForm *form=new TimetableViewTeachersTimeHorizontalForm(this);
 	form->setWindowFlags(Qt::Window);
 	form->setAttribute(Qt::WA_DeleteOnClose);
 	forceCenterWidgetOnScreen(form);
@@ -3495,12 +3544,16 @@ void FetMainForm::on_shortcutGenerateMultiplePushButton_clicked()
 
 void FetMainForm::on_shortcutViewTeachersPushButton_clicked()
 {
-	on_timetableViewTeachersAction_triggered();
+	menuView_teachers->popup(QCursor::pos());
+	//old
+	//on_timetableViewTeachersAction_triggered();
 }
 
 void FetMainForm::on_shortcutViewStudentsPushButton_clicked()
 {
-	on_timetableViewStudentsAction_triggered();
+	menuView_students->popup(QCursor::pos());
+	//old
+	//on_timetableViewStudentsAction_triggered();
 }
 
 void FetMainForm::on_shortcutViewRoomsPushButton_clicked()

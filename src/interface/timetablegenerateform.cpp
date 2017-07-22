@@ -27,8 +27,8 @@
 
 #include <QPlainTextEdit>
 
-#include <QDateTime>
-#include <QLocale>
+//#include <QDateTime>
+//#include <QLocale>
 
 #include <QMessageBox>
 
@@ -57,7 +57,6 @@ extern QString initialOrderOfActivities;
 extern int initialOrderOfActivitiesIndices[MAX_ACTIVITIES];
 
 QString getActivityDetailedDescription(const Rules& r, int id);
-
 
 static QString getBasename(){
 	QFileInfo input(INPUT_FILENAME_XML);

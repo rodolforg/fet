@@ -939,10 +939,24 @@
      <addaction name="timetableLockActivitiesEndStudentsDayAction"/>
      <addaction name="timetableUnlockActivitiesEndStudentsDayAction"/>
     </widget>
+    <widget class="QMenu" name="menuView_teachers">
+     <property name="title">
+      <string>View (&amp;teachers)</string>
+     </property>
+     <addaction name="timetableViewTeachersDaysHorizontalAction"/>
+     <addaction name="timetableViewTeachersTimeHorizontalAction"/>
+    </widget>
+    <widget class="QMenu" name="menuView_students">
+     <property name="title">
+      <string>View (&amp;students)</string>
+     </property>
+     <addaction name="timetableViewStudentsDaysHorizontalAction"/>
+     <addaction name="timetableViewStudentsTimeHorizontalAction"/>
+    </widget>
     <addaction name="timetableGenerateAction"/>
     <addaction name="separator"/>
-    <addaction name="timetableViewTeachersAction"/>
-    <addaction name="timetableViewStudentsAction"/>
+    <addaction name="menuView_teachers"/>
+    <addaction name="menuView_students"/>
     <addaction name="timetableViewRoomsAction"/>
     <addaction name="timetableShowConflictsAction"/>
     <addaction name="separator"/>
@@ -1420,16 +1434,6 @@
    </property>
    <property name="shortcut">
     <string extracomment="This is the shortcut for menu item Timetable-&gt;Generate. It is recommended to translate with Ctrl+G, the same as original, or with Ctrl+other letter you prefer (do not make duplicates with other shortcuts). All shortcuts are: Ctrl+N (New), Ctrl+O (Open), Ctrl+S (Save), Ctrl+Q (Quit), Ctrl+G (Generate), Ctrl+P (Print). Please use the English keyboard modifiers name, for instance Ctrl, because otherwise the shortcuts do not work (so, even if your keyboard has another name for the Ctrl key, write 'Ctrl'. It will work OK on all platforms. Even if you are on German keyboard, write 'Ctrl' as in English). Maybe it would be good to translate with 'Ctrl+G', the same as the English original, to keep things standard.">Ctrl+G</string>
-   </property>
-  </action>
-  <action name="timetableViewStudentsAction">
-   <property name="text">
-    <string extracomment="Accelerator key (letter after ampersand) for &amp;Generate new, View (&amp;teachers), View (&amp;students), View (&amp;rooms), Show soft &amp;conflicts, &amp;Print, Generate &amp;multiple, must be different">View (&amp;students)</string>
-   </property>
-  </action>
-  <action name="timetableViewTeachersAction">
-   <property name="text">
-    <string extracomment="Accelerator key (letter after ampersand) for &amp;Generate new, View (&amp;teachers), View (&amp;students), View (&amp;rooms), Show soft &amp;conflicts, &amp;Print, Generate &amp;multiple, must be different">View (&amp;teachers)</string>
    </property>
   </action>
   <action name="timetableShowConflictsAction">
@@ -2549,6 +2553,26 @@
   <action name="dataTimeConstraintsStudentsSetMinContinuousGapInIntervalAction">
    <property name="text">
     <string>A students set has a min continuous gap in an hourly interval</string>
+	</property>
+   </action>
+  <action name="timetableViewTeachersDaysHorizontalAction">
+   <property name="text">
+    <string>Days horizontal</string>
+   </property>
+  </action>
+  <action name="timetableViewTeachersTimeHorizontalAction">
+   <property name="text">
+    <string>Time horizontal</string>
+   </property>
+  </action>
+  <action name="timetableViewStudentsDaysHorizontalAction">
+   <property name="text">
+    <string>Days horizontal</string>
+   </property>
+  </action>
+  <action name="timetableViewStudentsTimeHorizontalAction">
+   <property name="text">
+    <string>Time horizontal</string>
    </property>
   </action>
  </widget>
