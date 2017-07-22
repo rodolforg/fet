@@ -26,6 +26,7 @@
 #include "longtextmessagebox.h"
 
 #include "centerwidgetonscreen.h"
+#include "timetable_defs.h"
 
 ConstraintBaseDialog::ConstraintBaseDialog(QWidget* parent): QDialog(parent),
 	  filterWidget(nullptr)
@@ -93,6 +94,17 @@ void ConstraintBaseDialog::filterChanged()
 
 	fillConstraintList(visibleConstraintsList);
 
+	if(USE_GUI_COLORS) {
+		for(int i = 0; i < constraintsListWidget->count(); ++i)
+		{
+			QListWidgetItem* item = constraintsListWidget->item(i);
+			if (isConstraintActive(visibleConstraintsList[i]))
+				item->setBackground(constraintsListWidget->palette().base());
+			else
+				item->setBackground(constraintsListWidget->palette().alternateBase());
+		}
+	}
+
 	if(constraintsListWidget->count()>0)
 		constraintsListWidget->setCurrentRow(0);
 	else
@@ -157,11 +169,7 @@ void ConstraintBaseDialog::modifyConstraint()
 
 	if(i>=constraintsListWidget->count())
 		i=constraintsListWidget->count()-1;
-
-	if(i>=0)
-		constraintsListWidget->setCurrentRow(i);
-	else
-		this->constraintChanged(-1);
+	constraintsListWidget->setCurrentRow(i);
 }
 
 void ConstraintBaseDialog::removeConstraint()
@@ -179,32 +187,25 @@ void ConstraintBaseDialog::removeConstraint()
 
 	QListWidgetItem* item;
 
-	switch( LongTextMessageBox::confirmation( this, tr("FET confirmation"),
-		s, tr("&Yes"), tr("&No"), 0, 0, 1 ) ){
-	case 0: // The user clicked the OK button or pressed Enter
-		if (!beforeRemoveConstraint())
-			break;
+	bool confirmedRemoval = 0 == LongTextMessageBox::confirmation( this, tr("FET confirmation"),
+														 s, tr("&Yes"), tr("&No"), 0, 0, 1 );
+	if (!confirmedRemoval) // The user clicked the Cancel button or pressed Escape
+		return;
 
-		doRemoveConstraint(ctr);
+	if (!beforeRemoveConstraint())
+		return;
 
-		visibleConstraintsList.removeAt(i);
-		constraintsListWidget->setCurrentRow(-1);
-		item=constraintsListWidget->takeItem(i);
-		delete item;
+	doRemoveConstraint(ctr);
 
-		afterRemoveConstraint();
+	item=constraintsListWidget->takeItem(i);
+	visibleConstraintsList.removeAt(i);
+	delete item;
 
-		break;
-	case 1: // The user clicked the Cancel button or pressed Escape
-		break;
-	}
+	afterRemoveConstraint();
 
 	if(i>=constraintsListWidget->count())
 		i=constraintsListWidget->count()-1;
-	if(i>=0)
-		constraintsListWidget->setCurrentRow(i);
-	else
-		this->constraintChanged(-1);
+	constraintsListWidget->setCurrentRow(i);
 }
 
 void ConstraintBaseDialog::editComments()
