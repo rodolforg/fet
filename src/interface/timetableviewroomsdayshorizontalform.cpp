@@ -1,5 +1,5 @@
 /***************************************************************************
-                          timetableviewroomsform.cpp  -  description
+                          timetableviewroomsdayshorizontalform.cpp  -  description
                              -------------------
     begin                : Wed May 14 2003
     copyright            : (C) 2003 by Lalescu Liviu
@@ -22,7 +22,7 @@
 #include "longtextmessagebox.h"
 
 #include "fetmainform.h"
-#include "timetableviewroomsform.h"
+#include "timetableviewroomsdayshorizontalform.h"
 #include "timetable_defs.h"
 #include "timetable.h"
 #include "solution.h"
@@ -82,7 +82,7 @@ extern QSet<int> idsOfPermanentlyLockedSpace;	//care about locked activities in 
 
 extern CommunicationSpinBox communicationSpinBox;	//small hint to sync the forms
 
-TimetableViewRoomsForm::TimetableViewRoomsForm(QWidget* parent): QDialog(parent)
+TimetableViewRoomsDaysHorizontalForm::TimetableViewRoomsDaysHorizontalForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);
 	
@@ -212,7 +212,7 @@ TimetableViewRoomsForm::TimetableViewRoomsForm(QWidget* parent): QDialog(parent)
 	connect(&communicationSpinBox, SIGNAL(valueChanged(int)), this, SLOT(updateRoomsTimetableTable()));
 }
 
-TimetableViewRoomsForm::~TimetableViewRoomsForm()
+TimetableViewRoomsDaysHorizontalForm::~TimetableViewRoomsDaysHorizontalForm()
 {
 	saveFETDialogGeometry(this);
 
@@ -225,13 +225,13 @@ TimetableViewRoomsForm::~TimetableViewRoomsForm()
 	settings.setValue(this->metaObject()->className()+QString("/horizontal-splitter-state"), horizontalSplitter->saveState());
 }
 
-void TimetableViewRoomsForm::resizeRowsAfterShow()
+void TimetableViewRoomsDaysHorizontalForm::resizeRowsAfterShow()
 {
 	roomsTimetableTable->resizeRowsToContents();
 //	tableWidgetUpdateBug(roomsTimetableTable);
 }
 
-void TimetableViewRoomsForm::roomChanged(const QString &roomName)
+void TimetableViewRoomsDaysHorizontalForm::roomChanged(const QString &roomName)
 {
 	if(!(students_schedule_ready && teachers_schedule_ready)){
 		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view rooms timetable dialog - please generate a new timetable"));
@@ -256,7 +256,7 @@ void TimetableViewRoomsForm::roomChanged(const QString &roomName)
 	updateRoomsTimetableTable();
 }
 
-void TimetableViewRoomsForm::updateRoomsTimetableTable(){
+void TimetableViewRoomsDaysHorizontalForm::updateRoomsTimetableTable(){
 	if(!(students_schedule_ready && teachers_schedule_ready)){
 		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view rooms timetable dialog - please generate a new timetable "
 		"or close the timetable view rooms dialog"));
@@ -393,14 +393,14 @@ void TimetableViewRoomsForm::updateRoomsTimetableTable(){
 	detailActivity(roomsTimetableTable->currentItem());
 }
 
-void TimetableViewRoomsForm::resizeEvent(QResizeEvent* event){
+void TimetableViewRoomsDaysHorizontalForm::resizeEvent(QResizeEvent* event){
 	QDialog::resizeEvent(event);
 
 	roomsTimetableTable->resizeRowsToContents();
 }
 
 //begin by Marco Vassura
-QColor TimetableViewRoomsForm::stringToColor(QString s)
+QColor TimetableViewRoomsDaysHorizontalForm::stringToColor(QString s)
 {
 	// CRC-24 Based on RFC 2440 Section 6.1
 	unsigned long crc = 0xB704CEL;
@@ -419,14 +419,14 @@ QColor TimetableViewRoomsForm::stringToColor(QString s)
 }
 //end by Marco Vassura
 
-void TimetableViewRoomsForm::currentItemChanged(QTableWidgetItem* current, QTableWidgetItem* previous)
+void TimetableViewRoomsDaysHorizontalForm::currentItemChanged(QTableWidgetItem* current, QTableWidgetItem* previous)
 {
 	Q_UNUSED(previous);
 	
 	detailActivity(current);
 }
 
-void TimetableViewRoomsForm::detailActivity(QTableWidgetItem* item){
+void TimetableViewRoomsDaysHorizontalForm::detailActivity(QTableWidgetItem* item){
 	if(item==NULL){
 		detailsTextEdit->setPlainText(QString(""));
 		return;
@@ -476,7 +476,15 @@ void TimetableViewRoomsForm::detailActivity(QTableWidgetItem* item){
 		if(ai!=UNALLOCATED_ACTIVITY){
 			Activity* act=&gt.rules.internalActivitiesList[ai];
 			assert(act!=NULL);
-			s += act->getDetailedDescriptionWithConstraints(gt.rules);
+			//s += act->getDetailedDescriptionWithConstraints(gt.rules);
+			s += act->getDetailedDescription(gt.rules);
+
+			int r=best_solution.rooms[ai];
+			if(r!=UNALLOCATED_SPACE && r!=UNSPECIFIED_ROOM){
+				s+="\n";
+				s+=tr("Room: %1").arg(gt.rules.internalRoomsList[r]->name);
+			}
+
 			//added by Volker Dirr (start)
 			QString descr="";
 			QString t="";
@@ -515,22 +523,22 @@ void TimetableViewRoomsForm::detailActivity(QTableWidgetItem* item){
 	detailsTextEdit->setPlainText(s);
 }
 
-void TimetableViewRoomsForm::lock()
+void TimetableViewRoomsDaysHorizontalForm::lock()
 {
 	this->lock(true, true);
 }
 
-void TimetableViewRoomsForm::lockTime()
+void TimetableViewRoomsDaysHorizontalForm::lockTime()
 {
 	this->lock(true, false);
 }
 
-void TimetableViewRoomsForm::lockSpace()
+void TimetableViewRoomsDaysHorizontalForm::lockSpace()
 {
 	this->lock(false, true);
 }
 
-void TimetableViewRoomsForm::lock(bool lockTime, bool lockSpace)
+void TimetableViewRoomsDaysHorizontalForm::lock(bool lockTime, bool lockSpace)
 {
 	//cout<<"rooms begin: internalStructureComputed=="<<gt.rules.internalStructureComputed<<endl;
 
@@ -560,11 +568,11 @@ void TimetableViewRoomsForm::lock(bool lockTime, bool lockSpace)
 	roomName = roomsListWidget->currentItem()->text();
 	int i=gt.rules.searchRoom(roomName);
 
-	if(!(rooms_schedule_ready)){
+	/*if(!(rooms_schedule_ready)){
 		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view rooms timetable dialog - please generate a new timetable"));
 		return;
 	}
-	assert(rooms_schedule_ready);
+	assert(rooms_schedule_ready);*/
 	
 	if(i<0){
 		QMessageBox::warning(this, tr("FET warning"), tr("Invalid room - please close this dialog and open a new view rooms timetable dialog"));
@@ -726,6 +734,7 @@ void TimetableViewRoomsForm::lock(bool lockTime, bool lockSpace)
 						}  //modified by Volker Dirr, so you can also unlock (end)
 
 						if(report){
+							int k;
 							k=QMessageBox::information(this, tr("FET information"), s,
 						 	 tr("Skip information"), tr("See next"), QString(), 1, 0 );
 								
@@ -801,7 +810,7 @@ void TimetableViewRoomsForm::lock(bool lockTime, bool lockSpace)
 	//cout<<endl;
 }
 
-void TimetableViewRoomsForm::help()
+void TimetableViewRoomsDaysHorizontalForm::help()
 {
 	QString s="";
 	//s+=QCoreApplication::translate("TimetableViewForm", "You can drag sections to increase/decrease them.");

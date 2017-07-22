@@ -953,11 +953,18 @@
      <addaction name="timetableViewStudentsDaysHorizontalAction"/>
      <addaction name="timetableViewStudentsTimeHorizontalAction"/>
     </widget>
+    <widget class="QMenu" name="menuView_rooms">
+     <property name="title">
+      <string>View (&amp;rooms)</string>
+     </property>
+     <addaction name="timetableViewRoomsDaysHorizontalAction"/>
+     <addaction name="timetableViewRoomsTimeHorizontalAction"/>
+    </widget>
     <addaction name="timetableGenerateAction"/>
     <addaction name="separator"/>
     <addaction name="menuView_teachers"/>
     <addaction name="menuView_students"/>
-    <addaction name="timetableViewRoomsAction"/>
+    <addaction name="menuView_rooms"/>
     <addaction name="timetableShowConflictsAction"/>
     <addaction name="separator"/>
     <addaction name="timetablePrintAction"/>
@@ -1453,14 +1460,6 @@
    </property>
    <property name="text">
     <string extracomment="Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different">&amp;Rooms</string>
-   </property>
-  </action>
-  <action name="timetableViewRoomsAction">
-   <property name="enabled">
-    <bool>true</bool>
-   </property>
-   <property name="text">
-    <string extracomment="Accelerator key (letter after ampersand) for &amp;Generate new, View (&amp;teachers), View (&amp;students), View (&amp;rooms), Show soft &amp;conflicts, &amp;Print, Generate &amp;multiple, must be different">View (&amp;rooms)</string>
    </property>
   </action>
   <action name="dataTimeConstraintsActivitiesPreferredTimeSlotsAction">
@@ -2547,6 +2546,16 @@
    </property>
   </action>
   <action name="timetableViewStudentsTimeHorizontalAction">
+   <property name="text">
+    <string>Time horizontal</string>
+   </property>
+  </action>
+  <action name="timetableViewRoomsDaysHorizontalAction">
+   <property name="text">
+    <string>Days horizontal</string>
+   </property>
+  </action>
+  <action name="timetableViewRoomsTimeHorizontalAction">
    <property name="text">
     <string>Time horizontal</string>
    </property>
