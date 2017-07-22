@@ -199,7 +199,7 @@ TimetableViewStudentsTimeHorizontalForm::TimetableViewStudentsTimeHorizontalForm
 	
 	usedStudentsSet.clear();
 	for(int i=0; i<gt.rules.nInternalActivities; i++){
-		Activity* act=&gt.rules.internalActivitiesList[i];
+		const Activity* act=&gt.rules.internalActivitiesList[i];
 		foreach(QString students, act->studentsNames){
 			if(!usedStudentsSet.contains(students))
 				usedStudentsSet.insert(students);
@@ -557,7 +557,7 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 				
 				//Activity* act=gt.rules.activitiesList.at(ai);
 				if(ok){
-					Activity* act=&gt.rules.internalActivitiesList[ai];
+					const Activity* act=&gt.rules.internalActivitiesList[ai];
 					assert(act!=NULL);
 					
 					if(TIMETABLE_HTML_PRINT_ACTIVITY_TAGS){
@@ -669,7 +669,7 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 				}
 				if(ok){
 					QString s2;
-					Activity* act=&gt.rules.internalActivitiesList[ai];
+					const Activity* act=&gt.rules.internalActivitiesList[ai];
 					if(teachersCheckBox->isChecked() && !act->teachersNames.isEmpty()){
 						s2+=act->teachersNames.join(", ");
 					}
@@ -832,7 +832,7 @@ void TimetableViewStudentsTimeHorizontalForm::detailActivity(QTableWidgetItem* i
 		
 		//Activity* act=gt.rules.activitiesList.at(ai);
 		if(ok){
-			Activity* act=&gt.rules.internalActivitiesList[ai];
+			const Activity* act=&gt.rules.internalActivitiesList[ai];
 			assert(act!=NULL);
 			//s += act->getDetailedDescriptionWithConstraints(gt.rules);
 			s += act->getDetailedDescription(gt.rules);
@@ -1022,7 +1022,7 @@ void TimetableViewStudentsTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 			int day=tc->times[ai]%gt.rules.nDaysPerWeek;
 			int hour=tc->times[ai]/gt.rules.nDaysPerWeek;
 
-			Activity* act=&gt.rules.internalActivitiesList[ai];
+			const Activity* act=&gt.rules.internalActivitiesList[ai];
 			
 			if(lockTime){
 				QString s;

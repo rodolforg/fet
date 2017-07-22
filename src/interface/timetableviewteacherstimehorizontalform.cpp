@@ -424,7 +424,7 @@ void TimetableViewTeachersTimeHorizontalForm::updateTeachersTimetableTable(){
 				int ai=CachedSchedule::teachers_timetable_weekly[t][d][h]; //activity index
 				//Activity* act=gt.rules.activitiesList.at(ai);
 				if(ai!=UNALLOCATED_ACTIVITY){
-					Activity* act=&gt.rules.internalActivitiesList[ai];
+					const Activity* act=&gt.rules.internalActivitiesList[ai];
 					assert(act!=NULL);
 					
 					if(TIMETABLE_HTML_PRINT_ACTIVITY_TAGS){
@@ -641,7 +641,7 @@ void TimetableViewTeachersTimeHorizontalForm::detailActivity(QTableWidgetItem* i
 			int ai=CachedSchedule::teachers_timetable_weekly[t][d][h]; //activity index
 			//Activity* act=gt.rules.activitiesList.at(ai);
 			if(ai!=UNALLOCATED_ACTIVITY){
-				Activity* act=&gt.rules.internalActivitiesList[ai];
+				const Activity* act=&gt.rules.internalActivitiesList[ai];
 				assert(act!=NULL);
 				//s += act->getDetailedDescriptionWithConstraints(gt.rules);
 				s += act->getDetailedDescription(gt.rules);
@@ -788,7 +788,7 @@ void TimetableViewTeachersTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 			int day=tc->times[ai]%gt.rules.nDaysPerWeek;
 			int hour=tc->times[ai]/gt.rules.nDaysPerWeek;
 
-			Activity* act=&gt.rules.internalActivitiesList[ai];
+			const Activity* act=&gt.rules.internalActivitiesList[ai];
 			
 			if(lockTime){
 				QString s;
