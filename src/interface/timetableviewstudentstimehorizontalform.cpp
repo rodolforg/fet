@@ -527,13 +527,14 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 		
 		for(int d=0; d<gt.rules.nDaysPerWeek; d++){
 			for(int h=0; h<gt.rules.nHoursPerDay; ){
-				assert(d*gt.rules.nHoursPerDay+h<studentsTimetableTable->columnCount());
+				const int tableColumnIdx = d*gt.rules.nHoursPerDay+h;
+				assert(tableColumnIdx<studentsTimetableTable->columnCount());
 
 				//begin by Marco Vassura
 				// add colors (start)
 				//if(USE_GUI_COLORS) {
-					studentsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setBackground(studentsTimetableTable->palette().color(QPalette::Base));
-					studentsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setForeground(studentsTimetableTable->palette().color(QPalette::Text));
+					studentsTimetableTable->item(t, tableColumnIdx)->setBackground(studentsTimetableTable->palette().color(QPalette::Base));
+					studentsTimetableTable->item(t, tableColumnIdx)->setForeground(studentsTimetableTable->palette().color(QPalette::Text));
 				//}
 				// add colors (end)
 				//end by Marco Vassura
@@ -630,14 +631,14 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 					}
 
 					if(idsOfPermanentlyLockedTime.contains(act->id) || idsOfLockedTime.contains(act->id)){
-						QFont font(studentsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->font());
+						QFont font(studentsTimetableTable->item(t, tableColumnIdx)->font());
 						font.setBold(true);
-						studentsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setFont(font);
+						studentsTimetableTable->item(t, tableColumnIdx)->setFont(font);
 					}
 					else{
-						QFont font(studentsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->font());
+						QFont font(studentsTimetableTable->item(t, tableColumnIdx)->font());
 						font.setBold(false);
-						studentsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setFont(font);
+						studentsTimetableTable->item(t, tableColumnIdx)->setFont(font);
 					}
 					
 					s+=descr;
@@ -647,12 +648,12 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 					// add colors (start)
 					if(USE_GUI_COLORS /*&& act->studentsNames.count()>0*/){
 						QBrush bg(stringToColor(act->subjectName));
-						studentsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setBackground(bg);
+						studentsTimetableTable->item(t, tableColumnIdx)->setBackground(bg);
 						double brightness = bg.color().redF()*0.299 + bg.color().greenF()*0.587 + bg.color().blueF()*0.114;
 						if (brightness<0.5)
-							studentsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setForeground(QBrush(Qt::white));
+							studentsTimetableTable->item(t, tableColumnIdx)->setForeground(QBrush(Qt::white));
 						else
-							studentsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setForeground(QBrush(Qt::black));
+							studentsTimetableTable->item(t, tableColumnIdx)->setForeground(QBrush(Qt::black));
 					}
 					// add colors (end)
 					//end by Marco Vassura
@@ -677,15 +678,15 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 						}
 						s2+=act->subjectName;
 					}
-					studentsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setText(s2);
+					studentsTimetableTable->item(t, tableColumnIdx)->setText(s2);
 				}
 				else
-					studentsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setText(s);
-				studentsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setToolTip(s);
+					studentsTimetableTable->item(t, tableColumnIdx)->setText(s);
+				studentsTimetableTable->item(t, tableColumnIdx)->setToolTip(s);
 
 				int columnSpan = ai!=UNALLOCATED_ACTIVITY? gt.rules.internalActivitiesList[ai].duration : 1;
-				if (columnSpan != studentsTimetableTable->columnSpan(t, d*gt.rules.nHoursPerDay+h))
-					studentsTimetableTable->setSpan(t, d*gt.rules.nHoursPerDay+h, 1, columnSpan);
+				if (columnSpan != studentsTimetableTable->columnSpan(t, tableColumnIdx))
+					studentsTimetableTable->setSpan(t, tableColumnIdx, 1, columnSpan);
 				h += columnSpan;
 			}
 		}

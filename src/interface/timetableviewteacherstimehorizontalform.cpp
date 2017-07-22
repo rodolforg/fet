@@ -405,13 +405,14 @@ void TimetableViewTeachersTimeHorizontalForm::updateTeachersTimetableTable(){
 		assert(t<teachersTimetableTable->rowCount());
 		for(int d=0; d<gt.rules.nDaysPerWeek; d++){
 			for(int h=0; h<gt.rules.nHoursPerDay; ){
-				assert(d*gt.rules.nHoursPerDay+h<teachersTimetableTable->columnCount());
+				const int tableColumnIdx = d*gt.rules.nHoursPerDay+h;
+				assert(tableColumnIdx<teachersTimetableTable->columnCount());
 
 				//begin by Marco Vassura
 				// add colors (start)
 				//if(USE_GUI_COLORS) {
-					teachersTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setBackground(teachersTimetableTable->palette().color(QPalette::Base));
-					teachersTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setForeground(teachersTimetableTable->palette().color(QPalette::Text));
+					teachersTimetableTable->item(t, tableColumnIdx)->setBackground(teachersTimetableTable->palette().color(QPalette::Base));
+					teachersTimetableTable->item(t, tableColumnIdx)->setForeground(teachersTimetableTable->palette().color(QPalette::Text));
 				//}
 				// add colors (end)
 				//end by Marco Vassura
@@ -507,14 +508,14 @@ void TimetableViewTeachersTimeHorizontalForm::updateTeachersTimetableTable(){
 					}
 
 					if(idsOfPermanentlyLockedTime.contains(act->id) || idsOfLockedTime.contains(act->id)){
-						QFont font(teachersTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->font());
+						QFont font(teachersTimetableTable->item(t, tableColumnIdx)->font());
 						font.setBold(true);
-						teachersTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setFont(font);
+						teachersTimetableTable->item(t, tableColumnIdx)->setFont(font);
 					}
 					else{
-						QFont font(teachersTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->font());
+						QFont font(teachersTimetableTable->item(t, tableColumnIdx)->font());
 						font.setBold(false);
-						teachersTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setFont(font);
+						teachersTimetableTable->item(t, tableColumnIdx)->setFont(font);
 					}
 					
 					s+=descr;
@@ -524,29 +525,29 @@ void TimetableViewTeachersTimeHorizontalForm::updateTeachersTimetableTable(){
 					// add colors (start)
 					if(USE_GUI_COLORS /*&& act->studentsNames.count()>0*/){
 						QBrush bg(stringToColor(act->subjectName+" "+act->studentsNames.join(", ")));
-						teachersTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setBackground(bg);
+						teachersTimetableTable->item(t, tableColumnIdx)->setBackground(bg);
 						double brightness = bg.color().redF()*0.299 + bg.color().greenF()*0.587 + bg.color().blueF()*0.114;
 						if (brightness<0.5)
-							teachersTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setForeground(QBrush(Qt::white));
+							teachersTimetableTable->item(t, tableColumnIdx)->setForeground(QBrush(Qt::white));
 						else
-							teachersTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setForeground(QBrush(Qt::black));
+							teachersTimetableTable->item(t, tableColumnIdx)->setForeground(QBrush(Qt::black));
 					}
 					// add colors (end)
 					//end by Marco Vassura
-					teachersTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setText(shortString);
+					teachersTimetableTable->item(t, tableColumnIdx)->setText(shortString);
 				}
 				else{
 					if(teacherNotAvailableDayHour[t][d][h] && PRINT_NOT_AVAILABLE_TIME_SLOTS)
 						s+="-x-";
 					else if(breakDayHour[d][h] && PRINT_BREAK_TIME_SLOTS)
 						s+="-X-";
-					teachersTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setText(s);
+					teachersTimetableTable->item(t, tableColumnIdx)->setText(s);
 				}
-				teachersTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setToolTip(s);
+				teachersTimetableTable->item(t, tableColumnIdx)->setToolTip(s);
 
 				int columnSpan = ai!=UNALLOCATED_ACTIVITY? gt.rules.internalActivitiesList[ai].duration : 1;
-				if (columnSpan != teachersTimetableTable->columnSpan(t, d*gt.rules.nHoursPerDay+h))
-					teachersTimetableTable->setSpan(t, d*gt.rules.nHoursPerDay+h, 1, columnSpan);
+				if (columnSpan != teachersTimetableTable->columnSpan(t, tableColumnIdx))
+					teachersTimetableTable->setSpan(t, tableColumnIdx, 1, columnSpan);
 				h += columnSpan;
 			}
 		}
