@@ -81,8 +81,8 @@ extern QSet<int> idsOfPermanentlyLockedSpace;	//care about locked activities in 
 
 extern CommunicationSpinBox communicationSpinBox;	//small hint to sync the forms
 
-static const int MINIMUM_WIDTH_SPIN_BOX_VALUE=9;
-static const int MINIMUM_HEIGHT_SPIN_BOX_VALUE=9;
+extern const int MINIMUM_WIDTH_SPIN_BOX_VALUE;
+extern const int MINIMUM_HEIGHT_SPIN_BOX_VALUE;
 
 void TimetableViewTeachersTimeHorizontalDelegate::paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const
 {
