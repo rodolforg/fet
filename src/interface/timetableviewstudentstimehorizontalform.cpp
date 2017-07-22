@@ -526,7 +526,7 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 		}*/
 		
 		for(int d=0; d<gt.rules.nDaysPerWeek; d++){
-			for(int h=0; h<gt.rules.nHoursPerDay; h++){
+			for(int h=0; h<gt.rules.nHoursPerDay; ){
 				assert(d*gt.rules.nHoursPerDay+h<studentsTimetableTable->columnCount());
 
 				//begin by Marco Vassura
@@ -682,6 +682,11 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 				else
 					studentsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setText(s);
 				studentsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setToolTip(s);
+
+				int columnSpan = ai!=UNALLOCATED_ACTIVITY? gt.rules.internalActivitiesList[ai].duration : 1;
+				if (columnSpan != studentsTimetableTable->columnSpan(t, d*gt.rules.nHoursPerDay+h))
+					studentsTimetableTable->setSpan(t, d*gt.rules.nHoursPerDay+h, 1, columnSpan);
+				h += columnSpan;
 			}
 		}
 	}
