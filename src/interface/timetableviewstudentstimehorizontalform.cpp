@@ -575,7 +575,7 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 					
 					//teachers
 					if(act->teachersNames.count()>0){
-						s+=" ";
+						//s+=" ";
 						s+="\n";
 						s+=act->teachersNames.join(", ");
 					}
@@ -592,7 +592,7 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 						//Don't do the assert below, because it crashes if you change the teacher's name and view the teachers' timetable,
 						//without generating again (as reported by Yush Yuen).
 						//assert(act->teachersNames.contains(teachername));
-						s+=" ";
+						//s+=" ";
 						s+="\n";
 						s+=act->studentsNames.join(", ");
 					}
@@ -601,7 +601,7 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 					if(r!=UNALLOCATED_SPACE && r!=UNSPECIFIED_ROOM){
 						//s+=" ";
 						//s+=tr("R:%1", "Room").arg(gt.rules.internalRoomsList[r]->name);
-						s+=" ";
+						//s+=" ";
 						s+="\n";
 						s+=gt.rules.internalRoomsList[r]->name;
 					}
@@ -633,7 +633,7 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 					}
 					if(descr!=""){
 						descr.prepend("\n(");
-						descr.prepend(" ");
+						//descr.prepend(" ");
 						descr.append(")");
 					}
 
