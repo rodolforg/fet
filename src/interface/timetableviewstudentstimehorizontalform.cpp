@@ -530,11 +530,13 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 				const int tableColumnIdx = d*gt.rules.nHoursPerDay+h;
 				assert(tableColumnIdx<studentsTimetableTable->columnCount());
 
+				QTableWidgetItem *item = studentsTimetableTable->item(t, tableColumnIdx);
+
 				//begin by Marco Vassura
 				// add colors (start)
 				//if(USE_GUI_COLORS) {
-					studentsTimetableTable->item(t, tableColumnIdx)->setBackground(studentsTimetableTable->palette().color(QPalette::Base));
-					studentsTimetableTable->item(t, tableColumnIdx)->setForeground(studentsTimetableTable->palette().color(QPalette::Text));
+					item->setBackground(studentsTimetableTable->palette().color(QPalette::Base));
+					item->setForeground(studentsTimetableTable->palette().color(QPalette::Text));
 				//}
 				// add colors (end)
 				//end by Marco Vassura
@@ -631,14 +633,14 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 					}
 
 					if(idsOfPermanentlyLockedTime.contains(act->id) || idsOfLockedTime.contains(act->id)){
-						QFont font(studentsTimetableTable->item(t, tableColumnIdx)->font());
+						QFont font(item->font());
 						font.setBold(true);
-						studentsTimetableTable->item(t, tableColumnIdx)->setFont(font);
+						item->setFont(font);
 					}
 					else{
-						QFont font(studentsTimetableTable->item(t, tableColumnIdx)->font());
+						QFont font(item->font());
 						font.setBold(false);
-						studentsTimetableTable->item(t, tableColumnIdx)->setFont(font);
+						item->setFont(font);
 					}
 					
 					s+=descr;
@@ -648,12 +650,12 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 					// add colors (start)
 					if(USE_GUI_COLORS /*&& act->studentsNames.count()>0*/){
 						QBrush bg(stringToColor(act->subjectName));
-						studentsTimetableTable->item(t, tableColumnIdx)->setBackground(bg);
+						item->setBackground(bg);
 						double brightness = bg.color().redF()*0.299 + bg.color().greenF()*0.587 + bg.color().blueF()*0.114;
 						if (brightness<0.5)
-							studentsTimetableTable->item(t, tableColumnIdx)->setForeground(QBrush(Qt::white));
+							item->setForeground(QBrush(Qt::white));
 						else
-							studentsTimetableTable->item(t, tableColumnIdx)->setForeground(QBrush(Qt::black));
+							item->setForeground(QBrush(Qt::black));
 					}
 					// add colors (end)
 					//end by Marco Vassura
@@ -678,11 +680,11 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 						}
 						s2+=act->subjectName;
 					}
-					studentsTimetableTable->item(t, tableColumnIdx)->setText(s2);
+					item->setText(s2);
 				}
 				else
-					studentsTimetableTable->item(t, tableColumnIdx)->setText(s);
-				studentsTimetableTable->item(t, tableColumnIdx)->setToolTip(s);
+					item->setText(s);
+				item->setToolTip(s);
 
 				int columnSpan = ai!=UNALLOCATED_ACTIVITY? gt.rules.internalActivitiesList[ai].duration : 1;
 				if (columnSpan != studentsTimetableTable->columnSpan(t, tableColumnIdx))

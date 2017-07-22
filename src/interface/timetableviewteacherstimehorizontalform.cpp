@@ -408,11 +408,13 @@ void TimetableViewTeachersTimeHorizontalForm::updateTeachersTimetableTable(){
 				const int tableColumnIdx = d*gt.rules.nHoursPerDay+h;
 				assert(tableColumnIdx<teachersTimetableTable->columnCount());
 
+				QTableWidgetItem *item = teachersTimetableTable->item(t, tableColumnIdx);
+
 				//begin by Marco Vassura
 				// add colors (start)
 				//if(USE_GUI_COLORS) {
-					teachersTimetableTable->item(t, tableColumnIdx)->setBackground(teachersTimetableTable->palette().color(QPalette::Base));
-					teachersTimetableTable->item(t, tableColumnIdx)->setForeground(teachersTimetableTable->palette().color(QPalette::Text));
+					item->setBackground(teachersTimetableTable->palette().color(QPalette::Base));
+					item->setForeground(teachersTimetableTable->palette().color(QPalette::Text));
 				//}
 				// add colors (end)
 				//end by Marco Vassura
@@ -508,14 +510,14 @@ void TimetableViewTeachersTimeHorizontalForm::updateTeachersTimetableTable(){
 					}
 
 					if(idsOfPermanentlyLockedTime.contains(act->id) || idsOfLockedTime.contains(act->id)){
-						QFont font(teachersTimetableTable->item(t, tableColumnIdx)->font());
+						QFont font(item->font());
 						font.setBold(true);
-						teachersTimetableTable->item(t, tableColumnIdx)->setFont(font);
+						item->setFont(font);
 					}
 					else{
-						QFont font(teachersTimetableTable->item(t, tableColumnIdx)->font());
+						QFont font(item->font());
 						font.setBold(false);
-						teachersTimetableTable->item(t, tableColumnIdx)->setFont(font);
+						item->setFont(font);
 					}
 					
 					s+=descr;
@@ -525,25 +527,25 @@ void TimetableViewTeachersTimeHorizontalForm::updateTeachersTimetableTable(){
 					// add colors (start)
 					if(USE_GUI_COLORS /*&& act->studentsNames.count()>0*/){
 						QBrush bg(stringToColor(act->subjectName+" "+act->studentsNames.join(", ")));
-						teachersTimetableTable->item(t, tableColumnIdx)->setBackground(bg);
+						item->setBackground(bg);
 						double brightness = bg.color().redF()*0.299 + bg.color().greenF()*0.587 + bg.color().blueF()*0.114;
 						if (brightness<0.5)
-							teachersTimetableTable->item(t, tableColumnIdx)->setForeground(QBrush(Qt::white));
+							item->setForeground(QBrush(Qt::white));
 						else
-							teachersTimetableTable->item(t, tableColumnIdx)->setForeground(QBrush(Qt::black));
+							item->setForeground(QBrush(Qt::black));
 					}
 					// add colors (end)
 					//end by Marco Vassura
-					teachersTimetableTable->item(t, tableColumnIdx)->setText(shortString);
+					item->setText(shortString);
 				}
 				else{
 					if(teacherNotAvailableDayHour[t][d][h] && PRINT_NOT_AVAILABLE_TIME_SLOTS)
 						s+="-x-";
 					else if(breakDayHour[d][h] && PRINT_BREAK_TIME_SLOTS)
 						s+="-X-";
-					teachersTimetableTable->item(t, tableColumnIdx)->setText(s);
+					item->setText(s);
 				}
-				teachersTimetableTable->item(t, tableColumnIdx)->setToolTip(s);
+				item->setToolTip(s);
 
 				int columnSpan = ai!=UNALLOCATED_ACTIVITY? gt.rules.internalActivitiesList[ai].duration : 1;
 				if (columnSpan != teachersTimetableTable->columnSpan(t, tableColumnIdx))
