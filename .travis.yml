@@ -6,14 +6,18 @@ env:
    #   via the "travis encrypt" command using the project repo's public key
    - secure: "RoCJd3wMCMcWfoXFCjVQa6FQUjgEshLNetPSVirxEzt8fBVU/tbeAzItlXw+memXqW+5I/Nwww+FUPRTWno5pFSpy1mH5aiUb5A/2MdfIJJss98KsW6XeKlPjMSucD15bP+c8m7pfx393+TeJ3mG3rfln2T2dCdLVVPSTeRFRbL0T0Zo16Ck2B0J6vhALPZvgIrNEnVC1PVqLX3PmhlvNOpGzdRbNCjFWBnrOeDZDLeDwcBLKB6iEXly1lt1UjZv+vmSVgvbwMLoB0je8CwF39cC/DPuQofgTb3fsKJL3C0DpqpFIhdYlNn2GAwmwUd9nBvS8o2rk46P8VncLpYjF/xbhuyyKm6S5bEO9WdGBQcd/EvJ6Q39bcqeYENkDFq09YH/84pghrGNyNDrvYwoZBpELtRefdDyjj9moaKjRA61YNQc+oP+MxDOVF59V6Wn9g35arMUR+sjMMQWJp48cULMcj+SDKAxK0cG8KP2zhYezTJukVSgp8+kX+kdQn8JVqyUaPoP/JR2rIYKRBy1ulBVIuzPEot8SGWqJB/DB51rJ/CecNvMRu3da8Rexq37WW2613AdCS2VjApp3ts6Ugo6IJTMmvUfsIIXBk9T2Ezq58Wmn3p+l6V2lnGyAHBovfjLzVE+fpBW5YQituZuf8zE2pB1iqdvx5oVRuJAUqI="
 
-before_install:
-  - sudo add-apt-repository --yes ppa:ubuntu-sdk-team/ppa
-  - sudo apt-get update -qq
-  - echo -n | openssl s_client -connect scan.coverity.com:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sudo tee -a /etc/ssl/certs/ca-
+matrix:
+  include:
+    - os: linux
+      addons:
+        apt:
+          sources:
+            - sourceline: 'ppa:beineri/opt-qt58-trusty'
+          packages:
+            - qt58base qt58declarative qt58tools
 
-install:
-  - sudo apt-get install qtbase5-dev qtdeclarative5-dev libqt5webkit5-dev libsqlite3-dev
-  - sudo apt-get install qt5-default qttools5-dev-tools
+before_install:
+  - echo -n | openssl s_client -connect scan.coverity.com:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sudo tee -a /etc/ssl/certs/ca-
 
 script:
   - qmake
