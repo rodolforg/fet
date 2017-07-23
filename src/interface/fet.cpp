@@ -452,11 +452,11 @@ void setLanguage(QWidget* parent)
 		QString lang_filename = "fet_"+FET_LANGUAGE;
 		QStringList lang_dirs;
 		lang_dirs << QDir::currentPath()
-			<< QCoreApplication::applicationDirPath()
+			<< QCoreApplication::applicationDirPath();
 #if QT_VERSION >= QT_VERSION_CHECK(5, 4, 0)
-			<< QStandardPaths::standardLocations(QStandardPaths::AppDataLocation);
+		lang_dirs << QStandardPaths::standardLocations(QStandardPaths::AppDataLocation);
 #elif QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
-			<< QStandardPaths::standardLocations(QStandardPaths::DataLocation);
+		lang_dirs << QStandardPaths::standardLocations(QStandardPaths::DataLocation);
 #endif
 
 		bool translation_loaded=false;
@@ -688,7 +688,7 @@ int main(int argc, char **argv)
 	CachedSchedule::invalidate();
 
 #ifndef FET_COMMAND_LINE
-	QObject::connect(QGuiApplication::instance(), SIGNAL(lastWindowClosed()), QGuiApplication::instance(), SLOT(quit()));
+	QObject::connect(qApp, SIGNAL(lastWindowClosed()), qApp, SLOT(quit()));
 #endif
 
 	RandomKnuth::init();
