@@ -28,6 +28,7 @@ File statisticsexport.h
 #include <QString>
 #include <QHash>
 #include <QObject>
+#include <QStringList>
 
 class FetStatistics{
 public:
