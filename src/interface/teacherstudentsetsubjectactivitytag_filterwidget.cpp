@@ -123,11 +123,12 @@ void TeacherStudentSetSubjectActivityTag_FilterWidget::hideLabels()
 
 void TeacherStudentSetSubjectActivityTag_FilterWidget::setDirection(QBoxLayout::Direction direction)
 {
-	if (!ui->filterGroupBox->layout()->metaObject()->inherits(&QBoxLayout::staticMetaObject)) {
+	QBoxLayout* box = qobject_cast<QBoxLayout*>(ui->filterGroupBox->layout());
+	if (!box) {
 		qWarning() << "Filter layout is not QBoxLayout. Direction not changed.";
 		return;
 	}
-	((QBoxLayout*)ui->filterGroupBox->layout())->setDirection(direction);
+	box->setDirection(direction);
 }
 
 void TeacherStudentSetSubjectActivityTag_FilterWidget::populateTeachers(const Rules &rules)
