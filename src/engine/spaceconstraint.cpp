@@ -208,7 +208,7 @@ double ConstraintBasicCompulsorySpace::fitness(
 			//Needs to be very a large constant, bigger than any other broken constraint.
 			unallocated += /*r.internalActivitiesList[i].duration * r.internalActivitiesList[i].nSubgroups * */ 10000;
 			//(an unallocated activity for a year is more important than an unallocated activity for a subgroup)
-			if(conflictsString != nullptr){
+			if(conflictsString != NULL){
 				QString s=tr("Space constraint basic compulsory broken: unallocated activity with id=%1 (%2)",
 							 "%2 is the detailed description of the activity").arg(r.internalActivitiesList[i].id).arg(getActivityDetailedDescription(r, r.internalActivitiesList[i].id));
 				s+=QString(" - ");
@@ -233,7 +233,7 @@ double ConstraintBasicCompulsorySpace::fitness(
 
 				nor+=tmp;
 
-				if(conflictsString != nullptr){
+				if(conflictsString != NULL){
 					QString s;
 					s=tr("Space constraint basic compulsory: room %1 has allocated activity with id %2 (%3) and the capacity of the room is overloaded",
 						 "%2 is act id, %3 is detailed description of activity")
@@ -251,7 +251,7 @@ double ConstraintBasicCompulsorySpace::fitness(
 			}
 		}
 
-	if (conflictsString == nullptr) {
+	if (conflictsString == NULL) {
 		nre = roomsConflicts;
 	} else {
 		//Calculates the number of rooms exhaustion (when a room is occupied
