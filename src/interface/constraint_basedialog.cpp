@@ -29,7 +29,7 @@
 #include "timetable_defs.h"
 
 ConstraintBaseDialog::ConstraintBaseDialog(QWidget* parent): QDialog(parent),
-	  filterWidget(nullptr)
+	  filterWidget(NULL)
 {
 	setupUi(this);
 
@@ -73,11 +73,11 @@ ConstraintBaseDialog::~ConstraintBaseDialog()
 
 void ConstraintBaseDialog::setFilterWidget(QWidget *widget)
 {
-	if (filterWidget != nullptr) {
+	if (filterWidget != NULL) {
 		rightVerticalLayout->removeWidget(filterWidget);
 	}
 	filterWidget = widget;
-	if (widget != nullptr) {
+	if (widget != NULL) {
 		rightVerticalLayout->addWidget(widget);
 	}
 }

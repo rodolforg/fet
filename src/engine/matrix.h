@@ -128,7 +128,7 @@ public:
 
 
 template <typename T> Matrix3D<T>::Matrix3D()
-	: d1(-1), d2(-1), d3(-1), a(nullptr), content(nullptr)
+	: d1(-1), d2(-1), d3(-1), a(NULL), content(NULL)
 {
 }
 
@@ -139,19 +139,19 @@ template <typename T> Matrix3D<T>::~Matrix3D()
 
 template <typename T> void Matrix3D<T>::clear()
 {
-	if(a != nullptr){
+	if(a != NULL){
 		assert(d1>0 && d2>0 && d3>0);
 		
 		for(int i=0; i<d1; i++)
 			delete[] a[i];
 		delete[]a;
-		a = nullptr;
+		a = NULL;
 	}
-	if (content != nullptr) {
+	if (content != NULL) {
 		assert(d1>0 && d2>0 && d3>0);
 
 		delete[] content;
-		content = nullptr;
+		content = NULL;
 	}
 	d1=d2=d3=-1;
 }
@@ -192,7 +192,7 @@ template <typename T> inline T& Matrix3D<T>::operator()(int i, int j, int k)
 
 
 template <typename T> Matrix2D<T>::Matrix2D()
-	: d1(-1), d2(-1), a(nullptr), content(nullptr)
+	: d1(-1), d2(-1), a(NULL), content(NULL)
 {
 }
 
@@ -203,16 +203,16 @@ template <typename T> Matrix2D<T>::~Matrix2D()
 
 template <typename T> void Matrix2D<T>::clear()
 {
-	if(a != nullptr){
+	if(a != NULL){
 		assert(d1>0 && d2>0);
 		
 		delete[] a;
-		a = nullptr;
+		a = NULL;
 	}
-	if (content != nullptr) {
+	if (content != NULL) {
 		assert(d1>0 && d2>0);
 		delete[] content;
-		content = nullptr;
+		content = NULL;
 	}
 	d1=d2=-1;
 }
@@ -254,7 +254,7 @@ return d1;
 }
 
 template <typename T> Matrix1D<T>::Matrix1D()
-	: d1(-1), a(nullptr)
+	: d1(-1), a(NULL)
 {
 }
 
@@ -265,10 +265,10 @@ template <typename T> Matrix1D<T>::~Matrix1D()
 
 template <typename T> void Matrix1D<T>::clear()
 {
-	if(a != nullptr){
+	if(a != NULL){
 		assert(d1>0);
 		delete[] a;
-		a = nullptr;
+		a = NULL;
 	}
 	d1=-1;
 }

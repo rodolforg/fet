@@ -356,7 +356,7 @@ double ConstraintBasicCompulsoryTime::fitness(Solution& c, const Rules& r, QList
 
 	//Calculates the number of teachers exhaustion (when he has to teach more than
 	//one activity at the same time)
-	if (conflictsString == nullptr) {
+	if (conflictsString == NULL) {
 		nte = teachersConflicts; // faster
 	} else {
 		nte=0;
@@ -389,7 +389,7 @@ double ConstraintBasicCompulsoryTime::fitness(Solution& c, const Rules& r, QList
 
 	//Calculates the number of subgroups exhaustion (a subgroup cannot attend two
 	//activities at the same time)
-	if (conflictsString == nullptr) {
+	if (conflictsString == NULL) {
 		nse = subgroupsConflicts; //faster
 	} else {
 		nse=0;
@@ -1211,7 +1211,7 @@ double ConstraintActivitiesSameStartingTime::fitness(Solution& c, const Rules& r
 
 					nbroken+=tmp;
 
-					if(tmp>0 && conflictsString!=nullptr){
+					if(tmp>0 && conflictsString!=NULL){
 						QString s=tr("Time constraint activities same starting time broken, because activity with id=%1 (%2) is not at the same starting time with activity with id=%3 (%4)",
 						"%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.")
 						 .arg(this->activitiesId[i])
@@ -1488,7 +1488,7 @@ double ConstraintActivitiesNotOverlapping::fitness(Solution& c, const Rules& r, 
 					//The overlapping hours, considering weekly activities more important than fortnightly ones
 					nbroken+=tt;
 
-					if(tt>0 && conflictsString!=nullptr){
+					if(tt>0 && conflictsString!=NULL){
 
 						QString s=tr("Time constraint activities not overlapping broken: activity with id=%1 (%2) overlaps with activity with id=%3 (%4) on a number of %5 periods",
 						 "%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.")
@@ -1794,7 +1794,7 @@ double ConstraintMinDaysBetweenActivities::fitness(Solution& c, const Rules& r, 
 
 					nbroken+=tt;
 
-					if(tt>0 && conflictsString != nullptr){
+					if(tt>0 && conflictsString != NULL){
 						QString s=tr("Time constraint min days between activities broken: activity with id=%1 (%2) conflicts with activity with id=%3 (%4), being %5 days too close, on days %6 and %7",
 									 "%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr. Close here means near")
 								.arg(this->activitiesId[i])
@@ -2091,7 +2091,7 @@ double ConstraintMaxDaysBetweenActivities::fitness(Solution& c, const Rules& r, 
 
 					nbroken+=tt;
 
-					if(tt>0 && conflictsString != nullptr){
+					if(tt>0 && conflictsString != NULL){
 						QString s=tr("Time constraint max days between activities broken: activity with id=%1 (%2) conflicts with activity with id=%3 (%4), being %5 days too far away"
 						 ", on days %6 and %7", "%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.")
 						 .arg(this->activitiesId[i])
@@ -2580,7 +2580,7 @@ double ConstraintTeachersMaxHoursDaily::fitness(Solution& c, const Rules& r, QLi
 			if(n_hours_daily>this->maxHoursDaily){
 				nbroken++;
 
-				if(conflictsString != nullptr){
+				if(conflictsString != NULL){
 					QString s=(tr(
 								   "Time constraint teachers max %1 hours daily broken for teacher %2, on day %3, length=%4.")
 							   .arg(CustomFETString::number(this->maxHoursDaily))
@@ -2775,7 +2775,7 @@ double ConstraintTeacherMaxHoursDaily::fitness(Solution& c, const Rules& r, QLis
 		if(n_hours_daily>this->maxHoursDaily){
 			nbroken++;
 
-			if(conflictsString != nullptr){
+			if(conflictsString != NULL){
 				QString s=(tr(
 				 "Time constraint teacher max %1 hours daily broken for teacher %2, on day %3, length=%4.")
 				 .arg(CustomFETString::number(this->maxHoursDaily))
@@ -3944,7 +3944,7 @@ double ConstraintTeacherMaxDaysPerWeek::fitness(Solution& c, const Rules& r, QLi
 
 	double conflictIncrease = nbroken*weightPercentage/100;
 
-	if(conflictsString != nullptr && nbroken > 0){
+	if(conflictsString != NULL && nbroken > 0){
 		QString s= tr("Time constraint teacher max days per week broken for teacher: %1.")
 			.arg(r.internalTeachersList[t]->name);
 		s += tr("This increases the conflicts total by %1")
@@ -4149,7 +4149,7 @@ double ConstraintTeachersMaxDaysPerWeek::fitness(Solution& c, const Rules& r, QL
 			}
 		}
 
-		if(nbr>0 && conflictsString != nullptr){
+		if(nbr>0 && conflictsString != NULL){
 			QString s= tr("Time constraint teachers max days per week broken for teacher: %1.")
 			.arg(r.internalTeachersList[t]->name);
 			s += tr("This increases the conflicts total by %1")
@@ -11269,7 +11269,7 @@ double ConstraintActivitiesSameStartingHour::fitness(Solution& c, const Rules& r
 					if(hour1!=hour2) {
 						nbroken++;
 
-						if(conflictsString != nullptr){
+						if(conflictsString != NULL){
 							QString s=tr("Time constraint activities same starting hour broken, because activity with id=%1 (%2) is not at the same hour with activity with id=%3 (%4)"
 										 , "%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.")
 									.arg(this->activitiesId[i])
@@ -11536,7 +11536,7 @@ double ConstraintActivitiesSameStartingDay::fitness(Solution& c, const Rules& r,
 
 					if(day1!=day2) {
 						nbroken++;
-						if(conflictsString != nullptr){
+						if(conflictsString != NULL){
 							QString s=tr("Time constraint activities same starting day broken, because activity with id=%1 (%2) is not in the same day with activity with id=%3 (%4)"
 										 , "%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.")
 									.arg(this->activitiesId[i])
@@ -13106,7 +13106,7 @@ double ConstraintTeachersMinHoursDaily::fitness(Solution& c, const Rules& r, QLi
 			if(n_hours_daily>0 && n_hours_daily<this->minHoursDaily){
 				nbroken++;
 
-				if(conflictsString != nullptr){
+				if(conflictsString != NULL){
 					QString s=(tr("Time constraint teachers min %1 hours daily broken for teacher %2, on day %3, length=%4.")
 					 .arg(CustomFETString::number(this->minHoursDaily))
 					 .arg(r.internalTeachersList[i]->name)
@@ -13321,7 +13321,7 @@ double ConstraintTeacherMinHoursDaily::fitness(Solution& c, const Rules& r, QLis
 		if(n_hours_daily>0 && n_hours_daily<this->minHoursDaily){
 			nbroken++;
 
-			if(conflictsString != nullptr){
+			if(conflictsString != NULL){
 				QString s=(tr(
 				 "Time constraint teacher min %1 hours daily broken for teacher %2, on day %3, length=%4.")
 				 .arg(CustomFETString::number(this->minHoursDaily))
