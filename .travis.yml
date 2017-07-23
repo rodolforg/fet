@@ -17,5 +17,6 @@ install:
 
 script:
   - qmake
-  - make -j 6
+  - make clean
+  - make -j 4
 
