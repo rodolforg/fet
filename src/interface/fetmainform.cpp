@@ -441,7 +441,11 @@ FetMainForm::FetMainForm()
 	setupUi(this);
 	
 	QIcon appIcon(":/images/appicon.png");
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
 	QGuiApplication::setWindowIcon(appIcon);
+#else
+	qApp->setWindowIcon(appIcon);
+#endif
 
 	loadSettings();
 
