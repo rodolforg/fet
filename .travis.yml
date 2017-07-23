@@ -9,7 +9,11 @@ env:
 matrix:
   include:
     - os: linux
+      env:
+        NAME: "Qt 4"
     - os: linux
+      env:
+        NAME: "Qt 5.8"
       addons:
         apt:
           sources:
