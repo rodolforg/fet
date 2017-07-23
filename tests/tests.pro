@@ -2,4 +2,4 @@ TEMPLATE = subdirs
 SUBDIRS = engine \
 #    interface \
 
-CONFIG += testcase
+CONFIG += testcase c++11

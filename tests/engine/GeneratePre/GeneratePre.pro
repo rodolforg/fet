@@ -7,9 +7,8 @@
 QT       += testlib
 
 TARGET = tst_generatepretest
-CONFIG   += console testcase
+CONFIG   += console testcase c++11
 CONFIG   -= app_bundle
-CONFIG   += debug
 
 TEMPLATE = app
 

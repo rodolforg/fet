@@ -9,7 +9,7 @@ QT       += testlib
 QT       -= gui
 
 TARGET = tst_randomknuthtest
-CONFIG   += console testcase
+CONFIG   += console testcase c++11
 CONFIG   -= app_bundle
 
 TEMPLATE = app

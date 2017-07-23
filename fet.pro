@@ -3,6 +3,8 @@ SUBDIRS = src/src.pro \
           src/src-cl.pro \
           tests
 
+CONFIG+=c++11
+
 unix {
 translations.path = /usr/share/fet/translations
 translations.files = translations/*.qm
