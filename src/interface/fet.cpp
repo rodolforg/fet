@@ -33,7 +33,9 @@ File fet.cpp - this is where the program FET starts
 #include <QWidget>
 #endif
 
+#if QT_VERSION >= QT_VERSION_CHECK(5,0,0)
 #include <QStandardPaths>
+#endif
 
 #include <QLocale>
 #include <QTime>
@@ -453,7 +455,7 @@ void setLanguage(QWidget* parent)
 			<< QCoreApplication::applicationDirPath()
 #if QT_VERSION >= QT_VERSION_CHECK(5, 4, 0)
 			<< QStandardPaths::standardLocations(QStandardPaths::AppDataLocation);
-#else
+#elif QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
 			<< QStandardPaths::standardLocations(QStandardPaths::DataLocation);
 #endif
 
