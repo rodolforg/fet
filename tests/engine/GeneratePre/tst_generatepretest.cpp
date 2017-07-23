@@ -262,7 +262,11 @@ void GeneratePreTest::MinDays_FailIfActivityMinDaysToItself()
 	QList<int> acts;
 	acts << 12345 << 12345;
 
+#if QT_VERSION >= QT_VERSION_CHECK(5,0,0)
 	QSKIP("Disable test due to usage of assert in Rules::addTimeConstraint()");
+#else
+	QSKIP("Disable test due to usage of assert in Rules::addTimeConstraint()", QTest::SkipSingle);
+#endif
 
 	ConstraintMinDaysBetweenActivities *ctr1 = new ConstraintMinDaysBetweenActivities(80.0, false, 2, acts, 5);
 	mock.rules.addTimeConstraint(ctr1);
@@ -530,7 +534,11 @@ void GeneratePreTest::MaxDays_FailIfActivityMaxDaysToItself()
 	QList<int> acts;
 	acts << 12345 << 12345;
 
+#if QT_VERSION >= QT_VERSION_CHECK(5,0,0)
 	QSKIP("Disable test due to usage of assert in Rules::addTimeConstraint()");
+#else
+	QSKIP("Disable test due to usage of assert in Rules::addTimeConstraint()", QTest::SkipSingle);
+#endif
 
 	ConstraintMaxDaysBetweenActivities *ctr1 = new ConstraintMaxDaysBetweenActivities(80.0, 2, acts, 5);
 	mock.rules.addTimeConstraint(ctr1);
@@ -792,7 +800,11 @@ void GeneratePreTest::MinGaps_FailIfActivityMinGapsToItself()
 	QList<int> acts;
 	acts << 12345 << 12345;
 
+#if QT_VERSION >= QT_VERSION_CHECK(5,0,0)
 	QSKIP("Disable test due to usage of assert in Rules::addTimeConstraint()");
+#else
+	QSKIP("Disable test due to usage of assert in Rules::addTimeConstraint()", QTest::SkipSingle);
+#endif
 
 	ConstraintMinGapsBetweenActivities *ctr1 = new ConstraintMinGapsBetweenActivities(80.0, 2, acts, 5);
 	mock.rules.addTimeConstraint(ctr1);
