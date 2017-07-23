@@ -683,7 +683,7 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 					if(subjectsCheckBox->isChecked()){
 						if(!s2.isEmpty()){
 							s2+=" ";
-							s2+="\n";
+							//s2+="\n";
 						}
 						s2+=act->subjectName;
 					}

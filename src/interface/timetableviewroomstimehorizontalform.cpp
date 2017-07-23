@@ -483,7 +483,7 @@ void TimetableViewRoomsTimeHorizontalForm::updateRoomsTimetableTable(){
 						if(studentsCheckBox->isChecked()){
 							if(!shortString.isEmpty()){
 								shortString+=" ";
-								shortString+="\n";
+								//shortString+="\n";
 							}
 							shortString+=act->studentsNames.join(", ");
 						}
@@ -492,7 +492,7 @@ void TimetableViewRoomsTimeHorizontalForm::updateRoomsTimetableTable(){
 					if(subjectsCheckBox->isChecked()){
 						if(!shortString.isEmpty()){
 							shortString+=" ";
-							shortString+="\n";
+							//shortString+="\n";
 						}
 						shortString+=act->subjectName;
 					}
