@@ -452,7 +452,11 @@ void setLanguage(QWidget* parent)
 		QStringList lang_dirs;
 		lang_dirs << QDir::currentPath()
 			<< QCoreApplication::applicationDirPath()
+#if QT_VERSION >= QT_VERSION_CHECK(5, 4, 0)
 			<< QStandardPaths::standardLocations(QStandardPaths::AppDataLocation);
+#else
+			<< QStandardPaths::standardLocations(QStandardPaths::DataLocation);
+#endif
 
 		bool translation_loaded=false;
 		for (int i=0; !translation_loaded && i < lang_dirs.size(); i++) {
