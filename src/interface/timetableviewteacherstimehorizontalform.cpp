@@ -533,6 +533,17 @@ void TimetableViewTeachersTimeHorizontalForm::updateTeachersTimetableTable(){
 						teachersTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setFont(font);
 					}
 					
+					if(idsOfPermanentlyLockedSpace.contains(act->id) || idsOfLockedSpace.contains(act->id)){
+						QFont font(teachersTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->font());
+						font.setItalic(true);
+						teachersTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setFont(font);
+					}
+					else{
+						QFont font(teachersTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->font());
+						font.setItalic(false);
+						teachersTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setFont(font);
+					}
+
 					s+=descr;
 					//added by Volker Dirr (end)
 				
@@ -1071,6 +1082,8 @@ void TimetableViewTeachersTimeHorizontalForm::help()
 	
 	s+="\n\n";
 	s+=tr("A bold font cell means that the activity is locked in time, either permanently or not.");
+	s+=" ";
+	s+=tr("An italic font cell means that the activity is locked in space, either permanently or not.");
 
 	LongTextMessageBox::largeInformation(this, tr("FET help"), s);
 }
