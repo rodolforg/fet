@@ -9,6 +9,7 @@ env:
 matrix:
   include:
     - os: linux
+    - os: linux
       addons:
         apt:
           sources:
