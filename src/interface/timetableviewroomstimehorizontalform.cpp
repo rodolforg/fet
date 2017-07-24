@@ -428,11 +428,13 @@ void TimetableViewRoomsTimeHorizontalForm::updateRoomsTimetableTable(){
 				const int tableColumnIdx = d*gt.rules.nHoursPerDay+h;
 				assert(tableColumnIdx<roomsTimetableTable->columnCount());
 
+				QTableWidgetItem *item = roomsTimetableTable->item(t, tableColumnIdx);
+
 				//begin by Marco Vassura
 				// add colors (start)
 				//if(USE_GUI_COLORS) {
-					roomsTimetableTable->item(t, tableColumnIdx)->setBackground(roomsTimetableTable->palette().color(QPalette::Base));
-					roomsTimetableTable->item(t, tableColumnIdx)->setForeground(roomsTimetableTable->palette().color(QPalette::Text));
+					item->setBackground(roomsTimetableTable->palette().color(QPalette::Base));
+					item->setForeground(roomsTimetableTable->palette().color(QPalette::Text));
 				//}
 				// add colors (end)
 				//end by Marco Vassura
@@ -529,25 +531,25 @@ void TimetableViewRoomsTimeHorizontalForm::updateRoomsTimetableTable(){
 					}
 
 					if(idsOfPermanentlyLockedTime.contains(act->id) || idsOfLockedTime.contains(act->id)){
-						QFont font(roomsTimetableTable->item(t, tableColumnIdx)->font());
+						QFont font(item->font());
 						font.setBold(true);
-						roomsTimetableTable->item(t, tableColumnIdx)->setFont(font);
+						item->setFont(font);
 					}
 					else{
-						QFont font(roomsTimetableTable->item(t, tableColumnIdx)->font());
+						QFont font(item->font());
 						font.setBold(false);
-						roomsTimetableTable->item(t, tableColumnIdx)->setFont(font);
+						item->setFont(font);
 					}
 
 					if(idsOfPermanentlyLockedSpace.contains(act->id) || idsOfLockedSpace.contains(act->id)){
-						QFont font(roomsTimetableTable->item(t, tableColumnIdx)->font());
+						QFont font(item->font());
 						font.setItalic(true);
-						roomsTimetableTable->item(t, tableColumnIdx)->setFont(font);
+						item->setFont(font);
 					}
 					else{
-						QFont font(roomsTimetableTable->item(t, tableColumnIdx)->font());
+						QFont font(item->font());
 						font.setItalic(false);
-						roomsTimetableTable->item(t, tableColumnIdx)->setFont(font);
+						item->setFont(font);
 					}
 
 					s+=descr;
@@ -557,25 +559,25 @@ void TimetableViewRoomsTimeHorizontalForm::updateRoomsTimetableTable(){
 					// add colors (start)
 					if(USE_GUI_COLORS /*&& act->studentsNames.count()>0*/){
 						QBrush bg(stringToColor(act->subjectName+" "+act->studentsNames.join(", ")));
-						roomsTimetableTable->item(t, tableColumnIdx)->setBackground(bg);
+						item->setBackground(bg);
 						double brightness = bg.color().redF()*0.299 + bg.color().greenF()*0.587 + bg.color().blueF()*0.114;
 						if (brightness<0.5)
-							roomsTimetableTable->item(t, tableColumnIdx)->setForeground(QBrush(Qt::white));
+							item->setForeground(QBrush(Qt::white));
 						else
-							roomsTimetableTable->item(t, tableColumnIdx)->setForeground(QBrush(Qt::black));
+							item->setForeground(QBrush(Qt::black));
 					}
 					// add colors (end)
 					//end by Marco Vassura
-					roomsTimetableTable->item(t, tableColumnIdx)->setText(shortString);
+					item->setText(shortString);
 				}
 				else{
 					if(notAllowedRoomTimePercentages[t][d+h*gt.rules.nDaysPerWeek]>=0 && PRINT_NOT_AVAILABLE_TIME_SLOTS)
 						s+="-x-";
 					else if(breakDayHour[d][h] && PRINT_BREAK_TIME_SLOTS)
 						s+="-X-";
-					roomsTimetableTable->item(t, tableColumnIdx)->setText(s);
+					item->setText(s);
 				}
-				roomsTimetableTable->item(t, tableColumnIdx)->setToolTip(s);
+				item->setToolTip(s);
 
 				int columnSpan = ai!=UNALLOCATED_ACTIVITY? gt.rules.internalActivitiesList[ai].duration : 1;
 				if (columnSpan != roomsTimetableTable->columnSpan(t, tableColumnIdx))

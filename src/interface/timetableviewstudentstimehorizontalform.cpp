@@ -649,14 +649,14 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 					}
 					
 					if(idsOfPermanentlyLockedSpace.contains(act->id) || idsOfLockedSpace.contains(act->id)){
-						QFont font(studentsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->font());
+						QFont font(item->font());
 						font.setItalic(true);
-						studentsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setFont(font);
+						item->setFont(font);
 					}
 					else{
-						QFont font(studentsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->font());
+						QFont font(item->font());
 						font.setItalic(false);
-						studentsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setFont(font);
+						item->setFont(font);
 					}
 
 					s+=descr;
