@@ -425,13 +425,14 @@ void TimetableViewRoomsTimeHorizontalForm::updateRoomsTimetableTable(){
 		assert(t<roomsTimetableTable->rowCount());
 		for(int d=0; d<gt.rules.nDaysPerWeek; d++){
 			for(int h=0; h<gt.rules.nHoursPerDay; ){
-				assert(d*gt.rules.nHoursPerDay+h<roomsTimetableTable->columnCount());
+				const int tableColumnIdx = d*gt.rules.nHoursPerDay+h;
+				assert(tableColumnIdx<roomsTimetableTable->columnCount());
 
 				//begin by Marco Vassura
 				// add colors (start)
 				//if(USE_GUI_COLORS) {
-					roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setBackground(roomsTimetableTable->palette().color(QPalette::Base));
-					roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setForeground(roomsTimetableTable->palette().color(QPalette::Text));
+					roomsTimetableTable->item(t, tableColumnIdx)->setBackground(roomsTimetableTable->palette().color(QPalette::Base));
+					roomsTimetableTable->item(t, tableColumnIdx)->setForeground(roomsTimetableTable->palette().color(QPalette::Text));
 				//}
 				// add colors (end)
 				//end by Marco Vassura
@@ -528,25 +529,25 @@ void TimetableViewRoomsTimeHorizontalForm::updateRoomsTimetableTable(){
 					}
 
 					if(idsOfPermanentlyLockedTime.contains(act->id) || idsOfLockedTime.contains(act->id)){
-						QFont font(roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->font());
+						QFont font(roomsTimetableTable->item(t, tableColumnIdx)->font());
 						font.setBold(true);
-						roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setFont(font);
+						roomsTimetableTable->item(t, tableColumnIdx)->setFont(font);
 					}
 					else{
-						QFont font(roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->font());
+						QFont font(roomsTimetableTable->item(t, tableColumnIdx)->font());
 						font.setBold(false);
-						roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setFont(font);
+						roomsTimetableTable->item(t, tableColumnIdx)->setFont(font);
 					}
 
 					if(idsOfPermanentlyLockedSpace.contains(act->id) || idsOfLockedSpace.contains(act->id)){
-						QFont font(roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->font());
+						QFont font(roomsTimetableTable->item(t, tableColumnIdx)->font());
 						font.setItalic(true);
-						roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setFont(font);
+						roomsTimetableTable->item(t, tableColumnIdx)->setFont(font);
 					}
 					else{
-						QFont font(roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->font());
+						QFont font(roomsTimetableTable->item(t, tableColumnIdx)->font());
 						font.setItalic(false);
-						roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setFont(font);
+						roomsTimetableTable->item(t, tableColumnIdx)->setFont(font);
 					}
 
 					s+=descr;
@@ -556,29 +557,29 @@ void TimetableViewRoomsTimeHorizontalForm::updateRoomsTimetableTable(){
 					// add colors (start)
 					if(USE_GUI_COLORS /*&& act->studentsNames.count()>0*/){
 						QBrush bg(stringToColor(act->subjectName+" "+act->studentsNames.join(", ")));
-						roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setBackground(bg);
+						roomsTimetableTable->item(t, tableColumnIdx)->setBackground(bg);
 						double brightness = bg.color().redF()*0.299 + bg.color().greenF()*0.587 + bg.color().blueF()*0.114;
 						if (brightness<0.5)
-							roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setForeground(QBrush(Qt::white));
+							roomsTimetableTable->item(t, tableColumnIdx)->setForeground(QBrush(Qt::white));
 						else
-							roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setForeground(QBrush(Qt::black));
+							roomsTimetableTable->item(t, tableColumnIdx)->setForeground(QBrush(Qt::black));
 					}
 					// add colors (end)
 					//end by Marco Vassura
-					roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setText(shortString);
+					roomsTimetableTable->item(t, tableColumnIdx)->setText(shortString);
 				}
 				else{
 					if(notAllowedRoomTimePercentages[t][d+h*gt.rules.nDaysPerWeek]>=0 && PRINT_NOT_AVAILABLE_TIME_SLOTS)
 						s+="-x-";
 					else if(breakDayHour[d][h] && PRINT_BREAK_TIME_SLOTS)
 						s+="-X-";
-					roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setText(s);
+					roomsTimetableTable->item(t, tableColumnIdx)->setText(s);
 				}
-				roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setToolTip(s);
+				roomsTimetableTable->item(t, tableColumnIdx)->setToolTip(s);
 
 				int columnSpan = ai!=UNALLOCATED_ACTIVITY? gt.rules.internalActivitiesList[ai].duration : 1;
-				if (columnSpan != roomsTimetableTable->columnSpan(t, d*gt.rules.nHoursPerDay+h))
-					roomsTimetableTable->setSpan(t, d*gt.rules.nHoursPerDay+h, 1, columnSpan);
+				if (columnSpan != roomsTimetableTable->columnSpan(t, tableColumnIdx))
+					roomsTimetableTable->setSpan(t, tableColumnIdx, 1, columnSpan);
 				h += columnSpan;
 			}
 		}
