@@ -444,7 +444,7 @@ void TimetableViewRoomsTimeHorizontalForm::updateRoomsTimetableTable(){
 				int ai=CachedSchedule::rooms_timetable_weekly[t][d][h]; //activity index
 				//Activity* act=gt.rules.activitiesList.at(ai);
 				if(ai!=UNALLOCATED_ACTIVITY){
-					Activity* act=&gt.rules.internalActivitiesList[ai];
+					const Activity* act=&gt.rules.internalActivitiesList[ai];
 					assert(act!=NULL);
 					
 					if(TIMETABLE_HTML_PRINT_ACTIVITY_TAGS){
@@ -676,7 +676,7 @@ void TimetableViewRoomsTimeHorizontalForm::detailActivity(QTableWidgetItem* item
 			int ai=CachedSchedule::rooms_timetable_weekly[t][d][h]; //activity index
 			//Activity* act=gt.rules.activitiesList.at(ai);
 			if(ai!=UNALLOCATED_ACTIVITY){
-				Activity* act=&gt.rules.internalActivitiesList[ai];
+				const Activity* act=&gt.rules.internalActivitiesList[ai];
 				assert(act!=NULL);
 				//s += act->getDetailedDescriptionWithConstraints(gt.rules);
 				s += act->getDetailedDescription(gt.rules);
@@ -829,7 +829,7 @@ void TimetableViewRoomsTimeHorizontalForm::lock(bool lockTime, bool lockSpace)
 			int day=tc->times[ai]%gt.rules.nDaysPerWeek;
 			int hour=tc->times[ai]/gt.rules.nDaysPerWeek;
 
-			Activity* act=&gt.rules.internalActivitiesList[ai];
+			const Activity* act=&gt.rules.internalActivitiesList[ai];
 			
 			if(lockTime){
 				QString s;
