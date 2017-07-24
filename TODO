@@ -5429,3 +5429,33 @@ From rodolforg (on forum):
 Add short names for teachers (and maybe students, subjects, activity tags, rooms).
 
 See also item #199.
+
+325---------------------------------------------------------
+From Darren McDonald (on forum):
+
+I thought I'd make a few feature feature requests that may be useful (at least they would be useful to me!  :) ). This one is the more difficult of the two.
+
+I've often got a group of activities that need to have the same starting time, for example
+
+Mathematical Studies 1 (1+1+1)
+Mathematical Studies 2 (1+1+1)
+Mathematics SL 1 (1+1+1)
+Mathematics SL 2 (1+1+1)
+Mathematics HL (1+1+1+1)
+
+I can use Time>Activities>A set of activities has same starting time (day+hour), but this requires three separate entries (one for the first subactivity of
+each subject, one for the second subactivity, and one for the third, with the final Mathematics HL subactivity left free), where each constraint involves
+a list of 5 subactivities (which increases the possibility of error).
+
+Is it possible to introduce a new time constraint that would allow me to constrain, for example, the first n activities of a group of activities? Essentially,
+I'd like to be able to specify the time constraint(s) above in a single step: providing FET with the relevant activity sets, and then specify that (in this case)
+the first 3 subactivities should have the same start time (day+hour).
+
+326---------------------------------------------------------
+From Darren McDonald (on forum):
+
+When creating timetables for students in the final two years of high school, I typically use student names as Groups. Within the first couple of months
+(particularly in International Baccalaureate Diploma Programme schools), there are often a number of changes as students change subject choices.
+
+It would be easier to find student names (to remove them from one activity group, then add them to another) if there were a button that would allow me to sort
+the selected groups from the Modify Activity screen (perhaps below the Clear button?).

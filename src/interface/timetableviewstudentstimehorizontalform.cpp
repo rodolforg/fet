@@ -82,6 +82,11 @@ extern QSet<int> idsOfPermanentlyLockedSpace;	//care about locked activities in 
 
 extern CommunicationSpinBox communicationSpinBox;	//small hint to sync the forms
 
+extern const int MINIMUM_WIDTH_SPIN_BOX_VALUE; //trick found on the internet, so that these two constants are visible in timetableviewteacherstimehorizontalform.cpp
+extern const int MINIMUM_HEIGHT_SPIN_BOX_VALUE;
+const int MINIMUM_WIDTH_SPIN_BOX_VALUE=9;
+const int MINIMUM_HEIGHT_SPIN_BOX_VALUE=9;
+
 void TimetableViewStudentsTimeHorizontalDelegate::paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const
 {
 	QStyledItemDelegate::paint(painter, option, index);
@@ -570,7 +575,7 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 					
 					//teachers
 					if(act->teachersNames.count()>0){
-						s+=" ";
+						//s+=" ";
 						s+="\n";
 						s+=act->teachersNames.join(", ");
 					}
@@ -587,7 +592,7 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 						//Don't do the assert below, because it crashes if you change the teacher's name and view the teachers' timetable,
 						//without generating again (as reported by Yush Yuen).
 						//assert(act->teachersNames.contains(teachername));
-						s+=" ";
+						//s+=" ";
 						s+="\n";
 						s+=act->studentsNames.join(", ");
 					}
@@ -596,7 +601,7 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 					if(r!=UNALLOCATED_SPACE && r!=UNSPECIFIED_ROOM){
 						//s+=" ";
 						//s+=tr("R:%1", "Room").arg(gt.rules.internalRoomsList[r]->name);
-						s+=" ";
+						//s+=" ";
 						s+="\n";
 						s+=gt.rules.internalRoomsList[r]->name;
 					}
@@ -628,7 +633,7 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 					}
 					if(descr!=""){
 						descr.prepend("\n(");
-						descr.prepend(" ");
+						//descr.prepend(" ");
 						descr.append(")");
 					}
 
@@ -643,6 +648,17 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 						item->setFont(font);
 					}
 					
+					if(idsOfPermanentlyLockedSpace.contains(act->id) || idsOfLockedSpace.contains(act->id)){
+						QFont font(studentsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->font());
+						font.setItalic(true);
+						studentsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setFont(font);
+					}
+					else{
+						QFont font(studentsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->font());
+						font.setItalic(false);
+						studentsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setFont(font);
+					}
+
 					s+=descr;
 					//added by Volker Dirr (end)
 				
@@ -676,7 +692,7 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 					if(subjectsCheckBox->isChecked()){
 						if(!s2.isEmpty()){
 							s2+=" ";
-							s2+="\n";
+							//s2+="\n";
 						}
 						s2+=act->subjectName;
 					}
@@ -758,6 +774,9 @@ void TimetableViewStudentsTimeHorizontalForm::detailActivity(QTableWidgetItem* i
 		QMessageBox::warning(this, tr("FET warning"), tr("Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it"));
 		return;
 	}
+	
+	assert(item->row()>=0);
+	assert(item->column()>=0);
 
 	int t=item->row();
 	
@@ -1292,6 +1311,8 @@ void TimetableViewStudentsTimeHorizontalForm::help()
 	
 	s+="\n\n";
 	s+=tr("A bold font cell means that the activity is locked in time, either permanently or not.");
+	s+=" ";
+	s+=tr("An italic font cell means that the activity is locked in space, either permanently or not.");
 
 	LongTextMessageBox::largeInformation(this, tr("FET help"), s);
 }

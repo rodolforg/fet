@@ -1,5 +1,5 @@
 /***************************************************************************
-                          timetableviewteacherstimehorizontalform.cpp  -  description
+                          timetableviewroomstimehorizontalform.cpp  -  description
                              -------------------
     begin                : 2017
     copyright            : (C) 2017 by Lalescu Liviu
@@ -22,7 +22,7 @@
 #include "longtextmessagebox.h"
 
 #include "fetmainform.h"
-#include "timetableviewteacherstimehorizontalform.h"
+#include "timetableviewroomstimehorizontalform.h"
 #include "timetable_defs.h"
 #include "timetable.h"
 #include "solution.h"
@@ -67,7 +67,7 @@
 
 extern bool simulation_running;
 
-extern Matrix3D<bool> teacherNotAvailableDayHour;
+extern Matrix2D<double> notAllowedRoomTimePercentages;
 extern Matrix2D<bool> breakDayHour;
 
 extern QSet<int> idsOfLockedTime;		//care about locked activities in view forms
@@ -80,7 +80,7 @@ extern CommunicationSpinBox communicationSpinBox;	//small hint to sync the forms
 extern const int MINIMUM_WIDTH_SPIN_BOX_VALUE;
 extern const int MINIMUM_HEIGHT_SPIN_BOX_VALUE;
 
-void TimetableViewTeachersTimeHorizontalDelegate::paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const
+void TimetableViewRoomsTimeHorizontalDelegate::paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const
 {
 	QStyledItemDelegate::paint(painter, option, index);
 
@@ -118,7 +118,7 @@ void TimetableViewTeachersTimeHorizontalDelegate::paint(QPainter* painter, const
 }
 
 
-TimetableViewTeachersTimeHorizontalForm::TimetableViewTeachersTimeHorizontalForm(QWidget* parent): QDialog(parent)
+TimetableViewRoomsTimeHorizontalForm::TimetableViewRoomsTimeHorizontalForm(QWidget* parent): QDialog(parent)
 {
 	setupUi(this);
 	
@@ -133,10 +133,10 @@ TimetableViewTeachersTimeHorizontalForm::TimetableViewTeachersTimeHorizontalForm
 	horizontalSplitter->setStretchFactor(0, 5);
 	horizontalSplitter->setStretchFactor(1, 1);
 
-	teachersTimetableTable->setSelectionMode(QAbstractItemView::ExtendedSelection);
+	roomsTimetableTable->setSelectionMode(QAbstractItemView::ExtendedSelection);
 	
 	connect(closePushButton, SIGNAL(clicked()), this, SLOT(close()));
-	connect(teachersTimetableTable, SIGNAL(currentItemChanged(QTableWidgetItem*, QTableWidgetItem*)), this, SLOT(currentItemChanged(QTableWidgetItem*, QTableWidgetItem*)));
+	connect(roomsTimetableTable, SIGNAL(currentItemChanged(QTableWidgetItem*, QTableWidgetItem*)), this, SLOT(currentItemChanged(QTableWidgetItem*, QTableWidgetItem*)));
 	connect(lockTimePushButton, SIGNAL(clicked()), this, SLOT(lockTime()));
 	connect(lockSpacePushButton, SIGNAL(clicked()), this, SLOT(lockSpace()));
 	connect(lockTimeSpacePushButton, SIGNAL(clicked()), this, SLOT(lockTimeSpace()));
@@ -156,7 +156,7 @@ TimetableViewTeachersTimeHorizontalForm::TimetableViewTeachersTimeHorizontalForm
 		verticalSplitter->restoreState(settings.value(this->metaObject()->className()+QString("/vertical-splitter-state")).toByteArray());
 
 	//restore horizontal splitter state
-	//QSettings settings(COMPANY, PROGRAM);
+	//QSettings settings;
 	if(settings.contains(this->metaObject()->className()+QString("/horizontal-splitter-state")))
 		horizontalSplitter->restoreState(settings.value(this->metaObject()->className()+QString("/horizontal-splitter-state")).toByteArray());
 
@@ -188,27 +188,27 @@ TimetableViewTeachersTimeHorizontalForm::TimetableViewTeachersTimeHorizontalForm
 	assert(backupPermanentlyLockedSpace==idsOfPermanentlyLockedSpace);
 ///////////
 
-	if(gt.rules.nInternalTeachers!=gt.rules.teachersList.count()){
-		assert(0); //should be taken care of by Rules - teachers_schedule_ready is false in the Rules if adding or removing teachers.
+	if(gt.rules.nInternalRooms!=gt.rules.roomsList.count()){
+		assert(0); //should be taken care of by Rules - rooms_schedule_ready is false in the Rules if adding or removing rooms.
 
 		initialRecommendedHeight=10;
 
-		oldItemDelegate=teachersTimetableTable->itemDelegate();
-		newItemDelegate=new TimetableViewTeachersTimeHorizontalDelegate(NULL, 1, 1);
-		teachersTimetableTable->setItemDelegate(newItemDelegate);
+		oldItemDelegate=roomsTimetableTable->itemDelegate();
+		newItemDelegate=new TimetableViewRoomsTimeHorizontalDelegate(NULL, 1, 1);
+		roomsTimetableTable->setItemDelegate(newItemDelegate);
 
-		QMessageBox::warning(this, tr("FET warning"), tr("Cannot display the timetable, because you added or removed some teachers. Please regenerate the timetable and then view it"));
+		QMessageBox::warning(this, tr("FET warning"), tr("Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it"));
 		return;
 	}
 
 	LockUnlock::increaseCommunicationSpinBox();
 	
-	teachersTimetableTable->setRowCount(gt.rules.nInternalTeachers);
-	teachersTimetableTable->setColumnCount(gt.rules.nDaysPerWeek*gt.rules.nHoursPerDay);
+	roomsTimetableTable->setRowCount(gt.rules.nInternalRooms);
+	roomsTimetableTable->setColumnCount(gt.rules.nDaysPerWeek*gt.rules.nHoursPerDay);
 	
-	oldItemDelegate=teachersTimetableTable->itemDelegate();
-	newItemDelegate=new TimetableViewTeachersTimeHorizontalDelegate(NULL, teachersTimetableTable->rowCount(), gt.rules.nHoursPerDay);
-	teachersTimetableTable->setItemDelegate(newItemDelegate);
+	oldItemDelegate=roomsTimetableTable->itemDelegate();
+	newItemDelegate=new TimetableViewRoomsTimeHorizontalDelegate(NULL, roomsTimetableTable->rowCount(), gt.rules.nHoursPerDay);
+	roomsTimetableTable->setItemDelegate(newItemDelegate);
 	
 	bool min2letters=false;
 	for(int d=0; d<gt.rules.nDaysPerWeek; d++){
@@ -247,23 +247,23 @@ TimetableViewTeachersTimeHorizontalForm::TimetableViewTeachersTimeHorizontalForm
 		for(int h=0; h<gt.rules.nHoursPerDay; h++){
 			QTableWidgetItem* item=new QTableWidgetItem(list.at(h)+"\n"+gt.rules.hoursOfTheDay[h]);
 			item->setToolTip(gt.rules.daysOfTheWeek[d]+"\n"+gt.rules.hoursOfTheDay[h]);
-			teachersTimetableTable->setHorizontalHeaderItem(d*gt.rules.nHoursPerDay+h, item);
+			roomsTimetableTable->setHorizontalHeaderItem(d*gt.rules.nHoursPerDay+h, item);
 		}
 	}
-	for(int t=0; t<gt.rules.nInternalTeachers; t++){
-		QTableWidgetItem* item=new QTableWidgetItem(gt.rules.internalTeachersList[t]->name);
-		item->setToolTip(gt.rules.internalTeachersList[t]->name);
-		teachersTimetableTable->setVerticalHeaderItem(t, item);
+	for(int t=0; t<gt.rules.nInternalRooms; t++){
+		QTableWidgetItem* item=new QTableWidgetItem(gt.rules.internalRoomsList[t]->name);
+		item->setToolTip(gt.rules.internalRoomsList[t]->name);
+		roomsTimetableTable->setVerticalHeaderItem(t, item);
 	}
 
-	for(int t=0; t<gt.rules.nInternalTeachers; t++){
+	for(int t=0; t<gt.rules.nInternalRooms; t++){
 		for(int d=0; d<gt.rules.nDaysPerWeek; d++){
 			for(int h=0; h<gt.rules.nHoursPerDay; h++){
 				QTableWidgetItem* item= new QTableWidgetItem();
 				item->setTextAlignment(Qt::AlignCenter);
 				item->setFlags(Qt::ItemIsSelectable|Qt::ItemIsEnabled);
 
-				teachersTimetableTable->setItem(t, d*gt.rules.nHoursPerDay+h, item);
+				roomsTimetableTable->setItem(t, d*gt.rules.nHoursPerDay+h, item);
 			}
 		}
 	}
@@ -273,7 +273,7 @@ TimetableViewTeachersTimeHorizontalForm::TimetableViewTeachersTimeHorizontalForm
 //	teachersTimetableTable->horizontalHeader()->setMinimumSectionSize(teachersTimetableTable->horizontalHeader()->defaultSectionSize());
 	//	columnResizeModeInitialized=true;
 	
-	initialRecommendedHeight=teachersTimetableTable->verticalHeader()->sectionSizeHint(0);
+	initialRecommendedHeight=roomsTimetableTable->verticalHeader()->sectionSizeHint(0);
 	
 	int h;
 	int w;
@@ -303,7 +303,7 @@ TimetableViewTeachersTimeHorizontalForm::TimetableViewTeachersTimeHorizontalForm
 	widthSpinBox->setSuffix(QString(" ")+tr("px", "Abbreviation for pixels"));
 	widthSpinBox->setMinimum(MINIMUM_WIDTH_SPIN_BOX_VALUE);
 #if QT_VERSION >= 0x050200
-	widthSpinBox->setMaximum(teachersTimetableTable->verticalHeader()->maximumSectionSize());
+	widthSpinBox->setMaximum(roomsTimetableTable->verticalHeader()->maximumSectionSize());
 #else
 	widthSpinBox->setMaximum(maxScreenWidth(this));
 #endif
@@ -313,7 +313,7 @@ TimetableViewTeachersTimeHorizontalForm::TimetableViewTeachersTimeHorizontalForm
 	heightSpinBox->setSuffix(QString(" ")+tr("px", "Abbreviation for pixels"));
 	heightSpinBox->setMinimum(MINIMUM_HEIGHT_SPIN_BOX_VALUE);
 #if QT_VERSION >= 0x050200
-	heightSpinBox->setMaximum(teachersTimetableTable->verticalHeader()->maximumSectionSize());
+	heightSpinBox->setMaximum(roomsTimetableTable->verticalHeader()->maximumSectionSize());
 #else
 	heightSpinBox->setMaximum(maxScreenWidth(this));
 #endif
@@ -330,18 +330,23 @@ TimetableViewTeachersTimeHorizontalForm::TimetableViewTeachersTimeHorizontalForm
 //	teachersTimetableTable->horizontalHeader()->setDefaultSectionSize(w);
 
 #if QT_VERSION >= 0x050000
-	teachersTimetableTable->verticalHeader()->setSectionResizeMode(QHeaderView::Interactive);
-	teachersTimetableTable->horizontalHeader()->setSectionResizeMode(QHeaderView::Interactive);
+	roomsTimetableTable->verticalHeader()->setSectionResizeMode(QHeaderView::Interactive);
+	roomsTimetableTable->horizontalHeader()->setSectionResizeMode(QHeaderView::Interactive);
 #else
-	teachersTimetableTable->verticalHeader()->setResizeMode(QHeaderView::Interactive);
-	teachersTimetableTable->horizontalHeader()->setResizeMode(QHeaderView::Interactive);
+	roomsTimetableTable->verticalHeader()->setResizeMode(QHeaderView::Interactive);
+	roomsTimetableTable->horizontalHeader()->setResizeMode(QHeaderView::Interactive);
 #endif
 	//}
 	////////////////
 	
+	teachersCheckBox->setChecked(true);
 	subjectsCheckBox->setChecked(true);
 	studentsCheckBox->setChecked(true);
 	
+	if(settings.contains(this->metaObject()->className()+QString("/teachers-check-box-state"))){
+		bool state=settings.value(this->metaObject()->className()+QString("/teachers-check-box-state")).toBool();
+		teachersCheckBox->setChecked(state);
+	}
 	if(settings.contains(this->metaObject()->className()+QString("/subjects-check-box-state"))){
 		bool state=settings.value(this->metaObject()->className()+QString("/subjects-check-box-state")).toBool();
 		subjectsCheckBox->setChecked(state);
@@ -351,16 +356,17 @@ TimetableViewTeachersTimeHorizontalForm::TimetableViewTeachersTimeHorizontalForm
 		studentsCheckBox->setChecked(state);
 	}
 	
-	connect(subjectsCheckBox, SIGNAL(toggled(bool)), this, SLOT(updateTeachersTimetableTable()));
-	connect(studentsCheckBox, SIGNAL(toggled(bool)), this, SLOT(updateTeachersTimetableTable()));
+	connect(teachersCheckBox, SIGNAL(toggled(bool)), this, SLOT(updateRoomsTimetableTable()));
+	connect(subjectsCheckBox, SIGNAL(toggled(bool)), this, SLOT(updateRoomsTimetableTable()));
+	connect(studentsCheckBox, SIGNAL(toggled(bool)), this, SLOT(updateRoomsTimetableTable()));
 	
 	//added by Volker Dirr
-	connect(&communicationSpinBox, SIGNAL(valueChanged()), this, SLOT(updateTeachersTimetableTable()));
+	connect(&communicationSpinBox, SIGNAL(valueChanged()), this, SLOT(updateRoomsTimetableTable()));
 	
-	updateTeachersTimetableTable();
+	updateRoomsTimetableTable();
 }
 
-TimetableViewTeachersTimeHorizontalForm::~TimetableViewTeachersTimeHorizontalForm()
+TimetableViewRoomsTimeHorizontalForm::~TimetableViewRoomsTimeHorizontalForm()
 {
 	saveFETDialogGeometry(this);
 
@@ -369,7 +375,7 @@ TimetableViewTeachersTimeHorizontalForm::~TimetableViewTeachersTimeHorizontalFor
 	settings.setValue(this->metaObject()->className()+QString("/vertical-splitter-state"), verticalSplitter->saveState());
 
 	//save horizontal splitter state
-	//QSettings settings(COMPANY, PROGRAM);
+	//QSettings settings;
 	settings.setValue(this->metaObject()->className()+QString("/horizontal-splitter-state"), horizontalSplitter->saveState());
 
 	settings.setValue(this->metaObject()->className()+QString("/lock-radio-button"), lockRadioButton->isChecked());
@@ -386,22 +392,23 @@ TimetableViewTeachersTimeHorizontalForm::~TimetableViewTeachersTimeHorizontalFor
 	else
 		settings.setValue(this->metaObject()->className()+QString("/horizontal-header-size"), widthSpinBox->value());
 		
+	settings.setValue(this->metaObject()->className()+QString("/teachers-check-box-state"), teachersCheckBox->isChecked());
 	settings.setValue(this->metaObject()->className()+QString("/subjects-check-box-state"), subjectsCheckBox->isChecked());
 	settings.setValue(this->metaObject()->className()+QString("/students-check-box-state"), studentsCheckBox->isChecked());
 		
-	teachersTimetableTable->setItemDelegate(oldItemDelegate);
+	roomsTimetableTable->setItemDelegate(oldItemDelegate);
 	delete newItemDelegate;
 }
 
-void TimetableViewTeachersTimeHorizontalForm::resizeRowsAfterShow()
+void TimetableViewRoomsTimeHorizontalForm::resizeRowsAfterShow()
 {
-//	teachersTimetableTable->resizeRowsToContents();
+//	roomsTimetableTable->resizeRowsToContents();
 }
 
-void TimetableViewTeachersTimeHorizontalForm::updateTeachersTimetableTable(){
+void TimetableViewRoomsTimeHorizontalForm::updateRoomsTimetableTable(){
 	if(!CachedSchedule::isValid()){
-		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view teachers timetable dialog - please generate a new timetable "
-		"or close the timetable view teachers dialog"));
+		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view rooms timetable dialog - please generate a new timetable "
+		"or close the timetable view rooms dialog"));
 		return;
 	}
 
@@ -411,31 +418,30 @@ void TimetableViewTeachersTimeHorizontalForm::updateTeachersTimetableTable(){
 	}
 
 	assert(gt.rules.initialized);
-	
-	for(int t=0; t<gt.rules.nInternalTeachers; t++){
-		assert(t<teachersTimetableTable->rowCount());
-		for(int d=0; d<gt.rules.nDaysPerWeek; d++){
-			for(int h=0; h<gt.rules.nHoursPerDay; ){
-				const int tableColumnIdx = d*gt.rules.nHoursPerDay+h;
-				assert(tableColumnIdx<teachersTimetableTable->columnCount());
 
-				QTableWidgetItem *item = teachersTimetableTable->item(t, tableColumnIdx);
+	const Solution &best_solution = CachedSchedule::getCachedSolution();
+	
+	for(int t=0; t<gt.rules.nInternalRooms; t++){
+		assert(t<roomsTimetableTable->rowCount());
+		for(int d=0; d<gt.rules.nDaysPerWeek; d++){
+			for(int h=0; h<gt.rules.nHoursPerDay; h++){
+				assert(d*gt.rules.nHoursPerDay+h<roomsTimetableTable->columnCount());
 
 				//begin by Marco Vassura
 				// add colors (start)
 				//if(USE_GUI_COLORS) {
-					item->setBackground(teachersTimetableTable->palette().color(QPalette::Base));
-					item->setForeground(teachersTimetableTable->palette().color(QPalette::Text));
+					roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setBackground(roomsTimetableTable->palette().color(QPalette::Base));
+					roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setForeground(roomsTimetableTable->palette().color(QPalette::Text));
 				//}
 				// add colors (end)
 				//end by Marco Vassura
 
 				QString s = "";
 				QString shortString="";
-				int ai=CachedSchedule::teachers_timetable_weekly[t][d][h]; //activity index
+				int ai=CachedSchedule::rooms_timetable_weekly[t][d][h]; //activity index
 				//Activity* act=gt.rules.activitiesList.at(ai);
 				if(ai!=UNALLOCATED_ACTIVITY){
-					const Activity* act=&gt.rules.internalActivitiesList[ai];
+					Activity* act=&gt.rules.internalActivitiesList[ai];
 					assert(act!=NULL);
 					
 					if(TIMETABLE_HTML_PRINT_ACTIVITY_TAGS){
@@ -445,6 +451,17 @@ void TimetableViewTeachersTimeHorizontalForm::updateTeachersTimetableTable(){
 					else{
 						s += act->subjectName;
 					}
+
+					//teachers
+					if(act->teachersNames.count()>0){
+						//s+=" ";
+						s+="\n";
+						s+=act->teachersNames.join(", ");
+						
+						if(teachersCheckBox->isChecked()){
+							shortString+=act->teachersNames.join(", ");
+						}
+					}
 					
 					//students
 					if(act->studentsNames.count()>0){
@@ -453,6 +470,10 @@ void TimetableViewTeachersTimeHorizontalForm::updateTeachersTimetableTable(){
 						s+=act->studentsNames.join(", ");
 						
 						if(studentsCheckBox->isChecked()){
+							if(!shortString.isEmpty()){
+								shortString+=" ";
+								//shortString+="\n";
+							}
 							shortString+=act->studentsNames.join(", ");
 						}
 					}
@@ -465,29 +486,15 @@ void TimetableViewTeachersTimeHorizontalForm::updateTeachersTimetableTable(){
 						shortString+=act->subjectName;
 					}
 					
-					if(act->teachersNames.count()==1){
-						//Don't do the assert below, because it crashes if you change the teacher's name and view the teachers' timetable,
-						//without generating again (as reported by Yush Yuen).
-						//assert(act->teachersNames.at(0)==teachername);
-					}
-					else{
-						assert(act->teachersNames.count()>=2);
-						//Don't do the assert below, because it crashes if you change the teacher's name and view the teachers' timetable,
-						//without generating again (as reported by Yush Yuen).
-						//assert(act->teachersNames.contains(teachername));
-						//s+=" ";
-						s+="\n";
-						s+=act->teachersNames.join(", ");
-					}
-					
-					int r=CachedSchedule::getCachedSolution().rooms[ai];
+					assert(best_solution.rooms[ai]!=UNALLOCATED_SPACE && best_solution.rooms[ai]!=UNSPECIFIED_ROOM);
+					/*int r=best_solution.rooms[ai];
 					if(r!=UNALLOCATED_SPACE && r!=UNSPECIFIED_ROOM){
 						//s+=" ";
 						//s+=tr("R:%1", "Room").arg(gt.rules.internalRoomsList[r]->name);
-						//s+=" ";
+						s+=" ";
 						s+="\n";
 						s+=gt.rules.internalRoomsList[r]->name;
-					}
+					}*/
 					
 					//added by Volker Dirr (start)
 					QString descr="";
@@ -516,63 +523,58 @@ void TimetableViewTeachersTimeHorizontalForm::updateTeachersTimetableTable(){
 					}
 					if(descr!=""){
 						descr.prepend("\n(");
-						//descr.prepend(" ");
+						descr.prepend(" ");
 						descr.append(")");
 					}
 
 					if(idsOfPermanentlyLockedTime.contains(act->id) || idsOfLockedTime.contains(act->id)){
-						QFont font(item->font());
+						QFont font(roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->font());
 						font.setBold(true);
-						item->setFont(font);
+						roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setFont(font);
 					}
 					else{
-						QFont font(item->font());
+						QFont font(roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->font());
 						font.setBold(false);
-						item->setFont(font);
+						roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setFont(font);
 					}
-					
+
 					if(idsOfPermanentlyLockedSpace.contains(act->id) || idsOfLockedSpace.contains(act->id)){
-						QFont font(teachersTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->font());
+						QFont font(roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->font());
 						font.setItalic(true);
-						teachersTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setFont(font);
+						roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setFont(font);
 					}
 					else{
-						QFont font(teachersTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->font());
+						QFont font(roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->font());
 						font.setItalic(false);
-						teachersTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setFont(font);
+						roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setFont(font);
 					}
 
 					s+=descr;
 					//added by Volker Dirr (end)
-				
+					
 					//begin by Marco Vassura
 					// add colors (start)
 					if(USE_GUI_COLORS /*&& act->studentsNames.count()>0*/){
 						QBrush bg(stringToColor(act->subjectName+" "+act->studentsNames.join(", ")));
-						item->setBackground(bg);
+						roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setBackground(bg);
 						double brightness = bg.color().redF()*0.299 + bg.color().greenF()*0.587 + bg.color().blueF()*0.114;
 						if (brightness<0.5)
-							item->setForeground(QBrush(Qt::white));
+							roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setForeground(QBrush(Qt::white));
 						else
-							item->setForeground(QBrush(Qt::black));
+							roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setForeground(QBrush(Qt::black));
 					}
 					// add colors (end)
 					//end by Marco Vassura
-					item->setText(shortString);
+					roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setText(shortString);
 				}
 				else{
-					if(teacherNotAvailableDayHour[t][d][h] && PRINT_NOT_AVAILABLE_TIME_SLOTS)
+					if(notAllowedRoomTimePercentages[t][d+h*gt.rules.nDaysPerWeek]>=0 && PRINT_NOT_AVAILABLE_TIME_SLOTS)
 						s+="-x-";
 					else if(breakDayHour[d][h] && PRINT_BREAK_TIME_SLOTS)
 						s+="-X-";
-					item->setText(s);
+					roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setText(s);
 				}
-				item->setToolTip(s);
-
-				int columnSpan = ai!=UNALLOCATED_ACTIVITY? gt.rules.internalActivitiesList[ai].duration : 1;
-				if (columnSpan != teachersTimetableTable->columnSpan(t, tableColumnIdx))
-					teachersTimetableTable->setSpan(t, tableColumnIdx, 1, columnSpan);
-				h += columnSpan;
+				roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->setToolTip(s);
 			}
 		}
 	}
@@ -581,9 +583,9 @@ void TimetableViewTeachersTimeHorizontalForm::updateTeachersTimetableTable(){
 
 //	teachersTimetableTable->resizeRowsToContents();
 	
-	tableWidgetUpdateBug(teachersTimetableTable);
+	tableWidgetUpdateBug(roomsTimetableTable);
 	
-	detailActivity(teachersTimetableTable->currentItem());
+	detailActivity(roomsTimetableTable->currentItem());
 }
 
 /*void TimetableViewTeachersTimeHorizontalForm::resizeEvent(QResizeEvent* event)
@@ -594,7 +596,7 @@ void TimetableViewTeachersTimeHorizontalForm::updateTeachersTimetableTable(){
 }*/
 
 //begin by Marco Vassura
-QColor TimetableViewTeachersTimeHorizontalForm::stringToColor(QString s)
+QColor TimetableViewRoomsTimeHorizontalForm::stringToColor(QString s)
 {
 	// CRC-24 Based on RFC 2440 Section 6.1
 	unsigned long crc = 0xB704CEL;
@@ -613,27 +615,27 @@ QColor TimetableViewTeachersTimeHorizontalForm::stringToColor(QString s)
 }
 //end by Marco Vassura
 
-void TimetableViewTeachersTimeHorizontalForm::currentItemChanged(QTableWidgetItem* current, QTableWidgetItem* previous)
+void TimetableViewRoomsTimeHorizontalForm::currentItemChanged(QTableWidgetItem* current, QTableWidgetItem* previous)
 {
 	Q_UNUSED(previous);
 	
 	detailActivity(current);
 }
 
-void TimetableViewTeachersTimeHorizontalForm::detailActivity(QTableWidgetItem* item){
+void TimetableViewRoomsTimeHorizontalForm::detailActivity(QTableWidgetItem* item){
 	if(item==NULL){
 		detailsTextEdit->setPlainText(QString(""));
 		return;
 	}
 
 	if(!CachedSchedule::isValid()){
-		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view teachers timetable dialog - please generate a new timetable"));
+		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view rooms timetable dialog - please generate a new timetable"));
 		return;
 	}
 
-	if(item->row()>=gt.rules.nInternalTeachers || item->column()>=gt.rules.nDaysPerWeek*gt.rules.nHoursPerDay){
-		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view teachers timetable dialog - please generate a new timetable "
-		"or close the timetable view teachers dialog"));
+	if(item->row()>=gt.rules.nInternalRooms || item->column()>=gt.rules.nDaysPerWeek*gt.rules.nHoursPerDay){
+		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view rooms timetable dialog - please generate a new timetable "
+		"or close the timetable view rooms dialog"));
 		return;
 	}
 
@@ -655,28 +657,34 @@ void TimetableViewTeachersTimeHorizontalForm::detailActivity(QTableWidgetItem* i
 	int d=item->column()/gt.rules.nHoursPerDay;
 	int h=item->column()%gt.rules.nHoursPerDay;
 
-	int teacher=gt.rules.searchTeacher(gt.rules.internalTeachersList[t]->name);
-	if(teacher<0){
-		QMessageBox::warning(this, tr("FET warning"), tr("The teacher is invalid - please close this dialog and open a new view teachers timetable"));
+	int roomIndex=gt.rules.searchRoom(gt.rules.internalRoomsList[t]->name);
+	if(roomIndex<0){
+		QMessageBox::warning(this, tr("FET warning"), tr("The room is invalid - please close this dialog and open a new view rooms timetable"));
 		return;
 	}
 	else{
 		QString s = "";
 		if(d>=0 && d<gt.rules.nDaysPerWeek && h>=0 && h<gt.rules.nHoursPerDay){
-			int ai=CachedSchedule::teachers_timetable_weekly[t][d][h]; //activity index
+			int ai=CachedSchedule::rooms_timetable_weekly[t][d][h]; //activity index
 			//Activity* act=gt.rules.activitiesList.at(ai);
 			if(ai!=UNALLOCATED_ACTIVITY){
-				const Activity* act=&gt.rules.internalActivitiesList[ai];
+				Activity* act=&gt.rules.internalActivitiesList[ai];
 				assert(act!=NULL);
 				//s += act->getDetailedDescriptionWithConstraints(gt.rules);
 				s += act->getDetailedDescription(gt.rules);
 
-				//int r=rooms_timetable_weekly[teacher][k][j];
 				int r=CachedSchedule::getCachedSolution().rooms[ai];
 				if(r!=UNALLOCATED_SPACE && r!=UNSPECIFIED_ROOM){
 					s+="\n";
 					s+=tr("Room: %1").arg(gt.rules.internalRoomsList[r]->name);
 				}
+
+				//int r=rooms_timetable_weekly[teacher][k][j];
+				/*int r=best_solution.rooms[ai];
+				if(r!=UNALLOCATED_SPACE && r!=UNSPECIFIED_ROOM){
+					s+="\n";
+					s+=tr("Room: %1").arg(gt.rules.internalRoomsList[r]->name);
+				}*/
 				//added by Volker Dirr (start)
 				QString descr="";
 				QString tt="";
@@ -702,8 +710,8 @@ void TimetableViewTeachersTimeHorizontalForm::detailActivity(QTableWidgetItem* i
 				//added by Volker Dirr (end)
 			}
 			else{
-				if(teacherNotAvailableDayHour[t][d][h]){
-					s+=tr("Teacher is not available 100% in this slot");
+				if(notAllowedRoomTimePercentages[roomIndex][d+h*gt.rules.nDaysPerWeek]>=0){
+					s+=tr("Room is not available with weight %1%").arg(CustomFETString::number(notAllowedRoomTimePercentages[roomIndex][d+h*gt.rules.nDaysPerWeek]));
 					s+="\n";
 				}
 				if(breakDayHour[d][h]){
@@ -716,22 +724,22 @@ void TimetableViewTeachersTimeHorizontalForm::detailActivity(QTableWidgetItem* i
 	}
 }
 
-void TimetableViewTeachersTimeHorizontalForm::lockTime()
+void TimetableViewRoomsTimeHorizontalForm::lockTime()
 {
 	this->lock(true, false);
 }
 	
-void TimetableViewTeachersTimeHorizontalForm::lockSpace()
+void TimetableViewRoomsTimeHorizontalForm::lockSpace()
 {
 	this->lock(false, true);
 }
 
-void TimetableViewTeachersTimeHorizontalForm::lockTimeSpace()
+void TimetableViewRoomsTimeHorizontalForm::lockTimeSpace()
 {
 	this->lock(true, true);
 }
 			
-void TimetableViewTeachersTimeHorizontalForm::lock(bool lockTime, bool lockSpace)
+void TimetableViewRoomsTimeHorizontalForm::lock(bool lockTime, bool lockSpace)
 {
 	//cout<<"teachers begin, isc="<<gt.rules.internalStructureComputed<<endl;
 
@@ -742,7 +750,7 @@ void TimetableViewTeachersTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 	}
 
 	if(!CachedSchedule::isValid()){
-		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view teachers timetable dialog - please generate a new timetable"));
+		QMessageBox::warning(this, tr("FET warning"), tr("Timetable not available in view rooms timetable dialog - please generate a new timetable"));
 		return;
 	}
 
@@ -758,7 +766,7 @@ void TimetableViewTeachersTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 	int addedT=0, unlockedT=0;
 	int addedS=0, unlockedS=0;
 	
-	QSet<int> dummyActivitiesColumn; //Dummy activities (no teacher) column to be considered, because the whole column is selected.
+	/*QSet<int> dummyActivitiesColumn; //Dummy activities (no teacher) column to be considered, because the whole column is selected.
 	for(int d=0; d<gt.rules.nDaysPerWeek; d++){
 		for(int h=0; h<gt.rules.nHoursPerDay; h++){
 			assert(d*gt.rules.nHoursPerDay+h < teachersTimetableTable->columnCount());
@@ -788,16 +796,16 @@ void TimetableViewTeachersTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 							dummyActivities.insert(ai);
 			}
 		}
-	}
+	}*/
 
 	QSet<int> realActivities;
-	for(int t=0; t<gt.rules.nInternalTeachers; t++){
-		assert(t<teachersTimetableTable->rowCount());
+	for(int t=0; t<gt.rules.nInternalRooms; t++){
+		assert(t<roomsTimetableTable->rowCount());
 		for(int d=0; d<gt.rules.nDaysPerWeek; d++){
 			for(int h=0; h<gt.rules.nHoursPerDay; h++){
-				assert(d*gt.rules.nHoursPerDay+h<teachersTimetableTable->columnCount());
-				if(teachersTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->isSelected()){
-					int ai=CachedSchedule::teachers_timetable_weekly[t][d][h];
+				assert(d*gt.rules.nHoursPerDay+h<roomsTimetableTable->columnCount());
+				if(roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->isSelected()){
+					int ai=CachedSchedule::rooms_timetable_weekly[t][d][h];
 					if(ai!=UNALLOCATED_ACTIVITY)
 						if(!realActivities.contains(ai))
 							realActivities.insert(ai);
@@ -807,13 +815,13 @@ void TimetableViewTeachersTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 	}
 
 	for(int ai=0; ai<gt.rules.nInternalActivities; ai++){
-		assert( ! (realActivities.contains(ai) && dummyActivities.contains(ai)) );
-		if(realActivities.contains(ai) || dummyActivities.contains(ai)){
+		//assert( ! (realActivities.contains(ai) && dummyActivities.contains(ai)) );
+		if(realActivities.contains(ai) /*|| dummyActivities.contains(ai)*/){
 			assert(tc->times[ai]!=UNALLOCATED_TIME);
 			int day=tc->times[ai]%gt.rules.nDaysPerWeek;
 			int hour=tc->times[ai]/gt.rules.nDaysPerWeek;
 
-			const Activity* act=&gt.rules.internalActivitiesList[ai];
+			Activity* act=&gt.rules.internalActivitiesList[ai];
 			
 			if(lockTime){
 				QString s;
@@ -1046,23 +1054,23 @@ void TimetableViewTeachersTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 	//cout<<endl;
 }
 
-void TimetableViewTeachersTimeHorizontalForm::widthSpinBoxValueChanged()
+void TimetableViewRoomsTimeHorizontalForm::widthSpinBoxValueChanged()
 {
 	if(widthSpinBox->value()==MINIMUM_WIDTH_SPIN_BOX_VALUE)
-		teachersTimetableTable->horizontalHeader()->setDefaultSectionSize(2*initialRecommendedHeight);
+		roomsTimetableTable->horizontalHeader()->setDefaultSectionSize(2*initialRecommendedHeight);
 	else
-		teachersTimetableTable->horizontalHeader()->setDefaultSectionSize(widthSpinBox->value());
+		roomsTimetableTable->horizontalHeader()->setDefaultSectionSize(widthSpinBox->value());
 }
 
-void TimetableViewTeachersTimeHorizontalForm::heightSpinBoxValueChanged()
+void TimetableViewRoomsTimeHorizontalForm::heightSpinBoxValueChanged()
 {
 	if(heightSpinBox->value()==MINIMUM_HEIGHT_SPIN_BOX_VALUE)
-		teachersTimetableTable->verticalHeader()->setDefaultSectionSize(initialRecommendedHeight);
+		roomsTimetableTable->verticalHeader()->setDefaultSectionSize(initialRecommendedHeight);
 	else
-		teachersTimetableTable->verticalHeader()->setDefaultSectionSize(heightSpinBox->value());
+		roomsTimetableTable->verticalHeader()->setDefaultSectionSize(heightSpinBox->value());
 }
 
-void TimetableViewTeachersTimeHorizontalForm::help()
+void TimetableViewRoomsTimeHorizontalForm::help()
 {
 	QString s="";
 	//s+=QCoreApplication::translate("TimetableViewForm", "You can drag sections to increase/decrease them.");
@@ -1079,7 +1087,7 @@ void TimetableViewTeachersTimeHorizontalForm::help()
 		"and the user can differentiate easily between them. These abbreviations may appear also in other places, please use the same abbreviations.");
 	
 	s+="\n\n";
-	s+=tr("If a whole column (day+hour) is selected, there will be locked/unlocked also the dummy activities (activities with no teacher) from that column.");
+	s+=tr("If a whole column (day+hour) is selected, the activities with no room from that column will NOT be locked/unlocked.");
 	
 	s+="\n\n";
 	s+=tr("A bold font cell means that the activity is locked in time, either permanently or not.");

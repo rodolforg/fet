@@ -30820,267 +30820,58 @@ Import of data will be easier with these settings.</source>
 <context>
     <name>FetMainForm</name>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="788"/>
-        <location filename="../src/interface/fetmainform.cpp" line="809"/>
-        <location filename="../src/interface/fetmainform.cpp" line="889"/>
-        <location filename="../src/interface/fetmainform.cpp" line="906"/>
-        <location filename="../src/interface/fetmainform.cpp" line="932"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1597"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3612"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3622"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3632"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3749"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3770"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3791"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3795"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3816"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3820"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3856"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3877"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3881"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4001"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4058"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4610"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4660"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4690"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4715"/>
+        <location filename="../src/interface/fetmainform.cpp" line="789"/>
+        <location filename="../src/interface/fetmainform.cpp" line="810"/>
+        <location filename="../src/interface/fetmainform.cpp" line="890"/>
+        <location filename="../src/interface/fetmainform.cpp" line="907"/>
+        <location filename="../src/interface/fetmainform.cpp" line="933"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1598"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3613"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3623"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3633"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3750"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3771"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3792"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3796"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3817"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3821"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3857"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3878"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3899"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3903"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4023"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4080"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4632"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4682"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4712"/>
         <location filename="../src/interface/fetmainform.cpp" line="4737"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4764"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4759"/>
         <location filename="../src/interface/fetmainform.cpp" line="4786"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4807"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4831"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4808"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4829"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4853"/>
         <source>FET warning</source>
         <translation>FET 警告</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="765"/>
-        <location filename="../src/interface/fetmainform.cpp" line="868"/>
-        <location filename="../src/interface/fetmainform.cpp" line="927"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1020"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1081"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1093"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1165"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1211"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1224"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1232"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1238"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1244"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1318"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1337"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1341"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1348"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1353"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1358"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1401"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1410"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1419"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1428"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1443"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1452"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1461"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1538"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1557"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1561"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1568"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1573"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1578"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1707"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1782"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1795"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1808"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1821"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1834"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1854"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1874"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1887"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1900"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1913"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1979"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2084"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2137"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2150"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2163"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2176"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2189"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2202"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2215"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2228"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2241"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2254"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2267"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2280"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2293"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2306"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2319"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2332"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2345"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2358"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2371"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2384"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2397"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2410"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2423"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2436"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2449"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2462"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2475"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2488"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2501"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2514"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2527"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2541"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2554"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2568"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2581"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2595"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2608"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2621"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2634"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2647"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2660"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2673"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2685"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2698"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2711"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2724"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2737"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2750"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2763"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2776"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2789"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2802"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2815"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2828"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2841"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2854"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2867"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2880"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2893"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2906"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2919"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2932"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2945"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2958"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2971"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2984"/>
-        <location filename="../src/interface/fetmainform.cpp" line="2997"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3010"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3028"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3046"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3059"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3072"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3085"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3098"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3111"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3123"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3136"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3154"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3172"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3185"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3198"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3211"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3224"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3237"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3250"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3263"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3276"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3289"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3302"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3315"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3328"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3346"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3364"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3377"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3390"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3403"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3416"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3429"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3442"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3455"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3468"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3481"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3494"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3507"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3520"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3533"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3546"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3559"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3573"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3587"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3688"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3700"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3713"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3719"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3731"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3744"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3765"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3786"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3811"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3836"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3851"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3872"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3896"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3907"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3920"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3931"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3944"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3954"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4415"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4458"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4485"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4558"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4569"/>
-        <source>FET information</source>
-        <translation>FET信息</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/fetmainform.cpp" line="755"/>
-        <source>Constraint is not enabled. To use this type of constraint you must enable it from the Settings-&gt;Advanced menu.</source>
-        <translation>限制條件無法建立。使用該限制條件您必須先至-&gt;設定選項-&gt;高級選項，於此做好設定才能執行。</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/fetmainform.cpp" line="757"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3119"/>
-        <source>Explanation:</source>
-        <translation>說明:</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/fetmainform.cpp" line="761"/>
-        <source>For some situations, the generation of the timetable may take too long or be impossible.</source>
-        <translation>由於某些情況下，課程時間表的生成可能需要時間過長或不可能生成。</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/fetmainform.cpp" line="763"/>
-        <source>Use with caution.</source>
-        <translation>請謹慎使用。</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/fetmainform.cpp" line="961"/>
-        <source>FET - exiting</source>
-        <translation>FET-已經存在。</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4258"/>
-        <source>&amp;Yes</source>
-        <translation>&amp;是</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4258"/>
-        <source>&amp;No</source>
-        <translation>&amp;否</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4497"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4518"/>
-        <source>&amp;Cancel</source>
-        <translation>&amp;取消</translation>
-    </message>
-    <message>
+        <location filename="../src/interface/fetmainform.cpp" line="766"/>
         <location filename="../src/interface/fetmainform.cpp" line="869"/>
+        <location filename="../src/interface/fetmainform.cpp" line="928"/>
         <location filename="../src/interface/fetmainform.cpp" line="1021"/>
         <location filename="../src/interface/fetmainform.cpp" line="1082"/>
         <location filename="../src/interface/fetmainform.cpp" line="1094"/>
         <location filename="../src/interface/fetmainform.cpp" line="1166"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1212"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1225"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1233"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1239"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1245"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1319"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1338"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1342"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1349"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1354"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1359"/>
         <location filename="../src/interface/fetmainform.cpp" line="1402"/>
         <location filename="../src/interface/fetmainform.cpp" line="1411"/>
         <location filename="../src/interface/fetmainform.cpp" line="1420"/>
@@ -31088,6 +30879,13 @@ Import of data will be easier with these settings.</source>
         <location filename="../src/interface/fetmainform.cpp" line="1444"/>
         <location filename="../src/interface/fetmainform.cpp" line="1453"/>
         <location filename="../src/interface/fetmainform.cpp" line="1462"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1539"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1558"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1562"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1569"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1574"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1579"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1708"/>
         <location filename="../src/interface/fetmainform.cpp" line="1783"/>
         <location filename="../src/interface/fetmainform.cpp" line="1796"/>
         <location filename="../src/interface/fetmainform.cpp" line="1809"/>
@@ -31098,6 +30896,8 @@ Import of data will be easier with these settings.</source>
         <location filename="../src/interface/fetmainform.cpp" line="1888"/>
         <location filename="../src/interface/fetmainform.cpp" line="1901"/>
         <location filename="../src/interface/fetmainform.cpp" line="1914"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1980"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2085"/>
         <location filename="../src/interface/fetmainform.cpp" line="2138"/>
         <location filename="../src/interface/fetmainform.cpp" line="2151"/>
         <location filename="../src/interface/fetmainform.cpp" line="2164"/>
@@ -31173,6 +30973,7 @@ Import of data will be easier with these settings.</source>
         <location filename="../src/interface/fetmainform.cpp" line="3086"/>
         <location filename="../src/interface/fetmainform.cpp" line="3099"/>
         <location filename="../src/interface/fetmainform.cpp" line="3112"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3124"/>
         <location filename="../src/interface/fetmainform.cpp" line="3137"/>
         <location filename="../src/interface/fetmainform.cpp" line="3155"/>
         <location filename="../src/interface/fetmainform.cpp" line="3173"/>
@@ -31208,229 +31009,430 @@ Import of data will be easier with these settings.</source>
         <location filename="../src/interface/fetmainform.cpp" line="3574"/>
         <location filename="../src/interface/fetmainform.cpp" line="3588"/>
         <location filename="../src/interface/fetmainform.cpp" line="3689"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3701"/>
         <location filename="../src/interface/fetmainform.cpp" line="3714"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4416"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4459"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4486"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4559"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4570"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3720"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3732"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3745"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3766"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3787"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3812"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3837"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3852"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3873"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3894"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3918"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3929"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3942"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3953"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3966"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3976"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4437"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4480"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4507"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4580"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4591"/>
+        <source>FET information</source>
+        <translation>FET信息</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform.cpp" line="756"/>
+        <source>Constraint is not enabled. To use this type of constraint you must enable it from the Settings-&gt;Advanced menu.</source>
+        <translation>限制條件無法建立。使用該限制條件您必須先至-&gt;設定選項-&gt;高級選項，於此做好設定才能執行。</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform.cpp" line="758"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3120"/>
+        <source>Explanation:</source>
+        <translation>說明:</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform.cpp" line="762"/>
+        <source>For some situations, the generation of the timetable may take too long or be impossible.</source>
+        <translation>由於某些情況下，課程時間表的生成可能需要時間過長或不可能生成。</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform.cpp" line="764"/>
+        <source>Use with caution.</source>
+        <translation>請謹慎使用。</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform.cpp" line="962"/>
+        <source>FET - exiting</source>
+        <translation>FET-已經存在。</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform.cpp" line="4280"/>
+        <source>&amp;Yes</source>
+        <translation>&amp;是</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform.cpp" line="4280"/>
+        <source>&amp;No</source>
+        <translation>&amp;否</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform.cpp" line="4519"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4540"/>
+        <source>&amp;Cancel</source>
+        <translation>&amp;取消</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform.cpp" line="870"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1022"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1083"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1095"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1167"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1403"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1412"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1421"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1430"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1445"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1454"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1463"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1784"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1797"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1810"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1823"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1836"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1856"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1876"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1889"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1902"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1915"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2139"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2152"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2165"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2178"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2191"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2204"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2217"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2230"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2243"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2256"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2269"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2282"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2295"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2308"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2321"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2334"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2347"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2360"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2373"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2386"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2399"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2412"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2425"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2438"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2451"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2464"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2477"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2490"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2503"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2516"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2529"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2543"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2556"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2570"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2583"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2597"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2610"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2623"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2636"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2649"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2662"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2675"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2687"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2700"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2713"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2726"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2739"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2752"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2765"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2778"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2791"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2804"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2817"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2830"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2843"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2856"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2869"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2882"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2895"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2908"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2921"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2934"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2947"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2960"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2973"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2986"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2999"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3012"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3030"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3048"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3061"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3074"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3087"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3100"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3113"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3138"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3156"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3174"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3187"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3200"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3213"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3226"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3239"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3252"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3265"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3278"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3291"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3304"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3317"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3330"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3348"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3366"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3379"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3392"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3405"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3418"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3431"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3444"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3457"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3470"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3483"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3496"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3509"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3522"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3535"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3548"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3561"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3575"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3589"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3690"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3715"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4438"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4481"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4508"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4581"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4592"/>
         <source>Allocation in course.
 Please stop simulation before this.</source>
         <translation>分配過程。
 在此之前，請停止模擬。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="783"/>
+        <location filename="../src/interface/fetmainform.cpp" line="784"/>
         <source>Note: if you disable this option, you will not be able to add/modify constraints for subgroups, and you will not be able to make filters using a particular subgroup, when selecting activities.</source>
         <translation>注意：如果禁用此選項，選擇教學活動時；您將無法添加/修改約束教學分組，你也不能夠使用特定的教學次級分組來過濾條件。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1050"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1051"/>
         <source>%1[*] - FET</source>
         <comment>The title of the main window, %1 is the name of the current file. Please keep the string [*] unmodified (three characters) - it is used to make the difference between modified files and unmodified files.</comment>
         <translation>%1[*] - FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1103"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1175"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1104"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1176"/>
         <source>FET application</source>
         <translation>FET應用程式</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1233"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1234"/>
         <source>Please do not use quotation marks &quot; in filename, the html css code does not work. File was not loaded. Please rename it, removing not allowed characters and open it after that with FET.</source>
         <translation>請不要在文件名引號“的HTML CSS代碼不能正常工作。未加載文件，請重命名，刪除不允許的字符，之後用FET打開。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1239"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1240"/>
         <source>Please do not use semicolon ; in filename, the html css code does not work. File was not loaded. Please rename it, removing not allowed characters and open it after that with FET.</source>
         <translation>請不要用分號;在文件名中，HTML CSS代碼不起作用。文件未加載。請重命名，刪除不允許的字符，之後用FET打開。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1245"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1246"/>
         <source>Please do not use # in filename, the html css code does not work. File was not loaded. Please rename it, removing not allowed characters and open it after that with FET.</source>
         <translation>請不要使用＃在文件名中，HTML CSS代碼不起作用。文件未加載。請重命名，刪除不允許的字符，之後用FET打開。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1256"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1257"/>
         <source>Loading...</source>
         <comment>This is a message in the status bar, that we are loading the file</comment>
         <translation>載入中...請稍候</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1306"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1307"/>
         <source>Choose a filename to save under</source>
         <translation>選擇一個文件名儲存</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1319"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1539"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1320"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1540"/>
         <source>Please do not use a filename starting with white space(s), the html css code does not work.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1338"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1558"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1339"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1559"/>
         <source>Please do not use a filename ending with white space(s) before the &apos;.fet&apos; termination, problems might arise.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1348"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1568"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1349"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1569"/>
         <source>Please do not use quotation marks &quot; in filename, the html css code does not work</source>
         <translation>請不要在文件名使用引號“，在HTML CSS代碼程式無法起作用</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1353"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1573"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1354"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1574"/>
         <source>Please do not use semicolon ; in filename, the html css code does not work</source>
         <translation>請不要用分號;在文件名中，HTML CSS代碼不起作用</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1358"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1578"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1359"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1579"/>
         <source>Please do not use # in filename, the html css code does not work</source>
         <translation>請不要使用＃在文件名中，在HTML CSS程式代碼無法起作用</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1370"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1371"/>
         <source>FET</source>
         <translation>FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1371"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1372"/>
         <source>File %1 exists - are you sure you want to overwrite it?</source>
         <translation>你的資料檔案%1已存在，您確定要覆蓋麼?</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1526"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1527"/>
         <source>Choose a filename for data and timetable</source>
         <translation>給您的數據和時間表，選擇一個文件名稱</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1671"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1696"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1672"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1697"/>
         <source>Added to the saved file:</source>
         <comment>It refers to a constraint</comment>
         <translation>新增到已儲存的檔案中</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1673"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1698"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1674"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1699"/>
         <source>NOT added to the saved file (already existing):</source>
         <comment>It refers to a constraint</comment>
         <translation>無法新增到已儲存的檔案，(檔案已經存在!)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1707"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1708"/>
         <source>Added %1 locking time constraints and %2 locking space constraints to saved file, ignored %3 activities which were already fixed in time and %4 activities which were already fixed in space.</source>
         <translation>已增加%1鎖定時間節次限制和%2鎖定空間限制來儲存文件，忽略%3教學活動，已經及時修改節次%4教學活動，已經固定在教室空間。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1709"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1710"/>
         <source>Detailed information about each locking constraint which was added or not (if already existing) to the saved file:</source>
         <translation>儲存是否已增（如果已經存在）來保存文件中的每個鎖定限制的詳細信息：</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1710"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1711"/>
         <source>Your current data file remained untouched (no locking constraints were added), so you can save it also, or generate different timetables.</source>
         <translation>您當前的資料檔案保持不變（沒有鎖定限制），所以可以將其保存，或產生不同的時間表。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1969"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1970"/>
         <source>Teacher %1 is not qualified to teach subject %2.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1976"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1977"/>
         <source>All the teachers are qualified to teach their activities.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2000"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2001"/>
         <source>Seed of random number generator: please read the help in the dialog of this option</source>
         <translation>亂數產生器的種子：請仔細閱讀此選項對話方塊中的説明</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2003"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2004"/>
         <source>Interface - use colors: the places with colors in FET interface are in:</source>
         <translation>操作介面 - 使用顏色：FET操作介面的顏色的是：</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2010"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2011"/>
         <source>activities and subactivities dialogs, the inactive activities will have a distinctive background color</source>
         <translation>教學活動和子教學活動的對話視窗，不啟用的教學活動將有一個獨特的背景顏色</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2013"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2014"/>
         <source>all time constraints and all space constraints dialogs, the inactive constraints will have a distinctive background color</source>
         <translation>所有的時間節次和空間教室的限制對話框，無效約束將有一個獨特的背景顏色</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2019"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2020"/>
         <source>the three timetable view dialogs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2022"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2023"/>
         <source>Enable activity tag max hours daily:</source>
         <translation>開啟教學活動標籤每天最大上課時間節次</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2024"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2025"/>
         <source>This will enable the menu for 4 constraints: teacher(s) or students (set) activity tag max hours daily. These 4 constraints are good, but not perfect and may bring slow down of generation or impossible timetables if used unproperly. Select only if you know what you&apos;re doing.</source>
         <translation>這個允許4個約束，老師和學生，教學班標籤，每天最大學時，這些約束很好，但是會影響課表的生成性能如果不合適的使用，選擇“只有當你知道你在做什麼”。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2027"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2028"/>
         <source>Enable students max gaps per day:</source>
         <translation>允許學生每天有課間休息時隙間隔</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2029"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2030"/>
         <source>This will enable the menu for 2 constraints: students (set) max gaps per day. These 2 constraints are good, but not perfect and may bring slow down of generation or impossible timetables if used unproperly. Select only if you know what you&apos;re doing.</source>
         <translation>這個允許2個約束，學生每天最大間隙，這些約束很好，但是會影響課表的生成性能如果不合適的使用，選擇“只有當你知道你在做什麼”。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2033"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2034"/>
         <source>Warn if using not perfect constraints:</source>
         <comment>this is a warning if user uses not perfect constraints</comment>
         <translation>警告，如果使用不完美的約束：</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2039"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2040"/>
         <source>Enable students min hours daily with empty days:</source>
         <translation>允許學生班級全部不排課空天合計的最小節次</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2041"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2042"/>
         <source>This will enable you to modify the students min hours daily constraints, to allow empty days. It is IMPERATIVE (for performance reasons) to allow empty days for students min hours daily only if your institution allows empty days for students and if a solution with empty days is possible. Select only if you know what you&apos;re doing.</source>
         <translation>這個允許修改每天最小課時，去允許不上課天，這個是必要的，如果你的機構允許，選擇“只有當你知道你在做什麼”。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2045"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2046"/>
         <source>Warn if using students min hours daily with empty days:</source>
         <comment>this is a warning if user has constraints min hours daily for students with allowed empty days</comment>
         <translation>如果學生的每天最小學時一個空閒天發出警告：</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2047"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2048"/>
         <source>If you use constraints students min hours daily with allowed empty days, you&apos;ll get a warning before generating. Uncheck this option to get rid of that warning (it is recommended to keep the warning).</source>
         <translation>如果您的學生班級使用每天有設定最小節次和允許整天不排課的空天設定，產生排課表之前你會得到一個警告訊息。取消該選取此項，您可擺脫此警告再出現（建議保持警告）。
 </translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2052"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2053"/>
         <source>Confirmations: unselect the corresponding check boxes if you want to skip introduction and confirmation to various advanced dialogs.</source>
         <translation>確認：如果您想跳過介紹，請&apos;取消選擇&apos;相應的複選框。並確認各種進階設定的對話框。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2091"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2092"/>
         <source>You will find in the statistics only active activities count. The inactive ones are not counted.</source>
         <translation>你會發現在只有啟動的教學班總數的統計。不活躍的不計算在內。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2095"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2096"/>
         <source>Statistics for students might be the most difficult to understand. If you are using divisions of years: probably the most relevant statistics are the ones for each subgroup (so you may check only subgroups check box). You may see more hours for the years or groups, but these are not significant, please ignore them, because each year or group will count also activities of all contained subgroups.
 
 Each subgroup should have a number of hours per week close to the average of all subgroups and close to the normal number of working hours of each students set. If a subgroup has a much lower value, maybe you used incorrectly the years/groups/subgroups for activities.
@@ -31444,1327 +31446,1329 @@ Having a subgroup with too little working hours per week means that you inputted
 </translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2124"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2125"/>
         <source>Activities rooms statistics: this menu will show the activities which may be scheduled in an unspecified room, if they are referred to by space constraints with weight under 100.0%, and the activities which will certainly be scheduled in an unspecified room, if they are not referred to by any space constraints. Remember that home rooms constraints are effective only on activities which have only the exact specified teacher or students set (activities with more teachers or students sets are not affected by home rooms constraints, you need to have preferred rooms constraints for such activities to ensure they will not end up in an unspecified room).</source>
         <translation>教學活動教室的統計數據：這個選單會顯示這可能被安排在一個不確定的教室，如果他們空間的限制與權重的教學活動，設成100.0％，這肯定會安排在未指定教室的活動，如果他們不任何空間的限制引用。請記住，主教室的約束是有效的只有上只有確切的指定教師或學生班級設定（教學活動，更多的老師和學生組不受主教室的限制，你需要有最好的教室約束這類活動，以確保他們會活動最終不會在未指定的教室）。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2131"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2132"/>
         <source>FET - information about statistics</source>
         <translation>FET - 有關統計訊息</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3642"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3643"/>
         <source>FET homepage: %1</source>
         <comment>%1 is FET homepage, begins with http://...</comment>
         <translation>FET組織的主網頁:%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3646"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3647"/>
         <source>Forum: %1</source>
         <comment>%1 is web page of FET forum, begins with http://...</comment>
         <translation>FET 論壇:%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3648"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3649"/>
         <source>Additionally, you may find on the FET homepage other contact information.</source>
         <translation>此外，您可在FET主網頁找到其他聯繫信息。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3720"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3721"/>
         <source>Your current data has no name. Please save it as a file with a certain name before proceeding.</source>
         <translation>你當前資料沒有名稱。請保存它為一個有特定名稱的檔在處理它之前。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3969"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3991"/>
         <source>OK</source>
         <translation>確定</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="737"/>
+        <location filename="../src/interface/fetmainform.cpp" line="738"/>
         <source>Danish</source>
         <translation>丹麥</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="738"/>
+        <location filename="../src/interface/fetmainform.cpp" line="739"/>
         <source>Sinhala</source>
         <translation>僧伽羅語</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="739"/>
+        <location filename="../src/interface/fetmainform.cpp" line="740"/>
         <source>Slovak</source>
         <translation>斯洛伐克</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="740"/>
+        <location filename="../src/interface/fetmainform.cpp" line="741"/>
         <source>Hebrew</source>
         <translation>希伯來語</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="741"/>
+        <location filename="../src/interface/fetmainform.cpp" line="742"/>
         <source>Serbian</source>
         <translation>塞爾維亞</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="742"/>
+        <location filename="../src/interface/fetmainform.cpp" line="743"/>
         <source>Galician</source>
         <translation>加利西亞</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="743"/>
+        <location filename="../src/interface/fetmainform.cpp" line="744"/>
         <source>Vietnamese</source>
         <translation>越南的</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="744"/>
+        <location filename="../src/interface/fetmainform.cpp" line="745"/>
         <source>Uzbek</source>
         <translation>烏茲別克</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1212"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1213"/>
         <source>Please do not use a filename starting with white space(s), the html css code does not work. File was not loaded. Please rename it, removing the white space(s) from the beginning and open it after that with FET.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1225"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1226"/>
         <source>Please do not use a filename ending with white space(s) before the &apos;.fet&apos; termination or at the end of the filename, problems might arise. File was not loaded. Please rename it, removing the white space(s) at the end and open it after that with FET.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4084"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4106"/>
         <source>The geometry and any other saved settings of all the windows and dialogs will be reset to default</source>
         <translation>幾何形狀和任何其他的所有視窗和對話方塊，保存的設置將被重置為預設值</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4126"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4148"/>
         <source>The list of recently used files will be cleared</source>
         <translation>最近使用的檔列表將被清除</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4171"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4193"/>
         <source>Warn if using constraints students min hours daily with empty days will be %1</source>
         <comment>%1 is true or false. This is a warning if user uses a nonstandard constraint students min hours daily with allowed empty days</comment>
         <translation>如果學生的每天最小學時是一個空閒天發出警告將是 %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4176"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4198"/>
         <source>Confirm activity planning will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>確認教學活動計畫將是:%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4178"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4200"/>
         <source>Confirm spread activities over the week will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>確認教學活動分開超過一週將是:%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4180"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4202"/>
         <source>Confirm remove redundant constraints will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>確認，刪除的多餘條件將會是:%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4239"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4261"/>
         <source>44</source>
         <translation>44</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4242"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4264"/>
         <source>45</source>
         <translation>45</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4243"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4265"/>
         <source>activity tags</source>
         <translation type="unfinished">教學班&apos;標籤</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4248"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4270"/>
         <source>Show tool tips for constraints with tables will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>顯示提示與課表約束條件工具:%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4245"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4267"/>
         <source>46</source>
         <translation>46</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4250"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4272"/>
         <source>Show warning for subgroups with the same activities will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>顯示警告; 相同的次級教學活動:%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4248"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4270"/>
         <source>47</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4250"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4272"/>
         <source>48</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4252"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4274"/>
         <source>Print detailed timetables will be %1</source>
         <comment>%1 is true or false</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4252"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4274"/>
         <source>49</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4254"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4276"/>
         <source>Print detailed teachers&apos; free periods timetables will be %1</source>
         <comment>%1 is true or false</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4754"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4776"/>
         <source>This kind of constraint is good, but only in the right case. Adding such constraints in the wrong circumstance may make your timetable solve too slow or even impossible.</source>
         <translation>這種約束是好的，但只有在正確的情況下。添加這樣的限制在錯誤的情況下，可以讓你的時間表解決過於緩慢，甚至是不可能的。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4757"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4779"/>
         <source>Please use such constraints only if you are sure that there exists a timetable with empty days for students. If your instution requires each day for the students to be not empty, or if there does not exist a solution with empty days for students, it is IMPERATIVE (for performance reasons) that you use the standard constraint which does not allow empty days. Otherwise, the timetable may be impossible to find.</source>
         <translation>只有當你確信存在與學生班級整天不排課空天排課時間表時，再使用這樣的約束限制。如果您instution需要每天為學生們是不是空的，或者如果不存在與學生空天解決，當務之急是（出於性能原因），您使用標準的約束不允許空天。否則，該時間表可以是不可能找到。
 </translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="884"/>
+        <location filename="../src/interface/fetmainform.cpp" line="885"/>
         <source>Searching for file %1.</source>
         <translation>搜索文件%1。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="899"/>
+        <location filename="../src/interface/fetmainform.cpp" line="900"/>
         <source>The file %1 from the FET homepage, indicating the current FET version, is incorrect.</source>
         <translation>從的FET網頁得知%1的檔，目前的FET版本，是不正確的.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="924"/>
+        <location filename="../src/interface/fetmainform.cpp" line="925"/>
         <source>Additional comments: %1</source>
         <translation>補充意見：%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3744"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3765"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3786"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3811"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3836"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3851"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3872"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3896"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3920"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3944"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3954"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3745"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3766"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3787"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3812"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3837"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3852"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3873"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3894"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3918"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3942"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3966"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3976"/>
         <source>Please generate, firstly</source>
         <translation>請先產製生成排課表</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3749"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3770"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3791"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3816"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3856"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3877"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3750"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3771"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3792"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3817"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3857"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3878"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3899"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
         <translation>無法顯示的排課時間表，因為您已增加或刪除一些教室。請重新生成排課時間表，然後查看。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3795"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3820"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3881"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3796"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3821"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3903"/>
         <source>Cannot display the timetable, because you added or removed some teachers. Please regenerate the timetable and then view it</source>
         <translation>無法顯示的排課時間表，因為您添加或刪除一些老師。請重新生成時間表，然後再查看。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="720"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4101"/>
+        <location filename="../src/interface/fetmainform.cpp" line="721"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4123"/>
         <source>US English</source>
         <translation>美國英語</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4001"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4023"/>
         <source>Invalid current language - making it en_US (US English)</source>
         <translation>當前的語言無效 - 請使EN_US（美國英語）</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4058"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4080"/>
         <source>Invalid language selected - making it en_US (US English)</source>
         <translation>所選的語系無效 - 請使EN_US（美國英語）</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4081"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4103"/>
         <source>That means:</source>
         <translation>這意味著：</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4087"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4141"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4144"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4156"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4165"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4172"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4176"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4109"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4163"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4166"/>
         <location filename="../src/interface/fetmainform.cpp" line="4178"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4180"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4182"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4188"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4192"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4187"/>
         <location filename="../src/interface/fetmainform.cpp" line="4194"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4199"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4203"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4206"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4209"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4212"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4215"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4218"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4222"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4198"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4200"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4202"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4204"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4210"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4214"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4216"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4221"/>
         <location filename="../src/interface/fetmainform.cpp" line="4225"/>
         <location filename="../src/interface/fetmainform.cpp" line="4228"/>
         <location filename="../src/interface/fetmainform.cpp" line="4231"/>
         <location filename="../src/interface/fetmainform.cpp" line="4234"/>
         <location filename="../src/interface/fetmainform.cpp" line="4237"/>
         <location filename="../src/interface/fetmainform.cpp" line="4240"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4243"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4246"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4244"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4247"/>
         <location filename="../src/interface/fetmainform.cpp" line="4250"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4252"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4254"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4253"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4256"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4259"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4262"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4265"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4268"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4272"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4274"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4276"/>
         <source>true</source>
         <translation>確定為真</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4097"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4119"/>
         <source>Use colors in FET graphical user interface will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>使用在FET的圖形化使用者介面的顏色將是%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4165"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4187"/>
         <source>Warn if using not perfect constraints will be %1</source>
         <comment>%1 is true or false. This is a warning if user uses not perfect constraints</comment>
         <translation>警告，如果使用不完美的約束將是%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4182"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4204"/>
         <source>Confirm save data and timetable as will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>所確認要保存的資料和排課表為:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4254"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4276"/>
         <source>50</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4651"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4681"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4673"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4703"/>
         <source>These kinds of constraints are good, but not perfectly optimized. Adding such constraints may make your timetable solve too slow or even impossible.</source>
         <translation>這些類型的約束是好的，但不完全優化。這樣的限制可能使你的時間表解決速度太慢，甚至是不可能的。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4654"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4684"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4676"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4706"/>
         <source>It is recommended to use such constraints only at the end, after you generated successfully with all the other constraints.</source>
         <translation>建議只在您與所有其他約束成功生成排課表後，最後才用這樣的限制條件。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4656"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4686"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4678"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4708"/>
         <source>If your timetable is too difficult, it may be from these kinds of constraints, so you may need to remove them and retry.</source>
         <translation>如果您的排課時間表太難排了，也可能是從這些種類的限制限制造成，所以您可能需要將其刪除，然後重試。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4658"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4688"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4762"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4805"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4680"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4710"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4784"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4827"/>
         <source>Continue only if you know what you are doing.</source>
         <translation>建議您只有在確認知道您目前正在做的是什麼時，再選擇繼續執行。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4709"/>
         <location filename="../src/interface/fetmainform.cpp" line="4731"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4780"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4825"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4753"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4802"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4847"/>
         <source>It is recommended to keep this warning active, but if you really want, you can disable it.</source>
         <translation>建議保持此警告顯示，但如果你真的想要取消警示，您可以設其停止出現。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4711"/>
         <location filename="../src/interface/fetmainform.cpp" line="4733"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4782"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4827"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4755"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4804"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4849"/>
         <source>Disable it only if you know what you are doing.</source>
         <translation>禁用它只有當您知道你在做什麼時。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4713"/>
         <location filename="../src/interface/fetmainform.cpp" line="4735"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4784"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4829"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4757"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4806"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4851"/>
         <source>Are you sure you want to disable it?</source>
         <translation>您確定要禁用它？</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3700"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3701"/>
         <source>Please input at least one active activity before generating</source>
         <translation>課表產製前，請至少輸入啟用一種的教學活動</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3731"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3732"/>
         <source>Please input at least one active activity before generating multiple</source>
         <translation>產生多重的排課表前，請至少輸入啟用一個教學活動</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1472"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1482"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1490"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1473"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1483"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1491"/>
         <source>FET - Warning</source>
         <translation>FET 警告</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1472"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1473"/>
         <source>You have not yet generated a timetable - please generate firstly</source>
         <translation>您還沒有產生一個時間表 - 請首先產生</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1482"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1490"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1483"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1491"/>
         <source>It seems that you have an incomplete timetable. Saving of timetable does not work for incomplete timetables. Please generate a complete timetable</source>
         <translation>看來你有一個尚不完整的排課時間表。所儲存的排時間表不不完整無法使用。請生成一個完整的時間表
 </translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1590"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1591"/>
         <source>File exists</source>
         <translation>FET-已經存在。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1592"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1593"/>
         <source>For safety (so you don&apos;t lose work), it is not allowed to overwrite an existing file with locking and saving a current data+timetable</source>
         <translation>為了安全（這樣你就不會失去先前的作業），這鎖定功能是不允許覆蓋現有文件檔案，並保存當前資料+時間表</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1595"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1596"/>
         <source>Please choose a non-existing name</source>
         <translation>請另選一個沒有被使用的名稱。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4078"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4100"/>
         <source>Are you sure you want to reset all settings to defaults?</source>
         <translation>你確定你想要將所有設定恢復到預設值？</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1146"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1147"/>
         <source>New file generated</source>
         <translation>新課表檔案已生成</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="719"/>
+        <location filename="../src/interface/fetmainform.cpp" line="720"/>
         <source>British English</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="745"/>
+        <location filename="../src/interface/fetmainform.cpp" line="746"/>
         <source>Albanian</source>
         <translation>阿爾巴尼亞人</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="746"/>
+        <location filename="../src/interface/fetmainform.cpp" line="747"/>
         <source>Chinese Simplified</source>
         <translation>簡體字型</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="747"/>
+        <location filename="../src/interface/fetmainform.cpp" line="748"/>
         <source>Chinese Traditional</source>
         <translation>正體字型</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="748"/>
+        <location filename="../src/interface/fetmainform.cpp" line="749"/>
         <source>Basque</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="749"/>
+        <location filename="../src/interface/fetmainform.cpp" line="750"/>
         <source>Czech</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="804"/>
+        <location filename="../src/interface/fetmainform.cpp" line="805"/>
         <source>Note: if you disable this option, you will not be able to view activities for subgroups in the activity planning dialog.</source>
         <translation>注意：如果停用此選項，您將無法查看次級教學活動分組活動的教學計劃的對話框。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="882"/>
+        <location filename="../src/interface/fetmainform.cpp" line="883"/>
         <source>Could not search for possible updates on the internet - error message is: %1.</source>
         <translation>無法搜詢網路上的更新 - 錯誤信息：%1。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="886"/>
+        <location filename="../src/interface/fetmainform.cpp" line="887"/>
         <source>Possible actions: check your network connection, try again later, try to visit FET homepage: %1, or try to search for the new FET page on the internet (maybe it has changed).</source>
         <translation>操作建議：請檢查您的網絡連接，稍後再試，嘗試拜訪FET官網頁：%1，或嘗試搜索網路上的FET的新首頁頁面（也許它已經改變）。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="901"/>
+        <location filename="../src/interface/fetmainform.cpp" line="902"/>
         <source>Maybe the FET homepage has some temporary problems, so try again later. Or maybe the current structure on FET homepage was changed. You may visit FET homepage: %1, and get latest version or, if it does not work, try to search for the new FET page on the internet (maybe it has changed).</source>
         <translation>目前FET官網頁暫時有一些問題，所以請稍後再試。或者，也許在FET主頁上的現有結構發生了變化。您可以訪問FET網頁：1％，並獲得最新的版本，或者，如果它不能正常工作，嘗試搜索網上的新的FET頁面網址（也許它已經改變）。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="921"/>
+        <location filename="../src/interface/fetmainform.cpp" line="922"/>
         <source>You have to manually download and install.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="932"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3612"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3622"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3632"/>
+        <location filename="../src/interface/fetmainform.cpp" line="933"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3613"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3623"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3633"/>
         <source>Could not start the default internet browser (trying to open the link %1). Maybe you can try to manually start your browser and open this link.</source>
         <translation>無法啟動預設的Internet瀏覽器（試圖打開網址鏈結: %1）。也許你可以嘗試手動啟動瀏覽器並打開這個鏈結。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1272"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1273"/>
         <source>File opened</source>
         <translation>檔案已打開</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1320"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1339"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1343"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1349"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1354"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1359"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1540"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1559"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1563"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1569"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1574"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1579"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1321"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1340"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1344"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1350"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1355"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1360"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1541"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1560"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1564"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1570"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1575"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1580"/>
         <source>File was not saved.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1342"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1562"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1343"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1563"/>
         <source>Please do not use a filename ending with white space(s), problems might arise.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1384"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1765"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1385"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1766"/>
         <source>File saved</source>
         <translation>檔案已儲存</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1946"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1947"/>
         <source>The teachers who are not qualified to teach a certain activity (in activities order):</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1964"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1965"/>
         <source>For activity: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2006"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2007"/>
         <source>add/modify constraints break, not available, preferred starting times or time slots, occupy max time slots from selection or max simultaneous in selected time slots (the table cells will have green or red colors).</source>
         <translation>增加/修改限制條件已中斷無法使用，偏好的上課起始時間或時間排課插槽，佔據從選擇或最大同時在已選定時段最大排課時隙（表格單元格將有綠色或紅色）。
 </translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2016"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2017"/>
         <source>group activities in initial order items, the inactive items will have a distinctive background color</source>
         <translation>啟用最初教學群體活動，設定為&apos;不啟動&apos;的項目將有一個特別的背景顏色</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2035"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2036"/>
         <source>If you use a not perfect constraint (activity tag max hours daily or students max gaps per day), you&apos;ll get a warning before generating. Uncheck this option to get rid of that warning (it is recommended to keep the warning).</source>
         <translation>如果您使用了不完美的約束條件（每天教學活動最大的教學標籤數或學生班級每天最大的的課間休息時隙差距），你會在產生排課表之前，得到一個警告。取消選中此選項可擺脫警告訊息（建議保持警告）。
 </translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2056"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2057"/>
         <source>Duplicate vertical headers to the right (in timetable settings) - select this if you want the timetables to duplicate the table left vertical headers to the right part of the tables</source>
         <translation>複製垂直標題欄位放在右側（在時間表設置） - 如果你想時間表複製左縱標頭表的右側部分表中選擇此</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2061"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2062"/>
         <source>If you have many subgroups and you don&apos;t explicitly use them, it is recommended to use the three global settings: hide subgroups in combo boxes, hide subgroups in activity planning, and do not write subgroups timetables on hard disk.</source>
         <translation>如果你有很多次級教學子群，你使用它們的方式不明確，建議您使用三個global settings：隱藏組合框分組，隱藏在教學活動計畫，並且次級教學群組計畫排課時間表不寫入硬碟。
 </translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2064"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2065"/>
         <source>Note that using the global menu setting to hide subgroups in activity planning is a different thing from the check box in the activity planning dialog, and the global setting works better and faster.</source>
         <translation>注意，使用global選單的設置隱藏教學活動計畫的次級亞組是從教學活動計畫對話框中的複選框不同的東西，以及global選單的設置工作得更好，更快。
 </translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2067"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2068"/>
         <source>If you hide subgroups in combo boxes, the affected dialogs (like the activities dialog or the add constraint students set not available times dialog) will load much faster if you have many subgroups.</source>
         <translation>如果隱藏在組合框分組，受影響的對話框（如活動對話框或添加約束學生班級設置不適對話）加載會快很多，如果你有很多次級教學群組。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2072"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2073"/>
         <source>If you are only working on a timetable, and you do not need to publish it, you may want to disable writing some categories of timetables on the hard disk, for operativity (the generation speed is not affected, only the overhead to write the partial/complete timetables when stopping/finishing the simulation). The timetables taking the longest time are the subgroups, groups AND years ones.</source>
         <translation>如果你只是試排排課時間表，你不需要發布它，你可能要禁用寫一些類別的時間表在硬蝶上，對於操作性（產生速度不受影響，只有開銷寫的部分/停止時/完成模擬完整的時間表）。佔用排課時間最長的是:次級教學分組，教學分組和年級。
 </translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2076"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2077"/>
         <source>(Also the conflicts timetable might take long to write, if the file is large.)</source>
         <translation>（也許衝突的時間表可能要很長時間來寫入，如果文件很大。）</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2078"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2079"/>
         <source>After that, you can re-enable writing of the timetables and re-generate.</source>
         <translation>在此之後，你可以重新啟用寫入排課時間表並且重新生成。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2081"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2082"/>
         <source>Show tool tips for constraints with tables: in the add/modify constraint dialogs which use tables, like the &apos;not available times&apos; ones, each table cell will have a tool tip to show the current day/hour (column/row name).</source>
         <translation>顯示工具提示使用表約束：在增加/修改排課使用表，如“不可用時間”那些約束的對話框中，每個單元格將有一個工具提示，顯示當前的日期/小時（列/行名稱）。
 </translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3117"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3118"/>
         <source>Feature is not enabled. To use this type of feature you must enable it from the Settings-&gt;Advanced menu.</source>
         <translation>功能未啟用。欲使用這種類型的功能，你必須從設置 - &gt;進階選單啟用它。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3121"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3122"/>
         <source>The feature must be used with caution, by experienced users.</source>
         <translation>該功能必須謹慎使用，由有經驗的用戶。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3640"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3641"/>
         <source>In case the Help/Online menus do not function, please write down these addresses and open them in an internet browser:</source>
         <translation>如果幫助/在線選單沒有的功能，請記下這些地址，並在網頁瀏覽器中打開它們：</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3650"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3651"/>
         <source>In case these addresses do not function, maybe the FET webpage has temporary problems, so try again later. Or maybe the FET webpage has changed, so search for the new page on the internet.</source>
         <translation>如果這些網址連不到，也許FET官網頁有暫時的問題，所以請稍後再試。或者，也許FET的官網頁發生了變化，可以到網上搜尋新網址。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3907"/>
-        <location filename="../src/interface/fetmainform.cpp" line="3931"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3929"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3953"/>
         <source>The timetable is not generated, but anyway FET will proceed now</source>
         <translation>排課時間表還沒有產製，但無論如何FET現在將開始進行處理</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4084"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4106"/>
         <source>1</source>
         <translation>1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4087"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4109"/>
         <source>Show shortcut buttons in main window will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>顯示主視窗快捷按鈕:%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4087"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4109"/>
         <source>2</source>
         <translation>2</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4090"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4112"/>
         <source>In the shortcuts tab from the main window, the first section will be selected/shown</source>
         <comment>Option refers to the main window tab widget for shortcuts, which currently contains 5 tabs: File, Data, Time, Space, Timetable (so it will select/show File tab).</comment>
         <translation>從主視窗的快捷方式選項中，第一節將被選中/顯示</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4090"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4112"/>
         <source>3</source>
         <translation>3</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4094"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4116"/>
         <source>Check for updates at startup will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>在啟動時檢查更新:%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4094"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4116"/>
         <source>4</source>
         <translation>4</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4097"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4119"/>
         <source>5</source>
         <translation>5</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4101"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4122"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4123"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4144"/>
         <source>Language will be %1</source>
         <comment>%1 is the default language</comment>
         <translation>語系是:%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4101"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4122"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4123"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4144"/>
         <source>6</source>
         <translation>6</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4126"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4148"/>
         <source>7</source>
         <translation>7</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4129"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4151"/>
         <source>Working directory will be %1</source>
         <comment>%1 is the directory</comment>
         <translation>工作目錄將是%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4129"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4151"/>
         <source>8</source>
         <translation>8</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4132"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4154"/>
         <source>Output directory will be %1</source>
         <comment>%1 is the directory</comment>
         <translation>輸出的目錄將是%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4132"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4154"/>
         <source>9</source>
         <translation>9</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4135"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4157"/>
         <source>Import directory will be %1</source>
         <comment>%1 is the directory</comment>
         <translation>匯入的目錄將是%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4135"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4157"/>
         <source>10</source>
         <translation>10</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4138"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4160"/>
         <source>Html level of the timetables will be %1</source>
         <comment>%1 is default html level</comment>
         <translation>Html檔level的排課表是:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4138"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4160"/>
         <source>11</source>
         <translation>11</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4141"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4163"/>
         <source>Mark not available slots with -x- in timetables will be %1</source>
         <comment>%1 is true or false. Lowercase -x-</comment>
         <translation>-X-軸中的時間表中所圈選到的排課插槽無效:%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4141"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4163"/>
         <source>12</source>
         <translation>12</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4144"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4166"/>
         <source>Mark break slots with -X- in timetables will be %1</source>
         <comment>%1 is true or false. Uppercase -X-</comment>
         <translation>-X-軸所圈選的無效排課時間插槽是%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4144"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4166"/>
         <source>13</source>
         <translation>13</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4147"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4169"/>
         <source>Divide html timetables with time-axis by days will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>輸出HTML排課時間表與排課天的時間軸將是:%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4147"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4169"/>
         <source>14</source>
         <translation>14</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4150"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4172"/>
         <source>Duplicate vertical headers to the right will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>重複垂直表頭欄到右邊:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4150"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4172"/>
         <source>15</source>
         <translation>15</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4153"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4175"/>
         <source>Print activities with same starting time will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>列印活動具有相同的開始時間為%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4153"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4175"/>
         <source>16</source>
         <translation>16</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4156"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4178"/>
         <source>Print activities tags will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>列印教學活動標籤:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4156"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4178"/>
         <source>17</source>
         <translation>17</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4159"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4181"/>
         <source>Enable activity tag max hours daily will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>啟用限制每天教學活動標籤的最大節次%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4159"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4181"/>
         <source>18</source>
         <translation>18</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4162"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4184"/>
         <source>Enable students max gaps per day will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>學生班級每天最大的課間休息時隙將是%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4162"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4184"/>
         <source>19</source>
         <translation>19</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4165"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4187"/>
         <source>20</source>
         <translation>20</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4168"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4190"/>
         <source>Enable constraints students min hours daily with empty days will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>啟用約束學生班級每天最小節次與不排課空天%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4168"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4190"/>
         <source>21</source>
         <translation>21</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4171"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4193"/>
         <source>22</source>
         <translation>22</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4176"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4198"/>
         <source>23</source>
         <translation>23</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4178"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4200"/>
         <source>24</source>
         <translation>24</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4180"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4202"/>
         <source>25</source>
         <translation>25</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4182"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4204"/>
         <source>26</source>
         <translation>226</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4186"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4208"/>
         <source>Enable group activities in the initial order of generation will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>啟用在產製初始的系所群組教學活動是:%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4186"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4208"/>
         <source>27</source>
         <translation>27</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4188"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4210"/>
         <source>Warn if using group activities in the initial order of generation will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>警告:如果生成產製初始教學活動群組將是%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4188"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4210"/>
         <source>28</source>
         <translation>28</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4192"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4214"/>
         <source>29</source>
         <translation>29</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4192"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4214"/>
         <source>Show subgroups in combo boxes will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>顯示次級教學系所組別群組組合框將是%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4194"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4216"/>
         <source>30</source>
         <translation>30</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4194"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4216"/>
         <source>Show subgroups in activity planning will be %1</source>
         <comment>%1 is true or false</comment>
         <translation>顯示次級教學系所組別中的教學計劃將是%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4198"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4220"/>
         <source>31</source>
         <translation>31</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4198"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4220"/>
         <source>Write on disk the %1 timetable will be %2</source>
         <comment>%1 is a category of timetables, like conflicts, %2 is true or false</comment>
         <translation>寫在硬碟上的%1的課表將是%2</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4199"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4221"/>
         <source>conflicts</source>
         <translation>衝突</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4202"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4205"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4208"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4211"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4214"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4217"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4221"/>
         <location filename="../src/interface/fetmainform.cpp" line="4224"/>
         <location filename="../src/interface/fetmainform.cpp" line="4227"/>
         <location filename="../src/interface/fetmainform.cpp" line="4230"/>
         <location filename="../src/interface/fetmainform.cpp" line="4233"/>
         <location filename="../src/interface/fetmainform.cpp" line="4236"/>
         <location filename="../src/interface/fetmainform.cpp" line="4239"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4242"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4245"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4243"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4246"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4249"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4252"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4255"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4258"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4261"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4264"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4267"/>
         <source>Write on disk the %1 timetables will be %2</source>
         <comment>%1 is a category of timetables, like XML or subgroups timetables, %2 is true or false</comment>
         <translation>寫在硬碟上的%1的課表將是%2</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4203"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4225"/>
         <source>statistics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4206"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4228"/>
         <source>XML</source>
         <translation>XML格式</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4202"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4224"/>
         <source>32</source>
         <translation>32</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4209"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4231"/>
         <source>days horizontal</source>
         <translation>水平軸以星期顯示</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4205"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4227"/>
         <source>33</source>
         <translation>33</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4212"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4234"/>
         <source>days vertical</source>
         <translation>垂直軸以星期顯示</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4208"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4230"/>
         <source>34</source>
         <translation>34</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4215"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4237"/>
         <source>time horizontal</source>
         <translation>時間節次以水平軸顯示</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4211"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4233"/>
         <source>35</source>
         <translation>35</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4218"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4240"/>
         <source>time vertical</source>
         <translation>時間節次以垂直軸顯示</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4214"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4236"/>
         <source>36</source>
         <translation>36</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4222"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4244"/>
         <source>subgroups</source>
         <translation>子組</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4217"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4239"/>
         <source>37</source>
         <translation>37</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4225"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4247"/>
         <source>groups</source>
         <translation>組</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4221"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4243"/>
         <source>38</source>
         <translation>38</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4228"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4250"/>
         <source>years</source>
         <translation>年級</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4224"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4246"/>
         <source>39</source>
         <translation>39</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4231"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4253"/>
         <source>teachers</source>
         <translation>老師</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4227"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4249"/>
         <source>40</source>
         <translation>40</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4234"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4256"/>
         <source>teachers free periods</source>
         <translation>教師方便時段</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4230"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4252"/>
         <source>41</source>
         <translation>41</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4237"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4259"/>
         <source>rooms</source>
         <translation>教室</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4233"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4255"/>
         <source>42</source>
         <translation>42</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4240"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4262"/>
         <source>subjects</source>
         <translation>學科</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4236"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4258"/>
         <source>43</source>
         <translation>43</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4246"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4268"/>
         <source>activities</source>
         <translation>教學活動</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4492"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4514"/>
         <source>You have more than 6 days per week, so probably you won&apos;t need this feature. Do you still want to continue?</source>
         <translation>你必須每週工作6天以上，所以可能你會需要這個功能。你仍然要繼續嗎？</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4495"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4516"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4517"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4538"/>
         <source>FET question</source>
         <translation>FET 問題</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4497"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4518"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4519"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4540"/>
         <source>&amp;Continue</source>
         <translation>&amp;繼續</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4513"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4535"/>
         <source>You have less than 5 days per week, so probably you won&apos;t need this feature. Do you still want to continue?</source>
         <translation>你必須每週不少於5天，所以也許你會需要這個功能。你仍然要繼續嗎？</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4802"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4824"/>
         <source>This kind of option is good, but only in the right case. Adding such an option in the wrong circumstance may make your timetable solve too slow or even impossible.</source>
         <translation>這種選擇是好的，但只有在正確的情況下去增加，若在錯誤的情況下增加這樣的選擇，會讓您的排課時間表，產製時過於緩慢，甚至是不可能產產製成功。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1200"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1308"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1528"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1201"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1309"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1529"/>
         <source>All files</source>
         <translation>全部的檔案</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="759"/>
+        <location filename="../src/interface/fetmainform.cpp" line="760"/>
         <source>Constraints of this type are good, working, but they are not perfectly optimized.</source>
         <translation>這種類型的約束是好的，工作，但它們並不是最佳化。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="919"/>
+        <location filename="../src/interface/fetmainform.cpp" line="920"/>
         <source>Another version: %1, is available on the FET homepage: %2</source>
         <comment>%1 is new version, %2 is FET homepage</comment>
         <translation>下載另一個新版本：%1，可在FET官網：%2</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="921"/>
+        <location filename="../src/interface/fetmainform.cpp" line="922"/>
         <source>You may need to hit Refresh in your web browser.</source>
         <translation>您可能需要在你的網頁流覽器，點擊刷新。</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="921"/>
+        <location filename="../src/interface/fetmainform.cpp" line="922"/>
         <source>Would you like to open the FET homepage now?</source>
         <translation>你想現在打開FET網頁？</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="962"/>
+        <location filename="../src/interface/fetmainform.cpp" line="963"/>
         <source>Your data file has been modified - do you want to save it?</source>
         <translation>你的資料檔案已經修改了，保存麼?</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1104"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1105"/>
         <source>Your current data file has been modified. Are you sure you want to reset to new empty data?</source>
         <translation>您當前的資料檔案已經被修改。你確定要重置為新的空資料?</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1176"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1177"/>
         <source>Your current data file has been modified. Are you sure you want to open another data file?</source>
         <translation>您當前的資料檔案已經被修改。你確定你要打開另一個資料檔案嗎?</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1197"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1198"/>
         <source>Choose a file to open</source>
         <translation>選擇一個檔案文件開啟</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1199"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1307"/>
-        <location filename="../src/interface/fetmainform.cpp" line="1527"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1200"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1308"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1528"/>
         <source>FET XML files</source>
         <comment>Instructions for translators: FET XML is a type of file format (using text mode). So this field means files in the FET XML format</comment>
         <translation>FET的XML檔案格式</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3644"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3645"/>
         <source>Documentation (online help contents): %1</source>
         <comment>%1 is web page of FET Doc(umentation), which is the contents of the online help, it begins with http://...</comment>
         <translation>文件檔（Online幫助的內容）：%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3652"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3653"/>
         <source>FET web addresses</source>
         <translation>FET官網網址</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3964"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4007"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3986"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4029"/>
         <source>Please select FET language</source>
         <translation>請為FET介面，選擇一個語系</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3968"/>
+        <location filename="../src/interface/fetmainform.cpp" line="3990"/>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="715"/>
+        <location filename="../src/interface/fetmainform.cpp" line="716"/>
         <source>Arabic</source>
         <translation>阿拉伯語</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="716"/>
+        <location filename="../src/interface/fetmainform.cpp" line="717"/>
         <source>Catalan</source>
         <translation>加泰羅尼亞</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="717"/>
+        <location filename="../src/interface/fetmainform.cpp" line="718"/>
         <source>German</source>
         <translation>德國</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="718"/>
+        <location filename="../src/interface/fetmainform.cpp" line="719"/>
         <source>Greek</source>
         <translation>希臘</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="721"/>
+        <location filename="../src/interface/fetmainform.cpp" line="722"/>
         <source>Spanish</source>
         <translation>西班牙</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="722"/>
+        <location filename="../src/interface/fetmainform.cpp" line="723"/>
         <source>French</source>
         <translation>法國</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="723"/>
+        <location filename="../src/interface/fetmainform.cpp" line="724"/>
         <source>Hungarian</source>
         <translation>匈牙利</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="724"/>
+        <location filename="../src/interface/fetmainform.cpp" line="725"/>
         <source>Indonesian</source>
         <translation>印度尼西亞</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="725"/>
+        <location filename="../src/interface/fetmainform.cpp" line="726"/>
         <source>Italian</source>
         <translation>意大利</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="726"/>
+        <location filename="../src/interface/fetmainform.cpp" line="727"/>
         <source>Lithuanian</source>
         <translation>立陶宛</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="727"/>
+        <location filename="../src/interface/fetmainform.cpp" line="728"/>
         <source>Macedonian</source>
         <translation>馬其頓</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="728"/>
+        <location filename="../src/interface/fetmainform.cpp" line="729"/>
         <source>Malay</source>
         <translation>馬來</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="729"/>
+        <location filename="../src/interface/fetmainform.cpp" line="730"/>
         <source>Dutch</source>
         <translation>荷蘭</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="730"/>
+        <location filename="../src/interface/fetmainform.cpp" line="731"/>
         <source>Polish</source>
         <translation>波蘭</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="731"/>
+        <location filename="../src/interface/fetmainform.cpp" line="732"/>
         <source>Romanian</source>
         <translation>羅馬尼亞</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="732"/>
+        <location filename="../src/interface/fetmainform.cpp" line="733"/>
         <source>Turkish</source>
         <translation>土耳其</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="735"/>
+        <location filename="../src/interface/fetmainform.cpp" line="736"/>
         <source>Ukrainian</source>
         <translation>烏克蘭</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="736"/>
+        <location filename="../src/interface/fetmainform.cpp" line="737"/>
         <source>Brazilian Portuguese</source>
         <translation>巴西葡萄牙語</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="733"/>
+        <location filename="../src/interface/fetmainform.cpp" line="734"/>
         <source>Russian</source>
         <translation>俄國</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="734"/>
+        <location filename="../src/interface/fetmainform.cpp" line="735"/>
         <source>Persian</source>
         <translation>波斯語</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4601"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4623"/>
         <source>Choose results (output) directory</source>
         <translation>選擇的結果（產出）目錄</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4610"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4632"/>
         <source>You don&apos;t have write permissions in this directory</source>
         <translation>您沒有在此目錄的寫許可權，</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2117"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2118"/>
         <source>Students&apos; statistics form contains a check box named &apos;%1&apos;. This has effect only if you have overlapping groups/years, and means that FET will show the complete tree structure, even if that means that some subgroups/groups will appear twice or more in the table, with the same information. For instance, if you have year Y1, groups G1 and G2, subgroups S1, S2, S3, with structure: Y1 (G1 (S1, S2), G2 (S1, S3)), S1 will appear twice in the table</source>
         <translation>學生的統計表格包含一個核取方塊，命名為“%1”。這有效果，如果你有重疊的組/年，意味著FET將顯示完整的樹狀結構，即使這意味著，一些分組/小組將在表中出現兩次或兩次以上，具有相同的資訊。比如，如果你有年Y1，組G1和G2，子組S1，S2，S3中，與結構：Y1（G1（S1，S2），G2（S1，S3）），S1將出現兩次在表中</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="2121"/>
+        <location filename="../src/interface/fetmainform.cpp" line="2122"/>
         <source>Show duplicates</source>
         <translation>顯示重複</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4094"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4097"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4147"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4150"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4153"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4159"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4162"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4168"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4186"/>
-        <location filename="../src/interface/fetmainform.cpp" line="4248"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4116"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4119"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4169"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4172"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4175"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4181"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4184"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4190"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4208"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4270"/>
         <source>false</source>
         <translation>錯誤的</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="4257"/>
+        <location filename="../src/interface/fetmainform.cpp" line="4279"/>
         <source>FET confirmation</source>
         <translation>FET 確認</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1995"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1996"/>
         <source>Option &apos;Print activities with same starting time in timetables&apos;: selecting it means that the html timetables will contain for each slot all the activities which have the same starting time (fact specified by your constraints) as the activity(ies) which are normally shown in this slot. If you don&apos;t use constraints activities same starting time, this option has no effect for you.</source>
         <translation>選項“列印排課時間表內同一起跑線的節次教學活動”：選擇就意味著HTML時間表將包含每個插槽都具有相同的開始時間為活動（由您指定的限制實際上）（IES），它通常顯示的活動在此插槽。如果你不使用約束活動同一起跑線的時候，這個選項對你沒有任何影響。
 </translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1988"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1989"/>
         <source>Option &apos;Divide html timetables with time-axis by days&apos;: This means simply that the html timetables of type &apos;time horizontal&apos; or &apos;time vertical&apos; (see the generated html timetables) should be or not divided according to the days.</source>
         <translation>選項&apos;劃分HTML排課時間表星期與節次：這意味著僅僅該類型的HTML時間表的水平節次“或”垂直節次“（見生成html時間表）應該是或者根據星期劃分。
 </translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1992"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1993"/>
         <source>If the &apos;time horizontal&apos; or &apos;time vertical&apos; html timetables are too large for you, then you might need to select this option</source>
         <translation>如果“水平節次”或“垂直節次”的HTML排課時間表太大，那麼您可能需要選擇此選項</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="1986"/>
+        <location filename="../src/interface/fetmainform.cpp" line="1987"/>
         <source>Probably some settings which are more difficult to understand are these ones:</source>
         <translation>也許這是很難理解的一些設置的：</translation>
     </message>
@@ -32790,29 +32794,29 @@ Having a subgroup with too little working hours per week means that you inputted
         <translation>&amp;課表</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="973"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="980"/>
         <source>Statistics</source>
         <translation>統計</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="990"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="997"/>
         <source>&amp;Data</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;File, &amp;Data, &amp;Timetable, &amp;Help, must be different</extracomment>
         <translation>&amp;數據</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1240"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1247"/>
         <source>Settings</source>
         <translation>設置</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2083"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2082"/>
         <source>Language</source>
         <extracomment>Please translate in your language and also add the original English term, like: &apos;Idioma/Language&apos;. This is to ensure that people mistakingly selecting an unknown language do not become stuck with it (so that they can find this setting description also in English).</extracomment>
         <translation>語言/Language</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1343"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1350"/>
         <source>&amp;New</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;New, &amp;Open, Open &amp;recent, &amp;Save, Save &amp;as, &amp;Quit, must be different</extracomment>
         <translation>&amp;新建</translation>
@@ -32824,116 +32828,116 @@ Having a subgroup with too little working hours per week means that you inputted
         <translation>線上</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1262"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1269"/>
         <source>Interface</source>
         <translation>介面</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1275"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1282"/>
         <source>Timetables</source>
         <translation>課表</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1346"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1353"/>
         <source>Ctrl+N</source>
         <extracomment>This is the shortcut for menu item File-&gt;New. It is recommended to translate with Ctrl+N, the same as original, or with Ctrl+other letter you prefer (do not make duplicates with other shortcuts). All shortcuts are: Ctrl+N (New), Ctrl+O (Open), Ctrl+S (Save), Ctrl+Q (Quit), Ctrl+G (Generate), Ctrl+P (Print). Please use the English keyboard modifiers name, for instance Ctrl, because otherwise the shortcuts do not work (so, even if your keyboard has another name for the Ctrl key, write &apos;Ctrl&apos;. It will work OK on all platforms. Even if you are on German keyboard, write &apos;Ctrl&apos; as in English). Maybe it would be good to translate with &apos;Ctrl+N&apos;, the same as the English original, to keep things standard.</extracomment>
         <translation></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1351"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1358"/>
         <source>&amp;Open...</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;New, &amp;Open, Open &amp;recent, &amp;Save, Save &amp;as, &amp;Quit, must be different</extracomment>
         <translation>&amp;打開...</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1354"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1361"/>
         <source>Ctrl+O</source>
         <extracomment>This is the shortcut for menu item File-&gt;Open. It is recommended to translate with Ctrl+O, the same as original, or with Ctrl+other letter you prefer (do not make duplicates with other shortcuts). All shortcuts are: Ctrl+N (New), Ctrl+O (Open), Ctrl+S (Save), Ctrl+Q (Quit), Ctrl+G (Generate), Ctrl+P (Print). Please use the English keyboard modifiers name, for instance Ctrl, because otherwise the shortcuts do not work (so, even if your keyboard has another name for the Ctrl key, write &apos;Ctrl&apos;. It will work OK on all platforms. Even if you are on German keyboard, write &apos;Ctrl&apos; as in English). Maybe it would be good to translate with &apos;Ctrl+O&apos;, the same as the English original, to keep things standard.</extracomment>
         <translation></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1359"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1366"/>
         <source>&amp;Save</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;New, &amp;Open, Open &amp;recent, &amp;Save, Save &amp;as, &amp;Quit, must be different</extracomment>
         <translation>&amp;保存</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1362"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1369"/>
         <source>Ctrl+S</source>
         <extracomment>This is the shortcut for menu item File-&gt;Save. It is recommended to translate with Ctrl+S, the same as original, or with Ctrl+other letter you prefer (do not make duplicates with other shortcuts). All shortcuts are: Ctrl+N (New), Ctrl+O (Open), Ctrl+S (Save), Ctrl+Q (Quit), Ctrl+G (Generate), Ctrl+P (Print). Please use the English keyboard modifiers name, for instance Ctrl, because otherwise the shortcuts do not work (so, even if your keyboard has another name for the Ctrl key, write &apos;Ctrl&apos;. It will work OK on all platforms. Even if you are on German keyboard, write &apos;Ctrl&apos; as in English). Maybe it would be good to translate with &apos;Ctrl+S&apos;, the same as the English original, to keep things standard.</extracomment>
         <translation></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1383"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1390"/>
         <source>Frequently asked questions</source>
         <translation>常見問題答疑</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1399"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1406"/>
         <source>&amp;Teachers</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different</extracomment>
         <translation>&amp;老師</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1005"/>
-        <location filename="../src/interface/fetmainform_template.ui" line="1166"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1012"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1173"/>
         <source>Teachers</source>
         <translation>老師</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1404"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1411"/>
         <source>&amp;Subjects</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different</extracomment>
         <translation>&amp;學科</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1137"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1144"/>
         <source>Subjects</source>
         <translation>學科</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1409"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1416"/>
         <source>&amp;Years (forms, classes)</source>
         <extracomment>Accelerator key (letter after ampersand) must be different for &amp;Years, &amp;Groups, &amp;Subgroups</extracomment>
         <translation>&amp;學年</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1414"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1421"/>
         <source>&amp;Groups</source>
         <extracomment>Accelerator key (letter after ampersand) must be different for &amp;Years, &amp;Groups, &amp;Subgroups</extracomment>
         <translation>&amp;組</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1424"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1431"/>
         <source>&amp;Activities</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different</extracomment>
         <translation>&amp;教學班</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1069"/>
-        <location filename="../src/interface/fetmainform_template.ui" line="1127"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1076"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1134"/>
         <source>Activities</source>
         <translation>教學班</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="998"/>
-        <location filename="../src/interface/fetmainform_template.ui" line="1115"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1005"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1122"/>
         <source>Miscellaneous</source>
         <translation>雜項</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1144"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1151"/>
         <source>Subjects and activity tags</source>
         <translation>學科 和 教學班</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1429"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1436"/>
         <source>&amp;Generate new</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Generate new, View (&amp;teachers), View (&amp;students), View (&amp;rooms), Show soft &amp;conflicts, &amp;Print, Generate &amp;multiple, must be different</extracomment>
         <translation>&amp;新生成</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1432"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1439"/>
         <source>Ctrl+G</source>
         <extracomment>This is the shortcut for menu item Timetable-&gt;Generate. It is recommended to translate with Ctrl+G, the same as original, or with Ctrl+other letter you prefer (do not make duplicates with other shortcuts). All shortcuts are: Ctrl+N (New), Ctrl+O (Open), Ctrl+S (Save), Ctrl+Q (Quit), Ctrl+G (Generate), Ctrl+P (Print). Please use the English keyboard modifiers name, for instance Ctrl, because otherwise the shortcuts do not work (so, even if your keyboard has another name for the Ctrl key, write &apos;Ctrl&apos;. It will work OK on all platforms. Even if you are on German keyboard, write &apos;Ctrl&apos; as in English). Maybe it would be good to translate with &apos;Ctrl+G&apos;, the same as the English original, to keep things standard.</extracomment>
         <translation></translation>
@@ -32949,311 +32953,311 @@ Having a subgroup with too little working hours per week means that you inputted
         <translation>查看 (&amp;老師)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1442"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1449"/>
         <source>&amp;Days per week</source>
         <extracomment>Accelerators (letters after &amp; - ampersand) for &amp;Days per week and &amp;Hours (periods) per day must be different</extracomment>
         <translation>&amp;每星期幾天</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1447"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1454"/>
         <source>&amp;Hours (periods) per day</source>
         <extracomment>Accelerators (letters after &amp; - ampersand) for &amp;Days per week and &amp;Hours (periods) per day must be different</extracomment>
         <translation>&amp;每天課時</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1455"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1462"/>
         <source>&amp;Rooms</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different</extracomment>
         <translation>&amp;教室</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1121"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1128"/>
         <source>Rooms</source>
         <translation>教室</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2003"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2002"/>
         <source>Mark not available slots with -x- in timetables</source>
         <comment>It means to mark the slots which are not available in the timetable. Lowercase -x-</comment>
         <translation>標記為不可用</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2145"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2144"/>
         <source>Min days per week for a teacher</source>
         <translation>一個老師每星期最少上課</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2150"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2149"/>
         <source>Min days per week for all teachers</source>
         <translation>所有老師每星期最少上課</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2155"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2154"/>
         <source>Seed of random number generator</source>
         <translation>生成一個亂數</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2166"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2165"/>
         <source>Use colors in interface</source>
         <translation>用不用的顏色在介面</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2174"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2173"/>
         <source>Max hours daily with an activity tag for a teacher</source>
         <translation>一個老師一個教學班每天最大課時</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2182"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2181"/>
         <source>Max hours daily with an activity tag for all teachers</source>
         <translation>所有老師一個教學班每天最大課時</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2190"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2189"/>
         <source>Max hours daily with an activity tag for a students set</source>
         <translation>一個學生一個教學班每天最大課時</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2198"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2197"/>
         <source>Max hours daily with an activity tag for all students</source>
         <translation>所有學生一個教學班每天最大課時</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2206"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2205"/>
         <source>Max gaps per day for a students set</source>
         <translation>一個學生每天最大差距</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2214"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2213"/>
         <source>Max gaps per day for all students</source>
         <translation>所有學生每天最大差距</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2225"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2224"/>
         <source>Enable students max gaps per day</source>
         <translation>允許學生每天有間隔</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2236"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2235"/>
         <source>Enable activity tag max hours daily</source>
         <translation>打開教學班每天最大課時</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2247"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2246"/>
         <source>Warn if using not perfect constraints</source>
         <extracomment>This is an option, which can be selected or deselected. It means warn before generating, if user uses not perfect constraints</extracomment>
         <translation>如果不是完美的約束警告</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="994"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1001"/>
         <source>Time constraints</source>
         <translation>時間衝突</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1473"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1472"/>
         <source>A set of activities has same starting time (day+hour)</source>
         <translation>一組教學班有同樣的開始時間（學期+課時）</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1488"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1487"/>
         <source>All t&amp;ime constraints</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different</extracomment>
         <translation>所有 &amp;時間約束</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1498"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1497"/>
         <source>Basic compulsory time constraints</source>
         <translation>基礎義務教育時間約束</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1513"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1512"/>
         <source>Max days per week for a teacher</source>
         <translation>一個老師每週最多上課天數</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1518"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1517"/>
         <source>Max hours daily for all teachers</source>
         <translation>所有老師每天最多課時</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1543"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1542"/>
         <source>A set of activities are not overlapping</source>
         <translation>一組教學班不重疊</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1556"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1555"/>
         <source>All s&amp;pace constraints</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different</extracomment>
         <translation>所有&amp;空間約束</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1111"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1118"/>
         <source>Space constraints</source>
         <translation>空間約束</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1561"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1560"/>
         <source>Basic compulsory space constraints</source>
         <translation>基礎義務教育空間約束</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1571"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1570"/>
         <source>An activity has a preferred room</source>
         <translation>教學班有首選教室</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1576"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1575"/>
         <source>A set of activities has same starting hour (any days)</source>
         <translation>一組教學班每天有同樣的開始上課時間</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1586"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1585"/>
         <source>I&amp;nstitution name</source>
         <extracomment>Accelerators (letters after &amp; - ampersand) for I&amp;nstitution name and &amp;Comments must be different</extracomment>
         <translation>機構&amp;名稱</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1591"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1590"/>
         <source>&amp;Comments</source>
         <extracomment>Accelerators (letters after &amp; - ampersand) for I&amp;nstitution name and &amp;Comments must be different</extracomment>
         <translation>&amp;注釋</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1596"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1595"/>
         <source>An activity has a set of preferred rooms</source>
         <translation>一個教學班有一組首選的教室</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1777"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1776"/>
         <source>A subject has a preferred room</source>
         <translation>一個學科有首選的教室</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1782"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1781"/>
         <source>A subject has a set of preferred rooms</source>
         <translation>一個學科有首選的一組教室</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1611"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1610"/>
         <source>Teachers statistics</source>
         <translation>老師統計</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1616"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1615"/>
         <source>Students statistics</source>
         <translation>學生統計</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1621"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1620"/>
         <source>Subjects statistics</source>
         <translation>學科統計</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1626"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1625"/>
         <source>Max gaps per week for all teachers</source>
         <translation>對於所有老師每週最大間隔</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1631"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1630"/>
         <source>Max gaps per week for a teacher</source>
         <translation>對於一個老師每週最大間隔</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1641"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1640"/>
         <source>Max hours daily for a teacher</source>
         <translation>對於一個老師每天最多課時</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1646"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1645"/>
         <source>Max hours daily for a students set</source>
         <translation>對於一組學生每天最大課時</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1651"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1650"/>
         <source>Max hours daily for all students</source>
         <translation>對於所有學生每天最大課時</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1656"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1655"/>
         <source>Instructions</source>
         <translation>指示</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1667"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1666"/>
         <source>Search for updates on startup</source>
         <translation>在啟動時搜索更新</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1672"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1671"/>
         <source>Min hours daily for all students</source>
         <translation>所有學生每天最小課時</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1677"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1676"/>
         <source>Min hours daily for a students set</source>
         <translation>一組學生每天最小課時</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1692"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1691"/>
         <source>An activity ends students day</source>
         <translation>教學班學生結束學期</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1697"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1696"/>
         <source>Restore default settings</source>
         <translation>還原預設值</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1707"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1706"/>
         <source>Min hours daily for all teachers</source>
         <translation>所有老師每天最小課時</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1712"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1711"/>
         <source>Min hours daily for a teacher</source>
         <translation>對於一個老師每天最多課時</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1717"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1716"/>
         <source>Help on statistics</source>
         <translation>統計幫助</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1528"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1527"/>
         <source>Max gaps per week for a students set</source>
         <translation>對於一組學生每週最大間隔</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1533"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1532"/>
         <source>Max gaps per week for all students</source>
         <translation>對於所有學生每週最大間隔</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1538"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1537"/>
         <source>All students begin early (max beginnings at second hour)</source>
         <translation>所有學生開始早點（最大值在第二個小時開始）</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1181"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1188"/>
         <source>Activity tags</source>
         <translation>教學班標籤</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1636"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1635"/>
         <source>A students set begins early (max beginnings at second hour)</source>
         <translation>一個學生開始早點（最大值在第二個小時開始）</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1722"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1721"/>
         <source>Max gaps per day for all teachers</source>
         <translation>所有老師每天最大間隔</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1727"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1726"/>
         <source>Max gaps per day for a teacher</source>
         <translation>一個老師每天最大間隔</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1493"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1492"/>
         <source>A teacher&apos;s not available times</source>
         <translation>老師的不可用時間</translation>
     </message>
@@ -33322,436 +33326,438 @@ Having a subgroup with too little working hours per week means that you inputted
         <translation>打開 &amp;最近</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1295"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1302"/>
         <source>Confirmations</source>
         <comment>This is a submenu, contains these settings: if a user wants to deactivate/activate a confirmation (instructions) dialog that appears before an advanced dialog</comment>
         <translation>確認</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1367"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1374"/>
         <source>Save &amp;as...</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;New, &amp;Open, Open &amp;recent, &amp;Save, Save &amp;as, &amp;Quit, must be different</extracomment>
         <translation>另 &amp;存為...</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1483"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1482"/>
         <source>Max simultaneous activities from a set in selected time slots</source>
         <extracomment>It refers to a time constraint. It means: user chooses a set of activities, a set of time slots and a maximum number of activities from those selected which can be simultaneous in each selected time slot</extracomment>
         <translation>從一組在選定的時間間隔的最大同時教學班</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1503"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1502"/>
         <source>A students set&apos;s not available times</source>
         <translation>一組學生的不可用時間</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1508"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1507"/>
         <source>Break times (all teachers+all students not available)</source>
         <translation>休息時間（所有教師+學生不提供）</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1548"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1547"/>
         <source>Min days between a set of activities</source>
         <translation>一組教學班最小天數</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1566"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1565"/>
         <source>A room&apos;s not available times</source>
         <translation>教室的不可用時間</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1601"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1600"/>
         <source>A set of students has a home room</source>
         <translation>一組學生有一個主教室</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1606"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1605"/>
         <source>A set of students has a set of home rooms</source>
         <translation>一組學生有一組主教室</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1702"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1701"/>
         <source>HTML level for generated timetables</source>
         <translation>以HTML方式生成時間序課表</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1732"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1731"/>
         <source>Max span per day for a teacher</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1737"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1736"/>
         <source>Max span per day for all teachers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1742"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1741"/>
         <source>Max span per day for a students set</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1747"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1746"/>
         <source>Max span per day for all students</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1752"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1751"/>
         <source>Min resting hours for a teacher</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1757"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1756"/>
         <source>Min resting hours for all teachers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1762"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1761"/>
         <source>Min resting hours for a students set</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1767"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1766"/>
         <source>Min resting hours for all students</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1787"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1786"/>
         <source>A subject+an activity tag have a preferred room</source>
         <translation>一個學科和教學班有首選的教室</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1792"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1791"/>
         <source>A subject+an activity tag have a set of preferred rooms</source>
         <translation>一個學科和教學班有一組首選的教室</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1797"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1796"/>
         <source>A teacher has a home room</source>
         <translation>一個教師有主教室</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1802"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1801"/>
         <source>A teacher has a set of home rooms</source>
         <translation>一個教師有一組主教室</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1807"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1806"/>
         <source>Max building changes per day for a students set</source>
         <translation>對於一組學生每天最大樓棟變化</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1812"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1811"/>
         <source>Max building changes per day for all students</source>
         <translation>對於所有學生每天最大樓棟變化</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1817"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1816"/>
         <source>Max building changes per week for a students set</source>
         <translation>對於一組學生每週最大樓棟變化</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1822"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1821"/>
         <source>Max building changes per week for all students</source>
         <translation>對於所有學生每週最大樓棟變化</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1827"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1826"/>
         <source>Min gaps between building changes for a students set</source>
         <translation>對於一組學生最小樓棟間隔</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1832"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1831"/>
         <source>Min gaps between building changes for all students</source>
         <translation>對於所有學生最小樓棟間隔</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1837"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1836"/>
         <source>Max building changes per day for a teacher</source>
         <translation>對於一個老師每天最大樓棟變化</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1842"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1841"/>
         <source>Max building changes per day for all teachers</source>
         <translation>對於所有老師每天最大樓棟變化</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1847"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1846"/>
         <source>Max building changes per week for a teacher</source>
         <translation>對於一個老師每週最大樓棟變化</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1852"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1851"/>
         <source>Max building changes per week for all teachers</source>
         <translation>對於所有老師每週最大樓棟變化</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1857"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1856"/>
         <source>Min gaps between building changes for a teacher</source>
         <translation>對於一個老師最小樓棟間隔</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1862"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1861"/>
         <source>Min gaps between building changes for all teachers</source>
         <translation>對於所有老師最小樓棟間隔</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1867"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1866"/>
         <source>A set of activities has same starting day (any hours)</source>
         <translation>一組教學班有同樣的開始星期</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1882"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1881"/>
         <source>Max hours continuously for all teachers</source>
         <translation>所有老師最大連續上課時間</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1887"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1886"/>
         <source>Max hours continuously for a teacher</source>
         <translation>一個老師最大連續上課時間</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1892"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1891"/>
         <source>Max hours continuously for a students set</source>
         <translation>一組學生最大連續上課時間</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1897"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1896"/>
         <source>Max hours continuously for all students</source>
         <translation>所有學生最大連續上課時間</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1902"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1901"/>
         <source>Important tips</source>
         <translation>重要 提示</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2078"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2077"/>
         <source>&amp;Modify subactivities</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different</extracomment>
         <translation>&amp;編輯 子教學班</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2094"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2093"/>
         <source>Divide HTML timetables with time-axis by days</source>
         <translation>按星期時間軸分隔HTML課程時間表</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2255"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2254"/>
         <source>Help contents</source>
         <extracomment>menu Help-&gt;Online-&gt;Help contents, opens the webpage of FET documentation</extracomment>
         <translation>説明 內容</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2265"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2264"/>
         <source>Web addresses</source>
         <extracomment>menu Help-&gt;Online-&gt;Web addresses, shows the web addresses of FET homepage, documentation and forum</extracomment>
         <translation>Web 地址</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2270"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2269"/>
         <source>Homepage</source>
         <extracomment>menu Help-&gt;Online-&gt;Homepage, opens the homepage of FET</extracomment>
         <translation>主頁</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2281"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2280"/>
         <source>Show shortcut buttons in main window</source>
         <translation>在主視窗顯示快捷按鈕</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2303"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2302"/>
         <source>Enable students min hours daily with empty days</source>
         <translation>開啟空天每天最小課時</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2314"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2313"/>
         <source>Warn if using students min hours daily with empty days</source>
         <translation>警告如果學生空天每天最小課時</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2319"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2318"/>
         <source>Activity planning</source>
         <translation>教學計畫</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2330"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2329"/>
         <source>Confirm activity planning</source>
         <comment>This is a setting - a check box: if a user wants to deactivate/activate the confirmation (instructions) dialog that appears before activity planning dialog</comment>
         <translation>確認教學計畫</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2341"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2340"/>
         <source>Confirm spread activities over the week</source>
         <comment>This is a setting - a check box: if a user wants to deactivate/activate the confirmation (instructions) dialog that appears before spreading the activities over the week dialog</comment>
         <translation>確認過去一周教學安排</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2352"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2351"/>
         <source>Confirm remove redundant constraints</source>
         <comment>This is a setting - a check box: if a user wants to deactivate/activate the confirmation (instructions) dialog that appears before removing redundant constraints dialog</comment>
         <translation>確認刪除多餘的限制</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2368"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2367"/>
         <source>&amp;Clear list</source>
         <extracomment>It means clearing the list of recently opened files</extracomment>
         <translation>&amp;清除列表</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2373"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2372"/>
         <source>Activities rooms statistics</source>
         <extracomment>It refers to the statistics of each activity&apos;s possible room(s)</extracomment>
         <translation>教學班教室統計</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2378"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2377"/>
         <source>&amp;Print</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Generate new, View (&amp;teachers), View (&amp;students), View (&amp;rooms), Show soft &amp;conflicts, &amp;Print, Generate &amp;multiple, must be different</extracomment>
         <translation>&amp;列印</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2381"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2380"/>
         <source>Ctrl+P</source>
         <extracomment>This is the shortcut for menu item Timetable-&gt;Print. It is recommended to translate with Ctrl+P, the same as original, or with Ctrl+other letter you prefer (do not make duplicates with other shortcuts). All shortcuts are: Ctrl+N (New), Ctrl+O (Open), Ctrl+S (Save), Ctrl+Q (Quit), Ctrl+G (Generate), Ctrl+P (Print). Please use the English keyboard modifiers name, for instance Ctrl, because otherwise the shortcuts do not work (so, even if your keyboard has another name for the Ctrl key, write &apos;Ctrl&apos;. It will work OK on all platforms. Even if you are on German keyboard, write &apos;Ctrl&apos; as in English). Maybe it would be good to translate with &apos;Ctrl+P&apos;, the same as the English original, to keep things standard.</extracomment>
         <translation></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2386"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2385"/>
         <source>A set of activities occupies max different rooms</source>
         <translation>一組教學班佔用最大不同教室</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2391"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2390"/>
         <source>A set of activities are in the same room if they are consecutive</source>
         <translation>一組教學班如果是連續的,則在同樣的教室</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2396"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2395"/>
         <source>Max days per week for a students set</source>
         <translation>對於一組學生每週最大間隔</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2401"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2400"/>
         <source>Max days per week for all students</source>
         <translation>對於所有學生每週最大間隔</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2412"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2411"/>
         <source>Print activity tags in timetables</source>
         <translation>列印課表的教學標籤</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2417"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2416"/>
         <source>Print advanced statistics</source>
         <translation>列印高級統計</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2428"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2427"/>
         <source>Duplicate vertical headers to the right</source>
         <translation>重複的垂直表頭向右</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2433"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2432"/>
         <source>Group activities in the initial order of generation</source>
         <translation>組教學班生成的初始順序</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2444"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2443"/>
         <source>Enable group activities in initial order</source>
         <translation>使組教學班初始有序</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2455"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2454"/>
         <source>Warn if using group activities in initial order</source>
         <translation>警告如果用組教學班初始有序</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2466"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2465"/>
         <source>Show subgroups in combo boxes</source>
         <translation>顯示子組的組合框</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2477"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2476"/>
         <source>Show subgroups in activity planning</source>
         <translation>顯示次群組的教學活動計畫</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2504"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2503"/>
         <source>Categories of timetables to be written on disk</source>
         <comment>It means that the user selects the categories of timetables to be written on disk after the generation (soft conflicts, XML, days horizontal, time vertical, subgroups, teachers, etc.)</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2515"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2514"/>
         <source>Print detailed timetables</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2526"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2525"/>
         <source>Print detailed teachers&apos; free periods timetables</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2531"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2530"/>
         <source>Teachers subjects qualifications statistics</source>
         <comment>It means the statistics for the teachers - check the teacher&apos;s subject qualification</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2536"/>
-        <location filename="../src/interface/fetmainform_template.ui" line="2546"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2535"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2545"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2555"/>
         <source>Days horizontal</source>
         <translation type="unfinished">水平軸以星期顯示</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2541"/>
-        <location filename="../src/interface/fetmainform_template.ui" line="2551"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2540"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2550"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2560"/>
         <source>Time horizontal</source>
         <translation type="unfinished">時間節次以水平軸顯示</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2488"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2487"/>
         <source>Show tool tips for constraints with tables</source>
         <translation>顯示排課表的約束條件工具提示</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2499"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2498"/>
         <source>Warn subgroups with the same activities</source>
         <translation>警示:次級教學群組已有相同的教學活動</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2260"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2259"/>
         <source>Forum</source>
         <extracomment>menu Help-&gt;Forum, opens the webpage of FET forum</extracomment>
         <translation>論壇</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1523"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1522"/>
         <source>An activity has a preferred starting time</source>
         <translation>一個教學班有首選的開始課時</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1907"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1906"/>
         <source>A set of activities has a set of preferred starting times</source>
         <translation>一組教學班有一組首選的開始課時</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1917"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1916"/>
         <source>An activity has a set of preferred starting times</source>
         <translation>一個教學班有一組首選的開始課時</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1468"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1467"/>
         <source>A set of activities has a set of preferred time slots</source>
         <translation>一組教學班有一組首選的課時間隔</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1912"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1911"/>
         <source>An activity has a set of preferred time slots</source>
         <translation>一個教學班有一組首選的課時間隔</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1922"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1921"/>
         <source>Min gaps (hours) between a set of activities</source>
         <translation>一組教學班最小間隔（學時）</translation>
     </message>
@@ -33894,176 +33900,175 @@ Having a subgroup with too little working hours per week means that you inputted
         <translation>導入逗號分隔的文本值</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1197"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1204"/>
         <source>Stu&amp;dents</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different</extracomment>
         <translation>學&amp;生</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1375"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1382"/>
         <source>&amp;Quit</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;New, &amp;Open, Open &amp;recent, &amp;Save, Save &amp;as, &amp;Quit, must be different</extracomment>
         <translation>&amp;退出</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1378"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1385"/>
         <source>Ctrl+Q</source>
         <extracomment>This is the shortcut for menu item File-&gt;Quit. It is recommended to translate with Ctrl+Q, the same as original, or with Ctrl+other letter you prefer (do not make duplicates with other shortcuts). All shortcuts are: Ctrl+N (New), Ctrl+O (Open), Ctrl+S (Save), Ctrl+Q (Quit), Ctrl+G (Generate), Ctrl+P (Print). Please use the English keyboard modifiers name, for instance Ctrl, because otherwise the shortcuts do not work (so, even if your keyboard has another name for the Ctrl key, write &apos;Ctrl&apos;. It will work OK on all platforms. Even if you are on German keyboard, write &apos;Ctrl&apos; as in English). Maybe it would be good to translate with &apos;Ctrl+Q&apos;, the same as the English original, to keep things standard.</extracomment>
         <translation></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1391"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1398"/>
         <source>About...</source>
         <translation>關於...</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1419"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1426"/>
         <source>&amp;Subgroups</source>
         <extracomment>Accelerator key (letter after ampersand) must be different for &amp;Years, &amp;Groups, &amp;Subgroups</extracomment>
         <translation>&amp;子組</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1437"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1444"/>
         <source>Show soft &amp;conflicts</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Generate new, View (&amp;teachers), View (&amp;students), View (&amp;rooms), Show soft &amp;conflicts, &amp;Print, Generate &amp;multiple, must be different</extracomment>
         <translation>顯示&amp;軟衝突</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1463"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="958"/>
         <source>View (&amp;rooms)</source>
-        <extracomment>Accelerator key (letter after ampersand) for &amp;Generate new, View (&amp;teachers), View (&amp;students), View (&amp;rooms), Show soft &amp;conflicts, &amp;Print, Generate &amp;multiple, must be different</extracomment>
         <translation>查看（&amp;教室）</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1478"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1477"/>
         <source>A set of activities occupies max time slots from selection</source>
         <extracomment>It refers to a time constraint. It means: user chooses a set of activities, a set of time slots and a maximum number of slots from those selected which can be occupied by the selected activities</extracomment>
         <translation>所選的一組教學班佔用最大間隔</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1581"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1580"/>
         <source>Activity ta&amp;gs</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different</extracomment>
         <translation>教學班 &amp;標籤</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1682"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1681"/>
         <source>Generate &amp;multiple</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Generate new, View (&amp;teachers), View (&amp;students), View (&amp;rooms), Show soft &amp;conflicts, &amp;Print, Generate &amp;multiple, must be different</extracomment>
         <translation>生成&amp;多個</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1772"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1771"/>
         <source>&amp;Buildings</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different</extracomment>
         <translation>&amp;樓棟</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1872"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1871"/>
         <source>Save data and timetable as...</source>
         <translation>保存資料並生成課表為...</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1927"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1926"/>
         <source>Export comma separated values (text)</source>
         <translation>匯出逗號分隔的文本值</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1932"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1931"/>
         <source>Import activities from CSV file</source>
         <translation>從CSV文件導入教學班</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1937"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1936"/>
         <source>Import activity tags from CSV file</source>
         <translation>從CSV文件導入教學班標籤</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1942"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1941"/>
         <source>Import rooms and buildings from CSV file</source>
         <translation>從CSV文件導入教室和樓棟</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1947"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1946"/>
         <source>Import subjects from CSV file</source>
         <translation>從CSV文件導入學科</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1952"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1951"/>
         <source>Import teachers from CSV file</source>
         <translation>從CSV文件導入老師</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1957"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1956"/>
         <source>Import years, groups and subgroups from CSV file</source>
         <translation>從CSV檔導入學年，組合和子組</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1962"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1961"/>
         <source>A set of subactivities has a set of preferred time slots</source>
         <translation>一組子教學班有一組首選的課時間隔</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1967"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1966"/>
         <source>A set of subactivities has a set of preferred starting times</source>
         <translation>一組子教學班有一組首選的開始時間</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1972"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1971"/>
         <source>A teacher works in an hourly interval max days per week</source>
         <translation>一位老師每週每小時間隔最大</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1977"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1976"/>
         <source>All teachers work in an hourly interval max days per week</source>
         <translation>所有老師每週每小時間隔最大</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1982"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1981"/>
         <source>A students set works in an hourly interval max days per week</source>
         <translation>一組學生每週每小時間隔最大</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1987"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1986"/>
         <source>All students work in an hourly interval max days per week</source>
         <translation>所有的學生在一個小時的時間間隔的最大天每星期上課</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1992"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1991"/>
         <source>A set of activities end students day</source>
         <translation>一組教學班的學生一天結束</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2292"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2291"/>
         <source>Mark break slots with -X- in timetables</source>
         <comment>It means to show or not the slots which are break slots, in the timetable, with an -X-. Uppercase -X-</comment>
         <translation>在課表中標記-x-間隔</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2363"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2362"/>
         <source>Confirm save data and timetable as</source>
         <translation>確認保存資料和課表為</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="444"/>
         <location filename="../src/interface/fetmainform_template.ui" line="747"/>
-        <location filename="../src/interface/fetmainform_template.ui" line="1244"/>
-        <location filename="../src/interface/fetmainform_template.ui" line="1322"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1251"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1329"/>
         <source>Advanced</source>
         <translation>高級</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2008"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2007"/>
         <source>Spread the activities evenly over the week</source>
         <translation>過去一周均勻的排教學班</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2013"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2012"/>
         <source>Export advanced statistics to disk</source>
         <translation>匯出高級統計到磁片</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2018"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2017"/>
         <source>Remove redundant constraints</source>
         <translation>刪除多餘的約束</translation>
     </message>
@@ -34073,123 +34078,123 @@ Having a subgroup with too little working hours per week means that you inputted
         <translation>高級 鎖定/解鎖</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2028"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2027"/>
         <source>Lock all activities of a specified day</source>
         <translation>在特殊一天鎖定的教學班</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2033"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2032"/>
         <source>Unlock all activities of a specified day</source>
         <translation>在特殊一天解鎖的教學班</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2038"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2037"/>
         <source>Lock all activities which end students day</source>
         <translation>在學期末鎖定所有教學班</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2043"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2042"/>
         <source>Unlock all activities which end students day</source>
         <translation>在學期末解鎖所有教學班</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2048"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2047"/>
         <source>Lock all activities of the current timetable</source>
         <translation>鎖定當前課表所有教學班</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2053"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2052"/>
         <source>Unlock all activities of the current timetable</source>
         <translation>解鎖當前課表所有教學班</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2058"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2057"/>
         <source>Max hours continuously with an activity tag for a students set</source>
         <translation>一組學生的教學班標籤的最大不間斷學時</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2063"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2062"/>
         <source>Max hours continuously with an activity tag for all students</source>
         <translation>所有學生的教學班標籤的最大不間斷學時</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2068"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2067"/>
         <source>Max hours continuously with an activity tag for a teacher</source>
         <translation>一個老師的教學班標籤的最大不間斷學時</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2073"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2072"/>
         <source>Max hours continuously with an activity tag for all teachers</source>
         <translation>所有老師的教學班標籤的最大不間斷學時</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1205"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1212"/>
         <source>Institution information</source>
         <translation>機構 資訊</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1212"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1219"/>
         <source>Days and hours</source>
         <translation>星期 和 學時</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1037"/>
-        <location filename="../src/interface/fetmainform_template.ui" line="1151"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1044"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1158"/>
         <source>Students</source>
         <translation>學生</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2099"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2098"/>
         <source>Help on settings</source>
         <translation>設置幫助</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2104"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2103"/>
         <source>An activity tag has a preferred room</source>
         <translation>一個教學班標籤有首選的教室</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2109"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2108"/>
         <source>An activity tag has a set of preferred rooms</source>
         <translation>一個教學班標籤有一組首選的教室</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2114"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2113"/>
         <source>Select output directory</source>
         <translation>選擇輸出目錄</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2119"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2118"/>
         <source>Max days per week for all teachers</source>
         <translation>所有老師每週最大上課天數</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2130"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2129"/>
         <source>Print activities with same starting time in timetables</source>
         <translation>列印在課表中同樣開始時間的教學班</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2140"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2139"/>
         <source>Max days between a set of activities</source>
         <translation>一組教學班最大上課天數</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1687"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1686"/>
         <source>Two activities are consecutive</source>
         <translation>兩個教學班是連續的</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="1877"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="1876"/>
         <source>Two activities are ordered</source>
         <translation>兩個活動是有序的</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2023"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2022"/>
         <source>Two activities are grouped</source>
         <translation>兩個活動是分組的</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform_template.ui" line="2135"/>
+        <location filename="../src/interface/fetmainform_template.ui" line="2134"/>
         <source>Three activities are grouped</source>
         <translation>三個活動是分組的</translation>
     </message>
@@ -34197,66 +34202,66 @@ Having a subgroup with too little working hours per week means that you inputted
 <context>
     <name>FetTranslate</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="258"/>
-        <location filename="../src/interface/fet.cpp" line="802"/>
+        <location filename="../src/interface/fet.cpp" line="259"/>
+        <location filename="../src/interface/fet.cpp" line="810"/>
         <source>FET warning</source>
         <translation>FET 警告</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="258"/>
+        <location filename="../src/interface/fet.cpp" line="259"/>
         <source>Output directory %1 does not exist and cannot be created - output directory will be made the default value %2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="763"/>
-        <location filename="../src/interface/fet.cpp" line="772"/>
+        <location filename="../src/interface/fet.cpp" line="771"/>
+        <location filename="../src/interface/fet.cpp" line="780"/>
         <source>FET critical</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="802"/>
+        <location filename="../src/interface/fet.cpp" line="810"/>
         <source>To start FET in interface mode, please do not give any command-line parameters to the FET executable</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1099"/>
+        <location filename="../src/interface/fet.cpp" line="1107"/>
         <source>This is the list of max placed activities, chronologically. If FET could reach maximum n-th activity, look at the n+1-st activity in the initial order of the activities</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1385"/>
+        <location filename="../src/interface/fet.cpp" line="1393"/>
         <source>FET managed to schedule correctly the first %1 most difficult activities. You can see initial order of placing the activities in the corresponding output file. The activity which might cause problems might be the next activity in the initial order of evaluation. This activity is listed below:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1392"/>
-        <location filename="../src/interface/fet.cpp" line="1412"/>
+        <location filename="../src/interface/fet.cpp" line="1400"/>
+        <location filename="../src/interface/fet.cpp" line="1420"/>
         <source>Id: %1 (%2)</source>
         <comment>%1 is id of activity, %2 is detailed description of activity</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1397"/>
+        <location filename="../src/interface/fet.cpp" line="1405"/>
         <source>Difficult activity cannot be computed - please report possible bug</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1401"/>
+        <location filename="../src/interface/fet.cpp" line="1409"/>
         <source>Here are the placed activities which lead to an inconsistency, in order from the first one to the last (the last one FET failed to schedule and the last ones are most likely impossible):</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1408"/>
+        <location filename="../src/interface/fet.cpp" line="1416"/>
         <source>No: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="763"/>
+        <location filename="../src/interface/fet.cpp" line="771"/>
         <source>Cannot create or use %1 directory (where the results should be stored) - you can continue operation, but you might not be able to work with FET. Maybe you can try to change the output directory from the &apos;Settings&apos; menu. If this is a bug - please report it.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="772"/>
+        <location filename="../src/interface/fet.cpp" line="780"/>
         <source>You don&apos;t have write permissions in the output directory (FET cannot open or create file %1) - you might not be able to work correctly with FET. Maybe you can try to change the output directory from the &apos;Settings&apos; menu. If this is a bug - please report it.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -36203,6 +36208,24 @@ Please modify your data correspondingly and try again</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.32.1 (July 2017).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET homepage: &lt;/span&gt;&lt;a href=&quot;http://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;http://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="112"/>
         <source>Translators</source>
         <translation type="unfinished"></translation>
@@ -36859,35 +36882,21 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Robinson A. Lemos - bug report.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Maurino C. Maria - bug report.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Valdo - bug report.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;sigit_yuwono - suggestion.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="862"/>
+        <location filename="../src/interface/helpaboutform_template.ui" line="866"/>
         <source>Close</source>
         <translation type="unfinished">關閉</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="69"/>
         <source>Authors</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.32.0 (July 2017).&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET homepage: &lt;/span&gt;&lt;a href=&quot;http://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;http://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -47465,52 +47474,52 @@ Note: teacher not available and break are not counted as gaps.</source>
 <context>
     <name>QDialogButtonBox</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="665"/>
+        <location filename="../src/interface/fet.cpp" line="673"/>
         <source>&amp;OK</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;確定</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="667"/>
+        <location filename="../src/interface/fet.cpp" line="675"/>
         <source>OK</source>
         <translation>確定</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="670"/>
+        <location filename="../src/interface/fet.cpp" line="678"/>
         <source>&amp;Cancel</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;取消</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="672"/>
+        <location filename="../src/interface/fet.cpp" line="680"/>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="675"/>
+        <location filename="../src/interface/fet.cpp" line="683"/>
         <source>&amp;Yes</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;是</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="677"/>
+        <location filename="../src/interface/fet.cpp" line="685"/>
         <source>Yes to &amp;All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>&amp;以下全部皆確認為:&apos;是&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="681"/>
+        <location filename="../src/interface/fet.cpp" line="689"/>
         <source>N&amp;o to All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>&amp;以下全部皆確認為:&apos;否&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="684"/>
+        <location filename="../src/interface/fet.cpp" line="692"/>
         <source>Help</source>
         <translation type="unfinished">幫助</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="679"/>
+        <location filename="../src/interface/fet.cpp" line="687"/>
         <source>&amp;No</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;否</translation>
@@ -47519,13 +47528,13 @@ Note: teacher not available and break are not counted as gaps.</source>
 <context>
     <name>QGnomeTheme</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="710"/>
+        <location filename="../src/interface/fet.cpp" line="718"/>
         <source>&amp;OK</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation type="unfinished">&amp;確定</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="712"/>
+        <location filename="../src/interface/fet.cpp" line="720"/>
         <source>&amp;Cancel</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation type="unfinished">&amp;取消</translation>
@@ -47534,53 +47543,53 @@ Note: teacher not available and break are not counted as gaps.</source>
 <context>
     <name>QPlatformTheme</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="688"/>
+        <location filename="../src/interface/fet.cpp" line="696"/>
         <source>&amp;OK</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation type="unfinished">&amp;確定</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="690"/>
+        <location filename="../src/interface/fet.cpp" line="698"/>
         <source>OK</source>
         <translation type="unfinished">確定</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="693"/>
+        <location filename="../src/interface/fet.cpp" line="701"/>
         <source>&amp;Cancel</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation type="unfinished">&amp;取消</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="695"/>
+        <location filename="../src/interface/fet.cpp" line="703"/>
         <source>Cancel</source>
         <translation type="unfinished">取消</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="698"/>
+        <location filename="../src/interface/fet.cpp" line="706"/>
         <source>&amp;Yes</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation type="unfinished">&amp;是</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="700"/>
+        <location filename="../src/interface/fet.cpp" line="708"/>
         <source>Yes to &amp;All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation type="unfinished">&amp;以下全部皆確認為:&apos;是&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="702"/>
+        <location filename="../src/interface/fet.cpp" line="710"/>
         <source>&amp;No</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation type="unfinished">&amp;否</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="704"/>
+        <location filename="../src/interface/fet.cpp" line="712"/>
         <source>N&amp;o to All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation type="unfinished">&amp;以下全部皆確認為:&apos;否&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="707"/>
+        <location filename="../src/interface/fet.cpp" line="715"/>
         <source>Help</source>
         <translation type="unfinished">幫助</translation>
     </message>
@@ -47588,121 +47597,121 @@ Note: teacher not available and break are not counted as gaps.</source>
 <context>
     <name>RandomSeedDialog</name>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="358"/>
         <location filename="../src/interface/fetmainform.cpp" line="359"/>
+        <location filename="../src/interface/fetmainform.cpp" line="360"/>
         <source>Allowed minimum %1 to maximum %2</source>
         <translation>允許的最小值為%1 到 最大值為 %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="347"/>
+        <location filename="../src/interface/fetmainform.cpp" line="348"/>
         <source>Random seed</source>
         <translation>亂數種子</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="349"/>
+        <location filename="../src/interface/fetmainform.cpp" line="350"/>
         <source>Random seed X component:</source>
         <comment>Means the X component of the random seed (random seed has 2 components, X and Y). Please keep translation short</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="351"/>
+        <location filename="../src/interface/fetmainform.cpp" line="352"/>
         <source>Random seed Y component:</source>
         <comment>Means the Y component of the random seed (random seed has 2 components, X and Y). Please keep translation short</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="353"/>
+        <location filename="../src/interface/fetmainform.cpp" line="354"/>
         <source>OK</source>
         <translation>確定</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="355"/>
+        <location filename="../src/interface/fetmainform.cpp" line="356"/>
         <source>Help</source>
         <translation>幫助</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="356"/>
+        <location filename="../src/interface/fetmainform.cpp" line="357"/>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="406"/>
+        <location filename="../src/interface/fetmainform.cpp" line="407"/>
         <source>FET information</source>
         <translation>FET信息</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="407"/>
+        <location filename="../src/interface/fetmainform.cpp" line="408"/>
         <source>You can control the random behaviour of FET with this function</source>
         <translation>您可以使用這個功能來控制FET的亂數產生行為</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="408"/>
+        <location filename="../src/interface/fetmainform.cpp" line="409"/>
         <source>The random seed is the state of the random number generator.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="409"/>
+        <location filename="../src/interface/fetmainform.cpp" line="410"/>
         <source>It has two components, X and Y.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="410"/>
+        <location filename="../src/interface/fetmainform.cpp" line="411"/>
         <source>X is a value at least %1 and at most %2.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="411"/>
+        <location filename="../src/interface/fetmainform.cpp" line="412"/>
         <source>Y is a value at least %1 and at most %2.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="412"/>
+        <location filename="../src/interface/fetmainform.cpp" line="413"/>
         <source>The random seed before the generation of a timetable (the X and Y components) is saved on disk in the corresponding timetables directory, so that you can simulate again the same generation after that.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="414"/>
+        <location filename="../src/interface/fetmainform.cpp" line="415"/>
         <source>Mode of operation: to obtain the same timetable twice, give the random seed two values (say X=1234, Y=12345), then generate single, then make it again the same values (X=1234 and Y=12345), then generate single again. The timetables will be the same. If you generate multiple instead of single, the first set of timetables will be the same as the second set (if you generate the same number of timetables) but of course timetables inside each set will be different. If you enter the same random seed (X and Y) on different computers (but using the same FET version, see note below) and generate single, the timetables will be the same (if you generate multiple, the sets of timetables will correspond, the first timetable from simulation 1 with first timetable from simulation 2, etc.)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="423"/>
+        <location filename="../src/interface/fetmainform.cpp" line="424"/>
         <source>Note: of course you need exactly the same conditions to duplicate the same simulations (so, you need exactly the same data - activities, constraints, etc.).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="425"/>
+        <location filename="../src/interface/fetmainform.cpp" line="426"/>
         <source>Note: for different versions of FET, the behavior of generation may be totally different, even for the same data and the same random seed (same X and same Y), due to possible changes in the algorithm. You need to consider this as a precaution.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="428"/>
+        <location filename="../src/interface/fetmainform.cpp" line="429"/>
         <source>Note: when you start FET, each time, the random seed X is the number of seconds elapsed since 1 January 1970 and the random seed Y is the next number in the Y series, after the number of seconds elapsed since 1 January 1970</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="431"/>
+        <location filename="../src/interface/fetmainform.cpp" line="432"/>
         <source>After you generate (even partially), the random seed (X and Y components) will change (each call of the random number generator updates the random seed components to the next numbers in the sequence, and there are many calls to this random generating routine in the generate function)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="434"/>
+        <location filename="../src/interface/fetmainform.cpp" line="435"/>
         <source>This setting is useful for more things, maybe one thing is bug report: send you file along with the random seed at the start of generating (the two components, X and Y, are saved in the timetable directory at the start of generation)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="443"/>
+        <location filename="../src/interface/fetmainform.cpp" line="444"/>
         <source>The random seed X component must be at least %1 and at most %2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="449"/>
+        <location filename="../src/interface/fetmainform.cpp" line="450"/>
         <source>The random seed Y component must be at least %1 and at most %2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="443"/>
-        <location filename="../src/interface/fetmainform.cpp" line="449"/>
+        <location filename="../src/interface/fetmainform.cpp" line="444"/>
+        <location filename="../src/interface/fetmainform.cpp" line="450"/>
         <source>FET warning</source>
         <translation type="unfinished">FET 警告</translation>
     </message>
@@ -53224,17 +53233,17 @@ Bottom: %4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1283"/>
+        <location filename="../src/interface/fet.cpp" line="1291"/>
         <source>Please check the constraints related to the activity below, which might be impossible to schedule:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1289"/>
+        <location filename="../src/interface/fet.cpp" line="1297"/>
         <source>No: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1293"/>
+        <location filename="../src/interface/fet.cpp" line="1301"/>
         <source>Id: %1 (%2)</source>
         <comment>%1 is id of activity, %2 is detailed description of activity</comment>
         <translation type="unfinished"></translation>
@@ -54346,435 +54355,738 @@ Bottom: %4</source>
 <context>
     <name>TimetableViewForm</name>
     <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="484"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="492"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="710"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="573"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="848"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="867"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="487"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="657"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="682"/>
         <source>permanently locked time</source>
         <comment>refers to activity</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="488"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="496"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="714"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="577"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="852"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="871"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="491"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="661"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="686"/>
         <source>locked time</source>
         <comment>refers to activity</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="492"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="500"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="718"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="581"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="856"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="875"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="495"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="665"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="690"/>
         <source>permanently locked space</source>
         <comment>refers to activity</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="495"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="503"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="721"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="584"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="859"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="878"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="498"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="668"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="693"/>
         <source>locked space</source>
         <comment>refers to activity</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="747"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="756"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1025"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="850"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1200"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1219"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="749"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="966"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="991"/>
         <source>Added %1 locking time constraints.</source>
         <comment>%1 is &gt;= 2, so constraints is plural</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="753"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="762"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1031"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="856"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1206"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1225"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="755"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="972"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="997"/>
         <source>Added %1 locking space constraints.</source>
         <comment>%1 is &gt;= 2, so constraints is plural</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="759"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="768"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1037"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="862"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1212"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1231"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="761"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="978"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1003"/>
         <source>Removed %1 locking time constraints.</source>
         <comment>%1 is &gt;= 2, so constraints is plural</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="765"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="774"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1043"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="868"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1218"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1237"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="767"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="984"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1009"/>
         <source>Removed %1 locking space constraints.</source>
         <comment>%1 is &gt;= 2, so constraints is plural</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="776"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="785"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1054"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="879"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1229"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1248"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="778"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="995"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1020"/>
         <source>No locking constraints added or removed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="809"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="818"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1103"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="912"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1278"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1297"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="811"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1044"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1069"/>
         <source>Lock/unlock: you can select one or more activities in the table and toggle lock/unlock in time, space or both.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="811"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="820"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1105"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="914"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1280"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1299"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="813"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1046"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1071"/>
         <source>There will be added or removed locking constraints for the selected activities (they can be unlocked only if they are not permanently locked).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="333"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="333"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="514"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="403"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="610"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="615"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="329"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="487"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="498"/>
         <source>PLT</source>
         <comment>Abbreviation for permanently locked time. There are 4 string: permanently locked time, permanently locked space, locked time, locked space. Make sure their abbreviations contain different letters and are visually different, so user can easily differentiate between them. These abbreviations may appear also in other places, please use the same abbreviations.</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="339"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="339"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="520"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="409"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="616"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="621"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="335"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="493"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="504"/>
         <source>LT</source>
         <comment>Abbreviation for locked time. There are 4 string: permanently locked time, permanently locked space, locked time, locked space. Make sure their abbreviations contain different letters and are visually different, so user can easily differentiate between them. These abbreviations may appear also in other places, please use the same abbreviations.</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="345"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="345"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="526"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="415"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="622"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="627"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="341"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="499"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="510"/>
         <source>PLS</source>
         <comment>Abbreviation for permanently locked space. There are 4 string: permanently locked time, permanently locked space, locked time, locked space. Make sure their abbreviations contain different letters and are visually different, so user can easily differentiate between them. These abbreviations may appear also in other places, please use the same abbreviations.</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="350"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="350"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="531"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="420"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="627"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="632"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="346"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="504"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="515"/>
         <source>LS</source>
         <comment>Abbreviation for locked space. There are 4 string: permanently locked time, permanently locked space, locked time, locked space. Make sure their abbreviations contain different letters and are visually different, so user can easily differentiate between them. These abbreviations may appear also in other places, please use the same abbreviations.</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="745"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="754"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1023"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="848"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1198"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1217"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="747"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="964"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="989"/>
         <source>Added 1 locking time constraint.</source>
         <comment>constraint is singular (only 1 constraint)</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="751"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="760"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1029"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="854"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1204"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1223"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="753"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="970"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="995"/>
         <source>Added 1 locking space constraint.</source>
         <comment>constraint is singular (only 1 constraint)</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="757"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="766"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1035"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="860"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1210"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1229"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="759"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="976"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1001"/>
         <source>Removed 1 locking time constraint.</source>
         <comment>constraint is singular (only 1 constraint)</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="763"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="772"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1041"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="866"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1216"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1235"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="765"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="982"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1007"/>
         <source>Removed 1 locking space constraint.</source>
         <comment>constraint is singular (only 1 constraint)</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="813"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="822"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1107"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="916"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1282"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1301"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="815"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1048"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1073"/>
         <source>Locking time constraints are constraints of type activity preferred starting time. Locking space constraints are constraints of type activity preferred room. You can see these constraints in the corresponding constraints dialogs. New locking constraints are added at the end of the list of constraints.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="816"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="825"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1110"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="919"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1285"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1304"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="818"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1051"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1076"/>
         <source>If a cell is (permanently) locked in time or space, it contains abbreviations to show that: PLT (permanently locked time), LT (locked time), PLS (permanently locked space) or LS (locked space).</source>
         <comment>Translate the abbreviations also. Make sure the abbreviations in your language are different between themselves and the user can differentiate easily between them. These abbreviations may appear also in other places, please use the same abbreviations.</comment>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
-    <name>TimetableViewRoomsForm</name>
+    <name>TimetableViewRoomsDaysHorizontalForm</name>
     <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="602"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="675"/>
-        <source>Added the following constraint:</source>
-        <translation>新增下列的約束限制條件</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="538"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="557"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="657"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="729"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="777"/>
-        <source>FET information</source>
-        <translation>FET&apos;信息</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="658"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="730"/>
-        <source>Skip information</source>
-        <translation>跳過並忽略 訊息</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="658"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="730"/>
-        <source>See next</source>
-        <translation>見 下一個</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="201"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="237"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="241"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="252"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="261"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="266"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="286"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="436"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="442"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="446"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="465"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="544"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="548"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="564"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="570"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="617"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="629"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="642"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="690"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="702"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="715"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="201"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="237"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="241"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="252"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="261"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="266"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="286"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="436"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="442"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="446"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="465"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="552"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="556"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="578"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="625"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="637"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="650"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="698"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="710"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="723"/>
         <source>FET warning</source>
-        <translation>FET 警告</translation>
+        <translation type="unfinished">FET 警告</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="510"/>
-        <source>Break with weight 100% in this slot</source>
-        <translation>因&apos;權重&apos;100％ 插入而中斷</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="506"/>
-        <source>Room is not available with weight %1%</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="201"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="201"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
-        <translation>無法顯示的排課時間表，因為您添加或刪除一些教室。請重新生成時間表，然後查看</translation>
+        <translation type="unfinished">無法顯示的排課時間表，因為您已增加或刪除一些教室。請重新生成排課時間表，然後查看。</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="539"/>
-        <source>Allocation in course.
-Please stop simulation before this.</source>
-        <translation>分配過程。
-在此之前，請停止模擬。</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="820"/>
-        <source>FET help</source>
-        <translation>FET 幫助</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="286"/>
-        <source>You have an old timetable view rooms dialog opened - please close it</source>
-        <translation>你已開啟一個舊的教室的排課表 - 請關閉</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="645"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="718"/>
-        <source>The following constraint will be deleted:</source>
-        <translation>下列的限制條件將被刪除</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="624"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="697"/>
-        <source>Constraint %1 will not be removed, because it is permanently locked. If you want to unlock it you must go to the constraints menu.</source>
-        <translation>約束%1不會被刪除，因為它已永久鎖定。如果你想解開它，你必須去限制條件的選單。</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="619"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="631"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="692"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="704"/>
-        <source>A possible problem might be synchronization - so maybe try to close the timetable view dialog and open it again</source>
-        <translation>可能會同時發生問題，也許試著關閉這個課表檢視對話框，然後再次試著重新打開看看。</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="617"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="629"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="690"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="702"/>
-        <source>Small problem detected</source>
-        <translation>偵測到一些小問題</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="618"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="630"/>
-        <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation>一個可能的問題可能是你有2個或多個約束類型的教學活動偏好的起始時間與設成權重100％的相關教學活動ID%1，請您只保留其中一個</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="620"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="632"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="693"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="705"/>
-        <source>Please report possible bug</source>
-        <translation>請回報錯誤</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="642"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="715"/>
-        <source>You may have a problem, because FET expected to delete 1 constraint, but will delete %1 constraints</source>
-        <translation>您可能有一個問題，因為FET期望刪除1個約束條件，但將會刪除%1 約束條件。</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="691"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="703"/>
-        <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation>一個可能的問題可能是你有2個或多個約束類型的教學活動偏好的教室空間設成權重100％的相關教學活動ID%1，請您只保留其中一個</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="252"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="570"/>
-        <source>Invalid room - please close this dialog and open a new view rooms timetable dialog</source>
-        <translation>無效的教室 - 請關閉該對話框，然後開一個新的教室的排課時間表對話框看看。
-</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="465"/>
-        <source>Invalid room - please close this dialog and open a new view rooms dialog</source>
-        <translation>無效的教室 - 請關閉該對話框，然後開一個新的教室的排課時間表對話框看看。
-</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="557"/>
-        <source>Please select a room</source>
-        <translation>請選擇一間教室</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="237"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="241"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="442"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="446"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="544"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="548"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="564"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="237"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="241"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="442"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="446"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="552"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="556"/>
         <source>Timetable not available in view rooms timetable dialog - please generate a new timetable</source>
-        <translation>查閱教室時間表對話框無法使用 - 請重新生成一個新的時間表</translation>
+        <translation type="unfinished">查閱教室時間表對話框無法使用 - 請重新生成一個新的時間表</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="261"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="266"/>
-        <location filename="../src/interface/timetableviewroomsform.cpp" line="436"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="252"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="578"/>
+        <source>Invalid room - please close this dialog and open a new view rooms timetable dialog</source>
+        <translation type="unfinished">無效的教室 - 請關閉該對話框，然後開一個新的教室的排課時間表對話框看看。
+</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="261"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="266"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="436"/>
         <source>Timetable not available in view rooms timetable dialog - please generate a new timetable or close the timetable view rooms dialog</source>
-        <translation>查閱教室時間表對話框無法使用 - 請重新生成一個新的時間表</translation>
-    </message>
-</context>
-<context>
-    <name>TimetableViewRoomsForm_template</name>
-    <message>
-        <location filename="../src/interface/timetableviewroomsform_template.ui" line="46"/>
-        <source>Time</source>
-        <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation>時間限制</translation>
+        <translation type="unfinished">查閱教室時間表對話框無法使用 - 請重新生成一個新的時間表</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform_template.ui" line="53"/>
-        <source>Space</source>
-        <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation>空間限制</translation>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="286"/>
+        <source>You have an old timetable view rooms dialog opened - please close it</source>
+        <translation type="unfinished">你已開啟一個舊的教室的排課表 - 請關閉</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform_template.ui" line="62"/>
-        <source>Both</source>
-        <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation>兩者</translation>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="465"/>
+        <source>Invalid room - please close this dialog and open a new view rooms dialog</source>
+        <translation type="unfinished">無效的教室 - 請關閉該對話框，然後開一個新的教室的排課時間表對話框看看。
+</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform_template.ui" line="84"/>
-        <source>Help</source>
-        <translation type="unfinished">幫助</translation>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="485"/>
+        <source>Room: %1</source>
+        <translation type="unfinished">教室=%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform_template.ui" line="112"/>
-        <source>Room&apos;s name</source>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="514"/>
+        <source>Room is not available with weight %1%</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform_template.ui" line="38"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="518"/>
+        <source>Break with weight 100% in this slot</source>
+        <translation type="unfinished">因&apos;權重&apos;100％ 插入而中斷</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="546"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="565"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="665"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="738"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="786"/>
+        <source>FET information</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="547"/>
+        <source>Allocation in course.
+Please stop simulation before this.</source>
+        <translation type="unfinished">分配過程。
+在此之前，請停止模擬。</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="565"/>
+        <source>Please select a room</source>
+        <translation type="unfinished">請選擇一間教室</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="610"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="683"/>
+        <source>Added the following constraint:</source>
+        <translation type="unfinished">新增下列的約束限制條件</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="625"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="637"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="698"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="710"/>
+        <source>Small problem detected</source>
+        <translation type="unfinished">偵測到一些小問題</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="626"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="638"/>
+        <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
+        <translation type="unfinished">一個可能的問題可能是你有2個或多個約束類型的教學活動偏好的起始時間與設成權重100％的相關教學活動ID%1，請您只保留其中一個</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="627"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="639"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="700"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="712"/>
+        <source>A possible problem might be synchronization - so maybe try to close the timetable view dialog and open it again</source>
+        <translation type="unfinished">可能會同時發生問題，也許試著關閉這個課表檢視對話框，然後再次試著重新打開看看。</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="628"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="640"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="701"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="713"/>
+        <source>Please report possible bug</source>
+        <translation type="unfinished">請回報錯誤</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="632"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="705"/>
+        <source>Constraint %1 will not be removed, because it is permanently locked. If you want to unlock it you must go to the constraints menu.</source>
+        <translation type="unfinished">約束%1不會被刪除，因為它已永久鎖定。如果你想解開它，你必須去限制條件的選單。</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="650"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="723"/>
+        <source>You may have a problem, because FET expected to delete 1 constraint, but will delete %1 constraints</source>
+        <translation type="unfinished">您可能有一個問題，因為FET期望刪除1個約束條件，但將會刪除%1 約束條件。</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="653"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="726"/>
+        <source>The following constraint will be deleted:</source>
+        <translation type="unfinished">下列的限制條件將被刪除</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="666"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="739"/>
+        <source>Skip information</source>
+        <translation type="unfinished">跳過並忽略 訊息</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="666"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="739"/>
+        <source>See next</source>
+        <translation type="unfinished">見 下一個</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="699"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="711"/>
+        <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
+        <translation type="unfinished">一個可能的問題可能是你有2個或多個約束類型的教學活動偏好的教室空間設成權重100％的相關教學活動ID%1，請您只保留其中一個</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="829"/>
+        <source>FET help</source>
+        <translation type="unfinished">FET 幫助</translation>
+    </message>
+</context>
+<context>
+    <name>TimetableViewRoomsDaysHorizontalForm_template</name>
+    <message>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="14"/>
+        <source>View rooms days horizontal timetable</source>
+        <extracomment>Title of dialog</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="38"/>
         <source>Lock/unlock</source>
         <extracomment>This is a group box for locking/unlocking buttons</extracomment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform_template.ui" line="91"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="46"/>
+        <source>Time</source>
+        <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
+        <translation type="unfinished">時間限制</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="53"/>
+        <source>Space</source>
+        <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="62"/>
+        <source>Both</source>
+        <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
+        <translation type="unfinished">兩者</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="84"/>
+        <source>Help</source>
+        <translation type="unfinished">幫助</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="91"/>
         <source>Close</source>
         <translation type="unfinished">關閉</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsform_template.ui" line="14"/>
-        <source>View rooms timetable</source>
-        <extracomment>Title of dialog</extracomment>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="112"/>
+        <source>Room&apos;s name</source>
         <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TimetableViewRoomsTimeHorizontalForm</name>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="205"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="415"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="422"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="429"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="643"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="649"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="655"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="661"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="671"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="680"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="771"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="777"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="783"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="863"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="877"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="903"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="909"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="946"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="960"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="988"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="994"/>
+        <source>FET warning</source>
+        <translation type="unfinished">FET 警告</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="205"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="429"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="661"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="783"/>
+        <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
+        <translation type="unfinished">無法顯示的排課時間表，因為您已增加或刪除一些教室。請重新生成排課時間表，然後查看。</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="308"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="318"/>
+        <source>px</source>
+        <comment>Abbreviation for pixels</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="316"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="326"/>
+        <source>Automatic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="415"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="422"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="655"/>
+        <source>Timetable not available in view rooms timetable dialog - please generate a new timetable or close the timetable view rooms dialog</source>
+        <translation type="unfinished">查閱教室時間表對話框無法使用 - 請重新生成一個新的時間表</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="643"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="649"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="771"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="777"/>
+        <source>Timetable not available in view rooms timetable dialog - please generate a new timetable</source>
+        <translation type="unfinished">查閱教室時間表對話框無法使用 - 請重新生成一個新的時間表</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="671"/>
+        <source>Cannot display the timetable, because you added or removed some teachers. Please regenerate the timetable and then view it</source>
+        <translation type="unfinished">無法顯示的排課時間表，因為您添加或刪除一些老師。請重新生成時間表，然後再查看。</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="680"/>
+        <source>The room is invalid - please close this dialog and open a new view rooms timetable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="697"/>
+        <source>Room: %1</source>
+        <translation type="unfinished">教室=%1</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="732"/>
+        <source>Room is not available with weight %1%</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="736"/>
+        <source>Break with weight 100% in this slot</source>
+        <translation type="unfinished">因&apos;權重&apos;100％ 插入而中斷</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="765"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="924"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1009"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1055"/>
+        <source>FET information</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="766"/>
+        <source>Allocation in course.
+Please stop simulation before this.</source>
+        <translation type="unfinished">分配過程。
+在此之前，請停止模擬。</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="863"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="877"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="946"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="960"/>
+        <source>Small problem detected</source>
+        <translation type="unfinished">偵測到一些小問題</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="864"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="878"/>
+        <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
+        <translation type="unfinished">一個可能的問題可能是你有2個或多個約束類型的教學活動偏好的起始時間與設成權重100％的相關教學活動ID%1，請您只保留其中一個</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="865"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="879"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="948"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="962"/>
+        <source>A possible problem might be synchronization - so maybe try to close the timetable view dialog and open it again</source>
+        <translation type="unfinished">可能會同時發生問題，也許試著關閉這個課表檢視對話框，然後再次試著重新打開看看。</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="866"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="880"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="949"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="963"/>
+        <source>Please report possible bug</source>
+        <translation type="unfinished">請回報錯誤</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="871"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="954"/>
+        <source>Constraint %1 will not be removed, because it is permanently locked. If you want to unlock it you must go to the constraints menu.</source>
+        <translation type="unfinished">約束%1不會被刪除，因為它已永久鎖定。如果你想解開它，你必須去限制條件的選單。</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="898"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="983"/>
+        <source>Added the following constraint:</source>
+        <translation type="unfinished">新增下列的約束限制條件</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="903"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="988"/>
+        <source>You may have a problem, because FET expected to add 1 constraint, but this is not possible. Please report possible bug</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="909"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="994"/>
+        <source>You may have a problem, because FET expected to delete 1 constraint, but will delete %1 constraints</source>
+        <translation type="unfinished">您可能有一個問題，因為FET期望刪除1個約束條件，但將會刪除%1 約束條件。</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="912"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="997"/>
+        <source>The following constraint will be deleted:</source>
+        <translation type="unfinished">下列的限制條件將被刪除</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="925"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1010"/>
+        <source>Skip information</source>
+        <translation type="unfinished">跳過並忽略 訊息</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="925"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1010"/>
+        <source>See next</source>
+        <translation type="unfinished">見 下一個</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="947"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="961"/>
+        <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
+        <translation type="unfinished">一個可能的問題可能是你有2個或多個約束類型的教學活動偏好的教室空間設成權重100％的相關教學活動ID%1，請您只保留其中一個</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1115"/>
+        <source>If a whole column (day+hour) is selected, the activities with no room from that column will NOT be locked/unlocked.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1118"/>
+        <source>A bold font cell means that the activity is locked in time, either permanently or not.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1120"/>
+        <source>An italic font cell means that the activity is locked in space, either permanently or not.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1122"/>
+        <source>FET help</source>
+        <translation type="unfinished">FET 幫助</translation>
+    </message>
+</context>
+<context>
+    <name>TimetableViewRoomsTimeHorizontalForm_template</name>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="14"/>
+        <source>View rooms time horizontal timetable</source>
+        <extracomment>Title of dialog to view the rooms timetable</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="39"/>
+        <source>Width</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="46"/>
+        <source>Height</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="70"/>
+        <source>Lock</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="77"/>
+        <source>Unlock</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="84"/>
+        <source>Toggle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="100"/>
+        <source>Students</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="107"/>
+        <source>Subjects</source>
+        <translation type="unfinished">學科</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="114"/>
+        <source>Teachers</source>
+        <translation type="unfinished">老師</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="132"/>
+        <source>Time</source>
+        <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
+        <translation type="unfinished">時間限制</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="146"/>
+        <source>Space</source>
+        <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="160"/>
+        <source>Both</source>
+        <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
+        <translation type="unfinished">兩者</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="175"/>
+        <source>Help</source>
+        <translation type="unfinished">幫助</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="182"/>
+        <source>Close</source>
+        <translation type="unfinished">關閉</translation>
     </message>
 </context>
 <context>
@@ -54840,7 +55152,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="516"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="638"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">無法顯示的排課時間表，因為您已增加或刪除一些教室。請重新生成排課時間表，然後查看。</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="340"/>
@@ -55035,182 +55347,187 @@ Please stop simulation before this.</source>
 <context>
     <name>TimetableViewStudentsTimeHorizontalForm</name>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="375"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="385"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="380"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="390"/>
         <source>px</source>
         <comment>Abbreviation for pixels</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="383"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="393"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="388"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="398"/>
         <source>Automatic</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="481"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="488"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="744"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="750"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="756"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="773"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="909"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="915"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1038"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1052"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1078"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1084"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1121"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1135"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1163"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1169"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="486"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="493"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="760"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="766"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="772"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="792"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="928"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="934"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1057"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1071"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1097"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1103"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1140"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1154"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1182"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1188"/>
         <source>FET warning</source>
         <translation type="unfinished">FET 警告</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="481"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="750"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="486"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="766"/>
         <source>Timetable not available in view students timetable dialog - please generate a new timetable or close the timetable view students dialog</source>
         <translation type="unfinished">查閱學生班級時間表對話框無法使用 - 請重新生成一個新的時間表</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="488"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="756"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="915"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="493"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="772"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="934"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">無法顯示的排課時間表，因為您已增加或刪除一些教室。請重新生成排課時間表，然後查看。</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="744"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="909"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="760"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="928"/>
         <source>Timetable not available in view students timetable dialog - please generate a new timetable</source>
         <translation type="unfinished">查閱學生班級課表對話框無法使用 - 請重新生成一個新的排課時間表</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="773"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="792"/>
         <source>The students set is invalid - please close this dialog and open a new view students timetable</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="842"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="861"/>
         <source>Room: %1</source>
         <translation type="unfinished">教室=%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="871"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="890"/>
         <source>Students set is not available 100% in this slot</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="875"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="894"/>
         <source>Break with weight 100% in this slot</source>
         <translation type="unfinished">因&apos;權重&apos;100％ 插入而中斷</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="903"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1099"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1184"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1230"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="922"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1118"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1203"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1249"/>
         <source>FET information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="904"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="923"/>
         <source>Allocation in course.
 Please stop simulation before this.</source>
         <translation type="unfinished">分配過程。
 在此之前，請停止模擬。</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1038"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1052"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1121"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1135"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1057"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1071"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1140"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1154"/>
         <source>Small problem detected</source>
         <translation type="unfinished">偵測到一些小問題</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1039"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1053"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1058"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1072"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
         <translation type="unfinished">一個可能的問題可能是你有2個或多個約束類型的教學活動偏好的起始時間與設成權重100％的相關教學活動ID%1，請您只保留其中一個</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1040"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1054"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1123"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1137"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1059"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1073"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1142"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1156"/>
         <source>A possible problem might be synchronization - so maybe try to close the timetable view dialog and open it again</source>
         <translation type="unfinished">可能會同時發生問題，也許試著關閉這個課表檢視對話框，然後再次試著重新打開看看。</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1041"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1055"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1124"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1138"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1060"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1074"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1143"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1157"/>
         <source>Please report possible bug</source>
         <translation type="unfinished">請回報錯誤</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1046"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1129"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1065"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1148"/>
         <source>Constraint %1 will not be removed, because it is permanently locked. If you want to unlock it you must go to the constraints menu.</source>
         <translation type="unfinished">約束%1不會被刪除，因為它已永久鎖定。如果你想解開它，你必須去限制條件的選單。</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1073"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1158"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1092"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1177"/>
         <source>Added the following constraint:</source>
         <translation type="unfinished">新增下列的約束限制條件</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1078"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1163"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1097"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1182"/>
         <source>You may have a problem, because FET expected to add 1 constraint, but this is not possible. Please report possible bug</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1084"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1169"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1103"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1188"/>
         <source>You may have a problem, because FET expected to delete 1 constraint, but will delete %1 constraints</source>
         <translation type="unfinished">您可能有一個問題，因為FET期望刪除1個約束條件，但將會刪除%1 約束條件。</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1087"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1172"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1106"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1191"/>
         <source>The following constraint will be deleted:</source>
         <translation type="unfinished">下列的限制條件將被刪除</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1100"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1185"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1119"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1204"/>
         <source>Skip information</source>
         <translation type="unfinished">跳過並忽略 訊息</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1100"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1185"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1119"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1204"/>
         <source>See next</source>
         <translation type="unfinished">見 下一個</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1122"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1136"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1141"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1155"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
         <translation type="unfinished">一個可能的問題可能是你有2個或多個約束類型的教學活動偏好的教室空間設成權重100％的相關教學活動ID%1，請您只保留其中一個</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1290"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1309"/>
         <source>If a whole column (day+hour) is selected, there will be locked/unlocked also the dummy activities (activities with no students sets) from that column.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1293"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1312"/>
         <source>A bold font cell means that the activity is locked in time, either permanently or not.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1295"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1314"/>
+        <source>An italic font cell means that the activity is locked in space, either permanently or not.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1316"/>
         <source>FET help</source>
         <translation type="unfinished">FET 幫助</translation>
     </message>
@@ -55341,7 +55658,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="443"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="554"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">無法顯示的排課時間表，因為您已增加或刪除一些教室。請重新生成排課時間表，然後查看。</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="263"/>
@@ -55518,190 +55835,195 @@ Please stop simulation before this.</source>
 <context>
     <name>TimetableViewTeachersTimeHorizontalForm</name>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="193"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="396"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="403"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="605"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="611"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="617"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="624"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="204"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="407"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="414"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="627"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="633"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="718"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="724"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="804"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="818"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="844"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="850"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="887"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="901"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="929"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="935"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="639"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="649"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="658"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="743"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="749"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="829"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="843"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="869"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="875"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="912"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="926"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="954"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="960"/>
         <source>FET warning</source>
         <translation type="unfinished">FET 警告</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="193"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="624"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="204"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="649"/>
         <source>Cannot display the timetable, because you added or removed some teachers. Please regenerate the timetable and then view it</source>
         <translation type="unfinished">無法顯示的排課時間表，因為您添加或刪除一些老師。請重新生成時間表，然後再查看。</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="296"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="306"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="307"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="317"/>
         <source>px</source>
         <comment>Abbreviation for pixels</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="304"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="314"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="315"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="325"/>
         <source>Automatic</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="396"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="611"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="407"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="633"/>
         <source>Timetable not available in view teachers timetable dialog - please generate a new timetable or close the timetable view teachers dialog</source>
         <translation type="unfinished">查閱老師課表對話框無法使用 - 請重新生成一個新的時間表或關閉所查閱老師課表對話框。</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="403"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="617"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="724"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="414"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="639"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="749"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">無法顯示的排課時間表，因為您已增加或刪除一些教室。請重新生成排課時間表，然後查看。</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="605"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="718"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="627"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="743"/>
         <source>Timetable not available in view teachers timetable dialog - please generate a new timetable</source>
         <translation type="unfinished">查閱學老師課表對話框無法使用 - 請重新生成一個新的排課時間表</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="633"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="658"/>
         <source>The teacher is invalid - please close this dialog and open a new view teachers timetable</source>
         <translation type="unfinished">該老師是無效的，請關閉此視窗然後打開查閱其他老師的課表</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="651"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="676"/>
         <source>Room: %1</source>
         <translation type="unfinished">教室=%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="679"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="704"/>
         <source>Teacher is not available 100% in this slot</source>
         <translation type="unfinished">該老師在此課程插槽100%無效</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="683"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="708"/>
         <source>Break with weight 100% in this slot</source>
         <translation type="unfinished">因&apos;權重&apos;100％ 插入而中斷</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="712"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="865"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="950"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="996"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="737"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="890"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="975"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1021"/>
         <source>FET information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="713"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="738"/>
         <source>Allocation in course.
 Please stop simulation before this.</source>
         <translation type="unfinished">分配過程。
 在此之前，請停止模擬。</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="804"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="818"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="887"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="901"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="829"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="843"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="912"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="926"/>
         <source>Small problem detected</source>
         <translation type="unfinished">偵測到一些小問題</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="805"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="819"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="830"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="844"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
         <translation type="unfinished">一個可能的問題可能是你有2個或多個約束類型的教學活動偏好的起始時間與設成權重100％的相關教學活動ID%1，請您只保留其中一個</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="806"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="820"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="889"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="903"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="831"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="845"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="914"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="928"/>
         <source>A possible problem might be synchronization - so maybe try to close the timetable view dialog and open it again</source>
         <translation type="unfinished">可能會同時發生問題，也許試著關閉這個課表檢視對話框，然後再次試著重新打開看看。</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="807"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="821"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="890"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="904"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="832"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="846"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="915"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="929"/>
         <source>Please report possible bug</source>
         <translation type="unfinished">請回報錯誤</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="812"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="895"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="837"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="920"/>
         <source>Constraint %1 will not be removed, because it is permanently locked. If you want to unlock it you must go to the constraints menu.</source>
         <translation type="unfinished">約束%1不會被刪除，因為它已永久鎖定。如果你想解開它，你必須去限制條件的選單。</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="839"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="924"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="864"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="949"/>
         <source>Added the following constraint:</source>
         <translation type="unfinished">新增下列的約束限制條件</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="844"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="929"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="869"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="954"/>
         <source>You may have a problem, because FET expected to add 1 constraint, but this is not possible. Please report possible bug</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="850"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="935"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="875"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="960"/>
         <source>You may have a problem, because FET expected to delete 1 constraint, but will delete %1 constraints</source>
         <translation type="unfinished">您可能有一個問題，因為FET期望刪除1個約束條件，但將會刪除%1 約束條件。</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="853"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="938"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="878"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="963"/>
         <source>The following constraint will be deleted:</source>
         <translation type="unfinished">下列的限制條件將被刪除</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="866"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="951"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="891"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="976"/>
         <source>Skip information</source>
         <translation type="unfinished">跳過並忽略 訊息</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="866"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="951"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="891"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="976"/>
         <source>See next</source>
         <translation type="unfinished">見 下一個</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="888"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="902"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="913"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="927"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
         <translation type="unfinished">一個可能的問題可能是你有2個或多個約束類型的教學活動偏好的教室空間設成權重100％的相關教學活動ID%1，請您只保留其中一個</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1056"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1081"/>
         <source>If a whole column (day+hour) is selected, there will be locked/unlocked also the dummy activities (activities with no teacher) from that column.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1059"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1084"/>
         <source>A bold font cell means that the activity is locked in time, either permanently or not.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1061"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1086"/>
+        <source>An italic font cell means that the activity is locked in space, either permanently or not.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1088"/>
         <source>FET help</source>
         <translation type="unfinished">FET 幫助</translation>
     </message>
