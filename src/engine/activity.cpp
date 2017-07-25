@@ -220,7 +220,7 @@ bool Activity::operator==(const Activity& a) const
 	return true;
 }
 
-bool Activity::searchTeacher(const QString& teacherName) const
+bool Activity::hasTeacher(const QString& teacherName) const
 {
 	return this->teachersNames.indexOf(teacherName)!=-1;
 }
@@ -245,7 +245,7 @@ void Activity::renameTeacher(const QString& initialTeacherName, const QString& f
 	assert(t<=1);
 }
 
-bool Activity::searchStudents(const QString& studentsName) const
+bool Activity::hasStudents(const QString& studentsName) const
 {
 	return this->studentsNames.indexOf(studentsName)!=-1;
 }

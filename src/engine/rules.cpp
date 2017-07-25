@@ -7107,7 +7107,7 @@ int Rules::activateTeacher(const QString& teacherName)
 	int count=0;
 	for(int i=0; i<this->activitiesList.size(); i++){
 		Activity* act=this->activitiesList[i];
-		if(act->searchTeacher(teacherName)){
+		if(act->hasTeacher(teacherName)){
 			if(!act->active)
 				count++;
 			act->active=true;
@@ -7205,7 +7205,7 @@ int Rules::deactivateTeacher(const QString& teacherName)
 	int count=0;
 	for(int i=0; i<this->activitiesList.size(); i++){
 		Activity* act=this->activitiesList[i];
-		if(act->searchTeacher(teacherName)){
+		if(act->hasTeacher(teacherName)){
 			if(act->active)
 				count++;
 			act->active=false;

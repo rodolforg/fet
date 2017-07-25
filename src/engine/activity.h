@@ -228,7 +228,7 @@ public:
 		int _nTotalStudents,
 		int _computedNumberOfStudents);
 		
-	bool searchTeacher(const QString& teacherName) const;
+	bool hasTeacher(const QString& teacherName) const;
 
 	/**
 	Removes this teacher from the list of teachers
@@ -240,7 +240,7 @@ public:
 	*/
 	void renameTeacher(const QString& initialTeacherName, const QString& finalTeacherName);
 	
-	bool searchStudents(const QString& studentsName) const;
+	bool hasStudents(const QString& studentsName) const;
 
 	/**
 	Removes this students set from the list of students
