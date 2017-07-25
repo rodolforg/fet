@@ -47,8 +47,8 @@ public:
 	QList<int> ids;
 	QList<int> indices; //in the rules internal activities list
 
-	QString getXmlDescription(const Rules& r) const;
-	QString getDescription(const Rules& r) const;
+	QString getXmlDescription() const;
+	QString getDescription() const;
 	QString getDetailedDescription(const Rules& r) const;
 	
 	void removeUseless(const Rules &r);

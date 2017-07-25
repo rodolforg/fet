@@ -46,10 +46,8 @@ void GroupActivitiesInInitialOrderItem::removeUseless(const Rules& r)
 	ids=tmpList;
 }
 
-QString GroupActivitiesInInitialOrderItem::getXmlDescription(const Rules &r) const
+QString GroupActivitiesInInitialOrderItem::getXmlDescription() const
 {
-	Q_UNUSED(r);
-
 	QString s;
 
 	s+="<GroupActivitiesInInitialOrder>\n";
@@ -71,10 +69,8 @@ QString GroupActivitiesInInitialOrderItem::getXmlDescription(const Rules &r) con
 	return s;
 }
 
-QString GroupActivitiesInInitialOrderItem::getDescription(const Rules &r) const
+QString GroupActivitiesInInitialOrderItem::getDescription() const
 {
-	Q_UNUSED(r);
-
 	QString s;
 	if(!active)
 		s+="X - ";

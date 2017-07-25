@@ -7071,7 +7071,7 @@ bool Rules::write(QWidget *parent, const QString& filename) const
 		tos << "<Timetable_Generation_Options_List>\n";
 		for(int i=0; i<groupActivitiesInInitialOrderList.count(); i++){
 			GroupActivitiesInInitialOrderItem* item=groupActivitiesInInitialOrderList[i];
-			tos << item->getXmlDescription(*this);
+			tos << item->getXmlDescription();
 		}
 		tos << "</Timetable_Generation_Options_List>\n\n";
 	}
