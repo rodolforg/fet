@@ -302,7 +302,7 @@ void GeneratePreTest::MinDays_NumErrorMsgs_WhenPreparationOfMinDaysFails()
 
 	MinDaysBetweenActivities mdba;
 
-	mdba.prepare(mock.rules);
+	QVERIFY(mdba.prepare(mock.rules) == false);
 	QCOMPARE(mdba.getErrors().count(), 1);
 
 	acts.clear();
@@ -311,7 +311,7 @@ void GeneratePreTest::MinDays_NumErrorMsgs_WhenPreparationOfMinDaysFails()
 	mock.rules.timeConstraintsList.append(ctr2);
 	mock.rules.computeInternalStructure(NULL);
 
-	mdba.prepare(mock.rules);
+	QVERIFY(mdba.prepare(mock.rules) == false);
 	QCOMPARE(mdba.getErrors().count(), 2);
 }
 
@@ -570,7 +570,7 @@ void GeneratePreTest::MaxDays_NumErrorMsgs_WhenPreparationOfMaxDaysFails()
 
 	MaxDaysBetweenActivities mdba;
 
-	mdba.prepare(mock.rules);
+	QVERIFY(mdba.prepare(mock.rules) == false);
 	QCOMPARE(mdba.getErrors().count(), 1);
 
 	acts.clear();
@@ -579,7 +579,7 @@ void GeneratePreTest::MaxDays_NumErrorMsgs_WhenPreparationOfMaxDaysFails()
 	mock.rules.timeConstraintsList.append(ctr2);
 	mock.rules.computeInternalStructure(NULL);
 
-	mdba.prepare(mock.rules);
+	QVERIFY(mdba.prepare(mock.rules) == false);
 	QCOMPARE(mdba.getErrors().count(), 2);
 }
 
@@ -832,7 +832,7 @@ void GeneratePreTest::MinGaps_NumErrorMsgs_WhenPreparationOfMinGapsFails()
 
 	MinGapsBetweenActivities mgba;
 
-	mgba.prepare(mock.rules);
+	QVERIFY(mgba.prepare(mock.rules) == false);
 	QCOMPARE(mgba.getErrors().count(), 1);
 
 	acts.clear();
@@ -841,7 +841,7 @@ void GeneratePreTest::MinGaps_NumErrorMsgs_WhenPreparationOfMinGapsFails()
 	mock.rules.timeConstraintsList.append(ctr2);
 	mock.rules.computeInternalStructure(NULL);
 
-	mgba.prepare(mock.rules);
+	QVERIFY(mgba.prepare(mock.rules) == false);
 	QCOMPARE(mgba.getErrors().count(), 2);
 }
 
