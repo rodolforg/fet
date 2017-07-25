@@ -622,6 +622,12 @@ void AddActivityForm::addActivity()
 
 		if(t==QMessageBox::No)
 			return;
+
+		//Crash bug fixed when adding an activity without students but with a specified number of students >= 1
+		//Reported by Zsolt Udvari
+		//Reported and fixed on 2017-07-25
+		if(nStudentsSpinBox->value()>=0)
+			numberOfStudents=nStudentsSpinBox->value();
 	}
 	else{
 		for(int i=0; i<selectedStudentsListWidget->count(); i++){
