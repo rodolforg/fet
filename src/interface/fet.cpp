@@ -521,7 +521,7 @@ void setLanguage(QWidget* parent)
 	
 #ifndef FET_COMMAND_LINE
 	if(LANGUAGE_STYLE_RIGHT_TO_LEFT==true)
-		QGuiApplication::setLayoutDirection(Qt::RightToLeft);
+		QApplication::setLayoutDirection(Qt::RightToLeft);
 	
 	//retranslate
 	QList<QWidget*> tlwl = QApplication::topLevelWidgets();
