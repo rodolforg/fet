@@ -449,10 +449,8 @@ void Activity::computeInternalStructure(const Rules& r)
 	}
 }
 
-QString Activity::getXmlDescription(const Rules &r) const
+QString Activity::getXmlDescription() const
 {
-	Q_UNUSED(r);
-
 	QString s="<Activity>\n";
 
 	for(QStringList::ConstIterator it=this->teachersNames.begin(); it!=this->teachersNames.end(); it++)
@@ -488,12 +486,10 @@ QString Activity::getXmlDescription(const Rules &r) const
 	return s;
 }
 
-QString Activity::getDescription(const Rules &r) const
+QString Activity::getDescription() const
 {
 	const int INDENT=4;
 
-	Q_UNUSED(r);
-	
 	bool _indent;
 	if(this->isSplit() && this->id!=this->activityGroupId)
 		_indent=true;
@@ -591,10 +587,8 @@ QString Activity::getDescription(const Rules &r) const
 	return s;
 }
 
-QString Activity::getDetailedDescription(const Rules &r) const
+QString Activity::getDetailedDescription() const
 {
-	Q_UNUSED(r);
-
 	QString s;
 
 	s=tr("Activity:");
@@ -682,7 +676,7 @@ QString Activity::getDetailedDescription(const Rules &r) const
 
 QString Activity::getDetailedDescriptionWithConstraints(const Rules &r) const
 {
-	QString s=this->getDetailedDescription(r);
+	QString s=this->getDetailedDescription();
 
 	s+="--------------------------------------------------\n";
 	s+=tr("Time constraints directly related to this activity:");

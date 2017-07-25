@@ -73,7 +73,7 @@ ModifyConstraintMinDaysBetweenActivitiesForm::ModifyConstraintMinDaysBetweenActi
 				break;
 		}
 		assert(act);
-		this->selectedActivitiesListWidget->addItem(act->getDescription(gt.rules));
+		this->selectedActivitiesListWidget->addItem(act->getDescription());
 	}
 	
 	minDaysSpinBox->setMinimum(1);
@@ -136,7 +136,7 @@ void ModifyConstraintMinDaysBetweenActivitiesForm::filterChanged()
 	for(int i=0; i<gt.rules.activitiesList.size(); i++){
 		Activity* ac=gt.rules.activitiesList[i];
 		if(filterOk(ac)){
-			activitiesListWidget->addItem(ac->getDescription(gt.rules));
+			activitiesListWidget->addItem(ac->getDescription());
 			this->activitiesList.append(ac->id);
 		}
 	}

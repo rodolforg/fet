@@ -167,7 +167,7 @@ void AddConstraintActivityPreferredStartingTimesForm::updateActivitiesComboBox()
 		Activity* act=gt.rules.activitiesList[i];
 		
 		if(filterOk(act)){
-			activitiesComboBox->addItem(act->getDescription(gt.rules));
+			activitiesComboBox->addItem(act->getDescription());
 			this->activitiesList.append(act->id);
 		}
 	}

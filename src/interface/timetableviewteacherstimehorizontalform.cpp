@@ -669,7 +669,7 @@ void TimetableViewTeachersTimeHorizontalForm::detailActivity(QTableWidgetItem* i
 				const Activity* act=&gt.rules.internalActivitiesList[ai];
 				assert(act!=NULL);
 				//s += act->getDetailedDescriptionWithConstraints(gt.rules);
-				s += act->getDetailedDescription(gt.rules);
+				s += act->getDetailedDescription();
 
 				//int r=rooms_timetable_weekly[teacher][k][j];
 				int r=CachedSchedule::getCachedSolution().rooms[ai];

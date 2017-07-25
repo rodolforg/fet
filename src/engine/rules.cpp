@@ -7030,7 +7030,7 @@ bool Rules::write(QWidget *parent, const QString& filename) const
 	tos << "<Activities_List>\n";
 	for(int i=0; i<this->activitiesList.size(); i++){
 		Activity* act=this->activitiesList[i];
-		tos << act->getXmlDescription(*this);
+		tos << act->getXmlDescription();
 		tos << "\n";
 	}
 	tos << "</Activities_List>\n\n";

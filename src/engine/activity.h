@@ -260,17 +260,17 @@ public:
 	/**
 	Returns a representation of this activity (xml format).
 	*/
-	QString getXmlDescription(const Rules& r) const;
+	QString getXmlDescription() const;
 
 	/**
 	Returns a representation of this activity.
 	*/
-	QString getDescription(const Rules& r) const;
+	QString getDescription() const;
 
 	/**
 	Returns a representation of this activity (more detailed).
 	*/
-	QString getDetailedDescription(const Rules& r) const;
+	QString getDetailedDescription() const;
 
 	/**
 	Returns a representation of this activity (detailed),

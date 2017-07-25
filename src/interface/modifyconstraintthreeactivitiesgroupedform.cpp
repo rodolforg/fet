@@ -83,7 +83,7 @@ void ModifyConstraintThreeActivitiesGroupedForm::updateActivitiesComboBox(){
 	for(int k=0; k<gt.rules.activitiesList.size(); k++){
 		Activity* act=gt.rules.activitiesList[k];
 		if(filterOk(act)){
-			firstActivitiesComboBox->addItem(act->getDescription(gt.rules));
+			firstActivitiesComboBox->addItem(act->getDescription());
 			this->firstActivitiesList.append(act->id);
 
 			if(act->id==this->_ctr->firstActivityId)
@@ -99,7 +99,7 @@ void ModifyConstraintThreeActivitiesGroupedForm::updateActivitiesComboBox(){
 	for(int k=0; k<gt.rules.activitiesList.size(); k++){
 		Activity* act=gt.rules.activitiesList[k];
 		if(filterOk(act)){
-			secondActivitiesComboBox->addItem(act->getDescription(gt.rules));
+			secondActivitiesComboBox->addItem(act->getDescription());
 			this->secondActivitiesList.append(act->id);
 
 			if(act->id==this->_ctr->secondActivityId)
@@ -115,7 +115,7 @@ void ModifyConstraintThreeActivitiesGroupedForm::updateActivitiesComboBox(){
 	for(int k=0; k<gt.rules.activitiesList.size(); k++){
 		Activity* act=gt.rules.activitiesList[k];
 		if(filterOk(act)){
-			thirdActivitiesComboBox->addItem(act->getDescription(gt.rules));
+			thirdActivitiesComboBox->addItem(act->getDescription());
 			this->thirdActivitiesList.append(act->id);
 
 			if(act->id==this->_ctr->thirdActivityId)

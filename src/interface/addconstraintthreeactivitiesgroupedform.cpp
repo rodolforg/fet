@@ -159,13 +159,13 @@ void AddConstraintThreeActivitiesGroupedForm::updateActivitiesComboBox(){
 		Activity* act=gt.rules.activitiesList[i];
 		
 		if(filterOk(act)){
-			firstActivitiesComboBox->addItem(act->getDescription(gt.rules));
+			firstActivitiesComboBox->addItem(act->getDescription());
 			this->firstActivitiesList.append(act->id);
 
-			secondActivitiesComboBox->addItem(act->getDescription(gt.rules));
+			secondActivitiesComboBox->addItem(act->getDescription());
 			this->secondActivitiesList.append(act->id);
 
-			thirdActivitiesComboBox->addItem(act->getDescription(gt.rules));
+			thirdActivitiesComboBox->addItem(act->getDescription());
 			this->thirdActivitiesList.append(act->id);
 		}
 	}

@@ -2056,11 +2056,11 @@ void ActivityPlanningForm::pseudoActivities(){
 			|| ((!act->active) && (tmpCurrentIndex==INACTIVE_ONLY))
 			|| (tmpCurrentIndex==ACTIVE_OR_INACTIVE)){
 				if(act->teachersNames.isEmpty() && act->studentsNames.isEmpty()){
-					noTeachersAndStudents+=act->getDescription(gt.rules)+"\n";
+					noTeachersAndStudents+=act->getDescription()+"\n";
 				} else if(act->teachersNames.isEmpty()){
-					noTeachers+=act->getDescription(gt.rules)+"\n";
+					noTeachers+=act->getDescription()+"\n";
 				} else if(act->studentsNames.isEmpty()){
-					noStudents+=act->getDescription(gt.rules)+"\n";
+					noStudents+=act->getDescription()+"\n";
 				}
 			}
 	}

@@ -291,7 +291,7 @@ void ActivitiesForm::filterChanged()
 	for(int i=0; i<gt.rules.activitiesList.size(); i++){
 		Activity* act=gt.rules.activitiesList[i];
 		if(this->filterOk(act)){
-			s=act->getDescription(gt.rules);
+			s=act->getDescription();
 			visibleActivitiesList.append(act);
 			activitiesListWidget->addItem(s);
 			k++;
@@ -484,7 +484,7 @@ void ActivitiesForm::removeActivity()
 	if(act->isSplit())
 		s+=tr("There will also be removed the related activities from the same larger split activity");
 	s+="\n\n";
-	s+=act->getDetailedDescription(gt.rules);
+	s+=act->getDetailedDescription();
 	s+="\n";
 
 	switch( LongTextMessageBox::confirmation( this, tr("FET confirmation"),
@@ -623,7 +623,7 @@ void ActivitiesForm::activityComments()
 		gt.rules.internalStructureComputed=false;
 		gt.rules.setModified(true);
 
-		activitiesListWidget->currentItem()->setText(act->getDescription(gt.rules));
+		activitiesListWidget->currentItem()->setText(act->getDescription());
 		activityChanged();
 	}
 }

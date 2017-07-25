@@ -1870,7 +1870,7 @@ void FetMainForm::on_dataTeachersSubjectsQualificationsStatisticsAction_triggere
 						s+="\n";
 					else
 						begin=false;
-					s+=tr("For activity: %1").arg(act->getDescription(gt.rules));
+					s+=tr("For activity: %1").arg(act->getDescription());
 					s+="\n";
 					alreadyAdded=true;
 				}

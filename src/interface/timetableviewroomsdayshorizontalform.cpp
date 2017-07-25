@@ -476,7 +476,7 @@ void TimetableViewRoomsDaysHorizontalForm::detailActivity(QTableWidgetItem* item
 			Activity* act=&gt.rules.internalActivitiesList[ai];
 			assert(act!=NULL);
 			//s += act->getDetailedDescriptionWithConstraints(gt.rules);
-			s += act->getDetailedDescription(gt.rules);
+			s += act->getDetailedDescription();
 
 			int r=best_solution.rooms[ai];
 			if(r!=UNALLOCATED_SPACE && r!=UNSPECIFIED_ROOM){

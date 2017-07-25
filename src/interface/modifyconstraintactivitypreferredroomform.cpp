@@ -62,7 +62,7 @@ void ModifyConstraintActivityPreferredRoomForm::updateActivitiesComboBox()
 	activitiesComboBox->clear();
 	for(int k=0; k<gt.rules.activitiesList.size(); k++){
 		Activity* act=gt.rules.activitiesList[k];
-		activitiesComboBox->addItem(act->getDescription(gt.rules));
+		activitiesComboBox->addItem(act->getDescription());
 		if(act->id==this->_ctr->activityId)
 			j=i;
 		i++;

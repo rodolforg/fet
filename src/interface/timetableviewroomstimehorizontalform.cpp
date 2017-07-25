@@ -679,7 +679,7 @@ void TimetableViewRoomsTimeHorizontalForm::detailActivity(QTableWidgetItem* item
 				const Activity* act=&gt.rules.internalActivitiesList[ai];
 				assert(act!=NULL);
 				//s += act->getDetailedDescriptionWithConstraints(gt.rules);
-				s += act->getDetailedDescription(gt.rules);
+				s += act->getDetailedDescription();
 
 				int r=CachedSchedule::getCachedSolution().rooms[ai];
 				if(r!=UNALLOCATED_SPACE && r!=UNSPECIFIED_ROOM){
