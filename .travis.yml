@@ -4,7 +4,7 @@ env:
   global:
    # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
    #   via the "travis encrypt" command using the project repo's public key
-   - secure: "RoCJd3wMCMcWfoXFCjVQa6FQUjgEshLNetPSVirxEzt8fBVU/tbeAzItlXw+memXqW+5I/Nwww+FUPRTWno5pFSpy1mH5aiUb5A/2MdfIJJss98KsW6XeKlPjMSucD15bP+c8m7pfx393+TeJ3mG3rfln2T2dCdLVVPSTeRFRbL0T0Zo16Ck2B0J6vhALPZvgIrNEnVC1PVqLX3PmhlvNOpGzdRbNCjFWBnrOeDZDLeDwcBLKB6iEXly1lt1UjZv+vmSVgvbwMLoB0je8CwF39cC/DPuQofgTb3fsKJL3C0DpqpFIhdYlNn2GAwmwUd9nBvS8o2rk46P8VncLpYjF/xbhuyyKm6S5bEO9WdGBQcd/EvJ6Q39bcqeYENkDFq09YH/84pghrGNyNDrvYwoZBpELtRefdDyjj9moaKjRA61YNQc+oP+MxDOVF59V6Wn9g35arMUR+sjMMQWJp48cULMcj+SDKAxK0cG8KP2zhYezTJukVSgp8+kX+kdQn8JVqyUaPoP/JR2rIYKRBy1ulBVIuzPEot8SGWqJB/DB51rJ/CecNvMRu3da8Rexq37WW2613AdCS2VjApp3ts6Ugo6IJTMmvUfsIIXBk9T2Ezq58Wmn3p+l6V2lnGyAHBovfjLzVE+fpBW5YQituZuf8zE2pB1iqdvx5oVRuJAUqI="
+   - secure: "B3qos7kD7Auds9f9sPepJlbqVvNiyyMOAonV5EsFOVN9HObZeNZg1a2OnmRGrQkf2fYU30/bcKsoAptnoPn2ronOwWCh1+HA78WzNixHxSf+SSpwg0ZqOdYsRx7Yz3DunJ1huotmB3ZqVQwuKNzsaCVcQUxw/pnj5GX62v0vggqOl1P6QFMO6OgJDj5AEEaVhbdq5YUk85t7ZIQefM/OXysNaBclG89/s8blC9LoIbDjqtSKbalPPNk5oOd3bMqjUE8M8gIuRRekgzqm35AkHNHQmqLOP8roaWmTYBqZcbo56G/bxFbKA1b+iDTEZqlc4175NTJJWKipdnSAf3aIwIAh6/7fCrTPYs1eFOH6UbSiAbGsuVeh52h+caIJg+LYmR2DUhUYut71SMSqDC7RUTbAkCp1AHHOHknryavmkql6tlctoQhvHniXvN0xW8EGdUaTUYOG4ewctYE2zM8fKg90k18YaXiUrcRrdHhl9iDUos/YdRyYraqVHP9jC8iqPo3u/flZ+onyk07zY+shLv5MY9HUvvcCVTotMw5Xu3oIaZ6FhiNU5KKSxa5qe2pkrw8XsuwkfAnQHrpHFxROjdDErzxu3dysi4WAdVNoPZf6dcjOzc+vbTjJtXEx9RBHFlxseVy81p1HsW8DG1G8aWpV8zld7HYD/ZDgLWKbnoU="
 
 matrix:
   include:
@@ -43,7 +43,7 @@ script:
 addons:
   coverity_scan:
     project:
-      name: "rodolforg/xchange"
+      name: "rodolforg/fet"
 #    build_command_prepend: "./configure; make clean"
     build_command:   "make -j 2"
     branch_pattern: coverity_scan
