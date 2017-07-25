@@ -23,8 +23,8 @@ matrix:
         coverity_scan:
           project:
             name: "rodolforg/fet"
-#    build_command_prepend: "./configure; make clean"
-          build_command:   "qmake; make -j 2"
+          build_command_prepend: "qmake"
+          build_command:   "make -j 6"
           branch_pattern: coverity_scan
       before_install:
         source /opt/qt58/bin/qt58-env.sh
