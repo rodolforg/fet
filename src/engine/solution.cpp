@@ -36,7 +36,7 @@ extern Matrix3D<bool> teacherNotAvailableDayHour;
 Solution::Solution()
 	: conflictsTotal(0),
 	  teachersMatrixReady(false), subgroupsMatrixReady(false), roomsMatrixReady(false),
-	  nPlacedActivities(0)
+	  nPlacedActivities(0), _fitness(-1)
 {
 }
 
