@@ -20,6 +20,12 @@ matrix:
             - sourceline: 'ppa:beineri/opt-qt58-trusty'
           packages:
             - qt58base qt58declarative qt58tools
+        coverity_scan:
+          project:
+            name: "rodolforg/fet"
+#    build_command_prepend: "./configure; make clean"
+          build_command:   "qmake; make -j 2"
+          branch_pattern: coverity_scan
       before_install:
         source /opt/qt58/bin/qt58-env.sh
 #    - os: linux
@@ -36,14 +42,5 @@ before_install:
   - echo -n | openssl s_client -connect scan.coverity.com:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sudo tee -a /etc/ssl/certs/ca-
 
 script:
-  - qmake
-  - make clean
-  - make -j 4
+  - if [ ${COVERITY_SCAN_BRANCH} != 1 ]; then qmake && make -j 4 ; fi
 
-addons:
-  coverity_scan:
-    project:
-      name: "rodolforg/fet"
-#    build_command_prepend: "./configure; make clean"
-    build_command:   "make -j 2"
-    branch_pattern: coverity_scan
