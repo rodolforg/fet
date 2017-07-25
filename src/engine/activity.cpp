@@ -131,7 +131,7 @@ Activity::Activity() :
 	nTotalStudents(0),
 	computeNTotalStudents(false),
 	active(false),
-	subjectIndex(0)
+	subjectIndex(-1)
 {
 }
 
@@ -197,7 +197,8 @@ Activity::Activity(int _id,
 		id(_id),
 		activityGroupId(_activityGroupId),
 		computeNTotalStudents(_computeNTotalStudents),
-		active(_active)
+		active(_active),
+		subjectIndex(-1)
 {
 	if(_computeNTotalStudents)
 		assert(_nTotalStudents==-1);
