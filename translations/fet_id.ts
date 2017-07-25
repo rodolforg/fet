@@ -1133,11 +1133,11 @@
     <name>AddActivityForm</name>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="574"/>
-        <location filename="../src/interface/addactivityform.cpp" line="643"/>
-        <location filename="../src/interface/addactivityform.cpp" line="685"/>
-        <location filename="../src/interface/addactivityform.cpp" line="687"/>
-        <location filename="../src/interface/addactivityform.cpp" line="765"/>
-        <location filename="../src/interface/addactivityform.cpp" line="770"/>
+        <location filename="../src/interface/addactivityform.cpp" line="649"/>
+        <location filename="../src/interface/addactivityform.cpp" line="691"/>
+        <location filename="../src/interface/addactivityform.cpp" line="693"/>
+        <location filename="../src/interface/addactivityform.cpp" line="771"/>
+        <location filename="../src/interface/addactivityform.cpp" line="776"/>
         <source>FET information</source>
         <translation>Informasi FET</translation>
     </message>
@@ -1149,7 +1149,7 @@
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="582"/>
         <location filename="../src/interface/addactivityform.cpp" line="619"/>
-        <location filename="../src/interface/addactivityform.cpp" line="670"/>
+        <location filename="../src/interface/addactivityform.cpp" line="676"/>
         <source>FET question</source>
         <translation>Pertanyaan FET</translation>
     </message>
@@ -1164,181 +1164,181 @@
         <translation>Mata Pelajaran salah</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="644"/>
+        <location filename="../src/interface/addactivityform.cpp" line="650"/>
         <source>Invalid duration</source>
         <translation>Durasi salah</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="673"/>
-        <location filename="../src/interface/addactivityform.cpp" line="710"/>
+        <location filename="../src/interface/addactivityform.cpp" line="679"/>
+        <location filename="../src/interface/addactivityform.cpp" line="716"/>
         <source>Yes</source>
         <translation>Ya</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="673"/>
-        <location filename="../src/interface/addactivityform.cpp" line="710"/>
+        <location filename="../src/interface/addactivityform.cpp" line="679"/>
+        <location filename="../src/interface/addactivityform.cpp" line="716"/>
         <source>No</source>
         <translation>Tidak</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="685"/>
+        <location filename="../src/interface/addactivityform.cpp" line="691"/>
         <source>Activity added</source>
         <translation>Kegiatan ditambah</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="687"/>
+        <location filename="../src/interface/addactivityform.cpp" line="693"/>
         <source>Activity NOT added - please report error</source>
         <translation>Kegiatan TIDAK ditambah - silahkan laporkan error</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="693"/>
+        <location filename="../src/interface/addactivityform.cpp" line="699"/>
         <source>You want to add a container activity split into more than the number of days per week and also add a constraint min days between activities. This is a very bad practice from the way the algorithm of generation works (it slows down the generation and makes it harder to find a solution).</source>
         <translation>Anda ingin menambahkan kontainer  membagi aktivitas ke lebih dari jumlah hari per minggu dan juga menambahkan hari min kendala antara kegiatan. Ini adalah praktik yang sangat buruk dari cara algoritma dari karya generasi (generasi itu melambat dan membuat lebih sulit untuk menemukan solusi).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="698"/>
+        <location filename="../src/interface/addactivityform.cpp" line="704"/>
         <source>1. If you add &apos;force consecutive if same day&apos;, then couple extra activities in pairs to obtain a number of activities equal to the number of days per week. Example: 7 activities with duration 1 in a 5 days week, then transform into 5 activities with durations: 2,2,1,1,1 and add a single container activity with these 5 components (possibly raising the weight of added constraint min days between activities up to 100%)</source>
         <translation>1. Jika Anda menambahkan &quot;paksa berturut-turut jika kegiatan ekstra beberapa hari yang sama &apos;, kemudian di pasang untuk mendapatkan sejumlah kegiatan yang sama dengan jumlah hari per minggu. Contoh: 7 kegiatan dengan durasi 1 dalam seminggu 5 hari, kemudian berubah menjadi 5 kegiatan dengan jangka waktu: 2,2,1,1,1 dan menambahkan aktivitas wadah tunggal dengan 5 komponen (mungkin menaikkan berat hari min kendala ditambahkan antara kegiatan sampai dengan 100%)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="702"/>
+        <location filename="../src/interface/addactivityform.cpp" line="708"/>
         <source>2. If you don&apos;t add &apos;force consecutive if same day&apos;, then add a larger activity split into a number of activities equal with the number of days per week and the remaining components into other larger split activity. For example, suppose you need to add 7 activities with duration 1 in a 5 days week. Add 2 larger container activities, first one split into 5 activities with duration 1 and second one split into 2 activities with duration 1 (possibly raising the weight of added constraints min days between activities for each of the 2 containers up to 100%)</source>
         <translation>2. Jika Anda tidak menambahkan &quot;kekuatan berturut-turut jika hari yang sama &apos;, kemudian tambahkan sebuah aktivitas yang lebih besar split menjadi beberapa kegiatan yang sama dengan jumlah hari per minggu dan komponen yang tersisa dalam aktivitas pemecahan yang lebih besar. Misalnya, Anda harus menambahkan 7 aktivitas dengan durasi 1 hari dalam seminggu 5. Tambahkan 2 kegiatan wadah yang lebih besar, yang pertama split menjadi 5 kegiatan dengan durasi 1 dan kedua satu split menjadi 2 kegiatan dengan durasi 1 (mungkin menaikkan berat min batasan hari antara kegiatan ditambahkan untuk setiap 2 kontainer hingga 100%)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="765"/>
+        <location filename="../src/interface/addactivityform.cpp" line="771"/>
         <source>Split activity added. Please note that FET currently cannot check for duplicates when adding split activities. It is advisable to check the statistics after adding all the activities</source>
         <translation>Kegiatan terpecah ditambahkan. Catatan: FET saat ini tidak dapat mengecek duplikasi ketika menambahkan kegiatan pecah. Disarankan untuk mengecek statistik setelah menambah semua kegiata</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="770"/>
+        <location filename="../src/interface/addactivityform.cpp" line="776"/>
         <source>Split activity NOT added - error???</source>
         <translation>Kegiatan pecah TIDAK ditambahkan - error???</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="795"/>
+        <location filename="../src/interface/addactivityform.cpp" line="801"/>
         <source>Abbreviations in this dialog:</source>
         <translation>Singkatan dalam dialog ini:</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="797"/>
+        <location filename="../src/interface/addactivityform.cpp" line="803"/>
         <source>&apos;Students&apos; (the text near the spin box), means &apos;Number of students (-1 for automatic)&apos;</source>
         <translation>&apos;Siswa&apos; (teks dekat kotak spin), artinya &apos;Jumlah siswa (-1 untuk otomatis)&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="799"/>
+        <location filename="../src/interface/addactivityform.cpp" line="805"/>
         <source>&apos;Split&apos; means &apos;Split into ... activities per week&apos;</source>
         <translation>&apos;Bagi&apos; artinya &apos;Bagi menjadi ... kegiatan per minggu&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="801"/>
+        <location filename="../src/interface/addactivityform.cpp" line="807"/>
         <source>&apos;Min days&apos; means &apos;The minimum required distance in days between each pair of activities&apos;</source>
         <translation>&apos;Min hari&apos; artinya &quot; Minimum diperlukan jarak antar hari diantara setiap pasangan kegiatan&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="803"/>
+        <location filename="../src/interface/addactivityform.cpp" line="809"/>
         <source>&apos;Weight %&apos; means &apos;Percentage of added constraint (min days between activities constraint). Recommended: 95.0%-100.0%&apos;</source>
         <translation>&apos;Bobot %&apos; artinya &apos;Persentase dari batasan tambahan ( min hari antar batasan kegiatan) &apos;Rekomendasi 95.0%-100.0%&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="805"/>
+        <location filename="../src/interface/addactivityform.cpp" line="811"/>
         <source>&apos;Consecutive&apos; means &apos;If activities on same day, force consecutive?&apos;</source>
         <translation>&apos;Berurutan&apos; artinya &apos;Jika kegiatan pada hari yang sama, &apos;paksa berurutan?&apos;</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="807"/>
+        <location filename="../src/interface/addactivityform.cpp" line="813"/>
         <source>The &apos;Duration&apos; spin box and the &apos;Active&apos; check box refer to each component of current activity, you can change them for each component, separately, by selecting the corresponding tab in the tab widget.</source>
         <translation>Para &apos;durasi&apos;&apos; spin kotak dan &apos;Aktif&apos; kotak cek mengacu pada masing-masing komponen kegiatan saat ini, Anda dapat mengubahnya untuk masing-masing komponen, secara terpisah, dengan memilih tab yang sesuai di tab widget.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="818"/>
+        <location filename="../src/interface/addactivityform.cpp" line="824"/>
         <source>You can select a teacher from all the teachers with the mouse or with the keyboard tab/up/down, then double click it to add it to the selected teachers for current activity. You can then choose to remove a teacher from the selected teachers. You can highlight it with the mouse or with the keyboard, then double click it to remove this teacher from the selected teachers.</source>
         <translation>Anda dapat memilih guru dari semua guru dengan mouse atau dengan tab keyboard / atas / bawah, kemudian dobel klik untuk menambahkannya ke guru-guru yang dipilih untuk aktivitas saat ini. Anda kemudian dapat memilih untuk menghapus guru dari guru-guru yang dipilih. Anda dapat menyorot dengan mouse atau dengan keyboard, kemudian klik dua kali untuk menghapus guru ini dari guru-guru yang dipilih.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="825"/>
+        <location filename="../src/interface/addactivityform.cpp" line="831"/>
         <source>The same procedure (double click) applies to students sets and activity tags.</source>
         <translation>Prosedur yang sama (klik ganda) berlaku pada grup siswa dan tag kegiatan.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="882"/>
+        <location filename="../src/interface/addactivityform.cpp" line="888"/>
         <source>Current algorithm cannot schedule 3 activities in the same day if consecutive is checked, so you will get no solution in such extreme cases (for instance, if you have 3 lessons and a teacher which works only 1 day per week, and select &apos;force consecutive if same day&apos;, you will get an imposssible timetable. But these are extremely unlikely cases).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="897"/>
+        <location filename="../src/interface/addactivityform.cpp" line="903"/>
         <source>If you select a number of min days above 1 (say this number is n), you will get the possibility to add a second constraint min days between activities, with min days = n-1 and a percentage of your choice. Just click Add activities</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="811"/>
+        <location filename="../src/interface/addactivityform.cpp" line="817"/>
         <source>A first notice: If you use a 5 days week: when adding an activity split into only 2 components per week, the best practice is to add min days between activities to be 2. If you split an activity into 3 components per week - please read FAQ question Q1-5-September-2008</source>
         <translation>Sebuah pernyataan pertama: Jika Anda menggunakan 5 hari seminggu: saat menambahkan aktivitas split menjadi hanya 2 komponen per minggu, praktek terbaik adalah untuk menambahkan hari min antara kegiatan yang 2. Jika Anda memisahkan aktivitas menjadi 3 komponen per minggu - silakan baca FAQ pertanyaan P1-5-September-2008</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="829"/>
+        <location filename="../src/interface/addactivityform.cpp" line="835"/>
         <source>You can check/uncheck show years, show groups or show subgroups.</source>
         <translation>Anda dapat mencentang/tidak perlihatkan kelas, perlihatkan kelas paralel atau perlihatkan grup.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="832"/>
+        <location filename="../src/interface/addactivityform.cpp" line="838"/>
         <source>If you split a larger activity into more activities per week, you have a multitude of choices:
 You can choose the minimum distance in days between each pair of activities. Please note that a minimum distance of 1 means that the activities must not be in the same day, a minimum distance of 2 means that the activities must be separated by one day (distance from Monday to Wednesday for instance is 2 days), etc.</source>
         <translation>Jika Anda membagi suatu kegiatan besar menjadi kegiatan yang lebih banyak per minggu, Anda memiliki banyak pilihan:
 Anda dapat memilih jarak minimum di hari antara setiap pasangan kegiatan. Perlu diketahui bahwa jarak minimal 1 berarti bahwa kegiatan tidak boleh di hari yang sama, jarak minimum 2 berarti kegiatan harus dipisahkan oleh satu hari (jarak dari Senin hingga Rabu misalnya adalah 2 hari), dll.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="840"/>
+        <location filename="../src/interface/addactivityform.cpp" line="846"/>
         <source>If you have for instance an activity with 2 lessons per week and you want to spread them to at least 2 days distance, you can add a constraint min days with min days = 2 and weight 95% (or higher). If you want also to ensure that activities will be separated by at least one day, you can use this feature: add a constraint min days with minimum days 2 and weight 95% or lower, and after that you&apos;ll get the possibility to add another constraint with min 1 days and weight 95% or higher. It works if you first select in the dialog the min days &gt;= 2 and click Add activities. Or you can add manually the constraints (difficult this way). Important: it is best practice to consider both constraints to have 95% weight. The combination assures that the resultant is 99.75% weight</source>
         <translation>Jika Anda memiliki misalnya kegiatan dengan 2 pelajaran seminggu dan Anda ingin menyebarkannya untuk minimal 2 hari jarak, Anda dapat menambahkan beberapa hari kendala menit dengan hari min 2 = dan berat 95% (atau lebih tinggi). Jika Anda ingin juga untuk memastikan bahwa kegiatan akan dipisahkan oleh paling sedikit satu hari, Anda dapat menggunakan fitur ini: menambahkan hari min kendala dengan hari minimal 2 dan berat 95% atau lebih rendah, dan setelah itu Anda akan mendapatkan kemungkinan untuk menambahkan kendala lain dengan min 1 hari dan berat 95% atau lebih tinggi. Ia bekerja jika Anda pertama-tama pilih dalam dialog&gt; min hari = 2 dan klik Tambah kegiatan. Atau Anda dapat menambahkan secara manual kendala (sulit cara ini). Penting: itu praktek terbaik untuk mempertimbangkan kedua kendala untuk memiliki 95% berat. Kombinasi ini menjamin bahwa resultan adalah berat 99,75%</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="853"/>
+        <location filename="../src/interface/addactivityform.cpp" line="859"/>
         <source>Please note that the min days distance is a time constraint and you can only see/modify it in the time constraints dialogs, not in the modify activity dialog. Additionally, you can see the constraints for each activity in the details text box of each activity</source>
         <translation>Perlu diketahui bahwa hari min jarak adalah kendala waktu dan Anda hanya dapat melihat / memodifikasi dalam dialog kendala waktu, bukan dalam dialog memodifikasi aktivitas. Selain itu, Anda dapat melihat kendala untuk setiap aktivitas dalam kotak teks rincian masing-masing kegiatan</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="859"/>
+        <location filename="../src/interface/addactivityform.cpp" line="865"/>
         <source>If you choose a value greater or equal with 1 for min days, a time constraint min days between activities will be added automatically (you can see this constraint in the time constraints list or you can see this constraint in the detailed description of the activity). You can select a weight percentage for this constraint. If you select 100%, the constraint must be respected all the time. If you select 95%, there is a small chance that the timetable will not respect this constraint. Recommended values are 95.0%-100.0% (maybe you could try with 95%, then 99.75%, or even 100.0%, but the generation time might be larger). Generally, 99.75% might be a good value. Note: if you put a value less than 100% and the constraint is too tough, FET is able to find that this constraint is impossible and will break it. 99.75% might be better than 95% but possibly slower. The percentage is subjective (if you put 95% you may get 6 soft conflicts and if you put 99.75% you may get 3 soft conflicts). Starting with FET-5.3.6, it is possible to change this value for all constraints in one click, in constraint min days between activities dialog.</source>
         <translation>Jika Anda memilih nilai yang lebih besar atau sama dengan 1 untuk hari menit, waktu hari min kendala antara kegiatan akan ditambahkan secara otomatis (Anda dapat melihat ini kendala dalam daftar kendala waktu atau Anda dapat melihat ini kendala dalam deskripsi rinci aktivitas) . Anda dapat memilih persentase berat untuk kendala ini. Jika Anda memilih 100%, kendala harus dihormati sepanjang waktu. Jika Anda memilih 95%, ada kemungkinan kecil bahwa jadwal tidak akan menghormati kendala ini. nilai yang direkomendasikan adalah 95,0% -100,0% (mungkin Anda bisa mencoba dengan 95%, kemudian 99,75%, atau bahkan 100,0%, tetapi waktu generasi mungkin lebih besar). Umumnya, mungkin 99,75% nilai yang baik. Catatan: jika Anda memasukkan nilai waktu kurang dari 100% dan kendala yang terlalu sulit, FET dapat menemukan bahwa kendala ini tidak mungkin dan akan rusak. 99,75% mungkin lebih baik dari 95% namun mungkin lebih lambat. Persentase tersebut bersifat subjektif (jika Anda memasukkan 95% Anda bisa mendapatkan 6 konflik lembut dan jika Anda menempatkan 99,75% Anda akan mendapatkan 3 konflik lunak). Dimulai dengan FET-5.3.6, dimungkinkan untuk mengubah nilai ini untuk semua kendala dalam satu klik, di hari min kendala antara kegiatan dialog.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="873"/>
+        <location filename="../src/interface/addactivityform.cpp" line="879"/>
         <source>There is another option, if the activities are in the same day, force consecutive activities. You can select this option for instance if you have 5 lessons of math in 5 days, and there is no timetable which respects fully the days separation. Then, you can set the weight percent of the min days constraint to 95% and add consecutive if same day. You will have as results say 3 lessons with duration 1 and a 2 hours lesson in another day. Please be careful: if the activities are on the same day, even if the constraint has 0% weight, then the activities are forced to be consecutive.</source>
         <translation>Ada pilihan lain, jika kegiatan tersebut pada hari yang sama, gaya kegiatan berturut-turut. Anda dapat memilih pilihan ini misalnya jika Anda memiliki 5 pelajaran matematika dalam 5 hari, dan tidak ada jadwal yang menghormati sepenuhnya pemisahan hari. Kemudian, Anda dapat mengatur persen berat kendala min hari sampai 95% dan menambahkan berurutan hari yang sama jika. Anda akan memiliki hasil katakan 3 pelajaran dengan durasi 1 dan 2 jam pelajaran di hari lain. Harap berhati-hati: jika kegiatan tersebut pada hari yang sama, bahkan jika kendala memiliki 0% berat, maka kegiatan tersebut terpaksa harus berturut-turut.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="888"/>
+        <location filename="../src/interface/addactivityform.cpp" line="894"/>
         <source>Note: You cannot add &apos;consecutive if same day&apos; with min days=0. If you want this, you have to add min days at least 1 (and any weight percentage).</source>
         <translation>Catatan: Anda tidak dapat menambahkan &apos;hari berturut jika sama&apos; dengan hari min = 0. Jika Anda menginginkan ini, Anda harus menambah min hari minimal 1 (dan persentase berat).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="893"/>
+        <location filename="../src/interface/addactivityform.cpp" line="899"/>
         <source>Starting with version 5.0.0, it is possible to add activities with no students or no teachers</source>
         <translation>Dimulai dengan versi 5.0.0, dimungkinkan untuk menambah kegiatan dengan tidak ada siswa atau tanpa guru</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="904"/>
+        <location filename="../src/interface/addactivityform.cpp" line="910"/>
         <source>FET - help on adding activity(ies)</source>
         <translation>FET - bantuan pada menambah kegiatan</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="910"/>
+        <location filename="../src/interface/addactivityform.cpp" line="916"/>
         <source>OK</source>
         <translation>Ok</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="696"/>
+        <location filename="../src/interface/addactivityform.cpp" line="702"/>
         <source>The best way to add the activities would be:</source>
         <translation>Cara terbaik untuk menambah kegiatan adalah:</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="708"/>
+        <location filename="../src/interface/addactivityform.cpp" line="714"/>
         <source>Do you want to add current activities as they are now (not recommended) or cancel and edit them as instructed?</source>
         <translation>Apakah anda ingin menambah kegiatan sekarang seadanya (tidakdirekomendasikan) atau batal dan sunting seperti diperintahkan?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="672"/>
+        <location filename="../src/interface/addactivityform.cpp" line="678"/>
         <source>A similar activity already exists. Do you want to insert current activity?</source>
         <translation>Suatu kegiatan serupa sudah ada. Apakah Anda ingin memasukkan kegiatan saat ini?</translation>
     </message>
@@ -1353,12 +1353,12 @@ Anda dapat memilih jarak minimum di hari antara setiap pasangan kegiatan. Perlu 
         <translation>Apakah Anda benar-benar ingin menambahkan suatu kegiatan tanpa kelas paralel?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="691"/>
+        <location filename="../src/interface/addactivityform.cpp" line="697"/>
         <source>FET confirmation</source>
         <translation>Konfirmasi FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="692"/>
+        <location filename="../src/interface/addactivityform.cpp" line="698"/>
         <source>Possible incorrect setting. Are you sure you want to add current activity? See details below:</source>
         <translation>Kemungkinan salah pengaturan. Anda yakin ingin menambahkan kegiatan saat ini? Lihat rincian di bawah ini:</translation>
     </message>
@@ -36183,7 +36183,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.32.1 (July 2017).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.32.2 (July 2017).&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;

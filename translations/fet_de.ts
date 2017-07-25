@@ -1134,11 +1134,11 @@
     <name>AddActivityForm</name>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="574"/>
-        <location filename="../src/interface/addactivityform.cpp" line="643"/>
-        <location filename="../src/interface/addactivityform.cpp" line="685"/>
-        <location filename="../src/interface/addactivityform.cpp" line="687"/>
-        <location filename="../src/interface/addactivityform.cpp" line="765"/>
-        <location filename="../src/interface/addactivityform.cpp" line="770"/>
+        <location filename="../src/interface/addactivityform.cpp" line="649"/>
+        <location filename="../src/interface/addactivityform.cpp" line="691"/>
+        <location filename="../src/interface/addactivityform.cpp" line="693"/>
+        <location filename="../src/interface/addactivityform.cpp" line="771"/>
+        <location filename="../src/interface/addactivityform.cpp" line="776"/>
         <source>FET information</source>
         <translation>FET-Information</translation>
     </message>
@@ -1150,7 +1150,7 @@
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="582"/>
         <location filename="../src/interface/addactivityform.cpp" line="619"/>
-        <location filename="../src/interface/addactivityform.cpp" line="670"/>
+        <location filename="../src/interface/addactivityform.cpp" line="676"/>
         <source>FET question</source>
         <translation>FET-Frage</translation>
     </message>
@@ -1165,181 +1165,181 @@
         <translation>Ungültiges Unterrichtsfach</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="644"/>
+        <location filename="../src/interface/addactivityform.cpp" line="650"/>
         <source>Invalid duration</source>
         <translation>Ungültige Dauer</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="673"/>
-        <location filename="../src/interface/addactivityform.cpp" line="710"/>
+        <location filename="../src/interface/addactivityform.cpp" line="679"/>
+        <location filename="../src/interface/addactivityform.cpp" line="716"/>
         <source>Yes</source>
         <translation>Ja</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="673"/>
-        <location filename="../src/interface/addactivityform.cpp" line="710"/>
+        <location filename="../src/interface/addactivityform.cpp" line="679"/>
+        <location filename="../src/interface/addactivityform.cpp" line="716"/>
         <source>No</source>
         <translation>Nein</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="685"/>
+        <location filename="../src/interface/addactivityform.cpp" line="691"/>
         <source>Activity added</source>
         <translation>Aktivität hinzugefügt</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="687"/>
+        <location filename="../src/interface/addactivityform.cpp" line="693"/>
         <source>Activity NOT added - please report error</source>
         <translation>Aktivität NICHT hinzugefügt - Bitte teilen Sie diesen Fehler mit</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="693"/>
+        <location filename="../src/interface/addactivityform.cpp" line="699"/>
         <source>You want to add a container activity split into more than the number of days per week and also add a constraint min days between activities. This is a very bad practice from the way the algorithm of generation works (it slows down the generation and makes it harder to find a solution).</source>
         <translation>Sie möchten eine Aktivität in mehr Tage aufteilen, als es Wochentage gibt, und gleichzeitig eine Einschränkung für die minimale Anzahl Tage zwischen zwei Aktivitäten setzen: Dies ist nicht ratsam, da es die Stundenplanberechnung verlangsamen und die Lösung erschweren würde.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="698"/>
+        <location filename="../src/interface/addactivityform.cpp" line="704"/>
         <source>1. If you add &apos;force consecutive if same day&apos;, then couple extra activities in pairs to obtain a number of activities equal to the number of days per week. Example: 7 activities with duration 1 in a 5 days week, then transform into 5 activities with durations: 2,2,1,1,1 and add a single container activity with these 5 components (possibly raising the weight of added constraint min days between activities up to 100%)</source>
         <translation>1. Wenn Sie „Aktivitäten aufeinanderfolgend am gleichen Tag“ setzen, dann sollten Zusatzaktivitäten paarweise gekoppelt werden, sodass die Anzahl der Aktivitäten maximal gleich der Anzahl an Wochentagen ist. Beispiel: 7 Teilaktivitäten mit Dauer 1 in einer 5-Tage-Woche werden geändert in 5 Teilaktivitäten mit Dauer 2; 2; 1; 1; 1. Bei dieser Aktivität die Gewichtung möglicherweise auf 100% erhöhen.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="702"/>
+        <location filename="../src/interface/addactivityform.cpp" line="708"/>
         <source>2. If you don&apos;t add &apos;force consecutive if same day&apos;, then add a larger activity split into a number of activities equal with the number of days per week and the remaining components into other larger split activity. For example, suppose you need to add 7 activities with duration 1 in a 5 days week. Add 2 larger container activities, first one split into 5 activities with duration 1 and second one split into 2 activities with duration 1 (possibly raising the weight of added constraints min days between activities for each of the 2 containers up to 100%)</source>
         <translation>2. Ohne die Einschränkung „Aktivitäten aufeinanderfolgend am gleichen Tag“ kann man eine größere, übergeordnete Aktivität hinzufügen und diese in eine Menge von Teilaktivitäten aufteilen, die der Anzahl Wochentage entspricht. Als Beispiel wird angenommen, dass 7 Aktivitäten mit Dauer 1 in einer 5-Tage-Woche benötigt werden. Zwei größere Aktivitäten werden hinzugefügt: die erste in 5 Teilaktivitäten mit Dauer 1 und die zweite in 2 Teilaktivitäten mit Dauer 1 aufgeteilt (die Gewichtung der Einschränkung „Mindestens n Tage zwischen Aktivitäten“ möglicherweise bis auf 100% hinaufsetzen).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="765"/>
+        <location filename="../src/interface/addactivityform.cpp" line="771"/>
         <source>Split activity added. Please note that FET currently cannot check for duplicates when adding split activities. It is advisable to check the statistics after adding all the activities</source>
         <translation>Geteilte Aktivität hinzugefügt. Beachten Sie, dass FET nicht auf doppelte Einträge überprüft. Prüfen Sie die Statistik</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="770"/>
+        <location filename="../src/interface/addactivityform.cpp" line="776"/>
         <source>Split activity NOT added - error???</source>
         <translation>Teilaktivität NICHT eingefügt - Fehler ???</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="795"/>
+        <location filename="../src/interface/addactivityform.cpp" line="801"/>
         <source>Abbreviations in this dialog:</source>
         <translation>Abkürzungen in diesem Dialogfenster:</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="797"/>
+        <location filename="../src/interface/addactivityform.cpp" line="803"/>
         <source>&apos;Students&apos; (the text near the spin box), means &apos;Number of students (-1 for automatic)&apos;</source>
         <translation>„Schüler“ (Beschriftung des Zahlendrehfelds) bedeutet: „Schüleranzahl“ (-1 = automatisch)</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="799"/>
+        <location filename="../src/interface/addactivityform.cpp" line="805"/>
         <source>&apos;Split&apos; means &apos;Split into ... activities per week&apos;</source>
         <translation>„Aufteilung“ bedeutet „in ... Aktivitäten pro Woche aufteilen“</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="801"/>
+        <location filename="../src/interface/addactivityform.cpp" line="807"/>
         <source>&apos;Min days&apos; means &apos;The minimum required distance in days between each pair of activities&apos;</source>
         <translation>„Min Tage“ bedeutet: „Minimaler Abstand zwischen zwei Aktivitäten in Tagen“</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="803"/>
+        <location filename="../src/interface/addactivityform.cpp" line="809"/>
         <source>&apos;Weight %&apos; means &apos;Percentage of added constraint (min days between activities constraint). Recommended: 95.0%-100.0%&apos;</source>
         <translation>„Gewichtung %“ bedeutet: „Prozentsatz der hinzugefügten Einschränkung (min. Tage zwischen Aktivitäten). Empfohlen: 95,0% - 100,0%“</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="805"/>
+        <location filename="../src/interface/addactivityform.cpp" line="811"/>
         <source>&apos;Consecutive&apos; means &apos;If activities on same day, force consecutive?&apos;</source>
         <translation>„Aufeinanderfolgend“ bedeutet: „Wenn Aktivitäten am gleichen Tag, dann aufeinanderfolgend erzwingen?“</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="807"/>
+        <location filename="../src/interface/addactivityform.cpp" line="813"/>
         <source>The &apos;Duration&apos; spin box and the &apos;Active&apos; check box refer to each component of current activity, you can change them for each component, separately, by selecting the corresponding tab in the tab widget.</source>
         <translation>Das Zahlendrehfeld „Dauer“ und das Kontrollkästchen „Aktiv“ beziehen sich auf die jeweilige Komponente der aktuellen Aktivität. Jede Komponente kann durch Klicken auf den entsprechenden Reiter einzeln bearbeitet werden.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="811"/>
+        <location filename="../src/interface/addactivityform.cpp" line="817"/>
         <source>A first notice: If you use a 5 days week: when adding an activity split into only 2 components per week, the best practice is to add min days between activities to be 2. If you split an activity into 3 components per week - please read FAQ question Q1-5-September-2008</source>
         <translation>Zuerst bitte beachten: Bei Verwendung einer 5-Tage-Woche mit einer Aktivität, die in nur 2 Teilaktivitäten aufgeteilt wird, wird empfohlen, die Einschränkung „Minimal n Tage zwischen Aktivitäten“ auf 2 zu setzen. Bei Aufteilung in 3 Komponenten, bitte zunächst die FAQ-Frage Q1 vom 5. September 2008 lesen.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="818"/>
+        <location filename="../src/interface/addactivityform.cpp" line="824"/>
         <source>You can select a teacher from all the teachers with the mouse or with the keyboard tab/up/down, then double click it to add it to the selected teachers for current activity. You can then choose to remove a teacher from the selected teachers. You can highlight it with the mouse or with the keyboard, then double click it to remove this teacher from the selected teachers.</source>
         <translation>Ein Lehrer kann aus der Liste aller Lehrer entweder mit der Maus, durch die Tabulatortaste oder durch eine der Pfeiltasten (herauf/herunter) ausgewählt werden. Durch Doppelklicken wird dieser zur Liste der für die aktuelle Aktivität ausgewählten Lehrer hinzugefügt. Mit einem Doppelklick kann ein Lehrer aus der Liste wieder entfernt werden, nachdem der Eintrag mit der Maus oder mit der Tastatur ausgewählt wurde.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="825"/>
+        <location filename="../src/interface/addactivityform.cpp" line="831"/>
         <source>The same procedure (double click) applies to students sets and activity tags.</source>
         <translation>Das gleiche Vorgehen (Doppelklick) gilt auch für Gruppen von Schülern und Aktivitätskennzeichnungen.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="882"/>
+        <location filename="../src/interface/addactivityform.cpp" line="888"/>
         <source>Current algorithm cannot schedule 3 activities in the same day if consecutive is checked, so you will get no solution in such extreme cases (for instance, if you have 3 lessons and a teacher which works only 1 day per week, and select &apos;force consecutive if same day&apos;, you will get an imposssible timetable. But these are extremely unlikely cases).</source>
         <translation>Der aktuelle Algorithmus kann nicht 3 Aktivitäten am gleichen Tag setzen, falls „aufeinanderfolgend“ aktiviert wurde. In solchen Extremfällen kann keine Lösung errechnet werden (z.B. bei drei Lektionen mit einem Lehrer, der nur an einem Tag arbeitet, und „aufeinanderfolgend am gleichen Tag“ wird es keine Lösung geben. Solche Fälle sind aber sehr unwahrscheinlich).</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="897"/>
+        <location filename="../src/interface/addactivityform.cpp" line="903"/>
         <source>If you select a number of min days above 1 (say this number is n), you will get the possibility to add a second constraint min days between activities, with min days = n-1 and a percentage of your choice. Just click Add activities</source>
         <translation>Wenn „min. Tage“ ein Wert (n) größer 1 zugewiesen wird, kann man nachher eine zweite Einschränkung „min. Tage (n-1) zwischen Aktivitäten“ zusammen mit einer beliebigen Gewichtung hinzufügen. Klicken Sie dazu einfach auf „Hinzufügen von Aktivitäten“.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="829"/>
+        <location filename="../src/interface/addactivityform.cpp" line="835"/>
         <source>You can check/uncheck show years, show groups or show subgroups.</source>
         <translation>Bei „Zeige Jahrgänge“, „Zeige Gruppen“ und „Zeige Teilgruppen“ kann ein Häkchen gesetzt oder entfernt werden.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="832"/>
+        <location filename="../src/interface/addactivityform.cpp" line="838"/>
         <source>If you split a larger activity into more activities per week, you have a multitude of choices:
 You can choose the minimum distance in days between each pair of activities. Please note that a minimum distance of 1 means that the activities must not be in the same day, a minimum distance of 2 means that the activities must be separated by one day (distance from Monday to Wednesday for instance is 2 days), etc.</source>
         <translation>Beim Aufteilen einer größeren Aktivität in mehrere Teilaktivitäten pro Woche gibt es viele Auswahlmöglichkeiten:
 Zwischen zwei Aktivitäten kann eine minimale Anzahl Tage gesetzt werden. Beachten Sie dabei, dass min. Tage = 1 bedeutet, dass Aktivitäten nicht am gleichen Tag stattfinden dürfen; min. Tage = 2 heisst, dass Aktivitäten durch einen Tag getrennt werden (z.B. zwischen Montag und Mittwoch liegen 2 Tage); usw.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="840"/>
+        <location filename="../src/interface/addactivityform.cpp" line="846"/>
         <source>If you have for instance an activity with 2 lessons per week and you want to spread them to at least 2 days distance, you can add a constraint min days with min days = 2 and weight 95% (or higher). If you want also to ensure that activities will be separated by at least one day, you can use this feature: add a constraint min days with minimum days 2 and weight 95% or lower, and after that you&apos;ll get the possibility to add another constraint with min 1 days and weight 95% or higher. It works if you first select in the dialog the min days &gt;= 2 and click Add activities. Or you can add manually the constraints (difficult this way). Important: it is best practice to consider both constraints to have 95% weight. The combination assures that the resultant is 99.75% weight</source>
         <translation>Zum Beispiel möchte man eine Aktivität mit 2 Lektionen pro Woche und mit einem Abstand von mindestens 2 Tagen setzen: dazu gibt man eine Einschränkung „min. Tage = 2“ und eine Gewichtung von 95% (oder höher) ein. Oder, um einen Mindestabstand von 1 Tag zu erreichen, kann man „min. Tage = 2“ mit Gewichtung 95% oder tiefer und danach eine zweite Einschränkung „min. Tage = 1“ mit Gewichtung = 95% oder höher setzen. Dazu wählt man im Dialogfenster zunächst „Min. Tage &gt;= 2“ aus und klickt danach auf „Hinzufügen von Aktivitäten“. Schließlich kann man die Einschränkungen auch manuell eingeben (so ist es aber schwieriger). Wichtig: Das beste Ergebnis erzielt man, wenn beide Einschränkungen eine Gewichtung von 95% aufweisen. Die Kombination bewirkt dann eine Gewichtung von 99,75%.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="853"/>
+        <location filename="../src/interface/addactivityform.cpp" line="859"/>
         <source>Please note that the min days distance is a time constraint and you can only see/modify it in the time constraints dialogs, not in the modify activity dialog. Additionally, you can see the constraints for each activity in the details text box of each activity</source>
         <translation>Bitte beachten, dass „min. Tage“ eine Zeiteinschränkung ist, die nur im Dialogfenster der zeitlichen Einschränkungen und nicht unter „Aktivitäten bearbeiten“ modifiziert werden kann. Außerdem sieht man die Einschränkungen für jede einzelne Aktivität in den entsprechenden Detailansichtsfeldern.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="859"/>
+        <location filename="../src/interface/addactivityform.cpp" line="865"/>
         <source>If you choose a value greater or equal with 1 for min days, a time constraint min days between activities will be added automatically (you can see this constraint in the time constraints list or you can see this constraint in the detailed description of the activity). You can select a weight percentage for this constraint. If you select 100%, the constraint must be respected all the time. If you select 95%, there is a small chance that the timetable will not respect this constraint. Recommended values are 95.0%-100.0% (maybe you could try with 95%, then 99.75%, or even 100.0%, but the generation time might be larger). Generally, 99.75% might be a good value. Note: if you put a value less than 100% and the constraint is too tough, FET is able to find that this constraint is impossible and will break it. 99.75% might be better than 95% but possibly slower. The percentage is subjective (if you put 95% you may get 6 soft conflicts and if you put 99.75% you may get 3 soft conflicts). Starting with FET-5.3.6, it is possible to change this value for all constraints in one click, in constraint min days between activities dialog.</source>
         <translation>Bei Auswahl von „min Tage“ &gt;= 1 wird die entsprechende zeitliche Einschränkung „Mindestens n Tage zwischen einem Satz von Aktivitäten“ automatisch hinzugefügt (wird sichtbar entweder in der Liste der zeitlichen Einschränkungen oder in der Detailansicht der Aktivität). Eine Gewichtung für diese Einschränkung kann gewählt werden. Bei 100% muss die Einschränkung immer beachtet werden. Bei 95% gibt es eine kleine Chance, dass im resultierenden Stundenplan diese Einschränkung nicht beachtet wird. Empfohlene Werte liegen zwischen 95,0% und 100,0% (man könnte zuerst 95%, dann 99,75% oder sogar 100% probieren, aber die Berechnungszeit könnte entsprechend zunehmen). Im Allgemeinen dürfte 99,75% eine gute Gewichtung sein. Bemerkung: Wenn die Gewichtung kleiner als 100% aber die Einschränkung zu schwierig ist, wird FET die Einschränkung als unmöglich einstufen und sie nicht beachten. 99,75% ist evtl. besser als 95% aber möglicherweise auch langsamer. Der Prozentsatz ist subjektiv (bei 95% könnte es 6 Konflikte und bei 99,75% drei Konflikte geben). Ab FET-Version 5.3.6 ist es möglich, diesen Wert für alle Einschränkungen mit einem Mausklick zu ändern, und zwar im Dialogfenster „Mindestens n Tage zwischen einem Satz von Aktivitäten“.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="873"/>
+        <location filename="../src/interface/addactivityform.cpp" line="879"/>
         <source>There is another option, if the activities are in the same day, force consecutive activities. You can select this option for instance if you have 5 lessons of math in 5 days, and there is no timetable which respects fully the days separation. Then, you can set the weight percent of the min days constraint to 95% and add consecutive if same day. You will have as results say 3 lessons with duration 1 and a 2 hours lesson in another day. Please be careful: if the activities are on the same day, even if the constraint has 0% weight, then the activities are forced to be consecutive.</source>
         <translation>Bei Aktivitäten, die am gleichen Tag stattfinden, gibt es eine weitere Möglichkeit: „Aktivitäten aufeinanderfolgend am gleichen Tag“. Zum Beispiel könnte man diese Einschränkung bei 5 Lektionen Mathematik in 5 Tagen wählen falls kein Stundenplan gefunden wird, der den angegebenen Tagesabstand zwischen Aktivitäten respektiert. Danach könnte man eine Gewichtung von 95% für die Einschränkung „Mindestens n Tage“ setzen und „Aktivitäten aufeinanderfolgend am gleichen Tag“ hinzufügen. Das Ergebnis würde vermutlich drei Lektionen mit Dauer = 1 und eine weitere Lektion mit Dauer = 2 an verschiedenen Tagen sein. Bitte vorsichtig sein: Falls die Aktivitäten am gleichen Tag stattfinden, wird deren Aufeinanderfolge auch bei einer Gewichtung von 0% erzwungen.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="888"/>
+        <location filename="../src/interface/addactivityform.cpp" line="894"/>
         <source>Note: You cannot add &apos;consecutive if same day&apos; with min days=0. If you want this, you have to add min days at least 1 (and any weight percentage).</source>
         <translation>Bemerkung: Man kann nicht „Aktivitäten aufeinanderfolgend am gleichen Tag“ und gleichzeitig „min Tage“ = 0 wählen. Falls dies gewünscht ist, muss man „min Tage“ = 1 (mindestens) und eine beliebige Gewichtung setzen.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="893"/>
+        <location filename="../src/interface/addactivityform.cpp" line="899"/>
         <source>Starting with version 5.0.0, it is possible to add activities with no students or no teachers</source>
         <translation>Ab FET-Version 5.0.0 können Aktivitäten ohne Schüler oder ohne Lehrer eingegeben werden.</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="904"/>
+        <location filename="../src/interface/addactivityform.cpp" line="910"/>
         <source>FET - help on adding activity(ies)</source>
         <translation>FET - Hilfe zum Hinzufügen von Aktivitäten</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="910"/>
+        <location filename="../src/interface/addactivityform.cpp" line="916"/>
         <source>OK</source>
         <translation>Ok</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="708"/>
+        <location filename="../src/interface/addactivityform.cpp" line="714"/>
         <source>Do you want to add current activities as they are now (not recommended) or cancel and edit them as instructed?</source>
         <translation>Sollten die aktuellen Aktivitäten nun hinzugefügt werden (nicht empfohlen) oder soll abgebrochen werden, um sie ändern zu können?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="696"/>
+        <location filename="../src/interface/addactivityform.cpp" line="702"/>
         <source>The best way to add the activities would be:</source>
         <translation>Am besten sollten Aktivitäten so hinzugefügt werden:</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="672"/>
+        <location filename="../src/interface/addactivityform.cpp" line="678"/>
         <source>A similar activity already exists. Do you want to insert current activity?</source>
         <translation>Eine ähnliche Aktivität existiert bereits. Soll diese Aktivität wirklich heinzugefügt werden?</translation>
     </message>
@@ -1354,12 +1354,12 @@ Zwischen zwei Aktivitäten kann eine minimale Anzahl Tage gesetzt werden. Beacht
         <translation>Soll die Aktivität wirklich keine Schüler haben?</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="691"/>
+        <location filename="../src/interface/addactivityform.cpp" line="697"/>
         <source>FET confirmation</source>
         <translation>FET-Rückmeldung</translation>
     </message>
     <message>
-        <location filename="../src/interface/addactivityform.cpp" line="692"/>
+        <location filename="../src/interface/addactivityform.cpp" line="698"/>
         <source>Possible incorrect setting. Are you sure you want to add current activity? See details below:</source>
         <translation>Wahrscheinlich falsche Einstellungen. Wollen Sie die aktuelle Aktivität hinzufügen? Beachten Sie folgende Details:</translation>
     </message>
@@ -36156,6 +36156,24 @@ Bitte korrigieren Sie das und versuchen es nochmals.</translation>
         <translation>Infos</translation>
     </message>
     <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.32.2 (July 2017).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET homepage: &lt;/span&gt;&lt;a href=&quot;http://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;http://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="112"/>
         <source>Translators</source>
         <translation>Übersetzer</translation>
@@ -36306,24 +36324,6 @@ p, li { white-space: pre-wrap; }
         <location filename="../src/interface/helpaboutform_template.ui" line="14"/>
         <source>About FET - Free Timetabling Software</source>
         <translation>Über FET - Freie Stundenplangenerierungs-Software</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.32.1 (July 2017).&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET homepage: &lt;/span&gt;&lt;a href=&quot;http://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;http://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="90"/>
