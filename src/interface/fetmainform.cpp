@@ -38,7 +38,8 @@ using namespace std;
 #include "timetableviewstudentstimehorizontalform.h"
 #include "timetableviewteachersdayshorizontalform.h"
 #include "timetableviewteacherstimehorizontalform.h"
-#include "timetableviewroomsform.h"
+#include "timetableviewroomsdayshorizontalform.h"
+#include "timetableviewroomstimehorizontalform.h"
 #include "timetableshowconflictsform.h"
 #include "timetableprintform.h"
 #include "statisticsprintform.h"
@@ -1873,7 +1874,7 @@ void FetMainForm::on_dataTeachersSubjectsQualificationsStatisticsAction_triggere
 						s+="\n";
 					else
 						begin=false;
-					s+=tr("For activity: %1").arg(act->getDescription(gt.rules));
+					s+=tr("For activity: %1").arg(act->getDescription());
 					s+="\n";
 					alreadyAdded=true;
 				}
@@ -2507,7 +2508,7 @@ void FetMainForm::on_timetableShowConflictsAction_triggered()
 	form->show();
 }
 
-void FetMainForm::on_timetableViewRoomsAction_triggered()
+void FetMainForm::on_timetableViewRoomsDaysHorizontalAction_triggered()
 {
 	if(!CachedSchedule::isValid()){
 		QMessageBox::information(this, tr("FET information"), tr("Please generate, firstly"));
@@ -2519,7 +2520,28 @@ void FetMainForm::on_timetableViewRoomsAction_triggered()
 		return;
 	}
 
-	TimetableViewRoomsForm* form=new TimetableViewRoomsForm(this);
+	TimetableViewRoomsDaysHorizontalForm* form=new TimetableViewRoomsDaysHorizontalForm(this);
+	form->setWindowFlags(Qt::Window);
+	form->setAttribute(Qt::WA_DeleteOnClose);
+	forceCenterWidgetOnScreen(form);
+	restoreFETDialogGeometry(form);
+	form->show();
+	form->resizeRowsAfterShow();
+}
+
+void FetMainForm::on_timetableViewRoomsTimeHorizontalAction_triggered()
+{
+	if(!CachedSchedule::isValid()){
+		QMessageBox::information(this, tr("FET information"), tr("Please generate, firstly"));
+		return;
+	}
+
+	if(gt.rules.nInternalRooms!=gt.rules.roomsList.count()){
+		QMessageBox::warning(this, tr("FET warning"), tr("Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it"));
+		return;
+	}
+
+	TimetableViewRoomsTimeHorizontalForm* form=new TimetableViewRoomsTimeHorizontalForm(this);
 	form->setWindowFlags(Qt::Window);
 	form->setAttribute(Qt::WA_DeleteOnClose);
 	forceCenterWidgetOnScreen(form);
@@ -3562,7 +3584,9 @@ void FetMainForm::on_shortcutViewStudentsPushButton_clicked()
 
 void FetMainForm::on_shortcutViewRoomsPushButton_clicked()
 {
-	on_timetableViewRoomsAction_triggered();
+	menuView_rooms->popup(QCursor::pos());
+	//old
+	//on_timetableViewRoomsAction_triggered();
 }
 
 void FetMainForm::on_shortcutShowSoftConflictsPushButton_clicked()

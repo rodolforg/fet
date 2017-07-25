@@ -52,7 +52,7 @@ ModifyConstraintActivityPreferredRoomsForm::ModifyConstraintActivityPreferredRoo
 	int j=-1, i=0;
 	for(int k=0; k<gt.rules.activitiesList.size(); k++){
 		Activity* ac=gt.rules.activitiesList[k];
-		activitiesComboBox->addItem(ac->getDescription(gt.rules));
+		activitiesComboBox->addItem(ac->getDescription());
 		if(ac->id==ctr->activityId){
 			assert(j==-1);
 			j=i;

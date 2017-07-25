@@ -1073,33 +1073,33 @@ void AllTimeConstraintsForm::filter(bool active)
 	
 	assert(active);
 	
-	filterForm=new AdvancedFilterForm(this, all, descrDetDescr, contains, text, caseSensitive, "AllTimeConstraintsAdvancedFilterForm");
+	AdvancedFilterForm filterForm(this, all, descrDetDescr, contains, text, caseSensitive, "AllTimeConstraintsAdvancedFilterForm");
 
-	int t=filterForm->exec();
+	int t=filterForm.exec();
 	
 	if(t==QDialog::Accepted){
 		assert(useFilter==false);
 		useFilter=true;
 	
-		if(filterForm->allRadio->isChecked())
+		if(filterForm.allRadio->isChecked())
 			all=true;
-		else if(filterForm->anyRadio->isChecked())
+		else if(filterForm.anyRadio->isChecked())
 			all=false;
 		else
 			assert(0);
 			
-		caseSensitive=filterForm->caseSensitiveCheckBox->isChecked();
+		caseSensitive=filterForm.caseSensitiveCheckBox->isChecked();
 			
 		descrDetDescr.clear();
 		contains.clear();
 		text.clear();
 			
-		assert(filterForm->descrDetDescrComboBoxList.count()==filterForm->contNContReNReComboBoxList.count());
-		assert(filterForm->descrDetDescrComboBoxList.count()==filterForm->textLineEditList.count());
-		for(int i=0; i<filterForm->rows; i++){
-			QComboBox* cb1=filterForm->descrDetDescrComboBoxList.at(i);
-			QComboBox* cb2=filterForm->contNContReNReComboBoxList.at(i);
-			QLineEdit* tl=filterForm->textLineEditList.at(i);
+		assert(filterForm.descrDetDescrComboBoxList.count()==filterForm.contNContReNReComboBoxList.count());
+		assert(filterForm.descrDetDescrComboBoxList.count()==filterForm.textLineEditList.count());
+		for(int i=0; i<filterForm.rows; i++){
+			QComboBox* cb1=filterForm.descrDetDescrComboBoxList.at(i);
+			QComboBox* cb2=filterForm.contNContReNReComboBoxList.at(i);
+			QLineEdit* tl=filterForm.textLineEditList.at(i);
 			
 			descrDetDescr.append(cb1->currentIndex());
 			contains.append(cb2->currentIndex());
@@ -1116,8 +1116,6 @@ void AllTimeConstraintsForm::filter(bool active)
 		filterCheckBox->setChecked(false);
 		connect(filterCheckBox, SIGNAL(toggled(bool)), this, SLOT(filter(bool)));
 	}
-	
-	delete filterForm;
 }
 
 void AllTimeConstraintsForm::activateConstraint()

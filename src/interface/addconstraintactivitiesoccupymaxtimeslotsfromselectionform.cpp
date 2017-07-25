@@ -239,7 +239,7 @@ void AddConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm::updateActivitie
 	for(int i=0; i<gt.rules.activitiesList.size(); i++){
 		Activity* ac=gt.rules.activitiesList[i];
 		if(filterOk(ac)){
-			allActivitiesListWidget->addItem(ac->getDescription(gt.rules));
+			allActivitiesListWidget->addItem(ac->getDescription());
 			this->activitiesList.append(ac->id);
 		}
 	}

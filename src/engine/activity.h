@@ -47,8 +47,8 @@ public:
 	QList<int> ids;
 	QList<int> indices; //in the rules internal activities list
 
-	QString getXmlDescription(const Rules& r) const;
-	QString getDescription(const Rules& r) const;
+	QString getXmlDescription() const;
+	QString getDescription() const;
 	QString getDetailedDescription(const Rules& r) const;
 	
 	void removeUseless(const Rules &r);
@@ -228,7 +228,7 @@ public:
 		int _nTotalStudents,
 		int _computedNumberOfStudents);
 		
-	bool searchTeacher(const QString& teacherName) const;
+	bool hasTeacher(const QString& teacherName) const;
 
 	/**
 	Removes this teacher from the list of teachers
@@ -240,7 +240,7 @@ public:
 	*/
 	void renameTeacher(const QString& initialTeacherName, const QString& finalTeacherName);
 	
-	bool searchStudents(const QString& studentsName) const;
+	bool hasStudents(const QString& studentsName) const;
 
 	/**
 	Removes this students set from the list of students
@@ -260,17 +260,17 @@ public:
 	/**
 	Returns a representation of this activity (xml format).
 	*/
-	QString getXmlDescription(const Rules& r) const;
+	QString getXmlDescription() const;
 
 	/**
 	Returns a representation of this activity.
 	*/
-	QString getDescription(const Rules& r) const;
+	QString getDescription() const;
 
 	/**
 	Returns a representation of this activity (more detailed).
 	*/
-	QString getDetailedDescription(const Rules& r) const;
+	QString getDetailedDescription() const;
 
 	/**
 	Returns a representation of this activity (detailed),

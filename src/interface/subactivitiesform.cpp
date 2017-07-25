@@ -289,7 +289,7 @@ void SubactivitiesForm::filterChanged()
 	for(int i=0; i<gt.rules.activitiesList.size(); i++){
 		Activity* act=gt.rules.activitiesList[i];
 		if(this->filterOk(act)){
-			s=act->getDescription(gt.rules);
+			s=act->getDescription();
 			visibleSubactivitiesList.append(act);
 			subactivitiesListWidget->addItem(s);
 			k++;
@@ -481,7 +481,7 @@ void SubactivitiesForm::subactivityComments()
 		gt.rules.internalStructureComputed=false;
 		gt.rules.setModified(true);
 
-		subactivitiesListWidget->currentItem()->setText(act->getDescription(gt.rules));
+		subactivitiesListWidget->currentItem()->setText(act->getDescription());
 		subactivityChanged();
 	}
 }

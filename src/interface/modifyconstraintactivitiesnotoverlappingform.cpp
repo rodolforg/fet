@@ -70,7 +70,7 @@ ModifyConstraintActivitiesNotOverlappingForm::ModifyConstraintActivitiesNotOverl
 				break;
 		}
 		assert(act);
-		this->notOverlappingActivitiesListWidget->addItem(act->getDescription(gt.rules));
+		this->notOverlappingActivitiesListWidget->addItem(act->getDescription());
 	}
 	
 	weightLineEdit->setText(CustomFETString::number(ctr->weightPercentage));
@@ -128,7 +128,7 @@ void ModifyConstraintActivitiesNotOverlappingForm::filterChanged()
 	for(int i=0; i<gt.rules.activitiesList.size(); i++){
 		Activity* ac=gt.rules.activitiesList[i];
 		if(filterOk(ac)){
-			activitiesListWidget->addItem(ac->getDescription(gt.rules));
+			activitiesListWidget->addItem(ac->getDescription());
 			this->activitiesList.append(ac->id);
 		}
 	}

@@ -46,10 +46,8 @@ void GroupActivitiesInInitialOrderItem::removeUseless(const Rules& r)
 	ids=tmpList;
 }
 
-QString GroupActivitiesInInitialOrderItem::getXmlDescription(const Rules &r) const
+QString GroupActivitiesInInitialOrderItem::getXmlDescription() const
 {
-	Q_UNUSED(r);
-
 	QString s;
 
 	s+="<GroupActivitiesInInitialOrder>\n";
@@ -71,10 +69,8 @@ QString GroupActivitiesInInitialOrderItem::getXmlDescription(const Rules &r) con
 	return s;
 }
 
-QString GroupActivitiesInInitialOrderItem::getDescription(const Rules &r) const
+QString GroupActivitiesInInitialOrderItem::getDescription() const
 {
-	Q_UNUSED(r);
-
 	QString s;
 	if(!active)
 		s+="X - ";
@@ -131,7 +127,7 @@ Activity::Activity() :
 	nTotalStudents(0),
 	computeNTotalStudents(false),
 	active(false),
-	subjectIndex(0)
+	subjectIndex(-1)
 {
 }
 
@@ -197,7 +193,8 @@ Activity::Activity(int _id,
 		id(_id),
 		activityGroupId(_activityGroupId),
 		computeNTotalStudents(_computeNTotalStudents),
-		active(_active)
+		active(_active),
+		subjectIndex(-1)
 {
 	if(_computeNTotalStudents)
 		assert(_nTotalStudents==-1);
@@ -223,7 +220,7 @@ bool Activity::operator==(const Activity& a) const
 	return true;
 }
 
-bool Activity::searchTeacher(const QString& teacherName) const
+bool Activity::hasTeacher(const QString& teacherName) const
 {
 	return this->teachersNames.indexOf(teacherName)!=-1;
 }
@@ -248,7 +245,7 @@ void Activity::renameTeacher(const QString& initialTeacherName, const QString& f
 	assert(t<=1);
 }
 
-bool Activity::searchStudents(const QString& studentsName) const
+bool Activity::hasStudents(const QString& studentsName) const
 {
 	return this->studentsNames.indexOf(studentsName)!=-1;
 }
@@ -448,10 +445,8 @@ void Activity::computeInternalStructure(const Rules& r)
 	}
 }
 
-QString Activity::getXmlDescription(const Rules &r) const
+QString Activity::getXmlDescription() const
 {
-	Q_UNUSED(r);
-
 	QString s="<Activity>\n";
 
 	for(QStringList::ConstIterator it=this->teachersNames.begin(); it!=this->teachersNames.end(); it++)
@@ -487,12 +482,10 @@ QString Activity::getXmlDescription(const Rules &r) const
 	return s;
 }
 
-QString Activity::getDescription(const Rules &r) const
+QString Activity::getDescription() const
 {
 	const int INDENT=4;
 
-	Q_UNUSED(r);
-	
 	bool _indent;
 	if(this->isSplit() && this->id!=this->activityGroupId)
 		_indent=true;
@@ -590,10 +583,8 @@ QString Activity::getDescription(const Rules &r) const
 	return s;
 }
 
-QString Activity::getDetailedDescription(const Rules &r) const
+QString Activity::getDetailedDescription() const
 {
-	Q_UNUSED(r);
-
 	QString s;
 
 	s=tr("Activity:");
@@ -681,7 +672,7 @@ QString Activity::getDetailedDescription(const Rules &r) const
 
 QString Activity::getDetailedDescriptionWithConstraints(const Rules &r) const
 {
-	QString s=this->getDetailedDescription(r);
+	QString s=this->getDetailedDescription();
 
 	s+="--------------------------------------------------\n";
 	s+=tr("Time constraints directly related to this activity:");

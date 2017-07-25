@@ -164,15 +164,15 @@ void AddConstraintActivitiesSameStartingTimeForm::updateActivitiesListWidget()
 	if(blockCheckBox->isChecked())
 		//show only non-split activities and split activities which are the representatives
 		for(int i=0; i<gt.rules.activitiesList.size(); i++){
-			Activity* ac=gt.rules.activitiesList[i];
-			if(filterOk(ac)){
-				if(ac->activityGroupId==0){
-					activitiesListWidget->addItem(ac->getDescription(gt.rules));
-					this->activitiesList.append(ac->id);
+			Activity* act=gt.rules.activitiesList[i];
+			if(filterOk(act)){
+				if(act->activityGroupId==0){
+					activitiesListWidget->addItem(act->getDescription());
+					this->activitiesList.append(act->id);
 				}
-				else if(ac->id==ac->activityGroupId){
-					activitiesListWidget->addItem(ac->getDescription(gt.rules));
-					this->activitiesList.append(ac->id);
+				else if(act->id==act->activityGroupId){
+					activitiesListWidget->addItem(act->getDescription());
+					this->activitiesList.append(act->id);
 				}
 			}
 		}
@@ -180,7 +180,7 @@ void AddConstraintActivitiesSameStartingTimeForm::updateActivitiesListWidget()
 		for(int i=0; i<gt.rules.activitiesList.size(); i++){
 			Activity* ac=gt.rules.activitiesList[i];
 			if(filterOk(ac)){
-				activitiesListWidget->addItem(ac->getDescription(gt.rules));
+				activitiesListWidget->addItem(ac->getDescription());
 				this->activitiesList.append(ac->id);
 			}
 		}

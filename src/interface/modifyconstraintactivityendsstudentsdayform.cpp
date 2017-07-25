@@ -155,7 +155,7 @@ void ModifyConstraintActivityEndsStudentsDayForm::updateActivitiesComboBox(){
 	for(int k=0; k<gt.rules.activitiesList.size(); k++){
 		Activity* act=gt.rules.activitiesList[k];
 		if(filterOk(act)){
-			activitiesComboBox->addItem(act->getDescription(gt.rules));
+			activitiesComboBox->addItem(act->getDescription());
 			this->activitiesList.append(act->id);
 			if(act->id==this->_ctr->activityId)
 				j=i;

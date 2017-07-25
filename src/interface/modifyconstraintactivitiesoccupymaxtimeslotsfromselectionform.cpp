@@ -93,7 +93,7 @@ ModifyConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm::ModifyConstraintA
 				break;
 		}
 		assert(act);
-		this->selectedActivitiesListWidget->addItem(act->getDescription(gt.rules));
+		this->selectedActivitiesListWidget->addItem(act->getDescription());
 	}
 
 	teachersComboBox->addItem("");
@@ -262,7 +262,7 @@ void ModifyConstraintActivitiesOccupyMaxTimeSlotsFromSelectionForm::updateActivi
 	for(int i=0; i<gt.rules.activitiesList.size(); i++){
 		Activity* ac=gt.rules.activitiesList[i];
 		if(filterOk(ac)){
-			allActivitiesListWidget->addItem(ac->getDescription(gt.rules));
+			allActivitiesListWidget->addItem(ac->getDescription());
 			this->activitiesList.append(ac->id);
 		}
 	}

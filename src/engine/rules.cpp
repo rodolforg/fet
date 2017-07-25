@@ -7030,7 +7030,7 @@ bool Rules::write(QWidget *parent, const QString& filename) const
 	tos << "<Activities_List>\n";
 	for(int i=0; i<this->activitiesList.size(); i++){
 		Activity* act=this->activitiesList[i];
-		tos << act->getXmlDescription(*this);
+		tos << act->getXmlDescription();
 		tos << "\n";
 	}
 	tos << "</Activities_List>\n\n";
@@ -7071,7 +7071,7 @@ bool Rules::write(QWidget *parent, const QString& filename) const
 		tos << "<Timetable_Generation_Options_List>\n";
 		for(int i=0; i<groupActivitiesInInitialOrderList.count(); i++){
 			GroupActivitiesInInitialOrderItem* item=groupActivitiesInInitialOrderList[i];
-			tos << item->getXmlDescription(*this);
+			tos << item->getXmlDescription();
 		}
 		tos << "</Timetable_Generation_Options_List>\n\n";
 	}
@@ -7107,7 +7107,7 @@ int Rules::activateTeacher(const QString& teacherName)
 	int count=0;
 	for(int i=0; i<this->activitiesList.size(); i++){
 		Activity* act=this->activitiesList[i];
-		if(act->searchTeacher(teacherName)){
+		if(act->hasTeacher(teacherName)){
 			if(!act->active)
 				count++;
 			act->active=true;
@@ -7205,7 +7205,7 @@ int Rules::deactivateTeacher(const QString& teacherName)
 	int count=0;
 	for(int i=0; i<this->activitiesList.size(); i++){
 		Activity* act=this->activitiesList[i];
-		if(act->searchTeacher(teacherName)){
+		if(act->hasTeacher(teacherName)){
 			if(act->active)
 				count++;
 			act->active=false;

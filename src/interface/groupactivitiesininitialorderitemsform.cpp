@@ -192,7 +192,7 @@ void GroupActivitiesInInitialOrderItemsForm::filterChanged()
 		GroupActivitiesInInitialOrderItem* item=gt.rules.groupActivitiesInInitialOrderList[i];
 		if(filterOk(*item)){
 			visibleItemsList.append(item);
-			itemsListWidget->addItem(item->getDescription(gt.rules));
+			itemsListWidget->addItem(item->getDescription());
 
 			if(USE_GUI_COLORS && !item->active)
 				itemsListWidget->item(itemsListWidget->count()-1)->setBackground(itemsListWidget->palette().alternateBase());
@@ -346,7 +346,7 @@ void GroupActivitiesInInitialOrderItemsForm::activateItem()
 		gt.rules.internalStructureComputed=false;
 		gt.rules.setModified(true);
 
-		itemsListWidget->currentItem()->setText(item->getDescription(gt.rules));
+		itemsListWidget->currentItem()->setText(item->getDescription());
 		if(USE_GUI_COLORS)
 			itemsListWidget->currentItem()->setBackground(itemsListWidget->palette().base());
 		itemChanged(itemsListWidget->currentRow());
@@ -381,7 +381,7 @@ void GroupActivitiesInInitialOrderItemsForm::deactivateItem()
 		gt.rules.internalStructureComputed=false;
 		gt.rules.setModified(true);
 
-		itemsListWidget->currentItem()->setText(item->getDescription(gt.rules));
+		itemsListWidget->currentItem()->setText(item->getDescription());
 		if(USE_GUI_COLORS)
 			itemsListWidget->currentItem()->setBackground(itemsListWidget->palette().alternateBase());
 		itemChanged(itemsListWidget->currentRow());
@@ -478,7 +478,7 @@ void GroupActivitiesInInitialOrderItemsForm::itemComments()
 		gt.rules.internalStructureComputed=false;
 		gt.rules.setModified(true);
 
-		itemsListWidget->currentItem()->setText(item->getDescription(gt.rules));
+		itemsListWidget->currentItem()->setText(item->getDescription());
 		itemChanged(itemsListWidget->currentRow());
 	}
 }

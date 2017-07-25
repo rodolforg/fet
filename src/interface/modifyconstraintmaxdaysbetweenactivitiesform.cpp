@@ -73,7 +73,7 @@ ModifyConstraintMaxDaysBetweenActivitiesForm::ModifyConstraintMaxDaysBetweenActi
 				break;
 		}
 		assert(act);
-		selectedActivitiesListWidget->addItem(act->getDescription(gt.rules));
+		selectedActivitiesListWidget->addItem(act->getDescription());
 	}
 	
 	maxDaysSpinBox->setMinimum(0);
@@ -136,7 +136,7 @@ void ModifyConstraintMaxDaysBetweenActivitiesForm::filterChanged()
 	for(int i=0; i<gt.rules.activitiesList.size(); i++){
 		Activity* ac=gt.rules.activitiesList[i];
 		if(filterOk(ac)){
-			activitiesListWidget->addItem(ac->getDescription(gt.rules));
+			activitiesListWidget->addItem(ac->getDescription());
 			this->activitiesList.append(ac->id);
 		}
 	}
