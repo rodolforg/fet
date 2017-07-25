@@ -23,14 +23,10 @@
 #include "timetable.h"
 #include "fet.h"
 
-#include "advancedfilterform.h"
-
 class AllTimeConstraintsForm : public QDialog, Ui::AllTimeConstraintsForm_template  {
 	Q_OBJECT
 	
 private:
-	AdvancedFilterForm* filterForm;
-
 	QList<TimeConstraint*> visibleTimeConstraintsList;
 	
 	bool all; //all or any, true means all, false means any
