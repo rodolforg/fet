@@ -907,12 +907,24 @@ void Rules::kill() //clears memory for the rules, destroys them
 	//done
 	this->internalStructureComputed=false;
 	this->initialized=false;
+	nInternalTeachers = 0;
+	nInternalSubjects = 0;
+	nInternalActivityTags = 0;
+	nInternalSubgroups = 0;
+	nInternalActivities = 0;
+	nInternalRooms = 0;
+	nInternalBuildings = 0;
+	nInternalTimeConstraints = 0;
+	nInternalSpaceConstraints = 0;
 }
 
 Rules::Rules()
+	: modified(false),
+	  nInternalTeachers(0), nInternalSubjects(0), nInternalActivityTags(0), nInternalSubgroups(0),
+	  nInternalActivities(0), nInternalRooms(0), nInternalBuildings(0),
+	  nInternalTimeConstraints(0), nInternalSpaceConstraints(0),
+	  initialized(false), internalStructureComputed(false)
 {
-	this->initialized=false;
-	this->modified=false;
 }
 
 Rules::~Rules()
