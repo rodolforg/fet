@@ -21,7 +21,10 @@
 
 #include <QMessageBox>
 
-ChangeMinDaysSelectivelyForm::ChangeMinDaysSelectivelyForm(QWidget* parent): QDialog(parent)
+ChangeMinDaysSelectivelyForm::ChangeMinDaysSelectivelyForm(QWidget* parent)
+	: QDialog(parent),
+	  oldWeight(-2), oldDays(-2), oldConsecutive(-2), oldNActs(-2),
+	  newWeight(-2), newDays(-2), newConsecutive(-2)
 {
 	setupUi(this);
 	
@@ -71,12 +74,6 @@ ChangeMinDaysSelectivelyForm::~ChangeMinDaysSelectivelyForm()
 
 void ChangeMinDaysSelectivelyForm::ok()
 {
-	enum {ANY=0, YES=1, NO=2};
-	enum {NOCHANGE=0};
-
-	oldWeight=oldDays=oldConsecutive=oldNActs=-2;
-	newWeight=newDays=newConsecutive=-2;
-
 	QString oldWeightS=oldWeightLineEdit->text();
 	weight_sscanf(oldWeightS, "%lf", &oldWeight);
 	if(!(oldWeight==-1 || (oldWeight>=0.0 && oldWeight<=100.0))){
