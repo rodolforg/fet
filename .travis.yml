@@ -22,15 +22,15 @@ matrix:
             - qt58base qt58declarative qt58tools
       before_install:
         source /opt/qt58/bin/qt58-env.sh
-    - os: linux
-      env:
-        NAME: "Qt 5.2.1"
-      addons:
-        apt:
-          packages:
-            - qt5-qmake qtbase5-dev qtdeclarative5-dev libqt5webkit5-dev libsqlite3-dev
-      before_install:
-        export QMAKE=/usr/lib/x86_64-linux-gnu/qt5/bin/qmake
+#    - os: linux
+#      env:
+#        NAME: "Qt 5.2.1"
+#      addons:
+#        apt:
+#          packages:
+#            - qt5-qmake qtbase5-dev qtdeclarative5-dev libqt5webkit5-dev libsqlite3-dev
+#      before_install:
+#        export QMAKE=/usr/lib/x86_64-linux-gnu/qt5/bin/qmake
 
 before_install:
   - echo -n | openssl s_client -connect scan.coverity.com:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sudo tee -a /etc/ssl/certs/ca-
