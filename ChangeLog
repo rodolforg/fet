@@ -1974,3 +1974,5 @@ Versions 5.32.0 - 5.32.v
 	- Corrected a few compilation errors on older compilers (reported by Valdo, fixed by rodolforg and Liviu Lalescu).
 	- Implemented the rooms' timetable view time horizontal from the FET interface (suggested by sigit_yuwono).
 	- In the timetable view time horizontal dialogs the activities which are locked in space are shown with an italic font (suggested by Vangelis Karafillidis).
+- Version 5.32.2
+	- Crash bug fixed (rare, if adding an activity without students sets which had a specified number of students greater than 0). Reported by Zsolt Udvari.
