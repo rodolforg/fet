@@ -1043,7 +1043,7 @@ bool Export::exportCSVTimetable(QWidget* parent, QMessageBox::StandardButton& ms
 
 	if(gt.rules.initialized && gt.rules.internalStructureComputed
 	 && solution.subgroupsMatrixReady && solution.teachersMatrixReady && solution.roomsMatrixReady){
-		Activity *act;
+		const Activity *act;
 		int exportedActivities=0;
 		for(int i=0; i<gt.rules.nInternalActivities; i++){
 			if(solution.times[i]!=UNALLOCATED_TIME) {

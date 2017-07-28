@@ -100,7 +100,7 @@ inline void Generate::removeAiFromNewTimetable(int ai, const Activity* act, int 
 
 inline void Generate::removeAi2FromTchTimetable(int ai2)
 {
-	Activity* act2=&gt.rules.internalActivitiesList[ai2];
+	const Activity* act2=&gt.rules.internalActivitiesList[ai2];
 	int d2=c.times[ai2]%gt.rules.nDaysPerWeek;
 	int h2=c.times[ai2]/gt.rules.nDaysPerWeek;
 	
@@ -113,7 +113,7 @@ inline void Generate::removeAi2FromTchTimetable(int ai2)
 
 inline void Generate::removeAi2FromSbgTimetable(int ai2)
 {
-	Activity* act2=&gt.rules.internalActivitiesList[ai2];
+	const Activity* act2=&gt.rules.internalActivitiesList[ai2];
 	int d2=c.times[ai2]%gt.rules.nDaysPerWeek;
 	int h2=c.times[ai2]/gt.rules.nDaysPerWeek;
 	
@@ -209,7 +209,7 @@ inline void Generate::updateSbgNHoursGaps(int sbg, int d)
 		sbgDayNFirstGaps[d]=0;
 }
 
-inline void Generate::updateTeachersNHoursGaps(Activity* act, int ai, int d)
+inline void Generate::updateTeachersNHoursGaps(const Activity* act, int ai, int d)
 {
 	Q_UNUSED(act);
 
@@ -236,7 +236,7 @@ inline void Generate::updateTeachersNHoursGaps(Activity* act, int ai, int d)
 	}
 }
 
-inline void Generate::updateSubgroupsNHoursGaps(Activity* act, int ai, int d)
+inline void Generate::updateSubgroupsNHoursGaps(const Activity* act, int ai, int d)
 {
 	Q_UNUSED(act);
 
@@ -2724,7 +2724,7 @@ if(threaded){
 			if(c.rooms[i]!=UNSPECIFIED_ROOM){
 				int rm=c.rooms[i];
 			
-				Activity* act=&gt.rules.internalActivitiesList[i];
+				const Activity* act=&gt.rules.internalActivitiesList[i];
 				int hour=c.times[i]/gt.rules.nDaysPerWeek;
 				int day=c.times[i]%gt.rules.nDaysPerWeek;
 				for(int dd=0; dd<act->duration && hour+dd<gt.rules.nHoursPerDay; dd++){
@@ -2751,7 +2751,7 @@ if(threaded){
 					continue;
 			}
 			assert(c.times[i]!=UNALLOCATED_TIME);
-			Activity* act=&gt.rules.internalActivitiesList[i];
+			const Activity* act=&gt.rules.internalActivitiesList[i];
 			int hour=c.times[i]/gt.rules.nDaysPerWeek;
 			int day=c.times[i]%gt.rules.nDaysPerWeek;
 			foreach(int sb, act->iSubgroupsList){
@@ -2778,7 +2778,7 @@ if(threaded){
 					continue;
 			}
 			assert(c.times[i]!=UNALLOCATED_TIME);
-			Activity* act=&gt.rules.internalActivitiesList[i];
+			const Activity* act=&gt.rules.internalActivitiesList[i];
 			int hour=c.times[i]/gt.rules.nDaysPerWeek;
 			int day=c.times[i]%gt.rules.nDaysPerWeek;
 			foreach(int sb, act->iSubgroupsList){
@@ -2830,7 +2830,7 @@ if(threaded){
 					continue;
 			}
 			assert(c.times[i]!=UNALLOCATED_TIME);
-			Activity* act=&gt.rules.internalActivitiesList[i];
+			const Activity* act=&gt.rules.internalActivitiesList[i];
 			int hour=c.times[i]/gt.rules.nDaysPerWeek;
 			int day=c.times[i]%gt.rules.nDaysPerWeek;
 			foreach(int tc, act->iTeachersList){
@@ -2857,7 +2857,7 @@ if(threaded){
 					continue;
 			}
 			assert(c.times[i]!=UNALLOCATED_TIME);
-			Activity* act=&gt.rules.internalActivitiesList[i];
+			const Activity* act=&gt.rules.internalActivitiesList[i];
 			int hour=c.times[i]/gt.rules.nDaysPerWeek;
 			int day=c.times[i]%gt.rules.nDaysPerWeek;
 			foreach(int tc, act->iTeachersList){
@@ -2909,7 +2909,7 @@ if(threaded){
 				}
 				assert(c.times[i]!=UNALLOCATED_TIME);
 				
-				Activity* act=&gt.rules.internalActivitiesList[i];
+				const Activity* act=&gt.rules.internalActivitiesList[i];
 			
 				for(int t=c.times[i]; t<c.times[i]+act->duration*gt.rules.nDaysPerWeek; t+=gt.rules.nDaysPerWeek){
 					assert(!activitiesAtTime[t].contains(i));
@@ -3151,7 +3151,7 @@ if(threaded){
 
 void Generate::moveActivity(int ai, int fromslot, int toslot, int fromroom, int toroom)
 {
-	Activity* act=&gt.rules.internalActivitiesList[ai];
+	const Activity* act=&gt.rules.internalActivitiesList[ai];
 
 	//cout<<"here: id of act=="<<act->id<<", fromslot=="<<fromslot<<", toslot=="<<toslot<<endl;
 
@@ -3418,7 +3418,7 @@ bool Generate::randomSwap(int ai, int level){
 		
 	ncallsrandomswap++;
 	
-	Activity* act=&gt.rules.internalActivitiesList[ai];
+	const Activity* act=&gt.rules.internalActivitiesList[ai];
 	
 	bool updateSubgroups=(mustComputeTimetableSubgroups[ai].count()>0);
 	bool updateTeachers=(mustComputeTimetableTeachers[ai].count()>0);
@@ -6772,7 +6772,7 @@ impossiblestudentsmaxhourscontinuously:
 						if(newSubgroupsTimetable(sbg,d,h2)>=0){
 							int ai2=newSubgroupsTimetable(sbg,d,h2);
 							assert(ai2>=0 && ai2<gt.rules.nInternalActivities);
-							Activity* act=&gt.rules.internalActivitiesList[ai2];
+							const Activity* act=&gt.rules.internalActivitiesList[ai2];
 							if(act->iActivityTagsSet.contains(activityTag)){
 								nold++;
 								nnew++;
@@ -6783,7 +6783,7 @@ impossiblestudentsmaxhourscontinuously:
 						if(oldSubgroupsTimetable(sbg,d,h2)>=0){
 							int ai2=oldSubgroupsTimetable(sbg,d,h2);
 							assert(ai2>=0 && ai2<gt.rules.nInternalActivities);
-							Activity* act=&gt.rules.internalActivitiesList[ai2];
+							const Activity* act=&gt.rules.internalActivitiesList[ai2];
 							if(act->iActivityTagsSet.contains(activityTag))
 								nold++;
 						}
@@ -6792,7 +6792,7 @@ impossiblestudentsmaxhourscontinuously:
 						if(newSubgroupsTimetable(sbg,d,h2)>=0){
 							int ai2=newSubgroupsTimetable(sbg,d,h2);
 							assert(ai2>=0 && ai2<gt.rules.nInternalActivities);
-							Activity* act=&gt.rules.internalActivitiesList[ai2];
+							const Activity* act=&gt.rules.internalActivitiesList[ai2];
 							if(act->iActivityTagsSet.contains(activityTag))
 								nnew++;
 						}
@@ -6801,7 +6801,7 @@ impossiblestudentsmaxhourscontinuously:
 						if(newSubgroupsTimetable(sbg,d,h2)>=0){
 							int ai2=newSubgroupsTimetable(sbg,d,h2);
 							assert(ai2>=0 && ai2<gt.rules.nInternalActivities);
-							Activity* act=&gt.rules.internalActivitiesList[ai2];
+							const Activity* act=&gt.rules.internalActivitiesList[ai2];
 							if(act->iActivityTagsSet.contains(activityTag)){
 								nold++;
 								nnew++;
@@ -6846,7 +6846,7 @@ impossiblestudentsmaxhourscontinuously:
 								if(sbgTimetable(d,h2)>=0){
 									int ai2=sbgTimetable(d,h2);
 									assert(ai2>=0 && ai2<gt.rules.nInternalActivities);
-									Activity* act=&gt.rules.internalActivitiesList[ai2];
+									const Activity* act=&gt.rules.internalActivitiesList[ai2];
 									if(act->iActivityTagsSet.contains(activityTag))
 										ncrt++;
 								}
@@ -8805,7 +8805,7 @@ impossibleteachersmaxhourscontinuously:
 						if(newTeachersTimetable(tch,d,h2)>=0){
 							int ai2=newTeachersTimetable(tch,d,h2);
 							assert(ai2>=0 && ai2<gt.rules.nInternalActivities);
-							Activity* act=&gt.rules.internalActivitiesList[ai2];
+							const Activity* act=&gt.rules.internalActivitiesList[ai2];
 							if(act->iActivityTagsSet.contains(activityTag)){
 								nold++;
 								nnew++;
@@ -8816,7 +8816,7 @@ impossibleteachersmaxhourscontinuously:
 						if(oldTeachersTimetable(tch,d,h2)>=0){
 							int ai2=oldTeachersTimetable(tch,d,h2);
 							assert(ai2>=0 && ai2<gt.rules.nInternalActivities);
-							Activity* act=&gt.rules.internalActivitiesList[ai2];
+							const Activity* act=&gt.rules.internalActivitiesList[ai2];
 							if(act->iActivityTagsSet.contains(activityTag))
 								nold++;
 						}
@@ -8825,7 +8825,7 @@ impossibleteachersmaxhourscontinuously:
 						if(newTeachersTimetable(tch,d,h2)>=0){
 							int ai2=newTeachersTimetable(tch,d,h2);
 							assert(ai2>=0 && ai2<gt.rules.nInternalActivities);
-							Activity* act=&gt.rules.internalActivitiesList[ai2];
+							const Activity* act=&gt.rules.internalActivitiesList[ai2];
 							if(act->iActivityTagsSet.contains(activityTag))
 								nnew++;
 						}
@@ -8834,7 +8834,7 @@ impossibleteachersmaxhourscontinuously:
 						if(newTeachersTimetable(tch,d,h2)>=0){
 							int ai2=newTeachersTimetable(tch,d,h2);
 							assert(ai2>=0 && ai2<gt.rules.nInternalActivities);
-							Activity* act=&gt.rules.internalActivitiesList[ai2];
+							const Activity* act=&gt.rules.internalActivitiesList[ai2];
 							if(act->iActivityTagsSet.contains(activityTag)){
 								nold++;
 								nnew++;
@@ -8879,7 +8879,7 @@ impossibleteachersmaxhourscontinuously:
 								if(tchTimetable(d,h2)>=0){
 									int ai2=tchTimetable(d,h2);
 									assert(ai2>=0 && ai2<gt.rules.nInternalActivities);
-									Activity* act=&gt.rules.internalActivitiesList[ai2];
+									const Activity* act=&gt.rules.internalActivitiesList[ai2];
 									if(act->iActivityTagsSet.contains(activityTag))
 										ncrt++;
 								}

@@ -8894,7 +8894,7 @@ bool ConstraintActivitiesPreferredTimeSlots::computeInternalStructure(QWidget* p
 	this->p_activitiesIndices.clear();
 
 	int it;
-	Activity* act;
+	const Activity* act;
 	int i;
 	for(i=0; i<r.nInternalActivities; i++){
 		act=&r.internalActivitiesList[i];
@@ -9385,7 +9385,7 @@ bool ConstraintSubactivitiesPreferredTimeSlots::computeInternalStructure(QWidget
 	this->p_activitiesIndices.clear();
 
 	int it;
-	Activity* act;
+	const Activity* act;
 	int i;
 	for(i=0; i<r.nInternalActivities; i++){
 		act=&r.internalActivitiesList[i];
@@ -10171,7 +10171,7 @@ bool ConstraintActivitiesPreferredStartingTimes::computeInternalStructure(QWidge
 	this->activitiesIndices.clear();
 
 	int it;
-	Activity* act;
+	const Activity* act;
 	int i;
 	for(i=0; i<r.nInternalActivities; i++){
 		act=&r.internalActivitiesList[i];
@@ -10650,7 +10650,7 @@ bool ConstraintSubactivitiesPreferredStartingTimes::computeInternalStructure(QWi
 	this->activitiesIndices.clear();
 
 	int it;
-	Activity* act;
+	const Activity* act;
 	int i;
 	for(i=0; i<r.nInternalActivities; i++){
 		act=&r.internalActivitiesList[i];
@@ -14860,7 +14860,7 @@ bool ConstraintActivitiesEndStudentsDay::computeInternalStructure(QWidget* paren
 	this->activitiesIndices.clear();
 
 	int it;
-	Activity* act;
+	const Activity* act;
 	int i;
 	for(i=0; i<r.nInternalActivities; i++){
 		act=&r.internalActivitiesList[i];
@@ -16820,7 +16820,7 @@ double ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::fitness(Solution& c,
 	
 	foreach(int ai, this->_activitiesIndices){
 		if(c.times[ai]!=UNALLOCATED_TIME){
-			Activity* act=&r.internalActivitiesList[ai];
+			const Activity* act=&r.internalActivitiesList[ai];
 			int d=c.times[ai]%r.nDaysPerWeek;
 			int h=c.times[ai]/r.nDaysPerWeek;
 			for(int dur=0; dur<act->duration; dur++){
@@ -17182,7 +17182,7 @@ double ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::fitness(Solution&
 	
 	foreach(int ai, this->_activitiesIndices){
 		if(c.times[ai]!=UNALLOCATED_TIME){
-			Activity* act=&r.internalActivitiesList[ai];
+			const Activity* act=&r.internalActivitiesList[ai];
 			int d=c.times[ai]%r.nDaysPerWeek;
 			int h=c.times[ai]/r.nDaysPerWeek;
 			for(int dur=0; dur<act->duration; dur++){
