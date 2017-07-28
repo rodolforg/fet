@@ -60,7 +60,9 @@ public:
 	 */
 	void resize(int _d1, int _d2, int _d3);
 	T** operator[](int i);
+	const T** operator[](int i) const;
 	T& operator()(int i, int j, int k);
+	const T& operator()(int i, int j, int k) const;
 };
 
 /**
@@ -91,7 +93,9 @@ public:
 	 */
 	void resize(int _d1, int _d2);
 	T* operator[](int i);
+	const T* operator[](int i) const;
 	T& operator()(int i, int j);
+	const T& operator()(int i, int j) const;
 };
 
 /**
@@ -118,7 +122,8 @@ public:
 	 * @param _d1 the new dimension size
 	 */
 	void resize(int _d1);
-	T& operator[](int i) const;
+	T& operator[](int i);
+	const T& operator[](int i) const;
 	/**
 	 * @brief getD1 the current matrix dimension
 	 * @return the current 1-D matrix size
@@ -185,7 +190,17 @@ template <typename T> inline T** Matrix3D<T>::operator[](int i)
 	return a[i];
 }
 
+template <typename T> inline const T** Matrix3D<T>::operator[](int i) const
+{
+	return a[i];
+}
+
 template <typename T> inline T& Matrix3D<T>::operator()(int i, int j, int k)
+{
+	return content[(i*d2+j)*d3+k];
+}
+
+template <typename T> inline const T& Matrix3D<T>::operator()(int i, int j, int k) const
 {
 	return content[(i*d2+j)*d3+k];
 }
@@ -242,6 +257,11 @@ template <typename T> inline T* Matrix2D<T>::operator[](int i)
 	return a[i];
 }
 
+template <typename T> inline const T& Matrix2D<T>::operator()(int i, int j) const
+{
+	return content[i*d2+j];
+}
+
 template <typename T> inline T& Matrix2D<T>::operator()(int i, int j)
 {
 	return content[i*d2+j];
@@ -289,7 +309,12 @@ template <typename T> void Matrix1D<T>::resize(int _d1)
 	}
 }
 
-template <typename T> inline T& Matrix1D<T>::operator[](int i) const
+template <typename T> inline const T& Matrix1D<T>::operator[](int i) const
+{
+	return a[i];
+}
+
+template <typename T> inline T& Matrix1D<T>::operator[](int i)
 {
 	return a[i];
 }
