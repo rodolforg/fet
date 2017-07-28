@@ -63,6 +63,22 @@ public:
 	const T** operator[](int i) const;
 	T& operator()(int i, int j, int k);
 	const T& operator()(int i, int j, int k) const;
+
+	/**
+	 * @brief getD1 the size of the first dimension
+	 * @return the current size of first (main) dimension of 3-D matrix
+	 */
+	int getD1() const;
+	/**
+	 * @brief getD2 the size of the second dimension
+	 * @return the current size of second dimension of 3-D matrix
+	 */
+	int getD2() const;
+	/**
+	 * @brief getD3 the size of the third dimension
+	 * @return the current size of third dimension of 3-D matrix
+	 */
+	int getD3() const;
 };
 
 /**
@@ -96,6 +112,17 @@ public:
 	const T* operator[](int i) const;
 	T& operator()(int i, int j);
 	const T& operator()(int i, int j) const;
+
+	/**
+	 * @brief getD1 the size of the first dimension
+	 * @return the current size of first (main) dimension of 3-D matrix
+	 */
+	int getD1() const;
+	/**
+	 * @brief getD2 the size of the second dimension
+	 * @return the current size of second dimension of 3-D matrix
+	 */
+	int getD2() const;
 };
 
 /**
@@ -205,6 +232,21 @@ template <typename T> inline const T& Matrix3D<T>::operator()(int i, int j, int 
 	return content[(i*d2+j)*d3+k];
 }
 
+template <typename T> int Matrix3D<T>::getD1() const
+{
+	return d1;
+}
+
+template <typename T> int Matrix3D<T>::getD2() const
+{
+	return d2;
+}
+
+template <typename T> int Matrix3D<T>::getD3() const
+{
+	return d3;
+}
+
 
 template <typename T> Matrix2D<T>::Matrix2D()
 	: d1(-1), d2(-1), a(nullptr), content(nullptr)
@@ -267,11 +309,16 @@ template <typename T> inline T& Matrix2D<T>::operator()(int i, int j)
 	return content[i*d2+j];
 }
 
-
-template <typename T> int Matrix1D<T>::getD1() const
+template <typename T> int Matrix2D<T>::getD1() const
 {
-return d1;
+	return d1;
 }
+
+template <typename T> int Matrix2D<T>::getD2() const
+{
+	return d2;
+}
+
 
 template <typename T> Matrix1D<T>::Matrix1D()
 	: d1(-1), a(nullptr)
@@ -317,6 +364,11 @@ template <typename T> inline const T& Matrix1D<T>::operator[](int i) const
 template <typename T> inline T& Matrix1D<T>::operator[](int i)
 {
 	return a[i];
+}
+
+template <typename T> int Matrix1D<T>::getD1() const
+{
+	return d1;
 }
 
 #endif
