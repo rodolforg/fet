@@ -978,7 +978,7 @@ bool Rules::addTeacherFast(Teacher* teacher)
 	return true;
 }
 
-int Rules::searchTeacher(const QString& teacherName)
+int Rules::searchTeacher(const QString& teacherName) const
 {
 	for(int i=0; i<this->teachersList.size(); i++)
 		if(this->teachersList.at(i)->name==teacherName)
@@ -1203,7 +1203,7 @@ bool Rules::addSubjectFast(Subject* subject)
 	return true;
 }
 
-int Rules::searchSubject(const QString& subjectName)
+int Rules::searchSubject(const QString& subjectName) const
 {
 	for(int i=0; i<this->subjectsList.size(); i++)
 		if(this->subjectsList.at(i)->name == subjectName)
@@ -1376,7 +1376,7 @@ bool Rules::addActivityTagFast(ActivityTag* activityTag)
 	return true;
 }
 
-int Rules::searchActivityTag(const QString& activityTagName)
+int Rules::searchActivityTag(const QString& activityTagName) const
 {
 	for(int i=0; i<this->activityTagsList.size(); i++)
 		if(this->activityTagsList.at(i)->name==activityTagName)
@@ -1898,7 +1898,7 @@ bool Rules::removeYearPointerAfterSplit(StudentsYear* yearPointer)
 	return true;
 }
 
-int Rules::searchYear(const QString& yearName)
+int Rules::searchYear(const QString& yearName) const
 {
 	for(int i=0; i<this->yearsList.size(); i++)
 		if(this->yearsList[i]->name==yearName)
@@ -1907,7 +1907,7 @@ int Rules::searchYear(const QString& yearName)
 	return -1;
 }
 
-int Rules::searchAugmentedYear(const QString& yearName)
+int Rules::searchAugmentedYear(const QString& yearName) const
 {
 	for(int i=0; i<this->augmentedYearsList.size(); i++)
 		if(this->augmentedYearsList[i]->name==yearName)
@@ -2428,7 +2428,7 @@ bool Rules::purgeGroup(const QString& groupName)
 	return true;
 }
 
-int Rules::searchGroup(const QString& yearName, const QString& groupName)
+int Rules::searchGroup(const QString& yearName, const QString& groupName) const
 {
 	StudentsYear* sty=NULL;
 	foreach(StudentsYear* ty, yearsList)
@@ -2445,7 +2445,7 @@ int Rules::searchGroup(const QString& yearName, const QString& groupName)
 	return -1;
 }
 
-int Rules::searchAugmentedGroup(const QString& yearName, const QString& groupName)
+int Rules::searchAugmentedGroup(const QString& yearName, const QString& groupName) const
 {
 	StudentsYear* sty=NULL;
 	foreach(StudentsYear* ty, augmentedYearsList)
@@ -2621,7 +2621,7 @@ bool Rules::purgeSubgroup(const QString& subgroupName)
 	return true;
 }
 
-int Rules::searchSubgroup(const QString& yearName, const QString& groupName, const QString& subgroupName)
+int Rules::searchSubgroup(const QString& yearName, const QString& groupName, const QString& subgroupName) const
 {
 	StudentsYear* sty=NULL;
 	foreach(StudentsYear* ty, yearsList)
@@ -2646,7 +2646,7 @@ int Rules::searchSubgroup(const QString& yearName, const QString& groupName, con
 	return -1;
 }
 
-int Rules::searchAugmentedSubgroup(const QString& yearName, const QString& groupName, const QString& subgroupName)
+int Rules::searchAugmentedSubgroup(const QString& yearName, const QString& groupName, const QString& subgroupName) const
 {
 	StudentsYear* sty=NULL;
 	foreach(StudentsYear* ty, augmentedYearsList)
@@ -3119,7 +3119,7 @@ bool Rules::addRoomFast(Room* rm)
 	return true;
 }
 
-int Rules::searchRoom(const QString& roomName)
+int Rules::searchRoom(const QString& roomName) const
 {
 	for(int i=0; i<this->roomsList.size(); i++)
 		if(this->roomsList[i]->name==roomName)
