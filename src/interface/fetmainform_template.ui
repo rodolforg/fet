@@ -886,6 +886,7 @@
       <string>Export</string>
      </property>
      <addaction name="fileExportCSVAction"/>
+     <addaction name="fileExportFOdsAction"/>
     </widget>
     <widget class="QMenu" name="menuImport">
      <property name="title">
@@ -2552,8 +2553,8 @@
   <action name="dataTimeConstraintsStudentsSetMinContinuousGapInIntervalAction">
    <property name="text">
     <string>A students set has a min continuous gap in an hourly interval</string>
-	</property>
-   </action>
+   </property>
+  </action>
   <action name="timetableViewTeachersDaysHorizontalAction">
    <property name="text">
     <string>Days horizontal</string>
@@ -2582,6 +2583,11 @@
   <action name="timetableViewRoomsTimeHorizontalAction">
    <property name="text">
     <string>Time horizontal</string>
+   </property>
+  </action>
+  <action name="fileExportFOdsAction">
+   <property name="text">
+    <string>Flat OpenDocument Spreadsheet (fods)</string>
    </property>
   </action>
  </widget>

@@ -104,7 +104,9 @@ public slots:
 	void on_fileImportCSVTeachersAction_triggered();
 	void on_fileImportCSVYearsGroupsSubgroupsAction_triggered();
 	void on_fileExportCSVAction_triggered();
-	
+
+	void on_fileExportFOdsAction_triggered();
+
 	void on_dataInstitutionNameAction_triggered();
 	void on_dataCommentsAction_triggered();
 	void on_dataDaysAction_triggered();

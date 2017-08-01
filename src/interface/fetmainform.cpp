@@ -263,6 +263,8 @@ using namespace std;
 
 #include "statisticsexport.h"
 
+#include "fodsexportform.h"
+
 bool simulation_running; //true if the user started an allocation of the timetable
 
 QString conflictsString; //the string that contains a log of the broken constraints
@@ -1433,7 +1435,25 @@ void FetMainForm::on_fileExportCSVAction_triggered(){
 	Export exp(gt, CachedSchedule::getCachedSolution());
 	exp.exportCSV(this);
 }
+
 // End of code contributed by Volker Dirr
+
+void FetMainForm::on_fileExportFOdsAction_triggered()
+{
+	if (simulation_running){
+		QMessageBox::information(this, tr("FET information"),
+			tr("Allocation in course.\nPlease stop simulation before this."));
+		return;
+	}
+
+	if (!CachedSchedule::isValid()) {
+		QMessageBox::warning(this, tr("FET - Warning"), tr("You have not yet generated a timetable - please generate firstly"));
+		return;
+	}
+
+	FOdsExportForm form(gt.rules, CachedSchedule::getCachedSolution(), this);
+	form.exec();
+}
 
 void FetMainForm::on_timetableSaveTimetableAsAction_triggered()
 {

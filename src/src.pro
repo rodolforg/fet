@@ -486,7 +486,9 @@ SOURCES += \
     interface/addconstraintstudentsmincontinuousgapinintervalform.cpp \
     interface/constraintstudentssetmincontinuousgapinintervalform.cpp \
     interface/constraintstudentsmincontinuousgapinintervalform.cpp \
-    interface/editcommentsform.cpp
+    interface/editcommentsform.cpp \
+    engine/timetableexporthelper.cpp \
+    interface/fodsexportform.cpp
 
 HEADERS += \
 	engine/timetableexport.h \
@@ -979,7 +981,9 @@ HEADERS += \
     interface/addconstraintstudentsmincontinuousgapinintervalform.h \
     interface/constraintstudentssetmincontinuousgapinintervalform.h \
     interface/constraintstudentsmincontinuousgapinintervalform.h \
-    interface/editcommentsform.h
+    interface/editcommentsform.h \
+    engine/timetableexporthelper.h \
+    interface/fodsexportform.h
 
 FORMS += \
 	interface/fetmainform_template.ui \
@@ -1316,7 +1320,8 @@ FORMS += \
 	interface/teacherstudentsetsubjectactivitytag_filterwidget.ui \
     interface/addconstraintteachersmincontinuousgapinintervalform_template.ui \
     interface/addconstraintstudentsmincontinuousgapinintervalform_template.ui \
-    interface/editcommentsform_template.ui
+    interface/editcommentsform_template.ui \
+    interface/fodsexportform_template.ui
 
 TRANSLATIONS += \
 	../translations/fet_ar.ts \
