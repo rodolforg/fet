@@ -2,7 +2,6 @@
 #include "ui_fodsexportform_template.h"
 
 #include "timetableexporthelper.h"
-#include "timetableexport.h" // CachedSchedule
 
 #include <QFile>
 #include <QMessageBox>
@@ -108,8 +107,12 @@ QString FOdsExportForm::getActivityText(const Activity *act, int flags, int tblI
 	}
 	if (flags & ActivityFlags::ACTIVITY_TAG)
 		text += text_par_tag.arg(text_span_tag.arg("T1").arg(act->activityTagsNames.join(", ")));
-//	if (flags & ActivityFlags::ROOM)
-//		text += text_par_tag.arg(text_span_tag.arg("T1").arg(act->ro.join(", ")));
+	if (flags & ActivityFlags::ROOM) {
+		TimetableExportHelper helper(rules, solution);
+		const Room *room = helper.getRoom(act);
+		if (room != NULL)
+			text += text_par_tag.arg(text_span_tag.arg("T1").arg(room->name));
+	}
 	return text;
 }
 
