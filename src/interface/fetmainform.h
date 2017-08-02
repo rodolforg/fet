@@ -83,7 +83,7 @@ class FetMainForm: public QMainWindow, public Ui::FetMainForm_template
 	Q_OBJECT
 	
 private:
-	QSpinBox communicationSpinBox;
+//	QSpinBox communicationSpinBox;
 	
 	QMenu* shortcutBasicMenu;
 	QMenu* shortcutDataSpaceMenu;
