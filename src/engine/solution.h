@@ -41,7 +41,9 @@ public:
 	QList<double> conflictsWeightList;
 	QList<QString> conflictsDescriptionList;
 	double conflictsTotal;
-	
+
+	QStringList severeConflictList;
+
 	bool teachersMatrixReady;
 	bool subgroupsMatrixReady;
 	bool roomsMatrixReady;

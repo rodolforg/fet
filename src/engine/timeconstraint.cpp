@@ -432,7 +432,6 @@ double ConstraintBasicCompulsoryTime::fitness(Solution& c, const Rules& r, QList
 			}
 		}
 	}
-	assert(nte==0);
 
 	//Calculates the number of subgroups exhaustion (a subgroup cannot attend two
 	//activities at the same time)
@@ -465,10 +464,6 @@ double ConstraintBasicCompulsoryTime::fitness(Solution& c, const Rules& r, QList
 			}
 		}
 	}
-	assert(nse==0);
-
-	/*assert(nte==teachersConflicts); //just a check, works only on logged fitness calculation
-	assert(nse==subgroupsConflicts);*/
 
 	return weightPercentage/100 * (unallocated + qint64(late) + qint64(nte) + qint64(nse)); //conflicts factor
 }
@@ -696,8 +691,6 @@ double ConstraintTeacherNotAvailableTimes::fitness(Solution& c, const Rules& r, 
 		}
 	}
 
-	if(weightPercentage==100.0)
-		assert(nbroken==0);
 	return weightPercentage/100 * nbroken;
 }
 
@@ -979,8 +972,6 @@ double ConstraintStudentsSetNotAvailableTimes::fitness(Solution& c, const Rules&
 		}
 	}
 
-	if(weightPercentage==100.0)
-		assert(nbroken==0);
 	return weightPercentage/100 * nbroken;
 }
 
@@ -1264,8 +1255,6 @@ double ConstraintActivitiesSameStartingTime::fitness(Solution& c, const Rules& r
 		}
 	}
 
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return weightPercentage/100 * nbroken;
 }
 
@@ -1541,8 +1530,6 @@ double ConstraintActivitiesNotOverlapping::fitness(Solution& c, const Rules& r, 
 		}
 	}
 
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return weightPercentage/100 * nbroken;
 }
 
@@ -1855,8 +1842,6 @@ double ConstraintMinDaysBetweenActivities::fitness(Solution& c, const Rules& r, 
 		}
 	}
 
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return weightPercentage/100 * nbroken;
 }
 
@@ -2143,8 +2128,6 @@ double ConstraintMaxDaysBetweenActivities::fitness(Solution& c, const Rules& r, 
 		}
 	}
 
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return weightPercentage/100 * nbroken;
 }
 
@@ -2436,8 +2419,6 @@ double ConstraintMinGapsBetweenActivities::fitness(Solution& c, const Rules& r, 
 		}
 	}
 
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return weightPercentage/100 * nbroken;
 }
 
@@ -2626,8 +2607,6 @@ double ConstraintTeachersMaxHoursDaily::fitness(Solution& c, const Rules& r, QLi
 		}
 	}
 
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return weightPercentage/100 * nbroken;
 }
 
@@ -2817,8 +2796,6 @@ double ConstraintTeacherMaxHoursDaily::fitness(Solution& c, const Rules& r, QLis
 		}
 	}
 
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return weightPercentage/100 * nbroken;
 }
 
@@ -3032,8 +3009,6 @@ double ConstraintTeachersMaxHoursContinuously::fitness(Solution& c, const Rules&
 		}
 	}
 
-	if(weightPercentage==100)	
-		assert(nbroken==0);
 	return weightPercentage/100 * nbroken;
 }
 
@@ -3251,8 +3226,6 @@ double ConstraintTeacherMaxHoursContinuously::fitness(Solution& c, const Rules& 
 		}
 	}
 
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return weightPercentage/100 * nbroken;
 }
 
@@ -3509,8 +3482,6 @@ double ConstraintTeachersActivityTagMaxHoursContinuously::fitness(Solution& c, c
 		}
 	}
 
-	if(weightPercentage==100)	
-		assert(nbroken==0);
 	return weightPercentage/100 * nbroken;
 }
 
@@ -3770,8 +3741,6 @@ double ConstraintTeacherActivityTagMaxHoursContinuously::fitness(Solution& c, co
 		}
 	}
 
-	if(weightPercentage==100)	
-		assert(nbroken==0);
 	return weightPercentage/100 * nbroken;
 }
 
@@ -3969,8 +3938,6 @@ double ConstraintTeacherMaxDaysPerWeek::fitness(Solution& c, const Rules& r, QLi
 		*conflictsString += s+"\n";
 	}
 
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return conflictIncrease;
 }
 
@@ -4175,8 +4142,6 @@ double ConstraintTeachersMaxDaysPerWeek::fitness(Solution& c, const Rules& r, QL
 
 	}
 
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return weightPercentage/100 * nbroken;
 }
 
@@ -4369,11 +4334,6 @@ double ConstraintTeachersMaxGapsPerWeek::fitness(Solution& c, const Rules& r, QL
 		}
 	}
 	
-	if(c.nPlacedActivities==r.nInternalActivities)
-		if(weightPercentage==100){
-			assert(totalGaps==0); //for partial solutions this rule might be broken
-		}
-			
 	return weightPercentage/100 * totalGaps;
 }
 
@@ -4572,9 +4532,6 @@ double ConstraintTeacherMaxGapsPerWeek::fitness(Solution& c, const Rules& r, QLi
 		}
 	}
 
-	if(c.nPlacedActivities==r.nInternalActivities)
-		if(weightPercentage==100)
-			assert(totalGaps==0); //for partial solutions this rule might be broken
 	return weightPercentage/100 * totalGaps;
 }
 
@@ -4768,9 +4725,6 @@ double ConstraintTeachersMaxGapsPerDay::fitness(Solution& c, const Rules& r, QLi
 		}
 	}
 	
-	if(c.nPlacedActivities==r.nInternalActivities)
-		if(weightPercentage==100)
-			assert(totalGaps==0); //for partial solutions this rule might be broken
 	return weightPercentage/100 * totalGaps;
 }
 
@@ -4970,9 +4924,6 @@ double ConstraintTeacherMaxGapsPerDay::fitness(Solution& c, const Rules& r, QLis
 		}
 	}
 
-	if(c.nPlacedActivities==r.nInternalActivities)
-		if(weightPercentage==100)
-			assert(totalGaps==0); //for partial solutions this rule might be broken
 	return weightPercentage/100 * totalGaps;
 }
 
@@ -5215,8 +5166,6 @@ double ConstraintBreakTimes::fitness(Solution& c, const Rules& r, QList<double>&
 		}
 	}
 
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return weightPercentage/100 * nbroken;
 }
 
@@ -5438,9 +5387,6 @@ double ConstraintStudentsMaxGapsPerWeek::fitness(Solution& c, const Rules& r, QL
 		tIllegalGaps+=illegalGaps;
 	}
 		
-	if(c.nPlacedActivities==r.nInternalActivities)
-		if(weightPercentage==100)    //for partial solutions it might be broken
-			assert(tIllegalGaps==0);
 	return weightPercentage/100 * tIllegalGaps;
 }
 
@@ -5692,9 +5638,6 @@ double ConstraintStudentsSetMaxGapsPerWeek::fitness(Solution& c, const Rules& r,
 		tIllegalGaps+=illegalGaps;
 	}
 
-	if(c.nPlacedActivities==r.nInternalActivities)
-		if(weightPercentage==100)     //for partial solutions it might be broken
-			assert(tIllegalGaps==0);
 	return weightPercentage/100 * tIllegalGaps;
 }
 
@@ -5924,9 +5867,6 @@ double ConstraintStudentsEarlyMaxBeginningsAtSecondHour::fitness(Solution& c, co
 		}
 	}
 					
-	if(c.nPlacedActivities==r.nInternalActivities)
-		if(weightPercentage==100)    //might be broken for partial solutions
-			assert(conflTotal==0);
 	return weightPercentage/100 * conflTotal;
 }
 
@@ -6208,9 +6148,6 @@ double ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::fitness(Solution& c,
 		}
 	}
 					
-	if(c.nPlacedActivities==r.nInternalActivities)
-		if(weightPercentage==100)    //might be broken for partial solutions
-			assert(conflTotal==0);
 	return weightPercentage/100 * conflTotal;
 }
 
@@ -6403,8 +6340,6 @@ double ConstraintStudentsMaxHoursDaily::fitness(Solution& c, const Rules& r, QLi
 	}
 
 	assert(too_much>=0);
-	if(weightPercentage==100)
-		assert(too_much==0);
 	return too_much * weightPercentage/100;
 }
 
@@ -6650,8 +6585,6 @@ double ConstraintStudentsSetMaxHoursDaily::fitness(Solution& c, const Rules& r, 
 	}
 	
 	assert(too_much>=0);
-	if(weightPercentage==100)
-		assert(too_much==0);
 	return too_much * weightPercentage / 100.0;
 }
 
@@ -6868,8 +6801,6 @@ double ConstraintStudentsMaxHoursContinuously::fitness(Solution& c, const Rules&
 		}
 	}
 
-	if(weightPercentage==100)	
-		assert(nbroken==0);
 	return weightPercentage/100 * nbroken;
 }
 
@@ -7138,8 +7069,6 @@ double ConstraintStudentsSetMaxHoursContinuously::fitness(Solution& c, const Rul
 		}
 	}
 
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return weightPercentage/100 * nbroken;
 }
 
@@ -7402,8 +7331,6 @@ double ConstraintStudentsActivityTagMaxHoursContinuously::fitness(Solution& c, c
 		}
 	}
 
-	if(weightPercentage==100)	
-		assert(nbroken==0);
 	return weightPercentage/100 * nbroken;
 }
 
@@ -7715,8 +7642,6 @@ double ConstraintStudentsSetActivityTagMaxHoursContinuously::fitness(Solution& c
 		}
 	}
 
-	if(weightPercentage==100)	
-		assert(nbroken==0);
 	return weightPercentage/100 * nbroken;
 }
 
@@ -7928,10 +7853,6 @@ double ConstraintStudentsMinHoursDaily::fitness(Solution& c, const Rules& r, QLi
 	//should not consider for empty days
 	
 	assert(too_little>=0);
-
-	if(c.nPlacedActivities==r.nInternalActivities)
-		if(weightPercentage==100) //does not work for partial solutions
-			assert(too_little==0);
 
 	return too_little * weightPercentage/100;
 }
@@ -8197,10 +8118,6 @@ double ConstraintStudentsSetMinHoursDaily::fitness(Solution& c, const Rules& r, 
 	
 	assert(too_little>=0);
 
-	if(c.nPlacedActivities==r.nInternalActivities)
-		if(weightPercentage==100) //does not work for partial solutions
-			assert(too_little==0);
-
 	return too_little * weightPercentage / 100.0;
 }
 
@@ -8458,8 +8375,6 @@ double ConstraintActivityPreferredStartingTime::fitness(Solution& c, const Rules
 		*conflictsString+= s+"\n";
 	}
 
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return nbroken * weightPercentage/100;
 }
 
@@ -8734,8 +8649,6 @@ double ConstraintActivityPreferredTimeSlots::fitness(Solution& c, const Rules& r
 		*conflictsString+= s+"\n";
 	}
 
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return nbroken * weightPercentage/100;
 }
 
@@ -9192,8 +9105,6 @@ double ConstraintActivitiesPreferredTimeSlots::fitness(Solution& c, const Rules&
 		}
 	}
 
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return nbroken * weightPercentage / 100.0;
 }
 
@@ -9668,8 +9579,6 @@ double ConstraintSubactivitiesPreferredTimeSlots::fitness(Solution& c, const Rul
 		}
 	}
 
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return nbroken * weightPercentage / 100.0;
 }
 
@@ -9986,8 +9895,6 @@ double ConstraintActivityPreferredStartingTimes::fitness(Solution& c, const Rule
 		*conflictsString+= s+"\n";
 	}
 
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return nbroken * weightPercentage/100;
 }
 
@@ -10434,8 +10341,6 @@ double ConstraintActivitiesPreferredStartingTimes::fitness(Solution& c, const Ru
 		}
 	}
 
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return nbroken * weightPercentage / 100.0;
 }
 
@@ -10896,8 +10801,6 @@ double ConstraintSubactivitiesPreferredStartingTimes::fitness(Solution& c, const
 		}
 	}
 
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return nbroken * weightPercentage / 100.0;
 }
 
@@ -11214,8 +11117,6 @@ double ConstraintActivitiesSameStartingHour::fitness(Solution& c, const Rules& r
 		}
 	}
 
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return weightPercentage/100 * nbroken;
 }
 
@@ -11479,8 +11380,6 @@ double ConstraintActivitiesSameStartingDay::fitness(Solution& c, const Rules& r,
 		}
 	}
 
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return weightPercentage/100 * nbroken;
 }
 
@@ -11738,8 +11637,6 @@ double ConstraintTwoActivitiesConsecutive::fitness(Solution& c, const Rules& r, 
 		*conflictsString+= s+"\n";
 	}
 	
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return nbroken * weightPercentage/100;
 }
 
@@ -12010,8 +11907,6 @@ double ConstraintTwoActivitiesGrouped::fitness(Solution& c, const Rules& r, QLis
 		*conflictsString+= s+"\n";
 	}
 	
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return nbroken * weightPercentage/100;
 }
 
@@ -12361,8 +12256,6 @@ double ConstraintThreeActivitiesGrouped::fitness(Solution& c, const Rules& r, QL
 		*conflictsString+= s+"\n";
 	}
 	
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return nbroken * weightPercentage/100;
 }
 
@@ -12608,8 +12501,6 @@ double ConstraintTwoActivitiesOrdered::fitness(Solution& c, const Rules& r, QLis
 		*conflictsString+= s+"\n";
 	}
 	
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return nbroken * weightPercentage/100;
 }
 
@@ -12815,8 +12706,6 @@ double ConstraintActivityEndsStudentsDay::fitness(Solution& c, const Rules& r, Q
 		*conflictsString+= s+"\n";
 	}
 
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return nbroken * weightPercentage/100;
 }
 
@@ -13019,9 +12908,6 @@ double ConstraintTeachersMinHoursDaily::fitness(Solution& c, const Rules& r, QLi
 		}
 	}
 
-	if(c.nPlacedActivities==r.nInternalActivities)
-		if(weightPercentage==100)
-			assert(nbroken==0);
 	return weightPercentage/100 * nbroken;
 }
 
@@ -13231,10 +13117,6 @@ double ConstraintTeacherMinHoursDaily::fitness(Solution& c, const Rules& r, QLis
 		}
 	}
 
-	if(c.nPlacedActivities==r.nInternalActivities)
-		if(weightPercentage==100)
-			assert(nbroken==0);
-			
 	return weightPercentage/100 * nbroken;
 }
 
@@ -13424,10 +13306,6 @@ double ConstraintTeacherMinDaysPerWeek::fitness(Solution& c, const Rules& r, QLi
 		}
 	}
 
-	if(c.nPlacedActivities==r.nInternalActivities)
-		if(weightPercentage==100)
-			assert(nbroken==0);
-			
 	return weightPercentage/100 * nbroken;
 }
 
@@ -13616,10 +13494,6 @@ double ConstraintTeachersMinDaysPerWeek::fitness(Solution& c, const Rules& r, QL
 		}
 	}
 
-	if(c.nPlacedActivities==r.nInternalActivities)
-		if(weightPercentage==100)
-			assert(nbrokentotal==0);
-			
 	return weightPercentage/100 * nbrokentotal;
 }
 
@@ -13853,8 +13727,6 @@ double ConstraintTeacherIntervalMaxDaysPerWeek::fitness(Solution& c, const Rules
 		}
 	}
 
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return weightPercentage/100 * nbroken;
 }
 
@@ -14092,8 +13964,6 @@ double ConstraintTeachersIntervalMaxDaysPerWeek::fitness(Solution& c, const Rule
 		}
 	}
 
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return weightPercentage/100 * nbroken;
 }
 
@@ -14387,8 +14257,6 @@ double ConstraintStudentsSetIntervalMaxDaysPerWeek::fitness(Solution& c, const R
 		}
 	}
 
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return weightPercentage/100 * nbroken;
 }
 
@@ -14623,8 +14491,6 @@ double ConstraintStudentsIntervalMaxDaysPerWeek::fitness(Solution& c, const Rule
 		}
 	}
 
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return weightPercentage/100 * nbroken;
 }
 
@@ -14929,8 +14795,6 @@ double ConstraintActivitiesEndStudentsDay::fitness(Solution& c, const Rules& r, 
 		}
 	}
 
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return nbroken * weightPercentage/100;
 }
 
@@ -15177,8 +15041,6 @@ double ConstraintTeachersActivityTagMaxHoursDaily::fitness(Solution& c, const Ru
 		}
 	}
 
-	if(weightPercentage==100.0)
-		assert(nbroken==0);
 	return weightPercentage/100.0 * nbroken;
 }
 
@@ -15408,8 +15270,6 @@ double ConstraintTeacherActivityTagMaxHoursDaily::fitness(Solution& c, const Rul
 		}
 	}
 
-	if(weightPercentage==100.0)
-		assert(nbroken==0);
 	return weightPercentage/100.0 * nbroken;
 }
 
@@ -15642,8 +15502,6 @@ double ConstraintStudentsActivityTagMaxHoursDaily::fitness(Solution& c, const Ru
 		}
 	}
 	
-	if(weightPercentage==100.0)
-		assert(nbroken==0);
 	return weightPercentage/100.0 * nbroken;
 }
 
@@ -15926,8 +15784,6 @@ double ConstraintStudentsSetActivityTagMaxHoursDaily::fitness(Solution& c, const
 		}
 	}
 	
-	if(weightPercentage==100.0)
-		assert(nbroken==0);
 	return weightPercentage/100.0 * nbroken;
 }
 
@@ -16131,9 +15987,6 @@ double ConstraintStudentsMaxGapsPerDay::fitness(Solution& c, const Rules& r, QLi
 		}
 	}
 		
-	if(c.nPlacedActivities==r.nInternalActivities)
-		if(weightPercentage==100)    //for partial solutions it might be broken
-			assert(tIllegalGaps==0);
 	return weightPercentage/100 * tIllegalGaps;
 }
 
@@ -16389,9 +16242,6 @@ double ConstraintStudentsSetMaxGapsPerDay::fitness(Solution& c, const Rules& r, 
 		}
 	}
 
-	if(c.nPlacedActivities==r.nInternalActivities)
-		if(weightPercentage==100)     //for partial solutions it might be broken
-			assert(tIllegalGaps==0);
 	return weightPercentage/100 * tIllegalGaps;
 }
 
@@ -16696,8 +16546,6 @@ double ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::fitness(Solution& c,
 		}
 	}
 
-	if(weightPercentage==100.0)
-		assert(nbroken==0);
 	return nbroken * weightPercentage / 100.0;
 }
 
@@ -17046,8 +16894,6 @@ double ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::fitness(Solution&
 		}
 	}
 
-	if(weightPercentage==100.0)
-		assert(nbroken==0);
 	return nbroken * weightPercentage / 100.0;
 }
 
@@ -17330,8 +17176,6 @@ double ConstraintStudentsSetMaxDaysPerWeek::fitness(Solution& c, const Rules& r,
 		}
 	}
 
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return weightPercentage/100 * nbroken;
 }
 
@@ -17516,8 +17360,6 @@ double ConstraintStudentsMaxDaysPerWeek::fitness(Solution& c, const Rules& r, QL
 		}
 	}
 
-	if(weightPercentage==100)
-		assert(nbroken==0);
 	return weightPercentage/100 * nbroken;
 }
 
@@ -17704,8 +17546,6 @@ double ConstraintTeacherMaxSpanPerDay::fitness(Solution& c, const Rules& r, QLis
 		}
 	}
 	
-	assert(nbroken==0);
-	
 	return nbroken;
 }
 
@@ -17890,8 +17730,6 @@ double ConstraintTeachersMaxSpanPerDay::fitness(Solution& c, const Rules& r, QLi
 			}
 		}
 	}
-	
-	assert(nbroken==0);
 	
 	return nbroken;
 }
@@ -18132,8 +17970,6 @@ double ConstraintStudentsSetMaxSpanPerDay::fitness(Solution& c, const Rules& r, 
 		}
 	}
 	
-	assert(nbroken==0);
-	
 	return nbroken;
 }
 
@@ -18317,8 +18153,6 @@ double ConstraintStudentsMaxSpanPerDay::fitness(Solution& c, const Rules& r, QLi
 			}
 		}
 	}
-	
-	assert(nbroken==0);
 	
 	return nbroken;
 }
@@ -18511,8 +18345,6 @@ double ConstraintTeacherMinRestingHours::fitness(Solution& c, const Rules& r, QL
 			nbroken++;
 	}
 	
-	assert(nbroken==0);
-	
 	return nbroken;
 }
 
@@ -18700,8 +18532,6 @@ double ConstraintTeachersMinRestingHours::fitness(Solution& c, const Rules& r, Q
 				nbroken++;
 		}
 	}
-	
-	assert(nbroken==0);
 	
 	return nbroken;
 }
@@ -18945,8 +18775,6 @@ double ConstraintStudentsSetMinRestingHours::fitness(Solution& c, const Rules& r
 		}
 	}
 	
-	assert(nbroken==0);
-	
 	return nbroken;
 }
 
@@ -19133,8 +18961,6 @@ double ConstraintStudentsMinRestingHours::fitness(Solution& c, const Rules& r, Q
 				nbroken++;
 		}
 	}
-	
-	assert(nbroken==0);
 	
 	return nbroken;
 }
