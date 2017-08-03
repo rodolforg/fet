@@ -60,7 +60,7 @@ public:
 	 */
 	void resize(int _d1, int _d2, int _d3);
 	T** operator[](int i);
-	const T** operator[](int i) const;
+	const T * const * operator[](int i) const;
 	T& operator()(int i, int j, int k);
 	const T& operator()(int i, int j, int k) const;
 
@@ -217,7 +217,7 @@ template <typename T> inline T** Matrix3D<T>::operator[](int i)
 	return a[i];
 }
 
-template <typename T> inline const T** Matrix3D<T>::operator[](int i) const
+template <typename T> inline const T * const * Matrix3D<T>::operator[](int i) const
 {
 	return a[i];
 }
