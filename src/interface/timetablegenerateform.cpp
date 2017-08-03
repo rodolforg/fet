@@ -469,6 +469,17 @@ void TimetableGenerateForm::simulationFinished()
 
 	CachedSchedule::update(c);
 
+	if (c.severeConflictList.count() > 0) {
+		QString errorMsg = tr("The following %n 100%-weigth constraint(s) are broken. Solution is not valid. Please report this error.", "", c.severeConflictList.count());
+		errorMsg += "\n\n";
+		foreach (const QString &str, c.severeConflictList) {
+			errorMsg += str + "\n";
+		}
+		myMutex.unlock();
+		LongTextMessageBox::information(this, tr("Internal Error"), errorMsg);
+		return;
+	}
+
 	//update the string representing the conflicts
 	conflictsStringTitle=TimetableGenerateForm::tr("Soft conflicts", "Title of dialog");
 	conflictsString="";

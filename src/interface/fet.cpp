@@ -683,6 +683,14 @@ void SomeQtTranslations()
 	
 }
 
+#ifdef FET_COMMAND_LINE
+void printSevereConflicts(const QList<QString> &list) {
+	foreach (const QString &error, list) {
+		cerr << "ERROR: internal error: this should not occur:\n\t" << error.toStdString() << endl;
+	}
+}
+#endif
+
 /**
 FET starts here
 */
@@ -1480,7 +1488,11 @@ int main(int argc, char **argv)
 			//needed to find the conflicts strings
 			QString tmp;
 			c.fitness(gt.rules, &tmp);
-			
+			if (c.severeConflictList.count() > 0) {
+				printSevereConflicts(c.severeConflictList);
+				exit(11);
+			}
+
 			CachedSchedule::update(c);
 
 			TimetableExport::writeSimulationResultsCommandLine(NULL, outputDirectory);
