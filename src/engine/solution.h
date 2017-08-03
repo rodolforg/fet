@@ -42,6 +42,8 @@ public:
 	QList<QString> conflictsDescriptionList;
 	double conflictsTotal;
 
+	QStringList severeConflictList;
+
 	int nPlacedActivities;
 
 	/**

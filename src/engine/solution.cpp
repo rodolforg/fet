@@ -59,6 +59,7 @@ void Solution::copy(const Rules &r, const Solution &c){
 	conflictsWeightList=c.conflictsWeightList;
 	conflictsDescriptionList=c.conflictsDescriptionList;
 	conflictsTotal=c.conflictsTotal;
+	severeConflictList = c.severeConflictList;
 	
 	teachersMatrixReady=c.teachersMatrixReady;
 	subgroupsMatrixReady=c.subgroupsMatrixReady;
@@ -105,6 +106,7 @@ double Solution::fitness(const Rules &r, QString* conflictsString){
 	
 	this->conflictsDescriptionList.clear();
 	this->conflictsWeightList.clear();
+	this->severeConflictList.clear();
 	
 	this->teachersMatrixReady=false;
 	this->subgroupsMatrixReady=false;
@@ -119,6 +121,9 @@ double Solution::fitness(const Rules &r, QString* conflictsString){
 		ConflictInfo info;
 		ConflictInfo* pInfo = conflictsString != NULL? &info : NULL;
 		double cur_fitness = r.internalTimeConstraintsList[i]->fitness(*this, r, pInfo);
+		if (cur_fitness != 0 && r.internalTimeConstraintsList[i]->weightPercentage >= 100.0) {
+			severeConflictList += info.descriptions;
+		}
 		this->_fitness += cur_fitness;
 		
 		conflictsWeightList += info.weights;
@@ -128,6 +133,9 @@ double Solution::fitness(const Rules &r, QString* conflictsString){
 		ConflictInfo info;
 		ConflictInfo* pInfo = conflictsString != NULL? &info : NULL;
 		double cur_fitness = r.internalSpaceConstraintsList[i]->fitness(*this, r, pInfo);
+		if (cur_fitness != 0 && r.internalSpaceConstraintsList[i]->weightPercentage >= 100.0) {
+			severeConflictList += info.descriptions;
+		}
 		this->_fitness += cur_fitness;
 
 		conflictsWeightList += info.weights;
