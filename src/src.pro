@@ -1408,6 +1408,8 @@ TRANSLATIONS += \
 
 TEMPLATE = app
 
+DEFINES += QT_DEPRECATED_WARNINGS
+
 CONFIG += release warn_on
 QT += network
 
