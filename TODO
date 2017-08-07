@@ -535,9 +535,9 @@ settings. I guess that there a people who want set duration to 2 or 4 by
 default.
 
 33---------------------------------------------------------
-From kdsayang
+From kdsayang:
 
-I would like to see FET generate the time table in 
+I would like to see FET generate the time table in
 
 1. certain amount of time for each time table
 2. with some setting about the remaining weight soft conflicts
@@ -566,7 +566,7 @@ As you can see in timetable --> generate multiple variants, features in (A)(i) a
 can figure it out on how to implement the feature in (A)(ii). It would be marvelous.
 
 34---------------------------------------------------------
-From kdsayang
+From kdsayang:
 
 If a user want to add "an activity have a set of preferred rooms", the user will need to click one 
 by one to add right???... So, I would like to suggest that we group them like when user want to add 
@@ -594,7 +594,7 @@ So when user want to add "an activity have a set of preferred rooms" for all the
 of clicking 20 tutorial room one by one, user just click the group that is Tutorial. Easy right???
 
 35---------------------------------------------------------
-From kdsayang
+From kdsayang:
 
 What I meant is in Data --> Time Constraints --> Teacher Time Constraints --> A Teachers not available time, 
 1. If you double clicked Afida, 
@@ -607,7 +607,7 @@ What I meant is in Data --> Time Constraints --> Teacher Time Constraints --> A 
 My suggestion is that It will be better If FET can update to Sambilan from Afida in Step no 3. 
 
 36---------------------------------------------------------
-From kdsayang
+From kdsayang:
 
 I have some other suggestion.
  
@@ -615,14 +615,14 @@ I have some other suggestion.
 2. In the tree structure, we can use the copy, cut and paste to edit the subject, activities, etc in the tree structure
 
 37---------------------------------------------------------
-From kdsayang
+From kdsayang:
 
 If I want to change many teacher not available time, I need to add one by one although the teacher not available time is the SAME.
  
 So, I suggest that you can add a set of teachers not available time. Same as rooms not available time feature.
 
 38---------------------------------------------------------
-From kdsayang
+From kdsayang:
 
 On current version, there is no group for subject and teacher. It is quite annoying if you have to look for certain subject X and teacher Y in that list. When the list grows bigger (let say 100), it's kinda hard because you have to find that lecture and subject in that 100 lists. Although the sorting is a good way to find the subject and teacher, IMHO maybe we can make groups in that teacher and subject section
 
@@ -631,7 +631,7 @@ For example I want to find teacher X and subject X. Teacher X is a teacher that 
 This feature is needed if my/our/your university/school is a big one where teacher and subject are hundreds.
 
 39---------------------------------------------------------
-From Zsolt Udvari
+From Zsolt Udvari:
 
 We've created a timetable but the rooms aren't. So we do it by hand.
 How can I change in FET the rooms simpler in a generated timetable?
@@ -653,13 +653,13 @@ Show teachers/students): you select an activity, you click a button
 with "Assign room" and choose a room.
 
 40---------------------------------------------------------
-From Naji
+From Naji:
 
 Hopefully, FET's team can enhanced it to be able to export the xml data to database, that will facilitates the
 output of the data and enables programmers to engage it with their programs.
 
 41---------------------------------------------------------
-From Massimo Mancini
+From Massimo Mancini:
 
 This is a request for a new feature...
 For Teachers and Subjects I like to use a brief description (BD), a code, and I optionally convert it to corresponding long description (LD) in the generated timetables (I refer to my current timetable procedures). So I need to define two new fields. Example:
@@ -670,7 +670,7 @@ I think that this can be achieved without any change to current interface, simpl
 I wish to output the brief (only BD) or complete (LD) timetables
 
 42---------------------------------------------------------
-From jaspal
+From jaspal:
 
 INSTRUCTION FOR ALLOTMENT OF SUBSITUTION/ ARANGEMENT PERIODS
 
@@ -685,7 +685,7 @@ Also extra periods taken by the faculty has to be recorded year and group
 wise.
 
 43---------------------------------------------------------
-From Bingen
+From ßingen:
 
 For the internal organization of my school, it's convenient to have a general timetable for each
 group, A and B, and our timetabling software gives it. But as you observed, the footnote legend
@@ -741,7 +741,7 @@ on year and subjects expected for a class of that year (normal italian
 situation, abroad I don't know ;-)
 
 46---------------------------------------------------------
-From Bingen:
+From ßingen:
 
 - In my school the timetable is divided in morning (from 8:00 to 14:30h) and afternoon (15:00 to 17:00h). In the morning there's a break from 11:00 to 11:30h.
 I have defined this break as an hour of the timetable, but not allowing activities for any set of students in this slot. The reason is to plan the surveillance
@@ -800,7 +800,7 @@ care about that problem first of all (by removing or reducing weight to
 0%).
 
 50---------------------------------------------------------
-From Les W. Johnstone
+From Les W. Johnstone:
 
 Hi Liviu,
 
@@ -1124,7 +1124,7 @@ By the way, is it really necessary to have two dialogs? I could imagine a check 
 From Chafik Graiguer and Pietro (see also items #145 and #248):
 
 -Min hours daily with an activity tag (to count real activities only leaving pseudo activities out of count)
--Min hours continuously with an activity tag 
+-Min hours continuously with an activity tag
 
 67---------------------------------------------------------
 From Gert Veltink:
@@ -1139,6 +1139,10 @@ From Mr Robo:
 In the Time tab, Break button, leading to the dialog to set up break times... At the moment, I set up one break time constraint that has morning breaks and lunch breaks combined.
 
 If I set up two (one for break and one for lunch) and I could attach a label that would be displayed in the unavailable slots in the finished timetable, such as 'Break' or 'Lunch', it would save me having to edit each Student, Teacher and Room timetable before they can be printed, etc. It's quite manual at the moment because '-X-' is used throughout and I can't do a global search and replace.
+
+Also suggested by S Chandrasekar:
+
+It would be more desirable if a provision is available to display texts like "SHORT INTERVAL" or "LUNCH INTERVAL" or "ASSEMBLY" in the break time constrains slots in the timetable.
 
 69---------------------------------------------------------
 From George Miliotis:
@@ -1297,6 +1301,13 @@ with a selected number of max gaps per week, and then the user can modify each o
 
 (Suggested indirectly also by Julio González Gil, on the forum.)
 
+Added on 2017-07-31, by Valdo, on the forum: He wanted to add teachers' max hours daily 4 for all teachers, with an exception to allow max 5 hours daily for
+a single teacher. There were too many constraints to add.
+
+Suggested also by utismetis, on the forum, on 2017-08-07.
+
+See also TODO item #84.
+
 83---------------------------------------------------------
 From Massimo Mancini:
 
@@ -1351,6 +1362,8 @@ If we have tags for teachers (and rooms) it will even more easier
 This concept is already used in FET in two places:
 - Set all available, set all not available
 - subject has a set of prefered rooms 
+
+See also TODO item #82.
 
 85---------------------------------------------------------
 From Massimo Mancini:
@@ -5423,6 +5436,35 @@ From Vangelis Karafillidis:
 
 He suggest that all the constraints teacher not available could be presented in a teachers time horizontal manner (teacher as row, day/hour as column).
 
+Further suggestions:
+
+Generally speaking, the interaction with the GUI is crucial. Most users need easiness in entering and modifying data and of course a good monitoring of them.
+Under this perspective, I'm suggesting the following enhancements regarding the GUI of FET, which -in no case- have any connection with drag-and-drop-like features.
+Teacher's not available times: The teachers time horizontal view would be much more flexible
+a) The user could monitor at once all teachers
+b) The user could easily modify this constraint for more than one teachers at once. For example, if a group of teachers (the mathematicians) should finish their
+lessons the latest on the 4th hour on Monday, the user could easily select these "cells" (time slots) and enter his/her data. In the same way, when all teachers
+are not available (for example) for the last hour of Monday (this happens at the beginning of the school year at Greek schools, because many teachers are "missing",
+and therefore schools don't "expand" their timetables until the last hour of each day), the user could easily select the entire column at once and make all teachers
+not available for this specific hour.
+Student's not available times:For similar reasons the time horizontal view is by far more flexible.
+Please bear in mind that with the existing FET GUI the user needs severely more time in order to complete these tasks. Also, it's really hard for the user to monitor
+his/her data efficiently (with the existing GUI).
+
+Interaction of the above "dialogues" with statistics: An example for the teachers: Let's suppose that a teacher teachers for 20 hours per week (this is the most
+typical situation at Greek schools). The user might accidentally make this teacher available for a very small number of hours, and therefore the timetable generation
+might become impossible. I suggest to add two columns (in this time horizontal view) right to the teachers' names. The first column should take the number of activities
+(from the statistics) and the second column should display the number of available hour of this teacher. This (second column) should be "interactive", i.e. when the user
+adds or removes an hour, this number should change.
+An example for the students: The same for the students...
+
+Similar interactions might be useful for the space constraints, but since I've never had such constraints in my timetables, I can't judge and suggest what would work
+better than the existing displays of FET. Most likely, the room's not available times works better in the time horizontal view, so the user will have complete control
+on his/her data.
+
+For rooms not available times constraints, since a room may have weight <100%, Vangelis proposes this: By default, the cell should take the weight 100%, and if one
+needs something different, right click and a dialogue with the new weight and instead of "X" for rooms you might display the percentage itself in red color.
+
 324---------------------------------------------------------
 From rodolforg (on forum):
 
@@ -5464,3 +5506,8 @@ the selected groups from the Modify Activity screen (perhaps below the Clear but
 From Zsolt Udvari (on forum):
 
 Add a subject tag for each subject (like: "easy" or "hard") and add time constraints for these subject tags.
+
+328---------------------------------------------------------
+From Valdo (on forum):
+
+Export the resulted timetables in time horizontal form.
