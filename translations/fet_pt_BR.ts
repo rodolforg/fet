@@ -1156,7 +1156,7 @@
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="603"/>
         <source>FET warning</source>
-        <translation>FET alerta</translation>
+        <translation>Aviso FET</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="604"/>
@@ -36125,6 +36125,24 @@ Please modify your data correspondingly and try again</source>
         <translation>Sobre</translation>
     </message>
     <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.32.3 (August 2017).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET homepage: &lt;/span&gt;&lt;a href=&quot;http://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;http://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="112"/>
         <source>Translators</source>
         <translation>Tradutores</translation>
@@ -36785,11 +36803,15 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Valdo - bug report.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;sigit_yuwono - suggestion.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;S Chandrasekar - suggestion.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;utismetis - suggestion.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="866"/>
+        <location filename="../src/interface/helpaboutform_template.ui" line="870"/>
         <source>Close</source>
         <translation>Fechar</translation>
     </message>
@@ -36797,24 +36819,6 @@ p, li { white-space: pre-wrap; }
         <location filename="../src/interface/helpaboutform_template.ui" line="69"/>
         <source>Authors</source>
         <translation>Autores</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.32.2 (July 2017).&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET homepage: &lt;/span&gt;&lt;a href=&quot;http://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;http://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="90"/>
@@ -50401,7 +50405,7 @@ Por favor, relate o erro. FET abortará a operação atual</translation>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="106"/>
         <source>FET warning</source>
-        <translation>FET alerta</translation>
+        <translation>Aviso FET</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="107"/>
@@ -54589,7 +54593,7 @@ Base: %4</translation>
         <location filename="../src/interface/timetableprintform.cpp" line="1407"/>
         <location filename="../src/interface/timetableprintform.cpp" line="1424"/>
         <source>FET warning</source>
-        <translation>FET alerta</translation>
+        <translation>Aviso FET</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="1290"/>
@@ -54878,12 +54882,12 @@ Base: %4</translation>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="710"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="723"/>
         <source>FET warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Aviso FET</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="201"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished">Não é possível mostrar o horário, pois você removeu ou adicionou algumas salas. Por favor, gere novamente o horário para vê-lo novamente</translation>
+        <translation>Não é possível mostrar o horário, pois você removeu ou adicionou algumas salas. Por favor, gere novamente o horário para vê-lo novamente</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="237"/>
@@ -54893,45 +54897,45 @@ Base: %4</translation>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="552"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="556"/>
         <source>Timetable not available in view rooms timetable dialog - please generate a new timetable</source>
-        <translation type="unfinished">Grade horária indisponível na janela de horário de salas - por favor, gere uma nova grade</translation>
+        <translation>Grade horária indisponível na janela de horário de salas - por favor, gere uma nova grade</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="252"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="578"/>
         <source>Invalid room - please close this dialog and open a new view rooms timetable dialog</source>
-        <translation type="unfinished">Sala inválida. Por favor, feche essa janela e abra nova janela para ver horário de salas</translation>
+        <translation>Sala inválida. Por favor, feche essa janela e abra nova janela para ver horário de salas</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="261"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="266"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="436"/>
         <source>Timetable not available in view rooms timetable dialog - please generate a new timetable or close the timetable view rooms dialog</source>
-        <translation type="unfinished">Grade horária indisponível na janela de horário de salas - por favor, gere uma nova grade ou feche a janela de horário de salas</translation>
+        <translation>Grade horária indisponível na janela de horário de salas - por favor, gere uma nova grade ou feche a janela de horário de salas</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="286"/>
         <source>You have an old timetable view rooms dialog opened - please close it</source>
-        <translation type="unfinished">Você está com uma janela de salas antiga. Feche-a, por favor</translation>
+        <translation>Você está com uma janela de salas antiga. Feche-a, por favor</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="465"/>
         <source>Invalid room - please close this dialog and open a new view rooms dialog</source>
-        <translation type="unfinished">Sala inválida. Por favor, feche essa janela e abra nova janela de salas</translation>
+        <translation>Sala inválida. Por favor, feche essa janela e abra nova janela de salas</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="485"/>
         <source>Room: %1</source>
-        <translation type="unfinished">Sala: %1</translation>
+        <translation>Sala: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="514"/>
         <source>Room is not available with weight %1%</source>
-        <translation type="unfinished">Sala não está 100% disponível com peso %1%</translation>
+        <translation>Sala não está disponível com peso %1%</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="518"/>
         <source>Break with weight 100% in this slot</source>
-        <translation type="unfinished">Interromper com peso 100% nessa janela</translation>
+        <translation>Interromper com peso 100% nessa janela</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="546"/>
@@ -54940,25 +54944,25 @@ Base: %4</translation>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="738"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="786"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>Informação FET</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="547"/>
         <source>Allocation in course.
 Please stop simulation before this.</source>
-        <translation type="unfinished">Alocação em curso.
+        <translation>Alocação em curso.
 Por favor, pare a simulação antes.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="565"/>
         <source>Please select a room</source>
-        <translation type="unfinished">Por favor, selecione uma sala</translation>
+        <translation>Por favor, selecione uma sala</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="610"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="683"/>
         <source>Added the following constraint:</source>
-        <translation type="unfinished">Adicionada a seguinte restrição:</translation>
+        <translation>Adicionada a seguinte restrição:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="625"/>
@@ -54966,13 +54970,13 @@ Por favor, pare a simulação antes.</translation>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="698"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="710"/>
         <source>Small problem detected</source>
-        <translation type="unfinished">Pequeno problema detectado</translation>
+        <translation>Pequeno problema detectado</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="626"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="638"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Um possível problema pode ser que você tenha 2 ou mais restrições de início preferido da atividade com peso 100% relativas à atividade id %1; por favor, deixe apenas uma delas</translation>
+        <translation>Um possível problema pode ser que você tenha 2 ou mais restrições de início preferido da atividade com peso 100% relativas à atividade id %1; por favor, deixe apenas uma delas</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="627"/>
@@ -54980,7 +54984,7 @@ Por favor, pare a simulação antes.</translation>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="700"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="712"/>
         <source>A possible problem might be synchronization - so maybe try to close the timetable view dialog and open it again</source>
-        <translation type="unfinished">Um problema possível pode ser a sincronização. Se for isso, feche a janela de horário e reabra</translation>
+        <translation>Um problema possível pode ser a sincronização. Se for isso, feche a janela de horário e reabra</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="628"/>
@@ -54988,48 +54992,48 @@ Por favor, pare a simulação antes.</translation>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="701"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="713"/>
         <source>Please report possible bug</source>
-        <translation type="unfinished">Por favor, relate possível bug</translation>
+        <translation>Por favor, relate possível bug</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="632"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="705"/>
         <source>Constraint %1 will not be removed, because it is permanently locked. If you want to unlock it you must go to the constraints menu.</source>
-        <translation type="unfinished">Restrição %1 não será removida, pois está permanentemente bloqueada. Se desejar desbloqueá-la, altere no menu de restrições.</translation>
+        <translation>Restrição %1 não será removida, pois está permanentemente bloqueada. Se desejar desbloqueá-la, altere no menu de restrições.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="650"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="723"/>
         <source>You may have a problem, because FET expected to delete 1 constraint, but will delete %1 constraints</source>
-        <translation type="unfinished">Você pode ter um problema, pois FET esperava deletar 1 restrição, mas deletará %1 restrições</translation>
+        <translation>Você pode ter um problema, pois FET esperava deletar 1 restrição, mas deletará %1 restrições</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="653"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="726"/>
         <source>The following constraint will be deleted:</source>
-        <translation type="unfinished">A seguinte restrição será deletada:</translation>
+        <translation>A seguinte restrição será deletada:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="666"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="739"/>
         <source>Skip information</source>
-        <translation type="unfinished">Pular informação</translation>
+        <translation>Pular informação</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="666"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="739"/>
         <source>See next</source>
-        <translation type="unfinished">Ver seguinte</translation>
+        <translation>Ver seguinte</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="699"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="711"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Um possível problema pode ser que você tenha 2 ou mais restrições de sala reservada para atividade com peso 100% relativas à atividade id %1; por favor, deixe apenas uma delas</translation>
+        <translation>Um possível problema pode ser que você tenha 2 ou mais restrições de sala reservada para atividade com peso 100% relativas à atividade id %1; por favor, deixe apenas uma delas</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="829"/>
         <source>FET help</source>
-        <translation type="unfinished">Ajuda FET</translation>
+        <translation>Ajuda FET</translation>
     </message>
 </context>
 <context>
@@ -55038,46 +55042,46 @@ Por favor, pare a simulação antes.</translation>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="14"/>
         <source>View rooms days horizontal timetable</source>
         <extracomment>Title of dialog</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Horário de salas com dias na horizontal</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="38"/>
         <source>Lock/unlock</source>
         <extracomment>This is a group box for locking/unlocking buttons</extracomment>
-        <translation type="unfinished">Bloquear/Desbloquear</translation>
+        <translation>Bloquear/Desbloquear</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="46"/>
         <source>Time</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Tempos</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="53"/>
         <source>Space</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Local</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="62"/>
         <source>Both</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Ambos</translation>
+        <translation>Ambos</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="84"/>
         <source>Help</source>
-        <translation type="unfinished">Ajuda</translation>
+        <translation>Ajuda</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="91"/>
         <source>Close</source>
-        <translation type="unfinished">Fechar</translation>
+        <translation>Fechar</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="112"/>
         <source>Room&apos;s name</source>
-        <translation type="unfinished">Nome da Sala</translation>
+        <translation>Nome da Sala</translation>
     </message>
 </context>
 <context>
@@ -55105,7 +55109,7 @@ Por favor, pare a simulação antes.</translation>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="988"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="994"/>
         <source>FET warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Aviso FET</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="205"/>
@@ -55113,27 +55117,27 @@ Por favor, pare a simulação antes.</translation>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="661"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="783"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished">Não é possível mostrar o horário, pois você removeu ou adicionou algumas salas. Por favor, gere novamente o horário para vê-lo novamente</translation>
+        <translation>Não é possível mostrar o horário, pois você removeu ou adicionou algumas salas. Por favor, gere novamente o horário para vê-lo novamente</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="308"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="318"/>
         <source>px</source>
         <comment>Abbreviation for pixels</comment>
-        <translation type="unfinished">px</translation>
+        <translation>px</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="316"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="326"/>
         <source>Automatic</source>
-        <translation type="unfinished">Automático</translation>
+        <translation>Automático</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="415"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="422"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="655"/>
         <source>Timetable not available in view rooms timetable dialog - please generate a new timetable or close the timetable view rooms dialog</source>
-        <translation type="unfinished">Grade horária indisponível na janela de horário de salas - por favor, gere uma nova grade ou feche a janela de horário de salas</translation>
+        <translation>Grade horária indisponível na janela de horário de salas - por favor, gere uma nova grade ou feche a janela de horário de salas</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="643"/>
@@ -55141,32 +55145,32 @@ Por favor, pare a simulação antes.</translation>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="771"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="777"/>
         <source>Timetable not available in view rooms timetable dialog - please generate a new timetable</source>
-        <translation type="unfinished">Grade horária indisponível na janela de horário de salas - por favor, gere uma nova grade</translation>
+        <translation>Grade horária indisponível na janela de horário de salas - por favor, gere uma nova grade</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="671"/>
         <source>Cannot display the timetable, because you added or removed some teachers. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished">Não é possível mostrar o horário, pois você removeu ou adicionou alguns docentes. Por favor, gere novamente o horário para vê-lo novamente</translation>
+        <translation>Não é possível mostrar o horário, pois você removeu ou adicionou alguns docentes. Por favor, gere novamente o horário para vê-lo novamente</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="680"/>
         <source>The room is invalid - please close this dialog and open a new view rooms timetable</source>
-        <translation type="unfinished"></translation>
+        <translation>Sala inválida. Por favor, feche essa janela e abra nova janela para ver horário de salas</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="697"/>
         <source>Room: %1</source>
-        <translation type="unfinished">Sala: %1</translation>
+        <translation>Sala: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="732"/>
         <source>Room is not available with weight %1%</source>
-        <translation type="unfinished">Sala não está 100% disponível com peso %1%</translation>
+        <translation>Sala não está 100% disponível com peso %1%</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="736"/>
         <source>Break with weight 100% in this slot</source>
-        <translation type="unfinished">Interromper com peso 100% nessa janela</translation>
+        <translation>Interromper com peso 100% nessa janela</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="765"/>
@@ -55174,13 +55178,13 @@ Por favor, pare a simulação antes.</translation>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1009"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1055"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>Informação FET</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="766"/>
         <source>Allocation in course.
 Please stop simulation before this.</source>
-        <translation type="unfinished">Alocação em curso.
+        <translation>Alocação em curso.
 Por favor, pare a simulação antes.</translation>
     </message>
     <message>
@@ -55189,13 +55193,13 @@ Por favor, pare a simulação antes.</translation>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="946"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="960"/>
         <source>Small problem detected</source>
-        <translation type="unfinished">Pequeno problema detectado</translation>
+        <translation>Pequeno problema detectado</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="864"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="878"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred starting time with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Um possível problema pode ser que você tenha 2 ou mais restrições de início preferido da atividade com peso 100% relativas à atividade id %1; por favor, deixe apenas uma delas</translation>
+        <translation>Um possível problema pode ser que você tenha 2 ou mais restrições de início preferido da atividade com peso 100% relativas à atividade id %1; por favor, deixe apenas uma delas</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="865"/>
@@ -55203,7 +55207,7 @@ Por favor, pare a simulação antes.</translation>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="948"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="962"/>
         <source>A possible problem might be synchronization - so maybe try to close the timetable view dialog and open it again</source>
-        <translation type="unfinished">Um problema possível pode ser a sincronização. Se for isso, feche a janela de horário e reabra</translation>
+        <translation>Um problema possível pode ser a sincronização. Se for isso, feche a janela de horário e reabra-a</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="866"/>
@@ -55211,75 +55215,75 @@ Por favor, pare a simulação antes.</translation>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="949"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="963"/>
         <source>Please report possible bug</source>
-        <translation type="unfinished">Por favor, relate possível bug</translation>
+        <translation>Por favor, relate possível bug</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="871"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="954"/>
         <source>Constraint %1 will not be removed, because it is permanently locked. If you want to unlock it you must go to the constraints menu.</source>
-        <translation type="unfinished">Restrição %1 não será removida, pois está permanentemente bloqueada. Se desejar desbloqueá-la, altere no menu de restrições.</translation>
+        <translation>Restrição %1 não será removida, pois está permanentemente bloqueada. Se desejar desbloqueá-la, altere no menu de restrições.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="898"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="983"/>
         <source>Added the following constraint:</source>
-        <translation type="unfinished">Adicionada a seguinte restrição:</translation>
+        <translation>Adicionada a seguinte restrição:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="903"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="988"/>
         <source>You may have a problem, because FET expected to add 1 constraint, but this is not possible. Please report possible bug</source>
-        <translation type="unfinished">Você pode ter um problema, pois FET esperava adicionar 1 restrição, mas isso não é possível. Por favor, relate possivel bug</translation>
+        <translation>Você pode ter um problema, pois FET esperava adicionar 1 restrição, mas isso não é possível. Por favor, relate possivel bug</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="909"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="994"/>
         <source>You may have a problem, because FET expected to delete 1 constraint, but will delete %1 constraints</source>
-        <translation type="unfinished">Você pode ter um problema, pois FET esperava deletar 1 restrição, mas deletará %1 restrições</translation>
+        <translation>Você pode ter um problema, pois FET esperava deletar 1 restrição, mas deletará %1 restrições</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="912"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="997"/>
         <source>The following constraint will be deleted:</source>
-        <translation type="unfinished">A seguinte restrição será deletada:</translation>
+        <translation>A seguinte restrição será deletada:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="925"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1010"/>
         <source>Skip information</source>
-        <translation type="unfinished">Pular informação</translation>
+        <translation>Pular informação</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="925"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1010"/>
         <source>See next</source>
-        <translation type="unfinished">Ver seguinte</translation>
+        <translation>Ver seguinte</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="947"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="961"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation type="unfinished">Um possível problema pode ser que você tenha 2 ou mais restrições de sala reservada para atividade com peso 100% relativas à atividade id %1; por favor, deixe apenas uma delas</translation>
+        <translation>Um possível problema pode ser que você tenha 2 ou mais restrições de sala reservada para atividade com peso 100% relativas à atividade id %1; por favor, deixe apenas uma delas</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1115"/>
         <source>If a whole column (day+hour) is selected, the activities with no room from that column will NOT be locked/unlocked.</source>
-        <translation type="unfinished"></translation>
+        <translation>Se uma coluna inteira (dia+hora) estiver selecionada, as atividades sem sala dessa coluna NÃO serão bloqueadas/desbloqueadas.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1118"/>
         <source>A bold font cell means that the activity is locked in time, either permanently or not.</source>
-        <translation type="unfinished">Uma célula com fonte em negrito indica que a atividade está com horário bloqueado, permanentemente ou não.</translation>
+        <translation>Uma célula com fonte em negrito indica que a atividade está com horário bloqueado, permanentemente ou não.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1120"/>
         <source>An italic font cell means that the activity is locked in space, either permanently or not.</source>
-        <translation type="unfinished"></translation>
+        <translation>Uma célula com fonte em itálico indica que a sala da atividade está bloqueada no horário, permanentemente ou não.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1122"/>
         <source>FET help</source>
-        <translation type="unfinished">Ajuda FET</translation>
+        <translation>Ajuda FET</translation>
     </message>
 </context>
 <context>
@@ -55288,75 +55292,75 @@ Por favor, pare a simulação antes.</translation>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="14"/>
         <source>View rooms time horizontal timetable</source>
         <extracomment>Title of dialog to view the rooms timetable</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Horário de salas na horizontal</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="39"/>
         <source>Width</source>
-        <translation type="unfinished">Largura</translation>
+        <translation>Largura</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="46"/>
         <source>Height</source>
-        <translation type="unfinished">Altura</translation>
+        <translation>Altura</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="70"/>
         <source>Lock</source>
-        <translation type="unfinished">Bloquear</translation>
+        <translation>Bloquear</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="77"/>
         <source>Unlock</source>
-        <translation type="unfinished">Desbloquear</translation>
+        <translation>Desbloquear</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="84"/>
         <source>Toggle</source>
-        <translation type="unfinished">Alternar</translation>
+        <translation>Alternar</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="100"/>
         <source>Students</source>
-        <translation type="unfinished"></translation>
+        <translation>Alunos</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="107"/>
         <source>Subjects</source>
-        <translation type="unfinished">Disciplinas</translation>
+        <translation>Disciplinas</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="114"/>
         <source>Teachers</source>
-        <translation type="unfinished"></translation>
+        <translation>Docentes</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="132"/>
         <source>Time</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Tempos</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="146"/>
         <source>Space</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Local</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="160"/>
         <source>Both</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Ambos</translation>
+        <translation>Ambos</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="175"/>
         <source>Help</source>
-        <translation type="unfinished">Ajuda</translation>
+        <translation>Ajuda</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="182"/>
         <source>Close</source>
-        <translation type="unfinished">Fechar</translation>
+        <translation>Fechar</translation>
     </message>
 </context>
 <context>
@@ -55793,7 +55797,7 @@ Por favor, pare a simulação antes.</translation>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1314"/>
         <source>An italic font cell means that the activity is locked in space, either permanently or not.</source>
-        <translation type="unfinished"></translation>
+        <translation>Uma célula com fonte em itálico indica que a sala da atividade está bloqueada no horário, permanentemente ou não.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1316"/>
@@ -56289,7 +56293,7 @@ Por favor, pare a simulação antes.</translation>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1086"/>
         <source>An italic font cell means that the activity is locked in space, either permanently or not.</source>
-        <translation type="unfinished"></translation>
+        <translation>Uma célula com fonte em itálico indica que a sala da atividade está bloqueada no horário, permanentemente ou não.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1088"/>
@@ -56474,7 +56478,7 @@ Por favor, pare a simulação antes.</translation>
         <location filename="../src/interface/centerwidgetonscreen.cpp" line="223"/>
         <location filename="../src/interface/centerwidgetonscreen.cpp" line="236"/>
         <source>FET warning</source>
-        <translation>FET Alerta</translation>
+        <translation>Aviso FET</translation>
     </message>
     <message>
         <location filename="../src/interface/centerwidgetonscreen.cpp" line="212"/>
