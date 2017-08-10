@@ -64,7 +64,7 @@ private:
 class LastWarningsDialogE: public QDialog{
 	Q_OBJECT
 	
-public:				//can i do that privat too?
+public:				//can I do that private too?
 	LastWarningsDialogE(QWidget *parent, QString lastWarning);
 	~LastWarningsDialogE();
 };
