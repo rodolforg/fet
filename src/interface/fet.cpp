@@ -740,9 +740,9 @@ int main(int argc, char **argv)
 
 	terminateGeneratePointer=NULL;
 	
-	students_schedule_ready=0;
-	teachers_schedule_ready=0;
-	rooms_schedule_ready=0;
+	students_schedule_ready=false;
+	teachers_schedule_ready=false;
+	rooms_schedule_ready=false;
 
 #ifndef FET_COMMAND_LINE
 	QObject::connect(&qapplication, SIGNAL(lastWindowClosed()), &qapplication, SLOT(quit()));
