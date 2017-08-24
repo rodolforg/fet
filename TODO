@@ -1306,6 +1306,8 @@ a single teacher. There were too many constraints to add.
 
 Suggested also by utismetis, on the forum, on 2017-08-07.
 
+Suggested also by Davide Cottignoli, on the forum, on 2017-08-18.
+
 See also TODO item #84.
 
 83---------------------------------------------------------
@@ -5511,3 +5513,84 @@ Add a subject tag for each subject (like: "easy" or "hard") and add time constra
 From Valdo (on forum):
 
 Export the resulted timetables in time horizontal form.
+
+329---------------------------------------------------------
+From Matthias Söllner:
+
+Add an option for the FET command-line version, so that after the generation there will be written also the CSV timetable.
+
+330---------------------------------------------------------
+From Volker Dirr:
+
+Maybe this is a good time to restart coding csv stuff.
+my old csv stuff was very "powerful" and "compressed", but sadly also 
+very bad "expandable"/(coded).
+also other guys asked for exporting other time constraints. nearly 
+impossible to add that into the old code.
+
+so i suggest this:
+- we keep the old csv stuff, so everyone can still use this "powerful" 
+feature. it will be also stable (never change the file format anymore).
+- we add a new csv export (and also import). maybe call it "version 2" 
+or "beta" or "experimental" or ...
+- the new code will NOT be able to select the order of the fields (and 
+also not be able to select headers, textquotes and field separator; even 
+i will do that maybe in the source)
+- the first version will be similar to the current default export. so 
+just code simplification.
+- then i will have got the chance to add new features into that code 
+(like exporting other constraints)
+
+331---------------------------------------------------------
+From Zsolt Udvari (on forum):
+
+My days originally have had 7 hours. The school said a thing and I thought I should include a plus hour, before the original 7 hours.
+I added it (0. hour) and I saw the hour of all time constraints updated: increased by 1.
+I know many times it's a good feature but in my case (I've record all activities, time constraints) hasn't increase. My 0. hour is like a virtual hour.
+
+Now I can manually rewrite the .fet file but I think it would be nice when user can disable this feature - maybe FET ask about it the user when add later
+(means there are time constraints) a new hour.
+
+332---------------------------------------------------------
+From Zsolt Udvari (on forum):
+
+Maybe a user error (PEBKAC) but I think I share it.
+
+So I've a little complicated FET-file and it seems the "An activity has a preferred starting time" doesn't work.
+
+I attached the file and try to generate and check:
+
+    Nr. 895 and 896 activities (without any teacher and student)
+    They have preferred starting time: "Szerda 1." (Wednesday) and "Hétfő 3." (Monday) with 100%
+    They have same starting time (day+hour) with 7 other activites (for example 647 and 648)
+    Generate (without success)
+    Check the student's timetable, go to "11A" and the 647 is on "Péntek" (Friday)!
+
+333---------------------------------------------------------
+From Valdo (on forum):
+
+A new addition to Spreading activities uniformly in the week for activities split in to 2 components:
+
+Constraints max days between activities (2 components) with the possibility to select max days and weight.
+
+334---------------------------------------------------------
+From Zsolt Udvari (on forum):
+
+I try to find the impossible constraint(s) in my FET-file and I think it's uncomfortable that only on "Time/All" dialog can activate/deactivate the constraints.
+I think it would be nice when can activate/deactivate for example on "An activity has a preferred starting time" dialog (and on the others too).
+
+335---------------------------------------------------------
+From Volker Dirr:
+
+There are not many variables to mutex in the generation.cpp. So it will
+be faster to use std::atomic or QAtomic command instead of using mutex.
+(The atomic commands will do a mutex if the cpu doesn't support atomic
+operations. so cpus without atomic support won't generate faster, but
+other cpus will.)
+
+336---------------------------------------------------------
+From Benahmed Abdelkrim (on forum):
+
+Constraint min working hours in an interval.
+
+This constraint is very useful in many situations such as, for example, not bringing a teacher (or all teachers) for a single hour in a given interval.
