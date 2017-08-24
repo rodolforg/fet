@@ -34119,66 +34119,66 @@ Dieses Menü zeigt Aktivitäten an, die Raumeinschränkungen mit einer Gewichtun
 <context>
     <name>FetTranslate</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="259"/>
-        <location filename="../src/interface/fet.cpp" line="810"/>
+        <location filename="../src/interface/fet.cpp" line="260"/>
+        <location filename="../src/interface/fet.cpp" line="811"/>
         <source>FET warning</source>
         <translation>FET-Warnung</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="259"/>
+        <location filename="../src/interface/fet.cpp" line="260"/>
         <source>Output directory %1 does not exist and cannot be created - output directory will be made the default value %2</source>
         <translation>Das Ausgabeverzeichnis %1 existiert nicht und can nicht erstellt werden. Es wird nun folgendes Verzeichnis genommen: %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="771"/>
-        <location filename="../src/interface/fet.cpp" line="780"/>
+        <location filename="../src/interface/fet.cpp" line="772"/>
+        <location filename="../src/interface/fet.cpp" line="781"/>
         <source>FET critical</source>
         <translation>FET Kritische Meldung</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="810"/>
+        <location filename="../src/interface/fet.cpp" line="811"/>
         <source>To start FET in interface mode, please do not give any command-line parameters to the FET executable</source>
         <translation>Um FET im grafischen Modus zu starten dürfen keine Parameter der ausführbaren Datei übergeben werden</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1107"/>
+        <location filename="../src/interface/fet.cpp" line="1108"/>
         <source>This is the list of max placed activities, chronologically. If FET could reach maximum n-th activity, look at the n+1-st activity in the initial order of the activities</source>
         <translation>Dies ist die chronologisch geordnete Liste der maximal gesetzten Aktivitäten. Wenn FET maximal n Aktivitäten gesetzt hat, dann schauen Sie sich die (n+1)-te Aktivität in der ursprünglichen Ordnung an, um Fehler aufzufinden.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1393"/>
+        <location filename="../src/interface/fet.cpp" line="1394"/>
         <source>FET managed to schedule correctly the first %1 most difficult activities. You can see initial order of placing the activities in the corresponding output file. The activity which might cause problems might be the next activity in the initial order of evaluation. This activity is listed below:</source>
         <translation>FET konnte die ersten %1 Aktivitäten setzen. Sie können sich die Reihenfolge der Aktivitäten anschauen. Die Aktivität, welche Schwierigkeiten bereitet, ist die Aktivität danach. Die Aktivität ist:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1400"/>
-        <location filename="../src/interface/fet.cpp" line="1420"/>
+        <location filename="../src/interface/fet.cpp" line="1401"/>
+        <location filename="../src/interface/fet.cpp" line="1421"/>
         <source>Id: %1 (%2)</source>
         <comment>%1 is id of activity, %2 is detailed description of activity</comment>
         <translation>ID: %1 (%2)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1405"/>
+        <location filename="../src/interface/fet.cpp" line="1406"/>
         <source>Difficult activity cannot be computed - please report possible bug</source>
         <translation>Schwierige Aktivitäten kann nicht berechnet werden - Bitte melden Sie diesen Fehler mit</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1409"/>
+        <location filename="../src/interface/fet.cpp" line="1410"/>
         <source>Here are the placed activities which lead to an inconsistency, in order from the first one to the last (the last one FET failed to schedule and the last ones are most likely impossible):</source>
         <translation>Hier ist die Liste der gesetzten Aktivitäten - geordnet von der ersten zur letzten (die letzte konnte von FET nicht gesetzt werden und ist daher nicht möglich):</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1416"/>
+        <location filename="../src/interface/fet.cpp" line="1417"/>
         <source>No: %1</source>
         <translation>Nr.: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="771"/>
+        <location filename="../src/interface/fet.cpp" line="772"/>
         <source>Cannot create or use %1 directory (where the results should be stored) - you can continue operation, but you might not be able to work with FET. Maybe you can try to change the output directory from the &apos;Settings&apos; menu. If this is a bug - please report it.</source>
         <translation>Das Verzeichnis %1 kann nicht erstellt bzw. benutzt werden. Sie können fortfahren, aber wahrscheinlich so nicht sinnvoll arbeiten. Versuchen Sie in den &quot;Einstellungen&quot; das Verzeichnis zu ändern. Bitte teilen Sie diesen Fehler mit.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="780"/>
+        <location filename="../src/interface/fet.cpp" line="781"/>
         <source>You don&apos;t have write permissions in the output directory (FET cannot open or create file %1) - you might not be able to work correctly with FET. Maybe you can try to change the output directory from the &apos;Settings&apos; menu. If this is a bug - please report it.</source>
         <translation>Sie haben keine Schreibberechtigung in dem Verzeichnis (FET kann die Datei %1 nicht erstellt bzw. öffnen). Sie können fortfahren, aber wahrscheinlich so nicht sinnvoll arbeiten. Versuchen Sie in den &quot;Einstellungen&quot; das Verzeichnis zu ändern. Bitte teilen Sie diesen Fehler mit.</translation>
     </message>
@@ -36156,24 +36156,6 @@ Bitte korrigieren Sie das und versuchen es nochmals.</translation>
         <translation>Infos</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.32.3 (August 2017).&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET homepage: &lt;/span&gt;&lt;a href=&quot;http://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;http://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="112"/>
         <source>Translators</source>
         <translation>Übersetzer</translation>
@@ -36324,6 +36306,24 @@ p, li { white-space: pre-wrap; }
         <location filename="../src/interface/helpaboutform_template.ui" line="14"/>
         <source>About FET - Free Timetabling Software</source>
         <translation>Über FET - Freie Stundenplangenerierungs-Software</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.32.4 (August 2017).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET homepage: &lt;/span&gt;&lt;a href=&quot;http://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;http://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="90"/>
@@ -36882,11 +36882,13 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;S Chandrasekar - suggestion.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;utismetis - suggestion.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Matthias Söllner - suggestion.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="870"/>
+        <location filename="../src/interface/helpaboutform_template.ui" line="872"/>
         <source>Close</source>
         <translation>Schließen</translation>
     </message>
@@ -47798,52 +47800,52 @@ Note: teacher not available and break are not counted as gaps.</source>
 <context>
     <name>QDialogButtonBox</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="673"/>
+        <location filename="../src/interface/fet.cpp" line="674"/>
         <source>&amp;OK</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;OK</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="675"/>
+        <location filename="../src/interface/fet.cpp" line="676"/>
         <source>OK</source>
         <translation>Ok</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="678"/>
+        <location filename="../src/interface/fet.cpp" line="679"/>
         <source>&amp;Cancel</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Abbrechen</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="680"/>
+        <location filename="../src/interface/fet.cpp" line="681"/>
         <source>Cancel</source>
         <translation>Abbrechen</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="683"/>
+        <location filename="../src/interface/fet.cpp" line="684"/>
         <source>&amp;Yes</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Ja</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="685"/>
+        <location filename="../src/interface/fet.cpp" line="686"/>
         <source>Yes to &amp;All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>Ja (für &amp;alle)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="689"/>
+        <location filename="../src/interface/fet.cpp" line="690"/>
         <source>N&amp;o to All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>N&amp;ein (für alle)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="692"/>
+        <location filename="../src/interface/fet.cpp" line="693"/>
         <source>Help</source>
         <translation>Hilfe</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="687"/>
+        <location filename="../src/interface/fet.cpp" line="688"/>
         <source>&amp;No</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Nein</translation>
@@ -47852,13 +47854,13 @@ Note: teacher not available and break are not counted as gaps.</source>
 <context>
     <name>QGnomeTheme</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="718"/>
+        <location filename="../src/interface/fet.cpp" line="719"/>
         <source>&amp;OK</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Ok</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="720"/>
+        <location filename="../src/interface/fet.cpp" line="721"/>
         <source>&amp;Cancel</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Abbrechen</translation>
@@ -47867,53 +47869,53 @@ Note: teacher not available and break are not counted as gaps.</source>
 <context>
     <name>QPlatformTheme</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="696"/>
+        <location filename="../src/interface/fet.cpp" line="697"/>
         <source>&amp;OK</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Ok</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="698"/>
+        <location filename="../src/interface/fet.cpp" line="699"/>
         <source>OK</source>
         <translation>Ok</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="701"/>
+        <location filename="../src/interface/fet.cpp" line="702"/>
         <source>&amp;Cancel</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>A&amp;bbrechen</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="703"/>
+        <location filename="../src/interface/fet.cpp" line="704"/>
         <source>Cancel</source>
         <translation>Abbrechen</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="706"/>
+        <location filename="../src/interface/fet.cpp" line="707"/>
         <source>&amp;Yes</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Ja</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="708"/>
+        <location filename="../src/interface/fet.cpp" line="709"/>
         <source>Yes to &amp;All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>Ja (für &amp;alle)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="710"/>
+        <location filename="../src/interface/fet.cpp" line="711"/>
         <source>&amp;No</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Nein</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="712"/>
+        <location filename="../src/interface/fet.cpp" line="713"/>
         <source>N&amp;o to All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>N&amp;ein (für alle)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="715"/>
+        <location filename="../src/interface/fet.cpp" line="716"/>
         <source>Help</source>
         <translation>Hilfe</translation>
     </message>
@@ -52463,8 +52465,8 @@ Unten: %4</translation>
         <location filename="../src/engine/timetableexport.cpp" line="2900"/>
         <location filename="../src/engine/timetableexport.cpp" line="3115"/>
         <location filename="../src/engine/timetableexport.cpp" line="3164"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10314"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10325"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10352"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10365"/>
         <source>Year</source>
         <translation>Jahrgang</translation>
     </message>
@@ -52473,8 +52475,8 @@ Unten: %4</translation>
         <location filename="../src/engine/timetableexport.cpp" line="2636"/>
         <location filename="../src/engine/timetableexport.cpp" line="2849"/>
         <location filename="../src/engine/timetableexport.cpp" line="2903"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10332"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10343"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10372"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10385"/>
         <source>Group</source>
         <translation>Gruppe</translation>
     </message>
@@ -52858,13 +52860,13 @@ Unten: %4</translation>
         <location filename="../src/engine/timetableexport.cpp" line="9687"/>
         <location filename="../src/engine/timetableexport.cpp" line="9804"/>
         <location filename="../src/engine/timetableexport.cpp" line="9922"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10078"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10103"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10271"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10301"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10435"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10444"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10474"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10095"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10121"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10308"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10339"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10493"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10502"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10533"/>
         <source>Timetable generated with FET %1 on %2</source>
         <comment>%1 is FET version, %2 is the date and time of generation</comment>
         <translation>Stundenplanerstellung mit FET %1 am %2</translation>
@@ -53067,155 +53069,176 @@ Unten: %4</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9939"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10120"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10138"/>
         <source>This is a teaser only. Values are not correct!</source>
         <translation>Dies ist nur eine schnelle Vorschau - die Werte sind (evtl.) nicht korrekt.</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9943"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10124"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10142"/>
         <source>This file doesn&apos;t list limits that are set by constraints. It contains statistics about the min and max values of the currently calculated solution.</source>
         <translation>Diese Datei zeigt keine Begrenzungen an, die durch Einschränkungen gesetzt wurden. Sie zeigt nur eine Statistik über die berechneten Maximal- und Minimalwerten in der aktuellen Lösung an.</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10046"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10058"/>
         <source>All teachers</source>
         <translation>Alle Lehrer</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10047"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10089"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10240"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10287"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10460"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10059"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10106"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10272"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10324"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10518"/>
+        <source>Hours per week</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timetableexport.cpp" line="10060"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10107"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10273"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10325"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10519"/>
         <source>Free days</source>
         <translation>Freie Tage</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10048"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10241"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10061"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10274"/>
         <source>Gaps</source>
         <translation>Freistunden</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10049"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10242"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10062"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10275"/>
         <source>Gaps per day</source>
         <translation>Freistunden pro Tag</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10050"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10243"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10063"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10276"/>
         <source>Hours per day</source>
         <translation>Stunden pro Tag</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10053"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10246"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10066"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10279"/>
         <source>Sum</source>
         <translation>Summe</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10059"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10252"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10073"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10286"/>
         <source>Average</source>
         <translation>Durchschnitt</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10065"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10258"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10080"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10293"/>
         <source>Min</source>
         <translation>Min.</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10071"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10264"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10087"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10300"/>
         <source>Max</source>
         <translation>Max.</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10088"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10097"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10105"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10115"/>
         <source>Teacher</source>
         <translation>Lehrer</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10090"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10288"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10461"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10108"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10326"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10520"/>
         <source>Total gaps</source>
         <translation>Freistunden total</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10091"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10289"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10321"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10339"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10462"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10109"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10327"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10361"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10381"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10521"/>
         <source>Min gaps per day</source>
         <translation>Min. Freistd. pro Tag</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10092"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10290"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10322"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10340"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10463"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10110"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10328"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10362"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10382"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10522"/>
         <source>Max gaps per day</source>
         <translation>Max. Freistd. pro Tag</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10093"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10291"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10317"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10335"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10464"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10111"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10329"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10357"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10377"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10523"/>
         <source>Min hours per day</source>
         <translation>Min. Stunden pro Tag</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10094"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10292"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10318"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10336"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10465"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10112"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10330"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10358"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10378"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10524"/>
         <source>Max hours per day</source>
         <translation>Max. Stunden pro Tag</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10239"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10271"/>
         <source>All students</source>
         <translation>Alle Schüler</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10315"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10333"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10353"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10373"/>
+        <source>Min hours per week</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timetableexport.cpp" line="10354"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10374"/>
+        <source>Max hours per week</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/engine/timetableexport.cpp" line="10355"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10375"/>
         <source>Min free days</source>
         <translation>Min. freie Tage</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10316"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10334"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10356"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10376"/>
         <source>Max free days</source>
         <translation>Max. freie Tage</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10319"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10337"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10359"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10379"/>
         <source>Min gaps per week</source>
         <translation>Min. Freistd. pro Woche</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10320"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10338"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10360"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10380"/>
         <source>Max gaps per week</source>
         <translation>Max. Freistd. pro Woche</translation>
     </message>
     <message>
-        <location filename="../src/engine/timetableexport.cpp" line="10286"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10295"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10459"/>
-        <location filename="../src/engine/timetableexport.cpp" line="10468"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10323"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10333"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10517"/>
+        <location filename="../src/engine/timetableexport.cpp" line="10527"/>
         <source>Subgroup</source>
         <translation>Teilgruppe</translation>
     </message>
@@ -53577,17 +53600,17 @@ Unten: %4</translation>
         <translation>unbenannt</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1291"/>
+        <location filename="../src/interface/fet.cpp" line="1292"/>
         <source>Please check the constraints related to the activity below, which might be impossible to schedule:</source>
         <translation>Bitte prüfen Sie die Einschränkungen der folgenden Aktivität, da Sie wahrscheinlich nicht gesetzt werden kann:</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1297"/>
+        <location filename="../src/interface/fet.cpp" line="1298"/>
         <source>No: %1</source>
         <translation>Nr.: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1301"/>
+        <location filename="../src/interface/fet.cpp" line="1302"/>
         <source>Id: %1 (%2)</source>
         <comment>%1 is id of activity, %2 is detailed description of activity</comment>
         <translation>ID: %1 (%2)</translation>
