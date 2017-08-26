@@ -5594,3 +5594,13 @@ From Benahmed Abdelkrim (on forum):
 Constraint min working hours in an interval.
 
 This constraint is very useful in many situations such as, for example, not bringing a teacher (or all teachers) for a single hour in a given interval.
+
+337---------------------------------------------------------
+From Fernando A F Lordão (on forum):
+
+After testing the new feature (showing the number of assigned hours for teachers and students in the HTML statistics of the timetables) I figured out about
+another situation that occurs in my institution.
+Here we have a rule that recommends coordinators not to assign more than three different subjects to one teacher. Sometimes it occurs, but it's not the ideal scenario.
+So, I thought about including two more columns in the statistics file:
+* "Total of Activities"
+* "Different Subjects" (counting different string description of the subjects assigned to the teacher)
