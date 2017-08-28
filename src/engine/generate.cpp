@@ -6406,7 +6406,9 @@ impossiblestudentsmaxgapsperday:
 					//12 hours per day, removed subacts. pref. times, max hours daily 6 for students).
 					bool canTakeFromBegin=(subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]!=0); //-1 or >0
 					bool canTakeFromEnd=true;
-					bool canTakeFromAnywhere=(subgroupsMaxGapsPerWeekMaxGaps[sbg]==-1);
+					bool canTakeFromAnywhere=(subgroupsMaxGapsPerWeekMaxGaps[sbg]!=0 && subgroupsMaxGapsPerDayMaxGaps[sbg]!=0); //-1 or >0
+					bool canTakeFromBeginOrEndAnyDay=(subgroupsMaxGapsPerWeekMaxGaps[sbg]>=0 ||
+					 subgroupsMaxGapsPerDayMaxGaps[sbg]>=0 || subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]>=0);
 		
 					for(;;){
 						//////////////////////////new
@@ -6542,22 +6544,32 @@ impossiblestudentsmaxgapsperday:
 								assert(conflActivities[newtime].count()==nConflActivities[newtime]);
 								
 								if(!ka){
-									if(level==0){
-										/*cout<<"subgroup=="<<qPrintable(gt.rules.internalSubgroupsList[sbg]->name)<<endl;
-										cout<<"d=="<<d<<endl;
-										cout<<"H="<<H<<endl;
-										cout<<"Timetable:"<<endl;
-										for(int h2=0; h2<gt.rules.nHoursPerDay; h2++){
-											for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++)
-												cout<<"\t"<<sbgTimetable(d2,h2)<<"\t";
-											cout<<endl;
-										}*/
+									canTakeFromAnywhere=false;
+									bool kaa=false;
+									if(canTakeFromBeginOrEndAnyDay && sbgDayNHours[d]<=limitHoursDaily)
+										//Fix on 2017-08-26, to solve Volker Dirr's bug report
+										kaa=subgroupRemoveAnActivityFromBeginOrEnd(sbg, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+									assert(conflActivities[newtime].count()==nConflActivities[newtime]);
 									
-										//this should not be displayed
-										//cout<<"WARNING - file "<<__FILE__<<" line "<<__LINE__<<endl;
+									if(!kaa){
+										canTakeFromBeginOrEndAnyDay=false; //useless
+										if(level==0){
+											/*cout<<"subgroup=="<<qPrintable(gt.rules.internalSubgroupsList[sbg]->name)<<endl;
+											cout<<"d=="<<d<<endl;
+											cout<<"H="<<H<<endl;
+											cout<<"Timetable:"<<endl;
+											for(int h2=0; h2<gt.rules.nHoursPerDay; h2++){
+												for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++)
+												cout<<"\t"<<sbgTimetable(d2,h2)<<"\t";
+												cout<<endl;
+											}*/
+										
+											//this should not be displayed
+											//cout<<"WARNING - file "<<__FILE__<<" line "<<__LINE__<<endl;
+										}
+										okstudentsmaxhoursdaily=false;
+										goto impossiblestudentsmaxhoursdaily;
 									}
-									okstudentsmaxhoursdaily=false;
-									goto impossiblestudentsmaxhoursdaily;
 								}
 							}
 						}
@@ -8413,10 +8425,14 @@ impossibleteachersmaxgapsperday:
 						okteachersmaxhoursdaily=false;
 						goto impossibleteachersmaxhoursdaily;
 					}
-	
+					
 					getTchTimetable(tch, conflActivities[newtime]);
 					tchGetNHoursGaps(tch);
 		
+					bool canTakeFromBeginOrEnd=true;
+					bool canTakeFromAnywhere=(teachersMaxGapsPerWeekMaxGaps[tch]!=0 && teachersMaxGapsPerDayMaxGaps[tch]!=0); //-1 or >0
+					bool canTakeFromBeginOrEndAnyDay=(teachersMaxGapsPerWeekMaxGaps[tch]>=0 || teachersMaxGapsPerDayMaxGaps[tch]>=0);
+	
 					for(;;){
 						//basically, see that the gaps are enough
 						bool ok;
@@ -8473,35 +8489,50 @@ impossibleteachersmaxgapsperday:
 						}
 						
 						int ai2=-1;
-
-						bool k=teacherRemoveAnActivityFromBeginOrEndCertainDay(tch, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+						
+						bool k=false;
+						if(canTakeFromBeginOrEnd)
+							k=teacherRemoveAnActivityFromBeginOrEndCertainDay(tch, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
 						assert(conflActivities[newtime].count()==nConflActivities[newtime]);
 						if(!k){
-							bool ka=teacherRemoveAnActivityFromAnywhereCertainDay(tch, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+							canTakeFromBeginOrEnd=false;
+							bool ka=false;
+							if(canTakeFromAnywhere)
+								ka=teacherRemoveAnActivityFromAnywhereCertainDay(tch, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
 							assert(conflActivities[newtime].count()==nConflActivities[newtime]);
 							
 							if(!ka){
-								if(level==0){
-									/*cout<<"d=="<<d<<", h=="<<h<<", teacher=="<<qPrintable(gt.rules.internalTeachersList[tch]->name);
-									cout<<", ai=="<<ai<<endl;
-									for(int h2=0; h2<gt.rules.nHoursPerDay; h2++){
-										for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++)
-											cout<<"\t"<<tchTimetable(d2,h2)<<"\t";
-										cout<<endl;
-									}
-									
-									cout<<endl;
-									for(int h2=0; h2<gt.rules.nHoursPerDay; h2++){
-										for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++)
-											cout<<"\t"<<newTeachersTimetable(tch,d2,h2)<<"\t";
-										cout<<endl;
-									}*/
+								canTakeFromAnywhere=false;
+								bool kaa=false;
+								if(canTakeFromBeginOrEndAnyDay && tchDayNHours[d]<=limitHoursDaily)
+									//Fix on 2017-08-26, to solve Volker Dirr's bug report
+									kaa=teacherRemoveAnActivityFromBeginOrEnd(tch, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+								assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+								if(!kaa){
+									canTakeFromBeginOrEndAnyDay=false;
 								
-									//Liviu: inactivated from version 5.12.4 (7 Feb. 2010), because it may take too long for some files
-									//cout<<"WARNING - mb - file "<<__FILE__<<" line "<<__LINE__<<endl;
+									if(level==0){
+										/*cout<<"d=="<<d<<", h=="<<h<<", teacher=="<<qPrintable(gt.rules.internalTeachersList[tch]->name);
+										cout<<", ai=="<<ai<<endl;
+										for(int h2=0; h2<gt.rules.nHoursPerDay; h2++){
+											for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++)
+												cout<<"\t"<<tchTimetable(d2,h2)<<"\t";
+											cout<<endl;
+										}
+										
+										cout<<endl;
+										for(int h2=0; h2<gt.rules.nHoursPerDay; h2++){
+											for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++)
+												cout<<"\t"<<newTeachersTimetable(tch,d2,h2)<<"\t";
+											cout<<endl;
+										}*/
+									
+										//Liviu: inactivated from version 5.12.4 (7 Feb. 2010), because it may take too long for some files
+										//cout<<"WARNING - mb - file "<<__FILE__<<" line "<<__LINE__<<endl;
+									}
+									okteachersmaxhoursdaily=false;
+									goto impossibleteachersmaxhoursdaily;
 								}
-								okteachersmaxhoursdaily=false;
-								goto impossibleteachersmaxhoursdaily;
 							}
 						}
 		
