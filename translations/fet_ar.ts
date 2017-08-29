@@ -7098,12 +7098,12 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform_template.ui" line="63"/>
         <source>Choose the component number of the subactivities to be constrained.</source>
-        <translation>اختر عدد عناصر الأنشطة الفرعية لتكون مقيدة.</translation>
+        <translation>اختر رقم العنصر للأنشطة الفرعية ليكون مقيدا.</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform_template.ui" line="22"/>
         <source>Component number (split index)</source>
-        <translation>عدد العناصر (التقسيم)</translation>
+        <translation>رقم العنصر (مؤشر التقسيم)</translation>
     </message>
 </context>
 <context>
@@ -7205,12 +7205,12 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform_template.ui" line="26"/>
         <source>Choose the component number of the subactivities to be constrained.</source>
-        <translation>اختر عدد عناصر الأنشطة الفرعية لتكون مقيدة.</translation>
+        <translation>اختر رقم العنصر للأنشطة الفرعية ليكون مقيدا.</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform_template.ui" line="38"/>
         <source>Component number (split index)</source>
-        <translation>عدد العناصر (التقسيم)</translation>
+        <translation>رقم العنصر (مؤشر التقسيم)</translation>
     </message>
 </context>
 <context>
@@ -22901,7 +22901,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11447"/>
         <source>Component number=%1</source>
-        <translation>رقم الحصة=%1</translation>
+        <translation>رقم العنصر=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11450"/>
@@ -23193,7 +23193,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10138"/>
         <source>component number=%1</source>
-        <translation>رقم الحصة=%1</translation>
+        <translation>رقم العنصر=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10155"/>
@@ -23214,7 +23214,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10165"/>
         <source>Component number=%1</source>
-        <translation>رقم الحصة=%1</translation>
+        <translation>رقم العنصر=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10169"/>
@@ -44772,7 +44772,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintsubactivitiespreferredtimeslotsform_template.ui" line="22"/>
         <source>Component number (split index)</source>
-        <translation>عدد العناصر (التقسيم)</translation>
+        <translation>رقم العنصر (مؤشر التقسيم)</translation>
     </message>
 </context>
 <context>
@@ -53144,7 +53144,7 @@ N1 ( C1(G1,G2), C2(G1, G3) )
         <location filename="../src/engine/timetableexport.cpp" line="10324"/>
         <location filename="../src/engine/timetableexport.cpp" line="10518"/>
         <source>Hours per week</source>
-        <translation type="unfinished"></translation>
+        <translation>حصص في الأسبوع</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10060"/>
@@ -53255,13 +53255,13 @@ N1 ( C1(G1,G2), C2(G1, G3) )
         <location filename="../src/engine/timetableexport.cpp" line="10353"/>
         <location filename="../src/engine/timetableexport.cpp" line="10373"/>
         <source>Min hours per week</source>
-        <translation type="unfinished"></translation>
+        <translation>أدنى حصص في الأسبوع</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10354"/>
         <location filename="../src/engine/timetableexport.cpp" line="10374"/>
         <source>Max hours per week</source>
-        <translation type="unfinished"></translation>
+        <translation>أقصى حصص في الأسبوع</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10355"/>
