@@ -1964,7 +1964,7 @@ Versions 5.31.0 - 5.31.9
 - Version 5.31.9
 	- Bug fix in the German translation. Reported by math, corrected by Bob Hairgrove.
 ---------------------------------------------------------------------------------
-Versions 5.32.0 - 5.32.v
+Versions 5.32.0 - 5.32.3
 - Version 5.32.0
 	- Implemented the teachers' and students' timetable view time horizontal from the FET interface, for easier locking/unlocking/generating a partially locked timetable.
 	Suggested by Vangelis Karafillidis, who did a great job with his useful suggestions and reports. Also Volker Dirr had some useful suggestions for this new feature.
@@ -1979,4 +1979,13 @@ Versions 5.32.0 - 5.32.v
 - Version 5.32.3
 	- Code cleanup (by Liviu Lalescu and Volker Dirr).
 	- Updated the Brazilian Portuguese translation, by Alexandre R. Soares.
+	- Updated the Arabic translation, by Benahmed Abdelkrim.
+---------------------------------------------------------------------------------
+- Version 5.33.0
+	- Very rare but important generation bug fixed. In some cases, for feasible timetables, the generation might cycle incorrectly. This is an old bug,
+	affecting files with constraints students/teachers max hours daily and max gaps per day/week, but nobody observed it until now. Reported by Volker Dirr.
+	A big 'Thank you!' to Volker, for being very supportive in hunting down this bug.
+	- Added the number of working hours for the teachers and the students in the HTML timetables statistics (suggested by Fernando A F Lordão, implemented by
+	Volker Dirr).
+	- Added a new Algerian example file, by Benahmed Abdelkrim.
 	- Updated the Arabic translation, by Benahmed Abdelkrim.

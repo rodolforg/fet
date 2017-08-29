@@ -1,4 +1,4 @@
-This is FET version 5.32.3
+This is FET version 5.33.0
 
 
 Program description:
@@ -14,7 +14,7 @@ Program description:
 
 Requirements:
 
-	FET is created in the following environment: openSUSE Leap 42.3 GNU/Linux distribution, Linux 4.4.76, Xfce 4.12,
+	FET is created in the following environment: openSUSE Leap 42.3 GNU/Linux distribution, Linux 4.4.79, Xfce 4.12,
 	Midnight Commander 4.8.19, KDiff3 0.9.98, Qt 5.9.1, gcc 7.1.1, g++ 7.1.1, make 4.0, sed 4.2.2,
 	Valgrind 3.12.0, Coverity Scan 2017.07, Cppcheck 1.80, other great free tools.
 	FET can be run on any platform supported by the free software Qt (GNU/Linux, Windows, Mac OS X).
@@ -285,6 +285,7 @@ Running FET:
 	
 	You can ask the FET command line process to stop the timetable generation, by sending it the SIGTERM signal.
 	FET will then write the current timetable and the highest stage timetable and exit.
+	(If you send the FET command line the SIGKILL signal it will stop immediately, without writing the timetable.)
 
 	The result of the operation is logged into file outputdir/logs/result.txt.
 
