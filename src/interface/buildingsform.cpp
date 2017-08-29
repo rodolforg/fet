@@ -190,6 +190,13 @@ void BuildingsForm::moveBuildingUp()
 	gt.rules.buildingsList[i]=bu2;
 	gt.rules.buildingsList[i-1]=bu1;
 	
+	//Begin bug fix on 2017-08-29
+	Building* vb1=visibleBuildingsList[i];
+	Building* vb2=visibleBuildingsList[i-1];
+	visibleBuildingsList[i]=vb2;
+	visibleBuildingsList[i-1]=vb1;
+	//End bug fix
+	
 	buildingsListWidget->setCurrentRow(i-1);
 	buildingChanged(i-1);
 }
@@ -218,6 +225,13 @@ void BuildingsForm::moveBuildingDown()
 	
 	gt.rules.buildingsList[i]=bu2;
 	gt.rules.buildingsList[i+1]=bu1;
+	
+	//Begin bug fix on 2017-08-29
+	Building* vb1=visibleBuildingsList[i];
+	Building* vb2=visibleBuildingsList[i+1];
+	visibleBuildingsList[i]=vb2;
+	visibleBuildingsList[i+1]=vb1;
+	//End bug fix
 	
 	buildingsListWidget->setCurrentRow(i+1);
 	buildingChanged(i+1);

@@ -190,6 +190,13 @@ void RoomsForm::moveRoomUp()
 	gt.rules.roomsList[i]=rm2;
 	gt.rules.roomsList[i-1]=rm1;
 	
+	//Begin bug fix on 2017-08-29
+	Room* vr1=visibleRoomsList[i];
+	Room* vr2=visibleRoomsList[i-1];
+	visibleRoomsList[i]=vr2;
+	visibleRoomsList[i-1]=vr1;
+	//End bug fix
+	
 	roomsListWidget->setCurrentRow(i-1);
 	roomChanged(i-1);
 }
@@ -219,6 +226,13 @@ void RoomsForm::moveRoomDown()
 	gt.rules.roomsList[i]=rm2;
 	gt.rules.roomsList[i+1]=rm1;
 	
+	//Begin bug fix on 2017-08-29
+	Room* vr1=visibleRoomsList[i];
+	Room* vr2=visibleRoomsList[i+1];
+	visibleRoomsList[i]=vr2;
+	visibleRoomsList[i+1]=vr1;
+	//End bug fix
+
 	roomsListWidget->setCurrentRow(i+1);
 	roomChanged(i+1);
 }
