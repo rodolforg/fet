@@ -28,3 +28,9 @@ their number of hours of work per week the 22 hours.
 Mg may be null even if the user gives it a non-zero value, because the placement of the activities is semi-random. In this case may not take into consideration this value in the above relation;
 Which is simplified to the following relation:
 Nv = 20 - Nh
+
+
+I think it is better to use the latter relation(Nv = 20 - Nh) because of the random nature of the activities, which increases the number of virtual
+activities that should be added to the teachers concerned with one(+1). It is also better to put these virtual activities on the mornings
+(8:00 - 9:00 or 11:00 - 12:00), so as not to be surprised after the generation, we get a teacher table with a single hour grouped with a virtual
+activity or with a normal gap resulting from the constraint: Max gaps per week.
