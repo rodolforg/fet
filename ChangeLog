@@ -1981,6 +1981,7 @@ Versions 5.32.0 - 5.32.3
 	- Updated the Brazilian Portuguese translation, by Alexandre R. Soares.
 	- Updated the Arabic translation, by Benahmed Abdelkrim.
 ---------------------------------------------------------------------------------
+Versions 5.33.0 - 5.33.v
 - Version 5.33.0
 	- Very rare but important generation bug fixed. In some cases, for feasible timetables, the generation might cycle incorrectly. This is an old bug,
 	affecting files with constraints students/teachers max hours daily and max gaps per day/week, but nobody observed it until now. Reported by Volker Dirr.
@@ -1989,3 +1990,6 @@ Versions 5.32.0 - 5.32.3
 	Volker Dirr).
 	- Added a new Algerian example file, by Benahmed Abdelkrim.
 	- Updated the Arabic translation, by Benahmed Abdelkrim.
+- Version 5.33.1
+	- Bug fix: when moving rooms/buildings up/down in their corresponding dialogs, the description on the right was not updated correspondingly.
+	Reported by chernous.
