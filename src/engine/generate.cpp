@@ -6401,6 +6401,7 @@ impossiblestudentsmaxgapsperday:
 					getSbgTimetable(sbg, conflActivities[newtime]);
 					sbgGetNHoursGaps(sbg);
 					
+					//OLD COMMENT BELOW: (now things seem theoretically and practically OK)
 					//theoretically, it should be canTakeFromBegin = true all time and ctfAnywhere = true if max gaps per week is not 0.
 					//but practically, I tried these changes and it was 30% slower for a modified german sample (with max gaps per day=1,
 					//12 hours per day, removed subacts. pref. times, max hours daily 6 for students).
