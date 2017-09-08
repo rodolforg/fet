@@ -25,7 +25,7 @@ File export.cpp
 // Code contributed by Volker Dirr ( http://www.timetabling.de/ )
 
 //TODO: protect export strings. textquote must be doubled
-//TODO: count skipped min day constraints?
+//TODO: count skipped min days constraints?
 //TODO: add cancel button
 
 #include <QtGlobal>

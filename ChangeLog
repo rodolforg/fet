@@ -1976,3 +1976,7 @@ Versions 5.32.0 - 5.32.v
 	- In the timetable view time horizontal dialogs the activities which are locked in space are shown with an italic font (suggested by Vangelis Karafillidis).
 - Version 5.32.2
 	- Crash bug fixed (rare, if adding an activity without students sets which had a specified number of students greater than 0). Reported by Zsolt Udvari.
+- Version 5.32.3
+	- Code cleanup (by Liviu Lalescu and Volker Dirr).
+	- Updated the Brazilian Portuguese translation, by Alexandre R. Soares.
+	- Updated the Arabic translation, by Benahmed Abdelkrim.
