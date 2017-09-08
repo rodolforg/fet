@@ -183,6 +183,7 @@ void BuildingsForm::moveBuildingUp()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 
+	visibleBuildingsList.swap(i, i-1);
 	buildingsListWidget->setCurrentRow(i-1);
 }
 
@@ -206,6 +207,7 @@ void BuildingsForm::moveBuildingDown()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 
+	visibleBuildingsList.swap(i, i+1);
 	buildingsListWidget->setCurrentRow(i+1);
 }
 

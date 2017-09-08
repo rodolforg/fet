@@ -7098,12 +7098,12 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform_template.ui" line="63"/>
         <source>Choose the component number of the subactivities to be constrained.</source>
-        <translation>اختر عدد عناصر الأنشطة الفرعية لتكون مقيدة.</translation>
+        <translation>اختر رقم العنصر للأنشطة الفرعية ليكون مقيدا.</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform_template.ui" line="22"/>
         <source>Component number (split index)</source>
-        <translation>عدد العناصر (التقسيم)</translation>
+        <translation>رقم العنصر (مؤشر التقسيم)</translation>
     </message>
 </context>
 <context>
@@ -7205,12 +7205,12 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform_template.ui" line="26"/>
         <source>Choose the component number of the subactivities to be constrained.</source>
-        <translation>اختر عدد عناصر الأنشطة الفرعية لتكون مقيدة.</translation>
+        <translation>اختر رقم العنصر للأنشطة الفرعية ليكون مقيدا.</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform_template.ui" line="38"/>
         <source>Component number (split index)</source>
-        <translation>عدد العناصر (التقسيم)</translation>
+        <translation>رقم العنصر (مؤشر التقسيم)</translation>
     </message>
 </context>
 <context>
@@ -11560,15 +11560,15 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <name>BuildingsForm</name>
     <message>
         <location filename="../src/interface/buildingsform.cpp" line="125"/>
-        <location filename="../src/interface/buildingsform.cpp" line="240"/>
-        <location filename="../src/interface/buildingsform.cpp" line="265"/>
+        <location filename="../src/interface/buildingsform.cpp" line="254"/>
+        <location filename="../src/interface/buildingsform.cpp" line="279"/>
         <source>FET information</source>
         <translation>FET معلومات</translation>
     </message>
     <message>
         <location filename="../src/interface/buildingsform.cpp" line="125"/>
-        <location filename="../src/interface/buildingsform.cpp" line="240"/>
-        <location filename="../src/interface/buildingsform.cpp" line="265"/>
+        <location filename="../src/interface/buildingsform.cpp" line="254"/>
+        <location filename="../src/interface/buildingsform.cpp" line="279"/>
         <source>Invalid selected building</source>
         <translation>لم يتم اختيار بناية</translation>
     </message>
@@ -11593,17 +11593,17 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <translation>لا</translation>
     </message>
     <message>
-        <location filename="../src/interface/buildingsform.cpp" line="274"/>
+        <location filename="../src/interface/buildingsform.cpp" line="288"/>
         <source>Building comments</source>
         <translation>تعليقات البناية</translation>
     </message>
     <message>
-        <location filename="../src/interface/buildingsform.cpp" line="276"/>
+        <location filename="../src/interface/buildingsform.cpp" line="290"/>
         <source>OK</source>
         <translation>موافق</translation>
     </message>
     <message>
-        <location filename="../src/interface/buildingsform.cpp" line="278"/>
+        <location filename="../src/interface/buildingsform.cpp" line="292"/>
         <source>Cancel</source>
         <translation>الغاء</translation>
     </message>
@@ -22901,7 +22901,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11447"/>
         <source>Component number=%1</source>
-        <translation>رقم الحصة=%1</translation>
+        <translation>رقم العنصر=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11450"/>
@@ -23193,7 +23193,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10138"/>
         <source>component number=%1</source>
-        <translation>رقم الحصة=%1</translation>
+        <translation>رقم العنصر=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10155"/>
@@ -23214,7 +23214,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10165"/>
         <source>Component number=%1</source>
-        <translation>رقم الحصة=%1</translation>
+        <translation>رقم العنصر=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10169"/>
@@ -36377,16 +36377,6 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="302"/>
-        <source>Thanks to</source>
-        <translation>شكر</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="872"/>
-        <source>Close</source>
-        <translation>غلق</translation>
-    </message>
-    <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -36396,13 +36386,18 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.32.4 (August 2017).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.33.1 (August 2017).&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET homepage: &lt;/span&gt;&lt;a href=&quot;http://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;http://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="302"/>
+        <source>Thanks to</source>
+        <translation>شكر</translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="323"/>
@@ -36929,8 +36924,15 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;utismetis - suggestion.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Matthias Söllner - suggestion.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;chernous - bug report.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="874"/>
+        <source>Close</source>
+        <translation>غلق</translation>
     </message>
 </context>
 <context>
@@ -44682,7 +44684,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintsubactivitiespreferredstartingtimesform_template.ui" line="22"/>
         <source>Component number (split index)</source>
-        <translation>عدد العناصر (التقسيم)</translation>
+        <translation>رقم العنصر (مؤشر التقسيم)</translation>
     </message>
 </context>
 <context>
@@ -44772,7 +44774,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintsubactivitiespreferredtimeslotsform_template.ui" line="22"/>
         <source>Component number (split index)</source>
-        <translation>عدد العناصر (التقسيم)</translation>
+        <translation>رقم العنصر (مؤشر التقسيم)</translation>
     </message>
 </context>
 <context>
@@ -48263,15 +48265,15 @@ Note: teacher not available and break are not counted as gaps.</source>
     <name>RoomsForm</name>
     <message>
         <location filename="../src/interface/roomsform.cpp" line="125"/>
-        <location filename="../src/interface/roomsform.cpp" line="240"/>
-        <location filename="../src/interface/roomsform.cpp" line="265"/>
+        <location filename="../src/interface/roomsform.cpp" line="254"/>
+        <location filename="../src/interface/roomsform.cpp" line="279"/>
         <source>FET information</source>
         <translation>FET معلومات</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform.cpp" line="125"/>
-        <location filename="../src/interface/roomsform.cpp" line="240"/>
-        <location filename="../src/interface/roomsform.cpp" line="265"/>
+        <location filename="../src/interface/roomsform.cpp" line="254"/>
+        <location filename="../src/interface/roomsform.cpp" line="279"/>
         <source>Invalid selected room</source>
         <translation>لم يتم اختيار قاعة</translation>
     </message>
@@ -48296,17 +48298,17 @@ Note: teacher not available and break are not counted as gaps.</source>
         <translation>لا</translation>
     </message>
     <message>
-        <location filename="../src/interface/roomsform.cpp" line="274"/>
+        <location filename="../src/interface/roomsform.cpp" line="288"/>
         <source>Room comments</source>
         <translation>تعليقات القاعة</translation>
     </message>
     <message>
-        <location filename="../src/interface/roomsform.cpp" line="276"/>
+        <location filename="../src/interface/roomsform.cpp" line="290"/>
         <source>OK</source>
         <translation>موافق</translation>
     </message>
     <message>
-        <location filename="../src/interface/roomsform.cpp" line="278"/>
+        <location filename="../src/interface/roomsform.cpp" line="292"/>
         <source>Cancel</source>
         <translation>الغاء</translation>
     </message>
@@ -53144,7 +53146,7 @@ N1 ( C1(G1,G2), C2(G1, G3) )
         <location filename="../src/engine/timetableexport.cpp" line="10324"/>
         <location filename="../src/engine/timetableexport.cpp" line="10518"/>
         <source>Hours per week</source>
-        <translation type="unfinished"></translation>
+        <translation>حصص في الأسبوع</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10060"/>
@@ -53255,13 +53257,13 @@ N1 ( C1(G1,G2), C2(G1, G3) )
         <location filename="../src/engine/timetableexport.cpp" line="10353"/>
         <location filename="../src/engine/timetableexport.cpp" line="10373"/>
         <source>Min hours per week</source>
-        <translation type="unfinished"></translation>
+        <translation>أدنى حصص في الأسبوع</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10354"/>
         <location filename="../src/engine/timetableexport.cpp" line="10374"/>
         <source>Max hours per week</source>
-        <translation type="unfinished"></translation>
+        <translation>أقصى حصص في الأسبوع</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10355"/>

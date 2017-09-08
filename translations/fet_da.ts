@@ -11513,15 +11513,15 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <name>BuildingsForm</name>
     <message>
         <location filename="../src/interface/buildingsform.cpp" line="125"/>
-        <location filename="../src/interface/buildingsform.cpp" line="240"/>
-        <location filename="../src/interface/buildingsform.cpp" line="265"/>
+        <location filename="../src/interface/buildingsform.cpp" line="254"/>
+        <location filename="../src/interface/buildingsform.cpp" line="279"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
         <location filename="../src/interface/buildingsform.cpp" line="125"/>
-        <location filename="../src/interface/buildingsform.cpp" line="240"/>
-        <location filename="../src/interface/buildingsform.cpp" line="265"/>
+        <location filename="../src/interface/buildingsform.cpp" line="254"/>
+        <location filename="../src/interface/buildingsform.cpp" line="279"/>
         <source>Invalid selected building</source>
         <translation>Ugyldigt valgt bygning</translation>
     </message>
@@ -11546,17 +11546,17 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <translation>Nej</translation>
     </message>
     <message>
-        <location filename="../src/interface/buildingsform.cpp" line="274"/>
+        <location filename="../src/interface/buildingsform.cpp" line="288"/>
         <source>Building comments</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/buildingsform.cpp" line="276"/>
+        <location filename="../src/interface/buildingsform.cpp" line="290"/>
         <source>OK</source>
         <translation type="unfinished">OK</translation>
     </message>
     <message>
-        <location filename="../src/interface/buildingsform.cpp" line="278"/>
+        <location filename="../src/interface/buildingsform.cpp" line="292"/>
         <source>Cancel</source>
         <translation type="unfinished">Annuler</translation>
     </message>
@@ -35960,7 +35960,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.32.4 (August 2017).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.33.1 (August 2017).&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
@@ -36669,11 +36669,13 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;utismetis - suggestion.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Matthias Söllner - suggestion.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;chernous - bug report.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="872"/>
+        <location filename="../src/interface/helpaboutform_template.ui" line="874"/>
         <source>Close</source>
         <translation>Luk</translation>
     </message>
@@ -47653,15 +47655,15 @@ Note: teacher not available and break are not counted as gaps.</source>
     <name>RoomsForm</name>
     <message>
         <location filename="../src/interface/roomsform.cpp" line="125"/>
-        <location filename="../src/interface/roomsform.cpp" line="240"/>
-        <location filename="../src/interface/roomsform.cpp" line="265"/>
+        <location filename="../src/interface/roomsform.cpp" line="254"/>
+        <location filename="../src/interface/roomsform.cpp" line="279"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform.cpp" line="125"/>
-        <location filename="../src/interface/roomsform.cpp" line="240"/>
-        <location filename="../src/interface/roomsform.cpp" line="265"/>
+        <location filename="../src/interface/roomsform.cpp" line="254"/>
+        <location filename="../src/interface/roomsform.cpp" line="279"/>
         <source>Invalid selected room</source>
         <translation>Ugyldigt valgt lokale</translation>
     </message>
@@ -47686,17 +47688,17 @@ Note: teacher not available and break are not counted as gaps.</source>
         <translation>Nej</translation>
     </message>
     <message>
-        <location filename="../src/interface/roomsform.cpp" line="274"/>
+        <location filename="../src/interface/roomsform.cpp" line="288"/>
         <source>Room comments</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/roomsform.cpp" line="276"/>
+        <location filename="../src/interface/roomsform.cpp" line="290"/>
         <source>OK</source>
         <translation type="unfinished">OK</translation>
     </message>
     <message>
-        <location filename="../src/interface/roomsform.cpp" line="278"/>
+        <location filename="../src/interface/roomsform.cpp" line="292"/>
         <source>Cancel</source>
         <translation type="unfinished">Annuler</translation>
     </message>
