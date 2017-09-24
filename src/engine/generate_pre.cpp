@@ -983,9 +983,7 @@ bool processTimeSpaceConstraints(QWidget* parent, QTextStream* initialOrderStrea
 		}
 	}
 
-	bool ok=true;
-	
-	return ok;
+	return true;
 }
 
 //must be after allowed times, after n hours per subgroup and after max days per week for subgroups
