@@ -28,6 +28,7 @@ SOURCES += \
 	engine/constraints/mingapsbetweenactivities.cpp \
 	engine/constraints/teachersmincontinuousgapininterval.cpp \
 	engine/constraints/studentsmincontinuousgapininterval.cpp \
+    engine/constraints/paradoxmindaysvsconsecutive.cpp \
 	\
 	interface/fet.cpp \
 	interface/helpaboutform.cpp \
@@ -519,6 +520,7 @@ HEADERS += \
 	engine/constraints/mingapsbetweenactivities.h \
 	engine/constraints/teachersmincontinuousgapininterval.h \
 	engine/constraints/studentsmincontinuousgapininterval.h \
+    engine/constraints/paradoxmindaysvsconsecutive.h \
 	\
 	interface/fet.h \
 	interface/helpaboutform.h \

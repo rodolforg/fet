@@ -49,6 +49,8 @@ extern Timetable gt;
 #include <QMessageBox>
 #endif
 
+#include "constraints/paradoxmindaysvsconsecutive.h"
+
 //extern QApplication* pqapplication;
 
 
@@ -981,6 +983,12 @@ bool processTimeSpaceConstraints(QWidget* parent, QTextStream* initialOrderStrea
 				return false;
 #endif
 		}
+	}
+
+	ParadoxMinDaysVsConsecutive paradox2consecutive;
+	if (!paradox2consecutive.prepare(gt.rules)) {
+		reportSkippableErrors(parent, paradox2consecutive.getErrors());
+		return false;
 	}
 
 	return true;
