@@ -26,6 +26,7 @@ SOURCES += \
 	engine/constraints/teachersmincontinuousgapininterval.cpp \
 	engine/constraints/studentsmincontinuousgapininterval.cpp \
     engine/constraints/paradoxmindaysvsconsecutive.cpp \
+    engine/constraints/paradoxmindaysvstwogrouped.cpp \
 	\
 	interface/fet.cpp \
 	interface/longtextmessagebox.cpp
@@ -59,6 +60,7 @@ HEADERS += \
 	engine/constraints/teachersmincontinuousgapininterval.h \
 	engine/constraints/studentsmincontinuousgapininterval.h \
     engine/constraints/paradoxmindaysvsconsecutive.h \
+    engine/constraints/paradoxmindaysvstwogrouped.h \
 	\
 	interface/fet.h \
 	interface/longtextmessagebox.h

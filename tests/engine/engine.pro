@@ -5,4 +5,5 @@ SUBDIRS += \
     GeneratePre \
     timeconstraints/ConstraintTeachersMinContinuousGapInInterval \
     timeconstraints/ConstraintStudentsMinContinuousGapInInterval \
-    ParadoxMinDaysVsConsecutive
+    ParadoxMinDaysVsConsecutive \
+    ParadoxMinDaysVsTwoGrouped
