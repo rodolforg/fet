@@ -601,7 +601,7 @@ public:
 		int _durations[],
 		bool _active[],
 		bool _computeNTotalStudents,
-		int nTotalStudents);
+		int _nTotalStudents);
 
 	void modifySubactivity(
 		int _id,
@@ -613,7 +613,7 @@ public:
 		int _duration,
 		bool _active,
 		bool _computeNTotalStudents,
-		int nTotalStudents);
+		int _nTotalStudents);
 
 	/**
 	Adds a new room (already allocated).
