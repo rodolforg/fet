@@ -1993,3 +1993,7 @@ Versions 5.33.0 - 5.33.v
 - Version 5.33.1
 	- Bug fix: when moving rooms/buildings up/down in their corresponding dialogs, the description on the right was not updated correspondingly.
 	Reported by chernous.
+- Version 5.33.2
+	- Updated to Qt 5.9.2.
+	- Added a new complete Spanish translation, by Emiliano Llano Díaz.
+	- Code cleanup.
