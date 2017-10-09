@@ -7,7 +7,7 @@ File fet.cpp - this is where the program FET starts
                              -------------------
     begin                : 2002
     copyright            : (C) 2002 by Lalescu Liviu
-    email                : Please see http://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
+    email                : Please see https://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
  ***************************************************************************/
 
 /***************************************************************************
@@ -1079,12 +1079,12 @@ int main(int argc, char **argv)
 			out<<"FET version "<<qPrintable(FET_VERSION)<<endl;
 			out<<"Free timetabling software, licensed under the GNU Affero General Public License version 3 or later"<<endl;
 			out<<"Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr"<<endl;
-			out<<"Homepage: http://lalescu.ro/liviu/fet/"<<endl;
+			out<<"Homepage: https://lalescu.ro/liviu/fet/"<<endl;
 			//out<<" (Using Qt version "<<qPrintable(qv)<<")"<<endl;
 			cout<<"FET version "<<qPrintable(FET_VERSION)<<endl;
 			cout<<"Free timetabling software, licensed under the GNU Affero General Public License version 3 or later"<<endl;
 			cout<<"Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr"<<endl;
-			cout<<"Homepage: http://lalescu.ro/liviu/fet/"<<endl;
+			cout<<"Homepage: https://lalescu.ro/liviu/fet/"<<endl;
 			//cout<<" (Using Qt version "<<qPrintable(qv)<<")"<<endl;
 
 			if(unrecognizedOptions.count()>0){

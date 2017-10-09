@@ -7,7 +7,7 @@ File longtextmessagebox_auxiliary.h
                              -------------------
     begin                : 6 October 2015
     copyright            : (C) 2015 by Lalescu Liviu
-    email                : Please see http://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
+    email                : Please see https://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
  ***************************************************************************/
 
 /***************************************************************************

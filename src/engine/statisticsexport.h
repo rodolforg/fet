@@ -6,7 +6,7 @@ File statisticsexport.h
                                 FET
                           -------------------
    copyright            : (C) by Lalescu Liviu
-    email                : Please see http://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
+    email                : Please see https://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
  ***************************************************************************
                       statisticsexport.h  -  description
                              -------------------

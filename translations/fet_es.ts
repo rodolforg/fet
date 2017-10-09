@@ -1208,12 +1208,12 @@
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="704"/>
         <source>1. If you add &apos;force consecutive if same day&apos;, then couple extra activities in pairs to obtain a number of activities equal to the number of days per week. Example: 7 activities with duration 1 in a 5 days week, then transform into 5 activities with durations: 2,2,1,1,1 and add a single container activity with these 5 components (possibly raising the weight of added constraint min days between activities up to 100%)</source>
-        <translation>1. Si agrega &apos;forzar consecutivos si mismo día&apos; y luego acopla actividades en parejas para obtener un número de actividades iguales a la cantidad de días semanales. Ejemplo: 7 actividades con duración 1 en una 1 semana de 5 días transformándolas en 5 actividades con duración; 2,2,1,1,1 y luego añade una actividad contenedora con los 5 componentes (posiblemente elevando el peso de la restricción del mínimo de los días hasta el 100%)</translation>
+        <translation>1. Si agrega &apos;forzar consecutiva si en el mismo día&apos; y luego acopla actividades en parejas para obtener un número de actividades iguales a la cantidad de días semanales. Ejemplo: 7 actividades con duración 1 en una 1 semana de 5 días transformándolas en 5 actividades con duración; 2,2,1,1,1 y luego añade una actividad contenedora con los 5 componentes (posiblemente elevando el peso de la restricción del mínimo de los días hasta el 100%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="708"/>
         <source>2. If you don&apos;t add &apos;force consecutive if same day&apos;, then add a larger activity split into a number of activities equal with the number of days per week and the remaining components into other larger split activity. For example, suppose you need to add 7 activities with duration 1 in a 5 days week. Add 2 larger container activities, first one split into 5 activities with duration 1 and second one split into 2 activities with duration 1 (possibly raising the weight of added constraints min days between activities for each of the 2 containers up to 100%)</source>
-        <translation>2. Si no añade &apos;forzar consecutivo si mismo día&apos;, entonces añada una actividad mayor dividida en una serie de actividades con los días semanales y los componentes restantes en otra actividad divisoria. Por ejemplo, supongamos que es necesario agregar 7 actividades con duración de 1 en una semana de 5 días. Agregue 2 actividades contenedoras, dividiendo la 1era en 5 actividades con duración 1 y la segunda en 2 actividades con duración 1 (posiblemente elevando el peso de la restricción del mínimo de los días para cada uno de los contenedores hasta el 100%)</translation>
+        <translation>2. Si no añade &apos;forzar consecutiva si en el mismo día&apos;, entonces añada una actividad mayor dividida en una serie de actividades con los días semanales y los componentes restantes en otra actividad divisoria. Por ejemplo, supongamos que es necesario agregar 7 actividades con duración de 1 en una semana de 5 días. Agregue 2 actividades contenedoras, dividiendo la 1era en 5 actividades con duración 1 y la segunda en 2 actividades con duración 1 (posiblemente elevando el peso de la restricción del mínimo de los días para cada uno de los contenedores hasta el 100%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="771"/>
@@ -1233,7 +1233,7 @@
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="888"/>
         <source>Current algorithm cannot schedule 3 activities in the same day if consecutive is checked, so you will get no solution in such extreme cases (for instance, if you have 3 lessons and a teacher which works only 1 day per week, and select &apos;force consecutive if same day&apos;, you will get an imposssible timetable. But these are extremely unlikely cases).</source>
-        <translation>El algoritmo actual no puede programar 3 actividades en el mismo día si selecciona &apos;consecutivos&apos;, así que no hay solución en tales casos extremos (por ejemplo, si hay 3 clases y un profesor trabaja sólo 1 día a la semana y selecciona &apos;forzar consecutivo si mismo día&apos;, solo conseguirá un calendario irrealizable. Pero estos son casos muy poco probables).</translation>
+        <translation>El algoritmo actual no puede programar 3 actividades en el mismo día si selecciona &apos;consecutivos&apos;, así que no hay solución en tales casos extremos (por ejemplo, si hay 3 clases y un profesor trabaja sólo 1 día a la semana y selecciona &apos;forzar consecutiva si en el mismo día&apos;, solo conseguirá un calendario irrealizable. Pero estos son casos muy poco probables).</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="803"/>
@@ -1295,7 +1295,7 @@ Puede elegir la distancia mínima entre días entre cada par de actividades. Ten
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="846"/>
         <source>If you have for instance an activity with 2 lessons per week and you want to spread them to at least 2 days distance, you can add a constraint min days with min days = 2 and weight 95% (or higher). If you want also to ensure that activities will be separated by at least one day, you can use this feature: add a constraint min days with minimum days 2 and weight 95% or lower, and after that you&apos;ll get the possibility to add another constraint with min 1 days and weight 95% or higher. It works if you first select in the dialog the min days &gt;= 2 and click Add activities. Or you can add manually the constraints (difficult this way). Important: it is best practice to consider both constraints to have 95% weight. The combination assures that the resultant is 99.75% weight</source>
-        <translation>Si por ejemplo tienes una actividad con 2 clases semanales y quiere repartirlos a al menos 2 días de distancia, puede añadir una restricción de mín. días con mín. días = 2 y peso 95% (o superior). Si quiere también garantizar que las actividades serán separadas por lo menos un día, puede utilizar esta función: agregar una restricción mín. días con días mínimos 2 y peso 95% o menos, y después de eso tendrá la posibilidad de añadir otra restricción con mín. 1 días y peso de 95% o superior. Esto funciona si primero selecciona en el diálogo el mín. días &gt;= 2 y luego hace clic en Agregar Actividades. O puede agregar manualmente las restricciones (difícil de esta forma). Importante: la mejor forma es tener en cuenta que ambas restricciones tienen un peso del 95%. La combinación asegura que el resultado tenga un peso del 99.75%</translation>
+        <translation>Si por ejemplo tiene una actividad con 2 clases semanales y quiere distribuirlas a al menos 2 días de distancia, puede añadir una restricción de mín. días con mín. días = 2 y peso 95% (o superior). Si quiere también garantizar que las actividades serán separadas por lo menos un día, puede utilizar esta función: agregar una restricción mín. días con días mínimos 2 y peso 95% o menos, y después de eso tendrá la posibilidad de añadir otra restricción con mín. 1 días y peso de 95% o superior. Esto funciona si primero selecciona en el diálogo el mín. días &gt;= 2 y luego hace clic en Agregar Actividades. O puede agregar manualmente las restricciones (difícil de esta forma). Importante: la mejor forma es tener en cuenta que ambas restricciones tienen un peso del 95%. La combinación asegura que el resultado tenga un peso del 99.75%</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="859"/>
@@ -1305,17 +1305,17 @@ Puede elegir la distancia mínima entre días entre cada par de actividades. Ten
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="865"/>
         <source>If you choose a value greater or equal with 1 for min days, a time constraint min days between activities will be added automatically (you can see this constraint in the time constraints list or you can see this constraint in the detailed description of the activity). You can select a weight percentage for this constraint. If you select 100%, the constraint must be respected all the time. If you select 95%, there is a small chance that the timetable will not respect this constraint. Recommended values are 95.0%-100.0% (maybe you could try with 95%, then 99.75%, or even 100.0%, but the generation time might be larger). Generally, 99.75% might be a good value. Note: if you put a value less than 100% and the constraint is too tough, FET is able to find that this constraint is impossible and will break it. 99.75% might be better than 95% but possibly slower. The percentage is subjective (if you put 95% you may get 6 soft conflicts and if you put 99.75% you may get 3 soft conflicts). Starting with FET-5.3.6, it is possible to change this value for all constraints in one click, in constraint min days between activities dialog.</source>
-        <translation>Si elige un valor mayor o igual a 1 mín. días, una restricción de tiempo m҉n días entre las actividades se añadirá automáticamente (se puede ver esta restricción en la lista de restricciones de tiempo o puede verla en la descripción detallada de la actividad). Puede seleccionar un porcentaje de peso para esta restricción. Si selecciona 100%, la restricción debe respetarse todo el tiempo. Si selecciona 95%, existe una pequeña posibilidad de que el calendario no respetará esta restricción. Los valores recomendados son 95.0% - 100.0% (tal vez podría intentar con un 95%, luego 99.75% o incluso 100.0%, pero el tiempo de generación podría ser muy elevado). En general, 99.75% podría ser un buen valor. Nota: Si usa un valor inferior a 100% y la restricción es demasiado dura, FET es capaz de encontrar que esta restricción es imposible y lo romperá. 99,75% podría ser mejor que el 95% pero posiblemente más lento. El porcentaje es subjetivo (si usa 95% obtendrá 6 conflictos leves y usando 99.75% obtendrá 3 conflictos leves). A partir de FET 5.3.6, es posible cambiar este valor para todas las restricciones en un solo clic, en días de restricción mínima entre diálogo actividades.</translation>
+        <translation>Si elige un valor mayor o igual a 1 mín. días, una restricción de tiempo mín. de días entre las actividades se añadirá automáticamente (se puede ver esta restricción en la lista de restricciones de tiempo o puede verla en la descripción detallada de la actividad). Puede seleccionar un porcentaje de peso para esta restricción. Si selecciona 100%, la restricción debe respetarse todo el tiempo. Si selecciona 95%, existe una pequeña posibilidad de que el calendario no respetará esta restricción. Los valores recomendados son 95.0% - 100.0% (tal vez podría intentar con un 95%, luego 99.75% o incluso 100.0%, pero el tiempo de generación podría ser muy elevado). En general, 99.75% podría ser un buen valor. Nota: Si usa un valor inferior a 100% y la restricción es demasiado dura, FET es capaz de encontrar que esta restricción es imposible y lo romperá. 99,75% podría ser mejor que el 95% pero posiblemente más lento. El porcentaje es subjetivo (si usa 95% obtendrá 6 conflictos leves y usando 99.75% obtendrá 3 conflictos leves). A partir de FET 5.3.6, es posible cambiar este valor para todas las restricciones en un solo clic, en días de restricción mínima entre diálogo actividades.</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="879"/>
         <source>There is another option, if the activities are in the same day, force consecutive activities. You can select this option for instance if you have 5 lessons of math in 5 days, and there is no timetable which respects fully the days separation. Then, you can set the weight percent of the min days constraint to 95% and add consecutive if same day. You will have as results say 3 lessons with duration 1 and a 2 hours lesson in another day. Please be careful: if the activities are on the same day, even if the constraint has 0% weight, then the activities are forced to be consecutive.</source>
-        <translation>Hay otra opción, si las actividades son en el mismo día, forzar actividades consecutivas. Por ejemplo, si tiene 5 clases de matemáticas en 5 días y no existe ningún calendario que respete plenamente la separación de días, puede seleccionar esta opción. A continuación, puede establecer un peso de la restricción de días mín. de 95% y agregar Consecutivo si mismo día. Tendrá como resultados, digamos, 3 clases con duración de 1 y una clase de 2 horas en otro día. Por favor tenga cuidado: si las actividades están en el mismo día, aunque la restricción tenga un peso de 0%, entonces se obliga a que las actividades sean consecutivas.</translation>
+        <translation>Hay otra opción, si las actividades son en el mismo día, forzar actividades consecutivas. Por ejemplo, si tiene 5 clases de matemáticas en 5 días y no existe ningún calendario que respete plenamente la separación de días, puede seleccionar esta opción. A continuación, puede establecer un peso de la restricción de días mín. de 95% y agregar Consecutiva si en el mismo día. Tendrá como resultados, digamos, 3 clases con duración de 1 y una clase de 2 horas en otro día. Por favor tenga cuidado: si las actividades están en el mismo día, aunque la restricción tenga un peso de 0%, entonces se obliga a que las actividades sean consecutivas.</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="894"/>
         <source>Note: You cannot add &apos;consecutive if same day&apos; with min days=0. If you want this, you have to add min days at least 1 (and any weight percentage).</source>
-        <translation>Nota: No puede agregar &apos;consecutivo si mismo día&apos; con mín. días = 0. Si quiere hacer esto, tiene que añadir un mínimo de días de por lo menos 1 (y cualquier porcentaje de peso).</translation>
+        <translation>Nota: No puede agregar &apos;consecutiva si en el mismo día&apos; con mín. días = 0. Si quiere hacer esto, tiene que añadir un mínimo de días de por lo menos 1 (y cualquier porcentaje de peso).</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="899"/>
@@ -2018,7 +2018,7 @@ Puede elegir la distancia mínima entre días entre cada par de actividades. Ten
     <message>
         <location filename="../src/interface/addconstraintactivitiesnotoverlappingform.cpp" line="187"/>
         <source>Empty list of not overlapping activities</source>
-        <translation>Lista de actividades no solapadas vacía</translation>
+        <translation>Lista de actividades no traslapadas vacía</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesnotoverlappingform.cpp" line="192"/>
@@ -2378,7 +2378,7 @@ Puede elegir la distancia mínima entre días entre cada par de actividades. Ten
 
 La mejor solución sería usar restricciones de pausa.
 
-Si necesita un peso menor de 100%, entonces puede usar esta restricción, pero tenga cuidado en que su horario no sea imposible de generar (si el profesor/alumno están restringidos en huecos o primeras horas y se deja una franja horaria no permitida entre dos una no permitida a primera hora del día y más franjaa horarias después, este posible hueco puede ser contabilizado en el horario de profesores y alumnos)</translation>
+Si necesita un peso menor de 100%, entonces puede usar esta restricción, pero tenga cuidado en que su horario no sea imposible de generar (si el profesor/alumno están restringidos en huecos o primeras horas y se deja una franja horaria no permitida entre dos una no permitida a primera hora del día y más franjas horarias después, este posible hueco puede contabilizarse en el horario de profesores y alumnos)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="306"/>
@@ -2398,7 +2398,7 @@ Si necesita un peso menor de 100%, entonces puede usar esta restricción, pero t
 
 La mejor solución sería usar restricciones de tiempo no disponible para el profesor.
 
-Si necesita un peso menor de 100%, entonces puede usar esta restricción, pero tenga cuidado en que su horario no se vuelva imposible a generar (si el profesor está restringido entre huecos y deja una franja horarias no disponible entre 2 este hueco puede contabilizarse en el horario del profesor))</translation>
+Si necesita un peso menor de 100%, entonces puede usar esta restricción, pero tenga cuidado en que su horario no se vuelva imposible a generar (si el profesor está restringido entre huecos y deja una franja horaria no disponible entre 2 este hueco puede contabilizarse en el horario del profesor))</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="331"/>
@@ -2426,7 +2426,7 @@ Si necesita un peso menor de 100%, entonces puede usar esta restricción (tenga 
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="391"/>
         <source>Constraint NOT added - duplicate?</source>
-        <translation type="unfinished"></translation>
+        <translation>Restricción no añadida - ¿duplicada?</translation>
     </message>
 </context>
 <context>
@@ -2459,7 +2459,7 @@ Si necesita un peso menor de 100%, entonces puede usar esta restricción (tenga 
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform_template.ui" line="101"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform_template.ui" line="122"/>
@@ -2527,9 +2527,9 @@ Si necesita un peso menor de 100%, entonces puede usar esta restricción (tenga 
  If you need weight under 100%, then you can use this constraint, but be careful not to obtain an impossible timetable (if your teachers/students are constrained on gaps or early gaps and if you leave a not allowed slot between 2 allowed slots or a not allowed slot early in the day and more allowed slots after it, this possible gap might be counted in teachers&apos; and students&apos; timetable)</source>
         <translation>Ha especificado todas las actividades. Puede ser un pequeño problema: Si especifica una franja horaria no permitida entre dos que lo están, ésta no permitida será contada como un hueco en el horario de profesores y alumnos.
 
- La mejor solución sería usar restricciones de pausa.
+La mejor solución sería usar restricciones de pausa.
 
- Si necesita una peso menor de 100%, entonces puede usar esta restricción, pero ponga atención en no obtener horarios imposibles (si el profesor/alumno están restringidos en huecos o primeras horas y se deja una franja horaria no permitida entre dos o una no permitido a primera hora del día y más franjas horarias después, este posible hueco puede ser contabilizado en el horiario de profesores y alumnos)</translation>
+Si necesita un peso menor de 100%, entonces puede usar esta restricción, pero ponga atención en no obtener horarios imposibles (si el profesor/alumno están restringidos en huecos o primeras horas y se deja una franja horaria no permitida entre dos o una no permitido a primera hora del día y más franjas horarias después, este posible hueco puede contabilizarse en el horario de profesores y alumnos)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="306"/>
@@ -2549,7 +2549,7 @@ Si necesita un peso menor de 100%, entonces puede usar esta restricción (tenga 
 
  La mejor solución sería usar restricciones de tiempo no disponible para el profesor.
 
-Si necesita una peso menor de 100%, entonces puede usar esta restricción, (pero ponga atención en no obtener horarios imposibles.)</translation>
+Si necesita un peso menor de 100%, entonces puede usar esta restricción, (pero ponga atención en no obtener horarios imposibles.)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="331"/>
@@ -2562,7 +2562,7 @@ Si necesita una peso menor de 100%, entonces puede usar esta restricción, (pero
 
  La mejor solución sería usar restricciones de tiempo no disponible para el alumnado.
 
- Si necesita una peso menor de 100%, entonces puede usar esta restricción; ponga atención en no obtener horarios imposibles (si el profesor/alumno están restringidos en huecos o primeras horas y se deja una franja horaria no permitida entre dos o una no permitido a primera hora del día y más franjas horarias después, este posible hueco puede ser contabilizado en el horiario de profesores y alumnos.)</translation>
+ Si necesita un peso menor de 100%, entonces puede usar esta restricción; ponga atención en no obtener horarios imposibles (si el profesor/alumno están restringidos en huecos o primeras horas y se deja una franja horaria no permitida entre dos o una no permitido a primera hora del día y más franjas horarias después, este posible hueco puede contabilizarse en el horario de profesores y alumnos.)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="373"/>
@@ -2577,7 +2577,7 @@ Si necesita una peso menor de 100%, entonces puede usar esta restricción, (pero
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="391"/>
         <source>Constraint NOT added - duplicate?</source>
-        <translation>Restricción No añadida - duplicada?</translation>
+        <translation>Restricción No añadida - ¿duplicada?</translation>
     </message>
 </context>
 <context>
@@ -2585,7 +2585,7 @@ Si necesita una peso menor de 100%, entonces puede usar esta restricción, (pero
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform_template.ui" line="101"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform_template.ui" line="136"/>
@@ -2824,7 +2824,7 @@ Si necesita una peso menor de 100%, entonces puede usar esta restricción, (pero
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartingdayform_template.ui" line="153"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartingdayform_template.ui" line="20"/>
@@ -2921,7 +2921,7 @@ Si necesita una peso menor de 100%, entonces puede usar esta restricción, (pero
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartinghourform_template.ui" line="153"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartinghourform_template.ui" line="20"/>
@@ -3095,7 +3095,7 @@ Si necesita una peso menor de 100%, entonces puede usar esta restricción, (pero
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartingtimeform_template.ui" line="169"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartingtimeform_template.ui" line="20"/>
@@ -3261,7 +3261,7 @@ Si necesita una peso menor de 100%, entonces puede usar esta restricción, (pero
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredroomform_template.ui" line="131"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredroomform_template.ui" line="20"/>
@@ -3378,7 +3378,7 @@ Si necesita una peso menor de 100%, entonces puede usar esta restricción, (pero
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredroomsform_template.ui" line="159"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredroomsform_template.ui" line="20"/>
@@ -3480,7 +3480,7 @@ Si necesita una peso menor de 100%, entonces puede usar esta restricción, (pero
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform_template.ui" line="138"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform_template.ui" line="218"/>
@@ -3572,7 +3572,7 @@ Si necesita una peso menor de 100%, entonces puede usar esta restricción, (pero
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform.cpp" line="394"/>
         <source>Constraint NOT added - duplicate?</source>
-        <translation>Restricción No añadida - duplicada?</translation>
+        <translation>Restricción No añadida - ¿duplicada?</translation>
     </message>
 </context>
 <context>
@@ -3585,7 +3585,7 @@ Si necesita una peso menor de 100%, entonces puede usar esta restricción, (pero
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform_template.ui" line="125"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform_template.ui" line="20"/>
@@ -3685,7 +3685,7 @@ Si necesita una peso menor de 100%, entonces puede usar esta restricción, (pero
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform.cpp" line="393"/>
         <source>Constraint NOT added - duplicate?</source>
-        <translation>Restricción No añadida - duplicada?</translation>
+        <translation>Restricción No añadida - ¿duplicada?</translation>
     </message>
 </context>
 <context>
@@ -3698,7 +3698,7 @@ Si necesita una peso menor de 100%, entonces puede usar esta restricción, (pero
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform_template.ui" line="125"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform_template.ui" line="20"/>
@@ -3807,7 +3807,7 @@ Si necesita una peso menor de 100%, entonces puede usar esta restricción, (pero
     <message>
         <location filename="../src/interface/addconstraintactivitytagpreferredroomform_template.ui" line="89"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitytagpreferredroomform_template.ui" line="117"/>
@@ -3884,7 +3884,7 @@ Si necesita una peso menor de 100%, entonces puede usar esta restricción, (pero
     <message>
         <location filename="../src/interface/addconstraintactivitytagpreferredroomsform_template.ui" line="94"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitytagpreferredroomsform_template.ui" line="115"/>
@@ -4096,7 +4096,7 @@ Si necesita una peso menor de 100%, entonces puede usar esta restricción, (pero
     <message>
         <location filename="../src/interface/addconstraintbreaktimesform_template.ui" line="26"/>
         <source>The important thing is that a break does not induce gaps for teachers or students</source>
-        <translation>Lo importante es que el tiempo de descanso no introduzca huecos para el profesorado o el alumnado</translation>
+        <translation>Lo importante es que el tiempo de descanso no introduzca huecos del profesorado o el alumnado</translation>
     </message>
 </context>
 <context>
@@ -4163,7 +4163,7 @@ Si necesita una peso menor de 100%, entonces puede usar esta restricción, (pero
     <message>
         <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform_template.ui" line="176"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform_template.ui" line="153"/>
@@ -4252,12 +4252,12 @@ Si necesita una peso menor de 100%, entonces puede usar esta restricción, (pero
     <message>
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="210"/>
         <source>1. If you add &apos;force consecutive if same day&apos;, then couple extra activities in pairs to obtain a number of activities equal to the number of days per week. Example: 7 activities with duration 1 in a 5 days week, then transform into 5 activities with durations: 2,2,1,1,1 and add a single container activity with these 5 components (possibly raising the weight of added constraint min days between activities up to 100%)</source>
-        <translation>1. Si añade &apos;forzar consecutivos si en el mismo día&apos;, entonces acople actividades extras en pares para obtener un número de actividades iguales a la cantidad de días semanales. Ejemplo: 7 actividades con duración 1 en una semana de 5 días, luego transformarla en 5 actividades con duraciones: 2,2,1,1,1 y agregar una única actividad contenedora con estos 5 componentes (posiblemente elevando el peso de la restricción adicional mín. días entre las actividades hasta el 100%)</translation>
+        <translation>1. Si añade &apos;forzar consecutiva si en el mismo día&apos;, entonces acople actividades extras en pares para obtener un número de actividades iguales a la cantidad de días semanales. Ejemplo: 7 actividades con duración 1 en una semana de 5 días, luego transformarla en 5 actividades con duraciones: 2,2,1,1,1 y agregar una única actividad contenedora con estos 5 componentes (posiblemente elevando el peso de la restricción adicional mín. días entre las actividades hasta el 100%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="216"/>
         <source>2. If you don&apos;t add &apos;force consecutive if same day&apos;, then add a larger activity split into a number of activities equal with the number of days per week and the remaining components into other larger split activity. For example, suppose you need to add 7 activities with duration 1 in a 5 days week. Add 2 larger container activities, first one split into 5 activities with duration 1 and second one split into 2 activities with duration 1 (possibly raising the weight of added constraints min days between activities for each of the 2 containers up to 100%)</source>
-        <translation>2. Si no añade &apos;forzar consecutivos si en el mismo día&apos;, entonces añada una actividad dividida en una serie de actividades iguales a los días semanales y los componentes restantes en otra actividad divisoria mayor. Por ejemplo, supongamos que es necesario agregar 7 actividades con duración 1 en una semana de 5 días. Añada 2 actividades divisorias contenedoras, la primera dividida en 5 actividades con duración de 1 y la segunda en 2 actividades con duración de 1 (posiblemente elevando el peso de la restricción adicional mín. días entre las actividades para cada uno de los 2 contenedores hasta el 100%)</translation>
+        <translation>2. Si no añade &apos;forzar consecutiva si en el mismo día&apos;, entonces añada una actividad dividida en una serie de actividades iguales a los días semanales y los componentes restantes en otra actividad divisoria mayor. Por ejemplo, supongamos que es necesario agregar 7 actividades con duración 1 en una semana de 5 días. Añada 2 actividades divisorias contenedoras, la primera dividida en 5 actividades con duración de 1 y la segunda en 2 actividades con duración de 1 (posiblemente elevando el peso de la restricción adicional mín. días entre las actividades para cada uno de los 2 contenedores hasta el 100%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="224"/>
@@ -4352,7 +4352,7 @@ forzar a que sean consecutivas</translation>
     <message>
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform_template.ui" line="217"/>
         <source>Weight percentage (recommended 95.0% - 100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform_template.ui" line="238"/>
@@ -4429,7 +4429,7 @@ forzar a que sean consecutivas</translation>
     <message>
         <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform_template.ui" line="176"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform_template.ui" line="156"/>
@@ -4612,7 +4612,7 @@ recomendado: 0.0%-100.0%)</translation>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Peso (%)
-(recomendada: 0.0%-100.0%)</translation>
+(recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsactivitytagmaxhourscontinuouslyform_template.ui" line="118"/>
@@ -4671,7 +4671,7 @@ recomendado: 0.0%-100.0%)</translation>
         <location filename="../src/interface/addconstraintstudentsactivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Add students activity tag max hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Añadir límite horas diarias por código de actividad al alumnado</translation>
+        <translation>Añadir máximo de horas diarias por código de actividad al alumnado</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsactivitytagmaxhoursdailyform_template.ui" line="28"/>
@@ -4683,7 +4683,7 @@ recomendado: 0.0%-100.0%)</translation>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Peso (%)
-(recomendada: 0.0%-100.0%)</translation>
+(recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsactivitytagmaxhoursdailyform_template.ui" line="118"/>
@@ -5218,7 +5218,7 @@ Nota: los grupos no disponibles y las pausas no se cuentan como huecos.</transla
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Peso (%)
-(recomendada: 0.0%-100.0%)</translation>
+(recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxhourscontinuouslyform_template.ui" line="73"/>
@@ -5274,7 +5274,7 @@ Nota: los grupos no disponibles y las pausas no se cuentan como huecos.</transla
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Peso (%)
-(recomendada: 0.0%-100.0%)</translation>
+(recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxhoursdailyform_template.ui" line="73"/>
@@ -5383,7 +5383,7 @@ Nota: los grupos no disponibles y las pausas no se cuentan como huecos.</transla
         <location filename="../src/interface/addconstraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="14"/>
         <source>Add students min gaps between building changes</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Añadir mín. huecos entre cambio de edificio al alumnado</translation>
+        <translation>Añadir mín. huecos entre cambios de edificio al alumnado</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="28"/>
@@ -5645,7 +5645,7 @@ Nota: los grupos no disponibles y las pausas no se cuentan como huecos.</transla
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Peso (%)
-(recomendada: 0.0%-100.0%)</translation>
+(recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="156"/>
@@ -5710,7 +5710,7 @@ Nota: los grupos no disponibles y las pausas no se cuentan como huecos.</transla
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Add students set activity tag max hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Añadir límite de horas por código de actividad por grupo</translation>
+        <translation>Añadir máximo de horas por código de actividad por grupo</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="28"/>
@@ -5727,7 +5727,7 @@ Nota: los grupos no disponibles y las pausas no se cuentan como huecos.</transla
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Peso (%)
-(recomendada: 0.0%-100.0%)</translation>
+(recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="156"/>
@@ -5875,7 +5875,7 @@ Nota: los grupos no disponibles y las pausas no se cuentan como huecos (huecos t
     <message>
         <location filename="../src/interface/addconstraintstudentssethomeroomform_template.ui" line="87"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssethomeroomform_template.ui" line="108"/>
@@ -5940,7 +5940,7 @@ Nota: los grupos no disponibles y las pausas no se cuentan como huecos (huecos t
     <message>
         <location filename="../src/interface/addconstraintstudentssethomeroomsform_template.ui" line="94"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssethomeroomsform_template.ui" line="115"/>
@@ -6483,7 +6483,7 @@ Nota: los grupos no disponibles y pausas no se cuentan como huecos.</translation
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Peso (%)
-(recomendada: 0.0%-100.0%)</translation>
+(recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxhourscontinuouslyform_template.ui" line="148"/>
@@ -6550,7 +6550,7 @@ Nota: los grupos no disponibles y pausas no se cuentan como huecos.</translation
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Peso (%)
-(recomendada: 0.0%-100.0%)</translation>
+(recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxhoursdailyform_template.ui" line="148"/>
@@ -6701,7 +6701,7 @@ Nota: los grupos no disponibles y pausas no se cuentan como huecos.</translation
     <message>
         <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform_template.ui" line="103"/>
         <source>Min gaps between building changes</source>
-        <translation>Mín. de huecos entre cambio de edificio</translation>
+        <translation>Mín. de huecos entre cambios de edificio</translation>
     </message>
 </context>
 <context>
@@ -7065,7 +7065,7 @@ Nota: los grupos no disponibles y pausas no se cuentan como huecos.</translation
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform_template.ui" line="81"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform_template.ui" line="105"/>
@@ -7171,7 +7171,7 @@ Nota: los grupos no disponibles y pausas no se cuentan como huecos.</translation
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform_template.ui" line="140"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform_template.ui" line="75"/>
@@ -7274,7 +7274,7 @@ Nota: los grupos no disponibles y pausas no se cuentan como huecos.</translation
     <message>
         <location filename="../src/interface/addconstraintsubjectactivitytagpreferredroomform_template.ui" line="111"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%)(recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubjectactivitytagpreferredroomform_template.ui" line="137"/>
@@ -7362,7 +7362,7 @@ Nota: los grupos no disponibles y pausas no se cuentan como huecos.</translation
     <message>
         <location filename="../src/interface/addconstraintsubjectactivitytagpreferredroomsform_template.ui" line="107"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubjectactivitytagpreferredroomsform_template.ui" line="128"/>
@@ -7459,7 +7459,7 @@ Nota: los grupos no disponibles y pausas no se cuentan como huecos.</translation
     <message>
         <location filename="../src/interface/addconstraintsubjectpreferredroomform_template.ui" line="89"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
 </context>
 <context>
@@ -7541,7 +7541,7 @@ Nota: los grupos no disponibles y pausas no se cuentan como huecos.</translation
     <message>
         <location filename="../src/interface/addconstraintsubjectpreferredroomsform_template.ui" line="94"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
 </context>
 <context>
@@ -7613,7 +7613,7 @@ Nota: los grupos no disponibles y pausas no se cuentan como huecos.</translation
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Peso (%)
-(recomendada: 0.0%-100.0%)</translation>
+(recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhourscontinuouslyform_template.ui" line="180"/>
@@ -7673,7 +7673,7 @@ Nota: los grupos no disponibles y pausas no se cuentan como huecos.</translation
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Add teacher activity tag max hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Añadir límite horas diarias por código de actividad por profesor</translation>
+        <translation>Añadir máximo de horas diarias por código de actividad por profesor</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhoursdailyform_template.ui" line="28"/>
@@ -7690,7 +7690,7 @@ Nota: los grupos no disponibles y pausas no se cuentan como huecos.</translation
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Peso (%)
-(recomendada: 0.0%-100.0%)</translation>
+(recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhoursdailyform_template.ui" line="150"/>
@@ -7755,7 +7755,7 @@ Nota: los grupos no disponibles y pausas no se cuentan como huecos.</translation
     <message>
         <location filename="../src/interface/addconstraintteacherhomeroomform_template.ui" line="54"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherhomeroomform_template.ui" line="91"/>
@@ -7831,7 +7831,7 @@ Nota: los grupos no disponibles y pausas no se cuentan como huecos.</translation
     <message>
         <location filename="../src/interface/addconstraintteacherhomeroomsform_template.ui" line="94"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherhomeroomsform_template.ui" line="115"/>
@@ -8231,7 +8231,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperdayform_template.ui" line="91"/>
         <source>Max gaps per day</source>
-        <translation>Máximo huecos diario</translation>
+        <translation>Máximo huecos diarios</translation>
     </message>
 </context>
 <context>
@@ -8356,7 +8356,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Peso (%)
-(recomendada: 0.0%-100.0%)</translation>
+(recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxhourscontinuouslyform_template.ui" line="148"/>
@@ -8423,7 +8423,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Peso (%)
-(recomendada: 0.0%-100.0%)</translation>
+(recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxhoursdailyform_template.ui" line="148"/>
@@ -8652,7 +8652,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
     <message>
         <location filename="../src/interface/addconstraintteachermingapsbetweenbuildingchangesform_template.ui" line="103"/>
         <source>Min gaps between building changes</source>
-        <translation>Mínimo huecos entre cambio de edificio</translation>
+        <translation>Mínimo de huecos entre cambios de edificio</translation>
     </message>
 </context>
 <context>
@@ -8908,7 +8908,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
     <message>
         <location filename="../src/interface/addconstraintteachernotavailabletimesform_template.ui" line="26"/>
         <source>Note: this constraint does not induce gaps for teachers. If a teacher has lessons before and after a not available period, there will be no gaps counted</source>
-        <translation>Nota: esta restricción no incluye huecos para el profesorado. Si un profesor tiene clases antes y después de un periodo no disponible, no se contarán los huecos</translation>
+        <translation>Nota: esta restricción no incluye huecos del profesorado. Si un profesor tiene clases antes y después de un periodo no disponible, no se contarán los huecos</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachernotavailabletimesform_template.ui" line="138"/>
@@ -8973,7 +8973,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhourscontinuouslyform_template.ui" line="121"/>
         <source>Max hours continuously</source>
-        <translation>Máx. horas continuas</translation>
+        <translation>Máx. de horas continuas</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhourscontinuouslyform_template.ui" line="151"/>
@@ -8990,7 +8990,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Peso (%)
-(recomendada: 0.0%-100.0%)</translation>
+(recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhourscontinuouslyform_template.ui" line="158"/>
@@ -9039,7 +9039,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Add teachers activity tag max hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Añadir límite horas diarias por código de actividad por profesor</translation>
+        <translation>Añadir máximo de horas diarias por código de actividad por profesor</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhoursdailyform_template.ui" line="28"/>
@@ -9051,12 +9051,12 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Peso (%)
-(recomendada: 0.0%-100.0%)</translation>
+(recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhoursdailyform_template.ui" line="121"/>
         <source>Max hours daily</source>
-        <translation>Máx. horas diarias</translation>
+        <translation>Máx. de horas diarias</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhoursdailyform_template.ui" line="151"/>
@@ -9502,7 +9502,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Peso (%)
-(recomendada: 0.0%-100.0%)</translation>
+(recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxhourscontinuouslyform_template.ui" line="73"/>
@@ -9613,7 +9613,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
         <location filename="../src/interface/addconstraintteachersmaxspanperdayform_template.ui" line="14"/>
         <source>Add teachers max span per day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Añadir duración máxima diaria para el profesorado</translation>
+        <translation>Añadir duración máxima diaria del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxspanperdayform_template.ui" line="22"/>
@@ -9747,7 +9747,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
     <message>
         <location filename="../src/interface/addconstraintteachersmingapsbetweenbuildingchangesform_template.ui" line="67"/>
         <source>Min gaps between building changes</source>
-        <translation>Mínimo de huecos entre cambio de edificio</translation>
+        <translation>Mínimo de huecos entre cambios de edificio</translation>
     </message>
 </context>
 <context>
@@ -9775,7 +9775,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
     <message>
         <location filename="../src/interface/addconstraintteachersminhoursdailyform.cpp" line="76"/>
         <source>Allow empty days check box must be checked. If you need to not allow empty days for the teachers, please use the constraint teachers min days per week</source>
-        <translation>Debe elegir la opción Permitir días libres. Si no quiere permitir días libres para el profesorado, use las restricciones de días mínimos semanales para el profesorado</translation>
+        <translation>Debe elegir la opción Permitir días libres. Si no quiere permitir días libres del profesorado, use las restricciones de días mínimos semanales del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminhoursdailyform.cpp" line="88"/>
@@ -9790,7 +9790,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
     <message>
         <location filename="../src/interface/addconstraintteachersminhoursdailyform.cpp" line="102"/>
         <source>This check box must remain checked. If you really need to not allow empty days for the teachers, please use constraint teachers min days per week</source>
-        <translation>Esta opción debe permanecer activa. Si no requiere permitir días libres para el profesorado, use una restricción de días mínimos semanales para el profesorado</translation>
+        <translation>Esta opción debe permanecer activa. Si no requiere permitir días libres del profesorado, use una restricción de días mínimos semanales del profesorado</translation>
     </message>
 </context>
 <context>
@@ -10001,7 +10001,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Peso (%)
-(recomendada: 0.0%-100.0%)</translation>
+(recomendado: 0.0%-100.0%)</translation>
     </message>
 </context>
 <context>
@@ -10055,7 +10055,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Peso (%)
-(recomendada: 0.0%-100.0%)</translation>
+(recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="14"/>
@@ -10161,7 +10161,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Peso (%)
-(recomendada: 0.0%-100.0%)</translation>
+(recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesgroupedform_template.ui" line="14"/>
@@ -10261,7 +10261,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Peso (%)
-(recomendada: 0.0%-100.0%)</translation>
+(recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="14"/>
@@ -10449,7 +10449,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
     <message>
         <location filename="../src/interface/addroomform.cpp" line="91"/>
         <source>Please note that each room can hold a single activity at a specified period. If you have a very large room, which can hold more activities at one time, please add more rooms, representing this larger room</source>
-        <translation>Tenga en cuenta que cada aula puede contener una actividad individual para un período especificado. Si tiene un aula muy grande, que puede contener más actividades al mismo tiempo, añadale otras aulas que la representen</translation>
+        <translation>Tenga en cuenta que cada aula puede contener una actividad individual para un período especificado. Si tiene un aula muy grande, que puede contener más actividades al mismo tiempo, añádale otras aulas que la representen</translation>
     </message>
     <message>
         <location filename="../src/interface/addroomform.cpp" line="95"/>
@@ -11726,7 +11726,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/changemindaysselectivelyform_template.ui" line="26"/>
         <source>Please input old values (filters) and the new values. All old values (weight, min days and consecutive if same day) of corresponding constraints will be changed to the new ones. New weight is recommended at least 95.0 (or -1)</source>
-        <translation>Introduzca los valores anteriores (filtros) y los nuevos. Todos los valores anteriores (peso, días mín. y consecutivos si en el mismo día) de las restricciones correspondientes se cambiarán por las nuevas. El nuevo peso recomendado es de al menos un 95.0% (ó -1)</translation>
+        <translation>Introduzca los valores anteriores (filtros) y los nuevos. Todos los valores anteriores (peso, días mín. y consecutiva si en el mismo día) de las restricciones correspondientes se cambiarán por las nuevas. El nuevo peso recomendado es de al menos un 95.0% (ó -1)</translation>
     </message>
     <message>
         <location filename="../src/interface/changemindaysselectivelyform_template.ui" line="49"/>
@@ -11753,7 +11753,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/changemindaysselectivelyform_template.ui" line="86"/>
         <location filename="../src/interface/changemindaysselectivelyform_template.ui" line="153"/>
         <source>Consecutive if same day</source>
-        <translation>Consecutivo si es el mismo día</translation>
+        <translation>Consecutiva si es el mismo día</translation>
     </message>
     <message>
         <location filename="../src/interface/changemindaysselectivelyform_template.ui" line="96"/>
@@ -11983,7 +11983,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="15762"/>
         <source>Activities with %1, %2, %3, %4, must end students&apos; day</source>
         <comment>%1...%4 are conditions for the activities</comment>
-        <translation>Las actividades con  %1, %2, %3, %4 deben finalizar el día de los alumnos</translation>
+        <translation>Las actividades con %1, %2, %3, %4 deben finalizar el día de los alumnos</translation>
     </message>
 </context>
 <context>
@@ -12237,7 +12237,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="313"/>
         <source>Note that if you have activities with two or more teachers, you might need to use a trick for that: add one (or more) dummy activities, no teachers/no students, same starting time with the initial activity.</source>
-        <translation>Tenga en cuenta que si tiene actividades con dos o más profesores, puede que tenga que usar un truco para eso: agregue una (o más) actividades ficticias, sin profesores/alumnos, la misma hora de inicio que la actividad inicial.</translation>
+        <translation>Tenga en cuenta que, si tiene actividades con dos o más profesores, puede necesitar usar un truco para eso: agregue una (o más) actividades ficticias, sin profesores/alumnos, la misma hora de inicio que la actividad inicial.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="316"/>
@@ -12342,7 +12342,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="1543"/>
         <source>Activities not overlapping</source>
-        <translation>Actividades no solapadas</translation>
+        <translation>Actividades no trasladas</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="1544"/>
@@ -12732,28 +12732,28 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="17500"/>
         <source>Constraint activities occupy max time slots from selection is wrong because it refers to removed day. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>La restricción de las actividades ocupan un máximo de franjas horarias para la selección es incorrecta porque se refiere a un día eliminado. Corrija la información y vuelva a intentarlo. Corregir significa editar la restricción y actualizar la información. La restricción es:
+        <translation>La restricción las actividades ocupan un máximo de franjas horarias para la selección es incorrecta porque se refiere a un día eliminado. Corrija la información y vuelva a intentarlo. Corregir significa editar la restricción y actualizar la información. La restricción es:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17507"/>
         <source>Constraint activities occupy max time slots from selection is wrong because a preferred hour is too late (after the last acceptable slot). Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>La restricción de las actividades ocupan un máximo de franjas horarias para la selección es incorrecta porque un horario preferido es demasiado tarde (después de la última franja horaria). Corrija la información y vuelva a intentarlo. Corregir significa editar la restricción y actualizar la información. La restricción es:
+        <translation>La restricción las actividades ocupan un máximo de franjas horarias para la selección es incorrecta porque un horario preferido es demasiado tarde (después de la última franja horaria). Corrija la información y vuelva a intentarlo. Corregir significa editar la restricción y actualizar la información. La restricción es:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17514"/>
         <source>Constraint activities occupy max time slots from selection is wrong because it refers to removed hour. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>La restricción de las actividades ocupan un máximo de franjas horarias para la selección es incorrecta porque se refiere a una hora inexistente. Corrija la información y vuelva a intentarlo. Corregir significa editar la restricción y actualizar la información. La restricción es:
+        <translation>La restricción las actividades ocupan un máximo de franjas horarias para la selección es incorrecta porque se refiere a una hora inexistente. Corrija la información y vuelva a intentarlo. Corregir significa editar la restricción y actualizar la información. La restricción es:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17521"/>
         <source>Constraint activities occupy max time slots from selection is wrong because hour or day is not specified for a slot (-1). Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>La restricción de las actividades ocupan un máximo de franjas horarias para la selección es incorrecta porque una hora o día no se especifica para una franja horaria. Corrija la información y vuelva a intentarlo. Corregir significa editar la restricción y actualizar la información. La restricción es:
+        <translation>La restricción las actividades ocupan un máximo de franjas horarias para la selección es incorrecta porque una hora o día no se especifica para una franja horaria. Corrija la información y vuelva a intentarlo. Corregir significa editar la restricción y actualizar la información. La restricción es:
 %1</translation>
     </message>
     <message>
@@ -14514,7 +14514,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="827"/>
         <location filename="../src/engine/spaceconstraint.cpp" line="844"/>
         <source>Activity preferred room</source>
-        <translation>Aula preferida para actividad</translation>
+        <translation>Aula preferida para la actividad</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="828"/>
@@ -15419,7 +15419,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9205"/>
         <source>has a set of preferred time slots:</source>
-        <translation>tiene un conjunto de arias franjas horarias preferidas:</translation>
+        <translation>tiene un conjunto de varias franjas horarias preferidas:</translation>
     </message>
 </context>
 <context>
@@ -16374,7 +16374,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintbreaktimesform_template.ui" line="26"/>
         <source>Note: An activity with duration greater than 1 cannot be split over a break. Also, the activities constrained by min days between activities constraints with &apos;consecutive if same day&apos; = true cannot spread over a break.</source>
-        <translation>Nota: Una actividad con duración mayor que 1 no se puede dividir a cada lado de una pausa. Además, las actividades restringidas por días mínimos entre actividades con &apos;consecutivas si mismo día&apos; = verdadero no se pueden distribuir durante una pausa.</translation>
+        <translation>Nota: Una actividad con duración mayor que 1 no se puede dividir a cada lado de una pausa. Además, las actividades restringidas por días mínimos entre actividades con &apos;consecutiva si en el mismo día&apos; = verdadero no se pueden distribuir durante una pausa.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintbreaktimesform_template.ui" line="61"/>
@@ -16713,7 +16713,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="1911"/>
         <source>Consecutive if same day=%1</source>
-        <translation>Consecutivo si el mismo día=%1</translation>
+        <translation>Consecutiva si en el mismo día=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="1914"/>
@@ -17045,7 +17045,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintmingapsbetweenactivitiesform.cpp" line="296"/>
         <source>Please make sure that the selected activities are not forced to be consecutive by some other constraint &apos;min days between activities&apos; (with &apos;consecutive if same day&apos; true), by a constraint &apos;two activities consecutive&apos;, or by a constraint &apos;two activities grouped&apos; (also, if you have a constraint &apos;three activities grouped&apos; related to the selected activities, make sure that the constraints do not contradict).</source>
-        <translation>Por favor, asegúrese de que las actividades seleccionadas no se vean forzadas a ser consecutivas por alguna otra restricción del tipo &apos;días mínimos entre actividades&apos; (con &apos;consecutivo si mismo día&apos; verdadero), &apos;dos actividades consecutivas&apos; o &apos;dos actividades agrupados &apos;(también, si tiene una del tipo &apos;tres actividades agrupadas&apos; relacionadas con las actividades seleccionadas, asegúrese de que las restricciones no se contradigan).</translation>
+        <translation>Por favor, asegúrese de que las actividades seleccionadas no se vean forzadas a ser consecutivas por alguna otra restricción del tipo &apos;días mínimos entre actividades&apos; (con &apos;consecutiva si en el mismo día&apos; verdadero), &apos;dos actividades consecutivas&apos; o &apos;dos actividades agrupados &apos;(también, si tiene una del tipo &apos;tres actividades agrupadas&apos; relacionadas con las actividades seleccionadas, asegúrese de que las restricciones no se contradigan).</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmingapsbetweenactivitiesform.cpp" line="303"/>
@@ -17810,7 +17810,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15465"/>
         <source>Students interval max days per week</source>
-        <translation>Intervalo de días máximos semanales para el alumnado</translation>
+        <translation>Intervalo máximo de días semanales para el alumnado</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15466"/>
@@ -18219,7 +18219,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxbuildingchangesperweekform_template.ui" line="14"/>
         <source>Constraints students max building changes per week</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Resticciones de máximo de cambios semanales de edificio del alumnado</translation>
+        <translation>Restricciones de máximo de cambios semanales de edificio del alumnado</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxbuildingchangesperweekform_template.ui" line="28"/>
@@ -18845,7 +18845,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6810"/>
         <source>Students max hours daily</source>
-        <translation>Máx. horas diarias para el alumnado</translation>
+        <translation>Máx. de horas diarias para el alumnado</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6811"/>
@@ -19117,7 +19117,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5238"/>
         <source>Students min gaps between building changes</source>
-        <translation>Mínimo huecos entre cambio de edificio para el alumnado</translation>
+        <translation>Mínimo de huecos entre cambios de edificio para el alumnado</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5240"/>
@@ -19139,7 +19139,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5253"/>
         <source>Students minimum gaps between building changes</source>
-        <translation>Mínimo de huecos entre cambio de edificio para el alumnado</translation>
+        <translation>Mínimo de huecos entre cambios de edificio para el alumnado</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5255"/>
@@ -19149,7 +19149,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5257"/>
         <source>Minimum gaps between building changes=%1</source>
-        <translation>Mínimo de huecos entre cambio de edificios=%1</translation>
+        <translation>Mínimo de huecos entre cambios de edificios=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5260"/>
@@ -19214,7 +19214,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="14"/>
         <source>Constraints students min gaps between building changes</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restricciones de mínimo de huecos entre cambio de edificio para el alumnado</translation>
+        <translation>Restricciones de mínimo de huecos entre cambios de edificio para el alumnado</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="28"/>
@@ -19448,7 +19448,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="20164"/>
         <source>All students must respect the minimum resting hours (between days)</source>
-        <translation>Todos el alumnado debe respetar las horas de descanso mínimas (entre días)</translation>
+        <translation>Todo el alumnado debe respetar las horas de descanso mínimas (entre días)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="20165"/>
@@ -19855,7 +19855,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Constraints students set activity tag max hours daily</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restricciones máximo de horas diarias por código de actividad para un grupo</translation>
+        <translation>Restricciones de máximo de horas diarias por código de actividad para un grupo</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="130"/>
@@ -22012,7 +22012,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="4908"/>
         <source>Constraint students set min gaps between building changes is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>La restricción de mín. de huecos entre cambio de edificio por grupo es errónea porque se refiere a un grupo inexistente. Corrija (eliminarla puede ser una solución). Por favor reporte un error potencial. La restricción es:
+        <translation>La restricción de mín. de huecos entre cambios de edificio por grupo es errónea porque se refiere a un grupo inexistente. Corrija (eliminarla puede ser una solución). Por favor reporte un error potencial. La restricción es:
 %1</translation>
     </message>
     <message>
@@ -22024,7 +22024,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4987"/>
         <source>Students set min gaps between building changes</source>
-        <translation>Mínimo de huecos entre cambio de edificio por grupo</translation>
+        <translation>Mínimo de huecos entre cambios de edificio por grupo</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4989"/>
@@ -22067,7 +22067,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5010"/>
         <source>Minimum gaps between building changes=%1</source>
-        <translation>Mínimo de huecos entre cambio de edificios=%1</translation>
+        <translation>Mínimo de huecos entre cambios de edificios=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5013"/>
@@ -22083,7 +22083,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5086"/>
         <source>Space constraint students set min gaps between building changes broken for students=%1 on day %2</source>
-        <translation>La restricción de mín. de huecos entre cambio de edificio por grupo invalida para los alumnos=%1 en el día %2</translation>
+        <translation>La restricción de mín. de huecos entre cambios de edificio por grupo invalida para los alumnos=%1 en el día %2</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5090"/>
@@ -22132,7 +22132,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetmingapsbetweenbuildingchangesform_template.ui" line="14"/>
         <source>Constraints students set min gaps between building changes</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restricciones de mínimo de huecos entre cambio de edificio para grupos</translation>
+        <translation>Restricciones de mínimo de huecos entre cambios de edificio para grupos</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmingapsbetweenbuildingchangesform_template.ui" line="28"/>
@@ -23280,7 +23280,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredtimeslotsform.cpp" line="193"/>
         <source>Note: if you have Maths with 4 and 5 splits and want to constrain 2 subactivities for those with 4 per week and 3 subactivities for those with 5 per week, you can add constraints only for Maths with components 3, 4 and 5 (nice trick)</source>
-        <translation>Nota: si tiene Mate dividida en 4 y 5 partes y quiere restringirla 2 subactividades para las que se imparten 4 veces a la semana y 3 subactiviades para las impartidas 5 veces a la semana, puede añadir restricciones solo para Matem con componentes 3, 4 y 5 (buen truco)</translation>
+        <translation>Nota: si tiene Mate dividida en 4 y 5 partes y quiere restringirla 2 subactividades para las que se imparten 4 veces a la semana y 3 subactividades para las impartidas 5 veces a la semana, puede añadir restricciones solo para Mate con componentes 3, 4 y 5 (buen truco)</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredtimeslotsform.cpp" line="196"/>
@@ -24155,7 +24155,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteacheractivitytagmaxhourscontinuouslyform_template.ui" line="26"/>
         <source>This constraint ensures that the specified teacher does not have more than max hours continuously of activities with the specified activity tag</source>
-        <translation>Esta restricción garantiza que el profesor especificado no tengan más de un máximo de horas continuas de actividades con el código de actividad especificado</translation>
+        <translation>Esta restricción garantiza que el profesor especificado no tenga más de un máximo de horas continuas de actividades con el código de actividad especificado</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteacheractivitytagmaxhourscontinuouslyform_template.ui" line="107"/>
@@ -24166,7 +24166,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteacheractivitytagmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Constraints teacher activity tag max hours continuously</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>Restricciones de máximo de horas continuas por código de actividad para el profesorado</translation>
+        <translation>Restricciones de máximo de horas continuas por código de actividad del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteacheractivitytagmaxhourscontinuouslyform_template.ui" line="100"/>
@@ -24874,7 +24874,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteacherintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Constraints teacher interval max days per week</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Restricciones intervalo máximo días semanales por profesor</translation>
+        <translation>Restricciones intervalo máximo de días semanales por profesor</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteacherintervalmaxdaysperweekform_template.ui" line="28"/>
@@ -25212,7 +25212,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachermaxbuildingchangesperweekform_template.ui" line="14"/>
         <source>Constraints teacher max building changes per week</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>Resticciones de máximo de cambios semanales de edificio por profesor</translation>
+        <translation>Restricciones de máximo de cambios semanales de edificio por profesor</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxbuildingchangesperweekform_template.ui" line="28"/>
@@ -25261,7 +25261,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4221"/>
         <source>Teacher max days per week</source>
-        <translation>Máximo días semanales por profesor</translation>
+        <translation>Máximo de días semanales por profesor</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4222"/>
@@ -25732,7 +25732,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3457"/>
         <source>Teacher max hours continuously</source>
-        <translation>Máx. horas continuas por profesor</translation>
+        <translation>Máx. de horas continuas por profesor</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3458"/>
@@ -25891,7 +25891,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3014"/>
         <source>Teacher max hours daily</source>
-        <translation>Máx. horas diarias por profesor</translation>
+        <translation>Máx. de horas diarias por profesor</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3015"/>
@@ -25944,7 +25944,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3086"/>
         <source>Time constraint teacher max %1 hours daily broken for teacher %2, on day %3, length=%4.</source>
-        <translation>La restricción de tiempo de %1 máx. de horas diarias por profesor es incorrecta para el profesor %2 en el día %3, long=%4.</translation>
+        <translation>La restricción de tiempo de %1 máx. de horas diarias por profesor es incorrecta para el profesor %2 en el día %3, long.=%4.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3095"/>
@@ -26369,7 +26369,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6474"/>
         <source>Teacher min gaps between building changes</source>
-        <translation>Mínimo huecos entre cambio de edificio para un profesor</translation>
+        <translation>Mínimo de huecos entre cambios de edificio para un profesor</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6476"/>
@@ -26397,7 +26397,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6491"/>
         <source>Teacher minimum gaps between building changes</source>
-        <translation>Màinimo de huecos entre cambios de edificio por profesor</translation>
+        <translation>Mínimo de huecos entre cambios de edificio por profesor</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6493"/>
@@ -26412,7 +26412,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6497"/>
         <source>Minimum gaps between building changes=%1</source>
-        <translation>Mínimo de huecos entre cambio de edificios=%1</translation>
+        <translation>Mínimo de huecos entre cambios de edificios=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6500"/>
@@ -26611,7 +26611,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14073"/>
         <source>Time constraint teacher min %1 hours daily broken for teacher %2, on day %3, length=%4.</source>
-        <translation>Restricción de tiempo de %1 horas diarias mín. por profesor incorrecta para el profesor %2, en el día %3, long=%4.</translation>
+        <translation>Restricción de tiempo de %1 horas diarias mín. por profesor incorrecta para el profesor %2, en el día %3, long.=%4.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14082"/>
@@ -27170,7 +27170,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachersactivitytagmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Constraints teachers activity tag max hours continuously</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>Restricciones de máximo de horas continuas por código de actividad para el profesorado</translation>
+        <translation>Restricciones de máximo de horas continuas por código de actividad del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersactivitytagmaxhourscontinuouslyform_template.ui" line="90"/>
@@ -27321,7 +27321,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachersactivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Constraints teachers activity tag max hours daily</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>Restricciones de máximo de horas diarias por código de actividad para el profesorado</translation>
+        <translation>Restricciones de máximo de horas diarias por código de actividad del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersactivitytagmaxhoursdailyform_template.ui" line="26"/>
@@ -27387,14 +27387,14 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="14848"/>
         <source>Constraint teachers interval max days per week is wrong because start hour &gt;= end hour. Please correct it. Constraint is:
 %1</source>
-        <translation>La restricción de intervalo máx. de días semanales para el profesorado es errónea porque la hora de inicio excede la hora final. Corrija. La restricción es:
+        <translation>La restricción de intervalo máx. de días semanales del profesorado es errónea porque la hora de inicio excede la hora final. Corrija. La restricción es:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14855"/>
         <source>Constraint teachers interval max days per week is wrong because start hour &lt; first hour of the day. Please correct it. Constraint is:
 %1</source>
-        <translation>La restricción de intervalo máximo de días semanales para el profesorado es incorrecta porque la hora de inicio es anterior a la primera hora. Por favor, corrija. La restricción es:
+        <translation>La restricción de intervalo máximo de días semanales del profesorado es incorrecta porque la hora de inicio es anterior a la primera hora. Por favor, corrija. La restricción es:
 %1</translation>
     </message>
     <message>
@@ -27413,7 +27413,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14908"/>
         <source>Teachers interval max days per week</source>
-        <translation>Intervalo máx. de días semanales para el profesorado</translation>
+        <translation>Intervalo máx. de días semanales del profesorado</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14909"/>
@@ -27963,7 +27963,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachersmaxdaysperweekform_template.ui" line="14"/>
         <source>Constraints teachers max days per week</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>Restricciones de máximo de días semanales para el profesorado</translation>
+        <translation>Restricciones de máximo de días semanales del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxdaysperweekform_template.ui" line="28"/>
@@ -28148,7 +28148,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4700"/>
         <source>Teachers max gaps per week</source>
-        <translation>Máx. de huecos semanales para el profesorado</translation>
+        <translation>Máx. de huecos semanales del profesorado</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4701"/>
@@ -28201,7 +28201,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4768"/>
         <source>Time constraint teachers max gaps per week broken for teacher: %1, conflicts factor increase=%2</source>
-        <translation>Restricción de tiempo de máx. de huecos semanales para el profesorado incorrecta para el profesor: %1, incremento de factor de conflictos=%2</translation>
+        <translation>Restricción de tiempo de máx. de huecos semanales del profesorado incorrecta para el profesor: %1, incremento de factor de conflictos=%2</translation>
     </message>
 </context>
 <context>
@@ -28245,7 +28245,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachersmaxgapsperweekform_template.ui" line="14"/>
         <source>Constraints teachers max gaps per week</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>Restricciones de máximo de huecos semanales para el profesorado</translation>
+        <translation>Restricciones de máximo de huecos semanales del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxgapsperweekform_template.ui" line="28"/>
@@ -28289,7 +28289,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3229"/>
         <source>Teachers max hours continuously</source>
-        <translation>Máx. horas continuas para el profesorado</translation>
+        <translation>Máx. de horas continuas del profesorado</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3230"/>
@@ -28338,7 +28338,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="3282"/>
         <location filename="../src/engine/timeconstraint.cpp" line="3309"/>
         <source>Time constraint teachers max %1 hours continuously broken for teacher %2, on day %3, length=%4.</source>
-        <translation>La restricción de tiempo de máx. %1 horas continuas para el profesorado es incorrecta para el profesor %2, en el día %3, duración=%4.</translation>
+        <translation>La restricción de tiempo de máx. %1 horas continuas del profesorado es incorrecta para el profesor %2, en el día %3, duración=%4.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3292"/>
@@ -28388,7 +28388,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachersmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Constraints teachers max hours continuously</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>Restricciones de máximo de horas continuas para el profesorado</translation>
+        <translation>Restricciones de máximo de horas continuas del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxhourscontinuouslyform_template.ui" line="83"/>
@@ -28432,7 +28432,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="2795"/>
         <source>Teachers max hours daily</source>
-        <translation>Máx. horas diaria para el profesorado</translation>
+        <translation>Máx. de horas diarias del profesorado</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="2796"/>
@@ -28480,7 +28480,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="2865"/>
         <source>Time constraint teachers max %1 hours daily broken for teacher %2, on day %3, length=%4.</source>
-        <translation>Restricción de tiempo de máx. de %1 horas diarias para los profesores incorrecta para el profesor %2 en el día %3, long=%4.</translation>
+        <translation>Restricción de tiempo de máx. de %1 horas diarias para los profesores incorrecta para el profesor %2 en el día %3, long.=%4.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="2875"/>
@@ -28529,7 +28529,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachersmaxhoursdailyform_template.ui" line="14"/>
         <source>Constraints teachers max hours daily</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>Restricciones de máximo de horas diarias para el profesorado</translation>
+        <translation>Restricciones de máximo de horas diarias del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxhoursdailyform_template.ui" line="83"/>
@@ -28573,7 +28573,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18882"/>
         <source>Teachers max span per day</source>
-        <translation>Duración máx. diaria para el profesorado</translation>
+        <translation>Duración máx. diaria del profesorado</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18883"/>
@@ -28660,7 +28660,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachersmaxspanperdayform_template.ui" line="14"/>
         <source>Constraints teachers max span per day</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>Restricciones de duración máx. diaria para el profesorado</translation>
+        <translation>Restricciones de duración máx. diaria del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxspanperdayform_template.ui" line="26"/>
@@ -28703,12 +28703,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14482"/>
         <source>Time constraint teachers min %1 days per week broken for teacher %2.</source>
-        <translation>La restricción de tiempo de mín. de %1 días semanales para el profesorado es incorrecta para el profesor %2.</translation>
+        <translation>La restricción de tiempo de mín. de %1 días semanales del profesorado es incorrecta para el profesor %2.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14422"/>
         <source>Teachers min days per week</source>
-        <translation>Mínimo de días semanales para el profesorado</translation>
+        <translation>Mínimo de días semanales del profesorado</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14419"/>
@@ -28806,7 +28806,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachersmindaysperweekform_template.ui" line="14"/>
         <source>Constraints teachers min days per week</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>Restricciones de mínimo de días semanales para el profesorado</translation>
+        <translation>Restricciones de mínimo de días semanales del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmindaysperweekform_template.ui" line="28"/>
@@ -28850,7 +28850,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6726"/>
         <source>Teachers min gaps between building changes</source>
-        <translation>Mínimo huecos entre cambios de edificio del profesorado</translation>
+        <translation>Mínimo de huecos entre cambios de edificio del profesorado</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6728"/>
@@ -28872,7 +28872,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6741"/>
         <source>Teachers minimum gaps between building changes</source>
-        <translation>Mnimo de huecos entre cambios de edificio del profesorado</translation>
+        <translation>Mínimo de huecos entre cambios de edificio del profesorado</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6743"/>
@@ -28882,7 +28882,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6745"/>
         <source>Minimum gaps between building changes=%1</source>
-        <translation>Mínimo de huecos entre cambio de edificios=%1</translation>
+        <translation>Mínimo de huecos entre cambios de edificios=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6748"/>
@@ -28985,17 +28985,17 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13768"/>
         <source>All teachers must respect the minimum number of hours daily</source>
-        <translation>Todo el profesorado debe respetar el mínimo de horas díarias</translation>
+        <translation>Todo el profesorado debe respetar el mínimo de horas diarias</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13756"/>
         <source>Teachers min hours daily</source>
-        <translation>Mínimo de horas diarias para el profesorado</translation>
+        <translation>Mínimo de horas diarias del profesorado</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13710"/>
         <source>Cannot generate a timetable with a constraint teachers min hours daily with allow empty days=false. Please modify it, so that it allows empty days. If you need a facility like that, please use constraint teachers min days per week</source>
-        <translation>No se puede generar un horario con una restricción de mín. de horas diarias para el profesorado que no permita días libres. Modifíquela para que permita días libres. Si necesita una limitación de ese tipo, use restricciones de mínimos días semanales para el profesorado</translation>
+        <translation>No se puede generar un horario con una restricción de mín. de horas diarias del profesorado que no permita días libres. Modifíquela para que permita días libres. Si necesita una limitación de ese tipo, use restricciones de mínimos días semanales del profesorado</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13713"/>
@@ -29065,7 +29065,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13831"/>
         <source>Time constraint teachers min %1 hours daily broken for teacher %2, on day %3, length=%4.</source>
-        <translation>La restricción de tiempo de mín. %1 horas diarias para el profesorado no se cumple para el profesor %2, en el día %3, long.=%4.</translation>
+        <translation>La restricción de tiempo de mín. %1 horas diarias del profesorado no se cumple para el profesor %2, en el día %3, long.=%4.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13840"/>
@@ -29114,7 +29114,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachersminhoursdailyform_template.ui" line="14"/>
         <source>Constraints teachers min hours daily</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>Restricciones de mínimo de horas diarias para el profesorado</translation>
+        <translation>Restricciones de mínimo de horas diarias del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersminhoursdailyform_template.ui" line="83"/>
@@ -29158,7 +29158,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19716"/>
         <source>Teachers min resting hours</source>
-        <translation>Horas de descanso mínimas para el profesorado</translation>
+        <translation>Horas de descanso mínimas del profesorado</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19717"/>
@@ -29256,7 +29256,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachersminrestinghoursform_template.ui" line="14"/>
         <source>Constraints teachers min resting hours</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>Restricciones de horas de descanso mínimas para el profesorado</translation>
+        <translation>Restricciones de horas de descanso mínimas del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersminrestinghoursform_template.ui" line="26"/>
@@ -30523,7 +30523,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/export.cpp" line="817"/>
         <location filename="../src/engine/export.cpp" line="823"/>
         <source>was skipped, because there exists another constraint of this type with same weight percentage and same number of min days and consecutive if same day true, referring to the same activities</source>
-        <translation>omitida, porque existe otra restricción de este tipo con el mismo porcentaje de peso y el mismo que el mín. de días y consecutivo si es el mismo día, con respecto a las mismas actividades</translation>
+        <translation>omitida, porque existe otra restricción de este tipo con el mismo porcentaje de peso y el mismo que el mín. de días y consecutiva si en el mismo día, con respecto a las mismas actividades</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="863"/>
@@ -30733,7 +30733,7 @@ Please read FAQ for detailed description on how divisions work. The key is that 
 Having a subgroup with too little working hours per week means that you inputted activities in a wrong manner, and also that some constraints like no gaps, early or min hours daily for this subgroup are interpreted in a wrong manner (if subgroup has only 2 activities, then these must be placed in the first hours, which is too hard and wrong).</source>
         <translation>Las estadísticas del alumnado pueden ser las más complicadas de interpretar. Si está usando divisiones de años, probablemente las estadísticas más relevantes son para cada subgrupo (así que puede activar la franja horaria de subgrupos). Puede ver más horas para los años o grupos, pero no serán significativas, ignórelas, porque cada curso o grupo contará también las actividades de los subgrupos que contiene.
 
-Cada subgrupo debería tener sus horas semanales cerca del promedio de los subgrupos y de las horas normales de rabajo de cada grupo. Si un subgrupo tiene un valor mucho más bajo, puede ser que haya usado incorrectamente los años/grupos/subgrupos para programar las actividades.
+Cada subgrupo debería tener sus horas semanales cerca del promedio de los subgrupos y de las horas normales de trabajo de cada grupo. Si un subgrupo tiene un valor mucho más bajo, puede ser que haya usado incorrectamente los años/grupos/subgrupos para programar las actividades.
 
 Lea las FAQ (Preguntas Más Frecuentes) para una descripción detallada de como dividir el trabajo. La clave es que los subgrupos son independientes y representan la unidad de alumnos más pequeña. Cada subgrupo recibe las actividades del curso padre, del grupo padre y de sí mismo.
 
@@ -31332,12 +31332,12 @@ Detenga la simulación antes de esto.</translation>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2023"/>
         <source>Enable activity tag max hours daily:</source>
-        <translation>Activar máx. horas diarias por código de actividad:</translation>
+        <translation>Activar máx. de horas diarias por código de actividad:</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2025"/>
         <source>This will enable the menu for 4 constraints: teacher(s) or students (set) activity tag max hours daily. These 4 constraints are good, but not perfect and may bring slow down of generation or impossible timetables if used unproperly. Select only if you know what you&apos;re doing.</source>
-        <translation>Esto activa el menú para 4 restricciones: máx. horas diarias por código de actividad por profesor(es) o (grupos) alumnos. Estas 4 restricciones son eficaces, pero no perfectas y pueden ralentizar la generación del horario o hacerlo imposible. Selecciónelo únicamente si sabe lo que está haciendo.</translation>
+        <translation>Esto activa el menú para 4 restricciones: máx. de horas diarias por código de actividad por profesor(es) o (grupos) alumnos. Estas 4 restricciones son eficaces, pero no perfectas y pueden ralentizar la generación del horario o hacerlo imposible. Selecciónelo únicamente si sabe lo que está haciendo.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2028"/>
@@ -31347,7 +31347,7 @@ Detenga la simulación antes de esto.</translation>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2030"/>
         <source>This will enable the menu for 2 constraints: students (set) max gaps per day. These 2 constraints are good, but not perfect and may bring slow down of generation or impossible timetables if used unproperly. Select only if you know what you&apos;re doing.</source>
-        <translation>Esto activará el menú de 2 restricciones: máx. horas diarias por código de actividad para (grupos) alumnado. Estas 2 restricciones son eficaces, pero no perfectas y pueden ralentizar la generación del horario o hacerlo imposible. Selecciónelo únicamente si sabe lo que está haciendo.</translation>
+        <translation>Esto activará el menú de 2 restricciones: máx. de horas diarias por código de actividad para (grupos) alumnado. Estas 2 restricciones son eficaces, pero no perfectas y pueden ralentizar la generación del horario o hacerlo imposible. Selecciónelo únicamente si sabe lo que está haciendo.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2034"/>
@@ -31407,18 +31407,6 @@ Detenga la simulación antes de esto.</translation>
         <translation>La característica debe utilizarse con precaución por usuarios experimentados.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3643"/>
-        <source>FET homepage: %1</source>
-        <comment>%1 is FET homepage, begins with http://...</comment>
-        <translation>FET página principal: %1</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3647"/>
-        <source>Forum: %1</source>
-        <comment>%1 is web page of FET forum, begins with http://...</comment>
-        <translation>Foro: %1</translation>
-    </message>
-    <message>
         <location filename="../src/interface/fetmainform.cpp" line="3649"/>
         <source>Additionally, you may find on the FET homepage other contact information.</source>
         <translation>Además, puede encontrar otra información de contacto en la página principal de FET.</translation>
@@ -31476,7 +31464,7 @@ Detenga la simulación antes de esto.</translation>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="739"/>
         <source>Sinhala</source>
-        <translation>Sinhala</translation>
+        <translation>Cinaglés</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="740"/>
@@ -31604,6 +31592,24 @@ Detenga la simulación antes de esto.</translation>
         <location filename="../src/interface/fetmainform.cpp" line="2082"/>
         <source>Show tool tips for constraints with tables: in the add/modify constraint dialogs which use tables, like the &apos;not available times&apos; ones, each table cell will have a tool tip to show the current day/hour (column/row name).</source>
         <translation>Mostrar textos de ayuda en las herramientas para las restricciones con tablas: en los diálogos de añadir/modificar restricciones que utilizan tablas, como las &apos;horas no disponibles&apos;, cada celda de la tabla tendrá un texto de ayuda para mostrar el día/hora actual (nombre de columna/renglón).</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform.cpp" line="3643"/>
+        <source>FET homepage: %1</source>
+        <comment>%1 is FET homepage, begins with https://...</comment>
+        <translation>FET página principal: %1</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform.cpp" line="3645"/>
+        <source>Documentation (online help contents): %1</source>
+        <comment>%1 is web page of FET Doc(umentation), which is the contents of the online help, it begins with https://...</comment>
+        <translation>Documentación (contenido de la ayuda en línea): %1</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/fetmainform.cpp" line="3647"/>
+        <source>Forum: %1</source>
+        <comment>%1 is web page of FET forum, begins with https://...</comment>
+        <translation>Foro: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4103"/>
@@ -31801,7 +31807,7 @@ Detenga la simulación antes de esto.</translation>
         <location filename="../src/interface/fetmainform.cpp" line="4200"/>
         <source>Confirm spread activities over the week will be %1</source>
         <comment>%1 is true or false</comment>
-        <translation>Confirmar reparto semanal de actividades: %1</translation>
+        <translation>Confirmar distribución semanal de actividades: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4200"/>
@@ -31823,7 +31829,7 @@ Detenga la simulación antes de esto.</translation>
         <location filename="../src/interface/fetmainform.cpp" line="4204"/>
         <source>Confirm save data and timetable as will be %1</source>
         <comment>%1 is true or false</comment>
-        <translation>Confirmar guardar datos y horario cómo: %1</translation>
+        <translation>Confirmar guardar datos y horario como: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4204"/>
@@ -32225,7 +32231,7 @@ Detenga la simulación antes de esto.</translation>
         <location filename="../src/interface/fetmainform.cpp" line="4109"/>
         <source>Show shortcut buttons in main window will be %1</source>
         <comment>%1 is true or false</comment>
-        <translation>Mostrar botones de atajo en la ventana principal: %1</translation>
+        <translation>Mostrar teclas de atajo en la ventana principal: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4112"/>
@@ -32475,12 +32481,6 @@ Detenga la simulación antes de esto.</translation>
         <location filename="../src/interface/fetmainform.cpp" line="3641"/>
         <source>In case the Help/Online menus do not function, please write down these addresses and open them in an internet browser:</source>
         <translation>En caso de que los menús de Ayuda/En línea no funcionen, anote estas direcciones y ábralas en su navegador de Internet:</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/fetmainform.cpp" line="3645"/>
-        <source>Documentation (online help contents): %1</source>
-        <comment>%1 is web page of FET Doc(umentation), which is the contents of the online help, it begins with http://...</comment>
-        <translation>Documentación (contenido de la ayuda en línea): %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="3651"/>
@@ -32839,7 +32839,7 @@ Detenga la simulación antes de esto.</translation>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="944"/>
         <source>View (&amp;teachers)</source>
-        <translation>Ver (&amp;profesores)</translation>
+        <translation>Ver (p&amp;rofesores)</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1449"/>
@@ -32866,7 +32866,7 @@ Detenga la simulación antes de esto.</translation>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2149"/>
         <source>Min days per week for all teachers</source>
-        <translation>Días mínimos semanales para el profesorado</translation>
+        <translation>Días mínimos semanales del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2154"/>
@@ -32881,22 +32881,22 @@ Detenga la simulación antes de esto.</translation>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2173"/>
         <source>Max hours daily with an activity tag for a teacher</source>
-        <translation>Máx. horas diarias con código de actividad para un profesor</translation>
+        <translation>Máx. de horas diarias con código de actividad para un profesor</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2181"/>
         <source>Max hours daily with an activity tag for all teachers</source>
-        <translation>Máx. horas diarias con código de actividad para el profesorado</translation>
+        <translation>Máx. de horas diarias con código de actividad del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2189"/>
         <source>Max hours daily with an activity tag for a students set</source>
-        <translation>Máx. horas diarias con código de actividad para un grupo</translation>
+        <translation>Máx. de horas diarias con código de actividad para un grupo</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2197"/>
         <source>Max hours daily with an activity tag for all students</source>
-        <translation>Máx. horas diarias con código de actividad para el alumnado</translation>
+        <translation>Máx. de horas diarias con código de actividad para el alumnado</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2205"/>
@@ -32916,7 +32916,7 @@ Detenga la simulación antes de esto.</translation>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2235"/>
         <source>Enable activity tag max hours daily</source>
-        <translation>Activar código de actividad máx. horas diarias</translation>
+        <translation>Activar máx. de horas diarias por código de actividad</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2246"/>
@@ -33002,7 +33002,7 @@ Detenga la simulación antes de esto.</translation>
         <location filename="../src/interface/fetmainform_template.ui" line="123"/>
         <source>As</source>
         <comment>It is an abbreviation for Save as. It is on the shortcuts tab buttons, so keep translation short</comment>
-        <translation>Cómo</translation>
+        <translation>Como</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="130"/>
@@ -33116,7 +33116,7 @@ Detenga la simulación antes de esto.</translation>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1517"/>
         <source>Max hours daily for all teachers</source>
-        <translation>Máximo horas diarias para el profesorado</translation>
+        <translation>Máximo horas diarias del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1560"/>
@@ -33132,7 +33132,7 @@ Detenga la simulación antes de esto.</translation>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1625"/>
         <source>Max gaps per week for all teachers</source>
-        <translation>Máximo de huecos semanales para el profesorado</translation>
+        <translation>Máximo de huecos semanales del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1630"/>
@@ -33183,7 +33183,7 @@ Detenga la simulación antes de esto.</translation>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1706"/>
         <source>Min hours daily for all teachers</source>
-        <translation>Mínimo horas diario para el profesorado</translation>
+        <translation>Mínimo horas diario del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1711"/>
@@ -33198,7 +33198,7 @@ Detenga la simulación antes de esto.</translation>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1736"/>
         <source>Max span per day for all teachers</source>
-        <translation>Duración máx. diaria para el profesorado</translation>
+        <translation>Duración máx. diaria del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1741"/>
@@ -33218,7 +33218,7 @@ Detenga la simulación antes de esto.</translation>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1756"/>
         <source>Min resting hours for all teachers</source>
-        <translation>Horas de descanso mínimas para el profesorado</translation>
+        <translation>Horas de descanso mínimas del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1761"/>
@@ -33260,7 +33260,7 @@ Detenga la simulación antes de esto.</translation>
         <location filename="../src/interface/fetmainform_template.ui" line="2340"/>
         <source>Confirm spread activities over the week</source>
         <comment>This is a setting - a check box: if a user wants to deactivate/activate the confirmation (instructions) dialog that appears before spreading the activities over the week dialog</comment>
-        <translation>Confirmar reparto semanal de actividades</translation>
+        <translation>Confirmar distribución semanal de actividades</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2351"/>
@@ -33401,7 +33401,7 @@ Detenga la simulación antes de esto.</translation>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2280"/>
         <source>Show shortcut buttons in main window</source>
-        <translation>Mostrar botones de atajo en el menú principal</translation>
+        <translation>Mostrar teclas de atajo en el menú principal</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1542"/>
@@ -33477,7 +33477,7 @@ Detenga la simulación antes de esto.</translation>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1721"/>
         <source>Max gaps per day for all teachers</source>
-        <translation>Máximo de huecos diario para el profesorado</translation>
+        <translation>Máximo de huecos diario del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1726"/>
@@ -33574,12 +33574,12 @@ Detenga la simulación antes de esto.</translation>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1826"/>
         <source>Min gaps between building changes for a students set</source>
-        <translation>Mínimos de huecos entre cambio de edificio por grupo</translation>
+        <translation>Mínimos de huecos entre cambios de edificio por grupo</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1831"/>
         <source>Min gaps between building changes for all students</source>
-        <translation>Mínimo huecos entre cambio de edificio para alumnos</translation>
+        <translation>Mínimo de huecos entre cambios de edificio para alumnos</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1836"/>
@@ -33604,12 +33604,12 @@ Detenga la simulación antes de esto.</translation>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1856"/>
         <source>Min gaps between building changes for a teacher</source>
-        <translation>Mínimo huecos entre cambio edificio para un profesor</translation>
+        <translation>Mínimo de huecos entre cambio edificio para un profesor</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1861"/>
         <source>Min gaps between building changes for all teachers</source>
-        <translation>Mínimo huecos entre cambio edificio del profesorado</translation>
+        <translation>Mínimo de huecos entre cambio edificio del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1866"/>
@@ -33665,7 +33665,7 @@ Detenga la simulación antes de esto.</translation>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1881"/>
         <source>Max hours continuously for all teachers</source>
-        <translation>Máximo horas continuas para el profesorado</translation>
+        <translation>Máximo horas continuas del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1886"/>
@@ -33695,7 +33695,7 @@ Detenga la simulación antes de esto.</translation>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1906"/>
         <source>A set of activities has a set of preferred starting times</source>
-        <translation>Un conjunto de actividades tienen horas preferidas de inicio</translation>
+        <translation>Un conjunto de actividades tiene horas preferidas de inicio</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1916"/>
@@ -33906,12 +33906,12 @@ Detenga la simulación antes de esto.</translation>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1961"/>
         <source>A set of subactivities has a set of preferred time slots</source>
-        <translation>Un conjunto de subactividades tienen un conjunto de franjas horarias preferidas</translation>
+        <translation>Un conjunto de subactividades tiene un conjunto de franjas horarias preferidas</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1966"/>
         <source>A set of subactivities has a set of preferred starting times</source>
-        <translation>Un conjunto de subactividades tienen un conjunto de tiempos preferidos de inicio</translation>
+        <translation>Un conjunto de subactividades tiene un conjunto de tiempos preferidos de inicio</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1971"/>
@@ -33955,7 +33955,7 @@ Detenga la simulación antes de esto.</translation>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2007"/>
         <source>Spread the activities evenly over the week</source>
-        <translation>Repartir actividades uniformemente semanales</translation>
+        <translation>Distribuir actividades uniformemente en la semana</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2012"/>
@@ -34005,7 +34005,7 @@ Detenga la simulación antes de esto.</translation>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2057"/>
         <source>Max hours continuously with an activity tag for a students set</source>
-        <translation>Máx. horas continuas con código de actividad por grupo</translation>
+        <translation>Máx. de horas continuas con código de actividad por grupo</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2062"/>
@@ -34020,7 +34020,7 @@ Detenga la simulación antes de esto.</translation>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2072"/>
         <source>Max hours continuously with an activity tag for all teachers</source>
-        <translation>Máx. de horas continuas con código de actividad para el profesorado</translation>
+        <translation>Máx. de horas continuas con código de actividad del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1212"/>
@@ -34061,7 +34061,7 @@ Detenga la simulación antes de esto.</translation>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2118"/>
         <source>Max days per week for all teachers</source>
-        <translation>Máx. días semanales para el profesorado</translation>
+        <translation>Máx. días semanales del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2129"/>
@@ -34800,7 +34800,7 @@ Modifique sus datos en consecuencia e inténtelo de nuevo.</translation>
         <location filename="../src/engine/generate_pre.cpp" line="2636"/>
         <location filename="../src/engine/generate_pre.cpp" line="2699"/>
         <source>Cannot optimize for teacher %1, because there is a constraint of type max %2 hours daily with 100% weight which cannot be respected because of number of days per week, number of hours per day, teacher max days per week, teacher not available and/or breaks. The number of total hours for this teacher is %3 and the number of available slots is, considering max hours daily and all other constraints, %4.</source>
-        <translation>No se puede optimizar para el profesor %1, porque hay una restricción del tipo max %2 horas diarias con 100% de peso que no puede cumplirse a causa de los días semanales, las horas diarias o que no hay un profesor indisponible. Las horas totales para este profesor son %3 y sus franjas horarias disponibles son, considerando el máximo de horas diarias y otras restricciones, %4.</translation>
+        <translation>No se puede optimizar para el profesor %1, porque hay una restricción del tipo máx. %2 horas diarias con 100% de peso que no puede cumplirse a causa de los días semanales, las horas diarias o que no hay un profesor indisponible. Las horas totales para este profesor son %3 y sus franjas horarias disponibles son, considerando el máximo de horas diarias y otras restricciones, %4.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="2834"/>
@@ -34830,7 +34830,7 @@ Modifique sus datos en consecuencia e inténtelo de nuevo.</translation>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3434"/>
         <source>Cannot optimize, because you have constraint teacher min hours daily for teacher %1 with weight (percentage) below 100. Starting with FET version 5.4.0 it is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
-        <translation>No se puede optimizar porque tiene restriccones de mín. de horas diario por profesor %1 con peso debajo de 100. A partir de la versión 5.4.0 de FET solo se puede usar 100% de peso para dicha restricción. Inténtelo de nuevo con 100%</translation>
+        <translation>No se puede optimizar porque tiene restricciones de mín. de horas diario por profesor %1 con peso debajo de 100. A partir de la versión 5.4.0 de FET solo se puede usar 100% de peso para dicha restricción. Inténtelo de nuevo con 100%</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3451"/>
@@ -34860,12 +34860,12 @@ Modifique sus datos en consecuencia e inténtelo de nuevo.</translation>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3616"/>
         <source>Cannot optimize, because you have constraint teachers min days per week with weight (percentage) below 100. Please make weight 100% and try again</source>
-        <translation>No se puede optimizar porque tiene una restricción de mínimo de días semanales para el profesorado con un peso (%) menor de 100. Cámbielo a 100% e inténtelo de nuevo</translation>
+        <translation>No se puede optimizar porque tiene una restricción de mínimo de días semanales del profesorado con un peso (%) menor de 100. Cámbielo a 100% e inténtelo de nuevo</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3631"/>
         <source>Cannot optimize, because you have constraint teachers min days per week with %1 min days per week, and the number of working days per week is only %2. Please correct and try again</source>
-        <translation>No se puede optimizar porque tiene una restricción de %1 mínimo días semanales para el profesorado y los días semanales son sólo %2. Corrija e intente nuevamente</translation>
+        <translation>No se puede optimizar porque tiene una restricción de %1 mínimo días semanales del profesorado y los días semanales son sólo %2. Corrija e intente nuevamente</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3658"/>
@@ -34875,7 +34875,7 @@ Modifique sus datos en consecuencia e inténtelo de nuevo.</translation>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3678"/>
         <source>Cannot optimize because for teacher %1 you have min days per week %2 and min hours daily %3 and he has only %4 working hours - impossible. Please correct and try again.</source>
-        <translation>No se puede optimizar porque el profesor %1 tiene %2 mínimo de días semanales y %3 horas mínimas diarias pero sólo %4 horas de trabajo lo que es imposible. Corrija e intente nuevamente.</translation>
+        <translation>No se puede optimizar porque el profesor %1 tiene %2 mínimo de días semanales y %3 horas mínimas diarias, pero sólo %4 horas de trabajo lo que es imposible. Corrija e intente nuevamente.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3703"/>
@@ -34910,7 +34910,7 @@ Modifique sus datos en consecuencia e inténtelo de nuevo.</translation>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3849"/>
         <source>Cannot optimize, because you have constraint teachers min resting hours with %1 min resting hours, and the number of working hours per day is only %2. Please correct and try again</source>
-        <translation>No se puede optimizar porque tiene una restricción tipo mínimo de horas de descanso para el profesorado con %1 mín. de horas de descanso y el número de horas de trabajo diarias es de solo %2. Corrija e intente nuevamente</translation>
+        <translation>No se puede optimizar porque tiene una restricción tipo mínimo de horas de descanso del profesorado con %1 mín. de horas de descanso y el número de horas de trabajo diarias es de solo %2. Corrija e intente nuevamente</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3912"/>
@@ -35045,13 +35045,13 @@ Modifique sus datos en consecuencia e inténtelo de nuevo.</translation>
         <location filename="../src/engine/generate_pre.cpp" line="6612"/>
         <source>%1 cannot be respected because teacher %2 has at most %3 available days. You specified for this constraint consecutive if same day=true. Currently FET cannot put more than 2 activities in the same day if consecutive if same day is true. You have 2*available days&lt;number of activities in this constraint. This is a very unlikely situation, that is why I didn&apos;t care too much about it. If you encounter it, please please modify your file (uncheck consecutive if same day or add other activities with larger duration).</source>
         <comment>%1 is the detailed description of a constraint</comment>
-        <translation>%1 no puede respetarse porque el profesor %2 tiene un máximo de %3 días disponibles. Se especificó para esta restricción consecutiva si mismo día = verdadero. Actualmente FET no puede poner más de 2 actividades en el mismo día si consecutiva en el mismo día es verdadero. Tiene 2*días disponibles&lt;número de actividades en esta restricción. Esta es una situación muy improbable. Si la encuentra, por favor, modifique su archivo (desmarque la opción consecutiva si el mismo día o agregue otras actividades con mayor duración).</translation>
+        <translation>%1 no puede respetarse porque el profesor %2 tiene un máximo de %3 días disponibles. Se especificó para esta restricción consecutiva si en el mismo día=verdadero. Actualmente FET no puede poner más de 2 actividades en el mismo día si consecutiva en el mismo día es verdadero. Tiene 2*días disponibles&lt;número de actividades en esta restricción. Esta es una situación muy improbable. Si la encuentra, por favor, modifique su archivo (desmarque la opción consecutiva si el mismo día o agregue otras actividades con mayor duración).</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="6648"/>
         <source>%1 cannot be respected because subgroup %2 has at most %3 available days. You specified for this constraint consecutive if same day=true. Currently FET cannot put more than 2 activities in the same day if consecutive if same day is true. You have 2*available days&lt;number of activities in this constraint. This is a very unlikely situation, that is why I didn&apos;t care too much about it. If you encounter it, please modify your file (uncheck consecutive if same day or add other activities with larger duration).</source>
         <comment>%1 is the detailed description of a constraint</comment>
-        <translation>%1 no puede respetarse porque el subgrupo %2 tiene un máximo de %3 días disponibles. Se especificó para esta restricción consecutiva si mismo día = verdadero. Actualmente FET no puede poner más de 2 actividades en el mismo día si consecutiva en el mismo día es verdadero. Tiene 2*días disponibles&lt;número de actividades en esta restricción. Esta es una situación muy improbable. Si la encuentra, por favor, modifique su archivo (desmarque la opción consecutiva si el mismo día o agregue otras actividades con mayor duración).</translation>
+        <translation>%1 no puede respetarse porque el subgrupo %2 tiene un máximo de %3 días disponibles. Se especificó para esta restricción consecutiva si en el mismo día = verdadero. Actualmente FET no puede poner más de 2 actividades en el mismo día si consecutiva en el mismo día es verdadero. Tiene 2*días disponibles&lt;número de actividades en esta restricción. Esta es una situación muy improbable. Si la encuentra, por favor, modifique su archivo (desmarque la opción consecutiva si el mismo día o agregue otras actividades con mayor duración).</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="6736"/>
@@ -35119,7 +35119,7 @@ Modifique sus datos en consecuencia e inténtelo de nuevo.</translation>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="4384"/>
         <source>Cannot optimize for teacher %1, because the number of hours for teacher is %2 and you have only %3 free slots from constraints teacher not available and/or break. Maybe you inputted wrong constraints teacher not available or break or the number of hours per week is less because of a misunderstanding</source>
-        <translation>No se puede optimizar para el profesor %1 porque su número de horas son %2 y usted sólo tiene %3 franjas horarias libres de acuerdo a las restricciones de indisponibilidad y/o pausas del profesor. Quizá registro restricciones incorrectas de indisponiblidad o pausas o las horas semanales son menores debido a un malentendido</translation>
+        <translation>No se puede optimizar para el profesor %1 porque su número de horas son %2 y usted sólo tiene %3 franjas horarias libres de acuerdo a las restricciones de indisponibilidad y/o pausas del profesor. Quizá registro restricciones incorrectas de indisponibilidad o pausas o las horas semanales son menores debido a un malentendido</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="5976"/>
@@ -35143,13 +35143,13 @@ Modifique sus datos en consecuencia e inténtelo de nuevo.</translation>
         <location filename="../src/engine/generate_pre.cpp" line="6494"/>
         <source>%1 cannot be respected because teacher %2 has at most %3 available days from teacher not available, breaks and teacher max days per week. Please lower the weight of this constraint to a value below 100% (it depends on your situation, if 0% is too little, make it 90%, 95% or even 99.75%. Even a large weight should not slow down much the program. A situation where you may need to make it larger than 0% is for instance if you have 5 activities with 4 possible days. You want to spread them 1, 1, 1 and 2, not 2, 2 and 1)</source>
         <comment>%1 is the detailed description of a constraint</comment>
-        <translation>%1 no se puede respetar porque el profesor %2 tiene como máximo %3 días disponibles de profesor indisponible, pausas y máximo de días semanales por profesor. Reduzca el peso de esta restricción a menos del 100% (dependiendo de su situación, si 0% es muy poco, use 90%, 95% o incluso 99.75%. Aun usando un peso elevado no debe ralentizar mucho el programa. Una situación donde puede requerir hacerla superior a 0% es por ejemplo si tiene 5 actividades con 4 días posibles. Sepárelas en 1, 1, 1 y 2, y no en 2, 2 y 1)</translation>
+        <translation>%1 no se puede respetar porque el profesor %2 tiene como máximo %3 días disponibles de profesor indisponible, pausas y máximo de días semanales por profesor. Reduzca el peso de esta restricción a menos del 100% (dependiendo de su situación, si 0% es muy poco, use 90%, 95% o incluso 99.75%. Aun usando un peso elevado no debe ralentizar mucho el programa. Una situación donde puede requerir hacerla superior a 0% es por ejemplo si tiene 5 actividades con 4 días posibles. Distribúyalas en 1, 1, 1 y 2, y no en 2, 2 y 1)</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="6517"/>
         <source>%1 cannot be respected because subgroup %2 has at most %3 available days from students set not available and breaks. Please lower the weight of this constraint to a value below 100% (it depends on your situation, if 0% is too little, make it 90%, 95% or even 99.75%. Even a large weight should not slow down much the program. A situation where you may need to make it larger than 0% is for instance if you have 5 activities with 4 possible days. You want to spread them 1, 1, 1 and 2, not 2, 2 and 1)</source>
         <comment>%1 is the detailed description of a constraint</comment>
-        <translation>%1 no se puede respetar porque el subgrupo %2 tiene como máximo %3 días disponibles de grupos indisponibles y pausas. Reduzca el peso de esta restricción a menos del 100% (dependiendo de su situación, si 0% es muy poco, use 90%, 95% o incluso 99.75%. Aun usando un peso elevado no debe ralentizar mucho el programa. Una situación donde puede requerir hacerla superior a 0% es por ejemplo si tiene 5 actividades con 4 días posibles. Sepárelas en 1, 1, 1 y 2, y no en 2, 2 y 1)</translation>
+        <translation>%1 no se puede respetar porque el subgrupo %2 tiene como máximo %3 días disponibles de grupos indisponibles y pausas. Reduzca el peso de esta restricción a menos del 100% (dependiendo de su situación, si 0% es muy poco, use 90%, 95% o incluso 99.75%. Aun usando un peso elevado no debe ralentizar mucho el programa. Una situación donde puede requerir hacerla superior a 0% es por ejemplo si tiene 5 actividades con 4 días posibles. Distribúyalas en 1, 1, 1 y 2, y no en 2, 2 y 1)</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="7134"/>
@@ -35164,12 +35164,12 @@ Modifique sus datos en consecuencia e inténtelo de nuevo.</translation>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="4612"/>
         <source>Cannot optimize, because you have constraint teachers max gaps per day with weight (percentage) below 100. Please make weight 100% and try again</source>
-        <translation>No se puede optimizar porque tiene profesores con restricción máximo huecos diario con un valor menor de 100. Cámbielo a 100% e intente nuevamente</translation>
+        <translation>No se puede optimizar porque tiene profesores con restricción máximo huecos diarios con un valor menor de 100. Cámbielo a 100% e intente nuevamente</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="4629"/>
         <source>Cannot optimize, because you have constraint teacher max gaps per day with weight (percentage) below 100 for teacher %1. Please make weight 100% and try again</source>
-        <translation>No se puede optimizar porque tiene el profesor %1 tiene restricción máximo huecos diario con un valor menor de 100. Cámbielo a 100% e intente nuevamente</translation>
+        <translation>No se puede optimizar porque tiene el profesor %1 tiene restricción máximo huecos diarios con un valor menor de 100. Cámbielo a 100% e intente nuevamente</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="1024"/>
@@ -35209,7 +35209,7 @@ Modifique sus datos en consecuencia e inténtelo nuevamente.</translation>
  Example: you are allowed to use 3 constraints: 6 hours 95%, 7 hours 100% and 8 hours 100%, which can be compressed into 2 constraints: 6 hours 95%, 7 hours 100%
 
  Please modify your data accordingly and try again.</source>
-        <translation>No se puede optimizar para el subgrupo %1, porque hay demasiadas restricciones del tipo máximo de horas continúas relacionadas con el mismo, que no se pueden comprimir en 2 restricciones de este tipo. Dos restricciones tipo máximo de horas pueden comprimirse en una si el máximo de horas es menor en la primera y el porcentaje en peso es mayor. Es posible utilizar cualquier número de dichas restricciones para un subgrupo, pero el resultado debe ser un máximo de 2 restricciones del tipo máx. de horas continuas.
+        <translation>No se puede optimizar para el subgrupo %1, porque hay demasiadas restricciones del tipo máximo de horas continuas relacionadas con el mismo, que no se pueden comprimir en 2 restricciones de este tipo. Dos restricciones tipo máximo de horas pueden comprimirse en una si el máximo de horas es menor en la primera y el porcentaje en peso es mayor. Es posible utilizar cualquier número de dichas restricciones para un subgrupo, pero el resultado debe ser un máximo de 2 restricciones del tipo máx. de horas continuas.
 
 Ejemplo: puede usar 3 restricciones: 6 horas 95%, 7 horas 100% y 8 horas 100%, que se pueden comprimir en 2 restricciones: 6 horas 95%, 7 horas 100%
 
@@ -35223,7 +35223,7 @@ Modifique sus datos en consecuencia e inténtelo nuevamente.</translation>
  Example: you are allowed to use 3 constraints: 6 hours 95%, 7 hours 100% and 8 hours 100%, which can be compressed into 2 constraints: 6 hours 95%, 7 hours 100%
 
  Please modify your data accordingly and try again.</source>
-        <translation>No se puede optimizar para el subgrupo %1, porque hay demasiadas restricciones del tipo máximo de horas continúas por código de actividad relacionadas con el mismo, que no se pueden comprimir en 2 restricciones de este tipo. Dos restricciones tipo máximo de horas pueden comprimirse en una si el máximo de horas es menor en la primera y el porcentaje en peso es mayor. Es posible utilizar cualquier número de dichas restricciones para un subgrupo, pero el resultado debe ser un máximo de 2 restricciones del tipo máx. de horas continuas por código de actividad.
+        <translation>No se puede optimizar para el subgrupo %1, porque hay demasiadas restricciones del tipo máximo de horas continuas por código de actividad relacionadas con el mismo, que no se pueden comprimir en 2 restricciones de este tipo. Dos restricciones tipo máximo de horas pueden comprimirse en una si el máximo de horas es menor en la primera y el porcentaje en peso es mayor. Es posible utilizar cualquier número de dichas restricciones para un subgrupo, pero el resultado debe ser un máximo de 2 restricciones del tipo máx. de horas continuas por código de actividad.
 
 Ejemplo: puede usar 3 restricciones: 6 horas 95%, 7 horas 100% y 8 horas 100%, que se pueden comprimir en 2 restricciones: 6 horas 95%, 7 horas 100%
 
@@ -35258,7 +35258,7 @@ Modifique sus datos en consecuencia e inténtelo nuevamente.</translation>
  Example: you are allowed to use 3 constraints: 6 hours 95%, 7 hours 100% and 8 hours 100%, which can be compressed into 2 constraints: 6 hours 95%, 7 hours 100%
 
  Please modify your data accordingly and try again.</source>
-        <translation>No se puede optimizar para el profesor %1 porque tiene demasiadas restricciones de tipo máx. horas diarias relacionadas, las cuales no se pueden comprimir en 2 restricciones de este tipo. Dos restricciones máximas horas pueden comprimirse en una si las horas máximas son menores en la primera y el porcentaje en peso es mayor en la primera. Es posible utilizar cualquier número de dichas restricciones para un profesor, pero su resultado debe ser máximo 2 restricciones de ese tipo.
+        <translation>No se puede optimizar para el profesor %1 porque tiene demasiadas restricciones de tipo máx. de horas diarias relacionadas, las cuales no se pueden comprimir en 2 restricciones de este tipo. Dos restricciones máximas horas pueden comprimirse en una si las horas máximas son menores en la primera y el porcentaje en peso es mayor en la primera. Es posible utilizar cualquier número de dichas restricciones para un profesor, pero su resultado debe ser máximo 2 restricciones de ese tipo.
 
 Ejemplo: se le permite utilizar 3 restricciones: 6 horas 95%, 7 horas 100% y 8 horas 100%, que se pueden comprimir en 2 restricciones: 6 horas 95%, 7 horas 100% 
 
@@ -35272,7 +35272,7 @@ Modifique sus datos en consecuencia e inténtelo nuevamente.</translation>
  Example: you are allowed to use 3 constraints: 6 hours 95%, 7 hours 100% and 8 hours 100%, which can be compressed into 2 constraints: 6 hours 95%, 7 hours 100%
 
  Please modify your data accordingly and try again.</source>
-        <translation>No se puede optimizar para el profesor %1 porque tiene demasiadas restricciones de tipo máx. horas continúas relacionadas, las cuales no se pueden comprimir en 2 restricciones de este tipo. Dos restricciones máximas horas pueden comprimirse en una si las horas máximas son menores en la primera y el porcentaje en peso es mayor en la primera. Es posible utilizar cualquier número de dichas restricciones para un profesor, pero su resultado debe ser máximo 2 restricciones de ese tipo.
+        <translation>No se puede optimizar para el profesor %1 porque tiene demasiadas restricciones de tipo máx. de horas continuas relacionadas, las cuales no se pueden comprimir en 2 restricciones de este tipo. Dos restricciones máximas horas pueden comprimirse en una si las horas máximas son menores en la primera y el porcentaje en peso es mayor en la primera. Es posible utilizar cualquier número de dichas restricciones para un profesor, pero su resultado debe ser máximo 2 restricciones de ese tipo.
 
 Ejemplo: se le permite utilizar 3 restricciones: 6 horas 95%, 7 horas 100% y 8 horas 100%, que se pueden comprimir en 2 restricciones: 6 horas 95%, 7 horas 100% 
 
@@ -35346,7 +35346,7 @@ Modifique sus datos en consecuencia e inténtelo nuevamente.</translation>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="2758"/>
         <source>Cannot optimize, because you have constraint teachers max span per day with weight (percentage) below 100. Please make weight 100% and try again</source>
-        <translation>No se puede optimizar porque tiene una restricción de duración máxima diaria para el profesorado con un peso (%) menor de 100. Cámbiela a 100% e inténtelo de nuevo</translation>
+        <translation>No se puede optimizar porque tiene una restricción de duración máxima diaria del profesorado con un peso (%) menor de 100. Cámbiela a 100% e inténtelo de nuevo</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="3218"/>
@@ -35362,7 +35362,7 @@ Modifique sus datos en consecuencia e inténtelo nuevamente.</translation>
  Example: you are allowed to use 3 constraints: 6 hours 95%, 7 hours 100% and 8 hours 100%, which can be compressed into 2 constraints: 6 hours 95%, 7 hours 100%
 
  Please modify your data accordingly and try again.</source>
-        <translation>No se puede optimizar para el profesor %1 porque tiene demasiadas restricciones de tipo máx. horas continuas por código de actividad relacionadas, las cuales no se pueden comprimir en 2 restricciones de este tipo. Dos restricciones máximo de horas pueden comprimirse en una si las horas máximas son menores en la primera y el porcentaje en peso es mayor en la primera. Es posible utilizar cualquier número de dichas restricciones para un profesor, pero su resultado debe ser un máximo de 2 restricciones de ese tipo.
+        <translation>No se puede optimizar para el profesor %1 porque tiene demasiadas restricciones de tipo máx. de horas continuas por código de actividad relacionadas, las cuales no se pueden comprimir en 2 restricciones de este tipo. Dos restricciones máximo de horas pueden comprimirse en una si las horas máximas son menores en la primera y el porcentaje en peso es mayor en la primera. Es posible utilizar cualquier número de dichas restricciones para un profesor, pero su resultado debe ser un máximo de 2 restricciones de ese tipo.
 
 Ejemplo: se le permite utilizar 3 restricciones: 6 horas 95%, 7 horas 100% y 8 horas 100%, que se pueden comprimir en 2 restricciones: 6 horas 95%, 7 horas 100% 
 
@@ -35383,12 +35383,12 @@ Modifique sus datos en consecuencia e inténtelo nuevamente.</translation>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="4867"/>
         <source>Cannot optimize, because you have constraint teacher max days per week with weight (percentage) below 100 for teacher %1. Starting with FET version 5.2.17 it is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
-        <translation>No se puede optimizar. Coeficiente bajo para el profesor %1. A partir de la versión FET 5.2.17 es solo posible usar el 100% de la restricción para el máximo de días semanales por profesor. Pruebe de nuevo usando 100%</translation>
+        <translation>No se puede optimizar. Coeficiente bajo para el profesor %1. A partir de la versión FET 5.2.17 es sólo posible usar el 100% de la restricción para el máximo de días semanales por profesor. Pruebe de nuevo usando 100%</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="4905"/>
         <source>Cannot optimize, because you have constraint teachers max days per week with weight (percentage) below 100. Please make weight 100% and try again</source>
-        <translation>No se puede optimizar porque tiene una restricción de días máximos semanales para el profesorado con un peso (%) con valor menor de 100. Cámbiela a 100% e inténtelo nuevamente</translation>
+        <translation>No se puede optimizar porque tiene una restricción de días máximos semanales del profesorado con un peso (%) con valor menor de 100. Cámbiela a 100% e inténtelo nuevamente</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="5122"/>
@@ -35468,22 +35468,22 @@ Modifíquelo e inténtelo de nuevo</translation>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="6703"/>
         <source>Cannot optimize, because you have constraint teacher interval max days per week with weight (percentage) below 100 for teacher %1. Starting with FET version 5.6.2 it is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
-        <translation>No se puede optimizar porque tiene una restricción de intervalo máx. de días semanales por profesor con un peso inferior a 100 para el profesor %1. A partir de FET en la versión 5.6.2 solo es posible usar un porcentaje del 100% en esta restricción. Use un peso de 100% e intente nuevamente</translation>
+        <translation>No se puede optimizar porque tiene una restricción de intervalo máx. de días semanales por profesor con un peso inferior a 100 para el profesor %1. A partir de FET en la versión 5.6.2 sólo es posible usar un porcentaje del 100% en esta restricción. Use un peso de 100% e intente nuevamente</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="6754"/>
         <source>Cannot optimize, because you have constraint teachers interval max days per week with weight (percentage) below 100. Starting with FET version 5.6.2 it is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
-        <translation>No se puede optimizar porque tiene una restricción de intervalo máx. de días semanales para el profesorado con un porcentaje inferior a 100 para el profesorado. A partir de FET en la versión 5.6.2 solo es posible usar un porcentaje del 100% en esta restricción. Use un peso de 100% e intente nuevamente</translation>
+        <translation>No se puede optimizar porque tiene una restricción de intervalo máx. de días semanales del profesorado con un porcentaje inferior a 100 del profesorado. A partir de FET en la versión 5.6.2 sólo es posible usar un porcentaje del 100% en esta restricción. Use un peso de 100% e intente nuevamente</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="6833"/>
         <source>Cannot optimize, because you have constraint students set interval max days per week with weight (percentage) below 100 for students set %1. Starting with FET version 5.6.2 it is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
-        <translation>No se puede optimizar porque tiene una restricción de intervalo máx. días de semanales por grupo con un porcentaje inferior a 100 para el grupo %1. A partir de FET en la versión 5.6.2 solo es posible usar un porcentaje del 100% en esta restricción. Use un peso de 100% e intente nuevamente</translation>
+        <translation>No se puede optimizar porque tiene una restricción de intervalo máx. días de semanales por grupo con un porcentaje inferior a 100 para el grupo %1. A partir de FET en la versión 5.6.2 sólo es posible usar un porcentaje del 100% en esta restricción. Use un peso de 100% e intente nuevamente</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="6886"/>
         <source>Cannot optimize, because you have constraint students interval max days per week with weight (percentage) below 100. Starting with FET version 5.6.2 it is only possible to use 100% weight for such constraints. Please make weight 100% and try again</source>
-        <translation>No se puede optimizar porque tiene una restricción de intervalo máximo de días semanales para el alumnado con un porcentaje inferior a 100. A partir de FET en la versión 5.6.2 solo es posible usar un porcentaje del 100% en esta restricción. Use un peso de 100% e intente nuevamente</translation>
+        <translation>No se puede optimizar porque tiene una restricción de intervalo máximo de días semanales para el alumnado con un porcentaje inferior a 100. A partir de FET en la versión 5.6.2 sólo es posible usar un porcentaje del 100% en esta restricción. Use un peso de 100% e intente nuevamente</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="6959"/>
@@ -35560,7 +35560,7 @@ Modifíquelo e inténtelo de nuevo</translation>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="535"/>
         <source>You can deactivate this message from the &apos;Settings&apos; menu.</source>
-        <translation>Puede desactivar este mensaje desde le menú &apos;Configuración&apos;.</translation>
+        <translation>Puede desactivar este mensaje desde el menú &apos;Configuración&apos;.</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="7052"/>
@@ -35656,7 +35656,7 @@ Modifíquelo e inténtelo de nuevo</translation>
         <location filename="../src/engine/generate_pre.cpp" line="9404"/>
         <source>No: %1</source>
         <comment>Number</comment>
-        <translation>N°: %1</translation>
+        <translation>Núm.: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9408"/>
@@ -36130,186 +36130,6 @@ Modifíquelo e inténtelo de nuevo</translation>
         <location filename="../src/interface/helpaboutform_template.ui" line="14"/>
         <source>About FET - Free Timetabling Software</source>
         <translation>Acerca de FET - Programa gratuito de Generación de Horarios</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.33.2 (October 2017).&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET homepage: &lt;/span&gt;&lt;a href=&quot;http://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;http://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="90"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Liviu Lalescu (http://lalescu.ro/liviu/)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Volker Dirr (http://www.timetabling.de/)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	- XHTML timetable export.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	- CSV import and export.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	- Advanced statistics print/export.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	- Speed improvements in the timetable generation.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	- Locking the activities.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	- Activity planning dialog.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	- Print timetable dialog.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="133"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ar - Arabic translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Silver (to contact Silver visit FET forum - http://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Arabic translation, or contact forum user Silver)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Benahmed Abdelkrim (pmg9.81 AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ca - Catalan translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Sílvia Lag (to contact Sílvia visit FET forum - http://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Catalan translation, or contact forum user silvia)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;cs - Czech translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Pavel Fric (pavelfric AT seznam.cz)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;da - Danish translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	David Lamhauge (davidlamhauge AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;de - German translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Volker Dirr (http://www.timetabling.de/)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Robert Hairgrove (code AT roberthairgrove.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;el - Greek translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Dimitrios Ropokis (wamy80s AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Dimitris Kanatas (to contact Dimitris Kanatas visit&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	FET forum - http://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Greek translation, or contact forum user Dimitris Kanatas)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;es - Spanish translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: José César Fernández López (cesar.fernandez.lopez AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Emiliano Llano Díaz (compuvtt AT hotmail.com) - rewrote the translation from zero&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;eu - Basque translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Asier Urio Larrea (asieriko AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;fa - Persian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Hamed SadeghiNeshat (ha_sadeghi AT ce.sharif.edu)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: sally sat (soory63 AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;fr - French translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Jerome Durand (fetfr AT free.fr)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Patrick Fox (patrick.fox AT laposte.net)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Régis Bouguin (regis.bouguin AT laposte.net)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Pascal Cohen (pacohen AT laposte.net) - rewrote the translation from zero&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;gl - Galician translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Juan Marcos Filgueira Gomis (to contact marcos.filgueira, visit FET forum - http://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Galician translation, or contact forum user marcos.filgueira)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	this translation was based on the Spanish translation by José César Fernández López&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	as of April 2011 (see es - Spanish translation for more information)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;he - Hebrew translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Yotam Medini (yotam.medini AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;hu - Hungarian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Ferenczi Viktor (cx AT cx.hu)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;id - Indonesian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Nirwan Yus (ny.unpar AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;it - Italian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Marco Barsotti (mbarsan AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;lt - Lithuanian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Darius Staigys (darius AT e-servisas.lt)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;mk - Macedonian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Zoran Zdravkovski (zoran AT pmf.ukim.edu.mk)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ms - Malay translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Abdul Hadi Kamel (hadikamel AT perlis.uitm.edu.my)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;nl - Dutch translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Niels Fikse (k.fikse AT student.utwente.nl)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;pl - Polish translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Radoslaw Pasiok (zapala AT konto.pl)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;pt_BR - Brazilian Portuguese translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Werner Bruns (werner.bruns AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Frank Mártin (drfarofa AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Cloves das Neves (clovesneves AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Alexandre R. Soares (alexrsoares AT zoho.com). (Alternatively,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	to contact Alexandre R. Soares, visit FET forum - http://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Brazilian Portuguese translation, or contact forum user khemis)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ro - Romanian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Liviu Lalescu (http://lalescu.ro/liviu/)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ru - Russian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Ilya V. Paramonov (ivparamonov AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;si - Sinhala translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Achini Duisna (duisna1012 AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;sk - Slovak translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Ondrej Gregor (to contact Ondrej visit FET forum - http://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Slovak translation, or contact forum user Ondrej)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;sq - Albanian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Artur Lugu (ciaoartur AT yahoo.it)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;sr - Serbian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Ivan Starchevicy (ivanstar61 AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Radan Putnik (srastral AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;tr - Turkish translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Mehmet Gezmisoglu (m_gezmisoglu AT hotmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Mahir Nacar (mahirnacar AT email.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;uk - Ukrainian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Andriy Melnyk (melnyk.andriy AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;uz - Uzbek translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Orzubek Eraliyev (o.eraliyev AT gmail.com, or visit FET forum - http://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Uzbek translation, or contact forum user sarkor)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;vi - Vietnamese translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Nguyen Truong Thang (to contact Thang visit FET forum - http://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Vietnamese translation, or contact forum user NTThang)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Nguyễn Hữu Duyệt (nguyenhuuduyet AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;zh_CN - Chinese Simplified translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	orange (112260085 AT qq.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;zh_TW - Chinese Traditional translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	James (james AT cc.shu.edu.tw)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="290"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;You may find references for the algorithms and techniques used in this program on the FET documentation web page, &lt;/span&gt;&lt;a href=&quot;http://lalescu.ro/liviu/fet/doc/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;http://lalescu.ro/liviu/fet/doc/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="324"/>
@@ -36865,14 +36685,194 @@ p, li { white-space: pre-wrap; }
         <translation>Acerca de</translation>
     </message>
     <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.33.2 (October 2017).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET homepage: &lt;/span&gt;&lt;a href=&quot;https://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;https://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="69"/>
         <source>Authors</source>
         <translation>Autores</translation>
     </message>
     <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="90"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Liviu Lalescu (https://lalescu.ro/liviu/)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Volker Dirr (http://www.timetabling.de/)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	- XHTML timetable export.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	- CSV import and export.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	- Advanced statistics print/export.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	- Speed improvements in the timetable generation.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	- Locking the activities.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	- Activity planning dialog.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	- Print timetable dialog.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="133"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ar - Arabic translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Silver (to contact Silver visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Arabic translation, or contact forum user Silver)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Benahmed Abdelkrim (pmg9.81 AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ca - Catalan translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Sílvia Lag (to contact Sílvia visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Catalan translation, or contact forum user silvia)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;cs - Czech translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Pavel Fric (pavelfric AT seznam.cz)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;da - Danish translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	David Lamhauge (davidlamhauge AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;de - German translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Volker Dirr (http://www.timetabling.de/)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Robert Hairgrove (code AT roberthairgrove.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;el - Greek translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Dimitrios Ropokis (wamy80s AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Dimitris Kanatas (to contact Dimitris Kanatas visit&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Greek translation, or contact forum user Dimitris Kanatas)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;es - Spanish translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: José César Fernández López (cesar.fernandez.lopez AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Emiliano Llano Díaz (compuvtt AT hotmail.com) - rewrote the translation from zero&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;eu - Basque translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Asier Urio Larrea (asieriko AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;fa - Persian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Hamed SadeghiNeshat (ha_sadeghi AT ce.sharif.edu)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: sally sat (soory63 AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;fr - French translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Jerome Durand (fetfr AT free.fr)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Patrick Fox (patrick.fox AT laposte.net)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Régis Bouguin (regis.bouguin AT laposte.net)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Pascal Cohen (pacohen AT laposte.net) - rewrote the translation from zero&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;gl - Galician translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Juan Marcos Filgueira Gomis (to contact marcos.filgueira, visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Galician translation, or contact forum user marcos.filgueira)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	this translation was based on the Spanish translation by José César Fernández López&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	as of April 2011 (see es - Spanish translation for more information)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;he - Hebrew translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Yotam Medini (yotam.medini AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;hu - Hungarian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Ferenczi Viktor (cx AT cx.hu)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;id - Indonesian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Nirwan Yus (ny.unpar AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;it - Italian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Marco Barsotti (mbarsan AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;lt - Lithuanian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Darius Staigys (darius AT e-servisas.lt)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;mk - Macedonian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Zoran Zdravkovski (zoran AT pmf.ukim.edu.mk)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ms - Malay translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Abdul Hadi Kamel (hadikamel AT perlis.uitm.edu.my)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;nl - Dutch translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Niels Fikse (k.fikse AT student.utwente.nl)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;pl - Polish translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Radoslaw Pasiok (zapala AT konto.pl)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;pt_BR - Brazilian Portuguese translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Werner Bruns (werner.bruns AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Frank Mártin (drfarofa AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Cloves das Neves (clovesneves AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Alexandre R. Soares (alexrsoares AT zoho.com). (Alternatively,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	to contact Alexandre R. Soares, visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Brazilian Portuguese translation, or contact forum user khemis)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ro - Romanian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Liviu Lalescu (https://lalescu.ro/liviu/)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ru - Russian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Ilya V. Paramonov (ivparamonov AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;si - Sinhala translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Achini Duisna (duisna1012 AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;sk - Slovak translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Ondrej Gregor (to contact Ondrej visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Slovak translation, or contact forum user Ondrej)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;sq - Albanian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Artur Lugu (ciaoartur AT yahoo.it)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;sr - Serbian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Ivan Starchevicy (ivanstar61 AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Radan Putnik (srastral AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;tr - Turkish translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Mehmet Gezmisoglu (m_gezmisoglu AT hotmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Mahir Nacar (mahirnacar AT email.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;uk - Ukrainian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Andriy Melnyk (melnyk.andriy AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;uz - Uzbek translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Orzubek Eraliyev (o.eraliyev AT gmail.com, or visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Uzbek translation, or contact forum user sarkor)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;vi - Vietnamese translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Nguyen Truong Thang (to contact Thang visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Vietnamese translation, or contact forum user NTThang)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Nguyễn Hữu Duyệt (nguyenhuuduyet AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;zh_CN - Chinese Simplified translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	orange (112260085 AT qq.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;zh_TW - Chinese Traditional translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	James (james AT cc.shu.edu.tw)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="269"/>
         <source>References</source>
         <translation>Referencias</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="290"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;You may find references for the algorithms and techniques used in this program on the FET documentation web page, &lt;/span&gt;&lt;a href=&quot;https://lalescu.ro/liviu/fet/doc/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;https://lalescu.ro/liviu/fet/doc/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="303"/>
@@ -36890,7 +36890,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="81"/>
         <source>A: There are indeed maximum limits for the generation algorithm (all these limits can be increased on demand, as a custom version, because this requires a bit more memory).</source>
-        <translation>R: De hecho, existen límites máximos para el algoritmo de generación (todos estos límites pueden aumentarse a la demanda, en una versión personalizada, ya que esto requiere un poco más de memoria).</translation>
+        <translation>R: De hecho, existen límites máximos para el algoritmo de generación (todos estos límites pueden aumentarse a la demanda en una versión personalizada, ya que esto requiere un poco más de memoria).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="83"/>
@@ -36948,6 +36948,7 @@ p, li { white-space: pre-wrap; }
 
 A: The activities are indented for easier visualization. The non-indented ones are the representatives of a larger split activity (their id is the group id of the larger split activity), while indented ones are the other components of this larger split activity.</source>
         <translation>P: ¿Por qué algunas actividades aparecen con sangría y otras no?
+
 R: Las actividades se sangran para su fácil visualización. Aquellas sin sangría son representativas de una actividad divisoria más grande (sus ID son el ID de grupo de la actividad divisoria más grande), mientras que las que tienen sangría son los componentes de esta actividad divisoria más grande.</translation>
     </message>
     <message>
@@ -36966,7 +36967,11 @@ R: Sí. Las restricciones permiten el uso de valores inferiores al 100%, puede u
 A: You can specify the maximum number of beginnings at second available hour (arrivals at third hour not possible).
 
 If you input only partial data, please use with caution. If you add a constraint with max 0 beginnings at second hour: you might for instance input only 4+4 hourly activities of math with the same teacher for 2 students sets (each group of 4 activities must be ballanced - in different days). Then it is clear that you cannot place all 8 activities in a 5 days week without breaking the students early constraint, so you will get no possible timetable.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Ayuda sobre RestricciónAlumnadoInicioMáxComienzoASegundaHora.
+
+R: Puede especificar el número máximo de inicios a la segunda hora disponible (las llegadas a la tercera hora no son posibles).
+
+Si captura sólo datos parciales, utilice con precaución. Si añade una restricción con un máximo de 0 inicios a la segunda hora: puede, por ejemplo, usar sólo 4 + 4 actividades por hora de matemáticas con el mismo profesor para 2 grupos (cada grupo de 4 actividades debe estar balanceado - en diferentes días). Entonces está claro que no puede colocar las 8 actividades en una semana de 5 días sin romper la restricción temprana del alumnado, de esta forma no se podrá obtener un horario.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="143"/>
@@ -36997,17 +37002,17 @@ Añadir años y usar la opción &apos;Dividir ...&apos; en el diálogo años es 
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="161"/>
         <source>Important: you must consider that each year contains groups which contain independent subgroups. Subgroups should have all the activities of the year and group plus additional optional activities. Please check menu statistics/students for subgroups, each subgroup should have a reasonable number of working hours per week, close to the average of hours per week for all subgroups.</source>
-        <translation type="unfinished"></translation>
+        <translation>Importante: debe considerar que cada año contiene grupos que a su vez contienen subgrupos independientes. Los subgrupos deben tener todas las actividades del año y los grupos más las actividades opcionales adicionales. Consulte el menú de estadísticas/alumnado para los subgrupos, cada subgrupo debe tener un número razonable de horas de trabajo semanales, cercanas al promedio de horas semanales de todos los subgrupos.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="165"/>
         <source>An impossible timetable might be caused by incorrect years division. Please check statistics/students for all subgroups, each subgroup should have the necessary hours, not less. If you have for instance some subgroups with less than say 20 hours per week you might get an impossible timetable, probably because of incorrect division of years and incorrectly added activities. All the subgroups are independent. If you have a subgroup with only 2 hours per week and constraint early, then these 2 activities must be placed in the first hours of the day, which is probably much too hard (wrong).</source>
-        <translation type="unfinished"></translation>
+        <translation>La división de años incorrecta puede ser la causa de un horario imposible de generar. Verifique las estadísticas/alumnado de todos los subgrupos, cada subgrupo debe tener las horas necesarias, no menos. Si tiene, por ejemplo, algunos subgrupos con menos de 20 horas semanales la generación de un horario puede ser imposible, probablemente debido a la división errónea de años y añadir incorrectamente actividades. Todos los subgrupos son independientes. Si tiene un subgrupo con sólo 2 horas semanales y una restricción de inicio temprano, entonces debe colocar esas 2 actividades en las primeras horas del día, lo que es probablemente demasiado difícil (incorrecto).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="177"/>
         <source>Another possibility: you can see that each activity has allowed more teachers/students sets. If you need to split year Y according to Language1 (with teachers T1 and T2), you might not split Y and add an activity with Y and teachers T1 and T2 and subject &apos;Language1&apos;. This is a small trick, which might be easier to use than to divide a year.</source>
-        <translation type="unfinished"></translation>
+        <translation>Otra posibilidad: puede ver que a cada actividad se le han asignado más profesores/grupos. Si necesita dividir el año A de acuerdo a Idioma1 (con los profesores P1 y P2), pudiera no querer dividir A sino añadir una actividad A con profesores P1 y P2 junto con la materia &apos;Idioma1&apos;. Este es un pequeño truco, más fácil de usar que dividir un año.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="185"/>
@@ -37018,7 +37023,13 @@ A: FET was designed to allow any school structure:
 - independent subgroups (non-overlapping);
 
 - overlapping groups (several subgroups) and years (several groups).</source>
-        <translation type="unfinished"></translation>
+        <translation>P: ¿Qué estructura de alumnos puede FET manejar?
+
+R: FET fue diseñado para permitir cualquier tipo de estructura escolar:
+
+- subgrupos independientes (no traslapados);
+
+- grupos traslapados (varios subgrupos) y años (varios grupos).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="194"/>
@@ -37036,19 +37047,34 @@ Activity2: teacher B, group boys, subject sport;
 Activity3: teacher C, group physics, subject optional physics.
 
 NEW: the thing is automatic now. Just select year-&gt;divide in the years dialog. Please see above entries in the FAQ.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: ¿Cómo se puede trabajar con estructuras de alumnos traslapados?
+
+R: Si tiene grupos traslapados, entonces debe definir los subgrupos independiente más pequeños que no se superponga con ningún otro subgrupo. Ejemplo: tiene 1 grupo, con la materia deporte (que se enseña a chicos y chicas por separado) y con la materia física, que es un tema opcional y sólo algunos alumnos quisieren asistir (así es, FET puede manejar cursos opcionales). Entonces, debe definir 4 subgrupos: chicos que quieren física y los que no la quieren (y lo mismo para las niñas). Esto es muy fácil. Sólo defina
+
+grupo de chicas = subgrupo de chicas que quieren física + aquellas que no la quieren
+grupo de chicos= subgrupo de chicos que quieren física + aquellos que no la quieren
+grupo física = chicos que quieren física + chicas que quieren física.
+
+Luego puede agregar tantas actividades como desee a los grupos correspondientes:
+Actividad 1: profesor A, grupo de chicas, materia deporte;
+Actividad 2: profesor B, grupo de chicos, materia deporte;
+Actividad 3: profesor C, grupo física, materia opcional física.
+
+NUEVO: esto puede hacerse ahora de forma automática. Seleccione año&gt; dividir en el diálogo de años. Vea las entradas anteriores en las PMF.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="213"/>
         <source>Q: Can you add more students sets or teachers to a single activity?
 
 A: Yes, you can add several students sets (subgroups, groups or years) and several teachers per activity.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: ¿Se puede agregar más grupos o profesores a una actividad?
+
+R: Sí, puede agregar varios grupos (subgrupos, grupos o años) y varios profesores por actividad.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="244"/>
         <source>If you need to balance 3 activities in a 5 days week, you can add, in the new version 5.5.8 and higher, directly from the add activity dialog, 2 constraints. You just have to input min days 2, and FET will ask if you want to add a second constraint with min days 1. This way, you can ensure that the activities are balanced better (at least one day apart, usually 2 days apart)</source>
-        <translation type="unfinished"></translation>
+        <translation>Si necesita equilibrar 3 actividades en una semana de 5 días, puede agregar, a partir de la versión 5.5.8, directamente desde el diálogo añadir actividad, 2 restricciones. Sólo tiene que capturar mín. de días 2, y FET le preguntará si desea añadir una segunda restricción con mín. de días 1. De esta forma, puede asegurarse de que las actividades se equilibran mejor (con al menos un día de diferencia entre ellas y, por lo general, 2 días de diferencia)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="253"/>
@@ -37057,26 +37083,34 @@ A: Yes, you can add several students sets (subgroups, groups or years) and sever
 A: Yes, but this is not easy. All the part regarding data representation and gradually construction of the solution is working, only the interface has to be updated.
 
 Anyway, when you add a compulsory ConstraintActivityPreferredStartingTime, it means that you fixed that activity. You can use this feature for a semi-automatic or even manual timetabling, but it is not so convenient.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: ¿Puedo usar FET para hacer horarios interactivos?
+
+R: Sí, pero no es fácil. Toda la parte relativa a la representación de datos y la construcción gradual de la solución funciona, sólo la interfaz tiene que actualizarse.
+
+De todas formas, cuando se agrega una restricción obligatoria RestriccionActividadHoraPreferidaDeInicio, significa que fija esa actividad. Puede usar esta funcionalidad para un horario semiautomático o incluso manual, pero no es tan práctica.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="274"/>
         <source>Q: I added an activity with min days constraint. But I cannot see the min days value in modify activity dialog
 
 A: Min days is a time constraint. You can see it in the time constraints dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>P: He añadido una actividad con restricción de mín. de días, pero no puedo verla en el diálogo de modificar actividades
+
+R: Mín. días es una restricción de tiempo. Puede verla en el diálogo de restricciones de tiempo</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="293"/>
         <source>Q: How to choose the weight percentage of constraint min days between activities?
 
 A: You can use for the constraint min days the weight you want. It can be 95%, 99%, 99.75% or even 100%, but please make sure your timetable is not too constrained. Please take care of the impossible constraints, they should have under 100% weight (percentage) - best would be 0%. For instance, if a teacher teaches only two days per week and has 3 math lessons for a group, then it is clear that the constraint cannot be respected, so the correct way is to specify under 100% weight (percentage) for the corresponding min days constraint - best would be 0%.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: ¿Cómo elegir el porcentaje de peso de la restricción de mín. de días entre actividades?
+
+R: Puede utilizar el peso que desee para la restricción mín. de días. Puede ser 95%, 99%, 99.75% o incluso 100%, pero asegúrese de no restringir demasiado su horario. Tenga cuidado de las restricciones imposibles, deben tener menos del 100% de peso (en porcentaje) – lo mejor sería 0%. Por ejemplo, si un profesor enseña sólo dos días a la semana y tiene 3 cursos de matemáticas para un grupo, entonces está claro que la restricción no puede respetarse, por lo que la forma correcta es especificar menos del 100% de peso (%) para la correspondiente restricción de mín. de días – siendo lo mejor 0%.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="300"/>
         <source>You could try at first the 95% minimum recommended value, then highten the weight percentage up to maybe 100%. I am not sure here, I have not enough sample files (please contribute with advice). If you would like to change the 95% for another value for all constraints of this type, the easiest way is in Data/Time constraints/Min days between activities dialog, where starting with version 5.3.6 there is a simple command for that.</source>
-        <translation type="unfinished"></translation>
+        <translation>Podría intentar en primer lugar el valor mínimo recomendado del 95%, después aumentar el porcentaje del peso hasta quizá el 100%. No podemos asegurarlo puesto que no contamos con suficientes archivos de muestra (por favor contribuya con más información). Si desea cambiar el 95% con otro valor para todas las restricciones de este tipo, la forma más fácil es en el diálogo Datos/Restricciones de tiempo/Mín. de días entre actividades, donde, a partir de la versión 5.3.6, hay un sencillo comando para ello.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="305"/>
@@ -37090,7 +37124,11 @@ A: You can use for the constraint min days the weight you want. It can be 95%, 9
 A: From the way the algorithm is conceived, the automatic generation is faster if you use students set (or teacher) not available and/or constraint activity(ies) preferred time slots or constraint activity preferred starting time to specify impossible slots, in addition to possible use of students (set) or teacher(s) max hours daily, whenever it is possible. For instance, if you know that year 5 will only have hours from 8:00 to 13:00, it is better to add students set not available in addition to students set max hours daily. So, if possible, try to follow this advice. This trick helps guide FET better towards a solution.
 
 Each constraint of type not available or preferred times which filters out impossible slots might bring an improvement in speed.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: ¿Existen algunas restricciones más eficientes para la velocidad de generación de horarios que otras, incluso si dan el mismo resultado?
+
+R: De la forma en que se concibió el algoritmo, la generación automática es más rápida si se utilizan grupos (o maestros) indisponibles y/o restricciones franjas horarias preferidas para actividad(es) hora preferida de inicio para la actividad para especificar franjas horarias imposibles, además del posible uso de máx. horas diarias para los alumnos (grupos) o profesores, siempre que sea posible. Por ejemplo, si sabe que el 5to año sólo tendrá clases entre de 8:00 a 13:00, es mejor agregar grupos indisponibles, además de máx. de horas diarias por grupo. Trate de seguir este consejo si es posible. Este truco ayuda a guiar mejor a FET hacia una solución.
+
+Cada restricción de tipo no disponible u horas preferidas que filtra las franjas horarias imposibles puede acarrear una mejora en la velocidad.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="391"/>
@@ -37101,7 +37139,13 @@ A: You can specify a set of activities by selecting a teacher (if empty - all te
 Starting means that an activity may only start at these periods.
 
 Time slots means more restrictive, that activity may only start and end and take place in these intervals (if activity has duration 2 and on Monday is allowed 8:00, 9:00 and 10:00, then activity can only start at 8:00 or 9:00).</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Ayuda sobre restricción de franja horaria de inicio o preferida para las actividades (un conjunto de actividades tiene un conjunto de tiempo de inicio o franjas horarias preferidas) 
+
+R: Puede especificar un conjunto de actividades seleccionando un profesor (si está vacío - todos los profesores), un grupo (si está vacío - todos los grupos), una materia (si está vacío – todas las materias) y un código de actividad) y un conjunto de franjas horarias permitidas.
+
+Iniciar significa que una actividad sólo puede comenzar en estos períodos.
+
+Las franjas horarias (en sentido más restrictivos) significan que la actividad sólo puede comenzar, terminar y tener lugar en los intervalos definidos (si la actividad tiene duración 2 y es el lunes permitiéndose a las 8:00, 9:00 y 10:00, entonces la actividad sólo puede comenzar a las 8:00 ó 9:00).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="515"/>
@@ -37120,7 +37164,21 @@ A: I have a very good solution for you, but it is a bit complicated to add.
 Suppose you have activities A1 and A2. Add dummy A3, with duration 1, no teachers and no students. Add constraint two activities consecutive, A2 and A3 (A2 followed by A3). Add constraint activities not overlapping, A1 and A3.
 
 There is only a small problem: A2 cannot be put in the last period. To correct that: increase the number of hours with 1 and constraint all the real activities (without A3) to take place in the first periods. You can do that by adding an activity tag to A1 and A2 named Early and an activity tag to A3 named Any, and constraint activities preferred time slots for activity tag Early to be in the first n-1 slots of each day.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Lo que requiero es una forma de crear la siguiente restricción: 
+
+Si la Actividad1 viene primero, entonces la Actividad2 puede ser consecutiva. Pero, si la Actividad2 viene primero, entonces la Actividad1 debe tener al menos un período intercalado.
+
+Por ejemplo, si el algoritmo coloca Danza en la 1ª hora, entonces Lucha se puede colocar en la 2ª, pero si Lucha se coloca en 1ª, entonces Danza debe ser al menos en la 3ª hora, si no es que posterior.
+
+Una solución más simple, pero menos útil, podría ser una restricción que diga:
+
+Actividad1 y Actividad2 no serán consecutivas.
+
+R: Una buena solución para este caso, pero un poco complicado, se describe a continuación.
+
+Supongamos que tiene las actividades A1 y A2. Añada la Ficticia A3, con duración 1, sin profesores y ni alumnos. Agregue la restricción de dos actividades consecutivas, A2 y A3 (A2 seguida de A3). Añada una restricción de actividades que no se traslapan, A1 y A3.
+
+Sólo hay un pequeño problema: A2 no se puede poner en el último período. Para corregir esto: aumente el número de horas en 1 y restrinja todas las actividades reales (sin A3) a que comiencen en los primeros períodos. Puede hacerlo agregando un código de actividad a A1 y A2 denominada Temprano y un código de actividad a A3 denominada Cualquiera, y restringir las franjas horarias preferidas de las actividades para el código de actividad Temprano para que estén en las primeras n-1 franjas horarias de cada día.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="534"/>
@@ -37129,14 +37187,20 @@ There is only a small problem: A2 cannot be put in the last period. To correct t
 A: Time slots is more restrictive, means all hours of an activity must be in the allowed intervals.
 
 Example: Preferred times Monday 8,9 and 10. If activity A has duration 2, then starting means that activity A can start at 8, 9 or 10 on Monday, while time slots means that activity A can start on Monday at 8 or 9 (10 is not allowed, because the last hour of activity is not allowed there).</source>
-        <translation type="unfinished"></translation>
+        <translation>P: ¿Cuál es la diferencia entre las horas de inicio preferidas y las franjas horarias preferidas?
+
+R: Las franjas horarias son más restrictivas, significa que todas las horas de una actividad deben estar en los intervalos permitidos.
+
+Ejemplo: Horarios preferidos lunes 8, 9 y 10. Si la actividad A tiene una duración 2, el inicio preferido significa que la actividad A puede iniciar a las 8, 9 ó 10 del lunes, mientras que la franja horaria significa que la actividad A puede comenzar sólo a las 8 ó 9 (10 no se permite, porque la última hora de la actividad no se puede incluir en este caso).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="557"/>
         <source>Q: What type of files uses FET?
 
 A: FET uses text files, xml or html or txt or csv (comma separated values - for import/export). The used encoding is UTF-8.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: ¿Qué tipo de archivos utiliza FET?
+
+R: FET utiliza archivos de texto, XML, HTML, TXT o CSV (valores separados por delimitadores - para importar/exportar). La codificación utilizada es UTF-8.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="564"/>
@@ -37153,7 +37217,19 @@ Time slots means more restrictive, that activity may only start and end and take
 This is useful if you need for instance, if Maths lessons are 4-5 per week, to constrain that the first component and the second component must be early. You will add 2 constraints for that, with component number 1 and 2, both with subject Maths. Or, if you want for activities split into 4 that 2 lessons are early and for activities split into 5 that 3 activities are early, add constraint Maths with split number 3, 4 and 5 (nice trick).
 
 Another thing: if you have 1 or 2 lessons per week for a subject, say biology, and want to constrain one of the components if there are 2 per week, and none if there is only 1, you can add such a constraint for component number=2.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Ayuda sobre restricciones hora de inicio preferidas o franjas horarias preferidas para subactividades (un conjunto de subactividades tiene un conjunto de franjas horarias preferidas o de inicio)
+
+R: Selecciona el número de componentes de ciertas actividades (por ejemplo, si tiene una actividad dividida en 5 actividades semanales, tiene los componentes 1, 2, 3, 4 ó 5). Sólo el número seleccionado de esta actividad dividida se restringirá (la correspondiente actividad del componente).
+
+También especificará el conjunto de subactividades seleccionando un profesor (si vacío - todos los profesores), un grupo (si vacío - todos los grupos), una materia (si vacío - todas las materias), un código de actividad (si vació – todos los códigos de actividad) y un conjunto de franjas horarias permitidas.
+
+Los tiempos de inicio significan que una actividad sólo puede comenzar en estos períodos.
+
+Las franjas horarias son más restrictivas, en cuanto que la actividad sólo puede comenzar y terminar y tener lugar en esos intervalos (si la actividad tiene duración 2 y el lunes se permiten horarios a las 8:00, 9:00 y 10:00, entonces la actividad sólo puede comenzar a las 8:00 ó 9:00).
+
+Esto es útil si necesita, por ejemplo, que las lecciones de matemáticas que son 4 y 5 a la semana, se restrinjan para que el primer componente y el segundo sean temprano. Añadirá, entonces, 2 restricciones, con el componente número 1 y 2, ambos con la materia Mate. O, si lo desea, para las actividades divididas en 4 en que 2 lecciones son tempranas y para las actividades divididas en 5 que 3 actividades son temprano, añada la restricción Mate con la división número 3, 4 y 5 (buen truco).
+
+Otra cosa: si tiene 1 ó 2 lecciones por semana para una materia, digamos biología, y desea restringir uno de los componentes si hay 2 por semana y ninguno si sólo hay 1, puede agregar una restricción para el componente 2.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="601"/>
@@ -37162,7 +37238,11 @@ Another thing: if you have 1 or 2 lessons per week for a subject, say biology, a
 A: I have a nice trick: add a dummy activity, 1 hour duration, with only this teacher (no students sets, any subject), additional to the real activity.
 
 This trick just passed through my mind as I was trying to write you that you have to do it the hard way (add constraints for each teacher)</source>
-        <translation type="unfinished"></translation>
+        <translation>P: En nuestra escuela hay muchos profesores que sólo trabajan unas pocas horas a la semana. Por supuesto que es realmente desagradable conducir una hora hasta el colegio. Así que hemos establecido la restricción de que cada profesor debe trabajar por lo menos 2 horas diarias. Desafortunadamente tenemos este año un profesor que sólo trabaja 1h semanalmente. Como resultado de esto, FET se niega a generar un horario. ¿Alguna sugerencia de cómo arreglar el problema sin definir una restricción para cada maestro?
+
+R: Existe un buen truco: añada una actividad ficticia, de 1 hora de duración, con sólo ese profesor (sin grupos, cualquier materia), adicional a la actividad real.
+
+Este truco se me acaba de ocurrir justo cuando le escribía que tenía que hacerlo de la manera más difícil (añadir restricciones para cada maestro)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="622"/>
@@ -37175,12 +37255,20 @@ Hour 11:00 Break
 Hour 12:00 Math (second hour of act. 100)?
 
 A: No, the activity must respect the break, so it is before or after the break with all the hours of it.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Tengo una actividad de doble duración. ¿Es posible distribuirla durante el período de descanso, como, por ejemplo:
+
+Actividad Matemáticas, duración 2, id, por ejemplo, 100
+
+Hora 10:00 Matemáticas (primera hora de la Act. 100)
+Hora 11:00 Descanso
+Hora 12:00 Matemáticas (segunda hora de la Act. 100)?
+
+R: No, la actividad debe respetar el descanso, por lo que la actividad es o antes o después del descanso con todas sus horas.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="629"/>
         <source>Alternative solutions: either you can split that activity into two subactivities with duration 1 (without a min days constraint between them), and add a two activities consecutive constraint, or you can choose to not add the break constraint in your file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Soluciones alternativas: ya sea que puede dividir esa actividad en dos subactividades con duración 1 (sin restricción de mín. de días entre ellas) y agregar una restricción de dos actividades consecutivas, o puede optar por no agregar la restricción de descanso en su archivo.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="662"/>
@@ -37193,17 +37281,25 @@ Any other ideas...?
 A: I have another idea: choose 2 activities of this teacher which clearly cannot be on the same day, and add constraint min days between activities, 2 days, 100%.
 
 Or add a dummy activity for this teacher, split into 2 per week, min days = 2, with 100%. You just need to take care that this teacher has place for these dummy activities (enough slots in the day) and to consider these dummy activities as possible gaps, so if teacher has max gaps 2 then make max gaps for him 0.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: (por Horatiu Halmajan) Me encontré con la siguiente situación: un profesor solicita un máximo de 2 días hábiles, pero no deben ser consecutivos. ¿Hay alguna forma de implementarlo en FET?
+
+La única manera (manual) en la que pude pensar es que el profesor no esté disponible los martes y jueves, dejándolo disponible el lunes, miércoles y viernes (dos de ellos no consecutivos).
+
+¿Alguna otra idea ...?
+
+R: Otra solución: elegir 2 actividades de este profesor que claramente no pueden ser en el mismo día y añadir una restricción de mín. de días entre actividades de 2 días al 100%.
+
+Otra solución puede ser agregar una actividad simulada para este profesor, dividida en 2 semanales, con un mín. de días = 2 al 100%. Sólo tiene que tener cuidado de que este profesor tiene lugar para estas actividades ficticias (suficientes franjas horarias al día) y considerar estas actividades ficticias como posibles huecos, por lo que si el profesor tiene un máximo de huecos = 2 entonces hacer el máximo de huecos para él = 0.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="743"/>
         <source>The first hint for other users is to start with minimum number of constraints and if FET would generate the plan then thinking about adding the next ones.</source>
-        <translation type="unfinished"></translation>
+        <translation>El primer consejo para otros usuarios es comenzar con un número mínimo de restricciones y, si FET genera correctamente el horario, entonces pensar en agregar las siguientes.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="746"/>
         <source>The second hint is not to change too many constraints in one simulation as it may lead to impossible timetable and then it is difficult to say which particular constraint was too much.</source>
-        <translation type="unfinished"></translation>
+        <translation>El segundo consejo es no cambiar demasiadas restricciones a la vez en una simulación ya que puede conducir a que FET encuentre que es imposible generar un horario y le será difícil saber qué restricción en particular causa el problema.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="797"/>
@@ -37223,39 +37319,57 @@ Here is an example to explain this (it is an impractical example, but it is bett
 3) Why can FET find a timetable the third time (with locked A1, A2, A3, A4 and A5)? Because activities with more students sets are scheduled firstly (in general, locked activities are placed in descending order of the sum of the number of teachers and subgroups) and a locked activity is never rescheduled. So, FET puts A1 first, then A2, A3, A4 and A5. Since it retries more times separately for each activity, it is able to find a timetable easily.
 
 Practical solution to case 2)? Reduce weights of constraints which have weight below 100% or lock (to a corresponding slot) the activity which corresponds to A1 in your data file.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Este es un problema que probablemente nunca aparecerá en la práctica, pero es posible. Digamos que el usuario genera un horario con éxito, bloquea algunas actividades, luego intenta generar de nuevo, pero el FET se detiene en una determinada actividad e informa que es imposible generar el horario.
+
+R: De hecho, este es un problema potencial en FET (pero probablemente nunca aparecerá en la práctica). Puede ocurrir si tiene restricciones con un peso inferior al 100%, que pueden invalidarse al generar el calendario.
+
+Aquí hay un ejemplo para explicar esto (es un ejemplo poco práctico, pero es mejor ya que es muy simple): tiene 4 conjuntos de alumnos (Y1, Y2, Y3, Y4). 5 actividades: A1 (Y1, Y2, Y3, Y4), A2 (Y1), A3 (Y2), A4 (Y3), A5 (Y4). Sólo cuenta con un día a la semana y 2 horas al día. Se agrega una restricción de máximo de horas diarias para el alumnado, máximo 1 hora, 95% porcentaje de peso.
+1)Empezar a generar. Poco tiempo después (tal vez unos minutos), FET encontrará una solución (con el máximo de horas diarias ignorado para todos los grupos).
+2)A continuación, bloquee A2, A3, A4 y A5 e intente generar de nuevo. En algunos casos FET reportará una actividad imposible A1.
+3) Si bloquea A1, A2, A3, A4 y A5, FET será capaz de encontrar un horario rápidamente.
+
+1) ¿Por qué FET puede generar el horario la primera vez? Debido a que en algunos casos FET será capaz de ignorar una por una las 4 restricciones de máximo de horas diarias para A2, A3, A4 y A5 (ninguna actividad queda bloqueada, por lo que puede intentar más veces colocar/reemplazar las actividades y encontrará una manera de poner A1, luego poner el resto de las actividades).
+
+2) ¿Por qué a veces FET no puede generar el horario la segunda vez (con A2, A3, A4 y A5 bloqueadas)? Porque: A2, A3, A4 y A5 están bloqueadas y programadas en primer lugar. Entonces FET intenta poner A1. Pero para poner A1, significa violar una restricción del 95% 4 veces, porque hay 4 grupos en A1. Un peso de 95% 4 veces seguidos es equivalente a una restricción con peso de 100% - (5%^4) = 99.99999375%, que es una restricción muy fuerte, difícil de romper. FET intentará más veces para la actividad A1, por lo que en algunos casos encontrará un horario incluso bajo estas condiciones.
+
+
+3) ¿Por qué FET puede encontrar un horario la tercera vez (con A1, A2, A3, A4 y A5 bloqueadas)? Debido a que las actividades con más grupos están programadas en primer lugar (en general, las actividades bloqueadas se colocan en orden descendente de la suma del número de profesores y subgrupos) y una actividad bloqueada nunca se reprograma. Por lo tanto, FET coloca A1 primero y luego A2, A3, A4 y A5. Puesto que reintenta más veces por separado para cada actividad, es capaz de encontrar un horario fácilmente.
+
+¿Solución práctica al caso 2)? Reducir los pesos de las restricciones que tienen un valor inferior al 100% o bloquear (en una franja horaria correspondiente) la actividad que corresponde a A1 en el archivo de datos.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="823"/>
         <source>Q: I tried to work on a fixed timetable, to move an activity to another time slot. Now I got stuck - FET says: impossible to generate.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Traté de crear en un horario fijo y mover una actividad a otra franja horaria. Me he quedado atorado - FET me informa que es: imposible de generar.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="825"/>
         <source>A: There is this potential problem. Suppose you have max hours daily for students = 4 hours, 99%. You generated successfully (maybe you got some days with more than 4 hours, it does not matter for our discussion). Now, if you have a day with 4 hours and try to move another activity to this day, some students will have 5 hours in this day. If in this day all activities have more students sets, FET may report an impossible timetable. Why? Because if you have an activity with say 4 subgroups, 99% is assumed for each subgroup, resulting in a very strong constraint for this activity. (100%-(1%^4)). Even if FET retries more times for each activity, it is not enough.
 
  A solution: lower the weight of this constraint from 99% to 90% or less.</source>
-        <translation type="unfinished"></translation>
+        <translation>R: Existe este problema potencial. Supongamos que tiene un máximo de horas diarias para el alumnado = 4 horas con un 99%. Genera con éxito un horario (tal vez tiene algunos días con más de 4 horas, pero no importa para nuestra discusión). Ahora, si tiene un día con 4 horas e intenta mover otra actividad a ese día, algunos alumnos tendrán 5 horas en este día. Si en este día todas las actividades tienen más grupos, FET puede reportar que la generación de un horario es imposible. ¿Por qué? Porque si tiene una actividad con, por ejemplo, 4 subgrupos, el 99% de ella se asume para cada subgrupo, dando por resultado una restricción muy fuerte para esa actividad (100%-(1%^4)). Incluso si FET reintentos más veces para cada actividad, no es suficiente.
+
+Una solución: baje el peso de esta restricción de 99% a 90% o menos.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="839"/>
         <source>Q: A trick to deal with fortnightly activities (my institution has a lot of fortnightly activities):</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Un truco para hacer actividades quincenales (mi institución tiene muchas actividades de ese tipo):</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="841"/>
         <source>A: I divided hours in two, the first half (8.00 to 8.30, 9.00 to 9.30, ...) represents week A, the second half (8.30 to 9.00, 9.30 to 10.00, ...) represents week B, fortnightly activities have duration 1, weekly activities have duration 2.</source>
-        <translation type="unfinished"></translation>
+        <translation>R: Dividí las horas en dos, la primera mitad (8.00 a 8.30, 9.00 a 9.30, ...) representa la semana A, la segunda mitad (8.30 a 9.00, 9.30 a 10.00, ...) representa la semana B, las actividades quincenales tienen una duración de 1, las actividades semanales tienen una duración de 2.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="845"/>
         <source>I created an activity tag &apos;Start hour&apos;. It should be added to each weekly activity to make sure they start at the same time (same day + same hour) on each week. Otherwise, an activity with duration 2 can start on a second half of hour in the timetable, so this activity is placed on a certain day and at a certain hour on week A, and on the same day but at the next hour on week B.</source>
-        <translation type="unfinished"></translation>
+        <translation>Creé un código de actividad &quot;Hora de inicio&quot;. Debe agregarse a cada actividad semanal para asegurarse de que empiezan al mismo tiempo (mismo día + misma hora) cada semana. De lo contrario, una actividad con duración 2 puede comenzar en a la segunda mitad de la hora en el horario, por lo que esta actividad se coloca en un día y hora determinada en la semana A y el mismo día, pero a la hora siguiente en la semana B.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="859"/>
         <source>Q: I need to add a split activity with total duration 4, which can be either 2+2 or 2+1+1 (two hours in a day and two hours in another day, or two hours in a day, one hour in another day and one hour in another day).</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Necesito agregar una actividad divisoria con duración total de 4, que puede ser 2 + 2 ó 2 + 1 + 1 (dos horas en un día y dos horas en otro día, o dos horas en un día, una hora en otro día y una hora en otro día).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="862"/>
@@ -37264,17 +37378,21 @@ Practical solution to case 2)? Reduce weights of constraints which have weight b
 Add two constraints min 1 day between activities with id-s 1 and 2 and between activities with id-s 1 and 3, 100% weight percentage.
 
 Add another constraint: min 1 day between activities with id-s 2 and 3, consecutive if same day = yes, 0% weight percentage.</source>
-        <translation type="unfinished"></translation>
+        <translation>R: Añada 3 actividades (supongamos que sus ID son 1, 2 y 3), con duraciones respectivamente de 2, 1 y 1. Es preferible agregarlas como 3 actividades individuales/independientes (ver nota más abajo).
+
+Añada dos restricciones de 1 día mín. entre actividades con ID 1 y 2 y entre actividades con ID 1 y 3, con 100% de porcentaje de peso.
+
+Agregue otra restricción: 1 día mín. entre actividades con ID 2 y 3, consecutiva si en el mismo día = sí, con 0% de porcentaje de peso.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="867"/>
         <source>Note: It is advisable to add the 3 activities as single/independent ones (not a larger split activity with 3 components). The reason is that if you want to apply spreading of activities over the week, this operation won&apos;t add/remove constraints of type min days between activities for these 3 activities. Also, if you add a split activity, you need to take care not to add a default constraint min days between the 3 components.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nota: Es aconsejable agregar las 3 actividades como únicas/independientes (no una mayor dividida en 3 componentes). La razón es que, si desea aplicar la distribución de actividades durante la semana, esta operación no agregará/eliminará restricciones de tipo mín. de días entre actividades para estas 3 actividades. Además, si agrega una actividad divisoria, debe tener cuidado de no agregar una restricción predeterminada mín. de días entre los 3 componentes.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="877"/>
         <source>Q: I would like to specify that a teacher should have activities in certain time slots, no matter which activities.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Quisiera poder especificar que un profesor debe tener actividades en ciertas franjas horarias, sin importar las actividades.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="879"/>
@@ -37284,47 +37402,47 @@ Add another constraint: min 1 day between activities with id-s 2 and 3, consecut
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="886"/>
         <source>Q: How to easily find the activities with unspecified room in the timetable (after the timetable was generated)?</source>
-        <translation type="unfinished"></translation>
+        <translation>P: ¿Cómo puedo fácilmente encontrar las actividades con un aula no especificada en el horario (después de generarlo)?</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="888"/>
         <source>A: A trick is this: open the file representing the activities timetable in XML form (this file can be found in the results directory, with a name like: file_activities.xml) with a text editor, and search for the text &lt;Room&gt;&lt;/Room&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>R: He aquí un truco: abrir el archivo del horario de actividades en formato XML (este archivo se puede encontrar en el directorio de resultados, con un nombre tal como: file_activities.xml) con un editor de texto y busque el texto &lt;Room&gt; &lt;/Room&gt;</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="895"/>
         <source>Q: The students and/or teachers should have in each day some activities without interruption, then some continuous gaps, then again some activities without interruption. This situation can appear in these cases: schools in Morocco and Algeria, which have morning and afternoon shifts, and also in some universities in which students would prefer to have at most a single cluster of gaps, no matter how long, in each day. How to treat such situations in FET?</source>
-        <translation type="unfinished"></translation>
+        <translation>P: El alumnado y/o profesorado deben tener cada día algunas actividades sin interrupción, luego algunos huecos continuos, luego de nuevo algunas actividades sin interrupción. Esta situación puede darse en ciertos casos: escuelas en Marruecos y Argelia, que tienen turnos matutinos y vespertinos, y también en algunas universidades en las que los alumnos prefieren tener un grupo único de huecos, no importando que tan largo, cada día. ¿Cómo tratar estas situaciones en FET?</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="901"/>
         <source>A: A nice way to treat such situations would be to consider the number of FET days = 2 * the number of real days. Each real day corresponds to two FET days, one for the morning and one for the afternoon. Then, add constraints max zero gaps, and maybe min two hours daily with allow empty days true. You may need to devise some other tricks, in addition.</source>
-        <translation type="unfinished"></translation>
+        <translation>R: Una buena forma de tratar estas situaciones sería considerar el número de días FET = 2 * el número de días reales. Cada día real corresponde a dos días FET, uno para la mañana y otro para la tarde. A continuación, agregue restricciones máximo cero huecos, y tal vez un mín. de dos horas diarias con la opción permitir días libres verdadero. Puede que, además, tenga que idear otros trucos.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="909"/>
         <source>Q: How can I add a comment to a (sub)activity or to a constraint?</source>
-        <translation type="unfinished"></translation>
+        <translation>P: ¿Cómo puedo añadir un comentario a una (sub)actividad o a una restricción?</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="911"/>
         <source>A: You can add a comment to a (sub)activity by clicking the &apos;Comments&apos; button in the (sub)activities dialog. You can add a comment to a constraint by clicking the &apos;Comments&apos; button in the all time/space constraints dialogs.</source>
-        <translation type="unfinished"></translation>
+        <translation>R: Puede agregar un comentario a una (sub)actividad haciendo clic en &apos;Comentarios&apos; en el diálogo (sub)actividades. Puede agregar un comentario a una restricción haciendo clic en &apos;Comentarios&apos; en los diálogos de todas las restricciones de tiempo/lugar.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="918"/>
         <source>Q: How can I activate/deactivate a constraint?</source>
-        <translation type="unfinished"></translation>
+        <translation>P: ¿Cómo puedo activar/desactivar una restricción?</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="920"/>
         <source>A: You can activate/deactivate a constraint by clicking the &apos;Activate&apos;/&apos;Deactivate&apos; buttons in the all time/space constraints dialogs.</source>
-        <translation type="unfinished"></translation>
+        <translation>R: Puede activar/desactivar una restricción haciendo clic en Activar/Desactivar en todos los diálogos de las restricciones de tiempo/lugar.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="937"/>
         <source>Q: How can I specify that some activities must be in the same room (at different time slots, of course, because a single room can hold a single activity in a certain time slot)? This is needed for instance to constrain the Physics activities of a certain students set to take place in the same room, be it Lab-1 or Lab-2</source>
-        <translation type="unfinished"></translation>
+        <translation>P: ¿Cómo puedo especificar que algunas actividades deben estar en la misma aula (en diferentes franjas horarias, por supuesto, porque el aula individual puede tener una sola actividad en una franja horaria determinada)? Esto es necesario, por ejemplo, para restringir la actividad de Física de un determinado grupo a que tenga lugar en la misma sala, ya sea Lab-1 o Lab-2</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="941"/>
@@ -37334,27 +37452,27 @@ Add another constraint: min 1 day between activities with id-s 2 and 3, consecut
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="947"/>
         <source>Q: How can I backup/restore the FET settings on a computer, or share them between different computers?</source>
-        <translation type="unfinished"></translation>
+        <translation>P: ¿Cómo puedo hacer una copia de seguridad/restaurar la configuración de FET o compartirla entre distintos equipos?</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="949"/>
         <source>A: GNU/Linux: Usually, in your %1 directory you will find a directory &quot;%2&quot; containing the file &quot;%3&quot;. If you copy this file to another computer, the FET settings will be copied. You can also make a backup of this file and copy it on the same computer, later, to restore the previous settings. If you remove this file, all FET settings on this computer will be reset to defaults.</source>
-        <translation type="unfinished"></translation>
+        <translation>R: GNU/Linux: Normalmente, en su directorio %1 encontrará un directorio &quot;%2&quot; que contiene el archivo &quot;%3&quot;. Si copia este archivo a otro equipo, copiará la configuración FET. También puede realizar una copia de seguridad de este archivo y copiarlo en el mismo equipo, posteriormente, para restaurar la configuración anterior. Si borra este archivo, todas las configuraciones de FET en este equipo se restablecerán a los valores predeterminados.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="955"/>
         <source>Mac OS X: It seems that the configuration file might be %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Mac OS X: Parece ser que su archivo de configuración podría ser %1</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="957"/>
         <source>Windows: Run regedit.exe (Registry Editor) and search for the key &quot;%1&quot;. You will find a section with this name, with the subsection &quot;%2&quot;. You can export this section to a file, and import it from this file on the same or another computer. If you remove this section, all FET settings will be reset to defaults.</source>
-        <translation type="unfinished"></translation>
+        <translation>Windows: Ejecute regedit.exe (Editor del Registro) y busque la clave &quot;%1&quot;. Encontrará una sección con este nombre, con la subsección &quot;%2&quot;. Puede exportar esta sección a un archivo e importarla desde este archivo en este mismo equipo u otro. Si quita esta sección, todos los ajustes FET se restablecerán a los valores predeterminados.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="965"/>
         <source>Q: I have many subgroups and I don&apos;t explicitly use them. Can I hide them in the combo boxes, to add easier the constraints? Also, can I make the FET interface work faster?</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Tengo muchos subgrupos y no los uso explícitamente. ¿Puedo ocultarlos en las listas desplegables para agregar más fácilmente las restricciones? Además, ¿puedo hacer que la interfaz FET funcione más rápido?</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="968"/>
@@ -37362,7 +37480,7 @@ Add another constraint: min 1 day between activities with id-s 2 and 3, consecut
         <location filename="../src/interface/helpfaqform.cpp" line="1019"/>
         <source>A:</source>
         <comment>Answer</comment>
-        <translation type="unfinished"></translation>
+        <translation>R:</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="970"/>
@@ -37402,42 +37520,42 @@ Add another constraint: min 1 day between activities with id-s 2 and 3, consecut
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="997"/>
         <source>About using a large number of categories, divisions per category and subgroups: it is highly recommended to keep these to a minimum, especially the number of categories, by using any kind of tricks. Otherwise the timetable might become impossible (taking too much time to generate).</source>
-        <translation type="unfinished">Se recomienda mantener al mínimo el número de categorías, divisiones por categoría y subgrupos, especialmente las categorías, utilizando cualquier tipo de trucos. De lo contrario, el calendario podría llegar a ser imposible a generar (o tomar demasiado tiempo).</translation>
+        <translation>Se recomienda mantener al mínimo el número de categorías, divisiones por categoría y subgrupos, especialmente las categorías, utilizando cualquier tipo de trucos. De lo contrario, el horario podría llegar a ser imposible a generar (o tomar demasiado tiempo).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="1001"/>
         <source>Maybe a reasonable number of categories could be 2, 3 or maximum 4. The divide year dialog allows much higher values, but these are not at all recommended.</source>
-        <translation type="unfinished">Tal vez un número razonable de categorías podría ser 2, 3 o máximo 4. El diálogo de dividir el año permite valores mucho más altos, pero estos no se recomiendan.</translation>
+        <translation>Tal vez un número razonable de categorías podría ser 2, 3 o máximo 4. El diálogo de dividir el año permite valores mucho más altos, pero estos no se recomiendan.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="1004"/>
         <source>Maybe an alternative to dividing a year into many categories/subgroups would be to enter individual students as FET subgroups and add into each group the corresponding subgroups. But this is hard to do from the FET interface - maybe a solution would be to use an automatic tool to convert your institution data into a file in .fet format.</source>
-        <translation type="unfinished">Tal vez una alternativa a dividir un año en muchas categorías/subgrupos sería ingresar a los alumnos individualmente como subgrupos FET y agregar en cada grupo los subgrupos correspondientes. Pero esto es difícil de hacer desde la interfaz FET – quizá una solución sería utilizar una herramienta automática para convertir sus datos en un archivo en formato .fet.</translation>
+        <translation>Tal vez una alternativa a dividir un año en muchas categorías/subgrupos sería ingresar a los alumnos individualmente como subgrupos FET y agregar en cada grupo los subgrupos correspondientes. Pero esto es difícil de hacer desde la interfaz FET – quizá una solución sería utilizar una herramienta automática para convertir sus datos en un archivo en formato .fet.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="1008"/>
         <source>Or you might use the FET feature to import students sets from comma separated values (CSV) files.</source>
-        <translation type="unfinished">O puede usar la función FET para importar grupos de archivos CSV (valores separados por comas).</translation>
+        <translation>También puede usar la función FET para importar grupos de archivos CSV (valores separados por delimitadores).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="1010"/>
         <source>In such cases (individual students as FET subgroups), remember that a smaller number of total subgroups means faster generation time, so you might want to consider a single subgroup for two or more students who have the exact same activities and constraints.</source>
-        <translation type="unfinished">En tales casos (alumnos individuales como subgrupos FET), recuerde que un número menor del total de subgrupos significa un tiempo de generación de horarios más rápido, por lo que es posible que desee considerar un solo subgrupo para dos o más alumnos que tienen exactamente las mismas actividades y restricciones.</translation>
+        <translation>En tales casos (alumnos individuales como subgrupos FET), recuerde que un número menor del total de subgrupos significa un tiempo de generación de horarios más rápido, por lo que es posible que desee considerar un subgrupo único para dos o más alumnos que tienen exactamente las mismas actividades y restricciones.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="1017"/>
         <source>Q: Does the order of constraints have influence on their importance while generating the timetable?</source>
-        <translation type="unfinished"></translation>
+        <translation>P: ¿El orden de las restricciones influye cambiando su importancia al generar el horario?</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="1021"/>
         <source>The order of the constraints is only important to the interaction with the user. It is only the weight percentage which counts while generating the timetable. Note however that you may get different timetables for different constraints order.</source>
-        <translation type="unfinished"></translation>
+        <translation>El orden de las restricciones sólo es importante en la interacción con el usuario. Sólo el porcentaje de peso utilizado cuenta al generar el horario. Tenga en cuenta, sin embargo, que puede obtener horarios distintos al orden las restricciones diferentemente.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="850"/>
         <source>Add time constraint: activities with all teachers, all students, all subjects, activity tag = &apos;Start hour&apos; have a set of preferred starting times: Monday 8.00, Monday 9.00, ...</source>
-        <translation type="unfinished"></translation>
+        <translation>Añadir restricciones de tiempo: actividades con todo el profesorado, todo el alumnado, todas las materias, código de actividades = &apos;Hora de inicio&apos; tienen un conjunto de horas de inicio preferidas: lunes 8.00, lunes 9.00, ...</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="47"/>
@@ -37447,24 +37565,26 @@ Add another constraint: min 1 day between activities with id-s 2 and 3, consecut
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="837"/>
         <source>-- This entry by Regis Bouguin --</source>
-        <translation type="unfinished"></translation>
+        <translation>-- Esta anotación se debe a Regis Bouguin --</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="853"/>
         <source>It works fine and I got good timetables with strong teachers time constraints.</source>
-        <translation type="unfinished"></translation>
+        <translation>Funciona correctamente y obtengo buenos horarios con limitaciones de tiempo para el profesorado estrictas.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="871"/>
         <source>There may be other solutions possible, but this one seems perfect with respect to efficiency.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pueden existir soluciones posibles, pero esta parece perfecta con respecto a la eficiencia.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="323"/>
         <source>Q: I have a sports room which allows more than 1 activity simultaneously in it. How to make the preferred room constraints? Can FET accept more than one activity at the same time in a single room?
 
 A: Each room can host a single activity at the same time. How to implement what you need? You can add more rooms (sport1, sport2, sport3) and instead of a single preferred room add more preferred rooms.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Tengo una sala de deportes que permite más de una actividad simultánea. ¿Cómo defino las restricciones de aulas preferidas? ¿Puede FET aceptar más de una actividad simultánea en un aula individual?
+
+R: Cada aula puede sola albergar una actividad al mismo tiempo. ¿Cómo implementar lo que necesita? Puede agregar más aulas (Depo1, Depo2, Depo3) y en lugar de un aula preferida añadir más aulas preferidas.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="49"/>
@@ -37488,22 +37608,31 @@ A: - Students - organized into sets (years (or forms, or classes), containing gr
 - Buildings.
 - Activities: a coupling of one or more teachers, a subject and one or more students set. This is usually named a course, a lecture, a laboratory and so on. An activity can have optionally an activity tag, to help you with some constraints.
 - Constraints. They can be: time constraints (referring to the allocated day and hour) or space constraints (referring to rooms allocation). They have a weight percentage, from 0.0% to 100.0%. 100% means that the constraint will always be respected and if this constraint is impossible, FET will not be able to generate a timetable.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: ¿Cuál es la organización de datos de entrada de FET?
+
+R: - Alumnos - organizados en grupos (años (cursos, clases), que contienen grupos, que contienen subgrupos).
+- Maestros.
+- Materias (nombres de los posibles cursos, por ejemplo, Matemáticas, Física, etc.). 
+- Códigos de actividad (puede usarlas o no, usted decide: el tipo de actividad: laboratorio, curso, seminario o cualquier otra información adjunta a una actividad).
+- Aulas.
+- Edificios.
+- Actividades: una relación entre uno o más profesores, una materia y uno o más grupos. Esto se suele denominar un curso, una conferencia, un laboratorio y así sucesivamente. Una actividad puede tener opcionalmente un código de actividad, para ayudarle con algunas restricciones.
+- Restricciones. Pueden ser: restricciones de tiempo (refiriéndose a la asignación de día y hora) o restricciones de lugar (refiriéndose a la asignación de aulas). Tienen un porcentaje de peso, de 0.0% a 100.0%. 100% significa que la restricción siempre se respetará y si la restricción es imposible, FET no será capaz de generar un horario.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="94"/>
         <source>Virtually unlimited number of subjects</source>
-        <translation type="unfinished"></translation>
+        <translation>Un número virtualmente ilimitado de materias</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="106"/>
         <source>Virtually unlimited number of time constraints</source>
-        <translation type="unfinished"></translation>
+        <translation>Un número virtualmente ilimitado de restricciones de tiempo</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="108"/>
         <source>Virtually unlimited number of space constraints</source>
-        <translation type="unfinished"></translation>
+        <translation>Un número virtualmente ilimitado de restricciones de lugar</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="220"/>
@@ -37520,7 +37649,19 @@ The weight is recommended to be between 95.0%-100.0%. The best might be 99.75% o
 You can specify consecutive if same day. Please be careful, even if constraint min days between activities has 0% weight, if you select this consecutive if same day, this consecutive will be forced. You will not be able to find a timetable with the two activities in the same day, separated by break, not available or other activities, even if the constraint has weight 0%, if you select consecutive if same day.
 
 Currently FET can put at most 2 activities in the same day if &apos;consecutive if same day&apos; is true. FET cannot put 3 or more activities in the same day if &apos;consecutive if same day&apos; is true.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Ayuda sobre RestricciónMínDíasEntreActividades. 
+
+R: Se refiere a un conjunto de actividades e implica una constante, N. Para cada par de actividades en el conjunto, no permite que la distancia (en días) entre ellas sea menor que N. Si se especifica N = 1, entonces esta restricción significa que no se pueden programar dos actividades en el mismo día. N = 2 significa que cada dos actividades deben estar separadas por al menos un día
+
+Ejemplo: 3 actividades y N = 2. Entonces, puede colocar las actividades el lunes, miércoles y viernes (en una semana de 5 días).
+
+Ejemplo 2: 2 actividades, N = 3. En este caso se pueden colocar las actividades los lunes y jueves, los lunes y viernes y luego los martes y viernes (en una semana de 5 días).
+
+Se recomienda que el peso esté entre 95.0% y 100.0%. Lo mejor podría ser un peso del 99.75% o un valor un poco menos del 100%, porque FET puede detectar restricciones imposibles de esta manera y evitarlas. El peso es subjetivo.
+
+Puede especificar consecutiva si en el mismo día. Tenga cuidado, aunque la restricción de días mín. entre actividades tenga un peso de 0%, si selecciona la opción consecutiva si en el mismo día, se fuerza consecutiva. No podrá encontrar un horario con las dos actividades en el mismo día, separadas por descanso, no disponibles u otras actividades, incluso si la restricción tiene peso 0%, si selecciona consecutivas si en el mismo día.
+
+Actualmente FET puede poner como máximo 2 actividades en el mismo día si &apos;consecutivas en el mismo día&apos; es verdadera. FET no puede poner 3 o más actividades en el mismo día si &apos;consecutivas en el mismo día&apos; es verdadera.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="236"/>
@@ -37536,14 +37677,27 @@ Activities 1 and 2, min days 1, consecutive if same day=true, weight=100%-5%*5%=
 You may however add 2 constraints for the same activities if you want 95% with min 2 days and 100% with min 1 day. These are not duplicates.
 
 You might get an impossible timetable with duplicates, so beware.</source>
-        <translation type="unfinished"></translation>
+        <translation>Importante: no agregue duplicados innecesarios. Si añade, por ejemplo, 2 restricciones:
+
+1. Actividades 1 y 2, mín. días 1, consecutiva si en el mismo día=verdadero, peso=95% 
+2. Actividades 1 y 2, mín. días 1, consecutiva si en el mismo día=falso, peso=95% 
+(estas son diferentes restricciones),
+entonces el resultado de estas dos limitaciones será una sola limitación:
+
+Actividades 1 y 2, mín. días 1, consecutivas si en el mismo día=verdadero, peso=100%-5%*5%=99,75%, muy alto. Esto se debe al algoritmo de FET.
+
+Sin embargo, puede agregar 2 restricciones para las mismas actividades si desea 95% con mín. 2 días y 100% con mín. 1 día. Estas 2 restricciones no crean una duplicación.
+
+Puede obtener un calendario imposible de generar si usa restricciones duplicadas, así que tenga cuidado.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="263"/>
         <source>Q: Is it possible to make a timetable where the students learn in two shifts? (for instance, the lowest forms in the morning and the highest forms in the afternoon)?
 
 A: Yes, you have to add more constraint students set not available accordingly (for the lowest forms not available Mon, Tue, Wed, Th, Fr each from middle hour to last hour and for highest forms from first hour to middle hour). The constraints no gaps and early work correctly with these not available: if not available, a students set will not have gaps or early broken for the period of non-availability.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: ¿Es posible hacer un horario donde los alumnos asistan en dos turnos? (por ejemplo, principiantes en la mañana y avanzados en la tarde)?
+
+R: Sí, hay que añadir más restricción de grupo no disponibles en consecuencia (principiantes no disponibles Lun, Mar, Mi, Ju, Vi cada hora media hasta la hora final y para avanzados desde la primera hora hasta la hora media). Las limitaciones sin huecos e inicio tempranero funcionan correctamente con las de indisponibles: si no está disponible, un grupo no tendrá huecos o inicio temprano invalidado para el período de no disponibilidad.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="341"/>
@@ -37552,7 +37706,11 @@ A: Yes, you have to add more constraint students set not available accordingly (
 A: A bit difficult. You have to choose a day for this 0 hour. Then add breaks or not available to prevent other activities in other days at hour 0, then add students set not available to prevent other students sets from having hours at this hour 0. Or variants of this.
 
 Zsolt Udvari used another trick: considered the last hour to be hour 0. But this is not always applicable.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: ¿Es posible trabajar con 0 horas?
+
+R: Es un poco difícil. Tiene que elegir un día para esta hora 0. A continuación, agregue pausas o indisponible para evitar otras actividades en otros días a la hora 0, a continuación, agregue a los alumnos no disponibles para evitar que otros grupos tengan horas a esta hora 0. Puede usar variantes de este método.
+
+Zsolt Udvari usó otro truco: consideró la última hora cómo hora 0. Pero esto no siempre se aplica.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="351"/>
@@ -37568,7 +37726,18 @@ weight = 99% means: In average FET retries 100 times to place an activity withou
 weight = 99.99% means: In average FET retries 10000 times to place an activity without a conflict. If it isn&apos;t able to place the activity without a conflict after average 10000 times it keeps the conflict and tries to place the next activity.
 
 Also, activities might get unallocated, and the cycle would be opened.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: ¿Cómo maneja FET los pesos? ¿Qué significan?
+
+R: Los pesos inferiores al 100% son subjetivos, porque FET puede omitirlos si es necesario.
+
+Volker Dirr trata de expresar cómo FET considera los pesos debajo del 100%:
+
+peso = 50% significa: En promedio FET reintenta dos veces colocar una actividad sin conflictos. Si no es capaz de colocar la actividad sin conflictos después de un promedio de 2 veces, mantiene el conflicto e intenta colocar la siguiente actividad.
+peso = 75% significa: En promedio FET reintenta cuatro veces colocar una actividad sin conflictos. Si no es capaz de colocar la actividad sin conflictos después de un promedio de 4 veces, mantiene el conflicto e intenta colocar la siguiente actividad.
+peso = 99% significa: En promedio FET reintenta 100 veces colocar una actividad sin conflictos. Si no es capaz de colocar la actividad sin conflictos después de un promedio de 100 veces, mantiene el conflicto e intenta colocar la siguiente actividad.
+peso = 99.99% significa: En promedio FET reintenta 10000 veces colocar una actividad sin conflictos. Si no es capaz de colocar la actividad sin conflictos después de un promedio de 10000 veces, mantiene el conflicto e intenta colocar la siguiente actividad.
+
+Además, las actividades podrían no asignarse y el ciclo quedar abierto.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="402"/>
@@ -37577,14 +37746,20 @@ Also, activities might get unallocated, and the cycle would be opened.</source>
 A: The statistics are important to check your data before generating.
 
 When seeing the students statistics, probably the most useful are for subgroups. Each subgroup should have a reasonable amount of hours, and if you are having subgroups with too little hours, like 2 per week, probably you misunderstood FET notation. Each subgroup is independent of the others and should have a number of hours per week close to the average of all subgroups. Do not input empty subgroups with only a few activities.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Ayuda sobre el menú de estadísticas
+
+R: Las estadísticas son importantes para verificar los datos antes de tratar de generar un horario.
+
+Al ver las estadísticas del alumnado, probablemente las más útiles son las de los subgrupos. Cada subgrupo debe tener una cantidad razonable de horas y, si está teniendo subgrupos con muy pocas horas, como por ejemplo 2 semanales, probablemente no ha entendió la notación que usa FET. Cada subgrupo es independiente de los otros y debe tener un número de horas semanales cerca de la media de todos los subgrupos. No ingrese subgrupos vacíos con sólo unas pocas actividades.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="413"/>
         <source>Q: What if I enter accidentally duplicate constraints?
 
 A: It is not a good practice to allow unnecessary duplicate constraints. For min days between activities and other constraints, the combined weight becomes very high. For instance, if you have 2 constraints with weight 95%, the outcome is a constraint with weight 100%-5%*5%=99.75%, very high. You might get an impossible timetable with duplicates, so beware. For constraint activity(ies) preferred (starting time(s) or time slots) the chosen weight is the largest value, so you can use more constraints of this type for same activities.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: ¿Qué sucede si añado restricciones duplicadas accidentalmente?
+
+R: No es una buena práctica permitir restricciones duplicadas innecesarias. Para días mín. entre actividades y otras restricciones, el peso combinado se vuelve muy alto. Por ejemplo, si tiene 2 restricciones con un peso del 95%, el resultado es una restricción con un peso del 100%-5%*5%=99.75%, lo cual es muy alto. Puede obtener un horario imposible de generar si tiene duplicados, así que tenga cuidado. Para la restricción de (tiempo(s) de inicio o franjas horarias) preferidas para la actividad(es) el peso elegido es el valor más grande, por lo que puede utilizar más restricciones de este tipo para las mismas actividades.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="424"/>
@@ -37672,7 +37847,79 @@ contains groups 1_a, 1_b
 You will have the possibility to add any activity, for a year or group
 
 Currently, the interface for students is difficult to use. I am thinking of that. Maybe it is more simple for you if you try to work on the xml .fet file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Los grupos pueden contener cualquier subgrupo. Los grupos pueden traslaparse.
+
+Los años pueden contener cualquier grupo.
+
+No es necesario seguir exactamente la jerarquía de su institución, puede modelar su estructura para poder utilizar FET mejor.
+
+Ejemplo: tiene una facultad con años (1, 2, ..., 5), secciones (1_a, 1_b, ...) y subsecciones (1_a_x, 1_a_y, ...). Cada subsección tiene idiomas opcionales en Inglés, Francés o Alemán (por ejemplo, un grupo que toma inglés es ING y, si no lo toma, !ING). Entonces la estructura correcta es:
+
+subgrupos
+
+1_a_x_ING_FRA_ALE,
+1_a_x_!ING_FRA_ALE,
+1_a_x_ING_!FRA_ALE,
+1_a_x_! ING_!FRA_ALE,
+1_a_x_ING_FRA_!ALE,
+1_a_x_! ING_FRA_!ALE,
+1_a_x_ING_!FRA_!ALE,
+1_a_x_!ING_!FRA_!ALE,
+ 
+1_a_y_ING_FRA_ALE, 
+... iguales para 1_a_y (8 subgrupos)
+
+(puede considerar no agregar subgrupos vacíos, por ejemplo, si cada estudiante tiene un sólo idioma, entonces puede retener sólo 3 subgrupos de 8)
+
+grupos:
+
+1_a
+contiene subgrupos:
+
+     1_a_x_ING_FRA_ALE,
+     1_a_x_! ING_FRA_ALE,
+     1_a_x_ING_! FRA_ALE,
+     1_a_x_! ING_! FRA_ALE,
+     1_a_x_ING_FRA_!ALE,
+     1_a_x_! ING_FRA_!ALE,
+     1_a_x_ING_! FRA_!ALE,
+     1_a_x_! ING_! FRA_!ALE,
+     1_a_y_ING_FRA_ALE,
+... iguales para 1_a_y (8 subgrupos)
+
+1_a_x contiene subgrupos:
+
+     1_a_x_ING_FRA_ALE,
+     1_a_x_! ING_FRA_ALE,
+     1_a_x_ING_! FRA_ALE,
+     1_a_x_! ING_! FRA_ALE,
+     1_a_x_ING_FRA_! ALE,
+     1_a_x_! ING_FRA_! ALE,
+     1_a_x_ING_! FRA_! ALE,
+     1_a_x_! ING_! FRA_! ALE,
+
+1_a_y
+
+ contiene subgrupos:
+
+     1_a_y_ING_FRA_ALE,
+ ... (8 subgrupos)
+
+1_a_x_ING contiene subgrupos:
+     1_a_x_ING_FRA_ALE,
+     1_a_x_ING_! FRA_ALE,
+     1_a_x_ING_FRA_!ALE,
+     1_a_x_ING_! FRA_!ALE
+
+años:
+
+1
+
+contiene los grupos 1_a, 1_b
+
+Tiene la posibilidad de añadir cualquier actividad para un año o grupo
+
+Actualmente, la interfaz para el alumnado es difícil de usar. Estamos reflexionando en ello. Tal vez sea más sencillo si intenta trabajar directamente en el archivo xml .fet.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="492"/>
@@ -37687,7 +37934,17 @@ The best way to add the activities would be:
 1. If you add &apos;force consecutive if same day&apos;, then couple extra activities in pairs to obtain a number of activities equal to the number of days per week. Example: 7 activities with duration 1 in a 5 days week, then transform into 5 activities with durations: 2,2,1,1,1 and add a single container activity with these 5 components (possibly raising the weight of added constraint min days between activities up to 100%)
 
 2. If you don&apos;t add &apos;force consecutive if same day&apos;, then add a larger activity split into a number of activities equal with the number of days per week and the remaining components into other larger split activity. For example, suppose you need to add 7 activities with duration 1 in a 5 days week. Add 2 larger container activities, first one split into 5 activities with duration 1 and second one split into 2 activities with duration 1 (possibly raising the weight of added constraints min days between activities for each of the 2 containers up to 100%)</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Ejemplo: Tengo 7 horas de Matemáticas durante 5 días a la semana (7 es mayor que 5). ¿Cómo agrego correctamente esta actividad dividida?
+
+Pregunta completa: Tengo una gran actividad contenedora dividida en más actividades que los días semanales. ¿Cómo agregarla y restringir mín. de días entre las actividades?
+
+R: Si se agrega directamente una actividad contenedor dividida en más que el número de días por semana y también se añade una restricción tipo mín. de días entre actividades, sería una práctica muy mala por la forma en que funciona el algoritmo de generación de horarios (ralentiza la generación y hace que sea más difícil encontrar una solución).
+
+La mejor forma de agregar las actividades sería:
+
+1. Si agrega &apos;fuerza a consecutiva si en el mismo día&apos;, a continuación, acople actividades adicionales en parejas para obtener un número de actividades igual al número de días semanales. Ejemplo: 7 actividades con duración 1 en una semana de 5 días, transformadas en 5 actividades con duraciones: 2,2,1,1,1 y añadir una actividad contenedora con estos 5 componentes (posiblemente aumentando el peso de la restricción añadida &apos;mín. de días entre actividades&apos; hasta el 100%)
+
+2. Si no agrega &apos;fuerza a consecutiva si en el mismo día&apos;, agregue una actividad más grande dividida en un número de actividades igual al número de días semanales y el resto de los componentes en otra actividad divisoria más grande. Por ejemplo, supongamos que necesita agregar 7 actividades con duración 1 en una semana de 5 días. Añada 2 actividades contenedores más grandes, la primera dividida en 5 actividades con duración 1 y la segunda dividida en 2 actividades con duración 1 (posiblemente aumentando el peso de las restricciones adicionales &apos;mín. de días entre actividades&apos; para cada uno de los 2 contenedores hasta el 100%)</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="544"/>
@@ -37696,57 +37953,71 @@ The best way to add the activities would be:
 A: I had many users wanting to put a gap between activities of same teachers or between activities with same teacher and subject, if they are on the same day. This constraint does that. If you want for instance to make teacher John to have at least one gap between all his activities, select filter &apos;John&apos; and add all his activities to a constraint of this type. If you want to make teacher John to have at least one gap between all his Math activities, select filter &apos;John&apos; and &apos;Math&apos; and add all these activities to a constraint of this type.
 
 Please take care that the selected activities are not forced consecutive by constraint two activities consecutive or by constraint min days between activities which have consecutive if same day selected.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: ¿Qué significa la restricción de Mín. de huecos (horas) entre un conjunto de actividades?
+
+R: Había muchos usuarios que querían poner un hueco entre actividades con el mismo profesor o entre actividades con el mismo profesor y materia, si están en el mismo día. Esta restricción hace precisamente eso. Si desea, por ejemplo, hacer que el profesor Juan tenga al menos un hueco entre todas sus actividades, seleccione el filtro &apos;Juan&apos; y añada todas sus actividades a una restricción de este tipo. Si desea que el maestro Juan tenga al menos un hueco entre sus actividades Matemáticas, seleccione el filtro &apos;Juan&apos; y &apos;Mate&apos; y añada todas estas actividades a una restricción de este tipo.
+
+Tenga cuidado de que las actividades seleccionadas no se vean forzadas a consecutivas por una restricción de tipo dos actividades consecutivas o mín. de días entre actividades que tienen la opción &apos;consecutiva si en el mismo día&apos; activa.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="583"/>
         <source>Q: Help on constraints teacher(s) or students (set) hourly interval max days per week
 
 A: This is a constraint suggested by users, to allow you to specify an hourly interval for students or teachers, and to say that in this interval they must work at most max days per week. This is useful if for instance you want teachers not to have more than 2 days per week activities in the last 2 hours of the day.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Ayuda sobre restricciones intervalo horario un máximo de días semanales por profesor(es) o alumnos(grupo)
+
+R: Se trata de una restricción sugerida por los usuarios, que le permite especificar un intervalo horario para los alumnos o profesores, y decir que en este intervalo deben trabajar como mucho un máximo de días por semana. Esto es útil si por ejemplo desea que los profesores no tengan más de 2 días de actividades semanales en las últimas 2 horas del día.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="592"/>
         <source>Q: Help on constraint activities end students day (or activity ends students day).
 
 A: If you have activities which you want to put in the last slots of a day (like say the meetings with the class master), please use the new constraint a set of activities end students day (or singular activity ends students day). This constraint can have weight only 100%, because of the way the algorithm works.</source>
-        <translation type="unfinished">Una actividad finaliza el día del alumnado.</translation>
+        <translation>P: Ayuda sobre las restricciones actividades que finalizan el día del alumnado (o una actividad finaliza el día del alumnado).
+
+R: Si tiene actividades que desea poner en las franjas horarias del día (por ejemplo, las reuniones con el profesor), utilice la nueva restricción un conjunto de actividades finalizan el día del alumnado. Debido a la forma en que el algoritmo funciona esta restricción sólo puede tener un peso del 100%.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="741"/>
         <source>3 hints from an anonymous Polish user, who uses FET for very large data:</source>
-        <translation type="unfinished"></translation>
+        <translation>3 sugerencias de un usuario polaco anónimo, que utiliza FET para conjuntos de datos muy grandes:</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="749"/>
         <source>For instance even when two consecutive activities are placed at one day (the same group and the same teacher) sometimes they are placed at different rooms what would force them to needless changing room. I guess that FET is focused on fulfilling constraints but not on optimizing timetable. Sometimes simple changing of two activities makes plan better both for students and teachers. I think that manually improving generated plan is faster than creating many many more constraints and repeating simulations. And this is the third hint.</source>
-        <translation type="unfinished"></translation>
+        <translation>Por ejemplo, incluso cuando dos actividades consecutivas se colocan en el mismo día (mismo grupo y mismo profesor) a veces se ubican en diferentes aulas lo que obliga a un cambio de aula innecesario. Supongo que FET se centra en el cumplimiento de las restricciones, pero no en la optimización del horario. A veces el simple cambio de dos actividades hace que el horario sea mejor tanto para los alumnos como para los profesores. Creo que mejorar manualmente el horario generado es más rápido que crear muchas más restricciones y repetir simulaciones de generación de horarios. Y esta es el tercer consejo.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="795"/>
         <source>This is an advanced question which probably will never appear in practice, you may skip it at first reading.</source>
-        <translation type="unfinished"></translation>
+        <translation>Esta es una pregunta avanzada que probablemente nunca aparecerá en la práctica. Puede omitirla en una primera lectura.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="613"/>
         <source>Q: What about the automatic search for updates? Should I enable it?
 
 A: It is recommended to enable automatic search for updates. I didn&apos;t set it as default because people might be annoyed if I release too fast new versions. But if you can cope with that, it is recommended to always have the latest version and enable searching for updates at startup.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: ¿Qué pasa con la búsqueda automática de actualizaciones? ¿Debo habilitarla?
+
+R: Se recomienda activar la búsqueda automática de actualizaciones. No se configuro como predeterminada porque muchos podrían molestarse con nuevas versiones demasiado rápido. Pero si no le importa eso, se recomienda tener siempre la última versión y permitir que el programa busque las actualizaciones al iniciar.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="281"/>
         <source>Q: Can I work with fortnightly activities like in older FET versions?
 
 A: You have to use some tricks. It would be difficult to consider fortnightly activities into the new FET algorithm (from 5.0.0 up). But I think you can apply this: for instance, I suppose that you would like the first week to have activity A1 (teacher T1, student S1) and A2 (T2, S2), and second week A3 (T1, S2) and A4 (T2, S1) (simultaneously). You could define a weekly activity A (T1, T2, S1, S2). If you need 2 rooms for A, then you can define dummy A&apos; (no teachers, no students) and constraint activities same starting time A and A&apos; and add rooms for A and A&apos; .</source>
-        <translation type="unfinished"></translation>
+        <translation>P: ¿Puedo trabajar con actividades quincenales como en versiones FET más antiguas?
+
+R: Tiene que usar ciertos trucos. Sería difícil considerar las actividades quincenales en el nuevo algoritmo FET (a partir de las versiones 5.0.0). Pero se puede aplicar esto: por ejemplo, suponga que le gustaría que la primera semana tuviera la actividad A1 (maestro T1, alumno S1) y A2 (T2, S2) y la segunda semana A3 (T1, S2) y A4 (T2, S1) (simultáneamente). Se puede definir una actividad semanal A (T1, T2, S1, S2). Si necesita 2 aulas para A, entonces puede definir la actividad falsa A &apos;(sin profesores ni alumnos) y restringir las actividades al mismo tiempo de inicio A y A&apos; y añadir aulas para A y A&apos;.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="332"/>
         <source>Q: I got an impossible to solve timetable!
 
 A: If you get an impossible timetable, maybe the constraints students (set) early are too difficult. Maybe you can allow more arrivals at second hour. Also teachers&apos; min hours daily might be too strong. Please also check the statistics to be correct. Remove other constraints until you get a possible timetable.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: ¡Tengo un horario imposible de resolver!
+
+R: Si obtiene un horario imposible de generar, tal vez las restricciones de inicio temprano para el alumnado (grupos) son demasiado difíciles. Tal vez pueda permitir más llegadas a la segunda hora. También las horas diarias para el profesorado podrían ser demasiado estrictas. Compruebe también que las estadísticas sean correctas. Elimine otras restricciones hasta que obtenga un horario cuya generación sea posible.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="490"/>
@@ -37767,26 +38038,34 @@ A: If you get an impossible timetable, maybe the constraints students (set) earl
 Since I started working on our school&apos;s timetable I had a problem with a specific day and teacher. No matter what I tried in FET I couldn&apos;t reduce the in-school hours for this specific teacher and day down from 7 (7 hours is the full school day, so he had 6 teaching hours and 1 gap). It was too much (other teachers have 5 teaching hours max) but he didn&apos;t mind so we kept FET solution.Just a month ago this teacher had some major operation and couldn&apos;t teach so much hours in one day anymore. So I started again to experiment with the timetable and what was wrong. After a LOT of test and failures the idea hit me just as I was waking up to go to school; I hadn&apos;t enough teachers for early and late hours! I checked and it was true! Let me explain. We have 6 classes in total and every class has 7 hours per day. This means that I need 6 teachers for the first hour and 6 teachers for the 7th hour, a total of 12 teachers. But I only had 11 teachers to cover first and last hour! I had 16 teachers in total for that day but their restrictions prevented 6 of them to teach first and last hours (and it wasn&apos;t just cases of teacher not available but usually restrictions on teaching on specific hours and max gaps, so it was very difficult to look through it). So this specific teacher (because of the restrictions on the other teachers and the loose restrictions on himself) had to teach 6 hours with 1 gap so that he could cover a first and a last hour!
 
 ...Not that I will fall again for it but based on the difficulty to diagnose on my part it will help others that might face the same problem.</source>
-        <translation type="unfinished"></translation>
+        <translation>P y R de Anestis Vovos: Un caso muy difícil de diagnosticar aún sin resolver
+
+Desde que comencé a trabajar en el horario de nuestra escuela tuve un problema con un profesor y día específico. No importando lo que intenté en FET no podía reducir las horas escolares para este profesor específico y su día de 7 (7 horas es un día completo en la escuela, por lo que tenía 6 horas de enseñanza y un hueco). Era demasiado (otros profesores tienen un máx. de 5 horas de clases) pero no le importó, así que mantuvimos la solución de FET. Hace un mes este profesor tuvo una operación importante y ya no pudo enseñar tantas horas al día. Así que empecé de nuevo a experimentar con el horario y lo que estaba mal. Después de MUCHAS pruebas y fracasos, la idea me vino de golpeó justo cuando despertaba para ir al colegio; ¡No tenía suficientes profesores para las horas tempranas y tardías! ¡Verifique y fue cierto! Déjenme explicarme. Tenemos 6 clases en total y cada clase tiene 7 horas al día. Esto significa que necesito 6 profesores para la primera hora y 6 para la séptima hora, un total de 12 maestros. ¡Pero sólo tenía 11 profesores para cubrir la primera y la última hora! Tenía 16 profesores en total para ese día, pero sus restricciones impedían que 6 de ellos dieran clases en las primeras y últimas horas (y no sólo era el caso de los profesores no disponibles, sino por lo general restricciones de enseñar a horas específicas y los huecos máximos, por lo que fue muy difícil localizarlos). Así que este profesor específico (debido a las restricciones sobre los otros y las que se aplicaban a sí mismo) ¡tuvo que enseñar 6 horas con un hueco para que pudiera cubrir una primera y una última hora!
+
+... No es que caiga de nuevo en esa trampa, pero basado en la dificultad de mi diagnóstico creo que ayudará a otros que pudiesen enfrentar el mismo problema.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="654"/>
         <source>Q: I want to define hard subjects (Math, Physics and Chemistry) and I want students not to have more than 1 (or another variant 2) difficult subjects in a row.
 
 A: Define activity tag &apos;Difficult&apos; and add it to all MA, PH and CH lessons. Then add constraint maximum 1 (or 2) hours continuously for all students and an activity tag &apos;Difficult&apos;. Please take care if you may have double lessons.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Quiero definir materias difíciles (Matemáticas, Física y Química) y quiero que los alumnos no tengan más de que una (u en otra variante, 2) materias difíciles seguidas.
+
+R: Defina el código de actividad &apos;Difícil&apos; y agréguela a todas las clases MA, FI y QM. A continuación, añada la restricción como máximo 1 (ó 2) horas continuas para el alumnado y un código de actividad &apos;Difícil&apos;. Tenga cuidado si puede tener materias dobles.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="678"/>
         <source>Q: (by Horatiu Halmajan) The students must have max 4 gaps per week, maximum 2 per day, continuous gaps. How to solve this?
 
 A: Add for each subgroup a dummy activity (no teachers) split into 4 per week, duration 1, min days between activities 1, weight 0%, select consecutive if same day. FET will never put more than 2 of these dummy activities in a day. Add max gaps for students = 0 per week.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: (por Horatiu Halmajan) El alumnado debe tener un máximo de 4 huecos semanales, un máximo de 2 al día, huecos continuos. ¿Cómo resolver esto?
+
+R: Añada para cada subgrupo una actividad simulada (sin profesores) dividida en 4 por semana, con duración de 1, mín. de días entre actividades 1, peso de 0% y seleccione consecutivo si en el mismo día. FET nunca pondrá más de dos de estas actividades ficticias en el mismo día. Añada un máximo de huecos semanales para el alumnado = 0.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="687"/>
         <source>Advice: to treat gaps for students or teachers, if FET constraints are not enough, you can use dummy activities. For instance, if a students set can have maximum 3 gaps, add an activity split into 3 per week, with no teachers.</source>
-        <translation type="unfinished"></translation>
+        <translation>Consejo: para tratar huecos del alumnado o profesorado, si las restricciones de FET no son suficientes, puede utilizar actividades simuladas. Por ejemplo, si un grupo puede tener un máximo de 3 huecos, añada una actividad dividida en 3 semanales, sin profesores.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="694"/>
@@ -37795,7 +38074,11 @@ A: Add for each subgroup a dummy activity (no teachers) split into 4 per week, d
 If A1 and A2 are constrained not to be in the same day with 95% weight or any other weight, it is a bad practice to add a constraint grouped or consecutive to them. If they are constrained with weight 100% not to be in the same day, the timetable is impossible; if the weight is under 100%, the timetable is more difficult to find than using the correct way.
 
 The correct way would probably be to consider A1 and A2 = a single activity A12&apos;, or to modify the related constraint min days between activities. Or maybe you can find other ways.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pregunta 1/16 agosto 2009: ¿Cómo agregar una restricción de dos actividades agrupadas, dos actividades consecutivas y tres actividades agrupadas si las actividades están restringidas para no ser en el mismo día por restricciones mín. días entre actividades?
+
+Si obliga a que A1 y A2 no estén en el mismo día con un peso del 95% o cualquier otro peso, es una mala práctica agregar una restricción agrupada o consecutiva. Si están restringidas con un peso del 100% para no ser en el mismo día, la generación del horario es imposible; si el peso está por debajo del 100%, el horario es más difícil de encontrar que usando la forma correcta.
+
+La forma correcta sería probablemente considerar que A1 y A2 son una sola actividad A12&apos; o modificar la restricción relacionada mín. días entre actividades. Quizá pueda encontrar otras formas de hacerlo.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="707"/>
@@ -37816,7 +38099,20 @@ Conclusion: if, for the ATS, the ratio &apos;tag duration&apos;/&apos;total dura
 So, it is a very bad idea to make all activities (of a teacher or students set) have an activity tag and add constraint teacher(s) or students (set) activity tag max hours daily. You should use in this case constraint teacher(s) or students (set) max hours daily.
 
 Probably, in practice this problem will not appear and you need not to worry. But theoretically it exists.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pregunta 1/25 de septiembre de 2009: Una observación para la restricción máx. horas diarias por código de actividad por profesor(es) o alumnado (grupos):
+Esta restricción esta correctamente implementa y funcionando bien, pero no es perfecta, lo que significa que en casos extremos el tiempo necesario para generar un horario puede ser más largo o mucho más largo de lo realmente necesario. Debe dar a FET una mano en estas situaciones extremas.
+
+Notación: PGA = profesores o grupos afectados, significa los profesores o grupos afectados (incluidas en) por esta actividad de restricción máximo de horas diarias (el problema no aparece para los profesores o grupos que no están afectados, que no tienen aplicada la restricción de máximo de horas diarias con código de actividad).
+
+Para casos extremos, la generación de horarios puede ser más larga o mucho más larga de lo que debería ser. Estos casos se refieren a situaciones en las cuales la duración total de las actividades con el código de actividad especificada de los PGA es alta comparada con el número total de horas de todas las actividades de los PGA, combinadas con otras condiciones que existen en sus datos. Si la relación de duración de las actividades con ese código de actividad de los PGA sobre la duración total de las actividades de los PGA es más de 0.50-0.75 o un valor normal (razonable bajo), y se utilizan restricciones para controlar huecos o inicios tempranos para los PGA, y el número de horas por día es más alto que las horas posibles para los PGA, la velocidad de generación podría ser más lenta o mucho más lenta de lo que debería ser.
+
+En estos casos, se recomienda utilizar restricciones de máximo de horas diarias por profesor o alumnos para los PGA (sin código de actividad) o restricciones de indisponibilidad en las franjas horarias que son claramente imposibles.
+
+Por ejemplo, si los alumnos S tienen 20 horas de actividades con el código de actividad AT y otras 4 horas de actividades sin código de actividad (tienen 24 horas en total, la proporción es 20/24 = 0.80), y los restringe a 0 huecos por semana y 0 comienzos a la segunda hora y también el número de horas por día es grande, por ejemplo 12. Entonces agregar una restricción de código de actividad para el alumnado con un máx. de 4 horas al día – únicamente - no será suficiente (el tiempo para generar un horario podría ser más largo o mucho más largo de lo necesario). Una mejor solución necesitará que añada también una restricción de máximo de 5 horas diarias para el alumnado (si es posible) y/o hacer que las franjas horarias tardías no estén disponibles para los alumnos (esta es una manera de guiar FET hacia la solución), o encontrar otras buenas formas de compensar la situación.
+
+Conclusión: si para los PGA la relación &apos;duración del código de actividad&apos;/&apos;duración total&apos; es superior a 0.50 – 0.75 Y se utilizan, para los PGA, las limitaciones de los huecos o inicios temprano Y para los PGA el número de franjas horarias disponibles por semana es mucho más alto que el número total de horas de trabajo de los PGA por semana, entonces puede que necesite resolver este problema (agregue restricciones PGA máximas horas diarias o PGA no disponible o busque alguna otra forma de guiar a FET).
+
+Por lo tanto, es una muy mala idea hacer que todas las actividades (de un profesor o un grupo) tengan un código de actividad y agregarles una restricción máximo de horas diarias por código de actividad por profesor(es) o alumnos (grupos). Deberá usar en este caso una restricción de máximo de horas diarias por profesor(es) o alumnos (grupos). Probablemente, en la práctica este problema no aparecerá y no necesita preocuparse. Pero teóricamente existe.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="759"/>
@@ -37826,37 +38122,37 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="761"/>
         <source>A: These 6 constraints (4 for activity tag and 2 for students max gaps per day) are the only ones which are not perfectly optimized in FET. For some combinations of constraints, they may slow down the generation or even make the timetable impossible. That is why they are not enabled by default. You need to activate them from the advanced settings menu. It is recommended to add such constraints at the end of your work, after you added all the other constraints and verified that your timetable is possible.</source>
-        <translation type="unfinished"></translation>
+        <translation>R: Estas 6 restricciones (4 para el código de actividad y 2 para los huecos máximos diarios para el alumnado) son las únicas que no están perfectamente optimizadas en FET. Algunas combinaciones de restricciones pueden ralentizar la generación o incluso hacer que el horario sea imposible de crear. Es por eso que no están habilitados de forma predeterminada. Debe activarlas desde el menú de configuración avanzada. Se recomienda añadir estas restricciones al final de su trabajo, después de agregar todas las demás restricciones y haber verificado que la generación de su horario es posible.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="766"/>
         <source>If these constraints are disabled, they have an icon attached in the menu to signify that. If they are enabled, they have another icon attached to them, to signify that they are enabled, but must be used with caution.</source>
-        <translation type="unfinished"></translation>
+        <translation>Si estas restricciones están desactivadas, tienen un icono adjunto en el menú para indicarlo. En el caso contrario tiene otro tipo de icono que indican que están habilitadas, pero deben utilizarse con precaución.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="769"/>
         <source>Use these constraints with caution, not to obtain impossible timetables.</source>
-        <translation type="unfinished"></translation>
+        <translation>Use estas restricciones con precaución, para no obtener horarios imposibles.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="775"/>
         <source>Q: Why don&apos;t you implement the not perfect constraints (activity tag max hours daily and students max gaps per day) in a perfect way?</source>
-        <translation type="unfinished"></translation>
+        <translation>P: ¿Por qué no implementan las restricciones no optimizadas (máximo de horas diarias por código de actividad y máximos de huecos diarios del alumnado) de forma óptima?</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="777"/>
         <source>A: Activity tag max hours daily cannot be implemented perfectly, generation would take too much (because of complexity of checks). Students max gaps per day can be implemented perfectly, but it would change the algorithm for students a lot and I am afraid to change something that is working well. Very much testing would be needed, and I have not enough sample files. While changing the algorithm, it would be easy to make critical bugs and some files may not solve anymore.</source>
-        <translation type="unfinished"></translation>
+        <translation>R: Las máx. horas diarias por código de actividad no se puede implementar de forma óptima pues la generación tomaría demasiado (debido a la complejidad de las verificaciones). Los máximos días libres del alumnado se puede implementar perfectamente, pero cambiaría el algoritmo para los alumnos mucho y tengo miedo de modificar algo que está funcionando bien. Se requieren muchas pruebas y no tengo suficientes archivos de muestra. Al cambiar el algoritmo, sería fácil hacer errores críticos y algunos archivos podrían no tener solución.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="788"/>
         <source>A: More users asked for shortcut buttons for the most commonly used functions. It is possible to show such buttons, if you select the corresponding option from the Settings-&gt;Interface menu (shortcuts are shown, by default).</source>
-        <translation type="unfinished"></translation>
+        <translation>R: Muchos usuarios solicitaron teclas de atajo para las funciones más utilizadas. Es posible mostrar estos atajos, si selecciona la opción correspondiente en el menú Configuración-&gt; Interfaz (se muestran las teclas de atajos de forma predeterminada).</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="786"/>
         <source>Q: Help on shortcut buttons in the main form.</source>
-        <translation type="unfinished"></translation>
+        <translation>P: Ayuda sobre las teclas de atajos en el formulario principal.</translation>
     </message>
 </context>
 <context>
@@ -37938,7 +38234,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="134"/>
         <source>10) If a constraint is allowed values under 100%, you can use any weight, even fractional numbers like 99.75%. It might help in constraints like min days between activities, preferred rooms or max hours daily.</source>
-        <translation>10) Si se permite a una restricción valores menores de 100%, puede usar cualquier peso, incluso números fraccionarios como 99.75%. Puede ayudar en las restricciones como min días entre actividades, aula preferida o máximo de horas diarias.</translation>
+        <translation>10) Si se permite a una restricción valores menores de 100%, puede usar cualquier peso, incluso números fraccionarios como 99.75%. Puede ayudar en las restricciones como mín. días entre actividades, aula preferida o máximo de horas diarias.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="148"/>
@@ -37948,7 +38244,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="151"/>
         <source>15) If you want for instance teachers (or students) not to have more than 2 times per week activities in the last hours, you have to use the constraint teacher(s) or students (set) hourly interval max days per week. Please read FAQ for more details.</source>
-        <translation>15) Si quiere, por ejemplo, que el profesorado (o alumnado) no tenga más de 2 veces a la semana actividades en las últimas horas, debe utilizar la restricción de intervalos horarios limitados semanales para el profesorado o el alumnado (grupos). Por favor lea las PMF para más detalles.</translation>
+        <translation>15) Si quiere, por ejemplo, que el profesorado (o alumnado) no tenga más de 2 veces a la semana actividades en las últimas horas, debe utilizar la restricción de intervalos horarios limitados semanales del profesorado o el alumnado (grupos). Por favor lea las PMF para más detalles.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform.cpp" line="155"/>
@@ -38055,22 +38351,22 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="30"/>
         <source>The imperfect constraints are 6: students (set) max gaps per day and teacher(s) or students (set) activity tag max hours daily.</source>
-        <translation type="unfinished"></translation>
+        <translation>Las restricciones imperfectas son 6: máximo de huecos diarios del alumnado (grupos) y máximo de horas diarias por código de actividad del alumnado (grupos).</translation>
     </message>
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="34"/>
         <source>You are advised to leave the imperfect constraints as a last resort if you really need them. Generate the timetable with all other constraints and only after that you may try them. The imperfect constraints may make your timetable too hard to find or even impossible, in some conditions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Se le aconseja dejar las restricciones imperfectas como último recurso en caso de realmente necesitarlas. Genere el horario con todas las demás restricciones y sólo después pruebe con ellas. Las restricciones imperfectas pueden hacer que su horario sea demasiado difícil de encontrar o incluso imposible, bajo ciertas condiciones.</translation>
     </message>
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="39"/>
         <source>Notation: ATS = affected students set or teacher - the teacher or students specified in an imperfect constraint.</source>
-        <translation type="unfinished"></translation>
+        <translation>Notación: GPA = grupo o profesor afectado - el grupo o profesor especificado en una restricción imperfecta.</translation>
     </message>
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="43"/>
         <source>Max gaps per day: it is not fully optimized for use with other constraints for students: min/max hours daily. It is also not tested thoroughly.</source>
-        <translation type="unfinished"></translation>
+        <translation>Máximo de huecos diarios: no está completamente optimizado para su uso con otras restricciones para el alumnado: mín./máx. de horas diarias. Tampoco se ha probado a fondo.</translation>
     </message>
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="45"/>
@@ -38080,12 +38376,12 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="49"/>
         <source>Activity tag max hours daily: it is not fully optimized for this situation: if the ATS have max gaps constraints and the number of total available slots per week for the ATS is much larger than the working hours per week and the ATS has many activities with the specified activity tag (more than 0.5-0.75 of total hours). In such cases, a remedy may be to add constraint ATS max hours daily (without specifying an activity tag).</source>
-        <translation type="unfinished"></translation>
+        <translation>Máximo de horas diarias por código de actividad: no está totalmente optimizado para esta situación. Si el GPA tiene restricciones de máximo de huecos y el total de franjas horarias disponibles semanales para el GPA es mucho mayor que las horas de trabajo semanales y el GPA tiene muchas actividades con el código de actividad especificado (más del 0.5 al – 0.75 del total de horas). En tales casos, una solución pudiera ser agregar una restricción al GPA de máx. de horas diarias (sin especificar un código de actividad).</translation>
     </message>
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="54"/>
         <source>Read FAQ question 1/25 September 2009 for some more details about activity tag max hours daily constraint.</source>
-        <translation type="unfinished"></translation>
+        <translation>Lea las PMF pregunta 1/25 de septiembre de 2009 para más detalles acerca de las restricciones de horas máximas diarias por actividad.</translation>
     </message>
     <message>
         <location filename="../src/interface/helponimperfectconstraints.cpp" line="56"/>
@@ -38151,7 +38447,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/interface/helptipsform.cpp" line="56"/>
         <source>The correct way: if you want consecutive if same day, consider activities having a longer duration. Instead of adding activities 1+1+1+1+1+1+1 in a 5 days week, add them as 2+2+1+1+1. If you don&apos;t want consecutive if same day, add 1+1+1+1+1 firstly and 1+1 after that.</source>
-        <translation>La forma correcta sería: si desea consecutivas si en el mismo día, es considerando las actividades que tienen una mayor duración. En lugar de agregar actividades 1 + 1 + 1 + 1 + 1 + 1 + 1 en una semana de 5 días, añádalas como 2 + 2 + 1 + 1 + 1. Si no desea consecutivas si en el mismo día, añada 1 + 1 + 1 + 1 + 1 en primer lugar y 1 + 1 después.</translation>
+        <translation>La forma correcta sería: si desea consecutiva si en el mismo día, es considerando las actividades que tienen una mayor duración. En lugar de agregar actividades 1 + 1 + 1 + 1 + 1 + 1 + 1 en una semana de 5 días, añádalas como 2 + 2 + 1 + 1 + 1. Si no desea consecutivas si en el mismo día, añada 1 + 1 + 1 + 1 + 1 en primer lugar y 1 + 1 después.</translation>
     </message>
     <message>
         <location filename="../src/interface/helptipsform.cpp" line="60"/>
@@ -38216,7 +38512,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/interface/helptipsform.cpp" line="80"/>
         <source>Do not consider redundant constraints with the same activities but different number of days (you may want to add min 2 days 95% and min 1 day 95%, which gives in 95% cases the 2 days will be respected and in 99.75% cases the 1 day will be respected).</source>
-        <translation>No considerar las restricciones redundantes con las mismas actividades pero diferente número de días (puede querer agregar un mín. de 2 días al 95% y un mín. de 1 día al 95%, lo que en el 95% de los casos 2 días serán respetados y en el 99,75% de los casos 1 día será respetado).</translation>
+        <translation>No considerar las restricciones redundantes con las mismas actividades, pero diferente número de días (puede querer agregar un mín. de 2 días al 95% y un mín. de 1 día al 95%, lo que en el 95% de los casos 2 días serán respetados y en el 99,75% de los casos 1 día será respetado).</translation>
     </message>
     <message>
         <location filename="../src/interface/helptipsform.cpp" line="84"/>
@@ -40088,7 +40384,7 @@ la simulación. Deténgala antes</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="169"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="14"/>
@@ -40382,9 +40678,9 @@ la simulación. Deténgala antes</translation>
  If you need weight under 100%, then you can use this constraint, but be careful not to obtain an impossible timetable (if your teachers/students are constrained on gaps or early gaps and if you leave a not allowed slot between 2 allowed slots or a not allowed slot early in the day and more allowed slots after it, this possible gap might be counted in teachers&apos; and students&apos; timetable)</source>
         <translation>Ha especificado todas las actividades. Puede ser un pequeño problema: Si especifica una franja horaria no permitida entre dos que lo están, ésta no permitida será contada como un hueco en el horario de profesores y alumnos.
 
- La mejor solución sería usar restricciones de pausa.
+La mejor solución sería usar restricciones de pausa.
 
- Si necesita un peso menor de 100%, entonces puede usar esta restricción, pero ponga atención en no obtener horarios imposibles (si el profesor/alumno están restringidos en huecos o primeras horas y se deja una franja horaria no permitido entre dos franjas horarias o un no permitido a primera hora del día y más franja horarias después, este posible hueco puede ser contabilizado en el horario de profesores y alumnos)</translation>
+Si necesita un peso menor de 100%, entonces puede usar esta restricción, pero ponga atención en no obtener horarios imposibles (si el profesor/alumno están restringidos en huecos o primeras horas y se deja una franja horaria no permitida entre dos franjas horarias o una no permitida a primera hora del día y más franjas horarias después, este posible hueco puede contabilizarse en el horario de profesores y alumnos)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="362"/>
@@ -40454,7 +40750,7 @@ la simulación. Deténgala antes</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform_template.ui" line="101"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform_template.ui" line="122"/>
@@ -40522,7 +40818,7 @@ la simulación. Deténgala antes</translation>
 
  La mejor solución sería usar restricciones de pausa.
 
- Si necesita un peso menor de 100%, entonces puede usar esta restricción, pero ponga atención en no obtener horarios imposibles (si el profesor/alumno están restringidos en huecos o primeras horas y se deja una franja horaria no permitido entre dos franjas horarias o un no permitido a primera hora del día y más franja horarias después, este posible hueco puede ser contabilizado en el horario de profesores y alumnos)</translation>
+ Si necesita un peso menor de 100%, entonces puede usar esta restricción, pero ponga atención en no obtener horarios imposibles (si el profesor/alumno están restringidos en huecos o primeras horas y se deja una franja horaria no permitida entre dos franjas horarias o una no permitida a primera hora del día y más franja horarias después, este posible hueco puede contabilizarse en el horario de profesores y alumnos)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="361"/>
@@ -40593,7 +40889,7 @@ Si necesita un peso menor de 100%, entonces puede usar esta restricción, (pero 
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform_template.ui" line="101"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform_template.ui" line="136"/>
@@ -40745,7 +41041,7 @@ Si necesita un peso menor de 100%, entonces puede usar esta restricción, (pero 
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform_template.ui" line="153"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform_template.ui" line="174"/>
@@ -40851,7 +41147,7 @@ Si necesita un peso menor de 100%, entonces puede usar esta restricción, (pero 
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform_template.ui" line="153"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform_template.ui" line="14"/>
@@ -40952,7 +41248,7 @@ Si necesita un peso menor de 100%, entonces puede usar esta restricción, (pero 
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform_template.ui" line="153"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform_template.ui" line="14"/>
@@ -41140,7 +41436,7 @@ Si necesita un peso menor de 100%, entonces puede usar esta restricción, (pero 
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomform_template.ui" line="77"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomform_template.ui" line="111"/>
@@ -41220,7 +41516,7 @@ Si necesita un peso menor de 100%, entonces puede usar esta restricción, (pero 
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomsform_template.ui" line="94"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
 </context>
 <context>
@@ -41336,7 +41632,7 @@ Si necesita un peso menor de 100%, entonces puede usar esta restricción, (pero 
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform_template.ui" line="138"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
 </context>
 <context>
@@ -41431,7 +41727,7 @@ Si necesita un peso menor de 100%, entonces puede usar esta restricción, (pero 
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform_template.ui" line="125"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform_template.ui" line="153"/>
@@ -41526,7 +41822,7 @@ Si necesita un peso menor de 100%, entonces puede usar esta restricción, (pero 
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform_template.ui" line="125"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform_template.ui" line="146"/>
@@ -41576,7 +41872,7 @@ Si necesita un peso menor de 100%, entonces puede usar esta restricción, (pero 
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomform_template.ui" line="72"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomform_template.ui" line="113"/>
@@ -41641,7 +41937,7 @@ Si necesita un peso menor de 100%, entonces puede usar esta restricción, (pero 
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomsform_template.ui" line="94"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomsform_template.ui" line="115"/>
@@ -41784,7 +42080,7 @@ Si necesita un peso menor de 100%, entonces puede usar esta restricción, (pero 
     <message>
         <location filename="../src/interface/modifyconstraintbreaktimesform_template.ui" line="26"/>
         <source>The important thing is that a break does not induce gaps for teachers or students</source>
-        <translation>Lo importante es que el tiempo de descanso no introduzca huecos para el profesorado o el alumnado</translation>
+        <translation>Lo importante es que el tiempo de descanso no introduzca huecos del profesorado o el alumnado</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintbreaktimesform_template.ui" line="44"/>
@@ -41855,7 +42151,7 @@ Si necesita un peso menor de 100%, entonces puede usar esta restricción, (pero 
     <message>
         <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform_template.ui" line="176"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform_template.ui" line="197"/>
@@ -41960,12 +42256,12 @@ Si necesita un peso menor de 100%, entonces puede usar esta restricción, (pero 
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="221"/>
         <source>1. If you add &apos;force consecutive if same day&apos;, then couple extra activities in pairs to obtain a number of activities equal to the number of days per week. Example: 7 activities with duration 1 in a 5 days week, then transform into 5 activities with durations: 2,2,1,1,1 and add a single container activity with these 5 components (possibly raising the weight of added constraint min days between activities up to 100%)</source>
-        <translation>1. Si agrega &apos;forzar consecutivos si mismo día&apos;; y luego acopla actividades en parejas para obtener un número de actividades iguales a la cantidad de días semanales. Ejemplo: 7 actividades con duración 1 en una semana de 5 días con duración: 2,2,1,1,1 y luego añade una actividad contenedora con los 5 componentes (posiblemente elevando el peso de la restricción del mínimo de los días entre actividades hasta el 100%)</translation>
+        <translation>1. Si agrega &apos;forzar consecutiva si en el mismo día&apos;; y luego acopla actividades en parejas para obtener un número de actividades iguales a la cantidad de días semanales. Ejemplo: 7 actividades con duración 1 en una semana de 5 días con duración: 2,2,1,1,1 y luego añade una actividad contenedora con los 5 componentes (posiblemente elevando el peso de la restricción del mínimo de los días entre actividades hasta el 100%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="227"/>
         <source>2. If you don&apos;t add &apos;force consecutive if same day&apos;, then add a larger activity split into a number of activities equal with the number of days per week and the remaining components into other larger split activity. For example, suppose you need to add 7 activities with duration 1 in a 5 days week. Add 2 larger container activities, first one split into 5 activities with duration 1 and second one split into 2 activities with duration 1 (possibly raising the weight of added constraints min days between activities for each of the 2 containers up to 100%)</source>
-        <translation>2. Si no añade &apos;forzar consecutivo si mismo día&apos;, entonces añada una actividad contenedora divisoria en una serie de actividades con los días semanales y los componentes restantes en otra actividad divisoria más grande. Por ejemplo, supongamos que es necesario agregar 7 actividades con duración de 1 en una semana de 5 días. Agregue 2 actividades contenedoras, dividiendo la 1era en 5 actividades con duración 1 y la segunda en 2 actividades con duración 1 (posiblemente elevando el peso de la restricción del mínimo de días entre actividades para cada uno de los contenedores hasta el 100%)</translation>
+        <translation>2. Si no añade &apos;forzar consecutiva si en el mismo día&apos;, entonces añada una actividad contenedora divisoria en una serie de actividades con los días semanales y los componentes restantes en otra actividad divisoria más grande. Por ejemplo, supongamos que es necesario agregar 7 actividades con duración de 1 en una semana de 5 días. Agregue 2 actividades contenedoras, dividiendo la 1era en 5 actividades con duración 1 y la segunda en 2 actividades con duración 1 (posiblemente elevando el peso de la restricción del mínimo de días entre actividades para cada uno de los contenedores hasta el 100%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="234"/>
@@ -42104,7 +42400,7 @@ forzar a que sean consecutivas</translation>
     <message>
         <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform_template.ui" line="176"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform_template.ui" line="197"/>
@@ -42286,7 +42582,7 @@ forzar a que sean consecutivas</translation>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsactivitytagmaxhourscontinuouslyform_template.ui" line="121"/>
         <source>Max hours continuously</source>
-        <translation>Máx. horas continuas</translation>
+        <translation>Máx. de horas continuas</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsactivitytagmaxhourscontinuouslyform_template.ui" line="28"/>
@@ -42319,7 +42615,7 @@ forzar a que sean consecutivas</translation>
         <location filename="../src/interface/modifyconstraintstudentsactivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Modify students activity tag max hours daily</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modificar límite de horas máximas diarias por código de actividad para el alumnado</translation>
+        <translation>Modificar máximo de horas máximas diarias por código de actividad para el alumnado</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsactivitytagmaxhoursdailyform_template.ui" line="28"/>
@@ -43118,7 +43414,7 @@ Nota: Los alumnos no disponibles y las pausas no se cuentan como huecos.</transl
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="153"/>
         <source>Max hours continuously</source>
-        <translation>Máx. horas continuas</translation>
+        <translation>Máx. de horas continuas</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="28"/>
@@ -43313,7 +43609,7 @@ Nota: los grupos de alumnos no disponibles y pausas no se cuentan como huecos (h
     <message>
         <location filename="../src/interface/modifyconstraintstudentssethomeroomform_template.ui" line="69"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssethomeroomform_template.ui" line="98"/>
@@ -43345,7 +43641,7 @@ Nota: los grupos de alumnos no disponibles y pausas no se cuentan como huecos (h
     <message>
         <location filename="../src/interface/modifyconstraintstudentssethomeroomsform_template.ui" line="94"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssethomeroomsform_template.ui" line="115"/>
@@ -43820,7 +44116,7 @@ Nota: los grupos no disponibles y pausas no se cuentan como huecos.</translation
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxhourscontinuouslyform_template.ui" line="118"/>
         <source>Max hours continuously</source>
-        <translation>Máx. horas continuas</translation>
+        <translation>Máx. de horas continuas</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxhourscontinuouslyform_template.ui" line="155"/>
@@ -43885,7 +44181,7 @@ Nota: los grupos no disponibles y pausas no se cuentan como huecos.</translation
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxhoursdailyform_template.ui" line="118"/>
         <source>Max hours daily</source>
-        <translation>Máx. horas diarias</translation>
+        <translation>Máx. de horas diarias</translation>
     </message>
 </context>
 <context>
@@ -44282,7 +44578,7 @@ Nota: los grupos no disponibles y pausas no se cuentan como huecos.</translation
     <message>
         <location filename="../src/interface/modifyconstraintsubactivitiespreferredstartingtimesform_template.ui" line="124"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubactivitiespreferredstartingtimesform_template.ui" line="159"/>
@@ -44388,7 +44684,7 @@ Nota: los grupos no disponibles y pausas no se cuentan como huecos.</translation
     <message>
         <location filename="../src/interface/modifyconstraintsubactivitiespreferredtimeslotsform_template.ui" line="124"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubactivitiespreferredtimeslotsform_template.ui" line="68"/>
@@ -44474,7 +44770,7 @@ Nota: los grupos no disponibles y pausas no se cuentan como huecos.</translation
     <message>
         <location filename="../src/interface/modifyconstraintsubjectactivitytagpreferredroomform_template.ui" line="105"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubjectactivitytagpreferredroomform_template.ui" line="129"/>
@@ -44550,7 +44846,7 @@ Nota: los grupos no disponibles y pausas no se cuentan como huecos.</translation
     <message>
         <location filename="../src/interface/modifyconstraintsubjectactivitytagpreferredroomsform_template.ui" line="107"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubjectactivitytagpreferredroomsform_template.ui" line="128"/>
@@ -44635,7 +44931,7 @@ Nota: los grupos no disponibles y pausas no se cuentan como huecos.</translation
     <message>
         <location filename="../src/interface/modifyconstraintsubjectpreferredroomform_template.ui" line="87"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
 </context>
 <context>
@@ -44705,7 +45001,7 @@ Nota: los grupos no disponibles y pausas no se cuentan como huecos.</translation
     <message>
         <location filename="../src/interface/modifyconstraintsubjectpreferredroomsform_template.ui" line="94"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
 </context>
 <context>
@@ -44893,7 +45189,7 @@ Nota: los grupos no disponibles y pausas no se cuentan como huecos.</translation
     <message>
         <location filename="../src/interface/modifyconstraintteacherhomeroomform_template.ui" line="69"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherhomeroomform_template.ui" line="98"/>
@@ -44925,7 +45221,7 @@ Nota: los grupos no disponibles y pausas no se cuentan como huecos.</translation
     <message>
         <location filename="../src/interface/modifyconstraintteacherhomeroomsform_template.ui" line="94"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation>Peso (%) (recomendada: 0.0%-100.0%)</translation>
+        <translation>Peso (%) (recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherhomeroomsform_template.ui" line="115"/>
@@ -45400,7 +45696,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxhourscontinuouslyform_template.ui" line="118"/>
         <source>Max hours continuously</source>
-        <translation>Máx. horas continuas</translation>
+        <translation>Máx. de horas continuas</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxhourscontinuouslyform_template.ui" line="28"/>
@@ -45853,7 +46149,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
     <message>
         <location filename="../src/interface/modifyconstraintteachernotavailabletimesform_template.ui" line="26"/>
         <source>This constraint does not induce gaps for teachers. If a teacher has lessons before and after this not available period, there will be no gaps counted</source>
-        <translation>Esta restricción no incluye huecos para el profesorado. Si un profesor tiene clases antes y después de un periodo no disponible, no se contarán los huecos</translation>
+        <translation>Esta restricción no incluye huecos del profesorado. Si un profesor tiene clases antes y después de un periodo no disponible, no se contarán los huecos</translation>
     </message>
 </context>
 <context>
@@ -45901,13 +46197,13 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
     <message>
         <location filename="../src/interface/modifyconstraintteachersactivitytagmaxhourscontinuouslyform_template.ui" line="121"/>
         <source>Max hours continuously</source>
-        <translation>Máx. horas continuas</translation>
+        <translation>Máx. de horas continuas</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersactivitytagmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Modify teachers activity tag max hours continuously</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modificar máximo de horas continuas por código de actividad para el profesorado</translation>
+        <translation>Modificar máximo de horas continuas por código de actividad del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersactivitytagmaxhourscontinuouslyform_template.ui" line="28"/>
@@ -45944,7 +46240,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
         <location filename="../src/interface/modifyconstraintteachersactivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Modify teachers activity tag max hours daily</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modificar máximo de horas diarias por código de actividad para el profesorado</translation>
+        <translation>Modificar máximo de horas diarias por código de actividad del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersactivitytagmaxhoursdailyform_template.ui" line="28"/>
@@ -46022,7 +46318,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
         <location filename="../src/interface/modifyconstraintteachersintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Modify teachers interval max days per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modificar intervalo máximo de días semanales para el profesorado</translation>
+        <translation>Modificar intervalo máximo de días semanales del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersintervalmaxdaysperweekform_template.ui" line="22"/>
@@ -46168,7 +46464,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
         <location filename="../src/interface/modifyconstraintteachersmaxdaysperweekform_template.ui" line="14"/>
         <source>Modify teachers max days per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modificar máximo de días semanales para el profesorado</translation>
+        <translation>Modificar máximo de días semanales del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxdaysperweekform_template.ui" line="28"/>
@@ -46245,7 +46541,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxgapsperdayform_template.ui" line="61"/>
         <source>Max gaps per day</source>
-        <translation>Máximo huecos diario</translation>
+        <translation>Máximo huecos diarios</translation>
     </message>
 </context>
 <context>
@@ -46322,7 +46618,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
         <location filename="../src/interface/modifyconstraintteachersmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Modify teachers max hours continuously</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modificar máximo horas continuas para el profesorado</translation>
+        <translation>Modificar máximo horas continuas del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxhourscontinuouslyform_template.ui" line="28"/>
@@ -46344,7 +46640,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxhourscontinuouslyform_template.ui" line="56"/>
         <source>Max hours continuously</source>
-        <translation>Máx. horas continuas</translation>
+        <translation>Máx. de horas continuas</translation>
     </message>
 </context>
 <context>
@@ -46416,7 +46712,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
         <location filename="../src/interface/modifyconstraintteachersmaxspanperdayform_template.ui" line="14"/>
         <source>Modify teachers max span per day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Modificar duración máxima diaria para el profesorado</translation>
+        <translation>Modificar duración máxima diaria del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxspanperdayform_template.ui" line="38"/>
@@ -46554,12 +46850,12 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
     <message>
         <location filename="../src/interface/modifyconstraintteachersminhoursdailyform.cpp" line="79"/>
         <source>Allow empty days check box must be checked. If you need to not allow empty days for the teachers, please use the constraint teachers min days per week</source>
-        <translation>Debe elegir la opción Permitir días libres. Si no quiere permitir días libres para el profesorado, use las restricciones de días mínimos semanales para el profesorado</translation>
+        <translation>Debe elegir la opción Permitir días libres. Si no quiere permitir días libres del profesorado, use las restricciones de días mínimos semanales del profesorado</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersminhoursdailyform.cpp" line="108"/>
         <source>This check box must remain checked. If you really need to not allow empty days for the teachers, please use constraint teachers min days per week</source>
-        <translation>Esta opción debe permanecer activa. Si no requiere permitir días libres para el profesorado, use una restricción de días mínimos semanales para el profesorado</translation>
+        <translation>Esta opción debe permanecer activa. Si no requiere permitir días libres para el profesorado, use una restricción de días mínimos semanales del profesorado</translation>
     </message>
 </context>
 <context>
@@ -46704,7 +47000,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Peso (%)
-(recomendada: 0.0%-100.0%)</translation>
+(recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintthreeactivitiesgroupedform_template.ui" line="56"/>
@@ -46791,7 +47087,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Peso (%)
-(recomendada: 0.0%-100.0%)</translation>
+(recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="97"/>
@@ -46858,7 +47154,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Peso (%)
-(recomendada: 0.0%-100.0%)</translation>
+(recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesgroupedform_template.ui" line="90"/>
@@ -46931,7 +47227,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Peso (%)
-(recomendada: 0.0%-100.0%)</translation>
+(recomendado: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="97"/>
@@ -48616,7 +48912,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
 Please note that the default weight percentage of constraints min days between activities will be 95% (mainly satisfied, not always) and &apos;force consecutive if same day&apos; will be set to true (meaning that if the activities are in the same day, they will be placed continuously, in a bigger duration activity). If you want, you can modify this percent to be 100%, manually in the fet input file or from the interface</source>
         <translation>Abrir archivo obsoleto: se convertirá al formato más reciente, asignando automáticamente porcentajes de peso a las restricciones y eliminando la paridad de las actividades. Se recomienda hacer una copia de seguridad de su archivo antes de guardarlo en el nuevo formato.
 
-Tenga en cuenta que el peso (%) predeterminado para las restricciones de mínimo de días entre actividades será del 95% (casi siempre se cumple, no siempre) y &apos;forzar a consecutiva si en el mismo día&apos; se establecerá como verdadera (lo que significa que, si las actividades son en el mismo día, se colocarán una tras otra, en una actividad de mayor duración). Si así lo desea, puede modificar manualmente este porcentaje para que sea 100%, directamente en el archivo de entrada fet o desde la interfaz</translation>
+Tenga en cuenta que el peso (%) predeterminado para las restricciones de mínimo de días entre actividades será del 95% (casi siempre se cumple, no siempre) y &apos;forzar a consecutiva si en el mismo día&apos; se establecerá como verdadera (lo que significa que, si las actividades son en el mismo día, se colocarán una tras otra, en una actividad de mayor duración). Si así lo desea, puede modificar manualmente este porcentaje para que sea 100%, directamente en el archivo de entrada FET o desde la interfaz</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="5026"/>
@@ -48745,40 +49041,40 @@ Tenga en cuenta que el peso (%) predeterminado para las restricciones de mínimo
     <message>
         <location filename="../src/engine/rules.cpp" line="6455"/>
         <source>File contains constraint students no gaps, which is old (it was improved in FET 5.5.0), and will be converted to the similar constraint of this type, constraint students max gaps per week, with max gaps=0. If you like, you can modify this constraint to allow more gaps per week (normally not accepted in schools)</source>
-        <translation>El archivo contiene restricciones de alumnos sin huecos obsoletas. Estas han sido mejorado en FET 5.5.0, y será convertido en una restricción similar de este tipo, una de máximo de huecos semanales, con un máximo de 0. Si quiere puede modificar la restricción para permitir más, (aunque normalmente no es aceptado en las escuelas)</translation>
+        <translation>El archivo contiene restricciones de alumnos sin huecos obsoletas. Estas han sido mejoradas en FET 5.5.0, y será convertido en una restricción similar de este tipo, una de máximo de huecos semanales, con un máximo de 0. Si quiere puede modificar la restricción para permitir más, (aunque normalmente no es aceptado en las escuelas)</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="6469"/>
         <source>File contains constraint students set no gaps, which is old (it was improved in FET 5.5.0), and will be converted to the similar constraint of this type, constraint students set max gaps per week, with max gaps=0. If you like, you can modify this constraint to allow more gaps per week (normally not accepted in schools)</source>
-        <translation>El archivo contiene restricciones de grupos de alumnos sin huecos obsoletas. Estas han sido mejorado en FET 5.5.0, y será convertido en una restricción similar de este tipo, una de máximo de huecos semanales, con un máximo de 0. Si quiere puede modificar la restricción para permitir más, (aunque normalmente no es aceptado en las escuelas)</translation>
+        <translation>El archivo contiene restricciones de grupos de alumnos sin huecos obsoletas. Estas han sido mejoradas en FET 5.5.0, y será convertido en una restricción similar de este tipo, una de máximo de huecos semanales, con un máximo de 0. Si quiere puede modificar la restricción para permitir más, (aunque normalmente no es aceptado en las escuelas)</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="6497"/>
         <source>File contains constraint students early, which is old (it was improved in FET 5.5.0), and will be converted to the similar constraint of this type, constraint students early max beginnings at second hour, with max beginnings=0. If you like, you can modify this constraint to allow more beginnings at second available hour (above 0 - this will make the timetable easier)</source>
-        <translation>El archivo contiene restricciones de alumnos comenzando a primera hora, que es obsoleta (ha sido mejorado en FET 5.5.5) y será convertido en restricciones equivalentes de iniciar como máximo a segunda hora, con un valor de 0. Si lo desea puede cambiarlo</translation>
+        <translation>El archivo contiene restricciones de alumnos comenzando a primera hora, que son obsoletas (ha sido mejoradas en FET 5.5.5) y será convertido en restricciones equivalentes de iniciar como máximo a segunda hora, con un valor de 0. Si lo desea puede cambiarlo</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="6514"/>
         <source>File contains constraint students set early, which is old (it was improved in FET 5.5.0), and will be converted to the similar constraint of this type, constraint students set early max beginnings at second hour, with max beginnings=0. If you like, you can modify this constraint to allow more beginnings at second available hour (above 0 - this will make the timetable easier)</source>
-        <translation>El archivo contien restricciones de grupos de alumnos comenzando a primera hora, que es antiguo (ha sido mejorado en FET 5.5.5) y será convertido en restricciones equivalentes de iniciar como máximo a segunda hora, con un valor de 0. Si lo desea puede cambiarlo</translation>
+        <translation>El archivo contiene restricciones de grupos de alumnos comenzando a primera hora, que son obsoletas (han sido mejoradas en FET 5.5.5) y será convertido en restricciones equivalentes de iniciar como máximo a segunda hora, con un valor de 0. Si lo desea puede cambiarlo</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="6531"/>
         <source>Your file contains old constraint activities preferred times, which will be converted to new equivalent constraint activities preferred starting times. Beginning with FET-5.5.9 it is possible to specify: 1. the starting times of several activities (constraint activities preferred starting times) or: 2. the accepted time slots (constraint activities preferred time slots). If what you need is type 2 of this constraint, you will have to add it by yourself from the interface.</source>
-        <translation>Su archivo contiene restricciones de tiempos preferidos obsoletas, que se convertirán a las equivalentes actuales de hora de inicio preferida. A partir de FET-5.5.9 es posible especificar: 1. las horas de inicio preferidas de varias actividades o 2: las franja horarias aceptadas en el horario. Si lo que necesita es el segundo tipo, debe añadirla a través de la interfaz.</translation>
+        <translation>Su archivo contiene restricciones de tiempos preferidos obsoletas, que se convertirán a las equivalentes actuales de hora de inicio preferida. A partir de FET-5.5.9 es posible especificar: 1. las horas de inicio preferidas de varias actividades o 2: las franjas horarias aceptadas en el horario. Si lo que necesita es el segundo tipo, debe añadirla a través de la interfaz.</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="6569"/>
         <source>File contains deprecated constraint teachers subject tags max hours continuously - will be ignored
 </source>
-        <translation>El archivo contiene restricciones obsoletas y se ignorarán - máx. horas continuas para el profesorado por código de actividad
+        <translation>El archivo contiene restricciones obsoletas y se ignorarán - máx. de horas continuas del profesorado por código de actividad
 </translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="6580"/>
         <source>File contains deprecated constraint teachers subject tag max hours continuously - will be ignored
 </source>
-        <translation>El archivo contiene restricciones obsoletas y se ignorará - máx. horas continuas para el profesorado por materias
+        <translation>El archivo contiene restricciones obsoletas y se ignorará - máx. de horas continuas del profesorado por materias
 </translation>
     </message>
     <message>
@@ -48842,7 +49138,7 @@ no añadida - duplicada</translation>
         <location filename="../src/engine/rules.cpp" line="6750"/>
         <source>File contains deprecated constraint minimize number of rooms for teachers - will be ignored
 </source>
-        <translation>El archivo contiene restricciones obsoletas y se ignorará - minimizar número de aulas para el profesorado
+        <translation>El archivo contiene restricciones obsoletas y se ignorará - minimizar número de aulas del profesorado
 </translation>
     </message>
     <message>
@@ -48870,7 +49166,7 @@ no añadida - duplicada</translation>
         <location filename="../src/engine/rules.cpp" line="6841"/>
         <source>File contains deprecated constraint max room changes per day for teachers - will be ignored
 </source>
-        <translation>El archivo contiene restricciones obsoletas y se ignorará - cambios máximos de aula diarios para el profesorado
+        <translation>El archivo contiene restricciones obsoletas y se ignorará - cambios máximos de aula diarios del profesorado
 </translation>
     </message>
     <message>
@@ -48921,7 +49217,7 @@ no añadida - duplicada</translation>
     <message>
         <location filename="../src/engine/rules.cpp" line="7032"/>
         <source>Saving of logging gave error code %1, which means you cannot see the log of reading the file. Please check your disk free space</source>
-        <translation>Se obtuvo un código de error %1 al guardar la bitacora por lo que no podrá leer dicho archivo. Compruebe el espacio libre en su disco duro</translation>
+        <translation>Se obtuvo un código de error %1 al guardar la bitácora por lo que no podrá leer dicho archivo. Compruebe el espacio libre en su disco duro</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="7075"/>
@@ -49069,7 +49365,7 @@ no añadida - duplicada</translation>
     <message>
         <location filename="../src/engine/rules.cpp" line="806"/>
         <source>All &apos;group activities in the initial order for timetable generation&apos; items should have different activities ids. (Each activity id must appear at most once in all the items.) This is not true for item number %1 and activity id %2.</source>
-        <translation>Todos los elementos de &apos;actividades de grupo en el orden inicial de generación de horarios&apos; deben tener IDs de actividades diferentes. Cada identificador de actividad debe aparecer como máximo una vez en todos los elementos. Esto no se cumple para el elemento %1 y la actividad con ID %2.</translation>
+        <translation>Todos los elementos de &apos;actividades de grupo en el orden inicial de generación de horarios&apos; deben tener Id de actividades diferentes. Cada identificador de actividad debe aparecer como máximo una vez en todos los elementos. Esto no se cumple para el elemento %1 y la actividad con ID %2.</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="8861"/>
@@ -49172,7 +49468,7 @@ no añadida - duplicada</translation>
     <message>
         <location filename="../src/interface/savetimetableconfirmationform.cpp" line="44"/>
         <source>This option is only useful if you need to lock current timetable into a file. Locking means that there will be added constraints activity preferred starting time and activity preferred room with 100% importance for each activity to fix it at current place in current timetable. You can save this timetable as an ordinary .fet file; when you&apos;ll open it, you&apos;ll see all old inputted data (activities, teachers, etc.) and the locking constraints as the last time/space constraints. You can unlock some of these activities (by removing constraints) if small changes appear in the configuration, and generate again and the remaining locking constraints will be respected.</source>
-        <translation>Esta opción es útil únicamente si se necesita bloquear el horario actual en un archivo. El bloqueo significa que se añadiran las restricciones de hora de inicio y aulas con actividad preferida, con un 100% de peso para cada actividad, y fijarla en el sitio actual del horario. Se puede guardar este horario como un archivo .fet normal; cuando lo abra, verá todos los datos introducidos (actividades, profesores, etc.) y el bloqueo de las restricciones de tiempo y lugar. Se pueden desbloquear algunas de ellas (eliminando restricciones) si aparecen pequeños cambios en la configuración, y generar de nuevo respetando los bloqueos restantes.</translation>
+        <translation>Esta opción es útil únicamente si se necesita bloquear el horario actual en un archivo. El bloqueo significa que se añadirán las restricciones de hora de inicio y aulas con actividad preferida, con un 100% de peso para cada actividad, y fijarla en el sitio actual del horario. Se puede guardar este horario como un archivo .fet normal; cuando lo abra, verá todos los datos introducidos (actividades, profesores, etc.) y el bloqueo de las restricciones de tiempo y lugar. Se pueden desbloquear algunas de ellas (eliminando restricciones) si aparecen pequeños cambios en la configuración, y generar de nuevo respetando los bloqueos restantes.</translation>
     </message>
     <message>
         <location filename="../src/interface/savetimetableconfirmationform.cpp" line="52"/>
@@ -49640,7 +49936,7 @@ no añadida - duplicada</translation>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="641"/>
         <source>There were removed %1 activities, %2 time constraints and %3 space constraints.</source>
-        <translation>Se eliminaron %1 actividades,%2 restricciones de tiempo y %3 restricciones de espacio.</translation>
+        <translation>Se eliminaron %1 actividades, %2 restricciones de tiempo y %3 restricciones de lugar.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="657"/>
@@ -49680,7 +49976,7 @@ no añadida - duplicada</translation>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="750"/>
         <source>Or you might use the FET feature to import students sets from comma separated values (CSV) files.</source>
-        <translation>O puede usar la función FET para importar grupos de archivos CSV (valores separados por comas).</translation>
+        <translation>O puede usar la función FET para importar grupos de archivos CSV (valores separados por delimitadores).</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="752"/>
@@ -49700,7 +49996,7 @@ no añadida - duplicada</translation>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="680"/>
         <source>You might first want to consider if dividing a year is necessary and on what options. Please remember that FET can handle activities with multiple teachers/students sets. If you have say students set 9a, which is split into 2 parts: English (teacher TE) and French (teacher TF), and language activities must be simultaneous, then you might not want to divide according to this category, but add more larger activities, with students set 9a and teachers TE+TF. The only drawback is that each activity can take place only in one room in FET, so you might need to find a way to overcome that.</source>
-        <translation>Puede primero considerar si dividir un año es necesario y en qué condiciones. Recuerde que FET puede manejar actividades con grupos múltiples de profesores/grupos. Si tiene un grupo 9a, que se divide en 2: Inglés (profesor PE) y Francés (profesor PF), y las actividades de idioma deben ser simultaneas, entonces puede no querer dividir de acuerdo a esta categoría, sino añadir actividades más grandes, con un grupo 9a y profesores PE+PF. El único problema estaría en que cada actividad tendría que ser colocada en un aula única en FET, requiriendo una forma de realizar esto.</translation>
+        <translation>Puede primero considerar si dividir un año es necesario y en qué condiciones. Recuerde que FET puede manejar actividades con grupos múltiples de profesores/grupos. Si tiene un grupo 9a, que se divide en 2: Inglés (profesor PE) y Francés (profesor PF), y las actividades de idioma deben ser simultáneas, entonces puede no querer dividir de acuerdo a esta categoría, sino añadir actividades más grandes, con un grupo 9a y profesores PE+PF. El único problema estaría en que cada actividad tendría que ser colocada en un aula única en FET, requiriendo una forma de realizar esto.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="114"/>
@@ -49808,7 +50104,7 @@ no añadida - duplicada</translation>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="236"/>
         <source>Remove all</source>
-        <translation></translation>
+        <translation>Eliminar todo</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="340"/>
@@ -49905,7 +50201,7 @@ no añadida - duplicada</translation>
     <message>
         <location filename="../src/interface/spreadconfirmationform_template.ui" line="14"/>
         <source>Instructions and confirmation of spreading activities</source>
-        <translation>Instrucciones y confirmación para distribución de actividades</translation>
+        <translation>Instrucciones y confirmación para la distribución de actividades</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadconfirmationform_template.ui" line="23"/>
@@ -50016,7 +50312,7 @@ Reporte este error. FET cancelará la operación actual</translation>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="406"/>
         <source>Spreading of activities operation completed successfully</source>
-        <translation>La distribución de actividades se completo con éxito</translation>
+        <translation>La distribución de actividades se completó exitosamente</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="408"/>
@@ -50031,7 +50327,7 @@ Reporte este error. FET cancelará la operación actual</translation>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="425"/>
         <source>Help on spreading the activities over the week:</source>
-        <translation>Ayuda sobre distribuir de actividades uniformemente en la semana:</translation>
+        <translation>Ayuda sobre cómo distribuir actividades uniformemente en la semana:</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="429"/>
@@ -50064,7 +50360,7 @@ Reporte este error. FET cancelará la operación actual</translation>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform_template.ui" line="20"/>
         <source>Consecutive if same day?</source>
-        <translation>¿Consecutivas si son en el mismo día?</translation>
+        <translation>¿Consecutiva si en el mismo día?</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform_template.ui" line="26"/>
@@ -50126,7 +50422,7 @@ Reporte este error. FET cancelará la operación actual</translation>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform_template.ui" line="209"/>
         <source>Select this if you want activities split into 3 per week not to be in 3 consecutive days. There will be added 2 additional constraints to accomplish this, min 2 days between isolated component and each of the other 2 components. Note: usually, any isolated component: 1, 2 or 3 should work</source>
-        <translation>Seleccione esta opción si quiere dividir las actividades en 3 a la semana y uq no estén en 3 días consecutivos. Se añadirán restricciones adicionales para cumplir esto, mín. 2 días entre componentes aislados y cada uno de los otros 2 componentes. Nota: habitualmente, cualquier componente aislado: 1, 2 o 3 debería funcionar</translation>
+        <translation>Seleccione esta opción si quiere dividir las actividades en 3 a la semana y que no estén en 3 días consecutivos. Se añadirán restricciones adicionales para cumplir esto, mín. 2 días entre componentes aislados y cada uno de los otros 2 componentes. Nota: habitualmente, cualquier componente aislado: 1, 2 o 3 debería funcionar</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform_template.ui" line="245"/>
@@ -50254,7 +50550,7 @@ Reporte este error. FET cancelará la operación actual</translation>
         <location filename="../src/engine/statisticsexport.cpp" line="386"/>
         <source>To hide an element just write the following phrase into the element: %1 (without quotes).</source>
         <comment>%1 is a short phrase beginning and ending with quotes, and we want the user to be able to add it, but without quotes</comment>
-        <translation>Para ocultar un elemento simplemente escriba la siguiente frase en el elemento:%1 (sin las comillas).</translation>
+        <translation>Para ocultar un elemento simplemente escriba la siguiente frase en el elemento: %1 (sin las comillas).</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="466"/>
@@ -50365,7 +50661,7 @@ Reporte este error. FET cancelará la operación actual</translation>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="165"/>
         <source>Statistics export incomplete</source>
-        <translation>Exportación de estadísticas  incompleta</translation>
+        <translation>Exportación de estadísticas incompleta</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="384"/>
@@ -50713,7 +51009,7 @@ Reporte este error. FET cancelará la operación actual</translation>
         <location filename="../src/interface/statisticsprintform.cpp" line="219"/>
         <source>Ledger</source>
         <comment>Type of paper size</comment>
-        <translation>Ledger</translation>
+        <translation>Legal</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="220"/>
@@ -51145,7 +51441,7 @@ Abajo: %4</translation>
     <message>
         <location filename="../src/interface/subactivitiesform.cpp" line="396"/>
         <source>Above the (sub)activities list, we have 2 labels, containing 4 numbers. The first label contains text: No: a / b. The first number a is the number of active (sub)activities (we number each individual subactivity as 1), while the second number b is the number of total (sub)activities. The second label contains text: Dur: c / d. The third number c is the duration of active (sub)activities, in periods (or FET hours), while the fourth number d is the duration of total (sub)activities, in periods (or FET hours). So, No means number and Dur means duration.</source>
-        <translation>Sobre la lista de (sub)actividades hay 2 etiquetas que contienen 4 números. La primera etiqueta contiene texto: Núm: a / b. El primer número, a, es el número de actividad (sub)actividad (cada una de las subactividades se numera como 1), mientras que el segundo número, b, es el total de (sub)actividades. La segunda etiqueta contiene texto: Dur.: c / d. El tercer número, c es la duración de las (sub)actividades activas en períodos (horas FET), mientras que el cuarto número, d, es la duración de las (sub)actividades totales, en períodos (horas FET). Por lo tanto, Núm. significa número y Dur. significa duración.</translation>
+        <translation>Sobre la lista de (sub)actividades hay 2 etiquetas que contienen 4 números. La primera etiqueta contiene texto: Núm.: a / b. El primer número, a, es el número de actividad (sub)actividad (cada una de las subactividades se numera como 1), mientras que el segundo número, b, es el total de (sub)actividades. La segunda etiqueta contiene texto: Dur.: c / d. El tercer número, c es la duración de las (sub)actividades activas en períodos (horas FET), mientras que el cuarto número, d, es la duración de las (sub)actividades totales, en períodos (horas FET). Por lo tanto, Núm. significa número y Dur. significa duración.</translation>
     </message>
     <message>
         <location filename="../src/interface/subactivitiesform.cpp" line="402"/>
@@ -52771,7 +53067,7 @@ Abajo: %4</translation>
         <location filename="../src/engine/timetableexport.cpp" line="9939"/>
         <location filename="../src/engine/timetableexport.cpp" line="10138"/>
         <source>This is a teaser only. Values are not correct!</source>
-        <translation>Esto es sólo una muestra. ¡Los valores no son correctos!</translation>
+        <translation>Esto es sólo una muestra. ¡Los valores son incorrectos!</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9943"/>
@@ -52836,13 +53132,13 @@ Abajo: %4</translation>
         <location filename="../src/engine/timetableexport.cpp" line="10080"/>
         <location filename="../src/engine/timetableexport.cpp" line="10293"/>
         <source>Min</source>
-        <translation>Mín</translation>
+        <translation>Mín.</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10087"/>
         <location filename="../src/engine/timetableexport.cpp" line="10300"/>
         <source>Max</source>
-        <translation>Máx</translation>
+        <translation>Máx.</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10105"/>
@@ -53594,7 +53890,7 @@ Abajo: %4</translation>
         <location filename="../src/interface/timetablegenerateform.cpp" line="259"/>
         <location filename="../src/interface/timetablegenerateform.cpp" line="412"/>
         <source>Please check constraints related to following possibly problematic activity (or teacher(s), or students set(s)):</source>
-        <translation>Compruebe las restricciones relacionadas con las siguiente actividad problemática (profesor(es), grupo(s)):</translation>
+        <translation>Compruebe las restricciones relacionadas con la siguiente actividad problemática (profesor(es), grupo(s)):</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="397"/>
@@ -53739,7 +54035,7 @@ Abajo: %4</translation>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="229"/>
         <source>You can only see generated timetables on the hard disk, in HTML and XML formats and soft conflicts in text format, or latest timetable in the Timetable/View menu. It is needed that the directory %1 to be emptied and deleted before proceeding.</source>
-        <translation>Sólo se pueden ver los horarios generados en el disco duro, en formato HTML y XML y los conflictos triviales en formato texto, o el último horario en el menú HorarioVer. Es necesario que vacie y elimine el directorio %1 antes de continuar.</translation>
+        <translation>Sólo se pueden ver los horarios generados en el disco duro, en formato HTML y XML y los conflictos triviales en formato texto, o el último horario en el menú HorarioVer. Es necesario que vacié y elimine el directorio %1 antes de continuar.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="238"/>
@@ -54246,7 +54542,7 @@ Abajo: %4</translation>
         <location filename="../src/interface/timetableprintform.cpp" line="286"/>
         <source>Ledger</source>
         <comment>Type of paper size</comment>
-        <translation>Ledger</translation>
+        <translation>Legal</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="287"/>
@@ -54812,7 +55108,7 @@ Detenga la simulación antes de esto.</translation>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="699"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="711"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation>Un posible problema puede ser que tenga 2 o más restricciones de tipo aula preferida para actividad con peso del 100% aplicados a la actividad %1, deje sólo una de ellas</translation>
+        <translation>Un posible problema puede ser que tenga 2 o más restricciones de tipo aula preferida para la actividad con peso del 100% aplicados a la actividad %1, deje sólo una de ellas</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="829"/>
@@ -55047,7 +55343,7 @@ Detenga la simulación antes de esto.</translation>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="947"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="961"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation>Un problema posible puede ser que tenga 2 o más restricciones de tipo aula preferida para actividad con peso del 100% aplicados a la actividad %1, deje uno de ellas</translation>
+        <translation>Un problema posible puede ser que tenga 2 o más restricciones de tipo aula preferida para la actividad con peso del 100% aplicados a la actividad %1, deje uno de ellas</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1115"/>
@@ -55322,7 +55618,7 @@ Detenga la simulación antes de esto.</translation>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="747"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="820"/>
         <source>The following constraint will be deleted:</source>
-        <translation>Las siguiente restricción se borrará:</translation>
+        <translation>La siguiente restricción se borrará:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="760"/>
@@ -55340,7 +55636,7 @@ Detenga la simulación antes de esto.</translation>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="793"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="805"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation>Un posible problema puede ser que tenga 2 o más restricciones de tipo aula preferida para actividad con peso del 100% aplicados a la actividad %1, deje sólo una de ellas</translation>
+        <translation>Un posible problema puede ser que tenga 2 o más restricciones de tipo aula preferida para la actividad con peso del 100% aplicados a la actividad %1, deje sólo una de ellas</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="923"/>
@@ -55548,7 +55844,7 @@ Detenga la simulación antes de esto.</translation>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1106"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1191"/>
         <source>The following constraint will be deleted:</source>
-        <translation>Las siguiente restricción se borrará:</translation>
+        <translation>La siguiente restricción se borrará:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1119"/>
@@ -55815,7 +56111,7 @@ Detenga la simulación antes de esto.</translation>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="645"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="719"/>
         <source>The following constraint will be deleted:</source>
-        <translation>Las siguiente restricción se borrará:</translation>
+        <translation>La siguiente restricción se borrará:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="658"/>
@@ -55833,7 +56129,7 @@ Detenga la simulación antes de esto.</translation>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="692"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="704"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation>Un problema posible puede ser que tenga 2 o más restricciones de tipo aula preferida para actividad con un peso de 100% aplicados a la actividad %1, deje sólo una de ellas</translation>
+        <translation>Un problema posible puede ser que tenga 2 o más restricciones de tipo aula preferida para la actividad con un peso de 100% aplicados a la actividad %1, deje sólo una de ellas</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="822"/>
@@ -55853,7 +56149,7 @@ Detenga la simulación antes de esto.</translation>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform_template.ui" line="38"/>
         <source>Lock/unlock</source>
         <extracomment>This is a group box for locking/unlocking buttons</extracomment>
-        <translation>Bloqueae/Desbloquear</translation>
+        <translation>Bloquear/Desbloquear</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform_template.ui" line="46"/>
@@ -56062,7 +56358,7 @@ Detenga la simulación antes de esto.</translation>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="913"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="927"/>
         <source>A possible problem might be that you have 2 or more constraints of type activity preferred room with weight 100% related to activity id %1, please leave only one of them</source>
-        <translation>Un problema posible puede ser que tenga 2 o más restricciones de tipo aula preferida para actividad con peso 100% relacionadas a la actividad %1, deje sólo una de ellas</translation>
+        <translation>Un problema posible puede ser que tenga 2 o más restricciones de tipo aula preferida para la actividad con peso 100% relacionadas a la actividad %1, deje sólo una de ellas</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1081"/>

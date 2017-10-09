@@ -2078,7 +2078,7 @@ is unchecked).
 if you use click, then something is called only once.
 
 130---------------------------------------------------------
-From Daniel (on forum, see http://lalescu.ro/liviu/fet/forum/index.php?topic=1224):
+From Daniel (on forum, see https://lalescu.ro/liviu/fet/forum/index.php?topic=1224):
 
 Allow activities to span over breaks. (For the moment, a solution is to split activities
 and add constraints two (or three) activities grouped. Another solution is to not
@@ -3014,7 +3014,7 @@ Vanyo Georgiev: May be there must be a setting: 'Remember current page' and each
 (Vanyo Georgiev provided the necessary code changes to do this.)
 
 205---------------------------------------------------------
-From bharatstank (on forum): ( http://lalescu.ro/liviu/fet/forum/index.php?topic=1826 )
+From bharatstank (on forum): ( https://lalescu.ro/liviu/fet/forum/index.php?topic=1826 )
 
 bharatstank:
 
@@ -3095,7 +3095,7 @@ About making this automatic for activity tags - I have added this in the TODO li
 206---------------------------------------------------------
 From Vanyo Georgiev (on forum):
 
-There are translations of the FET User manual in several languages http://lalescu.ro/liviu/fet/doc/
+There are translations of the FET User manual in several languages https://lalescu.ro/liviu/fet/doc/
 
 I think it would be nice, when there is an User manual in the currently set language of the FET interface, by clicking on the Help -> Online -> Help contents the User manual in the  language of the FET interface is opened.
 
@@ -3134,8 +3134,8 @@ new Volker Dirr's code: 5 October 2015
 // Description: This file is part of FET
 //
 //
-// Author: Lalescu Liviu <Please see http://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)>
-// Copyright (C) 2003 Liviu Lalescu <http://lalescu.ro/liviu/>
+// Author: Lalescu Liviu <Please see https://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)>
+// Copyright (C) 2003 Liviu Lalescu <https://lalescu.ro/liviu/>
 //
 /***************************************************************************
  *                                                                         *
@@ -5194,7 +5194,7 @@ Exmple: Physics1 have 2 split in the week, so why I add this info in every activ
 314---------------------------------------------------------
 From Benahmed Abdelkrim and Volker Dirr (on forum):
 
-http://lalescu.ro/liviu/fet/forum/index.php?topic=3141.0
+https://lalescu.ro/liviu/fet/forum/index.php?topic=3141.0
 
 1. Volker Dirr suggests renaming the Algeria and Morocco version to other better names, since they can be used more generally in other countries/institutions.
 
@@ -5656,7 +5656,7 @@ Just make a timetable view teachers, keeping only the free days and the not avai
 
 Also suggested by mercurialuser.
 
-Forum link: http://lalescu.ro/liviu/fet/forum/index.php?topic=3461.0
+Forum link: https://lalescu.ro/liviu/fet/forum/index.php?topic=3461.0
 
 340---------------------------------------------------------
 From Emiliano Llano Díaz:

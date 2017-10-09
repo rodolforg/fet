@@ -3,8 +3,8 @@
 // Description: This file is part of FET
 //
 //
-// Author: Liviu Lalescu <http://lalescu.ro/liviu/>
-// Copyright (C) 2013 Liviu Lalescu <http://lalescu.ro/liviu/>
+// Author: Liviu Lalescu <https://lalescu.ro/liviu/>
+// Copyright (C) 2013 Liviu Lalescu <https://lalescu.ro/liviu/>
 //
 /***************************************************************************
  *                                                                         *

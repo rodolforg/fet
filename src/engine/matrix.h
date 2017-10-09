@@ -3,8 +3,8 @@
 // Description: This file is part of FET
 //
 //
-// Author: Liviu Lalescu <Please see http://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)>
-// Copyright (C) 2009 Liviu Lalescu <http://lalescu.ro/liviu/>
+// Author: Liviu Lalescu <Please see https://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)>
+// Copyright (C) 2009 Liviu Lalescu <https://lalescu.ro/liviu/>
 //
 /***************************************************************************
  *                                                                         *
@@ -23,7 +23,7 @@
 //		Hints from C++ FAQ LITE by Marshall Cline -
 //			- Section [13] - Operator overloading, article [13.12] - advice about the () operator for matrices.
 //
-//		You may find more information on the FET documentation web page, http://lalescu.ro/liviu/fet/doc/
+//		You may find more information on the FET documentation web page, https://lalescu.ro/liviu/fet/doc/
 
 #ifndef MATRIX_H
 #define MATRIX_H

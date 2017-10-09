@@ -2,7 +2,7 @@
 توجيهات من إنجاز: شفيق اكَريكَر (ثانوية الفارابي - حد كورت)
 
 تم التوصل إلى هذه التوجيهات أثناء نقاش على منتدى
-http://lalescu.ro/liviu/fet/forum/
+https://lalescu.ro/liviu/fet/forum/
 بين:
 - شفيق اكَريكَر Chafik Graiguer
 - فولكر دير Volker Dirr
