@@ -245,6 +245,7 @@ using namespace std;
 
 #include <QNetworkAccessManager>
 #include <QNetworkReply>
+#include <QSslSocket>
 
 #include <QRegExp>
 
@@ -607,14 +608,21 @@ FetMainForm::FetMainForm()
 	settingsDuplicateVerticalNamesAction->setChecked(TIMETABLE_HTML_REPEAT_NAMES);
 	
 	if(checkForUpdates){
-		networkManager=new QNetworkAccessManager(this);
-		connect(networkManager, SIGNAL(finished(QNetworkReply*)), this, SLOT(replyFinished(QNetworkReply*)));
-		QUrl url("https://lalescu.ro/liviu/fet/crtversion/crtversion.txt");
-		if(VERBOSE){
-			cout<<"New version checking host: "<<qPrintable(url.host())<<endl;
-			cout<<"New version checking path: "<<qPrintable(url.path())<<endl;
+		if(!QSslSocket::supportsSsl()){
+			QMessageBox::warning(this, tr("FET warning"), tr("SSL is not available (this might be caused by missing SSL libraries)."
+			 " Because of this, FET cannot check for updates on startup (it cannot get the file %1).")
+			 .arg("https://lalescu.ro/liviu/fet/crtversion/crtversion.txt"));
 		}
-		networkManager->get(QNetworkRequest(url));
+		else{
+			networkManager=new QNetworkAccessManager(this);
+			connect(networkManager, SIGNAL(finished(QNetworkReply*)), this, SLOT(replyFinished(QNetworkReply*)));
+			QUrl url("https://lalescu.ro/liviu/fet/crtversion/crtversion.txt");
+			if(VERBOSE){
+				cout<<"New version checking host: "<<qPrintable(url.host())<<endl;
+				cout<<"New version checking path: "<<qPrintable(url.path())<<endl;
+			}
+			networkManager->get(QNetworkRequest(url));
+		}
 	}
 	
 	settingsPrintActivityTagsAction->setCheckable(true);
@@ -4301,7 +4309,7 @@ void FetMainForm::on_settingsRestoreDefaultsAction_triggered()
 #endif
 	
 	checkForUpdatesAction->setChecked(false);
-	checkForUpdates=0;
+	checkForUpdates=false;
 	
 	SHOW_SHORTCUTS_ON_MAIN_WINDOW=true;
 	settingsShowShortcutsOnMainWindowAction->setChecked(SHOW_SHORTCUTS_ON_MAIN_WINDOW);
