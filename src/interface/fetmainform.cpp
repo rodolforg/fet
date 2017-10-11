@@ -608,6 +608,7 @@ FetMainForm::FetMainForm()
 	settingsDuplicateVerticalNamesAction->setChecked(TIMETABLE_HTML_REPEAT_NAMES);
 	
 	if(checkForUpdates){
+		//After setGeometry(rect), so that we know the position of the main form, used for the parent 'this' of the QMessageBox below.
 		if(!QSslSocket::supportsSsl()){
 			QMessageBox::warning(this, tr("FET warning"), tr("SSL is not available (this might be caused by missing SSL libraries)."
 			 " Because of this, FET cannot check for updates on startup (it cannot get the file %1).")
