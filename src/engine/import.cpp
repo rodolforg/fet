@@ -73,7 +73,6 @@ static QString warnText;				// warnings about the csv file
 static QStringList dataWarning;			// warnings about the current conflicts between the csv file and the data that is already in memory
 static QString lastWarning;
 
-
 int Import::chooseWidth(int w)
 {
 	int ww=w;
@@ -360,7 +359,6 @@ void ChooseFieldsDialog::chooseFieldsDialogUpdateRadio2(){
 	}
 }
 
-
 void ChooseFieldsDialog::chooseFieldsDialogUpdateRadio3(){
 	if(fieldRadio3[FIELD_GROUP_NAME]->isChecked()){
 		fieldGroupBox[FIELD_SUBGROUP_NAME]->setDisabled(false);
@@ -411,7 +409,6 @@ void ChooseFieldsDialog::chooseFieldsDialogUpdateLine3Text(){
 		pb->setDisabled(true);
 }
 
-
 void ChooseFieldsDialog::chooseFieldsDialogClose(){
 	for(int i=1; i<NUMBER_OF_FIELDS; i++){
 		if(fieldNumber[i]!=DO_NOT_IMPORT){
@@ -437,7 +434,6 @@ void ChooseFieldsDialog::chooseFieldsDialogClose(){
 	
 	this->accept();
 }
-
 
 LastWarningsDialog::LastWarningsDialog(QWidget *parent): QDialog(parent)
 {
@@ -1120,7 +1116,6 @@ int Import::readFields(QWidget* parent){
 	return true;
 }
 
-
 int Import::showFieldsAndWarnings(QWidget* parent, QDialog* &newParent){
 	newParent=((QDialog*)parent);
 
@@ -1371,7 +1366,6 @@ void Import::importCSVActivityTags(QWidget* parent){
 	gt.rules.internalStructureComputed=false;
 }
 
-
 void Import::importCSVRoomsAndBuildings(QWidget* parent){
 	prearrangement();
 	fieldNumber[FIELD_ROOM_NAME]=IMPORT_DEFAULT_ITEM;
@@ -1591,7 +1585,6 @@ void Import::importCSVSubjects(QWidget* parent){
 	IMPORT_DIRECTORY=fileName.left(tmp);
 	gt.rules.internalStructureComputed=false;
 }
-
 
 void Import::importCSVTeachers(QWidget* parent){
 	prearrangement();
