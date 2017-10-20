@@ -1996,4 +1996,8 @@ Versions 5.33.0 - 5.33.v
 - Version 5.33.2
 	- Updated to Qt 5.9.2.
 	- Added a new complete Spanish translation, by Emiliano Llano Díaz.
+	- The homepage of FET was updated to use SSL (https protocol instead of http).
+	- Code cleanup.
+- Version 5.33.3
+	- Updated the Spanish translation, by Emiliano Llano Díaz.
 	- Code cleanup.
