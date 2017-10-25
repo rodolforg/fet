@@ -68,6 +68,7 @@ private:
 	QRadioButton* RBAdd;
 	QRadioButton* RBModify;
 	QRadioButton* RBDelete;
+	QRadioButton* RBSwapTeacher;
 	QComboBox* CBActive;
 	QCheckBox* showDuplicates;
 	QCheckBox* showYears;
@@ -98,6 +99,14 @@ private:
 		QList<bool>& _affectOtherTeachersToBeRemoved, bool& _affectOtherTeachersOverall,
 		QList<bool>& _affectOtherStudentsSetsToBeRemoved, bool& _affectOtherStudentsSetsOverall,
 		QList<bool>& _affectOtherSubjectsToBeRemoved, bool& _affectOtherSubjectsOverall);
+	
+	void computeActivitiesForModification(const QString& teacherName, const QString& studentsSetName, const QString& subjectName,
+		const QList<int>& tmpID, const QList<int>& tmpGroupID,
+		int& nTotalActsModified,
+		QList<int>& _idsToBeModified, QList<int>& _agidsToBeModified,
+		QList<bool>& _affectOtherTeachersToBeModified, bool& _affectOtherTeachersOverall,
+		QList<bool>& _affectOtherStudentsSetsToBeModified, bool& _affectOtherStudentsSetsOverall,
+		QList<bool>& _affectOtherSubjectsToBeModified, bool& _affectOtherSubjectsOverall);
 	
 private slots:
 	//void activitiesCellSelected(int, int);
