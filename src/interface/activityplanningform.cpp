@@ -106,8 +106,8 @@ const int ACTIVE_OR_INACTIVE = 2;
 extern Timetable gt;
 
 static FetStatistics statisticValues;			//maybe TODO: do it more local
-static QList<bool> studentsDuplicates;		//maybe TODO: do it more local
-static QList<int> yearORgroupORsubgroup;	//maybe TODO: do it more local
+static QList<bool> studentsDuplicates;			//maybe TODO: do it more local
+static QList<int> yearORgroupORsubgroup;		//maybe TODO: do it more local
 
 //TODO: need to setDefaultValue for the QHash-s ? (sum/number of hours) (also in statisticsexport?) looks like it is unneeded.
 //TODO: check with toggled
@@ -175,14 +175,14 @@ void StartActivityPlanning::startActivityPlanning(QWidget* parent){
 		}
 	}
 	
-	statisticValues.allTeachersNames.clear();				// just needed, because i don't need to care about correct iTeacherList if i do it this way.
-	foreach(Teacher* t, gt.rules.teachersList){		//  So i don't need gt.rules.computeInternalStructure();
+	statisticValues.allTeachersNames.clear();		// just needed, because i don't need to care about correct iTeacherList if i do it this way.
+	foreach(Teacher* t, gt.rules.teachersList){		// So i don't need gt.rules.computeInternalStructure();
 		statisticValues.allTeachersNames << t->name;
 		teachersTargetNumberOfHours << t->targetNumberOfHours;
 		teachersList<<t;
 	}
 
-	statisticValues.allSubjectsNames.clear();				// just done, because i always want to do it the same way + it is faster
+	statisticValues.allSubjectsNames.clear();		// just done, because i always want to do it the same way + it is faster
 	foreach(Subject* s, gt.rules.subjectsList){		// Also don't display empty subjects is easier
 		statisticValues.allSubjectsNames<<s->name;
 	}
@@ -663,7 +663,7 @@ void ActivityPlanningForm::activitiesTableHorizontalHeaderClicked(int column){
 			addActivityForm.exec();
 		}
 	} else if(RBModify->isChecked()) {
-		//Normaly there are to many activities. So just entering the activity form
+		//Normaly there are too many activities. So just entering the activity form
 		if(swapAxis->checkState()==Qt::Checked){
 			ActivitiesForm form(this, "", statisticValues.allStudentsNames[column], "", "");
 			setParentAndOtherThings(&form, this);
@@ -847,7 +847,7 @@ void ActivityPlanningForm::activitiesTableVerticalHeaderClicked(int row){
 			addActivityForm.exec();	
 		}
 	} else if(RBModify->isChecked()) {
-		//Normaly there are to many activities. So just entering the activity form
+		//Normaly there are too many activities. So just entering the activity form
 		if(swapAxis->checkState()==Qt::Checked){
 			ActivitiesForm form(this, "", "", statisticValues.allSubjectsNames[row], "");
 			setParentAndOtherThings(&form, this);
@@ -1331,7 +1331,7 @@ void ActivityPlanningForm::teachersTableHorizontalHeaderClicked(int column){
 		setParentAndOtherThings(&addActivityForm, this);
 		addActivityForm.exec();	
 	} else if(RBModify->isChecked()) {
-		//Just enter the activity dialog, because in normal case there are to many activities related to a teacher.
+		//Just enter the activity dialog, because in normal case there are too many activities related to a teacher.
 		ActivitiesForm form(this, statisticValues.allTeachersNames[column], "", "", "");
 		setParentAndOtherThings(&form, this);
 		form.exec();
@@ -1474,7 +1474,7 @@ void ActivityPlanningForm::teachersCellSelected(const QModelIndex& index){
 			setParentAndOtherThings(&addActivityForm, this);
 			addActivityForm.exec();	
 		} else if(RBModify->isChecked()) {
-			//Just enter the activity dialog, because in normal case there are to many activities related to a teacher.
+			//Just enter the activity dialog, because in normal case there are too many activities related to a teacher.
 			ActivitiesForm form(this, statisticValues.allTeachersNames[itcol], "", "", "");
 			setParentAndOtherThings(&form, this);
 			form.exec();
