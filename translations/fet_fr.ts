@@ -515,347 +515,464 @@ Il est recommandé d&apos;abandonner maintenant et de modifier individuellement 
 <context>
     <name>ActivityPlanningForm</name>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="212"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="228"/>
         <source>Activity Planning Dialog</source>
         <translation>Fenêtre planning activité</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="232"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="248"/>
         <source>Action</source>
         <comment>It means the kind of action the user selects</comment>
         <translation>Action</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="234"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="250"/>
         <source>Activities</source>
         <comment>Please keep translation short</comment>
         <translation>Activités</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="235"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="251"/>
         <source>Subactivities</source>
         <comment>Please keep translation short</comment>
         <translation>Sous-activités</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="236"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="252"/>
         <source>Add activity</source>
         <comment>Please keep translation short</comment>
         <translation>Ajouter activité</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="237"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="253"/>
         <source>Modify activity</source>
         <comment>Please keep translation short</comment>
         <translation>Modifier activité</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="238"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="254"/>
         <source>Delete activities</source>
         <comment>Please keep translation short</comment>
         <translation>Supprimer activités</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="248"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="255"/>
+        <source>Swap teachers</source>
+        <comment>Please keep translation short</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/activityplanningform.cpp" line="266"/>
         <source>Options</source>
         <translation>Options</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="252"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="270"/>
         <source>Active</source>
         <comment>It refers to active activities. Please keep translation short</comment>
         <translation>Active</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="253"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="271"/>
         <source>Inactive</source>
         <comment>It refers to inactive activities. Please keep translation short</comment>
         <translation>Inactives</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="254"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="272"/>
         <source>All</source>
         <comment>It refers to all activities. Please keep translation short</comment>
         <translation>Tout</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="258"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="276"/>
         <source>Show years</source>
         <comment>Please keep translation short</comment>
         <translation>Afficher années</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="260"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="278"/>
         <source>Show groups</source>
         <comment>Please keep translation short</comment>
         <translation>Afficher groupes</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="262"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="280"/>
         <source>Show subgroups</source>
         <comment>Please keep translation short</comment>
         <translation>Afficher sous-groupes</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="265"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="283"/>
         <source>Show teachers</source>
         <comment>Please keep translation short</comment>
         <translation>Afficher enseignants</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="268"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="286"/>
         <source>Show tags</source>
         <comment>Please keep translation short. It refers to activity tags, but I want to keep it shorter, because there is not enough space.</comment>
         <translation>Afficher codes</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="270"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="288"/>
         <source>Show duplicates</source>
         <comment>Please keep translation short</comment>
         <translation>Afficher doublons</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="272"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="290"/>
         <source>Hide empty lines</source>
         <comment>Please keep translation short</comment>
         <translation>Masquer lignes vides</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="274"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="292"/>
         <source>Hide full teachers</source>
         <comment>It refers to teachers who have their number of hours fulfilled. Please keep translation short</comment>
         <translation>Masquer enseignants complets</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="276"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="294"/>
         <source>Swap axes</source>
         <comment>Please keep translation short</comment>
         <translation>Permuter axes</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="278"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="296"/>
         <source>Pseudo activities</source>
         <comment>Please keep translation short. It means activities without teachers and/or students sets</comment>
         <translation>Pseudo-activités</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="281"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="299"/>
         <source>Delete all</source>
         <comment>Refers to activities. Please keep translation short</comment>
         <translation>Supprimer tout</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="287"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="491"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="305"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="512"/>
         <source>Hide buttons</source>
         <comment>Please keep translation short. This is an option to hide some buttons in the planning activity dialog, so that the tables are more visible.</comment>
         <translation>Masquer boutons</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="294"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="312"/>
         <source>Close</source>
         <comment>Please keep translation short</comment>
         <translation>Fermer</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="475"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="496"/>
         <source>B</source>
         <comment>Abbreviation for &apos;Buttons&apos;. Please keep translation very short (probably only one letter). There is an option to hide the buttons in the planning activity dialog, so that the tables can have larger visible parts. This button (B) will remain there after the user hides the other buttons. The user then can press this button to show again all the buttons. We need this &apos;B&apos; button to be very small, so keep translation abbreviated to the initial only</comment>
         <translation>B</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="745"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="963"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="888"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1274"/>
         <source>Delete %1 activities of students set %2?</source>
         <translation>Supprimer %1 activités du groupe %2 ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="749"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="784"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="934"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="967"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="1251"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="1275"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="1402"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="1544"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="892"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="927"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1245"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1278"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1749"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1773"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2057"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2311"/>
         <source>Because you have individually modified the components, there will be removed an additional number of %1 activities (which are in the same larger split activities as the selected activities).</source>
         <translation>Parce que vous avez modifié individuellement les composants, un nombre supplémentaire de %1 activités sera retiré (qui sont dans les mêmes plus grandes activités fractionnées que les activités sélectionnées).</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="753"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="788"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="938"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="971"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="1405"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="1547"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="896"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="931"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1249"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1282"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2060"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2314"/>
         <source>Delete multiple?</source>
         <comment>It refers to activities</comment>
         <translation>Supprimer multiples ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="758"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="793"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="943"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="976"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="1284"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="1290"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="1409"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="1551"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="901"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="936"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1254"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1287"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1782"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1788"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2064"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2318"/>
         <source>Delete related?</source>
         <comment>It refers to activities</comment>
         <translation>Supprimer dépendants ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="758"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="976"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="901"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1287"/>
         <source>There are activities affecting other students sets. Should the related activities also be deleted?</source>
         <translation>Il y a des activités affectant d&apos;autres jeux d&apos;apprenants. Les activités dépendantes doivent-elles être aussi supprimées ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="779"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="929"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="922"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1240"/>
         <source>Delete %1 activities of subject %2?</source>
         <translation>Supprimer %1 activités de la matière %2 ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="793"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="943"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="936"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1254"/>
         <source>There are activities affecting other subjects. Should the related activities also be deleted?</source>
         <translation>Il y a des activités affectant d&apos;autres matières. Les activités dépendantes doivent-elles être aussi supprimées ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="1123"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1018"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1433"/>
+        <source>Modify %1 activities of students set %2?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/activityplanningform.cpp" line="1022"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1066"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1437"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1875"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1899"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2140"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2393"/>
+        <source>Because you have individually modified the components,
+there won&apos;t be modified an additional number of %1 activities
+(which are in the same larger split activities as the selected activities).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/activityplanningform.cpp" line="1035"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1079"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1388"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1450"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1913"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2152"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2405"/>
+        <source>Please choose a new teacher:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/activityplanningform.cpp" line="1036"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1080"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1389"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1451"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1914"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2153"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2406"/>
+        <source>FET - Select new teacher dialog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/activityplanningform.cpp" line="1040"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1455"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1918"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2157"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2410"/>
+        <source>Modify related?</source>
+        <comment>It refers to activities</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/activityplanningform.cpp" line="1040"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1455"/>
+        <source>There are activities affecting other students sets. Should the related activities also be modified?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/activityplanningform.cpp" line="1061"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1370"/>
+        <source>Modify %1 activities of subject %2?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/activityplanningform.cpp" line="1075"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1384"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1909"/>
+        <source>FET - Information</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/activityplanningform.cpp" line="1075"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1384"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1909"/>
+        <source>There is no teacher qualified for this subject. You should set teachers qualified subjects in FET -&gt; Data -&gt; Teachers.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/activityplanningform.cpp" line="1375"/>
+        <source>Because you have individually modified the components,
+there won&apos;t be removed an additional number of %1 activities
+(which are in the same larger split activities as the selected activities).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/activityplanningform.cpp" line="1621"/>
         <source>FET information</source>
         <translation>FET information</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="1124"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1622"/>
         <source>Cannot modify this large activity, because it contains more than %1 activities.</source>
         <translation>Impossible de modifier cette grande activité car elle contient plus de %1 activités.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="1241"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="1265"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1739"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1763"/>
         <source>Delete %1 activities from selected cell?</source>
         <translation>Supprimer %1 activités depuis la cellule sélectionnée ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="1243"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="1269"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1741"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1767"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1867"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1893"/>
         <source>subject=%1</source>
         <translation>matière = %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="1245"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="1267"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1743"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1765"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1869"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1891"/>
         <source>students=%1</source>
         <translation>apprenants = %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="1280"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1778"/>
         <source>Delete activities?</source>
         <translation>Supprimer activités ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="1285"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1783"/>
         <source>This cell contains activities that relate to other students. Should the related activities also be deleted?</source>
         <translation>Cette cellule contient des activités qui font référence à d&apos;autres apprenants. Les activités dépendantes doivent-elles être aussi supprimées ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="1291"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1789"/>
         <source>This cell contains activities that relate to other subjects. Should the related activities also be deleted?</source>
         <translation>Cette cellule contient des activités qui font référence à d&apos;autres matières. Les activités dépendantes doivent-elles être aussi supprimées ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="1398"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="1540"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1865"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="1889"/>
+        <source>Modify %1 activities from selected cell?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/activityplanningform.cpp" line="1919"/>
+        <source>This cell contains activities that relate to other students. Should the related activities also be modified?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/activityplanningform.cpp" line="2053"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2307"/>
         <source>Delete %1 activities of teacher %2?</source>
         <translation>Supprimer %1 activités de l&apos;enseignant %2 ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="1409"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="1551"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2064"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2318"/>
         <source>There are activities affecting other teachers. Should the related activities also be deleted?</source>
         <translation>Il y a des activités affectant d&apos;autres enseignants. Les activités dépendantes doivent-elles être aussi supprimées ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="1433"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2136"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2389"/>
+        <source>Modify %1 activities of teacher %2?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/activityplanningform.cpp" line="2157"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2410"/>
+        <source>There are activities affecting other teachers. Should the related activities also be modified?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/activityplanningform.cpp" line="2200"/>
         <source>FET question</source>
         <translation>FET question</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="1433"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2200"/>
         <source>Please enter the target number of hours:</source>
         <translation>Merci de saisir le nombre d&apos;heures cible :</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="1784"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2662"/>
         <source>Target</source>
         <comment>Please keep translation short.</comment>
         <translation>Cible</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="1785"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2663"/>
         <source>Subjects</source>
         <comment>Please keep translation short</comment>
         <translation>Matières</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="1786"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2664"/>
         <source>Students</source>
         <comment>Please keep translation short</comment>
         <translation>Apprenants</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="2030"/>
-        <location filename="../src/interface/activityplanningform.cpp" line="2033"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2908"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2911"/>
         <source>Delete all?</source>
         <comment>It refers to activities</comment>
         <translation>Supprimer tout ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="2030"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2908"/>
         <source>Are you sure you want to remove ALL the %1 activities and related constraints?</source>
         <comment>%1 is the number of total activities</comment>
         <translation>Êtes-vous sûr de vouloir retirer TOUTES les %1 activités et contraintes relatives ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="2033"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2911"/>
         <source>Are you absolutely sure you want to remove ALL activities and related constraints from your data?</source>
         <translation>Êtes-vous absolument sûr de vouloir retirer TOUTES les activités et contraintes relatives de vos données ?</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="2071"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2949"/>
         <source>There are no activities without teachers and without students.</source>
         <translation>Il n&apos;y a pas d&apos;activité sans enseignant ni apprenant.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="2073"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2951"/>
         <source>Activities without teachers and without students:</source>
         <translation>Activités sans enseignant ni apprenant :</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="2076"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2954"/>
         <source>There are no activities without teachers.</source>
         <translation>Il n&apos;y a pas d&apos;activité sans enseignant.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="2078"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2956"/>
         <source>Activities without teachers:</source>
         <translation>Activités sans enseignant :</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="2081"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2959"/>
         <source>There are no activities without students.</source>
         <translation>Il n&apos;y a pas d&apos;activité sans apprenant.</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="2083"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2961"/>
         <source>Activities without students:</source>
         <translation>Activités sans apprenant :</translation>
     </message>
     <message>
-        <location filename="../src/interface/activityplanningform.cpp" line="2085"/>
+        <location filename="../src/interface/activityplanningform.cpp" line="2963"/>
         <source>Information about pseudo activities</source>
         <comment>Pseudo activities means activities without teachers and/or students sets</comment>
         <translation>Information au sujet des pseudo-activités</translation>
@@ -30375,278 +30492,304 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>Export</name>
     <message>
-        <location filename="../src/engine/export.cpp" line="88"/>
-        <location filename="../src/engine/export.cpp" line="942"/>
+        <location filename="../src/engine/export.cpp" line="120"/>
+        <location filename="../src/engine/export.cpp" line="1104"/>
+        <location filename="../src/engine/export.cpp" line="1115"/>
         <source>FET warning</source>
         <translation>FET avertissement</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="90"/>
+        <location filename="../src/engine/export.cpp" line="122"/>
         <source>File %1 exists - are you sure you want to overwrite existing file?</source>
         <translation>Le fichier %1 existe - êtes-vous sûr de vouloir écraser le fichier existant ?</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="155"/>
+        <location filename="../src/engine/export.cpp" line="195"/>
         <source>Export aborted</source>
         <translation>Exportation abandonnée</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="172"/>
+        <location filename="../src/engine/export.cpp" line="212"/>
+        <location filename="../src/engine/export.cpp" line="331"/>
         <source>CSV files were exported to directory %1.</source>
         <translation>Les fichiers CSV ont été exportés dans le répertoire %1.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="174"/>
+        <location filename="../src/engine/export.cpp" line="214"/>
+        <location filename="../src/engine/export.cpp" line="333"/>
         <source>Exported complete</source>
         <translation>Exporté complètement</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="176"/>
+        <location filename="../src/engine/export.cpp" line="216"/>
+        <location filename="../src/engine/export.cpp" line="335"/>
         <source>Export incomplete</source>
         <translation>Exportation incomplète</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="276"/>
+        <location filename="../src/engine/export.cpp" line="298"/>
+        <source>Successfully finished timetable:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/engine/export.cpp" line="311"/>
+        <source>Highest stage timetable:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/engine/export.cpp" line="321"/>
+        <source>Current stage timetable:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/engine/export.cpp" line="337"/>
+        <source>FET - export comment</source>
+        <comment>The comment of the exporting operation</comment>
+        <translation type="unfinished">FET exportation commentaires</translation>
+    </message>
+    <message>
+        <location filename="../src/engine/export.cpp" line="426"/>
         <source>no textquote</source>
         <comment>Please use at least 2 characters for the translation of this field, so that the program works OK</comment>
         <translation>pas de guillemet</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="293"/>
+        <location filename="../src/engine/export.cpp" line="443"/>
         <source>FET question</source>
         <translation>FET question</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="298"/>
+        <location filename="../src/engine/export.cpp" line="448"/>
         <source>Please keep the default settings.
 Import of data will be easier with these settings.</source>
         <translation>Merci de conserver les réglages par défaut.
 L&apos;importation des données n&apos;en sera que plus facile.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="301"/>
+        <location filename="../src/engine/export.cpp" line="451"/>
         <source>Please specify the separator between fields:</source>
         <translation>Merci de spécifier le séparateur de champs :</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="308"/>
+        <location filename="../src/engine/export.cpp" line="458"/>
         <source>Use field separator:</source>
         <translation>Utiliser le séparateur de champs :</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="315"/>
+        <location filename="../src/engine/export.cpp" line="465"/>
         <source>Please specify the text quote of text fields:</source>
         <translation>Merci de spécifier le guillemet des champs textuels :</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="322"/>
+        <location filename="../src/engine/export.cpp" line="472"/>
         <source>Use textquote:</source>
         <translation>Utiliser le guillemet :</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="329"/>
+        <location filename="../src/engine/export.cpp" line="479"/>
         <source>Please specify the contents of the first line:</source>
         <translation>Merci de spécifier le contenu de la première ligne :</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="331"/>
+        <location filename="../src/engine/export.cpp" line="481"/>
         <source>The first line is the heading.</source>
         <translation>La première ligne est l&apos;en-tête.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="332"/>
+        <location filename="../src/engine/export.cpp" line="482"/>
         <source>The first line contains data. Don&apos;t export heading.</source>
         <translation>La première ligne contient des données. Ne pas exporter l&apos;en-tête.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="338"/>
+        <location filename="../src/engine/export.cpp" line="488"/>
         <source>OK</source>
         <translation>Ok</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="339"/>
+        <location filename="../src/engine/export.cpp" line="489"/>
         <source>Cancel</source>
         <translation>Annuler</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="456"/>
-        <location filename="../src/engine/export.cpp" line="499"/>
-        <location filename="../src/engine/export.cpp" line="551"/>
-        <location filename="../src/engine/export.cpp" line="592"/>
-        <location filename="../src/engine/export.cpp" line="635"/>
-        <location filename="../src/engine/export.cpp" line="708"/>
-        <location filename="../src/engine/export.cpp" line="979"/>
-        <location filename="../src/engine/export.cpp" line="1057"/>
+        <location filename="../src/engine/export.cpp" line="577"/>
+        <location filename="../src/engine/export.cpp" line="628"/>
+        <location filename="../src/engine/export.cpp" line="688"/>
+        <location filename="../src/engine/export.cpp" line="737"/>
+        <location filename="../src/engine/export.cpp" line="788"/>
+        <location filename="../src/engine/export.cpp" line="869"/>
+        <location filename="../src/engine/export.cpp" line="1157"/>
+        <location filename="../src/engine/export.cpp" line="1241"/>
         <source>FET critical. Cannot open file %1 for writing. Please check your disk&apos;s free space. Saving of %1 aborted.</source>
         <translation>FET critique. Impossible d&apos;ouvrir le fichier %1 en écriture. Merci de vérifier l&apos;espace libre de votre disque. Enregistrement de %1 abandonné.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="469"/>
-        <location filename="../src/engine/export.cpp" line="605"/>
-        <location filename="../src/engine/export.cpp" line="656"/>
-        <location filename="../src/engine/export.cpp" line="664"/>
-        <location filename="../src/engine/export.cpp" line="674"/>
+        <location filename="../src/engine/export.cpp" line="590"/>
+        <location filename="../src/engine/export.cpp" line="750"/>
+        <location filename="../src/engine/export.cpp" line="809"/>
+        <location filename="../src/engine/export.cpp" line="817"/>
+        <location filename="../src/engine/export.cpp" line="827"/>
         <source>Warning! Import of activities will fail, because %1 includes set separator +.</source>
         <translation>Attention ! L&apos;importation des activités va échouer car %1 contient le séparateur &quot;+&quot;.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="472"/>
+        <location filename="../src/engine/export.cpp" line="593"/>
         <source>%1 activity tags exported.</source>
         <translation>%1 codes activité exportés.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="474"/>
-        <location filename="../src/engine/export.cpp" line="526"/>
-        <location filename="../src/engine/export.cpp" line="567"/>
-        <location filename="../src/engine/export.cpp" line="610"/>
-        <location filename="../src/engine/export.cpp" line="683"/>
-        <location filename="../src/engine/export.cpp" line="954"/>
-        <location filename="../src/engine/export.cpp" line="1032"/>
-        <location filename="../src/engine/export.cpp" line="1140"/>
+        <location filename="../src/engine/export.cpp" line="595"/>
+        <location filename="../src/engine/export.cpp" line="655"/>
+        <location filename="../src/engine/export.cpp" line="704"/>
+        <location filename="../src/engine/export.cpp" line="755"/>
+        <location filename="../src/engine/export.cpp" line="836"/>
+        <location filename="../src/engine/export.cpp" line="1124"/>
+        <location filename="../src/engine/export.cpp" line="1208"/>
+        <location filename="../src/engine/export.cpp" line="1324"/>
         <source>FET critical. Writing %1 gave error code %2, which means saving is compromised. Please check your disk&apos;s free space.</source>
         <translation>FET critique. L&apos;écriture %1 a généré le code erreur %2 qui signifie que l&apos;enregistrement est compromis. Merci de vérifier l&apos;espace libre de votre disque.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="520"/>
+        <location filename="../src/engine/export.cpp" line="649"/>
         <source>%1 rooms (with buildings) exported.</source>
         <translation>%1 salles (avec bâtiments) exportées.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="522"/>
+        <location filename="../src/engine/export.cpp" line="651"/>
         <source>Warning! Only %1 of %2 building names are exported, because %3 buildings don&apos;t contain any room.</source>
         <translation>Attention ! Uniquement %1 de %2 noms de bâtiments ont été exportés car %3 bâtiments ne contiennent aucune salle.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="565"/>
+        <location filename="../src/engine/export.cpp" line="702"/>
         <source>%1 subjects exported.</source>
         <translation>%1 matières exportées.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="608"/>
+        <location filename="../src/engine/export.cpp" line="753"/>
         <source>%1 teachers exported.</source>
         <translation>%1 enseignants exportés.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="679"/>
+        <location filename="../src/engine/export.cpp" line="832"/>
         <source>%1 years exported.</source>
         <translation>%1 années exportées.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="680"/>
+        <location filename="../src/engine/export.cpp" line="833"/>
         <source>%1 groups exported.</source>
         <translation>%1 groupes exportés.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="681"/>
+        <location filename="../src/engine/export.cpp" line="834"/>
         <source>%1 subgroups exported.</source>
         <translation>%1 sous-groupes exportés.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="775"/>
-        <location filename="../src/engine/export.cpp" line="784"/>
-        <location filename="../src/engine/export.cpp" line="788"/>
-        <location filename="../src/engine/export.cpp" line="794"/>
-        <location filename="../src/engine/export.cpp" line="799"/>
-        <location filename="../src/engine/export.cpp" line="805"/>
-        <location filename="../src/engine/export.cpp" line="811"/>
+        <location filename="../src/engine/export.cpp" line="936"/>
+        <location filename="../src/engine/export.cpp" line="945"/>
+        <location filename="../src/engine/export.cpp" line="949"/>
+        <location filename="../src/engine/export.cpp" line="955"/>
+        <location filename="../src/engine/export.cpp" line="960"/>
+        <location filename="../src/engine/export.cpp" line="966"/>
+        <location filename="../src/engine/export.cpp" line="972"/>
         <source>Note: Constraint</source>
         <translation>Note : La contrainte</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="775"/>
+        <location filename="../src/engine/export.cpp" line="936"/>
         <source>was skipped, because it refers not to a whole larger container activity</source>
         <translation>a été passée car elle fait référence à l&apos;ensemble d&apos;une grande activité conteneur</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="784"/>
-        <location filename="../src/engine/export.cpp" line="788"/>
+        <location filename="../src/engine/export.cpp" line="945"/>
+        <location filename="../src/engine/export.cpp" line="949"/>
         <source>was skipped, because there exists another constraint of this type with larger weight percentage, referring to the same activities</source>
         <translation>a été passée car il existe une autre contrainte de ce type avec un poids supérieur en pourcentage, faisant référence aux mêmes activités</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="794"/>
-        <location filename="../src/engine/export.cpp" line="799"/>
+        <location filename="../src/engine/export.cpp" line="955"/>
+        <location filename="../src/engine/export.cpp" line="960"/>
         <source>was skipped, because there exists another constraint of this type with same weight percentage and higher number of min days, referring to the same activities</source>
         <translation>a été passée car il existe une autre contrainte de ce type avec le même poids en pourcentage et un nombre supérieur de jours min, faisant référence aux mêmes activités</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="805"/>
-        <location filename="../src/engine/export.cpp" line="811"/>
+        <location filename="../src/engine/export.cpp" line="966"/>
+        <location filename="../src/engine/export.cpp" line="972"/>
         <source>was skipped, because there exists another constraint of this type with same weight percentage and same number of min days and consecutive if same day true, referring to the same activities</source>
         <translation>a été passée car il existe une autre contrainte de ce type avec le même poids en pourcentage, le même nombre de jours min et consécutives si même jour à vrai, faisant référence aux mêmes activités</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="839"/>
+        <location filename="../src/engine/export.cpp" line="1000"/>
         <source>different teachers</source>
         <translation>enseignants différents</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="841"/>
+        <location filename="../src/engine/export.cpp" line="1002"/>
         <source>different subject</source>
         <translation>matière différente</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="843"/>
+        <location filename="../src/engine/export.cpp" line="1004"/>
         <source>different activity tags</source>
         <translation>codes activité différents</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="845"/>
+        <location filename="../src/engine/export.cpp" line="1006"/>
         <source>different students</source>
         <translation>apprenants différents</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="847"/>
+        <location filename="../src/engine/export.cpp" line="1008"/>
         <source>different boolean variable &apos;must compute n total students&apos;</source>
         <translation>variable booléenne &quot;doit calculer nb total d&apos;apprenants&quot; différente</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="849"/>
+        <location filename="../src/engine/export.cpp" line="1010"/>
         <source>different number of students</source>
         <translation>nombre d&apos;apprenants différent</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="851"/>
+        <location filename="../src/engine/export.cpp" line="1012"/>
         <source>different active flag</source>
         <translation>indicateur différent</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="855"/>
+        <location filename="../src/engine/export.cpp" line="1016"/>
         <source>Subactivities with activity group id %1 are different between themselves (they were separately edited), so the export will not be very accurate. The fields which are different will be considered those of the representative subactivity. Fields which were different are: %2</source>
         <translation>Les sous-activités avec le groupe activité ID %1 sont différentes entre elles (elles ont été éditées séparément), donc l&apos;exportation ne sera pas très fidèle. Les champs qui sont différents seront considérés ceux de la sous-activité représentative. Les champs différents sont : %2</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="861"/>
+        <location filename="../src/engine/export.cpp" line="1022"/>
         <source>Activity with id %1 has disabled active flag but it is exported.</source>
         <translation>L&apos;activité ID %1 a un indicateur désactivé mais a été exportée.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="863"/>
+        <location filename="../src/engine/export.cpp" line="1024"/>
         <source>Subactivities with activity group id %1 have disabled active flag but they are exported.</source>
         <translation>Les sous-activités avec le groupe activité ID %1 ont un indicateur désactivé mais ont été exportées.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="944"/>
+        <location filename="../src/engine/export.cpp" line="1106"/>
+        <location filename="../src/engine/export.cpp" line="1116"/>
         <source>There are subactivities which were modified separately - so the components had different values for subject, activity tags, teachers, students or number of students from the representative subactivity. The export was done, but it is not very accurate.</source>
         <translation>Il y a des sous-activités qui ont été modifiées séparément - donc les composants ont différentes valeurs pour matière, codes activité, enseignants, apprenants ou nombre d&apos;apprenants de la sous -activité représentative. L&apos;exportation sera réalisée mais ne sera pas très fidèle.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="952"/>
+        <location filename="../src/engine/export.cpp" line="1122"/>
         <source>%1 activities exported.</source>
         <translation>%1 activités exportées.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1030"/>
+        <location filename="../src/engine/export.cpp" line="1206"/>
         <source>%1 active activities statistics exported.</source>
         <translation>%1 statistiques activités actives exportées.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1135"/>
+        <location filename="../src/engine/export.cpp" line="1319"/>
         <source>%1 scheduled activities exported.</source>
         <translation>%1 activités programmées exportées.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1137"/>
+        <location filename="../src/engine/export.cpp" line="1321"/>
         <source>0 scheduled activities exported, because no timetable was generated.</source>
         <translation>0 activité programmée exportée car aucun planning n&apos;a été généré.</translation>
     </message>
@@ -34104,66 +34247,66 @@ Avoir un sous-groupe avec trop peu d&apos;heures de travail par semaine signifie
 <context>
     <name>FetTranslate</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="260"/>
-        <location filename="../src/interface/fet.cpp" line="811"/>
+        <location filename="../src/interface/fet.cpp" line="292"/>
+        <location filename="../src/interface/fet.cpp" line="843"/>
         <source>FET warning</source>
         <translation>FET avertissement</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="260"/>
+        <location filename="../src/interface/fet.cpp" line="292"/>
         <source>Output directory %1 does not exist and cannot be created - output directory will be made the default value %2</source>
         <translation>Le répertoire de sortie %1 n&apos;existe pas et ne peut pas être créé - le répertoire de sortie sera créé avec la valeur par défaut %2</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="772"/>
-        <location filename="../src/interface/fet.cpp" line="781"/>
+        <location filename="../src/interface/fet.cpp" line="804"/>
+        <location filename="../src/interface/fet.cpp" line="813"/>
         <source>FET critical</source>
         <translation>FET arrêt critique</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="772"/>
+        <location filename="../src/interface/fet.cpp" line="804"/>
         <source>Cannot create or use %1 directory (where the results should be stored) - you can continue operation, but you might not be able to work with FET. Maybe you can try to change the output directory from the &apos;Settings&apos; menu. If this is a bug - please report it.</source>
         <translation>Impossible de créer ou d&apos;utiliser le répertoire %1 (où les résultats devraient être rangés) - vous pouvez continuer l&apos;opération, mais vous pourriez ne pas pouvoir travailler avec FET. Peut-être pourriez-vous essayer de changer le répertoire de sortie depuis le menu Réglages. Si c&apos;est un bug - merci de le signaler.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="781"/>
+        <location filename="../src/interface/fet.cpp" line="813"/>
         <source>You don&apos;t have write permissions in the output directory (FET cannot open or create file %1) - you might not be able to work correctly with FET. Maybe you can try to change the output directory from the &apos;Settings&apos; menu. If this is a bug - please report it.</source>
         <translation>Vous ne disposez pas des droits en écriture dans le répertoire de sortie (FET ne peut pas ouvrir ou créer le fichier %1) - vous pourriez ne pas pouvoir travailler correctement avec FET. Peut-être pourriez vous essayer de changer le répertoire de sortie depuis le menu Réglages. Si c&apos;est un bug - merci de le signaler.</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="811"/>
+        <location filename="../src/interface/fet.cpp" line="843"/>
         <source>To start FET in interface mode, please do not give any command-line parameters to the FET executable</source>
         <translation>Pour démarrer FET en mode interface, merci de ne pas donner de paramètres en ligne de commande à l&apos;exécutable FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1108"/>
+        <location filename="../src/interface/fet.cpp" line="1183"/>
         <source>This is the list of max placed activities, chronologically. If FET could reach maximum n-th activity, look at the n+1-st activity in the initial order of the activities</source>
         <translation>C&apos;est la liste des activités placées au maximum, chronologiquement. Si FET peut atteindre au maximum la n-ième activité, regardez le n+1-ième activité dans l&apos;ordre initial des activités</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1394"/>
+        <location filename="../src/interface/fet.cpp" line="1474"/>
         <source>FET managed to schedule correctly the first %1 most difficult activities. You can see initial order of placing the activities in the corresponding output file. The activity which might cause problems might be the next activity in the initial order of evaluation. This activity is listed below:</source>
         <translation>FET a réussi à planifier correctement les premières %1 plus difficiles activités. Vous pouvez voir l&apos;ordre initial de positionnement des activités dans le fichier sortie correspondant. L&apos;activité qui pourrait poser problème est probablement la prochaine activité dans l&apos;ordre initial d&apos;évaluation. Cette activité est listée ci-dessous :</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1401"/>
-        <location filename="../src/interface/fet.cpp" line="1421"/>
+        <location filename="../src/interface/fet.cpp" line="1481"/>
+        <location filename="../src/interface/fet.cpp" line="1501"/>
         <source>Id: %1 (%2)</source>
         <comment>%1 is id of activity, %2 is detailed description of activity</comment>
         <translation>ID : %1 (%2)</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1406"/>
+        <location filename="../src/interface/fet.cpp" line="1486"/>
         <source>Difficult activity cannot be computed - please report possible bug</source>
         <translation>L&apos;activité difficile ne peut être calculée - merci de signaler le bug potentiel</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1410"/>
+        <location filename="../src/interface/fet.cpp" line="1490"/>
         <source>Here are the placed activities which lead to an inconsistency, in order from the first one to the last (the last one FET failed to schedule and the last ones are most likely impossible):</source>
         <translation>Voici les activités placées qui conduisent à une incohérence, dans l&apos;ordre de la première à la dernière (FET a échoué à positionner la toute dernière et les restantes sont très probablement impossibles) :</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1417"/>
+        <location filename="../src/interface/fet.cpp" line="1497"/>
         <source>No: %1</source>
         <translation>No : %1</translation>
     </message>
@@ -36324,7 +36467,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.33.3 (October 2017).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.34.0 (October 2017).&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
@@ -39693,13 +39836,13 @@ Merci d&apos;arrêter la simulation avant de mettre à jour</translation>
 <context>
     <name>LastWarningsDialogE</name>
     <message>
-        <location filename="../src/engine/export.cpp" line="404"/>
+        <location filename="../src/engine/export.cpp" line="1334"/>
         <source>FET - export comment</source>
         <comment>The comment of the exporting operation</comment>
         <translation>FET exportation commentaires</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="415"/>
+        <location filename="../src/engine/export.cpp" line="1345"/>
         <source>&amp;Ok</source>
         <translation>&amp;Ok</translation>
     </message>
@@ -47789,53 +47932,53 @@ Note : enseignant non disponible et pause ne sont pas comptés comme vides.</tra
 <context>
     <name>QDialogButtonBox</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="674"/>
+        <location filename="../src/interface/fet.cpp" line="706"/>
         <source>&amp;OK</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;OK</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="676"/>
+        <location filename="../src/interface/fet.cpp" line="708"/>
         <source>OK</source>
         <translation>Ok</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="679"/>
+        <location filename="../src/interface/fet.cpp" line="711"/>
         <source>&amp;Cancel</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Annuler</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="681"/>
+        <location filename="../src/interface/fet.cpp" line="713"/>
         <source>Cancel</source>
         <translation>Annuler</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="684"/>
+        <location filename="../src/interface/fet.cpp" line="716"/>
         <source>&amp;Yes</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>Ou&amp;i</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="686"/>
+        <location filename="../src/interface/fet.cpp" line="718"/>
         <source>Yes to &amp;All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>Oui pour &amp;tout</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="688"/>
+        <location filename="../src/interface/fet.cpp" line="720"/>
         <source>&amp;No</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Non</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="690"/>
+        <location filename="../src/interface/fet.cpp" line="722"/>
         <source>N&amp;o to All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>Non po&amp;ur tout</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="693"/>
+        <location filename="../src/interface/fet.cpp" line="725"/>
         <source>Help</source>
         <translation>Aide</translation>
     </message>
@@ -47843,13 +47986,13 @@ Note : enseignant non disponible et pause ne sont pas comptés comme vides.</tra
 <context>
     <name>QGnomeTheme</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="719"/>
+        <location filename="../src/interface/fet.cpp" line="751"/>
         <source>&amp;OK</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;OK</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="721"/>
+        <location filename="../src/interface/fet.cpp" line="753"/>
         <source>&amp;Cancel</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Annuler</translation>
@@ -47858,53 +48001,53 @@ Note : enseignant non disponible et pause ne sont pas comptés comme vides.</tra
 <context>
     <name>QPlatformTheme</name>
     <message>
-        <location filename="../src/interface/fet.cpp" line="697"/>
+        <location filename="../src/interface/fet.cpp" line="729"/>
         <source>&amp;OK</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;OK</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="699"/>
+        <location filename="../src/interface/fet.cpp" line="731"/>
         <source>OK</source>
         <translation>Ok</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="702"/>
+        <location filename="../src/interface/fet.cpp" line="734"/>
         <source>&amp;Cancel</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Annuler</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="704"/>
+        <location filename="../src/interface/fet.cpp" line="736"/>
         <source>Cancel</source>
         <translation>Annuler</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="707"/>
+        <location filename="../src/interface/fet.cpp" line="739"/>
         <source>&amp;Yes</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>Ou&amp;i</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="709"/>
+        <location filename="../src/interface/fet.cpp" line="741"/>
         <source>Yes to &amp;All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>Oui pour &amp;tout</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="711"/>
+        <location filename="../src/interface/fet.cpp" line="743"/>
         <source>&amp;No</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different</comment>
         <translation>&amp;Non</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="713"/>
+        <location filename="../src/interface/fet.cpp" line="745"/>
         <source>N&amp;o to All</source>
         <comment>Accelerator key (letter after ampersand) for &amp;OK, &amp;Cancel, &amp;Yes, Yes to &amp;All, &amp;No, N&amp;o to All, must be different. Please keep the translation short.</comment>
         <translation>Non po&amp;ur tout</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="716"/>
+        <location filename="../src/interface/fet.cpp" line="748"/>
         <source>Help</source>
         <translation>Aide</translation>
     </message>
@@ -53598,17 +53741,17 @@ En pied : %4</translation>
         <translation>Limite vides par semaine</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1292"/>
+        <location filename="../src/interface/fet.cpp" line="1367"/>
         <source>Please check the constraints related to the activity below, which might be impossible to schedule:</source>
         <translation>Merci de vérifier les contraintes relatives à l&apos;activité ci-dessous, qui pourrait être impossible à planifier :</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1298"/>
+        <location filename="../src/interface/fet.cpp" line="1373"/>
         <source>No: %1</source>
         <translation>No : %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/fet.cpp" line="1302"/>
+        <location filename="../src/interface/fet.cpp" line="1377"/>
         <source>Id: %1 (%2)</source>
         <comment>%1 is id of activity, %2 is detailed description of activity</comment>
         <translation>ID : %1 (%2)</translation>
