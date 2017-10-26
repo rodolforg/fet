@@ -1981,7 +1981,7 @@ Versions 5.32.0 - 5.32.3
 	- Updated the Brazilian Portuguese translation, by Alexandre R. Soares.
 	- Updated the Arabic translation, by Benahmed Abdelkrim.
 ---------------------------------------------------------------------------------
-Versions 5.33.0 - 5.33.v
+Versions 5.33.0 - 5.33.3
 - Version 5.33.0
 	- Very rare but important generation bug fixed. In some cases, for feasible timetables, the generation might cycle incorrectly. This is an old bug,
 	affecting files with constraints students/teachers max hours daily and max gaps per day/week, but nobody observed it until now. Reported by Volker Dirr.
@@ -2001,3 +2001,9 @@ Versions 5.33.0 - 5.33.v
 - Version 5.33.3
 	- Updated the Spanish translation, by Emiliano Llano Díaz.
 	- Code cleanup.
+---------------------------------------------------------------------------------
+Versions 5.34.0 - 5.34.v
+- Version 5.34.0
+	- Improved the activity planning dialog, by Volker Dirr. Now the user can swap the teachers of one or more activities.
+	- Added the possibility of exporting the data and the timetable as CSV (comma separated values) files from the command line version of FET
+	(suggested by Matthias Söllner and m).
