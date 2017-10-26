@@ -29,11 +29,15 @@ File export.cpp
 //TODO: add cancel button
 
 #include <QtGlobal>
+#include <QFile>
+#include <QDir>
 
+#ifndef FET_COMMAND_LINE
 #if QT_VERSION >= 0x050000
 #include <QtWidgets>
 #else
 #include <QtGui>
+#endif
 #endif
 
 #include <QHash>
@@ -63,6 +67,33 @@ const char CSVTimetable[]="timetable.csv";
 QString DIRECTORY_CSV;
 QString PREFIX_CSV;
 
+#ifdef FET_COMMAND_LINE
+bool EXPORT_CSV=false;
+
+bool EXPORT_ALLOW_OVERWRITE=false;
+
+bool EXPORT_FIRST_LINE_IS_HEADING=true;
+
+extern const int EXPORT_DOUBLE_QUOTES; //trick so that these constants are visible in fet.cpp.
+extern const int EXPORT_SINGLE_QUOTES;
+extern const int EXPORT_NO_QUOTES;
+const int EXPORT_DOUBLE_QUOTES=0;
+const int EXPORT_SINGLE_QUOTES=1;
+const int EXPORT_NO_QUOTES=2;
+int EXPORT_QUOTES=EXPORT_DOUBLE_QUOTES;
+
+extern const int EXPORT_COMMA;
+extern const int EXPORT_SEMICOLON;
+extern const int EXPORT_VERTICALBAR;
+const int EXPORT_COMMA=0;
+const int EXPORT_SEMICOLON=1;
+const int EXPORT_VERTICALBAR=2;
+int EXPORT_FIELD_SEPARATOR=EXPORT_COMMA;
+
+#include <iostream>
+using namespace std;
+#endif
+
 Export::Export()
 {
 }
@@ -71,6 +102,7 @@ Export::~Export()
 {
 }
 
+#ifndef FET_COMMAND_LINE
 bool Export::okToWrite(QWidget* parent, const QString& file, QMessageBox::StandardButton& msgBoxButton)
 {
 	if(QFile::exists(file)){
@@ -113,8 +145,17 @@ bool Export::okToWrite(QWidget* parent, const QString& file, QMessageBox::Standa
 	else
 		return true;
 }
+#else
+bool Export::okToWrite(const QString& file)
+{
+	if(QFile::exists(file))
+		return EXPORT_ALLOW_OVERWRITE;
+	else
+		return true;
+}
+#endif
 
-
+#ifndef FET_COMMAND_LINE
 void Export::exportCSV(QWidget* parent){
 	QString fieldSeparator=",";
 	QString textquote="\"";
@@ -137,7 +178,6 @@ void Export::exportCSV(QWidget* parent){
 	}
 	DIRECTORY_CSV.append(FILE_SEP);
 	DIRECTORY_CSV.append(s2);
-	
 
 	PREFIX_CSV=DIRECTORY_CSV+FILE_SEP;
 
@@ -184,8 +224,120 @@ void Export::exportCSV(QWidget* parent){
 	
 	ok=lwd.exec();
 }
+#else
+void Export::exportCSV(Solution* bestOrHighest, Solution* current){
+	if(!EXPORT_CSV)
+		return;
 
+	QString fieldSeparator;
+	if(EXPORT_FIELD_SEPARATOR==EXPORT_COMMA)
+		fieldSeparator=",";
+	else if(EXPORT_FIELD_SEPARATOR==EXPORT_SEMICOLON)
+		fieldSeparator=";";
+	else if(EXPORT_FIELD_SEPARATOR==EXPORT_VERTICALBAR)
+		fieldSeparator="|";
+	else
+		assert(0);
+	
+	QString textquote;
+	if(EXPORT_QUOTES==EXPORT_DOUBLE_QUOTES)
+		textquote="\"";
+	else if(EXPORT_QUOTES==EXPORT_SINGLE_QUOTES)
+		textquote="'";
+	else if(EXPORT_QUOTES==EXPORT_NO_QUOTES)
+		textquote="";
+	else
+		assert(0);
 
+	QString setSeparator="+";
+	bool head=EXPORT_FIRST_LINE_IS_HEADING;
+	bool ok=true;
+
+	if(OUTPUT_DIR!="")
+		DIRECTORY_CSV=OUTPUT_DIR+FILE_SEP+"csv";
+	else
+		DIRECTORY_CSV="csv";
+
+	QString s2;
+	if(INPUT_FILENAME_XML=="")
+		s2="unnamed";
+	else{
+		s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because too long filenames!
+
+		if(s2.right(4)==".fet")
+			s2=s2.left(s2.length()-4);
+		//else if(INPUT_FILENAME_XML!="")
+		//	cout<<"Minor problem - input file does not end in .fet extension - might be a problem when saving the timetables"<<" (file:"<<__FILE__<<", line:"<<__LINE__<<")"<<endl;
+	}
+	DIRECTORY_CSV.append(FILE_SEP);
+	DIRECTORY_CSV.append(s2);
+
+	PREFIX_CSV=DIRECTORY_CSV+FILE_SEP;
+
+	QDir dir;
+	if(OUTPUT_DIR!="")
+		if(!dir.exists(OUTPUT_DIR))
+			dir.mkpath(OUTPUT_DIR);
+	if(!dir.exists(DIRECTORY_CSV))
+		dir.mkpath(DIRECTORY_CSV);
+
+	QString lastWarnings;
+
+	bool okat, okr, oks, okt, okst, okact, okacts, oktim1, oktim2;
+
+	okat=exportCSVActivityTags(lastWarnings, textquote, head, setSeparator);
+	okr=exportCSVRoomsAndBuildings(lastWarnings, textquote, fieldSeparator, head);
+	oks=exportCSVSubjects(lastWarnings, textquote, head);
+	okt=exportCSVTeachers(lastWarnings, textquote, head, setSeparator);
+	okst=exportCSVStudents(lastWarnings, textquote, fieldSeparator, head, setSeparator);
+	okact=exportCSVActivities(lastWarnings, textquote, fieldSeparator, head);
+	okacts=exportCSVActivitiesStatistic(lastWarnings, textquote, fieldSeparator, head);
+	
+	if(current==NULL){
+		best_solution.copy(gt.rules, *bestOrHighest);
+		lastWarnings.append(Export::tr("Successfully finished timetable:"));
+		lastWarnings.append(" ");
+		oktim1=exportCSVTimetable(lastWarnings, textquote, fieldSeparator, head);
+
+		oktim2=true;
+	}
+	else{
+		QString oldName=DIRECTORY_CSV;
+		DIRECTORY_CSV.append("-highest");
+		PREFIX_CSV=DIRECTORY_CSV+FILE_SEP;
+		if(!dir.exists(DIRECTORY_CSV))
+			dir.mkpath(DIRECTORY_CSV);
+		best_solution.copy(gt.rules, *bestOrHighest);
+		lastWarnings.append(Export::tr("Highest stage timetable:"));
+		lastWarnings.append(" ");
+		oktim1=exportCSVTimetable(lastWarnings, textquote, fieldSeparator, head);
+		
+		DIRECTORY_CSV=oldName;
+		DIRECTORY_CSV.append("-current");
+		PREFIX_CSV=DIRECTORY_CSV+FILE_SEP;
+		if(!dir.exists(DIRECTORY_CSV))
+			dir.mkpath(DIRECTORY_CSV);
+		best_solution.copy(gt.rules, *current);
+		lastWarnings.append(Export::tr("Current stage timetable:"));
+		lastWarnings.append(" ");
+		oktim2=exportCSVTimetable(lastWarnings, textquote, fieldSeparator, head);
+
+		DIRECTORY_CSV=oldName;
+		PREFIX_CSV=DIRECTORY_CSV+FILE_SEP;
+	}
+	
+	ok=okat && okr && oks && okt && okst && okact && okacts && oktim1 && oktim2;
+		
+	lastWarnings.insert(0,Export::tr("CSV files were exported to directory %1.").arg(QDir::toNativeSeparators(DIRECTORY_CSV))+"\n");
+	if(ok)
+		lastWarnings.insert(0,Export::tr("Exported complete")+"\n");
+	else
+		lastWarnings.insert(0,Export::tr("Export incomplete")+"\n");
+		
+	cout<<qPrintable(tr("FET - export comment", "The comment of the exporting operation"))<<endl;
+	cout<<qPrintable(lastWarnings); //no endl here - there is one already
+}
+#endif
 
 QString Export::protectCSV(const QString& str){
 	QString p=str;
@@ -193,15 +345,13 @@ QString Export::protectCSV(const QString& str){
 	return p;
 }
 
-
-
-bool Export::checkSetSeparator(const QString& str, const QString setSeparator){
+bool Export::checkSetSeparator(const QString& str, const QString& setSeparator){
 	if(str.contains(setSeparator))
 		return false;
 	return true;
 }
 
-bool Export::isActivityNotManualyEdited(const int activityIndex, bool& diffTeachers, bool& diffSubject, bool& diffActivityTags, bool& diffStudents, bool& diffCompNStud, bool& diffNStud, bool& diffActive){ //similar to ActivitiesForm::modifyActivity() by Liviu Lalescu, but added diffActive
+bool Export::isActivityNotManualyEdited(int activityIndex, bool& diffTeachers, bool& diffSubject, bool& diffActivityTags, bool& diffStudents, bool& diffCompNStud, bool& diffNStud, bool& diffActive){ //similar to ActivitiesForm::modifyActivity() by Liviu Lalescu, but added diffActive
 	diffTeachers=diffSubject=diffActivityTags=diffStudents=diffCompNStud=diffNStud=diffActive=false;
 
 	assert(activityIndex>=0);
@@ -263,7 +413,7 @@ bool Export::isActivityNotManualyEdited(const int activityIndex, bool& diffTeach
 		return false;
 }
 
-
+#ifndef FET_COMMAND_LINE
 bool Export::selectSeparatorAndTextquote(QWidget* parent, QDialog* &newParent, QString& textquote, QString& fieldSeparator, bool& head){
 	assert(gt.rules.initialized);
 
@@ -396,46 +546,13 @@ bool Export::selectSeparatorAndTextquote(QWidget* parent, QDialog* &newParent, Q
 	else head=false;
 	return true;
 }
+#endif
 
-
-
-LastWarningsDialogE::LastWarningsDialogE(QWidget* parent, QString lastWarning): QDialog(parent)
-{
-	this->setWindowTitle(tr("FET - export comment", "The comment of the exporting operation"));
-	QVBoxLayout* lastWarningsMainLayout=new QVBoxLayout(this);
-
-	QPlainTextEdit* lastWarningsText=new QPlainTextEdit();
-	lastWarningsText->setMinimumWidth(500);				//width
-	lastWarningsText->setMinimumHeight(250);
-	lastWarningsText->setReadOnly(true);
-	lastWarningsText->setWordWrapMode(QTextOption::NoWrap);
-	lastWarningsText->setPlainText(lastWarning);
-
-	//Start Buttons
-	QPushButton* pb1=new QPushButton(tr("&Ok"));
-	//pb1->setAutoDefault(true);
-
-	QHBoxLayout* hl=new QHBoxLayout();
-	hl->addStretch();
-	hl->addWidget(pb1);
-
-	//Start adding all into main layout
-	lastWarningsMainLayout->addWidget(lastWarningsText);
-	lastWarningsMainLayout->addLayout(hl);
-
-	QObject::connect(pb1, SIGNAL(clicked()), this, SLOT(accept()));
-	
-	//pb1->setDefault(true);
-
-	pb1->setDefault(true);
-	pb1->setFocus();
-}
-
-LastWarningsDialogE::~LastWarningsDialogE()
-{
-}
-
-bool Export::exportCSVActivityTags(QWidget* parent, QString& lastWarnings, const QString textquote, const bool head, const QString setSeparator, QMessageBox::StandardButton& msgBoxButton){
+#ifndef FET_COMMAND_LINE
+bool Export::exportCSVActivityTags(QWidget* parent, QString& lastWarnings, const QString& textquote, const bool head, const QString& setSeparator, QMessageBox::StandardButton& msgBoxButton){
+#else
+bool Export::exportCSVActivityTags(QString& lastWarnings, const QString& textquote, const bool head, const QString& setSeparator){
+#endif
 	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because too long filenames!
 
 	if(s2.right(4)==".fet")
@@ -448,7 +565,11 @@ bool Export::exportCSVActivityTags(QWidget* parent, QString& lastWarnings, const
 		UNDERSCORE="";
 	QString file=PREFIX_CSV+s2+UNDERSCORE+CSVActivityTags;
 	
+#ifndef FET_COMMAND_LINE
 	if(!Export::okToWrite(parent, file, msgBoxButton))
+#else
+	if(!Export::okToWrite(file))
+#endif
 		return false;
 	
 	QFile fileExport(file);
@@ -478,7 +599,11 @@ bool Export::exportCSVActivityTags(QWidget* parent, QString& lastWarnings, const
 	return true;
 }
 
-bool Export::exportCSVRoomsAndBuildings(QWidget* parent, QString& lastWarnings, const QString textquote, const QString fieldSeparator, const bool head, QMessageBox::StandardButton& msgBoxButton){
+#ifndef FET_COMMAND_LINE
+bool Export::exportCSVRoomsAndBuildings(QWidget* parent, QString& lastWarnings, const QString& textquote, const QString& fieldSeparator, const bool head, QMessageBox::StandardButton& msgBoxButton){
+#else
+bool Export::exportCSVRoomsAndBuildings(QString& lastWarnings, const QString& textquote, const QString& fieldSeparator, const bool head){
+#endif
 	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because too long filenames!
 
 	if(s2.right(4)==".fet")
@@ -491,7 +616,11 @@ bool Export::exportCSVRoomsAndBuildings(QWidget* parent, QString& lastWarnings, 
 		UNDERSCORE="";
 	QString file=PREFIX_CSV+s2+UNDERSCORE+CSVRoomsAndBuildings;
 
+#ifndef FET_COMMAND_LINE
 	if(!Export::okToWrite(parent, file, msgBoxButton))
+#else
+	if(!Export::okToWrite(file))
+#endif
 		return false;
 	
 	QFile fileExport(file);
@@ -530,7 +659,11 @@ bool Export::exportCSVRoomsAndBuildings(QWidget* parent, QString& lastWarnings, 
 	return true;
 }
 
-bool Export::exportCSVSubjects(QWidget* parent, QString& lastWarnings, const QString textquote, const bool head, QMessageBox::StandardButton& msgBoxButton){
+#ifndef FET_COMMAND_LINE
+bool Export::exportCSVSubjects(QWidget* parent, QString& lastWarnings, const QString& textquote, const bool head, QMessageBox::StandardButton& msgBoxButton){
+#else
+bool Export::exportCSVSubjects(QString& lastWarnings, const QString& textquote, const bool head){
+#endif
 	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because too long filenames!
 
 	if(s2.right(4)==".fet")
@@ -543,7 +676,11 @@ bool Export::exportCSVSubjects(QWidget* parent, QString& lastWarnings, const QSt
 		UNDERSCORE="";
 	QString file=PREFIX_CSV+s2+UNDERSCORE+CSVSubjects;
 
+#ifndef FET_COMMAND_LINE
 	if(!Export::okToWrite(parent, file, msgBoxButton))
+#else
+	if(!Export::okToWrite(file))
+#endif
 		return false;
 	
 	QFile fileExport(file);
@@ -571,7 +708,11 @@ bool Export::exportCSVSubjects(QWidget* parent, QString& lastWarnings, const QSt
 	return true;
 }
 
-bool Export::exportCSVTeachers(QWidget* parent, QString& lastWarnings, const QString textquote, const bool head, const QString setSeparator, QMessageBox::StandardButton& msgBoxButton){
+#ifndef FET_COMMAND_LINE
+bool Export::exportCSVTeachers(QWidget* parent, QString& lastWarnings, const QString& textquote, const bool head, const QString& setSeparator, QMessageBox::StandardButton& msgBoxButton){
+#else
+bool Export::exportCSVTeachers(QString& lastWarnings, const QString& textquote, const bool head, const QString& setSeparator){
+#endif
 	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because too long filenames!
 
 	if(s2.right(4)==".fet")
@@ -584,7 +725,11 @@ bool Export::exportCSVTeachers(QWidget* parent, QString& lastWarnings, const QSt
 		UNDERSCORE="";
 	QString file=PREFIX_CSV+s2+UNDERSCORE+CSVTeachers;
 
+#ifndef FET_COMMAND_LINE
 	if(!Export::okToWrite(parent, file, msgBoxButton))
+#else
+	if(!Export::okToWrite(file))
+#endif
 		return false;
 	
 	QFile fileExport(file);
@@ -614,7 +759,11 @@ bool Export::exportCSVTeachers(QWidget* parent, QString& lastWarnings, const QSt
 	return true;
 }
 
-bool Export::exportCSVStudents(QWidget* parent, QString& lastWarnings, const QString textquote, const QString fieldSeparator, const bool head, const QString setSeparator, QMessageBox::StandardButton& msgBoxButton){
+#ifndef FET_COMMAND_LINE
+bool Export::exportCSVStudents(QWidget* parent, QString& lastWarnings, const QString& textquote, const QString& fieldSeparator, const bool head, const QString& setSeparator, QMessageBox::StandardButton& msgBoxButton){
+#else
+bool Export::exportCSVStudents(QString& lastWarnings, const QString& textquote, const QString& fieldSeparator, const bool head, const QString& setSeparator){
+#endif
 	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because too long filenames!
 
 	if(s2.right(4)==".fet")
@@ -627,7 +776,11 @@ bool Export::exportCSVStudents(QWidget* parent, QString& lastWarnings, const QSt
 		UNDERSCORE="";
 	QString file=PREFIX_CSV+s2+UNDERSCORE+CSVStudents;
 
+#ifndef FET_COMMAND_LINE
 	if(!Export::okToWrite(parent, file, msgBoxButton))
+#else
+	if(!Export::okToWrite(file))
+#endif
 		return false;
 	
 	QFile fileExport(file);
@@ -687,7 +840,11 @@ bool Export::exportCSVStudents(QWidget* parent, QString& lastWarnings, const QSt
 	return true;
 }
 
-bool Export::exportCSVActivities(QWidget* parent, QString& lastWarnings, const QString textquote, const QString fieldSeparator, const bool head, QMessageBox::StandardButton& msgBoxButton){
+#ifndef FET_COMMAND_LINE
+bool Export::exportCSVActivities(QWidget* parent, QString& lastWarnings, const QString& textquote, const QString& fieldSeparator, const bool head, QMessageBox::StandardButton& msgBoxButton){
+#else
+bool Export::exportCSVActivities(QString& lastWarnings, const QString& textquote, const QString& fieldSeparator, const bool head){
+#endif
 	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because too long filenames!
 
 	if(s2.right(4)==".fet")
@@ -700,7 +857,11 @@ bool Export::exportCSVActivities(QWidget* parent, QString& lastWarnings, const Q
 		UNDERSCORE="";
 	QString file=PREFIX_CSV+s2+UNDERSCORE+CSVActivities;
 
+#ifndef FET_COMMAND_LINE
 	if(!Export::okToWrite(parent, file, msgBoxButton))
+#else
+	if(!Export::okToWrite(file))
+#endif
 		return false;
 	
 	QFile fileExport(file);
@@ -937,6 +1098,7 @@ bool Export::exportCSVActivities(QWidget* parent, QString& lastWarnings, const Q
 		//}
 	}
 	
+#ifndef FET_COMMAND_LINE
 	if(manuallyEdited){
 		QMessageBox msgBox(parent);
 		msgBox.setWindowTitle(tr("FET warning"));
@@ -948,6 +1110,14 @@ bool Export::exportCSVActivities(QWidget* parent, QString& lastWarnings, const Q
 		
 		msgBox.exec();
 	}
+#else
+	if(manuallyEdited){
+		cout<<qPrintable(tr("FET warning"))<<endl;
+		cout<<qPrintable(tr("There are subactivities which were modified separately - so the "
+		 "components had different values for subject, activity tags, teachers, students or number of students from the representative subactivity. The export was done, but it is not very accurate."))
+		 <<endl;
+	}
+#endif
 
 	lastWarnings+=Export::tr("%1 activities exported.").arg(countExportedActivities)+"\n";
 	if(fileExport.error()>0){
@@ -958,7 +1128,11 @@ bool Export::exportCSVActivities(QWidget* parent, QString& lastWarnings, const Q
 	return true;
 }
 
-bool Export::exportCSVActivitiesStatistic(QWidget* parent, QString& lastWarnings, const QString textquote, const QString fieldSeparator, const bool head, QMessageBox::StandardButton& msgBoxButton){
+#ifndef FET_COMMAND_LINE
+bool Export::exportCSVActivitiesStatistic(QWidget* parent, QString& lastWarnings, const QString& textquote, const QString& fieldSeparator, const bool head, QMessageBox::StandardButton& msgBoxButton){
+#else
+bool Export::exportCSVActivitiesStatistic(QString& lastWarnings, const QString& textquote, const QString& fieldSeparator, const bool head){
+#endif
 	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because too long filenames!
 
 	if(s2.right(4)==".fet")
@@ -971,7 +1145,11 @@ bool Export::exportCSVActivitiesStatistic(QWidget* parent, QString& lastWarnings
 		UNDERSCORE="";
 	QString file=PREFIX_CSV+s2+UNDERSCORE+CSVActivitiesStatistic;
 
+#ifndef FET_COMMAND_LINE
 	if(!Export::okToWrite(parent, file, msgBoxButton))
+#else
+	if(!Export::okToWrite(file))
+#endif
 		return false;
 	
 	QFile fileExport(file);
@@ -988,8 +1166,6 @@ bool Export::exportCSVActivitiesStatistic(QWidget* parent, QString& lastWarnings
 				<<textquote<<"Subject"<<textquote<<fieldSeparator
 				<<textquote<<"Teachers"<<textquote<<fieldSeparator
 				<<textquote<<"Total Duration"<<textquote<<"\n";
-
-
 
 	Activity* acti;
 	int countExportedActivities=0;
@@ -1036,7 +1212,11 @@ bool Export::exportCSVActivitiesStatistic(QWidget* parent, QString& lastWarnings
 	return true;
 }
 
-bool Export::exportCSVTimetable(QWidget* parent, QString& lastWarnings, const QString textquote, const QString fieldSeparator, const bool head, QMessageBox::StandardButton& msgBoxButton){
+#ifndef FET_COMMAND_LINE
+bool Export::exportCSVTimetable(QWidget* parent, QString& lastWarnings, const QString& textquote, const QString& fieldSeparator, const bool head, QMessageBox::StandardButton& msgBoxButton){
+#else
+bool Export::exportCSVTimetable(QString& lastWarnings, const QString& textquote, const QString& fieldSeparator, const bool head){
+#endif
 	QString s2=INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1);	//TODO: remove s2, because too long filenames!
 
 	if(s2.right(4)==".fet")
@@ -1049,7 +1229,11 @@ bool Export::exportCSVTimetable(QWidget* parent, QString& lastWarnings, const QS
 		UNDERSCORE="";
 	QString file=PREFIX_CSV+s2+UNDERSCORE+CSVTimetable;
 	
+#ifndef FET_COMMAND_LINE
 	if(!Export::okToWrite(parent, file, msgBoxButton))
+#else
+	if(!Export::okToWrite(file))
+#endif
 		return false;
 	
 	QFile fileExport(file);
@@ -1143,3 +1327,41 @@ bool Export::exportCSVTimetable(QWidget* parent, QString& lastWarnings, const QS
 	fileExport.close();
 	return true;
 }
+
+#ifndef FET_COMMAND_LINE
+LastWarningsDialogE::LastWarningsDialogE(QWidget* parent, const QString& lastWarning): QDialog(parent)
+{
+	this->setWindowTitle(tr("FET - export comment", "The comment of the exporting operation"));
+	QVBoxLayout* lastWarningsMainLayout=new QVBoxLayout(this);
+
+	QPlainTextEdit* lastWarningsText=new QPlainTextEdit();
+	lastWarningsText->setMinimumWidth(500);				//width
+	lastWarningsText->setMinimumHeight(250);
+	lastWarningsText->setReadOnly(true);
+	lastWarningsText->setWordWrapMode(QTextOption::NoWrap);
+	lastWarningsText->setPlainText(lastWarning);
+
+	//Start Buttons
+	QPushButton* pb1=new QPushButton(tr("&Ok"));
+	//pb1->setAutoDefault(true);
+
+	QHBoxLayout* hl=new QHBoxLayout();
+	hl->addStretch();
+	hl->addWidget(pb1);
+
+	//Start adding all into main layout
+	lastWarningsMainLayout->addWidget(lastWarningsText);
+	lastWarningsMainLayout->addLayout(hl);
+
+	QObject::connect(pb1, SIGNAL(clicked()), this, SLOT(accept()));
+	
+	//pb1->setDefault(true);
+
+	pb1->setDefault(true);
+	pb1->setFocus();
+}
+
+LastWarningsDialogE::~LastWarningsDialogE()
+{
+}
+#endif

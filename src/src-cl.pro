@@ -17,6 +17,7 @@ SOURCES += \
 	engine/generate.cpp \
 	engine/lockunlock.cpp \
 	engine/messageboxes.cpp \
+	engine/export.cpp \
 	\
 	interface/centerwidgetonscreen.cpp \
 	interface/fet.cpp \
@@ -43,6 +44,7 @@ HEADERS += \
 	engine/lockunlock.h \
 	engine/matrix.h \
 	engine/messageboxes.h \
+	engine/export.h \
 	\
 	interface/centerwidgetonscreen.h \
 	interface/fet.h \

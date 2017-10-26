@@ -156,6 +156,29 @@ extern int YY;
 
 Generate* terminateGeneratePointer;
 
+#ifdef FET_COMMAND_LINE
+#include "export.h"
+
+extern bool EXPORT_CSV;
+extern bool EXPORT_ALLOW_OVERWRITE;
+extern bool EXPORT_FIRST_LINE_IS_HEADING;
+extern int EXPORT_QUOTES;
+
+extern const int EXPORT_DOUBLE_QUOTES;
+extern const int EXPORT_SINGLE_QUOTES;
+extern const int EXPORT_NO_QUOTES;
+
+extern int EXPORT_FIELD_SEPARATOR;
+
+extern const int EXPORT_COMMA;
+extern const int EXPORT_SEMICOLON;
+extern const int EXPORT_VERTICALBAR;
+
+extern Solution best_solution;
+
+extern QString DIRECTORY_CSV;
+#endif
+
 //for command line version, if the user stops using a signal
 #ifdef FET_COMMAND_LINE
 void terminate(int param)
@@ -195,7 +218,9 @@ void usage(QTextStream* out, const QString& error)
 		"[--printactivitytags=a] [--printnotavailable=u] [--printbreak=b] [--dividetimeaxisbydays=v] [--duplicateverticalheaders=e] "
 		"[--printsimultaneousactivities=w] [--randomseedx=rx --randomseedy=ry] [--warnifusingnotperfectconstraints=s] "
 		"[--warnifusingstudentsminhoursdailywithallowemptydays=p] [--warnifusinggroupactivitiesininitialorder=g] [--warnsubgroupswiththesameactivities=ssa]\n"
-		"[--printdetailedtimetables=pdt] [--printdetailedteachersfreeperiodstimetables=pdtfp] [--verbose=r]\",\n"
+		"[--printdetailedtimetables=pdt] [--printdetailedteachersfreeperiodstimetables=pdtfp] "
+		"[--exportcsv=ecsv] [--overwritecsv=ocsv] [--firstlineisheadingcsv=flhcsv] [--quotescsv=qcsv] [--fieldseparatorcsv=fscsv] "
+		"[--verbose=r]\",\n"
 		"where:\nx is the input file, for instance \"data.fet\"\n"
 		"d is the path to results directory, without trailing slash or backslash (default is current working path). "
 		"Make sure you have write permissions there.\n"
@@ -227,6 +252,13 @@ void usage(QTextStream* out, const QString& error)
 		"the same activities (default true).\n"
 		"pdt is either true or false, represents whether you want to show the detailed (true) or less detailed (false) years and groups timetables (default true).\n"
 		"pdtfp is either true or false, represents whether you want to show the detailed (true) or less detailed (false) teachers free periods timetables (default true).\n"
+		"ecsv is either true or false, represents whether you want to export the CSV file and timetables (default false).\n"
+		"ocsv is either true or false, represents whether you want to overwrite old CSV files, if they exist (default false).\n"
+		"flhcsv is either true or false, represents whether you want the heading of the CSV files to be header (true) or data (false). The default value is true.\n"
+		"qcsv is one value from the set [doublequotes|singlequotes|none] (write a single value from these three exactly as it is written here). The default value is "
+		"doublequotes.\n"
+		"fscsv is one value from the set [comma|semicolon|verticalbar] (write a single value from these three exactly as it is written here). The default value is "
+		"comma.\n"
 		"r is either true or false, represents whether you want additional generation messages and other messages to be shown on the command line (default false).\n"
 		"Alternatively, you can run \"fet-cl --version [--outputdir=d]\" to get the current FET version. "
 		"where:\nd is the path to results directory, without trailing slash or backslash (default is current working path). "
@@ -879,6 +911,12 @@ int main(int argc, char **argv)
 		
 		SHOW_WARNING_FOR_GROUP_ACTIVITIES_IN_INITIAL_ORDER=true;
 		
+		EXPORT_CSV=false;
+		EXPORT_ALLOW_OVERWRITE=false;
+		EXPORT_FIRST_LINE_IS_HEADING=true;
+		EXPORT_QUOTES=EXPORT_DOUBLE_QUOTES;
+		EXPORT_FIELD_SEPARATOR=EXPORT_COMMA;
+
 		bool showVersion=false;
 		
 		for(int i=1; i<_args.count(); i++){
@@ -1023,6 +1061,31 @@ int main(int argc, char **argv)
 				if(s.right(5)=="false")
 					WRITE_TIMETABLES_ACTIVITIES=false;
 			}
+			//Export CSV
+			else if(s.left(12)=="--exportcsv="){
+				if(s.right(4)=="true")
+					EXPORT_CSV=true;
+			}
+			else if(s.left(15)=="--overwritecsv="){
+				if(s.right(4)=="true")
+					EXPORT_ALLOW_OVERWRITE=true;
+			}
+			else if(s.left(24)=="--firstlineisheadingcsv="){
+				if(s.right(5)=="false")
+					EXPORT_FIRST_LINE_IS_HEADING=false;
+			}
+			else if(s.left(12)=="--quotescsv="){
+				if(s.right(12)=="singlequotes")
+					EXPORT_QUOTES=EXPORT_SINGLE_QUOTES;
+				else if(s.right(4)=="none")
+					EXPORT_QUOTES=EXPORT_NO_QUOTES;
+			}
+			else if(s.left(20)=="--fieldseparatorcsv="){
+				if(s.right(9)=="semicolon")
+					EXPORT_FIELD_SEPARATOR=EXPORT_SEMICOLON;
+				else if(s.right(11)=="verticalbar")
+					EXPORT_FIELD_SEPARATOR=EXPORT_VERTICALBAR;
+			}
 			///
 			else
 				unrecognizedOptions.append(s);
@@ -1033,10 +1096,17 @@ int main(int argc, char **argv)
 		QString initialDir=outputDirectory;
 		if(initialDir!="")
 			initialDir.append(FILE_SEP);
+			
+		QString csvOutputDirectory=outputDirectory;
+		//cout<<"csvOutputDirectory="<<qPrintable(csvOutputDirectory)<<endl;
 		
 		if(outputDirectory!="")
 			outputDirectory.append(FILE_SEP);
 		outputDirectory.append("timetables");
+
+		/*if(csvOutputDirectory!="")
+			csvOutputDirectory.append(FILE_SEP);
+		csvOutputDirectory.append("csv");*/
 
 		//////////
 		if(INPUT_FILENAME_XML!=""){
@@ -1044,6 +1114,11 @@ int main(int argc, char **argv)
 			outputDirectory.append(INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1));
 			if(outputDirectory.right(4)==".fet")
 				outputDirectory=outputDirectory.left(outputDirectory.length()-4);
+
+			/*csvOutputDirectory.append(FILE_SEP);
+			csvOutputDirectory.append(INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1));
+			if(csvOutputDirectory.right(4)==".fet")
+				csvOutputDirectory=csvOutputDirectory.left(csvOutputDirectory.length()-4);*/
 		}
 		//////////
 		
@@ -1345,6 +1420,11 @@ int main(int argc, char **argv)
 					dir.mkpath(toh);
 
 			TimetableExport::writeSimulationResultsCommandLine(NULL, toh);
+
+			QString oldDir=OUTPUT_DIR;
+			OUTPUT_DIR=csvOutputDirectory;
+			Export::exportCSV(&highestStageSolution, &gen.c);
+			OUTPUT_DIR=oldDir;
 		}
 		//2012-01-24 - suggestion and code by Ian Holden (ian@ianholden.com), to write best and current timetable on time exceeded
 		//previously, FET saved best and current timetable only on receiving SIGTERM
@@ -1464,6 +1544,11 @@ int main(int argc, char **argv)
 					dir.mkpath(toh);
 
 			TimetableExport::writeSimulationResultsCommandLine(NULL, toh);
+
+			QString oldDir=OUTPUT_DIR;
+			OUTPUT_DIR=csvOutputDirectory;
+			Export::exportCSV(&highestStageSolution, &gen.c);
+			OUTPUT_DIR=oldDir;
 		}
 		else{
 			cout<<"Simulation successful"<<endl;
@@ -1482,6 +1567,11 @@ int main(int argc, char **argv)
 			TimetableExport::getRoomsTimetable(c);
 
 			TimetableExport::writeSimulationResultsCommandLine(NULL, outputDirectory);
+			
+			QString oldDir=OUTPUT_DIR;
+			OUTPUT_DIR=csvOutputDirectory;
+			Export::exportCSV(&c);
+			OUTPUT_DIR=oldDir;
 		}
 	
 		logFile.close();
