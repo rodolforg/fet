@@ -6,7 +6,7 @@ File export.cpp
                                 FET
                           -------------------
    copyright            : (C) by Lalescu Liviu
-    email                : Please see http://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
+    email                : Please see https://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
  ***************************************************************************
                           export.cpp  -  description
                              -------------------
@@ -78,7 +78,6 @@ Export::Export(const Timetable &gt, const Solution &solution)
 Export::~Export()
 {
 }
-
 
 bool Export::okToWrite(QWidget* parent, const QString& file, QMessageBox::StandardButton& msgBoxButton)
 {
@@ -466,7 +465,6 @@ LastWarningsDialogE::~LastWarningsDialogE()
 {
 }
 
-
 bool Export::exportCSVActivityTags(QWidget* parent, QMessageBox::StandardButton& msgBoxButton){
 	QString file=getFilePath(CSVActivityTags);
 	
@@ -499,8 +497,6 @@ bool Export::exportCSVActivityTags(QWidget* parent, QMessageBox::StandardButton&
 	fileExport.close();
 	return true;
 }
-
-
 
 bool Export::exportCSVRoomsAndBuildings(QWidget* parent, QMessageBox::StandardButton& msgBoxButton){
 	QString file=getFilePath(CSVRoomsAndBuildings);
@@ -544,8 +540,6 @@ bool Export::exportCSVRoomsAndBuildings(QWidget* parent, QMessageBox::StandardBu
 	return true;
 }
 
-
-
 bool Export::exportCSVSubjects(QWidget* parent, QMessageBox::StandardButton& msgBoxButton){
 	QString file=getFilePath(CSVSubjects);
 
@@ -576,8 +570,6 @@ bool Export::exportCSVSubjects(QWidget* parent, QMessageBox::StandardButton& msg
 	fileExport.close();
 	return true;
 }
-
-
 
 bool Export::exportCSVTeachers(QWidget* parent, QMessageBox::StandardButton& msgBoxButton){
 	QString file=getFilePath(CSVTeachers);
@@ -611,8 +603,6 @@ bool Export::exportCSVTeachers(QWidget* parent, QMessageBox::StandardButton& msg
 	fileExport.close();
 	return true;
 }
-
-
 
 bool Export::exportCSVStudents(QWidget* parent, QMessageBox::StandardButton& msgBoxButton){
 	QString file=getFilePath(CSVStudents);
@@ -676,8 +666,6 @@ bool Export::exportCSVStudents(QWidget* parent, QMessageBox::StandardButton& msg
 	fileExport.close();
 	return true;
 }
-
-
 
 bool Export::exportCSVActivities(QWidget* parent, QMessageBox::StandardButton& msgBoxButton){
 	QString file=getFilePath(CSVActivities);
@@ -940,9 +928,6 @@ bool Export::exportCSVActivities(QWidget* parent, QMessageBox::StandardButton& m
 	return true;
 }
 
-
-
-
 bool Export::exportCSVActivitiesStatistic(QWidget* parent, QMessageBox::StandardButton& msgBoxButton){
 	QString file=getFilePath(CSVActivitiesStatistic);
 
@@ -1010,8 +995,6 @@ bool Export::exportCSVActivitiesStatistic(QWidget* parent, QMessageBox::Standard
 	fileExport.close();
 	return true;
 }
-
-
 
 bool Export::exportCSVTimetable(QWidget* parent, QMessageBox::StandardButton& msgBoxButton){
 	QString file=getFilePath(CSVTimetable);

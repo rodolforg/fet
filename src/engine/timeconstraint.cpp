@@ -7,7 +7,7 @@ File timeconstraint.cpp
                              -------------------
     begin                : 2002
     copyright            : (C) 2002 by Lalescu Liviu
-    email                : Please see http://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
+    email                : Please see https://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
  ***************************************************************************/
 
 /***************************************************************************
@@ -5619,7 +5619,7 @@ QString ConstraintStudentsSetMaxGapsPerWeek::getDetailedDescription(const Rules&
 	QString s=tr("Time constraint");s+="\n";
 	s+=tr("A students set must respect the maximum number of gaps per week");s+="\n";
 	s+=tr("(breaks and students set not available not counted)");s+="\n";
-	s+=tr("Weight (percentage)=%1").arg(CustomFETString::number(this->weightPercentage));s+="\n";
+	s+=tr("Weight (percentage)=%1%").arg(CustomFETString::number(this->weightPercentage));s+="\n";
 	s+=tr("Maximum gaps per week=%1").arg(this->maxGaps);s+="\n";
 	s+=tr("Students=%1").arg(this->students); s+="\n";
 	
@@ -9164,7 +9164,7 @@ QString ConstraintActivitiesPreferredTimeSlots::getDetailedDescription(const Rul
 	}
 	s+="\n";
 
-	s+=tr("Weight (percentage)=%1").arg(CustomFETString::number(this->weightPercentage));s+="\n";
+	s+=tr("Weight (percentage)=%1%").arg(CustomFETString::number(this->weightPercentage));s+="\n";
 
 	if(!active){
 		s+=tr("Active=%1", "Refers to a constraint").arg(yesNoTranslated(active));
@@ -9648,7 +9648,7 @@ QString ConstraintSubactivitiesPreferredTimeSlots::getDetailedDescription(const 
 	}
 	s+="\n";
 
-	s+=tr("Weight (percentage)=%1").arg(CustomFETString::number(this->weightPercentage));s+="\n";
+	s+=tr("Weight (percentage)=%1%").arg(CustomFETString::number(this->weightPercentage));s+="\n";
 
 	if(!active){
 		s+=tr("Active=%1", "Refers to a constraint").arg(yesNoTranslated(active));
@@ -10437,7 +10437,7 @@ QString ConstraintActivitiesPreferredStartingTimes::getDetailedDescription(const
 	}
 	s+="\n";
 
-	s+=tr("Weight (percentage)=%1").arg(CustomFETString::number(this->weightPercentage));s+="\n";
+	s+=tr("Weight (percentage)=%1%").arg(CustomFETString::number(this->weightPercentage));s+="\n";
 
 	if(!active){
 		s+=tr("Active=%1", "Refers to a constraint").arg(yesNoTranslated(active));
@@ -10905,7 +10905,7 @@ QString ConstraintSubactivitiesPreferredStartingTimes::getDetailedDescription(co
 	}
 	s+="\n";
 
-	s+=tr("Weight (percentage)=%1").arg(CustomFETString::number(this->weightPercentage));s+="\n";
+	s+=tr("Weight (percentage)=%1%").arg(CustomFETString::number(this->weightPercentage));s+="\n";
 
 	if(!active){
 		s+=tr("Active=%1", "Refers to a constraint").arg(yesNoTranslated(active));
@@ -15006,7 +15006,7 @@ QString ConstraintActivitiesEndStudentsDay::getDetailedDescription(const Rules& 
 	s+=tr("must end students' day");
 	s+="\n";
 
-	s+=tr("Weight (percentage)=%1").arg(CustomFETString::number(this->weightPercentage));s+="\n";
+	s+=tr("Weight (percentage)=%1%").arg(CustomFETString::number(this->weightPercentage));s+="\n";
 
 	if(!active){
 		s+=tr("Active=%1", "Refers to a constraint").arg(yesNoTranslated(active));
@@ -16464,7 +16464,7 @@ QString ConstraintStudentsSetMaxGapsPerDay::getDetailedDescription(const Rules& 
 	s+=tr("(not perfect)", "It refers to a not perfect constraint"); s+="\n";
 	s+=tr("A students set must respect the maximum number of gaps per day");s+="\n";
 	s+=tr("(breaks and students set not available not counted)");s+="\n";
-	s+=tr("Weight (percentage)=%1").arg(CustomFETString::number(this->weightPercentage));s+="\n";
+	s+=tr("Weight (percentage)=%1%").arg(CustomFETString::number(this->weightPercentage));s+="\n";
 	s+=tr("Maximum gaps per day=%1").arg(this->maxGaps);s+="\n";
 	s+=tr("Students=%1").arg(this->students); s+="\n";
 

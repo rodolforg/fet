@@ -2,12 +2,12 @@
                                 FET
                           -------------------
    copyright            : (C) by Lalescu Liviu
-    email                : Please see http://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
+    email                : Please see https://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
  ***************************************************************************
                           advancedlockunlockform.cpp  -  description
                              -------------------
     begin                : Dec 2008
-    copyright            : (C) by Liviu Lalescu (http://lalescu.ro/liviu/) and Volker Dirr (http://www.timetabling.de/)
+    copyright            : (C) by Liviu Lalescu (https://lalescu.ro/liviu/) and Volker Dirr (http://www.timetabling.de/)
  ***************************************************************************
  *                                                                         *
  *   This program is free software: you can redistribute it and/or modify  *

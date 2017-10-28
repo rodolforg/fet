@@ -1308,6 +1308,8 @@ Suggested also by utismetis, on the forum, on 2017-08-07.
 
 Suggested also by Davide Cottignoli, on the forum, on 2017-08-18.
 
+Suggested also by mercurialuser, on the forum, on 2017-09-05.
+
 See also TODO item #84.
 
 83---------------------------------------------------------
@@ -2076,7 +2078,7 @@ is unchecked).
 if you use click, then something is called only once.
 
 130---------------------------------------------------------
-From Daniel (on forum, see http://lalescu.ro/liviu/fet/forum/index.php?topic=1224):
+From Daniel (on forum, see https://lalescu.ro/liviu/fet/forum/index.php?topic=1224):
 
 Allow activities to span over breaks. (For the moment, a solution is to split activities
 and add constraints two (or three) activities grouped. Another solution is to not
@@ -2864,7 +2866,7 @@ Maybe adding a Pause/Resume to "Generate new timetable" window (changing Start b
 (Related to item #277.)
 
 197---------------------------------------------------------
-From nouvakis (on forum):
+From nouvakis (on forum, also from mercurialuser, also on forum):
 
 If I set
 min_hours = 3 and
@@ -2900,6 +2902,19 @@ Anyway, I'll keep this suggestion in my mind. But for now I do not have the cour
 I hope that by using some tricks you can overcome the problems.
 
 See also fet-v.v.v/doc/algorithm/improve-todo-item-197.txt.
+
+---
+
+From mercurialuser:
+
+Italian school, students have 5 days, 6 periods each.
+Teachers teach 18 periods.
+
+I have a min hours per day set to 2, and some teachers have 2 days with 2 hours and unfortunately 2 days with 5 teaching hours...
+
+Is it possible to tell FET that teachers may teach 2 periods and 5 periods only once in a week ?
+
+I'm testing with minimum hours per day set to 3 but I feel it is a too strict requirements...
 
 198---------------------------------------------------------
 From Volker Dirr (also from mouiata, on the forum):
@@ -2999,7 +3014,7 @@ Vanyo Georgiev: May be there must be a setting: 'Remember current page' and each
 (Vanyo Georgiev provided the necessary code changes to do this.)
 
 205---------------------------------------------------------
-From bharatstank (on forum): ( http://lalescu.ro/liviu/fet/forum/index.php?topic=1826 )
+From bharatstank (on forum): ( https://lalescu.ro/liviu/fet/forum/index.php?topic=1826 )
 
 bharatstank:
 
@@ -3080,7 +3095,7 @@ About making this automatic for activity tags - I have added this in the TODO li
 206---------------------------------------------------------
 From Vanyo Georgiev (on forum):
 
-There are translations of the FET User manual in several languages http://lalescu.ro/liviu/fet/doc/
+There are translations of the FET User manual in several languages https://lalescu.ro/liviu/fet/doc/
 
 I think it would be nice, when there is an User manual in the currently set language of the FET interface, by clicking on the Help -> Online -> Help contents the User manual in the  language of the FET interface is opened.
 
@@ -3119,8 +3134,8 @@ new Volker Dirr's code: 5 October 2015
 // Description: This file is part of FET
 //
 //
-// Author: Lalescu Liviu <Please see http://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)>
-// Copyright (C) 2003 Liviu Lalescu <http://lalescu.ro/liviu/>
+// Author: Lalescu Liviu <Please see https://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)>
+// Copyright (C) 2003 Liviu Lalescu <https://lalescu.ro/liviu/>
 //
 /***************************************************************************
  *                                                                         *
@@ -4386,6 +4401,8 @@ FET can really import and export almost all data. except constraints. if this fu
 
 Liviu: It is a bit weird to export the constraints - what format to choose?
 
+Also suggested by sln_rj, on forum.
+
 259---------------------------------------------------------
 From Benahmed Abdelkrim (on forum):
 
@@ -4471,7 +4488,7 @@ maybe we can add a check for this:
 teacher max hours per day is lower than activity duration.
 
 269---------------------------------------------------------
-From Matthias Söllner:
+From Matthias Söllner (also from m, on forum):
 
 Matthias Söllner: Is there a possibility to create the csv-Export Files
 over the command line?
@@ -4481,12 +4498,18 @@ timetable, I want to generate the csv-File without gui.
 
 Volker Dirr: If we do that, we need to care about:
 a) warnings at the end (currently there is a messagebox)
-b) questions at the beginning (for text and field seperator. I think we
+b) questions at the beginning (for text and field separator. I think we
 should use the default ones without asking.)
 
 Liviu Lalescu: Maybe the best would be to add a command-line parameter
 to force generation of CSV timetables after a successful generation,
 and maybe add parameters for text and field separator.
+
+Also suggested by m, on forum:
+
+(https://lalescu.ro/liviu/fet/forum/index.php?topic=3512.0)
+
+Please add option to export data from command line.
 
 270---------------------------------------------------------
 From auriolar (on forum):
@@ -4570,6 +4593,12 @@ to switch off the PC but doesn't want to loose the N-hours of elaboration done s
 From mercurialuser (on forum):
 
 If you can't change a value (usually a 100% setting, or allow empty days) please disable the widget... it is misleading...
+
+Rewording by mercurialuser:
+
+There are some constraints that must have the % field set to 100. Unfortunately the field is editable and it causes confusion, expecially for newcomers.
+
+I suggest to keep the field on screen but just disable it, make it not editable...
 
 279---------------------------------------------------------
 From mrtvillaret (on forum):
@@ -5171,7 +5200,7 @@ Exmple: Physics1 have 2 split in the week, so why I add this info in every activ
 314---------------------------------------------------------
 From Benahmed Abdelkrim and Volker Dirr (on forum):
 
-http://lalescu.ro/liviu/fet/forum/index.php?topic=3141.0
+https://lalescu.ro/liviu/fet/forum/index.php?topic=3141.0
 
 1. Volker Dirr suggests renaming the Algeria and Morocco version to other better names, since they can be used more generally in other countries/institutions.
 
@@ -5604,3 +5633,46 @@ Here we have a rule that recommends coordinators not to assign more than three d
 So, I thought about including two more columns in the statistics file:
 * "Total of Activities"
 * "Different Subjects" (counting different string description of the subjects assigned to the teacher)
+
+338---------------------------------------------------------
+From mercurialuser (on forum):
+
+I'd like to have fet-cl write the highest timetable without stopping the program. I'm getting 63x out of 639 activity placed and so I'd like to see what it is
+happening, which activity is blocked by which constraint, etc etc..
+
+It would be nice to be able to load the saved partial timetable and restart the search from that point... of course, I'd modify the constraints to be able to
+place the remaining activities...
+
+Liviu Lalescu:
+
+For part 1) It is difficult, because I cannot rely on more signals. I already use SIGTERM.
+
+But I think you can safely interrupt the generation with SIGTERM and get the highest stage timetable. It would not be useful to continue the generation.
+If you change a constraints, the whole procedure changes (see your second request and my answer, below). You can see the initial activities order in the
+logs, and the maximum placed activities. The next one after the maximum placed is problematic.
+
+For part 2) This would not be possible. If you modify the constraints, the whole thing is changed.
+
+339---------------------------------------------------------
+From Roberto Bergonzini:
+
+Manual timetabling - drag and drop.
+
+Just make a timetable view teachers, keeping only the free days and the not available constraints for the teachers.
+
+Also suggested by mercurialuser.
+
+Forum link: https://lalescu.ro/liviu/fet/forum/index.php?topic=3461.0
+
+340---------------------------------------------------------
+From Emiliano Llano Díaz:
+
+Improvement suggestion: Is a nag that each time you open FET it does not "remember" the file it was working on (I know it is just 2 clicks away on
+file->open recent, but... you know humans are lazy 😁  )
+
+341---------------------------------------------------------
+From mohammed (on forum):
+
+Nous voulons ajouter la fonction de sauvegarde automatique du programme, en cas de travail, l'alimentation s'éteint
+
+(We would like to add the function of automatic save of the program, in case of work, the power goes off).

@@ -1,6 +1,6 @@
 A difficult file. Solved in about 2 hours 30 minutes on my computer (in another run, it solved in about 30 minutes).
 
-The words of Benahmed Abdelkrim, the author of this file (from http://lalescu.ro/liviu/fet/forum/index.php?topic=3383.0):
+The words of Benahmed Abdelkrim, the author of this file (from https://lalescu.ro/liviu/fet/forum/index.php?topic=3383.0):
 
 
 Here is an example of timetable that satisfies the Algerian conditions but produced by official FET.

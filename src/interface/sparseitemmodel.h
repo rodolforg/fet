@@ -2,13 +2,13 @@
                                 FET
                           -------------------
    copyright            : (C) by Lalescu Liviu
-    email                : Please see http://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
+    email                : Please see https://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
  ***************************************************************************
                       sparseitemmodel.h  -  description
                              -------------------
     begin                : 2010
     copyright            : (C) 2010 by Liviu Lalescu
-                         : http://lalescu.ro/liviu/
+                         : https://lalescu.ro/liviu/
  ***************************************************************************
  *                                                                         *
  *   This program is free software: you can redistribute it and/or modify  *

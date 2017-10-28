@@ -7,7 +7,7 @@ File rules.h
                              -------------------
     begin                : 2003
     copyright            : (C) 2003 by Lalescu Liviu
-    email                : Please see http://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
+    email                : Please see https://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
  ***************************************************************************/
 
 /***************************************************************************
@@ -585,7 +585,7 @@ public:
 		int _durations[],
 		bool _active[],
 		bool _computeNTotalStudents,
-		int nTotalStudents);
+		int _nTotalStudents);
 
 	void modifySubactivity(
 		int _id,
@@ -597,7 +597,7 @@ public:
 		int _duration,
 		bool _active,
 		bool _computeNTotalStudents,
-		int nTotalStudents);
+		int _nTotalStudents);
 
 	/**
 	Adds a new room (already allocated).
