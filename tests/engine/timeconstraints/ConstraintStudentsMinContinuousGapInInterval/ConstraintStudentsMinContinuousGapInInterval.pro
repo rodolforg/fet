@@ -52,6 +52,7 @@ SOURCES += tst_constraintstudentsmincontinuousgapinintervaltest.cpp \
     ../../../../src/engine/constraints/studentsmincontinuousgapininterval.cpp \
     ../../../../src/engine/constraints/paradoxmindaysvsconsecutive.cpp \
     ../../../../src/engine/constraints/paradoxmindaysvstwogrouped.cpp \
+    ../../../../src/engine/constraints/paradoxmindaysvsthreegrouped.cpp \
     ../../../../src/engine/spaceconstraint.cpp \
 
 DEFINES += SRCDIR=\\\"$$PWD/\\\" FET_COMMAND_LINE

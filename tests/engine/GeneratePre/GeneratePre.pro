@@ -49,6 +49,7 @@ SOURCES += tst_generatepretest.cpp \
     ../../../src/engine/constraints/studentsmincontinuousgapininterval.cpp \
     ../../../src/engine/constraints/paradoxmindaysvsconsecutive.cpp \
     ../../../src/engine/constraints/paradoxmindaysvstwogrouped.cpp \
+    ../../../src/engine/constraints/paradoxmindaysvsthreegrouped.cpp \
     ../../../src/engine/messageboxes.cpp \
     ../../../src/engine/randomknuth.cpp \
     ../../../src/interface/longtextmessagebox.cpp

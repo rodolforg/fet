@@ -51,6 +51,7 @@ extern Timetable gt;
 
 #include "constraints/paradoxmindaysvsconsecutive.h"
 #include "constraints/paradoxmindaysvstwogrouped.h"
+#include "constraints/paradoxmindaysvsthreegrouped.h"
 
 //extern QApplication* pqapplication;
 
@@ -988,8 +989,9 @@ bool processTimeSpaceConstraints(QWidget* parent, QTextStream* initialOrderStrea
 
 	ParadoxMinDaysVsConsecutive paradox2consecutive;
 	ParadoxMinDaysVsTwoGrouped paradox2grouped;
+	ParadoxMinDaysVsThreeGrouped paradox3grouped;
 	QList<ConstraintPre*> paradoxes;
-	paradoxes << &paradox2consecutive << &paradox2grouped;
+	paradoxes << &paradox2consecutive << &paradox2grouped << &paradox3grouped;
 	foreach (ConstraintPre* paradox, paradoxes) {
 		if (!paradox->prepare(gt.rules)) {
 			reportSkippableErrors(parent, paradox->getErrors());

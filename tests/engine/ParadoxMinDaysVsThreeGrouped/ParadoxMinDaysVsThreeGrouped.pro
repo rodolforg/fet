@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2017-09-25T01:29:02
+# Project created by QtCreator 2017-10-29T06:20:35
 #
 #-------------------------------------------------
 
@@ -8,7 +8,7 @@ QT       += testlib
 
 QT       -= gui
 
-TARGET = tst_paradoxmindaysvstwogroupedtest
+TARGET = tst_paradoxmindaysvsthreegroupedtest
 CONFIG   += console
 CONFIG   -= app_bundle
 
@@ -27,7 +27,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
-        tst_paradoxmindaysvstwogroupedtest.cpp \
+        tst_paradoxmindaysvsthreegroupedtest.cpp \
     ../../../src/engine/activity.cpp \
     ../../../src/engine/activitytag.cpp \
     ../../../src/engine/building.cpp \
