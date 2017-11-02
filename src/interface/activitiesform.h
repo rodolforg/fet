@@ -30,6 +30,7 @@ class ActivitiesForm : public QDialog, Ui::ActivitiesForm_template{
 	
 private:
 	QSet<QString> showedStudents;
+	static const int noneItemIndex = 1;
 	
 public:
 	ActivitiesList visibleActivitiesList;

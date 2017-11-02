@@ -87,6 +87,7 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 	Q_UNUSED(tmp4);
 
 	teachersComboBox->addItem("");
+	teachersComboBox->addItem(tr(" [[ no teachers ]]"));
 	int cit=0;
 	for(int i=0; i<gt.rules.teachersList.size(); i++){
 		Teacher* tch=gt.rules.teachersList[i];
@@ -107,6 +108,7 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 	subjectsComboBox->setCurrentIndex(cisu);
 
 	activityTagsComboBox->addItem("");
+	activityTagsComboBox->addItem(" [[ no tags ]]");
 	int ciat=0;
 	for(int i=0; i<gt.rules.activityTagsList.size(); i++){
 		ActivityTag* st=gt.rules.activityTagsList[i];
@@ -117,6 +119,7 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 	activityTagsComboBox->setCurrentIndex(ciat);
 
 	studentsComboBox->addItem("");
+	studentsComboBox->addItem(" [[ no students ]]");
 	int cist=0;
 	int currentID=0;
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
@@ -181,14 +184,19 @@ bool ActivitiesForm::filterOk(Activity* act)
 
 	//teacher
 	if(tn!=""){
-		bool ok2=false;
-		for(QStringList::Iterator it=act->teachersNames.begin(); it!=act->teachersNames.end(); it++)
-			if(*it == tn){
-				ok2=true;
-				break;
-			}
-		if(!ok2)
-			ok=false;
+		if (teachersComboBox->currentIndex() == noneItemIndex) {
+			if (act->teachersNames.count() > 0)
+				ok = false;
+		} else {
+			bool ok2=false;
+			for(QStringList::Iterator it=act->teachersNames.begin(); it!=act->teachersNames.end(); it++)
+				if(*it == tn){
+					ok2=true;
+					break;
+				}
+			if(!ok2)
+				ok=false;
+		}
 	}
 
 	//subject
@@ -196,11 +204,20 @@ bool ActivitiesForm::filterOk(Activity* act)
 		ok=false;
 		
 	//activity tag
-	if(sbtn!="" && !act->activityTagsNames.contains(sbtn))
-		ok=false;
+	if (sbtn!="") {
+		if (activityTagsComboBox->currentIndex() == noneItemIndex) {
+			if (act->activityTagsNames.count() > 0)
+				ok = false;
+		}
+		else if(!act->activityTagsNames.contains(sbtn))
+			ok=false;
+	}
 		
 	//students
-	if(stn!=""){
+	if (studentsComboBox->currentIndex() == noneItemIndex) {
+		if (act->studentsNames.count() > 0)
+			ok = false;
+	} else if(stn!=""){
 		bool ok2=false;
 		for(QStringList::Iterator it=act->studentsNames.begin(); it!=act->studentsNames.end(); it++)
 			//if(*it == stn){
@@ -231,7 +248,7 @@ void ActivitiesForm::studentsFilterChanged()
 	else{
 		if(studentsComboBox->currentText()=="")
 			showedStudents.insert("");
-		else{
+		else if (studentsComboBox->currentIndex() != noneItemIndex){
 			//down
 			StudentsSet* set=gt.rules.searchStudentsSet(studentsComboBox->currentText());
 			assert(set!=NULL);
