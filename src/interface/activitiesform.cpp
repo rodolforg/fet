@@ -46,6 +46,8 @@
 #include <QObject>
 #include <QMetaObject>
 
+#include "editcommentsform.h"
+
 ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, const QString& studentsSetName, const QString& subjectName, const QString& activityTagName): QDialog(parent)
 {
 	setupUi(this);
@@ -597,50 +599,19 @@ void ActivitiesForm::activityComments()
 	Activity* act=visibleActivitiesList[ind];
 	assert(act!=NULL);
 
-	QDialog getCommentsDialog(this);
-	
-	getCommentsDialog.setWindowTitle(tr("Activity comments"));
-	
-	QPushButton* okPB=new QPushButton(tr("OK"));
-	okPB->setDefault(true);
-	QPushButton* cancelPB=new QPushButton(tr("Cancel"));
-	
-	connect(okPB, SIGNAL(clicked()), &getCommentsDialog, SLOT(accept()));
-	connect(cancelPB, SIGNAL(clicked()), &getCommentsDialog, SLOT(reject()));
+	EditCommentsForm dialog("ActivityCommentsDialog", this, tr("Activity comments"));
+	dialog.setComments(act->comments);
 
-	QHBoxLayout* hl=new QHBoxLayout();
-	hl->addStretch();
-	hl->addWidget(okPB);
-	hl->addWidget(cancelPB);
-	
-	QVBoxLayout* vl=new QVBoxLayout();
-	
-	QPlainTextEdit* commentsPT=new QPlainTextEdit();
-	commentsPT->setPlainText(act->comments);
-	commentsPT->selectAll();
-	commentsPT->setFocus();
-	
-	vl->addWidget(commentsPT);
-	vl->addLayout(hl);
-	
-	getCommentsDialog.setLayout(vl);
-	
-	const QString settingsName=QString("ActivityCommentsDialog");
-	
-	getCommentsDialog.resize(500, 320);
-	centerWidgetOnScreen(&getCommentsDialog);
-	restoreFETDialogGeometry(&getCommentsDialog, settingsName);
-	
-	int t=getCommentsDialog.exec();
-	saveFETDialogGeometry(&getCommentsDialog, settingsName);
-	
-	if(t==QDialog::Accepted){
-		act->comments=commentsPT->toPlainText();
-	
-		gt.rules.internalStructureComputed=false;
-		gt.rules.setModified(true);
+	int t=dialog.exec();
+	if(t!=QDialog::Accepted)
+		return;
 
-		activitiesListWidget->currentItem()->setText(act->getDescription());
-		activityChanged();
-	}
+	if (act->comments == dialog.getComments())
+		return;
+	act->comments=dialog.getComments();
+	gt.rules.internalStructureComputed=false;
+	gt.rules.setModified(true);
+
+	activitiesListWidget->currentItem()->setText(act->getDescription());
+	activityChanged();
 }
