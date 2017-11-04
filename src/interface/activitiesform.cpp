@@ -71,6 +71,7 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 	connect(recursiveCheckBox, SIGNAL(toggled(bool)), this, SLOT(studentsFilterChanged()));
 	connect(helpPushButton, SIGNAL(clicked()), this, SLOT(help()));
 	connect(commentsPushButton, SIGNAL(clicked()), this, SLOT(activityComments()));
+	connect(sortComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
@@ -87,6 +88,9 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 	Q_UNUSED(tmp3);
 	QSize tmp4=activityTagsComboBox->minimumSizeHint();
 	Q_UNUSED(tmp4);
+
+	sortComboBox->addItem(tr("Sort by Id"), QVariant(SORT_BY_ID));
+	sortComboBox->addItem(tr("Sort by Subject"), QVariant(SORT_BY_SUBJECT));
 
 	teachersComboBox->addItem("");
 	teachersComboBox->addItem(tr(" [[ no teachers ]]"));
@@ -297,26 +301,30 @@ void ActivitiesForm::studentsFilterChanged()
 	filterChanged();
 }
 
+bool compareSubjectOrder(const Activity *act1, const Activity *act2)
+{
+	if (act1->subjectName == act2->subjectName)
+		return act1->id < act2->id;
+	return act1->subjectName.localeAwareCompare(act2->subjectName) < 0;
+}
+
+bool compareIdOrder(const Activity *act1, const Activity *act2)
+{
+	return act1->id < act2->id;
+}
+
 void ActivitiesForm::filterChanged()
 {
 	int nacts=0, nsubacts=0, nh=0;
 	int ninact=0, ninacth=0;
 
-	QString s;
 	activitiesListWidget->clear();
 	visibleActivitiesList.clear();
 	
-	int k=0;
 	for(int i=0; i<gt.rules.activitiesList.size(); i++){
 		Activity* act=gt.rules.activitiesList[i];
 		if(this->filterOk(act)){
-			s=act->getDescription();
 			visibleActivitiesList.append(act);
-			activitiesListWidget->addItem(s);
-			k++;
-			
-			if(USE_GUI_COLORS && !act->active)
-				activitiesListWidget->item(k-1)->setBackground(activitiesListWidget->palette().alternateBase());
 			
 			if(act->id==act->activityGroupId || act->activityGroupId==0)
 				nacts++;
@@ -329,6 +337,19 @@ void ActivitiesForm::filterChanged()
 				ninacth+=act->duration;
 			}
 		}
+	}
+
+	if (sortComboBox->currentData().toInt() == SORT_BY_ID)
+		std::sort(visibleActivitiesList.begin(), visibleActivitiesList.end(), compareIdOrder);
+	else if (sortComboBox->currentIndex() == SORT_BY_SUBJECT)
+		std::sort(visibleActivitiesList.begin(), visibleActivitiesList.end(), compareSubjectOrder);
+
+	for (int k=0; k < visibleActivitiesList.count(); k++) {
+		const Activity *act = visibleActivitiesList[k];
+		activitiesListWidget->addItem(act->getDescription());
+
+		if(USE_GUI_COLORS && !act->active)
+			activitiesListWidget->item(k)->setBackground(activitiesListWidget->palette().alternateBase());
 	}
 	
 	assert(nsubacts-ninact>=0);
