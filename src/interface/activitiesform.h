@@ -38,7 +38,7 @@ public:
 	ActivitiesForm(QWidget* parent, const QString& teacherName, const QString& studentsSetName, const QString& subjectName, const QString& activityTagName);
 	~ActivitiesForm();
 
-	bool filterOk(Activity* act);
+	bool filterOk(const Activity* act);
 
 public slots:
 	void addActivity();

@@ -92,7 +92,7 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 	teachersComboBox->addItem(tr(" [[ no teachers ]]"));
 	int cit=0;
 	for(int i=0; i<gt.rules.teachersList.size(); i++){
-		Teacher* tch=gt.rules.teachersList[i];
+		const Teacher* tch=gt.rules.teachersList[i];
 		teachersComboBox->addItem(tch->name);
 		if(tch->name==teacherName)
 			cit=i+1;
@@ -102,7 +102,7 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 	subjectsComboBox->addItem("");
 	int cisu=0;
 	for(int i=0; i<gt.rules.subjectsList.size(); i++){
-		Subject* sb=gt.rules.subjectsList[i];
+		const Subject* sb=gt.rules.subjectsList[i];
 		subjectsComboBox->addItem(sb->name);
 		if(sb->name==subjectName)
 			cisu=i+1;
@@ -113,7 +113,7 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 	activityTagsComboBox->addItem(" [[ no tags ]]");
 	int ciat=0;
 	for(int i=0; i<gt.rules.activityTagsList.size(); i++){
-		ActivityTag* st=gt.rules.activityTagsList[i];
+		const ActivityTag* st=gt.rules.activityTagsList[i];
 		activityTagsComboBox->addItem(st->name);
 		if(st->name==activityTagName)
 			ciat=i+1;
@@ -125,19 +125,19 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 	int cist=0;
 	int currentID=0;
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
-		StudentsYear* sty=gt.rules.yearsList[i];
+		const StudentsYear* sty=gt.rules.yearsList[i];
 		studentsComboBox->addItem(sty->name);
 		currentID++;
 		if(sty->name==studentsSetName)
 			cist=currentID;
 		for(int j=0; j<sty->groupsList.size(); j++){
-			StudentsGroup* stg=sty->groupsList[j];
+			const StudentsGroup* stg=sty->groupsList[j];
 			studentsComboBox->addItem(stg->name);
 			currentID++;
 			if(stg->name==studentsSetName)
 				cist=currentID;
 			if(SHOW_SUBGROUPS_IN_COMBO_BOXES) for(int k=0; k<stg->subgroupsList.size(); k++){
-				StudentsSubgroup* sts=stg->subgroupsList[k];
+				const StudentsSubgroup* sts=stg->subgroupsList[k];
 				studentsComboBox->addItem(sts->name);
 				currentID++;
 				if(sts->name==studentsSetName)
@@ -176,7 +176,7 @@ ActivitiesForm::~ActivitiesForm()
 	settings.setValue(this->metaObject()->className()+QString("/splitter-state"), splitter->saveState());
 }
 
-bool ActivitiesForm::filterOk(Activity* act)
+bool ActivitiesForm::filterOk(const Activity* act)
 {
 	QString tn=teachersComboBox->currentText();
 	QString stn=studentsComboBox->currentText();
@@ -191,7 +191,7 @@ bool ActivitiesForm::filterOk(Activity* act)
 				ok = false;
 		} else {
 			bool ok2=false;
-			for(QStringList::Iterator it=act->teachersNames.begin(); it!=act->teachersNames.end(); it++)
+			for(QStringList::ConstIterator it=act->teachersNames.begin(); it!=act->teachersNames.end(); it++)
 				if(*it == tn){
 					ok2=true;
 					break;
@@ -221,7 +221,7 @@ bool ActivitiesForm::filterOk(Activity* act)
 			ok = false;
 	} else if(stn!=""){
 		bool ok2=false;
-		for(QStringList::Iterator it=act->studentsNames.begin(); it!=act->studentsNames.end(); it++)
+		for(QStringList::ConstIterator it=act->studentsNames.begin(); it!=act->studentsNames.end(); it++)
 			//if(*it == stn){
 			if(showedStudents.contains(*it)){
 				ok2=true;
@@ -252,25 +252,25 @@ void ActivitiesForm::studentsFilterChanged()
 			showedStudents.insert("");
 		else if (studentsComboBox->currentIndex() != noneItemIndex){
 			//down
-			StudentsSet* set=gt.rules.searchStudentsSet(studentsComboBox->currentText());
+			const StudentsSet* set=gt.rules.searchStudentsSet(studentsComboBox->currentText());
 			assert(set!=NULL);
 			if(set->type==STUDENTS_YEAR){
-				StudentsYear* year=(StudentsYear*)set;
+				const StudentsYear* year=(const StudentsYear*)set;
 				showedStudents.insert(year->name);
-				foreach(StudentsGroup* group, year->groupsList){
+				foreach(const StudentsGroup* group, year->groupsList){
 					showedStudents.insert(group->name);
-					foreach(StudentsSubgroup* subgroup, group->subgroupsList)
+					foreach(const StudentsSubgroup* subgroup, group->subgroupsList)
 						showedStudents.insert(subgroup->name);
 				}
 			}
 			else if(set->type==STUDENTS_GROUP){
-				StudentsGroup* group=(StudentsGroup*) set;
+				const StudentsGroup* group=(const StudentsGroup*) set;
 				showedStudents.insert(group->name);
-				foreach(StudentsSubgroup* subgroup, group->subgroupsList)
+				foreach(const StudentsSubgroup* subgroup, group->subgroupsList)
 					showedStudents.insert(subgroup->name);
 			}
 			else if(set->type==STUDENTS_SUBGROUP){
-				StudentsSubgroup* subgroup=(StudentsSubgroup*) set;
+				const StudentsSubgroup* subgroup=(const StudentsSubgroup*) set;
 				showedStudents.insert(subgroup->name);
 			}
 			else
@@ -278,12 +278,12 @@ void ActivitiesForm::studentsFilterChanged()
 				
 			//up
 			QString crt=studentsComboBox->currentText();
-			foreach(StudentsYear* year, gt.rules.yearsList){
-				foreach(StudentsGroup* group, year->groupsList){
+			foreach(const StudentsYear* year, gt.rules.yearsList){
+				foreach(const StudentsGroup* group, year->groupsList){
 					if(group->name==crt){
 						showedStudents.insert(year->name);
 					}
-					foreach(StudentsSubgroup* subgroup, group->subgroupsList){
+					foreach(const StudentsSubgroup* subgroup, group->subgroupsList){
 						if(subgroup->name==crt){
 							showedStudents.insert(year->name);
 							showedStudents.insert(group->name);
@@ -382,7 +382,7 @@ void ActivitiesForm::modifyActivity()
 	int valv=activitiesListWidget->verticalScrollBar()->value();
 	int valh=activitiesListWidget->horizontalScrollBar()->value();
 
-	Activity* act=visibleActivitiesList[ind];
+	const Activity* act=visibleActivitiesList[ind];
 	assert(act!=NULL);
 	
 	QStringList teachers=act->teachersNames;
@@ -406,7 +406,7 @@ void ActivitiesForm::modifyActivity()
 	if(act->isSplit()){
 		int nSplit=0;
 		for(int i=0; i<gt.rules.activitiesList.size(); i++){
-			Activity* act2=gt.rules.activitiesList[i];
+			const Activity* act2=gt.rules.activitiesList[i];
 			if(act2->activityGroupId==act->activityGroupId){
 				nSplit++;
 				
@@ -494,7 +494,7 @@ void ActivitiesForm::removeActivity()
 	int valv=activitiesListWidget->verticalScrollBar()->value();
 	int valh=activitiesListWidget->horizontalScrollBar()->value();
 
-	Activity* act=visibleActivitiesList[ind];
+	const Activity* act=visibleActivitiesList[ind];
 	assert(act!=NULL);
 
 	QString s;
@@ -540,7 +540,7 @@ void ActivitiesForm::activityChanged()
 	}
 
 	QString s;
-	Activity* act=visibleActivitiesList[index];
+	const Activity* act=visibleActivitiesList[index];
 
 	assert(act!=NULL);
 	s=act->getDetailedDescriptionWithConstraints(gt.rules);
