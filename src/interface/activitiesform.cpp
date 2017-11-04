@@ -72,6 +72,7 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 	connect(helpPushButton, SIGNAL(clicked()), this, SLOT(help()));
 	connect(commentsPushButton, SIGNAL(clicked()), this, SLOT(activityComments()));
 	connect(sortComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
+	connect(hideInactiveCheckBox, SIGNAL(toggled(bool)), this, SLOT(filterChanged()));
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
@@ -321,8 +322,11 @@ void ActivitiesForm::filterChanged()
 	activitiesListWidget->clear();
 	visibleActivitiesList.clear();
 	
-	for(int i=0; i<gt.rules.activitiesList.size(); i++){
-		Activity* act=gt.rules.activitiesList[i];
+	const bool hideInactiveActivities = hideInactiveCheckBox->isChecked();
+
+	foreach(Activity* act, gt.rules.activitiesList) {
+		if (hideInactiveActivities && !act->active)
+			continue;
 		if(this->filterOk(act)){
 			visibleActivitiesList.append(act);
 			
