@@ -75,16 +75,8 @@ bool ConstraintActivityPreferredRoomForm::filterOk(const SpaceConstraint* ctr) c
 		
 	if(act!=NULL){
 		//teacher
-		if(tn!=""){
-			bool ok2=false;
-			for(QStringList::Iterator it=act->teachersNames.begin(); it!=act->teachersNames.end(); it++)
-				if(*it == tn){
-					ok2=true;
-					break;
-				}
-			if(!ok2)
-				found=false;
-		}
+		if(!tn.isEmpty() && !act->teachersNames.contains(tn))
+			found=false;
 
 		//subject
 		if(sbn!="" && sbn!=act->subjectName)
@@ -95,16 +87,8 @@ bool ConstraintActivityPreferredRoomForm::filterOk(const SpaceConstraint* ctr) c
 			found=false;
 	
 		//students
-		if(stn!=""){
-			bool ok2=false;
-			for(QStringList::Iterator it=act->studentsNames.begin(); it!=act->studentsNames.end(); it++)
-				if(*it == stn){
-					ok2=true;
-					break;
-			}
-			if(!ok2)
-				found=false;
-		}
+		if(stn!="" && !act->studentsNames.contains(stn))
+			found=false;
 	}
 	
 	if(!found)
