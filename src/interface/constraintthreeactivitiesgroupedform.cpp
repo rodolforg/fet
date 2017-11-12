@@ -66,8 +66,6 @@ bool ConstraintThreeActivitiesGroupedForm::filterOk(const TimeConstraint* ctr) c
 	bool foundTeacher=false, foundStudents=false, foundSubject=false, foundActivityTag=false;
 		
 	for(int i=0; i<3; i++){
-		//bool found=true;
-		
 		int id=-1;
 		
 		if(i==0)

@@ -66,8 +66,6 @@ bool ConstraintTwoActivitiesConsecutiveForm::filterOk(const TimeConstraint* ctr)
 	bool foundTeacher=false, foundStudents=false, foundSubject=false, foundActivityTag=false;
 		
 	for(int i=0; i<2; i++){
-		//bool found=true;
-	
 		int id=-1;
 		
 		if(i==0)
