@@ -56,8 +56,6 @@ bool ConstraintActivityEndsStudentsDayForm::filterOk(const TimeConstraint* ctr) 
 	QString sbn=filterWidget->subject();
 	QString sbtn=filterWidget->activityTag();
 	QString stn=filterWidget->studentsSet();
-		
-	bool found=true;
 	
 	int id=c->activityId;
 	Activity* act=NULL;
@@ -68,7 +66,7 @@ bool ConstraintActivityEndsStudentsDayForm::filterOk(const TimeConstraint* ctr) 
 		}
 	}
 
-	found=true;
+	bool found=true;
 
 	if(act!=NULL){
 		//teacher

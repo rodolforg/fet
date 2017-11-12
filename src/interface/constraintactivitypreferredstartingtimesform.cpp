@@ -56,8 +56,6 @@ bool ConstraintActivityPreferredStartingTimesForm::filterOk(const TimeConstraint
 	QString sbtn=filterWidget->activityTag();
 	QString stn=filterWidget->studentsSet();
 		
-	bool found=true;
-	
 	int id=c->activityId;
 	Activity* act=NULL;
 	foreach(Activity* a, gt.rules.activitiesList) {
@@ -67,8 +65,8 @@ bool ConstraintActivityPreferredStartingTimesForm::filterOk(const TimeConstraint
 		}
 	}
 
-	found=true;		
-		
+	bool found=true;
+
 	if(act!=NULL){
 		//teacher
 		if(!tn.isEmpty() && !act->teachersNames.contains(tn))

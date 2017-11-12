@@ -60,8 +60,6 @@ bool ConstraintActivityPreferredRoomForm::filterOk(const SpaceConstraint* ctr) c
 	QString sbtn=filterWidget->activityTag();
 	QString stn=filterWidget->studentsSet();
 		
-	bool found=true;
-	
 	int id=c->activityId;
 	Activity* act=NULL;
 	foreach(Activity* a, gt.rules.activitiesList) {
@@ -71,7 +69,7 @@ bool ConstraintActivityPreferredRoomForm::filterOk(const SpaceConstraint* ctr) c
 		}
 	}
 
-	found=true;
+	bool found=true;
 		
 	if(act!=NULL){
 		//teacher
