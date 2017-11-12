@@ -57,7 +57,7 @@ bool ConstraintMinDaysBetweenActivitiesForm::filterOk(const TimeConstraint* ctr)
 	if(ctr->type!=CONSTRAINT_MIN_DAYS_BETWEEN_ACTIVITIES)
 		return false;
 		
-	ConstraintMinDaysBetweenActivities* c=(ConstraintMinDaysBetweenActivities*) ctr;
+	const ConstraintMinDaysBetweenActivities* c=(const ConstraintMinDaysBetweenActivities*) ctr;
 
 	TeacherStudentSetSubjectActivityTag_FilterWidget *filter_widget = static_cast<TeacherStudentSetSubjectActivityTag_FilterWidget*>(getFilterWidget());
 
@@ -73,8 +73,8 @@ bool ConstraintMinDaysBetweenActivitiesForm::filterOk(const TimeConstraint* ctr)
 		
 	for(int i=0; i<c->n_activities; i++){
 		int id=c->activitiesId[i];
-		Activity* act=NULL;
-		foreach(Activity* a, gt.rules.activitiesList) {
+		const Activity* act=NULL;
+		foreach(const Activity* a, gt.rules.activitiesList) {
 			if(a->id==id) {
 				act=a;
 				break;

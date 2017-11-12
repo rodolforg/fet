@@ -53,7 +53,7 @@ bool ConstraintThreeActivitiesGroupedForm::filterOk(const TimeConstraint* ctr) c
 	if(ctr->type!=CONSTRAINT_THREE_ACTIVITIES_GROUPED)
 		return false;
 
-	ConstraintThreeActivitiesGrouped* c=(ConstraintThreeActivitiesGrouped*) ctr;
+	const ConstraintThreeActivitiesGrouped* c=(const ConstraintThreeActivitiesGrouped*) ctr;
 	const TeacherStudentSetSubjectActivityTag_FilterWidget * filterWidget = static_cast<TeacherStudentSetSubjectActivityTag_FilterWidget*>(getFilterWidget());
 	QString tn=filterWidget->teacher();
 	QString sbn=filterWidget->subject();
@@ -78,8 +78,8 @@ bool ConstraintThreeActivitiesGroupedForm::filterOk(const TimeConstraint* ctr) c
 		assert(id>=0);
 	
 		//int id=c->activitiesId[i];
-		Activity* act=NULL;
-		foreach(Activity* a, gt.rules.activitiesList) {
+		const Activity* act=NULL;
+		foreach(const Activity* a, gt.rules.activitiesList) {
 			if(a->id==id) {
 				act=a;
 				break;

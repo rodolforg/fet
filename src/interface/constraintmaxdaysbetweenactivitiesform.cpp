@@ -50,7 +50,7 @@ bool ConstraintMaxDaysBetweenActivitiesForm::filterOk(const TimeConstraint* ctr)
 	if(ctr->type!=CONSTRAINT_MAX_DAYS_BETWEEN_ACTIVITIES)
 		return false;
 		
-	ConstraintMaxDaysBetweenActivities* c=(ConstraintMaxDaysBetweenActivities*) ctr;
+	const ConstraintMaxDaysBetweenActivities* c=(const ConstraintMaxDaysBetweenActivities*) ctr;
 	const TeacherStudentSetSubjectActivityTag_FilterWidget * filterWidget = static_cast<TeacherStudentSetSubjectActivityTag_FilterWidget*>(getFilterWidget());
 	QString tn=filterWidget->teacher();
 	QString sbn=filterWidget->subject();
@@ -64,8 +64,8 @@ bool ConstraintMaxDaysBetweenActivitiesForm::filterOk(const TimeConstraint* ctr)
 		
 	for(int i=0; i<c->n_activities; i++){
 		int id=c->activitiesId[i];
-		Activity* act=NULL;
-		foreach(Activity* a, gt.rules.activitiesList) {
+		const Activity* act=NULL;
+		foreach(const Activity* a, gt.rules.activitiesList) {
 			if(a->id==id) {
 				act=a;
 				break;

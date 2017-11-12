@@ -52,7 +52,7 @@ bool ConstraintActivityPreferredRoomForm::filterOk(const SpaceConstraint* ctr) c
 	if(ctr->type!=CONSTRAINT_ACTIVITY_PREFERRED_ROOM)
 		return false;
 		
-	ConstraintActivityPreferredRoom* c=(ConstraintActivityPreferredRoom*) ctr;
+	const ConstraintActivityPreferredRoom* c=(const ConstraintActivityPreferredRoom*) ctr;
 	
 	const TeacherStudentSetSubjectActivityTag_FilterWidget * filterWidget = static_cast<TeacherStudentSetSubjectActivityTag_FilterWidget*>(getFilterWidget());
 	QString tn=filterWidget->teacher();
@@ -61,8 +61,8 @@ bool ConstraintActivityPreferredRoomForm::filterOk(const SpaceConstraint* ctr) c
 	QString stn=filterWidget->studentsSet();
 		
 	int id=c->activityId;
-	Activity* act=NULL;
-	foreach(Activity* a, gt.rules.activitiesList) {
+	const Activity* act=NULL;
+	foreach(const Activity* a, gt.rules.activitiesList) {
 		if(a->id==id) {
 			act=a;
 			break;

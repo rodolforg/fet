@@ -52,7 +52,7 @@ bool ConstraintActivitiesSameStartingDayForm::filterOk(const TimeConstraint* ctr
 	if(ctr->type!=CONSTRAINT_ACTIVITIES_SAME_STARTING_DAY)
 		return false;
 
-	ConstraintActivitiesSameStartingDay* c=(ConstraintActivitiesSameStartingDay*) ctr;
+	const ConstraintActivitiesSameStartingDay* c=(const ConstraintActivitiesSameStartingDay*) ctr;
 	const TeacherStudentSetSubjectActivityTag_FilterWidget * filterWidget = static_cast<TeacherStudentSetSubjectActivityTag_FilterWidget*>(getFilterWidget());
 	QString tn=filterWidget->teacher();
 	QString sbn=filterWidget->subject();
@@ -68,8 +68,8 @@ bool ConstraintActivitiesSameStartingDayForm::filterOk(const TimeConstraint* ctr
 		//bool found=true;
 	
 		int id=c->activitiesId[i];
-		Activity* act=NULL;
-		foreach(Activity* a, gt.rules.activitiesList) {
+		const Activity* act=NULL;
+		foreach(const Activity* a, gt.rules.activitiesList) {
 			if(a->id==id) {
 				act=a;
 				break;

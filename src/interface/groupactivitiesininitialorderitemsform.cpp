@@ -129,8 +129,8 @@ bool GroupActivitiesInInitialOrderItemsForm::filterOk(const GroupActivitiesInIni
 		
 	for(int i=0; i<item.ids.count(); i++){
 		int id=item.ids.at(i);
-		Activity* act=NULL;
-		foreach(Activity* a, gt.rules.activitiesList) {
+		const Activity* act=NULL;
+		foreach(const Activity* a, gt.rules.activitiesList) {
 			if(a->id==id) {
 				act=a;
 				break;

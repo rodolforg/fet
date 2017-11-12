@@ -49,7 +49,7 @@ bool ConstraintActivityPreferredStartingTimesForm::filterOk(const TimeConstraint
 	if(ctr->type!=CONSTRAINT_ACTIVITY_PREFERRED_STARTING_TIMES)
 		return false;
 		
-	ConstraintActivityPreferredStartingTimes* c=(ConstraintActivityPreferredStartingTimes*) ctr;
+	const ConstraintActivityPreferredStartingTimes* c=(const ConstraintActivityPreferredStartingTimes*) ctr;
 	const TeacherStudentSetSubjectActivityTag_FilterWidget * filterWidget = static_cast<TeacherStudentSetSubjectActivityTag_FilterWidget*>(getFilterWidget());
 	QString tn=filterWidget->teacher();
 	QString sbn=filterWidget->subject();
@@ -57,8 +57,8 @@ bool ConstraintActivityPreferredStartingTimesForm::filterOk(const TimeConstraint
 	QString stn=filterWidget->studentsSet();
 		
 	int id=c->activityId;
-	Activity* act=NULL;
-	foreach(Activity* a, gt.rules.activitiesList) {
+	const Activity* act=NULL;
+	foreach(const Activity* a, gt.rules.activitiesList) {
 		if(a->id==id) {
 			act=a;
 			break;

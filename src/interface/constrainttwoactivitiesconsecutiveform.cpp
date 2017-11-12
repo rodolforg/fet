@@ -53,7 +53,7 @@ bool ConstraintTwoActivitiesConsecutiveForm::filterOk(const TimeConstraint* ctr)
 	if(ctr->type!=CONSTRAINT_TWO_ACTIVITIES_CONSECUTIVE)
 		return false;
 
-	ConstraintTwoActivitiesConsecutive* c=(ConstraintTwoActivitiesConsecutive*) ctr;
+	const ConstraintTwoActivitiesConsecutive* c=(const ConstraintTwoActivitiesConsecutive*) ctr;
 	const TeacherStudentSetSubjectActivityTag_FilterWidget * filterWidget = static_cast<TeacherStudentSetSubjectActivityTag_FilterWidget*>(getFilterWidget());
 	QString tn=filterWidget->teacher();
 	QString sbn=filterWidget->subject();
@@ -75,8 +75,8 @@ bool ConstraintTwoActivitiesConsecutiveForm::filterOk(const TimeConstraint* ctr)
 			
 		assert(id>=0);
 
-		Activity* act=NULL;
-		foreach(Activity* a, gt.rules.activitiesList) {
+		const Activity* act=NULL;
+		foreach(const Activity* a, gt.rules.activitiesList) {
 			if(a->id==id) {
 				act=a;
 				break;

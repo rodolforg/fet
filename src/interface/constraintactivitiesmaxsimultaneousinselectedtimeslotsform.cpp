@@ -65,8 +65,8 @@ bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::filterOk(const 
 		
 	for(int i=0; i<c->activitiesIds.count(); i++){
 		int id=c->activitiesIds.at(i);
-		Activity* act=NULL;
-		foreach(Activity* a, gt.rules.activitiesList) {
+		const Activity* act=NULL;
+		foreach(const Activity* a, gt.rules.activitiesList) {
 			if(a->id==id) {
 				act=a;
 				break;

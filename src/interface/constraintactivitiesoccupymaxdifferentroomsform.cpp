@@ -54,7 +54,7 @@ bool ConstraintActivitiesOccupyMaxDifferentRoomsForm::filterOk(const SpaceConstr
 	if(ctr->type!=CONSTRAINT_ACTIVITIES_OCCUPY_MAX_DIFFERENT_ROOMS)
 		return false;
 
-	ConstraintActivitiesOccupyMaxDifferentRooms* c=(ConstraintActivitiesOccupyMaxDifferentRooms*) ctr;
+	const ConstraintActivitiesOccupyMaxDifferentRooms* c=(const ConstraintActivitiesOccupyMaxDifferentRooms*) ctr;
 
 	TeacherStudentSetSubjectActivityTag_FilterWidget *filterWidget = static_cast<TeacherStudentSetSubjectActivityTag_FilterWidget*>(getFilterWidget());
 	
@@ -70,8 +70,8 @@ bool ConstraintActivitiesOccupyMaxDifferentRoomsForm::filterOk(const SpaceConstr
 		
 	for(int i=0; i<c->activitiesIds.count(); i++){
 		int id=c->activitiesIds.at(i);
-		Activity* act=NULL;
-		foreach(Activity* a, gt.rules.activitiesList) {
+		const Activity* act=NULL;
+		foreach(const Activity* a, gt.rules.activitiesList) {
 			if(a->id==id) {
 				act=a;
 				break;

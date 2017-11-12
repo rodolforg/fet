@@ -49,17 +49,17 @@ bool ConstraintActivityEndsStudentsDayForm::filterOk(const TimeConstraint* ctr) 
 	if(ctr->type!=CONSTRAINT_ACTIVITY_ENDS_STUDENTS_DAY)
 		return false;
 		
-	ConstraintActivityEndsStudentsDay* c=(ConstraintActivityEndsStudentsDay*) ctr;
 	
 	const TeacherStudentSetSubjectActivityTag_FilterWidget * filterWidget = static_cast<TeacherStudentSetSubjectActivityTag_FilterWidget*>(getFilterWidget());
 	QString tn=filterWidget->teacher();
 	QString sbn=filterWidget->subject();
 	QString sbtn=filterWidget->activityTag();
 	QString stn=filterWidget->studentsSet();
+	const ConstraintActivityEndsStudentsDay* c=(const ConstraintActivityEndsStudentsDay*) ctr;
 	
 	int id=c->activityId;
-	Activity* act=NULL;
-	foreach(Activity* a, gt.rules.activitiesList) {
+	const Activity* act=NULL;
+	foreach(const Activity* a, gt.rules.activitiesList) {
 		if(a->id==id) {
 			act=a;
 			break;

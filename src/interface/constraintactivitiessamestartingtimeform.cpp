@@ -70,8 +70,8 @@ bool ConstraintActivitiesSameStartingTimeForm::filterOk(const TimeConstraint* ct
 		//bool found=true;
 	
 		int id=c->activitiesId[i];
-		Activity* act=NULL;
-		foreach(Activity* a, gt.rules.activitiesList) {
+		const Activity* act=NULL;
+		foreach(const Activity* a, gt.rules.activitiesList) {
 			if(a->id==id) {
 				act=a;
 				break;
