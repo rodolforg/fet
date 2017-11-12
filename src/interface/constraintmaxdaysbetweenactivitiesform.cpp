@@ -74,43 +74,19 @@ bool ConstraintMaxDaysBetweenActivitiesForm::filterOk(const TimeConstraint* ctr)
 		
 		if(act!=NULL){
 			//teacher
-			if(tn!=""){
-				bool ok2=false;
-				for(QStringList::Iterator it=act->teachersNames.begin(); it!=act->teachersNames.end(); it++)
-					if(*it == tn){
-						ok2=true;
-						break;
-					}
-				if(ok2)
-					foundTeacher=true;
-			}
-			else
+			if(tn.isEmpty() || act->teachersNames.contains(tn))
 				foundTeacher=true;
 
 			//subject
-			if(sbn!="" && sbn!=act->subjectName)
-				;
-			else
+			if(sbn.isEmpty() || sbn==act->subjectName)
 				foundSubject=true;
-		
+
 			//activity tag
-			if(sbtn!="" && !act->activityTagsNames.contains(sbtn))
-				;
-			else
+			if(sbtn.isEmpty() || act->activityTagsNames.contains(sbtn))
 				foundActivityTag=true;
-		
+
 			//students
-			if(stn!=""){
-				bool ok2=false;
-				for(QStringList::Iterator it=act->studentsNames.begin(); it!=act->studentsNames.end(); it++)
-					if(*it == stn){
-						ok2=true;
-						break;
-				}
-				if(ok2)
-					foundStudents=true;
-			}
-			else
+			if(stn.isEmpty() || act->studentsNames.contains(stn))
 				foundStudents=true;
 		}
 	}
