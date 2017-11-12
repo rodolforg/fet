@@ -62,9 +62,12 @@ bool ConstraintActivityPreferredTimeSlotsForm::filterOk(const TimeConstraint* ct
 	
 	int id=c->p_activityId;
 	Activity* act=NULL;
-	foreach(Activity* a, gt.rules.activitiesList)
-		if(a->id==id)
+	foreach(Activity* a, gt.rules.activitiesList) {
+		if(a->id==id) {
 			act=a;
+			break;
+		}
+	}
 
 	found=true;		
 		
