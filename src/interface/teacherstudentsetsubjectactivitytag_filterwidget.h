@@ -38,6 +38,8 @@ public:
 	/// Organize filter items horizontally or vertically
 	void setDirection(QBoxLayout::Direction direction);
 
+	/// Check if given activity matches selected filter parameters
+	bool filterActivity(const Activity *activity) const;
 private:
 	Ui::TeacherStudentSetSubjectActivityTag_FilterWidget *ui;
 

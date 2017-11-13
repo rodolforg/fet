@@ -130,6 +130,34 @@ void TeacherStudentSetSubjectActivityTag_FilterWidget::setDirection(QBoxLayout::
 	((QBoxLayout*)ui->filterGroupBox->layout())->setDirection(direction);
 }
 
+bool TeacherStudentSetSubjectActivityTag_FilterWidget::filterActivity(const Activity* act) const
+{
+	if (act == NULL)
+		return false;
+
+	//teacher
+	QString tn = ui->teachersComboBox->currentText();
+	if(!tn.isEmpty() && !act->teachersNames.contains(tn))
+		return false;
+
+	//subject
+	QString sbn = ui->subjectsComboBox->currentText();
+	if(!sbn.isEmpty() && sbn!=act->subjectName)
+		return false;
+
+	//activity tag
+	QString sbtn = ui->activityTagsComboBox->currentText();
+	if(!sbtn.isEmpty() && !act->activityTagsNames.contains(sbtn))
+		return false;
+
+	//students
+	QString stn = ui->studentsComboBox->currentText();
+	if(!stn.isEmpty() && !act->studentsNames.contains(stn))
+		return false;
+
+	return true;
+}
+
 void TeacherStudentSetSubjectActivityTag_FilterWidget::populateTeachers(const Rules &rules)
 {
 	ui->teachersComboBox->addItem("");

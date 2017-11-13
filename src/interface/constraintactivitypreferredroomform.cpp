@@ -53,13 +53,6 @@ bool ConstraintActivityPreferredRoomForm::filterOk(const SpaceConstraint* ctr) c
 		return false;
 		
 	const ConstraintActivityPreferredRoom* c=(const ConstraintActivityPreferredRoom*) ctr;
-	
-	const TeacherStudentSetSubjectActivityTag_FilterWidget * filterWidget = static_cast<TeacherStudentSetSubjectActivityTag_FilterWidget*>(getFilterWidget());
-	QString tn=filterWidget->teacher();
-	QString sbn=filterWidget->subject();
-	QString sbtn=filterWidget->activityTag();
-	QString stn=filterWidget->studentsSet();
-		
 	int id=c->activityId;
 	const Activity* act=NULL;
 	foreach(const Activity* a, gt.rules.activitiesList) {
@@ -68,27 +61,10 @@ bool ConstraintActivityPreferredRoomForm::filterOk(const SpaceConstraint* ctr) c
 			break;
 		}
 	}
+	assert(act != NULL);
 
-	bool found=true;
-		
-	if(act!=NULL){
-		//teacher
-		if(!tn.isEmpty() && !act->teachersNames.contains(tn))
-			found=false;
-
-		//subject
-		if(sbn!="" && sbn!=act->subjectName)
-			found=false;
-	
-		//activity tag
-		if(sbtn!="" && !act->activityTagsNames.contains(sbtn))
-			found=false;
-	
-		//students
-		if(stn!="" && !act->studentsNames.contains(stn))
-			found=false;
-	}
-	
+	const TeacherStudentSetSubjectActivityTag_FilterWidget * filterWidget = static_cast<TeacherStudentSetSubjectActivityTag_FilterWidget*>(getFilterWidget());
+	bool found = filterWidget->filterActivity(act);
 	if(!found)
 		return false;
 	

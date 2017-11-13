@@ -49,14 +49,7 @@ bool ConstraintActivityEndsStudentsDayForm::filterOk(const TimeConstraint* ctr) 
 	if(ctr->type!=CONSTRAINT_ACTIVITY_ENDS_STUDENTS_DAY)
 		return false;
 		
-	
-	const TeacherStudentSetSubjectActivityTag_FilterWidget * filterWidget = static_cast<TeacherStudentSetSubjectActivityTag_FilterWidget*>(getFilterWidget());
-	QString tn=filterWidget->teacher();
-	QString sbn=filterWidget->subject();
-	QString sbtn=filterWidget->activityTag();
-	QString stn=filterWidget->studentsSet();
 	const ConstraintActivityEndsStudentsDay* c=(const ConstraintActivityEndsStudentsDay*) ctr;
-	
 	int id=c->activityId;
 	const Activity* act=NULL;
 	foreach(const Activity* a, gt.rules.activitiesList) {
@@ -65,31 +58,10 @@ bool ConstraintActivityEndsStudentsDayForm::filterOk(const TimeConstraint* ctr) 
 			break;
 		}
 	}
+	assert(act != NULL);
 
-	bool found=true;
-
-	if(act!=NULL){
-		//teacher
-		if(!tn.isEmpty() && !act->teachersNames.contains(tn))
-			found=false;
-
-		//subject
-		if(sbn!="" && sbn!=act->subjectName)
-			found=false;
-
-		//activity tag
-		if(sbtn!="" && !act->activityTagsNames.contains(sbtn))
-			found=false;
-
-		//students
-		if(stn!="" && !act->studentsNames.contains(stn))
-			found=false;
-	}
-	
-	if(found)
-		return true;
-
-	return false;
+	const TeacherStudentSetSubjectActivityTag_FilterWidget * filterWidget = static_cast<TeacherStudentSetSubjectActivityTag_FilterWidget*>(getFilterWidget());
+	return filterWidget->filterActivity(act);
 }
 
 QDialog * ConstraintActivityEndsStudentsDayForm::createAddDialog()
