@@ -158,6 +158,39 @@ bool TeacherStudentSetSubjectActivityTag_FilterWidget::filterActivity(const Acti
 	return true;
 }
 
+bool TeacherStudentSetSubjectActivityTag_FilterWidget::filterActivitySet(const QSet<const Activity*>& activities) const
+{
+	bool foundTeacher=false, foundStudents=false, foundSubject=false, foundActivityTag=false;
+	const QString tn = ui->teachersComboBox->currentText();
+	const QString sbn = ui->subjectsComboBox->currentText();
+	const QString sbtn = ui->activityTagsComboBox->currentText();
+	const QString stn = ui->studentsComboBox->currentText();
+
+	if (tn.isEmpty() && sbn.isEmpty() && sbtn.isEmpty() && stn.isEmpty())
+		return true;
+
+	for (QSet<const Activity*>::ConstIterator it = activities.constBegin(); it != activities.constEnd(); ++it) {
+		const Activity *act = *it;
+
+		//teacher
+		if(tn.isEmpty() || act->teachersNames.contains(tn))
+			foundTeacher = true;
+
+		//subject
+		if(sbn.isEmpty() || sbn==act->subjectName)
+			foundSubject = true;
+
+		//activity tag
+		if(sbtn.isEmpty() || act->activityTagsNames.contains(sbtn))
+			foundActivityTag = true;
+
+		//students
+		if(stn.isEmpty() || act->studentsNames.contains(stn))
+			foundStudents = true;
+	}
+	return foundTeacher && foundSubject && foundActivityTag && foundStudents;
+}
+
 void TeacherStudentSetSubjectActivityTag_FilterWidget::populateTeachers(const Rules &rules)
 {
 	ui->teachersComboBox->addItem("");

@@ -40,6 +40,10 @@ public:
 
 	/// Check if given activity matches selected filter parameters
 	bool filterActivity(const Activity *activity) const;
+	/// Check if given activity set matches selected filter parameters
+	/// It does not check whether every activity matches.
+	bool filterActivitySet(const QSet<const Activity *> &activities) const;
+
 private:
 	Ui::TeacherStudentSetSubjectActivityTag_FilterWidget *ui;
 

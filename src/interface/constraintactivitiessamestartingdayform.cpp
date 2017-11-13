@@ -61,12 +61,12 @@ bool ConstraintActivitiesSameStartingDayForm::filterOk(const TimeConstraint* ctr
 
 	if(tn=="" && sbn=="" && sbtn=="" && stn=="")
 		return true;
-	
+
 	bool foundTeacher=false, foundStudents=false, foundSubject=false, foundActivityTag=false;
-		
+
 	for(int i=0; i<c->n_activities; i++){
 		//bool found=true;
-	
+
 		int id=c->activitiesId[i];
 		const Activity* act=NULL;
 		foreach(const Activity* a, gt.rules.activitiesList) {
@@ -75,7 +75,7 @@ bool ConstraintActivitiesSameStartingDayForm::filterOk(const TimeConstraint* ctr
 				break;
 			}
 		}
-		
+
 		if(act!=NULL){
 			//teacher
 			if(tn.isEmpty() || act->teachersNames.contains(tn))
@@ -94,7 +94,7 @@ bool ConstraintActivitiesSameStartingDayForm::filterOk(const TimeConstraint* ctr
 				foundStudents=true;
 		}
 	}
-	
+
 	if(foundTeacher && foundStudents && foundSubject && foundActivityTag)
 		return true;
 	else

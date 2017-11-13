@@ -52,50 +52,19 @@ bool ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::filterOk(const 
 		return false;
 
 	const ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots* c=(const ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots*) ctr;
-	const TeacherStudentSetSubjectActivityTag_FilterWidget * filterWidget = static_cast<TeacherStudentSetSubjectActivityTag_FilterWidget*>(getFilterWidget());
-	QString tn=filterWidget->teacher();
-	QString sbn=filterWidget->subject();
-	QString sbtn=filterWidget->activityTag();
-	QString stn=filterWidget->studentsSet();
-	
-	if(tn=="" && sbn=="" && sbtn=="" && stn=="")
-		return true;
-	
-	bool foundTeacher=false, foundStudents=false, foundSubject=false, foundActivityTag=false;
-		
-	for(int i=0; i<c->activitiesIds.count(); i++){
-		int id=c->activitiesIds.at(i);
-		const Activity* act=NULL;
+
+	QSet<const Activity *> activities;
+	foreach(int id, c->activitiesIds){
 		foreach(const Activity* a, gt.rules.activitiesList) {
 			if(a->id==id) {
-				act=a;
+				activities << a;
 				break;
 			}
 		}
-		
-		if(act!=NULL){
-			//teacher
-			if(tn.isEmpty() || act->teachersNames.contains(tn))
-				foundTeacher=true;
-
-			//subject
-			if(sbn.isEmpty() || sbn==act->subjectName)
-				foundSubject=true;
-		
-			//activity tag
-			if(sbtn.isEmpty() || act->activityTagsNames.contains(sbtn))
-				foundActivityTag=true;
-		
-			//students
-			if(stn.isEmpty() || act->studentsNames.contains(stn))
-				foundStudents=true;
-		}
 	}
-	
-	if(foundTeacher && foundStudents && foundSubject && foundActivityTag)
-		return true;
-	else
-		return false;
+
+	TeacherStudentSetSubjectActivityTag_FilterWidget *filter_widget = static_cast<TeacherStudentSetSubjectActivityTag_FilterWidget*>(getFilterWidget());
+	return filter_widget->filterActivitySet(activities);
 }
 
 QDialog * ConstraintActivitiesMaxSimultaneousInSelectedTimeSlotsForm::createAddDialog()
