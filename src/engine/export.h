@@ -27,19 +27,28 @@ File export.h
 
 #include "timetable.h"
 
+#ifndef FET_COMMAND_LINE
 #include <QDialog>
 #include <QWidget>
-
 #include <QMessageBox>
+#endif
 
 class Export: public QObject{
 	Q_OBJECT
 
 public:
+#ifndef FET_COMMAND_LINE
 	Export(const Timetable &gt, const Solution &solution);
+#else
+	Export(const Timetable &gt);
+#endif
 	~Export();
 
+#ifndef FET_COMMAND_LINE
 	void exportCSV(QWidget* parent);
+#else
+	void exportCSV(Solution* bestOrHighest, Solution* current=NULL);
+#endif
 
 	QString getTextquote() const;
 	void setTextquote(const QString &value);
@@ -57,7 +66,9 @@ public:
 
 private:
 	const Timetable &gt;
+#ifndef FET_COMMAND_LINE
 	const Solution &solution;
+#endif
 
 	QString directoryCSV;
 
@@ -68,13 +79,17 @@ private:
 
 	QString lastWarnings;
 
+#ifndef FET_COMMAND_LINE
 	static bool okToWrite(QWidget* parent, const QString& file, QMessageBox::StandardButton& msgBoxButton);
-
+#else
+	static bool okToWrite(const QString& file);
+#endif
 	static bool checkSetSeparator(const QString& str, const QString &setSeparator);
 	static QString protectCSV(const QString& str);
 
-	bool isActivityNotManualyEdited(const int activityIndex, bool& diffTeachers, bool& diffSubject, bool& diffActivityTags, bool& diffStudents, bool& diffCompNStud, bool& diffNStud, bool& diffActive);
+	bool isActivityNotManualyEdited(int activityIndex, bool& diffTeachers, bool& diffSubject, bool& diffActivityTags, bool& diffStudents, bool& diffCompNStud, bool& diffNStud, bool& diffActive);
 
+#ifndef FET_COMMAND_LINE
 	static bool selectSeparatorAndTextquote(QWidget* parent, QDialog* &newParent, QString& textquote, QString& fieldSeparator, bool& head);
 
 	bool exportCSVActivities(QWidget* parent, QMessageBox::StandardButton& msgBoxButton);
@@ -85,15 +100,27 @@ private:
 	bool exportCSVTeachers(QWidget* parent, QMessageBox::StandardButton& msgBoxButton);
 	bool exportCSVStudents(QWidget* parent, QMessageBox::StandardButton& msgBoxButton);
 	bool exportCSVTimetable(QWidget* parent, QMessageBox::StandardButton& msgBoxButton);
+#else
+	bool exportCSVActivities();
+	bool exportCSVActivitiesStatistic();
+	bool exportCSVActivityTags();
+	bool exportCSVRoomsAndBuildings();
+	bool exportCSVSubjects();
+	bool exportCSVTeachers();
+	bool exportCSVStudents();
+	bool exportCSVTimetable(const Solution& solution);
+#endif
 	QString getFilePath(QString suffix);
 };
 
+#ifndef FET_COMMAND_LINE
 class LastWarningsDialogE: public QDialog{
 	Q_OBJECT
 	
 public:				//can I do that private too?
-	LastWarningsDialogE(QWidget *parent, QString lastWarning);
+	LastWarningsDialogE(QWidget *parent, const QString& lastWarning);
 	~LastWarningsDialogE();
 };
+#endif
 
 #endif

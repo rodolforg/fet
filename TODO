@@ -4487,29 +4487,7 @@ maybe we can add a check for this:
 
 teacher max hours per day is lower than activity duration.
 
-269---------------------------------------------------------
-From Matthias Söllner (also from m, on forum):
-
-Matthias Söllner: Is there a possibility to create the csv-Export Files
-over the command line?
-
-So for example if I have a ready calculated output directory of a
-timetable, I want to generate the csv-File without gui.
-
-Volker Dirr: If we do that, we need to care about:
-a) warnings at the end (currently there is a messagebox)
-b) questions at the beginning (for text and field separator. I think we
-should use the default ones without asking.)
-
-Liviu Lalescu: Maybe the best would be to add a command-line parameter
-to force generation of CSV timetables after a successful generation,
-and maybe add parameters for text and field separator.
-
-Also suggested by m, on forum:
-
-(https://lalescu.ro/liviu/fet/forum/index.php?topic=3512.0)
-
-Please add option to export data from command line.
+269-------DONE since FET-5.34.0-(26 October 2017)-----------
 
 270---------------------------------------------------------
 From auriolar (on forum):
