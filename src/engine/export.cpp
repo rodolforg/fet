@@ -316,12 +316,12 @@ void Export::exportCSV(Solution* bestOrHighest, Solution* current){
 }
 #endif
 
-QString Export::getTextquote() const
+QString Export::getTextQuote() const
 {
 	return textquote;
 }
 
-void Export::setTextquote(const QString &value)
+void Export::setTextQuote(const QString &value)
 {
 	textquote = value;
 }

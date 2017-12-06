@@ -50,8 +50,8 @@ public:
 	void exportCSV(Solution* bestOrHighest, Solution* current=NULL);
 #endif
 
-	QString getTextquote() const;
-	void setTextquote(const QString &value);
+	QString getTextQuote() const;
+	void setTextQuote(const QString &value);
 
 	QString getFieldSeparator() const;
 	void setFieldSeparator(const QString &value);
