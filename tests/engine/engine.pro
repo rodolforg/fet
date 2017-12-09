@@ -7,4 +7,5 @@ SUBDIRS += \
     timeconstraints/ConstraintStudentsMinContinuousGapInInterval \
     ParadoxMinDaysVsConsecutive \
     ParadoxMinDaysVsTwoGrouped \
-    ParadoxMinDaysVsThreeGrouped
+    ParadoxMinDaysVsThreeGrouped \
+    ParadoxMinDaysVsSameDay

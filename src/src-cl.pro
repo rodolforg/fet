@@ -29,6 +29,7 @@ SOURCES += \
 	engine/constraints/paradoxmindaysvsconsecutive.cpp \
 	engine/constraints/paradoxmindaysvstwogrouped.cpp \
 	engine/constraints/paradoxmindaysvsthreegrouped.cpp \
+	engine/constraints/paradoxmindaysvssameday.cpp \
 	\
 	interface/fet.cpp \
 	interface/longtextmessagebox.cpp \
