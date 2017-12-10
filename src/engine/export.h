@@ -30,7 +30,6 @@ File export.h
 #ifndef FET_COMMAND_LINE
 #include <QDialog>
 #include <QWidget>
-#include <QMessageBox>
 #endif
 
 class Export: public QObject{
@@ -64,6 +63,15 @@ public:
 	QString getDirectoryCSV() const;
 	void setDirectoryCSV(const QString &value);
 
+	enum OverwriteOptions {
+		OVERWRITE_ALL,
+		OVERWRITE_NONE,
+		OVERWRITE_PROMPT
+	};
+
+	OverwriteOptions getOverwrite() const;
+	void setOverwrite(const OverwriteOptions& value);
+
 private:
 	const Timetable &gt;
 #ifndef FET_COMMAND_LINE
@@ -76,13 +84,14 @@ private:
 	QString fieldSeparator;
 	bool header;
 	QString setSeparator;
+	OverwriteOptions overwrite;
 
 	QString lastWarnings;
 
 #ifndef FET_COMMAND_LINE
-	static bool okToWrite(QWidget* parent, const QString& file, QMessageBox::StandardButton& msgBoxButton);
+	bool okToWrite(QWidget* parent, const QString& file);
 #else
-	static bool okToWrite(const QString& file);
+	bool okToWrite(const QString& file);
 #endif
 	static bool checkSetSeparator(const QString& str, const QString &setSeparator);
 	static QString protectCSV(const QString& str);
@@ -92,14 +101,14 @@ private:
 #ifndef FET_COMMAND_LINE
 	static bool selectSeparatorAndTextquote(QWidget* parent, QDialog* &newParent, QString& textquote, QString& fieldSeparator, bool& head);
 
-	bool exportCSVActivities(QWidget* parent, QMessageBox::StandardButton& msgBoxButton);
-	bool exportCSVActivitiesStatistic(QWidget* parent, QMessageBox::StandardButton& msgBoxButton);
-	bool exportCSVActivityTags(QWidget* parent, QMessageBox::StandardButton& msgBoxButton);
-	bool exportCSVRoomsAndBuildings(QWidget* parent, QMessageBox::StandardButton& msgBoxButton);
-	bool exportCSVSubjects(QWidget* parent,QMessageBox::StandardButton& msgBoxButton);
-	bool exportCSVTeachers(QWidget* parent, QMessageBox::StandardButton& msgBoxButton);
-	bool exportCSVStudents(QWidget* parent, QMessageBox::StandardButton& msgBoxButton);
-	bool exportCSVTimetable(QWidget* parent, QMessageBox::StandardButton& msgBoxButton);
+	bool exportCSVActivities(QWidget* parent);
+	bool exportCSVActivitiesStatistic(QWidget* parent);
+	bool exportCSVActivityTags(QWidget* parent);
+	bool exportCSVRoomsAndBuildings(QWidget* parent);
+	bool exportCSVSubjects(QWidget* parent);
+	bool exportCSVTeachers(QWidget* parent);
+	bool exportCSVStudents(QWidget* parent);
+	bool exportCSVTimetable(QWidget* parent);
 #else
 	bool exportCSVActivities();
 	bool exportCSVActivitiesStatistic();

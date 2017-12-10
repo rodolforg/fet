@@ -129,7 +129,6 @@ QApplication* pqapplication=NULL;
 
 #ifdef FET_COMMAND_LINE
 #include "export.h"
-extern bool EXPORT_ALLOW_OVERWRITE;
 #endif
 
 //for command line version, if the user stops using a signal
@@ -838,7 +837,6 @@ int main(int argc, char **argv)
 		
 		SHOW_WARNING_FOR_GROUP_ACTIVITIES_IN_INITIAL_ORDER=true;
 		
-		EXPORT_ALLOW_OVERWRITE=false;
 		bool EXPORT_CSV=false;
 		Export csv_export(gt);
 
@@ -993,7 +991,7 @@ int main(int argc, char **argv)
 			}
 			else if(s.left(15)=="--overwritecsv="){
 				if(s.right(4)=="true")
-					EXPORT_ALLOW_OVERWRITE=true;
+					csv_export.setOverwrite(Export::OVERWRITE_ALL);
 			}
 			else if(s.left(24)=="--firstlineisheadingcsv="){
 				if(s.right(5)=="false")
