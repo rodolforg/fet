@@ -36292,6 +36292,24 @@ Modifica i dati e prova di nuovo</translation>
         <translation>Informazioni</translation>
     </message>
     <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.34.1 (December 2017).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET homepage: &lt;/span&gt;&lt;a href=&quot;https://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;https://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="90"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -37010,24 +37028,6 @@ p, li { white-space: pre-wrap; }
         <location filename="../src/interface/helpaboutform_template.ui" line="69"/>
         <source>Authors</source>
         <translation>Autori</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.34.0 (October 2017).&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET homepage: &lt;/span&gt;&lt;a href=&quot;https://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;https://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="303"/>
@@ -49526,313 +49526,313 @@ not added - must be a duplicate</source>
 <context>
     <name>SplitYearForm</name>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="123"/>
+        <location filename="../src/interface/splityearform.cpp" line="131"/>
         <source>Splitting year: %1</source>
         <translation>Suddivisione anno: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="195"/>
-        <location filename="../src/interface/splityearform.cpp" line="229"/>
-        <location filename="../src/interface/splityearform.cpp" line="304"/>
-        <location filename="../src/interface/splityearform.cpp" line="312"/>
-        <location filename="../src/interface/splityearform.cpp" line="386"/>
+        <location filename="../src/interface/splityearform.cpp" line="203"/>
+        <location filename="../src/interface/splityearform.cpp" line="237"/>
+        <location filename="../src/interface/splityearform.cpp" line="382"/>
         <location filename="../src/interface/splityearform.cpp" line="390"/>
-        <location filename="../src/interface/splityearform.cpp" line="417"/>
-        <location filename="../src/interface/splityearform.cpp" line="437"/>
-        <location filename="../src/interface/splityearform.cpp" line="657"/>
+        <location filename="../src/interface/splityearform.cpp" line="464"/>
+        <location filename="../src/interface/splityearform.cpp" line="468"/>
+        <location filename="../src/interface/splityearform.cpp" line="495"/>
+        <location filename="../src/interface/splityearform.cpp" line="515"/>
+        <location filename="../src/interface/splityearform.cpp" line="735"/>
         <source>FET information</source>
         <translation>FET - Informazione</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="114"/>
-        <location filename="../src/interface/splityearform.cpp" line="289"/>
-        <location filename="../src/interface/splityearform.cpp" line="338"/>
-        <location filename="../src/interface/splityearform.cpp" line="544"/>
+        <location filename="../src/interface/splityearform.cpp" line="122"/>
+        <location filename="../src/interface/splityearform.cpp" line="367"/>
+        <location filename="../src/interface/splityearform.cpp" line="416"/>
+        <location filename="../src/interface/splityearform.cpp" line="622"/>
         <source>FET warning</source>
         <translation>FET - Avvertenza</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="114"/>
+        <location filename="../src/interface/splityearform.cpp" line="122"/>
         <source>You have met a minor bug in FET, please report it. FET expected to read from settings %1 divisions in category %2, but read %3. FET will now continue operation, nothing will be lost.</source>
         <translation>Avete appena riscontrato un bug minore in FET. Siete pregati di avvisare l&apos;autore. FET si aspettava di leggere dalle impostazioni %1 divisioni della categoria %2 ma ne ha lette %3. FET si avvia a proseguire, nulla sarà perso.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="133"/>
+        <location filename="../src/interface/splityearform.cpp" line="141"/>
         <source>Max subgroups per year: %1</source>
         <translation>Numero massimo di sottogruppi per anno: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="134"/>
+        <location filename="../src/interface/splityearform.cpp" line="142"/>
         <source>Max total subgroups: %1</source>
         <translation>Numero massimo di sottogruppi in totale: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="189"/>
+        <location filename="../src/interface/splityearform.cpp" line="197"/>
         <source>FET - Add division to category %1</source>
         <translation>FET - Aggiungi una suddivisione della categoria %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="190"/>
+        <location filename="../src/interface/splityearform.cpp" line="198"/>
         <source>Please input division name:</source>
         <translation>Inserisci il nome della suddivisione:</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="195"/>
-        <location filename="../src/interface/splityearform.cpp" line="229"/>
+        <location filename="../src/interface/splityearform.cpp" line="203"/>
+        <location filename="../src/interface/splityearform.cpp" line="237"/>
         <source>Duplicates not allowed!</source>
         <translation>Duplicati non ammessi!</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="222"/>
+        <location filename="../src/interface/splityearform.cpp" line="230"/>
         <source>FET - Modify division to category %1</source>
         <translation>FET - Modifica la suddivisione della categoria %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="223"/>
+        <location filename="../src/interface/splityearform.cpp" line="231"/>
         <source>Please input the new division name:</source>
         <translation>Inserisci il nuovo nome della suddivisione:</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="246"/>
-        <location filename="../src/interface/splityearform.cpp" line="274"/>
-        <location filename="../src/interface/splityearform.cpp" line="538"/>
-        <location filename="../src/interface/splityearform.cpp" line="783"/>
+        <location filename="../src/interface/splityearform.cpp" line="324"/>
+        <location filename="../src/interface/splityearform.cpp" line="352"/>
+        <location filename="../src/interface/splityearform.cpp" line="616"/>
+        <location filename="../src/interface/splityearform.cpp" line="861"/>
         <source>FET confirmation</source>
         <translation>FET - Conferma</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="247"/>
+        <location filename="../src/interface/splityearform.cpp" line="325"/>
         <source>Do you want to remove division %1 from category %2?</source>
         <translation>Vuoi eliminare la suddivisione %1 dalla categoria %2?</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="275"/>
+        <location filename="../src/interface/splityearform.cpp" line="353"/>
         <source>Do you really want to remove all divisions from category %1?</source>
         <translation>Vuoi eliminare tutte le suddivisioni della categoria %1?</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="492"/>
+        <location filename="../src/interface/splityearform.cpp" line="570"/>
         <source>WARNING: There are groups and subgroups which will no longer be available and which will be removed, along with the associated activities and constraints. Are you sure? See the list below.</source>
         <translation>ATTENZIONE: Ci sono gruppi e sottogruppi, che non saranno più disponibili e che saranno rimossi, insieme alle attività connesse e vincoli. Sei sicuro? Vedi l&apos;elenco qui sotto.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="495"/>
+        <location filename="../src/interface/splityearform.cpp" line="573"/>
         <source>WARNING: There are groups which will no longer be available and which will be removed, along with the associated activities and constraints. Are you sure? See the list below.</source>
         <translation>ATTENZIONE: Ci sono gruppi che non saranno più disponibili e che saranno rimossi, insieme alle attività connesse e vincoli. Sei sicuro? Vedi l&apos;elenco qui sotto.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="498"/>
+        <location filename="../src/interface/splityearform.cpp" line="576"/>
         <source>WARNING: There are subgroups which will no longer be available and which will be removed, along with the associated activities and constraints. Are you sure? See the list below.</source>
         <translation>ATTENZIONE: Ci sono sottogruppi che non saranno più disponibili e che saranno rimossi, insieme alle attività connesse e vincoli. Sei sicuro? Vedi l&apos;elenco qui sotto.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="504"/>
+        <location filename="../src/interface/splityearform.cpp" line="582"/>
         <source>Notes:</source>
         <translation>Note:</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="506"/>
+        <location filename="../src/interface/splityearform.cpp" line="584"/>
         <source>Note:</source>
         <translation>Nota:</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="509"/>
+        <location filename="../src/interface/splityearform.cpp" line="587"/>
         <source>To keep a group, you need to keep the corresponding division name and use the same separator(s) character(s).</source>
         <translation>Per mantenere un gruppo è necessario mantenere il corrispondente nome della divisione e utilizzare come separatore lo(gli) stesso(i) carattere(i).</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="516"/>
+        <location filename="../src/interface/splityearform.cpp" line="594"/>
         <source>Read the divide year dialog Help for details.</source>
         <translation>Per ulteriori dettagli leggi l&apos;Aiuto della finestra di suddivisione dell&apos;anno.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="524"/>
+        <location filename="../src/interface/splityearform.cpp" line="602"/>
         <source>The following groups will no longer be available:</source>
         <translation>I seguenti gruppi non saranno più disponibili:</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="532"/>
+        <location filename="../src/interface/splityearform.cpp" line="610"/>
         <source>The following subgroups will no longer be available:</source>
         <translation>I seguenti sottogruppi non saranno più disponibili:</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="647"/>
+        <location filename="../src/interface/splityearform.cpp" line="725"/>
         <source>There were removed %1 &apos;group activities in the initial order&apos; items.</source>
         <translation>Sono stati rimossi %1 elementi di &apos;attività raggruppate nell&apos;ordine iniziale&apos;.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="304"/>
+        <location filename="../src/interface/splityearform.cpp" line="382"/>
         <source>The current number of subgroups for this year is too large (the maximum allowed value is %1, but computing up to category %2 gives %3 subgroups)</source>
         <translation>Il numero corrente dei sottogruppi per questo anno è troppo grande (il valore massimo ammesso è %1, ma il calcolo per comprendere la categoria %2 porta ad avere %3 sottogruppi)</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="312"/>
+        <location filename="../src/interface/splityearform.cpp" line="390"/>
         <source>Each category must contain at least one division</source>
         <translation>Ogni categoria deve contenere almeno una suddivisione</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="342"/>
+        <location filename="../src/interface/splityearform.cpp" line="420"/>
         <source>Are you sure you want to continue?</source>
         <translation>Sei sicuro di voler continuare?</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="386"/>
+        <location filename="../src/interface/splityearform.cpp" line="464"/>
         <source>Duplicate names not allowed</source>
         <translation>Nomi doppi non consentiti</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="680"/>
+        <location filename="../src/interface/splityearform.cpp" line="758"/>
         <source>You might first want to consider if dividing a year is necessary and on what options. Please remember that FET can handle activities with multiple teachers/students sets. If you have say students set 9a, which is split into 2 parts: English (teacher TE) and French (teacher TF), and language activities must be simultaneous, then you might not want to divide according to this category, but add more larger activities, with students set 9a and teachers TE+TF. The only drawback is that each activity can take place only in one room in FET, so you might need to find a way to overcome that.</source>
         <translation>Prima di tutto considera se dividere l&apos;anno è veramente necessario e in base a quali criteri. Tieni presente che FET può gestire attività composte da più insegnanti e più gruppi di studenti. Prendi ad esempio la lingua straniera e la classe 4A divisa in 2 parti: inglese (insegnante Jhon) e francese (insegnante Silvie). Le lezioni di lingua straniera dovranno cadere contemporaneamente, quindi potresti non dividere la classe in base alla lingua straniera, ma aggiungere una attività più ampia che comprenda la classe 4A e gli insegnanti Jhon e Silvie. L&apos;unico svantaggio è che ogni attività può svolgersi solo in una aula con FET, per cui potrebbe essere necessario trovare un modo per superare questo limite.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="688"/>
+        <location filename="../src/interface/splityearform.cpp" line="766"/>
         <source>Please choose a number of categories and in each category the number of divisions. You can choose for instance 3 categories, 5 divisions for the first category: a, b, c, d and e, 2 divisions for the second category: boys and girls, and 3 divisions for the third: English, German and French.</source>
         <translation>Si prega di scegliere un numero di categorie e in ogni categoria il numero di sezioni. È possibile scegliere per esempio 3 categorie, 5 sezioni per la prima categoria (a, b, c, d ed e), 2 sezioni per la seconda categoria (ragazzi e ragazze), e 3 sezioni per la terza (inglese, tedesco e francese).</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="702"/>
+        <location filename="../src/interface/splityearform.cpp" line="780"/>
         <source>If your number of subgroups is reasonable, probably you need not worry about empty subgroups (regarding speed of generation). But more tests need to be done. You just need to know that for the moment the maximum total number of subgroups is %1 (which can be changed, but nobody needed larger values)</source>
         <translation>Se il numero di sottogruppi è ragionevole, probabilmente non è necessario preoccuparsi di sottogruppi (per quanto riguarda la velocità di generazione). Ma occorre fare altri test. Hai solo bisogno di sapere che per il momento il numero totale massimo di sottogruppi è %1 (che può essere modificato, ma nessuno ha mai avuto bisogno di valori maggiori)</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="727"/>
+        <location filename="../src/interface/splityearform.cpp" line="805"/>
         <source>If you have many subgroups and you don&apos;t explicitly use them, it is recommended to use the three global settings: hide subgroups in combo boxes, hide subgroups in activity planning, and do not write subgroups timetables on hard disk.</source>
         <translation>Se si dispone di molti sottogruppi e non si usano esplicitamente, si consiglia di utilizzare le tre impostazioni globali: nascondi i sottogruppi in caselle combinate, nascondi sottogruppi nel pianificatore delle attività e non scrivere gli orari dei sottogruppi su disco rigido.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="734"/>
+        <location filename="../src/interface/splityearform.cpp" line="812"/>
         <source>(Also the conflicts timetable might take long to write, if the file is big.)</source>
         <translation>(Anche la lista dei conflitti orari può richiedere tempo per essere scritta, se il fle è grande.)</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="736"/>
+        <location filename="../src/interface/splityearform.cpp" line="814"/>
         <source>After that, you can re-enable writing the students timetables on the disk, and re-generate.</source>
         <translation>Dopo di ciò, puoi riabilitare la scrittura dell&apos;orario degli studenti su disco e rigenerare.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="739"/>
+        <location filename="../src/interface/splityearform.cpp" line="817"/>
         <source>About using a large number of categories, divisions per category and subgroups: it is highly recommended to keep these to a minimum, especially the number of categories, by using any kind of tricks. Otherwise the timetable might become impossible (taking too much time to generate).</source>
         <translation>Informazioni sull&apos;uso di un gran numero di categorie, divisioni per categoria e sottogruppi: si raccomanda vivamente di mantenere questi al minimo, in particolare il numero di categorie, utilizzando qualsiasi tipo di trucco. In caso contrario, l&apos;orario potrebbe diventare impossibile (richiedendo troppo tempo per l&apos;elaborazione) .</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="784"/>
+        <location filename="../src/interface/splityearform.cpp" line="862"/>
         <source>Do you really want to reset the form values to defaults (empty)?</source>
         <translation>Vuoi veramente portare i valori del modulo allo stato iniziale (vuoto)?</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="806"/>
+        <location filename="../src/interface/splityearform.cpp" line="884"/>
         <source>Subgroups: %1</source>
         <comment>%1 is the number of subgroups</comment>
         <translation>Sottogruppi: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="339"/>
+        <location filename="../src/interface/splityearform.cpp" line="417"/>
         <source>Please note that the current configuration will lead you to %1 total number of subgroups. The file format supports any number of students sets, but for the timetable generation to be possible the maximum allowed total number of subgroups is %2.</source>
         <translation>Si prega di notare che la configurazione attuale vi condurrà al numero totale di %1 sottogruppi. Il formato del file supporta qualsiasi numero di insieme di studenti, ma perché la generazione dell&apos;orario sia possibile, il numero totale massimo consentito di sottogruppi è %2.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="290"/>
+        <location filename="../src/interface/splityearform.cpp" line="368"/>
         <source>You want to divide the year by %1 categories. The recommended number of categories is 2, 3 or maximum 4 (to ensure the timetable generation speed and feasibility). Are you sure?</source>
         <translation>Vuoi dividere l&apos; anno in %1 categorie. Il numero consigliato di categorie è 2, 3 o al massimo 4 (per garantire la velocità di generazione dell&apos;orario e la fattibilità). Sei sicuro?</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="390"/>
+        <location filename="../src/interface/splityearform.cpp" line="468"/>
         <source>Empty names not allowed</source>
         <translation>Nomi vuoti non ammessi</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="417"/>
+        <location filename="../src/interface/splityearform.cpp" line="495"/>
         <source>Cannot add group %1, because a set with the same name exists. Please choose another name or remove the old set</source>
         <translation>Impossibile aggiungere il gruppo %1 , in quanto esiste un set con lo stesso nome. Scegliere un altro nome o rimuovere il vecchio set</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="437"/>
+        <location filename="../src/interface/splityearform.cpp" line="515"/>
         <source>Cannot add subgroup %1, because a set with the same name exists. Please choose another name or remove the old set</source>
         <translation>Impossibile aggiungere il sottogruppo %1 , in quanto esiste un set con lo stesso nome . Scegliere un altro nome o rimuovere il vecchio set</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="513"/>
+        <location filename="../src/interface/splityearform.cpp" line="591"/>
         <source>Probably you can safely ignore the warning about the removal of the subgroups.</source>
         <translation>Probabilmente puoi ignorare tranquillamente l&apos;avviso circa la rimozione dei sottogruppi.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="539"/>
+        <location filename="../src/interface/splityearform.cpp" line="617"/>
         <source>Yes</source>
         <translation>Si</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="539"/>
+        <location filename="../src/interface/splityearform.cpp" line="617"/>
         <source>No</source>
         <translation>No</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="544"/>
+        <location filename="../src/interface/splityearform.cpp" line="622"/>
         <source>Year %1 will be split again. All groups and subgroups of this year which will no longer exist (listed before) and the associated activities and constraints will be removed. Are you absolutely sure?</source>
         <translation>L&apos;anno %1 verrà diviso di nuovo. Tutti i gruppi e sottogruppi di quest&apos;anno che cesseranno di esistere (come elencati in precedenza) e le attività connesse ed i vincoli saranno rimossi. Sei assolutamente sicuro?</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="641"/>
+        <location filename="../src/interface/splityearform.cpp" line="719"/>
         <source>There were removed %1 activities, %2 time constraints and %3 space constraints.</source>
         <translation>Sono stati rimossi %1 attività, %2 vincoli di tempo e %3 vincoli di spazio.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="657"/>
+        <location filename="../src/interface/splityearform.cpp" line="735"/>
         <source>Split of the year complete, please check the groups and subgroups of the year to make sure that everything is OK.</source>
         <translation>Divisione dell&apos;anno completata. Controlla i gruppi e i sottogruppi dell&apos;anno per essere sicuro che tutto sia Ok.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="708"/>
+        <location filename="../src/interface/splityearform.cpp" line="786"/>
         <source>Please note that the dialog here will keep the last configuration of the last divided year, it will not remember the values for a specific year you need to modify.</source>
         <translation>Si prega di notare che questa finestra di dialogo manterrà l&apos;ultima configurazione dell&apos;ultimo anno diviso; non ricorderà i valori per un determinato anno che è necessario modificare.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="711"/>
+        <location filename="../src/interface/splityearform.cpp" line="789"/>
         <source>If you intend to divide again a year by categories and you want to keep (the majority of) the existing groups in this year, you will need to use the exact same separator character(s) for dividing this year as you used when previously dividing this year, and the same division names (any old division which is no longer entered means a group which will be removed from this year).</source>
         <translation>Se hai intenzione di dividere ancora un anno per categorie e desideri mantenere (la maggior parte de) i gruppi esistenti in questo anno, è necessario utilizzare lo stesso identico insieme di caratteri come separatore, per dividere questo anno come si è fatto in precedenza e gli stessi nomi di divisione (per ogni vecchia divisione che non è più immessa, un gruppo sarà rimosso da quest&apos;anno).</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="717"/>
+        <location filename="../src/interface/splityearform.cpp" line="795"/>
         <source>When dividing again a year, you might get a warning about subgroups which will be removed. If you didn&apos;t explicitly use (these) subgroups in your activities or constraints, probably you can safely ignore this warning. Generally, if you use years&apos; division by categories, it is groups that matter.</source>
         <translation>Quando dividi ancora un anno potresti ottenere un avviso sui sottogruppi che verranno rimossi. Se non utilizzi esplicitamente (questi) sottogruppi nelle attività o nei vincoli probabilmente è possibile ignorare questo avvertimento. In genere se si utilizza la divisione degli anni per categorie, quello che conta principalmente sono i gruppi.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="723"/>
+        <location filename="../src/interface/splityearform.cpp" line="801"/>
         <source>Separator character(s) is of your choice (default is space)</source>
         <translation>Carattere(i) di separazione a tua scelta (per default è spazio)</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="730"/>
+        <location filename="../src/interface/splityearform.cpp" line="808"/>
         <source>Note that if you are only working to get a feasible timetable, without the need to obtain the students timetable (XML or HTML) on the disk at all, and if you have many total subgroups, a good idea is to disable writing the subgroups, groups AND years timetables to the hard disk, as these take a long time to compute (not only subgroups, but also groups and years!).</source>
         <translation>Si noti che se si sta solo lavorando per ottenere un orario realistico , senza la necessità di ottenere l&apos;orario degli studenti ( XML o HTML) sul disco, e se si hanno molti sottogruppi totali, una buona idea è quella di disabilitare la scrittura degli orari di sottogruppi, di gruppi e degli anni sul disco rigido, in quanto questi impiegano molto tempo per il calcolo (non solo sottogruppi , ma anche gruppi e anni !).</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="743"/>
+        <location filename="../src/interface/splityearform.cpp" line="821"/>
         <source>Maybe a reasonable number of categories could be 2, 3 or maximum 4. The divide year dialog allows much higher values, but these are not at all recommended.</source>
         <translation>Forse un numero ragionevole di categorie potrebbe essere 2, 3 o al massimo 4. Il form per la suddivisione dell&apos;anno permette valori molto più elevati , ma questi non sono affatto raccomandati.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="746"/>
+        <location filename="../src/interface/splityearform.cpp" line="824"/>
         <source>Maybe an alternative to dividing a year into many categories/subgroups would be to enter individual students as FET subgroups and add into each group the corresponding subgroups. But this is hard to do from the FET interface - maybe a solution would be to use an automatic tool to convert your institution data into a file in .fet format.</source>
         <translation>Forse un&apos;alternativa a dividere l&apos;anno in molte categorie/ sottogruppi potrebbe essere quella di inserire i singoli studenti come sottogruppi di FET e aggiungere in ogni gruppo i sottogruppi corrispondenti. Ma questo è difficile da fare dall&apos;interfaccia FET - forse una soluzione potrebbe essere quella di utilizzare uno strumento automatico per convertire i dati dell&apos;anagrafe istituzionale in un file in formato .fet.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="750"/>
+        <location filename="../src/interface/splityearform.cpp" line="828"/>
         <source>Or you might use the FET feature to import students sets from comma separated values (CSV) files.</source>
         <translation>Si potrebbe utilizzare la funzionalità di FET per importare set di studenti da file (CSV) di valori separati da virgola.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="752"/>
+        <location filename="../src/interface/splityearform.cpp" line="830"/>
         <source>In such cases (individual students as FET subgroups), remember that a smaller number of total subgroups means faster generation time, so you might want to consider a single subgroup for two or more students who have the exact same activities and constraints.</source>
         <translation>In questi casi (singoli studenti come sottogruppi di FET ), ricorda che un minor numero di sottogruppi totali significa tempo di generazione più veloce, per cui potrebbe essere preferibile un unico sottogruppo per due o più studenti che hanno esattamente le stesse attività e vincoli.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="758"/>
+        <location filename="../src/interface/splityearform.cpp" line="836"/>
         <source>FET - help on dividing a year</source>
         <translation>FET - aiuto sulla suddivisione dell&apos;anno</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="764"/>
+        <location filename="../src/interface/splityearform.cpp" line="842"/>
         <source>OK</source>
         <translation>OK</translation>
     </message>
