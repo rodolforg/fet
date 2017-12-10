@@ -38,8 +38,6 @@
 #include <QHash>
 #include <QMap>
 
-#include <QSignalMapper>
-
 #include "centerwidgetonscreen.h"
 
 #include "longtextmessagebox.h"
@@ -77,12 +75,22 @@ SplitYearForm::SplitYearForm(QWidget* parent, const QString& _year): QDialog(par
 	for(int i=0; i<MAX_CATEGORIES; i++){
 		listWidgets[i]->clear();
 		listWidgets[i]->setSelectionMode(QAbstractItemView::SingleSelection);
-
-		mapperModify.connect(listWidgets[i], SIGNAL(itemDoubleClicked(QListWidgetItem*)), SLOT(map()));
-		mapperModify.setMapping(listWidgets[i], i);
 	}
-	
-	connect(&mapperModify, SIGNAL(mapped(int)), SLOT(modifyDoubleClicked(int)));
+
+	connect(listWidgets[0], SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(list0DoubleClicked()));
+	connect(listWidgets[1], SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(list1DoubleClicked()));
+	connect(listWidgets[2], SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(list2DoubleClicked()));
+	connect(listWidgets[3], SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(list3DoubleClicked()));
+	connect(listWidgets[4], SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(list4DoubleClicked()));
+	connect(listWidgets[5], SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(list5DoubleClicked()));
+	connect(listWidgets[6], SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(list6DoubleClicked()));
+	connect(listWidgets[7], SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(list7DoubleClicked()));
+	connect(listWidgets[8], SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(list8DoubleClicked()));
+	connect(listWidgets[9], SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(list9DoubleClicked()));
+	connect(listWidgets[10], SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(list10DoubleClicked()));
+	connect(listWidgets[11], SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(list11DoubleClicked()));
+	connect(listWidgets[12], SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(list12DoubleClicked()));
+	connect(listWidgets[13], SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(list13DoubleClicked()));
 	
 	connect(addPushButton,  SIGNAL(clicked()), this, SLOT(addClicked()));
 	connect(modifyPushButton,  SIGNAL(clicked()), this, SLOT(modifyClicked()));
@@ -234,6 +242,76 @@ void SplitYearForm::modifyDoubleClicked(int i)
 			}
 		}
 	}
+}
+
+void SplitYearForm::list0DoubleClicked()
+{
+	modifyDoubleClicked(0);
+}
+
+void SplitYearForm::list1DoubleClicked()
+{
+	modifyDoubleClicked(1);
+}
+
+void SplitYearForm::list2DoubleClicked()
+{
+	modifyDoubleClicked(2);
+}
+
+void SplitYearForm::list3DoubleClicked()
+{
+	modifyDoubleClicked(3);
+}
+
+void SplitYearForm::list4DoubleClicked()
+{
+	modifyDoubleClicked(4);
+}
+
+void SplitYearForm::list5DoubleClicked()
+{
+	modifyDoubleClicked(5);
+}
+
+void SplitYearForm::list6DoubleClicked()
+{
+	modifyDoubleClicked(6);
+}
+
+void SplitYearForm::list7DoubleClicked()
+{
+	modifyDoubleClicked(7);
+}
+
+void SplitYearForm::list8DoubleClicked()
+{
+	modifyDoubleClicked(8);
+}
+
+void SplitYearForm::list9DoubleClicked()
+{
+	modifyDoubleClicked(9);
+}
+
+void SplitYearForm::list10DoubleClicked()
+{
+	modifyDoubleClicked(10);
+}
+
+void SplitYearForm::list11DoubleClicked()
+{
+	modifyDoubleClicked(11);
+}
+
+void SplitYearForm::list12DoubleClicked()
+{
+	modifyDoubleClicked(12);
+}
+
+void SplitYearForm::list13DoubleClicked()
+{
+	modifyDoubleClicked(13);
 }
 
 void SplitYearForm::removeClicked()

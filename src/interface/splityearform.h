@@ -20,8 +20,6 @@
 
 #include <QString>
 
-#include <QSignalMapper>
-
 #include "ui_splityearform_template.h"
 
 #include "timetable_defs.h"
@@ -41,8 +39,6 @@ private:
 	QStringList _divisions[MAX_CATEGORIES];
 	
 	QListWidget* listWidgets[MAX_CATEGORIES];
-	
-	QSignalMapper mapperModify;
 	
 public:
 	QString year;
@@ -64,6 +60,21 @@ public slots:
 	void modifyDoubleClicked(int i);
 	void removeClicked();
 	void removeAllClicked();
+	
+	void list0DoubleClicked();
+	void list1DoubleClicked();
+	void list2DoubleClicked();
+	void list3DoubleClicked();
+	void list4DoubleClicked();
+	void list5DoubleClicked();
+	void list6DoubleClicked();
+	void list7DoubleClicked();
+	void list8DoubleClicked();
+	void list9DoubleClicked();
+	void list10DoubleClicked();
+	void list11DoubleClicked();
+	void list12DoubleClicked();
+	void list13DoubleClicked();
 	
 	void help();
 	void reset();
