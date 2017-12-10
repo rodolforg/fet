@@ -2007,3 +2007,6 @@ Versions 5.34.0 - 5.34.v
 	- Improved the activity planning dialog, by Volker Dirr. Now the user can swap the teachers of one or more activities.
 	- Added the possibility of exporting the data and the timetable as CSV (comma separated values) files from the command line version of FET
 	(suggested by Matthias Söllner and m).
+- Version 5.34.1
+	- Updated to Qt 5.10.0.
+	- Corrected a compilation warning that appeared in FET when using the new Qt 5.10.0 (class QSignalMapper is now deprecated).
