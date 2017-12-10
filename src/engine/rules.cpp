@@ -3309,13 +3309,13 @@ int Rules::searchBuilding(const QString& buildingName) const
 
 bool Rules::removeBuilding(const QString& buildingName)
 {
-	foreach(Room* rm, this->roomsList)
-		if(rm->building==buildingName)
-			rm->building="";
-
 	int i=this->searchBuilding(buildingName);
 	if(i<0)
 		return false;
+
+	foreach(Room* rm, this->roomsList)
+		if(rm->building==buildingName)
+			rm->building="";
 
 	Building* searchedBuilding=this->buildingsList[i];
 	assert(searchedBuilding->name==buildingName);
@@ -3333,13 +3333,13 @@ bool Rules::removeBuilding(const QString& buildingName)
 
 bool Rules::modifyBuilding(const QString& initialBuildingName, const QString& finalBuildingName)
 {
-	foreach(Room* rm, roomsList)
-		if(rm->building==initialBuildingName)
-			rm->building=finalBuildingName;
-
 	int i=this->searchBuilding(initialBuildingName);
 	if(i<0)
 		return false;
+
+	foreach(Room* rm, roomsList)
+		if(rm->building==initialBuildingName)
+			rm->building=finalBuildingName;
 
 	Building* searchedBuilding=this->buildingsList[i];
 	assert(searchedBuilding->name==initialBuildingName);
