@@ -8,7 +8,6 @@ class ParadoxMinDaysVsConsecutive : public ConstraintPre
 public:
 	ParadoxMinDaysVsConsecutive();
 
-public:
 	virtual bool prepare(const Rules& rules);
 };
 
