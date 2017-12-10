@@ -129,21 +129,7 @@ QApplication* pqapplication=NULL;
 
 #ifdef FET_COMMAND_LINE
 #include "export.h"
-
-extern bool EXPORT_CSV;
 extern bool EXPORT_ALLOW_OVERWRITE;
-extern bool EXPORT_FIRST_LINE_IS_HEADING;
-extern int EXPORT_QUOTES;
-
-extern const int EXPORT_DOUBLE_QUOTES;
-extern const int EXPORT_SINGLE_QUOTES;
-extern const int EXPORT_NO_QUOTES;
-
-extern int EXPORT_FIELD_SEPARATOR;
-
-extern const int EXPORT_COMMA;
-extern const int EXPORT_SEMICOLON;
-extern const int EXPORT_VERTICALBAR;
 #endif
 
 //for command line version, if the user stops using a signal
@@ -852,11 +838,9 @@ int main(int argc, char **argv)
 		
 		SHOW_WARNING_FOR_GROUP_ACTIVITIES_IN_INITIAL_ORDER=true;
 		
-		EXPORT_CSV=false;
 		EXPORT_ALLOW_OVERWRITE=false;
-		EXPORT_FIRST_LINE_IS_HEADING=true;
-		EXPORT_QUOTES=EXPORT_DOUBLE_QUOTES;
-		EXPORT_FIELD_SEPARATOR=EXPORT_COMMA;
+		bool EXPORT_CSV=false;
+		Export csv_export(gt);
 
 		bool showVersion=false;
 		
@@ -1013,19 +997,19 @@ int main(int argc, char **argv)
 			}
 			else if(s.left(24)=="--firstlineisheadingcsv="){
 				if(s.right(5)=="false")
-					EXPORT_FIRST_LINE_IS_HEADING=false;
+					csv_export.setHeader(false);
 			}
 			else if(s.left(12)=="--quotescsv="){
 				if(s.right(12)=="singlequotes")
-					EXPORT_QUOTES=EXPORT_SINGLE_QUOTES;
+					csv_export.setTextQuote("'");
 				else if(s.right(4)=="none")
-					EXPORT_QUOTES=EXPORT_NO_QUOTES;
+					csv_export.setTextQuote("");
 			}
 			else if(s.left(20)=="--fieldseparatorcsv="){
 				if(s.right(9)=="semicolon")
-					EXPORT_FIELD_SEPARATOR=EXPORT_SEMICOLON;
+					csv_export.setFieldSeparator(";");
 				else if(s.right(11)=="verticalbar")
-					EXPORT_FIELD_SEPARATOR=EXPORT_VERTICALBAR;
+					csv_export.setFieldSeparator("|");
 			}
 			///
 			else
@@ -1358,7 +1342,6 @@ int main(int argc, char **argv)
 			TimetableExport::writeSimulationResultsCommandLine(NULL, toh);
 
 			if (EXPORT_CSV) {
-				Export csv_export(gt);
 				QString oldDir=csv_export.getDirectoryCSV();
 				csv_export.setDirectoryCSV(csvOutputDirectory);
 				csv_export.exportCSV(&gen.getHighestStageSolution(), &gen.getSolution());
@@ -1482,7 +1465,6 @@ int main(int argc, char **argv)
 			TimetableExport::writeSimulationResultsCommandLine(NULL, toh);
 
 			if (EXPORT_CSV) {
-				Export csv_export(gt);
 				QString oldDir=csv_export.getDirectoryCSV();
 				csv_export.setDirectoryCSV(csvOutputDirectory);
 				csv_export.exportCSV(&gen.getHighestStageSolution(), &gen.getSolution());
@@ -1506,7 +1488,6 @@ int main(int argc, char **argv)
 			TimetableExport::writeSimulationResultsCommandLine(NULL, outputDirectory);
 			
 			if (EXPORT_CSV) {
-				Export csv_export(gt);
 				QString oldDir=csv_export.getDirectoryCSV();
 				csv_export.setDirectoryCSV(csvOutputDirectory);
 				csv_export.exportCSV(&c);

@@ -44,44 +44,22 @@ File export.cpp
 #include <QSet>
 #include <QTextStream>
 
-class QWidget;
 void centerWidgetOnScreen(QWidget* widget);
 
 #include "export.h"
 #include "solution.h"
 
-const char CSVActivities[]="activities.csv";
-const char CSVActivitiesStatistic[]="statistics_activities.csv";
-const char CSVActivityTags[]="activity_tags.csv";
-const char CSVRoomsAndBuildings[]="rooms_and_buildings.csv";
-const char CSVSubjects[]="subjects.csv";
-const char CSVTeachers[]="teachers.csv";
-const char CSVStudents[]="students.csv";
-const char CSVTimetable[]="timetable.csv";
+static const char CSVActivities[]="activities.csv";
+static const char CSVActivitiesStatistic[]="statistics_activities.csv";
+static const char CSVActivityTags[]="activity_tags.csv";
+static const char CSVRoomsAndBuildings[]="rooms_and_buildings.csv";
+static const char CSVSubjects[]="subjects.csv";
+static const char CSVTeachers[]="teachers.csv";
+static const char CSVStudents[]="students.csv";
+static const char CSVTimetable[]="timetable.csv";
 
 #ifdef FET_COMMAND_LINE
-bool EXPORT_CSV=false;
-
 bool EXPORT_ALLOW_OVERWRITE=false;
-
-bool EXPORT_FIRST_LINE_IS_HEADING=true;
-
-extern const int EXPORT_DOUBLE_QUOTES; //trick so that these constants are visible in fet.cpp.
-extern const int EXPORT_SINGLE_QUOTES;
-extern const int EXPORT_NO_QUOTES;
-const int EXPORT_DOUBLE_QUOTES=0;
-const int EXPORT_SINGLE_QUOTES=1;
-const int EXPORT_NO_QUOTES=2;
-int EXPORT_QUOTES=EXPORT_DOUBLE_QUOTES;
-
-extern const int EXPORT_COMMA;
-extern const int EXPORT_SEMICOLON;
-extern const int EXPORT_VERTICALBAR;
-const int EXPORT_COMMA=0;
-const int EXPORT_SEMICOLON=1;
-const int EXPORT_VERTICALBAR=2;
-int EXPORT_FIELD_SEPARATOR=EXPORT_COMMA;
-
 #include <iostream>
 using namespace std;
 #endif
@@ -112,7 +90,9 @@ Export::Export(const Timetable &gt, const Solution &solution)
 }
 #else
 Export::Export(const Timetable &gt)
-	: gt(gt)
+	: gt(gt),
+	  textquote("\""), fieldSeparator(","),
+	  header(true), setSeparator("+")
 {
 }
 #endif
@@ -229,29 +209,6 @@ void Export::exportCSV(QWidget* parent) {
 }
 #else
 void Export::exportCSV(Solution* bestOrHighest, Solution* current){
-	if(!EXPORT_CSV)
-		return;
-
-	if(EXPORT_FIELD_SEPARATOR==EXPORT_COMMA)
-		fieldSeparator=",";
-	else if(EXPORT_FIELD_SEPARATOR==EXPORT_SEMICOLON)
-		fieldSeparator=";";
-	else if(EXPORT_FIELD_SEPARATOR==EXPORT_VERTICALBAR)
-		fieldSeparator="|";
-	else
-		assert(0);
-
-	if(EXPORT_QUOTES==EXPORT_DOUBLE_QUOTES)
-		textquote="\"";
-	else if(EXPORT_QUOTES==EXPORT_SINGLE_QUOTES)
-		textquote="'";
-	else if(EXPORT_QUOTES==EXPORT_NO_QUOTES)
-		textquote="";
-	else
-		assert(0);
-
-	setSeparator="+";
-	header=EXPORT_FIRST_LINE_IS_HEADING;
 	bool ok=true;
 
 	if (directoryCSV.isNull())

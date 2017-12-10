@@ -116,7 +116,7 @@ private:
 #ifndef FET_COMMAND_LINE
 class LastWarningsDialogE: public QDialog{
 	Q_OBJECT
-	
+
 public:				//can I do that private too?
 	LastWarningsDialogE(QWidget *parent, const QString& lastWarning);
 	~LastWarningsDialogE();
