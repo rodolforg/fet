@@ -2351,11 +2351,15 @@ What it really needs now is a front end any one can use for room changes/teacher
 The other major issues we face is cover - would be fantastic to have a cover generator. That takes up a lot of time practically as teachers are off sick and the time taken to check their timetable and find others free is a job that would be nice at a click of a button. I know these are "nice to haves" but I bet a lot of FET users have the same practical issues day to day.
 
 151---------------------------------------------------------
-From Anton Anthofer:
+From Anton Anthofer (see also item #275):
 
 - modify the IDs of (sub)activities.
 - possibility to remove subactivities.
 - multicore generation for multiple timetables generation.
+
+Also suggested by sln_rj, on forum:
+
+Is it possible to edit a split option in activity once we entered the data in FET?
 
 152---------------------------------------------------------
 From yasin dehghan:
@@ -4529,7 +4533,7 @@ Sometimes you need to see the "Activity tags" in tables produced by FET, but the
 If this feature is created, the tables will be lightweight, and easy to read.
 
 275---------------------------------------------------------
-From Anton Anthofer:
+From Anton Anthofer (see also item #151):
 
 - remove the "modify subactivity" menu and move that feature into the "normal" activity menu.
 - modify the id
