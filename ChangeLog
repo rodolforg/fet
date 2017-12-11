@@ -2010,3 +2010,5 @@ Versions 5.34.0 - 5.34.v
 - Version 5.34.1
 	- Updated to Qt 5.10.0.
 	- Corrected a compilation warning that appeared in FET when using the new Qt 5.10.0 (class QSignalMapper is now deprecated).
+- Version 5.34.2
+	- Corrected the style/appearance of precompiled FET for Windows 7 (added a missing dll).
