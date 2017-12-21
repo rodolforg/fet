@@ -1386,6 +1386,7 @@ TRANSLATIONS += \
 	../translations/fet_hu.ts \
 	../translations/fet_id.ts \
 	../translations/fet_it.ts \
+	../translations/fet_ja.ts \
 	../translations/fet_lt.ts \
 	../translations/fet_mk.ts \
 	../translations/fet_ms.ts \
