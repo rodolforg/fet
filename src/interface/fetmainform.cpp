@@ -236,6 +236,7 @@ using namespace std;
 #include <QDesktopServices>
 #include <QUrl>
 #include <QApplication>
+#include <QDesktopWidget>
 #include <QMenu>
 #include <QCursor>
 #include <QSettings>
@@ -540,17 +541,26 @@ FetMainForm::FetMainForm()
 	//ORIGINAL_Y=y();
 	
 	QRect rect=mainFormSettingsRect;
-	if(!rect.isValid()){
-		forceCenterWidgetOnScreen(this);
+	if(rect.isValid()){
+		bool ok=false;
+		for(int i=0; i<QApplication::desktop()->screenCount(); i++){
+			if(QApplication::desktop()->availableGeometry(i).intersects(rect)){
+				ok=true;
+				break;
+			}
+		}
+	
+		if(ok){
+			this->setGeometry(rect);
+		}
+		else{
+			forceCenterWidgetOnScreen(this);
+		}
 	}
 	else{
-		//this->setWindowFlags(this->windowFlags() | Qt::CustomizeWindowHint | Qt::WindowCloseButtonHint | Qt::WindowMinMaxButtonsHint);
-		
-		/*resize(rect.size());
-		move(rect.topLeft());*/
-		this->setGeometry(rect);
+		forceCenterWidgetOnScreen(this);
 	}
-
+	
 	//new data
 	if(gt.rules.initialized)
 		gt.rules.kill();

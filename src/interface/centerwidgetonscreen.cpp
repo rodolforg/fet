@@ -130,8 +130,19 @@ void restoreFETDialogGeometry(QWidget* widget, const QString& alternativeName)
 		name=alternativeName;
 	if(settings.contains(name+QString("/geometry"))){
 		QRect rect=settings.value(name+QString("/geometry")).toRect();
-		if(rect.isValid())
-			widget->setGeometry(rect);
+		if(rect.isValid()){
+			bool ok=false;
+			for(int i=0; i<QApplication::desktop()->screenCount(); i++){
+				if(QApplication::desktop()->availableGeometry(i).intersects(rect)){
+					ok=true;
+					break;
+				}
+			}
+		
+			if(ok){
+				widget->setGeometry(rect);
+			}
+		}
 	}
 }
 
