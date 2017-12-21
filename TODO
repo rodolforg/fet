@@ -1683,7 +1683,7 @@ Create please, in QComboBox, auto-complete. With a large number of students and 
 113---------------------------------------------------------
 From kdrosos:
 
-In FET there is "School's name", where the school' s name appears in the final .html files.
+In FET there is "School's name", where the school's name appears in the final .html files.
 
 Maybe the text "School's name" can be parametric and thus to allow changing to "Department's name" or "Institution's name" etc.
 
