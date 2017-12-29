@@ -7371,7 +7371,7 @@ double ConstraintActivitiesSameRoomIfConsecutive::fitness(
 	
 	if(nbroken>0){
 		if(conflictsString!=NULL){
-			QString s=tr("Space constraint activities same rooms if consecutive broken");
+			QString s=tr("Space constraint activities same room if consecutive broken");
 			s += QString(". ");
 			s += tr("This increases the conflicts total by %1").arg(CustomFETString::number(nbroken*weightPercentage/100));
 	
