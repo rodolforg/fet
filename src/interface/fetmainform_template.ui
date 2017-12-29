@@ -44,7 +44,7 @@
        <bool>true</bool>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>4</number>
       </property>
       <property name="usesScrollButtons">
        <bool>false</bool>
@@ -441,7 +441,7 @@
              <item row="4" column="1">
               <widget class="QPushButton" name="shortcutAdvancedTimeConstraintsPushButton">
                <property name="text">
-                <string>Advanced</string>
+                <string comment="It is on the shortcuts tab buttons, so keep translation short. It contains submenu for time constraints">Advanced</string>
                </property>
               </widget>
              </item>
@@ -744,7 +744,7 @@
              <item row="5" column="2">
               <widget class="QPushButton" name="shortcutsTimetableAdvancedPushButton">
                <property name="text">
-                <string>Advanced</string>
+                <string comment="It is on the shortcuts tab buttons, so keep translation short. It contains submenu for timetable">Advanced</string>
                </property>
               </widget>
              </item>
@@ -1248,7 +1248,7 @@
     </property>
     <widget class="QMenu" name="menuSettingsAdvanced">
      <property name="title">
-      <string>Advanced</string>
+      <string comment="It refers to advanced settings">Advanced</string>
      </property>
      <addaction name="randomSeedAction"/>
      <addaction name="separator"/>
@@ -1326,7 +1326,7 @@
    </widget>
    <widget class="QMenu" name="menuAdvanced">
     <property name="title">
-     <string>Advanced</string>
+     <string comment="The menu item for advanced features">Advanced</string>
     </property>
     <addaction name="activityPlanningAction"/>
     <addaction name="separator"/>
