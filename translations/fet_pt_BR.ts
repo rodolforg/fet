@@ -33326,7 +33326,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
         <location filename="../src/interface/fetmainform_template.ui" line="301"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for activity planning</comment>
-        <translation>Avançado</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="416"/>

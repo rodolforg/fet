@@ -13711,7 +13711,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7374"/>
         <source>Space constraint activities same room if consecutive broken</source>
-        <translation type="unfinished"></translation>
+        <translation>Restricción de lugar, actividades en la misma aula si consecutivas incorrecta</translation>
     </message>
     <message>
         <source>Space constraint activities same rooms if consecutive broken</source>
@@ -33268,25 +33268,25 @@ Detenga la simulación antes de esto.</translation>
         <location filename="../src/interface/fetmainform_template.ui" line="444"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for time constraints</comment>
-        <translation type="unfinished"></translation>
+        <translation>Avanzado</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="747"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for timetable</comment>
-        <translation type="unfinished"></translation>
+        <translation>Avanzado</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1251"/>
         <source>Advanced</source>
         <comment>It refers to advanced settings</comment>
-        <translation type="unfinished"></translation>
+        <translation>Avanzada</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1329"/>
         <source>Advanced</source>
         <comment>The menu item for advanced features</comment>
-        <translation type="unfinished"></translation>
+        <translation>Avanzado</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1482"/>

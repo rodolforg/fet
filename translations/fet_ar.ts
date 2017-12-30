@@ -33837,7 +33837,7 @@ G1 ستظهر مرتين في الجدول</translation>
         <location filename="../src/interface/fetmainform_template.ui" line="301"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for activity planning</comment>
-        <translation>متقدم</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="416"/>
