@@ -822,7 +822,7 @@ there won&apos;t be removed an additional number of %1 activities
         <location filename="../src/interface/activityplanningform.cpp" line="888"/>
         <location filename="../src/interface/activityplanningform.cpp" line="1274"/>
         <source>Delete %1 activities of students set %2?</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαγραφή των %1 δραστηριοτήτων της ομάδας μαθητών %2?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="922"/>
@@ -863,7 +863,8 @@ there won&apos;t be removed an additional number of %1 activities
         <location filename="../src/interface/activityplanningform.cpp" line="292"/>
         <source>Hide full teachers</source>
         <comment>It refers to teachers who have their number of hours fulfilled. Please keep translation short</comment>
-        <translation type="unfinished"></translation>
+        <translatorcomment>Αναφέρεται σε εκπαιδευτικούς που έχουν συμπληρώσει το ωράριό τους</translatorcomment>
+        <translation>Απόκρυψη πλήρων εκπαιδευτικών</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="896"/>
@@ -885,7 +886,7 @@ there won&apos;t be removed an additional number of %1 activities
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1621"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1739"/>
@@ -1224,13 +1225,13 @@ there won&apos;t be removed an additional number of %1 activities
         <location filename="../src/interface/activitytagsform_template.ui" line="101"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Πάνω</translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform_template.ui" line="108"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Κάτω</translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform_template.ui" line="115"/>
@@ -2065,7 +2066,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="98"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished">Όλοι</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="112"/>
@@ -2175,7 +2176,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addconstraintactivitiesnotoverlappingform_template.ui" line="120"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished">Όλοι</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesnotoverlappingform_template.ui" line="107"/>
@@ -2304,7 +2305,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="88"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished">Όλοι</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="102"/>
@@ -2411,7 +2412,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="98"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished">Όλοι</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="112"/>
@@ -2815,7 +2816,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform_template.ui" line="88"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished">Όλοι</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform_template.ui" line="102"/>
@@ -2896,7 +2897,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addconstraintactivitiessamestartingdayform_template.ui" line="104"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished">Όλοι</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartingdayform_template.ui" line="121"/>
@@ -3040,7 +3041,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addconstraintactivitiessamestartinghourform_template.ui" line="104"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished">Όλοι</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartinghourform_template.ui" line="121"/>
@@ -3148,7 +3149,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addconstraintactivitiessamestartingtimeform_template.ui" line="104"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished">Όλοι</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartingtimeform_template.ui" line="121"/>
@@ -4285,7 +4286,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform_template.ui" line="104"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished">Όλοι</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform_template.ui" line="121"/>
@@ -4414,7 +4415,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform_template.ui" line="104"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished">Όλοι</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform_template.ui" line="121"/>
@@ -4550,7 +4551,7 @@ force activities consecutive</source>
         <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform_template.ui" line="104"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished">Όλοι</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform_template.ui" line="121"/>
@@ -10432,7 +10433,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform_template.ui" line="104"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished">Όλοι</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform_template.ui" line="121"/>
@@ -11186,7 +11187,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="683"/>
         <source>%1 Space Constraints</source>
         <comment>%1 represents the number of constraints</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 Χωρικοί περιορισμοί</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="252"/>
@@ -11199,19 +11200,19 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="812"/>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="887"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="252"/>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="308"/>
         <source>To move a space constraint, the &apos;Filter&apos; check box must not be checked.</source>
-        <translation type="unfinished"></translation>
+        <translation>Για να μετακινήσετε χωρικό περιορισμό, το πλαίσιο ελέγχου &apos;Φίλτρο&apos; δεν πρέπει να είναι τσεκαρισμένο.</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="256"/>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="312"/>
         <source>To move a space constraint, the &apos;Sorted&apos; check box must not be checked.</source>
-        <translation type="unfinished"></translation>
+        <translation>Για να μετακινήσετε χωρικό περιορισμό, το πλαίσιο ελέγχου &apos;Ταξινομημένοι&apos; δεν πρέπει να είναι τσεκαρισμένο.</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="401"/>
@@ -11219,7 +11220,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="850"/>
         <source>%1 / %2 space constraints</source>
         <comment>%1 represents the number of visible active space constraints, %2 represents the total number of visible space constraints</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 / %2 χωρικοί περιορισμοί</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="424"/>
@@ -11228,78 +11229,78 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="812"/>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="887"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Μη αποδεκτή επιλογή περιορισμού</translation>
+        <translation>Μη αποδεκτή επιλογή περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="608"/>
         <source>FET critical</source>
-        <translation type="unfinished"></translation>
+        <translation>FET - Κρίσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="608"/>
         <source>You have found a bug in FET. Please report it. This kind of constraint is not correctly recognized in all space constraints dialog. FET will skip this error, so that you can continue work. Probably the constraint can be modified from the specific constraint dialog.</source>
-        <translation type="unfinished"></translation>
+        <translation>Έχετε βρει ένα σφάλμα λογισμικού (bug) στο FET. Παρακαλώ να το αναφέρετε. Αυτός ο τύπος περιορισμού δεν αναγνωρίζεται σωστά στον διάλογο όλων των χωρικών περιορισμών. Το FET θα παραλείψει (αγνοήσει) αυτό το λάθος, ώστε να μπορέσετε να συνεχίζετε τη δουλειά σας. Πιθανώς, ο περιορισμός είναι δυνατόν να τροποποιηθεί από τον ειδικό διάλογο περιορισμών.</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="640"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">Διαγραφή περιορισμού;</translation>
+        <translation>Διαγραφή περιορισμού;</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="648"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">FET - Επιβεβαίωση</translation>
+        <translation>FET - Επιβεβαίωση</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="649"/>
         <source>Yes</source>
-        <translation type="unfinished">Ναι</translation>
+        <translation>Ναι</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="649"/>
         <source>No</source>
-        <translation type="unfinished">Όχι</translation>
+        <translation>Όχι</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="657"/>
         <source>Do you really want to remove the basic compulsory space constraint?</source>
-        <translation type="unfinished"></translation>
+        <translation>Σίγουρα θέλετε να διαγράψετε τον βασικό υποχρεωτικό χωρικό περιορισμό;</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="659"/>
         <source>You cannot generate a timetable without this constraint.</source>
-        <translation type="unfinished"></translation>
+        <translation>Δεν μπορείτε να δημιουργήσετε ωρολόγιο πρόγραμμα χωρίς αυτόν τον περιορισμό.</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="661"/>
         <source>Note: you can add again a constraint of this type from the menu Data -&gt; Space constraints -&gt; Miscellaneous -&gt; Basic compulsory space constraints.</source>
-        <translation type="unfinished"></translation>
+        <translation>Σημείωση: μπορείτε να προσθέσετε ξανά περιορισμό αυτού του τύπου από το μενού Δεδομένα -&gt; Χωρικοί περιορισμοί -&gt; Διάφοροι - &gt; Βασικοί υποχρεωτικοί χωρικοί περιορισμοί.</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="664"/>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="824"/>
         <source>FET warning</source>
-        <translation type="unfinished">FET - Προειδοποίηση</translation>
+        <translation>FET - Προειδοποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="824"/>
         <source>You are not allowed to deactivate the basic compulsory space constraints</source>
-        <translation type="unfinished"></translation>
+        <translation>Δεν επιτρέπεται να απενεργοποιήσετε τους βασικούς υποχρεωτικούς χωρικούς περιορισμούς</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="896"/>
         <source>Constraint comments</source>
-        <translation type="unfinished"></translation>
+        <translation>Σχόλια περιορισμών</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="898"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="900"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
 </context>
 <context>
@@ -11307,73 +11308,73 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/allspaceconstraintsform_template.ui" line="50"/>
         <source>Current constraint</source>
-        <translation type="unfinished">Τρέχων περιορισμός</translation>
+        <translation>Τρέχων περιορισμός</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform_template.ui" line="90"/>
         <source>Activate</source>
         <comment>Refers to activating a space constraint</comment>
-        <translation type="unfinished"></translation>
+        <translation>Ενεργοποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform_template.ui" line="97"/>
         <source>Deactivate</source>
         <comment>Refers to deactivating a space constraint</comment>
-        <translation type="unfinished"></translation>
+        <translation>Απενεργοποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform_template.ui" line="122"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation>Κάτω</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform_template.ui" line="129"/>
         <source>Comments</source>
-        <translation type="unfinished">Σχόλια</translation>
+        <translation>Σχόλια</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform_template.ui" line="136"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform_template.ui" line="76"/>
         <source>Remove</source>
-        <translation type="unfinished">Διαγραφή</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform_template.ui" line="14"/>
         <source>All space constraints</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Όλοι οι χωρικοί περιορισμοί</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform_template.ui" line="33"/>
         <source>Constraints</source>
-        <translation type="unfinished">Περιορισμοί</translation>
+        <translation>Περιορισμοί</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform_template.ui" line="69"/>
         <source>Modify</source>
-        <translation type="unfinished">Τροποποίηση</translation>
+        <translation>Τροποποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform_template.ui" line="83"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation>Πάνω</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform_template.ui" line="108"/>
         <source>Filter</source>
-        <translation type="unfinished">Φίλτρο</translation>
+        <translation>Φίλτρο</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform_template.ui" line="115"/>
         <source>Sorted</source>
         <comment>It refers to space constraints</comment>
-        <translation type="unfinished"></translation>
+        <translation>Ταξινομημένοι</translation>
     </message>
 </context>
 <context>
@@ -11382,7 +11383,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="1021"/>
         <source>%1 Time Constraints</source>
         <comment>%1 represents the number of constraints</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 Χρονικοί περιορισμοί</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="310"/>
@@ -11395,19 +11396,19 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="1150"/>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="1225"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="310"/>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="366"/>
         <source>To move a time constraint, the &apos;Filter&apos; check box must not be checked.</source>
-        <translation type="unfinished"></translation>
+        <translation>Για να μετακινήσετε χρονικό περιορισμό, το πλαίσιο ελέγχου &apos;Φίλτρο&apos; δεν πρέπει να είναι τσεκαρισμένο.</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="314"/>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="370"/>
         <source>To move a time constraint, the &apos;Sorted&apos; check box must not be checked.</source>
-        <translation type="unfinished"></translation>
+        <translation>Για να μετακινήσετε χρονικό περιορισμό, το πλαίσιο ελέγχου &apos;Ταξινομημένοι&apos; δεν πρέπει να είναι τσεκαρισμένο.</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="459"/>
@@ -11415,7 +11416,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="1188"/>
         <source>%1 / %2 time constraints</source>
         <comment>%1 represents the number of visible active time constraints, %2 represents the total number of visible time constraints</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 / %2 χρονικοί περιορισμοί</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="482"/>
@@ -11424,78 +11425,78 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="1150"/>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="1225"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Μη αποδεκτή επιλογή περιορισμού</translation>
+        <translation>Μη αποδεκτή επιλογή περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="943"/>
         <source>FET critical</source>
-        <translation type="unfinished"></translation>
+        <translation>FET - Κρίσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="943"/>
         <source>You have found a bug in FET. Please report it. This kind of constraint is not correctly recognized in all time constraints dialog. FET will skip this error, so that you can continue work. Probably the constraint can be modified from the specific constraint dialog.</source>
-        <translation type="unfinished"></translation>
+        <translation>Έχετε βρει ένα σφάλμα λογισμικού (bug) στο FET. Παρακαλώ να το αναφέρετε. Αυτός ο τύπος περιορισμού δεν αναγνωρίζεται σωστά στον διάλογο όλων των χρονικών περιορισμών. Το FET θα παραλείψει (αγνοήσει) αυτό το λάθος, ώστε να μπορέσετε να συνεχίζετε τη δουλειά σας. Πιθανώς, ο περιορισμός είναι δυνατόν να τροποποιηθεί από τον ειδικό διάλογο περιορισμών.</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="976"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">Διαγραφή περιορισμού;</translation>
+        <translation>Διαγραφή περιορισμού;</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="986"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">FET - Επιβεβαίωση</translation>
+        <translation>FET - Επιβεβαίωση</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="987"/>
         <source>Yes</source>
-        <translation type="unfinished">Ναι</translation>
+        <translation>Ναι</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="987"/>
         <source>No</source>
-        <translation type="unfinished">Όχι</translation>
+        <translation>Όχι</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="995"/>
         <source>Do you really want to remove the basic compulsory time constraint?</source>
-        <translation type="unfinished"></translation>
+        <translation>Σίγουρα θέλετε να διαγράψετε τον βασικό υποχρεωτικό χρονικό περιορισμό;</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="997"/>
         <source>You cannot generate a timetable without this constraint.</source>
-        <translation type="unfinished"></translation>
+        <translation>Δεν μπορείτε να δημιουργήσετε ωρολόγιο πρόγραμμα χωρίς αυτόν τον περιορισμό.</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="999"/>
         <source>Note: you can add again a constraint of this type from the menu Data -&gt; Time constraints -&gt; Miscellaneous -&gt; Basic compulsory time constraints.</source>
-        <translation type="unfinished"></translation>
+        <translation>Σημείωση: μπορείτε να προσθέσετε ξανά περιορισμό αυτού του τύπου από το μενού Δεδομένα -&gt; Χρονικοί περιορισμοί &gt; Διάφοροι -&gt; Βασικοί υποχρεωτικοί χρονικοί περιορισμοί.</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="1002"/>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="1162"/>
         <source>FET warning</source>
-        <translation type="unfinished">FET - Προειδοποίηση</translation>
+        <translation>FET - Προειδοποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="1162"/>
         <source>You are not allowed to deactivate the basic compulsory time constraints</source>
-        <translation type="unfinished"></translation>
+        <translation>Δεν επιτρέπεται να απενεργοποιήσετε τους βασικούς υποχρεωτικούς χρονικούς περιορισμούς</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="1234"/>
         <source>Constraint comments</source>
-        <translation type="unfinished"></translation>
+        <translation>Σχόλια περιορισμών</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="1236"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="1238"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
 </context>
 <context>
@@ -11503,73 +11504,73 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/alltimeconstraintsform_template.ui" line="56"/>
         <source>Current constraint</source>
-        <translation type="unfinished">Τρέχων περιορισμός</translation>
+        <translation>Τρέχων περιορισμός</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform_template.ui" line="14"/>
         <source>All time constraints</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Όλοι οι χρονικοί περιορισμοί</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform_template.ui" line="39"/>
         <source>Constraints</source>
-        <translation type="unfinished">Περιορισμοί</translation>
+        <translation>Περιορισμοί</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform_template.ui" line="128"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation>Κάτω</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform_template.ui" line="135"/>
         <source>Comments</source>
-        <translation type="unfinished">Σχόλια</translation>
+        <translation>Σχόλια</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform_template.ui" line="142"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform_template.ui" line="82"/>
         <source>Remove</source>
-        <translation type="unfinished">Διαγραφή</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform_template.ui" line="75"/>
         <source>Modify</source>
-        <translation type="unfinished">Τροποποίηση</translation>
+        <translation>Τροποποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform_template.ui" line="89"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation>Πάνω</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform_template.ui" line="96"/>
         <source>Activate</source>
         <comment>Refers to activating a time constraint</comment>
-        <translation type="unfinished"></translation>
+        <translation>Ενεργοποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform_template.ui" line="103"/>
         <source>Deactivate</source>
         <comment>Refers to deactivating a time constraint</comment>
-        <translation type="unfinished"></translation>
+        <translation>Απενεργοποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform_template.ui" line="114"/>
         <source>Filter</source>
-        <translation type="unfinished">Φίλτρο</translation>
+        <translation>Φίλτρο</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform_template.ui" line="121"/>
         <source>Sorted</source>
         <comment>It refers to time constraints</comment>
-        <translation type="unfinished"></translation>
+        <translation>Ταξινομημένοι</translation>
     </message>
 </context>
 <context>
@@ -11677,13 +11678,13 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/buildingsform_template.ui" line="62"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Πάνω</translation>
     </message>
     <message>
         <location filename="../src/interface/buildingsform_template.ui" line="69"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Κάτω</translation>
     </message>
     <message>
         <location filename="../src/interface/buildingsform_template.ui" line="76"/>
@@ -12123,7 +12124,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="17869"/>
         <source>Constraint activities max simultaneous in selected time slots is wrong because it refers to removed day. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;μέγιστες ταυτόχρονες δραστηριότητες σε επιλεγμένες περιόδους&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ημέρα που έχει αφαιρεθεί. Παρακαλώ διορθώστε τον και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι 
+        <translation>Περιορισμός &quot;μέγιστες ταυτόχρονες δραστηριότητες σε επιλεγμένες περιόδους&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ημέρα που έχει διαγραφεί. Παρακαλώ διορθώστε τον και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι 
 %1</translation>
     </message>
     <message>
@@ -12137,7 +12138,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="17883"/>
         <source>Constraint activities max simultaneous in selected time slots is wrong because it refers to removed hour. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;μέγιστες ταυτόχρονες δραστηριότητες σε επιλεγμένες περιόδους&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με μία ώρα που έχει αφαιρεθεί. Παρακαλώ διορθώστε και προσπαθείστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;μέγιστες ταυτόχρονες δραστηριότητες σε επιλεγμένες περιόδους&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με μία ώρα που έχει διαγραφεί. Παρακαλώ διορθώστε και προσπαθείστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -12781,7 +12782,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="17500"/>
         <source>Constraint activities occupy max time slots from selection is wrong because it refers to removed day. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;δραστηριότητες - καταλαμβάνουν μέγιστες περιόδους από επιλογή&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ημέρα που έχει αφαιρεθεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;δραστηριότητες - καταλαμβάνουν μέγιστες περιόδους από επιλογή&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ημέρα που έχει διαγραφεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -12795,7 +12796,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="17514"/>
         <source>Constraint activities occupy max time slots from selection is wrong because it refers to removed hour. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &apos;δραστηριότητες - καταλαμβάνουν μέγιστες περιόδους από επιλογή&apos; παρουσιάζει σφάλμα, διότι σχετίζεται με ώρα που έχει αφαιρεθεί. Παρακαλώ προσπαθείστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &apos;δραστηριότητες - καταλαμβάνουν μέγιστες περιόδους από επιλογή&apos; παρουσιάζει σφάλμα, διότι σχετίζεται με ώρα που έχει διαγραφεί. Παρακαλώ προσπαθείστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -13029,7 +13030,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="10790"/>
         <source>Constraint activities preferred starting times is wrong because it refers to removed day. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;δραστηριότητες - προτιμητέοι χρόνοι έναρξης&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ημέρα που έχει αφαιρεθεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;δραστηριότητες - προτιμητέοι χρόνοι έναρξης&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ημέρα που έχει διαγραφεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -13043,7 +13044,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="10804"/>
         <source>Constraint activities preferred starting times is wrong because it refers to removed hour. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;δραστηριότητες - προτιμητέοι χρόνοι έναρξης&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ώρα που έχει αφαιρεθεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;δραστηριότητες - προτιμητέοι χρόνοι έναρξης&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ώρα που έχει διαγραφεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -13302,7 +13303,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="9487"/>
         <source>Constraint activities preferred time slots is wrong because it refers to removed day. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;δραστηριότητες - προτιμητέοι χρόνοι έναρξης&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ημέρα που έχει αφαιρεθεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;δραστηριότητες - προτιμητέοι χρόνοι έναρξης&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ημέρα που έχει διαγραφεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -13316,7 +13317,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="9501"/>
         <source>Constraint activities preferred time slots is wrong because it refers to removed hour. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;δραστηριότητες - προτιμητέες περίοδοι&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με μία ώρα που έχει αφαιρεθεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;δραστηριότητες - προτιμητέες περίοδοι&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με μία ώρα που έχει διαγραφεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -13639,11 +13640,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7374"/>
         <source>Space constraint activities same room if consecutive broken</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Space constraint activities same rooms if consecutive broken</source>
-        <translation type="obsolete">Δεν έχει τηρηθεί χωρικός περιορισμός &quot;δραστηριότητες - αν συνεχόμενες, στην ίδια αίθουσα&quot;</translation>
+        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;δραστηριότητες - αν συνεχόμενες, στην ίδια αίθουσα&quot;</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7376"/>
@@ -15042,7 +15039,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="8866"/>
         <source>Constraint activity preferred starting time is wrong because it refers to removed day. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;δραστηριότητα - προτιμητέος χρόνος έναρξης&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ημέρα που έχει αφαιρεθεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;δραστηριότητα - προτιμητέος χρόνος έναρξης&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ημέρα που έχει διαγραφεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -15056,7 +15053,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="8880"/>
         <source>Constraint activity preferred starting time is wrong because it refers to removed hour. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;δραστηριότητα - προτιμητέος χρόνος έναρξης&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ώρα που έχει αφαιρεθεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;δραστηριότητα - προτιμητέος χρόνος έναρξης&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ώρα που έχει διαγραφεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -15189,7 +15186,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="10445"/>
         <source>Constraint activity preferred starting times is wrong because it refers to removed day. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;δραστηριότητα - προτιμητέοι χρόνοι έναρξης&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ημέρα που έχει αφαιρεθεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;δραστηριότητα - προτιμητέοι χρόνοι έναρξης&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ημέρα που έχει διαγραφεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -15203,7 +15200,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="10459"/>
         <source>Constraint activity preferred starting times is wrong because it refers to removed hour. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;δραστηριότητα - προτιμητέοι χρόνοι έναρξης&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ώρα που έχει αφαιρεθεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;δραστηριότητα - προτιμητέοι χρόνοι έναρξης&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ώρα που έχει διαγραφεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -15389,7 +15386,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="9129"/>
         <source>Constraint activity preferred time slots is wrong because it refers to removed day. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;δραστηριότητα - προτιμητέες περίοδοι&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ημέρα που έχει αφαιρεθεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;δραστηριότητα - προτιμητέες περίοδοι&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ημέρα που έχει διαγραφεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -15403,7 +15400,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="9143"/>
         <source>Constraint activity preferred time slots is wrong because it refers to removed hour. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;δραστηριότητα - προτιμητέες περίοδοι&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με μία ώρα που έχει αφαιρεθεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;δραστηριότητα - προτιμητέες περίοδοι&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με μία ώρα που έχει διαγραφεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -15608,7 +15605,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="3429"/>
         <location filename="../src/engine/spaceconstraint.cpp" line="3441"/>
         <source>Activity tag preferred room</source>
-        <translation>Προτιμητέα αίθουσα για ετικέτα δραστηριόρητας</translation>
+        <translation>Ετικέτα δραστηριόρητας - προτιμητέα αίθουσα</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3430"/>
@@ -15658,7 +15655,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="3498"/>
         <source>Space constraint activity tag preferred room broken for activity with id %1 (%2) (activity tag of constraint=%3)</source>
         <comment>%1 is activity id, %2 is detailed description of activity</comment>
-        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;προτιμητέα αίθουσα για ετικέτα δραστηριότητας&quot; για την δραστηριότητα με ατ %1 (%2) (ετικέτα δραστηριότητας του περιορισμού=%3)</translation>
+        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;ετικέτα δραστηριότητας - προτιμητέα αίθουσα&quot; για την δραστηριότητα με ατ %1 (%2) (ετικέτα δραστηριότητας του περιορισμού=%3)</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3504"/>
@@ -15769,7 +15766,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="3672"/>
         <location filename="../src/engine/spaceconstraint.cpp" line="3687"/>
         <source>Activity tag preferred rooms</source>
-        <translation>Προτιμητέες αίθουσες για ετικέτα δραστηριόρητας</translation>
+        <translation>Ετικέτα δραστηριότητας - προτιμητέες αίθουσες</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3673"/>
@@ -15824,7 +15821,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="3751"/>
         <source>Space constraint activity tag preferred rooms broken for activity with id %1 (%2) (activity tag of constraint=%3)</source>
         <comment>%1 is activity id, %2 is detailed description of activity</comment>
-        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;προτιμητέες αίθουσες για ετικέτα δραστηριότητας&quot; για την δραστηριότητα με ατ %1 (%2) (ετικέτα δραστηριότητας του περιορισμού=%3)</translation>
+        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;ετικέτα δραστηριότητας - προτιμητέες αίθουσες&quot; για την δραστηριότητα με ατ %1 (%2) (ετικέτα δραστηριότητας του περιορισμού=%3)</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3757"/>
@@ -15948,7 +15945,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="166"/>
         <source>rooms assigned to more than one activity simultaneously</source>
-        <translation>αίθουσες που αντιστοιχούν σε περισσότερες από μία δραστηριότητες ταυτόχρονα</translation>
+        <translation>αίθουσες να αντιστοιχούν σε περισσότερες από μία δραστηριότητες ταυτόχρονα</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="167"/>
@@ -16036,17 +16033,17 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintbasiccompulsoryspaceform.cpp" line="158"/>
         <source>Do you really want to remove the basic compulsory space constraint?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Σίγουρα θέλετε να διαγράψετε τον βασικό υποχρεωτικό χωρικό περιορισμό;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintbasiccompulsoryspaceform.cpp" line="160"/>
         <source>You cannot generate a timetable without this constraint.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Δεν μπορείτε να δημιουργήσετε ωρολόγιο πρόγραμμα χωρίς αυτόν τον περιορισμό.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintbasiccompulsoryspaceform.cpp" line="162"/>
         <source>Note: you can add again a constraint of this type from the menu Data -&gt; Space constraints -&gt; Miscellaneous -&gt; Basic compulsory space constraints.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Σημείωση: μπορείτε να προσθέσετε ξανά περιορισμό αυτού του τύπου από το μενού Δεδομένα -&gt; Χωρικοί περιορισμοί -&gt; Διάφοροι - &gt; Βασικοί υποχρεωτικοί χωρικοί περιορισμοί.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintbasiccompulsoryspaceform.cpp" line="165"/>
@@ -16124,12 +16121,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="204"/>
         <source>teachers assigned to more than one activity simultaneously</source>
-        <translation>εκπαιδευτικοί που συμμετέχουν ταυτόχρονα σε περισσότερες από μία δραστηριότητες</translation>
+        <translation>εκπαιδευτικοί να συμμετέχουν ταυτόχρονα σε περισσότερες από μία δραστηριότητες</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="205"/>
         <source>students assigned to more than one activity simultaneously</source>
-        <translation>μαθητές που συμμετέχουν ταυτόχρονα σε περισσότερες από μία δραστηριότητες</translation>
+        <translation>μαθητές να συμμετέχουν ταυτόχρονα σε περισσότερες από μία δραστηριότητες</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="208"/>
@@ -16226,17 +16223,17 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintbasiccompulsorytimeform.cpp" line="160"/>
         <source>Do you really want to remove the basic compulsory time constraint?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Σίγουρα θέλετε να διαγράψετε τον βασικό υποχρεωτικό χρονικό περιορισμό;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintbasiccompulsorytimeform.cpp" line="162"/>
         <source>You cannot generate a timetable without this constraint.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Δεν μπορείτε να δημιουργήσετε ωρολόγιο πρόγραμμα χωρίς αυτόν τον περιορισμό.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintbasiccompulsorytimeform.cpp" line="164"/>
         <source>Note: you can add again a constraint of this type from the menu Data -&gt; Time constraints -&gt; Miscellaneous -&gt; Basic compulsory time constraints.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Σημείωση: μπορείτε να προσθέσετε ξανά περιορισμό αυτού του τύπου από το μενού Δεδομένα -&gt; Χρονικοί περιορισμοί &gt; Διάφοροι -&gt; Βασικοί υποχρεωτικοί χρονικοί περιορισμοί.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintbasiccompulsorytimeform.cpp" line="167"/>
@@ -16345,7 +16342,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="5587"/>
         <source>Constraint break times is wrong because it refers to removed day. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;χρόνοι διαλειμμάτων&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ημέρα που έχει αφαιρεθεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;χρόνοι διαλειμμάτων&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ημέρα που έχει διαγραφεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -16540,7 +16537,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="2344"/>
         <source>Time constraint max days between activities broken: activity with id=%1 (%2) conflicts with activity with id=%3 (%4), being %5 days too far away, on days %6 and %7</source>
         <comment>%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.</comment>
-        <translation type="unfinished">Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μέγιστες ημέρες ανάμεσα σε δραστηριότητες&quot;: η δραστηριότητα με ατ %1 (%2) συγκρούεται με την δραστηριότητα με ατ =%3 (%4), &quot;απέχοντας&quot; %5 ημέρες, κατά τις ημέρες %6 και %7</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μέγιστες ημέρες ανάμεσα σε δραστηριότητες&quot;: η δραστηριότητα με ατ %1 (%2) συγκρούεται με την δραστηριότητα με ατ =%3 (%4), &quot;απέχοντας&quot; %5 ημέρες, κατά τις ημέρες %6 και %7</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="2355"/>
@@ -17258,7 +17255,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="552"/>
         <source>Constraint room not available times is wrong because it refers to inexistent room. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;αίθουσα μη διαθέσιμη&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη αίθουσα. Παρακαλώ διορθώστε τον (η αφαίρεσή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;αίθουσα - μη διαθέσιμοι χρόνοι&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη αίθουσα. Παρακαλώ διορθώστε τον (η διαγραφή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -17271,20 +17268,20 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="562"/>
         <source>Constraint room not available times is wrong because it refers to removed day. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;μη διαθέσιμοι χρόνοι αίθουσας&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ημέρα που έχει αφαιρεθεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;αίθουσα - μη διαθέσιμοι χρόνοι&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ημέρα που έχει διαγραφεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="569"/>
         <source>Constraint room not available times is wrong because an hour is too late (after the last acceptable slot). Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;μη διαθέσιμοι χρόνοι αίθουσας&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ώρα που είναι πολύ αργά (μετά την τελευταία αποδεκτή περίοδο) Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;αίθουσα - μη διαθέσιμοι χρόνοι&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ώρα που είναι πολύ αργά (μετά την τελευταία αποδεκτή περίοδο) Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="619"/>
         <source>Space constraint room not available times broken for room: %1, on day %2, hour %3</source>
-        <translation>Δεν έχει τηρηθεί περιορισμός &quot;μη διαθέσιμοι χρόνοι αίθουσας&quot; για την αίθουσα: %1, κατά την ημέρα %2, ώρα %3</translation>
+        <translation>Δεν έχει τηρηθεί περιορισμός &quot;αίθουσα - μη διαθέσιμοι χρόνοι&quot; για την αίθουσα: %1, κατά την ημέρα %2, ώρα %3</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="624"/>
@@ -17430,7 +17427,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="7871"/>
         <location filename="../src/engine/timeconstraint.cpp" line="7899"/>
         <source>Time constraint students, activity tag %1, max %2 hours continuously, broken for subgroup %3, on day %4, length=%5.</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μέγιστες %2 ώρες συνεχόμενα, με ετικέτα δραστηριότητας %1&quot; για το υποτμήμα %3, κατά την ημέρα %4, διάρκεια=%5.</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μαθητές - ετικέτα δραστηριότητας %1,  μέγιστες %2 ώρες συνεχόμενα&quot; για το υποτμήμα %3, κατά την ημέρα %4, διάρκεια=%5.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7882"/>
@@ -17587,7 +17584,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16591"/>
         <source>Time constraint students, activity tag %1, max %2 hours daily, broken for subgroup %3, on day %4, length=%5.</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μέγιστες %2 ώρες ημερησίως, με ετικέτα δραστηριότητας %1&quot; για το υποτμήμα %3, κατά την ημέρα %4, διάρκεια=%5.</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μαθητές - ετικέτα δραστηριότητας %1, μέγιστες %2 ώρες ημερησίως&quot; για το υποτμήμα %3, κατά την ημέρα %4, διάρκεια=%5.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16602"/>
@@ -17700,7 +17697,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6274"/>
         <source>Students must arrive early, respecting maximum %1 arrivals at second hour</source>
-        <translation>Μαθητές πρέπει να φθάνουν νωρίς, τηρούμενων των %1 κατά μέγιστο αφίξεων την δεύτερη ώρα</translation>
+        <translation>Οι μαθητές πρέπει να φθάνουν νωρίς, τηρούμενων των %1 κατά μέγιστο αφίξεων την δεύτερη ώρα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6277"/>
@@ -17742,7 +17739,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6346"/>
         <source>Constraint students early max %1 beginnings at second hour broken for subgroup %2, on day %3, because students have an illegal gap, increases conflicts total by %4</source>
-        <translation>Δεν έχει τηρηθεί περιορισμός &quot;μέγιστες %1 ενάρξεις την δεύτερη ώρα για μαθητές&quot; για το υποτμήμα %2, κατά την ημέρα %3, διότι οι μαθητές έχουν ένα μη επιτρεπτό κενό. Το σύνολο τον συγκρούσεων αυξάνεται κατά %4</translation>
+        <translation>Δεν έχει τηρηθεί περιορισμός &quot;μαθητές- μέγιστες %1 ενάρξεις την δεύτερη ώρα&quot; για το υποτμήμα %2, κατά την ημέρα %3, διότι οι μαθητές έχουν ένα μη επιτρεπτό κενό. Το σύνολο τον συγκρούσεων αυξάνεται κατά %4</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6372"/>
@@ -17837,21 +17834,21 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="15404"/>
         <source>Constraint students interval max days per week is wrong because start hour &gt;= end hour. Please correct it. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα για μαθητές&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &gt;= ώρα λήξης. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;μαθητές - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &gt;= ώρα λήξης. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15411"/>
         <source>Constraint students interval max days per week is wrong because start hour &lt; first hour of the day. Please correct it. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα για μαθητές&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &lt; πρώτη ώρα της ημέρας. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;μαθητές - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &lt; πρώτη ώρα της ημέρας. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15418"/>
         <source>Constraint students interval max days per week is wrong because end hour &gt; number of hours per day. Please correct it. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα για μαθητές&quot; παρουσιάζει σφάλμα, διότι ώρα λήξης &gt; αριθμό ωρών ανά ημέρα. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;μαθητές - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα λήξης &gt; αριθμό ωρών ανά ημέρα. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -17863,7 +17860,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15465"/>
         <source>Students interval max days per week</source>
-        <translation>Διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα για μαθητές</translation>
+        <translation>Μαθητές - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15466"/>
@@ -17904,7 +17901,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15483"/>
         <source>All students respect working in an hourly interval a maximum number of days per week</source>
-        <translation>Η εργασία σε χρονικό διάστημα για μέγιστο αριθμό ημερών ανά εβδομάδα τηρείται σε όλους τους μαθητές</translation>
+        <translation>Για όλους τους μαθητές τηρείται το χρονικό διάστημα δραστηριοτήτων σε μέγιστο αριθμό ημερών ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15484"/>
@@ -17925,7 +17922,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15493"/>
         <source>Maximum days per week=%1</source>
-        <translation type="unfinished">Μέγιστες ημέρες ανά εδβομάδα=%1</translation>
+        <translation>Μέγιστες ημέρες ανά εδβομάδα=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15496"/>
@@ -17941,7 +17938,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15541"/>
         <source>Time constraint students interval max days per week broken for subgroup: %1, allowed %2 days, required %3 days.</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα για μαθητές&quot; για το υποτμήμα: %1, διότι ενώ επιτρεπόταν %2 ημέρες, απαιτήθηκαν %3 ημέρες.</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μαθητές - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; για το υποτμήμα: %1, διότι ενώ επιτρεπόταν %2 ημέρες, απαιτήθηκαν %3 ημέρες.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15546"/>
@@ -18034,7 +18031,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4179"/>
         <source>Students max building changes per day</source>
-        <translation>Μέγιστες αλλαγές κτιρίου ανά ημέρα για μαθητές</translation>
+        <translation>Μαθητές - μέγιστες αλλαγές κτιρίου ανά ημέρα</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4181"/>
@@ -18056,7 +18053,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4194"/>
         <source>Students maximum building changes per day</source>
-        <translation>Μέγιστες αλλαγές κτιρίου ανά ημέρα για μαθητές</translation>
+        <translation>Μαθητές - μέγιστες αλλαγές κτιρίου ανά ημέρα</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4196"/>
@@ -18082,7 +18079,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4270"/>
         <source>Space constraint students max building changes per day broken for students=%1 on day %2</source>
-        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;μέγιστες αλλαγές κτιρίου ανά ημέρα για μαθητές&quot; για τους μαθητές=%1 κατά την ημέρα %2</translation>
+        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;μαθητές - μέγιστες αλλαγές κτιρίου ανά ημέρα&quot; για τους μαθητές=%1 κατά την ημέρα %2</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4274"/>
@@ -18175,7 +18172,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4703"/>
         <source>Students max building changes per week</source>
-        <translation>Μέγιστες αλλαγές κτιρίου ανά εβδομάδα για μαθητές</translation>
+        <translation>Μαθητές - μέγιστες αλλαγές κτιρίου ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4705"/>
@@ -18197,7 +18194,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4718"/>
         <source>Students maximum building changes per week</source>
-        <translation>Μέγιστες αλλαγές κτιρίου ανά εβδομάδα για μαθητές</translation>
+        <translation>Μαθητές - μέγιστες αλλαγές κτιρίου ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4720"/>
@@ -18223,7 +18220,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4795"/>
         <source>Space constraint students max building changes per week broken for students=%1</source>
-        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;μέγιστες αλλαγές κτιρίου ανά εβδομάδα για μαθητές&quot; για τους μαθητές=%1</translation>
+        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;μαθητές - μέγιστες αλλαγές κτιρίου ανά εβδομάδα&quot; για τους μαθητές=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4798"/>
@@ -18316,7 +18313,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18486"/>
         <source>Students max days per week</source>
-        <translation>Μέγιστες ημέρες ανά εβδομάδα για μαθητές</translation>
+        <translation>Μαθητές - μέγιστες ημέρες ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18487"/>
@@ -18338,7 +18335,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18497"/>
         <source>All students must respect the maximum number of days per week</source>
-        <translation>Ο μέγιστος αριθμός ημερών ανά εβδομάδα πρέπει να τηρείται για όλους τους μαθητές</translation>
+        <translation>Για όλους τους μαθητές πρέπει να τηρείται ο μέγιστος αριθμός ημερών ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18498"/>
@@ -18364,7 +18361,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18547"/>
         <source>Time constraint students max days per week broken for subgroup: %1, allowed %2 days, required %3 days.</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μέγιστες μέρες ανά εβδομάδα για μαθητές&quot; για το υποτμήμα %1, διότι ενώ επιτρεπόταν %2 ημέρες, απαιτήθηκαν %3 ημέρες.</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μαθητές - μέγιστες ημέρες ανά εβδομάδα&quot; για το υποτμήμα: %1, διότι ενώ επιτρεπόταν %2 ημέρες, απαιτήθηκαν %3 ημέρες.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18552"/>
@@ -18457,7 +18454,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17028"/>
         <source>Students max gaps per day</source>
-        <translation>Μέγιστα κενά ανά ημέρα για μαθητές</translation>
+        <translation>Μαθητές - μέγιστα κενά ανά ημέρα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17029"/>
@@ -18485,7 +18482,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17041"/>
         <source>All students must respect the maximum number of gaps per day</source>
-        <translation>Ο μέγιστος αριθμός κενών ανά ημέρα πρέπει να τηρείται για όλους τους μαθητές</translation>
+        <translation>Για όλους τους μαθητές πρέπει να τηρείται ο μέγιστος αριθμός κενών ανά ημέρα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17042"/>
@@ -18516,7 +18513,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17103"/>
         <source>Time constraint students max gaps per day broken for subgroup: %1, it has %2 extra gaps, on day %3, conflicts increase=%4</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μέγιστα κενά ανά ημέρα για μαθητές&quot; για το υποτμήμα: %1, έχει %2 επιπλέον κενά, την ημέρα %3, αύξηση συγκρούσεων=%4</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot; μαθητές - μέγιστα κενά ανά ημέρα&quot; για το υποτμήμα: %1, έχει %2 επιπλέον κενά, την ημέρα %3, αύξηση συγκρούσεων=%4</translation>
     </message>
 </context>
 <context>
@@ -18614,7 +18611,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5803"/>
         <source>Students max gaps per week</source>
-        <translation>Μέγιστα κενά ανά εβδομάδα για μαθητές</translation>
+        <translation>Μαθητές - μέγιστα κενά ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5804"/>
@@ -18636,7 +18633,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5815"/>
         <source>All students must respect the maximum number of gaps per week</source>
-        <translation>Ο μέγιστος αριθμός κενών ανά εβδομάδα πρέπει να τηρείται για όλους τους μαθητές</translation>
+        <translation>Για όλους τους μαθητές πρέπει να τηρείται ο μέγιστος αριθμός κενών ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5816"/>
@@ -18667,7 +18664,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5877"/>
         <source>Time constraint students max gaps per week broken for subgroup: %1, it has %2 extra gaps, conflicts increase=%3</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μέγιστα κενά ανά εβδομάδα για μαθητές&quot; για το υποτμήμα: %1, έχει %2 επιπλέον κενά, αύξηση συγκρούσεων=%3</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μαθητές - μέγιστα κενά ανά εβδομάδα&quot; για το υποτμήμα: %1, έχει %2 επιπλέον κενά, αύξηση συγκρούσεων=%3</translation>
     </message>
 </context>
 <context>
@@ -18755,7 +18752,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7266"/>
         <source>Students max hours continuously</source>
-        <translation>Μέγιστες ώρες συνεχόμενα για μαθητές</translation>
+        <translation>Μαθητές - μέγιστες ώρες συνεχόμενα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7267"/>
@@ -18777,7 +18774,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7278"/>
         <source>All students must respect the maximum number of hours continuously</source>
-        <translation>Ο μέγιστος αριθμός ωρών συνεχόμενα πρέπει να τηρείται για όλους τους μαθητές</translation>
+        <translation>Για όλους τους μαθητές πρέπει να τηρείται ο μέγιστος αριθμός ωρών συνεχόμενα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7279"/>
@@ -18804,7 +18801,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="7320"/>
         <location filename="../src/engine/timeconstraint.cpp" line="7347"/>
         <source>Time constraint students max %1 hours continuously broken for subgroup %2, on day %3, length=%4.</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μέγιστες %1 ώρες συνεχόμενα&quot; για το υποτμήμα %2, την ημέρα %3, διάρκεια=%4.</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μαθητές - μέγιστες %1 ώρες συνεχόμενα&quot; για το υποτμήμα %2, την ημέρα %3, διάρκεια=%4.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7330"/>
@@ -18898,7 +18895,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6810"/>
         <source>Students max hours daily</source>
-        <translation>Μέγιστες ώρες ημερησίως για μαθητές</translation>
+        <translation>Μαθητές - μέγιστες ώρες ημερησίως</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6811"/>
@@ -18920,7 +18917,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6822"/>
         <source>All students must respect the maximum number of hours daily</source>
-        <translation>Ο μέγιστος αριθμός ωρών ημερησίως πρέπει να τηρείται για όλους τους μαθητές</translation>
+        <translation>Για όλους τους μαθητές πρέπει να τηρείται ο μέγιστος αριθμός ωρών ημερησίως</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6823"/>
@@ -18946,7 +18943,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6871"/>
         <source>Time constraint students max hours daily broken for subgroup: %1, day: %2, lenght=%3, conflict increase=%4</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μέγιστες ώρες ημερησίως για μαθητές&quot; για το υποτμήμα: %1, ημέρα %2 διάρκεια %3, αύξηση συγκρούσεων=%4</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μαθητές - μέγιστες ώρες ημερησίως&quot; για το υποτμήμα: %1, ημέρα %2 διάρκεια %3, αύξηση συγκρούσεων=%4</translation>
     </message>
 </context>
 <context>
@@ -19034,7 +19031,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19311"/>
         <source>Students max span per day</source>
-        <translation>Μέγιστη παραμονή ανά ημέρα για μαθητές</translation>
+        <translation>Μαθητές - μέγιστη παραμονή ανά ημέρα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19312"/>
@@ -19056,7 +19053,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19323"/>
         <source>All students must respect the maximum number of span (in hours) per day</source>
-        <translation>Η μέγιστη παραμονή (σε αριθμό ωρών) πρέπει να τηρείται για όλους τους μαθητές</translation>
+        <translation>Για όλους τους μαθητές πρέπει να τηρείται η μέγιστη παραμονή (σε αριθμό ωρών)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19324"/>
@@ -19170,7 +19167,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5238"/>
         <source>Students min gaps between building changes</source>
-        <translation>Ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου για μαθητές</translation>
+        <translation>Μαθητές - ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5240"/>
@@ -19192,7 +19189,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5253"/>
         <source>Students minimum gaps between building changes</source>
-        <translation>Ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου για μαθητές</translation>
+        <translation>Μαθητές - ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5255"/>
@@ -19218,7 +19215,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5333"/>
         <source>Space constraint students min gaps between building changes broken for students=%1 on day %2</source>
-        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου για μαθητές&quot; για τους μαθητές=%1 την ημέρα %2</translation>
+        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;μαθητές - ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου&quot; για τους μαθητές=%1 την ημέρα %2</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5337"/>
@@ -19311,7 +19308,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8379"/>
         <source>Students min hours daily</source>
-        <translation>Ελάχιστες ώρες ημερησίως για μαθητές</translation>
+        <translation>Μαθητές - ελάχιστες ώρες ημερησίως</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8380"/>
@@ -19340,12 +19337,13 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8393"/>
         <source>(nonstandard, students may have empty days)</source>
-        <translation type="unfinished">(μη σύνηθες, οι μαθητές μπορεί να έχουν κενές ημέρες)</translation>
+        <translatorcomment>not usual, not standard. να μην χρησιμοποιηθεί το &quot;μη απαραίτητο&quot; / &quot;μη υποχρεωτικό&quot;</translatorcomment>
+        <translation>(μη συνήθης, οι μαθητές μπορεί να έχουν κενές ημέρες)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8396"/>
         <source>All students must respect the minimum number of hours daily</source>
-        <translation>Ο ελάχιστος αριθμός ωρών ημερησίως πρέπει να τηρείται για όλους τους μαθητές</translation>
+        <translation>Για όλους τους μαθητές πρέπει να τηρείται ο ελάχιστος αριθμός ωρών ημερησίως</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8397"/>
@@ -19376,7 +19374,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8449"/>
         <source>Time constraint students min hours daily broken for subgroup: %1, day: %2, lenght=%3, conflict increase=%4</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;ελάχιστες ώρες ημερησίως&quot; για το υποτμήμα: %1, ημέρα %2, διάρκεια=%3, αύξηση συγκρούσεων=%4</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μαθητές - ελάχιστες ώρες ημερησίως&quot; για το υποτμήμα: %1, ημέρα %2, διάρκεια=%3, αύξηση συγκρούσεων=%4</translation>
     </message>
 </context>
 <context>
@@ -19474,7 +19472,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="20151"/>
         <source>Students min resting hours</source>
-        <translation>Ελάχιστες ώρες ανάπαυσης για μαθητές</translation>
+        <translation>Μαθητές - ελάχιστες ώρες ανάπαυσης</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="20152"/>
@@ -19503,7 +19501,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="20164"/>
         <source>All students must respect the minimum resting hours (between days)</source>
-        <translation>Οι ελάχιστες ώρες ανάπαυσης (ανάμεσα σε ημέρες) πρέπει να τηρούνται για όλους τους μαθητές</translation>
+        <translation>Για όλους τους μαθητές πρέπει να τηρούνται οι ελάχιστες ώρες ανάπαυσης (ανάμεσα σε ημέρες)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="20165"/>
@@ -19680,14 +19678,14 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="8080"/>
         <source>Constraint students set max hours continuously is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;μέγιστες ώρες συνεχόμενα για ομάδα μαθητών&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η αφαίρεσή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;ομάδα μαθητών - μέγιστες ώρες συνεχόμενα&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η διαγραφή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8196"/>
         <location filename="../src/engine/timeconstraint.cpp" line="8223"/>
         <source>Time constraint students set max %1 hours continuously broken for subgroup %2, on day %3, length=%4.</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μέγιστες %1 ώρες συνεχόμενα για ομάδα μαθητών&quot; για το υποτμήμα %2, την ημέρα %3, διάρκεια=%4.</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;ομάδα μαθητών - μέγιστες %1 ώρες συνεχόμενα&quot; για το υποτμήμα %2, την ημέρα %3, διάρκεια=%4.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8206"/>
@@ -19855,13 +19853,13 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="16774"/>
         <source>Constraint students set max hours daily is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;μέγιστες ώρες ημερησίως για ομάδα μαθητών&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η αφαίρεσή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;ομάδα μαθητών - μέγιστες ώρες ημερησίως&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η διαγραφή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16885"/>
         <source>Time constraint students set, activity tag %1, max %2 hours daily, broken for subgroup %3, on day %4, length=%5.</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μέγιστες %2 ώρες ημερησίως, με ετικέτα δραστηριότητας %1 για ομάδα μαθητών&quot; για το υποτμήμα %3, κατά την ημέρα %4, διάρκεια=%5.</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;ομάδα μαθητών - ετικέτα δραστηριότητας %1, μέγιστες %2 ώρες ημερησίως &quot; για το υποτμήμα %3, κατά την ημέρα %4, διάρκεια=%5.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16896"/>
@@ -19974,7 +19972,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="6484"/>
         <source>Constraint students set early is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;μαθητές ξεκινούν νωρίς&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η αφαίρεσή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;ομάδα μαθητών - νωρίς&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η διαγραφή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -20044,12 +20042,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6641"/>
         <source>Constraint students set early max %1 beginnings at second hour broken for subgroup %2, on day %3, because students have an illegal gap, increases conflicts total by %4</source>
-        <translation>Δεν έχει τηρηθεί περιορισμός &quot;μέγιστες %1 ενάρξεις την δεύτερη ώρα για ομάδα μαθητών&quot; για το υποτμήμα %2, κατά την ημέρα %3, διότι οι μαθητές έχουν ένα μη επιτρεπτό κενό. Το σύνολο τον συγκρούσεων αυξάνεται κατά %4</translation>
+        <translation>Δεν έχει τηρηθεί περιορισμός &quot;ομάδα μαθητών - νωρίς, μέγιστες %1 ενάρξεις την δεύτερη ώρα&quot; για το υποτμήμα %2, κατά την ημέρα %3, διότι οι μαθητές έχουν ένα μη επιτρεπτό κενό. Το σύνολο τον συγκρούσεων αυξάνεται κατά %4</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6666"/>
         <source>Constraint students set early max %1 beginnings at second hour broken for subgroup %2, because students have too many arrivals at second hour, increases conflicts total by %3</source>
-        <translation>Δεν έχει τηρηθεί περιορισμός &quot;μέγιστες %1 ενάρξεις την δεύτερη ώρα για ομάδα μαθητών&quot; για το υποτμήμα %2, διότι οι μαθητές έχουν πολλές αφίξεις κατά την δεύτερη ώρα. Το σύνολο τον συγκρούσεων αυξάνεται κατά %3</translation>
+        <translation>Δεν έχει τηρηθεί περιορισμός &quot;ομάδα μαθητών - νωρίς, μέγιστες %1 ενάρξεις την δεύτερη ώρα&quot; για το υποτμήμα %2, διότι οι μαθητές έχουν πολλές αφίξεις κατά την δεύτερη ώρα. Το σύνολο τον συγκρούσεων αυξάνεται κατά %3</translation>
     </message>
 </context>
 <context>
@@ -20142,7 +20140,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="1344"/>
         <location filename="../src/engine/spaceconstraint.cpp" line="1360"/>
         <source>Students set home room</source>
-        <translation>Βασική αίθουσα για ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών - βασική αίθουσα</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1301"/>
@@ -20210,7 +20208,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="1430"/>
         <source>Space constraint students set home room broken for activity with id %1 (%2)</source>
         <comment>%1 is activity id, %2 is detailed description of activity</comment>
-        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;βασική αίθουσα για ομάδα μαθητών&quot; για την δραστηριότητα με ατ %1 (%2)</translation>
+        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;ομάδα μαθητών - βασική αίθουσα&quot; για την δραστηριότητα με ατ %1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1435"/>
@@ -20326,7 +20324,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="1624"/>
         <location filename="../src/engine/spaceconstraint.cpp" line="1641"/>
         <source>Students set home rooms</source>
-        <translation>Βασική αίθουσα για ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών - βασικές αίθουσες</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1625"/>
@@ -20381,7 +20379,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="1717"/>
         <source>Space constraint students set home rooms broken for activity with id %1 (%2)</source>
         <comment>%1 is activity id, %2 is detailed description of activity</comment>
-        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;βασικές αίθουσες για ομάδα μαθητών&quot; για την δραστηριότητα με ατ %1 (%2)</translation>
+        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;ομάδα μαθητών - βασικές αίθουσες &quot; για την δραστηριότητα με ατ %1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1722"/>
@@ -20487,28 +20485,28 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="15099"/>
         <source>Constraint students set interval max days per week is wrong because start hour &gt;= end hour. Please correct it. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα για ομάδα μαθητών&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &gt;= ώρα λήξης. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;ομάδα μαθητών - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &gt;= ώρα λήξης. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15106"/>
         <source>Constraint students set interval max days per week is wrong because start hour &lt; first hour of the day. Please correct it. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα για ομάδα μαθητών&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &lt; πρώτη ώρα της ημέρας. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;ομάδα μαθητών - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &lt; πρώτη ώρα της ημέρας. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15113"/>
         <source>Constraint students set interval max days per week is wrong because end hour &gt; number of hours per day. Please correct it. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα για ομάδα μαθητών&quot; παρουσιάζει σφάλμα, διότι ώρα λήξης &gt; αριθμό ωρών ανά ημέρα. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;ομάδα μαθητών - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα λήξης &gt; αριθμό ωρών ανά ημέρα. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15125"/>
         <source>Constraint students set interval max days per week is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα για ομάδα μαθητών&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η αφαίρεσή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;ομάδα μαθητών - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η διαγραφή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -20520,7 +20518,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15214"/>
         <source>Students set interval max days per week</source>
-        <translation>Διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα για ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15215"/>
@@ -20569,7 +20567,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15233"/>
         <source>A students set respects working in an hourly interval a maximum number of days per week</source>
-        <translation>Η εργασία σε χρονικό διάστημα για μέγιστο αριθμό ημερών ανά εβδομάδα τηρείται για ομάδα μαθητών</translation>
+        <translation>Για ομάδα μαθητών τηρείται το διάστημα δραστηριοτήτων σε μέγιστο αριθμό ημερών ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15234"/>
@@ -20611,7 +20609,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15292"/>
         <source>Time constraint students set interval max days per week broken for subgroup: %1, allowed %2 days, required %3 days.</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα για ομάδα μαθητών&quot; για το υποτμήμα: %1, διότι ενώ επιτρεπόταν %2 ημέρες, απαιτήθηκαν %3 ημέρες.</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;ομάδα μαθητών - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; για το υποτμήμα: %1, διότι ενώ επιτρεπόταν %2 ημέρες, απαιτήθηκαν %3 ημέρες.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15297"/>
@@ -20709,7 +20707,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="3861"/>
         <source>Constraint students set max building changes per day is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Χωρικός περιορισμός &quot;μέγιστες αλλαγές κτιρίου ανά ημέρα για ομάδα μαθητών&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η αφαίρεσή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
+        <translation>Χωρικός περιορισμός &quot;ομάδα μαθητών - μέγιστες αλλαγές κτιρίου ανά ημέρα&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η διαγραφή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -20721,7 +20719,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3940"/>
         <source>Students set max building changes per day</source>
-        <translation>Μέγιστες αλλαγές κτιρίου ανά ημέρα για ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών - μέγιστες αλλαγές κτιρίου ανά ημέρα</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3942"/>
@@ -20749,7 +20747,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3957"/>
         <source>Students set maximum building changes per day</source>
-        <translation>Μέγιστες αλλαγές κτιρίου ανά ημέρα για ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών - μέγιστες αλλαγές κτιρίου ανά ημέρα</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3959"/>
@@ -20780,7 +20778,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4035"/>
         <source>Space constraint students set max building changes per day broken for students=%1 on day %2</source>
-        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;μέγιστες αλλαγές κτιρίου ανά ημέρα για ομάδα μαθητών&quot; για τους μαθητές=%1 κατά την ημέρα %2</translation>
+        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;ομάδα μαθητών - μέγιστες αλλαγές κτιρίου ανά ημέρα&quot; για τους μαθητές=%1 κατά την ημέρα %2</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4039"/>
@@ -20878,7 +20876,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="4385"/>
         <source>Constraint students set max building changes per week is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Χωρικός περιορισμός &quot;μέγιστες αλλαγές κτιρίου ανά εβδομάδα για ομάδα μαθητών&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η αφαίρεσή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
+        <translation>Χωρικός περιορισμός &quot;ομάδα μαθητών - μέγιστες αλλαγές κτιρίου ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η διαγραφή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -20890,7 +20888,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4464"/>
         <source>Students set max building changes per week</source>
-        <translation>Μέγιστες αλλαγές κτιρίου ανά εβδομάδα για ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών - μέγιστες αλλαγές κτιρίου ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4466"/>
@@ -20918,7 +20916,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4481"/>
         <source>Students set maximum building changes per week</source>
-        <translation>Μέγιστες αλλαγές κτιρίου ανά εβδομάδα για ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών - μέγιστες αλλαγές κτιρίου ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4483"/>
@@ -20949,7 +20947,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4560"/>
         <source>Space constraint students set max building changes per week broken for students=%1</source>
-        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;μέγιστες αλλαγές κτιρίου ανά εβδομάδα για ομάδα μαθητών&quot; για τους μαθητές=%1</translation>
+        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;ομάδα μαθητών - μέγιστες αλλαγές κτιρίου ανά εβδομάδα&quot; για τους μαθητές=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4563"/>
@@ -21047,7 +21045,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="18208"/>
         <source>Constraint students set max days per week is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;μέγιστες ημέρες ανά εβδομάδα για ομάδα μαθητών&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η αφαίρεσή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;ομάδα μαθητών - μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η διαγραφή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -21059,7 +21057,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18289"/>
         <source>Students set max days per week</source>
-        <translation>Μέγιστες ημέρες ανά εβδομάδα για ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών - μέγιστες ημέρες ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18290"/>
@@ -21087,7 +21085,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18301"/>
         <source>A students set must respect the maximum number of days per week</source>
-        <translation>Ο περιορισμός &quot;μέγιστες ημέρες ανά εβδομάδα&quot; πρέπει να τηρείται για ομάδα μαθητών</translation>
+        <translation>Για ομάδα μαθητών πρέπει να τηρείται ο μέγιστος αριθμός ημερών ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18302"/>
@@ -21118,7 +21116,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18353"/>
         <source>Time constraint students set max days per week broken for subgroup: %1, allowed %2 days, required %3 days.</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μέγιστες μέρες ανά εβδομάδα για ομάδα μαθητών&quot; για το υποτμήμα %1, διότι ενώ επιτρεπόταν %2 ημέρες, απαιτήθηκαν %3 ημέρες.</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;ομάδα μαθητών - μέγιστες ημέρες ανά εβδομάδα&quot; για το υποτμήμα %1, διότι ενώ επιτρεπόταν %2 ημέρες, απαιτήθηκαν %3 ημέρες.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18358"/>
@@ -21216,7 +21214,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="17210"/>
         <source>Constraint students set max gaps per day is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;μέγιστα κενά ανά ημέρα για ομάδα μαθητών&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η αφαίρεσή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;ομάδα μαθητών - μέγιστα κενά ανά ημέρα&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η διαγραφή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -21228,7 +21226,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17292"/>
         <source>Students set max gaps per day</source>
-        <translation>Μέγιστα κενά ανά ημέρα για ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών - μέγιστα κενά ανά ημέρα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17293"/>
@@ -21263,7 +21261,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17305"/>
         <source>A students set must respect the maximum number of gaps per day</source>
-        <translation>Ο μέγιστος αριθμός κενών ανά ημέρα πρέπει να τηρείται για ομάδα μαθητών</translation>
+        <translation>Για ομάδα μαθητών πρέπει να τηρείται ο μέγιστος αριθμός κενών ανά ημέρα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17306"/>
@@ -21299,7 +21297,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17369"/>
         <source>Time constraint students set max gaps per day broken for subgroup: %1, extra gaps=%2, on day %3, conflicts increase=%4</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μέγιστα κενά ανά ημέρα για ομάδα μαθητών&quot; για το υποτμήμα: %1, έχει %2 επιπλέον κενά, την ημέρα %3, αύξηση συγκρούσεων=%4</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;ομάδα μαθητών - μέγιστα κενά ανά ημέρα&quot; για το υποτμήμα: %1, έχει %2 επιπλέον κενά, την ημέρα %3, αύξηση συγκρούσεων=%4</translation>
     </message>
 </context>
 <context>
@@ -21402,7 +21400,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="5982"/>
         <source>Constraint students set max gaps per week is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;μέγιστα κενά ανά εβδομάδα για ομάδα μαθητών&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η αφαίρεσή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;ομάδα μαθητών - μέγιστα κενά ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η διαγραφή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -21414,7 +21412,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6063"/>
         <source>Students set max gaps per week</source>
-        <translation>Μέγιστα κενά ανά εβδομάδα για ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών - μέγιστα κενά ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6064"/>
@@ -21443,7 +21441,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6075"/>
         <source>A students set must respect the maximum number of gaps per week</source>
-        <translation>Ο μέγιστος αριθμός κενών ανά εβδομάδα πρέπει να τηρείται για ομάδα μαθητών</translation>
+        <translation>Για ομάδα μαθητών πρέπει να τηρείται ο μέγιστος αριθμός κενών ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6076"/>
@@ -21479,7 +21477,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6139"/>
         <source>Time constraint students set max gaps per week broken for subgroup: %1, extra gaps=%2, conflicts increase=%3</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μέγιστα κενά ανά εβδομάδα για ομάδα μαθητών&quot; για το υποτμήμα: %1, έχει %2 επιπλέον κενά, αύξηση συγκρούσεων=%3</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;ομάδα μαθητών - μέγιστα κενά ανά εβδομάδα&quot; για το υποτμήμα: %1, έχει %2 επιπλέον κενά, αύξηση συγκρούσεων=%3</translation>
     </message>
 </context>
 <context>
@@ -21572,7 +21570,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7486"/>
         <source>Students set max hours continuously</source>
-        <translation>Μέγιστες ώρες συνεχόμενα για ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών - μέγιστες ώρες συνεχόμενα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7487"/>
@@ -21600,7 +21598,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7499"/>
         <source>A students set must respect the maximum number of hours continuously</source>
-        <translation>Ο μέγιστος αριθμός ωρών συνεχόμενα πρέπει να τηρείται για ομάδα μαθητών</translation>
+        <translation>Για ομάδα μαθητών πρέπει να τηρείται ο μέγιστος αριθμός ωρών συνεχόμενα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7500"/>
@@ -21637,14 +21635,14 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="7523"/>
         <source>Constraint students set max hours continuously is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;μέγιστες ώρες συνεχόμενα για ομάδα μαθητών&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η αφαίρεσή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;ομάδα μαθητών - μέγιστες ώρες συνεχόμενα&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η διαγραφή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7599"/>
         <location filename="../src/engine/timeconstraint.cpp" line="7626"/>
         <source>Time constraint students set max %1 hours continuously broken for subgroup %2, on day %3, length=%4.</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μέγιστες %1 ώρες συνεχόμενα για ομάδα μαθητών&quot; για το υποτμήμα %2, την ημέρα %3, διάρκεια=%4.</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;ομάδα μαθητών - μέγιστες %1 ώρες συνεχόμενα&quot; για το υποτμήμα %2, την ημέρα %3, διάρκεια=%4.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7609"/>
@@ -21743,7 +21741,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7005"/>
         <source>Students set max hours daily</source>
-        <translation>Μέγιστες ώρες ημερησίως για ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών - μέγιστες ώρες ημερησίως</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7006"/>
@@ -21772,7 +21770,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7018"/>
         <source>A students set must respect the maximum number of hours daily</source>
-        <translation>Ο μέγιστος αριθμός ωρών ημερησίως πρέπει να τηρείται για ομάδα μαθητών</translation>
+        <translation>Για ομάδα μαθητών πρέπει να τηρείται ο μέγιστος αριθμός ωρών ημερησίως</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7019"/>
@@ -21809,13 +21807,13 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="7042"/>
         <source>Constraint students set max hours daily is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;μέγιστες ώρες ημερησίως για ομάδα μαθητών&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η αφαίρεσή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;ομάδα μαθητών - μέγιστες ώρες ημερησίως&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η διαγραφή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7125"/>
         <source>Time constraint students set max hours daily broken for subgroup: %1, day: %2, lenght=%3, conflicts increase=%4</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μέγιστες ώρες ημερησίως για ομάδα μαθητών&quot; για το υποτμήμα: %1, ημέρα %2 διάρκεια %3, αύξηση συγκρούσεων=%4</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;ομάδα μαθητών - μέγιστες ώρες ημερησίως&quot; για το υποτμήμα: %1, ημέρα %2 διάρκεια %3, αύξηση συγκρούσεων=%4</translation>
     </message>
 </context>
 <context>
@@ -21908,7 +21906,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19069"/>
         <source>Students set max span per day</source>
-        <translation>Μέγιστη παραμονή ανά ημέρα για ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών - μέγιστη παραμονή ανά ημέρα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19070"/>
@@ -21937,7 +21935,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19082"/>
         <source>A students set must respect the maximum number of span (in hours) per day</source>
-        <translation>Η μέγιστη παραμονή (σε αριθμό ωρών) πρέπει να τηρείται για ομάδα μαθητών</translation>
+        <translation>Για ομάδα μαθητών πρέπει να τηρείται η μέγιστη παραμονή (σε αριθμό ωρών) ανά ημέρα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19083"/>
@@ -21974,7 +21972,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="19106"/>
         <source>Constraint students set max span per day is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;μέγιστη παραμονή ανά ημέρα για ομάδα μαθητών&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η αφαίρεσή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;ομάδα μαθητών - μέγιστη παραμονή ανά ημέρα&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η διαγραφή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
 %1</translation>
     </message>
 </context>
@@ -22073,7 +22071,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="4908"/>
         <source>Constraint students set min gaps between building changes is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου για ομάδα μαθητών&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η αφαίρεσή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;ομάδα μαθητών - ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η διαγραφή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -22085,7 +22083,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4987"/>
         <source>Students set min gaps between building changes</source>
-        <translation>Ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου για ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών - ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4989"/>
@@ -22114,7 +22112,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5004"/>
         <source>Students set minimum gaps between building changes</source>
-        <translation>Ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου για ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών - ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5006"/>
@@ -22145,7 +22143,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5086"/>
         <source>Space constraint students set min gaps between building changes broken for students=%1 on day %2</source>
-        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου για ομάδα μαθητών&quot; για τους μαθητές=%1 την ημέρα %2</translation>
+        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;ομάδα μαθητών - ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου&quot; για τους μαθητές=%1 την ημέρα %2</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5090"/>
@@ -22243,7 +22241,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8598"/>
         <source>Students set min hours daily</source>
-        <translation>Ελάχιστες ώρες ημερησίως για ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών - ελάχιστες ώρες ημερησίως</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8599"/>
@@ -22279,12 +22277,13 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8613"/>
         <source>(nonstandard, students may have empty days)</source>
-        <translation type="unfinished">(μη τυπικό, οι μαθητές μπορεί να έχουν κενές ημέρες)</translation>
+        <translatorcomment>not usual, not standard. να μην χρησιμοποιηθεί το &quot;μη απαραίτητο&quot; / &quot;μη υποχρεωτικό&quot;</translatorcomment>
+        <translation>(μη συνήθης, οι μαθητές μπορεί να έχουν κενές ημέρες)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8616"/>
         <source>A students set must respect the minimum number of hours daily</source>
-        <translation>Ο ελάχιστος αριθμός ωρών ημερησίως πρέπει να τηρείται για ομάδα μαθητών</translation>
+        <translation>Για ομάδα μαθητών πρέπει να τηρείται ο ελάχιστος αριθμός ωρών ημερησίως</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8617"/>
@@ -22326,13 +22325,13 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="8641"/>
         <source>Constraint students set min hours daily is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;ελάχιστες ώρες ημερησίως για ομάδα μαθητών&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η αφαίρεσή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;ομάδα μαθητών - ελάχιστες ώρες ημερησίως&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η διαγραφή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8728"/>
         <source>Time constraint students set min hours daily broken for subgroup: %1, day: %2, lenght=%3, conflicts increase=%4</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;ελάχιστες ώρες ημερησίως για ομάδα μαθητών&quot; για το υποτμήμα: %1, ημέρα %2 διάρκεια %3, αύξηση συγκρούσεων=%4</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;ομάδα μαθητών - ελάχιστες ώρες ημερησίως&quot; για το υποτμήμα: %1, ημέρα %2 διάρκεια %3, αύξηση συγκρούσεων=%4</translation>
     </message>
 </context>
 <context>
@@ -22435,7 +22434,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19906"/>
         <source>Students set min resting hours</source>
-        <translation>Ελάχιστες ώρες ανάπαυσης για ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών - ελάχιστες ώρες ανάπαυσης</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19907"/>
@@ -22471,7 +22470,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19920"/>
         <source>A students set must respect the minimum resting hours (between days)</source>
-        <translation>Οι ελάχιστες ώρες ανάπαυσης (ανάμεσα σε ημέρες) πρέπει να τηρούνται για ομάδα μαθητών</translation>
+        <translation>Για ομάδα μαθητών πρέπει να τηρούνται οι ελάχιστες ώρες ανάπαυσης (ανάμεσα σε ημέρες)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19921"/>
@@ -22513,7 +22512,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="19945"/>
         <source>Constraint students set min resting hours is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;ελάχιστες ώρες ανάπαυσης για ομάδα μαθητών&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η αφαίρεσή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;ομάδα μαθητών - ελάχιστες ώρες ανάπαυσης&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η διαγραφή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
 %1</translation>
     </message>
 </context>
@@ -22612,7 +22611,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="823"/>
         <source>Constraint students set not available is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;μη διαθέσιμη ομάδα μαθητών&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η αφαίρεσή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;ομάδα μαθητών - μη διαθέσιμη&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτη ομάδα μαθητών. Παρακαλώ διορθώστε τον (η διαγραφή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -22625,14 +22624,14 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="833"/>
         <source>Constraint students set not available times is wrong because it refers to removed day. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;μη διαθέσιμοι χρόνοι για ομάδα μαθητών&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ημέρα που έχει αφαιρεθεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;ομάδα μαθητών - μη διαθέσιμοι χρόνοι&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ημέρα που έχει διαγραφεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="840"/>
         <source>Constraint students set not available times is wrong because an hour is too late (after the last acceptable slot). Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;μη διαθέσιμοι χρόνοι για ομάδα μαθητών&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ώρα που είναι πολύ αργά (μετά την τελευταία αποδεκτή περίοδο) Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;ομάδα μαθητών - μη διαθέσιμοι χρόνοι&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ώρα που είναι πολύ αργά (μετά την τελευταία αποδεκτή περίοδο) Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -22644,7 +22643,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="928"/>
         <source>Students set not available</source>
-        <translation>Μη διαθέσιμη ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών - μη διαθέσιμη</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="929"/>
@@ -22715,7 +22714,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="1012"/>
         <source>Time constraint students set not available</source>
-        <translation>Χρονικός περιορισμός &quot;μη διαθέσιμη ομάδα μαθητών&quot;</translation>
+        <translation>Χρονικός περιορισμός &quot;ομάδα μαθητών - μη διαθέσιμη&quot;</translation>
     </message>
 </context>
 <context>
@@ -22810,21 +22809,21 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="11277"/>
         <source>Constraint subactivities preferred starting times is wrong because it refers to removed day. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;προτιμητέοι χρόνοι έναρξης υποδραστηριοτήτων&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ημέρα που έχει αφαιρεθεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;υποδραστηριότητες - προτιμητέοι χρόνοι έναρξης&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ημέρα που έχει διαγραφεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11284"/>
         <source>Constraint subactivities preferred starting times is wrong because a preferred hour is too late (after the last acceptable slot). Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;προτιμητέοι χρόνοι έναρξης υποδραστηριοτήτων&quot; παρουσιάζει σφάλμα, διότι μία προτιμητέα ώρα είναι πολύ αργά (μετά την τελευταία αποδεκτή περίοδο). Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;υποδραστηριότητες - προτιμητέοι χρόνοι έναρξης&quot; παρουσιάζει σφάλμα, διότι μία προτιμητέα ώρα είναι πολύ αργά (μετά την τελευταία αποδεκτή περίοδο). Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11291"/>
         <source>Constraint subactivities preferred starting times is wrong because it refers to removed hour. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;προτιμητέοι χρόνοι έναρξης υποδραστηριοτήτων&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ώρα που έχει αφαιρεθεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;υποδραστηριότητες - προτιμητέοι χρόνοι έναρξης&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ώρα που έχει διαγραφεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -22889,7 +22888,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="11420"/>
         <source>Subactivities with %1, %2, %3, %4, %5, have a set of preferred starting times:</source>
         <comment>%1...%5 are conditions for the subactivities</comment>
-        <translation>Οι υποδραστηριότητες με %1, %2, %3, %4, %5, έχουν ένα σύνολο προτιμητέων χρόνων έναρξης:</translation>
+        <translation>Οι υποδραστηριότητες με %1, %2, %3, %4, %5, έχουν σύνολο προτιμητέων χρόνων έναρξης:</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11421"/>
@@ -22977,12 +22976,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="11541"/>
         <source>Time constraint subactivities preferred starting times broken for activity with id=%1 (%2), component number %3, increases conflicts total by %4</source>
         <comment>%1 is the id, %2 is the detailed description of the activity</comment>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;προτιμητέοι χρόνοι έναρξης υποδραστηριοτήτων&quot; για την δραστηριότητα με ατ=%1 (%2), αριθμό στοιχείου %3. Το σύνολο των συγκρούσεων αυξάνεται κατά %4</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;υποδραστηριότητες - προτιμητέοι χρόνοι έναρξης&quot; για την δραστηριότητα με ατ=%1 (%2), αριθμό στοιχείου %3. Το σύνολο των συγκρούσεων αυξάνεται κατά %4</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11473"/>
         <source>have a set of preferred starting times:</source>
-        <translation>έχουν ένα σύνολο προτιμητέων χρόνων έναρξης:</translation>
+        <translation>έχουν σύνολο προτιμητέων χρόνων έναρξης:</translation>
     </message>
 </context>
 <context>
@@ -23113,28 +23112,28 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="9987"/>
         <source>Constraint subactivities preferred time slots is wrong because it refers to removed day. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;προτιμητέες περίοδοι υποδραστηριοτήτων&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με μία ώρα που έχει αφαιρεθεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;υποδραστηριότητες - προτιμητέες περίοδοι&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με μία ώρα που έχει διαγραφεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9994"/>
         <source>Constraint subactivities preferred time slots is wrong because a preferred hour is too late (after the last acceptable slot). Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;προτιμητέες περίοδοι υποδραστηριοτήτων&quot; παρουσιάζει σφάλμα, διότι μία προτιμητέα ώρα είναι πολύ αργά (μετά την τελευταία αποδεκτή περίοδο). Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;υποδραστηριότητες - προτιμητέες περίοδοι&quot; παρουσιάζει σφάλμα, διότι μία προτιμητέα ώρα είναι πολύ αργά (μετά την τελευταία αποδεκτή περίοδο). Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10001"/>
         <source>Constraint subactivities preferred time slots is wrong because it refers to removed hour. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;προτιμητέες περίοδοι υποδραστηριοτήτων&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με μία ώρα που έχει αφαιρεθεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;υποδραστηριότητες - προτιμητέες περίοδοι&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με μία ώρα που έχει διαγραφεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10008"/>
         <source>Constraint subactivities preferred time slots is wrong because hour or day is not specified for a slot (-1). Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;προτιμητέες περίοδοι υποδραστηριοτήτων&quot; παρουσιάζει σφάλμα, διότι δεν προσδιορίζεται ώρα ή ημέρα για κάποια περίοδο (-1). Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;υποδραστηριότητες - προτιμητέες περίοδοι&quot; παρουσιάζει σφάλμα, διότι δεν προσδιορίζεται ώρα ή ημέρα για κάποια περίοδο (-1). Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -23271,7 +23270,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10192"/>
         <source>have a set of preferred time slots (all hours of each affected subactivity must be in the allowed slots):</source>
-        <translation>έχουν ένα σύνολο προτιμητέων περιόδων (όλες οι ώρες της κάθε υποδραστηριότητας που επηρεάζεται πρέπει να είναι στις επιτρεπτές περιόδους):</translation>
+        <translation>έχουν σύνολο προτιμητέων περιόδων (όλες οι ώρες της κάθε υποδραστηριότητας που επηρεάζεται πρέπει να είναι στις επιτρεπτές περιόδους):</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10207"/>
@@ -23293,7 +23292,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="10268"/>
         <source>Time constraint subactivities preferred time slots broken for activity with id=%1 (%2), component number %3, on %4 hours, increases conflicts total by %5</source>
         <comment>%1 is the id, %2 is the detailed description of the activity.</comment>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;προτιμητέες περίοδοι υποδραστηριοτήτων&quot; για την δραστηριότητα με ατ=%1 (%2) αριθμό στοιχείου %3, στις %4 ώρες. Το σύνολο των συγκρούσεων αυξάνεται κατά %5</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;υποδραστηριότητες - προτιμητέες περίοδοι&quot; για την δραστηριότητα με ατ=%1 (%2) αριθμό στοιχείου %3, στις %4 ώρες. Το σύνολο των συγκρούσεων αυξάνεται κατά %5</translation>
     </message>
 </context>
 <context>
@@ -23438,7 +23437,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="2930"/>
         <location filename="../src/engine/spaceconstraint.cpp" line="2943"/>
         <source>Subject activity tag preferred room</source>
-        <translation>Προτιμητέα αίθουσα για ετικέτα δραστηριότητας αντικειμένου</translation>
+        <translation>Ετικέτα δραστηριότητας αντικειμένου - προτιμητέα αίθουσα</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="2931"/>
@@ -23499,7 +23498,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="3001"/>
         <source>Space constraint subject activity tag preferred room broken for activity with id %1 (%2) (activity tag of constraint=%3)</source>
         <comment>%1 is activity id, %2 is detailed description of activity</comment>
-        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;προτιμητέα αίθουσα για ετικέτα δραστηριότητας αντικειμένου&quot; για την δραστηριότητα με ατ %1 (%2) (ετικέτα δραστηριότητας του περιορισμού=%3)</translation>
+        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;ετικέτα δραστηριότητας αντικειμένου - προτιμητέα αίθουσα&quot; για την δραστηριότητα με ατ %1 (%2) (ετικέτα δραστηριότητας του περιορισμού=%3)</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3007"/>
@@ -23610,7 +23609,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="3181"/>
         <location filename="../src/engine/spaceconstraint.cpp" line="3197"/>
         <source>Subject activity tag preferred rooms</source>
-        <translation>Προτιμητέες αίθουσες για ετικέτα δραστηριότητας αντικειμένου</translation>
+        <translation>Ετικέτα δραστηριότητας αντικειμένου - προτιμητέες αίθουσες</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3182"/>
@@ -23676,7 +23675,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="3262"/>
         <source>Space constraint subject activity tag preferred rooms broken for activity with id %1 (%2) (activity tag of constraint=%3)</source>
         <comment>%1 is activity id, %2 is detailed description of activity</comment>
-        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;προτιμητέες αίθουσες για ετικέτα δραστηριότητας αντικειμένου&quot; για την δραστηριότητα με ατ %1 (%2) (ετικέτα δραστηριότητας του περιορισμού=%3)</translation>
+        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;ετικέτα δραστηριότητας αντικειμένου - προτιμητέες αίθουσες&quot; για την δραστηριότητα με ατ %1 (%2) (ετικέτα δραστηριότητας του περιορισμού=%3)</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3268"/>
@@ -23792,7 +23791,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="2437"/>
         <location filename="../src/engine/spaceconstraint.cpp" line="2449"/>
         <source>Subject preferred room</source>
-        <translation>Προτιμητέα αίθουσα για αντικείμενο</translation>
+        <translation>Αντικείμενο - προτιμητέα αίθουσα</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="2438"/>
@@ -23842,7 +23841,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="2506"/>
         <source>Space constraint subject preferred room broken for activity with id %1 (%2)</source>
         <comment>%1 is activity id, %2 is detailed description of activity</comment>
-        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;προτιμητέα αίθουσα για αντικείμενο&quot; για την δραστηριότητα με ατ=%1 (%2)</translation>
+        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;αντικείμενο - προτιμητέα αίθουσα&quot; για την δραστηριότητα με ατ=%1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="2511"/>
@@ -23953,7 +23952,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="2679"/>
         <location filename="../src/engine/spaceconstraint.cpp" line="2694"/>
         <source>Subject preferred rooms</source>
-        <translation>Προτιμητέες αίθουσες για αντικείμενο</translation>
+        <translation>Αντικείμενο - προτιμητέες αίθουσες</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="2680"/>
@@ -24008,7 +24007,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="2758"/>
         <source>Space constraint subject preferred rooms broken for activity with id %1 (%2)</source>
         <comment>%1 is activity id, %2 is detailed description of activity</comment>
-        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;προτιμητέες αίθουσες για αντικείμενο&quot; για την δραστηριότητα με ατ=%1 (%2)</translation>
+        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;αντικείμενο - προτιμητέες αίθουσες&quot; για την δραστηριότητα με ατ=%1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="2763"/>
@@ -24154,7 +24153,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="4048"/>
         <location filename="../src/engine/timeconstraint.cpp" line="4076"/>
         <source>Time constraint teacher activity tag max %1 hours continuously broken for teacher %2, activity tag %3, on day %4, length=%5.</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μέγιστες %2 ώρες συνεχόμενα, με ετικέτα δραστηριότητας %1&quot; για τον εκπαιδευτικό %3, κατά την ημέρα %4, διάρκεια=%5.</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;εκπαιδευτικός - ετικέτα δραστηριότητας %1, μέγιστες %2 ώρες συνεχόμενα&quot; για τον εκπαιδευτικό %3, κατά την ημέρα %4, διάρκεια=%5.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4059"/>
@@ -24321,7 +24320,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16348"/>
         <source>Time constraint teacher activity tag %1 max %2 hours daily broken for teacher %3, on day %4, length=%5.</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μέγιστες %2 ώρες ημερησίως, με ετικέτα δραστηριότητας %1&quot; για τον εκπαιδευτικό %3, κατά την ημέρα %4, διάρκεια=%5.</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;εκπαιδευτικός - ετικέτα δραστηριότητας %1, μέγιστες %2 ώρες ημερησίως&quot; για τον εκπαιδευτικό %3, κατά την ημέρα %4, διάρκεια=%5.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16358"/>
@@ -24434,7 +24433,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="1901"/>
         <location filename="../src/engine/spaceconstraint.cpp" line="1917"/>
         <source>Teacher home room</source>
-        <translation>Βασική αίθουσα εκπαιδευτικού</translation>
+        <translation>Εκπαιδευτικός - βασική αίθουσα</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1858"/>
@@ -24502,7 +24501,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="1986"/>
         <source>Space constraint teacher home room broken for activity with id %1 (%2)</source>
         <comment>%1 is activity id, %2 is detailed description of activity</comment>
-        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;βασική αίθουσα εκπαιδευτικού&quot; για την δραστηριότητα με ατ %1 (%2)</translation>
+        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;εκπαιδευτικός - βασική αίθουσα&quot; για την δραστηριότητα με ατ %1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1991"/>
@@ -24618,7 +24617,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="2179"/>
         <location filename="../src/engine/spaceconstraint.cpp" line="2196"/>
         <source>Teacher home rooms</source>
-        <translation>Βασικές αίθουσες εκπαιδευτικού</translation>
+        <translation>Εκπαιδευτικός - βασικές αίθουσες</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="2180"/>
@@ -24673,7 +24672,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="2272"/>
         <source>Space constraint teacher home rooms broken for activity with id %1 (%2)</source>
         <comment>%1 is activity id, %2 is detailed description of activity</comment>
-        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;βασικές αίθουσες εκπαιδευτικού&quot; για την δραστηριότητα με ατ %1 (%2)</translation>
+        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;εκπαιδευτικός - βασικές αίθουσες&quot; για την δραστηριότητα με ατ %1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="2277"/>
@@ -24778,21 +24777,21 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="14595"/>
         <source>Constraint teacher interval max days per week is wrong because start hour &gt;= end hour. Please correct it. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα για εκπαιδευτικό&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &gt;= ώρα λήξης. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;εκπαιδευτικός - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &gt;= ώρα λήξης. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14602"/>
         <source>Constraint teacher interval max days per week is wrong because start hour &lt; first hour of the day. Please correct it. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα για εκπαιδευτικό&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &lt; πρώτη ώρα της ημέρας. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;εκπαιδευτικός - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &lt; πρώτη ώρα της ημέρας. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14609"/>
         <source>Constraint teacher interval max days per week is wrong because end hour &gt; number of hours per day. Please correct it. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα για εκπαιδευτικό&quot; παρουσιάζει σφάλμα, διότι ώρα λήξης &gt; αριθμό ωρών ανά ημέρα. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;εκπαιδευτικός - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα λήξης &gt; αριθμό ωρών ανά ημέρα. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -24804,7 +24803,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14656"/>
         <source>Teacher interval max days per week</source>
-        <translation>Διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα για εκπαιδευτικό</translation>
+        <translation>Εκπαιδευτικός - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14657"/>
@@ -24854,7 +24853,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14674"/>
         <source>A teacher respects working in an hourly interval a maximum number of days per week</source>
-        <translation>Η εργασία σε χρονικό διάστημα για μέγιστο αριθμό ημερών ανά εβδομάδα τηρείται για εκπαιδευτικό</translation>
+        <translation>Για εκπαιδευτικό πρέπει να τηρείται το χρονικό διάστημα δραστηριοτήτων σε μέγιστο αριθμό ημερών την εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14675"/>
@@ -24896,7 +24895,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14733"/>
         <source>Time constraint teacher interval max days per week broken for teacher: %1, allowed %2 days, required %3 days.</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα για εκπαιδευτικό&quot; για τον εκπαιδευτικό: %1, διότι ενώ επιτρεπόταν %2 ημέρες, απαιτήθηκαν %3 ημέρες.</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;εκπαιδευτικός - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; για τον εκπαιδευτικό: %1, διότι ενώ επιτρεπόταν %2 ημέρες, απαιτήθηκαν %3 ημέρες.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14738"/>
@@ -24994,7 +24993,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="5454"/>
         <source>Constraint teacher max building changes per day is wrong because it refers to inexistent teacher. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Χωρικός περιορισμός &quot;μέγιστες αλλαγές κτιρίου ανά ημέρα για εκπαιδευτικό&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτο εκπαιδευτικό. Παρακαλώ διορθώστε τον (η αφαίρεσή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
+        <translation>Χωρικός περιορισμός &quot;εκπαιδευτικός - μέγιστες αλλαγές κτιρίου ανά ημέρα&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτο εκπαιδευτικό. Παρακαλώ διορθώστε τον (η διαγραφή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -25006,7 +25005,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5498"/>
         <source>Teacher max building changes per day</source>
-        <translation>Μέγιστες αλλαγές κτιρίου ανά ημέρα για εκπαιδευτικό</translation>
+        <translation>Εκπαιδευτικός - μέγιστες αλλαγές κτιρίου ανά ημέρα</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5500"/>
@@ -25035,7 +25034,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5515"/>
         <source>Teacher maximum building changes per day</source>
-        <translation>Μέγιστες αλλαγές κτιρίου ανά ημέρα για εκπαιδευτικό</translation>
+        <translation>Εκπαιδευτικός - μέγιστες αλλαγές κτιρίου ανά ημέρα</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5517"/>
@@ -25066,7 +25065,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5594"/>
         <source>Space constraint teacher max building changes per day broken for teacher=%1 on day %2</source>
-        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;μέγιστες αλλαγές κτιρίου ανά ημέρα για εκπαιδευτικό&quot; για τον εκπαιδευτικό=%1 κατά την ημέρα %2</translation>
+        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;εκπαιδευτικός - μέγιστες αλλαγές κτιρίου ανά ημέρα&quot; για τον εκπαιδευτικό=%1 κατά την ημέρα %2</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5598"/>
@@ -25164,7 +25163,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="5942"/>
         <source>Constraint teacher max building changes per week is wrong because it refers to inexistent teacher. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Χωρικός περιορισμός &quot;μέγιστες αλλαγές κτιρίου ανά εβδομάδα για εκπαιδευτικό&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτο εκπαιδευτικό. Παρακαλώ διορθώστε τον (η αφαίρεσή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
+        <translation>Χωρικός περιορισμός &quot;εκπαιδευτικός - μέγιστες αλλαγές κτιρίου ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτο εκπαιδευτικό. Παρακαλώ διορθώστε τον (η διαγραφή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -25176,7 +25175,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5986"/>
         <source>Teacher max building changes per week</source>
-        <translation>Μέγιστες αλλαγές κτιρίου ανά εβδομάδα για εκπαιδευτικό</translation>
+        <translation>Εκπαιδευτικός - μέγιστες αλλαγές κτιρίου ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5988"/>
@@ -25204,7 +25203,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6003"/>
         <source>Teacher maximum building changes per week</source>
-        <translation>Μέγιστες αλλαγές κτιρίου ανά εβδομάδα για εκπαιδευτικό</translation>
+        <translation>Εκπαιδευτικός - μέγιστες αλλαγές κτιρίου ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6005"/>
@@ -25235,7 +25234,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6084"/>
         <source>Space constraint teacher max building changes per week broken for teacher=%1</source>
-        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;μέγιστες αλλαγές κτιρίου ανά εβδομάδα για εκπαιδευτικό&quot; για τον εκπαιδευτικό=%1</translation>
+        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;εκπαιδευτικός - μέγιστες αλλαγές κτιρίου ανά εβδομάδα&quot; για τον εκπαιδευτικό=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6087"/>
@@ -25333,7 +25332,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4221"/>
         <source>Teacher max days per week</source>
-        <translation>Μέγιστες ημέρες ανά εβδομάδα για εκπαιδευτικό</translation>
+        <translation>Εκπαιδευτικός - μέγιστες ημέρες ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4222"/>
@@ -25362,7 +25361,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4233"/>
         <source>A teacher must respect the maximum number of days per week</source>
-        <translation>Ο μέγιστος αριθμός ημερών ανά εβδομάδα πρέπει να τηρείται για εκπαιδευτικό</translation>
+        <translation>Για εκπαιδευτικό πρέπει να τηρείται ο μέγιστος αριθμός ημερών ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4234"/>
@@ -25393,7 +25392,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4323"/>
         <source>Time constraint teacher max days per week broken for teacher: %1.</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μέγιστες ημέρες ανά εβδομάδα για εκπαιδευτικό&quot; για τον εκπαιδευτικό: 1%</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;εκπαιδευτικός - μέγιστες ημέρες ανά εβδομάδα&quot; για τον εκπαιδευτικό: %1.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4325"/>
@@ -25491,7 +25490,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5320"/>
         <source>Teacher max gaps per day</source>
-        <translation>Μέγιστα κενά ανά ημέρα για εκπαιδευτικό</translation>
+        <translation>Εκπαιδευτικός - μέγιστα κενά ανά ημέρα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5321"/>
@@ -25521,12 +25520,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5332"/>
         <source>A teacher must respect the maximum number of gaps per day</source>
-        <translation>Ο μέγιστος αριθμός κενών ανά ημέρα πρέπει να τηρείται για εκπαιδευτικό</translation>
+        <translation>Για εκπαιδευτικό πρέπει να τηρείται ο μέγιστος αριθμός κενών ανά ημέρα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5333"/>
         <source>(breaks and teacher not available not counted)</source>
-        <translation>(διαλείμματα και μη διαθέσιμος εκπαιδευτικός δεν προσμετρώνται)</translation>
+        <translation>(διαλείμματα και &quot;εκπαιδευτικός - μη διαθέσιμος&quot; δεν προσμετρώνται)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5334"/>
@@ -25557,7 +25556,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5391"/>
         <source>Time constraint teacher max gaps per day broken for teacher: %1, day: %2, conflicts factor increase=%3</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μέγιστα κενά ανά ημέρα για εκπαιδευτικό&quot; για τον εκπαιδευτικό: %1, ημέρα %2, αύξηση παράγοντα συγκρούσεων=%3</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;εκπαιδευτικός - μέγιστα κενά ανά ημέρα&quot; για τον εκπαιδευτικό: %1, ημέρα %2, αύξηση παράγοντα συγκρούσεων=%3</translation>
     </message>
 </context>
 <context>
@@ -25650,7 +25649,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4908"/>
         <source>Teacher max gaps per week</source>
-        <translation>Μέγιστα κενά ανά εβδομάδα για εκπαιδευτικό</translation>
+        <translation>Εκπαιδευτικός - μέγιστα κενά ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4909"/>
@@ -25680,12 +25679,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4920"/>
         <source>A teacher must respect the maximum number of gaps per week</source>
-        <translation>Ο μέγιστος αριθμός κενών ανά εβδομάδα πρέπει να τηρείται για εκπαιδευτικό</translation>
+        <translation>Για εκπαιδευτικό πρέπει να τηρείται ο μέγιστος αριθμός κενών ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4921"/>
         <source>(breaks and teacher not available not counted)</source>
-        <translation>(διαλείμματα και μη διαθέσιμος εκπαιδευτικός δεν προσμετρώνται)</translation>
+        <translation>(διαλείμματα και &quot;εκπαιδευτικός - μη διαθέσιμος&quot; δεν προσμετρώνται)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4922"/>
@@ -25716,7 +25715,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4980"/>
         <source>Time constraint teacher max gaps per week broken for teacher: %1, conflicts factor increase=%2</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μέγιστα κενά ανά εβδομάδα για εκπαιδευτικό&quot; για τον εκπαιδευτικό: %1, αύξηση παράγοντα συγκρούσεων=%2</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;εκπαιδευτικός - μέγιστα κενά ανά εβδομάδα&quot; για τον εκπαιδευτικό: %1, αύξηση παράγοντα συγκρούσεων=%2</translation>
     </message>
 </context>
 <context>
@@ -25809,7 +25808,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3457"/>
         <source>Teacher max hours continuously</source>
-        <translation>Μέγιστες ώρες συνεχόμενα για εκπαιδευτικό</translation>
+        <translation>Εκπαιδευτικός - μέγιστες ώρες συνεχόμενα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3458"/>
@@ -25832,7 +25831,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3469"/>
         <source>A teacher must respect the maximum number of hours continuously</source>
-        <translation>Ο μέγιστος αριθμός ωρών συνεχόμενα πρέπει να τηρείται για εκπαιδευτικό</translation>
+        <translation>Για εκπαιδευτικό πρέπει να τηρείται ο μέγιστος αριθμός ωρών συνεχόμενα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3470"/>
@@ -25864,7 +25863,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="3512"/>
         <location filename="../src/engine/timeconstraint.cpp" line="3539"/>
         <source>Time constraint teacher max %1 hours continuously broken for teacher %2, on day %3, length=%4.</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μέγιστες %1 ώρες συνεχόμενα για εκπαιδευτικό&quot; για εκπαιδευτικό %2, την ημέρα %3, διάρκεια=%4.</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;εκπαιδευτικός - μέγιστες %1 ώρες συνεχόμενα&quot; για εκπαιδευτικό %2, την ημέρα %3, διάρκεια=%4.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3522"/>
@@ -25970,7 +25969,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3014"/>
         <source>Teacher max hours daily</source>
-        <translation>Μέγιστες ώρες ημερησίως για εκπαιδευτικό</translation>
+        <translation>Εκπαιδευτικός - μέγιστες ώρες ημερησίως</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3015"/>
@@ -25993,7 +25992,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3026"/>
         <source>A teacher must respect the maximum number of hours daily</source>
-        <translation>Ο μέγιστος αριθμός ωρών ανά ημέρα πρέπει να τηρείται για εκπαιδευτικό</translation>
+        <translation>Για εκπαιδευτικό πρέπει να τηρείται ο μέγιστος αριθμός ωρών ημερησίως</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3027"/>
@@ -26024,7 +26023,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3086"/>
         <source>Time constraint teacher max %1 hours daily broken for teacher %2, on day %3, length=%4.</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μέγιστες %1 ώρες ημερησίως για εκπαιδευτικό&quot; για τον εκπαιδευτικό %2, την ημέρα %3, διάρκεια=%4.</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;εκπαιδευτικός - μέγιστες %1 ώρες ημερησίως&quot; για τον εκπαιδευτικό %2, την ημέρα %3, διάρκεια=%4.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3095"/>
@@ -26128,7 +26127,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18689"/>
         <source>Teacher max span per day</source>
-        <translation>Μέγιστη παραμονή ανά ημέρα για εκπαιδευτικό</translation>
+        <translation>Εκπαιδευτικός - μέγιστη παραμονή ανά ημέρα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18690"/>
@@ -26157,7 +26156,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18701"/>
         <source>A teacher must respect the maximum number of span (in hours) per day</source>
-        <translation>Ο μέγιστη παραμονή (σε αριθμό ωρών) πρέπει να τηρείται για εκπαιδευτικό</translation>
+        <translation>Για εκπαιδευτικό πρέπει να τηρείται η μέγιστη παραμονή (σε αριθμό ωρών)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18702"/>
@@ -26281,7 +26280,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14222"/>
         <source>Teacher min days per week</source>
-        <translation>Ελάχιστες ημέρες ανά εβδομάδα για εκπαιδευτικό</translation>
+        <translation>Εκπαιδευτικός - ελάχιστες ημέρες ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14219"/>
@@ -26309,7 +26308,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14234"/>
         <source>A teacher must respect the minimum number of days per week</source>
-        <translation>Ο ελάχιστος αριθμός ημερών ανά εβδομάδα πρέπει να τηρείται για εκπαιδευτικό</translation>
+        <translation>Για εκπαιδευτικό πρέπει να τηρείται ο ελάχιστος αριθμός ημερών ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14235"/>
@@ -26340,7 +26339,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14281"/>
         <source>Time constraint teacher min %1 days per week broken for teacher %2.</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;ελάχιστες %1 ημέρες ανά εβδομάδα για εκπαιδευτικό&quot; για τον εκπαιδευτικό %2.</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;εκπαιδευτικός - ελάχιστες %1 ημέρες ανά εβδομάδα&quot; για τον εκπαιδευτικό %2.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14288"/>
@@ -26438,7 +26437,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="6430"/>
         <source>Constraint teacher min gaps between building changes is wrong because it refers to inexistent teacher. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου για εκπαιδευτικό&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτο εκπαιδευτικό. Παρακαλώ διορθώστε τον (η αφαίρεσή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;εκπαιδευτικός - ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτο εκπαιδευτικό. Παρακαλώ διορθώστε τον (η διαγραφή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -26450,7 +26449,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6474"/>
         <source>Teacher min gaps between building changes</source>
-        <translation>Ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου για εκπαιδευτικό</translation>
+        <translation>Εκπαιδευτικός - ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6476"/>
@@ -26480,7 +26479,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6491"/>
         <source>Teacher minimum gaps between building changes</source>
-        <translation>Ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου για εκπαιδευτικό</translation>
+        <translation>Εκπαιδευτικός - ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6493"/>
@@ -26511,7 +26510,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6574"/>
         <source>Space constraint teacher min gaps between building changes broken for teacher=%1 on day %2</source>
-        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου για εκπαιδευτικό&quot; για τον εκπαιδευτικό=%1 την ημέρα %2</translation>
+        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;εκπαιδευτικός - ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου&quot; για τον εκπαιδευτικό=%1 την ημέρα %2</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6578"/>
@@ -26610,12 +26609,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13997"/>
         <source>Teacher min hours daily</source>
-        <translation>Ελάχιστες ώρες ημερησίως για εκπαιδευτικό</translation>
+        <translation>Εκπαιδευτικός - ελάχιστες ώρες ημερησίως</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13950"/>
         <source>Cannot generate a timetable with a constraint teacher min hours daily with allow empty days=false. Please modify it, so that it allows empty days. If you need a facility like that, please use constraint teacher min days per week</source>
-        <translation>Δεν είναι δυνατή η δημιουργία ωρολογίου προγράμματος με περιορισμό &quot;ελάχιστες ώρες ημερησίως με επιτρεπτές κενές ημέρες για εκπαιδευτικό&quot; με επιτρεπτές κενές ημέρες=ψευδής (false). Παρακαλώ τροποποιήστε τον, έτσι ώστε να επιτρέπονται οι κενές ημέρες. Αν χρειάζεστε τέτοιου είδους &quot;ευκολία&quot; (λειτουργία), παρακαλώ χρησιμοποιείστε τον περιορισμό &quot;ελάχιστες ημέρες ανά εβδομάδα για εκπαιδευτικό&quot;</translation>
+        <translation>Δεν είναι δυνατή η δημιουργία ωρολογίου προγράμματος με περιορισμό &quot;εκπαιδευτικός - ελάχιστες ώρες ημερησίως με επιτρεπτές κενές ημέρες&quot; με επιτρεπτές κενές ημέρες=ψευδής (false). Παρακαλώ τροποποιήστε τον, έτσι ώστε να επιτρέπονται οι κενές ημέρες. Αν χρειάζεστε τέτοιου είδους &quot;ευκολία&quot; (λειτουργία), παρακαλώ χρησιμοποιείστε τον περιορισμό &quot;εκπαιδευτικός - ελάχιστες ημέρες ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13953"/>
@@ -26660,7 +26659,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14010"/>
         <source>A teacher must respect the minimum number of hours daily</source>
-        <translation>Ο ελάχιστος αριθμός ωρών ανά ημέρα πρέπει να τηρείται για εκπαιδευτικό</translation>
+        <translation>Για εκπαιδευτικό πρέπει να τηρείται ο ελάχιστος αριθμός ωρών ημερησίως</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14011"/>
@@ -26696,7 +26695,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14073"/>
         <source>Time constraint teacher min %1 hours daily broken for teacher %2, on day %3, length=%4.</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;ελάχιστες %1 ώρες ημερησίως για εκπαιδευτικό&quot; για τον εκπαιδευτικό %2, την ημέρα %3, διάρκεια=%4.</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;εκπαιδευτικός - ελάχιστες %1 ώρες ημερησίως&quot; για τον εκπαιδευτικό %2, την ημέρα %3, διάρκεια=%4.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14082"/>
@@ -26794,7 +26793,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19520"/>
         <source>Teacher min resting hours</source>
-        <translation>Ελάχιστες ώρες ανάπαυσης για εκπαιδευτικό</translation>
+        <translation>Εκπαιδευτικός - ελάχιστες ώρες ανάπαυσης</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19521"/>
@@ -26830,7 +26829,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19533"/>
         <source>A teacher must respect the minimum resting hours (between days)</source>
-        <translation>Οι ελάχιστες ώρες ανάπαυσης (ανάμεσα σε ημέρες) πρέπει να τηρούνται για εκπαιδευτικό</translation>
+        <translation>Για εκπαιδευτικό πρέπει να τηρούνται οι ελάχιστες ώρες ανάπαυσης (ανάμεσα σε ημέρες)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19534"/>
@@ -26959,7 +26958,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="564"/>
         <source>Teacher not available</source>
-        <translation>Μη διαθέσιμος εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός - μη διαθέσιμος</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="565"/>
@@ -26988,7 +26987,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="588"/>
         <source>A teacher is not available</source>
-        <translation>Μη διαθέσιμος εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός δεν είναι διαθέσιμος</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="589"/>
@@ -27026,7 +27025,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="626"/>
         <source>Constraint teacher not available times is wrong because it refers to inexistent teacher. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;μη διαθέσιμοι χρόνοι εκπαιδευτικού&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτο εκπαιδευτικό. Παρακαλώ διορθώστε τον (η αφαίρεσή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;εκπαιδευτικός - μη διαθέσιμοι χρόνοι&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ανύπαρκτο εκπαιδευτικό. Παρακαλώ διορθώστε τον (η διαγραφή του μπορεί να αποτελεί λύση). Παρακαλώ να αναφέρετε το ενδεχόμενο σφάλμα του λογισμικού (bug). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -27039,20 +27038,20 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="636"/>
         <source>Constraint teacher not available times is wrong because it refers to removed day. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;μη διαθέσιμοι χρόνοι για εκπαιδευτικό&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ημέρα που έχει αφαιρεθεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;εκπαιδευτικός - μη διαθέσιμοι χρόνοι&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ημέρα που έχει διαγραφεί. Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="643"/>
         <source>Constraint teacher not available times is wrong because an hour is too late (after the last acceptable slot). Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;μη διαθέσιμοι χρόνοι για εκπαιδευτικό&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ώρα που είναι πολύ αργά (μετά την τελευταία αποδεκτή περίοδο) Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;εκπαιδευτικός - μη διαθέσιμοι χρόνοι&quot; παρουσιάζει σφάλμα, διότι σχετίζεται με ώρα που είναι πολύ αργά (μετά την τελευταία αποδεκτή περίοδο) Παρακαλώ διορθώστε και προσπαθήστε ξανά. Διόρθωση σημαίνει επεξεργασία του περιορισμού και ανανέωση των πληροφοριών (στοιχείων). Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="695"/>
         <source>Time constraint teacher not available</source>
-        <translation>Χρονικός περιορισμός &quot;μη διαθέσιμος εκπαιδευτικός&quot;</translation>
+        <translation>Χρονικός περιορισμός &quot;εκπαιδευτικός - μη διαθέσιμος&quot;</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="697"/>
@@ -27155,7 +27154,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3703"/>
         <source>Teachers for activity tag %1 have max %2 hours continuously</source>
-        <translation>Οι εκπαιδευτικοί για την ετικέτα δραστηριότητας %1 έχουν κατά μέγιστο %2 ώρες συνεχόμενα</translation>
+        <translation>Οι εκπαιδευτικοί για την ετικέτα δραστηριότητας %1 έχουν μέγιστες %2 ώρες συνεχόμενα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3704"/>
@@ -27203,7 +27202,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="3777"/>
         <location filename="../src/engine/timeconstraint.cpp" line="3805"/>
         <source>Time constraint teachers activity tag %1 max %2 hours continuously broken for teacher %3, on day %4, length=%5.</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μέγιστες %2 ώρες συνεχόμενα, με ετικέτα δραστηριότητας %1 για εκπαιδευτικούς&quot; για τον εκπαιδευτικό %3, κατά την ημέρα %4, διάρκεια=%5.</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;εκπαιδευτικοί - ετικέτα δραστηριότητας %1, μέγιστες %2 ώρες συνεχόμενα&quot; για τον εκπαιδευτικό %3, κατά την ημέρα %4, διάρκεια=%5.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3788"/>
@@ -27307,7 +27306,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16036"/>
         <source>Teachers for activity tag %1 have max %2 hours daily</source>
-        <translation>Οι εκπαιδευτικοί για την ετικέτα δραστηριότητας %1 έχουν κατά μέγιστο %2 ώρες ημερησίως</translation>
+        <translation>Όλοι οι εκπαιδευτικοί για την ετικέτα δραστηριότητας %1 έχουν μέγιστες %2 ώρες ημερησίως</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16032"/>
@@ -27329,7 +27328,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16047"/>
         <source>All teachers, for an activity tag, must respect the maximum number of hours daily</source>
-        <translation>Σε όλους τους εκπαιδευτικούς, για ετικέτα δραστηριότητας, πρέπει να τηρείται ο μέγιστος αριθμός ωρών ημερησίως</translation>
+        <translation>Σε όλους τους εκπαιδευτικούς, για ετικέτα δραστηριότητας, πρέπει να τηρούνται οι μέγιστες ώρες ημερησίως</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16048"/>
@@ -27360,12 +27359,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16107"/>
         <source>Time constraint teachers activity tag %1 max %2 hours daily broken for teacher %3, on day %4, length=%5.</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;μέγιστες %2 ώρες ημερησίως, με ετικέτα δραστηριότητας %1 για εκπαιδευτικούς&quot; για τον εκπαιδευτικό %3, κατά την ημέρα %4, διάρκεια=%5.</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;εκπαιδευτικοί - ετικέτα δραστηριότητας %1, μέγιστες %2 ώρες ημερησίως&quot; για τον εκπαιδευτικό %3, κατά την ημέρα %4, διάρκεια=%5.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16117"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished">Αυτό αυξάνει το σύνολο των συγκρούσεων κατά %1</translation>
+        <translation>Αυτό αυξάνει το σύνολο των συγκρούσεων κατά %1</translation>
     </message>
 </context>
 <context>
@@ -27475,21 +27474,21 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="14848"/>
         <source>Constraint teachers interval max days per week is wrong because start hour &gt;= end hour. Please correct it. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα για εκπαιδευτικούς&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &gt;= ώρα λήξης. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;εκπαιδευτικοί - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &gt;= ώρα λήξης. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14855"/>
         <source>Constraint teachers interval max days per week is wrong because start hour &lt; first hour of the day. Please correct it. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα για εκπαιδευτικούς&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &lt; πρώτη ώρα της ημέρας. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;εκπαιδευτικοί - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα έναρξης &lt; πρώτη ώρα της ημέρας. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14862"/>
         <source>Constraint teachers interval max days per week is wrong because end hour &gt; number of hours per day. Please correct it. Constraint is:
 %1</source>
-        <translation>Περιορισμός &quot;διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα για εκπαιδευτικούς&quot; παρουσιάζει σφάλμα, διότι ώρα λήξης &gt; αριθμό ωρών ανά ημέρα. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
+        <translation>Περιορισμός &quot;εκπαιδευτικοί - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; παρουσιάζει σφάλμα, διότι ώρα λήξης &gt; αριθμό ωρών ανά ημέρα. Παρακαλώ διορθώστε τον. Ο περιορισμός είναι:
 %1</translation>
     </message>
     <message>
@@ -27501,7 +27500,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14908"/>
         <source>Teachers interval max days per week</source>
-        <translation>Διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα για εκπαιδευτικό</translation>
+        <translation>Εκπαιδευτικοί - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14909"/>
@@ -27542,7 +27541,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14926"/>
         <source>All teachers respect working in an hourly interval a maximum number of days per week</source>
-        <translation>Η εργασία σε χρονικό διάστημα για μέγιστο αριθμό ημερών ανά εβδομάδα τηρείται σε όλους τους εκπαιδευτικούς</translation>
+        <translation>Για όλους τους εκπαιδευτικούς τηρείται το διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14927"/>
@@ -27579,7 +27578,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14982"/>
         <source>Time constraint teachers interval max days per week broken for teacher: %1, allowed %2 days, required %3 days.</source>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα για εκπαιδευτικούς&quot; για τον εκπαιδευτικό: %1, διότι ενώ επιτρεπόταν %2 ημέρες, απαιτήθηκαν %3 ημέρες.</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;εκπαιδευτικοί - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot; για τον εκπαιδευτικό: %1, διότι ενώ επιτρεπόταν %2 ημέρες, απαιτήθηκαν %3 ημέρες.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14987"/>
@@ -27672,7 +27671,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5738"/>
         <source>Teachers max building changes per day</source>
-        <translation>Μέγιστες αλλαγές κτιρίου ανά ημέρα για όλους τους εκπαιδευτικούς</translation>
+        <translation>Εκπαιδευτικοί - μέγιστες αλλαγές κτιρίου ανά ημέρα</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5740"/>
@@ -27694,7 +27693,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5753"/>
         <source>Teachers maximum building changes per day</source>
-        <translation>Μέγιστες αλλαγές κτιρίου ανά ημέρα για όλους τους εκπαιδευτικούς</translation>
+        <translation>Εκπαιδευτικοί - μέγιστες αλλαγές κτιρίου ανά ημέρα</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5755"/>
@@ -27720,7 +27719,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5829"/>
         <source>Space constraint teachers max building changes per day broken for teacher=%1 on day %2</source>
-        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;μέγιστες αλλαγές κτιρίου ανά ημέρα για εκπαιδευτικούς&quot; για τον εκπαιδευτικό=%1 κατά την ημέρα %2</translation>
+        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;εκπαιδευτικοί - μέγιστες αλλαγές κτιρίου ανά ημέρα&quot; για τον εκπαιδευτικό=%1 κατά την ημέρα %2</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5833"/>
@@ -27813,7 +27812,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6226"/>
         <source>Teachers max building changes per week</source>
-        <translation>Μέγιστες αλλαγές κτιρίου ανά εβδομάδα για όλους τους εκπαιδευτικούς</translation>
+        <translation>Εκπαιδευτικοί - μέγιστες αλλαγές κτιρίου ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6228"/>
@@ -27835,7 +27834,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6241"/>
         <source>Teachers maximum building changes per week</source>
-        <translation>Μέγιστες αλλαγές κτιρίου ανά εβδομάδα για όλους τους εκπαιδευτικούς</translation>
+        <translation>Εκπαιδευτικοί - μέγιστες αλλαγές κτιρίου ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6243"/>
@@ -27861,7 +27860,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6319"/>
         <source>Space constraint teachers max building changes per week broken for teacher=%1</source>
-        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;μέγιστες αλλαγές κτιρίου ανά εβδομάδα για εκπαιδευτικούς&quot; για τον εκπαιδευτικό=%1</translation>
+        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;εκπαιδευτικοί - μέγιστες αλλαγές κτιρίου ανά εβδομάδα&quot; για τον εκπαιδευτικό=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6322"/>
@@ -27954,7 +27953,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4456"/>
         <source>Teachers max days per week</source>
-        <translation>Μέγιστες ημέρες ανά εβδομάδα για όλους τους εκπαιδευτικούς</translation>
+        <translation>Εκπαιδευτικοί - μέγιστες ημέρες ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4457"/>
@@ -27976,7 +27975,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4467"/>
         <source>All teachers must respect the maximum number of days per week</source>
-        <translation>Ο μέγιστος αριθμός ημερών ανά εβδομάδα πρέπει να τηρείται για όλους τους εκπαιδευτικούς</translation>
+        <translation>Για όλους τους εκπαιδευτικούς πρέπει να τηρείται ο μέγιστος αριθμός ημερών ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4468"/>
@@ -28095,7 +28094,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5113"/>
         <source>Teachers max gaps per day</source>
-        <translation>Μέγιστα κενά ανά ημέρα για όλους τους εκπαιδευτικούς</translation>
+        <translation>Εκπαιδευτικοί - μέγιστα κενά ανά ημέρα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5114"/>
@@ -28117,12 +28116,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5124"/>
         <source>All teachers must respect the maximum gaps per day</source>
-        <translation>Τα μέγιστα κενά ανά ημέρα πρέπει να τηρούνται για όλους τους εκπαιδευτικούς</translation>
+        <translation>Για όλους τους εκπαιδευτικούς πρέπει να τηρούνται τα μέγιστα κενά ανά ημέρα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5125"/>
         <source>(breaks and teacher not available not counted)</source>
-        <translation>(διαλείμματα και μη διαθέσιμος εκπαιδευτικός δεν προσμετρώνται)</translation>
+        <translation>(διαλείμματα και &quot;εκπαιδευτικός - μη διαθέσιμος&quot; δεν προσμετρώνται)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5126"/>
@@ -28258,12 +28257,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4711"/>
         <source>All teachers must respect the maximum number of gaps per week</source>
-        <translation>Ο μέγιστος αριθμός κενών ανά εβδομάδα πρέπει να τηρείται για όλους τους εκπαιδευτικούς</translation>
+        <translation>Για όλους τους εκπαιδευτικούς πρέπει να τηρείται ο μέγιστος αριθμός κενών ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4712"/>
         <source>(breaks and teacher not available not counted)</source>
-        <translation>(διαλείμματα και μη διαθέσιμος εκπαιδευτικός δεν προσμετρώνται)</translation>
+        <translation>(διαλείμματα και &quot;εκπαιδευτικός - μη διαθέσιμος&quot; δεν προσμετρώνται)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4714"/>
@@ -28399,7 +28398,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3240"/>
         <source>All teachers must respect the maximum number of hours continuously</source>
-        <translation>Ο μέγιστος αριθμός ωρών συνεχόμενα πρέπει να τηρείται για όλους τους εκπαιδευτικούς</translation>
+        <translation>Για όλους τους εκπαιδευτικούς πρέπει να τηρείται ο μέγιστος αριθμός ωρών συνεχόμενα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3241"/>
@@ -28542,7 +28541,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="2806"/>
         <source>All teachers must respect the maximum number of hours daily</source>
-        <translation>Ο μέγιστος αριθμός ωρών ημερησίως πρέπει να τηρείται για όλους τους εκπαιδευτικούς</translation>
+        <translation>Για όλους τους εκπαιδευτικούς πρέπει να τηρείται ο μέγιστος αριθμός ωρών ημερησίως</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="2807"/>
@@ -28683,7 +28682,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18893"/>
         <source>All teachers must respect the maximum number of span (in hours) per day</source>
-        <translation>Η μέγιστη παραμονή (σε αριθμό ωρών) πρέπει να τηρείται για όλους τους εκπαιδευτικούς</translation>
+        <translation>Για όλους τους εκπαιδευτικούς πρέπει να τηρείται η μέγιστη παραμονή (σε αριθμό ωρών)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18894"/>
@@ -28796,7 +28795,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14422"/>
         <source>Teachers min days per week</source>
-        <translation>Εκπαιδευτικοί - ελάχιστες μέρες ανά εβδομάδα</translation>
+        <translation>Εκπαιδευτικοί - ελάχιστες ημέρες ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14419"/>
@@ -28824,7 +28823,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14433"/>
         <source>All teachers must respect the minimum number of days per week</source>
-        <translation>Ο ελάχιστος αριθμός ημερών ανά εβδομάδα πρέπει να τηρείται για όλους τους εκπαιδευτικούς</translation>
+        <translation>Για όλους τους εκπαιδευτικούς πρέπει να τηρείται ο ελάχιστος αριθμός ημερών ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14434"/>
@@ -28960,7 +28959,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6741"/>
         <source>Teachers minimum gaps between building changes</source>
-        <translation>Εκπαιδευτικοί - ελάχιστα κενά ανάμεσα στις αλλαγε κτιρίου</translation>
+        <translation>Εκπαιδευτικοί - ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6743"/>
@@ -29073,7 +29072,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13768"/>
         <source>All teachers must respect the minimum number of hours daily</source>
-        <translation>Ο ελάχιστος αριθμός ωρών ημερησίως πρέπει να τηρείται για όλους τους εκπαιδευτικούς</translation>
+        <translation>Για όλους τους εκπαιδευτικούς πρέπει να τηρείται ο ελάχιστος αριθμός ωρών ημερησίως</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13756"/>
@@ -29274,7 +29273,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19728"/>
         <source>All teachers must respect the minimum resting hours (between days)</source>
-        <translation>Οι ελάχιστες ώρες ανάπαυσης (ανάμεσα σε ημέρες) πρέπει να τηρούνται για όλους τους εκπαιδευτικούς</translation>
+        <translation>Για όλους τους εκπαιδευτικούς πρέπει να τηρούνται οι ελάχιστες ώρες ανάπαυσης (ανάμεσα σε ημέρες)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19729"/>
@@ -29446,12 +29445,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12969"/>
         <source>Three activities grouped:</source>
-        <translation>Τρεις δραστηριότητες είναι ομαδοποιημένες:</translation>
+        <translation>Τρεις δραστηριότητες - ομαδοποιημένες:</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12986"/>
         <source>Three activities grouped (the activities must be placed in the same day, one immediately following the other, as a block of three activities, in any order, possibly separated by breaks)</source>
-        <translation>Τρεις ομαδοποιημένες δραστηριότητες (οι δραστηριότητες πρέπει να τοποθετηθούν στην ίδια ημέρα, η μία ακολουθώντας αμέσως την άλλη, σαν ένα μπλοκ τριών δραστηριοτήτων, σε οποιαδήποτε σειρά, χωριζόμενες πιθανώς από διαλείμματα)</translation>
+        <translation>&quot;Τρεις δραστηριότητες - ομαδοποιημένες&quot; (οι δραστηριότητες πρέπει να τοποθετηθούν στην ίδια ημέρα, η μία ακολουθώντας αμέσως την άλλη, σαν ένα μπλοκ τριών δραστηριοτήτων, σε οποιαδήποτε σειρά, χωριζόμενες πιθανώς από διαλείμματα)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12989"/>
@@ -29491,7 +29490,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="13124"/>
         <source>Time constraint three activities grouped broken for first activity with id=%1 (%2), second activity with id=%3 (%4) and third activity with id=%5 (%6), increases conflicts total by %7</source>
         <comment>%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr., %5 id, %6 det. descr.</comment>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;τρεις δραστηριότητες είναι ομαδοποιημένες&quot; για την πρώτη δραστηριότητα με ατ=%1 (%2), την δεύτερη δραστηριότητα με ατ=%3 (%4) και την τρίτη δραστηριότητα με ατ=%5 (%6). Το σύνολο των συγκρούσεων αυξάνεται κατά %7</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;τρεις δραστηριότητες - ομαδοποιημένες&quot; για την πρώτη δραστηριότητα με ατ=%1 (%2), την δεύτερη δραστηριότητα με ατ=%3 (%4) και την τρίτη δραστηριότητα με ατ=%5 (%6). Το σύνολο των συγκρούσεων αυξάνεται κατά %7</translation>
     </message>
 </context>
 <context>
@@ -29636,7 +29635,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12386"/>
         <source>Two activities consecutive:</source>
-        <translation>Δύο δραστηριότητες είναι διαδοχικές:</translation>
+        <translation>Δύο δραστηριότητες - διαδοχικές:</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12389"/>
@@ -29664,7 +29663,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12401"/>
         <source>Two activities consecutive (second activity must be placed immediately after the first activity, in the same day, possibly separated by breaks)</source>
-        <translation>Δύο διαδοχικές δραστηριότητες (η δεύτερη δραστηριότητα πρέπει να τοποθετηθεί αμέσως μετά την πρώτη δραστηριότητα, την ίδια ημέρα, πιθανώς διαχωριζόμενη με διαλείμματα)</translation>
+        <translation>&quot;Δύο δραστηριότητες - διαδοχικές&quot; (η δεύτερη δραστηριότητα πρέπει να τοποθετηθεί αμέσως μετά την πρώτη δραστηριότητα, την ίδια ημέρα, πιθανώς διαχωριζόμενη με διαλείμματα)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12404"/>
@@ -29698,7 +29697,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="12474"/>
         <source>Time constraint two activities consecutive broken for first activity with id=%1 (%2) and second activity with id=%3 (%4), increases conflicts total by %5</source>
         <comment>%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.</comment>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;δύο διαδοχικές δραστηριότητες&quot; για την πρώτη δραστηριότητα με ατ=%1 (%2) και την δεύτερη δραστηριότητα με ατ=%3 (%4). Το σύνολο τον συγκρούσεων αυξάνεται κατά %5</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;δύο δραστηριότητες - διαδοχικές&quot; για την πρώτη δραστηριότητα με ατ=%1 (%2) και την δεύτερη δραστηριότητα με ατ=%3 (%4). Το σύνολο τον συγκρούσεων αυξάνεται κατά %5</translation>
     </message>
 </context>
 <context>
@@ -29866,12 +29865,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12660"/>
         <source>Two activities grouped:</source>
-        <translation>Δύο δραστηριότητες ομαδοποιημένες:</translation>
+        <translation>Δύο δραστηριότητες - ομαδοποιημένες:</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12675"/>
         <source>Two activities grouped (the activities must be placed in the same day, one immediately following the other, in any order, possibly separated by breaks)</source>
-        <translation>Δύο δραστηριότητες ομαδοποιημένες (οι δραστηριότητες πρέπει να τοποθετηθούν την ίδια ημέρα, η μία αμέσως μετά την άλλη, σε οποιαδήποτε σειρά, διαχωριζόμενες πιθανώς από διαλείμματα)</translation>
+        <translation>&quot;Δύο δραστηριότητες - ομαδοποιημένες&quot; (οι δραστηριότητες πρέπει να τοποθετηθούν την ίδια ημέρα, η μία αμέσως μετά την άλλη, σε οποιαδήποτε σειρά, διαχωριζόμενες πιθανώς από διαλείμματα)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12678"/>
@@ -29905,7 +29904,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="12760"/>
         <source>Time constraint two activities grouped broken for first activity with id=%1 (%2) and second activity with id=%3 (%4), increases conflicts total by %5</source>
         <comment>%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.</comment>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;δύο δραστηριότητες ομαδοποιημένες&quot; για την πρώτη δραστηριότητα με ατ=%1 (%2) και δεύτερη δραστηριότητα με ατ=%3 (%4). Το σύνολο τον συγκρούσεων αυξάνεται κατά %5</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;δύο δραστηριότητες - ομαδοποιημένες&quot; για την πρώτη δραστηριότητα με ατ=%1 (%2) και δεύτερη δραστηριότητα με ατ=%3 (%4). Το σύνολο τον συγκρούσεων αυξάνεται κατά %5</translation>
     </message>
 </context>
 <context>
@@ -30073,12 +30072,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13315"/>
         <source>Two activities ordered:</source>
-        <translation>Δύο δραστηριότητες διατεταγμένες:</translation>
+        <translation>Δύο δραστηριότητες - διατεταγμένες:</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13330"/>
         <source>Two activities ordered (second activity must be placed at any time in the week after the first activity)</source>
-        <translation>Δύο δραστηριότητες διατεταγμένες (η δεύτερη δραστηριότητα πρέπει να τοποθετηθεί σε οποιονδήποτε χρόνο μέσα στην εβδομάδα μετά την πρώτη δραστηριότητα)</translation>
+        <translation>&quot;Δύο δραστηριότητες - διατεταγμένες&quot; (η δεύτερη δραστηριότητα πρέπει να τοποθετηθεί σε οποιονδήποτε χρόνο μέσα στην εβδομάδα μετά την πρώτη δραστηριότητα)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13333"/>
@@ -30112,7 +30111,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="13388"/>
         <source>Time constraint two activities ordered broken for first activity with id=%1 (%2) and second activity with id=%3 (%4), increases conflicts total by %5</source>
         <comment>%1 is the id, %2 is the detailed description of the activity, %3 id, %4 det. descr.</comment>
-        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;δύο δραστηριότητες διατεταγμένες&quot; για την πρώτη δραστηριότητα με ατ=%1 (%2) και την δεύτερη δραστηριότητα με ατ=%3 (%4). Το σύνολο των συγκρούσεων αυξάνεται κατά %5</translation>
+        <translation>Δεν έχει τηρηθεί χρονικός περιορισμός &quot;δύο δραστηριότητες - διατεταγμένες&quot; για την πρώτη δραστηριότητα με ατ=%1 (%2) και την δεύτερη δραστηριότητα με ατ=%3 (%4). Το σύνολο των συγκρούσεων αυξάνεται κατά %5</translation>
     </message>
 </context>
 <context>
@@ -31302,7 +31301,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="941"/>
         <source>You have to manually download and install.</source>
-        <translation>Πρέπει να κατεβάσετε και να εγκαταστήσετε χειροκίνητα.</translation>
+        <translation>Πρέπει να κατεβάσετε και να εγκαταστήσετε &quot;χειροκίνητα&quot;.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="952"/>
@@ -31310,7 +31309,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/fetmainform.cpp" line="3642"/>
         <location filename="../src/interface/fetmainform.cpp" line="3652"/>
         <source>Could not start the default internet browser (trying to open the link %1). Maybe you can try to manually start your browser and open this link.</source>
-        <translation>Αδύνατη η εκκίνηση του προκαθορισμένου φυλλομετρητή (κατά την προσπάθεια σύνδεσης με τον σύνδεσμο %1). Προσπαθήστε να εκκινήσετε τον φυλλομετρητή.</translation>
+        <translation>Αδύνατη η εκκίνηση του προκαθορισμένου φυλλομετρητή (κατά την προσπάθεια σύνδεσης με τον σύνδεσμο %1). Προσπαθήστε να εκκινήσετε τον φυλλομετρητή &quot;χειροκίνητα&quot;.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1070"/>
@@ -31467,7 +31466,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2036"/>
         <source>group activities in initial order items, the inactive items will have a distinctive background color</source>
-        <translation>ενεργοποίηση ομαδοποίησης και τοποθέτησης δραστηριοτήτων στην αρχική φάση δημιουργίας ωρολογίου προγράμματος, τα ανενεργά στοιχεία θα έχουν διαφορετικό χρώμα φόντου</translation>
+        <translation>&quot;ομαδοποίηση δραστηριοτήτων στο αρχικό στάδιο δημιουργίας ωρολογίου προγράμματος&quot;, τα ανενεργά στοιχεία θα έχουν διαφορετικό χρώμα φόντου</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2042"/>
@@ -31514,7 +31513,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2067"/>
         <source>If you use constraints students min hours daily with allowed empty days, you&apos;ll get a warning before generating. Uncheck this option to get rid of that warning (it is recommended to keep the warning).</source>
-        <translation>Αν χρησιμοποείτε περιορισμούς &quot;μαθητές - ελάχιστος αριθμός ωρών ημερησίως για μαθητές με επιτρεπτές κενές ημέρες&quot;, θα λάβετε μία προειδοποίηση πριν την δημιουργία ωρολογίου προγράμματος. Αποεπιλέξτε αυτό το πεδίο αν θέλετε να απαλλαγείτε από αυτήν την προειδοποίηση (προτείνεται όμως να διατηρήσετε ενεργοποιημένη αυτήν την προειδοποίηση).</translation>
+        <translation>Αν χρησιμοποείτε περιορισμούς &quot;μαθητές - ελάχιστος αριθμός ωρών ημερησίως με επιτρεπτές κενές ημέρες&quot;, θα λάβετε μία προειδοποίηση πριν την δημιουργία ωρολογίου προγράμματος. Αποεπιλέξτε αυτό το πεδίο αν θέλετε να απαλλαγείτε από αυτήν την προειδοποίηση (προτείνεται όμως να διατηρήσετε ενεργοποιημένη αυτήν την προειδοποίηση).</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2072"/>
@@ -31576,7 +31575,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2144"/>
         <source>Activities rooms statistics: this menu will show the activities which may be scheduled in an unspecified room, if they are referred to by space constraints with weight under 100.0%, and the activities which will certainly be scheduled in an unspecified room, if they are not referred to by any space constraints. Remember that home rooms constraints are effective only on activities which have only the exact specified teacher or students set (activities with more teachers or students sets are not affected by home rooms constraints, you need to have preferred rooms constraints for such activities to ensure they will not end up in an unspecified room).</source>
-        <translation>Στατιστικά αιθουσών δραστηριοτήτων: αυτό το μενού θα εμφανίζει τις δραστηριότητες που πιθανώς να μην τοποθετηθούν σε συγκερκιμένη αίθουσα, αν οι σχετικοί χωρικοί περιορισμοί έχουν ποσοστό απαίτησης μικρότερο του 100%, καθώς και τις δραστηριότητες που με βεβαιότητα δεν πρόκειται να τοποθετηθούν σε συγκεκριμένη αίθουσα, εφόσον δεν υπάρχουν σχετικοί χωρικοί περιορισμοί. Υπενθυμίζεται ότι οι περιορισμοί βασικών αιθουσών για εκπαιδευτικό έχουν αποτέλεσμα για τις δραστηριότητες που σχετίζονται με τον συγκεκριμένο εκπαιδευτικό και μόνον, καθώς και ότι οι αντίστοιχοι περιορισμοί βασικών αιθουσών για ομάδα μαθητών έχουν αποτέλεσμα για τις δραστηριότητες που σχετίζονται με την συγκεκριμένη ομάδα μαθητών και μόνον (οι δραστηριότητες με περισσότερους εκπαιδευτικούς ή ομάδες μαθητών δεν επηρεάζονται από περιορισμούς βασικών αναφοράς, θα πρέπει να έχετε περιορισμούς προτιμητέων αιθουσών για τέτοιες δραστηριόρητες, προκειμένου να εξασφαλίσετε ότι θα τοποθετηθούν σε συγκεκριμένη αίθουσα).</translation>
+        <translation>Στατιστικά αιθουσών δραστηριοτήτων: αυτό το μενού θα εμφανίζει τις δραστηριότητες που πιθανώς να μην τοποθετηθούν σε συγκερκιμένη αίθουσα, αν οι σχετικοί χωρικοί περιορισμοί έχουν ποσοστό απαίτησης μικρότερο του 100%, καθώς και τις δραστηριότητες που με βεβαιότητα δεν πρόκειται να τοποθετηθούν σε συγκεκριμένη αίθουσα, εφόσον δεν υπάρχουν σχετικοί χωρικοί περιορισμοί. Υπενθυμίζεται ότι οι περιορισμοί βασικών αιθουσών για εκπαιδευτικό έχουν αποτέλεσμα για τις δραστηριότητες που σχετίζονται με τον συγκεκριμένο εκπαιδευτικό και μόνον, καθώς και ότι οι αντίστοιχοι περιορισμοί βασικών αιθουσών για ομάδα μαθητών έχουν αποτέλεσμα για τις δραστηριότητες που σχετίζονται με την συγκεκριμένη ομάδα μαθητών και μόνον (οι δραστηριότητες με περισσότερους εκπαιδευτικούς ή ομάδες μαθητών δεν επηρεάζονται από περιορισμούς βασικών αιθουσών, θα πρέπει να έχετε περιορισμούς προτιμητέων αιθουσών για τέτοιες δραστηριόρητες, προκειμένου να εξασφαλίσετε ότι θα τοποθετηθούν σε συγκεκριμένη αίθουσα).</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2151"/>
@@ -31682,7 +31681,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2087"/>
         <source>If you hide subgroups in combo boxes, the affected dialogs (like the activities dialog or the add constraint students set not available times dialog) will load much faster if you have many subgroups.</source>
-        <translation>Αν αποκρύψετε τα υποτμήματα στα σύνθετα πλαίσια, οι διάλογοι που επηρεάζονται (όπως ο διάλογος δραστηριοτήτων ή ο διάλογος του &quot;ομάδα μαθητών - μη διαθέσιμοι χρόνοι) θα φορτώνονται σαφώς πιο γρήγορα στην περίπτωση που έχετε πολλά υποτμήματα.</translation>
+        <translation>Αν αποκρύψετε τα υποτμήματα στα σύνθετα πλαίσια, οι διάλογοι που επηρεάζονται (όπως ο διάλογος δραστηριοτήτων ή ο διάλογος &quot;ομάδα μαθητών - μη διαθέσιμοι χρόνοι&quot;) θα φορτώνονται σαφώς πιο γρήγορα στην περίπτωση που έχετε πολλά υποτμήματα.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="3662"/>
@@ -31857,7 +31856,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="4219"/>
         <source>Confirm spread activities over the week will be %1</source>
         <comment>%1 is true or false</comment>
-        <translation>Η επιβεβαίωση για την κατανομή των δραστηριοτήτων μέσα στην εβδομάδα θα είναι %1</translation>
+        <translation>Η επιβεβαίωση για την &quot;ομοιόμορφη&quot; κατανομή των δραστηριοτήτων μέσα στην εβδομάδα θα είναι %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4219"/>
@@ -31884,7 +31883,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="4227"/>
         <source>Enable group activities in the initial order of generation will be %1</source>
         <comment>%1 is true or false</comment>
-        <translation>Η ενεργοποίηση ομαδοποίησης και τοποθέτησης δραστηριοτήτων στην αρχική φάση δημιουργίας ωρολογίου προγράμματος θα είναι %1</translation>
+        <translation>Η ενεργοποίηση &quot;ομαδοποίηση δραστηριοτήτων στο αρχικό στάδιο δημιουργίας ωρολογίου προγράμματος&quot; θα είναι %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4227"/>
@@ -31895,7 +31894,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="4229"/>
         <source>Warn if using group activities in the initial order of generation will be %1</source>
         <comment>%1 is true or false</comment>
-        <translation>Προειδοποίησε αν η χρήση ομαδοποίησης δραστηριοτήτων στην αρχική σειρά δημιουργίας πρόκειται να είναι %1</translation>
+        <translation>Προειδοποίησε αν η χρήση &quot;ομαδοποίηση δραστηριοτήτων στο αρχικό στάδιο δημιουργίας&quot; πρόκειται να είναι %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4229"/>
@@ -32058,7 +32057,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4275"/>
         <source>teachers free periods</source>
-        <translation>ελεύθερες ώρες εκπαιδευτικών</translation>
+        <translation>εκπαιδευτικοί - ελεύθερες ώρες</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4271"/>
@@ -32145,14 +32144,14 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="3897"/>
         <location filename="../src/interface/fetmainform.cpp" line="3918"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
-        <translation>Η προβολή του ωρολογίου προγράμματος είναι αδύνατη, επειδή έχετε προσθέσει η αφαιρέσει κάποιες αίθουσες. Παρακαλώ δημιουργήστε εκ νέου το ωρολόγιο πρόγραμμα και στη συνέχεια μπορείτε να το δείτε</translation>
+        <translation>Η προβολή του ωρολογίου προγράμματος είναι αδύνατη, επειδή έχετε προσθέσει ή διαγράψει κάποιες αίθουσες. Παρακαλώ δημιουργήστε εκ νέου το ωρολόγιο πρόγραμμα και στη συνέχεια μπορείτε να το δείτε</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="3815"/>
         <location filename="../src/interface/fetmainform.cpp" line="3840"/>
         <location filename="../src/interface/fetmainform.cpp" line="3922"/>
         <source>Cannot display the timetable, because you added or removed some teachers. Please regenerate the timetable and then view it</source>
-        <translation>Η προβολή του ωρολογίου προγράμματος είναι αδύνατη, επειδή έχετε προσθέσει η αφαιρέσει κάποιους εκπαιδευτικούς. Παρακαλώ δημιουργήστε εκ νέου το ωρολόγιο πρόγραμμα και στη συνέχεια μπορείτε να το δείτε</translation>
+        <translation>Η προβολή του ωρολογίου προγράμματος είναι αδύνατη, επειδή έχετε προσθέσει ή διαγράψει κάποιους εκπαιδευτικούς. Παρακαλώ δημιουργήστε εκ νέου το ωρολόγιο πρόγραμμα και στη συνέχεια μπορείτε να το δείτε</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="740"/>
@@ -32256,7 +32255,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="4697"/>
         <location filename="../src/interface/fetmainform.cpp" line="4727"/>
         <source>If your timetable is too difficult, it may be from these kinds of constraints, so you may need to remove them and retry.</source>
-        <translation>Αν το ωρολόγιο πρόγραμμά σας είναι υπερβολικά δύσκολο, αυτό μπορεί να οφείλεται στους συγκεκριμένους τύπους περιορισμών. Κατά συνέπεια, μπορεί να χρειαστεί να αφαιρέσετε τους συγκεκριμένους περιορισμούς και να προσπαθήσετε ξανά.</translation>
+        <translation>Αν το ωρολόγιο πρόγραμμά σας είναι υπερβολικά δύσκολο, αυτό μπορεί να οφείλεται στους συγκεκριμένους τύπους περιορισμών. Κατά συνέπεια, μπορεί να χρειαστεί να διαγράψετε τους συγκεκριμένους περιορισμούς και να προσπαθήσετε ξανά.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4699"/>
@@ -32605,7 +32604,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2026"/>
         <source>add/modify constraints break, not available, preferred starting times or time slots, occupy max time slots from selection or max simultaneous in selected time slots (the table cells will have green or red colors).</source>
-        <translation>προσθήκη/τροποποίηση περιορισμών: διαλείμματα, μη διαθέσιμες ώρες, προτιμητέοι χρόνοι έναρξης ή προτιμητέες περίοδοι, κάλυψη μέγιστων περιόδων από επιλογή ή μέγιστες ταυτόχρονες δραστηριότητες σε επιλεγμένες περιόδους (τα κελιά του πίνακα θα έχουν πράσινο ή κόκκινο χρώμα).</translation>
+        <translation>προσθήκη/τροποποίηση περιορισμών: διαλείμματα, μη διαθέσιμοι χρόνοι, προτιμητέοι χρόνοι έναρξης ή προτιμητέες περίοδοι, κάλυψη μέγιστων περιόδων από επιλογή ή μέγιστες ταυτόχρονες δραστηριότητες σε επιλεγμένες περιόδους (τα κελιά του πίνακα θα έχουν πράσινο ή κόκκινο χρώμα).</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="3660"/>
@@ -33308,7 +33307,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="301"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for activity planning</comment>
-        <translation>Προηγμένo</translation>
+        <translation>Προηγμένο</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="416"/>
@@ -33320,7 +33319,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="444"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for time constraints</comment>
-        <translation type="unfinished"></translation>
+        <translation>Προηγμένο</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="497"/>
@@ -33338,7 +33337,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="747"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for timetable</comment>
-        <translation type="unfinished"></translation>
+        <translation>Προηγμένο</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="761"/>
@@ -33355,7 +33354,8 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="1251"/>
         <source>Advanced</source>
         <comment>It refers to advanced settings</comment>
-        <translation type="unfinished"></translation>
+        <translatorcomment>Προηγμένες ρυθμίσεις</translatorcomment>
+        <translation>Προηγμένες</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1302"/>
@@ -33367,7 +33367,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="1329"/>
         <source>Advanced</source>
         <comment>The menu item for advanced features</comment>
-        <translation type="unfinished"></translation>
+        <translation>Προηγμένες</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1374"/>
@@ -33700,12 +33700,12 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2443"/>
         <source>Enable group activities in initial order</source>
-        <translation>Ενεργοποίηση ομαδοποίησης δραστηριοτήτων στο αρχικό στάδιο</translation>
+        <translation>Ενεργοποίηση &quot;ομαδοποίηση δραστηριοτήτων στο αρχικό στάδιο&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2454"/>
         <source>Warn if using group activities in initial order</source>
-        <translation>Προειδοποίηση αν χρησιμοποιείται ομαδοποίηση δραστηριοτήτων στο αρχικό στάδιο</translation>
+        <translation>Προειδοποίηση αν χρησιμοποιείται &quot;ομαδοποίηση δραστηριοτήτων στο αρχικό στάδιο&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2465"/>
@@ -34070,12 +34070,12 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1981"/>
         <source>A students set works in an hourly interval max days per week</source>
-        <translation>Ομάδα μαθητών εργάζεται σε διάστημα ωρών για μέγιστες μέρες ανά εβδομάδα</translation>
+        <translation>Ομάδα μαθητών εργάζεται σε διάστημα ωρών για μέγιστες ημέρες ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1986"/>
         <source>All students work in an hourly interval max days per week</source>
-        <translation>Όλοι οι μαθητές εργάζονται σε διάστημα ωρών για μέγιστες μέρες ανά εβδομάδα</translation>
+        <translation>Όλοι οι μαθητές εργάζονται σε διάστημα ωρών για μέγιστες ημέρες ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1991"/>
@@ -34092,10 +34092,6 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="2362"/>
         <source>Confirm save data and timetable as</source>
         <translation>Επιβεβαίωση αποθήκευσης δεδομένων και ωρολογίου ως</translation>
-    </message>
-    <message>
-        <source>Advanced</source>
-        <translation type="vanished">Προηγμένο</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2007"/>
@@ -34256,7 +34252,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fet.cpp" line="805"/>
         <location filename="../src/interface/fet.cpp" line="814"/>
         <source>FET critical</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FET - Κρίσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="844"/>
@@ -35853,7 +35849,7 @@ Please modify your data correspondingly and try again</source>
         <location filename="../src/engine/activity.cpp" line="118"/>
         <source>Active=%1</source>
         <comment>Represents a boolean value, if a &apos;group activities in initial order&apos; item is active or not, %1 is yes or no</comment>
-        <translation type="unfinished">Ενεργή=%1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/engine/activity.cpp" line="124"/>
@@ -36027,13 +36023,13 @@ Please modify your data correspondingly and try again</source>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform_template.ui" line="162"/>
         <source>Activate</source>
         <comment>Refers to activating a time constraint</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ενεργοποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform_template.ui" line="169"/>
         <source>Deactivate</source>
         <comment>Refers to deactivating a time constraint</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Απενεργοποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform_template.ui" line="176"/>
@@ -36196,13 +36192,13 @@ Please modify your data correspondingly and try again</source>
         <location filename="../src/interface/groupsform_template.ui" line="139"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Πάνω</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform_template.ui" line="146"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Κάτω</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform_template.ui" line="153"/>
@@ -37481,17 +37477,17 @@ Add another constraint: min 1 day between activities with id-s 2 and 3, consecut
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="973"/>
         <source>Note that using the global menu setting to hide subgroups in activity planning is a different thing from the check box in the activity planning dialog, and the global setting works better and faster.</source>
-        <translation type="unfinished">Προσέξτε ότι η χρήση της καθολικής ρύθμισης στο μενού για απόκρυψη των υποτμημάτων στον προγραμματισμό δραστηριοτήτων είναι κάτι διαφορετικό από το πλαίσιο ελέγχου στο παράθυρο προγραμματισμού δραστηριοτήτων. Η καθολική ρύθμιση δουλεύει καλύτερα και γρηγορότερα.</translation>
+        <translation type="unfinished">Προσέξτε ότι η χρήση της καθολικής ρύθμισης στο μενού για απόκρυψη των υποτμημάτων στον προγραμματισμό δραστηριοτήτων είναι κάτι διαφορετικό από το πλαίσιο ελέγχου στον διάλογο προγραμματισμού δραστηριοτήτων. Η καθολική ρύθμιση δουλεύει καλύτερα και γρηγορότερα.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="976"/>
         <source>If you hide subgroups in combo boxes, the affected dialogs (like the activities dialog or the add constraint students set not available times dialog) will load much faster if you have many subgroups.</source>
-        <translation type="unfinished">Αν αποκρύψετε τα υποτμήματα στα σύνθετα πλαίσια, τα παράθυρα διαχείρισης που επηρεάζονται (όπως η διαχείριση δραστηριοτήτων ή διαχείριση προσθήκης του περιορισμού μη διαθέσιμες ώρες για ομάδα μαθητών) θα φορτώνονται σαφώς πιο γρήγορα στην περίπτωση που έχετε πολλά υποτμήματα.</translation>
+        <translation type="unfinished">Αν αποκρύψετε τα υποτμήματα στα σύνθετα πλαίσια, οι διάλογοι που επηρεάζονται (όπως ο διάλογος δραστηριοτήτων ή ο διάλογος &quot;ομάδα μαθητών - μη διαθέσιμοι χρόνοι&quot;) θα φορτώνονται σαφώς πιο γρήγορα στην περίπτωση που έχετε πολλά υποτμήματα.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="981"/>
         <source>If you are only working on a timetable, and you do not need to publish it, you may want to disable writing some categories of timetables on the hard disk, for operativity (the generation speed is not affected, only the overhead to write the partial/complete timetables when stopping/finishing the simulation). The timetables taking the longest time are the subgroups, groups AND years ones.</source>
-        <translation type="unfinished">Εάν απλά δουλεύετε ένα ωρολόγιο πρόγραμμα, και δεν χρειάζεται να το δημοσιοποιήσετε, πιθανώς να θέλετε να απενεργοποιήσετε την εγγραφή κάποιων κατηγοριών ωρολογίων προγραμμάτων στον σκληρό δίσκο, για λόγους λειτουργικότητας. (η ταχύτητα επίλυσης δεν επηρεάζεται, μόνον υπάρχει μία επιβάρυνση για την εγγραφή μερικώς/πλήρως ολοκληρωμένων ωρολογίων προγραμμάτων όταν διακόπτεται/τερματίζεται η επίλυση). Τα ωρολόγια προγράμματα που απαιτούν τον περισσότερο χρόνο είναι αυτά των υποτμημάτων, τμημάτων ΚΑΙ ετών.</translation>
+        <translation type="unfinished">Εάν απλά δουλεύετε ένα ωρολόγιο πρόγραμμα, και δεν χρειάζεται να το δημοσιοποιήσετε, πιθανώς να θέλετε να απενεργοποιήσετε την εγγραφή κάποιων κατηγοριών ωρολογίων προγραμμάτων στον σκληρό δίσκο, για λόγους λειτουργικότητας. (η ταχύτητα επίλυσης δεν επηρεάζεται, μόνον υπάρχει μία επιβάρυνση για την εγγραφή των μερικώς/πλήρως ολοκληρωμένων ωρολογίων προγραμμάτων όταν διακόπτεται/τερματίζεται η επίλυση). Τα ωρολόγια προγράμματα που απαιτούν τον περισσότερο χρόνο είναι αυτά των υποτμημάτων, τμημάτων ΚΑΙ ετών.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="985"/>
@@ -39500,7 +39496,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/longtextmessagebox.cpp" line="70"/>
         <source>FET critical</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FET - Κρίσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/longtextmessagebox.cpp" line="211"/>
@@ -40095,7 +40091,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="98"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished">Όλοι</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="112"/>
@@ -40229,7 +40225,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="120"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished">Όλοι</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="137"/>
@@ -40310,7 +40306,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="88"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished">Όλοι</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="102"/>
@@ -40405,7 +40401,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="98"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished">Όλοι</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="112"/>
@@ -40788,7 +40784,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform_template.ui" line="133"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished">Όλοι</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform_template.ui" line="147"/>
@@ -40878,7 +40874,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform_template.ui" line="104"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished">Όλοι</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform_template.ui" line="121"/>
@@ -40974,7 +40970,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform_template.ui" line="104"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished">Όλοι</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform_template.ui" line="121"/>
@@ -41070,7 +41066,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform_template.ui" line="104"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished">Όλοι</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform_template.ui" line="121"/>
@@ -41980,7 +41976,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform_template.ui" line="104"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished">Όλοι</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform_template.ui" line="121"/>
@@ -42103,7 +42099,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform_template.ui" line="104"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished">Όλοι</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform_template.ui" line="121"/>
@@ -42227,7 +42223,7 @@ force activities consecutive</source>
         <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform_template.ui" line="104"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished">Όλοι</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform_template.ui" line="121"/>
@@ -47042,7 +47038,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifygroupactivitiesininitialorderitemform_template.ui" line="104"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished">Όλοι</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/modifygroupactivitiesininitialorderitemform_template.ui" line="121"/>
@@ -47853,7 +47849,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/removeredundantform_template.ui" line="14"/>
         <source>Remove redundant constraints</source>
-        <translation type="unfinished">Αφαίρεση περιττών περιορισμών</translation>
+        <translation type="unfinished">Διαγραφή περιττών περιορισμών</translation>
     </message>
     <message>
         <location filename="../src/interface/removeredundantform_template.ui" line="84"/>
@@ -48023,13 +48019,13 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/roomsform_template.ui" line="81"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Πάνω</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform_template.ui" line="88"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Κάτω</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform_template.ui" line="95"/>
@@ -48355,7 +48351,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/engine/rules.cpp" line="7074"/>
         <location filename="../src/engine/rules.cpp" line="7200"/>
         <source>FET critical</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FET - Κρίσιμο</translation>
     </message>
     <message>
         <location filename="../src/engine/rules.cpp" line="4685"/>
@@ -50220,7 +50216,7 @@ Please report error. FET will now abort current operation</source>
         <location filename="../src/engine/statisticsexport.cpp" line="2093"/>
         <location filename="../src/engine/statisticsexport.cpp" line="2143"/>
         <source>FET critical</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FET - Κρίσιμο</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="359"/>
@@ -50466,7 +50462,7 @@ Please report error. FET will now abort current operation</source>
         <location filename="../src/interface/statisticsprintform.cpp" line="125"/>
         <source>All</source>
         <comment>Refers to a list of items, select all. Please keep translation short</comment>
-        <translation type="unfinished">Όλοι</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="127"/>
@@ -51442,13 +51438,13 @@ Bottom: %4</source>
         <location filename="../src/interface/subgroupsform_template.ui" line="156"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Πάνω</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="163"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Κάτω</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="170"/>
@@ -51663,13 +51659,13 @@ Bottom: %4</source>
         <location filename="../src/interface/subjectsform_template.ui" line="83"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Πάνω</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform_template.ui" line="90"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Κάτω</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform_template.ui" line="97"/>
@@ -51807,7 +51803,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/teachersubjectsqualificationsform_template.ui" line="71"/>
         <source>All</source>
-        <translation type="unfinished">Όλοι</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/teachersubjectsqualificationsform_template.ui" line="80"/>
@@ -52010,13 +52006,13 @@ Bottom: %4</source>
         <location filename="../src/interface/teachersform_template.ui" line="101"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Πάνω</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform_template.ui" line="108"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Κάτω</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform_template.ui" line="115"/>
@@ -52075,7 +52071,7 @@ Bottom: %4</source>
         <location filename="../src/interface/teachersstatisticsform_template.ui" line="29"/>
         <source>Hide full teachers</source>
         <comment>It refers to teachers who have their number of hours fulfilled. Please keep translation short</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Απόκρυψη πλήρων εκπαιδευτικών</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersstatisticsform_template.ui" line="82"/>
@@ -53098,7 +53094,7 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="4747"/>
         <location filename="../src/engine/timetableexport.cpp" line="4762"/>
         <source>FET critical</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FET - Κρίσιμο</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="866"/>
@@ -54004,7 +54000,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableprintform.cpp" line="185"/>
         <source>All</source>
         <comment>Refers to a list of items, select all. Please keep translation short</comment>
-        <translation type="unfinished">Όλοι</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="171"/>
@@ -54657,7 +54653,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="201"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished">Η προβολή του ωρολογίου προγράμματος είναι αδύνατη, επειδή έχετε προσθέσει η αφαιρέσει κάποιες αίθουσες. Παρακαλώ δημιουργήστε εκ νέου το ωρολόγιο πρόγραμμα και στη συνέχεια μπορείτε να το δείτε</translation>
+        <translation>Η προβολή του ωρολογίου προγράμματος είναι αδύνατη, επειδή έχετε προσθέσει ή διαγράψει κάποιες αίθουσες. Παρακαλώ δημιουργήστε εκ νέου το ωρολόγιο πρόγραμμα και στη συνέχεια μπορείτε να το δείτε</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="237"/>
@@ -54887,7 +54883,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="661"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="783"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished">Η προβολή του ωρολογίου προγράμματος είναι αδύνατη, επειδή έχετε προσθέσει η αφαιρέσει κάποιες αίθουσες. Παρακαλώ δημιουργήστε εκ νέου το ωρολόγιο πρόγραμμα και στη συνέχεια μπορείτε να το δείτε</translation>
+        <translation>Η προβολή του ωρολογίου προγράμματος είναι αδύνατη, επειδή έχετε προσθέσει ή διαγράψει κάποιες αίθουσες. Παρακαλώ δημιουργήστε εκ νέου το ωρολόγιο πρόγραμμα και στη συνέχεια μπορείτε να το δείτε</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="308"/>
@@ -54920,7 +54916,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="671"/>
         <source>Cannot display the timetable, because you added or removed some teachers. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished">Η προβολή του ωρολογίου προγράμματος είναι αδύνατη, επειδή έχετε προσθέσει η αφαιρέσει κάποιους εκπαιδευτικούς. Παρακαλώ δημιουργήστε εκ νέου το ωρολόγιο πρόγραμμα και στη συνέχεια μπορείτε να το δείτε</translation>
+        <translation>Η προβολή του ωρολογίου προγράμματος είναι αδύνατη, επειδή έχετε προσθέσει ή διαγράψει κάποιους εκπαιδευτικούς. Παρακαλώ δημιουργήστε εκ νέου το ωρολόγιο πρόγραμμα και στη συνέχεια μπορείτε να το δείτε</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="680"/>
@@ -55195,7 +55191,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="516"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="638"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished">Η προβολή του ωρολογίου προγράμματος είναι αδύνατη, επειδή έχετε προσθέσει η αφαιρέσει κάποιες αίθουσες. Παρακαλώ δημιουργήστε εκ νέου το ωρολόγιο πρόγραμμα και στη συνέχεια μπορείτε να το δείτε</translation>
+        <translation>Η προβολή του ωρολογίου προγράμματος είναι αδύνατη, επειδή έχετε προσθέσει ή διαγράψει κάποιες αίθουσες. Παρακαλώ δημιουργήστε εκ νέου το ωρολόγιο πρόγραμμα και στη συνέχεια μπορείτε να το δείτε</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="340"/>
@@ -55433,7 +55429,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="772"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="934"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished">Η προβολή του ωρολογίου προγράμματος είναι αδύνατη, επειδή έχετε προσθέσει η αφαιρέσει κάποιες αίθουσες. Παρακαλώ δημιουργήστε εκ νέου το ωρολόγιο πρόγραμμα και στη συνέχεια μπορείτε να το δείτε</translation>
+        <translation>Η προβολή του ωρολογίου προγράμματος είναι αδύνατη, επειδή έχετε προσθέσει ή διαγράψει κάποιες αίθουσες. Παρακαλώ δημιουργήστε εκ νέου το ωρολόγιο πρόγραμμα και στη συνέχεια μπορείτε να το δείτε</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="760"/>
@@ -55675,7 +55671,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="187"/>
         <source>Cannot display the timetable, because you added or removed some teachers. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished">Η προβολή του ωρολογίου προγράμματος είναι αδύνατη, επειδή έχετε προσθέσει η αφαιρέσει κάποιους εκπαιδευτικούς. Παρακαλώ δημιουργήστε εκ νέου το ωρολόγιο πρόγραμμα και στη συνέχεια μπορείτε να το δείτε</translation>
+        <translation>Η προβολή του ωρολογίου προγράμματος είναι αδύνατη, επειδή έχετε προσθέσει ή διαγράψει κάποιους εκπαιδευτικούς. Παρακαλώ δημιουργήστε εκ νέου το ωρολόγιο πρόγραμμα και στη συνέχεια μπορείτε να το δείτε</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="223"/>
@@ -55701,7 +55697,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="443"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="554"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished">Η προβολή του ωρολογίου προγράμματος είναι αδύνατη, επειδή έχετε προσθέσει η αφαιρέσει κάποιες αίθουσες. Παρακαλώ δημιουργήστε εκ νέου το ωρολόγιο πρόγραμμα και στη συνέχεια μπορείτε να το δείτε</translation>
+        <translation>Η προβολή του ωρολογίου προγράμματος είναι αδύνατη, επειδή έχετε προσθέσει ή διαγράψει κάποιες αίθουσες. Παρακαλώ δημιουργήστε εκ νέου το ωρολόγιο πρόγραμμα και στη συνέχεια μπορείτε να το δείτε</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="263"/>
@@ -55903,7 +55899,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="204"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="649"/>
         <source>Cannot display the timetable, because you added or removed some teachers. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished">Η προβολή του ωρολογίου προγράμματος είναι αδύνατη, επειδή έχετε προσθέσει η αφαιρέσει κάποιους εκπαιδευτικούς. Παρακαλώ δημιουργήστε εκ νέου το ωρολόγιο πρόγραμμα και στη συνέχεια μπορείτε να το δείτε</translation>
+        <translation>Η προβολή του ωρολογίου προγράμματος είναι αδύνατη, επειδή έχετε προσθέσει ή διαγράψει κάποιους εκπαιδευτικούς. Παρακαλώ δημιουργήστε εκ νέου το ωρολόγιο πρόγραμμα και στη συνέχεια μπορείτε να το δείτε</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="307"/>
@@ -55929,7 +55925,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="639"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="749"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished">Η προβολή του ωρολογίου προγράμματος είναι αδύνατη, επειδή έχετε προσθέσει η αφαιρέσει κάποιες αίθουσες. Παρακαλώ δημιουργήστε εκ νέου το ωρολόγιο πρόγραμμα και στη συνέχεια μπορείτε να το δείτε</translation>
+        <translation>Η προβολή του ωρολογίου προγράμματος είναι αδύνατη, επειδή έχετε προσθέσει ή διαγράψει κάποιες αίθουσες. Παρακαλώ δημιουργήστε εκ νέου το ωρολόγιο πρόγραμμα και στη συνέχεια μπορείτε να το δείτε</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="627"/>
@@ -56385,13 +56381,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/yearsform_template.ui" line="90"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Πάνω</translation>
     </message>
     <message>
         <location filename="../src/interface/yearsform_template.ui" line="97"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Κάτω</translation>
     </message>
     <message>
         <location filename="../src/interface/yearsform_template.ui" line="111"/>
