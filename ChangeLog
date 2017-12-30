@@ -2021,4 +2021,4 @@ Versions 5.35.0 - 5.35.v
 	(instead, they were invisible). Reported by kdrosos and sigit_yuwono.
 	- Added a partial Japanese translation, by Taro Tada.
 	- Added a new partial Greek translation, by Vangelis Karafillidis.
-	- Minor bugs fixed, reported by Vangelis Karafillidis.
+	- Minor bugs fixed (reported by Vangelis Karafillidis).
