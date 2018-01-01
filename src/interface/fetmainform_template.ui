@@ -44,7 +44,7 @@
        <bool>true</bool>
       </property>
       <property name="currentIndex">
-       <number>4</number>
+       <number>0</number>
       </property>
       <property name="usesScrollButtons">
        <bool>false</bool>
@@ -298,7 +298,7 @@
              <item row="4" column="2">
               <widget class="QPushButton" name="shortcutDataAdvancedPushButton">
                <property name="text">
-                <string comment="It is on the shortcuts tab buttons, so keep translation short. It contains submenu for activity planning">Advanced</string>
+                <string comment="It is on the shortcuts tab buttons, so keep translation short. It contains submenu for advanced data">Advanced</string>
                </property>
               </widget>
              </item>
