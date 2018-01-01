@@ -2019,6 +2019,7 @@ Versions 5.35.0 - 5.35.v
 - Version 5.35.0
 	- Bug fix: when unplugging a display, the dialogs which were previously shown on this display were not shown correctly on the remaining active display(s)
 	(instead, they were invisible). Reported by kdrosos and sigit_yuwono.
+	- Minor bugs fixed (reported by Vangelis Karafillidis).
 	- Added a partial Japanese translation, by Taro Tada.
 	- Added a new partial Greek translation, by Vangelis Karafillidis.
-	- Minor bugs fixed (reported by Vangelis Karafillidis).
+	- Updated the Czech translation, by Pavel Fric.
