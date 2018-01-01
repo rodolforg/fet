@@ -794,13 +794,13 @@ there won&apos;t be removed an additional number of %1 activities
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2200"/>
         <source>Please enter the target number of hours:</source>
-        <translation type="unfinished">Prosím zadejte cílový počet hodin:</translation>
+        <translation>Prosím zadejte cílový počet hodin:</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2662"/>
         <source>Target</source>
         <comment>Please keep translation short.</comment>
-        <translation type="unfinished">Cíl</translation>
+        <translation>Cíl</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2908"/>
@@ -983,19 +983,19 @@ there won&apos;t be removed an additional number of %1 activities
         <location filename="../src/engine/activitytag.cpp" line="51"/>
         <source>N:%1</source>
         <comment>The name of the activity tag</comment>
-        <translation type="unfinished">N:%1</translation>
+        <translation>N:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/activitytag.cpp" line="56"/>
         <location filename="../src/engine/activitytag.cpp" line="77"/>
         <source>yes</source>
-        <translation type="unfinished">ano</translation>
+        <translation>ano</translation>
     </message>
     <message>
         <location filename="../src/engine/activitytag.cpp" line="58"/>
         <location filename="../src/engine/activitytag.cpp" line="79"/>
         <source>no</source>
-        <translation type="unfinished">ne</translation>
+        <translation>ne</translation>
     </message>
     <message>
         <location filename="../src/engine/activitytag.cpp" line="59"/>
@@ -1024,12 +1024,12 @@ there won&apos;t be removed an additional number of %1 activities
         <location filename="../src/engine/activitytag.cpp" line="80"/>
         <source>Printable=%1</source>
         <comment>Whether the activity tag is Printable - can be true or false</comment>
-        <translation type="unfinished"></translation>
+        <translation>Tisknutelná=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/activitytag.cpp" line="85"/>
         <source>Comments=%1</source>
-        <translation type="unfinished">Poznámky=%1</translation>
+        <translation>Poznámky=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/activitytag.cpp" line="97"/>
@@ -1162,12 +1162,12 @@ there won&apos;t be removed an additional number of %1 activities
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="356"/>
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="358"/>
         <source>Cancel</source>
-        <translation type="unfinished">Zrušit</translation>
+        <translation>Zrušit</translation>
     </message>
 </context>
 <context>
@@ -1196,7 +1196,7 @@ there won&apos;t be removed an additional number of %1 activities
     <message>
         <location filename="../src/interface/activitytagsform_template.ui" line="58"/>
         <source>Comments</source>
-        <translation type="unfinished"></translation>
+        <translation>Poznámky</translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform_template.ui" line="69"/>
@@ -1222,13 +1222,13 @@ there won&apos;t be removed an additional number of %1 activities
         <location filename="../src/interface/activitytagsform_template.ui" line="101"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Nahoru</translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform_template.ui" line="108"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Dolů</translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform_template.ui" line="115"/>
@@ -5375,27 +5375,27 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintstudentsmaxspanperdayform.cpp" line="75"/>
         <location filename="../src/interface/addconstraintstudentsmaxspanperdayform.cpp" line="78"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxspanperdayform.cpp" line="62"/>
         <source>Invalid weight(percentage)</source>
-        <translation type="unfinished">Neplatná váha (procento)</translation>
+        <translation>Neplatná váha (procento)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxspanperdayform.cpp" line="67"/>
         <source>Invalid weight(percentage) - it must be 100%</source>
-        <translation type="unfinished">Neplatná váha (procento) - musí být 100%</translation>
+        <translation>Neplatná váha (procento) - musí být 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxspanperdayform.cpp" line="76"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Omezení bylo přidáno:</translation>
+        <translation>Omezení bylo přidáno:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxspanperdayform.cpp" line="79"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Omezení NEBYLO přidáno - Oznamte, prosím, chybu</translation>
+        <translation>Omezení NEBYLO přidáno - Oznamte, prosím, chybu</translation>
     </message>
 </context>
 <context>
@@ -5409,17 +5409,17 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxspanperdayform_template.ui" line="26"/>
         <source>Weight percentage (necessary: 100%)</source>
-        <translation type="unfinished">Procento váhy (nutná: 100%)</translation>
+        <translation>Procento váhy (nutná: 100%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxspanperdayform_template.ui" line="54"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Přidat omezení</translation>
+        <translation>Přidat omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxspanperdayform_template.ui" line="61"/>
         <source>Close</source>
-        <translation type="unfinished">Zavřít</translation>
+        <translation>Zavřít</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxspanperdayform_template.ui" line="77"/>
@@ -5598,27 +5598,27 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintstudentsminrestinghoursform.cpp" line="77"/>
         <location filename="../src/interface/addconstraintstudentsminrestinghoursform.cpp" line="80"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsminrestinghoursform.cpp" line="64"/>
         <source>Invalid weight(percentage)</source>
-        <translation type="unfinished">Neplatná váha (procento)</translation>
+        <translation>Neplatná váha (procento)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsminrestinghoursform.cpp" line="69"/>
         <source>Invalid weight(percentage) - it must be 100%</source>
-        <translation type="unfinished">Neplatná váha (procento) - musí být 100%</translation>
+        <translation>Neplatná váha (procento) - musí být 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsminrestinghoursform.cpp" line="78"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Omezení bylo přidáno:</translation>
+        <translation>Omezení bylo přidáno:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsminrestinghoursform.cpp" line="81"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Omezení NEBYLO přidáno - Oznamte, prosím, chybu</translation>
+        <translation>Omezení NEBYLO přidáno - Oznamte, prosím, chybu</translation>
     </message>
 </context>
 <context>
@@ -5632,7 +5632,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentsminrestinghoursform_template.ui" line="36"/>
         <source>Weight percentage (necessary: 100%)</source>
-        <translation type="unfinished">Procento váhy (nutná: 100%)</translation>
+        <translation>Procento váhy (nutná: 100%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsminrestinghoursform_template.ui" line="46"/>
@@ -5642,12 +5642,12 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentsminrestinghoursform_template.ui" line="58"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Přidat omezení</translation>
+        <translation>Přidat omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsminrestinghoursform_template.ui" line="65"/>
         <source>Close</source>
-        <translation type="unfinished">Zavřít</translation>
+        <translation>Zavřít</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsminrestinghoursform_template.ui" line="90"/>
@@ -6642,32 +6642,32 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="107"/>
         <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="110"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="86"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Neplatná váha (procento)</translation>
+        <translation>Neplatná váha (procento)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="91"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
-        <translation type="unfinished">Neplatná váha (procento) - musí být 100%</translation>
+        <translation>Neplatná váha (procento) - musí být 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="99"/>
         <source>Invalid students set</source>
-        <translation type="unfinished">Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina studentů</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="108"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Omezení bylo přidáno:</translation>
+        <translation>Omezení bylo přidáno:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="111"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Omezení NEBYLO přidáno - Oznamte, prosím, chybu</translation>
+        <translation>Omezení NEBYLO přidáno - Oznamte, prosím, chybu</translation>
     </message>
 </context>
 <context>
@@ -6681,12 +6681,12 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform_template.ui" line="26"/>
         <source>Students set</source>
-        <translation type="unfinished">Skupina studentů</translation>
+        <translation>Skupina studentů</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform_template.ui" line="42"/>
         <source>Weight percentage (necessary: 100%)</source>
-        <translation type="unfinished">Procento váhy (nutná: 100%)</translation>
+        <translation>Procento váhy (nutná: 100%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform_template.ui" line="55"/>
@@ -6696,12 +6696,12 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform_template.ui" line="90"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Přidat omezení</translation>
+        <translation>Přidat omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform_template.ui" line="97"/>
         <source>Close</source>
-        <translation type="unfinished">Zavřít</translation>
+        <translation>Zavřít</translation>
     </message>
 </context>
 <context>
@@ -6897,32 +6897,32 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="109"/>
         <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="112"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="88"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Neplatná váha (procento)</translation>
+        <translation>Neplatná váha (procento)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="93"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
-        <translation type="unfinished">Neplatná váha (procento) - musí být 100%</translation>
+        <translation>Neplatná váha (procento) - musí být 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="101"/>
         <source>Invalid students set</source>
-        <translation type="unfinished">Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina studentů</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="110"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Omezení bylo přidáno:</translation>
+        <translation>Omezení bylo přidáno:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="113"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Omezení NEBYLO přidáno - Oznamte, prosím, chybu</translation>
+        <translation>Omezení NEBYLO přidáno - Oznamte, prosím, chybu</translation>
     </message>
 </context>
 <context>
@@ -6936,12 +6936,12 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminrestinghoursform_template.ui" line="44"/>
         <source>Students set</source>
-        <translation type="unfinished">Skupina studentů</translation>
+        <translation>Skupina studentů</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminrestinghoursform_template.ui" line="80"/>
         <source>Weight percentage (necessary: 100%)</source>
-        <translation type="unfinished">Procento váhy (nutná: 100%)</translation>
+        <translation>Procento váhy (nutná: 100%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminrestinghoursform_template.ui" line="101"/>
@@ -6956,12 +6956,12 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminrestinghoursform_template.ui" line="125"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Přidat omezení</translation>
+        <translation>Přidat omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminrestinghoursform_template.ui" line="132"/>
         <source>Close</source>
-        <translation type="unfinished">Zavřít</translation>
+        <translation>Zavřít</translation>
     </message>
 </context>
 <context>
@@ -8513,32 +8513,32 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermaxspanperdayform.cpp" line="92"/>
         <location filename="../src/interface/addconstraintteachermaxspanperdayform.cpp" line="95"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxspanperdayform.cpp" line="71"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Neplatná váha (procento)</translation>
+        <translation>Neplatná váha (procento)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxspanperdayform.cpp" line="76"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
-        <translation type="unfinished">Neplatná váha (procento) - musí být 100%</translation>
+        <translation>Neplatná váha (procento) - musí být 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxspanperdayform.cpp" line="84"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished">Neplatný učitel</translation>
+        <translation>Neplatný učitel</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxspanperdayform.cpp" line="93"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Omezení bylo přidáno:</translation>
+        <translation>Omezení bylo přidáno:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxspanperdayform.cpp" line="96"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Omezení NEBYLO přidáno - Oznamte, prosím, chybu</translation>
+        <translation>Omezení NEBYLO přidáno - Oznamte, prosím, chybu</translation>
     </message>
 </context>
 <context>
@@ -8552,17 +8552,17 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachermaxspanperdayform_template.ui" line="33"/>
         <source>Teacher</source>
-        <translation type="unfinished">Učitel</translation>
+        <translation>Učitel</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxspanperdayform_template.ui" line="45"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Přidat omezení</translation>
+        <translation>Přidat omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxspanperdayform_template.ui" line="52"/>
         <source>Close</source>
-        <translation type="unfinished">Zavřít</translation>
+        <translation>Zavřít</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxspanperdayform_template.ui" line="77"/>
@@ -8572,7 +8572,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachermaxspanperdayform_template.ui" line="96"/>
         <source>Weight percentage (necessary: 100%)</source>
-        <translation type="unfinished">Procento váhy (nutná: 100%)</translation>
+        <translation>Procento váhy (nutná: 100%)</translation>
     </message>
 </context>
 <context>
@@ -8853,7 +8853,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform_template.ui" line="28"/>
         <source>Teacher</source>
-        <translation type="unfinished">Učitel</translation>
+        <translation>Učitel</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform_template.ui" line="58"/>
@@ -8863,17 +8863,17 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform_template.ui" line="81"/>
         <source>Weight percentage (necessary: 100%)</source>
-        <translation type="unfinished">Procento váhy (nutná: 100%)</translation>
+        <translation>Procento váhy (nutná: 100%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform_template.ui" line="102"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Přidat omezení</translation>
+        <translation>Přidat omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform_template.ui" line="109"/>
         <source>Close</source>
-        <translation type="unfinished">Zavřít</translation>
+        <translation>Zavřít</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform_template.ui" line="118"/>
@@ -9635,27 +9635,27 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmaxspanperdayform.cpp" line="75"/>
         <location filename="../src/interface/addconstraintteachersmaxspanperdayform.cpp" line="78"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxspanperdayform.cpp" line="62"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Neplatná váha (procento)</translation>
+        <translation>Neplatná váha (procento)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxspanperdayform.cpp" line="67"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
-        <translation type="unfinished">Neplatná váha (procento) - musí být 100%</translation>
+        <translation>Neplatná váha (procento) - musí být 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxspanperdayform.cpp" line="76"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Omezení bylo přidáno:</translation>
+        <translation>Omezení bylo přidáno:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxspanperdayform.cpp" line="79"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Omezení NEBYLO přidáno - Oznamte, prosím, chybu</translation>
+        <translation>Omezení NEBYLO přidáno - Oznamte, prosím, chybu</translation>
     </message>
 </context>
 <context>
@@ -9669,12 +9669,12 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxspanperdayform_template.ui" line="22"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Přidat omezení</translation>
+        <translation>Přidat omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxspanperdayform_template.ui" line="29"/>
         <source>Close</source>
-        <translation type="unfinished">Zavřít</translation>
+        <translation>Zavřít</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxspanperdayform_template.ui" line="40"/>
@@ -9684,7 +9684,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxspanperdayform_template.ui" line="79"/>
         <source>Weight percentage (necessary: 100%)</source>
-        <translation type="unfinished">Procento váhy (nutná: 100%)</translation>
+        <translation>Procento váhy (nutná: 100%)</translation>
     </message>
 </context>
 <context>
@@ -9891,27 +9891,27 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersminrestinghoursform.cpp" line="77"/>
         <location filename="../src/interface/addconstraintteachersminrestinghoursform.cpp" line="80"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminrestinghoursform.cpp" line="64"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Neplatná váha (procento)</translation>
+        <translation>Neplatná váha (procento)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminrestinghoursform.cpp" line="69"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
-        <translation type="unfinished">Neplatná váha (procento) - musí být 100%</translation>
+        <translation>Neplatná váha (procento) - musí být 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminrestinghoursform.cpp" line="78"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Omezení bylo přidáno:</translation>
+        <translation>Omezení bylo přidáno:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminrestinghoursform.cpp" line="81"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Omezení NEBYLO přidáno - Oznamte, prosím, chybu</translation>
+        <translation>Omezení NEBYLO přidáno - Oznamte, prosím, chybu</translation>
     </message>
 </context>
 <context>
@@ -9930,17 +9930,17 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersminrestinghoursform_template.ui" line="45"/>
         <source>Weight percentage (necessary: 100%)</source>
-        <translation type="unfinished">Procento váhy (nutná: 100%)</translation>
+        <translation>Procento váhy (nutná: 100%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminrestinghoursform_template.ui" line="66"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Přidat omezení</translation>
+        <translation>Přidat omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminrestinghoursform_template.ui" line="73"/>
         <source>Close</source>
-        <translation type="unfinished">Zavřít</translation>
+        <translation>Zavřít</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminrestinghoursform_template.ui" line="82"/>
@@ -10131,7 +10131,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="199"/>
         <source>Swap</source>
         <comment>Interchange (swap) the two selected activities in the dialog</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Vyměnit</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="20"/>
@@ -10335,7 +10335,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="199"/>
         <source>Swap</source>
         <comment>Interchange (swap) the two selected activities in the dialog</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Vyměnit</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="20"/>
@@ -11323,7 +11323,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/allspaceconstraintsform_template.ui" line="122"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Dolů</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform_template.ui" line="129"/>
@@ -11360,7 +11360,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/allspaceconstraintsform_template.ui" line="83"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation>Nahoru</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform_template.ui" line="108"/>
@@ -11371,7 +11371,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/allspaceconstraintsform_template.ui" line="115"/>
         <source>Sorted</source>
         <comment>It refers to space constraints</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tříděno</translation>
     </message>
 </context>
 <context>
@@ -11518,7 +11518,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/alltimeconstraintsform_template.ui" line="128"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Dolů</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform_template.ui" line="135"/>
@@ -11544,7 +11544,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/alltimeconstraintsform_template.ui" line="89"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation>Nahoru</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform_template.ui" line="96"/>
@@ -11567,7 +11567,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/alltimeconstraintsform_template.ui" line="121"/>
         <source>Sorted</source>
         <comment>It refers to time constraints</comment>
-        <translation type="unfinished"></translation>
+        <translation>Tříděno</translation>
     </message>
 </context>
 <context>
@@ -11598,7 +11598,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/building.cpp" line="55"/>
         <source>Comments=%1</source>
-        <translation type="unfinished">Poznámky=%1</translation>
+        <translation>Poznámky=%1</translation>
     </message>
 </context>
 <context>
@@ -11645,12 +11645,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/buildingsform.cpp" line="290"/>
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../src/interface/buildingsform.cpp" line="292"/>
         <source>Cancel</source>
-        <translation type="unfinished">Zrušit</translation>
+        <translation>Zrušit</translation>
     </message>
 </context>
 <context>
@@ -11675,18 +11675,18 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/buildingsform_template.ui" line="62"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation>Nahoru</translation>
     </message>
     <message>
         <location filename="../src/interface/buildingsform_template.ui" line="69"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation>Dolů</translation>
     </message>
     <message>
         <location filename="../src/interface/buildingsform_template.ui" line="76"/>
         <source>Comments</source>
-        <translation type="unfinished"></translation>
+        <translation>Poznámky</translation>
     </message>
     <message>
         <location filename="../src/interface/buildingsform_template.ui" line="87"/>
@@ -12006,7 +12006,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15805"/>
         <source>Weight (percentage)=%1%</source>
-        <translation type="unfinished">Váha (procento)=%1%</translation>
+        <translation>Váha (procento)=%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15808"/>
@@ -12166,7 +12166,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17994"/>
         <source>Weight (percentage)=%1%</source>
-        <translation type="unfinished">Váha (procento)=%1%</translation>
+        <translation>Váha (procento)=%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17992"/>
@@ -12588,7 +12588,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7041"/>
         <source>Weight (percentage)=%1%</source>
-        <translation type="unfinished">Váha (procento)=%1%</translation>
+        <translation>Váha (procento)=%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7042"/>
@@ -12817,7 +12817,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17625"/>
         <source>Weight (percentage)=%1%</source>
-        <translation type="unfinished">Váha (procento)=%1%</translation>
+        <translation>Váha (procento)=%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17623"/>
@@ -13445,7 +13445,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9714"/>
         <source>Weight (percentage)=%1%</source>
-        <translation type="unfinished">Váha (procento)=%1%</translation>
+        <translation>Váha (procento)=%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9717"/>
@@ -13587,7 +13587,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7313"/>
         <source>Weight (percentage)=%1%</source>
-        <translation type="unfinished">Váha (procento)=%1%</translation>
+        <translation>Váha (procento)=%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7314"/>
@@ -13888,27 +13888,27 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="80"/>
         <source>Filter</source>
-        <translation type="unfinished">Filtr</translation>
+        <translation>Filtr</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="86"/>
         <source>Teacher</source>
-        <translation type="unfinished">Učitel</translation>
+        <translation>Učitel</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="99"/>
         <source>Students set</source>
-        <translation type="unfinished">Skupina studentů</translation>
+        <translation>Skupina studentů</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="112"/>
         <source>Subject</source>
-        <translation type="unfinished">Předmět</translation>
+        <translation>Předmět</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="125"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Druh činnosti</translation>
+        <translation>Druh činnosti</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="159"/>
@@ -14088,27 +14088,27 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="58"/>
         <source>Filter</source>
-        <translation type="unfinished">Filtr</translation>
+        <translation>Filtr</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="64"/>
         <source>Teacher</source>
-        <translation type="unfinished">Učitel</translation>
+        <translation>Učitel</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="77"/>
         <source>Students set</source>
-        <translation type="unfinished">Skupina studentů</translation>
+        <translation>Skupina studentů</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="90"/>
         <source>Subject</source>
-        <translation type="unfinished">Předmět</translation>
+        <translation>Předmět</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="103"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Druh činnosti</translation>
+        <translation>Druh činnosti</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="137"/>
@@ -17181,7 +17181,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="518"/>
         <source>Not available at:</source>
         <comment>It refers to a room</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Nedostupné v:</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="535"/>
@@ -18990,7 +18990,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19322"/>
         <source>Time constraint</source>
-        <translation type="unfinished">Časové omezení</translation>
+        <translation>Časové omezení</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19323"/>
@@ -19000,7 +19000,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19324"/>
         <source>Weight (percentage)=%1%</source>
-        <translation type="unfinished">Váha (procento)=%1%</translation>
+        <translation>Váha (procento)=%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19325"/>
@@ -19011,12 +19011,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="19328"/>
         <source>Active=%1</source>
         <comment>Refers to a constraint</comment>
-        <translation type="unfinished">Činné=%1</translation>
+        <translation>Činné=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19332"/>
         <source>Comments=%1</source>
-        <translation type="unfinished">Poznámky=%1</translation>
+        <translation>Poznámky=%1</translation>
     </message>
 </context>
 <context>
@@ -19025,33 +19025,33 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxspanperdayform.cpp" line="114"/>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform.cpp" line="141"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform.cpp" line="114"/>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform.cpp" line="141"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Vybráno neplatné omezení</translation>
+        <translation>Vybráno neplatné omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform.cpp" line="146"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">Odstranit omezení?</translation>
+        <translation>Odstranit omezení?</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform.cpp" line="152"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">Potvrzení FET</translation>
+        <translation>Potvrzení FET</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform.cpp" line="153"/>
         <source>Yes</source>
-        <translation type="unfinished">Ano</translation>
+        <translation>Ano</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform.cpp" line="153"/>
         <source>No</source>
-        <translation type="unfinished">Ne</translation>
+        <translation>Ne</translation>
     </message>
 </context>
 <context>
@@ -19070,32 +19070,32 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform_template.ui" line="44"/>
         <source>Constraints</source>
-        <translation type="unfinished">Omezení</translation>
+        <translation>Omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform_template.ui" line="61"/>
         <source>Current constraint</source>
-        <translation type="unfinished">Nynější omezení</translation>
+        <translation>Nynější omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform_template.ui" line="78"/>
         <source>Add</source>
-        <translation type="unfinished">Přidat</translation>
+        <translation>Přidat</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform_template.ui" line="85"/>
         <source>Modify</source>
-        <translation type="unfinished">Změnit</translation>
+        <translation>Změnit</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform_template.ui" line="92"/>
         <source>Remove</source>
-        <translation type="unfinished">Odstranit</translation>
+        <translation>Odstranit</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform_template.ui" line="99"/>
         <source>Close</source>
-        <translation type="unfinished">Zavřít</translation>
+        <translation>Zavřít</translation>
     </message>
 </context>
 <context>
@@ -19298,7 +19298,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8399"/>
         <source>Allow empty days=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>Povolit prázdné dny=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8402"/>
@@ -19435,7 +19435,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="20163"/>
         <source>Time constraint</source>
-        <translation type="unfinished">Časové omezení</translation>
+        <translation>Časové omezení</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="20164"/>
@@ -19445,7 +19445,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="20165"/>
         <source>Weight (percentage)=%1%</source>
-        <translation type="unfinished">Váha (procento)=%1%</translation>
+        <translation>Váha (procento)=%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="20166"/>
@@ -19461,12 +19461,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="20170"/>
         <source>Active=%1</source>
         <comment>Refers to a constraint</comment>
-        <translation type="unfinished">Činné=%1</translation>
+        <translation>Činné=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="20174"/>
         <source>Comments=%1</source>
-        <translation type="unfinished">Poznámky=%1</translation>
+        <translation>Poznámky=%1</translation>
     </message>
 </context>
 <context>
@@ -19475,33 +19475,33 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsminrestinghoursform.cpp" line="114"/>
         <location filename="../src/interface/constraintstudentsminrestinghoursform.cpp" line="141"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminrestinghoursform.cpp" line="114"/>
         <location filename="../src/interface/constraintstudentsminrestinghoursform.cpp" line="141"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Vybráno neplatné omezení</translation>
+        <translation>Vybráno neplatné omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminrestinghoursform.cpp" line="146"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">Odstranit omezení?</translation>
+        <translation>Odstranit omezení?</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminrestinghoursform.cpp" line="152"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">Potvrzení FET</translation>
+        <translation>Potvrzení FET</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminrestinghoursform.cpp" line="153"/>
         <source>Yes</source>
-        <translation type="unfinished">Ano</translation>
+        <translation>Ano</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminrestinghoursform.cpp" line="153"/>
         <source>No</source>
-        <translation type="unfinished">Ne</translation>
+        <translation>Ne</translation>
     </message>
 </context>
 <context>
@@ -19520,32 +19520,32 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentsminrestinghoursform_template.ui" line="44"/>
         <source>Constraints</source>
-        <translation type="unfinished">Omezení</translation>
+        <translation>Omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminrestinghoursform_template.ui" line="61"/>
         <source>Current constraint</source>
-        <translation type="unfinished">Nynější omezení</translation>
+        <translation>Nynější omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminrestinghoursform_template.ui" line="78"/>
         <source>Add</source>
-        <translation type="unfinished">Přidat</translation>
+        <translation>Přidat</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminrestinghoursform_template.ui" line="85"/>
         <source>Modify</source>
-        <translation type="unfinished">Změnit</translation>
+        <translation>Změnit</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminrestinghoursform_template.ui" line="92"/>
         <source>Remove</source>
-        <translation type="unfinished">Odstranit</translation>
+        <translation>Odstranit</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminrestinghoursform_template.ui" line="99"/>
         <source>Close</source>
-        <translation type="unfinished">Zavřít</translation>
+        <translation>Zavřít</translation>
     </message>
 </context>
 <context>
@@ -20081,13 +20081,14 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1301"/>
         <source>FET error in data</source>
-        <translation type="unfinished">FET chyba v údajích</translation>
+        <translation>FET chyba v údajích</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1302"/>
         <source>Following constraint is wrong:
 %1</source>
-        <translation type="unfinished">Následující omezení je špatné: %1</translation>
+        <translation>Následující omezení je špatné:
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1342"/>
@@ -21194,7 +21195,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17307"/>
         <source>Weight (percentage)=%1%</source>
-        <translation type="unfinished">Váha (procento)=%1%</translation>
+        <translation>Váha (procento)=%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17308"/>
@@ -21372,7 +21373,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6077"/>
         <source>Weight (percentage)=%1%</source>
-        <translation type="unfinished">Váha (procento)=%1%</translation>
+        <translation>Váha (procento)=%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6078"/>
@@ -21847,7 +21848,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19081"/>
         <source>Time constraint</source>
-        <translation type="unfinished">Časové omezení</translation>
+        <translation>Časové omezení</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19082"/>
@@ -21857,12 +21858,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19083"/>
         <source>Weight (percentage)=%1%</source>
-        <translation type="unfinished">Váha (procento)=%1%</translation>
+        <translation>Váha (procento)=%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19084"/>
         <source>Students set=%1</source>
-        <translation type="unfinished">Skupina studentů=%1</translation>
+        <translation>Skupina studentů=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19085"/>
@@ -21873,17 +21874,17 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="19088"/>
         <source>Active=%1</source>
         <comment>Refers to a constraint</comment>
-        <translation type="unfinished">Činné=%1</translation>
+        <translation>Činné=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19092"/>
         <source>Comments=%1</source>
-        <translation type="unfinished">Poznámky=%1</translation>
+        <translation>Poznámky=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19105"/>
         <source>FET warning</source>
-        <translation type="unfinished">Varování FET</translation>
+        <translation>Varování FET</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19106"/>
@@ -21898,33 +21899,33 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="135"/>
         <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="162"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="135"/>
         <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="162"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Vybráno neplatné omezení</translation>
+        <translation>Vybráno neplatné omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="167"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">Odstranit omezení?</translation>
+        <translation>Odstranit omezení?</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="173"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">Potvrzení FET</translation>
+        <translation>Potvrzení FET</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="174"/>
         <source>Yes</source>
-        <translation type="unfinished">Ano</translation>
+        <translation>Ano</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxspanperdayform.cpp" line="174"/>
         <source>No</source>
-        <translation type="unfinished">Ne</translation>
+        <translation>Ne</translation>
     </message>
 </context>
 <context>
@@ -21938,37 +21939,37 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssetmaxspanperdayform_template.ui" line="28"/>
         <source>Constraints</source>
-        <translation type="unfinished">Omezení</translation>
+        <translation>Omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxspanperdayform_template.ui" line="45"/>
         <source>Current constraint</source>
-        <translation type="unfinished">Nynější omezení</translation>
+        <translation>Nynější omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxspanperdayform_template.ui" line="60"/>
         <source>Filter</source>
-        <translation type="unfinished">Filtr</translation>
+        <translation>Filtr</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxspanperdayform_template.ui" line="74"/>
         <source>Add</source>
-        <translation type="unfinished">Přidat</translation>
+        <translation>Přidat</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxspanperdayform_template.ui" line="81"/>
         <source>Modify</source>
-        <translation type="unfinished">Změnit</translation>
+        <translation>Změnit</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxspanperdayform_template.ui" line="88"/>
         <source>Remove</source>
-        <translation type="unfinished">Odstranit</translation>
+        <translation>Odstranit</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxspanperdayform_template.ui" line="95"/>
         <source>Close</source>
-        <translation type="unfinished">Zavřít</translation>
+        <translation>Zavřít</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxspanperdayform_template.ui" line="110"/>
@@ -22214,7 +22215,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8620"/>
         <source>Allow empty days=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>Povolit prázdné dny=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8623"/>
@@ -22339,7 +22340,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="19903"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation type="unfinished">P: %1</translation>
+        <translation>P: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19906"/>
@@ -22350,13 +22351,13 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="19907"/>
         <source>WP:%1%</source>
         <comment>Weight percentage</comment>
-        <translation type="unfinished">PV:%1%</translation>
+        <translation>PV:%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19908"/>
         <source>St:%1</source>
         <comment>Students (set)</comment>
-        <translation type="unfinished">St:%1</translation>
+        <translation>St:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19909"/>
@@ -22368,12 +22369,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="19910"/>
         <source>C:%1</source>
         <comment>Circular</comment>
-        <translation type="unfinished">K:%1</translation>
+        <translation>K:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19919"/>
         <source>Time constraint</source>
-        <translation type="unfinished">Časové omezení</translation>
+        <translation>Časové omezení</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19920"/>
@@ -22383,12 +22384,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19921"/>
         <source>Weight (percentage)=%1%</source>
-        <translation type="unfinished">Váha (procento)=%1%</translation>
+        <translation>Váha (procento)=%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19922"/>
         <source>Students set=%1</source>
-        <translation type="unfinished">Skupina studentů=%1</translation>
+        <translation>Skupina studentů=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19923"/>
@@ -22404,17 +22405,17 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="19927"/>
         <source>Active=%1</source>
         <comment>Refers to a constraint</comment>
-        <translation type="unfinished">Činné=%1</translation>
+        <translation>Činné=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19931"/>
         <source>Comments=%1</source>
-        <translation type="unfinished">Poznámky=%1</translation>
+        <translation>Poznámky=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19944"/>
         <source>FET warning</source>
-        <translation type="unfinished">Varování FET</translation>
+        <translation>Varování FET</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19945"/>
@@ -22429,33 +22430,33 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="135"/>
         <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="162"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="135"/>
         <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="162"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Vybráno neplatné omezení</translation>
+        <translation>Vybráno neplatné omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="167"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">Odstranit omezení?</translation>
+        <translation>Odstranit omezení?</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="173"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">Potvrzení FET</translation>
+        <translation>Potvrzení FET</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="174"/>
         <source>Yes</source>
-        <translation type="unfinished">Ano</translation>
+        <translation>Ano</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetminrestinghoursform.cpp" line="174"/>
         <source>No</source>
-        <translation type="unfinished">Ne</translation>
+        <translation>Ne</translation>
     </message>
 </context>
 <context>
@@ -22464,42 +22465,42 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetminrestinghoursform_template.ui" line="14"/>
         <source>Constraints students set min resting hours</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Omezení nejmenšího počtu odpočinkových hodin studentů</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetminrestinghoursform_template.ui" line="28"/>
         <source>Constraints</source>
-        <translation type="unfinished">Omezení</translation>
+        <translation>Omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetminrestinghoursform_template.ui" line="45"/>
         <source>Current constraint</source>
-        <translation type="unfinished">Nynější omezení</translation>
+        <translation>Nynější omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetminrestinghoursform_template.ui" line="60"/>
         <source>Filter</source>
-        <translation type="unfinished">Filtr</translation>
+        <translation>Filtr</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetminrestinghoursform_template.ui" line="74"/>
         <source>Add</source>
-        <translation type="unfinished">Přidat</translation>
+        <translation>Přidat</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetminrestinghoursform_template.ui" line="81"/>
         <source>Modify</source>
-        <translation type="unfinished">Změnit</translation>
+        <translation>Změnit</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetminrestinghoursform_template.ui" line="88"/>
         <source>Remove</source>
-        <translation type="unfinished">Odstranit</translation>
+        <translation>Odstranit</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetminrestinghoursform_template.ui" line="95"/>
         <source>Close</source>
-        <translation type="unfinished">Zavřít</translation>
+        <translation>Zavřít</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetminrestinghoursform_template.ui" line="110"/>
@@ -22591,7 +22592,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="957"/>
         <source>Not available at:</source>
         <comment>It refers to a students set</comment>
-        <translation type="unfinished"></translation>
+        <translation>Nedostupné v:</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="974"/>
@@ -22861,7 +22862,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11488"/>
         <source>Weight (percentage)=%1%</source>
-        <translation type="unfinished">Váha (procento)=%1%</translation>
+        <translation>Váha (procento)=%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11491"/>
@@ -23175,7 +23176,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10207"/>
         <source>Weight (percentage)=%1%</source>
-        <translation type="unfinished">Váha (procento)=%1%</translation>
+        <translation>Váha (procento)=%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10210"/>
@@ -24334,13 +24335,14 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1858"/>
         <source>FET error in data</source>
-        <translation type="unfinished">FET chyba v údajích</translation>
+        <translation>FET chyba v údajích</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1859"/>
         <source>Following constraint is wrong:
 %1</source>
-        <translation type="unfinished">Následující omezení je špatné: %1</translation>
+        <translation>Následující omezení je špatné:
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1899"/>
@@ -26003,7 +26005,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="18686"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation type="unfinished">P: %1</translation>
+        <translation>P: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18689"/>
@@ -26014,13 +26016,13 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="18690"/>
         <source>WP:%1%</source>
         <comment>Weight percentage</comment>
-        <translation type="unfinished">PV:%1%</translation>
+        <translation>PV:%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18691"/>
         <source>T:%1</source>
         <comment>Teacher</comment>
-        <translation type="unfinished">U:%1</translation>
+        <translation>U:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18692"/>
@@ -26031,7 +26033,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18700"/>
         <source>Time constraint</source>
-        <translation type="unfinished">Časové omezení</translation>
+        <translation>Časové omezení</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18701"/>
@@ -26041,12 +26043,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18702"/>
         <source>Weight (percentage)=%1%</source>
-        <translation type="unfinished">Váha (procento)=%1%</translation>
+        <translation>Váha (procento)=%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18703"/>
         <source>Teacher=%1</source>
-        <translation type="unfinished">Učitel=%1</translation>
+        <translation>Učitel=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18704"/>
@@ -26057,12 +26059,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="18707"/>
         <source>Active=%1</source>
         <comment>Refers to a constraint</comment>
-        <translation type="unfinished">Činné=%1</translation>
+        <translation>Činné=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18711"/>
         <source>Comments=%1</source>
-        <translation type="unfinished">Poznámky=%1</translation>
+        <translation>Poznámky=%1</translation>
     </message>
 </context>
 <context>
@@ -26071,33 +26073,33 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachermaxspanperdayform.cpp" line="126"/>
         <location filename="../src/interface/constraintteachermaxspanperdayform.cpp" line="153"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxspanperdayform.cpp" line="126"/>
         <location filename="../src/interface/constraintteachermaxspanperdayform.cpp" line="153"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Vybráno neplatné omezení</translation>
+        <translation>Vybráno neplatné omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxspanperdayform.cpp" line="158"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">Odstranit omezení?</translation>
+        <translation>Odstranit omezení?</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxspanperdayform.cpp" line="164"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">Potvrzení FET</translation>
+        <translation>Potvrzení FET</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxspanperdayform.cpp" line="165"/>
         <source>Yes</source>
-        <translation type="unfinished">Ano</translation>
+        <translation>Ano</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxspanperdayform.cpp" line="165"/>
         <source>No</source>
-        <translation type="unfinished">Ne</translation>
+        <translation>Ne</translation>
     </message>
 </context>
 <context>
@@ -26116,37 +26118,37 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachermaxspanperdayform_template.ui" line="38"/>
         <source>Current constraint</source>
-        <translation type="unfinished">Nynější omezení</translation>
+        <translation>Nynější omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxspanperdayform_template.ui" line="53"/>
         <source>Filter</source>
-        <translation type="unfinished">Filtr</translation>
+        <translation>Filtr</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxspanperdayform_template.ui" line="67"/>
         <source>Add</source>
-        <translation type="unfinished">Přidat</translation>
+        <translation>Přidat</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxspanperdayform_template.ui" line="74"/>
         <source>Modify</source>
-        <translation type="unfinished">Změnit</translation>
+        <translation>Změnit</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxspanperdayform_template.ui" line="81"/>
         <source>Remove</source>
-        <translation type="unfinished">Odstranit</translation>
+        <translation>Odstranit</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxspanperdayform_template.ui" line="88"/>
         <source>Close</source>
-        <translation type="unfinished">Zavřít</translation>
+        <translation>Zavřít</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxspanperdayform_template.ui" line="105"/>
         <source>Constraints</source>
-        <translation type="unfinished">Omezení</translation>
+        <translation>Omezení</translation>
     </message>
 </context>
 <context>
@@ -26555,7 +26557,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14014"/>
         <source>Allow empty days=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>Povolit prázdné dny=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14017"/>
@@ -26664,7 +26666,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="19517"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation type="unfinished">P: %1</translation>
+        <translation>P: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19520"/>
@@ -26675,13 +26677,13 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="19521"/>
         <source>WP:%1%</source>
         <comment>Weight percentage</comment>
-        <translation type="unfinished">PV:%1%</translation>
+        <translation>PV:%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19522"/>
         <source>T:%1</source>
         <comment>Teacher</comment>
-        <translation type="unfinished">U:%1</translation>
+        <translation>U:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19523"/>
@@ -26693,12 +26695,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="19524"/>
         <source>C:%1</source>
         <comment>Circular</comment>
-        <translation type="unfinished">K:%1</translation>
+        <translation>K:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19532"/>
         <source>Time constraint</source>
-        <translation type="unfinished">Časové omezení</translation>
+        <translation>Časové omezení</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19533"/>
@@ -26708,12 +26710,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19534"/>
         <source>Weight (percentage)=%1%</source>
-        <translation type="unfinished">Váha (procento)=%1%</translation>
+        <translation>Váha (procento)=%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19535"/>
         <source>Teacher=%1</source>
-        <translation type="unfinished">Učitel=%1</translation>
+        <translation>Učitel=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19536"/>
@@ -26729,12 +26731,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="19540"/>
         <source>Active=%1</source>
         <comment>Refers to a constraint</comment>
-        <translation type="unfinished">Činné=%1</translation>
+        <translation>Činné=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19544"/>
         <source>Comments=%1</source>
-        <translation type="unfinished">Poznámky=%1</translation>
+        <translation>Poznámky=%1</translation>
     </message>
 </context>
 <context>
@@ -26743,33 +26745,33 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteacherminrestinghoursform.cpp" line="126"/>
         <location filename="../src/interface/constraintteacherminrestinghoursform.cpp" line="153"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteacherminrestinghoursform.cpp" line="126"/>
         <location filename="../src/interface/constraintteacherminrestinghoursform.cpp" line="153"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Vybráno neplatné omezení</translation>
+        <translation>Vybráno neplatné omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteacherminrestinghoursform.cpp" line="158"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">Odstranit omezení?</translation>
+        <translation>Odstranit omezení?</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteacherminrestinghoursform.cpp" line="164"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">Potvrzení FET</translation>
+        <translation>Potvrzení FET</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteacherminrestinghoursform.cpp" line="165"/>
         <source>Yes</source>
-        <translation type="unfinished">Ano</translation>
+        <translation>Ano</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteacherminrestinghoursform.cpp" line="165"/>
         <source>No</source>
-        <translation type="unfinished">Ne</translation>
+        <translation>Ne</translation>
     </message>
 </context>
 <context>
@@ -26788,37 +26790,37 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteacherminrestinghoursform_template.ui" line="38"/>
         <source>Current constraint</source>
-        <translation type="unfinished">Nynější omezení</translation>
+        <translation>Nynější omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteacherminrestinghoursform_template.ui" line="53"/>
         <source>Filter</source>
-        <translation type="unfinished">Filtr</translation>
+        <translation>Filtr</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteacherminrestinghoursform_template.ui" line="67"/>
         <source>Add</source>
-        <translation type="unfinished">Přidat</translation>
+        <translation>Přidat</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteacherminrestinghoursform_template.ui" line="74"/>
         <source>Modify</source>
-        <translation type="unfinished">Změnit</translation>
+        <translation>Změnit</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteacherminrestinghoursform_template.ui" line="81"/>
         <source>Remove</source>
-        <translation type="unfinished">Odstranit</translation>
+        <translation>Odstranit</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteacherminrestinghoursform_template.ui" line="88"/>
         <source>Close</source>
-        <translation type="unfinished">Zavřít</translation>
+        <translation>Zavřít</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteacherminrestinghoursform_template.ui" line="105"/>
         <source>Constraints</source>
-        <translation type="unfinished">Omezení</translation>
+        <translation>Omezení</translation>
     </message>
 </context>
 <context>
@@ -26876,7 +26878,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="592"/>
         <source>Not available at:</source>
         <comment>It refers to a teacher</comment>
-        <translation type="unfinished"></translation>
+        <translation>Nedostupné v:</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="609"/>
@@ -28525,7 +28527,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="18879"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation type="unfinished">P: %1</translation>
+        <translation>P: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18882"/>
@@ -28536,7 +28538,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="18883"/>
         <source>WP:%1%</source>
         <comment>Weight percentage</comment>
-        <translation type="unfinished">PV:%1%</translation>
+        <translation>PV:%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18884"/>
@@ -28547,7 +28549,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18892"/>
         <source>Time constraint</source>
-        <translation type="unfinished">Časové omezení</translation>
+        <translation>Časové omezení</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18893"/>
@@ -28557,7 +28559,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18894"/>
         <source>Weight (percentage)=%1%</source>
-        <translation type="unfinished">Váha (procento)=%1%</translation>
+        <translation>Váha (procento)=%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18895"/>
@@ -28568,12 +28570,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="18898"/>
         <source>Active=%1</source>
         <comment>Refers to a constraint</comment>
-        <translation type="unfinished">Činné=%1</translation>
+        <translation>Činné=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18902"/>
         <source>Comments=%1</source>
-        <translation type="unfinished">Poznámky=%1</translation>
+        <translation>Poznámky=%1</translation>
     </message>
 </context>
 <context>
@@ -28582,33 +28584,33 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachersmaxspanperdayform.cpp" line="114"/>
         <location filename="../src/interface/constraintteachersmaxspanperdayform.cpp" line="141"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxspanperdayform.cpp" line="114"/>
         <location filename="../src/interface/constraintteachersmaxspanperdayform.cpp" line="141"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Vybráno neplatné omezení</translation>
+        <translation>Vybráno neplatné omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxspanperdayform.cpp" line="146"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">Odstranit omezení?</translation>
+        <translation>Odstranit omezení?</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxspanperdayform.cpp" line="152"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">Potvrzení FET</translation>
+        <translation>Potvrzení FET</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxspanperdayform.cpp" line="153"/>
         <source>Yes</source>
-        <translation type="unfinished">Ano</translation>
+        <translation>Ano</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxspanperdayform.cpp" line="153"/>
         <source>No</source>
-        <translation type="unfinished">Ne</translation>
+        <translation>Ne</translation>
     </message>
 </context>
 <context>
@@ -28627,32 +28629,32 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachersmaxspanperdayform_template.ui" line="44"/>
         <source>Constraints</source>
-        <translation type="unfinished">Omezení</translation>
+        <translation>Omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxspanperdayform_template.ui" line="61"/>
         <source>Current constraint</source>
-        <translation type="unfinished">Nynější omezení</translation>
+        <translation>Nynější omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxspanperdayform_template.ui" line="78"/>
         <source>Add</source>
-        <translation type="unfinished">Přidat</translation>
+        <translation>Přidat</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxspanperdayform_template.ui" line="85"/>
         <source>Modify</source>
-        <translation type="unfinished">Změnit</translation>
+        <translation>Změnit</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxspanperdayform_template.ui" line="92"/>
         <source>Remove</source>
-        <translation type="unfinished">Odstranit</translation>
+        <translation>Odstranit</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxspanperdayform_template.ui" line="99"/>
         <source>Close</source>
-        <translation type="unfinished">Zavřít</translation>
+        <translation>Zavřít</translation>
     </message>
 </context>
 <context>
@@ -29006,7 +29008,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13771"/>
         <source>Allow empty days=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>Povolit prázdné dny=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13774"/>
@@ -29110,7 +29112,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="19713"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation type="unfinished">P: %1</translation>
+        <translation>P: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19716"/>
@@ -29121,7 +29123,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="19717"/>
         <source>WP:%1%</source>
         <comment>Weight percentage</comment>
-        <translation type="unfinished">PV:%1%</translation>
+        <translation>PV:%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19718"/>
@@ -29133,12 +29135,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="19719"/>
         <source>C:%1</source>
         <comment>Circular</comment>
-        <translation type="unfinished">K:%1</translation>
+        <translation>K:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19727"/>
         <source>Time constraint</source>
-        <translation type="unfinished">Časové omezení</translation>
+        <translation>Časové omezení</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19728"/>
@@ -29148,7 +29150,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19729"/>
         <source>Weight (percentage)=%1%</source>
-        <translation type="unfinished">Váha (procento)=%1%</translation>
+        <translation>Váha (procento)=%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19730"/>
@@ -29164,12 +29166,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="19734"/>
         <source>Active=%1</source>
         <comment>Refers to a constraint</comment>
-        <translation type="unfinished">Činné=%1</translation>
+        <translation>Činné=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19738"/>
         <source>Comments=%1</source>
-        <translation type="unfinished">Poznámky=%1</translation>
+        <translation>Poznámky=%1</translation>
     </message>
 </context>
 <context>
@@ -29178,33 +29180,33 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachersminrestinghoursform.cpp" line="114"/>
         <location filename="../src/interface/constraintteachersminrestinghoursform.cpp" line="141"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersminrestinghoursform.cpp" line="114"/>
         <location filename="../src/interface/constraintteachersminrestinghoursform.cpp" line="141"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Vybráno neplatné omezení</translation>
+        <translation>Vybráno neplatné omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersminrestinghoursform.cpp" line="146"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">Odstranit omezení?</translation>
+        <translation>Odstranit omezení?</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersminrestinghoursform.cpp" line="152"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">Potvrzení FET</translation>
+        <translation>Potvrzení FET</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersminrestinghoursform.cpp" line="153"/>
         <source>Yes</source>
-        <translation type="unfinished">Ano</translation>
+        <translation>Ano</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersminrestinghoursform.cpp" line="153"/>
         <source>No</source>
-        <translation type="unfinished">Ne</translation>
+        <translation>Ne</translation>
     </message>
 </context>
 <context>
@@ -29223,32 +29225,32 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachersminrestinghoursform_template.ui" line="44"/>
         <source>Constraints</source>
-        <translation type="unfinished">Omezení</translation>
+        <translation>Omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersminrestinghoursform_template.ui" line="61"/>
         <source>Current constraint</source>
-        <translation type="unfinished">Nynější omezení</translation>
+        <translation>Nynější omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersminrestinghoursform_template.ui" line="78"/>
         <source>Add</source>
-        <translation type="unfinished">Přidat</translation>
+        <translation>Přidat</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersminrestinghoursform_template.ui" line="85"/>
         <source>Modify</source>
-        <translation type="unfinished">Změnit</translation>
+        <translation>Změnit</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersminrestinghoursform_template.ui" line="92"/>
         <source>Remove</source>
-        <translation type="unfinished">Odstranit</translation>
+        <translation>Odstranit</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersminrestinghoursform_template.ui" line="99"/>
         <source>Close</source>
-        <translation type="unfinished">Zavřít</translation>
+        <translation>Zavřít</translation>
     </message>
 </context>
 <context>
@@ -29409,27 +29411,27 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="90"/>
         <source>Filter</source>
-        <translation type="unfinished">Filtr</translation>
+        <translation>Filtr</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="96"/>
         <source>Teacher</source>
-        <translation type="unfinished">Učitel</translation>
+        <translation>Učitel</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="109"/>
         <source>Students set</source>
-        <translation type="unfinished">Skupina studentů</translation>
+        <translation>Skupina studentů</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="122"/>
         <source>Subject</source>
-        <translation type="unfinished">Předmět</translation>
+        <translation>Předmět</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="135"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Druh činnosti</translation>
+        <translation>Druh činnosti</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="176"/>
@@ -29620,27 +29622,27 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="90"/>
         <source>Filter</source>
-        <translation type="unfinished">Filtr</translation>
+        <translation>Filtr</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="96"/>
         <source>Teacher</source>
-        <translation type="unfinished">Učitel</translation>
+        <translation>Učitel</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="109"/>
         <source>Students set</source>
-        <translation type="unfinished">Skupina studentů</translation>
+        <translation>Skupina studentů</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="122"/>
         <source>Subject</source>
-        <translation type="unfinished">Předmět</translation>
+        <translation>Předmět</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="135"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Druh činnosti</translation>
+        <translation>Druh činnosti</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="169"/>
@@ -29827,27 +29829,27 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="90"/>
         <source>Filter</source>
-        <translation type="unfinished">Filtr</translation>
+        <translation>Filtr</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="96"/>
         <source>Teacher</source>
-        <translation type="unfinished">Učitel</translation>
+        <translation>Učitel</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="109"/>
         <source>Students set</source>
-        <translation type="unfinished">Skupina studentů</translation>
+        <translation>Skupina studentů</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="122"/>
         <source>Subject</source>
-        <translation type="unfinished">Předmět</translation>
+        <translation>Předmět</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="135"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Druh činnosti</translation>
+        <translation>Druh činnosti</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="169"/>
@@ -30030,27 +30032,27 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="74"/>
         <source>Filter</source>
-        <translation type="unfinished">Filtr</translation>
+        <translation>Filtr</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="80"/>
         <source>Teacher</source>
-        <translation type="unfinished">Učitel</translation>
+        <translation>Učitel</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="93"/>
         <source>Students set</source>
-        <translation type="unfinished">Skupina studentů</translation>
+        <translation>Skupina studentů</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="106"/>
         <source>Subject</source>
-        <translation type="unfinished">Předmět</translation>
+        <translation>Předmět</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="119"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Druh činnosti</translation>
+        <translation>Druh činnosti</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="160"/>
@@ -30352,7 +30354,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/export.cpp" line="337"/>
         <source>FET - export comment</source>
         <comment>The comment of the exporting operation</comment>
-        <translation type="unfinished">FET vyvedení poznámka</translation>
+        <translation>FET vyvedení poznámka</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="426"/>
@@ -30638,58 +30640,58 @@ Import of data will be easier with these settings.</source>
         <location filename="../src/engine/messageboxes.cpp" line="34"/>
         <location filename="../src/engine/messageboxes.cpp" line="44"/>
         <source>Title: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Název: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="35"/>
         <location filename="../src/engine/messageboxes.cpp" line="45"/>
         <source>Message: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Zpráva: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="48"/>
         <source>Button 0 text: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Text tlačítka 0: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="50"/>
         <source>Button 1 text: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Text tlačítka 1: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="52"/>
         <source>Button 2 text: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Text tlačítka 2: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="54"/>
         <source>Default button: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Výchozí tlačítko: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="55"/>
         <source>Escape button: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Únikové tlačítko: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="57"/>
         <source>Pressing default button %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Stisknutí výchozího tlačítka: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="252"/>
         <source>Progress title: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Název postupu: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="258"/>
         <source>Progress label: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Štítek postupu: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="264"/>
         <source>Progress range: %1..%2</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozsah postupu: %1..%2</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="271"/>
@@ -31549,19 +31551,19 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="3662"/>
         <source>FET homepage: %1</source>
         <comment>%1 is FET homepage, begins with https://...</comment>
-        <translation type="unfinished">Domovská stránka FET: %1</translation>
+        <translation>Domovská stránka FET: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="3664"/>
         <source>Documentation (online help contents): %1</source>
         <comment>%1 is web page of FET Doc(umentation), which is the contents of the online help, it begins with https://...</comment>
-        <translation type="unfinished">%1 je web stránka FET Doku(mentace), která je obsahem online nápovědy, začíná http://</translation>
+        <translation>%1 je web stránka FET dokumentace, která je obsahem online nápovědy, začíná http://</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="3666"/>
         <source>Forum: %1</source>
         <comment>%1 is web page of FET forum, begins with https://...</comment>
-        <translation type="unfinished">Fórum: %1</translation>
+        <translation>Fórum: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4125"/>
@@ -33168,8 +33170,8 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="301"/>
         <source>Advanced</source>
-        <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for activity planning</comment>
-        <translation>Pokročilé</translation>
+        <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for advanced data</comment>
+        <translation type="unfinished">Pokročilé</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="416"/>
@@ -33181,7 +33183,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="444"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for time constraints</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Pokročilé</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="497"/>
@@ -33199,7 +33201,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="747"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for timetable</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Pokročilé</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="761"/>
@@ -33228,7 +33230,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="1329"/>
         <source>Advanced</source>
         <comment>The menu item for advanced features</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Pokročilé</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1374"/>
@@ -33605,14 +33607,14 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="2545"/>
         <location filename="../src/interface/fetmainform_template.ui" line="2555"/>
         <source>Days horizontal</source>
-        <translation type="unfinished">Dny vodorovně</translation>
+        <translation>Dny vodorovně</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2540"/>
         <location filename="../src/interface/fetmainform_template.ui" line="2550"/>
         <location filename="../src/interface/fetmainform_template.ui" line="2560"/>
         <source>Time horizontal</source>
-        <translation type="unfinished">Čas vodorovně</translation>
+        <translation>Čas vodorovně</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2487"/>
@@ -33955,10 +33957,6 @@ Having a subgroup with too little working hours per week means that you inputted
         <translation>Potvrdit uložení údajů a rozvrhu jako</translation>
     </message>
     <message>
-        <source>Advanced</source>
-        <translation type="vanished">Pokročilé</translation>
-    </message>
-    <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2007"/>
         <source>Spread the activities evenly over the week</source>
         <translation>Rozmístit činnosti rovnoměrně v průběhu týdne</translation>
@@ -34192,7 +34190,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="127"/>
         <source>%1 h</source>
         <comment>hours</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 h</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="131"/>
@@ -35877,7 +35875,7 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform_template.ui" line="144"/>
         <source>Comments</source>
-        <translation>Poznámka</translation>
+        <translation>Poznámky</translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform_template.ui" line="151"/>
@@ -35983,12 +35981,12 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="477"/>
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="479"/>
         <source>Cancel</source>
-        <translation type="unfinished">Zrušit</translation>
+        <translation>Zrušit</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="159"/>
@@ -36019,7 +36017,7 @@ Please modify your data correspondingly and try again</source>
         <location filename="../src/interface/groupsform_template.ui" line="14"/>
         <source>FET - groups of students</source>
         <extracomment>The title of the form which lists the students groups</extracomment>
-        <translation>FET - študentská skupina</translation>
+        <translation>FET - studentská skupina</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform_template.ui" line="33"/>
@@ -36051,19 +36049,19 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/interface/groupsform_template.ui" line="132"/>
         <source>Comments</source>
-        <translation type="unfinished"></translation>
+        <translation>Poznámky</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform_template.ui" line="139"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation>Nahoru</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform_template.ui" line="146"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation>Dolů</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform_template.ui" line="153"/>
@@ -36133,7 +36131,277 @@ p, li { white-space: pre-wrap; }
         <translation>Překladatelé</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="331"/>
+        <location filename="../src/interface/helpaboutform_template.ui" line="358"/>
+        <source>References</source>
+        <translation>Odkazy</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="379"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;You may find references for the algorithms and techniques used in this program on the FET documentation web page, &lt;/span&gt;&lt;a href=&quot;https://lalescu.ro/liviu/fet/doc/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;https://lalescu.ro/liviu/fet/doc/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="974"/>
+        <source>Close</source>
+        <translation>Zavřít</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="69"/>
+        <source>Authors</source>
+        <translation>Autoři</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2018 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.35.0 (January 2018).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET homepage: &lt;/span&gt;&lt;a href=&quot;https://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;https://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="133"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ar - Arabic translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Silver (to contact Silver visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Arabic translation, or contact forum user Silver)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Benahmed Abdelkrim (pmg9.81 AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ca - Catalan translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Sílvia Lag (to contact Sílvia visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Catalan translation, or contact forum user silvia)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;cs - Czech translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Pavel Fric (pavelfric AT seznam.cz)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;da - Danish translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	David Lamhauge (davidlamhauge AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;de - German translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Volker Dirr (http://www.timetabling.de/)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Robert Hairgrove (code AT roberthairgrove.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;el - Greek translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Dimitrios Ropokis (wamy80s AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Dimitris Kanatas (to contact Dimitris Kanatas visit&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Greek translation, or contact forum user Dimitris Kanatas)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Vangelis Karafillidis (to contact Vangelis Karafillidis visit&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Greek translation, or contact forum user Vangelis Karafillidis) - rewrote the translation from zero&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;es - Spanish translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: José César Fernández López (cesar.fernandez.lopez AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Emiliano Llano Díaz (compuvtt AT hotmail.com) - rewrote the translation from zero&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;eu - Basque translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Asier Urio Larrea (asieriko AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;fa - Persian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Hamed SadeghiNeshat (ha_sadeghi AT ce.sharif.edu)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: sally sat (soory63 AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;fr - French translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Jerome Durand (fetfr AT free.fr)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Patrick Fox (patrick.fox AT laposte.net)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Régis Bouguin (regis.bouguin AT laposte.net)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Pascal Cohen (pacohen AT laposte.net) - rewrote the translation from zero&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;gl - Galician translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Juan Marcos Filgueira Gomis (to contact marcos.filgueira, visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Galician translation, or contact forum user marcos.filgueira)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	this translation was based on the Spanish translation by José César Fernández López&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	as of April 2011 (see es - Spanish translation for more information)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;he - Hebrew translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Yotam Medini (yotam.medini AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;hu - Hungarian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Ferenczi Viktor (cx AT cx.hu)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;id - Indonesian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Nirwan Yus (ny.unpar AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;it - Italian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Marco Barsotti (mbarsan AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ja - Japanese translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Taro Tada (to contact Taro Tada, visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Japanese translation, or contact forum user Taro Tada)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;lt - Lithuanian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Darius Staigys (darius AT e-servisas.lt)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;mk - Macedonian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Zoran Zdravkovski (zoran AT pmf.ukim.edu.mk)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ms - Malay translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Abdul Hadi Kamel (hadikamel AT perlis.uitm.edu.my)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;nl - Dutch translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Niels Fikse (k.fikse AT student.utwente.nl)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;pl - Polish translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Radoslaw Pasiok (zapala AT konto.pl)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;pt_BR - Brazilian Portuguese translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Werner Bruns (werner.bruns AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Frank Mártin (drfarofa AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Cloves das Neves (clovesneves AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Alexandre R. Soares (alexrsoares AT zoho.com). (Alternatively,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	to contact Alexandre R. Soares, visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Brazilian Portuguese translation, or contact forum user khemis)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ro - Romanian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Liviu Lalescu (https://lalescu.ro/liviu/)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ru - Russian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Ilya V. Paramonov (ivparamonov AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;si - Sinhala translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Achini Duisna (duisna1012 AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;sk - Slovak translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Ondrej Gregor (to contact Ondrej visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Slovak translation, or contact forum user Ondrej)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;sq - Albanian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Artur Lugu (ciaoartur AT yahoo.it)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;sr - Serbian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Ivan Starchevicy (ivanstar61 AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Radan Putnik (srastral AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;tr - Turkish translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Mehmet Gezmisoglu (m_gezmisoglu AT hotmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Mahir Nacar (mahirnacar AT email.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;uk - Ukrainian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Andriy Melnyk (melnyk.andriy AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;uz - Uzbek translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Orzubek Eraliyev (o.eraliyev AT gmail.com, or visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Uzbek translation, or contact forum user sarkor)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;vi - Vietnamese translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Nguyen Truong Thang (to contact Thang visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Vietnamese translation, or contact forum user NTThang)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Nguyễn Hữu Duyệt (nguyenhuuduyet AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;zh_CN - Chinese Simplified translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	orange (112260085 AT qq.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;zh_TW - Chinese Traditional translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	James (james AT cc.shu.edu.tw)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="392"/>
+        <source>Thanks to</source>
+        <translation>Poděkování</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="413"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
@@ -36671,194 +36939,6 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Taro Tada - Japanese translation.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="276"/>
-        <source>References</source>
-        <translation>Doporučení</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2018 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.35.0 (January 2018).&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET homepage: &lt;/span&gt;&lt;a href=&quot;https://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;https://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="133"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ar - Arabic translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Silver (to contact Silver visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Arabic translation, or contact forum user Silver)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Benahmed Abdelkrim (pmg9.81 AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ca - Catalan translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Sílvia Lag (to contact Sílvia visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Catalan translation, or contact forum user silvia)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;cs - Czech translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Pavel Fric (pavelfric AT seznam.cz)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;da - Danish translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	David Lamhauge (davidlamhauge AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;de - German translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Volker Dirr (http://www.timetabling.de/)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Robert Hairgrove (code AT roberthairgrove.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;el - Greek translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Dimitrios Ropokis (wamy80s AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Dimitris Kanatas (to contact Dimitris Kanatas visit&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Greek translation, or contact forum user Dimitris Kanatas)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Vangelis Karafillidis (to contact Vangelis Karafillidis visit&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Greek translation, or contact forum user Vangelis Karafillidis) - rewrote the translation from zero&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;es - Spanish translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: José César Fernández López (cesar.fernandez.lopez AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Emiliano Llano Díaz (compuvtt AT hotmail.com) - rewrote the translation from zero&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;eu - Basque translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Asier Urio Larrea (asieriko AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;fa - Persian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Hamed SadeghiNeshat (ha_sadeghi AT ce.sharif.edu)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: sally sat (soory63 AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;fr - French translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Jerome Durand (fetfr AT free.fr)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Patrick Fox (patrick.fox AT laposte.net)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Régis Bouguin (regis.bouguin AT laposte.net)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Pascal Cohen (pacohen AT laposte.net) - rewrote the translation from zero&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;gl - Galician translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Juan Marcos Filgueira Gomis (to contact marcos.filgueira, visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Galician translation, or contact forum user marcos.filgueira)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	this translation was based on the Spanish translation by José César Fernández López&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	as of April 2011 (see es - Spanish translation for more information)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;he - Hebrew translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Yotam Medini (yotam.medini AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;hu - Hungarian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Ferenczi Viktor (cx AT cx.hu)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;id - Indonesian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Nirwan Yus (ny.unpar AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;it - Italian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Marco Barsotti (mbarsan AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ja - Japanese translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Taro Tada (to contact Taro Tada, visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Japanese translation, or contact forum user Taro Tada)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;lt - Lithuanian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Darius Staigys (darius AT e-servisas.lt)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;mk - Macedonian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Zoran Zdravkovski (zoran AT pmf.ukim.edu.mk)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ms - Malay translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Abdul Hadi Kamel (hadikamel AT perlis.uitm.edu.my)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;nl - Dutch translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Niels Fikse (k.fikse AT student.utwente.nl)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;pl - Polish translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Radoslaw Pasiok (zapala AT konto.pl)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;pt_BR - Brazilian Portuguese translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Werner Bruns (werner.bruns AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Frank Mártin (drfarofa AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Cloves das Neves (clovesneves AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Alexandre R. Soares (alexrsoares AT zoho.com). (Alternatively,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	to contact Alexandre R. Soares, visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Brazilian Portuguese translation, or contact forum user khemis)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ro - Romanian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Liviu Lalescu (https://lalescu.ro/liviu/)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ru - Russian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Ilya V. Paramonov (ivparamonov AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;si - Sinhala translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Achini Duisna (duisna1012 AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;sk - Slovak translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Ondrej Gregor (to contact Ondrej visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Slovak translation, or contact forum user Ondrej)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;sq - Albanian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Artur Lugu (ciaoartur AT yahoo.it)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;sr - Serbian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Ivan Starchevicy (ivanstar61 AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Radan Putnik (srastral AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;tr - Turkish translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Mehmet Gezmisoglu (m_gezmisoglu AT hotmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Mahir Nacar (mahirnacar AT email.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;uk - Ukrainian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Andriy Melnyk (melnyk.andriy AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;uz - Uzbek translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Orzubek Eraliyev (o.eraliyev AT gmail.com, or visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Uzbek translation, or contact forum user sarkor)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;vi - Vietnamese translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Nguyen Truong Thang (to contact Thang visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Vietnamese translation, or contact forum user NTThang)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Nguyễn Hữu Duyệt (nguyenhuuduyet AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;zh_CN - Chinese Simplified translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	orange (112260085 AT qq.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;zh_TW - Chinese Traditional translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	James (james AT cc.shu.edu.tw)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="297"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;You may find references for the algorithms and techniques used in this program on the FET documentation web page, &lt;/span&gt;&lt;a href=&quot;https://lalescu.ro/liviu/fet/doc/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;https://lalescu.ro/liviu/fet/doc/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="892"/>
-        <source>Close</source>
-        <translation>Zavřít</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="69"/>
-        <source>Authors</source>
-        <translation>Autoři</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="310"/>
-        <source>Thanks to</source>
-        <translation>Poděkování</translation>
     </message>
 </context>
 <context>
@@ -42763,17 +42843,17 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentsmaxspanperdayform.cpp" line="59"/>
         <location filename="../src/interface/modifyconstraintstudentsmaxspanperdayform.cpp" line="64"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxspanperdayform.cpp" line="60"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Neplatná váha (procento)</translation>
+        <translation>Neplatná váha (procento)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxspanperdayform.cpp" line="65"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
-        <translation type="unfinished">Neplatná váha (procento) - musí být 100%</translation>
+        <translation>Neplatná váha (procento) - musí být 100%</translation>
     </message>
 </context>
 <context>
@@ -42787,7 +42867,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxspanperdayform_template.ui" line="44"/>
         <source>Weight percentage (necessary: 100%)</source>
-        <translation type="unfinished">Procento váhy (nutná: 100%)</translation>
+        <translation>Procento váhy (nutná: 100%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxspanperdayform_template.ui" line="65"/>
@@ -42797,12 +42877,12 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxspanperdayform_template.ui" line="82"/>
         <source>Ok</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxspanperdayform_template.ui" line="89"/>
         <source>Cancel</source>
-        <translation type="unfinished">Zrušit</translation>
+        <translation>Zrušit</translation>
     </message>
 </context>
 <context>
@@ -42949,17 +43029,17 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentsminrestinghoursform.cpp" line="61"/>
         <location filename="../src/interface/modifyconstraintstudentsminrestinghoursform.cpp" line="66"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsminrestinghoursform.cpp" line="62"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Neplatná váha (procento)</translation>
+        <translation>Neplatná váha (procento)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsminrestinghoursform.cpp" line="67"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
-        <translation type="unfinished">Neplatná váha (procento) - musí být 100%</translation>
+        <translation>Neplatná váha (procento) - musí být 100%</translation>
     </message>
 </context>
 <context>
@@ -43817,22 +43897,22 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform.cpp" line="110"/>
         <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform.cpp" line="118"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform.cpp" line="106"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Neplatná váha (procento)</translation>
+        <translation>Neplatná váha (procento)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform.cpp" line="111"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
-        <translation type="unfinished">Neplatná váha (procento) - musí být 100%</translation>
+        <translation>Neplatná váha (procento) - musí být 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform.cpp" line="119"/>
         <source>Invalid students set</source>
-        <translation type="unfinished">Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina studentů</translation>
     </message>
 </context>
 <context>
@@ -43851,22 +43931,22 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform_template.ui" line="39"/>
         <source>Ok</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform_template.ui" line="46"/>
         <source>Cancel</source>
-        <translation type="unfinished">Zrušit</translation>
+        <translation>Zrušit</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform_template.ui" line="79"/>
         <source>Students</source>
-        <translation type="unfinished">Studenti</translation>
+        <translation>Studenti</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform_template.ui" line="115"/>
         <source>Weight percentage (necessary: 100%)</source>
-        <translation type="unfinished">Procento váhy (nutná: 100%)</translation>
+        <translation>Procento váhy (nutná: 100%)</translation>
     </message>
 </context>
 <context>
@@ -44036,22 +44116,22 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform.cpp" line="111"/>
         <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform.cpp" line="119"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform.cpp" line="107"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Neplatná váha (procento)</translation>
+        <translation>Neplatná váha (procento)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform.cpp" line="112"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
-        <translation type="unfinished">Neplatná váha (procento) - musí být 100%</translation>
+        <translation>Neplatná váha (procento) - musí být 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform.cpp" line="120"/>
         <source>Invalid students set</source>
-        <translation type="unfinished">Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina studentů</translation>
     </message>
 </context>
 <context>
@@ -44065,7 +44145,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform_template.ui" line="28"/>
         <source>Weight percentage (necessary: 100%)</source>
-        <translation type="unfinished">Procento váhy (nutná: 100%)</translation>
+        <translation>Procento váhy (nutná: 100%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform_template.ui" line="49"/>
@@ -44075,12 +44155,12 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform_template.ui" line="66"/>
         <source>Ok</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform_template.ui" line="73"/>
         <source>Cancel</source>
-        <translation type="unfinished">Zrušit</translation>
+        <translation>Zrušit</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform_template.ui" line="82"/>
@@ -44090,7 +44170,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform_template.ui" line="113"/>
         <source>Students</source>
-        <translation type="unfinished">Studenti</translation>
+        <translation>Studenti</translation>
     </message>
 </context>
 <context>
@@ -45387,22 +45467,22 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachermaxspanperdayform.cpp" line="80"/>
         <location filename="../src/interface/modifyconstraintteachermaxspanperdayform.cpp" line="92"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxspanperdayform.cpp" line="76"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Neplatná váha (procento)</translation>
+        <translation>Neplatná váha (procento)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxspanperdayform.cpp" line="81"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
-        <translation type="unfinished">Neplatná váha (procento) - musí být 100%</translation>
+        <translation>Neplatná váha (procento) - musí být 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxspanperdayform.cpp" line="93"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished">Neplatný učitel</translation>
+        <translation>Neplatný učitel</translation>
     </message>
 </context>
 <context>
@@ -45416,7 +45496,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxspanperdayform_template.ui" line="44"/>
         <source>Teacher</source>
-        <translation type="unfinished">Učitel</translation>
+        <translation>Učitel</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxspanperdayform_template.ui" line="74"/>
@@ -45426,17 +45506,17 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxspanperdayform_template.ui" line="97"/>
         <source>Weight percentage (necessary: 100%)</source>
-        <translation type="unfinished">Procento váhy (nutná: 100%)</translation>
+        <translation>Procento váhy (nutná: 100%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxspanperdayform_template.ui" line="118"/>
         <source>Ok</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxspanperdayform_template.ui" line="125"/>
         <source>Cancel</source>
-        <translation type="unfinished">Zrušit</translation>
+        <translation>Zrušit</translation>
     </message>
 </context>
 <context>
@@ -45639,22 +45719,22 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteacherminrestinghoursform.cpp" line="82"/>
         <location filename="../src/interface/modifyconstraintteacherminrestinghoursform.cpp" line="95"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminrestinghoursform.cpp" line="78"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Neplatná váha (procento)</translation>
+        <translation>Neplatná váha (procento)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminrestinghoursform.cpp" line="83"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
-        <translation type="unfinished">Neplatná váha (procento) - musí být 100%</translation>
+        <translation>Neplatná váha (procento) - musí být 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminrestinghoursform.cpp" line="96"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished">Neplatný učitel</translation>
+        <translation>Neplatný učitel</translation>
     </message>
 </context>
 <context>
@@ -45668,7 +45748,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminrestinghoursform_template.ui" line="44"/>
         <source>Teacher</source>
-        <translation type="unfinished">Učitel</translation>
+        <translation>Učitel</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminrestinghoursform_template.ui" line="74"/>
@@ -45678,7 +45758,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminrestinghoursform_template.ui" line="97"/>
         <source>Weight percentage (necessary: 100%)</source>
-        <translation type="unfinished">Procento váhy (nutná: 100%)</translation>
+        <translation>Procento váhy (nutná: 100%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminrestinghoursform_template.ui" line="116"/>
@@ -45688,12 +45768,12 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminrestinghoursform_template.ui" line="125"/>
         <source>Ok</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminrestinghoursform_template.ui" line="132"/>
         <source>Cancel</source>
-        <translation type="unfinished">Zrušit</translation>
+        <translation>Zrušit</translation>
     </message>
 </context>
 <context>
@@ -46305,17 +46385,17 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachersmaxspanperdayform.cpp" line="59"/>
         <location filename="../src/interface/modifyconstraintteachersmaxspanperdayform.cpp" line="64"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxspanperdayform.cpp" line="60"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Neplatná váha (procento)</translation>
+        <translation>Neplatná váha (procento)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxspanperdayform.cpp" line="65"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
-        <translation type="unfinished">Neplatná váha (procento) - musí být 100%</translation>
+        <translation>Neplatná váha (procento) - musí být 100%</translation>
     </message>
 </context>
 <context>
@@ -46334,17 +46414,17 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxspanperdayform_template.ui" line="61"/>
         <source>Weight percentage (necessary: 100%)</source>
-        <translation type="unfinished">Procento váhy (nutná: 100%)</translation>
+        <translation>Procento váhy (nutná: 100%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxspanperdayform_template.ui" line="82"/>
         <source>Ok</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxspanperdayform_template.ui" line="89"/>
         <source>Cancel</source>
-        <translation type="unfinished">Zrušit</translation>
+        <translation>Zrušit</translation>
     </message>
 </context>
 <context>
@@ -46514,17 +46594,17 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachersminrestinghoursform.cpp" line="61"/>
         <location filename="../src/interface/modifyconstraintteachersminrestinghoursform.cpp" line="66"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersminrestinghoursform.cpp" line="62"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Neplatná váha (procento)</translation>
+        <translation>Neplatná váha (procento)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersminrestinghoursform.cpp" line="67"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
-        <translation type="unfinished">Neplatná váha (procento) - musí být 100%</translation>
+        <translation>Neplatná váha (procento) - musí být 100%</translation>
     </message>
 </context>
 <context>
@@ -46543,17 +46623,17 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachersminrestinghoursform_template.ui" line="45"/>
         <source>Weight percentage (necessary: 100%)</source>
-        <translation type="unfinished">Procento váhy (nutná: 100%)</translation>
+        <translation>Procento váhy (nutná: 100%)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersminrestinghoursform_template.ui" line="66"/>
         <source>Ok</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersminrestinghoursform_template.ui" line="73"/>
         <source>Cancel</source>
-        <translation type="unfinished">Zrušit</translation>
+        <translation>Zrušit</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersminrestinghoursform_template.ui" line="82"/>
@@ -46680,7 +46760,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="22"/>
         <source>Swap</source>
         <comment>Interchange (swap) the two selected activities in the dialog</comment>
-        <translation type="unfinished"></translation>
+        <translation>Vyměnit</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="29"/>
@@ -46818,7 +46898,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="22"/>
         <source>Swap</source>
         <comment>Interchange (swap) the two selected activities in the dialog</comment>
-        <translation type="unfinished"></translation>
+        <translation>Vyměnit</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="29"/>
@@ -47167,22 +47247,22 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifystudentsyearform.cpp" line="230"/>
         <source>FET question</source>
-        <translation type="unfinished">Otázka FET</translation>
+        <translation>Otázka FET</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsyearform.cpp" line="230"/>
         <source>Yes</source>
-        <translation type="unfinished">Ano</translation>
+        <translation>Ano</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsyearform.cpp" line="230"/>
         <source>No</source>
-        <translation type="unfinished">Ne</translation>
+        <translation>Ne</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsyearform.cpp" line="230"/>
         <source>Cancel</source>
-        <translation type="unfinished">Zrušit</translation>
+        <translation>Zrušit</translation>
     </message>
 </context>
 <context>
@@ -47781,7 +47861,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/engine/room.cpp" line="65"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation type="unfinished">P: %1</translation>
+        <translation>P: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/room.cpp" line="72"/>
@@ -47807,7 +47887,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/engine/room.cpp" line="86"/>
         <source>Comments=%1</source>
-        <translation type="unfinished">Poznámky=%1</translation>
+        <translation>Poznámky=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/room.cpp" line="115"/>
@@ -47829,7 +47909,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/roomsform.cpp" line="254"/>
         <location filename="../src/interface/roomsform.cpp" line="279"/>
         <source>Invalid selected room</source>
-        <translation>Vybraná neplatná místnost</translation>
+        <translation>Vybrána neplatná místnost</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform.cpp" line="132"/>
@@ -47854,17 +47934,17 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/roomsform.cpp" line="288"/>
         <source>Room comments</source>
-        <translation type="unfinished"></translation>
+        <translation>Poznámky k místnosti</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform.cpp" line="290"/>
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform.cpp" line="292"/>
         <source>Cancel</source>
-        <translation type="unfinished">Zrušit</translation>
+        <translation>Zrušit</translation>
     </message>
 </context>
 <context>
@@ -47889,18 +47969,18 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/roomsform_template.ui" line="81"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation>Nahoru</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform_template.ui" line="88"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation>Dolů</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform_template.ui" line="95"/>
         <source>Comments</source>
-        <translation type="unfinished"></translation>
+        <translation>Poznámky</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform_template.ui" line="106"/>
@@ -49974,7 +50054,7 @@ Please report error. FET will now abort current operation</source>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform_template.ui" line="150"/>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform_template.ui" line="219"/>
         <source>Weight (%)</source>
-        <translation type="unfinished"></translation>
+        <translation>Váha (%)</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform_template.ui" line="118"/>
@@ -50743,27 +50823,27 @@ Bottom: %4</source>
         <location filename="../src/engine/studentsset.cpp" line="202"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation type="unfinished">P: %1</translation>
+        <translation>P: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="210"/>
         <source>Students set - group</source>
-        <translation type="unfinished"></translation>
+        <translation>Skupinu studentů - skupina</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="212"/>
         <source>Group name=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>Název skupiny=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="214"/>
         <source>Number of students=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>Počet studentů=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="219"/>
         <source>Comments=%1</source>
-        <translation type="unfinished">Poznámky=%1</translation>
+        <translation>Poznámky=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="231"/>
@@ -50901,27 +50981,27 @@ Bottom: %4</source>
         <location filename="../src/engine/studentsset.cpp" line="290"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation type="unfinished">P: %1</translation>
+        <translation>P: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="298"/>
         <source>Students set - subgroup</source>
-        <translation type="unfinished"></translation>
+        <translation>Skupinu studentů - podskupina</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="300"/>
         <source>Subgroup name=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>Název podskupiny=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="302"/>
         <source>Number of students=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>Počet studentů=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="307"/>
         <source>Comments=%1</source>
-        <translation type="unfinished">Poznámky=%1</translation>
+        <translation>Poznámky=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="319"/>
@@ -50952,27 +51032,27 @@ Bottom: %4</source>
         <location filename="../src/engine/studentsset.cpp" line="89"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation type="unfinished">P: %1</translation>
+        <translation>P: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="97"/>
         <source>Students set - year</source>
-        <translation type="unfinished"></translation>
+        <translation>Skupinu studentů - ročník</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="99"/>
         <source>Year name=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>Název ročníku=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="101"/>
         <source>Number of students=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>Počet studentů=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="106"/>
         <source>Comments=%1</source>
-        <translation type="unfinished">Poznámky=%1</translation>
+        <translation>Poznámky=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="118"/>
@@ -51236,12 +51316,12 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/subgroupsform.cpp" line="584"/>
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform.cpp" line="586"/>
         <source>Cancel</source>
-        <translation type="unfinished">Zrušit</translation>
+        <translation>Zrušit</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform.cpp" line="184"/>
@@ -51319,19 +51399,19 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="149"/>
         <source>Comments</source>
-        <translation type="unfinished"></translation>
+        <translation>Poznámky</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="156"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation>Nahoru</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="163"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation>Dolů</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="170"/>
@@ -51360,13 +51440,13 @@ Bottom: %4</source>
         <location filename="../src/engine/subject.cpp" line="42"/>
         <source>N:%1</source>
         <comment>The name of the subject</comment>
-        <translation type="unfinished">N:%1</translation>
+        <translation>N:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/subject.cpp" line="46"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation type="unfinished">P: %1</translation>
+        <translation>P: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/subject.cpp" line="53"/>
@@ -51382,7 +51462,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/subject.cpp" line="60"/>
         <source>Comments=%1</source>
-        <translation type="unfinished">Poznámky=%1</translation>
+        <translation>Poznámky=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/subject.cpp" line="72"/>
@@ -51405,7 +51485,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="97"/>
         <source>Add subject</source>
-        <translation type="unfinished"></translation>
+        <translation>Přidat předmět</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="103"/>
@@ -51476,7 +51556,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="174"/>
         <source>Modify subject</source>
-        <translation type="unfinished"></translation>
+        <translation>Změnit předmět</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="181"/>
@@ -51496,17 +51576,17 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="315"/>
         <source>Subject comments</source>
-        <translation type="unfinished"></translation>
+        <translation>Poznámky k předmětu</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="317"/>
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="319"/>
         <source>Cancel</source>
-        <translation type="unfinished">Zrušit</translation>
+        <translation>Zrušit</translation>
     </message>
 </context>
 <context>
@@ -51535,7 +51615,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/subjectsform_template.ui" line="58"/>
         <source>Comments</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Poznámka</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform_template.ui" line="74"/>
@@ -51546,13 +51626,13 @@ Bottom: %4</source>
         <location filename="../src/interface/subjectsform_template.ui" line="83"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Nahoru</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform_template.ui" line="90"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Dolů</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform_template.ui" line="97"/>
@@ -51811,7 +51891,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/teachersform.cpp" line="208"/>
         <source>Target number of hours</source>
-        <translation type="unfinished"></translation>
+        <translation>Cílový počet hodin</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform.cpp" line="208"/>
@@ -51831,17 +51911,17 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/teachersform.cpp" line="367"/>
         <source>Teacher comments</source>
-        <translation type="unfinished"></translation>
+        <translation>Poznámky učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform.cpp" line="369"/>
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform.cpp" line="371"/>
         <source>Cancel</source>
-        <translation type="unfinished">Zrušit</translation>
+        <translation>Zrušit</translation>
     </message>
 </context>
 <context>
@@ -51870,19 +51950,19 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/teachersform_template.ui" line="58"/>
         <source>Comments</source>
-        <translation type="unfinished"></translation>
+        <translation>Poznámky</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform_template.ui" line="69"/>
         <source>Target hours</source>
         <comment>It means the target number of hours for a teacher, but keep translation short</comment>
-        <translation type="unfinished"></translation>
+        <translation>Cílový počet hodin</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform_template.ui" line="76"/>
         <source>Qualified subjects</source>
         <comment>It means a list of qualified (allowed) subjects for the teacher. Keep translation short.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Způsobilý k předmětům</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform_template.ui" line="92"/>
@@ -51893,13 +51973,13 @@ Bottom: %4</source>
         <location filename="../src/interface/teachersform_template.ui" line="101"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation>Nahoru</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform_template.ui" line="108"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation>Dolů</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform_template.ui" line="115"/>
@@ -51938,7 +52018,7 @@ Bottom: %4</source>
         <location filename="../src/interface/teachersstatisticsform.cpp" line="113"/>
         <source>Target duration</source>
         <comment>It means the target duration of activities for each teacher</comment>
-        <translation type="unfinished"></translation>
+        <translation>Cílová délka trvání</translation>
     </message>
 </context>
 <context>
@@ -51952,13 +52032,13 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/teachersstatisticsform_template.ui" line="23"/>
         <source>Options</source>
-        <translation type="unfinished">Volby</translation>
+        <translation>Volby</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersstatisticsform_template.ui" line="29"/>
         <source>Hide full teachers</source>
         <comment>It refers to teachers who have their number of hours fulfilled. Please keep translation short</comment>
-        <translation type="unfinished">Skrýt plné učitele</translation>
+        <translation>Skrýt plné učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersstatisticsform_template.ui" line="82"/>
@@ -52138,7 +52218,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="5085"/>
         <source>Comments</source>
-        <translation>Poznámka</translation>
+        <translation>Poznámky</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2340"/>
@@ -52522,7 +52602,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2228"/>
         <source>Activity Tags</source>
-        <translation type="unfinished">Druhy činností</translation>
+        <translation>Druhy činností</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2524"/>
@@ -52533,7 +52613,7 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="4370"/>
         <location filename="../src/engine/timetableexport.cpp" line="4422"/>
         <source>Activity Tag</source>
-        <translation type="unfinished">Druh činnosti</translation>
+        <translation>Druh činnosti</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="4626"/>
@@ -53299,14 +53379,14 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="703"/>
         <source>Elapsed time:</source>
-        <translation type="unfinished"></translation>
+        <translation>Uplynulý čas:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="707"/>
         <location filename="../src/interface/timetablegenerateform.cpp" line="733"/>
         <source>%1 h</source>
         <comment>hours</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 h</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="713"/>
@@ -53643,7 +53723,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="497"/>
         <source>%1 h</source>
         <comment>hours</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 h</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="501"/>
@@ -53851,7 +53931,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableprintform.cpp" line="867"/>
         <location filename="../src/interface/timetableprintform.cpp" line="886"/>
         <source>All activities</source>
-        <translation type="unfinished"></translation>
+        <translation>Všechny činnosti</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="197"/>
@@ -54535,12 +54615,12 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="710"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="723"/>
         <source>FET warning</source>
-        <translation type="unfinished">Varování FET</translation>
+        <translation>Varování FET</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="201"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished">Nepodařilo se zobrazit rozvrh, protože jste přidali nebo odstranili některé místnosti. Prosím, vytvořte rozvrh znovu a potom si jej prohlédněte</translation>
+        <translation>Nepodařilo se zobrazit rozvrh, protože jste přidali nebo odstranili některé místnosti. Prosím, vytvořte rozvrh znovu a potom si jej prohlédněte</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="237"/>
@@ -54578,7 +54658,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="485"/>
         <source>Room: %1</source>
-        <translation type="unfinished">Místnost=%1</translation>
+        <translation>Místnost=%1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="514"/>
@@ -54597,13 +54677,13 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="738"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="786"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="547"/>
         <source>Allocation in course.
 Please stop simulation before this.</source>
-        <translation type="unfinished">Probíhá přidělování. Prosím, zastavte předtím simulaci.</translation>
+        <translation>Probíhá přidělování. Prosím, zastavte předtím simulaci.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="565"/>
@@ -54614,7 +54694,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="610"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="683"/>
         <source>Added the following constraint:</source>
-        <translation type="unfinished">Pridané následující omezení:</translation>
+        <translation>Přidáno následující omezení:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="625"/>
@@ -54668,13 +54748,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="666"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="739"/>
         <source>Skip information</source>
-        <translation type="unfinished">Přeskočit informace</translation>
+        <translation>Přeskočit informace</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="666"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="739"/>
         <source>See next</source>
-        <translation type="unfinished">Ukázat další</translation>
+        <translation>Ukázat další</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="699"/>
@@ -54685,7 +54765,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="829"/>
         <source>FET help</source>
-        <translation type="unfinished">Nápověda FET</translation>
+        <translation>Nápověda FET</translation>
     </message>
 </context>
 <context>
@@ -54700,40 +54780,40 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="38"/>
         <source>Lock/unlock</source>
         <extracomment>This is a group box for locking/unlocking buttons</extracomment>
-        <translation type="unfinished">Zamknout/Odemknout</translation>
+        <translation>Zamknout/Odemknout</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="46"/>
         <source>Time</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Čas</translation>
+        <translation>Čas</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="53"/>
         <source>Space</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Prostor</translation>
+        <translation>Prostor</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="62"/>
         <source>Both</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Oba</translation>
+        <translation>Oba</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="84"/>
         <source>Help</source>
-        <translation type="unfinished">Nápověda</translation>
+        <translation>Nápověda</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="91"/>
         <source>Close</source>
-        <translation type="unfinished">Zavřít</translation>
+        <translation>Zavřít</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="112"/>
         <source>Room&apos;s name</source>
-        <translation type="unfinished">Název místnosti</translation>
+        <translation>Název místnosti</translation>
     </message>
 </context>
 <context>
@@ -54761,7 +54841,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="988"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="994"/>
         <source>FET warning</source>
-        <translation type="unfinished">Varování FET</translation>
+        <translation>Varování FET</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="205"/>
@@ -54769,20 +54849,20 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="661"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="783"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished">Nepodařilo se zobrazit rozvrh, protože jste přidali nebo odstranili některé místnosti. Prosím, vytvořte rozvrh znovu a potom si jej prohlédněte</translation>
+        <translation>Nepodařilo se zobrazit rozvrh, protože jste přidali nebo odstranili některé místnosti. Prosím, vytvořte rozvrh znovu a potom si jej prohlédněte</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="308"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="318"/>
         <source>px</source>
         <comment>Abbreviation for pixels</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">px</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="316"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="326"/>
         <source>Automatic</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Automaticky</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="415"/>
@@ -54802,7 +54882,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="671"/>
         <source>Cannot display the timetable, because you added or removed some teachers. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished">Nepodařilo se zobrazit rozvrh, protože jste přidali nebo odstranili některé učitele. Prosím, vytvořte rozvrh znovu a potom si jej prohlédněte</translation>
+        <translation>Nepodařilo se zobrazit rozvrh, protože jste přidali nebo odstranili některé učitele. Prosím, vytvořte rozvrh znovu a potom si jej prohlédněte</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="680"/>
@@ -54812,7 +54892,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="697"/>
         <source>Room: %1</source>
-        <translation type="unfinished">Místnost=%1</translation>
+        <translation>Místnost=%1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="732"/>
@@ -54830,13 +54910,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1009"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1055"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="766"/>
         <source>Allocation in course.
 Please stop simulation before this.</source>
-        <translation type="unfinished">Probíhá přidělování. Prosím, zastavte předtím simulaci.</translation>
+        <translation>Probíhá přidělování. Prosím, zastavte předtím simulaci.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="863"/>
@@ -54878,7 +54958,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="898"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="983"/>
         <source>Added the following constraint:</source>
-        <translation type="unfinished">Pridané následující omezení:</translation>
+        <translation>Přidáno následující omezení:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="903"/>
@@ -54902,13 +54982,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="925"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1010"/>
         <source>Skip information</source>
-        <translation type="unfinished">Přeskočit informace</translation>
+        <translation>Přeskočit informace</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="925"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1010"/>
         <source>See next</source>
-        <translation type="unfinished">Ukázat další</translation>
+        <translation>Ukázat další</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="947"/>
@@ -54934,7 +55014,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1122"/>
         <source>FET help</source>
-        <translation type="unfinished">Nápověda FET</translation>
+        <translation>Nápověda FET</translation>
     </message>
 </context>
 <context>
@@ -54948,70 +55028,70 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="39"/>
         <source>Width</source>
-        <translation type="unfinished"></translation>
+        <translation>Šířka</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="46"/>
         <source>Height</source>
-        <translation type="unfinished"></translation>
+        <translation>Výška</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="70"/>
         <source>Lock</source>
-        <translation type="unfinished">Zamknout</translation>
+        <translation>Zamknout</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="77"/>
         <source>Unlock</source>
-        <translation type="unfinished">Odemknout</translation>
+        <translation>Odemknout</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="84"/>
         <source>Toggle</source>
-        <translation type="unfinished"></translation>
+        <translation>Přepnout</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="100"/>
         <source>Students</source>
-        <translation type="unfinished">Studenti</translation>
+        <translation>Studenti</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="107"/>
         <source>Subjects</source>
-        <translation type="unfinished">Předměty</translation>
+        <translation>Předměty</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="114"/>
         <source>Teachers</source>
-        <translation type="unfinished">Učitelé</translation>
+        <translation>Učitelé</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="132"/>
         <source>Time</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Čas</translation>
+        <translation>Čas</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="146"/>
         <source>Space</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Prostor</translation>
+        <translation>Prostor</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="160"/>
         <source>Both</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Oba</translation>
+        <translation>Oba</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="175"/>
         <source>Help</source>
-        <translation type="unfinished">Nápověda</translation>
+        <translation>Nápověda</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="182"/>
         <source>Close</source>
-        <translation type="unfinished">Zavřít</translation>
+        <translation>Zavřít</translation>
     </message>
 </context>
 <context>
@@ -55039,7 +55119,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="804"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="817"/>
         <source>FET warning</source>
-        <translation type="unfinished">Varování FET</translation>
+        <translation>Varování FET</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="229"/>
@@ -55076,7 +55156,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="516"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="638"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished">Nepodařilo se zobrazit rozvrh, protože jste přidali nebo odstranili některé místnosti. Prosím, vytvořte rozvrh znovu a potom si jej prohlédněte</translation>
+        <translation>Nepodařilo se zobrazit rozvrh, protože jste přidali nebo odstranili některé místnosti. Prosím, vytvořte rozvrh znovu a potom si jej prohlédněte</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="340"/>
@@ -55092,7 +55172,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="567"/>
         <source>Room: %1</source>
-        <translation type="unfinished">Místnost=%1</translation>
+        <translation>Místnost=%1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="595"/>
@@ -55113,13 +55193,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="832"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="880"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="626"/>
         <source>Allocation in course.
 Please stop simulation before this.</source>
-        <translation type="unfinished">Probíhá přidělování. Prosím, zastavte předtím simulaci.</translation>
+        <translation>Probíhá přidělování. Prosím, zastavte předtím simulaci.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="647"/>
@@ -55140,7 +55220,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="704"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="777"/>
         <source>Added the following constraint:</source>
-        <translation type="unfinished">Pridané následující omezení:</translation>
+        <translation>Přidáno následující omezení:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="719"/>
@@ -55194,13 +55274,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="760"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="833"/>
         <source>Skip information</source>
-        <translation type="unfinished">Přeskočit informace</translation>
+        <translation>Přeskočit informace</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="760"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="833"/>
         <source>See next</source>
-        <translation type="unfinished">Ukázat další</translation>
+        <translation>Ukázat další</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="793"/>
@@ -55211,7 +55291,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="923"/>
         <source>FET help</source>
-        <translation type="unfinished">Nápověda FET</translation>
+        <translation>Nápověda FET</translation>
     </message>
 </context>
 <context>
@@ -55226,45 +55306,45 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform_template.ui" line="39"/>
         <source>Lock/unlock</source>
         <extracomment>This is a group box for locking/unlocking buttons</extracomment>
-        <translation type="unfinished">Zamknout/Odemknout</translation>
+        <translation>Zamknout/Odemknout</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform_template.ui" line="47"/>
         <source>Time</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Čas</translation>
+        <translation>Čas</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform_template.ui" line="54"/>
         <source>Space</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Prostor</translation>
+        <translation>Prostor</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform_template.ui" line="63"/>
         <source>Both</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Oba</translation>
+        <translation>Oba</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform_template.ui" line="85"/>
         <source>Help</source>
-        <translation type="unfinished">Nápověda</translation>
+        <translation>Nápověda</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform_template.ui" line="92"/>
         <source>Close</source>
-        <translation type="unfinished">Zavřít</translation>
+        <translation>Zavřít</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform_template.ui" line="117"/>
         <source>Class name</source>
-        <translation type="unfinished">Název třídy</translation>
+        <translation>Název třídy</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform_template.ui" line="147"/>
         <source>Details</source>
-        <translation type="unfinished">Podrobnosti</translation>
+        <translation>Podrobnosti</translation>
     </message>
 </context>
 <context>
@@ -55274,13 +55354,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="390"/>
         <source>px</source>
         <comment>Abbreviation for pixels</comment>
-        <translation type="unfinished"></translation>
+        <translation>px</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="388"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="398"/>
         <source>Automatic</source>
-        <translation type="unfinished"></translation>
+        <translation>Automaticky</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="486"/>
@@ -55300,7 +55380,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1182"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1188"/>
         <source>FET warning</source>
-        <translation type="unfinished">Varování FET</translation>
+        <translation>Varování FET</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="486"/>
@@ -55313,7 +55393,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="772"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="934"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished">Nepodařilo se zobrazit rozvrh, protože jste přidali nebo odstranili některé místnosti. Prosím, vytvořte rozvrh znovu a potom si jej prohlédněte</translation>
+        <translation>Nepodařilo se zobrazit rozvrh, protože jste přidali nebo odstranili některé místnosti. Prosím, vytvořte rozvrh znovu a potom si jej prohlédněte</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="760"/>
@@ -55329,7 +55409,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="861"/>
         <source>Room: %1</source>
-        <translation type="unfinished">Místnost=%1</translation>
+        <translation>Místnost=%1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="890"/>
@@ -55347,13 +55427,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1203"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1249"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="923"/>
         <source>Allocation in course.
 Please stop simulation before this.</source>
-        <translation type="unfinished">Probíhá přidělování. Prosím, zastavte předtím simulaci.</translation>
+        <translation>Probíhá přidělování. Prosím, zastavte předtím simulaci.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1057"/>
@@ -55395,7 +55475,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1092"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1177"/>
         <source>Added the following constraint:</source>
-        <translation type="unfinished">Pridané následující omezení:</translation>
+        <translation>Přidáno následující omezení:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1097"/>
@@ -55419,13 +55499,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1119"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1204"/>
         <source>Skip information</source>
-        <translation type="unfinished">Přeskočit informace</translation>
+        <translation>Přeskočit informace</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1119"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1204"/>
         <source>See next</source>
-        <translation type="unfinished">Ukázat další</translation>
+        <translation>Ukázat další</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1141"/>
@@ -55451,7 +55531,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1316"/>
         <source>FET help</source>
-        <translation type="unfinished">Nápověda FET</translation>
+        <translation>Nápověda FET</translation>
     </message>
 </context>
 <context>
@@ -55465,65 +55545,65 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="39"/>
         <source>Width</source>
-        <translation type="unfinished"></translation>
+        <translation>Šířka</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="46"/>
         <source>Height</source>
-        <translation type="unfinished"></translation>
+        <translation>Výška</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="70"/>
         <source>Lock</source>
-        <translation type="unfinished">Zamknout</translation>
+        <translation>Zamknout</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="77"/>
         <source>Unlock</source>
-        <translation type="unfinished">Odemknout</translation>
+        <translation>Odemknout</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="84"/>
         <source>Toggle</source>
-        <translation type="unfinished"></translation>
+        <translation>Přepnout</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="100"/>
         <source>Teachers</source>
-        <translation type="unfinished">Učitelé</translation>
+        <translation>Učitelé</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="107"/>
         <source>Subjects</source>
-        <translation type="unfinished">Předměty</translation>
+        <translation>Předměty</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="125"/>
         <source>Time</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Čas</translation>
+        <translation>Čas</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="139"/>
         <source>Space</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Prostor</translation>
+        <translation>Prostor</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="153"/>
         <source>Both</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Oba</translation>
+        <translation>Oba</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="168"/>
         <source>Help</source>
-        <translation type="unfinished">Nápověda</translation>
+        <translation>Nápověda</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="175"/>
         <source>Close</source>
-        <translation type="unfinished">Zavřít</translation>
+        <translation>Zavřít</translation>
     </message>
 </context>
 <context>
@@ -55549,12 +55629,12 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="703"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="716"/>
         <source>FET warning</source>
-        <translation type="unfinished">Varování FET</translation>
+        <translation>Varování FET</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="187"/>
         <source>Cannot display the timetable, because you added or removed some teachers. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished">Nepodařilo se zobrazit rozvrh, protože jste přidali nebo odstranili některé učitele. Prosím, vytvořte rozvrh znovu a potom si jej prohlédněte</translation>
+        <translation>Nepodařilo se zobrazit rozvrh, protože jste přidali nebo odstranili některé učitele. Prosím, vytvořte rozvrh znovu a potom si jej prohlédněte</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="223"/>
@@ -55580,7 +55660,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="443"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="554"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished">Nepodařilo se zobrazit rozvrh, protože jste přidali nebo odstranili některé místnosti. Prosím, vytvořte rozvrh znovu a potom si jej prohlédněte</translation>
+        <translation>Nepodařilo se zobrazit rozvrh, protože jste přidali nebo odstranili některé místnosti. Prosím, vytvořte rozvrh znovu a potom si jej prohlédněte</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="263"/>
@@ -55595,7 +55675,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="481"/>
         <source>Room: %1</source>
-        <translation type="unfinished">Místnost=%1</translation>
+        <translation>Místnost=%1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="509"/>
@@ -55614,24 +55694,24 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="731"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="779"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="543"/>
         <source>Allocation in course.
 Please stop simulation before this.</source>
-        <translation type="unfinished">Probíhá přidělování. Prosím, zastavte předtím simulaci.</translation>
+        <translation>Probíhá přidělování. Prosím, zastavte předtím simulaci.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="562"/>
         <source>Please select a teacher</source>
-        <translation type="unfinished">Prosím vyberte učitele</translation>
+        <translation>Prosím vyberte učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="603"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="675"/>
         <source>Added the following constraint:</source>
-        <translation type="unfinished">Pridané následující omezení:</translation>
+        <translation>Přidáno následující omezení:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="617"/>
@@ -55685,13 +55765,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="658"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="732"/>
         <source>Skip information</source>
-        <translation type="unfinished">Přeskočit informace</translation>
+        <translation>Přeskočit informace</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="658"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="732"/>
         <source>See next</source>
-        <translation type="unfinished">Ukázat další</translation>
+        <translation>Ukázat další</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="692"/>
@@ -55702,7 +55782,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="822"/>
         <source>FET help</source>
-        <translation type="unfinished">Nápověda FET</translation>
+        <translation>Nápověda FET</translation>
     </message>
 </context>
 <context>
@@ -55717,40 +55797,40 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform_template.ui" line="38"/>
         <source>Lock/unlock</source>
         <extracomment>This is a group box for locking/unlocking buttons</extracomment>
-        <translation type="unfinished">Zamknout/Odemknout</translation>
+        <translation>Zamknout/Odemknout</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform_template.ui" line="46"/>
         <source>Time</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Čas</translation>
+        <translation>Čas</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform_template.ui" line="53"/>
         <source>Space</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Prostor</translation>
+        <translation>Prostor</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform_template.ui" line="62"/>
         <source>Both</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Oba</translation>
+        <translation>Oba</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform_template.ui" line="84"/>
         <source>Help</source>
-        <translation type="unfinished">Nápověda</translation>
+        <translation>Nápověda</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform_template.ui" line="91"/>
         <source>Close</source>
-        <translation type="unfinished">Zavřít</translation>
+        <translation>Zavřít</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform_template.ui" line="112"/>
         <source>Teacher&apos;s name</source>
-        <translation type="unfinished">Jméno učitele</translation>
+        <translation>Jméno učitele</translation>
     </message>
 </context>
 <context>
@@ -55775,26 +55855,26 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="954"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="960"/>
         <source>FET warning</source>
-        <translation type="unfinished">Varování FET</translation>
+        <translation>Varování FET</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="204"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="649"/>
         <source>Cannot display the timetable, because you added or removed some teachers. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished">Nepodařilo se zobrazit rozvrh, protože jste přidali nebo odstranili některé učitele. Prosím, vytvořte rozvrh znovu a potom si jej prohlédněte</translation>
+        <translation>Nepodařilo se zobrazit rozvrh, protože jste přidali nebo odstranili některé učitele. Prosím, vytvořte rozvrh znovu a potom si jej prohlédněte</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="307"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="317"/>
         <source>px</source>
         <comment>Abbreviation for pixels</comment>
-        <translation type="unfinished"></translation>
+        <translation>px</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="315"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="325"/>
         <source>Automatic</source>
-        <translation type="unfinished"></translation>
+        <translation>Automaticky</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="407"/>
@@ -55807,7 +55887,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="639"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="749"/>
         <source>Cannot display the timetable, because you added or removed some rooms. Please regenerate the timetable and then view it</source>
-        <translation type="unfinished">Nepodařilo se zobrazit rozvrh, protože jste přidali nebo odstranili některé místnosti. Prosím, vytvořte rozvrh znovu a potom si jej prohlédněte</translation>
+        <translation>Nepodařilo se zobrazit rozvrh, protože jste přidali nebo odstranili některé místnosti. Prosím, vytvořte rozvrh znovu a potom si jej prohlédněte</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="627"/>
@@ -55823,7 +55903,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="676"/>
         <source>Room: %1</source>
-        <translation type="unfinished">Místnost=%1</translation>
+        <translation>Místnost=%1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="704"/>
@@ -55841,13 +55921,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="975"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1021"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="738"/>
         <source>Allocation in course.
 Please stop simulation before this.</source>
-        <translation type="unfinished">Probíhá přidělování. Prosím, zastavte předtím simulaci.</translation>
+        <translation>Probíhá přidělování. Prosím, zastavte předtím simulaci.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="829"/>
@@ -55889,7 +55969,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="864"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="949"/>
         <source>Added the following constraint:</source>
-        <translation type="unfinished">Pridané následující omezení:</translation>
+        <translation>Přidáno následující omezení:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="869"/>
@@ -55913,13 +55993,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="891"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="976"/>
         <source>Skip information</source>
-        <translation type="unfinished">Přeskočit informace</translation>
+        <translation>Přeskočit informace</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="891"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="976"/>
         <source>See next</source>
-        <translation type="unfinished">Ukázat další</translation>
+        <translation>Ukázat další</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="913"/>
@@ -55945,7 +56025,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1088"/>
         <source>FET help</source>
-        <translation type="unfinished">Nápověda FET</translation>
+        <translation>Nápověda FET</translation>
     </message>
 </context>
 <context>
@@ -55959,65 +56039,65 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="39"/>
         <source>Width</source>
-        <translation type="unfinished"></translation>
+        <translation>Šířka</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="46"/>
         <source>Height</source>
-        <translation type="unfinished"></translation>
+        <translation>Výška</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="70"/>
         <source>Lock</source>
-        <translation type="unfinished">Zamknout</translation>
+        <translation>Zamknout</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="77"/>
         <source>Unlock</source>
-        <translation type="unfinished">Odemknout</translation>
+        <translation>Odemknout</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="84"/>
         <source>Toggle</source>
-        <translation type="unfinished"></translation>
+        <translation>Přepnout</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="100"/>
         <source>Students</source>
-        <translation type="unfinished">Studenti</translation>
+        <translation>Studenti</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="107"/>
         <source>Subjects</source>
-        <translation type="unfinished">Předměty</translation>
+        <translation>Předměty</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="125"/>
         <source>Time</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Čas</translation>
+        <translation>Čas</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="139"/>
         <source>Space</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Prostor</translation>
+        <translation>Prostor</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="153"/>
         <source>Both</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Oba</translation>
+        <translation>Oba</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="168"/>
         <source>Help</source>
-        <translation type="unfinished">Nápověda</translation>
+        <translation>Nápověda</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="175"/>
         <source>Close</source>
-        <translation type="unfinished">Zavřít</translation>
+        <translation>Zavřít</translation>
     </message>
 </context>
 <context>
@@ -56030,92 +56110,92 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="31"/>
         <source>Soft conflicts</source>
-        <translation type="unfinished">Měkké střety</translation>
+        <translation>Měkké střety</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="53"/>
         <source>Subgroups</source>
-        <translation type="unfinished">Podskupiny</translation>
+        <translation>Podskupiny</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="63"/>
         <source>Groups</source>
-        <translation type="unfinished">Skupiny</translation>
+        <translation>Skupiny</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="73"/>
         <source>Years</source>
-        <translation type="unfinished">Ročníky</translation>
+        <translation>Ročníky</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="83"/>
         <source>Teachers</source>
-        <translation type="unfinished">Učitelé</translation>
+        <translation>Učitelé</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="93"/>
         <source>Teachers free periods</source>
-        <translation type="unfinished">Volné hodiny učitelů</translation>
+        <translation>Volné hodiny učitelů</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="103"/>
         <source>Rooms</source>
-        <translation type="unfinished">Místnosti</translation>
+        <translation>Místnosti</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="113"/>
         <source>Subjects</source>
-        <translation type="unfinished">Předměty</translation>
+        <translation>Předměty</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="123"/>
         <source>Activities</source>
-        <translation type="unfinished"></translation>
+        <translation>Činnosti</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="133"/>
         <source>Activity tags</source>
-        <translation type="unfinished">Druhy činností</translation>
+        <translation>Druhy činností</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="155"/>
         <source>Statistics</source>
-        <translation type="unfinished">Statistika</translation>
+        <translation>Statistika</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="165"/>
         <source>XML</source>
-        <translation type="unfinished"></translation>
+        <translation>XML</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="175"/>
         <source>Days horizontal</source>
-        <translation type="unfinished">Dny vodorovně</translation>
+        <translation>Dny vodorovně</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="185"/>
         <source>Days vertical</source>
-        <translation type="unfinished">Dny svisle</translation>
+        <translation>Dny svisle</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="195"/>
         <source>Time horizontal</source>
-        <translation type="unfinished">Čas vodorovně</translation>
+        <translation>Čas vodorovně</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="205"/>
         <source>Time vertical</source>
-        <translation type="unfinished">Čas svisle</translation>
+        <translation>Čas svisle</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="248"/>
         <source>Cancel</source>
-        <translation type="unfinished">Zrušit</translation>
+        <translation>Zrušit</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="255"/>
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -56207,17 +56287,17 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/yearsform.cpp" line="317"/>
         <source>Students year comments</source>
-        <translation type="unfinished"></translation>
+        <translation>Poznámky ke studentskému ročníku</translation>
     </message>
     <message>
         <location filename="../src/interface/yearsform.cpp" line="319"/>
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../src/interface/yearsform.cpp" line="321"/>
         <source>Cancel</source>
-        <translation type="unfinished">Zrušit</translation>
+        <translation>Zrušit</translation>
     </message>
 </context>
 <context>
@@ -56246,7 +56326,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/yearsform_template.ui" line="58"/>
         <source>Comments</source>
-        <translation type="unfinished"></translation>
+        <translation>Poznámky</translation>
     </message>
     <message>
         <location filename="../src/interface/yearsform_template.ui" line="74"/>
@@ -56262,13 +56342,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/yearsform_template.ui" line="90"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation>Nahoru</translation>
     </message>
     <message>
         <location filename="../src/interface/yearsform_template.ui" line="97"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished"></translation>
+        <translation>Dolů</translation>
     </message>
     <message>
         <location filename="../src/interface/yearsform_template.ui" line="111"/>
