@@ -5652,3 +5652,13 @@ All students must respect the maximum number of span (in hours) per day -> bette
 All students must respect the maximum span (in number of hours) per day.
 
 Circular -> better write: Circularly.
+
+343---------------------------------------------------------
+From rodolforg:
+
+What do you think about leaving the version number and date out of
+HelpAboutForm_template.ui ?
+Maybe leaving a placeholder there, and making use of FET_VERSION and a
+l10n version of date.
+
+That will reduce .ts diff a lot and reduces translator efforts ;)
