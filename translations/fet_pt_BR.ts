@@ -295,7 +295,7 @@
         <location filename="../src/interface/activitiesroomsstatisticsform.cpp" line="329"/>
         <source>You do not have activities which will certainly end up in an unspecified room.</source>
         <comment>Instructions for translators: take care, it is &apos;certainly&apos;.</comment>
-        <translation>Não há atividades que certamente não possuem uma sala definida.</translation>
+        <translation>Não há atividades que certamente estão sem uma sala definida.</translation>
     </message>
 </context>
 <context>
@@ -304,7 +304,7 @@
         <location filename="../src/interface/activitiesroomsstatisticsform_template.ui" line="14"/>
         <source>Activities rooms statistics</source>
         <extracomment>Title of dialog. Refers to the statistics of each activity&apos;s possible rooms</extracomment>
-        <translation>Estatísticas de atividades das salas</translation>
+        <translation>Estatística de atividades das salas</translation>
     </message>
     <message>
         <location filename="../src/interface/activitiesroomsstatisticsform_template.ui" line="44"/>
@@ -558,7 +558,8 @@
         <location filename="../src/interface/activityplanningform.cpp" line="255"/>
         <source>Swap teachers</source>
         <comment>Please keep translation short</comment>
-        <translation type="unfinished"></translation>
+        <translatorcomment>I&apos;m not sure about this is a best option</translatorcomment>
+        <translation>Inverter docentes</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="266"/>
@@ -684,7 +685,7 @@
         <location filename="../src/interface/activityplanningform.cpp" line="1018"/>
         <location filename="../src/interface/activityplanningform.cpp" line="1433"/>
         <source>Modify %1 activities of students set %2?</source>
-        <translation type="unfinished"></translation>
+        <translation>Alterar %1 atividades da turma %2?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1022"/>
@@ -697,7 +698,7 @@
         <source>Because you have individually modified the components,
 there won&apos;t be modified an additional number of %1 activities
 (which are in the same larger split activities as the selected activities).</source>
-        <translation type="unfinished"></translation>
+        <translation>Uma vez que você modificou os componentes individualmente, não será alterado um número adicional de %1 atividades (que estão na mesma atividade maior como atividades selecionadas).</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1035"/>
@@ -708,7 +709,7 @@ there won&apos;t be modified an additional number of %1 activities
         <location filename="../src/interface/activityplanningform.cpp" line="2152"/>
         <location filename="../src/interface/activityplanningform.cpp" line="2405"/>
         <source>Please choose a new teacher:</source>
-        <translation type="unfinished"></translation>
+        <translation>Escolha novo(a) docente:</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1036"/>
@@ -719,7 +720,7 @@ there won&apos;t be modified an additional number of %1 activities
         <location filename="../src/interface/activityplanningform.cpp" line="2153"/>
         <location filename="../src/interface/activityplanningform.cpp" line="2406"/>
         <source>FET - Select new teacher dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>FET - Janela para novo(a) docente</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1040"/>
@@ -729,33 +730,33 @@ there won&apos;t be modified an additional number of %1 activities
         <location filename="../src/interface/activityplanningform.cpp" line="2410"/>
         <source>Modify related?</source>
         <comment>It refers to activities</comment>
-        <translation type="unfinished"></translation>
+        <translation>Alterar relacionadas?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1040"/>
         <location filename="../src/interface/activityplanningform.cpp" line="1455"/>
         <source>There are activities affecting other students sets. Should the related activities also be modified?</source>
-        <translation type="unfinished"></translation>
+        <translation>Há atividades afetando outras turmas. Alterar essas atividades também?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1061"/>
         <location filename="../src/interface/activityplanningform.cpp" line="1370"/>
         <source>Modify %1 activities of subject %2?</source>
-        <translation type="unfinished"></translation>
+        <translation>Alterar %1 atividades da disciplina %2?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1075"/>
         <location filename="../src/interface/activityplanningform.cpp" line="1384"/>
         <location filename="../src/interface/activityplanningform.cpp" line="1909"/>
         <source>FET - Information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET - Information</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1375"/>
         <source>Because you have individually modified the components,
 there won&apos;t be removed an additional number of %1 activities
 (which are in the same larger split activities as the selected activities).</source>
-        <translation type="unfinished"></translation>
+        <translation>Uma vez que você modificou os componentes individualmente, não será alterado um número adicional de %1 atividades (que estão na mesma atividade maior como atividades selecionadas).</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1622"/>
@@ -766,12 +767,12 @@ there won&apos;t be removed an additional number of %1 activities
         <location filename="../src/interface/activityplanningform.cpp" line="1865"/>
         <location filename="../src/interface/activityplanningform.cpp" line="1889"/>
         <source>Modify %1 activities from selected cell?</source>
-        <translation type="unfinished"></translation>
+        <translation>Alterar %1 atividades da célula selecionada?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1919"/>
         <source>This cell contains activities that relate to other students. Should the related activities also be modified?</source>
-        <translation type="unfinished"></translation>
+        <translation>Essa célula contém atividades relacionadas a outros estudantes. Elas devem ser tambem alteradas?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2064"/>
@@ -783,13 +784,13 @@ there won&apos;t be removed an additional number of %1 activities
         <location filename="../src/interface/activityplanningform.cpp" line="2136"/>
         <location filename="../src/interface/activityplanningform.cpp" line="2389"/>
         <source>Modify %1 activities of teacher %2?</source>
-        <translation type="unfinished"></translation>
+        <translation>Alterar %1 atividades de docente %2?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2157"/>
         <location filename="../src/interface/activityplanningform.cpp" line="2410"/>
         <source>There are activities affecting other teachers. Should the related activities also be modified?</source>
-        <translation type="unfinished"></translation>
+        <translation>Há atividades afetando outros professores. Alterar essas atividades também?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2200"/>
@@ -878,7 +879,7 @@ there won&apos;t be removed an additional number of %1 activities
         <location filename="../src/interface/activityplanningform.cpp" line="1384"/>
         <location filename="../src/interface/activityplanningform.cpp" line="1909"/>
         <source>There is no teacher qualified for this subject. You should set teachers qualified subjects in FET -&gt; Data -&gt; Teachers.</source>
-        <translation type="unfinished"></translation>
+        <translation>Não há docente habilitado para essa disciplina. Você deveria definir docentes com habilitação em FET -&gt; Dados -&gt; Professores.</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1621"/>
@@ -1341,7 +1342,7 @@ there won&apos;t be removed an additional number of %1 activities
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="803"/>
         <source>&apos;Students&apos; (the text near the spin box), means &apos;Number of students (-1 for automatic)&apos;</source>
-        <translation>&quot;Alunos&quot; (o texto próximo da caixa), quer dizer &quot;Número de alunos(-1 para automático)&quot;</translation>
+        <translation>&quot;Alunos&quot; (o texto próximo da caixa), quer dizer &quot;Número de alunos (-1 para automático)&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="805"/>
@@ -1356,7 +1357,7 @@ there won&apos;t be removed an additional number of %1 activities
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="809"/>
         <source>&apos;Weight %&apos; means &apos;Percentage of added constraint (min days between activities constraint). Recommended: 95.0%-100.0%&apos;</source>
-        <translation>&apos;Peso %&apos; significa &apos;Porcentagem da restrição adicionada (restrição de um mínimo de dias entre atividades). Recomendado: 95.0%-100.0% </translation>
+        <translation>&apos;Peso %&apos; significa &apos;Porcentagem da restrição adicionada (restrição de um mínimo de dias entre atividades). Recomendado: 95.0%-100.0%&apos;</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="811"/>
@@ -1418,7 +1419,7 @@ Você pode escolher a distância mínima em dias entre cada par de atividades. P
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="865"/>
         <source>If you choose a value greater or equal with 1 for min days, a time constraint min days between activities will be added automatically (you can see this constraint in the time constraints list or you can see this constraint in the detailed description of the activity). You can select a weight percentage for this constraint. If you select 100%, the constraint must be respected all the time. If you select 95%, there is a small chance that the timetable will not respect this constraint. Recommended values are 95.0%-100.0% (maybe you could try with 95%, then 99.75%, or even 100.0%, but the generation time might be larger). Generally, 99.75% might be a good value. Note: if you put a value less than 100% and the constraint is too tough, FET is able to find that this constraint is impossible and will break it. 99.75% might be better than 95% but possibly slower. The percentage is subjective (if you put 95% you may get 6 soft conflicts and if you put 99.75% you may get 3 soft conflicts). Starting with FET-5.3.6, it is possible to change this value for all constraints in one click, in constraint min days between activities dialog.</source>
-        <translation>Se você escolher um valor maior ou igual a 1 para mín dias, uma restrição de tempo para mín dias entre as atividades será adicionada automaticamente (você pode ver essa restrição na lista de restrições de tempo ou você pode vê-la na descrição detalhada da atividade). Você pode selecionar uma percentagem de peso para essa restrição. Se selecionar 100%, a restrição deve ser respeitada o tempo todo. Se você selecionar 95%, há uma pequena chance de que o calendário não respeite essa restrição. Os valores recomendados são 95% -100,0% (talvez você possa tentar com 95%; depois 99.75%, ou mesmo 100%; mas o tempo de resolução pode ser maior). Geralmente, 99.75% é um bom valor. Nota: se você colocar um valor inferior a 100% e a restrição for muito difícil, FET será capaz de achar que esta restrição é impossível e vai quebrá-la (ignorá-la). 99.75% pode ser melhor do que 95%, mas, possivelmente, ser lento. A percentagem é subjetiva (se você colocar 95%, poderá obter 6 conflitos leves e, se você colocar 99.75%, você poderá obter 3 conflitos leves). Desde a versão FET-5.3.6, é possível alterar este valor para todas as restrições com um clique, na janela de diálogo de restrição de mínimo de dias entre atividades.</translation>
+        <translation>Se você escolher um valor maior ou igual a 1 para mín dias, uma restrição de tempo para mín dias entre as atividades será adicionada automaticamente (você pode ver essa restrição na lista de restrições de tempo ou você pode vê-la na descrição detalhada da atividade). Você pode selecionar uma percentagem de peso para essa restrição. Se selecionar 100%, a restrição deve ser respeitada o tempo todo. Se você selecionar 95%, há uma pequena chance de que o calendário não respeite essa restrição. Os valores recomendados são 95%-100,0% (talvez você possa tentar com 95%; depois 99.75%, ou mesmo 100%; mas o tempo de resolução pode ser maior). Geralmente, 99.75% é um bom valor. Nota: se você colocar um valor inferior a 100% e a restrição for muito difícil, FET será capaz de achar que esta restrição é impossível e vai quebrá-la (ignorá-la). 99.75% pode ser melhor do que 95%, mas, possivelmente, ser lento. A percentagem é subjetiva (se você colocar 95%, poderá obter 6 conflitos leves e, se você colocar 99.75%, você poderá obter 3 conflitos leves). Desde a versão FET-5.3.6, é possível alterar este valor para todas as restrições com um clique, na janela de diálogo de restrição de mínimo de dias entre atividades.</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="879"/>
@@ -17152,7 +17153,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintmingapsbetweenactivitiesform.cpp" line="296"/>
         <source>Please make sure that the selected activities are not forced to be consecutive by some other constraint &apos;min days between activities&apos; (with &apos;consecutive if same day&apos; true), by a constraint &apos;two activities consecutive&apos;, or by a constraint &apos;two activities grouped&apos; (also, if you have a constraint &apos;three activities grouped&apos; related to the selected activities, make sure that the constraints do not contradict).</source>
-        <translation>Certifique-se de que as atividades selecionadas não estão obrigadas a serem consecutivas por algumas outras restrições &quot;mín dias entre as atividades&quot; (com &quot;consecutivas se no mesmo dia&quot; verdadeiro), por uma restrição &quot;duas atividades consecutivas&quot;, ou por uma restrição &quot;duas atividades agrupadas&quot; (além disso, se você tiver uma restrição &quot;três atividades agrupadas&quot; relacionadas com as atividades selecionadas, certifique-se que as restrições não se contradizem)</translation>
+        <translation>Certifique-se de que as atividades selecionadas não estão obrigadas a serem consecutivas por algumas outras restrições &quot;mín dias entre as atividades&quot; (com &quot;consecutivas se no mesmo dia&quot; verdadeiro), por uma restrição &quot;duas atividades consecutivas&quot;, ou por uma restrição &quot;duas atividades agrupadas&quot; (além disso, se você tiver uma restrição &quot;três atividades agrupadas&quot; relacionadas com as atividades selecionadas, certifique-se que as restrições não se contradizem).</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmingapsbetweenactivitiesform.cpp" line="303"/>
@@ -17958,7 +17959,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15483"/>
         <source>All students respect working in an hourly interval a maximum number of days per week</source>
-        <translation>Todos os alunos são autorizados a trabalhar em uma faixa horária por número limitado de dias por semana.</translation>
+        <translation>Todos os alunos são autorizados a trabalhar em uma faixa horária por número limitado de dias por semana</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15484"/>
@@ -30502,7 +30503,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/export.cpp" line="337"/>
         <source>FET - export comment</source>
         <comment>The comment of the exporting operation</comment>
-        <translation type="unfinished">FET - comentário da exportação</translation>
+        <translation>FET - comentário da exportação</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="426"/>
@@ -30691,22 +30692,22 @@ Importação de dados será mais fácil com elas.</translation>
     <message>
         <location filename="../src/engine/export.cpp" line="298"/>
         <source>Successfully finished timetable:</source>
-        <translation type="unfinished"></translation>
+        <translation>Horário concluído com sucesso:</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="311"/>
         <source>Highest stage timetable:</source>
-        <translation type="unfinished"></translation>
+        <translation>Estágio mais avançado do horário:</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="321"/>
         <source>Current stage timetable:</source>
-        <translation type="unfinished"></translation>
+        <translation>Horário atual:</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="1206"/>
         <source>%1 active activities statistics exported.</source>
-        <translation>%1 estatísticas de atividades ativas exportadas.</translation>
+        <translation>%1 estatística(s) de atividades ativas exportadas.</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="1319"/>
@@ -31995,7 +31996,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4234"/>
         <source>statistics</source>
-        <translation>estatísticas</translation>
+        <translation>estatística</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4237"/>
@@ -32595,7 +32596,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1222"/>
         <source>Please do not use a filename starting with white space(s), the html css code does not work. File was not loaded. Please rename it, removing the white space(s) from the beginning and open it after that with FET.</source>
-        <translation>Por favor, não use um nome de arquivo começando com espaço(s) em branco, o código html css não funciona. Arquivo não foi carregado. Por favor, renomeie-o, removendo o(s) espaço(s) em branco desde o início e abra-o depois disso com FET.</translation>
+        <translation>Por favor, não use um nome de arquivo iniciando com espaço(s) em branco ou o código html css não funcionará. Arquivo não foi carregado. Por favor, renomeie-o, removendo o(s) espaço(s) em branco desde o início e abra-o depois disso com FET.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1235"/>
@@ -32830,7 +32831,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="980"/>
         <source>Statistics</source>
-        <translation>Estatísticas</translation>
+        <translation>Estatística</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="997"/>
@@ -33047,7 +33048,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2197"/>
         <source>Max hours daily with an activity tag for all students</source>
-        <translation>Máx horas diárias com um marcador de atividade para todas as turmas </translation>
+        <translation>Máx horas diárias com um marcador de atividade para todas as turmas</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2205"/>
@@ -33167,22 +33168,22 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1610"/>
         <source>Teachers statistics</source>
-        <translation>Professores</translation>
+        <translation>Professores (estatística)</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1615"/>
         <source>Students statistics</source>
-        <translation>Alunos</translation>
+        <translation>Alunos (estatística)</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1620"/>
         <source>Subjects statistics</source>
-        <translation>Disciplinas</translation>
+        <translation>Disciplinas (estatística)</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1625"/>
         <source>Max gaps per week for all teachers</source>
-        <translation>Máx lacunas por semana para todos os professores </translation>
+        <translation>Máx lacunas por semana para todos os professores</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1630"/>
@@ -33468,7 +33469,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1811"/>
         <source>Max building changes per day for all students</source>
-        <translation>Máx trocas diárias de edifício para todas as turmas </translation>
+        <translation>Máx trocas diárias de edifício para todas as turmas</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1816"/>
@@ -33488,7 +33489,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1831"/>
         <source>Min gaps between building changes for all students</source>
-        <translation>Mín de intervalo entre trocas de edifício para todas as turmas </translation>
+        <translation>Mín de intervalo entre trocas de edifício para todas as turmas</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1836"/>
@@ -33609,7 +33610,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
         <location filename="../src/interface/fetmainform_template.ui" line="2329"/>
         <source>Confirm activity planning</source>
         <comment>This is a setting - a check box: if a user wants to deactivate/activate the confirmation (instructions) dialog that appears before activity planning dialog</comment>
-        <translation>Confirmar planejamento de atividades </translation>
+        <translation>Confirmar planejamento de atividades</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2340"/>
@@ -33633,7 +33634,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
         <location filename="../src/interface/fetmainform_template.ui" line="2372"/>
         <source>Activities rooms statistics</source>
         <extracomment>It refers to the statistics of each activity&apos;s possible room(s)</extracomment>
-        <translation>Atividades das salas</translation>
+        <translation>Atividades das salas (estatística)</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2377"/>
@@ -33727,7 +33728,7 @@ Ter um subgrupo com poucas horas de trabalho por semana significa que você digi
         <location filename="../src/interface/fetmainform_template.ui" line="2530"/>
         <source>Teachers subjects qualifications statistics</source>
         <comment>It means the statistics for the teachers - check the teacher&apos;s subject qualification</comment>
-        <translation>Estatísticas de habilitação docente</translation>
+        <translation>Habilitação docente (estatística)</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2535"/>
@@ -36274,6 +36275,24 @@ Please modify your data correspondingly and try again</source>
         <translation>Sobre</translation>
     </message>
     <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.34.3 (December 2017).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET homepage: &lt;/span&gt;&lt;a href=&quot;https://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;https://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="90"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -36994,24 +37013,6 @@ p, li { white-space: pre-wrap; }
         <translation>Autores</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.34.0 (October 2017).&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET homepage: &lt;/span&gt;&lt;a href=&quot;https://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;https://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="303"/>
         <source>Thanks to</source>
         <translation>Gratos a</translation>
@@ -37092,7 +37093,7 @@ R: As atividades são recuadas para visualização mais fácil. A sem recuo repr
         <source>Q: Is it possible to use non-integer weights for constraints?
 
 A: Yes. If a constraint is allowed values under 100%, you can use any weight, even fractional numbers like 99.75%. It might help in constraints like min days, preferred rooms or max hours daily. The precision in FET is limited to %1 decimal digits after the decimal point, but probably nobody will use such a fine precision.</source>
-        <translatorcomment>Tag question in order to be more polite (in Portuguese, as statement, sounds impolite in some regions.</translatorcomment>
+        <translatorcomment>Tag question in order to be more polite (in Portuguese, as statement, sounds impolite in some regions).</translatorcomment>
         <translation>Q: É possível usar pesos não inteiros para restrições?
 
 A: Sim. Se uma restrição permitir valores abaixo de 100%, você pode usar qualquer peso, até mesmo números fracionários como 99,75%. Pode ajudar em restrições como mínimo de dias, salas reservadas ou máxima jornada (máximo de horas em um dia). A precisão no FET é limitada a %1 algarismos após o ponto decimal, mas provavelmente ninguém precisaria tanta precisão, não é?</translation>
@@ -37772,8 +37773,7 @@ Recomenda-se peso entre 95 e 100%. O melhor pode ser 99.75% ou um valor um pouco
 
 Você pode especificar consecutivas, se no mesmo dia. Por favor, tenha cuidado, mesmo se restrição mín de dias entre as atividades tiverem 0% de peso, se você selecionar esta consecutiva (se no mesmo dia), ela será forçada. Você não será capaz de encontrar um horário com as duas atividades no mesmo dia, separadas por intervalo, indisponíveis ou outras atividades, mesmo que a restrição tenha peso de 0%, se você selecionar &quot;consecutivas, se no mesmo dia&quot;.
 
-Atualmente FET pode colocar, no máximo, 2 atividades no mesmo dia, se &quot;consecutivas, se no mesmo dia&quot; for verdade. FET não pode colocar 3 ou mais atividades no mesmo dia, se &quot;consecutivas, se no mesmo dia&quot; for verdade.
-</translation>
+Atualmente FET pode colocar, no máximo, 2 atividades no mesmo dia, se &quot;consecutivas, se no mesmo dia&quot; for verdade. FET não pode colocar 3 ou mais atividades no mesmo dia, se &quot;consecutivas, se no mesmo dia&quot; for verdade.</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform.cpp" line="236"/>
@@ -49795,313 +49795,313 @@ não foi adicionada - deve estar duplicada</translation>
 <context>
     <name>SplitYearForm</name>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="123"/>
+        <location filename="../src/interface/splityearform.cpp" line="131"/>
         <source>Splitting year: %1</source>
         <translation>Dividindo ano: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="195"/>
-        <location filename="../src/interface/splityearform.cpp" line="229"/>
-        <location filename="../src/interface/splityearform.cpp" line="304"/>
-        <location filename="../src/interface/splityearform.cpp" line="312"/>
-        <location filename="../src/interface/splityearform.cpp" line="386"/>
+        <location filename="../src/interface/splityearform.cpp" line="203"/>
+        <location filename="../src/interface/splityearform.cpp" line="237"/>
+        <location filename="../src/interface/splityearform.cpp" line="382"/>
         <location filename="../src/interface/splityearform.cpp" line="390"/>
-        <location filename="../src/interface/splityearform.cpp" line="417"/>
-        <location filename="../src/interface/splityearform.cpp" line="437"/>
-        <location filename="../src/interface/splityearform.cpp" line="657"/>
+        <location filename="../src/interface/splityearform.cpp" line="464"/>
+        <location filename="../src/interface/splityearform.cpp" line="468"/>
+        <location filename="../src/interface/splityearform.cpp" line="495"/>
+        <location filename="../src/interface/splityearform.cpp" line="515"/>
+        <location filename="../src/interface/splityearform.cpp" line="735"/>
         <source>FET information</source>
         <translation>Informação FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="114"/>
-        <location filename="../src/interface/splityearform.cpp" line="289"/>
-        <location filename="../src/interface/splityearform.cpp" line="338"/>
-        <location filename="../src/interface/splityearform.cpp" line="544"/>
+        <location filename="../src/interface/splityearform.cpp" line="122"/>
+        <location filename="../src/interface/splityearform.cpp" line="367"/>
+        <location filename="../src/interface/splityearform.cpp" line="416"/>
+        <location filename="../src/interface/splityearform.cpp" line="622"/>
         <source>FET warning</source>
         <translation>Aviso FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="133"/>
+        <location filename="../src/interface/splityearform.cpp" line="141"/>
         <source>Max subgroups per year: %1</source>
         <translation>Máx subgrupos por ano: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="134"/>
+        <location filename="../src/interface/splityearform.cpp" line="142"/>
         <source>Max total subgroups: %1</source>
         <translation>Total máx subgrupos: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="189"/>
+        <location filename="../src/interface/splityearform.cpp" line="197"/>
         <source>FET - Add division to category %1</source>
         <translation>Incluir divisão para categoria %1 FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="190"/>
+        <location filename="../src/interface/splityearform.cpp" line="198"/>
         <source>Please input division name:</source>
         <translation>Por favor, dê um nome à divisão:</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="195"/>
-        <location filename="../src/interface/splityearform.cpp" line="229"/>
+        <location filename="../src/interface/splityearform.cpp" line="203"/>
+        <location filename="../src/interface/splityearform.cpp" line="237"/>
         <source>Duplicates not allowed!</source>
         <translation>Não são permitidas duplicadas!</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="222"/>
+        <location filename="../src/interface/splityearform.cpp" line="230"/>
         <source>FET - Modify division to category %1</source>
         <translation>Alterar divisão para categoria %1 FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="223"/>
+        <location filename="../src/interface/splityearform.cpp" line="231"/>
         <source>Please input the new division name:</source>
         <translation>Por favor, insira o novo nome da divisão:</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="246"/>
-        <location filename="../src/interface/splityearform.cpp" line="274"/>
-        <location filename="../src/interface/splityearform.cpp" line="538"/>
-        <location filename="../src/interface/splityearform.cpp" line="783"/>
+        <location filename="../src/interface/splityearform.cpp" line="324"/>
+        <location filename="../src/interface/splityearform.cpp" line="352"/>
+        <location filename="../src/interface/splityearform.cpp" line="616"/>
+        <location filename="../src/interface/splityearform.cpp" line="861"/>
         <source>FET confirmation</source>
         <translation>Confirmação FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="247"/>
+        <location filename="../src/interface/splityearform.cpp" line="325"/>
         <source>Do you want to remove division %1 from category %2?</source>
         <translation>Deseja remover a divisão %1 da categoria %2?</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="275"/>
+        <location filename="../src/interface/splityearform.cpp" line="353"/>
         <source>Do you really want to remove all divisions from category %1?</source>
         <translation>Realmente deseja remover todas as divisões da categoria %1?</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="304"/>
+        <location filename="../src/interface/splityearform.cpp" line="382"/>
         <source>The current number of subgroups for this year is too large (the maximum allowed value is %1, but computing up to category %2 gives %3 subgroups)</source>
         <translation>O número atual de subgrupos para este ano é muito grande (o valor máximo permitido é %1, contando até a categoria %2 dá %3 subgrupos)</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="312"/>
+        <location filename="../src/interface/splityearform.cpp" line="390"/>
         <source>Each category must contain at least one division</source>
         <translation>Cada categoria deve conter ao menos uma divisão</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="342"/>
+        <location filename="../src/interface/splityearform.cpp" line="420"/>
         <source>Are you sure you want to continue?</source>
         <translation>Tem certeza que deseja continuar?</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="386"/>
+        <location filename="../src/interface/splityearform.cpp" line="464"/>
         <source>Duplicate names not allowed</source>
         <translation>Não são permitidos nomes repetidos</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="504"/>
+        <location filename="../src/interface/splityearform.cpp" line="582"/>
         <source>Notes:</source>
         <translation>Notas:</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="506"/>
+        <location filename="../src/interface/splityearform.cpp" line="584"/>
         <source>Note:</source>
         <translation>Nota:</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="509"/>
+        <location filename="../src/interface/splityearform.cpp" line="587"/>
         <source>To keep a group, you need to keep the corresponding division name and use the same separator(s) character(s).</source>
         <translation>Para manter um grupo, você precisa manter o nome da divisão correspondente e usar mesmo(s) separador(es) de caractere(s).</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="516"/>
+        <location filename="../src/interface/splityearform.cpp" line="594"/>
         <source>Read the divide year dialog Help for details.</source>
         <translation>Leia o Ajuda para divisão de ano para ver detalhes.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="532"/>
+        <location filename="../src/interface/splityearform.cpp" line="610"/>
         <source>The following subgroups will no longer be available:</source>
         <translation>Os subgrupos a seguir não estarão mais disponíveis:</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="647"/>
+        <location filename="../src/interface/splityearform.cpp" line="725"/>
         <source>There were removed %1 &apos;group activities in the initial order&apos; items.</source>
         <translation>Foram removidos %1 itens do &apos;grupo de atividades na ordem inicial&apos;.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="680"/>
+        <location filename="../src/interface/splityearform.cpp" line="758"/>
         <source>You might first want to consider if dividing a year is necessary and on what options. Please remember that FET can handle activities with multiple teachers/students sets. If you have say students set 9a, which is split into 2 parts: English (teacher TE) and French (teacher TF), and language activities must be simultaneous, then you might not want to divide according to this category, but add more larger activities, with students set 9a and teachers TE+TF. The only drawback is that each activity can take place only in one room in FET, so you might need to find a way to overcome that.</source>
         <translation>Você pode querer primeiro considerar se dividir um ano é necessário e em que ocasiões. Por favor, lembre-se que FET pode lidar com atividades com vários professores/turmas. Se tiver, por exemplo, turma 9A, dividida em 2 partes: Inglês (docente PI) e Francês (docente PF), e atividades de linguagem deve ser simultâneas, então você não pode querer dividir de acordo com esta categoria, mas adicionar mais atividades maiores, com turma 9a e professores PI+PF. O único inconveniente é que cada atividade pode ocorrer somente em uma sala no FET, então você pode precisar encontrar uma maneira de superar essa limitação.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="688"/>
+        <location filename="../src/interface/splityearform.cpp" line="766"/>
         <source>Please choose a number of categories and in each category the number of divisions. You can choose for instance 3 categories, 5 divisions for the first category: a, b, c, d and e, 2 divisions for the second category: boys and girls, and 3 divisions for the third: English, German and French.</source>
         <translation>Favor escolher um número de categorias e, em cada categoria, o número de divisões. Você pode escolher, por exemplo, 3 categorias, 5 divisões para a primeira categoria: A, B, C, D e E, 2 divisões para a segunda categoria: meninos e meninas, e 3 divisões para a terceira: Inglês, Alemão e Francês.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="702"/>
+        <location filename="../src/interface/splityearform.cpp" line="780"/>
         <source>If your number of subgroups is reasonable, probably you need not worry about empty subgroups (regarding speed of generation). But more tests need to be done. You just need to know that for the moment the maximum total number of subgroups is %1 (which can be changed, but nobody needed larger values)</source>
         <translation>Se o seu número de subgrupos for razoável, provavelmente você não precisará se preocupar com subgrupos vazios (com respeito à rapidez de resolução). Mas mais testes precisam ser feitos. Você só precisa saber que, no momento, o número total máximo de subgrupos é %1 (que pode ser alterado, mas ninguém precisaria de valores maiores)</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="711"/>
+        <location filename="../src/interface/splityearform.cpp" line="789"/>
         <source>If you intend to divide again a year by categories and you want to keep (the majority of) the existing groups in this year, you will need to use the exact same separator character(s) for dividing this year as you used when previously dividing this year, and the same division names (any old division which is no longer entered means a group which will be removed from this year).</source>
         <translation>Se você pretende dividir novamente um ano por categorias e pretende manter (a maioria dos) grupos existentes neste ano, você precisará usar o(s) mesmo(s) caractere(s) separador(es) para dividir este ano como você usou ao dividi-lo anteriormente, e os mesmos nomes de divisão (qualquer divisão antiga, que já não está inscrita significa um grupo que irá ser removido deste ano).</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="717"/>
+        <location filename="../src/interface/splityearform.cpp" line="795"/>
         <source>When dividing again a year, you might get a warning about subgroups which will be removed. If you didn&apos;t explicitly use (these) subgroups in your activities or constraints, probably you can safely ignore this warning. Generally, if you use years&apos; division by categories, it is groups that matter.</source>
         <translation>Ao dividir novamente um ano, você pode receber aviso sobre subgrupos que serão removidos. Se você não usar explicitamente estes subgrupos em suas atividades ou restrições, provavelmente você pode ignorar este aviso. Geralmente, se você usar divisão por categorias desses anos, são os grupos que importam.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="727"/>
+        <location filename="../src/interface/splityearform.cpp" line="805"/>
         <source>If you have many subgroups and you don&apos;t explicitly use them, it is recommended to use the three global settings: hide subgroups in combo boxes, hide subgroups in activity planning, and do not write subgroups timetables on hard disk.</source>
         <translation>Se você tiver muitos subgrupos e não os usar explicitamente, recomenda-se usar as 3 configurações globais: ocultar subgrupos em caixas de combinação, ocultar subgrupos em planejamento de atividades, e não escrever horários de subgrupos no disco rígido.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="734"/>
+        <location filename="../src/interface/splityearform.cpp" line="812"/>
         <source>(Also the conflicts timetable might take long to write, if the file is big.)</source>
         <translation>(Além disso, pode levar um longo tempo para escrever os conflitos de horário, se o arquivo for grande.)</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="736"/>
+        <location filename="../src/interface/splityearform.cpp" line="814"/>
         <source>After that, you can re-enable writing the students timetables on the disk, and re-generate.</source>
         <translation>Depois disso, você pode reabilitar a escrita (&quot;salvar&quot;) em disco dos horários das turmas, e gerá-los novamente.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="739"/>
+        <location filename="../src/interface/splityearform.cpp" line="817"/>
         <source>About using a large number of categories, divisions per category and subgroups: it is highly recommended to keep these to a minimum, especially the number of categories, by using any kind of tricks. Otherwise the timetable might become impossible (taking too much time to generate).</source>
         <translation>Sobre o uso de um grande número de categorias, divisões por categoria e subgrupos: é altamente recomendável mantê-los a um mínimo, especialmente o número de categorias, usando qualquer tipo de truque. Caso contrário, o horário pode se tornar impossível (levando muito tempo para gerar).</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="750"/>
+        <location filename="../src/interface/splityearform.cpp" line="828"/>
         <source>Or you might use the FET feature to import students sets from comma separated values (CSV) files.</source>
         <translation>Ou você pode usar o recurso de FET para importar turmas de arquivos de valores separados por vírgulas (CSV).</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="752"/>
+        <location filename="../src/interface/splityearform.cpp" line="830"/>
         <source>In such cases (individual students as FET subgroups), remember that a smaller number of total subgroups means faster generation time, so you might want to consider a single subgroup for two or more students who have the exact same activities and constraints.</source>
         <translation>Em tais casos (alunos individuais como subgrupos FET), lembre-se que um número menor que o total de subgrupos significa uma geração mais rápida de horário, de modo que você pode querer considerar um único subgrupo de dois ou mais alunos que tenham exatamente as mesmas atividades e restrições.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="784"/>
+        <location filename="../src/interface/splityearform.cpp" line="862"/>
         <source>Do you really want to reset the form values to defaults (empty)?</source>
         <translation>Você realmente deseja redefinir os valores da lista para os padrões (vazio)?</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="114"/>
+        <location filename="../src/interface/splityearform.cpp" line="122"/>
         <source>You have met a minor bug in FET, please report it. FET expected to read from settings %1 divisions in category %2, but read %3. FET will now continue operation, nothing will be lost.</source>
         <translation>Você se deparou com um pequeno bug no FET. Por favor, relate-nos. Esperava-se que FET lê-se das configurações %1 divisões na categoria %2, mas leu %3. FET continuará funcionando e nada será perdido.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="492"/>
+        <location filename="../src/interface/splityearform.cpp" line="570"/>
         <source>WARNING: There are groups and subgroups which will no longer be available and which will be removed, along with the associated activities and constraints. Are you sure? See the list below.</source>
         <translation>AVISO: Há grupos e subgrupos que não estarão mais disponíveis e que serão removidos, bem como as atividades e restrições associadas. Tem certeza? Veja a lista abaixo.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="495"/>
+        <location filename="../src/interface/splityearform.cpp" line="573"/>
         <source>WARNING: There are groups which will no longer be available and which will be removed, along with the associated activities and constraints. Are you sure? See the list below.</source>
         <translation>AVISO: Há grupos que não estarão mais disponíveis e que serão removidos, bem como as atividades e restrições associadas. Tem certeza? Veja a lista abaixo.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="498"/>
+        <location filename="../src/interface/splityearform.cpp" line="576"/>
         <source>WARNING: There are subgroups which will no longer be available and which will be removed, along with the associated activities and constraints. Are you sure? See the list below.</source>
         <translation>AVISO: Há subgrupos que não estarão mais disponíveis e que serão removidos, bem como as atividades e restrições associadas. Tem certeza? Veja a lista abaixo.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="524"/>
+        <location filename="../src/interface/splityearform.cpp" line="602"/>
         <source>The following groups will no longer be available:</source>
         <translation>Os grupos a seguir não estarão mais disponíveis:</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="806"/>
+        <location filename="../src/interface/splityearform.cpp" line="884"/>
         <source>Subgroups: %1</source>
         <comment>%1 is the number of subgroups</comment>
         <translation>Subgrupos: %1</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="339"/>
+        <location filename="../src/interface/splityearform.cpp" line="417"/>
         <source>Please note that the current configuration will lead you to %1 total number of subgroups. The file format supports any number of students sets, but for the timetable generation to be possible the maximum allowed total number of subgroups is %2.</source>
         <translation>Por favor, note que a configuração atual o levará a um total de %1 subgrupos. O formato de arquivo suporta qualquer número de turmas, mas para a geração de horário ser possível o número total máximo permitido de subgrupos é %2.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="290"/>
+        <location filename="../src/interface/splityearform.cpp" line="368"/>
         <source>You want to divide the year by %1 categories. The recommended number of categories is 2, 3 or maximum 4 (to ensure the timetable generation speed and feasibility). Are you sure?</source>
         <translation>Você quer dividir o ano em %1 categorias. O número recomendado de categorias é 2, 3 ou (no máximo) 4 para garantir rapidez e viabilidade da resolução do horário. Você tem certeza?</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="390"/>
+        <location filename="../src/interface/splityearform.cpp" line="468"/>
         <source>Empty names not allowed</source>
         <translation>Não são permitidos nomes em branco</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="417"/>
+        <location filename="../src/interface/splityearform.cpp" line="495"/>
         <source>Cannot add group %1, because a set with the same name exists. Please choose another name or remove the old set</source>
         <translation>Não é possível inserir o grupo %1, pois um conjunto com o mesmo nome existe. Por favor, escolha outro nome ou remova o antigo conjunto</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="437"/>
+        <location filename="../src/interface/splityearform.cpp" line="515"/>
         <source>Cannot add subgroup %1, because a set with the same name exists. Please choose another name or remove the old set</source>
         <translation>Não é possível inserir o subgrupo %1, pois um conjunto com o mesmo nome existe. Por favor, escolha outro nome ou remova o antigo conjunto</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="513"/>
+        <location filename="../src/interface/splityearform.cpp" line="591"/>
         <source>Probably you can safely ignore the warning about the removal of the subgroups.</source>
         <translation>Provavelmente, você pode ignorar o aviso sobre a remoção dos subgrupos.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="539"/>
+        <location filename="../src/interface/splityearform.cpp" line="617"/>
         <source>Yes</source>
         <translation>Sim</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="539"/>
+        <location filename="../src/interface/splityearform.cpp" line="617"/>
         <source>No</source>
         <translation>Não</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="544"/>
+        <location filename="../src/interface/splityearform.cpp" line="622"/>
         <source>Year %1 will be split again. All groups and subgroups of this year which will no longer exist (listed before) and the associated activities and constraints will be removed. Are you absolutely sure?</source>
         <translation>Ano %1 será dividido novamente. Todos os grupos e semigrupos desse ano e todas as restrições e atividades relacionadas serão eliminados. Você está absolutamente certo?</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="641"/>
+        <location filename="../src/interface/splityearform.cpp" line="719"/>
         <source>There were removed %1 activities, %2 time constraints and %3 space constraints.</source>
         <translation>Foram removidas %1 atividades, %2 restrições de tempo e %3 de espaço.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="657"/>
+        <location filename="../src/interface/splityearform.cpp" line="735"/>
         <source>Split of the year complete, please check the groups and subgroups of the year to make sure that everything is OK.</source>
         <translation>A divisão da turma (ano) concluída. Favor verificar grupos e subgrupos para ter certeza que tudo está OK.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="708"/>
+        <location filename="../src/interface/splityearform.cpp" line="786"/>
         <source>Please note that the dialog here will keep the last configuration of the last divided year, it will not remember the values for a specific year you need to modify.</source>
         <translation>Por favor, note que essa janela manterá a última configuração do último ano dividido, ela não lembrará os valores para um determinado ano, é necessário modificar.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="723"/>
+        <location filename="../src/interface/splityearform.cpp" line="801"/>
         <source>Separator character(s) is of your choice (default is space)</source>
         <translation>Você escolhe o(s) caractere(s) de separação (por padrão, é um espaço em branco)</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="730"/>
+        <location filename="../src/interface/splityearform.cpp" line="808"/>
         <source>Note that if you are only working to get a feasible timetable, without the need to obtain the students timetable (XML or HTML) on the disk at all, and if you have many total subgroups, a good idea is to disable writing the subgroups, groups AND years timetables to the hard disk, as these take a long time to compute (not only subgroups, but also groups and years!).</source>
         <translation>Note que se você está apenas testando se o horário é viável, sem necessidade de gravar em disco o horário dos alunos (XML ou HTML), e se você tiver muitos subgrupos no total, uma boa ideia é desativar gravar em disco horários de subgrupos, grupos e anos, uma vez que estes levam um longo tempo para computar (não só os subgrupos, mas também grupos e anos!).</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="743"/>
+        <location filename="../src/interface/splityearform.cpp" line="821"/>
         <source>Maybe a reasonable number of categories could be 2, 3 or maximum 4. The divide year dialog allows much higher values, but these are not at all recommended.</source>
         <translation>Talvez um número razoável de categorias poderia ser 2, 3 ou (no máximo) 4. A janela para dividir ano permite valores bem mais elevados, mas estes não são de todo recomendáveis.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="746"/>
+        <location filename="../src/interface/splityearform.cpp" line="824"/>
         <source>Maybe an alternative to dividing a year into many categories/subgroups would be to enter individual students as FET subgroups and add into each group the corresponding subgroups. But this is hard to do from the FET interface - maybe a solution would be to use an automatic tool to convert your institution data into a file in .fet format.</source>
         <translation>Talvez uma alternativa para dividir um ano em muitas categorias/subgrupos seria colocar alunos individuais como subgrupos FET e incluir em cada grupo os subgrupos correspondentes. Mas isso é difícil de fazer a partir da interface FET - talvez uma solução seria a utilização de uma ferramenta automática para converter os dados de sua instituição em um arquivo no formato .fet.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="758"/>
+        <location filename="../src/interface/splityearform.cpp" line="836"/>
         <source>FET - help on dividing a year</source>
         <translation>Ajuda ao dividir um ano - FET</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="764"/>
+        <location filename="../src/interface/splityearform.cpp" line="842"/>
         <source>OK</source>
         <translation></translation>
     </message>
@@ -50603,7 +50603,7 @@ Por favor, relate o erro. FET abortará a operação atual</translation>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="162"/>
         <source>Statistic files were exported to directory %1 as html files.</source>
-        <translation>Arquivos de estatística exportados na pasta %1 como arquivos HTML.</translation>
+        <translation>Arquivos de estatísticas exportados para pasta %1 no formato HTML.</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="358"/>
@@ -50863,7 +50863,7 @@ Por favor, relate o erro. FET abortará a operação atual</translation>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="115"/>
         <source>Print statistics matrix dialog</source>
-        <translation>Janela para imprimir matriz estatística </translation>
+        <translation>Janela para imprimir matriz estatística</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="125"/>
@@ -51379,7 +51379,7 @@ Base: %4</translation>
         <location filename="../src/interface/studentsstatisticsform_template.ui" line="14"/>
         <source>Students statistics</source>
         <extracomment>Title of dialog to see the students statistics</extracomment>
-        <translation>Estatísticas de Alunos</translation>
+        <translation>Estatística de Alunos</translation>
     </message>
     <message>
         <location filename="../src/interface/studentsstatisticsform_template.ui" line="29"/>
@@ -52118,7 +52118,7 @@ Base: %4</translation>
         <location filename="../src/interface/subjectsstatisticsform_template.ui" line="14"/>
         <source>Subjects statistics</source>
         <extracomment>Title of dialog</extracomment>
-        <translation>Estatísticas de Disciplinas</translation>
+        <translation>Estatística de Disciplinas</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsstatisticsform_template.ui" line="50"/>
@@ -52668,7 +52668,7 @@ Base: %4</translation>
         <location filename="../src/engine/timetableexport.cpp" line="2340"/>
         <source>To do a page-break only after every second timetable, delete &quot;page-break-before: always;&quot; in &quot;table.even_table&quot;.</source>
         <comment>Please keep fields in quotes as they are, untranslated.</comment>
-        <translation>Para que as páginas sejam separadas a cada duas tabelas, delete &quot;page-break-before: always;&quot; em &quot;table.even_table&quot;. </translation>
+        <translation>Para que as páginas sejam separadas a cada duas tabelas, delete &quot;page-break-before: always;&quot; em &quot;table.even_table&quot;.</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2344"/>
