@@ -3,7 +3,7 @@
                              -------------------
     begin                : Aug 21, 2007
     copyright            : (C) 2007 by Lalescu Liviu
-    email                : Please see http://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
+    email                : Please see https://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
  ***************************************************************************/
 
 /***************************************************************************
@@ -52,82 +52,22 @@ bool ConstraintTwoActivitiesOrderedForm::filterOk(const TimeConstraint* ctr) con
 	if(ctr->type!=CONSTRAINT_TWO_ACTIVITIES_ORDERED)
 		return false;
 
-	ConstraintTwoActivitiesOrdered* c=(ConstraintTwoActivitiesOrdered*) ctr;
-	const TeacherStudentSetSubjectActivityTag_FilterWidget * filterWidget = static_cast<TeacherStudentSetSubjectActivityTag_FilterWidget*>(getFilterWidget());
-	QString tn=filterWidget->teacher();
-	QString sbn=filterWidget->subject();
-	QString sbtn=filterWidget->activityTag();
-	QString stn=filterWidget->studentsSet();
+	const ConstraintTwoActivitiesOrdered* c=(const ConstraintTwoActivitiesOrdered*) ctr;
+	QSet<int> activitiesIds;
+	activitiesIds << c->firstActivityId << c->secondActivityId;
 
-	if(tn=="" && sbn=="" && sbtn=="" && stn=="")
-		return true;
-	
-	bool foundTeacher=false, foundStudents=false, foundSubject=false, foundActivityTag=false;
-		
-	for(int i=0; i<2; i++){
-		//bool found=true;
-	
-		int id=-1;
-		
-		if(i==0)
-			id=c->firstActivityId;
-		else if(i==1)
-			id=c->secondActivityId;
-			
-		assert(id>=0);
-
-		Activity* act=NULL;
-		foreach(Activity* a, gt.rules.activitiesList)
-			if(a->id==id)
-				act=a;
-		
-		if(act!=NULL){
-			//teacher
-			if(tn!=""){
-				bool ok2=false;
-				for(QStringList::Iterator it=act->teachersNames.begin(); it!=act->teachersNames.end(); it++)
-					if(*it == tn){
-						ok2=true;
-						break;
-					}
-				if(ok2)
-					foundTeacher=true;
+	QSet<const Activity *> activities;
+	foreach(int id, activitiesIds){
+		foreach(const Activity* a, gt.rules.activitiesList) {
+			if(a->id==id) {
+				activities << a;
+				break;
 			}
-			else
-				foundTeacher=true;
-
-			//subject
-			if(sbn!="" && sbn!=act->subjectName)
-				;
-			else
-				foundSubject=true;
-		
-			//activity tag
-			if(sbtn!="" && !act->activityTagsNames.contains(sbtn))
-				;
-			else
-				foundActivityTag=true;
-		
-			//students
-			if(stn!=""){
-				bool ok2=false;
-				for(QStringList::Iterator it=act->studentsNames.begin(); it!=act->studentsNames.end(); it++)
-					if(*it == stn){
-						ok2=true;
-						break;
-				}
-				if(ok2)
-					foundStudents=true;
-			}
-			else
-				foundStudents=true;
 		}
 	}
-	
-	if(foundTeacher && foundStudents && foundSubject && foundActivityTag)
-		return true;
-	else
-		return false;
+
+	TeacherStudentSetSubjectActivityTag_FilterWidget *filter_widget = static_cast<TeacherStudentSetSubjectActivityTag_FilterWidget*>(getFilterWidget());
+	return filter_widget->filterActivitySet(activities);
 }
 
 QDialog * ConstraintTwoActivitiesOrderedForm::createAddDialog()

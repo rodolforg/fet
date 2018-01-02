@@ -7,7 +7,7 @@ File rules.h
                              -------------------
     begin                : 2003
     copyright            : (C) 2003 by Lalescu Liviu
-    email                : Please see http://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
+    email                : Please see https://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
  ***************************************************************************/
 
 /***************************************************************************
@@ -268,7 +268,7 @@ public:
 	Returns the index of this teacher in the teachersList,
 	or -1 for inexistent teacher.
 	*/
-	int searchTeacher(const QString& teacherName);
+	int searchTeacher(const QString& teacherName) const;
 
 	/**
 	Removes this teacher and all related activities and constraints.
@@ -303,7 +303,7 @@ public:
 	Returns the index of this subject in the subjectsList,
 	or -1 if not found.
 	*/
-	int searchSubject(const QString& subjectName);
+	int searchSubject(const QString& subjectName) const;
 
 	/**
 	Removes this subject and all related activities and constraints.
@@ -339,7 +339,7 @@ public:
 	Returns the index of this activity tag in the activityTagsList,
 	or -1 if not found.
 	*/
-	int searchActivityTag(const QString& activityTagName);
+	int searchActivityTag(const QString& activityTagName) const;
 
 	/**
 	Removes this activity tag. In the list of activities, the activity tag will 
@@ -398,9 +398,9 @@ public:
 	/**
 	Returns -1 if not found or the index of this year in the years list
 	*/
-	int searchYear(const QString& yearName);
+	int searchYear(const QString& yearName) const;
 
-	int searchAugmentedYear(const QString& yearName);
+	int searchAugmentedYear(const QString& yearName) const;
 
 	/**
 	Modifies this students set (name, number of students) and takes care of all related
@@ -434,9 +434,9 @@ public:
 	Returns -1 if not found or the index of this group in the groups list
 	of this year.
 	*/
-	int searchGroup(const QString& yearName, const QString& groupName);
+	int searchGroup(const QString& yearName, const QString& groupName) const;
 
-	int searchAugmentedGroup(const QString& yearName, const QString& groupName);
+	int searchAugmentedGroup(const QString& yearName, const QString& groupName) const;
 
 	/**
 	A function to sort the groups of this year alphabetically
@@ -462,9 +462,9 @@ public:
 	/**
 	Returns -1 if not found or the index of the subgroup in the list of subgroups of this group
 	*/
-	int searchSubgroup(const QString& yearName, const QString& groupName, const QString& subgroupName);
+	int searchSubgroup(const QString& yearName, const QString& groupName, const QString& subgroupName) const;
 
-	int searchAugmentedSubgroup(const QString& yearName, const QString& groupName, const QString& subgroupName);
+	int searchAugmentedSubgroup(const QString& yearName, const QString& groupName, const QString& subgroupName) const;
 
 	/**
 	A function to sort the subgroups of this group alphabetically
@@ -585,7 +585,7 @@ public:
 		int _durations[],
 		bool _active[],
 		bool _computeNTotalStudents,
-		int nTotalStudents);
+		int _nTotalStudents);
 
 	void modifySubactivity(
 		int _id,
@@ -597,7 +597,7 @@ public:
 		int _duration,
 		bool _active,
 		bool _computeNTotalStudents,
-		int nTotalStudents);
+		int _nTotalStudents);
 
 	/**
 	Adds a new room (already allocated).
@@ -613,7 +613,7 @@ public:
 	/**
 	Returns -1 if not found or the index in the rooms list if found.
 	*/
-	int searchRoom(const QString& roomName);
+	int searchRoom(const QString& roomName) const;
 
 	/**
 	Removes the room with this name.

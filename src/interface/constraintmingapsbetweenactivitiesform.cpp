@@ -3,7 +3,7 @@
                              -------------------
     begin                : July 10, 2008
     copyright            : (C) 2008 by Lalescu Liviu
-    email                : Please see http://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
+    email                : Please see https://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
  ***************************************************************************/
 
 /***************************************************************************
@@ -54,73 +54,19 @@ bool ConstraintMinGapsBetweenActivitiesForm::filterOk(const TimeConstraint* ctr)
 	if(ctr->type!=CONSTRAINT_MIN_GAPS_BETWEEN_ACTIVITIES)
 		return false;
 		
-	ConstraintMinGapsBetweenActivities* c=(ConstraintMinGapsBetweenActivities*) ctr;
-	const TeacherStudentSetSubjectActivityTag_FilterWidget * filterWidget = static_cast<TeacherStudentSetSubjectActivityTag_FilterWidget*>(getFilterWidget());
-	QString tn=filterWidget->teacher();
-	QString sbn=filterWidget->subject();
-	QString sbtn=filterWidget->activityTag();
-	QString stn=filterWidget->studentsSet();
-	
-	if(tn=="" && sbn=="" && sbtn=="" && stn=="")
-		return true;
-	
-	bool foundTeacher=false, foundStudents=false, foundSubject=false, foundActivityTag=false;
-		
-	for(int i=0; i<c->n_activities; i++){
-	
-		int id=c->activitiesId[i];
-		Activity* act=NULL;
-		foreach(Activity* a, gt.rules.activitiesList)
-			if(a->id==id)
-				act=a;
-		
-		if(act!=NULL){
-			//teacher
-			if(tn!=""){
-				bool ok2=false;
-				for(QStringList::Iterator it=act->teachersNames.begin(); it!=act->teachersNames.end(); it++)
-					if(*it == tn){
-						ok2=true;
-						break;
-					}
-				if(ok2)
-					foundTeacher=true;
+	const ConstraintMinGapsBetweenActivities* c=(const ConstraintMinGapsBetweenActivities*) ctr;
+	QSet<const Activity *> activities;
+	foreach(int id, c->activitiesId){
+		foreach(const Activity* a, gt.rules.activitiesList) {
+			if(a->id==id) {
+				activities << a;
+				break;
 			}
-			else
-				foundTeacher=true;
-
-			//subject
-			if(sbn!="" && sbn!=act->subjectName)
-				;
-			else
-				foundSubject=true;
-		
-			//activity tag
-			if(sbtn!="" && !act->activityTagsNames.contains(sbtn))
-				;
-			else
-				foundActivityTag=true;
-		
-			//students
-			if(stn!=""){
-				bool ok2=false;
-				for(QStringList::Iterator it=act->studentsNames.begin(); it!=act->studentsNames.end(); it++)
-					if(*it == stn){
-						ok2=true;
-						break;
-				}
-				if(ok2)
-					foundStudents=true;
-			}
-			else
-				foundStudents=true;
 		}
 	}
-	
-	if(foundTeacher && foundStudents && foundSubject && foundActivityTag)
-		return true;
-	else
-		return false;
+
+	TeacherStudentSetSubjectActivityTag_FilterWidget *filter_widget = static_cast<TeacherStudentSetSubjectActivityTag_FilterWidget*>(getFilterWidget());
+	return filter_widget->filterActivitySet(activities);
 }
 
 QDialog * ConstraintMinGapsBetweenActivitiesForm::createAddDialog()

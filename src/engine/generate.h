@@ -7,7 +7,7 @@ File generate.h
                              -------------------
     begin                : 2002
     copyright            : (C) 2002 by Lalescu Liviu
-    email                : Please see http://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
+    email                : Please see https://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
  ***************************************************************************/
 
 /***************************************************************************
@@ -54,8 +54,8 @@ private:
 	inline void removeAi2FromTchTimetable(int ai2);
 	inline void removeAi2FromSbgTimetable(int ai2);
 
-	inline void updateTeachersNHoursGaps(Activity* act, int ai, int d);
-	inline void updateSubgroupsNHoursGaps(Activity* act, int ai, int d);
+	inline void updateTeachersNHoursGaps(const Activity* act, int ai, int d);
+	inline void updateSubgroupsNHoursGaps(const Activity* act, int ai, int d);
 	
 	inline void updateTchNHoursGaps(int tch, int d);
 	inline void updateSbgNHoursGaps(int sbg, int d);

@@ -7,7 +7,7 @@ File solution.cpp
                              -------------------
     begin                : 2002
     copyright            : (C) 2002 by Lalescu Liviu
-    email                : Please see http://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
+    email                : Please see https://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
  ***************************************************************************/
 
 /***************************************************************************
@@ -243,7 +243,7 @@ void Solution::getTeachersTimetable(const Rules &r, Matrix3D<int>& a, Matrix3D<Q
 			for(k=0; k<r.nHoursPerDay; k++)
 				a[i][j][k]=UNALLOCATED_ACTIVITY;
 
-	Activity *act;
+	const Activity *act;
 	for(i=0; i<r.nInternalActivities; i++) 
 		if(this->times[i]!=UNALLOCATED_TIME) {
 			act=&r.internalActivitiesList[i];
@@ -369,7 +369,7 @@ void Solution::getSubgroupsTimetable(const Rules &r, Matrix3D<int>& a) const {
 			for(k=0; k<r.nHoursPerDay; k++)
 				a[i][j][k]=UNALLOCATED_ACTIVITY;
 
-	Activity *act;
+	const Activity *act;
 	for(i=0; i<r.nInternalActivities; i++)
 		if(this->times[i]!=UNALLOCATED_TIME) {
 			act=&r.internalActivitiesList[i];
@@ -411,7 +411,7 @@ int Solution::getRoomsMatrix(
 			int hour=times[i]/r.nDaysPerWeek;
 			int day=times[i]%r.nDaysPerWeek;
 			
-			Activity* act=&r.internalActivitiesList[i];
+			const Activity* act=&r.internalActivitiesList[i];
 			for(int dd=0; dd<act->duration && hour+dd<r.nHoursPerDay; dd++){
 				int tmp=a[room][day][hour+dd];
 				conflicts += tmp==0 ? 0 : 1;

@@ -3,7 +3,7 @@
                              -------------------
     begin                : Feb 11, 2005
     copyright            : (C) 2005 by Lalescu Liviu
-    email                : Please see http://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
+    email                : Please see https://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
  ***************************************************************************/
 
 /***************************************************************************
@@ -50,61 +50,19 @@ bool ConstraintActivityPreferredStartingTimeForm::filterOk(const TimeConstraint*
 	if(ctr->type!=CONSTRAINT_ACTIVITY_PREFERRED_STARTING_TIME)
 		return false;
 		
-	ConstraintActivityPreferredStartingTime* c=(ConstraintActivityPreferredStartingTime*) ctr;
-	const TeacherStudentSetSubjectActivityTag_FilterWidget * filterWidget = static_cast<TeacherStudentSetSubjectActivityTag_FilterWidget*>(getFilterWidget());
-	QString tn=filterWidget->teacher();
-	QString sbn=filterWidget->subject();
-	QString sbtn=filterWidget->activityTag();
-	QString stn=filterWidget->studentsSet();
-		
-	bool found=true;
-	
+	const ConstraintActivityPreferredStartingTime* c=(const ConstraintActivityPreferredStartingTime*) ctr;
 	int id=c->activityId;
-	Activity* act=NULL;
-	foreach(Activity* a, gt.rules.activitiesList)
-		if(a->id==id)
+	const Activity* act=NULL;
+	foreach(const Activity* a, gt.rules.activitiesList) {
+		if(a->id==id) {
 			act=a;
-
-	found=true;		
-		
-	if(act!=NULL){
-		//teacher
-		if(tn!=""){
-			bool ok2=false;
-			for(QStringList::Iterator it=act->teachersNames.begin(); it!=act->teachersNames.end(); it++)
-				if(*it == tn){
-					ok2=true;
-					break;
-				}
-			if(!ok2)
-				found=false;
-		}
-
-		//subject
-		if(sbn!="" && sbn!=act->subjectName)
-			found=false;
-	
-		//activity tag
-		if(sbtn!="" && !act->activityTagsNames.contains(sbtn))
-			found=false;
-	
-		//students
-		if(stn!=""){
-			bool ok2=false;
-			for(QStringList::Iterator it=act->studentsNames.begin(); it!=act->studentsNames.end(); it++)
-				if(*it == stn){
-					ok2=true;
-					break;
-			}
-			if(!ok2)
-				found=false;
+			break;
 		}
 	}
-	
-	if(found)
-		return true;
+	assert(act != NULL);
 
-	return false;
+	const TeacherStudentSetSubjectActivityTag_FilterWidget * filterWidget = static_cast<TeacherStudentSetSubjectActivityTag_FilterWidget*>(getFilterWidget());
+	return filterWidget->filterActivity(act);
 }
 
 QDialog * ConstraintActivityPreferredStartingTimeForm::createAddDialog()

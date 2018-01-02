@@ -3,8 +3,8 @@
 // Description: This file is part of FET
 //
 //
-// Author: Liviu Lalescu <Please see http://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)>
-// Copyright (C) 2003 Liviu Lalescu <http://lalescu.ro/liviu/>
+// Author: Liviu Lalescu <Please see https://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)>
+// Copyright (C) 2003 Liviu Lalescu <https://lalescu.ro/liviu/>
 //
 
 /***************************************************************************
@@ -183,6 +183,7 @@ void BuildingsForm::moveBuildingUp()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 
+	visibleBuildingsList.swap(i, i-1);
 	buildingsListWidget->setCurrentRow(i-1);
 }
 
@@ -206,6 +207,7 @@ void BuildingsForm::moveBuildingDown()
 	gt.rules.internalStructureComputed=false;
 	gt.rules.setModified(true);
 
+	visibleBuildingsList.swap(i, i+1);
 	buildingsListWidget->setCurrentRow(i+1);
 }
 

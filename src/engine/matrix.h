@@ -3,8 +3,8 @@
 // Description: This file is part of FET
 //
 //
-// Author: Liviu Lalescu <Please see http://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)>
-// Copyright (C) 2009 Liviu Lalescu <http://lalescu.ro/liviu/>
+// Author: Liviu Lalescu <Please see https://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)>
+// Copyright (C) 2009 Liviu Lalescu <https://lalescu.ro/liviu/>
 //
 /***************************************************************************
  *                                                                         *
@@ -23,7 +23,7 @@
 //		Hints from C++ FAQ LITE by Marshall Cline -
 //			- Section [13] - Operator overloading, article [13.12] - advice about the () operator for matrices.
 //
-//		You may find more information on the FET documentation web page, http://lalescu.ro/liviu/fet/doc/
+//		You may find more information on the FET documentation web page, https://lalescu.ro/liviu/fet/doc/
 
 #ifndef MATRIX_H
 #define MATRIX_H
@@ -60,7 +60,25 @@ public:
 	 */
 	void resize(int _d1, int _d2, int _d3);
 	T** operator[](int i);
+	const T * const * operator[](int i) const;
 	T& operator()(int i, int j, int k);
+	const T& operator()(int i, int j, int k) const;
+
+	/**
+	 * @brief getD1 the size of the first dimension
+	 * @return the current size of first (main) dimension of 3-D matrix
+	 */
+	int getD1() const;
+	/**
+	 * @brief getD2 the size of the second dimension
+	 * @return the current size of second dimension of 3-D matrix
+	 */
+	int getD2() const;
+	/**
+	 * @brief getD3 the size of the third dimension
+	 * @return the current size of third dimension of 3-D matrix
+	 */
+	int getD3() const;
 };
 
 /**
@@ -91,7 +109,20 @@ public:
 	 */
 	void resize(int _d1, int _d2);
 	T* operator[](int i);
+	const T* operator[](int i) const;
 	T& operator()(int i, int j);
+	const T& operator()(int i, int j) const;
+
+	/**
+	 * @brief getD1 the size of the first dimension
+	 * @return the current size of first (main) dimension of 3-D matrix
+	 */
+	int getD1() const;
+	/**
+	 * @brief getD2 the size of the second dimension
+	 * @return the current size of second dimension of 3-D matrix
+	 */
+	int getD2() const;
 };
 
 /**
@@ -118,7 +149,8 @@ public:
 	 * @param _d1 the new dimension size
 	 */
 	void resize(int _d1);
-	T& operator[](int i) const;
+	T& operator[](int i);
+	const T& operator[](int i) const;
 	/**
 	 * @brief getD1 the current matrix dimension
 	 * @return the current 1-D matrix size
@@ -185,9 +217,34 @@ template <typename T> inline T** Matrix3D<T>::operator[](int i)
 	return a[i];
 }
 
+template <typename T> inline const T * const * Matrix3D<T>::operator[](int i) const
+{
+	return a[i];
+}
+
 template <typename T> inline T& Matrix3D<T>::operator()(int i, int j, int k)
 {
 	return content[(i*d2+j)*d3+k];
+}
+
+template <typename T> inline const T& Matrix3D<T>::operator()(int i, int j, int k) const
+{
+	return content[(i*d2+j)*d3+k];
+}
+
+template <typename T> int Matrix3D<T>::getD1() const
+{
+	return d1;
+}
+
+template <typename T> int Matrix3D<T>::getD2() const
+{
+	return d2;
+}
+
+template <typename T> int Matrix3D<T>::getD3() const
+{
+	return d3;
 }
 
 
@@ -242,16 +299,26 @@ template <typename T> inline T* Matrix2D<T>::operator[](int i)
 	return a[i];
 }
 
+template <typename T> inline const T& Matrix2D<T>::operator()(int i, int j) const
+{
+	return content[i*d2+j];
+}
+
 template <typename T> inline T& Matrix2D<T>::operator()(int i, int j)
 {
 	return content[i*d2+j];
 }
 
-
-template <typename T> int Matrix1D<T>::getD1() const
+template <typename T> int Matrix2D<T>::getD1() const
 {
-return d1;
+	return d1;
 }
+
+template <typename T> int Matrix2D<T>::getD2() const
+{
+	return d2;
+}
+
 
 template <typename T> Matrix1D<T>::Matrix1D()
 	: d1(-1), a(NULL)
@@ -289,9 +356,19 @@ template <typename T> void Matrix1D<T>::resize(int _d1)
 	}
 }
 
-template <typename T> inline T& Matrix1D<T>::operator[](int i) const
+template <typename T> inline const T& Matrix1D<T>::operator[](int i) const
 {
 	return a[i];
+}
+
+template <typename T> inline T& Matrix1D<T>::operator[](int i)
+{
+	return a[i];
+}
+
+template <typename T> int Matrix1D<T>::getD1() const
+{
+	return d1;
 }
 
 #endif

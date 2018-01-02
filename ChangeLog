@@ -1964,7 +1964,7 @@ Versions 5.31.0 - 5.31.9
 - Version 5.31.9
 	- Bug fix in the German translation. Reported by math, corrected by Bob Hairgrove.
 ---------------------------------------------------------------------------------
-Versions 5.32.0 - 5.32.v
+Versions 5.32.0 - 5.32.3
 - Version 5.32.0
 	- Implemented the teachers' and students' timetable view time horizontal from the FET interface, for easier locking/unlocking/generating a partially locked timetable.
 	Suggested by Vangelis Karafillidis, who did a great job with his useful suggestions and reports. Also Volker Dirr had some useful suggestions for this new feature.
@@ -1976,3 +1976,41 @@ Versions 5.32.0 - 5.32.v
 	- In the timetable view time horizontal dialogs the activities which are locked in space are shown with an italic font (suggested by Vangelis Karafillidis).
 - Version 5.32.2
 	- Crash bug fixed (rare, if adding an activity without students sets which had a specified number of students greater than 0). Reported by Zsolt Udvari.
+- Version 5.32.3
+	- Code cleanup (by Liviu Lalescu and Volker Dirr).
+	- Updated the Brazilian Portuguese translation, by Alexandre R. Soares.
+	- Updated the Arabic translation, by Benahmed Abdelkrim.
+---------------------------------------------------------------------------------
+Versions 5.33.0 - 5.33.3
+- Version 5.33.0
+	- Very rare but important generation bug fixed. In some cases, for feasible timetables, the generation might cycle incorrectly. This is an old bug,
+	affecting files with constraints students/teachers max hours daily and max gaps per day/week, but nobody observed it until now. Reported by Volker Dirr.
+	A big 'Thank you!' to Volker, for being very supportive in hunting down this bug.
+	- Added the number of working hours for the teachers and the students in the HTML timetables statistics (suggested by Fernando A F Lordão, implemented by
+	Volker Dirr).
+	- Added a new Algerian example file, by Benahmed Abdelkrim.
+	- Updated the Arabic translation, by Benahmed Abdelkrim.
+- Version 5.33.1
+	- Bug fix: when moving rooms/buildings up/down in their corresponding dialogs, the description on the right was not updated correspondingly.
+	Reported by chernous.
+- Version 5.33.2
+	- Updated to Qt 5.9.2.
+	- Added a new complete Spanish translation, by Emiliano Llano Díaz.
+	- The homepage of FET was updated to use SSL (https protocol instead of http).
+	- Code cleanup.
+- Version 5.33.3
+	- Updated the Spanish translation, by Emiliano Llano Díaz.
+	- Code cleanup.
+---------------------------------------------------------------------------------
+Versions 5.34.0 - 5.34.v
+- Version 5.34.0
+	- Improved the activity planning dialog, by Volker Dirr. Now the user can swap the teachers of one or more activities.
+	- Added the possibility of exporting the data and the timetable as CSV (comma separated values) files from the command line version of FET
+	(suggested by Matthias Söllner and m).
+- Version 5.34.1
+	- Updated to Qt 5.10.0.
+	- Corrected a compilation warning that appeared in FET when using the new Qt 5.10.0 (class QSignalMapper is now deprecated).
+- Version 5.34.2
+	- Corrected the style/appearance of precompiled FET for Windows 7 (added a missing DLL).
+- Version 5.34.3
+	- Minor corrections in the Romanian translation, by Liviu Lalescu.

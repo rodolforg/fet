@@ -7,7 +7,7 @@ File spaceconstraint.cpp
                              -------------------
     begin                : 2002
     copyright            : (C) 2002 by Lalescu Liviu
-    email                : Please see http://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
+    email                : Please see https://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
  ***************************************************************************/
 
 /***************************************************************************
@@ -1146,7 +1146,7 @@ bool ConstraintStudentsSetHomeRoom::computeInternalStructure(QWidget* parent, co
 	//which correspond to the subject of the constraint.
 	
 	//QStringList::iterator it;
-	Activity* act;
+	const Activity* act;
 
 	this->_activities.clear();
 	
@@ -1422,7 +1422,7 @@ bool ConstraintStudentsSetHomeRooms::computeInternalStructure(QWidget* parent, c
 	qSort(_activities);*/
 
 	//QStringList::iterator it;
-	Activity* act;
+	const Activity* act;
 
 	for(int ac=0; ac<r.nInternalActivities; ac++){
 		act=&r.internalActivitiesList[ac];
@@ -1690,7 +1690,7 @@ bool ConstraintTeacherHomeRoom::computeInternalStructure(QWidget* parent, const 
 	//which correspond to the subject of the constraint.
 	
 	//QStringList::iterator it;
-	Activity* act;
+	const Activity* act;
 
 	this->_activities.clear();
 
@@ -1964,7 +1964,7 @@ bool ConstraintTeacherHomeRooms::computeInternalStructure(QWidget* parent, const
 	qSort(_activities);*/
 
 	//QStringList::iterator it;
-	Activity* act;
+	const Activity* act;
 
 	for(int ac=0; ac<r.nInternalActivities; ac++){
 		act=&r.internalActivitiesList[ac];

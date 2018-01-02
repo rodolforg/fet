@@ -7,7 +7,7 @@ File fet.cpp - this is where the program FET starts
                              -------------------
     begin                : 2002
     copyright            : (C) 2002 by Lalescu Liviu
-    email                : Please see http://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
+    email                : Please see https://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
  ***************************************************************************/
 
 /***************************************************************************
@@ -129,6 +129,10 @@ QString IMPORT_DIRECTORY;
 QApplication* pqapplication=NULL;
 #endif
 
+#ifdef FET_COMMAND_LINE
+#include "export.h"
+#endif
+
 //for command line version, if the user stops using a signal
 #ifdef FET_COMMAND_LINE
 
@@ -171,7 +175,9 @@ static void usage(QTextStream* out, const QString& error)
 		"[--printactivitytags=a] [--printnotavailable=u] [--printbreak=b] [--dividetimeaxisbydays=v] [--duplicateverticalheaders=e] "
 		"[--printsimultaneousactivities=w] [--randomseedx=rx --randomseedy=ry] [--warnifusingnotperfectconstraints=s] "
 		"[--warnifusingstudentsminhoursdailywithallowemptydays=p] [--warnifusinggroupactivitiesininitialorder=g] [--warnsubgroupswiththesameactivities=ssa]\n"
-		"[--printdetailedtimetables=pdt] [--printdetailedteachersfreeperiodstimetables=pdtfp] [--verbose=r]\",\n"
+		"[--printdetailedtimetables=pdt] [--printdetailedteachersfreeperiodstimetables=pdtfp] "
+		"[--exportcsv=ecsv] [--overwritecsv=ocsv] [--firstlineisheadingcsv=flhcsv] [--quotescsv=qcsv] [--fieldseparatorcsv=fscsv] "
+		"[--verbose=r]\",\n"
 		"where:\nx is the input file, for instance \"data.fet\"\n"
 		"d is the path to results directory, without trailing slash or backslash (default is current working path). "
 		"Make sure you have write permissions there.\n"
@@ -203,6 +209,13 @@ static void usage(QTextStream* out, const QString& error)
 		"the same activities (default true).\n"
 		"pdt is either true or false, represents whether you want to show the detailed (true) or less detailed (false) years and groups timetables (default true).\n"
 		"pdtfp is either true or false, represents whether you want to show the detailed (true) or less detailed (false) teachers free periods timetables (default true).\n"
+		"ecsv is either true or false, represents whether you want to export the CSV file and timetables (default false).\n"
+		"ocsv is either true or false, represents whether you want to overwrite old CSV files, if they exist (default false).\n"
+		"flhcsv is either true or false, represents whether you want the heading of the CSV files to be header (true) or data (false). The default value is true.\n"
+		"qcsv is one value from the set [doublequotes|singlequotes|none] (write a single value from these three exactly as it is written here). The default value is "
+		"doublequotes.\n"
+		"fscsv is one value from the set [comma|semicolon|verticalbar] (write a single value from these three exactly as it is written here). The default value is "
+		"comma.\n"
 		"r is either true or false, represents whether you want additional generation messages and other messages to be shown on the command line (default false).\n"
 		"Alternatively, you can run \"fet-cl --version [--outputdir=d]\" to get the current FET version. "
 		"where:\nd is the path to results directory, without trailing slash or backslash (default is current working path). "
@@ -210,7 +223,8 @@ static void usage(QTextStream* out, const QString& error)
 		"(If you specify the --version argument, FET just prints version number on the command line prompt and in the output directory and exits.)\n"
 		"\n"
 		"You can ask the FET command line process to stop the timetable generation, by sending it the SIGTERM signal. "
-		"FET will then write the current timetable and the highest stage timetable and exit."
+		"FET will then write the current timetable and the highest stage timetable and exit. "
+		"(If you send the FET command line the SIGKILL signal it will stop immediately, without writing the timetable.)"
 	);
 	
 	cout<<qPrintable(s)<<endl;
@@ -825,6 +839,9 @@ int main(int argc, char **argv)
 		
 		SHOW_WARNING_FOR_GROUP_ACTIVITIES_IN_INITIAL_ORDER=true;
 		
+		bool EXPORT_CSV=false;
+		Export csv_export(gt);
+
 		bool showVersion=false;
 		
 		for(int i=1; i<_args.count(); i++){
@@ -969,6 +986,31 @@ int main(int argc, char **argv)
 				if(s.right(5)=="false")
 					WRITE_TIMETABLES_ACTIVITIES=false;
 			}
+			//Export CSV
+			else if(s.left(12)=="--exportcsv="){
+				if(s.right(4)=="true")
+					EXPORT_CSV=true;
+			}
+			else if(s.left(15)=="--overwritecsv="){
+				if(s.right(4)=="true")
+					csv_export.setOverwrite(Export::OVERWRITE_ALL);
+			}
+			else if(s.left(24)=="--firstlineisheadingcsv="){
+				if(s.right(5)=="false")
+					csv_export.setHeader(false);
+			}
+			else if(s.left(12)=="--quotescsv="){
+				if(s.right(12)=="singlequotes")
+					csv_export.setTextQuote("'");
+				else if(s.right(4)=="none")
+					csv_export.setTextQuote("");
+			}
+			else if(s.left(20)=="--fieldseparatorcsv="){
+				if(s.right(9)=="semicolon")
+					csv_export.setFieldSeparator(";");
+				else if(s.right(11)=="verticalbar")
+					csv_export.setFieldSeparator("|");
+			}
 			///
 			else
 				unrecognizedOptions.append(s);
@@ -979,10 +1021,18 @@ int main(int argc, char **argv)
 		QString initialDir=outputDirectory;
 		if(initialDir!="")
 			initialDir.append(FILE_SEP);
+			
+		QString csvOutputDirectory=outputDirectory;
+		csvOutputDirectory.append(FILE_SEP + "csv");
+		//cout<<"csvOutputDirectory="<<qPrintable(csvOutputDirectory)<<endl;
 		
 		if(outputDirectory!="")
 			outputDirectory.append(FILE_SEP);
 		outputDirectory.append("timetables");
+
+		/*if(csvOutputDirectory!="")
+			csvOutputDirectory.append(FILE_SEP);
+		csvOutputDirectory.append("csv");*/
 
 		//////////
 		if(INPUT_FILENAME_XML!=""){
@@ -990,6 +1040,11 @@ int main(int argc, char **argv)
 			outputDirectory.append(INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1));
 			if(outputDirectory.right(4)==".fet")
 				outputDirectory=outputDirectory.left(outputDirectory.length()-4);
+
+			/*csvOutputDirectory.append(FILE_SEP);
+			csvOutputDirectory.append(INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1));
+			if(csvOutputDirectory.right(4)==".fet")
+				csvOutputDirectory=csvOutputDirectory.left(csvOutputDirectory.length()-4);*/
 		}
 		//////////
 		
@@ -1025,12 +1080,12 @@ int main(int argc, char **argv)
 			out<<"FET version "<<qPrintable(FET_VERSION)<<endl;
 			out<<"Free timetabling software, licensed under the GNU Affero General Public License version 3 or later"<<endl;
 			out<<"Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr"<<endl;
-			out<<"Homepage: http://lalescu.ro/liviu/fet/"<<endl;
+			out<<"Homepage: https://lalescu.ro/liviu/fet/"<<endl;
 			//out<<" (Using Qt version "<<qPrintable(qv)<<")"<<endl;
 			cout<<"FET version "<<qPrintable(FET_VERSION)<<endl;
 			cout<<"Free timetabling software, licensed under the GNU Affero General Public License version 3 or later"<<endl;
 			cout<<"Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr"<<endl;
-			cout<<"Homepage: http://lalescu.ro/liviu/fet/"<<endl;
+			cout<<"Homepage: https://lalescu.ro/liviu/fet/"<<endl;
 			//cout<<" (Using Qt version "<<qPrintable(qv)<<")"<<endl;
 
 			if(unrecognizedOptions.count()>0){
@@ -1285,6 +1340,13 @@ int main(int argc, char **argv)
 					dir.mkpath(toh);
 
 			TimetableExport::writeSimulationResultsCommandLine(NULL, toh);
+
+			if (EXPORT_CSV) {
+				QString oldDir=csv_export.getDirectoryCSV();
+				csv_export.setDirectoryCSV(csvOutputDirectory);
+				csv_export.exportCSV(&gen.getHighestStageSolution(), &gen.getSolution());
+				csv_export.setDirectoryCSV(oldDir);
+			}
 		}
 		//2012-01-24 - suggestion and code by Ian Holden (ian@ianholden.com), to write best and current timetable on time exceeded
 		//previously, FET saved best and current timetable only on receiving SIGTERM
@@ -1401,6 +1463,13 @@ int main(int argc, char **argv)
 					dir.mkpath(toh);
 
 			TimetableExport::writeSimulationResultsCommandLine(NULL, toh);
+
+			if (EXPORT_CSV) {
+				QString oldDir=csv_export.getDirectoryCSV();
+				csv_export.setDirectoryCSV(csvOutputDirectory);
+				csv_export.exportCSV(&gen.getHighestStageSolution(), &gen.getSolution());
+				csv_export.setDirectoryCSV(oldDir);
+			}
 		}
 		else{
 			cout<<"Simulation successful"<<endl;
@@ -1417,6 +1486,13 @@ int main(int argc, char **argv)
 			CachedSchedule::update(c);
 
 			TimetableExport::writeSimulationResultsCommandLine(NULL, outputDirectory);
+			
+			if (EXPORT_CSV) {
+				QString oldDir=csv_export.getDirectoryCSV();
+				csv_export.setDirectoryCSV(csvOutputDirectory);
+				csv_export.exportCSV(&c);
+				csv_export.setDirectoryCSV(oldDir);
+			}
 		}
 	
 		logFile.close();

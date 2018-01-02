@@ -3,7 +3,7 @@
                              -------------------
     begin                : Wed Apr 23 2003
     copyright            : (C) 2003 by Lalescu Liviu
-    email                : Please see http://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
+    email                : Please see https://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
  ***************************************************************************/
 
 /***************************************************************************
@@ -30,6 +30,8 @@ class ActivitiesForm : public QDialog, Ui::ActivitiesForm_template{
 	
 private:
 	QSet<QString> showedStudents;
+	static const int noneItemIndex = 1;
+	enum {SORT_BY_ID, SORT_BY_SUBJECT};
 	
 public:
 	ActivitiesList visibleActivitiesList;
@@ -37,7 +39,7 @@ public:
 	ActivitiesForm(QWidget* parent, const QString& teacherName, const QString& studentsSetName, const QString& subjectName, const QString& activityTagName);
 	~ActivitiesForm();
 
-	bool filterOk(Activity* act);
+	bool filterOk(const Activity* act);
 
 public slots:
 	void addActivity();

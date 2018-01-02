@@ -7,7 +7,7 @@ File generate.cpp
                              -------------------
     begin                : 2002
     copyright            : (C) 2002 by Lalescu Liviu
-    email                : Please see http://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
+    email                : Please see https://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
  ***************************************************************************/
 
 /***************************************************************************
@@ -100,7 +100,7 @@ inline void Generate::removeAiFromNewTimetable(int ai, const Activity* act, int 
 
 inline void Generate::removeAi2FromTchTimetable(int ai2)
 {
-	Activity* act2=&gt.rules.internalActivitiesList[ai2];
+	const Activity* act2=&gt.rules.internalActivitiesList[ai2];
 	int d2=c.times[ai2]%gt.rules.nDaysPerWeek;
 	int h2=c.times[ai2]/gt.rules.nDaysPerWeek;
 	
@@ -113,7 +113,7 @@ inline void Generate::removeAi2FromTchTimetable(int ai2)
 
 inline void Generate::removeAi2FromSbgTimetable(int ai2)
 {
-	Activity* act2=&gt.rules.internalActivitiesList[ai2];
+	const Activity* act2=&gt.rules.internalActivitiesList[ai2];
 	int d2=c.times[ai2]%gt.rules.nDaysPerWeek;
 	int h2=c.times[ai2]/gt.rules.nDaysPerWeek;
 	
@@ -209,7 +209,7 @@ inline void Generate::updateSbgNHoursGaps(int sbg, int d)
 		sbgDayNFirstGaps[d]=0;
 }
 
-inline void Generate::updateTeachersNHoursGaps(Activity* act, int ai, int d)
+inline void Generate::updateTeachersNHoursGaps(const Activity* act, int ai, int d)
 {
 	Q_UNUSED(act);
 
@@ -236,7 +236,7 @@ inline void Generate::updateTeachersNHoursGaps(Activity* act, int ai, int d)
 	}
 }
 
-inline void Generate::updateSubgroupsNHoursGaps(Activity* act, int ai, int d)
+inline void Generate::updateSubgroupsNHoursGaps(const Activity* act, int ai, int d)
 {
 	Q_UNUSED(act);
 
@@ -2724,7 +2724,7 @@ if(threaded){
 			if(c.rooms[i]!=UNSPECIFIED_ROOM){
 				int rm=c.rooms[i];
 			
-				Activity* act=&gt.rules.internalActivitiesList[i];
+				const Activity* act=&gt.rules.internalActivitiesList[i];
 				int hour=c.times[i]/gt.rules.nDaysPerWeek;
 				int day=c.times[i]%gt.rules.nDaysPerWeek;
 				for(int dd=0; dd<act->duration && hour+dd<gt.rules.nHoursPerDay; dd++){
@@ -2751,7 +2751,7 @@ if(threaded){
 					continue;
 			}
 			assert(c.times[i]!=UNALLOCATED_TIME);
-			Activity* act=&gt.rules.internalActivitiesList[i];
+			const Activity* act=&gt.rules.internalActivitiesList[i];
 			int hour=c.times[i]/gt.rules.nDaysPerWeek;
 			int day=c.times[i]%gt.rules.nDaysPerWeek;
 			foreach(int sb, act->iSubgroupsList){
@@ -2778,7 +2778,7 @@ if(threaded){
 					continue;
 			}
 			assert(c.times[i]!=UNALLOCATED_TIME);
-			Activity* act=&gt.rules.internalActivitiesList[i];
+			const Activity* act=&gt.rules.internalActivitiesList[i];
 			int hour=c.times[i]/gt.rules.nDaysPerWeek;
 			int day=c.times[i]%gt.rules.nDaysPerWeek;
 			foreach(int sb, act->iSubgroupsList){
@@ -2830,7 +2830,7 @@ if(threaded){
 					continue;
 			}
 			assert(c.times[i]!=UNALLOCATED_TIME);
-			Activity* act=&gt.rules.internalActivitiesList[i];
+			const Activity* act=&gt.rules.internalActivitiesList[i];
 			int hour=c.times[i]/gt.rules.nDaysPerWeek;
 			int day=c.times[i]%gt.rules.nDaysPerWeek;
 			foreach(int tc, act->iTeachersList){
@@ -2857,7 +2857,7 @@ if(threaded){
 					continue;
 			}
 			assert(c.times[i]!=UNALLOCATED_TIME);
-			Activity* act=&gt.rules.internalActivitiesList[i];
+			const Activity* act=&gt.rules.internalActivitiesList[i];
 			int hour=c.times[i]/gt.rules.nDaysPerWeek;
 			int day=c.times[i]%gt.rules.nDaysPerWeek;
 			foreach(int tc, act->iTeachersList){
@@ -2909,7 +2909,7 @@ if(threaded){
 				}
 				assert(c.times[i]!=UNALLOCATED_TIME);
 				
-				Activity* act=&gt.rules.internalActivitiesList[i];
+				const Activity* act=&gt.rules.internalActivitiesList[i];
 			
 				for(int t=c.times[i]; t<c.times[i]+act->duration*gt.rules.nDaysPerWeek; t+=gt.rules.nDaysPerWeek){
 					assert(!activitiesAtTime[t].contains(i));
@@ -3151,7 +3151,7 @@ if(threaded){
 
 void Generate::moveActivity(int ai, int fromslot, int toslot, int fromroom, int toroom)
 {
-	Activity* act=&gt.rules.internalActivitiesList[ai];
+	const Activity* act=&gt.rules.internalActivitiesList[ai];
 
 	//cout<<"here: id of act=="<<act->id<<", fromslot=="<<fromslot<<", toslot=="<<toslot<<endl;
 
@@ -3418,7 +3418,7 @@ bool Generate::randomSwap(int ai, int level){
 		
 	ncallsrandomswap++;
 	
-	Activity* act=&gt.rules.internalActivitiesList[ai];
+	const Activity* act=&gt.rules.internalActivitiesList[ai];
 	
 	bool updateSubgroups=(mustComputeTimetableSubgroups[ai].count()>0);
 	bool updateTeachers=(mustComputeTimetableTeachers[ai].count()>0);
@@ -6374,12 +6374,15 @@ impossiblestudentsmaxgapsperday:
 					getSbgTimetable(sbg, conflActivities[newtime]);
 					sbgGetNHoursGaps(sbg);
 					
+					//OLD COMMENT BELOW: (now things seem theoretically and practically OK)
 					//theoretically, it should be canTakeFromBegin = true all time and ctfAnywhere = true if max gaps per week is not 0.
 					//but practically, I tried these changes and it was 30% slower for a modified german sample (with max gaps per day=1,
 					//12 hours per day, removed subacts. pref. times, max hours daily 6 for students).
 					bool canTakeFromBegin=(subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]!=0); //-1 or >0
 					bool canTakeFromEnd=true;
-					bool canTakeFromAnywhere=(subgroupsMaxGapsPerWeekMaxGaps[sbg]==-1);
+					bool canTakeFromAnywhere=(subgroupsMaxGapsPerWeekMaxGaps[sbg]!=0 && subgroupsMaxGapsPerDayMaxGaps[sbg]!=0); //-1 or >0
+					bool canTakeFromBeginOrEndAnyDay=(subgroupsMaxGapsPerWeekMaxGaps[sbg]>=0 ||
+					 subgroupsMaxGapsPerDayMaxGaps[sbg]>=0 || subgroupsEarlyMaxBeginningsAtSecondHourMaxBeginnings[sbg]>=0);
 		
 					for(;;){
 						//////////////////////////new
@@ -6515,22 +6518,32 @@ impossiblestudentsmaxgapsperday:
 								assert(conflActivities[newtime].count()==nConflActivities[newtime]);
 								
 								if(!ka){
-									if(level==0){
-										/*cout<<"subgroup=="<<qPrintable(gt.rules.internalSubgroupsList[sbg]->name)<<endl;
-										cout<<"d=="<<d<<endl;
-										cout<<"H="<<H<<endl;
-										cout<<"Timetable:"<<endl;
-										for(int h2=0; h2<gt.rules.nHoursPerDay; h2++){
-											for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++)
-												cout<<"\t"<<sbgTimetable(d2,h2)<<"\t";
-											cout<<endl;
-										}*/
+									canTakeFromAnywhere=false;
+									bool kaa=false;
+									if(canTakeFromBeginOrEndAnyDay && sbgDayNHours[d]<=limitHoursDaily)
+										//Fix on 2017-08-26, to solve Volker Dirr's bug report
+										kaa=subgroupRemoveAnActivityFromBeginOrEnd(sbg, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+									assert(conflActivities[newtime].count()==nConflActivities[newtime]);
 									
-										//this should not be displayed
-										//cout<<"WARNING - file "<<__FILE__<<" line "<<__LINE__<<endl;
+									if(!kaa){
+										canTakeFromBeginOrEndAnyDay=false; //useless
+										if(level==0){
+											/*cout<<"subgroup=="<<qPrintable(gt.rules.internalSubgroupsList[sbg]->name)<<endl;
+											cout<<"d=="<<d<<endl;
+											cout<<"H="<<H<<endl;
+											cout<<"Timetable:"<<endl;
+											for(int h2=0; h2<gt.rules.nHoursPerDay; h2++){
+												for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++)
+												cout<<"\t"<<sbgTimetable(d2,h2)<<"\t";
+												cout<<endl;
+											}*/
+										
+											//this should not be displayed
+											//cout<<"WARNING - file "<<__FILE__<<" line "<<__LINE__<<endl;
+										}
+										okstudentsmaxhoursdaily=false;
+										goto impossiblestudentsmaxhoursdaily;
 									}
-									okstudentsmaxhoursdaily=false;
-									goto impossiblestudentsmaxhoursdaily;
 								}
 							}
 						}
@@ -6772,7 +6785,7 @@ impossiblestudentsmaxhourscontinuously:
 						if(newSubgroupsTimetable(sbg,d,h2)>=0){
 							int ai2=newSubgroupsTimetable(sbg,d,h2);
 							assert(ai2>=0 && ai2<gt.rules.nInternalActivities);
-							Activity* act=&gt.rules.internalActivitiesList[ai2];
+							const Activity* act=&gt.rules.internalActivitiesList[ai2];
 							if(act->iActivityTagsSet.contains(activityTag)){
 								nold++;
 								nnew++;
@@ -6783,7 +6796,7 @@ impossiblestudentsmaxhourscontinuously:
 						if(oldSubgroupsTimetable(sbg,d,h2)>=0){
 							int ai2=oldSubgroupsTimetable(sbg,d,h2);
 							assert(ai2>=0 && ai2<gt.rules.nInternalActivities);
-							Activity* act=&gt.rules.internalActivitiesList[ai2];
+							const Activity* act=&gt.rules.internalActivitiesList[ai2];
 							if(act->iActivityTagsSet.contains(activityTag))
 								nold++;
 						}
@@ -6792,7 +6805,7 @@ impossiblestudentsmaxhourscontinuously:
 						if(newSubgroupsTimetable(sbg,d,h2)>=0){
 							int ai2=newSubgroupsTimetable(sbg,d,h2);
 							assert(ai2>=0 && ai2<gt.rules.nInternalActivities);
-							Activity* act=&gt.rules.internalActivitiesList[ai2];
+							const Activity* act=&gt.rules.internalActivitiesList[ai2];
 							if(act->iActivityTagsSet.contains(activityTag))
 								nnew++;
 						}
@@ -6801,7 +6814,7 @@ impossiblestudentsmaxhourscontinuously:
 						if(newSubgroupsTimetable(sbg,d,h2)>=0){
 							int ai2=newSubgroupsTimetable(sbg,d,h2);
 							assert(ai2>=0 && ai2<gt.rules.nInternalActivities);
-							Activity* act=&gt.rules.internalActivitiesList[ai2];
+							const Activity* act=&gt.rules.internalActivitiesList[ai2];
 							if(act->iActivityTagsSet.contains(activityTag)){
 								nold++;
 								nnew++;
@@ -6846,7 +6859,7 @@ impossiblestudentsmaxhourscontinuously:
 								if(sbgTimetable(d,h2)>=0){
 									int ai2=sbgTimetable(d,h2);
 									assert(ai2>=0 && ai2<gt.rules.nInternalActivities);
-									Activity* act=&gt.rules.internalActivitiesList[ai2];
+									const Activity* act=&gt.rules.internalActivitiesList[ai2];
 									if(act->iActivityTagsSet.contains(activityTag))
 										ncrt++;
 								}
@@ -8471,10 +8484,14 @@ impossibleteachersmaxgapsperday:
 						okteachersmaxhoursdaily=false;
 						goto impossibleteachersmaxhoursdaily;
 					}
-	
+					
 					getTchTimetable(tch, conflActivities[newtime]);
 					tchGetNHoursGaps(tch);
 		
+					bool canTakeFromBeginOrEnd=true;
+					bool canTakeFromAnywhere=(teachersMaxGapsPerWeekMaxGaps[tch]!=0 && teachersMaxGapsPerDayMaxGaps[tch]!=0); //-1 or >0
+					bool canTakeFromBeginOrEndAnyDay=(teachersMaxGapsPerWeekMaxGaps[tch]>=0 || teachersMaxGapsPerDayMaxGaps[tch]>=0);
+	
 					for(;;){
 						//basically, see that the gaps are enough
 						bool ok;
@@ -8531,35 +8548,50 @@ impossibleteachersmaxgapsperday:
 						}
 						
 						int ai2=-1;
-
-						bool k=teacherRemoveAnActivityFromBeginOrEndCertainDay(tch, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+						
+						bool k=false;
+						if(canTakeFromBeginOrEnd)
+							k=teacherRemoveAnActivityFromBeginOrEndCertainDay(tch, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
 						assert(conflActivities[newtime].count()==nConflActivities[newtime]);
 						if(!k){
-							bool ka=teacherRemoveAnActivityFromAnywhereCertainDay(tch, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+							canTakeFromBeginOrEnd=false;
+							bool ka=false;
+							if(canTakeFromAnywhere)
+								ka=teacherRemoveAnActivityFromAnywhereCertainDay(tch, d, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
 							assert(conflActivities[newtime].count()==nConflActivities[newtime]);
 							
 							if(!ka){
-								if(level==0){
-									/*cout<<"d=="<<d<<", h=="<<h<<", teacher=="<<qPrintable(gt.rules.internalTeachersList[tch]->name);
-									cout<<", ai=="<<ai<<endl;
-									for(int h2=0; h2<gt.rules.nHoursPerDay; h2++){
-										for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++)
-											cout<<"\t"<<tchTimetable(d2,h2)<<"\t";
-										cout<<endl;
-									}
-									
-									cout<<endl;
-									for(int h2=0; h2<gt.rules.nHoursPerDay; h2++){
-										for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++)
-											cout<<"\t"<<newTeachersTimetable(tch,d2,h2)<<"\t";
-										cout<<endl;
-									}*/
+								canTakeFromAnywhere=false;
+								bool kaa=false;
+								if(canTakeFromBeginOrEndAnyDay && tchDayNHours[d]<=limitHoursDaily)
+									//Fix on 2017-08-26, to solve Volker Dirr's bug report
+									kaa=teacherRemoveAnActivityFromBeginOrEnd(tch, level, ai, conflActivities[newtime], nConflActivities[newtime], ai2);
+								assert(conflActivities[newtime].count()==nConflActivities[newtime]);
+								if(!kaa){
+									canTakeFromBeginOrEndAnyDay=false;
 								
-									//Liviu: inactivated from version 5.12.4 (7 Feb. 2010), because it may take too long for some files
-									//cout<<"WARNING - mb - file "<<__FILE__<<" line "<<__LINE__<<endl;
+									if(level==0){
+										/*cout<<"d=="<<d<<", h=="<<h<<", teacher=="<<qPrintable(gt.rules.internalTeachersList[tch]->name);
+										cout<<", ai=="<<ai<<endl;
+										for(int h2=0; h2<gt.rules.nHoursPerDay; h2++){
+											for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++)
+												cout<<"\t"<<tchTimetable(d2,h2)<<"\t";
+											cout<<endl;
+										}
+										
+										cout<<endl;
+										for(int h2=0; h2<gt.rules.nHoursPerDay; h2++){
+											for(int d2=0; d2<gt.rules.nDaysPerWeek; d2++)
+												cout<<"\t"<<newTeachersTimetable(tch,d2,h2)<<"\t";
+											cout<<endl;
+										}*/
+									
+										//Liviu: inactivated from version 5.12.4 (7 Feb. 2010), because it may take too long for some files
+										//cout<<"WARNING - mb - file "<<__FILE__<<" line "<<__LINE__<<endl;
+									}
+									okteachersmaxhoursdaily=false;
+									goto impossibleteachersmaxhoursdaily;
 								}
-								okteachersmaxhoursdaily=false;
-								goto impossibleteachersmaxhoursdaily;
 							}
 						}
 		
@@ -8805,7 +8837,7 @@ impossibleteachersmaxhourscontinuously:
 						if(newTeachersTimetable(tch,d,h2)>=0){
 							int ai2=newTeachersTimetable(tch,d,h2);
 							assert(ai2>=0 && ai2<gt.rules.nInternalActivities);
-							Activity* act=&gt.rules.internalActivitiesList[ai2];
+							const Activity* act=&gt.rules.internalActivitiesList[ai2];
 							if(act->iActivityTagsSet.contains(activityTag)){
 								nold++;
 								nnew++;
@@ -8816,7 +8848,7 @@ impossibleteachersmaxhourscontinuously:
 						if(oldTeachersTimetable(tch,d,h2)>=0){
 							int ai2=oldTeachersTimetable(tch,d,h2);
 							assert(ai2>=0 && ai2<gt.rules.nInternalActivities);
-							Activity* act=&gt.rules.internalActivitiesList[ai2];
+							const Activity* act=&gt.rules.internalActivitiesList[ai2];
 							if(act->iActivityTagsSet.contains(activityTag))
 								nold++;
 						}
@@ -8825,7 +8857,7 @@ impossibleteachersmaxhourscontinuously:
 						if(newTeachersTimetable(tch,d,h2)>=0){
 							int ai2=newTeachersTimetable(tch,d,h2);
 							assert(ai2>=0 && ai2<gt.rules.nInternalActivities);
-							Activity* act=&gt.rules.internalActivitiesList[ai2];
+							const Activity* act=&gt.rules.internalActivitiesList[ai2];
 							if(act->iActivityTagsSet.contains(activityTag))
 								nnew++;
 						}
@@ -8834,7 +8866,7 @@ impossibleteachersmaxhourscontinuously:
 						if(newTeachersTimetable(tch,d,h2)>=0){
 							int ai2=newTeachersTimetable(tch,d,h2);
 							assert(ai2>=0 && ai2<gt.rules.nInternalActivities);
-							Activity* act=&gt.rules.internalActivitiesList[ai2];
+							const Activity* act=&gt.rules.internalActivitiesList[ai2];
 							if(act->iActivityTagsSet.contains(activityTag)){
 								nold++;
 								nnew++;
@@ -8879,7 +8911,7 @@ impossibleteachersmaxhourscontinuously:
 								if(tchTimetable(d,h2)>=0){
 									int ai2=tchTimetable(d,h2);
 									assert(ai2>=0 && ai2<gt.rules.nInternalActivities);
-									Activity* act=&gt.rules.internalActivitiesList[ai2];
+									const Activity* act=&gt.rules.internalActivitiesList[ai2];
 									if(act->iActivityTagsSet.contains(activityTag))
 										ncrt++;
 								}

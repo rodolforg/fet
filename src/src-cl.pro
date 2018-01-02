@@ -18,6 +18,7 @@ SOURCES += \
 	engine/lockunlock.cpp \
 	engine/randomknuth.cpp \
 	engine/messageboxes.cpp \
+	engine/export.cpp \
 	engine/xmllog.cpp \
 	engine/constraints/constraintpre.cpp \
 	engine/constraints/mindaysbetweenactivities.cpp \
@@ -25,9 +26,13 @@ SOURCES += \
 	engine/constraints/mingapsbetweenactivities.cpp \
 	engine/constraints/teachersmincontinuousgapininterval.cpp \
 	engine/constraints/studentsmincontinuousgapininterval.cpp \
+	engine/constraints/paradoxmindaysvsconsecutive.cpp \
+	engine/constraints/paradoxmindaysvstwogrouped.cpp \
+	engine/constraints/paradoxmindaysvsthreegrouped.cpp \
+	engine/constraints/paradoxmindaysvssameday.cpp \
 	\
 	interface/fet.cpp \
-	interface/longtextmessagebox.cpp
+	interface/longtextmessagebox.cpp \
 
 HEADERS += \
 	engine/timetableexport.h \
@@ -50,6 +55,7 @@ HEADERS += \
 	engine/matrix.h \
 	engine/randomknuth.h \
 	engine/messageboxes.h \
+	engine/export.h \
 	engine/xmllog.h \
 	engine/constraints/constraintpre.h \
 	engine/constraints/mindaysbetweenactivities.h \
@@ -57,13 +63,18 @@ HEADERS += \
 	engine/constraints/mingapsbetweenactivities.h \
 	engine/constraints/teachersmincontinuousgapininterval.h \
 	engine/constraints/studentsmincontinuousgapininterval.h \
+	engine/constraints/paradoxmindaysvsconsecutive.h \
+	engine/constraints/paradoxmindaysvstwogrouped.h \
+	engine/constraints/paradoxmindaysvsthreegrouped.h \
 	\
 	interface/fet.h \
-	interface/longtextmessagebox.h
+	interface/longtextmessagebox.h \
 
 TEMPLATE = app
 
-DEFINES += FET_COMMAND_LINE
+DEFINES += \
+	FET_COMMAND_LINE \
+	QT_DEPRECATED_WARNINGS
 
 CONFIG += release warn_on c++11
 win32 {

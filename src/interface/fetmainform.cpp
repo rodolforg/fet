@@ -3,8 +3,8 @@
 // Description: This file is part of FET
 //
 //
-// Author: Lalescu Liviu <Please see http://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)>
-// Copyright (C) 2003 Liviu Lalescu <http://lalescu.ro/liviu/>
+// Author: Lalescu Liviu <Please see https://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)>
+// Copyright (C) 2003 Liviu Lalescu <https://lalescu.ro/liviu/>
 //
 /***************************************************************************
  *                                                                         *
@@ -253,6 +253,7 @@ using namespace std;
 
 #include <QNetworkAccessManager>
 #include <QNetworkReply>
+#include <QSslSocket>
 
 #include <QRegExp>
 
@@ -567,14 +568,22 @@ FetMainForm::FetMainForm()
 	settingsDuplicateVerticalNamesAction->setChecked(TIMETABLE_HTML_REPEAT_NAMES);
 	
 	if(checkForUpdates){
-		networkManager=new QNetworkAccessManager(this);
-		connect(networkManager, SIGNAL(finished(QNetworkReply*)), this, SLOT(replyFinished(QNetworkReply*)));
-		QUrl url("http://lalescu.ro/liviu/fet/crtversion/crtversion.txt");
-		if(VERBOSE){
-			cout<<"New version checking host: "<<qPrintable(url.host())<<endl;
-			cout<<"New version checking path: "<<qPrintable(url.path())<<endl;
+		//After setGeometry(rect), so that we know the position of the main form, used for the parent 'this' of the QMessageBox below.
+		if(!QSslSocket::supportsSsl()){
+			QMessageBox::warning(this, tr("FET warning"), tr("SSL is not available (this might be caused by missing SSL libraries)."
+			 " Because of this, FET cannot check for updates on startup (it cannot get the file %1).")
+			 .arg("https://lalescu.ro/liviu/fet/crtversion/crtversion.txt"));
 		}
-		networkManager->get(QNetworkRequest(url));
+		else{
+			networkManager=new QNetworkAccessManager(this);
+			connect(networkManager, SIGNAL(finished(QNetworkReply*)), this, SLOT(replyFinished(QNetworkReply*)));
+			QUrl url("https://lalescu.ro/liviu/fet/crtversion/crtversion.txt");
+			if(VERBOSE){
+				cout<<"New version checking host: "<<qPrintable(url.host())<<endl;
+				cout<<"New version checking path: "<<qPrintable(url.path())<<endl;
+			}
+			networkManager->get(QNetworkRequest(url));
+		}
 	}
 	
 	settingsPrintActivityTagsAction->setCheckable(true);
@@ -659,10 +668,8 @@ FetMainForm::FetMainForm()
 
 	for (int i = 0; i < ConstraintDialogHelper::numConstraintActions; ++i) {
 		QAction *action = findChild<QAction*>("data"+ConstraintDialogHelper::constraintActions[i].name+"Action");
-		connect(action, SIGNAL(triggered()), &signalMapper, SLOT(map()));
-		signalMapper.setMapping(action, i);
+		connect(action, &QAction::triggered, [this, i](){openConstraintDialog(i);});
 	}
-	connect(&signalMapper, SIGNAL(mapped(int)), this, SLOT(openConstraintDialog(int)));
 }
 
 void FetMainForm::setEnabledIcon(QAction* action, bool enabled)
@@ -880,10 +887,10 @@ void FetMainForm::replyFinished(QNetworkReply* networkReply)
 		QString s=QString("");
 		s+=tr("Could not search for possible updates on the internet - error message is: %1.").arg(networkReply->errorString());
 		s+=QString("\n\n");
-		s+=tr("Searching for file %1.").arg("http://lalescu.ro/liviu/fet/crtversion/crtversion.txt");
+		s+=tr("Searching for file %1.").arg("https://lalescu.ro/liviu/fet/crtversion/crtversion.txt");
 		s+=QString("\n\n");
 		s+=tr("Possible actions: check your network connection, try again later, try to visit FET homepage: %1, or"
-		 " try to search for the new FET page on the internet (maybe it has changed).").arg("http://lalescu.ro/liviu/fet/");
+		 " try to search for the new FET page on the internet (maybe it has changed).").arg("https://lalescu.ro/liviu/fet/");
 
 		QMessageBox::warning(this, tr("FET warning"), s);
 	}
@@ -895,12 +902,12 @@ void FetMainForm::replyFinished(QNetworkReply* networkReply)
 		int t=regExp.indexIn(QString(networkReply->readAll()));
 		if(t!=0){
 			QString s=QString("");
-			s+=tr("The file %1 from the FET homepage, indicating the current FET version, is incorrect.").arg("http://lalescu.ro/liviu/fet/crtversion/crtversion.txt");
+			s+=tr("The file %1 from the FET homepage, indicating the current FET version, is incorrect.").arg("https://lalescu.ro/liviu/fet/crtversion/crtversion.txt");
 			s+=QString("\n\n");
 			s+=tr("Maybe the FET homepage has some temporary problems, so try again later."
 			 " Or maybe the current structure on FET homepage was changed. You may visit FET homepage: %1, and get latest version or,"
 			 " if it does not work, try to search for the new FET page on the internet (maybe it has changed).")
-			  .arg("http://lalescu.ro/liviu/fet/");
+			  .arg("https://lalescu.ro/liviu/fet/");
 
 			QMessageBox::warning(this, tr("FET warning"), s);
 		}
@@ -915,7 +922,7 @@ void FetMainForm::replyFinished(QNetworkReply* networkReply)
 				cout<<qPrintable(internetVersion)<<"'"<<endl;
 			}
 			if(internetVersion!=FET_VERSION){
-				QString s=tr("Another version: %1, is available on the FET homepage: %2", "%1 is new version, %2 is FET homepage").arg(internetVersion).arg("http://lalescu.ro/liviu/fet/");
+				QString s=tr("Another version: %1, is available on the FET homepage: %2", "%1 is new version, %2 is FET homepage").arg(internetVersion).arg("https://lalescu.ro/liviu/fet/");
 				s+=QString("\n\n");
 				s+=tr("You have to manually download and install.")+QString(" ")+tr("You may need to hit Refresh in your web browser.")+QString("\n\n")+tr("Would you like to open the FET homepage now?");
 				if(!additionalComments.isEmpty()){
@@ -926,10 +933,10 @@ void FetMainForm::replyFinished(QNetworkReply* networkReply)
 				QMessageBox::StandardButton button=QMessageBox::information(this, tr("FET information"), s, QMessageBox::Yes|QMessageBox::No);
 				
 				if(button==QMessageBox::Yes){
-					bool tds=QDesktopServices::openUrl(QUrl("http://lalescu.ro/liviu/fet/"));
+					bool tds=QDesktopServices::openUrl(QUrl("https://lalescu.ro/liviu/fet/"));
 					if(!tds){
 						QMessageBox::warning(this, tr("FET warning"), tr("Could not start the default internet browser (trying to open the link %1)."
-							" Maybe you can try to manually start your browser and open this link.").arg("http://lalescu.ro/liviu/fet/"));
+							" Maybe you can try to manually start your browser and open this link.").arg("https://lalescu.ro/liviu/fet/"));
 					}
 				}
 			}
@@ -2269,31 +2276,31 @@ void FetMainForm::on_helpAboutAction_triggered()
 
 void FetMainForm::on_helpHomepageAction_triggered()
 {
-	bool tds=QDesktopServices::openUrl(QUrl("http://lalescu.ro/liviu/fet/"));
+	bool tds=QDesktopServices::openUrl(QUrl("https://lalescu.ro/liviu/fet/"));
 
 	if(!tds){
 		QMessageBox::warning(this, tr("FET warning"), tr("Could not start the default internet browser (trying to open the link %1)."
-		" Maybe you can try to manually start your browser and open this link.").arg("http://lalescu.ro/liviu/fet/"));
+		" Maybe you can try to manually start your browser and open this link.").arg("https://lalescu.ro/liviu/fet/"));
 	}
 }
 
 void FetMainForm::on_helpContentsAction_triggered()
 {
-	bool tds=QDesktopServices::openUrl(QUrl("http://lalescu.ro/liviu/fet/doc/"));
+	bool tds=QDesktopServices::openUrl(QUrl("https://lalescu.ro/liviu/fet/doc/"));
 
 	if(!tds){
 		QMessageBox::warning(this, tr("FET warning"), tr("Could not start the default internet browser (trying to open the link %1)."
-		" Maybe you can try to manually start your browser and open this link.").arg("http://lalescu.ro/liviu/fet/doc/"));
+		" Maybe you can try to manually start your browser and open this link.").arg("https://lalescu.ro/liviu/fet/doc/"));
 	}
 }
 
 void FetMainForm::on_helpForumAction_triggered()
 {
-	bool tds=QDesktopServices::openUrl(QUrl("http://lalescu.ro/liviu/fet/forum/"));
+	bool tds=QDesktopServices::openUrl(QUrl("https://lalescu.ro/liviu/fet/forum/"));
 
 	if(!tds){
 		QMessageBox::warning(this, tr("FET warning"), tr("Could not start the default internet browser (trying to open the link %1)."
-		" Maybe you can try to manually start your browser and open this link.").arg("http://lalescu.ro/liviu/fet/forum/"));
+		" Maybe you can try to manually start your browser and open this link.").arg("https://lalescu.ro/liviu/fet/forum/"));
 	}
 }
 
@@ -2302,11 +2309,11 @@ void FetMainForm::on_helpAddressesAction_triggered()
 	QString s="";
 	s+=tr("In case the Help/Online menus do not function, please write down these addresses and open them in an internet browser:");
 	s+="\n\n";
-	s+=tr("FET homepage: %1", "%1 is FET homepage, begins with http://...").arg("http://lalescu.ro/liviu/fet/");
+	s+=tr("FET homepage: %1", "%1 is FET homepage, begins with https://...").arg("https://lalescu.ro/liviu/fet/");
 	s+="\n";
-	s+=tr("Documentation (online help contents): %1", "%1 is web page of FET Doc(umentation), which is the contents of the online help, it begins with http://...").arg("http://lalescu.ro/liviu/fet/doc/");
+	s+=tr("Documentation (online help contents): %1", "%1 is web page of FET Doc(umentation), which is the contents of the online help, it begins with https://...").arg("https://lalescu.ro/liviu/fet/doc/");
 	s+="\n";
-	s+=tr("Forum: %1", "%1 is web page of FET forum, begins with http://...").arg("http://lalescu.ro/liviu/fet/forum/");
+	s+=tr("Forum: %1", "%1 is web page of FET forum, begins with https://...").arg("https://lalescu.ro/liviu/fet/forum/");
 	s+="\n\n";
 	s+=tr("Additionally, you may find on the FET homepage other contact information.");
 	s+="\n\n";
@@ -2944,7 +2951,7 @@ void FetMainForm::on_settingsRestoreDefaultsAction_triggered()
 #endif
 	
 	checkForUpdatesAction->setChecked(false);
-	checkForUpdates=0;
+	checkForUpdates=false;
 	
 	tabWidget->setCurrentIndex(0);
 	

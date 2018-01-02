@@ -4,7 +4,7 @@ This documentation file written by Chafik Graiguer on 25 March 2010. Tricks to u
 - Chafik Graiguer
 - Volker Dirr
 - Liviu Lalescu
-in a public discussion on the FET forum ( http://lalescu.ro/liviu/fet/forum/ )
+in a public discussion on the FET forum ( https://lalescu.ro/liviu/fet/forum/ )
 
 This document was updated on 17 October 2011, to add new information about students max 7 hours per real day (in paragraph 5Bis).
 

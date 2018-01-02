@@ -3,7 +3,7 @@
                              -------------------
     begin                : Wed Apr 23 2003
     copyright            : (C) 2003 by Lalescu Liviu
-    email                : Please see http://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
+    email                : Please see https://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
  ***************************************************************************/
 
 /***************************************************************************
@@ -46,6 +46,8 @@
 #include <QObject>
 #include <QMetaObject>
 
+#include "editcommentsform.h"
+
 ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, const QString& studentsSetName, const QString& subjectName, const QString& activityTagName): QDialog(parent)
 {
 	setupUi(this);
@@ -69,6 +71,8 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 	connect(recursiveCheckBox, SIGNAL(toggled(bool)), this, SLOT(studentsFilterChanged()));
 	connect(helpPushButton, SIGNAL(clicked()), this, SLOT(help()));
 	connect(commentsPushButton, SIGNAL(clicked()), this, SLOT(activityComments()));
+	connect(sortComboBox, SIGNAL(activated(QString)), this, SLOT(filterChanged()));
+	connect(hideInactiveCheckBox, SIGNAL(toggled(bool)), this, SLOT(filterChanged()));
 
 	centerWidgetOnScreen(this);
 	restoreFETDialogGeometry(this);
@@ -86,10 +90,14 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 	QSize tmp4=activityTagsComboBox->minimumSizeHint();
 	Q_UNUSED(tmp4);
 
+	sortComboBox->addItem(tr("Sort by Id"), QVariant(SORT_BY_ID));
+	sortComboBox->addItem(tr("Sort by Subject"), QVariant(SORT_BY_SUBJECT));
+
 	teachersComboBox->addItem("");
+	teachersComboBox->addItem(tr(" [[ no teachers ]]"));
 	int cit=0;
 	for(int i=0; i<gt.rules.teachersList.size(); i++){
-		Teacher* tch=gt.rules.teachersList[i];
+		const Teacher* tch=gt.rules.teachersList[i];
 		teachersComboBox->addItem(tch->name);
 		if(tch->name==teacherName)
 			cit=i+1;
@@ -99,7 +107,7 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 	subjectsComboBox->addItem("");
 	int cisu=0;
 	for(int i=0; i<gt.rules.subjectsList.size(); i++){
-		Subject* sb=gt.rules.subjectsList[i];
+		const Subject* sb=gt.rules.subjectsList[i];
 		subjectsComboBox->addItem(sb->name);
 		if(sb->name==subjectName)
 			cisu=i+1;
@@ -107,9 +115,10 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 	subjectsComboBox->setCurrentIndex(cisu);
 
 	activityTagsComboBox->addItem("");
+	activityTagsComboBox->addItem(" [[ no tags ]]");
 	int ciat=0;
 	for(int i=0; i<gt.rules.activityTagsList.size(); i++){
-		ActivityTag* st=gt.rules.activityTagsList[i];
+		const ActivityTag* st=gt.rules.activityTagsList[i];
 		activityTagsComboBox->addItem(st->name);
 		if(st->name==activityTagName)
 			ciat=i+1;
@@ -117,22 +126,23 @@ ActivitiesForm::ActivitiesForm(QWidget* parent, const QString& teacherName, cons
 	activityTagsComboBox->setCurrentIndex(ciat);
 
 	studentsComboBox->addItem("");
+	studentsComboBox->addItem(" [[ no students ]]");
 	int cist=0;
 	int currentID=0;
 	for(int i=0; i<gt.rules.yearsList.size(); i++){
-		StudentsYear* sty=gt.rules.yearsList[i];
+		const StudentsYear* sty=gt.rules.yearsList[i];
 		studentsComboBox->addItem(sty->name);
 		currentID++;
 		if(sty->name==studentsSetName)
 			cist=currentID;
 		for(int j=0; j<sty->groupsList.size(); j++){
-			StudentsGroup* stg=sty->groupsList[j];
+			const StudentsGroup* stg=sty->groupsList[j];
 			studentsComboBox->addItem(stg->name);
 			currentID++;
 			if(stg->name==studentsSetName)
 				cist=currentID;
 			if(SHOW_SUBGROUPS_IN_COMBO_BOXES) for(int k=0; k<stg->subgroupsList.size(); k++){
-				StudentsSubgroup* sts=stg->subgroupsList[k];
+				const StudentsSubgroup* sts=stg->subgroupsList[k];
 				studentsComboBox->addItem(sts->name);
 				currentID++;
 				if(sts->name==studentsSetName)
@@ -171,7 +181,7 @@ ActivitiesForm::~ActivitiesForm()
 	settings.setValue(this->metaObject()->className()+QString("/splitter-state"), splitter->saveState());
 }
 
-bool ActivitiesForm::filterOk(Activity* act)
+bool ActivitiesForm::filterOk(const Activity* act)
 {
 	QString tn=teachersComboBox->currentText();
 	QString stn=studentsComboBox->currentText();
@@ -181,14 +191,19 @@ bool ActivitiesForm::filterOk(Activity* act)
 
 	//teacher
 	if(tn!=""){
-		bool ok2=false;
-		for(QStringList::Iterator it=act->teachersNames.begin(); it!=act->teachersNames.end(); it++)
-			if(*it == tn){
-				ok2=true;
-				break;
-			}
-		if(!ok2)
-			ok=false;
+		if (teachersComboBox->currentIndex() == noneItemIndex) {
+			if (act->teachersNames.count() > 0)
+				ok = false;
+		} else {
+			bool ok2=false;
+			for(QStringList::ConstIterator it=act->teachersNames.begin(); it!=act->teachersNames.end(); it++)
+				if(*it == tn){
+					ok2=true;
+					break;
+				}
+			if(!ok2)
+				ok=false;
+		}
 	}
 
 	//subject
@@ -196,13 +211,22 @@ bool ActivitiesForm::filterOk(Activity* act)
 		ok=false;
 		
 	//activity tag
-	if(sbtn!="" && !act->activityTagsNames.contains(sbtn))
-		ok=false;
+	if (sbtn!="") {
+		if (activityTagsComboBox->currentIndex() == noneItemIndex) {
+			if (act->activityTagsNames.count() > 0)
+				ok = false;
+		}
+		else if(!act->activityTagsNames.contains(sbtn))
+			ok=false;
+	}
 		
 	//students
-	if(stn!=""){
+	if (studentsComboBox->currentIndex() == noneItemIndex) {
+		if (act->studentsNames.count() > 0)
+			ok = false;
+	} else if(stn!=""){
 		bool ok2=false;
-		for(QStringList::Iterator it=act->studentsNames.begin(); it!=act->studentsNames.end(); it++)
+		for(QStringList::ConstIterator it=act->studentsNames.begin(); it!=act->studentsNames.end(); it++)
 			//if(*it == stn){
 			if(showedStudents.contains(*it)){
 				ok2=true;
@@ -231,27 +255,27 @@ void ActivitiesForm::studentsFilterChanged()
 	else{
 		if(studentsComboBox->currentText()=="")
 			showedStudents.insert("");
-		else{
+		else if (studentsComboBox->currentIndex() != noneItemIndex){
 			//down
-			StudentsSet* set=gt.rules.searchStudentsSet(studentsComboBox->currentText());
+			const StudentsSet* set=gt.rules.searchStudentsSet(studentsComboBox->currentText());
 			assert(set!=NULL);
 			if(set->type==STUDENTS_YEAR){
-				StudentsYear* year=(StudentsYear*)set;
+				const StudentsYear* year=(const StudentsYear*)set;
 				showedStudents.insert(year->name);
-				foreach(StudentsGroup* group, year->groupsList){
+				foreach(const StudentsGroup* group, year->groupsList){
 					showedStudents.insert(group->name);
-					foreach(StudentsSubgroup* subgroup, group->subgroupsList)
+					foreach(const StudentsSubgroup* subgroup, group->subgroupsList)
 						showedStudents.insert(subgroup->name);
 				}
 			}
 			else if(set->type==STUDENTS_GROUP){
-				StudentsGroup* group=(StudentsGroup*) set;
+				const StudentsGroup* group=(const StudentsGroup*) set;
 				showedStudents.insert(group->name);
-				foreach(StudentsSubgroup* subgroup, group->subgroupsList)
+				foreach(const StudentsSubgroup* subgroup, group->subgroupsList)
 					showedStudents.insert(subgroup->name);
 			}
 			else if(set->type==STUDENTS_SUBGROUP){
-				StudentsSubgroup* subgroup=(StudentsSubgroup*) set;
+				const StudentsSubgroup* subgroup=(const StudentsSubgroup*) set;
 				showedStudents.insert(subgroup->name);
 			}
 			else
@@ -259,12 +283,12 @@ void ActivitiesForm::studentsFilterChanged()
 				
 			//up
 			QString crt=studentsComboBox->currentText();
-			foreach(StudentsYear* year, gt.rules.yearsList){
-				foreach(StudentsGroup* group, year->groupsList){
+			foreach(const StudentsYear* year, gt.rules.yearsList){
+				foreach(const StudentsGroup* group, year->groupsList){
 					if(group->name==crt){
 						showedStudents.insert(year->name);
 					}
-					foreach(StudentsSubgroup* subgroup, group->subgroupsList){
+					foreach(const StudentsSubgroup* subgroup, group->subgroupsList){
 						if(subgroup->name==crt){
 							showedStudents.insert(year->name);
 							showedStudents.insert(group->name);
@@ -278,26 +302,33 @@ void ActivitiesForm::studentsFilterChanged()
 	filterChanged();
 }
 
+bool compareSubjectOrder(const Activity *act1, const Activity *act2)
+{
+	if (act1->subjectName == act2->subjectName)
+		return act1->id < act2->id;
+	return act1->subjectName.localeAwareCompare(act2->subjectName) < 0;
+}
+
+bool compareIdOrder(const Activity *act1, const Activity *act2)
+{
+	return act1->id < act2->id;
+}
+
 void ActivitiesForm::filterChanged()
 {
 	int nacts=0, nsubacts=0, nh=0;
 	int ninact=0, ninacth=0;
 
-	QString s;
 	activitiesListWidget->clear();
 	visibleActivitiesList.clear();
 	
-	int k=0;
-	for(int i=0; i<gt.rules.activitiesList.size(); i++){
-		Activity* act=gt.rules.activitiesList[i];
+	const bool hideInactiveActivities = hideInactiveCheckBox->isChecked();
+
+	foreach(Activity* act, gt.rules.activitiesList) {
+		if (hideInactiveActivities && !act->active)
+			continue;
 		if(this->filterOk(act)){
-			s=act->getDescription();
 			visibleActivitiesList.append(act);
-			activitiesListWidget->addItem(s);
-			k++;
-			
-			if(USE_GUI_COLORS && !act->active)
-				activitiesListWidget->item(k-1)->setBackground(activitiesListWidget->palette().alternateBase());
 			
 			if(act->id==act->activityGroupId || act->activityGroupId==0)
 				nacts++;
@@ -310,6 +341,19 @@ void ActivitiesForm::filterChanged()
 				ninacth+=act->duration;
 			}
 		}
+	}
+
+	if (sortComboBox->currentData().toInt() == SORT_BY_ID)
+		std::sort(visibleActivitiesList.begin(), visibleActivitiesList.end(), compareIdOrder);
+	else if (sortComboBox->currentIndex() == SORT_BY_SUBJECT)
+		std::sort(visibleActivitiesList.begin(), visibleActivitiesList.end(), compareSubjectOrder);
+
+	for (int k=0; k < visibleActivitiesList.count(); k++) {
+		const Activity *act = visibleActivitiesList[k];
+		activitiesListWidget->addItem(act->getDescription());
+
+		if(USE_GUI_COLORS && !act->active)
+			activitiesListWidget->item(k)->setBackground(activitiesListWidget->palette().alternateBase());
 	}
 	
 	assert(nsubacts-ninact>=0);
@@ -363,7 +407,7 @@ void ActivitiesForm::modifyActivity()
 	int valv=activitiesListWidget->verticalScrollBar()->value();
 	int valh=activitiesListWidget->horizontalScrollBar()->value();
 
-	Activity* act=visibleActivitiesList[ind];
+	const Activity* act=visibleActivitiesList[ind];
 	assert(act!=NULL);
 	
 	QStringList teachers=act->teachersNames;
@@ -387,7 +431,7 @@ void ActivitiesForm::modifyActivity()
 	if(act->isSplit()){
 		int nSplit=0;
 		for(int i=0; i<gt.rules.activitiesList.size(); i++){
-			Activity* act2=gt.rules.activitiesList[i];
+			const Activity* act2=gt.rules.activitiesList[i];
 			if(act2->activityGroupId==act->activityGroupId){
 				nSplit++;
 				
@@ -475,7 +519,7 @@ void ActivitiesForm::removeActivity()
 	int valv=activitiesListWidget->verticalScrollBar()->value();
 	int valh=activitiesListWidget->horizontalScrollBar()->value();
 
-	Activity* act=visibleActivitiesList[ind];
+	const Activity* act=visibleActivitiesList[ind];
 	assert(act!=NULL);
 
 	QString s;
@@ -521,7 +565,7 @@ void ActivitiesForm::activityChanged()
 	}
 
 	QString s;
-	Activity* act=visibleActivitiesList[index];
+	const Activity* act=visibleActivitiesList[index];
 
 	assert(act!=NULL);
 	s=act->getDetailedDescriptionWithConstraints(gt.rules);
@@ -580,50 +624,19 @@ void ActivitiesForm::activityComments()
 	Activity* act=visibleActivitiesList[ind];
 	assert(act!=NULL);
 
-	QDialog getCommentsDialog(this);
-	
-	getCommentsDialog.setWindowTitle(tr("Activity comments"));
-	
-	QPushButton* okPB=new QPushButton(tr("OK"));
-	okPB->setDefault(true);
-	QPushButton* cancelPB=new QPushButton(tr("Cancel"));
-	
-	connect(okPB, SIGNAL(clicked()), &getCommentsDialog, SLOT(accept()));
-	connect(cancelPB, SIGNAL(clicked()), &getCommentsDialog, SLOT(reject()));
+	EditCommentsForm dialog("ActivityCommentsDialog", this, tr("Activity comments"));
+	dialog.setComments(act->comments);
 
-	QHBoxLayout* hl=new QHBoxLayout();
-	hl->addStretch();
-	hl->addWidget(okPB);
-	hl->addWidget(cancelPB);
-	
-	QVBoxLayout* vl=new QVBoxLayout();
-	
-	QPlainTextEdit* commentsPT=new QPlainTextEdit();
-	commentsPT->setPlainText(act->comments);
-	commentsPT->selectAll();
-	commentsPT->setFocus();
-	
-	vl->addWidget(commentsPT);
-	vl->addLayout(hl);
-	
-	getCommentsDialog.setLayout(vl);
-	
-	const QString settingsName=QString("ActivityCommentsDialog");
-	
-	getCommentsDialog.resize(500, 320);
-	centerWidgetOnScreen(&getCommentsDialog);
-	restoreFETDialogGeometry(&getCommentsDialog, settingsName);
-	
-	int t=getCommentsDialog.exec();
-	saveFETDialogGeometry(&getCommentsDialog, settingsName);
-	
-	if(t==QDialog::Accepted){
-		act->comments=commentsPT->toPlainText();
-	
-		gt.rules.internalStructureComputed=false;
-		gt.rules.setModified(true);
+	int t=dialog.exec();
+	if(t!=QDialog::Accepted)
+		return;
 
-		activitiesListWidget->currentItem()->setText(act->getDescription());
-		activityChanged();
-	}
+	if (act->comments == dialog.getComments())
+		return;
+	act->comments=dialog.getComments();
+	gt.rules.internalStructureComputed=false;
+	gt.rules.setModified(true);
+
+	activitiesListWidget->currentItem()->setText(act->getDescription());
+	activityChanged();
 }

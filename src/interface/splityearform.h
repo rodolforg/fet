@@ -3,7 +3,7 @@
                              -------------------
     begin                : 10 Aug 2007
     copyright            : (C) 2007 by Lalescu Liviu
-    email                : Please see http://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
+    email                : Please see https://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
  ***************************************************************************/
 
 /***************************************************************************
@@ -19,8 +19,6 @@
 #define SPLITYEARFORM_H
 
 #include <QString>
-
-#include <QSignalMapper>
 
 #include "ui_splityearform_template.h"
 
@@ -42,8 +40,6 @@ private:
 	
 	QListWidget* listWidgets[MAX_CATEGORIES];
 	
-	QSignalMapper mapperModify;
-	
 public:
 	QString year;
 	
@@ -64,6 +60,21 @@ public slots:
 	void modifyDoubleClicked(int i);
 	void removeClicked();
 	void removeAllClicked();
+	
+	void list0DoubleClicked();
+	void list1DoubleClicked();
+	void list2DoubleClicked();
+	void list3DoubleClicked();
+	void list4DoubleClicked();
+	void list5DoubleClicked();
+	void list6DoubleClicked();
+	void list7DoubleClicked();
+	void list8DoubleClicked();
+	void list9DoubleClicked();
+	void list10DoubleClicked();
+	void list11DoubleClicked();
+	void list12DoubleClicked();
+	void list13DoubleClicked();
 	
 	void help();
 	void reset();

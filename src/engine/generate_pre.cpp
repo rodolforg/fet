@@ -6,7 +6,7 @@
                              -------------------
     begin                : 2002
     copyright            : (C) 2002 by Lalescu Liviu
-    email                : Please see http://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
+    email                : Please see https://lalescu.ro/liviu/ for details about contacting Liviu Lalescu (in particular, you can find here the e-mail address)
  ***************************************************************************/
 
 /***************************************************************************
@@ -48,6 +48,11 @@ extern Timetable gt;
 #include <QProgressDialog>
 #include <QMessageBox>
 #endif
+
+#include "constraints/paradoxmindaysvsconsecutive.h"
+#include "constraints/paradoxmindaysvstwogrouped.h"
+#include "constraints/paradoxmindaysvsthreegrouped.h"
+#include "constraints/paradoxmindaysvssameday.h"
 
 //extern QApplication* pqapplication;
 
@@ -983,9 +988,21 @@ bool processTimeSpaceConstraints(QWidget* parent, QTextStream* initialOrderStrea
 		}
 	}
 
-	bool ok=true;
-	
-	return ok;
+	ParadoxMinDaysVsConsecutive paradox2consecutive;
+	ParadoxMinDaysVsTwoGrouped paradox2grouped;
+	ParadoxMinDaysVsThreeGrouped paradox3grouped;
+	ParadoxMinDaysVsSameDay paradoxSameDay;
+	QList<ConstraintPre*> paradoxes;
+	paradoxes << &paradox2consecutive << &paradox2grouped << &paradox3grouped;
+	paradoxes << &paradoxSameDay;
+	foreach (ConstraintPre* paradox, paradoxes) {
+		if (!paradox->prepare(gt.rules)) {
+			reportSkippableErrors(parent, paradox->getErrors());
+			return false;
+		}
+	}
+
+	return true;
 }
 
 //must be after allowed times, after n hours per subgroup and after max days per week for subgroups

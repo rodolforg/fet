@@ -28,6 +28,10 @@ SOURCES += \
 	engine/constraints/mingapsbetweenactivities.cpp \
 	engine/constraints/teachersmincontinuousgapininterval.cpp \
 	engine/constraints/studentsmincontinuousgapininterval.cpp \
+    engine/constraints/paradoxmindaysvsconsecutive.cpp \
+    engine/constraints/paradoxmindaysvstwogrouped.cpp \
+    engine/constraints/paradoxmindaysvsthreegrouped.cpp \
+    engine/constraints/paradoxmindaysvssameday.cpp \
 	\
 	interface/fet.cpp \
 	interface/helpaboutform.cpp \
@@ -519,6 +523,10 @@ HEADERS += \
 	engine/constraints/mingapsbetweenactivities.h \
 	engine/constraints/teachersmincontinuousgapininterval.h \
 	engine/constraints/studentsmincontinuousgapininterval.h \
+    engine/constraints/paradoxmindaysvsconsecutive.h \
+    engine/constraints/paradoxmindaysvstwogrouped.h \
+    engine/constraints/paradoxmindaysvsthreegrouped.h \
+    engine/constraints/paradoxmindaysvssameday.h \
 	\
 	interface/fet.h \
 	interface/helpaboutform.h \
@@ -1357,7 +1365,9 @@ TRANSLATIONS += \
 
 TEMPLATE = app
 
-CONFIG += release warn_on c++11
+DEFINES += QT_DEPRECATED_WARNINGS
+
+CONFIG += release warn_on
 QT += network
 
 greaterThan(QT_MAJOR_VERSION, 4){
