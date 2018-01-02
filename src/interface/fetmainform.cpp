@@ -664,10 +664,8 @@ FetMainForm::FetMainForm()
 
 	for (int i = 0; i < ConstraintDialogHelper::numConstraintActions; ++i) {
 		QAction *action = findChild<QAction*>("data"+ConstraintDialogHelper::constraintActions[i].name+"Action");
-		connect(action, SIGNAL(triggered()), &signalMapper, SLOT(map()));
-		signalMapper.setMapping(action, i);
+		connect(action, &QAction::triggered, [this, i](){openConstraintDialog(i);});
 	}
-	connect(&signalMapper, SIGNAL(mapped(int)), this, SLOT(openConstraintDialog(int)));
 }
 
 void FetMainForm::setEnabledIcon(QAction* action, bool enabled)

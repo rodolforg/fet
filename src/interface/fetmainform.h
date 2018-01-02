@@ -70,8 +70,6 @@ private:
 
 	bool isValidFilepathForSaving(const QString &filepath);
 
-	QSignalMapper signalMapper;
-
 public:
 	FetMainForm();
 	~FetMainForm();

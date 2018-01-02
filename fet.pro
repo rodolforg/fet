@@ -3,6 +3,13 @@ SUBDIRS = src/src.pro \
           src/src-cl.pro \
           tests
 
+# With C++11 support
+greaterThan(QT_MAJOR_VERSION, 4){
+CONFIG += c++11
+} else {
+QMAKE_CXXFLAGS += -std=c++11
+}
+
 unix {
 translations.path = /usr/share/fet/translations
 translations.files = translations/*.qm
