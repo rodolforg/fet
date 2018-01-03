@@ -90,5 +90,5 @@ QString Building::getDetailedDescriptionWithConstraints(const Rules &r) const
 
 bool buildingsAscending(const Building* b1, const Building* b2)
 {
-	return b1->name.localeAwareCompare(b2->name);
+	return b1->name.localeAwareCompare(b2->name) < 0;
 }
