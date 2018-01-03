@@ -28,7 +28,7 @@
 #ifndef MATRIX_H
 #define MATRIX_H
 
-#include "timetable_defs.h"
+#include <cassert>
 
 /**
  * @brief Matrix3D is a simple 3D vector class with proper resource deallocation

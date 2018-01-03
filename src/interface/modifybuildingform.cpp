@@ -16,6 +16,7 @@
  ***************************************************************************/
 
 #include "modifybuildingform.h"
+#include "fet.h"
 
 #include <QMessageBox>
 

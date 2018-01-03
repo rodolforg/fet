@@ -20,9 +20,7 @@
 
 #include "ui_modifybuildingform_template.h"
 
-#include "timetable_defs.h"
-#include "timetable.h"
-#include "fet.h"
+#include "rules.h"
 
 class ModifyBuildingForm : public QDialog, Ui::ModifyBuildingForm_template {
 	Q_OBJECT
