@@ -39,8 +39,8 @@ AddRoomForm::AddRoomForm(QWidget* parent): QDialog(parent)
 	
 	buildingsComboBox->clear();
 	buildingsComboBox->addItem("");
-	for(int i=0; i<gt.rules.buildingsList.size(); i++)
-		buildingsComboBox->addItem(gt.rules.buildingsList.at(i)->name);
+	foreach (const Building *building, gt.rules.buildingsList)
+		buildingsComboBox->addItem(building->name);
 		
 	capacitySpinBox->setMinimum(1);
 	capacitySpinBox->setMaximum(MAX_ROOM_CAPACITY);
