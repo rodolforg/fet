@@ -27,8 +27,6 @@
 
 #include <QMap>
 
-#include <QSignalMapper>
-
 class QNetworkAccessManager;
 class QNetworkReply;
 
