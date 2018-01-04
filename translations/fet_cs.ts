@@ -78,22 +78,22 @@
     <message>
         <location filename="../src/interface/activitiesform.cpp" line="427"/>
         <source>different students</source>
-        <translation>rozdílní studenti</translation>
+        <translation>rozdílní žáci</translation>
     </message>
     <message>
         <location filename="../src/interface/activitiesform.cpp" line="429"/>
         <source>different boolean variable &apos;must compute n total students&apos;</source>
-        <translation>rozdílná logická proměnná při &quot;musí počítat celkově n studentů&quot;</translation>
+        <translation>rozdílná logická proměnná při &quot;musí počítat celkově n žáků&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/activitiesform.cpp" line="431"/>
         <source>different number of students</source>
-        <translation>rozdílný počet studentů</translation>
+        <translation>rozdílný počet žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/activitiesform.cpp" line="434"/>
         <source>The current split activity has subactivities which were individually modified. It is recommended to abort now and modify individual subactivities from the corresponding menu. Otherwise you will modify the fields for all the subactivities from this larger split activity.</source>
-        <translation>Tato činnost má jednotlivě změněné podaktivity. Doporučuje se tento postup nyní přerušit a jednotlivé podčinnosti měnit v odpovídajících nabídkách. Jinak totiž budou měněny všechny podčinnosti současně.</translation>
+        <translation>Tato činnost má jednotlivě změněné dílčí činnosti. Doporučuje se tento postup nyní přerušit a jednotlivé dílčí činnosti měnit v odpovídajících nabídkách. Jinak totiž budou měněny všechny dílčí činnosti současně.</translation>
     </message>
     <message>
         <location filename="../src/interface/activitiesform.cpp" line="438"/>
@@ -210,7 +210,7 @@
         <location filename="../src/interface/activitiesform_template.ui" line="91"/>
         <source>Students</source>
         <comment>It refers to students sets, but I want to keep the string short</comment>
-        <translation>Studenti</translation>
+        <translation>Žáci</translation>
     </message>
     <message>
         <location filename="../src/interface/activitiesform_template.ui" line="110"/>
@@ -322,7 +322,7 @@
     <message>
         <location filename="../src/engine/activity.cpp" line="527"/>
         <source>no students</source>
-        <translation>žádní studenti</translation>
+        <translation>žádní žáci</translation>
     </message>
     <message>
         <location filename="../src/engine/activity.cpp" line="672"/>
@@ -362,12 +362,12 @@
     <message>
         <location filename="../src/engine/activity.cpp" line="644"/>
         <source>No students sets for this activity</source>
-        <translation>Žádné skupiny studentů pro tuto činnost</translation>
+        <translation>Žádné skupiny žáků pro tuto činnost</translation>
     </message>
     <message>
         <location filename="../src/engine/activity.cpp" line="649"/>
         <source>Students=%1</source>
-        <translation>Studenti=%1</translation>
+        <translation>Žáci=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/activity.cpp" line="676"/>
@@ -399,7 +399,7 @@
         <location filename="../src/engine/activity.cpp" line="660"/>
         <location filename="../src/engine/activity.cpp" line="664"/>
         <source>Total number of students=%1</source>
-        <translation>Celkový počet studentů=%1</translation>
+        <translation>Celkový počet žáků=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/activity.cpp" line="665"/>
@@ -534,7 +534,7 @@
         <location filename="../src/interface/activityplanningform.cpp" line="251"/>
         <source>Subactivities</source>
         <comment>Please keep translation short</comment>
-        <translation>Podčinnosti</translation>
+        <translation>Dílčí činnosti</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="252"/>
@@ -558,7 +558,7 @@
         <location filename="../src/interface/activityplanningform.cpp" line="255"/>
         <source>Swap teachers</source>
         <comment>Please keep translation short</comment>
-        <translation type="unfinished"></translation>
+        <translation>Vyměnit učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="266"/>
@@ -599,7 +599,7 @@
         <location filename="../src/interface/activityplanningform.cpp" line="280"/>
         <source>Show subgroups</source>
         <comment>Please keep translation short</comment>
-        <translation>Ukázat podskupiny</translation>
+        <translation>Ukázat dílčí skupiny</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="283"/>
@@ -678,13 +678,13 @@
         <location filename="../src/interface/activityplanningform.cpp" line="901"/>
         <location filename="../src/interface/activityplanningform.cpp" line="1287"/>
         <source>There are activities affecting other students sets. Should the related activities also be deleted?</source>
-        <translation>Jsou tu činnosti, které ovlivňují jiné skupiny studentů. Mají být smazány i související činnosti?</translation>
+        <translation>Jsou tu činnosti, které ovlivňují jiné skupiny žáků. Mají být smazány i související činnosti?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1018"/>
         <location filename="../src/interface/activityplanningform.cpp" line="1433"/>
         <source>Modify %1 activities of students set %2?</source>
-        <translation type="unfinished"></translation>
+        <translation>Změnit %1 činností skupiny žáků %2?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1022"/>
@@ -697,7 +697,9 @@
         <source>Because you have individually modified the components,
 there won&apos;t be modified an additional number of %1 activities
 (which are in the same larger split activities as the selected activities).</source>
-        <translation type="unfinished"></translation>
+        <translation>Protože jste individuálně změnil dílčí činnosti,
+nebude měněno dalších %1 činností
+(náleží téže činnosti).</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1035"/>
@@ -708,7 +710,7 @@ there won&apos;t be modified an additional number of %1 activities
         <location filename="../src/interface/activityplanningform.cpp" line="2152"/>
         <location filename="../src/interface/activityplanningform.cpp" line="2405"/>
         <source>Please choose a new teacher:</source>
-        <translation type="unfinished"></translation>
+        <translation>Vyberte, prosím, nového učitele:</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1036"/>
@@ -719,7 +721,7 @@ there won&apos;t be modified an additional number of %1 activities
         <location filename="../src/interface/activityplanningform.cpp" line="2153"/>
         <location filename="../src/interface/activityplanningform.cpp" line="2406"/>
         <source>FET - Select new teacher dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>FET - Výběr nového učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1040"/>
@@ -729,33 +731,35 @@ there won&apos;t be modified an additional number of %1 activities
         <location filename="../src/interface/activityplanningform.cpp" line="2410"/>
         <source>Modify related?</source>
         <comment>It refers to activities</comment>
-        <translation type="unfinished"></translation>
+        <translation>Změnit příslušející?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1040"/>
         <location filename="../src/interface/activityplanningform.cpp" line="1455"/>
         <source>There are activities affecting other students sets. Should the related activities also be modified?</source>
-        <translation type="unfinished"></translation>
+        <translation>Jsou tu činnosti, které ovlivňují jiné skupiny žáků. Mají být změněny i související činnosti?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1061"/>
         <location filename="../src/interface/activityplanningform.cpp" line="1370"/>
         <source>Modify %1 activities of subject %2?</source>
-        <translation type="unfinished"></translation>
+        <translation>Změnit %1 činností předmětu %2?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1075"/>
         <location filename="../src/interface/activityplanningform.cpp" line="1384"/>
         <location filename="../src/interface/activityplanningform.cpp" line="1909"/>
         <source>FET - Information</source>
-        <translation type="unfinished"></translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1375"/>
         <source>Because you have individually modified the components,
 there won&apos;t be removed an additional number of %1 activities
 (which are in the same larger split activities as the selected activities).</source>
-        <translation type="unfinished"></translation>
+        <translation>Protože jste individuálně změnil dílčí činnosti,
+nebude měněno dalších %1 činností
+(náleží téže činnosti).</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1622"/>
@@ -766,12 +770,12 @@ there won&apos;t be removed an additional number of %1 activities
         <location filename="../src/interface/activityplanningform.cpp" line="1865"/>
         <location filename="../src/interface/activityplanningform.cpp" line="1889"/>
         <source>Modify %1 activities from selected cell?</source>
-        <translation type="unfinished"></translation>
+        <translation>Změnit %1 činností z vybrané buňky?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1919"/>
         <source>This cell contains activities that relate to other students. Should the related activities also be modified?</source>
-        <translation type="unfinished"></translation>
+        <translation>Tato buňka obsahuje činnosti, které souvisí s jinými žáky. Mají být změněny i související činnosti?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2064"/>
@@ -783,13 +787,13 @@ there won&apos;t be removed an additional number of %1 activities
         <location filename="../src/interface/activityplanningform.cpp" line="2136"/>
         <location filename="../src/interface/activityplanningform.cpp" line="2389"/>
         <source>Modify %1 activities of teacher %2?</source>
-        <translation type="unfinished"></translation>
+        <translation>Změnit %1 činností učitele %2?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2157"/>
         <location filename="../src/interface/activityplanningform.cpp" line="2410"/>
         <source>There are activities affecting other teachers. Should the related activities also be modified?</source>
-        <translation type="unfinished"></translation>
+        <translation>Jsou tu činnosti, které ovlivňují jiné učitele. Mají být změněny i takové související činnosti?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2200"/>
@@ -813,7 +817,7 @@ there won&apos;t be removed an additional number of %1 activities
         <location filename="../src/interface/activityplanningform.cpp" line="888"/>
         <location filename="../src/interface/activityplanningform.cpp" line="1274"/>
         <source>Delete %1 activities of students set %2?</source>
-        <translation>Smazat %1 činnosti/činností skupiny studentů %2?</translation>
+        <translation>Smazat %1 činnosti/činností skupiny žáků %2?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="922"/>
@@ -854,7 +858,7 @@ there won&apos;t be removed an additional number of %1 activities
         <location filename="../src/interface/activityplanningform.cpp" line="292"/>
         <source>Hide full teachers</source>
         <comment>It refers to teachers who have their number of hours fulfilled. Please keep translation short</comment>
-        <translation type="unfinished">Skrýt plné učitele</translation>
+        <translation>Skrýt plné učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="896"/>
@@ -878,7 +882,7 @@ there won&apos;t be removed an additional number of %1 activities
         <location filename="../src/interface/activityplanningform.cpp" line="1384"/>
         <location filename="../src/interface/activityplanningform.cpp" line="1909"/>
         <source>There is no teacher qualified for this subject. You should set teachers qualified subjects in FET -&gt; Data -&gt; Teachers.</source>
-        <translation type="unfinished"></translation>
+        <translation>Není žádný učitel, který by byl způsobilý pro tento předmět. Měl byste zadat učitele se způsobilostí vyučovat předměty v FET -&gt; Data -&gt; Učitelé.</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1621"/>
@@ -905,12 +909,12 @@ there won&apos;t be removed an additional number of %1 activities
         <location filename="../src/interface/activityplanningform.cpp" line="1869"/>
         <location filename="../src/interface/activityplanningform.cpp" line="1891"/>
         <source>students=%1</source>
-        <translation>studenti=%1</translation>
+        <translation>žáci=%1</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1783"/>
         <source>This cell contains activities that relate to other students. Should the related activities also be deleted?</source>
-        <translation>Tato buňka obsahuje činnosti, které souvisí s jinými studenty. Mají být smazány i související činnosti?</translation>
+        <translation>Tato buňka obsahuje činnosti, které souvisí s jinými žáky. Mají být smazány i související činnosti?</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="1789"/>
@@ -932,7 +936,7 @@ there won&apos;t be removed an additional number of %1 activities
         <location filename="../src/interface/activityplanningform.cpp" line="2664"/>
         <source>Students</source>
         <comment>Please keep translation short</comment>
-        <translation>Studenti</translation>
+        <translation>Žáci</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2908"/>
@@ -943,12 +947,12 @@ there won&apos;t be removed an additional number of %1 activities
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2949"/>
         <source>There are no activities without teachers and without students.</source>
-        <translation>Nejsou žádné činnosti bez učitele a bez studentů.</translation>
+        <translation>Nejsou žádné činnosti bez učitele a bez žáků.</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2951"/>
         <source>Activities without teachers and without students:</source>
-        <translation>Činnosti bez učitele a bez studentů:</translation>
+        <translation>Činnosti bez učitele a bez žáků:</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2954"/>
@@ -963,12 +967,12 @@ there won&apos;t be removed an additional number of %1 activities
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2959"/>
         <source>There are no activities without students.</source>
-        <translation>Nejsou žádné činnosti bez studentů.</translation>
+        <translation>Nejsou žádné činnosti bez žáků.</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2961"/>
         <source>Activities without students:</source>
-        <translation>Činnosti bez studentů:</translation>
+        <translation>Činnosti bez žáků:</translation>
     </message>
     <message>
         <location filename="../src/interface/activityplanningform.cpp" line="2963"/>
@@ -1001,13 +1005,13 @@ there won&apos;t be removed an additional number of %1 activities
         <location filename="../src/engine/activitytag.cpp" line="59"/>
         <source>P:%1</source>
         <comment>Whether the activity tag is Printable - can be true or false</comment>
-        <translation type="unfinished"></translation>
+        <translation>T:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/activitytag.cpp" line="63"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation type="unfinished">P: %1</translation>
+        <translation>P: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/activitytag.cpp" line="70"/>
@@ -1157,7 +1161,7 @@ there won&apos;t be removed an additional number of %1 activities
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="354"/>
         <source>Activity tag comments</source>
-        <translation type="unfinished"></translation>
+        <translation>Poznámky k označení vyučování</translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="356"/>
@@ -1201,12 +1205,12 @@ there won&apos;t be removed an additional number of %1 activities
     <message>
         <location filename="../src/interface/activitytagsform_template.ui" line="69"/>
         <source>Printable</source>
-        <translation type="unfinished"></translation>
+        <translation>Tisknutelná</translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform_template.ui" line="76"/>
         <source>Not printable</source>
-        <translation type="unfinished"></translation>
+        <translation>Netisknutelná</translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform_template.ui" line="85"/>
@@ -1222,13 +1226,13 @@ there won&apos;t be removed an additional number of %1 activities
         <location filename="../src/interface/activitytagsform_template.ui" line="101"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished">Nahoru</translation>
+        <translation>Nahoru</translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform_template.ui" line="108"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished">Dolů</translation>
+        <translation>Dolů</translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform_template.ui" line="115"/>
@@ -1330,7 +1334,7 @@ there won&apos;t be removed an additional number of %1 activities
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="776"/>
         <source>Split activity NOT added - error???</source>
-        <translation>Podčinnost NEBYLA přidána - Chyba?</translation>
+        <translation>Dílčí činnost NEBYLA přidána - Chyba?</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="801"/>
@@ -1466,7 +1470,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="620"/>
         <source>Do you really want to add an activity without student set(s)?</source>
-        <translation>Opravdu chcete přidat činnost bez skupiny/skupin studentů?</translation>
+        <translation>Opravdu chcete přidat činnost bez skupiny/skupin žáků?</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="697"/>
@@ -1514,7 +1518,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addactivityform_template.ui" line="71"/>
         <source>Students</source>
         <comment>It refers to sets of students, but I want to keep text short</comment>
-        <translation>Studenti</translation>
+        <translation>Žáci</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="114"/>
@@ -1535,7 +1539,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addactivityform_template.ui" line="235"/>
         <source>Students</source>
         <comment>It refers to the number of students, but I want to keep text small</comment>
-        <translation>Studenti</translation>
+        <translation>Žáci</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="257"/>
@@ -1961,12 +1965,12 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addconstraintactivitiesendstudentsdayform_template.ui" line="14"/>
         <source>Add activities end students day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat činnosti a studentský den</translation>
+        <translation>Přidat činnosti a žákovský den</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesendstudentsdayform_template.ui" line="84"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesendstudentsdayform_template.ui" line="67"/>
@@ -1981,7 +1985,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiesendstudentsdayform_template.ui" line="26"/>
         <source>Instructions: you can choose a set of activities with a certain teacher (or blank for all teachers), students set, subject and activity tag.</source>
-        <translation>Návod: můžete vybrat skupinu činností s určitým učitelem (nebo prázdné pro všechny učitele), skupinu studentů, předmět a druh činnosti.</translation>
+        <translation>Návod: můžete vybrat skupinu činností s určitým učitelem (nebo prázdné pro všechny učitele), skupinu žáků, předmět a druh činnosti.</translation>
     </message>
 </context>
 <context>
@@ -2027,7 +2031,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="14"/>
         <source>Add activities max simultaneous in selected time slots</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidání největšího počtu souběžných činností ve vybraných časových blocích</translation>
+        <translation>Přidání největšího počtu souběžných činností ve vybraných časových polích</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="24"/>
@@ -2047,7 +2051,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="46"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="56"/>
@@ -2199,7 +2203,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiesnotoverlappingform_template.ui" line="52"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesnotoverlappingform_template.ui" line="62"/>
@@ -2225,7 +2229,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiesnotoverlappingform_template.ui" line="26"/>
         <source>This constraint means that the activities should not be placed in common timeslots. You don&apos;t need to add this constraint for activities sharing a teacher or students set.</source>
-        <translation>Toto omezení znamená, že činnosti by neměly být umístěny ve společných časových blocích. Nepotřebujete přidat toto omezení pro činnosti sdílející učitele nebo skupinu studentů.</translation>
+        <translation>Toto omezení znamená, že činnosti nejsou umístěny současně (ve společných časových polích). Nepotřebujete přidat toto omezení pro činnosti sdílející učitele nebo skupinu žáků.</translation>
     </message>
 </context>
 <context>
@@ -2286,7 +2290,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="46"/>
@@ -2373,7 +2377,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="14"/>
         <source>Add activities occupy max time slots from selection</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidání největšího počtu činností ve vybraných časových blocích</translation>
+        <translation>Přidání největšího počtu činností ve vybraných časových polích</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="24"/>
@@ -2393,7 +2397,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="46"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="56"/>
@@ -2543,7 +2547,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform_template.ui" line="38"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform_template.ui" line="51"/>
@@ -2704,7 +2708,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform_template.ui" line="38"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform_template.ui" line="51"/>
@@ -2797,7 +2801,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform_template.ui" line="46"/>
@@ -2925,7 +2929,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartingdayform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartingdayform_template.ui" line="46"/>
@@ -3017,7 +3021,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartinghourform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartinghourform_template.ui" line="46"/>
@@ -3172,7 +3176,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartingtimeform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartingtimeform_template.ui" line="46"/>
@@ -3243,7 +3247,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addconstraintactivityendsstudentsdayform_template.ui" line="14"/>
         <source>Add activity ends students day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat činnost ukončující studentský den</translation>
+        <translation>Přidat činnost ukončující žákovský den</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivityendsstudentsdayform_template.ui" line="89"/>
@@ -3273,7 +3277,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivityendsstudentsdayform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivityendsstudentsdayform_template.ui" line="26"/>
@@ -3369,7 +3373,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredroomform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredroomform_template.ui" line="26"/>
@@ -3470,7 +3474,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredroomsform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredroomsform_template.ui" line="26"/>
@@ -3592,7 +3596,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform_template.ui" line="26"/>
@@ -3687,7 +3691,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform_template.ui" line="26"/>
@@ -3800,7 +3804,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform_template.ui" line="26"/>
@@ -4186,7 +4190,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintbreaktimesform_template.ui" line="26"/>
         <source>The important thing is that a break does not induce gaps for teachers or students</source>
-        <translation>Je důležité , že přestávka neznamená mezery pro učitele a studenty</translation>
+        <translation>Je důležité , že přestávka neznamená mezery pro učitele a žáky</translation>
     </message>
 </context>
 <context>
@@ -4262,7 +4266,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform_template.ui" line="46"/>
@@ -4391,7 +4395,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform_template.ui" line="46"/>
@@ -4512,7 +4516,7 @@ force activities consecutive</source>
         <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform_template.ui" line="156"/>
         <source>Min gaps</source>
         <comment>(Min gaps between a set of activities)</comment>
-        <translation>Nejméně mezer</translation>
+        <translation>Nejmenší počet volných hodin</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform_template.ui" line="20"/>
@@ -4527,7 +4531,7 @@ force activities consecutive</source>
     <message>
         <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform_template.ui" line="46"/>
@@ -4703,7 +4707,7 @@ force activities consecutive</source>
         <location filename="../src/interface/addconstraintstudentsactivitytagmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Add students activity tag max hours continuously</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat maximum hodin po sobě pro druh činnosti studentů</translation>
+        <translation>Přidat maximum hodin po sobě pro druh činnosti žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsactivitytagmaxhourscontinuouslyform_template.ui" line="155"/>
@@ -4758,7 +4762,7 @@ force activities consecutive</source>
         <location filename="../src/interface/addconstraintstudentsactivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Add students activity tag max hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat maximum hodin denně pro druh činnosti studentů</translation>
+        <translation>Přidat maximum hodin denně pro druh činnosti žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsactivitytagmaxhoursdailyform_template.ui" line="28"/>
@@ -4839,7 +4843,7 @@ force activities consecutive</source>
         <location filename="../src/interface/addconstraintstudentsearlymaxbeginningsatsecondhourform_template.ui" line="14"/>
         <source>Add students early max beginnings at second hour</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat nejvíce časných začátků ve druhou hodinu pro studentů</translation>
+        <translation>Přidat nejvíce časných začátků ve druhou hodinu pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsearlymaxbeginningsatsecondhourform_template.ui" line="32"/>
@@ -4918,7 +4922,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/addconstraintstudentsintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Add students interval max days per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat interval maxima dní za týden pro studenty</translation>
+        <translation>Přidat interval maxima dní za týden pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsintervalmaxdaysperweekform_template.ui" line="22"/>
@@ -4983,7 +4987,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/addconstraintstudentsmaxbuildingchangesperdayform_template.ui" line="14"/>
         <source>Add students max building changes per day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat maximum změn budov za den pro studenty</translation>
+        <translation>Přidat maximum změn budov za den pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxbuildingchangesperdayform_template.ui" line="22"/>
@@ -5038,7 +5042,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/addconstraintstudentsmaxbuildingchangesperweekform_template.ui" line="14"/>
         <source>Add students max building changes per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat maximum změn budov za týden pro studenty</translation>
+        <translation>Přidat maximum změn budov za týden pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxbuildingchangesperweekform_template.ui" line="22"/>
@@ -5099,7 +5103,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/addconstraintstudentsmaxdaysperweekform_template.ui" line="14"/>
         <source>Add students max days per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat nejvíce dní za týden pro studenty</translation>
+        <translation>Přidat nejvíce dní za týden pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxdaysperweekform_template.ui" line="22"/>
@@ -5160,7 +5164,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/addconstraintstudentsmaxgapsperdayform_template.ui" line="14"/>
         <source>Add students max gaps per day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat nejvíce mezer za den pro studenty</translation>
+        <translation>Přidat největší počet volných hodin za den pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxgapsperdayform_template.ui" line="32"/>
@@ -5178,7 +5182,7 @@ IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this 
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxgapsperdayform_template.ui" line="84"/>
         <source>Max gaps per day</source>
-        <translation>Nejvíce mezer za den</translation>
+        <translation>Největší počet volných hodin za den</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxgapsperdayform_template.ui" line="99"/>
@@ -5232,13 +5236,13 @@ IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this 
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxgapsperweekform_template.ui" line="82"/>
         <source>Max gaps per week</source>
-        <translation>Nejvíce mezer za týden</translation>
+        <translation>Největší počet volných hodin za týden</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxgapsperweekform_template.ui" line="14"/>
         <source>Add students max gaps per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat nejvíce mezer za týden pro studenty</translation>
+        <translation>Přidat největší počet volných hodin za týden pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxgapsperweekform_template.ui" line="65"/>
@@ -5303,7 +5307,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintstudentsmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Add students max hours continuously</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat maximum hodin po sobě pro studenty</translation>
+        <translation>Přidat maximum hodin po sobě pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxhourscontinuouslyform_template.ui" line="28"/>
@@ -5358,7 +5362,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintstudentsmaxhoursdailyform_template.ui" line="14"/>
         <source>Add students max hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat maximum hodin denně pro studenty</translation>
+        <translation>Přidat maximum hodin denně pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxhoursdailyform_template.ui" line="28"/>
@@ -5404,7 +5408,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintstudentsmaxspanperdayform_template.ui" line="14"/>
         <source>Add students max span per day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Přidat největší časový úsek za den pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxspanperdayform_template.ui" line="26"/>
@@ -5424,7 +5428,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentsmaxspanperdayform_template.ui" line="77"/>
         <source>Max span per day</source>
-        <translation type="unfinished"></translation>
+        <translation>Největší časový úsek za den</translation>
     </message>
 </context>
 <context>
@@ -5463,12 +5467,12 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="14"/>
         <source>Add students min gaps between building changes</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat minimum mezer mezi změnami budov pro studenty</translation>
+        <translation>Přidat minimum mezer mezi změnami budov pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="50"/>
         <source>Min gaps between building changes</source>
-        <translation>Nejméně mezer mezi změnami budov</translation>
+        <translation>Nejmenší počet volných hodin mezi změnami budov</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="67"/>
@@ -5571,13 +5575,13 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentsminhoursdailyform_template.ui" line="62"/>
         <source>Min hours</source>
-        <translation>Nejméně hodin</translation>
+        <translation>Nejmenší počet hodin</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsminhoursdailyform_template.ui" line="14"/>
         <source>Add students min hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat minimum hodin denně pro studenty</translation>
+        <translation>Přidat minimum hodin denně pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsminhoursdailyform_template.ui" line="39"/>
@@ -5627,7 +5631,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintstudentsminrestinghoursform_template.ui" line="14"/>
         <source>Add students min resting hours</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Nejméně oddychových hodin pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsminrestinghoursform_template.ui" line="36"/>
@@ -5637,7 +5641,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentsminrestinghoursform_template.ui" line="46"/>
         <source>Min resting hours</source>
-        <translation type="unfinished"></translation>
+        <translation>Nejméně oddychových hodin</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsminrestinghoursform_template.ui" line="58"/>
@@ -5652,7 +5656,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentsminrestinghoursform_template.ui" line="90"/>
         <source>Circular</source>
-        <translation type="unfinished"></translation>
+        <translation>Kruhový</translation>
     </message>
 </context>
 <context>
@@ -5678,7 +5682,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="106"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="113"/>
@@ -5701,7 +5705,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="28"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="60"/>
@@ -5722,7 +5726,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Add students set activity tag max hours continuously</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat maximum hodin po sobě pro druh činnosti studentů</translation>
+        <translation>Přidat maximum hodin po sobě pro druh činnosti žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="196"/>
@@ -5759,7 +5763,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="107"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="114"/>
@@ -5783,12 +5787,12 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Add students set activity tag max hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat maximum hodin denně pro druh činnosti studentů</translation>
+        <translation>Přidat maximum hodin denně pro druh činnosti žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="28"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="60"/>
@@ -5841,7 +5845,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="92"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="104"/>
@@ -5859,7 +5863,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="122"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="180"/>
@@ -5880,7 +5884,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="14"/>
         <source>Add students set early max beginnings at second hour</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat nejvíce časných začátků ve druhou hodinu pro studenty</translation>
+        <translation>Přidat nejvíce časných začátků ve druhou hodinu pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="32"/>
@@ -5936,7 +5940,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/addconstraintstudentssethomeroomform_template.ui" line="14"/>
         <source>Add students set home room</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat domovskou místnost pro skupinu studentů</translation>
+        <translation>Přidat domovskou místnost pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssethomeroomform_template.ui" line="45"/>
@@ -5961,7 +5965,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/addconstraintstudentssethomeroomform_template.ui" line="22"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
 </context>
 <context>
@@ -6016,7 +6020,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/addconstraintstudentssethomeroomsform_template.ui" line="14"/>
         <source>Add students set home rooms</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat domovské místnosti pro skupinu studentů</translation>
+        <translation>Přidat domovské místnosti pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssethomeroomsform_template.ui" line="41"/>
@@ -6026,7 +6030,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/addconstraintstudentssethomeroomsform_template.ui" line="20"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssethomeroomsform_template.ui" line="64"/>
@@ -6072,7 +6076,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="130"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform.cpp" line="138"/>
@@ -6106,12 +6110,12 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Add students set interval max days per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat interval maxima dní za týden pro studenty</translation>
+        <translation>Přidat interval maxima dní za týden pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform_template.ui" line="28"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetintervalmaxdaysperweekform_template.ui" line="58"/>
@@ -6162,7 +6166,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="92"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="101"/>
@@ -6181,7 +6185,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperdayform_template.ui" line="14"/>
         <source>Add students set max building changes per day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat maximum změn budov za den pro skupinu studentů</translation>
+        <translation>Přidat maximum změn budov za den pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperdayform_template.ui" line="22"/>
@@ -6196,7 +6200,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperdayform_template.ui" line="46"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperdayform_template.ui" line="82"/>
@@ -6227,7 +6231,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="92"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="101"/>
@@ -6246,7 +6250,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform_template.ui" line="14"/>
         <source>Add students set max building changes per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat maximum změn budov za týden pro skupinu studentů</translation>
+        <translation>Přidat maximum změn budov za týden pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform_template.ui" line="22"/>
@@ -6261,7 +6265,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform_template.ui" line="46"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxbuildingchangesperweekform_template.ui" line="82"/>
@@ -6298,7 +6302,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform.cpp" line="102"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform.cpp" line="111"/>
@@ -6317,7 +6321,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform_template.ui" line="14"/>
         <source>Add students set max days per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat nejvíce dní za týden pro skupinu studentů</translation>
+        <translation>Přidat nejvíce dní za týden pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform_template.ui" line="22"/>
@@ -6342,7 +6346,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxdaysperweekform_template.ui" line="128"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
 </context>
 <context>
@@ -6369,7 +6373,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform.cpp" line="99"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform.cpp" line="108"/>
@@ -6388,7 +6392,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform_template.ui" line="14"/>
         <source>Add students set max gaps per day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat nejvíce mezer za den pro skupinu studentů</translation>
+        <translation>Přidat největší počet volných hodin za den pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform_template.ui" line="32"/>
@@ -6401,7 +6405,7 @@ IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this 
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform_template.ui" line="67"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform_template.ui" line="99"/>
@@ -6411,7 +6415,7 @@ IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this 
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform_template.ui" line="116"/>
         <source>Max gaps per day</source>
-        <translation>Nejvíce mezer za den</translation>
+        <translation>Největší počet volných hodin za den</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperdayform_template.ui" line="131"/>
@@ -6448,7 +6452,7 @@ IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this 
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform.cpp" line="100"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform.cpp" line="109"/>
@@ -6471,13 +6475,13 @@ IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this 
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform_template.ui" line="114"/>
         <source>Max gaps per week</source>
-        <translation>Nejvíce mezer za týden</translation>
+        <translation>Největší počet volných hodin za týden</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform_template.ui" line="14"/>
         <source>Add students set max gaps per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat nejvíce mezer za týden pro skupinu studentů</translation>
+        <translation>Přidat největší počet volných hodin za týden pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform_template.ui" line="97"/>
@@ -6492,7 +6496,7 @@ IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this 
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform_template.ui" line="65"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxgapsperweekform_template.ui" line="32"/>
@@ -6519,7 +6523,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxhourscontinuouslyform.cpp" line="95"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxhourscontinuouslyform.cpp" line="104"/>
@@ -6542,13 +6546,13 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxhourscontinuouslyform_template.ui" line="28"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Add students set max hours continuously</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat maximum hodin po sobě pro skupinu studentů</translation>
+        <translation>Přidat maximum hodin po sobě pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxhourscontinuouslyform_template.ui" line="155"/>
@@ -6585,7 +6589,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxhoursdailyform.cpp" line="94"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxhoursdailyform.cpp" line="103"/>
@@ -6608,13 +6612,13 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxhoursdailyform_template.ui" line="28"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxhoursdailyform_template.ui" line="14"/>
         <source>Add students set max hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat maximum hodin denně pro skupinu studentů</translation>
+        <translation>Přidat maximum hodin denně pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxhoursdailyform_template.ui" line="155"/>
@@ -6657,7 +6661,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="99"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform.cpp" line="108"/>
@@ -6676,12 +6680,12 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform_template.ui" line="14"/>
         <source>Add students set max span per day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Přidat největší časový úsek za den pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform_template.ui" line="26"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform_template.ui" line="42"/>
@@ -6691,7 +6695,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform_template.ui" line="55"/>
         <source>Max span per day</source>
-        <translation type="unfinished"></translation>
+        <translation>Největší časový úsek za den</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmaxspanperdayform_template.ui" line="90"/>
@@ -6722,7 +6726,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="92"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="101"/>
@@ -6741,7 +6745,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform_template.ui" line="14"/>
         <source>Add students set min gaps between building changes</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat minimum mezer mezi změnami budov pro studenty</translation>
+        <translation>Přidat minimum mezer mezi změnami budov pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform_template.ui" line="22"/>
@@ -6756,7 +6760,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform_template.ui" line="46"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform_template.ui" line="82"/>
@@ -6766,7 +6770,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetmingapsbetweenbuildingchangesform_template.ui" line="103"/>
         <source>Min gaps between building changes</source>
-        <translation>Nejméně mezer mezi změnami budov</translation>
+        <translation>Nejmenší počet volných hodin mezi změnami budov</translation>
     </message>
 </context>
 <context>
@@ -6820,7 +6824,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="114"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform.cpp" line="123"/>
@@ -6854,13 +6858,13 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform_template.ui" line="39"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform_template.ui" line="14"/>
         <source>Add students set min hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat minimum hodin denně pro skupinu studentů</translation>
+        <translation>Přidat minimum hodin denně pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform_template.ui" line="71"/>
@@ -6880,7 +6884,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform_template.ui" line="94"/>
         <source>Min hours</source>
-        <translation>Nejméně hodin</translation>
+        <translation>Nejmenší počet hodin</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminhoursdailyform_template.ui" line="136"/>
@@ -6912,7 +6916,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="101"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminrestinghoursform.cpp" line="110"/>
@@ -6931,12 +6935,12 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintstudentssetminrestinghoursform_template.ui" line="14"/>
         <source>Add students set min resting hours</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Nejméně oddychových hodin pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminrestinghoursform_template.ui" line="44"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminrestinghoursform_template.ui" line="80"/>
@@ -6946,12 +6950,12 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminrestinghoursform_template.ui" line="101"/>
         <source>Min resting hours</source>
-        <translation type="unfinished"></translation>
+        <translation>Nejméně oddychových hodin</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminrestinghoursform_template.ui" line="116"/>
         <source>Circular</source>
-        <translation type="unfinished"></translation>
+        <translation>Kruhový</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetminrestinghoursform_template.ui" line="125"/>
@@ -6982,17 +6986,17 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="215"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="236"/>
         <source>Constraint NOT added - there must be another constraint of this type referring to the same students set. Please edit that one</source>
-        <translation>Omezení NEBYLO přidáno - určite je tu jiné omezení tohoto typu odkazující na stejnou skupinu studentů. Prosím vyberte si ho</translation>
+        <translation>Omezení NEBYLO přidáno - určite je tu jiné omezení tohoto typu odkazující na stejnou skupinu žáků. Prosím vyberte si ho</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="246"/>
         <source>This constraint does not induce gaps (or early gaps) for students. If a student set has lessons before and after a not available period, gaps will not be counted.</source>
-        <translation>Toto omezení neznamená mezery pro studentů. Pokud má skupina studentů předtím hodiny a potom nedostupné období, nebudou tu počítány žádné mezery.</translation>
+        <translation>Toto omezení neznamená mezery pro žáků. Pokud má skupina žáků předtím hodiny a potom nedostupné období, nebudou tu počítány žádné mezery.</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform.cpp" line="255"/>
@@ -7025,13 +7029,13 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform_template.ui" line="76"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform_template.ui" line="14"/>
         <source>Add students set not available times</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat nedostupné časy pro skupinu studentů</translation>
+        <translation>Přidat nedostupné časy pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform_template.ui" line="120"/>
@@ -7064,7 +7068,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform_template.ui" line="26"/>
         <source>Note: this constraint does not induce gaps (or early not respected) for students. If a students set has lessons before and after a not available period, there will be no gaps counted</source>
-        <translation>Poznámka: Toto omezení neznamená mezery pro studenty. Pokud má skupina studentů předtím hodiny a potom nedostupné období, nebudou tu počítány žádné mezery</translation>
+        <translation>Poznámka: Toto omezení neznamená mezery pro žáky. Pokud má skupina žáků předtím hodiny a potom nedostupné období, nebudou tu počítány žádné mezery</translation>
     </message>
 </context>
 <context>
@@ -7108,7 +7112,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform_template.ui" line="14"/>
         <source>Add subactivities preferred starting times</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat upřednostňované časy začátku pro podčinnosti</translation>
+        <translation>Přidat upřednostňované časy začátku pro dílčí činnosti</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform_template.ui" line="161"/>
@@ -7140,7 +7144,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform_template.ui" line="121"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform_template.ui" line="134"/>
@@ -7166,7 +7170,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform_template.ui" line="63"/>
         <source>Choose the component number of the subactivities to be constrained.</source>
-        <translation>Vyberte počet součástí podčinností pro omezení.</translation>
+        <translation>Vyberte počet součástí dílčích činností pro omezení.</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform_template.ui" line="22"/>
@@ -7215,7 +7219,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform_template.ui" line="14"/>
         <source>Add subactivities preferred time slots</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat upřednostňované časové bloky podčinností</translation>
+        <translation>Přidat upřednostňovaná časová pole dílčích činností</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform_template.ui" line="175"/>
@@ -7246,7 +7250,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform_template.ui" line="91"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform_template.ui" line="104"/>
@@ -7273,7 +7277,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform_template.ui" line="26"/>
         <source>Choose the component number of the subactivities to be constrained.</source>
-        <translation>Vyberte počet součástí podčinností pro omezení.</translation>
+        <translation>Vyberte počet součástí dílčích činností pro omezení.</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform_template.ui" line="38"/>
@@ -8266,7 +8270,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermaxgapsperdayform_template.ui" line="14"/>
         <source>Add teacher max gaps per day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat nejvíce mezer za den pro učitele</translation>
+        <translation>Přidat největší počet volných hodin za den pro jednoho učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperdayform_template.ui" line="65"/>
@@ -8276,7 +8280,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperdayform_template.ui" line="91"/>
         <source>Max gaps per day</source>
-        <translation>Nejvíce mezer za den</translation>
+        <translation>Největší počet volných hodin za den</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperdayform_template.ui" line="129"/>
@@ -8343,7 +8347,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermaxgapsperweekform_template.ui" line="14"/>
         <source>Add teacher max gaps per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat nejvíce mezer za týden pro učitele</translation>
+        <translation>Přidat největší počet volných hodin za týden pro jednoho učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperweekform_template.ui" line="65"/>
@@ -8353,7 +8357,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperweekform_template.ui" line="91"/>
         <source>Max gaps per week</source>
-        <translation>Nejvíce mezer za týden</translation>
+        <translation>Největší počet volných hodin za týden</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperweekform_template.ui" line="129"/>
@@ -8547,7 +8551,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermaxspanperdayform_template.ui" line="14"/>
         <source>Add teacher max span per day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Přidat největší časový úsek za den pro učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxspanperdayform_template.ui" line="33"/>
@@ -8567,7 +8571,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachermaxspanperdayform_template.ui" line="77"/>
         <source>Max span per day</source>
-        <translation type="unfinished"></translation>
+        <translation>Největší časový úsek za den</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxspanperdayform_template.ui" line="96"/>
@@ -8709,7 +8713,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachermingapsbetweenbuildingchangesform_template.ui" line="103"/>
         <source>Min gaps between building changes</source>
-        <translation>Nejméně mezer mezi změnami budov</translation>
+        <translation>Nejmenší počet volných hodin mezi změnami budov</translation>
     </message>
 </context>
 <context>
@@ -8802,7 +8806,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteacherminhoursdailyform_template.ui" line="14"/>
         <source>Add teacher min hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat minimum hodin denně pro učitele</translation>
+        <translation>Přidat ejmenší počet hodin denně pro jednoho učitele</translation>
     </message>
 </context>
 <context>
@@ -8814,32 +8818,32 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform.cpp" line="94"/>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform.cpp" line="97"/>
         <source>FET information</source>
-        <translation type="unfinished">Informace FET</translation>
+        <translation>Informace FET</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform.cpp" line="73"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Neplatná váha (procento)</translation>
+        <translation>Neplatná váha (procento)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform.cpp" line="78"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
-        <translation type="unfinished">Neplatná váha (procento) - musí být 100%</translation>
+        <translation>Neplatná váha (procento) - musí být 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform.cpp" line="86"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished">Neplatný učitel</translation>
+        <translation>Neplatný učitel</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform.cpp" line="95"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Omezení bylo přidáno:</translation>
+        <translation>Omezení bylo přidáno:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform.cpp" line="98"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Omezení NEBYLO přidáno - Oznamte, prosím, chybu</translation>
+        <translation>Omezení NEBYLO přidáno - Oznamte, prosím, chybu</translation>
     </message>
 </context>
 <context>
@@ -8848,7 +8852,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform_template.ui" line="14"/>
         <source>Add teacher min resting hours</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Nejméně oddychových hodin pro učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform_template.ui" line="28"/>
@@ -8858,7 +8862,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform_template.ui" line="58"/>
         <source>Min resting hours</source>
-        <translation type="unfinished"></translation>
+        <translation>Nejméně oddychových hodin</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform_template.ui" line="81"/>
@@ -8878,7 +8882,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform_template.ui" line="118"/>
         <source>Circular</source>
-        <translation type="unfinished"></translation>
+        <translation>Kruhový</translation>
     </message>
 </context>
 <context>
@@ -9426,7 +9430,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperdayform_template.ui" line="61"/>
         <source>Max gaps per day</source>
-        <translation>Nejvíce mezer za den</translation>
+        <translation>Největší počet volných hodin za den</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperdayform_template.ui" line="32"/>
@@ -9438,7 +9442,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmaxgapsperdayform_template.ui" line="14"/>
         <source>Add teachers max gaps per day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat nejvíce mezer za den pro učitele</translation>
+        <translation>Přidat největší počet volných hodin za den pro učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperdayform_template.ui" line="105"/>
@@ -9492,7 +9496,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperweekform_template.ui" line="61"/>
         <source>Max gaps per week</source>
-        <translation>Nejvíce mezer za týden</translation>
+        <translation>Největší počet volných hodin za týden</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperweekform_template.ui" line="32"/>
@@ -9504,7 +9508,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmaxgapsperweekform_template.ui" line="14"/>
         <source>Add teachers max gaps per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat nejvíce mezer za týden pro učitele</translation>
+        <translation>Přidat největší počet volných hodin za den pro učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperweekform_template.ui" line="105"/>
@@ -9664,7 +9668,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmaxspanperdayform_template.ui" line="14"/>
         <source>Add teachers max span per day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Přidat největší časový úsek za den pro učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxspanperdayform_template.ui" line="22"/>
@@ -9679,7 +9683,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxspanperdayform_template.ui" line="40"/>
         <source>Max span per day</source>
-        <translation type="unfinished"></translation>
+        <translation>Největší časový úsek za den</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxspanperdayform_template.ui" line="79"/>
@@ -9798,7 +9802,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersmingapsbetweenbuildingchangesform_template.ui" line="67"/>
         <source>Min gaps between building changes</source>
-        <translation>Nejméně mezer mezi změnami budov</translation>
+        <translation>Nejmenší počet volných hodin mezi změnami budov</translation>
     </message>
 </context>
 <context>
@@ -9826,7 +9830,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersminhoursdailyform.cpp" line="76"/>
         <source>Allow empty days check box must be checked. If you need to not allow empty days for the teachers, please use the constraint teachers min days per week</source>
-        <translation type="unfinished"></translation>
+        <translation>Povolit, že zaškrtávací políčko prázdných dní musí být označeno. Pokud potřebujete zakázat prázdné dny pro učitele, prosím, použite omezení &quot;minimum dní za týden pro učitele&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminhoursdailyform.cpp" line="88"/>
@@ -9841,7 +9845,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersminhoursdailyform.cpp" line="102"/>
         <source>This check box must remain checked. If you really need to not allow empty days for the teachers, please use constraint teachers min days per week</source>
-        <translation type="unfinished"></translation>
+        <translation>Toto zaškrtávací políčko musí zůstat označeno. Pokud opravdu potřebujete zakázat prázdné dny pro učitele, prosím, použijte omezení &quot;minimum dní za týden pro učitele&quot;</translation>
     </message>
 </context>
 <context>
@@ -9920,12 +9924,12 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersminrestinghoursform_template.ui" line="14"/>
         <source>Add teachers min resting hours</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Nejméně oddychových hodin pro učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminrestinghoursform_template.ui" line="22"/>
         <source>Min resting hours</source>
-        <translation type="unfinished"></translation>
+        <translation>Nejméně oddychových hodin</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminrestinghoursform_template.ui" line="45"/>
@@ -9945,7 +9949,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersminrestinghoursform_template.ui" line="82"/>
         <source>Circular</source>
-        <translation type="unfinished"></translation>
+        <translation>Kruhový</translation>
     </message>
 </context>
 <context>
@@ -10015,7 +10019,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintthreeactivitiesgroupedform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintthreeactivitiesgroupedform_template.ui" line="26"/>
@@ -10099,7 +10103,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="14"/>
         <source>Add two activities consecutive</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation>Přidat dve súsledné činnosti</translation>
+        <translation>Přidat dvě činnosti jdoucí přímo po sobě</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="206"/>
@@ -10131,7 +10135,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="199"/>
         <source>Swap</source>
         <comment>Interchange (swap) the two selected activities in the dialog</comment>
-        <translation type="unfinished">Vyměnit</translation>
+        <translation>Vyměnit</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="20"/>
@@ -10141,7 +10145,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="26"/>
@@ -10240,7 +10244,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesgroupedform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesgroupedform_template.ui" line="26"/>
@@ -10335,7 +10339,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="199"/>
         <source>Swap</source>
         <comment>Interchange (swap) the two selected activities in the dialog</comment>
-        <translation type="unfinished">Vyměnit</translation>
+        <translation>Vyměnit</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="20"/>
@@ -10345,7 +10349,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="26"/>
@@ -10385,7 +10389,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform.cpp" line="220"/>
         <source>Added group activities in initial order item</source>
-        <translation type="unfinished"></translation>
+        <translation>Přidáno sdružení činnosti pro počáteční řazení</translation>
     </message>
 </context>
 <context>
@@ -10394,7 +10398,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform_template.ui" line="14"/>
         <source>Add group activities in initial order item</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Přidat sdružení činností pro počáteční řazení</translation>
     </message>
     <message>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform_template.ui" line="20"/>
@@ -10409,7 +10413,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform_template.ui" line="46"/>
@@ -10446,7 +10450,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform_template.ui" line="154"/>
         <source>Add item</source>
-        <translation type="unfinished"></translation>
+        <translation>Přidat skupinu</translation>
     </message>
     <message>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform_template.ui" line="161"/>
@@ -10576,7 +10580,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addstudentsgroupform.cpp" line="81"/>
         <source>This name is taken for a subgroup - please consider another name</source>
-        <translation>Tento název je už použitý pro podskupinu - prosím zvolte jiný název</translation>
+        <translation>Tento název je už použitý pro dílčí skupinu - prosím zvolte jiný název</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsgroupform.cpp" line="90"/>
@@ -10625,7 +10629,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addstudentsgroupform_template.ui" line="14"/>
         <source>Add students group</source>
         <extracomment>This is the title of the dialog to add a students group</extracomment>
-        <translation>Přidat skupinu studentů</translation>
+        <translation>Přidat skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsgroupform_template.ui" line="43"/>
@@ -10635,7 +10639,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addstudentsgroupform_template.ui" line="60"/>
         <source>Number of students</source>
-        <translation>Počet studentů</translation>
+        <translation>Počet žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsgroupform_template.ui" line="22"/>
@@ -10661,7 +10665,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addstudentssubgroupform.cpp" line="81"/>
         <location filename="../src/interface/addstudentssubgroupform.cpp" line="115"/>
         <source>Subgroup insertion dialog</source>
-        <translation>Dialog vkládání podskupiny</translation>
+        <translation>Dialog vkládání dílčí skupiny</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentssubgroupform.cpp" line="62"/>
@@ -10729,7 +10733,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addstudentssubgroupform_template.ui" line="81"/>
         <source>Number of students</source>
-        <translation>Počet studentů</translation>
+        <translation>Počet žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentssubgroupform_template.ui" line="64"/>
@@ -10740,7 +10744,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addstudentssubgroupform_template.ui" line="14"/>
         <source>Add students subgroup</source>
         <extracomment>The title of the dialog to add a students subgroup</extracomment>
-        <translation>Přidat podskupinu studentů</translation>
+        <translation>Přidat dílčí skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentssubgroupform_template.ui" line="43"/>
@@ -10772,7 +10776,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addstudentsyearform.cpp" line="58"/>
         <source>This name is taken for a subgroup - please consider another name</source>
-        <translation>Tento název je už použitý pro podskupinu - prosím zvolte jiný název</translation>
+        <translation>Tento název je už použitý pro dílčí skupinu - prosím zvolte jiný název</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsyearform.cpp" line="67"/>
@@ -10801,7 +10805,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addstudentsyearform_template.ui" line="14"/>
         <source>Add students year</source>
         <extracomment>Title of the dialog of adding a students year</extracomment>
-        <translation>Přidat studentský ročník</translation>
+        <translation>Přidat žákovský ročník</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsyearform_template.ui" line="22"/>
@@ -10811,7 +10815,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addstudentsyearform_template.ui" line="39"/>
         <source>Number of students</source>
-        <translation>Počet studentů</translation>
+        <translation>Počet žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsyearform_template.ui" line="73"/>
@@ -11170,12 +11174,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1688"/>
         <source>FET - Unlock all activities without a generated timetable</source>
-        <translation type="unfinished"></translation>
+        <translation>FET - Odemknout všechny činnosti bez vytvořeného rozvrhu</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1694"/>
         <source>All activities will be unlocked (those which are not permanently locked)</source>
-        <translation type="unfinished"></translation>
+        <translation>Všechny činnosti, které nejsou trvale zamknuty, budou odemknuty</translation>
     </message>
 </context>
 <context>
@@ -11184,7 +11188,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="683"/>
         <source>%1 Space Constraints</source>
         <comment>%1 represents the number of constraints</comment>
-        <translation>%1 Prostorové omezení</translation>
+        <translation>%1 prostorových omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="252"/>
@@ -11203,13 +11207,13 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="252"/>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="308"/>
         <source>To move a space constraint, the &apos;Filter&apos; check box must not be checked.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pro přesunutí prostorového omezení nesmí být políčko Filtr zaškrtnuto.</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="256"/>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="312"/>
         <source>To move a space constraint, the &apos;Sorted&apos; check box must not be checked.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pro přesunutí prostorového omezení nesmí být políčko Tříděno zaškrtnuto.</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="401"/>
@@ -11217,7 +11221,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="850"/>
         <source>%1 / %2 space constraints</source>
         <comment>%1 represents the number of visible active space constraints, %2 represents the total number of visible space constraints</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 / %2 prostorových omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="424"/>
@@ -11282,12 +11286,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="824"/>
         <source>You are not allowed to deactivate the basic compulsory space constraints</source>
-        <translation type="unfinished"></translation>
+        <translation>Základní povinná prostorová omezení nelze vypnout</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="896"/>
         <source>Constraint comments</source>
-        <translation type="unfinished"></translation>
+        <translation>Poznámky k omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform.cpp" line="898"/>
@@ -11323,7 +11327,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/allspaceconstraintsform_template.ui" line="122"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished">Dolů</translation>
+        <translation>Dolů</translation>
     </message>
     <message>
         <location filename="../src/interface/allspaceconstraintsform_template.ui" line="129"/>
@@ -11371,7 +11375,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/allspaceconstraintsform_template.ui" line="115"/>
         <source>Sorted</source>
         <comment>It refers to space constraints</comment>
-        <translation type="unfinished">Tříděno</translation>
+        <translation>Tříděno</translation>
     </message>
 </context>
 <context>
@@ -11399,13 +11403,13 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="310"/>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="366"/>
         <source>To move a time constraint, the &apos;Filter&apos; check box must not be checked.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pro přesunutí prostorového omezení nesmí být políčko Filtr zaškrtnuto.</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="314"/>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="370"/>
         <source>To move a time constraint, the &apos;Sorted&apos; check box must not be checked.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pro přesunutí prostorového omezení nesmí být políčko Tříděno zaškrtnuto.</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="459"/>
@@ -11413,7 +11417,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="1188"/>
         <source>%1 / %2 time constraints</source>
         <comment>%1 represents the number of visible active time constraints, %2 represents the total number of visible time constraints</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 / %2 prostorových omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="482"/>
@@ -11478,12 +11482,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="1162"/>
         <source>You are not allowed to deactivate the basic compulsory time constraints</source>
-        <translation type="unfinished"></translation>
+        <translation>Základní povinná prostorová omezení nelze vypnout</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="1234"/>
         <source>Constraint comments</source>
-        <translation type="unfinished"></translation>
+        <translation>Poznámky k omezení</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform.cpp" line="1236"/>
@@ -11518,7 +11522,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/alltimeconstraintsform_template.ui" line="128"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished">Dolů</translation>
+        <translation>Dolů</translation>
     </message>
     <message>
         <location filename="../src/interface/alltimeconstraintsform_template.ui" line="135"/>
@@ -11576,13 +11580,13 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/building.cpp" line="37"/>
         <source>N:%1</source>
         <comment>The name of the building</comment>
-        <translation type="unfinished">N:%1</translation>
+        <translation>N:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/building.cpp" line="41"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation type="unfinished">P: %1</translation>
+        <translation>P: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/building.cpp" line="48"/>
@@ -11640,7 +11644,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/buildingsform.cpp" line="288"/>
         <source>Building comments</source>
-        <translation type="unfinished"></translation>
+        <translation>Poznámky k budově</translation>
     </message>
     <message>
         <location filename="../src/interface/buildingsform.cpp" line="290"/>
@@ -11861,7 +11865,8 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/commentsform.cpp" line="60"/>
         <source>Cannot update comments during simulation. Please stop simulation before this</source>
-        <translation type="unfinished"></translation>
+        <translation>V průběhu simulace nelze aktualizovat poznámky.
+Prosím, zastavte předtím vytváření rozvrhu.</translation>
     </message>
 </context>
 <context>
@@ -11915,12 +11920,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15747"/>
         <source>students=%1</source>
-        <translation>studenti=%1</translation>
+        <translation>žáci=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15749"/>
         <source>all students</source>
-        <translation>Všichni studenti</translation>
+        <translation>Všichni žáci</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15752"/>
@@ -11971,12 +11976,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15785"/>
         <source>Students=%1</source>
-        <translation>Studenti=%1</translation>
+        <translation>Žáci=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15787"/>
         <source>All students</source>
-        <translation>Všichni studenti</translation>
+        <translation>Všichni žáci</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15791"/>
@@ -12001,7 +12006,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15802"/>
         <source>must end students&apos; day</source>
-        <translation>Musí ukončit studentský den</translation>
+        <translation>Musí ukončit žákovský den</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15805"/>
@@ -12023,13 +12028,13 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="15856"/>
         <source>Time constraint activities end students&apos; day broken for activity with id=%1 (%2), increases conflicts total by %3</source>
         <comment>%1 is the id, %2 is the detailed description of the activity</comment>
-        <translation type="unfinished"></translation>
+        <translation>Časové omezení pro činnosti, které mají končit žákovský den, nevyplněno pro činnost s ID=%1 (%2). Zvyšuje počet střetů celkově o %3</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15762"/>
         <source>Activities with %1, %2, %3, %4, must end students&apos; day</source>
         <comment>%1...%4 are conditions for the activities</comment>
-        <translation>Činnosti %1, %2, %3, %4, musí ukončiť studentský den</translation>
+        <translation>Činnosti %1, %2, %3, %4, musí ukončiť žákovský den</translation>
     </message>
 </context>
 <context>
@@ -12073,7 +12078,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintactivitiesendstudentsdayform_template.ui" line="14"/>
         <source>Constraints activities end students day</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení činností končícich studentský den</translation>
+        <translation>Omezení činností končícich žákovský den</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiesendstudentsdayform_template.ui" line="83"/>
@@ -12322,7 +12327,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="95"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="108"/>
@@ -12371,7 +12376,8 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="1468"/>
         <source>Following constraint is wrong (because you need 2 or more activities). Please correct it:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Následující omezení je špatné (protože potřebujete 2 nebo více činností). Prosím opravte ho:
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="1540"/>
@@ -12547,7 +12553,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiesnotoverlappingform_template.ui" line="71"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
 </context>
 <context>
@@ -12561,7 +12567,8 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="6961"/>
         <source>Following constraint is wrong (refers to less than two activities). Please correct it:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Následující omezení je špatné (odkazuje na méně než dvě činnosti). Prosím opravte ho:
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7015"/>
@@ -12719,7 +12726,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform_template.ui" line="95"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform_template.ui" line="108"/>
@@ -12963,7 +12970,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="95"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="108"/>
@@ -13058,12 +13065,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10922"/>
         <source>students=%1</source>
-        <translation>studenti=%1</translation>
+        <translation>žáci=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10924"/>
         <source>all students</source>
-        <translation>Všichni studenti</translation>
+        <translation>Všichni žáci</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10927"/>
@@ -13099,7 +13106,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="10941"/>
         <source>Activities with %1, %2, %3, %4, %5, have a set of preferred starting times:</source>
         <comment>%1...%5 are conditions for the activities</comment>
-        <translation>Činnosti %1, %2, %3, %4, %5 mají množinu upřednostňovaných časových bloků:</translation>
+        <translation>Činnosti s %1, %2, %3, %4, %5 mají množinu upřednostňovaných počátečních časů:</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10957"/>
@@ -13130,12 +13137,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10974"/>
         <source>Students=%1</source>
-        <translation>Studenti=%1</translation>
+        <translation>Žáci=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10976"/>
         <source>All students</source>
-        <translation>Všichni studenti</translation>
+        <translation>Všichni žáci</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10980"/>
@@ -13170,7 +13177,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11012"/>
         <source>Weight (percentage)=%1%</source>
-        <translation type="unfinished">Váha (procento)=%1%</translation>
+        <translation>Váha (procento)=%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11015"/>
@@ -13187,7 +13194,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="11065"/>
         <source>Time constraint activities preferred starting times broken for activity with id=%1 (%2), increases conflicts total by %3</source>
         <comment>%1 is the id, %2 is the detailed description of the activity</comment>
-        <translation>Časové omezení upřednostňovaných začátečních časů činností nefunguje pro činnost s id=%1 (%2), zvyšuje střety celkově o %3</translation>
+        <translation>Časové omezení pro činnosti s upřednostňovanými začátečními časy nevyplněno pro činnost s ID=%1 (%2). Zvyšuje počet střetů celkově o %3</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10997"/>
@@ -13333,12 +13340,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9628"/>
         <source>students=%1</source>
-        <translation>studenti=%1</translation>
+        <translation>žáci=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9630"/>
         <source>all students</source>
-        <translation>Všichni studenti</translation>
+        <translation>Všichni žáci</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9633"/>
@@ -13374,7 +13381,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="9647"/>
         <source>Activities with %1, %2, %3, %4, %5, have a set of preferred time slots:</source>
         <comment>%1...%5 are conditions for the activities</comment>
-        <translation>Činnosti %1, %2, %3, %4, %5 mají množinu upřednostňovaných časových bloků:</translation>
+        <translation>Činnosti s %1, %2, %3, %4, %5 mají množinu upřednostňovaných časů (časových polí):</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9662"/>
@@ -13405,12 +13412,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9678"/>
         <source>Students=%1</source>
-        <translation>Studenti=%1</translation>
+        <translation>Žáci=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9680"/>
         <source>All students</source>
-        <translation>Všichni studenti</translation>
+        <translation>Všichni žáci</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9683"/>
@@ -13467,7 +13474,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9699"/>
         <source>have a set of preferred time slots (all hours of each affected activity must be in the allowed slots):</source>
-        <translation>Má množinu upřednostňovaných časových bloků (všechny hodiny každé ovlivněné činnosti musí být v povolených blocích):</translation>
+        <translation>Má množinu upřednostňovaných časových polí (všechny hodiny každé ovlivněné činnosti musí být v povolených časech):</translation>
     </message>
 </context>
 <context>
@@ -13511,7 +13518,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintactivitiespreferredtimeslotsform_template.ui" line="14"/>
         <source>Constraints activities preferred time slots</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení upřednostňovaných časových bloků činností</translation>
+        <translation>Omezení pro upřednostňovaný čas</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiespreferredtimeslotsform_template.ui" line="99"/>
@@ -13560,7 +13567,8 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="7236"/>
         <source>Following constraint is wrong (refers to less than two activities). Please correct it:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Následující omezení je špatné (odkazuje na méně než dvě činnosti). Prosím opravte ho:
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7288"/>
@@ -13576,13 +13584,13 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7312"/>
         <source>Activities same room if consecutive</source>
-        <translation type="unfinished"></translation>
+        <translation>Činností se stejnými místnostmi, když jsou následné</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7295"/>
         <source>Activities same room if consecutive, WP:%1%, NA:%2, A: %3</source>
         <comment>Constraint description. WP means weight percentage, NA means the number of activities, A means activities list</comment>
-        <translation type="unfinished"></translation>
+        <translation>Činností se stejnými místnostmi, když jsou následné: PV:%1%, PČ:%2, SČ: %3</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7313"/>
@@ -13663,7 +13671,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintactivitiessameroomifconsecutiveform_template.ui" line="14"/>
         <source>Constraints activities same room if consecutive</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Omezení činností se stejným prostorem, když jsou následné</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessameroomifconsecutiveform_template.ui" line="28"/>
@@ -13683,7 +13691,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiessameroomifconsecutiveform_template.ui" line="62"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessameroomifconsecutiveform_template.ui" line="75"/>
@@ -13732,7 +13740,8 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="12027"/>
         <source>Following constraint is wrong (because you need 2 or more activities). Please correct it:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Následující omezení je špatné (protože potřebujete 2 nebo více činností). Prosím opravte ho:
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12099"/>
@@ -13898,7 +13907,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="99"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="112"/>
@@ -13928,7 +13937,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingdayform_template.ui" line="32"/>
         <source>Please try to read Help/Important tips, advice 2). It is IMPORTANT to remove redundant min days constraints after adding constraints same starting day. Please also click Help button here for information.</source>
-        <translation type="unfinished"></translation>
+        <translation>Přečtěte si, prosím, bezpodmínečně nejprve Nápovědu, radu číslo 2 v důležitých radách. Je VELICE důležité nejprve odstranit všechna nadbytečná omezení druhu &quot;nejmenší počet dnů&quot;, poté co byla vytvořena omezení druhu &quot;činnosti začínají ve stejný den&quot;. Pro obdržení dalších informací také můžete klepnout na tlačítko Nápověda pod oknem.</translation>
     </message>
 </context>
 <context>
@@ -13942,7 +13951,8 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="11722"/>
         <source>Following constraint is wrong (because you need 2 or more activities). Please correct it:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Následující omezení je špatné (protože potřebujete 2 nebo více činností). Prosím opravte ho:
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11794"/>
@@ -14098,7 +14108,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="77"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartinghourform_template.ui" line="90"/>
@@ -14132,7 +14142,8 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="1163"/>
         <source>Following constraint is wrong (because you need 2 or more activities). Please correct it:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Následující omezení je špatné (protože potřebujete 2 nebo více činností). Prosím opravte ho:
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="1235"/>
@@ -14277,7 +14288,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingtimeform_template.ui" line="32"/>
         <source>Please read Help/Important tips, advice 2). It is IMPORTANT to remove redundant min days constraints after adding constraints same starting time. Click the Help button!</source>
-        <translation type="unfinished"></translation>
+        <translation>Přečtěte si, prosím, nejprve Nápovědu, radu číslo 2 v důležitých radách. Je VELICE důležité nejprve odstranit všechna nadbytečná omezení druhu &quot;nejmenší počet dnů&quot;, poté co byla vytvořena omezení druhu &quot;činnosti začínají ve stejný den&quot;. Pro obdržení dalších informací také můžete klepnout na tlačítko Nápověda pod oknem.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingtimeform_template.ui" line="54"/>
@@ -14333,7 +14344,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingtimeform_template.ui" line="121"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingtimeform_template.ui" line="192"/>
@@ -14352,7 +14363,8 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="13500"/>
         <source>Following constraint is wrong (because it refers to invalid activity id). Please correct it (maybe removing it is a solution):
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Toto omezení je chybné (protože odkazuje na neplatné ID činnosti). Opravte je, prosím, popřípadě je odstraňte:
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13536"/>
@@ -14364,7 +14376,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="13539"/>
         <source>Act. id: %1 (%2) must end students&apos; day</source>
         <comment>%1 is the id, %2 is the detailed description of the activity.</comment>
-        <translation>Činnost s id:%1 (%2) musí končiť studentský den</translation>
+        <translation>Činnost s id:%1 (%2) musí končiť žákovský den</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13545"/>
@@ -14380,7 +14392,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13553"/>
         <source>Activity must end students&apos; day</source>
-        <translation>Činnost musí končiť studentský den</translation>
+        <translation>Činnost musí končiť žákovský den</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13554"/>
@@ -14408,7 +14420,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="13606"/>
         <source>Time constraint activity ends students&apos; day broken for activity with id=%1 (%2), increases conflicts total by %3</source>
         <comment>%1 is the id, %2 is the detailed description of the activity</comment>
-        <translation>Časové omezení &quot;činnost končí studentský den&quot; nefunguje pro činnost s id=%1 (%2), zvyšuje střety celkově o %3</translation>
+        <translation>Časové omezení &quot;činnost končí žákovský den&quot; nefunguje pro činnost s id=%1 (%2), zvyšuje střety celkově o %3</translation>
     </message>
 </context>
 <context>
@@ -14452,7 +14464,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintactivityendsstudentsdayform_template.ui" line="14"/>
         <source>Constraints activity ends students day</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení činnosti končícej studentský den</translation>
+        <translation>Omezení činnosti končícej žákovský den</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivityendsstudentsdayform_template.ui" line="26"/>
@@ -14507,7 +14519,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivityendsstudentsdayform_template.ui" line="71"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
 </context>
 <context>
@@ -14709,7 +14721,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitypreferredroomform_template.ui" line="71"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitypreferredroomform_template.ui" line="97"/>
@@ -14897,7 +14909,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitypreferredroomsform_template.ui" line="79"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitypreferredroomsform_template.ui" line="105"/>
@@ -14916,7 +14928,8 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="8860"/>
         <source>Following constraint is wrong (because it refers to invalid activity id). Please correct it (maybe removing it is a solution):
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Toto omezení je chybné (protože odkazuje na neplatné ID činnosti). Opravte je, prosím, popřípadě je odstraňte:
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8865"/>
@@ -14995,7 +15008,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="9009"/>
         <source>Time constraint activity preferred starting time broken for activity with id=%1 (%2), increases conflicts total by %3</source>
         <comment>%1 is the id, %2 is the detailed description of the activity</comment>
-        <translation>Časové omezení upřednostňovaný začáteční čas činnosti nefunguje pro činnost s id=%1 (%2), zvyšuje střety celkově o %3</translation>
+        <translation>Časové omezení pro činnosti s upřednostňovanými začátečními časy nevyplněno pro činnost s ID=%1 (%2). Zvyšuje počet střetů celkově o %3</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8952"/>
@@ -15006,19 +15019,22 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="8866"/>
         <source>Constraint activity preferred starting time is wrong because it refers to removed day. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Nynější omezení činnosti mají upřednostňované počáteční časy je chybné, protože odkazuje na odstraněný den. Opravte je, prosím, a zkuste to znovu. Opravení znamená upravení omezení a aktualizaci údajů. Omezení zní:
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8873"/>
         <source>Constraint activity preferred starting time is wrong because preferred hour is too late (after the last acceptable slot). Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Nynější omezení činnosti mají upřednostňované počáteční časy je chybné, protože upřednostňovaný čas je příliš pozdě (po posledním dostupném časovém poli). Opravte je, prosím, a zkuste to znovu. Opravení znamená upravení omezení a aktualizaci údajů. Omezení zní:
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8880"/>
         <source>Constraint activity preferred starting time is wrong because it refers to removed hour. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Nynější omezení činnosti mají upřednostňované počáteční časy je chybné, protože odkazuje na odstraněnou hodinu (časové pole). Opravte je, prosím, a zkuste to znovu. Opravení znamená upravení omezení a aktualizaci údajů. Omezení zní:
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8954"/>
@@ -15122,7 +15138,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitypreferredstartingtimeform_template.ui" line="71"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
 </context>
 <context>
@@ -15136,7 +15152,8 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="10438"/>
         <source>Following constraint is wrong (because it refers to invalid activity id). Please correct it (maybe removing it is a solution):
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Toto omezení je chybné (protože odkazuje na neplatné ID činnosti). Opravte je, prosím, popřípadě je odstraňte:
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10444"/>
@@ -15149,19 +15166,22 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="10445"/>
         <source>Constraint activity preferred starting times is wrong because it refers to removed day. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Nynější omezení činnosti mají upřednostňované počáteční časy je chybné, protože odkazuje na odstraněný den. Opravte je, prosím, a zkuste to znovu. Opravení znamená upravení omezení a aktualizaci údajů. Omezení zní:
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10452"/>
         <source>Constraint activity preferred starting times is wrong because a preferred hour is too late (after the last acceptable slot). Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Nynější omezení činnosti mají upřednostňované počáteční časy je chybné, protože upřednostňovaný čas je příliš pozdě (po posledním dostupném časovém poli). Opravte je, prosím, a zkuste to znovu. Opravení znamená upravení omezení a aktualizaci údajů. Omezení zní:
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10459"/>
         <source>Constraint activity preferred starting times is wrong because it refers to removed hour. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Nynější omezení činnosti mají upřednostňované počáteční časy je chybné, protože odkazuje na odstraněnou hodinu (časové pole). Opravte je, prosím, a zkuste to znovu. Opravení znamená upravení omezení a aktualizaci údajů. Omezení zní:
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10505"/>
@@ -15312,7 +15332,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitypreferredstartingtimesform_template.ui" line="71"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitypreferredstartingtimesform_template.ui" line="36"/>
@@ -15331,7 +15351,8 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="9121"/>
         <source>Following constraint is wrong (because it refers to invalid activity id). Please correct it (maybe removing it is a solution):
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Toto omezení je chybné (protože odkazuje na neplatné ID činnosti). Opravte je, prosím, popřípadě je odstraňte:
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9128"/>
@@ -15345,25 +15366,29 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="9129"/>
         <source>Constraint activity preferred time slots is wrong because it refers to removed day. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Nynější omezení činnosti mají upřednostňovaná časová pole je chybné, protože odkazuje na odstraněný den. Opravte je, prosím, a zkuste to znovu. Opravení znamená upravení omezení a aktualizaci údajů. Omezení zní:
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9136"/>
         <source>Constraint activity preferred time slots is wrong because a preferred hour is too late (after the last acceptable slot). Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Nynější omezení činnosti mají upřednostňovaná časová pole je chybné, protože upřednostňovaný čas je příliš pozdě (po posledním dostupném časovém poli). Opravte je, prosím, a zkuste to znovu. Opravení znamená upravení omezení a aktualizaci údajů. Omezení zní:
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9143"/>
         <source>Constraint activity preferred time slots is wrong because it refers to removed hour. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Nynější omezení činnosti mají upřednostňovaná časová pole je chybné, protože odkazuje na odstraněnou hodinu. Opravte je, prosím, a zkuste to znovu. Opravení znamená upravení omezení a aktualizaci údajů. Omezení zní:
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9151"/>
         <source>Constraint activity preferred time slots is wrong because it has hour or day not specified for a slot (-1). Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Nynější omezení činnosti mají upřednostňovaná časová pole je chybné, protože pro časové pole nebyl zadán ani čas ani hodina (-1). Opravte je, prosím, a zkuste to znovu. Opravení znamená upravení omezení a aktualizaci údajů. Omezení zní:
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9197"/>
@@ -15397,7 +15422,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9233"/>
         <source>has a set of preferred time slots (all hours of the activity must be in the allowed slots):</source>
-        <translation type="unfinished"></translation>
+        <translation>má upřednostňované časy (časová pole) (všechny hodiny činnosti musí být v povolených polích):</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9248"/>
@@ -15468,7 +15493,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintactivitypreferredtimeslotsform_template.ui" line="14"/>
         <source>Constraints activity preferred time slots</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení upřednostňovaných časových bloků činnosti</translation>
+        <translation>Omezení upřednostňovaných časů</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitypreferredtimeslotsform_template.ui" line="146"/>
@@ -15513,7 +15538,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitypreferredtimeslotsform_template.ui" line="87"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitypreferredtimeslotsform_template.ui" line="52"/>
@@ -15903,7 +15928,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="167"/>
         <source>activities with more students than the capacity of the room</source>
-        <translation>činnosti s víc studenty, než je kapacita místnosti</translation>
+        <translation>činnosti s víc žáky, než je kapacita místnosti</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="170"/>
@@ -16079,7 +16104,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="205"/>
         <source>students assigned to more than one activity simultaneously</source>
-        <translation>studenti přiřazení k víc, než jedné činnosti současně</translation>
+        <translation>žáci přiřazení k víc, než jedné činnosti současně</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="208"/>
@@ -16119,7 +16144,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="419"/>
         <source>subgroup %1 has more than one allocated activity on day %2, hour %3</source>
-        <translation>podskupina %1 má víc, než jednu přiřazenu činnost na den %2, hodinu %3</translation>
+        <translation>dílčí skupina %1 má víc, než jednu přiřazenu činnost na den %2, hodinu %3</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="326"/>
@@ -16404,7 +16429,8 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="2155"/>
         <source>Following constraint is wrong (because you need 2 or more activities). Please correct it:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Následující omezení je špatné (protože potřebujete 2 nebo více činností). Prosím opravte ho:
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="2228"/>
@@ -16611,7 +16637,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform_template.ui" line="71"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform_template.ui" line="26"/>
@@ -16635,7 +16661,8 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="1810"/>
         <source>Following constraint is wrong (because you need 2 or more activities). Please correct it:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Následující omezení je špatné (protože potřebujete 2 nebo více činností). Prosím opravte ho:
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="1884"/>
@@ -16832,7 +16859,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="431"/>
         <source>Read Help/Important tips - tip 2) for details.</source>
-        <translation type="unfinished"></translation>
+        <translation>Přečtěte si nápovědu, důležité rady: Pro další informace se podívejte na Důležité rady, rada číslo 2.</translation>
     </message>
 </context>
 <context>
@@ -16891,7 +16918,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform_template.ui" line="71"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform_template.ui" line="141"/>
@@ -16915,7 +16942,8 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="2489"/>
         <source>Following constraint is wrong (because you need 2 or more activities). Please correct it:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Následující omezení je špatné (protože potřebujete 2 nebo více činností). Prosím opravte ho:
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="2562"/>
@@ -16926,7 +16954,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="2565"/>
         <source>Min gaps between activities</source>
-        <translation>Nejméně mezer mezi činnostmi</translation>
+        <translation>Nejmenší počet volných hodin mezi činnostmi</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="2566"/>
@@ -16960,7 +16988,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="2578"/>
         <source>Minimum gaps between activities (if activities on the same day)</source>
-        <translation>Nejméně mezer mezi činnostmi (pokud jsou činnosti ve stejný den)</translation>
+        <translation>Nejmenší počet volných hodin mezi činnostmi (pokud jsou činnosti ve stejný den)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="2579"/>
@@ -17102,7 +17130,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintmingapsbetweenactivitiesform_template.ui" line="103"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmingapsbetweenactivitiesform_template.ui" line="58"/>
@@ -17324,7 +17352,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7794"/>
         <source>Students for activity tag %1 have max %2 hours continuously</source>
-        <translation>Studenti mají pro druh činnosti %1 maximum %2 hodin po sobě</translation>
+        <translation>Žáci mají pro druh činnosti %1 maximum %2 hodin po sobě</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7796"/>
@@ -17340,7 +17368,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7806"/>
         <source>All students, for an activity tag, must respect the maximum number of hours continuously</source>
-        <translation>Všichni studenti musí respektovat největší počet hodin po sobě pro druh činnosti</translation>
+        <translation>Všichni žáci musí respektovat největší počet hodin po sobě pro druh činnosti</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7807"/>
@@ -17372,7 +17400,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="7871"/>
         <location filename="../src/engine/timeconstraint.cpp" line="7899"/>
         <source>Time constraint students, activity tag %1, max %2 hours continuously, broken for subgroup %3, on day %4, length=%5.</source>
-        <translation>Časové omezení pro studentů, druh činnosti %1, max %2 hodin po sobě, nefunguje pro podskupinu %3, v den %4, dľžka=%5.</translation>
+        <translation>Časové omezení pro žáků, druh činnosti %1, max %2 hodin po sobě, nefunguje pro dílčí skupinu %3, v den %4, dľžka=%5.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7882"/>
@@ -17447,7 +17475,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsactivitytagmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Constraints students activity tag max hours continuously</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení maxima hodin po sobě pro druh činnosti studentů</translation>
+        <translation>Omezení maxima hodin po sobě pro druh činnosti žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsactivitytagmaxhourscontinuouslyform_template.ui" line="97"/>
@@ -17462,7 +17490,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentsactivitytagmaxhourscontinuouslyform_template.ui" line="26"/>
         <source>This constraint ensures that all students do not have more than max hours continuously of activities with the specified activity tag</source>
-        <translation>Toto omezení zaručuje, že všichni studenti nemají víc než maximum hodin po sobě pro činnosti se stanoveným druhem činnosti</translation>
+        <translation>Toto omezení zaručuje, že všichni žáci nemají víc než maximum hodin po sobě pro činnosti se stanoveným druhem činnosti</translation>
     </message>
 </context>
 <context>
@@ -17476,7 +17504,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16518"/>
         <source>Students for activity tag %1 have max %2 hours daily</source>
-        <translation>Studenti mají pro druh činnosti %1 maximálne %2 hodiny/hodin denně</translation>
+        <translation>Žáci mají pro druh činnosti %1 maximálne %2 hodiny/hodin denně</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16520"/>
@@ -17498,7 +17526,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16531"/>
         <source>All students, for an activity tag, must respect the maximum number of hours daily</source>
-        <translation>Všichni studenti musí respektovat největší počet hodin denně pro druh činnosti</translation>
+        <translation>Všichni žáci musí respektovat největší počet hodin denně pro druh činnosti</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16532"/>
@@ -17529,7 +17557,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16591"/>
         <source>Time constraint students, activity tag %1, max %2 hours daily, broken for subgroup %3, on day %4, length=%5.</source>
-        <translation>Časové omezení pro studentů, druh činnosti %1, max %2 hodiny/hodin po sobě, nefunguje pro podskupinu %3, v den %4, dľžka=%5.</translation>
+        <translation>Časové omezení pro žáků, druh činnosti %1, max %2 hodiny/hodin po sobě, nefunguje pro dílčí skupinu %3, v den %4, dľžka=%5.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16602"/>
@@ -17578,12 +17606,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsactivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Constraints students activity tag max hours daily</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení maxima hodin denně pro druh činnosti studentů</translation>
+        <translation>Omezení maxima hodin denně pro druh činnosti žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsactivitytagmaxhoursdailyform_template.ui" line="26"/>
         <source>This constraint ensures that all students do not have more than max hours daily of activities with the specified activity tag.</source>
-        <translation>Toto omezení zaručuje, že všichni studenti nemají víc než maximum hodin činností konkrétneho druhu denně.</translation>
+        <translation>Toto omezení zaručuje, že všichni žáci nemají víc než maximum hodin činností konkrétneho druhu denně.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsactivitytagmaxhoursdailyform_template.ui" line="42"/>
@@ -17642,7 +17670,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6274"/>
         <source>Students must arrive early, respecting maximum %1 arrivals at second hour</source>
-        <translation>Studenti musí přijít brzy, dávat pozor na maximum %1 příchodů ve druhou hodinu</translation>
+        <translation>Žáci musí přijít brzy, dávat pozor na maximum %1 příchodů ve druhou hodinu</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6277"/>
@@ -17658,7 +17686,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6287"/>
         <source>All students must begin their activities early, respecting maximum %1 later arrivals, at second hour</source>
-        <translation type="unfinished"></translation>
+        <translation>Žáci musí do vyučování přijít brzy, a smějí přijít pozdě až ve druhou hodinu nanejvýš %1 krát.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6289"/>
@@ -17684,12 +17712,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6346"/>
         <source>Constraint students early max %1 beginnings at second hour broken for subgroup %2, on day %3, because students have an illegal gap, increases conflicts total by %4</source>
-        <translation>Omezení studentů pro maximum %1 časných začátků ve druhou hodinu nefunguje pro podskupinu %2, v den %3, protože studenti mají neplatnou mezeru, zvyšuje střety celkově o %4</translation>
+        <translation>Omezení žáků pro maximum %1 časných začátků ve druhou hodinu nefunguje pro dílčí skupinu %2, v den %3, protože žáci mají neplatnou mezeru, zvyšuje střety celkově o %4</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6372"/>
         <source>Constraint students early max %1 beginnings at second hour broken for subgroup %2, because students have too many arrivals at second hour, increases conflicts total by %3</source>
-        <translation>Omezení studentů pro maximum %1 časných začátků ve druhou hodinu nefunguje pro podskupinu %2, protože studenti mají příliš veľa příchodů ve druhou hodinu, zvyšuje střety celkově o %3</translation>
+        <translation>Omezení dřívější začátek vyučování žáků (nejvíce %1 začátků až ve druhou hodinu) není vyplněno pro dílčí skupinu %2, protože žáci mají příliš mnoho příchodů ve druhou hodinu. Počet střetů se zvyšuje celkově o %3</translation>
     </message>
 </context>
 <context>
@@ -17733,7 +17761,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsearlymaxbeginningsatsecondhourform_template.ui" line="14"/>
         <source>Constraints students early max beginnings at second hour</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení studentů pro nejvíce časných začátkůve druhou hodinu</translation>
+        <translation>Omezení žáků pro nejvíce časných začátkůve druhou hodinu</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsearlymaxbeginningsatsecondhourform_template.ui" line="28"/>
@@ -17843,7 +17871,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15483"/>
         <source>All students respect working in an hourly interval a maximum number of days per week</source>
-        <translation>Všichni studenti respektují práci v hodinovém intervalu maximálního počtu dní za týden</translation>
+        <translation>Všichni žáci respektují práci v hodinovém intervalu maximálního počtu dní za týden</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15484"/>
@@ -17880,7 +17908,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15541"/>
         <source>Time constraint students interval max days per week broken for subgroup: %1, allowed %2 days, required %3 days.</source>
-        <translation>Časové omezení &quot;studentský interval maxima dní za týden&quot; nefunguje pro podskupinu: %1, povolené/ých %2 dni/dní, požadované %3 dni.</translation>
+        <translation>Časové omezení &quot;žákovský interval maxima dní za týden&quot; nefunguje pro dílčí skupinu: %1, povolené/ých %2 dni/dní, požadované %3 dni.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15546"/>
@@ -17929,7 +17957,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Constraints students interval max days per week</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení intervalu maxima dní za týden pro studenty</translation>
+        <translation>Omezení intervalu maxima dní za týden pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsintervalmaxdaysperweekform_template.ui" line="28"/>
@@ -17973,7 +18001,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4179"/>
         <source>Students max building changes per day</source>
-        <translation>Nejvíce změn budov pro studentů za den</translation>
+        <translation>Nejvíce změn budov pro žáků za den</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4181"/>
@@ -17995,7 +18023,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4194"/>
         <source>Students maximum building changes per day</source>
-        <translation>Nejvíce změn budov pro studentů za den</translation>
+        <translation>Nejvíce změn budov pro žáků za den</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4196"/>
@@ -18021,7 +18049,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4270"/>
         <source>Space constraint students max building changes per day broken for students=%1 on day %2</source>
-        <translation>Prostorové omezení nejvíce změn budov pro studentů za den nefunguje pro studentů=%1 v den %2</translation>
+        <translation>Prostorové omezení nejvíce změn budov pro žáků za den nefunguje pro žáků=%1 v den %2</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4274"/>
@@ -18070,7 +18098,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxbuildingchangesperdayform_template.ui" line="14"/>
         <source>Constraints students max building changes per day</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení nejvíce změn budov pro studentů za den</translation>
+        <translation>Omezení nejvíce změn budov pro žáků za den</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxbuildingchangesperdayform_template.ui" line="28"/>
@@ -18114,7 +18142,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4703"/>
         <source>Students max building changes per week</source>
-        <translation>Nejvíce změn budov pro studentů za týden</translation>
+        <translation>Nejvíce změn budov pro žáků za týden</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4705"/>
@@ -18136,7 +18164,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4718"/>
         <source>Students maximum building changes per week</source>
-        <translation>Nejvíce změn budov pro studentů za týden</translation>
+        <translation>Nejvíce změn budov pro žáků za týden</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4720"/>
@@ -18162,7 +18190,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4795"/>
         <source>Space constraint students max building changes per week broken for students=%1</source>
-        <translation>Prostorové omezení nejvíce změn budov pro studentů za týden nefunguje pro studentů=%1</translation>
+        <translation>Prostorové omezení nejvíce změn budov pro žáků za týden nefunguje pro žáků=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4798"/>
@@ -18211,7 +18239,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxbuildingchangesperweekform_template.ui" line="14"/>
         <source>Constraints students max building changes per week</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení nejvíce změn budov pro studentů za týden</translation>
+        <translation>Omezení nejvíce změn budov pro žáků za týden</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxbuildingchangesperweekform_template.ui" line="28"/>
@@ -18396,7 +18424,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17028"/>
         <source>Students max gaps per day</source>
-        <translation>Nejvíce mezer za den pro studenty</translation>
+        <translation>Největší počet volných hodin za den pro žáky</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17029"/>
@@ -18424,7 +18452,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17041"/>
         <source>All students must respect the maximum number of gaps per day</source>
-        <translation>Všichni studenti musí respektovat největší počet mezer denně</translation>
+        <translation>Všichni žáci musí respektovat největší počet mezer denně</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17042"/>
@@ -18439,7 +18467,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17044"/>
         <source>Maximum gaps per day=%1</source>
-        <translation>Nejvíce mezer za den=%1</translation>
+        <translation>Největší počet volných hodin za den=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17047"/>
@@ -18455,7 +18483,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17103"/>
         <source>Time constraint students max gaps per day broken for subgroup: %1, it has %2 extra gaps, on day %3, conflicts increase=%4</source>
-        <translation>Časové omezení &quot;studentské nejvíce mezer za den&quot; nefunguje pro podskupinu: %1, má %2 mezer navíc, v den %3, zvýšení střetů=%4</translation>
+        <translation>Časové omezení &quot;Největší počet volných hodin pro žáky&quot; nefunguje pro dílčí skupinu: %1, má %2 mezer navíc, v den %3, zvýšení střetů=%4</translation>
     </message>
 </context>
 <context>
@@ -18499,7 +18527,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxgapsperdayform_template.ui" line="14"/>
         <source>Constraints students max gaps per day</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení maxima mezer za den pro studenty</translation>
+        <translation>Omezení maxima mezer za den pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperdayform_template.ui" line="26"/>
@@ -18553,7 +18581,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5803"/>
         <source>Students max gaps per week</source>
-        <translation>Nejvíce mezer za týden pro studenty</translation>
+        <translation>Největší počet volných hodin za týden pro žáky</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5804"/>
@@ -18575,7 +18603,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5815"/>
         <source>All students must respect the maximum number of gaps per week</source>
-        <translation>Všichni studenti musí respektovat největší počet mezer týdenne</translation>
+        <translation>Všichni žáci musí respektovat největší počet mezer týdenne</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5816"/>
@@ -18590,7 +18618,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5818"/>
         <source>Maximum gaps per week=%1</source>
-        <translation>Nejvíce mezer za týden=%1</translation>
+        <translation>Největší počet volných hodin za týden=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5821"/>
@@ -18606,7 +18634,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5877"/>
         <source>Time constraint students max gaps per week broken for subgroup: %1, it has %2 extra gaps, conflicts increase=%3</source>
-        <translation>Časové omezení &quot;studentské nejvíce mezer za týden&quot; nefunguje pro podskupinu: %1, má %2 mezer navíc, zvýšení střetů=%3</translation>
+        <translation>Časové omezení &quot;Největší počet volných hodin pro žáky&quot; nefunguje pro dílčí skupinu: %1, má %2 mezer navíc, zvýšení střetů=%3</translation>
     </message>
 </context>
 <context>
@@ -18650,7 +18678,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxgapsperweekform_template.ui" line="14"/>
         <source>Constraints students max gaps per week</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení maxima mezer za týden pro studenty</translation>
+        <translation>Omezení maxima mezer za týden pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperweekform_template.ui" line="28"/>
@@ -18694,7 +18722,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7266"/>
         <source>Students max hours continuously</source>
-        <translation>Nejvíce hodin po sobě pro studenty</translation>
+        <translation>Nejvíce hodin po sobě pro žáky</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7267"/>
@@ -18716,7 +18744,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7278"/>
         <source>All students must respect the maximum number of hours continuously</source>
-        <translation>Všichni studenti musí respektovat největší počet hodin po sobě</translation>
+        <translation>Všichni žáci musí respektovat největší počet hodin po sobě</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7279"/>
@@ -18743,7 +18771,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="7320"/>
         <location filename="../src/engine/timeconstraint.cpp" line="7347"/>
         <source>Time constraint students max %1 hours continuously broken for subgroup %2, on day %3, length=%4.</source>
-        <translation>Časové omezení mximum %1 hodin po sobě pro studenty nefunguje pro podskupinu %2, v den %3, délka=%4.</translation>
+        <translation>Časové omezení mximum %1 hodin po sobě pro žáky nefunguje pro dílčí skupinu %2, v den %3, délka=%4.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7330"/>
@@ -18793,7 +18821,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Constraints students max hours continuously</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení maxima hodin po sobě pro studenty</translation>
+        <translation>Omezení největšího počtu hodin následujících přímo po sobě pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxhourscontinuouslyform_template.ui" line="28"/>
@@ -18837,7 +18865,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6810"/>
         <source>Students max hours daily</source>
-        <translation>Nejvíce hodin denně pro studenty</translation>
+        <translation>Nejvíce hodin denně pro žáky</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6811"/>
@@ -18859,7 +18887,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6822"/>
         <source>All students must respect the maximum number of hours daily</source>
-        <translation>Všichni studenti musí respektovat největší počet hodin denně</translation>
+        <translation>Všichni žáci musí respektovat největší počet hodin denně</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6823"/>
@@ -18885,7 +18913,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6871"/>
         <source>Time constraint students max hours daily broken for subgroup: %1, day: %2, lenght=%3, conflict increase=%4</source>
-        <translation>Časové omezení maximum hodin denně pro studenty nefunguje pro podskupinu: %1, den: %2, délka=%3, zvýšení konflitu=%4</translation>
+        <translation>Časové omezení maximum hodin denně pro žáky nefunguje pro dílčí skupinu: %1, den: %2, délka=%3, zvýšení konflitu=%4</translation>
     </message>
 </context>
 <context>
@@ -18929,7 +18957,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxhoursdailyform_template.ui" line="14"/>
         <source>Constraints students max hours daily</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení maxima hodin denně pro studenty</translation>
+        <translation>Omezení největšího počtu hodin denně pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxhoursdailyform_template.ui" line="28"/>
@@ -18968,24 +18996,24 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="19308"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation type="unfinished">P: %1</translation>
+        <translation>P: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19311"/>
         <source>Students max span per day</source>
-        <translation type="unfinished"></translation>
+        <translation>Největší časový úsek za den pro žáky</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19312"/>
         <source>WP:%1%</source>
         <comment>Weight percentage</comment>
-        <translation type="unfinished">PV:%1%</translation>
+        <translation>PV:%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19313"/>
         <source>MS:%1</source>
         <comment>Max span (in hours, per day)</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">NČÚ:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19322"/>
@@ -19005,7 +19033,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19325"/>
         <source>Maximum span per day=%1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Největší časový úsek za den=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19328"/>
@@ -19109,7 +19137,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5238"/>
         <source>Students min gaps between building changes</source>
-        <translation>Nejméně mezer mezi změnami budov studentů</translation>
+        <translation>Nejmenší počet volných hodin mezi změnami budov pro žáky</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5240"/>
@@ -19131,7 +19159,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5253"/>
         <source>Students minimum gaps between building changes</source>
-        <translation>Nejméně mezer mezi změnami budov studentů</translation>
+        <translation>Nejmenší počet volných hodin po změně budovy pro žáků</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5255"/>
@@ -19141,7 +19169,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5257"/>
         <source>Minimum gaps between building changes=%1</source>
-        <translation>Nejméně mezer mezi změnami budovy=%1</translation>
+        <translation>Nejmenší počet volných hodin mezi změnami budovy=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5260"/>
@@ -19157,7 +19185,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5333"/>
         <source>Space constraint students min gaps between building changes broken for students=%1 on day %2</source>
-        <translation>Prostorové omezení minima mezer mezi změnami budov pro studenty nefunguje pro studentů=%1 v den %2</translation>
+        <translation>Prostorové omezení minima mezer mezi změnami budov pro žáky nefunguje pro žáků=%1 v den %2</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5337"/>
@@ -19206,7 +19234,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="14"/>
         <source>Constraints students min gaps between building changes</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení minima mezer mezi změnami budov pro studenty</translation>
+        <translation>Omezení minima mezer mezi změnami budov pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="28"/>
@@ -19250,7 +19278,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8379"/>
         <source>Students min hours daily</source>
-        <translation>Nejméně hodin denně pro studenty</translation>
+        <translation>Nejmenší počet hodin denně pro žáky</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8380"/>
@@ -19278,12 +19306,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8393"/>
         <source>(nonstandard, students may have empty days)</source>
-        <translation>(nestandardní, studenti smějí mít prázdné dny)</translation>
+        <translation>(nestandardní, žáci smějí mít prázdné dny)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8396"/>
         <source>All students must respect the minimum number of hours daily</source>
-        <translation>Všichni studenti musí respektovat nejmenší počet hodin denně</translation>
+        <translation>Všichni žáci musí respektovat nejmenší počet hodin denně</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8397"/>
@@ -19314,7 +19342,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8449"/>
         <source>Time constraint students min hours daily broken for subgroup: %1, day: %2, lenght=%3, conflict increase=%4</source>
-        <translation>Časové omezení minimum hodin denně pro studenty nefunguje pro podskupinu: %1, den: %2, délka=%3, zvýšení konflitu=%4</translation>
+        <translation>Časové omezení minimum hodin denně pro žáky nefunguje pro dílčí skupinu: %1, den: %2, délka=%3, zvýšení konflitu=%4</translation>
     </message>
 </context>
 <context>
@@ -19358,7 +19386,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsminhoursdailyform_template.ui" line="14"/>
         <source>Constraints students min hours daily</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení minima hodin denně pro studenty</translation>
+        <translation>Omezení minima hodin denně pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminhoursdailyform_template.ui" line="26"/>
@@ -19407,30 +19435,30 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="20148"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation type="unfinished">P: %1</translation>
+        <translation>P: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="20151"/>
         <source>Students min resting hours</source>
-        <translation type="unfinished"></translation>
+        <translation>Nejméně oddychových hodin pro žáky</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="20152"/>
         <source>WP:%1%</source>
         <comment>Weight percentage</comment>
-        <translation type="unfinished">PV:%1%</translation>
+        <translation>PV:%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="20153"/>
         <source>mRH:%1</source>
         <comment>Minimum resting hours</comment>
-        <translation type="unfinished"></translation>
+        <translation>NOH:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="20154"/>
         <source>C:%1</source>
         <comment>Circular</comment>
-        <translation type="unfinished">K:%1</translation>
+        <translation>K:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="20163"/>
@@ -19440,7 +19468,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="20164"/>
         <source>All students must respect the minimum resting hours (between days)</source>
-        <translation type="unfinished"></translation>
+        <translation>Všichni žáci musí respektovat nejmenší počet oddychových hodin (mezi dvěma dny)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="20165"/>
@@ -19450,12 +19478,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="20166"/>
         <source>Minimum resting hours=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>Nejméně oddychových hodin=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="20167"/>
         <source>Circular=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>Kruhový=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="20170"/>
@@ -19559,7 +19587,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8039"/>
         <source>Students set %1 for activity tag %2 has max %3 hours continuously</source>
-        <translation>Skupina studentů %1 má pro druh činnosti %2 maximum %3 hodiny/hodin po sobě</translation>
+        <translation>Skupina žáků %1 má pro druh činnosti %2 maximum %3 hodiny/hodin po sobě</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8041"/>
@@ -19575,7 +19603,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8051"/>
         <source>A students set, for an activity tag, must respect the maximum number of hours continuously</source>
-        <translation>Skupina studentů musí respektovat největší počet hodin po sobě pro druh činnosti</translation>
+        <translation>Skupina žáků musí respektovat největší počet hodin po sobě pro druh činnosti</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8052"/>
@@ -19585,7 +19613,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8053"/>
         <source>Students set=%1</source>
-        <translation>Skupina studentů=%1</translation>
+        <translation>Skupina žáků=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8054"/>
@@ -19617,13 +19645,13 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="8080"/>
         <source>Constraint students set max hours continuously is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Omezení maxima hodin po sobě pro skupinu studentů je špatné, protože odkazuje na neexistující skupinu studentů. Prosím opravte nebo odstraňte toto omezení. Prosím oznamte možnou chybu. Omezení je: %1</translation>
+        <translation>Omezení maxima hodin po sobě pro skupinu žáků je špatné, protože odkazuje na neexistující skupinu žáků. Prosím opravte nebo odstraňte toto omezení. Prosím oznamte možnou chybu. Omezení je: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8196"/>
         <location filename="../src/engine/timeconstraint.cpp" line="8223"/>
         <source>Time constraint students set max %1 hours continuously broken for subgroup %2, on day %3, length=%4.</source>
-        <translation>Časové omezení maximum %1 hodin po sobě pro skupinu studentů nefunguje pro podskupinu %2, v den %3, délka=%4.</translation>
+        <translation>Časové omezení maximum %1 hodin po sobě pro skupinu žáků nefunguje pro dílčí skupinu %2, v den %3, délka=%4.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8206"/>
@@ -19698,7 +19726,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Constraints students set activity tag max hours continuously</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení maxima hodin po sobě pro druh činnosti skupiny studentů</translation>
+        <translation>Omezení maxima hodin po sobě pro druh činnosti skupiny žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="100"/>
@@ -19713,7 +19741,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="26"/>
         <source>This constraint ensures that the specified students do not have more than max hours continuously of activities with the specified activity tag</source>
-        <translation>Toto omezení zaručuje, že určení studenti nemají víc než maximum hodin po sobě pro činnosti se stanoveným druhem činnosti</translation>
+        <translation>Toto omezení zaručuje, že určení žáci nemají víc než maximum hodin po sobě pro činnosti se stanoveným druhem činnosti</translation>
     </message>
 </context>
 <context>
@@ -19727,7 +19755,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16732"/>
         <source>Students set %1 for activity tag %2 has max %3 hours daily</source>
-        <translation>Skupina studentů %1 má pro druh činnosti %2 maximum %3 hodiny/hodin denně</translation>
+        <translation>Skupina žáků %1 má pro druh činnosti %2 maximum %3 hodiny/hodin denně</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16734"/>
@@ -19749,7 +19777,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16745"/>
         <source>A students set, for an activity tag, must respect the maximum number of hours daily</source>
-        <translation>Skupina studentů musí respektovat největší počet hodin denně pro druh činnosti</translation>
+        <translation>Skupina žáků musí respektovat největší počet hodin denně pro druh činnosti</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16746"/>
@@ -19759,7 +19787,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16747"/>
         <source>Students set=%1</source>
-        <translation>Skupina studentů=%1</translation>
+        <translation>Skupina žáků=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16748"/>
@@ -19791,12 +19819,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="16774"/>
         <source>Constraint students set max hours daily is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Omezení maxima hodin za den pro skupinu studentů je špatné, protože odkazuje na neexistující skupinu studentů. Prosím opravte nebo odstraňte toto omezení. Prosím oznamte možnou chybu. Omezení je: %1</translation>
+        <translation>Omezení maxima hodin za den pro skupinu žáků je špatné, protože odkazuje na neexistující skupinu žáků. Prosím opravte nebo odstraňte toto omezení. Prosím oznamte možnou chybu. Omezení je: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16885"/>
         <source>Time constraint students set, activity tag %1, max %2 hours daily, broken for subgroup %3, on day %4, length=%5.</source>
-        <translation>Časové omezení pro skupinu studentů, druh činnosti %1, max %2 hodiny/hodin denně, nefunguje pro podskupinu %3, v den %4, dľžka=%5.</translation>
+        <translation>Časové omezení pro skupinu žáků, druh činnosti %1, max %2 hodiny/hodin denně, nefunguje pro dílčí skupinu %3, v den %4, dľžka=%5.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16896"/>
@@ -19845,7 +19873,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Constraints students set activity tag max hours daily</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení maxima hodin denně pro druh činnosti skupiny studentů</translation>
+        <translation>Omezení maxima hodin denně pro druh činnosti skupiny žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="130"/>
@@ -19880,7 +19908,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="26"/>
         <source>This constraint ensures that the specified students do not have more than max hours daily of activities with the specified activity tag.</source>
-        <translation>Toto omezení zaručuje, že určení studenti nemají víc než maximum hodin denně pro činnosti se stanoveným druhem činnosti.</translation>
+        <translation>Toto omezení zaručuje, že určení žáci nemají víc než maximum hodin denně pro činnosti se stanoveným druhem činnosti.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="42"/>
@@ -19909,7 +19937,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="6484"/>
         <source>Constraint students set early is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Omezení skupiny studentů brzy je špatné, protože odkazuje na neexistující skupinu studentů. Prosím opravte to nebo odstraňte omezení. Prosím oznamte možnou chybu. Omezení je:%1</translation>
+        <translation>Omezení skupiny žáků brzy je špatné, protože odkazuje na neexistující skupinu žáků. Prosím opravte to nebo odstraňte omezení. Prosím oznamte možnou chybu. Omezení je:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6563"/>
@@ -19920,7 +19948,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6567"/>
         <source>Students set must arrive early, respecting maximum %1 arrivals at second hour</source>
-        <translation>Studenti musí přijít brzy, dávat pozor na maximum %1 příchodů ve druhou hodinu</translation>
+        <translation>Žáci musí přijít brzy, dávat pozor na maximum %1 příchodů ve druhou hodinu</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6569"/>
@@ -19957,7 +19985,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6584"/>
         <source>Students set=%1</source>
-        <translation>Skupina studentů=%1</translation>
+        <translation>Skupina žáků=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6585"/>
@@ -19978,12 +20006,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6641"/>
         <source>Constraint students set early max %1 beginnings at second hour broken for subgroup %2, on day %3, because students have an illegal gap, increases conflicts total by %4</source>
-        <translation>Omezení skupiny studentů pro maximum %1 časných začátků ve druhou hodinu nefunguje pro podskupinu %2, v den %3, protože studenti mají neplatnou mezeru, zvyšuje střety celkově o %4</translation>
+        <translation>Omezení dřívější začátek vyučování skupiny žáků (nejvíce %1 začátků až ve druhou hodinu) není vyplněno pro dílčí skupinu %2, v den %3, protože žáci mají nedovolenou volnou hodinu. Počet střetů se zvyšuje celkově o %4</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6666"/>
         <source>Constraint students set early max %1 beginnings at second hour broken for subgroup %2, because students have too many arrivals at second hour, increases conflicts total by %3</source>
-        <translation>Omezení skupiny studentů pro maximum %1 časných začátků ve druhou hodinu nefunguje pro podskupinu %2, protože studenti mají příliš veľa příchodů ve druhou hodinu, zvyšuje střety celkově o %3</translation>
+        <translation>Omezení dřívější začátek vyučování skupiny žáků (nejvíce %1 začátků až ve druhou hodinu) není vyplněno pro dílčí skupinu %2, protože žáci mají příliš mnoho příchodů ve druhou hodinu. Počet střetů se zvyšuje celkově o %3</translation>
     </message>
 </context>
 <context>
@@ -20027,7 +20055,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="14"/>
         <source>Constraints students set early max beginnings at second hour</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení maxima časných začátků ve druhou hodinu pro skupinu studentů</translation>
+        <translation>Omezení maxima časných začátků ve druhou hodinu pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="28"/>
@@ -20076,7 +20104,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="1344"/>
         <location filename="../src/engine/spaceconstraint.cpp" line="1360"/>
         <source>Students set home room</source>
-        <translation>Domovská místnost skupiny studentů</translation>
+        <translation>Domovská místnost skupiny žáků</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1301"/>
@@ -20127,7 +20155,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1363"/>
         <source>Students=%1</source>
-        <translation>Studenti=%1</translation>
+        <translation>Žáci=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1368"/>
@@ -20144,7 +20172,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="1430"/>
         <source>Space constraint students set home room broken for activity with id %1 (%2)</source>
         <comment>%1 is activity id, %2 is detailed description of activity</comment>
-        <translation>Prostorové omezení domovská místnost skupiny studentů nefunguje pro činnost s id=%1 (%2)</translation>
+        <translation>Prostorové omezení domovská místnost skupiny žáků nefunguje pro činnost s id=%1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1435"/>
@@ -20193,7 +20221,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssethomeroomform_template.ui" line="14"/>
         <source>Constraints students set home room</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení domovskej místnosti skupiny studentů</translation>
+        <translation>Omezení domovskej místnosti skupiny žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomform_template.ui" line="104"/>
@@ -20259,7 +20287,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="1624"/>
         <location filename="../src/engine/spaceconstraint.cpp" line="1641"/>
         <source>Students set home rooms</source>
-        <translation>Domovské místnosti skupiny studentů</translation>
+        <translation>Domovské místnosti skupiny žáků</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1625"/>
@@ -20292,7 +20320,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1644"/>
         <source>Students=%1</source>
-        <translation>Studenti=%1</translation>
+        <translation>Žáci=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1647"/>
@@ -20314,7 +20342,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="1717"/>
         <source>Space constraint students set home rooms broken for activity with id %1 (%2)</source>
         <comment>%1 is activity id, %2 is detailed description of activity</comment>
-        <translation>Prostorové omezení domovské místnosti skupiny studentů nefunguje pro činnost s id=%1 (%2)</translation>
+        <translation>Prostorové omezení domovské místnosti skupiny žáků nefunguje pro činnost s id=%1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1722"/>
@@ -20363,7 +20391,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssethomeroomsform_template.ui" line="14"/>
         <source>Constraints students set home rooms</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení domovské místnosti skupiny studentů</translation>
+        <translation>Omezení domovské místnosti skupiny žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomsform_template.ui" line="104"/>
@@ -20438,7 +20466,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="15125"/>
         <source>Constraint students set interval max days per week is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Omezení intervalu maxima dní za týden skupiny studentů je špatné, protože odkazuje na neexistující skupinu studentů. Prosím opravte to nebo odstraňte omezení. Prosím oznamte možnou chybu. Omezení je:%1</translation>
+        <translation>Omezení intervalu maxima dní za týden skupiny žáků je špatné, protože odkazuje na neexistující skupinu žáků. Prosím opravte to nebo odstraňte omezení. Prosím oznamte možnou chybu. Omezení je:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15212"/>
@@ -20449,7 +20477,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15214"/>
         <source>Students set interval max days per week</source>
-        <translation>Interval maxima dní za týden skupiny studentů</translation>
+        <translation>Interval maxima dní za týden skupiny žáků</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15215"/>
@@ -20496,7 +20524,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15233"/>
         <source>A students set respects working in an hourly interval a maximum number of days per week</source>
-        <translation>Skupina studentů respektuje práci v hodinovom intervale největšího počtu dní za týden</translation>
+        <translation>Skupina žáků respektuje práci v hodinovom intervale největšího počtu dní za týden</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15234"/>
@@ -20506,7 +20534,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15235"/>
         <source>Students set=%1</source>
-        <translation>Skupina studentů=%1</translation>
+        <translation>Skupina žáků=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15236"/>
@@ -20538,7 +20566,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15292"/>
         <source>Time constraint students set interval max days per week broken for subgroup: %1, allowed %2 days, required %3 days.</source>
-        <translation>Časové omezení &quot;interval maxima dní za týden skupiny studentů&quot; nefunguje pro podskupinu: %1, povolené/ých %2 dni/dní, požadované %3 dni.</translation>
+        <translation>Časové omezení &quot;interval maxima dní za týden skupiny žáků&quot; nefunguje pro dílčí skupinu: %1, povolené/ých %2 dni/dní, požadované %3 dni.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15297"/>
@@ -20587,7 +20615,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Constraints students set interval max days per week</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení intervalu maxima dní za týden skupiny studentů</translation>
+        <translation>Omezení intervalu maxima dní za týden skupiny žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetintervalmaxdaysperweekform_template.ui" line="28"/>
@@ -20636,7 +20664,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="3861"/>
         <source>Constraint students set max building changes per day is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Omezení nejvíce změn budov za den pro skupinu studentů je špatné, protože odkazuje na neexistující skupinu studentů. Prosím opravte nebo odstraňte toto omezení. Prosím oznamte možnou chybu. Omezení je: %1</translation>
+        <translation>Omezení nejvíce změn budov za den pro skupinu žáků je špatné, protože odkazuje na neexistující skupinu žáků. Prosím opravte nebo odstraňte toto omezení. Prosím oznamte možnou chybu. Omezení je: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3938"/>
@@ -20647,7 +20675,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3940"/>
         <source>Students set max building changes per day</source>
-        <translation>Nejvíce změn budov pro skupinu studentů za den</translation>
+        <translation>Nejvíce změn budov pro skupinu žáků za den</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3942"/>
@@ -20675,7 +20703,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3957"/>
         <source>Students set maximum building changes per day</source>
-        <translation>Nejvíce změn budov pro skupinu studentů za den</translation>
+        <translation>Nejvíce změn budov pro skupinu žáků za den</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3959"/>
@@ -20685,7 +20713,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3961"/>
         <source>Students=%1</source>
-        <translation>Studenti=%1</translation>
+        <translation>Žáci=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3963"/>
@@ -20706,7 +20734,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4035"/>
         <source>Space constraint students set max building changes per day broken for students=%1 on day %2</source>
-        <translation>Prostorové omezení nejvíce změn budov pro skupinu studentů za den nefunguje pro studentů=%1 v den %2</translation>
+        <translation>Prostorové omezení nejvíce změn budov pro skupinu žáků za den nefunguje pro žáků=%1 v den %2</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4039"/>
@@ -20755,7 +20783,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperdayform_template.ui" line="14"/>
         <source>Constraints students set max building changes per day</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení nejvíce změn budov za den pro skupinu studentů</translation>
+        <translation>Omezení nejvíce změn budov za den pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperdayform_template.ui" line="28"/>
@@ -20804,7 +20832,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="4385"/>
         <source>Constraint students set max building changes per week is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Omezení nejvíce změn budov za týden pro skupinu studentů je špatné, protože odkazuje na neexistující skupinu studentů. Prosím opravte nebo odstraňte toto omezení. Prosím oznamte možnou chybu. Omezení je: %1</translation>
+        <translation>Omezení nejvíce změn budov za týden pro skupinu žáků je špatné, protože odkazuje na neexistující skupinu žáků. Prosím opravte nebo odstraňte toto omezení. Prosím oznamte možnou chybu. Omezení je: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4462"/>
@@ -20815,7 +20843,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4464"/>
         <source>Students set max building changes per week</source>
-        <translation>Nejvíce změn budov za týden pro skupinu studentů</translation>
+        <translation>Nejvíce změn budov za týden pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4466"/>
@@ -20843,7 +20871,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4481"/>
         <source>Students set maximum building changes per week</source>
-        <translation>Nejvíce změn budov pro skupinu studentů za týden</translation>
+        <translation>Nejvíce změn budov pro skupinu žáků za týden</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4483"/>
@@ -20853,7 +20881,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4485"/>
         <source>Students=%1</source>
-        <translation>Studenti=%1</translation>
+        <translation>Žáci=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4487"/>
@@ -20874,7 +20902,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4560"/>
         <source>Space constraint students set max building changes per week broken for students=%1</source>
-        <translation>Prostorové omezení nejvíce změn budov pro skupinu studentů za týden nefunguje pro studentů=%1</translation>
+        <translation>Prostorové omezení nejvíce změn budov pro skupinu žáků za týden nefunguje pro žáků=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4563"/>
@@ -20923,7 +20951,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperweekform_template.ui" line="14"/>
         <source>Constraints students set max building changes per week</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení nejvíce změn budov pro skupinu studentů za týden</translation>
+        <translation>Omezení nejvíce změn budov pro skupinu žáků za týden</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxbuildingchangesperweekform_template.ui" line="28"/>
@@ -21021,7 +21049,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18303"/>
         <source>Students set=%1</source>
-        <translation>Skupina studentů=%1</translation>
+        <translation>Skupina žáků=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18305"/>
@@ -21140,7 +21168,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="17210"/>
         <source>Constraint students set max gaps per day is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Omezení maxima mezer za den pro skupinu studentů je špatné, protože odkazuje na neexistující skupinu studentů. Prosím opravte nebo odstraňte toto omezení. Prosím oznamte možnou chybu. Omezení je: %1</translation>
+        <translation>Omezení maxima mezer za den pro skupinu žáků je špatné, protože odkazuje na neexistující skupinu žáků. Prosím opravte nebo odstraňte toto omezení. Prosím oznamte možnou chybu. Omezení je: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17288"/>
@@ -21151,7 +21179,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17292"/>
         <source>Students set max gaps per day</source>
-        <translation>Nejvíce mezer za den pro skupinu studentů</translation>
+        <translation>Největší počet volných hodin za den pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17293"/>
@@ -21185,7 +21213,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17305"/>
         <source>A students set must respect the maximum number of gaps per day</source>
-        <translation>Skupina studentů musí respektovat největší počet mezer denně</translation>
+        <translation>Skupina žáků musí respektovat největší počet mezer denně</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17306"/>
@@ -21200,12 +21228,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17308"/>
         <source>Maximum gaps per day=%1</source>
-        <translation>Nejvíce mezer za den=%1</translation>
+        <translation>Největší počet volných hodin za den=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17309"/>
         <source>Students=%1</source>
-        <translation>Studenti=%1</translation>
+        <translation>Žáci=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17312"/>
@@ -21221,7 +21249,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17369"/>
         <source>Time constraint students set max gaps per day broken for subgroup: %1, extra gaps=%2, on day %3, conflicts increase=%4</source>
-        <translation>Časové omezení &quot;nejvíce mezer skupiny studentů za den&quot; nefunguje pro podskupinu: %1, má %2 mezer navíc, v den %3, zvýšení střetů=%4</translation>
+        <translation>Časové omezení &quot;Největší počet volných hodin pro skupinu žáků&quot; nefunguje pro dílčí skupinu: %1, má %2 volných hodin navíc, v den %3, zvýšení střetů=%4</translation>
     </message>
 </context>
 <context>
@@ -21265,7 +21293,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetmaxgapsperdayform_template.ui" line="14"/>
         <source>Constraints students set max gaps per day</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení maxima mezer skupiny studentů za den</translation>
+        <translation>Omezení maxima mezer skupiny žáků za den</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxgapsperdayform_template.ui" line="26"/>
@@ -21324,7 +21352,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="5982"/>
         <source>Constraint students set max gaps per week is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Omezení maxima mezer za týden pro skupinu studentů je špatné, protože odkazuje na neexistující skupinu studentů. Prosím opravte nebo odstraňte toto omezení. Prosím oznamte možnou chybu. Omezení je: %1</translation>
+        <translation>Omezení maxima mezer za týden pro skupinu žáků je špatné, protože odkazuje na neexistující skupinu žáků. Prosím opravte nebo odstraňte toto omezení. Prosím oznamte možnou chybu. Omezení je: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6060"/>
@@ -21335,7 +21363,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6063"/>
         <source>Students set max gaps per week</source>
-        <translation>Nejvíce mezer za týden pro skupinu studentů</translation>
+        <translation>Největší počet volných hodin za týden pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6064"/>
@@ -21363,7 +21391,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6075"/>
         <source>A students set must respect the maximum number of gaps per week</source>
-        <translation>Skupina studentů musí respektovat největší počet mezer týdenne</translation>
+        <translation>Skupina žáků musí respektovat největší počet mezer týdenne</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6076"/>
@@ -21378,12 +21406,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6078"/>
         <source>Maximum gaps per week=%1</source>
-        <translation>Nejvíce mezer za týden=%1</translation>
+        <translation>Největší počet volných hodin za týden=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6079"/>
         <source>Students=%1</source>
-        <translation>Studenti=%1</translation>
+        <translation>Žáci=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6082"/>
@@ -21399,7 +21427,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="6139"/>
         <source>Time constraint students set max gaps per week broken for subgroup: %1, extra gaps=%2, conflicts increase=%3</source>
-        <translation>Časové omezení &quot;nejvíce mezer skupiny studentů za týden&quot; nefunguje pro podskupinu: %1, má %2 mezer navíc, zvýšení střetů=%3</translation>
+        <translation>Časové omezení &quot;Největší počet volných hodin pro skupiny žáků za týden&quot; nefunguje pro dílčí skupinu: %1, má %2 volných hodin navíc, zvýšení střetů=%3</translation>
     </message>
 </context>
 <context>
@@ -21443,7 +21471,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetmaxgapsperweekform_template.ui" line="14"/>
         <source>Constraints students set max gaps per week</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení maxima mezer skupiny studentů za týden</translation>
+        <translation>Omezení maxima mezer skupiny žáků za týden</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxgapsperweekform_template.ui" line="28"/>
@@ -21492,7 +21520,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7486"/>
         <source>Students set max hours continuously</source>
-        <translation>Nejvíce hodin po sobě pro skupinu studentů</translation>
+        <translation>Nejvíce hodin po sobě pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7487"/>
@@ -21520,7 +21548,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7499"/>
         <source>A students set must respect the maximum number of hours continuously</source>
-        <translation>Skupina studentů musí respektovat největší počet hodin po sobě</translation>
+        <translation>Skupina žáků musí respektovat největší počet hodin po sobě</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7500"/>
@@ -21530,7 +21558,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7501"/>
         <source>Students set=%1</source>
-        <translation>Skupina studentů=%1</translation>
+        <translation>Skupina žáků=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7502"/>
@@ -21557,13 +21585,13 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="7523"/>
         <source>Constraint students set max hours continuously is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Omezení maxima hodin po sobě pro skupinu studentů je špatné, protože odkazuje na neexistující skupinu studentů. Prosím opravte nebo odstraňte toto omezení. Prosím oznamte možnou chybu. Omezení je: %1</translation>
+        <translation>Omezení maxima hodin po sobě pro skupinu žáků je špatné, protože odkazuje na neexistující skupinu žáků. Prosím opravte nebo odstraňte toto omezení. Prosím oznamte možnou chybu. Omezení je: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7599"/>
         <location filename="../src/engine/timeconstraint.cpp" line="7626"/>
         <source>Time constraint students set max %1 hours continuously broken for subgroup %2, on day %3, length=%4.</source>
-        <translation>Časové omezení maximum %1 hodin po sobě pro skupinu studentů nefunguje pro podskupinu %2, v den %3, délka=%4.</translation>
+        <translation>Časové omezení maximum %1 hodin po sobě pro skupinu žáků nefunguje pro dílčí skupinu %2, v den %3, délka=%4.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7609"/>
@@ -21613,7 +21641,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Constraints students set max hours continuously</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení maxima hodin po sobě pro skupinu studentů</translation>
+        <translation>Omezení maxima hodin po sobě pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxhourscontinuouslyform_template.ui" line="28"/>
@@ -21662,7 +21690,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7005"/>
         <source>Students set max hours daily</source>
-        <translation>Nejvíce hodin denně pro skupinu studentů</translation>
+        <translation>Nejvíce hodin denně pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7006"/>
@@ -21690,7 +21718,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7018"/>
         <source>A students set must respect the maximum number of hours daily</source>
-        <translation>Skupina studentů musí respektovat největší počet hodin denně</translation>
+        <translation>Skupina žáků musí respektovat největší počet hodin denně</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7019"/>
@@ -21700,7 +21728,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7020"/>
         <source>Students set=%1</source>
-        <translation>Skupina studentů=%1</translation>
+        <translation>Skupina žáků=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7021"/>
@@ -21727,12 +21755,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="7042"/>
         <source>Constraint students set max hours daily is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Omezení maxima hodin za den pro skupinu studentů je špatné, protože odkazuje na neexistující skupinu studentů. Prosím opravte nebo odstraňte toto omezení. Prosím oznamte možnou chybu. Omezení je: %1</translation>
+        <translation>Omezení maxima hodin za den pro skupinu žáků je špatné, protože odkazuje na neexistující skupinu žáků. Prosím opravte nebo odstraňte toto omezení. Prosím oznamte možnou chybu. Omezení je: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="7125"/>
         <source>Time constraint students set max hours daily broken for subgroup: %1, day: %2, lenght=%3, conflicts increase=%4</source>
-        <translation>Časové omezení maximum hodin denně pro skupinu studentů nefunguje pro podskupinu: %1, den: %2, délka=%3, zvýšení konflitu=%4</translation>
+        <translation>Časové omezení maximum hodin denně pro skupinu žáků nefunguje pro dílčí skupinu: %1, den: %2, délka=%3, zvýšení konflitu=%4</translation>
     </message>
 </context>
 <context>
@@ -21776,7 +21804,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetmaxhoursdailyform_template.ui" line="14"/>
         <source>Constraints students set max hours daily</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení maxima hodin denně pro skupinu studentů</translation>
+        <translation>Omezení maxima hodin denně pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmaxhoursdailyform_template.ui" line="28"/>
@@ -21843,7 +21871,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="19072"/>
         <source>MS:%1</source>
         <comment>Max span (in hours, per day)</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">NČÚ:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19081"/>
@@ -21863,12 +21891,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19084"/>
         <source>Students set=%1</source>
-        <translation>Skupina studentů=%1</translation>
+        <translation>Skupina žáků=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19085"/>
         <source>Maximum span per day=%1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Největší časový úsek za den=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19088"/>
@@ -21988,7 +22016,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="4908"/>
         <source>Constraint students set min gaps between building changes is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Omezení minimum mezer mezi změnami budov skupiny studentů je špatné, protože odkazuje na neexistující skupinu studentů. Prosím opravte nebo odstraňte toto omezení. Prosím oznamte možnou chybu. Omezení je: %1</translation>
+        <translation>Omezení minimum mezer mezi změnami budov skupiny žáků je špatné, protože odkazuje na neexistující skupinu žáků. Prosím opravte nebo odstraňte toto omezení. Prosím oznamte možnou chybu. Omezení je: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4985"/>
@@ -21999,7 +22027,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4987"/>
         <source>Students set min gaps between building changes</source>
-        <translation>Nejméně mezer mezi změnami budov skupiny studentů</translation>
+        <translation>Nejmenší počet volných hodin po změně budovy pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4989"/>
@@ -22027,7 +22055,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5004"/>
         <source>Students set minimum gaps between building changes</source>
-        <translation>Nejméně mezer mezi změnami budov skupiny studentů</translation>
+        <translation>Nejmenší počet volných hodin po změně budovy pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5006"/>
@@ -22037,12 +22065,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5008"/>
         <source>Students=%1</source>
-        <translation>Studenti=%1</translation>
+        <translation>Žáci=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5010"/>
         <source>Minimum gaps between building changes=%1</source>
-        <translation>Nejméně mezer mezi změnami budovy=%1</translation>
+        <translation>Nejmenší počet volných hodin mezi změnami budovy=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5013"/>
@@ -22058,7 +22086,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5086"/>
         <source>Space constraint students set min gaps between building changes broken for students=%1 on day %2</source>
-        <translation>Prostorové omezení minima mezer mezi změnami budov pro skupiny studentů nefunguje pro studentů=%1 v den %2</translation>
+        <translation>Prostorové omezení minima mezer mezi změnami budov pro skupiny žáků nefunguje pro žáků=%1 v den %2</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5090"/>
@@ -22107,7 +22135,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetmingapsbetweenbuildingchangesform_template.ui" line="14"/>
         <source>Constraints students set min gaps between building changes</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení minimum mezer mezi změnami budov skupiny studentů</translation>
+        <translation>Omezení minimum mezer mezi změnami budov skupiny žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetmingapsbetweenbuildingchangesform_template.ui" line="28"/>
@@ -22156,7 +22184,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8598"/>
         <source>Students set min hours daily</source>
-        <translation>Nejméně hodin denně pro skupinu studentů</translation>
+        <translation>Nejméně hodin denně pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8599"/>
@@ -22190,12 +22218,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8613"/>
         <source>(nonstandard, students may have empty days)</source>
-        <translation>(nestandardní, studenti smějí mít prázdné dny)</translation>
+        <translation>(nestandardní, žáci smějí mít prázdné dny)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8616"/>
         <source>A students set must respect the minimum number of hours daily</source>
-        <translation>Skupina studentů musí respektovat nejmenší počet hodin denně</translation>
+        <translation>Skupina žáků musí respektovat nejmenší počet hodin denně</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8617"/>
@@ -22205,7 +22233,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8618"/>
         <source>Students set=%1</source>
-        <translation>Skupina studentů=%1</translation>
+        <translation>Skupina žáků=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8619"/>
@@ -22237,12 +22265,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="8641"/>
         <source>Constraint students set min hours daily is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Omezení minima hodin za den pro skupinu studentů je špatné, protože odkazuje na neexistující skupinu studentů. Prosím opravte nebo odstraňte toto omezení. Prosím oznamte možnou chybu. Omezení je: %1</translation>
+        <translation>Omezení minima hodin za den pro skupinu žáků je špatné, protože odkazuje na neexistující skupinu žáků. Prosím opravte nebo odstraňte toto omezení. Prosím oznamte možnou chybu. Omezení je: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="8728"/>
         <source>Time constraint students set min hours daily broken for subgroup: %1, day: %2, lenght=%3, conflicts increase=%4</source>
-        <translation>Časové omezení minimum hodin denně pro skupinu studentů nefunguje pro podskupinu: %1, den: %2, délka=%3, zvýšení konflitu=%4</translation>
+        <translation>Časové omezení minimum hodin denně pro skupinu žáků nefunguje pro dílčí skupinu: %1, den: %2, délka=%3, zvýšení konflitu=%4</translation>
     </message>
 </context>
 <context>
@@ -22286,7 +22314,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetminhoursdailyform_template.ui" line="14"/>
         <source>Constraints students set min hours daily</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>Omezení minima hodin denně pro skupinu studentů</translation>
+        <translation>Omezení minima hodin denně pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetminhoursdailyform_template.ui" line="26"/>
@@ -22345,7 +22373,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19906"/>
         <source>Students set min resting hours</source>
-        <translation type="unfinished"></translation>
+        <translation>Nejméně oddychových hodin pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19907"/>
@@ -22363,7 +22391,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="19909"/>
         <source>mRH:%1</source>
         <comment>Minimum resting hours</comment>
-        <translation type="unfinished"></translation>
+        <translation>NOH:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19910"/>
@@ -22379,7 +22407,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19920"/>
         <source>A students set must respect the minimum resting hours (between days)</source>
-        <translation type="unfinished"></translation>
+        <translation>Všichni žáci musí respektovat nejmenší počet oddychových hodin (mezi dvěma dny)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19921"/>
@@ -22389,17 +22417,17 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19922"/>
         <source>Students set=%1</source>
-        <translation>Skupina studentů=%1</translation>
+        <translation>Skupina žáků=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19923"/>
         <source>Minimum resting hours=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>Nejméně oddychových hodin=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19924"/>
         <source>Circular=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>Kruhový=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19927"/>
@@ -22465,7 +22493,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetminrestinghoursform_template.ui" line="14"/>
         <source>Constraints students set min resting hours</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení nejmenšího počtu odpočinkových hodin studentů</translation>
+        <translation>Omezení nejmenšího počtu oddychových hodin pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetminrestinghoursform_template.ui" line="28"/>
@@ -22519,7 +22547,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="823"/>
         <source>Constraint students set not available is wrong because it refers to inexistent students set. Please correct it (removing it might be a solution). Please report potential bug. Constraint is:
 %1</source>
-        <translation>Omezení nedostupnosti skupiny studentů je špatné, protože odkazuje na neexistující skupinu studentů. Prosím opravte nebo odstraňte toto omezení. Prosím oznamte možnou chybu. Omezení je: %1</translation>
+        <translation>Omezení nedostupnosti skupiny žáků je špatné, protože odkazuje na neexistující skupinu žáků. Prosím opravte nebo odstraňte toto omezení. Prosím oznamte možnou chybu. Omezení je: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="832"/>
@@ -22531,13 +22559,14 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="833"/>
         <source>Constraint students set not available times is wrong because it refers to removed day. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Omezení nedostupných časů skupiny studentů je špatné, protože odkazuje na odstraněn den. Prosím opravte ho a zkuste to znovu. Opravení znamená upravení omezení a aktualizování informací. Omezení je: %1</translation>
+        <translation>Nynější omezení nedostupných časů skupiny žáků je špatné, protože odkazuje na odstraněný den. Prosím opravte ho a zkuste to znovu. Opravení znamená upravení omezení a aktualizování informací. Omezení je: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="840"/>
         <source>Constraint students set not available times is wrong because an hour is too late (after the last acceptable slot). Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Omezení nedostupných časů skupiny studentů je špatné, protože hodina je příliš nebrzy (po poslednom akceptovanom bloku). Prosím opravte ho a zkuste to znovu. Opravení znamená upravení omezení a aktualizování informací. Omezení je: %1</translation>
+        <translation>Nynější omezení časů nedostupnosti skupiny žáků je špatné, protože hodina je příliš pozdě (po posledním dostupném časovém poli). Prosím opravte je a zkuste to znovu. Opravení znamená upravení omezení a aktualizování informací. Omezení je:
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="925"/>
@@ -22548,7 +22577,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="928"/>
         <source>Students set not available</source>
-        <translation>Skupina studentů nedostupná</translation>
+        <translation>Skupina žáků nedostupná</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="929"/>
@@ -22576,7 +22605,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="952"/>
         <source>A students set is not available</source>
-        <translation>Skupina studentů není dostupná</translation>
+        <translation>Skupina žáků není dostupná</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="953"/>
@@ -22586,7 +22615,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="955"/>
         <source>Students=%1</source>
-        <translation>Studenti=%1</translation>
+        <translation>Žáci=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="957"/>
@@ -22618,7 +22647,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="1012"/>
         <source>Time constraint students set not available</source>
-        <translation>Časové omezení nedostupnosti skupiny studentů</translation>
+        <translation>Časové omezení nedostupnosti skupiny žáků</translation>
     </message>
 </context>
 <context>
@@ -22662,7 +22691,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetnotavailabletimesform_template.ui" line="14"/>
         <source>Constraints students set not available times</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>Omezení nedostupných časů skupiny studentů</translation>
+        <translation>Omezení nedostupných časů skupiny žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetnotavailabletimesform_template.ui" line="28"/>
@@ -22713,21 +22742,21 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="11277"/>
         <source>Constraint subactivities preferred starting times is wrong because it refers to removed day. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Omezení upřednostňovaných začátečních časů podčinností je špatné, protože odkazuje na odstraněn den. Prosím opravte ho a zkuste to znovu. Opravení znamená upravení omezení a aktualizování informací. Omezení je:
+        <translation>Nynější omezení upřednostňovaných začátečních časů dílčích činností je špatné, protože odkazuje na odstraněný den. Prosím opravte ho a zkuste to znovu. Opravení znamená upravení omezení a aktualizování informací. Omezení je:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11284"/>
         <source>Constraint subactivities preferred starting times is wrong because a preferred hour is too late (after the last acceptable slot). Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Omezení upřednostňovaných začátečních časů podčinností je špatné, protože preferovaná hodina je příliš nebrzy (po poslednom akceptovanom bloku). Prosím opravte ho a zkuste to znovu. Opravení znamená upravení omezení a aktualizování informací. Omezení je:
+        <translation>Nynější omezení upřednostňovaných začátečních časů dílčích činností je špatné, protože upřednostňovaná hodina je příliš pozdě (po posledním dostupném časovém poli). Prosím opravte je a zkuste to znovu. Opravení znamená upravení omezení a aktualizování informací. Omezení je:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11291"/>
         <source>Constraint subactivities preferred starting times is wrong because it refers to removed hour. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Omezení upřednostňovaných začátečních časů podčinností je špatné, protože odkazuje na odstraněnou hodinu. Prosím opravte ho a zkuste to znovu. Opravení znamená upravení omezení a aktualizování informací. Omezení je:
+        <translation>Omezení upřednostňovaných začátečních časů dílčích činností je špatné, protože odkazuje na odstraněnou hodinu. Prosím opravte ho a zkuste to znovu. Opravení znamená upravení omezení a aktualizování informací. Omezení je:
 %1</translation>
     </message>
     <message>
@@ -22760,12 +22789,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11404"/>
         <source>students=%1</source>
-        <translation>studenti=%1</translation>
+        <translation>žáci=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11406"/>
         <source>all students</source>
-        <translation>Všichni studenti</translation>
+        <translation>Všichni žáci</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11409"/>
@@ -22791,7 +22820,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="11420"/>
         <source>Subactivities with %1, %2, %3, %4, %5, have a set of preferred starting times:</source>
         <comment>%1...%5 are conditions for the subactivities</comment>
-        <translation>Podčinnosti %1, %2, %3, %4, %5 mají množinu upřednostňovaných začátečních časů:</translation>
+        <translation>Dílčí činnosti %1, %2, %3, %4, %5 mají množinu upřednostňovaných začátečních časů:</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11421"/>
@@ -22812,7 +22841,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11445"/>
         <source>Subactivities with:</source>
-        <translation>Podčinnosti:</translation>
+        <translation>Dílčí činnosti s:</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11447"/>
@@ -22832,12 +22861,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11456"/>
         <source>Students=%1</source>
-        <translation>Studenti=%1</translation>
+        <translation>Žáci=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11458"/>
         <source>All students</source>
-        <translation>Všichni studenti</translation>
+        <translation>Všichni žáci</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11462"/>
@@ -22879,7 +22908,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="11541"/>
         <source>Time constraint subactivities preferred starting times broken for activity with id=%1 (%2), component number %3, increases conflicts total by %4</source>
         <comment>%1 is the id, %2 is the detailed description of the activity</comment>
-        <translation>Časové omezení upřednostňovaných začátečních časů podčinností nefunguje pro činnost s id=%1 (%2), číslo součásti %3, zvyšuje střety celkově o %4</translation>
+        <translation>Časové omezení upřednostňovaných začátečních časů dílčích činností není vyplněno pro činnost s ID=%1 (%2), číslo součásti %3, zvyšuje střety celkově o %4</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11473"/>
@@ -22934,7 +22963,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredstartingtimesform.cpp" line="187"/>
         <source>This is simple: just add 2 constraints of this type, with the component number 1, (then 2) and the corresponding subject (you can also define teacher, students set and activity tag, of course).</source>
-        <translation>Je to jednoduché: stačí přidat 2 omezení tohoto typu s číslom součásti 1, (potom 2) a príslušný předmět (samozrejme můžete definovať i učitele, skupinu studentů a druh činnosti).</translation>
+        <translation>Je to jednoduché: stačí přidat 2 omezení tohoto typu s číslom součásti 1, (potom 2) a príslušný předmět (samozrejme můžete definovať i učitele, skupinu žáků a druh činnosti).</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredstartingtimesform.cpp" line="192"/>
@@ -22958,7 +22987,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintsubactivitiespreferredstartingtimesform_template.ui" line="14"/>
         <source>Constraints subactivities preferred starting times</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Omezení upřednostňovaných začátečních časů podčinností</translation>
+        <translation>Omezení upřednostňovaných začátečních časů dílčích činností</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredstartingtimesform_template.ui" line="92"/>
@@ -23015,28 +23044,28 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="9987"/>
         <source>Constraint subactivities preferred time slots is wrong because it refers to removed day. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Omezení upřednostňovaných časových bloků podčinností je špatné, protože odkazuje na odstraněn den. Prosím opravte ho a zkuste to znovu. Opravení znamená upravení omezení a aktualizování informací. Omezení je:
+        <translation>Omezení upřednostňovaných časových polí dílčích činností je špatné, protože odkazuje na odstraněný den. Prosím opravte je a zkuste to znovu. Opravení znamená upravení omezení a aktualizování informací. Omezení je:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9994"/>
         <source>Constraint subactivities preferred time slots is wrong because a preferred hour is too late (after the last acceptable slot). Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Omezení upřednostňovaných časových bloků podčinností je špatné, protože preferovaná hodina je příliš nebrzy (po poslednom akceptovanom bloku). Prosím opravte ho a zkuste to znovu. Opravení znamená upravení omezení a aktualizování informací. Omezení je:
+        <translation>Omezení upřednostňovaných časových polí dílčích činností je špatné, protože upřednostňovaná hodina je příliš pozdě (po posledním dostupném časovém poli). Prosím opravte je a zkuste to znovu. Opravení znamená upravení omezení a aktualizování informací. Omezení je:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10001"/>
         <source>Constraint subactivities preferred time slots is wrong because it refers to removed hour. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Omezení upřednostňovaných časových bloků podčinností je špatné, protože odkazuje na odstraněnou hodinu. Prosím opravte ho a zkuste to znovu. Opravení znamená upravení omezení a aktualizování informací. Omezení je:
+        <translation>Omezení upřednostňovaných časových polí dílčích činností je špatné, protože odkazuje na odstraněnou hodinu. Prosím opravte je a zkuste to znovu. Opravení znamená upravení omezení a aktualizování informací. Omezení je:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10008"/>
         <source>Constraint subactivities preferred time slots is wrong because hour or day is not specified for a slot (-1). Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Omezení upřednostňovaných časových bloků podčinností je špatné, protože preferovaná hodina nebo den není určený pro blok (-1). Prosím opravte ho a zkuste to znovu. Opravení znamená upravení omezení a aktualizování informací. Omezení je:
+        <translation>Omezení upřednostňovaných časových polí dílčích činností je špatné, protože pro časové pole nebyla zadána hodina nebo den (-1). Prosím opravte je a zkuste to znovu. Opravení znamená upravení omezení a aktualizování informací. Omezení je:
 %1</translation>
     </message>
     <message>
@@ -23069,12 +23098,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10123"/>
         <source>students=%1</source>
-        <translation>studenti=%1</translation>
+        <translation>žáci=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10125"/>
         <source>all students</source>
-        <translation>Všichni studenti</translation>
+        <translation>Všichni žáci</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10128"/>
@@ -23100,7 +23129,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="10137"/>
         <source>Subactivities with %1, %2, %3, %4, %5, have a set of preferred time slots:</source>
         <comment>%1...%5 are conditions for the subactivities</comment>
-        <translation>Podčinnosti %1, %2, %3, %4, %5  mají množinu upřednostňovaných časových bloků:</translation>
+        <translation>Dílčí ččinnosti %1, %2, %3, %4, %5  mají množinu upřednostňovaných časů (časových polí):</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10138"/>
@@ -23121,7 +23150,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10163"/>
         <source>Subactivities with:</source>
-        <translation>Podčinnosti:</translation>
+        <translation>Dílčí činnosti s:</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10165"/>
@@ -23141,12 +23170,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10175"/>
         <source>Students=%1</source>
-        <translation>Studenti=%1</translation>
+        <translation>Žáci=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10177"/>
         <source>All students</source>
-        <translation>Všichni studenti</translation>
+        <translation>Všichni žáci</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10181"/>
@@ -23171,7 +23200,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10192"/>
         <source>have a set of preferred time slots (all hours of each affected subactivity must be in the allowed slots):</source>
-        <translation>má množinu upřednostňovaných časových bloků (všechny hodiny každé ovlivněné podčinnosti musí být v povolených blocích):</translation>
+        <translation>má množinu upřednostňovaných časových polí (všechny hodiny každé ovlivněné dílčí činnosti musí být v povolených časech):</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10207"/>
@@ -23193,7 +23222,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="10268"/>
         <source>Time constraint subactivities preferred time slots broken for activity with id=%1 (%2), component number %3, on %4 hours, increases conflicts total by %5</source>
         <comment>%1 is the id, %2 is the detailed description of the activity.</comment>
-        <translation>Časové omezení upřednostňovaných časových bloků podčinností nefunguje pro činnost s id=%1 (%2), číslo součásti %3, na %4 hodiny/hodin zvyšuje střety celkově o %5</translation>
+        <translation>Časové omezení upřednostňovaných časových polí dílčích činností nefunguje pro dílčí činnost s id=%1 (%2), číslo součásti %3, na %4 hodiny/hodin zvyšuje střety celkově o %5</translation>
     </message>
 </context>
 <context>
@@ -23243,7 +23272,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredtimeslotsform.cpp" line="187"/>
         <source>This is simple: just add 2 constraints of this type, with the component number 1, (then 2) and the corresponding subject (you can also define teacher, students set and activity tag, of course).</source>
-        <translation>Je to jednoduché: stačí přidat 2 omezení tohoto typu s číslom součásti 1, (potom 2) a príslušný předmět (samozrejme můžete definovať i učitele, skupinu studentů a druh činnosti).</translation>
+        <translation>Je to jednoduché: stačí přidat 2 omezení tohoto typu s číslom součásti 1, (potom 2) a príslušný předmět (samozrejme můžete definovať i učitele, skupinu žáků a druh činnosti).</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredtimeslotsform.cpp" line="193"/>
@@ -23266,7 +23295,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredtimeslotsform_template.ui" line="14"/>
         <source>Constraints subactivities preferred time slots</source>
-        <translation>Omezení upřednostňovaných časových bloků podčinností</translation>
+        <translation>Omezení upřednostňovaných časových polí dílčích činností</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredtimeslotsform_template.ui" line="44"/>
@@ -24680,7 +24709,8 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="14602"/>
         <source>Constraint teacher interval max days per week is wrong because start hour &lt; first hour of the day. Please correct it. Constraint is:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Omezení intervalu maxima dní za týden učitele je špatné, protože začáteční hodina leží před první hodinou dne. Prosím opravte to. Omezení je:
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14609"/>
@@ -24787,7 +24817,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14733"/>
         <source>Time constraint teacher interval max days per week broken for teacher: %1, allowed %2 days, required %3 days.</source>
-        <translation>Časové omezení &quot;učitelský interval maxima dní za týden&quot; nefunguje pro podskupinu: %1, povolené/ých %2 dni/dní, požadované %3 dni.</translation>
+        <translation>Časové omezení &quot;učitelský interval maxima dní za týden&quot; nefunguje pro dílčí skupinu: %1, povolené/ých %2 dni/dní, požadované %3 dni.</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14738"/>
@@ -25380,7 +25410,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5320"/>
         <source>Teacher max gaps per day</source>
-        <translation>Nejvíce mezer za den pro učitele</translation>
+        <translation>Největší počet volných hodin za den pro jednoho učitele</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5321"/>
@@ -25428,7 +25458,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5336"/>
         <source>Maximum gaps per day=%1</source>
-        <translation>Nejvíce mezer za den=%1</translation>
+        <translation>Největší počet volných hodin za den=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5339"/>
@@ -25444,7 +25474,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5391"/>
         <source>Time constraint teacher max gaps per day broken for teacher: %1, day: %2, conflicts factor increase=%3</source>
-        <translation>Časové omezení &quot;nejvíce mezer učitele za den&quot; nefunguje pro učitele: %1, den %2, zvýšení střetů=%3</translation>
+        <translation>Časové omezení &quot;Největší počet volných hodin pro učitele za den&quot; nefunguje pro učitele: %1, den %2, zvýšení střetů=%3</translation>
     </message>
 </context>
 <context>
@@ -25537,7 +25567,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4908"/>
         <source>Teacher max gaps per week</source>
-        <translation>Nejvíce mezer za týden pro učitele</translation>
+        <translation>Největší počet volných hodin za týden pro jednoho učitele</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4909"/>
@@ -25585,7 +25615,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4924"/>
         <source>Maximum gaps per week=%1</source>
-        <translation>Nejvíce mezer za týden=%1</translation>
+        <translation>Největší počet volných hodin za týden=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4927"/>
@@ -26010,7 +26040,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18689"/>
         <source>Teacher max span per day</source>
-        <translation type="unfinished"></translation>
+        <translation>Největší časový úsek za den pro učitele</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18690"/>
@@ -26028,7 +26058,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="18692"/>
         <source>MS:%1</source>
         <comment>Maximum span (in hours, per day)</comment>
-        <translation type="unfinished"></translation>
+        <translation>NČÚ:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18700"/>
@@ -26038,7 +26068,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18701"/>
         <source>A teacher must respect the maximum number of span (in hours) per day</source>
-        <translation type="unfinished"></translation>
+        <translation>Učitel musí dávat pozor na největší časový úsek (počet hodin) za den</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18702"/>
@@ -26053,7 +26083,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18704"/>
         <source>Maximum span per day=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>Největší časový úsek za den=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18707"/>
@@ -26108,12 +26138,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachermaxspanperdayform_template.ui" line="14"/>
         <source>Constraints teacher max span per day</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Omezení největšího časového úseku za den pro učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxspanperdayform_template.ui" line="26"/>
         <source>This constraint ensures a maximum span of activities on each day. Span means the count of slots (free or occupied) starting with the first occupied slot of the day and ending with the last occupied slot of the day.</source>
-        <translation type="unfinished"></translation>
+        <translation>Omezení největší časový úsek za den zaručuje nejvyšší počet činností za den. Časový úsek zde znamená počet volných nebo zapsaných hodin, počínaje první zapsanou hodinou až po poslední zapsanou hodinu.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxspanperdayform_template.ui" line="38"/>
@@ -26331,7 +26361,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6474"/>
         <source>Teacher min gaps between building changes</source>
-        <translation>Nejméně mezer mezi změnami budov pro učitele</translation>
+        <translation>Nejmenší počet volných hodin po změně budovy pro jednoho učitele</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6476"/>
@@ -26359,7 +26389,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6491"/>
         <source>Teacher minimum gaps between building changes</source>
-        <translation>Nejméně mezer mezi změnami budov pro učitele</translation>
+        <translation>Nejmenší počet volných hodin po změně budovy pro jednoho učitele</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6493"/>
@@ -26374,7 +26404,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6497"/>
         <source>Minimum gaps between building changes=%1</source>
-        <translation>Nejméně mezer mezi změnami budovy=%1</translation>
+        <translation>Nejmenší počet volných hodin mezi změnami budovy=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6500"/>
@@ -26488,7 +26518,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13997"/>
         <source>Teacher min hours daily</source>
-        <translation>Nejméně hodin denně pro učitele</translation>
+        <translation>Nejmenší počet hodin denně pro jednoho učitele</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13950"/>
@@ -26622,7 +26652,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteacherminhoursdailyform_template.ui" line="14"/>
         <source>Constraints teacher min hours daily</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation>Omezení nejméně hodin denně pro učitele</translation>
+        <translation>Omezení nejmenší počet hodin denně pro jednoho učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteacherminhoursdailyform_template.ui" line="95"/>
@@ -26671,7 +26701,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19520"/>
         <source>Teacher min resting hours</source>
-        <translation type="unfinished"></translation>
+        <translation>Nejméně oddychových hodin pro učitele</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19521"/>
@@ -26689,7 +26719,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="19523"/>
         <source>mRH:%1</source>
         <comment>Minimum resting hours</comment>
-        <translation type="unfinished"></translation>
+        <translation>NOH:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19524"/>
@@ -26705,7 +26735,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19533"/>
         <source>A teacher must respect the minimum resting hours (between days)</source>
-        <translation type="unfinished"></translation>
+        <translation>Učitel musí respektovat nejmenší počet oddychových hodin (mezi dvěma po sobě jdoucími dny)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19534"/>
@@ -26720,12 +26750,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19536"/>
         <source>Minimum resting hours=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>Nejméně oddychových hodin=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19537"/>
         <source>Circular=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>Kruhový=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19540"/>
@@ -26780,7 +26810,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteacherminrestinghoursform_template.ui" line="14"/>
         <source>Constraints teacher min resting hours</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Omezení nejmenšího počtu oddychových hodin pro učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteacherminrestinghoursform_template.ui" line="26"/>
@@ -26913,14 +26943,14 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="636"/>
         <source>Constraint teacher not available times is wrong because it refers to removed day. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Omezení nedostupných časů učitele je špatné, protože odkazuje na odstraněn den. Prosím opravte ho a zkuste to znovu. Opravení znamená upravení omezení a aktualizování informací. Omezení je:
+        <translation>Omezení časů nedostupnosti učitele je špatné, protože odkazuje na odstraněný den. Prosím opravte ho a zkuste to znovu. Opravení znamená upravení omezení a aktualizování informací. Omezení je:
 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="643"/>
         <source>Constraint teacher not available times is wrong because an hour is too late (after the last acceptable slot). Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation>Omezení nedostupných časů učitele je špatné, protože hodina je příliš nebrzy (po poslednom akceptovanom bloku). Prosím opravte ho a zkuste to znovu. Opravení znamená upravení omezení a aktualizování informací. Omezení je:
+        <translation>Nynější omezení časů nedostupnosti učitele je špatné, protože hodina je příliš pozdě (po posledním dostupném časovém poli). Prosím opravte je a zkuste to znovu. Opravení znamená upravení omezení a aktualizování informací. Omezení je:
 %1</translation>
     </message>
     <message>
@@ -27045,7 +27075,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3713"/>
         <source>All teachers, for an activity tag, must respect the maximum number of hours continuously</source>
-        <translation>Všichni studenti musí respektovat největší počet hodin po sobě pro druh činnosti</translation>
+        <translation>Všichni žáci musí respektovat největší počet hodin po sobě pro druh činnosti</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3714"/>
@@ -27966,7 +27996,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5113"/>
         <source>Teachers max gaps per day</source>
-        <translation>Nejvíce mezer za den pro učitele</translation>
+        <translation>Největší počet volných hodin za den pro všechny učitele</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5114"/>
@@ -28003,7 +28033,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5127"/>
         <source>Maximum gaps per day=%1</source>
-        <translation>Nejvíce mezer za den=%1</translation>
+        <translation>Největší počet volných hodin za den=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5130"/>
@@ -28019,7 +28049,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5180"/>
         <source>Time constraint teachers max gaps per day broken for teacher: %1, day: %2, conflicts factor increase=%3</source>
-        <translation>Časové omezení &quot;nejvíce mezer za den pro učitele&quot; nefunguje pro učitele: %1, den %2, zvýšení střetů=%3</translation>
+        <translation>Časové omezení &quot;Největší počet volných hodin za den pro učitele&quot; nefunguje pro učitele: %1, den %2, zvýšení střetů=%3</translation>
     </message>
 </context>
 <context>
@@ -28107,7 +28137,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4700"/>
         <source>Teachers max gaps per week</source>
-        <translation>Nejvíce mezer za týden pro učitele</translation>
+        <translation>Největší počet volných hodin za týden pro všechny učitele</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4701"/>
@@ -28139,7 +28169,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4714"/>
         <source>Maximum gaps per week=%1</source>
-        <translation>Nejvíce mezer za týden=%1</translation>
+        <translation>Největší počet volných hodin za týden=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4713"/>
@@ -28532,7 +28562,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18882"/>
         <source>Teachers max span per day</source>
-        <translation type="unfinished"></translation>
+        <translation>Největší časový úsek za den pro učitele</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18883"/>
@@ -28544,7 +28574,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="18884"/>
         <source>MS:%1</source>
         <comment>Maximum span (in hours, per day)</comment>
-        <translation type="unfinished"></translation>
+        <translation>NČÚ:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18892"/>
@@ -28554,7 +28584,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18893"/>
         <source>All teachers must respect the maximum number of span (in hours) per day</source>
-        <translation type="unfinished"></translation>
+        <translation>Všichni učitelé musí dávat pozor na největší časový úsek (počet hodin) za den</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18894"/>
@@ -28564,7 +28594,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18895"/>
         <source>Maximum span per day=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>Největší časový úsek za den=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18898"/>
@@ -28619,12 +28649,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachersmaxspanperdayform_template.ui" line="14"/>
         <source>Constraints teachers max span per day</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Omezení největšího časového úseku za den pro učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxspanperdayform_template.ui" line="26"/>
         <source>This constraint ensures a maximum span of activities on each day. Span means the count of slots (free or occupied) starting with the first occupied slot of the day and ending with the last occupied slot of the day.</source>
-        <translation type="unfinished"></translation>
+        <translation>Omezení největší časový úsek za den zaručuje nejvyšší počet činností za den. Časový úsek zde znamená počet volných nebo zapsaných hodin, počínaje první zapsanou hodinou až konečně po poslední zapsanou hodinu.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxspanperdayform_template.ui" line="44"/>
@@ -28809,7 +28839,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6726"/>
         <source>Teachers min gaps between building changes</source>
-        <translation>Nejméně mezer mezi změnami budov pro učitele</translation>
+        <translation>Nejmenší počet volných hodin po změně budovy pro všechny učitele</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6728"/>
@@ -28831,7 +28861,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6741"/>
         <source>Teachers minimum gaps between building changes</source>
-        <translation>Nejméně mezer mezi změnami budov pro učitele</translation>
+        <translation>Nejmenší počet volných hodin po změně budovy pro všechny učitele</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6743"/>
@@ -28841,7 +28871,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6745"/>
         <source>Minimum gaps between building changes=%1</source>
-        <translation>Nejméně mezer mezi změnami budovy=%1</translation>
+        <translation>Nejmenší počet volných hodin mezi změnami budovy=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6748"/>
@@ -29117,7 +29147,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19716"/>
         <source>Teachers min resting hours</source>
-        <translation type="unfinished"></translation>
+        <translation>Nejméně oddychových hodin pro učitele</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19717"/>
@@ -29129,7 +29159,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="19718"/>
         <source>mRH:%1</source>
         <comment>Minimum resting hours</comment>
-        <translation type="unfinished"></translation>
+        <translation>NOH:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19719"/>
@@ -29145,7 +29175,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19728"/>
         <source>All teachers must respect the minimum resting hours (between days)</source>
-        <translation type="unfinished"></translation>
+        <translation>Všichni učitelé musí respektovat nejmenší počet oddychových hodin (mezi dvěma po sobě jdoucími dny)</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19729"/>
@@ -29155,12 +29185,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19730"/>
         <source>Minimum resting hours=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>Nejméně oddychových hodin=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19731"/>
         <source>Circular=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>Kruhový=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="19734"/>
@@ -29215,7 +29245,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintteachersminrestinghoursform_template.ui" line="14"/>
         <source>Constraints teachers min resting hours</source>
         <extracomment>This is the title of the dialog in which you see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Omezení nejmenšího počtu oddychových hodin pro učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersminrestinghoursform_template.ui" line="26"/>
@@ -29317,7 +29347,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12969"/>
         <source>Three activities grouped:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tři činnosti jsou sloučeny:</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12986"/>
@@ -29421,7 +29451,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="109"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintthreeactivitiesgroupedform_template.ui" line="122"/>
@@ -29507,7 +29537,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12386"/>
         <source>Two activities consecutive:</source>
-        <translation type="unfinished"></translation>
+        <translation>Dvě činnosti jdou po sobě:</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="12389"/>
@@ -29632,7 +29662,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="109"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesconsecutiveform_template.ui" line="122"/>
@@ -29839,7 +29869,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="109"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesgroupedform_template.ui" line="122"/>
@@ -30042,7 +30072,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="93"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/constrainttwoactivitiesorderedform_template.ui" line="106"/>
@@ -30421,7 +30451,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/export.cpp" line="817"/>
         <location filename="../src/engine/export.cpp" line="827"/>
         <source>Warning! Import of activities will fail, because %1 includes set separator +.</source>
-        <translation type="unfinished"></translation>
+        <translation>Varování: Zavedení činností se nepodaří, protože %1 obsahuje oddělovač skupin +.</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="593"/>
@@ -30506,7 +30536,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/export.cpp" line="1024"/>
         <source>Subactivities with activity group id %1 have disabled active flag but they are exported.</source>
-        <translation>Podčinnost s id skupiny činností %1 zakázala aktivní příznak, ale je vyvedena.</translation>
+        <translation>Dílčí činnost s id skupiny činností %1 je sice vypnuta, ale je vyvedena.</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="1122"/>
@@ -30542,17 +30572,17 @@ Import of data will be easier with these settings.</source>
     <message>
         <location filename="../src/engine/export.cpp" line="298"/>
         <source>Successfully finished timetable:</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozvrh úspěšně vytvořen:</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="311"/>
         <source>Highest stage timetable:</source>
-        <translation type="unfinished"></translation>
+        <translation>Dosud nejlepší rozvrh:</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="321"/>
         <source>Current stage timetable:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nynější rozvrh:</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="1206"/>
@@ -30611,12 +30641,12 @@ Import of data will be easier with these settings.</source>
     <message>
         <location filename="../src/engine/export.cpp" line="1006"/>
         <source>different students</source>
-        <translation>rozdílní studenti</translation>
+        <translation>rozdílní žáci</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="1010"/>
         <source>different number of students</source>
-        <translation>rozdílný počet studentů</translation>
+        <translation>rozdílný počet žáků</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="1004"/>
@@ -30626,7 +30656,7 @@ Import of data will be easier with these settings.</source>
     <message>
         <location filename="../src/engine/export.cpp" line="1008"/>
         <source>different boolean variable &apos;must compute n total students&apos;</source>
-        <translation>rozdílná logická proměnná při &quot;musí počítat celkově n studentů&quot;</translation>
+        <translation>rozdílná logická proměnná při &quot;musí počítat celkově n žáků&quot;</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="122"/>
@@ -30696,12 +30726,12 @@ Import of data will be easier with these settings.</source>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="271"/>
         <source>Progress setModal(true)</source>
-        <translation type="unfinished"></translation>
+        <translation>Postup  setModal(true)</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="273"/>
         <source>Progress setModal(false)</source>
-        <translation type="unfinished"></translation>
+        <translation>Postup  setModal(false)</translation>
     </message>
 </context>
 <context>
@@ -30926,7 +30956,7 @@ Import of data will be easier with these settings.</source>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="775"/>
         <source>Constraint is not enabled. To use this type of constraint you must enable it from the Settings-&gt;Advanced menu.</source>
-        <translation type="unfinished"></translation>
+        <translation>Omezení není povoleno. Abyste mohl použít tento druh omezení, musíte jej nejprve povolit v nabídce Nastavení -&gt; Pokročilé.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="777"/>
@@ -31111,12 +31141,12 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="623"/>
         <source>SSL is not available (this might be caused by missing SSL libraries). Because of this, FET cannot check for updates on startup (it cannot get the file %1).</source>
-        <translation type="unfinished"></translation>
+        <translation>SSL není dostupné (to může být způsobeno chybějícími knihovnami SSL). Z toho důvodu FET nemůže při spuštění zkontrolovat aktualizace (nelze nahrát soubor %1).</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="739"/>
         <source>British English</source>
-        <translation type="unfinished"></translation>
+        <translation>Britská angličtina</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="766"/>
@@ -31141,37 +31171,37 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="770"/>
         <source>Japanese</source>
-        <translation type="unfinished"></translation>
+        <translation>Japonský</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="803"/>
         <source>Note: if you disable this option, you will not be able to add/modify constraints for subgroups, and you will not be able to make filters using a particular subgroup, when selecting activities.</source>
-        <translation type="unfinished"></translation>
+        <translation>Poznámka: Pokud zakážete tuto volbu, nebudete moci přidat/změnit omezení pro dílčí skupiny. Obzvláště nelze při výběru činností vytvářet žádné filtry s určitou podskupinou.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="824"/>
         <source>Note: if you disable this option, you will not be able to view activities for subgroups in the activity planning dialog.</source>
-        <translation type="unfinished"></translation>
+        <translation>Poznámka: Pokud zakážete tuto volbu, nebudete moci v dialogu pro rozvrhování činností zobrazit žádné činnosti podskupin.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="902"/>
         <source>Could not search for possible updates on the internet - error message is: %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nepodařilo se hledat možné aktualizace na internetu - chybové hlášení je: %1.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="906"/>
         <source>Possible actions: check your network connection, try again later, try to visit FET homepage: %1, or try to search for the new FET page on the internet (maybe it has changed).</source>
-        <translation type="unfinished"></translation>
+        <translation>Možné činnosti: Prověřit internetové připojení, později vyzkoušet ještě jednou, vyhledat stránky FET: %1, nebo zkusit na internetu najít nové stránky FET (pokud byly přestěhovány).</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="921"/>
         <source>Maybe the FET homepage has some temporary problems, so try again later. Or maybe the current structure on FET homepage was changed. You may visit FET homepage: %1, and get latest version or, if it does not work, try to search for the new FET page on the internet (maybe it has changed).</source>
-        <translation type="unfinished"></translation>
+        <translation>Později to zkustě ještě jednou, stránky FET mohou mít dočasné potíže. Popřípadě byla změněna adresářová stavba stránek FET. Nejnovější verze FET je na adrese: %1. Pokud se toto nepodaří, zkuste vyhledat novou stránku FET na internetu (pokud byly přestěhovány).</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="941"/>
         <source>You have to manually download and install.</source>
-        <translation type="unfinished"></translation>
+        <translation>Toto se musí ručně stáhnout a nainstalovat.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="952"/>
@@ -31179,13 +31209,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/fetmainform.cpp" line="3642"/>
         <location filename="../src/interface/fetmainform.cpp" line="3652"/>
         <source>Could not start the default internet browser (trying to open the link %1). Maybe you can try to manually start your browser and open this link.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nepodařilo se spustit výchozí prohlížeč internetových stránek (pokus o otevření odkazu: %1). Popřípadě můžete svůj prohlížeč spustit ručně a tuto adresu otevřít.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1070"/>
         <source>%1[*] - FET</source>
         <comment>The title of the main window, %1 is the name of the current file. Please keep the string [*] unmodified (three characters) - it is used to make the difference between modified files and unmodified files.</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1[*] - FET</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1123"/>
@@ -31233,13 +31263,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/fetmainform.cpp" line="1594"/>
         <location filename="../src/interface/fetmainform.cpp" line="1599"/>
         <source>File was not saved.</source>
-        <translation type="unfinished"></translation>
+        <translation>Soubor nebyl uložen.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1362"/>
         <location filename="../src/interface/fetmainform.cpp" line="1582"/>
         <source>Please do not use a filename ending with white space(s), problems might arise.</source>
-        <translation type="unfinished"></translation>
+        <translation>Prosím, nepoužívejte mezeru(y) na konci názvu souboru nebo před příponou &quot;fet&quot;, protože to vede k chybám. Z toho můžou být jen potíže.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1368"/>
@@ -31267,51 +31297,51 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1391"/>
         <source>File %1 exists - are you sure you want to overwrite it?</source>
-        <translation type="unfinished"></translation>
+        <translation>Soubor %1 už existuje - opravdu jej chcete přepsat?</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1546"/>
         <source>Choose a filename for data and timetable</source>
-        <translation type="unfinished"></translation>
+        <translation>Vyberte název souboru pro data a rozvrh</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1691"/>
         <location filename="../src/interface/fetmainform.cpp" line="1716"/>
         <source>Added to the saved file:</source>
         <comment>It refers to a constraint</comment>
-        <translation type="unfinished"></translation>
+        <translation>Přidáno do uloženého souboru:</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1693"/>
         <location filename="../src/interface/fetmainform.cpp" line="1718"/>
         <source>NOT added to the saved file (already existing):</source>
         <comment>It refers to a constraint</comment>
-        <translation type="unfinished"></translation>
+        <translation>Nepřidáno do uloženého souboru (již existuje):</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1727"/>
         <source>Added %1 locking time constraints and %2 locking space constraints to saved file, ignored %3 activities which were already fixed in time and %4 activities which were already fixed in space.</source>
-        <translation type="unfinished"></translation>
+        <translation>Do uloženého souboru byla přidána %1 uzamykající časová omezení a %2 uzamykající prostorová omezení. Nebyla přidána %3 časová omezení a %4 prostorová omezení, protože tyto činnosti již byly uzamknuty.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1729"/>
         <source>Detailed information about each locking constraint which was added or not (if already existing) to the saved file:</source>
-        <translation type="unfinished"></translation>
+        <translation>Podrobné údaje o každém uzamykajícím omezení, které bylo přidáno do uloženého souboru nebo ne (pokud již bylo přítomno):</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1730"/>
         <source>Your current data file remained untouched (no locking constraints were added), so you can save it also, or generate different timetables.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nynější soubor s daty nebyl změněn (nebyla přidána žádná uzamykající omezení). Můžete jej buď uložit nebo také vytvořit nové rozvrhy.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1966"/>
         <source>The teachers who are not qualified to teach a certain activity (in activities order):</source>
-        <translation type="unfinished"></translation>
+        <translation>Učitelé, kteří nemají oprávnění pro vyučování určité činnosti (v pořadí činnosti):</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="1984"/>
         <source>For activity: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Pro činnost: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2020"/>
@@ -31326,17 +31356,17 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2030"/>
         <source>activities and subactivities dialogs, the inactive activities will have a distinctive background color</source>
-        <translation>dialogy činností a podčinností, neaktivní činnosti budou mít osobitou barvu pozadí</translation>
+        <translation>Činnosti a dílčí činnosti. Vypnuté činnosti jsou ukázány se zvláštní barvou pozadí.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2033"/>
         <source>all time constraints and all space constraints dialogs, the inactive constraints will have a distinctive background color</source>
-        <translation type="unfinished"></translation>
+        <translation>Všechna časová omezení a všechna prostorová omezení, jež jsou vypnuta, jsou ukázána se zvláštní barvou pozadí.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2036"/>
         <source>group activities in initial order items, the inactive items will have a distinctive background color</source>
-        <translation type="unfinished"></translation>
+        <translation>Shrnutí činností pro počáteční seřazení: Vypnuté položky jsou ukázány se zvláštní barvou pozadí.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2042"/>
@@ -31346,17 +31376,17 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2044"/>
         <source>This will enable the menu for 4 constraints: teacher(s) or students (set) activity tag max hours daily. These 4 constraints are good, but not perfect and may bring slow down of generation or impossible timetables if used unproperly. Select only if you know what you&apos;re doing.</source>
-        <translation type="unfinished"></translation>
+        <translation>Toto zapne nabídku pro 4 omezení: Největší počet hodin za den pro učitele, (skupiny) žáků a označení činností. Tato čtyři omezení jsou dobrá, ale nejsou dokonalá. Mohou zpomalit výpočet rozvrhu hodin nebo jej znemožnit, v případě že nebyla nastavena správně. Nastavte je tedy jen tehdy, když rozumíte jejich funkci.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2047"/>
         <source>Enable students max gaps per day:</source>
-        <translation>Povolit nejvíce mezer za den pro studenty:</translation>
+        <translation>Povolit největší počet volných hodin za den pro žáky:</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2049"/>
         <source>This will enable the menu for 2 constraints: students (set) max gaps per day. These 2 constraints are good, but not perfect and may bring slow down of generation or impossible timetables if used unproperly. Select only if you know what you&apos;re doing.</source>
-        <translation type="unfinished"></translation>
+        <translation>Toto zapne nabídku pro 2 omezení: Největší počet hodin za den pro učitele pro (skupiny) žáků. Tato dvě omezení jsou dobrá, ale nejsou dokonalá. Mohou zpomalit výpočet rozvrhu hodin nebo jej znemožnit, v případě že nebyla nastavena správně. Nastavte je tedy jen tehdy, když rozumíte jejich funkci.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2053"/>
@@ -31367,12 +31397,12 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2059"/>
         <source>Enable students min hours daily with empty days:</source>
-        <translation type="unfinished"></translation>
+        <translation>Povolit nejmenší počet hodin denně pro žáky s volnými dny:</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2061"/>
         <source>This will enable you to modify the students min hours daily constraints, to allow empty days. It is IMPERATIVE (for performance reasons) to allow empty days for students min hours daily only if your institution allows empty days for students and if a solution with empty days is possible. Select only if you know what you&apos;re doing.</source>
-        <translation type="unfinished"></translation>
+        <translation>Toto vám umožní měnit omezení nejmenšího počtu hodin denně pro žáky, aby byly umožněny volné dny. Tuto volbu vyberte jen tehdy, když váš ústav u žáků připoští i volné (prázdnéú dny. Jinak by se tato volba neměla z výkonnostních důvodů v žádném případě zapínat. Také tuto volbu zapínejte, jen když víte, co děláte, tudíž obezřetně.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2065"/>
@@ -32242,7 +32272,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="2055"/>
         <source>If you use a not perfect constraint (activity tag max hours daily or students max gaps per day), you&apos;ll get a warning before generating. Uncheck this option to get rid of that warning (it is recommended to keep the warning).</source>
-        <translation>Pokud používáte nedokonalé omezení (nejvíce hodin denně pro druh činnosti nebo max mezer pro studentů za den), dostanete před generováním varování. Odškrtněte tuto možnost, abyste se zbavili tohoto varování. (doporučuje sa ponechat varování).</translation>
+        <translation>Pokud používáte nedokonalé omezení (nejvíce hodin denně pro druh činnosti nebo max mezer pro žáků za den), dostanete před generováním varování. Odškrtněte tuto možnost, abyste se zbavili tohoto varování. (doporučuje sa ponechat varování).</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4128"/>
@@ -32828,7 +32858,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="951"/>
         <source>View (&amp;students)</source>
-        <translation>Ukázat (&amp;studenty)</translation>
+        <translation>Ukázat (&amp;žáky)</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="944"/>
@@ -32897,27 +32927,27 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2189"/>
         <source>Max hours daily with an activity tag for a students set</source>
-        <translation>Nejvíce hodin denně pro druh činnosti skupiny studentů</translation>
+        <translation>Nejvíce hodin denně pro druh činnosti skupiny žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2197"/>
         <source>Max hours daily with an activity tag for all students</source>
-        <translation>Nejvíce hodin denně pro druh činnosti všech studentů</translation>
+        <translation>Nejvíce hodin denně pro druh činnosti všech žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2205"/>
         <source>Max gaps per day for a students set</source>
-        <translation>Nejvíce mezer za den pro skupinu studentů</translation>
+        <translation>Největší počet volných hodin za den pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2213"/>
         <source>Max gaps per day for all students</source>
-        <translation>Nejvíce mezer za den pro všechny studenty</translation>
+        <translation>Největší počet volných hodin za den pro všechny žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2224"/>
         <source>Enable students max gaps per day</source>
-        <translation>Povolit nejvíce mezer za den pro studenty</translation>
+        <translation>Povolit největší počet volných hodin za den pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2235"/>
@@ -33027,7 +33057,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1615"/>
         <source>Students statistics</source>
-        <translation>Statistika studentů</translation>
+        <translation>Statistika žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1620"/>
@@ -33037,12 +33067,12 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1625"/>
         <source>Max gaps per week for all teachers</source>
-        <translation>Nejvíce mezer za týden pro všechny učitele</translation>
+        <translation>Největší počet volných hodin za týden pro všechny učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1630"/>
         <source>Max gaps per week for a teacher</source>
-        <translation>Nejvíce mezer za týden pro učitele</translation>
+        <translation>Největší počet volných hodin za týden pro učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1640"/>
@@ -33052,12 +33082,12 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1645"/>
         <source>Max hours daily for a students set</source>
-        <translation>Nejvíce hodin denně pro skupinu studentů</translation>
+        <translation>Nejvíce hodin denně pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1650"/>
         <source>Max hours daily for all students</source>
-        <translation>Nejvíce hodin denně pro všechny studentů</translation>
+        <translation>Nejvíce hodin denně pro všechny žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1655"/>
@@ -33072,17 +33102,17 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1671"/>
         <source>Min hours daily for all students</source>
-        <translation>Nejméně hodin denně pro všechny studenty</translation>
+        <translation>Nejméně hodin denně pro všechny žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1676"/>
         <source>Min hours daily for a students set</source>
-        <translation>Nejméně hodin denně pro skupinu studentů</translation>
+        <translation>Nejméně hodin denně pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1691"/>
         <source>An activity ends students day</source>
-        <translation>Činnost ukončuje studentský den</translation>
+        <translation>Činnost ukončuje žákovský den</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1696"/>
@@ -33107,17 +33137,17 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1527"/>
         <source>Max gaps per week for a students set</source>
-        <translation>Nejvíce mezer za týden pro skupinu studentů</translation>
+        <translation>Největší počet volných hodin za týden pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1532"/>
         <source>Max gaps per week for all students</source>
-        <translation>Nejvíce mezer za týden pro všechny studenty</translation>
+        <translation>Největší počet volných hodin za týden pro všechny žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1537"/>
         <source>All students begin early (max beginnings at second hour)</source>
-        <translation>Všichni studenti začínají brzy (nejvíce začátků na druhou hodinu)</translation>
+        <translation>Všichni žáci začínají brzy (nejvíce začátků na druhou hodinu)</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1188"/>
@@ -33127,17 +33157,17 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1635"/>
         <source>A students set begins early (max beginnings at second hour)</source>
-        <translation>Skupina studentů začína brzy (nejvíce začátků na druhou hodinu)</translation>
+        <translation>Skupina žáků začína brzy (nejvíce začátků na druhou hodinu)</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1721"/>
         <source>Max gaps per day for all teachers</source>
-        <translation>Nejvíce mezer za den pro všechny učitele</translation>
+        <translation>Největší počet volných hodin za den pro všechny učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1726"/>
         <source>Max gaps per day for a teacher</source>
-        <translation>Nejvíce mezer za den pro učitele</translation>
+        <translation>Největší počet volných hodin za den pro jednoho učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1492"/>
@@ -33171,7 +33201,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="301"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for advanced data</comment>
-        <translation type="unfinished">Pokročilé</translation>
+        <translation>Pokročilé</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="416"/>
@@ -33183,7 +33213,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="444"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for time constraints</comment>
-        <translation type="unfinished">Pokročilé</translation>
+        <translation>Pokročilé</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="497"/>
@@ -33201,7 +33231,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="747"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for timetable</comment>
-        <translation type="unfinished">Pokročilé</translation>
+        <translation>Pokročilé</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="761"/>
@@ -33218,7 +33248,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="1251"/>
         <source>Advanced</source>
         <comment>It refers to advanced settings</comment>
-        <translation type="unfinished">Pokročilé</translation>
+        <translation>Pokročilé</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1302"/>
@@ -33230,7 +33260,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="1329"/>
         <source>Advanced</source>
         <comment>The menu item for advanced features</comment>
-        <translation type="unfinished">Pokročilé</translation>
+        <translation>Pokročilé</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1374"/>
@@ -33242,17 +33272,17 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="1482"/>
         <source>Max simultaneous activities from a set in selected time slots</source>
         <extracomment>It refers to a time constraint. It means: user chooses a set of activities, a set of time slots and a maximum number of activities from those selected which can be simultaneous in each selected time slot</extracomment>
-        <translation>Nejvíce souběžných činností z množiny ve vybraných časových blocích</translation>
+        <translation>Nejvíce souběžných činností z množiny ve vybraných časových polích</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1502"/>
         <source>A students set&apos;s not available times</source>
-        <translation>Nedostupné časy skupiny studentů</translation>
+        <translation>Nedostupné časy skupiny žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1507"/>
         <source>Break times (all teachers+all students not available)</source>
-        <translation>Časy přestávek (všichni učitelé+všichni studenti nedostupní)</translation>
+        <translation>Časy přestávek (všichni učitelé+všichni žáci nedostupní)</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1547"/>
@@ -33267,12 +33297,12 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1600"/>
         <source>A set of students has a home room</source>
-        <translation>Skupina studentů má domovskou místnost</translation>
+        <translation>Skupina žáků má domovskou místnost</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1605"/>
         <source>A set of students has a set of home rooms</source>
-        <translation>Skupina studentů má množinu domovských místností</translation>
+        <translation>Skupina žáků má množinu domovských místností</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1701"/>
@@ -33282,42 +33312,42 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1731"/>
         <source>Max span per day for a teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>Největší časový úsek za den pro učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1736"/>
         <source>Max span per day for all teachers</source>
-        <translation type="unfinished"></translation>
+        <translation>Největší časový úsek za den pro všechny učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1741"/>
         <source>Max span per day for a students set</source>
-        <translation type="unfinished"></translation>
+        <translation>Největší časový úsek za den pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1746"/>
         <source>Max span per day for all students</source>
-        <translation type="unfinished"></translation>
+        <translation>Největší časový úsek za den pro všechny žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1751"/>
         <source>Min resting hours for a teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>Nejméně oddychových hodin pro učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1756"/>
         <source>Min resting hours for all teachers</source>
-        <translation type="unfinished"></translation>
+        <translation>Nejméně oddychových hodin pro všechny učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1761"/>
         <source>Min resting hours for a students set</source>
-        <translation type="unfinished"></translation>
+        <translation>Nejméně oddychových hodin pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1766"/>
         <source>Min resting hours for all students</source>
-        <translation type="unfinished"></translation>
+        <translation>Nejméně oddychových hodin pro všechny žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1786"/>
@@ -33342,32 +33372,32 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1806"/>
         <source>Max building changes per day for a students set</source>
-        <translation>Nejvíce změn budov pro skupinu studentů za den</translation>
+        <translation>Nejvíce změn budov pro skupinu žáků za den</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1811"/>
         <source>Max building changes per day for all students</source>
-        <translation>Nejvíce změn budov pro všechny studenty za den</translation>
+        <translation>Nejvíce změn budov pro všechny žáky za den</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1816"/>
         <source>Max building changes per week for a students set</source>
-        <translation>Nejvíce změn budov pro skupinu studentů za týden</translation>
+        <translation>Nejvíce změn budov pro skupinu žáků za týden</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1821"/>
         <source>Max building changes per week for all students</source>
-        <translation>Nejvíce změn budov pro všechny studenty za týden</translation>
+        <translation>Nejvíce změn budov pro všechny žáky za týden</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1826"/>
         <source>Min gaps between building changes for a students set</source>
-        <translation>Nejméně mezer mezi změnami budov skupiny studentů</translation>
+        <translation>Nejmenší počet volných hodin po změně budovy pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1831"/>
         <source>Min gaps between building changes for all students</source>
-        <translation>Nejméně mezer mezi změnami budov všech studentů</translation>
+        <translation>Nejmenší počet volných hodin po změně budovy pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1836"/>
@@ -33392,12 +33422,12 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1856"/>
         <source>Min gaps between building changes for a teacher</source>
-        <translation>Nejméně mezer mezi změnami budov pro učitele</translation>
+        <translation>Nejmenší počet volných hodin po změně budovy pro jednoho učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1861"/>
         <source>Min gaps between building changes for all teachers</source>
-        <translation>Nejméně mezer mezi změnami budov pro všechny učitele</translation>
+        <translation>Nejmenší počet volných hodin po změně budovy pro všechny učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1866"/>
@@ -33417,12 +33447,12 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1891"/>
         <source>Max hours continuously for a students set</source>
-        <translation>Nejvíce hodin po sobě pro skupinu studentů</translation>
+        <translation>Nejvíce hodin po sobě pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1896"/>
         <source>Max hours continuously for all students</source>
-        <translation>Nejvíce hodin po sobě pro všechny studenty</translation>
+        <translation>Nejvíce hodin po sobě pro všechny žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1901"/>
@@ -33433,7 +33463,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="2077"/>
         <source>&amp;Modify subactivities</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different</extracomment>
-        <translation>Upravit &amp;podčinnosti</translation>
+        <translation>Upravit &amp;dílčí činnosti</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2093"/>
@@ -33466,12 +33496,12 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2302"/>
         <source>Enable students min hours daily with empty days</source>
-        <translation>Povolit minimum hodin denně pro studenty s prázdnými dny</translation>
+        <translation>Povolit minimum hodin denně pro žáky s volnými dny</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2313"/>
         <source>Warn if using students min hours daily with empty days</source>
-        <translation>Upozornit na použití minima hodin denně pro studenty s prázdnými dny</translation>
+        <translation>Upozornit na použití minima hodin denně pro žáky s volnými dny</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2318"/>
@@ -33533,12 +33563,12 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2395"/>
         <source>Max days per week for a students set</source>
-        <translation>Nejvíce dní za týden pro skupinu studentů</translation>
+        <translation>Nejvíce dní za týden pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2400"/>
         <source>Max days per week for all students</source>
-        <translation>Nejvíce dní za týden pro všechny studenty</translation>
+        <translation>Nejvíce dní za týden pro všechny žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2411"/>
@@ -33573,34 +33603,34 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2465"/>
         <source>Show subgroups in combo boxes</source>
-        <translation>Ukázat podskupiny ve výběrových polích</translation>
+        <translation>Ukázat dílčí skupiny ve výběrových polích</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2476"/>
         <source>Show subgroups in activity planning</source>
-        <translation>Ukázat podskupiny v plánování činností</translation>
+        <translation>Ukázat dílčí skupiny v plánování činností</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2503"/>
         <source>Categories of timetables to be written on disk</source>
         <comment>It means that the user selects the categories of timetables to be written on disk after the generation (soft conflicts, XML, days horizontal, time vertical, subgroups, teachers, etc.)</comment>
-        <translation type="unfinished"></translation>
+        <translation>Kategorie rozvrhů k zapsání na disk</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2514"/>
         <source>Print detailed timetables</source>
-        <translation type="unfinished"></translation>
+        <translation>Tisknout podrobné rozvrhy</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2525"/>
         <source>Print detailed teachers&apos; free periods timetables</source>
-        <translation type="unfinished"></translation>
+        <translation>Tisknout podrobné rozvrhy s volnými hodinami učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2530"/>
         <source>Teachers subjects qualifications statistics</source>
         <comment>It means the statistics for the teachers - check the teacher&apos;s subject qualification</comment>
-        <translation type="unfinished"></translation>
+        <translation>Statistika oborových oprávnění učitele pro předměty</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2535"/>
@@ -33650,17 +33680,17 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1467"/>
         <source>A set of activities has a set of preferred time slots</source>
-        <translation>Množina činností má množinu upřednostňovaných časových bloků</translation>
+        <translation>Množina činností má množinu upřednostňovaných časů (časových polí)</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1911"/>
         <source>An activity has a set of preferred time slots</source>
-        <translation>Činnost má množinu upřednostňovaných časových bloků</translation>
+        <translation>Činnost má množinu upřednostňovaných časů (časových polí)</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1921"/>
         <source>Min gaps (hours) between a set of activities</source>
-        <translation>Nejméně mezer (hodin) mezi množinou činností</translation>
+        <translation>Nejmenší počet volných hodin mezi činnostmi</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="886"/>
@@ -33712,7 +33742,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="733"/>
         <source>Students</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short</comment>
-        <translation>Studenti</translation>
+        <translation>Žáci</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="259"/>
@@ -33740,7 +33770,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="294"/>
         <source>Subactivities</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short</comment>
-        <translation>Podčinnosti</translation>
+        <translation>Dílčí činnosti</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="569"/>
@@ -33810,7 +33840,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="1204"/>
         <source>Stu&amp;dents</source>
         <extracomment>Accelerator key (letter after ampersand) for &amp;Subjects, Activity ta&amp;gs, &amp;Teachers, Stu&amp;dents, &amp;Activities, &amp;Modify subactivities, &amp;Buildings, &amp;Rooms, All t&amp;ime constraints, All s&amp;pace constraints must be different</extracomment>
-        <translation>&amp;Studenti</translation>
+        <translation>&amp;Žáci</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1382"/>
@@ -33850,7 +33880,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="1477"/>
         <source>A set of activities occupies max time slots from selection</source>
         <extracomment>It refers to a time constraint. It means: user chooses a set of activities, a set of time slots and a maximum number of slots from those selected which can be occupied by the selected activities</extracomment>
-        <translation>Množina činností zabírá maximum časových bloků z výběru</translation>
+        <translation>Množina činností zabírá ohraničený počet vybraných časových polí</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1580"/>
@@ -33908,17 +33938,17 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1956"/>
         <source>Import years, groups and subgroups from CSV file</source>
-        <translation>Zavést ročníky, skupiny a podskupiny z CSV souboru</translation>
+        <translation>Zavést ročníky, skupiny a dílčí skupiny z CSV souboru</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1961"/>
         <source>A set of subactivities has a set of preferred time slots</source>
-        <translation>Množina podčinností má množinu upřednostňovaných časových bloků</translation>
+        <translation>Množina dílčích činností má množinu upřednostňovaných časů (časových polí)</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1966"/>
         <source>A set of subactivities has a set of preferred starting times</source>
-        <translation>Množina podčinností má množinu upřednostňovaných začátečních časů</translation>
+        <translation>Množina dílčích činností má množinu upřednostňovaných začátečních časů</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1971"/>
@@ -33933,17 +33963,17 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1981"/>
         <source>A students set works in an hourly interval max days per week</source>
-        <translation>Skupina studentů pracuje v hodinovém intervalu maxima dní za týden</translation>
+        <translation>Skupina žáků pracuje v hodinovém intervalu maxima dní za týden</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1986"/>
         <source>All students work in an hourly interval max days per week</source>
-        <translation>Všichni studenti pracují v hodinovém intervalu maxima dní za týden</translation>
+        <translation>Všichni žáci pracují v hodinovém intervalu maxima dní za týden</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1991"/>
         <source>A set of activities end students day</source>
-        <translation>Množina činností končících studentský den</translation>
+        <translation>Množina činností končících žákovský den</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2291"/>
@@ -33989,12 +34019,12 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2037"/>
         <source>Lock all activities which end students day</source>
-        <translation>Uzamknout všechny činnosti, které končí studentský den</translation>
+        <translation>Uzamknout všechny činnosti, které končí žákovský den</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2042"/>
         <source>Unlock all activities which end students day</source>
-        <translation>Odemknout všechny činnosti, které končí studentský den</translation>
+        <translation>Odemknout všechny činnosti, které končí žákovský den</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2047"/>
@@ -34009,12 +34039,12 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2057"/>
         <source>Max hours continuously with an activity tag for a students set</source>
-        <translation>Nejvíce hodin po sobě s druhem činnosti pro skupinu studentů</translation>
+        <translation>Nejvíce hodin po sobě s druhem činnosti pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2062"/>
         <source>Max hours continuously with an activity tag for all students</source>
-        <translation>Nejvíce hodin po sobě s druhem činnosti pro všechny studentů</translation>
+        <translation>Nejvíce hodin po sobě s druhem činnosti pro všechny žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2067"/>
@@ -34040,7 +34070,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="1044"/>
         <location filename="../src/interface/fetmainform_template.ui" line="1158"/>
         <source>Students</source>
-        <translation>Studenti</translation>
+        <translation>Žáci</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2098"/>
@@ -34137,7 +34167,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fet.cpp" line="1502"/>
         <source>Id: %1 (%2)</source>
         <comment>%1 is id of activity, %2 is detailed description of activity</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">ID: %1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="1487"/>
@@ -34152,7 +34182,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fet.cpp" line="1498"/>
         <source>No: %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Číslo: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="805"/>
@@ -34208,7 +34238,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="139"/>
         <source>Max placed activities: %1 (at %2)</source>
         <comment>%1 represents the maximum number of activities placed, %2 is a time interval</comment>
-        <translation type="unfinished"></translation>
+        <translation>Nejvíce umístěných činností: %1 (v %2)</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="160"/>
@@ -35601,59 +35631,59 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9399"/>
         <source>The initial order of activities (id-s):</source>
-        <translation type="unfinished"></translation>
+        <translation>Počáteční pořadí činností (ID):</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9404"/>
         <source>No: %1</source>
         <comment>Number</comment>
-        <translation type="unfinished"></translation>
+        <translation>Číslo: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9408"/>
         <source>Id: %1</source>
         <comment>Id of activity</comment>
-        <translation>Přidat: %1</translation>
+        <translation>ID: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9411"/>
         <source>Teachers: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Učitelé: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9413"/>
         <source>Subject: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Předmět: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9416"/>
         <source>Activity tags: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Druh činnosti: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9418"/>
         <source>Students: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Žáci: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9422"/>
         <source>nIncompatible: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>PočetNeslučitelný: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9425"/>
         <source>nMinDaysConstraintsBroken: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>PočetNejméněDníOmezeníChyba: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9430"/>
         <source>(grouped with id %1)</source>
-        <translation type="unfinished"></translation>
+        <translation>(s ID=%1 v jedné skupině)</translation>
     </message>
     <message>
         <location filename="../src/engine/generate_pre.cpp" line="9436"/>
         <source>End - the order of activities (id-s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Konec - pořadí činností (ID)</translation>
     </message>
 </context>
 <context>
@@ -35820,7 +35850,7 @@ Please modify your data correspondingly and try again</source>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform_template.ui" line="14"/>
         <source>Group activities in initial order items</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Sdružení činnosti pro počáteční řazení</translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform_template.ui" line="28"/>
@@ -35830,7 +35860,7 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform_template.ui" line="45"/>
         <source>Current item</source>
-        <translation type="unfinished"></translation>
+        <translation>Nynější položka</translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform_template.ui" line="58"/>
@@ -35845,7 +35875,7 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform_template.ui" line="77"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/groupactivitiesininitialorderitemsform_template.ui" line="90"/>
@@ -35976,7 +36006,7 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="475"/>
         <source>Students group comments</source>
-        <translation type="unfinished"></translation>
+        <translation>Poznámky ke skupině žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="477"/>
@@ -38779,7 +38809,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
         <location filename="../src/engine/import.cpp" line="499"/>
         <location filename="../src/engine/import.cpp" line="1278"/>
         <source>years, groups and subgroups</source>
-        <translation>Ročníky, skupiny a podskupiny</translation>
+        <translation>Ročníky, skupiny a dílčí skupiny</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="503"/>
@@ -38988,7 +39018,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="1791"/>
         <source>Can&apos;t import subgroup %1. Name is already taken for a year.</source>
-        <translation>Nelze zavést podskupinu %1. Název je již používán rokem.</translation>
+        <translation>Nelze zavést dílčí skupinu %1. Název je již používán rokem.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1803"/>
@@ -38998,7 +39028,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="1807"/>
         <source>Can&apos;t import subgroup %1. Name is already taken for a group.</source>
-        <translation>Nelze zavést podskupinu %1. Název je již používán skupinou.</translation>
+        <translation>Nelze zavést dílčí skupinu %1. Název je již používán skupinou.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1820"/>
@@ -39060,7 +39090,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="2584"/>
         <source>Split activity NOT added - error???</source>
-        <translation>Podčinnost NEBYLA přidána - Chyba?</translation>
+        <translation>Dílčí činnost NEBYLA přidána - Chyba?</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="2601"/>
@@ -39199,7 +39229,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
         <location filename="../src/engine/import.cpp" line="2052"/>
         <location filename="../src/engine/import.cpp" line="2599"/>
         <source>Notes:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Poznámky:</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="2053"/>
@@ -39263,7 +39293,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="118"/>
         <source>Students Sets</source>
-        <translation>Skupiny studentů</translation>
+        <translation>Skupiny žáků</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="119"/>
@@ -39278,17 +39308,17 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="107"/>
         <source>Number of Students per Year</source>
-        <translation>Počet studentů na rok</translation>
+        <translation>Počet žáků na rok</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="109"/>
         <source>Number of Students per Group</source>
-        <translation>Počet studentů na skupinu</translation>
+        <translation>Počet žáků na skupinu</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="111"/>
         <source>Number of Students per Subgroup</source>
-        <translation>Počet studentů na podskupinu</translation>
+        <translation>Počet žáků na dílčí skupinu</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1029"/>
@@ -39331,12 +39361,12 @@ nejsou žádné problémy</translation>
     <message>
         <location filename="../src/engine/import.cpp" line="1014"/>
         <source>Skipped line %1: Field &apos;%2&apos; contains too many subactivities.</source>
-        <translation>Řádek %1 přeskočen: Pole &quot;%2&quot; obsahuje příliš mnoho podčinností.</translation>
+        <translation>Řádek %1 přeskočen: Pole &quot;%2&quot; obsahuje příliš mnoho dílčích činností.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="981"/>
         <source>Skipped line %1: Field &apos;%2&apos; produces too many subactivities.</source>
-        <translation>Řádek %1 přeskočen: Pole &quot;%2&quot; vytváří příliš mnoho podčinností.</translation>
+        <translation>Řádek %1 přeskočen: Pole &quot;%2&quot; vytváří příliš mnoho dílčích činností.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="125"/>
@@ -39390,8 +39420,8 @@ nejsou žádné problémy</translation>
         <location filename="../src/interface/institutionnameform.cpp" line="58"/>
         <source>Cannot update institution name during simulation
 Please stop simulation before this</source>
-        <translation>Nepodařilo se aktualizovat název ústavu v průběhu simulace
-Prosím, zastavte předtím simulaci</translation>
+        <translation>V průběhu simulace nelze aktualizovat název ústavu.
+Prosím, zastavte předtím vytváření rozvrhu.</translation>
     </message>
 </context>
 <context>
@@ -39485,7 +39515,7 @@ Prosím, zastavte předtím simulaci</translation>
     <message>
         <location filename="../src/interface/modifyactivityform.cpp" line="485"/>
         <source>Do you really want to have the activity without student set(s)?</source>
-        <translation>Opravdu chcete mít činnost bez skupiny/skupin studentů?</translation>
+        <translation>Opravdu chcete mít činnost bez skupiny/skupin žáků?</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform.cpp" line="558"/>
@@ -39524,7 +39554,7 @@ Prosím, zastavte předtím simulaci</translation>
         <location filename="../src/interface/modifyactivityform_template.ui" line="232"/>
         <source>Students</source>
         <comment>This refers to the number of students, but I want to keep the text short</comment>
-        <translation>Studenti</translation>
+        <translation>Žáci</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="257"/>
@@ -39823,7 +39853,7 @@ Prosím, zastavte předtím simulaci</translation>
         <location filename="../src/interface/modifyactivityform_template.ui" line="71"/>
         <source>Students</source>
         <comment>Refers to sets of students, but I want to keep text short</comment>
-        <translation>Studenti</translation>
+        <translation>Žáci</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform_template.ui" line="201"/>
@@ -39956,12 +39986,12 @@ Prosím, zastavte předtím simulaci</translation>
         <location filename="../src/interface/modifyconstraintactivitiesendstudentsdayform_template.ui" line="14"/>
         <source>Modify activities end students day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Upravit činnosti končící studentský den</translation>
+        <translation>Upravit činnosti končící žákovský den</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesendstudentsdayform_template.ui" line="52"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesendstudentsdayform_template.ui" line="65"/>
@@ -40005,7 +40035,7 @@ Prosím, zastavte předtím simulaci</translation>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="14"/>
         <source>Modify activities max simultaneous in selected time slots</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Změna největšího počtu souběžných činností ve vybraných časových polích</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="24"/>
@@ -40025,7 +40055,7 @@ Prosím, zastavte předtím simulaci</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="46"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="56"/>
@@ -40154,7 +40184,7 @@ Prosím, zastavte předtím simulaci</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="52"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="62"/>
@@ -40191,7 +40221,7 @@ Prosím, zastavte předtím simulaci</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="26"/>
         <source>This constraint means that the activities should not be placed in common timeslots. You don&apos;t need to add this constraint for activities sharing a teacher or students set.</source>
-        <translation>Toto omezení znamená, že činnosti by neměly být umístěny ve společných časových blocích. Nepotřebujete přidat toto omezení pro činnosti sdílející učitele nebo skupinu studentů.</translation>
+        <translation>Toto omezení znamená, že činnosti nejsou umístěny současně (ve společných časových polích). Nepotřebujete přidat toto omezení pro činnosti sdílející učitele nebo skupinu žáků.</translation>
     </message>
 </context>
 <context>
@@ -40225,7 +40255,7 @@ Prosím, zastavte předtím simulaci</translation>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="14"/>
         <source>Modify activities occupy max different rooms</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Změna činností, které používají největší počet různých místností</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="20"/>
@@ -40240,7 +40270,7 @@ Prosím, zastavte předtím simulaci</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="46"/>
@@ -40315,12 +40345,12 @@ Prosím, zastavte předtím simulaci</translation>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="14"/>
         <source>Modify activities occupy max time slots from selection</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Změna největšího počtu činností ve vybraných časových polích</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="24"/>
         <source>Activities</source>
-        <translation>Činnosti:</translation>
+        <translation>Činnosti</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="30"/>
@@ -40335,7 +40365,7 @@ Prosím, zastavte předtím simulaci</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="46"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="56"/>
@@ -40478,7 +40508,7 @@ Prosím, zastavte předtím simulaci</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform_template.ui" line="54"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform_template.ui" line="64"/>
@@ -40605,7 +40635,7 @@ Prosím, zastavte předtím simulaci</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform_template.ui" line="54"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform_template.ui" line="64"/>
@@ -40688,7 +40718,7 @@ Prosím, zastavte předtím simulaci</translation>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform_template.ui" line="14"/>
         <source>Modify activities same room if consecutive</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Změna činností se stejnými místnostmi, když jsou následné</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform_template.ui" line="20"/>
@@ -40703,7 +40733,7 @@ Prosím, zastavte předtím simulaci</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform_template.ui" line="46"/>
@@ -40803,7 +40833,7 @@ Prosím, zastavte předtím simulaci</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform_template.ui" line="46"/>
@@ -40899,7 +40929,7 @@ Prosím, zastavte předtím simulaci</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform_template.ui" line="46"/>
@@ -40995,7 +41025,7 @@ Prosím, zastavte předtím simulaci</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform_template.ui" line="46"/>
@@ -41061,7 +41091,7 @@ Prosím, zastavte předtím simulaci</translation>
         <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform_template.ui" line="14"/>
         <source>Modify activity ends students day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Upravit činnosti končící studentský den</translation>
+        <translation>Upravit činnosti končící žákovský den</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform_template.ui" line="20"/>
@@ -41071,7 +41101,7 @@ Prosím, zastavte předtím simulaci</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform_template.ui" line="26"/>
@@ -41296,7 +41326,7 @@ Prosím, zastavte předtím simulaci</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform_template.ui" line="26"/>
@@ -41337,7 +41367,7 @@ Prosím, zastavte předtím simulaci</translation>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform_template.ui" line="14"/>
         <source>Modify activity preferred starting time</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Upravit upřednostňovaný začáteční čas činnosti</translation>
+        <translation>Změnit upřednostňovaný začáteční čas činnosti</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform_template.ui" line="163"/>
@@ -41437,7 +41467,7 @@ Prosím, zastavte předtím simulaci</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform_template.ui" line="26"/>
@@ -41532,7 +41562,7 @@ Prosím, zastavte předtím simulaci</translation>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform_template.ui" line="26"/>
@@ -41841,7 +41871,7 @@ Prosím, zastavte předtím simulaci</translation>
     <message>
         <location filename="../src/interface/modifyconstraintbreaktimesform_template.ui" line="26"/>
         <source>The important thing is that a break does not induce gaps for teachers or students</source>
-        <translation>Je důležité , že přestávka neznamená mezery pro učitele a studenty</translation>
+        <translation>Je důležité , že přestávka neznamená mezery pro učitele a žáky</translation>
     </message>
 </context>
 <context>
@@ -41905,7 +41935,7 @@ Prosím, zastavte předtím simulaci</translation>
     <message>
         <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform_template.ui" line="46"/>
@@ -42028,7 +42058,7 @@ Prosím, zastavte předtím simulaci</translation>
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform_template.ui" line="46"/>
@@ -42152,7 +42182,7 @@ force activities consecutive</source>
     <message>
         <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform_template.ui" line="46"/>
@@ -42190,7 +42220,7 @@ force activities consecutive</source>
         <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform_template.ui" line="156"/>
         <source>Min gaps</source>
         <comment>It refers to the minimum number of gaps between a set of activities</comment>
-        <translation>Nejméně mezer</translation>
+        <translation>Nejmenší počet volných hodin</translation>
     </message>
 </context>
 <context>
@@ -42295,7 +42325,7 @@ force activities consecutive</source>
         <location filename="../src/interface/modifyconstraintstudentsactivitytagmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Modify students activity tag max hours continuously</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Změnit největší počet hodin po sobě pro druh činnosti žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsactivitytagmaxhourscontinuouslyform_template.ui" line="121"/>
@@ -42339,7 +42369,7 @@ force activities consecutive</source>
         <location filename="../src/interface/modifyconstraintstudentsactivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Modify students activity tag max hours daily</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Změnit největší počet hodin denně druhu činnosti pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsactivitytagmaxhoursdailyform_template.ui" line="28"/>
@@ -42475,7 +42505,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/modifyconstraintstudentsintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Modify students interval max days per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Změnit interval pro skupinu žáků, která pracuje jen po ohraničený počet dní za týden</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsintervalmaxdaysperweekform_template.ui" line="22"/>
@@ -42527,7 +42557,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/modifyconstraintstudentsmaxbuildingchangesperdayform_template.ui" line="14"/>
         <source>Modify students max building changes per day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Změnit největší počet změn budov za den pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxbuildingchangesperdayform_template.ui" line="50"/>
@@ -42570,7 +42600,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/modifyconstraintstudentsmaxbuildingchangesperweekform_template.ui" line="14"/>
         <source>Modify students max building changes per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Změnit největší počet změn budov za týden pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxbuildingchangesperweekform_template.ui" line="28"/>
@@ -42618,7 +42648,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/modifyconstraintstudentsmaxdaysperweekform_template.ui" line="14"/>
         <source>Modify students max days per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Změnit největší počet dní za týden pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxdaysperweekform_template.ui" line="28"/>
@@ -42666,12 +42696,12 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/modifyconstraintstudentsmaxgapsperdayform_template.ui" line="14"/>
         <source>Modify students max gaps per day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Změnit největší počet volných hodin za den pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxgapsperdayform_template.ui" line="90"/>
         <source>Max gaps per day</source>
-        <translation>Nejvíce mezer za den</translation>
+        <translation>Největší počet volných hodin za den</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxgapsperdayform_template.ui" line="32"/>
@@ -42722,7 +42752,7 @@ IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this 
         <location filename="../src/interface/modifyconstraintstudentsmaxgapsperweekform_template.ui" line="14"/>
         <source>Modify students max gaps per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Změnit největší počet volných hodin za týden pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxgapsperweekform_template.ui" line="105"/>
@@ -42737,7 +42767,7 @@ IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this 
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxgapsperweekform_template.ui" line="88"/>
         <source>Max gaps per week</source>
-        <translation>Nejvíce mezer za týden</translation>
+        <translation>Největší počet volných hodin za týden</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxgapsperweekform_template.ui" line="67"/>
@@ -42785,7 +42815,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentsmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Modify constraint students max hours continuously</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Změna největšího počtu hodin následujících přímo po sobě pro žáky pro označení vyučování</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxhourscontinuouslyform_template.ui" line="28"/>
@@ -42823,7 +42853,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentsmaxhoursdailyform_template.ui" line="14"/>
         <source>Modify students max hours daily</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Změnit největší počet hodin za den pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxhoursdailyform_template.ui" line="56"/>
@@ -42862,7 +42892,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentsmaxspanperdayform_template.ui" line="14"/>
         <source>Modify students max span per day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Změnit největší časový úsek za den pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxspanperdayform_template.ui" line="44"/>
@@ -42872,7 +42902,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxspanperdayform_template.ui" line="65"/>
         <source>Max span per day</source>
-        <translation type="unfinished"></translation>
+        <translation>Největší časový úsek za den</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxspanperdayform_template.ui" line="82"/>
@@ -42904,7 +42934,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="14"/>
         <source>Modify students min gaps between building changes</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Upravit minimum mezer mezi změnami budov studentů</translation>
+        <translation>Upravit minimum mezer mezi změnami budov žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="28"/>
@@ -42924,7 +42954,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="67"/>
         <source>Min gaps between building changes</source>
-        <translation>Nejméně mezer mezi změnami budov</translation>
+        <translation>Nejmenší počet volných hodin mezi změnami budov</translation>
     </message>
 </context>
 <context>
@@ -43000,7 +43030,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentsminhoursdailyform_template.ui" line="14"/>
         <source>Modify students min hours daily</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Upravit minimum hodin denně pro studenty</translation>
+        <translation>Upravit minimum hodin denně pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsminhoursdailyform_template.ui" line="62"/>
@@ -43058,7 +43088,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsminrestinghoursform_template.ui" line="49"/>
         <source>Min resting hours</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Nejméně oddychových hodin</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsminrestinghoursform_template.ui" line="66"/>
@@ -43073,7 +43103,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsminrestinghoursform_template.ui" line="82"/>
         <source>Circular</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Kruhový</translation>
     </message>
 </context>
 <context>
@@ -43093,7 +43123,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="132"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="139"/>
@@ -43121,13 +43151,13 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="28"/>
         <source>Students</source>
-        <translation>Studenti</translation>
+        <translation>Žáci</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Modify students set activity tag max hours continuously</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Upravit maximum hodin po sobě pro druh činnosti skupiny studentů</translation>
+        <translation>Upravit maximum hodin po sobě pro druh činnosti skupiny žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="60"/>
@@ -43158,7 +43188,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="133"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform.cpp" line="140"/>
@@ -43172,12 +43202,12 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Modify students set activity tag max hours daily</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Upravit maximum hodin denně pro druh činnosti skupiny studentů</translation>
+        <translation>Upravit maximum hodin denně pro druh činnosti skupiny žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="28"/>
         <source>Students</source>
-        <translation>Studenti</translation>
+        <translation>Žáci</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="60"/>
@@ -43228,7 +43258,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="111"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
 </context>
 <context>
@@ -43241,13 +43271,13 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="122"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="14"/>
         <source>Modify students set early max beginnings at second hour</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Upravit nejvíce časných začátků ve druhou hodinu pro skupinu studentů</translation>
+        <translation>Upravit nejvíce časných začátků ve druhou hodinu pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="173"/>
@@ -43301,7 +43331,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/modifyconstraintstudentssethomeroomform_template.ui" line="14"/>
         <source>Modify students set home room</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Upravit domovskou místnost skupiny studentů</translation>
+        <translation>Upravit domovskou místnost skupiny žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssethomeroomform_template.ui" line="20"/>
@@ -43326,7 +43356,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/modifyconstraintstudentssethomeroomform_template.ui" line="98"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
 </context>
 <context>
@@ -43369,7 +43399,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/modifyconstraintstudentssethomeroomsform_template.ui" line="14"/>
         <source>Modify students set home rooms</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Upravit domovské místnosti skupiny studentů</translation>
+        <translation>Upravit domovské místnosti skupiny žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssethomeroomsform_template.ui" line="41"/>
@@ -43379,7 +43409,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/modifyconstraintstudentssethomeroomsform_template.ui" line="20"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssethomeroomsform_template.ui" line="64"/>
@@ -43423,7 +43453,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform.cpp" line="140"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform.cpp" line="148"/>
@@ -43447,7 +43477,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Modify students set interval max days per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Upravit interval maxima dní za týden pro skupinu studentů</translation>
+        <translation>Upravit interval maxima dní za týden pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform_template.ui" line="22"/>
@@ -43462,7 +43492,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform_template.ui" line="46"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetintervalmaxdaysperweekform_template.ui" line="82"/>
@@ -43501,7 +43531,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperdayform.cpp" line="114"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
 </context>
 <context>
@@ -43510,12 +43540,12 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperdayform_template.ui" line="14"/>
         <source>Modify students set max building changes per day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Upravit maximum změn budov za den pro skupinu studentů</translation>
+        <translation>Upravit maximum změn budov za den pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperdayform_template.ui" line="28"/>
         <source>Students</source>
-        <translation>Studenti</translation>
+        <translation>Žáci</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperdayform_template.ui" line="80"/>
@@ -43554,7 +43584,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperweekform.cpp" line="113"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
 </context>
 <context>
@@ -43563,12 +43593,12 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperweekform_template.ui" line="14"/>
         <source>Modify students set max building changes per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Upravit maximum změn budov za týden pro skupinu studentů</translation>
+        <translation>Upravit maximum změn budov za týden pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperweekform_template.ui" line="28"/>
         <source>Students</source>
-        <translation>Studenti</translation>
+        <translation>Žáci</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperweekform_template.ui" line="80"/>
@@ -43613,7 +43643,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxdaysperweekform.cpp" line="124"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
 </context>
 <context>
@@ -43627,7 +43657,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxdaysperweekform_template.ui" line="28"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxdaysperweekform_template.ui" line="64"/>
@@ -43672,7 +43702,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperdayform.cpp" line="119"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
 </context>
 <context>
@@ -43681,7 +43711,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperdayform_template.ui" line="14"/>
         <source>Modify students set max gaps per day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Upravit nejvíce mezer za den pro skupinu studentů</translation>
+        <translation>Největší počet volných hodin za den pro žáky</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperdayform_template.ui" line="32"/>
@@ -43694,7 +43724,7 @@ IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperdayform_template.ui" line="126"/>
         <source>Max gaps per day</source>
-        <translation>Nejvíce mezer za den</translation>
+        <translation>Největší počet volných hodin za den</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperdayform_template.ui" line="105"/>
@@ -43704,7 +43734,7 @@ IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperdayform_template.ui" line="69"/>
         <source>Students</source>
-        <translation>Studenti</translation>
+        <translation>Žáci</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperdayform_template.ui" line="143"/>
@@ -43739,7 +43769,7 @@ IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperweekform.cpp" line="118"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
 </context>
 <context>
@@ -43758,12 +43788,12 @@ IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this 
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperweekform_template.ui" line="14"/>
         <source>Modify students set max gaps per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Upravit nejvíce mezer za týden pro skupinu studentů</translation>
+        <translation>Největší počet volných hodin za týden pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperweekform_template.ui" line="124"/>
         <source>Max gaps per week</source>
-        <translation>Nejvíce mezer za týden</translation>
+        <translation>Největší počet volných hodin za týden</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperweekform_template.ui" line="103"/>
@@ -43773,7 +43803,7 @@ IMPORTANT: if you want 0 total gaps, it is strongly recommended NOT to use this 
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperweekform_template.ui" line="67"/>
         <source>Students</source>
-        <translation>Studenti</translation>
+        <translation>Žáci</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperweekform_template.ui" line="32"/>
@@ -43798,7 +43828,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxhourscontinuouslyform.cpp" line="113"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
 </context>
 <context>
@@ -43806,13 +43836,13 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxhourscontinuouslyform_template.ui" line="28"/>
         <source>Students</source>
-        <translation>Studenti</translation>
+        <translation>Žáci</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Modify students set max hours continuously</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Upravit maximum hodin po sobě pro skupinu studentů</translation>
+        <translation>Upravit maximum hodin po sobě pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxhourscontinuouslyform_template.ui" line="118"/>
@@ -43852,7 +43882,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxhoursdailyform.cpp" line="113"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
 </context>
 <context>
@@ -43860,13 +43890,13 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxhoursdailyform_template.ui" line="28"/>
         <source>Students</source>
-        <translation>Studenti</translation>
+        <translation>Žáci</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxhoursdailyform_template.ui" line="14"/>
         <source>Modify students set max hours daily</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Upravit maximum hodin denně pro skupinu studentů</translation>
+        <translation>Upravit maximum hodin denně pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxhoursdailyform_template.ui" line="155"/>
@@ -43912,7 +43942,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform.cpp" line="119"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
 </context>
 <context>
@@ -43926,7 +43956,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform_template.ui" line="22"/>
         <source>Max span per day</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Největší časový úsek za den</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform_template.ui" line="39"/>
@@ -43941,7 +43971,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform_template.ui" line="79"/>
         <source>Students</source>
-        <translation>Studenti</translation>
+        <translation>Žáci</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxspanperdayform_template.ui" line="115"/>
@@ -43965,7 +43995,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmingapsbetweenbuildingchangesform.cpp" line="113"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
 </context>
 <context>
@@ -43974,12 +44004,12 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentssetmingapsbetweenbuildingchangesform_template.ui" line="14"/>
         <source>Modify students set min gaps between building changes</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Upravit minimum mezer mezi změnami budov skupiny studentů</translation>
+        <translation>Upravit minimum mezer mezi změnami budov skupiny žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmingapsbetweenbuildingchangesform_template.ui" line="28"/>
         <source>Students</source>
-        <translation>Studenti</translation>
+        <translation>Žáci</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmingapsbetweenbuildingchangesform_template.ui" line="80"/>
@@ -43999,7 +44029,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmingapsbetweenbuildingchangesform_template.ui" line="119"/>
         <source>Min gaps between building changes</source>
-        <translation>Nejméně mezer mezi změnami budov</translation>
+        <translation>Nejmenší počet volných hodin mezi změnami budov</translation>
     </message>
 </context>
 <context>
@@ -44051,7 +44081,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="137"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform.cpp" line="164"/>
@@ -44081,12 +44111,12 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform_template.ui" line="14"/>
         <source>Modify students set min hours daily</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Upravit minimum hodin denně pro skupinu studentů</translation>
+        <translation>Upravit minimum hodin denně pro skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform_template.ui" line="33"/>
         <source>Students</source>
-        <translation>Studenti</translation>
+        <translation>Žáci</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminhoursdailyform_template.ui" line="57"/>
@@ -44131,7 +44161,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform.cpp" line="120"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
 </context>
 <context>
@@ -44150,7 +44180,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform_template.ui" line="49"/>
         <source>Min resting hours</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Nejméně oddychových hodin</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform_template.ui" line="66"/>
@@ -44165,12 +44195,12 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform_template.ui" line="82"/>
         <source>Circular</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Kruhový</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetminrestinghoursform_template.ui" line="113"/>
         <source>Students</source>
-        <translation>Studenti</translation>
+        <translation>Žáci</translation>
     </message>
 </context>
 <context>
@@ -44190,12 +44220,12 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetnotavailabletimesform.cpp" line="257"/>
         <source>Invalid students set</source>
-        <translation>Neplatná skupina studentů</translation>
+        <translation>Neplatná skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetnotavailabletimesform.cpp" line="266"/>
         <source>A constraint of this type exists for the same students set - cannot proceed</source>
-        <translation>Omezení tohoto typu už existuje pro stejnou skupinu studentů - nelze pokračovat</translation>
+        <translation>Omezení tohoto typu už existuje pro stejnou skupinu žáků - nelze pokračovat</translation>
     </message>
 </context>
 <context>
@@ -44203,7 +44233,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetnotavailabletimesform_template.ui" line="76"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetnotavailabletimesform_template.ui" line="96"/>
@@ -44242,12 +44272,12 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentssetnotavailabletimesform_template.ui" line="14"/>
         <source>Modify students set not available times</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Upravit nedostupné časy skupiny studentů</translation>
+        <translation>Upravit nedostupné časy skupiny žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetnotavailabletimesform_template.ui" line="26"/>
         <source>This constraint does not induce gaps (or early not respected) for students. If a students set has lessons before and after this not available period, there will be no gaps counted</source>
-        <translation>Toto omezení neznamená mezery pro studentů. Ak má predtým skupina studentů hodiny a potom nedostupné obdobie, nebudú tu počítané žádné mezery</translation>
+        <translation>Toto omezení neznamená mezery pro žáků. Ak má predtým skupina žáků hodiny a potom nedostupné obdobie, nebudú tu počítané žádné mezery</translation>
     </message>
 </context>
 <context>
@@ -44279,7 +44309,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintsubactivitiespreferredstartingtimesform_template.ui" line="14"/>
         <source>Modify subactivities preferred starting times</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Upravit upřednostňované začáteční časy podčinností</translation>
+        <translation>Upravit upřednostňované začáteční časy dílčích činností</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubactivitiespreferredstartingtimesform_template.ui" line="124"/>
@@ -44327,7 +44357,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintsubactivitiespreferredstartingtimesform_template.ui" line="91"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubactivitiespreferredstartingtimesform_template.ui" line="101"/>
@@ -44369,7 +44399,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintsubactivitiespreferredtimeslotsform_template.ui" line="14"/>
         <source>Modify subactivities preferred time slots</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Upravit upřednostňované časové bloky podčinností</translation>
+        <translation>Upravit upřednostňovaná časová pole dílčích činností</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubactivitiespreferredtimeslotsform_template.ui" line="159"/>
@@ -44405,7 +44435,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintsubactivitiespreferredtimeslotsform_template.ui" line="91"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubactivitiespreferredtimeslotsform_template.ui" line="101"/>
@@ -45268,7 +45298,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachermaxgapsperdayform_template.ui" line="14"/>
         <source>Modify teacher max gaps per day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Upravit nejvíce mezer za den pro učitele</translation>
+        <translation>Změnit největší počet volných hodin za den pro jednoho učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxgapsperdayform_template.ui" line="120"/>
@@ -45278,7 +45308,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxgapsperdayform_template.ui" line="97"/>
         <source>Max gaps per day</source>
-        <translation>Nejvíce mezer za den</translation>
+        <translation>Největší počet volných hodin za den</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxgapsperdayform_template.ui" line="32"/>
@@ -45318,7 +45348,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachermaxgapsperweekform_template.ui" line="14"/>
         <source>Modify teacher max gaps per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Upravit nejvíce mezer za týden pro učitele</translation>
+        <translation>Změnit největší počet volných hodin za týden pro jednoho učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxgapsperweekform_template.ui" line="141"/>
@@ -45343,7 +45373,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxgapsperweekform_template.ui" line="97"/>
         <source>Max gaps per week</source>
-        <translation>Nejvíce mezer za týden</translation>
+        <translation>Největší počet volných hodin za týden</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxgapsperweekform_template.ui" line="32"/>
@@ -45501,7 +45531,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxspanperdayform_template.ui" line="74"/>
         <source>Max span per day</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Největší časový úsek za den</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxspanperdayform_template.ui" line="97"/>
@@ -45628,7 +45658,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachermingapsbetweenbuildingchangesform_template.ui" line="119"/>
         <source>Min gaps between building changes</source>
-        <translation>Nejméně mezer mezi změnami budov</translation>
+        <translation>Nejmenší počet volných hodin mezi změnami budov</translation>
     </message>
 </context>
 <context>
@@ -45673,7 +45703,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminhoursdailyform_template.ui" line="116"/>
         <source>Min hours daily</source>
-        <translation>Nejvíce hodin denně</translation>
+        <translation>Nejmenší počet hodin denně</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminhoursdailyform_template.ui" line="148"/>
@@ -45689,7 +45719,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteacherminhoursdailyform_template.ui" line="14"/>
         <source>Modify teacher min hours daily</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Upravit minimum hodin denně pro učitele</translation>
+        <translation>Upravit nejmenší počet hodin denně pro jednoho učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminhoursdailyform_template.ui" line="32"/>
@@ -45753,7 +45783,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminrestinghoursform_template.ui" line="74"/>
         <source>Min resting hours</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Nejméně oddychových hodin</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminrestinghoursform_template.ui" line="97"/>
@@ -45763,7 +45793,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminrestinghoursform_template.ui" line="116"/>
         <source>Circular</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Kruhový</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminrestinghoursform_template.ui" line="125"/>
@@ -46210,7 +46240,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachersmaxgapsperdayform_template.ui" line="14"/>
         <source>Modify teachers max gaps per day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Upravit nejvíce mezer za den pro učitele</translation>
+        <translation>Změnit největší počet volných hodin za den pro jednoho učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxgapsperdayform_template.ui" line="105"/>
@@ -46230,7 +46260,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxgapsperdayform_template.ui" line="61"/>
         <source>Max gaps per day</source>
-        <translation>Nejvíce mezer za den</translation>
+        <translation>Největší počet volných hodin za den</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxgapsperdayform_template.ui" line="32"/>
@@ -46264,7 +46294,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachersmaxgapsperweekform_template.ui" line="14"/>
         <source>Modify teachers max gaps per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation>Upravit nejvíce mezer za týden pro učitele</translation>
+        <translation>Změnit největší počet volných hodin za týden pro jednoho učitele</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxgapsperweekform_template.ui" line="105"/>
@@ -46284,7 +46314,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxgapsperweekform_template.ui" line="61"/>
         <source>Max gaps per week</source>
-        <translation>Nejvíce mezer za týden</translation>
+        <translation>Největší počet volných hodin za týden</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxgapsperweekform_template.ui" line="32"/>
@@ -46409,7 +46439,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxspanperdayform_template.ui" line="38"/>
         <source>Max span per day</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Největší časový úsek za den</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmaxspanperdayform_template.ui" line="61"/>
@@ -46515,7 +46545,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmingapsbetweenbuildingchangesform_template.ui" line="67"/>
         <source>Min gaps between building changes</source>
-        <translation>Nejméně mezer mezi změnami budov</translation>
+        <translation>Nejmenší počet volných hodin mezi změnami budov</translation>
     </message>
 </context>
 <context>
@@ -46541,12 +46571,12 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachersminhoursdailyform.cpp" line="79"/>
         <source>Allow empty days check box must be checked. If you need to not allow empty days for the teachers, please use the constraint teachers min days per week</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Povolit, že zaškrtávací políčko prázdných dní musí být označeno. Pokud potřebujete zakázat prázdné dny pro učitele, prosím, použite omezení &quot;minimum dní za týden pro učitele&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersminhoursdailyform.cpp" line="108"/>
         <source>This check box must remain checked. If you really need to not allow empty days for the teachers, please use constraint teachers min days per week</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Toto zaškrtávací políčko musí zůstat označeno. Pokud opravdu potřebujete zakázat prázdné dny pro učitele, prosím, použijte omezení &quot;minimum dní za týden pro učitele&quot;</translation>
     </message>
 </context>
 <context>
@@ -46618,7 +46648,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachersminrestinghoursform_template.ui" line="22"/>
         <source>Min resting hours</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Nejméně oddychových hodin</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersminrestinghoursform_template.ui" line="45"/>
@@ -46638,7 +46668,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachersminrestinghoursform_template.ui" line="82"/>
         <source>Circular</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Kruhový</translation>
     </message>
 </context>
 <context>
@@ -46754,7 +46784,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="14"/>
         <source>Modify two activities consecutive</source>
-        <translation>Upravit dve súsledné činnosti</translation>
+        <translation>Upravit dvě činnosti jdoucí přímo po sobě</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="22"/>
@@ -46967,7 +46997,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifygroupactivitiesininitialorderitemform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifygroupactivitiesininitialorderitemform_template.ui" line="46"/>
@@ -47106,7 +47136,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifystudentsgroupform_template.ui" line="14"/>
         <source>Modify students group</source>
         <extracomment>The dialog to modify a students group</extracomment>
-        <translation>Upravit skupinu studentů</translation>
+        <translation>Upravit skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsgroupform_template.ui" line="93"/>
@@ -47116,7 +47146,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifystudentsgroupform_template.ui" line="66"/>
         <source>Number of students</source>
-        <translation>Počet studentů</translation>
+        <translation>Počet žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsgroupform_template.ui" line="100"/>
@@ -47153,7 +47183,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifystudentssubgroupform_template.ui" line="81"/>
         <source>Number of students</source>
-        <translation>Počet studentů</translation>
+        <translation>Počet žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentssubgroupform_template.ui" line="64"/>
@@ -47164,7 +47194,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifystudentssubgroupform_template.ui" line="14"/>
         <source>Modify students subgroup</source>
         <extracomment>Title of the dialog to modify a students subgroup</extracomment>
-        <translation>Upravit podskupinu studentů</translation>
+        <translation>Upravit dílčí skupinu žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentssubgroupform_template.ui" line="43"/>
@@ -47270,7 +47300,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifystudentsyearform_template.ui" line="39"/>
         <source>Number of students</source>
-        <translation>Počet studentů</translation>
+        <translation>Počet žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsyearform_template.ui" line="22"/>
@@ -47281,7 +47311,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifystudentsyearform_template.ui" line="14"/>
         <source>Modify students year</source>
         <extracomment>Title of dialog to modify a students year</extracomment>
-        <translation>Upravit studentský ročník</translation>
+        <translation>Upravit žákovský ročník</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsyearform_template.ui" line="66"/>
@@ -47305,7 +47335,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifysubactivityform.cpp" line="337"/>
         <source>Do you really want to have the subactivity without teacher(s)?</source>
-        <translation>Opravdu chcete mít podčinnost bez učitele(ov)?</translation>
+        <translation>Opravdu chcete mít dílčí činnost bez učitele(ů)?</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform.cpp" line="357"/>
@@ -47320,7 +47350,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifysubactivityform.cpp" line="375"/>
         <source>Do you really want to have the subactivity without student set(s)?</source>
-        <translation>Opravdu chcete mít podčinnost bez skupiny/skupin studentů?</translation>
+        <translation>Opravdu chcete mít dílčí činnost bez skupiny/skupin žáků?</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform.cpp" line="435"/>
@@ -47345,12 +47375,12 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifysubactivityform.cpp" line="87"/>
         <source>Current subactivity has split index %1 out of %2</source>
-        <translation>Nynější podčinnost má rozdeľovací index %1 spomezi %2</translation>
+        <translation>Nynější dílčí činnost má rozdělovací index %1 pryč z %2</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform.cpp" line="88"/>
         <source>The current data applies only to this subactivity</source>
-        <translation>Nynější data sa týkajú jen tejto podčinnosti</translation>
+        <translation>Nynější data se týkají jen této dílčí činnosti</translation>
     </message>
 </context>
 <context>
@@ -47371,7 +47401,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="74"/>
         <source>Students</source>
         <comment>This refers to sets of students, but I want to keep the string short</comment>
-        <translation>Studenti</translation>
+        <translation>Žáci</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="207"/>
@@ -47409,7 +47439,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="236"/>
         <source>Students</source>
         <comment>This refers to the number of students, but I want to keep string short</comment>
-        <translation>Studenti</translation>
+        <translation>Žáci</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="312"/>
@@ -47441,7 +47471,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="14"/>
         <source>Modify subactivity</source>
         <extracomment>Title of dialog to modify a subactivity</extracomment>
-        <translation>Upravit podčinnost</translation>
+        <translation>Upravit dílčí činnost</translation>
     </message>
     <message>
         <location filename="../src/interface/modifysubactivityform_template.ui" line="46"/>
@@ -49260,7 +49290,7 @@ not added - must be a duplicate</source>
 (needs JavaScript - just move mouse over a word and wait a little bit)</source>
         <translation>Úroveň 5 - JavaScript
 - všechny vlastnosti čtvrté úrovně s okolo 3,5-krát větším souborum jako úroveň 2
-- zvýraznění stejných předmětů, druhů činností, učitele, skupin studentů a místností
+- zvýraznění stejných předmětů, druhů činností, učitele, skupin žáků a místností
 (potřeba JavaScript - stačí posunout ukazovátko myši nad slovo a chvíli počkat)</translation>
     </message>
     <message>
@@ -49311,7 +49341,7 @@ not added - must be a duplicate</source>
 - style (or hide) line 1, line 2 and line 3 of the activity cells</source>
         <translation>Úroveň 3 - rozšírené css
 - všechny vlastnosti druhé úrovně s okolo 2-krát větší velikostí souboru než úroveň 2
-- stylizovat (nebo skrýt) všechny předměty, druhy činností, učitele, skupiny studentů a místnosti
+- stylizovat (nebo skrýt) všechny předměty, druhy činností, učitele, skupiny žáků a místnosti
 - stylizovat (nebo skrýt) prvý, druhý a tretí řádek buněk činností</translation>
     </message>
     <message>
@@ -49321,7 +49351,7 @@ not added - must be a duplicate</source>
 - style every single subject, activity tag, teacher, students set and room</source>
         <translation>Úroveň 4 - plný css
 - všechny vlastnosti třetí úrovně s okolo 2,5-krát větší velikostí souboru než úroveň 2
-- stylizovat každý jeden předmět, druh činnosti, učitele, skupiny studentů a místnost</translation>
+- stylizovat každý jeden předmět, druh činnosti, učitele, skupiny žáků a místnost</translation>
     </message>
     <message>
         <location filename="../src/interface/settingstimetablehtmllevelform_template.ui" line="99"/>
@@ -49329,9 +49359,9 @@ not added - must be a duplicate</source>
 - all features of level 5 with around 4 times larger filesize than level 2
 - style the cell of every single subject, activity tag, teacher or student
 (also useful to hide activities with special activity tags)</source>
-        <translation>Úroveň 6 - preťažený css
+        <translation>Úroveň 6 - přetížený css
 - všechny vlastnosti páté úrovně s okolo 4-krát větším souborom než na úrovni 2
-- stylizování buňky každého jednoho předmětu, druhu činnosti, učitele nebo studenta
+- stylizování buňky každého jednoho předmětu, druhu činnosti, učitele nebo žáka
 (též užitečné pro skrytí činností s určitým druhem činnosti)</translation>
     </message>
     <message>
@@ -49460,7 +49490,7 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="582"/>
         <source>Notes:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Poznámky:</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="584"/>
@@ -49984,7 +50014,7 @@ Please report error. FET will now abort current operation</source>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="410"/>
         <source>Read Help/Important tips - tip 2) for details.</source>
-        <translation type="unfinished"></translation>
+        <translation>Přečtěte si nápovědu, důležité rady: Pro další informace se podívejte na Důležité rady, rada číslo 2.</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="425"/>
@@ -50256,7 +50286,7 @@ Please report error. FET will now abort current operation</source>
         <location filename="../src/engine/statisticsexport.cpp" line="552"/>
         <location filename="../src/engine/statisticsexport.cpp" line="563"/>
         <source>Students</source>
-        <translation>Studenti</translation>
+        <translation>Žáci</translation>
     </message>
     <message>
         <location filename="../src/engine/statisticsexport.cpp" line="552"/>
@@ -50423,7 +50453,7 @@ Please report error. FET will now abort current operation</source>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="115"/>
         <source>Print statistics matrix dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Tiskový dialog statistiky</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="125"/>
@@ -50445,32 +50475,32 @@ Please report error. FET will now abort current operation</source>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="138"/>
         <source>students-subjects</source>
-        <translation type="unfinished"></translation>
+        <translation>Žáci-Předměty</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="139"/>
         <source>students-teachers</source>
-        <translation type="unfinished"></translation>
+        <translation>Žáci-Učitelé</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="140"/>
         <source>teachers-subjects</source>
-        <translation type="unfinished"></translation>
+        <translation>Učitelé-Předměty</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="141"/>
         <source>teachers-students</source>
-        <translation type="unfinished"></translation>
+        <translation>Učitelé-Žáci</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="142"/>
         <source>subjects-students</source>
-        <translation type="unfinished"></translation>
+        <translation>Předměty-Žáci</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="143"/>
         <source>subjects-teachers</source>
-        <translation type="unfinished"></translation>
+        <translation>Předměty-Učitelé</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="154"/>
@@ -50481,19 +50511,19 @@ Please report error. FET will now abort current operation</source>
         <location filename="../src/interface/statisticsprintform.cpp" line="158"/>
         <source>Page-break: none</source>
         <comment>No page-break between statistics. Please keep translation short</comment>
-        <translation type="unfinished"></translation>
+        <translation>Zalomení strany: žádné</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="159"/>
         <source>Page-break: always</source>
         <comment>Page-break after each statistic. Please keep translation short</comment>
-        <translation type="unfinished"></translation>
+        <translation>Zalomení strany: vždy</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="160"/>
         <source>Page-break: even</source>
         <comment>Page-break after each even statistic. Please keep translation short</comment>
-        <translation type="unfinished"></translation>
+        <translation>Zalomení strany: sudá (každá druhá)</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="174"/>
@@ -50647,7 +50677,7 @@ Please report error. FET will now abort current operation</source>
         <location filename="../src/interface/statisticsprintform.cpp" line="215"/>
         <source>Comm10E</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation>Comm10E (poštovní obálka)</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="216"/>
@@ -50706,7 +50736,7 @@ Please report error. FET will now abort current operation</source>
         <location filename="../src/interface/statisticsprintform.cpp" line="282"/>
         <source>Activities padding: %1 px</source>
         <comment>px means pixels, when printing the statistics</comment>
-        <translation type="unfinished"></translation>
+        <translation>Odstup činností: %1 px</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="305"/>
@@ -50742,37 +50772,37 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="328"/>
         <source>Split after: %1 names</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozdělení po: %1 názvech</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="351"/>
         <source>Left margin: %1 mm</source>
         <comment>mm means millimeters</comment>
-        <translation type="unfinished"></translation>
+        <translation>Levý okraj: %1 mm</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="374"/>
         <source>Top margin: %1 mm</source>
         <comment>mm means millimeters</comment>
-        <translation type="unfinished"></translation>
+        <translation>Horní okraj: %1 mm</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="397"/>
         <source>Right margin: %1 mm</source>
         <comment>mm means millimeters</comment>
-        <translation type="unfinished"></translation>
+        <translation>Pravý okraj: %1 mm</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="420"/>
         <source>Bottom margin: %1 mm</source>
         <comment>mm means millimeters</comment>
-        <translation type="unfinished"></translation>
+        <translation>Dolní okraj: %1 mm</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="434"/>
         <source>Teaser</source>
         <comment>Small print preview. Please keep translation short</comment>
-        <translation type="unfinished"></translation>
+        <translation>Krátká ukázka</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="435"/>
@@ -50811,13 +50841,13 @@ Bottom: %4</source>
         <location filename="../src/engine/studentsset.cpp" line="196"/>
         <source>GN:%1</source>
         <comment>Group name</comment>
-        <translation type="unfinished"></translation>
+        <translation>Název skupiny: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="198"/>
         <source>NoS:%1</source>
         <comment>Number of students</comment>
-        <translation type="unfinished"></translation>
+        <translation>Počet žáků: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="202"/>
@@ -50828,7 +50858,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="210"/>
         <source>Students set - group</source>
-        <translation>Skupinu studentů - skupina</translation>
+        <translation>Skupinu žáků - skupina</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="212"/>
@@ -50838,7 +50868,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="214"/>
         <source>Number of students=%1</source>
-        <translation>Počet studentů=%1</translation>
+        <translation>Počet žáků=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="219"/>
@@ -50848,12 +50878,12 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="231"/>
         <source>Time constraints directly related to this students group:</source>
-        <translation type="unfinished"></translation>
+        <translation>Časová omezení přímo spojená s touto skupinou žáků:</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="242"/>
         <source>Space constraints directly related to this students group:</source>
-        <translation type="unfinished"></translation>
+        <translation>Prostorová omezení přímo spojená s touto skupinou žáků:</translation>
     </message>
 </context>
 <context>
@@ -50861,7 +50891,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/studentsstatisticsform.cpp" line="372"/>
         <source>Students set</source>
-        <translation>Skupina studentů</translation>
+        <translation>Skupina žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/studentsstatisticsform.cpp" line="373"/>
@@ -50891,7 +50921,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/studentsstatisticsform.cpp" line="465"/>
         <source>Show subgroups</source>
-        <translation>Ukázat podskupiny</translation>
+        <translation>Ukázat dílčí skupiny</translation>
     </message>
     <message>
         <location filename="../src/interface/studentsstatisticsform.cpp" line="462"/>
@@ -50924,7 +50954,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/studentsstatisticsform_template.ui" line="49"/>
         <source>Show subgroups</source>
-        <translation>Ukázat podskupiny</translation>
+        <translation>Ukázat dílčí skupiny</translation>
     </message>
     <message>
         <location filename="../src/interface/studentsstatisticsform_template.ui" line="39"/>
@@ -50935,7 +50965,7 @@ Bottom: %4</source>
         <location filename="../src/interface/studentsstatisticsform_template.ui" line="14"/>
         <source>Students statistics</source>
         <extracomment>Title of dialog to see the students statistics</extracomment>
-        <translation>Statistika studentů</translation>
+        <translation>Statistika žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/studentsstatisticsform_template.ui" line="29"/>
@@ -50969,13 +50999,13 @@ Bottom: %4</source>
         <location filename="../src/engine/studentsset.cpp" line="284"/>
         <source>SgN:%1</source>
         <comment>Subgroup name</comment>
-        <translation type="unfinished"></translation>
+        <translation>Název dílčí skupiny: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="286"/>
         <source>NoS:%1</source>
         <comment>Number of students</comment>
-        <translation type="unfinished"></translation>
+        <translation>Počet žáků: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="290"/>
@@ -50986,17 +51016,17 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="298"/>
         <source>Students set - subgroup</source>
-        <translation>Skupinu studentů - podskupina</translation>
+        <translation>Skupina žáků - dílčí skupina</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="300"/>
         <source>Subgroup name=%1</source>
-        <translation>Název podskupiny=%1</translation>
+        <translation>Název dílčí skupiny=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="302"/>
         <source>Number of students=%1</source>
-        <translation>Počet studentů=%1</translation>
+        <translation>Počet žáků=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="307"/>
@@ -51006,12 +51036,12 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="319"/>
         <source>Time constraints directly related to this students subgroup:</source>
-        <translation type="unfinished"></translation>
+        <translation>Časová omezení přímo spojená s touto dílčí skupinou žáků:</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="330"/>
         <source>Space constraints directly related to this students subgroup:</source>
-        <translation type="unfinished"></translation>
+        <translation>Prostorová omezení přímo spojená s touto dílčí skupinou žáků:</translation>
     </message>
 </context>
 <context>
@@ -51020,13 +51050,13 @@ Bottom: %4</source>
         <location filename="../src/engine/studentsset.cpp" line="83"/>
         <source>YN:%1</source>
         <comment>Year name</comment>
-        <translation type="unfinished"></translation>
+        <translation>Název roku: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="85"/>
         <source>NoS:%1</source>
         <comment>Number of students</comment>
-        <translation type="unfinished"></translation>
+        <translation>Počet žáků: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="89"/>
@@ -51037,7 +51067,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="97"/>
         <source>Students set - year</source>
-        <translation>Skupinu studentů - ročník</translation>
+        <translation>Skupinu žáků - ročník</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="99"/>
@@ -51047,7 +51077,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="101"/>
         <source>Number of students=%1</source>
-        <translation>Počet studentů=%1</translation>
+        <translation>Počet žáků=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="106"/>
@@ -51057,12 +51087,12 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="118"/>
         <source>Time constraints directly related to this students year:</source>
-        <translation type="unfinished"></translation>
+        <translation>Časová omezení přímo spojená s tímto žákovským rokem:</translation>
     </message>
     <message>
         <location filename="../src/engine/studentsset.cpp" line="129"/>
         <source>Space constraints directly related to this students year:</source>
-        <translation type="unfinished"></translation>
+        <translation>Prostorová omezení přímo spojená s tímto žákovským rokem:</translation>
     </message>
 </context>
 <context>
@@ -51089,7 +51119,7 @@ Bottom: %4</source>
         <location filename="../src/interface/subactivitiesform.cpp" line="333"/>
         <location filename="../src/interface/subactivitiesform.cpp" line="435"/>
         <source>Invalid selected subactivity</source>
-        <translation>Vybraná neplatná podčinnost</translation>
+        <translation>Neplatná dílčí činnost</translation>
     </message>
     <message>
         <location filename="../src/interface/subactivitiesform.cpp" line="393"/>
@@ -51173,18 +51203,18 @@ Bottom: %4</source>
         <location filename="../src/interface/subactivitiesform_template.ui" line="14"/>
         <source>The individual subactivities</source>
         <extracomment>The title of the dialog of individual subactivities</extracomment>
-        <translation>Jednotlivé podčinnosti</translation>
+        <translation>Jednotlivé dílčí činnosti</translation>
     </message>
     <message>
         <location filename="../src/interface/subactivitiesform_template.ui" line="60"/>
         <source>Current subactivity</source>
-        <translation>Nynější podčinnost</translation>
+        <translation>Nynější dílčí činnost</translation>
     </message>
     <message>
         <location filename="../src/interface/subactivitiesform_template.ui" line="91"/>
         <source>Students</source>
         <comment>It refers to students sets, but I want to keep the string short</comment>
-        <translation>Studenti</translation>
+        <translation>Žáci</translation>
     </message>
     <message>
         <location filename="../src/interface/subactivitiesform_template.ui" line="110"/>
@@ -51280,7 +51310,7 @@ Bottom: %4</source>
         <location filename="../src/interface/subgroupsform.cpp" line="558"/>
         <location filename="../src/interface/subgroupsform.cpp" line="571"/>
         <source>Invalid selected subgroup</source>
-        <translation>Vybrána neplatná podskupina</translation>
+        <translation>Vybrána neplatná dílčí skupina</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform.cpp" line="172"/>
@@ -51352,7 +51382,7 @@ Bottom: %4</source>
         <location filename="../src/interface/subgroupsform_template.ui" line="14"/>
         <source>Subgroups of students</source>
         <extracomment>The name of the dialog which lists the subgroups of students</extracomment>
-        <translation>Podskupiny studentů</translation>
+        <translation>Podskupiny žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="33"/>
@@ -51421,12 +51451,12 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="133"/>
         <source>Activate all activities for selected subgroup</source>
-        <translation>Povolit všechny činnosti pro vybranou podskupinu</translation>
+        <translation>Povolit všechny činnosti pro vybranou dílčí skupinu</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="140"/>
         <source>Deactivate all activities for selected subgroup</source>
-        <translation>Zakázat všechny činnosti pro vybranou podskupinu</translation>
+        <translation>Zakázat všechny činnosti pro vybranou dílčí skupinu</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="177"/>
@@ -51615,7 +51645,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/subjectsform_template.ui" line="58"/>
         <source>Comments</source>
-        <translation type="unfinished">Poznámka</translation>
+        <translation>Poznámky</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform_template.ui" line="74"/>
@@ -51626,13 +51656,13 @@ Bottom: %4</source>
         <location filename="../src/interface/subjectsform_template.ui" line="83"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished">Nahoru</translation>
+        <translation>Nahoru</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform_template.ui" line="90"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished">Dolů</translation>
+        <translation>Dolů</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform_template.ui" line="97"/>
@@ -51688,13 +51718,13 @@ Bottom: %4</source>
         <location filename="../src/engine/teacher.cpp" line="50"/>
         <source>N:%1</source>
         <comment>The name of the teacher</comment>
-        <translation type="unfinished">N:%1</translation>
+        <translation>N:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/teacher.cpp" line="54"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation type="unfinished">P: %1</translation>
+        <translation>P: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/teacher.cpp" line="61"/>
@@ -51711,18 +51741,18 @@ Bottom: %4</source>
         <location filename="../src/engine/teacher.cpp" line="66"/>
         <source>Target number of hours=%1</source>
         <comment>The target number of hours for the teacher</comment>
-        <translation type="unfinished"></translation>
+        <translation>Cílový počet hodin=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/teacher.cpp" line="69"/>
         <source>Qualified subjects:</source>
         <comment>The list of qualified subjects for a teacher</comment>
-        <translation type="unfinished"></translation>
+        <translation>Způsobilý k předmětům:</translation>
     </message>
     <message>
         <location filename="../src/engine/teacher.cpp" line="78"/>
         <source>Comments=%1</source>
-        <translation type="unfinished">Poznámky=%1</translation>
+        <translation>Poznámky=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/teacher.cpp" line="90"/>
@@ -51740,7 +51770,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/teachersubjectsqualificationsform.cpp" line="61"/>
         <source>Teacher: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Učitel: %1</translation>
     </message>
 </context>
 <context>
@@ -51749,43 +51779,43 @@ Bottom: %4</source>
         <location filename="../src/interface/teachersubjectsqualificationsform_template.ui" line="14"/>
         <source>Teacher subjects qualifications</source>
         <extracomment>This is the title of the dialog to input the qualification of teachers to teach certain subjects</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Oborová oprávnění (způsobilost) učitele pro předměty</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersubjectsqualificationsform_template.ui" line="28"/>
         <source>Selected</source>
         <comment>It refers to a list of selected subjects</comment>
-        <translation type="unfinished">Vybráno</translation>
+        <translation>Vybráno</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersubjectsqualificationsform_template.ui" line="41"/>
         <source>Clear</source>
-        <translation type="unfinished">Vyprázdnit</translation>
+        <translation>Vyprázdnit</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersubjectsqualificationsform_template.ui" line="58"/>
         <source>Subjects</source>
-        <translation type="unfinished">Předměty</translation>
+        <translation>Předměty</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersubjectsqualificationsform_template.ui" line="71"/>
         <source>All</source>
-        <translation type="unfinished">Vše</translation>
+        <translation>Vše</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersubjectsqualificationsform_template.ui" line="80"/>
         <source>Teacher</source>
-        <translation type="unfinished">Učitel</translation>
+        <translation>Učitel</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersubjectsqualificationsform_template.ui" line="92"/>
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersubjectsqualificationsform_template.ui" line="99"/>
         <source>Cancel</source>
-        <translation type="unfinished">Zrušit</translation>
+        <translation>Zrušit</translation>
     </message>
 </context>
 <context>
@@ -52144,7 +52174,7 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="2337"/>
         <location filename="../src/engine/timetableexport.cpp" line="5082"/>
         <source>Warning! Only %1 out of %2 activities placed!</source>
-        <translation type="unfinished"></translation>
+        <translation>Varování: Umístěno jen %1 z %2 činností!</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="882"/>
@@ -52290,7 +52320,7 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="4547"/>
         <location filename="../src/engine/timetableexport.cpp" line="4589"/>
         <source>back to the top</source>
-        <translation type="unfinished"></translation>
+        <translation>zpět nahoru</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="4116"/>
@@ -52302,7 +52332,7 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="864"/>
         <source>Generation started on: %1</source>
         <comment>%1 is the time</comment>
-        <translation type="unfinished"></translation>
+        <translation>Vytváření začalo: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="868"/>
@@ -52364,7 +52394,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2011"/>
         <source>teachers - disabled</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Učitelé - zakázáni</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2013"/>
@@ -52553,7 +52583,7 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="4418"/>
         <location filename="../src/engine/timetableexport.cpp" line="5093"/>
         <source>Table of contents</source>
-        <translation type="unfinished"></translation>
+        <translation>Obsah</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="3838"/>
@@ -52564,40 +52594,40 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="4067"/>
         <source>No rooms recorded in FET for %1.</source>
         <comment>%1 is the institution name</comment>
-        <translation type="unfinished"></translation>
+        <translation>Do FET nenahrány žádné místnosti pro %1.</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2158"/>
         <location filename="../src/engine/timetableexport.cpp" line="9705"/>
         <location filename="../src/engine/timetableexport.cpp" line="9823"/>
         <source>Teachers&apos; Free Periods</source>
-        <translation type="unfinished"></translation>
+        <translation>Volné hodiny učitelů</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="4625"/>
         <location filename="../src/engine/timetableexport.cpp" line="4673"/>
         <source>Teacher has a single gap</source>
-        <translation type="unfinished"></translation>
+        <translation>Učitel má jednu volnou hodinu</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="1727"/>
         <source>Number of broken soft constraints: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Počet poškozených měkkých omezení: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="1728"/>
         <source>Total soft conflicts: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Celkem měkkých střetů: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="1743"/>
         <source>Number of broken constraints: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Počet poškozených omezení: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="1744"/>
         <source>Total conflicts: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Celkem střetů: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2228"/>
@@ -52607,7 +52637,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2524"/>
         <source>Style the teachers&apos; free periods</source>
-        <translation type="unfinished"></translation>
+        <translation>Zpracovat volné hodiny učitelů</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="4370"/>
@@ -52619,97 +52649,97 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="4626"/>
         <location filename="../src/engine/timetableexport.cpp" line="4674"/>
         <source>Teacher has a border gap</source>
-        <translation type="unfinished"></translation>
+        <translation>Učitel má okrajovou volnou hodinu</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="4627"/>
         <location filename="../src/engine/timetableexport.cpp" line="4675"/>
         <source>Teacher has a big gap</source>
-        <translation type="unfinished"></translation>
+        <translation>Učitel má jednu velkou volnou hodinu</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="4628"/>
         <location filename="../src/engine/timetableexport.cpp" line="4676"/>
         <source>Teacher must come earlier</source>
-        <translation type="unfinished"></translation>
+        <translation>Učitel musí přijít dříve</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="4629"/>
         <location filename="../src/engine/timetableexport.cpp" line="4677"/>
         <source>Teacher must come much earlier</source>
-        <translation type="unfinished"></translation>
+        <translation>Učitel musí přijít mnohem dříve</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="4630"/>
         <location filename="../src/engine/timetableexport.cpp" line="4678"/>
         <source>Teacher must stay longer</source>
-        <translation type="unfinished"></translation>
+        <translation>Učitel musí zůstat déle</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="4631"/>
         <location filename="../src/engine/timetableexport.cpp" line="4679"/>
         <source>Teacher must stay much longer</source>
-        <translation type="unfinished"></translation>
+        <translation>Učitel musí zůstat mnohem déle</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="4632"/>
         <location filename="../src/engine/timetableexport.cpp" line="4680"/>
         <source>Teacher has a free day</source>
-        <translation type="unfinished"></translation>
+        <translation>Učitel má volný den</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="4633"/>
         <location filename="../src/engine/timetableexport.cpp" line="4681"/>
         <source>Teacher is not available</source>
-        <translation type="unfinished"></translation>
+        <translation>Učitel není dostupný</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9746"/>
         <location filename="../src/engine/timetableexport.cpp" line="9865"/>
         <source>Single gap</source>
-        <translation type="unfinished"></translation>
+        <translation>Jednotlivá volná hodina</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9747"/>
         <location filename="../src/engine/timetableexport.cpp" line="9866"/>
         <source>Border gap</source>
-        <translation type="unfinished"></translation>
+        <translation>Okrajová volná hodina</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9748"/>
         <location filename="../src/engine/timetableexport.cpp" line="9867"/>
         <source>Big gap</source>
-        <translation type="unfinished"></translation>
+        <translation>Velká volná hodina</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9749"/>
         <location filename="../src/engine/timetableexport.cpp" line="9868"/>
         <source>Must come earlier</source>
-        <translation type="unfinished"></translation>
+        <translation>Musí přijít dříve</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9750"/>
         <location filename="../src/engine/timetableexport.cpp" line="9869"/>
         <source>Must stay longer</source>
-        <translation type="unfinished"></translation>
+        <translation>Musí zůstat delší</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9751"/>
         <location filename="../src/engine/timetableexport.cpp" line="9870"/>
         <source>Must come much earlier</source>
-        <translation type="unfinished"></translation>
+        <translation>Musí přijít mnohem dříve</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9752"/>
         <location filename="../src/engine/timetableexport.cpp" line="9871"/>
         <source>Must stay much longer</source>
-        <translation type="unfinished"></translation>
+        <translation>Musí zůstat mnohem delší</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9753"/>
         <location filename="../src/engine/timetableexport.cpp" line="9872"/>
         <source>Free day</source>
-        <translation type="unfinished"></translation>
+        <translation>Volný den</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9754"/>
@@ -52726,13 +52756,13 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="9939"/>
         <location filename="../src/engine/timetableexport.cpp" line="10138"/>
         <source>This is a teaser only. Values are not correct!</source>
-        <translation type="unfinished"></translation>
+        <translation>Toto je pouze ukázka. Hodnoty nejsou správné!</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="9943"/>
         <location filename="../src/engine/timetableexport.cpp" line="10142"/>
         <source>This file doesn&apos;t list limits that are set by constraints. It contains statistics about the min and max values of the currently calculated solution.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tento soubor neukazuje žádná ohraničení, která byla nastavena skrze omezení. Ukazuje jen statistiku o spočítaných největších a nejmenších hodnotách v nyní počítaném řešení.</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10058"/>
@@ -52746,7 +52776,7 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="10324"/>
         <location filename="../src/engine/timetableexport.cpp" line="10518"/>
         <source>Hours per week</source>
-        <translation type="unfinished"></translation>
+        <translation>Hodin za týden</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10060"/>
@@ -52755,7 +52785,7 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="10325"/>
         <location filename="../src/engine/timetableexport.cpp" line="10519"/>
         <source>Free days</source>
-        <translation type="unfinished"></translation>
+        <translation>Volné dny</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10061"/>
@@ -52819,7 +52849,7 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="10381"/>
         <location filename="../src/engine/timetableexport.cpp" line="10521"/>
         <source>Min gaps per day</source>
-        <translation>Nejméně mezer za den</translation>
+        <translation>Nejmenší počet volných hodin za den</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10110"/>
@@ -52828,7 +52858,7 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="10382"/>
         <location filename="../src/engine/timetableexport.cpp" line="10522"/>
         <source>Max gaps per day</source>
-        <translation>Nejvíce mezer za den</translation>
+        <translation>Největší počet volných hodin za den</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10111"/>
@@ -52851,19 +52881,19 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10271"/>
         <source>All students</source>
-        <translation>Všichni studenti</translation>
+        <translation>Všichni žáci</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10353"/>
         <location filename="../src/engine/timetableexport.cpp" line="10373"/>
         <source>Min hours per week</source>
-        <translation type="unfinished"></translation>
+        <translation>Nejméně hodin za týden</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10354"/>
         <location filename="../src/engine/timetableexport.cpp" line="10374"/>
         <source>Max hours per week</source>
-        <translation type="unfinished"></translation>
+        <translation>Nejvíce hodin za týden</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10355"/>
@@ -52881,13 +52911,13 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="10359"/>
         <location filename="../src/engine/timetableexport.cpp" line="10379"/>
         <source>Min gaps per week</source>
-        <translation>Nejméně mezer za týden</translation>
+        <translation>Nejmenší počet volných hodin za týden</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10360"/>
         <location filename="../src/engine/timetableexport.cpp" line="10380"/>
         <source>Max gaps per week</source>
-        <translation>Nejvíce mezer za týden</translation>
+        <translation>Největší počet volných hodin za týden</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10323"/>
@@ -52900,19 +52930,19 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="1729"/>
         <source>Soft conflicts list (in decreasing order):</source>
-        <translation type="unfinished"></translation>
+        <translation>Seznam měkkých střetů (v sestupném pořadí):</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="1745"/>
         <source>Conflicts list (in decreasing order):</source>
-        <translation type="unfinished"></translation>
+        <translation>Seznam střetů (v sestupném pořadí):</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="889"/>
         <location filename="../src/engine/timetableexport.cpp" line="899"/>
         <location filename="../src/engine/timetableexport.cpp" line="905"/>
         <source>FET - Critical</source>
-        <translation type="unfinished"></translation>
+        <translation>FET - kritické hlášení</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="889"/>
@@ -53077,31 +53107,31 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="1998"/>
         <source>Soft conflicts list - disabled.</source>
-        <translation type="unfinished"></translation>
+        <translation>Seznam měkkých střetů - zakázán.</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2024"/>
         <source>subgroups - disabled</source>
         <comment>It means the subgroups XML timetables are disabled</comment>
-        <translation type="unfinished"></translation>
+        <translation>Dílčí skupiny - zakázáno</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2028"/>
         <source>teachers - disabled</source>
         <comment>It means the teachers XML timetables are disabled</comment>
-        <translation type="unfinished"></translation>
+        <translation>Učitelé - zakázáni</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2032"/>
         <source>activities - disabled</source>
         <comment>It means the activities XML timetables are disabled</comment>
-        <translation type="unfinished"></translation>
+        <translation>Činnosti - zakázány</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2033"/>
         <source>View XML: %1, %2, %3.</source>
         <comment>%1, %2 and %3 are three files in XML format, subgroups, teachers and activities timetables. The user can click on one file to view it</comment>
-        <translation type="unfinished"></translation>
+        <translation>Ukázat soubory XML: %1, %2, %3.</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2042"/>
@@ -53199,7 +53229,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="1996"/>
         <source>View the soft conflicts list.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ukázat seznamy měkkých střetů.</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2254"/>
@@ -53249,13 +53279,13 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/fet.cpp" line="1374"/>
         <source>No: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Číslo: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="1378"/>
         <source>Id: %1 (%2)</source>
         <comment>%1 is id of activity, %2 is detailed description of activity</comment>
-        <translation type="unfinished"></translation>
+        <translation>ID: %1 (%2)</translation>
     </message>
 </context>
 <context>
@@ -53301,7 +53331,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegenerateform.cpp" line="803"/>
         <location filename="../src/interface/timetablegenerateform.cpp" line="852"/>
         <source>Number of broken constraints: %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Počet poškozených omezení: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="215"/>
@@ -53326,13 +53356,13 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegenerateform.cpp" line="541"/>
         <location filename="../src/interface/timetablegenerateform.cpp" line="909"/>
         <source>No: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Číslo: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="306"/>
         <source>Generation stopped</source>
         <comment>The title of a dialog, meaning that the generation of the timetable was stopped.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Vytváření zastaveno</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="312"/>
@@ -53352,29 +53382,29 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegenerateform.cpp" line="435"/>
         <source>Generation stopped (highest stage)</source>
         <comment>The title of a dialog, meaning that the generation of the timetable was stopped and highest stage timetable written.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Vytváření zastaveno (nejlepší řešení)</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="557"/>
         <source>Generation impossible</source>
         <comment>The title of a dialog, meaning that the generation of the timetable is impossible.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Vytvoření nemožné</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="621"/>
         <location filename="../src/interface/timetablegenerateform.cpp" line="664"/>
         <source>Number of broken soft constraints: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Počet poškozených měkkých omezení: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="625"/>
         <source>Total soft conflicts:</source>
-        <translation type="unfinished"></translation>
+        <translation>Střetový činitel:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="701"/>
         <source>%1 out of %2 activities placed</source>
-        <translation type="unfinished"></translation>
+        <translation>Umístěno %1 z %2 činností</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="703"/>
@@ -53504,7 +53534,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegenerateform.cpp" line="913"/>
         <source>Id: %1 (%2)</source>
         <comment>%1 is id of activity, %2 is detailed description of activity</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">ID: %1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="280"/>
@@ -53599,7 +53629,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegenerateform.cpp" line="745"/>
         <source>Max placed activities: %1 (at %2)</source>
         <comment>%1 represents the maximum number of activities placed, %2 is a time interval</comment>
-        <translation type="unfinished"></translation>
+        <translation>Nejvíce umístěných činností: %1 (v %2)</translation>
     </message>
 </context>
 <context>
@@ -53741,7 +53771,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="509"/>
         <source>Max placed activities: %1 (at %2)</source>
         <comment>%1 represents the maximum number of activities placed, %2 is a time interval</comment>
-        <translation type="unfinished"></translation>
+        <translation>Nejvíce umístěných činností: %1 (v %2)</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="512"/>
@@ -53788,12 +53818,12 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="353"/>
         <source>Number of broken soft constraints: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Počet poškozených měkkých omezení: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="357"/>
         <source>Total soft conflicts: %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Celkem měkkých střetů: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="360"/>
@@ -53888,7 +53918,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="1320"/>
         <source>Print timetable</source>
-        <translation type="unfinished"></translation>
+        <translation>Tisk rozvrhu</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="167"/>
@@ -53898,7 +53928,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="160"/>
         <source>Print timetable dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Dialog pro tisk rozvrhu</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="168"/>
@@ -53972,22 +54002,22 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="171"/>
         <source>Teachers&apos; Free Periods</source>
-        <translation type="unfinished"></translation>
+        <translation>Volné hodiny učitelů</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="174"/>
         <source>Activity Tags</source>
-        <translation type="unfinished">Druhy činností</translation>
+        <translation>Druhy činností</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="176"/>
         <source>Students Statistics</source>
-        <translation type="unfinished"></translation>
+        <translation>Statistika žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="177"/>
         <source>Teachers Statistics</source>
-        <translation type="unfinished"></translation>
+        <translation>Statistika učitelů</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="187"/>
@@ -53998,30 +54028,30 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="206"/>
         <source>Time horizontal per day</source>
-        <translation type="unfinished"></translation>
+        <translation>Čas vodorovně za den</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="207"/>
         <source>Time vertical per day</source>
-        <translation type="unfinished"></translation>
+        <translation>Čas svisle za den</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="225"/>
         <source>Page-break: none</source>
         <comment>No page-break between timetables. Please keep translation short</comment>
-        <translation type="unfinished"></translation>
+        <translation>Zalomení strany: žádné</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="226"/>
         <source>Page-break: always</source>
         <comment>Page-break after each timetable. Please keep translation short</comment>
-        <translation type="unfinished"></translation>
+        <translation>Zalomení strany: vždy</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="227"/>
         <source>Page-break: even</source>
         <comment>Page-break after each even timetable. Please keep translation short</comment>
-        <translation type="unfinished"></translation>
+        <translation>Zalomení strany: sudá (každá druhá)</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="241"/>
@@ -54175,7 +54205,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableprintform.cpp" line="282"/>
         <source>Comm10E</source>
         <comment>Type of paper size</comment>
-        <translation type="unfinished"></translation>
+        <translation>Comm10E (poštovní obálka)</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="283"/>
@@ -54222,7 +54252,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="309"/>
         <source>Detailed tables</source>
-        <translation type="unfinished"></translation>
+        <translation>Podrobné tabulky</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="312"/>
@@ -54232,12 +54262,12 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="315"/>
         <source>Repeat vertical names</source>
-        <translation type="unfinished"></translation>
+        <translation>Opakovat svislé názvy</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="318"/>
         <source>Colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Barvy</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="331"/>
@@ -54249,7 +54279,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableprintform.cpp" line="355"/>
         <source>Activities padding: %1 px</source>
         <comment>px means pixels, when printing the timetable</comment>
-        <translation type="unfinished"></translation>
+        <translation>Odstup činností: %1 px</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="378"/>
@@ -54260,37 +54290,37 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="401"/>
         <source>Split after: %1 names</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozdělení po: %1 názvech</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="424"/>
         <source>Left margin: %1 mm</source>
         <comment>mm means millimeters</comment>
-        <translation type="unfinished"></translation>
+        <translation>Levý okraj: %1 mm</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="447"/>
         <source>Top margin: %1 mm</source>
         <comment>mm means millimeters</comment>
-        <translation type="unfinished"></translation>
+        <translation>Horní okraj: %1 mm</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="470"/>
         <source>Right margin: %1 mm</source>
         <comment>mm means millimeters</comment>
-        <translation type="unfinished"></translation>
+        <translation>Pravý okraj: %1 mm</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="493"/>
         <source>Bottom margin: %1 mm</source>
         <comment>mm means millimeters</comment>
-        <translation type="unfinished"></translation>
+        <translation>Dolní okraj: %1 mm</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="507"/>
         <source>Teaser</source>
         <comment>Small print preview. Please keep translation short</comment>
-        <translation type="unfinished"></translation>
+        <translation>Krátká ukázka</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="508"/>
@@ -54318,7 +54348,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="1092"/>
         <source>Warning! Only %1 out of %2 activities placed!</source>
-        <translation type="unfinished"></translation>
+        <translation>Varování: Umístěno %1 z %2 činností!</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="1290"/>
@@ -54372,7 +54402,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="682"/>
         <source>permanently locked time</source>
         <comment>refers to activity</comment>
-        <translation type="unfinished"></translation>
+        <translation>trvale uzamknutý čas</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="496"/>
@@ -54383,7 +54413,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="686"/>
         <source>locked time</source>
         <comment>refers to activity</comment>
-        <translation type="unfinished"></translation>
+        <translation>uzamknutý čas</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="500"/>
@@ -54394,7 +54424,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="690"/>
         <source>permanently locked space</source>
         <comment>refers to activity</comment>
-        <translation type="unfinished"></translation>
+        <translation>trvale uzamknutý prostor</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="503"/>
@@ -54405,7 +54435,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="693"/>
         <source>locked space</source>
         <comment>refers to activity</comment>
-        <translation type="unfinished"></translation>
+        <translation>uzamknutý prostor</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="756"/>
@@ -54416,7 +54446,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="991"/>
         <source>Added %1 locking time constraints.</source>
         <comment>%1 is &gt;= 2, so constraints is plural</comment>
-        <translation type="unfinished"></translation>
+        <translation>Přidáno %1 uzamykajících časových omezení.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="762"/>
@@ -54427,7 +54457,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="997"/>
         <source>Added %1 locking space constraints.</source>
         <comment>%1 is &gt;= 2, so constraints is plural</comment>
-        <translation type="unfinished"></translation>
+        <translation>Přidáno %1 uzamykajících prostorových omezení.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="768"/>
@@ -54438,7 +54468,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1003"/>
         <source>Removed %1 locking time constraints.</source>
         <comment>%1 is &gt;= 2, so constraints is plural</comment>
-        <translation type="unfinished"></translation>
+        <translation>Odstraněno %1 uzamykajících časových omezení.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="774"/>
@@ -54449,7 +54479,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1009"/>
         <source>Removed %1 locking space constraints.</source>
         <comment>%1 is &gt;= 2, so constraints is plural</comment>
-        <translation type="unfinished"></translation>
+        <translation>Odstraněno %1 uzamykajících prostorových omezení.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="785"/>
@@ -54459,7 +54489,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="778"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1020"/>
         <source>No locking constraints added or removed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Žádná uzamykající omezení nebyla přidána nebo odstraněna.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="818"/>
@@ -54490,7 +54520,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="498"/>
         <source>PLT</source>
         <comment>Abbreviation for permanently locked time. There are 4 string: permanently locked time, permanently locked space, locked time, locked space. Make sure their abbreviations contain different letters and are visually different, so user can easily differentiate between them. These abbreviations may appear also in other places, please use the same abbreviations.</comment>
-        <translation type="unfinished"></translation>
+        <translation>TUČ</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="339"/>
@@ -54501,7 +54531,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="504"/>
         <source>LT</source>
         <comment>Abbreviation for locked time. There are 4 string: permanently locked time, permanently locked space, locked time, locked space. Make sure their abbreviations contain different letters and are visually different, so user can easily differentiate between them. These abbreviations may appear also in other places, please use the same abbreviations.</comment>
-        <translation type="unfinished"></translation>
+        <translation>UČ</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="345"/>
@@ -54512,7 +54542,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="510"/>
         <source>PLS</source>
         <comment>Abbreviation for permanently locked space. There are 4 string: permanently locked time, permanently locked space, locked time, locked space. Make sure their abbreviations contain different letters and are visually different, so user can easily differentiate between them. These abbreviations may appear also in other places, please use the same abbreviations.</comment>
-        <translation type="unfinished"></translation>
+        <translation>TUP</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="350"/>
@@ -54523,7 +54553,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="515"/>
         <source>LS</source>
         <comment>Abbreviation for locked space. There are 4 string: permanently locked time, permanently locked space, locked time, locked space. Make sure their abbreviations contain different letters and are visually different, so user can easily differentiate between them. These abbreviations may appear also in other places, please use the same abbreviations.</comment>
-        <translation type="unfinished"></translation>
+        <translation>UP</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="754"/>
@@ -54534,7 +54564,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="989"/>
         <source>Added 1 locking time constraint.</source>
         <comment>constraint is singular (only 1 constraint)</comment>
-        <translation type="unfinished"></translation>
+        <translation>Přidáno 1 uzamykající časové omezení.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="760"/>
@@ -54545,7 +54575,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="995"/>
         <source>Added 1 locking space constraint.</source>
         <comment>constraint is singular (only 1 constraint)</comment>
-        <translation type="unfinished"></translation>
+        <translation>Přidáno 1 uzamykající prostorové omezení.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="766"/>
@@ -54556,7 +54586,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1001"/>
         <source>Removed 1 locking time constraint.</source>
         <comment>constraint is singular (only 1 constraint)</comment>
-        <translation type="unfinished"></translation>
+        <translation>Odstraněno 1 uzamykající časové omezení.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="772"/>
@@ -54567,7 +54597,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1007"/>
         <source>Removed 1 locking space constraint.</source>
         <comment>constraint is singular (only 1 constraint)</comment>
-        <translation type="unfinished"></translation>
+        <translation>Odstraněno 1 uzamykající prostorové omezení.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="822"/>
@@ -54663,12 +54693,12 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="514"/>
         <source>Room is not available with weight %1%</source>
-        <translation type="unfinished"></translation>
+        <translation>Místnost s váhou %1% není dostupná</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="518"/>
         <source>Break with weight 100% in this slot</source>
-        <translation type="unfinished"></translation>
+        <translation>Přestávka s váhou 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="546"/>
@@ -54702,7 +54732,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="698"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="710"/>
         <source>Small problem detected</source>
-        <translation type="unfinished"></translation>
+        <translation>Odhaleny malé potíže</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="626"/>
@@ -54774,7 +54804,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="14"/>
         <source>View rooms days horizontal timetable</source>
         <extracomment>Title of dialog</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Pohled místnosti na rozvrh se dny vodorovně</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="38"/>
@@ -54856,13 +54886,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="318"/>
         <source>px</source>
         <comment>Abbreviation for pixels</comment>
-        <translation type="unfinished">px</translation>
+        <translation>px</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="316"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="326"/>
         <source>Automatic</source>
-        <translation type="unfinished">Automaticky</translation>
+        <translation>Automaticky</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="415"/>
@@ -54897,12 +54927,12 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="732"/>
         <source>Room is not available with weight %1%</source>
-        <translation type="unfinished"></translation>
+        <translation>Místnost s váhou %1% není dostupná</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="736"/>
         <source>Break with weight 100% in this slot</source>
-        <translation type="unfinished"></translation>
+        <translation>Přestávka s váhou 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="765"/>
@@ -54924,7 +54954,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="946"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="960"/>
         <source>Small problem detected</source>
-        <translation type="unfinished"></translation>
+        <translation>Odhaleny malé potíže</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="864"/>
@@ -55023,7 +55053,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="14"/>
         <source>View rooms time horizontal timetable</source>
         <extracomment>Title of dialog to view the rooms timetable</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Pohled místnosti na rozvrh s časem vodorovně</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="39"/>
@@ -55053,7 +55083,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="100"/>
         <source>Students</source>
-        <translation>Studenti</translation>
+        <translation>Žáci</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="107"/>
@@ -55177,12 +55207,12 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="595"/>
         <source>Students subgroup is not available 100% in this slot</source>
-        <translation type="unfinished"></translation>
+        <translation>Dílčí skupina žáků s váhou 100% není dostupná</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="599"/>
         <source>Break with weight 100% in this slot</source>
-        <translation type="unfinished"></translation>
+        <translation>Přestávka s váhou 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="625"/>
@@ -55204,17 +55234,17 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="647"/>
         <source>Please select a year</source>
-        <translation type="unfinished"></translation>
+        <translation>Vyberte, prosím, rok</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="651"/>
         <source>Please select a group</source>
-        <translation type="unfinished"></translation>
+        <translation>Vyberte, prosím, skupinu</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="655"/>
         <source>Please select a subgroup</source>
-        <translation type="unfinished"></translation>
+        <translation>Vyberte, prosím, dílčí skupinu</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="704"/>
@@ -55228,7 +55258,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="792"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="804"/>
         <source>Small problem detected</source>
-        <translation type="unfinished"></translation>
+        <translation>Odhaleny malé potíže</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="720"/>
@@ -55300,7 +55330,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform_template.ui" line="14"/>
         <source>View students days horizontal timetable</source>
         <extracomment>Title of dialog</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Pohled žáka na rozvrh se dny vodorovně</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform_template.ui" line="39"/>
@@ -55414,12 +55444,12 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="890"/>
         <source>Students set is not available 100% in this slot</source>
-        <translation type="unfinished"></translation>
+        <translation>Skupina žáků s váhou 100% není dostupná</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="894"/>
         <source>Break with weight 100% in this slot</source>
-        <translation type="unfinished"></translation>
+        <translation>Přestávka s váhou 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="922"/>
@@ -55441,7 +55471,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1140"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1154"/>
         <source>Small problem detected</source>
-        <translation type="unfinished"></translation>
+        <translation>Odhaleny malé potíže</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1058"/>
@@ -55540,7 +55570,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="14"/>
         <source>View students time horizontal timetable</source>
         <extracomment>Title of dialog to view the students timetable</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Pohled žáka na rozvrh s časem vodorovně</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="39"/>
@@ -55680,12 +55710,12 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="509"/>
         <source>Teacher is not available 100% in this slot</source>
-        <translation type="unfinished"></translation>
+        <translation>Učitel s váhou 100% není dostupný</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="513"/>
         <source>Break with weight 100% in this slot</source>
-        <translation type="unfinished"></translation>
+        <translation>Přestávka s váhou 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="542"/>
@@ -55719,7 +55749,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="691"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="703"/>
         <source>Small problem detected</source>
-        <translation type="unfinished"></translation>
+        <translation>Odhaleny malé potíže</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="618"/>
@@ -55791,7 +55821,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform_template.ui" line="14"/>
         <source>View teachers days horizontal timetable</source>
         <extracomment>Title of dialog to view the teachers timetable</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Pohled učitele na rozvrh se dny vodorovně</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform_template.ui" line="38"/>
@@ -55908,12 +55938,12 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="704"/>
         <source>Teacher is not available 100% in this slot</source>
-        <translation type="unfinished"></translation>
+        <translation>Učitel s váhou 100% není dostupný</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="708"/>
         <source>Break with weight 100% in this slot</source>
-        <translation type="unfinished"></translation>
+        <translation>Přestávka s váhou 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="737"/>
@@ -55935,7 +55965,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="912"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="926"/>
         <source>Small problem detected</source>
-        <translation type="unfinished"></translation>
+        <translation>Odhaleny malé potíže</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="830"/>
@@ -56034,7 +56064,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="14"/>
         <source>View teachers time horizontal timetable</source>
         <extracomment>Title of dialog to view the teachers timetable</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Pohled učitele na rozvrh s časem vodorovně</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="39"/>
@@ -56064,7 +56094,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="100"/>
         <source>Students</source>
-        <translation>Studenti</translation>
+        <translation>Žáci</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="107"/>
@@ -56105,7 +56135,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="14"/>
         <source>Select the categories of timetables to be written on disk</source>
-        <translation type="unfinished"></translation>
+        <translation>Vyberte kategorie rozvrhů k zapsání na disk</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="31"/>
@@ -56262,7 +56292,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/yearsform.cpp" line="122"/>
         <source>Are you sure you want to delete year %1 and all related groups, subgroups, activities and constraints?</source>
-        <translation>Opravdu chcete smazat ročník %1 a všechny s ním spojené skupiny, podskupiny, činnosti a omezení?</translation>
+        <translation>Opravdu chcete smazat ročník %1 a všechny s ním spojené skupiny, dílčí skupiny, činnosti a omezení?</translation>
     </message>
     <message>
         <location filename="../src/interface/yearsform.cpp" line="123"/>
@@ -56287,7 +56317,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/yearsform.cpp" line="317"/>
         <source>Students year comments</source>
-        <translation>Poznámky ke studentskému ročníku</translation>
+        <translation>Poznámky k žákovskému ročníku</translation>
     </message>
     <message>
         <location filename="../src/interface/yearsform.cpp" line="319"/>
@@ -56306,7 +56336,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/yearsform_template.ui" line="14"/>
         <source>Years (forms, classes) of students</source>
         <extracomment>Title of dialog</extracomment>
-        <translation>Ročníky studentů</translation>
+        <translation>Ročníky žáků</translation>
     </message>
     <message>
         <location filename="../src/interface/yearsform_template.ui" line="37"/>

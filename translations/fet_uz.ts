@@ -33568,11 +33568,6 @@ Having a subgroup with too little working hours per week means that you inputted
         <translation>Аудитория фонди</translation>
     </message>
     <message>
-        <source>Advanced</source>
-        <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for activity planning</comment>
-        <translation type="vanished">Қўшимча</translation>
-    </message>
-    <message>
         <location filename="../src/interface/fetmainform_template.ui" line="409"/>
         <source>All</source>
         <comment>It refers to all time constraints (it is the text of a button for activating all time constraints dialog on the main form). It is on the shortcuts tab buttons, so keep translation short</comment>
@@ -33684,19 +33679,19 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="301"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for advanced data</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Қўшимча</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="444"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for time constraints</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Қўшимча</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="747"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for timetable</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Қўшимча</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1251"/>
@@ -33708,7 +33703,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="1329"/>
         <source>Advanced</source>
         <comment>The menu item for advanced features</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Қўшимча</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1477"/>
@@ -34038,10 +34033,6 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="2498"/>
         <source>Warn subgroups with the same activities</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Advanced</source>
-        <translation type="vanished">Қўшимча</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2007"/>

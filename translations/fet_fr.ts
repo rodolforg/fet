@@ -13715,10 +13715,6 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <translation>Contrainte spatiale activités même salle si consécutives rompue</translation>
     </message>
     <message>
-        <source>Space constraint activities same rooms if consecutive broken</source>
-        <translation type="vanished">Contrainte spatiale activités même salle si consécutives rompue</translation>
-    </message>
-    <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7376"/>
         <source>This increases the conflicts total by %1</source>
         <translation>Ceci augmente le total des conflits par %1</translation>
@@ -32956,10 +32952,6 @@ Avoir un sous-groupe avec trop peu d&apos;heures de travail par semaine signifie
         <translation>Pause</translation>
     </message>
     <message>
-        <source>Advanced</source>
-        <translation type="vanished">Avancé</translation>
-    </message>
-    <message>
         <location filename="../src/interface/fetmainform_template.ui" line="497"/>
         <source>Space</source>
         <comment>It is a tab for shortcut buttons to space constraints, so it refers to space constraints, but we need to keep it short, that is why I don&apos;t add also &apos;constraints&apos;</comment>
@@ -33480,7 +33472,7 @@ Avoir un sous-groupe avec trop peu d&apos;heures de travail par semaine signifie
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1595"/>
         <source>An activity has a set of preferred rooms</source>
-        <translation>Un activité a un jeu de salles préférées</translation>
+        <translation>Une activité a un jeu de salles préférées</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1600"/>

@@ -13714,10 +13714,6 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <translation>Restricción de lugar, actividades en la misma aula si consecutivas incorrecta</translation>
     </message>
     <message>
-        <source>Space constraint activities same rooms if consecutive broken</source>
-        <translation type="vanished">Restricción de lugar, actividades en la misma aula si consecutivas incorrecta</translation>
-    </message>
-    <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7376"/>
         <source>This increases the conflicts total by %1</source>
         <translation>Esto incrementa el total de conflictos en un %1</translation>
@@ -34129,10 +34125,6 @@ Detenga la simulación antes de esto.</translation>
         <source>Mark break slots with -X- in timetables</source>
         <comment>It means to show or not the slots which are break slots, in the timetable, with an -X-. Uppercase -X-</comment>
         <translation>Marcar franjas horarias con pausas con -X- en los horarios</translation>
-    </message>
-    <message>
-        <source>Advanced</source>
-        <translation type="vanished">Avanzada</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2007"/>

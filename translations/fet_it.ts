@@ -13715,10 +13715,6 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Space constraint activities same rooms if consecutive broken</source>
-        <translation type="vanished">Vincolo di spazio infranto: attività nella stessa aula se consecutive</translation>
-    </message>
-    <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7376"/>
         <source>This increases the conflicts total by %1</source>
         <translation>Questo incrementa i conflitti di %1</translation>
@@ -32972,11 +32968,6 @@ Se hai un sottogruppo con poche ore di lavoro alla settimana significa che hai i
         <translation>Spazio</translation>
     </message>
     <message>
-        <source>Advanced</source>
-        <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for activity planning</comment>
-        <translation type="vanished">Avanzate</translation>
-    </message>
-    <message>
         <location filename="../src/interface/fetmainform_template.ui" line="409"/>
         <source>All</source>
         <comment>It refers to all time constraints (it is the text of a button for activating all time constraints dialog on the main form). It is on the shortcuts tab buttons, so keep translation short</comment>
@@ -33797,19 +33788,19 @@ Se hai un sottogruppo con poche ore di lavoro alla settimana significa che hai i
         <location filename="../src/interface/fetmainform_template.ui" line="301"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for advanced data</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Avanzate</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="444"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for time constraints</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Avanzate</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="747"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for timetable</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Avanzate</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1251"/>
@@ -33821,7 +33812,7 @@ Se hai un sottogruppo con poche ore di lavoro alla settimana significa che hai i
         <location filename="../src/interface/fetmainform_template.ui" line="1329"/>
         <source>Advanced</source>
         <comment>The menu item for advanced features</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Avanzate</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1477"/>
@@ -34128,10 +34119,6 @@ Se hai un sottogruppo con poche ore di lavoro alla settimana significa che hai i
         <location filename="../src/interface/fetmainform_template.ui" line="2280"/>
         <source>Show shortcut buttons in main window</source>
         <translation>Mostra etichette scorciatoie nella finestra principale</translation>
-    </message>
-    <message>
-        <source>Advanced</source>
-        <translation type="vanished">Avanzate</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2007"/>

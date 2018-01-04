@@ -33129,11 +33129,6 @@ Deteña a simulación antes disto.</translation>
         <translation>Lugar</translation>
     </message>
     <message>
-        <source>Advanced</source>
-        <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for activity planning</comment>
-        <translation type="vanished">Avanzado</translation>
-    </message>
-    <message>
         <location filename="../src/interface/fetmainform_template.ui" line="416"/>
         <source>Break</source>
         <comment>Refers to break constraints (it is a button in the shortcuts tab on main form)</comment>
@@ -33217,19 +33212,19 @@ Deteña a simulación antes disto.</translation>
         <location filename="../src/interface/fetmainform_template.ui" line="301"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for advanced data</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Avanzado</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="444"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for time constraints</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Avanzado</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="747"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for timetable</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Avanzado</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1251"/>
@@ -33241,7 +33236,7 @@ Deteña a simulación antes disto.</translation>
         <location filename="../src/interface/fetmainform_template.ui" line="1329"/>
         <source>Advanced</source>
         <comment>The menu item for advanced features</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Avanzado</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1482"/>
@@ -34084,10 +34079,6 @@ Deteña a simulación antes disto.</translation>
         <source>Mark break slots with -X- in timetables</source>
         <comment>It means to show or not the slots which are break slots, in the timetable, with an -X-. Uppercase -X-</comment>
         <translation>Marcar casiñas con pausas con -X- en horarios</translation>
-    </message>
-    <message>
-        <source>Advanced</source>
-        <translation type="vanished">Avanzado</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2007"/>

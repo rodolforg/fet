@@ -33200,15 +33200,10 @@ Please stop simulation before this.</source>
         <translation>Простор</translation>
     </message>
     <message>
-        <source>Advanced</source>
-        <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for activity planning</comment>
-        <translation type="vanished">Напредно</translation>
-    </message>
-    <message>
         <location filename="../src/interface/fetmainform_template.ui" line="444"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for time constraints</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Напредно</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="497"/>
@@ -33226,7 +33221,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/fetmainform_template.ui" line="747"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for timetable</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Напредно</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="761"/>
@@ -33260,7 +33255,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/fetmainform_template.ui" line="1329"/>
         <source>Advanced</source>
         <comment>The menu item for advanced features</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Напредно</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1382"/>
@@ -33606,7 +33601,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/fetmainform_template.ui" line="301"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for advanced data</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Напредно</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1886"/>
@@ -34080,10 +34075,6 @@ Please stop simulation before this.</source>
         <source>Mark break slots with -X- in timetables</source>
         <comment>It means to show or not the slots which are break slots, in the timetable, with an -X-. Uppercase -X-</comment>
         <translation>Означи место паузе са -X-  у распореду</translation>
-    </message>
-    <message>
-        <source>Advanced</source>
-        <translation type="vanished">Напредно</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2007"/>

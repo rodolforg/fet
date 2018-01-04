@@ -33572,11 +33572,6 @@ Please stop simulation before this.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Advanced</source>
-        <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for activity planning</comment>
-        <translation type="obsolete">پیشرفته</translation>
-    </message>
-    <message>
         <location filename="../src/interface/fetmainform_template.ui" line="497"/>
         <source>Space</source>
         <comment>It is a tab for shortcut buttons to space constraints, so it refers to space constraints, but we need to keep it short, that is why I don&apos;t add also &apos;constraints&apos;</comment>
@@ -33670,19 +33665,19 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/fetmainform_template.ui" line="301"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for advanced data</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">پیشرفته</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="444"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for time constraints</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">پیشرفته</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="747"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for timetable</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">پیشرفته</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1251"/>
@@ -33694,7 +33689,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/fetmainform_template.ui" line="1329"/>
         <source>Advanced</source>
         <comment>The menu item for advanced features</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">پیشرفته</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1477"/>
@@ -34029,10 +34024,6 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/fetmainform_template.ui" line="2280"/>
         <source>Show shortcut buttons in main window</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Advanced</source>
-        <translation type="vanished">پیشرفته</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2007"/>

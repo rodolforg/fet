@@ -13626,10 +13626,6 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Space constraint activities same rooms if consecutive broken</source>
-        <translation type="vanished">Không thỏa mãn RB các tiết giảng cùng một căn phòng nếu liên tiếp</translation>
-    </message>
-    <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7376"/>
         <source>This increases the conflicts total by %1</source>
         <translation>Số mâu thuấn tăng thêm %1</translation>
@@ -33171,11 +33167,6 @@ Nếu một nhóm con có quá ít giờ học, có lẽ bạn đã nhập các 
         <translation>RB phòng học</translation>
     </message>
     <message>
-        <source>Advanced</source>
-        <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for activity planning</comment>
-        <translation type="vanished">Chi tiết</translation>
-    </message>
-    <message>
         <location filename="../src/interface/fetmainform_template.ui" line="416"/>
         <source>Break</source>
         <comment>Refers to break constraints (it is a button in the shortcuts tab on main form)</comment>
@@ -33965,10 +33956,6 @@ Nếu một nhóm con có quá ít giờ học, có lẽ bạn đã nhập các 
         <source>Mark break slots with -X- in timetables</source>
         <comment>It means to show or not the slots which are break slots, in the timetable, with an -X-. Uppercase -X-</comment>
         <translation>Đánh dấu giờ giải lao trong TKB với ký tự -X-</translation>
-    </message>
-    <message>
-        <source>Advanced</source>
-        <translation type="vanished">Nâng cao</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2007"/>

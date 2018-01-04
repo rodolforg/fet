@@ -13679,10 +13679,6 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Space constraint activities same rooms if consecutive broken</source>
-        <translation type="vanished">Kusht hapësire i shpërfillur për veprimtari që zhvillohen në të njëjtin mjedis</translation>
-    </message>
-    <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7376"/>
         <source>This increases the conflicts total by %1</source>
         <translation>Kjo e shton përplasjet me %1</translation>
@@ -33299,11 +33295,6 @@ Having a subgroup with too little working hours per week means that you inputted
         <translation>Hapësira</translation>
     </message>
     <message>
-        <source>Advanced</source>
-        <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for activity planning</comment>
-        <translation type="vanished">Përparuara</translation>
-    </message>
-    <message>
         <location filename="../src/interface/fetmainform_template.ui" line="416"/>
         <source>Break</source>
         <comment>Refers to break constraints (it is a button in the shortcuts tab on main form)</comment>
@@ -33313,7 +33304,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="444"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for time constraints</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Përparuara</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="497"/>
@@ -33331,7 +33322,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="747"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for timetable</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Përparuara</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="761"/>
@@ -33360,7 +33351,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="1329"/>
         <source>Advanced</source>
         <comment>The menu item for advanced features</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Përparuara</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1374"/>
@@ -33980,7 +33971,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="301"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for advanced data</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Përparuara</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1477"/>
@@ -34091,10 +34082,6 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform_template.ui" line="2362"/>
         <source>Confirm save data and timetable as</source>
         <translation>Konfirmo ruajtjen e të dhënave dhe orarin si</translation>
-    </message>
-    <message>
-        <source>Advanced</source>
-        <translation type="vanished">Përparuara</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2007"/>

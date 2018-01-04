@@ -11123,7 +11123,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/advancedlockunlockform.cpp" line="907"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1428"/>
         <source>There were added %1 locking time constraints and %2 locking space constraints. There were not added %3 locking time constraints and %4 locking space constraints, because these activities were already locked</source>
-        <translation>أضيفت قيود زمنية مقفلة ت %1 و %2 قيود مكانية مقفلة. لم يتم اضافة %3 قيود زمنية مقفلة .و %4 قيود مكانية مقفلة لأن هذه الأنشطة قد سبق قفلها</translation>
+        <translation>أضيفت %1 قيدا زمنيا مقفلا و %2 قيدا مكانيا مقفلا. لم يتم اضافة %3 من قيود الزمن المقفلة .و %4 من قيود المكان المقفلة لأن هذه الأنشطة قد سبق قفلها</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="366"/>
@@ -11195,7 +11195,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1948"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2257"/>
         <source>There were removed %1 locking time constraints and %2 locking space constraints. There were not removed %3 locking time constraints and %4 locking space constraints, because these activities were permanently locked</source>
-        <translation>أضيفت قيود زمنية مقفلة ت %1 و %2 قيود مكانية مقفلة. لم يتم اضافة %3 قيود زمنية مقفلة .و %4 قيود مكانية مقفلة لأن هذه الأنشطة مقفلة بشكل دائم</translation>
+        <translation>تم إزالة %1 قيدا زمنيا مقفلا و %2 قيدا مكانيا مقفلا. لم يتم إزالة %3 من قيود الزمن المقفلة .و %4 من قيود المكان المقفلة لأن هذه الأنشطة مقفلة بشكل دائم</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="629"/>
@@ -11247,7 +11247,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1694"/>
         <source>All activities will be unlocked (those which are not permanently locked)</source>
-        <translation>كل الأنشطة سيتم فتحها (التي هي الغير مقفلة بصفة دائمة)</translation>
+        <translation>كل الأنشطة سيتم فتحها (التي هي غير مقفلة بصفة دائمة)</translation>
     </message>
 </context>
 <context>
@@ -13721,11 +13721,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7374"/>
         <source>Space constraint activities same room if consecutive broken</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Space constraint activities same rooms if consecutive broken</source>
-        <translation type="vanished">قيد مكاني أنشطة نفس القاعات إذا متصلة تكسرت</translation>
+        <translation>القيد المكاني أنشطة في نفس القاعة إذا كانت الأنشطة متصلة قد تم كسره</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7376"/>
@@ -31646,7 +31642,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="3137"/>
         <source>Feature is not enabled. To use this type of feature you must enable it from the Settings-&gt;Advanced menu.</source>
-        <translation>وظيفة غير مفعّلة.لاستخدام هذا النوع من الوظائف يجب تفعيله من اعدادات -&gt;خيارات متقدمة.</translation>
+        <translation>وظيفة غير مفعّلة.لاستخدام هذا النوع من الوظائف يجب تفعيله من إعدادات -&gt;إعدادات متقدمة.</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="3141"/>
@@ -32929,7 +32925,7 @@ G1 ستظهر مرتين في الجدول</translation>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1247"/>
         <source>Settings</source>
-        <translation>اعدادات</translation>
+        <translation>إعدادات</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2082"/>
@@ -33904,31 +33900,31 @@ G1 ستظهر مرتين في الجدول</translation>
         <location filename="../src/interface/fetmainform_template.ui" line="301"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for advanced data</comment>
-        <translation type="unfinished"></translation>
+        <translation>بيانات متقدمة</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="444"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for time constraints</comment>
-        <translation type="unfinished"></translation>
+        <translation>متقدم</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="747"/>
         <source>Advanced</source>
         <comment>It is on the shortcuts tab buttons, so keep translation short. It contains submenu for timetable</comment>
-        <translation type="unfinished"></translation>
+        <translation>متقدم</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1251"/>
         <source>Advanced</source>
         <comment>It refers to advanced settings</comment>
-        <translation type="unfinished"></translation>
+        <translation>إعدادات متقدمة</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1329"/>
         <source>Advanced</source>
         <comment>The menu item for advanced features</comment>
-        <translation type="unfinished"></translation>
+        <translation>متقدم</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1477"/>
@@ -34181,10 +34177,6 @@ G1 ستظهر مرتين في الجدول</translation>
         <location filename="../src/interface/fetmainform_template.ui" line="2280"/>
         <source>Show shortcut buttons in main window</source>
         <translation>عرض اختصارات الازرار في القائمة الرئيسية</translation>
-    </message>
-    <message>
-        <source>Advanced</source>
-        <translation type="vanished">متقدم</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2007"/>

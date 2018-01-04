@@ -34101,10 +34101,6 @@ Vă rog opriţi simularea înainte de aceasta.</translation>
         <translation>Avertizează subgrupurile cu aceleaşi activităţi</translation>
     </message>
     <message>
-        <source>Advanced</source>
-        <translation type="vanished">Avansat</translation>
-    </message>
-    <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2007"/>
         <source>Spread the activities evenly over the week</source>
         <translation>Distribuie activităţile uniform de-a lungul săptămânii</translation>

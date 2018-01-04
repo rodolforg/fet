@@ -13717,10 +13717,6 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <translation>Die Raumeinschränkung „Gleicher Raum wenn aufeinanderfolgende Aktivitäten“ wurde nicht beachtet</translation>
     </message>
     <message>
-        <source>Space constraint activities same rooms if consecutive broken</source>
-        <translation type="vanished">Die Raumeinschränkung „Ein Satz an Aktivitäten belegt eine begrenzte Anzahl an verschiedenen Räumen“ wurde nicht beachtet.</translation>
-    </message>
-    <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7376"/>
         <source>This increases the conflicts total by %1</source>
         <translation>Dies erhöht die Anzahl an Konfliken um %1</translation>
@@ -34146,10 +34142,6 @@ Dieses Menü zeigt Aktivitäten an, die Raumeinschränkungen mit einer Gewichtun
         <location filename="../src/interface/fetmainform_template.ui" line="1991"/>
         <source>A set of activities end students day</source>
         <translation>Mehrere Aktivitäten, die einen Schülertag beenden</translation>
-    </message>
-    <message>
-        <source>Advanced</source>
-        <translation type="vanished">Erweitert</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2007"/>
