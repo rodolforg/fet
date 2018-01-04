@@ -102,6 +102,16 @@ void DaysForm::ok()
 					tr("Duplicates not allowed"));
 				return;
 			}
+
+	bool userChangedDays = false;
+	for(int i=0; i < nDays; i++) {
+		if (daysNames[i]->text() != gt.rules.daysOfTheWeek[i]) {
+			userChangedDays = true;
+			break;
+		}
+	}
+	if (!userChangedDays)
+		return;
 	
 	//2011-10-18
 	int cnt_mod=0;
