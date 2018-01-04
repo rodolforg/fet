@@ -16,7 +16,6 @@
  ***************************************************************************/
 
 #include "timetable_defs.h"
-#include "timetable.h"
 #include "fet.h"
 
 #include "lockunlock.h"
@@ -26,8 +25,6 @@
 #include <QLabel>
 #include <QLineEdit>
 #include <QMessageBox>
-
-extern Timetable gt;
 
 static QLineEdit* daysNames[MAX_DAYS_PER_WEEK];
 static int nDays;
@@ -138,7 +135,7 @@ void DaysForm::ok()
 	gt.rules.nDaysPerWeek=oldDays;
 			
 	if(cnt_mod>0 || cnt_rem>0){
-		QString s=QString("");
+		QString s;
 		if(cnt_rem>0){
 			s+=tr("%1 constraints will be removed.", "%1 is the number of constraints").arg(cnt_rem);
 			s+=" ";
