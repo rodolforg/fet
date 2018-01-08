@@ -38,6 +38,10 @@ Solution::Solution()
 	  teachersMatrixReady(false), subgroupsMatrixReady(false), roomsMatrixReady(false),
 	  nPlacedActivities(0), _fitness(-1)
 {
+	for(int i=0; i<MAX_ACTIVITIES; i++){
+		this->times[i]=UNALLOCATED_TIME;
+		this->rooms[i]=UNALLOCATED_SPACE;
+	}
 }
 
 void Solution::copy(const Rules &r, const Solution &c){
