@@ -4293,7 +4293,6 @@ double ConstraintTeachersMaxGapsPerWeek::fitness(Solution& c, const Rules& r, QL
 		for(j=0; j<r.nDaysPerWeek; j++){
 			for(k=0; k<r.nHoursPerDay; k++)
 				if(teachersMatrix[i][j][k]>0){
-					assert(!breakDayHour[j][k] && !teacherNotAvailableDayHour[i][j][k]);
 					break;
 				}
 
@@ -4494,7 +4493,6 @@ double ConstraintTeacherMaxGapsPerWeek::fitness(Solution& c, const Rules& r, QLi
 	for(j=0; j<r.nDaysPerWeek; j++){
 		for(k=0; k<r.nHoursPerDay; k++)
 			if(teachersMatrix[i][j][k]>0){
-				assert(!breakDayHour[j][k] && !teacherNotAvailableDayHour[i][j][k]);
 				break;
 			}
 
@@ -4686,7 +4684,6 @@ double ConstraintTeachersMaxGapsPerDay::fitness(Solution& c, const Rules& r, QLi
 			tg=0;
 			for(k=0; k<r.nHoursPerDay; k++)
 				if(teachersMatrix[i][j][k]>0){
-					assert(!breakDayHour[j][k] && !teacherNotAvailableDayHour[i][j][k]);
 					break;
 				}
 
@@ -4888,7 +4885,6 @@ double ConstraintTeacherMaxGapsPerDay::fitness(Solution& c, const Rules& r, QLis
 		tg=0;
 		for(k=0; k<r.nHoursPerDay; k++)
 			if(teachersMatrix[i][j][k]>0){
-				assert(!breakDayHour[j][k] && !teacherNotAvailableDayHour[i][j][k]);
 				break;
 			}
 
@@ -5354,7 +5350,6 @@ double ConstraintStudentsMaxGapsPerWeek::fitness(Solution& c, const Rules& r, QL
 			tmp=0;
 			for(k=0; k<r.nHoursPerDay; k++)
 				if(subgroupsMatrix[i][j][k]>0){
-					assert(!breakDayHour[j][k] && !subgroupNotAvailableDayHour[i][j][k]);
 					break;
 				}
 			for(; k<r.nHoursPerDay; k++) if(!breakDayHour[j][k] && !subgroupNotAvailableDayHour[i][j][k]){
@@ -5607,7 +5602,6 @@ double ConstraintStudentsSetMaxGapsPerWeek::fitness(Solution& c, const Rules& r,
 			tmp=0;
 			for(k=0; k<r.nHoursPerDay; k++)
 				if(subgroupsMatrix[i][j][k]>0){
-					assert(!breakDayHour[j][k] && !subgroupNotAvailableDayHour[i][j][k]);
 					break;
 				}
 			for(; k<r.nHoursPerDay; k++) if(!breakDayHour[j][k] && !subgroupNotAvailableDayHour[i][j][k]){
