@@ -1771,12 +1771,17 @@ double ConstraintMinDaysBetweenActivities::fitness(Solution& c, const Rules& r, 
 					
 					int tt=0;
 					int dist=abs(day1-day2);
+					bool brokenMandatoryConsecutive = false;
 
 					if(dist<minDays){
 						tt=minDays-dist;
 
-						if(this->consecutiveIfSameDay && day1==day2)
-							assert( day1==day2 && (hour1+duration1==hour2 || hour2+duration2==hour1) );
+						if(this->consecutiveIfSameDay && day1==day2) {
+							if (!( day1==day2 && (hour1+duration1==hour2 || hour2+duration2==hour1) )) {
+								tt += (hour1 < hour2) ? (hour2 - hour1+duration1) : (hour1 - hour2+duration2);
+								brokenMandatoryConsecutive = true;
+							}
+						}
 					}
 
 					nbroken+=tt;
@@ -1791,7 +1796,8 @@ double ConstraintMinDaysBetweenActivities::fitness(Solution& c, const Rules& r, 
 								.arg(tt)
 								.arg(r.daysOfTheWeek[day1])
 								.arg(r.daysOfTheWeek[day2]);
-						;
+						if (brokenMandatoryConsecutive)
+							s += tr(". These activities should be consecutive when on the same day but they are not");
 
 						s+=", ";
 						s+=tr("conflicts factor increase=%1").arg(CustomFETString::number(tt*weightPercentage/100));
