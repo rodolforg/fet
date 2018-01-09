@@ -329,12 +329,6 @@ double ConstraintBasicCompulsorySpace::fitness(
 			assert(nre==roomsConflicts);
 	}
 		
-	if(this->weightPercentage==100){
-		//assert(unallocated==0);
-		assert(nre==0);
-		assert(nor==0);
-	}
-
 	return weightPercentage/100 * (unallocated + qint64(nre) + qint64(nor)); //fitness factor
 }
 
@@ -569,9 +563,6 @@ double ConstraintRoomNotAvailableTimes::fitness(
 		}
 	}
 	
-	if(this->weightPercentage==100)
-		assert(nbroken==0);
-
 	return weightPercentage/100 * nbroken;
 }
 
@@ -823,13 +814,9 @@ double ConstraintActivityPreferredRoom::fitness(
 
 	int nbroken = 0;
 	
-	bool ok=true;
-
 	int rm=c.rooms[this->_activity];
 	if(/*rm!=UNALLOCATED_SPACE &&*/ rm!=this->_room){
 		if(rm!=UNALLOCATED_SPACE){
-			ok=false;
-
 			if(conflictsString!=NULL){
 				QString s=tr("Space constraint activity preferred room broken for activity with id=%1 (%2), room=%3",
 					"%1 is activity id, %2 is detailed description of activity")
@@ -848,9 +835,6 @@ double ConstraintActivityPreferredRoom::fitness(
 		}
 	}
 	
-	if(this->weightPercentage==100)
-		assert(ok);
-
 	return weightPercentage/100 * nbroken;
 }
 
@@ -1059,8 +1043,6 @@ double ConstraintActivityPreferredRooms::fitness(
 
 	int nbroken = 0;
 	
-	bool ok=true;
-
 	int rm=c.rooms[this->_activity];
 	if(1 || rm!=UNALLOCATED_SPACE){
 		int i;
@@ -1069,8 +1051,6 @@ double ConstraintActivityPreferredRooms::fitness(
 				break;
 		if(i==this->_rooms.count()){
 			if(rm!=UNALLOCATED_SPACE){
-				ok=false;
-		
 				if(conflictsString!=NULL){
 					QString s=tr("Space constraint activity preferred rooms broken for activity with id=%1 (%2)"
 						, "%1 is activity id, %2 is detailed description of activity")
@@ -1090,9 +1070,6 @@ double ConstraintActivityPreferredRooms::fitness(
 		}
 	}
 	
-	if(this->weightPercentage==100)
-		assert(ok);
-
 	return weightPercentage/100 * nbroken;
 }
 
@@ -1309,8 +1286,6 @@ double ConstraintStudentsSetHomeRoom::fitness(
 
 	int nbroken = 0;
 	
-	bool ok2=true;
-
 	foreach(int ac, this->_activities){
 		int rm=c.rooms[ac];
 		if(rm==UNALLOCATED_SPACE) //counted as unallocated
@@ -1332,8 +1307,6 @@ double ConstraintStudentsSetHomeRoom::fitness(
 		}
 
 		if(!ok){
-			if(rm!=UNALLOCATED_SPACE)
-				ok2=false;
 		
 			if(conflictsString!=NULL){
 				QString s=tr("Space constraint students set home room broken for activity with id %1 (%2)",
@@ -1353,9 +1326,6 @@ double ConstraintStudentsSetHomeRoom::fitness(
 		}
 	}
 	
-	if(this->weightPercentage==100)
-		assert(ok2);
-
 	return weightPercentage/100 * nbroken;
 }
 
@@ -1584,8 +1554,6 @@ double ConstraintStudentsSetHomeRooms::fitness(
 
 	int nbroken = 0;
 	
-	bool ok2=true;
-
 	foreach(int ac, this->_activities){
 		int rm=c.rooms[ac];
 		if(rm==UNALLOCATED_SPACE)
@@ -1610,8 +1578,6 @@ double ConstraintStudentsSetHomeRooms::fitness(
 		}
 
 		if(!ok){
-			if(rm!=UNALLOCATED_SPACE)
-				ok2=false;
 			
 			if(conflictsString!=NULL){
 				QString s=tr("Space constraint students set home rooms broken for activity with id %1 (%2)"
@@ -1630,9 +1596,6 @@ double ConstraintStudentsSetHomeRooms::fitness(
 		}
 	}
 	
-	if(this->weightPercentage==100)
-		assert(ok2);
-
 	return weightPercentage/100 * nbroken;
 }
 
@@ -1848,8 +1811,6 @@ double ConstraintTeacherHomeRoom::fitness(
 
 	int nbroken = 0;
 	
-	bool ok2=true;
-
 	foreach(int ac, this->_activities){
 		int rm=c.rooms[ac];
 		if(rm==UNALLOCATED_SPACE) //counted as unallocated
@@ -1870,8 +1831,6 @@ double ConstraintTeacherHomeRoom::fitness(
 		}
 
 		if(!ok){
-			if(rm!=UNALLOCATED_SPACE)
-				ok2=false;
 		
 			if(conflictsString!=NULL){
 				QString s=tr("Space constraint teacher home room broken for activity with id %1 (%2)",
@@ -1891,9 +1850,6 @@ double ConstraintTeacherHomeRoom::fitness(
 		}
 	}
 	
-	if(this->weightPercentage==100)
-		assert(ok2);
-
 	return weightPercentage/100 * nbroken;
 }
 
@@ -2121,8 +2077,6 @@ double ConstraintTeacherHomeRooms::fitness(
 
 	int nbroken = 0;
 	
-	bool ok2=true;
-
 	foreach(int ac, this->_activities){
 		int rm=c.rooms[ac];
 		if(rm==UNALLOCATED_SPACE)
@@ -2147,8 +2101,6 @@ double ConstraintTeacherHomeRooms::fitness(
 		}
 
 		if(!ok){
-			if(rm!=UNALLOCATED_SPACE)
-				ok2=false;
 			
 			if(conflictsString!=NULL){
 				QString s=tr("Space constraint teacher home rooms broken for activity with id %1 (%2)",
@@ -2167,9 +2119,6 @@ double ConstraintTeacherHomeRooms::fitness(
 		}
 	}
 	
-	if(this->weightPercentage==100)
-		assert(ok2);
-
 	return weightPercentage/100 * nbroken;
 }
 
@@ -2361,8 +2310,6 @@ double ConstraintSubjectPreferredRoom::fitness(
 
 	int nbroken = 0;
 	
-	bool ok2=true;
-
 	foreach(int ac, this->_activities){
 		int rm=c.rooms[ac];
 		if(rm==UNALLOCATED_SPACE) //counted as unallocated
@@ -2373,8 +2320,6 @@ double ConstraintSubjectPreferredRoom::fitness(
 			ok=false;
 
 		if(!ok){
-			if(rm!=UNALLOCATED_SPACE)
-				ok2=false;
 		
 			if(conflictsString!=NULL){
 				QString s=tr("Space constraint subject preferred room broken for activity with id %1 (%2)"
@@ -2394,9 +2339,6 @@ double ConstraintSubjectPreferredRoom::fitness(
 		}
 	}
 	
-	if(this->weightPercentage==100)
-		assert(ok2);
-
 	return weightPercentage/100 * nbroken;
 }
 
@@ -2601,8 +2543,6 @@ double ConstraintSubjectPreferredRooms::fitness(
 
 	int nbroken = 0;
 	
-	bool ok2=true;
-
 	foreach(int ac, this->_activities){
 		int rm=c.rooms[ac];
 		if(rm==UNALLOCATED_SPACE)
@@ -2617,8 +2557,6 @@ double ConstraintSubjectPreferredRooms::fitness(
 			ok=false;
 
 		if(!ok){
-			if(rm!=UNALLOCATED_SPACE)
-				ok2=false;
 			
 			if(conflictsString!=NULL){
 				QString s=tr("Space constraint subject preferred rooms broken for activity with id %1 (%2)",
@@ -2637,9 +2575,6 @@ double ConstraintSubjectPreferredRooms::fitness(
 		}
 	}
 	
-	if(this->weightPercentage==100)
-		assert(ok2);
-
 	return weightPercentage/100 * nbroken;
 }
 
@@ -2840,8 +2775,6 @@ double ConstraintSubjectActivityTagPreferredRoom::fitness(
 
 	int nbroken = 0;
 	
-	bool ok2=true;
-
 	foreach(int ac, this->_activities){
 		int rm=c.rooms[ac];
 		if(rm==UNALLOCATED_SPACE) //counted as unallocated
@@ -2852,8 +2785,6 @@ double ConstraintSubjectActivityTagPreferredRoom::fitness(
 			ok=false;
 
 		if(!ok){
-			if(rm!=UNALLOCATED_SPACE)
-				ok2=false;
 		
 			if(conflictsString!=NULL){
 				QString s=tr("Space constraint subject activity tag preferred room broken for activity with id %1 (%2) (activity tag of constraint=%3)",
@@ -2874,9 +2805,6 @@ double ConstraintSubjectActivityTagPreferredRoom::fitness(
 		}
 	}
 	
-	if(this->weightPercentage==100)
-		assert(ok2);
-
 	return weightPercentage/100 * nbroken;
 }
 
@@ -3089,8 +3017,6 @@ double ConstraintSubjectActivityTagPreferredRooms::fitness(
 
 	int nbroken = 0;
 	
-	bool ok2=true;
-
 	foreach(int ac, this->_activities){
 		int rm=c.rooms[ac];
 		if(rm==UNALLOCATED_SPACE)
@@ -3105,8 +3031,6 @@ double ConstraintSubjectActivityTagPreferredRooms::fitness(
 			ok=false;
 
 		if(!ok){
-			if(rm!=UNALLOCATED_SPACE)
-				ok2=false;
 			
 			if(conflictsString!=NULL){
 				QString s=tr("Space constraint subject activity tag preferred rooms broken for activity with id %1 (%2) (activity tag of constraint=%3)",
@@ -3126,9 +3050,6 @@ double ConstraintSubjectActivityTagPreferredRooms::fitness(
 		}
 	}
 	
-	if(this->weightPercentage==100)
-		assert(ok2);
-
 	return weightPercentage/100 * nbroken;
 }
 
@@ -3321,8 +3242,6 @@ double ConstraintActivityTagPreferredRoom::fitness(
 
 	int nbroken = 0;
 	
-	bool ok2=true;
-
 	foreach(int ac, this->_activities){
 		int rm=c.rooms[ac];
 		if(rm==UNALLOCATED_SPACE) //counted as unallocated
@@ -3333,8 +3252,6 @@ double ConstraintActivityTagPreferredRoom::fitness(
 			ok=false;
 
 		if(!ok){
-			if(rm!=UNALLOCATED_SPACE)
-				ok2=false;
 		
 			if(conflictsString!=NULL){
 				QString s=tr("Space constraint activity tag preferred room broken for activity with id %1 (%2) (activity tag of constraint=%3)",
@@ -3355,9 +3272,6 @@ double ConstraintActivityTagPreferredRoom::fitness(
 		}
 	}
 	
-	if(this->weightPercentage==100)
-		assert(ok2);
-
 	return weightPercentage/100 * nbroken;
 }
 
@@ -3562,8 +3476,6 @@ double ConstraintActivityTagPreferredRooms::fitness(
 
 	int nbroken = 0;
 	
-	bool ok2=true;
-
 	foreach(int ac, this->_activities){
 		int rm=c.rooms[ac];
 		if(rm==UNALLOCATED_SPACE)
@@ -3578,8 +3490,6 @@ double ConstraintActivityTagPreferredRooms::fitness(
 			ok=false;
 
 		if(!ok){
-			if(rm!=UNALLOCATED_SPACE)
-				ok2=false;
 			
 			if(conflictsString!=NULL){
 				QString s=tr("Space constraint activity tag preferred rooms broken for activity with id %1 (%2) (activity tag of constraint=%3)"
@@ -3599,9 +3509,6 @@ double ConstraintActivityTagPreferredRooms::fitness(
 		}
 	}
 	
-	if(this->weightPercentage==100)
-		assert(ok2);
-
 	return weightPercentage/100 * nbroken;
 }
 
@@ -3874,9 +3781,6 @@ double ConstraintStudentsSetMaxBuildingChangesPerDay::fitness(
 		}
 	}
 	
-	if(this->weightPercentage==100)
-		assert(nbroken==0);
-
 	return weightPercentage/100 * nbroken;
 }
 
@@ -4103,9 +4007,6 @@ double ConstraintStudentsMaxBuildingChangesPerDay::fitness(
 		}
 	}
 	
-	if(this->weightPercentage==100)
-		assert(nbroken==0);
-
 	return weightPercentage/100 * nbroken;
 }
 
@@ -4384,9 +4285,6 @@ double ConstraintStudentsSetMaxBuildingChangesPerWeek::fitness(
 		}
 	}
 	
-	if(this->weightPercentage==100)
-		assert(nbroken==0);
-
 	return weightPercentage/100 * nbroken;
 }
 
@@ -4612,9 +4510,6 @@ double ConstraintStudentsMaxBuildingChangesPerWeek::fitness(
 		}
 	}
 	
-	if(this->weightPercentage==100)
-		assert(nbroken==0);
-
 	return weightPercentage/100 * nbroken;
 }
 
@@ -4906,9 +4801,6 @@ double ConstraintStudentsSetMinGapsBetweenBuildingChanges::fitness(
 		}
 	}
 
-	if(this->weightPercentage==100)
-		assert(nbroken==0);
-
 	return weightPercentage/100 * nbroken;
 }
 
@@ -5146,9 +5038,6 @@ double ConstraintStudentsMinGapsBetweenBuildingChanges::fitness(
 			}
 		}
 	}
-
-	if(this->weightPercentage==100)
-		assert(nbroken==0);
 
 	return weightPercentage/100 * nbroken;
 }
@@ -5392,9 +5281,6 @@ double ConstraintTeacherMaxBuildingChangesPerDay::fitness(
 		}
 	}
 	
-	if(this->weightPercentage==100)
-		assert(nbroken==0);
-
 	return weightPercentage/100 * nbroken;
 }
 
@@ -5622,9 +5508,6 @@ double ConstraintTeachersMaxBuildingChangesPerDay::fitness(
 		}
 	}
 	
-	if(this->weightPercentage==100)
-		assert(nbroken==0);
-
 	return weightPercentage/100 * nbroken;
 }
 
@@ -5867,9 +5750,6 @@ double ConstraintTeacherMaxBuildingChangesPerWeek::fitness(
 		}
 	}
 	
-	if(this->weightPercentage==100)
-		assert(nbroken==0);
-
 	return weightPercentage/100 * nbroken;
 }
 
@@ -6097,9 +5977,6 @@ double ConstraintTeachersMaxBuildingChangesPerWeek::fitness(
 		}
 	}
 	
-	if(this->weightPercentage==100)
-		assert(nbroken==0);
-
 	return weightPercentage/100 * nbroken;
 }
 
@@ -6354,9 +6231,6 @@ double ConstraintTeacherMinGapsBetweenBuildingChanges::fitness(
 		}
 	}
 	
-	if(this->weightPercentage==100)
-		assert(nbroken==0);
-
 	return weightPercentage/100 * nbroken;
 }
 
@@ -6596,9 +6470,6 @@ double ConstraintTeachersMinGapsBetweenBuildingChanges::fitness(
 		}
 	}
 	
-	if(this->weightPercentage==100)
-		assert(nbroken==0);
-
 	return weightPercentage/100 * nbroken;
 }
 
@@ -6850,9 +6721,6 @@ double ConstraintActivitiesOccupyMaxDifferentRooms::fitness(
 		}
 	}
 	
-	if(this->weightPercentage==100)
-		assert(nbroken==0);
-
 	return nbroken*weightPercentage/100;
 }
 
@@ -7123,9 +6991,6 @@ double ConstraintActivitiesSameRoomIfConsecutive::fitness(
 		}
 	}
 	
-	if(this->weightPercentage==100)
-		assert(nbroken==0);
-
 	return nbroken*weightPercentage/100;
 }
 
