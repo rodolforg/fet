@@ -296,7 +296,6 @@ void Solution::getTeachersTimetable(const Rules &r, Matrix3D<int>& a, Matrix3D<Q
 				assert(hour+dd<r.nHoursPerDay);
 				for(int ti=0; ti<act->iTeachersList.count(); ti++){
 					int tch = act->iTeachersList.at(ti); //teacher index
-					assert(a[tch][day][hour+dd]==UNALLOCATED_ACTIVITY);
 					a[tch][day][hour+dd]=i;
 				}
 			}
@@ -423,7 +422,6 @@ void Solution::getSubgroupsTimetable(const Rules &r, Matrix3D<int>& a) const {
 			
 				for(int isg=0; isg < act->iSubgroupsList.count(); isg++){ //isg -> index subgroup
 					int sg = act->iSubgroupsList.at(isg); //sg -> subgroup
-					assert(a[sg][day][hour+dd]==UNALLOCATED_ACTIVITY);
 					a[sg][day][hour+dd]=i;
 				}
 			}
@@ -502,7 +500,6 @@ void Solution::getRoomsTimetable(const Rules &r,
 			for(int dd=0; dd < act->duration; dd++){
 				assert(hour+dd<r.nHoursPerDay);
 			
-				assert(a[room][day][hour+dd]==UNALLOCATED_ACTIVITY);
 				a[room][day][hour+dd]=i;
 			}
 		}
