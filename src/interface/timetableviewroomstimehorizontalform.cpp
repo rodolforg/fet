@@ -423,6 +423,12 @@ void TimetableViewRoomsTimeHorizontalForm::updateRoomsTimetableTable(){
 	
 	for(int t=0; t<gt.rules.nInternalRooms; t++){
 		assert(t<roomsTimetableTable->rowCount());
+
+		for(int k=0; k<roomsTimetableTable->columnCount(); k++){
+			if (roomsTimetableTable->columnSpan(t,k) != 1)
+				roomsTimetableTable->setSpan(t, k, 1, 1);
+		}
+
 		for(int d=0; d<gt.rules.nDaysPerWeek; d++){
 			for(int h=0; h<gt.rules.nHoursPerDay; ){
 				const int tableColumnIdx = d*gt.rules.nHoursPerDay+h;
