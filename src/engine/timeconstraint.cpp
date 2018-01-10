@@ -1778,7 +1778,7 @@ double ConstraintMinDaysBetweenActivities::fitness(Solution& c, const Rules& r, 
 
 						if(this->consecutiveIfSameDay && day1==day2) {
 							if (!( day1==day2 && (hour1+duration1==hour2 || hour2+duration2==hour1) )) {
-								tt += (hour1 < hour2) ? (hour2 - hour1+duration1) : (hour1 - hour2+duration2);
+								tt += 10000*100./weightPercentage;//(hour1 < hour2) ? (hour2 - hour1+duration1) : (hour1 - hour2+duration2);
 								brokenMandatoryConsecutive = true;
 							}
 						}

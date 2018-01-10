@@ -118,7 +118,8 @@ double Solution::fitness(const Rules &r, QString* conflictsString){
 		QList<QString> sl;
 		QList<double> cl;
 		double cur_fitness = r.internalTimeConstraintsList[i]->fitness(*this, r, cl, sl, conflictsString);
-		if (cur_fitness != 0 && r.internalTimeConstraintsList[i]->weightPercentage >= 100.0) {
+		if ((cur_fitness != 0 && r.internalTimeConstraintsList[i]->weightPercentage >= 100.0)
+			|| cur_fitness >= 10000) {
 			severeConflictList += sl;
 		}
 		this->_fitness += cur_fitness;
@@ -130,7 +131,8 @@ double Solution::fitness(const Rules &r, QString* conflictsString){
 		QList<QString> sl;
 		QList<double> cl;
 		double cur_fitness = r.internalSpaceConstraintsList[i]->fitness(*this, r, cl, sl, conflictsString);
-		if (cur_fitness != 0 && r.internalSpaceConstraintsList[i]->weightPercentage >= 100.0) {
+		if ((cur_fitness != 0 && r.internalSpaceConstraintsList[i]->weightPercentage >= 100.0)
+			|| cur_fitness >= 10000) {
 			severeConflictList += sl;
 		}
 		this->_fitness += cur_fitness;
