@@ -486,7 +486,7 @@ void TimetableViewTeachersTimeHorizontalForm::updateTeachersTimetableTable(){
 						s+=act->teachersNames.join(", ");
 					}
 					
-					int r=CachedSchedule::getCachedSolution().rooms[ai];
+					int r=CachedSchedule::getCachedSolution().room(ai);
 					if(r!=UNALLOCATED_SPACE && r!=UNSPECIFIED_ROOM){
 						//s+=" ";
 						//s+=tr("R:%1", "Room").arg(gt.rules.internalRoomsList[r]->name);
@@ -648,7 +648,7 @@ void TimetableViewTeachersTimeHorizontalForm::detailActivity(QTableWidgetItem* i
 				s += act->getDetailedDescription();
 
 				//int r=rooms_timetable_weekly[teacher][k][j];
-				int r=CachedSchedule::getCachedSolution().rooms[ai];
+				int r=CachedSchedule::getCachedSolution().room(ai);
 				if(r!=UNALLOCATED_SPACE && r!=UNSPECIFIED_ROOM){
 					s+="\n";
 					s+=tr("Room: %1").arg(gt.rules.internalRoomsList[r]->name);
@@ -755,9 +755,9 @@ void TimetableViewTeachersTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 	QSet<int> dummyActivities;
 	for(int ai=0; ai<gt.rules.nInternalActivities; ai++){
 		if(gt.rules.internalActivitiesList[ai].iTeachersList.count()==0){
-			if(tc->times[ai]!=UNALLOCATED_TIME){
-				int da=tc->times[ai]%gt.rules.nDaysPerWeek;
-				int ha=tc->times[ai]/gt.rules.nDaysPerWeek;
+			if(tc->time(ai)!=UNALLOCATED_TIME){
+				int da=tc->day(ai, gt.rules);
+				int ha=tc->hour(ai, gt.rules);
 				for(int ha2=ha; ha2<ha+gt.rules.internalActivitiesList[ai].duration; ha2++)
 					if(dummyActivitiesColumn.contains(da+ha2*gt.rules.nDaysPerWeek))
 						if(!dummyActivities.contains(ai))
@@ -785,9 +785,9 @@ void TimetableViewTeachersTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 	for(int ai=0; ai<gt.rules.nInternalActivities; ai++){
 		assert( ! (realActivities.contains(ai) && dummyActivities.contains(ai)) );
 		if(realActivities.contains(ai) || dummyActivities.contains(ai)){
-			assert(tc->times[ai]!=UNALLOCATED_TIME);
-			int day=tc->times[ai]%gt.rules.nDaysPerWeek;
-			int hour=tc->times[ai]/gt.rules.nDaysPerWeek;
+			assert(tc->time(ai)!=UNALLOCATED_TIME);
+			int day=tc->day(ai, gt.rules);
+			int hour=tc->hour(ai, gt.rules);
 
 			const Activity* act=&gt.rules.internalActivitiesList[ai];
 			
@@ -872,7 +872,7 @@ void TimetableViewTeachersTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 				}
 			}
 			
-			int ri=tc->rooms[ai];
+			int ri=tc->room(ai);
 			if(ri!=UNALLOCATED_SPACE && ri!=UNSPECIFIED_ROOM && lockSpace){
 				QString s;
 				

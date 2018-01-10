@@ -448,7 +448,7 @@ void TimetableViewRoomsDaysHorizontalForm::detailActivity(QTableWidgetItem* item
 			//s += act->getDetailedDescriptionWithConstraints(gt.rules);
 			s += act->getDetailedDescription();
 
-			int r=best_solution.rooms[ai];
+			int r=best_solution.room(ai);
 			if(r!=UNALLOCATED_SPACE && r!=UNSPECIFIED_ROOM){
 				s+="\n";
 				s+=tr("Room: %1").arg(gt.rules.internalRoomsList[r]->name);
@@ -552,9 +552,8 @@ void TimetableViewRoomsDaysHorizontalForm::lock(bool lockTime, bool lockSpace)
 				int ai=CachedSchedule::rooms_timetable_weekly[i][k][j];
 				if(ai!=UNALLOCATED_ACTIVITY && !careAboutIndex.contains(ai)){	//modified, because of activities with duration > 1
 					careAboutIndex.insert(ai);					//Needed, because of activities with duration > 1
-					int a_tim=c->times[ai];
-					int hour=a_tim/gt.rules.nDaysPerWeek;
-					int day=a_tim%gt.rules.nDaysPerWeek;
+					int hour=c->hour(ai, gt.rules);
+					int day=c->day(ai, gt.rules);
 
 					Activity* act=&gt.rules.internalActivitiesList[ai];
 					if(lockTime){
@@ -627,7 +626,7 @@ void TimetableViewRoomsDaysHorizontalForm::lock(bool lockTime, bool lockSpace)
 						}
 					}
 					
-					int ri=c->rooms[ai];
+					int ri=c->room(ai);
 					if(ri!=UNALLOCATED_SPACE && ri!=UNSPECIFIED_ROOM && lockSpace){
 						ConstraintActivityPreferredRoom* ctr=new ConstraintActivityPreferredRoom(100.0, act->id, (gt.rules.internalRoomsList[ri])->name, false);
 						bool t=gt.rules.addSpaceConstraint(ctr);

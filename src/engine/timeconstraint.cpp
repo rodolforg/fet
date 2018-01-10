@@ -296,7 +296,7 @@ double ConstraintBasicCompulsoryTime::fitness(Solution& c, const Rules& r, QList
 	int nse; //number of students exhaustions
 
 	for(int i=0; i<r.nInternalActivities; i++){
-		if(c.times[i]==UNALLOCATED_TIME){
+		if(c.time(i)==UNALLOCATED_TIME){
 			//Firstly, we consider a big clash each unallocated activity.
 			//Needs to be very a large constant, bigger than any other broken constraint.
 			//Take care: MAX_ACTIVITIES*this_constant <= INT_MAX
@@ -320,7 +320,7 @@ double ConstraintBasicCompulsoryTime::fitness(Solution& c, const Rules& r, QList
 		else{
 			//Calculates the number of activities that are scheduled too late (in fact we
 			//calculate a function that increases as the activity is getting late)
-			int h=c.times[i]/r.nDaysPerWeek;
+			int h=c.hour(i, r);
 			int dd=r.internalActivitiesList[i].duration;
 			if(h+dd>r.nHoursPerDay){
 				int tmp = 1;
@@ -1185,12 +1185,12 @@ double ConstraintActivitiesSameStartingTime::fitness(Solution& c, const Rules& r
 	//sum the differences in the scheduled time for all pairs of activities.
 
 	for(int i=1; i<this->_n_activities; i++){
-		int t1=c.times[this->_activities[i]];
+		int t1=c.time(this->_activities[i]);
 		if(t1!=UNALLOCATED_TIME){
 			int day1=t1%r.nDaysPerWeek;
 			int hour1=t1/r.nDaysPerWeek;
 			for(int j=0; j<i; j++){
-				int t2=c.times[this->_activities[j]];
+				int t2=c.time(this->_activities[j]);
 				if(t2!=UNALLOCATED_TIME){
 					int day2=t2%r.nDaysPerWeek;
 					int hour2=t2/r.nDaysPerWeek;
@@ -1452,14 +1452,14 @@ double ConstraintActivitiesNotOverlapping::fitness(Solution& c, const Rules& r, 
 	//sum the overlapping hours for all pairs of activities.
 
 	for(int i=1; i<this->_n_activities; i++){
-		int t1=c.times[this->_activities[i]];
+		int t1=c.time(this->_activities[i]);
 		if(t1!=UNALLOCATED_TIME){
 			int day1=t1%r.nDaysPerWeek;
 			int hour1=t1/r.nDaysPerWeek;
 			int duration1=r.internalActivitiesList[this->_activities[i]].duration;
 
 			for(int j=0; j<i; j++){
-				int t2=c.times[this->_activities[j]];
+				int t2=c.time(this->_activities[j]);
 				if(t2!=UNALLOCATED_TIME){
 					int day2=t2%r.nDaysPerWeek;
 					int hour2=t2/r.nDaysPerWeek;
@@ -1756,14 +1756,14 @@ double ConstraintMinDaysBetweenActivities::fitness(Solution& c, const Rules& r, 
 	//without logging
 
 	for(int i=1; i<this->_n_activities; i++){
-		int t1=c.times[this->_activities[i]];
+		int t1=c.time(this->_activities[i]);
 		if(t1!=UNALLOCATED_TIME){
 			int day1=t1%r.nDaysPerWeek;
 			int hour1=t1/r.nDaysPerWeek;
 			int duration1=r.internalActivitiesList[this->_activities[i]].duration;
 
 			for(int j=0; j<i; j++){
-				int t2=c.times[this->_activities[j]];
+				int t2=c.time(this->_activities[j]);
 				if(t2!=UNALLOCATED_TIME){
 					int day2=t2%r.nDaysPerWeek;
 					int hour2=t2/r.nDaysPerWeek;
@@ -2057,14 +2057,14 @@ double ConstraintMaxDaysBetweenActivities::fitness(Solution& c, const Rules& r, 
 	//without logging
 
 	for(int i=1; i<this->_n_activities; i++){
-		int t1=c.times[this->_activities[i]];
+		int t1=c.time(this->_activities[i]);
 		if(t1!=UNALLOCATED_TIME){
 			int day1=t1%r.nDaysPerWeek;
 			//int hour1=t1/r.nDaysPerWeek;
 			//int duration1=r.internalActivitiesList[this->_activities[i]].duration;
 
 			for(int j=0; j<i; j++){
-				int t2=c.times[this->_activities[j]];
+				int t2=c.time(this->_activities[j]);
 				if(t2!=UNALLOCATED_TIME){
 					int day2=t2%r.nDaysPerWeek;
 					//int hour2=t2/r.nDaysPerWeek;
@@ -2341,14 +2341,14 @@ double ConstraintMinGapsBetweenActivities::fitness(Solution& c, const Rules& r, 
 	//We do not use the matrices 'subgroupsMatrix' nor 'teachersMatrix'.
 
 	for(int i=1; i<this->_n_activities; i++){
-		int t1=c.times[this->_activities[i]];
+		int t1=c.time(this->_activities[i]);
 		if(t1!=UNALLOCATED_TIME){
 			int day1=t1%r.nDaysPerWeek;
 			int hour1=t1/r.nDaysPerWeek;
 			int duration1=r.internalActivitiesList[this->_activities[i]].duration;
 
 			for(int j=0; j<i; j++){
-				int t2=c.times[this->_activities[j]];
+				int t2=c.time(this->_activities[j]);
 				if(t2!=UNALLOCATED_TIME){
 					int day2=t2%r.nDaysPerWeek;
 					int hour2=t2/r.nDaysPerWeek;
@@ -3395,9 +3395,9 @@ double ConstraintTeachersActivityTagMaxHoursContinuously::fitness(Solution& c, c
 		for(int d=0; d<r.nDaysPerWeek; d++)
 			for(int h=0; h<r.nHoursPerDay; h++)
 				crtTeacherTimetableActivityTag[d][h]=-1;
-		foreach(int ai, tch->activitiesForTeacher)if(c.times[ai]!=UNALLOCATED_TIME){
-			int d=c.times[ai]%r.nDaysPerWeek;
-			int h=c.times[ai]/r.nDaysPerWeek;
+		foreach(int ai, tch->activitiesForTeacher)if(c.time(ai)!=UNALLOCATED_TIME){
+			int d=c.day(ai, r);
+			int h=c.hour(ai, r);
 			for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 				assert(h+dur<r.nHoursPerDay);
 				assert(crtTeacherTimetableActivityTag[d][h+dur]==-1);
@@ -3656,9 +3656,9 @@ double ConstraintTeacherActivityTagMaxHoursContinuously::fitness(Solution& c, co
 		for(int d=0; d<r.nDaysPerWeek; d++)
 			for(int h=0; h<r.nHoursPerDay; h++)
 				crtTeacherTimetableActivityTag[d][h]=-1;
-		foreach(int ai, tch->activitiesForTeacher)if(c.times[ai]!=UNALLOCATED_TIME){
-			int d=c.times[ai]%r.nDaysPerWeek;
-			int h=c.times[ai]/r.nDaysPerWeek;
+		foreach(int ai, tch->activitiesForTeacher)if(c.time(ai)!=UNALLOCATED_TIME){
+			int d=c.day(ai, r);
+			int h=c.hour(ai, r);
 			for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 				assert(h+dur<r.nHoursPerDay);
 				assert(crtTeacherTimetableActivityTag[d][h+dur]==-1);
@@ -5136,8 +5136,8 @@ double ConstraintBreakTimes::fitness(Solution& c, const Rules& r, QList<double>&
 	int nbroken = 0;
 
 	for(int i=0; i<r.nInternalActivities; i++){
-		int dayact=c.times[i]%r.nDaysPerWeek;
-		int houract=c.times[i]/r.nDaysPerWeek;
+		int dayact=c.day(i, r);
+		int houract=c.hour(i, r);
 		
 		assert(days.count()==hours.count());
 		for(int kk=0; kk<days.count(); kk++){
@@ -7267,9 +7267,9 @@ double ConstraintStudentsActivityTagMaxHoursContinuously::fitness(Solution& c, c
 		for(int d=0; d<r.nDaysPerWeek; d++)
 			for(int h=0; h<r.nHoursPerDay; h++)
 				crtSubgroupTimetableActivityTag[d][h]=-1;
-		foreach(int ai, sbg->activitiesForSubgroup)if(c.times[ai]!=UNALLOCATED_TIME){
-			int d=c.times[ai]%r.nDaysPerWeek;
-			int h=c.times[ai]/r.nDaysPerWeek;
+		foreach(int ai, sbg->activitiesForSubgroup)if(c.time(ai)!=UNALLOCATED_TIME){
+			int d=c.day(ai, r);
+			int h=c.hour(ai, r);
 			for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 				assert(h+dur<r.nHoursPerDay);
 				assert(crtSubgroupTimetableActivityTag[d][h+dur]==-1);
@@ -7582,9 +7582,9 @@ double ConstraintStudentsSetActivityTagMaxHoursContinuously::fitness(Solution& c
 		for(int d=0; d<r.nDaysPerWeek; d++)
 			for(int h=0; h<r.nHoursPerDay; h++)
 				crtSubgroupTimetableActivityTag[d][h]=-1;
-		foreach(int ai, sbg->activitiesForSubgroup)if(c.times[ai]!=UNALLOCATED_TIME){
-			int d=c.times[ai]%r.nDaysPerWeek;
-			int h=c.times[ai]/r.nDaysPerWeek;
+		foreach(int ai, sbg->activitiesForSubgroup)if(c.time(ai)!=UNALLOCATED_TIME){
+			int d=c.day(ai, r);
+			int h=c.hour(ai, r);
 			for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 				assert(h+dur<r.nHoursPerDay);
 				assert(crtSubgroupTimetableActivityTag[d][h+dur]==-1);
@@ -8376,9 +8376,9 @@ double ConstraintActivityPreferredStartingTime::fitness(Solution& c, const Rules
 
 	assert(r.internalStructureComputed);
 
-	if(c.times[this->activityIndex]!=UNALLOCATED_TIME){
-		int d=c.times[this->activityIndex]%r.nDaysPerWeek; //the day when this activity was scheduled
-		int h=c.times[this->activityIndex]/r.nDaysPerWeek; //the hour
+	if(c.time(this->activityIndex)!=UNALLOCATED_TIME){
+		int d=c.day(this->activityIndex, r); //the day when this activity was scheduled
+		int h=c.hour(this->activityIndex, r); //the hour
 		if(this->day>=0)
 			nbroken+=abs(this->day-d);
 		if(this->hour>=0)
@@ -8662,9 +8662,9 @@ double ConstraintActivityPreferredTimeSlots::fitness(Solution& c, const Rules& r
 
 	int nbroken = 0;
 
-	if(c.times[this->p_activityIndex]!=UNALLOCATED_TIME){
-		int d=c.times[this->p_activityIndex]%r.nDaysPerWeek; //the day when this activity was scheduled
-		int h=c.times[this->p_activityIndex]/r.nDaysPerWeek; //the hour
+	if(c.time(this->p_activityIndex)!=UNALLOCATED_TIME){
+		int d=c.day(this->p_activityIndex, r); //the day when this activity was scheduled
+		int h=c.hour(this->p_activityIndex, r); //the hour
 		for(int dur=0; dur<r.internalActivitiesList[this->p_activityIndex].duration; dur++)
 			if(!allowed[d][h+dur])
 				nbroken++;
@@ -9124,9 +9124,9 @@ double ConstraintActivitiesPreferredTimeSlots::fitness(Solution& c, const Rules&
 	for(int i=0; i<this->p_nActivities; i++){
 		tmp=0;
 		int ai=this->p_activitiesIndices[i];
-		if(c.times[ai]!=UNALLOCATED_TIME){
-			int d=c.times[ai]%r.nDaysPerWeek; //the day when this activity was scheduled
-			int h=c.times[ai]/r.nDaysPerWeek; //the hour
+		if(c.time(ai)!=UNALLOCATED_TIME){
+			int d=c.day(ai, r); //the day when this activity was scheduled
+			int h=c.hour(ai, r); //the hour
 			
 			for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++)
 				if(!allowed[d][h+dur])
@@ -9606,9 +9606,9 @@ double ConstraintSubactivitiesPreferredTimeSlots::fitness(Solution& c, const Rul
 	for(int i=0; i<this->p_nActivities; i++){
 		tmp=0;
 		int ai=this->p_activitiesIndices[i];
-		if(c.times[ai]!=UNALLOCATED_TIME){
-			int d=c.times[ai]%r.nDaysPerWeek; //the day when this activity was scheduled
-			int h=c.times[ai]/r.nDaysPerWeek; //the hour
+		if(c.time(ai)!=UNALLOCATED_TIME){
+			int d=c.day(ai, r); //the day when this activity was scheduled
+			int h=c.hour(ai, r); //the hour
 			
 			for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++)
 				if(!allowed[d][h+dur])
@@ -9926,9 +9926,9 @@ double ConstraintActivityPreferredStartingTimes::fitness(Solution& c, const Rule
 
 	assert(r.internalStructureComputed);
 
-	if(c.times[this->activityIndex]!=UNALLOCATED_TIME){
-		int d=c.times[this->activityIndex]%r.nDaysPerWeek; //the day when this activity was scheduled
-		int h=c.times[this->activityIndex]/r.nDaysPerWeek; //the hour
+	if(c.time(this->activityIndex)!=UNALLOCATED_TIME){
+		int d=c.day(this->activityIndex, r); //the day when this activity was scheduled
+		int h=c.hour(this->activityIndex, r); //the hour
 		int i;
 		for(i=0; i<this->nPreferredStartingTimes_L; i++){
 			if(this->days_L[i]>=0 && this->days_L[i]!=d)
@@ -10377,9 +10377,9 @@ double ConstraintActivitiesPreferredStartingTimes::fitness(Solution& c, const Ru
 	for(int i=0; i<this->nActivities; i++){
 		tmp=0;
 		int ai=this->activitiesIndices[i];
-		if(c.times[ai]!=UNALLOCATED_TIME){
-			int d=c.times[ai]%r.nDaysPerWeek; //the day when this activity was scheduled
-			int h=c.times[ai]/r.nDaysPerWeek; //the hour
+		if(c.time(ai)!=UNALLOCATED_TIME){
+			int d=c.day(ai, r); //the day when this activity was scheduled
+			int h=c.hour(ai, r); //the hour
 			int i;
 			for(i=0; i<this->nPreferredStartingTimes_L; i++){
 				if(this->days_L[i]>=0 && this->days_L[i]!=d)
@@ -10843,9 +10843,9 @@ double ConstraintSubactivitiesPreferredStartingTimes::fitness(Solution& c, const
 	for(int i=0; i<this->nActivities; i++){
 		tmp=0;
 		int ai=this->activitiesIndices[i];
-		if(c.times[ai]!=UNALLOCATED_TIME){
-			int d=c.times[ai]%r.nDaysPerWeek; //the day when this activity was scheduled
-			int h=c.times[ai]/r.nDaysPerWeek; //the hour
+		if(c.time(ai)!=UNALLOCATED_TIME){
+			int d=c.day(ai, r); //the day when this activity was scheduled
+			int h=c.hour(ai, r); //the hour
 			int i;
 			for(i=0; i<this->nPreferredStartingTimes_L; i++){
 				if(this->days_L[i]>=0 && this->days_L[i]!=d)
@@ -11158,12 +11158,12 @@ double ConstraintActivitiesSameStartingHour::fitness(Solution& c, const Rules& r
 	//sum the differences in the scheduled hour for all pairs of activities.
 
 	for(int i=1; i<this->_n_activities; i++){
-		int t1=c.times[this->_activities[i]];
+		int t1=c.time(this->_activities[i]);
 		if(t1!=UNALLOCATED_TIME){
 			//int day1=t1%r.nDaysPerWeek;
 			int hour1=t1/r.nDaysPerWeek;
 			for(int j=0; j<i; j++){
-				int t2=c.times[this->_activities[j]];
+				int t2=c.time(this->_activities[j]);
 				if(t2!=UNALLOCATED_TIME){
 					//int day2=t2%r.nDaysPerWeek;
 					int hour2=t2/r.nDaysPerWeek;
@@ -11425,12 +11425,12 @@ double ConstraintActivitiesSameStartingDay::fitness(Solution& c, const Rules& r,
 	//sum the differences in the scheduled hour for all pairs of activities.
 
 	for(int i=1; i<this->_n_activities; i++){
-		int t1=c.times[this->_activities[i]];
+		int t1=c.time(this->_activities[i]);
 		if(t1!=UNALLOCATED_TIME){
 			int day1=t1%r.nDaysPerWeek;
 			//int hour1=t1/r.nDaysPerWeek;
 			for(int j=0; j<i; j++){
-				int t2=c.times[this->_activities[j]];
+				int t2=c.time(this->_activities[j]);
 				if(t2!=UNALLOCATED_TIME){
 					int day2=t2%r.nDaysPerWeek;
 					//int hour2=t2/r.nDaysPerWeek;
@@ -11678,11 +11678,11 @@ double ConstraintTwoActivitiesConsecutive::fitness(Solution& c, const Rules& r, 
 
 	assert(r.internalStructureComputed);
 
-	if(c.times[this->firstActivityIndex]!=UNALLOCATED_TIME && c.times[this->secondActivityIndex]!=UNALLOCATED_TIME){
-		int fd=c.times[this->firstActivityIndex]%r.nDaysPerWeek; //the day when first activity was scheduled
-		int fh=c.times[this->firstActivityIndex]/r.nDaysPerWeek; //the hour
-		int sd=c.times[this->secondActivityIndex]%r.nDaysPerWeek; //the day when second activity was scheduled
-		int sh=c.times[this->secondActivityIndex]/r.nDaysPerWeek; //the hour
+	if(c.time(this->firstActivityIndex)!=UNALLOCATED_TIME && c.time(this->secondActivityIndex)!=UNALLOCATED_TIME){
+		int fd=c.day(this->firstActivityIndex, r); //the day when first activity was scheduled
+		int fh=c.hour(this->firstActivityIndex, r); //the hour
+		int sd=c.day(this->secondActivityIndex, r); //the day when second activity was scheduled
+		int sh=c.hour(this->secondActivityIndex, r); //the hour
 		
 		if(fd!=sd)
 			nbroken=1;
@@ -11942,11 +11942,11 @@ double ConstraintTwoActivitiesGrouped::fitness(Solution& c, const Rules& r, QLis
 
 	assert(r.internalStructureComputed);
 
-	if(c.times[this->firstActivityIndex]!=UNALLOCATED_TIME && c.times[this->secondActivityIndex]!=UNALLOCATED_TIME){
-		int fd=c.times[this->firstActivityIndex]%r.nDaysPerWeek; //the day when first activity was scheduled
-		int fh=c.times[this->firstActivityIndex]/r.nDaysPerWeek; //the hour
-		int sd=c.times[this->secondActivityIndex]%r.nDaysPerWeek; //the day when second activity was scheduled
-		int sh=c.times[this->secondActivityIndex]/r.nDaysPerWeek; //the hour
+	if(c.time(this->firstActivityIndex)!=UNALLOCATED_TIME && c.time(this->secondActivityIndex)!=UNALLOCATED_TIME){
+		int fd=c.day(this->firstActivityIndex, r); //the day when first activity was scheduled
+		int fh=c.hour(this->firstActivityIndex, r); //the hour
+		int sd=c.day(this->secondActivityIndex, r); //the day when second activity was scheduled
+		int sh=c.hour(this->secondActivityIndex, r); //the hour
 		
 		if(fd!=sd)
 			nbroken=1;
@@ -12248,13 +12248,13 @@ double ConstraintThreeActivitiesGrouped::fitness(Solution& c, const Rules& r, QL
 
 	assert(r.internalStructureComputed);
 
-	if(c.times[this->firstActivityIndex]!=UNALLOCATED_TIME && c.times[this->secondActivityIndex]!=UNALLOCATED_TIME && c.times[this->thirdActivityIndex]!=UNALLOCATED_TIME){
-		int fd=c.times[this->firstActivityIndex]%r.nDaysPerWeek; //the day when first activity was scheduled
-		int fh=c.times[this->firstActivityIndex]/r.nDaysPerWeek; //the hour
-		int sd=c.times[this->secondActivityIndex]%r.nDaysPerWeek; //the day when second activity was scheduled
-		int sh=c.times[this->secondActivityIndex]/r.nDaysPerWeek; //the hour
-		int td=c.times[this->thirdActivityIndex]%r.nDaysPerWeek; //the day when third activity was scheduled
-		int th=c.times[this->thirdActivityIndex]/r.nDaysPerWeek; //the hour
+	if(c.time(this->firstActivityIndex)!=UNALLOCATED_TIME && c.time(this->secondActivityIndex)!=UNALLOCATED_TIME && c.time(this->thirdActivityIndex)!=UNALLOCATED_TIME){
+		int fd=c.day(this->firstActivityIndex, r); //the day when first activity was scheduled
+		int fh=c.hour(this->firstActivityIndex, r); //the hour
+		int sd=c.day(this->secondActivityIndex, r); //the day when second activity was scheduled
+		int sh=c.hour(this->secondActivityIndex, r); //the hour
+		int td=c.day(this->thirdActivityIndex, r); //the day when third activity was scheduled
+		int th=c.hour(this->thirdActivityIndex, r); //the hour
 		
 		if(!(fd==sd && fd==td))
 			nbroken=1;
@@ -12300,16 +12300,16 @@ double ConstraintThreeActivitiesGrouped::fitness(Solution& c, const Rules& r, QL
 			else
 				assert(0);
 			
-			int a1d=c.times[a1]%r.nDaysPerWeek; //the day for a1
-			int a1h=c.times[a1]/r.nDaysPerWeek; //the day for a1
+			int a1d=c.day(a1, r); //the day for a1
+			int a1h=c.hour(a1, r); //the day for a1
 			int a1dur=r.internalActivitiesList[a1].duration;
 
-			int a2d=c.times[a2]%r.nDaysPerWeek; //the day for a2
-			int a2h=c.times[a2]/r.nDaysPerWeek; //the day for a2
+			int a2d=c.day(a2, r); //the day for a2
+			int a2h=c.hour(a2, r); //the day for a2
 			int a2dur=r.internalActivitiesList[a2].duration;
 
-			int a3d=c.times[a3]%r.nDaysPerWeek; //the day for a3
-			int a3h=c.times[a3]/r.nDaysPerWeek; //the day for a3
+			int a3d=c.day(a3, r); //the day for a3
+			int a3h=c.hour(a3, r); //the day for a3
 			//int a3dur=r.internalActivitiesList[a3].duration;
 			
 			int hoursBetweenThem=-1;
@@ -12577,12 +12577,12 @@ double ConstraintTwoActivitiesOrdered::fitness(Solution& c, const Rules& r, QLis
 
 	assert(r.internalStructureComputed);
 
-	if(c.times[this->firstActivityIndex]!=UNALLOCATED_TIME && c.times[this->secondActivityIndex]!=UNALLOCATED_TIME){
-		int fd=c.times[this->firstActivityIndex]%r.nDaysPerWeek; //the day when first activity was scheduled
-		int fh=c.times[this->firstActivityIndex]/r.nDaysPerWeek
+	if(c.time(this->firstActivityIndex)!=UNALLOCATED_TIME && c.time(this->secondActivityIndex)!=UNALLOCATED_TIME){
+		int fd=c.day(this->firstActivityIndex, r); //the day when first activity was scheduled
+		int fh=c.hour(this->firstActivityIndex, r)
 		  + r.internalActivitiesList[this->firstActivityIndex].duration-1; //the end hour of first activity
-		int sd=c.times[this->secondActivityIndex]%r.nDaysPerWeek; //the day when second activity was scheduled
-		int sh=c.times[this->secondActivityIndex]/r.nDaysPerWeek; //the start hour of second activity
+		int sd=c.day(this->secondActivityIndex, r); //the day when second activity was scheduled
+		int sh=c.hour(this->secondActivityIndex, r); //the start hour of second activity
 		
 		if(!(fd<sd || (fd==sd && fh<sh)))
 			nbroken=1;
@@ -12782,9 +12782,9 @@ double ConstraintActivityEndsStudentsDay::fitness(Solution& c, const Rules& r, Q
 
 	assert(r.internalStructureComputed);
 
-	if(c.times[this->activityIndex]!=UNALLOCATED_TIME){
-		int d=c.times[this->activityIndex]%r.nDaysPerWeek; //the day when this activity was scheduled
-		int h=c.times[this->activityIndex]/r.nDaysPerWeek; //the hour
+	if(c.time(this->activityIndex)!=UNALLOCATED_TIME){
+		int d=c.day(this->activityIndex, r); //the day when this activity was scheduled
+		int h=c.hour(this->activityIndex, r); //the hour
 		
 		int i=this->activityIndex;
 		for(int j=0; j<r.internalActivitiesList[i].iSubgroupsList.count(); j++){
@@ -14904,9 +14904,9 @@ double ConstraintActivitiesEndStudentsDay::fitness(Solution& c, const Rules& r, 
 		int tmp=0;
 		int ai=this->activitiesIndices[kk];
 	
-		if(c.times[ai]!=UNALLOCATED_TIME){
-			int d=c.times[ai]%r.nDaysPerWeek; //the day when this activity was scheduled
-			int h=c.times[ai]/r.nDaysPerWeek; //the hour
+		if(c.time(ai)!=UNALLOCATED_TIME){
+			int d=c.day(ai, r); //the day when this activity was scheduled
+			int h=c.hour(ai, r); //the hour
 		
 			for(int j=0; j<r.internalActivitiesList[ai].iSubgroupsList.count(); j++){
 				int sb=r.internalActivitiesList[ai].iSubgroupsList.at(j);
@@ -15141,9 +15141,9 @@ double ConstraintTeachersActivityTagMaxHoursDaily::fitness(Solution& c, const Ru
 			for(int h=0; h<r.nHoursPerDay; h++)
 				crtTeacherTimetableActivityTag[d][h]=-1;
 				
-		foreach(int ai, tch->activitiesForTeacher)if(c.times[ai]!=UNALLOCATED_TIME){
-			int d=c.times[ai]%r.nDaysPerWeek;
-			int h=c.times[ai]/r.nDaysPerWeek;
+		foreach(int ai, tch->activitiesForTeacher)if(c.time(ai)!=UNALLOCATED_TIME){
+			int d=c.day(ai, r);
+			int h=c.hour(ai, r);
 			for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 				assert(h+dur<r.nHoursPerDay);
 				assert(crtTeacherTimetableActivityTag[d][h+dur]==-1);
@@ -15372,9 +15372,9 @@ double ConstraintTeacherActivityTagMaxHoursDaily::fitness(Solution& c, const Rul
 			for(int h=0; h<r.nHoursPerDay; h++)
 				crtTeacherTimetableActivityTag[d][h]=-1;
 				
-		foreach(int ai, tch->activitiesForTeacher)if(c.times[ai]!=UNALLOCATED_TIME){
-			int d=c.times[ai]%r.nDaysPerWeek;
-			int h=c.times[ai]/r.nDaysPerWeek;
+		foreach(int ai, tch->activitiesForTeacher)if(c.time(ai)!=UNALLOCATED_TIME){
+			int d=c.day(ai, r);
+			int h=c.hour(ai, r);
 			for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 				assert(h+dur<r.nHoursPerDay);
 				assert(crtTeacherTimetableActivityTag[d][h+dur]==-1);
@@ -15605,9 +15605,9 @@ double ConstraintStudentsActivityTagMaxHoursDaily::fitness(Solution& c, const Ru
 		for(int d=0; d<r.nDaysPerWeek; d++)
 			for(int h=0; h<r.nHoursPerDay; h++)
 				crtSubgroupTimetableActivityTag[d][h]=-1;
-		foreach(int ai, sbg->activitiesForSubgroup)if(c.times[ai]!=UNALLOCATED_TIME){
-			int d=c.times[ai]%r.nDaysPerWeek;
-			int h=c.times[ai]/r.nDaysPerWeek;
+		foreach(int ai, sbg->activitiesForSubgroup)if(c.time(ai)!=UNALLOCATED_TIME){
+			int d=c.day(ai, r);
+			int h=c.hour(ai, r);
 			for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 				assert(h+dur<r.nHoursPerDay);
 				assert(crtSubgroupTimetableActivityTag[d][h+dur]==-1);
@@ -15889,9 +15889,9 @@ double ConstraintStudentsSetActivityTagMaxHoursDaily::fitness(Solution& c, const
 		for(int d=0; d<r.nDaysPerWeek; d++)
 			for(int h=0; h<r.nHoursPerDay; h++)
 				crtSubgroupTimetableActivityTag[d][h]=-1;
-		foreach(int ai, sbg->activitiesForSubgroup)if(c.times[ai]!=UNALLOCATED_TIME){
-			int d=c.times[ai]%r.nDaysPerWeek;
-			int h=c.times[ai]/r.nDaysPerWeek;
+		foreach(int ai, sbg->activitiesForSubgroup)if(c.time(ai)!=UNALLOCATED_TIME){
+			int d=c.day(ai, r);
+			int h=c.hour(ai, r);
 			for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 				assert(h+dur<r.nHoursPerDay);
 				assert(crtSubgroupTimetableActivityTag[d][h+dur]==-1);
@@ -16669,10 +16669,10 @@ double ConstraintActivitiesOccupyMaxTimeSlotsFromSelection::fitness(Solution& c,
 			used[d][h]=false;
 	
 	foreach(int ai, this->_activitiesIndices){
-		if(c.times[ai]!=UNALLOCATED_TIME){
+		if(c.time(ai)!=UNALLOCATED_TIME){
 			const Activity* act=&r.internalActivitiesList[ai];
-			int d=c.times[ai]%r.nDaysPerWeek;
-			int h=c.times[ai]/r.nDaysPerWeek;
+			int d=c.day(ai, r);
+			int h=c.hour(ai, r);
 			for(int dur=0; dur<act->duration; dur++){
 				assert(h+dur<r.nHoursPerDay);
 				used[d][h+dur]=true;
@@ -17029,10 +17029,10 @@ double ConstraintActivitiesMaxSimultaneousInSelectedTimeSlots::fitness(Solution&
 			count[d][h]=0;
 	
 	foreach(int ai, this->_activitiesIndices){
-		if(c.times[ai]!=UNALLOCATED_TIME){
+		if(c.time(ai)!=UNALLOCATED_TIME){
 			const Activity* act=&r.internalActivitiesList[ai];
-			int d=c.times[ai]%r.nDaysPerWeek;
-			int h=c.times[ai]/r.nDaysPerWeek;
+			int d=c.day(ai, r);
+			int h=c.hour(ai, r);
 			for(int dur=0; dur<act->duration; dur++){
 				assert(h+dur<r.nHoursPerDay);
 				count[d][h+dur]++;

@@ -495,8 +495,8 @@ void TimetableViewRoomsTimeHorizontalForm::updateRoomsTimetableTable(){
 						shortString+=act->subjectName;
 					}
 					
-					assert(best_solution.rooms[ai]!=UNALLOCATED_SPACE && best_solution.rooms[ai]!=UNSPECIFIED_ROOM);
-					/*int r=best_solution.rooms[ai];
+					assert(best_solution.room(ai)!=UNALLOCATED_SPACE && best_solution.room(ai)!=UNSPECIFIED_ROOM);
+					/*int r=best_solution.room(ai);
 					if(r!=UNALLOCATED_SPACE && r!=UNSPECIFIED_ROOM){
 						//s+=" ";
 						//s+=tr("R:%1", "Room").arg(gt.rules.internalRoomsList[r]->name);
@@ -655,14 +655,14 @@ void TimetableViewRoomsTimeHorizontalForm::detailActivity(QTableWidgetItem* item
 				//s += act->getDetailedDescriptionWithConstraints(gt.rules);
 				s += act->getDetailedDescription();
 
-				int r=CachedSchedule::getCachedSolution().rooms[ai];
+				int r=CachedSchedule::getCachedSolution().room(ai);
 				if(r!=UNALLOCATED_SPACE && r!=UNSPECIFIED_ROOM){
 					s+="\n";
 					s+=tr("Room: %1").arg(gt.rules.internalRoomsList[r]->name);
 				}
 
 				//int r=rooms_timetable_weekly[teacher][k][j];
-				/*int r=best_solution.rooms[ai];
+				/*int r=best_solution.room(ai);
 				if(r!=UNALLOCATED_SPACE && r!=UNSPECIFIED_ROOM){
 					s+="\n";
 					s+=tr("Room: %1").arg(gt.rules.internalRoomsList[r]->name);
@@ -799,9 +799,9 @@ void TimetableViewRoomsTimeHorizontalForm::lock(bool lockTime, bool lockSpace)
 	for(int ai=0; ai<gt.rules.nInternalActivities; ai++){
 		//assert( ! (realActivities.contains(ai) && dummyActivities.contains(ai)) );
 		if(realActivities.contains(ai) /*|| dummyActivities.contains(ai)*/){
-			assert(tc->times[ai]!=UNALLOCATED_TIME);
-			int day=tc->times[ai]%gt.rules.nDaysPerWeek;
-			int hour=tc->times[ai]/gt.rules.nDaysPerWeek;
+			assert(tc->time(ai)!=UNALLOCATED_TIME);
+			int day=tc->day(ai, gt.rules);
+			int hour=tc->hour(ai, gt.rules);
 
 			const Activity* act=&gt.rules.internalActivitiesList[ai];
 			
@@ -886,7 +886,7 @@ void TimetableViewRoomsTimeHorizontalForm::lock(bool lockTime, bool lockSpace)
 				}
 			}
 			
-			int ri=tc->rooms[ai];
+			int ri=tc->room(ai);
 			if(ri!=UNALLOCATED_SPACE && ri!=UNSPECIFIED_ROOM && lockSpace){
 				QString s;
 				

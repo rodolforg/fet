@@ -1453,7 +1453,7 @@ void FetMainForm::on_timetableSaveTimetableAsAction_triggered()
 	
 	for(int ai=0; ai<gt.rules.nInternalActivities; ai++){
 		//Activity* act=&gt.rules.internalActivitiesList[ai];
-		int time=tc->times[ai];
+		int time=tc->time(ai);
 		if(time==UNALLOCATED_TIME){
 			QMessageBox::warning(this, tr("FET - Warning"), tr("It seems that you have an incomplete timetable."
 			 " Saving of timetable does not work for incomplete timetables. Please generate a complete timetable"));
@@ -1461,7 +1461,7 @@ void FetMainForm::on_timetableSaveTimetableAsAction_triggered()
 			return;	
 		}
 		
-		int ri=tc->rooms[ai];
+		int ri=tc->room(ai);
 		if(ri==UNALLOCATED_SPACE){
 			QMessageBox::warning(this, tr("FET - Warning"), tr("It seems that you have an incomplete timetable."
 			 " Saving of timetable does not work for incomplete timetables. Please generate a complete timetable"));
@@ -1570,7 +1570,7 @@ void FetMainForm::on_timetableSaveTimetableAsAction_triggered()
 		//lock selected activities
 		for(int ai=0; ai<gt.rules.nInternalActivities; ai++){
 			Activity* act=&gt.rules.internalActivitiesList[ai];
-			int time=tc->times[ai];
+			int time=tc->time(ai);
 			if(time>=0 && time<gt.rules.nDaysPerWeek*gt.rules.nHoursPerDay){
 				int hour=time/gt.rules.nDaysPerWeek;
 				int day=time%gt.rules.nDaysPerWeek;
@@ -1598,7 +1598,7 @@ void FetMainForm::on_timetableSaveTimetableAsAction_triggered()
 				constraintsString+=s;
 			}
 						
-			int ri=tc->rooms[ai];
+			int ri=tc->room(ai);
 			if(ri!=UNALLOCATED_SPACE && ri!=UNSPECIFIED_ROOM && ri>=0 && ri<gt.rules.nInternalRooms){
 				ConstraintActivityPreferredRoom* ctr=new ConstraintActivityPreferredRoom(100, act->id, (gt.rules.internalRoomsList[ri])->name, false); //false means not permanently locked
 				bool t=rules2.addSpaceConstraint(ctr);
