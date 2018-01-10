@@ -523,7 +523,7 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 						s+=act->studentsNames.join(", ");
 					}
 					
-					int r=CachedSchedule::getCachedSolution().rooms[ai];
+					int r=CachedSchedule::getCachedSolution().room(ai);
 					if(r!=UNALLOCATED_SPACE && r!=UNSPECIFIED_ROOM){
 						//s+=" ";
 						//s+=tr("R:%1", "Room").arg(gt.rules.internalRoomsList[r]->name);
@@ -731,7 +731,7 @@ void TimetableViewStudentsTimeHorizontalForm::detailActivity(QTableWidgetItem* i
 			s += act->getDetailedDescription();
 
 			//int r=rooms_timetable_weekly[teacher][k][j];
-			int r=CachedSchedule::getCachedSolution().rooms[ai];
+			int r=CachedSchedule::getCachedSolution().room(ai);
 			if(r!=UNALLOCATED_SPACE && r!=UNSPECIFIED_ROOM){
 				s+="\n";
 				s+=tr("Room: %1").arg(gt.rules.internalRoomsList[r]->name);
@@ -821,8 +821,8 @@ void TimetableViewStudentsTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 	QSet<int> dummyActivities;
 	for(int ai=0; ai<gt.rules.nInternalActivities; ai++){
 		if(gt.rules.internalActivitiesList[ai].iSubgroupsList.count()==0){
-			if(tc->times[ai]!=UNALLOCATED_TIME){
-					if(dummyActivitiesColumn.contains(tc->times[ai]))
+			if(tc->time(ai)!=UNALLOCATED_TIME){
+					if(dummyActivitiesColumn.contains(tc->time(ai)))
 						dummyActivities.insert(ai);
 			}
 		}
@@ -853,9 +853,9 @@ void TimetableViewStudentsTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 	allSelectedActivities.unite(dummyActivities);
 
 	for (int ai : qAsConst(allSelectedActivities)) {
-			assert(tc->times[ai]!=UNALLOCATED_TIME);
-			int day=tc->times[ai]%gt.rules.nDaysPerWeek;
-			int hour=tc->times[ai]/gt.rules.nDaysPerWeek;
+			assert(tc->time(ai)!=UNALLOCATED_TIME);
+			int day=tc->day(ai, gt.rules);
+			int hour=tc->hour(ai, gt.rules);
 
 			const Activity* act=&gt.rules.internalActivitiesList[ai];
 			
@@ -881,7 +881,7 @@ void TimetableViewStudentsTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 					break;
 			}
 			
-			int ri=tc->rooms[ai];
+			int ri=tc->room(ai);
 			if(ri!=UNALLOCATED_SPACE && ri!=UNSPECIFIED_ROOM && lockSpace){
 				bool lock = !LockUnlock::isActivitySpaceLocked(act->id) && (lockRadioButton->isChecked() || toggleRadioButton->isChecked());
 

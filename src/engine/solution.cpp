@@ -505,3 +505,79 @@ void Solution::getRoomsTimetable(const Rules &r,
 		}
 	}
 }
+
+
+int Solution::time(int ai) const
+{
+	assert(ai >= 0 && ai < MAX_ACTIVITIES);
+
+	return times[ai];
+}
+
+int Solution::hour(int ai, const Rules& rules) const
+{
+	assert(ai >= 0 && ai < MAX_ACTIVITIES);
+
+	if (times[ai] == UNALLOCATED_TIME)
+		return -1;
+
+	return times[ai] / rules.nDaysPerWeek;
+}
+
+int Solution::day(int ai, const Rules& rules) const
+{
+	assert(ai >= 0 && ai < MAX_ACTIVITIES);
+
+	if (times[ai] == UNALLOCATED_TIME)
+		return -1;
+
+	return times[ai] % rules.nDaysPerWeek;
+}
+
+int Solution::room(int ai) const
+{
+	return rooms[ai];
+}
+
+void Solution::setTime(int ai, int time)
+{
+	assert(ai >= 0 && ai < MAX_ACTIVITIES);
+	assert(time >= 0 && time < MAX_HOURS_PER_WEEK);
+
+	if (times[ai] == time)
+		return;
+	if (time == UNALLOCATED_TIME) {
+		unsetTime(ai);
+		return;
+	}
+
+	if (times[ai] == UNALLOCATED_TIME)
+		nPlacedActivities++;
+
+	resetFitness();
+	times[ai] = time;
+}
+
+void Solution::unsetTime(int ai)
+{
+	assert(ai >= 0 && ai < MAX_ACTIVITIES);
+
+	if (times[ai] == UNALLOCATED_TIME)
+		return;
+
+	nPlacedActivities--;
+	resetFitness();
+	times[ai] = UNALLOCATED_TIME;
+}
+
+void Solution::setRoom(int ai, int room)
+{
+	assert(ai >= 0 && ai < MAX_ACTIVITIES);
+	assert(room >= 0 && room < MAX_ROOMS);
+
+	if (rooms[ai] == room)
+		return;
+
+	resetFitness();
+	rooms[ai] = room;
+}

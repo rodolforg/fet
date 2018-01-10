@@ -1176,12 +1176,12 @@ bool Export::exportCSVTimetable(const Solution &solution){
 		const Activity *act;
 		int exportedActivities=0;
 		for(int i=0; i<gt.rules.nInternalActivities; i++){
-			if(solution.times[i]!=UNALLOCATED_TIME) {
+			if(solution.time(i)!=UNALLOCATED_TIME) {
 				exportedActivities++;
 				act=&gt.rules.internalActivitiesList[i];
-				int hour=solution.times[i]/gt.rules.nDaysPerWeek;
-				int day=solution.times[i]%gt.rules.nDaysPerWeek;
-				int r=solution.rooms[i];
+				int hour=solution.hour(i, gt.rules);
+				int day=solution.day(i, gt.rules);
+				int r=solution.room(i);
 				for(int dd=0; dd < act->duration; dd++){
 					assert(hour+dd<gt.rules.nHoursPerDay);
 					
@@ -1217,8 +1217,8 @@ bool Export::exportCSVTimetable(const Solution &solution){
 					}
 					tosExport<<textquote<<fieldSeparator<<textquote;
 					//Room
-					if(solution.rooms[i] != UNSPECIFIED_ROOM && solution.rooms[i] != UNALLOCATED_SPACE){
-						assert(solution.rooms[i]>=0 && solution.rooms[i]<gt.rules.nInternalRooms);
+					if(solution.room(i) != UNSPECIFIED_ROOM && solution.room(i) != UNALLOCATED_SPACE){
+						assert(solution.room(i)>=0 && solution.room(i)<gt.rules.nInternalRooms);
 						tosExport<<protectCSV(gt.rules.internalRoomsList[r]->name);
 					}
 					tosExport<<textquote<<fieldSeparator<<textquote;
