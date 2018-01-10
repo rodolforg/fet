@@ -47,6 +47,8 @@ public:
 	static void computeLockedUnlockedActivitiesOnlySpace();
 	
 	static void increaseCommunicationSpinBox();
+
+	static QString getActivityLockTipString(int activityId);
 };
 
 #endif

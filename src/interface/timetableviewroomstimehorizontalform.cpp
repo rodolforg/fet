@@ -505,37 +505,6 @@ void TimetableViewRoomsTimeHorizontalForm::updateRoomsTimetableTable(){
 						s+=gt.rules.internalRoomsList[r]->name;
 					}*/
 					
-					//added by Volker Dirr (start)
-					QString descr="";
-					QString tt="";
-					if(idsOfPermanentlyLockedTime.contains(act->id)){
-						descr+=QCoreApplication::translate("TimetableViewForm", "PLT", "Abbreviation for permanently locked time. There are 4 string: permanently locked time, permanently locked space, "
-							"locked time, locked space. Make sure their abbreviations contain different letters and are visually different, so user can easily differentiate between them."
-							" These abbreviations may appear also in other places, please use the same abbreviations.");
-						tt=", ";
-					}
-					else if(idsOfLockedTime.contains(act->id)){
-						descr+=QCoreApplication::translate("TimetableViewForm", "LT", "Abbreviation for locked time. There are 4 string: permanently locked time, permanently locked space, "
-						"locked time, locked space. Make sure their abbreviations contain different letters and are visually different, so user can easily differentiate between them."
-							" These abbreviations may appear also in other places, please use the same abbreviations.");
-						tt=", ";
-					}
-					if(idsOfPermanentlyLockedSpace.contains(act->id)){
-						descr+=tt+QCoreApplication::translate("TimetableViewForm", "PLS", "Abbreviation for permanently locked space. There are 4 string: permanently locked time, permanently locked space, "
-							"locked time, locked space. Make sure their abbreviations contain different letters and are visually different, so user can easily differentiate between them."
-							" These abbreviations may appear also in other places, please use the same abbreviations.");
-					}
-					else if(idsOfLockedSpace.contains(act->id)){
-						descr+=tt+QCoreApplication::translate("TimetableViewForm", "LS", "Abbreviation for locked space. There are 4 string: permanently locked time, permanently locked space, "
-							"locked time, locked space. Make sure their abbreviations contain different letters and are visually different, so user can easily differentiate between them."
-							" These abbreviations may appear also in other places, please use the same abbreviations.");
-					}
-					if(descr!=""){
-						descr.prepend("\n(");
-						descr.prepend(" ");
-						descr.append(")");
-					}
-
 					if(idsOfPermanentlyLockedTime.contains(act->id) || idsOfLockedTime.contains(act->id)){
 						QFont font(item->font());
 						font.setBold(true);
@@ -558,8 +527,7 @@ void TimetableViewRoomsTimeHorizontalForm::updateRoomsTimetableTable(){
 						item->setFont(font);
 					}
 
-					s+=descr;
-					//added by Volker Dirr (end)
+					s+=" " + LockUnlock::getActivityLockTipString(act->id);
 					
 					//begin by Marco Vassura
 					// add colors (start)
