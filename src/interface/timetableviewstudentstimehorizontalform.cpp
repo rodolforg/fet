@@ -529,6 +529,11 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 				notAvailableDayHour.insert(QPair<int,int>(d,h));
 			}
 		}*/
+
+		for(int k=0; k<studentsTimetableTable->columnCount(); k++){
+			if (studentsTimetableTable->columnSpan(t,k) != 1)
+				studentsTimetableTable->setSpan(t, k, 1, 1);
+		}
 		
 		for(int d=0; d<gt.rules.nDaysPerWeek; d++){
 			for(int h=0; h<gt.rules.nHoursPerDay; ){

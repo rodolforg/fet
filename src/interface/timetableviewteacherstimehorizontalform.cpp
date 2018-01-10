@@ -414,6 +414,12 @@ void TimetableViewTeachersTimeHorizontalForm::updateTeachersTimetableTable(){
 	
 	for(int t=0; t<gt.rules.nInternalTeachers; t++){
 		assert(t<teachersTimetableTable->rowCount());
+
+		for(int k=0; k<teachersTimetableTable->columnCount(); k++){
+			if (teachersTimetableTable->columnSpan(t,k) != 1)
+				teachersTimetableTable->setSpan(t, k, 1, 1);
+		}
+
 		for(int d=0; d<gt.rules.nDaysPerWeek; d++){
 			for(int h=0; h<gt.rules.nHoursPerDay; ){
 				const int tableColumnIdx = d*gt.rules.nHoursPerDay+h;
