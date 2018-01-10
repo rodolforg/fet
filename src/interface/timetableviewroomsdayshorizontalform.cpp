@@ -292,7 +292,7 @@ void TimetableViewRoomsDaysHorizontalForm::updateRoomsTimetableTable(){
 			int ai=CachedSchedule::rooms_timetable_weekly[roomIndex][k][j]; //activity index
 			//Activity* act=gt.rules.activitiesList.at(ai);
 			if(ai!=UNALLOCATED_ACTIVITY){
-				Activity* act=&gt.rules.internalActivitiesList[ai];
+				const Activity* act=&gt.rules.internalActivitiesList[ai];
 				assert(act!=NULL);
 				
 				if(TIMETABLE_HTML_PRINT_ACTIVITY_TAGS){

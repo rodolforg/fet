@@ -280,9 +280,8 @@ void TimetableViewTeachersDaysHorizontalForm::updateTeachersTimetableTable(){
 			//end by Marco Vassura
 			s = "";
 			int ai=CachedSchedule::teachers_timetable_weekly[teacher][k][j]; //activity index
-			//Activity* act=gt.rules.activitiesList.at(ai);
 			if(ai!=UNALLOCATED_ACTIVITY){
-				Activity* act=&gt.rules.internalActivitiesList[ai];
+				const Activity* act=&gt.rules.internalActivitiesList[ai];
 				assert(act!=NULL);
 				
 				if(act->teachersNames.count()==1){

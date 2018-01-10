@@ -365,7 +365,7 @@ void TimetableViewStudentsDaysHorizontalForm::updateStudentsTimetableTable(){
 			s="";
 			int ai=CachedSchedule::students_timetable_weekly[i][k][j]; //activity index
 			if(ai!=UNALLOCATED_ACTIVITY){
-				Activity* act=&gt.rules.internalActivitiesList[ai];
+				const Activity* act=&gt.rules.internalActivitiesList[ai];
 				assert(act!=NULL);
 				
 				assert(act->studentsNames.count()>=1);
