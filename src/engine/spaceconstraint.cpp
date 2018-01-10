@@ -250,7 +250,7 @@ double ConstraintBasicCompulsorySpace::fitness(
 	int nor = 0; //number of overwhelmed rooms
 
 	for(int i=0; i<r.nInternalActivities; i++)
-		if(c.rooms[i]==UNALLOCATED_SPACE){
+		if(c.room(i)==UNALLOCATED_SPACE){
 			//Firstly, we consider a big clash each unallocated activity.
 			//Needs to be very a large constant, bigger than any other broken constraint.
 			unallocated += /*r.internalActivitiesList[i].duration * r.internalActivitiesList[i].nSubgroups * */ 10000;
@@ -267,10 +267,10 @@ double ConstraintBasicCompulsorySpace::fitness(
 				*conflictsString+=s+"\n";
 			}
 		}
-		else if(c.rooms[i]!=UNSPECIFIED_ROOM){
+		else if(c.room(i)!=UNSPECIFIED_ROOM){
 			//The capacity of each room must be respected
 			//(the number of students must be less than the capacity)
-			int rm=c.rooms[i];
+			int rm=c.room(i);
 			if(r.internalActivitiesList[i].nTotalStudents>r.internalRoomsList[rm]->capacity){
 				int tmp;
 				//if(r.internalActivitiesList[i].parity==PARITY_WEEKLY)
@@ -814,7 +814,7 @@ double ConstraintActivityPreferredRoom::fitness(
 
 	int nbroken = 0;
 	
-	int rm=c.rooms[this->_activity];
+	int rm=c.room(this->_activity);
 	if(/*rm!=UNALLOCATED_SPACE &&*/ rm!=this->_room){
 		if(rm!=UNALLOCATED_SPACE){
 			if(conflictsString!=NULL){
@@ -1043,7 +1043,7 @@ double ConstraintActivityPreferredRooms::fitness(
 
 	int nbroken = 0;
 	
-	int rm=c.rooms[this->_activity];
+	int rm=c.room(this->_activity);
 	if(1 || rm!=UNALLOCATED_SPACE){
 		int i;
 		for(i=0; i<this->_rooms.count(); i++)
@@ -1287,7 +1287,7 @@ double ConstraintStudentsSetHomeRoom::fitness(
 	int nbroken = 0;
 	
 	foreach(int ac, this->_activities){
-		int rm=c.rooms[ac];
+		int rm=c.room(ac);
 		if(rm==UNALLOCATED_SPACE) //counted as unallocated
 			continue;
 		
@@ -1555,7 +1555,7 @@ double ConstraintStudentsSetHomeRooms::fitness(
 	int nbroken = 0;
 	
 	foreach(int ac, this->_activities){
-		int rm=c.rooms[ac];
+		int rm=c.room(ac);
 		if(rm==UNALLOCATED_SPACE)
 			continue;
 	
@@ -1812,7 +1812,7 @@ double ConstraintTeacherHomeRoom::fitness(
 	int nbroken = 0;
 	
 	foreach(int ac, this->_activities){
-		int rm=c.rooms[ac];
+		int rm=c.room(ac);
 		if(rm==UNALLOCATED_SPACE) //counted as unallocated
 			continue;
 		
@@ -2078,7 +2078,7 @@ double ConstraintTeacherHomeRooms::fitness(
 	int nbroken = 0;
 	
 	foreach(int ac, this->_activities){
-		int rm=c.rooms[ac];
+		int rm=c.room(ac);
 		if(rm==UNALLOCATED_SPACE)
 			continue;
 	
@@ -2311,7 +2311,7 @@ double ConstraintSubjectPreferredRoom::fitness(
 	int nbroken = 0;
 	
 	foreach(int ac, this->_activities){
-		int rm=c.rooms[ac];
+		int rm=c.room(ac);
 		if(rm==UNALLOCATED_SPACE) //counted as unallocated
 			continue;
 		
@@ -2544,7 +2544,7 @@ double ConstraintSubjectPreferredRooms::fitness(
 	int nbroken = 0;
 	
 	foreach(int ac, this->_activities){
-		int rm=c.rooms[ac];
+		int rm=c.room(ac);
 		if(rm==UNALLOCATED_SPACE)
 			continue;
 	
@@ -2776,7 +2776,7 @@ double ConstraintSubjectActivityTagPreferredRoom::fitness(
 	int nbroken = 0;
 	
 	foreach(int ac, this->_activities){
-		int rm=c.rooms[ac];
+		int rm=c.room(ac);
 		if(rm==UNALLOCATED_SPACE) //counted as unallocated
 			continue;
 		
@@ -3018,7 +3018,7 @@ double ConstraintSubjectActivityTagPreferredRooms::fitness(
 	int nbroken = 0;
 	
 	foreach(int ac, this->_activities){
-		int rm=c.rooms[ac];
+		int rm=c.room(ac);
 		if(rm==UNALLOCATED_SPACE)
 			continue;
 	
@@ -3243,7 +3243,7 @@ double ConstraintActivityTagPreferredRoom::fitness(
 	int nbroken = 0;
 	
 	foreach(int ac, this->_activities){
-		int rm=c.rooms[ac];
+		int rm=c.room(ac);
 		if(rm==UNALLOCATED_SPACE) //counted as unallocated
 			continue;
 		
@@ -3477,7 +3477,7 @@ double ConstraintActivityTagPreferredRooms::fitness(
 	int nbroken = 0;
 	
 	foreach(int ac, this->_activities){
-		int rm=c.rooms[ac];
+		int rm=c.room(ac);
 		if(rm==UNALLOCATED_SPACE)
 			continue;
 	
@@ -3734,16 +3734,16 @@ double ConstraintStudentsSetMaxBuildingChangesPerDay::fitness(
 				crtBuildingsTimetable[d2][h2]=-1;
 				
 		foreach(int ai, sts->activitiesForSubgroup)
-			if(c.times[ai]!=UNALLOCATED_TIME){
-				int d2=c.times[ai]%r.nDaysPerWeek;
-				int h2=c.times[ai]/r.nDaysPerWeek;
+			if(c.time(ai)!=UNALLOCATED_TIME){
+				int d2=c.day(ai, r);
+				int h2=c.hour(ai, r);
 				
 				for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 					assert(h2+dur<r.nHoursPerDay);
 					assert(crtBuildingsTimetable[d2][h2+dur]==-1);
-					if(c.rooms[ai]!=UNSPECIFIED_ROOM && c.rooms[ai]!=UNALLOCATED_SPACE){
-						assert(c.rooms[ai]>=0 && c.rooms[ai]<r.nInternalRooms);
-						crtBuildingsTimetable[d2][h2+dur]=r.internalRoomsList[c.rooms[ai]]->buildingIndex;
+					if(c.room(ai)!=UNSPECIFIED_ROOM && c.room(ai)!=UNALLOCATED_SPACE){
+						assert(c.room(ai)>=0 && c.room(ai)<r.nInternalRooms);
+						crtBuildingsTimetable[d2][h2+dur]=r.internalRoomsList[c.room(ai)]->buildingIndex;
 					}
 				}
 			}
@@ -3960,16 +3960,16 @@ double ConstraintStudentsMaxBuildingChangesPerDay::fitness(
 				crtBuildingsTimetable[d2][h2]=-1;
 				
 		foreach(int ai, sts->activitiesForSubgroup)
-			if(c.times[ai]!=UNALLOCATED_TIME){
-				int d2=c.times[ai]%r.nDaysPerWeek;
-				int h2=c.times[ai]/r.nDaysPerWeek;
+			if(c.time(ai)!=UNALLOCATED_TIME){
+				int d2=c.day(ai, r);
+				int h2=c.hour(ai, r);
 				
 				for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 					assert(h2+dur<r.nHoursPerDay);
 					assert(crtBuildingsTimetable[d2][h2+dur]==-1);
-					if(c.rooms[ai]!=UNSPECIFIED_ROOM && c.rooms[ai]!=UNALLOCATED_SPACE){
-						assert(c.rooms[ai]>=0 && c.rooms[ai]<r.nInternalRooms);
-						crtBuildingsTimetable[d2][h2+dur]=r.internalRoomsList[c.rooms[ai]]->buildingIndex;
+					if(c.room(ai)!=UNSPECIFIED_ROOM && c.room(ai)!=UNALLOCATED_SPACE){
+						assert(c.room(ai)>=0 && c.room(ai)<r.nInternalRooms);
+						crtBuildingsTimetable[d2][h2+dur]=r.internalRoomsList[c.room(ai)]->buildingIndex;
 					}
 				}
 			}
@@ -4239,16 +4239,16 @@ double ConstraintStudentsSetMaxBuildingChangesPerWeek::fitness(
 				crtBuildingsTimetable[d2][h2]=-1;
 				
 		foreach(int ai, sts->activitiesForSubgroup)
-			if(c.times[ai]!=UNALLOCATED_TIME){
-				int d2=c.times[ai]%r.nDaysPerWeek;
-				int h2=c.times[ai]/r.nDaysPerWeek;
+			if(c.time(ai)!=UNALLOCATED_TIME){
+				int d2=c.day(ai, r);
+				int h2=c.hour(ai, r);
 				
 				for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 					assert(h2+dur<r.nHoursPerDay);
 					assert(crtBuildingsTimetable[d2][h2+dur]==-1);
-					if(c.rooms[ai]!=UNSPECIFIED_ROOM && c.rooms[ai]!=UNALLOCATED_SPACE){
-						assert(c.rooms[ai]>=0 && c.rooms[ai]<r.nInternalRooms);
-						crtBuildingsTimetable[d2][h2+dur]=r.internalRoomsList[c.rooms[ai]]->buildingIndex;
+					if(c.room(ai)!=UNSPECIFIED_ROOM && c.room(ai)!=UNALLOCATED_SPACE){
+						assert(c.room(ai)>=0 && c.room(ai)<r.nInternalRooms);
+						crtBuildingsTimetable[d2][h2+dur]=r.internalRoomsList[c.room(ai)]->buildingIndex;
 					}
 				}
 			}
@@ -4464,16 +4464,16 @@ double ConstraintStudentsMaxBuildingChangesPerWeek::fitness(
 				crtBuildingsTimetable[d2][h2]=-1;
 				
 		foreach(int ai, sts->activitiesForSubgroup)
-			if(c.times[ai]!=UNALLOCATED_TIME){
-				int d2=c.times[ai]%r.nDaysPerWeek;
-				int h2=c.times[ai]/r.nDaysPerWeek;
+			if(c.time(ai)!=UNALLOCATED_TIME){
+				int d2=c.day(ai, r);
+				int h2=c.hour(ai, r);
 				
 				for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 					assert(h2+dur<r.nHoursPerDay);
 					assert(crtBuildingsTimetable[d2][h2+dur]==-1);
-					if(c.rooms[ai]!=UNSPECIFIED_ROOM && c.rooms[ai]!=UNALLOCATED_SPACE){
-						assert(c.rooms[ai]>=0 && c.rooms[ai]<r.nInternalRooms);
-						crtBuildingsTimetable[d2][h2+dur]=r.internalRoomsList[c.rooms[ai]]->buildingIndex;
+					if(c.room(ai)!=UNSPECIFIED_ROOM && c.room(ai)!=UNALLOCATED_SPACE){
+						assert(c.room(ai)>=0 && c.room(ai)<r.nInternalRooms);
+						crtBuildingsTimetable[d2][h2+dur]=r.internalRoomsList[c.room(ai)]->buildingIndex;
 					}
 				}
 			}
@@ -4742,16 +4742,16 @@ double ConstraintStudentsSetMinGapsBetweenBuildingChanges::fitness(
 				crtBuildingsTimetable[d2][h2]=-1;
 				
 		foreach(int ai, sts->activitiesForSubgroup)
-			if(c.times[ai]!=UNALLOCATED_TIME){
-				int d2=c.times[ai]%r.nDaysPerWeek;
-				int h2=c.times[ai]/r.nDaysPerWeek;
+			if(c.time(ai)!=UNALLOCATED_TIME){
+				int d2=c.day(ai, r);
+				int h2=c.hour(ai, r);
 				
 				for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 					assert(h2+dur<r.nHoursPerDay);
 					assert(crtBuildingsTimetable[d2][h2+dur]==-1);
-					if(c.rooms[ai]!=UNSPECIFIED_ROOM && c.rooms[ai]!=UNALLOCATED_SPACE){
-						assert(c.rooms[ai]>=0 && c.rooms[ai]<r.nInternalRooms);
-						crtBuildingsTimetable[d2][h2+dur]=r.internalRoomsList[c.rooms[ai]]->buildingIndex;
+					if(c.room(ai)!=UNSPECIFIED_ROOM && c.room(ai)!=UNALLOCATED_SPACE){
+						assert(c.room(ai)>=0 && c.room(ai)<r.nInternalRooms);
+						crtBuildingsTimetable[d2][h2+dur]=r.internalRoomsList[c.room(ai)]->buildingIndex;
 					}
 				}
 			}
@@ -4980,16 +4980,16 @@ double ConstraintStudentsMinGapsBetweenBuildingChanges::fitness(
 				crtBuildingsTimetable[d2][h2]=-1;
 				
 		foreach(int ai, sts->activitiesForSubgroup)
-			if(c.times[ai]!=UNALLOCATED_TIME){
-				int d2=c.times[ai]%r.nDaysPerWeek;
-				int h2=c.times[ai]/r.nDaysPerWeek;
+			if(c.time(ai)!=UNALLOCATED_TIME){
+				int d2=c.day(ai, r);
+				int h2=c.hour(ai, r);
 				
 				for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 					assert(h2+dur<r.nHoursPerDay);
 					assert(crtBuildingsTimetable[d2][h2+dur]==-1);
-					if(c.rooms[ai]!=UNSPECIFIED_ROOM && c.rooms[ai]!=UNALLOCATED_SPACE){
-						assert(c.rooms[ai]>=0 && c.rooms[ai]<r.nInternalRooms);
-						crtBuildingsTimetable[d2][h2+dur]=r.internalRoomsList[c.rooms[ai]]->buildingIndex;
+					if(c.room(ai)!=UNSPECIFIED_ROOM && c.room(ai)!=UNALLOCATED_SPACE){
+						assert(c.room(ai)>=0 && c.room(ai)<r.nInternalRooms);
+						crtBuildingsTimetable[d2][h2+dur]=r.internalRoomsList[c.room(ai)]->buildingIndex;
 					}
 				}
 			}
@@ -5235,16 +5235,16 @@ double ConstraintTeacherMaxBuildingChangesPerDay::fitness(
 			crtBuildingsTimetable[d2][h2]=-1;
 			
 	foreach(int ai, tchpointer->activitiesForTeacher)
-		if(c.times[ai]!=UNALLOCATED_TIME){
-			int d2=c.times[ai]%r.nDaysPerWeek;
-			int h2=c.times[ai]/r.nDaysPerWeek;
+		if(c.time(ai)!=UNALLOCATED_TIME){
+			int d2=c.day(ai, r);
+			int h2=c.hour(ai, r);
 			
 			for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 				assert(h2+dur<r.nHoursPerDay);
 				assert(crtBuildingsTimetable[d2][h2+dur]==-1);
-				if(c.rooms[ai]!=UNSPECIFIED_ROOM && c.rooms[ai]!=UNALLOCATED_SPACE){
-					assert(c.rooms[ai]>=0 && c.rooms[ai]<r.nInternalRooms);
-					crtBuildingsTimetable[d2][h2+dur]=r.internalRoomsList[c.rooms[ai]]->buildingIndex;
+				if(c.room(ai)!=UNSPECIFIED_ROOM && c.room(ai)!=UNALLOCATED_SPACE){
+					assert(c.room(ai)>=0 && c.room(ai)<r.nInternalRooms);
+					crtBuildingsTimetable[d2][h2+dur]=r.internalRoomsList[c.room(ai)]->buildingIndex;
 				}
 			}
 		}
@@ -5461,16 +5461,16 @@ double ConstraintTeachersMaxBuildingChangesPerDay::fitness(
 				crtBuildingsTimetable[d2][h2]=-1;
 				
 		foreach(int ai, tchpointer->activitiesForTeacher)
-			if(c.times[ai]!=UNALLOCATED_TIME){
-				int d2=c.times[ai]%r.nDaysPerWeek;
-				int h2=c.times[ai]/r.nDaysPerWeek;
+			if(c.time(ai)!=UNALLOCATED_TIME){
+				int d2=c.day(ai, r);
+				int h2=c.hour(ai, r);
 				
 				for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 					assert(h2+dur<r.nHoursPerDay);
 					assert(crtBuildingsTimetable[d2][h2+dur]==-1);
-					if(c.rooms[ai]!=UNSPECIFIED_ROOM && c.rooms[ai]!=UNALLOCATED_SPACE){
-						assert(c.rooms[ai]>=0 && c.rooms[ai]<r.nInternalRooms);
-						crtBuildingsTimetable[d2][h2+dur]=r.internalRoomsList[c.rooms[ai]]->buildingIndex;
+					if(c.room(ai)!=UNSPECIFIED_ROOM && c.room(ai)!=UNALLOCATED_SPACE){
+						assert(c.room(ai)>=0 && c.room(ai)<r.nInternalRooms);
+						crtBuildingsTimetable[d2][h2+dur]=r.internalRoomsList[c.room(ai)]->buildingIndex;
 					}
 				}
 			}
@@ -5704,16 +5704,16 @@ double ConstraintTeacherMaxBuildingChangesPerWeek::fitness(
 			crtBuildingsTimetable[d2][h2]=-1;
 			
 	foreach(int ai, tchpointer->activitiesForTeacher)
-		if(c.times[ai]!=UNALLOCATED_TIME){
-			int d2=c.times[ai]%r.nDaysPerWeek;
-			int h2=c.times[ai]/r.nDaysPerWeek;
+		if(c.time(ai)!=UNALLOCATED_TIME){
+			int d2=c.day(ai, r);
+			int h2=c.hour(ai, r);
 			
 			for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 				assert(h2+dur<r.nHoursPerDay);
 				assert(crtBuildingsTimetable[d2][h2+dur]==-1);
-				if(c.rooms[ai]!=UNSPECIFIED_ROOM && c.rooms[ai]!=UNALLOCATED_SPACE){
-					assert(c.rooms[ai]>=0 && c.rooms[ai]<r.nInternalRooms);
-					crtBuildingsTimetable[d2][h2+dur]=r.internalRoomsList[c.rooms[ai]]->buildingIndex;
+				if(c.room(ai)!=UNSPECIFIED_ROOM && c.room(ai)!=UNALLOCATED_SPACE){
+					assert(c.room(ai)>=0 && c.room(ai)<r.nInternalRooms);
+					crtBuildingsTimetable[d2][h2+dur]=r.internalRoomsList[c.room(ai)]->buildingIndex;
 				}
 			}
 		}
@@ -5930,16 +5930,16 @@ double ConstraintTeachersMaxBuildingChangesPerWeek::fitness(
 				crtBuildingsTimetable[d2][h2]=-1;
 				
 		foreach(int ai, tchpointer->activitiesForTeacher)
-			if(c.times[ai]!=UNALLOCATED_TIME){
-				int d2=c.times[ai]%r.nDaysPerWeek;
-				int h2=c.times[ai]/r.nDaysPerWeek;
+			if(c.time(ai)!=UNALLOCATED_TIME){
+				int d2=c.day(ai, r);
+				int h2=c.hour(ai, r);
 				
 				for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 					assert(h2+dur<r.nHoursPerDay);
 					assert(crtBuildingsTimetable[d2][h2+dur]==-1);
-					if(c.rooms[ai]!=UNSPECIFIED_ROOM && c.rooms[ai]!=UNALLOCATED_SPACE){
-						assert(c.rooms[ai]>=0 && c.rooms[ai]<r.nInternalRooms);
-						crtBuildingsTimetable[d2][h2+dur]=r.internalRoomsList[c.rooms[ai]]->buildingIndex;
+					if(c.room(ai)!=UNSPECIFIED_ROOM && c.room(ai)!=UNALLOCATED_SPACE){
+						assert(c.room(ai)>=0 && c.room(ai)<r.nInternalRooms);
+						crtBuildingsTimetable[d2][h2+dur]=r.internalRoomsList[c.room(ai)]->buildingIndex;
 					}
 				}
 			}
@@ -6173,16 +6173,16 @@ double ConstraintTeacherMinGapsBetweenBuildingChanges::fitness(
 			crtBuildingsTimetable[d2][h2]=-1;
 			
 	foreach(int ai, tchpointer->activitiesForTeacher)
-		if(c.times[ai]!=UNALLOCATED_TIME){
-			int d2=c.times[ai]%r.nDaysPerWeek;
-			int h2=c.times[ai]/r.nDaysPerWeek;
+		if(c.time(ai)!=UNALLOCATED_TIME){
+			int d2=c.day(ai, r);
+			int h2=c.hour(ai, r);
 			
 			for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 				assert(h2+dur<r.nHoursPerDay);
 				assert(crtBuildingsTimetable[d2][h2+dur]==-1);
-				if(c.rooms[ai]!=UNSPECIFIED_ROOM && c.rooms[ai]!=UNALLOCATED_SPACE){
-					assert(c.rooms[ai]>=0 && c.rooms[ai]<r.nInternalRooms);
-					crtBuildingsTimetable[d2][h2+dur]=r.internalRoomsList[c.rooms[ai]]->buildingIndex;
+				if(c.room(ai)!=UNSPECIFIED_ROOM && c.room(ai)!=UNALLOCATED_SPACE){
+					assert(c.room(ai)>=0 && c.room(ai)<r.nInternalRooms);
+					crtBuildingsTimetable[d2][h2+dur]=r.internalRoomsList[c.room(ai)]->buildingIndex;
 				}
 			}
 		}
@@ -6411,16 +6411,16 @@ double ConstraintTeachersMinGapsBetweenBuildingChanges::fitness(
 				crtBuildingsTimetable[d2][h2]=-1;
 				
 		foreach(int ai, tchpointer->activitiesForTeacher)
-			if(c.times[ai]!=UNALLOCATED_TIME){
-				int d2=c.times[ai]%r.nDaysPerWeek;
-				int h2=c.times[ai]/r.nDaysPerWeek;
+			if(c.time(ai)!=UNALLOCATED_TIME){
+				int d2=c.day(ai, r);
+				int h2=c.hour(ai, r);
 				
 				for(int dur=0; dur<r.internalActivitiesList[ai].duration; dur++){
 					assert(h2+dur<r.nHoursPerDay);
 					assert(crtBuildingsTimetable[d2][h2+dur]==-1);
-					if(c.rooms[ai]!=UNSPECIFIED_ROOM && c.rooms[ai]!=UNALLOCATED_SPACE){
-						assert(c.rooms[ai]>=0 && c.rooms[ai]<r.nInternalRooms);
-						crtBuildingsTimetable[d2][h2+dur]=r.internalRoomsList[c.rooms[ai]]->buildingIndex;
+					if(c.room(ai)!=UNSPECIFIED_ROOM && c.room(ai)!=UNALLOCATED_SPACE){
+						assert(c.room(ai)>=0 && c.room(ai)<r.nInternalRooms);
+						crtBuildingsTimetable[d2][h2+dur]=r.internalRoomsList[c.room(ai)]->buildingIndex;
 					}
 				}
 			}
@@ -6701,9 +6701,9 @@ double ConstraintActivitiesOccupyMaxDifferentRooms::fitness(
 	QSet<int> usedRooms;
 	
 	foreach(int ai, this->_activitiesIndices){
-		if(c.rooms[ai]!=UNALLOCATED_SPACE && c.rooms[ai]!=UNSPECIFIED_ROOM)
-			if(!usedRooms.contains(c.rooms[ai]))
-				usedRooms.insert(c.rooms[ai]);
+		if(c.room(ai)!=UNALLOCATED_SPACE && c.room(ai)!=UNSPECIFIED_ROOM)
+			if(!usedRooms.contains(c.room(ai)))
+				usedRooms.insert(c.room(ai));
 	}
 	
 	if(usedRooms.count() > this->maxDifferentRooms){
@@ -6963,16 +6963,16 @@ double ConstraintActivitiesSameRoomIfConsecutive::fitness(
 		for(int j=i+1; j<_activitiesIndices.count(); j++){
 			int ai2=_activitiesIndices.at(j);
 			
-			if(c.times[ai]!=UNALLOCATED_TIME && c.times[ai2]!=UNALLOCATED_TIME){
-				int d=c.times[ai]%r.nDaysPerWeek;
-				int h=c.times[ai]/r.nDaysPerWeek;
-				int d2=c.times[ai2]%r.nDaysPerWeek;
-				int h2=c.times[ai2]/r.nDaysPerWeek;
+			if(c.time(ai)!=UNALLOCATED_TIME && c.time(ai2)!=UNALLOCATED_TIME){
+				int d=c.day(ai, r);
+				int h=c.hour(ai, r);
+				int d2=c.day(ai2, r);
+				int h2=c.hour(ai2, r);
 			
 				if( (d==d2) && (h+r.internalActivitiesList[ai].duration==h2 || h2+r.internalActivitiesList[ai2].duration==h) )
-					if(c.rooms[ai]!=UNALLOCATED_SPACE && c.rooms[ai]!=UNSPECIFIED_ROOM)
-						if(c.rooms[ai2]!=UNALLOCATED_SPACE && c.rooms[ai2]!=UNSPECIFIED_ROOM)
-							if(c.rooms[ai]!=c.rooms[ai2])
+					if(c.room(ai)!=UNALLOCATED_SPACE && c.room(ai)!=UNSPECIFIED_ROOM)
+						if(c.room(ai2)!=UNALLOCATED_SPACE && c.room(ai2)!=UNSPECIFIED_ROOM)
+							if(c.room(ai)!=c.room(ai2))
 								nbroken++;
 			}
 		}

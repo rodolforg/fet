@@ -295,8 +295,8 @@ void TimetableViewTeachersDaysHorizontalForm::updateTeachersTimetableTable(){
 					s+="\n";
 					s+=act->studentsNames.join(", ");
 				}
-				
-				int r=best_solution.rooms[ai];
+
+				int r=best_solution.room(ai);
 				if(r!=UNALLOCATED_SPACE && r!=UNSPECIFIED_ROOM){
 					//s+=" ";
 					//s+=tr("R:%1", "Room").arg(gt.rules.internalRoomsList[r]->name);
@@ -443,7 +443,7 @@ void TimetableViewTeachersDaysHorizontalForm::detailActivity(QTableWidgetItem* i
 				s += act->getDetailedDescription();
 
 				//int r=rooms_timetable_weekly[teacher][k][j];
-				int r=CachedSchedule::getCachedSolution().rooms[ai];
+				int r=CachedSchedule::getCachedSolution().room(ai);
 				if(r!=UNALLOCATED_SPACE && r!=UNSPECIFIED_ROOM){
 					s+="\n";
 					s+=tr("Room: %1").arg(gt.rules.internalRoomsList[r]->name);
@@ -530,9 +530,8 @@ void TimetableViewTeachersDaysHorizontalForm::lock(bool lockTime, bool lockSpace
 		int k = item->column();
 				int ai=CachedSchedule::teachers_timetable_weekly[i][k][j];
 				if(ai!=UNALLOCATED_ACTIVITY){
-					int a_tim=tc->times[ai];
-					int hour=a_tim/gt.rules.nDaysPerWeek;
-					int day=a_tim%gt.rules.nDaysPerWeek;
+					int hour=tc->hour(ai, gt.rules);
+					int day=tc->day(ai, gt.rules);
 
 					const Activity* act=&gt.rules.internalActivitiesList[ai];
 
@@ -604,8 +603,8 @@ void TimetableViewTeachersDaysHorizontalForm::lock(bool lockTime, bool lockSpace
 								report=false;
 						}
 					}
-					
-					int ri=tc->rooms[ai];
+
+					int ri=tc->room(ai);
 					if(ri!=UNALLOCATED_SPACE && ri!=UNSPECIFIED_ROOM && lockSpace){
 						ConstraintActivityPreferredRoom* ctr=new ConstraintActivityPreferredRoom(100, act->id, (gt.rules.internalRoomsList[ri])->name, false);
 						bool t=gt.rules.addSpaceConstraint(ctr);

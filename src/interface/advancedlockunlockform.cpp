@@ -169,10 +169,10 @@ void AdvancedLockUnlockForm::lockDay(QWidget* parent)
 	const Solution& best_solution=CachedSchedule::getCachedSolution();
 
 	for(int i=0; i<gt.rules.nInternalActivities; i++){
-		if(best_solution.times[i]!=UNALLOCATED_TIME){
-			assert(best_solution.times[i]>=0 && best_solution.times[i]<gt.rules.nHoursPerWeek);
-			int d=best_solution.times[i]%gt.rules.nDaysPerWeek;
-			int h=best_solution.times[i]/gt.rules.nDaysPerWeek;
+		if(best_solution.time(i)!=UNALLOCATED_TIME){
+			assert(best_solution.time(i)>=0 && best_solution.time(i)<gt.rules.nHoursPerWeek);
+			int d=best_solution.day(i, gt.rules);
+			int h=best_solution.hour(i, gt.rules);
 			
 			ConstraintActivityPreferredStartingTime* newTimeCtr=NULL;
 			
@@ -183,8 +183,8 @@ void AdvancedLockUnlockForm::lockDay(QWidget* parent)
 			}
 			
 			if(d==selectedDayInt && lockSpace){
-				if(best_solution.rooms[i]!=UNALLOCATED_SPACE && best_solution.rooms[i]!=UNSPECIFIED_ROOM){
-					newSpaceCtr=new ConstraintActivityPreferredRoom(100.0, gt.rules.internalActivitiesList[i].id, gt.rules.internalRoomsList[best_solution.rooms[i]]->name, false);
+				if(best_solution.room(i)!=UNALLOCATED_SPACE && best_solution.room(i)!=UNSPECIFIED_ROOM){
+					newSpaceCtr=new ConstraintActivityPreferredRoom(100.0, gt.rules.internalActivitiesList[i].id, gt.rules.internalRoomsList[best_solution.room(i)]->name, false);
 				}
 			}
 			
@@ -444,10 +444,10 @@ void AdvancedLockUnlockForm::unlockDay(QWidget* parent)
 
 	const Solution& best_solution=CachedSchedule::getCachedSolution();
 	for(int i=0; i<gt.rules.nInternalActivities; i++){
-		if(best_solution.times[i]!=UNALLOCATED_TIME){
-			assert(best_solution.times[i]>=0 && best_solution.times[i]<gt.rules.nHoursPerWeek);
-			int d=best_solution.times[i]%gt.rules.nDaysPerWeek;
-			//int h=best_solution.times[i]/gt.rules.nDaysPerWeek;
+		if(best_solution.time(i)!=UNALLOCATED_TIME){
+			assert(best_solution.time(i)>=0 && best_solution.time(i)<gt.rules.nHoursPerWeek);
+			int d=best_solution.day(i, gt.rules);
+			//int h=best_solution.hour(i, gt.rules);
 			
 			if(d==selectedDayInt){
 				lockedActivitiesIds.append(gt.rules.internalActivitiesList[i].id);
@@ -735,11 +735,11 @@ void AdvancedLockUnlockForm::lockEndStudentsDay(QWidget* parent)
 		int ai=activitiesIndexList.at(q);
 		assert(gt.rules.internalActivitiesList[ai].id==id);
 
-		assert(best_solution.times[ai]!=UNALLOCATED_TIME);
-		if(best_solution.times[ai]!=UNALLOCATED_TIME){
-			assert(best_solution.times[ai]>=0 && best_solution.times[ai]<gt.rules.nHoursPerWeek);
-			int d=best_solution.times[ai]%gt.rules.nDaysPerWeek;
-			int h=best_solution.times[ai]/gt.rules.nDaysPerWeek;
+		assert(best_solution.time(ai)!=UNALLOCATED_TIME);
+		if(best_solution.time(ai)!=UNALLOCATED_TIME){
+			assert(best_solution.time(ai)>=0 && best_solution.time(ai)<gt.rules.nHoursPerWeek);
+			int d=best_solution.day(ai, gt.rules);
+			int h=best_solution.hour(ai, gt.rules);
 			
 			ConstraintActivityPreferredStartingTime* newTimeCtr=NULL;
 			
@@ -750,8 +750,8 @@ void AdvancedLockUnlockForm::lockEndStudentsDay(QWidget* parent)
 			}
 			
 			if(lockSpace){
-				if(best_solution.rooms[ai]!=UNALLOCATED_SPACE && best_solution.rooms[ai]!=UNSPECIFIED_ROOM){
-					newSpaceCtr=new ConstraintActivityPreferredRoom(100.0, id, gt.rules.internalRoomsList[best_solution.rooms[ai]]->name, false);
+				if(best_solution.room(ai)!=UNALLOCATED_SPACE && best_solution.room(ai)!=UNSPECIFIED_ROOM){
+					newSpaceCtr=new ConstraintActivityPreferredRoom(100.0, id, gt.rules.internalRoomsList[best_solution.room(ai)]->name, false);
 				}
 			}
 			
@@ -1256,10 +1256,10 @@ void AdvancedLockUnlockForm::lockAll(QWidget* parent)
 	const Solution& best_solution=CachedSchedule::getCachedSolution();
 
 	for(int i=0; i<gt.rules.nInternalActivities; i++){
-		if(best_solution.times[i]!=UNALLOCATED_TIME){
-			assert(best_solution.times[i]>=0 && best_solution.times[i]<gt.rules.nHoursPerWeek);
-			int d=best_solution.times[i]%gt.rules.nDaysPerWeek;
-			int h=best_solution.times[i]/gt.rules.nDaysPerWeek;
+		if(best_solution.time(i)!=UNALLOCATED_TIME){
+			assert(best_solution.time(i)>=0 && best_solution.time(i)<gt.rules.nHoursPerWeek);
+			int d=best_solution.day(i, gt.rules);
+			int h=best_solution.hour(i, gt.rules);
 			
 			int id=gt.rules.internalActivitiesList[i].id;
 
@@ -1272,8 +1272,8 @@ void AdvancedLockUnlockForm::lockAll(QWidget* parent)
 			}
 			
 			if(lockSpace){
-				if(best_solution.rooms[i]!=UNALLOCATED_SPACE && best_solution.rooms[i]!=UNSPECIFIED_ROOM){
-					newSpaceCtr=new ConstraintActivityPreferredRoom(100.0, gt.rules.internalActivitiesList[i].id, gt.rules.internalRoomsList[best_solution.rooms[i]]->name, false);
+				if(best_solution.room(i)!=UNALLOCATED_SPACE && best_solution.room(i)!=UNSPECIFIED_ROOM){
+					newSpaceCtr=new ConstraintActivityPreferredRoom(100.0, gt.rules.internalActivitiesList[i].id, gt.rules.internalRoomsList[best_solution.room(i)]->name, false);
 				}
 			}
 			
@@ -1517,8 +1517,8 @@ void AdvancedLockUnlockForm::unlockAll(QWidget* parent)
 
 	const Solution& best_solution=CachedSchedule::getCachedSolution();
 	for(int i=0; i<gt.rules.nInternalActivities; i++){
-		if(best_solution.times[i]!=UNALLOCATED_TIME){
-			assert(best_solution.times[i]>=0 && best_solution.times[i]<gt.rules.nHoursPerWeek);
+		if(best_solution.time(i)!=UNALLOCATED_TIME){
+			assert(best_solution.time(i)>=0 && best_solution.time(i)<gt.rules.nHoursPerWeek);
 			lockedActivitiesIds.append(gt.rules.internalActivitiesList[i].id);
 		}
 	}
@@ -1759,8 +1759,8 @@ void AdvancedLockUnlockForm::unlockAllWithoutTimetable(QWidget* parent)
 	/*QList<int> lockedActivitiesIds;
 
 	for(int i=0; i<gt.rules.nInternalActivities; i++){
-		if(best_solution.times[i]!=UNALLOCATED_TIME){
-			assert(best_solution.times[i]>=0 && best_solution.times[i]<gt.rules.nHoursPerWeek);
+		if(best_solution.time(i)!=UNALLOCATED_TIME){
+			assert(best_solution.time(i)>=0 && best_solution.time(i)<gt.rules.nHoursPerWeek);
 			lockedActivitiesIds.append(gt.rules.internalActivitiesList[i].id);
 		}
 	}*/
@@ -2054,10 +2054,10 @@ void AdvancedLockUnlockForm::unlockDayWithoutTimetable(QWidget* parent)
 	/*QList<int> lockedActivitiesIds;
 
 	for(int i=0; i<gt.rules.nInternalActivities; i++){
-		if(best_solution.times[i]!=UNALLOCATED_TIME){
-			assert(best_solution.times[i]>=0 && best_solution.times[i]<gt.rules.nHoursPerWeek);
-			int d=best_solution.times[i]%gt.rules.nDaysPerWeek;
-			//int h=best_solution.times[i]/gt.rules.nDaysPerWeek;
+		if(best_solution.time(i)!=UNALLOCATED_TIME){
+			assert(best_solution.time(i)>=0 && best_solution.time(i)<gt.rules.nHoursPerWeek);
+			int d=best_solution.day(i, gt.rules);
+			//int h=best_solution.hour(i, gt.rules);
 			
 			if(d==selectedDayInt){
 				lockedActivitiesIds.append(gt.rules.internalActivitiesList[i].id);
