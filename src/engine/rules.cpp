@@ -44,13 +44,13 @@ using namespace std;
 
 #ifndef FET_COMMAND_LINE
 #include <QProgressDialog>
+
+#include "lockunlock.h"
 #endif
 
 #include <QRegExp>
 
 #include "messageboxes.h"
-
-#include "lockunlock.h"
 
 void Rules::init() //initializes the rules (empty, but with default hours and days)
 {
@@ -3970,9 +3970,10 @@ void Rules::updateActivitiesWhenRemovingStudents(const QSet<StudentsSet*>& stude
 
 void Rules::updateConstraintsAfterRemoval()
 {
+#ifndef FET_COMMAND_LINE
 	bool recomputeTime=false;
 	bool recomputeSpace=false;
-
+#endif
 	QSet<int> existingActivitiesIds;
 	QSet<QString> existingTeachersNames;
 	//QSet<QString> existingStudentsNames;
@@ -4127,7 +4128,9 @@ void Rules::updateConstraintsAfterRemoval()
 			ConstraintActivityPreferredStartingTime* c=(ConstraintActivityPreferredStartingTime*)tc;
 			if(!existingActivitiesIds.contains(c->activityId)){
 				toBeRemovedTime.append(tc);
+#ifndef FET_COMMAND_LINE
 				recomputeTime=true;
+#endif
 			}
 		}
 		else if(tc->type==CONSTRAINT_ACTIVITY_PREFERRED_TIME_SLOTS){
@@ -4322,7 +4325,9 @@ void Rules::updateConstraintsAfterRemoval()
 			ConstraintActivityPreferredRoom* c=(ConstraintActivityPreferredRoom*)sc;
 			if(!existingActivitiesIds.contains(c->activityId) || !existingRoomsNames.contains(c->roomName)){
 				toBeRemovedSpace.append(sc);
+#ifndef FET_COMMAND_LINE
 				recomputeSpace=true;
+#endif
 			}
 		}
 		else if(sc->type==CONSTRAINT_ACTIVITY_PREFERRED_ROOMS){
@@ -4488,7 +4493,8 @@ void Rules::updateConstraintsAfterRemoval()
 		t=removeSpaceConstraints(toBeRemovedSpace);
 		assert(t);
 	}
-	
+
+#ifndef FET_COMMAND_LINE
 	if(recomputeTime){
 		LockUnlock::computeLockedUnlockedActivitiesOnlyTime();
 	}
@@ -4498,6 +4504,7 @@ void Rules::updateConstraintsAfterRemoval()
 	if(recomputeTime || recomputeSpace){
 		LockUnlock::increaseCommunicationSpinBox();
 	}
+#endif
 }
 
 bool Rules::read(QWidget* parent, const QString& fileName, bool commandLine, QString commandLineDirectory) //commandLineDirectory has trailing FILE_SEP

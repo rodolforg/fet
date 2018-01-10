@@ -3,7 +3,6 @@ SOURCES += \
     ../../../src/engine/activity.cpp \
     ../../../src/engine/activitytag.cpp \
     ../../../src/engine/building.cpp \
-    ../../../src/engine/lockunlock.cpp \
     ../../../src/engine/room.cpp \
     ../../../src/engine/rules.cpp \
     ../../../src/engine/solution.cpp \
@@ -42,7 +41,6 @@ HEADERS += \
 	../../../src/engine/activitytag.h \
 	../../../src/engine/room.h \
 	../../../src/engine/building.h \
-	../../../src/engine/lockunlock.h \
 	../../../src/engine/messageboxes.h \
 	\
 	../../../src/interface/longtextmessagebox.h

@@ -15,7 +15,6 @@ SOURCES += \
 	engine/building.cpp \
 	engine/timetable_defs.cpp \
 	engine/generate.cpp \
-	engine/lockunlock.cpp \
 	engine/randomknuth.cpp \
 	engine/messageboxes.cpp \
 	engine/export.cpp \
@@ -51,7 +50,6 @@ HEADERS += \
 	engine/room.h \
 	engine/building.h \
 	engine/generate.h \
-	engine/lockunlock.h \
 	engine/matrix.h \
 	engine/randomknuth.h \
 	engine/messageboxes.h \
