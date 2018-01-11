@@ -962,36 +962,22 @@ void TimetableViewTeachersTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 	QStringList added;
 	QStringList removed;
 	if(addedT>0){
-		if(addedT==1)
-			added << QCoreApplication::translate("TimetableViewForm", "Added 1 locking time constraint.", "constraint is singular (only 1 constraint)");
-		else
-			added << QCoreApplication::translate("TimetableViewForm", "Added %1 locking time constraints.", "%1 is >= 2, so constraints is plural").arg(addedT);
+		added << QCoreApplication::translate("TimetableViewForm", "Added %n locking time constraint(s).", "%n is the number of constraints", addedT);
 	}
 	if(addedS>0){
-		if(addedS==1)
-			added << QCoreApplication::translate("TimetableViewForm", "Added 1 locking space constraint.", "constraint is singular (only 1 constraint)");
-		else
-			added << QCoreApplication::translate("TimetableViewForm", "Added %1 locking space constraints.", "%1 is >= 2, so constraints is plural").arg(addedS);
+		added << QCoreApplication::translate("TimetableViewForm", "Added %n locking space constraint(s).", "%n is the number of constraints", addedS);
 	}
 	if(unlockedT>0){
-		if(unlockedT==1)
-			removed << QCoreApplication::translate("TimetableViewForm", "Removed 1 locking time constraint.", "constraint is singular (only 1 constraint)");
-		else
-			removed << QCoreApplication::translate("TimetableViewForm", "Removed %1 locking time constraints.", "%1 is >= 2, so constraints is plural").arg(unlockedT);
+		removed << QCoreApplication::translate("TimetableViewForm", "Removed %n locking time constraint(s).", "%n is the number of constraints", unlockedT);
 	}
 	if(unlockedS>0){
-		if(unlockedS==1)
-			removed << QCoreApplication::translate("TimetableViewForm", "Removed 1 locking space constraint.", "constraint is singular (only 1 constraint)");
-		else
-			removed << QCoreApplication::translate("TimetableViewForm", "Removed %1 locking space constraints.", "%1 is >= 2, so constraints is plural").arg(unlockedS);
+		removed << QCoreApplication::translate("TimetableViewForm", "Removed %n locking space constraint(s).", "%n is the number of constraints", unlockedS);
 	}
-	QString ad=added.join("\n");
-	QString re=removed.join("\n");
 	QStringList all;
-	if(!ad.isEmpty())
-		all<<ad;
-	if(!re.isEmpty())
-		all<<re;
+	if(!added.isEmpty())
+		all<<added.join("\n");
+	if(!removed.isEmpty())
+		all<<removed.join("\n");
 	QString s=all.join("\n\n");
 	if(s.isEmpty())
 		s=QCoreApplication::translate("TimetableViewForm", "No locking constraints added or removed.");
