@@ -1683,7 +1683,10 @@ Implement constraint "Activity needs several rooms". (I am not 100% sure if it i
 single activity or if it is also needed to get only some rooms from (a larger) selection. So maybe all current "roomS" constraints "just" need an
 option "number of used rooms from the selection". Currently it is always 1. It is needed to increase this number.)
 
-(Also suggested by Anton Anthofer, and dasa on the forum.)
+Also suggested by Anton Anthofer, and dasa on the forum.
+
+Also suggested by sln_rj, on the forum: I request the developers to kindly update the FET software with the provision to add two rooms for a single
+activity. It is utmost important for practical classes where more numbers of rooms are required together.
 
 115---------------------------------------------------------
 From nouvakis:
@@ -5662,3 +5665,12 @@ Maybe leaving a placeholder there, and making use of FET_VERSION and a
 l10n version of date.
 
 That will reduce .ts diff a lot and reduces translator efforts ;)
+
+344---------------------------------------------------------
+From V Paul C Charlesraj (on forum):
+
+Minimum number of days in a week for all students.
+
+Liviu:
+
+Or for a students set. This is very difficult to implement perfectly (to take care of combinations with the other constraints).
