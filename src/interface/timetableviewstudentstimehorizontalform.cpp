@@ -1212,29 +1212,65 @@ void TimetableViewStudentsTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 
 	QStringList added;
 	QStringList removed;
-	if(addedT>0){
-		if(addedT==1)
-			added << QCoreApplication::translate("TimetableViewForm", "Added 1 locking time constraint.", "constraint is singular (only 1 constraint)");
-		else
-			added << QCoreApplication::translate("TimetableViewForm", "Added %1 locking time constraints.", "%1 is >= 2, so constraints is plural").arg(addedT);
+	if(FET_LANGUAGE=="en_US"){
+		if(addedT>0){
+			if(addedT==1)
+				added << QString("Added 1 locking time constraint.");
+			else
+				added << QString("Added %1 locking time constraints.").arg(addedT);
+		}
+		if(addedS>0){
+			if(addedS==1)
+				added << QString("Added 1 locking space constraint.");
+			else
+				added << QString("Added %1 locking space constraints.").arg(addedS);
+		}
+		if(unlockedT>0){
+			if(unlockedT==1)
+				removed << QString("Removed 1 locking time constraint.");
+			else
+				removed << QString("Removed %1 locking time constraints.").arg(unlockedT);
+		}
+		if(unlockedS>0){
+			if(unlockedS==1)
+				removed << QString("Removed 1 locking space constraint.");
+			else
+				removed << QString("Removed %1 locking space constraints.").arg(unlockedS);
+		}
 	}
-	if(addedS>0){
-		if(addedS==1)
-			added << QCoreApplication::translate("TimetableViewForm", "Added 1 locking space constraint.", "constraint is singular (only 1 constraint)");
-		else
-			added << QCoreApplication::translate("TimetableViewForm", "Added %1 locking space constraints.", "%1 is >= 2, so constraints is plural").arg(addedS);
-	}
-	if(unlockedT>0){
-		if(unlockedT==1)
-			removed << QCoreApplication::translate("TimetableViewForm", "Removed 1 locking time constraint.", "constraint is singular (only 1 constraint)");
-		else
-			removed << QCoreApplication::translate("TimetableViewForm", "Removed %1 locking time constraints.", "%1 is >= 2, so constraints is plural").arg(unlockedT);
-	}
-	if(unlockedS>0){
-		if(unlockedS==1)
-			removed << QCoreApplication::translate("TimetableViewForm", "Removed 1 locking space constraint.", "constraint is singular (only 1 constraint)");
-		else
-			removed << QCoreApplication::translate("TimetableViewForm", "Removed %1 locking space constraints.", "%1 is >= 2, so constraints is plural").arg(unlockedS);
+	else{
+		if(addedT>0){
+			/*: See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field.
+			Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section "Handling Plurals".
+			You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts
+			(open these files with Qt Linguist and see the translation of this field).
+			*/
+			added << QCoreApplication::translate("TimetableViewForm", "Added %n locking time constraint(s).", "", addedT);
+		}
+		if(addedS>0){
+			/*: See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field.
+			Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section "Handling Plurals".
+			You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts
+			(open these files with Qt Linguist and see the translation of this field).
+			*/
+			added << QCoreApplication::translate("TimetableViewForm", "Added %n locking space constraint(s).", "", addedS);
+		}
+		if(unlockedT>0){
+			/*: See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field.
+			Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section "Handling Plurals".
+			You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts
+			(open these files with Qt Linguist and see the translation of this field).
+			*/
+			removed << QCoreApplication::translate("TimetableViewForm", "Removed %n locking time constraint(s).", "", unlockedT);
+		}
+		if(unlockedS>0){
+			/*: See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field.
+			Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section "Handling Plurals".
+			You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts
+			(open these files with Qt Linguist and see the translation of this field).
+			*/
+			removed << QCoreApplication::translate("TimetableViewForm", "Removed %n locking space constraint(s).", "", unlockedS);
+		}
 	}
 	QString ad=added.join("\n");
 	QString re=removed.join("\n");
