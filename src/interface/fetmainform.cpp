@@ -244,6 +244,7 @@ using namespace std;
 #include <QDesktopServices>
 #include <QUrl>
 #include <QApplication>
+#include <QDesktopWidget>
 #include <QMenu>
 #include <QCursor>
 #include <QSettings>
@@ -520,10 +521,23 @@ FetMainForm::FetMainForm()
 
 	windowSettingsRect=settings.value("FetMainForm/geometry", QRect(0,0,0,0)).toRect();
 	if(!windowSettingsRect.isValid()){
-		forceCenterWidgetOnScreen(this);
+		bool ok=false;
+		for(int i=0; i<QApplication::desktop()->screenCount(); i++){
+			if(QApplication::desktop()->availableGeometry(i).intersects(windowSettingsRect)){
+				ok=true;
+				break;
+			}
+		}
+	
+		if(ok){
+			this->setGeometry(windowSettingsRect);
+		}
+		else{
+			forceCenterWidgetOnScreen(this);
+		}
 	}
 	else{
-		this->setGeometry(windowSettingsRect);
+		forceCenterWidgetOnScreen(this);
 	}
 
 	//new data
@@ -718,6 +732,7 @@ void FetMainForm::populateLanguagesMap(QMap<QString, QString>& languagesMap)
 	languagesMap.insert("zh_TW", tr("Chinese Traditional"));
 	languagesMap.insert("eu", tr("Basque"));
 	languagesMap.insert("cs", tr("Czech"));
+	languagesMap.insert("ja", tr("Japanese"));
 }
 
 bool FetMainForm::isValidFilepathForSaving(const QString &filepath)

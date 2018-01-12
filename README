@@ -1,4 +1,4 @@
-This is FET version 5.34.3
+This is FET version 5.35.0
 
 
 Program description:
@@ -255,8 +255,8 @@ Running FET:
 			y is integer (seconds) (default 2000000000, which is practically infinite).
 			z is integer from 0 to 7 and represents the detail level for the generated HTML timetables
 				(default 2, larger values have more details/facilities and larger file sizes).
-			t is one of ar, ca, cs, da, de, el, en_GB, en_US, es, eu, fa, fr, gl, he, hu, id, it, lt, mk, ms, nl, pl, pt_BR, ro, ru, si, sk, sq, sr, tr, uk,
-				uz, vi, zh_CN, zh_TW (default en_US).
+			t is one of ar, ca, cs, da, de, el, en_GB, en_US, es, eu, fa, fr, gl, he, hu, id, it, ja, lt, mk, ms, nl, pl, pt_BR, ro, ru, si, sk, sq, sr, tr,
+				uk, uz, vi, zh_CN, zh_TW (default en_US).
 			wt1 to wt16 are either true or false and represent whether you want the corresponding timetables to be written on the disk (default true).
 			a is either true or false and represets if you want activity tags to be present in the final HTML timetables (default true).
 			u is either "true" or "false" and represents if you want -x- (for true) or --- (for false) in the generated timetables for the
@@ -397,4 +397,4 @@ Feed-back / help:
 	for inclusion into examples, and also to report possible bugs and suggestions. See the FET homepage for contact information.
 
 
-Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr.
+Copyright (C) 2002-2018 Liviu Lalescu, Volker Dirr.

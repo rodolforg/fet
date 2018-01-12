@@ -2002,7 +2002,7 @@ Versions 5.33.0 - 5.33.3
 	- Updated the Spanish translation, by Emiliano Llano Díaz.
 	- Code cleanup.
 ---------------------------------------------------------------------------------
-Versions 5.34.0 - 5.34.v
+Versions 5.34.0 - 5.34.3
 - Version 5.34.0
 	- Improved the activity planning dialog, by Volker Dirr. Now the user can swap the teachers of one or more activities.
 	- Added the possibility of exporting the data and the timetable as CSV (comma separated values) files from the command line version of FET
@@ -2014,3 +2014,12 @@ Versions 5.34.0 - 5.34.v
 	- Corrected the style/appearance of precompiled FET for Windows 7 (added a missing DLL).
 - Version 5.34.3
 	- Minor corrections in the Romanian translation, by Liviu Lalescu.
+---------------------------------------------------------------------------------
+Versions 5.35.0 - 5.35.v
+- Version 5.35.0
+	- Bug fix: when unplugging a display, the dialogs which were previously shown on this display were not shown correctly on the remaining active display(s)
+	(instead, they were invisible). Reported by kdrosos and sigit_yuwono.
+	- Minor bugs fixed (reported by Vangelis Karafillidis).
+	- Added a partial Japanese translation, by Taro Tada.
+	- Added a new partial Greek translation, by Vangelis Karafillidis.
+	- Updated the Czech translation, by Pavel Fric.

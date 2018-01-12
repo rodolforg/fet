@@ -182,8 +182,8 @@ static void usage(QTextStream* out, const QString& error)
 		"y is integer (seconds) (default 2000000000, which is practically infinite).\n"
 		"z is integer from 0 to 7 and represents the detail level for the generated HTML timetables "
 		"(default 2, larger values have more details/facilities and larger file sizes).\n"
-		"t is one of ar, ca, cs, da, de, el, en_GB, en_US, es, eu, fa, fr, gl, he, hu, id, it, lt, mk, ms, nl, pl, pt_BR, ro, ru, si, sk, sq, sr, tr, uk, "
-		"uz, vi, zh_CN, zh_TW (default en_US).\n"
+		"t is one of ar, ca, cs, da, de, el, en_GB, en_US, es, eu, fa, fr, gl, he, hu, id, it, ja, lt, mk, ms, nl, pl, pt_BR, ro, ru, si, sk, sq, sr, tr, "
+		"uk, uz, vi, zh_CN, zh_TW (default en_US).\n"
 		"wt1 to wt15 are either true or false and represent whether you want the corresponding timetables to be written on the disk (default true).\n"
 		"a is either true or false and represets if you want activity tags to be present in the final HTML timetables (default true).\n"
 		"u is either true or false and represents if you want -x- (for true) or --- (for false) in the generated timetables for the "
@@ -448,6 +448,7 @@ static void initLanguagesSet()
 	languagesSet.insert("zh_TW");
 	languagesSet.insert("eu");
 	languagesSet.insert("cs");
+	languagesSet.insert("ja");
 }
 
 void setLanguage(QWidget* parent)
@@ -1077,12 +1078,12 @@ int main(int argc, char **argv)
 			//QString qv=qVersion();
 			out<<"FET version "<<qPrintable(FET_VERSION)<<endl;
 			out<<"Free timetabling software, licensed under the GNU Affero General Public License version 3 or later"<<endl;
-			out<<"Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr"<<endl;
+			out<<"Copyright (C) 2002-2018 Liviu Lalescu, Volker Dirr"<<endl;
 			out<<"Homepage: https://lalescu.ro/liviu/fet/"<<endl;
 			//out<<" (Using Qt version "<<qPrintable(qv)<<")"<<endl;
 			cout<<"FET version "<<qPrintable(FET_VERSION)<<endl;
 			cout<<"Free timetabling software, licensed under the GNU Affero General Public License version 3 or later"<<endl;
-			cout<<"Copyright (C) 2002-2017 Liviu Lalescu, Volker Dirr"<<endl;
+			cout<<"Copyright (C) 2002-2018 Liviu Lalescu, Volker Dirr"<<endl;
 			cout<<"Homepage: https://lalescu.ro/liviu/fet/"<<endl;
 			//cout<<" (Using Qt version "<<qPrintable(qv)<<")"<<endl;
 

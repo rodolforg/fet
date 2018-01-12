@@ -1656,24 +1656,7 @@ Possibility (check box, default checked) of safe saving for File/Save and Save a
 
 Safe saving means: create a temporary file (make sure it is truncated), write the data to it, remove the original file and rename the temporary file to the original file.
 
-111---------------------------------------------------------
-From kdrosos (bug report on forum):
-
-When working with dual screen, i.e. one extra screen is connected to the main computer, and when choosing the "A teacher's not available time" in the "Teachers" tab under the "Time" tab I had moved the pop up window in the second display.
-
-I chose the teacher that I wanted to work with, and the new window that I specify the free time of the teacher was kept in the main display.
-
-I finished my work, without re-moving all windows to the main display.
-
-After a while, and when I had only one display, I tried to chose again the "A teacher's not available time" but the pop up window did not appeared. 
-
-I connected the second display, chose again the  "A teacher's not available time" and the window appeared in the second display. 
-
-The window in which the free time for a teacher is specified, which I had it in the main display, could be opened from choosing "ALL" (under the "Time" tab) and selecting the desired teacher. 
-
-Thus, I imagine that there might be a bug in the handling of multiple screens. Maybe some preferences of the FET do not refresh when changing from dual screen to single screen display.
-
-Liviu: Maybe a solution would be in restoring geometry, to test if the geometry would be on an invalid screen, and correct this (add a better test than "if(rect.isValid())" in function "restoreFETDialogGeometry(...)" in file centerwidgetonscreen.cpp).
+111-------DONE since FET-5.35.0-(21 December 2017)----------
 
 112---------------------------------------------------------
 From murad:
@@ -1683,7 +1666,7 @@ Create please, in QComboBox, auto-complete. With a large number of students and 
 113---------------------------------------------------------
 From kdrosos:
 
-In FET there is "School's name", where the school' s name appears in the final .html files.
+In FET there is "School's name", where the school's name appears in the final .html files.
 
 Maybe the text "School's name" can be parametric and thus to allow changing to "Department's name" or "Institution's name" etc.
 
@@ -5660,3 +5643,22 @@ From mohammed (on forum):
 Nous voulons ajouter la fonction de sauvegarde automatique du programme, en cas de travail, l'alimentation s'éteint
 
 (We would like to add the function of automatic save of the program, in case of work, the power goes off).
+
+342---------------------------------------------------------
+From Vangelis Karafillidis:
+
+All students must respect the maximum number of span (in hours) per day -> better write:
+
+All students must respect the maximum span (in number of hours) per day.
+
+Circular -> better write: Circularly.
+
+343---------------------------------------------------------
+From rodolforg:
+
+What do you think about leaving the version number and date out of
+HelpAboutForm_template.ui ?
+Maybe leaving a placeholder there, and making use of FET_VERSION and a
+l10n version of date.
+
+That will reduce .ts diff a lot and reduces translator efforts ;)

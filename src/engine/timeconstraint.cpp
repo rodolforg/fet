@@ -5197,10 +5197,10 @@ double ConstraintBreakTimes::fitness(Solution& c, const Rules& r, QList<double>&
 				nbroken++;
 
 				if(conflictsString!=NULL){
-					QString s=tr("Time constraint break not respected for activity with id %1, on day %2, hours %3")
+					QString s=tr("Time constraint break not respected for activity with id %1, on day %2, hour %3")
 						.arg(r.internalActivitiesList[i].id)
 						.arg(r.daysOfTheWeek[dayact])
-						.arg(r.daysOfTheWeek[houract]);
+						.arg(r.hoursOfTheDay[houract]);
 					s+=". ";
 					s+=tr("This increases the conflicts total by %1").arg(CustomFETString::number(weightPercentage/100));
 					
