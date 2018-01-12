@@ -114,5 +114,7 @@ QString Teacher::getDetailedDescriptionWithConstraints(Rules& r)
 
 int teachersAscending(const Teacher* t1, const Teacher* t2)
 {
-	return t1->name < t2->name;
+//	return t1->name < t2->name;
+	//by rodolforg
+	return t1->name.localeAwareCompare(t2->name)<0;
 }

@@ -121,5 +121,7 @@ QString ActivityTag::getDetailedDescriptionWithConstraints(Rules& r)
 
 int activityTagsAscending(const ActivityTag* st1, const ActivityTag* st2)
 {
-	return st1->name < st2->name;
+//	return st1->name < st2->name;
+	//by rodolforg
+	return st1->name.localeAwareCompare(st2->name)<0;
 }
