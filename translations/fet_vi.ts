@@ -30326,303 +30326,303 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
 <context>
     <name>Export</name>
     <message>
-        <location filename="../src/engine/export.cpp" line="212"/>
-        <location filename="../src/engine/export.cpp" line="331"/>
+        <location filename="../src/engine/export.cpp" line="213"/>
+        <location filename="../src/engine/export.cpp" line="332"/>
         <source>CSV files were exported to directory %1.</source>
         <translation>Xuất tệp CSV tới thư mục %1.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="214"/>
-        <location filename="../src/engine/export.cpp" line="333"/>
+        <location filename="../src/engine/export.cpp" line="215"/>
+        <location filename="../src/engine/export.cpp" line="334"/>
         <source>Exported complete</source>
         <translation>Xuất tệp hoàn thành</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="216"/>
-        <location filename="../src/engine/export.cpp" line="335"/>
+        <location filename="../src/engine/export.cpp" line="217"/>
+        <location filename="../src/engine/export.cpp" line="336"/>
         <source>Export incomplete</source>
         <translation>Xuất tệp chưa hoàn thành</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="337"/>
+        <location filename="../src/engine/export.cpp" line="338"/>
         <source>FET - export comment</source>
         <comment>The comment of the exporting operation</comment>
         <translation type="unfinished">Xuất ra ghi chú</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="426"/>
+        <location filename="../src/engine/export.cpp" line="427"/>
         <source>no textquote</source>
         <comment>Please use at least 2 characters for the translation of this field, so that the program works OK</comment>
         <translation>không kí tự trích dẫn</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="443"/>
+        <location filename="../src/engine/export.cpp" line="444"/>
         <source>FET question</source>
         <translation>Câu hỏi</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="451"/>
+        <location filename="../src/engine/export.cpp" line="452"/>
         <source>Please specify the separator between fields:</source>
         <translation>Hãy chỉ định kí tự phân cách giữa các trường:</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="458"/>
+        <location filename="../src/engine/export.cpp" line="459"/>
         <source>Use field separator:</source>
         <translation>Dùng kí tự phân cách trường:</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="465"/>
+        <location filename="../src/engine/export.cpp" line="466"/>
         <source>Please specify the text quote of text fields:</source>
         <translation>Hãy chỉ định kí tự trích dẫn trong các trường kí tự:</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="472"/>
+        <location filename="../src/engine/export.cpp" line="473"/>
         <source>Use textquote:</source>
         <translation>Dùng kí tự trích dẫn:</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="479"/>
+        <location filename="../src/engine/export.cpp" line="480"/>
         <source>Please specify the contents of the first line:</source>
         <translation>Hãy nhập nội dung của dòng đầu tiên:</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="481"/>
+        <location filename="../src/engine/export.cpp" line="482"/>
         <source>The first line is the heading.</source>
         <translation>Dòng đầu tiên là tiêu đề.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="488"/>
+        <location filename="../src/engine/export.cpp" line="489"/>
         <source>OK</source>
         <translation>Đồng ý</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="489"/>
+        <location filename="../src/engine/export.cpp" line="490"/>
         <source>Cancel</source>
         <translation>Thoát</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="577"/>
-        <location filename="../src/engine/export.cpp" line="628"/>
-        <location filename="../src/engine/export.cpp" line="688"/>
-        <location filename="../src/engine/export.cpp" line="737"/>
-        <location filename="../src/engine/export.cpp" line="788"/>
-        <location filename="../src/engine/export.cpp" line="869"/>
-        <location filename="../src/engine/export.cpp" line="1157"/>
-        <location filename="../src/engine/export.cpp" line="1241"/>
+        <location filename="../src/engine/export.cpp" line="578"/>
+        <location filename="../src/engine/export.cpp" line="629"/>
+        <location filename="../src/engine/export.cpp" line="689"/>
+        <location filename="../src/engine/export.cpp" line="738"/>
+        <location filename="../src/engine/export.cpp" line="789"/>
+        <location filename="../src/engine/export.cpp" line="870"/>
+        <location filename="../src/engine/export.cpp" line="1158"/>
+        <location filename="../src/engine/export.cpp" line="1242"/>
         <source>FET critical. Cannot open file %1 for writing. Please check your disk&apos;s free space. Saving of %1 aborted.</source>
         <translation>Chương trình gặp lỗi nghiêm trọng. Không thể ghi tệp %1. Hãy kiểm tra lại dung lượng đĩa. Lưu tệp %1 bị hủy bỏ.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="590"/>
-        <location filename="../src/engine/export.cpp" line="750"/>
-        <location filename="../src/engine/export.cpp" line="809"/>
-        <location filename="../src/engine/export.cpp" line="817"/>
-        <location filename="../src/engine/export.cpp" line="827"/>
+        <location filename="../src/engine/export.cpp" line="591"/>
+        <location filename="../src/engine/export.cpp" line="751"/>
+        <location filename="../src/engine/export.cpp" line="810"/>
+        <location filename="../src/engine/export.cpp" line="818"/>
+        <location filename="../src/engine/export.cpp" line="828"/>
         <source>Warning! Import of activities will fail, because %1 includes set separator +.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="593"/>
+        <location filename="../src/engine/export.cpp" line="594"/>
         <source>%1 activity tags exported.</source>
         <translation>%1 thông tin bổ trợ đã được xuất ra.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="595"/>
-        <location filename="../src/engine/export.cpp" line="655"/>
-        <location filename="../src/engine/export.cpp" line="704"/>
-        <location filename="../src/engine/export.cpp" line="755"/>
-        <location filename="../src/engine/export.cpp" line="836"/>
-        <location filename="../src/engine/export.cpp" line="1124"/>
-        <location filename="../src/engine/export.cpp" line="1208"/>
-        <location filename="../src/engine/export.cpp" line="1324"/>
+        <location filename="../src/engine/export.cpp" line="596"/>
+        <location filename="../src/engine/export.cpp" line="656"/>
+        <location filename="../src/engine/export.cpp" line="705"/>
+        <location filename="../src/engine/export.cpp" line="756"/>
+        <location filename="../src/engine/export.cpp" line="837"/>
+        <location filename="../src/engine/export.cpp" line="1125"/>
+        <location filename="../src/engine/export.cpp" line="1209"/>
+        <location filename="../src/engine/export.cpp" line="1325"/>
         <source>FET critical. Writing %1 gave error code %2, which means saving is compromised. Please check your disk&apos;s free space.</source>
         <translation>Chương trình gặp lỗi nghiêm trọng. Không thể ghi tệp %1 vì có lỗi %2. Hãy kiểm tra lại dung lượng đĩa.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="649"/>
+        <location filename="../src/engine/export.cpp" line="650"/>
         <source>%1 rooms (with buildings) exported.</source>
         <translation>%1 lớp học (và khối nhà) đã được xuất ra.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="702"/>
+        <location filename="../src/engine/export.cpp" line="703"/>
         <source>%1 subjects exported.</source>
         <translation>%1 môn học đã được xuất ra.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="753"/>
+        <location filename="../src/engine/export.cpp" line="754"/>
         <source>%1 teachers exported.</source>
         <translation>%1 giáo viên đã được xuất ra.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="832"/>
+        <location filename="../src/engine/export.cpp" line="833"/>
         <source>%1 years exported.</source>
         <translation>%1 khối đã được xuất ra.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="833"/>
+        <location filename="../src/engine/export.cpp" line="834"/>
         <source>%1 groups exported.</source>
         <translation>%1 nhóm đã được xuất ra.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="834"/>
+        <location filename="../src/engine/export.cpp" line="835"/>
         <source>%1 subgroups exported.</source>
         <translation>%1 nhóm con đã được xuất ra.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="936"/>
+        <location filename="../src/engine/export.cpp" line="937"/>
         <source>was skipped, because it refers not to a whole larger container activity</source>
         <translation>bị bỏ qua vì không tham chiếu tới một tiết giảng tổng hợp bao hàm</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="945"/>
-        <location filename="../src/engine/export.cpp" line="949"/>
+        <location filename="../src/engine/export.cpp" line="946"/>
+        <location filename="../src/engine/export.cpp" line="950"/>
         <source>was skipped, because there exists another constraint of this type with larger weight percentage, referring to the same activities</source>
         <translation>bị bỏ qua vì tồn tại một RB khác cùng loại với trọng số lớn hơn tham chiếu tới cùng các tiết giảng</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="955"/>
-        <location filename="../src/engine/export.cpp" line="960"/>
+        <location filename="../src/engine/export.cpp" line="956"/>
+        <location filename="../src/engine/export.cpp" line="961"/>
         <source>was skipped, because there exists another constraint of this type with same weight percentage and higher number of min days, referring to the same activities</source>
         <translation>bị bỏ qua vì tồn tại một RB khác cùng loại với cùng trọng số với số ngày tối thiểu lớn hơn, tham chiếu tới cùng các tiết giảng</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="966"/>
-        <location filename="../src/engine/export.cpp" line="972"/>
+        <location filename="../src/engine/export.cpp" line="967"/>
+        <location filename="../src/engine/export.cpp" line="973"/>
         <source>was skipped, because there exists another constraint of this type with same weight percentage and same number of min days and consecutive if same day true, referring to the same activities</source>
         <translation>bị bỏ qua vì tồn tại một RB khác cùng loại với cùng trọng số, cùng số ngày tối thiểu và xếp liền nếu xuất hiện cùng ngày, tham chiếu tới cùng các tiết giảng</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1012"/>
+        <location filename="../src/engine/export.cpp" line="1013"/>
         <source>different active flag</source>
         <translation>cờ kích hoạt khác nhau</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1022"/>
+        <location filename="../src/engine/export.cpp" line="1023"/>
         <source>Activity with id %1 has disabled active flag but it is exported.</source>
         <translation>Tiết giảng với id = %1 đã được xuất ra dù cờ kích hoạt đã bị vô hiệu hóa.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1024"/>
+        <location filename="../src/engine/export.cpp" line="1025"/>
         <source>Subactivities with activity group id %1 have disabled active flag but they are exported.</source>
         <translation>Các tiết giảng con với nhóm tiết giảng id %1 đã được xuất ra dù cờ kích hoạt đã bị vô hiệu hóa.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1122"/>
+        <location filename="../src/engine/export.cpp" line="1123"/>
         <source>%1 activities exported.</source>
         <translation>%1 tiết giảng đã được xuất ra.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="651"/>
+        <location filename="../src/engine/export.cpp" line="652"/>
         <source>Warning! Only %1 of %2 building names are exported, because %3 buildings don&apos;t contain any room.</source>
         <translation>Cảnh báo: Chỉ %1 trong số %2 khối nhà được xuất ra vì %3 khối nhà không có phòng học nào.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="448"/>
+        <location filename="../src/engine/export.cpp" line="449"/>
         <source>Please keep the default settings.
 Import of data will be easier with these settings.</source>
         <translation>Hãy giữ cấu hình mặc định. Việc nhập dữ liệu sẽ tiện lợi hơn.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="482"/>
+        <location filename="../src/engine/export.cpp" line="483"/>
         <source>The first line contains data. Don&apos;t export heading.</source>
         <translation>Dòng đầu tiên chứa dữ liệu. Không xuất tiêu đề.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="195"/>
+        <location filename="../src/engine/export.cpp" line="196"/>
         <source>Export aborted</source>
         <translation>Xuất dữ liệu bị hủy bỏ</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="298"/>
+        <location filename="../src/engine/export.cpp" line="299"/>
         <source>Successfully finished timetable:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="311"/>
+        <location filename="../src/engine/export.cpp" line="312"/>
         <source>Highest stage timetable:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="321"/>
+        <location filename="../src/engine/export.cpp" line="322"/>
         <source>Current stage timetable:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1206"/>
+        <location filename="../src/engine/export.cpp" line="1207"/>
         <source>%1 active activities statistics exported.</source>
         <translation>thống kê của %1 tiết giảng đang kích hoạt đã được xuất ra.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1319"/>
+        <location filename="../src/engine/export.cpp" line="1320"/>
         <source>%1 scheduled activities exported.</source>
         <translation>%1 tiết giảng xếp xong TKB đã được xuất ra.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1321"/>
+        <location filename="../src/engine/export.cpp" line="1322"/>
         <source>0 scheduled activities exported, because no timetable was generated.</source>
         <translation>Không tiết giảng nào được xuất ra vì không tạo được TKB nào cả.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="936"/>
-        <location filename="../src/engine/export.cpp" line="945"/>
-        <location filename="../src/engine/export.cpp" line="949"/>
-        <location filename="../src/engine/export.cpp" line="955"/>
-        <location filename="../src/engine/export.cpp" line="960"/>
-        <location filename="../src/engine/export.cpp" line="966"/>
-        <location filename="../src/engine/export.cpp" line="972"/>
+        <location filename="../src/engine/export.cpp" line="937"/>
+        <location filename="../src/engine/export.cpp" line="946"/>
+        <location filename="../src/engine/export.cpp" line="950"/>
+        <location filename="../src/engine/export.cpp" line="956"/>
+        <location filename="../src/engine/export.cpp" line="961"/>
+        <location filename="../src/engine/export.cpp" line="967"/>
+        <location filename="../src/engine/export.cpp" line="973"/>
         <source>Note: Constraint</source>
         <translation>Lưu ý: RB</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="120"/>
-        <location filename="../src/engine/export.cpp" line="1104"/>
-        <location filename="../src/engine/export.cpp" line="1115"/>
+        <location filename="../src/engine/export.cpp" line="121"/>
+        <location filename="../src/engine/export.cpp" line="1105"/>
+        <location filename="../src/engine/export.cpp" line="1116"/>
         <source>FET warning</source>
         <translation>Cảnh báo</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1016"/>
+        <location filename="../src/engine/export.cpp" line="1017"/>
         <source>Subactivities with activity group id %1 are different between themselves (they were separately edited), so the export will not be very accurate. The fields which are different will be considered those of the representative subactivity. Fields which were different are: %2</source>
         <translation>Các tiết giảng con với nhóm tiết giảng id %1 bị nhập liệu riêng biệt. Vì thế, dữ liệu xuất ra sẽ không chính xác. Các trường khác nhau sẽ được coi như là thông tin đại diện của tiết giảng con. Các trường khác nhau là: %2</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1106"/>
-        <location filename="../src/engine/export.cpp" line="1116"/>
+        <location filename="../src/engine/export.cpp" line="1107"/>
+        <location filename="../src/engine/export.cpp" line="1117"/>
         <source>There are subactivities which were modified separately - so the components had different values for subject, activity tags, teachers, students or number of students from the representative subactivity. The export was done, but it is not very accurate.</source>
         <translation>Có những tiết giảng con được sửa đổi riêng biệt. Vì thế, các thành phần có giá trị môn học, thông tin bổ trợ, giáo viên, lớp học và số học sinh khác nhau đại diện cho tiết giảng con. Việc xuất dữ liệu đã xong nhưng có thể không chính xác.</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1000"/>
+        <location filename="../src/engine/export.cpp" line="1001"/>
         <source>different teachers</source>
         <translation>giáo viên khác nhau</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1002"/>
+        <location filename="../src/engine/export.cpp" line="1003"/>
         <source>different subject</source>
         <translation>môn học khác nhau</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1006"/>
+        <location filename="../src/engine/export.cpp" line="1007"/>
         <source>different students</source>
         <translation>lớp học khác nhau</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1010"/>
+        <location filename="../src/engine/export.cpp" line="1011"/>
         <source>different number of students</source>
         <translation>số lượng học sinh khác nhau</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1004"/>
+        <location filename="../src/engine/export.cpp" line="1005"/>
         <source>different activity tags</source>
         <translation>thông tin bổ trợ khác nhau</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1008"/>
+        <location filename="../src/engine/export.cpp" line="1009"/>
         <source>different boolean variable &apos;must compute n total students&apos;</source>
         <translation>biến logic dùng để tính cho tổng số học sinh</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="122"/>
+        <location filename="../src/engine/export.cpp" line="123"/>
         <source>File %1 exists - are you sure you want to overwrite existing file?</source>
         <translation>Tệp %1 tồn tại - Bạn có chắc chắn ghi đè tệp này?</translation>
     </message>
@@ -36113,7 +36113,7 @@ Please modify your data correspondingly and try again</source>
         <translation>Hướng dẫn sử dụng trực tuyến</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="976"/>
+        <location filename="../src/interface/helpaboutform_template.ui" line="978"/>
         <source>Close</source>
         <translation>Thoát</translation>
     </message>
@@ -36940,6 +36940,8 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Taro Tada - Japanese translation.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;V Paul C Charlesraj - suggestion.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ChrisW67 - idea and code, found on qtcentre.org.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
@@ -39428,13 +39430,13 @@ Please stop simulation before this</source>
 <context>
     <name>LastWarningsDialogE</name>
     <message>
-        <location filename="../src/engine/export.cpp" line="1334"/>
+        <location filename="../src/engine/export.cpp" line="1335"/>
         <source>FET - export comment</source>
         <comment>The comment of the exporting operation</comment>
         <translation>Xuất ra ghi chú</translation>
     </message>
     <message>
-        <location filename="../src/engine/export.cpp" line="1345"/>
+        <location filename="../src/engine/export.cpp" line="1346"/>
         <source>&amp;Ok</source>
         <translation>&amp;Đồng ý</translation>
     </message>
@@ -49356,313 +49358,313 @@ not added - must be a duplicate</source>
 <context>
     <name>SplitYearForm</name>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="131"/>
+        <location filename="../src/interface/splityearform.cpp" line="130"/>
         <source>Splitting year: %1</source>
         <translation>Khối được chia tách:%1</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="203"/>
-        <location filename="../src/interface/splityearform.cpp" line="237"/>
-        <location filename="../src/interface/splityearform.cpp" line="382"/>
-        <location filename="../src/interface/splityearform.cpp" line="390"/>
-        <location filename="../src/interface/splityearform.cpp" line="464"/>
-        <location filename="../src/interface/splityearform.cpp" line="468"/>
-        <location filename="../src/interface/splityearform.cpp" line="495"/>
-        <location filename="../src/interface/splityearform.cpp" line="515"/>
-        <location filename="../src/interface/splityearform.cpp" line="735"/>
+        <location filename="../src/interface/splityearform.cpp" line="202"/>
+        <location filename="../src/interface/splityearform.cpp" line="236"/>
+        <location filename="../src/interface/splityearform.cpp" line="381"/>
+        <location filename="../src/interface/splityearform.cpp" line="389"/>
+        <location filename="../src/interface/splityearform.cpp" line="463"/>
+        <location filename="../src/interface/splityearform.cpp" line="467"/>
+        <location filename="../src/interface/splityearform.cpp" line="494"/>
+        <location filename="../src/interface/splityearform.cpp" line="514"/>
+        <location filename="../src/interface/splityearform.cpp" line="734"/>
         <source>FET information</source>
         <translation>Thông tin</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="122"/>
-        <location filename="../src/interface/splityearform.cpp" line="367"/>
-        <location filename="../src/interface/splityearform.cpp" line="416"/>
-        <location filename="../src/interface/splityearform.cpp" line="622"/>
+        <location filename="../src/interface/splityearform.cpp" line="121"/>
+        <location filename="../src/interface/splityearform.cpp" line="366"/>
+        <location filename="../src/interface/splityearform.cpp" line="415"/>
+        <location filename="../src/interface/splityearform.cpp" line="621"/>
         <source>FET warning</source>
         <translation>Cảnh báo</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="122"/>
+        <location filename="../src/interface/splityearform.cpp" line="121"/>
         <source>You have met a minor bug in FET, please report it. FET expected to read from settings %1 divisions in category %2, but read %3. FET will now continue operation, nothing will be lost.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="141"/>
+        <location filename="../src/interface/splityearform.cpp" line="140"/>
         <source>Max subgroups per year: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="142"/>
+        <location filename="../src/interface/splityearform.cpp" line="141"/>
         <source>Max total subgroups: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="197"/>
+        <location filename="../src/interface/splityearform.cpp" line="196"/>
         <source>FET - Add division to category %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="198"/>
+        <location filename="../src/interface/splityearform.cpp" line="197"/>
         <source>Please input division name:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="203"/>
-        <location filename="../src/interface/splityearform.cpp" line="237"/>
+        <location filename="../src/interface/splityearform.cpp" line="202"/>
+        <location filename="../src/interface/splityearform.cpp" line="236"/>
         <source>Duplicates not allowed!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="230"/>
+        <location filename="../src/interface/splityearform.cpp" line="229"/>
         <source>FET - Modify division to category %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="231"/>
+        <location filename="../src/interface/splityearform.cpp" line="230"/>
         <source>Please input the new division name:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="324"/>
-        <location filename="../src/interface/splityearform.cpp" line="352"/>
-        <location filename="../src/interface/splityearform.cpp" line="616"/>
-        <location filename="../src/interface/splityearform.cpp" line="861"/>
+        <location filename="../src/interface/splityearform.cpp" line="323"/>
+        <location filename="../src/interface/splityearform.cpp" line="351"/>
+        <location filename="../src/interface/splityearform.cpp" line="615"/>
+        <location filename="../src/interface/splityearform.cpp" line="860"/>
         <source>FET confirmation</source>
         <translation type="unfinished">Xác nhận</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="325"/>
+        <location filename="../src/interface/splityearform.cpp" line="324"/>
         <source>Do you want to remove division %1 from category %2?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="353"/>
+        <location filename="../src/interface/splityearform.cpp" line="352"/>
         <source>Do you really want to remove all divisions from category %1?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="382"/>
+        <location filename="../src/interface/splityearform.cpp" line="381"/>
         <source>The current number of subgroups for this year is too large (the maximum allowed value is %1, but computing up to category %2 gives %3 subgroups)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="390"/>
+        <location filename="../src/interface/splityearform.cpp" line="389"/>
         <source>Each category must contain at least one division</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="420"/>
+        <location filename="../src/interface/splityearform.cpp" line="419"/>
         <source>Are you sure you want to continue?</source>
         <translation type="unfinished">Bạn có muốn tiếp tục?</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="570"/>
+        <location filename="../src/interface/splityearform.cpp" line="569"/>
         <source>WARNING: There are groups and subgroups which will no longer be available and which will be removed, along with the associated activities and constraints. Are you sure? See the list below.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="573"/>
+        <location filename="../src/interface/splityearform.cpp" line="572"/>
         <source>WARNING: There are groups which will no longer be available and which will be removed, along with the associated activities and constraints. Are you sure? See the list below.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="576"/>
+        <location filename="../src/interface/splityearform.cpp" line="575"/>
         <source>WARNING: There are subgroups which will no longer be available and which will be removed, along with the associated activities and constraints. Are you sure? See the list below.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="582"/>
+        <location filename="../src/interface/splityearform.cpp" line="581"/>
         <source>Notes:</source>
         <translation type="unfinished">Lưu ý:</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="584"/>
+        <location filename="../src/interface/splityearform.cpp" line="583"/>
         <source>Note:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="587"/>
+        <location filename="../src/interface/splityearform.cpp" line="586"/>
         <source>To keep a group, you need to keep the corresponding division name and use the same separator(s) character(s).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="594"/>
+        <location filename="../src/interface/splityearform.cpp" line="593"/>
         <source>Read the divide year dialog Help for details.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="602"/>
+        <location filename="../src/interface/splityearform.cpp" line="601"/>
         <source>The following groups will no longer be available:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="725"/>
+        <location filename="../src/interface/splityearform.cpp" line="724"/>
         <source>There were removed %1 &apos;group activities in the initial order&apos; items.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="464"/>
+        <location filename="../src/interface/splityearform.cpp" line="463"/>
         <source>Duplicate names not allowed</source>
         <translation>Không cho phép trùng tên</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="758"/>
+        <location filename="../src/interface/splityearform.cpp" line="757"/>
         <source>You might first want to consider if dividing a year is necessary and on what options. Please remember that FET can handle activities with multiple teachers/students sets. If you have say students set 9a, which is split into 2 parts: English (teacher TE) and French (teacher TF), and language activities must be simultaneous, then you might not want to divide according to this category, but add more larger activities, with students set 9a and teachers TE+TF. The only drawback is that each activity can take place only in one room in FET, so you might need to find a way to overcome that.</source>
         <translation>Đầu tiên bạn cần cân nhắc xem việc chia khối thực sự cần thiết và theo lựa chọn nào.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="766"/>
+        <location filename="../src/interface/splityearform.cpp" line="765"/>
         <source>Please choose a number of categories and in each category the number of divisions. You can choose for instance 3 categories, 5 divisions for the first category: a, b, c, d and e, 2 divisions for the second category: boys and girls, and 3 divisions for the third: English, German and French.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="780"/>
+        <location filename="../src/interface/splityearform.cpp" line="779"/>
         <source>If your number of subgroups is reasonable, probably you need not worry about empty subgroups (regarding speed of generation). But more tests need to be done. You just need to know that for the moment the maximum total number of subgroups is %1 (which can be changed, but nobody needed larger values)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="805"/>
+        <location filename="../src/interface/splityearform.cpp" line="804"/>
         <source>If you have many subgroups and you don&apos;t explicitly use them, it is recommended to use the three global settings: hide subgroups in combo boxes, hide subgroups in activity planning, and do not write subgroups timetables on hard disk.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="812"/>
+        <location filename="../src/interface/splityearform.cpp" line="811"/>
         <source>(Also the conflicts timetable might take long to write, if the file is big.)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="814"/>
+        <location filename="../src/interface/splityearform.cpp" line="813"/>
         <source>After that, you can re-enable writing the students timetables on the disk, and re-generate.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="817"/>
+        <location filename="../src/interface/splityearform.cpp" line="816"/>
         <source>About using a large number of categories, divisions per category and subgroups: it is highly recommended to keep these to a minimum, especially the number of categories, by using any kind of tricks. Otherwise the timetable might become impossible (taking too much time to generate).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="824"/>
+        <location filename="../src/interface/splityearform.cpp" line="823"/>
         <source>Maybe an alternative to dividing a year into many categories/subgroups would be to enter individual students as FET subgroups and add into each group the corresponding subgroups. But this is hard to do from the FET interface - maybe a solution would be to use an automatic tool to convert your institution data into a file in .fet format.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="862"/>
+        <location filename="../src/interface/splityearform.cpp" line="861"/>
         <source>Do you really want to reset the form values to defaults (empty)?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="884"/>
+        <location filename="../src/interface/splityearform.cpp" line="883"/>
         <source>Subgroups: %1</source>
         <comment>%1 is the number of subgroups</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="417"/>
+        <location filename="../src/interface/splityearform.cpp" line="416"/>
         <source>Please note that the current configuration will lead you to %1 total number of subgroups. The file format supports any number of students sets, but for the timetable generation to be possible the maximum allowed total number of subgroups is %2.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="368"/>
+        <location filename="../src/interface/splityearform.cpp" line="367"/>
         <source>You want to divide the year by %1 categories. The recommended number of categories is 2, 3 or maximum 4 (to ensure the timetable generation speed and feasibility). Are you sure?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="468"/>
+        <location filename="../src/interface/splityearform.cpp" line="467"/>
         <source>Empty names not allowed</source>
         <translation type="unfinished">Không cho phép để trống tên</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="495"/>
+        <location filename="../src/interface/splityearform.cpp" line="494"/>
         <source>Cannot add group %1, because a set with the same name exists. Please choose another name or remove the old set</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="515"/>
+        <location filename="../src/interface/splityearform.cpp" line="514"/>
         <source>Cannot add subgroup %1, because a set with the same name exists. Please choose another name or remove the old set</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="591"/>
+        <location filename="../src/interface/splityearform.cpp" line="590"/>
         <source>Probably you can safely ignore the warning about the removal of the subgroups.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="610"/>
+        <location filename="../src/interface/splityearform.cpp" line="609"/>
         <source>The following subgroups will no longer be available:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="617"/>
+        <location filename="../src/interface/splityearform.cpp" line="616"/>
         <source>Yes</source>
         <translation type="unfinished">Đồng ý</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="617"/>
+        <location filename="../src/interface/splityearform.cpp" line="616"/>
         <source>No</source>
         <translation type="unfinished">Không</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="622"/>
+        <location filename="../src/interface/splityearform.cpp" line="621"/>
         <source>Year %1 will be split again. All groups and subgroups of this year which will no longer exist (listed before) and the associated activities and constraints will be removed. Are you absolutely sure?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="719"/>
+        <location filename="../src/interface/splityearform.cpp" line="718"/>
         <source>There were removed %1 activities, %2 time constraints and %3 space constraints.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="735"/>
+        <location filename="../src/interface/splityearform.cpp" line="734"/>
         <source>Split of the year complete, please check the groups and subgroups of the year to make sure that everything is OK.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="786"/>
+        <location filename="../src/interface/splityearform.cpp" line="785"/>
         <source>Please note that the dialog here will keep the last configuration of the last divided year, it will not remember the values for a specific year you need to modify.</source>
         <translation>Please note that the dialog here will keep the last configuration of the last divided year, it will not remember the values for a specific year you need to modify.</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="789"/>
+        <location filename="../src/interface/splityearform.cpp" line="788"/>
         <source>If you intend to divide again a year by categories and you want to keep (the majority of) the existing groups in this year, you will need to use the exact same separator character(s) for dividing this year as you used when previously dividing this year, and the same division names (any old division which is no longer entered means a group which will be removed from this year).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="795"/>
+        <location filename="../src/interface/splityearform.cpp" line="794"/>
         <source>When dividing again a year, you might get a warning about subgroups which will be removed. If you didn&apos;t explicitly use (these) subgroups in your activities or constraints, probably you can safely ignore this warning. Generally, if you use years&apos; division by categories, it is groups that matter.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="801"/>
+        <location filename="../src/interface/splityearform.cpp" line="800"/>
         <source>Separator character(s) is of your choice (default is space)</source>
         <translation>Kí tự phân cách tùy theo bạn lựa chọn (mặc định là kí tự trắng)</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="808"/>
+        <location filename="../src/interface/splityearform.cpp" line="807"/>
         <source>Note that if you are only working to get a feasible timetable, without the need to obtain the students timetable (XML or HTML) on the disk at all, and if you have many total subgroups, a good idea is to disable writing the subgroups, groups AND years timetables to the hard disk, as these take a long time to compute (not only subgroups, but also groups and years!).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="821"/>
+        <location filename="../src/interface/splityearform.cpp" line="820"/>
         <source>Maybe a reasonable number of categories could be 2, 3 or maximum 4. The divide year dialog allows much higher values, but these are not at all recommended.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="828"/>
+        <location filename="../src/interface/splityearform.cpp" line="827"/>
         <source>Or you might use the FET feature to import students sets from comma separated values (CSV) files.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="830"/>
+        <location filename="../src/interface/splityearform.cpp" line="829"/>
         <source>In such cases (individual students as FET subgroups), remember that a smaller number of total subgroups means faster generation time, so you might want to consider a single subgroup for two or more students who have the exact same activities and constraints.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="836"/>
+        <location filename="../src/interface/splityearform.cpp" line="835"/>
         <source>FET - help on dividing a year</source>
         <translation>Hỗ trợ trong việc phân chia khối</translation>
     </message>
     <message>
-        <location filename="../src/interface/splityearform.cpp" line="842"/>
+        <location filename="../src/interface/splityearform.cpp" line="841"/>
         <source>OK</source>
         <translation>Đồng ý</translation>
     </message>
@@ -50123,12 +50125,12 @@ Please report error. FET will now abort current operation</source>
 <context>
     <name>StartStatisticsPrint</name>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="106"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="107"/>
         <source>FET warning</source>
         <translation type="unfinished">Cảnh báo</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="107"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="108"/>
         <source>Printing is currently not possible.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -50150,269 +50152,269 @@ Please report error. FET will now abort current operation</source>
 <context>
     <name>StatisticsExport</name>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="120"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="122"/>
         <source>Do you want to export detailed statistic files into directory %1 as html files?</source>
         <translation>Bạn muốn xuất các tệp thống kê chi tiết ra thư mục %1 dưới dạng HTML?</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="161"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="163"/>
         <source>FET Information</source>
         <translation>Thông tin</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="162"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="164"/>
         <source>Statistic files were exported to directory %1 as html files.</source>
         <translation>Các tệp thống kê chi tiết đã xuất ra thư mục %1 dưới dạng HTML.</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="358"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="469"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="495"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="582"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="608"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="659"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="906"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="957"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1202"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1253"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1499"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1550"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1796"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1847"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="2093"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="2143"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="360"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="471"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="497"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="584"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="610"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="661"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="908"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="959"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1204"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1255"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1501"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1552"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1798"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1849"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="2095"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="2145"/>
         <source>FET critical</source>
         <translation>Điểm quan trọng</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="359"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="496"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="609"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="907"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1203"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1500"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1797"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="2094"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="361"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="498"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="611"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="909"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1205"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1502"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1799"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="2096"/>
         <source>Cannot open file %1 for writing. Please check your disk&apos;s free space. Saving of %1 aborted.</source>
         <translation>Không thể mở tệp %1. Hãy kiểm tra dung lượng đĩa. Lưu tệp %1 bị hủy bỏ.</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="381"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="383"/>
         <source>unnamed</source>
         <translation>chưa đặt tên</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="382"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="384"/>
         <source>CSS Stylesheet of %1</source>
         <comment>%1 is the file name</comment>
         <translation>CSS Stylesheet dạng %1</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="386"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="388"/>
         <source>To hide an element just write the following phrase into the element: %1 (without quotes).</source>
         <comment>%1 is a short phrase beginning and ending with quotes, and we want the user to be able to add it, but without quotes</comment>
         <translation>Để ẩn một yếu tố, chỉ cần viết đoạn sau vào yếu tố đó:%1 (không có kí tự trích dẫn).</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="393"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="395"/>
         <source>Some programs import &quot;tfoot&quot; incorrectly. So we use &quot;tr.foot&quot; instead of &quot;tfoot&quot;.</source>
         <comment>Please keep tfoot and tr.foot untranslated, as they are in the original English phrase</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="466"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="468"/>
         <source>End of file.</source>
         <translation>Cuối tệp.</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="470"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="583"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="660"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="958"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1254"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1551"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1848"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="2144"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="472"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="585"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="662"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="960"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1256"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1553"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1850"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="2146"/>
         <source>Writing %1 gave error code %2, which means saving is compromised. Please check your disk&apos;s free space.</source>
         <translation>Ghi %1 với mã lỗi %2. Hãy kiểm tra dung lượng đĩa.</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="543"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="545"/>
         <source>Institution name</source>
         <translation>Tên nhà trường</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="544"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="546"/>
         <source>Comments</source>
         <translation>Ghi chú</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="550"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="552"/>
         <source>Statistics</source>
         <translation>Thống kê</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="552"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="557"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="554"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="559"/>
         <source>Teachers</source>
         <translation>Giáo viên</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="552"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="563"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="554"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="565"/>
         <source>Students</source>
         <translation>Học sinh</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="552"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="569"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="554"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="571"/>
         <source>Subjects</source>
         <translation>Môn học</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="559"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="560"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="564"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="561"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="562"/>
         <location filename="../src/engine/statisticsexport.cpp" line="566"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="570"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="571"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="568"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="572"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="573"/>
         <source>view</source>
         <translation>Khung nhìn</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="677"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="679"/>
         <source>Teachers - Subjects Matrix</source>
         <translation>Bảng Giáo viên - Lớp học</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="700"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="998"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1294"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1591"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1888"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="2184"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="702"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1000"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1296"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1593"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1890"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="2186"/>
         <source>Exporting statistics</source>
         <comment>Title of a progress dialog</comment>
         <translation>Đang xuất dữ liệu thống kê</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="975"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="977"/>
         <source>Subjects - Teachers Matrix</source>
         <translation>Bảng Lớp học - Giáo viên</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="999"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1001"/>
         <source>Processing subjects with teachers...please wait</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="1271"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1273"/>
         <source>Teachers - Students Matrix</source>
         <translation>Bảng Giáo viên - Lớp học</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="1865"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1867"/>
         <source>Subjects - Students Matrix</source>
         <translation>Bảng Môn học - Lớp học</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="701"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="703"/>
         <source>Processing teachers with subjects...please wait</source>
         <translation>Đang xử lý giáo viên với môn học... Hãy chờ trong chốc lát</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="119"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="121"/>
         <source>FET Question</source>
         <translation>Câu hỏi</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="164"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="712"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1010"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1306"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1603"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1900"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="2196"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="166"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="714"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1012"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1308"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1605"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1902"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="2198"/>
         <source>FET warning</source>
         <translation>Cảnh báo</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="165"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="167"/>
         <source>Statistics export incomplete</source>
         <translation>Hoàn thành xuất thống kê</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="384"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="386"/>
         <source>Stylesheet generated with FET %1 on %2</source>
         <comment>%1 is FET version, %2 is date and time</comment>
         <translation>Stylesheet tạo ra với TKB tự động phiên bản 2015 %1 vào lúc %2</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="575"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="880"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1176"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1473"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1770"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="2067"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="2365"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="577"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="882"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1178"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1475"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1772"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="2069"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="2367"/>
         <source>Timetable generated with FET %1 on %2</source>
         <comment>%1 is FET version, %2 is the date and time of generation</comment>
         <translation>TKB tạo ra với TKB tự động phiên bản 2015 %1 vào lúc %2</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="694"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="866"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="992"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1162"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1288"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1459"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1585"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1756"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1882"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="2053"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="2178"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="2351"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="696"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="868"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="994"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1164"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1290"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1461"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1587"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1758"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1884"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="2055"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="2180"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="2353"/>
         <source>Sum</source>
         <comment>This means the sum of more values, the total</comment>
         <translation>Tổng</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="712"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1010"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1306"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1603"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="1900"/>
-        <location filename="../src/engine/statisticsexport.cpp" line="2196"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="714"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1012"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1308"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1605"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1902"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="2198"/>
         <source>Canceled</source>
         <translation>Đã hủy</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="1295"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1297"/>
         <source>Processing teachers with students...please wait</source>
         <translation>Đang xử lý giáo viên với lớp học... Hãy chờ trong chốc lát</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="1568"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1570"/>
         <source>Students - Teachers Matrix</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="1592"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1594"/>
         <source>Processing students with teachers...please wait</source>
         <translation>Đang xử lý lớp học với giáo viên... Hãy chờ trong chốc lát</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="1889"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="1891"/>
         <source>Processing subjects with students...please wait</source>
         <translation>Đang xử lý môn học với lớp học... Hãy chờ trong chốc lát</translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="2161"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="2163"/>
         <source>Students - Subjects Matrix</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/engine/statisticsexport.cpp" line="2185"/>
+        <location filename="../src/engine/statisticsexport.cpp" line="2187"/>
         <source>Processing students with subjects...please wait</source>
         <translation>Đang xử lý lớp học với môn học... Hãy chờ trong chốc lát</translation>
     </message>
@@ -50420,312 +50422,312 @@ Please report error. FET will now abort current operation</source>
 <context>
     <name>StatisticsPrintForm</name>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="115"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="116"/>
         <source>Print statistics matrix dialog</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="125"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="126"/>
         <source>All</source>
         <comment>Refers to a list of items, select all. Please keep translation short</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="127"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="128"/>
         <source>None</source>
         <comment>Refers to a list of items, select none. Please keep translation short</comment>
         <translation type="unfinished">Hủy chọn</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="136"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="137"/>
         <source>Print</source>
         <translation type="unfinished">In</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="138"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="139"/>
         <source>students-subjects</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="139"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="140"/>
         <source>students-teachers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="140"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="141"/>
         <source>teachers-subjects</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="141"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="142"/>
         <source>teachers-students</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="142"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="143"/>
         <source>subjects-students</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="143"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="144"/>
         <source>subjects-teachers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="154"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="155"/>
         <source>Options</source>
         <translation type="unfinished">Lựa chọn</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="158"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="159"/>
         <source>Page-break: none</source>
         <comment>No page-break between statistics. Please keep translation short</comment>
         <translation type="unfinished">Ngắt trang: không</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="159"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="160"/>
         <source>Page-break: always</source>
         <comment>Page-break after each statistic. Please keep translation short</comment>
         <translation type="unfinished">Ngắt trang: từng TKB</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="160"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="161"/>
         <source>Page-break: even</source>
         <comment>Page-break after each even statistic. Please keep translation short</comment>
         <translation type="unfinished">Ngắt trang: từng loại TKB</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="174"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="175"/>
         <source>Portrait</source>
         <translation type="unfinished">Khổ dọc</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="174"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="175"/>
         <source>Landscape</source>
         <translation type="unfinished">Khổ ngang</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="191"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="192"/>
         <source>Custom</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished">Lựa chọn</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="193"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="194"/>
         <source>A0</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished">A0</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="194"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="195"/>
         <source>A1</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished">A1</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="195"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="196"/>
         <source>A2</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished">A2</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="196"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="197"/>
         <source>A3</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished">A3</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="197"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="198"/>
         <source>A4</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished">A4</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="198"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="199"/>
         <source>A5</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished">A5</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="199"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="200"/>
         <source>A6</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished">A6</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="200"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="201"/>
         <source>A7</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished">A7</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="201"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="202"/>
         <source>A8</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished">A8</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="202"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="203"/>
         <source>A9</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished">A9</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="203"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="204"/>
         <source>B0</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished">B0</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="204"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="205"/>
         <source>B1</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished">B1</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="205"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="206"/>
         <source>B2</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished">B2</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="206"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="207"/>
         <source>B3</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished">B3</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="207"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="208"/>
         <source>B4</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished">B4</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="208"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="209"/>
         <source>B5</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished">B5</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="209"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="210"/>
         <source>B6</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished">B6</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="210"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="211"/>
         <source>B7</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished">B7</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="211"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="212"/>
         <source>B8</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished">B8</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="212"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="213"/>
         <source>B9</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished">B9</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="213"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="214"/>
         <source>B10</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished">B10</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="214"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="215"/>
         <source>C5E</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished">C5E</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="215"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="216"/>
         <source>Comm10E</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="216"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="217"/>
         <source>DLE</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="217"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="218"/>
         <source>Executive</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="218"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="219"/>
         <source>Folio</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="219"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="220"/>
         <source>Ledger</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="220"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="221"/>
         <source>Legal</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="221"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="222"/>
         <source>Letter</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="222"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="223"/>
         <source>Tabloid</source>
         <comment>Type of paper size</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="245"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="251"/>
         <source>Activity tags</source>
         <translation type="unfinished">Thông tin bổ trợ</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="258"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="264"/>
         <source>Font size: %1 pt</source>
         <comment>pt means points for font size, when printing the statistics</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="282"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="288"/>
         <source>Activities padding: %1 px</source>
         <comment>px means pixels, when printing the statistics</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="305"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="311"/>
         <source>Space after table: +%1 px</source>
         <comment>px means pixels, when printing the statistics</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="861"/>
-        <location filename="../src/interface/statisticsprintform.cpp" line="905"/>
-        <location filename="../src/interface/statisticsprintform.cpp" line="943"/>
-        <location filename="../src/interface/statisticsprintform.cpp" line="956"/>
-        <location filename="../src/interface/statisticsprintform.cpp" line="994"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="867"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="911"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="949"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="962"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="1000"/>
         <source>FET is compiled without printer support - it is impossible to print from this dialog. Please export and open the HTML statistics from the results directory</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="882"/>
-        <location filename="../src/interface/statisticsprintform.cpp" line="926"/>
-        <location filename="../src/interface/statisticsprintform.cpp" line="977"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="888"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="932"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="983"/>
         <source>No margins set, because at least one value is too small. You need to enter at least:
 Left: %1
 Right: %2
@@ -50734,72 +50736,72 @@ Bottom: %4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="891"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="897"/>
         <source>Print statistics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="328"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="334"/>
         <source>Split after: %1 names</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="351"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="357"/>
         <source>Left margin: %1 mm</source>
         <comment>mm means millimeters</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="374"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="380"/>
         <source>Top margin: %1 mm</source>
         <comment>mm means millimeters</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="397"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="403"/>
         <source>Right margin: %1 mm</source>
         <comment>mm means millimeters</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="420"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="426"/>
         <source>Bottom margin: %1 mm</source>
         <comment>mm means millimeters</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="434"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="440"/>
         <source>Teaser</source>
         <comment>Small print preview. Please keep translation short</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="435"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="441"/>
         <source>Preview</source>
         <comment>Full print preview. Please keep translation short</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="436"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="442"/>
         <source>Print</source>
         <comment>Please keep translation short</comment>
         <translation type="unfinished">In</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="438"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="444"/>
         <source>Close</source>
         <comment>Please keep translation short</comment>
         <translation type="unfinished">Thoát</translation>
     </message>
     <message>
-        <location filename="../src/interface/statisticsprintform.cpp" line="861"/>
-        <location filename="../src/interface/statisticsprintform.cpp" line="882"/>
-        <location filename="../src/interface/statisticsprintform.cpp" line="905"/>
-        <location filename="../src/interface/statisticsprintform.cpp" line="926"/>
-        <location filename="../src/interface/statisticsprintform.cpp" line="943"/>
-        <location filename="../src/interface/statisticsprintform.cpp" line="956"/>
-        <location filename="../src/interface/statisticsprintform.cpp" line="977"/>
-        <location filename="../src/interface/statisticsprintform.cpp" line="994"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="867"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="888"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="911"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="932"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="949"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="962"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="983"/>
+        <location filename="../src/interface/statisticsprintform.cpp" line="1000"/>
         <source>FET warning</source>
         <translation type="unfinished">Cảnh báo</translation>
     </message>
@@ -53885,7 +53887,7 @@ Bottom: %4</source>
 <context>
     <name>TimetablePrintForm</name>
     <message>
-        <location filename="../src/interface/timetableprintform.cpp" line="1320"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="1325"/>
         <source>Print timetable</source>
         <translation>In TKB</translation>
     </message>
@@ -53926,9 +53928,9 @@ Bottom: %4</source>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="175"/>
-        <location filename="../src/interface/timetableprintform.cpp" line="851"/>
-        <location filename="../src/interface/timetableprintform.cpp" line="867"/>
-        <location filename="../src/interface/timetableprintform.cpp" line="886"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="856"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="872"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="891"/>
         <source>All activities</source>
         <translation>Tất cả tiết giảng</translation>
     </message>
@@ -54219,131 +54221,131 @@ Bottom: %4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableprintform.cpp" line="309"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="314"/>
         <source>Detailed tables</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableprintform.cpp" line="312"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="317"/>
         <source>Activity tags</source>
         <translation type="unfinished">Thông tin bổ trợ</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableprintform.cpp" line="315"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="320"/>
         <source>Repeat vertical names</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableprintform.cpp" line="318"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="323"/>
         <source>Colors</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableprintform.cpp" line="331"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="336"/>
         <source>Font size: %1 pt</source>
         <comment>pt means points for font size, when printing the timetable</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableprintform.cpp" line="355"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="360"/>
         <source>Activities padding: %1 px</source>
         <comment>px means pixels, when printing the timetable</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableprintform.cpp" line="378"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="383"/>
         <source>Space after table: +%1 px</source>
         <comment>px means pixels, when printing the timetable</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableprintform.cpp" line="401"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="406"/>
         <source>Split after: %1 names</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableprintform.cpp" line="424"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="429"/>
         <source>Left margin: %1 mm</source>
         <comment>mm means millimeters</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableprintform.cpp" line="447"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="452"/>
         <source>Top margin: %1 mm</source>
         <comment>mm means millimeters</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableprintform.cpp" line="470"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="475"/>
         <source>Right margin: %1 mm</source>
         <comment>mm means millimeters</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableprintform.cpp" line="493"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="498"/>
         <source>Bottom margin: %1 mm</source>
         <comment>mm means millimeters</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableprintform.cpp" line="507"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="512"/>
         <source>Teaser</source>
         <comment>Small print preview. Please keep translation short</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableprintform.cpp" line="508"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="513"/>
         <source>Preview</source>
         <comment>Full print preview. Please keep translation short</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableprintform.cpp" line="509"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="514"/>
         <source>Print</source>
         <comment>Please keep translation short</comment>
         <translation type="unfinished">In</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableprintform.cpp" line="511"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="516"/>
         <source>Close</source>
         <comment>Please keep translation short</comment>
         <translation type="unfinished">Thoát</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableprintform.cpp" line="775"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="780"/>
         <source>All teachers</source>
         <translation type="unfinished">Tất cả giáo viên</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableprintform.cpp" line="1092"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="1097"/>
         <source>Warning! Only %1 out of %2 activities placed!</source>
         <translation type="unfinished">Cảnh báo: Chỉ có %1 trong số %2 tiết giảng đã được xếp!</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableprintform.cpp" line="1290"/>
-        <location filename="../src/interface/timetableprintform.cpp" line="1311"/>
-        <location filename="../src/interface/timetableprintform.cpp" line="1334"/>
-        <location filename="../src/interface/timetableprintform.cpp" line="1355"/>
-        <location filename="../src/interface/timetableprintform.cpp" line="1372"/>
-        <location filename="../src/interface/timetableprintform.cpp" line="1385"/>
-        <location filename="../src/interface/timetableprintform.cpp" line="1407"/>
-        <location filename="../src/interface/timetableprintform.cpp" line="1424"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="1295"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="1316"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="1339"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="1360"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="1377"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="1390"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="1412"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="1429"/>
         <source>FET warning</source>
         <translation type="unfinished">Cảnh báo</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableprintform.cpp" line="1290"/>
-        <location filename="../src/interface/timetableprintform.cpp" line="1334"/>
-        <location filename="../src/interface/timetableprintform.cpp" line="1372"/>
-        <location filename="../src/interface/timetableprintform.cpp" line="1385"/>
-        <location filename="../src/interface/timetableprintform.cpp" line="1424"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="1295"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="1339"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="1377"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="1390"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="1429"/>
         <source>FET is compiled without printer support - it is impossible to print from this dialog. Please open the HTML timetables from the results directory</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableprintform.cpp" line="1311"/>
-        <location filename="../src/interface/timetableprintform.cpp" line="1355"/>
-        <location filename="../src/interface/timetableprintform.cpp" line="1407"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="1316"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="1360"/>
+        <location filename="../src/interface/timetableprintform.cpp" line="1412"/>
         <source>No margins set, because at least one value is too small. You need to enter at least:
 Left: %1
 Right: %2
