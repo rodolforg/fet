@@ -2527,7 +2527,7 @@ void ActivityPlanningForm::updateTables_Students_Subjects(){	//similar to statis
 			tmpActivities=tmpSubjects.values(statisticValues.allSubjectsNames.at(subject));
 			QString tmpString="";
 			if(!tmpActivities.isEmpty()){
-				QMap<QString, int> tmpIdentDuration;	//not QHash, because i need the correct order of the activities
+				QMap<LocaleString, int> tmpIdentDuration;	//not QHash, because I need the correct order of the activities
 				foreach(int tmpAct, tmpActivities){
 					Activity* act=gt.rules.activitiesList[tmpAct];
 					int tmpD=act->duration;
@@ -2554,7 +2554,7 @@ void ActivityPlanningForm::updateTables_Students_Subjects(){	//similar to statis
 					tmpD+=tmpIdentDuration.value(tmpIdent);
 					tmpIdentDuration.insert(tmpIdent, tmpD);
 				}
-				QMapIterator<QString, int> it(tmpIdentDuration);
+				QMapIterator<LocaleString, int> it(tmpIdentDuration);
 				while(it.hasNext()){
 					it.next();
 					tmpString+=CustomFETString::number(it.value());
@@ -2680,8 +2680,8 @@ void ActivityPlanningForm::updateTables_Teachers(){	//similar to statisticsexpor
 		
 		//new (start)
 		QList<int> tmpActivities;
-		QMap<QString, int> tmpSubjectsNumberOfHours;		//using map, because it sorts alphabetically
-		QMap<QString, int> tmpStudentsNumberOfHours;		//using map, because it sorts alphabetically
+		QMap<LocaleString, int> tmpSubjectsNumberOfHours;		//using map, because it sorts alphabetically
+		QMap<LocaleString, int> tmpStudentsNumberOfHours;		//using map, because it sorts alphabetically
 		tmpActivities.clear();
 		tmpActivities=teachersActivities.values(statisticValues.allTeachersNames.at(teacher));
 		foreach(int aidx, tmpActivities){
@@ -2730,7 +2730,7 @@ void ActivityPlanningForm::updateTables_Teachers(){	//similar to statisticsexpor
 		
 		QString tmpItem;
 		tmpItem.clear();
-		QMapIterator<QString, int> it(tmpSubjectsNumberOfHours);
+		QMapIterator<LocaleString, int> it(tmpSubjectsNumberOfHours);
 		while(it.hasNext()){
 			it.next();
 			tmpItem+=CustomFETString::number(it.value())+" "+it.key()+"\n";
@@ -2745,7 +2745,7 @@ void ActivityPlanningForm::updateTables_Teachers(){	//similar to statisticsexpor
 		teachersTableView->model.items.insert(pair, tmpItem);
 		
 		tmpItem.clear();
-		QMapIterator<QString, int> it2(tmpStudentsNumberOfHours);
+		QMapIterator<LocaleString, int> it2(tmpStudentsNumberOfHours);
 		while(it2.hasNext()){
 			it2.next();
 			tmpItem+=CustomFETString::number(it2.value())+" "+it2.key()+"\n";

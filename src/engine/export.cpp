@@ -42,6 +42,7 @@ File export.cpp
 
 #include <QHash>
 #include <QSet>
+#include <QMap>
 
 class QWidget;
 void centerWidgetOnScreen(QWidget* widget);
@@ -1169,7 +1170,7 @@ bool Export::exportCSVActivitiesStatistic(QString& lastWarnings, const QString& 
 
 	Activity* acti;
 	int countExportedActivities=0;
-	QMap<QString, int> tmpIdentDuration;	//not QHash, because i want a nice order of the activities
+	QMap<LocaleString, int> tmpIdentDuration;	//not QHash, because I want a nice order of the activities
 	for(int ai=0; ai<gt.rules.activitiesList.size(); ai++){
 		acti=gt.rules.activitiesList[ai];
 		if(acti->active){
@@ -1195,7 +1196,7 @@ bool Export::exportCSVActivitiesStatistic(QString& lastWarnings, const QString& 
 			tmpIdentDuration.insert(tmpIdent, tmpD);
 		}
 	}
-	QMapIterator<QString, int> it(tmpIdentDuration);
+	QMapIterator<LocaleString, int> it(tmpIdentDuration);
 	while(it.hasNext()){
 		countExportedActivities++;
 		it.next();

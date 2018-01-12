@@ -318,6 +318,19 @@ public:
 double customFETStrToDouble(const QString& str, bool* ok=0);
 ///////end tricks
 
+//Trick found on http://www.qtcentre.org/threads/53066-QMap-sorting-according-to-QLocale
+//to create a QMap<QString, ...> ordered by locale order.
+//Third post, by ChrisW67.
+class LocaleString: public QString{
+public:
+	LocaleString(const QString& s): QString(s){}
+};
+
+inline bool operator<(const LocaleString& lhs, const LocaleString& rhs)
+{
+	return (QString::localeAwareCompare(lhs, rhs)<0);
+}
+
 //for random Knuth - from Knuth TAOCP Vol. 2 Seminumerical Algorithms section 3.6
 //these numbers are really important - please do not change them, NEVER!!!
 //if you want, write a new random number generator routine, with other name

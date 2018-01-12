@@ -81,7 +81,9 @@ public:
 
 bool operator <(const StringListPair& pair1, const StringListPair& pair2)
 {
-	return (pair1.list1.join("")+pair1.list2.join("")) < (pair2.list1.join("")+pair2.list2.join(""));
+//	return (pair1.list1.join("")+pair1.list2.join("")) < (pair2.list1.join("")+pair2.list2.join(""));
+	//As recommended by rodolforg
+	return (pair1.list1.join("")+pair1.list2.join("")).localeAwareCompare(pair2.list1.join("")+pair2.list2.join(""))<0;
 }
 
 StatisticsExport::StatisticsExport()
