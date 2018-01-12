@@ -2023,3 +2023,6 @@ Versions 5.35.0 - 5.35.v
 	- Added a partial Japanese translation, by Taro Tada.
 	- Added a new partial Greek translation, by Vangelis Karafillidis.
 	- Updated the Czech translation, by Pavel Fric.
+- Version 5.35.1
+	- The alphabetic sorting of items now respects the locale (special characters are better ordered). Suggestion and code by rodolforg.
+	- Improved the translation procedure of some fields. Suggestion and code by rodolforg.
