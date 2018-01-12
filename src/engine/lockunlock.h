@@ -49,6 +49,7 @@ public:
 	static void increaseCommunicationSpinBox();
 
 	static QString getActivityLockTipString(int activityId);
+	static QString getActivityLockDetailsString(int activityId);
 };
 
 #endif

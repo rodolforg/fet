@@ -550,29 +550,8 @@ void TimetableViewStudentsDaysHorizontalForm::detailActivity(QTableWidgetItem* i
 				s+="\n";
 				s+=tr("Room: %1").arg(gt.rules.internalRoomsList[r]->name);
 			}
-			//added by Volker Dirr (start)
-			QString descr="";
-			QString t="";
-			if(idsOfPermanentlyLockedTime.contains(act->id)){
-				descr+=QCoreApplication::translate("TimetableViewForm", "permanently locked time", "refers to activity");
-				t=", ";
-			}
-			else if(idsOfLockedTime.contains(act->id)){
-				descr+=QCoreApplication::translate("TimetableViewForm", "locked time", "refers to activity");
-				t=", ";
-			}
-			if(idsOfPermanentlyLockedSpace.contains(act->id)){
-				descr+=t+QCoreApplication::translate("TimetableViewForm", "permanently locked space", "refers to activity");
-			}
-			else if(idsOfLockedSpace.contains(act->id)){
-				descr+=t+QCoreApplication::translate("TimetableViewForm", "locked space", "refers to activity");
-			}
-			if(descr!=""){
-				descr.prepend("\n(");
-				descr.append(")");
-			}
-			s+=descr;
-			//added by Volker Dirr (end)
+
+			s+=LockUnlock::getActivityLockDetailsString(act->id);
 		}
 		else{
 			if(subgroupNotAvailableDayHour[i][k][j]){

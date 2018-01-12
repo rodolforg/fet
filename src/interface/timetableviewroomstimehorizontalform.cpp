@@ -667,29 +667,8 @@ void TimetableViewRoomsTimeHorizontalForm::detailActivity(QTableWidgetItem* item
 					s+="\n";
 					s+=tr("Room: %1").arg(gt.rules.internalRoomsList[r]->name);
 				}*/
-				//added by Volker Dirr (start)
-				QString descr="";
-				QString tt="";
-				if(idsOfPermanentlyLockedTime.contains(act->id)){
-					descr+=QCoreApplication::translate("TimetableViewForm", "permanently locked time", "refers to activity");
-					tt=", ";
-				}
-				else if(idsOfLockedTime.contains(act->id)){
-					descr+=QCoreApplication::translate("TimetableViewForm", "locked time", "refers to activity");
-					tt=", ";
-				}
-				if(idsOfPermanentlyLockedSpace.contains(act->id)){
-					descr+=tt+QCoreApplication::translate("TimetableViewForm", "permanently locked space", "refers to activity");
-				}
-				else if(idsOfLockedSpace.contains(act->id)){
-					descr+=tt+QCoreApplication::translate("TimetableViewForm", "locked space", "refers to activity");
-				}
-				if(descr!=""){
-					descr.prepend("\n(");
-					descr.append(")");
-				}
-				s+=descr;
-				//added by Volker Dirr (end)
+
+				s+=LockUnlock::getActivityLockDetailsString(act->id);
 			}
 			else{
 				if(notAllowedRoomTimePercentages[roomIndex][d+h*gt.rules.nDaysPerWeek]>=0){

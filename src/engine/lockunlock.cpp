@@ -126,3 +126,30 @@ QString LockUnlock::getActivityLockTipString(int activityId)
 	return descr;
 	//added by Volker Dirr (end)
 }
+
+QString LockUnlock::getActivityLockDetailsString(int activityId)
+{
+	//added by Volker Dirr (start)
+	QString descr="";
+	QString t="";
+	if(idsOfPermanentlyLockedTime.contains(activityId)){
+		descr+=QCoreApplication::translate("TimetableViewForm", "permanently locked time", "refers to activity");
+		t=", ";
+	}
+	else if(idsOfLockedTime.contains(activityId)){
+		descr+=QCoreApplication::translate("TimetableViewForm", "locked time", "refers to activity");
+		t=", ";
+	}
+	if(idsOfPermanentlyLockedSpace.contains(activityId)){
+		descr+=t+QCoreApplication::translate("TimetableViewForm", "permanently locked space", "refers to activity");
+	}
+	else if(idsOfLockedSpace.contains(activityId)){
+		descr+=t+QCoreApplication::translate("TimetableViewForm", "locked space", "refers to activity");
+	}
+	if(descr!=""){
+		descr.prepend("\n(");
+		descr.append(")");
+	}
+	return descr;
+	//added by Volker Dirr (end)
+}
