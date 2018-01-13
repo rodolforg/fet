@@ -110,30 +110,34 @@ void DaysForm::ok()
 	if (!userChangedDays)
 		return;
 	
-	//2011-10-18
-	int cnt_mod=0;
-	int cnt_rem=0;
+	QSet<TimeConstraint*> modifiableTimeConstraints;
+	QSet<TimeConstraint*> toBeRemovedTimeConstraints;
+	QSet<SpaceConstraint*> modifiableSpaceConstraints;
+	QSet<SpaceConstraint*> toBeRemovedSpaceConstraints;
+
 	int oldDays=gt.rules.nDaysPerWeek;
 	gt.rules.nDaysPerWeek=nDays;
 	
 	foreach(TimeConstraint* tc, gt.rules.timeConstraintsList)
 		if(tc->hasWrongDayOrHour(gt.rules)){
 			if(tc->canRepairWrongDayOrHour(gt.rules))
-				cnt_mod++;
+				modifiableTimeConstraints << tc;
 			else
-				cnt_rem++;
+				toBeRemovedTimeConstraints << tc;
 		}
 
 	foreach(SpaceConstraint* sc, gt.rules.spaceConstraintsList)
 		if(sc->hasWrongDayOrHour(gt.rules)){
 			if(sc->canRepairWrongDayOrHour(gt.rules))
-				cnt_mod++;
+				modifiableSpaceConstraints << sc;
 			else
-				cnt_rem++;
+				toBeRemovedSpaceConstraints << sc;
 		}
 	
 	gt.rules.nDaysPerWeek=oldDays;
 			
+	int cnt_mod = modifiableTimeConstraints.count() + modifiableTimeConstraints.count();
+	int cnt_rem = toBeRemovedTimeConstraints.count() + toBeRemovedSpaceConstraints.count();
 	if(cnt_mod>0 || cnt_rem>0){
 		QString s;
 		if(cnt_rem>0){
@@ -155,55 +159,33 @@ void DaysForm::ok()
 		gt.rules.nDaysPerWeek=nDays;
 
 		//time
-		QList<TimeConstraint*> toBeRemovedTime;
-		foreach(TimeConstraint* tc, gt.rules.timeConstraintsList){
-			if(tc->hasWrongDayOrHour(gt.rules)){
-				bool tmp=tc->canRepairWrongDayOrHour(gt.rules);
-				if(tmp){
-					int tmp2=tc->repairWrongDayOrHour(gt.rules);
-					assert(tmp2);
-				}
-				else{
-					toBeRemovedTime.append(tc);
-				}
-			}
+		foreach(TimeConstraint* tc, modifiableTimeConstraints){
+			int tmp=tc->repairWrongDayOrHour(gt.rules);
+			assert(tmp);
 		}
 		bool recomputeTime=false;
 
-		if(toBeRemovedTime.count()>0){
-			foreach(TimeConstraint* tc, toBeRemovedTime){
-				if(tc->type==CONSTRAINT_ACTIVITY_PREFERRED_STARTING_TIME)
-					recomputeTime=true;
-				bool tmp=gt.rules.removeTimeConstraint(tc);
-				assert(tmp);
-			}
+		foreach(TimeConstraint* tc, toBeRemovedTimeConstraints){
+			if(tc->type==CONSTRAINT_ACTIVITY_PREFERRED_STARTING_TIME)
+				recomputeTime=true;
+			bool tmp=gt.rules.removeTimeConstraint(tc);
+			assert(tmp);
 		}
 		//////
 
 		//space
-		QList<SpaceConstraint*> toBeRemovedSpace;
-		foreach(SpaceConstraint* sc, gt.rules.spaceConstraintsList){
-			if(sc->hasWrongDayOrHour(gt.rules)){
-				bool tmp=sc->canRepairWrongDayOrHour(gt.rules);
-				if(tmp){
-					int tmp2=sc->repairWrongDayOrHour(gt.rules);
-					assert(tmp2);
-				}
-				else{
-					toBeRemovedSpace.append(sc);
-				}
-			}
+		foreach(SpaceConstraint* sc, modifiableSpaceConstraints){
+			int tmp=sc->repairWrongDayOrHour(gt.rules);
+			assert(tmp);
 		}
 		
 		bool recomputeSpace=false;
 
-		if(toBeRemovedSpace.count()>0){
-			foreach(SpaceConstraint* sc, toBeRemovedSpace){
-				if(sc->type==CONSTRAINT_ACTIVITY_PREFERRED_ROOM)
-					recomputeSpace=true;
-				bool tmp=gt.rules.removeSpaceConstraint(sc);
-				assert(tmp);
-			}
+		foreach(SpaceConstraint* sc, toBeRemovedSpaceConstraints){
+			if(sc->type==CONSTRAINT_ACTIVITY_PREFERRED_ROOM)
+				recomputeSpace=true;
+			bool tmp=gt.rules.removeSpaceConstraint(sc);
+			assert(tmp);
 		}
 		//////
 
