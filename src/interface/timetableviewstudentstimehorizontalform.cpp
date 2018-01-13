@@ -962,21 +962,14 @@ void TimetableViewStudentsTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 
 		int d = item->column() / gt.rules.nHoursPerDay;
 		int h = item->column() % gt.rules.nHoursPerDay;
-					int ai=CachedSchedule::students_timetable_weekly[sbg][d][h];
-					
-					bool ok=true;
-					if(ai==UNALLOCATED_ACTIVITY){
-						ok=false;
-					}
-					else{
-						if(!gt.rules.internalActivitiesList[ai].studentsNames.contains(usedStudentsList.at(t))){
-							ok=false;
-						}
-					}
-		
-					//Activity* act=gt.rules.activitiesList.at(ai);
-					if(ok)
-						realActivities.insert(ai);
+		int ai=CachedSchedule::students_timetable_weekly[sbg][d][h];
+
+		if(ai==UNALLOCATED_ACTIVITY)
+			continue;
+		if(!gt.rules.internalActivitiesList[ai].studentsNames.contains(usedStudentsList.at(t)))
+			continue;
+
+		realActivities.insert(ai);
 	}
 
 	QSet<int> allSelectedActivities(realActivities);
