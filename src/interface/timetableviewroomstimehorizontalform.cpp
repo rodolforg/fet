@@ -753,8 +753,7 @@ void TimetableViewRoomsTimeHorizontalForm::lock(bool lockTime, bool lockSpace)
 				int ha=tc->times[ai]/gt.rules.nDaysPerWeek;
 				for(int ha2=ha; ha2<ha+gt.rules.internalActivitiesList[ai].duration; ha2++)
 					if(dummyActivitiesColumn.contains(da+ha2*gt.rules.nDaysPerWeek))
-						if(!dummyActivities.contains(ai))
-							dummyActivities.insert(ai);
+						dummyActivities.insert(ai);
 			}
 		}
 	}*/
@@ -768,8 +767,7 @@ void TimetableViewRoomsTimeHorizontalForm::lock(bool lockTime, bool lockSpace)
 				if(roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->isSelected()){
 					int ai=CachedSchedule::rooms_timetable_weekly[t][d][h];
 					if(ai!=UNALLOCATED_ACTIVITY)
-						if(!realActivities.contains(ai))
-							realActivities.insert(ai);
+						realActivities.insert(ai);
 				}
 			}
 		}
