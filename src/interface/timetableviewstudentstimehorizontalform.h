@@ -93,6 +93,13 @@ public slots:
 protected:
 //	void resizeEvent(QResizeEvent* event);
 	QColor stringToColor(QString s); //by Marco Vassura
+
+private:
+	/** Search for StudentSet in Rules::internalSubgroupsList
+	 * @param row index in TimetableView row
+	 * @returns index on Rules::internalSubgroupsList, or -1 on failure.
+	 */
+	int getStudentSetInternalIndexFromRow(int row);
 };
 
 #endif

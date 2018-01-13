@@ -494,30 +494,9 @@ void TimetableViewStudentsTimeHorizontalForm::updateStudentsTimetableTable(){
 	for(int t=0; t<usedStudentsList.count(); t++){
 		assert(t<studentsTimetableTable->rowCount());
 		
-		if(!gt.rules.studentsHash.contains(usedStudentsList.at(t)))
+		int sbg = getStudentSetInternalIndexFromRow(t);
+		if (sbg < 0)
 			continue;
-		
-		assert(gt.rules.studentsHash.contains(usedStudentsList.at(t)));
-		StudentsSet* ss=gt.rules.studentsHash.value(usedStudentsList.at(t), NULL);
-		assert(ss!=NULL);
-		int sbg=-1;
-		if(ss->type==STUDENTS_YEAR){
-			StudentsYear* year=(StudentsYear*)ss;
-			sbg=year->groupsList.at(0)->subgroupsList.at(0)->indexInInternalSubgroupsList;
-		}
-		else if(ss->type==STUDENTS_GROUP){
-			StudentsGroup* group=(StudentsGroup*)ss;
-			sbg=group->subgroupsList.at(0)->indexInInternalSubgroupsList;
-		}
-		else if(ss->type==STUDENTS_SUBGROUP){
-			StudentsSubgroup* subgroup=(StudentsSubgroup*)ss;
-			sbg=subgroup->indexInInternalSubgroupsList;
-		}
-		else{
-			assert(0);
-		}
-		
-		assert(sbg>=0 && sbg<gt.rules.nInternalSubgroups);
 		
 		QSet<QPair<int, int> > notAvailableDayHour=studentsSetNotAvailableDayHour.value(usedStudentsList.at(t), QSet<QPair<int, int> >());
 		
@@ -751,7 +730,6 @@ void TimetableViewStudentsTimeHorizontalForm::detailActivity(QTableWidgetItem* i
 	assert(item->row()>=0);
 	assert(item->column()>=0);
 
-	int t=item->row();
 	
 	/*if(gt.rules.nInternalTeachers!=gt.rules.teachersList.count()){
 		QMessageBox::warning(this, tr("FET warning"), tr("Cannot display the timetable, because you added or removed some teachers. Please regenerate the timetable and then view it"));
@@ -761,32 +739,13 @@ void TimetableViewStudentsTimeHorizontalForm::detailActivity(QTableWidgetItem* i
 	int d=item->column()/gt.rules.nHoursPerDay;
 	int h=item->column()%gt.rules.nHoursPerDay;
 
-	int sbg=-1;
-	
-	if(!gt.rules.studentsHash.contains(usedStudentsList.at(t))){
+	int t=item->row();
+	int sbg = getStudentSetInternalIndexFromRow(t);
+
+	if (sbg < 0) {
 		QMessageBox::warning(this, tr("FET warning"), tr("The students set is invalid - please close this dialog and open a new view students timetable"));
 		return;
 	}
-	assert(gt.rules.studentsHash.contains(usedStudentsList.at(t)));
-	StudentsSet* ss=gt.rules.studentsHash.value(usedStudentsList.at(t), NULL);
-	assert(ss!=NULL);
-	if(ss->type==STUDENTS_YEAR){
-		StudentsYear* year=(StudentsYear*)ss;
-		sbg=year->groupsList.at(0)->subgroupsList.at(0)->indexInInternalSubgroupsList;
-	}
-	else if(ss->type==STUDENTS_GROUP){
-		StudentsGroup* group=(StudentsGroup*)ss;
-		sbg=group->subgroupsList.at(0)->indexInInternalSubgroupsList;
-	}
-	else if(ss->type==STUDENTS_SUBGROUP){
-		StudentsSubgroup* subgroup=(StudentsSubgroup*)ss;
-		sbg=subgroup->indexInInternalSubgroupsList;
-	}
-	else{
-		assert(0);
-	}
-	
-	assert(sbg>=0 && sbg<gt.rules.nInternalSubgroups);
 	
 	QSet<QPair<int, int> > notAvailableDayHour=studentsSetNotAvailableDayHour.value(usedStudentsList.at(t), QSet<QPair<int, int> >());
 
@@ -931,34 +890,9 @@ void TimetableViewStudentsTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 		int t = item->row();
 		assert(t<usedStudentsList.count());
 
-		/*if(!gt.rules.studentsHash.contains(usedStudentsList.at(t))){
-			QMessagebox::warning(this, tr("FET warning"), tr("The students set is invalid - please close this dialog and open a new view students timetable"));
-			return;
-		}*/
-
-		if(!gt.rules.studentsHash.contains(usedStudentsList.at(t)))
+		int sbg = getStudentSetInternalIndexFromRow(t);
+		if (sbg < 0)
 			continue;
-		assert(gt.rules.studentsHash.contains(usedStudentsList.at(t)));
-		StudentsSet* ss=gt.rules.studentsHash.value(usedStudentsList.at(t), NULL);
-		assert(ss!=NULL);
-		int sbg=-1;
-		if(ss->type==STUDENTS_YEAR){
-			StudentsYear* year=(StudentsYear*)ss;
-			sbg=year->groupsList.at(0)->subgroupsList.at(0)->indexInInternalSubgroupsList;
-		}
-		else if(ss->type==STUDENTS_GROUP){
-			StudentsGroup* group=(StudentsGroup*)ss;
-			sbg=group->subgroupsList.at(0)->indexInInternalSubgroupsList;
-		}
-		else if(ss->type==STUDENTS_SUBGROUP){
-			StudentsSubgroup* subgroup=(StudentsSubgroup*)ss;
-			sbg=subgroup->indexInInternalSubgroupsList;
-		}
-		else{
-			assert(0);
-		}
-	
-		assert(sbg>=0 && sbg<gt.rules.nInternalSubgroups);
 
 		int d = item->column() / gt.rules.nHoursPerDay;
 		int h = item->column() % gt.rules.nHoursPerDay;
@@ -1239,4 +1173,34 @@ void TimetableViewStudentsTimeHorizontalForm::help()
 	s+=tr("An italic font cell means that the activity is locked in space, either permanently or not.");
 
 	LongTextMessageBox::largeInformation(this, tr("FET help"), s);
+}
+
+int TimetableViewStudentsTimeHorizontalForm::getStudentSetInternalIndexFromRow(int row)
+{
+	int sbg=-1;
+
+	if(!gt.rules.studentsHash.contains(usedStudentsList.at(row))){
+		return -1;
+	}
+	assert(gt.rules.studentsHash.contains(usedStudentsList.at(row)));
+	StudentsSet* ss=gt.rules.studentsHash.value(usedStudentsList.at(row), NULL);
+	assert(ss!=NULL);
+	if(ss->type==STUDENTS_YEAR){
+		StudentsYear* year=(StudentsYear*)ss;
+		sbg=year->groupsList.at(0)->subgroupsList.at(0)->indexInInternalSubgroupsList;
+	}
+	else if(ss->type==STUDENTS_GROUP){
+		StudentsGroup* group=(StudentsGroup*)ss;
+		sbg=group->subgroupsList.at(0)->indexInInternalSubgroupsList;
+	}
+	else if(ss->type==STUDENTS_SUBGROUP){
+		StudentsSubgroup* subgroup=(StudentsSubgroup*)ss;
+		sbg=subgroup->indexInInternalSubgroupsList;
+	}
+	else{
+		assert(0);
+	}
+
+	assert(sbg>=0 && sbg<gt.rules.nInternalSubgroups);
+	return sbg;
 }
