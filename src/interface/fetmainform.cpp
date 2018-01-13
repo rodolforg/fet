@@ -439,7 +439,7 @@ void RandomSeedDialog::help()
 		+tr("After you generate (even partially), the random seed (X and Y components) will change (each call of the random number generator updates the random seed components to the next numbers"
 		" in the sequence, and there are many calls to this random generating routine in the generate function)")
 		+"\n\n"
-		+tr("This setting is useful for more things, maybe one thing is bug report: send you file along with the random seed at the start of generating"
+		+tr("This setting is useful for more things, maybe one thing is bug report: send your file along with the random seed at the start of generating"
 		" (the two components, X and Y, are saved in the timetable directory at the start of generation)")
 	);
 }
