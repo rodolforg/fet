@@ -927,8 +927,9 @@ void TimetableViewStudentsTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 	}
 
 	QSet<int> realActivities;
-	for(int t=0; t<usedStudentsList.count(); t++){
-		assert(t<studentsTimetableTable->rowCount());
+	foreach (const QTableWidgetItem* item, studentsTimetableTable->selectedItems()) {
+		int t = item->row();
+		assert(t<usedStudentsList.count());
 
 		/*if(!gt.rules.studentsHash.contains(usedStudentsList.at(t))){
 			QMessagebox::warning(this, tr("FET warning"), tr("The students set is invalid - please close this dialog and open a new view students timetable"));
@@ -959,11 +960,8 @@ void TimetableViewStudentsTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 	
 		assert(sbg>=0 && sbg<gt.rules.nInternalSubgroups);
 
-		for(int d=0; d<gt.rules.nDaysPerWeek; d++){
-			for(int h=0; h<gt.rules.nHoursPerDay; h++){
-				assert(d*gt.rules.nHoursPerDay+h<studentsTimetableTable->columnCount());
-				if(studentsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->isSelected()){
-
+		int d = item->column() / gt.rules.nHoursPerDay;
+		int h = item->column() % gt.rules.nHoursPerDay;
 					int ai=CachedSchedule::students_timetable_weekly[sbg][d][h];
 					
 					bool ok=true;
@@ -979,9 +977,6 @@ void TimetableViewStudentsTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 					//Activity* act=gt.rules.activitiesList.at(ai);
 					if(ok)
 						realActivities.insert(ai);
-				}
-			}
-		}
 	}
 
 	QSet<int> allSelectedActivities(realActivities);
