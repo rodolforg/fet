@@ -48279,8 +48279,12 @@ Note : enseignant non disponible et pause ne sont pas comptés comme vides.</tra
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="442"/>
+        <source>This setting is useful for more things, maybe one thing is bug report: send your file along with the random seed at the start of generating (the two components, X and Y, are saved in the timetable directory at the start of generation)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>This setting is useful for more things, maybe one thing is bug report: send you file along with the random seed at the start of generating (the two components, X and Y, are saved in the timetable directory at the start of generation)</source>
-        <translation>Ce réglage a d&apos;autres utilités, l&apos;une d&apos;entre elles est le report de bug : l&apos;envoi de votre fichier avec le noyau aléatoire du début de la génération (les deux composantes, X et Y, sont enregistrées dans le répertoire du planning au début de la génération)</translation>
+        <translation type="vanished">Ce réglage a d&apos;autres utilités, l&apos;une d&apos;entre elles est le report de bug : l&apos;envoi de votre fichier avec le noyau aléatoire du début de la génération (les deux composantes, X et Y, sont enregistrées dans le répertoire du planning au début de la génération)</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="451"/>

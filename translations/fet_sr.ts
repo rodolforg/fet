@@ -47939,8 +47939,12 @@ Note: teacher not available and break are not counted as gaps.</source>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="442"/>
+        <source>This setting is useful for more things, maybe one thing is bug report: send your file along with the random seed at the start of generating (the two components, X and Y, are saved in the timetable directory at the start of generation)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>This setting is useful for more things, maybe one thing is bug report: send you file along with the random seed at the start of generating (the two components, X and Y, are saved in the timetable directory at the start of generation)</source>
-        <translation>Ово подешавање је корисно за више ствари, можда једна ствар је погрешан извјештај: послата датотека заједно са случајним сејањем на почетку стварања (две компоненте, X и Y, се чувају у фасцикли распореда на почетку стварања)</translation>
+        <translation type="vanished">Ово подешавање је корисно за више ствари, можда једна ствар је погрешан извјештај: послата датотека заједно са случајним сејањем на почетку стварања (две компоненте, X и Y, се чувају у фасцикли распореда на почетку стварања)</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="451"/>

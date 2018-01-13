@@ -47912,8 +47912,12 @@ Nota: els no disponibles i les pauses no se&apos;ls compten als professors com a
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="442"/>
+        <source>This setting is useful for more things, maybe one thing is bug report: send your file along with the random seed at the start of generating (the two components, X and Y, are saved in the timetable directory at the start of generation)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>This setting is useful for more things, maybe one thing is bug report: send you file along with the random seed at the start of generating (the two components, X and Y, are saved in the timetable directory at the start of generation)</source>
-        <translation>Aquesta configuració és útil per més coses, potser una d&apos;elles és informar d&apos;un bug: envia el teu fitxer juntament amb la llavor aleatòria de l&apos;inici de la generació (els dos components, X i Y, es desen en el directori de l&apos;horari al començament de la generació)</translation>
+        <translation type="vanished">Aquesta configuració és útil per més coses, potser una d&apos;elles és informar d&apos;un bug: envia el teu fitxer juntament amb la llavor aleatòria de l&apos;inici de la generació (els dos components, X i Y, es desen en el directori de l&apos;horari al començament de la generació)</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="451"/>

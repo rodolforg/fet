@@ -48235,8 +48235,12 @@ Nota: O professor não está disponível e ruptura não são contados como lacun
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="442"/>
+        <source>This setting is useful for more things, maybe one thing is bug report: send your file along with the random seed at the start of generating (the two components, X and Y, are saved in the timetable directory at the start of generation)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>This setting is useful for more things, maybe one thing is bug report: send you file along with the random seed at the start of generating (the two components, X and Y, are saved in the timetable directory at the start of generation)</source>
-        <translation>Essa configuração é útil para mais coisas, talvez uma delas seja relatar um bug: Envie seu arquivo com os valores aleatórios (os dois componentes de semente aleatória X e Y, que são armazenados na sua pasta de horários)</translation>
+        <translation type="vanished">Essa configuração é útil para mais coisas, talvez uma delas seja relatar um bug: Envie seu arquivo com os valores aleatórios (os dois componentes de semente aleatória X e Y, que são armazenados na sua pasta de horários)</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="451"/>

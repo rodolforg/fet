@@ -48257,7 +48257,7 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="434"/>
         <source>It is thus very important to note that if you start two or more instances of FET when the number of seconds since 1 January 1970 is the same the initial random seeds will be identical, leading to the same timetable generation behavior for an identical input file. If you intend to generate different timetables for the same file, you need to wait at least one second between starting two succesive FET instances. Or you can change the initial random seed by hand</source>
-        <translation type="unfinished"></translation>
+        <translation>Es muy importante tener en cuenta que si inicia dos o más instancias de FET el número de segundos transcurridos desde el 1 de enero de 1970 es el mismo, lo que causa que las semillas aleatorias iniciales sean idénticas. Esto generará un comportamiento idéntico en la generación de calendario para un archivo de entrada idéntico. Si tiene la intención de generar diferentes horarios para el mismo archivo, debe esperar por lo menos un segundo para comenzar dos instancias FET sucesivas. La alternativa es cambiar la semilla aleatoria inicial a la mano</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="439"/>
@@ -48266,8 +48266,12 @@ Nota: Los profesores no disponibles y las pausas no se cuentan como huecos.</tra
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="442"/>
+        <source>This setting is useful for more things, maybe one thing is bug report: send your file along with the random seed at the start of generating (the two components, X and Y, are saved in the timetable directory at the start of generation)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>This setting is useful for more things, maybe one thing is bug report: send you file along with the random seed at the start of generating (the two components, X and Y, are saved in the timetable directory at the start of generation)</source>
-        <translation>Esta configuración es útil en más situaciones, una de ellas es informar de errores: enviar el archivo junto con la semilla aleatoria al inicio de la generación (los dos componentes, X e Y, se guardan en el directorio del horario al inicio de su creación)</translation>
+        <translation type="vanished">Esta configuración es útil en más situaciones, una de ellas es informar de errores: enviar el archivo junto con la semilla aleatoria al inicio de la generación (los dos componentes, X e Y, se guardan en el directorio del horario al inicio de su creación)</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="451"/>
@@ -55171,9 +55175,9 @@ Abajo: %4</translation>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1020"/>
         <source>Added %n locking time constraint(s).</source>
         <extracomment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field. Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &quot;Handling Plurals&quot;. You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts (open these files with Qt Linguist and see the translation of this field).</extracomment>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Se añadió %n restricción de bloqueo de tiempo.</numerusform>
+            <numerusform>Se añadieron %n restricciones de bloqueo de tiempo.</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -55185,9 +55189,9 @@ Abajo: %4</translation>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1028"/>
         <source>Added %n locking space constraint(s).</source>
         <extracomment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field. Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &quot;Handling Plurals&quot;. You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts (open these files with Qt Linguist and see the translation of this field).</extracomment>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Se añadió %n restricción de bloqueo de lugar.</numerusform>
+            <numerusform>Se añadieron %n restricciones de bloqueo de lugar.</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -55199,9 +55203,9 @@ Abajo: %4</translation>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1036"/>
         <source>Removed %n locking time constraint(s).</source>
         <extracomment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field. Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &quot;Handling Plurals&quot;. You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts (open these files with Qt Linguist and see the translation of this field).</extracomment>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Se eliminó %n restricción de bloqueo de tiempo.</numerusform>
+            <numerusform>Se eliminaron %n restricciones de bloqueo de tiempo.</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -55213,9 +55217,9 @@ Abajo: %4</translation>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1044"/>
         <source>Removed %n locking space constraint(s).</source>
         <extracomment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field. Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &quot;Handling Plurals&quot;. You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts (open these files with Qt Linguist and see the translation of this field).</extracomment>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Se eliminó %n restricción de bloqueo de lugar.</numerusform>
+            <numerusform>Se eliminaron %n restricciones de bloqueo de lugar.</numerusform>
         </translation>
     </message>
 </context>

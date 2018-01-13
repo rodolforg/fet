@@ -47864,7 +47864,7 @@ Shënim: mësues jo të gatshëm dhe ndërprerje nuk janë orë dritare.</transl
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="442"/>
-        <source>This setting is useful for more things, maybe one thing is bug report: send you file along with the random seed at the start of generating (the two components, X and Y, are saved in the timetable directory at the start of generation)</source>
+        <source>This setting is useful for more things, maybe one thing is bug report: send your file along with the random seed at the start of generating (the two components, X and Y, are saved in the timetable directory at the start of generation)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

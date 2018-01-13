@@ -48310,7 +48310,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="434"/>
         <source>It is thus very important to note that if you start two or more instances of FET when the number of seconds since 1 January 1970 is the same the initial random seeds will be identical, leading to the same timetable generation behavior for an identical input file. If you intend to generate different timetables for the same file, you need to wait at least one second between starting two succesive FET instances. Or you can change the initial random seed by hand</source>
-        <translation type="unfinished"></translation>
+        <translation>لذلك فمن المهم جدا ملاحظة أنه إذا قمت بتشغيل حالتين أو أكثر من FET عندما يكون عدد الثواني منذ 1 يناير 1970 هو نفسه، فإن البذور العشوائية الأولية ستكون متطابقة، مما يؤدي إلى نفس السلوك الانتاجي للجدول الزمني و هدا من أجل ملف إدخال متطابق . إذا كنت تنوي إنشاء جداول زمنية مختلفة لنفس ملف الادخال، تحتاج إلى الانتظار ثانية واحدة على الأقل بين بدء اثنين من حالات FET الناجحة. أو يمكنك تغيير البذور العشوائية الأولية يدويا</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="439"/>
@@ -48319,8 +48319,12 @@ Note: teacher not available and break are not counted as gaps.</source>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="442"/>
+        <source>This setting is useful for more things, maybe one thing is bug report: send your file along with the random seed at the start of generating (the two components, X and Y, are saved in the timetable directory at the start of generation)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>This setting is useful for more things, maybe one thing is bug report: send you file along with the random seed at the start of generating (the two components, X and Y, are saved in the timetable directory at the start of generation)</source>
-        <translation>هذا الاعداد هو مفيد لمزيد من الأغراض، ربما أحد الأغراض هو من أجل رفع تقرير عن خطأ برمجي محتمل: ابعث ملفك مرفقا مع البذرة العشوائية عند انطلاق الانتاج (الاحداثيتان، X و Y، محفوظتان في مجلد الجدول عند انطلاق التشغيل)</translation>
+        <translation type="vanished">هذا الاعداد هو مفيد لمزيد من الأغراض، ربما أحد الأغراض هو من أجل رفع تقرير عن خطأ برمجي محتمل: ابعث ملفك مرفقا مع البذرة العشوائية عند انطلاق الانتاج (الاحداثيتان، X و Y، محفوظتان في مجلد الجدول عند انطلاق التشغيل)</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="451"/>
@@ -55228,13 +55232,13 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1020"/>
         <source>Added %n locking time constraint(s).</source>
         <extracomment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field. Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &quot;Handling Plurals&quot;. You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts (open these files with Qt Linguist and see the translation of this field).</extracomment>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>اضافة %n من القيود الزمنية المقفلة.</numerusform>
+            <numerusform>اضافة %n قيدا زمنيا مقفلا.</numerusform>
+            <numerusform>اضافة %n قيدين زمنيين مقفلين.</numerusform>
+            <numerusform>اضافة %n قيود زمنية مقفلة.</numerusform>
+            <numerusform>اضافة %n قيدا زمنيا مقفلا.</numerusform>
+            <numerusform>اضافة %n قيد زمني مقفل.</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -55246,13 +55250,13 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1028"/>
         <source>Added %n locking space constraint(s).</source>
         <extracomment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field. Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &quot;Handling Plurals&quot;. You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts (open these files with Qt Linguist and see the translation of this field).</extracomment>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>اضافة %n من القيود المكانية المقفلة.</numerusform>
+            <numerusform>اضافة %n قيدا مكانيا مقفلا.</numerusform>
+            <numerusform>اضافة %n قيدين مكانيين مقفلين.</numerusform>
+            <numerusform>اضافة %n قيود مكانية مقفلة.</numerusform>
+            <numerusform>اضافة %n قيدا مكانيا مقفلا.</numerusform>
+            <numerusform>اضافة %n قيد مكاني مقفل.</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -55264,13 +55268,13 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1036"/>
         <source>Removed %n locking time constraint(s).</source>
         <extracomment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field. Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &quot;Handling Plurals&quot;. You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts (open these files with Qt Linguist and see the translation of this field).</extracomment>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>حذف %n من القيود الزمنية المقفلة.</numerusform>
+            <numerusform>حدف %n قيد زمني مقفل.</numerusform>
+            <numerusform>حدف %n قيدين زمنيين مقفلين.</numerusform>
+            <numerusform>حدف %n قيود زمنية مقفلة.</numerusform>
+            <numerusform>حدف %n قيدا زمنيا مقفلا.</numerusform>
+            <numerusform>حدف %n قيد زمني مقفل.</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -55282,13 +55286,13 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1044"/>
         <source>Removed %n locking space constraint(s).</source>
         <extracomment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field. Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &quot;Handling Plurals&quot;. You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts (open these files with Qt Linguist and see the translation of this field).</extracomment>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>حذف %n من القيود المكانية المقفلة.</numerusform>
+            <numerusform>حدف %n قيد مكاني مقفل.</numerusform>
+            <numerusform>حدف %n قيدين مكانيين مقفلين.</numerusform>
+            <numerusform>حدف %n قيود مكانية مقفلة.</numerusform>
+            <numerusform>حدف %n قيدا مكانيا مقفلا.</numerusform>
+            <numerusform>حدف %n قيد مكاني مقفل.</numerusform>
         </translation>
     </message>
 </context>
