@@ -761,9 +761,10 @@ void TimetableViewTeachersTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 		}
 	}
 
-	for(int ai=0; ai<gt.rules.nInternalActivities; ai++){
-		assert( ! (realActivities.contains(ai) && dummyActivities.contains(ai)) );
-		if(realActivities.contains(ai) || dummyActivities.contains(ai)){
+	QSet<int> allSelectedActivities(realActivities);
+	allSelectedActivities.unite(dummyActivities);
+
+	foreach (int ai, allSelectedActivities) {
 			assert(tc->times[ai]!=UNALLOCATED_TIME);
 			int day=tc->times[ai]%gt.rules.nDaysPerWeek;
 			int hour=tc->times[ai]/gt.rules.nDaysPerWeek;
@@ -935,7 +936,6 @@ void TimetableViewTeachersTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 						report=false;
 				}
 			}
-		}
 	}
 
 	QStringList added;

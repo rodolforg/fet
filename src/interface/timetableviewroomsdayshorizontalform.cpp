@@ -522,19 +522,16 @@ void TimetableViewRoomsDaysHorizontalForm::lock(bool lockTime, bool lockSpace)
 	int addedS=0, unlockedS=0;
 
 	//lock selected activities
-	QSet <int> careAboutIndex;		//added by Volker Dirr. Needed, because of activities with duration > 1
-	careAboutIndex.clear();
-	for(int j=0; j<gt.rules.nHoursPerDay && j<roomsTimetableTable->rowCount(); j++){
-		for(int k=0; k<gt.rules.nDaysPerWeek && k<roomsTimetableTable->columnCount(); k++){
-			if(roomsTimetableTable->item(j, k)->isSelected()){
+	foreach (const QTableWidgetItem *item, roomsTimetableTable->selectedItems()) {
+		int j = item->row();
+		int k = item->column();
 				int ai=CachedSchedule::rooms_timetable_weekly[i][k][j];
-				if(ai!=UNALLOCATED_ACTIVITY && !careAboutIndex.contains(ai)){	//modified, because of activities with duration > 1
-					careAboutIndex.insert(ai);					//Needed, because of activities with duration > 1
+				if(ai!=UNALLOCATED_ACTIVITY){
 					int a_tim=c->times[ai];
 					int hour=a_tim/gt.rules.nDaysPerWeek;
 					int day=a_tim%gt.rules.nDaysPerWeek;
 
-					Activity* act=&gt.rules.internalActivitiesList[ai];
+					const Activity* act=&gt.rules.internalActivitiesList[ai];
 					if(lockTime){
 						ConstraintActivityPreferredStartingTime* ctr=new ConstraintActivityPreferredStartingTime(100.0, act->id, day, hour, false);
 						bool t=gt.rules.addTimeConstraint(ctr);
@@ -678,8 +675,6 @@ void TimetableViewRoomsDaysHorizontalForm::lock(bool lockTime, bool lockSpace)
 						}
 					}
 				}
-			}
-		}
 	}
 	
 	QStringList added;
