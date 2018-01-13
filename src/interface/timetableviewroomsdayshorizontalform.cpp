@@ -121,26 +121,7 @@ TimetableViewRoomsDaysHorizontalForm::TimetableViewRoomsDaysHorizontalForm(QWidg
 */
 //////////
 
-/////////just for testing
-	QSet<int> backupLockedTime;
-	QSet<int> backupPermanentlyLockedTime;
-	QSet<int> backupLockedSpace;
-	QSet<int> backupPermanentlyLockedSpace;
-
-	backupLockedTime=idsOfLockedTime;
-	backupPermanentlyLockedTime=idsOfPermanentlyLockedTime;
-	backupLockedSpace=idsOfLockedSpace;
-	backupPermanentlyLockedSpace=idsOfPermanentlyLockedSpace;
-
-	//added by Volker Dirr
-	//these 2 lines are not really needed - we just keep them to be safer
-	LockUnlock::computeLockedUnlockedActivitiesTimeSpace();
-	
-	assert(backupLockedTime==idsOfLockedTime);
-	assert(backupPermanentlyLockedTime==idsOfPermanentlyLockedTime);
-	assert(backupLockedSpace==idsOfLockedSpace);
-	assert(backupPermanentlyLockedSpace==idsOfPermanentlyLockedSpace);
-//////////
+	LockUnlock::assertIsUpdated();
 
 	LockUnlock::increaseCommunicationSpinBox();
 
@@ -701,24 +682,7 @@ void TimetableViewRoomsDaysHorizontalForm::lock(bool lockTime, bool lockSpace)
 		s=QCoreApplication::translate("TimetableViewForm", "No locking constraints added or removed.");
 	QMessageBox::information(this, tr("FET information"), s);
 
-////////just for testing
-	QSet<int> backupLockedTime;
-	QSet<int> backupPermanentlyLockedTime;
-	QSet<int> backupLockedSpace;
-	QSet<int> backupPermanentlyLockedSpace;
-	
-	backupLockedTime=idsOfLockedTime;
-	backupPermanentlyLockedTime=idsOfPermanentlyLockedTime;
-	backupLockedSpace=idsOfLockedSpace;
-	backupPermanentlyLockedSpace=idsOfPermanentlyLockedSpace;
-	
-	LockUnlock::computeLockedUnlockedActivitiesTimeSpace(); //not really needed, just to test
-	
-	assert(backupLockedTime==idsOfLockedTime);
-	assert(backupPermanentlyLockedTime==idsOfPermanentlyLockedTime);
-	assert(backupLockedSpace==idsOfLockedSpace);
-	assert(backupPermanentlyLockedSpace==idsOfPermanentlyLockedSpace);
-/////////
+	LockUnlock::assertIsUpdated();
 
 	LockUnlock::increaseCommunicationSpinBox(); //this is needed
 	

@@ -122,26 +122,7 @@ TimetableViewStudentsDaysHorizontalForm::TimetableViewStudentsDaysHorizontalForm
 	if(settings.contains(this->metaObject()->className()+QString("/horizontal-splitter-state")))
 		horizontalSplitter->restoreState(settings.value(this->metaObject()->className()+QString("/horizontal-splitter-state")).toByteArray());
 
-//////////just for testing
-	QSet<int> backupLockedTime;
-	QSet<int> backupPermanentlyLockedTime;
-	QSet<int> backupLockedSpace;
-	QSet<int> backupPermanentlyLockedSpace;
-
-	backupLockedTime=idsOfLockedTime;
-	backupPermanentlyLockedTime=idsOfPermanentlyLockedTime;
-	backupLockedSpace=idsOfLockedSpace;
-	backupPermanentlyLockedSpace=idsOfPermanentlyLockedSpace;
-
-	//added by Volker Dirr
-	//these lines are not really needed - just to be safer
-	LockUnlock::computeLockedUnlockedActivitiesTimeSpace();
-	
-	assert(backupLockedTime==idsOfLockedTime);
-	assert(backupPermanentlyLockedTime==idsOfPermanentlyLockedTime);
-	assert(backupLockedSpace==idsOfLockedSpace);
-	assert(backupPermanentlyLockedSpace==idsOfPermanentlyLockedSpace);
-//////////
+	LockUnlock::assertIsUpdated();
 
 	LockUnlock::increaseCommunicationSpinBox();
 
@@ -822,24 +803,7 @@ void TimetableViewStudentsDaysHorizontalForm::lock(bool lockTime, bool lockSpace
 		s=QCoreApplication::translate("TimetableViewForm", "No locking constraints added or removed.");
 	QMessageBox::information(this, tr("FET information"), s);
 
-///////////just for testing
-	QSet<int> backupLockedTime;
-	QSet<int> backupPermanentlyLockedTime;
-	QSet<int> backupLockedSpace;
-	QSet<int> backupPermanentlyLockedSpace;
-	
-	backupLockedTime=idsOfLockedTime;
-	backupPermanentlyLockedTime=idsOfPermanentlyLockedTime;
-	backupLockedSpace=idsOfLockedSpace;
-	backupPermanentlyLockedSpace=idsOfPermanentlyLockedSpace;
-	
-	LockUnlock::computeLockedUnlockedActivitiesTimeSpace(); //just to make sure, not really needed, but to test better
-	
-	assert(backupLockedTime==idsOfLockedTime);
-	assert(backupPermanentlyLockedTime==idsOfPermanentlyLockedTime);
-	assert(backupLockedSpace==idsOfLockedSpace);
-	assert(backupPermanentlyLockedSpace==idsOfPermanentlyLockedSpace);
-///////////
+	LockUnlock::assertIsUpdated();
 
 	LockUnlock::increaseCommunicationSpinBox(); //this is needed
 	

@@ -167,26 +167,7 @@ TimetableViewTeachersTimeHorizontalForm::TimetableViewTeachersTimeHorizontalForm
 	if(settings.contains(this->metaObject()->className()+QString("/toggle-radio-button")))
 		toggleRadioButton->setChecked(settings.value(this->metaObject()->className()+QString("/toggle-radio-button")).toBool());
 
-///////////just for testing
-	QSet<int> backupLockedTime;
-	QSet<int> backupPermanentlyLockedTime;
-	QSet<int> backupLockedSpace;
-	QSet<int> backupPermanentlyLockedSpace;
-	
-	backupLockedTime=idsOfLockedTime;
-	backupPermanentlyLockedTime=idsOfPermanentlyLockedTime;
-	backupLockedSpace=idsOfLockedSpace;
-	backupPermanentlyLockedSpace=idsOfPermanentlyLockedSpace;
-	
-	//added by Volker Dirr
-	//these 2 lines are not really needed - just to be safer
-	LockUnlock::computeLockedUnlockedActivitiesTimeSpace();
-	
-	assert(backupLockedTime==idsOfLockedTime);
-	assert(backupPermanentlyLockedTime==idsOfPermanentlyLockedTime);
-	assert(backupLockedSpace==idsOfLockedSpace);
-	assert(backupPermanentlyLockedSpace==idsOfPermanentlyLockedSpace);
-///////////
+	LockUnlock::assertIsUpdated();
 
 	if(gt.rules.nInternalTeachers!=gt.rules.teachersList.count()){
 		assert(0); //should be taken care of by Rules - teachers_schedule_ready is false in the Rules if adding or removing teachers.
@@ -951,24 +932,7 @@ void TimetableViewTeachersTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 		s=QCoreApplication::translate("TimetableViewForm", "No locking constraints added or removed.");
 	QMessageBox::information(this, tr("FET information"), s);
 
-////////// just for testing
-	QSet<int> backupLockedTime;
-	QSet<int> backupPermanentlyLockedTime;
-	QSet<int> backupLockedSpace;
-	QSet<int> backupPermanentlyLockedSpace;
-	
-	backupLockedTime=idsOfLockedTime;
-	backupPermanentlyLockedTime=idsOfPermanentlyLockedTime;
-	backupLockedSpace=idsOfLockedSpace;
-	backupPermanentlyLockedSpace=idsOfPermanentlyLockedSpace;
-	
-	LockUnlock::computeLockedUnlockedActivitiesTimeSpace(); //not needed, just for testing
-	
-	assert(backupLockedTime==idsOfLockedTime);
-	assert(backupPermanentlyLockedTime==idsOfPermanentlyLockedTime);
-	assert(backupLockedSpace==idsOfLockedSpace);
-	assert(backupPermanentlyLockedSpace==idsOfPermanentlyLockedSpace);
-///////////
+	LockUnlock::assertIsUpdated();
 
 	LockUnlock::increaseCommunicationSpinBox();
 	

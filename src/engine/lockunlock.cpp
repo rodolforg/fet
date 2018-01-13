@@ -153,3 +153,25 @@ QString LockUnlock::getActivityLockDetailsString(int activityId)
 	return descr;
 	//added by Volker Dirr (end)
 }
+
+void LockUnlock::assertIsUpdated()
+{
+	////////// just for testing
+	QSet<int> backupLockedTime;
+	QSet<int> backupPermanentlyLockedTime;
+	QSet<int> backupLockedSpace;
+	QSet<int> backupPermanentlyLockedSpace;
+
+	backupLockedTime=idsOfLockedTime;
+	backupPermanentlyLockedTime=idsOfPermanentlyLockedTime;
+	backupLockedSpace=idsOfLockedSpace;
+	backupPermanentlyLockedSpace=idsOfPermanentlyLockedSpace;
+
+	LockUnlock::computeLockedUnlockedActivitiesTimeSpace(); //not needed, just for testing
+
+	assert(backupLockedTime==idsOfLockedTime);
+	assert(backupPermanentlyLockedTime==idsOfPermanentlyLockedTime);
+	assert(backupLockedSpace==idsOfLockedSpace);
+	assert(backupPermanentlyLockedSpace==idsOfPermanentlyLockedSpace);
+	///////////
+}

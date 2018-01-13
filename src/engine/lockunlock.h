@@ -50,6 +50,8 @@ public:
 
 	static QString getActivityLockTipString(int activityId);
 	static QString getActivityLockDetailsString(int activityId);
+
+	static void assertIsUpdated();
 };
 
 #endif
