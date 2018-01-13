@@ -855,20 +855,19 @@ void TimetableViewStudentsTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 	int addedS=0, unlockedS=0;
 	
 	QSet<int> dummyActivitiesColumn; //Dummy activities (no students) column to be considered, because the whole column is selected.
-	for(int d=0; d<gt.rules.nDaysPerWeek; d++){
-		for(int h=0; h<gt.rules.nHoursPerDay; h++){
-			assert(d*gt.rules.nHoursPerDay+h < studentsTimetableTable->columnCount());
-			bool wholeColumn=true;
-			for(int t=0; t<usedStudentsList.count(); t++){
-				assert(t<studentsTimetableTable->rowCount());
-
-				if(!studentsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->isSelected()){
-					wholeColumn=false;
-					break;
-				}
+	for(int col=0; col < studentsTimetableTable->columnCount(); col++) {
+		bool wholeColumn=true;
+		for (int row=0; row < studentsTimetableTable->rowCount(); row++) {
+			if(!studentsTimetableTable->item(row, col)->isSelected()){
+				wholeColumn=false;
+				break;
 			}
-			if(wholeColumn)
-				dummyActivitiesColumn.insert(d+h*gt.rules.nDaysPerWeek);
+		}
+		if(wholeColumn) {
+			int d = col / gt.rules.nHoursPerDay;
+			int h = col % gt.rules.nHoursPerDay;
+			int time = d + h * gt.rules.nDaysPerWeek;
+			dummyActivitiesColumn.insert(time);
 		}
 	}
 	
@@ -876,10 +875,7 @@ void TimetableViewStudentsTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 	for(int ai=0; ai<gt.rules.nInternalActivities; ai++){
 		if(gt.rules.internalActivitiesList[ai].iSubgroupsList.count()==0){
 			if(tc->times[ai]!=UNALLOCATED_TIME){
-				int da=tc->times[ai]%gt.rules.nDaysPerWeek;
-				int ha=tc->times[ai]/gt.rules.nDaysPerWeek;
-				for(int ha2=ha; ha2<ha+gt.rules.internalActivitiesList[ai].duration; ha2++)
-					if(dummyActivitiesColumn.contains(da+ha2*gt.rules.nDaysPerWeek))
+					if(dummyActivitiesColumn.contains(tc->times[ai]))
 						dummyActivities.insert(ai);
 			}
 		}
