@@ -760,10 +760,10 @@ void TimetableViewRoomsTimeHorizontalForm::lock(bool lockTime, bool lockSpace)
 
 	QSet<int> realActivities;
 	foreach (const QTableWidgetItem* item, roomsTimetableTable->selectedItems()) {
-		int t = item->row();
+		int r = item->row();
 		int d = item->column() / gt.rules.nHoursPerDay;
 		int h = item->column() % gt.rules.nHoursPerDay;
-		int ai=CachedSchedule::rooms_timetable_weekly[t][d][h];
+		int ai=CachedSchedule::rooms_timetable_weekly[r][d][h];
 		if(ai!=UNALLOCATED_ACTIVITY)
 			realActivities.insert(ai);
 	}
