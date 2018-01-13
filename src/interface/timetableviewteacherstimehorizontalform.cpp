@@ -745,18 +745,13 @@ void TimetableViewTeachersTimeHorizontalForm::lock(bool lockTime, bool lockSpace
 	}
 
 	QSet<int> realActivities;
-	for(int t=0; t<gt.rules.nInternalTeachers; t++){
-		assert(t<teachersTimetableTable->rowCount());
-		for(int d=0; d<gt.rules.nDaysPerWeek; d++){
-			for(int h=0; h<gt.rules.nHoursPerDay; h++){
-				assert(d*gt.rules.nHoursPerDay+h<teachersTimetableTable->columnCount());
-				if(teachersTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->isSelected()){
-					int ai=CachedSchedule::teachers_timetable_weekly[t][d][h];
-					if(ai!=UNALLOCATED_ACTIVITY)
-						realActivities.insert(ai);
-				}
-			}
-		}
+	foreach (const QTableWidgetItem* item, teachersTimetableTable->selectedItems()) {
+		int t = item->row();
+		int d = item->column() / gt.rules.nHoursPerDay;
+		int h = item->column() % gt.rules.nHoursPerDay;
+		int ai=CachedSchedule::teachers_timetable_weekly[t][d][h];
+		if(ai!=UNALLOCATED_ACTIVITY)
+			realActivities.insert(ai);
 	}
 
 	QSet<int> allSelectedActivities(realActivities);

@@ -759,18 +759,13 @@ void TimetableViewRoomsTimeHorizontalForm::lock(bool lockTime, bool lockSpace)
 	}*/
 
 	QSet<int> realActivities;
-	for(int t=0; t<gt.rules.nInternalRooms; t++){
-		assert(t<roomsTimetableTable->rowCount());
-		for(int d=0; d<gt.rules.nDaysPerWeek; d++){
-			for(int h=0; h<gt.rules.nHoursPerDay; h++){
-				assert(d*gt.rules.nHoursPerDay+h<roomsTimetableTable->columnCount());
-				if(roomsTimetableTable->item(t, d*gt.rules.nHoursPerDay+h)->isSelected()){
-					int ai=CachedSchedule::rooms_timetable_weekly[t][d][h];
-					if(ai!=UNALLOCATED_ACTIVITY)
-						realActivities.insert(ai);
-				}
-			}
-		}
+	foreach (const QTableWidgetItem* item, roomsTimetableTable->selectedItems()) {
+		int t = item->row();
+		int d = item->column() / gt.rules.nHoursPerDay;
+		int h = item->column() % gt.rules.nHoursPerDay;
+		int ai=CachedSchedule::rooms_timetable_weekly[t][d][h];
+		if(ai!=UNALLOCATED_ACTIVITY)
+			realActivities.insert(ai);
 	}
 
 	QSet<int> allSelectedActivities(realActivities);
