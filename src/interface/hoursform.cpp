@@ -104,6 +104,16 @@ void HoursForm::ok()
 				return;
 			}
 			
+	bool userChangedHours = false;
+	for(int i=0; i < nHours; i++) {
+		if (hoursNames[i]->text() != gt.rules.hoursOfTheDay[i]) {
+			userChangedHours = true;
+			break;
+		}
+	}
+	if (!userChangedHours)
+		return;
+
 	//2011-10-18
 	int cnt_mod=0;
 	int cnt_rem=0;
