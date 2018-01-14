@@ -34,6 +34,8 @@ File rules.h
 #include "room.h"
 #include "building.h"
 
+#include "groupactivitiesininitialorderitem.h"
+
 #include "matrix.h"
 
 #include <QHash>

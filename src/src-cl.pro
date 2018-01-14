@@ -1,6 +1,7 @@
 SOURCES += \
 	engine/timetableexport.cpp \
 	engine/activity.cpp \
+    engine/groupactivitiesininitialorderitem.cpp \
 	engine/solution.cpp \
 	engine/timetable.cpp \
 	engine/rules.cpp \
@@ -36,6 +37,7 @@ SOURCES += \
 HEADERS += \
 	engine/timetableexport.h \
 	engine/activity.h \
+    engine/groupactivitiesininitialorderitem.h \
 	engine/solution.h \
 	engine/timetable.h \
 	engine/rules.h \

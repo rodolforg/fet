@@ -32,6 +32,7 @@ SOURCES += tst_constraintstudentsmincontinuousgapinintervaltest.cpp \
     ../../../../src/engine/building.cpp \
     ../../../../src/engine/room.cpp \
     ../../../../src/engine/rules.cpp \
+    ../../../../src/engine/groupactivitiesininitialorderitem.cpp \
     ../../../../src/engine/solution.cpp \
     ../../../../src/engine/studentsset.cpp \
     ../../../../src/engine/subject.cpp \
