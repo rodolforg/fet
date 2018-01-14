@@ -2027,4 +2027,4 @@ Versions 5.35.0 - 5.35.v
 	- The alphabetic sorting of the items now respects the user's locale (the special characters are better ordered).
 	Suggestions and code by rodolforg and ChrisW67.
 	- Improved the translation procedure of some fields. Suggestion and code by rodolforg.
-	- Minor string bug fix (reported by Vangelis Karafillidis).
+	- Minor strings bugs fixed (reported by Vangelis Karafillidis).
