@@ -16658,8 +16658,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     </message>
     <message>
         <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="299"/>
+        <source>This constraint was suggested for the following situation: a user needed that activities A1, A2 and A3 to be in consecutive days (like: A1 on Tuesday, A2 on Wednesday and A3 on Thursday. So, they must be in 3 consecutive days). This is simple: add a constraint max days between activities for A1, A2 and A3, with max 2 days between them. It is supposed that these activities are constrained not to be in the same day by a constraint min days between activities.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>This constraint was suggested for the following situation: a user needed that activities A1, A2 and A3 to be in follower days (like: A1 on Tuesday, A2 on Wednesday and A3 on Thursday. So, they must be in 3 consecutive days). This is simple: add a constraint max days between activities for A1, A2 and A3, with max 2 days between them. It is supposed that these activities are constrained not to be in the same day by a constraint min days between activities.</source>
-        <translation>Questo vincolo è stato richiesto per la seguente situazione: un utente aveva bisogno che le attività A1, A2 e A3 cadessero in giorni successivi (come: A1 il martedì, A2 il mercoledì e A3 il giovedì. Devono quindi cadere in tre giorni consecutivi). Semplicemente: si aggiunge un vincolo di Numero massimo di giorni tra attività per A1, A2 e A3, con massimo 2 giorni tra di loro. Si suppone, inoltre, che queste attività siano vincolate a non cadere nello stesso giorno a causa di un vincolo Numero minimo di giorni tra attività.</translation>
+        <translation type="vanished">Questo vincolo è stato richiesto per la seguente situazione: un utente aveva bisogno che le attività A1, A2 e A3 cadessero in giorni successivi (come: A1 il martedì, A2 il mercoledì e A3 il giovedì. Devono quindi cadere in tre giorni consecutivi). Semplicemente: si aggiunge un vincolo di Numero massimo di giorni tra attività per A1, A2 e A3, con massimo 2 giorni tra di loro. Si suppone, inoltre, che queste attività siano vincolate a non cadere nello stesso giorno a causa di un vincolo Numero minimo di giorni tra attività.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="304"/>
@@ -54712,6 +54716,86 @@ Sotto %4</translation>
         <comment>refers to activity</comment>
         <translation>aula bloccata</translation>
     </message>
+    <message numerus="yes">
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="781"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="814"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1050"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1083"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="875"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="908"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1244"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1277"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="774"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="807"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1016"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1049"/>
+        <source>Added %n locking time constraint(s).</source>
+        <comment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field.Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &apos;Handling Plurals&apos;.You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts(open these files with Qt Linguist and see the translation of this field).</comment>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="789"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="822"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1058"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1091"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="883"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="916"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1252"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1285"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="782"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="815"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1024"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1057"/>
+        <source>Added %n locking space constraint(s).</source>
+        <comment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field.Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &apos;Handling Plurals&apos;.You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts(open these files with Qt Linguist and see the translation of this field).</comment>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="797"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="830"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1066"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1099"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="891"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="924"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1260"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1293"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="790"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="823"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1032"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1065"/>
+        <source>Removed %n locking time constraint(s).</source>
+        <comment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field.Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &apos;Handling Plurals&apos;.You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts(open these files with Qt Linguist and see the translation of this field).</comment>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="805"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="838"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1074"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1107"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="899"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="932"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1268"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1301"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="798"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="831"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1040"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1073"/>
+        <source>Removed %n locking space constraint(s).</source>
+        <comment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field.Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &apos;Handling Plurals&apos;.You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts(open these files with Qt Linguist and see the translation of this field).</comment>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
     <message>
         <source>Added %1 locking time constraints.</source>
         <comment>%1 is &gt;= 2, so constraints is plural</comment>
@@ -54733,32 +54817,32 @@ Sotto %4</translation>
         <translation type="vanished">Rimossi %1 vincoli che fissano lo spazio.</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="821"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1090"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="915"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1284"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="814"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1056"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="856"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1125"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="950"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1319"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="849"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1091"/>
         <source>No locking constraints added or removed.</source>
         <translation>Nessun vincolo aggiunto o rimosso.</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="854"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1139"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="948"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1333"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="847"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1105"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="889"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1174"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="983"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1368"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="882"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1140"/>
         <source>Lock/unlock: you can select one or more activities in the table and toggle lock/unlock in time, space or both.</source>
         <translation>Blocca/sblocca: puoi selezionare una (o più) attività nella tabella e commutare il blocco/sblocco di tempo, spazio o entrambi.</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="856"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1141"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="950"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1335"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="849"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1107"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="891"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1176"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="985"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1370"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="884"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1142"/>
         <source>There will be added or removed locking constraints for the selected activities (they can be unlocked only if they are not permanently locked).</source>
         <translation>Saranno aggiunti (o rimossi) vincoli di impostazione per orario ed aule delle attività selezionate (possono essere sbloccate solo se non sono bloccate permanentemente).</translation>
     </message>
@@ -54827,81 +54911,25 @@ Sotto %4</translation>
         <translation type="vanished">Rimosso 1 vincolo che fissa lo spazio.</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="858"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1143"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="952"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1337"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="851"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1109"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="893"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1178"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="987"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1372"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="886"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1144"/>
         <source>Locking time constraints are constraints of type activity preferred starting time. Locking space constraints are constraints of type activity preferred room. You can see these constraints in the corresponding constraints dialogs. New locking constraints are added at the end of the list of constraints.</source>
         <translation>I vincoli di blocco dell&apos;orario sono del tipo orario preferenziale di inizio di attività. I vincoli di blocco dell&apos;aula sono del tipo aula preferenziale per attività. Puoi osservare questi vincoli nella corrispondente finestra dei vincoli. I nuovo vincoli di blocco alla fine della lista dei vincoli.</translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="861"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1146"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="955"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1340"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="854"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1112"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="896"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1181"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="990"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1375"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="889"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1147"/>
         <source>If a cell is (permanently) locked in time or space, it contains abbreviations to show that: PLT (permanently locked time), LT (locked time), PLS (permanently locked space) or LS (locked space).</source>
         <comment>Translate the abbreviations also. Make sure the abbreviations in your language are different between themselves and the user can differentiate easily between them. These abbreviations may appear also in other places, please use the same abbreviations.</comment>
         <translation>Se una casella è (permanentemente) bloccata per l&apos;orario e per l&apos;aula (tempo e spazio) contiene una sigla che lo ricorda: OBP (Ora Bloccata in Permanenza), OB (Ora Bloccata), ABP (Aula Bloccata in Permanenza) o AB (Aula Bloccata).</translation>
-    </message>
-    <message numerus="yes">
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="785"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1054"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="879"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1248"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="778"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1020"/>
-        <source>Added %n locking time constraint(s).</source>
-        <extracomment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field. Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &quot;Handling Plurals&quot;. You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts (open these files with Qt Linguist and see the translation of this field).</extracomment>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
-    </message>
-    <message numerus="yes">
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="793"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1062"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="887"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1256"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="786"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1028"/>
-        <source>Added %n locking space constraint(s).</source>
-        <extracomment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field. Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &quot;Handling Plurals&quot;. You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts (open these files with Qt Linguist and see the translation of this field).</extracomment>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
-    </message>
-    <message numerus="yes">
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="801"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1070"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="895"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1264"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="794"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1036"/>
-        <source>Removed %n locking time constraint(s).</source>
-        <extracomment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field. Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &quot;Handling Plurals&quot;. You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts (open these files with Qt Linguist and see the translation of this field).</extracomment>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
-    </message>
-    <message numerus="yes">
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="809"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1078"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="903"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1272"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="802"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1044"/>
-        <source>Removed %n locking space constraint(s).</source>
-        <extracomment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field. Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &quot;Handling Plurals&quot;. You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts (open these files with Qt Linguist and see the translation of this field).</extracomment>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
     </message>
 </context>
 <context>
@@ -54988,7 +55016,7 @@ Sotto %4</translation>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="565"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="665"/>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="738"/>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="822"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="857"/>
         <source>FET information</source>
         <translation type="unfinished">FET - Informazione</translation>
     </message>
@@ -55077,7 +55105,7 @@ Interrompere la simulazione prima.</translation>
         <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="865"/>
+        <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="900"/>
         <source>FET help</source>
         <translation type="unfinished">FET - Aiuto</translation>
     </message>
@@ -55222,7 +55250,7 @@ Interrompere la simulazione prima.</translation>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="765"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="924"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1009"/>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1091"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1126"/>
         <source>FET information</source>
         <translation type="unfinished">FET - Informazione</translation>
     </message>
@@ -55312,22 +55340,22 @@ Interrompere la simulazione prima.</translation>
         <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1151"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1186"/>
         <source>If a whole column (day+hour) is selected, the activities with no room from that column will NOT be locked/unlocked.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1154"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1189"/>
         <source>A bold font cell means that the activity is locked in time, either permanently or not.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1156"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1191"/>
         <source>An italic font cell means that the activity is locked in space, either permanently or not.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1158"/>
+        <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1193"/>
         <source>FET help</source>
         <translation type="unfinished">FET - Aiuto</translation>
     </message>
@@ -55506,7 +55534,7 @@ Interrompere la simulazione prima.</translation>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="655"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="759"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="832"/>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="916"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="951"/>
         <source>FET information</source>
         <translation type="unfinished">FET - Informazione</translation>
     </message>
@@ -55605,7 +55633,7 @@ Interrompere la simulazione prima.</translation>
         <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="959"/>
+        <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="994"/>
         <source>FET help</source>
         <translation type="unfinished">FET - Aiuto</translation>
     </message>
@@ -55741,7 +55769,7 @@ Interrompere la simulazione prima.</translation>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="922"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1118"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1203"/>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1285"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1320"/>
         <source>FET information</source>
         <translation type="unfinished">FET - Informazione</translation>
     </message>
@@ -55831,22 +55859,22 @@ Interrompere la simulazione prima.</translation>
         <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1345"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1380"/>
         <source>If a whole column (day+hour) is selected, there will be locked/unlocked also the dummy activities (activities with no students sets) from that column.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1348"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1383"/>
         <source>A bold font cell means that the activity is locked in time, either permanently or not.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1350"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1385"/>
         <source>An italic font cell means that the activity is locked in space, either permanently or not.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1352"/>
+        <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1387"/>
         <source>FET help</source>
         <translation type="unfinished">FET - Aiuto</translation>
     </message>
@@ -56009,7 +56037,7 @@ Interrompere la simulazione prima.</translation>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="562"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="657"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="731"/>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="815"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="850"/>
         <source>FET information</source>
         <translation type="unfinished">FET - Informazione</translation>
     </message>
@@ -56098,7 +56126,7 @@ Interrompere la simulazione prima.</translation>
         <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="858"/>
+        <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="893"/>
         <source>FET help</source>
         <translation type="unfinished">FET - Aiuto</translation>
     </message>
@@ -56237,7 +56265,7 @@ Interrompere la simulazione prima.</translation>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="737"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="890"/>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="975"/>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1057"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1092"/>
         <source>FET information</source>
         <translation type="unfinished">FET - Informazione</translation>
     </message>
@@ -56327,22 +56355,22 @@ Interrompere la simulazione prima.</translation>
         <translation type="unfinished">Una possibile anomalia consiste in 2 o più vincoli del genere aula preferenziale per attività con peso 100% riferito all&apos;attività id %1. Verifica e di questi lascia un solo vincolo </translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1117"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1152"/>
         <source>If a whole column (day+hour) is selected, there will be locked/unlocked also the dummy activities (activities with no teacher) from that column.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1120"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1155"/>
         <source>A bold font cell means that the activity is locked in time, either permanently or not.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1122"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1157"/>
         <source>An italic font cell means that the activity is locked in space, either permanently or not.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1124"/>
+        <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1159"/>
         <source>FET help</source>
         <translation type="unfinished">FET - Aiuto</translation>
     </message>
