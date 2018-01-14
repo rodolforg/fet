@@ -5674,3 +5674,68 @@ Minimum number of days in a week for all students.
 Liviu:
 
 Or for a students set. This is very difficult to implement perfectly (to take care of combinations with the other constraints).
+
+345---------------------------------------------------------
+From rodolforg:
+
+(referring to translation of plural forms)
+
+I also saw this in daysform.cpp :
+
+        if(cnt_rem>0){
+            s+=tr("%1 constraints will be removed.", "%1 is the number
+of constraints").arg(cnt_rem);
+            s+=" ";
+        }
+        if(cnt_mod>0){
+            s+=tr("%1 constraints will be modified.", "%1 is the
+number of constraints").arg(cnt_mod);
+            s+=" ";
+        }
+        s+=tr("Do you want to continue?");
+
+Maybe this part could use %n too?
+
+Liviu Lalescu:
+
+Yes, it should, also in hoursform.cpp and also in
+alltime/spaceconstraintsform.cpp.
+
+But I think there are plenty of places to modify and it is really too
+much. But I'll think of it.
+
+Problem: see for instance alltimeconstraintsform.cpp:
+
+	constraintsTextLabel->setText(tr("%1 / %2 time constraints",
+	 "%1 represents the number of visible active time constraints, %2 represents the total number of visible time constraints")
+	 .arg(n_active).arg(visibleTimeConstraintsList.count()));
+
+Which is %n? %1 or %2?
+
+Also advancedlockunlockform.cpp:
+
+	QMessageBox::information(&lastConfirmationDialog, tr("FET information"), tr("There were removed %1 locking time constraints and"
+		" %2 locking space constraints. There were not removed %3 locking time constraints and %4 locking space constraints, because"
+		" these activities were permanently locked").arg(removedTime).arg(removedSpace).arg(notRemovedTime).arg(notRemovedSpace));
+
+It is very difficult.
+
+I am sorry, but the code is full of such mistakes. It is too late now
+to correct.
+
+rodolforg:
+
+Difficult indeed.
+
+The only way out I can see would be replace:
+
+"There were removed %1 locking time constraints and %2 locking space
+constraints. There were not removed %3 locking time constraints and %4
+locking space constraints, because these activities were permanently
+locked"
+
+by:
+
+"There were removed %1 and %2. There were not removed %3 and %4,
+because these activities were permanently locked"
+where %1 would be "%n locking time constraint(s)", etc.
