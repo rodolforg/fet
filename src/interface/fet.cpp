@@ -1207,7 +1207,7 @@ int main(int argc, char **argv)
 		if(TIMETABLE_HTML_LEVEL>7 || TIMETABLE_HTML_LEVEL<0)
 			TIMETABLE_HTML_LEVEL=2;
 	
-		bool t=gt.rules.read(NULL, filename, true, initialDir);
+		bool t=gt.rules.read(NULL, filename, initialDir);
 		if(!t){
 			cout<<"fet: cannot read input file (not existing or in use) - aborting"<<endl;
 			out<<"Cannot read input file (not existing or in use) - aborting"<<endl;

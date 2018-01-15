@@ -700,7 +700,7 @@ public:
 	Reads the rules from the xml input file "filename".
 	Returns true on success, false on failure (inexistent file or wrong format)
 	*/
-	bool read(QWidget* parent, const QString& fileName, bool commandLine=false, QString commandLineDirectory=QString());
+	bool read(QWidget* parent, const QString& fileName, const QString& outputDirPath="");
 
 	/**
 	Write the rules to the xml input file "inputfile".

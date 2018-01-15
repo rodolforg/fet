@@ -4507,7 +4507,7 @@ void Rules::updateConstraintsAfterRemoval()
 #endif
 }
 
-bool Rules::read(QWidget* parent, const QString& fileName, bool commandLine, QString commandLineDirectory) //commandLineDirectory has trailing FILE_SEP
+bool Rules::read(QWidget* parent, const QString& fileName, const QString& outputDirPath)
 {
 	QFile file(fileName);
 	if(!file.open(QIODevice::ReadOnly)){
@@ -4520,12 +4520,10 @@ bool Rules::read(QWidget* parent, const QString& fileName, bool commandLine, QSt
 	
 	////////////////////////////////////////
 
-	QString logPathString = "logs";
-
-	if(!commandLine)
-		logPathString.prepend(OUTPUT_DIR+FILE_SEP);
-	else
-		logPathString.prepend(commandLineDirectory);
+	QString logPathString = outputDirPath;
+	if (!outputDirPath.isEmpty() && !outputDirPath.endsWith(FILE_SEP))
+		logPathString.prepend(FILE_SEP);
+	logPathString.append("logs");
 
 	QDir logDir(logPathString);
 

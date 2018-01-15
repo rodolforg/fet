@@ -1268,7 +1268,7 @@ void FetMainForm::openFile(const QString& fileName)
 		
 			//bool before=gt.rules.modified;
 
-			if(gt.rules.read(this, s)){
+			if(gt.rules.read(this, s, OUTPUT_DIR)){
 				CachedSchedule::invalidate();
 
 				INPUT_FILENAME_XML = s;
