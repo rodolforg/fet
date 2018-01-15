@@ -4520,28 +4520,19 @@ bool Rules::read(QWidget* parent, const QString& fileName, bool commandLine, QSt
 	
 	////////////////////////////////////////
 
-	if(!commandLine){
-		//logging part
-		QDir dir;
-		bool t=true;
-		if(!dir.exists(OUTPUT_DIR+FILE_SEP+"logs"))
-			t=dir.mkpath(OUTPUT_DIR+FILE_SEP+"logs");
-		if(!t){
-			RulesIrreconcilableMessage::warning(parent, tr("FET warning"), tr("Cannot create or use directory %1 - cannot continue").arg(QDir::toNativeSeparators(OUTPUT_DIR+FILE_SEP+"logs")));
-			return false;
-		}
-		assert(t);
-	}
-	else{
-		QDir dir;
-		bool t=true;
-		if(!dir.exists(commandLineDirectory+"logs"))
-			t=dir.mkpath(commandLineDirectory+"logs");
-		if(!t){
-			RulesIrreconcilableMessage::warning(parent, tr("FET warning"), tr("Cannot create or use directory %1 - cannot continue").arg(QDir::toNativeSeparators(commandLineDirectory+"logs")));
-			return false;
-		}
-		assert(t);
+	QString logPathString = "logs";
+
+	if(!commandLine)
+		logPathString.prepend(OUTPUT_DIR+FILE_SEP);
+	else
+		logPathString.prepend(commandLineDirectory);
+
+	QDir logDir(logPathString);
+
+	bool t=logDir.mkpath(logPathString);
+	if(!t){
+		RulesIrreconcilableMessage::warning(parent, tr("FET warning"), tr("Cannot create or use directory %1 - cannot continue").arg(QDir::toNativeSeparators(logPathString)));
+		return false;
 	}
 	
 	XmlLog log;
@@ -4559,11 +4550,7 @@ bool Rules::read(QWidget* parent, const QString& fileName, bool commandLine, QSt
 	log.minimum("Complete file name, including path: "+QDir::toNativeSeparators(fileinfo.absoluteFilePath())+"\n");
 	log.minimum("\n");
 
-	QString tmp;
-	if(commandLine)
-		tmp=commandLineDirectory+"logs"+FILE_SEP+XML_PARSING_LOG_FILENAME;
-	else
-		tmp=OUTPUT_DIR+FILE_SEP+"logs"+FILE_SEP+XML_PARSING_LOG_FILENAME;
+	QString tmp = logPathString + FILE_SEP + XML_PARSING_LOG_FILENAME;
 	QFile file2(tmp);
 	bool canWriteLogFile=true;
 	if(!file2.open(QIODevice::WriteOnly)){
