@@ -4661,6 +4661,9 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 			//if major is >= 5 or major cannot be read
 				version5AndAbove=true;
 		}
+	} else {
+		IrreconcilableCriticalMessage::critical(parent, tr("FET critical"), tr("The opened file is not a valid FET file"));
+		return false;
 	}
 	if(!okAbove3_12_17){
 		if(VERBOSE){
