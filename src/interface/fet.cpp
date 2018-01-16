@@ -1057,7 +1057,7 @@ int main(int argc, char **argv)
 		QFile logFile(logsDir+"result.txt");
 		bool tttt=logFile.open(QIODevice::WriteOnly);
 		if(!tttt){
-			cout<<"FET critical - you don't have write permissions in the output directory - (FET cannot open or create file "<<qPrintable(logsDir)<<"result.txt)."
+			cerr<<"FET critical - you don't have write permissions in the output directory - (FET cannot open or create file "<<qPrintable(logsDir)<<"result.txt)."
 			 " If this is a bug - please report it."<<endl;
 			return 1;
 		}
@@ -1142,7 +1142,7 @@ int main(int argc, char **argv)
 		bool existedBefore=test.exists();
 		bool t_t=test.open(QIODevice::ReadWrite);
 		if(!t_t){
-			cout<<"fet: critical error - you don't have write permissions in the output directory - (FET cannot open or create file "<<qPrintable(outputDirectory)<<"test_write_permissions_2.tmp)."
+			cerr<<"fet: critical error - you don't have write permissions in the output directory - (FET cannot open or create file "<<qPrintable(outputDirectory)<<"test_write_permissions_2.tmp)."
 			 " If this is a bug - please report it."<<endl;
 			out<<"fet: critical error - you don't have write permissions in the output directory - (FET cannot open or create file "<<qPrintable(outputDirectory)<<"test_write_permissions_2.tmp)."
 			 " If this is a bug - please report it."<<endl;
@@ -1209,7 +1209,7 @@ int main(int argc, char **argv)
 	
 		bool t=gt.rules.read(NULL, filename, initialDir);
 		if(!t){
-			cout<<"fet: cannot read input file (not existing or in use) - aborting"<<endl;
+			cerr<<"fet: cannot read input file (not existing or in use) - aborting"<<endl;
 			out<<"Cannot read input file (not existing or in use) - aborting"<<endl;
 			logFile.close();
 			return 1;
@@ -1217,7 +1217,7 @@ int main(int argc, char **argv)
 		
 		t=gt.rules.computeInternalStructure(NULL);
 		if(!t){
-			cout<<"Cannot compute internal structure - aborting"<<endl;
+			cerr<<"Cannot compute internal structure - aborting"<<endl;
 			out<<"Cannot compute internal structure - aborting"<<endl;
 			logFile.close();
 			return 1;
@@ -1233,7 +1233,7 @@ int main(int argc, char **argv)
 		initialOrderFile.close();
 		
 		if(!ok){
-			cout<<"Cannot precompute - data is wrong - aborting"<<endl;
+			cerr<<"Cannot precompute - data is wrong - aborting"<<endl;
 			out<<"Cannot precompute - data is wrong - aborting"<<endl;
 			logFile.close();
 			return 1;
@@ -1253,7 +1253,7 @@ int main(int argc, char **argv)
 		maxPlacedActivityFile.close();
 	
 		if(status == Generate::IMPOSSIBLE){
-			cout<<"Impossible"<<endl;
+			cerr<<"Impossible"<<endl;
 			out<<"Impossible"<<endl;
 			
 			//2016-11-17 - suggested by thanhnambkhn, FET will write the impossible activity and the current and highest-stage timetables
@@ -1305,7 +1305,7 @@ int main(int argc, char **argv)
 			QFile difficultActivitiesFile(logsDir+"difficult_activities.txt");
 			bool t=difficultActivitiesFile.open(QIODevice::WriteOnly);
 			if(!t){
-				cout<<"FET critical - you don't have write permissions in the output directory - (FET cannot open or create file "<<qPrintable(logsDir)<<"difficult_activities.txt)."
+				cerr<<"FET critical - you don't have write permissions in the output directory - (FET cannot open or create file "<<qPrintable(logsDir)<<"difficult_activities.txt)."
 				 " If this is a bug - please report it."<<endl;
 				return 1;
 			}
@@ -1352,7 +1352,7 @@ int main(int argc, char **argv)
 		//by Ian Holden (begin)
 		else if(status == Generate::TIMEOUT || status == Generate::ABORTED){
 			if(status == Generate::TIMEOUT){
-				cout<<"Time exceeded"<<endl;
+				cerr<<"Time exceeded"<<endl;
 				out<<"Time exceeded"<<endl;
 			}
 			else if(status == Generate::ABORTED){
@@ -1428,7 +1428,7 @@ int main(int argc, char **argv)
 			QFile difficultActivitiesFile(logsDir+"difficult_activities.txt");
 			bool t=difficultActivitiesFile.open(QIODevice::WriteOnly);
 			if(!t){
-				cout<<"FET critical - you don't have write permissions in the output directory - (FET cannot open or create file "<<qPrintable(logsDir)<<"difficult_activities.txt)."
+				cerr<<"FET critical - you don't have write permissions in the output directory - (FET cannot open or create file "<<qPrintable(logsDir)<<"difficult_activities.txt)."
 				 " If this is a bug - please report it."<<endl;
 				return 1;
 			}
