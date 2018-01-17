@@ -72,7 +72,7 @@
 	<Comments></Comments>
 </Subject>
 <Subject>
-	<Name>DIRIGENŢIE</Name>
+	<Name>DIRIGENȚIE</Name>
 	<Comments></Comments>
 </Subject>
 <Subject>
@@ -100,7 +100,7 @@
 	<Comments></Comments>
 </Subject>
 <Subject>
-	<Name>IST. MINORITAŢI</Name>
+	<Name>IST. MINORITAȚI</Name>
 	<Comments></Comments>
 </Subject>
 <Subject>
@@ -164,7 +164,7 @@
 	<Comments></Comments>
 </Teacher>
 <Teacher>
-	<Name>Biriş Mihaela</Name>
+	<Name>Biriș Mihaela</Name>
 	<Target_Number_of_Hours>0</Target_Number_of_Hours>
 	<Qualified_Subjects>
 	</Qualified_Subjects>
@@ -178,14 +178,14 @@
 	<Comments></Comments>
 </Teacher>
 <Teacher>
-	<Name>Bozga Luminiţa</Name>
+	<Name>Bozga Luminița</Name>
 	<Target_Number_of_Hours>0</Target_Number_of_Hours>
 	<Qualified_Subjects>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
-	<Name>Conţiu Loredana</Name>
+	<Name>Conțiu Loredana</Name>
 	<Target_Number_of_Hours>0</Target_Number_of_Hours>
 	<Qualified_Subjects>
 	</Qualified_Subjects>
@@ -199,7 +199,7 @@
 	<Comments></Comments>
 </Teacher>
 <Teacher>
-	<Name>Creţu Crina</Name>
+	<Name>Crețu Crina</Name>
 	<Target_Number_of_Hours>0</Target_Number_of_Hours>
 	<Qualified_Subjects>
 	</Qualified_Subjects>
@@ -248,14 +248,14 @@
 	<Comments></Comments>
 </Teacher>
 <Teacher>
-	<Name>Hărăguş Isabela</Name>
+	<Name>Hărăguș Isabela</Name>
 	<Target_Number_of_Hours>0</Target_Number_of_Hours>
 	<Qualified_Subjects>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
-	<Name>Iovanuţ Maria</Name>
+	<Name>Iovanuț Maria</Name>
 	<Target_Number_of_Hours>0</Target_Number_of_Hours>
 	<Qualified_Subjects>
 	</Qualified_Subjects>
@@ -311,7 +311,7 @@
 	<Comments></Comments>
 </Teacher>
 <Teacher>
-	<Name>Petrişor Gheorghina</Name>
+	<Name>Petrișor Gheorghina</Name>
 	<Target_Number_of_Hours>0</Target_Number_of_Hours>
 	<Qualified_Subjects>
 	</Qualified_Subjects>
@@ -374,7 +374,7 @@
 	<Comments></Comments>
 </Teacher>
 <Teacher>
-	<Name>Veteşi Adina</Name>
+	<Name>Veteși Adina</Name>
 	<Target_Number_of_Hours>0</Target_Number_of_Hours>
 	<Qualified_Subjects>
 	</Qualified_Subjects>
@@ -395,14 +395,14 @@
 	<Comments></Comments>
 </Teacher>
 <Teacher>
-	<Name>Moţ Anca</Name>
+	<Name>Moț Anca</Name>
 	<Target_Number_of_Hours>0</Target_Number_of_Hours>
 	<Qualified_Subjects>
 	</Qualified_Subjects>
 	<Comments></Comments>
 </Teacher>
 <Teacher>
-	<Name>Păşcuţă Adina</Name>
+	<Name>Pășcuță Adina</Name>
 	<Target_Number_of_Hours>0</Target_Number_of_Hours>
 	<Qualified_Subjects>
 	</Qualified_Subjects>
@@ -850,7 +850,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Veteşi Adina</Teacher>
+	<Teacher>Veteși Adina</Teacher>
 	<Subject>ROMÂNĂ</Subject>
 	<Students>7B</Students>
 	<Duration>1</Duration>
@@ -861,7 +861,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Veteşi Adina</Teacher>
+	<Teacher>Veteși Adina</Teacher>
 	<Subject>ROMÂNĂ</Subject>
 	<Students>7B</Students>
 	<Duration>1</Duration>
@@ -872,7 +872,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Veteşi Adina</Teacher>
+	<Teacher>Veteși Adina</Teacher>
 	<Subject>ROMÂNĂ</Subject>
 	<Students>7B</Students>
 	<Duration>1</Duration>
@@ -883,7 +883,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Veteşi Adina</Teacher>
+	<Teacher>Veteși Adina</Teacher>
 	<Subject>ROMÂNĂ</Subject>
 	<Students>7B</Students>
 	<Duration>1</Duration>
@@ -894,7 +894,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Veteşi Adina</Teacher>
+	<Teacher>Veteși Adina</Teacher>
 	<Subject>ENGLEZĂ</Subject>
 	<Students>6A</Students>
 	<Duration>1</Duration>
@@ -905,7 +905,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Veteşi Adina</Teacher>
+	<Teacher>Veteși Adina</Teacher>
 	<Subject>ENGLEZĂ</Subject>
 	<Students>6A</Students>
 	<Duration>1</Duration>
@@ -916,7 +916,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Veteşi Adina</Teacher>
+	<Teacher>Veteși Adina</Teacher>
 	<Subject>LATINĂ</Subject>
 	<Students>8B</Students>
 	<Duration>1</Duration>
@@ -1577,7 +1577,7 @@
 </Activity>
 <Activity>
 	<Teacher>Sipos Marta</Teacher>
-	<Subject>DIRIGENŢIE</Subject>
+	<Subject>DIRIGENȚIE</Subject>
 	<Students>6B</Students>
 	<Duration>1</Duration>
 	<Total_Duration>1</Total_Duration>
@@ -1742,7 +1742,7 @@
 </Activity>
 <Activity>
 	<Teacher>Dărăban Elisabeta</Teacher>
-	<Subject>DIRIGENŢIE</Subject>
+	<Subject>DIRIGENȚIE</Subject>
 	<Students>7A</Students>
 	<Duration>1</Duration>
 	<Total_Duration>1</Total_Duration>
@@ -1863,7 +1863,7 @@
 </Activity>
 <Activity>
 	<Teacher>Petruc Sandra</Teacher>
-	<Subject>DIRIGENŢIE</Subject>
+	<Subject>DIRIGENȚIE</Subject>
 	<Students>6D</Students>
 	<Duration>1</Duration>
 	<Total_Duration>1</Total_Duration>
@@ -2270,7 +2270,7 @@
 </Activity>
 <Activity>
 	<Teacher>Szakáll Ildikó</Teacher>
-	<Subject>DIRIGENŢIE</Subject>
+	<Subject>DIRIGENȚIE</Subject>
 	<Students>6C</Students>
 	<Duration>1</Duration>
 	<Total_Duration>1</Total_Duration>
@@ -2280,7 +2280,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Bozga Luminiţa</Teacher>
+	<Teacher>Bozga Luminița</Teacher>
 	<Subject>MATEMATICĂ</Subject>
 	<Students>9A</Students>
 	<Duration>1</Duration>
@@ -2291,7 +2291,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Bozga Luminiţa</Teacher>
+	<Teacher>Bozga Luminița</Teacher>
 	<Subject>MATEMATICĂ</Subject>
 	<Students>9A</Students>
 	<Duration>1</Duration>
@@ -2302,7 +2302,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Bozga Luminiţa</Teacher>
+	<Teacher>Bozga Luminița</Teacher>
 	<Subject>MATEMATICĂ</Subject>
 	<Students>9A</Students>
 	<Duration>1</Duration>
@@ -2313,7 +2313,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Bozga Luminiţa</Teacher>
+	<Teacher>Bozga Luminița</Teacher>
 	<Subject>MATEMATICĂ</Subject>
 	<Students>9A</Students>
 	<Duration>1</Duration>
@@ -2622,7 +2622,7 @@
 </Activity>
 <Activity>
 	<Teacher>Szakacs Eugen</Teacher>
-	<Subject>DIRIGENŢIE</Subject>
+	<Subject>DIRIGENȚIE</Subject>
 	<Students>7B</Students>
 	<Duration>1</Duration>
 	<Total_Duration>1</Total_Duration>
@@ -2765,7 +2765,7 @@
 </Activity>
 <Activity>
 	<Teacher>Wagner Erika</Teacher>
-	<Subject>DIRIGENŢIE</Subject>
+	<Subject>DIRIGENȚIE</Subject>
 	<Students>8C</Students>
 	<Duration>1</Duration>
 	<Total_Duration>1</Total_Duration>
@@ -2896,7 +2896,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Hărăguş Isabela</Teacher>
+	<Teacher>Hărăguș Isabela</Teacher>
 	<Subject>BIOLOGIE</Subject>
 	<Students>5B</Students>
 	<Duration>1</Duration>
@@ -2907,7 +2907,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Hărăguş Isabela</Teacher>
+	<Teacher>Hărăguș Isabela</Teacher>
 	<Subject>BIOLOGIE</Subject>
 	<Students>6C</Students>
 	<Duration>1</Duration>
@@ -2918,7 +2918,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Hărăguş Isabela</Teacher>
+	<Teacher>Hărăguș Isabela</Teacher>
 	<Subject>BIOLOGIE</Subject>
 	<Students>6C</Students>
 	<Duration>1</Duration>
@@ -2929,7 +2929,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Hărăguş Isabela</Teacher>
+	<Teacher>Hărăguș Isabela</Teacher>
 	<Subject>BIOLOGIE</Subject>
 	<Students>6D</Students>
 	<Duration>1</Duration>
@@ -2940,7 +2940,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Hărăguş Isabela</Teacher>
+	<Teacher>Hărăguș Isabela</Teacher>
 	<Subject>BIOLOGIE</Subject>
 	<Students>6D</Students>
 	<Duration>1</Duration>
@@ -2951,7 +2951,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Hărăguş Isabela</Teacher>
+	<Teacher>Hărăguș Isabela</Teacher>
 	<Subject>BIOLOGIE</Subject>
 	<Students>7C</Students>
 	<Duration>1</Duration>
@@ -2962,7 +2962,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Hărăguş Isabela</Teacher>
+	<Teacher>Hărăguș Isabela</Teacher>
 	<Subject>BIOLOGIE</Subject>
 	<Students>7C</Students>
 	<Duration>1</Duration>
@@ -2973,7 +2973,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Hărăguş Isabela</Teacher>
+	<Teacher>Hărăguș Isabela</Teacher>
 	<Subject>BIOLOGIE</Subject>
 	<Students>8C</Students>
 	<Duration>1</Duration>
@@ -2985,7 +2985,7 @@
 </Activity>
 <Activity>
 	<Teacher>Gacsádi Olga</Teacher>
-	<Subject>DIRIGENŢIE</Subject>
+	<Subject>DIRIGENȚIE</Subject>
 	<Students>8B</Students>
 	<Duration>1</Duration>
 	<Total_Duration>1</Total_Duration>
@@ -3161,7 +3161,7 @@
 </Activity>
 <Activity>
 	<Teacher>Hanga Gheorghe</Teacher>
-	<Subject>DIRIGENŢIE</Subject>
+	<Subject>DIRIGENȚIE</Subject>
 	<Students>5A</Students>
 	<Duration>1</Duration>
 	<Total_Duration>1</Total_Duration>
@@ -3348,7 +3348,7 @@
 </Activity>
 <Activity>
 	<Teacher>Apati Timea</Teacher>
-	<Subject>IST. MINORITAŢI</Subject>
+	<Subject>IST. MINORITAȚI</Subject>
 	<Students>6B</Students>
 	<Duration>1</Duration>
 	<Total_Duration>1</Total_Duration>
@@ -3359,7 +3359,7 @@
 </Activity>
 <Activity>
 	<Teacher>Apati Timea</Teacher>
-	<Subject>IST. MINORITAŢI</Subject>
+	<Subject>IST. MINORITAȚI</Subject>
 	<Students>7B</Students>
 	<Duration>1</Duration>
 	<Total_Duration>1</Total_Duration>
@@ -3424,7 +3424,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Petrişor Gheorghina</Teacher>
+	<Teacher>Petrișor Gheorghina</Teacher>
 	<Subject>RELIGIE</Subject>
 	<Students>5B</Students>
 	<Duration>1</Duration>
@@ -3435,7 +3435,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Petrişor Gheorghina</Teacher>
+	<Teacher>Petrișor Gheorghina</Teacher>
 	<Subject>RELIGIE</Subject>
 	<Students>6C</Students>
 	<Duration>1</Duration>
@@ -3446,7 +3446,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Petrişor Gheorghina</Teacher>
+	<Teacher>Petrișor Gheorghina</Teacher>
 	<Subject>RELIGIE</Subject>
 	<Students>6D</Students>
 	<Duration>1</Duration>
@@ -3457,7 +3457,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Petrişor Gheorghina</Teacher>
+	<Teacher>Petrișor Gheorghina</Teacher>
 	<Subject>RELIGIE</Subject>
 	<Students>7C</Students>
 	<Duration>1</Duration>
@@ -3468,7 +3468,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Petrişor Gheorghina</Teacher>
+	<Teacher>Petrișor Gheorghina</Teacher>
 	<Subject>RELIGIE</Subject>
 	<Students>8C</Students>
 	<Duration>1</Duration>
@@ -3479,7 +3479,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Petrişor Gheorghina</Teacher>
+	<Teacher>Petrișor Gheorghina</Teacher>
 	<Subject>RELIGIE</Subject>
 	<Students>9A</Students>
 	<Duration>1</Duration>
@@ -3490,7 +3490,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Petrişor Gheorghina</Teacher>
+	<Teacher>Petrișor Gheorghina</Teacher>
 	<Subject>ISTORIE</Subject>
 	<Students>5B</Students>
 	<Duration>1</Duration>
@@ -3501,7 +3501,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Petrişor Gheorghina</Teacher>
+	<Teacher>Petrișor Gheorghina</Teacher>
 	<Subject>ISTORIE</Subject>
 	<Students>5B</Students>
 	<Duration>1</Duration>
@@ -3512,7 +3512,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Petrişor Gheorghina</Teacher>
+	<Teacher>Petrișor Gheorghina</Teacher>
 	<Subject>ISTORIE</Subject>
 	<Students>6C</Students>
 	<Duration>1</Duration>
@@ -3523,7 +3523,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Petrişor Gheorghina</Teacher>
+	<Teacher>Petrișor Gheorghina</Teacher>
 	<Subject>ISTORIE</Subject>
 	<Students>6D</Students>
 	<Duration>1</Duration>
@@ -3534,7 +3534,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Petrişor Gheorghina</Teacher>
+	<Teacher>Petrișor Gheorghina</Teacher>
 	<Subject>ISTORIE</Subject>
 	<Students>7C</Students>
 	<Duration>1</Duration>
@@ -3545,7 +3545,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Petrişor Gheorghina</Teacher>
+	<Teacher>Petrișor Gheorghina</Teacher>
 	<Subject>ISTORIE</Subject>
 	<Students>9A</Students>
 	<Duration>1</Duration>
@@ -3556,8 +3556,8 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Petrişor Gheorghina</Teacher>
-	<Subject>IST. MINORITAŢI</Subject>
+	<Teacher>Petrișor Gheorghina</Teacher>
+	<Subject>IST. MINORITAȚI</Subject>
 	<Students>6C</Students>
 	<Duration>1</Duration>
 	<Total_Duration>1</Total_Duration>
@@ -3567,8 +3567,8 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Petrişor Gheorghina</Teacher>
-	<Subject>IST. MINORITAŢI</Subject>
+	<Teacher>Petrișor Gheorghina</Teacher>
+	<Subject>IST. MINORITAȚI</Subject>
 	<Students>6D</Students>
 	<Duration>1</Duration>
 	<Total_Duration>1</Total_Duration>
@@ -3578,8 +3578,8 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Petrişor Gheorghina</Teacher>
-	<Subject>IST. MINORITAŢI</Subject>
+	<Teacher>Petrișor Gheorghina</Teacher>
+	<Subject>IST. MINORITAȚI</Subject>
 	<Students>7C</Students>
 	<Duration>1</Duration>
 	<Total_Duration>1</Total_Duration>
@@ -3589,7 +3589,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Creţu Crina</Teacher>
+	<Teacher>Crețu Crina</Teacher>
 	<Subject>LOGICĂ</Subject>
 	<Students>9A</Students>
 	<Duration>1</Duration>
@@ -3600,8 +3600,8 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Petrişor Gheorghina</Teacher>
-	<Subject>DIRIGENŢIE</Subject>
+	<Teacher>Petrișor Gheorghina</Teacher>
+	<Subject>DIRIGENȚIE</Subject>
 	<Students>5B</Students>
 	<Duration>1</Duration>
 	<Total_Duration>1</Total_Duration>
@@ -3611,7 +3611,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Iovanuţ Maria</Teacher>
+	<Teacher>Iovanuț Maria</Teacher>
 	<Subject>TEHNOLOGIE</Subject>
 	<Students>5A</Students>
 	<Duration>1</Duration>
@@ -3622,7 +3622,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Iovanuţ Maria</Teacher>
+	<Teacher>Iovanuț Maria</Teacher>
 	<Subject>TEHNOLOGIE</Subject>
 	<Students>5B</Students>
 	<Duration>1</Duration>
@@ -3633,7 +3633,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Iovanuţ Maria</Teacher>
+	<Teacher>Iovanuț Maria</Teacher>
 	<Subject>TEHNOLOGIE</Subject>
 	<Students>6A</Students>
 	<Duration>1</Duration>
@@ -3644,7 +3644,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Iovanuţ Maria</Teacher>
+	<Teacher>Iovanuț Maria</Teacher>
 	<Subject>TEHNOLOGIE</Subject>
 	<Students>6B</Students>
 	<Duration>1</Duration>
@@ -3655,7 +3655,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Iovanuţ Maria</Teacher>
+	<Teacher>Iovanuț Maria</Teacher>
 	<Subject>TEHNOLOGIE</Subject>
 	<Students>6C</Students>
 	<Duration>1</Duration>
@@ -3666,7 +3666,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Iovanuţ Maria</Teacher>
+	<Teacher>Iovanuț Maria</Teacher>
 	<Subject>TEHNOLOGIE</Subject>
 	<Students>6D</Students>
 	<Duration>1</Duration>
@@ -3677,7 +3677,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Iovanuţ Maria</Teacher>
+	<Teacher>Iovanuț Maria</Teacher>
 	<Subject>TEHNOLOGIE</Subject>
 	<Students>7A</Students>
 	<Duration>1</Duration>
@@ -3688,7 +3688,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Iovanuţ Maria</Teacher>
+	<Teacher>Iovanuț Maria</Teacher>
 	<Subject>TEHNOLOGIE</Subject>
 	<Students>7B</Students>
 	<Duration>1</Duration>
@@ -3699,7 +3699,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Iovanuţ Maria</Teacher>
+	<Teacher>Iovanuț Maria</Teacher>
 	<Subject>TEHNOLOGIE</Subject>
 	<Students>7C</Students>
 	<Duration>1</Duration>
@@ -3710,7 +3710,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Iovanuţ Maria</Teacher>
+	<Teacher>Iovanuț Maria</Teacher>
 	<Subject>TEHNOLOGIE</Subject>
 	<Students>8A</Students>
 	<Duration>1</Duration>
@@ -3721,7 +3721,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Iovanuţ Maria</Teacher>
+	<Teacher>Iovanuț Maria</Teacher>
 	<Subject>TEHNOLOGIE</Subject>
 	<Students>8B</Students>
 	<Duration>1</Duration>
@@ -3732,7 +3732,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Iovanuţ Maria</Teacher>
+	<Teacher>Iovanuț Maria</Teacher>
 	<Subject>TEHNOLOGIE</Subject>
 	<Students>8C</Students>
 	<Duration>1</Duration>
@@ -3743,7 +3743,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Iovanuţ Maria</Teacher>
+	<Teacher>Iovanuț Maria</Teacher>
 	<Subject>INFORMATICĂ</Subject>
 	<Students>5A</Students>
 	<Duration>1</Duration>
@@ -3754,7 +3754,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Petrişor Gheorghina</Teacher>
+	<Teacher>Petrișor Gheorghina</Teacher>
 	<Subject>INFORMATICĂ</Subject>
 	<Students>5B</Students>
 	<Duration>1</Duration>
@@ -3765,7 +3765,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Iovanuţ Maria</Teacher>
+	<Teacher>Iovanuț Maria</Teacher>
 	<Subject>INFORMATICĂ</Subject>
 	<Students>6A</Students>
 	<Duration>1</Duration>
@@ -3776,7 +3776,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Iovanuţ Maria</Teacher>
+	<Teacher>Iovanuț Maria</Teacher>
 	<Subject>INFORMATICĂ</Subject>
 	<Students>6B</Students>
 	<Duration>1</Duration>
@@ -3787,7 +3787,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Iovanuţ Maria</Teacher>
+	<Teacher>Iovanuț Maria</Teacher>
 	<Subject>INFORMATICĂ</Subject>
 	<Students>6C</Students>
 	<Duration>1</Duration>
@@ -3798,7 +3798,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Iovanuţ Maria</Teacher>
+	<Teacher>Iovanuț Maria</Teacher>
 	<Subject>INFORMATICĂ</Subject>
 	<Students>6D</Students>
 	<Duration>1</Duration>
@@ -3809,7 +3809,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Iovanuţ Maria</Teacher>
+	<Teacher>Iovanuț Maria</Teacher>
 	<Subject>INFORMATICĂ</Subject>
 	<Students>7A</Students>
 	<Duration>1</Duration>
@@ -3820,7 +3820,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Iovanuţ Maria</Teacher>
+	<Teacher>Iovanuț Maria</Teacher>
 	<Subject>INFORMATICĂ</Subject>
 	<Students>7B</Students>
 	<Duration>1</Duration>
@@ -3831,7 +3831,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Iovanuţ Maria</Teacher>
+	<Teacher>Iovanuț Maria</Teacher>
 	<Subject>INFORMATICĂ</Subject>
 	<Students>7C</Students>
 	<Duration>1</Duration>
@@ -3842,8 +3842,8 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Iovanuţ Maria</Teacher>
-	<Subject>DIRIGENŢIE</Subject>
+	<Teacher>Iovanuț Maria</Teacher>
+	<Subject>DIRIGENȚIE</Subject>
 	<Students>8A</Students>
 	<Duration>1</Duration>
 	<Total_Duration>1</Total_Duration>
@@ -3920,7 +3920,7 @@
 </Activity>
 <Activity>
 	<Teacher>Morar Claudia</Teacher>
-	<Teacher>Moţ Anca</Teacher>
+	<Teacher>Moț Anca</Teacher>
 	<Subject>DESEN / MUZICĂ</Subject>
 	<Students>8A</Students>
 	<Duration>1</Duration>
@@ -3932,7 +3932,7 @@
 </Activity>
 <Activity>
 	<Teacher>Morar Claudia</Teacher>
-	<Teacher>Moţ Anca</Teacher>
+	<Teacher>Moț Anca</Teacher>
 	<Subject>DESEN / MUZICĂ</Subject>
 	<Students>8B</Students>
 	<Duration>1</Duration>
@@ -3944,7 +3944,7 @@
 </Activity>
 <Activity>
 	<Teacher>Morar Claudia</Teacher>
-	<Teacher>Moţ Anca</Teacher>
+	<Teacher>Moț Anca</Teacher>
 	<Subject>DESEN / MUZICĂ</Subject>
 	<Students>8C</Students>
 	<Duration>1</Duration>
@@ -3966,7 +3966,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Conţiu Loredana</Teacher>
+	<Teacher>Conțiu Loredana</Teacher>
 	<Subject>MUZICĂ</Subject>
 	<Students>5B</Students>
 	<Duration>1</Duration>
@@ -3977,7 +3977,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Conţiu Loredana</Teacher>
+	<Teacher>Conțiu Loredana</Teacher>
 	<Subject>MUZICĂ</Subject>
 	<Students>6C</Students>
 	<Duration>1</Duration>
@@ -3988,7 +3988,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Conţiu Loredana</Teacher>
+	<Teacher>Conțiu Loredana</Teacher>
 	<Subject>MUZICĂ</Subject>
 	<Students>6D</Students>
 	<Duration>1</Duration>
@@ -3999,7 +3999,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Moţ Anca</Teacher>
+	<Teacher>Moț Anca</Teacher>
 	<Subject>DESEN</Subject>
 	<Students>5A</Students>
 	<Duration>1</Duration>
@@ -4010,7 +4010,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Moţ Anca</Teacher>
+	<Teacher>Moț Anca</Teacher>
 	<Subject>DESEN</Subject>
 	<Students>5B</Students>
 	<Duration>1</Duration>
@@ -4021,7 +4021,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Moţ Anca</Teacher>
+	<Teacher>Moț Anca</Teacher>
 	<Subject>DESEN</Subject>
 	<Students>6A</Students>
 	<Duration>1</Duration>
@@ -4032,7 +4032,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Moţ Anca</Teacher>
+	<Teacher>Moț Anca</Teacher>
 	<Subject>DESEN</Subject>
 	<Students>6B</Students>
 	<Duration>1</Duration>
@@ -4043,7 +4043,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Moţ Anca</Teacher>
+	<Teacher>Moț Anca</Teacher>
 	<Subject>DESEN</Subject>
 	<Students>6C</Students>
 	<Duration>1</Duration>
@@ -4054,7 +4054,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Moţ Anca</Teacher>
+	<Teacher>Moț Anca</Teacher>
 	<Subject>DESEN</Subject>
 	<Students>6D</Students>
 	<Duration>1</Duration>
@@ -4065,7 +4065,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Moţ Anca</Teacher>
+	<Teacher>Moț Anca</Teacher>
 	<Subject>DESEN</Subject>
 	<Students>7A</Students>
 	<Duration>1</Duration>
@@ -4076,7 +4076,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Moţ Anca</Teacher>
+	<Teacher>Moț Anca</Teacher>
 	<Subject>DESEN</Subject>
 	<Students>7B</Students>
 	<Duration>1</Duration>
@@ -4087,7 +4087,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Moţ Anca</Teacher>
+	<Teacher>Moț Anca</Teacher>
 	<Subject>DESEN</Subject>
 	<Students>7C</Students>
 	<Duration>1</Duration>
@@ -4098,7 +4098,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Moţ Anca</Teacher>
+	<Teacher>Moț Anca</Teacher>
 	<Subject>DESEN</Subject>
 	<Students>9A</Students>
 	<Duration>1</Duration>
@@ -4406,7 +4406,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Biriş Mihaela</Teacher>
+	<Teacher>Biriș Mihaela</Teacher>
 	<Subject>CIVICĂ</Subject>
 	<Students>7C</Students>
 	<Duration>1</Duration>
@@ -4417,7 +4417,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Păşcuţă Adina</Teacher>
+	<Teacher>Pășcuță Adina</Teacher>
 	<Subject>RELIGIE</Subject>
 	<Students>5A</Students>
 	<Duration>1</Duration>
@@ -4428,7 +4428,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Păşcuţă Adina</Teacher>
+	<Teacher>Pășcuță Adina</Teacher>
 	<Subject>RELIGIE</Subject>
 	<Students>6A</Students>
 	<Duration>1</Duration>
@@ -4439,7 +4439,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Păşcuţă Adina</Teacher>
+	<Teacher>Pășcuță Adina</Teacher>
 	<Subject>RELIGIE</Subject>
 	<Students>7A</Students>
 	<Duration>1</Duration>
@@ -4450,7 +4450,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Păşcuţă Adina</Teacher>
+	<Teacher>Pășcuță Adina</Teacher>
 	<Subject>RELIGIE</Subject>
 	<Students>8A</Students>
 	<Duration>1</Duration>
@@ -4542,7 +4542,7 @@
 	<Comments></Comments>
 </Activity>
 <Activity>
-	<Teacher>Biriş Mihaela</Teacher>
+	<Teacher>Biriș Mihaela</Teacher>
 	<Subject>ISTORIE</Subject>
 	<Students>7A</Students>
 	<Duration>1</Duration>
@@ -4653,7 +4653,7 @@
 </Activity>
 <Activity>
 	<Teacher>Bota Cristian</Teacher>
-	<Subject>DIRIGENŢIE</Subject>
+	<Subject>DIRIGENȚIE</Subject>
 	<Students>6A</Students>
 	<Duration>1</Duration>
 	<Total_Duration>1</Total_Duration>
@@ -4708,7 +4708,7 @@
 </Activity>
 <Activity>
 	<Teacher>Kovacs Hajnalka</Teacher>
-	<Subject>DIRIGENŢIE</Subject>
+	<Subject>DIRIGENȚIE</Subject>
 	<Students>7C</Students>
 	<Duration>1</Duration>
 	<Total_Duration>1</Total_Duration>
@@ -4763,7 +4763,7 @@
 </Activity>
 <Activity>
 	<Teacher>Teaha Liana</Teacher>
-	<Subject>DIRIGENŢIE</Subject>
+	<Subject>DIRIGENȚIE</Subject>
 	<Students>9A</Students>
 	<Duration>1</Duration>
 	<Total_Duration>1</Total_Duration>
@@ -4918,7 +4918,7 @@
 </ConstraintTeacherNotAvailableTimes>
 <ConstraintTeacherNotAvailableTimes>
 	<Weight_Percentage>100</Weight_Percentage>
-	<Teacher>Veteşi Adina</Teacher>
+	<Teacher>Veteși Adina</Teacher>
 	<Number_of_Not_Available_Times>20</Number_of_Not_Available_Times>
 	<Not_Available_Time>
 		<Day>Luni</Day>
@@ -6601,7 +6601,7 @@
 </ConstraintTeacherNotAvailableTimes>
 <ConstraintTeacherNotAvailableTimes>
 	<Weight_Percentage>100</Weight_Percentage>
-	<Teacher>Hărăguş Isabela</Teacher>
+	<Teacher>Hărăguș Isabela</Teacher>
 	<Number_of_Not_Available_Times>27</Number_of_Not_Available_Times>
 	<Not_Available_Time>
 		<Day>Luni</Day>
@@ -6716,7 +6716,7 @@
 </ConstraintTeacherNotAvailableTimes>
 <ConstraintTeacherNotAvailableTimes>
 	<Weight_Percentage>100</Weight_Percentage>
-	<Teacher>Petrişor Gheorghina</Teacher>
+	<Teacher>Petrișor Gheorghina</Teacher>
 	<Number_of_Not_Available_Times>18</Number_of_Not_Available_Times>
 	<Not_Available_Time>
 		<Day>Luni</Day>
@@ -6795,7 +6795,7 @@
 </ConstraintTeacherNotAvailableTimes>
 <ConstraintTeacherNotAvailableTimes>
 	<Weight_Percentage>100</Weight_Percentage>
-	<Teacher>Creţu Crina</Teacher>
+	<Teacher>Crețu Crina</Teacher>
 	<Number_of_Not_Available_Times>29</Number_of_Not_Available_Times>
 	<Not_Available_Time>
 		<Day>Luni</Day>
@@ -7136,7 +7136,7 @@
 </ConstraintTeacherNotAvailableTimes>
 <ConstraintTeacherNotAvailableTimes>
 	<Weight_Percentage>100</Weight_Percentage>
-	<Teacher>Conţiu Loredana</Teacher>
+	<Teacher>Conțiu Loredana</Teacher>
 	<Number_of_Not_Available_Times>31</Number_of_Not_Available_Times>
 	<Not_Available_Time>
 		<Day>Luni</Day>
@@ -7545,7 +7545,7 @@
 </ConstraintTeacherNotAvailableTimes>
 <ConstraintTeacherNotAvailableTimes>
 	<Weight_Percentage>100</Weight_Percentage>
-	<Teacher>Biriş Mihaela</Teacher>
+	<Teacher>Biriș Mihaela</Teacher>
 	<Number_of_Not_Available_Times>28</Number_of_Not_Available_Times>
 	<Not_Available_Time>
 		<Day>Luni</Day>
@@ -7803,7 +7803,7 @@
 </ConstraintTeacherNotAvailableTimes>
 <ConstraintTeacherNotAvailableTimes>
 	<Weight_Percentage>100</Weight_Percentage>
-	<Teacher>Iovanuţ Maria</Teacher>
+	<Teacher>Iovanuț Maria</Teacher>
 	<Number_of_Not_Available_Times>10</Number_of_Not_Available_Times>
 	<Not_Available_Time>
 		<Day>Luni</Day>
@@ -7944,7 +7944,7 @@
 </ConstraintTeacherMaxDaysPerWeek>
 <ConstraintTeacherNotAvailableTimes>
 	<Weight_Percentage>100</Weight_Percentage>
-	<Teacher>Bozga Luminiţa</Teacher>
+	<Teacher>Bozga Luminița</Teacher>
 	<Number_of_Not_Available_Times>31</Number_of_Not_Available_Times>
 	<Not_Available_Time>
 		<Day>Luni</Day>
@@ -8344,21 +8344,21 @@
 </ConstraintActivitiesPreferredStartingTimes>
 <ConstraintTeacherMaxGapsPerDay>
 	<Weight_Percentage>100</Weight_Percentage>
-	<Teacher_Name>Biriş Mihaela</Teacher_Name>
+	<Teacher_Name>Biriș Mihaela</Teacher_Name>
 	<Max_Gaps>0</Max_Gaps>
 	<Active>true</Active>
 	<Comments></Comments>
 </ConstraintTeacherMaxGapsPerDay>
 <ConstraintTeacherMaxGapsPerDay>
 	<Weight_Percentage>100</Weight_Percentage>
-	<Teacher_Name>Conţiu Loredana</Teacher_Name>
+	<Teacher_Name>Conțiu Loredana</Teacher_Name>
 	<Max_Gaps>0</Max_Gaps>
 	<Active>true</Active>
 	<Comments></Comments>
 </ConstraintTeacherMaxGapsPerDay>
 <ConstraintTeacherMaxGapsPerDay>
 	<Weight_Percentage>100</Weight_Percentage>
-	<Teacher_Name>Iovanuţ Maria</Teacher_Name>
+	<Teacher_Name>Iovanuț Maria</Teacher_Name>
 	<Max_Gaps>0</Max_Gaps>
 	<Active>true</Active>
 	<Comments></Comments>
@@ -8419,7 +8419,7 @@
 </ConstraintTeacherMaxGapsPerDay>
 <ConstraintTeacherMaxDaysPerWeek>
 	<Weight_Percentage>100</Weight_Percentage>
-	<Teacher_Name>Păşcuţă Adina</Teacher_Name>
+	<Teacher_Name>Pășcuță Adina</Teacher_Name>
 	<Max_Days_Per_Week>1</Max_Days_Per_Week>
 	<Active>true</Active>
 	<Comments></Comments>
@@ -8825,14 +8825,14 @@
 </ConstraintTwoActivitiesConsecutive>
 <ConstraintTeacherMaxHoursDaily>
 	<Weight_Percentage>100</Weight_Percentage>
-	<Teacher_Name>Moţ Anca</Teacher_Name>
+	<Teacher_Name>Moț Anca</Teacher_Name>
 	<Maximum_Hours_Daily>5</Maximum_Hours_Daily>
 	<Active>true</Active>
 	<Comments></Comments>
 </ConstraintTeacherMaxHoursDaily>
 <ConstraintTeacherNotAvailableTimes>
 	<Weight_Percentage>100</Weight_Percentage>
-	<Teacher>Păşcuţă Adina</Teacher>
+	<Teacher>Pășcuță Adina</Teacher>
 	<Number_of_Not_Available_Times>28</Number_of_Not_Available_Times>
 	<Not_Available_Time>
 		<Day>Luni</Day>
@@ -9281,7 +9281,7 @@
 </ConstraintTeacherNotAvailableTimes>
 <ConstraintTeacherMaxDaysPerWeek>
 	<Weight_Percentage>100</Weight_Percentage>
-	<Teacher_Name>Moţ Anca</Teacher_Name>
+	<Teacher_Name>Moț Anca</Teacher_Name>
 	<Max_Days_Per_Week>3</Max_Days_Per_Week>
 	<Active>true</Active>
 	<Comments></Comments>
