@@ -2025,6 +2025,8 @@ Versions 5.35.0 - 5.35.v
 	- Updated the Czech translation, by Pavel Fric.
 - Version 5.35.1
 	- The alphabetic sorting of the items now respects the user's locale (the special characters are better ordered).
-	Suggestions and code by rodolforg and ChrisW67.
+	Suggestions and code by rodolforg. Also, there were used suggestions and code found on qtcentre.org, in a post by ChrisW67.
 	- Improved the translation procedure of some fields. Suggestion and code by rodolforg.
 	- Minor strings bugs fixed (reported by Vangelis Karafillidis).
+	- Improvement in the Romanian translation: instead of a cedilla, the special characters ș, ț, Ș, and Ț now use a small comma beneath them
+	(as recommended by dexonline.ro and cum-scriem-corect.blogspot.ro).
