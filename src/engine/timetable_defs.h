@@ -328,7 +328,7 @@ public:
 
 inline bool operator<(const LocaleString& lhs, const LocaleString& rhs)
 {
-	return (QString::localeAwareCompare(lhs, rhs)<0);
+	return QString::localeAwareCompare(lhs, rhs)<0;
 }
 /////////////////////////////////////////////////////
 
