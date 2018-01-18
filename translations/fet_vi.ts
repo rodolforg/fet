@@ -16555,10 +16555,6 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>This constraint was suggested for the following situation: a user needed that activities A1, A2 and A3 to be in follower days (like: A1 on Tuesday, A2 on Wednesday and A3 on Thursday. So, they must be in 3 consecutive days). This is simple: add a constraint max days between activities for A1, A2 and A3, with max 2 days between them. It is supposed that these activities are constrained not to be in the same day by a constraint min days between activities.</source>
-        <translation type="vanished">RB này minh họa một tình huống: xếp 3 tiết giảng A1, A2 và A3 trong 3 ngày liên tiếp nhau. Có thể đặt RB số ngày tối đa giữa chúng là 2 ngày. Bên cạnh đó, đặt RB không cho chúng ở cùng ngày thông qua RB số ngày tối thiểu giữa các tiết giảng.</translation>
-    </message>
-    <message>
         <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="304"/>
         <source>So, the general situation: this constraint ensures that between each pair from the selected activities, the distance in days is at most the selected value. Distance = 1 day between a pair A1 and A2 means that A1 and A2 are in consecutive days (like Thursday and Friday). Distance = 3 days means that A1 and A2 are 3 days apart, for instance Monday and Thursday.</source>
         <translation>RB này đảm bảo mỗi cặp tiết giảng A1 và A2 có khoảng cách theo số ngày. Nếu là 1, A1 và A2 được xếp theo ngày liên tiếp nhau.</translation>
@@ -36117,7 +36113,7 @@ Please modify your data correspondingly and try again</source>
         <translation>Hướng dẫn sử dụng trực tuyến</translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="978"/>
+        <location filename="../src/interface/helpaboutform_template.ui" line="976"/>
         <source>Close</source>
         <translation>Thoát</translation>
     </message>
@@ -36731,7 +36727,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;agemagician - suggestions.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Vlăduţ Frăţiman - suggestions.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Vlăduț Frățiman - suggestions.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;vlad2005 - suggestions.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
@@ -36944,8 +36940,6 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Taro Tada - Japanese translation.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;V Paul C Charlesraj - suggestion.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ChrisW67 - idea and code, found on qtcentre.org.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
@@ -47703,10 +47697,6 @@ Lưu ý: giáo viên bận và nghỉ giải lao không được tính vào ti�
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>This setting is useful for more things, maybe one thing is bug report: send you file along with the random seed at the start of generating (the two components, X and Y, are saved in the timetable directory at the start of generation)</source>
-        <translation type="vanished">Việc thiết lập này hữu ích cho việc báo lỗi: lưu tệp cùng với lõi tạo số ngẫu nhiên (thành phần X và Y) trước khi bắt đầu sinh TKB</translation>
-    </message>
-    <message>
         <location filename="../src/interface/fetmainform.cpp" line="451"/>
         <source>The random seed X component must be at least %1 and at most %2</source>
         <translation>Thành phần X phải nằm trong khoảng từ %1 tới %2</translation>
@@ -54493,26 +54483,6 @@ Bottom: %4</source>
         </translation>
     </message>
     <message>
-        <source>Added %1 locking time constraints.</source>
-        <comment>%1 is &gt;= 2, so constraints is plural</comment>
-        <translation type="vanished">Đã thêm %1 RB thời gian đang khóa.</translation>
-    </message>
-    <message>
-        <source>Added %1 locking space constraints.</source>
-        <comment>%1 is &gt;= 2, so constraints is plural</comment>
-        <translation type="vanished">Đã thêm %1 RB phòng học đang khóa.</translation>
-    </message>
-    <message>
-        <source>Removed %1 locking time constraints.</source>
-        <comment>%1 is &gt;= 2, so constraints is plural</comment>
-        <translation type="vanished">Đã xóa %1 RB thời gian đang khóa.</translation>
-    </message>
-    <message>
-        <source>Removed %1 locking space constraints.</source>
-        <comment>%1 is &gt;= 2, so constraints is plural</comment>
-        <translation type="vanished">Đã xóa %1 RB phòng học đang khóa.</translation>
-    </message>
-    <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="856"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1125"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="950"/>
@@ -54585,26 +54555,6 @@ Bottom: %4</source>
         <source>LS</source>
         <comment>Abbreviation for locked space. There are 4 string: permanently locked time, permanently locked space, locked time, locked space. Make sure their abbreviations contain different letters and are visually different, so user can easily differentiate between them. These abbreviations may appear also in other places, please use the same abbreviations.</comment>
         <translation>PHK</translation>
-    </message>
-    <message>
-        <source>Added 1 locking time constraint.</source>
-        <comment>constraint is singular (only 1 constraint)</comment>
-        <translation type="vanished">Đã thêm 1 RB thời gian đang khóa.</translation>
-    </message>
-    <message>
-        <source>Added 1 locking space constraint.</source>
-        <comment>constraint is singular (only 1 constraint)</comment>
-        <translation type="vanished">Đã thêm 1 RB phòng học đang khóa.</translation>
-    </message>
-    <message>
-        <source>Removed 1 locking time constraint.</source>
-        <comment>constraint is singular (only 1 constraint)</comment>
-        <translation type="vanished">Đã xóa 1 RB thời gian đang khóa.</translation>
-    </message>
-    <message>
-        <source>Removed 1 locking space constraint.</source>
-        <comment>constraint is singular (only 1 constraint)</comment>
-        <translation type="vanished">Đã xóa 1 RB phòng học đang khóa.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="893"/>

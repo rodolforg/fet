@@ -16663,11 +16663,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="299"/>
         <source>This constraint was suggested for the following situation: a user needed that activities A1, A2 and A3 to be in consecutive days (like: A1 on Tuesday, A2 on Wednesday and A3 on Thursday. So, they must be in 3 consecutive days). This is simple: add a constraint max days between activities for A1, A2 and A3, with max 2 days between them. It is supposed that these activities are constrained not to be in the same day by a constraint min days between activities.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>This constraint was suggested for the following situation: a user needed that activities A1, A2 and A3 to be in follower days (like: A1 on Tuesday, A2 on Wednesday and A3 on Thursday. So, they must be in 3 consecutive days). This is simple: add a constraint max days between activities for A1, A2 and A3, with max 2 days between them. It is supposed that these activities are constrained not to be in the same day by a constraint min days between activities.</source>
-        <translation type="vanished">Diese Einschränkung wurde für die folgende Situation vorgeschlagen: Ein Anwender wünschte, dass Aktivitäten A1, A2 und A3 an aufeinanderfolgenden Tagen stattfinden (z.B. A1 am Dienstag, A2 am Mittwoch, A3 am Donnerstag, also ohne dazwischenliegende Tage). Es ist einfach: Erstelle eine Einschränkung „Max. n Tage zwischen Aktivitäten“ für A1, A2 und A3 mit n=2 (angenommen, es gibt eine weitere Einschränkung „Min. n Tage zwischen Aktivitäten“, sodass diese nicht am gleichen Tag stattfinden können).</translation>
+        <translation>Diese Einschränkung wurde für die folgende Situation vorgeschlagen: Ein Anwender wünschte, dass Aktivitäten A1, A2 und A3 an aufeinanderfolgenden Tagen stattfinden (z.B. A1 am Dienstag, A2 am Mittwoch, A3 am Donnerstag, also ohne dazwischenliegende Tage). Es ist einfach: Erstelle eine Einschränkung „Max. n Tage zwischen Aktivitäten“ für A1, A2 und A3 mit n=2. Vorrausgesetzt diese Aktivitäten dürfen nicht am gleichen Tag liegen durch eine weitere Einschränkung „Min. n Tage zwischen Aktivitäten“.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="304"/>
@@ -36953,7 +36949,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;agemagician - suggestions.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Vlăduţ Frăţiman - suggestions.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Vlăduț Frățiman - suggestions.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;vlad2005 - suggestions.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
@@ -37166,13 +37162,11 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Taro Tada - Japanese translation.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;V Paul C Charlesraj - suggestion.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ChrisW67 - idea and code, found on qtcentre.org.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="978"/>
+        <location filename="../src/interface/helpaboutform_template.ui" line="976"/>
         <source>Close</source>
         <translation>Schließen</translation>
     </message>
@@ -48315,10 +48309,6 @@ Note: teacher not available and break are not counted as gaps.</source>
         <translation>Diese Einstellung ist nützlich, wenn man einen Fehlerbericht schickt: Senden Sie Ihre Datei zusammen mit den Zufallswerten (Die Zahlen X und Y, die im Stundenplanordner mit gespeichert werden)</translation>
     </message>
     <message>
-        <source>This setting is useful for more things, maybe one thing is bug report: send you file along with the random seed at the start of generating (the two components, X and Y, are saved in the timetable directory at the start of generation)</source>
-        <translation type="vanished">Diese Einstellung ist nützlich, wenn man einen Fehlerbericht schickt: Senden Sie Ihre Datei zusammen mit den Zufallswerten (X und Y), die im Stundenplanordner mit gespeichert werden.</translation>
-    </message>
-    <message>
         <location filename="../src/interface/fetmainform.cpp" line="451"/>
         <source>The random seed X component must be at least %1 and at most %2</source>
         <translation>Der Wert von X muss zwischen %1 und %2 liegen</translation>
@@ -55077,9 +55067,9 @@ Unten: %4</translation>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1049"/>
         <source>Added %n locking time constraint(s).</source>
         <comment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field.Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &apos;Handling Plurals&apos;.You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts(open these files with Qt Linguist and see the translation of this field).</comment>
-        <translation type="unfinished">
-            <numerusform>Es wurde %1 sperrende Zeiteinschränkung hinzugefügt.</numerusform>
-            <numerusform>Es wurden %1 sperrende Zeiteinschränkungen hinzugefügt.</numerusform>
+        <translation>
+            <numerusform>Es wurde %n sperrende Zeiteinschränkung hinzugefügt.</numerusform>
+            <numerusform>Es wurden %n sperrende Zeiteinschränkungen hinzugefügt.</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -55097,9 +55087,9 @@ Unten: %4</translation>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1057"/>
         <source>Added %n locking space constraint(s).</source>
         <comment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field.Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &apos;Handling Plurals&apos;.You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts(open these files with Qt Linguist and see the translation of this field).</comment>
-        <translation type="unfinished">
-            <numerusform>Es wurde %1 sperrende Raumeinschränkung hinzugefügt.</numerusform>
-            <numerusform>Es wurden %1 sperrende Raumeinschränkungen hinzugefügt.</numerusform>
+        <translation>
+            <numerusform>Es wurde %n sperrende Raumeinschränkung hinzugefügt.</numerusform>
+            <numerusform>Es wurden %n sperrende Raumeinschränkungen hinzugefügt.</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -55117,9 +55107,9 @@ Unten: %4</translation>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1065"/>
         <source>Removed %n locking time constraint(s).</source>
         <comment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field.Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &apos;Handling Plurals&apos;.You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts(open these files with Qt Linguist and see the translation of this field).</comment>
-        <translation type="unfinished">
-            <numerusform>Es wurde %1 sperrende Zeiteinschränkung entfernt.</numerusform>
-            <numerusform>Es wurden %1 sperrende Zeiteinschränkungen entfernt.</numerusform>
+        <translation>
+            <numerusform>Es wurde %n sperrende Zeiteinschränkung entfernt.</numerusform>
+            <numerusform>Es wurden %n sperrende Zeiteinschränkungen entfernt.</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -55137,30 +55127,10 @@ Unten: %4</translation>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform.cpp" line="1073"/>
         <source>Removed %n locking space constraint(s).</source>
         <comment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field.Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &apos;Handling Plurals&apos;.You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts(open these files with Qt Linguist and see the translation of this field).</comment>
-        <translation type="unfinished">
-            <numerusform>Es wurde %1 sperrende Raumeinschränkung entfernt.</numerusform>
-            <numerusform>Es wurden %1 sperrende Raumeinschränkungen entfernt.</numerusform>
+        <translation>
+            <numerusform>Es wurde %n sperrende Raumeinschränkung entfernt.</numerusform>
+            <numerusform>Es wurden %n sperrende Raumeinschränkungen entfernt.</numerusform>
         </translation>
-    </message>
-    <message>
-        <source>Added %1 locking time constraints.</source>
-        <comment>%1 is &gt;= 2, so constraints is plural</comment>
-        <translation type="vanished">Es wurden %1 sperrende Zeiteinschränkungen hinzugefügt.</translation>
-    </message>
-    <message>
-        <source>Added %1 locking space constraints.</source>
-        <comment>%1 is &gt;= 2, so constraints is plural</comment>
-        <translation type="vanished">Es wurden %1 sperrende Raumeinschränkungen hinzugefügt.</translation>
-    </message>
-    <message>
-        <source>Removed %1 locking time constraints.</source>
-        <comment>%1 is &gt;= 2, so constraints is plural</comment>
-        <translation type="vanished">Es wurden %1 sperrende Zeiteinschränkungen entfernt.</translation>
-    </message>
-    <message>
-        <source>Removed %1 locking space constraints.</source>
-        <comment>%1 is &gt;= 2, so constraints is plural</comment>
-        <translation type="vanished">Es wurden %1 sperrende Raumeinschränkungen entfernt.</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="856"/>
@@ -55237,26 +55207,6 @@ Unten: %4</translation>
         <translation>GR</translation>
     </message>
     <message>
-        <source>Added 1 locking time constraint.</source>
-        <comment>constraint is singular (only 1 constraint)</comment>
-        <translation type="vanished">Es wurde 1 sperrende Zeiteinschränkung hinzugefügt.</translation>
-    </message>
-    <message>
-        <source>Added 1 locking space constraint.</source>
-        <comment>constraint is singular (only 1 constraint)</comment>
-        <translation type="vanished">Es wurde 1 sperrende Raumeinschränkung hinzugefügt.</translation>
-    </message>
-    <message>
-        <source>Removed 1 locking time constraint.</source>
-        <comment>constraint is singular (only 1 constraint)</comment>
-        <translation type="vanished">Es wurde 1 sperrende Zeiteinschränkung entfernt.</translation>
-    </message>
-    <message>
-        <source>Removed 1 locking space constraint.</source>
-        <comment>constraint is singular (only 1 constraint)</comment>
-        <translation type="vanished">Es wurde 1 sperrende Raumeinschränkung entfernt.</translation>
-    </message>
-    <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform.cpp" line="893"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1178"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="987"/>
@@ -55276,38 +55226,6 @@ Unten: %4</translation>
         <source>If a cell is (permanently) locked in time or space, it contains abbreviations to show that: PLT (permanently locked time), LT (locked time), PLS (permanently locked space) or LS (locked space).</source>
         <comment>Translate the abbreviations also. Make sure the abbreviations in your language are different between themselves and the user can differentiate easily between them. These abbreviations may appear also in other places, please use the same abbreviations.</comment>
         <translation>Wenn eine Aktivität (permanent) in Zeit oder Raum gesetzt ist, dann können folgende Abkürzungen angezeigt werden: PGZ (permanent gesperrte Zeit),  GZ (gesperrte Zeit), PGR (permanent gesperrter Raum), GR (gesperrter Raum).</translation>
-    </message>
-    <message numerus="yes">
-        <source>Added %n locking time constraint(s).</source>
-        <extracomment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field. Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &quot;Handling Plurals&quot;. You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts (open these files with Qt Linguist and see the translation of this field).</extracomment>
-        <translation type="vanished">
-            <numerusform>Es wurde %1 sperrende Zeiteinschränkung hinzugefügt.</numerusform>
-            <numerusform>Es wurden %1 sperrende Zeiteinschränkungen hinzugefügt.</numerusform>
-        </translation>
-    </message>
-    <message numerus="yes">
-        <source>Added %n locking space constraint(s).</source>
-        <extracomment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field. Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &quot;Handling Plurals&quot;. You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts (open these files with Qt Linguist and see the translation of this field).</extracomment>
-        <translation type="vanished">
-            <numerusform>Es wurde %1 sperrende Raumeinschränkung hinzugefügt.</numerusform>
-            <numerusform>Es wurden %1 sperrende Raumeinschränkungen hinzugefügt.</numerusform>
-        </translation>
-    </message>
-    <message numerus="yes">
-        <source>Removed %n locking time constraint(s).</source>
-        <extracomment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field. Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &quot;Handling Plurals&quot;. You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts (open these files with Qt Linguist and see the translation of this field).</extracomment>
-        <translation type="vanished">
-            <numerusform>Es wurde %1 sperrende Zeiteinschränkung entfernt.</numerusform>
-            <numerusform>Es wurden %1 sperrende Zeiteinschränkungen entfernt.</numerusform>
-        </translation>
-    </message>
-    <message numerus="yes">
-        <source>Removed %n locking space constraint(s).</source>
-        <extracomment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field. Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &quot;Handling Plurals&quot;. You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts (open these files with Qt Linguist and see the translation of this field).</extracomment>
-        <translation type="vanished">
-            <numerusform>Es wurde %1 sperrende Raumeinschränkung entfernt.</numerusform>
-            <numerusform>Es wurden %1 sperrende Raumeinschränkungen entfernt.</numerusform>
-        </translation>
     </message>
 </context>
 <context>

@@ -36684,7 +36684,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;agemagician - suggestions.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Vlăduţ Frăţiman - suggestions.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Vlăduț Frățiman - suggestions.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;vlad2005 - suggestions.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
@@ -36897,8 +36897,6 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Taro Tada - Japanese translation.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;V Paul C Charlesraj - suggestion.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ChrisW67 - idea and code, found on qtcentre.org.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
@@ -36918,7 +36916,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="978"/>
+        <location filename="../src/interface/helpaboutform_template.ui" line="976"/>
         <source>Close</source>
         <translation type="unfinished"></translation>
     </message>
@@ -54546,38 +54544,6 @@ Bottom: %4</source>
         <source>If a cell is (permanently) locked in time or space, it contains abbreviations to show that: PLT (permanently locked time), LT (locked time), PLS (permanently locked space) or LS (locked space).</source>
         <comment>Translate the abbreviations also. Make sure the abbreviations in your language are different between themselves and the user can differentiate easily between them. These abbreviations may appear also in other places, please use the same abbreviations.</comment>
         <translation type="unfinished"></translation>
-    </message>
-    <message numerus="yes">
-        <source>Added %n locking time constraint(s).</source>
-        <extracomment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field. Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &quot;Handling Plurals&quot;. You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts (open these files with Qt Linguist and see the translation of this field).</extracomment>
-        <translation type="vanished">
-            <numerusform>Added %n locking time constraint.</numerusform>
-            <numerusform>Added %n locking time constraints.</numerusform>
-        </translation>
-    </message>
-    <message numerus="yes">
-        <source>Added %n locking space constraint(s).</source>
-        <extracomment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field. Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &quot;Handling Plurals&quot;. You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts (open these files with Qt Linguist and see the translation of this field).</extracomment>
-        <translation type="vanished">
-            <numerusform>Added %n locking space constraint.</numerusform>
-            <numerusform>Added %n locking space constraints.</numerusform>
-        </translation>
-    </message>
-    <message numerus="yes">
-        <source>Removed %n locking time constraint(s).</source>
-        <extracomment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field. Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &quot;Handling Plurals&quot;. You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts (open these files with Qt Linguist and see the translation of this field).</extracomment>
-        <translation type="vanished">
-            <numerusform>Removed %n locking time constraint.</numerusform>
-            <numerusform>Removed %n locking time constraints.</numerusform>
-        </translation>
-    </message>
-    <message numerus="yes">
-        <source>Removed %n locking space constraint(s).</source>
-        <extracomment>See http://doc.qt.io/qt-5/i18n-plural-rules.html for advice on how to correctly translate this field. Also, see http://doc.qt.io/qt-5/i18n-source-translation.html, section &quot;Handling Plurals&quot;. You have two examples on how to translate this field in fet_en_GB.ts and in fet_ro.ts (open these files with Qt Linguist and see the translation of this field).</extracomment>
-        <translation type="vanished">
-            <numerusform>Removed %n locking space constraint.</numerusform>
-            <numerusform>Removed %n locking space constraints.</numerusform>
-        </translation>
     </message>
 </context>
 <context>

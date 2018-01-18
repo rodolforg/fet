@@ -1776,7 +1776,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addactivityform_template.ui" line="2584"/>
         <source>Consecutive</source>
         <comment>Refers to forcing component activities consecutive if they are in the same day. Please keep translation short</comment>
-        <translation>Συνεχόμενες</translation>
+        <translation>Διαδοχικές</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform_template.ui" line="2616"/>
@@ -13602,13 +13602,13 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7312"/>
         <source>Activities same room if consecutive</source>
-        <translation>Δραστηριότητες - αν συνεχόμενες, στην ίδια αίθουσα</translation>
+        <translation>Δραστηριότητες - αν διαδοχικές, στην ίδια αίθουσα</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7295"/>
         <source>Activities same room if consecutive, WP:%1%, NA:%2, A: %3</source>
         <comment>Constraint description. WP means weight percentage, NA means the number of activities, A means activities list</comment>
-        <translation>Δραστηριότητες - αν συνεχόμενες, στην ίδια αίθουσα, ΠΒ:%1%, ΑΔ:%2, Δ: %3</translation>
+        <translation>Δραστηριότητες - αν διαδοχικές, στην ίδια αίθουσα, ΠΒ:%1%, ΑΔ:%2, Δ: %3</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7313"/>
@@ -13640,7 +13640,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7374"/>
         <source>Space constraint activities same room if consecutive broken</source>
-        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;δραστηριότητες - αν συνεχόμενες, στην ίδια αίθουσα&quot;</translation>
+        <translation>Δεν έχει τηρηθεί χωρικός περιορισμός &quot;δραστηριότητες - αν διαδοχικές, στην ίδια αίθουσα&quot;</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7376"/>
@@ -13689,7 +13689,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintactivitiessameroomifconsecutiveform_template.ui" line="14"/>
         <source>Constraints activities same room if consecutive</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation>Περιορισμοί &apos;Δραστηριότητες - αν συνεχόμενες, στην ίδια αίθουσα&apos;</translation>
+        <translation>Περιορισμοί &apos;Δραστηριότητες - αν διαδοχικές, στην ίδια αίθουσα&apos;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessameroomifconsecutiveform_template.ui" line="28"/>
@@ -13876,7 +13876,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="322"/>
         <source>IMPORTANT: after adding such constraints, it is necessary (otherwise generation might be impossible) to remove redundant constraints min days between activities. If you are sure that you don&apos;t have redundant constraints, you can skip this step, but it doesn&apos;t hurt to do it as a precaution. Also, you don&apos;t have to do that after each added constraint, but only once after adding more constraints of this type. Please read Help/Important tips - tip number 2 for details</source>
-        <translation>ΣΗΜΑΝΤΙΚΟΙ: μετά την προσθήκη αυτών των περιορισμών, είναι απαραίτητο (διαφορετικά η δημιουργία ωρολογίου προγράμματος μπορεί να καταστεί αδύνατη) να διαγράψετε τους περιττούς περιορισμούς &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;. Αν είστε σίγουροι ότι δεν έχετε περιττούς περιορισμούς, μπορείτε να παραλείψετε αυτό το βήμα, αλλά δεν βλάπτει να το κάνετε για προφύλαξη. Επίσης, δεν χρειάζεται να κάνετε το ίδιο μετά από κάθε περιορισμό που προσθέτετε, αλλά μόνον μία φορά, μετά την προσθήκη περισσοτέρων περιορισμών αυτού του τύπου. Παρακαλώ διαβάστε στην &quot;Βοήθεια/Σημαντικές υποδείξεις&quot;, υπόδειξη αριθμός 2 για λεπτομέρειες</translation>
+        <translation>ΣΗΜΑΝΤΙΚΟ: μετά την προσθήκη αυτών των περιορισμών, είναι απαραίτητο (διαφορετικά η δημιουργία ωρολογίου προγράμματος μπορεί να καταστεί αδύνατη) να διαγράψετε τους περιττούς περιορισμούς &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;. Αν είστε σίγουροι ότι δεν έχετε περιττούς περιορισμούς, μπορείτε να παραλείψετε αυτό το βήμα, αλλά δεν βλάπτει να το κάνετε για προφύλαξη. Επίσης, δεν χρειάζεται να κάνετε το ίδιο μετά από κάθε περιορισμό που προσθέτετε, αλλά μόνον μία φορά, μετά την προσθήκη περισσοτέρων περιορισμών αυτού του τύπου. Παρακαλώ διαβάστε στην &quot;Βοήθεια/Σημαντικές υποδείξεις&quot;, υπόδειξη αριθμός 2 για λεπτομέρειες</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingdayform.cpp" line="327"/>
@@ -14278,12 +14278,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="322"/>
         <source>IMPORTANT: after adding such constraints, it is necessary (otherwise generation might be impossible) to remove redundant constraints min days between activities. If you are sure that you don&apos;t have redundant constraints, you can skip this step, but it doesn&apos;t hurt to do it as a precaution. Also, you don&apos;t have to do that after each added constraint, but only once after adding more constraints of this type. Please read Help/Important tips - tip number 2 for details</source>
-        <translation type="unfinished">ΣΗΜΑΝΤΙΚΟΙ: μετά την προσθήκη αυτών των περιορισμών, είναι απαραίτητο (διαφορετικά η δημιουργία ωρολογίου προγράμματος μπορεί να καταστεί αδύνατη) να διαγράψετε τους περιττούς περιορισμούς &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;. Αν είστε σίγουροι ότι δεν έχετε περιττούς περιορισμούς, μπορείτε να παραλείψετε αυτό το βήμα, αλλά δεν βλάπτει να το κάνετε για προφύλαξη. Επίσης, δεν χρειάζεται να κάνετε το ίδιο μετά από κάθε περιορισμό που προσθέτετε, αλλά μόνον μία φορά, μετά την προσθήκη περισσοτέρων περιορισμών αυτού του τύπου. Παρακαλώ διαβάστε στην &quot;Βοήθεια/Σημαντικές υποδείξεις&quot;, υπόδειξη αριθμός 2 για λεπτομέρειες</translation>
+        <translation>ΣΗΜΑΝΤΙΚΟ: μετά την προσθήκη αυτών των περιορισμών, είναι απαραίτητο (διαφορετικά η δημιουργία ωρολογίου προγράμματος μπορεί να καταστεί αδύνατη) να διαγράψετε τους περιττούς περιορισμούς &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;. Αν είστε σίγουροι ότι δεν έχετε περιττούς περιορισμούς, μπορείτε να παραλείψετε αυτό το βήμα, αλλά δεν βλάπτει να το κάνετε για προφύλαξη. Επίσης, δεν χρειάζεται να κάνετε το ίδιο μετά από κάθε περιορισμό που προσθέτετε, αλλά μόνον μία φορά, μετά την προσθήκη περισσοτέρων περιορισμών αυτού του τύπου. Παρακαλώ διαβάστε στην &quot;Βοήθεια/Σημαντικές υποδείξεις&quot;, υπόδειξη αριθμός 2 για λεπτομέρειες</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="327"/>
         <source>If you divide the years by categories (the students have optional courses), you may not need this kind of constraint. If the year is for instance divided by language, English/French/German, sometimes people think that it is needed that these optional activities to have the same starting time. But solutions exist without adding same starting time constraints. Some people try to avoid students gaps by using this constraint, because they need to do it this way in other timetabling software. But it is not the best practice to do it with such a constraint. The correct way is to add a max 0 gaps per week constraint for students and maybe also an early max 0 beginnings at second hour constraint for students.</source>
-        <translation type="unfinished"></translation>
+        <translation>Εάν υποδιαιρέσετε τα έτη σε κατηγορίες (για την περίπτωση που οι μαθητές έχουν μαθήματα επιλογής ή μαθήματα κατεύθυνσης), ενδεχομένως να μην χρειάζεστε αυτόν τον τύπο περιορισμού. Αν -για παράδειγμα- το έτος υποδιαιρείται ως προς την ξένη γλώσσα (Αγγλικά/Γαλλικά/Γερμανικά), μερικές φορές πολλοί νομίζουν ότι είναι απαραίτητο αυτές οι δραστηριότητες με μαθήματα επιλογής να έχουν τον ίδιο χρόνο έναρξης. Αλλά, μπορούν να βρεθούν λύσεις ακόμη και χωρίς να προστεθούν περιορισμοί του τύπου &quot;δραστηριότητες - ίδιος χρόνος έναρξης&quot;. Κάποιοι προσπαθούν να αποφύγουν την ύπαρξη κενών στους μαθητές με την χρήση αυτού του περιορισμού, διότι έτσι αντιμετωπίζουν το πρόβλημα αυτό με κάποιο άλλο λογισμικό κατάρτισης ωρολογίων προγραμμάτων. Αλλά αυτή δεν είναι η καλύτερη προσέγγιση, δηλαδή να προσπαθείτε να επιτύχετε αυτό το αποτέλεσμα με την χρήση τέτοιου είδους περιορισμού. Ο ορθός τρόπος είναι να προσθέσετε τον περιορισμό &quot;μαθητές - μέγιστα κενά ανά εβδομάδα&quot;=0 καθώς επίσης πιθανώς και τον περιορισμό &quot;μαθητές - μέγιστες ενάρξεις την δεύτερη ώρα&quot;=0.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiessamestartingtimeform.cpp" line="334"/>
@@ -16424,7 +16424,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintbreaktimesform_template.ui" line="26"/>
         <source>Note: An activity with duration greater than 1 cannot be split over a break. Also, the activities constrained by min days between activities constraints with &apos;consecutive if same day&apos; = true cannot spread over a break.</source>
-        <translation>Σημείωση: Μία δραστηριότητα με διάρκεια μεγαλύτερη από 1 δεν μπορεί να επιμεριστεί πριν και μετά από ένα διάλειμμα. Επίσης, οι δραστηριότητες που έχουν περιορισμούς &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; με &apos;συνεχόμενες αν την ίδια ημέρα&apos; = αληθής, δεν μπορούν να επιμεριστούν πριν και μετά από ένα διάλειμμα.</translation>
+        <translation>Σημείωση: Μία δραστηριότητα με διάρκεια μεγαλύτερη από 1 δεν μπορεί να επιμεριστεί πριν και μετά από ένα διάλειμμα. Επίσης, οι δραστηριότητες που έχουν περιορισμούς &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; με &apos;διαδοχικές αν την ίδια ημέρα&apos; = αληθής, δεν μπορούν να επιμεριστούν πριν και μετά από ένα διάλειμμα.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintbreaktimesform_template.ui" line="61"/>
@@ -16587,16 +16587,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="299"/>
         <source>This constraint was suggested for the following situation: a user needed that activities A1, A2 and A3 to be in consecutive days (like: A1 on Tuesday, A2 on Wednesday and A3 on Thursday. So, they must be in 3 consecutive days). This is simple: add a constraint max days between activities for A1, A2 and A3, with max 2 days between them. It is supposed that these activities are constrained not to be in the same day by a constraint min days between activities.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>This constraint was suggested for the following situation: a user needed that activities A1, A2 and A3 to be in follower days (like: A1 on Tuesday, A2 on Wednesday and A3 on Thursday. So, they must be in 3 consecutive days). This is simple: add a constraint max days between activities for A1, A2 and A3, with max 2 days between them. It is supposed that these activities are constrained not to be in the same day by a constraint min days between activities.</source>
-        <translation type="vanished">Ο περιορισμός αυτός είχε προταθεί για την παρακάτω περίπτωση: κάποιος χρήστης χρειαζόταν να τοποθετήσει τις δραστηριότητες Δ1, Δ2 και Δ3 σε συνεχόμενες ημέρες (όπως: Δ1 την Τρίτη, Δ2 την Τετάρτη και Δ3 την Πέμπτη. Έτσι, θα πρέπει να πραγματοποιούνται σε 3 συνεχόμενες ημέρες). Αυτό είναι εύκολο: προσθέστε έναν περιορισμό &quot;μέγιστες ημέρες ανάμεσα σε δραστηριότητες&quot; για τις δραστηριότητες Δ1, Δ2 και Δ3, με μέγιστες 2 ημέρες ανάμεσά τους. Θεωρείται ότι οι δραστηριότητες αυτές δεν πραγματοποιούνται την ίδια ημέρα εξαιτίας ύπαρξης του περιορισμού &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;.</translation>
+        <translation>Ο περιορισμός αυτός είχε προταθεί για την παρακάτω περίπτωση: κάποιος χρήστης χρειαζόταν να τοποθετήσει τις δραστηριότητες Δ1, Δ2 και Δ3 σε διαδοχικές ημέρες (όπως: Δ1 την Τρίτη, Δ2 την Τετάρτη και Δ3 την Πέμπτη. Αυτό είναι εύκολο: προσθέστε έναν περιορισμό &quot;μέγιστες ημέρες ανάμεσα σε δραστηριότητες&quot; για τις δραστηριότητες Δ1, Δ2 και Δ3, με μέγιστες 2 ημέρες ανάμεσά τους. Θεωρείται ότι οι δραστηριότητες αυτές δεν πραγματοποιούνται την ίδια ημέρα εξαιτίας ύπαρξης του περιορισμού &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="304"/>
         <source>So, the general situation: this constraint ensures that between each pair from the selected activities, the distance in days is at most the selected value. Distance = 1 day between a pair A1 and A2 means that A1 and A2 are in consecutive days (like Thursday and Friday). Distance = 3 days means that A1 and A2 are 3 days apart, for instance Monday and Thursday.</source>
-        <translation>Επομένως, η γενική κατάσταση: ο περιορισμός αυτός εξασφαλίζει ότι ανάμεσα σε κάθε ζεύγος επιλεγμένων δραστηριοτήτων, η απόσταση σε ημέρες είναι κατά μέγιστο η επιλεγμένη τιμή. Απόσταση = 1 ημέρα ανάμεσα σε ζεύγος Δ1 και Δ2 σημαίνει ότι οι Δ1 και Δ2 πραγματοποιούνται σε συνεχόμενες ημέρες (όπως Πέμπτη και Παρασκευή). Απόσταση = 3 ημέρες, σημαίνει ότι οι Δ1 και Δ2 απέχουν 3 ημέρες, για παράδειγμα πραγματοποιούνται Δευτέρα και Πέμπτη.</translation>
+        <translation>Επομένως, η γενική κατάσταση: ο περιορισμός αυτός εξασφαλίζει ότι ανάμεσα σε κάθε ζεύγος επιλεγμένων δραστηριοτήτων, η απόσταση σε ημέρες είναι κατά μέγιστο η επιλεγμένη τιμή. Απόσταση = 1 ημέρα ανάμεσα σε ζεύγος Δ1 και Δ2 σημαίνει ότι οι Δ1 και Δ2 πραγματοποιούνται σε διαδοχικές ημέρες (όπως Πέμπτη και Παρασκευή). Απόσταση = 3 ημέρες, σημαίνει ότι οι Δ1 και Δ2 απέχουν 3 ημέρες, για παράδειγμα πραγματοποιούνται Δευτέρα και Πέμπτη.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="311"/>
@@ -16606,7 +16602,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="308"/>
         <source>Another example: teacher T wants to ensure that his activities take place in at most 4 consecutive days (so, from Monday to Thursday or from Tuesday to Friday). Then, add all his activities and max days between them = 3.</source>
-        <translation>Ακόμη ένα παράδειγμα: ο εκπαιδευτικός Ε θέλει να εξασφαλίσει ότι οι δραστηριότητές του θα πραγματοποιούνται σε κατά μέγιστο 4 συνεχόμενες ημέρες (δηλαδή, από Δευτέρα μέχρι Πέμπτη, ή από Τρίτη μέχρι Παρασκευή). Έτσι, πρέπει να προσθέσετε όλες τις δραστηριότητές του και θα θέσετε μέγιστες ημέρες ανάμεσα στις δραστηριότητες = 3.</translation>
+        <translation>Ακόμη ένα παράδειγμα: ο εκπαιδευτικός Ε θέλει να εξασφαλίσει ότι οι δραστηριότητές του θα πραγματοποιούνται σε κατά μέγιστο 4 διαδοχικές ημέρες (δηλαδή, από Δευτέρα μέχρι Πέμπτη, ή από Τρίτη μέχρι Παρασκευή). Έτσι, πρέπει να προσθέσετε όλες τις δραστηριότητές του και θα θέσετε μέγιστες ημέρες ανάμεσα στις δραστηριότητες = 3.</translation>
     </message>
 </context>
 <context>
@@ -16767,7 +16763,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="1911"/>
         <source>Consecutive if same day=%1</source>
-        <translation>Συνεχόμενες εάν την ίδια ημέρα=%1</translation>
+        <translation>Διαδοχικές εάν την ίδια ημέρα=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="1914"/>
@@ -16811,83 +16807,83 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="370"/>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="427"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="234"/>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="261"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Μη αποδεκτή επιλογή περιορισμού</translation>
+        <translation>Μη αποδεκτή επιλογή περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="266"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">Διαγραφή περιορισμού;</translation>
+        <translation>Διαγραφή περιορισμού;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="272"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">FET - Επιβεβαίωση</translation>
+        <translation>FET - Επιβεβαίωση</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="273"/>
         <source>Yes</source>
-        <translation type="unfinished">Ναι</translation>
+        <translation>Ναι</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="273"/>
         <source>No</source>
-        <translation type="unfinished">Όχι</translation>
+        <translation>Όχι</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="316"/>
         <source>FET has meet a critical error - aborting current operation, please report bug (old weight is not -1 and not (&gt;=0.0 and &lt;=100.0))</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Παρουσιάστηκε κρίσιμο σφάλμα στο FET - η τρέχουσα διαδικασία ματαιώνεται. Παρακαλώ να αναφέρετε το σφάλμα λογισμικού (bug) (η παλιά βαρύτητα δεν είναι -1 ούτε και (&gt;=0.0 και &lt;=100.0))</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="326"/>
         <source>FET has met a critical error - aborting current operation, please report bug (new weight is not -1 and not (&gt;=0.0 and &lt;=100.0))</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Παρουσιάστηκε κρίσιμο σφάλμα στο FET - η τρέχουσα διαδικασία ματαιώνεται. Παρακαλώ να αναφέρετε το σφάλμα λογισμικού (bug) (η νέα βαρύτητα δεν είναι -1 ούτε και (&gt;=0.0 και &lt;=100.0))</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="335"/>
         <source>FET has met a critical error - aborting current operation, please report bug (old consecutive is not any, yes or no)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Παρουσιάστηκε κρίσιμο σφάλμα στο FET - η τρέχουσα διαδικασία ματαιώνεται. Παρακαλώ να αναφέρετε το σφάλμα λογισμικού (bug) (οι παλιές διαδοχικές δεν είναι ούτε ναι, ούτε όχι)</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="341"/>
         <source>FET has met a critical error - aborting current operation, please report bug (new consecutive is not no_change, yes or no)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Παρουσιάστηκε κρίσιμο σφάλμα στο FET - η τρέχουσα διαδικασία ματαιώνεται. Παρακαλώ να αναφέρετε το σφάλμα λογισμικού (bug) (οι νέες διαδοχικές δεν είναι &quot;χωρίς αλλαγή&quot;, ούτε ναι, ούτε όχι)</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="351"/>
         <source>FET has met a critical error - aborting current operation, please report bug (old min days is not -1 or 1..ndaysperweek)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Παρουσιάστηκε κρίσιμο σφάλμα στο FET - η τρέχουσα διαδικασία ματαιώνεται. Παρακαλώ να αναφέρετε το σφάλμα λογισμικού (bug) (οι παλιές &quot;ελάχιστες ημέρες&quot; δεν είναι ούτε -1 or 1.. nημέρες ανά εβδομάδα)</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="361"/>
         <source>FET has met a critical error - aborting current operation, please report bug (new min days is not -1 or 1..ndaysperweek)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Παρουσιάστηκε κρίσιμο σφάλμα στο FET - η τρέχουσα διαδικασία ματαιώνεται. Παρακαλώ να αναφέρετε το σφάλμα λογισμικού (bug) (οι νέες &quot;ελάχιστες ημέρες&quot; δεν είναι ούτε -1 ούτε 1.. nημέρεςανά εβδομάδα)</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="371"/>
         <source>FET has met a critical error - aborting current operation, please report bug (old nActivities is not -1 or &gt;=1)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Παρουσιάστηκε κρίσιμο σφάλμα στο FET - η τρέχουσα διαδικασία ματαιώνεται. Παρακαλώ να αναφέρετε το σφάλμα λογισμικού (bug) (οι παλιές nΔραστηριότητες δεν είναι ούτε -1 ούτε &gt;=1)</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="427"/>
         <source>There were inspected (and possibly modified) %1 constraints min days between activities matching your criteria</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Εξετάστηκαν (και πιθανώς τροποποιήθηκαν) %1 περιορισμοί &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; που ταιριάζουν στα κριτήριά σας</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="429"/>
         <source>NOTE: If you are using constraints of type activities same starting time or activities same starting day, it is important (after current operation) to apply the operation of removing redundant constraints.</source>
-        <translation type="unfinished"></translation>
+        <translation>ΣΗΜΕΙΩΣΗ: Αν χρησιμοποιείτε περιορισμούς του τύπου &quot;δραστηριότητες - ίδιος χρόνος έναρξης&quot; ή &quot;δραστηριότητες - ίδια ημέρα έναρξης&quot;, είναι σημαντικό (μετά την τρέχουσα διαδικασία) να εφαρμόσετε τη διαδικασία διαγραφής περιττών περιορισμών.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmindaysbetweenactivitiesform.cpp" line="431"/>
         <source>Read Help/Important tips - tip 2) for details.</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαβάστε στο &quot;Βοήθεια/Σημαντικές υποδείξεις - υπόδειξη 2) για λεπτομέρειες</translation>
     </message>
 </context>
 <context>
@@ -17099,7 +17095,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintmingapsbetweenactivitiesform.cpp" line="296"/>
         <source>Please make sure that the selected activities are not forced to be consecutive by some other constraint &apos;min days between activities&apos; (with &apos;consecutive if same day&apos; true), by a constraint &apos;two activities consecutive&apos;, or by a constraint &apos;two activities grouped&apos; (also, if you have a constraint &apos;three activities grouped&apos; related to the selected activities, make sure that the constraints do not contradict).</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ βεβαιωθείτε ότι για τις επιλεγμένες δραστηριότητες δεν έχει επιβληθεί να είναι διαδοχικές με κάποιον άλλο περιορισμό &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot; (με &quot;διαδοχικές εάν την ίδια ημέρα&quot; = αληθής), με περιορισμό &quot;δύο δραστηριότητες - διαδοχικές&quot;, ή με περιορισμό &quot;δύο δραστηριότητες - ομαδοποιημένες&quot; (επίσης, αν έχετε περιορισμό &quot;τρεις δραστηριότητες - ομαδοποιημένες&quot; που σχετίζεται με τις επιλεγμένες δραστηριότητες, βεβαιωθείτε ότι οι περιορισμοί δεν έρχονται σε αντίφαση).</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmingapsbetweenactivitiesform.cpp" line="303"/>
@@ -17299,33 +17295,33 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintroomnotavailabletimesform.cpp" line="126"/>
         <location filename="../src/interface/constraintroomnotavailabletimesform.cpp" line="153"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintroomnotavailabletimesform.cpp" line="126"/>
         <location filename="../src/interface/constraintroomnotavailabletimesform.cpp" line="153"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Μη αποδεκτή επιλογή περιορισμού</translation>
+        <translation>Μη αποδεκτή επιλογή περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintroomnotavailabletimesform.cpp" line="158"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">Διαγραφή περιορισμού;</translation>
+        <translation>Διαγραφή περιορισμού;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintroomnotavailabletimesform.cpp" line="164"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">FET - Επιβεβαίωση</translation>
+        <translation>FET - Επιβεβαίωση</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintroomnotavailabletimesform.cpp" line="165"/>
         <source>Yes</source>
-        <translation type="unfinished">Ναι</translation>
+        <translation>Ναι</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintroomnotavailabletimesform.cpp" line="165"/>
         <source>No</source>
-        <translation type="unfinished">Όχι</translation>
+        <translation>Όχι</translation>
     </message>
 </context>
 <context>
@@ -17446,33 +17442,33 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsactivitytagmaxhourscontinuouslyform.cpp" line="125"/>
         <location filename="../src/interface/constraintstudentsactivitytagmaxhourscontinuouslyform.cpp" line="152"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsactivitytagmaxhourscontinuouslyform.cpp" line="125"/>
         <location filename="../src/interface/constraintstudentsactivitytagmaxhourscontinuouslyform.cpp" line="152"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Μη αποδεκτή επιλογή περιορισμού</translation>
+        <translation>Μη αποδεκτή επιλογή περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsactivitytagmaxhourscontinuouslyform.cpp" line="157"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">Διαγραφή περιορισμού;</translation>
+        <translation>Διαγραφή περιορισμού;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsactivitytagmaxhourscontinuouslyform.cpp" line="163"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">FET - Επιβεβαίωση</translation>
+        <translation>FET - Επιβεβαίωση</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsactivitytagmaxhourscontinuouslyform.cpp" line="164"/>
         <source>Yes</source>
-        <translation type="unfinished">Ναι</translation>
+        <translation>Ναι</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsactivitytagmaxhourscontinuouslyform.cpp" line="164"/>
         <source>No</source>
-        <translation type="unfinished">Όχι</translation>
+        <translation>Όχι</translation>
     </message>
 </context>
 <context>
@@ -18273,37 +18269,37 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxbuildingchangesperweekform_template.ui" line="14"/>
         <source>Constraints students max building changes per week</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Περιορισμοί: &quot;Μαθητές - μέγιστες αλλαγές κτιρίου ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxbuildingchangesperweekform_template.ui" line="28"/>
         <source>Constraints</source>
-        <translation type="unfinished">Περιορισμοί</translation>
+        <translation>Περιορισμοί</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxbuildingchangesperweekform_template.ui" line="83"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxbuildingchangesperweekform_template.ui" line="62"/>
         <source>Add</source>
-        <translation type="unfinished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxbuildingchangesperweekform_template.ui" line="45"/>
         <source>Current constraint</source>
-        <translation type="unfinished">Τρέχων περιορισμός</translation>
+        <translation>Τρέχων περιορισμός</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxbuildingchangesperweekform_template.ui" line="76"/>
         <source>Remove</source>
-        <translation type="unfinished">Διαγραφή</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxbuildingchangesperweekform_template.ui" line="69"/>
         <source>Modify</source>
-        <translation type="unfinished">Τροποποίηση</translation>
+        <translation>Τροποποίηση</translation>
     </message>
 </context>
 <context>
@@ -18379,33 +18375,33 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxdaysperweekform.cpp" line="114"/>
         <location filename="../src/interface/constraintstudentsmaxdaysperweekform.cpp" line="141"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxdaysperweekform.cpp" line="114"/>
         <location filename="../src/interface/constraintstudentsmaxdaysperweekform.cpp" line="141"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Μη αποδεκτή επιλογή περιορισμού</translation>
+        <translation>Μη αποδεκτή επιλογή περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxdaysperweekform.cpp" line="146"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">Διαγραφή περιορισμού;</translation>
+        <translation>Διαγραφή περιορισμού;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxdaysperweekform.cpp" line="152"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">FET - Επιβεβαίωση</translation>
+        <translation>FET - Επιβεβαίωση</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxdaysperweekform.cpp" line="153"/>
         <source>Yes</source>
-        <translation type="unfinished">Ναι</translation>
+        <translation>Ναι</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxdaysperweekform.cpp" line="153"/>
         <source>No</source>
-        <translation type="unfinished">Όχι</translation>
+        <translation>Όχι</translation>
     </message>
 </context>
 <context>
@@ -18414,37 +18410,37 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxdaysperweekform_template.ui" line="14"/>
         <source>Constraints students max days per week</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Περιορισμοί: &quot;Μαθητές - μέγιστες ημέρες ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxdaysperweekform_template.ui" line="28"/>
         <source>Constraints</source>
-        <translation type="unfinished">Περιορισμοί</translation>
+        <translation>Περιορισμοί</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxdaysperweekform_template.ui" line="45"/>
         <source>Current constraint</source>
-        <translation type="unfinished">Τρέχων περιορισμός</translation>
+        <translation>Τρέχων περιορισμός</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxdaysperweekform_template.ui" line="62"/>
         <source>Add</source>
-        <translation type="unfinished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxdaysperweekform_template.ui" line="69"/>
         <source>Modify</source>
-        <translation type="unfinished">Τροποποίηση</translation>
+        <translation>Τροποποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxdaysperweekform_template.ui" line="76"/>
         <source>Remove</source>
-        <translation type="unfinished">Διαγραφή</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxdaysperweekform_template.ui" line="83"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
 </context>
 <context>
@@ -18526,33 +18522,33 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxgapsperdayform.cpp" line="117"/>
         <location filename="../src/interface/constraintstudentsmaxgapsperdayform.cpp" line="144"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperdayform.cpp" line="117"/>
         <location filename="../src/interface/constraintstudentsmaxgapsperdayform.cpp" line="144"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Μη αποδεκτή επιλογή περιορισμού</translation>
+        <translation>Μη αποδεκτή επιλογή περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperdayform.cpp" line="149"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">Διαγραφή περιορισμού;</translation>
+        <translation>Διαγραφή περιορισμού;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperdayform.cpp" line="155"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">FET - Επιβεβαίωση</translation>
+        <translation>FET - Επιβεβαίωση</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperdayform.cpp" line="156"/>
         <source>Yes</source>
-        <translation type="unfinished">Ναι</translation>
+        <translation>Ναι</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperdayform.cpp" line="156"/>
         <source>No</source>
-        <translation type="unfinished">Όχι</translation>
+        <translation>Όχι</translation>
     </message>
 </context>
 <context>
@@ -18561,47 +18557,47 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxgapsperdayform_template.ui" line="14"/>
         <source>Constraints students max gaps per day</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Περιορισμοί: &quot;Μαθητές - μέγιστα κενά ανά ημέρα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperdayform_template.ui" line="26"/>
         <source>IMPORTANT: this constraint is not perfectly optimized. Press Help button for more information. Use with caution, as explained.</source>
-        <translation type="unfinished">ΣΗΜΑΝΤΙΚΟ: ο περιορισμός αυτός δεν έχει βελτιστοποιηθεί πλήρως. Πιέστε το κουμπί &quot;Βοήθεια&quot; για περισσότερες πληροφορίες. Χρησιμοποιείστε τον περιορισμό με προσοχή, όπως έχει εξηγηθεί.</translation>
+        <translation>ΣΗΜΑΝΤΙΚΟ: ο περιορισμός αυτός δεν έχει βελτιστοποιηθεί πλήρως. Πιέστε το κουμπί &quot;Βοήθεια&quot; για περισσότερες πληροφορίες. Χρησιμοποιείστε τον περιορισμό με προσοχή, όπως έχει εξηγηθεί.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperdayform_template.ui" line="44"/>
         <source>Constraints</source>
-        <translation type="unfinished">Περιορισμοί</translation>
+        <translation>Περιορισμοί</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperdayform_template.ui" line="61"/>
         <source>Current constraint</source>
-        <translation type="unfinished">Τρέχων περιορισμός</translation>
+        <translation>Τρέχων περιορισμός</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperdayform_template.ui" line="78"/>
         <source>Add</source>
-        <translation type="unfinished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperdayform_template.ui" line="85"/>
         <source>Modify</source>
-        <translation type="unfinished">Τροποποίηση</translation>
+        <translation>Τροποποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperdayform_template.ui" line="92"/>
         <source>Remove</source>
-        <translation type="unfinished">Διαγραφή</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperdayform_template.ui" line="99"/>
         <source>Help</source>
-        <translation type="unfinished">Βοήθεια</translation>
+        <translation>Βοήθεια</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperdayform_template.ui" line="106"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
 </context>
 <context>
@@ -18677,33 +18673,33 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxgapsperweekform.cpp" line="114"/>
         <location filename="../src/interface/constraintstudentsmaxgapsperweekform.cpp" line="141"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperweekform.cpp" line="114"/>
         <location filename="../src/interface/constraintstudentsmaxgapsperweekform.cpp" line="141"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Μη αποδεκτή επιλογή περιορισμού</translation>
+        <translation>Μη αποδεκτή επιλογή περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperweekform.cpp" line="146"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">Διαγραφή περιορισμού;</translation>
+        <translation>Διαγραφή περιορισμού;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperweekform.cpp" line="152"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">FET - Επιβεβαίωση</translation>
+        <translation>FET - Επιβεβαίωση</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperweekform.cpp" line="153"/>
         <source>Yes</source>
-        <translation type="unfinished">Ναι</translation>
+        <translation>Ναι</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperweekform.cpp" line="153"/>
         <source>No</source>
-        <translation type="unfinished">Όχι</translation>
+        <translation>Όχι</translation>
     </message>
 </context>
 <context>
@@ -18712,37 +18708,37 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxgapsperweekform_template.ui" line="14"/>
         <source>Constraints students max gaps per week</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Περιορισμοί: &quot;Μαθητές = μέγιστα κενά ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperweekform_template.ui" line="28"/>
         <source>Constraints</source>
-        <translation type="unfinished">Περιορισμοί</translation>
+        <translation>Περιορισμοί</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperweekform_template.ui" line="83"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperweekform_template.ui" line="62"/>
         <source>Add</source>
-        <translation type="unfinished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperweekform_template.ui" line="45"/>
         <source>Current constraint</source>
-        <translation type="unfinished">Τρέχων περιορισμός</translation>
+        <translation>Τρέχων περιορισμός</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperweekform_template.ui" line="76"/>
         <source>Remove</source>
-        <translation type="unfinished">Διαγραφή</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxgapsperweekform_template.ui" line="69"/>
         <source>Modify</source>
-        <translation type="unfinished">Τροποποίηση</translation>
+        <translation>Τροποποίηση</translation>
     </message>
 </context>
 <context>
@@ -18820,33 +18816,33 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxhourscontinuouslyform.cpp" line="114"/>
         <location filename="../src/interface/constraintstudentsmaxhourscontinuouslyform.cpp" line="141"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxhourscontinuouslyform.cpp" line="114"/>
         <location filename="../src/interface/constraintstudentsmaxhourscontinuouslyform.cpp" line="141"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Μη αποδεκτή επιλογή περιορισμού</translation>
+        <translation>Μη αποδεκτή επιλογή περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxhourscontinuouslyform.cpp" line="146"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">Διαγραφή περιορισμού;</translation>
+        <translation>Διαγραφή περιορισμού;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxhourscontinuouslyform.cpp" line="152"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">FET - Επιβεβαίωση</translation>
+        <translation>FET - Επιβεβαίωση</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxhourscontinuouslyform.cpp" line="153"/>
         <source>Yes</source>
-        <translation type="unfinished">Ναι</translation>
+        <translation>Ναι</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxhourscontinuouslyform.cpp" line="153"/>
         <source>No</source>
-        <translation type="unfinished">Όχι</translation>
+        <translation>Όχι</translation>
     </message>
 </context>
 <context>
@@ -18855,37 +18851,37 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Constraints students max hours continuously</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Περιορισμοί: &quot;Μαθητές - μέγιστες ώρες συνεχόμενα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxhourscontinuouslyform_template.ui" line="28"/>
         <source>Constraints</source>
-        <translation type="unfinished">Περιορισμοί</translation>
+        <translation>Περιορισμοί</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxhourscontinuouslyform_template.ui" line="83"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxhourscontinuouslyform_template.ui" line="62"/>
         <source>Add</source>
-        <translation type="unfinished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxhourscontinuouslyform_template.ui" line="45"/>
         <source>Current constraint</source>
-        <translation type="unfinished">Τρέχων περιορισμός</translation>
+        <translation>Τρέχων περιορισμός</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxhourscontinuouslyform_template.ui" line="76"/>
         <source>Remove</source>
-        <translation type="unfinished">Διαγραφή</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxhourscontinuouslyform_template.ui" line="69"/>
         <source>Modify</source>
-        <translation type="unfinished">Τροποποίηση</translation>
+        <translation>Τροποποίηση</translation>
     </message>
 </context>
 <context>
@@ -18956,33 +18952,33 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxhoursdailyform.cpp" line="114"/>
         <location filename="../src/interface/constraintstudentsmaxhoursdailyform.cpp" line="141"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxhoursdailyform.cpp" line="114"/>
         <location filename="../src/interface/constraintstudentsmaxhoursdailyform.cpp" line="141"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Μη αποδεκτή επιλογή περιορισμού</translation>
+        <translation>Μη αποδεκτή επιλογή περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxhoursdailyform.cpp" line="146"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">Διαγραφή περιορισμού;</translation>
+        <translation>Διαγραφή περιορισμού;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxhoursdailyform.cpp" line="152"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">FET - Επιβεβαίωση</translation>
+        <translation>FET - Επιβεβαίωση</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxhoursdailyform.cpp" line="153"/>
         <source>Yes</source>
-        <translation type="unfinished">Ναι</translation>
+        <translation>Ναι</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxhoursdailyform.cpp" line="153"/>
         <source>No</source>
-        <translation type="unfinished">Όχι</translation>
+        <translation>Όχι</translation>
     </message>
 </context>
 <context>
@@ -18991,37 +18987,37 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxhoursdailyform_template.ui" line="14"/>
         <source>Constraints students max hours daily</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Περιορισμοί: &quot;Μαθητές - μέγιστες ώρες ημερησίως&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxhoursdailyform_template.ui" line="28"/>
         <source>Constraints</source>
-        <translation type="unfinished">Περιορισμοί</translation>
+        <translation>Περιορισμοί</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxhoursdailyform_template.ui" line="83"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxhoursdailyform_template.ui" line="62"/>
         <source>Add</source>
-        <translation type="unfinished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxhoursdailyform_template.ui" line="45"/>
         <source>Current constraint</source>
-        <translation type="unfinished">Τρέχων περιορισμός</translation>
+        <translation>Τρέχων περιορισμός</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxhoursdailyform_template.ui" line="76"/>
         <source>Remove</source>
-        <translation type="unfinished">Διαγραφή</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxhoursdailyform_template.ui" line="69"/>
         <source>Modify</source>
-        <translation type="unfinished">Τροποποίηση</translation>
+        <translation>Τροποποίηση</translation>
     </message>
 </context>
 <context>
@@ -19087,33 +19083,33 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxspanperdayform.cpp" line="114"/>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform.cpp" line="141"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform.cpp" line="114"/>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform.cpp" line="141"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Μη αποδεκτή επιλογή περιορισμού</translation>
+        <translation>Μη αποδεκτή επιλογή περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform.cpp" line="146"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">Διαγραφή περιορισμού;</translation>
+        <translation>Διαγραφή περιορισμού;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform.cpp" line="152"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">FET - Επιβεβαίωση</translation>
+        <translation>FET - Επιβεβαίωση</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform.cpp" line="153"/>
         <source>Yes</source>
-        <translation type="unfinished">Ναι</translation>
+        <translation>Ναι</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform.cpp" line="153"/>
         <source>No</source>
-        <translation type="unfinished">Όχι</translation>
+        <translation>Όχι</translation>
     </message>
 </context>
 <context>
@@ -19122,42 +19118,42 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmaxspanperdayform_template.ui" line="14"/>
         <source>Constraints students max span per day</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Περιορισμοί: &quot;Μαθητές - μέγιστη παραμονή ανά ημέρα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform_template.ui" line="26"/>
         <source>This constraint ensures a maximum span of activities on each day. Span means the count of slots (free or occupied) starting with the first occupied slot of the day and ending with the last occupied slot of the day.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αυτός ο περιορισμός εξασφαλίζει την μέγιστη παραμονή (σε ώρες) ανά ημέρα, δηλαδή το μέγιστο διάστημα (σε ώρες) ανά ημέρα μέσα στο οποίο πραγματοποιούνται οι δραστηριότητες. Η παραμονή (σε ώρες) επί της ουσίας προκύπτει από την πρόσθεση των περιόδων (τόσο των ελεύθερων όσο και των κατειλημμένων με δραστηριότητες) με αφετηρία την πρώτη κατηλειμμένη (με δραστηριότητα) περίοδο της ημέρας και τέλος την τελευταία κατηλειμμένη (με δραστηριότητα) περίοδο της ημέρας.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform_template.ui" line="44"/>
         <source>Constraints</source>
-        <translation type="unfinished">Περιορισμοί</translation>
+        <translation>Περιορισμοί</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform_template.ui" line="61"/>
         <source>Current constraint</source>
-        <translation type="unfinished">Τρέχων περιορισμός</translation>
+        <translation>Τρέχων περιορισμός</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform_template.ui" line="78"/>
         <source>Add</source>
-        <translation type="unfinished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform_template.ui" line="85"/>
         <source>Modify</source>
-        <translation type="unfinished">Τροποποίηση</translation>
+        <translation>Τροποποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform_template.ui" line="92"/>
         <source>Remove</source>
-        <translation type="unfinished">Διαγραφή</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmaxspanperdayform_template.ui" line="99"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
 </context>
 <context>
@@ -19233,33 +19229,33 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmingapsbetweenbuildingchangesform.cpp" line="115"/>
         <location filename="../src/interface/constraintstudentsmingapsbetweenbuildingchangesform.cpp" line="142"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmingapsbetweenbuildingchangesform.cpp" line="115"/>
         <location filename="../src/interface/constraintstudentsmingapsbetweenbuildingchangesform.cpp" line="142"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Μη αποδεκτή επιλογή περιορισμού</translation>
+        <translation>Μη αποδεκτή επιλογή περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmingapsbetweenbuildingchangesform.cpp" line="147"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">Διαγραφή περιορισμού;</translation>
+        <translation>Διαγραφή περιορισμού;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmingapsbetweenbuildingchangesform.cpp" line="153"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">FET - Επιβεβαίωση</translation>
+        <translation>FET - Επιβεβαίωση</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmingapsbetweenbuildingchangesform.cpp" line="154"/>
         <source>Yes</source>
-        <translation type="unfinished">Ναι</translation>
+        <translation>Ναι</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmingapsbetweenbuildingchangesform.cpp" line="154"/>
         <source>No</source>
-        <translation type="unfinished">Όχι</translation>
+        <translation>Όχι</translation>
     </message>
 </context>
 <context>
@@ -19268,37 +19264,37 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="14"/>
         <source>Constraints students min gaps between building changes</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Περιορισμοί: &quot;Μαθητές - ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="28"/>
         <source>Constraints</source>
-        <translation type="unfinished">Περιορισμοί</translation>
+        <translation>Περιορισμοί</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="83"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="62"/>
         <source>Add</source>
-        <translation type="unfinished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="45"/>
         <source>Current constraint</source>
-        <translation type="unfinished">Τρέχων περιορισμός</translation>
+        <translation>Τρέχων περιορισμός</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="76"/>
         <source>Remove</source>
-        <translation type="unfinished">Διαγραφή</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsmingapsbetweenbuildingchangesform_template.ui" line="69"/>
         <source>Modify</source>
-        <translation type="unfinished">Τροποποίηση</translation>
+        <translation>Τροποποίηση</translation>
     </message>
 </context>
 <context>
@@ -19387,33 +19383,33 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsminhoursdailyform.cpp" line="118"/>
         <location filename="../src/interface/constraintstudentsminhoursdailyform.cpp" line="145"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminhoursdailyform.cpp" line="118"/>
         <location filename="../src/interface/constraintstudentsminhoursdailyform.cpp" line="145"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Μη αποδεκτή επιλογή περιορισμού</translation>
+        <translation>Μη αποδεκτή επιλογή περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminhoursdailyform.cpp" line="150"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">Διαγραφή περιορισμού;</translation>
+        <translation>Διαγραφή περιορισμού;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminhoursdailyform.cpp" line="156"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">FET - Επιβεβαίωση</translation>
+        <translation>FET - Επιβεβαίωση</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminhoursdailyform.cpp" line="157"/>
         <source>Yes</source>
-        <translation type="unfinished">Ναι</translation>
+        <translation>Ναι</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminhoursdailyform.cpp" line="157"/>
         <source>No</source>
-        <translation type="unfinished">Όχι</translation>
+        <translation>Όχι</translation>
     </message>
 </context>
 <context>
@@ -19422,47 +19418,47 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsminhoursdailyform_template.ui" line="14"/>
         <source>Constraints students min hours daily</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Περιορισμοί: &quot;Μαθητές - ελάχιστες ώρες ημερησίως&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminhoursdailyform_template.ui" line="26"/>
         <source>IMPORTANT: allow empty days for students is a nonstandard option. Only select it if your institution permits that and if a timetable with empty days for students exists. Otherwise do not  select it, for a good performance of generation. Press Help button for more information.</source>
-        <translation type="unfinished"></translation>
+        <translation>ΣΗΜΑΝΤΙΚΟ: η επιλογή &quot;επίτρεψε κενές ημέρες για μαθητές&quot; δεν είναι συνήθης. Επιλέξετε μόνον αν το εκπαιδευτικό σας ίδρυμα το επιτρέπει και εφόσον είναι δυνατόν να υπάρξει ωρολόγιο πρόγραμμα με κενές ημέρες. Σε διαφορετική περίπτωση μην το επιλέξετε, προκειμένου να πετύχετε καλύτερη απόδοση στη δημιουργία ωρολογίου προγράμματος (γρηγορότερη εξεύρεση λύσης). Πιέστε το κουμπί &quot;Βοήθεια&quot; για περισσότερες πληροφορίες.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminhoursdailyform_template.ui" line="44"/>
         <source>Constraints</source>
-        <translation type="unfinished">Περιορισμοί</translation>
+        <translation>Περιορισμοί</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminhoursdailyform_template.ui" line="99"/>
         <source>Help</source>
-        <translation type="unfinished">Βοήθεια</translation>
+        <translation>Βοήθεια</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminhoursdailyform_template.ui" line="106"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminhoursdailyform_template.ui" line="78"/>
         <source>Add</source>
-        <translation type="unfinished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminhoursdailyform_template.ui" line="61"/>
         <source>Current constraint</source>
-        <translation type="unfinished">Τρέχων περιορισμός</translation>
+        <translation>Τρέχων περιορισμός</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminhoursdailyform_template.ui" line="92"/>
         <source>Remove</source>
-        <translation type="unfinished">Διαγραφή</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminhoursdailyform_template.ui" line="85"/>
         <source>Modify</source>
-        <translation type="unfinished">Τροποποίηση</translation>
+        <translation>Τροποποίηση</translation>
     </message>
 </context>
 <context>
@@ -19540,33 +19536,33 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsminrestinghoursform.cpp" line="114"/>
         <location filename="../src/interface/constraintstudentsminrestinghoursform.cpp" line="141"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminrestinghoursform.cpp" line="114"/>
         <location filename="../src/interface/constraintstudentsminrestinghoursform.cpp" line="141"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Μη αποδεκτή επιλογή περιορισμού</translation>
+        <translation>Μη αποδεκτή επιλογή περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminrestinghoursform.cpp" line="146"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">Διαγραφή περιορισμού;</translation>
+        <translation>Διαγραφή περιορισμού;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminrestinghoursform.cpp" line="152"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">FET - Επιβεβαίωση</translation>
+        <translation>FET - Επιβεβαίωση</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminrestinghoursform.cpp" line="153"/>
         <source>Yes</source>
-        <translation type="unfinished">Ναι</translation>
+        <translation>Ναι</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminrestinghoursform.cpp" line="153"/>
         <source>No</source>
-        <translation type="unfinished">Όχι</translation>
+        <translation>Όχι</translation>
     </message>
 </context>
 <context>
@@ -19575,42 +19571,42 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentsminrestinghoursform_template.ui" line="14"/>
         <source>Constraints students min resting hours</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Περιορισμοί: &quot;Μαθητές - ελάχιστες ώρες ανάπαυσης&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminrestinghoursform_template.ui" line="26"/>
         <source>This constraint ensures a minimum number of resting hours between the end of a day and the beginning of the next day. Circular means that the time between the end of the last day of the week and the beginning of the first day of the week is also considered.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ο περιορισμός αυτός εξασφαλίζει τον ελάχιστο αριθμό ωρών ανάπαυσης ανάμεσα στο τέλος της μίας ημέρας και την αρχή της επόμενης. &quot;Κυκλικά&quot; σημαίνει ότι λαμβάνεται επιπρόσθετα υπόψη και ο χρόνος ανάμεσα στο τέλος της τελευταίας ημέρας της εβδομάδας και την αρχή της πρώτης ημέρας της εβδομάδας.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminrestinghoursform_template.ui" line="44"/>
         <source>Constraints</source>
-        <translation type="unfinished">Περιορισμοί</translation>
+        <translation>Περιορισμοί</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminrestinghoursform_template.ui" line="61"/>
         <source>Current constraint</source>
-        <translation type="unfinished">Τρέχων περιορισμός</translation>
+        <translation>Τρέχων περιορισμός</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminrestinghoursform_template.ui" line="78"/>
         <source>Add</source>
-        <translation type="unfinished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminrestinghoursform_template.ui" line="85"/>
         <source>Modify</source>
-        <translation type="unfinished">Τροποποίηση</translation>
+        <translation>Τροποποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminrestinghoursform_template.ui" line="92"/>
         <source>Remove</source>
-        <translation type="unfinished">Διαγραφή</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentsminrestinghoursform_template.ui" line="99"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
 </context>
 <context>
@@ -19704,33 +19700,33 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="145"/>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="172"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="145"/>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="172"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Μη αποδεκτή επιλογή περιορισμού</translation>
+        <translation>Μη αποδεκτή επιλογή περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="177"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">Διαγραφή περιορισμού;</translation>
+        <translation>Διαγραφή περιορισμού;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="183"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">FET - Επιβεβαίωση</translation>
+        <translation>FET - Επιβεβαίωση</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="184"/>
         <source>Yes</source>
-        <translation type="unfinished">Ναι</translation>
+        <translation>Ναι</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform.cpp" line="184"/>
         <source>No</source>
-        <translation type="unfinished">Όχι</translation>
+        <translation>Όχι</translation>
     </message>
 </context>
 <context>
@@ -19738,48 +19734,48 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="44"/>
         <source>Constraints</source>
-        <translation type="unfinished">Περιορισμοί</translation>
+        <translation>Περιορισμοί</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="114"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="93"/>
         <source>Add</source>
-        <translation type="unfinished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="61"/>
         <source>Current constraint</source>
-        <translation type="unfinished">Τρέχων περιορισμός</translation>
+        <translation>Τρέχων περιορισμός</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="107"/>
         <source>Remove</source>
-        <translation type="unfinished">Διαγραφή</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Constraints students set activity tag max hours continuously</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Περιορισμοί: &quot;Ομάδα μαθητών - μέγιστες ώρες συνεχόμενα με ετικέτα δραστηριότητας&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="100"/>
         <source>Modify</source>
-        <translation type="unfinished">Τροποποίηση</translation>
+        <translation>Τροποποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="76"/>
         <source>Filter</source>
-        <translation type="unfinished">Φίλτρο</translation>
+        <translation>Φίλτρο</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhourscontinuouslyform_template.ui" line="26"/>
         <source>This constraint ensures that the specified students do not have more than max hours continuously of activities with the specified activity tag</source>
-        <translation type="unfinished"></translation>
+        <translation>Ο περιορισμός αυτός εξασφαλίζει ότι οι συγκεκριμένοι μαθητές δεν θα έχουν περισσότερες από μέγιστες ώρες συνεχόμενα με δραστηριότητες που φέρουν την συγκεκριμένη ετικέτα (δραστηριότητας)</translation>
     </message>
 </context>
 <context>
@@ -19877,33 +19873,33 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform.cpp" line="148"/>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform.cpp" line="175"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform.cpp" line="148"/>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform.cpp" line="175"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Μη αποδεκτή επιλογή περιορισμού</translation>
+        <translation>Μη αποδεκτή επιλογή περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform.cpp" line="180"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">Διαγραφή περιορισμού;</translation>
+        <translation>Διαγραφή περιορισμού;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform.cpp" line="186"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">FET - Επιβεβαίωση</translation>
+        <translation>FET - Επιβεβαίωση</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform.cpp" line="187"/>
         <source>Yes</source>
-        <translation type="unfinished">Ναι</translation>
+        <translation>Ναι</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform.cpp" line="187"/>
         <source>No</source>
-        <translation type="unfinished">Όχι</translation>
+        <translation>Όχι</translation>
     </message>
 </context>
 <context>
@@ -19912,57 +19908,57 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Constraints students set activity tag max hours daily</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Περιορισμοί: &quot;Ομάδα μαθητών - μέγιστες ώρες ημερησίως με ετικέτα δραστηριότητας&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="130"/>
         <source>Help</source>
-        <translation type="unfinished">Βοήθεια</translation>
+        <translation>Βοήθεια</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="137"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="109"/>
         <source>Add</source>
-        <translation type="unfinished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="123"/>
         <source>Remove</source>
-        <translation type="unfinished">Διαγραφή</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="116"/>
         <source>Modify</source>
-        <translation type="unfinished">Τροποποίηση</translation>
+        <translation>Τροποποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="92"/>
         <source>Filter</source>
-        <translation type="unfinished">Φίλτρο</translation>
+        <translation>Φίλτρο</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="26"/>
         <source>This constraint ensures that the specified students do not have more than max hours daily of activities with the specified activity tag.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ο περιορισμός αυτός εξασφαλίζει ότι οι συγκεκριμένοι μαθητές δεν θα έχουν περισσότερες από μέγιστες ώρες ημερησίως με δραστηριότητες που φέρουν την συγκεκριμένη ετικέτα (δραστηριότητας).</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="42"/>
         <source>IMPORTANT: this constraint is not perfectly optimized. Press Help button for more information. Use with caution, as explained.</source>
-        <translation type="unfinished">ΣΗΜΑΝΤΙΚΟ: ο περιορισμός αυτός δεν έχει βελτιστοποιηθεί πλήρως. Πιέστε το κουμπί &quot;Βοήθεια&quot; για περισσότερες πληροφορίες. Χρησιμοποιείστε τον περιορισμό με προσοχή, όπως έχει εξηγηθεί.</translation>
+        <translation>ΣΗΜΑΝΤΙΚΟ: ο περιορισμός αυτός δεν έχει βελτιστοποιηθεί πλήρως. Πιέστε το κουμπί &quot;Βοήθεια&quot; για περισσότερες πληροφορίες. Χρησιμοποιείστε τον περιορισμό με προσοχή, όπως έχει εξηγηθεί.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="60"/>
         <source>Constraints</source>
-        <translation type="unfinished">Περιορισμοί</translation>
+        <translation>Περιορισμοί</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="77"/>
         <source>Current constraint</source>
-        <translation type="unfinished">Τρέχων περιορισμός</translation>
+        <translation>Τρέχων περιορισμός</translation>
     </message>
 </context>
 <context>
@@ -20060,33 +20056,33 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="135"/>
         <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="162"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="135"/>
         <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="162"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Μη αποδεκτή επιλογή περιορισμού</translation>
+        <translation>Μη αποδεκτή επιλογή περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="167"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">Διαγραφή περιορισμού;</translation>
+        <translation>Διαγραφή περιορισμού;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="173"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">FET - Επιβεβαίωση</translation>
+        <translation>FET - Επιβεβαίωση</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="174"/>
         <source>Yes</source>
-        <translation type="unfinished">Ναι</translation>
+        <translation>Ναι</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform.cpp" line="174"/>
         <source>No</source>
-        <translation type="unfinished">Όχι</translation>
+        <translation>Όχι</translation>
     </message>
 </context>
 <context>
@@ -20095,42 +20091,42 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="14"/>
         <source>Constraints students set early max beginnings at second hour</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Περιορισμοί: &quot;Ομάδα μαθητών - νωρίς (μέγιστες ενάρξεις την δεύτερη ώρα)&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="28"/>
         <source>Constraints</source>
-        <translation type="unfinished">Περιορισμοί</translation>
+        <translation>Περιορισμοί</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="95"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="74"/>
         <source>Add</source>
-        <translation type="unfinished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="45"/>
         <source>Current constraint</source>
-        <translation type="unfinished">Τρέχων περιορισμός</translation>
+        <translation>Τρέχων περιορισμός</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="88"/>
         <source>Remove</source>
-        <translation type="unfinished">Διαγραφή</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="81"/>
         <source>Modify</source>
-        <translation type="unfinished">Τροποποίηση</translation>
+        <translation>Τροποποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssetearlymaxbeginningsatsecondhourform_template.ui" line="60"/>
         <source>Filter</source>
-        <translation type="unfinished">Φίλτρο</translation>
+        <translation>Φίλτρο</translation>
     </message>
 </context>
 <context>
@@ -20226,33 +20222,33 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssethomeroomform.cpp" line="144"/>
         <location filename="../src/interface/constraintstudentssethomeroomform.cpp" line="171"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomform.cpp" line="144"/>
         <location filename="../src/interface/constraintstudentssethomeroomform.cpp" line="171"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Μη αποδεκτή επιλογή περιορισμού</translation>
+        <translation>Μη αποδεκτή επιλογή περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomform.cpp" line="176"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">Διαγραφή περιορισμού;</translation>
+        <translation>Διαγραφή περιορισμού;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomform.cpp" line="182"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">FET - Επιβεβαίωση</translation>
+        <translation>FET - Επιβεβαίωση</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomform.cpp" line="183"/>
         <source>Yes</source>
-        <translation type="unfinished">Ναι</translation>
+        <translation>Ναι</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomform.cpp" line="183"/>
         <source>No</source>
-        <translation type="unfinished">Όχι</translation>
+        <translation>Όχι</translation>
     </message>
 </context>
 <context>
@@ -20261,47 +20257,47 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssethomeroomform_template.ui" line="14"/>
         <source>Constraints students set home room</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Περιορισμοί: &quot;Ομάδα μαθητών - βασική αίθουσα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomform_template.ui" line="104"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomform_template.ui" line="83"/>
         <source>Add</source>
-        <translation type="unfinished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomform_template.ui" line="97"/>
         <source>Remove</source>
-        <translation type="unfinished">Διαγραφή</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomform_template.ui" line="90"/>
         <source>Modify</source>
-        <translation type="unfinished">Τροποποίηση</translation>
+        <translation>Τροποποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomform_template.ui" line="42"/>
         <source>Constraints</source>
-        <translation type="unfinished">Περιορισμοί</translation>
+        <translation>Περιορισμοί</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomform_template.ui" line="52"/>
         <source>Current constraint</source>
-        <translation type="unfinished">Τρέχων περιορισμός</translation>
+        <translation>Τρέχων περιορισμός</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomform_template.ui" line="68"/>
         <source>Filter</source>
-        <translation type="unfinished">Φίλτρο</translation>
+        <translation>Φίλτρο</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomform_template.ui" line="26"/>
         <source>Note: a home room for a students set means that every activity which has this and ONLY this students set will have this as home room (not other superior or inferior set). You can add home rooms for a group, for a year or for a subgroup, careful not to make impossible timetables. Preferred rooms override the home rooms.</source>
-        <translation type="unfinished"></translation>
+        <translation>Σημείωση: &quot;ομάδα μαθητών - βασική αίθουσα&quot; σημαίνει ότι κάθε δραστηριότητα που έχει αυτήν και ΜΟΝΟΝ αυτήν την ομάδα μαθητών (και όχι τυχόν υπερσύνολο ή υποσύνολο αυτής της ομάδας μαθητών) θα έχει την συγκεκριμένη αίθουσα ως βασική. Μπορείτε να προσθέσετε βασικές αίθουσες για τμήμα, έτος ή υποτμήμα, αλλά με προσοχή προκειμένου να μην καταστήσετε την κατάρτιση του ωρολογίου προγράμματος αδύνατη. Οι &quot;προτιμητέες αίθουσες&quot; υπερισχύουν ως περιορισμός σε σχέση με τις &quot;βασικές αίθουσες&quot; (δηλαδή η ύπαρξη περιορισμού &quot;προτιμητέες αίθουσες&quot; -σε περίπτωση σύγκρουσης- θα παραβιάσει τυχόν περιορισμό &quot;βασικές αίθουσες&quot;).</translation>
     </message>
 </context>
 <context>
@@ -20397,33 +20393,33 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintstudentssethomeroomsform.cpp" line="153"/>
         <location filename="../src/interface/constraintstudentssethomeroomsform.cpp" line="180"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomsform.cpp" line="153"/>
         <location filename="../src/interface/constraintstudentssethomeroomsform.cpp" line="180"/>
         <source>Invalid selected constraint</source>
-        <translation type="unfinished">Μη αποδεκτή επιλογή περιορισμού</translation>
+        <translation>Μη αποδεκτή επιλογή περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomsform.cpp" line="185"/>
         <source>Remove constraint?</source>
-        <translation type="unfinished">Διαγραφή περιορισμού;</translation>
+        <translation>Διαγραφή περιορισμού;</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomsform.cpp" line="191"/>
         <source>FET confirmation</source>
-        <translation type="unfinished">FET - Επιβεβαίωση</translation>
+        <translation>FET - Επιβεβαίωση</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomsform.cpp" line="192"/>
         <source>Yes</source>
-        <translation type="unfinished">Ναι</translation>
+        <translation>Ναι</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintstudentssethomeroomsform.cpp" line="192"/>
         <source>No</source>
-        <translation type="unfinished">Όχι</translation>
+        <translation>Όχι</translation>
     </message>
 </context>
 <context>
@@ -22061,7 +22057,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssetmaxspanperdayform_template.ui" line="110"/>
         <source>This constraint ensures a maximum span of activities on each day. Span means the count of slots (free or occupied) starting with the first occupied slot of the day and ending with the last occupied slot of the day.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Αυτός ο περιορισμός εξασφαλίζει την μέγιστη παραμονή (σε ώρες) ανά ημέρα, δηλαδή το μέγιστο διάστημα (σε ώρες) ανά ημέρα μέσα στο οποίο πραγματοποιούνται οι δραστηριότητες. Η παραμονή (σε ώρες) επί της ουσίας προκύπτει από την πρόσθεση των περιόδων (τόσο των ελεύθερων όσο και των κατειλημμένων με δραστηριότητες) με αφετηρία την πρώτη κατηλειμμένη (με δραστηριότητα) περίοδο της ημέρας και τέλος την τελευταία κατηλειμμένη (με δραστηριότητα) περίοδο της ημέρας.</translation>
     </message>
 </context>
 <context>
@@ -22601,7 +22597,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintstudentssetminrestinghoursform_template.ui" line="110"/>
         <source>This constraint ensures a minimum number of resting hours between the end of a day and the beginning of the next day. Circular means that the time between the end of the last day of the week and the beginning of the first day of the week is also considered.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ο περιορισμός αυτός εξασφαλίζει τον ελάχιστο αριθμό ωρών ανάπαυσης ανάμεσα στο τέλος της μίας ημέρας και την αρχή της επόμενης. &quot;Κυκλικά&quot; σημαίνει ότι λαμβάνεται επιπρόσθετα υπόψη και ο χρόνος ανάμεσα στο τέλος της τελευταίας ημέρας της εβδομάδας και την αρχή της πρώτης ημέρας της εβδομάδας.</translation>
     </message>
 </context>
 <context>
@@ -26235,7 +26231,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachermaxspanperdayform_template.ui" line="26"/>
         <source>This constraint ensures a maximum span of activities on each day. Span means the count of slots (free or occupied) starting with the first occupied slot of the day and ending with the last occupied slot of the day.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Αυτός ο περιορισμός εξασφαλίζει την μέγιστη παραμονή (σε ώρες) ανά ημέρα, δηλαδή το μέγιστο διάστημα (σε ώρες) ανά ημέρα μέσα στο οποίο πραγματοποιούνται οι δραστηριότητες. Η παραμονή (σε ώρες) επί της ουσίας προκύπτει από την πρόσθεση των περιόδων (τόσο των ελεύθερων όσο και των κατειλημμένων με δραστηριότητες) με αφετηρία την πρώτη κατηλειμμένη (με δραστηριότητα) περίοδο της ημέρας και τέλος την τελευταία κατηλειμμένη (με δραστηριότητα) περίοδο της ημέρας.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachermaxspanperdayform_template.ui" line="38"/>
@@ -26913,7 +26909,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteacherminrestinghoursform_template.ui" line="26"/>
         <source>This constraint ensures a minimum number of resting hours between the end of a day and the beginning of the next day. Circular means that the time between the end of the last day of the week and the beginning of the first day of the week is also considered.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ο περιορισμός αυτός εξασφαλίζει τον ελάχιστο αριθμό ωρών ανάπαυσης ανάμεσα στο τέλος της μίας ημέρας και την αρχή της επόμενης. &quot;Κυκλικά&quot; σημαίνει ότι λαμβάνεται επιπρόσθετα υπόψη και ο χρόνος ανάμεσα στο τέλος της τελευταίας ημέρας της εβδομάδας και την αρχή της πρώτης ημέρας της εβδομάδας.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteacherminrestinghoursform_template.ui" line="38"/>
@@ -28756,7 +28752,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachersmaxspanperdayform_template.ui" line="26"/>
         <source>This constraint ensures a maximum span of activities on each day. Span means the count of slots (free or occupied) starting with the first occupied slot of the day and ending with the last occupied slot of the day.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Αυτός ο περιορισμός εξασφαλίζει την μέγιστη παραμονή (σε ώρες) ανά ημέρα, δηλαδή το μέγιστο διάστημα (σε ώρες) ανά ημέρα μέσα στο οποίο πραγματοποιούνται οι δραστηριότητες. Η παραμονή (σε ώρες) επί της ουσίας προκύπτει από την πρόσθεση των περιόδων (τόσο των ελεύθερων όσο και των κατειλημμένων με δραστηριότητες) με αφετηρία την πρώτη κατηλειμμένη (με δραστηριότητα) περίοδο της ημέρας και τέλος την τελευταία κατηλειμμένη (με δραστηριότητα) περίοδο της ημέρας.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersmaxspanperdayform_template.ui" line="44"/>
@@ -29352,7 +29348,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintteachersminrestinghoursform_template.ui" line="26"/>
         <source>This constraint ensures a minimum number of resting hours between the end of a day and the beginning of the next day. Circular means that the time between the end of the last day of the week and the beginning of the first day of the week is also considered.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ο περιορισμός αυτός εξασφαλίζει τον ελάχιστο αριθμό ωρών ανάπαυσης ανάμεσα στο τέλος της μίας ημέρας και την αρχή της επόμενης. &quot;Κυκλικά&quot; σημαίνει ότι λαμβάνεται επιπρόσθετα υπόψη και ο χρόνος ανάμεσα στο τέλος της τελευταίας ημέρας της εβδομάδας και την αρχή της πρώτης ημέρας της εβδομάδας.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintteachersminrestinghoursform_template.ui" line="44"/>
@@ -33669,7 +33665,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2390"/>
         <source>A set of activities are in the same room if they are consecutive</source>
-        <translation>Πραγματοποίηση συνόλου δραστηριοτήτων στην ίδια αίθουσα, όταν είναι συνεχόμενες</translation>
+        <translation>Πραγματοποίηση συνόλου δραστηριοτήτων στην ίδια αίθουσα, όταν είναι διαδοχικές</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2395"/>
@@ -34221,7 +34217,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1686"/>
         <source>Two activities are consecutive</source>
-        <translation>Δύο δραστηριότητες είναι συνεχόμενες</translation>
+        <translation>Δύο δραστηριότητες είναι διαδοχικές</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="1876"/>
@@ -36852,7 +36848,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;agemagician - suggestions.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Vlăduţ Frăţiman - suggestions.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Vlăduț Frățiman - suggestions.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;vlad2005 - suggestions.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
@@ -37065,13 +37061,11 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Taro Tada - Japanese translation.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;V Paul C Charlesraj - suggestion.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ChrisW67 - idea and code, found on qtcentre.org.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="978"/>
+        <location filename="../src/interface/helpaboutform_template.ui" line="976"/>
         <source>Close</source>
         <translation type="unfinished">Κλείσιμο</translation>
     </message>
@@ -47826,11 +47820,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="442"/>
         <source>This setting is useful for more things, maybe one thing is bug report: send your file along with the random seed at the start of generating (the two components, X and Y, are saved in the timetable directory at the start of generation)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>This setting is useful for more things, maybe one thing is bug report: send you file along with the random seed at the start of generating (the two components, X and Y, are saved in the timetable directory at the start of generation)</source>
-        <translation type="vanished">Αυτή η ρύθμιση έχει και άλλες χρήσεις. Πιθανώς μία χρήση να είναι η αναφορά σφάλματος λογισμικού (bug): στείλτε το αρχείο σας μαζί με τον &quot;σπόρο&quot; της γεννήτριας τυχαίων αριθμών που χρησιμοποιήθκε κατά την έναρξη της δημιουργίας ωρολογίου προγράμματος (τα δύο στοιχεία, Χ και Υ, αποθηκεύονται στον κατάλογο ωρολογίων προγραμμάτων κατά την έναρξη της δημιουργίας ωρολογίου προγράμματος)</translation>
+        <translation>Αυτή η ρύθμιση έχει και άλλες χρήσεις. Πιθανώς μία χρήση να είναι η αναφορά σφάλματος λογισμικού (bug): στείλτε το αρχείο σας μαζί με τον &quot;σπόρο&quot; της γεννήτριας τυχαίων αριθμών που χρησιμοποιήθκε κατά την έναρξη της δημιουργίας ωρολογίου προγράμματος (τα δύο στοιχεία, Χ και Υ, αποθηκεύονται στον κατάλογο ωρολογίων προγραμμάτων κατά την έναρξη της δημιουργίας ωρολογίου προγράμματος)</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="451"/>
@@ -50111,12 +50101,12 @@ Please report error. FET will now abort current operation</source>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="408"/>
         <source>NOTE: If you are using constraints of type activities same starting time or activities same starting day, it is important (after current operation) to apply the operation of removing redundant constraints.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">ΣΗΜΕΙΩΣΗ: Αν χρησιμοποιείτε περιορισμούς του τύπου &quot;δραστηριότητες - ίδιος χρόνος έναρξης&quot; ή &quot;δραστηριότητες - ίδια ημέρα έναρξης&quot;, είναι σημαντικό (μετά την τρέχουσα διαδικασία) να εφαρμόσετε τη διαδικασία διαγραφής περιττών περιορισμών.</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="410"/>
         <source>Read Help/Important tips - tip 2) for details.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Διαβάστε στο &quot;Βοήθεια/Σημαντικές υποδείξεις - υπόδειξη 2) για λεπτομέρειες</translation>
     </message>
     <message>
         <location filename="../src/interface/spreadmindaysconstraintsfivedaysform.cpp" line="425"/>
