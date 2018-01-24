@@ -37,7 +37,6 @@ class Teacher;
 class Subject;
 class ActivityTag;
 class StudentsSet;
-class Equipment;
 class Building;
 class Room;
 class Solution;
