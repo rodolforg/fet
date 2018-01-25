@@ -637,7 +637,9 @@ bool Rules::computeInternalStructure(QWidget* parent)
 		if(toSkipTimeSet.contains(tctrindex))
 			continue;
 		
-		if(!tctr->computeInternalStructure(parent, *this)){
+		ErrorCode erc = tctr->computeInternalStructure(*this);
+		if (erc.isError()) {
+			TimeConstraintIrreconcilableMessage::warning(parent, erc.getSeverityTitle(), erc.message);
 			//assert(0);
 			ok=false;
 			continue;
