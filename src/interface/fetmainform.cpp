@@ -3223,7 +3223,20 @@ void FetMainForm::on_statisticsExportToDiskAction_triggered()
 		return;
 	}
 
-	StatisticsExport::exportStatistics(this);
+	QString directory = StatisticsExport::getStatisticsDirectory();
+
+	int ok=QMessageBox::question(this, tr("FET Question"),
+		 StatisticsExport::tr("Do you want to export detailed statistic files into directory %1 as html files?").arg(QDir::toNativeSeparators(directory)), QMessageBox::Yes | QMessageBox::No);
+	if(ok==QMessageBox::No)
+		return;
+	bool success = StatisticsExport::exportStatistics(this);
+	if(success){
+		QMessageBox::information(this, tr("FET Information"),
+		 StatisticsExport::tr("Statistic files were exported to directory %1 as html files.").arg(QDir::toNativeSeparators(directory)));
+	} else {
+		QMessageBox::warning(this, tr("FET warning"),
+		 StatisticsExport::tr("Statistics export incomplete")+"\n");
+	}
 }
 
 void FetMainForm::on_removeRedundantConstraintsAction_triggered()
