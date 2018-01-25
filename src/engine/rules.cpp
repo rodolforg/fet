@@ -719,7 +719,9 @@ bool Rules::computeInternalStructure(QWidget* parent)
 		if(toSkipSpaceSet.contains(sctrindex))
 			continue;
 		
-		if(!sctr->computeInternalStructure(parent, *this)){
+		ErrorCode erc = sctr->computeInternalStructure(*this);
+		if (erc.isError()) {
+			SpaceConstraintIrreconcilableMessage::warning(parent, erc.getSeverityTitle(), erc.message);
 			//assert(0);
 			ok=false;
 			continue;

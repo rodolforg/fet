@@ -5,6 +5,7 @@ SOURCES += \
 	engine/solution.cpp \
 	engine/timetable.cpp \
 	engine/rules.cpp \
+	engine/errorcode.cpp \
 	engine/import.cpp \
 	engine/export.cpp \
 	engine/generate_pre.cpp \
@@ -500,6 +501,7 @@ HEADERS += \
 	engine/solution.h \
 	engine/timetable.h \
 	engine/rules.h \
+	engine/errorcode.h \
 	engine/import.h \
 	engine/export.h \
 	engine/generate_pre.h \

@@ -5,6 +5,7 @@ SOURCES += \
 	engine/solution.cpp \
 	engine/timetable.cpp \
 	engine/rules.cpp \
+	engine/errorcode.cpp \
 	engine/generate_pre.cpp \
 	engine/timeconstraint.cpp \
 	engine/spaceconstraint.cpp \
@@ -41,6 +42,7 @@ HEADERS += \
 	engine/solution.h \
 	engine/timetable.h \
 	engine/rules.h \
+	engine/errorcode.h \
 	engine/generate_pre.h \
 	engine/timeconstraint.h \
 	engine/spaceconstraint.h \

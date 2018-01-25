@@ -36,8 +36,6 @@ File spaceconstraint.cpp
 
 #include <QString>
 
-#include "messageboxes.h"
-
 static QString trueFalse(bool x)
 {
 	if(!x)
@@ -105,12 +103,11 @@ ConstraintBasicCompulsorySpace::ConstraintBasicCompulsorySpace(double wp) :
 {
 }
 
-bool ConstraintBasicCompulsorySpace::computeInternalStructure(QWidget* parent, const Rules& r)
+ErrorCode ConstraintBasicCompulsorySpace::computeInternalStructure(const Rules& r)
 {
-	Q_UNUSED(parent);
 	Q_UNUSED(r);
 	
-	return true;
+	return ErrorCode();
 }
 
 bool ConstraintBasicCompulsorySpace::hasInactiveActivities(const Rules& r) const
@@ -443,39 +440,33 @@ QString ConstraintRoomNotAvailableTimes::getDetailedDescription(const Rules& r) 
 	return s;
 }
 
-bool ConstraintRoomNotAvailableTimes::computeInternalStructure(QWidget* parent, const Rules& r){
+ErrorCode ConstraintRoomNotAvailableTimes::computeInternalStructure(const Rules& r){
 	//this->room_ID=r.searchRoom(this->room);
 	room_ID=r.roomsHash.value(room, -1);
 	
 	if(this->room_ID<0){
-		SpaceConstraintIrreconcilableMessage::warning(parent, tr("FET warning"),
+		return ErrorCode(ErrorCode::FATAL,
 		 tr("Constraint room not available times is wrong because it refers to inexistent room."
 		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
-		 
-		return false;
 	}	
 
 	assert(days.count()==hours.count());
 	for(int k=0; k<days.count(); k++){
 		if(this->days.at(k) >= r.nDaysPerWeek){
-			SpaceConstraintIrreconcilableMessage::warning(parent, tr("FET information"),
+			return ErrorCode(ErrorCode::ERROR,
 			 tr("Constraint room not available times is wrong because it refers to removed day. Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
-		 
-			return false;
 		}		
 		if(this->hours.at(k) >= r.nHoursPerDay){
-			SpaceConstraintIrreconcilableMessage::warning(parent, tr("FET information"),
+			return ErrorCode(ErrorCode::ERROR,
 			 tr("Constraint room not available times is wrong because an hour is too late (after the last acceptable slot). Please correct"
 			 " and try again. Correcting means editing the constraint and updating information. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
-		 
-			return false;
 		}
 	}
 	
 	assert(this->room_ID>=0);
 	
-	return true;
+	return ErrorCode();
 }
 
 double ConstraintRoomNotAvailableTimes::fitness(
@@ -648,7 +639,7 @@ bool ConstraintActivityPreferredRoom::operator==(ConstraintActivityPreferredRoom
 	return true;
 }
 
-bool ConstraintActivityPreferredRoom::computeInternalStructure(QWidget* parent, const Rules& r)
+ErrorCode ConstraintActivityPreferredRoom::computeInternalStructure(const Rules& r)
 {
 	this->_activity=-1;
 	int ac=r.activitiesHash.value(activityId, -1);
@@ -672,14 +663,13 @@ bool ConstraintActivityPreferredRoom::computeInternalStructure(QWidget* parent, 
 	//assert(_room>=0);
 
 	if(this->_room<0){
-		SpaceConstraintIrreconcilableMessage::warning(parent, tr("FET error in data"), 
+		return ErrorCode(ErrorCode::FATAL,
 			tr("Following constraint is wrong:\n%1").arg(this->getDetailedDescription(r)));
-		return false;
 	}
 
 	assert(this->_room>=0);
 	
-	return true;
+	return ErrorCode();
 }
 
 bool ConstraintActivityPreferredRoom::hasInactiveActivities(const Rules& r) const
@@ -892,7 +882,7 @@ ConstraintActivityPreferredRooms::ConstraintActivityPreferredRooms(double wp, in
 	this->roomsNames=roomsList;
 }
 
-bool ConstraintActivityPreferredRooms::computeInternalStructure(QWidget* parent, const Rules& r)
+ErrorCode ConstraintActivityPreferredRooms::computeInternalStructure(const Rules& r)
 {
 	_activity=r.activitiesHash.value(activityId, r.nInternalActivities);
 	int ac=_activity;
@@ -907,10 +897,8 @@ bool ConstraintActivityPreferredRooms::computeInternalStructure(QWidget* parent,
 		}*/
 		
 	if(ac==r.nInternalActivities){
-		SpaceConstraintIrreconcilableMessage::warning(parent, tr("FET error in data"), 
+		return ErrorCode(ErrorCode::FATAL,
 			tr("Following constraint is wrong:\n%1").arg(this->getDetailedDescription(r)));
-
-		return false;
 	}
 	
 	this->_rooms.clear();
@@ -919,17 +907,15 @@ bool ConstraintActivityPreferredRooms::computeInternalStructure(QWidget* parent,
 		int t=r.roomsHash.value(rm, -1);
 
 		if(t<0){
-			SpaceConstraintIrreconcilableMessage::warning(parent, tr("FET error in data"), 
+			return ErrorCode(ErrorCode::FATAL,
 				tr("Following constraint is wrong:\n%1").arg(this->getDetailedDescription(r)));
-
-			return false;
 		}
 
 		assert(t>=0);
 		this->_rooms.append(t);
 	}
 		
-	return true;
+	return ErrorCode();
 }
 
 bool ConstraintActivityPreferredRooms::hasInactiveActivities(const Rules& r) const
@@ -1138,10 +1124,8 @@ ConstraintStudentsSetHomeRoom::ConstraintStudentsSetHomeRoom(double wp, QString 
 	this->roomName=rm;
 }
 
-bool ConstraintStudentsSetHomeRoom::computeInternalStructure(QWidget* parent, const Rules& r)
+ErrorCode ConstraintStudentsSetHomeRoom::computeInternalStructure(const Rules& r)
 {
-	Q_UNUSED(parent);
-
 	//This procedure computes the internal list of all the activities
 	//which correspond to the subject of the constraint.
 	
@@ -1178,13 +1162,12 @@ bool ConstraintStudentsSetHomeRoom::computeInternalStructure(QWidget* parent, co
 	//this->_room = r.searchRoom(this->roomName);
 	_room=r.roomsHash.value(roomName, -1);
 	if(this->_room<0){
-		SpaceConstraintIrreconcilableMessage::warning(parent, tr("FET error in data"), 
+		return ErrorCode(ErrorCode::FATAL,
 			tr("Following constraint is wrong:\n%1").arg(this->getDetailedDescription(r)));
-		return false;
 	}
 	assert(this->_room>=0);
 	
-	return true;
+	return ErrorCode();
 }
 
 bool ConstraintStudentsSetHomeRoom::hasInactiveActivities(const Rules& r) const
@@ -1404,7 +1387,7 @@ ConstraintStudentsSetHomeRooms::ConstraintStudentsSetHomeRooms(double wp, QStrin
 	this->roomsNames=rms;
 }
 
-bool ConstraintStudentsSetHomeRooms::computeInternalStructure(QWidget* parent, const Rules& r)
+ErrorCode ConstraintStudentsSetHomeRooms::computeInternalStructure(const Rules& r)
 {
 	//This procedure computes the internal list of all the activities
 	//which correspond to the constraint.
@@ -1445,10 +1428,8 @@ bool ConstraintStudentsSetHomeRooms::computeInternalStructure(QWidget* parent, c
 		//int t=r.searchRoom(rm);
 		int t=r.roomsHash.value(rm, -1);
 		if(t<0){
-			SpaceConstraintIrreconcilableMessage::warning(parent, tr("FET error in data"), 
+			return ErrorCode(ErrorCode::FATAL,
 				tr("Following constraint is wrong:\n%1").arg(this->getDetailedDescription(r)));
-
-			return false;
 		}
 		else{
 			assert(t>=0);
@@ -1456,7 +1437,7 @@ bool ConstraintStudentsSetHomeRooms::computeInternalStructure(QWidget* parent, c
 		}
 	}
 	
-	return true;
+	return ErrorCode();
 }
 
 bool ConstraintStudentsSetHomeRooms::hasInactiveActivities(const Rules& r) const
@@ -1682,10 +1663,8 @@ ConstraintTeacherHomeRoom::ConstraintTeacherHomeRoom(double wp, QString tc, QStr
 	this->roomName=rm;
 }
 
-bool ConstraintTeacherHomeRoom::computeInternalStructure(QWidget* parent, const Rules& r)
+ErrorCode ConstraintTeacherHomeRoom::computeInternalStructure(const Rules& r)
 {
-	Q_UNUSED(parent);
-
 	//This procedure computes the internal list of all the activities
 	//which correspond to the subject of the constraint.
 	
@@ -1722,13 +1701,12 @@ bool ConstraintTeacherHomeRoom::computeInternalStructure(QWidget* parent, const 
 	//this->_room = r.searchRoom(this->roomName);
 	_room=r.roomsHash.value(roomName, -1);
 	if(this->_room<0){
-		SpaceConstraintIrreconcilableMessage::warning(parent, tr("FET error in data"), 
+		return ErrorCode(ErrorCode::FATAL,
 			tr("Following constraint is wrong:\n%1").arg(this->getDetailedDescription(r)));
-		return false;
 	}
 	assert(this->_room>=0);
 	
-	return true;
+	return ErrorCode();
 }
 
 bool ConstraintTeacherHomeRoom::hasInactiveActivities(const Rules& r) const
@@ -1946,7 +1924,7 @@ ConstraintTeacherHomeRooms::ConstraintTeacherHomeRooms(double wp, QString tc, co
 	this->roomsNames=rms;
 }
 
-bool ConstraintTeacherHomeRooms::computeInternalStructure(QWidget* parent, const Rules& r)
+ErrorCode ConstraintTeacherHomeRooms::computeInternalStructure(const Rules& r)
 {
 	//This procedure computes the internal list of all the activities
 	//which correspond to the constraint.
@@ -1987,10 +1965,8 @@ bool ConstraintTeacherHomeRooms::computeInternalStructure(QWidget* parent, const
 		//int t=r.searchRoom(rm);
 		int t=r.roomsHash.value(rm, -1);
 		if(t<0){
-			SpaceConstraintIrreconcilableMessage::warning(parent, tr("FET error in data"), 
+			return ErrorCode(ErrorCode::FATAL,
 				tr("Following constraint is wrong:\n%1").arg(this->getDetailedDescription(r)));
-
-			return false;
 		}
 		else{
 			assert(t>=0);
@@ -1998,7 +1974,7 @@ bool ConstraintTeacherHomeRooms::computeInternalStructure(QWidget* parent, const
 		}
 	}
 	
-	return true;
+	return ErrorCode();
 }
 
 bool ConstraintTeacherHomeRooms::hasInactiveActivities(const Rules& r) const
@@ -2222,7 +2198,7 @@ ConstraintSubjectPreferredRoom::ConstraintSubjectPreferredRoom(double wp, const 
 	this->roomName=rm;
 }
 
-bool ConstraintSubjectPreferredRoom::computeInternalStructure(QWidget* parent, const Rules& r)
+ErrorCode ConstraintSubjectPreferredRoom::computeInternalStructure(const Rules& r)
 {
 	//This procedure computes the internal list of all the activities
 	//which correspond to the subject of the constraint.
@@ -2245,14 +2221,12 @@ bool ConstraintSubjectPreferredRoom::computeInternalStructure(QWidget* parent, c
 	//this->_room = r.searchRoom(this->roomName);
 	_room=r.roomsHash.value(roomName, -1);
 	if(this->_room<0){
-		SpaceConstraintIrreconcilableMessage::warning(parent, tr("FET error in data"), 
+		return ErrorCode(ErrorCode::FATAL,
 			tr("Following constraint is wrong:\n%1").arg(this->getDetailedDescription(r)));
-
-		return false;
 	}
 	assert(this->_room>=0);
 	
-	return true;
+	return ErrorCode();
 }
 
 bool ConstraintSubjectPreferredRoom::hasInactiveActivities(const Rules& r) const
@@ -2452,7 +2426,7 @@ ConstraintSubjectPreferredRooms::ConstraintSubjectPreferredRooms(double wp, cons
 	this->roomsNames=rms;
 }
 
-bool ConstraintSubjectPreferredRooms::computeInternalStructure(QWidget* parent, const Rules& r)
+ErrorCode ConstraintSubjectPreferredRooms::computeInternalStructure(const Rules& r)
 {
 	//This procedure computes the internal list of all the activities
 	//which correspond to the subject of the constraint.
@@ -2477,16 +2451,14 @@ bool ConstraintSubjectPreferredRooms::computeInternalStructure(QWidget* parent, 
 		//int t=r.searchRoom(rm);
 		int t=r.roomsHash.value(rm, -1);
 		if(t<0){
-			SpaceConstraintIrreconcilableMessage::warning(parent, tr("FET error in data"), 
+			return ErrorCode(ErrorCode::FATAL,
 				tr("Following constraint is wrong:\n%1").arg(this->getDetailedDescription(r)));
-
-			return false;
 		}
 		assert(t>=0);
 		this->_rooms.append(t);
 	}
 
-	return true;
+	return ErrorCode();
 }
 
 bool ConstraintSubjectPreferredRooms::hasInactiveActivities(const Rules& r) const
@@ -2698,7 +2670,7 @@ ConstraintSubjectActivityTagPreferredRoom::ConstraintSubjectActivityTagPreferred
 	this->roomName=rm;
 }
 
-bool ConstraintSubjectActivityTagPreferredRoom::computeInternalStructure(QWidget* parent, const Rules& r)
+ErrorCode ConstraintSubjectActivityTagPreferredRoom::computeInternalStructure(const Rules& r)
 {
 	//This procedure computes the internal list of all the activities
 	//which correspond to the subject of the constraint.
@@ -2725,14 +2697,12 @@ bool ConstraintSubjectActivityTagPreferredRoom::computeInternalStructure(QWidget
 	//this->_room = r.searchRoom(this->roomName);
 	_room=r.roomsHash.value(roomName, -1);
 	if(this->_room<0){
-		SpaceConstraintIrreconcilableMessage::warning(parent, tr("FET error in data"), 
+		return ErrorCode(ErrorCode::FATAL,
 			tr("Following constraint is wrong:\n%1").arg(this->getDetailedDescription(r)));
-
-		return false;
 	}
 	assert(this->_room>=0);
 	
-	return true;
+	return ErrorCode();
 }
 
 bool ConstraintSubjectActivityTagPreferredRoom::hasInactiveActivities(const Rules& r) const
@@ -2937,7 +2907,7 @@ ConstraintSubjectActivityTagPreferredRooms::ConstraintSubjectActivityTagPreferre
 	this->roomsNames=rms;
 }
 
-bool ConstraintSubjectActivityTagPreferredRooms::computeInternalStructure(QWidget* parent, const Rules& r)
+ErrorCode ConstraintSubjectActivityTagPreferredRooms::computeInternalStructure(const Rules& r)
 {
 	//This procedure computes the internal list of all the activities
 	//which correspond to the subject of the constraint.
@@ -2966,16 +2936,14 @@ bool ConstraintSubjectActivityTagPreferredRooms::computeInternalStructure(QWidge
 		//int t=r.searchRoom(rm);
 		int t=r.roomsHash.value(rm, -1);
 		if(t<0){
-			SpaceConstraintIrreconcilableMessage::warning(parent, tr("FET error in data"), 
+			return ErrorCode(ErrorCode::FATAL,
 				tr("Following constraint is wrong:\n%1").arg(this->getDetailedDescription(r)));
-
-			return false;
 		}
 		assert(t>=0);
 		this->_rooms.append(t);
 	}
 	
-	return true;
+	return ErrorCode();
 }
 
 bool ConstraintSubjectActivityTagPreferredRooms::hasInactiveActivities(const Rules& r) const
@@ -3190,7 +3158,7 @@ ConstraintActivityTagPreferredRoom::ConstraintActivityTagPreferredRoom(double wp
 	this->roomName=rm;
 }
 
-bool ConstraintActivityTagPreferredRoom::computeInternalStructure(QWidget* parent, const Rules& r)
+ErrorCode ConstraintActivityTagPreferredRoom::computeInternalStructure(const Rules& r)
 {
 	//This procedure computes the internal list of all the activities
 	//which correspond to the subject of the constraint.
@@ -3213,14 +3181,12 @@ bool ConstraintActivityTagPreferredRoom::computeInternalStructure(QWidget* paren
 	//this->_room = r.searchRoom(this->roomName);
 	_room=r.roomsHash.value(roomName, -1);
 	if(this->_room<0){
-		SpaceConstraintIrreconcilableMessage::warning(parent, tr("FET error in data"), 
+		return ErrorCode(ErrorCode::FATAL,
 			tr("Following constraint is wrong:\n%1").arg(this->getDetailedDescription(r)));
-
-		return false;
 	}
 	assert(this->_room>=0);
 	
-	return true;
+	return ErrorCode();
 }
 
 bool ConstraintActivityTagPreferredRoom::hasInactiveActivities(const Rules& r) const
@@ -3421,7 +3387,7 @@ ConstraintActivityTagPreferredRooms::ConstraintActivityTagPreferredRooms(double 
 	this->roomsNames=rms;
 }
 
-bool ConstraintActivityTagPreferredRooms::computeInternalStructure(QWidget* parent, const Rules& r)
+ErrorCode ConstraintActivityTagPreferredRooms::computeInternalStructure(const Rules& r)
 {
 	//This procedure computes the internal list of all the activities
 	//which correspond to the subject of the constraint.
@@ -3446,16 +3412,14 @@ bool ConstraintActivityTagPreferredRooms::computeInternalStructure(QWidget* pare
 		//int t=r.searchRoom(rm);
 		int t=r.roomsHash.value(rm, -1);
 		if(t<0){
-			SpaceConstraintIrreconcilableMessage::warning(parent, tr("FET error in data"), 
+			return ErrorCode(ErrorCode::FATAL,
 				tr("Following constraint is wrong:\n%1").arg(this->getDetailedDescription(r)));
-
-			return false;
 		}
 		assert(t>=0);
 		this->_rooms.append(t);
 	}
 	
-	return true;
+	return ErrorCode();
 }
 
 bool ConstraintActivityTagPreferredRooms::hasInactiveActivities(const Rules& r) const
@@ -3667,7 +3631,7 @@ ConstraintStudentsSetMaxBuildingChangesPerDay::ConstraintStudentsSetMaxBuildingC
 	this->maxBuildingChangesPerDay=mc;
 }
 
-bool ConstraintStudentsSetMaxBuildingChangesPerDay::computeInternalStructure(QWidget* parent, const Rules& r)
+ErrorCode ConstraintStudentsSetMaxBuildingChangesPerDay::computeInternalStructure(const Rules& r)
 {
 	this->iSubgroupsList.clear();
 	
@@ -3675,12 +3639,10 @@ bool ConstraintStudentsSetMaxBuildingChangesPerDay::computeInternalStructure(QWi
 	StudentsSet* ss=r.studentsHash.value(studentsName, NULL);
 			
 	if(ss==NULL){
-		SpaceConstraintIrreconcilableMessage::warning(parent, tr("FET warning"),
+		return ErrorCode(ErrorCode::FATAL,
 		 tr("Constraint students set max building changes per day is wrong because it refers to inexistent students set."
 		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
-									 		 
-		return false;
-	}												
+	}
 	
 	if(ss->type==STUDENTS_SUBGROUP){
 		int tmp;
@@ -3717,7 +3679,7 @@ bool ConstraintStudentsSetMaxBuildingChangesPerDay::computeInternalStructure(QWi
 	else
 		assert(0);
 
-	return true;
+	return ErrorCode();
 }
 
 bool ConstraintStudentsSetMaxBuildingChangesPerDay::hasInactiveActivities(const Rules& r) const
@@ -3947,12 +3909,11 @@ ConstraintStudentsMaxBuildingChangesPerDay::ConstraintStudentsMaxBuildingChanges
 	this->maxBuildingChangesPerDay=mc;
 }
 
-bool ConstraintStudentsMaxBuildingChangesPerDay::computeInternalStructure(QWidget* parent, const Rules& r)
+ErrorCode ConstraintStudentsMaxBuildingChangesPerDay::computeInternalStructure(const Rules& r)
 {
-	Q_UNUSED(parent);
 	Q_UNUSED(r);
 	
-	return true;
+	return ErrorCode();
 }
 
 bool ConstraintStudentsMaxBuildingChangesPerDay::hasInactiveActivities(const Rules& r) const
@@ -4181,7 +4142,7 @@ ConstraintStudentsSetMaxBuildingChangesPerWeek::ConstraintStudentsSetMaxBuilding
 	this->maxBuildingChangesPerWeek=mc;
 }
 
-bool ConstraintStudentsSetMaxBuildingChangesPerWeek::computeInternalStructure(QWidget* parent, const Rules& r)
+ErrorCode ConstraintStudentsSetMaxBuildingChangesPerWeek::computeInternalStructure(const Rules& r)
 {
 	this->iSubgroupsList.clear();
 	
@@ -4189,11 +4150,9 @@ bool ConstraintStudentsSetMaxBuildingChangesPerWeek::computeInternalStructure(QW
 	StudentsSet* ss=r.studentsHash.value(studentsName, NULL);
 			
 	if(ss==NULL){
-		SpaceConstraintIrreconcilableMessage::warning(parent, tr("FET warning"),
+		return ErrorCode(ErrorCode::FATAL,
 		 tr("Constraint students set max building changes per week is wrong because it refers to inexistent students set."
 		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
-									 		 
-		return false;
 	}												
 	
 	if(ss->type==STUDENTS_SUBGROUP){
@@ -4231,7 +4190,7 @@ bool ConstraintStudentsSetMaxBuildingChangesPerWeek::computeInternalStructure(QW
 	else
 		assert(0);
 
-	return true;
+	return ErrorCode();
 }
 
 bool ConstraintStudentsSetMaxBuildingChangesPerWeek::hasInactiveActivities(const Rules& r) const
@@ -4460,13 +4419,11 @@ ConstraintStudentsMaxBuildingChangesPerWeek::ConstraintStudentsMaxBuildingChange
 	this->maxBuildingChangesPerWeek=mc;
 }
 
-bool ConstraintStudentsMaxBuildingChangesPerWeek::computeInternalStructure(QWidget* parent, const Rules& r)
+ErrorCode ConstraintStudentsMaxBuildingChangesPerWeek::computeInternalStructure(const Rules& r)
 {
-	Q_UNUSED(parent);
-
 	Q_UNUSED(r);
 
-	return true;
+	return ErrorCode();
 }
 
 bool ConstraintStudentsMaxBuildingChangesPerWeek::hasInactiveActivities(const Rules& r) const
@@ -4694,7 +4651,7 @@ ConstraintStudentsSetMinGapsBetweenBuildingChanges::ConstraintStudentsSetMinGaps
 	this->minGapsBetweenBuildingChanges=mg;
 }
 
-bool ConstraintStudentsSetMinGapsBetweenBuildingChanges::computeInternalStructure(QWidget* parent, const Rules& r)
+ErrorCode ConstraintStudentsSetMinGapsBetweenBuildingChanges::computeInternalStructure(const Rules& r)
 {
 	this->iSubgroupsList.clear();
 	
@@ -4702,11 +4659,9 @@ bool ConstraintStudentsSetMinGapsBetweenBuildingChanges::computeInternalStructur
 	StudentsSet* ss=r.studentsHash.value(studentsName, NULL);
 			
 	if(ss==NULL){
-		SpaceConstraintIrreconcilableMessage::warning(parent, tr("FET warning"),
+		return ErrorCode(ErrorCode::FATAL,
 		 tr("Constraint students set min gaps between building changes is wrong because it refers to inexistent students set."
 		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
-									 		 
-		return false;
 	}												
 	
 	if(ss->type==STUDENTS_SUBGROUP){
@@ -4744,7 +4699,7 @@ bool ConstraintStudentsSetMinGapsBetweenBuildingChanges::computeInternalStructur
 	else
 		assert(0);
 
-	return true;
+	return ErrorCode();
 }
 
 bool ConstraintStudentsSetMinGapsBetweenBuildingChanges::hasInactiveActivities(const Rules& r) const
@@ -4986,12 +4941,11 @@ ConstraintStudentsMinGapsBetweenBuildingChanges::ConstraintStudentsMinGapsBetwee
 	this->minGapsBetweenBuildingChanges=mg;
 }
 
-bool ConstraintStudentsMinGapsBetweenBuildingChanges::computeInternalStructure(QWidget* parent, const Rules& r)
+ErrorCode ConstraintStudentsMinGapsBetweenBuildingChanges::computeInternalStructure(const Rules& r)
 {
-	Q_UNUSED(parent);
 	Q_UNUSED(r);
 		
-	return true;
+	return ErrorCode();
 }
 
 bool ConstraintStudentsMinGapsBetweenBuildingChanges::hasInactiveActivities(const Rules& r) const
@@ -5232,20 +5186,18 @@ ConstraintTeacherMaxBuildingChangesPerDay::ConstraintTeacherMaxBuildingChangesPe
 	this->maxBuildingChangesPerDay=mc;
 }
 
-bool ConstraintTeacherMaxBuildingChangesPerDay::computeInternalStructure(QWidget* parent, const Rules& r)
+ErrorCode ConstraintTeacherMaxBuildingChangesPerDay::computeInternalStructure(const Rules& r)
 {
 	//this->teacher_ID=r.searchTeacher(this->teacherName);
 	teacher_ID=r.teachersHash.value(teacherName, -1);
 	
 	if(this->teacher_ID<0){
-		SpaceConstraintIrreconcilableMessage::warning(parent, tr("FET warning"),
+		return ErrorCode(ErrorCode::FATAL,
 		 tr("Constraint teacher max building changes per day is wrong because it refers to inexistent teacher."
 		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
-							 		 
-		return false;
 	}	
 
-	return true;
+	return ErrorCode();
 }
 
 bool ConstraintTeacherMaxBuildingChangesPerDay::hasInactiveActivities(const Rules& r) const
@@ -5476,12 +5428,11 @@ ConstraintTeachersMaxBuildingChangesPerDay::ConstraintTeachersMaxBuildingChanges
 	this->maxBuildingChangesPerDay=mc;
 }
 
-bool ConstraintTeachersMaxBuildingChangesPerDay::computeInternalStructure(QWidget* parent, const Rules& r)
+ErrorCode ConstraintTeachersMaxBuildingChangesPerDay::computeInternalStructure(const Rules& r)
 {
-	Q_UNUSED(parent);
 	Q_UNUSED(r);
 
-	return true;
+	return ErrorCode();
 }
 
 bool ConstraintTeachersMaxBuildingChangesPerDay::hasInactiveActivities(const Rules& r) const
@@ -5710,20 +5661,18 @@ ConstraintTeacherMaxBuildingChangesPerWeek::ConstraintTeacherMaxBuildingChangesP
 	this->maxBuildingChangesPerWeek=mc;
 }
 
-bool ConstraintTeacherMaxBuildingChangesPerWeek::computeInternalStructure(QWidget* parent, const Rules& r)
+ErrorCode ConstraintTeacherMaxBuildingChangesPerWeek::computeInternalStructure(const Rules& r)
 {
 	//this->teacher_ID=r.searchTeacher(this->teacherName);
 	teacher_ID=r.teachersHash.value(teacherName, -1);
 	
 	if(this->teacher_ID<0){
-		SpaceConstraintIrreconcilableMessage::warning(parent, tr("FET warning"),
+		return ErrorCode(ErrorCode::FATAL,
 		 tr("Constraint teacher max building changes per week is wrong because it refers to inexistent teacher."
 		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
-							 		 
-		return false;
 	}	
 
-	return true;
+	return ErrorCode();
 }
 
 bool ConstraintTeacherMaxBuildingChangesPerWeek::hasInactiveActivities(const Rules& r) const
@@ -5954,12 +5903,11 @@ ConstraintTeachersMaxBuildingChangesPerWeek::ConstraintTeachersMaxBuildingChange
 	this->maxBuildingChangesPerWeek=mc;
 }
 
-bool ConstraintTeachersMaxBuildingChangesPerWeek::computeInternalStructure(QWidget* parent, const Rules& r)
+ErrorCode ConstraintTeachersMaxBuildingChangesPerWeek::computeInternalStructure(const Rules& r)
 {
-	Q_UNUSED(parent);
 	Q_UNUSED(r);
 
-	return true;
+	return ErrorCode();
 }
 
 bool ConstraintTeachersMaxBuildingChangesPerWeek::hasInactiveActivities(const Rules& r) const
@@ -6188,20 +6136,18 @@ ConstraintTeacherMinGapsBetweenBuildingChanges::ConstraintTeacherMinGapsBetweenB
 	this->minGapsBetweenBuildingChanges=mg;
 }
 
-bool ConstraintTeacherMinGapsBetweenBuildingChanges::computeInternalStructure(QWidget* parent, const Rules& r)
+ErrorCode ConstraintTeacherMinGapsBetweenBuildingChanges::computeInternalStructure(const Rules& r)
 {
 	//this->teacher_ID=r.searchTeacher(this->teacherName);
 	teacher_ID=r.teachersHash.value(teacherName, -1);
 	
 	if(this->teacher_ID<0){
-		SpaceConstraintIrreconcilableMessage::warning(parent, tr("FET warning"),
+		return ErrorCode(ErrorCode::FATAL,
 		 tr("Constraint teacher min gaps between building changes is wrong because it refers to inexistent teacher."
 		 " Please correct it (removing it might be a solution). Please report potential bug. Constraint is:\n%1").arg(this->getDetailedDescription(r)));
-							 		 
-		return false;
 	}	
 
-	return true;
+	return ErrorCode();
 }
 
 bool ConstraintTeacherMinGapsBetweenBuildingChanges::hasInactiveActivities(const Rules& r) const
@@ -6444,12 +6390,11 @@ ConstraintTeachersMinGapsBetweenBuildingChanges::ConstraintTeachersMinGapsBetwee
 	this->minGapsBetweenBuildingChanges=mg;
 }
 
-bool ConstraintTeachersMinGapsBetweenBuildingChanges::computeInternalStructure(QWidget* parent, const Rules& r)
+ErrorCode ConstraintTeachersMinGapsBetweenBuildingChanges::computeInternalStructure(const Rules& r)
 {
-	Q_UNUSED(parent);
 	Q_UNUSED(r);
 
-	return true;
+	return ErrorCode();
 }
 
 bool ConstraintTeachersMinGapsBetweenBuildingChanges::hasInactiveActivities(const Rules& r) const
@@ -6691,7 +6636,7 @@ ConstraintActivitiesOccupyMaxDifferentRooms::ConstraintActivitiesOccupyMaxDiffer
 	this->maxDifferentRooms=max_different_rooms;
 }
 
-bool ConstraintActivitiesOccupyMaxDifferentRooms::computeInternalStructure(QWidget* parent, const Rules& r)
+ErrorCode ConstraintActivitiesOccupyMaxDifferentRooms::computeInternalStructure(const Rules& r)
 {
 	this->_activitiesIndices.clear();
 	
@@ -6714,13 +6659,12 @@ bool ConstraintActivitiesOccupyMaxDifferentRooms::computeInternalStructure(QWidg
 	///////////////////////
 	
 	if(this->_activitiesIndices.count()<2){
-		SpaceConstraintIrreconcilableMessage::warning(parent, tr("FET error in data"),
+		return ErrorCode(ErrorCode::FATAL,
 			tr("Following constraint is wrong (refers to less than two activities). Please correct it:\n%1").arg(this->getDetailedDescription(r)));
-		return false;
 	}
 	else{
 		assert(this->_activitiesIndices.count()>=2);
-		return true;
+		return ErrorCode();
 	}
 }
 
@@ -6959,7 +6903,7 @@ ConstraintActivitiesSameRoomIfConsecutive::ConstraintActivitiesSameRoomIfConsecu
 	this->activitiesIds=a_L;
 }
 
-bool ConstraintActivitiesSameRoomIfConsecutive::computeInternalStructure(QWidget* parent, const Rules& r)
+ErrorCode ConstraintActivitiesSameRoomIfConsecutive::computeInternalStructure(const Rules& r)
 {
 	//this cares about inactive activities, also, so do not assert this->_actIndices.count()==this->actIds.count()
 	_activitiesIndices.clear();
@@ -6983,13 +6927,12 @@ bool ConstraintActivitiesSameRoomIfConsecutive::computeInternalStructure(QWidget
 	///////////////////////
 	
 	if(this->_activitiesIndices.count()<2){
-		SpaceConstraintIrreconcilableMessage::warning(parent, tr("FET error in data"),
+		return ErrorCode(ErrorCode::FATAL,
 			tr("Following constraint is wrong (refers to less than two activities). Please correct it:\n%1").arg(this->getDetailedDescription(r)));
-		return false;
 	}
 	else{
 		assert(this->_activitiesIndices.count()>=2);
-		return true;
+		return ErrorCode();
 	}
 }
 
