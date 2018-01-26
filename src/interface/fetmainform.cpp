@@ -433,7 +433,7 @@ void RandomSeedDialog::help()
 		+". "
 		+tr("It is thus very important to note that if you start two or more instances of FET when the number of seconds since 1 January 1970 is the same"
 		" the initial random seeds will be identical, leading to the same timetable generation behavior for an identical input file. If you intend to"
-		" generate different timetables for the same file, you need to wait at least one second between starting two succesive FET instances. Or you can"
+		" generate different timetables for the same file, you need to wait at least one second between starting two successive FET instances. Or you can"
 		" change the initial random seed by hand")
 		+". "
 		+tr("After you generate (even partially), the random seed (X and Y components) will change (each call of the random number generator updates the random seed components to the next numbers"
