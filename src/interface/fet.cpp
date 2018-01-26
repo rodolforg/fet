@@ -229,6 +229,13 @@ static void usage(QTextStream* out, const QString& error)
 	if(out!=NULL)
 		(*out)<<qPrintable(s)<<endl;
 }
+
+static void renderErrorList(const ErrorList& errors) {
+	foreach (ErrorCode erc, errors)
+		if (erc)
+			IrreconcilableCriticalMessage::critical((QWidget*)NULL, erc.getSeverityTitle(), erc.message);
+}
+
 #endif
 
 #ifndef FET_COMMAND_LINE
@@ -1246,7 +1253,10 @@ int main(int argc, char **argv)
 		}
 		//out<<"secondsLimit=="<<secondsLimit<<endl;
 				
-		TimetableExport::writeRandomSeedCommandLine(NULL, outputDirectory, true); //true represents 'before' state
+		ErrorCode erc = TimetableExport::writeRandomSeedCommandLine(outputDirectory, true); //true represents 'before' state
+		if (erc) {
+			IrreconcilableCriticalMessage::critical(NULL, erc.getSeverityTitle(), erc.message);
+		}
 
 		Generate::Status status = gen.generate(secondsLimit, false, &maxPlacedActivityStream); //false means no thread
 		
@@ -1280,7 +1290,8 @@ int main(int argc, char **argv)
 				if(!dir.exists(toc))
 					dir.mkpath(toc);
 
-			TimetableExport::writeSimulationResultsCommandLine(NULL, toc);
+			ErrorList errors = TimetableExport::writeSimulationResultsCommandLine(toc);
+			renderErrorList(errors);
 			
 			QString s;
 
@@ -1338,7 +1349,8 @@ int main(int argc, char **argv)
 				if(!dir.exists(toh))
 					dir.mkpath(toh);
 
-			TimetableExport::writeSimulationResultsCommandLine(NULL, toh);
+			errors = TimetableExport::writeSimulationResultsCommandLine(toh);
+			renderErrorList(errors);
 
 			if (EXPORT_CSV) {
 				QString oldDir=csv_export.getDirectoryCSV();
@@ -1384,7 +1396,8 @@ int main(int argc, char **argv)
 				if(!dir.exists(toc))
 					dir.mkpath(toc);
 
-			TimetableExport::writeSimulationResultsCommandLine(NULL, toc);
+			ErrorList errors = TimetableExport::writeSimulationResultsCommandLine(toc);
+			renderErrorList(errors);
 			
 			QString s;
 			const int maxActivitiesPlaced = gen.getMaxActivitiesPlaced();
@@ -1461,7 +1474,8 @@ int main(int argc, char **argv)
 				if(!dir.exists(toh))
 					dir.mkpath(toh);
 
-			TimetableExport::writeSimulationResultsCommandLine(NULL, toh);
+			errors = TimetableExport::writeSimulationResultsCommandLine(toh);
+			renderErrorList(errors);
 
 			if (EXPORT_CSV) {
 				QString oldDir=csv_export.getDirectoryCSV();
@@ -1474,7 +1488,10 @@ int main(int argc, char **argv)
 			cout<<"Simulation successful"<<endl;
 			out<<"Simulation successful"<<endl;
 		
-			TimetableExport::writeRandomSeedCommandLine(NULL, outputDirectory, false); //false represents 'before' state
+			ErrorCode erc = TimetableExport::writeRandomSeedCommandLine(outputDirectory, false); //false represents 'before' state
+			if (erc) {
+				IrreconcilableCriticalMessage::critical(NULL, erc.getSeverityTitle(), erc.message);
+			}
 
 			Solution& c=gen.getSolution();
 
@@ -1484,7 +1501,8 @@ int main(int argc, char **argv)
 			
 			CachedSchedule::update(c);
 
-			TimetableExport::writeSimulationResultsCommandLine(NULL, outputDirectory);
+			ErrorList errors = TimetableExport::writeSimulationResultsCommandLine(outputDirectory);
+			renderErrorList(errors);
 			
 			if (EXPORT_CSV) {
 				QString oldDir=csv_export.getDirectoryCSV();

@@ -16,6 +16,7 @@
 #define ERRORCODE_H
 
 #include <QString>
+#include <QList>
 
 class ErrorCode
 {
@@ -42,5 +43,7 @@ public:
 
 	explicit operator bool() const;
 };
+
+typedef QList<ErrorCode> ErrorList;
 
 #endif // ERRORCODE_H

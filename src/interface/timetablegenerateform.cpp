@@ -166,7 +166,7 @@ void TimetableGenerateForm::start(){
 
 	simulation_running=true;
 	
-	TimetableExport::writeRandomSeed(this, true); //true represents 'before' state
+	TimetableExport::writeRandomSeed(true); //true represents 'before' state
 
 	generateThread.start();
 }
@@ -208,7 +208,10 @@ void TimetableGenerateForm::stop()
 	foreach(QString t, c.conflictsDescriptionList)
 		conflictsString+=t+"\n";
 
-	TimetableExport::writeSimulationResults(this);
+	ErrorList errors = TimetableExport::writeSimulationResults();
+	foreach (ErrorCode erc, errors) {
+		QMessageBox::warning(this, erc.getSeverityTitle(), erc.message, QMessageBox::Ok);
+	}
 
 	QString s=TimetableGenerateForm::tr("Simulation interrupted! FET could not find a timetable."
 	 " Maybe you can consider lowering the constraints.");
@@ -311,7 +314,10 @@ void TimetableGenerateForm::stopHighest()
 	foreach(QString t, c.conflictsDescriptionList)
 		conflictsString+=t+"\n";
 
-	TimetableExport::writeHighestStageResults(this);
+	ErrorList errors = TimetableExport::writeHighestStageResults();
+	foreach (ErrorCode erc, errors) {
+		QMessageBox::warning(this, erc.getSeverityTitle(), erc.message, QMessageBox::Ok);
+	}
 
 	QString s=TimetableGenerateForm::tr("Simulation interrupted! FET could not find a timetable."
 	 " Maybe you can consider lowering the constraints.");
@@ -412,7 +418,10 @@ void TimetableGenerateForm::impossibleToSolve()
 	foreach(QString t, c.conflictsDescriptionList)
 		conflictsString+=t+"\n";
 
-	TimetableExport::writeSimulationResults(this);
+	ErrorList errors = TimetableExport::writeSimulationResults();
+	foreach (ErrorCode erc, errors) {
+		QMessageBox::warning(this, erc.getSeverityTitle(), erc.message, QMessageBox::Ok);
+	}
 
 
 	QString s=TimetableGenerateForm::tr("Simulation impossible! Maybe you can consider lowering the constraints.");
@@ -459,7 +468,7 @@ void TimetableGenerateForm::simulationFinished()
 
 	gen.finishedSemaphore.acquire();
 
-	TimetableExport::writeRandomSeed(this, false); //false represents 'before' state
+	TimetableExport::writeRandomSeed(false); //false represents 'before' state
 
 	Solution& c=gen.getSolution();
 
@@ -487,7 +496,10 @@ void TimetableGenerateForm::simulationFinished()
 	foreach(QString t, c.conflictsDescriptionList)
 		conflictsString+=t+"\n";
 
-	TimetableExport::writeSimulationResults(this);
+	ErrorList errors = TimetableExport::writeSimulationResults();
+	foreach (ErrorCode erc, errors) {
+		QMessageBox::warning(this, erc.getSeverityTitle(), erc.message, QMessageBox::Ok);
+	}
 
 	QString kk;
 	kk=FILE_SEP;
@@ -658,7 +670,10 @@ void TimetableGenerateForm::write(){
 	foreach(QString t, c.conflictsDescriptionList)
 		conflictsString+=t+"\n";
 
-	TimetableExport::writeSimulationResults(this);
+	ErrorList errors = TimetableExport::writeSimulationResults();
+	foreach (ErrorCode erc, errors) {
+		QMessageBox::warning(this, erc.getSeverityTitle(), erc.message, QMessageBox::Ok);
+	}
 
 	myMutex.unlock();
 
@@ -698,7 +713,10 @@ void TimetableGenerateForm::writeHighestStage(){
 	foreach(QString t, c.conflictsDescriptionList)
 		conflictsString+=t+"\n";
 
-	TimetableExport::writeHighestStageResults(this);
+	ErrorList errors = TimetableExport::writeHighestStageResults();
+	foreach (ErrorCode erc, errors) {
+		QMessageBox::warning(this, erc.getSeverityTitle(), erc.message, QMessageBox::Ok);
+	}
 
 	myMutex.unlock();
 

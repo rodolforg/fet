@@ -24,14 +24,11 @@ File timetableexport.h
 
 #include "timetable.h"
 #include "solution.h"
+#include "errorcode.h"
 
 #include <QString>
 #include <QHash>
 #include <QList>
-
-class QWidget;
-
-bool writeAtLeastATimetable();
 
 extern QHash<int, int> hashActivityColorBySubject;
 extern QList<int> activeHashActivityColorBySubjectAndStudents;
@@ -118,19 +115,19 @@ public:
 
 	static void getNumberOfPlacedActivities(int& number1, int& number2);
 
-	static void writeSimulationResults(QWidget* parent);
-	static void writeHighestStageResults(QWidget* parent);
-	static void writeSimulationResults(QWidget* parent, int n); //write in a directory with number n (for multiple generation)
-	static void writeSimulationResultsCommandLine(QWidget* parent, const QString& outputDirectory);
+	static ErrorList writeSimulationResults();
+	static ErrorList writeHighestStageResults();
+	static ErrorList writeSimulationResults(int n); //write in a directory with number n (for multiple generation)
+	static ErrorList writeSimulationResultsCommandLine(const QString& outputDirectory);
 	
-	static void writeRandomSeed(QWidget* parent, bool before);
-	static void writeRandomSeed(QWidget* parent, int n, bool before); //write in a directory with number n (for multiple generation)
-	static void writeRandomSeedCommandLine(QWidget* parent, const QString& outputDirectory, bool before);
-	static void writeRandomSeedFile(QWidget* parent, const QString& filename, bool before);
+	static ErrorCode writeRandomSeed(bool before);
+	static ErrorCode writeRandomSeed(int n, bool before); //write in a directory with number n (for multiple generation)
+	static ErrorCode writeRandomSeedCommandLine(const QString& outputDirectory, bool before);
+	static ErrorCode writeRandomSeedFile(const QString& filename, bool before);
 	
-	static void writeTimetableDataFile(QWidget* parent, const QString& filename);
+	static ErrorCode writeTimetableDataFile(const QString& filename);
 	
-	static void writeReportForMultiple(QWidget* parent, const QString& description, bool begin);
+	static ErrorCode writeReportForMultiple(const QString& description, bool begin);
 	
 	//the following functions return a single html table (needed for html file export and printing)
 	static QString singleSubgroupsTimetableDaysHorizontalHtml(int htmlLevel, int subgroup, const QString& saveTime, bool printActivityTags, bool repeatNames);
@@ -202,66 +199,66 @@ private:
 	static bool addActivitiesWithSameStartingTime(QList<int>& allActivities, int hour);
 
 	//the following functions write the conflicts text and the xml files
-	static void writeSubgroupsTimetableXml(QWidget* parent, const QString& xmlfilename);
-	static void writeTeachersTimetableXml(QWidget* parent, const QString& xmlfilename);
-	static void writeActivitiesTimetableXml(QWidget* parent, const QString& xmlfilename);
-	static void writeConflictsTxt(QWidget* parent, const QString& filename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeSubgroupsTimetableXml(const QString& xmlfilename);
+	static ErrorCode writeTeachersTimetableXml(const QString& xmlfilename);
+	static ErrorCode writeActivitiesTimetableXml(const QString& xmlfilename);
+	static ErrorCode writeConflictsTxt(const QString& filename, const QString& saveTime, int placedActivities);
 
 	//the following functions write the css and html timetable files
-	static void writeIndexHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeStylesheetCss(QWidget* parent, const QString& cssfilename, const QString& saveTime, int placedActivities);
-	static void writeSubgroupsTimetableDaysHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeSubgroupsTimetableDaysVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeSubgroupsTimetableTimeHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeSubgroupsTimetableTimeVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeSubgroupsTimetableTimeHorizontalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeSubgroupsTimetableTimeVerticalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeGroupsTimetableDaysHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeGroupsTimetableDaysVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeGroupsTimetableTimeHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeGroupsTimetableTimeVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeGroupsTimetableTimeHorizontalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeGroupsTimetableTimeVerticalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeYearsTimetableDaysHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeYearsTimetableDaysVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeYearsTimetableTimeHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeYearsTimetableTimeVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeYearsTimetableTimeHorizontalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeYearsTimetableTimeVerticalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeAllActivitiesTimetableDaysHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeAllActivitiesTimetableDaysVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeAllActivitiesTimetableTimeHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeAllActivitiesTimetableTimeVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeAllActivitiesTimetableTimeHorizontalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeAllActivitiesTimetableTimeVerticalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeTeachersTimetableDaysHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeTeachersTimetableDaysVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeTeachersTimetableTimeHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeTeachersTimetableTimeVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeTeachersTimetableTimeHorizontalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeTeachersTimetableTimeVerticalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeRoomsTimetableDaysHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeRoomsTimetableDaysVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeRoomsTimetableTimeHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeRoomsTimetableTimeVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeRoomsTimetableTimeHorizontalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeRoomsTimetableTimeVerticalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeSubjectsTimetableDaysHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeSubjectsTimetableDaysVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeSubjectsTimetableTimeHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeSubjectsTimetableTimeVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeSubjectsTimetableTimeHorizontalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeSubjectsTimetableTimeVerticalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeActivityTagsTimetableDaysHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeActivityTagsTimetableDaysVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeActivityTagsTimetableTimeHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeActivityTagsTimetableTimeVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeActivityTagsTimetableTimeHorizontalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeActivityTagsTimetableTimeVerticalDailyHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeTeachersFreePeriodsTimetableDaysHorizontalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeTeachersFreePeriodsTimetableDaysVerticalHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeTeachersStatisticsHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
-	static void writeStudentsStatisticsHtml(QWidget* parent, const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeIndexHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeStylesheetCss(const QString& cssfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeSubgroupsTimetableDaysHorizontalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeSubgroupsTimetableDaysVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeSubgroupsTimetableTimeHorizontalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeSubgroupsTimetableTimeVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeSubgroupsTimetableTimeHorizontalDailyHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeSubgroupsTimetableTimeVerticalDailyHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeGroupsTimetableDaysHorizontalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeGroupsTimetableDaysVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeGroupsTimetableTimeHorizontalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeGroupsTimetableTimeVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeGroupsTimetableTimeHorizontalDailyHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeGroupsTimetableTimeVerticalDailyHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeYearsTimetableDaysHorizontalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeYearsTimetableDaysVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeYearsTimetableTimeHorizontalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeYearsTimetableTimeVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeYearsTimetableTimeHorizontalDailyHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeYearsTimetableTimeVerticalDailyHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeAllActivitiesTimetableDaysHorizontalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeAllActivitiesTimetableDaysVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeAllActivitiesTimetableTimeHorizontalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeAllActivitiesTimetableTimeVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeAllActivitiesTimetableTimeHorizontalDailyHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeAllActivitiesTimetableTimeVerticalDailyHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeTeachersTimetableDaysHorizontalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeTeachersTimetableDaysVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeTeachersTimetableTimeHorizontalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeTeachersTimetableTimeVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeTeachersTimetableTimeHorizontalDailyHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeTeachersTimetableTimeVerticalDailyHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeRoomsTimetableDaysHorizontalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeRoomsTimetableDaysVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeRoomsTimetableTimeHorizontalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeRoomsTimetableTimeVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeRoomsTimetableTimeHorizontalDailyHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeRoomsTimetableTimeVerticalDailyHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeSubjectsTimetableDaysHorizontalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeSubjectsTimetableDaysVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeSubjectsTimetableTimeHorizontalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeSubjectsTimetableTimeVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeSubjectsTimetableTimeHorizontalDailyHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeSubjectsTimetableTimeVerticalDailyHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeActivityTagsTimetableDaysHorizontalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeActivityTagsTimetableDaysVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeActivityTagsTimetableTimeHorizontalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeActivityTagsTimetableTimeVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeActivityTagsTimetableTimeHorizontalDailyHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeActivityTagsTimetableTimeVerticalDailyHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeTeachersFreePeriodsTimetableDaysHorizontalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeTeachersFreePeriodsTimetableDaysVerticalHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeTeachersStatisticsHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
+	static ErrorCode writeStudentsStatisticsHtml(const QString& htmlfilename, const QString& saveTime, int placedActivities);
 
 	//the following functions return QStrings, because they are 'only' subfunctions to the writeXxxHtml functions
 	static QString writeActivityStudents(int htmlLevel, int ai, int day, int hour, bool notAvailable, bool colspan, bool rowspan, bool printActivityTags, QString skipStudentsSet);
@@ -284,7 +281,7 @@ private:
 	static QString writeNotAvailableSlot(int htmlLevel, const QString& weight);
 	static QString writeBreakSlot(int htmlLevel, const QString& weight);
 	static QString writeEmpty(int htmlLevel);
-	static void doWriteResults(QWidget *parent, QString filenamePrefix);
+	static ErrorList doWriteResults(QString filenamePrefix);
 };
 
 #endif

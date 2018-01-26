@@ -300,14 +300,14 @@ void TimetableGenerateMultipleForm::start(){
 
 void TimetableGenerateMultipleForm::timetableStarted(int timetable)
 {
-	TimetableExport::writeRandomSeed(this, timetable, true); //true represents 'before' state
+	TimetableExport::writeRandomSeed(timetable, true); //true represents 'before' state
 	
 	semaphoreTimetableStarted.release();
 }
 
 void TimetableGenerateMultipleForm::timetableGenerated(int timetable, const QString& description, bool ok)
 {
-	TimetableExport::writeRandomSeed(this, timetable, false); //false represents 'before' state
+	TimetableExport::writeRandomSeed(timetable, false); //false represents 'before' state
 
 	QString s=QString("");
 	s+=tr("Timetable no: %1 => %2", "%1 is the number of this timetable when generating multiple timetables, %2 is its description").arg(timetable).arg(description);
@@ -318,7 +318,10 @@ void TimetableGenerateMultipleForm::timetableGenerated(int timetable, const QStr
 		begin=true;
 	else
 		begin=false;
-	TimetableExport::writeReportForMultiple(this, s, begin);
+	ErrorCode erc = TimetableExport::writeReportForMultiple(s, begin);
+	if (erc) {
+		QMessageBox::warning(this, erc.getSeverityTitle(), erc.message, QMessageBox::Ok);
+	}
 
 	if(ok){
 		Solution& c=genMulti.getSolution();
@@ -331,7 +334,10 @@ void TimetableGenerateMultipleForm::timetableGenerated(int timetable, const QStr
 
 		const Solution& best_solution=CachedSchedule::getCachedSolution();
 
-		TimetableExport::writeSimulationResults(this, timetable);
+		ErrorList errors = TimetableExport::writeSimulationResults(timetable);
+		foreach (ErrorCode erc, errors) {
+			QMessageBox::warning(this, erc.getSeverityTitle(), erc.message, QMessageBox::Ok);
+		}
 
 		//update the string representing the conflicts
 		conflictsStringTitle=tr("Soft conflicts", "Title of dialog");
@@ -384,7 +390,10 @@ void TimetableGenerateMultipleForm::stop()
 	s+="\n\n";
 	s+=tr("Total searching time: %1h %2m %3s").arg(h).arg(m).arg(sec);
 	
-	TimetableExport::writeReportForMultiple(this, QString("\n")+s, false);
+	ErrorCode erc = TimetableExport::writeReportForMultiple(QString("\n")+s, false);
+	if (erc) {
+		QMessageBox::warning(this, erc.getSeverityTitle(), erc.message, QMessageBox::Ok);
+	}
 
 	QMessageBox::information(this, tr("FET information"), s);
 
@@ -427,7 +436,10 @@ void TimetableGenerateMultipleForm::simulationFinished()
 	ms+=QString("\n\n");
 	ms+=TimetableGenerateMultipleForm::tr("Total searching time was %1h %2m %3s").arg(h).arg(m).arg(s);
 	
-	TimetableExport::writeReportForMultiple(this, QString("\n")+ms, false);
+	ErrorCode erc = TimetableExport::writeReportForMultiple(QString("\n")+ms, false);
+	if (erc) {
+		QMessageBox::warning(this, erc.getSeverityTitle(), erc.message, QMessageBox::Ok);
+	}
 
 #ifndef Q_WS_QWS
 	QApplication::beep();
