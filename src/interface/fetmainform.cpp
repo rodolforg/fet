@@ -1331,8 +1331,8 @@ bool FetMainForm::fileSaveAs()
 		 QMessageBox::Yes|QMessageBox::No) == QMessageBox::No)
 		 	return false;
 			
-	bool t=gt.rules.write(this, s);
-	if(t){
+	ErrorCode erc = gt.rules.write(INPUT_FILENAME_XML);
+	if(!erc.isError()){
 		INPUT_FILENAME_XML = s;
 
 		gt.rules.setModified(false);
@@ -1344,6 +1344,7 @@ bool FetMainForm::fileSaveAs()
 		return true;
 	}
 	else{
+		QMessageBox::critical(this, erc.getSeverityTitle(), erc.message, QMessageBox::Ok);
 		return false;
 	}
 }
@@ -1644,9 +1645,11 @@ void FetMainForm::on_timetableSaveTimetableAsAction_triggered()
 		+QString("\n\n")+tr("Detailed information about each locking constraint which was added or not (if already existing) to the saved file:")+QString("\n")+constraintsString
 		+QString("\n")+tr("Your current data file remained untouched (no locking constraints were added), so you can save it also, or generate different timetables."));
 			
-		bool result=rules2.write(this, s);
+		ErrorCode erc = rules2.write(s);
 		
-		Q_UNUSED(result);
+		if (erc.isError()) {
+			QMessageBox::critical(this, erc.getSeverityTitle(), erc.message, QMessageBox::Ok);
+		}
 		
 		while(!lockTimeConstraintsList.isEmpty())
 			delete lockTimeConstraintsList.takeFirst();
@@ -1686,9 +1689,9 @@ bool FetMainForm::fileSave()
 	if(INPUT_FILENAME_XML.isEmpty())
 		return fileSaveAs();
 	else{
-		bool t=gt.rules.write(this, INPUT_FILENAME_XML);
+		ErrorCode erc = gt.rules.write(INPUT_FILENAME_XML);
 		
-		if(t){
+		if(!erc.isError()){
 			gt.rules.setModified(false);
 		
 			setCurrentFile(INPUT_FILENAME_XML);
@@ -1697,6 +1700,7 @@ bool FetMainForm::fileSave()
 			return true;
 		}
 		else{
+			QMessageBox::critical(this, erc.getSeverityTitle(), erc.message, QMessageBox::Ok);
 			return false;
 		}
 	}

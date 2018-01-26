@@ -841,7 +841,7 @@ void TimetableExport::writeTimetableDataFile(QWidget* parent, const QString& fil
 	//QMessageBox::information(parent, tr("FET information"), tr("Added %1 locking time constraints and %2 locking space constraints to saved file,"
 	// " ignored %3 activities which were already fixed in time and %4 activities which were already fixed in space").arg(addedTime).arg(addedSpace).arg(duplicatesTime).arg(duplicatesSpace));
 		
-	bool result=rules2.write(parent, filename);
+	ErrorCode erc = rules2.write(filename);
 
 	while(!lockTimeConstraintsList.isEmpty())
 		delete lockTimeConstraintsList.takeFirst();
@@ -879,7 +879,8 @@ void TimetableExport::writeTimetableDataFile(QWidget* parent, const QString& fil
 	
 	rules2.groupActivitiesInInitialOrderList.clear();
 
-	if(!result){
+	if(erc){
+		IrreconcilableCriticalMessage::critical(parent, erc.getSeverityTitle(), erc.message);
 		IrreconcilableCriticalMessage::critical(parent, tr("FET critical"), tr("Could not save the data + timetable file on the hard disk - maybe hard disk is full"));
 	}
 }

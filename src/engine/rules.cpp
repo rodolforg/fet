@@ -6934,7 +6934,7 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 	return true;
 }
 
-bool Rules::write(QWidget *parent, const QString& filename) const
+ErrorCode Rules::write(const QString& filename) const
 {
 	assert(this->initialized);
 
@@ -6964,10 +6964,8 @@ bool Rules::write(QWidget *parent, const QString& filename) const
 
 	QFile file(filenameTmp);
 	if(!file.open(QIODevice::WriteOnly | QIODevice::Truncate)){
-		IrreconcilableCriticalMessage::critical(parent, tr("FET critical"),
+		return ErrorCode(ErrorCode::FATAL,
 		 tr("Cannot open %1 for writing ... please check write permissions of the selected directory or your disk free space. Saving of file aborted").arg(QFileInfo(filenameTmp).fileName()));
-
-		return false;
 	}
 
 	QTextStream tos(&file);
@@ -7090,12 +7088,12 @@ bool Rules::write(QWidget *parent, const QString& filename) const
 	//tos<<s;
 	
 	if(file.error()>0){
-		IrreconcilableCriticalMessage::critical(parent, tr("FET critical"),
-		 tr("Saved file gave error code %1, which means saving is compromised. Please check your disk free space")
-		 .arg(file.error()));
+		QString msg =
+				tr("Saved file gave error code %1, which means saving is compromised. Please check your disk free space")
+				.arg(file.error());
 
 		file.close();
-		return false;
+		return ErrorCode(ErrorCode::FATAL, msg);
 	}
 	
 	file.close();
@@ -7107,7 +7105,7 @@ bool Rules::write(QWidget *parent, const QString& filename) const
 		assert(tf);
 	}
 	
-	return true;
+	return ErrorCode();
 }
 
 int Rules::activateTeacher(const QString& teacherName)
