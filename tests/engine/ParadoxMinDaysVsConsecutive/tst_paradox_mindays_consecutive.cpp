@@ -58,8 +58,8 @@ void ParadoxMindaysVsConsecutiveTest::test_generate_error_message()
 	Subject *psubject = new Subject();
 	psubject->name = subject;
 	rules.addSubjectFast(psubject);
-	rules.addSimpleActivityFast(NULL, 12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(NULL, 23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
+	rules.addSimpleActivityFast(12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
+	rules.addSimpleActivityFast(23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
 	rules.computeInternalStructure(NULL);
 
 	ConstraintBasicCompulsoryTime * ctr = new ConstraintBasicCompulsoryTime();
@@ -95,9 +95,9 @@ void ParadoxMindaysVsConsecutiveTest::test_generate_multiple_error_messages()
 	Subject *psubject = new Subject();
 	psubject->name = subject;
 	rules.addSubjectFast(psubject);
-	rules.addSimpleActivityFast(NULL, 12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(NULL, 23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(NULL, 34567, 34567, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
+	rules.addSimpleActivityFast(12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
+	rules.addSimpleActivityFast(23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
+	rules.addSimpleActivityFast(34567, 34567, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
 	rules.computeInternalStructure(NULL);
 
 	ConstraintBasicCompulsoryTime * ctr = new ConstraintBasicCompulsoryTime();
@@ -135,8 +135,8 @@ void ParadoxMindaysVsConsecutiveTest::test_reset_properly()
 	Subject *psubject = new Subject();
 	psubject->name = subject;
 	rules.addSubjectFast(psubject);
-	rules.addSimpleActivityFast(NULL, 12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(NULL, 23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
+	rules.addSimpleActivityFast(12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
+	rules.addSimpleActivityFast(23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
 	rules.computeInternalStructure(NULL);
 
 	ConstraintBasicCompulsoryTime * ctr = new ConstraintBasicCompulsoryTime();

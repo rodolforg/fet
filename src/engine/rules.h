@@ -498,8 +498,7 @@ public:
 	/*
 	Faster (no need to recompute the number of students in activity constructor)
 	*/
-	bool addSimpleActivityFast(
-		QWidget* parent,
+	ErrorList addSimpleActivityFast(
 		int _id,
 		int _activityGroupId,
 		const QStringList& _teachersNames,
@@ -538,9 +537,7 @@ public:
 		bool _computeNTotalStudents,
 		int _nTotalStudents);*/
 
-	bool addSplitActivityFast(
-		QWidget* parent,
-		int _firstActivityId,
+	ErrorList addSplitActivityFast(int _firstActivityId,
 		int _activityGroupId,
 		const QStringList& _teachersNames,
 		const QString& _subjectName,
@@ -906,6 +903,8 @@ private:
 	SpaceConstraint* readActivitiesSameRoomIfConsecutive(QXmlStreamReader& xml, XmlLog &log);
 
 	int readHourTag(QXmlStreamReader& xml, XmlLog &log, bool acceptEndOfDay) const;
+
+	void renderErrorCode(QWidget* parent, const ErrorCode& erc) const;
 
 signals:
 	/// Any object property changed

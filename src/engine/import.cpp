@@ -2515,10 +2515,16 @@ void Import::importCSVActivities(QWidget* parent){
 				lastWarning+=Import::tr("Activity %1 already exists. A duplicate activity is imported. Please check the dataset!").arg(activityid)+"\n";
 			}*/
 			if(duration>0){
-				bool tmp=gt.rules.addSimpleActivityFast(newParent, activityid, 0, teachers_names, subject_name, activity_tags_names,
+				ErrorList errors = gt.rules.addSimpleActivityFast(activityid, 0, teachers_names, subject_name, activity_tags_names,
 					students_names, duration, duration, active, true, -1, numberOfStudents);
+				foreach (const ErrorCode& erc, errors) {
+					if (erc.isError())
+						QMessageBox::critical(newParent, erc.getSeverityTitle(), erc.message);
+					else
+						QMessageBox::warning(newParent, erc.getSeverityTitle(), erc.message);
+				}
 				activityid++;
-				if(tmp){
+				if(!errors.hasError()){
 					count++;
 					count2++;
 				}
@@ -2575,12 +2581,18 @@ void Import::importCSVActivities(QWidget* parent){
 				/*QStringList activity_tag_names;
 				activity_tag_names<<activity_tag_name;*/
 				//workaround only. Please rethink. (end)
-				bool tmp=gt.rules.addSplitActivityFast(newParent, activityid, activityid,
+				ErrorList errors = gt.rules.addSplitActivityFast(activityid, activityid,
 					teachers_names, subject_name, activity_tags_names, students_names,
 					nsplit, totalduration, durations,
 					active, minD, weight, force, true, -1, numberOfStudents);
+				foreach (const ErrorCode& erc, errors) {
+					if (erc.isError())
+						QMessageBox::critical(newParent, erc.getSeverityTitle(), erc.message);
+					else
+						QMessageBox::warning(newParent, erc.getSeverityTitle(), erc.message);
+				}
 				activityid+=nsplit;
-				if(tmp){
+				if(!errors.hasError()){
 					count++;
 					count2+=nsplit;
 				}

@@ -210,11 +210,11 @@ void ConstraintStudentsMinContinuousGapInIntervalTest::OneStudentsSet_CheckFitne
 	QStringList teachers;
 	students << sty1->name;
 	const int duration = 2;
-	bool ok = rules.addSimpleActivityFast(NULL, 1, 1, teachers, "subject1", tags, students, duration, duration, true, false, 0, 0);
-	QVERIFY2(ok, "Could not add activity");
+	ErrorList errors = rules.addSimpleActivityFast(1, 1, teachers, "subject1", tags, students, duration, duration, true, false, 0, 0);
+	QVERIFY2(!errors.hasError(), "Could not add activity");
 
 	ConstraintStudentsSetMinContinuousGapInInterval *ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 2, "y1", 2, 4);
-	ok = rules.addTimeConstraint(ctr);
+	bool ok = rules.addTimeConstraint(ctr);
 	QVERIFY2(ok, "Could not add constraint");
 
 	rules.computeInternalStructure(NULL);
@@ -295,11 +295,11 @@ void ConstraintStudentsMinContinuousGapInIntervalTest::OneStudentsGroup_CheckFit
 	QStringList teachers;
 	students << sty1->name;
 	const int duration = 2;
-	bool ok = rules.addSimpleActivityFast(NULL, 1, 1, teachers, "subject1", tags, students, duration, duration, true, false, 0, 0);
-	QVERIFY2(ok, "Could not add activity");
+	ErrorList errors = rules.addSimpleActivityFast(1, 1, teachers, "subject1", tags, students, duration, duration, true, false, 0, 0);
+	QVERIFY2(!errors.hasError(), "Could not add activity");
 
 	ConstraintStudentsSetMinContinuousGapInInterval *ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 2, "y1 g1", 2, 4);
-	ok = rules.addTimeConstraint(ctr);
+	bool ok = rules.addTimeConstraint(ctr);
 	QVERIFY2(ok, "Could not add constraint");
 
 	rules.computeInternalStructure(NULL);
@@ -380,11 +380,11 @@ void ConstraintStudentsMinContinuousGapInIntervalTest::AllStudents_CheckFitness(
 	QStringList teachers;
 	students << "y1" << "y2";
 	const int duration = 2;
-	bool ok = rules.addSimpleActivityFast(NULL, 1, 1, teachers, "subject1", tags, students, duration, duration, true, false, 0, 0);
-	QVERIFY2(ok, "Could not add activity");
+	ErrorList errors = rules.addSimpleActivityFast(1, 1, teachers, "subject1", tags, students, duration, duration, true, false, 0, 0);
+	QVERIFY2(!errors.hasError(), "Could not add activity");
 
 	ConstraintStudentsMinContinuousGapInInterval *ctr = new ConstraintStudentsMinContinuousGapInInterval(100.0, 2, 2, 4);
-	ok = rules.addTimeConstraint(ctr);
+	bool ok = rules.addTimeConstraint(ctr);
 	QVERIFY2(ok, "Could not add constraint");
 
 	rules.computeInternalStructure(NULL);
@@ -466,11 +466,11 @@ void ConstraintStudentsMinContinuousGapInIntervalTest::OneStudentsSet_CheckFitne
 	QStringList teachers;
 	students << sty1->name;
 	const int duration = 2;
-	bool ok = rules.addSimpleActivityFast(NULL, 1, 1, teachers, "subject1", tags, students, duration, duration, true, false, 0, 0);
-	QVERIFY2(ok, "Could not add activity");
+	ErrorList errors = rules.addSimpleActivityFast(1, 1, teachers, "subject1", tags, students, duration, duration, true, false, 0, 0);
+	QVERIFY2(!errors.hasError(), "Could not add activity");
 
 	ConstraintStudentsSetMinContinuousGapInInterval *ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 2, "y1", 2, 6);
-	ok = rules.addTimeConstraint(ctr);
+	bool ok = rules.addTimeConstraint(ctr);
 	QVERIFY2(ok, "Could not add constraint");
 
 	rules.computeInternalStructure(NULL);
@@ -506,11 +506,11 @@ void ConstraintStudentsMinContinuousGapInIntervalTest::AllStudents_CheckFitness_
 	QStringList teachers;
 	students << "y1" << "y2";
 	const int duration = 2;
-	bool ok = rules.addSimpleActivityFast(NULL, 1, 1, teachers, "subject1", tags, students, duration, duration, true, false, 0, 0);
-	QVERIFY2(ok, "Could not add activity");
+	ErrorList errors = rules.addSimpleActivityFast(1, 1, teachers, "subject1", tags, students, duration, duration, true, false, 0, 0);
+	QVERIFY2(!errors.hasError(), "Could not add activity");
 
 	ConstraintStudentsMinContinuousGapInInterval *ctr = new ConstraintStudentsMinContinuousGapInInterval(100.0, 2, 2, 6);
-	ok = rules.addTimeConstraint(ctr);
+	bool ok = rules.addTimeConstraint(ctr);
 	QVERIFY2(ok, "Could not add constraint");
 
 	rules.computeInternalStructure(NULL);

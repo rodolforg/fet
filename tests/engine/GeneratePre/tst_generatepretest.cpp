@@ -1879,9 +1879,9 @@ GeneratePreTest::MockRules3Activities::MockRules3Activities()
 	subject2->name = "Subject2";
 	rules.addSubjectFast(subject2);
 	//Activity *act = new Activity(1, 1, teachers, "Subject", activitytags, studentsnames, 1, 1, true, true, -1, -1);
-	rules.addSimpleActivityFast(NULL, 12345, 12345, teachers, "Subject1", activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(NULL, 23456, 23456, teachers, "Subject2", activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(NULL, 34567, 34567, QStringList(), "Subject1", QStringList(), QStringList(), 1, 1, true, false, 10, 10);
+	rules.addSimpleActivityFast(12345, 12345, teachers, "Subject1", activitytags, studentsnames, 1, 1, true, false, 10, 10);
+	rules.addSimpleActivityFast(23456, 23456, teachers, "Subject2", activitytags, studentsnames, 1, 1, true, false, 10, 10);
+	rules.addSimpleActivityFast(34567, 34567, QStringList(), "Subject1", QStringList(), QStringList(), 1, 1, true, false, 10, 10);
 	rules.computeInternalStructure(NULL);
 }
 

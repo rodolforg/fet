@@ -44,6 +44,8 @@ public:
 	explicit operator bool() const;
 };
 
-typedef QList<ErrorCode> ErrorList;
+struct ErrorList : public QList<ErrorCode> {
+	bool hasError() const;
+};
 
 #endif // ERRORCODE_H

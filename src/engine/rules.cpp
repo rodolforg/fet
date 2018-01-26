@@ -2754,9 +2754,7 @@ void Rules::sortSubgroupsAlphabetically(const QString& yearName, const QString& 
 	return true;
 }*/
 
-bool Rules::addSimpleActivityFast(
-	QWidget* parent,
-	int _id,
+ErrorList Rules::addSimpleActivityFast(int _id,
 	int _activityGroupId,
 	const QStringList& _teachersNames,
 	const QString& _subjectName,
@@ -2769,20 +2767,21 @@ bool Rules::addSimpleActivityFast(
 	int _nTotalStudents,
 	int _computedNumberOfStudents)
 {
+	ErrorList errors;
 	//check for duplicates - idea and code by Volker Dirr
 	int t=QStringList(_teachersNames).removeDuplicates();
 	if(t>0)
-		RulesReconcilableMessage::warning(parent, tr("FET warning"), tr("Activity with Id=%1 contains %2 duplicate teachers - please correct that")
+		errors << ErrorCode(ErrorCode::WARNING, tr("Activity with Id=%1 contains %2 duplicate teachers - please correct that")
 		 .arg(_id).arg(t));
 
 	t=QStringList(_studentsNames).removeDuplicates();
 	if(t>0)
-		RulesReconcilableMessage::warning(parent, tr("FET warning"), tr("Activity with Id=%1 contains %2 duplicate students sets - please correct that")
+		errors << ErrorCode(ErrorCode::WARNING, tr("Activity with Id=%1 contains %2 duplicate students sets - please correct that")
 		 .arg(_id).arg(t));
 
 	t=QStringList(_activityTagsNames).removeDuplicates();
 	if(t>0)
-		RulesReconcilableMessage::warning(parent, tr("FET warning"), tr("Activity with Id=%1 contains %2 duplicate activity tags - please correct that")
+		errors << ErrorCode(ErrorCode::WARNING, tr("Activity with Id=%1 contains %2 duplicate activity tags - please correct that")
 		 .arg(_id).arg(t));
 
 	Activity *act=new Activity(_id, _activityGroupId, _teachersNames, _subjectName, _activityTagsNames,
@@ -2796,7 +2795,7 @@ bool Rules::addSimpleActivityFast(
 	this->internalStructureComputed=false;
 	setModified(true);
 
-	return true;
+	return errors;
 }
 
 /*bool Rules::addSplitActivity(
@@ -2886,8 +2885,7 @@ bool Rules::addSimpleActivityFast(
 	return true;
 }*/
 
-bool Rules::addSplitActivityFast(
-	QWidget* parent,
+ErrorList Rules::addSplitActivityFast(
 	int _firstActivityId,
 	int _activityGroupId,
 	const QStringList& _teachersNames,
@@ -2906,19 +2904,20 @@ bool Rules::addSplitActivityFast(
 	int _computedNumberOfStudents)
 {
 	//check for duplicates - idea and code by Volker Dirr
+	ErrorList errors;
 	int t=QStringList(_teachersNames).removeDuplicates();
 	if(t>0)
-		RulesReconcilableMessage::warning(parent, tr("FET warning"), tr("Activities with group_Id=%1 contain %2 duplicate teachers - please correct that")
+		errors << ErrorCode(ErrorCode::WARNING, tr("Activities with group_Id=%1 contain %2 duplicate teachers - please correct that")
 		 .arg(_activityGroupId).arg(t));
 
 	t=QStringList(_studentsNames).removeDuplicates();
 	if(t>0)
-		RulesReconcilableMessage::warning(parent, tr("FET warning"), tr("Activities with group_Id=%1 contain %2 duplicate students sets - please correct that")
+		errors << ErrorCode(ErrorCode::WARNING, tr("Activities with group_Id=%1 contain %2 duplicate students sets - please correct that")
 		 .arg(_activityGroupId).arg(t));
 
 	t=QStringList(_activityTagsNames).removeDuplicates();
 	if(t>0)
-		RulesReconcilableMessage::warning(parent, tr("FET warning"), tr("Activities with group_Id=%1 contain %2 duplicate activity tags - please correct that")
+		errors << ErrorCode(ErrorCode::WARNING, tr("Activities with group_Id=%1 contain %2 duplicate activity tags - please correct that")
 		 .arg(_activityGroupId).arg(t));
 
 	assert(_firstActivityId==_activityGroupId);
@@ -2948,7 +2947,7 @@ bool Rules::addSplitActivityFast(
 	this->internalStructureComputed=false;
 	setModified(true);
 
-	return true;
+	return errors;
 }
 
 /*void Rules::removeActivity(int _id)
@@ -5838,12 +5837,28 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 								assert(studentsSetsCount.contains(_s));
 								_ns+=studentsSetsCount.value(_s);
 							}
-							this->addSimpleActivityFast(parent, id, gid, tl, sjn, atl, stl,
+							ErrorList errors;
+							errors << this->addSimpleActivityFast(id, gid, tl, sjn, atl, stl,
 								d, td, ac, cnos, nos, _ns);
+							foreach (const ErrorCode& erc, errors) {
+								if (erc.isError()) {
+									xmlReader.raiseError(erc.message);
+								} else {
+									renderErrorCode(parent, erc);
+								}
+							}
 						}
 						else{
-							this->addSimpleActivityFast(parent, id, gid, tl, sjn, atl, stl,
+							ErrorList errors;
+							errors << this->addSimpleActivityFast(id, gid, tl, sjn, atl, stl,
 								d, td, ac, cnos, nos, nos);
+							foreach (const ErrorCode& erc, errors) {
+								if (erc.isError()) {
+									xmlReader.raiseError(erc.message);
+								} else {
+									renderErrorCode(parent, erc);
+								}
+							}
 						}
 						
 						this->activitiesList[this->activitiesList.count()-1]->comments=cm;
@@ -16478,6 +16493,30 @@ int Rules::readHourTag(QXmlStreamReader &xmlReader, XmlLog &log, bool acceptEndO
 	else
 		xmlReader.raiseError(tr("Hour %1 is inexistent").arg(text));
 	return -1;
+}
+
+void Rules::renderErrorCode(QWidget* parent, const ErrorCode& erc) const
+{
+	switch (erc.severity) {
+	case ErrorCode::FATAL:
+		IrreconcilableCriticalMessage::critical(parent, erc.getSeverityTitle(), erc.message);
+		break;
+	case ErrorCode::ERROR:
+		IrreconcilableCriticalMessage::critical(parent, erc.getSeverityTitle(), erc.message);
+		break;
+	case ErrorCode::WARNING:
+		RulesReconcilableMessage::warning(parent, erc.getSeverityTitle(), erc.message);
+		break;
+	case ErrorCode::INFO:
+		RulesReconcilableMessage::information(parent, erc.getSeverityTitle(), erc.message);
+		break;
+	case ErrorCode::VERBOSE:
+		if (VERBOSE)
+			RulesReconcilableMessage::information(parent, erc.getSeverityTitle(), erc.message);
+		break;
+	default:
+		break;
+	}
 }
 
 ////////////////

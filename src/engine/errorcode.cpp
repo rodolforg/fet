@@ -57,3 +57,12 @@ ErrorCode::operator bool() const
 {
 	return severity != NO_ERROR;
 }
+
+bool ErrorList::hasError() const
+{
+	foreach (const ErrorCode& erc, *this) {
+		if (erc.isError())
+			return true;
+	}
+	return false;
+}

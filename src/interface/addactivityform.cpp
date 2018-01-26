@@ -727,10 +727,16 @@ void AddActivityForm::addActivity()
 				return;
 		}
 
-		bool tmp=gt.rules.addSimpleActivityFast(this, activityid, 0, teachers_names, subject_name, activity_tags_names,
+		ErrorList errors = gt.rules.addSimpleActivityFast(activityid, 0, teachers_names, subject_name, activity_tags_names,
 			students_names, duration, duration, active,
 			(nStudentsSpinBox->value()==-1), nStudentsSpinBox->value(), numberOfStudents);
-		if(tmp)
+		foreach (const ErrorCode& erc, errors) {
+			if (erc.isError())
+				QMessageBox::critical(this, erc.getSeverityTitle(), erc.message);
+			else
+				QMessageBox::warning(this, erc.getSeverityTitle(), erc.message);
+		}
+		if(!errors.hasError())
 			QMessageBox::information(this, tr("FET information"), tr("Activity added"));
 		else
 			QMessageBox::critical(this, tr("FET information"), tr("Activity NOT added - please report error"));
@@ -788,12 +794,18 @@ void AddActivityForm::addActivity()
 		firstactivityid++;
 
 		int minD=minDayDistanceSpinBox->value();
-		bool tmp=gt.rules.addSplitActivityFast(this, firstactivityid, firstactivityid,
+		ErrorList errors = gt.rules.addSplitActivityFast(firstactivityid, firstactivityid,
 			teachers_names, subject_name, activity_tags_names, students_names,
 			nsplit, totalduration, durations,
 			active, minD, weight, forceConsecutiveCheckBox->isChecked(),
 			(nStudentsSpinBox->value()==-1), nStudentsSpinBox->value(), numberOfStudents);
-		if(tmp){
+		foreach (const ErrorCode& erc, errors) {
+			if (erc.isError())
+				QMessageBox::critical(this, erc.getSeverityTitle(), erc.message);
+			else
+				QMessageBox::warning(this, erc.getSeverityTitle(), erc.message);
+		}
+		if(!errors.hasError()){
 			if(minD>1 && weight<100.0){
 				SecondMinDaysDialog second(this, minD, weight);
 				setParentAndOtherThings(&second, this);
