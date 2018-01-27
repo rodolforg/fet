@@ -5739,3 +5739,8 @@ by:
 "There were removed %1 and %2. There were not removed %3 and %4,
 because these activities were permanently locked"
 where %1 would be "%n locking time constraint(s)", etc.
+
+346---------------------------------------------------------
+From Taro Tada:
+
+Either allow two or more users to work concurrently on a unique FET file, or allow the merging of two or more .fet files.
