@@ -36,6 +36,8 @@ File spaceconstraint.cpp
 
 #include <QString>
 
+#include <QXmlStreamReader>
+
 static QString trueFalse(bool x)
 {
 	if(!x)
@@ -87,6 +89,54 @@ SpaceConstraint::SpaceConstraint(int type, double wp) :
 
 	active=true;
 	comments=QString("");
+}
+
+bool SpaceConstraint::readXmlBasicTags(QXmlStreamReader& xmlReader, XmlLog& log)
+{
+	assert(xmlReader.isStartElement());
+
+	if(xmlReader.name()=="Weight_Percentage"){
+		QString text=xmlReader.readElementText();
+		this->weightPercentage=customFETStrToDouble(text);
+		log.verbose("    Adding weight percentage="+CustomFETString::number(this->weightPercentage)+"\n");
+		return true;
+	}
+	else if(xmlReader.name()=="Active"){
+		QString text=xmlReader.readElementText();
+		this->active=!(text=="false");
+		return true;
+	}
+	else if(xmlReader.name()=="Comments"){
+		QString text=xmlReader.readElementText();
+		this->comments=text;
+		return true;
+	}
+	return false;
+}
+
+bool SpaceConstraint::readXmlObsoleteBasicTags(QXmlStreamReader& xmlReader, XmlLog& log)
+{
+	assert(xmlReader.isStartElement());
+
+	if(xmlReader.name()=="Weight"){
+		xmlReader.skipCurrentElement();
+		log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
+		this->weightPercentage=100;
+		return true;
+	}
+	else if(xmlReader.name()=="Compulsory"){
+		QString text=xmlReader.readElementText();
+		if(text=="yes"){
+			log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
+			this->weightPercentage=100;
+		}
+		else{
+			log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
+			this->weightPercentage=0;
+		}
+		return true;
+	}
+	return false;
 }
 
 //////////////////////////////////////////////////////////////////////////////////////
