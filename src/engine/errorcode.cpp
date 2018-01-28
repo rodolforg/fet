@@ -17,12 +17,12 @@
 #include <QCoreApplication>
 
 ErrorCode::ErrorCode()
-	: severity(NO_ERROR)
+	: severity(NO_ERROR), groupId(0)
 {
 }
 
-ErrorCode::ErrorCode(ErrorCode::Severity severity, QString message)
-	: severity(severity), message(message)
+ErrorCode::ErrorCode(ErrorCode::Severity severity, QString message, int groupId)
+	: severity(severity), message(message), groupId(groupId)
 {
 }
 
@@ -52,6 +52,13 @@ QString ErrorCode::getSeverityTitle(ErrorCode::Severity severity)
 	}
 	// "FET confirmation" "FET help" "FET question"
 }
+
+int ErrorCode::nextGroupId()
+{
+	return ++_nextGroupId;
+}
+
+int ErrorCode::_nextGroupId = 0;
 
 ErrorCode::operator bool() const
 {

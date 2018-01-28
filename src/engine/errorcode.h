@@ -31,10 +31,11 @@ public:
 	};
 
 	ErrorCode();
-	ErrorCode(Severity severity, QString message);
+	ErrorCode(Severity severity, QString message, int groupId = 0);
 
 	Severity severity;
 	QString message;
+	int groupId;
 
 	bool isError() const;
 
@@ -42,6 +43,10 @@ public:
 	static QString getSeverityTitle(Severity severity);
 
 	explicit operator bool() const;
+
+	static int nextGroupId();
+private:
+	static int _nextGroupId;
 };
 
 struct ErrorList : public QList<ErrorCode> {

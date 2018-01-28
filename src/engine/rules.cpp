@@ -4702,6 +4702,7 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 	this->init();
 
 	bool skipDeprecatedConstraints=false;
+	int skipDeprecatedConstraintsId = ErrorCode::nextGroupId();
 	
 	bool skipDuplicatedStudentsSets=false;
 	
@@ -6553,11 +6554,12 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 			log.minimum("Added "+CustomFETString::number(nc)+" time constraints\n");
 		}
 		else if(xmlReader.name()=="Space_Constraints_List"){
-			bool reportRoomNotAvailableChange=true;
+			ErrorList errors;
+			int reportRoomNotAvailableChange = ErrorCode::nextGroupId();
 
-			bool reportUnspecifiedPermanentlyLockedSpace=true;
+			int reportUnspecifiedPermanentlyLockedSpaceId = ErrorCode::nextGroupId();
 			
-			bool seeNextWarnNotAddedSpaceConstraint=true;
+			int seeNextWarnNotAddedSpaceConstraintId = ErrorCode::nextGroupId();
 
 			int nc=0;
 			SpaceConstraint *crt_constraint;
@@ -6570,14 +6572,10 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 					crt_constraint=readBasicCompulsorySpace(xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintRoomNotAvailable"){
-					if(reportRoomNotAvailableChange){
-						int t=RulesReconcilableMessage::information(parent, tr("FET information"),
+					errors << ErrorCode(ErrorCode::INFO,
 						 tr("File contains constraint room not available, which is old (it was improved in FET 5.5.0), and will be converted"
 						 " to the similar constraint of this type, constraint room not available times (a matrix)."),
-						  tr("Skip rest"), tr("See next"), QString(), 1, 0 );
-						if(t==0)
-							reportRoomNotAvailableChange=false;
-					}
+							reportRoomNotAvailableChange);
 					
 					crt_constraint=readRoomNotAvailable(xmlReader, log);
 				}
@@ -6586,105 +6584,68 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 				}
 				else if(xmlReader.name()=="ConstraintRoomTypeNotAllowedSubjects" && !skipDeprecatedConstraints){
 				
-					int t=RulesReconcilableMessage::warning(parent, tr("FET warning"),
+					errors << ErrorCode(ErrorCode::WARNING,
 					 tr("File contains deprecated constraint room type not allowed subjects - will be ignored\n"),
-					 tr("Skip rest"), tr("See next"), QString(),
-					 1, 0);
-					 
-					if(t==0)
-						skipDeprecatedConstraints=true;
-					crt_constraint=NULL;
+										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
 				}
 				else if(xmlReader.name()=="ConstraintSubjectRequiresEquipments" && !skipDeprecatedConstraints){
 				
-					int t=RulesReconcilableMessage::warning(parent, tr("FET warning"),
+					errors << ErrorCode(ErrorCode::WARNING,
 					 tr("File contains deprecated constraint subject requires equipments - will be ignored\n"),
-					 tr("Skip rest"), tr("See next"), QString(),
-					 1, 0);
-					 
-					if(t==0)
-						skipDeprecatedConstraints=true;
-				
-					crt_constraint=NULL;
+										skipDeprecatedConstraintsId);
+
 					xmlReader.skipCurrentElement();
 				}
 				else if(xmlReader.name()=="ConstraintSubjectSubjectTagRequireEquipments" && !skipDeprecatedConstraints){
 				
-					int t=RulesReconcilableMessage::warning(parent, tr("FET warning"),
+					errors << ErrorCode(ErrorCode::WARNING,
 					 tr("File contains deprecated constraint subject tag requires equipments - will be ignored\n"),
-					 tr("Skip rest"), tr("See next"), QString(),
-					 1, 0);
-					 
-					if(t==0)
-						skipDeprecatedConstraints=true;
-					crt_constraint=NULL;
+										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
 				}
 				else if(xmlReader.name()=="ConstraintTeacherRequiresRoom" && !skipDeprecatedConstraints){
 				
-					int t=RulesReconcilableMessage::warning(parent, tr("FET warning"),
+					errors << ErrorCode(ErrorCode::WARNING,
 					 tr("File contains deprecated constraint teacher requires room - will be ignored\n"),
-					 tr("Skip rest"), tr("See next"), QString(),
-					 1, 0);
-					 
-					if(t==0)
-						skipDeprecatedConstraints=true;
-					crt_constraint=NULL;
+										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
 				}
 				else if(xmlReader.name()=="ConstraintTeacherSubjectRequireRoom" && !skipDeprecatedConstraints){
 				
-					int t=RulesReconcilableMessage::warning(parent, tr("FET warning"),
+					errors << ErrorCode(ErrorCode::WARNING,
 					 tr("File contains deprecated constraint teacher subject require room - will be ignored\n"),
-					 tr("Skip rest"), tr("See next"), QString(),
-					 1, 0);
-					 
-					if(t==0)
-						skipDeprecatedConstraints=true;
-					crt_constraint=NULL;
+										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
 				}
 				else if(xmlReader.name()=="ConstraintMinimizeNumberOfRoomsForStudents" && !skipDeprecatedConstraints){
 				
-					int t=RulesReconcilableMessage::warning(parent, tr("FET warning"),
+					errors << ErrorCode(ErrorCode::WARNING,
 					 tr("File contains deprecated constraint minimize number of rooms for students - will be ignored\n"),
-					 tr("Skip rest"), tr("See next"), QString(),
-					 1, 0);
-					 
-					if(t==0)
-						skipDeprecatedConstraints=true;
-					crt_constraint=NULL;
+										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
 				}
 				else if(xmlReader.name()=="ConstraintMinimizeNumberOfRoomsForTeachers" && !skipDeprecatedConstraints){
 				
-					int t=RulesReconcilableMessage::warning(parent, tr("FET warning"),
+					errors << ErrorCode(ErrorCode::WARNING,
 					 tr("File contains deprecated constraint minimize number of rooms for teachers - will be ignored\n"),
-					 tr("Skip rest"), tr("See next"), QString(),
-					 1, 0);
-					 
-					if(t==0)
-						skipDeprecatedConstraints=true;
-					crt_constraint=NULL;
+										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
 				}
 				else if(xmlReader.name()=="ConstraintActivityPreferredRoom"){
-					crt_constraint=readActivityPreferredRoom(parent, xmlReader, log, reportUnspecifiedPermanentlyLockedSpace);
+					ErrorCode erc;
+					crt_constraint=readActivityPreferredRoom(erc, xmlReader, log, reportUnspecifiedPermanentlyLockedSpaceId);
+					if (!erc)
+						errors << erc;
 				}
 				else if(xmlReader.name()=="ConstraintActivityPreferredRooms"){
 					crt_constraint=readActivityPreferredRooms(xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintActivitiesSameRoom" && !skipDeprecatedConstraints){
 				
-					int t=RulesReconcilableMessage::warning(parent, tr("FET warning"),
+					errors << ErrorCode(ErrorCode::WARNING,
 					 tr("File contains deprecated constraint activities same room - will be ignored\n"),
-					 tr("Skip rest"), tr("See next"), QString(),
-					 1, 0);
-					 
-					if(t==0)
-						skipDeprecatedConstraints=true;
-					crt_constraint=NULL;
+										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
 				}
 				else if(xmlReader.name()=="ConstraintSubjectPreferredRoom"){
@@ -6726,51 +6687,31 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 				}
 				else if(xmlReader.name()=="ConstraintMaxBuildingChangesPerDayForTeachers" && !skipDeprecatedConstraints){
 				
-					int t=RulesReconcilableMessage::warning(parent, tr("FET warning"),
+					errors << ErrorCode(ErrorCode::WARNING,
 					 tr("File contains deprecated constraint max building changes per day for teachers - will be ignored\n"),
-					 tr("Skip rest"), tr("See next"), QString(),
-					 1, 0);
-					 
-					if(t==0)
-						skipDeprecatedConstraints=true;
-					crt_constraint=NULL;
+										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
 				}
 				else if(xmlReader.name()=="ConstraintMaxBuildingChangesPerDayForStudents" && !skipDeprecatedConstraints){
 				
-					int t=RulesReconcilableMessage::warning(parent, tr("FET warning"),
+					errors << ErrorCode(ErrorCode::WARNING,
 					 tr("File contains deprecated constraint max building changes per day for students - will be ignored\n"),
-					 tr("Skip rest"), tr("See next"), QString(),
-					 1, 0);
-					 
-					if(t==0)
-						skipDeprecatedConstraints=true;
-					crt_constraint=NULL;
+										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
 				}
 				else if(xmlReader.name()=="ConstraintMaxRoomChangesPerDayForTeachers" && !skipDeprecatedConstraints){
 				
-					int t=RulesReconcilableMessage::warning(parent, tr("FET warning"),
+					errors << ErrorCode(ErrorCode::WARNING,
 					 tr("File contains deprecated constraint max room changes per day for teachers - will be ignored\n"),
-					 tr("Skip rest"), tr("See next"), QString(),
-					 1, 0);
-					 
-					if(t==0)
-						skipDeprecatedConstraints=true;
-					crt_constraint=NULL;
+										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
 				}
 				else if(xmlReader.name()=="ConstraintMaxRoomChangesPerDayForStudents" && !skipDeprecatedConstraints){
 				
-					int t=RulesReconcilableMessage::warning(parent, tr("FET warning"),
+					errors << ErrorCode(ErrorCode::WARNING,
 					 tr("File contains deprecated constraint max room changes per day for students - will be ignored\n"),
-					 tr("Skip rest"), tr("See next"), QString(),
-					 1, 0);
-					 
-					if(t==0)
-						skipDeprecatedConstraints=true;
+										skipDeprecatedConstraintsId);
 
-					crt_constraint=NULL;
 					xmlReader.skipCurrentElement();
 				}
 				else if(xmlReader.name()=="ConstraintTeacherMaxBuildingChangesPerDay"){
@@ -6831,19 +6772,17 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 					
 					bool tmp=this->addSpaceConstraint(crt_constraint);
 					if(!tmp){
-						if(seeNextWarnNotAddedSpaceConstraint){
-							int t=RulesReconcilableMessage::warning(parent, tr("FET information"),
+						errors << ErrorCode(ErrorCode::WARNING,
 							 tr("Constraint\n%1\nnot added - must be a duplicate").
-							 arg(crt_constraint->getDetailedDescription(*this)), tr("Skip rest"), tr("See next"), QString(""), 1, 0);
-							if(t==0)
-								seeNextWarnNotAddedSpaceConstraint=false;
-						}
+							 arg(crt_constraint->getDetailedDescription(*this)), seeNextWarnNotAddedSpaceConstraintId);
 						delete crt_constraint;
 					}
 					else
 						nc++;
 				}
 			}
+
+			renderErrorList(parent, errors);
 			log.minimum("Added "+CustomFETString::number(nc)+" space constraints\n");
 		}
 		else if(xmlReader.name()=="Timetable_Generation_Options_List"){
@@ -15009,8 +14948,8 @@ SpaceConstraint* Rules::readRoomNotAvailableTimes(QXmlStreamReader& xmlReader, X
 	return cn;
 }
 
-SpaceConstraint* Rules::readActivityPreferredRoom(QWidget* parent, QXmlStreamReader& xmlReader, XmlLog &log,
-bool& reportUnspecifiedPermanentlyLockedSpace){
+SpaceConstraint* Rules::readActivityPreferredRoom(ErrorCode& erc, QXmlStreamReader& xmlReader, XmlLog &log,
+												  int reportUnspecifiedPermanentlyLockedSpaceId){
 	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintActivityPreferredRoom");
 	ConstraintActivityPreferredRoom* cn=new ConstraintActivityPreferredRoom();
 	cn->permanentlyLocked=false; //default
@@ -15028,7 +14967,7 @@ bool& reportUnspecifiedPermanentlyLockedSpace){
 			}
 			else{
 				if(!(text=="no" || text=="false" || text=="0")){
-					RulesReconcilableMessage::warning(parent, tr("FET warning"),
+					erc = ErrorCode(ErrorCode::WARNING,
 						tr("Found constraint activity preferred room with tag permanently locked"
 						" which is not 'true', 'false', 'yes', 'no', '1' or '0'."
 						" The tag will be considered false",
@@ -15058,8 +14997,8 @@ bool& reportUnspecifiedPermanentlyLockedSpace){
 			log.numberOfUnrecognizedFields++;
 		}
 	}
-	if(!foundLocked && reportUnspecifiedPermanentlyLockedSpace){
-		int t=RulesReconcilableMessage::information(parent, tr("FET information"),
+	if(!foundLocked && reportUnspecifiedPermanentlyLockedSpaceId){
+		erc = ErrorCode(ErrorCode::INFO,
 			tr("Found constraint activity preferred room, with unspecified tag"
 			" 'permanently locked' - this tag will be set to 'false' by default. You can always modify it"
 			" by editing the constraint in the 'Data' menu")+"\n\n"
@@ -15074,9 +15013,7 @@ bool& reportUnspecifiedPermanentlyLockedSpace){
 			" and locking/unlocking some activities, you will not unlock the constraints which"
 			" need to be locked all the time."
 			),
-			tr("Skip rest"), tr("See next"), QString(), 1, 0 );
-		if(t==0)
-			reportUnspecifiedPermanentlyLockedSpace=false;
+			reportUnspecifiedPermanentlyLockedSpaceId);
 	}
 
 	return cn;
@@ -15964,8 +15901,6 @@ void Rules::renderErrorCode(QWidget* parent, const ErrorCode& erc) const
 {
 	switch (erc.severity) {
 	case ErrorCode::FATAL:
-		IrreconcilableCriticalMessage::critical(parent, erc.getSeverityTitle(), erc.message);
-		break;
 	case ErrorCode::ERROR:
 		IrreconcilableCriticalMessage::critical(parent, erc.getSeverityTitle(), erc.message);
 		break;
@@ -15984,4 +15919,46 @@ void Rules::renderErrorCode(QWidget* parent, const ErrorCode& erc) const
 	}
 }
 
+bool Rules::renderSkippableErrorCode(QWidget* parent, const ErrorCode& erc) const
+{
+	int skip = 1;
+	switch (erc.severity) {
+	case ErrorCode::FATAL:
+	case ErrorCode::ERROR:
+		IrreconcilableCriticalMessage::critical(parent, erc.getSeverityTitle(), erc.message);
+		return false;
+	case ErrorCode::WARNING:
+		skip = RulesReconcilableMessage::warning(parent, erc.getSeverityTitle(), erc.message,
+										  tr("Skip rest"), tr("See next"), QString(), 1, 0 );
+		break;
+	case ErrorCode::INFO:
+		skip = RulesReconcilableMessage::information(parent, erc.getSeverityTitle(), erc.message,
+											  tr("Skip rest"), tr("See next"), QString(), 1, 0 );
+		break;
+	case ErrorCode::VERBOSE:
+		if (VERBOSE)
+			skip = RulesReconcilableMessage::information(parent, erc.getSeverityTitle(), erc.message,
+												  tr("Skip rest"), tr("See next"), QString(), 1, 0 );
+		break;
+	default:
+		break;
+	}
+
+	return skip == 0;
+}
+
+void Rules::renderErrorList(QWidget* parent, const ErrorList& errors) const
+{
+	QSet<int> ignoredGroupIds;
+	foreach (const ErrorCode& erc, errors) {
+		if (!erc.groupId) {
+			renderErrorCode(parent, erc);
+		}
+		else if (!ignoredGroupIds.contains(erc.groupId)) {
+			bool shallIgnore = renderSkippableErrorCode(parent, erc);
+			if(shallIgnore)
+				ignoredGroupIds << erc.groupId;
+		}
+	}
+}
 ////////////////

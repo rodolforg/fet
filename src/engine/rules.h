@@ -868,8 +868,8 @@ private:
 	SpaceConstraint* readBasicCompulsorySpace(QXmlStreamReader& xml, XmlLog &log);
 	SpaceConstraint* readRoomNotAvailable(QXmlStreamReader& xml, XmlLog &log);
 	SpaceConstraint* readRoomNotAvailableTimes(QXmlStreamReader& xml, XmlLog &log);
-	SpaceConstraint* readActivityPreferredRoom(QWidget* parent, QXmlStreamReader& xml, XmlLog &log,
-		bool& reportUnspecifiedPermanentlyLockedSpace);
+	SpaceConstraint* readActivityPreferredRoom(ErrorCode& erc, QXmlStreamReader& xml, XmlLog &log,
+		int reportUnspecifiedPermanentlyLockedSpaceId);
 	SpaceConstraint* readActivityPreferredRooms(QXmlStreamReader& xml, XmlLog &log);
 	SpaceConstraint* readSubjectPreferredRoom(QXmlStreamReader& xml, XmlLog &log);
 	SpaceConstraint* readSubjectPreferredRooms(QXmlStreamReader& xml, XmlLog &log);
@@ -906,6 +906,15 @@ private:
 
 	void renderErrorCode(QWidget* parent, const ErrorCode& erc) const;
 
+	/**
+	 * @brief renderSkippableErrorCode
+	 * @param parent
+	 * @param erc error
+	 * @return true if user wants to ignore next error from same group Id
+	 */
+	bool renderSkippableErrorCode(QWidget* parent, const ErrorCode& erc) const;
+
+	void renderErrorList(QWidget* parent, const ErrorList& errors) const;
 signals:
 	/// Any object property changed
 	void contentsChanged();
