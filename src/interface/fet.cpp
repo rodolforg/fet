@@ -1214,15 +1214,16 @@ int main(int argc, char **argv)
 		if(TIMETABLE_HTML_LEVEL>7 || TIMETABLE_HTML_LEVEL<0)
 			TIMETABLE_HTML_LEVEL=2;
 	
-		bool t=gt.rules.read(NULL, filename, initialDir);
-		if(!t){
+		ErrorList errors=gt.rules.read(filename, initialDir);
+		renderErrorList(errors);
+		if(errors.hasFatal()){
 			cerr<<"fet: cannot read input file (not existing or in use) - aborting"<<endl;
 			out<<"Cannot read input file (not existing or in use) - aborting"<<endl;
 			logFile.close();
 			return 1;
 		}
 		
-		t=gt.rules.computeInternalStructure(NULL);
+		bool t=gt.rules.computeInternalStructure(NULL);
 		if(!t){
 			cerr<<"Cannot compute internal structure - aborting"<<endl;
 			out<<"Cannot compute internal structure - aborting"<<endl;

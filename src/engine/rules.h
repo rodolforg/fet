@@ -697,7 +697,7 @@ public:
 	Reads the rules from the xml input file "filename".
 	Returns true on success, false on failure (inexistent file or wrong format)
 	*/
-	bool read(QWidget* parent, const QString& fileName, const QString& outputDirPath="");
+	ErrorList read(const QString& fileName, const QString& outputDirPath="");
 
 	/**
 	Write the rules to the xml input file "inputfile".
@@ -904,17 +904,6 @@ private:
 
 	int readHourTag(QXmlStreamReader& xml, XmlLog &log, bool acceptEndOfDay) const;
 
-	void renderErrorCode(QWidget* parent, const ErrorCode& erc) const;
-
-	/**
-	 * @brief renderSkippableErrorCode
-	 * @param parent
-	 * @param erc error
-	 * @return true if user wants to ignore next error from same group Id
-	 */
-	bool renderSkippableErrorCode(QWidget* parent, const ErrorCode& erc) const;
-
-	void renderErrorList(QWidget* parent, const ErrorList& errors) const;
 signals:
 	/// Any object property changed
 	void contentsChanged();

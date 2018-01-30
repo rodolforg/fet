@@ -73,3 +73,12 @@ bool ErrorList::hasError() const
 	}
 	return false;
 }
+
+bool ErrorList::hasFatal() const
+{
+	foreach (const ErrorCode& erc, *this) {
+		if (erc.severity == ErrorCode::FATAL)
+			return true;
+	}
+	return false;
+}

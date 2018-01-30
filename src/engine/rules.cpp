@@ -4510,13 +4510,14 @@ void Rules::updateConstraintsAfterRemoval()
 #endif
 }
 
-bool Rules::read(QWidget* parent, const QString& fileName, const QString& outputDirPath)
+ErrorList Rules::read(const QString& fileName, const QString& outputDirPath)
 {
+	ErrorList errors;
+
 	QFile file(fileName);
 	if(!file.open(QIODevice::ReadOnly)){
-		//cout<<"Could not open file - not existing or in use\n";
-		RulesIrreconcilableMessage::warning(parent, tr("FET warning"), tr("Could not open file - not existing or in use"));
-		return false;
+		errors << ErrorCode(ErrorCode::FATAL, tr("Could not open file - not existing or in use"));
+		return errors;
 	}
 	
 	QXmlStreamReader xmlReader(&file);
@@ -4532,8 +4533,8 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 
 	bool t=logDir.mkpath(logPathString);
 	if(!t){
-		RulesIrreconcilableMessage::warning(parent, tr("FET warning"), tr("Cannot create or use directory %1 - cannot continue").arg(QDir::toNativeSeparators(logPathString)));
-		return false;
+		errors << ErrorCode(ErrorCode::FATAL, tr("Cannot create or use directory %1 - cannot continue").arg(QDir::toNativeSeparators(logPathString)));
+		return errors;
 	}
 	
 	XmlLog log;
@@ -4557,7 +4558,7 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 			" as html files").arg(QDir::toNativeSeparators(logFilePath))+
 			"\n\n"+tr("A solution is to remove that file (if it exists already) or set its permissions to allow writing")+
 			"\n\n"+tr("Please report possible bug");
-		IrreconcilableCriticalMessage::critical(parent, tr("FET critical"), s);
+		errors << ErrorCode(ErrorCode::ERROR, s);
 		canWriteLogFile=false;
 	}
 	QTextStream logStream;
@@ -4607,7 +4608,7 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 			int tfile=fileVerReCap.indexIn(file_version);
 			filev[0]=filev[1]=filev[2]=-1;
 			if(tfile!=0){
-				RulesReconcilableMessage::warning(parent, tr("FET warning"), tr("File contains a version numbering scheme which"
+				errors << ErrorCode(ErrorCode::WARNING, tr("File contains a version numbering scheme which"
 				" is not matched by v.v.va (3 numbers separated by points, followed by any string a, which may be empty). File will be opened, but you are advised"
 				" to check the version of the .fet file (in the beginning of the file). If this is a FET bug, please report it")+"\n\n"+
 				tr("If you are opening a file older than FET format version 5, it will be converted to latest FET data format"));
@@ -4634,7 +4635,7 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 			int tfet=fetVerReCap.indexIn(FET_VERSION);
 			fetv[0]=fetv[1]=fetv[2]=-1;
 			if(tfet!=0){
-				RulesReconcilableMessage::warning(parent, tr("FET warning"), tr("FET version does not respect the format v.v.va"
+				errors << ErrorCode(ErrorCode::WARNING, tr("FET version does not respect the format v.v.va"
 				" (3 numbers separated by points, followed by any string a, which may be empty). This is probably a bug in FET - please report it"));
 				if(VERBOSE){
 					cout<<"FET version not matched by regexp"<<endl;
@@ -4665,21 +4666,21 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 				version5AndAbove=true;
 		}
 	} else {
-		IrreconcilableCriticalMessage::critical(parent, tr("FET critical"), tr("The opened file is not a valid FET file"));
-		return false;
+		errors << ErrorCode(ErrorCode::FATAL, tr("The opened file is not a valid FET file"));
+		return errors;
 	}
 	if(!okAbove3_12_17){
 		if(VERBOSE){
 			cout<<"Invalid fet 3.12.17 or above"<<endl;
 		}
 		logFile.close();
-		RulesIrreconcilableMessage::warning(parent, tr("FET warning"), tr("File does not have a corresponding beginning tag - it should be %1 or %2. File is incorrect..."
+		errors << ErrorCode(ErrorCode::FATAL, tr("File does not have a corresponding beginning tag - it should be %1 or %2. File is incorrect..."
 			"it cannot be opened").arg("fet").arg("FET"));
-		return false;
+		return errors;
 	}
 	
 	if(!version5AndAbove){
-		RulesReconcilableMessage::warning(parent, tr("FET information"),
+		errors << ErrorCode(ErrorCode::INFO,
 		 tr("Opening older file - it will be converted to latest format, automatically "
 		 "assigning weight percentages to constraints and dropping parity for activities. "
 		 "You are advised to make a backup of your old file before saving in new format.\n\n"
@@ -4691,7 +4692,7 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 	}
 	
 	if(warning){
-		RulesReconcilableMessage::warning(parent, tr("FET information"), 
+		errors << ErrorCode(ErrorCode::WARNING,
 		 tr("Opening a file generated with a newer version than your current FET software ... file will be opened but it is recommended to update your FET software to the latest version")
 		 +"\n\n"+tr("Your FET version: %1, file version: %2").arg(FET_VERSION).arg(file_version));
 	}
@@ -4955,7 +4956,7 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 					}
 					bool tmp2=teachersRead.contains(teacher->name);
 					if(tmp2){
-						RulesReconcilableMessage::warning(parent, tr("FET warning"),
+						errors << ErrorCode(ErrorCode::WARNING,
 						 tr("Duplicate teacher %1 found - ignoring").arg(teacher->name));
 						log.verbose("   Teacher not added - duplicate\n");
 						
@@ -5009,7 +5010,7 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 					}
 					bool tmp2=subjectsRead.contains(subject->name);
 					if(tmp2){
-						RulesReconcilableMessage::warning(parent, tr("FET warning"),
+						errors << ErrorCode(ErrorCode::WARNING,
 						 tr("Duplicate subject %1 found - ignoring").arg(subject->name));
 						log.verbose("   Subject not added - duplicate\n");
 						
@@ -5037,7 +5038,7 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 		else if(xmlReader.name()=="Subject_Tags_List"){
 			QSet<QString> activityTagsRead;
 		
-			RulesReconcilableMessage::information(parent, tr("FET information"), tr("Your file contains subject tags list"
+			errors << ErrorCode(ErrorCode::INFO, tr("Your file contains subject tags list"
 			  ", which is named in versions>=5.5.0 activity tags list"));
 		
 			int tmp=0;
@@ -5066,7 +5067,7 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 					}
 					bool tmp2=activityTagsRead.contains(activityTag->name);
 					if(tmp2){
-						RulesReconcilableMessage::warning(parent, tr("FET warning"),
+						errors << ErrorCode(ErrorCode::WARNING,
 						 tr("Duplicate activity tag %1 found - ignoring").arg(activityTag->name));
 						log.verbose("   Activity tag not added - duplicate\n");
 						
@@ -5128,7 +5129,7 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 					}
 					bool tmp2=activityTagsRead.contains(activityTag->name);
 					if(tmp2){
-						RulesReconcilableMessage::warning(parent, tr("FET warning"),
+						errors << ErrorCode(ErrorCode::WARNING,
 						 tr("Duplicate activity tag %1 found - ignoring").arg(activityTag->name));
 						log.verbose("   Activity tag not added - duplicate\n");
 						
@@ -5647,7 +5648,7 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 							}
 							else{
 								if(!(text=="no" || text=="false" || text=="0")){
-									RulesReconcilableMessage::warning(parent, tr("FET warning"),
+									errors << ErrorCode(ErrorCode::WARNING,
 									 tr("Found activity active tag which is not 'true', 'false', 'yes', 'no', '1' or '0'."
 									 " The activity will be considered not active",
 									 "Instructions for translators: please leave the 'true', 'false', 'yes' and 'no' fields untranslated, as they are in English"));
@@ -5789,26 +5790,22 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 								assert(studentsSetsCount.contains(_s));
 								_ns+=studentsSetsCount.value(_s);
 							}
-							ErrorList errors;
 							errors << this->addSimpleActivityFast(id, gid, tl, sjn, atl, stl,
 								d, td, ac, cnos, nos, _ns);
 							foreach (const ErrorCode& erc, errors) {
 								if (erc.isError()) {
 									xmlReader.raiseError(erc.message);
-								} else {
-									renderErrorCode(parent, erc);
+									break;
 								}
 							}
 						}
 						else{
-							ErrorList errors;
 							errors << this->addSimpleActivityFast(id, gid, tl, sjn, atl, stl,
 								d, td, ac, cnos, nos, nos);
 							foreach (const ErrorCode& erc, errors) {
 								if (erc.isError()) {
 									xmlReader.raiseError(erc.message);
-								} else {
-									renderErrorCode(parent, erc);
+									break;
 								}
 							}
 						}
@@ -5830,7 +5827,7 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 			log.minimum("Added "+CustomFETString::number(na)+" activities\n");
 		}
 		else if(xmlReader.name()=="Equipments_List"){
-			RulesReconcilableMessage::warning(parent, tr("FET warning"),
+			errors << ErrorCode(ErrorCode::WARNING,
 			 tr("File contains deprecated equipments list - will be ignored"));
 			xmlReader.skipCurrentElement();
 			//NOT! log.numberOfUnrecognizedFields++; because this entry was once allowed
@@ -5867,7 +5864,7 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 
 					bool tmp2=buildingsRead.contains(bu->name);
 					if(tmp2){
-						RulesReconcilableMessage::warning(parent, tr("FET warning"),
+						errors << ErrorCode(ErrorCode::WARNING,
 						 tr("Duplicate building %1 found - ignoring").arg(bu->name));
 						log.verbose("   Building not added - duplicate\n");
 						
@@ -5944,7 +5941,7 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 					}
 					bool tmp2=roomsRead.contains(rm->name);
 					if(tmp2){
-						RulesReconcilableMessage::warning(parent, tr("FET warning"),
+						errors << ErrorCode(ErrorCode::WARNING,
 						 tr("Duplicate room %1 found - ignoring").arg(rm->name));
 						log.verbose("   Room not added - duplicate\n");
 						
@@ -5985,7 +5982,6 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 			
 			int reportUnspecifiedDayOrHourPreferredStartingTimeId = ErrorCode::nextGroupId();
 			
-			ErrorList errors;
 			int seeNextWarnNotAddedTimeConstraintId = ErrorCode::nextGroupId();
 			
 			int nc=0;
@@ -6421,11 +6417,9 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 						nc++;
 				}
 			}
-			renderErrorList(parent, errors);
 			log.minimum("Added "+CustomFETString::number(nc)+" time constraints\n");
 		}
 		else if(xmlReader.name()=="Space_Constraints_List"){
-			ErrorList errors;
 			int reportRoomNotAvailableChange = ErrorCode::nextGroupId();
 
 			int reportUnspecifiedPermanentlyLockedSpaceId = ErrorCode::nextGroupId();
@@ -6652,7 +6646,6 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 				}
 			}
 
-			renderErrorList(parent, errors);
 			log.minimum("Added "+CustomFETString::number(nc)+" space constraints\n");
 		}
 		else if(xmlReader.name()=="Timetable_Generation_Options_List"){
@@ -6718,14 +6711,14 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 	}
 	
 	if(xmlReader.error()){
-		RulesIrreconcilableMessage::warning(parent, tr("FET warning"),
+		errors << ErrorCode(ErrorCode::FATAL,
 		 tr("Could not read file - XML parse error at line %1, column %2:\n%3", "The error description is %3")
 		 .arg(xmlReader.lineNumber())
 		 .arg(xmlReader.columnNumber())
 		 .arg(xmlReader.errorString()));
 	
 		file.close();
-		return false;
+		return errors;
 	}
 	file.close();
 
@@ -6745,7 +6738,7 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 	}
 
 	if(logFile.error()>0){
-		IrreconcilableCriticalMessage::critical(parent, tr("FET critical"),
+		errors << ErrorCode(ErrorCode::ERROR,
 		 tr("Saving of logging gave error code %1, which means you cannot see the log of reading the file. Please check your disk free space")
 		 .arg(logFile.error()));
 	}
@@ -6755,7 +6748,7 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 
 	////////////////////////////////////////
 
-	return true;
+	return errors;
 }
 
 ErrorCode Rules::write(const QString& filename) const
@@ -13404,68 +13397,4 @@ int Rules::readHourTag(QXmlStreamReader &xmlReader, XmlLog &log, bool acceptEndO
 	return -1;
 }
 
-void Rules::renderErrorCode(QWidget* parent, const ErrorCode& erc) const
-{
-	switch (erc.severity) {
-	case ErrorCode::FATAL:
-	case ErrorCode::ERROR:
-		IrreconcilableCriticalMessage::critical(parent, erc.getSeverityTitle(), erc.message);
-		break;
-	case ErrorCode::WARNING:
-		RulesReconcilableMessage::warning(parent, erc.getSeverityTitle(), erc.message);
-		break;
-	case ErrorCode::INFO:
-		RulesReconcilableMessage::information(parent, erc.getSeverityTitle(), erc.message);
-		break;
-	case ErrorCode::VERBOSE:
-		if (VERBOSE)
-			RulesReconcilableMessage::information(parent, erc.getSeverityTitle(), erc.message);
-		break;
-	default:
-		break;
-	}
-}
-
-bool Rules::renderSkippableErrorCode(QWidget* parent, const ErrorCode& erc) const
-{
-	int skip = 1;
-	switch (erc.severity) {
-	case ErrorCode::FATAL:
-	case ErrorCode::ERROR:
-		IrreconcilableCriticalMessage::critical(parent, erc.getSeverityTitle(), erc.message);
-		return false;
-	case ErrorCode::WARNING:
-		skip = RulesReconcilableMessage::warning(parent, erc.getSeverityTitle(), erc.message,
-										  tr("Skip rest"), tr("See next"), QString(), 1, 0 );
-		break;
-	case ErrorCode::INFO:
-		skip = RulesReconcilableMessage::information(parent, erc.getSeverityTitle(), erc.message,
-											  tr("Skip rest"), tr("See next"), QString(), 1, 0 );
-		break;
-	case ErrorCode::VERBOSE:
-		if (VERBOSE)
-			skip = RulesReconcilableMessage::information(parent, erc.getSeverityTitle(), erc.message,
-												  tr("Skip rest"), tr("See next"), QString(), 1, 0 );
-		break;
-	default:
-		break;
-	}
-
-	return skip == 0;
-}
-
-void Rules::renderErrorList(QWidget* parent, const ErrorList& errors) const
-{
-	QSet<int> ignoredGroupIds;
-	foreach (const ErrorCode& erc, errors) {
-		if (!erc.groupId) {
-			renderErrorCode(parent, erc);
-		}
-		else if (!ignoredGroupIds.contains(erc.groupId)) {
-			bool shallIgnore = renderSkippableErrorCode(parent, erc);
-			if(shallIgnore)
-				ignoredGroupIds << erc.groupId;
-		}
-	}
-}
 ////////////////

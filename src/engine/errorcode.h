@@ -51,6 +51,7 @@ private:
 
 struct ErrorList : public QList<ErrorCode> {
 	bool hasError() const;
+	bool hasFatal() const;
 };
 
 #endif // ERRORCODE_H

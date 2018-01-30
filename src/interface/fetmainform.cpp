@@ -265,6 +265,8 @@ using namespace std;
 
 #include "statisticsexport.h"
 
+#include "errorrenderer.h"
+
 bool simulation_running; //true if the user started an allocation of the timetable
 
 QString conflictsString; //the string that contains a log of the broken constraints
@@ -1268,7 +1270,9 @@ void FetMainForm::openFile(const QString& fileName)
 		
 			//bool before=gt.rules.modified;
 
-			if(gt.rules.read(this, s, OUTPUT_DIR)){
+			ErrorList errors = gt.rules.read(s, OUTPUT_DIR);
+			ErrorRenderer::renderErrorList(this, errors);
+			if(!errors.hasFatal()){
 				CachedSchedule::invalidate();
 
 				INPUT_FILENAME_XML = s;
