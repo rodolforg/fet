@@ -5201,23 +5201,6 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 										
 									xmlReader.raiseError(str);
 									okStudents=false;
-
-									//int t=1;
-									
-									/*str=tr("Could not read file - XML parse error at line %1, column %2:\n%3", "The error description is %3")
-									 .arg(xmlReader.lineNumber()).arg(xmlReader.columnNumber()).arg(str);
-								
-									int t=RulesIrreconcilableMessage::warning(parent, tr("FET warning"), str,
-									 tr("Skip rest"), tr("See next"), QString(),
-									 1, 0 );
-									
-									if(okStudents){
-										//xmlReader.raiseError(tr("Students structure error(s)."));
-										okStudents=false;
-									}*/
-					
-									/*if(t==0)
-										skipDuplicatedStudentsSets=true;*/
 								}
 							}
 						
@@ -5280,26 +5263,10 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 												haveError=true;
 											}
 								
-											//int t=1;
 											if(haveError){
 												xmlReader.raiseError(str);
 												okStudents=false;
-
-												/*str=tr("Could not read file - XML parse error at line %1, column %2:\n%3", "The error description is %3")
-												 .arg(xmlReader.lineNumber()).arg(xmlReader.columnNumber()).arg(str);
-
-												t=RulesIrreconcilableMessage::warning(parent, tr("FET warning"), str,
-												 tr("Skip rest"), tr("See next"), QString(),
-												 1, 0 );
-												
-												if(okStudents){
-													//xmlReader.raiseError(tr("Students structure error(s)."));
-													okStudents=false;
-												}*/
 											}
-					
-											//if(t==0)
-											//	skipDuplicatedStudentsSets=true;
 										}
 									}
 									
@@ -5391,26 +5358,10 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 														}
 													}
 								
-													//int t=1;
 													if(haveError){
 														xmlReader.raiseError(str);
 														okStudents=false;
-
-														/*str=tr("Could not read file - XML parse error at line %1, column %2:\n%3", "The error description is %3")
-														 .arg(xmlReader.lineNumber()).arg(xmlReader.columnNumber()).arg(str);
-
-														t=RulesIrreconcilableMessage::warning(parent, tr("FET warning"), str,
-														 tr("Skip rest"), tr("See next"), QString(),
-														 1, 0 );
-														
-														if(okStudents){
-															//xmlReader.raiseError(tr("Students structure error(s)."));
-															okStudents=false;
-														}*/
 													}
-							
-													//if(t==0)
-													//	skipDuplicatedStudentsSets=true;
 												}
 											}
 											
@@ -5869,9 +5820,6 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 					}
 					else{
 						xmlReader.raiseError(tr("The activity with id=%1 contains incorrect data").arg(id));
-						/*log.verbose("   Activity with id ="+CustomFETString::number(id)+" contains invalid data - skipping\n");
-						RulesReconcilableMessage::warning(parent, tr("FET information"),
-						 tr("Activity with id=%1 contains invalid data - skipping").arg(id));*/
 					}
 				}
 				else{
@@ -6459,7 +6407,6 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 					log.numberOfUnrecognizedFields++;
 				}
 
-//corruptConstraintTime:
 				//here we skip an invalid constraint or add a valid one
 				if(crt_constraint!=NULL){
 					assert(crt_constraint!=NULL);
@@ -6689,7 +6636,6 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 					log.numberOfUnrecognizedFields++;
 				}
 
-//corruptConstraintSpace:
 				//here we skip an invalid constraint or add a valid one
 				if(crt_constraint!=NULL){
 					assert(crt_constraint!=NULL);
@@ -7326,14 +7272,7 @@ TimeConstraint* Rules::readTeacherNotAvailable(QXmlStreamReader& xmlReader, XmlL
 					break;
 			if(d>=this->nDaysPerWeek){
 				xmlReader.raiseError(tr("Day %1 is inexistent").arg(text));
-				/*RulesReconcilableMessage::information(parent, tr("FET information"),
-					tr("Constraint TeacherNotAvailable day corrupt for teacher %1, day %2 is inexistent ... ignoring constraint")
-					.arg(teacher)
-					.arg(text));*/
-				//cn=NULL;
-
 				return NULL;
-				//goto corruptConstraintTime;
 			}
 			assert(d<this->nDaysPerWeek);
 			log.verbose("    Crt. day="+this->daysOfTheWeek[d]+"\n");
@@ -7349,14 +7288,7 @@ TimeConstraint* Rules::readTeacherNotAvailable(QXmlStreamReader& xmlReader, XmlL
 			}
 			else if(h1>this->nHoursPerDay){
 				xmlReader.raiseError(tr("Hour %1 is inexistent").arg(text));
-				/*RulesReconcilableMessage::information(parent, tr("FET information"),
-					tr("Constraint TeacherNotAvailable start hour corrupt for teacher %1, hour %2 is inexistent ... ignoring constraint")
-					.arg(teacher)
-					.arg(text));*/
-				//cn=NULL;
-
 				return NULL;
-				//goto corruptConstraintTime;
 			}
 			assert(h1>=0 && h1 < this->nHoursPerDay);
 			log.verbose("    Start hour="+this->hoursOfTheDay[h1]+"\n");
@@ -7374,15 +7306,6 @@ TimeConstraint* Rules::readTeacherNotAvailable(QXmlStreamReader& xmlReader, XmlL
 				xmlReader.raiseError(tr("Hour %1 is inexistent").arg(text));
 				return NULL;
 			}
-			/*if(h2<=0 || h2>this->nHoursPerDay){
-				RulesReconcilableMessage::information(parent, tr("FET information"),
-					tr("Constraint TeacherNotAvailable end hour corrupt for teacher %1, hour %2 is inexistent ... ignoring constraint")
-					.arg(teacher)
-					.arg(text));
-
-				return NULL;
-				//goto corruptConstraintTime;
-			}*/
 			assert(h2>0 && h2 <= this->nHoursPerDay);
 			log.verbose("    End hour="+this->hoursOfTheDay[h2]+"\n");
 		}
@@ -7488,13 +7411,7 @@ TimeConstraint* Rules::readTeacherNotAvailableTimes(QXmlStreamReader& xmlReader,
 
 					if(d>=this->nDaysPerWeek){
 						xmlReader.raiseError(tr("Day %1 is inexistent").arg(text));
-						/*RulesReconcilableMessage::information(parent, tr("FET information"),
-							tr("Constraint TeacherNotAvailableTimes day corrupt for teacher %1, day %2 is inexistent ... ignoring constraint")
-							.arg(cn->teacher)
-							.arg(text));*/
 						delete cn;
-						cn=NULL;
-						//goto corruptConstraintTime;
 						return NULL;
 					}
 
@@ -7509,13 +7426,7 @@ TimeConstraint* Rules::readTeacherNotAvailableTimes(QXmlStreamReader& xmlReader,
 
 					if(h>=this->nHoursPerDay){
 						xmlReader.raiseError(tr("Hour %1 is inexistent").arg(text));
-						/*RulesReconcilableMessage::information(parent, tr("FET information"),
-							tr("Constraint TeacherNotAvailableTimes hour corrupt for teacher %1, hour %2 is inexistent ... ignoring constraint")
-							.arg(cn->teacher)
-							.arg(text));*/
 						delete cn;
-						cn=NULL;
-						//goto corruptConstraintTime;
 						return NULL;
 					}
 
@@ -7580,12 +7491,7 @@ TimeConstraint* Rules::readTeacherMaxDaysPerWeek(QXmlStreamReader& xmlReader, Xm
 			cn->maxDaysPerWeek=text.toInt();
 			if(cn->maxDaysPerWeek<=0 || cn->maxDaysPerWeek>this->nDaysPerWeek){
 				xmlReader.raiseError(tr("%1 is incorrect").arg("Max_Days_Per_Week"));
-				/*RulesReconcilableMessage::information(parent, tr("FET information"),
-					tr("Constraint TeacherMaxDaysPerWeek max days corrupt for teacher %1, max days %2 <= 0 or >nDaysPerWeek, ignoring constraint")
-					.arg(cn->teacherName)
-					.arg(text));*/
 				delete cn;
-				cn=NULL;
 				return NULL;
 			}
 			assert(cn->maxDaysPerWeek>0 && cn->maxDaysPerWeek <= this->nDaysPerWeek);
@@ -7616,11 +7522,7 @@ TimeConstraint* Rules::readTeachersMaxDaysPerWeek(QXmlStreamReader& xmlReader, X
 			cn->maxDaysPerWeek=text.toInt();
 			if(cn->maxDaysPerWeek<=0 || cn->maxDaysPerWeek>this->nDaysPerWeek){
 				xmlReader.raiseError(tr("%1 is incorrect").arg("Max_Days_Per_Week"));
-				/*RulesReconcilableMessage::information(parent, tr("FET information"),
-					tr("Constraint TeachersMaxDaysPerWeek max days corrupt, max days %1 <= 0 or >nDaysPerWeek, ignoring constraint")
-					.arg(text));*/
 				delete cn;
-				cn=NULL;
 				return NULL;
 			}
 			assert(cn->maxDaysPerWeek>0 && cn->maxDaysPerWeek <= this->nDaysPerWeek);
@@ -7653,12 +7555,7 @@ TimeConstraint* Rules::readTeacherMinDaysPerWeek(QXmlStreamReader& xmlReader, Xm
 			cn->minDaysPerWeek=text.toInt();
 			if(cn->minDaysPerWeek<=0 || cn->minDaysPerWeek>this->nDaysPerWeek){
 				xmlReader.raiseError(tr("%1 is incorrect").arg("Minimum_Days_Per_Week"));
-				/*RulesReconcilableMessage::information(parent, tr("FET information"),
-					tr("Constraint TeacherMinDaysPerWeek min days corrupt for teacher %1, min days %2 <= 0 or >nDaysPerWeek, ignoring constraint")
-					.arg(cn->teacherName)
-					.arg(text));*/
 				delete cn;
-				cn=NULL;
 				return NULL;
 			}
 			assert(cn->minDaysPerWeek>0 && cn->minDaysPerWeek <= this->nDaysPerWeek);
@@ -7686,11 +7583,7 @@ TimeConstraint* Rules::readTeachersMinDaysPerWeek(QXmlStreamReader& xmlReader, X
 			cn->minDaysPerWeek=text.toInt();
 			if(cn->minDaysPerWeek<=0 || cn->minDaysPerWeek>this->nDaysPerWeek){
 				xmlReader.raiseError(tr("%1 is incorrect").arg("Minimum_Days_Per_Week"));
-				/*RulesReconcilableMessage::information(parent, tr("FET information"),
-					tr("Constraint TeachersMinDaysPerWeek min days corrupt, min days %1 <= 0 or >nDaysPerWeek, ignoring constraint")
-					.arg(text));*/
 				delete cn;
-				cn=NULL;
 				return NULL;
 			}
 			assert(cn->minDaysPerWeek>0 && cn->minDaysPerWeek <= this->nDaysPerWeek);
@@ -7729,11 +7622,7 @@ TimeConstraint* Rules::readTeacherIntervalMaxDaysPerWeek(ErrorList& errors, QXml
 					tr("Constraint TeacherIntervalMaxDaysPerWeek max days corrupt for teacher %1, max days %2 >nDaysPerWeek, constraint added, please correct constraint")
 					.arg(cn->teacherName)
 					.arg(text));
-				/*delete cn;
-				cn=NULL;
-				goto corruptConstraintTime;*/
 			}
-			//assert(cn->maxDaysPerWeek>0 && cn->maxDaysPerWeek <= this->nDaysPerWeek);
 			log.verbose("    Max. days per week="+CustomFETString::number(cn->maxDaysPerWeek)+"\n");
 		}
 		else if(xmlReader.name()=="Interval_Start_Hour"){
@@ -7743,13 +7632,7 @@ TimeConstraint* Rules::readTeacherIntervalMaxDaysPerWeek(ErrorList& errors, QXml
 					break;
 			if(h1>=this->nHoursPerDay){
 				xmlReader.raiseError(tr("Hour %1 is inexistent").arg(text));
-				/*RulesReconcilableMessage::information(parent, tr("FET information"),
-					tr("Constraint Teacher interval max days per week start hour corrupt for teacher %1, hour %2 is inexistent ... ignoring constraint")
-					.arg(cn->teacherName)
-					.arg(text));*/
 				delete cn;
-				//cn=NULL;
-				//goto corruptConstraintTime;
 				return NULL;
 			}
 			assert(h1>=0 && h1 < this->nHoursPerDay);
@@ -7768,13 +7651,7 @@ TimeConstraint* Rules::readTeacherIntervalMaxDaysPerWeek(ErrorList& errors, QXml
 						break;
 				if(h2>=this->nHoursPerDay){
 					xmlReader.raiseError(tr("Hour %1 is inexistent (it is also not void, to specify end of the day)").arg(text));
-					/*RulesReconcilableMessage::information(parent, tr("FET information"),
-						tr("Constraint Teacher interval max days per week end hour corrupt for teacher %1, hour %2 is inexistent (it is also not void, to specify end of the day) ... ignoring constraint")
-						.arg(cn->teacherName)
-						.arg(text));*/
 					delete cn;
-					//cn=NULL;
-					//goto corruptConstraintTime;
 					return NULL;
 				}
 				assert(h2>=0 && h2 < this->nHoursPerDay);
@@ -7815,11 +7692,7 @@ TimeConstraint* Rules::readTeachersIntervalMaxDaysPerWeek(ErrorList& errors, QXm
 			if(cn->maxDaysPerWeek>this->nDaysPerWeek){
 				errors << ErrorCode(ErrorCode::WARNING,
 					tr("Constraint TeachersIntervalMaxDaysPerWeek max days corrupt, max days %1 >nDaysPerWeek, constraint added, please correct constraint")
-					//.arg(cn->teacherName)
 					.arg(text));
-				/*delete cn;
-				cn=NULL;
-				goto corruptConstraintTime;*/
 			}
 			//assert(cn->maxDaysPerWeek>0 && cn->maxDaysPerWeek <= this->nDaysPerWeek);
 			log.verbose("    Max. days per week="+CustomFETString::number(cn->maxDaysPerWeek)+"\n");
@@ -7831,13 +7704,7 @@ TimeConstraint* Rules::readTeachersIntervalMaxDaysPerWeek(ErrorList& errors, QXm
 					break;
 			if(h1>=this->nHoursPerDay){
 				xmlReader.raiseError(tr("Hour %1 is inexistent").arg(text));
-				/*RulesReconcilableMessage::information(parent, tr("FET information"),
-					tr("Constraint Teachers interval max days per week start hour corrupt because hour %1 is inexistent ... ignoring constraint")
-					//.arg(cn->teacherName)
-					.arg(text));*/
 				delete cn;
-				//cn=NULL;
-				//goto corruptConstraintTime;
 				return NULL;
 			}
 			assert(h1>=0 && h1 < this->nHoursPerDay);
@@ -7856,13 +7723,7 @@ TimeConstraint* Rules::readTeachersIntervalMaxDaysPerWeek(ErrorList& errors, QXm
 						break;
 				if(h2>=this->nHoursPerDay){
 					xmlReader.raiseError(tr("Hour %1 is inexistent (it is also not void, to specify end of the day)").arg(text));
-					/*RulesReconcilableMessage::information(parent, tr("FET information"),
-						tr("Constraint Teachers interval max days per week end hour corrupt because hour %1 is inexistent (it is also not void, to specify end of the day) ... ignoring constraint")
-						//.arg(cn->teacherName)
-						.arg(text));*/
 					delete cn;
-					//cn=NULL;
-					//goto corruptConstraintTime;
 					return NULL;
 				}
 				assert(h2>=0 && h2 < this->nHoursPerDay);
@@ -7966,11 +7827,7 @@ TimeConstraint* Rules::readStudentsSetIntervalMaxDaysPerWeek(ErrorList& errors, 
 					tr("Constraint StudentsSetIntervalMaxDaysPerWeek max days corrupt for students set %1, max days %2 >nDaysPerWeek, constraint added, please correct constraint")
 					.arg(cn->students)
 					.arg(text));
-				/*delete cn;
-				cn=NULL;
-				goto corruptConstraintTime;*/
 			}
-			//assert(cn->maxDaysPerWeek>0 && cn->maxDaysPerWeek <= this->nDaysPerWeek);
 			log.verbose("    Max. days per week="+CustomFETString::number(cn->maxDaysPerWeek)+"\n");
 		}
 		else if(xmlReader.name()=="Interval_Start_Hour"){
@@ -7980,13 +7837,7 @@ TimeConstraint* Rules::readStudentsSetIntervalMaxDaysPerWeek(ErrorList& errors, 
 					break;
 			if(h1>=this->nHoursPerDay){
 				xmlReader.raiseError(tr("Hour %1 is inexistent").arg(text));
-				/*RulesReconcilableMessage::information(parent, tr("FET information"),
-					tr("Constraint Students set interval max days per week start hour corrupt for students %1, hour %2 is inexistent ... ignoring constraint")
-					.arg(cn->students)
-					.arg(text));*/
 				delete cn;
-				//cn=NULL;
-				//goto corruptConstraintTime;
 				return NULL;
 			}
 			assert(h1>=0 && h1 < this->nHoursPerDay);
@@ -8005,13 +7856,7 @@ TimeConstraint* Rules::readStudentsSetIntervalMaxDaysPerWeek(ErrorList& errors, 
 						break;
 				if(h2>=this->nHoursPerDay){
 					xmlReader.raiseError(tr("Hour %1 is inexistent (it is also not void, to specify end of the day)").arg(text));
-					/*RulesReconcilableMessage::information(parent, tr("FET information"),
-						tr("Constraint Students set interval max days per week end hour corrupt for students %1, hour %2 is inexistent (it is also not void, to specify end of the day) ... ignoring constraint")
-						.arg(cn->students)
-						.arg(text));*/
 					delete cn;
-					//cn=NULL;
-					//goto corruptConstraintTime;
 					return NULL;
 				}
 				assert(h2>=0 && h2 < this->nHoursPerDay);
@@ -8049,11 +7894,7 @@ TimeConstraint* Rules::readStudentsIntervalMaxDaysPerWeek(ErrorList& errors, QXm
 				errors << ErrorCode(ErrorCode::WARNING,
 					tr("Constraint StudentsIntervalMaxDaysPerWeek max days corrupt: max days %1 >nDaysPerWeek, constraint added, please correct constraint")
 					.arg(text));
-				/*delete cn;
-				cn=NULL;
-				goto corruptConstraintTime;*/
 			}
-			//assert(cn->maxDaysPerWeek>0 && cn->maxDaysPerWeek <= this->nDaysPerWeek);
 			log.verbose("    Max. days per week="+CustomFETString::number(cn->maxDaysPerWeek)+"\n");
 		}
 		else if(xmlReader.name()=="Interval_Start_Hour"){
@@ -8063,13 +7904,7 @@ TimeConstraint* Rules::readStudentsIntervalMaxDaysPerWeek(ErrorList& errors, QXm
 					break;
 			if(h1>=this->nHoursPerDay){
 				xmlReader.raiseError(tr("Hour %1 is inexistent").arg(text));
-				/*RulesReconcilableMessage::information(parent, tr("FET information"),
-					tr("Constraint Students interval max days per week start hour corrupt: hour %1 is inexistent ... ignoring constraint")
-					//.arg(cn->students)
-					.arg(text));*/
 				delete cn;
-				//cn=NULL;
-				//goto corruptConstraintTime;
 				return NULL;
 			}
 			assert(h1>=0 && h1 < this->nHoursPerDay);
@@ -8088,13 +7923,7 @@ TimeConstraint* Rules::readStudentsIntervalMaxDaysPerWeek(ErrorList& errors, QXm
 						break;
 				if(h2>=this->nHoursPerDay){
 					xmlReader.raiseError(tr("Hour %1 is inexistent (it is also not void, to specify end of the day)").arg(text));
-					/*RulesReconcilableMessage::information(parent, tr("FET information"),
-						tr("Constraint Students interval max days per week end hour corrupt: hour %1 is inexistent (it is also not void, to specify end of the day) ... ignoring constraint")
-						//.arg(cn->students)
-						.arg(text));*/
 					delete cn;
-					//cn=NULL;
-					//goto corruptConstraintTime;
 					return NULL;
 				}
 				assert(h2>=0 && h2 < this->nHoursPerDay);
@@ -8153,12 +7982,6 @@ TimeConstraint* Rules::readStudentsSetNotAvailable(QXmlStreamReader& xmlReader, 
 					break;
 			if(d>=this->nDaysPerWeek){
 				xmlReader.raiseError(tr("Day %1 is inexistent").arg(text));
-				/*RulesReconcilableMessage::information(parent, tr("FET information"),
-					tr("Constraint StudentsSetNotAvailable day corrupt for students %1, day %2 is inexistent ... ignoring constraint")
-					.arg(students)
-					.arg(text));*/
-				//cn=NULL;
-				//goto corruptConstraintTime;
 				return NULL;
 			}
 			assert(d<this->nDaysPerWeek);
@@ -8175,12 +7998,6 @@ TimeConstraint* Rules::readStudentsSetNotAvailable(QXmlStreamReader& xmlReader, 
 			}
 			else if(h1>this->nHoursPerDay){
 				xmlReader.raiseError(tr("Hour %1 is inexistent").arg(text));
-				/*RulesReconcilableMessage::information(parent, tr("FET information"),
-					tr("Constraint StudentsSetNotAvailable start hour corrupt for students set %1, hour %2 is inexistent ... ignoring constraint")
-					.arg(students)
-					.arg(text));*/
-				//cn=NULL;
-				//goto corruptConstraintTime;
 				return NULL;
 			}
 			assert(h1>=0 && h1 < this->nHoursPerDay);
@@ -8199,14 +8016,6 @@ TimeConstraint* Rules::readStudentsSetNotAvailable(QXmlStreamReader& xmlReader, 
 				xmlReader.raiseError(tr("Hour %1 is inexistent").arg(text));
 				return NULL;
 			}
-			/*if(h2<=0 || h2>this->nHoursPerDay){
-				RulesReconcilableMessage::information(parent, tr("FET information"),
-					tr("Constraint StudentsSetNotAvailable end hour corrupt for students %1, hour %2 is inexistent ... ignoring constraint")
-					.arg(students)
-					.arg(text));
-				//goto corruptConstraintTime;
-				return NULL;
-			}*/
 			assert(h2>0 && h2 <= this->nHoursPerDay);
 			log.verbose("    End hour="+this->hoursOfTheDay[h2]+"\n");
 		}
@@ -8313,13 +8122,7 @@ TimeConstraint* Rules::readStudentsSetNotAvailableTimes(QXmlStreamReader& xmlRea
 
 					if(d>=this->nDaysPerWeek){
 						xmlReader.raiseError(tr("Day %1 is inexistent").arg(text));
-						/*RulesReconcilableMessage::information(parent, tr("FET information"),
-							tr("Constraint StudentsSetNotAvailableTimes day corrupt for students %1, day %2 is inexistent ... ignoring constraint")
-							.arg(cn->students)
-							.arg(text));*/
 						delete cn;
-						cn=NULL;
-						//goto corruptConstraintTime;
 						return NULL;
 					}
 
@@ -8334,13 +8137,7 @@ TimeConstraint* Rules::readStudentsSetNotAvailableTimes(QXmlStreamReader& xmlRea
 
 					if(h>=this->nHoursPerDay){
 						xmlReader.raiseError(tr("Hour %1 is inexistent").arg(text));
-						/*RulesReconcilableMessage::information(parent, tr("FET information"),
-							tr("Constraint StudentsSetNotAvailableTimes hour corrupt for students %1, hour %2 is inexistent ... ignoring constraint")
-							.arg(cn->students)
-							.arg(text));*/
 						delete cn;
-						cn=NULL;
-						//goto corruptConstraintTime;
 						return NULL;
 					}
 
@@ -9664,13 +9461,7 @@ int reportUnspecifiedPermanentlyLockedTimeId, int reportUnspecifiedDayOrHourPref
 					break;
 			if(cn->day>=this->nDaysPerWeek){
 				xmlReader.raiseError(tr("Day %1 is inexistent").arg(text));
-				/*RulesReconcilableMessage::information(parent, tr("FET information"),
-					tr("Constraint ActivityPreferredTime day corrupt for activity with id %1, day %2 is inexistent ... ignoring constraint")
-					.arg(cn->activityId)
-					.arg(text));*/
 				delete cn;
-				cn=NULL;
-				//goto corruptConstraintTime;
 				return NULL;
 			}
 			assert(cn->day<this->nDaysPerWeek);
@@ -9683,13 +9474,7 @@ int reportUnspecifiedPermanentlyLockedTimeId, int reportUnspecifiedDayOrHourPref
 					break;
 			if(cn->hour>=this->nHoursPerDay){
 				xmlReader.raiseError(tr("Hour %1 is inexistent").arg(text));
-				/*RulesReconcilableMessage::information(parent, tr("FET information"),
-					tr("Constraint ActivityPreferredTime hour corrupt for activity with id %1, hour %2 is inexistent ... ignoring constraint")
-					.arg(cn->activityId)
-					.arg(text));*/
 				delete cn;
-				cn=NULL;
-				//goto corruptConstraintTime;
 				return NULL;
 			}
 			assert(cn->hour>=0 && cn->hour < this->nHoursPerDay);
@@ -9750,8 +9535,6 @@ int reportUnspecifiedPermanentlyLockedTimeId, int reportUnspecifiedDayOrHourPref
 			cgood->weightPercentage=cn->weightPercentage;
 			cgood->nPreferredStartingTimes_L=this->nHoursPerDay;
 			for(int i=0; i<cgood->nPreferredStartingTimes_L; i++){
-				/*cgood->days[i]=cn->day;
-				cgood->hours[i]=i;*/
 				cgood->days_L.append(cn->day);
 				cgood->hours_L.append(i);
 			}
@@ -9808,13 +9591,7 @@ int reportUnspecifiedPermanentlyLockedTimeId, int reportUnspecifiedDayOrHourPref
 					break;
 			if(cn->day>=this->nDaysPerWeek){
 				xmlReader.raiseError(tr("Day %1 is inexistent").arg(text));
-				/*RulesReconcilableMessage::information(parent, tr("FET information"),
-					tr("Constraint ActivityPreferredStartingTime day corrupt for activity with id %1, day %2 is inexistent ... ignoring constraint")
-					.arg(cn->activityId)
-					.arg(text));*/
 				delete cn;
-				cn=NULL;
-				//goto corruptConstraintTime;
 				return NULL;
 			}
 			assert(cn->day<this->nDaysPerWeek);
@@ -9827,13 +9604,7 @@ int reportUnspecifiedPermanentlyLockedTimeId, int reportUnspecifiedDayOrHourPref
 					break;
 			if(cn->hour>=this->nHoursPerDay){
 				xmlReader.raiseError(tr("Hour %1 is inexistent").arg(text));
-				/*RulesReconcilableMessage::information(parent, tr("FET information"),
-					tr("Constraint ActivityPreferredStartingTime hour corrupt for activity with id %1, hour %2 is inexistent ... ignoring constraint")
-					.arg(cn->activityId)
-					.arg(text));*/
 				delete cn;
-				cn=NULL;
-				//goto corruptConstraintTime;
 				return NULL;
 			}
 			assert(cn->hour>=0 && cn->hour < this->nHoursPerDay);
@@ -10253,13 +10024,7 @@ TimeConstraint* Rules::readActivityPreferredTimes(QXmlStreamReader& xmlReader, X
 
 					if(cn->days_L[i]>=this->nDaysPerWeek){
 						xmlReader.raiseError(tr("Day %1 is inexistent").arg(text));
-						/*RulesReconcilableMessage::information(parent, tr("FET information"),
-							tr("Constraint ActivityPreferredTimes day corrupt for activity with id %1, day %2 is inexistent ... ignoring constraint")
-							.arg(cn->activityId)
-							.arg(text));*/
 						delete cn;
-						cn=NULL;
-						//goto corruptConstraintTime;
 						return NULL;
 					}
 
@@ -10276,13 +10041,7 @@ TimeConstraint* Rules::readActivityPreferredTimes(QXmlStreamReader& xmlReader, X
 
 					if(cn->hours_L[i]>=this->nHoursPerDay){
 						xmlReader.raiseError(tr("Hour %1 is inexistent").arg(text));
-						/*RulesReconcilableMessage::information(parent, tr("FET information"),
-							tr("Constraint ActivityPreferredTimes hour corrupt for activity with id %1, hour %2 is inexistent ... ignoring constraint")
-							.arg(cn->activityId)
-							.arg(text));*/
 						delete cn;
-						cn=NULL;
-						//goto corruptConstraintTime;
 						return NULL;
 					}
 
@@ -10363,13 +10122,7 @@ TimeConstraint* Rules::readActivityPreferredTimeSlots(QXmlStreamReader& xmlReade
 
 					if(cn->p_days_L[i]>=this->nDaysPerWeek){
 						xmlReader.raiseError(tr("Day %1 is inexistent").arg(text));
-						/*RulesReconcilableMessage::information(parent, tr("FET information"),
-							tr("Constraint ActivityPreferredTimeSlots day corrupt for activity with id %1, day %2 is inexistent ... ignoring constraint")
-							.arg(cn->p_activityId)
-							.arg(text));*/
 						delete cn;
-						cn=NULL;
-						//goto corruptConstraintTime;
 						return NULL;
 					}
 
@@ -10386,13 +10139,7 @@ TimeConstraint* Rules::readActivityPreferredTimeSlots(QXmlStreamReader& xmlReade
 
 					if(cn->p_hours_L[i]>=this->nHoursPerDay){
 						xmlReader.raiseError(tr("Hour %1 is inexistent").arg(text));
-						/*RulesReconcilableMessage::information(parent, tr("FET information"),
-							tr("Constraint ActivityPreferredTimeSlots hour corrupt for activity with id %1, hour %2 is inexistent ... ignoring constraint")
-							.arg(cn->p_activityId)
-							.arg(text));*/
 						delete cn;
-						cn=NULL;
-						//goto corruptConstraintTime;
 						return NULL;
 					}
 
@@ -10410,7 +10157,6 @@ TimeConstraint* Rules::readActivityPreferredTimeSlots(QXmlStreamReader& xmlReade
 			if(!(i==cn->p_days_L.count()) || !(i==cn->p_hours_L.count())){
 				xmlReader.raiseError(tr("%1 is incorrect").arg("Preferred_Time_Slot"));
 				delete cn;
-				cn=NULL;
 				return NULL;
 			}
 			assert(i==cn->p_days_L.count());
@@ -10474,13 +10220,7 @@ TimeConstraint* Rules::readActivityPreferredStartingTimes(QXmlStreamReader& xmlR
 
 					if(cn->days_L[i]>=this->nDaysPerWeek){
 						xmlReader.raiseError(tr("Day %1 is inexistent").arg(text));
-						/*RulesReconcilableMessage::information(parent, tr("FET information"),
-							tr("Constraint ActivityPreferredStartingTimes day corrupt for activity with id %1, day %2 is inexistent ... ignoring constraint")
-							.arg(cn->activityId)
-							.arg(text));*/
 						delete cn;
-						cn=NULL;
-						//goto corruptConstraintTime;
 						return NULL;
 					}
 
@@ -10497,13 +10237,7 @@ TimeConstraint* Rules::readActivityPreferredStartingTimes(QXmlStreamReader& xmlR
 
 					if(cn->hours_L[i]>=this->nHoursPerDay){
 						xmlReader.raiseError(tr("Hour %1 is inexistent").arg(text));
-						/*RulesReconcilableMessage::information(parent, tr("FET information"),
-							tr("Constraint ActivityPreferredStartingTimes hour corrupt for activity with id %1, hour %2 is inexistent ... ignoring constraint")
-							.arg(cn->activityId)
-							.arg(text));*/
 						delete cn;
-						cn=NULL;
-						//goto corruptConstraintTime;
 						return NULL;
 					}
 
@@ -10583,11 +10317,6 @@ TimeConstraint* Rules::readBreak(QXmlStreamReader& xmlReader, XmlLog &log){
 					break;
 			if(d>=this->nDaysPerWeek){
 				xmlReader.raiseError(tr("Day %1 is inexistent").arg(text));
-				/*RulesReconcilableMessage::information(parent, tr("FET information"),
-					tr("Constraint Break day corrupt for day %1 is inexistent ... ignoring constraint")
-					.arg(text));*/
-				//cn=NULL;
-				//goto corruptConstraintTime;
 				return NULL;
 			}
 			assert(d<this->nDaysPerWeek);
@@ -10604,11 +10333,6 @@ TimeConstraint* Rules::readBreak(QXmlStreamReader& xmlReader, XmlLog &log){
 			}
 			else if(h1>this->nHoursPerDay){
 				xmlReader.raiseError(tr("Hour %1 is inexistent").arg(text));
-				/*RulesReconcilableMessage::information(parent, tr("FET information"),
-					tr("Constraint Break start hour corrupt for hour %1 is inexistent ... ignoring constraint")
-					.arg(text));*/
-				//cn=NULL;
-				//goto corruptConstraintTime;
 				return NULL;
 			}
 			assert(h1>=0 && h1 < this->nHoursPerDay);
@@ -10627,13 +10351,6 @@ TimeConstraint* Rules::readBreak(QXmlStreamReader& xmlReader, XmlLog &log){
 				xmlReader.raiseError(tr("Hour %1 is inexistent").arg(text));
 				return NULL;
 			}
-			/*if(h2<=0 || h2>this->nHoursPerDay){
-				RulesReconcilableMessage::information(parent, tr("FET information"),
-					tr("Constraint Break end hour corrupt for hour %1 is inexistent ... ignoring constraint")
-					.arg(text));
-				//goto corruptConstraintTime;
-				return NULL;
-			}*/
 			assert(h2>0 && h2 <= this->nHoursPerDay);
 			log.verbose("    End hour="+this->hoursOfTheDay[h2]+"\n");
 		}
@@ -10733,12 +10450,7 @@ TimeConstraint* Rules::readBreakTimes(QXmlStreamReader& xmlReader, XmlLog &log){
 
 					if(d>=this->nDaysPerWeek){
 						xmlReader.raiseError(tr("Day %1 is inexistent").arg(text));
-						/*RulesReconcilableMessage::information(parent, tr("FET information"),
-							tr("Constraint BreakTimes day corrupt for day %1 is inexistent ... ignoring constraint")
-							.arg(text));*/
 						delete cn;
-						cn=NULL;
-						//goto corruptConstraintTime;
 						return NULL;
 					}
 
@@ -10753,12 +10465,7 @@ TimeConstraint* Rules::readBreakTimes(QXmlStreamReader& xmlReader, XmlLog &log){
 
 					if(h>=this->nHoursPerDay){
 						xmlReader.raiseError(tr("Hour %1 is inexistent").arg(text));
-						/*RulesReconcilableMessage::information(parent, tr("FET information"),
-							tr("Constraint BreakTimes hour corrupt for hour %1 is inexistent ... ignoring constraint")
-							.arg(text));*/
 						delete cn;
-						cn=NULL;
-						//goto corruptConstraintTime;
 						return NULL;
 					}
 
@@ -11289,16 +10996,7 @@ TimeConstraint* Rules::readActivitiesPreferredTimes(QXmlStreamReader& xmlReader,
 
 					if(cn->days_L[i]>=this->nDaysPerWeek){
 						xmlReader.raiseError(tr("Day %1 is inexistent").arg(text));
-						/*RulesReconcilableMessage::information(parent, tr("FET information"),
-							tr("Constraint ActivitiesPreferredTimes day corrupt for teacher name=%1, students names=%2, subject name=%3, activity tag name=%4, day %5 is inexistent ... ignoring constraint")
-							.arg(cn->teacherName)
-							.arg(cn->studentsName)
-							.arg(cn->subjectName)
-							.arg(cn->activityTagName)
-							.arg(text));*/
 						delete cn;
-						cn=NULL;
-						//goto corruptConstraintTime;
 						return NULL;
 					}
 
@@ -11315,16 +11013,7 @@ TimeConstraint* Rules::readActivitiesPreferredTimes(QXmlStreamReader& xmlReader,
 
 					if(cn->hours_L[i]>=this->nHoursPerDay){
 						xmlReader.raiseError(tr("Hour %1 is inexistent").arg(text));
-						/*RulesReconcilableMessage::information(parent, tr("FET information"),
-							tr("Constraint ActivitiesPreferredTimes hour corrupt for teacher name=%1, students names=%2, subject name=%3, activity tag name=%4, hour %5 is inexistent ... ignoring constraint")
-							.arg(cn->teacherName)
-							.arg(cn->studentsName)
-							.arg(cn->subjectName)
-							.arg(cn->activityTagName)
-							.arg(text));*/
 						delete cn;
-						cn=NULL;
-						//goto corruptConstraintTime;
 						return NULL;
 					}
 
@@ -11442,16 +11131,7 @@ TimeConstraint* Rules::readActivitiesPreferredTimeSlots(QXmlStreamReader& xmlRea
 
 					if(cn->p_days_L[i]>=this->nDaysPerWeek){
 						xmlReader.raiseError(tr("Day %1 is inexistent").arg(text));
-						/*RulesReconcilableMessage::information(parent, tr("FET information"),
-							tr("Constraint ActivitiesPreferredTimeSlots day corrupt for teacher name=%1, students names=%2, subject name=%3, activity tag name=%4, day %5 is inexistent ... ignoring constraint")
-							.arg(cn->p_teacherName)
-							.arg(cn->p_studentsName)
-							.arg(cn->p_subjectName)
-							.arg(cn->p_activityTagName)
-							.arg(text));*/
 						delete cn;
-						cn=NULL;
-						//goto corruptConstraintTime;
 						return NULL;
 					}
 
@@ -11468,16 +11148,7 @@ TimeConstraint* Rules::readActivitiesPreferredTimeSlots(QXmlStreamReader& xmlRea
 
 					if(cn->p_hours_L[i]>=this->nHoursPerDay){
 						xmlReader.raiseError(tr("Hour %1 is inexistent").arg(text));
-						/*RulesReconcilableMessage::information(parent, tr("FET information"),
-							tr("Constraint ActivitiesPreferredTimeSlots hour corrupt for teacher name=%1, students names=%2, subject name=%3, activity tag name=%4, hour %5 is inexistent ... ignoring constraint")
-							.arg(cn->p_teacherName)
-							.arg(cn->p_studentsName)
-							.arg(cn->p_subjectName)
-							.arg(cn->p_activityTagName)
-							.arg(text));*/
 						delete cn;
-						cn=NULL;
-						//goto corruptConstraintTime;
 						return NULL;
 					}
 
@@ -11595,16 +11266,7 @@ TimeConstraint* Rules::readActivitiesPreferredStartingTimes(QXmlStreamReader& xm
 
 					if(cn->days_L[i]>=this->nDaysPerWeek){
 						xmlReader.raiseError(tr("Day %1 is inexistent").arg(text));
-						/*RulesReconcilableMessage::information(parent, tr("FET information"),
-							tr("Constraint ActivitiesPreferredStartingTimes day corrupt for teacher name=%1, students names=%2, subject name=%3, activity tag name=%4, day %5 is inexistent ... ignoring constraint")
-							.arg(cn->teacherName)
-							.arg(cn->studentsName)
-							.arg(cn->subjectName)
-							.arg(cn->activityTagName)
-							.arg(text));*/
 						delete cn;
-						cn=NULL;
-						//goto corruptConstraintTime;
 						return NULL;
 					}
 
@@ -11621,16 +11283,7 @@ TimeConstraint* Rules::readActivitiesPreferredStartingTimes(QXmlStreamReader& xm
 
 					if(cn->hours_L[i]>=this->nHoursPerDay){
 						xmlReader.raiseError(tr("Hour %1 is inexistent").arg(text));
-						/*RulesReconcilableMessage::information(parent, tr("FET information"),
-							tr("Constraint ActivitiesPreferredStartingTimes hour corrupt for teacher name=%1, students names=%2, subject name=%3, activity tag name=%4, hour %5 is inexistent ... ignoring constraint")
-							.arg(cn->teacherName)
-							.arg(cn->studentsName)
-							.arg(cn->subjectName)
-							.arg(cn->activityTagName)
-							.arg(text));*/
 						delete cn;
-						cn=NULL;
-						//goto corruptConstraintTime;
 						return NULL;
 					}
 
@@ -11744,16 +11397,7 @@ TimeConstraint* Rules::readSubactivitiesPreferredTimeSlots(QXmlStreamReader& xml
 
 					if(cn->p_days_L[i]>=this->nDaysPerWeek){
 						xmlReader.raiseError(tr("Day %1 is inexistent").arg(text));
-						/*RulesReconcilableMessage::information(parent, tr("FET information"),
-							tr("Constraint ActivitiesPreferredTimeSlots day corrupt for teacher name=%1, students names=%2, subject name=%3, activity tag name=%4, day %5 is inexistent ... ignoring constraint")
-							.arg(cn->p_teacherName)
-							.arg(cn->p_studentsName)
-							.arg(cn->p_subjectName)
-							.arg(cn->p_activityTagName)
-							.arg(text));*/
 						delete cn;
-						cn=NULL;
-						//goto corruptConstraintTime;
 						return NULL;
 					}
 
@@ -11770,16 +11414,7 @@ TimeConstraint* Rules::readSubactivitiesPreferredTimeSlots(QXmlStreamReader& xml
 
 					if(cn->p_hours_L[i]>=this->nHoursPerDay){
 						xmlReader.raiseError(tr("Hour %1 is inexistent").arg(text));
-						/*RulesReconcilableMessage::information(parent, tr("FET information"),
-							tr("Constraint ActivitiesPreferredTimeSlots hour corrupt for teacher name=%1, students names=%2, subject name=%3, activity tag name=%4, hour %5 is inexistent ... ignoring constraint")
-							.arg(cn->p_teacherName)
-							.arg(cn->p_studentsName)
-							.arg(cn->p_subjectName)
-							.arg(cn->p_activityTagName)
-							.arg(text));*/
 						delete cn;
-						cn=NULL;
-						//goto corruptConstraintTime;
 						return NULL;
 					}
 
@@ -11892,16 +11527,7 @@ TimeConstraint* Rules::readSubactivitiesPreferredStartingTimes(QXmlStreamReader&
 
 					if(cn->days_L[i]>=this->nDaysPerWeek){
 						xmlReader.raiseError(tr("Day %1 is inexistent").arg(text));
-						/*RulesReconcilableMessage::information(parent, tr("FET information"),
-							tr("Constraint ActivitiesPreferredStartingTimes day corrupt for teacher name=%1, students names=%2, subject name=%3, activity tag name=%4, day %5 is inexistent ... ignoring constraint")
-							.arg(cn->teacherName)
-							.arg(cn->studentsName)
-							.arg(cn->subjectName)
-							.arg(cn->activityTagName)
-							.arg(text));*/
 						delete cn;
-						cn=NULL;
-						//goto corruptConstraintTime;
 						return NULL;
 					}
 
@@ -11918,16 +11544,7 @@ TimeConstraint* Rules::readSubactivitiesPreferredStartingTimes(QXmlStreamReader&
 
 					if(cn->hours_L[i]>=this->nHoursPerDay){
 						xmlReader.raiseError(tr("Hour %1 is inexistent").arg(text));
-						/*RulesReconcilableMessage::information(parent, tr("FET information"),
-							tr("Constraint ActivitiesPreferredStartingTimes hour corrupt for teacher name=%1, students names=%2, subject name=%3, activity tag name=%4, hour %5 is inexistent ... ignoring constraint")
-							.arg(cn->teacherName)
-							.arg(cn->studentsName)
-							.arg(cn->subjectName)
-							.arg(cn->activityTagName)
-							.arg(text));*/
 						delete cn;
-						cn=NULL;
-						//goto corruptConstraintTime;
 						return NULL;
 					}
 
@@ -12015,12 +11632,7 @@ TimeConstraint* Rules::readActivitiesOccupyMaxTimeSlotsFromSelection(QXmlStreamR
 
 					if(cn->selectedDays[i]>=this->nDaysPerWeek){
 						xmlReader.raiseError(tr("Day %1 is inexistent").arg(text));
-						/*RulesReconcilableMessage::information(parent, tr("FET information"),
-							tr("Constraint ActivitiesOccupyMaxTimeSlotsFromSelection day corrupt, day %1 is inexistent ... ignoring constraint")
-							.arg(text));*/
 						delete cn;
-						cn=NULL;
-						//goto corruptConstraintTime;
 						return NULL;
 					}
 
@@ -12037,12 +11649,7 @@ TimeConstraint* Rules::readActivitiesOccupyMaxTimeSlotsFromSelection(QXmlStreamR
 
 					if(cn->selectedHours[i]>=this->nHoursPerDay){
 						xmlReader.raiseError(tr("Hour %1 is inexistent").arg(text));
-						/*RulesReconcilableMessage::information(parent, tr("FET information"),
-							tr(" Constraint ActivitiesOccupyMaxTimeSlotsFromSelection hour corrupt, hour %1 is inexistent ... ignoring constraint")
-							.arg(text));*/
 						delete cn;
-						cn=NULL;
-						//goto corruptConstraintTime;
 						return NULL;
 					}
 
@@ -12143,12 +11750,7 @@ TimeConstraint* Rules::readActivitiesMaxSimultaneousInSelectedTimeSlots(QXmlStre
 
 					if(cn->selectedDays[i]>=this->nDaysPerWeek){
 						xmlReader.raiseError(tr("Day %1 is inexistent").arg(text));
-						/*RulesReconcilableMessage::information(parent, tr("FET information"),
-							tr("Constraint ActivitiesMaxSimultaneousInSelectedTimeSlots day corrupt, day %1 is inexistent ... ignoring constraint")
-							.arg(text));*/
 						delete cn;
-						cn=NULL;
-						//goto corruptConstraintTime;
 						return NULL;
 					}
 
@@ -12165,12 +11767,7 @@ TimeConstraint* Rules::readActivitiesMaxSimultaneousInSelectedTimeSlots(QXmlStre
 
 					if(cn->selectedHours[i]>=this->nHoursPerDay){
 						xmlReader.raiseError(tr("Day %1 is inexistent").arg(text));
-						/*RulesReconcilableMessage::information(parent, tr("FET information"),
-							tr(" Constraint ActivitiesMaxSimultaneousInSelectedTimeSlots hour corrupt, hour %1 is inexistent ... ignoring constraint")
-							.arg(text));*/
 						delete cn;
-						cn=NULL;
-						//goto corruptConstraintTime;
 						return NULL;
 					}
 
@@ -12660,12 +12257,6 @@ SpaceConstraint* Rules::readRoomNotAvailable(QXmlStreamReader& xmlReader, XmlLog
 					break;
 			if(d>=this->nDaysPerWeek){
 				xmlReader.raiseError(tr("Day %1 is inexistent").arg(text));
-				/*RulesReconcilableMessage::information(parent, tr("FET information"),
-					tr("Constraint RoomNotAvailable day corrupt for room %1, day %2 is inexistent ... ignoring constraint")
-					.arg(room)
-					.arg(text));*/
-				//cn=NULL;
-				//goto corruptConstraintSpace;
 				return NULL;
 			}
 			assert(d<this->nDaysPerWeek);
@@ -12682,12 +12273,6 @@ SpaceConstraint* Rules::readRoomNotAvailable(QXmlStreamReader& xmlReader, XmlLog
 			}
 			else if(h1>this->nHoursPerDay){
 				xmlReader.raiseError(tr("Hour %1 is inexistent").arg(text));
-				/*RulesReconcilableMessage::information(parent, tr("FET information"),
-					tr("Constraint RoomNotAvailable start hour corrupt for room %1, hour %2 is inexistent ... ignoring constraint")
-					.arg(room)
-					.arg(text));*/
-				//cn=NULL;
-				//goto corruptConstraintSpace;
 				return NULL;
 			}
 			assert(h1>=0 && h1 < this->nHoursPerDay);
@@ -12704,11 +12289,6 @@ SpaceConstraint* Rules::readRoomNotAvailable(QXmlStreamReader& xmlReader, XmlLog
 			}
 			else if(h2<0 || h2>this->nHoursPerDay){
 				xmlReader.raiseError(tr("Hour %1 is inexistent").arg(text));
-				/*RulesReconcilableMessage::information(parent, tr("FET information"),
-					tr("Constraint RoomNotAvailable end hour corrupt for room %1, hour %2 is inexistent ... ignoring constraint")
-					.arg(room)
-					.arg(text));*/
-				//goto corruptConstraintSpace;
 				return NULL;
 			}
 			assert(h2>0 && h2 <= this->nHoursPerDay);
@@ -12815,14 +12395,8 @@ SpaceConstraint* Rules::readRoomNotAvailableTimes(QXmlStreamReader& xmlReader, X
 
 					if(d>=this->nDaysPerWeek){
 						xmlReader.raiseError(tr("Day %1 is inexistent").arg(text));
-						/*RulesReconcilableMessage::information(parent, tr("FET information"),
-							tr("Constraint RoomNotAvailableTimes day corrupt for room %1, day %2 is inexistent ... ignoring constraint")
-							.arg(cn->room)
-							.arg(text));*/
 						delete cn;
-						cn=NULL;
 						return NULL;
-						//goto corruptConstraintSpace;
 					}
 
 					assert(d<this->nDaysPerWeek);
@@ -12836,13 +12410,7 @@ SpaceConstraint* Rules::readRoomNotAvailableTimes(QXmlStreamReader& xmlReader, X
 
 					if(h>=this->nHoursPerDay){
 						xmlReader.raiseError(tr("Hour %1 is inexistent").arg(text));
-						/*RulesReconcilableMessage::information(parent, tr("FET information"),
-							tr("Constraint RoomNotAvailableTimes hour corrupt for room %1, hour %2 is inexistent ... ignoring constraint")
-							.arg(cn->room)
-							.arg(text));*/
 						delete cn;
-						cn=NULL;
-						//goto corruptConstraintSpace;
 						return NULL;
 					}
 
