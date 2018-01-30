@@ -7349,39 +7349,11 @@ TimeConstraint* Rules::readBasicCompulsoryTime(QXmlStreamReader& xmlReader, XmlL
 	ConstraintBasicCompulsoryTime* cn=new ConstraintBasicCompulsoryTime();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - generating automatic 100% weight percentage\n");
-			cn->weightPercentage=100;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -7565,20 +7537,8 @@ TimeConstraint* Rules::readTeacherNotAvailableTimes(QXmlStreamReader& xmlReader,
 	int i=0;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Read weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 
 		else if(xmlReader.name()=="Number_of_Not_Available_Times"){
@@ -7683,39 +7643,8 @@ TimeConstraint* Rules::readTeacherMaxDaysPerWeek(QXmlStreamReader& xmlReader, Xm
 	ConstraintTeacherMaxDaysPerWeek* cn=new ConstraintTeacherMaxDaysPerWeek();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - generating 100% weight percentage\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Teacher_Name"){
 			QString text=xmlReader.readElementText();
@@ -7738,6 +7667,9 @@ TimeConstraint* Rules::readTeacherMaxDaysPerWeek(QXmlStreamReader& xmlReader, Xm
 			assert(cn->maxDaysPerWeek>0 && cn->maxDaysPerWeek <= this->nDaysPerWeek);
 			log.verbose("    Max. days per week="+CustomFETString::number(cn->maxDaysPerWeek)+"\n");
 		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
+		}
 		else{
 			xmlReader.skipCurrentElement();
 			log.numberOfUnrecognizedFields++;
@@ -7752,20 +7684,8 @@ TimeConstraint* Rules::readTeachersMaxDaysPerWeek(QXmlStreamReader& xmlReader, X
 	ConstraintTeachersMaxDaysPerWeek* cn=new ConstraintTeachersMaxDaysPerWeek();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Max_Days_Per_Week"){
 			QString text=xmlReader.readElementText();
@@ -7796,20 +7716,8 @@ TimeConstraint* Rules::readTeacherMinDaysPerWeek(QXmlStreamReader& xmlReader, Xm
 	ConstraintTeacherMinDaysPerWeek* cn=new ConstraintTeacherMinDaysPerWeek();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Teacher_Name"){
 			QString text=xmlReader.readElementText();
@@ -7846,20 +7754,8 @@ TimeConstraint* Rules::readTeachersMinDaysPerWeek(QXmlStreamReader& xmlReader, X
 	ConstraintTeachersMinDaysPerWeek* cn=new ConstraintTeachersMinDaysPerWeek();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Minimum_Days_Per_Week"){
 			QString text=xmlReader.readElementText();
@@ -7893,39 +7789,8 @@ TimeConstraint* Rules::readTeacherIntervalMaxDaysPerWeek(QWidget* parent, QXmlSt
 	int h1, h2;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - generating 100% weight percentage\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Teacher_Name"){
 			QString text=xmlReader.readElementText();
@@ -7993,6 +7858,9 @@ TimeConstraint* Rules::readTeacherIntervalMaxDaysPerWeek(QWidget* parent, QXmlSt
 				cn->endHour=h2;
 			}
 		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
+		}
 		else{
 			xmlReader.skipCurrentElement();
 			log.numberOfUnrecognizedFields++;
@@ -8010,39 +7878,8 @@ TimeConstraint* Rules::readTeachersIntervalMaxDaysPerWeek(QWidget* parent, QXmlS
 	int h1, h2;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - generating 100% weight percentage\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		/*else if(xmlReader.name()=="Teacher_Name"){
 			cn->teacherName=text;
@@ -8109,6 +7946,9 @@ TimeConstraint* Rules::readTeachersIntervalMaxDaysPerWeek(QWidget* parent, QXmlS
 				cn->endHour=h2;
 			}
 		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
+		}
 		else{
 			xmlReader.skipCurrentElement();
 			log.numberOfUnrecognizedFields++;
@@ -8123,20 +7963,8 @@ TimeConstraint* Rules::readStudentsSetMaxDaysPerWeek(QWidget* parent, QXmlStream
 	cn->maxDaysPerWeek=this->nDaysPerWeek;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Students"){
 			QString text=xmlReader.readElementText();
@@ -8168,20 +7996,8 @@ TimeConstraint* Rules::readStudentsMaxDaysPerWeek(QWidget* parent, QXmlStreamRea
 	cn->maxDaysPerWeek=this->nDaysPerWeek;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Max_Days_Per_Week"){
 			QString text=xmlReader.readElementText();
@@ -8210,39 +8026,8 @@ TimeConstraint* Rules::readStudentsSetIntervalMaxDaysPerWeek(QWidget* parent, QX
 	int h1, h2;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - generating 100% weight percentage\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Students"){
 			QString text=xmlReader.readElementText();
@@ -8310,6 +8095,9 @@ TimeConstraint* Rules::readStudentsSetIntervalMaxDaysPerWeek(QWidget* parent, QX
 				cn->endHour=h2;
 			}
 		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
+		}
 		else{
 			xmlReader.skipCurrentElement();
 			log.numberOfUnrecognizedFields++;
@@ -8327,44 +8115,9 @@ TimeConstraint* Rules::readStudentsIntervalMaxDaysPerWeek(QWidget* parent, QXmlS
 	int h1, h2;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - generating 100% weight percentage\n");
-			cn->weightPercentage=100;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
-		}
-		/*else if(xmlReader.name()=="Students"){
-			cn->students=text;
-			log.verbose("    Read students set name="+cn->students+"\n");
-		}*/
 		else if(xmlReader.name()=="Max_Days_Per_Week"){
 			QString text=xmlReader.readElementText();
 			cn->maxDaysPerWeek=text.toInt();
@@ -8424,6 +8177,9 @@ TimeConstraint* Rules::readStudentsIntervalMaxDaysPerWeek(QWidget* parent, QXmlS
 				log.verbose("    Interval end hour="+this->hoursOfTheDay[h2]+"\n");
 				cn->endHour=h2;
 			}
+		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -8606,20 +8362,8 @@ TimeConstraint* Rules::readStudentsSetNotAvailableTimes(QXmlStreamReader& xmlRea
 	int i=0;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Read weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 
 		else if(xmlReader.name()=="Number_of_Not_Available_Times"){
@@ -8728,26 +8472,8 @@ TimeConstraint* Rules::readMinNDaysBetweenActivities(QWidget* parent, QXmlStream
 	cn->activitiesId.clear();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - generating weightPercentage=95%\n");
-			cn->weightPercentage=95;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weightPercentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Consecutive_If_Same_Day" || xmlReader.name()=="Adjacent_If_Broken"){
 			QString text=xmlReader.readElementText();
@@ -8770,23 +8496,6 @@ TimeConstraint* Rules::readMinNDaysBetweenActivities(QWidget* parent, QXmlStream
 				log.verbose("    Current constraint has consecutive if same day=false\n");
 			}
 		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=95;
-				cn->consecutiveIfSameDay=true;
-				foundCISD=true;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-				cn->consecutiveIfSameDay=false;
-				foundCISD=true;
-			}
-		}
 		else if(xmlReader.name()=="Number_of_Activities"){
 			QString text=xmlReader.readElementText();
 			cn->n_activities=text.toInt();
@@ -8804,6 +8513,9 @@ TimeConstraint* Rules::readMinNDaysBetweenActivities(QWidget* parent, QXmlStream
 			QString text=xmlReader.readElementText();
 			cn->minDays=text.toInt();
 			log.verbose("    Read MinDays="+CustomFETString::number(cn->minDays)+"\n");
+		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -8867,26 +8579,8 @@ TimeConstraint* Rules::readMinDaysBetweenActivities(QWidget* parent, QXmlStreamR
 	cn->activitiesId.clear();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - generating weightPercentage=95%\n");
-			cn->weightPercentage=95;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weightPercentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Consecutive_If_Same_Day" || xmlReader.name()=="Adjacent_If_Broken"){
 			QString text=xmlReader.readElementText();
@@ -8909,23 +8603,6 @@ TimeConstraint* Rules::readMinDaysBetweenActivities(QWidget* parent, QXmlStreamR
 				log.verbose("    Current constraint has consecutive if same day=false\n");
 			}
 		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=95;
-				cn->consecutiveIfSameDay=true;
-				foundCISD=true;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-				cn->consecutiveIfSameDay=false;
-				foundCISD=true;
-			}
-		}
 		else if(xmlReader.name()=="Number_of_Activities"){
 			QString text=xmlReader.readElementText();
 			cn->n_activities=text.toInt();
@@ -8943,6 +8620,9 @@ TimeConstraint* Rules::readMinDaysBetweenActivities(QWidget* parent, QXmlStreamR
 			QString text=xmlReader.readElementText();
 			cn->minDays=text.toInt();
 			log.verbose("    Read MinDays="+CustomFETString::number(cn->minDays)+"\n");
+		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -9005,20 +8685,8 @@ TimeConstraint* Rules::readMaxDaysBetweenActivities(QXmlStreamReader& xmlReader,
 	cn->activitiesId.clear();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weightPercentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Number_of_Activities"){
 			QString text=xmlReader.readElementText();
@@ -9061,20 +8729,8 @@ TimeConstraint* Rules::readMinGapsBetweenActivities(QXmlStreamReader& xmlReader,
 	cn->activitiesId.clear();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weightPercentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Number_of_Activities"){
 			QString text=xmlReader.readElementText();
@@ -9116,39 +8772,8 @@ TimeConstraint* Rules::readActivitiesNotOverlapping(QXmlStreamReader& xmlReader,
 	cn->activitiesId.clear();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Number_of_Activities"){
 			QString text=xmlReader.readElementText();
@@ -9162,6 +8787,9 @@ TimeConstraint* Rules::readActivitiesNotOverlapping(QXmlStreamReader& xmlReader,
 			assert(n_act==cn->activitiesId.count()-1);
 			log.verbose("    Read activity id="+CustomFETString::number(cn->activitiesId[n_act])+"\n");
 			n_act++;
+		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -9186,39 +8814,8 @@ TimeConstraint* Rules::readActivitiesSameStartingTime(QXmlStreamReader& xmlReade
 	cn->activitiesId.clear();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Number_of_Activities"){
 			QString text=xmlReader.readElementText();
@@ -9232,6 +8829,9 @@ TimeConstraint* Rules::readActivitiesSameStartingTime(QXmlStreamReader& xmlReade
 			assert(n_act==cn->activitiesId.count()-1);
 			log.verbose("    Read activity id="+CustomFETString::number(cn->activitiesId[n_act])+"\n");
 			n_act++;
+		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -9256,39 +8856,8 @@ TimeConstraint* Rules::readActivitiesSameStartingHour(QXmlStreamReader& xmlReade
 	cn->activitiesId.clear();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Number_of_Activities"){
 			QString text=xmlReader.readElementText();
@@ -9302,6 +8871,9 @@ TimeConstraint* Rules::readActivitiesSameStartingHour(QXmlStreamReader& xmlReade
 			assert(n_act==cn->activitiesId.count()-1);
 			log.verbose("    Read activity id="+CustomFETString::number(cn->activitiesId[n_act])+"\n");
 			n_act++;
+		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -9326,20 +8898,8 @@ TimeConstraint* Rules::readActivitiesSameStartingDay(QXmlStreamReader& xmlReader
 	cn->activitiesId.clear();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Number_of_Activities"){
 			QString text=xmlReader.readElementText();
@@ -9374,44 +8934,16 @@ TimeConstraint* Rules::readTeachersMaxHoursDaily(QXmlStreamReader& xmlReader, Xm
 	ConstraintTeachersMaxHoursDaily* cn=new ConstraintTeachersMaxHoursDaily();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Maximum_Hours_Daily"){
 			QString text=xmlReader.readElementText();
 			cn->maxHoursDaily=text.toInt();
 			log.verbose("    Read maxHoursDaily="+CustomFETString::number(cn->maxHoursDaily)+"\n");
+		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -9426,39 +8958,8 @@ TimeConstraint* Rules::readTeacherMaxHoursDaily(QXmlStreamReader& xmlReader, Xml
 	ConstraintTeacherMaxHoursDaily* cn=new ConstraintTeacherMaxHoursDaily();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Maximum_Hours_Daily"){
 			QString text=xmlReader.readElementText();
@@ -9469,6 +8970,9 @@ TimeConstraint* Rules::readTeacherMaxHoursDaily(QXmlStreamReader& xmlReader, Xml
 			QString text=xmlReader.readElementText();
 			cn->teacherName=text;
 			log.verbose("    Read teacher name="+cn->teacherName+"\n");
+		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -9483,44 +8987,16 @@ TimeConstraint* Rules::readTeachersMaxHoursContinuously(QXmlStreamReader& xmlRea
 	ConstraintTeachersMaxHoursContinuously* cn=new ConstraintTeachersMaxHoursContinuously();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Maximum_Hours_Continuously"){
 			QString text=xmlReader.readElementText();
 			cn->maxHoursContinuously=text.toInt();
 			log.verbose("    Read maxHoursContinuously="+CustomFETString::number(cn->maxHoursContinuously)+"\n");
+		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -9535,39 +9011,8 @@ TimeConstraint* Rules::readTeacherMaxHoursContinuously(QXmlStreamReader& xmlRead
 	ConstraintTeacherMaxHoursContinuously* cn=new ConstraintTeacherMaxHoursContinuously();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Maximum_Hours_Continuously"){
 			QString text=xmlReader.readElementText();
@@ -9578,6 +9023,9 @@ TimeConstraint* Rules::readTeacherMaxHoursContinuously(QXmlStreamReader& xmlRead
 			QString text=xmlReader.readElementText();
 			cn->teacherName=text;
 			log.verbose("    Read teacher name="+cn->teacherName+"\n");
+		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -9592,20 +9040,8 @@ TimeConstraint* Rules::readTeacherActivityTagMaxHoursContinuously(QXmlStreamRead
 	ConstraintTeacherActivityTagMaxHoursContinuously* cn=new ConstraintTeacherActivityTagMaxHoursContinuously();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Maximum_Hours_Continuously"){
 			QString text=xmlReader.readElementText();
@@ -9635,20 +9071,8 @@ TimeConstraint* Rules::readTeachersActivityTagMaxHoursContinuously(QXmlStreamRea
 	ConstraintTeachersActivityTagMaxHoursContinuously* cn=new ConstraintTeachersActivityTagMaxHoursContinuously();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Maximum_Hours_Continuously"){
 			QString text=xmlReader.readElementText();
@@ -9673,20 +9097,8 @@ TimeConstraint* Rules::readTeacherActivityTagMaxHoursDaily(QXmlStreamReader& xml
 	ConstraintTeacherActivityTagMaxHoursDaily* cn=new ConstraintTeacherActivityTagMaxHoursDaily();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Maximum_Hours_Daily"){
 			QString text=xmlReader.readElementText();
@@ -9716,20 +9128,8 @@ TimeConstraint* Rules::readTeachersActivityTagMaxHoursDaily(QXmlStreamReader& xm
 	ConstraintTeachersActivityTagMaxHoursDaily* cn=new ConstraintTeachersActivityTagMaxHoursDaily();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Maximum_Hours_Daily"){
 			QString text=xmlReader.readElementText();
@@ -9755,39 +9155,8 @@ TimeConstraint* Rules::readTeachersMinHoursDaily(QWidget* parent, QXmlStreamRead
 	cn->allowEmptyDays=true;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Minimum_Hours_Daily"){
 			QString text=xmlReader.readElementText();
@@ -9813,6 +9182,9 @@ TimeConstraint* Rules::readTeachersMinHoursDaily(QWidget* parent, QXmlStreamRead
 				cn->allowEmptyDays=false;
 			}
 		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
+		}
 		else{
 			xmlReader.skipCurrentElement();
 			log.numberOfUnrecognizedFields++;
@@ -9827,39 +9199,8 @@ TimeConstraint* Rules::readTeacherMinHoursDaily(QWidget* parent, QXmlStreamReade
 	cn->allowEmptyDays=true;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Minimum_Hours_Daily"){
 			QString text=xmlReader.readElementText();
@@ -9890,6 +9231,9 @@ TimeConstraint* Rules::readTeacherMinHoursDaily(QWidget* parent, QXmlStreamReade
 				cn->allowEmptyDays=false;
 			}
 		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
+		}
 		else{
 			xmlReader.skipCurrentElement();
 			log.numberOfUnrecognizedFields++;
@@ -9904,39 +9248,8 @@ TimeConstraint* Rules::readStudentsMaxHoursDaily(QXmlStreamReader& xmlReader, Xm
 	cn->maxHoursDaily=-1;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Maximum_Hours_Daily"){
 			QString text=xmlReader.readElementText();
@@ -9948,6 +9261,9 @@ TimeConstraint* Rules::readStudentsMaxHoursDaily(QXmlStreamReader& xmlReader, Xm
 				return NULL;
 			}
 			log.verbose("    Read maxHoursDaily="+CustomFETString::number(cn->maxHoursDaily)+"\n");
+		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -9970,39 +9286,8 @@ TimeConstraint* Rules::readStudentsSetMaxHoursDaily(QXmlStreamReader& xmlReader,
 	cn->maxHoursDaily=-1;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Maximum_Hours_Daily"){
 			QString text=xmlReader.readElementText();
@@ -10019,6 +9304,9 @@ TimeConstraint* Rules::readStudentsSetMaxHoursDaily(QXmlStreamReader& xmlReader,
 			QString text=xmlReader.readElementText();
 			cn->students=text;
 			log.verbose("    Read students name="+cn->students+"\n");
+		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -10041,39 +9329,8 @@ TimeConstraint* Rules::readStudentsMaxHoursContinuously(QXmlStreamReader& xmlRea
 	cn->maxHoursContinuously=-1;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Maximum_Hours_Continuously"){
 			QString text=xmlReader.readElementText();
@@ -10085,6 +9342,9 @@ TimeConstraint* Rules::readStudentsMaxHoursContinuously(QXmlStreamReader& xmlRea
 				return NULL;
 			}
 			log.verbose("    Read maxHoursContinuously="+CustomFETString::number(cn->maxHoursContinuously)+"\n");
+		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -10107,39 +9367,8 @@ TimeConstraint* Rules::readStudentsSetMaxHoursContinuously(QXmlStreamReader& xml
 	cn->maxHoursContinuously=-1;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Maximum_Hours_Continuously"){
 			QString text=xmlReader.readElementText();
@@ -10156,6 +9385,9 @@ TimeConstraint* Rules::readStudentsSetMaxHoursContinuously(QXmlStreamReader& xml
 			QString text=xmlReader.readElementText();
 			cn->students=text;
 			log.verbose("    Read students name="+cn->students+"\n");
+		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -10178,20 +9410,8 @@ TimeConstraint* Rules::readStudentsSetActivityTagMaxHoursContinuously(QXmlStream
 	cn->maxHoursContinuously=-1;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Maximum_Hours_Continuously"){
 			QString text=xmlReader.readElementText();
@@ -10235,20 +9455,8 @@ TimeConstraint* Rules::readStudentsActivityTagMaxHoursContinuously(QXmlStreamRea
 	cn->maxHoursContinuously=-1;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Maximum_Hours_Continuously"){
 			QString text=xmlReader.readElementText();
@@ -10287,20 +9495,8 @@ TimeConstraint* Rules::readStudentsSetActivityTagMaxHoursDaily(QXmlStreamReader&
 	cn->maxHoursDaily=-1;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Maximum_Hours_Daily"){
 			QString text=xmlReader.readElementText();
@@ -10344,20 +9540,8 @@ TimeConstraint* Rules::readStudentsActivityTagMaxHoursDaily(QXmlStreamReader& xm
 	cn->maxHoursDaily=-1;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Maximum_Hours_Daily"){
 			QString text=xmlReader.readElementText();
@@ -10397,39 +9581,8 @@ TimeConstraint* Rules::readStudentsMinHoursDaily(QWidget* parent, QXmlStreamRead
 	cn->allowEmptyDays=false;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Minimum_Hours_Daily"){
 			QString text=xmlReader.readElementText();
@@ -10461,6 +9614,9 @@ TimeConstraint* Rules::readStudentsMinHoursDaily(QWidget* parent, QXmlStreamRead
 				cn->allowEmptyDays=false;
 			}
 		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
+		}
 		else{
 			xmlReader.skipCurrentElement();
 			log.numberOfUnrecognizedFields++;
@@ -10483,39 +9639,8 @@ TimeConstraint* Rules::readStudentsSetMinHoursDaily(QWidget* parent, QXmlStreamR
 	cn->allowEmptyDays=false;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Minimum_Hours_Daily"){
 			QString text=xmlReader.readElementText();
@@ -10552,6 +9677,9 @@ TimeConstraint* Rules::readStudentsSetMinHoursDaily(QWidget* parent, QXmlStreamR
 				cn->allowEmptyDays=false;
 			}
 		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
+		}
 		else{
 			xmlReader.skipCurrentElement();
 			log.numberOfUnrecognizedFields++;
@@ -10577,39 +9705,8 @@ bool& reportUnspecifiedPermanentlyLockedTime, bool& reportUnspecifiedDayOrHourPr
 	bool foundLocked=false;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Permanently_Locked"){
 			QString text=xmlReader.readElementText();
@@ -10673,6 +9770,9 @@ bool& reportUnspecifiedPermanentlyLockedTime, bool& reportUnspecifiedDayOrHourPr
 			}
 			assert(cn->hour>=0 && cn->hour < this->nHoursPerDay);
 			log.verbose("    Preferred hour="+this->hoursOfTheDay[cn->hour]+"\n");
+		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -10755,39 +9855,8 @@ bool& reportUnspecifiedPermanentlyLockedTime, bool& reportUnspecifiedDayOrHourPr
 	bool foundLocked=false;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Permanently_Locked"){
 			QString text=xmlReader.readElementText();
@@ -10851,6 +9920,9 @@ bool& reportUnspecifiedPermanentlyLockedTime, bool& reportUnspecifiedDayOrHourPr
 			}
 			assert(cn->hour>=0 && cn->hour < this->nHoursPerDay);
 			log.verbose("    Preferred hour="+this->hoursOfTheDay[cn->hour]+"\n");
+		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -10929,20 +10001,8 @@ TimeConstraint* Rules::readActivityEndsStudentsDay(QXmlStreamReader& xmlReader, 
 	ConstraintActivityEndsStudentsDay* cn=new ConstraintActivityEndsStudentsDay();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Activity_Id"){
 			QString text=xmlReader.readElementText();
@@ -10968,20 +10028,8 @@ TimeConstraint* Rules::readActivitiesEndStudentsDay(QXmlStreamReader& xmlReader,
 	//i=0;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Teacher_Name"){
 			QString text=xmlReader.readElementText();
@@ -11021,39 +10069,8 @@ TimeConstraint* Rules::read2ActivitiesConsecutive(QXmlStreamReader& xmlReader, X
 	ConstraintTwoActivitiesConsecutive* cn=new ConstraintTwoActivitiesConsecutive();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="First_Activity_Id"){
 			QString text=xmlReader.readElementText();
@@ -11064,6 +10081,9 @@ TimeConstraint* Rules::read2ActivitiesConsecutive(QXmlStreamReader& xmlReader, X
 			QString text=xmlReader.readElementText();
 			cn->secondActivityId=text.toInt();
 			log.verbose("    Read second activity id="+CustomFETString::number(cn->secondActivityId)+"\n");
+		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -11078,39 +10098,8 @@ TimeConstraint* Rules::read2ActivitiesGrouped(QXmlStreamReader& xmlReader, XmlLo
 	ConstraintTwoActivitiesGrouped* cn=new ConstraintTwoActivitiesGrouped();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="First_Activity_Id"){
 			QString text=xmlReader.readElementText();
@@ -11121,6 +10110,9 @@ TimeConstraint* Rules::read2ActivitiesGrouped(QXmlStreamReader& xmlReader, XmlLo
 			QString text=xmlReader.readElementText();
 			cn->secondActivityId=text.toInt();
 			log.verbose("    Read second activity id="+CustomFETString::number(cn->secondActivityId)+"\n");
+		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -11135,20 +10127,8 @@ TimeConstraint* Rules::read3ActivitiesGrouped(QXmlStreamReader& xmlReader, XmlLo
 	ConstraintThreeActivitiesGrouped* cn=new ConstraintThreeActivitiesGrouped();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="First_Activity_Id"){
 			QString text=xmlReader.readElementText();
@@ -11178,39 +10158,8 @@ TimeConstraint* Rules::read2ActivitiesOrdered(QXmlStreamReader& xmlReader, XmlLo
 	ConstraintTwoActivitiesOrdered* cn=new ConstraintTwoActivitiesOrdered();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="First_Activity_Id"){
 			QString text=xmlReader.readElementText();
@@ -11221,6 +10170,9 @@ TimeConstraint* Rules::read2ActivitiesOrdered(QXmlStreamReader& xmlReader, XmlLo
 			QString text=xmlReader.readElementText();
 			cn->secondActivityId=text.toInt();
 			log.verbose("    Read second activity id="+CustomFETString::number(cn->secondActivityId)+"\n");
+		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -11235,39 +10187,8 @@ TimeConstraint* Rules::readTwoActivitiesConsecutive(QXmlStreamReader& xmlReader,
 	ConstraintTwoActivitiesConsecutive* cn=new ConstraintTwoActivitiesConsecutive();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="First_Activity_Id"){
 			QString text=xmlReader.readElementText();
@@ -11278,6 +10199,9 @@ TimeConstraint* Rules::readTwoActivitiesConsecutive(QXmlStreamReader& xmlReader,
 			QString text=xmlReader.readElementText();
 			cn->secondActivityId=text.toInt();
 			log.verbose("    Read second activity id="+CustomFETString::number(cn->secondActivityId)+"\n");
+		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -11292,39 +10216,8 @@ TimeConstraint* Rules::readTwoActivitiesGrouped(QXmlStreamReader& xmlReader, Xml
 	ConstraintTwoActivitiesGrouped* cn=new ConstraintTwoActivitiesGrouped();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="First_Activity_Id"){
 			QString text=xmlReader.readElementText();
@@ -11335,6 +10228,9 @@ TimeConstraint* Rules::readTwoActivitiesGrouped(QXmlStreamReader& xmlReader, Xml
 			QString text=xmlReader.readElementText();
 			cn->secondActivityId=text.toInt();
 			log.verbose("    Read second activity id="+CustomFETString::number(cn->secondActivityId)+"\n");
+		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -11349,20 +10245,8 @@ TimeConstraint* Rules::readThreeActivitiesGrouped(QXmlStreamReader& xmlReader, X
 	ConstraintThreeActivitiesGrouped* cn=new ConstraintThreeActivitiesGrouped();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="First_Activity_Id"){
 			QString text=xmlReader.readElementText();
@@ -11392,39 +10276,8 @@ TimeConstraint* Rules::readTwoActivitiesOrdered(QXmlStreamReader& xmlReader, Xml
 	ConstraintTwoActivitiesOrdered* cn=new ConstraintTwoActivitiesOrdered();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="First_Activity_Id"){
 			QString text=xmlReader.readElementText();
@@ -11435,6 +10288,9 @@ TimeConstraint* Rules::readTwoActivitiesOrdered(QXmlStreamReader& xmlReader, Xml
 			QString text=xmlReader.readElementText();
 			cn->secondActivityId=text.toInt();
 			log.verbose("    Read second activity id="+CustomFETString::number(cn->secondActivityId)+"\n");
+		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -11456,39 +10312,8 @@ TimeConstraint* Rules::readActivityPreferredTimes(QXmlStreamReader& xmlReader, X
 	i=0;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Activity_Id"){
 			QString text=xmlReader.readElementText();
@@ -11568,6 +10393,9 @@ TimeConstraint* Rules::readActivityPreferredTimes(QXmlStreamReader& xmlReader, X
 			assert(i==cn->days_L.count());
 			assert(i==cn->hours_L.count());
 		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
+		}
 		else{
 			xmlReader.skipCurrentElement();
 			log.numberOfUnrecognizedFields++;
@@ -11594,39 +10422,8 @@ TimeConstraint* Rules::readActivityPreferredTimeSlots(QXmlStreamReader& xmlReade
 	i=0;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Activity_Id"){
 			QString text=xmlReader.readElementText();
@@ -11707,6 +10504,9 @@ TimeConstraint* Rules::readActivityPreferredTimeSlots(QXmlStreamReader& xmlReade
 			assert(i==cn->p_days_L.count());
 			assert(i==cn->p_hours_L.count());
 		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
+		}
 		else{
 			xmlReader.skipCurrentElement();
 			log.numberOfUnrecognizedFields++;
@@ -11733,39 +10533,8 @@ TimeConstraint* Rules::readActivityPreferredStartingTimes(QXmlStreamReader& xmlR
 	i=0;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Activity_Id"){
 			QString text=xmlReader.readElementText();
@@ -11845,6 +10614,9 @@ TimeConstraint* Rules::readActivityPreferredStartingTimes(QXmlStreamReader& xmlR
 			}
 			assert(i==cn->days_L.count());
 			assert(i==cn->hours_L.count());
+		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -12022,20 +10794,8 @@ TimeConstraint* Rules::readBreakTimes(QXmlStreamReader& xmlReader, XmlLog &log){
 	int i=0;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Read weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 
 		else if(xmlReader.name()=="Number_of_Break_Times"){
@@ -12132,39 +10892,11 @@ TimeConstraint* Rules::readTeachersNoGaps(QXmlStreamReader& xmlReader, XmlLog &l
 	//ConstraintTeachersNoGaps* cn=new ConstraintTeachersNoGaps();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -12179,44 +10911,16 @@ TimeConstraint* Rules::readTeachersMaxGapsPerWeek(QXmlStreamReader& xmlReader, X
 	ConstraintTeachersMaxGapsPerWeek* cn=new ConstraintTeachersMaxGapsPerWeek();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Max_Gaps"){
 			QString text=xmlReader.readElementText();
 			cn->maxGaps=text.toInt();
 			log.verbose("    Adding max gaps="+CustomFETString::number(cn->maxGaps)+"\n");
 		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -12231,49 +10935,21 @@ TimeConstraint* Rules::readTeacherMaxGapsPerWeek(QXmlStreamReader& xmlReader, Xm
 	ConstraintTeacherMaxGapsPerWeek* cn=new ConstraintTeacherMaxGapsPerWeek();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Teacher_Name"){
 			QString text=xmlReader.readElementText();
 			cn->teacherName=text;
 			log.verbose("    Read teacher name="+cn->teacherName+"\n");
 		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
 		else if(xmlReader.name()=="Max_Gaps"){
 			QString text=xmlReader.readElementText();
 			cn->maxGaps=text.toInt();
 			log.verbose("    Adding max gaps="+CustomFETString::number(cn->maxGaps)+"\n");
 		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -12288,45 +10964,18 @@ TimeConstraint* Rules::readTeachersMaxGapsPerDay(QXmlStreamReader& xmlReader, Xm
 	ConstraintTeachersMaxGapsPerDay* cn=new ConstraintTeachersMaxGapsPerDay();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Max_Gaps"){
 			QString text=xmlReader.readElementText();
 			cn->maxGaps=text.toInt();
 			log.verbose("    Adding max gaps="+CustomFETString::number(cn->maxGaps)+"\n");
 		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
+
 		else{
 			xmlReader.skipCurrentElement();
 			log.numberOfUnrecognizedFields++;
@@ -12340,49 +10989,21 @@ TimeConstraint* Rules::readTeacherMaxGapsPerDay(QXmlStreamReader& xmlReader, Xml
 	ConstraintTeacherMaxGapsPerDay* cn=new ConstraintTeacherMaxGapsPerDay();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Teacher_Name"){
 			QString text=xmlReader.readElementText();
 			cn->teacherName=text;
 			log.verbose("    Read teacher name="+cn->teacherName+"\n");
 		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
 		else if(xmlReader.name()=="Max_Gaps"){
 			QString text=xmlReader.readElementText();
 			cn->maxGaps=text.toInt();
 			log.verbose("    Adding max gaps="+CustomFETString::number(cn->maxGaps)+"\n");
 		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -12402,40 +11023,11 @@ TimeConstraint* Rules::readStudentsNoGaps(QXmlStreamReader& xmlReader, XmlLog &l
 	//bool compulsory_read=false;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
-			//compulsory_read=true;
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -12455,45 +11047,16 @@ TimeConstraint* Rules::readStudentsSetNoGaps(QXmlStreamReader& xmlReader, XmlLog
 	//bool compulsory_read=false;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
-			//compulsory_read=true;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Students"){
 			QString text=xmlReader.readElementText();
 			cn->students=text;
 			log.verbose("    Read students name="+cn->students+"\n");
+		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -12510,45 +11073,16 @@ TimeConstraint* Rules::readStudentsMaxGapsPerWeek(QXmlStreamReader& xmlReader, X
 	//bool compulsory_read=false;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Max_Gaps"){
 			QString text=xmlReader.readElementText();
 			cn->maxGaps=text.toInt();
 			log.verbose("    Adding max gaps="+CustomFETString::number(cn->maxGaps)+"\n");
 		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
-			//compulsory_read=true;
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -12565,50 +11099,21 @@ TimeConstraint* Rules::readStudentsSetMaxGapsPerWeek(QXmlStreamReader& xmlReader
 	//bool compulsory_read=false;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Max_Gaps"){
 			QString text=xmlReader.readElementText();
 			cn->maxGaps=text.toInt();
 			log.verbose("    Adding max gaps="+CustomFETString::number(cn->maxGaps)+"\n");
 		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
-			//compulsory_read=true;
-		}
 		else if(xmlReader.name()=="Students"){
 			QString text=xmlReader.readElementText();
 			cn->students=text;
 			log.verbose("    Read students name="+cn->students+"\n");
+		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -12625,45 +11130,16 @@ TimeConstraint* Rules::readStudentsMaxGapsPerDay(QXmlStreamReader& xmlReader, Xm
 	//bool compulsory_read=false;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Max_Gaps"){
 			QString text=xmlReader.readElementText();
 			cn->maxGaps=text.toInt();
 			log.verbose("    Adding max gaps="+CustomFETString::number(cn->maxGaps)+"\n");
 		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
-			//compulsory_read=true;
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -12680,50 +11156,21 @@ TimeConstraint* Rules::readStudentsSetMaxGapsPerDay(QXmlStreamReader& xmlReader,
 	//bool compulsory_read=false;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Max_Gaps"){
 			QString text=xmlReader.readElementText();
 			cn->maxGaps=text.toInt();
 			log.verbose("    Adding max gaps="+CustomFETString::number(cn->maxGaps)+"\n");
 		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
-			//compulsory_read=true;
-		}
 		else if(xmlReader.name()=="Students"){
 			QString text=xmlReader.readElementText();
 			cn->students=text;
 			log.verbose("    Read students name="+cn->students+"\n");
+		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -12741,39 +11188,11 @@ TimeConstraint* Rules::readStudentsEarly(QXmlStreamReader& xmlReader, XmlLog &lo
 
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -12789,26 +11208,8 @@ TimeConstraint* Rules::readStudentsEarlyMaxBeginningsAtSecondHour(QXmlStreamRead
 	cn->maxBeginningsAtSecondHour=-1;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Max_Beginnings_At_Second_Hour"){
 			QString text=xmlReader.readElementText();
@@ -12821,18 +11222,8 @@ TimeConstraint* Rules::readStudentsEarlyMaxBeginningsAtSecondHour(QXmlStreamRead
 			}
 			log.verbose("    Adding max beginnings at second hour="+CustomFETString::number(cn->maxBeginningsAtSecondHour)+"\n");
 		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -12857,44 +11248,16 @@ TimeConstraint* Rules::readStudentsSetEarly(QXmlStreamReader& xmlReader, XmlLog 
 
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Students"){
 			QString text=xmlReader.readElementText();
 			cn->students=text;
 			log.verbose("    Read students name="+cn->students+"\n");
+		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -12910,26 +11273,8 @@ TimeConstraint* Rules::readStudentsSetEarlyMaxBeginningsAtSecondHour(QXmlStreamR
 	cn->maxBeginningsAtSecondHour=-1;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Max_Beginnings_At_Second_Hour"){
 			QString text=xmlReader.readElementText();
@@ -12942,23 +11287,13 @@ TimeConstraint* Rules::readStudentsSetEarlyMaxBeginningsAtSecondHour(QXmlStreamR
 			}
 			log.verbose("    Adding max beginnings at second hour="+CustomFETString::number(cn->maxBeginningsAtSecondHour)+"\n");
 		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
-		}
 		else if(xmlReader.name()=="Students"){
 			QString text=xmlReader.readElementText();
 			cn->students=text;
 			log.verbose("    Read students name="+cn->students+"\n");
+		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -12993,39 +11328,8 @@ TimeConstraint* Rules::readActivitiesPreferredTimes(QXmlStreamReader& xmlReader,
 	i=0;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Teacher_Name"){
 			QString text=xmlReader.readElementText();
@@ -13132,6 +11436,9 @@ TimeConstraint* Rules::readActivitiesPreferredTimes(QXmlStreamReader& xmlReader,
 			assert(i==cn->days_L.count());
 			assert(i==cn->hours_L.count());
 		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
+		}
 		else{
 			xmlReader.skipCurrentElement();
 			log.numberOfUnrecognizedFields++;
@@ -13164,39 +11471,8 @@ TimeConstraint* Rules::readActivitiesPreferredTimeSlots(QXmlStreamReader& xmlRea
 	i=0;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Teacher_Name"){
 			QString text=xmlReader.readElementText();
@@ -13313,6 +11589,9 @@ TimeConstraint* Rules::readActivitiesPreferredTimeSlots(QXmlStreamReader& xmlRea
 			assert(i==cn->p_days_L.count());
 			assert(i==cn->p_hours_L.count());
 		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
+		}
 		else{
 			xmlReader.skipCurrentElement();
 			log.numberOfUnrecognizedFields++;
@@ -13345,39 +11624,8 @@ TimeConstraint* Rules::readActivitiesPreferredStartingTimes(QXmlStreamReader& xm
 	i=0;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Teacher_Name"){
 			QString text=xmlReader.readElementText();
@@ -13493,6 +11741,9 @@ TimeConstraint* Rules::readActivitiesPreferredStartingTimes(QXmlStreamReader& xm
 			}
 			assert(i==cn->days_L.count());
 			assert(i==cn->hours_L.count());
+		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else{
 			xmlReader.skipCurrentElement();
@@ -13527,44 +11778,13 @@ TimeConstraint* Rules::readSubactivitiesPreferredTimeSlots(QXmlStreamReader& xml
 	i=0;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Component_Number"){
 			QString text=xmlReader.readElementText();
 			cn->componentNumber=text.toInt();
 			log.verbose("    Adding component number="+CustomFETString::number(cn->componentNumber)+"\n");
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
 		}
 		else if(xmlReader.name()=="Teacher_Name"){
 			QString text=xmlReader.readElementText();
@@ -13671,6 +11891,9 @@ TimeConstraint* Rules::readSubactivitiesPreferredTimeSlots(QXmlStreamReader& xml
 			assert(i==cn->p_days_L.count());
 			assert(i==cn->p_hours_L.count());
 		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
+		}
 		else{
 			xmlReader.skipCurrentElement();
 			log.numberOfUnrecognizedFields++;
@@ -13703,44 +11926,13 @@ TimeConstraint* Rules::readSubactivitiesPreferredStartingTimes(QXmlStreamReader&
 	i=0;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight"){
-			//cn->weight=customFETStrToDouble(text);
-			xmlReader.skipCurrentElement();
-			log.verbose("    Ignoring old tag - weight - making weight percentage=100\n");
-			cn->weightPercentage=100;
-		}
-		else if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Component_Number"){
 			QString text=xmlReader.readElementText();
 			cn->componentNumber=text.toInt();
 			log.verbose("    Adding component number="+CustomFETString::number(cn->componentNumber)+"\n");
-		}
-		else if(xmlReader.name()=="Compulsory"){
-			QString text=xmlReader.readElementText();
-			if(text=="yes"){
-				//cn->compulsory=true;
-				log.verbose("    Ignoring old tag - Current constraint is compulsory\n");
-				cn->weightPercentage=100;
-			}
-			else{
-				//cn->compulsory=false;
-				log.verbose("    Old tag - current constraint is not compulsory - making weightPercentage=0%\n");
-				cn->weightPercentage=0;
-			}
 		}
 		else if(xmlReader.name()=="Teacher_Name"){
 			QString text=xmlReader.readElementText();
@@ -13847,6 +12039,9 @@ TimeConstraint* Rules::readSubactivitiesPreferredStartingTimes(QXmlStreamReader&
 			assert(i==cn->days_L.count());
 			assert(i==cn->hours_L.count());
 		}
+		else if (cn->readXmlObsoleteBasicTags(xmlReader, log)) {
+			continue;
+		}
 		else{
 			xmlReader.skipCurrentElement();
 			log.numberOfUnrecognizedFields++;
@@ -13874,20 +12069,8 @@ TimeConstraint* Rules::readActivitiesOccupyMaxTimeSlotsFromSelection(QXmlStreamR
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
 
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Number_of_Activities"){
 			QString text=xmlReader.readElementText();
@@ -14014,20 +12197,8 @@ TimeConstraint* Rules::readActivitiesMaxSimultaneousInSelectedTimeSlots(QXmlStre
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
 
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Number_of_Activities"){
 			QString text=xmlReader.readElementText();
@@ -14148,20 +12319,8 @@ TimeConstraint* Rules::readTeacherMaxSpanPerDay(QXmlStreamReader& xmlReader, Xml
 	ConstraintTeacherMaxSpanPerDay* cn=new ConstraintTeacherMaxSpanPerDay();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Teacher_Name"){
 			QString text=xmlReader.readElementText();
@@ -14186,20 +12345,8 @@ TimeConstraint* Rules::readTeachersMaxSpanPerDay(QXmlStreamReader& xmlReader, Xm
 	ConstraintTeachersMaxSpanPerDay* cn=new ConstraintTeachersMaxSpanPerDay();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Max_Span"){
 			QString text=xmlReader.readElementText();
@@ -14219,20 +12366,8 @@ TimeConstraint* Rules::readStudentsSetMaxSpanPerDay(QXmlStreamReader& xmlReader,
 	ConstraintStudentsSetMaxSpanPerDay* cn=new ConstraintStudentsSetMaxSpanPerDay();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Students"){
 			QString text=xmlReader.readElementText();
@@ -14257,20 +12392,8 @@ TimeConstraint* Rules::readStudentsMaxSpanPerDay(QXmlStreamReader& xmlReader, Xm
 	ConstraintStudentsMaxSpanPerDay* cn=new ConstraintStudentsMaxSpanPerDay();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Max_Span"){
 			QString text=xmlReader.readElementText();
@@ -14291,26 +12414,14 @@ TimeConstraint* Rules::readTeacherMinRestingHours(QXmlStreamReader& xmlReader, X
 	cn->circular=true;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Circular"){
 			QString text=xmlReader.readElementText();
 			if(text=="false"){
 				cn->circular=false;
 			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
 		}
 		else if(xmlReader.name()=="Teacher_Name"){
 			QString text=xmlReader.readElementText();
@@ -14336,26 +12447,14 @@ TimeConstraint* Rules::readTeachersMinRestingHours(QXmlStreamReader& xmlReader, 
 	cn->circular=true;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Circular"){
 			QString text=xmlReader.readElementText();
 			if(text=="false"){
 				cn->circular=false;
 			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
 		}
 		else if(xmlReader.name()=="Minimum_Resting_Hours"){
 			QString text=xmlReader.readElementText();
@@ -14376,26 +12475,14 @@ TimeConstraint* Rules::readStudentsSetMinRestingHours(QXmlStreamReader& xmlReade
 	cn->circular=true;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Circular"){
 			QString text=xmlReader.readElementText();
 			if(text=="false"){
 				cn->circular=false;
 			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
 		}
 		else if(xmlReader.name()=="Students"){
 			QString text=xmlReader.readElementText();
@@ -14421,26 +12508,14 @@ TimeConstraint* Rules::readStudentsMinRestingHours(QXmlStreamReader& xmlReader, 
 	cn->circular=true;
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Circular"){
 			QString text=xmlReader.readElementText();
 			if(text=="false"){
 				cn->circular=false;
 			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
 		}
 		else if(xmlReader.name()=="Minimum_Resting_Hours"){
 			QString text=xmlReader.readElementText();
@@ -14461,20 +12536,8 @@ TimeConstraint *Rules::readTeacherMinContinuousGapInInterval(QXmlStreamReader &x
 	ConstraintTeacherMinContinuousGapInInterval* cn = new ConstraintTeacherMinContinuousGapInInterval();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Teacher_Name"){
 			QString text=xmlReader.readElementText();
@@ -14516,20 +12579,8 @@ TimeConstraint *Rules::readTeachersMinContinuousGapInInterval(QXmlStreamReader &
 	ConstraintTeachersMinContinuousGapInInterval* cn = new ConstraintTeachersMinContinuousGapInInterval();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Minimum_Gap_Duration"){
 			QString text=xmlReader.readElementText();
@@ -14566,20 +12617,8 @@ TimeConstraint *Rules::readStudentsSetMinContinuousGapInInterval(QXmlStreamReade
 	ConstraintStudentsSetMinContinuousGapInInterval* cn = new ConstraintStudentsSetMinContinuousGapInInterval();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Students"){
 			QString text=xmlReader.readElementText();
@@ -14621,20 +12660,8 @@ TimeConstraint *Rules::readStudentsMinContinuousGapInInterval(QXmlStreamReader &
 	ConstraintStudentsMinContinuousGapInInterval* cn = new ConstraintStudentsMinContinuousGapInInterval();
 	while(xmlReader.readNextStartElement()){
 		log.verbose("    Found "+xmlReader.name().toString()+" tag\n");
-		if(xmlReader.name()=="Weight_Percentage"){
-			QString text=xmlReader.readElementText();
-			cn->weightPercentage=customFETStrToDouble(text);
-			log.verbose("    Adding weight percentage="+CustomFETString::number(cn->weightPercentage)+"\n");
-		}
-		else if(xmlReader.name()=="Active"){
-			QString text=xmlReader.readElementText();
-			if(text=="false"){
-				cn->active=false;
-			}
-		}
-		else if(xmlReader.name()=="Comments"){
-			QString text=xmlReader.readElementText();
-			cn->comments=text;
+		if (cn->readXmlBasicTags(xmlReader, log)) {
+			continue;
 		}
 		else if(xmlReader.name()=="Minimum_Gap_Duration"){
 			QString text=xmlReader.readElementText();

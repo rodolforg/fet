@@ -39,6 +39,9 @@ class Subject;
 class ActivityTag;
 class StudentsSet;
 
+class QXmlStreamReader;
+class XmlLog;
+
 typedef QList<TimeConstraint*> TimeConstraintsList;
 
 const int CONSTRAINT_GENERIC_TIME										=0;
@@ -243,6 +246,16 @@ public:
 	virtual bool hasWrongDayOrHour(const Rules& r) const=0;
 	virtual bool canRepairWrongDayOrHour(const Rules& r) const=0;
 	virtual bool repairWrongDayOrHour(Rules& r)=0;
+
+	/**
+	 * @brief readXmlBasicTags read constraints common tags from XML stream
+	 * This means properties: active, weight percentage and comments.
+	 * @param xmlReader The Xml stream source. It must point to a start tag element
+	 * @param log registers workarounds for old tags
+	 * @return true if current tag was successfully parsed. If tag is unknown returns false.
+	 */
+	bool readXmlBasicTags(QXmlStreamReader& xmlReader, XmlLog &log);
+	bool readXmlObsoleteBasicTags(QXmlStreamReader& xmlReader, XmlLog &log);
 };
 
 /**
