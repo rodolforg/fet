@@ -31,8 +31,8 @@ class FetCommandLine: public QObject{
 	Q_OBJECT
 };
 
-void commandLineMessage(QWidget* parent, const QString& title, const QString& message);
-int commandLineMessage(QWidget* parent, const QString& title, const QString& message,
+void commandLineMessage(const QString& title, const QString& message);
+int commandLineMessage(const QString& title, const QString& message,
  const QString& button0Text, const QString& button1Text, const QString& button2Text, int defaultButton, int escapeButton);
 #else
 //Just to disable a Qt moc warning

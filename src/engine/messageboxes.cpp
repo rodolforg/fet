@@ -27,20 +27,16 @@ using namespace std;
 #include "longtextmessagebox.h"
 
 #ifdef FET_COMMAND_LINE
-void commandLineMessage(QWidget* parent, const QString& title, const QString& message)
+void commandLineMessage(const QString& title, const QString& message)
 {
-	Q_UNUSED(parent);
-
 	cout<<qPrintable(FetCommandLine::tr("Title: %1").arg(title))<<endl;
 	cout<<qPrintable(FetCommandLine::tr("Message: %1").arg(message))<<endl;
 	cout<<endl;
 }
 
-int commandLineMessage(QWidget* parent, const QString& title, const QString& message,
+int commandLineMessage(const QString& title, const QString& message,
  const QString& button0Text, const QString& button1Text, const QString& button2Text, int defaultButton, int escapeButton)
 {
-	Q_UNUSED(parent);
-
 	cout<<qPrintable(FetCommandLine::tr("Title: %1").arg(title))<<endl;
 	cout<<qPrintable(FetCommandLine::tr("Message: %1").arg(message))<<endl;
 
@@ -139,7 +135,9 @@ void IrreconcilableCriticalMessage::critical(QWidget* parent, const QString& tit
 #ifndef FET_COMMAND_LINE
 	QMessageBox::critical(parent, title, message);
 #else
-	commandLineMessage(parent, title, message);
+	Q_UNUSED(parent);
+
+	commandLineMessage(title, message);
 #endif
 }
 

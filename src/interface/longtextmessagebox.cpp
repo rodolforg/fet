@@ -157,8 +157,9 @@ int LongTextMessageBox::confirmationWithDimensions
 	Q_UNUSED(MAXW);
 	Q_UNUSED(MINH);
 	Q_UNUSED(MAXH);
+	Q_UNUSED(parent);
 	
-	commandLineMessage(parent, title, text, button0Text, button1Text, button2Text, defaultButton, escapeButton);
+	commandLineMessage(title, text, button0Text, button1Text, button2Text, defaultButton, escapeButton);
 	return defaultButton;
 #endif
 }
@@ -237,8 +238,9 @@ void LongTextMessageBox::informationWithDimensions
 	Q_UNUSED(MAXW);
 	Q_UNUSED(MINH);
 	Q_UNUSED(MAXH);
-	
-	commandLineMessage(parent, title, text);
+	Q_UNUSED(parent);
+
+	commandLineMessage(title, text);
 #endif
 }
 
