@@ -48,52 +48,52 @@ void ConstraintTeachersMinContinuousGapInIntervalTest::OneTeacher_CheckInvalidVa
 	rules.addTeacher(t);
 	rules.computeInternalStructure(NULL);
 
-	ConstraintTeacherMinContinuousGapInInterval *ctr = new ConstraintTeacherMinContinuousGapInInterval(100.0, 2, "t1", 1, 5);
+	ConstraintTeacherMinContinuousGapInInterval ctr(100.0, 2, "t1", 1, 5);
 
-	ctr->weightPercentage = 120;
-	bool result = ctr->computeInternalStructure(NULL, rules);
+	ctr.weightPercentage = 120;
+	bool result = ctr.computeInternalStructure(NULL, rules);
 	QVERIFY2(!result, "Accepted weight > 100%");
 
-	ctr->weightPercentage = -2;
-	result = ctr->computeInternalStructure(NULL, rules);
+	ctr.weightPercentage = -2;
+	result = ctr.computeInternalStructure(NULL, rules);
 	QVERIFY2(!result, "Accepted weight < 0%");
 
-	ctr->weightPercentage = 100;
+	ctr.weightPercentage = 100;
 
-	ctr->minGapDuration = -1;
-	result = ctr->computeInternalStructure(NULL, rules);
+	ctr.minGapDuration = -1;
+	result = ctr.computeInternalStructure(NULL, rules);
 	QVERIFY2(!result, "Accepted min continuous gap < 0");
 
-	ctr->minGapDuration = ctr->endHour-ctr->startHour+1;
-	result = ctr->computeInternalStructure(NULL, rules);
+	ctr.minGapDuration = ctr.endHour-ctr.startHour+1;
+	result = ctr.computeInternalStructure(NULL, rules);
 	QVERIFY2(!result, "Accepted min continuous gap > interval");
 
-	ctr->minGapDuration = 2;
+	ctr.minGapDuration = 2;
 
-	ctr->startHour = -1;
-	result = ctr->computeInternalStructure(NULL, rules);
+	ctr.startHour = -1;
+	result = ctr.computeInternalStructure(NULL, rules);
 	QVERIFY2(!result, "Accepted start hour < 0");
 
-	ctr->startHour = ctr->endHour+1;
-	result = ctr->computeInternalStructure(NULL, rules);
+	ctr.startHour = ctr.endHour+1;
+	result = ctr.computeInternalStructure(NULL, rules);
 	QVERIFY2(!result, "Accepted start hour > end hour");
 
-	ctr->startHour = 1;
+	ctr.startHour = 1;
 
-	ctr->endHour = 0;
-	result = ctr->computeInternalStructure(NULL, rules);
+	ctr.endHour = 0;
+	result = ctr.computeInternalStructure(NULL, rules);
 	QVERIFY2(!result, "Accepted start hour > end hour");
 
-	ctr->endHour = -1;
-	result = ctr->computeInternalStructure(NULL, rules);
+	ctr.endHour = -1;
+	result = ctr.computeInternalStructure(NULL, rules);
 	QVERIFY2(!result, "Accepted end hour < 0");
 
-	ctr->endHour = rules.nHoursPerDay + 1;
-	result = ctr->computeInternalStructure(NULL, rules);
+	ctr.endHour = rules.nHoursPerDay + 1;
+	result = ctr.computeInternalStructure(NULL, rules);
 	QVERIFY2(!result, "Accepted end hour > hours per day");
 
-	ctr->endHour = rules.nHoursPerDay;
-	result = ctr->computeInternalStructure(NULL, rules);
+	ctr.endHour = rules.nHoursPerDay;
+	result = ctr.computeInternalStructure(NULL, rules);
 	QVERIFY2(result, "Does not accept end-of-day as end hour");
 }
 
@@ -103,52 +103,52 @@ void ConstraintTeachersMinContinuousGapInIntervalTest::AllTeachers_CheckInvalidV
 	rules.init();
 	rules.computeInternalStructure(NULL);
 
-	ConstraintTeachersMinContinuousGapInInterval *ctr = new ConstraintTeachersMinContinuousGapInInterval(100.0, 2, 1, 5);
+	ConstraintTeachersMinContinuousGapInInterval ctr(100.0, 2, 1, 5);
 
-	ctr->weightPercentage = 120;
-	bool result = ctr->computeInternalStructure(NULL, rules);
+	ctr.weightPercentage = 120;
+	bool result = ctr.computeInternalStructure(NULL, rules);
 	QVERIFY2(!result, "Accepted weight > 100%");
 
-	ctr->weightPercentage = -2;
-	result = ctr->computeInternalStructure(NULL, rules);
+	ctr.weightPercentage = -2;
+	result = ctr.computeInternalStructure(NULL, rules);
 	QVERIFY2(!result, "Accepted weight < 0%");
 
-	ctr->weightPercentage = 100;
+	ctr.weightPercentage = 100;
 
-	ctr->minGapDuration = -1;
-	result = ctr->computeInternalStructure(NULL, rules);
+	ctr.minGapDuration = -1;
+	result = ctr.computeInternalStructure(NULL, rules);
 	QVERIFY2(!result, "Accepted min continuous gap < 0");
 
-	ctr->minGapDuration = ctr->endHour-ctr->startHour+1;
-	result = ctr->computeInternalStructure(NULL, rules);
+	ctr.minGapDuration = ctr.endHour-ctr.startHour+1;
+	result = ctr.computeInternalStructure(NULL, rules);
 	QVERIFY2(!result, "Accepted min continuous gap > interval");
 
-	ctr->minGapDuration = 2;
+	ctr.minGapDuration = 2;
 
-	ctr->startHour = -1;
-	result = ctr->computeInternalStructure(NULL, rules);
+	ctr.startHour = -1;
+	result = ctr.computeInternalStructure(NULL, rules);
 	QVERIFY2(!result, "Accepted start hour < 0");
 
-	ctr->startHour = ctr->endHour+1;
-	result = ctr->computeInternalStructure(NULL, rules);
+	ctr.startHour = ctr.endHour+1;
+	result = ctr.computeInternalStructure(NULL, rules);
 	QVERIFY2(!result, "Accepted start hour > end hour");
 
-	ctr->startHour = 1;
+	ctr.startHour = 1;
 
-	ctr->endHour = 0;
-	result = ctr->computeInternalStructure(NULL, rules);
+	ctr.endHour = 0;
+	result = ctr.computeInternalStructure(NULL, rules);
 	QVERIFY2(!result, "Accepted start hour > end hour");
 
-	ctr->endHour = -1;
-	result = ctr->computeInternalStructure(NULL, rules);
+	ctr.endHour = -1;
+	result = ctr.computeInternalStructure(NULL, rules);
 	QVERIFY2(!result, "Accepted end hour < 0");
 
-	ctr->endHour = rules.nHoursPerDay + 1;
-	result = ctr->computeInternalStructure(NULL, rules);
+	ctr.endHour = rules.nHoursPerDay + 1;
+	result = ctr.computeInternalStructure(NULL, rules);
 	QVERIFY2(!result, "Accepted end hour > hours per day");
 
-	ctr->endHour = rules.nHoursPerDay;
-	result = ctr->computeInternalStructure(NULL, rules);
+	ctr.endHour = rules.nHoursPerDay;
+	result = ctr.computeInternalStructure(NULL, rules);
 	QVERIFY2(result, "Does not accept end-of-day as end hour");
 }
 
