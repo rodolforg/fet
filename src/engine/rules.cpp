@@ -4522,7 +4522,7 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 
 	QString logPathString = outputDirPath;
 	if (!outputDirPath.isEmpty() && !outputDirPath.endsWith(FILE_SEP))
-		logPathString.prepend(FILE_SEP);
+		logPathString.append(FILE_SEP);
 	logPathString.append("logs");
 
 	QDir logDir(logPathString);
