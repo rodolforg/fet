@@ -6022,26 +6022,23 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 			}
 		}
 		else if(xmlReader.name()=="Time_Constraints_List"){
-			bool reportMaxBeginningsAtSecondHourChange=true;
-			bool reportMaxGapsChange=true;
-			bool reportStudentsSetNotAvailableChange=true;
-			bool reportTeacherNotAvailableChange=true;
-			bool reportBreakChange=true;
+			int reportMaxBeginningsAtSecondHourChangeId = ErrorCode::nextGroupId();
+			int reportMaxGapsChangeId = ErrorCode::nextGroupId();
+			int reportStudentsSetNotAvailableChangeId = ErrorCode::nextGroupId();
+			int reportTeacherNotAvailableChangeId = ErrorCode::nextGroupId();
+			int reportBreakChangeId = ErrorCode::nextGroupId();
 			
-			bool reportActivityPreferredTimeChange=true;
+			int reportActivityPreferredTimeChangeId = ErrorCode::nextGroupId();
 			
-			bool reportActivityPreferredTimesChange=true;
-			bool reportActivitiesPreferredTimesChange=true;
+			int reportActivityPreferredTimesChangeId = ErrorCode::nextGroupId();
+			int reportActivitiesPreferredTimesChangeId = ErrorCode::nextGroupId();
 			
-			bool reportUnspecifiedPermanentlyLockedTime=true;
+			int reportUnspecifiedPermanentlyLockedTimeId = ErrorCode::nextGroupId();
 			
-			bool reportUnspecifiedDayOrHourPreferredStartingTime=true;
+			int reportUnspecifiedDayOrHourPreferredStartingTimeId = ErrorCode::nextGroupId();
 			
-#if 0
-			bool reportIncorrectMinDays=true;
-#endif
-		
-			bool seeNextWarnNotAddedTimeConstraint=true;
+			ErrorList errors;
+			int seeNextWarnNotAddedTimeConstraintId = ErrorCode::nextGroupId();
 			
 			int nc=0;
 			TimeConstraint *crt_constraint;
@@ -6054,14 +6051,10 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 					crt_constraint=readBasicCompulsoryTime(xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintTeacherNotAvailable"){
-					if(reportTeacherNotAvailableChange){
-						int t=RulesReconcilableMessage::information(parent, tr("FET information"),
+					errors << ErrorCode(ErrorCode::INFO,
 						 tr("File contains constraint teacher not available, which is old (it was improved in FET 5.5.0), and will be converted"
 						 " to the similar constraint of this type, constraint teacher not available times (a matrix)."),
-						  tr("Skip rest"), tr("See next"), QString(), 1, 0 );
-						if(t==0)
-							reportTeacherNotAvailableChange=false;
-					}
+							reportTeacherNotAvailableChangeId);
 
 					crt_constraint=readTeacherNotAvailable(xmlReader, log);
 				}
@@ -6083,32 +6076,28 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 				}
 
 				else if(xmlReader.name()=="ConstraintTeacherIntervalMaxDaysPerWeek"){
-					crt_constraint=readTeacherIntervalMaxDaysPerWeek(parent, xmlReader, log);
+					crt_constraint=readTeacherIntervalMaxDaysPerWeek(errors, xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintTeachersIntervalMaxDaysPerWeek"){
-					crt_constraint=readTeachersIntervalMaxDaysPerWeek(parent, xmlReader, log);
+					crt_constraint=readTeachersIntervalMaxDaysPerWeek(errors, xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintStudentsSetMaxDaysPerWeek"){
-					crt_constraint=readStudentsSetMaxDaysPerWeek(parent, xmlReader, log);
+					crt_constraint=readStudentsSetMaxDaysPerWeek(errors, xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintStudentsMaxDaysPerWeek"){
-					crt_constraint=readStudentsMaxDaysPerWeek(parent, xmlReader, log);
+					crt_constraint=readStudentsMaxDaysPerWeek(errors, xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintStudentsSetIntervalMaxDaysPerWeek"){
-					crt_constraint=readStudentsSetIntervalMaxDaysPerWeek(parent, xmlReader, log);
+					crt_constraint=readStudentsSetIntervalMaxDaysPerWeek(errors, xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintStudentsIntervalMaxDaysPerWeek"){
-					crt_constraint=readStudentsIntervalMaxDaysPerWeek(parent, xmlReader, log);
+					crt_constraint=readStudentsIntervalMaxDaysPerWeek(errors, xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintStudentsSetNotAvailable"){
-					if(reportStudentsSetNotAvailableChange){
-						int t=RulesReconcilableMessage::information(parent, tr("FET information"),
+					errors << ErrorCode(ErrorCode::INFO,
 						 tr("File contains constraint students set not available, which is old (it was improved in FET 5.5.0), and will be converted"
 						 " to the similar constraint of this type, constraint students set not available times (a matrix)."),
-						  tr("Skip rest"), tr("See next"), QString(), 1, 0 );
-						if(t==0)
-							reportStudentsSetNotAvailableChange=false;
-					}
+							reportStudentsSetNotAvailableChangeId);
 
 					crt_constraint=readStudentsSetNotAvailable(xmlReader, log);
 				}
@@ -6116,10 +6105,10 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 					crt_constraint=readStudentsSetNotAvailableTimes(xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintMinNDaysBetweenActivities"){
-					crt_constraint=readMinNDaysBetweenActivities(parent, xmlReader, log);
+					crt_constraint=readMinNDaysBetweenActivities(errors, xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintMinDaysBetweenActivities"){
-					crt_constraint=readMinDaysBetweenActivities(parent, xmlReader, log);
+					crt_constraint=readMinDaysBetweenActivities(errors, xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintMaxDaysBetweenActivities"){
 					crt_constraint=readMaxDaysBetweenActivities(xmlReader, log);
@@ -6166,44 +6155,29 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 				}
 
 				else if(xmlReader.name()=="ConstraintTeachersMinHoursDaily"){
-					crt_constraint=readTeachersMinHoursDaily(parent, xmlReader, log);
+					crt_constraint=readTeachersMinHoursDaily(errors, xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintTeacherMinHoursDaily"){
-					crt_constraint=readTeacherMinHoursDaily(parent, xmlReader, log);
+					crt_constraint=readTeacherMinHoursDaily(errors, xmlReader, log);
 				}
 				else if((xmlReader.name()=="ConstraintTeachersSubgroupsMaxHoursDaily"
 				 //TODO: erase the line below. It is only kept for compatibility with older versions
 				 || xmlReader.name()=="ConstraintTeachersSubgroupsNoMoreThanXHoursDaily") && !skipDeprecatedConstraints){
-					int t=RulesReconcilableMessage::warning(parent, tr("FET warning"),
+					errors << ErrorCode(ErrorCode::WARNING,
 					 tr("File contains deprecated constraint teachers subgroups max hours daily - will be ignored\n"),
-					 tr("Skip rest"), tr("See next"), QString(),
-					 1, 0 );
-					
-					if(t==0)
-						skipDeprecatedConstraints=true;
-					crt_constraint=NULL;
+										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
 				}
 				else if(xmlReader.name()=="ConstraintStudentsNHoursDaily" && !skipDeprecatedConstraints){
-					int t=RulesReconcilableMessage::warning(parent, tr("FET warning"),
+					errors << ErrorCode(ErrorCode::WARNING,
 					 tr("File contains deprecated constraint students n hours daily - will be ignored\n"),
-					 tr("Skip rest"), tr("See next"), QString(),
-					 1, 0 );
-					
-					if(t==0)
-						skipDeprecatedConstraints=true;
-					crt_constraint=NULL;
+										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
 				}
 				else if(xmlReader.name()=="ConstraintStudentsSetNHoursDaily" && !skipDeprecatedConstraints){
-					int t=RulesReconcilableMessage::warning(parent, tr("FET warning"),
+					errors << ErrorCode(ErrorCode::WARNING,
 					 tr("File contains deprecated constraint students set n hours daily - will be ignored\n"),
-					 tr("Skip rest"), tr("See next"), QString(),
-					 1, 0 );
-					
-					if(t==0)
-						skipDeprecatedConstraints=true;
-					crt_constraint=NULL;
+										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
 				}
 				else if(xmlReader.name()=="ConstraintStudentsMaxHoursDaily"){
@@ -6233,29 +6207,25 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 				}
 
 				else if(xmlReader.name()=="ConstraintStudentsMinHoursDaily"){
-					crt_constraint=readStudentsMinHoursDaily(parent, xmlReader, log);
+					crt_constraint=readStudentsMinHoursDaily(errors, xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintStudentsSetMinHoursDaily"){
-					crt_constraint=readStudentsSetMinHoursDaily(parent, xmlReader, log);
+					crt_constraint=readStudentsSetMinHoursDaily(errors, xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintActivityPreferredTime"){
-					if(reportActivityPreferredTimeChange){
-						int t=RulesReconcilableMessage::information(parent, tr("FET information"),
+					errors << ErrorCode(ErrorCode::INFO,
 						 tr("File contains old constraint type activity preferred time, which will be converted"
 						 " to the newer similar constraint of this type, constraint activity preferred STARTING time."
 						 " This improvement is done in versions 5.5.9 and above"),
-						  tr("Skip rest"), tr("See next"), QString(), 1, 0 );
-						if(t==0)
-							reportActivityPreferredTimeChange=false;
-					}
+						  reportActivityPreferredTimeChangeId);
 					
-					crt_constraint=readActivityPreferredTime(parent, xmlReader, log,
-						reportUnspecifiedPermanentlyLockedTime, reportUnspecifiedDayOrHourPreferredStartingTime);
+					crt_constraint=readActivityPreferredTime(errors, xmlReader, log,
+						reportUnspecifiedPermanentlyLockedTimeId, reportUnspecifiedDayOrHourPreferredStartingTimeId);
 				}
 				
 				else if(xmlReader.name()=="ConstraintActivityPreferredStartingTime"){
-					crt_constraint=readActivityPreferredStartingTime(parent, xmlReader, log,
-						reportUnspecifiedPermanentlyLockedTime, reportUnspecifiedDayOrHourPreferredStartingTime);
+					crt_constraint=readActivityPreferredStartingTime(errors, xmlReader, log,
+						reportUnspecifiedPermanentlyLockedTimeId, reportUnspecifiedDayOrHourPreferredStartingTimeId);
 				}
 				else if(xmlReader.name()=="ConstraintActivityEndsStudentsDay"){
 					crt_constraint=readActivityEndsStudentsDay(xmlReader, log);
@@ -6290,28 +6260,19 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 					crt_constraint=readTwoActivitiesOrdered(xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintActivityEndsDay" && !skipDeprecatedConstraints ){
-					int t=RulesReconcilableMessage::warning(parent, tr("FET warning"),
+					errors << ErrorCode(ErrorCode::WARNING,
 					 tr("File contains deprecated constraint activity ends day - will be ignored\n"),
-					 tr("Skip rest"), tr("See next"), QString(),
-					 1, 0 );
-					
-					if(t==0)
-						skipDeprecatedConstraints=true;
-					crt_constraint=NULL;
+										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
 				}
 				else if(xmlReader.name()=="ConstraintActivityPreferredTimes"){
-					if(reportActivityPreferredTimesChange){
-						int t=RulesReconcilableMessage::information(parent, tr("FET information"),
+					errors << ErrorCode(ErrorCode::INFO,
 						 tr("Your file contains old constraint activity preferred times, which will be converted to"
 						 " new equivalent constraint activity preferred starting times. Beginning with FET-5.5.9 it is possible"
 						 " to specify: 1. the starting times of an activity (constraint activity preferred starting times)"
 						 " or: 2. the accepted time slots (constraint activity preferred time slots)."
 						 " If what you need is type 2 of this constraint, you will have to add it by yourself from the interface."),
-						  tr("Skip rest"), tr("See next"), QString(), 1, 0 );
-						if(t==0)
-							reportActivityPreferredTimesChange=false;
-					}
+						  reportActivityPreferredTimesChangeId);
 					
 					crt_constraint=readActivityPreferredTimes(xmlReader, log);
 				}
@@ -6322,14 +6283,10 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 					crt_constraint=readActivityPreferredStartingTimes(xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintBreak"){
-					if(reportBreakChange){
-						int t=RulesReconcilableMessage::information(parent, tr("FET information"),
+					errors << ErrorCode(ErrorCode::INFO,
 						 tr("File contains constraint break, which is old (it was improved in FET 5.5.0), and will be converted"
 						 " to the similar constraint of this type, constraint break times (a matrix)."),
-						  tr("Skip rest"), tr("See next"), QString(), 1, 0 );
-						if(t==0)
-							reportBreakChange=false;
-					}
+						  reportBreakChangeId);
 					
 					crt_constraint=readBreak(xmlReader, log);
 				}
@@ -6352,30 +6309,22 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 					crt_constraint=readTeacherMaxGapsPerDay(xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintStudentsNoGaps"){
-					if(reportMaxGapsChange){
-						int t=RulesReconcilableMessage::information(parent, tr("FET information"),
+					errors << ErrorCode(ErrorCode::INFO,
 						 tr("File contains constraint students no gaps, which is old (it was improved in FET 5.5.0), and will be converted"
 						 " to the similar constraint of this type, constraint students max gaps per week,"
 						 " with max gaps=0. If you like, you can modify this constraint to allow"
 						 " more gaps per week (normally not accepted in schools)"),
-						  tr("Skip rest"), tr("See next"), QString(), 1, 0 );
-						if(t==0)
-							reportMaxGapsChange=false;
-					}
+						  reportMaxGapsChangeId);
 					
 					crt_constraint=readStudentsNoGaps(xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintStudentsSetNoGaps"){
-					if(reportMaxGapsChange){
-						int t=RulesReconcilableMessage::information(parent, tr("FET information"),
+					errors << ErrorCode(ErrorCode::INFO,
 						 tr("File contains constraint students set no gaps, which is old (it was improved in FET 5.5.0), and will be converted"
 						 " to the similar constraint of this type, constraint students set max gaps per week,"
 						 " with max gaps=0. If you like, you can modify this constraint to allow"
 						 " more gaps per week (normally not accepted in schools)"),
-						  tr("Skip rest"), tr("See next"), QString(), 1, 0 );
-						if(t==0)
-							reportMaxGapsChange=false;
-					}
+						  reportMaxGapsChangeId);
 					
 					crt_constraint=readStudentsSetNoGaps(xmlReader, log);
 				}
@@ -6394,16 +6343,12 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 				}
 
 				else if(xmlReader.name()=="ConstraintStudentsEarly"){
-					if(reportMaxBeginningsAtSecondHourChange){
-						int t=RulesReconcilableMessage::information(parent, tr("FET information"),
+					errors << ErrorCode(ErrorCode::INFO,
 						 tr("File contains constraint students early, which is old (it was improved in FET 5.5.0), and will be converted"
 						 " to the similar constraint of this type, constraint students early max beginnings at second hour,"
 						 " with max beginnings=0. If you like, you can modify this constraint to allow"
 						 " more beginnings at second available hour (above 0 - this will make the timetable easier)"),
-						  tr("Skip rest"), tr("See next"), QString(), 1, 0 );
- 						if(t==0)
-							reportMaxBeginningsAtSecondHourChange=false;
-					}
+						  reportMaxBeginningsAtSecondHourChangeId);
 					
 					crt_constraint=readStudentsEarly(xmlReader, log);
 				}
@@ -6411,16 +6356,12 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 					crt_constraint=readStudentsEarlyMaxBeginningsAtSecondHour(xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintStudentsSetEarly"){
-					if(reportMaxBeginningsAtSecondHourChange){
-						int t=RulesReconcilableMessage::information(parent, tr("FET information"),
+					errors << ErrorCode(ErrorCode::INFO,
 						 tr("File contains constraint students set early, which is old (it was improved in FET 5.5.0), and will be converted"
 						 " to the similar constraint of this type, constraint students set early max beginnings at second hour,"
 						 " with max beginnings=0. If you like, you can modify this constraint to allow"
 						 " more beginnings at second available hour (above 0 - this will make the timetable easier)"),
-						  tr("Skip rest"), tr("See next"), QString(), 1, 0 );
-						if(t==0)
-							reportMaxBeginningsAtSecondHourChange=false;
-					}
+						  reportMaxBeginningsAtSecondHourChangeId);
 					
 					crt_constraint=readStudentsSetEarly(xmlReader, log);
 				}
@@ -6428,18 +6369,14 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 					crt_constraint=readStudentsSetEarlyMaxBeginningsAtSecondHour(xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintActivitiesPreferredTimes"){
-					if(reportActivitiesPreferredTimesChange){
-						int t=RulesReconcilableMessage::information(parent, tr("FET information"),
+					errors << ErrorCode(ErrorCode::INFO,
 						 tr("Your file contains old constraint activities preferred times, which will be converted to"
 						 " new equivalent constraint activities preferred starting times. Beginning with FET-5.5.9 it is possible"
 						 " to specify: 1. the starting times of several activities (constraint activities preferred starting times)"
 						 " or: 2. the accepted time slots (constraint activities preferred time slots)."
 						 " If what you need is type 2 of this constraint, you will have to add it by yourself from the interface."),
-						  tr("Skip rest"), tr("See next"), QString(), 1, 0 );
-						if(t==0)
-							reportActivitiesPreferredTimesChange=false;
-					}
-					
+						  reportActivitiesPreferredTimesChangeId);
+
 					crt_constraint=readActivitiesPreferredTimes(xmlReader, log);
 				}
 				else if(xmlReader.name()=="ConstraintActivitiesPreferredTimeSlots"){
@@ -6467,25 +6404,15 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 ////////////////
 
 				else if(xmlReader.name()=="ConstraintTeachersSubjectTagsMaxHoursContinuously" && !skipDeprecatedConstraints){
-					int t=RulesReconcilableMessage::warning(parent, tr("FET warning"),
+					errors << ErrorCode(ErrorCode::WARNING,
 					 tr("File contains deprecated constraint teachers subject tags max hours continuously - will be ignored\n"),
-					 tr("Skip rest"), tr("See next"), QString(),
-					 1, 0 );
-													 
-					if(t==0)
-						skipDeprecatedConstraints=true;
-					crt_constraint=NULL;
+										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
 				}
 				else if(xmlReader.name()=="ConstraintTeachersSubjectTagMaxHoursContinuously" && !skipDeprecatedConstraints){
-					int t=RulesReconcilableMessage::warning(parent, tr("FET warning"),
+					errors << ErrorCode(ErrorCode::WARNING,
 					 tr("File contains deprecated constraint teachers subject tag max hours continuously - will be ignored\n"),
-					 tr("Skip rest"), tr("See next"), QString(),
-					 1, 0 );
-													 
-					if(t==0)
-						skipDeprecatedConstraints=true;
-					crt_constraint=NULL;
+										skipDeprecatedConstraintsId);
 					xmlReader.skipCurrentElement();
 				}
 				/////////begin 2017-02-07
@@ -6538,19 +6465,16 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 					assert(crt_constraint!=NULL);
 					bool tmp=this->addTimeConstraint(crt_constraint);
 					if(!tmp){
-						if(seeNextWarnNotAddedTimeConstraint){
-							int t=RulesReconcilableMessage::warning(parent, tr("FET information"),
+						errors << ErrorCode(ErrorCode::WARNING,
 							 tr("Constraint\n%1\nnot added - must be a duplicate").
-							 arg(crt_constraint->getDetailedDescription(*this)), tr("Skip rest"), tr("See next"), QString(""), 1, 0);
-							if(t==0)
-								seeNextWarnNotAddedTimeConstraint=false;
-						}
+							 arg(crt_constraint->getDetailedDescription(*this)), seeNextWarnNotAddedTimeConstraintId);
 						delete crt_constraint;
 					}
 					else
 						nc++;
 				}
 			}
+			renderErrorList(parent, errors);
 			log.minimum("Added "+CustomFETString::number(nc)+" time constraints\n");
 		}
 		else if(xmlReader.name()=="Space_Constraints_List"){
@@ -6635,7 +6559,7 @@ bool Rules::read(QWidget* parent, const QString& fileName, const QString& output
 				else if(xmlReader.name()=="ConstraintActivityPreferredRoom"){
 					ErrorCode erc;
 					crt_constraint=readActivityPreferredRoom(erc, xmlReader, log, reportUnspecifiedPermanentlyLockedSpaceId);
-					if (!erc)
+					if (erc)
 						errors << erc;
 				}
 				else if(xmlReader.name()=="ConstraintActivityPreferredRooms"){
@@ -7780,7 +7704,7 @@ TimeConstraint* Rules::readTeachersMinDaysPerWeek(QXmlStreamReader& xmlReader, X
 	return cn;
 }
 
-TimeConstraint* Rules::readTeacherIntervalMaxDaysPerWeek(QWidget* parent, QXmlStreamReader& xmlReader, XmlLog &log){
+TimeConstraint* Rules::readTeacherIntervalMaxDaysPerWeek(ErrorList& errors, QXmlStreamReader& xmlReader, XmlLog &log){
 	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintTeacherIntervalMaxDaysPerWeek");
 	ConstraintTeacherIntervalMaxDaysPerWeek* cn=new ConstraintTeacherIntervalMaxDaysPerWeek();
 	cn->maxDaysPerWeek=this->nDaysPerWeek;
@@ -7801,7 +7725,7 @@ TimeConstraint* Rules::readTeacherIntervalMaxDaysPerWeek(QWidget* parent, QXmlSt
 			QString text=xmlReader.readElementText();
 			cn->maxDaysPerWeek=text.toInt();
 			if(cn->maxDaysPerWeek>this->nDaysPerWeek){
-				RulesReconcilableMessage::information(parent, tr("FET information"),
+				errors << ErrorCode(ErrorCode::WARNING,
 					tr("Constraint TeacherIntervalMaxDaysPerWeek max days corrupt for teacher %1, max days %2 >nDaysPerWeek, constraint added, please correct constraint")
 					.arg(cn->teacherName)
 					.arg(text));
@@ -7869,7 +7793,7 @@ TimeConstraint* Rules::readTeacherIntervalMaxDaysPerWeek(QWidget* parent, QXmlSt
 	return cn;
 }
 
-TimeConstraint* Rules::readTeachersIntervalMaxDaysPerWeek(QWidget* parent, QXmlStreamReader& xmlReader, XmlLog &log){
+TimeConstraint* Rules::readTeachersIntervalMaxDaysPerWeek(ErrorList& errors, QXmlStreamReader& xmlReader, XmlLog &log){
 	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintTeachersIntervalMaxDaysPerWeek");
 	ConstraintTeachersIntervalMaxDaysPerWeek* cn=new ConstraintTeachersIntervalMaxDaysPerWeek();
 	cn->maxDaysPerWeek=this->nDaysPerWeek;
@@ -7889,7 +7813,7 @@ TimeConstraint* Rules::readTeachersIntervalMaxDaysPerWeek(QWidget* parent, QXmlS
 			QString text=xmlReader.readElementText();
 			cn->maxDaysPerWeek=text.toInt();
 			if(cn->maxDaysPerWeek>this->nDaysPerWeek){
-				RulesReconcilableMessage::information(parent, tr("FET information"),
+				errors << ErrorCode(ErrorCode::WARNING,
 					tr("Constraint TeachersIntervalMaxDaysPerWeek max days corrupt, max days %1 >nDaysPerWeek, constraint added, please correct constraint")
 					//.arg(cn->teacherName)
 					.arg(text));
@@ -7957,7 +7881,7 @@ TimeConstraint* Rules::readTeachersIntervalMaxDaysPerWeek(QWidget* parent, QXmlS
 	return cn;
 }
 
-TimeConstraint* Rules::readStudentsSetMaxDaysPerWeek(QWidget* parent, QXmlStreamReader& xmlReader, XmlLog &log){
+TimeConstraint* Rules::readStudentsSetMaxDaysPerWeek(ErrorList& errors, QXmlStreamReader& xmlReader, XmlLog &log){
 	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintStudentsSetMaxDaysPerWeek");
 	ConstraintStudentsSetMaxDaysPerWeek* cn=new ConstraintStudentsSetMaxDaysPerWeek();
 	cn->maxDaysPerWeek=this->nDaysPerWeek;
@@ -7975,7 +7899,7 @@ TimeConstraint* Rules::readStudentsSetMaxDaysPerWeek(QWidget* parent, QXmlStream
 			QString text=xmlReader.readElementText();
 			cn->maxDaysPerWeek=text.toInt();
 			if(cn->maxDaysPerWeek>this->nDaysPerWeek){
-				RulesReconcilableMessage::information(parent, tr("FET information"),
+				errors << ErrorCode(ErrorCode::WARNING,
 					tr("Constraint StudentsSetMaxDaysPerWeek max days corrupt for students set %1, max days %2 >nDaysPerWeek, constraint added, please correct constraint")
 					.arg(cn->students)
 					.arg(text));
@@ -7990,7 +7914,7 @@ TimeConstraint* Rules::readStudentsSetMaxDaysPerWeek(QWidget* parent, QXmlStream
 	return cn;
 }
 
-TimeConstraint* Rules::readStudentsMaxDaysPerWeek(QWidget* parent, QXmlStreamReader& xmlReader, XmlLog &log){
+TimeConstraint* Rules::readStudentsMaxDaysPerWeek(ErrorList& errors, QXmlStreamReader& xmlReader, XmlLog &log){
 	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintStudentsMaxDaysPerWeek");
 	ConstraintStudentsMaxDaysPerWeek* cn=new ConstraintStudentsMaxDaysPerWeek();
 	cn->maxDaysPerWeek=this->nDaysPerWeek;
@@ -8003,7 +7927,7 @@ TimeConstraint* Rules::readStudentsMaxDaysPerWeek(QWidget* parent, QXmlStreamRea
 			QString text=xmlReader.readElementText();
 			cn->maxDaysPerWeek=text.toInt();
 			if(cn->maxDaysPerWeek>this->nDaysPerWeek){
-				RulesReconcilableMessage::information(parent, tr("FET information"),
+				errors << ErrorCode(ErrorCode::WARNING,
 					tr("Constraint StudentsMaxDaysPerWeek max days corrupt, max days %1 >nDaysPerWeek, constraint added, please correct constraint")
 					.arg(text));
 			}
@@ -8017,7 +7941,7 @@ TimeConstraint* Rules::readStudentsMaxDaysPerWeek(QWidget* parent, QXmlStreamRea
 	return cn;
 }
 
-TimeConstraint* Rules::readStudentsSetIntervalMaxDaysPerWeek(QWidget* parent, QXmlStreamReader& xmlReader, XmlLog &log){
+TimeConstraint* Rules::readStudentsSetIntervalMaxDaysPerWeek(ErrorList& errors, QXmlStreamReader& xmlReader, XmlLog &log){
 	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintStudentsSetIntervalMaxDaysPerWeek");
 	ConstraintStudentsSetIntervalMaxDaysPerWeek* cn=new ConstraintStudentsSetIntervalMaxDaysPerWeek();
 	cn->maxDaysPerWeek=this->nDaysPerWeek;
@@ -8038,7 +7962,7 @@ TimeConstraint* Rules::readStudentsSetIntervalMaxDaysPerWeek(QWidget* parent, QX
 			QString text=xmlReader.readElementText();
 			cn->maxDaysPerWeek=text.toInt();
 			if(cn->maxDaysPerWeek>this->nDaysPerWeek){
-				RulesReconcilableMessage::information(parent, tr("FET information"),
+				errors << ErrorCode(ErrorCode::WARNING,
 					tr("Constraint StudentsSetIntervalMaxDaysPerWeek max days corrupt for students set %1, max days %2 >nDaysPerWeek, constraint added, please correct constraint")
 					.arg(cn->students)
 					.arg(text));
@@ -8106,7 +8030,7 @@ TimeConstraint* Rules::readStudentsSetIntervalMaxDaysPerWeek(QWidget* parent, QX
 	return cn;
 }
 
-TimeConstraint* Rules::readStudentsIntervalMaxDaysPerWeek(QWidget* parent, QXmlStreamReader& xmlReader, XmlLog &log){
+TimeConstraint* Rules::readStudentsIntervalMaxDaysPerWeek(ErrorList& errors, QXmlStreamReader& xmlReader, XmlLog &log){
 	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintStudentsIntervalMaxDaysPerWeek");
 	ConstraintStudentsIntervalMaxDaysPerWeek* cn=new ConstraintStudentsIntervalMaxDaysPerWeek();
 	cn->maxDaysPerWeek=this->nDaysPerWeek;
@@ -8122,7 +8046,7 @@ TimeConstraint* Rules::readStudentsIntervalMaxDaysPerWeek(QWidget* parent, QXmlS
 			QString text=xmlReader.readElementText();
 			cn->maxDaysPerWeek=text.toInt();
 			if(cn->maxDaysPerWeek>this->nDaysPerWeek){
-				RulesReconcilableMessage::information(parent, tr("FET information"),
+				errors << ErrorCode(ErrorCode::WARNING,
 					tr("Constraint StudentsIntervalMaxDaysPerWeek max days corrupt: max days %1 >nDaysPerWeek, constraint added, please correct constraint")
 					.arg(text));
 				/*delete cn;
@@ -8462,7 +8386,7 @@ TimeConstraint* Rules::readStudentsSetNotAvailableTimes(QXmlStreamReader& xmlRea
 	return cn;
 }
 
-TimeConstraint* Rules::readMinNDaysBetweenActivities(QWidget* parent, QXmlStreamReader& xmlReader, XmlLog &log){
+TimeConstraint* Rules::readMinNDaysBetweenActivities(ErrorList& errors, QXmlStreamReader& xmlReader, XmlLog &log){
 	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintMinNDaysBetweenActivities");
 
 	ConstraintMinDaysBetweenActivities* cn=new ConstraintMinDaysBetweenActivities();
@@ -8484,7 +8408,7 @@ TimeConstraint* Rules::readMinNDaysBetweenActivities(QWidget* parent, QXmlStream
 			}
 			else{
 				if(!(text=="no" || text=="false" || text=="0")){
-					RulesReconcilableMessage::warning(parent, tr("FET warning"),
+					errors << ErrorCode(ErrorCode::WARNING,
 						tr("Found constraint min days between activities with tag consecutive if same day"
 						" which is not 'true', 'false', 'yes', 'no', '1' or '0'."
 						" The tag will be considered false",
@@ -8569,7 +8493,7 @@ TimeConstraint* Rules::readMinNDaysBetweenActivities(QWidget* parent, QXmlStream
 */
 }
 
-TimeConstraint* Rules::readMinDaysBetweenActivities(QWidget* parent, QXmlStreamReader& xmlReader, XmlLog &log){
+TimeConstraint* Rules::readMinDaysBetweenActivities(ErrorList& errors, QXmlStreamReader& xmlReader, XmlLog &log){
 	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintMinDaysBetweenActivities");
 
 	ConstraintMinDaysBetweenActivities* cn=new ConstraintMinDaysBetweenActivities();
@@ -8591,7 +8515,7 @@ TimeConstraint* Rules::readMinDaysBetweenActivities(QWidget* parent, QXmlStreamR
 			}
 			else{
 				if(!(text=="no" || text=="false" || text=="0")){
-					RulesReconcilableMessage::warning(parent, tr("FET warning"),
+					errors << ErrorCode(ErrorCode::WARNING,
 						tr("Found constraint min days between activities with tag consecutive if same day"
 						" which is not 'true', 'false', 'yes', 'no', '1' or '0'."
 						" The tag will be considered false",
@@ -9149,7 +9073,7 @@ TimeConstraint* Rules::readTeachersActivityTagMaxHoursDaily(QXmlStreamReader& xm
 	return cn;
 }
 
-TimeConstraint* Rules::readTeachersMinHoursDaily(QWidget* parent, QXmlStreamReader& xmlReader, XmlLog &log){
+TimeConstraint* Rules::readTeachersMinHoursDaily(ErrorList& errors, QXmlStreamReader& xmlReader, XmlLog &log){
 	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintTeachersMinHoursDaily");
 	ConstraintTeachersMinHoursDaily* cn=new ConstraintTeachersMinHoursDaily();
 	cn->allowEmptyDays=true;
@@ -9171,7 +9095,7 @@ TimeConstraint* Rules::readTeachersMinHoursDaily(QWidget* parent, QXmlStreamRead
 			}
 			else{
 				if(!(text=="no" || text=="false" || text=="0")){
-					RulesReconcilableMessage::warning(parent, tr("FET warning"),
+					errors << ErrorCode(ErrorCode::WARNING,
 						tr("Found constraint teachers min hours daily with tag allow empty days"
 						" which is not 'true', 'false', 'yes', 'no', '1' or '0'."
 						" The tag will be considered false",
@@ -9193,7 +9117,7 @@ TimeConstraint* Rules::readTeachersMinHoursDaily(QWidget* parent, QXmlStreamRead
 	return cn;
 }
 
-TimeConstraint* Rules::readTeacherMinHoursDaily(QWidget* parent, QXmlStreamReader& xmlReader, XmlLog &log){
+TimeConstraint* Rules::readTeacherMinHoursDaily(ErrorList& errors, QXmlStreamReader& xmlReader, XmlLog &log){
 	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintTeacherMinHoursDaily");
 	ConstraintTeacherMinHoursDaily* cn=new ConstraintTeacherMinHoursDaily();
 	cn->allowEmptyDays=true;
@@ -9220,7 +9144,7 @@ TimeConstraint* Rules::readTeacherMinHoursDaily(QWidget* parent, QXmlStreamReade
 			}
 			else{
 				if(!(text=="no" || text=="false" || text=="0")){
-					RulesReconcilableMessage::warning(parent, tr("FET warning"),
+					errors << ErrorCode(ErrorCode::WARNING,
 						tr("Found constraint teacher min hours daily with tag allow empty days"
 						" which is not 'true', 'false', 'yes', 'no', '1' or '0'."
 						" The tag will be considered false",
@@ -9574,7 +9498,7 @@ TimeConstraint* Rules::readStudentsActivityTagMaxHoursDaily(QXmlStreamReader& xm
 	return cn;
 }
 
-TimeConstraint* Rules::readStudentsMinHoursDaily(QWidget* parent, QXmlStreamReader& xmlReader, XmlLog &log){
+TimeConstraint* Rules::readStudentsMinHoursDaily(ErrorList& errors, QXmlStreamReader& xmlReader, XmlLog &log){
 	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintStudentsMinHoursDaily");
 	ConstraintStudentsMinHoursDaily* cn=new ConstraintStudentsMinHoursDaily();
 	cn->minHoursDaily=-1;
@@ -9603,7 +9527,7 @@ TimeConstraint* Rules::readStudentsMinHoursDaily(QWidget* parent, QXmlStreamRead
 			}
 			else{
 				if(!(text=="no" || text=="false" || text=="0")){
-					RulesReconcilableMessage::warning(parent, tr("FET warning"),
+					errors << ErrorCode(ErrorCode::WARNING,
 						tr("Found constraint students min hours daily with tag allow empty days"
 						" which is not 'true', 'false', 'yes', 'no', '1' or '0'."
 						" The tag will be considered false",
@@ -9632,7 +9556,7 @@ TimeConstraint* Rules::readStudentsMinHoursDaily(QWidget* parent, QXmlStreamRead
 	return cn;
 }
 
-TimeConstraint* Rules::readStudentsSetMinHoursDaily(QWidget* parent, QXmlStreamReader& xmlReader, XmlLog &log){
+TimeConstraint* Rules::readStudentsSetMinHoursDaily(ErrorList& errors, QXmlStreamReader& xmlReader, XmlLog &log){
 	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintStudentsSetMinHoursDaily");
 	ConstraintStudentsSetMinHoursDaily* cn=new ConstraintStudentsSetMinHoursDaily();
 	cn->minHoursDaily=-1;
@@ -9666,7 +9590,7 @@ TimeConstraint* Rules::readStudentsSetMinHoursDaily(QWidget* parent, QXmlStreamR
 			}
 			else{
 				if(!(text=="no" || text=="false" || text=="0")){
-					RulesReconcilableMessage::warning(parent, tr("FET warning"),
+					errors << ErrorCode(ErrorCode::WARNING,
 						tr("Found constraint students set min hours daily with tag allow empty days"
 						" which is not 'true', 'false', 'yes', 'no', '1' or '0'."
 						" The tag will be considered false",
@@ -9695,8 +9619,8 @@ TimeConstraint* Rules::readStudentsSetMinHoursDaily(QWidget* parent, QXmlStreamR
 	return cn;
 }
 
-TimeConstraint* Rules::readActivityPreferredTime(QWidget* parent, QXmlStreamReader& xmlReader, XmlLog &log,
-bool& reportUnspecifiedPermanentlyLockedTime, bool& reportUnspecifiedDayOrHourPreferredStartingTime){
+TimeConstraint* Rules::readActivityPreferredTime(ErrorList& errors, QXmlStreamReader& xmlReader, XmlLog &log,
+int reportUnspecifiedPermanentlyLockedTimeId, int reportUnspecifiedDayOrHourPreferredStartingTimeId){
 	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintActivityPreferredTime");
 
 	ConstraintActivityPreferredStartingTime* cn=new ConstraintActivityPreferredStartingTime();
@@ -9716,7 +9640,7 @@ bool& reportUnspecifiedPermanentlyLockedTime, bool& reportUnspecifiedDayOrHourPr
 			}
 			else{
 				if(!(text=="no" || text=="false" || text=="0")){
-					RulesReconcilableMessage::warning(parent, tr("FET warning"),
+					errors << ErrorCode(ErrorCode::WARNING,
 						tr("Found constraint activity preferred starting time with tag permanently locked"
 						" which is not 'true', 'false', 'yes', 'no', '1' or '0'."
 						" The tag will be considered false",
@@ -9781,8 +9705,8 @@ bool& reportUnspecifiedPermanentlyLockedTime, bool& reportUnspecifiedDayOrHourPr
 	}
 	//crt_constraint=cn;
 
-	if(cn->hour>=0 && cn->day>=0 && !foundLocked && reportUnspecifiedPermanentlyLockedTime){
-		int t=RulesReconcilableMessage::information(parent, tr("FET information"),
+	if(cn->hour>=0 && cn->day>=0 && !foundLocked){
+		errors << ErrorCode(ErrorCode::INFO,
 			tr("Found constraint activity preferred starting time, with unspecified tag"
 			" 'permanently locked' - this tag will be set to 'false' by default. You can always modify it"
 			" by editing the constraint in the 'Data' menu")+"\n\n"
@@ -9797,22 +9721,16 @@ bool& reportUnspecifiedPermanentlyLockedTime, bool& reportUnspecifiedDayOrHourPr
 			" and locking/unlocking some activities, you will not unlock the constraints which"
 			" need to be locked all the time."
 			),
-			tr("Skip rest"), tr("See next"), QString(), 1, 0 );
-		if(t==0)
-			reportUnspecifiedPermanentlyLockedTime=false;
+			reportUnspecifiedPermanentlyLockedTimeId);
 	}
 
 	if(cn->hour==-1 || cn->day==-1){
-		if(reportUnspecifiedDayOrHourPreferredStartingTime){
-			int t=RulesReconcilableMessage::information(parent, tr("FET information"),
+		errors << ErrorCode(ErrorCode::INFO,
 				tr("Found constraint activity preferred starting time, with unspecified day or hour."
 				" This constraint will be transformed into constraint activity preferred starting times (a set of times, not only one)."
 				" This change is done in FET versions 5.8.1 and higher."
 				),
-				tr("Skip rest"), tr("See next"), QString(), 1, 0 );
-			if(t==0)
-				reportUnspecifiedDayOrHourPreferredStartingTime=false;
-		}
+				reportUnspecifiedDayOrHourPreferredStartingTimeId);
 
 		ConstraintActivityPreferredStartingTimes* cgood=new ConstraintActivityPreferredStartingTimes();
 		if(cn->day==-1){
@@ -9846,8 +9764,8 @@ bool& reportUnspecifiedPermanentlyLockedTime, bool& reportUnspecifiedDayOrHourPr
 	return cn;
 }
 
-TimeConstraint* Rules::readActivityPreferredStartingTime(QWidget* parent, QXmlStreamReader& xmlReader, XmlLog &log,
-bool& reportUnspecifiedPermanentlyLockedTime, bool& reportUnspecifiedDayOrHourPreferredStartingTime){
+TimeConstraint* Rules::readActivityPreferredStartingTime(ErrorList& errors, QXmlStreamReader& xmlReader, XmlLog &log,
+int reportUnspecifiedPermanentlyLockedTimeId, int reportUnspecifiedDayOrHourPreferredStartingTimeId){
 	assert(xmlReader.isStartElement() && xmlReader.name()=="ConstraintActivityPreferredStartingTime");
 	ConstraintActivityPreferredStartingTime* cn=new ConstraintActivityPreferredStartingTime();
 	cn->day = cn->hour = -1;
@@ -9866,7 +9784,7 @@ bool& reportUnspecifiedPermanentlyLockedTime, bool& reportUnspecifiedDayOrHourPr
 			}
 			else{
 				if(!(text=="no" || text=="false" || text=="0")){
-					RulesReconcilableMessage::warning(parent, tr("FET warning"),
+					errors << ErrorCode(ErrorCode::WARNING,
 						tr("Found constraint activity preferred starting time with tag permanently locked"
 						" which is not 'true', 'false', 'yes', 'no', '1' or '0'."
 						" The tag will be considered false",
@@ -9931,8 +9849,8 @@ bool& reportUnspecifiedPermanentlyLockedTime, bool& reportUnspecifiedDayOrHourPr
 	}
 	//crt_constraint=cn;
 
-	if(cn->hour>=0 && cn->day>=0 && !foundLocked && reportUnspecifiedPermanentlyLockedTime){
-		int t=RulesReconcilableMessage::information(parent, tr("FET information"),
+	if(cn->hour>=0 && cn->day>=0 && !foundLocked){
+		errors << ErrorCode(ErrorCode::INFO,
 			tr("Found constraint activity preferred starting time, with unspecified tag"
 			" 'permanently locked' - this tag will be set to 'false' by default. You can always modify it"
 			" by editing the constraint in the 'Data' menu")+"\n\n"
@@ -9947,22 +9865,16 @@ bool& reportUnspecifiedPermanentlyLockedTime, bool& reportUnspecifiedDayOrHourPr
 			" and locking/unlocking some activities, you will not unlock the constraints which"
 			" need to be locked all the time."
 			),
-			tr("Skip rest"), tr("See next"), QString(), 1, 0 );
-		if(t==0)
-			reportUnspecifiedPermanentlyLockedTime=false;
+			reportUnspecifiedPermanentlyLockedTimeId);
 	}
 
 	if(cn->hour==-1 || cn->day==-1){
-		if(reportUnspecifiedDayOrHourPreferredStartingTime){
-			int t=RulesReconcilableMessage::information(parent, tr("FET information"),
+		errors << ErrorCode(ErrorCode::INFO,
 				tr("Found constraint activity preferred starting time, with unspecified day or hour."
 				" This constraint will be transformed into constraint activity preferred starting times (a set of times, not only one)."
 				" This change is done in FET versions 5.8.1 and higher."
 				),
-				tr("Skip rest"), tr("See next"), QString(), 1, 0 );
-			if(t==0)
-				reportUnspecifiedDayOrHourPreferredStartingTime=false;
-		}
+				reportUnspecifiedDayOrHourPreferredStartingTimeId);
 
 		ConstraintActivityPreferredStartingTimes* cgood=new ConstraintActivityPreferredStartingTimes();
 		if(cn->day==-1){

@@ -753,16 +753,16 @@ private:
 	TimeConstraint* readTeacherMinDaysPerWeek(QXmlStreamReader& xml, XmlLog &log);
 	TimeConstraint* readTeachersMinDaysPerWeek(QXmlStreamReader& xml, XmlLog &log);
 
-	TimeConstraint* readTeacherIntervalMaxDaysPerWeek(QWidget* parent, QXmlStreamReader& xml, XmlLog &log);
-	TimeConstraint* readTeachersIntervalMaxDaysPerWeek(QWidget* parent, QXmlStreamReader& xml, XmlLog &log);
-	TimeConstraint* readStudentsSetMaxDaysPerWeek(QWidget* parent, QXmlStreamReader& xml, XmlLog &log);
-	TimeConstraint* readStudentsMaxDaysPerWeek(QWidget* parent, QXmlStreamReader& xml, XmlLog &log);
-	TimeConstraint* readStudentsSetIntervalMaxDaysPerWeek(QWidget* parent, QXmlStreamReader& xml, XmlLog &log);
-	TimeConstraint* readStudentsIntervalMaxDaysPerWeek(QWidget* parent, QXmlStreamReader& xml, XmlLog &log);
+	TimeConstraint* readTeacherIntervalMaxDaysPerWeek(ErrorList& errors, QXmlStreamReader& xml, XmlLog &log);
+	TimeConstraint* readTeachersIntervalMaxDaysPerWeek(ErrorList& errors, QXmlStreamReader& xml, XmlLog &log);
+	TimeConstraint* readStudentsSetMaxDaysPerWeek(ErrorList& errors, QXmlStreamReader& xml, XmlLog &log);
+	TimeConstraint* readStudentsMaxDaysPerWeek(ErrorList& errors, QXmlStreamReader& xml, XmlLog &log);
+	TimeConstraint* readStudentsSetIntervalMaxDaysPerWeek(ErrorList& errors, QXmlStreamReader& xml, XmlLog &log);
+	TimeConstraint* readStudentsIntervalMaxDaysPerWeek(ErrorList& errors, QXmlStreamReader& xml, XmlLog &log);
 	TimeConstraint* readStudentsSetNotAvailable(QXmlStreamReader& xml, XmlLog &log);
 	TimeConstraint* readStudentsSetNotAvailableTimes(QXmlStreamReader& xml, XmlLog &log);
-	TimeConstraint* readMinNDaysBetweenActivities(QWidget* parent, QXmlStreamReader& xml, XmlLog &log);
-	TimeConstraint* readMinDaysBetweenActivities(QWidget* parent, QXmlStreamReader& xml, XmlLog &log);
+	TimeConstraint* readMinNDaysBetweenActivities(ErrorList& errors, QXmlStreamReader& xml, XmlLog &log);
+	TimeConstraint* readMinDaysBetweenActivities(ErrorList& errors, QXmlStreamReader& xml, XmlLog &log);
 	TimeConstraint* readMaxDaysBetweenActivities(QXmlStreamReader& xml, XmlLog &log);
 	TimeConstraint* readMinGapsBetweenActivities(QXmlStreamReader& xml, XmlLog &log);
 	TimeConstraint* readActivitiesNotOverlapping(QXmlStreamReader& xml, XmlLog &log);
@@ -779,8 +779,8 @@ private:
 	TimeConstraint* readTeacherActivityTagMaxHoursDaily(QXmlStreamReader& xml, XmlLog &log);
 	TimeConstraint* readTeachersActivityTagMaxHoursDaily(QXmlStreamReader& xml, XmlLog &log);
 
-	TimeConstraint* readTeachersMinHoursDaily(QWidget* parent, QXmlStreamReader& xml, XmlLog &log);
-	TimeConstraint* readTeacherMinHoursDaily(QWidget* parent, QXmlStreamReader& xml, XmlLog &log);
+	TimeConstraint* readTeachersMinHoursDaily(ErrorList& errors, QXmlStreamReader& xml, XmlLog &log);
+	TimeConstraint* readTeacherMinHoursDaily(ErrorList& errors, QXmlStreamReader& xml, XmlLog &log);
 	TimeConstraint* readStudentsMaxHoursDaily(QXmlStreamReader& xml, XmlLog &log);
 	TimeConstraint* readStudentsSetMaxHoursDaily(QXmlStreamReader& xml, XmlLog &log);
 	TimeConstraint* readStudentsMaxHoursContinuously(QXmlStreamReader& xml, XmlLog &log);
@@ -791,13 +791,13 @@ private:
 	TimeConstraint* readStudentsSetActivityTagMaxHoursDaily(QXmlStreamReader& xml, XmlLog &log);
 	TimeConstraint* readStudentsActivityTagMaxHoursDaily(QXmlStreamReader& xml, XmlLog &log);
 
-	TimeConstraint* readStudentsMinHoursDaily(QWidget* parent, QXmlStreamReader& xml, XmlLog &log);
-	TimeConstraint* readStudentsSetMinHoursDaily(QWidget* parent, QXmlStreamReader& xml, XmlLog &log);
+	TimeConstraint* readStudentsMinHoursDaily(ErrorList& errors, QXmlStreamReader& xml, XmlLog &log);
+	TimeConstraint* readStudentsSetMinHoursDaily(ErrorList& errors, QXmlStreamReader& xml, XmlLog &log);
 
-	TimeConstraint* readActivityPreferredTime(QWidget* parent, QXmlStreamReader& xml, XmlLog &log,
-		bool& reportUnspecifiedPermanentlyLockedTime, bool& reportUnspecifiedDayOrHourPreferredStartingTime);
-	TimeConstraint* readActivityPreferredStartingTime(QWidget* parent, QXmlStreamReader& xml, XmlLog &log,
-		bool& reportUnspecifiedPermanentlyLockedTime, bool& reportUnspecifiedDayOrHourPreferredStartingTime);
+	TimeConstraint* readActivityPreferredTime(ErrorList& errors, QXmlStreamReader& xml, XmlLog &log,
+		int reportUnspecifiedPermanentlyLockedTimeId, int reportUnspecifiedDayOrHourPreferredStartingTimeId);
+	TimeConstraint* readActivityPreferredStartingTime(ErrorList& errors, QXmlStreamReader& xml, XmlLog &log,
+		int reportUnspecifiedPermanentlyLockedTimeId, int reportUnspecifiedDayOrHourPreferredStartingTimeId);
 
 	TimeConstraint* readActivityEndsStudentsDay(QXmlStreamReader& xml, XmlLog &log);
 	TimeConstraint* readActivitiesEndStudentsDay(QXmlStreamReader& xml, XmlLog &log);
