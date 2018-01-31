@@ -262,13 +262,13 @@ bool Rules::computeInternalStructure(QWidget* parent)
 	}
 	this->internalSubgroupsList.resize(tmpNSubgroups);
 
-	int counter=0;
+	int activeActivitiesCounter=0;
 	for(int i=0; i<this->activitiesList.size(); i++){
 		Activity* act=this->activitiesList.at(i);
 		if(act->active)
-			counter++;
+			activeActivitiesCounter++;
 	}
-	if(counter>MAX_ACTIVITIES){
+	if(activeActivitiesCounter>MAX_ACTIVITIES){
 		RulesImpossible::warning(parent, tr("FET information"),
 		 tr("You have too many active activities. You need to increase the variable MAX_ACTIVITIES (which is currently %1).")
 		 .arg(MAX_ACTIVITIES));
@@ -417,7 +417,6 @@ bool Rules::computeInternalStructure(QWidget* parent)
 	int ttt=0;
 		
 	Activity* act;
-	counter=0;
 	
 	this->inactiveActivities.clear();
 	
@@ -433,7 +432,6 @@ bool Rules::computeInternalStructure(QWidget* parent)
 			}
 			ttt++;
 
-			counter++;
 			act->computeInternalStructure(*this);
 		}
 		else
@@ -447,8 +445,8 @@ bool Rules::computeInternalStructure(QWidget* parent)
 	for(int i=0; i<nInternalTeachers; i++)
 		internalTeachersList[i]->activitiesForTeacher.clear();
 
-	assert(counter<=MAX_ACTIVITIES);
-	this->nInternalActivities=counter;
+	assert(activeActivitiesCounter<=MAX_ACTIVITIES);
+	this->nInternalActivities=activeActivitiesCounter;
 	this->internalActivitiesList.resize(this->nInternalActivities);
 	int activei=0;
 	for(int ai=0; ai<this->activitiesList.size(); ai++){
