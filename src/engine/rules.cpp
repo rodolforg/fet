@@ -48,8 +48,6 @@ using namespace std;
 
 #include <QRegExp>
 
-#include "messageboxes.h"
-
 void Rules::init() //initializes the rules (empty, but with default hours and days)
 {
 	this->institutionName=tr("Default institution");
@@ -95,8 +93,9 @@ void Rules::init() //initializes the rules (empty, but with default hours and da
 	shouldAbortInternalStructureComputation = false;
 }
 
-bool Rules::computeInternalStructure(QWidget* parent)
+ErrorList Rules::computeInternalStructure(QWidget* parent)
 {
+	ErrorList errors;
 	this->internalStructureComputed = false;
 	shouldAbortInternalStructureComputation = false;
 
@@ -115,10 +114,10 @@ bool Rules::computeInternalStructure(QWidget* parent)
 	//After that, the space constraints.
 
 	if(this->teachersList.size()>MAX_TEACHERS){
-		RulesImpossible::warning(parent, tr("FET information"),
+		errors << ErrorCode(ErrorCode::FATAL,
 		 tr("You have too many teachers. You need to increase the variable MAX_TEACHERS (which is currently %1).")
 		 .arg(MAX_TEACHERS));
-		return false;
+		return errors;
 	}
 	
 	//kill augmented students sets
@@ -258,10 +257,10 @@ bool Rules::computeInternalStructure(QWidget* parent)
 	}
 	int tmpNSubgroups=allSubgroupsList.count();
 	if(tmpNSubgroups>MAX_TOTAL_SUBGROUPS){
-		RulesImpossible::warning(parent, tr("FET information"),
+		errors << ErrorCode(ErrorCode::FATAL,
 		 tr("You have too many total subgroups. You need to increase the variable MAX_TOTAL_SUBGROUPS (which is currently %1).")
 		 .arg(MAX_TOTAL_SUBGROUPS));
-		return false;
+		return errors;
 	}
 	this->internalSubgroupsList.resize(tmpNSubgroups);
 
@@ -272,24 +271,24 @@ bool Rules::computeInternalStructure(QWidget* parent)
 			activeActivitiesCounter++;
 	}
 	if(activeActivitiesCounter>MAX_ACTIVITIES){
-		RulesImpossible::warning(parent, tr("FET information"),
+		errors << ErrorCode(ErrorCode::FATAL,
 		 tr("You have too many active activities. You need to increase the variable MAX_ACTIVITIES (which is currently %1).")
 		 .arg(MAX_ACTIVITIES));
-		return false;
+		return errors;
 	}
 
 	if(this->buildingsList.size()>MAX_BUILDINGS){
-		RulesImpossible::warning(parent, tr("FET information"),
+		errors << ErrorCode(ErrorCode::FATAL,
 		 tr("You have too many buildings. You need to increase the variable MAX_BUILDINGS (which is currently %1).")
 		 .arg(MAX_BUILDINGS));
-		return false;
+		return errors;
 	}
 	
 	if(this->roomsList.size()>MAX_ROOMS){
-		RulesImpossible::warning(parent, tr("FET information"),
+		errors << ErrorCode(ErrorCode::FATAL,
 		 tr("You have too many rooms. You need to increase the variable MAX_ROOMS (which is currently %1).")
 		 .arg(MAX_ROOMS));
-		return false;
+		return errors;
 	}
 	
 	assert(this->initialized);
@@ -424,9 +423,9 @@ bool Rules::computeInternalStructure(QWidget* parent)
 		act=this->activitiesList[i];
 		if(act->active){
 			if(shouldAbortInternalStructureComputation){
-				RulesImpossible::warning(parent, tr("FET information"), tr("Canceled"));
+				errors << ErrorCode(ErrorCode::WARNING, tr("Canceled"));
 				emit internalStructureComputationFinished(false);
-				return false;
+				return errors;
 			}
 
 			act->computeInternalStructure(*this);
@@ -569,7 +568,7 @@ bool Rules::computeInternalStructure(QWidget* parent)
 
 	//time constraints
 	
-	bool skipInactiveTimeConstraints=false;
+	int skipInactiveTimeConstraintsId = ErrorCode::nextGroupId();
 	
 	TimeConstraint* tctr;
 	
@@ -586,18 +585,11 @@ bool Rules::computeInternalStructure(QWidget* parent)
 		else if(tctr->hasInactiveActivities(*this)){
 			toSkipTimeSet.insert(tctrindex);
 		
-			if(!skipInactiveTimeConstraints){
 				QString s=tr("The following time constraint is ignored, because it refers to inactive activities:");
 				s+="\n";
 				s+=tctr->getDetailedDescription(*this);
 				
-				int t=RulesConstraintIgnored::mediumConfirmation(parent, tr("FET information"), s,
-				 tr("Skip rest"), tr("See next"), QString(),
- 				 1, 0 );
-
-				if(t==0)
-					skipInactiveTimeConstraints=true;
-			}
+			errors << ErrorCode(ErrorCode::WARNING, s, skipInactiveTimeConstraintsId);
 		}
 		else{
 			_c++;
@@ -613,8 +605,9 @@ bool Rules::computeInternalStructure(QWidget* parent)
 	
 	for(int tctrindex=0; tctrindex<this->timeConstraintsList.size(); tctrindex++){
 		if(shouldAbortInternalStructureComputation){
+			errors << ErrorCode(ErrorCode::WARNING, tr("Canceled"));
 			emit internalStructureComputationFinished(false);
-			return false;
+			return errors;
 		}
 
 		tctr=this->timeConstraintsList[tctrindex];
@@ -626,8 +619,9 @@ bool Rules::computeInternalStructure(QWidget* parent)
 		
 		ErrorCode erc = tctr->computeInternalStructure(*this);
 		emit internalStructureComputationChanged(++numComputedItems);
+		if (erc)
+			errors << erc;
 		if (erc.isError()) {
-			TimeConstraintIrreconcilableMessage::warning(parent, erc.getSeverityTitle(), erc.message);
 			//assert(0);
 			ok=false;
 			continue;
@@ -645,7 +639,7 @@ bool Rules::computeInternalStructure(QWidget* parent)
 	
 	//space constraints
 	
-	bool skipInactiveSpaceConstraints=false;
+	int skipInactiveSpaceConstraintsId = ErrorCode::nextGroupId();
 	
 	SpaceConstraint* sctr;
 	
@@ -662,18 +656,11 @@ bool Rules::computeInternalStructure(QWidget* parent)
 		else if(sctr->hasInactiveActivities(*this)){
 			toSkipSpaceSet.insert(sctrindex);
 		
-			if(!skipInactiveSpaceConstraints){
 				QString s=tr("The following space constraint is ignored, because it refers to inactive activities:");
 				s+="\n";
 				s+=sctr->getDetailedDescription(*this);
 				
-				int t=RulesConstraintIgnored::mediumConfirmation(parent, tr("FET information"), s,
-				 tr("Skip rest"), tr("See next"), QString(),
- 				 1, 0 );
-
-				if(t==0)
-					skipInactiveSpaceConstraints=true;
-			}
+			errors << ErrorCode(ErrorCode::WARNING, s, skipInactiveSpaceConstraintsId);
 		}
 		else{
 			_c++;
@@ -689,8 +676,9 @@ bool Rules::computeInternalStructure(QWidget* parent)
 
 	for(int sctrindex=0; sctrindex<this->spaceConstraintsList.size(); sctrindex++){
 		if(shouldAbortInternalStructureComputation){
+			errors << ErrorCode(ErrorCode::WARNING, tr("Canceled"));
 			emit internalStructureComputationFinished(false);
-			return false;
+			return errors;
 		}
 
 		sctr=this->spaceConstraintsList[sctrindex];
@@ -702,8 +690,9 @@ bool Rules::computeInternalStructure(QWidget* parent)
 		
 		ErrorCode erc = sctr->computeInternalStructure(*this);
 		emit internalStructureComputationChanged(++numComputedItems);
+		if (erc)
+			errors << erc;
 		if (erc.isError()) {
-			SpaceConstraintIrreconcilableMessage::warning(parent, erc.getSeverityTitle(), erc.message);
 			//assert(0);
 			ok=false;
 			continue;
@@ -751,8 +740,9 @@ bool Rules::computeInternalStructure(QWidget* parent)
 			}
 
 			if(!fetBugs.isEmpty() || !userErrors.isEmpty()){
+				errors << ErrorCode(ErrorCode::FATAL, fetBugs.join("\n\n")+userErrors.join("\n\n"));
 				emit internalStructureComputationFinished(false);
-				return false;
+				return errors;
 			}
 		}
 	}
@@ -761,7 +751,7 @@ bool Rules::computeInternalStructure(QWidget* parent)
 	this->internalStructureComputed=ok;
 	emit internalStructureComputationFinished(true);
 
-	return ok;
+	return errors;
 }
 
 void Rules::cancelInternalStructureComputation()

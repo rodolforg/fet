@@ -1222,6 +1222,7 @@ int main(int argc, char **argv)
 			logFile.close();
 			return 1;
 		}
+		errors.clear();
 		
 		cout << QCoreApplication::translate("Rules", "Computing internal structure", "Title of a progress dialog").toStdString() << endl;
 		out << "Computing internal structure" << endl;
@@ -1243,14 +1244,15 @@ int main(int argc, char **argv)
 			cout << QCoreApplication::translate("Rules", stepText).toStdString() << endl;
 		});
 #endif
-
-		bool t=gt.rules.computeInternalStructure(NULL);
-		if(!t){
+		errors = gt.rules.computeInternalStructure(NULL);
+		renderErrorList(errors);
+		if (errors.hasError()){
 			cerr<<"Cannot compute internal structure - aborting"<<endl;
 			out<<"Cannot compute internal structure - aborting"<<endl;
 			logFile.close();
 			return 1;
 		}
+		errors.clear();
 	
 		Generate gen(gt);
 

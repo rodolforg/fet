@@ -22,6 +22,7 @@
 #include "timetable.h"
 #include "fet.h"
 #include "timetableexport.h"
+#include "errorrenderer.h"
 
 #include <QString>
 
@@ -151,7 +152,9 @@ void TimetableGenerateForm::start(){
 		connect(&progress, SIGNAL(canceled()), &gt.rules, SLOT(cancelInternalStructureComputation()));
 		progress.setModal(true);
 
-		if(!gt.rules.computeInternalStructure(this)){
+		ErrorList errors = gt.rules.computeInternalStructure(this);
+		ErrorRenderer::renderErrorList(this, errors);
+		if (errors.hasError()){
 			QMessageBox::warning(this, TimetableGenerateForm::tr("FET warning"), TimetableGenerateForm::tr("Data is wrong. Please correct and try again"));
 			return;
 		}
