@@ -5744,3 +5744,13 @@ where %1 would be "%n locking time constraint(s)", etc.
 From Taro Tada:
 
 Either allow two or more users to work concurrently on a unique FET file, or allow the merging of two or more .fet files.
+
+347---------------------------------------------------------
+From bachiri401 (on forum):
+
+For all students sets subject Sport cannot be followed immediately by a hard subject like Math.
+
+Liviu and rodolforg:
+
+Constraint two activities not consecutive (to say that the situation A1, then immediately A2 is forbidden, any
+other situation is acceptable).
