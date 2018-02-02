@@ -1329,12 +1329,12 @@ there won&apos;t be removed an additional number of %1 activities
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="771"/>
         <source>Split activity added. Please note that FET currently cannot check for duplicates when adding split activities. It is advisable to check the statistics after adding all the activities</source>
-        <translation>分割アクティビティが追加されました。ＦＥＴでは現在、分割アクティビティの重複を確認する機能がありませんので、全てのアクティビティ追加後に統計値を確認してください。</translation>
+        <translation>分割アクティビティが追加されました。ＦＥＴでは現在、分割アクティビティの重複を確認する機能がありませんので、全てのアクティビティ追加後に統計値を確認してください</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="776"/>
         <source>Split activity NOT added - error???</source>
-        <translation>分割アクティビティは追加されませんでした。エラーかもしれません。</translation>
+        <translation>分割アクティビティは追加されませんでした。エラー？</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="801"/>
@@ -1344,7 +1344,7 @@ there won&apos;t be removed an additional number of %1 activities
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="803"/>
         <source>&apos;Students&apos; (the text near the spin box), means &apos;Number of students (-1 for automatic)&apos;</source>
-        <translation>&apos;学生&apos; （スピンボックスの近くにあるテキスト）は、&apos;学生数&apos; （自動の場合には−１）です。</translation>
+        <translation>&apos;学生&apos; （スピンボックスの近くにあるテキスト）は、&apos;学生数&apos; （自動の場合には−１）です</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="805"/>
@@ -1354,17 +1354,17 @@ there won&apos;t be removed an additional number of %1 activities
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="807"/>
         <source>&apos;Min days&apos; means &apos;The minimum required distance in days between each pair of activities&apos;</source>
-        <translation>&apos;最小日&apos; は、ペアとなったアクティビティの必要な最小間隔です。</translation>
+        <translation>&apos;最小日&apos; は、ペアとなったアクティビティの必要な最小間隔です</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="809"/>
         <source>&apos;Weight %&apos; means &apos;Percentage of added constraint (min days between activities constraint). Recommended: 95.0%-100.0%&apos;</source>
-        <translation>&apos;重み（％） &apos; は追加された制約（アクティビティの制約間の最小日数）のパーセンテージです。９５．０〜１００．０％が推奨値です。</translation>
+        <translation>&apos;重み（％） &apos; は追加された制約（アクティビティの制約間の最小日数）のパーセンテージです。９５．０〜１００．０％が推奨値です</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="811"/>
         <source>&apos;Consecutive&apos; means &apos;If activities on same day, force consecutive?&apos;</source>
-        <translation>&apos;連続して行う&apos;　:複数のアクティビティが同じ日の場合、連続して行いますか？</translation>
+        <translation>&apos;連続して行う&apos;　:複数のアクティビティが同じ日の場合、連続して行いますか</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="813"/>
@@ -1396,7 +1396,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="888"/>
         <source>Current algorithm cannot schedule 3 activities in the same day if consecutive is checked, so you will get no solution in such extreme cases (for instance, if you have 3 lessons and a teacher which works only 1 day per week, and select &apos;force consecutive if same day&apos;, you will get an imposssible timetable. But these are extremely unlikely cases).</source>
-        <translation>現在のアルゴリズムでは連続して行うがチェックされた場合、同日に３つのアクティビティをスケジュールすることは出来ません。この様な極端なケースでは解が得られません。（例：３つの講義と週に１日だけ担当を持つ１人の教師がいる場合、同日に連続して行うを選択すると不可能なタイムテーブルを取得します。しかし、これは教師の負担が大きい為、ありそうにないケースです。）</translation>
+        <translation>現在のアルゴリズムでは連続して行うがチェックされた場合、同日に３つのアクティビティをスケジュールすることは出来ません。この様な極端なケースでは解が得られません。（例：３つの講義と週に１日だけ担当を持つ１人の教師がいる場合、同日に連続して行うを選択すると不可能なタイムテーブルを取得します。しかし、これは教師の負担が大きい為、ありそうにないケースです）。</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="903"/>
@@ -1411,7 +1411,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="846"/>
         <source>If you have for instance an activity with 2 lessons per week and you want to spread them to at least 2 days distance, you can add a constraint min days with min days = 2 and weight 95% (or higher). If you want also to ensure that activities will be separated by at least one day, you can use this feature: add a constraint min days with minimum days 2 and weight 95% or lower, and after that you&apos;ll get the possibility to add another constraint with min 1 days and weight 95% or higher. It works if you first select in the dialog the min days &gt;= 2 and click Add activities. Or you can add manually the constraints (difficult this way). Important: it is best practice to consider both constraints to have 95% weight. The combination assures that the resultant is 99.75% weight</source>
-        <translation>たとえば、1週間に2レッスンのアクティビティがあり、少なくとも2日間の距離に分散したい場合は、最小日数= 2、重み95％（またはそれ以上）の制約条件を追加することができます。 少なくとも1日でアクティビティが分離されていることを確認したい場合は、この機能を使用することができます。最低日数2、重み95％以下の制約最小日数を追加してから、最小1日および重み95％以上の別の制約を追加する場合があります。 このダイアログでは、最初にダイアログ内で最小日 = 2の日数を選択し、[アクティビティの追加]をクリックすると機能します。 または、手動で制約を追加することもできます（これは難しいです）。 重要：両方の制約が95％の重さを持つと考えることがベストプラクティスです。 この組み合わせは、結果が99.75％重みであることを保証します。</translation>
+        <translation>たとえば、1週間に2レッスンのアクティビティがあり、少なくとも2日間の距離に分散したい場合は、最小日数= 2、重み95％（またはそれ以上）の制約条件を追加することができます。 少なくとも1日でアクティビティが分離されていることを確認したい場合は、この機能を使用することができます。最低日数2、重み95％以下の制約最小日数を追加してから、最小1日および重み95％以上の別の制約を追加する場合があります。 このダイアログでは、最初にダイアログ内で最小日 = 2の日数を選択し、[アクティビティの追加]をクリックすると機能します。 または、手動で制約を追加することもできます（これは難しいです）。 重要：両方の制約が95％の重さを持つと考えることがベストプラクティスです。 この組み合わせは、結果が99.75％重みであることを保証します</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="859"/>
@@ -2013,7 +2013,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="282"/>
         <source>Empty list of activities</source>
-        <translation>アクティビティの空のリスト</translation>
+        <translation>アクティビティのリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="297"/>
@@ -2139,7 +2139,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiesnotoverlappingform.cpp" line="187"/>
         <source>Empty list of not overlapping activities</source>
-        <translation>重複しないアクティビティの空リスト</translation>
+        <translation>重複しないアクティビティのリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesnotoverlappingform.cpp" line="192"/>
@@ -2252,7 +2252,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="130"/>
         <source>Empty list of activities</source>
-        <translation>アクティビティの空リスト</translation>
+        <translation>アクティビティのリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="135"/>
@@ -2359,7 +2359,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="282"/>
         <source>Empty list of activities</source>
-        <translation>アクティビティの空のリスト</translation>
+        <translation>アクティビティのリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="297"/>
@@ -2789,7 +2789,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform.cpp" line="124"/>
         <source>Empty list of activities</source>
-        <translation>アクティビティの空リスト</translation>
+        <translation>アクティビティのリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform.cpp" line="129"/>
@@ -2886,7 +2886,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartingdayform.cpp" line="188"/>
         <source>Empty list of simultaneous activities</source>
-        <translation>同時アクティビティの空リスト</translation>
+        <translation>同時アクティビティのリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartingdayform.cpp" line="193"/>
@@ -2994,7 +2994,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartinghourform.cpp" line="189"/>
         <source>Empty list of selected activities</source>
-        <translation>選択されたアクティビティの空リスト</translation>
+        <translation>選択されたアクティビティのリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartinghourform.cpp" line="194"/>
@@ -3105,7 +3105,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="215"/>
         <source>Empty list of simultaneous activities</source>
-        <translation>同時アクティビティの空リスト</translation>
+        <translation>同時アクティビティのリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="220"/>
@@ -3120,12 +3120,12 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="258"/>
         <source>1. First (sub)activity has id=%1 and represents %2 sub-activities</source>
-        <translation>1.最初の（サブ）アクティビティは id=％1 を持ち、 ％2 のサブアクティビティを表します</translation>
+        <translation>1.最初の（サブ）アクティビティは id= %1 を持ち、 %2 のサブアクティビティを表します</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="262"/>
         <source>2. Current (sub)activity has id=%1 and represents %2 sub-activities</source>
-        <translation>2.現在（サブ）アクティビティは id=％1 であり、 ％2 サブアクティビティを表します</translation>
+        <translation>2.現在（サブ）アクティビティは id=%1 であり、 %2 サブアクティビティを表します</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="317"/>
@@ -3137,7 +3137,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="324"/>
         <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="351"/>
         <source>Constraint NOT added - please report error</source>
-        <translation>制約は追加されませんでした。エラーを報告してください。</translation>
+        <translation>制約は追加されませんでした。エラーを報告してください</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="434"/>
@@ -3147,7 +3147,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiessamestartingtimeform.cpp" line="429"/>
         <source>Add multiple constraints: this is a check box. Select this if you want to input only the representatives of sub-activities and FET to add multiple constraints, for all sub-activities from the same components, in turn, respectively. There will be added more constraints activities same starting time, one for each corresponding tuple. The number of sub-activities must match for the representants and be careful to the order, to be what you need</source>
-        <translation>複数の制約を追加：これはチェックボックスです。 同じコンポーネントのすべてのサブアクティビティに対して、複数の制約を追加するためにサブアクティビティの代表とFETのみを入力する場合は、これを選択します。 対応するタプルごとに1つずつ、より多くの制約アクティビティが同じ開始時刻に追加されます。 サブアクティビティの数は、代理人のために一致しなければならず、必要なものになるように、注文に注意してください。</translation>
+        <translation>複数の制約を追加：これはチェックボックスです。 同じコンポーネントのすべてのサブアクティビティに対して、複数の制約を追加するためにサブアクティビティの代表とFETのみを入力する場合は、これを選択します。 対応するタプルごとに1つずつ、より多くの制約アクティビティが同じ開始時刻に追加されます。 サブアクティビティの数は、代理人のために一致しなければならず、必要なものになるように、注文に注意してください</translation>
     </message>
 </context>
 <context>
@@ -3447,7 +3447,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredroomsform.cpp" line="198"/>
         <source>Empty list of selected rooms</source>
-        <translation>選択された部屋の空リスト</translation>
+        <translation>選択された部屋のリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredroomsform.cpp" line="211"/>
@@ -3462,7 +3462,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredroomsform.cpp" line="232"/>
         <source>Constraint NOT added - please report error</source>
-        <translation>制約は追加されませんでした。エラーを報告してください。</translation>
+        <translation>制約は追加されませんでした。エラーを報告してください</translation>
     </message>
 </context>
 <context>
@@ -3976,12 +3976,12 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitytagpreferredroomsform.cpp" line="88"/>
         <source>Empty list of selected rooms</source>
-        <translation>選択された部屋の空リスト</translation>
+        <translation>選択された部屋のリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitytagpreferredroomsform.cpp" line="99"/>
         <source>Invalid selected activity tag</source>
-        <translation>選択されたアクティビティタグは無効です。</translation>
+        <translation>選択されたアクティビティタグは無効です</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitytagpreferredroomsform.cpp" line="112"/>
@@ -3991,7 +3991,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitytagpreferredroomsform.cpp" line="119"/>
         <source>Constraint NOT added - please report error</source>
-        <translation>制約は追加されませんでした。エラーを報告してください。</translation>
+        <translation>制約は追加されませんでした。エラーを報告してください</translation>
     </message>
 </context>
 <context>
@@ -4242,7 +4242,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform.cpp" line="199"/>
         <source>Empty list of selected activities</source>
-        <translation>選択されたアクティビティの空リスト</translation>
+        <translation>選択されたアクティビティのリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform.cpp" line="204"/>
@@ -4257,7 +4257,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintmaxdaysbetweenactivitiesform.cpp" line="226"/>
         <source>Constraint NOT added - it must be a duplicate</source>
-        <translation>制約は追加されませんでした。重複している必要があります。</translation>
+        <translation>制約は追加されませんでした。重複している必要があります</translation>
     </message>
 </context>
 <context>
@@ -4356,7 +4356,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="193"/>
         <source>Empty list of selected activities</source>
-        <translation>選択されたアクティビティの空リスト</translation>
+        <translation>選択されたアクティビティのリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="198"/>
@@ -4371,7 +4371,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="207"/>
         <source>The best way to add the activities would be:</source>
-        <translation>アクティビティを追加する最善の方法は次のとおりです。</translation>
+        <translation>アクティビティを追加する最善の方法は次のとおりです：</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="210"/>
@@ -4401,7 +4401,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintmindaysbetweenactivitiesform.cpp" line="253"/>
         <source>Constraint NOT added - it must be a duplicate</source>
-        <translation>制約は追加されませんでした。重複している必要があります。</translation>
+        <translation>制約は追加されませんでした。重複している必要があります</translation>
     </message>
 </context>
 <context>
@@ -4508,7 +4508,7 @@ force activities consecutive</source>
     <message>
         <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform.cpp" line="195"/>
         <source>Empty list of selected activities</source>
-        <translation>選択されたアクティビティの空リスト</translation>
+        <translation>選択されたアクティビティのリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform.cpp" line="200"/>
@@ -4523,7 +4523,7 @@ force activities consecutive</source>
     <message>
         <location filename="../src/interface/addconstraintmingapsbetweenactivitiesform.cpp" line="224"/>
         <source>Constraint NOT added - please report error</source>
-        <translation>制約は追加されませんでした。エラーを報告してください。</translation>
+        <translation>制約は追加されませんでした。エラーを報告してください</translation>
     </message>
 </context>
 <context>
@@ -6021,7 +6021,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/addconstraintstudentssethomeroomsform.cpp" line="98"/>
         <source>Empty list of selected rooms</source>
-        <translation>選択された部屋の空のリスト</translation>
+        <translation>選択された部屋のリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssethomeroomsform.cpp" line="118"/>
@@ -6031,7 +6031,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/addconstraintstudentssethomeroomsform.cpp" line="125"/>
         <source>Constraint NOT added - please report error</source>
-        <translation>制約は追加されませんでした。エラーを報告してください。</translation>
+        <translation>制約は追加されませんでした。エラーを報告してください</translation>
     </message>
 </context>
 <context>
@@ -7432,7 +7432,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintsubjectactivitytagpreferredroomsform.cpp" line="96"/>
         <source>Empty list of selected rooms</source>
-        <translation>選択された部屋の空リスト</translation>
+        <translation>選択された部屋のリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubjectactivitytagpreferredroomsform.cpp" line="107"/>
@@ -7595,7 +7595,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintsubjectpreferredroomsform.cpp" line="89"/>
         <source>Empty list of selected rooms</source>
-        <translation>選択された部屋の空リスト</translation>
+        <translation>選択された部屋のリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubjectpreferredroomsform.cpp" line="100"/>
@@ -7903,7 +7903,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteacherhomeroomsform.cpp" line="88"/>
         <source>Empty list of selected rooms</source>
-        <translation>選択された部屋の空リスト</translation>
+        <translation>選択された部屋のリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherhomeroomsform.cpp" line="108"/>
@@ -10428,7 +10428,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform.cpp" line="178"/>
         <source>Empty list of selected activities</source>
-        <translation>選択されたアクティビティの空リスト</translation>
+        <translation>選択されたアクティビティのリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform.cpp" line="183"/>
@@ -11941,148 +11941,149 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15699"/>
         <source>FET error in data</source>
-        <translation type="unfinished">FET データのエラー</translation>
+        <translation>FET データのエラー</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15700"/>
         <source>Following constraint is wrong (refers to no activities). Please correct it:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>以下の制約は誤っています（アクティビティがないため）。修正してください：
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15737"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation type="unfinished">コ：%1</translation>
+        <translation>コ：%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15742"/>
         <source>teacher=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>教師=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15744"/>
         <source>all teachers</source>
-        <translation type="unfinished"></translation>
+        <translation>全ての教師</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15747"/>
         <source>students=%1</source>
-        <translation type="unfinished">学生=%1</translation>
+        <translation>学生=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15749"/>
         <source>all students</source>
-        <translation type="unfinished"></translation>
+        <translation>全ての学生</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15752"/>
         <source>subject=%1</source>
-        <translation type="unfinished">科目=%1</translation>
+        <translation>科目=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15754"/>
         <source>all subjects</source>
-        <translation type="unfinished"></translation>
+        <translation>全ての科目</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15757"/>
         <source>activity tag=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>アクティビティタグ=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15759"/>
         <source>all activity tags</source>
-        <translation type="unfinished"></translation>
+        <translation>全てのアクティビティタグ</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15766"/>
         <source>WP:%1%</source>
         <comment>Abbreviation for Weight Percentage</comment>
-        <translation type="unfinished">重:%1%</translation>
+        <translation>重:%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15775"/>
         <source>Time constraint</source>
-        <translation type="unfinished">時間の制約</translation>
+        <translation>時間の制約</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15776"/>
         <source>Activities with:</source>
-        <translation type="unfinished"></translation>
+        <translation>アクティビティ：</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15779"/>
         <source>Teacher=%1</source>
-        <translation type="unfinished">教師=%1</translation>
+        <translation>教師=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15781"/>
         <source>All teachers</source>
-        <translation type="unfinished"></translation>
+        <translation>全ての教師</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15785"/>
         <source>Students=%1</source>
-        <translation type="unfinished">学生=%1</translation>
+        <translation>学生=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15787"/>
         <source>All students</source>
-        <translation type="unfinished"></translation>
+        <translation>全ての学生</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15791"/>
         <source>Subject=%1</source>
-        <translation type="unfinished">科目=%1</translation>
+        <translation>科目=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15793"/>
         <source>All subjects</source>
-        <translation type="unfinished"></translation>
+        <translation>全ての科目</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15797"/>
         <source>Activity tag=%1</source>
-        <translation type="unfinished">アクティビティタグ=%1</translation>
+        <translation>アクティビティタグ=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15799"/>
         <source>All activity tags</source>
-        <translation type="unfinished"></translation>
+        <translation>全てのアクティビティタグ</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15802"/>
         <source>must end students&apos; day</source>
-        <translation type="unfinished"></translation>
+        <translation>学生の日を終わらせなければならない</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15805"/>
         <source>Weight (percentage)=%1%</source>
-        <translation type="unfinished">重み（％）=%1%</translation>
+        <translation>重み（％）=%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15808"/>
         <source>Active=%1</source>
         <comment>Refers to a constraint</comment>
-        <translation type="unfinished">アクティブ=%1</translation>
+        <translation>アクティブ=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15812"/>
         <source>Comments=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>コメント=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15856"/>
         <source>Time constraint activities end students&apos; day broken for activity with id=%1 (%2), increases conflicts total by %3</source>
         <comment>%1 is the id, %2 is the detailed description of the activity</comment>
-        <translation type="unfinished"></translation>
+        <translation>時間制約アクティビティでは、id =%1 （%2）のアクティビティで学生の日を終えるが壊れ、%3 で衝突の合計が増加します</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15762"/>
         <source>Activities with %1, %2, %3, %4, must end students&apos; day</source>
         <comment>%1...%4 are conditions for the activities</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1, %2, %3, %4 のアクティビティは学生の日に終わらなければならない</translation>
     </message>
 </context>
 <context>
@@ -12167,106 +12168,111 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="17882"/>
         <location filename="../src/engine/timeconstraint.cpp" line="17889"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17869"/>
         <source>Constraint activities max simultaneous in selected time slots is wrong because it refers to removed day. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>削除された日を参照するため、選択されたタイムスロットで最大の同時制約アクティビティが誤っています。修正してもう一度お試しください。修正とは、制約を編集して情報を更新することを意味します。制約は次のとおりです。
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17876"/>
         <source>Constraint activities max simultaneous in selected time slots is wrong because a preferred hour is too late (after the last acceptable slot). Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>推奨する時間が遅すぎる（最後に受け入れ可能なタイムスロットの後）ため、選択されたタイムスロットで最大の同時制約アクティビティが誤っています。修正してもう一度お試しください。修正とは、制約を編集して情報を更新することを意味します。制約は次のとおりです。
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17883"/>
         <source>Constraint activities max simultaneous in selected time slots is wrong because it refers to removed hour. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>削除された時間を参照するため、選択されたタイムスロットで最大の同時制約アクティビティが誤っています。修正してもう一度お試しください。修正とは、制約を編集して情報を更新することを意味します。制約は次のとおりです。
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17890"/>
         <source>Constraint activities max simultaneous in selected time slots is wrong because hour or day is not specified for a slot (-1). Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>タイムスロットに時間または日にちが指定されていない（-1）ため、選択されたタイムスロットで最大の同時制約アクティビティが誤っています。修正してもう一度お試しください。修正とは、制約を編集して情報を更新することを意味します。制約は次のとおりです。
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17901"/>
         <source>FET error in data</source>
-        <translation type="unfinished">FET データのエラー</translation>
+        <translation>FET データのエラー</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17902"/>
         <source>Following constraint is wrong (refers to no activities). Please correct it:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>以下の制約は誤っています（アクティビティがないため）。修正してください：
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17953"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation type="unfinished">コ：%1</translation>
+        <translation>コ：%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17967"/>
         <source>Activities max simultaneous in selected time slots, WP:%1%, NA:%2, A: %3, STS: %4, MS:%5</source>
         <comment>Constraint description. WP means weight percentage, NA means the number of activities, A means activities list, STS means selected time slots, MS means max simultaneous (number of activities in each selected time slot)</comment>
-        <translation type="unfinished"></translation>
+        <translation>選択されたタイムスロットで同時に最大のアクティビティを実行します。重： %1, ア数：%2, アリ：%3, 選タ：%4, 最大同：%5</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17994"/>
         <source>Weight (percentage)=%1%</source>
-        <translation type="unfinished">重み（％）=%1%</translation>
+        <translation>重み（％）=%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17992"/>
         <source>Time constraint</source>
-        <translation type="unfinished">時間の制約</translation>
+        <translation>時間の制約</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17993"/>
         <source>Activities max simultaneous in selected time slots</source>
-        <translation type="unfinished"></translation>
+        <translation>選択したタイムスロットでの最大の同時アクティビティ</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17995"/>
         <source>Number of activities=%1</source>
-        <translation type="unfinished">アクティビティ数=%1</translation>
+        <translation>アクティビティ数=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17997"/>
         <source>Activity with id=%1 (%2)</source>
         <comment>%1 is the id, %2 is the detailed description of the activity</comment>
-        <translation type="unfinished">id=%1 （%2）のアクティビティ</translation>
+        <translation>id=%1 （%2）のアクティビティ</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18002"/>
         <source>Selected time slots: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 の選択されたタイムスロット</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18003"/>
         <source>Maximum number of simultaneous activities in each selected time slot=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>選択した各タイムスロットの同時アクティビティの最大数=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18006"/>
         <source>Active=%1</source>
         <comment>Refers to a constraint</comment>
-        <translation type="unfinished">アクティブ=%1</translation>
+        <translation>アクティブ=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18010"/>
         <source>Comments=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>コメント=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18066"/>
         <source>Time constraint %1 broken - this should not happen, as this kind of constraint should have only 100.0% weight. Please report error!</source>
-        <translation type="unfinished"></translation>
+        <translation>時間制約 %1 が壊れました - この種の制約は100.0％の重みしか持たないので、これは起こらないはずです。エラーを報告してください！</translation>
     </message>
 </context>
 <context>
@@ -12306,12 +12312,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="298"/>
         <source>IMPORTANT NOTE: Please use this constraint ONLY when strictly necessary, when it is really useful, when it has effect, when it is not implied by the other constraints, and in a non-redundant way. Otherwise it may slow down very much the generation.</source>
-        <translation type="unfinished"></translation>
+        <translation>重要な注意：この制約は、本当に必要な場合、本当に有用な場合、効果がある場合、他の制約によって暗黙のうちでない場合、および重複しない場合にのみ使用してください。それ以外の場合は、時間割の生成を非常に遅くする可能性があります。</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="301"/>
         <source>Important note: if you want the maximum number of simultaneous activities to be 1, then it is more efficient to use constraint activities not overlapping and the result is the same. (The underlying data structures make FET compute better the initial order of placing the activities and also the generation speed is faster, if using constraints of type activities not overlapping.)</source>
-        <translation type="unfinished"></translation>
+        <translation>重要な注意：同時アクティビティの最大数を1にするには、重複しない制約アクティビティの制約を使用する方が効率的で、同じことを行えます。 （基本的なデータ構造は、アクティビティを配置する最初の順序をFETで計算し、アクティビティが重複しないタイプの制約をしようすると、時間割の生成も速くなります）</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="305"/>
@@ -12321,17 +12327,17 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="307"/>
         <source>To use this constraint, you need to specify a set of activities, a set of time slots, and a maximum number of activities from those selected which can be simultaneous in each of the selected time slots.</source>
-        <translation type="unfinished"></translation>
+        <translation>この制約を使用するには、選択されたタイムスロットのそれぞれで、アクティビティのセット、タイムスロットのセット、および同時に実行できる選択されたアクティビティの最大数を指定する必要があります。</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="310"/>
         <source>Uses of this constraint are probably wide. The main reason it was added was to enable users to specify that each time slot needs to have a specified number of free teachers, for supervision of students.</source>
-        <translation type="unfinished"></translation>
+        <translation>この制約の使用はおそらく範囲が広いです。これが追加された主な理由は、各タイムスロットに指定された数の空いている教師を学生の監督のために指定する必要があることをユーザーが指定できるようにするためでした。</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="313"/>
         <source>Note that if you have activities with two or more teachers, you might need to use a trick for that: add one (or more) dummy activities, no teachers/no students, same starting time with the initial activity.</source>
-        <translation type="unfinished"></translation>
+        <translation>2人以上の教師がいるアクティビティがある場合は、最初のアクティビティと同じ開始時間に1つ（またはそれ以上）のダミーアクティビティを追加し、先生/学生なしで追加するトリックを使用する必要があります。</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="316"/>
@@ -12345,12 +12351,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="14"/>
         <source>Constraints activities max simultaneous in selected time slots</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>選択したタイムスロットで最大の同時アクティビティの制約</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="26"/>
         <source>IMPORTANT: Please do not overuse this constraint, because the generation may be slowed down very much. Please read Help for more details.</source>
-        <translation type="unfinished"></translation>
+        <translation>重要：時間割の生成が非常に遅くなる可能性があるため、この制約を過度に使用しないでください。詳細はヘルプをお読みください。</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="44"/>
@@ -12608,77 +12614,78 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6960"/>
         <source>FET error in data</source>
-        <translation type="unfinished">FET データのエラー</translation>
+        <translation>FET データのエラー</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6961"/>
         <source>Following constraint is wrong (refers to less than two activities). Please correct it:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>次の制約は間違っています（2つ以下のアクティビティ）。それを修正してください：
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7015"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation type="unfinished">コ：%1</translation>
+        <translation>コ：%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7039"/>
         <source>Space constraint</source>
-        <translation type="unfinished"></translation>
+        <translation>スペースの制約</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7040"/>
         <source>Activities occupy max different rooms</source>
-        <translation type="unfinished"></translation>
+        <translation>アクティビティが占有する最大の異なる部屋</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7022"/>
         <source>Activities occupy max different rooms, WP:%1%, NA:%2, A: %3, MDR:%4</source>
         <comment>Constraint description. WP means weight percentage, NA means the number of activities, A means activities list, MDR means max different rooms</comment>
-        <translation type="unfinished"></translation>
+        <translation>アクティビティが占有する最大の異なる部屋, 重：%1, ア数：%2, アリ：%3, 最大異部屋：%4</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7041"/>
         <source>Weight (percentage)=%1%</source>
-        <translation type="unfinished">重み（％）=%1%</translation>
+        <translation>重み（％）=%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7042"/>
         <source>Number of activities=%1</source>
-        <translation type="unfinished">アクティビティ数=%1</translation>
+        <translation>アクティビティ数=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7044"/>
         <source>Activity with id=%1 (%2)</source>
         <comment>%1 is the id, %2 is the detailed description of the activity</comment>
-        <translation type="unfinished">id=%1 （%2）のアクティビティ</translation>
+        <translation>id=%1 （%2）のアクティビティ</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7049"/>
         <source>Maximum number of different rooms=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>異なる部屋の最大数=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7052"/>
         <source>Active=%1</source>
         <comment>Refers to a constraint</comment>
-        <translation type="unfinished">アクティブ=%1</translation>
+        <translation>アクティブ=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7056"/>
         <source>Comments=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>コメント=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7094"/>
         <source>Space constraint activities occupy max different rooms broken</source>
-        <translation type="unfinished"></translation>
+        <translation>スペース制約のアクティビティが最大異なる部屋を占有するは壊れました</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7096"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation>これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -12718,7 +12725,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="298"/>
         <source>IMPORTANT NOTE: Please be careful with this constraint, as its overuse may lead to a slowdown of generation or even to an impossible timetable.</source>
-        <translation type="unfinished"></translation>
+        <translation>重要な注意：この制約を過度に使用すると、時間割生成の遅れや不可能な時間割生成につながる可能性があるため、注意してください。</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="300"/>
@@ -12728,7 +12735,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="302"/>
         <source>To use this constraint, you need to specify a set of activities and the maximum number of different rooms which can be occupied by these activities. Note that each activity can take place in a single room, and a single room can hold a single activity at a certain moment. This constraint may be used for instance to constrain all activities of type Physics of a certain students set to be in the same room throughout the week, by adding all Physics activities for this students set and making max different rooms = 1.</source>
-        <translation type="unfinished"></translation>
+        <translation>この制約を使用するには、アクティビティのセットと、これらのアクティビティが占有することができる異なる部屋の最大数を指定する必要があります。各アクティビティは1つの部屋で行うことができ、1つの部屋は特定の時間に1つのアクティビティを持つことができます。この制約は、たとえば、特定の生徒セットの物理系のすべてのアクティビティを、この学生セットのすべての物理アクティビティを追加し、最大別のルームを1にすることによって、1週間を通して同じ部屋に存在するように制約することに使用できます。</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform.cpp" line="307"/>
@@ -12747,7 +12754,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform_template.ui" line="26"/>
         <source>IMPORTANT: Please be careful with this constraint, because the generation may become too slow or impossible if you overuse it. Press Help for more details.</source>
-        <translation type="unfinished"></translation>
+        <translation>重要な注意：この制約を過度に使用すると、時間割生成の遅れや時間割生成が出来ないことにつながる可能性があります。注意してください。</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiesoccupymaxdifferentroomsform_template.ui" line="44"/>
@@ -12818,106 +12825,111 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="17513"/>
         <location filename="../src/engine/timeconstraint.cpp" line="17520"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17500"/>
         <source>Constraint activities occupy max time slots from selection is wrong because it refers to removed day. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>削除された日を参照するため、選択からの最大のタイムスロットを占有する制約アクティビティが誤っています。修正してもう一度お試しください。修正とは、制約を編集して情報を更新することを意味します。制約は次のとおりです。
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17507"/>
         <source>Constraint activities occupy max time slots from selection is wrong because a preferred hour is too late (after the last acceptable slot). Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>推奨する時間が遅すぎる（最後に受け入れ可能なタイムスロットの後）ため、選択肢から最大のタイムスロットを占める制約アクティビティが誤っています。修正してもう一度お試しください。修正とは、制約を編集して情報を更新することを意味します。制約は次のとおりです。
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17514"/>
         <source>Constraint activities occupy max time slots from selection is wrong because it refers to removed hour. Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>削除され時間を参照するため、選択からの最大のタイムスロットを占有する制約アクティビティが誤っています。修正してもう一度お試しください。修正とは、制約を編集して情報を更新することを意味します。制約は次のとおりです。
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17521"/>
         <source>Constraint activities occupy max time slots from selection is wrong because hour or day is not specified for a slot (-1). Please correct and try again. Correcting means editing the constraint and updating information. Constraint is:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>タイムスロットに時間または日にちが指定されていない（-1）ため、選択肢から最大のタイムスロットを占める制約アクティビティが誤っています。修正してもう一度お試しください。修正とは、制約を編集して情報を更新することを意味します。制約は次のとおりです。
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17532"/>
         <source>FET error in data</source>
-        <translation type="unfinished">FET データのエラー</translation>
+        <translation>FET データのエラー</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17533"/>
         <source>Following constraint is wrong (refers to no activities). Please correct it:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>以下の制約は誤っています（アクティビティがないため）。修正してください：
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17584"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation type="unfinished">コ：%1</translation>
+        <translation>コ：%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17598"/>
         <source>Activities occupy max time slots from selection, WP:%1%, NA:%2, A: %3, STS: %4, MTS:%5</source>
         <comment>Constraint description. WP means weight percentage, NA means the number of activities, A means activities list, STS means selected time slots, MTS means max time slots</comment>
-        <translation type="unfinished"></translation>
+        <translation>アクティビティは、選択肢から最大タイムスロットを占有します。重： %1, ア数：%2, アリ：%3, 選タ：%4, 最大タス：%5</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17625"/>
         <source>Weight (percentage)=%1%</source>
-        <translation type="unfinished">重み（％）=%1%</translation>
+        <translation>重み（％）=%1%</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17623"/>
         <source>Time constraint</source>
-        <translation type="unfinished">時間の制約</translation>
+        <translation>時間の制約</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17624"/>
         <source>Activities occupy max time slots from selection</source>
-        <translation type="unfinished"></translation>
+        <translation>選択肢から最大のタイムスロットを占めるアクティビティ</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17626"/>
         <source>Number of activities=%1</source>
-        <translation type="unfinished">アクティビティ数=%1</translation>
+        <translation>アクティビティ数=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17628"/>
         <source>Activity with id=%1 (%2)</source>
         <comment>%1 is the id, %2 is the detailed description of the activity</comment>
-        <translation type="unfinished">id=%1 （%2）のアクティビティ</translation>
+        <translation>id=%1 （%2）のアクティビティ</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17633"/>
         <source>Selected time slots: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 の選択されたタイムスロット</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17634"/>
         <source>Maximum number of occupied slots from selection=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>選択から占有されているスロットの最大数= %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17637"/>
         <source>Active=%1</source>
         <comment>Refers to a constraint</comment>
-        <translation type="unfinished">アクティブ=%1</translation>
+        <translation>アクティブ=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17641"/>
         <source>Comments=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>コメント=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="17699"/>
         <source>Time constraint %1 broken - this should not happen, as this kind of constraint should have only 100.0% weight. Please report error!</source>
-        <translation type="unfinished"></translation>
+        <translation>時間制約 %1 が壊れました - この種の制約は100.0％の重みしか持たないので、これは起こらないはずです。エラーを報告してください！</translation>
     </message>
 </context>
 <context>
@@ -12952,12 +12964,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="272"/>
         <source>No</source>
-        <translation type="unfinished">いいえ</translation>
+        <translation>いいえ</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="298"/>
         <source>IMPORTANT NOTE: Please use this constraint ONLY when strictly necessary, when it is really useful, when it has effect, when it is not implied by the other constraints, and in a non-redundant way. Otherwise it may slow down very much the generation.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">重要な注意：この制約は、本当に必要な場合、本当に有用な場合、効果がある場合、他の制約によって暗黙のうちでない場合、および重複しない場合にのみ使用してください。それ以外の場合は、時間割の生成を非常に遅くする可能性があります。</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="301"/>
@@ -12991,7 +13003,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="26"/>
         <source>IMPORTANT: Please do not overuse this constraint, because the generation may be slowed down very much. Please read Help for more details.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">重要：時間割の生成が非常に遅くなる可能性があるため、この制約を過度に使用しないでください。詳細はヘルプをお読みください。</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="44"/>
@@ -13090,7 +13102,8 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="10816"/>
         <source>Following constraint is wrong (refers to no activities). Please correct it:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">以下の制約は誤っています（アクティビティがないため）。修正してください：
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10910"/>
@@ -13101,12 +13114,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10917"/>
         <source>teacher=%1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">教師=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10919"/>
         <source>all teachers</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全ての教師</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10922"/>
@@ -13116,7 +13129,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10924"/>
         <source>all students</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全ての学生</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10927"/>
@@ -13126,17 +13139,17 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10929"/>
         <source>all subjects</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全ての科目</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10932"/>
         <source>activity tag=%1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">アクティビティタグ=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10934"/>
         <source>all activity tags</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全てのアクティビティタグ</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10937"/>
@@ -13168,7 +13181,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10965"/>
         <source>Activities with:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">アクティビティ：</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10968"/>
@@ -13178,7 +13191,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10970"/>
         <source>All teachers</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全ての教師</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10974"/>
@@ -13188,7 +13201,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10976"/>
         <source>All students</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全ての学生</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10980"/>
@@ -13198,7 +13211,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10982"/>
         <source>All subjects</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全ての科目</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10986"/>
@@ -13208,7 +13221,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10988"/>
         <source>All activity tags</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全てのアクティビティタグ</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10992"/>
@@ -13365,7 +13378,8 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="9520"/>
         <source>Following constraint is wrong (refers to no activities). Please correct it:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">以下の制約は誤っています（アクティビティがないため）。修正してください：
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9616"/>
@@ -13376,12 +13390,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9623"/>
         <source>teacher=%1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">教師=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9625"/>
         <source>all teachers</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全ての教師</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9628"/>
@@ -13391,7 +13405,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9630"/>
         <source>all students</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全ての学生</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9633"/>
@@ -13401,17 +13415,17 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9635"/>
         <source>all subjects</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全ての科目</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9638"/>
         <source>activity tag=%1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">アクティビティタグ=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9640"/>
         <source>all activity tags</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全てのアクティビティタグ</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9643"/>
@@ -13443,7 +13457,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9670"/>
         <source>Activities with:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">アクティビティ：</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9673"/>
@@ -13453,7 +13467,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9675"/>
         <source>All teachers</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全ての教師</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9678"/>
@@ -13463,7 +13477,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9680"/>
         <source>All students</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全ての学生</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9683"/>
@@ -13473,7 +13487,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9685"/>
         <source>All subjects</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全ての科目</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9688"/>
@@ -13483,7 +13497,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9690"/>
         <source>All activity tags</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全てのアクティビティタグ</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="9694"/>
@@ -13564,7 +13578,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintactivitiespreferredtimeslotsform_template.ui" line="14"/>
         <source>Constraints activities preferred time slots</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>制約アクティビティの推奨タイムスロット</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiespreferredtimeslotsform_template.ui" line="99"/>
@@ -13599,7 +13613,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiespreferredtimeslotsform_template.ui" line="26"/>
         <source>Each hour slot of each considered activity must be allowed by this constraint (more restrictive than preferred starting times for activities with duration greater than 1)</source>
-        <translation type="unfinished"></translation>
+        <translation>考慮する各アクティビティーの各タイムスロットは、この制約によって許可されなければなりません（期間が1より大きいアクティビティーの優先開始時間よりも制限的）</translation>
     </message>
 </context>
 <context>
@@ -13613,7 +13627,8 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/spaceconstraint.cpp" line="7236"/>
         <source>Following constraint is wrong (refers to less than two activities). Please correct it:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">次の制約は間違っています（2つ以下のアクティビティ）。それを修正してください：
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7288"/>
@@ -13624,7 +13639,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7311"/>
         <source>Space constraint</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">スペースの制約</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7312"/>
@@ -13672,7 +13687,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="7376"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -14615,7 +14630,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="843"/>
         <source>Space constraint</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">スペースの制約</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="845"/>
@@ -14663,7 +14678,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="911"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -14818,7 +14833,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1097"/>
         <source>Space constraint</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">スペースの制約</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1099"/>
@@ -14856,7 +14871,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1162"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -15581,7 +15596,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitypreferredtimeslotsform_template.ui" line="26"/>
         <source>Each hour slot of each considered activity must be allowed by this constraint (more restrictive than preferred starting times for activities with duration greater than 1)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">考慮する各アクティビティーの各タイムスロットは、この制約によって許可されなければなりません（期間が1より大きいアクティビティーの優先開始時間よりも制限的）</translation>
     </message>
 </context>
 <context>
@@ -15635,7 +15650,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3440"/>
         <source>Space constraint</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">スペースの制約</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3442"/>
@@ -15667,7 +15682,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3504"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -15795,7 +15810,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3686"/>
         <source>Space constraint</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">スペースの制約</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3688"/>
@@ -15832,7 +15847,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3757"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -15993,7 +16008,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="339"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="278"/>
@@ -16162,7 +16177,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="394"/>
         <location filename="../src/engine/timeconstraint.cpp" line="424"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="389"/>
@@ -16364,7 +16379,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="5650"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -16585,7 +16600,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="297"/>
         <source>Help about the constraint max days between activities:</source>
-        <translation type="unfinished"></translation>
+        <translation>アクティビティ間の最大日数制約についてのヘルプ：</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform.cpp" line="299"/>
@@ -16644,7 +16659,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform_template.ui" line="14"/>
         <source>Constraints max days between activities</source>
         <extracomment>This is the title of the dialog to see the list of all constraints of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>アクティビティ間の最大日数制約</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintmaxdaysbetweenactivitiesform_template.ui" line="58"/>
@@ -17218,7 +17233,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="513"/>
         <source>Space constraint</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">スペースの制約</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="515"/>
@@ -17284,7 +17299,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="624"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -17431,7 +17446,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="7882"/>
         <location filename="../src/engine/timeconstraint.cpp" line="7910"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -17587,7 +17602,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16602"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -17938,7 +17953,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15546"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -18043,7 +18058,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4192"/>
         <source>Space constraint</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">スペースの制約</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4194"/>
@@ -18079,7 +18094,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4274"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -18184,7 +18199,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4716"/>
         <source>Space constraint</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">スペースの制約</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4718"/>
@@ -18220,7 +18235,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4798"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -18361,7 +18376,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18552"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -18802,7 +18817,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="7330"/>
         <location filename="../src/engine/timeconstraint.cpp" line="7357"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -19179,7 +19194,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5251"/>
         <source>Space constraint</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">スペースの制約</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5253"/>
@@ -19215,7 +19230,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5337"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -19682,7 +19697,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="8206"/>
         <location filename="../src/engine/timeconstraint.cpp" line="8233"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -19854,7 +19869,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16896"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -20169,7 +20184,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1359"/>
         <source>Space constraint</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">スペースの制約</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1361"/>
@@ -20201,7 +20216,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1435"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -20334,7 +20349,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1640"/>
         <source>Space constraint</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">スペースの制約</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1642"/>
@@ -20371,7 +20386,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1722"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -20595,7 +20610,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="15297"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -20722,7 +20737,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3955"/>
         <source>Space constraint</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">スペースの制約</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3957"/>
@@ -20763,7 +20778,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4039"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -20890,7 +20905,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4479"/>
         <source>Space constraint</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">スペースの制約</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4481"/>
@@ -20931,7 +20946,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="4563"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -21099,7 +21114,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="18358"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -21621,7 +21636,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="7609"/>
         <location filename="../src/engine/timeconstraint.cpp" line="7636"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -22074,7 +22089,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5002"/>
         <source>Space constraint</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">スペースの制約</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5004"/>
@@ -22115,7 +22130,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5090"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -22665,7 +22680,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="1019"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="1012"/>
@@ -22788,7 +22803,8 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="11303"/>
         <source>Following constraint is wrong (refers to no activities). Please correct it:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">以下の制約は誤っています（アクティビティがないため）。修正してください：
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11394"/>
@@ -22799,12 +22815,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11399"/>
         <source>teacher=%1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">教師=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11401"/>
         <source>all teachers</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全ての教師</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11404"/>
@@ -22814,7 +22830,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11406"/>
         <source>all students</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全ての学生</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11409"/>
@@ -22824,17 +22840,17 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11411"/>
         <source>all subjects</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全ての科目</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11414"/>
         <source>activity tag=%1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">アクティビティタグ=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11416"/>
         <source>all activity tags</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全てのアクティビティタグ</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11420"/>
@@ -22876,7 +22892,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11452"/>
         <source>All teachers</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全ての教師</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11456"/>
@@ -22886,7 +22902,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11458"/>
         <source>All students</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全ての学生</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11462"/>
@@ -22896,7 +22912,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11464"/>
         <source>All subjects</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全ての科目</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11468"/>
@@ -22906,7 +22922,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11470"/>
         <source>All activity tags</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全てのアクティビティタグ</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="11488"/>
@@ -23047,7 +23063,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredstartingtimesform_template.ui" line="26"/>
         <source>This constraint is useful to constrain only the n-th component for activities. Please click Help button for details.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">この制約は、アクティビティのn番目のコンポーネントのみを制約するのに便利です。詳細については、ヘルプボタンをクリックしてください。</translation>
     </message>
 </context>
 <context>
@@ -23093,7 +23109,8 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="10020"/>
         <source>Following constraint is wrong (refers to no activities). Please correct it:
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">以下の制約は誤っています（アクティビティがないため）。修正してください：
+%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10111"/>
@@ -23104,12 +23121,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10118"/>
         <source>teacher=%1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">教師=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10120"/>
         <source>all teachers</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全ての教師</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10123"/>
@@ -23119,7 +23136,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10125"/>
         <source>all students</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全ての学生</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10128"/>
@@ -23129,17 +23146,17 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10130"/>
         <source>all subjects</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全ての科目</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10133"/>
         <source>activity tag=%1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">アクティビティタグ=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10135"/>
         <source>all activity tags</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全てのアクティビティタグ</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10137"/>
@@ -23181,7 +23198,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10171"/>
         <source>All teachers</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全ての教師</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10175"/>
@@ -23191,7 +23208,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10177"/>
         <source>All students</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全ての学生</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10181"/>
@@ -23201,7 +23218,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10183"/>
         <source>All subjects</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全ての科目</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10187"/>
@@ -23211,7 +23228,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10189"/>
         <source>All activity tags</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全てのアクティビティタグ</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="10192"/>
@@ -23311,47 +23328,47 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredtimeslotsform_template.ui" line="14"/>
         <source>Constraints subactivities preferred time slots</source>
-        <translation type="unfinished"></translation>
+        <translation>サブアクティビティの推奨タイムスロット</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredtimeslotsform_template.ui" line="44"/>
         <source>Constraints</source>
-        <translation type="unfinished">制約</translation>
+        <translation>制約</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredtimeslotsform_template.ui" line="78"/>
         <source>Add</source>
-        <translation type="unfinished">追加</translation>
+        <translation>追加</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredtimeslotsform_template.ui" line="85"/>
         <source>Modify</source>
-        <translation type="unfinished">変更</translation>
+        <translation>変更</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredtimeslotsform_template.ui" line="92"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>取り除く</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredtimeslotsform_template.ui" line="61"/>
         <source>Current constraint</source>
-        <translation type="unfinished">現在の制約</translation>
+        <translation>現在の制約</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredtimeslotsform_template.ui" line="110"/>
         <source>Close</source>
-        <translation type="unfinished">閉じる</translation>
+        <translation>閉じる</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredtimeslotsform_template.ui" line="103"/>
         <source>Help</source>
-        <translation type="unfinished">ヘルプ</translation>
+        <translation>ヘルプ</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintsubactivitiespreferredtimeslotsform_template.ui" line="26"/>
         <source>This constraint is useful to constrain only the n-th component for activities. Please click Help button for details.</source>
-        <translation type="unfinished"></translation>
+        <translation>この制約は、アクティビティのn番目のコンポーネントのみを制約するのに便利です。詳細については、ヘルプボタンをクリックしてください。</translation>
     </message>
 </context>
 <context>
@@ -23411,7 +23428,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="2942"/>
         <source>Space constraint</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">スペースの制約</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="2944"/>
@@ -23448,7 +23465,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3007"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -23582,7 +23599,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3196"/>
         <source>Space constraint</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">スペースの制約</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3198"/>
@@ -23624,7 +23641,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="3268"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -23757,7 +23774,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="2448"/>
         <source>Space constraint</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">スペースの制約</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="2450"/>
@@ -23789,7 +23806,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="2511"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -23917,7 +23934,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="2693"/>
         <source>Space constraint</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">スペースの制約</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="2695"/>
@@ -23954,7 +23971,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="2763"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -24101,7 +24118,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="4059"/>
         <location filename="../src/engine/timeconstraint.cpp" line="4087"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3983"/>
@@ -24267,7 +24284,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16358"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -24415,7 +24432,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1916"/>
         <source>Space constraint</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">スペースの制約</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1918"/>
@@ -24447,7 +24464,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="1991"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -24580,7 +24597,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="2195"/>
         <source>Space constraint</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">スペースの制約</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="2197"/>
@@ -24617,7 +24634,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="2277"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -24834,7 +24851,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14738"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -24961,7 +24978,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5513"/>
         <source>Space constraint</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">スペースの制約</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5515"/>
@@ -25002,7 +25019,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5598"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -25129,7 +25146,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6001"/>
         <source>Space constraint</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">スペースの制約</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6003"/>
@@ -25170,7 +25187,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6087"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -25327,7 +25344,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4325"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -25794,7 +25811,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="3522"/>
         <location filename="../src/engine/timeconstraint.cpp" line="3549"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3459"/>
@@ -25951,7 +25968,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3095"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="3016"/>
@@ -26266,7 +26283,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14288"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -26393,7 +26410,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6489"/>
         <source>Space constraint</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">スペースの制約</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6491"/>
@@ -26434,7 +26451,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6578"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -26617,7 +26634,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14082"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -26972,7 +26989,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="702"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -27119,7 +27136,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="3788"/>
         <location filename="../src/engine/timeconstraint.cpp" line="3816"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -27275,7 +27292,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="16117"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -27491,7 +27508,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14987"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -27596,7 +27613,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5751"/>
         <source>Space constraint</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">スペースの制約</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5753"/>
@@ -27632,7 +27649,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="5833"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -27737,7 +27754,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6239"/>
         <source>Space constraint</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">スペースの制約</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6241"/>
@@ -27773,7 +27790,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6322"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -27914,7 +27931,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="4566"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -28339,7 +28356,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/timeconstraint.cpp" line="3292"/>
         <location filename="../src/engine/timeconstraint.cpp" line="3319"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -28480,7 +28497,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="2875"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -28757,7 +28774,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="14489"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -28862,7 +28879,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6739"/>
         <source>Space constraint</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">スペースの制約</translation>
     </message>
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6741"/>
@@ -28898,7 +28915,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/spaceconstraint.cpp" line="6825"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -29065,7 +29082,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/timeconstraint.cpp" line="13840"/>
         <source>This increases the conflicts total by %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">これによる衝突の合計の増加 %1</translation>
     </message>
 </context>
 <context>
@@ -36151,6 +36168,292 @@ Please modify your data correspondingly and try again</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="984"/>
+        <source>Close</source>
+        <translation type="unfinished">閉じる</translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="69"/>
+        <source>Authors</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2018 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.35.3 (February 2018).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET homepage: &lt;/span&gt;&lt;a href=&quot;https://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;https://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="90"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Liviu Lalescu (https://lalescu.ro/liviu/)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Volker Dirr (http://www.timetabling.de/)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	- XHTML timetable export.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	- CSV import and export.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	- Advanced statistics print/export.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	- Speed improvements in the timetable generation.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	- Locking the activities.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	- Activity planning dialog.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	- Print timetable dialog.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="133"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ar - Arabic translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Silver (to contact Silver visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Arabic translation, or contact forum user Silver)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Benahmed Abdelkrim (pmg9.81 AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ca - Catalan translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Sílvia Lag (to contact Sílvia visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Catalan translation, or contact forum user silvia)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;cs - Czech translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Pavel Fric (pavelfric AT seznam.cz)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;da - Danish translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	David Lamhauge (davidlamhauge AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;de - German translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Volker Dirr (http://www.timetabling.de/)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Robert Hairgrove (code AT roberthairgrove.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;el - Greek translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Dimitrios Ropokis (wamy80s AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Dimitris Kanatas (to contact Dimitris Kanatas visit&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Greek translation, or contact forum user Dimitris Kanatas)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Vangelis Karafillidis (to contact Vangelis Karafillidis visit&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Greek translation, or contact forum user Vangelis Karafillidis) - rewrote the translation from zero&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;es - Spanish translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: José César Fernández López (cesar.fernandez.lopez AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Emiliano Llano Díaz (compuvtt AT hotmail.com) - rewrote the translation from zero&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;eu - Basque translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Asier Urio Larrea (asieriko AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;fa - Persian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Hamed SadeghiNeshat (ha_sadeghi AT ce.sharif.edu)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: sally sat (soory63 AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;fr - French translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Jerome Durand (fetfr AT free.fr)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Patrick Fox (patrick.fox AT laposte.net)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Régis Bouguin (regis.bouguin AT laposte.net)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Pascal Cohen (pacohen AT laposte.net) - rewrote the translation from zero&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;gl - Galician translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Juan Marcos Filgueira Gomis (to contact marcos.filgueira, visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Galician translation, or contact forum user marcos.filgueira)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	this translation was based on the Spanish translation by José César Fernández López&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	as of April 2011 (see es - Spanish translation for more information)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;he - Hebrew translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Yotam Medini (yotam.medini AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;hu - Hungarian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Ferenczi Viktor (cx AT cx.hu)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;id - Indonesian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Nirwan Yus (ny.unpar AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;it - Italian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Marco Barsotti (mbarsan AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ja - Japanese translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Taro Tada (to contact Taro Tada, visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Japanese translation, or contact forum user Taro Tada)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;lt - Lithuanian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Darius Staigys (darius AT e-servisas.lt)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;mk - Macedonian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Zoran Zdravkovski (zoran AT pmf.ukim.edu.mk)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ms - Malay translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Abdul Hadi Kamel (hadikamel AT perlis.uitm.edu.my)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;nl - Dutch translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Niels Fikse (k.fikse AT student.utwente.nl)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;pl - Polish translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Radoslaw Pasiok (zapala AT konto.pl)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;pt_BR - Brazilian Portuguese translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Werner Bruns (werner.bruns AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Frank Mártin (drfarofa AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Cloves das Neves (clovesneves AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Alexandre R. Soares (alexrsoares AT zoho.com). (Alternatively,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	to contact Alexandre R. Soares, visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Brazilian Portuguese translation, or contact forum user khemis)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ro - Romanian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Liviu Lalescu (https://lalescu.ro/liviu/)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ru - Russian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Ilya V. Paramonov (ivparamonov AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;si - Sinhala translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Achini Duisna (duisna1012 AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;sk - Slovak translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Ondrej Gregor (to contact Ondrej visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Slovak translation, or contact forum user Ondrej)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;sq - Albanian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Artur Lugu (ciaoartur AT yahoo.it)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;sr - Serbian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Ivan Starchevicy (ivanstar61 AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Radan Putnik (srastral AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;tr - Turkish translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Mehmet Gezmisoglu (m_gezmisoglu AT hotmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Mahir Nacar (mahirnacar AT email.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Yakup Kadri Demirci (yakup AT engineer.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;uk - Ukrainian translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Andriy Melnyk (melnyk.andriy AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;uz - Uzbek translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Orzubek Eraliyev (o.eraliyev AT gmail.com, or visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Uzbek translation, or contact forum user sarkor)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;vi - Vietnamese translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Nguyen Truong Thang (to contact Thang visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Vietnamese translation, or contact forum user NTThang)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Nguyễn Hữu Duyệt (nguyenhuuduyet AT gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;zh_CN - Chinese Simplified translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	orange (112260085 AT qq.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;zh_TW - Chinese Traditional translation&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	James (james AT cc.shu.edu.tw)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="381"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;You may find references for the algorithms and techniques used in this program on the FET documentation web page, &lt;/span&gt;&lt;a href=&quot;https://lalescu.ro/liviu/fet/doc/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;https://lalescu.ro/liviu/fet/doc/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="394"/>
+        <source>Thanks to</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="415"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -36693,293 +36996,9 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Innocent De Marchi - bug reports.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Yakup Kadri Demirci - Turkish translation.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;bachiri401 - suggestion.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="982"/>
-        <source>Close</source>
-        <translation type="unfinished">閉じる</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="69"/>
-        <source>Authors</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="48"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET is free software for automatically scheduling the timetable of a school, high-school or university.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2018 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.35.2 (January 2018).&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;FET homepage: &lt;/span&gt;&lt;a href=&quot;https://lalescu.ro/liviu/fet/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;https://lalescu.ro/liviu/fet/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="90"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Liviu Lalescu (https://lalescu.ro/liviu/)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Volker Dirr (http://www.timetabling.de/)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	- XHTML timetable export.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	- CSV import and export.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	- Advanced statistics print/export.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	- Speed improvements in the timetable generation.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	- Locking the activities.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	- Activity planning dialog.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	- Print timetable dialog.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="133"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ar - Arabic translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Silver (to contact Silver visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Arabic translation, or contact forum user Silver)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Benahmed Abdelkrim (pmg9.81 AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ca - Catalan translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Sílvia Lag (to contact Sílvia visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Catalan translation, or contact forum user silvia)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;cs - Czech translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Pavel Fric (pavelfric AT seznam.cz)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;da - Danish translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	David Lamhauge (davidlamhauge AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;de - German translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Volker Dirr (http://www.timetabling.de/)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Robert Hairgrove (code AT roberthairgrove.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;el - Greek translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Dimitrios Ropokis (wamy80s AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Dimitris Kanatas (to contact Dimitris Kanatas visit&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Greek translation, or contact forum user Dimitris Kanatas)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Vangelis Karafillidis (to contact Vangelis Karafillidis visit&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Greek translation, or contact forum user Vangelis Karafillidis) - rewrote the translation from zero&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;es - Spanish translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: José César Fernández López (cesar.fernandez.lopez AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Emiliano Llano Díaz (compuvtt AT hotmail.com) - rewrote the translation from zero&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;eu - Basque translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Asier Urio Larrea (asieriko AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;fa - Persian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Hamed SadeghiNeshat (ha_sadeghi AT ce.sharif.edu)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: sally sat (soory63 AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;fr - French translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Jerome Durand (fetfr AT free.fr)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Patrick Fox (patrick.fox AT laposte.net)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Régis Bouguin (regis.bouguin AT laposte.net)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Pascal Cohen (pacohen AT laposte.net) - rewrote the translation from zero&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;gl - Galician translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Juan Marcos Filgueira Gomis (to contact marcos.filgueira, visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Galician translation, or contact forum user marcos.filgueira)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	this translation was based on the Spanish translation by José César Fernández López&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	as of April 2011 (see es - Spanish translation for more information)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;he - Hebrew translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Yotam Medini (yotam.medini AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;hu - Hungarian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Ferenczi Viktor (cx AT cx.hu)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;id - Indonesian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Nirwan Yus (ny.unpar AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;it - Italian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Marco Barsotti (mbarsan AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ja - Japanese translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Taro Tada (to contact Taro Tada, visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Japanese translation, or contact forum user Taro Tada)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;lt - Lithuanian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Darius Staigys (darius AT e-servisas.lt)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;mk - Macedonian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Zoran Zdravkovski (zoran AT pmf.ukim.edu.mk)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ms - Malay translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Abdul Hadi Kamel (hadikamel AT perlis.uitm.edu.my)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;nl - Dutch translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Niels Fikse (k.fikse AT student.utwente.nl)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;pl - Polish translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Radoslaw Pasiok (zapala AT konto.pl)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;pt_BR - Brazilian Portuguese translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Werner Bruns (werner.bruns AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Frank Mártin (drfarofa AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Cloves das Neves (clovesneves AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Alexandre R. Soares (alexrsoares AT zoho.com). (Alternatively,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	to contact Alexandre R. Soares, visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Brazilian Portuguese translation, or contact forum user khemis)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ro - Romanian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Liviu Lalescu (https://lalescu.ro/liviu/)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;ru - Russian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Ilya V. Paramonov (ivparamonov AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;si - Sinhala translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Achini Duisna (duisna1012 AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;sk - Slovak translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Ondrej Gregor (to contact Ondrej visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Slovak translation, or contact forum user Ondrej)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;sq - Albanian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Artur Lugu (ciaoartur AT yahoo.it)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;sr - Serbian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Ivan Starchevicy (ivanstar61 AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Radan Putnik (srastral AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;tr - Turkish translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Mehmet Gezmisoglu (m_gezmisoglu AT hotmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Mahir Nacar (mahirnacar AT email.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Yakup Kadri Demirci (yakup AT engineer.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;uk - Ukrainian translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Andriy Melnyk (melnyk.andriy AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;uz - Uzbek translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	Orzubek Eraliyev (o.eraliyev AT gmail.com, or visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Uzbek translation, or contact forum user sarkor)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;vi - Vietnamese translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	former translator: Nguyen Truong Thang (to contact Thang visit FET forum - https://lalescu.ro/liviu/fet/forum/,&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	section about Vietnamese translation, or contact forum user NTThang)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	current translator: Nguyễn Hữu Duyệt (nguyenhuuduyet AT gmail.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;zh_CN - Chinese Simplified translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	orange (112260085 AT qq.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;zh_TW - Chinese Traditional translation&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;	James (james AT cc.shu.edu.tw)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="381"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;You may find references for the algorithms and techniques used in this program on the FET documentation web page, &lt;/span&gt;&lt;a href=&quot;https://lalescu.ro/liviu/fet/doc/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;https://lalescu.ro/liviu/fet/doc/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="394"/>
-        <source>Thanks to</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -39532,7 +39551,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyactivityform.cpp" line="560"/>
         <source>&apos;Students&apos; (the text near the spin box), means &apos;Number of students (-1 for automatic)&apos;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&apos;学生&apos; （スピンボックスの近くにあるテキスト）は、&apos;学生数&apos; （自動の場合には−１）です</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyactivityform.cpp" line="562"/>
@@ -40033,7 +40052,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="324"/>
         <source>Empty list of activities</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">アクティビティのリストを空にする</translation>
     </message>
 </context>
 <context>
@@ -40137,22 +40156,22 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform.cpp" line="195"/>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform.cpp" line="200"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform.cpp" line="190"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み（％）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform.cpp" line="196"/>
         <source>Empty list of not overlapping activities</source>
-        <translation type="unfinished">重複しないアクティビティの空リスト</translation>
+        <translation>重複しないアクティビティのリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform.cpp" line="201"/>
         <source>Only one selected activity</source>
-        <translation type="unfinished">唯一選択されたアクティビティ</translation>
+        <translation>唯一選択されたアクティビティ</translation>
     </message>
 </context>
 <context>
@@ -40248,7 +40267,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="148"/>
         <source>Empty list of activities</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">アクティビティのリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="153"/>
@@ -40343,7 +40362,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="324"/>
         <source>Empty list of activities</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">アクティビティのリストを空にする</translation>
     </message>
 </context>
 <context>
@@ -40719,7 +40738,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform.cpp" line="140"/>
         <source>Empty list of activities</source>
-        <translation>アクティビティの空リスト</translation>
+        <translation>アクティビティのリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform.cpp" line="145"/>
@@ -40794,22 +40813,22 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform.cpp" line="203"/>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform.cpp" line="208"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform.cpp" line="198"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み（％）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform.cpp" line="204"/>
         <source>Empty list of selected activities</source>
-        <translation type="unfinished">選択されたアクティビティの空リスト</translation>
+        <translation>選択されたアクティビティのリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform.cpp" line="209"/>
         <source>Only one selected activity</source>
-        <translation type="unfinished">唯一選択されたアクティビティ</translation>
+        <translation>唯一選択されたアクティビティ</translation>
     </message>
 </context>
 <context>
@@ -40890,22 +40909,22 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform.cpp" line="202"/>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform.cpp" line="207"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform.cpp" line="197"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み（％）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform.cpp" line="203"/>
         <source>Empty list of selected activities</source>
-        <translation type="unfinished">選択されたアクティビティの空リスト</translation>
+        <translation>選択されたアクティビティのリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform.cpp" line="208"/>
         <source>Only one selected activity</source>
-        <translation type="unfinished">唯一選択されたアクティビティ</translation>
+        <translation>唯一選択されたアクティビティ</translation>
     </message>
 </context>
 <context>
@@ -40986,22 +41005,22 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform.cpp" line="198"/>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform.cpp" line="203"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform.cpp" line="193"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み（％）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform.cpp" line="199"/>
         <source>Empty list of selected activities</source>
-        <translation type="unfinished">選択されたアクティビティの空リスト</translation>
+        <translation>選択されたアクティビティのリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform.cpp" line="204"/>
         <source>Only one selected activity</source>
-        <translation type="unfinished">唯一選択されたアクティビティ</translation>
+        <translation>唯一選択されたアクティビティ</translation>
     </message>
 </context>
 <context>
@@ -41241,7 +41260,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomsform.cpp" line="102"/>
         <source>Empty list of selected rooms</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">選択された部屋のリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomsform.cpp" line="113"/>
@@ -41688,7 +41707,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomsform.cpp" line="103"/>
         <source>Empty list of selected rooms</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">選択された部屋のリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomsform.cpp" line="114"/>
@@ -41896,22 +41915,22 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform.cpp" line="203"/>
         <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform.cpp" line="208"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform.cpp" line="198"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み（％）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform.cpp" line="204"/>
         <source>Empty list of selected activities</source>
-        <translation type="unfinished">選択されたアクティビティの空リスト</translation>
+        <translation>選択されたアクティビティのリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmaxdaysbetweenactivitiesform.cpp" line="209"/>
         <source>Only one selected activity</source>
-        <translation type="unfinished">唯一選択されたアクティビティ</translation>
+        <translation>唯一選択されたアクティビティ</translation>
     </message>
 </context>
 <context>
@@ -41999,22 +42018,22 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="208"/>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="268"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="198"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み（％）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="204"/>
         <source>Empty list of selected activities</source>
-        <translation type="unfinished">選択されたアクティビティの空リスト</translation>
+        <translation>選択されたアクティビティのリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="209"/>
         <source>Only one selected activity</source>
-        <translation type="unfinished">唯一選択されたアクティビティ</translation>
+        <translation>唯一選択されたアクティビティ</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="215"/>
@@ -42024,7 +42043,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="218"/>
         <source>The best way to add the activities would be:</source>
-        <translation type="unfinished"></translation>
+        <translation>アクティビティを追加する最善の方法：</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="221"/>
@@ -42044,7 +42063,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="236"/>
         <source>FET warning</source>
-        <translation type="unfinished"></translation>
+        <translation>FETの注意</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmindaysbetweenactivitiesform.cpp" line="268"/>
@@ -42144,22 +42163,22 @@ force activities consecutive</source>
         <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform.cpp" line="200"/>
         <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform.cpp" line="205"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform.cpp" line="195"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み（％）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform.cpp" line="201"/>
         <source>Empty list of selected activities</source>
-        <translation type="unfinished">選択されたアクティビティの空リスト</translation>
+        <translation>選択されたアクティビティのリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintmingapsbetweenactivitiesform.cpp" line="206"/>
         <source>Only one selected activity</source>
-        <translation type="unfinished">唯一選択されたアクティビティ</translation>
+        <translation>唯一選択されたアクティビティ</translation>
     </message>
 </context>
 <context>
@@ -42813,6 +42832,12 @@ Note: students set not available and break are not counted as gaps.</source>
 <context>
     <name>ModifyConstraintStudentsMaxHoursContinuouslyForm_template</name>
     <message>
+        <location filename="../src/interface/modifyconstraintstudentsmaxhourscontinuouslyform_template.ui" line="14"/>
+        <source>Modify students max hours continuously</source>
+        <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxhourscontinuouslyform_template.ui" line="56"/>
         <source>Max hours continuously</source>
         <translation type="unfinished"></translation>
@@ -42826,12 +42851,6 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentsmaxhourscontinuouslyform_template.ui" line="73"/>
         <source>Ok</source>
         <translation type="unfinished">OK</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/modifyconstraintstudentsmaxhourscontinuouslyform_template.ui" line="14"/>
-        <source>Modify constraint students max hours continuously</source>
-        <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxhourscontinuouslyform_template.ui" line="28"/>
@@ -43391,7 +43410,7 @@ Note: students set not available and break are not counted as gaps (early gaps).
     <message>
         <location filename="../src/interface/modifyconstraintstudentssethomeroomsform.cpp" line="122"/>
         <source>Empty list of selected rooms</source>
-        <translation>選択された部屋の空リスト</translation>
+        <translation>選択された部屋のリストを空にする</translation>
     </message>
 </context>
 <context>
@@ -43556,32 +43575,32 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperdayform_template.ui" line="14"/>
         <source>Modify students set max building changes per day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>学生セットの一日の最大の建物移動を変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperdayform_template.ui" line="28"/>
         <source>Students</source>
-        <translation type="unfinished"></translation>
+        <translation>学生</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperdayform_template.ui" line="80"/>
         <source>Weight percentage (necessary: 100%)</source>
-        <translation type="unfinished"></translation>
+        <translation>重み（１００％の必要があります）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperdayform_template.ui" line="101"/>
         <source>Ok</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperdayform_template.ui" line="108"/>
         <source>Cancel</source>
-        <translation type="unfinished">キャンセル</translation>
+        <translation>キャンセル</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperdayform_template.ui" line="119"/>
         <source>Max building changes per day</source>
-        <translation type="unfinished">１日の最大建物移動</translation>
+        <translation>１日の最大建物移動</translation>
     </message>
 </context>
 <context>
@@ -43609,32 +43628,32 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperweekform_template.ui" line="14"/>
         <source>Modify students set max building changes per week</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>学生セットの一週間の最大の建物移動を変更</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperweekform_template.ui" line="28"/>
         <source>Students</source>
-        <translation type="unfinished"></translation>
+        <translation>学生</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperweekform_template.ui" line="80"/>
         <source>Weight percentage (necessary: 100%)</source>
-        <translation type="unfinished"></translation>
+        <translation>重み（１００％の必要があります）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperweekform_template.ui" line="101"/>
         <source>Ok</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperweekform_template.ui" line="108"/>
         <source>Cancel</source>
-        <translation type="unfinished">キャンセル</translation>
+        <translation>キャンセル</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxbuildingchangesperweekform_template.ui" line="119"/>
         <source>Max building changes per week</source>
-        <translation type="unfinished">週当たりの最大建物移動</translation>
+        <translation>週当たりの最大建物移動</translation>
     </message>
 </context>
 <context>
@@ -43703,22 +43722,22 @@ Note: students set not available and break are not counted as gaps (early gaps).
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperdayform.cpp" line="110"/>
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperdayform.cpp" line="118"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperdayform.cpp" line="106"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み（％）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperdayform.cpp" line="111"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み。１００％である必要があります</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentssetmaxgapsperdayform.cpp" line="119"/>
         <source>Invalid students set</source>
-        <translation type="unfinished">無効な学生セット</translation>
+        <translation>無効な学生セット</translation>
     </message>
 </context>
 <context>
@@ -44513,38 +44532,38 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintsubjectactivitytagpreferredroomform_template.ui" line="26"/>
         <source>Subject</source>
-        <translation type="unfinished">科目</translation>
+        <translation>科目</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubjectactivitytagpreferredroomform_template.ui" line="83"/>
         <source>Room</source>
-        <translation type="unfinished">部屋</translation>
+        <translation>部屋</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubjectactivitytagpreferredroomform_template.ui" line="105"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation type="unfinished"></translation>
+        <translation>重み（０〜１００％を推奨）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubjectactivitytagpreferredroomform_template.ui" line="129"/>
         <source>Cancel</source>
-        <translation type="unfinished">キャンセル</translation>
+        <translation>キャンセル</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubjectactivitytagpreferredroomform_template.ui" line="122"/>
         <source>Ok</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubjectactivitytagpreferredroomform_template.ui" line="14"/>
         <source>Modify subject activity tag preferred room</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>科目アクティビティタグの推奨する部屋を変更する</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubjectactivitytagpreferredroomform_template.ui" line="48"/>
         <source>Activity tag</source>
-        <translation type="unfinished"></translation>
+        <translation>アクティビティタグ</translation>
     </message>
 </context>
 <context>
@@ -44555,27 +44574,27 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintsubjectactivitytagpreferredroomsform.cpp" line="127"/>
         <location filename="../src/interface/modifyconstraintsubjectactivitytagpreferredroomsform.cpp" line="134"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubjectactivitytagpreferredroomsform.cpp" line="111"/>
         <source>Invalid weight</source>
-        <translation type="unfinished">無効な重み</translation>
+        <translation>無効な重み</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubjectactivitytagpreferredroomsform.cpp" line="117"/>
         <source>Empty list of selected rooms</source>
-        <translation type="unfinished"></translation>
+        <translation>選択された部屋のリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubjectactivitytagpreferredroomsform.cpp" line="128"/>
         <source>Invalid selected subject</source>
-        <translation type="unfinished">選択したアクティビティは無効です</translation>
+        <translation>選択した科目は無効です</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubjectactivitytagpreferredroomsform.cpp" line="135"/>
         <source>Invalid selected activity tag</source>
-        <translation type="unfinished"></translation>
+        <translation>選択されたアクティビティタグは無効です</translation>
     </message>
 </context>
 <context>
@@ -44635,22 +44654,22 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintsubjectpreferredroomform.cpp" line="102"/>
         <location filename="../src/interface/modifyconstraintsubjectpreferredroomform.cpp" line="110"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubjectpreferredroomform.cpp" line="96"/>
         <source>Invalid weight</source>
-        <translation type="unfinished">無効な重み</translation>
+        <translation>無効な重み</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubjectpreferredroomform.cpp" line="103"/>
         <source>Invalid subject</source>
-        <translation type="unfinished">無効な科目</translation>
+        <translation>無効な科目</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubjectpreferredroomform.cpp" line="111"/>
         <source>Invalid room</source>
-        <translation type="unfinished">無効な部屋</translation>
+        <translation>無効な部屋</translation>
     </message>
 </context>
 <context>
@@ -44694,22 +44713,22 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintsubjectpreferredroomsform.cpp" line="99"/>
         <location filename="../src/interface/modifyconstraintsubjectpreferredroomsform.cpp" line="110"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubjectpreferredroomsform.cpp" line="94"/>
         <source>Invalid weight</source>
-        <translation type="unfinished">無効な重み</translation>
+        <translation>無効な重み</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubjectpreferredroomsform.cpp" line="100"/>
         <source>Empty list of selected rooms</source>
-        <translation type="unfinished"></translation>
+        <translation>選択された部屋のリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintsubjectpreferredroomsform.cpp" line="111"/>
         <source>Invalid selected subject</source>
-        <translation type="unfinished">選択したアクティビティは無効です</translation>
+        <translation>選択された科目は無効です</translation>
     </message>
 </context>
 <context>
@@ -44762,28 +44781,28 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhourscontinuouslyform.cpp" line="93"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhourscontinuouslyform.cpp" line="94"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み（％）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhourscontinuouslyform.cpp" line="103"/>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhourscontinuouslyform.cpp" line="111"/>
         <source>FET warning</source>
-        <translation type="unfinished"></translation>
+        <translation>FETの注意</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhourscontinuouslyform.cpp" line="104"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished">無効な教師</translation>
+        <translation>無効な教師</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhourscontinuouslyform.cpp" line="111"/>
         <source>Invalid activity tag</source>
-        <translation type="unfinished">無効なアクティビティタグ</translation>
+        <translation>無効なアクティビティタグ</translation>
     </message>
 </context>
 <context>
@@ -44831,28 +44850,28 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhoursdailyform.cpp" line="94"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhoursdailyform.cpp" line="95"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み（％）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhoursdailyform.cpp" line="104"/>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhoursdailyform.cpp" line="112"/>
         <source>FET warning</source>
-        <translation type="unfinished"></translation>
+        <translation>FETの注意</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhoursdailyform.cpp" line="105"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished">無効な教師</translation>
+        <translation>無効な教師</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhoursdailyform.cpp" line="112"/>
         <source>Invalid activity tag</source>
-        <translation type="unfinished">無効なアクティビティタグ</translation>
+        <translation>無効なアクティビティタグ</translation>
     </message>
 </context>
 <context>
@@ -44901,17 +44920,17 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteacherhomeroomform.cpp" line="93"/>
         <location filename="../src/interface/modifyconstraintteacherhomeroomform.cpp" line="103"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherhomeroomform.cpp" line="94"/>
         <source>Invalid weight</source>
-        <translation type="unfinished">無効な重み</translation>
+        <translation>無効な重み</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherhomeroomform.cpp" line="104"/>
         <source>Invalid room</source>
-        <translation type="unfinished">無効な部屋</translation>
+        <translation>無効な部屋</translation>
     </message>
 </context>
 <context>
@@ -44954,17 +44973,17 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteacherhomeroomsform.cpp" line="93"/>
         <location filename="../src/interface/modifyconstraintteacherhomeroomsform.cpp" line="99"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherhomeroomsform.cpp" line="94"/>
         <source>Invalid weight</source>
-        <translation type="unfinished">無効な重み</translation>
+        <translation>無効な重み</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherhomeroomsform.cpp" line="100"/>
         <source>Empty list of selected rooms</source>
-        <translation type="unfinished"></translation>
+        <translation>選択された部屋のリストを空にする</translation>
     </message>
 </context>
 <context>
@@ -45110,17 +45129,17 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachermaxbuildingchangesperdayform.cpp" line="82"/>
         <location filename="../src/interface/modifyconstraintteachermaxbuildingchangesperdayform.cpp" line="90"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxbuildingchangesperdayform.cpp" line="83"/>
         <source>Invalid weight (percentage). It has to be 100</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み。１００％の必要があります</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxbuildingchangesperdayform.cpp" line="91"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished">無効な教師</translation>
+        <translation>無効な教師</translation>
     </message>
 </context>
 <context>
@@ -45163,17 +45182,17 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachermaxbuildingchangesperweekform.cpp" line="82"/>
         <location filename="../src/interface/modifyconstraintteachermaxbuildingchangesperweekform.cpp" line="90"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxbuildingchangesperweekform.cpp" line="83"/>
         <source>Invalid weight (percentage). It has to be 100</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み。１００％の必要があります</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxbuildingchangesperweekform.cpp" line="91"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished">無効な教師</translation>
+        <translation>無効な教師</translation>
     </message>
 </context>
 <context>
@@ -45217,22 +45236,22 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachermaxdaysperweekform.cpp" line="90"/>
         <location filename="../src/interface/modifyconstraintteachermaxdaysperweekform.cpp" line="100"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxdaysperweekform.cpp" line="86"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み（％）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxdaysperweekform.cpp" line="91"/>
         <source>Invalid weight (percentage) - it has to be 100%</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み。１００％である必要があります</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxdaysperweekform.cpp" line="101"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished">無効な教師</translation>
+        <translation>無効な教師</translation>
     </message>
 </context>
 <context>
@@ -45276,22 +45295,22 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachermaxgapsperdayform.cpp" line="80"/>
         <location filename="../src/interface/modifyconstraintteachermaxgapsperdayform.cpp" line="92"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxgapsperdayform.cpp" line="76"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み（％）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxgapsperdayform.cpp" line="81"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み。１００％である必要があります</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxgapsperdayform.cpp" line="93"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished">無効な教師</translation>
+        <translation>無効な教師</translation>
     </message>
 </context>
 <context>
@@ -45341,22 +45360,22 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachermaxgapsperweekform.cpp" line="80"/>
         <location filename="../src/interface/modifyconstraintteachermaxgapsperweekform.cpp" line="92"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxgapsperweekform.cpp" line="76"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み（％）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxgapsperweekform.cpp" line="81"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み。１００％である必要があります</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxgapsperweekform.cpp" line="93"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished">無効な教師</translation>
+        <translation>無効な教師</translation>
     </message>
 </context>
 <context>
@@ -45405,17 +45424,17 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachermaxhourscontinuouslyform.cpp" line="80"/>
         <location filename="../src/interface/modifyconstraintteachermaxhourscontinuouslyform.cpp" line="90"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxhourscontinuouslyform.cpp" line="81"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み（％）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxhourscontinuouslyform.cpp" line="91"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished">無効な教師</translation>
+        <translation>無効な教師</translation>
     </message>
 </context>
 <context>
@@ -45459,17 +45478,17 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachermaxhoursdailyform.cpp" line="82"/>
         <location filename="../src/interface/modifyconstraintteachermaxhoursdailyform.cpp" line="92"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxhoursdailyform.cpp" line="83"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み（％）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxhoursdailyform.cpp" line="93"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished">無効な教師</translation>
+        <translation>無効な教師</translation>
     </message>
 </context>
 <context>
@@ -45514,22 +45533,22 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachermaxspanperdayform.cpp" line="80"/>
         <location filename="../src/interface/modifyconstraintteachermaxspanperdayform.cpp" line="92"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxspanperdayform.cpp" line="76"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み（％）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxspanperdayform.cpp" line="81"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み。１００％である必要があります</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxspanperdayform.cpp" line="93"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished">無効な教師</translation>
+        <translation>無効な教師</translation>
     </message>
 </context>
 <context>
@@ -45573,22 +45592,22 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachermindaysperweekform.cpp" line="82"/>
         <location filename="../src/interface/modifyconstraintteachermindaysperweekform.cpp" line="92"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermindaysperweekform.cpp" line="78"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み（％）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermindaysperweekform.cpp" line="83"/>
         <source>Invalid weight (percentage) - it has to be 100%</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重みです。１００％である必要があります</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermindaysperweekform.cpp" line="93"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished">無効な教師</translation>
+        <translation>無効な教師</translation>
     </message>
 </context>
 <context>
@@ -45631,17 +45650,17 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachermingapsbetweenbuildingchangesform.cpp" line="82"/>
         <location filename="../src/interface/modifyconstraintteachermingapsbetweenbuildingchangesform.cpp" line="90"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermingapsbetweenbuildingchangesform.cpp" line="83"/>
         <source>Invalid weight (percentage). It has to be 100</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み。１００％の必要があります</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermingapsbetweenbuildingchangesform.cpp" line="91"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished">無効な教師</translation>
+        <translation>無効な教師</translation>
     </message>
 </context>
 <context>
@@ -45687,32 +45706,32 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteacherminhoursdailyform.cpp" line="105"/>
         <location filename="../src/interface/modifyconstraintteacherminhoursdailyform.cpp" line="133"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminhoursdailyform.cpp" line="85"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み（％）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminhoursdailyform.cpp" line="90"/>
         <source>Invalid weight (percentage) - must be 100%</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み。１００％である必要があります</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminhoursdailyform.cpp" line="95"/>
         <source>Allow empty days check box must be checked. If you need to not allow empty days for a teacher, please use the constraint teacher min days per week</source>
-        <translation type="unfinished">空の日を許可するチェックボックスをオンにする必要があります。 １人の教師の空き日を許さないようにする必要がある場合、教師の週当たりの最小日制約を使ってください</translation>
+        <translation>空の日を許可するチェックボックスをオンにする必要があります。 １人の教師に空き日を許さないようにする必要がある場合、教師の週当たりの最小日制約を使ってください</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminhoursdailyform.cpp" line="106"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished">無効な教師</translation>
+        <translation>無効な教師</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminhoursdailyform.cpp" line="133"/>
         <source>This check box must remain checked. If you really need to not allow empty days for this teacher, please use constraint teacher min days per week</source>
-        <translation type="unfinished">このチェックボックスはオンのままにする必要があります。 あなたがこの教師に本当に空の日を許可しない様にする必要がある場合は、教師の週当たりの最小日制約を使用してください</translation>
+        <translation>このチェックボックスはオンのままにする必要があります。 あなたがこの教師に本当に空の日を許可しない様にする必要がある場合は、教師の週当たりの最小日制約を使用してください</translation>
     </message>
 </context>
 <context>
@@ -45766,22 +45785,22 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteacherminrestinghoursform.cpp" line="82"/>
         <location filename="../src/interface/modifyconstraintteacherminrestinghoursform.cpp" line="95"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminrestinghoursform.cpp" line="78"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み（％）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminrestinghoursform.cpp" line="83"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み。１００％である必要があります</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminrestinghoursform.cpp" line="96"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished">無効な教師</translation>
+        <translation>無効な教師</translation>
     </message>
 </context>
 <context>
@@ -45830,22 +45849,22 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachernotavailabletimesform.cpp" line="233"/>
         <location filename="../src/interface/modifyconstraintteachernotavailabletimesform.cpp" line="242"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachernotavailabletimesform.cpp" line="226"/>
         <source>Invalid weight (percentage). It has to be 100</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み。１００％の必要があります</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachernotavailabletimesform.cpp" line="234"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished">無効な教師</translation>
+        <translation>無効な教師</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachernotavailabletimesform.cpp" line="243"/>
         <source>A constraint of this type exists for the same teacher - cannot proceed</source>
-        <translation type="unfinished"></translation>
+        <translation>このタイプの制約は同じ教師に対して存在しています - 操作を進めることができません</translation>
     </message>
 </context>
 <context>
@@ -45905,22 +45924,22 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachersactivitytagmaxhourscontinuouslyform.cpp" line="80"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersactivitytagmaxhourscontinuouslyform.cpp" line="81"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み（％）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersactivitytagmaxhourscontinuouslyform.cpp" line="90"/>
         <source>FET warning</source>
-        <translation type="unfinished"></translation>
+        <translation>FETの注意</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersactivitytagmaxhourscontinuouslyform.cpp" line="90"/>
         <source>Invalid activity tag</source>
-        <translation type="unfinished">無効なアクティビティタグ</translation>
+        <translation>無効なアクティビティタグ</translation>
     </message>
 </context>
 <context>
@@ -45963,22 +45982,22 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachersactivitytagmaxhoursdailyform.cpp" line="81"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersactivitytagmaxhoursdailyform.cpp" line="82"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み（％）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersactivitytagmaxhoursdailyform.cpp" line="91"/>
         <source>FET warning</source>
-        <translation type="unfinished"></translation>
+        <translation>FETの注意</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersactivitytagmaxhoursdailyform.cpp" line="91"/>
         <source>Invalid activity tag</source>
-        <translation type="unfinished">無効なアクティビティタグ</translation>
+        <translation>無効なアクティビティタグ</translation>
     </message>
 </context>
 <context>
@@ -46021,7 +46040,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachersintervalmaxdaysperweekform.cpp" line="57"/>
         <source>End of day</source>
-        <translation type="unfinished">１日の終わり</translation>
+        <translation>１日の終わり</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersintervalmaxdaysperweekform.cpp" line="83"/>
@@ -46030,32 +46049,32 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintteachersintervalmaxdaysperweekform.cpp" line="103"/>
         <location filename="../src/interface/modifyconstraintteachersintervalmaxdaysperweekform.cpp" line="108"/>
         <source>FET information</source>
-        <translation type="unfinished"></translation>
+        <translation>FET 情報</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersintervalmaxdaysperweekform.cpp" line="84"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み（％）</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersintervalmaxdaysperweekform.cpp" line="89"/>
         <source>Invalid weight (percentage) - it has to be 100%</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な重み。１００％である必要があります</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersintervalmaxdaysperweekform.cpp" line="99"/>
         <source>Start hour invalid</source>
-        <translation type="unfinished"></translation>
+        <translation>開始時間が無効です</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersintervalmaxdaysperweekform.cpp" line="104"/>
         <source>End hour invalid</source>
-        <translation type="unfinished"></translation>
+        <translation>終了時刻が無効です</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersintervalmaxdaysperweekform.cpp" line="109"/>
         <source>Start hour cannot be greater or equal than end hour</source>
-        <translation type="unfinished"></translation>
+        <translation>開始時間は終了時間より早い時間にしてください</translation>
     </message>
 </context>
 <context>
@@ -46985,7 +47004,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifygroupactivitiesininitialorderitemform.cpp" line="188"/>
         <source>Empty list of selected activities</source>
-        <translation>選択されたアクティビティの空リスト</translation>
+        <translation>選択されたアクティビティのリストを空にする</translation>
     </message>
     <message>
         <location filename="../src/interface/modifygroupactivitiesininitialorderitemform.cpp" line="193"/>
@@ -52772,7 +52791,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10058"/>
         <source>All teachers</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全ての教師</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10059"/>
@@ -52886,7 +52905,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10271"/>
         <source>All students</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全ての学生</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="10353"/>
@@ -54348,7 +54367,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="780"/>
         <source>All teachers</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全ての教師</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="1097"/>
