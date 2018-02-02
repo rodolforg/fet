@@ -47,6 +47,12 @@ File rules.h
 class QXmlStreamReader;
 #include "xmllog.h"
 
+enum class RulesComputationStep {
+	ACTIVITIES,
+	TIME_CONSTRAINTS,
+	SPACE_CONSTRAINTS
+};
+
 /**
 This class contains all the information regarding
 the institution: teachers, students, activities, constraints, etc.
@@ -237,9 +243,14 @@ public:
 
 	/**
 	Internal structure initializer.
-	<p>
+
 	After any modification of the activities or students or teachers
 	or constraints, you need to call this subroutine
+
+	Computation can take a time. It is possible to follow it by receiving
+	signals internalStructureComputationStarted(), internalStructureComputationChanged()
+	and internalStructureComputationFinished().
+	Computation is interrupted by calling cancelInternalStructureComputation().
 	*/
 	bool computeInternalStructure(QWidget* parent);
 
@@ -904,11 +915,38 @@ private:
 
 	int readHourTag(QXmlStreamReader& xml, XmlLog &log, bool acceptEndOfDay) const;
 
+	bool shouldAbortInternalStructureComputation;
+
 signals:
 	/// Any object property changed
 	void contentsChanged();
 	/// Added or removed Days, Hours, Teachers, StudentsSets, Subject, Activities, Activity tags, Buildings or Rooms
 	void basicDataResized();
+
+	/**
+	 * Emitted when computeInternalStructure() is called.
+	 * @param range how many items will be computed
+	 */
+	void internalStructureComputationStarted(int range);
+	/**
+	 * Emitted when current rules computation step changes
+	 * @param step current(=new) step
+	 */
+	void internalStructureComputationStepChanged(RulesComputationStep step);
+	/**
+	 * Emitted when a new item is computed
+	 * @param value number of current computed items
+	 */
+	void internalStructureComputationChanged(int value);
+	/**
+	 * Emitted when computeInternalStructure() finishes
+	 * @param success if it was not canceled or it did not get an error
+	 */
+	void internalStructureComputationFinished(bool success);
+
+public slots:
+	/// Stop an ongoing computeInternalStructure() call.
+	void cancelInternalStructureComputation();
 };
 
 #endif

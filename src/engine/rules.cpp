@@ -43,8 +43,6 @@ using namespace std;
 #include <QTranslator>
 
 #ifndef FET_COMMAND_LINE
-#include <QProgressDialog>
-
 #include "lockunlock.h"
 #endif
 
@@ -93,10 +91,15 @@ void Rules::init() //initializes the rules (empty, but with default hours and da
 	ssnatHash.clear();
 	
 	this->initialized=true;
+
+	shouldAbortInternalStructureComputation = false;
 }
 
 bool Rules::computeInternalStructure(QWidget* parent)
 {
+	this->internalStructureComputed = false;
+	shouldAbortInternalStructureComputation = false;
+
 	//To fix a bug reported by Frans on forum, on 7 May 2010.
 	//If user generates, then changes some activities (changes teachers of them), then tries to generate but FET cannot precompute in generate_pre.cpp,
 	//then if user views the timetable, the timetable of a teacher contains activities of other teacher.
@@ -404,18 +407,15 @@ bool Rules::computeInternalStructure(QWidget* parent)
 	for(int i=0; i<nInternalRooms; i++)
 		roomsHash.insert(internalRoomsList[i]->name, i);
 
+	const int totalItems = activeActivitiesCounter
+			+ this->timeConstraintsList.count()
+			+ this->spaceConstraintsList.count();
+	int numComputedItems = 0;
+	emit internalStructureComputationStarted(totalItems);
+	emit internalStructureComputationStepChanged(RulesComputationStep::ACTIVITIES);
+	emit internalStructureComputationChanged(numComputedItems);
+
 	//activities
-	int range=0;
-	foreach(Activity* act, this->activitiesList)
-		if(act->active)
-			range++;
-	QProgressDialog progress(parent);
-	progress.setWindowTitle(tr("Computing internal structure", "Title of a progress dialog"));
-	progress.setLabelText(tr("Processing internally the activities ... please wait"));
-	progress.setRange(0, qMax(range, 1));
-	progress.setModal(true);
-	int ttt=0;
-		
 	Activity* act;
 	
 	this->inactiveActivities.clear();
@@ -423,23 +423,19 @@ bool Rules::computeInternalStructure(QWidget* parent)
 	for(int i=0; i<this->activitiesList.size(); i++){
 		act=this->activitiesList[i];
 		if(act->active){
-			progress.setValue(ttt);
-			//pqapplication->processEvents();
-			if(progress.wasCanceled()){
-				progress.setValue(range);
+			if(shouldAbortInternalStructureComputation){
 				RulesImpossible::warning(parent, tr("FET information"), tr("Canceled"));
+				emit internalStructureComputationFinished(false);
 				return false;
 			}
-			ttt++;
 
 			act->computeInternalStructure(*this);
+			emit internalStructureComputationChanged(++numComputedItems);
 		}
 		else
 			inactiveActivities.insert(act->id);
 	}
 	
-	progress.setValue(qMax(range, 1));
-
 	for(int i=0; i<nInternalSubgroups; i++)
 		internalSubgroupsList[i]->activitiesForSubgroup.clear();
 	for(int i=0; i<nInternalTeachers; i++)
@@ -572,7 +568,6 @@ bool Rules::computeInternalStructure(QWidget* parent)
 	bool ok=true;
 
 	//time constraints
-	//progress.reset();
 	
 	bool skipInactiveTimeConstraints=false;
 	
@@ -589,7 +584,6 @@ bool Rules::computeInternalStructure(QWidget* parent)
 			toSkipTimeSet.insert(tctrindex);
 		}
 		else if(tctr->hasInactiveActivities(*this)){
-			//toSkipTime[tctrindex]=true;
 			toSkipTimeSet.insert(tctrindex);
 		
 			if(!skipInactiveTimeConstraints){
@@ -606,36 +600,32 @@ bool Rules::computeInternalStructure(QWidget* parent)
 			}
 		}
 		else{
-			//toSkipTime[tctrindex]=false;
 			_c++;
 		}
 	}
 	
 	internalTimeConstraintsList.resize(_c);
 	
-	progress.setLabelText(tr("Processing internally the time constraints ... please wait"));
-	progress.setRange(0, qMax(timeConstraintsList.size(), 1));
-	ttt=0;
+	emit internalStructureComputationStepChanged(RulesComputationStep::TIME_CONSTRAINTS);
 		
 	//assert(this->timeConstraintsList.size()<=MAX_TIME_CONSTRAINTS);
 	int tctri=0;
 	
 	for(int tctrindex=0; tctrindex<this->timeConstraintsList.size(); tctrindex++){
-		progress.setValue(ttt);
-		//pqapplication->processEvents();
-		if(progress.wasCanceled()){
-			progress.setValue(timeConstraintsList.size());
-			RulesImpossible::warning(parent, tr("FET information"), tr("Canceled"));
+		if(shouldAbortInternalStructureComputation){
+			emit internalStructureComputationFinished(false);
 			return false;
 		}
-		ttt++;
 
 		tctr=this->timeConstraintsList[tctrindex];
 		
-		if(toSkipTimeSet.contains(tctrindex))
+		if(toSkipTimeSet.contains(tctrindex)) {
+			emit internalStructureComputationChanged(++numComputedItems);
 			continue;
+		}
 		
 		ErrorCode erc = tctr->computeInternalStructure(*this);
+		emit internalStructureComputationChanged(++numComputedItems);
 		if (erc.isError()) {
 			TimeConstraintIrreconcilableMessage::warning(parent, erc.getSeverityTitle(), erc.message);
 			//assert(0);
@@ -644,8 +634,6 @@ bool Rules::computeInternalStructure(QWidget* parent)
 		}
 		this->internalTimeConstraintsList[tctri++]=tctr;
 	}
-
-	progress.setValue(qMax(timeConstraintsList.size(), 1));
 
 	this->nInternalTimeConstraints=tctri;
 	if(VERBOSE){
@@ -656,7 +644,6 @@ bool Rules::computeInternalStructure(QWidget* parent)
 	//assert(this->nInternalTimeConstraints<=MAX_TIME_CONSTRAINTS);
 	
 	//space constraints
-	//progress.reset();
 	
 	bool skipInactiveSpaceConstraints=false;
 	
@@ -673,7 +660,6 @@ bool Rules::computeInternalStructure(QWidget* parent)
 			toSkipSpaceSet.insert(sctrindex);
 		}
 		else if(sctr->hasInactiveActivities(*this)){
-			//toSkipSpace[sctrindex]=true;
 			toSkipSpaceSet.insert(sctrindex);
 		
 			if(!skipInactiveSpaceConstraints){
@@ -691,35 +677,31 @@ bool Rules::computeInternalStructure(QWidget* parent)
 		}
 		else{
 			_c++;
-			//toSkipSpace[sctrindex]=false;
 		}
 	}
 	
 	internalSpaceConstraintsList.resize(_c);
 	
-	progress.setLabelText(tr("Processing internally the space constraints ... please wait"));
-	progress.setRange(0, qMax(spaceConstraintsList.size(), 1));
-	ttt=0;
+	emit internalStructureComputationStepChanged(RulesComputationStep::SPACE_CONSTRAINTS);
 	//assert(this->spaceConstraintsList.size()<=MAX_SPACE_CONSTRAINTS);
 
 	int sctri=0;
 
 	for(int sctrindex=0; sctrindex<this->spaceConstraintsList.size(); sctrindex++){
-		progress.setValue(ttt);
-		//pqapplication->processEvents();
-		if(progress.wasCanceled()){
-			progress.setValue(spaceConstraintsList.size());
-			RulesImpossible::warning(parent, tr("FET information"), tr("Canceled"));
+		if(shouldAbortInternalStructureComputation){
+			emit internalStructureComputationFinished(false);
 			return false;
 		}
-		ttt++;
 
 		sctr=this->spaceConstraintsList[sctrindex];
 	
-		if(toSkipSpaceSet.contains(sctrindex))
+		if(toSkipSpaceSet.contains(sctrindex)) {
+			emit internalStructureComputationChanged(++numComputedItems);
 			continue;
+		}
 		
 		ErrorCode erc = sctr->computeInternalStructure(*this);
+		emit internalStructureComputationChanged(++numComputedItems);
 		if (erc.isError()) {
 			SpaceConstraintIrreconcilableMessage::warning(parent, erc.getSeverityTitle(), erc.message);
 			//assert(0);
@@ -728,8 +710,6 @@ bool Rules::computeInternalStructure(QWidget* parent)
 		}
 		this->internalSpaceConstraintsList[sctri++]=sctr;
 	}
-
-	progress.setValue(qMax(spaceConstraintsList.size(), 1));
 
 	this->nInternalSpaceConstraints=sctri;
 	if(VERBOSE){
@@ -771,7 +751,7 @@ bool Rules::computeInternalStructure(QWidget* parent)
 			}
 
 			if(!fetBugs.isEmpty() || !userErrors.isEmpty()){
-				RulesImpossible::warning(parent, tr("FET information"), fetBugs.join("\n\n")+userErrors.join("\n\n"));
+				emit internalStructureComputationFinished(false);
 				return false;
 			}
 		}
@@ -779,8 +759,14 @@ bool Rules::computeInternalStructure(QWidget* parent)
 
 	//done.
 	this->internalStructureComputed=ok;
-	
+	emit internalStructureComputationFinished(true);
+
 	return ok;
+}
+
+void Rules::cancelInternalStructureComputation()
+{
+	shouldAbortInternalStructureComputation = true;
 }
 
 void Rules::kill() //clears memory for the rules, destroys them
@@ -925,7 +911,8 @@ Rules::Rules()
 	  nInternalTeachers(0), nInternalSubjects(0), nInternalActivityTags(0), nInternalSubgroups(0),
 	  nInternalActivities(0), nInternalRooms(0), nInternalBuildings(0),
 	  nInternalTimeConstraints(0), nInternalSpaceConstraints(0),
-	  initialized(false), internalStructureComputed(false)
+	  initialized(false), internalStructureComputed(false),
+	  shouldAbortInternalStructureComputation(false)
 {
 }
 

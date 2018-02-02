@@ -38,6 +38,8 @@
 
 #include <QApplication>
 
+#include <QProgressDialog>
+
 #include "longtextmessagebox.h"
 
 QMutex myMutex;
@@ -127,8 +129,34 @@ TimetableGenerateForm::~TimetableGenerateForm()
 
 void TimetableGenerateForm::start(){
 	if(!gt.rules.internalStructureComputed){
+		QProgressDialog progress(this);
+		progress.setWindowTitle(QCoreApplication::translate("Rules", "Computing internal structure", "Title of a progress dialog"));
+		progress.setMinimum(0);
+		connect(&gt.rules, SIGNAL(internalStructureComputationStarted(int)), &progress, SLOT(setMaximum(int)));
+		connect(&gt.rules, SIGNAL(internalStructureComputationChanged(int)), &progress, SLOT(setValue(int)));
+		connect(&gt.rules, &Rules::internalStructureComputationStepChanged, [&progress](RulesComputationStep step){
+			switch(step) {
+			case RulesComputationStep::ACTIVITIES:
+				progress.setLabelText(QCoreApplication::translate("Rules", "Processing internally the activities ... please wait"));
+				break;
+			case RulesComputationStep::TIME_CONSTRAINTS:
+				progress.setLabelText(QCoreApplication::translate("Rules", "Processing internally the time constraints ... please wait"));
+				break;
+			case RulesComputationStep::SPACE_CONSTRAINTS:
+				progress.setLabelText(QCoreApplication::translate("Rules", "Processing internally the space constraints ... please wait"));
+				break;
+			}
+		});
+		connect(&gt.rules, SIGNAL(internalStructureComputationFinished(bool)), &progress, SLOT(reset()));
+		connect(&progress, SIGNAL(canceled()), &gt.rules, SLOT(cancelInternalStructureComputation()));
+		progress.setModal(true);
+
 		if(!gt.rules.computeInternalStructure(this)){
 			QMessageBox::warning(this, TimetableGenerateForm::tr("FET warning"), TimetableGenerateForm::tr("Data is wrong. Please correct and try again"));
+			return;
+		}
+		if (!gt.rules.internalStructureComputed) {
+			// canceled by user
 			return;
 		}
 	}

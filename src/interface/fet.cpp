@@ -1223,6 +1223,27 @@ int main(int argc, char **argv)
 			return 1;
 		}
 		
+		cout << QCoreApplication::translate("Rules", "Computing internal structure", "Title of a progress dialog").toStdString() << endl;
+		out << "Computing internal structure" << endl;
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+		QCoreApplication::connect(&gt.rules, &Rules::internalStructureComputationStepChanged, [&out](RulesComputationStep step) {
+			const char * stepText = "";
+			switch (step) {
+			case RulesComputationStep::ACTIVITIES:
+				stepText = "Processing internally the activities ... please wait";
+				break;
+			case RulesComputationStep::TIME_CONSTRAINTS:
+				stepText = "Processing internally the time constraints ... please wait";
+				break;
+			case RulesComputationStep::SPACE_CONSTRAINTS:
+				stepText = "Processing internally the space constraints ... please wait";
+				break;
+			}
+			out << stepText << endl;
+			cout << QCoreApplication::translate("Rules", stepText).toStdString() << endl;
+		});
+#endif
+
 		bool t=gt.rules.computeInternalStructure(NULL);
 		if(!t){
 			cerr<<"Cannot compute internal structure - aborting"<<endl;
