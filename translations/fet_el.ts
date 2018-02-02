@@ -986,7 +986,7 @@ there won&apos;t be removed an additional number of %1 activities
         <location filename="../src/engine/activitytag.cpp" line="51"/>
         <source>N:%1</source>
         <comment>The name of the activity tag</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ο:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/activitytag.cpp" line="56"/>
@@ -1021,7 +1021,7 @@ there won&apos;t be removed an additional number of %1 activities
         <location filename="../src/engine/activitytag.cpp" line="72"/>
         <source>Name=%1</source>
         <comment>The name of the activity tag</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Όνομα=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/activitytag.cpp" line="80"/>
@@ -1066,7 +1066,7 @@ there won&apos;t be removed an additional number of %1 activities
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="109"/>
         <source>Could not insert item. Must be a duplicate</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Αδύνατη η εισαγωγή στοιχείου. Πιθανότατα υπάρχει ήδη</translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="119"/>
@@ -1087,7 +1087,7 @@ there won&apos;t be removed an additional number of %1 activities
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="119"/>
         <source>Incorrect name</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Λάθος όνομα</translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="129"/>
@@ -1861,17 +1861,17 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addbuildingform.cpp" line="43"/>
         <source>Incorrect name</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Λάθος όνομα</translation>
     </message>
     <message>
         <location filename="../src/interface/addbuildingform.cpp" line="49"/>
         <source>Room insertion dialog</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Διάλογος εισαγωγής αίθουσας</translation>
     </message>
     <message>
         <location filename="../src/interface/addbuildingform.cpp" line="50"/>
         <source>Could not insert item. Must be a duplicate</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Αδύνατη η εισαγωγή στοιχείου. Πιθανότατα υπάρχει ήδη</translation>
     </message>
     <message>
         <location filename="../src/interface/addbuildingform.cpp" line="54"/>
@@ -2006,12 +2006,12 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="274"/>
         <source>You specified max simultaneous activities to be 0. This is not perfect from efficiency point of view, because you can use instead constraint activity(ies) preferred time slots, and help FET to find a timetable easier and faster, with an equivalent result. Please correct.</source>
-        <translation type="unfinished">Καθορίσατε ότι οι μέγιστες ταυτόχρονες δραστηριότητες πρέπει να είναι 0. Αυτός όμως δεν είναι ο βέλτιστος περιορισμός για να επιτύχετε αυτό που θέλετε, διότι από πλευράς απόδοσης είναι προτιμότερο να χρησιμοποιήσετε τον περιορισμό &quot;δραστηριότητα(ες) - προτιμητέες περίοδοι&quot; και έτσι να βοηθήσετε το FET να επιλύσει το ωρολόγιο πρόγραμμα γρηγορότερα και ευκολότερα, με ισοδύναμο αποτέλεσμα. Παρακαλώ διορθώστε.</translation>
+        <translation>Καθορίσατε ότι οι μέγιστες ταυτόχρονες δραστηριότητες είναι 0. Αυτός όμως δεν είναι ο βέλτιστος περιορισμός για να επιτύχετε αυτό που θέλετε, διότι από πλευράς απόδοσης είναι προτιμότερο να χρησιμοποιήσετε τον περιορισμό &quot;δραστηριότητα(ες) - προτιμητέες περίοδοι&quot; και έτσι να βοηθήσετε το FET να επιλύσει το ωρολόγιο πρόγραμμα γρηγορότερα και ευκολότερα, με ισοδύναμο αποτέλεσμα. Παρακαλώ διορθώστε.</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="282"/>
         <source>Empty list of activities</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Κενή λίστα δραστηριοτήτων</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="297"/>
@@ -2137,7 +2137,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiesnotoverlappingform.cpp" line="187"/>
         <source>Empty list of not overlapping activities</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Κενή λίστα μη αλληλοεπικαλυπτόμενων δραστηριοτήτων</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesnotoverlappingform.cpp" line="192"/>
@@ -2250,7 +2250,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="130"/>
         <source>Empty list of activities</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Κενή λίστα δραστηριοτήτων</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="135"/>
@@ -2352,12 +2352,12 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="274"/>
         <source>You specified max occupied time slots to be 0. This is not perfect from efficiency point of view, because you can use instead constraint activity(ies) preferred time slots, and help FET to find a timetable easier and faster, with an equivalent result. Please correct.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Καθορίσατε ότι οι μέγιστες κατειλημμένες περίοδοι είναι 0. Αυτός όμως δεν είναι ο βέλτιστος περιορισμός για να επιτύχετε αυτό που θέλετε, διότι από πλευράς απόδοσης είναι προτιμότερο να χρησιμοποιήσετε τον περιορισμό &quot;δραστηριότητα(ες) - προτιμητέες περίοδοι&quot; και έτσι να βοηθήσετε το FET να επιλύσει το ωρολόγιο πρόγραμμα γρηγορότερα και ευκολότερα, με ισοδύναμο αποτέλεσμα. Παρακαλώ διορθώστε.</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="282"/>
         <source>Empty list of activities</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Κενή λίστα δραστηριοτήτων</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="297"/>
@@ -2534,7 +2534,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addconstraintactivitiespreferredstartingtimesform.cpp" line="391"/>
         <source>Constraint NOT added - duplicate?</source>
         <comment>&apos;Duplicate&apos; means that the constraint is identical to an existing constraint and cannot be added.</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Περιορισμός δεν προστέθηκε - υπάρχει ήδη;</translation>
     </message>
 </context>
 <context>
@@ -2663,18 +2663,18 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="373"/>
         <source>Warning: 0 slots selected. Are you sure?</source>
-        <translation type="unfinished"></translation>
+        <translation>Προειδοποίηση: 0 επιλεγμένες περίοδοι. Είστε σίγουροι;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="384"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiespreferredtimeslotsform.cpp" line="391"/>
         <source>Constraint NOT added - duplicate?</source>
         <comment>&apos;Duplicate&apos; means that the constraint is identical to an existing constraint and cannot be added.</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Περιορισμός δεν προστέθηκε - υπάρχει ήδη;</translation>
     </message>
 </context>
 <context>
@@ -2763,7 +2763,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform.cpp" line="124"/>
         <source>Empty list of activities</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Κενή λίστα δραστηριοτήτων</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitiessameroomifconsecutiveform.cpp" line="129"/>
@@ -3399,7 +3399,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredroomform_template.ui" line="180"/>
         <source>Select this if you want this constraint not to be unlockable from the &apos;Timetable&apos; menu (recommended). You can always remove this constraint from the constraints dialogs or uncheck &quot;permanently locked&quot; checkbox by editing this constraint</source>
-        <translation>Επιλέξτε εάν δεν θέλετε να ξεκλειδώνει ο συγκεκριμένος περιορισμός από το μενού &quot;Ωρολόγιο&quot; (προτεινόμενο). Μπορείτε να διαγράψετε τον περιορισμό αυτό όποτε θέλετε από τον διάλογο περιορισμών ή να επεξεργαστείτε τον συγκεκριμένο περιορισμό και να αποεπιλέξετε το &quot;μόνιμα κλειδωμένος&quot; από το αντίστοιχο πλαίσιο ελέγχου</translation>
+        <translation>Επιλέξτε εάν θέλετε να μην ξεκλειδώνει ο συγκεκριμένος περιορισμός από το μενού &quot;Ωρολόγιο&quot; (προτεινόμενο). Μπορείτε να διαγράψετε τον περιορισμό αυτό όποτε θέλετε από τον διάλογο περιορισμών ή να επεξεργαστείτε τον συγκεκριμένο περιορισμό και να αποεπιλέξετε το &quot;μόνιμα κλειδωμένος&quot; από το αντίστοιχο πλαίσιο ελέγχου</translation>
     </message>
 </context>
 <context>
@@ -3529,12 +3529,12 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform.cpp" line="195"/>
         <source>Invalid day</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Μη αποδεκτή ημέρα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform.cpp" line="201"/>
         <source>Invalid start hour</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Μη αποδεκτή ώρα έναρξης</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform.cpp" line="211"/>
@@ -3629,7 +3629,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredstartingtimeform_template.ui" line="218"/>
         <source>Select this if you want this constraint not to be unlockable from the &apos;Timetable&apos; menu (recommended). You can always remove this constraint from the constraints dialogs or uncheck &quot;permanently locked&quot; checkbox by editing this constraint</source>
-        <translation>Επιλέξτε εάν δεν θέλετε να ξεκλειδώνει ο συγκεκριμένος περιορισμός από το μενού &quot;Ωρολόγιο&quot; (προτεινόμενο). Μπορείτε να διαγράψετε τον περιορισμό αυτό όποτε θέλετε από τον διάλογο περιορισμών ή να επεξεργαστείτε τον συγκεκριμένο περιορισμό και να αποεπιλέξετε το &quot;μόνιμα κλειδωμένος&quot; από το αντίστοιχο πλαίσιο ελέγχου</translation>
+        <translation>Επιλέξτε εάν θέλετε να μην ξεκλειδώνει ο συγκεκριμένος περιορισμός από το μενού &quot;Ωρολόγιο&quot; (προτεινόμενο). Μπορείτε να διαγράψετε τον περιορισμό αυτό όποτε θέλετε από τον διάλογο περιορισμών ή να επεξεργαστείτε τον συγκεκριμένο περιορισμό και να αποεπιλέξετε το &quot;μόνιμα κλειδωμένος&quot; από το αντίστοιχο πλαίσιο ελέγχου</translation>
     </message>
 </context>
 <context>
@@ -3671,7 +3671,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addconstraintactivitypreferredstartingtimesform.cpp" line="394"/>
         <source>Constraint NOT added - duplicate?</source>
         <comment>&apos;Duplicate&apos; means that the constraint is identical to an existing constraint and cannot be added.</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Περιορισμός δεν προστέθηκε - υπάρχει ήδη;</translation>
     </message>
 </context>
 <context>
@@ -3785,7 +3785,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
         <location filename="../src/interface/addconstraintactivitypreferredtimeslotsform.cpp" line="393"/>
         <source>Constraint NOT added - duplicate?</source>
         <comment>&apos;Duplicate&apos; means that the constraint is identical to an existing constraint and cannot be added.</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Περιορισμός δεν προστέθηκε - υπάρχει ήδη;</translation>
     </message>
 </context>
 <context>
@@ -4781,7 +4781,7 @@ force activities consecutive</source>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Βαρύτητα (ποσοστό)
-Προτεινόμενο: 0.0%-100.0%)</translation>
+Προτεινόμενο: 0.0%-100.0%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentsactivitytagmaxhoursdailyform_template.ui" line="118"/>
@@ -5331,7 +5331,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Βαρύτητα (ποσοστό)
-Προτεινόμενο: 0.0%-100.0%)</translation>
+Προτεινόμενο: 0.0%-100.0%</translation>
     </message>
 </context>
 <context>
@@ -5387,7 +5387,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Βαρύτητα (ποσοστό)
-Προτεινόμενο: 0.0%-100.0%)</translation>
+Προτεινόμενο: 0.0%-100.0%</translation>
     </message>
 </context>
 <context>
@@ -5758,7 +5758,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Βαρύτητα (ποσοστό)
-Προτεινόμενο: 0.0%-100.0%)</translation>
+Προτεινόμενο: 0.0%-100.0%</translation>
     </message>
 </context>
 <context>
@@ -5825,7 +5825,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Βαρύτητα (ποσοστό)
-Προτεινόμενο: 0.0%-100.0%)</translation>
+Προτεινόμενο: 0.0%-100.0%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintstudentssetactivitytagmaxhoursdailyform_template.ui" line="156"/>
@@ -6596,7 +6596,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Βαρύτητα (ποσοστό)
-Προτεινόμενο: 0.0%-100.0%)</translation>
+Προτεινόμενο: 0.0%-100.0%</translation>
     </message>
 </context>
 <context>
@@ -6663,7 +6663,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
         <translation>Βαρύτητα (ποσοστό)
-Προτεινόμενο: 0.0%-100.0%)</translation>
+Προτεινόμενο: 0.0%-100.0%</translation>
     </message>
 </context>
 <context>
@@ -7098,7 +7098,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintstudentssetnotavailabletimesform_template.ui" line="26"/>
         <source>Note: this constraint does not induce gaps (or early not respected) for students. If a students set has lessons before and after a not available period, there will be no gaps counted</source>
         <extracomment>&apos;Early not respected&apos; means early gaps (first hour is free), in case you use a constraint students (set) early max beginnings at second hour</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Ο περιορισμός αυτός δεν επάγει κενά (ή κενά κατά την πρώτη ώρα) για τους μαθητές. Αν μία ομάδα μαθητών έχει μαθήματα πριν και μετά από μία μη διαθέσιμη περίοδο, το κενό αυτό δεν θα προσμετρηθεί</translation>
     </message>
 </context>
 <context>
@@ -7134,7 +7134,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintsubactivitiespreferredstartingtimesform.cpp" line="299"/>
         <source>Constraint NOT added - duplicate?</source>
         <comment>&apos;Duplicate&apos; means that the constraint is identical to an existing constraint and cannot be added.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Περιορισμός δεν προστέθηκε - υπάρχει ήδη;</translation>
     </message>
 </context>
 <context>
@@ -7242,7 +7242,7 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintsubactivitiespreferredtimeslotsform.cpp" line="300"/>
         <source>Constraint NOT added - duplicate?</source>
         <comment>&apos;Duplicate&apos; means that the constraint is identical to an existing constraint and cannot be added.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Περιορισμός δεν προστέθηκε - υπάρχει ήδη;</translation>
     </message>
 </context>
 <context>
@@ -7501,32 +7501,32 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintsubjectpreferredroomform.cpp" line="106"/>
         <location filename="../src/interface/addconstraintsubjectpreferredroomform.cpp" line="109"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubjectpreferredroomform.cpp" line="79"/>
         <source>Invalid weight</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα</translation>
+        <translation>Μη αποδεκτή βαρύτητα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubjectpreferredroomform.cpp" line="86"/>
         <source>Invalid subject</source>
-        <translation type="unfinished">Μη αποδεκτό αντικείμενο</translation>
+        <translation>Μη αποδεκτό αντικείμενο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubjectpreferredroomform.cpp" line="94"/>
         <source>Invalid room</source>
-        <translation type="unfinished">Μη αποδεκτή αίθουσα</translation>
+        <translation>Μη αποδεκτή αίθουσα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubjectpreferredroomform.cpp" line="103"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubjectpreferredroomform.cpp" line="110"/>
         <source>Constraint NOT added - error ?</source>
-        <translation type="unfinished">Περιορισμός δεν προστέθηκε - σφάλμα;</translation>
+        <translation>Περιορισμός δεν προστέθηκε - σφάλμα;</translation>
     </message>
 </context>
 <context>
@@ -7540,27 +7540,27 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintsubjectpreferredroomform_template.ui" line="14"/>
         <source>Add subject preferred room</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Αντικείμενο - προτιμητέα αίθουσα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubjectpreferredroomform_template.ui" line="110"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubjectpreferredroomform_template.ui" line="117"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubjectpreferredroomform_template.ui" line="50"/>
         <source>Room</source>
-        <translation type="unfinished">Αίθουσα</translation>
+        <translation>Αίθουσα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubjectpreferredroomform_template.ui" line="28"/>
         <source>Subject</source>
-        <translation type="unfinished">Αντικείμενο</translation>
+        <translation>Αντικείμενο</translation>
     </message>
 </context>
 <context>
@@ -7572,32 +7572,32 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintsubjectpreferredroomsform.cpp" line="116"/>
         <location filename="../src/interface/addconstraintsubjectpreferredroomsform.cpp" line="119"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubjectpreferredroomsform.cpp" line="83"/>
         <source>Invalid weight</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα</translation>
+        <translation>Μη αποδεκτή βαρύτητα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubjectpreferredroomsform.cpp" line="89"/>
         <source>Empty list of selected rooms</source>
-        <translation type="unfinished">Κενή λίστα επιλεγμένων αιθουσών</translation>
+        <translation>Κενή λίστα επιλεγμένων αιθουσών</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubjectpreferredroomsform.cpp" line="100"/>
         <source>Invalid selected subject</source>
-        <translation type="unfinished">Μη αποδεκτή επιλογή αντικειμένου</translation>
+        <translation>Μη αποδεκτή επιλογή αντικειμένου</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubjectpreferredroomsform.cpp" line="113"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubjectpreferredroomsform.cpp" line="120"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
 </context>
 <context>
@@ -7610,39 +7610,39 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintsubjectpreferredroomsform_template.ui" line="115"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubjectpreferredroomsform_template.ui" line="122"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubjectpreferredroomsform_template.ui" line="14"/>
         <source>Add subject preferred rooms</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Αντικείμενο - προτιμητέες αίθουσες&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubjectpreferredroomsform_template.ui" line="41"/>
         <source>Rooms</source>
-        <translation type="unfinished">Αίθουσες</translation>
+        <translation>Αίθουσες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubjectpreferredroomsform_template.ui" line="20"/>
         <source>Subject</source>
-        <translation type="unfinished">Αντικείμενο</translation>
+        <translation>Αντικείμενο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubjectpreferredroomsform_template.ui" line="64"/>
         <source>Selected</source>
         <comment>It refers to a list of selected rooms</comment>
-        <translation type="unfinished"></translation>
+        <translation>Επιλεγμένες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintsubjectpreferredroomsform_template.ui" line="77"/>
         <source>Clear</source>
-        <translation type="unfinished">Καθαρισμός</translation>
+        <translation>Καθαρισμός</translation>
     </message>
 </context>
 <context>
@@ -7652,38 +7652,38 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhourscontinuouslyform.cpp" line="88"/>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhourscontinuouslyform.cpp" line="96"/>
         <source>FET warning</source>
-        <translation type="unfinished">FET - Προειδοποίηση</translation>
+        <translation>FET - Προειδοποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhourscontinuouslyform.cpp" line="81"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhourscontinuouslyform.cpp" line="89"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhourscontinuouslyform.cpp" line="97"/>
         <source>Invalid activity tag</source>
-        <translation type="unfinished">Μη αποδεκτή ετικέτα δραστηριότητας</translation>
+        <translation>Μη αποδεκτή ετικέτα δραστηριότητας</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhourscontinuouslyform.cpp" line="107"/>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhourscontinuouslyform.cpp" line="110"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhourscontinuouslyform.cpp" line="108"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhourscontinuouslyform.cpp" line="111"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
 </context>
 <context>
@@ -7691,39 +7691,40 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhourscontinuouslyform_template.ui" line="150"/>
         <source>Max hours continuously</source>
-        <translation type="unfinished">Μέγιστες ώρες συνεχόμενα</translation>
+        <translation>Μέγιστες ώρες συνεχόμενα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhourscontinuouslyform_template.ui" line="180"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhourscontinuouslyform_template.ui" line="28"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Add teacher activity tag max hours continuously</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικός + ετικέτα δραστηριότητας - μέγιστες ώρες συνεχόμενα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhourscontinuouslyform_template.ui" line="60"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Ετικέτα δραστηριότητας</translation>
+        <translation>Ετικέτα δραστηριότητας</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhourscontinuouslyform_template.ui" line="187"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhourscontinuouslyform_template.ui" line="109"/>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
-        <translation type="unfinished"></translation>
+        <translation>Βαρύτητα (ποσοστό)
+Προτεινόμενο: 0.0%-100.0%</translation>
     </message>
 </context>
 <context>
@@ -7733,38 +7734,38 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhoursdailyform.cpp" line="89"/>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhoursdailyform.cpp" line="97"/>
         <source>FET warning</source>
-        <translation type="unfinished">FET - Προειδοποίηση</translation>
+        <translation>FET - Προειδοποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhoursdailyform.cpp" line="82"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhoursdailyform.cpp" line="90"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhoursdailyform.cpp" line="98"/>
         <source>Invalid activity tag</source>
-        <translation type="unfinished">Μη αποδεκτή ετικέτα δραστηριότητας</translation>
+        <translation>Μη αποδεκτή ετικέτα δραστηριότητας</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhoursdailyform.cpp" line="108"/>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhoursdailyform.cpp" line="111"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhoursdailyform.cpp" line="109"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhoursdailyform.cpp" line="112"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
 </context>
 <context>
@@ -7773,38 +7774,39 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Add teacher activity tag max hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικός + ετικέτα δραστηριότητας - μέγιστες ώρες ημερησίως&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhoursdailyform_template.ui" line="28"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhoursdailyform_template.ui" line="60"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Ετικέτα δραστηριότητας</translation>
+        <translation>Ετικέτα δραστηριότητας</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhoursdailyform_template.ui" line="109"/>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
-        <translation type="unfinished"></translation>
+        <translation>Βαρύτητα (ποσοστό)
+Προτεινόμενο: 0.0%-100.0%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhoursdailyform_template.ui" line="150"/>
         <source>Max hours daily</source>
-        <translation type="unfinished">Μέγιστες ώρες ημερησίως</translation>
+        <translation>Μέγιστες ώρες ημερησίως</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhoursdailyform_template.ui" line="180"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacheractivitytagmaxhoursdailyform_template.ui" line="187"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
 </context>
 <context>
@@ -7815,27 +7817,27 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteacherhomeroomform.cpp" line="98"/>
         <location filename="../src/interface/addconstraintteacherhomeroomform.cpp" line="101"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherhomeroomform.cpp" line="76"/>
         <source>Invalid weight</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα</translation>
+        <translation>Μη αποδεκτή βαρύτητα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherhomeroomform.cpp" line="86"/>
         <source>Invalid room</source>
-        <translation type="unfinished">Μη αποδεκτή αίθουσα</translation>
+        <translation>Μη αποδεκτή αίθουσα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherhomeroomform.cpp" line="95"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherhomeroomform.cpp" line="102"/>
         <source>Constraint NOT added - error ?</source>
-        <translation type="unfinished">Περιορισμός δεν προστέθηκε - σφάλμα;</translation>
+        <translation>Περιορισμός δεν προστέθηκε - σφάλμα;</translation>
     </message>
 </context>
 <context>
@@ -7844,12 +7846,12 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteacherhomeroomform_template.ui" line="14"/>
         <source>Add teacher home room</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικός - βασική αίθουσα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherhomeroomform_template.ui" line="28"/>
         <source>Room</source>
-        <translation type="unfinished">Αίθουσα</translation>
+        <translation>Αίθουσα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherhomeroomform_template.ui" line="54"/>
@@ -7859,17 +7861,17 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteacherhomeroomform_template.ui" line="91"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherhomeroomform_template.ui" line="98"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherhomeroomform_template.ui" line="109"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
 </context>
 <context>
@@ -7880,27 +7882,27 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteacherhomeroomsform.cpp" line="111"/>
         <location filename="../src/interface/addconstraintteacherhomeroomsform.cpp" line="114"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherhomeroomsform.cpp" line="82"/>
         <source>Invalid weight</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα</translation>
+        <translation>Μη αποδεκτή βαρύτητα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherhomeroomsform.cpp" line="88"/>
         <source>Empty list of selected rooms</source>
-        <translation type="unfinished">Κενή λίστα επιλεγμένων αιθουσών</translation>
+        <translation>Κενή λίστα επιλεγμένων αιθουσών</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherhomeroomsform.cpp" line="108"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherhomeroomsform.cpp" line="115"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
 </context>
 <context>
@@ -7913,39 +7915,39 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteacherhomeroomsform_template.ui" line="115"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherhomeroomsform_template.ui" line="122"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherhomeroomsform_template.ui" line="20"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherhomeroomsform_template.ui" line="14"/>
         <source>Add teacher home rooms</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικός - βασικές αίθουσες&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherhomeroomsform_template.ui" line="41"/>
         <source>Rooms</source>
-        <translation type="unfinished">Αίθουσες</translation>
+        <translation>Αίθουσες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherhomeroomsform_template.ui" line="64"/>
         <source>Selected</source>
         <comment>It refers to a list of selected rooms</comment>
-        <translation type="unfinished"></translation>
+        <translation>Επιλεγμένες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherhomeroomsform_template.ui" line="77"/>
         <source>Clear</source>
-        <translation type="unfinished">Καθαρισμός</translation>
+        <translation>Καθαρισμός</translation>
     </message>
 </context>
 <context>
@@ -7953,7 +7955,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteacherintervalmaxdaysperweekform.cpp" line="87"/>
         <source>End of day</source>
-        <translation type="unfinished">Λήξη της ημέρας</translation>
+        <translation>Λήξη της ημέρας</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherintervalmaxdaysperweekform.cpp" line="105"/>
@@ -7965,47 +7967,47 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteacherintervalmaxdaysperweekform.cpp" line="147"/>
         <location filename="../src/interface/addconstraintteacherintervalmaxdaysperweekform.cpp" line="150"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherintervalmaxdaysperweekform.cpp" line="106"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherintervalmaxdaysperweekform.cpp" line="111"/>
         <source>Invalid weight (percentage) - it has to be 100%</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherintervalmaxdaysperweekform.cpp" line="121"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherintervalmaxdaysperweekform.cpp" line="129"/>
         <source>Start hour invalid</source>
-        <translation type="unfinished">Μη αποδεκτή ώρα έναρξης</translation>
+        <translation>Μη αποδεκτή ώρα έναρξης</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherintervalmaxdaysperweekform.cpp" line="134"/>
         <source>End hour invalid</source>
-        <translation type="unfinished">Μη αποδεκτή ώρα λήξης</translation>
+        <translation>Μη αποδεκτή ώρα λήξης</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherintervalmaxdaysperweekform.cpp" line="139"/>
         <source>Start hour cannot be greater or equal than end hour</source>
-        <translation type="unfinished">Η ώρα έναρξης δεν μπορεί να είναι μεγαλύτερη ή ίση από την ώρα λήξης</translation>
+        <translation>Η ώρα έναρξης δεν μπορεί να είναι μεγαλύτερη ή ίση από την ώρα λήξης</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherintervalmaxdaysperweekform.cpp" line="151"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherintervalmaxdaysperweekform.cpp" line="148"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
 </context>
 <context>
@@ -8014,22 +8016,22 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteacherintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Add teacher interval max days per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικός - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherintervalmaxdaysperweekform_template.ui" line="28"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherintervalmaxdaysperweekform_template.ui" line="58"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherintervalmaxdaysperweekform_template.ui" line="65"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherintervalmaxdaysperweekform_template.ui" line="82"/>
@@ -8039,17 +8041,17 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteacherintervalmaxdaysperweekform_template.ui" line="125"/>
         <source>Max days per week</source>
-        <translation type="unfinished">Μέγιστες ημέρες ανά εβδομάδα</translation>
+        <translation>Μέγιστες ημέρες ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherintervalmaxdaysperweekform_template.ui" line="164"/>
         <source>Interval end hour</source>
-        <translation type="unfinished">Διάστημα - ώρα λήξης</translation>
+        <translation>Διάστημα - ώρα λήξης</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherintervalmaxdaysperweekform_template.ui" line="200"/>
         <source>Interval start hour</source>
-        <translation type="unfinished">Διάστημα - ώρα έναρξης</translation>
+        <translation>Διάστημα - ώρα έναρξης</translation>
     </message>
 </context>
 <context>
@@ -8060,27 +8062,27 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermaxbuildingchangesperdayform.cpp" line="90"/>
         <location filename="../src/interface/addconstraintteachermaxbuildingchangesperdayform.cpp" line="93"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxbuildingchangesperdayform.cpp" line="74"/>
         <source>Invalid weight (percentage). It has to be 100</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό). Πρέπει να είναι 100%</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό). Πρέπει να είναι 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxbuildingchangesperdayform.cpp" line="82"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxbuildingchangesperdayform.cpp" line="91"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxbuildingchangesperdayform.cpp" line="94"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
 </context>
 <context>
@@ -8089,22 +8091,22 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermaxbuildingchangesperdayform_template.ui" line="14"/>
         <source>Add teacher max building changes per day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικός - μέγιστες αλλαγές κτιρίου ανά ημέρα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxbuildingchangesperdayform_template.ui" line="22"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxbuildingchangesperdayform_template.ui" line="29"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxbuildingchangesperdayform_template.ui" line="46"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxbuildingchangesperdayform_template.ui" line="82"/>
@@ -8114,7 +8116,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachermaxbuildingchangesperdayform_template.ui" line="103"/>
         <source>Max building changes per day</source>
-        <translation type="unfinished">Μέγιστες αλλαγές κτιρίου ανά ημέρα</translation>
+        <translation>Μέγιστες αλλαγές κτιρίου ανά ημέρα</translation>
     </message>
 </context>
 <context>
@@ -8125,27 +8127,27 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermaxbuildingchangesperweekform.cpp" line="90"/>
         <location filename="../src/interface/addconstraintteachermaxbuildingchangesperweekform.cpp" line="93"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxbuildingchangesperweekform.cpp" line="74"/>
         <source>Invalid weight (percentage). It has to be 100</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό). Πρέπει να είναι 100%</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό). Πρέπει να είναι 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxbuildingchangesperweekform.cpp" line="82"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxbuildingchangesperweekform.cpp" line="91"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxbuildingchangesperweekform.cpp" line="94"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
 </context>
 <context>
@@ -8154,22 +8156,22 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermaxbuildingchangesperweekform_template.ui" line="14"/>
         <source>Add teacher max building changes per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικός - μέγιστες αλλαγές κτιρίου ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxbuildingchangesperweekform_template.ui" line="22"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxbuildingchangesperweekform_template.ui" line="29"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxbuildingchangesperweekform_template.ui" line="46"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxbuildingchangesperweekform_template.ui" line="82"/>
@@ -8179,7 +8181,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachermaxbuildingchangesperweekform_template.ui" line="103"/>
         <source>Max building changes per week</source>
-        <translation type="unfinished">Μέγιστες αλλαγές κτιρίου ανά εβδομάδα</translation>
+        <translation>Μέγιστες αλλαγές κτιρίου ανά εβδομάδα</translation>
     </message>
 </context>
 <context>
@@ -8191,32 +8193,32 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermaxdaysperweekform.cpp" line="101"/>
         <location filename="../src/interface/addconstraintteachermaxdaysperweekform.cpp" line="104"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxdaysperweekform.cpp" line="78"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxdaysperweekform.cpp" line="83"/>
         <source>Invalid weight (percentage) - it has to be 100%</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxdaysperweekform.cpp" line="93"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxdaysperweekform.cpp" line="102"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxdaysperweekform.cpp" line="105"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
 </context>
 <context>
@@ -8224,34 +8226,34 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachermaxdaysperweekform_template.ui" line="155"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxdaysperweekform_template.ui" line="14"/>
         <source>Add teacher max days per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικός - μέγιστες ημέρες ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxdaysperweekform_template.ui" line="28"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxdaysperweekform_template.ui" line="118"/>
         <source>Max days per week</source>
-        <translation type="unfinished">Μέγιστες ημέρες ανά εβδομάδα</translation>
+        <translation>Μέγιστες ημέρες ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxdaysperweekform_template.ui" line="148"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxdaysperweekform_template.ui" line="77"/>
         <source>Weight percentage
 (necessary: 100%)</source>
-        <translation type="unfinished">Βαρύτητα (ποσοστό)
+        <translation>Βαρύτητα (ποσοστό)
 Απαραίτητο: 100%</translation>
     </message>
 </context>
@@ -8264,32 +8266,32 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermaxgapsperdayform.cpp" line="92"/>
         <location filename="../src/interface/addconstraintteachermaxgapsperdayform.cpp" line="95"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperdayform.cpp" line="71"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperdayform.cpp" line="76"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperdayform.cpp" line="84"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperdayform.cpp" line="93"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperdayform.cpp" line="96"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
 </context>
 <context>
@@ -8297,34 +8299,35 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperdayform_template.ui" line="136"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperdayform_template.ui" line="14"/>
         <source>Add teacher max gaps per day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικός - μέγιστα κενά ανά ημέρα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperdayform_template.ui" line="65"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperdayform_template.ui" line="91"/>
         <source>Max gaps per day</source>
-        <translation type="unfinished">Μέγιστα κενά ανά ημέρα</translation>
+        <translation>Μέγιστα κενά ανά ημέρα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperdayform_template.ui" line="129"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperdayform_template.ui" line="32"/>
         <source>You must use weight percentage 100%, because otherwise you will get poor timetables. Try to fix firstly a rather large value for max gaps per day and lower it as you find new timetables. The default 1 given here might be too low for your school, in which case you need to use higher values.
 Note: teacher not available and break are not counted as gaps.</source>
-        <translation type="unfinished"></translation>
+        <translation>Πρέπει να χρησιμοποιήσετε το ποσοστό 100% για την βαρύτητα, διότι διαφορετικά δεν θα έχετε ικανοποιητικά αποτελέσματα (ωρολόγια προγράμματα). Προσπαθήστε πρώτα με μία αρκετά μεγάλη τιμή για τα &quot;μέγιστα κενά ανά ημέρα&quot; και στην συνέχεια ελαττώστε την, όσο συνεχίζετε να βρίσκετε λύσεις για το ωρολόγιο πρόγραμμά σας. Η προκαθορισμένη τιμή 1 η οποία δίνεται εδώ πιθανώς να είναι υπερβολικά χαμηλή για το σχολείο σας, περίπτωση στην οποία θα πρέπει να χρησιμοποιήσετε μεγαλύτερες τιμές.
+Σημείωση: ο περιορισμός &quot;εκπαιδευτικός - μη διαθέσιμοι χρόνοι&quot; και τα διαλείμματα δεν προσμετρώνται στα κενά.</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperdayform_template.ui" line="110"/>
@@ -8341,32 +8344,32 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermaxgapsperweekform.cpp" line="92"/>
         <location filename="../src/interface/addconstraintteachermaxgapsperweekform.cpp" line="95"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperweekform.cpp" line="71"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperweekform.cpp" line="76"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperweekform.cpp" line="84"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperweekform.cpp" line="93"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperweekform.cpp" line="96"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
 </context>
 <context>
@@ -8374,34 +8377,35 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperweekform_template.ui" line="136"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperweekform_template.ui" line="14"/>
         <source>Add teacher max gaps per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικός - μέγιστα κενά ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperweekform_template.ui" line="65"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperweekform_template.ui" line="91"/>
         <source>Max gaps per week</source>
-        <translation type="unfinished">Μέγιστα κενά ανά εβδομάδα</translation>
+        <translation>Μέγιστα κενά ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperweekform_template.ui" line="129"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperweekform_template.ui" line="32"/>
         <source>You must use weight percentage 100%, because otherwise you will get poor timetables. Try to fix firstly a rather large value for max gaps per week and lower it as you find new timetables. The default 3 given here might be too low for your school, in which case you need to use higher values.
 Note: teacher not available and break are not counted as gaps.</source>
-        <translation type="unfinished"></translation>
+        <translation>Πρέπει να χρησιμοποιήσετε το ποσοστό 100% για την βαρύτητα, διότι διαφορετικά δεν θα έχετε ικανοποιητικά αποτελέσματα (ωρολόγια προγράμματα). Προσπαθήστε πρώτα με μία αρκετά μεγάλη τιμή για τα &quot;μέγιστα κενά ανά εβδομάδα&quot; και στην συνέχεια ελαττώστε την, όσο συνεχίζετε να βρίσκετε λύσεις για το ωρολόγιο πρόγραμμά σας. Η προκαθορισμένη τιμή 3 η οποία δίνεται εδώ πιθανώς να είναι υπερβολικά χαμηλή για το σχολείο σας, περίπτωση στην οποία θα πρέπει να χρησιμοποιήσετε μεγαλύτερες τιμές.
+Σημείωση: ο περιορισμός &quot;εκπαιδευτικός - μη διαθέσιμοι χρόνοι&quot; και τα διαλείμματα δεν προσμετρώνται στα κενά.</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxgapsperweekform_template.ui" line="110"/>
@@ -8417,27 +8421,27 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermaxhourscontinuouslyform.cpp" line="93"/>
         <location filename="../src/interface/addconstraintteachermaxhourscontinuouslyform.cpp" line="96"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxhourscontinuouslyform.cpp" line="75"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxhourscontinuouslyform.cpp" line="83"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxhourscontinuouslyform.cpp" line="94"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxhourscontinuouslyform.cpp" line="97"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
 </context>
 <context>
@@ -8445,34 +8449,35 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachermaxhourscontinuouslyform_template.ui" line="148"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxhourscontinuouslyform_template.ui" line="155"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Add teacher max hours continuously</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικός - μέγιστες ώρες συνεχόμενα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxhourscontinuouslyform_template.ui" line="118"/>
         <source>Max hours continuously</source>
-        <translation type="unfinished">Μέγιστες ώρες συνεχόμενα</translation>
+        <translation>Μέγιστες ώρες συνεχόμενα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxhourscontinuouslyform_template.ui" line="28"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxhourscontinuouslyform_template.ui" line="77"/>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
-        <translation type="unfinished"></translation>
+        <translation>Βαρύτητα (ποσοστό)
+Προτεινόμενο: 0.0%-100.0%</translation>
     </message>
 </context>
 <context>
@@ -8483,27 +8488,27 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermaxhoursdailyform.cpp" line="93"/>
         <location filename="../src/interface/addconstraintteachermaxhoursdailyform.cpp" line="96"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxhoursdailyform.cpp" line="75"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxhoursdailyform.cpp" line="83"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxhoursdailyform.cpp" line="94"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxhoursdailyform.cpp" line="97"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
 </context>
 <context>
@@ -8511,34 +8516,35 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachermaxhoursdailyform_template.ui" line="148"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxhoursdailyform_template.ui" line="155"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxhoursdailyform_template.ui" line="14"/>
         <source>Add teacher max hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικός - μέγιστες ώρες ημερησίως&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxhoursdailyform_template.ui" line="118"/>
         <source>Max hours daily</source>
-        <translation type="unfinished">Μέγιστες ώρες ημερησίως</translation>
+        <translation>Μέγιστες ώρες ημερησίως</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxhoursdailyform_template.ui" line="28"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxhoursdailyform_template.ui" line="77"/>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
-        <translation type="unfinished"></translation>
+        <translation>Βαρύτητα (ποσοστό)
+Προτεινόμενο: 0.0%-100.0%</translation>
     </message>
 </context>
 <context>
@@ -8550,32 +8556,32 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermaxspanperdayform.cpp" line="92"/>
         <location filename="../src/interface/addconstraintteachermaxspanperdayform.cpp" line="95"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxspanperdayform.cpp" line="71"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxspanperdayform.cpp" line="76"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxspanperdayform.cpp" line="84"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxspanperdayform.cpp" line="93"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxspanperdayform.cpp" line="96"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
 </context>
 <context>
@@ -8584,27 +8590,27 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermaxspanperdayform_template.ui" line="14"/>
         <source>Add teacher max span per day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικός - μέγιστη παραμονή ανά ημέρα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxspanperdayform_template.ui" line="33"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxspanperdayform_template.ui" line="45"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxspanperdayform_template.ui" line="52"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxspanperdayform_template.ui" line="77"/>
         <source>Max span per day</source>
-        <translation type="unfinished">Μέγιστη παραμονή ανά ημέρα</translation>
+        <translation>Μέγιστη παραμονή ανά ημέρα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermaxspanperdayform_template.ui" line="96"/>
@@ -8621,32 +8627,32 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermindaysperweekform.cpp" line="95"/>
         <location filename="../src/interface/addconstraintteachermindaysperweekform.cpp" line="98"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermindaysperweekform.cpp" line="72"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermindaysperweekform.cpp" line="77"/>
         <source>Invalid weight (percentage) - it has to be 100%</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermindaysperweekform.cpp" line="87"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermindaysperweekform.cpp" line="96"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermindaysperweekform.cpp" line="99"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
 </context>
 <context>
@@ -8655,34 +8661,34 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermindaysperweekform_template.ui" line="14"/>
         <source>Add teacher min days per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικός - ελάχιστες ημέρες ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermindaysperweekform_template.ui" line="28"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermindaysperweekform_template.ui" line="77"/>
         <source>Weight percentage
 (necessary: 100%)</source>
-        <translation type="unfinished">Βαρύτητα (ποσοστό)
+        <translation>Βαρύτητα (ποσοστό)
 Απαραίτητο: 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermindaysperweekform_template.ui" line="118"/>
         <source>Min days per week</source>
-        <translation type="unfinished"></translation>
+        <translation>Ελάχιστες ημέρες ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermindaysperweekform_template.ui" line="148"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermindaysperweekform_template.ui" line="155"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
 </context>
 <context>
@@ -8693,27 +8699,27 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermingapsbetweenbuildingchangesform.cpp" line="90"/>
         <location filename="../src/interface/addconstraintteachermingapsbetweenbuildingchangesform.cpp" line="93"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermingapsbetweenbuildingchangesform.cpp" line="74"/>
         <source>Invalid weight (percentage). It has to be 100</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό). Πρέπει να είναι 100%</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό). Πρέπει να είναι 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermingapsbetweenbuildingchangesform.cpp" line="82"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermingapsbetweenbuildingchangesform.cpp" line="91"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermingapsbetweenbuildingchangesform.cpp" line="94"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
 </context>
 <context>
@@ -8722,22 +8728,22 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachermingapsbetweenbuildingchangesform_template.ui" line="14"/>
         <source>Add teacher min gaps between building changes</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικός - ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermingapsbetweenbuildingchangesform_template.ui" line="22"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermingapsbetweenbuildingchangesform_template.ui" line="29"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermingapsbetweenbuildingchangesform_template.ui" line="46"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachermingapsbetweenbuildingchangesform_template.ui" line="82"/>
@@ -8747,7 +8753,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachermingapsbetweenbuildingchangesform_template.ui" line="103"/>
         <source>Min gaps between building changes</source>
-        <translation type="unfinished">Ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου</translation>
+        <translation>Ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου</translation>
     </message>
 </context>
 <context>
@@ -8761,42 +8767,42 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteacherminhoursdailyform.cpp" line="107"/>
         <location filename="../src/interface/addconstraintteacherminhoursdailyform.cpp" line="119"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminhoursdailyform.cpp" line="75"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminhoursdailyform.cpp" line="80"/>
         <source>Invalid weight (percentage) - must be 100%</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminhoursdailyform.cpp" line="88"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminhoursdailyform.cpp" line="93"/>
         <source>Allow empty days check box must be checked. If you need to not allow empty days for a teacher, please use the constraint teacher min days per week</source>
-        <translation type="unfinished"></translation>
+        <translation>Πρέπει να τσεκάρετε το πλαίσιο ελέγχου &quot;κενές ημέρες - επιτρεπτές&quot;. Αν δεν θέλετε να επιτρέπονται οι κενές ημέρες για κάποιον εκπαιδευτικό, παρακαλώ χρησιμοποιείστε τον περιορισμό &quot;εκπαιδευτικός - ελάχιστες ημέρες ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminhoursdailyform.cpp" line="105"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminhoursdailyform.cpp" line="108"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminhoursdailyform.cpp" line="119"/>
         <source>This check box must remain checked. If you really need to not allow empty days for this teacher, please use constraint teacher min days per week</source>
-        <translation type="unfinished"></translation>
+        <translation>Το συγκεκριμένο πλαίσιο ελέγχου πρέπει να παραμείνει τσεκαρισμένο. Αν πραγματικά δεν θέλετε να επιτρέπονται οι κενές ημέρες για τον συγκεκριμένο εκπαιδευτικό, παρακαλώ χρησιμοποιείστε τον περιορισμό &quot;εκπαιδευτικός - ελάχιστες ημέρες ανά εβδομάδα&quot;</translation>
     </message>
 </context>
 <context>
@@ -8804,7 +8810,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteacherminhoursdailyform_template.ui" line="32"/>
         <source>It is recommended to start with 2 min hours and strenghen them as you find new timetables.</source>
-        <translation type="unfinished"></translation>
+        <translation>Προτείνεται να ξεκινήσετε με την τιμή 2 για τις &quot;ελάχιστες ώρες ημερησίως&quot; και στη συνέχεια να αυξήσετε την τιμή αυτή, όσο συνεχίζετε να βρίσκετε λύσεις για το ωρολόγιο πρόγραμμά σας.</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminhoursdailyform_template.ui" line="93"/>
@@ -8814,33 +8820,33 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteacherminhoursdailyform_template.ui" line="116"/>
         <source>Min hours daily</source>
-        <translation type="unfinished"></translation>
+        <translation>Ελάχιστες ώρες ημερησίως</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminhoursdailyform_template.ui" line="133"/>
         <source>Allow empty days</source>
-        <translation type="unfinished">Κενές ημέρες - επιτρεπτές</translation>
+        <translation>Κενές ημέρες - επιτρεπτές</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminhoursdailyform_template.ui" line="145"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminhoursdailyform_template.ui" line="152"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminhoursdailyform_template.ui" line="61"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminhoursdailyform_template.ui" line="14"/>
         <source>Add teacher min hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικός - ελάχιστες ώρες ημερησίως&quot;</translation>
     </message>
 </context>
 <context>
@@ -8852,32 +8858,32 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform.cpp" line="94"/>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform.cpp" line="97"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform.cpp" line="73"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform.cpp" line="78"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform.cpp" line="86"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform.cpp" line="95"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform.cpp" line="98"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
 </context>
 <context>
@@ -8886,17 +8892,17 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform_template.ui" line="14"/>
         <source>Add teacher min resting hours</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικός - ελάχιστες ώρες ανάπαυσης&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform_template.ui" line="28"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform_template.ui" line="58"/>
         <source>Min resting hours</source>
-        <translation type="unfinished">Ελάχιστες ώρες ανάπαυσης</translation>
+        <translation>Ελάχιστες ώρες ανάπαυσης</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform_template.ui" line="81"/>
@@ -8906,17 +8912,17 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform_template.ui" line="102"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform_template.ui" line="109"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteacherminrestinghoursform_template.ui" line="118"/>
         <source>Circular</source>
-        <translation type="unfinished">Κυκλικά</translation>
+        <translation>Κυκλικά</translation>
     </message>
 </context>
 <context>
@@ -8927,42 +8933,42 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachernotavailabletimesform.cpp" line="224"/>
         <location filename="../src/interface/addconstraintteachernotavailabletimesform.cpp" line="227"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachernotavailabletimesform.cpp" line="199"/>
         <source>Invalid weight (percentage). It has to be 100</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό). Πρέπει να είναι 100%</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό). Πρέπει να είναι 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachernotavailabletimesform.cpp" line="207"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachernotavailabletimesform.cpp" line="228"/>
         <source>Constraint NOT added - there must be another constraint of this type referring to the same teacher. Please edit that one</source>
-        <translation type="unfinished"></translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - πιθανότατα υπάρχει άλλος περιορισμός αυτού του τύπου για τον ίδιο εκπαιδευτικό. Παρακαλώ επεξεργαστείτε τον ήδη υπάρχοντα περιορισμό</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachernotavailabletimesform.cpp" line="238"/>
         <source>This constraint does not induce gaps for teachers. If a teacher has lessons before and after a not available period, gaps will not be counted.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ο περιορισμός αυτός δεν επάγει κενά για τους εκπαιδευτικούς. Αν ένας εκπαιδευτικός έχει μαθήματα πριν και μετά από μία μη διαθέσιμη περίοδο, το κενό αυτό δεν θα προσμετρηθεί.</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachernotavailabletimesform.cpp" line="247"/>
         <source>FET help</source>
-        <translation type="unfinished">FET - Βοήθεια</translation>
+        <translation>FET - Βοήθεια</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachernotavailabletimesform.cpp" line="243"/>
         <source>If you really need to use weight under 100%, you can use activities preferred times with only the teacher specified, but this might generate problems, as possible gaps will be counted and you may obtain an impossible timetable.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αν πραγματικά χρειάζεστε να χρησιμοποιήσετε ποσοστό βαρύτητας μικρότερο του 100%, μπορείτε να χρησιμοποιήσετε τον περιορισμό &quot;δραστηριότητες - προτιμητέοι χρόνοι&quot; για τον συγκεκριμένο εκπαιδευτικό και μόνον. Όμως αυτό μπορεί να δημιουργήσει προβλήματα, καθότι τα όποια κενά προξενηθούν από την χρήση του περιορισμού αυτού θα προσμετρηθούν κανονικά (ως κενά). Έτσι, υπάρχει το ενδεχόμενο να καταστήσετε αδύνατη την εξεύρεση λύσης για το ωρολόγιο πρόγραμμα.</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachernotavailabletimesform.cpp" line="225"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
 </context>
 <context>
@@ -8970,7 +8976,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachernotavailabletimesform_template.ui" line="78"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachernotavailabletimesform_template.ui" line="98"/>
@@ -8981,45 +8987,45 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachernotavailabletimesform_template.ui" line="124"/>
         <source>Set all available</source>
         <comment>It refers to time slots</comment>
-        <translation type="unfinished">Όλες διαθέσιμες</translation>
+        <translation>Όλες διαθέσιμες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachernotavailabletimesform_template.ui" line="145"/>
         <source>Add</source>
-        <translation type="unfinished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachernotavailabletimesform_template.ui" line="152"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachernotavailabletimesform_template.ui" line="131"/>
         <source>X=not allowed, empty=allowed</source>
         <extracomment>This is an explanation in a dialog for a constraint. It says that symbol X means that this slot is not allowed, and an empty cell means that the slot is allowed</extracomment>
-        <translation type="unfinished">Χ=μη επιτρεπτή, κενό=επιτρεπτή</translation>
+        <translation>Χ=μη επιτρεπτή, κενό=επιτρεπτή</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachernotavailabletimesform_template.ui" line="138"/>
         <source>Set all not available</source>
         <comment>It refers to time slots</comment>
-        <translation type="unfinished">Καμία διαθέσιμη</translation>
+        <translation>Καμία διαθέσιμη</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachernotavailabletimesform_template.ui" line="159"/>
         <source>Help</source>
-        <translation type="unfinished">Βοήθεια</translation>
+        <translation>Βοήθεια</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachernotavailabletimesform_template.ui" line="14"/>
         <source>Add teacher not available times</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: - &quot;Εκπαιδευτικός - μη διαθέσιμοι χρόνοι&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachernotavailabletimesform_template.ui" line="26"/>
         <source>Note: this constraint does not induce gaps for teachers. If a teacher has lessons before and after a not available period, there will be no gaps counted</source>
-        <translation type="unfinished"></translation>
+        <translation>Ο περιορισμός αυτός δεν επάγει κενά για τους εκπαιδευτικούς. Αν ένας εκπαιδευτικός έχει μαθήματα πριν και μετά από μία μη διαθέσιμη περίοδο, το κενό αυτό δεν θα προσμετρηθεί</translation>
     </message>
 </context>
 <context>
@@ -9028,33 +9034,33 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhourscontinuouslyform.cpp" line="72"/>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhourscontinuouslyform.cpp" line="80"/>
         <source>FET warning</source>
-        <translation type="unfinished">FET - Προειδοποίηση</translation>
+        <translation>FET - Προειδοποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhourscontinuouslyform.cpp" line="73"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhourscontinuouslyform.cpp" line="81"/>
         <source>Invalid activity tag</source>
-        <translation type="unfinished">Μη αποδεκτή ετικέτα δραστηριότητας</translation>
+        <translation>Μη αποδεκτή ετικέτα δραστηριότητας</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhourscontinuouslyform.cpp" line="91"/>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhourscontinuouslyform.cpp" line="94"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhourscontinuouslyform.cpp" line="92"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhourscontinuouslyform.cpp" line="95"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
 </context>
 <context>
@@ -9062,34 +9068,35 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhourscontinuouslyform_template.ui" line="121"/>
         <source>Max hours continuously</source>
-        <translation type="unfinished">Μέγιστες ώρες συνεχόμενα</translation>
+        <translation>Μέγιστες ώρες συνεχόμενα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhourscontinuouslyform_template.ui" line="151"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhourscontinuouslyform_template.ui" line="28"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Ετικέτα δραστηριότητας</translation>
+        <translation>Ετικέτα δραστηριότητας</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Add teachers activity tag max hours continuously</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικοί + ετικέτα δραστηριότητας - μέγιστες ώρες συνεχόμενα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhourscontinuouslyform_template.ui" line="158"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhourscontinuouslyform_template.ui" line="80"/>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
-        <translation type="unfinished"></translation>
+        <translation>Βαρύτητα (ποσοστό)
+Προτεινόμενο: 0.0%-100.0%</translation>
     </message>
 </context>
 <context>
@@ -9098,33 +9105,33 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhoursdailyform.cpp" line="73"/>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhoursdailyform.cpp" line="81"/>
         <source>FET warning</source>
-        <translation type="unfinished">FET - Προειδοποίηση</translation>
+        <translation>FET - Προειδοποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhoursdailyform.cpp" line="74"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhoursdailyform.cpp" line="82"/>
         <source>Invalid activity tag</source>
-        <translation type="unfinished">Μη αποδεκτή ετικέτα δραστηριότητας</translation>
+        <translation>Μη αποδεκτή ετικέτα δραστηριότητας</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhoursdailyform.cpp" line="92"/>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhoursdailyform.cpp" line="95"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhoursdailyform.cpp" line="93"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhoursdailyform.cpp" line="96"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
 </context>
 <context>
@@ -9133,33 +9140,34 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhoursdailyform_template.ui" line="14"/>
         <source>Add teachers activity tag max hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικοί + ετικέτα δραστηριότητας - μέγιστες ώρες ημερησίως&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhoursdailyform_template.ui" line="28"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Ετικέτα δραστηριότητας</translation>
+        <translation>Ετικέτα δραστηριότητας</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhoursdailyform_template.ui" line="80"/>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
-        <translation type="unfinished"></translation>
+        <translation>Βαρύτητα (ποσοστό)
+Προτεινόμενο: 0.0%-100.0%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhoursdailyform_template.ui" line="121"/>
         <source>Max hours daily</source>
-        <translation type="unfinished">Μέγιστες ώρες ημερησίως</translation>
+        <translation>Μέγιστες ώρες ημερησίως</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhoursdailyform_template.ui" line="151"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersactivitytagmaxhoursdailyform_template.ui" line="158"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
 </context>
 <context>
@@ -9167,7 +9175,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersintervalmaxdaysperweekform.cpp" line="73"/>
         <source>End of day</source>
-        <translation type="unfinished">Λήξη της ημέρας</translation>
+        <translation>Λήξη της ημέρας</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersintervalmaxdaysperweekform.cpp" line="91"/>
@@ -9178,42 +9186,42 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersintervalmaxdaysperweekform.cpp" line="125"/>
         <location filename="../src/interface/addconstraintteachersintervalmaxdaysperweekform.cpp" line="128"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersintervalmaxdaysperweekform.cpp" line="92"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersintervalmaxdaysperweekform.cpp" line="97"/>
         <source>Invalid weight (percentage) - it has to be 100%</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersintervalmaxdaysperweekform.cpp" line="107"/>
         <source>Start hour invalid</source>
-        <translation type="unfinished">Μη αποδεκτή ώρα έναρξης</translation>
+        <translation>Μη αποδεκτή ώρα έναρξης</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersintervalmaxdaysperweekform.cpp" line="112"/>
         <source>End hour invalid</source>
-        <translation type="unfinished">Μη αποδεκτή ώρα λήξης</translation>
+        <translation>Μη αποδεκτή ώρα λήξης</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersintervalmaxdaysperweekform.cpp" line="117"/>
         <source>Start hour cannot be greater or equal than end hour</source>
-        <translation type="unfinished">Η ώρα έναρξης δεν μπορεί να είναι μεγαλύτερη ή ίση από την ώρα λήξης</translation>
+        <translation>Η ώρα έναρξης δεν μπορεί να είναι μεγαλύτερη ή ίση από την ώρα λήξης</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersintervalmaxdaysperweekform.cpp" line="129"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersintervalmaxdaysperweekform.cpp" line="126"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
 </context>
 <context>
@@ -9222,17 +9230,17 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersintervalmaxdaysperweekform_template.ui" line="14"/>
         <source>Add teachers interval max days per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικοί - διάστημα δραστηριοτήτων σε μέγιστες ημέρες ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersintervalmaxdaysperweekform_template.ui" line="22"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersintervalmaxdaysperweekform_template.ui" line="29"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersintervalmaxdaysperweekform_template.ui" line="46"/>
@@ -9242,17 +9250,17 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersintervalmaxdaysperweekform_template.ui" line="89"/>
         <source>Max days per week</source>
-        <translation type="unfinished">Μέγιστες ημέρες ανά εβδομάδα</translation>
+        <translation>Μέγιστες ημέρες ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersintervalmaxdaysperweekform_template.ui" line="128"/>
         <source>Interval end hour</source>
-        <translation type="unfinished">Διάστημα - ώρα λήξης</translation>
+        <translation>Διάστημα - ώρα λήξης</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersintervalmaxdaysperweekform_template.ui" line="164"/>
         <source>Interval start hour</source>
-        <translation type="unfinished">Διάστημα - ώρα έναρξης</translation>
+        <translation>Διάστημα - ώρα έναρξης</translation>
     </message>
 </context>
 <context>
@@ -9262,22 +9270,22 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmaxbuildingchangesperdayform.cpp" line="68"/>
         <location filename="../src/interface/addconstraintteachersmaxbuildingchangesperdayform.cpp" line="71"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxbuildingchangesperdayform.cpp" line="60"/>
         <source>Invalid weight (percentage). It has to be 100</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό). Πρέπει να είναι 100%</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό). Πρέπει να είναι 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxbuildingchangesperdayform.cpp" line="69"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxbuildingchangesperdayform.cpp" line="72"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
 </context>
 <context>
@@ -9286,17 +9294,17 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmaxbuildingchangesperdayform_template.ui" line="14"/>
         <source>Add teachers max building changes per day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικοί - μέγιστες αλλαγές κτιρίου ανά ημέρα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxbuildingchangesperdayform_template.ui" line="22"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxbuildingchangesperdayform_template.ui" line="29"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxbuildingchangesperdayform_template.ui" line="46"/>
@@ -9306,7 +9314,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxbuildingchangesperdayform_template.ui" line="67"/>
         <source>Max building changes per day</source>
-        <translation type="unfinished">Μέγιστες αλλαγές κτιρίου ανά ημέρα</translation>
+        <translation>Μέγιστες αλλαγές κτιρίου ανά ημέρα</translation>
     </message>
 </context>
 <context>
@@ -9316,22 +9324,22 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmaxbuildingchangesperweekform.cpp" line="68"/>
         <location filename="../src/interface/addconstraintteachersmaxbuildingchangesperweekform.cpp" line="71"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxbuildingchangesperweekform.cpp" line="60"/>
         <source>Invalid weight (percentage). It has to be 100</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό). Πρέπει να είναι 100%</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό). Πρέπει να είναι 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxbuildingchangesperweekform.cpp" line="69"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxbuildingchangesperweekform.cpp" line="72"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
 </context>
 <context>
@@ -9340,17 +9348,17 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmaxbuildingchangesperweekform_template.ui" line="14"/>
         <source>Add teachers max building changes per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικοί - μέγιστες αλλαγές κτιρίου ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxbuildingchangesperweekform_template.ui" line="22"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxbuildingchangesperweekform_template.ui" line="29"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxbuildingchangesperweekform_template.ui" line="46"/>
@@ -9360,7 +9368,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxbuildingchangesperweekform_template.ui" line="67"/>
         <source>Max building changes per week</source>
-        <translation type="unfinished">Μέγιστες αλλαγές κτιρίου ανά εβδομάδα</translation>
+        <translation>Μέγιστες αλλαγές κτιρίου ανά εβδομάδα</translation>
     </message>
 </context>
 <context>
@@ -9371,27 +9379,27 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmaxdaysperweekform.cpp" line="79"/>
         <location filename="../src/interface/addconstraintteachersmaxdaysperweekform.cpp" line="82"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxdaysperweekform.cpp" line="64"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxdaysperweekform.cpp" line="69"/>
         <source>Invalid weight (percentage) - it has to be 100%</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxdaysperweekform.cpp" line="80"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxdaysperweekform.cpp" line="83"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
 </context>
 <context>
@@ -9399,13 +9407,13 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxdaysperweekform_template.ui" line="79"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxdaysperweekform_template.ui" line="14"/>
         <source>Add teachers max days per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικοί - μέγιστες ημέρες ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxdaysperweekform_template.ui" line="28"/>
@@ -9415,12 +9423,12 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxdaysperweekform_template.ui" line="55"/>
         <source>Max days per week</source>
-        <translation type="unfinished">Μέγιστες ημέρες ανά εβδομάδα</translation>
+        <translation>Μέγιστες ημέρες ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxdaysperweekform_template.ui" line="72"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
 </context>
 <context>
@@ -9431,27 +9439,27 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmaxgapsperdayform.cpp" line="75"/>
         <location filename="../src/interface/addconstraintteachersmaxgapsperdayform.cpp" line="78"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperdayform.cpp" line="62"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperdayform.cpp" line="67"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperdayform.cpp" line="76"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperdayform.cpp" line="79"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
 </context>
 <context>
@@ -9459,29 +9467,30 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperdayform_template.ui" line="112"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperdayform_template.ui" line="61"/>
         <source>Max gaps per day</source>
-        <translation type="unfinished">Μέγιστα κενά ανά ημέρα</translation>
+        <translation>Μέγιστα κενά ανά ημέρα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperdayform_template.ui" line="32"/>
         <source>It is recommended to use only one constraint of this type. You must use weight percentage 100%, because otherwise you will get poor timetables. Try to fix firstly a rather large value for max gaps per day and lower it as you find new timetables. The default given here, 1, might be too low for your school and you might need to use higher values.
 Note: teacher not available and break are not counted as gaps.</source>
-        <translation type="unfinished"></translation>
+        <translation>Συνιστάται να χρησιμοποιείτε μόνον έναν περιορισμού αυτού του τύπου. Θα πρέπει να χρησιμοποιήσετε ως ποσοστό βαρύτητας το 100%, διότι διαφορετικά δεν θα έχετε ικανοποιητικά αποτελέσματα (ωρολόγια προγράμματα). Προσπαθήστε πρώτα με μία αρκετά μεγάλη τιμή για τα &quot;μέγιστα κενά ανά ημέρα&quot; και στην συνέχεια ελαττώστε την, όσο συνεχίζετε να βρίσκετε λύσεις για το ωρολόγιο πρόγραμμά σας. Η προκαθορισμένη τιμή 1 η οποία δίνεται εδώ πιθανώς να είναι υπερβολικά χαμηλή για το σχολείο σας, περίπτωση στην οποία θα πρέπει να χρησιμοποιήσετε μεγαλύτερες τιμές.
+Σημείωση: ο περιορισμός &quot;εκπαιδευτικός - μη διαθέσιμοι χρόνοι&quot; και τα διαλείμματα δεν προσμετρώνται στα κενά.</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperdayform_template.ui" line="14"/>
         <source>Add teachers max gaps per day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικοί - μέγιστα κενά ανά ημέρα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperdayform_template.ui" line="105"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperdayform_template.ui" line="84"/>
@@ -9497,27 +9506,27 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmaxgapsperweekform.cpp" line="75"/>
         <location filename="../src/interface/addconstraintteachersmaxgapsperweekform.cpp" line="78"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperweekform.cpp" line="62"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperweekform.cpp" line="67"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperweekform.cpp" line="76"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperweekform.cpp" line="79"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
 </context>
 <context>
@@ -9525,29 +9534,30 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperweekform_template.ui" line="112"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperweekform_template.ui" line="61"/>
         <source>Max gaps per week</source>
-        <translation type="unfinished">Μέγιστα κενά ανά εβδομάδα</translation>
+        <translation>Μέγιστα κενά ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperweekform_template.ui" line="32"/>
         <source>It is recommended to use only one constraint of this type. You must use weight percentage 100%, because otherwise you will get poor timetables. Try to fix firstly a rather large value for max gaps per week and lower it as you find new timetables. The default given here, 3, might be too low for your school and you might need to use higher values.
 Note: teacher not available and break are not counted as gaps.</source>
-        <translation type="unfinished"></translation>
+        <translation>Συνιστάται να χρησιμοποιείτε μόνον έναν περιορισμού αυτού του τύπου. Θα πρέπει να χρησιμοποιήσετε ως ποσοστό βαρύτητας το 100%, διότι διαφορετικά δεν θα έχετε ικανοποιητικά αποτελέσματα (ωρολόγια προγράμματα). Προσπαθήστε πρώτα με μία αρκετά μεγάλη τιμή για τα &quot;μέγιστα κενά ανά ημέρα&quot; και στην συνέχεια ελαττώστε την, όσο συνεχίζετε να βρίσκετε λύσεις για το ωρολόγιο πρόγραμμά σας. Η προκαθορισμένη τιμή 3 η οποία δίνεται εδώ πιθανώς να είναι υπερβολικά χαμηλή για το σχολείο σας, περίπτωση στην οποία θα πρέπει να χρησιμοποιήσετε μεγαλύτερες τιμές.
+Σημείωση: ο περιορισμός &quot;εκπαιδευτικός - μη διαθέσιμοι χρόνοι&quot; και τα διαλείμματα δεν προσμετρώνται στα κενά.</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperweekform_template.ui" line="14"/>
         <source>Add teachers max gaps per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικοί - μέγιστα κενά ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperweekform_template.ui" line="105"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxgapsperweekform_template.ui" line="84"/>
@@ -9562,22 +9572,22 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmaxhourscontinuouslyform.cpp" line="76"/>
         <location filename="../src/interface/addconstraintteachersmaxhourscontinuouslyform.cpp" line="79"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxhourscontinuouslyform.cpp" line="66"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxhourscontinuouslyform.cpp" line="77"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxhourscontinuouslyform.cpp" line="80"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
 </context>
 <context>
@@ -9585,29 +9595,30 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxhourscontinuouslyform_template.ui" line="80"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxhourscontinuouslyform_template.ui" line="14"/>
         <source>Add teachers max hours continuously</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικοί - μέγιστες ώρες συνεχόμενα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxhourscontinuouslyform_template.ui" line="56"/>
         <source>Max hours continuously</source>
-        <translation type="unfinished">Μέγιστες ώρες συνεχόμενα</translation>
+        <translation>Μέγιστες ώρες συνεχόμενα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxhourscontinuouslyform_template.ui" line="73"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxhourscontinuouslyform_template.ui" line="28"/>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
-        <translation type="unfinished"></translation>
+        <translation>Βαρύτητα (ποσοστό)
+Προτεινόμενο: 0.0%-100.0%</translation>
     </message>
 </context>
 <context>
@@ -9617,22 +9628,22 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmaxhoursdailyform.cpp" line="76"/>
         <location filename="../src/interface/addconstraintteachersmaxhoursdailyform.cpp" line="79"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxhoursdailyform.cpp" line="66"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxhoursdailyform.cpp" line="77"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxhoursdailyform.cpp" line="80"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
 </context>
 <context>
@@ -9640,29 +9651,30 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxhoursdailyform_template.ui" line="80"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxhoursdailyform_template.ui" line="14"/>
         <source>Add teachers max hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικοί - μέγιστες ώρες ημερησίως&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxhoursdailyform_template.ui" line="56"/>
         <source>Max hours daily</source>
-        <translation type="unfinished">Μέγιστες ώρες ημερησίως</translation>
+        <translation>Μέγιστες ώρες ημερησίως</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxhoursdailyform_template.ui" line="73"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxhoursdailyform_template.ui" line="28"/>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
-        <translation type="unfinished"></translation>
+        <translation>Βαρύτητα (ποσοστό)
+Προτεινόμενο: 0.0%-100.0%</translation>
     </message>
 </context>
 <context>
@@ -9673,27 +9685,27 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmaxspanperdayform.cpp" line="75"/>
         <location filename="../src/interface/addconstraintteachersmaxspanperdayform.cpp" line="78"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxspanperdayform.cpp" line="62"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxspanperdayform.cpp" line="67"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxspanperdayform.cpp" line="76"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxspanperdayform.cpp" line="79"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
 </context>
 <context>
@@ -9702,22 +9714,22 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmaxspanperdayform_template.ui" line="14"/>
         <source>Add teachers max span per day</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικοί - μέγιστη παραμονή ανά ημέρα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxspanperdayform_template.ui" line="22"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxspanperdayform_template.ui" line="29"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxspanperdayform_template.ui" line="40"/>
         <source>Max span per day</source>
-        <translation type="unfinished">Μέγιστη παραμονή ανά ημέρα</translation>
+        <translation>Μέγιστη παραμονή ανά ημέρα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmaxspanperdayform_template.ui" line="79"/>
@@ -9733,27 +9745,27 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmindaysperweekform.cpp" line="75"/>
         <location filename="../src/interface/addconstraintteachersmindaysperweekform.cpp" line="78"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmindaysperweekform.cpp" line="60"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmindaysperweekform.cpp" line="65"/>
         <source>Invalid weight (percentage) - it has to be 100%</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmindaysperweekform.cpp" line="76"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmindaysperweekform.cpp" line="79"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
 </context>
 <context>
@@ -9762,7 +9774,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmindaysperweekform_template.ui" line="14"/>
         <source>Add teachers min days per week</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικοί - ελάχιστες ημέρες ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmindaysperweekform_template.ui" line="28"/>
@@ -9772,17 +9784,17 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersmindaysperweekform_template.ui" line="55"/>
         <source>Min days per week</source>
-        <translation type="unfinished"></translation>
+        <translation>Ελάχιστες ημέρες ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmindaysperweekform_template.ui" line="72"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmindaysperweekform_template.ui" line="79"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
 </context>
 <context>
@@ -9792,22 +9804,22 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmingapsbetweenbuildingchangesform.cpp" line="71"/>
         <location filename="../src/interface/addconstraintteachersmingapsbetweenbuildingchangesform.cpp" line="74"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmingapsbetweenbuildingchangesform.cpp" line="63"/>
         <source>Invalid weight (percentage). It has to be 100</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό). Πρέπει να είναι 100%</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό). Πρέπει να είναι 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmingapsbetweenbuildingchangesform.cpp" line="72"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmingapsbetweenbuildingchangesform.cpp" line="75"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
 </context>
 <context>
@@ -9816,17 +9828,17 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersmingapsbetweenbuildingchangesform_template.ui" line="14"/>
         <source>Add teachers min gaps between building changes</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικοί - ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmingapsbetweenbuildingchangesform_template.ui" line="22"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmingapsbetweenbuildingchangesform_template.ui" line="29"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersmingapsbetweenbuildingchangesform_template.ui" line="46"/>
@@ -9836,7 +9848,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersmingapsbetweenbuildingchangesform_template.ui" line="67"/>
         <source>Min gaps between building changes</source>
-        <translation type="unfinished">Ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου</translation>
+        <translation>Ελάχιστα κενά ανάμεσα στις αλλαγές κτιρίου</translation>
     </message>
 </context>
 <context>
@@ -9849,37 +9861,37 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersminhoursdailyform.cpp" line="90"/>
         <location filename="../src/interface/addconstraintteachersminhoursdailyform.cpp" line="102"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminhoursdailyform.cpp" line="66"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminhoursdailyform.cpp" line="71"/>
         <source>Invalid weight (percentage) - must be 100%</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminhoursdailyform.cpp" line="76"/>
         <source>Allow empty days check box must be checked. If you need to not allow empty days for the teachers, please use the constraint teachers min days per week</source>
-        <translation type="unfinished"></translation>
+        <translation>Πρέπει να τσεκάρετε το πλαίσιο ελέγχου &quot;κενές ημέρες - επιτρεπτές&quot;. Αν δεν θέλετε να επιτρέπονται οι κενές ημέρες για τους εκπαιδευτικούς, παρακαλώ χρησιμοποιείστε τον περιορισμό &quot;εκπαιδευτικοί - ελάχιστες ημέρες ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminhoursdailyform.cpp" line="88"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminhoursdailyform.cpp" line="91"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminhoursdailyform.cpp" line="102"/>
         <source>This check box must remain checked. If you really need to not allow empty days for the teachers, please use constraint teachers min days per week</source>
-        <translation type="unfinished"></translation>
+        <translation>Το συγκεκριμένο πλαίσιο ελέγχου πρέπει να παραμείνει τσεκαρισμένο. Αν πραγματικά δεν θέλετε να επιτρέπονται οι κενές ημέρες για τους εκπαιδευτικούς, παρακαλώ χρησιμοποιείστε τον περιορισμό &quot;εκπαιδευτικοί - ελάχιστες ημέρες ανά εβδομάδα&quot;</translation>
     </message>
 </context>
 <context>
@@ -9887,28 +9899,28 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersminhoursdailyform_template.ui" line="113"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminhoursdailyform_template.ui" line="120"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminhoursdailyform_template.ui" line="84"/>
         <source>Min hours daily</source>
-        <translation type="unfinished"></translation>
+        <translation>Ελάχιστες ώρες ημερησίως</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminhoursdailyform_template.ui" line="14"/>
         <source>Add teachers min hours daily</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικοί - ελάχιστες ώρες ημερησίως&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminhoursdailyform_template.ui" line="32"/>
         <source>It is recommended to start with 2 min hours. Maybe you could try higher values after that, but they might be too large and you might get a impossible timetable.</source>
-        <translation type="unfinished"></translation>
+        <translation>Συνιστάται να ξεκινήσετε με 2 &quot;ελάχιστες ώρες ανά ημέρα&quot;. Πιθανώς, στη συνέχεια να δοκιμάσετε μεγαλύτερες τιμές, αλλά στην περίπτωση που οι τιμές αυτές είναι υπερβολικά μεγάλες, υπάρχει το ενδεχόμενο να καταστεί αδύνατη η εξεύρεση λύσης (η δημιουργία ωρολογίου προγράμματος).</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminhoursdailyform_template.ui" line="61"/>
@@ -9918,7 +9930,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersminhoursdailyform_template.ui" line="101"/>
         <source>Allow empty days</source>
-        <translation type="unfinished">Κενές ημέρες - επιτρεπτές</translation>
+        <translation>Κενές ημέρες - επιτρεπτές</translation>
     </message>
 </context>
 <context>
@@ -9929,27 +9941,27 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersminrestinghoursform.cpp" line="77"/>
         <location filename="../src/interface/addconstraintteachersminrestinghoursform.cpp" line="80"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminrestinghoursform.cpp" line="64"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminrestinghoursform.cpp" line="69"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminrestinghoursform.cpp" line="78"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminrestinghoursform.cpp" line="81"/>
         <source>Constraint NOT added - please report error</source>
-        <translation type="unfinished">Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
+        <translation>Περιορισμός ΔΕΝ προστέθηκε - παρακαλώ ενημερώστε για το σφάλμα</translation>
     </message>
 </context>
 <context>
@@ -9958,12 +9970,12 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintteachersminrestinghoursform_template.ui" line="14"/>
         <source>Add teachers min resting hours</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Εκπαιδευτικοί - ελάχιστες ώρες ανάπαυσης&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminrestinghoursform_template.ui" line="22"/>
         <source>Min resting hours</source>
-        <translation type="unfinished">Ελάχιστες ώρες ανάπαυσης</translation>
+        <translation>Ελάχιστες ώρες ανάπαυσης</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminrestinghoursform_template.ui" line="45"/>
@@ -9973,17 +9985,17 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addconstraintteachersminrestinghoursform_template.ui" line="66"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminrestinghoursform_template.ui" line="73"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintteachersminrestinghoursform_template.ui" line="82"/>
         <source>Circular</source>
-        <translation type="unfinished">Κυκλικά</translation>
+        <translation>Κυκλικά</translation>
     </message>
 </context>
 <context>
@@ -9997,34 +10009,34 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="238"/>
         <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="241"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="188"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="198"/>
         <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="210"/>
         <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="222"/>
         <source>Invalid activity</source>
-        <translation type="unfinished">Μη αποδεκτή δραστηριότητα</translation>
+        <translation>Μη αποδεκτή δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="230"/>
         <source>Same activities - impossible</source>
-        <translation type="unfinished"></translation>
+        <translation>Ίδιες δραστηριότητες - αδύνατον</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="239"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintthreeactivitiesgroupedform.cpp" line="242"/>
         <source>Constraint NOT added - error?</source>
-        <translation type="unfinished"></translation>
+        <translation>Περιορισμός δεν προστέθηκε - σφάλμα;</translation>
     </message>
 </context>
 <context>
@@ -10033,63 +10045,64 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstraintthreeactivitiesgroupedform_template.ui" line="14"/>
         <source>Add three activities grouped</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Τρεις δραστηριότητες - ομαδοποιημένες&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintthreeactivitiesgroupedform_template.ui" line="89"/>
         <source>First activity</source>
-        <translation type="unfinished"></translation>
+        <translation>Πρώτη δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintthreeactivitiesgroupedform_template.ui" line="125"/>
         <source>Second activity</source>
-        <translation type="unfinished"></translation>
+        <translation>Δεύτερη δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintthreeactivitiesgroupedform_template.ui" line="20"/>
         <source>Filter</source>
-        <translation type="unfinished">Φίλτρο</translation>
+        <translation>Φίλτρο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintthreeactivitiesgroupedform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation type="unfinished">Ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintthreeactivitiesgroupedform_template.ui" line="26"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintthreeactivitiesgroupedform_template.ui" line="52"/>
         <source>Subject</source>
-        <translation type="unfinished">Αντικείμενο</translation>
+        <translation>Αντικείμενο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintthreeactivitiesgroupedform_template.ui" line="62"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Ετικέτα δραστηριότητας</translation>
+        <translation>Ετικέτα δραστηριότητας</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintthreeactivitiesgroupedform_template.ui" line="161"/>
         <source>Third activity</source>
-        <translation type="unfinished"></translation>
+        <translation>Τρίτη δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintthreeactivitiesgroupedform_template.ui" line="238"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintthreeactivitiesgroupedform_template.ui" line="245"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintthreeactivitiesgroupedform_template.ui" line="216"/>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
-        <translation type="unfinished"></translation>
+        <translation>Βαρύτητα (ποσοστό)
+Προτεινόμενο: 0.0%-100.0%</translation>
     </message>
 </context>
 <context>
@@ -10102,33 +10115,33 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="225"/>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="228"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="187"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="197"/>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="209"/>
         <source>Invalid activity</source>
-        <translation type="unfinished">Μη αποδεκτή δραστηριότητα</translation>
+        <translation>Μη αποδεκτή δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="217"/>
         <source>Same activities - impossible</source>
-        <translation type="unfinished"></translation>
+        <translation>Ίδιες δραστηριότητες - αδύνατον</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="226"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform.cpp" line="229"/>
         <source>Constraint NOT added - error?</source>
-        <translation type="unfinished"></translation>
+        <translation>Περιορισμός δεν προστέθηκε - σφάλμα;</translation>
     </message>
 </context>
 <context>
@@ -10137,64 +10150,65 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="14"/>
         <source>Add two activities consecutive</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Δύο δραστηριότητες - διαδοχικές&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="206"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="213"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="177"/>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
-        <translation type="unfinished"></translation>
+        <translation>Βαρύτητα (ποσοστό)
+Προτεινόμενο: 0.0%-100.0%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="89"/>
         <source>First activity</source>
-        <translation type="unfinished"></translation>
+        <translation>Πρώτη δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="125"/>
         <source>Second activity</source>
-        <translation type="unfinished"></translation>
+        <translation>Δεύτερη δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="199"/>
         <source>Swap</source>
         <comment>Interchange (swap) the two selected activities in the dialog</comment>
-        <translation type="unfinished"></translation>
+        <translation>Αντιμετάθεση</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="20"/>
         <source>Filter</source>
-        <translation type="unfinished">Φίλτρο</translation>
+        <translation>Φίλτρο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation type="unfinished">Ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="26"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="52"/>
         <source>Subject</source>
-        <translation type="unfinished">Αντικείμενο</translation>
+        <translation>Αντικείμενο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesconsecutiveform_template.ui" line="62"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Ετικέτα δραστηριότητας</translation>
+        <translation>Ετικέτα δραστηριότητας</translation>
     </message>
 </context>
 <context>
@@ -10207,33 +10221,33 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="223"/>
         <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="226"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="185"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="195"/>
         <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="207"/>
         <source>Invalid activity</source>
-        <translation type="unfinished">Μη αποδεκτή δραστηριότητα</translation>
+        <translation>Μη αποδεκτή δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="215"/>
         <source>Same activities - impossible</source>
-        <translation type="unfinished"></translation>
+        <translation>Ίδιες δραστηριότητες - αδύνατον</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="224"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesgroupedform.cpp" line="227"/>
         <source>Constraint NOT added - error?</source>
-        <translation type="unfinished"></translation>
+        <translation>Περιορισμός δεν προστέθηκε - σφάλμα;</translation>
     </message>
 </context>
 <context>
@@ -10242,58 +10256,59 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstrainttwoactivitiesgroupedform_template.ui" line="14"/>
         <source>Add two activities grouped</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Δύο δραστηριότητες - ομαδοποιημένες&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesgroupedform_template.ui" line="199"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesgroupedform_template.ui" line="206"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesgroupedform_template.ui" line="177"/>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
-        <translation type="unfinished"></translation>
+        <translation>Βαρύτητα (ποσοστό)
+Προτεινόμενο: 0.0%-100.0%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesgroupedform_template.ui" line="89"/>
         <source>First activity</source>
-        <translation type="unfinished"></translation>
+        <translation>Πρώτη δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesgroupedform_template.ui" line="125"/>
         <source>Second activity</source>
-        <translation type="unfinished"></translation>
+        <translation>Δεύτερη δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesgroupedform_template.ui" line="20"/>
         <source>Filter</source>
-        <translation type="unfinished">Φίλτρο</translation>
+        <translation>Φίλτρο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesgroupedform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation type="unfinished">Ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesgroupedform_template.ui" line="26"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesgroupedform_template.ui" line="52"/>
         <source>Subject</source>
-        <translation type="unfinished">Αντικείμενο</translation>
+        <translation>Αντικείμενο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesgroupedform_template.ui" line="62"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Ετικέτα δραστηριότητας</translation>
+        <translation>Ετικέτα δραστηριότητας</translation>
     </message>
 </context>
 <context>
@@ -10306,33 +10321,33 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="225"/>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="228"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="187"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="197"/>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="209"/>
         <source>Invalid activity</source>
-        <translation type="unfinished">Μη αποδεκτή δραστηριότητα</translation>
+        <translation>Μη αποδεκτή δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="217"/>
         <source>Same activities - impossible</source>
-        <translation type="unfinished"></translation>
+        <translation>Ίδιες δραστηριότητες - αδύνατον</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="226"/>
         <source>Constraint added:</source>
-        <translation type="unfinished">Περιορισμός προστέθηκε:</translation>
+        <translation>Περιορισμός προστέθηκε:</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform.cpp" line="229"/>
         <source>Constraint NOT added - error?</source>
-        <translation type="unfinished"></translation>
+        <translation>Περιορισμός δεν προστέθηκε - σφάλμα;</translation>
     </message>
 </context>
 <context>
@@ -10341,64 +10356,65 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="14"/>
         <source>Add two activities ordered</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Δύο δραστηριότητες - διατεταγμένες&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="206"/>
         <source>Add constraint</source>
-        <translation type="unfinished">Προσθήκη περιορισμού</translation>
+        <translation>Προσθήκη περιορισμού</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="213"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="177"/>
         <source>Weight percentage
 (recommended: 0.0%-100.0%)</source>
-        <translation type="unfinished"></translation>
+        <translation>Βαρύτητα (ποσοστό)
+Προτεινόμενο: 0.0%-100.0%</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="89"/>
         <source>First activity</source>
-        <translation type="unfinished"></translation>
+        <translation>Πρώτη δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="125"/>
         <source>Second activity</source>
-        <translation type="unfinished"></translation>
+        <translation>Δεύτερη δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="199"/>
         <source>Swap</source>
         <comment>Interchange (swap) the two selected activities in the dialog</comment>
-        <translation type="unfinished"></translation>
+        <translation>Αντιμετάθεση</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="20"/>
         <source>Filter</source>
-        <translation type="unfinished">Φίλτρο</translation>
+        <translation>Φίλτρο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation type="unfinished">Ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="26"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="52"/>
         <source>Subject</source>
-        <translation type="unfinished">Αντικείμενο</translation>
+        <translation>Αντικείμενο</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstrainttwoactivitiesorderedform_template.ui" line="62"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Ετικέτα δραστηριότητας</translation>
+        <translation>Ετικέτα δραστηριότητας</translation>
     </message>
 </context>
 <context>
@@ -10408,22 +10424,22 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform.cpp" line="182"/>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform.cpp" line="223"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform.cpp" line="178"/>
         <source>Empty list of selected activities</source>
-        <translation type="unfinished">Κενή λίστα επιλεγμένων δραστηριοτήτων</translation>
+        <translation>Κενή λίστα επιλεγμένων δραστηριοτήτων</translation>
     </message>
     <message>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform.cpp" line="183"/>
         <source>Only one selected activity</source>
-        <translation type="unfinished">Μόνον μία επιλεγμένη δραστηριότητα</translation>
+        <translation>Μόνον μία επιλεγμένη δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform.cpp" line="220"/>
         <source>Added group activities in initial order item</source>
-        <translation type="unfinished"></translation>
+        <translation>Προστέθηκε στοιχείο αναφορικά με την ομαδοποίηση δραστηριοτήτων στο αρχικό στάδιο</translation>
     </message>
 </context>
 <context>
@@ -10432,64 +10448,64 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform_template.ui" line="14"/>
         <source>Add group activities in initial order item</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη: &quot;Ομαδοποίηση δραστηριοτήτων στο αρχικό στάδιο - στοιχείο&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform_template.ui" line="20"/>
         <source>Filter</source>
-        <translation type="unfinished">Φίλτρο</translation>
+        <translation>Φίλτρο</translation>
     </message>
     <message>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform_template.ui" line="26"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation type="unfinished">Ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform_template.ui" line="46"/>
         <source>Subject</source>
-        <translation type="unfinished">Αντικείμενο</translation>
+        <translation>Αντικείμενο</translation>
     </message>
     <message>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform_template.ui" line="56"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Ετικέτα δραστηριότητας</translation>
+        <translation>Ετικέτα δραστηριότητας</translation>
     </message>
     <message>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform_template.ui" line="91"/>
         <source>Activities</source>
-        <translation type="unfinished">Δραστηριότητες</translation>
+        <translation>Δραστηριότητες</translation>
     </message>
     <message>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform_template.ui" line="104"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished"></translation>
+        <translation>Όλες</translation>
     </message>
     <message>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform_template.ui" line="121"/>
         <source>Selected</source>
         <comment>It refers to a list of selected activities</comment>
-        <translation type="unfinished"></translation>
+        <translation>Επιλεγμένες</translation>
     </message>
     <message>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform_template.ui" line="134"/>
         <source>Clear</source>
-        <translation type="unfinished">Καθαρισμός</translation>
+        <translation>Καθαρισμός</translation>
     </message>
     <message>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform_template.ui" line="154"/>
         <source>Add item</source>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη στοιχείου</translation>
     </message>
     <message>
         <location filename="../src/interface/addgroupactivitiesininitialorderitemform_template.ui" line="161"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
 </context>
 <context>
@@ -10498,48 +10514,48 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addroomform.cpp" line="58"/>
         <location filename="../src/interface/addroomform.cpp" line="62"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addroomform.cpp" line="58"/>
         <source>Incorrect name</source>
-        <translation type="unfinished"></translation>
+        <translation>Λάθος όνομα</translation>
     </message>
     <message>
         <location filename="../src/interface/addroomform.cpp" line="62"/>
         <source>Incorrect building</source>
-        <translation type="unfinished"></translation>
+        <translation>Λάθος κτίριο</translation>
     </message>
     <message>
         <location filename="../src/interface/addroomform.cpp" line="70"/>
         <location filename="../src/interface/addroomform.cpp" line="75"/>
         <source>Room insertion dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Διάλογος εισαγωγής αίθουσας</translation>
     </message>
     <message>
         <location filename="../src/interface/addroomform.cpp" line="71"/>
         <source>Could not insert item. Must be a duplicate</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η εισαγωγή στοιχείου. Πιθανότατα υπάρχει ήδη</translation>
     </message>
     <message>
         <location filename="../src/interface/addroomform.cpp" line="76"/>
         <source>Room added</source>
-        <translation type="unfinished"></translation>
+        <translation>Αίθουσα προστέθηκε</translation>
     </message>
     <message>
         <location filename="../src/interface/addroomform.cpp" line="87"/>
         <source>It is advisable to generate the timetable without the rooms (or without rooms&apos; constraints), then, if a solution is possible, to add rooms or rooms&apos; constraints</source>
-        <translation type="unfinished"></translation>
+        <translation>Συνιστάται να δημιουργήσετε αρχικά το ωρολόγιο πρόγραμμά σας χωρίς αίθουσες (ή χωρίς περιορισμούς αιθουσών). Στη συνέχεια, εφόσον η εξεύρεση λύσης είναι εφικτή, μπορείτε να προσθέσετε τις αίθουσες ή τους περιορισμούς αιθουσών</translation>
     </message>
     <message>
         <location filename="../src/interface/addroomform.cpp" line="91"/>
         <source>Please note that each room can hold a single activity at a specified period. If you have a very large room, which can hold more activities at one time, please add more rooms, representing this larger room</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ σημειώστε ότι η κάθε αίθουσα μπορεί να δεχθεί μία και μόνον δραστηριότητα σε μία συγκεκριμένη περίοδο. Αν έχετε μία μεγάλη αίθουσα, η οποία μπορεί να δεχθεί περισσότερες δραστηριότητες ταυτόχρονα, παρακαλώ προσθέστε περισσότερες αίθουσες, έτσι ώστε πρακτικά οι αίθουσες αυτές να ισοδυναμούν με την κατά τα ανωτέρω μεγαλύτερη αίθουσα</translation>
     </message>
     <message>
         <location filename="../src/interface/addroomform.cpp" line="95"/>
         <source>FET - help on adding room(s)</source>
-        <translation type="unfinished"></translation>
+        <translation>FET - Βοήθεια στην προσθήκη αίθουσας (αιθουσών)</translation>
     </message>
 </context>
 <context>
@@ -10547,38 +10563,38 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addroomform_template.ui" line="22"/>
         <source>Name</source>
-        <translation type="unfinished">Όνομα</translation>
+        <translation>Όνομα</translation>
     </message>
     <message>
         <location filename="../src/interface/addroomform_template.ui" line="67"/>
         <source>Capacity</source>
-        <translation type="unfinished"></translation>
+        <translation>Χωρητικότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/addroomform_template.ui" line="14"/>
         <source>Add room</source>
         <extracomment>This is the title of the dialog to add a new room</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη αίθουσας</translation>
     </message>
     <message>
         <location filename="../src/interface/addroomform_template.ui" line="39"/>
         <source>Add</source>
-        <translation type="unfinished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <location filename="../src/interface/addroomform_template.ui" line="49"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addroomform_template.ui" line="56"/>
         <source>Help</source>
-        <translation type="unfinished">Βοήθεια</translation>
+        <translation>Βοήθεια</translation>
     </message>
     <message>
         <location filename="../src/interface/addroomform_template.ui" line="94"/>
         <source>Building</source>
-        <translation type="unfinished"></translation>
+        <translation>Κτίριο</translation>
     </message>
 </context>
 <context>
@@ -10586,12 +10602,12 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addstudentsgroupform.cpp" line="54"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsgroupform.cpp" line="54"/>
         <source>Incorrect name</source>
-        <translation type="unfinished"></translation>
+        <translation>Λάθος όνομα</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsgroupform.cpp" line="61"/>
@@ -10599,52 +10615,52 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addstudentsgroupform.cpp" line="80"/>
         <location filename="../src/interface/addstudentsgroupform.cpp" line="115"/>
         <source>Group insertion dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Διάλογος εισαγωγής τμήματος</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsgroupform.cpp" line="62"/>
         <source>Could not insert item. Duplicate</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η εισαγωγή στοιχείου. Πιθανότατα υπάρχει ήδη</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsgroupform.cpp" line="72"/>
         <source>This name is taken for a year - please consider another name</source>
-        <translation type="unfinished"></translation>
+        <translation>Το όνομα αυτό έχει δεσμευτεί για έτος - παρακαλώ επιλέξτε άλλο όνομα</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsgroupform.cpp" line="81"/>
         <source>This name is taken for a subgroup - please consider another name</source>
-        <translation type="unfinished"></translation>
+        <translation>Το όνομα αυτό έχει δεσμευτεί για υποτμήμα - παρακαλώ επιλέξτε άλλο όνομα</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsgroupform.cpp" line="90"/>
         <source>FET</source>
-        <translation type="unfinished">FET</translation>
+        <translation>FET</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsgroupform.cpp" line="91"/>
         <source>This group already exists, but in another year. If you insert current group to current year, that means that some years share the same group (overlap). If you want to make a new group, independent, please abort now and give it another name.</source>
-        <translation type="unfinished"></translation>
+        <translation>Το συγκεκριμένο τμήμα υπάρχει ήδη, αλλά σε κάποιο άλλο έτος. Αν προχωρήσετε σε εισαγωγή του τρέχοντος τμήματος στο τρέχον έτος, αυτό πρακτικά σημαίνει ότι το συγκεκριμένο τμήμα συμπεριλαμβάνεται σε δύο έτη ταυτόχρονα (δηλαδή υπάρχει αλληλεπικάλυψη ετών). Αν θέλετε να δημιουργήσετε ένα πραγματικά νέο τμήμα (ανεξάρτητο), παρακαλώ διακόψτε τη διαδικασία και επιλέξτε κάποιο άλλο όνομα για το τμήμα.</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsgroupform.cpp" line="95"/>
         <source>Note: the number of students for the added group will be the number of students of the already existing group (you can modify the number of students in the modify group dialog).</source>
-        <translation type="unfinished"></translation>
+        <translation>Σημείωση: ο αριθμός των μαθητών για το τμήμα που προστέθηκε θα είναι ο αριθμός των μαθητών για το ήδη υπάρχον τμήμα (μπορείτε να τροποποιήσετε τον αριθμό των μαθητών από τον διάλογο τροποποίησης τμήματος).</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsgroupform.cpp" line="97"/>
         <source>Add</source>
-        <translation type="unfinished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsgroupform.cpp" line="97"/>
         <source>Abort</source>
-        <translation type="unfinished">Διακοπή</translation>
+        <translation>Διακοπή</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsgroupform.cpp" line="116"/>
         <source>Group added</source>
-        <translation type="unfinished"></translation>
+        <translation>Τμήμα προστέθηκε</translation>
     </message>
 </context>
 <context>
@@ -10652,33 +10668,33 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addstudentsgroupform_template.ui" line="94"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsgroupform_template.ui" line="87"/>
         <source>Add</source>
-        <translation type="unfinished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsgroupform_template.ui" line="14"/>
         <source>Add students group</source>
         <extracomment>This is the title of the dialog to add a students group</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη τμήματος μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsgroupform_template.ui" line="43"/>
         <source>Name</source>
-        <translation type="unfinished">Όνομα</translation>
+        <translation>Όνομα</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsgroupform_template.ui" line="60"/>
         <source>Number of students</source>
-        <translation type="unfinished"></translation>
+        <translation>Αριθμός μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsgroupform_template.ui" line="22"/>
         <source>Year</source>
-        <translation type="unfinished">Έτος</translation>
+        <translation>Έτος</translation>
     </message>
 </context>
 <context>
@@ -10686,12 +10702,12 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addstudentssubgroupform.cpp" line="53"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentssubgroupform.cpp" line="53"/>
         <source>Incorrect name</source>
-        <translation type="unfinished"></translation>
+        <translation>Λάθος όνομα</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentssubgroupform.cpp" line="61"/>
@@ -10699,52 +10715,52 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addstudentssubgroupform.cpp" line="81"/>
         <location filename="../src/interface/addstudentssubgroupform.cpp" line="115"/>
         <source>Subgroup insertion dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Διάλογος εισαγωγής υποτμήματος</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentssubgroupform.cpp" line="62"/>
         <source>Could not insert item. Must be a duplicate</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η εισαγωγή στοιχείου. Πιθανότατα υπάρχει ήδη</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentssubgroupform.cpp" line="73"/>
         <source>This name is taken for a year - please consider another name</source>
-        <translation type="unfinished"></translation>
+        <translation>Το όνομα αυτό έχει δεσμευτεί για έτος - παρακαλώ επιλέξτε άλλο όνομα</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentssubgroupform.cpp" line="82"/>
         <source>This name is taken for a group - please consider another name</source>
-        <translation type="unfinished"></translation>
+        <translation>Το όνομα αυτό έχει δεσμευτεί για τμήμα - παρακαλώ επιλέξτε άλλο όνομα</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentssubgroupform.cpp" line="91"/>
         <source>FET</source>
-        <translation type="unfinished">FET</translation>
+        <translation>FET</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentssubgroupform.cpp" line="92"/>
         <source>This subgroup already exists, but in another group. If you insert current subgroup to current group, that means that some groups share the same subgroup (overlap). If you want to make a new subgroup, independent, please abort now and give it another name.</source>
-        <translation type="unfinished"></translation>
+        <translation>Το συγκεκριμένο υποτμήμα υπάρχει ήδη, αλλά σε κάποιο άλλο τμήμα. Αν προχωρήσετε σε εισαγωγή του τρέχοντος υποτμήματος στο τρέχον τμήμα, αυτό πρακτικά σημαίνει ότι το συγκεκριμένο υποτμήμα συμπεριλαμβάνεται σε δύο τμήματα ταυτόχρονα (δηλαδή υπάρχει αλληλεπικάλυψη τμημάτων). Αν θέλετε να δημιουργήσετε ένα πραγματικά νέο υποτμήμα (ανεξάρτητο), παρακαλώ διακόψτε τη διαδικασία και επιλέξτε κάποιο άλλο όνομα για το υποτμήμα.</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentssubgroupform.cpp" line="96"/>
         <source>Note: the number of students for the added subgroup will be the number of students of the already existing subgroup (you can modify the number of students in the modify subgroup dialog).</source>
-        <translation type="unfinished"></translation>
+        <translation>Σημείωση: ο αριθμός των μαθητών για το υποτμήμα που προστέθηκε θα είναι ο αριθμός των μαθητών για το ήδη υπάρχον υποτμήμα (μπορείτε να τροποποιήσετε τον αριθμό των μαθητών από τον διάλογο τροποποίησης υποτμήματος).</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentssubgroupform.cpp" line="98"/>
         <source>Add</source>
-        <translation type="unfinished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentssubgroupform.cpp" line="98"/>
         <source>Abort</source>
-        <translation type="unfinished">Διακοπή</translation>
+        <translation>Διακοπή</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentssubgroupform.cpp" line="116"/>
         <source>Subgroup added</source>
-        <translation type="unfinished"></translation>
+        <translation>Υποτμήμα προστέθηκε</translation>
     </message>
 </context>
 <context>
@@ -10752,38 +10768,38 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addstudentssubgroupform_template.ui" line="22"/>
         <source>Year</source>
-        <translation type="unfinished">Έτος</translation>
+        <translation>Έτος</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentssubgroupform_template.ui" line="115"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentssubgroupform_template.ui" line="108"/>
         <source>Add</source>
-        <translation type="unfinished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentssubgroupform_template.ui" line="81"/>
         <source>Number of students</source>
-        <translation type="unfinished"></translation>
+        <translation>Αριθμός μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentssubgroupform_template.ui" line="64"/>
         <source>Name</source>
-        <translation type="unfinished">Όνομα</translation>
+        <translation>Όνομα</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentssubgroupform_template.ui" line="14"/>
         <source>Add students subgroup</source>
         <extracomment>The title of the dialog to add a students subgroup</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη υποτμήματος μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentssubgroupform_template.ui" line="43"/>
         <source>Group</source>
-        <translation type="unfinished">Τμήμα</translation>
+        <translation>Τμήμα</translation>
     </message>
 </context>
 <context>
@@ -10791,12 +10807,12 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/addstudentsyearform.cpp" line="50"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsyearform.cpp" line="50"/>
         <source>Incorrect name</source>
-        <translation type="unfinished"></translation>
+        <translation>Λάθος όνομα</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsyearform.cpp" line="57"/>
@@ -10805,32 +10821,32 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addstudentsyearform.cpp" line="92"/>
         <location filename="../src/interface/addstudentsyearform.cpp" line="100"/>
         <source>Year insertion dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Διάλογος εισαγωγής έτους</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsyearform.cpp" line="58"/>
         <source>This name is taken for a subgroup - please consider another name</source>
-        <translation type="unfinished"></translation>
+        <translation>Το όνομα αυτό έχει δεσμευτεί για υποτμήμα - παρακαλώ επιλέξτε άλλο όνομα</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsyearform.cpp" line="67"/>
         <source>This name is taken for a group - please consider another name</source>
-        <translation type="unfinished"></translation>
+        <translation>Το όνομα αυτό έχει δεσμευτεί για τμήμα - παρακαλώ επιλέξτε άλλο όνομα</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsyearform.cpp" line="76"/>
         <source>This name is taken for a year - please consider another name</source>
-        <translation type="unfinished"></translation>
+        <translation>Το όνομα αυτό έχει δεσμευτεί για έτος - παρακαλώ επιλέξτε άλλο όνομα</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsyearform.cpp" line="93"/>
         <source>Could not insert item. Must be a duplicate</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η εισαγωγή στοιχείου. Πιθανότατα υπάρχει ήδη</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsyearform.cpp" line="101"/>
         <source>Year added. You might want to divide it into sections - this is done in the years dialog - button &apos;Divide year ...&apos;, or by manually adding groups and subgroups in the groups or subgroups menus.</source>
-        <translation type="unfinished"></translation>
+        <translation>Έτος προστέθηκε. Πιθανώς να θέλετε να κατατμήσετε (υποδιαιρέσετε) το έτος. - αυτό γίνεται από τον διάλογο των ετών - κουμπί - &quot;Κατάτμηση έτους...&quot;, ή με χειροκίνητη προσθήκη τμημάτων και υποτμημάτων από τα σχετικά μενού (τμημάτων/υποτμημάτων).</translation>
     </message>
 </context>
 <context>
@@ -10839,27 +10855,27 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/addstudentsyearform_template.ui" line="14"/>
         <source>Add students year</source>
         <extracomment>Title of the dialog of adding a students year</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη έτους μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsyearform_template.ui" line="22"/>
         <source>Name</source>
-        <translation type="unfinished">Όνομα</translation>
+        <translation>Όνομα</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsyearform_template.ui" line="39"/>
         <source>Number of students</source>
-        <translation type="unfinished"></translation>
+        <translation>Αριθμός μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsyearform_template.ui" line="73"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/addstudentsyearform_template.ui" line="66"/>
         <source>Add</source>
-        <translation type="unfinished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
 </context>
 <context>
@@ -10867,83 +10883,83 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/advancedfilterform.cpp" line="34"/>
         <source>Advanced filter for constraints</source>
-        <translation type="unfinished"></translation>
+        <translation>Προηγμένο φίλτρο για περιορισμούς</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedfilterform.cpp" line="56"/>
         <source>Description</source>
-        <translation type="unfinished"></translation>
+        <translation>Περιγραφή</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedfilterform.cpp" line="57"/>
         <source>Detailed description</source>
-        <translation type="unfinished"></translation>
+        <translation>Αναλυτική περιγραφή</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedfilterform.cpp" line="64"/>
         <source>Contains</source>
         <comment>A text string contains other substring</comment>
-        <translation type="unfinished"></translation>
+        <translation>Συμπεριλαμβάνει</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedfilterform.cpp" line="65"/>
         <source>Does not contain</source>
         <comment>A text string does not contain other substring</comment>
-        <translation type="unfinished"></translation>
+        <translation>Δεν συμπεριλαμβάνει</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedfilterform.cpp" line="66"/>
         <source>Matches regular expr.</source>
         <comment>A text string matches a regular expression (regexp). Regular expressions are a complex notion, see definition on the internet if you don&apos;t know about them or how to translate the words.  
 Definition from Wikipedia: &apos;In computing, regular expressions, also referred to as regex or regexp, provide a concise and flexible means for identifying strings of text, such as particular characters, words, or patterns of characters. A regular expression is written in a formal language that can be interpreted by a regular expression processor, a program that either serves as a parser generator or examines text and identifies parts that match the provided specification.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Ταιριάζει με κανονική παράσταση</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedfilterform.cpp" line="72"/>
         <source>Does not match reg. expr.</source>
         <comment>A text string does not match a regular expression (regexp). Regular expressions are a complex notion, see definition on the internet if you don&apos;t know about them or how to translate the words.  
 Definition from Wikipedia: &apos;In computing, regular expressions, also referred to as regex or regexp, provide a concise and flexible means for identifying strings of text, such as particular characters, words, or patterns of characters. A regular expression is written in a formal language that can be interpreted by a regular expression processor, a program that either serves as a parser generator or examines text and identifies parts that match the provided specification.</comment>
-        <translation type="unfinished"></translation>
+        <translation>Δεν ταιριάζει με κανονική παράσταση</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedfilterform.cpp" line="109"/>
         <source>More</source>
-        <translation type="unfinished"></translation>
+        <translation>Περισσότερα</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedfilterform.cpp" line="110"/>
         <source>Fewer</source>
-        <translation type="unfinished"></translation>
+        <translation>Λιγότερα</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedfilterform.cpp" line="118"/>
         <source>Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Επαναφορά</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedfilterform.cpp" line="119"/>
         <source>OK</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedfilterform.cpp" line="121"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedfilterform.cpp" line="43"/>
         <source>Case sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>Διάκριση πεζών/κεφαλαίων</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedfilterform.cpp" line="36"/>
         <source>Match all of the following:</source>
-        <translation type="unfinished"></translation>
+        <translation>Περιορισμοί - Ταιριάζουν με όλα τα παρακάτω κριτήρια:</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedfilterform.cpp" line="37"/>
         <source>Match any of the following:</source>
-        <translation type="unfinished"></translation>
+        <translation>Περιορισμοί - Ταιριάζουν με οποιοδήποτε από τα παρακάτω κριτήρια:</translation>
     </message>
 </context>
 <context>
@@ -10951,17 +10967,17 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="82"/>
         <source>FET - Lock activities of a day</source>
-        <translation type="unfinished"></translation>
+        <translation>FET - Κλείδωμα δραστηριοτήτων μίας ημέρας</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="88"/>
         <source>All activities of the selected day will be locked</source>
-        <translation type="unfinished"></translation>
+        <translation>Όλες οι δραστηριότητες της επιλεγμένης ημέρας θα κλειδωθούν</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="88"/>
         <source>Please select the day to lock:</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ επιλέξτε την ημέρα προς κλείδωμα:</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="99"/>
@@ -10981,7 +10997,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1988"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2168"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="100"/>
@@ -11001,14 +11017,14 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1989"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2169"/>
         <source>OK</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="109"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="648"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1195"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation>Κλείδωμα</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="115"/>
@@ -11020,7 +11036,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1713"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2004"/>
         <source>Time</source>
-        <translation type="unfinished">Χρόνος</translation>
+        <translation>Χρόνος</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="118"/>
@@ -11032,7 +11048,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1716"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2007"/>
         <source>Space</source>
-        <translation type="unfinished">Χώρος</translation>
+        <translation>Χώρος</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="248"/>
@@ -11051,28 +11067,28 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/advancedlockunlockform.cpp" line="831"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1352"/>
         <source>These time constraints will be added</source>
-        <translation type="unfinished"></translation>
+        <translation>Αυτοί οι χρονικοί περιορισμοί θα προστεθούν</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="278"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="840"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1361"/>
         <source>These time constraints will NOT be added</source>
-        <translation type="unfinished"></translation>
+        <translation>Αυτοί οι χρονικοί περιορισμοί ΔΕΝ θα προστεθούν</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="287"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="849"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1370"/>
         <source>These space constraints will be added</source>
-        <translation type="unfinished"></translation>
+        <translation>Αυτοί οι χωρικοί περιορισμοί θα προστεθούν</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="296"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="858"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1379"/>
         <source>These space constraints will NOT be added</source>
-        <translation type="unfinished"></translation>
+        <translation>Αυτοί οι χωρικοί περιορισμοί ΔΕΝ θα προστεθούν</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="345"/>
@@ -11084,32 +11100,32 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1948"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2257"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="345"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="907"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1428"/>
         <source>There were added %1 locking time constraints and %2 locking space constraints. There were not added %3 locking time constraints and %4 locking space constraints, because these activities were already locked</source>
-        <translation type="unfinished"></translation>
+        <translation>Προστέθηκαν %1 περιορισμοί χρονικού κλειδώματος και %2 περιοριμσοί χωρικού κλειδώματος. Δεν προστέθηκαν  %3 περιορισμοί χρονικού κλειδώματος και %4 περιορισμοί χωρικού κλειδώματος, διότι οι δραστηριότητες αυτές ήταν ήδη κλειδωμένες</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="366"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1971"/>
         <source>FET - Unlock activities of a day</source>
-        <translation type="unfinished"></translation>
+        <translation>FET - Ξελείδωμα δραστηριοτήτων μίας ημέρας</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="372"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1977"/>
         <source>All activities of the selected day will be unlocked (those which are not permanently locked)</source>
-        <translation type="unfinished"></translation>
+        <translation>Όλες οι δραστηριότητες της επιλεγμένης ημέρας θα ξεκλειδωθούν (αφορά αυτές που δεν είναι μόνιμα κλειδωμένες)</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="372"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1977"/>
         <source>Please select the day to unlock:</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ επιλέξτε την ημέρα προς ξεκλείδωμα:</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="393"/>
@@ -11118,7 +11134,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1707"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1998"/>
         <source>Unlock</source>
-        <translation type="unfinished"></translation>
+        <translation>Ξεκλείδωμα</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="541"/>
@@ -11127,7 +11143,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1876"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2185"/>
         <source>These time constraints will be removed</source>
-        <translation type="unfinished"></translation>
+        <translation>Αυτοί οι χρονικοί περιορισμοί θα διαγραφούν</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="550"/>
@@ -11136,7 +11152,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1885"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2194"/>
         <source>These time constraints will NOT be removed</source>
-        <translation type="unfinished"></translation>
+        <translation>Αυτοί οι χρονικοί περιορισμοί ΔΕΝ θα διαγραφούν</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="559"/>
@@ -11145,7 +11161,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1894"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2203"/>
         <source>These space constraints will be removed</source>
-        <translation type="unfinished"></translation>
+        <translation>Αυτοί οι χωρικοί περιορισμοί θα διαγραφούν</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="568"/>
@@ -11154,7 +11170,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1903"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2212"/>
         <source>These space constraints will NOT be removed</source>
-        <translation type="unfinished"></translation>
+        <translation>Αυτοί οι χωρικοί περιορισμοί ΔΕΝ θα διαγραφούν</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="613"/>
@@ -11163,57 +11179,57 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1948"/>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="2257"/>
         <source>There were removed %1 locking time constraints and %2 locking space constraints. There were not removed %3 locking time constraints and %4 locking space constraints, because these activities were permanently locked</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαγράφηκαν %1 περιορισμοί χρονικού κλειδώματος και %2 περιοριμσοί χωρικού κλειδώματος. Δεν διαγράφηκαν %3 περιορισμοί χρονικού κλειδώματος και %4 περιορισμοί χωρικού κλειδώματος, διότι οι δραστηριότητες αυτές ήταν μόνιμα κλειδωμένες</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="629"/>
         <source>FET - Lock all activities which end each students set&apos;s day</source>
-        <translation type="unfinished"></translation>
+        <translation>FET - Κλείδωμα όλων των δραστηριοτήτων που &quot;κλείνουν&quot; την ημέρα κάθε ομάδας μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="635"/>
         <source>All activities which end each students set&apos;s day will be locked</source>
-        <translation type="unfinished"></translation>
+        <translation>Όλες οι δραστηριότητες που &quot;κλείνουν&quot; την ημέρα κάθε ομάδας μαθητών θα κλειδωθούν</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="923"/>
         <source>FET - Unlock all activities which end each students set&apos;s day</source>
-        <translation type="unfinished"></translation>
+        <translation>FET - Ξεκλείδωμα όλων των δραστηριοτήτων που &quot;κλείνουν&quot; την ημέρα κάθε ομάδας μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="929"/>
         <source>All activities which end each students set&apos;s day will be unlocked</source>
-        <translation type="unfinished"></translation>
+        <translation>Όλες οι δραστηριότητες που &quot;κλείνουν&quot; την ημέρα κάθε ομάδας μαθητών θα ξεκλειδωθούν</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1176"/>
         <source>FET - Lock all activities in the timetable</source>
-        <translation type="unfinished"></translation>
+        <translation>FET - Ξεκλείδωμα όλων των δραστηριότητων του ωρολογίου προγράμματος</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1182"/>
         <source>All activities in the current timetable will be locked</source>
-        <translation type="unfinished"></translation>
+        <translation>Όλες οι δραστηριότητες στο τρέχον ωρολόγιο πρόγραμμα θα κλειδωθούν</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1446"/>
         <source>FET - Unlock all activities of the current timetable</source>
-        <translation type="unfinished"></translation>
+        <translation>FET - Ξεκλείδωμα όλων των δραστηριοτήτων στο τρέχον ωρολόγιο πρόγραμμα</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1452"/>
         <source>All activities of the current timetable will be unlocked (those which are not permanently locked)</source>
-        <translation type="unfinished"></translation>
+        <translation>Όλες οι δραστηριότητες στο τρέχον ωρολόγιο πρόγραμμα θα ξεκλειδωθούν (αφορά αυτές που δεν είναι μόνιμα κλειδωμένες)</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1688"/>
         <source>FET - Unlock all activities without a generated timetable</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FET - Ξεκλείδωμα όλων των δραστηριοτήτων χωρίς να έχει δημιουργηθεί ωρολόγιο πρόγραμμα</translation>
     </message>
     <message>
         <location filename="../src/interface/advancedlockunlockform.cpp" line="1694"/>
         <source>All activities will be unlocked (those which are not permanently locked)</source>
-        <translation type="unfinished"></translation>
+        <translation>Όλες οι δραστηριότητες θα ξεκλειδωθούν (αφορά αυτές που δεν είναι μόνιμα κλειδωμένες)</translation>
     </message>
 </context>
 <context>
@@ -11614,29 +11630,29 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/building.cpp" line="37"/>
         <source>N:%1</source>
         <comment>The name of the building</comment>
-        <translation type="unfinished"></translation>
+        <translation>Ο:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/building.cpp" line="41"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation type="unfinished">Σ: %1</translation>
+        <translation>Σ: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/building.cpp" line="48"/>
         <source>Building</source>
-        <translation type="unfinished"></translation>
+        <translation>Κτίριο</translation>
     </message>
     <message>
         <location filename="../src/engine/building.cpp" line="50"/>
         <source>Name=%1</source>
         <comment>The name of the building</comment>
-        <translation type="unfinished"></translation>
+        <translation>Όνομα=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/building.cpp" line="55"/>
         <source>Comments=%1</source>
-        <translation type="unfinished">Σχόλια=%1</translation>
+        <translation>Σχόλια=%1</translation>
     </message>
 </context>
 <context>
@@ -11646,49 +11662,49 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/buildingsform.cpp" line="254"/>
         <location filename="../src/interface/buildingsform.cpp" line="279"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/buildingsform.cpp" line="125"/>
         <location filename="../src/interface/buildingsform.cpp" line="254"/>
         <location filename="../src/interface/buildingsform.cpp" line="279"/>
         <source>Invalid selected building</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτή επιλογή κτιρίου</translation>
     </message>
     <message>
         <location filename="../src/interface/buildingsform.cpp" line="132"/>
         <source>FET</source>
-        <translation type="unfinished">FET</translation>
+        <translation>FET</translation>
     </message>
     <message>
         <location filename="../src/interface/buildingsform.cpp" line="133"/>
         <source>Are you sure you want to delete this building?</source>
-        <translation type="unfinished"></translation>
+        <translation>Είστε σίγουροι ότι θέλετε να διαγράψετε αυτό το κτίριο;</translation>
     </message>
     <message>
         <location filename="../src/interface/buildingsform.cpp" line="134"/>
         <source>Yes</source>
-        <translation type="unfinished">Ναι</translation>
+        <translation>Ναι</translation>
     </message>
     <message>
         <location filename="../src/interface/buildingsform.cpp" line="134"/>
         <source>No</source>
-        <translation type="unfinished">Όχι</translation>
+        <translation>Όχι</translation>
     </message>
     <message>
         <location filename="../src/interface/buildingsform.cpp" line="288"/>
         <source>Building comments</source>
-        <translation type="unfinished"></translation>
+        <translation>Κτίριο - Σχόλια</translation>
     </message>
     <message>
         <location filename="../src/interface/buildingsform.cpp" line="290"/>
         <source>OK</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/buildingsform.cpp" line="292"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
 </context>
 <context>
@@ -11697,49 +11713,49 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/buildingsform_template.ui" line="14"/>
         <source>Buildings</source>
         <extracomment>The dialog to list all buildings</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Κτίρια</translation>
     </message>
     <message>
         <location filename="../src/interface/buildingsform_template.ui" line="37"/>
         <source>Add</source>
-        <translation type="unfinished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <location filename="../src/interface/buildingsform_template.ui" line="51"/>
         <source>Remove</source>
-        <translation type="unfinished">Διαγραφή</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <location filename="../src/interface/buildingsform_template.ui" line="62"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished">Πάνω</translation>
+        <translation>Πάνω</translation>
     </message>
     <message>
         <location filename="../src/interface/buildingsform_template.ui" line="69"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished">Κάτω</translation>
+        <translation>Κάτω</translation>
     </message>
     <message>
         <location filename="../src/interface/buildingsform_template.ui" line="76"/>
         <source>Comments</source>
-        <translation type="unfinished">Σχόλια</translation>
+        <translation>Σχόλια</translation>
     </message>
     <message>
         <location filename="../src/interface/buildingsform_template.ui" line="87"/>
         <source>Sort</source>
-        <translation type="unfinished">Ταξινόμηση</translation>
+        <translation>Ταξινόμηση</translation>
     </message>
     <message>
         <location filename="../src/interface/buildingsform_template.ui" line="94"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/buildingsform_template.ui" line="44"/>
         <source>Modify</source>
-        <translation type="unfinished">Τροποποίηση</translation>
+        <translation>Τροποποίηση</translation>
     </message>
 </context>
 <context>
@@ -11806,69 +11822,69 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/changemindaysselectivelyform_template.ui" line="14"/>
         <source>Change more constraints min days between activities</source>
-        <translation type="unfinished"></translation>
+        <translation>Τροποποίηση περισσοτέρων περιορισμών &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/changemindaysselectivelyform_template.ui" line="26"/>
         <source>Please input old values (filters) and the new values. All old values (weight, min days and consecutive if same day) of corresponding constraints will be changed to the new ones. New weight is recommended at least 95.0 (or -1)</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ να εισαγάγετε τις παλιές τιμές (φίλτρα) καθώς και τις νέες. Όλες οι παλιές τιμές (βαρύτητα, &quot;ελάχιστες ημέρες&quot; και &quot;αν την ίδια ημέρα - διαδοχικές&quot;) των αντίστοιχων περιορισμών θα αντικατασταθούν με τις νέες τιμές. Το νέο προτεινόμενο ποσοστό για την βαρύτητα είναι τουλάχιστον 95.0% (ή -1)</translation>
     </message>
     <message>
         <location filename="../src/interface/changemindaysselectivelyform_template.ui" line="49"/>
         <source>Old values (filter)</source>
-        <translation type="unfinished"></translation>
+        <translation>Παλιές τιμές (Φίλτρο)</translation>
     </message>
     <message>
         <location filename="../src/interface/changemindaysselectivelyform_template.ui" line="55"/>
         <source>Weight (-1 = any)</source>
-        <translation type="unfinished"></translation>
+        <translation>Βαρύτητα (-1 = οποιοδήποτε)</translation>
     </message>
     <message>
         <location filename="../src/interface/changemindaysselectivelyform_template.ui" line="62"/>
         <location filename="../src/interface/changemindaysselectivelyform_template.ui" line="129"/>
         <source>-1</source>
-        <translation type="unfinished"></translation>
+        <translation>-1</translation>
     </message>
     <message>
         <location filename="../src/interface/changemindaysselectivelyform_template.ui" line="69"/>
         <source>Min days (-1 = any)</source>
-        <translation type="unfinished"></translation>
+        <translation>Ελάχιστες ημέρες (-1 = οσεσδήποτε)</translation>
     </message>
     <message>
         <location filename="../src/interface/changemindaysselectivelyform_template.ui" line="86"/>
         <location filename="../src/interface/changemindaysselectivelyform_template.ui" line="153"/>
         <source>Consecutive if same day</source>
-        <translation type="unfinished"></translation>
+        <translation>Αν την ίδια ημέρα - συνεχόμενες</translation>
     </message>
     <message>
         <location filename="../src/interface/changemindaysselectivelyform_template.ui" line="96"/>
         <source>N activities (-1 = any)</source>
-        <translation type="unfinished"></translation>
+        <translation>Ν δραστηριότητες (-1 = οσεσδήποτε)</translation>
     </message>
     <message>
         <location filename="../src/interface/changemindaysselectivelyform_template.ui" line="116"/>
         <source>New values</source>
-        <translation type="unfinished"></translation>
+        <translation>Νέες τιμές</translation>
     </message>
     <message>
         <location filename="../src/interface/changemindaysselectivelyform_template.ui" line="122"/>
         <source>Weight (0.0 to 100.0, -1 to leave unchanged)</source>
-        <translation type="unfinished"></translation>
+        <translation>Βαρύτητα (0.0 έως 100.0, -1 για να μην αλλάξει)</translation>
     </message>
     <message>
         <location filename="../src/interface/changemindaysselectivelyform_template.ui" line="136"/>
         <source>Min days (-1 to leave unchanged)</source>
-        <translation type="unfinished"></translation>
+        <translation>Ελάχιστες ημέρες (-1 για να μην αλλάξει)</translation>
     </message>
     <message>
         <location filename="../src/interface/changemindaysselectivelyform_template.ui" line="194"/>
         <source>OK</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/changemindaysselectivelyform_template.ui" line="204"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
 </context>
 <context>
@@ -11876,17 +11892,17 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/engine/import.cpp" line="144"/>
         <source>FET - Import from CSV file</source>
-        <translation type="unfinished"></translation>
+        <translation>FET - Εισαγωγή από αρχείο CSV</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="281"/>
         <source>OK</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="282"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
 </context>
 <context>
@@ -11894,12 +11910,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/commentsform.cpp" line="59"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/commentsform.cpp" line="60"/>
         <source>Cannot update comments during simulation. Please stop simulation before this</source>
-        <translation type="unfinished"></translation>
+        <translation>Δεν είναι δυνατή η ενημέρωση των σχολίων κατά τη διάρκεια της προσομοίωσης. Παρακαλώ σταματήστε πρώτα την προσομοίωση</translation>
     </message>
 </context>
 <context>
@@ -11908,12 +11924,12 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/interface/commentsform_template.ui" line="14"/>
         <source>Comments</source>
         <extracomment>The title of the dialog to choose the comments</extracomment>
-        <translation type="unfinished">Σχόλια</translation>
+        <translation>Σχόλια</translation>
     </message>
     <message>
         <location filename="../src/interface/commentsform_template.ui" line="30"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
     <message>
         <location filename="../src/interface/commentsform_template.ui" line="23"/>
@@ -30499,19 +30515,19 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/export.cpp" line="213"/>
         <location filename="../src/engine/export.cpp" line="332"/>
         <source>CSV files were exported to directory %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>Τα αρχεία CSV έχουν εξαχθεί στον κατάλογο %1.</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="215"/>
         <location filename="../src/engine/export.cpp" line="334"/>
         <source>Exported complete</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Εξαγωγή - ολοκληρωμένη</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="217"/>
         <location filename="../src/engine/export.cpp" line="336"/>
         <source>Export incomplete</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Εξαγωγή - μη ολοκληρωμένη</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="299"/>
@@ -30532,7 +30548,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
         <location filename="../src/engine/export.cpp" line="338"/>
         <source>FET - export comment</source>
         <comment>The comment of the exporting operation</comment>
-        <translation type="unfinished"></translation>
+        <translation>FET - σχόλιο για την εξαγωγή</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="427"/>
@@ -30803,18 +30819,18 @@ Import of data will be easier with these settings.</source>
         <location filename="../src/engine/messageboxes.cpp" line="34"/>
         <location filename="../src/engine/messageboxes.cpp" line="44"/>
         <source>Title: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Τίτλος: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="35"/>
         <location filename="../src/engine/messageboxes.cpp" line="45"/>
         <source>Message: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Μήνυμα: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="48"/>
         <source>Button 0 text: %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Button 0 text: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/messageboxes.cpp" line="50"/>
@@ -34276,7 +34292,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fet.cpp" line="292"/>
         <location filename="../src/interface/fet.cpp" line="844"/>
         <source>FET warning</source>
-        <translation type="unfinished">FET - Προειδοποίηση</translation>
+        <translation>FET - Προειδοποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="292"/>
@@ -34287,7 +34303,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fet.cpp" line="805"/>
         <location filename="../src/interface/fet.cpp" line="814"/>
         <source>FET critical</source>
-        <translation type="unfinished">FET - Κρίσιμο</translation>
+        <translation>FET - Κρίσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/fet.cpp" line="844"/>
@@ -34351,41 +34367,41 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="104"/>
         <source>Timetable impossible to generate</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η δημιουργία ωρολογίου προγράμματος</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="109"/>
         <source>Time exceeded for current timetable</source>
-        <translation type="unfinished"></translation>
+        <translation>Έχει γίνει υπέρβαση χρόνου για το τρέχον ωρολόγιο πρόγραμμα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="127"/>
         <source>%1 h</source>
         <comment>hours</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 ω</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="131"/>
         <source>%1 m</source>
         <comment>minutes</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 λ</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="135"/>
         <source>%1 s</source>
         <comment>seconds</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 δ</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="139"/>
         <source>Max placed activities: %1 (at %2)</source>
         <comment>%1 represents the maximum number of activities placed, %2 is a time interval</comment>
-        <translation type="unfinished"></translation>
+        <translation>Μέγιστες δραστηριότητες που τοποθετήθηκαν: %1 (σε %2)</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="160"/>
         <source>Timetable breaks %1 soft constraints, has %2 soft conflicts total, and was generated in %3 hours, %4 minutes and %5 seconds.</source>
-        <translation type="unfinished"></translation>
+        <translation>Το ωρολόγιο πρόγραμμα παραβιάζει %1 ήπιους περιορισμούς, έχει συνολικά %2 ήπιες συγκρούσεις, και δημιουργήθηκε σε %3 ώρες, %4 λεπτά και %5 δευτερόλεπτα.</translation>
     </message>
 </context>
 <context>
@@ -36303,6 +36319,21 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="360"/>
+        <source>References</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/interface/helpaboutform_template.ui" line="381"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;You may find references for the algorithms and techniques used in this program on the FET documentation web page, &lt;/span&gt;&lt;a href=&quot;https://lalescu.ro/liviu/fet/doc/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;https://lalescu.ro/liviu/fet/doc/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/interface/helpaboutform_template.ui" line="415"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -36845,26 +36876,13 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Innocent De Marchi - bug reports.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Yakup Kadri Demirci - Turkish translation.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;bachiri401 - suggestion.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="360"/>
-        <source>References</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="381"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;You may find references for the algorithms and techniques used in this program on the FET documentation web page, &lt;/span&gt;&lt;a href=&quot;https://lalescu.ro/liviu/fet/doc/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;https://lalescu.ro/liviu/fet/doc/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/interface/helpaboutform_template.ui" line="982"/>
+        <location filename="../src/interface/helpaboutform_template.ui" line="984"/>
         <source>Close</source>
         <translation type="unfinished">Κλείσιμο</translation>
     </message>
@@ -36883,7 +36901,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Copyright (C) 2002-2018 Liviu Lalescu, Volker Dirr.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.35.2 (January 2018).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Version: 5.35.3 (February 2018).&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;Licensed under the GNU Affero General Public License version 3 or later.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
@@ -38095,12 +38113,12 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
         <location filename="../src/interface/helpfaqform_template.ui" line="14"/>
         <source>Frequently asked questions</source>
         <extracomment>This is the title of the dialog for FAQ help</extracomment>
-        <translation type="unfinished">Συνήθεις ερωτήσεις</translation>
+        <translation>Συνήθεις ερωτήσεις</translation>
     </message>
     <message>
         <location filename="../src/interface/helpfaqform_template.ui" line="23"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
 </context>
 <context>
@@ -38267,12 +38285,12 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
         <location filename="../src/interface/helpinstructionsform_template.ui" line="14"/>
         <source>Instructions</source>
         <extracomment>This is the title of the dialog with help - instructions</extracomment>
-        <translation type="unfinished">Οδηγίες</translation>
+        <translation>Οδηγίες</translation>
     </message>
     <message>
         <location filename="../src/interface/helpinstructionsform_template.ui" line="23"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
 </context>
 <context>
@@ -38460,12 +38478,12 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
         <location filename="../src/interface/helptipsform_template.ui" line="14"/>
         <source>Important tips</source>
         <extracomment>This is the title of the dialog for tips</extracomment>
-        <translation type="unfinished">Σημαντικές υποδείξεις</translation>
+        <translation>Σημαντικές υποδείξεις</translation>
     </message>
     <message>
         <location filename="../src/interface/helptipsform_template.ui" line="23"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
 </context>
 <context>
@@ -38843,62 +38861,62 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="106"/>
         <source>Year</source>
-        <translation type="unfinished">Έτος</translation>
+        <translation>Έτος</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="108"/>
         <source>Group</source>
-        <translation type="unfinished">Τμήμα</translation>
+        <translation>Τμήμα</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="110"/>
         <source>Subgroup</source>
-        <translation type="unfinished"></translation>
+        <translation>Υποτμήμα</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="112"/>
         <source>Subject</source>
-        <translation type="unfinished">Αντικείμενο</translation>
+        <translation>Αντικείμενο</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="113"/>
         <source>Activity Tag</source>
-        <translation type="unfinished"></translation>
+        <translation>Ετικέτα Δραστηριότητας</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="114"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="115"/>
         <source>Building</source>
-        <translation type="unfinished"></translation>
+        <translation>Κτίριο</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="116"/>
         <source>Room Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Όνομα Αίθουσας</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="117"/>
         <source>Room Capacity</source>
-        <translation type="unfinished"></translation>
+        <translation>Χωρητικότητα Αίθουσας</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="120"/>
         <source>Total Duration</source>
-        <translation type="unfinished"></translation>
+        <translation>Συνολική Διάρκεια</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="121"/>
         <source>Split Duration</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Επιμερισμένη διάρκεια</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="132"/>
         <source>line</source>
-        <translation type="unfinished"></translation>
+        <translation>γραμμή</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="157"/>
@@ -38929,49 +38947,49 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="183"/>
         <source>Please modify this text.</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ τροποποιήσετε αυτό το κείμενο.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="483"/>
         <location filename="../src/engine/import.cpp" line="1270"/>
         <source>activity tags</source>
-        <translation type="unfinished">ετικέτες δραστηριοτήτων</translation>
+        <translation>ετικέτες δραστηριοτήτων</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="487"/>
         <location filename="../src/engine/import.cpp" line="1272"/>
         <source>buildings and rooms</source>
-        <translation type="unfinished"></translation>
+        <translation>κτίρια και αίθουσες</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="491"/>
         <location filename="../src/engine/import.cpp" line="1274"/>
         <source>teachers</source>
-        <translation type="unfinished">εκπαιδευτικοί</translation>
+        <translation>εκπαιδευτικοί</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="495"/>
         <location filename="../src/engine/import.cpp" line="1276"/>
         <source>subjects</source>
-        <translation type="unfinished">αντικείμενα</translation>
+        <translation>αντικείμενα</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="499"/>
         <location filename="../src/engine/import.cpp" line="1278"/>
         <source>years, groups and subgroups</source>
-        <translation type="unfinished"></translation>
+        <translation>έτη, τμήματα και υποτμήματα</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="503"/>
         <location filename="../src/engine/import.cpp" line="1280"/>
         <source>activities</source>
-        <translation type="unfinished">δραστηριότητες</translation>
+        <translation>δραστηριότητες</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="507"/>
         <location filename="../src/engine/import.cpp" line="639"/>
         <source>FET - Import %1 from CSV file</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FET - Εισαγωγή %1 από αρχείο CSV</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="655"/>
@@ -39006,7 +39024,7 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
     <message>
         <location filename="../src/engine/import.cpp" line="692"/>
         <source>OK</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="528"/>
@@ -39015,32 +39033,32 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
         <location filename="../src/engine/import.cpp" line="835"/>
         <location filename="../src/engine/import.cpp" line="2109"/>
         <source>FET warning</source>
-        <translation type="unfinished">FET - Προειδοποίηση</translation>
+        <translation>FET - Προειδοποίηση</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="122"/>
         <source>Min Days</source>
-        <translation type="unfinished"></translation>
+        <translation>Ελάχιστες Ημέρες</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="123"/>
         <source>Min Days Weight</source>
-        <translation type="unfinished"></translation>
+        <translation>Ελάχιστες Ημέρες - Βαρύτητα</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="124"/>
         <source>Min Days Consecutive</source>
-        <translation type="unfinished"></translation>
+        <translation>Ελάχιστες Ημέρες - Διαδοχικές</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="835"/>
         <source>Empty filename.</source>
-        <translation type="unfinished"></translation>
+        <translation>Κενό όνομα αρχείου.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="839"/>
         <source>Error! Can&apos;t open file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Σφάλμα! Αδύνατο το άνοιγμα του αρχείου.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="848"/>
@@ -39050,17 +39068,17 @@ Probably, in practice this problem will not appear and you need not to worry. Bu
         <location filename="../src/engine/import.cpp" line="2413"/>
         <source>Importing</source>
         <comment>Title of a progress dialog</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Εισαγωγή σε εξέλιξη</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="849"/>
         <source>Loading file</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Φόρτωση αρχείου σε εξέλιξη</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="865"/>
         <source>Loading canceled by user.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Φόρτωση - ακυρώθηκε από τον χρήστη.</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="1141"/>
@@ -39560,13 +39578,14 @@ is:</source>
     <message>
         <location filename="../src/interface/institutionnameform.cpp" line="57"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/institutionnameform.cpp" line="58"/>
         <source>Cannot update institution name during simulation
 Please stop simulation before this</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η ενημέρωση της ονομασίας του ιδρύματος κατά την προσομοίωση.
+Παρακαλώ σταματήστε πρώτα την προσομοίωση</translation>
     </message>
 </context>
 <context>
@@ -39608,7 +39627,7 @@ Please stop simulation before this</source>
         <location filename="../src/engine/export.cpp" line="1335"/>
         <source>FET - export comment</source>
         <comment>The comment of the exporting operation</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FET - σχόλιο για την εξαγωγή</translation>
     </message>
     <message>
         <location filename="../src/engine/export.cpp" line="1346"/>
@@ -40050,17 +40069,17 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifybuildingform.cpp" line="54"/>
         <location filename="../src/interface/modifybuildingform.cpp" line="58"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifybuildingform.cpp" line="54"/>
         <source>Incorrect name</source>
-        <translation type="unfinished"></translation>
+        <translation>Λάθος όνομα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifybuildingform.cpp" line="58"/>
         <source>Name existing - please choose another</source>
-        <translation type="unfinished"></translation>
+        <translation>Το όνομα αυτό υπάρχει ήδη - παρακαλώ επιλέξτε άλλο όνομα</translation>
     </message>
 </context>
 <context>
@@ -40115,12 +40134,12 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesendstudentsdayform_template.ui" line="125"/>
         <source>Ok</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesendstudentsdayform_template.ui" line="132"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesendstudentsdayform_template.ui" line="22"/>
@@ -40156,22 +40175,22 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="314"/>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="323"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="294"/>
         <source>Invalid weight (percentage). It has to be 100</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό). Πρέπει να είναι 100%</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό). Πρέπει να είναι 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="314"/>
         <source>You specified max simultaneous activities to be 0. This is not perfect from efficiency point of view, because you can use instead constraint activity(ies) preferred time slots, and help FET to find a timetable easier and faster, with an equivalent result. Please correct.</source>
-        <translation type="unfinished">Καθορίσατε ότι οι μέγιστες ταυτόχρονες δραστηριότητες πρέπει να είναι 0. Αυτός όμως δεν είναι ο βέλτιστος περιορισμός για να επιτύχετε αυτό που θέλετε, διότι από πλευράς απόδοσης είναι προτιμότερο να χρησιμοποιήσετε τον περιορισμό &quot;δραστηριότητα(ες) - προτιμητέες περίοδοι&quot; και έτσι να βοηθήσετε το FET να επιλύσει το ωρολόγιο πρόγραμμα γρηγορότερα και ευκολότερα, με ισοδύναμο αποτέλεσμα. Παρακαλώ διορθώστε.</translation>
+        <translation>Καθορίσατε ότι οι μέγιστες ταυτόχρονες δραστηριότητες είναι 0. Αυτός όμως δεν είναι ο βέλτιστος περιορισμός για να επιτύχετε αυτό που θέλετε, διότι από πλευράς απόδοσης είναι προτιμότερο να χρησιμοποιήσετε τον περιορισμό &quot;δραστηριότητα(ες) - προτιμητέες περίοδοι&quot; και έτσι να βοηθήσετε το FET να επιλύσει το ωρολόγιο πρόγραμμα γρηγορότερα και ευκολότερα, με ισοδύναμο αποτέλεσμα. Παρακαλώ διορθώστε.</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="324"/>
         <source>Empty list of activities</source>
-        <translation type="unfinished"></translation>
+        <translation>Κενή λίστα δραστηριοτήτων</translation>
     </message>
 </context>
 <context>
@@ -40180,77 +40199,77 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="14"/>
         <source>Modify activities max simultaneous in selected time slots</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Τροποποίηση: &quot;Δραστηριότητες - μέγιστες ταυτόχρονες σε επιλεγμένες περιόδους&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="24"/>
         <source>Activities</source>
-        <translation type="unfinished">Δραστηριότητες</translation>
+        <translation>Δραστηριότητες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="30"/>
         <source>Filter</source>
-        <translation type="unfinished">Φίλτρο</translation>
+        <translation>Φίλτρο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="36"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="46"/>
         <source>Students set</source>
-        <translation type="unfinished">Ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="56"/>
         <source>Subject</source>
-        <translation type="unfinished">Αντικείμενο</translation>
+        <translation>Αντικείμενο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="66"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Ετικέτα δραστηριότητας</translation>
+        <translation>Ετικέτα δραστηριότητας</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="98"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished"></translation>
+        <translation>Όλες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="112"/>
         <source>Clear</source>
-        <translation type="unfinished">Καθαρισμός</translation>
+        <translation>Καθαρισμός</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="124"/>
         <source>Time slots</source>
-        <translation type="unfinished">Περίοδοι</translation>
+        <translation>Περίοδοι</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="137"/>
         <source>X=selected, empty=not selected</source>
         <extracomment>This is an explanation in a dialog for a constraint. It says that symbol X means that this slot is not allowed, and an empty cell means that the slot is allowed</extracomment>
-        <translation type="unfinished">Χ=επιλεγμένη, κενό=μη επιλεγμένη</translation>
+        <translation>Χ=επιλεγμένη, κενό=μη επιλεγμένη</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="144"/>
         <source>Select all</source>
         <comment>It refers to time slots</comment>
-        <translation type="unfinished">Επιλογή όλων</translation>
+        <translation>Επιλογή όλων</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="151"/>
         <source>Unselect all</source>
         <comment>It refers to time slots</comment>
-        <translation type="unfinished">Αποεπιλογή όλων</translation>
+        <translation>Αποεπιλογή όλων</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="173"/>
         <source>Max simultaneous</source>
         <comment>It refers to the max number of simultaneous activities</comment>
-        <translation type="unfinished">Μέγιστες ταυτόχρονες</translation>
+        <translation>Μέγιστες ταυτόχρονες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="199"/>
@@ -40260,12 +40279,12 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="220"/>
         <source>Ok</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesmaxsimultaneousinselectedtimeslotsform_template.ui" line="227"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
 </context>
 <context>
@@ -40275,22 +40294,22 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform.cpp" line="195"/>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform.cpp" line="200"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform.cpp" line="190"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform.cpp" line="196"/>
         <source>Empty list of not overlapping activities</source>
-        <translation type="unfinished"></translation>
+        <translation>Κενή λίστα μη αλληλοεπικαλυπτόμενων δραστηριοτήτων</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform.cpp" line="201"/>
         <source>Only one selected activity</source>
-        <translation type="unfinished">Μόνον μία επιλεγμένη δραστηριότητα</translation>
+        <translation>Μόνον μία επιλεγμένη δραστηριότητα</translation>
     </message>
 </context>
 <context>
@@ -40298,12 +40317,12 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="190"/>
         <source>Ok</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="197"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="169"/>
@@ -40313,60 +40332,60 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="36"/>
         <source>Filter</source>
-        <translation type="unfinished">Φίλτρο</translation>
+        <translation>Φίλτρο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="14"/>
         <source>Modify activities not overlapping</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Τροποποίηση: &quot;Δραστηριότητες - δεν αλληλεπικαλύπτονται&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="72"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Ετικέτα δραστηριότητας</translation>
+        <translation>Ετικέτα δραστηριότητας</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="52"/>
         <source>Students set</source>
-        <translation type="unfinished">Ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="62"/>
         <source>Subject</source>
-        <translation type="unfinished">Αντικείμενο</translation>
+        <translation>Αντικείμενο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="42"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="107"/>
         <source>Activities</source>
-        <translation type="unfinished">Δραστηριότητες</translation>
+        <translation>Δραστηριότητες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="120"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished"></translation>
+        <translation>Όλες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="137"/>
         <source>Selected</source>
         <comment>It refers to a list of selected activities</comment>
-        <translation type="unfinished"></translation>
+        <translation>Επιλεγμένες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="150"/>
         <source>Clear</source>
-        <translation type="unfinished">Καθαρισμός</translation>
+        <translation>Καθαρισμός</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesnotoverlappingform_template.ui" line="26"/>
         <source>This constraint means that the activities should not be placed in common timeslots. You don&apos;t need to add this constraint for activities sharing a teacher or students set.</source>
-        <translation type="unfinished">Ο περιορισμός αυτός σημαίνει ότι οι δραστηριότητες δεν θα πρέπει να τοποθετηθούν σε κοινές περιόδους (δηλαδή δεν πρέπει να πραγματοποιούνται ταυτόχρονα). Δεν χρειάζεται να προσθέσετε αυτόν τον περιορισμό για δραστηριότητες που αφορούν τον ίδιο εκπαιδευτικό ή την ίδια ομάδα μαθητών.</translation>
+        <translation>Ο περιορισμός αυτός σημαίνει ότι οι δραστηριότητες δεν θα πρέπει να τοποθετηθούν σε κοινές περιόδους (δηλαδή δεν πρέπει να πραγματοποιούνται ταυτόχρονα). Δεν χρειάζεται να προσθέσετε αυτόν τον περιορισμό για δραστηριότητες που αφορούν τον ίδιο εκπαιδευτικό ή την ίδια ομάδα μαθητών.</translation>
     </message>
 </context>
 <context>
@@ -40376,22 +40395,22 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="147"/>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="152"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="136"/>
         <source>Invalid weight (percentage). It has to be 100</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό). Πρέπει να είναι 100%</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό). Πρέπει να είναι 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="148"/>
         <source>Empty list of activities</source>
-        <translation type="unfinished"></translation>
+        <translation>Κενή λίστα δραστηριοτήτων</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform.cpp" line="153"/>
         <source>Only one selected activity</source>
-        <translation type="unfinished">Μόνον μία επιλεγμένη δραστηριότητα</translation>
+        <translation>Μόνον μία επιλεγμένη δραστηριότητα</translation>
     </message>
 </context>
 <context>
@@ -40400,48 +40419,48 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="14"/>
         <source>Modify activities occupy max different rooms</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Τροποποίηση: &quot;Δραστηριότητες - καταλαμβάνουν μέγιστες διαφορετικές αίθουσες&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="20"/>
         <source>Filter</source>
-        <translation type="unfinished">Φίλτρο</translation>
+        <translation>Φίλτρο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="26"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation type="unfinished">Ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="46"/>
         <source>Subject</source>
-        <translation type="unfinished">Αντικείμενο</translation>
+        <translation>Αντικείμενο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="56"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Ετικέτα δραστηριότητας</translation>
+        <translation>Ετικέτα δραστηριότητας</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="88"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished"></translation>
+        <translation>Όλες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="102"/>
         <source>Clear</source>
-        <translation type="unfinished">Καθαρισμός</translation>
+        <translation>Καθαρισμός</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="115"/>
         <source>Max different rooms</source>
-        <translation type="unfinished">Μέγιστες διαφορετικές αίθουσες</translation>
+        <translation>Μέγιστες διαφορετικές αίθουσες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="135"/>
@@ -40451,12 +40470,12 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="156"/>
         <source>Ok</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxdifferentroomsform_template.ui" line="163"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
 </context>
 <context>
@@ -40466,22 +40485,22 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="314"/>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="323"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="294"/>
         <source>Invalid weight (percentage). It has to be 100</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό). Πρέπει να είναι 100%</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό). Πρέπει να είναι 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="314"/>
         <source>You specified max occupied time slots to be 0. This is not perfect from efficiency point of view, because you can use instead constraint activity(ies) preferred time slots, and help FET to find a timetable easier and faster, with an equivalent result. Please correct.</source>
-        <translation type="unfinished"></translation>
+        <translation>Καθορίσατε ότι οι μέγιστες κατειλημμένες περίοδοι είναι 0. Αυτός όμως δεν είναι ο βέλτιστος περιορισμός για να επιτύχετε αυτό που θέλετε, διότι από πλευράς απόδοσης είναι προτιμότερο να χρησιμοποιήσετε τον περιορισμό &quot;δραστηριότητα(ες) - προτιμητέες περίοδοι&quot; και έτσι να βοηθήσετε το FET να επιλύσει το ωρολόγιο πρόγραμμα γρηγορότερα και ευκολότερα, με ισοδύναμο αποτέλεσμα. Παρακαλώ διορθώστε.</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform.cpp" line="324"/>
         <source>Empty list of activities</source>
-        <translation type="unfinished"></translation>
+        <translation>Κενή λίστα δραστηριοτήτων</translation>
     </message>
 </context>
 <context>
@@ -40490,77 +40509,77 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="14"/>
         <source>Modify activities occupy max time slots from selection</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Τροποποίηση: &quot;Δραστηριότητες - καταλαμβάνουν μέγιστες περιόδους από επιλογή&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="24"/>
         <source>Activities</source>
-        <translation type="unfinished">Δραστηριότητες</translation>
+        <translation>Δραστηριότητες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="30"/>
         <source>Filter</source>
-        <translation type="unfinished">Φίλτρο</translation>
+        <translation>Φίλτρο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="36"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="46"/>
         <source>Students set</source>
-        <translation type="unfinished">Ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="56"/>
         <source>Subject</source>
-        <translation type="unfinished">Αντικείμενο</translation>
+        <translation>Αντικείμενο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="66"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Ετικέτα δραστηριότητας</translation>
+        <translation>Ετικέτα δραστηριότητας</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="98"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished"></translation>
+        <translation>Όλες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="112"/>
         <source>Clear</source>
-        <translation type="unfinished">Καθαρισμός</translation>
+        <translation>Καθαρισμός</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="124"/>
         <source>Time slots</source>
-        <translation type="unfinished">Περίοδοι</translation>
+        <translation>Περίοδοι</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="137"/>
         <source>X=selected, empty=not selected</source>
         <extracomment>This is an explanation in a dialog for a constraint. It says that symbol X means that this slot is not allowed, and an empty cell means that the slot is allowed</extracomment>
-        <translation type="unfinished">Χ=επιλεγμένη, κενό=μη επιλεγμένη</translation>
+        <translation>Χ=επιλεγμένη, κενό=μη επιλεγμένη</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="144"/>
         <source>Select all</source>
         <comment>It refers to time slots</comment>
-        <translation type="unfinished">Επιλογή όλων</translation>
+        <translation>Επιλογή όλων</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="151"/>
         <source>Unselect all</source>
         <comment>It refers to time slots</comment>
-        <translation type="unfinished">Αποεπιλογή όλων</translation>
+        <translation>Αποεπιλογή όλων</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="173"/>
         <source>Max occupied</source>
         <comment>It refers to the max number of occupied time slots</comment>
-        <translation type="unfinished">Μέγιστες κατειλλημένες</translation>
+        <translation>Μέγιστες κατειλλημένες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="199"/>
@@ -40570,12 +40589,12 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="220"/>
         <source>Ok</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiesoccupymaxtimeslotsfromselectionform_template.ui" line="227"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
 </context>
 <context>
@@ -40583,12 +40602,12 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="330"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="331"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="352"/>
@@ -40596,7 +40615,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="386"/>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="417"/>
         <source>FET question</source>
-        <translation type="unfinished">FET - Ερώτηση</translation>
+        <translation>FET - Ερώτηση</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform.cpp" line="353"/>
@@ -40643,27 +40662,27 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform_template.ui" line="31"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Ετικέτα δραστηριότητας</translation>
+        <translation>Ετικέτα δραστηριότητας</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform_template.ui" line="41"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform_template.ui" line="54"/>
         <source>Students set</source>
-        <translation type="unfinished">Ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform_template.ui" line="64"/>
         <source>Subject</source>
-        <translation type="unfinished">Αντικείμενο</translation>
+        <translation>Αντικείμενο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform_template.ui" line="78"/>
         <source>Duration</source>
-        <translation type="unfinished">Διάρκεια</translation>
+        <translation>Διάρκεια</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform_template.ui" line="101"/>
@@ -40674,35 +40693,35 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform_template.ui" line="122"/>
         <source>Set all allowed</source>
         <comment>It refers to time slots</comment>
-        <translation type="unfinished">Όλες επιτρεπτές</translation>
+        <translation>Όλες επιτρεπτές</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform_template.ui" line="14"/>
         <source>Modify activities preferred starting times</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Τροποποίηση: &quot;Δραστηριότητες - προτιμητέοι χρόνοι έναρξης&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform_template.ui" line="129"/>
         <source>X=not allowed, empty=allowed</source>
         <extracomment>This is an explanation in a dialog for a constraint. It says that symbol X means that this slot is not allowed, and an empty cell means that the slot is allowed</extracomment>
-        <translation type="unfinished">Χ=μη επιτρεπτή, κενό=επιτρεπτή</translation>
+        <translation>Χ=μη επιτρεπτή, κενό=επιτρεπτή</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform_template.ui" line="136"/>
         <source>Set all not allowed</source>
         <comment>It refers to time slots</comment>
-        <translation type="unfinished">Καμία επιτρεπτή</translation>
+        <translation>Καμία επιτρεπτή</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform_template.ui" line="143"/>
         <source>Ok</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredstartingtimesform_template.ui" line="150"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
 </context>
 <context>
@@ -40710,12 +40729,12 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="329"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="330"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="351"/>
@@ -40723,7 +40742,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="385"/>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="416"/>
         <source>FET question</source>
-        <translation type="unfinished">FET - Ερώτηση</translation>
+        <translation>FET - Ερώτηση</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="352"/>
@@ -40762,7 +40781,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform.cpp" line="417"/>
         <source>Warning: 0 slots selected. Are you sure?</source>
-        <translation type="unfinished"></translation>
+        <translation>Προειδοποίηση: 0 επιλεγμένες περίοδοι. Είστε σίγουροι;</translation>
     </message>
 </context>
 <context>
@@ -40770,27 +40789,27 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform_template.ui" line="31"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Ετικέτα δραστηριότητας</translation>
+        <translation>Ετικέτα δραστηριότητας</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform_template.ui" line="41"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform_template.ui" line="54"/>
         <source>Students set</source>
-        <translation type="unfinished">Ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform_template.ui" line="64"/>
         <source>Subject</source>
-        <translation type="unfinished">Αντικείμενο</translation>
+        <translation>Αντικείμενο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform_template.ui" line="78"/>
         <source>Duration</source>
-        <translation type="unfinished">Διάρκεια</translation>
+        <translation>Διάρκεια</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform_template.ui" line="101"/>
@@ -40801,35 +40820,35 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform_template.ui" line="136"/>
         <source>Set all not allowed</source>
         <comment>It refers to time slots</comment>
-        <translation type="unfinished">Καμία επιτρεπτή</translation>
+        <translation>Καμία επιτρεπτή</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform_template.ui" line="14"/>
         <source>Modify activities preferred time slots</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Τροποποίηση: &quot;Δραστηριότητες - προτιμητέες περίοδοι&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform_template.ui" line="122"/>
         <source>Set all allowed</source>
         <comment>It refers to time slots</comment>
-        <translation type="unfinished">Όλες επιτρεπτές</translation>
+        <translation>Όλες επιτρεπτές</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform_template.ui" line="129"/>
         <source>X=not allowed, empty=allowed</source>
         <extracomment>This is an explanation in a dialog for a constraint. It says that symbol X means that this slot is not allowed, and an empty cell means that the slot is allowed</extracomment>
-        <translation type="unfinished">Χ=μη επιτρεπτή, κενό=επιτρεπτή</translation>
+        <translation>Χ=μη επιτρεπτή, κενό=επιτρεπτή</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform_template.ui" line="143"/>
         <source>Ok</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiespreferredtimeslotsform_template.ui" line="150"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
 </context>
 <context>
@@ -40839,22 +40858,22 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform.cpp" line="139"/>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform.cpp" line="144"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform.cpp" line="132"/>
         <source>Invalid weight (percentage). It has to be 100</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό). Πρέπει να είναι 100%</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό). Πρέπει να είναι 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform.cpp" line="140"/>
         <source>Empty list of activities</source>
-        <translation type="unfinished"></translation>
+        <translation>Κενή λίστα δραστηριοτήτων</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform.cpp" line="145"/>
         <source>Only one selected activity</source>
-        <translation type="unfinished">Μόνον μία επιλεγμένη δραστηριότητα</translation>
+        <translation>Μόνον μία επιλεγμένη δραστηριότητα</translation>
     </message>
 </context>
 <context>
@@ -40863,32 +40882,32 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform_template.ui" line="14"/>
         <source>Modify activities same room if consecutive</source>
         <extracomment>This is the title of the dialog to add a new constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Τροποποίηση: &quot;Δραστηριότητες - αν διαδοχικές, στην ίδια αίθουσα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform_template.ui" line="20"/>
         <source>Filter</source>
-        <translation type="unfinished">Φίλτρο</translation>
+        <translation>Φίλτρο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform_template.ui" line="26"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation type="unfinished">Ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform_template.ui" line="46"/>
         <source>Subject</source>
-        <translation type="unfinished">Αντικείμενο</translation>
+        <translation>Αντικείμενο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform_template.ui" line="56"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Ετικέτα δραστηριότητας</translation>
+        <translation>Ετικέτα δραστηριότητας</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform_template.ui" line="89"/>
@@ -40898,23 +40917,23 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform_template.ui" line="110"/>
         <source>Ok</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform_template.ui" line="117"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform_template.ui" line="133"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished"></translation>
+        <translation>Όλες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessameroomifconsecutiveform_template.ui" line="147"/>
         <source>Clear</source>
-        <translation type="unfinished">Καθαρισμός</translation>
+        <translation>Καθαρισμός</translation>
     </message>
 </context>
 <context>
@@ -40924,22 +40943,22 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform.cpp" line="203"/>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform.cpp" line="208"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform.cpp" line="198"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform.cpp" line="204"/>
         <source>Empty list of selected activities</source>
-        <translation type="unfinished">Κενή λίστα επιλεγμένων δραστηριοτήτων</translation>
+        <translation>Κενή λίστα επιλεγμένων δραστηριοτήτων</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform.cpp" line="209"/>
         <source>Only one selected activity</source>
-        <translation type="unfinished">Μόνον μία επιλεγμένη δραστηριότητα</translation>
+        <translation>Μόνον μία επιλεγμένη δραστηριότητα</translation>
     </message>
 </context>
 <context>
@@ -40952,65 +40971,65 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform_template.ui" line="174"/>
         <source>Ok</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform_template.ui" line="181"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform_template.ui" line="20"/>
         <source>Filter</source>
-        <translation type="unfinished">Φίλτρο</translation>
+        <translation>Φίλτρο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform_template.ui" line="14"/>
         <source>Modify activities same starting day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Τροποποίηση: &quot;Δραστηριότητες - ίδια ημέρα έναρξης&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform_template.ui" line="56"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Ετικέτα δραστηριότητας</translation>
+        <translation>Ετικέτα δραστηριότητας</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation type="unfinished">Ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform_template.ui" line="46"/>
         <source>Subject</source>
-        <translation type="unfinished">Αντικείμενο</translation>
+        <translation>Αντικείμενο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform_template.ui" line="26"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform_template.ui" line="91"/>
         <source>Activities</source>
-        <translation type="unfinished">Δραστηριότητες</translation>
+        <translation>Δραστηριότητες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform_template.ui" line="104"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished"></translation>
+        <translation>Όλες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform_template.ui" line="121"/>
         <source>Selected</source>
         <comment>It refers to a list of selected activities</comment>
-        <translation type="unfinished"></translation>
+        <translation>Επιλεγμένες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingdayform_template.ui" line="134"/>
         <source>Clear</source>
-        <translation type="unfinished">Καθαρισμός</translation>
+        <translation>Καθαρισμός</translation>
     </message>
 </context>
 <context>
@@ -41020,22 +41039,22 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform.cpp" line="202"/>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform.cpp" line="207"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform.cpp" line="197"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform.cpp" line="203"/>
         <source>Empty list of selected activities</source>
-        <translation type="unfinished">Κενή λίστα επιλεγμένων δραστηριοτήτων</translation>
+        <translation>Κενή λίστα επιλεγμένων δραστηριοτήτων</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform.cpp" line="208"/>
         <source>Only one selected activity</source>
-        <translation type="unfinished">Μόνον μία επιλεγμένη δραστηριότητα</translation>
+        <translation>Μόνον μία επιλεγμένη δραστηριότητα</translation>
     </message>
 </context>
 <context>
@@ -41048,65 +41067,65 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform_template.ui" line="174"/>
         <source>Ok</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform_template.ui" line="181"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform_template.ui" line="20"/>
         <source>Filter</source>
-        <translation type="unfinished">Φίλτρο</translation>
+        <translation>Φίλτρο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform_template.ui" line="14"/>
         <source>Modify activities same starting hour</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Τροποποίηση: &quot;Δραστηριότητες - ίδια ώρα έναρξης&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform_template.ui" line="56"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Ετικέτα δραστηριότητας</translation>
+        <translation>Ετικέτα δραστηριότητας</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation type="unfinished">Ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform_template.ui" line="46"/>
         <source>Subject</source>
-        <translation type="unfinished">Αντικείμενο</translation>
+        <translation>Αντικείμενο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform_template.ui" line="26"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform_template.ui" line="91"/>
         <source>Activities</source>
-        <translation type="unfinished">Δραστηριότητες</translation>
+        <translation>Δραστηριότητες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform_template.ui" line="104"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished"></translation>
+        <translation>Όλες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform_template.ui" line="121"/>
         <source>Selected</source>
         <comment>It refers to a list of selected activities</comment>
-        <translation type="unfinished"></translation>
+        <translation>Επιλεγμένες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartinghourform_template.ui" line="134"/>
         <source>Clear</source>
-        <translation type="unfinished">Καθαρισμός</translation>
+        <translation>Καθαρισμός</translation>
     </message>
 </context>
 <context>
@@ -41116,22 +41135,22 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform.cpp" line="198"/>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform.cpp" line="203"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform.cpp" line="193"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform.cpp" line="199"/>
         <source>Empty list of selected activities</source>
-        <translation type="unfinished">Κενή λίστα επιλεγμένων δραστηριοτήτων</translation>
+        <translation>Κενή λίστα επιλεγμένων δραστηριοτήτων</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform.cpp" line="204"/>
         <source>Only one selected activity</source>
-        <translation type="unfinished">Μόνον μία επιλεγμένη δραστηριότητα</translation>
+        <translation>Μόνον μία επιλεγμένη δραστηριότητα</translation>
     </message>
 </context>
 <context>
@@ -41144,65 +41163,65 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform_template.ui" line="174"/>
         <source>Ok</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform_template.ui" line="181"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform_template.ui" line="20"/>
         <source>Filter</source>
-        <translation type="unfinished">Φίλτρο</translation>
+        <translation>Φίλτρο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform_template.ui" line="14"/>
         <source>Modify activities same starting time</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Τροποποίηση: &quot;Δραστηριότητες - ίδιος χρόνος έναρξης&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform_template.ui" line="56"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Ετικέτα δραστηριότητας</translation>
+        <translation>Ετικέτα δραστηριότητας</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation type="unfinished">Ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform_template.ui" line="46"/>
         <source>Subject</source>
-        <translation type="unfinished">Αντικείμενο</translation>
+        <translation>Αντικείμενο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform_template.ui" line="26"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform_template.ui" line="91"/>
         <source>Activities</source>
-        <translation type="unfinished">Δραστηριότητες</translation>
+        <translation>Δραστηριότητες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform_template.ui" line="104"/>
         <source>All</source>
         <comment>Text on a button. It refers to adding all activities from the list above this button into the current constraint</comment>
-        <translation type="unfinished"></translation>
+        <translation>Όλες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform_template.ui" line="121"/>
         <source>Selected</source>
         <comment>It refers to a list of selected activities</comment>
-        <translation type="unfinished"></translation>
+        <translation>Επιλεγμένες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitiessamestartingtimeform_template.ui" line="134"/>
         <source>Clear</source>
-        <translation type="unfinished">Καθαρισμός</translation>
+        <translation>Καθαρισμός</translation>
     </message>
 </context>
 <context>
@@ -41212,22 +41231,22 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform.cpp" line="189"/>
         <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform.cpp" line="198"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform.cpp" line="185"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform.cpp" line="190"/>
         <source>Invalid weight (percentage) - it must be 100%</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό) - πρέπει να είναι 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform.cpp" line="199"/>
         <source>Invalid activity</source>
-        <translation type="unfinished">Μη αποδεκτή δραστηριότητα</translation>
+        <translation>Μη αποδεκτή δραστηριότητα</translation>
     </message>
 </context>
 <context>
@@ -41236,54 +41255,54 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform_template.ui" line="14"/>
         <source>Modify activity ends students day</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Τροποποίηση: &quot;Δραστηριότητα &apos;κλείνει&apos; ημέρα μαθητών&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform_template.ui" line="20"/>
         <source>Filter</source>
-        <translation type="unfinished">Φίλτρο</translation>
+        <translation>Φίλτρο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation type="unfinished">Ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform_template.ui" line="26"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform_template.ui" line="52"/>
         <source>Subject</source>
-        <translation type="unfinished">Αντικείμενο</translation>
+        <translation>Αντικείμενο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform_template.ui" line="179"/>
         <source>Ok</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform_template.ui" line="186"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform_template.ui" line="105"/>
         <source>Activity</source>
-        <translation type="unfinished">Δραστηριότητα</translation>
+        <translation>Δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform_template.ui" line="157"/>
         <source>Weight percentage
 (necessary: 100%)</source>
-        <translation type="unfinished">Βαρύτητα (ποσοστό)
+        <translation>Βαρύτητα (ποσοστό)
 Απαραίτητο: 100%</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivityendsstudentsdayform_template.ui" line="62"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Ετικέτα δραστηριότητας</translation>
+        <translation>Ετικέτα δραστηριότητας</translation>
     </message>
 </context>
 <context>
@@ -41293,22 +41312,22 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomform.cpp" line="107"/>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomform.cpp" line="115"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomform.cpp" line="101"/>
         <source>Invalid weight</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα</translation>
+        <translation>Μη αποδεκτή βαρύτητα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomform.cpp" line="108"/>
         <source>Invalid activity</source>
-        <translation type="unfinished">Μη αποδεκτή δραστηριότητα</translation>
+        <translation>Μη αποδεκτή δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomform.cpp" line="116"/>
         <source>Invalid room</source>
-        <translation type="unfinished">Μη αποδεκτή αίθουσα</translation>
+        <translation>Μη αποδεκτή αίθουσα</translation>
     </message>
 </context>
 <context>
@@ -41316,28 +41335,28 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomform_template.ui" line="89"/>
         <source>Ok</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomform_template.ui" line="96"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomform_template.ui" line="33"/>
         <source>Room</source>
-        <translation type="unfinished">Αίθουσα</translation>
+        <translation>Αίθουσα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomform_template.ui" line="14"/>
         <source>Modify activity preferred room</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Τροποποίηση: &quot;Δραστηριότητα - προτιμητέα αίθουσα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomform_template.ui" line="55"/>
         <source>Activity</source>
-        <translation type="unfinished">Δραστηριότητα</translation>
+        <translation>Δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomform_template.ui" line="77"/>
@@ -41347,12 +41366,12 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomform_template.ui" line="124"/>
         <source>Permanently locked</source>
-        <translation type="unfinished">Μόνιμα κλειδωμένος</translation>
+        <translation>Μόνιμα κλειδωμένος</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomform_template.ui" line="111"/>
         <source>Select this if you want this constraint not to be unlockable from the &apos;Timetable&apos; menu (recommended). You can always remove this constraint from the constraints dialogs or uncheck &quot;permanently locked&quot; checkbox by editing this constraint</source>
-        <translation type="unfinished">Επιλέξτε εάν δεν θέλετε να ξεκλειδώνει ο συγκεκριμένος περιορισμός από το μενού &quot;Ωρολόγιο&quot; (προτεινόμενο). Μπορείτε να διαγράψετε τον περιορισμό αυτό όποτε θέλετε από τον διάλογο περιορισμών ή να επεξεργαστείτε τον συγκεκριμένο περιορισμό και να αποεπιλέξετε το &quot;μόνιμα κλειδωμένος&quot; από το αντίστοιχο πλαίσιο ελέγχου</translation>
+        <translation>Επιλέξτε εάν θέλετε να μην ξεκλειδώνει ο συγκεκριμένος περιορισμός από το μενού &quot;Ωρολόγιο&quot; (προτεινόμενο). Μπορείτε να διαγράψετε τον περιορισμό αυτό όποτε θέλετε από τον διάλογο περιορισμών ή να επεξεργαστείτε τον συγκεκριμένο περιορισμό και να αποεπιλέξετε το &quot;μόνιμα κλειδωμένος&quot; από το αντίστοιχο πλαίσιο ελέγχου</translation>
     </message>
 </context>
 <context>
@@ -41362,22 +41381,22 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomsform.cpp" line="101"/>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomsform.cpp" line="112"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomsform.cpp" line="96"/>
         <source>Invalid weight</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα</translation>
+        <translation>Μη αποδεκτή βαρύτητα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomsform.cpp" line="102"/>
         <source>Empty list of selected rooms</source>
-        <translation type="unfinished">Κενή λίστα επιλεγμένων αιθουσών</translation>
+        <translation>Κενή λίστα επιλεγμένων αιθουσών</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomsform.cpp" line="113"/>
         <source>Invalid selected activity</source>
-        <translation type="unfinished">Μη αποδεκτή επιλογή δραστηριότητας</translation>
+        <translation>Μη αποδεκτή επιλογή δραστηριότητας</translation>
     </message>
 </context>
 <context>
@@ -41386,7 +41405,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomsform_template.ui" line="64"/>
         <source>Selected</source>
         <comment>It refers to a list of selected rooms</comment>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomsform_template.ui" line="94"/>
@@ -41396,33 +41415,33 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomsform_template.ui" line="115"/>
         <source>Ok</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomsform_template.ui" line="122"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomsform_template.ui" line="14"/>
         <source>Modify activity preferred rooms</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Τροποποίηση: &quot;Δραστηριότητα - προτιμητέες αίθουσες&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomsform_template.ui" line="41"/>
         <source>Rooms</source>
-        <translation type="unfinished">Αίθουσες</translation>
+        <translation>Αίθουσες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomsform_template.ui" line="20"/>
         <source>Activity</source>
-        <translation type="unfinished">Δραστηριότητα</translation>
+        <translation>Δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredroomsform_template.ui" line="77"/>
         <source>Clear</source>
-        <translation type="unfinished">Καθαρισμός</translation>
+        <translation>Καθαρισμός</translation>
     </message>
 </context>
 <context>
@@ -41434,27 +41453,27 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform.cpp" line="233"/>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform.cpp" line="260"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform.cpp" line="212"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform.cpp" line="219"/>
         <source>Invalid day</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτή ημέρα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform.cpp" line="225"/>
         <source>Invalid start hour</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτή ώρα έναρξης</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform.cpp" line="234"/>
         <source>Invalid activity</source>
-        <translation type="unfinished">Μη αποδεκτή δραστηριότητα</translation>
+        <translation>Μη αποδεκτή δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform.cpp" line="260"/>
@@ -41467,68 +41486,68 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform_template.ui" line="20"/>
         <source>Filter</source>
-        <translation type="unfinished">Φίλτρο</translation>
+        <translation>Φίλτρο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation type="unfinished">Ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform_template.ui" line="26"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform_template.ui" line="52"/>
         <source>Subject</source>
-        <translation type="unfinished">Αντικείμενο</translation>
+        <translation>Αντικείμενο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform_template.ui" line="62"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Ετικέτα δραστηριότητας</translation>
+        <translation>Ετικέτα δραστηριότητας</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform_template.ui" line="102"/>
         <source>Activity</source>
-        <translation type="unfinished">Δραστηριότητα</translation>
+        <translation>Δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform_template.ui" line="231"/>
         <source>Ok</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform_template.ui" line="238"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform_template.ui" line="157"/>
         <source>Period</source>
-        <translation type="unfinished">Περίοδος</translation>
+        <translation>Περίοδος</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform_template.ui" line="14"/>
         <source>Modify activity preferred starting time</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Τροποποίηση: &quot;Δραστηριότητα - προτιμητέος χρόνος έναρξης&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform_template.ui" line="163"/>
         <source>Day</source>
-        <translation type="unfinished">Ημέρα</translation>
+        <translation>Ημέρα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform_template.ui" line="173"/>
         <source>Start hour</source>
-        <translation type="unfinished">Ώρα έναρξης</translation>
+        <translation>Ώρα έναρξης</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform_template.ui" line="200"/>
         <source>Permanently locked</source>
-        <translation type="unfinished">Μόνιμα κλειδωμένος</translation>
+        <translation>Μόνιμα κλειδωμένος</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform_template.ui" line="138"/>
@@ -41538,7 +41557,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimeform_template.ui" line="216"/>
         <source>Select this if you want this constraint not to be unlockable from the &apos;Timetable&apos; menu (recommended). You can always remove this constraint from the constraints dialogs or uncheck &quot;permanently locked&quot; checkbox by editing this constraint</source>
-        <translation type="unfinished">Επιλέξτε εάν δεν θέλετε να ξεκλειδώνει ο συγκεκριμένος περιορισμός από το μενού &quot;Ωρολόγιο&quot; (προτεινόμενο). Μπορείτε να διαγράψετε τον περιορισμό αυτό όποτε θέλετε από τον διάλογο περιορισμών ή να επεξεργαστείτε τον συγκεκριμένο περιορισμό και να αποεπιλέξετε το &quot;μόνιμα κλειδωμένος&quot; από το αντίστοιχο πλαίσιο ελέγχου</translation>
+        <translation>Επιλέξτε εάν θέλετε να μην ξεκλειδώνει ο συγκεκριμένος περιορισμός από το μενού &quot;Ωρολόγιο&quot; (προτεινόμενο). Μπορείτε να διαγράψετε τον περιορισμό αυτό όποτε θέλετε από τον διάλογο περιορισμών ή να επεξεργαστείτε τον συγκεκριμένο περιορισμό και να αποεπιλέξετε το &quot;μόνιμα κλειδωμένος&quot; από το αντίστοιχο πλαίσιο ελέγχου</translation>
     </message>
 </context>
 <context>
@@ -41547,27 +41566,27 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform.cpp" line="333"/>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform.cpp" line="341"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform.cpp" line="334"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform.cpp" line="342"/>
         <source>Invalid activity</source>
-        <translation type="unfinished">Μη αποδεκτή δραστηριότητα</translation>
+        <translation>Μη αποδεκτή δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform.cpp" line="361"/>
         <source>FET question</source>
-        <translation type="unfinished">FET - Ερώτηση</translation>
+        <translation>FET - Ερώτηση</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform.cpp" line="362"/>
         <source>Warning: 0 slots selected. Are you sure?</source>
-        <translation type="unfinished"></translation>
+        <translation>Προειδοποίηση: 0 επιλεγμένες περίοδοι. Είστε σίγουροι;</translation>
     </message>
 </context>
 <context>
@@ -41575,60 +41594,60 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform_template.ui" line="83"/>
         <source>Activity</source>
-        <translation type="unfinished">Δραστηριότητα</translation>
+        <translation>Δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform_template.ui" line="146"/>
         <source>Set all allowed</source>
         <comment>It refers to time slots</comment>
-        <translation type="unfinished">Όλες επιτρεπτές</translation>
+        <translation>Όλες επιτρεπτές</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform_template.ui" line="160"/>
         <source>Set all not allowed</source>
         <comment>It refers to time slots</comment>
-        <translation type="unfinished">Καμία επιτρεπτή</translation>
+        <translation>Καμία επιτρεπτή</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform_template.ui" line="167"/>
         <source>Ok</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform_template.ui" line="174"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform_template.ui" line="14"/>
         <source>Modify activity preferred starting times</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Τροποποίηση: &quot;Δραστηριότητα - προτιμητέοι χρόνοι έναρξης&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform_template.ui" line="20"/>
         <source>Filter</source>
-        <translation type="unfinished">Φίλτρο</translation>
+        <translation>Φίλτρο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation type="unfinished">Ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform_template.ui" line="26"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform_template.ui" line="52"/>
         <source>Subject</source>
-        <translation type="unfinished">Αντικείμενο</translation>
+        <translation>Αντικείμενο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform_template.ui" line="62"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Ετικέτα δραστηριότητας</translation>
+        <translation>Ετικέτα δραστηριότητας</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform_template.ui" line="125"/>
@@ -41639,7 +41658,7 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitypreferredstartingtimesform_template.ui" line="153"/>
         <source>X=not allowed, empty=allowed</source>
         <extracomment>This is an explanation in a dialog for a constraint. It says that symbol X means that this slot is not allowed, and an empty cell means that the slot is allowed</extracomment>
-        <translation type="unfinished">Χ=μη επιτρεπτή, κενό=επιτρεπτή</translation>
+        <translation>Χ=μη επιτρεπτή, κενό=επιτρεπτή</translation>
     </message>
 </context>
 <context>
@@ -41648,27 +41667,27 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform.cpp" line="333"/>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform.cpp" line="341"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform.cpp" line="334"/>
         <source>Invalid weight (percentage)</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
+        <translation>Μη αποδεκτή βαρύτητα (ποσοστό)</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform.cpp" line="342"/>
         <source>Invalid activity</source>
-        <translation type="unfinished">Μη αποδεκτή δραστηριότητα</translation>
+        <translation>Μη αποδεκτή δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform.cpp" line="361"/>
         <source>FET question</source>
-        <translation type="unfinished">FET - Ερώτηση</translation>
+        <translation>FET - Ερώτηση</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform.cpp" line="362"/>
         <source>Warning: 0 slots selected. Are you sure?</source>
-        <translation type="unfinished"></translation>
+        <translation>Προειδοποίηση: 0 επιλεγμένες περίοδοι. Είστε σίγουροι;</translation>
     </message>
 </context>
 <context>
@@ -41676,54 +41695,54 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform_template.ui" line="83"/>
         <source>Activity</source>
-        <translation type="unfinished">Δραστηριότητα</translation>
+        <translation>Δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform_template.ui" line="153"/>
         <source>X=not allowed, empty=allowed</source>
         <extracomment>This is an explanation in a dialog for a constraint. It says that symbol X means that this slot is not allowed, and an empty cell means that the slot is allowed</extracomment>
-        <translation type="unfinished">Χ=μη επιτρεπτή, κενό=επιτρεπτή</translation>
+        <translation>Χ=μη επιτρεπτή, κενό=επιτρεπτή</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform_template.ui" line="167"/>
         <source>Ok</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform_template.ui" line="174"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform_template.ui" line="14"/>
         <source>Modify activity preferred time slots</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Τροποποίηση: &quot;Δραστηριότητα - προτιμητέες περίοδοι&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform_template.ui" line="20"/>
         <source>Filter</source>
-        <translation type="unfinished">Φίλτρο</translation>
+        <translation>Φίλτρο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform_template.ui" line="36"/>
         <source>Students set</source>
-        <translation type="unfinished">Ομάδα μαθητών</translation>
+        <translation>Ομάδα μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform_template.ui" line="26"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform_template.ui" line="52"/>
         <source>Subject</source>
-        <translation type="unfinished">Αντικείμενο</translation>
+        <translation>Αντικείμενο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform_template.ui" line="62"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Ετικέτα δραστηριότητας</translation>
+        <translation>Ετικέτα δραστηριότητας</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform_template.ui" line="125"/>
@@ -41734,13 +41753,13 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform_template.ui" line="146"/>
         <source>Set all allowed</source>
         <comment>It refers to time slots</comment>
-        <translation type="unfinished">Όλες επιτρεπτές</translation>
+        <translation>Όλες επιτρεπτές</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitypreferredtimeslotsform_template.ui" line="160"/>
         <source>Set all not allowed</source>
         <comment>It refers to time slots</comment>
-        <translation type="unfinished">Καμία επιτρεπτή</translation>
+        <translation>Καμία επιτρεπτή</translation>
     </message>
 </context>
 <context>
@@ -41750,22 +41769,22 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomform.cpp" line="102"/>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomform.cpp" line="110"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomform.cpp" line="96"/>
         <source>Invalid weight</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα</translation>
+        <translation>Μη αποδεκτή βαρύτητα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomform.cpp" line="103"/>
         <source>Invalid activity tag</source>
-        <translation type="unfinished">Μη αποδεκτή ετικέτα δραστηριότητας</translation>
+        <translation>Μη αποδεκτή ετικέτα δραστηριότητας</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomform.cpp" line="111"/>
         <source>Invalid room</source>
-        <translation type="unfinished">Μη αποδεκτή αίθουσα</translation>
+        <translation>Μη αποδεκτή αίθουσα</translation>
     </message>
 </context>
 <context>
@@ -41773,7 +41792,7 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomform_template.ui" line="50"/>
         <source>Room</source>
-        <translation type="unfinished">Αίθουσα</translation>
+        <translation>Αίθουσα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomform_template.ui" line="72"/>
@@ -41783,23 +41802,23 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomform_template.ui" line="113"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomform_template.ui" line="106"/>
         <source>Ok</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomform_template.ui" line="14"/>
         <source>Modify activity tag preferred room</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Τροποποίηση: &quot;Ετικέτα δραστηριότητας - προτιμητέα αίθουσα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomform_template.ui" line="28"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Ετικέτα δραστηριότητας</translation>
+        <translation>Ετικέτα δραστηριότητας</translation>
     </message>
 </context>
 <context>
@@ -41809,22 +41828,22 @@ Please stop simulation before this</source>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomsform.cpp" line="102"/>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomsform.cpp" line="113"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomsform.cpp" line="97"/>
         <source>Invalid weight</source>
-        <translation type="unfinished">Μη αποδεκτή βαρύτητα</translation>
+        <translation>Μη αποδεκτή βαρύτητα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomsform.cpp" line="103"/>
         <source>Empty list of selected rooms</source>
-        <translation type="unfinished">Κενή λίστα επιλεγμένων αιθουσών</translation>
+        <translation>Κενή λίστα επιλεγμένων αιθουσών</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomsform.cpp" line="114"/>
         <source>Invalid selected activity tag</source>
-        <translation type="unfinished">Μη αποδεκτή επιλογή ετικέτας δραστηριότητας</translation>
+        <translation>Μη αποδεκτή επιλογή ετικέτας δραστηριότητας</translation>
     </message>
 </context>
 <context>
@@ -41837,39 +41856,39 @@ Please stop simulation before this</source>
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomsform_template.ui" line="115"/>
         <source>Ok</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomsform_template.ui" line="122"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomsform_template.ui" line="14"/>
         <source>Modify activity tag preferred rooms</source>
         <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Τροποποίηση: &quot;Ετικέτα δραστηριότητας - προτιμητέες αίθουσες&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomsform_template.ui" line="41"/>
         <source>Rooms</source>
-        <translation type="unfinished">Αίθουσες</translation>
+        <translation>Αίθουσες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomsform_template.ui" line="20"/>
         <source>Activity tag</source>
-        <translation type="unfinished">Ετικέτα δραστηριότητας</translation>
+        <translation>Ετικέτα δραστηριότητας</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomsform_template.ui" line="64"/>
         <source>Selected</source>
         <comment>It refers to a list of selected rooms</comment>
-        <translation type="unfinished"></translation>
+        <translation>Επιλεγμένες</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintactivitytagpreferredroomsform_template.ui" line="77"/>
         <source>Clear</source>
-        <translation type="unfinished">Καθαρισμός</translation>
+        <translation>Καθαρισμός</translation>
     </message>
 </context>
 <context>
@@ -42952,6 +42971,12 @@ Note: students set not available and break are not counted as gaps.</source>
 <context>
     <name>ModifyConstraintStudentsMaxHoursContinuouslyForm_template</name>
     <message>
+        <location filename="../src/interface/modifyconstraintstudentsmaxhourscontinuouslyform_template.ui" line="14"/>
+        <source>Modify students max hours continuously</source>
+        <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxhourscontinuouslyform_template.ui" line="56"/>
         <source>Max hours continuously</source>
         <translation type="unfinished">Μέγιστες ώρες συνεχόμενα</translation>
@@ -42965,12 +42990,6 @@ Note: students set not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstraintstudentsmaxhourscontinuouslyform_template.ui" line="73"/>
         <source>Ok</source>
         <translation type="unfinished">ΟΚ</translation>
-    </message>
-    <message>
-        <location filename="../src/interface/modifyconstraintstudentsmaxhourscontinuouslyform_template.ui" line="14"/>
-        <source>Modify constraint students max hours continuously</source>
-        <extracomment>This is the title of the dialog to modify a constraint of this type</extracomment>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintstudentsmaxhourscontinuouslyform_template.ui" line="28"/>
@@ -44922,7 +44941,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhourscontinuouslyform.cpp" line="104"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhourscontinuouslyform.cpp" line="111"/>
@@ -44991,7 +45010,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhoursdailyform.cpp" line="105"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacheractivitytagmaxhoursdailyform.cpp" line="112"/>
@@ -45186,7 +45205,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteacherintervalmaxdaysperweekform.cpp" line="117"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherintervalmaxdaysperweekform.cpp" line="125"/>
@@ -45264,7 +45283,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxbuildingchangesperdayform.cpp" line="91"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
 </context>
 <context>
@@ -45317,7 +45336,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxbuildingchangesperweekform.cpp" line="91"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
 </context>
 <context>
@@ -45376,7 +45395,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxdaysperweekform.cpp" line="101"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
 </context>
 <context>
@@ -45435,7 +45454,7 @@ Note: students set not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxgapsperdayform.cpp" line="93"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
 </context>
 <context>
@@ -45500,7 +45519,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxgapsperweekform.cpp" line="93"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
 </context>
 <context>
@@ -45559,7 +45578,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxhourscontinuouslyform.cpp" line="91"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
 </context>
 <context>
@@ -45613,7 +45632,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxhoursdailyform.cpp" line="93"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
 </context>
 <context>
@@ -45673,7 +45692,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachermaxspanperdayform.cpp" line="93"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
 </context>
 <context>
@@ -45732,7 +45751,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachermindaysperweekform.cpp" line="93"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
 </context>
 <context>
@@ -45756,7 +45775,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachermindaysperweekform_template.ui" line="94"/>
         <source>Min days per week</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ελάχιστες ημέρες ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachermindaysperweekform_template.ui" line="109"/>
@@ -45785,7 +45804,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachermingapsbetweenbuildingchangesform.cpp" line="91"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
 </context>
 <context>
@@ -45846,17 +45865,17 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminhoursdailyform.cpp" line="95"/>
         <source>Allow empty days check box must be checked. If you need to not allow empty days for a teacher, please use the constraint teacher min days per week</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Πρέπει να τσεκάρετε το πλαίσιο ελέγχου &quot;κενές ημέρες - επιτρεπτές&quot;. Αν δεν θέλετε να επιτρέπονται οι κενές ημέρες για κάποιον εκπαιδευτικό, παρακαλώ χρησιμοποιείστε τον περιορισμό &quot;εκπαιδευτικός - ελάχιστες ημέρες ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminhoursdailyform.cpp" line="106"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminhoursdailyform.cpp" line="133"/>
         <source>This check box must remain checked. If you really need to not allow empty days for this teacher, please use constraint teacher min days per week</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Το συγκεκριμένο πλαίσιο ελέγχου πρέπει να παραμείνει τσεκαρισμένο. Αν πραγματικά δεν θέλετε να επιτρέπονται οι κενές ημέρες για τον συγκεκριμένο εκπαιδευτικό, παρακαλώ χρησιμοποιείστε τον περιορισμό &quot;εκπαιδευτικός - ελάχιστες ημέρες ανά εβδομάδα&quot;</translation>
     </message>
 </context>
 <context>
@@ -45864,7 +45883,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminhoursdailyform_template.ui" line="116"/>
         <source>Min hours daily</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ελάχιστες ώρες ημερησίως</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminhoursdailyform_template.ui" line="148"/>
@@ -45885,7 +45904,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminhoursdailyform_template.ui" line="32"/>
         <source>It is recommended to start with 2 min hours and strenghen them as you find new timetables.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Προτείνεται να ξεκινήσετε με την τιμή 2 για τις &quot;ελάχιστες ώρες ημερησίως&quot; και στη συνέχεια να αυξήσετε την τιμή αυτή, όσο συνεχίζετε να βρίσκετε λύσεις για το ωρολόγιο πρόγραμμά σας.</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminhoursdailyform_template.ui" line="93"/>
@@ -45925,7 +45944,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteacherminrestinghoursform.cpp" line="96"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
 </context>
 <context>
@@ -45984,7 +46003,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachernotavailabletimesform.cpp" line="234"/>
         <source>Invalid teacher</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Μη αποδεκτός εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachernotavailabletimesform.cpp" line="243"/>
@@ -46658,7 +46677,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmindaysperweekform_template.ui" line="56"/>
         <source>Min days per week</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ελάχιστες ημέρες ανά εβδομάδα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersmindaysperweekform_template.ui" line="73"/>
@@ -46736,12 +46755,12 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachersminhoursdailyform.cpp" line="79"/>
         <source>Allow empty days check box must be checked. If you need to not allow empty days for the teachers, please use the constraint teachers min days per week</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Πρέπει να τσεκάρετε το πλαίσιο ελέγχου &quot;κενές ημέρες - επιτρεπτές&quot;. Αν δεν θέλετε να επιτρέπονται οι κενές ημέρες για τους εκπαιδευτικούς, παρακαλώ χρησιμοποιείστε τον περιορισμό &quot;εκπαιδευτικοί - ελάχιστες ημέρες ανά εβδομάδα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersminhoursdailyform.cpp" line="108"/>
         <source>This check box must remain checked. If you really need to not allow empty days for the teachers, please use constraint teachers min days per week</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Το συγκεκριμένο πλαίσιο ελέγχου πρέπει να παραμείνει τσεκαρισμένο. Αν πραγματικά δεν θέλετε να επιτρέπονται οι κενές ημέρες για τους εκπαιδευτικούς, παρακαλώ χρησιμοποιείστε τον περιορισμό &quot;εκπαιδευτικοί - ελάχιστες ημέρες ανά εβδομάδα&quot;</translation>
     </message>
 </context>
 <context>
@@ -46749,7 +46768,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachersminhoursdailyform_template.ui" line="84"/>
         <source>Min hours daily</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ελάχιστες ώρες ημερησίως</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersminhoursdailyform_template.ui" line="14"/>
@@ -46760,7 +46779,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintteachersminhoursdailyform_template.ui" line="32"/>
         <source>It is recommended to start with 2 min hours. Maybe you could try higher values after that, but they might be too large and you might get a impossible timetable.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Συνιστάται να ξεκινήσετε με 2 &quot;ελάχιστες ώρες ανά ημέρα&quot;. Πιθανώς, στη συνέχεια να δοκιμάσετε μεγαλύτερες τιμές, αλλά στην περίπτωση που οι τιμές αυτές είναι υπερβολικά μεγάλες, υπάρχει το ενδεχόμενο να καταστεί αδύνατη η εξεύρεση λύσης (η δημιουργία ωρολογίου προγράμματος).</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintteachersminhoursdailyform_template.ui" line="61"/>
@@ -46870,7 +46889,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintthreeactivitiesgroupedform.cpp" line="174"/>
         <source>Same activities - impossible</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ίδιες δραστηριότητες - αδύνατον</translation>
     </message>
 </context>
 <context>
@@ -46890,17 +46909,17 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstraintthreeactivitiesgroupedform_template.ui" line="56"/>
         <source>First activity</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Πρώτη δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintthreeactivitiesgroupedform_template.ui" line="92"/>
         <source>Second activity</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Δεύτερη δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintthreeactivitiesgroupedform_template.ui" line="128"/>
         <source>Third activity</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Τρίτη δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstraintthreeactivitiesgroupedform_template.ui" line="174"/>
@@ -46941,7 +46960,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform.cpp" line="152"/>
         <source>Same activities - impossible</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ίδιες δραστηριότητες - αδύνατον</translation>
     </message>
 </context>
 <context>
@@ -46955,7 +46974,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="22"/>
         <source>Swap</source>
         <comment>Interchange (swap) the two selected activities in the dialog</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Αντιμετάθεση</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="29"/>
@@ -46976,12 +46995,12 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="97"/>
         <source>First activity</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Πρώτη δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesconsecutiveform_template.ui" line="133"/>
         <source>Second activity</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Δεύτερη δραστηριότητα</translation>
     </message>
 </context>
 <context>
@@ -47012,7 +47031,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesgroupedform.cpp" line="150"/>
         <source>Same activities - impossible</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ίδιες δραστηριότητες - αδύνατον</translation>
     </message>
 </context>
 <context>
@@ -47042,12 +47061,12 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesgroupedform_template.ui" line="90"/>
         <source>First activity</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Πρώτη δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesgroupedform_template.ui" line="126"/>
         <source>Second activity</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Δεύτερη δραστηριότητα</translation>
     </message>
 </context>
 <context>
@@ -47078,7 +47097,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform.cpp" line="152"/>
         <source>Same activities - impossible</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ίδιες δραστηριότητες - αδύνατον</translation>
     </message>
 </context>
 <context>
@@ -47093,7 +47112,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="22"/>
         <source>Swap</source>
         <comment>Interchange (swap) the two selected activities in the dialog</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Αντιμετάθεση</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="29"/>
@@ -47114,12 +47133,12 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="97"/>
         <source>First activity</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Πρώτη δραστηριότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyconstrainttwoactivitiesorderedform_template.ui" line="133"/>
         <source>Second activity</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Δεύτερη δραστηριότητα</translation>
     </message>
 </context>
 <context>
@@ -47219,17 +47238,17 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyroomform.cpp" line="79"/>
         <source>Incorrect name</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Λάθος όνομα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyroomform.cpp" line="83"/>
         <source>Incorrect building</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Λάθος κτίριο</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyroomform.cpp" line="87"/>
         <source>Name existing - please choose another</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Το όνομα αυτό υπάρχει ήδη - παρακαλώ επιλέξτε άλλο όνομα</translation>
     </message>
 </context>
 <context>
@@ -47253,7 +47272,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyroomform_template.ui" line="40"/>
         <source>Capacity</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Χωρητικότητα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifyroomform_template.ui" line="29"/>
@@ -47263,7 +47282,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifyroomform_template.ui" line="67"/>
         <source>Building</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Κτίριο</translation>
     </message>
 </context>
 <context>
@@ -47277,7 +47296,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifystudentsgroupform.cpp" line="61"/>
         <source>Incorrect name</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Λάθος όνομα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsgroupform.cpp" line="69"/>
@@ -47311,7 +47330,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifystudentsgroupform_template.ui" line="66"/>
         <source>Number of students</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Αριθμός μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsgroupform_template.ui" line="100"/>
@@ -47330,7 +47349,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifystudentssubgroupform.cpp" line="64"/>
         <source>Incorrect name</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Λάθος όνομα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentssubgroupform.cpp" line="73"/>
@@ -47348,7 +47367,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifystudentssubgroupform_template.ui" line="81"/>
         <source>Number of students</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Αριθμός μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentssubgroupform_template.ui" line="64"/>
@@ -47388,12 +47407,12 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifystudentsyearform.cpp" line="61"/>
         <source>Incorrect name</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Λάθος όνομα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsyearform.cpp" line="65"/>
         <source>Name existing - please choose another</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Το όνομα αυτό υπάρχει ήδη - παρακαλώ επιλέξτε άλλο όνομα</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsyearform.cpp" line="102"/>
@@ -47465,7 +47484,7 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/modifystudentsyearform_template.ui" line="39"/>
         <source>Number of students</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Αριθμός μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/modifystudentsyearform_template.ui" line="22"/>
@@ -48043,7 +48062,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/engine/room.cpp" line="47"/>
         <source>N:%1</source>
         <comment>Name of room</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ο:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/room.cpp" line="51"/>
@@ -48072,7 +48091,7 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/engine/room.cpp" line="74"/>
         <source>Name=%1</source>
         <comment>The name of the room</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Όνομα=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/room.cpp" line="78"/>
@@ -50008,7 +50027,7 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="431"/>
         <source>Reset</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Επαναφορά</translation>
     </message>
 </context>
 <context>
@@ -51550,7 +51569,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="67"/>
         <source>Subgroup</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Υποτμήμα</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="84"/>
@@ -51623,7 +51642,7 @@ Bottom: %4</source>
         <location filename="../src/engine/subject.cpp" line="42"/>
         <source>N:%1</source>
         <comment>The name of the subject</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ο:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/subject.cpp" line="46"/>
@@ -51640,7 +51659,7 @@ Bottom: %4</source>
         <location filename="../src/engine/subject.cpp" line="55"/>
         <source>Name=%1</source>
         <comment>The name of the subject</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Όνομα=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/subject.cpp" line="60"/>
@@ -51679,7 +51698,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="104"/>
         <source>Could not insert item. Must be a duplicate</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Αδύνατη η εισαγωγή στοιχείου. Πιθανότατα υπάρχει ήδη</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="114"/>
@@ -51698,7 +51717,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="114"/>
         <source>Incorrect name</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Λάθος όνομα</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="124"/>
@@ -51871,7 +51890,7 @@ Bottom: %4</source>
         <location filename="../src/engine/teacher.cpp" line="50"/>
         <source>N:%1</source>
         <comment>The name of the teacher</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ο:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/teacher.cpp" line="54"/>
@@ -51888,7 +51907,7 @@ Bottom: %4</source>
         <location filename="../src/engine/teacher.cpp" line="63"/>
         <source>Name=%1</source>
         <comment>The name of the teacher</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Όνομα=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/teacher.cpp" line="66"/>
@@ -51991,7 +52010,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/teachersform.cpp" line="105"/>
         <source>Could not insert item. Must be a duplicate</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Αδύνατη η εισαγωγή στοιχείου. Πιθανότατα υπάρχει ήδη</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform.cpp" line="115"/>
@@ -52014,7 +52033,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/teachersform.cpp" line="115"/>
         <source>Incorrect name</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Λάθος όνομα</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform.cpp" line="125"/>
@@ -52796,7 +52815,7 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="4370"/>
         <location filename="../src/engine/timetableexport.cpp" line="4422"/>
         <source>Activity Tag</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ετικέτα Δραστηριότητας</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="4626"/>
@@ -53078,7 +53097,7 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="10517"/>
         <location filename="../src/engine/timetableexport.cpp" line="10527"/>
         <source>Subgroup</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Υποτμήμα</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="1729"/>
@@ -53569,21 +53588,21 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegenerateform.cpp" line="733"/>
         <source>%1 h</source>
         <comment>hours</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">%1 ω</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="713"/>
         <location filename="../src/interface/timetablegenerateform.cpp" line="737"/>
         <source>%1 m</source>
         <comment>minutes</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">%1 λ</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="718"/>
         <location filename="../src/interface/timetablegenerateform.cpp" line="741"/>
         <source>%1 s</source>
         <comment>seconds</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">%1 δ</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="756"/>
@@ -53782,7 +53801,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegenerateform.cpp" line="745"/>
         <source>Max placed activities: %1 (at %2)</source>
         <comment>%1 represents the maximum number of activities placed, %2 is a time interval</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Μέγιστες δραστηριότητες που τοποθετήθηκαν: %1 (σε %2)</translation>
     </message>
 </context>
 <context>
@@ -53906,25 +53925,25 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="497"/>
         <source>%1 h</source>
         <comment>hours</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">%1 ω</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="501"/>
         <source>%1 m</source>
         <comment>minutes</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">%1 λ</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="505"/>
         <source>%1 s</source>
         <comment>seconds</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">%1 δ</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="509"/>
         <source>Max placed activities: %1 (at %2)</source>
         <comment>%1 represents the maximum number of activities placed, %2 is a time interval</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Μέγιστες δραστηριότητες που τοποθετήθηκαν: %1 (σε %2)</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="512"/>
@@ -55215,12 +55234,12 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="70"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Κλείδωμα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="77"/>
         <source>Unlock</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ξεκλείδωμα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="84"/>
@@ -55734,12 +55753,12 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="70"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Κλείδωμα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="77"/>
         <source>Unlock</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ξεκλείδωμα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="84"/>
@@ -56230,12 +56249,12 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="70"/>
         <source>Lock</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Κλείδωμα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="77"/>
         <source>Unlock</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ξεκλείδωμα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="84"/>
