@@ -282,7 +282,7 @@ void TimetableGenerateMultipleForm::start(){
 		connect(&progress, SIGNAL(canceled()), &gt.rules, SLOT(cancelInternalStructureComputation()));
 		progress.setModal(true);
 
-		ErrorList errors = gt.rules.computeInternalStructure(this);
+		ErrorList errors = gt.rules.computeInternalStructure();
 		ErrorRenderer::renderErrorList(this, errors);
 		if (errors.hasError()){
 			QMessageBox::warning(this, TimetableGenerateMultipleForm::tr("FET warning"), TimetableGenerateMultipleForm::tr("Data is wrong. Please correct and try again"));

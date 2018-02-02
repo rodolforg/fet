@@ -1244,7 +1244,7 @@ int main(int argc, char **argv)
 			cout << QCoreApplication::translate("Rules", stepText).toStdString() << endl;
 		});
 #endif
-		errors = gt.rules.computeInternalStructure(NULL);
+		errors = gt.rules.computeInternalStructure();
 		renderErrorList(errors);
 		if (errors.hasError()){
 			cerr<<"Cannot compute internal structure - aborting"<<endl;

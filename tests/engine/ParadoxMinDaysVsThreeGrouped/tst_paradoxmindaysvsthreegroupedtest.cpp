@@ -55,7 +55,7 @@ void ParadoxMinDaysVsThreeGroupedTest::test_generate_error_message_first_actvity
 	rules.addSimpleActivityFast(12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
 	rules.addSimpleActivityFast(23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
 	rules.addSimpleActivityFast(34567, 34567, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	TimeConstraint * ctr = new ConstraintBasicCompulsoryTime();
 	rules.addTimeConstraint(ctr);
@@ -65,7 +65,7 @@ void ParadoxMinDaysVsThreeGroupedTest::test_generate_error_message_first_actvity
 	rules.addTimeConstraint(minDaysCtr);
 	ctr = new ConstraintThreeActivitiesGrouped(100, 12345, 23456, 34567);
 	rules.addTimeConstraint(ctr);
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	ParadoxMinDaysVsThreeGrouped paradox;
 	processTimeSpaceConstraints(NULL);
@@ -93,7 +93,7 @@ void ParadoxMinDaysVsThreeGroupedTest::test_generate_multiple_error_messages()
 	rules.addSimpleActivityFast(23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
 	rules.addSimpleActivityFast(34567, 34567, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
 	rules.addSimpleActivityFast(45678, 45678, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	TimeConstraint * ctr = new ConstraintBasicCompulsoryTime();
 	rules.addTimeConstraint(ctr);
@@ -103,7 +103,7 @@ void ParadoxMinDaysVsThreeGroupedTest::test_generate_multiple_error_messages()
 	rules.addTimeConstraint(minDaysCtr);
 	ctr = new ConstraintThreeActivitiesGrouped(100, 12345, 23456, 34567);
 	rules.addTimeConstraint(ctr);
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	ParadoxMinDaysVsThreeGrouped paradox;
 	processTimeSpaceConstraints(NULL);
@@ -130,7 +130,7 @@ void ParadoxMinDaysVsThreeGroupedTest::test_reset_properly()
 	rules.addSimpleActivityFast(12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
 	rules.addSimpleActivityFast(23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
 	rules.addSimpleActivityFast(34567, 34567, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	TimeConstraint * ctr = new ConstraintBasicCompulsoryTime();
 	rules.addTimeConstraint(ctr);
@@ -140,7 +140,7 @@ void ParadoxMinDaysVsThreeGroupedTest::test_reset_properly()
 	rules.addTimeConstraint(ctr);
 	ctr = new ConstraintThreeActivitiesGrouped(100, 12345, 23456, 34567);
 	rules.addTimeConstraint(ctr);
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	ParadoxMinDaysVsThreeGrouped paradox;
 	processTimeSpaceConstraints(NULL);
@@ -173,7 +173,7 @@ void ParadoxMinDaysVsThreeGroupedTest::test_all_pairs()
 	rules.addSimpleActivityFast(12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
 	rules.addSimpleActivityFast(23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
 	rules.addSimpleActivityFast(34567, 34567, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	TimeConstraint * ctr = new ConstraintBasicCompulsoryTime();
 	rules.addTimeConstraint(ctr);
@@ -183,7 +183,7 @@ void ParadoxMinDaysVsThreeGroupedTest::test_all_pairs()
 	rules.addTimeConstraint(minDaysCtr);
 	ctr = new ConstraintThreeActivitiesGrouped(100, 12345, 23456, 34567);
 	rules.addTimeConstraint(ctr);
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	ParadoxMinDaysVsThreeGrouped paradox;
 	processTimeSpaceConstraints(NULL);
@@ -199,7 +199,7 @@ void ParadoxMinDaysVsThreeGroupedTest::test_all_pairs()
 	minDaysCtr = new ConstraintMinDaysBetweenActivities(100, false, 2, acts, 1);
 	rules.addTimeConstraint(minDaysCtr);
 
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 	processTimeSpaceConstraints(NULL);
 	result = paradox.prepare(rules);
 	QVERIFY2(!result, "Paradox not found with min-days for two first activities");
@@ -212,7 +212,7 @@ void ParadoxMinDaysVsThreeGroupedTest::test_all_pairs()
 	minDaysCtr = new ConstraintMinDaysBetweenActivities(100, false, 2, acts, 1);
 	rules.addTimeConstraint(minDaysCtr);
 
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 	processTimeSpaceConstraints(NULL);
 	result = paradox.prepare(rules);
 	QVERIFY2(!result, "Paradox not found with min-days for two first activities in reverse order");
@@ -226,7 +226,7 @@ void ParadoxMinDaysVsThreeGroupedTest::test_all_pairs()
 	minDaysCtr = new ConstraintMinDaysBetweenActivities(100, false, 2, acts, 1);
 	rules.addTimeConstraint(minDaysCtr);
 
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 	processTimeSpaceConstraints(NULL);
 	result = paradox.prepare(rules);
 	QVERIFY2(!result, "Paradox not found with min-days for first and third activities");
@@ -239,7 +239,7 @@ void ParadoxMinDaysVsThreeGroupedTest::test_all_pairs()
 	minDaysCtr = new ConstraintMinDaysBetweenActivities(100, false, 2, acts, 1);
 	rules.addTimeConstraint(minDaysCtr);
 
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 	processTimeSpaceConstraints(NULL);
 	result = paradox.prepare(rules);
 	QVERIFY2(!result, "Paradox not found with min-days for first and third activities in reverse order");
@@ -253,7 +253,7 @@ void ParadoxMinDaysVsThreeGroupedTest::test_all_pairs()
 	minDaysCtr = new ConstraintMinDaysBetweenActivities(100, false, 2, acts, 1);
 	rules.addTimeConstraint(minDaysCtr);
 
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 	processTimeSpaceConstraints(NULL);
 	result = paradox.prepare(rules);
 	QVERIFY2(!result, "Paradox not found with min-days for two last activities");
@@ -266,7 +266,7 @@ void ParadoxMinDaysVsThreeGroupedTest::test_all_pairs()
 	minDaysCtr = new ConstraintMinDaysBetweenActivities(100, false, 2, acts, 1);
 	rules.addTimeConstraint(minDaysCtr);
 
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 	processTimeSpaceConstraints(NULL);
 	result = paradox.prepare(rules);
 	QVERIFY2(!result, "Paradox not found with min-days for two last activities in reverse order");

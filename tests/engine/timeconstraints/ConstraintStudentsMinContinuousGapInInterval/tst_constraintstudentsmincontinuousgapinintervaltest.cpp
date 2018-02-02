@@ -47,7 +47,7 @@ void ConstraintStudentsMinContinuousGapInIntervalTest::OneStudentSet_CheckInvali
 	StudentsYear *sty = new StudentsYear();
 	sty->name = "y1";
 	rules.addYear(sty);
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	ConstraintStudentsSetMinContinuousGapInInterval *ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 2, "y1", 1, 5);
 
@@ -102,7 +102,7 @@ void ConstraintStudentsMinContinuousGapInIntervalTest::AllStudents_CheckInvalidV
 {
 	Rules rules;
 	rules.init();
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	ConstraintStudentsMinContinuousGapInInterval *ctr = new ConstraintStudentsMinContinuousGapInInterval(100.0, 2, 1, 5);
 
@@ -166,7 +166,7 @@ void ConstraintStudentsMinContinuousGapInIntervalTest::OneStudentsSet_FitnessAcc
 	ok = rules.addTimeConstraint(ctr);
 	QVERIFY2(ok, "Could not add constraint");
 
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	Solution c;
 	c.times[0] = 1;
@@ -185,7 +185,7 @@ void ConstraintStudentsMinContinuousGapInIntervalTest::AllStudents_FitnessAccept
 	bool ok = rules.addTimeConstraint(ctr);
 	QVERIFY2(ok, "Could not add constraint");
 
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	Solution c;
 	c.times[0] = 1;
@@ -217,7 +217,7 @@ void ConstraintStudentsMinContinuousGapInIntervalTest::OneStudentsSet_CheckFitne
 	bool ok = rules.addTimeConstraint(ctr);
 	QVERIFY2(ok, "Could not add constraint");
 
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	Solution c;
 
@@ -302,7 +302,7 @@ void ConstraintStudentsMinContinuousGapInIntervalTest::OneStudentsGroup_CheckFit
 	bool ok = rules.addTimeConstraint(ctr);
 	QVERIFY2(ok, "Could not add constraint");
 
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	Solution c;
 
@@ -387,7 +387,7 @@ void ConstraintStudentsMinContinuousGapInIntervalTest::AllStudents_CheckFitness(
 	bool ok = rules.addTimeConstraint(ctr);
 	QVERIFY2(ok, "Could not add constraint");
 
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	Solution c;
 
@@ -473,7 +473,7 @@ void ConstraintStudentsMinContinuousGapInIntervalTest::OneStudentsSet_CheckFitne
 	bool ok = rules.addTimeConstraint(ctr);
 	QVERIFY2(ok, "Could not add constraint");
 
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	Solution c;
 
@@ -513,7 +513,7 @@ void ConstraintStudentsMinContinuousGapInIntervalTest::AllStudents_CheckFitness_
 	bool ok = rules.addTimeConstraint(ctr);
 	QVERIFY2(ok, "Could not add constraint");
 
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	Solution c;
 

@@ -252,7 +252,7 @@ public:
 	and internalStructureComputationFinished().
 	Computation is interrupted by calling cancelInternalStructureComputation().
 	*/
-	ErrorList computeInternalStructure(QWidget* parent);
+	ErrorList computeInternalStructure();
 
 	/**
 	Terminator - basically clears the memory for the constraints.

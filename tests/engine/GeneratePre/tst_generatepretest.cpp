@@ -114,7 +114,7 @@ void GeneratePreTest::MinDays_InactiveConstraintIsIgnored()
 	ConstraintMinDaysBetweenActivities *ctr = new ConstraintMinDaysBetweenActivities(50.0, false, 2, acts, 5);
 	mock.rules.addTimeConstraint(ctr);
 	ctr->active = false;
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinDaysBetweenActivities mdba;
 
@@ -167,7 +167,7 @@ void GeneratePreTest::MinDays_ComputedSize()
 	acts << 12345 << 23456;
 	ConstraintMinDaysBetweenActivities *ctr = new ConstraintMinDaysBetweenActivities(50.0, false, 2, acts, 5);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinDaysBetweenActivities mdba;
 
@@ -196,7 +196,7 @@ void GeneratePreTest::MinDays_CheckValues()
 	acts << 12345 << 23456;
 	ConstraintMinDaysBetweenActivities *ctr = new ConstraintMinDaysBetweenActivities(50.0, false, 2, acts, 5);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinDaysBetweenActivities mdba;
 
@@ -229,7 +229,7 @@ void GeneratePreTest::MinDays_ActivityHasMoreThanOneOfThisConstraint()
 	acts << 23456 << 34567;
 	ConstraintMinDaysBetweenActivities *ctr2 = new ConstraintMinDaysBetweenActivities(75.0, true, 2, acts, 4);
 	mock.rules.addTimeConstraint(ctr2);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinDaysBetweenActivities mdba;
 
@@ -266,7 +266,7 @@ void GeneratePreTest::MinDays_FailIfActivityMinDaysToItself()
 
 	ConstraintMinDaysBetweenActivities *ctr1 = new ConstraintMinDaysBetweenActivities(80.0, false, 2, acts, 5);
 	mock.rules.addTimeConstraint(ctr1);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinDaysBetweenActivities mdba;
 
@@ -282,7 +282,7 @@ void GeneratePreTest::MinDays_FailIfActivityMinDaysToItself_v2()
 	acts << 12345 << 12345;
 	ConstraintMinDaysBetweenActivities *ctr1 = new ConstraintMinDaysBetweenActivities(80.0, false, 2, acts, 5);
 	mock.rules.timeConstraintsList.append(ctr1);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinDaysBetweenActivities mdba;
 
@@ -298,7 +298,7 @@ void GeneratePreTest::MinDays_NumErrorMsgs_WhenPreparationOfMinDaysFails()
 	acts << 12345 << 12345;
 	ConstraintMinDaysBetweenActivities *ctr1 = new ConstraintMinDaysBetweenActivities(80.0, false, 2, acts, 5);
 	mock.rules.timeConstraintsList.append(ctr1);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinDaysBetweenActivities mdba;
 
@@ -309,7 +309,7 @@ void GeneratePreTest::MinDays_NumErrorMsgs_WhenPreparationOfMinDaysFails()
 	acts << 23456 << 23456;
 	ConstraintMinDaysBetweenActivities *ctr2 = new ConstraintMinDaysBetweenActivities(100.0, false, 2, acts, 3);
 	mock.rules.timeConstraintsList.append(ctr2);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	QVERIFY(mdba.prepare(mock.rules) == false);
 	QCOMPARE(mdba.getErrors().count(), 2);
@@ -323,7 +323,7 @@ void GeneratePreTest::MinDays_ThreeActivitiesAtOnce()
 	acts << 12345 << 23456 << 34567;
 	ConstraintMinDaysBetweenActivities *ctr1 = new ConstraintMinDaysBetweenActivities(80.0, true, 3, acts, 2);
 	mock.rules.timeConstraintsList.append(ctr1);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinDaysBetweenActivities mdba;
 
@@ -390,7 +390,7 @@ void GeneratePreTest::MaxDays_InactiveConstraintIsIgnored()
 	ConstraintMaxDaysBetweenActivities *ctr = new ConstraintMaxDaysBetweenActivities(50.0, 2, acts, 5);
 	mock.rules.addTimeConstraint(ctr);
 	ctr->active = false;
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MaxDaysBetweenActivities mdba;
 
@@ -442,7 +442,7 @@ void GeneratePreTest::MaxDays_ComputedSize()
 	acts << 12345 << 23456;
 	ConstraintMaxDaysBetweenActivities *ctr = new ConstraintMaxDaysBetweenActivities(50.0, 2, acts, 5);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MaxDaysBetweenActivities mdba;
 
@@ -469,7 +469,7 @@ void GeneratePreTest::MaxDays_CheckValues()
 	acts << 12345 << 23456;
 	ConstraintMaxDaysBetweenActivities *ctr = new ConstraintMaxDaysBetweenActivities(50.0, 2, acts, 5);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MaxDaysBetweenActivities mdba;
 
@@ -500,7 +500,7 @@ void GeneratePreTest::MaxDays_ActivityHasMoreThanOneOfThisConstraint()
 	acts << 23456 << 34567;
 	ConstraintMaxDaysBetweenActivities *ctr2 = new ConstraintMaxDaysBetweenActivities(75.0, 2, acts, 4);
 	mock.rules.addTimeConstraint(ctr2);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MaxDaysBetweenActivities mdba;
 
@@ -534,7 +534,7 @@ void GeneratePreTest::MaxDays_FailIfActivityMaxDaysToItself()
 
 	ConstraintMaxDaysBetweenActivities *ctr1 = new ConstraintMaxDaysBetweenActivities(80.0, 2, acts, 5);
 	mock.rules.addTimeConstraint(ctr1);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MaxDaysBetweenActivities mdba;
 
@@ -550,7 +550,7 @@ void GeneratePreTest::MaxDays_FailIfActivityMaxDaysToItself_v2()
 	acts << 12345 << 12345;
 	ConstraintMaxDaysBetweenActivities *ctr1 = new ConstraintMaxDaysBetweenActivities(80.0, 2, acts, 5);
 	mock.rules.timeConstraintsList.append(ctr1);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MaxDaysBetweenActivities mdba;
 
@@ -566,7 +566,7 @@ void GeneratePreTest::MaxDays_NumErrorMsgs_WhenPreparationOfMaxDaysFails()
 	acts << 12345 << 12345;
 	ConstraintMaxDaysBetweenActivities *ctr1 = new ConstraintMaxDaysBetweenActivities(80.0, 2, acts, 5);
 	mock.rules.timeConstraintsList.append(ctr1);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MaxDaysBetweenActivities mdba;
 
@@ -577,7 +577,7 @@ void GeneratePreTest::MaxDays_NumErrorMsgs_WhenPreparationOfMaxDaysFails()
 	acts << 23456 << 23456;
 	ConstraintMaxDaysBetweenActivities *ctr2 = new ConstraintMaxDaysBetweenActivities(100.0, 2, acts, 3);
 	mock.rules.timeConstraintsList.append(ctr2);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	QVERIFY(mdba.prepare(mock.rules) == false);
 	QCOMPARE(mdba.getErrors().count(), 2);
@@ -591,7 +591,7 @@ void GeneratePreTest::MaxDays_ThreeActivitiesAtOnce()
 	acts << 12345 << 23456 << 34567;
 	ConstraintMaxDaysBetweenActivities *ctr1 = new ConstraintMaxDaysBetweenActivities(80.0, 3, acts, 2);
 	mock.rules.timeConstraintsList.append(ctr1);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MaxDaysBetweenActivities mdba;
 
@@ -652,7 +652,7 @@ void GeneratePreTest::MinGaps_InactiveConstraintIsIgnored()
 	ConstraintMinGapsBetweenActivities *ctr = new ConstraintMinGapsBetweenActivities(50.0, 2, acts, 5);
 	mock.rules.addTimeConstraint(ctr);
 	ctr->active = false;
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinGapsBetweenActivities mgba;
 
@@ -704,7 +704,7 @@ void GeneratePreTest::MinGaps_ComputedSize()
 	acts << 12345 << 23456;
 	ConstraintMinGapsBetweenActivities *ctr = new ConstraintMinGapsBetweenActivities(50.0, 2, acts, 5);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinGapsBetweenActivities mgba;
 
@@ -731,7 +731,7 @@ void GeneratePreTest::MinGaps_CheckValues()
 	acts << 12345 << 23456;
 	ConstraintMinGapsBetweenActivities *ctr = new ConstraintMinGapsBetweenActivities(50.0, 2, acts, 5);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinGapsBetweenActivities mgba;
 
@@ -762,7 +762,7 @@ void GeneratePreTest::MinGaps_ActivityHasMoreThanOneOfThisConstraint()
 	acts << 23456 << 34567;
 	ConstraintMinGapsBetweenActivities *ctr2 = new ConstraintMinGapsBetweenActivities(75.0, 2, acts, 4);
 	mock.rules.addTimeConstraint(ctr2);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinGapsBetweenActivities mgba;
 
@@ -796,7 +796,7 @@ void GeneratePreTest::MinGaps_FailIfActivityMinGapsToItself()
 
 	ConstraintMinGapsBetweenActivities *ctr1 = new ConstraintMinGapsBetweenActivities(80.0, 2, acts, 5);
 	mock.rules.addTimeConstraint(ctr1);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinGapsBetweenActivities mgba;
 
@@ -812,7 +812,7 @@ void GeneratePreTest::MinGaps_FailIfActivityMinGapsToItself_v2()
 	acts << 12345 << 12345;
 	ConstraintMinGapsBetweenActivities *ctr1 = new ConstraintMinGapsBetweenActivities(80.0, 2, acts, 5);
 	mock.rules.timeConstraintsList.append(ctr1);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinGapsBetweenActivities mgba;
 
@@ -828,7 +828,7 @@ void GeneratePreTest::MinGaps_NumErrorMsgs_WhenPreparationOfMinGapsFails()
 	acts << 12345 << 12345;
 	ConstraintMinGapsBetweenActivities *ctr1 = new ConstraintMinGapsBetweenActivities(80.0, 2, acts, 5);
 	mock.rules.timeConstraintsList.append(ctr1);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinGapsBetweenActivities mgba;
 
@@ -839,7 +839,7 @@ void GeneratePreTest::MinGaps_NumErrorMsgs_WhenPreparationOfMinGapsFails()
 	acts << 23456 << 23456;
 	ConstraintMinGapsBetweenActivities *ctr2 = new ConstraintMinGapsBetweenActivities(100.0, 2, acts, 3);
 	mock.rules.timeConstraintsList.append(ctr2);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	QVERIFY(mgba.prepare(mock.rules) == false);
 	QCOMPARE(mgba.getErrors().count(), 2);
@@ -853,7 +853,7 @@ void GeneratePreTest::MinGaps_ThreeActivitiesAtOnce()
 	acts << 12345 << 23456 << 34567;
 	ConstraintMinGapsBetweenActivities *ctr1 = new ConstraintMinGapsBetweenActivities(80.0, 3, acts, 2);
 	mock.rules.timeConstraintsList.append(ctr1);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinGapsBetweenActivities mgba;
 
@@ -913,7 +913,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_InactiveConstraintIsIgn
 	ConstraintTeachersMinContinuousGapInInterval *ctr = new ConstraintTeachersMinContinuousGapInInterval(100.0, 2, 1, 5);
 	mock.rules.addTimeConstraint(ctr);
 	ctr->active = false;
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinContinuousGapInIntervalForTeachers mcgi;
 
@@ -932,7 +932,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_InactiveConstraintIsIgn
 	ConstraintTeacherMinContinuousGapInInterval *ctr2 = new ConstraintTeacherMinContinuousGapInInterval(100.0, 2, "t2", 1, 5);
 	mock.rules.addTimeConstraint(ctr2);
 	ctr2->active = false;
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	result = mcgi.prepare(mock.rules);
 
@@ -954,7 +954,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_TeachersAffectAll()
 
 	ConstraintTeachersMinContinuousGapInInterval *ctr = new ConstraintTeachersMinContinuousGapInInterval(100.0, 2, 1, 5);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinContinuousGapInIntervalForTeachers mcgi;
 
@@ -986,7 +986,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_TeacherAffectOnlyOne()
 
 	ConstraintTeacherMinContinuousGapInInterval *ctr = new ConstraintTeacherMinContinuousGapInInterval(100.0, 2, "t2", 1, 5);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinContinuousGapInIntervalForTeachers mcgi;
 
@@ -1016,7 +1016,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_TeacherHasMoreThanOneOf
 	mock.rules.addTimeConstraint(ctr);
 	ctr = new ConstraintTeacherMinContinuousGapInInterval(100.0, 3, "t1", 3, 7);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinContinuousGapInIntervalForTeachers mcgi;
 
@@ -1038,7 +1038,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_TeacherHasMoreThanOneOf
 
 	ConstraintTeachersMinContinuousGapInInterval *ctr2 = new ConstraintTeachersMinContinuousGapInInterval(100.0, 2, 4, 9);
 	mock.rules.addTimeConstraint(ctr2);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	result = mcgi.prepare(mock.rules);
 
@@ -1066,7 +1066,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_NumErrorMsgs_WhenPrepar
 	mock.rules.addTimeConstraint(ctr);
 	ctr = new ConstraintTeacherMinContinuousGapInInterval(100.0, 2, "t1", 4, 8);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinContinuousGapInIntervalForTeachers mcgi;
 
@@ -1085,7 +1085,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_TwoTotallyDifferentOnes
 	mock.rules.addTimeConstraint(ctr);
 	ctr = new ConstraintTeacherMinContinuousGapInInterval(100.0, 2, "t1", 6, 9);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinContinuousGapInIntervalForTeachers mcgi;
 
@@ -1115,7 +1115,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_TwoTotallyDifferentOnes
 	mock.rules.addTimeConstraint(ctr);
 	ctr = new ConstraintTeachersMinContinuousGapInInterval(100.0, 2, 6, 9);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinContinuousGapInIntervalForTeachers mcgi;
 
@@ -1161,7 +1161,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_YellsWhenTeacherHasMore
 	mock.rules.addTimeConstraint(ctr);
 	ctr = new ConstraintTeacherMinContinuousGapInInterval(60.0, 2, "t1", 7, 9);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinContinuousGapInIntervalForTeachers mcgi;
 
@@ -1179,7 +1179,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_MoreThanOneToSameTeache
 	mock.rules.addTimeConstraint(ctr);
 	ctr = new ConstraintTeacherMinContinuousGapInInterval(50.0, 2, "t1", 1, 5);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinContinuousGapInIntervalForTeachers mcgi;
 
@@ -1197,7 +1197,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_MoreThanOneToSameTeache
 
 	ConstraintTeachersMinContinuousGapInInterval *ctr2 = new ConstraintTeachersMinContinuousGapInInterval(100.0, 2, 1, 5);
 	mock.rules.addTimeConstraint(ctr2);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	result = mcgi.prepare(mock.rules);
 
@@ -1226,7 +1226,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_OneThatIncludesAnotherO
 	mock.rules.addTimeConstraint(ctr);
 	ctr = new ConstraintTeacherMinContinuousGapInInterval(100.0, 2, "t1", 2, 6);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinContinuousGapInIntervalForTeachers mcgi;
 
@@ -1244,7 +1244,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_OneThatIncludesAnotherO
 
 	ConstraintTeachersMinContinuousGapInInterval *ctr2 = new ConstraintTeachersMinContinuousGapInInterval(100.0, 2, 2, 5);
 	mock.rules.addTimeConstraint(ctr2);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	result = mcgi.prepare(mock.rules);
 
@@ -1260,7 +1260,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_OneThatIncludesAnotherO
 
 	ctr = new ConstraintTeacherMinContinuousGapInInterval(100.0, 2, "t1", 3, 5);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	result = mcgi.prepare(mock.rules);
 
@@ -1284,7 +1284,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_WithSameIntervalOfSameT
 	mock.rules.addTimeConstraint(ctr);
 	ctr = new ConstraintTeacherMinContinuousGapInInterval(90.0, 2, "t1", 1, 7);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinContinuousGapInIntervalForTeachers mcgi;
 
@@ -1306,7 +1306,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_WithSameIntervalOfSameT
 
 	ctr = new ConstraintTeacherMinContinuousGapInInterval(100.0, 4, "t1", 1, 7);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 	result = mcgi.prepare(mock.rules);
 
 	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForTeachers constraint list");
@@ -1333,7 +1333,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_OneThatIncludesAnotherO
 	mock.rules.addTimeConstraint(ctr);
 	ctr = new ConstraintTeacherMinContinuousGapInInterval(90.0, 2, "t1", 2, 6);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinContinuousGapInIntervalForTeachers mcgi;
 
@@ -1363,7 +1363,7 @@ void GeneratePreTest::TeachersMinContinuousGapInInterval_OneThatIncludesAnotherO
 	mock.rules.addTimeConstraint(ctr);
 	ctr = new ConstraintTeacherMinContinuousGapInInterval(100.0, 3, "t1", 2, 6);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinContinuousGapInIntervalForTeachers mcgi;
 
@@ -1399,7 +1399,7 @@ void GeneratePreTest::StudentsMinContinuousGapInInterval_InactiveConstraintIsIgn
 	ConstraintStudentsMinContinuousGapInInterval *ctr = new ConstraintStudentsMinContinuousGapInInterval(100.0, 2, 1, 5);
 	mock.rules.addTimeConstraint(ctr);
 	ctr->active = false;
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinContinuousGapInIntervalForStudents mcgi;
 
@@ -1418,7 +1418,7 @@ void GeneratePreTest::StudentsMinContinuousGapInInterval_InactiveConstraintIsIgn
 	ConstraintStudentsSetMinContinuousGapInInterval *ctr2 = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 2, "y2", 1, 5);
 	mock.rules.addTimeConstraint(ctr2);
 	ctr2->active = false;
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	result = mcgi.prepare(mock.rules);
 
@@ -1440,7 +1440,7 @@ void GeneratePreTest::StudentsMinContinuousGapInInterval_StudentsAffectAll()
 
 	ConstraintStudentsMinContinuousGapInInterval *ctr = new ConstraintStudentsMinContinuousGapInInterval(100.0, 2, 1, 5);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinContinuousGapInIntervalForStudents mcgi;
 
@@ -1472,7 +1472,7 @@ void GeneratePreTest::StudentsMinContinuousGapInInterval_StudentsSetAffectOnlyOn
 
 	ConstraintStudentsSetMinContinuousGapInInterval *ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 2, "y2", 1, 5);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinContinuousGapInIntervalForStudents mcgi;
 
@@ -1502,7 +1502,7 @@ void GeneratePreTest::StudentsMinContinuousGapInInterval_StudentsSetHasMoreThanO
 	mock.rules.addTimeConstraint(ctr);
 	ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 3, "y1", 3, 7);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinContinuousGapInIntervalForStudents mcgi;
 
@@ -1524,7 +1524,7 @@ void GeneratePreTest::StudentsMinContinuousGapInInterval_StudentsSetHasMoreThanO
 
 	ConstraintStudentsMinContinuousGapInInterval *ctr2 = new ConstraintStudentsMinContinuousGapInInterval(100.0, 2, 4, 9);
 	mock.rules.addTimeConstraint(ctr2);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	result = mcgi.prepare(mock.rules);
 
@@ -1552,7 +1552,7 @@ void GeneratePreTest::StudentsMinContinuousGapInInterval_NumErrorMsgs_WhenPrepar
 	mock.rules.addTimeConstraint(ctr);
 	ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 2, "y1", 4, 8);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinContinuousGapInIntervalForStudents mcgi;
 
@@ -1571,7 +1571,7 @@ void GeneratePreTest::StudentsMinContinuousGapInInterval_TwoTotallyDifferentOnes
 	mock.rules.addTimeConstraint(ctr);
 	ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 2, "y1", 6, 9);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinContinuousGapInIntervalForStudents mcgi;
 
@@ -1601,7 +1601,7 @@ void GeneratePreTest::StudentsMinContinuousGapInInterval_TwoTotallyDifferentOnes
 	mock.rules.addTimeConstraint(ctr);
 	ctr = new ConstraintStudentsMinContinuousGapInInterval(100.0, 2, 6, 9);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinContinuousGapInIntervalForStudents mcgi;
 
@@ -1647,7 +1647,7 @@ void GeneratePreTest::StudentsMinContinuousGapInInterval_YellsWhenStudentsSetHas
 	mock.rules.addTimeConstraint(ctr);
 	ctr = new ConstraintStudentsSetMinContinuousGapInInterval(60.0, 2, "y1", 7, 9);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinContinuousGapInIntervalForStudents mcgi;
 
@@ -1665,7 +1665,7 @@ void GeneratePreTest::StudentsMinContinuousGapInInterval_MoreThanOneToSameStuden
 	mock.rules.addTimeConstraint(ctr);
 	ctr = new ConstraintStudentsSetMinContinuousGapInInterval(50.0, 2, "y1", 1, 5);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinContinuousGapInIntervalForStudents mcgi;
 
@@ -1683,7 +1683,7 @@ void GeneratePreTest::StudentsMinContinuousGapInInterval_MoreThanOneToSameStuden
 
 	ConstraintStudentsMinContinuousGapInInterval *ctr2 = new ConstraintStudentsMinContinuousGapInInterval(100.0, 2, 1, 5);
 	mock.rules.addTimeConstraint(ctr2);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	result = mcgi.prepare(mock.rules);
 
@@ -1712,7 +1712,7 @@ void GeneratePreTest::StudentsMinContinuousGapInInterval_OneThatIncludesAnotherO
 	mock.rules.addTimeConstraint(ctr);
 	ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 2, "y1", 2, 6);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinContinuousGapInIntervalForStudents mcgi;
 
@@ -1730,7 +1730,7 @@ void GeneratePreTest::StudentsMinContinuousGapInInterval_OneThatIncludesAnotherO
 
 	ConstraintStudentsMinContinuousGapInInterval *ctr2 = new ConstraintStudentsMinContinuousGapInInterval(100.0, 2, 2, 5);
 	mock.rules.addTimeConstraint(ctr2);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	result = mcgi.prepare(mock.rules);
 
@@ -1746,7 +1746,7 @@ void GeneratePreTest::StudentsMinContinuousGapInInterval_OneThatIncludesAnotherO
 
 	ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 2, "y1", 3, 5);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	result = mcgi.prepare(mock.rules);
 
@@ -1770,7 +1770,7 @@ void GeneratePreTest::StudentsMinContinuousGapInInterval_WithSameIntervalOfSameS
 	mock.rules.addTimeConstraint(ctr);
 	ctr = new ConstraintStudentsSetMinContinuousGapInInterval(90.0, 2, "y1", 1, 7);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinContinuousGapInIntervalForStudents mcgi;
 
@@ -1792,7 +1792,7 @@ void GeneratePreTest::StudentsMinContinuousGapInInterval_WithSameIntervalOfSameS
 
 	ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 4, "y1", 1, 7);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 	result = mcgi.prepare(mock.rules);
 
 	QVERIFY2(result, "Could not compute MinContinuousGapInIntervalForStudents constraint list");
@@ -1819,7 +1819,7 @@ void GeneratePreTest::StudentsMinContinuousGapInInterval_OneThatIncludesAnotherO
 	mock.rules.addTimeConstraint(ctr);
 	ctr = new ConstraintStudentsSetMinContinuousGapInInterval(90.0, 2, "y1", 2, 6);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinContinuousGapInIntervalForStudents mcgi;
 
@@ -1849,7 +1849,7 @@ void GeneratePreTest::StudentsMinContinuousGapInInterval_OneThatIncludesAnotherO
 	mock.rules.addTimeConstraint(ctr);
 	ctr = new ConstraintStudentsSetMinContinuousGapInInterval(100.0, 3, "y1", 2, 6);
 	mock.rules.addTimeConstraint(ctr);
-	mock.rules.computeInternalStructure(NULL);
+	mock.rules.computeInternalStructure();
 
 	MinContinuousGapInIntervalForStudents mcgi;
 
@@ -1882,7 +1882,7 @@ GeneratePreTest::MockRules3Activities::MockRules3Activities()
 	rules.addSimpleActivityFast(12345, 12345, teachers, "Subject1", activitytags, studentsnames, 1, 1, true, false, 10, 10);
 	rules.addSimpleActivityFast(23456, 23456, teachers, "Subject2", activitytags, studentsnames, 1, 1, true, false, 10, 10);
 	rules.addSimpleActivityFast(34567, 34567, QStringList(), "Subject1", QStringList(), QStringList(), 1, 1, true, false, 10, 10);
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 }
 
 void GeneratePreTest::MockRules3Activities::addTeachers(int n)

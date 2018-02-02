@@ -59,7 +59,7 @@ void ParadoxMinDaysVsSameDayTest::test_generate_error_message()
 	rules.addSubjectFast(psubject);
 	rules.addSimpleActivityFast(12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
 	rules.addSimpleActivityFast(23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	TimeConstraint * ctr = new ConstraintBasicCompulsoryTime();
 	rules.addTimeConstraint(ctr);
@@ -69,7 +69,7 @@ void ParadoxMinDaysVsSameDayTest::test_generate_error_message()
 	rules.addTimeConstraint(ctr);
 	ctr = new ConstraintActivitiesSameStartingDay(100, 2, acts);
 	rules.addTimeConstraint(ctr);
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	ParadoxMinDaysVsSameDay paradox;
 	processTimeSpaceConstraints(NULL);
@@ -97,7 +97,7 @@ void ParadoxMinDaysVsSameDayTest::test_generate_multiple_error_messages()
 	rules.addSimpleActivityFast(12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
 	rules.addSimpleActivityFast(23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
 	rules.addSimpleActivityFast(34567, 34567, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	TimeConstraint * ctr = new ConstraintBasicCompulsoryTime();
 	rules.addTimeConstraint(ctr);
@@ -109,7 +109,7 @@ void ParadoxMinDaysVsSameDayTest::test_generate_multiple_error_messages()
 	rules.addTimeConstraint(ctr);
 	ctr = new ConstraintActivitiesSameStartingDay(100, 2, QList<int>() << 34567 << 23456);
 	rules.addTimeConstraint(ctr);
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	ParadoxMinDaysVsSameDay paradox;
 	processTimeSpaceConstraints(NULL);
@@ -136,7 +136,7 @@ void ParadoxMinDaysVsSameDayTest::test_reset_properly()
 	rules.addSubjectFast(psubject);
 	rules.addSimpleActivityFast(12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
 	rules.addSimpleActivityFast(23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	TimeConstraint * ctr = new ConstraintBasicCompulsoryTime();
 	rules.addTimeConstraint(ctr);
@@ -146,7 +146,7 @@ void ParadoxMinDaysVsSameDayTest::test_reset_properly()
 	rules.addTimeConstraint(ctr);
 	ctr = new ConstraintActivitiesSameStartingDay(100, 2, acts);
 	rules.addTimeConstraint(ctr);
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	ParadoxMinDaysVsSameDay paradox;
 	processTimeSpaceConstraints(NULL);

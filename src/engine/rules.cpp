@@ -93,7 +93,7 @@ void Rules::init() //initializes the rules (empty, but with default hours and da
 	shouldAbortInternalStructureComputation = false;
 }
 
-ErrorList Rules::computeInternalStructure(QWidget* parent)
+ErrorList Rules::computeInternalStructure()
 {
 	ErrorList errors;
 	this->internalStructureComputed = false;
