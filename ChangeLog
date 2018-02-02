@@ -2035,3 +2035,6 @@ Versions 5.35.0 - 5.35.v
 	- Updated the Turkish translation, by Yakup Kadri Demirci, who is the new translator.
 	- Updated the Greek translation, by Vangelis Karafillidis.
 	- Updated the Japanese translation, by Taro Tada.
+- Version 5.35.3
+	- Minor string improvement (reported by Vangelis Karafillidis).
+	- Updated the Japanese translation, by Taro Tada.
