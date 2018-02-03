@@ -253,7 +253,7 @@ void AddConstraintActivitiesPreferredStartingTimesForm::addConstraint()
 	}
 	else{
 		QMessageBox::warning(this, tr("FET information"),
-			tr("Constraint NOT added - duplicate?"));
+			tr("Constraint NOT added - duplicate?", "'Duplicate' means that the constraint is identical to an existing constraint and cannot be added."));
 		delete ctr;
 	}
 }

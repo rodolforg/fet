@@ -57,6 +57,7 @@ QString ActivityTag::getDescription() const
 		printableYesNo=tr("no");
 	s+=tr("P:%1", "Whether the activity tag is Printable - can be true or false").arg(printableYesNo);
 	
+	QString end=QString("");
 	if(!comments.isEmpty())
 		s+=", "+tr("C: %1", "Comments").arg(comments);
 	

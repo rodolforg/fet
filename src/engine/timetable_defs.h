@@ -264,6 +264,20 @@ public:
 };
 
 double customFETStrToDouble(const QString& str, bool* ok=0);
-///////end tricks
+////////////////////////////////////////////////
+
+//Trick found on http://www.qtcentre.org/threads/53066-QMap-sorting-according-to-QLocale
+//to create a QMap<QString, ...> ordered by locale order.
+//Third post, by ChrisW67.
+class LocaleString: public QString{
+public:
+	LocaleString(const QString& s): QString(s){}
+};
+
+inline bool operator<(const LocaleString& lhs, const LocaleString& rhs)
+{
+	return QString::localeAwareCompare(lhs, rhs)<0;
+}
+/////////////////////////////////////////////////////
 
 #endif

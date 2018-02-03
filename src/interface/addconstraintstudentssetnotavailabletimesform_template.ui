@@ -23,7 +23,7 @@
       </sizepolicy>
      </property>
      <property name="text">
-      <string>Note: this constraint does not induce gaps (or early not respected) for students. If a students set has lessons before and after a not available period, there will be no gaps counted</string>
+      <string extracomment="'Early not respected' means early gaps (first hour is free), in case you use a constraint students (set) early max beginnings at second hour">Note: this constraint does not induce gaps (or early not respected) for students. If a students set has lessons before and after a not available period, there will be no gaps counted</string>
      </property>
      <property name="wordWrap">
       <bool>true</bool>

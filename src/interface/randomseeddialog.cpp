@@ -65,7 +65,7 @@ RandomSeedDialog::~RandomSeedDialog()
 
 void RandomSeedDialog::help()
 {
-	LongTextMessageBox::largeInformation(this, tr("FET information"),
+	LongTextMessageBox::largeInformation(this, tr("FET information"), 
 		tr("You can control the random behaviour of FET with this function")+".\n\n"+
 		tr("The random seed is the state of the random number generator.")+" "+
 		tr("It has two components, X and Y.")+" "+
@@ -90,10 +90,15 @@ void RandomSeedDialog::help()
 		+tr("Note: when you start FET, each time, the random seed X is the number of seconds elapsed since 1 January 1970 and the random seed Y is the next number"
 		" in the Y series, after the number of seconds elapsed since 1 January 1970")
 		+". "
+		+tr("It is thus very important to note that if you start two or more instances of FET when the number of seconds since 1 January 1970 is the same"
+		" the initial random seeds will be identical, leading to the same timetable generation behavior for an identical input file. If you intend to"
+		" generate different timetables for the same file, you need to wait at least one second between starting two successive FET instances. Or you can"
+		" change the initial random seed by hand")
+		+". "
 		+tr("After you generate (even partially), the random seed (X and Y components) will change (each call of the random number generator updates the random seed components to the next numbers"
 		" in the sequence, and there are many calls to this random generating routine in the generate function)")
 		+"\n\n"
-		+tr("This setting is useful for more things, maybe one thing is bug report: send you file along with the random seed at the start of generating"
+		+tr("This setting is useful for more things, maybe one thing is bug report: send your file along with the random seed at the start of generating"
 		" (the two components, X and Y, are saved in the timetable directory at the start of generation)")
 	);
 }

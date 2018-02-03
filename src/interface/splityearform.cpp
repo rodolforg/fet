@@ -36,7 +36,6 @@
 
 #include <QSet>
 #include <QHash>
-#include <QMap>
 
 #include "centerwidgetonscreen.h"
 

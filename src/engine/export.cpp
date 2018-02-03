@@ -48,6 +48,7 @@ File export.cpp
 
 void centerWidgetOnScreen(QWidget* widget);
 
+#include "timetable_defs.h"		//needed, because of LocaleString
 #include "export.h"
 #include "solution.h"
 
@@ -1092,7 +1093,7 @@ bool Export::exportCSVActivitiesStatistic(){
 
 	Activity* acti;
 	int countExportedActivities=0;
-	QMap<QString, int> tmpIdentDuration;	//not QHash, because i want a nice order of the activities
+	QMap<LocaleString, int> tmpIdentDuration;	//not QHash, because I want a nice order of the activities
 	for(int ai=0; ai<gt.rules.activitiesList.size(); ai++){
 		acti=gt.rules.activitiesList[ai];
 		if(acti->active){
@@ -1118,7 +1119,7 @@ bool Export::exportCSVActivitiesStatistic(){
 			tmpIdentDuration.insert(tmpIdent, tmpD);
 		}
 	}
-	QMapIterator<QString, int> it(tmpIdentDuration);
+	QMapIterator<LocaleString, int> it(tmpIdentDuration);
 	while(it.hasNext()){
 		countExportedActivities++;
 		it.next();

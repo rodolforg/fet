@@ -58,9 +58,9 @@ extern QString generationLocalizedTime;
 static int numberOfPlacedActivities1;
 
 #ifdef QT_NO_PRINTER
-static QMap<QString, int> paperSizesMap;
+static QMap<LocaleString, int> paperSizesMap;
 #else
-static QMap<QString, QPrinter::PaperSize> paperSizesMap;
+static QMap<LocaleString, QPrinter::PaperSize> paperSizesMap;
 #endif
 
 const QString CBTablesState="/timetables-combo-box-state";
@@ -167,7 +167,10 @@ TimetablePrintForm::TimetablePrintForm(QWidget *parent): QDialog(parent){
 	paperSizesMap.insert(tr("Tabloid", "Type of paper size"), QPrinter::Tabloid);
 #endif
 
-	CBpaperSize->addItems(paperSizesMap.keys());
+	QList<LocaleString> items=paperSizesMap.keys();
+	foreach(LocaleString s, items)
+		CBpaperSize->addItem(s);
+
 	if(CBpaperSize->count()>=5)
 		CBpaperSize->setCurrentIndex(4);
 	else if(CBpaperSize->count()>=1)

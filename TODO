@@ -1683,7 +1683,10 @@ Implement constraint "Activity needs several rooms". (I am not 100% sure if it i
 single activity or if it is also needed to get only some rooms from (a larger) selection. So maybe all current "roomS" constraints "just" need an
 option "number of used rooms from the selection". Currently it is always 1. It is needed to increase this number.)
 
-(Also suggested by Anton Anthofer, and dasa on the forum.)
+Also suggested by Anton Anthofer, and dasa on the forum.
+
+Also suggested by sln_rj, on the forum: I request the developers to kindly update the FET software with the provision to add two rooms for a single
+activity. It is utmost important for practical classes where more numbers of rooms are required together.
 
 115---------------------------------------------------------
 From nouvakis:
@@ -2553,7 +2556,7 @@ From agemagician (on forum):
 6- Export the schedule to excel.
 
 171---------------------------------------------------------
-From Vlăduţ Frăţiman (personal email to Liviu Lalescu):
+From Vlăduț Frățiman (personal email to Liviu Lalescu):
 
 He suggests to drop activities ids and use instead the teacher, students and subject, because ids might puzzle the new user.
 
@@ -5662,3 +5665,82 @@ Maybe leaving a placeholder there, and making use of FET_VERSION and a
 l10n version of date.
 
 That will reduce .ts diff a lot and reduces translator efforts ;)
+
+344---------------------------------------------------------
+From V Paul C Charlesraj (on forum):
+
+Minimum number of days in a week for all students.
+
+Liviu:
+
+Or for a students set. This is very difficult to implement perfectly (to take care of combinations with the other constraints).
+
+345---------------------------------------------------------
+From rodolforg:
+
+(referring to translation of plural forms)
+
+I also saw this in daysform.cpp :
+
+        if(cnt_rem>0){
+            s+=tr("%1 constraints will be removed.", "%1 is the number
+of constraints").arg(cnt_rem);
+            s+=" ";
+        }
+        if(cnt_mod>0){
+            s+=tr("%1 constraints will be modified.", "%1 is the
+number of constraints").arg(cnt_mod);
+            s+=" ";
+        }
+        s+=tr("Do you want to continue?");
+
+Maybe this part could use %n too?
+
+Liviu Lalescu:
+
+Yes, it should, also in hoursform.cpp and also in
+alltime/spaceconstraintsform.cpp.
+
+But I think there are plenty of places to modify and it is really too
+much. But I'll think of it.
+
+Problem: see for instance alltimeconstraintsform.cpp:
+
+	constraintsTextLabel->setText(tr("%1 / %2 time constraints",
+	 "%1 represents the number of visible active time constraints, %2 represents the total number of visible time constraints")
+	 .arg(n_active).arg(visibleTimeConstraintsList.count()));
+
+Which is %n? %1 or %2?
+
+Also advancedlockunlockform.cpp:
+
+	QMessageBox::information(&lastConfirmationDialog, tr("FET information"), tr("There were removed %1 locking time constraints and"
+		" %2 locking space constraints. There were not removed %3 locking time constraints and %4 locking space constraints, because"
+		" these activities were permanently locked").arg(removedTime).arg(removedSpace).arg(notRemovedTime).arg(notRemovedSpace));
+
+It is very difficult.
+
+I am sorry, but the code is full of such mistakes. It is too late now
+to correct.
+
+rodolforg:
+
+Difficult indeed.
+
+The only way out I can see would be replace:
+
+"There were removed %1 locking time constraints and %2 locking space
+constraints. There were not removed %3 locking time constraints and %4
+locking space constraints, because these activities were permanently
+locked"
+
+by:
+
+"There were removed %1 and %2. There were not removed %3 and %4,
+because these activities were permanently locked"
+where %1 would be "%n locking time constraint(s)", etc.
+
+346---------------------------------------------------------
+From Taro Tada:
+
+Either allow two or more users to work concurrently on a unique FET file, or allow the merging of two or more .fet files.
