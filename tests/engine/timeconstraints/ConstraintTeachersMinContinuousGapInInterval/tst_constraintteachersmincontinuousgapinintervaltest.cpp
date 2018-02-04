@@ -46,110 +46,110 @@ void ConstraintTeachersMinContinuousGapInIntervalTest::OneTeacher_CheckInvalidVa
 	Teacher *t = new Teacher();
 	t->name = "t1";
 	rules.addTeacher(t);
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	ConstraintTeacherMinContinuousGapInInterval ctr(100.0, 2, "t1", 1, 5);
 
 	ctr.weightPercentage = 120;
-	bool result = ctr.computeInternalStructure(NULL, rules);
-	QVERIFY2(!result, "Accepted weight > 100%");
+	ErrorCode result = ctr.computeInternalStructure(rules);
+	QVERIFY2(result, "Accepted weight > 100%");
 
 	ctr.weightPercentage = -2;
-	result = ctr.computeInternalStructure(NULL, rules);
-	QVERIFY2(!result, "Accepted weight < 0%");
+	result = ctr.computeInternalStructure(rules);
+	QVERIFY2(result, "Accepted weight < 0%");
 
 	ctr.weightPercentage = 100;
 
 	ctr.minGapDuration = -1;
-	result = ctr.computeInternalStructure(NULL, rules);
-	QVERIFY2(!result, "Accepted min continuous gap < 0");
+	result = ctr.computeInternalStructure(rules);
+	QVERIFY2(result, "Accepted min continuous gap < 0");
 
 	ctr.minGapDuration = ctr.endHour-ctr.startHour+1;
-	result = ctr.computeInternalStructure(NULL, rules);
-	QVERIFY2(!result, "Accepted min continuous gap > interval");
+	result = ctr.computeInternalStructure(rules);
+	QVERIFY2(result, "Accepted min continuous gap > interval");
 
 	ctr.minGapDuration = 2;
 
 	ctr.startHour = -1;
-	result = ctr.computeInternalStructure(NULL, rules);
-	QVERIFY2(!result, "Accepted start hour < 0");
+	result = ctr.computeInternalStructure(rules);
+	QVERIFY2(result, "Accepted start hour < 0");
 
 	ctr.startHour = ctr.endHour+1;
-	result = ctr.computeInternalStructure(NULL, rules);
-	QVERIFY2(!result, "Accepted start hour > end hour");
+	result = ctr.computeInternalStructure(rules);
+	QVERIFY2(result, "Accepted start hour > end hour");
 
 	ctr.startHour = 1;
 
 	ctr.endHour = 0;
-	result = ctr.computeInternalStructure(NULL, rules);
-	QVERIFY2(!result, "Accepted start hour > end hour");
+	result = ctr.computeInternalStructure(rules);
+	QVERIFY2(result, "Accepted start hour > end hour");
 
 	ctr.endHour = -1;
-	result = ctr.computeInternalStructure(NULL, rules);
-	QVERIFY2(!result, "Accepted end hour < 0");
+	result = ctr.computeInternalStructure(rules);
+	QVERIFY2(result, "Accepted end hour < 0");
 
 	ctr.endHour = rules.nHoursPerDay + 1;
-	result = ctr.computeInternalStructure(NULL, rules);
-	QVERIFY2(!result, "Accepted end hour > hours per day");
+	result = ctr.computeInternalStructure(rules);
+	QVERIFY2(result, "Accepted end hour > hours per day");
 
 	ctr.endHour = rules.nHoursPerDay;
-	result = ctr.computeInternalStructure(NULL, rules);
-	QVERIFY2(result, "Does not accept end-of-day as end hour");
+	result = ctr.computeInternalStructure(rules);
+	QVERIFY2(!result, "Does not accept end-of-day as end hour");
 }
 
 void ConstraintTeachersMinContinuousGapInIntervalTest::AllTeachers_CheckInvalidValues()
 {
 	Rules rules;
 	rules.init();
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	ConstraintTeachersMinContinuousGapInInterval ctr(100.0, 2, 1, 5);
 
 	ctr.weightPercentage = 120;
-	bool result = ctr.computeInternalStructure(NULL, rules);
-	QVERIFY2(!result, "Accepted weight > 100%");
+	ErrorCode result = ctr.computeInternalStructure(rules);
+	QVERIFY2(result, "Accepted weight > 100%");
 
 	ctr.weightPercentage = -2;
-	result = ctr.computeInternalStructure(NULL, rules);
-	QVERIFY2(!result, "Accepted weight < 0%");
+	result = ctr.computeInternalStructure(rules);
+	QVERIFY2(result, "Accepted weight < 0%");
 
 	ctr.weightPercentage = 100;
 
 	ctr.minGapDuration = -1;
-	result = ctr.computeInternalStructure(NULL, rules);
-	QVERIFY2(!result, "Accepted min continuous gap < 0");
+	result = ctr.computeInternalStructure(rules);
+	QVERIFY2(result, "Accepted min continuous gap < 0");
 
 	ctr.minGapDuration = ctr.endHour-ctr.startHour+1;
-	result = ctr.computeInternalStructure(NULL, rules);
-	QVERIFY2(!result, "Accepted min continuous gap > interval");
+	result = ctr.computeInternalStructure(rules);
+	QVERIFY2(result, "Accepted min continuous gap > interval");
 
 	ctr.minGapDuration = 2;
 
 	ctr.startHour = -1;
-	result = ctr.computeInternalStructure(NULL, rules);
-	QVERIFY2(!result, "Accepted start hour < 0");
+	result = ctr.computeInternalStructure(rules);
+	QVERIFY2(result, "Accepted start hour < 0");
 
 	ctr.startHour = ctr.endHour+1;
-	result = ctr.computeInternalStructure(NULL, rules);
-	QVERIFY2(!result, "Accepted start hour > end hour");
+	result = ctr.computeInternalStructure(rules);
+	QVERIFY2(result, "Accepted start hour > end hour");
 
 	ctr.startHour = 1;
 
 	ctr.endHour = 0;
-	result = ctr.computeInternalStructure(NULL, rules);
-	QVERIFY2(!result, "Accepted start hour > end hour");
+	result = ctr.computeInternalStructure(rules);
+	QVERIFY2(result, "Accepted start hour > end hour");
 
 	ctr.endHour = -1;
-	result = ctr.computeInternalStructure(NULL, rules);
-	QVERIFY2(!result, "Accepted end hour < 0");
+	result = ctr.computeInternalStructure(rules);
+	QVERIFY2(result, "Accepted end hour < 0");
 
 	ctr.endHour = rules.nHoursPerDay + 1;
-	result = ctr.computeInternalStructure(NULL, rules);
-	QVERIFY2(!result, "Accepted end hour > hours per day");
+	result = ctr.computeInternalStructure(rules);
+	QVERIFY2(result, "Accepted end hour > hours per day");
 
 	ctr.endHour = rules.nHoursPerDay;
-	result = ctr.computeInternalStructure(NULL, rules);
-	QVERIFY2(result, "Does not accept end-of-day as end hour");
+	result = ctr.computeInternalStructure(rules);
+	QVERIFY2(!result, "Does not accept end-of-day as end hour");
 }
 
 void ConstraintTeachersMinContinuousGapInIntervalTest::OneTeacher_FitnessAcceptsNullString()
@@ -165,7 +165,7 @@ void ConstraintTeachersMinContinuousGapInIntervalTest::OneTeacher_FitnessAccepts
 	ok = rules.addTimeConstraint(ctr);
 	QVERIFY2(ok, "Could not add constraint");
 
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	Solution c;
 	c.times[0] = 1;
@@ -184,7 +184,7 @@ void ConstraintTeachersMinContinuousGapInIntervalTest::AllTeachers_FitnessAccept
 	bool ok = rules.addTimeConstraint(ctr);
 	QVERIFY2(ok, "Could not add constraint");
 
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	Solution c;
 	c.times[0] = 1;
@@ -209,14 +209,14 @@ void ConstraintTeachersMinContinuousGapInIntervalTest::OneTeacher_CheckFitness()
 	QStringList teachers;
 	teachers << t1->name;
 	const int duration = 2;
-	bool ok = rules.addSimpleActivityFast(NULL, 1, 1, teachers, "subject1", tags, students, duration, duration, true, false, 0, 0);
-	QVERIFY2(ok, "Could not add activity");
+	ErrorList errors = rules.addSimpleActivityFast(1, 1, teachers, "subject1", tags, students, duration, duration, true, false, 0, 0);
+	QVERIFY2(!errors.hasError(), "Could not add activity");
 
 	ConstraintTeacherMinContinuousGapInInterval *ctr = new ConstraintTeacherMinContinuousGapInInterval(100.0, 2, "t1", 2, 4);
-	ok = rules.addTimeConstraint(ctr);
+	bool ok = rules.addTimeConstraint(ctr);
 	QVERIFY2(ok, "Could not add constraint");
 
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	Solution c;
 
@@ -294,14 +294,14 @@ void ConstraintTeachersMinContinuousGapInIntervalTest::AllTeachers_CheckFitness(
 	QStringList teachers;
 	teachers << "t1" << "t2";
 	const int duration = 2;
-	bool ok = rules.addSimpleActivityFast(NULL, 1, 1, teachers, "subject1", tags, students, duration, duration, true, false, 0, 0);
-	QVERIFY2(ok, "Could not add activity");
+	ErrorList errors = rules.addSimpleActivityFast(1, 1, teachers, "subject1", tags, students, duration, duration, true, false, 0, 0);
+	QVERIFY2(!errors.hasError(), "Could not add activity");
 
 	ConstraintTeachersMinContinuousGapInInterval *ctr = new ConstraintTeachersMinContinuousGapInInterval(100.0, 2, 2, 4);
-	ok = rules.addTimeConstraint(ctr);
+	bool ok = rules.addTimeConstraint(ctr);
 	QVERIFY2(ok, "Could not add constraint");
 
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	Solution c;
 
@@ -380,14 +380,14 @@ void ConstraintTeachersMinContinuousGapInIntervalTest::OneTeacher_CheckFitness_E
 	QStringList teachers;
 	teachers << t1->name;
 	const int duration = 2;
-	bool ok = rules.addSimpleActivityFast(NULL, 1, 1, teachers, "subject1", tags, students, duration, duration, true, false, 0, 0);
-	QVERIFY2(ok, "Could not add activity");
+	ErrorList errors = rules.addSimpleActivityFast(1, 1, teachers, "subject1", tags, students, duration, duration, true, false, 0, 0);
+	QVERIFY2(!errors.hasError(), "Could not add activity");
 
 	ConstraintTeacherMinContinuousGapInInterval *ctr = new ConstraintTeacherMinContinuousGapInInterval(100.0, 2, "t1", 2, 6);
-	ok = rules.addTimeConstraint(ctr);
+	bool ok = rules.addTimeConstraint(ctr);
 	QVERIFY2(ok, "Could not add constraint");
 
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	Solution c;
 
@@ -420,14 +420,14 @@ void ConstraintTeachersMinContinuousGapInIntervalTest::AllTeachers_CheckFitness_
 	QStringList teachers;
 	teachers << "t1" << "t2";
 	const int duration = 2;
-	bool ok = rules.addSimpleActivityFast(NULL, 1, 1, teachers, "subject1", tags, students, duration, duration, true, false, 0, 0);
-	QVERIFY2(ok, "Could not add activity");
+	ErrorList errors = rules.addSimpleActivityFast(1, 1, teachers, "subject1", tags, students, duration, duration, true, false, 0, 0);
+	QVERIFY2(!errors.hasError(), "Could not add activity");
 
 	ConstraintTeachersMinContinuousGapInInterval *ctr = new ConstraintTeachersMinContinuousGapInInterval(100.0, 2, 2, 6);
-	ok = rules.addTimeConstraint(ctr);
+	bool ok = rules.addTimeConstraint(ctr);
 	QVERIFY2(ok, "Could not add constraint");
 
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	Solution c;
 

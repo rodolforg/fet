@@ -229,6 +229,13 @@ static void usage(QTextStream* out, const QString& error)
 	if(out!=NULL)
 		(*out)<<qPrintable(s)<<endl;
 }
+
+static void renderErrorList(const ErrorList& errors) {
+	foreach (ErrorCode erc, errors)
+		if (erc)
+			IrreconcilableCriticalMessage::critical((QWidget*)NULL, erc.getSeverityTitle(), erc.message);
+}
+
 #endif
 
 #ifndef FET_COMMAND_LINE
@@ -1207,21 +1214,45 @@ int main(int argc, char **argv)
 		if(TIMETABLE_HTML_LEVEL>7 || TIMETABLE_HTML_LEVEL<0)
 			TIMETABLE_HTML_LEVEL=2;
 	
-		bool t=gt.rules.read(NULL, filename, initialDir);
-		if(!t){
+		ErrorList errors=gt.rules.read(filename, initialDir);
+		renderErrorList(errors);
+		if(errors.hasFatal()){
 			cerr<<"fet: cannot read input file (not existing or in use) - aborting"<<endl;
 			out<<"Cannot read input file (not existing or in use) - aborting"<<endl;
 			logFile.close();
 			return 1;
 		}
+		errors.clear();
 		
-		t=gt.rules.computeInternalStructure(NULL);
-		if(!t){
+		cout << QCoreApplication::translate("Rules", "Computing internal structure", "Title of a progress dialog").toStdString() << endl;
+		out << "Computing internal structure" << endl;
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+		QCoreApplication::connect(&gt.rules, &Rules::internalStructureComputationStepChanged, [&out](RulesComputationStep step) {
+			const char * stepText = "";
+			switch (step) {
+			case RulesComputationStep::ACTIVITIES:
+				stepText = "Processing internally the activities ... please wait";
+				break;
+			case RulesComputationStep::TIME_CONSTRAINTS:
+				stepText = "Processing internally the time constraints ... please wait";
+				break;
+			case RulesComputationStep::SPACE_CONSTRAINTS:
+				stepText = "Processing internally the space constraints ... please wait";
+				break;
+			}
+			out << stepText << endl;
+			cout << QCoreApplication::translate("Rules", stepText).toStdString() << endl;
+		});
+#endif
+		errors = gt.rules.computeInternalStructure();
+		renderErrorList(errors);
+		if (errors.hasError()){
 			cerr<<"Cannot compute internal structure - aborting"<<endl;
 			out<<"Cannot compute internal structure - aborting"<<endl;
 			logFile.close();
 			return 1;
 		}
+		errors.clear();
 	
 		Generate gen(gt);
 
@@ -1246,7 +1277,10 @@ int main(int argc, char **argv)
 		}
 		//out<<"secondsLimit=="<<secondsLimit<<endl;
 				
-		TimetableExport::writeRandomSeedCommandLine(NULL, outputDirectory, true); //true represents 'before' state
+		ErrorCode erc = TimetableExport::writeRandomSeedCommandLine(outputDirectory, true); //true represents 'before' state
+		if (erc) {
+			IrreconcilableCriticalMessage::critical(NULL, erc.getSeverityTitle(), erc.message);
+		}
 
 		Generate::Status status = gen.generate(secondsLimit, false, &maxPlacedActivityStream); //false means no thread
 		
@@ -1280,7 +1314,8 @@ int main(int argc, char **argv)
 				if(!dir.exists(toc))
 					dir.mkpath(toc);
 
-			TimetableExport::writeSimulationResultsCommandLine(NULL, toc);
+			ErrorList errors = TimetableExport::writeSimulationResultsCommandLine(toc);
+			renderErrorList(errors);
 			
 			QString s;
 
@@ -1338,7 +1373,8 @@ int main(int argc, char **argv)
 				if(!dir.exists(toh))
 					dir.mkpath(toh);
 
-			TimetableExport::writeSimulationResultsCommandLine(NULL, toh);
+			errors = TimetableExport::writeSimulationResultsCommandLine(toh);
+			renderErrorList(errors);
 
 			if (EXPORT_CSV) {
 				QString oldDir=csv_export.getDirectoryCSV();
@@ -1384,7 +1420,8 @@ int main(int argc, char **argv)
 				if(!dir.exists(toc))
 					dir.mkpath(toc);
 
-			TimetableExport::writeSimulationResultsCommandLine(NULL, toc);
+			ErrorList errors = TimetableExport::writeSimulationResultsCommandLine(toc);
+			renderErrorList(errors);
 			
 			QString s;
 			const int maxActivitiesPlaced = gen.getMaxActivitiesPlaced();
@@ -1461,7 +1498,8 @@ int main(int argc, char **argv)
 				if(!dir.exists(toh))
 					dir.mkpath(toh);
 
-			TimetableExport::writeSimulationResultsCommandLine(NULL, toh);
+			errors = TimetableExport::writeSimulationResultsCommandLine(toh);
+			renderErrorList(errors);
 
 			if (EXPORT_CSV) {
 				QString oldDir=csv_export.getDirectoryCSV();
@@ -1474,7 +1512,10 @@ int main(int argc, char **argv)
 			cout<<"Simulation successful"<<endl;
 			out<<"Simulation successful"<<endl;
 		
-			TimetableExport::writeRandomSeedCommandLine(NULL, outputDirectory, false); //false represents 'before' state
+			ErrorCode erc = TimetableExport::writeRandomSeedCommandLine(outputDirectory, false); //false represents 'before' state
+			if (erc) {
+				IrreconcilableCriticalMessage::critical(NULL, erc.getSeverityTitle(), erc.message);
+			}
 
 			Solution& c=gen.getSolution();
 
@@ -1484,7 +1525,8 @@ int main(int argc, char **argv)
 			
 			CachedSchedule::update(c);
 
-			TimetableExport::writeSimulationResultsCommandLine(NULL, outputDirectory);
+			ErrorList errors = TimetableExport::writeSimulationResultsCommandLine(outputDirectory);
+			renderErrorList(errors);
 			
 			if (EXPORT_CSV) {
 				QString oldDir=csv_export.getDirectoryCSV();

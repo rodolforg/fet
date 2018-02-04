@@ -64,7 +64,6 @@ const char SUBJECTS_STUDENTS_STATISTICS[]="subjects_students.html";
 const char STYLESHEET_STATISTICS[]="stylesheet.css";
 const char INDEX_STATISTICS[]="index.html";
 
-QString DIRECTORY_STATISTICS;
 QString PREFIX_STATISTICS;
 
 class StringListPair{
@@ -80,6 +79,19 @@ static bool operator <(const StringListPair& pair1, const StringListPair& pair2)
 	return (pair1.list1.join("")+pair1.list2.join("")).localeAwareCompare(pair2.list1.join("")+pair2.list2.join(""))<0;
 }
 
+static QString getBasename(){
+	QFileInfo input(INPUT_FILENAME_XML);
+	if (input.suffix() == "fet")
+		return input.baseName();
+	return input.fileName();
+}
+
+static QString getBasenameOrDefault(){
+	if (INPUT_FILENAME_XML.isEmpty())
+		return "unnamed";
+	return getBasename();
+}
+
 StatisticsExport::StatisticsExport()
 {
 }
@@ -88,7 +100,7 @@ StatisticsExport::~StatisticsExport()
 {
 }
 
-void StatisticsExport::exportStatistics(QWidget* parent){
+bool StatisticsExport::exportStatistics(QWidget* parent){
 	assert(gt.rules.initialized);
 	assert(TIMETABLE_HTML_LEVEL>=0);
 	assert(TIMETABLE_HTML_LEVEL<=7);
@@ -97,26 +109,10 @@ void StatisticsExport::exportStatistics(QWidget* parent){
 	computeHashForIDsStatistics(&statisticValues);
 	getNamesAndHours(&statisticValues);
 
-	DIRECTORY_STATISTICS=OUTPUT_DIR+FILE_SEP+"statistics";
-	
-	if(INPUT_FILENAME_XML=="")
-		DIRECTORY_STATISTICS.append(FILE_SEP+"unnamed");
-	else{
-		DIRECTORY_STATISTICS.append(FILE_SEP+INPUT_FILENAME_XML.right(INPUT_FILENAME_XML.length()-INPUT_FILENAME_XML.lastIndexOf(FILE_SEP)-1));
-
-		if(DIRECTORY_STATISTICS.right(4)==".fet")
-			DIRECTORY_STATISTICS=DIRECTORY_STATISTICS.left(DIRECTORY_STATISTICS.length()-4);
-		//else if(INPUT_FILENAME_XML!="")
-		//	cout<<"Minor problem - input file does not end in .fet extension - might be a problem when saving the timetables"<<" (file:"<<__FILE__<<", line:"<<__LINE__<<")"<<endl;
-	}
+	QString DIRECTORY_STATISTICS=getStatisticsDirectory();
 	
 	PREFIX_STATISTICS=DIRECTORY_STATISTICS+FILE_SEP;
 	
-	int ok=QMessageBox::question(parent, tr("FET Question"),
-		 StatisticsExport::tr("Do you want to export detailed statistic files into directory %1 as html files?").arg(QDir::toNativeSeparators(DIRECTORY_STATISTICS)), QMessageBox::Yes | QMessageBox::No);
-	if(ok==QMessageBox::No)
-		return;
-
 	/* need if i use iTeachersList. Currently unneeded. please remove commented asserts in other functions if this is needed again!
 	bool tmp=gt.rules.computeInternalStructure();
 	if(!tmp){
@@ -137,7 +133,7 @@ void StatisticsExport::exportStatistics(QWidget* parent){
 	QLocale loc;
 	QString sTime=loc.toString(dat, QLocale::ShortFormat)+" "+loc.toString(tim, QLocale::ShortFormat);
 
-	ok=exportStatisticsStylesheetCss(parent, sTime, statisticValues);
+	bool ok=exportStatisticsStylesheetCss(parent, sTime, statisticValues);
 	if(ok)
 		ok=exportStatisticsIndex(parent, sTime);
 	if(ok)
@@ -153,13 +149,7 @@ void StatisticsExport::exportStatistics(QWidget* parent){
 	if(ok)
 		ok=exportStatisticsStudentsSubjects(parent, sTime, statisticValues, TIMETABLE_HTML_LEVEL);
 
-	if(ok){
-		QMessageBox::information(parent, tr("FET Information"),
-		 StatisticsExport::tr("Statistic files were exported to directory %1 as html files.").arg(QDir::toNativeSeparators(DIRECTORY_STATISTICS)));
-	} else {
-		QMessageBox::warning(parent, tr("FET warning"),
-		 StatisticsExport::tr("Statistics export incomplete")+"\n");
-	}
+	return ok;
 }
 
 void StatisticsExport::computeHashForIDsStatistics(FetStatistics *statisticValues){		// by Volker Dirr
@@ -2363,4 +2353,9 @@ QString StatisticsExport::exportStatisticsStudentsSubjectsHtml(QWidget* parent, 
 	tmp+="      </tbody>\n";
 	tmp+="    </table>\n";
 	return tmp;
+}
+
+QString StatisticsExport::getStatisticsDirectory()
+{
+	return OUTPUT_DIR+FILE_SEP+"statistics"+FILE_SEP+getBasenameOrDefault();
 }

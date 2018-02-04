@@ -58,9 +58,9 @@ void ParadoxMindaysVsConsecutiveTest::test_generate_error_message()
 	Subject *psubject = new Subject();
 	psubject->name = subject;
 	rules.addSubjectFast(psubject);
-	rules.addSimpleActivityFast(NULL, 12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(NULL, 23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.computeInternalStructure(NULL);
+	rules.addSimpleActivityFast(12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
+	rules.addSimpleActivityFast(23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
+	rules.computeInternalStructure();
 
 	ConstraintBasicCompulsoryTime * ctr = new ConstraintBasicCompulsoryTime();
 	rules.addTimeConstraint(ctr);
@@ -70,7 +70,7 @@ void ParadoxMindaysVsConsecutiveTest::test_generate_error_message()
 	rules.addTimeConstraint(ctr_min);
 	ConstraintTwoActivitiesConsecutive *ctr_consecutive = new ConstraintTwoActivitiesConsecutive(100, 12345, 23456);
 	rules.addTimeConstraint(ctr_consecutive);
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	ParadoxMinDaysVsConsecutive paradox;
 	processTimeSpaceConstraints(NULL);
@@ -95,10 +95,10 @@ void ParadoxMindaysVsConsecutiveTest::test_generate_multiple_error_messages()
 	Subject *psubject = new Subject();
 	psubject->name = subject;
 	rules.addSubjectFast(psubject);
-	rules.addSimpleActivityFast(NULL, 12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(NULL, 23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(NULL, 34567, 34567, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.computeInternalStructure(NULL);
+	rules.addSimpleActivityFast(12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
+	rules.addSimpleActivityFast(23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
+	rules.addSimpleActivityFast(34567, 34567, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
+	rules.computeInternalStructure();
 
 	ConstraintBasicCompulsoryTime * ctr = new ConstraintBasicCompulsoryTime();
 	rules.addTimeConstraint(ctr);
@@ -110,7 +110,7 @@ void ParadoxMindaysVsConsecutiveTest::test_generate_multiple_error_messages()
 	rules.addTimeConstraint(ctr_consecutive);
 	ConstraintTwoActivitiesConsecutive *ctr_consecutive2 = new ConstraintTwoActivitiesConsecutive(100, 34567, 23456);
 	rules.addTimeConstraint(ctr_consecutive2);
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	ParadoxMinDaysVsConsecutive paradox;
 	processTimeSpaceConstraints(NULL);
@@ -135,9 +135,9 @@ void ParadoxMindaysVsConsecutiveTest::test_reset_properly()
 	Subject *psubject = new Subject();
 	psubject->name = subject;
 	rules.addSubjectFast(psubject);
-	rules.addSimpleActivityFast(NULL, 12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.addSimpleActivityFast(NULL, 23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
-	rules.computeInternalStructure(NULL);
+	rules.addSimpleActivityFast(12345, 12345, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
+	rules.addSimpleActivityFast(23456, 23456, teachers, subject, activitytags, studentsnames, 1, 1, true, false, 10, 10);
+	rules.computeInternalStructure();
 
 	ConstraintBasicCompulsoryTime * ctr = new ConstraintBasicCompulsoryTime();
 	rules.addTimeConstraint(ctr);
@@ -147,7 +147,7 @@ void ParadoxMindaysVsConsecutiveTest::test_reset_properly()
 	rules.addTimeConstraint(ctr_min);
 	ConstraintTwoActivitiesConsecutive *ctr_consecutive = new ConstraintTwoActivitiesConsecutive(100, 12345, 23456);
 	rules.addTimeConstraint(ctr_consecutive);
-	rules.computeInternalStructure(NULL);
+	rules.computeInternalStructure();
 
 	ParadoxMinDaysVsConsecutive paradox;
 	processTimeSpaceConstraints(NULL);

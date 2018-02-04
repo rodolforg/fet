@@ -5,6 +5,7 @@ SOURCES += \
 	engine/solution.cpp \
 	engine/timetable.cpp \
 	engine/rules.cpp \
+	engine/errorcode.cpp \
 	engine/import.cpp \
 	engine/export.cpp \
 	engine/generate_pre.cpp \
@@ -492,6 +493,7 @@ SOURCES += \
     interface/constraintstudentssetmincontinuousgapinintervalform.cpp \
     interface/constraintstudentsmincontinuousgapinintervalform.cpp \
     interface/editcommentsform.cpp \
+	interface/errorrenderer.cpp \
 
 HEADERS += \
 	engine/timetableexport.h \
@@ -500,6 +502,7 @@ HEADERS += \
 	engine/solution.h \
 	engine/timetable.h \
 	engine/rules.h \
+	engine/errorcode.h \
 	engine/import.h \
 	engine/export.h \
 	engine/generate_pre.h \
@@ -990,6 +993,7 @@ HEADERS += \
     interface/constraintstudentssetmincontinuousgapinintervalform.h \
     interface/constraintstudentsmincontinuousgapinintervalform.h \
     interface/editcommentsform.h \
+	interface/errorrenderer.h \
 
 FORMS += \
 	interface/fetmainform_template.ui \

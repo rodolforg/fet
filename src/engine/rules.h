@@ -47,6 +47,12 @@ File rules.h
 class QXmlStreamReader;
 #include "xmllog.h"
 
+enum class RulesComputationStep {
+	ACTIVITIES,
+	TIME_CONSTRAINTS,
+	SPACE_CONSTRAINTS
+};
+
 /**
 This class contains all the information regarding
 the institution: teachers, students, activities, constraints, etc.
@@ -237,11 +243,16 @@ public:
 
 	/**
 	Internal structure initializer.
-	<p>
+
 	After any modification of the activities or students or teachers
 	or constraints, you need to call this subroutine
+
+	Computation can take a time. It is possible to follow it by receiving
+	signals internalStructureComputationStarted(), internalStructureComputationChanged()
+	and internalStructureComputationFinished().
+	Computation is interrupted by calling cancelInternalStructureComputation().
 	*/
-	bool computeInternalStructure(QWidget* parent);
+	ErrorList computeInternalStructure();
 
 	/**
 	Terminator - basically clears the memory for the constraints.
@@ -498,8 +509,7 @@ public:
 	/*
 	Faster (no need to recompute the number of students in activity constructor)
 	*/
-	bool addSimpleActivityFast(
-		QWidget* parent,
+	ErrorList addSimpleActivityFast(
 		int _id,
 		int _activityGroupId,
 		const QStringList& _teachersNames,
@@ -538,9 +548,7 @@ public:
 		bool _computeNTotalStudents,
 		int _nTotalStudents);*/
 
-	bool addSplitActivityFast(
-		QWidget* parent,
-		int _firstActivityId,
+	ErrorList addSplitActivityFast(int _firstActivityId,
 		int _activityGroupId,
 		const QStringList& _teachersNames,
 		const QString& _subjectName,
@@ -700,12 +708,12 @@ public:
 	Reads the rules from the xml input file "filename".
 	Returns true on success, false on failure (inexistent file or wrong format)
 	*/
-	bool read(QWidget* parent, const QString& fileName, const QString& outputDirPath="");
+	ErrorList read(const QString& fileName, const QString& outputDirPath="");
 
 	/**
 	Write the rules to the xml input file "inputfile".
 	*/
-	bool write(QWidget* parent, const QString& filename) const;
+	ErrorCode write(const QString& filename) const;
 	
 	int activateTeacher(const QString& teacherName);
 	
@@ -756,16 +764,16 @@ private:
 	TimeConstraint* readTeacherMinDaysPerWeek(QXmlStreamReader& xml, XmlLog &log);
 	TimeConstraint* readTeachersMinDaysPerWeek(QXmlStreamReader& xml, XmlLog &log);
 
-	TimeConstraint* readTeacherIntervalMaxDaysPerWeek(QWidget* parent, QXmlStreamReader& xml, XmlLog &log);
-	TimeConstraint* readTeachersIntervalMaxDaysPerWeek(QWidget* parent, QXmlStreamReader& xml, XmlLog &log);
-	TimeConstraint* readStudentsSetMaxDaysPerWeek(QWidget* parent, QXmlStreamReader& xml, XmlLog &log);
-	TimeConstraint* readStudentsMaxDaysPerWeek(QWidget* parent, QXmlStreamReader& xml, XmlLog &log);
-	TimeConstraint* readStudentsSetIntervalMaxDaysPerWeek(QWidget* parent, QXmlStreamReader& xml, XmlLog &log);
-	TimeConstraint* readStudentsIntervalMaxDaysPerWeek(QWidget* parent, QXmlStreamReader& xml, XmlLog &log);
+	TimeConstraint* readTeacherIntervalMaxDaysPerWeek(ErrorList& errors, QXmlStreamReader& xml, XmlLog &log);
+	TimeConstraint* readTeachersIntervalMaxDaysPerWeek(ErrorList& errors, QXmlStreamReader& xml, XmlLog &log);
+	TimeConstraint* readStudentsSetMaxDaysPerWeek(ErrorList& errors, QXmlStreamReader& xml, XmlLog &log);
+	TimeConstraint* readStudentsMaxDaysPerWeek(ErrorList& errors, QXmlStreamReader& xml, XmlLog &log);
+	TimeConstraint* readStudentsSetIntervalMaxDaysPerWeek(ErrorList& errors, QXmlStreamReader& xml, XmlLog &log);
+	TimeConstraint* readStudentsIntervalMaxDaysPerWeek(ErrorList& errors, QXmlStreamReader& xml, XmlLog &log);
 	TimeConstraint* readStudentsSetNotAvailable(QXmlStreamReader& xml, XmlLog &log);
 	TimeConstraint* readStudentsSetNotAvailableTimes(QXmlStreamReader& xml, XmlLog &log);
-	TimeConstraint* readMinNDaysBetweenActivities(QWidget* parent, QXmlStreamReader& xml, XmlLog &log);
-	TimeConstraint* readMinDaysBetweenActivities(QWidget* parent, QXmlStreamReader& xml, XmlLog &log);
+	TimeConstraint* readMinNDaysBetweenActivities(ErrorList& errors, QXmlStreamReader& xml, XmlLog &log);
+	TimeConstraint* readMinDaysBetweenActivities(ErrorList& errors, QXmlStreamReader& xml, XmlLog &log);
 	TimeConstraint* readMaxDaysBetweenActivities(QXmlStreamReader& xml, XmlLog &log);
 	TimeConstraint* readMinGapsBetweenActivities(QXmlStreamReader& xml, XmlLog &log);
 	TimeConstraint* readActivitiesNotOverlapping(QXmlStreamReader& xml, XmlLog &log);
@@ -782,8 +790,8 @@ private:
 	TimeConstraint* readTeacherActivityTagMaxHoursDaily(QXmlStreamReader& xml, XmlLog &log);
 	TimeConstraint* readTeachersActivityTagMaxHoursDaily(QXmlStreamReader& xml, XmlLog &log);
 
-	TimeConstraint* readTeachersMinHoursDaily(QWidget* parent, QXmlStreamReader& xml, XmlLog &log);
-	TimeConstraint* readTeacherMinHoursDaily(QWidget* parent, QXmlStreamReader& xml, XmlLog &log);
+	TimeConstraint* readTeachersMinHoursDaily(ErrorList& errors, QXmlStreamReader& xml, XmlLog &log);
+	TimeConstraint* readTeacherMinHoursDaily(ErrorList& errors, QXmlStreamReader& xml, XmlLog &log);
 	TimeConstraint* readStudentsMaxHoursDaily(QXmlStreamReader& xml, XmlLog &log);
 	TimeConstraint* readStudentsSetMaxHoursDaily(QXmlStreamReader& xml, XmlLog &log);
 	TimeConstraint* readStudentsMaxHoursContinuously(QXmlStreamReader& xml, XmlLog &log);
@@ -794,13 +802,13 @@ private:
 	TimeConstraint* readStudentsSetActivityTagMaxHoursDaily(QXmlStreamReader& xml, XmlLog &log);
 	TimeConstraint* readStudentsActivityTagMaxHoursDaily(QXmlStreamReader& xml, XmlLog &log);
 
-	TimeConstraint* readStudentsMinHoursDaily(QWidget* parent, QXmlStreamReader& xml, XmlLog &log);
-	TimeConstraint* readStudentsSetMinHoursDaily(QWidget* parent, QXmlStreamReader& xml, XmlLog &log);
+	TimeConstraint* readStudentsMinHoursDaily(ErrorList& errors, QXmlStreamReader& xml, XmlLog &log);
+	TimeConstraint* readStudentsSetMinHoursDaily(ErrorList& errors, QXmlStreamReader& xml, XmlLog &log);
 
-	TimeConstraint* readActivityPreferredTime(QWidget* parent, QXmlStreamReader& xml, XmlLog &log,
-		bool& reportUnspecifiedPermanentlyLockedTime, bool& reportUnspecifiedDayOrHourPreferredStartingTime);
-	TimeConstraint* readActivityPreferredStartingTime(QWidget* parent, QXmlStreamReader& xml, XmlLog &log,
-		bool& reportUnspecifiedPermanentlyLockedTime, bool& reportUnspecifiedDayOrHourPreferredStartingTime);
+	TimeConstraint* readActivityPreferredTime(ErrorList& errors, QXmlStreamReader& xml, XmlLog &log,
+		int reportUnspecifiedPermanentlyLockedTimeId, int reportUnspecifiedDayOrHourPreferredStartingTimeId);
+	TimeConstraint* readActivityPreferredStartingTime(ErrorList& errors, QXmlStreamReader& xml, XmlLog &log,
+		int reportUnspecifiedPermanentlyLockedTimeId, int reportUnspecifiedDayOrHourPreferredStartingTimeId);
 
 	TimeConstraint* readActivityEndsStudentsDay(QXmlStreamReader& xml, XmlLog &log);
 	TimeConstraint* readActivitiesEndStudentsDay(QXmlStreamReader& xml, XmlLog &log);
@@ -871,8 +879,8 @@ private:
 	SpaceConstraint* readBasicCompulsorySpace(QXmlStreamReader& xml, XmlLog &log);
 	SpaceConstraint* readRoomNotAvailable(QXmlStreamReader& xml, XmlLog &log);
 	SpaceConstraint* readRoomNotAvailableTimes(QXmlStreamReader& xml, XmlLog &log);
-	SpaceConstraint* readActivityPreferredRoom(QWidget* parent, QXmlStreamReader& xml, XmlLog &log,
-		bool& reportUnspecifiedPermanentlyLockedSpace);
+	SpaceConstraint* readActivityPreferredRoom(ErrorCode& erc, QXmlStreamReader& xml, XmlLog &log,
+		int reportUnspecifiedPermanentlyLockedSpaceId);
 	SpaceConstraint* readActivityPreferredRooms(QXmlStreamReader& xml, XmlLog &log);
 	SpaceConstraint* readSubjectPreferredRoom(QXmlStreamReader& xml, XmlLog &log);
 	SpaceConstraint* readSubjectPreferredRooms(QXmlStreamReader& xml, XmlLog &log);
@@ -907,11 +915,38 @@ private:
 
 	int readHourTag(QXmlStreamReader& xml, XmlLog &log, bool acceptEndOfDay) const;
 
+	bool shouldAbortInternalStructureComputation;
+
 signals:
 	/// Any object property changed
 	void contentsChanged();
 	/// Added or removed Days, Hours, Teachers, StudentsSets, Subject, Activities, Activity tags, Buildings or Rooms
 	void basicDataResized();
+
+	/**
+	 * Emitted when computeInternalStructure() is called.
+	 * @param range how many items will be computed
+	 */
+	void internalStructureComputationStarted(int range);
+	/**
+	 * Emitted when current rules computation step changes
+	 * @param step current(=new) step
+	 */
+	void internalStructureComputationStepChanged(RulesComputationStep step);
+	/**
+	 * Emitted when a new item is computed
+	 * @param value number of current computed items
+	 */
+	void internalStructureComputationChanged(int value);
+	/**
+	 * Emitted when computeInternalStructure() finishes
+	 * @param success if it was not canceled or it did not get an error
+	 */
+	void internalStructureComputationFinished(bool success);
+
+public slots:
+	/// Stop an ongoing computeInternalStructure() call.
+	void cancelInternalStructureComputation();
 };
 
 #endif

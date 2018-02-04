@@ -62,7 +62,7 @@ public:
 	StatisticsExport();
 	~StatisticsExport();
 	
-	static void exportStatistics(QWidget* parent);
+	static bool exportStatistics(QWidget* parent);
 	
 	static QString exportStatisticsTeachersSubjectsHtml(QWidget* parent, QString saveTime, FetStatistics statisticValues, int htmlLevel, bool printActivityTags, int maxNames, QSet<int> *excludedNames);
 	static QString exportStatisticsSubjectsTeachersHtml(QWidget* parent, QString saveTime, FetStatistics statisticValues, int htmlLevel, bool printActivityTags, int maxNames, QSet<int> *excludedNames);
@@ -71,6 +71,8 @@ public:
 	static QString exportStatisticsSubjectsStudentsHtml(QWidget* parent, QString saveTime, FetStatistics statisticValues, int htmlLevel, bool printActivityTags, int maxNames, QSet<int> *excludedNames);
 	static QString exportStatisticsStudentsSubjectsHtml(QWidget* parent, QString saveTime, FetStatistics statisticValues, int htmlLevel, bool printActivityTags, int maxNames, QSet<int> *excludedNames);
 	
+	static QString getStatisticsDirectory();
+
 	//this function must be called before export html files, because it compute the IDs
 	static void computeHashForIDsStatistics(FetStatistics *statisticValues);
 	static void getNamesAndHours(FetStatistics *statisticValues);

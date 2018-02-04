@@ -28,6 +28,8 @@ File spaceconstraint.h
 #include <QList>
 #include <QStringList>
 
+#include "errorcode.h"
+
 class Rules;
 class SpaceConstraint;
 class Activity;
@@ -39,7 +41,8 @@ class Building;
 class Room;
 class Solution;
 
-class QWidget;
+class QXmlStreamReader;
+class XmlLog;
 
 typedef QList<SpaceConstraint*> SpaceConstraintsList;
 
@@ -136,7 +139,7 @@ public:
 	/**
 	Computes the internal structure for this constraint
 	*/
-	virtual bool computeInternalStructure(QWidget* parent, const Rules& r)=0;
+	virtual ErrorCode computeInternalStructure(const Rules& r)=0;
 	
 	virtual bool hasInactiveActivities(const Rules& r) const = 0;
 
@@ -183,6 +186,16 @@ public:
 	virtual bool hasWrongDayOrHour(const Rules& r) const = 0;
 	virtual bool canRepairWrongDayOrHour(const Rules& r) const = 0;
 	virtual bool repairWrongDayOrHour(Rules& r)=0;
+
+	/**
+	 * @brief readXmlBasicTags read constraints common tags from XML stream
+	 * This means properties: active, weight percentage and comments.
+	 * @param xmlReader The Xml stream source. It must point to a start tag element
+	 * @param log registers workarounds for old tags
+	 * @return true if current tag was successfully parsed. If tag is unknown returns false.
+	 */
+	bool readXmlBasicTags(QXmlStreamReader& xmlReader, XmlLog &log);
+	bool readXmlObsoleteBasicTags(QXmlStreamReader& xmlReader, XmlLog &log);
 };
 
 /**
@@ -197,7 +210,7 @@ public:
 
 	ConstraintBasicCompulsorySpace(double wp);
 
-	bool computeInternalStructure(QWidget* parent, const Rules& r);
+	ErrorCode computeInternalStructure(const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 	
@@ -248,7 +261,7 @@ public:
 
 	ConstraintRoomNotAvailableTimes(double wp, const QString& rn, QList<int> d, QList<int> h);
 
-	bool computeInternalStructure(QWidget* parent, const Rules& r);
+	ErrorCode computeInternalStructure(const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 	
@@ -310,7 +323,7 @@ public:
 	*/
 	bool operator==(ConstraintActivityPreferredRoom& c);
 
-	bool computeInternalStructure(QWidget* parent, const Rules& r);
+	ErrorCode computeInternalStructure(const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 	
@@ -366,7 +379,7 @@ public:
 
 	ConstraintActivityPreferredRooms(double wp, int aid, const QStringList& roomsList);
 
-	bool computeInternalStructure(QWidget* parent, const Rules& r);
+	ErrorCode computeInternalStructure(const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 	
@@ -415,7 +428,7 @@ public:
 
 	ConstraintStudentsSetHomeRoom(double wp, QString st, QString rm);
 
-	bool computeInternalStructure(QWidget* parent, const Rules& r);
+	ErrorCode computeInternalStructure(const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 	
@@ -466,7 +479,7 @@ public:
 
 	ConstraintStudentsSetHomeRooms(double wp, QString st, const QStringList& rms);
 
-	bool computeInternalStructure(QWidget* parent, const Rules& r);
+	ErrorCode computeInternalStructure(const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 	
@@ -515,7 +528,7 @@ public:
 
 	ConstraintTeacherHomeRoom(double wp, QString tc, QString rm);
 
-	bool computeInternalStructure(QWidget* parent, const Rules& r);
+	ErrorCode computeInternalStructure(const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 	
@@ -566,7 +579,7 @@ public:
 
 	ConstraintTeacherHomeRooms(double wp, QString st, const QStringList& rms);
 
-	bool computeInternalStructure(QWidget* parent, const Rules& r);
+	ErrorCode computeInternalStructure(const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 	
@@ -619,7 +632,7 @@ public:
 
 	ConstraintSubjectPreferredRoom(double wp, const QString& subj, const QString& rm);
 
-	bool computeInternalStructure(QWidget* parent, const Rules& r);
+	ErrorCode computeInternalStructure(const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 	
@@ -672,7 +685,7 @@ public:
 
 	ConstraintSubjectPreferredRooms(double wp, const QString& subj, const QStringList& rms);
 
-	bool computeInternalStructure(QWidget* parent, const Rules& r);
+	ErrorCode computeInternalStructure(const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 	
@@ -728,7 +741,7 @@ public:
 
 	ConstraintSubjectActivityTagPreferredRoom(double wp, const QString& subj, const QString& actTag, const QString& rm);
 
-	bool computeInternalStructure(QWidget* parent, const Rules& r);
+	ErrorCode computeInternalStructure(const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 	
@@ -783,7 +796,7 @@ public:
 
 	ConstraintSubjectActivityTagPreferredRooms(double wp, const QString& subj, const QString& actTag, const QStringList& rms);
 
-	bool computeInternalStructure(QWidget* parent, const Rules& r);
+	ErrorCode computeInternalStructure(const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 	
@@ -833,7 +846,7 @@ public:
 
 	ConstraintActivityTagPreferredRoom(double wp, const QString& actTag, const QString& rm);
 
-	bool computeInternalStructure(QWidget* parent, const Rules& r);
+	ErrorCode computeInternalStructure(const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 	
@@ -881,7 +894,7 @@ public:
 
 	ConstraintActivityTagPreferredRooms(double wp, const QString& actTag, const QStringList& rms);
 
-	bool computeInternalStructure(QWidget* parent, const Rules& r);
+	ErrorCode computeInternalStructure(const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 	
@@ -928,7 +941,7 @@ public:
 
 	ConstraintStudentsSetMaxBuildingChangesPerDay(double wp, QString st, int mc);
 
-	bool computeInternalStructure(QWidget* parent, const Rules& r);
+	ErrorCode computeInternalStructure(const Rules& r);
 
 	QString getXmlDescription(const Rules& r) const;
 
@@ -968,7 +981,7 @@ public:
 
 	ConstraintStudentsMaxBuildingChangesPerDay(double wp, int mc);
 
-	bool computeInternalStructure(QWidget* parent, const Rules& r);
+	ErrorCode computeInternalStructure(const Rules& r);
 
 	QString getXmlDescription(const Rules& r) const;
 
@@ -1014,7 +1027,7 @@ public:
 
 	ConstraintStudentsSetMaxBuildingChangesPerWeek(double wp, QString st, int mc);
 
-	bool computeInternalStructure(QWidget* parent, const Rules& r);
+	ErrorCode computeInternalStructure(const Rules& r);
 
 	QString getXmlDescription(const Rules& r) const;
 
@@ -1054,7 +1067,7 @@ public:
 
 	ConstraintStudentsMaxBuildingChangesPerWeek(double wp, int mc);
 
-	bool computeInternalStructure(QWidget* parent, const Rules& r);
+	ErrorCode computeInternalStructure(const Rules& r);
 
 	QString getXmlDescription(const Rules& r) const;
 
@@ -1100,7 +1113,7 @@ public:
 
 	ConstraintStudentsSetMinGapsBetweenBuildingChanges(double wp, QString st, int mg);
 
-	bool computeInternalStructure(QWidget* parent, const Rules& r);
+	ErrorCode computeInternalStructure(const Rules& r);
 
 	QString getXmlDescription(const Rules& r) const;
 
@@ -1140,7 +1153,7 @@ public:
 
 	ConstraintStudentsMinGapsBetweenBuildingChanges(double wp, int mg);
 
-	bool computeInternalStructure(QWidget* parent, const Rules& r);
+	ErrorCode computeInternalStructure(const Rules& r);
 
 	QString getXmlDescription(const Rules& r) const;
 
@@ -1186,7 +1199,7 @@ public:
 
 	ConstraintTeacherMaxBuildingChangesPerDay(double wp, QString tc, int mc);
 
-	bool computeInternalStructure(QWidget* parent, const Rules& r);
+	ErrorCode computeInternalStructure(const Rules& r);
 
 	QString getXmlDescription(const Rules& r) const;
 
@@ -1226,7 +1239,7 @@ public:
 
 	ConstraintTeachersMaxBuildingChangesPerDay(double wp, int mc);
 
-	bool computeInternalStructure(QWidget* parent, const Rules& r);
+	ErrorCode computeInternalStructure(const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 	
@@ -1272,7 +1285,7 @@ public:
 
 	ConstraintTeacherMaxBuildingChangesPerWeek(double wp, QString tc, int mc);
 
-	bool computeInternalStructure(QWidget* parent, const Rules& r);
+	ErrorCode computeInternalStructure(const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 	
@@ -1312,7 +1325,7 @@ public:
 
 	ConstraintTeachersMaxBuildingChangesPerWeek(double wp, int mc);
 
-	bool computeInternalStructure(QWidget* parent, const Rules& r);
+	ErrorCode computeInternalStructure(const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 	
@@ -1358,7 +1371,7 @@ public:
 
 	ConstraintTeacherMinGapsBetweenBuildingChanges(double wp, QString tc, int mg);
 
-	bool computeInternalStructure(QWidget* parent, const Rules& r);
+	ErrorCode computeInternalStructure(const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 	
@@ -1398,7 +1411,7 @@ public:
 
 	ConstraintTeachersMinGapsBetweenBuildingChanges(double wp, int mg);
 
-	bool computeInternalStructure(QWidget* parent, const Rules& r);
+	ErrorCode computeInternalStructure(const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 	
@@ -1442,7 +1455,7 @@ public:
 
 	ConstraintActivitiesOccupyMaxDifferentRooms(double wp, QList<int> a_L, int max_rooms);
 
-	bool computeInternalStructure(QWidget* parent, const Rules& r);
+	ErrorCode computeInternalStructure(const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 
@@ -1486,7 +1499,7 @@ public:
 
 	ConstraintActivitiesSameRoomIfConsecutive(double wp, QList<int> a_L);
 
-	bool computeInternalStructure(QWidget* parent, const Rules& r);
+	ErrorCode computeInternalStructure(const Rules& r);
 
 	bool hasInactiveActivities(const Rules& r) const;
 

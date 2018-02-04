@@ -22,6 +22,7 @@
 #include "timetable.h"
 #include "fet.h"
 #include "timetableexport.h"
+#include "errorrenderer.h"
 
 #include <QString>
 
@@ -37,6 +38,8 @@
 #include <QDir>
 
 #include <QApplication>
+
+#include <QProgressDialog>
 
 #include "longtextmessagebox.h"
 
@@ -127,8 +130,36 @@ TimetableGenerateForm::~TimetableGenerateForm()
 
 void TimetableGenerateForm::start(){
 	if(!gt.rules.internalStructureComputed){
-		if(!gt.rules.computeInternalStructure(this)){
+		QProgressDialog progress(this);
+		progress.setWindowTitle(QCoreApplication::translate("Rules", "Computing internal structure", "Title of a progress dialog"));
+		progress.setMinimum(0);
+		connect(&gt.rules, SIGNAL(internalStructureComputationStarted(int)), &progress, SLOT(setMaximum(int)));
+		connect(&gt.rules, SIGNAL(internalStructureComputationChanged(int)), &progress, SLOT(setValue(int)));
+		connect(&gt.rules, &Rules::internalStructureComputationStepChanged, [&progress](RulesComputationStep step){
+			switch(step) {
+			case RulesComputationStep::ACTIVITIES:
+				progress.setLabelText(QCoreApplication::translate("Rules", "Processing internally the activities ... please wait"));
+				break;
+			case RulesComputationStep::TIME_CONSTRAINTS:
+				progress.setLabelText(QCoreApplication::translate("Rules", "Processing internally the time constraints ... please wait"));
+				break;
+			case RulesComputationStep::SPACE_CONSTRAINTS:
+				progress.setLabelText(QCoreApplication::translate("Rules", "Processing internally the space constraints ... please wait"));
+				break;
+			}
+		});
+		connect(&gt.rules, SIGNAL(internalStructureComputationFinished(bool)), &progress, SLOT(reset()));
+		connect(&progress, SIGNAL(canceled()), &gt.rules, SLOT(cancelInternalStructureComputation()));
+		progress.setModal(true);
+
+		ErrorList errors = gt.rules.computeInternalStructure();
+		ErrorRenderer::renderErrorList(this, errors);
+		if (errors.hasError()){
 			QMessageBox::warning(this, TimetableGenerateForm::tr("FET warning"), TimetableGenerateForm::tr("Data is wrong. Please correct and try again"));
+			return;
+		}
+		if (!gt.rules.internalStructureComputed) {
+			// canceled by user
 			return;
 		}
 	}
@@ -166,7 +197,7 @@ void TimetableGenerateForm::start(){
 
 	simulation_running=true;
 	
-	TimetableExport::writeRandomSeed(this, true); //true represents 'before' state
+	TimetableExport::writeRandomSeed(true); //true represents 'before' state
 
 	generateThread.start();
 }
@@ -208,7 +239,10 @@ void TimetableGenerateForm::stop()
 	foreach(QString t, c.conflictsDescriptionList)
 		conflictsString+=t+"\n";
 
-	TimetableExport::writeSimulationResults(this);
+	ErrorList errors = TimetableExport::writeSimulationResults();
+	foreach (ErrorCode erc, errors) {
+		QMessageBox::warning(this, erc.getSeverityTitle(), erc.message, QMessageBox::Ok);
+	}
 
 	QString s=TimetableGenerateForm::tr("Simulation interrupted! FET could not find a timetable."
 	 " Maybe you can consider lowering the constraints.");
@@ -311,7 +345,10 @@ void TimetableGenerateForm::stopHighest()
 	foreach(QString t, c.conflictsDescriptionList)
 		conflictsString+=t+"\n";
 
-	TimetableExport::writeHighestStageResults(this);
+	ErrorList errors = TimetableExport::writeHighestStageResults();
+	foreach (ErrorCode erc, errors) {
+		QMessageBox::warning(this, erc.getSeverityTitle(), erc.message, QMessageBox::Ok);
+	}
 
 	QString s=TimetableGenerateForm::tr("Simulation interrupted! FET could not find a timetable."
 	 " Maybe you can consider lowering the constraints.");
@@ -412,7 +449,10 @@ void TimetableGenerateForm::impossibleToSolve()
 	foreach(QString t, c.conflictsDescriptionList)
 		conflictsString+=t+"\n";
 
-	TimetableExport::writeSimulationResults(this);
+	ErrorList errors = TimetableExport::writeSimulationResults();
+	foreach (ErrorCode erc, errors) {
+		QMessageBox::warning(this, erc.getSeverityTitle(), erc.message, QMessageBox::Ok);
+	}
 
 
 	QString s=TimetableGenerateForm::tr("Simulation impossible! Maybe you can consider lowering the constraints.");
@@ -459,7 +499,7 @@ void TimetableGenerateForm::simulationFinished()
 
 	gen.finishedSemaphore.acquire();
 
-	TimetableExport::writeRandomSeed(this, false); //false represents 'before' state
+	TimetableExport::writeRandomSeed(false); //false represents 'before' state
 
 	Solution& c=gen.getSolution();
 
@@ -487,7 +527,10 @@ void TimetableGenerateForm::simulationFinished()
 	foreach(QString t, c.conflictsDescriptionList)
 		conflictsString+=t+"\n";
 
-	TimetableExport::writeSimulationResults(this);
+	ErrorList errors = TimetableExport::writeSimulationResults();
+	foreach (ErrorCode erc, errors) {
+		QMessageBox::warning(this, erc.getSeverityTitle(), erc.message, QMessageBox::Ok);
+	}
 
 	QString kk;
 	kk=FILE_SEP;
@@ -658,7 +701,10 @@ void TimetableGenerateForm::write(){
 	foreach(QString t, c.conflictsDescriptionList)
 		conflictsString+=t+"\n";
 
-	TimetableExport::writeSimulationResults(this);
+	ErrorList errors = TimetableExport::writeSimulationResults();
+	foreach (ErrorCode erc, errors) {
+		QMessageBox::warning(this, erc.getSeverityTitle(), erc.message, QMessageBox::Ok);
+	}
 
 	myMutex.unlock();
 
@@ -698,7 +744,10 @@ void TimetableGenerateForm::writeHighestStage(){
 	foreach(QString t, c.conflictsDescriptionList)
 		conflictsString+=t+"\n";
 
-	TimetableExport::writeHighestStageResults(this);
+	ErrorList errors = TimetableExport::writeHighestStageResults();
+	foreach (ErrorCode erc, errors) {
+		QMessageBox::warning(this, erc.getSeverityTitle(), erc.message, QMessageBox::Ok);
+	}
 
 	myMutex.unlock();
 
