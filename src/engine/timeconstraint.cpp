@@ -5835,10 +5835,6 @@ double ConstraintStudentsEarlyMaxBeginningsAtSecondHour::fitness(Solution& c, co
 					
 					conflTotal+=1;
 				}
-				
-				if(c.nPlacedActivities==r.nInternalActivities){
-					assert(0);
-				}
 			}
 			
 			if(dayOccupied && !firstHourOccupied)
@@ -5859,10 +5855,6 @@ double ConstraintStudentsEarlyMaxBeginningsAtSecondHour::fitness(Solution& c, co
 				*conflictsString+= s+"\n";
 				
 				conflTotal+=(nGapsFirstHour-this->maxBeginningsAtSecondHour);
-			}
-			
-			if(c.nPlacedActivities==r.nInternalActivities){
-				assert(0);
 			}
 		}
 	}
@@ -6118,9 +6110,6 @@ double ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::fitness(Solution& c,
 					
 					conflTotal+=1;
 				}
-				
-				if(c.nPlacedActivities==r.nInternalActivities)
-					assert(0);
 			}
 			
 			if(dayOccupied && !firstHourOccupied)
@@ -6142,9 +6131,6 @@ double ConstraintStudentsSetEarlyMaxBeginningsAtSecondHour::fitness(Solution& c,
 				
 				conflTotal+=(nGapsFirstHour-this->maxBeginningsAtSecondHour);
 			}
-			
-			if(c.nPlacedActivities==r.nInternalActivities)
-				assert(0);
 		}
 	}
 					
