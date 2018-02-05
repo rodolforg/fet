@@ -509,6 +509,7 @@ SOURCES += \
 	interface/fetguisettings.cpp \
 	interface/invisiblesubgrouphelper.cpp \
 	interface/studentscomboboxhelper.cpp \
+	interface/timetabletimehorizontalitemdelegate.cpp \
 	\
 	interface/studentscomboboxesstyleform.cpp
 
@@ -1026,6 +1027,7 @@ HEADERS += \
 	interface/fetguisettings.h \
 	interface/invisiblesubgrouphelper.h \
 	interface/studentscomboboxhelper.h \
+	interface/timetabletimehorizontalitemdelegate.h \
 	\
 	interface/studentscomboboxesstyleform.h
 
