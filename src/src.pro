@@ -502,6 +502,7 @@ SOURCES += \
 	interface/errorrenderer.cpp \
 	interface/fetguisettings.cpp \
 	interface/invisiblesubgrouphelper.cpp \
+	interface/timetabletimehorizontalitemdelegate.cpp \
 
 HEADERS += \
 	engine/timetableexport.h \
@@ -1010,6 +1011,7 @@ HEADERS += \
 	interface/errorrenderer.h \
 	interface/fetguisettings.h \
 	interface/invisiblesubgrouphelper.h \
+	interface/timetabletimehorizontalitemdelegate.h \
 
 FORMS += \
 	interface/fetmainform_template.ui \

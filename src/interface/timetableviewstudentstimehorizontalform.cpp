@@ -90,43 +90,6 @@ extern const int MINIMUM_HEIGHT_SPIN_BOX_VALUE;
 const int MINIMUM_WIDTH_SPIN_BOX_VALUE=9;
 const int MINIMUM_HEIGHT_SPIN_BOX_VALUE=9;
 
-void TimetableViewStudentsTimeHorizontalDelegate::paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const
-{
-	QStyledItemDelegate::paint(painter, option, index);
-
-	//int day=index.column()/gt.rules.nHoursPerDay;
-	int hour=index.column()%gt.rules.nHoursPerDay;
-
-	/*if(day>=0 && day<gt.rules.nDaysPerWeek-1 && hour==gt.rules.nHoursPerDay-1){
-		QPen pen(painter->pen());
-		pen.setWidth(2);
-		painter->setPen(pen);
-		painter->drawLine(option.rect.topRight(), option.rect.bottomRight());
-	}*/
-	
-	/*assert(table!=NULL);
-	QBrush bg(table->item(index.row(), index.column())->background());
-	QPen pen(painter->pen());
-
-	double brightness = bg.color().redF()*0.299 + bg.color().greenF()*0.587 + bg.color().blueF()*0.114;
-	if (brightness<0.5)
-		pen.setColor(Qt::white);
-	else
-		pen.setColor(Qt::black);
-
-	painter->setPen(pen);*/
-	
-	if(hour==0)
-		painter->drawLine(option.rect.topLeft(), option.rect.bottomLeft());
-	if(hour==nColumns-1)
-		painter->drawLine(option.rect.topRight(), option.rect.bottomRight());
-
-	if(index.row()==0)
-		painter->drawLine(option.rect.topLeft(), option.rect.topRight());
-	if(index.row()==nRows-1)
-		painter->drawLine(option.rect.bottomLeft(), option.rect.bottomRight());
-}
-
 
 TimetableViewStudentsTimeHorizontalForm::TimetableViewStudentsTimeHorizontalForm(QWidget* parent): QDialog(parent)
 {
@@ -265,7 +228,7 @@ TimetableViewStudentsTimeHorizontalForm::TimetableViewStudentsTimeHorizontalForm
 	studentsTimetableTable->setColumnCount(gt.rules.nDaysPerWeek*gt.rules.nHoursPerDay);
 	
 	oldItemDelegate=studentsTimetableTable->itemDelegate();
-	newItemDelegate=new TimetableViewStudentsTimeHorizontalDelegate(NULL, studentsTimetableTable->rowCount(), gt.rules.nHoursPerDay);
+	newItemDelegate=new TimetableTimeHorizontalItemDelegate(NULL, studentsTimetableTable->rowCount(), gt.rules.nHoursPerDay);
 	studentsTimetableTable->setItemDelegate(newItemDelegate);
 	
 	bool min2letters=false;
