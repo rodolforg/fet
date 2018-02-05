@@ -490,7 +490,8 @@ SOURCES += \
     interface/addconstraintstudentsmincontinuousgapinintervalform.cpp \
     interface/constraintstudentssetmincontinuousgapinintervalform.cpp \
     interface/constraintstudentsmincontinuousgapinintervalform.cpp \
-    interface/editcommentsform.cpp
+	interface/editcommentsform.cpp \
+	interface/timetabletimehorizontalitemdelegate.cpp \
 
 HEADERS += \
 	engine/timetableexport.h \
@@ -987,7 +988,8 @@ HEADERS += \
     interface/addconstraintstudentsmincontinuousgapinintervalform.h \
     interface/constraintstudentssetmincontinuousgapinintervalform.h \
     interface/constraintstudentsmincontinuousgapinintervalform.h \
-    interface/editcommentsform.h
+	interface/editcommentsform.h \
+	interface/timetabletimehorizontalitemdelegate.h \
 
 FORMS += \
 	interface/fetmainform_template.ui \
