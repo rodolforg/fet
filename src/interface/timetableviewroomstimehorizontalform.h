@@ -18,8 +18,6 @@
 #ifndef TIMETABLEVIEWROOMSTIMEHORIZONTALFORM_H
 #define TIMETABLEVIEWROOMSTIMEHORIZONTALFORM_H
 
-#include <QResizeEvent>
-
 class QColor; //by Marco Vassura
 
 #include "ui_timetableviewroomstimehorizontalform_template.h"
@@ -60,7 +58,6 @@ public slots:
 	void heightSpinBoxValueChanged();
 
 protected:
-//	void resizeEvent(QResizeEvent* event);
 	QColor stringToColor(QString s); //by Marco Vassura
 };
 
