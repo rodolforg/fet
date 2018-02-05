@@ -18,16 +18,12 @@
 #ifndef TIMETABLEVIEWSTUDENTSTIMEHORIZONTALFORM_H
 #define TIMETABLEVIEWSTUDENTSTIMEHORIZONTALFORM_H
 
-#include <QResizeEvent>
-
 #include <QString>
 #include <QSet>
 //#include <QHash>
 #include <QStringList>
 
 class QColor; //by Marco Vassura
-
-//class ConstraintStudentsSetNotAvailableTimes;
 
 #include "ui_timetableviewstudentstimehorizontalform_template.h"
 #include "timetabletimehorizontalitemdelegate.h"
