@@ -18,8 +18,6 @@
 #ifndef TIMETABLEVIEWTEACHERSTIMEHORIZONTALFORM_H
 #define TIMETABLEVIEWTEACHERSTIMEHORIZONTALFORM_H
 
-#include <QResizeEvent>
-
 class QColor; //by Marco Vassura
 
 #include "ui_timetableviewteacherstimehorizontalform_template.h"
