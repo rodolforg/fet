@@ -33,6 +33,8 @@ protected:
 	virtual bool filterOk(const SpaceConstraint *ctr) const;
 
 	void afterRemoveConstraint();
+
+	void toggleActiveConstraint(void* ctr, bool checked) const;
 };
 
 #endif

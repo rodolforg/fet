@@ -86,3 +86,11 @@ void ConstraintActivityPreferredRoomForm::afterRemoveConstraint()
 	LockUnlock::computeLockedUnlockedActivitiesOnlySpace();
 	LockUnlock::increaseCommunicationSpinBox();
 }
+
+void ConstraintActivityPreferredRoomForm::toggleActiveConstraint(void* ctr, bool checked) const
+{
+	SpaceConstraintBaseDialog::toggleActiveConstraint(ctr, checked);
+
+	LockUnlock::computeLockedUnlockedActivitiesOnlyTime();
+	LockUnlock::increaseCommunicationSpinBox();
+}

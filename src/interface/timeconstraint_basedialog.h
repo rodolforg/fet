@@ -48,6 +48,8 @@ private:
 	virtual void editComments(void *ctr);
 
 	virtual bool isConstraintActive(const void *ctr) const;
+
+protected:
 	virtual void toggleActiveConstraint(void *ctr, bool checked) const;
 };
 

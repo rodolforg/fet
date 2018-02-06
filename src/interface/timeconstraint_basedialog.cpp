@@ -78,7 +78,11 @@ bool TimeConstraintBaseDialog::isConstraintActive(const void *ctr) const
 void TimeConstraintBaseDialog::toggleActiveConstraint(void *ctr, bool checked) const
 {
 	TimeConstraint *tctr = static_cast<TimeConstraint *>(ctr);
+	if (tctr->active == checked)
+		return;
+
 	tctr->active = checked;
+
 	gt.rules.internalStructureComputed = false;
 	gt.rules.setModified(true);
 }

@@ -80,3 +80,11 @@ void ConstraintActivityPreferredStartingTimeForm::afterRemoveConstraint()
 	LockUnlock::computeLockedUnlockedActivitiesOnlyTime();
 	LockUnlock::increaseCommunicationSpinBox();
 }
+
+void ConstraintActivityPreferredStartingTimeForm::toggleActiveConstraint(void* ctr, bool checked) const
+{
+	TimeConstraintBaseDialog::toggleActiveConstraint(ctr, checked);
+
+	LockUnlock::computeLockedUnlockedActivitiesOnlyTime();
+	LockUnlock::increaseCommunicationSpinBox();
+}

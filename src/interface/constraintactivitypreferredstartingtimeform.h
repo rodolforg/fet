@@ -33,6 +33,8 @@ protected:
 	virtual bool filterOk(const TimeConstraint *ctr) const;
 
 	virtual void afterRemoveConstraint();
+
+	virtual void toggleActiveConstraint(void* ctr, bool checked) const override;
 };
 
 #endif

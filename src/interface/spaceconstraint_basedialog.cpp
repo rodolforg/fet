@@ -77,8 +77,12 @@ bool SpaceConstraintBaseDialog::isConstraintActive(const void *ctr) const
 
 void SpaceConstraintBaseDialog::toggleActiveConstraint(void *ctr, bool checked) const
 {
-	SpaceConstraint *tctr = static_cast<SpaceConstraint *>(ctr);
-	tctr->active = checked;
+	SpaceConstraint *sctr = static_cast<SpaceConstraint *>(ctr);
+	if (sctr->active == checked)
+		return;
+
+	sctr->active = checked;
+
 	gt.rules.internalStructureComputed = false;
 	gt.rules.setModified(true);
 }
