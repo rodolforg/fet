@@ -263,20 +263,25 @@ void TimetableGenerateMultipleForm::start(){
 		QProgressDialog progress(this);
 		progress.setWindowTitle(QCoreApplication::translate("Rules", "Computing internal structure", "Title of a progress dialog"));
 		progress.setMinimum(0);
+		QMutex mutex;
 		connect(&gt.rules, SIGNAL(internalStructureComputationStarted(int)), &progress, SLOT(setMaximum(int)));
 		connect(&gt.rules, SIGNAL(internalStructureComputationChanged(int)), &progress, SLOT(setValue(int)));
-		connect(&gt.rules, &Rules::internalStructureComputationStepChanged, [&progress](RulesComputationStep step){
+		connect(&gt.rules, &Rules::internalStructureComputationStepChanged, [&progress, &mutex](RulesComputationStep step){
+			QString text;
 			switch(step) {
 			case RulesComputationStep::ACTIVITIES:
-				progress.setLabelText(QCoreApplication::translate("Rules", "Processing internally the activities ... please wait"));
+				text = QCoreApplication::translate("Rules", "Processing internally the activities ... please wait");
 				break;
 			case RulesComputationStep::TIME_CONSTRAINTS:
-				progress.setLabelText(QCoreApplication::translate("Rules", "Processing internally the time constraints ... please wait"));
+				text = QCoreApplication::translate("Rules", "Processing internally the time constraints ... please wait");
 				break;
 			case RulesComputationStep::SPACE_CONSTRAINTS:
-				progress.setLabelText(QCoreApplication::translate("Rules", "Processing internally the space constraints ... please wait"));
+				text = QCoreApplication::translate("Rules", "Processing internally the space constraints ... please wait");
 				break;
 			}
+			mutex.lock();
+			progress.setLabelText(text);
+			mutex.unlock();
 		});
 		connect(&gt.rules, SIGNAL(internalStructureComputationFinished(bool)), &progress, SLOT(reset()));
 		connect(&progress, SIGNAL(canceled()), &gt.rules, SLOT(cancelInternalStructureComputation()));
