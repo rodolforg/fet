@@ -433,7 +433,7 @@ const QString FOdsExportForm::template_1 = "<?xml version=\"1.0\" encoding=\"UTF
 										   " </office:styles>\n"
 										   " <office:automatic-styles>\n"
 										   "  <style:style style:name=\"col_hora\" style:family=\"table-column\">\n"
-										   "   <style:table-column-properties fo:break-before=\"auto\" style:column-width=\"10.41mm\"/>\n"
+										   "   <style:table-column-properties fo:break-before=\"auto\" style:column-width=\"11.20mm\"/>\n"
 										   "  </style:style>\n"
 										   "  <style:style style:name=\"col_dia_div_2\" style:family=\"table-column\">\n"
 										   "   <style:table-column-properties fo:break-before=\"auto\" style:column-width=\"26.49mm\"/>\n"
