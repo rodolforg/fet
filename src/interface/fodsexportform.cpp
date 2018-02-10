@@ -105,8 +105,18 @@ QString FOdsExportForm::getActivityText(const Activity *act, int flags, int tblI
 	} else if (flags & ActivityFlags::STUDENTS) {
 		text += text_par_tag.arg(text_span_tag.arg("T1").arg(act->studentsNames.join(", ")));
 	}
-	if (flags & ActivityFlags::ACTIVITY_TAG)
-		text += text_par_tag.arg(text_span_tag.arg("T1").arg(act->activityTagsNames.join(", ")));
+	if (flags & ActivityFlags::ACTIVITY_TAG) {
+		QStringList printableActivityTagNames;
+		foreach (QString name, act->activityTagsNames) {
+			int tagId = rules.searchActivityTag(name);
+			if (tagId < 0)
+				continue;
+			const ActivityTag *tag = rules.activityTagsList[tagId];
+			if (tag->printable)
+				printableActivityTagNames << name;
+		}
+		text += text_par_tag.arg(text_span_tag.arg("T1").arg(printableActivityTagNames.join(", ")));
+	}
 	if (flags & ActivityFlags::ROOM) {
 		TimetableExportHelper helper(rules, solution);
 		const Room *room = helper.getRoom(act);
