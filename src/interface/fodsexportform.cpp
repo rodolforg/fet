@@ -258,6 +258,11 @@ void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, con
 						else
 							text << cell_styled_span_open_tag.arg(style).arg(nColumnsToday).arg(rowspan);
 						text << getActivityText(act, whatShow, tblIdx);
+						if (whatShow & ActivityFlags::TIME) {
+							QString activityEndHourLabel = getEndHourLabel(endHour, filter);
+							QString activityHourLabel = timespan_row_label_format.arg(filter.relabel[h_filtered]).arg(activityEndHourLabel);
+							text << text_par_tag.arg(text_span_tag.arg("T1").arg(activityHourLabel));
+						}
 						text << cell_close_tag;
 					}
 					if (nColumnsToday != nActivitiesNow)
@@ -300,6 +305,11 @@ void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, con
 						int rowspan = getRowSpan(h, endHour, validHoursId);
 						text << cell_styled_span_open_tag.arg(style).arg(1).arg(rowspan);
 						text << getActivityText(act, whatShow, tblIdx);
+						if (whatShow & ActivityFlags::TIME) {
+							QString activityEndHourLabel = getEndHourLabel(endHour, filter);
+							QString activityHourLabel = timespan_row_label_format.arg(filter.relabel[h_filtered]).arg(activityEndHourLabel);
+							text << text_par_tag.arg(text_span_tag.arg("T1").arg(activityHourLabel));
+						}
 						text << cell_close_tag;
 					}
 					if (nActivitiesNow < nColumnsToday)
