@@ -126,6 +126,21 @@ QString FOdsExportForm::getActivityText(const Activity *act, int flags, int tblI
 	return text;
 }
 
+QString FOdsExportForm::getEndHourLabel(int current_hour, const HourFilter& filter) const
+{
+	for (int hi = current_hour; hi < rules.nHoursPerDay; hi++) {
+		const QString &hourLabel = rules.hoursOfTheDay[hi];
+		if (filter.breakTimes.contains(hourLabel)) {
+			return hourLabel; // relabel?
+		}
+		if (filter.validHours.contains(hourLabel)) {
+			int idx = filter.validHours.indexOf(hourLabel);
+			return filter.relabel[idx];
+		}
+	}
+	return filter.relabel.last();
+}
+
 void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, const TimetableExportHelper::Table &table, const int tblIdx, const QString &tableName, const char *data_row_style, const char *table_style, int whatShow)
 {
 	QList<int> validHoursId;
@@ -191,14 +206,7 @@ void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, con
 			text << cell_default_span_open_tag.arg(required_columns+1).arg(1);
 			text << cell_close_tag;
 		} else {
-			QString endHourLabel = filter.relabel[h_filtered+1];
-			for (int hi = h+1; h_filtered+1 < validHoursId.count() && hi < validHoursId[h_filtered+1]; hi++) {
-				const QString &str = rules.hoursOfTheDay[hi];
-				if (filter.breakTimes.contains(str)) {
-					endHourLabel = str;
-					break;
-				}
-			}
+			QString endHourLabel = getEndHourLabel(h+1, filter);
 			text << cell_default_open_tag << text_par_tag.arg(filter.relabel[h_filtered] + " - " + endHourLabel) << cell_close_tag;
 
 			for (int d = 0; d < rules.nDaysPerWeek; d++) {

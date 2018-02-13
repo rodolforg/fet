@@ -73,6 +73,8 @@ private:
 	};
 
 	QString getActivityText(const Activity* act, int flags, int tblIdx);
+
+	QString getEndHourLabel(int current_hour, const HourFilter& filter) const;
 };
 
 #endif // FODSEXPORTFORM_H
