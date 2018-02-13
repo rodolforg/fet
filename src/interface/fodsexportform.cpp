@@ -234,7 +234,7 @@ void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, con
 			}
 
 			for (int d = 0; d < rules.nDaysPerWeek; d++) {
-				const int nActivitiesNow = table.data[tblIdx][d][h].activities.count();
+				const int nActivitiesNow = table.data[tblIdx][d][h].elements.count();
 				const int nColumnsToday = table.maxSimultaneousActivitiesPerDay(tblIdx,d);
 				if (nActivitiesNow == 0) {
 					if (nColumnsToday <= 1)
@@ -246,8 +246,8 @@ void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, con
 						text << cell_empty_covered_spanned_tag.arg("Conteúdo").arg(nColumnsToday-1);
 				} else if (nActivitiesNow == 1) {
 					const char *style = d < rules.nDaysPerWeek-1 ? "Conteúdo_20_preenchido" : "Conteúdo_20_preenchido";//"Conteúdo_20_preenchido_20_fim";
-					const Activity *act = table.data[tblIdx][d][h].activities[0];
-					if (h > 0 && table.data[tblIdx][d][h-1].activities.contains(act) && !wasBreakTime) {
+					const Activity *act = table.data[tblIdx][d][h].elements[0].activity;
+					if (h > 0 && table.data[tblIdx][d][h-1].contains(act) && !wasBreakTime) {
 						// covered
 						text << cell_empty_covered_tag.arg(style);
 					} else {
@@ -264,13 +264,15 @@ void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, con
 						text << cell_empty_covered_spanned_tag.arg(style).arg(nColumnsToday-1);
 				} else {
 					const char *style = d < rules.nDaysPerWeek-1 ? "Conteúdo_20_preenchido" : "Conteúdo_20_preenchido";//"Conteúdo_20_preenchido_20_fim";
-					QList<const Activity*> activities = table.data[tblIdx][d][h].activities;
+					QList<TimetableExportHelper::Element::SubElement> elements = table.data[tblIdx][d][h].elements;
 					struct A{
 						A(const Rules &rules, const QString &yearName) :
 							rules(rules), yearName(yearName)
 						{}
-						bool operator()(const Activity* a, const Activity* b) const
+						bool operator()(const TimetableExportHelper::Element::SubElement& suba, TimetableExportHelper::Element::SubElement& subb) const
 						{
+							const Activity* a = suba.activity;
+							const Activity* b = subb.activity;
 							QList<int> a_groups;
 							foreach (QString g, a->studentsNames) {
 								int groupIdx = rules.searchGroup(yearName, g);
@@ -291,9 +293,10 @@ void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, con
 						const Rules &rules;
 						const QString &yearName;
 					} customLess(rules, tableName);
-					std::sort(activities.begin(), activities.end(), customLess);
-					foreach (const Activity * act, activities) {
-						int endHour = getEndHour(h, table.data[tblIdx][d][h].timeSpan, filter);
+					std::sort(elements.begin(), elements.end(), customLess);
+					foreach (const TimetableExportHelper::Element::SubElement sub, elements) {
+						const Activity* act = sub.activity;
+						int endHour = getEndHour(h, sub.timeSpan, filter);
 						int rowspan = getRowSpan(h, endHour, validHoursId);
 						text << cell_styled_span_open_tag.arg(style).arg(1).arg(rowspan);
 						text << getActivityText(act, whatShow, tblIdx);

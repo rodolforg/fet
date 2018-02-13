@@ -18,9 +18,17 @@ public:
 
 	/// Depicts a timetable element
 	struct Element {
-		QList<const Activity*> activities;
+		struct SubElement {
+			const Activity* activity;
+			int timeSpan = 1;
+			SubElement(const Activity* act, int timeSpan = 1)
+				: activity(act), timeSpan(timeSpan)
+			{}
+		};
+		QList<SubElement> elements;
 		int timeSpan = 1;
 		bool covered = false;
+		bool contains(const Activity* activity) const;
 	};
 	struct Table {
         /// Indexes: (Teacher/Student/Room/Subject/etc.), (Day), (Hour)

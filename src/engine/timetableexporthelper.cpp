@@ -77,7 +77,7 @@ void TimetableExportHelper::getBasicTimetable(Table &table, GetStuffIndexMethod 
 			QList<int> indexes = (this->*getStuffIndex)(act);
 			for (int h=hour; h < hour+act.duration; h++) {
 				foreach (int idx, indexes)
-					table.data[idx][day][h].activities << &act;
+					table.data[idx][day][h].elements << Element::SubElement(&act, hour+act.duration-h);
 			}
 		}
 	}
@@ -94,7 +94,7 @@ void TimetableExportHelper::fillTimetableForActivities(Element** timetable, cons
 			int day = time % rules.nDaysPerWeek;
 			const Activity &act = rules.internalActivitiesList[idxAct];
 			for (int h=hour; h < hour+act.duration; h++) {
-				timetable[day][h].activities << &act;
+				timetable[day][h].elements << &act;
 			}
 		}
 	}
@@ -198,16 +198,25 @@ void TimetableExportHelper::Table::computeExtraInfo()
 		for (int d=0; d < numDays; d++) {
 			int maxSimultaneousActivitiesToday = 0;
 			for (int h=0; h < numHours; ) {
-				if (!computeEmptyHoursSpan && data[t][d][h].activities.count() == 0) {
+				if (!computeEmptyHoursSpan && data[t][d][h].elements.count() == 0) {
 //					data[t][d][h].timeSpan = 1;
 					h++;
 					continue;
 				}
-				if (maxSimultaneousActivitiesToday < data[t][d][h].activities.count())
-					maxSimultaneousActivitiesToday = data[t][d][h].activities.count();
+				if (maxSimultaneousActivitiesToday < data[t][d][h].elements.count())
+					maxSimultaneousActivitiesToday = data[t][d][h].elements.count();
 				int h2 = h+1;
 				while (h2 < numHours) {
-					if (data[t][d][h2].activities != data[t][d][h].activities)
+					if (data[t][d][h2].elements.count() != data[t][d][h].elements.count())
+						break;
+					bool different = false;
+					for(int i=0; i < data[t][d][h2].elements.count(); i++) {
+						if (data[t][d][h2].elements[i].activity != data[t][d][h].elements[i].activity) {
+							different = true;
+							break;
+						}
+					}
+					if (different)
 						break;
 					h2++;
 				}
@@ -222,4 +231,13 @@ void TimetableExportHelper::Table::computeExtraInfo()
 			maxSimultaneousActivitiesPerDay(t, d) = maxSimultaneousActivitiesToday;
 		}
 	}
+}
+
+bool TimetableExportHelper::Element::contains(const Activity* activity) const
+{
+	foreach (const SubElement& element, elements) {
+		if (element.activity == activity)
+			return true;
+	}
+	return false;
 }
