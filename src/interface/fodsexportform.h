@@ -61,6 +61,8 @@ private:
 	static const QString text_par_tag;
 	static const QString text_span_tag;
 
+	static const QString timespan_row_label_format;
+
 	enum ActivityFlags {
 		SUBJECT      = 1,
 		TEACHERS     = 2,

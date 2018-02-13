@@ -227,7 +227,7 @@ void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, con
 		} else {
 			QString endHourLabel = getEndHourLabel(h+1, filter);
 			if (whatShow & TIME_ROW_LABEL) {
-				QString hourRowLabel = filter.relabel[h_filtered] + " - " + endHourLabel;
+				QString hourRowLabel = timespan_row_label_format.arg(filter.relabel[h_filtered]).arg(endHourLabel);
 				text << cell_default_open_tag << text_par_tag.arg(hourRowLabel) << cell_close_tag;
 			} else {
 				text << cell_empty_tag;
@@ -637,6 +637,8 @@ const char * FOdsExportForm::cell_close_tag = "     </table:table-cell>\n";
 
 const QString FOdsExportForm::text_par_tag = "      <text:p>%1</text:p>\n";
 const QString FOdsExportForm::text_span_tag = "<text:span text:style-name=\"%1\">%2</text:span>";
+
+const QString FOdsExportForm::timespan_row_label_format = "%1 - %2";
 
 FOdsExportForm::HourFilter::HourFilter(const QStringList& validHours, const QStringList& intervals, const QStringList& relabel)
 	: validHours(validHours), breakTimes(intervals), relabel(relabel)
