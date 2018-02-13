@@ -563,7 +563,7 @@ const QString FOdsExportForm::row_doc_header = "    <table:table-row table:style
 											   "     </table:table-cell>\n"
 											   "     <table:covered-table-cell table:number-columns-repeated=\"%3\" table:style-name=\"Default\"/>\n"
 											   "     <table:covered-table-cell table:style-name=\"Default\">\n"
-											   "      <draw:frame table:end-x=\"8.05mm\" table:end-y=\"6.21mm\" draw:z-index=\"0\" draw:name=\"Picture 4\" draw:style-name=\"gr1\" svg:width=\"11.07mm\" svg:height=\"4.95mm\" svg:x=\"0mm\" svg:y=\"1.26mm\">\n"
+											   "      <draw:frame table:end-x=\"8.05mm\" table:end-y=\"6.21mm\" draw:z-index=\"0\" draw:name=\"Picture in %2\" draw:style-name=\"gr1\" svg:width=\"11.07mm\" svg:height=\"4.95mm\" svg:x=\"0mm\" svg:y=\"1.26mm\">\n"
 											   "       <draw:image xlink:href=\"\">\n"
 											   "        <office:binary-data>/9j/4AAQSkZJRgABAQEA3ADcAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgICAgUEBAMEBgUG\n"
 											   "         BgYFBgYGBwkIBgcJBwYGCAsICQoKCgoKBggLDAsKDAkKCgr/2wBDAQICAgICAgUDAwUKBwYH\n"
