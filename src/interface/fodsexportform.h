@@ -63,7 +63,7 @@ private:
 
 	enum ActivityFlags {
 		SUBJECT      = 1,
-		TEACHER      = 2,
+		TEACHERS     = 2,
 		STUDENTS     = 4,
 		ACTIVITY_TAG = 8,
 		ROOM         = 16,

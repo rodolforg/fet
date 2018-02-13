@@ -62,7 +62,7 @@ void FOdsExportForm::ok()
 		const QStringList &relabel = isSuperior? relabel_superior : relabel_medio;
 
 		HourFilter filter(validHours, intervals, relabel);
-		int whatShow = SUBJECT|TEACHER|STUDENTS_ONLY_IF_DIFFERENT|ROOM;
+		int whatShow = SUBJECT|TEACHERS|STUDENTS_ONLY_IF_DIFFERENT|ROOM;
 		writeTable(text, filter, tt_years, y, yearName, isSuperior? "row_hora_normal_superior" : "row_hora_normal", "pm1", whatShow);
 	}
 
@@ -96,7 +96,7 @@ QString FOdsExportForm::getActivityText(const Activity *act, int flags, int tblI
 	if (flags & ActivityFlags::TEACHERS_ONLY_IF_DIFFERENT) {
 		if (!act->teachersNames.contains(rules.teachersList[tblIdx]->name))
 			text += text_par_tag.arg(text_span_tag.arg("T1").arg(act->teachersNames.join(", ")));
-	} else if (flags & ActivityFlags::TEACHER) {
+	} else if (flags & ActivityFlags::TEACHERS) {
 		text += text_par_tag.arg(text_span_tag.arg("T1").arg(act->teachersNames.join(", ")));
 	}
 	if (flags & ActivityFlags::STUDENTS_ONLY_IF_DIFFERENT) {
