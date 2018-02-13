@@ -141,6 +141,25 @@ QString FOdsExportForm::getEndHourLabel(int current_hour, const HourFilter& filt
 	return filter.relabel.last();
 }
 
+int FOdsExportForm::getEndHour(int current_hour, int timeSpan, const HourFilter& filter) const
+{
+	int endHour = current_hour+1;
+	for (int remaining=timeSpan-1; endHour<rules.nHoursPerDay && remaining>0; endHour++, remaining--) {
+		if (filter.breakTimes.contains(rules.hoursOfTheDay[endHour]))
+			break;
+	}
+	return endHour;
+}
+
+int FOdsExportForm::getRowSpan(int start_hour, int end_hour, const QList<int>& validHoursId) const
+{
+	int rowspan = 0;
+	for (int h = start_hour; h < end_hour; h++)
+		if (validHoursId.contains(h))
+			rowspan++;
+	return rowspan;
+}
+
 void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, const TimetableExportHelper::Table &table, const int tblIdx, const QString &tableName, const char *data_row_style, const char *table_style, int whatShow)
 {
 	QList<int> validHoursId;
@@ -227,13 +246,8 @@ void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, con
 						// covered
 						text << cell_empty_covered_tag.arg(style);
 					} else {
-						int rowspan = 1;
-						for (int h2=h+1, remaining=table.data[tblIdx][d][h].timeSpan-1; h2<rules.nHoursPerDay && remaining>0; h2++, remaining--) {
-							if (filter.breakTimes.contains(rules.hoursOfTheDay[h2]))
-								break;
-							if (validHoursId.contains(h2))
-								rowspan++;
-						}
+						int endHour = getEndHour(h, table.data[tblIdx][d][h].timeSpan, filter);
+						int rowspan = getRowSpan(h, endHour, validHoursId);
 						if (rowspan == 1 && nColumnsToday == nActivitiesNow)
 							text << cell_styled_open_tag.arg(style);
 						else
@@ -274,13 +288,8 @@ void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, con
 					} customLess(rules, tableName);
 					std::sort(activities.begin(), activities.end(), customLess);
 					foreach (const Activity * act, activities) {
-						int rowspan = 1;
-						for (int h2=h+1, remaining=table.data[tblIdx][d][h].timeSpan-1; h2<rules.nHoursPerDay && remaining>0; h2++, remaining--) {
-							if (filter.breakTimes.contains(rules.hoursOfTheDay[h2]))
-								break;
-							if (validHoursId.contains(h2))
-								rowspan++;
-						}
+						int endHour = getEndHour(h, table.data[tblIdx][d][h].timeSpan, filter);
+						int rowspan = getRowSpan(h, endHour, validHoursId);
 						text << cell_styled_span_open_tag.arg(style).arg(1).arg(rowspan);
 						text << getActivityText(act, whatShow, tblIdx);
 						text << cell_close_tag;

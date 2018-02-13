@@ -75,6 +75,8 @@ private:
 	QString getActivityText(const Activity* act, int flags, int tblIdx);
 
 	QString getEndHourLabel(int current_hour, const HourFilter& filter) const;
+	int getEndHour(int current_hour, int timeSpan, const HourFilter& filter) const;
+	int getRowSpan(int start_hour, int end_hour, const QList<int>& validHoursId) const;
 };
 
 #endif // FODSEXPORTFORM_H
