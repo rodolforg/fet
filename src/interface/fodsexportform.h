@@ -69,7 +69,8 @@ private:
 		ROOM         = 16,
 		TIME         = 32,
 		STUDENTS_ONLY_IF_DIFFERENT = 64,
-		TEACHERS_ONLY_IF_DIFFERENT = 128
+		TEACHERS_ONLY_IF_DIFFERENT = 128,
+		TIME_ROW_LABEL = 256
 	};
 
 	QString getActivityText(const Activity* act, int flags, int tblIdx);

@@ -62,7 +62,7 @@ void FOdsExportForm::ok()
 		const QStringList &relabel = isSuperior? relabel_superior : relabel_medio;
 
 		HourFilter filter(validHours, intervals, relabel);
-		int whatShow = SUBJECT|TEACHERS|STUDENTS_ONLY_IF_DIFFERENT|ROOM;
+		int whatShow = SUBJECT|TEACHERS|STUDENTS_ONLY_IF_DIFFERENT|ROOM|TIME_ROW_LABEL;
 		writeTable(text, filter, tt_years, y, yearName, isSuperior? "row_hora_normal_superior" : "row_hora_normal", "pm1", whatShow);
 	}
 
@@ -226,7 +226,12 @@ void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, con
 			text << cell_close_tag;
 		} else {
 			QString endHourLabel = getEndHourLabel(h+1, filter);
-			text << cell_default_open_tag << text_par_tag.arg(filter.relabel[h_filtered] + " - " + endHourLabel) << cell_close_tag;
+			if (whatShow & TIME_ROW_LABEL) {
+				QString hourRowLabel = filter.relabel[h_filtered] + " - " + endHourLabel;
+				text << cell_default_open_tag << text_par_tag.arg(hourRowLabel) << cell_close_tag;
+			} else {
+				text << cell_empty_tag;
+			}
 
 			for (int d = 0; d < rules.nDaysPerWeek; d++) {
 				const int nActivitiesNow = table.data[tblIdx][d][h].activities.count();
