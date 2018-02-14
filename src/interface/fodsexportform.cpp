@@ -146,12 +146,16 @@ void FOdsExportForm::writeRoomsTables(QTextStream& stream, int whatShowFlags) co
 	helper.getRoomsTimetable(tt_rooms);
 	tt_rooms.computeExtraInfo();
 
+	Styles roomStyles;
+	roomStyles.table = "pm2";
+	roomStyles.data_row = "row_hora_normal_professor";
+
 	stream.setCodec("UTF-8");
 
 	for (int rid=0; rid < rules.roomsList.size(); rid++) {
 		QString roomName = rules.roomsList[rid]->name;
 
-		writeTable(stream, filter, tt_rooms, rid, roomName, "row_hora_normal_professor", "pm2", whatShowFlags);
+		writeTable(stream, filter, tt_rooms, rid, roomName, roomStyles, whatShowFlags);
 	}
 }
 
@@ -172,6 +176,10 @@ void FOdsExportForm::writeStudentsTables(QTextStream& stream, int whatShowFlags)
 	helper.getYearsTimetable(tt_years);
 	tt_years.computeExtraInfo();
 
+	Styles studentsStyles;
+	studentsStyles.table = "pm1";
+	studentsStyles.data_row = "row_hora_normal";
+
 	stream.setCodec("UTF-8");
 
 	for (int y=0; y < rules.yearsList.size(); y++) {
@@ -180,7 +188,9 @@ void FOdsExportForm::writeStudentsTables(QTextStream& stream, int whatShowFlags)
 		const bool isSuperior = yearName.startsWith("ENPRO.") || yearName.startsWith("FISIC.") || yearName.startsWith("BAFIS.") || yearName.startsWith("MFIS.");
 		const HourFilter &filter = isSuperior? filterSuperior : filterMedio;
 
-		writeTable(stream, filter, tt_years, y, yearName, isSuperior? "row_hora_normal_superior" : "row_hora_normal", "pm1", whatShowFlags);
+		studentsStyles.data_row = isSuperior? "row_hora_normal_superior" : "row_hora_normal";
+
+		writeTable(stream, filter, tt_years, y, yearName, studentsStyles, whatShowFlags);
 	}
 }
 
@@ -198,11 +208,16 @@ void FOdsExportForm::writeTeachersTables(QTextStream& stream, int whatShowFlags)
 	helper.getTeachersTimetable(tt_teachers);
 	tt_teachers.computeExtraInfo();
 
+	Styles teacherStyles;
+	teacherStyles.table = "pm2";
+	teacherStyles.data_row = "row_hora_normal_professor";
+
 	stream.setCodec("UTF-8");
+
 	for (int rid=0; rid < rules.teachersList.size(); rid++) {
 		QString teacherName = rules.teachersList[rid]->name;
 
-		writeTable(stream, filter, tt_teachers, rid, teacherName, "row_hora_normal_professor", "pm2", whatShowFlags);
+		writeTable(stream, filter, tt_teachers, rid, teacherName, teacherStyles, whatShowFlags);
 	}
 }
 
@@ -270,22 +285,22 @@ int FOdsExportForm::getTeachersShowFlags() const
 	return flags;
 }
 
-QString FOdsExportForm::getActivityText(const Activity *act, int flags, int tblIdx) const
+QString FOdsExportForm::getActivityText(const Activity *act, const Styles& styles, int flags, int tblIdx) const
 {
 	QString text;
 	if (flags & ActivityFlags::SUBJECT)
 		text += text_par_tag.arg(act->subjectName);
 	if (flags & ActivityFlags::TEACHERS_ONLY_IF_DIFFERENT) {
 		if (!act->teachersNames.contains(rules.teachersList[tblIdx]->name))
-			text += text_par_tag.arg(text_span_tag.arg("T1").arg(act->teachersNames.join(", ")));
+			text += text_par_tag.arg(text_span_tag.arg(styles.teachers_span).arg(act->teachersNames.join(", ")));
 	} else if (flags & ActivityFlags::TEACHERS) {
-		text += text_par_tag.arg(text_span_tag.arg("T1").arg(act->teachersNames.join(", ")));
+		text += text_par_tag.arg(text_span_tag.arg(styles.teachers_span).arg(act->teachersNames.join(", ")));
 	}
 	if (flags & ActivityFlags::STUDENTS_ONLY_IF_DIFFERENT) {
 		if (!act->studentsNames.contains(rules.yearsList[tblIdx]->name))
-			text += text_par_tag.arg(text_span_tag.arg("T1").arg(act->studentsNames.join(", ")));
+			text += text_par_tag.arg(text_span_tag.arg(styles.students_span).arg(act->studentsNames.join(", ")));
 	} else if (flags & ActivityFlags::STUDENTS) {
-		text += text_par_tag.arg(text_span_tag.arg("T1").arg(act->studentsNames.join(", ")));
+		text += text_par_tag.arg(text_span_tag.arg(styles.students_span).arg(act->studentsNames.join(", ")));
 	}
 	if (flags & ActivityFlags::ACTIVITY_TAG) {
 		QStringList printableActivityTagNames;
@@ -297,13 +312,13 @@ QString FOdsExportForm::getActivityText(const Activity *act, int flags, int tblI
 			if (tag->printable)
 				printableActivityTagNames << name;
 		}
-		text += text_par_tag.arg(text_span_tag.arg("T1").arg(printableActivityTagNames.join(", ")));
+		text += text_par_tag.arg(text_span_tag.arg(styles.activity_tags_span).arg(printableActivityTagNames.join(", ")));
 	}
 	if (flags & ActivityFlags::ROOM) {
 		TimetableExportHelper helper(rules, solution);
 		const Room *room = helper.getRoom(act);
 		if (room != NULL)
-			text += text_par_tag.arg(text_span_tag.arg("T1").arg(room->name));
+			text += text_par_tag.arg(text_span_tag.arg(styles.rooms_span).arg(room->name));
 	}
 	return text;
 }
@@ -342,7 +357,7 @@ int FOdsExportForm::getRowSpan(int start_hour, int end_hour, const QList<int>& v
 	return rowspan;
 }
 
-void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, const TimetableExportHelper::Table &table, const int tblIdx, const QString &tableName, const char *data_row_style, const char *table_style, int whatShow) const
+void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, const TimetableExportHelper::Table &table, const int tblIdx, const QString &tableName, const Styles& styles, int whatShow) const
 {
 	QList<int> validHoursId;
 	foreach (QString hour, filter.validHours) {
@@ -355,28 +370,28 @@ void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, con
 	}
 	qSort(validHoursId);
 
-	text << QString(table_open_tag).arg(tableName).arg(table_style);
-	text << table_column_tag.arg("col_hora").arg("Hora");
+	text << QString(table_open_tag).arg(tableName).arg(styles.table);
+	text << table_column_tag.arg(styles.hour_column).arg(styles.hour_cell);
 	int required_columns = 0;
 	for(int d=0; d<rules.nDaysPerWeek; d++) {
-		const char *default_cell_style = (d < rules.nDaysPerWeek - 1) ? "Conteúdo" : "Conteúdo";//"Conteúdo_20_fim";
+		const char *default_cell_style = (d < rules.nDaysPerWeek - 1) ? styles.default_empty_cell : "Conteúdo";//"Conteúdo_20_fim";
 		const int columnsToday = table.maxSimultaneousActivitiesPerDay(tblIdx,d) > 1 ? table.maxSimultaneousActivitiesPerDay(tblIdx,d) : 1;
-		const char *col_style = columnsToday <= 1 ? "col_dia_normal" : "col_dia_div_2";
+		const char *col_style = columnsToday <= 1 ? styles.single_activity_day_column : styles.multiple_activities_day_column;
 
 		required_columns += columnsToday;
 
 		for (int idd = 0; idd < columnsToday; idd++)
 			text << table_column_tag.arg(col_style).arg(default_cell_style);
 	}
-	text << table_column_tag.arg("col_fim_dia").arg("Coluna_20_fim");
+	text << table_column_tag.arg(styles.week_end_column).arg(styles.week_end_cell);
 
 	text << row_doc_header.arg(required_columns+1).arg(tableName).arg(required_columns+1-2);
 
-	text << row_open_tag.arg("row_dias_semana");
-	text << cell_styled_open_tag.arg("Dia_20_início");
+	text << row_open_tag.arg(styles.week_days_row);
+	text << cell_styled_open_tag.arg(styles.week_days_first_cell);
 	text << cell_close_tag;
 	for (int d=0; d < rules.nDaysPerWeek; d++) {
-		const char *cell_style = d < rules.nDaysPerWeek-1 ? "Dia_20_meio" : "Dia_20_fim";
+		const char *cell_style = d < rules.nDaysPerWeek-1 ? styles.week_days_regular_cell : styles.week_days_last_cell;
 		if(table.maxSimultaneousActivitiesPerDay(tblIdx,d) > 1) {
 			text << cell_styled_span_open_tag.arg(cell_style).arg(table.maxSimultaneousActivitiesPerDay(tblIdx,d)).arg(1);
 			text << text_par_tag.arg(rules.daysOfTheWeek[d]);
@@ -401,7 +416,7 @@ void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, con
 		bool wasBreakTime = h > 0 && filter.breakTimes.contains(rules.hoursOfTheDay[h-1]);
 		if (isBreakTime && wasBreakTime)
 			continue;
-		const char *row_style = !isBreakTime ? data_row_style : "row_intervalo";
+		const char *row_style = !isBreakTime ? styles.data_row : styles.break_time_row;
 		text << row_open_tag.arg(row_style);
 		if (isBreakTime) {
 			text << cell_default_span_open_tag.arg(required_columns+1).arg(1);
@@ -425,9 +440,9 @@ void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, con
 						text << cell_default_span_open_tag.arg(nColumnsToday).arg(1);
 					text << cell_close_tag;
 					if (nColumnsToday > 1)
-						text << cell_empty_covered_spanned_tag.arg("Conteúdo").arg(nColumnsToday-1);
+						text << cell_empty_covered_spanned_tag.arg(styles.default_empty_cell).arg(nColumnsToday-1);
 				} else if (nActivitiesNow == 1) {
-					const char *style = d < rules.nDaysPerWeek-1 ? "Conteúdo_20_preenchido" : "Conteúdo_20_preenchido";//"Conteúdo_20_preenchido_20_fim";
+					const char *style = d < rules.nDaysPerWeek-1 ? styles.default_filled_cell : "Conteúdo_20_preenchido";//"Conteúdo_20_preenchido_20_fim";
 					const Activity *act = table.data[tblIdx][d][h].elements[0].activity;
 					if (h > 0 && table.data[tblIdx][d][h-1].contains(act) && !wasBreakTime) {
 						// covered
@@ -439,18 +454,18 @@ void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, con
 							text << cell_styled_open_tag.arg(style);
 						else
 							text << cell_styled_span_open_tag.arg(style).arg(nColumnsToday).arg(rowspan);
-						text << getActivityText(act, whatShow, tblIdx);
+						text << getActivityText(act, styles, whatShow, tblIdx);
 						if (whatShow & ActivityFlags::TIME) {
 							QString activityEndHourLabel = getEndHourLabel(endHour, filter);
 							QString activityHourLabel = timespan_row_label_format.arg(filter.relabel[h_filtered]).arg(activityEndHourLabel);
-							text << text_par_tag.arg(text_span_tag.arg("T1").arg(activityHourLabel));
+							text << text_par_tag.arg(text_span_tag.arg(styles.time_span).arg(activityHourLabel));
 						}
 						text << cell_close_tag;
 					}
 					if (nColumnsToday != nActivitiesNow)
 						text << cell_empty_covered_spanned_tag.arg(style).arg(nColumnsToday-1);
 				} else {
-					const char *style = d < rules.nDaysPerWeek-1 ? "Conteúdo_20_preenchido" : "Conteúdo_20_preenchido";//"Conteúdo_20_preenchido_20_fim";
+					const char *style = d < rules.nDaysPerWeek-1 ? styles.default_filled_cell : "Conteúdo_20_preenchido";//"Conteúdo_20_preenchido_20_fim";
 					QList<TimetableExportHelper::Element::SubElement> elements = table.data[tblIdx][d][h].elements;
 					struct A{
 						A(const Rules &rules, const QString &yearName) :
@@ -486,11 +501,11 @@ void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, con
 						int endHour = getEndHour(h, sub.timeSpan, filter);
 						int rowspan = getRowSpan(h, endHour, validHoursId);
 						text << cell_styled_span_open_tag.arg(style).arg(1).arg(rowspan);
-						text << getActivityText(act, whatShow, tblIdx);
+						text << getActivityText(act, styles, whatShow, tblIdx);
 						if (whatShow & ActivityFlags::TIME) {
 							QString activityEndHourLabel = getEndHourLabel(endHour, filter);
 							QString activityHourLabel = timespan_row_label_format.arg(filter.relabel[h_filtered]).arg(activityEndHourLabel);
-							text << text_par_tag.arg(text_span_tag.arg("T1").arg(activityHourLabel));
+							text << text_par_tag.arg(text_span_tag.arg(styles.time_span).arg(activityHourLabel));
 						}
 						text << cell_close_tag;
 					}
@@ -504,8 +519,8 @@ void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, con
 		text << row_close_tag;
 	}
 
-	text << row_open_tag.arg("row_fim_dia");
-	text << cell_empty_covered_spanned_tag.arg("Fim_20_Tabela").arg(required_columns+1);
+	text << row_open_tag.arg(styles.day_end_row);
+	text << cell_empty_covered_spanned_tag.arg(styles.day_end_cell).arg(required_columns+1);
 	text << row_close_tag;
 	text<< table_close_tag;
 }
@@ -852,4 +867,42 @@ void FOdsExportForm::on_okPushButton_clicked()
 void FOdsExportForm::on_cancelPushButton_clicked()
 {
     close();
+}
+
+FOdsExportForm::Styles::Styles()
+{
+	table = "pm1";
+
+	hour_column = "col_hora";
+	hour_cell = "Hora";
+
+	default_empty_cell = "Conteúdo";
+	default_empty_last_cell = "Conteúdo_20_fim";
+
+	single_activity_day_column = "col_dia_normal";
+	multiple_activities_day_column = "col_dia_div_2";
+
+	week_end_column = "col_fim_dia";
+	week_end_cell = "Coluna_20_fim";
+
+	week_days_row = "row_dias_semana";
+	week_days_first_cell = "Dia_20_início";
+	week_days_regular_cell = "Dia_20_meio";
+	week_days_last_cell = "Dia_20_fim";
+
+	data_row = "";
+	break_time_row = "row_intervalo";
+
+	default_filled_cell = "Conteúdo_20_preenchido";
+	default_filled_last_cell = "Conteúdo_20_preenchido_fim";
+
+	day_end_row = "row_fim_dia";
+	day_end_cell = "Fim_20_Tabela";
+
+	teachers_span = "T1";
+	students_span = "T1";
+	activity_tags_span = "T1";
+	rooms_span = "T1";
+	time_span = "T1";
+
 }

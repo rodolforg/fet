@@ -45,12 +45,49 @@ private:
 		const QStringList& relabel;
 	};
 
-	void writeTable(QTextStream& text, const HourFilter &filter, const TimetableExportHelper::Table& table, const int tblIdx, const QString& tableName, const char* data_row_style, const char* table_style, int whatShow) const;
+	struct Styles {
+		const char* table;
+
+		const char* week_days_row;
+		const char* data_row;
+		const char* break_time_row;
+		const char* day_end_row;
+
+		const char* hour_column;
+		const char* hour_cell;
+
+		const char* single_activity_day_column;
+		const char* multiple_activities_day_column;
+		const char* week_days_first_cell;
+		const char* week_days_regular_cell;
+		const char* week_days_last_cell;
+
+		const char* default_empty_cell;
+		const char* default_empty_last_cell;
+		const char* day_end_cell;
+		const char* default_filled_cell;
+		const char* default_filled_last_cell;
+
+		const char* week_end_column;
+		const char* week_end_cell;
+
+		const char* teachers_span;
+		const char* students_span;
+		const char* activity_tags_span;
+		const char* rooms_span;
+		const char* time_span;
+
+		Styles();
+	};
+
+	void writeTable(QTextStream& text, const HourFilter &filter, const TimetableExportHelper::Table& table, const int tblIdx, const QString& tableName, const Styles& styles, int whatShow) const;
 
 	Ui::FOdsExportForm *ui;
 	const Rules &rules;
 	const Solution &solution;
 	const TimetableExportHelper helper;
+
+	Styles defaultStyles;
 
 	static const QString template_1;
 
@@ -92,7 +129,7 @@ private:
 		TIME_ROW_LABEL = 256
 	};
 
-	QString getActivityText(const Activity* act, int flags, int tblIdx) const;
+	QString getActivityText(const Activity* act, const Styles& styles, int flags, int tblIdx) const;
 
 	QString getEndHourLabel(int current_hour, const HourFilter& filter) const;
 	int getEndHour(int current_hour, int timeSpan, const HourFilter& filter) const;
