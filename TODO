@@ -1688,6 +1688,74 @@ Also suggested by Anton Anthofer, and dasa on the forum.
 Also suggested by sln_rj, on the forum: I request the developers to kindly update the FET software with the provision to add two rooms for a single
 activity. It is utmost important for practical classes where more numbers of rooms are required together.
 
+Additional correspondence with Anton Anthofer:
+
+Anton Anthofer:
+
+An idea/suggestion out of my actual "workaround":
+
+to an activity, I usually add a (group-of) room in the
+"activities"-dialog as "Activity tags" => selected
+( so I can see and select a room in this dialog and 
+  have NOT to change to the "Space" dialog)
+( the tag is prepared and contains a suitable selection of rooms with
+"An activity has a set of preferred rooms" )
+
+To attach a second room (mostly practice-laboratory) to this activity, i
+use the usual workaround
+with a second activity and "Activities same starting time" ( Weight
+percentage @100% ).
+
+This works fine, but makes a lot of overhead and therefore loss of
+overview / risk of timetable-failures.
+
+
+Regarding this additional room to an activity you mention in the forum
+great implementation efforts.
+
+??Idea/Suggestion???:
+
+Add a TEMPORARY-ACTIVITY, initiated by a special (lets say)
+"SecondRoomTag".
+
+- the TEMPORARY-ACTIVITY needs only the same subject-name, (same)
+duration and information regarding the selection of rooms,
+     but needs no teacher and no students!
+- the TEMPORARY-ACTIVITY  gets the Time property  "Activities same
+starting time" (with the appropriate ID-numbers)
+- the  "SecondRoomTag" has the "information regarding the selection of
+rooms"  similar to the used tag "An activity has a set of preferred
+rooms" 
+  with the feature to create an additional, temporary activity
+- the TEMPORARY-ACTIVITY is automatically created between starting
+"Timetable => Generate" and the generation run itsself
+- the timetabling-solution-algorithm has not to be changed
+- the result (room) of the TEMPORARY-ACTIVITY is attached to the
+original activity
+      ( and if necessary the TEMPORARY-ACTIVITY is automatically removed
+from the activity list)
+-  the TEMPORARY-ACTIVITY itsself is not visible for the user
+
+Suggestion perhaps usefull......?
+
+Liviu Lalescu:
+
+It is a very tricky and difficult item.
+
+If I would implement it the perfect way (no indirect trick), it would
+be very difficult and critical bugs might appear; not crash bugs, but
+more importantly bugs which would render a feasible timetable as
+impossible. This is what I am very afraid of.
+
+I see your workaround and your suggestion to add an intermediate step.
+This is not really a good solution, but might be something.
+
+Volker Dirr:
+
+The two/more rooms for an activity should be from the same building?
+
+What about the concept of home room?
+
 115---------------------------------------------------------
 From nouvakis:
 
