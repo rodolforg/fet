@@ -17,6 +17,12 @@ FOdsExportForm::FOdsExportForm(const Rules &rules, const Solution& solution, QWi
 	helper(rules, solution)
 {
 	ui->setupUi(this);
+
+	for(int tabIdx = 0; tabIdx < ui->tabWidget->tabBar()->count(); tabIdx++) {
+		QCheckBox *cb = new QCheckBox();
+		cb->setChecked(true);
+		ui->tabWidget->tabBar()->setTabButton(tabIdx, QTabBar::LeftSide, cb);
+	}
 }
 
 FOdsExportForm::~FOdsExportForm()
@@ -26,25 +32,79 @@ FOdsExportForm::~FOdsExportForm()
 
 bool FOdsExportForm::confirm()
 {
-	QString fileName = QFileDialog::getSaveFileName(this,
-		tr("Export to Flat-ODS"), "", tr("Flat ODS Files (*.fods)"));
-	QFile file(fileName);
-	if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
-		QMessageBox::warning(this, tr("FET warning"),
-			tr("Could not open file to export to."));
-        return false;
+	QList<bool> tabsSetToExport;
+	for(int tabIdx = 0; tabIdx < ui->tabWidget->tabBar()->count(); tabIdx++) {
+		const QWidget* widget = ui->tabWidget->tabBar()->tabButton(tabIdx, QTabBar::LeftSide);
+		if (widget) {
+			const QCheckBox *cb = static_cast<const QCheckBox*>(widget);
+			tabsSetToExport.append(cb->isChecked());
+		} else {
+			tabsSetToExport.append(false);
+		}
 	}
 
-	int whatShowStudents = getStudentsShowFlags();
+	if (tabsSetToExport.indexOf(true) == -1) {
+		QMessageBox::warning(this, tr("FET warning"), tr("Nothing set to export"));
+		return false;
+	}
 
-	QTextStream text(&file);
+	QString dirName = QFileDialog::getExistingDirectory(this,
+		tr("Choose Flat-ODS exportation directory"), OUTPUT_DIR);
 
-	writeStudentsFile(text, whatShowStudents);
+	if (dirName.isEmpty())
+		return false;
 
-	bool ok = text.status() == QTextStream::Ok && file.error() == QFile::NoError;
-	file.close();
+	struct ExportFormData {
+		QString filename;
+		int (FOdsExportForm::*getShowFlags)() const;
+		void (FOdsExportForm::*writeFile)(QTextStream&, int) const;
+	};
 
-	return ok;
+	const int exportationTypesNumber = 3;
+	ExportFormData exportSettings[exportationTypesNumber];
+
+	ExportFormData* data = &exportSettings[0];
+	data->filename = "students.fods";
+	data->getShowFlags = &FOdsExportForm::getStudentsShowFlags;
+	data->writeFile = &FOdsExportForm::writeStudentsFile;
+
+	data = &exportSettings[1];
+	data->filename = "teachers.fods";
+	data->getShowFlags = &FOdsExportForm::getTeachersShowFlags;
+	data->writeFile = &FOdsExportForm::writeTeachersFile;
+
+	data = &exportSettings[2];
+	data->filename = "rooms.fods";
+	data->getShowFlags = &FOdsExportForm::getRoomsShowFlags;
+	data->writeFile = &FOdsExportForm::writeRoomsFile;
+
+	for (int n=0; n < exportationTypesNumber; n++) {
+		if (tabsSetToExport[n]) {
+			const ExportFormData &data = exportSettings[n];
+			QFile file(dirName + FILE_SEP + data.filename);
+			if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
+				QMessageBox::warning(this, tr("FET warning"),
+									 tr("Could not open file to export to.\n%1").arg(file.fileName()));
+				return false;
+			}
+
+			int whatShowFlags = (this->*data.getShowFlags)();
+
+			QTextStream text(&file);
+
+			(this->*data.writeFile)(text, whatShowFlags);
+
+			bool ok = text.status() == QTextStream::Ok && file.error() == QFile::NoError;
+			file.close();
+
+			if (!ok) {
+				QMessageBox::warning(this, tr("FET warning"), tr("Error while writing to\n%1").arg(file.fileName()));
+				return false;
+			}
+		}
+	}
+
+	return true;
 }
 
 void FOdsExportForm::writeRoomsFile(QTextStream& stream, int whatShowFlags) const
@@ -146,6 +206,26 @@ void FOdsExportForm::writeTeachersTables(QTextStream& stream, int whatShowFlags)
 	}
 }
 
+int FOdsExportForm::getRoomsShowFlags() const
+{
+	int flags = 0;
+	if (ui->roomsActivityTagsCheckBox->isChecked())
+		flags |= ACTIVITY_TAG;
+	if (ui->roomsRoomCheckBox->isChecked())
+		flags |= ROOM;
+	if (ui->roomsStudentsAlwaysRadioButton->isChecked())
+		flags |= STUDENTS;
+	if (ui->roomsSubjectCheckBox->isChecked())
+		flags |= SUBJECT;
+	if (ui->roomsTeachersAlwaysRadioButton->isChecked())
+		flags |= TEACHERS;
+	if (ui->roomsTimeCheckBox->isChecked())
+		flags |= TIME;
+	if (ui->roomsTimeRowLabelCheckBox->isChecked())
+		flags |= TIME_ROW_LABEL;
+	return flags;
+}
+
 int FOdsExportForm::getStudentsShowFlags() const
 {
 	int flags = 0;
@@ -164,6 +244,28 @@ int FOdsExportForm::getStudentsShowFlags() const
 	if (ui->studentsTimeCheckBox->isChecked())
 		flags |= TIME;
 	if (ui->studentsTimeRowLabelCheckBox->isChecked())
+		flags |= TIME_ROW_LABEL;
+	return flags;
+}
+
+int FOdsExportForm::getTeachersShowFlags() const
+{
+	int flags = 0;
+	if (ui->teachersActivityTagsCheckBox->isChecked())
+		flags |= ACTIVITY_TAG;
+	if (ui->teachersRoomCheckBox->isChecked())
+		flags |= ROOM;
+	if (ui->teachersStudentsAlwaysRadioButton->isChecked())
+		flags |= STUDENTS;
+	if (ui->teachersSubjectCheckBox->isChecked())
+		flags |= SUBJECT;
+	if (ui->teachersAlwaysRadioButton->isChecked())
+		flags |= TEACHERS;
+	else if (ui->teachersOnlyIfDifferentRadioButton->isChecked())
+		flags |= TEACHERS_ONLY_IF_DIFFERENT;
+	if (ui->teachersTimeCheckBox->isChecked())
+		flags |= TIME;
+	if (ui->teachersTimeRowLabelCheckBox->isChecked())
 		flags |= TIME_ROW_LABEL;
 	return flags;
 }

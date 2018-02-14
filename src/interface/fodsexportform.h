@@ -29,7 +29,9 @@ public:
 	void writeStudentsTables(QTextStream& stream, int whatShowFlags) const;
 	void writeTeachersTables(QTextStream& stream, int whatShowFlags) const;
 
+	int getRoomsShowFlags() const;
 	int getStudentsShowFlags() const;
+	int getTeachersShowFlags() const;
 
 private slots:
 	void on_okPushButton_clicked();
