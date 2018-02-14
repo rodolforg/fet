@@ -17,7 +17,6 @@ FOdsExportForm::FOdsExportForm(const Rules &rules, const Solution& solution, QWi
 	helper(rules, solution)
 {
 	ui->setupUi(this);
-	ok();
 }
 
 FOdsExportForm::~FOdsExportForm()
@@ -25,7 +24,7 @@ FOdsExportForm::~FOdsExportForm()
 	delete ui;
 }
 
-void FOdsExportForm::ok()
+bool FOdsExportForm::confirm()
 {
 	QString fileName = QFileDialog::getSaveFileName(this,
 		tr("Export to Flat-ODS"), "", tr("Flat ODS Files (*.fods)"));
@@ -33,16 +32,19 @@ void FOdsExportForm::ok()
 	if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
 		QMessageBox::warning(this, tr("FET warning"),
 			tr("Could not open file to export to."));
-        return;
+        return false;
 	}
 
-	int whatShowStudents = SUBJECT|TEACHERS|STUDENTS_ONLY_IF_DIFFERENT|ROOM|TIME_ROW_LABEL;
+	int whatShowStudents = getStudentsShowFlags();
 
 	QTextStream text(&file);
 
 	writeStudentsFile(text, whatShowStudents);
 
+	bool ok = text.status() == QTextStream::Ok && file.error() == QFile::NoError;
 	file.close();
+
+	return ok;
 }
 
 void FOdsExportForm::writeRoomsFile(QTextStream& stream, int whatShowFlags) const
@@ -142,6 +144,28 @@ void FOdsExportForm::writeTeachersTables(QTextStream& stream, int whatShowFlags)
 
 		writeTable(stream, filter, tt_teachers, rid, teacherName, "row_hora_normal_professor", "pm2", whatShowFlags);
 	}
+}
+
+int FOdsExportForm::getStudentsShowFlags() const
+{
+	int flags = 0;
+	if (ui->studentsActivityTagsCheckBox->isChecked())
+		flags |= ACTIVITY_TAG;
+	if (ui->studentsRoomCheckBox->isChecked())
+		flags |= ROOM;
+	if (ui->studentsAlwaysRadioButton->isChecked())
+		flags |= STUDENTS;
+	else if (ui->studentsOnlyIfDifferentRadioButton->isChecked())
+		flags |= STUDENTS_ONLY_IF_DIFFERENT;
+	if (ui->studentsSubjectCheckBox->isChecked())
+		flags |= SUBJECT;
+	if (ui->studentsTeachersAlwaysRadioButton->isChecked())
+		flags |= TEACHERS;
+	if (ui->studentsTimeCheckBox->isChecked())
+		flags |= TIME;
+	if (ui->studentsTimeRowLabelCheckBox->isChecked())
+		flags |= TIME_ROW_LABEL;
+	return flags;
 }
 
 QString FOdsExportForm::getActivityText(const Activity *act, int flags, int tblIdx) const
@@ -712,4 +736,18 @@ const QString FOdsExportForm::timespan_row_label_format = "%1 - %2";
 FOdsExportForm::HourFilter::HourFilter(const QStringList& validHours, const QStringList& intervals, const QStringList& relabel)
 	: validHours(validHours), breakTimes(intervals), relabel(relabel)
 {
+}
+
+void FOdsExportForm::on_okPushButton_clicked()
+{
+    bool ok = confirm();
+	if (ok)
+		QMessageBox::information(this, tr("FET information"), tr("Successfully exported."));
+	else
+		QMessageBox::critical(this, tr("FET error"), tr("FODS exportion failed."));
+}
+
+void FOdsExportForm::on_cancelPushButton_clicked()
+{
+    close();
 }

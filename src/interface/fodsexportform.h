@@ -19,7 +19,7 @@ public:
 	FOdsExportForm(const Rules &rules, const Solution &solution, QWidget *parent = 0);
 	~FOdsExportForm();
 
-	void ok();
+	bool confirm();
 
 	void writeRoomsFile(QTextStream& stream, int whatShowFlags) const;
 	void writeStudentsFile(QTextStream& stream, int whatShowFlags) const;
@@ -29,6 +29,11 @@ public:
 	void writeStudentsTables(QTextStream& stream, int whatShowFlags) const;
 	void writeTeachersTables(QTextStream& stream, int whatShowFlags) const;
 
+	int getStudentsShowFlags() const;
+
+private slots:
+	void on_okPushButton_clicked();
+	void on_cancelPushButton_clicked();
 
 private:
 	struct HourFilter {
