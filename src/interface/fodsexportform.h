@@ -29,7 +29,7 @@ private:
 		const QStringList& relabel;
 	};
 
-	void writeTable(QTextStream& text, const HourFilter &filter, const TimetableExportHelper::Table& table, const int tblIdx, const QString& tableName, const char* data_row_style, const char* table_style, int whatShow);
+	void writeTable(QTextStream& text, const HourFilter &filter, const TimetableExportHelper::Table& table, const int tblIdx, const QString& tableName, const char* data_row_style, const char* table_style, int whatShow) const;
 
 	Ui::FOdsExportForm *ui;
 	const Rules &rules;
@@ -75,7 +75,7 @@ private:
 		TIME_ROW_LABEL = 256
 	};
 
-	QString getActivityText(const Activity* act, int flags, int tblIdx);
+	QString getActivityText(const Activity* act, int flags, int tblIdx) const;
 
 	QString getEndHourLabel(int current_hour, const HourFilter& filter) const;
 	int getEndHour(int current_hour, int timeSpan, const HourFilter& filter) const;

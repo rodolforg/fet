@@ -88,7 +88,7 @@ void FOdsExportForm::ok()
 	file.close();
 }
 
-QString FOdsExportForm::getActivityText(const Activity *act, int flags, int tblIdx)
+QString FOdsExportForm::getActivityText(const Activity *act, int flags, int tblIdx) const
 {
 	QString text;
 	if (flags & ActivityFlags::SUBJECT)
@@ -160,7 +160,7 @@ int FOdsExportForm::getRowSpan(int start_hour, int end_hour, const QList<int>& v
 	return rowspan;
 }
 
-void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, const TimetableExportHelper::Table &table, const int tblIdx, const QString &tableName, const char *data_row_style, const char *table_style, int whatShow)
+void FOdsExportForm::writeTable(QTextStream &text, const HourFilter &filter, const TimetableExportHelper::Table &table, const int tblIdx, const QString &tableName, const char *data_row_style, const char *table_style, int whatShow) const
 {
 	QList<int> validHoursId;
 	foreach (QString hour, filter.validHours) {
