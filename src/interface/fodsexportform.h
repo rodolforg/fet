@@ -21,6 +21,10 @@ public:
 
 	void ok();
 
+	void writeStudentsFile(QTextStream& stream, int whatShowFlags) const;
+
+	void writeStudentsTables(QTextStream& stream, int whatShowFlags) const;
+
 private:
 	struct HourFilter {
 		HourFilter(const QStringList& validHours, const QStringList& breakTimes, const QStringList& relabel);
@@ -34,6 +38,7 @@ private:
 	Ui::FOdsExportForm *ui;
 	const Rules &rules;
 	const Solution &solution;
+	const TimetableExportHelper helper;
 
 	static const QString template_1;
 

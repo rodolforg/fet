@@ -13,7 +13,8 @@ FOdsExportForm::FOdsExportForm(const Rules &rules, const Solution& solution, QWi
 	QDialog(parent),
 	ui(new Ui::FOdsExportForm),
 	rules(rules),
-	solution(solution)
+	solution(solution),
+	helper(rules, solution)
 {
 	ui->setupUi(this);
 	ok();
@@ -35,57 +36,51 @@ void FOdsExportForm::ok()
         return;
 	}
 
-	QTextStream text(&file);
-	text.setCodec("UTF-8");
-	text << template_1;
+	int whatShowStudents = SUBJECT|TEACHERS|STUDENTS_ONLY_IF_DIFFERENT|ROOM|TIME_ROW_LABEL;
 
-	TimetableExportHelper helper(rules, solution);
+	QTextStream text(&file);
+
+	writeStudentsFile(text, whatShowStudents);
+
+	file.close();
+}
+
+void FOdsExportForm::writeStudentsFile(QTextStream& stream, int whatShowFlags) const
+{
+	stream.setCodec("UTF-8");
+	stream << template_1;
+	writeStudentsTables(stream, whatShowFlags);
+	stream << template_2;
+}
+
+void FOdsExportForm::writeStudentsTables(QTextStream& stream, int whatShowFlags) const
+{
+	const QStringList validHours_medio = {"7h00", "7h50", "8h40", "9h50", "10h40", "11h30", "13h00", "13h50", "14h40", "15h50", "16h40", "17h30", "18h30", "19h20", "20h30", "21h20"};
+	const QStringList intervals_medio = {"9h30","9h40", "12h20", "15h30","15h40", "18h20", "20h10", "20h20"};
+	const QStringList relabel_medio = {"7h00", "7h50", "8h40", "9h50", "10h40", "11h30", "13h00", "13h50", "14h40", "15h50", "16h40", "17h30", "18h30", "19h20", "20h25", "21h15", "22h05"};
+
+	const QStringList validHours_superior = {"7h00", "7h30", "8h00", "8h30", "9h00", "9h30", "10h00", "10h30", "11h00", "11h30", "12h00", "12h30", "13h00", "13h30", "14h00", "14h30", "15h00", "15h30", "16h00", "16h30", "17h00", "17h30", "18h00", "18h30", "19h00", "19h30", "20h00", "20h30", "21h00", "21h30", };
+	const QStringList intervals_superior = {};
+	const QStringList relabel_superior = {"7h00", "7h30", "8h00", "8h30", "9h00", "9h30", "10h00", "10h30", "11h00", "11h30", "12h00", "12h30", "13h00", "13h30", "14h00", "14h30", "15h00", "15h30", "16h00", "16h30", "17h00", "17h30", "18h00", "18h30", "19h00", "19h30", "20h00", "20h30", "21h00", "21h30", "22h00"};
+
+	HourFilter filterMedio(validHours_medio, intervals_medio, relabel_medio);
+	HourFilter filterSuperior(validHours_superior, intervals_superior, relabel_superior);
+
 	TimetableExportHelper::Table tt_years;
 	helper.getYearsTimetable(tt_years);
 	tt_years.computeExtraInfo();
 
+	stream.setCodec("UTF-8");
+
 	for (int y=0; y < rules.yearsList.size(); y++) {
 		QString yearName = rules.yearsList[y]->name;
 
-		const QStringList validHours_medio = {"7h00", "7h50", "8h40", "9h50", "10h40", "11h30", "13h00", "13h50", "14h40", "15h50", "16h40", "17h30", "18h30", "19h20", "20h30", "21h20"};
-		const QStringList intervals_medio = {"9h30","9h40", "12h20", "15h30","15h40", "18h20", "20h10", "20h20"};
-		const QStringList relabel_medio = {"7h00", "7h50", "8h40", "9h50", "10h40", "11h30", "13h00", "13h50", "14h40", "15h50", "16h40", "17h30", "18h30", "19h20", "20h25", "21h15", "22h05"};
-
-		const QStringList validHours_superior = {"7h00", "7h30", "8h00", "8h30", "9h00", "9h30", "10h00", "10h30", "11h00", "11h30", "12h00", "12h30", "13h00", "13h30", "14h00", "14h30", "15h00", "15h30", "16h00", "16h30", "17h00", "17h30", "18h00", "18h30", "19h00", "19h30", "20h00", "20h30", "21h00", "21h30", };
-		const QStringList intervals_superior = {};
-		const QStringList relabel_superior = {"7h00", "7h30", "8h00", "8h30", "9h00", "9h30", "10h00", "10h30", "11h00", "11h30", "12h00", "12h30", "13h00", "13h30", "14h00", "14h30", "15h00", "15h30", "16h00", "16h30", "17h00", "17h30", "18h00", "18h30", "19h00", "19h30", "20h00", "20h30", "21h00", "21h30", "22h00"};
-
 		const bool isSuperior = yearName.startsWith("ENPRO.") || yearName.startsWith("FISIC.") || yearName.startsWith("BAFIS.") || yearName.startsWith("MFIS.");
+		const HourFilter &filter = isSuperior? filterSuperior : filterMedio;
 
-		const QStringList &validHours = isSuperior? validHours_superior : validHours_medio;
-		const QStringList &intervals = isSuperior? intervals_superior : intervals_medio;
-		const QStringList &relabel = isSuperior? relabel_superior : relabel_medio;
-
-		HourFilter filter(validHours, intervals, relabel);
-		int whatShow = SUBJECT|TEACHERS|STUDENTS_ONLY_IF_DIFFERENT|ROOM|TIME_ROW_LABEL;
-		writeTable(text, filter, tt_years, y, yearName, isSuperior? "row_hora_normal_superior" : "row_hora_normal", "pm1", whatShow);
+		writeTable(stream, filter, tt_years, y, yearName, isSuperior? "row_hora_normal_superior" : "row_hora_normal", "pm1", whatShowFlags);
 	}
 
-//	TimetableExportHelper::Table tt_teachers;
-//	helper.getTeachersTimetable(tt_teachers);
-//	tt_teachers.computeExtraInfo();
-//	for (int y=0; y < rules.teachersList.size(); y++) {
-//		QString teacherName = rules.teachersList[y]->name;
-
-//		QStringList validHours;// = {"7h00", "7h50", "8h40", "9h50", "10h40", "11h30", "13h00", "13h50", "14h40", "15h50", "16h40", "17h30", "18h30", "19h20", "20h30", "21h20"};
-//		for (int h=0; h<rules.nHoursPerDay; h++)
-//			validHours << rules.hoursOfTheDay[h];
-//		const QStringList intervals;// = {"9h30","9h40", "12h20", "15h30","15h40", "18h20", "20h10", "20h20"};
-//		const QStringList &relabel = validHours;//{"7h00", "7h50", "8h40", "9h50", "10h40", "11h30", "13h00", "13h50", "14h40", "15h50", "16h40", "17h30", "18h30", "19h20", "20h25", "21h15", "22h05"};
-//		validHours.pop_back();
-
-//		int whatShow = SUBJECT|STUDENTS_ONLY_IF_DIFFERENT|ROOM;
-//		HourFilter filter(validHours, intervals, relabel);
-//		writeTable(text, filter, tt_teachers, y, teacherName, "row_hora_normal_professor", "pm2", whatShow);
-//	}
-
-	text << template_2;
-	file.close();
 }
 
 QString FOdsExportForm::getActivityText(const Activity *act, int flags, int tblIdx) const
