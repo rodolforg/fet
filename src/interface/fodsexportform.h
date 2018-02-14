@@ -21,9 +21,14 @@ public:
 
 	void ok();
 
+	void writeRoomsFile(QTextStream& stream, int whatShowFlags) const;
 	void writeStudentsFile(QTextStream& stream, int whatShowFlags) const;
+	void writeTeachersFile(QTextStream& stream, int whatShowFlags) const;
 
+	void writeRoomsTables(QTextStream& stream, int whatShowFlags) const;
 	void writeStudentsTables(QTextStream& stream, int whatShowFlags) const;
+	void writeTeachersTables(QTextStream& stream, int whatShowFlags) const;
+
 
 private:
 	struct HourFilter {

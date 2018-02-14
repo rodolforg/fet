@@ -45,12 +45,52 @@ void FOdsExportForm::ok()
 	file.close();
 }
 
+void FOdsExportForm::writeRoomsFile(QTextStream& stream, int whatShowFlags) const
+{
+	stream.setCodec("UTF-8");
+
+	stream << template_1;
+	writeRoomsTables(stream, whatShowFlags);
+	stream << template_2;
+}
+
 void FOdsExportForm::writeStudentsFile(QTextStream& stream, int whatShowFlags) const
 {
 	stream.setCodec("UTF-8");
 	stream << template_1;
 	writeStudentsTables(stream, whatShowFlags);
 	stream << template_2;
+}
+
+void FOdsExportForm::writeTeachersFile(QTextStream& stream, int whatShowFlags) const
+{
+	stream.setCodec("UTF-8");
+	stream << template_1;
+	writeTeachersTables(stream, whatShowFlags);
+	stream << template_2;
+}
+
+void FOdsExportForm::writeRoomsTables(QTextStream& stream, int whatShowFlags) const
+{
+	QStringList validHours;
+	for (int h=0; h<rules.nHoursPerDay; h++)
+		validHours << rules.hoursOfTheDay[h];
+	const QStringList intervals;
+	const QStringList &relabel = validHours;
+	validHours.pop_back();
+	HourFilter filter(validHours, intervals, relabel);
+
+	TimetableExportHelper::Table tt_rooms;
+	helper.getRoomsTimetable(tt_rooms);
+	tt_rooms.computeExtraInfo();
+
+	stream.setCodec("UTF-8");
+
+	for (int rid=0; rid < rules.roomsList.size(); rid++) {
+		QString roomName = rules.roomsList[rid]->name;
+
+		writeTable(stream, filter, tt_rooms, rid, roomName, "row_hora_normal_professor", "pm2", whatShowFlags);
+	}
 }
 
 void FOdsExportForm::writeStudentsTables(QTextStream& stream, int whatShowFlags) const
@@ -80,7 +120,28 @@ void FOdsExportForm::writeStudentsTables(QTextStream& stream, int whatShowFlags)
 
 		writeTable(stream, filter, tt_years, y, yearName, isSuperior? "row_hora_normal_superior" : "row_hora_normal", "pm1", whatShowFlags);
 	}
+}
 
+void FOdsExportForm::writeTeachersTables(QTextStream& stream, int whatShowFlags) const
+{
+	QStringList validHours;
+	for (int h=0; h<rules.nHoursPerDay; h++)
+		validHours << rules.hoursOfTheDay[h];
+	const QStringList intervals;
+	const QStringList &relabel = validHours;
+	validHours.pop_back();
+	HourFilter filter(validHours, intervals, relabel);
+
+	TimetableExportHelper::Table tt_teachers;
+	helper.getTeachersTimetable(tt_teachers);
+	tt_teachers.computeExtraInfo();
+
+	stream.setCodec("UTF-8");
+	for (int rid=0; rid < rules.teachersList.size(); rid++) {
+		QString teacherName = rules.teachersList[rid]->name;
+
+		writeTable(stream, filter, tt_teachers, rid, teacherName, "row_hora_normal_professor", "pm2", whatShowFlags);
+	}
 }
 
 QString FOdsExportForm::getActivityText(const Activity *act, int flags, int tblIdx) const
