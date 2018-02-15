@@ -589,9 +589,9 @@ void TimetableGenerateForm::activityPlaced(int na){
 	assert(gt.rules.initialized && gt.rules.internalStructureComputed);
 
 	myMutex.lock();
-	int t=gen.getSearchTime(); //seconds
+	int elapsedTime=gen.getSearchTime(); //seconds
 	int mact=gen.getMaxActivitiesPlaced();
-	int seconds=gen.getTimeToHighestStage();
+	int elapsedTimeToHighestStage=gen.getTimeToHighestStage();
 	myMutex.unlock();
 
 	progressBar->setValue(na);
@@ -601,6 +601,7 @@ void TimetableGenerateForm::activityPlaced(int na){
 	s+=TimetableGenerateForm::tr("%1 out of %2 activities placed").arg(na).arg(gt.rules.nInternalActivities)+"\n";
 
 	s+=TimetableGenerateForm::tr("Elapsed time:");
+	int t=elapsedTime;
 	int h=t/3600;
 	if(h>0){
 		s+=" ";
@@ -619,6 +620,7 @@ void TimetableGenerateForm::activityPlaced(int na){
 	}
 	
 	bool zero=false;
+	int seconds = elapsedTimeToHighestStage;
 	if(seconds==0)
 		zero=true;
 	int hh=seconds/3600;
@@ -643,6 +645,13 @@ void TimetableGenerateForm::activityPlaced(int na){
 	tim.remove(0, 1);
 	s+="\n\n";
 	s+=tr("Max placed activities: %1 (at %2)", "%1 represents the maximum number of activities placed, %2 is a time interval").arg(mact).arg(tim);
+
+	if (elapsedTime - elapsedTimeToHighestStage > 10) {
+		assert(mact < gt.rules.nInternalActivities);
+		int current_difficult_id = initialOrderOfActivitiesIndices[mact];
+		s += "\n" + tr("Activity with difficult placement:");
+		s += "\n" + gt.rules.internalActivitiesList[current_difficult_id].getDescription();
+	}
 
 	currentResultsTextEdit->setPlainText(s);
 
