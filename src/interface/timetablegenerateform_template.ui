@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>545</width>
-    <height>520</height>
+    <height>560</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -35,6 +35,9 @@
     </widget>
    </item>
    <item row="2" column="0" colspan="2">
+    <widget class="QProgressBar" name="progressBar"/>
+   </item>
+   <item row="3" column="0" colspan="2">
     <widget class="QGroupBox" name="stopSimulationAndGroupBox">
      <property name="title">
       <string>Stop simulation and...</string>
@@ -63,7 +66,7 @@
      </layout>
     </widget>
    </item>
-   <item row="3" column="0" colspan="2">
+   <item row="4" column="0" colspan="2">
     <widget class="QGroupBox" name="withoutStoppingTheSimulationGroupBox">
      <property name="title">
       <string extracomment="This is the title of a group box with more buttons, and all buttons do their function without stopping the simulation">Without stopping the simulation</string>
@@ -112,14 +115,14 @@
      </layout>
     </widget>
    </item>
-   <item row="4" column="0">
+   <item row="5" column="0">
     <widget class="QPushButton" name="startPushButton">
      <property name="text">
       <string>Start</string>
      </property>
     </widget>
    </item>
-   <item row="4" column="1">
+   <item row="5" column="1">
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
       <widget class="QPushButton" name="helpPushButton">

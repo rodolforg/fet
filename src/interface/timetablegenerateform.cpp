@@ -200,6 +200,8 @@ void TimetableGenerateForm::start(){
 	seeImpossiblePushButton->setEnabled(true);
 	seeInitialOrderPushButton->setEnabled(true);
 
+	progressBar->setMaximum(gt.rules.nInternalActivities);
+
 	simulation_running=true;
 	
 	TimetableExport::writeRandomSeed(true); //true represents 'before' state
@@ -591,6 +593,8 @@ void TimetableGenerateForm::activityPlaced(int na){
 	int mact=gen.getMaxActivitiesPlaced();
 	int seconds=gen.getTimeToHighestStage();
 	myMutex.unlock();
+
+	progressBar->setValue(na);
 
 	//write to the Qt interface
 	QString s;
