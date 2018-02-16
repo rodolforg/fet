@@ -1156,9 +1156,8 @@ there won&apos;t be removed an additional number of %1 activities
     </message>
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="336"/>
-        <source>Activity tag is a field which can be used or not, depending on your wish (optional field). It is designed to help you with some constraints. Each activity has a possible empty list of activity tags (if you don&apos;t use activity tags, the list will be empty)</source>
-        <translatorcomment>Машғулот турлари - бу сизнинг хохишингизга кўра ишлатилиши ёки ишлатилмаслиги мумкин бўлган майдондир. Хар бир машғулотга машғулот турлари тўплами бириктирилиши мумкин ( агар сиз машғулот  турларини ишлатмасангиз бу майдон бўш бўлади)</translatorcomment>
-        <translation>Вид занятий - это необязательное поле, которое может использоваться или не использоваться по вашему желанию. Каждому занятию может быть назначен набор видов занятий (этот набор будет пустым, если вы не используете виды занятий)</translation>
+        <source>Activity tag is a field which can be used or not, depending on your wish (optional field). It is designed to help you with some constraints. Each activity has a list of activity tags (which may be empty).</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="354"/>

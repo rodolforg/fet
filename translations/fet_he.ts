@@ -1151,8 +1151,8 @@ there won&apos;t be removed an additional number of %1 activities
     </message>
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="336"/>
-        <source>Activity tag is a field which can be used or not, depending on your wish (optional field). It is designed to help you with some constraints. Each activity has a possible empty list of activity tags (if you don&apos;t use activity tags, the list will be empty)</source>
-        <translation>מזהה פעילות הו שדה שניתן לשימוש או שלא, תלוי ברצונך (שדה רשות).  הוא יועד לעזרך לך עם אילוצים. לכל פעילות עשויה להיות רשימה ריקה של תגי פעילויות (אם אינך רוצה להשתמש בתגי פעילויות, הרשימה תהיה ריקה)</translation>
+        <source>Activity tag is a field which can be used or not, depending on your wish (optional field). It is designed to help you with some constraints. Each activity has a list of activity tags (which may be empty).</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="354"/>

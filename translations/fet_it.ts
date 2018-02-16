@@ -1154,8 +1154,8 @@ there won&apos;t be removed an additional number of %1 activities
     </message>
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="336"/>
-        <source>Activity tag is a field which can be used or not, depending on your wish (optional field). It is designed to help you with some constraints. Each activity has a possible empty list of activity tags (if you don&apos;t use activity tags, the list will be empty)</source>
-        <translation>La chiave dell&apos;attività è un campo che può essere usato o meno, a seconda delle preferenze (campo opzionale). Esiste per fornire un aiuto con certi vincoli. Ogni attività ha una lista di chiavi dell&apos;attività inizialmente vuota (se non ne fai uso, la lista delle chiavi dell&apos;attività resterà vuota)</translation>
+        <source>Activity tag is a field which can be used or not, depending on your wish (optional field). It is designed to help you with some constraints. Each activity has a list of activity tags (which may be empty).</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="354"/>

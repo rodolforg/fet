@@ -1156,8 +1156,8 @@ werden weitere %1 Aktivitäten nicht modifiziert
     </message>
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="336"/>
-        <source>Activity tag is a field which can be used or not, depending on your wish (optional field). It is designed to help you with some constraints. Each activity has a possible empty list of activity tags (if you don&apos;t use activity tags, the list will be empty)</source>
-        <translation>Kennzeichnungen von Aktivitäten können optional benutzt werden. Sie sind hilfreich bei der Benutzung einiger Einschränkungen. Jede Aktivität kann mehrere Kennzeichnungen oder auch keine haben</translation>
+        <source>Activity tag is a field which can be used or not, depending on your wish (optional field). It is designed to help you with some constraints. Each activity has a list of activity tags (which may be empty).</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="354"/>

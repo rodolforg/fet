@@ -1155,8 +1155,8 @@ no se eliminarán %1 actividades adicionales
     </message>
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="336"/>
-        <source>Activity tag is a field which can be used or not, depending on your wish (optional field). It is designed to help you with some constraints. Each activity has a possible empty list of activity tags (if you don&apos;t use activity tags, the list will be empty)</source>
-        <translation>Actividad es un campo que puede utilizarse o no, dependiendo de sus requisitos (campo opcional). Está diseñado para ayudarle con algunas restricciones. Cada actividad tiene una lista vacía posible de códigos de actividad (si no utiliza los códigos de actividad, la lista estará vacía)</translation>
+        <source>Activity tag is a field which can be used or not, depending on your wish (optional field). It is designed to help you with some constraints. Each activity has a list of activity tags (which may be empty).</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="354"/>

@@ -1155,8 +1155,8 @@ nebude měněno dalších %1 činností
     </message>
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="336"/>
-        <source>Activity tag is a field which can be used or not, depending on your wish (optional field). It is designed to help you with some constraints. Each activity has a possible empty list of activity tags (if you don&apos;t use activity tags, the list will be empty)</source>
-        <translation>Druh činnosti je pole, které může ale nemusí být použito, závisí od vůle (nepovinné pole). Je navrhnuto pro ulehčení vytvoření některých omezení. Každá činnost má možnost prázdného seznamu druhů činností (pokud nepoužijete druh činnosti, seznam bude prázdný)</translation>
+        <source>Activity tag is a field which can be used or not, depending on your wish (optional field). It is designed to help you with some constraints. Each activity has a list of activity tags (which may be empty).</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="354"/>

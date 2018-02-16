@@ -1140,12 +1140,12 @@ there won&apos;t be removed an additional number of %1 activities
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="290"/>
         <source>Activated a number of %1 activities</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ενεργοποιήθηκαν %1 δραστηριότητες</translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="302"/>
         <source>De-activated a number of %1 activities</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Απενεργοποιήθηκαν %1 δραστηριότητες</translation>
     </message>
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="335"/>
@@ -1154,7 +1154,7 @@ there won&apos;t be removed an additional number of %1 activities
     </message>
     <message>
         <location filename="../src/interface/activitytagsform.cpp" line="336"/>
-        <source>Activity tag is a field which can be used or not, depending on your wish (optional field). It is designed to help you with some constraints. Each activity has a possible empty list of activity tags (if you don&apos;t use activity tags, the list will be empty)</source>
+        <source>Activity tag is a field which can be used or not, depending on your wish (optional field). It is designed to help you with some constraints. Each activity has a list of activity tags (which may be empty).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3452,7 +3452,7 @@ You can choose the minimum distance in days between each pair of activities. Ple
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredroomsform_template.ui" line="159"/>
         <source>Weight percentage (recommended: 0.0%-100.0%)</source>
-        <translation type="unfinished">Βαρύτητα (προτεινόμενο ποσοστό: 0.0%-100.0%)</translation>
+        <translation>Βαρύτητα (προτεινόμενο ποσοστό: 0.0%-100.0%)</translation>
     </message>
     <message>
         <location filename="../src/interface/addconstraintactivitypreferredroomsform_template.ui" line="180"/>
@@ -12346,7 +12346,7 @@ Definition from Wikipedia: &apos;In computing, regular expressions, also referre
     <message>
         <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="313"/>
         <source>Note that if you have activities with two or more teachers, you might need to use a trick for that: add one (or more) dummy activities, no teachers/no students, same starting time with the initial activity.</source>
-        <translation>Σημειώστε ότι αν έχετε δραστηριότητες με δύο ή περισσότερους εκπαιδευτικούς, μπορεί να χρειαστεί να χρησιμοποιήσετε ένα τρικ για το σκοπό αυτό: προσθέστε μία (ή περισσότερες) ψευδο-δραστηριότητες, χωρίς εκπαιδευτικό/χωρίς μαθητές, με την ίδια ώρα έναρξης με την αρχική δραστηριότητα.</translation>
+        <translation>Σημειώστε ότι αν έχετε δραστηριότητες με δύο ή περισσότερους εκπαιδευτικούς, μπορεί να χρειαστεί να χρησιμοποιήσετε ένα τρικ για το σκοπό αυτό: προσθέστε μία (ή περισσότερες) ψευδο-δραστηριότητες, χωρίς εκπαιδευτικό/χωρίς μαθητές, με τον ίδιο χρόνο έναρξης με την αρχική δραστηριότητα.</translation>
     </message>
     <message>
         <location filename="../src/interface/constraintactivitiesmaxsimultaneousinselectedtimeslotsform.cpp" line="316"/>
@@ -32117,7 +32117,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4280"/>
         <source>teachers free periods</source>
-        <translation>εκπαιδευτικοί - ελεύθερες ώρες</translation>
+        <translation>εκπαιδευτικοί - ελεύθερες περίοδοι</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4276"/>
@@ -32581,7 +32581,7 @@ Having a subgroup with too little working hours per week means that you inputted
         <location filename="../src/interface/fetmainform.cpp" line="4300"/>
         <source>Print detailed teachers&apos; free periods timetables will be %1</source>
         <comment>%1 is true or false</comment>
-        <translation>Η εκτύπωση λεπτομερών ωρολογίων προγραμμάτων με τις ελεύθερες ώρες των εκπαιδευτικών θα είναι %1</translation>
+        <translation>Η εκτύπωση λεπτομερών ωρολογίων προγραμμάτων με τις ελεύθερες περιόδους των εκπαιδευτικών θα είναι %1</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform.cpp" line="4538"/>
@@ -33791,7 +33791,7 @@ Having a subgroup with too little working hours per week means that you inputted
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2525"/>
         <source>Print detailed teachers&apos; free periods timetables</source>
-        <translation>Εκτύπωση λεπτομερών ωρολογίων με τις ελεύθερες ώρες των εκπαιδευτικών</translation>
+        <translation>Εκτύπωση λεπτομερών ωρολογίων με τις ελεύθερες περιόδους των εκπαιδευτικών</translation>
     </message>
     <message>
         <location filename="../src/interface/fetmainform_template.ui" line="2530"/>
@@ -36200,12 +36200,12 @@ Please modify your data correspondingly and try again</source>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="438"/>
         <source>Activated a number of %1 activities</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ενεργοποιήθηκαν %1 δραστηριότητες</translation>
     </message>
     <message>
         <location filename="../src/interface/groupsform.cpp" line="457"/>
         <source>De-activated a number of %1 activities</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Απενεργοποιήθηκαν %1 δραστηριότητες</translation>
     </message>
 </context>
 <context>
@@ -39546,7 +39546,7 @@ is:</source>
     <message>
         <location filename="../src/engine/import.cpp" line="125"/>
         <source>Activity Tags</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ετικέτες Δραστηριοτήτων</translation>
     </message>
     <message>
         <location filename="../src/engine/import.cpp" line="508"/>
@@ -48062,42 +48062,42 @@ Note: teacher not available and break are not counted as gaps.</source>
     <message>
         <location filename="../src/interface/removeredundantform_template.ui" line="14"/>
         <source>Remove redundant constraints</source>
-        <translation type="unfinished">Διαγραφή περιττών περιορισμών</translation>
+        <translation>Διαγραφή περιττών περιορισμών</translation>
     </message>
     <message>
         <location filename="../src/interface/removeredundantform_template.ui" line="84"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
     <message>
         <location filename="../src/interface/removeredundantform_template.ui" line="91"/>
         <source>OK</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/removeredundantform_template.ui" line="104"/>
         <source>This function will try to improve your timetable data by removing redundant constraints</source>
-        <translation type="unfinished"></translation>
+        <translation>Αυτή η λειτουργία θα προσπαθήσει να βελτιώσει τα δεδομένα του ωρολογίου προγράμματος αφαιρώντας τους περιττούς περιορισμούς</translation>
     </message>
     <message>
         <location filename="../src/interface/removeredundantform_template.ui" line="20"/>
         <source>Min days between activities</source>
-        <translation type="unfinished">Ελάχιστες ημέρες ανάμεσα σε δραστηριότητες</translation>
+        <translation>Ελάχιστες ημέρες ανάμεσα σε δραστηριότητες</translation>
     </message>
     <message>
         <location filename="../src/interface/removeredundantform_template.ui" line="26"/>
         <source>Remove redundant min days constraints</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαγραφή περιττών περιορισμών &quot;ελάχιστες ημέρες&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/removeredundantform_template.ui" line="42"/>
         <source>Explanation: If you use constraints activities same starting time and/or constraints activities same starting days, maybe you will obtain redundant constraints min days between activities, which are not good (your timetable is more difficult to find, or even impossible). This menu enables you to remove these redundant min days between activities constraints</source>
-        <translation type="unfinished"></translation>
+        <translation>Επεξήγηση: Αν χρησιμοποιείτε περιορισμούς του τύπου &quot;δραστηριότητες - ίδιος χρόνος έναρξης&quot; ή/και περιορισμούς &quot;δραστηριότητες - ίδια ημέρα έναρξης&quot;, πιθανώς να λάβετε περιττούς περιορισμούς &quot;δραστηριότητες - ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;, οι οποίοι δεν είναι καλοί (μπορεί η εξεύρεση λύσης για το ωρολόγιο πρόγραμμά σας να καταστεί δυσκολότερη ή ακόμη και αδύνατη). Το μενού αυτό σας δίνει την δυνατότητα να διαγράψετε τους συγκεκριμένους περιττούς περιορισμούς &quot;ελάχιστες ημέρες ανάμεσα σε δραστηριότητες&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/removeredundantform_template.ui" line="58"/>
         <source>Here, removing means making the weights of the constraints equal to 0.0%</source>
-        <translation type="unfinished"></translation>
+        <translation>Εδώ, &quot;διαγραφή&quot; σημαίνει ότι το ποσοστό βαρύτητας των περιορισμών παίρνει την τιμή 0%</translation>
     </message>
 </context>
 <context>
@@ -48106,25 +48106,25 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/engine/room.cpp" line="47"/>
         <source>N:%1</source>
         <comment>Name of room</comment>
-        <translation type="unfinished">Ο:%1</translation>
+        <translation>Ο:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/room.cpp" line="51"/>
         <source>B:%1</source>
         <comment>Building</comment>
-        <translation type="unfinished"></translation>
+        <translation>Κ:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/room.cpp" line="57"/>
         <source>C:%1</source>
         <comment>Capacity</comment>
-        <translation type="unfinished">Κ:%1</translation>
+        <translation>Χ:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/room.cpp" line="65"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation type="unfinished">Σ: %1</translation>
+        <translation>Σ: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/room.cpp" line="72"/>
@@ -48135,27 +48135,27 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/engine/room.cpp" line="74"/>
         <source>Name=%1</source>
         <comment>The name of the room</comment>
-        <translation type="unfinished">Όνομα=%1</translation>
+        <translation>Όνομα=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/room.cpp" line="78"/>
         <source>Building=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>Κτίριο=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/room.cpp" line="81"/>
         <source>Capacity=%1</source>
-        <translation type="unfinished"></translation>
+        <translation>Χωρητικότητα=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/room.cpp" line="86"/>
         <source>Comments=%1</source>
-        <translation type="unfinished">Σχόλια=%1</translation>
+        <translation>Σχόλια=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/room.cpp" line="115"/>
         <source>Space constraints directly related to this room:</source>
-        <translation type="unfinished"></translation>
+        <translation>Χωρικοί περιορισμοί άμεσα σχετιζόμενοι με την αίθουσα αυτή:</translation>
     </message>
 </context>
 <context>
@@ -48165,49 +48165,49 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/roomsform.cpp" line="254"/>
         <location filename="../src/interface/roomsform.cpp" line="279"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform.cpp" line="125"/>
         <location filename="../src/interface/roomsform.cpp" line="254"/>
         <location filename="../src/interface/roomsform.cpp" line="279"/>
         <source>Invalid selected room</source>
-        <translation type="unfinished"></translation>
+        <translation>Μη αποδεκτή επιλογή αίθουσας</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform.cpp" line="132"/>
         <source>FET</source>
-        <translation type="unfinished">FET</translation>
+        <translation>FET</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform.cpp" line="133"/>
         <source>Are you sure you want to delete this room and all related constraints?</source>
-        <translation type="unfinished"></translation>
+        <translation>Είστε σίγουροι ότι θέλετε να διαγράψετε την αίθουσα αυτή καθώς και όλους τους περιορισμούς που σχετίζονται με την αίθουσα αυτή;</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform.cpp" line="134"/>
         <source>Yes</source>
-        <translation type="unfinished">Ναι</translation>
+        <translation>Ναι</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform.cpp" line="134"/>
         <source>No</source>
-        <translation type="unfinished">Όχι</translation>
+        <translation>Όχι</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform.cpp" line="288"/>
         <source>Room comments</source>
-        <translation type="unfinished"></translation>
+        <translation>Αίθουσα - σχόλια</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform.cpp" line="290"/>
         <source>OK</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform.cpp" line="292"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
 </context>
 <context>
@@ -48216,54 +48216,54 @@ Note: teacher not available and break are not counted as gaps.</source>
         <location filename="../src/interface/roomsform_template.ui" line="14"/>
         <source>Rooms</source>
         <extracomment>The name of the rooms dialog</extracomment>
-        <translation type="unfinished">Αίθουσες</translation>
+        <translation>Αίθουσες</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform_template.ui" line="56"/>
         <source>Add</source>
-        <translation type="unfinished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform_template.ui" line="70"/>
         <source>Remove</source>
-        <translation type="unfinished">Διαγραφή</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform_template.ui" line="81"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished">Πάνω</translation>
+        <translation>Πάνω</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform_template.ui" line="88"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished">Κάτω</translation>
+        <translation>Κάτω</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform_template.ui" line="95"/>
         <source>Comments</source>
-        <translation type="unfinished">Σχόλια</translation>
+        <translation>Σχόλια</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform_template.ui" line="106"/>
         <source>Sort</source>
-        <translation type="unfinished">Ταξινόμηση</translation>
+        <translation>Ταξινόμηση</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform_template.ui" line="113"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform_template.ui" line="63"/>
         <source>Modify</source>
-        <translation type="unfinished">Τροποποίηση</translation>
+        <translation>Τροποποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/roomsform_template.ui" line="26"/>
         <source>NOTE: each room can hold a single activity at the same time (you can add more rooms representing a very large room)</source>
-        <translation type="unfinished"></translation>
+        <translation>ΣΗΜΕΙΩΣΗ: η κάθε αίθουσα μπορεί να δεχθεί το πολύ μία δραστηριότητα σε κάθε περίοδο (μπορείτε να προσθέσετε περισσότερες -εικονικές- αίθουσες οι οποίες θα αναπαριστούν μία πολύ μεγάλη -πραγματική- αίθουσα)</translation>
     </message>
 </context>
 <context>
@@ -49418,22 +49418,22 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/savetimetableconfirmationform_template.ui" line="14"/>
         <source>Instructions and confirmation for saving data and timetable</source>
-        <translation type="unfinished"></translation>
+        <translation>Οδηγίες και επιβεβαίωση για την αποθήκευση δεδομένων και ωρολογίου προγράμματος</translation>
     </message>
     <message>
         <location filename="../src/interface/savetimetableconfirmationform_template.ui" line="23"/>
         <source>Don&apos;t show this again</source>
-        <translation type="unfinished">Να μην εμφανιστεί ξανά</translation>
+        <translation>Να μην εμφανιστεί ξανά</translation>
     </message>
     <message>
         <location filename="../src/interface/savetimetableconfirmationform_template.ui" line="43"/>
         <source>Continue</source>
-        <translation type="unfinished">Συνέχεια</translation>
+        <translation>Συνέχεια</translation>
     </message>
     <message>
         <location filename="../src/interface/savetimetableconfirmationform_template.ui" line="50"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
 </context>
 <context>
@@ -49446,17 +49446,17 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="487"/>
         <source>Yes</source>
-        <translation type="unfinished">Ναι</translation>
+        <translation>Ναι</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="490"/>
         <source>No</source>
-        <translation type="unfinished">Όχι</translation>
+        <translation>Όχι</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="560"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/addactivityform.cpp" line="561"/>
@@ -49489,7 +49489,7 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/settingstimetablehtmllevelform.cpp" line="81"/>
         <source>FET warning</source>
-        <translation type="unfinished">FET - Προειδοποίηση</translation>
+        <translation>FET - Προειδοποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/settingstimetablehtmllevelform.cpp" line="81"/>
@@ -49499,12 +49499,12 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/settingstimetablehtmllevelform.cpp" line="88"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/settingstimetablehtmllevelform.cpp" line="88"/>
         <source>This level might generate very large timetables, maybe 1 MB per file and 20 MB for all files of a timetable or even more. Are you sure you have enough disk space?</source>
-        <translation type="unfinished"></translation>
+        <translation>Το επίπεδο αυτό ενδεχομένως να παραγάγει πολύ μεγάλα ωρολόγια προγράμματα, πιθανώς της τάξης του 1MB ανά αρχείο και της τάξης των 20MB για όλα τα αρχεία ενός ωρολογίου προγράμματος ή και ακόμη μεγαλύτερα. Είστε σίγουροι πως έχετε αρκετό χώρο στο δίσκο σας;</translation>
     </message>
 </context>
 <context>
@@ -49512,7 +49512,7 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/settingstimetablehtmllevelform_template.ui" line="20"/>
         <source>The html level for generated timetables</source>
-        <translation type="unfinished"></translation>
+        <translation>Το επίπεδο html για τα ωρολόγια προγράμματα</translation>
     </message>
     <message>
         <location filename="../src/interface/settingstimetablehtmllevelform_template.ui" line="83"/>
@@ -49520,17 +49520,20 @@ not added - must be a duplicate</source>
 - all features of level 4 with around 3.5 times larger filesize than level 2
 - highlighting of same subjects, activity tags, teachers, students sets and rooms
 (needs JavaScript - just move mouse over a word and wait a little bit)</source>
-        <translation type="unfinished"></translation>
+        <translation>Επίπεδο 5 - JavaScript
+- όλα τα χαρακτηριστικά του επιπέδου 4 με περίπου 3,5, μεγαλύτερο μέγεθος αρχείων σε σχέση με το επίπεδο 2
+- τονισμένη προβολή των ίδιων αντικειμένων, ετικετών δραστηριοτήτων, εκπαιδευτικών, ομάδων μαθητών και αιθουσών
+(χρειάζεται JavaScript - απλά μετακινήστε το ποντίκι πάνω από μία λέξη και περιμένετε λίγο)</translation>
     </message>
     <message>
         <location filename="../src/interface/settingstimetablehtmllevelform_template.ui" line="133"/>
         <source>OK</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/settingstimetablehtmllevelform_template.ui" line="140"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
     <message>
         <location filename="../src/interface/settingstimetablehtmllevelform_template.ui" line="33"/>
@@ -49538,24 +49541,29 @@ not added - must be a duplicate</source>
 - less then 1 kb larger filesize than level 0
 - css file created to style elements table, caption, thead, tfoot, tbody, th and td
 - page-break after every or every second timetable (useful if you print timetables)</source>
-        <translation type="unfinished"></translation>
+        <translation>Επίπεδο 1 - βασικό css
+- λιγότερο από 1 kb μεγαλύτερο μέγεθος αρχείων από το επίπεδο 0
+- δημιουργία αρχείου css για την ρύθμιση στυλ των στοιχείων table, caption, thead, tfoot, tbody, th and td
+- αλλαγή σελίδας μετά από κάθε ένα ή κάθε δεύτερο ωρολόγιο πρόγραμμα (χρήσιμο αν θέλετε να τυπώσετε ωρολόγια προγράμματα)</translation>
     </message>
     <message>
         <location filename="../src/interface/settingstimetablehtmllevelform_template.ui" line="14"/>
         <source>Settings - html level of timetables dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Ρυθμίσεις - επίπεδο html των ωρολογίων προγραμμάτων (διάλογος)</translation>
     </message>
     <message>
         <location filename="../src/interface/settingstimetablehtmllevelform_template.ui" line="26"/>
         <source>Level 0 - no css (smallest filesize, no css file)</source>
-        <translation type="unfinished"></translation>
+        <translation>Επίπεδο 0 - χωρίς css (ελάχιστο μέγεθος αρχείων, χωρίς αρχείο css)</translation>
     </message>
     <message>
         <location filename="../src/interface/settingstimetablehtmllevelform_template.ui" line="43"/>
         <source>Level 2 - normal css (default)
 - all features of level 1 with around 5% larger filesize than level 1
 - style x-axis and y-axis of tablehead (useful to style width and height of the activity cells)</source>
-        <translation type="unfinished"></translation>
+        <translation>Επίπεδο 2 - σύνηθες css (προκαθορισμένο)
+- όλα τα χαρακτηριστικά του επιπέδου 1 με περίπου 5% μεγαλύτερο μέγεθος αρχείων σε σχέση με το επίπεδο 1
+- ρύθμιση στυλ του tablehead ως προς τους άξονες x και y (χρήσιμο για την ρύθμιση του πλάτους και ύψους των κελιών που περιέχουν τις δραστηριότητες)</translation>
     </message>
     <message>
         <location filename="../src/interface/settingstimetablehtmllevelform_template.ui" line="52"/>
@@ -49563,14 +49571,19 @@ not added - must be a duplicate</source>
 - all features of level 2 with around 2 times larger filesize than level 2
 - style (or hide) all subjects, activity tags, teachers, students sets and rooms
 - style (or hide) line 1, line 2 and line 3 of the activity cells</source>
-        <translation type="unfinished"></translation>
+        <translation>Επίπεδο 3 - προηγμένο css
+- όλα τα χαρακτηριστικά του επιπέδου 2 με περίπου 2 φορές μεγαλύτερο μέγεθος αρχείων σε σχέση με το επίπεδο 2
+- ρύθμιση στυλ (ή απόκρυψη) όλων των αντικειμένων, ετικετών δραστηριοτήτων, εκπαιδευτικών, ομάδων μαθητών και αιθουσών
+- ρύθμιση στυλ (ή απόκρυψη) γραμμής 1, γραμμής 2 και γραμμής 3 των κελιών που περιέρχουν τις δραστηριότητες</translation>
     </message>
     <message>
         <location filename="../src/interface/settingstimetablehtmllevelform_template.ui" line="68"/>
         <source>Level 4 - full css
 - all features of level 3 with around 2.5 times larger filesize than level 2
 - style every single subject, activity tag, teacher, students set and room</source>
-        <translation type="unfinished"></translation>
+        <translation>Επίπεδο 4 - πλήρες css
+- όλα τα χαρακτηριστικά του επιπέδου 3 με περίπου 2,5 φορές μεγαλύτερο μέγεθος αρχείων σε σχέση με το επίπεδο 2
+- ρύθμιση στυλ για κάθε επιμέρους αντικείμενο, ετικέτα δραστηριότητας, εκπαιδευτικό, ομάδα μαθητών και αίθουσα</translation>
     </message>
     <message>
         <location filename="../src/interface/settingstimetablehtmllevelform_template.ui" line="99"/>
@@ -49578,12 +49591,15 @@ not added - must be a duplicate</source>
 - all features of level 5 with around 4 times larger filesize than level 2
 - style the cell of every single subject, activity tag, teacher or student
 (also useful to hide activities with special activity tags)</source>
-        <translation type="unfinished"></translation>
+        <translation>Level 6 - υπερπλήρες css
+- όλα τα χαρακτηριστικά του επιπέδου 4 με περίπου 4 φορές μεγαλύτερο μέγεθος αρχείων σε σχέση με το επίπεδο 2
+- ρύθμιση στυλ του κελιού για κάθε επιμέρους αντικείμενο, ετικέτα δραστηριότητας, εκπαιδευτικό, ή ομάδα μαθητών
+(χρήσιμο επίσης για την απόκρυψη δραστηριοτήτων με συγκεκριμένες ετικέτες δραστηριοτήτων)</translation>
     </message>
     <message>
         <location filename="../src/interface/settingstimetablehtmllevelform_template.ui" line="111"/>
         <source>Level 7 - colors (level 3 plus colors)</source>
-        <translation type="unfinished"></translation>
+        <translation>Επίπεδο 7 - χρώματα (επίπεδο 3 + χρώματα)</translation>
     </message>
 </context>
 <context>
@@ -49606,7 +49622,7 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="130"/>
         <source>Splitting year: %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Κατάτμηση έτους: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="202"/>
@@ -49632,7 +49648,7 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="140"/>
         <source>Max subgroups per year: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Μέγιστα υποτμήματα ανά έτος: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="141"/>
@@ -49827,7 +49843,7 @@ not added - must be a duplicate</source>
         <location filename="../src/interface/splityearform.cpp" line="883"/>
         <source>Subgroups: %1</source>
         <comment>%1 is the number of subgroups</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Υποτμήματα: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform.cpp" line="416"/>
@@ -49920,158 +49936,158 @@ not added - must be a duplicate</source>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="14"/>
         <source>Split year dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Διάλογος κατάτμησης έτους</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="42"/>
         <source>Note: There are three global settings: hide subgroups in combo boxes/activity planning, and do not write subgroups timetables.</source>
-        <translation type="unfinished"></translation>
+        <translation>Σημείωση: Υπάρχουν τρεις καθολικές ρυθμίσεις: απόκρυψη υποτμημάτων στα σύνθετα πλαίσια/προγραμματισμό δραστηριοτήτων, και μη εγγραφή ωρολογίων προγραμμάτων των υποτμημάτων στον σκληρό δίσκο.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="63"/>
         <source>1</source>
-        <translation type="unfinished">1</translation>
+        <translation>1</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="73"/>
         <source>2</source>
-        <translation type="unfinished">2</translation>
+        <translation>2</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="83"/>
         <source>3</source>
-        <translation type="unfinished">3</translation>
+        <translation>3</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="93"/>
         <source>4</source>
-        <translation type="unfinished">4</translation>
+        <translation>4</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="103"/>
         <source>5</source>
-        <translation type="unfinished">5</translation>
+        <translation>5</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="113"/>
         <source>6</source>
-        <translation type="unfinished">6</translation>
+        <translation>6</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="123"/>
         <source>7</source>
-        <translation type="unfinished">7</translation>
+        <translation>7</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="133"/>
         <source>8</source>
-        <translation type="unfinished">8</translation>
+        <translation>8</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="143"/>
         <source>9</source>
-        <translation type="unfinished">9</translation>
+        <translation>9</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="153"/>
         <source>10</source>
-        <translation type="unfinished">10</translation>
+        <translation>10</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="163"/>
         <source>11</source>
-        <translation type="unfinished">11</translation>
+        <translation>11</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="173"/>
         <source>12</source>
-        <translation type="unfinished">12</translation>
+        <translation>12</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="183"/>
         <source>13</source>
-        <translation type="unfinished">13</translation>
+        <translation>13</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="193"/>
         <source>14</source>
-        <translation type="unfinished">14</translation>
+        <translation>14</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="208"/>
         <source>Add</source>
-        <translation type="unfinished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="215"/>
         <source>Remove</source>
-        <translation type="unfinished">Διαγραφή</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="229"/>
         <source>Modify</source>
-        <translation type="unfinished">Τροποποίηση</translation>
+        <translation>Τροποποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="236"/>
         <source>Remove all</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαγραφή όλων</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="340"/>
         <source>Subgroups: %1</source>
         <comment>%1 is the number of subgroups</comment>
-        <translation type="unfinished"></translation>
+        <translation>Υποτμήματα: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="396"/>
         <source>Separator character(s):</source>
-        <translation type="unfinished"></translation>
+        <translation>Χαρακτήρας(ες) διαχωρισμού:</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="360"/>
         <source>Limits:</source>
-        <translation type="unfinished"></translation>
+        <translation>Όρια:</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="445"/>
         <source>OK</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="452"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="438"/>
         <source>Help</source>
-        <translation type="unfinished">Βοήθεια</translation>
+        <translation>Βοήθεια</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="26"/>
         <source>VERY IMPORTANT: For generation feasibility, keep the number of categories and the number of subgroups to a minimum! It is recommended that no more than 2, 3 or maximum 4 categories to be used. Press Help for details.</source>
-        <translation type="unfinished"></translation>
+        <translation>ΠΟΛΥ ΣΗΜΑΝΤΙΚΟ: Προκειμένου να είναι εφικτή η επίλυση του ωρολογίου προγράμματος, διατηρήστε τον αριθμό των κατηγοριών και τον αριθμό των υποτμημάτων στο ελάχιστο! Συνιστάται να μην χρησιμοποιούνται περισσότερες από 2, 3 ή 4 το πολύ κατηγορίες. Παρακαλώ πιέστε στην &quot;Βοήθεια&quot; για λεπτομέρειες.</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="269"/>
         <source>Splitting year: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Κατάτμηση έτους: %1</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="292"/>
         <source>Divisions / Categories:</source>
-        <translation type="unfinished"></translation>
+        <translation>Κατατμήσεις / Κατηγορίες:</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="298"/>
         <source>0</source>
-        <translation type="unfinished"></translation>
+        <translation>0</translation>
     </message>
     <message>
         <location filename="../src/interface/splityearform_template.ui" line="431"/>
         <source>Reset</source>
-        <translation type="unfinished">Επαναφορά</translation>
+        <translation>Επαναφορά</translation>
     </message>
 </context>
 <context>
@@ -50681,7 +50697,7 @@ Please report error. FET will now abort current operation</source>
         <location filename="../src/interface/statisticsprintform.cpp" line="128"/>
         <source>None</source>
         <comment>Refers to a list of items, select none. Please keep translation short</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Κανένα</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="137"/>
@@ -50727,13 +50743,13 @@ Please report error. FET will now abort current operation</source>
         <location filename="../src/interface/statisticsprintform.cpp" line="159"/>
         <source>Page-break: none</source>
         <comment>No page-break between statistics. Please keep translation short</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Αλλαγή σελίδας: καμία</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="160"/>
         <source>Page-break: always</source>
         <comment>Page-break after each statistic. Please keep translation short</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Αλλαγή σελίδας: πάντα</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="161"/>
@@ -51024,7 +51040,7 @@ Bottom: %4</source>
         <location filename="../src/interface/statisticsprintform.cpp" line="441"/>
         <source>Preview</source>
         <comment>Full print preview. Please keep translation short</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Προεπισκόπηση</translation>
     </message>
     <message>
         <location filename="../src/interface/statisticsprintform.cpp" line="442"/>
@@ -51112,7 +51128,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/studentsstatisticsform.cpp" line="373"/>
         <source>No. of activities</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Αρ. δραστηριοτήτων</translation>
     </message>
     <message>
         <location filename="../src/interface/studentsstatisticsform.cpp" line="374"/>
@@ -51584,12 +51600,12 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/subgroupsform.cpp" line="536"/>
         <source>Activated a number of %1 activities</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ενεργοποιήθηκαν %1 δραστηριότητες</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform.cpp" line="564"/>
         <source>De-activated a number of %1 activities</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Απενεργοποιήθηκαν %1 δραστηριότητες</translation>
     </message>
 </context>
 <context>
@@ -51598,86 +51614,86 @@ Bottom: %4</source>
         <location filename="../src/interface/subgroupsform_template.ui" line="14"/>
         <source>Subgroups of students</source>
         <extracomment>The name of the dialog which lists the subgroups of students</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Μαθητές: &quot;Υποτμήματα&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="33"/>
         <source>Year</source>
-        <translation type="unfinished">Έτος</translation>
+        <translation>Έτος</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="50"/>
         <source>Group</source>
-        <translation type="unfinished">Τμήμα</translation>
+        <translation>Τμήμα</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="67"/>
         <source>Subgroup</source>
-        <translation type="unfinished">Υποτμήμα</translation>
+        <translation>Υποτμήμα</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="84"/>
         <source>Details</source>
-        <translation type="unfinished">Λεπτομέρειες</translation>
+        <translation>Λεπτομέρειες</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="103"/>
         <source>Add</source>
-        <translation type="unfinished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="110"/>
         <source>Modify</source>
-        <translation type="unfinished">Τροποποίηση</translation>
+        <translation>Τροποποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="117"/>
         <source>Remove here</source>
         <comment>It means &quot;Remove from here&quot; (but I want to keep the field shorter), remove the subgroup only from the current year/group. Please keep the translation short.</comment>
-        <translation type="unfinished">Διαγραφή εδώ</translation>
+        <translation>Διαγραφή εδώ</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="124"/>
         <source>Remove everywhere</source>
         <comment>It means &quot;Remove from everywhere&quot; (but I want to keep the field shorter), remove the subgroup from all the years/groups in which it appears. Please keep the translation short.</comment>
-        <translation type="unfinished">Διαγραφή παντού</translation>
+        <translation>Διαγραφή παντού</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="149"/>
         <source>Comments</source>
-        <translation type="unfinished">Σχόλια</translation>
+        <translation>Σχόλια</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="156"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished">Πάνω</translation>
+        <translation>Πάνω</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="163"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished">Κάτω</translation>
+        <translation>Κάτω</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="170"/>
         <source>Sort</source>
-        <translation type="unfinished">Ταξινόμηση</translation>
+        <translation>Ταξινόμηση</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="133"/>
         <source>Activate all activities for selected subgroup</source>
-        <translation type="unfinished"></translation>
+        <translation>Ενεργές όλες οι δραστηριότητες του επιλεγμένου υποτμήματος</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="140"/>
         <source>Deactivate all activities for selected subgroup</source>
-        <translation type="unfinished"></translation>
+        <translation>Ανενεργές όλες οι δραστηριότητες του επιλεγμένου υποτμήματος</translation>
     </message>
     <message>
         <location filename="../src/interface/subgroupsform_template.ui" line="177"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
 </context>
 <context>
@@ -51686,39 +51702,39 @@ Bottom: %4</source>
         <location filename="../src/engine/subject.cpp" line="42"/>
         <source>N:%1</source>
         <comment>The name of the subject</comment>
-        <translation type="unfinished">Ο:%1</translation>
+        <translation>Ο:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/subject.cpp" line="46"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation type="unfinished">Σ: %1</translation>
+        <translation>Σ: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/subject.cpp" line="53"/>
         <source>Subject</source>
-        <translation type="unfinished">Αντικείμενο</translation>
+        <translation>Αντικείμενο</translation>
     </message>
     <message>
         <location filename="../src/engine/subject.cpp" line="55"/>
         <source>Name=%1</source>
         <comment>The name of the subject</comment>
-        <translation type="unfinished">Όνομα=%1</translation>
+        <translation>Όνομα=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/subject.cpp" line="60"/>
         <source>Comments=%1</source>
-        <translation type="unfinished">Σχόλια=%1</translation>
+        <translation>Σχόλια=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/subject.cpp" line="72"/>
         <source>Time constraints directly related to this subject:</source>
-        <translation type="unfinished"></translation>
+        <translation>Χρονικοί περιορισμοί άμεσα σχετιζόμενοι με το αντικείμενο αυτό:</translation>
     </message>
     <message>
         <location filename="../src/engine/subject.cpp" line="83"/>
         <source>Space constraints directly related to this subject:</source>
-        <translation type="unfinished"></translation>
+        <translation>Χωρικοί περιορισμοί άμεσα σχετιζόμενοι με το αντικείμενο αυτό:</translation>
     </message>
 </context>
 <context>
@@ -51742,7 +51758,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="104"/>
         <source>Could not insert item. Must be a duplicate</source>
-        <translation type="unfinished">Αδύνατη η εισαγωγή στοιχείου. Πιθανότατα υπάρχει ήδη</translation>
+        <translation>Αδύνατη η εισαγωγή στοιχείου. Πιθανότατα υπάρχει ήδη</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="114"/>
@@ -51756,12 +51772,12 @@ Bottom: %4</source>
         <location filename="../src/interface/subjectsform.cpp" line="299"/>
         <location filename="../src/interface/subjectsform.cpp" line="306"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="114"/>
         <source>Incorrect name</source>
-        <translation type="unfinished">Λάθος όνομα</translation>
+        <translation>Λάθος όνομα</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="124"/>
@@ -51772,27 +51788,27 @@ Bottom: %4</source>
         <location filename="../src/interface/subjectsform.cpp" line="292"/>
         <location filename="../src/interface/subjectsform.cpp" line="306"/>
         <source>Invalid selected subject</source>
-        <translation type="unfinished">Μη αποδεκτή επιλογή αντικειμένου</translation>
+        <translation>Μη αποδεκτή επιλογή αντικειμένου</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="135"/>
         <source>FET</source>
-        <translation type="unfinished">FET</translation>
+        <translation>FET</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="136"/>
         <source>Are you sure you want to delete this subject and all related activities and constraints?</source>
-        <translation type="unfinished"></translation>
+        <translation>Είστε σίγουροι ότι θέλετε να διαγράψετε το αντικείμενο αυτό καθώς και όλες τις δραστηριότητες και όλους τους περιορισμούς που σχετίζονται με το αντικείμενο αυτό;</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="137"/>
         <source>Yes</source>
-        <translation type="unfinished">Ναι</translation>
+        <translation>Ναι</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="137"/>
         <source>No</source>
-        <translation type="unfinished">Όχι</translation>
+        <translation>Όχι</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="174"/>
@@ -51812,12 +51828,12 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="286"/>
         <source>Activated a number of %1 activities</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ενεργοποιήθηκαν %1 δραστηριότητες</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="299"/>
         <source>De-activated a number of %1 activities</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Απενεργοποιήθηκαν %1 δραστηριότητες</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="315"/>
@@ -51827,12 +51843,12 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="317"/>
         <source>OK</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform.cpp" line="319"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
 </context>
 <context>
@@ -51841,59 +51857,59 @@ Bottom: %4</source>
         <location filename="../src/interface/subjectsform_template.ui" line="14"/>
         <source>Subjects</source>
         <extracomment>Title of dialog</extracomment>
-        <translation type="unfinished">Αντικείμενα</translation>
+        <translation>Αντικείμενα</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform_template.ui" line="37"/>
         <source>Add</source>
-        <translation type="unfinished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform_template.ui" line="44"/>
         <source>Rename</source>
-        <translation type="unfinished">Μετονομασία</translation>
+        <translation>Μετονομασία</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform_template.ui" line="51"/>
         <source>Remove</source>
-        <translation type="unfinished">Διαγραφή</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform_template.ui" line="58"/>
         <source>Comments</source>
-        <translation type="unfinished">Σχόλια</translation>
+        <translation>Σχόλια</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform_template.ui" line="74"/>
         <source>Deactivate all activities for selected subject</source>
-        <translation type="unfinished"></translation>
+        <translation>Ανενεργές όλες οι δραστηριότητες για το επιλεγμένο αντικείμενο</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform_template.ui" line="83"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished">Πάνω</translation>
+        <translation>Πάνω</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform_template.ui" line="90"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished">Κάτω</translation>
+        <translation>Κάτω</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform_template.ui" line="97"/>
         <source>Sort</source>
-        <translation type="unfinished">Ταξινόμηση</translation>
+        <translation>Ταξινόμηση</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform_template.ui" line="104"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsform_template.ui" line="67"/>
         <source>Activate all activities for selected subject</source>
-        <translation type="unfinished"></translation>
+        <translation>Ενεργές όλες οι δραστηριότητες για το επιλεγμένο αντικείμενο</translation>
     </message>
 </context>
 <context>
@@ -51901,17 +51917,17 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/subjectsstatisticsform.cpp" line="53"/>
         <source>Subject</source>
-        <translation type="unfinished">Αντικείμενο</translation>
+        <translation>Αντικείμενο</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsstatisticsform.cpp" line="54"/>
         <source>No. of activities</source>
-        <translation type="unfinished"></translation>
+        <translation>Αρ. δραστηριοτήτων</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsstatisticsform.cpp" line="55"/>
         <source>Duration</source>
-        <translation type="unfinished">Διάρκεια</translation>
+        <translation>Διάρκεια</translation>
     </message>
 </context>
 <context>
@@ -51920,12 +51936,12 @@ Bottom: %4</source>
         <location filename="../src/interface/subjectsstatisticsform_template.ui" line="14"/>
         <source>Subjects statistics</source>
         <extracomment>Title of dialog</extracomment>
-        <translation type="unfinished">Στατιστικά αντικειμένων</translation>
+        <translation>Στατιστικά αντικειμένων</translation>
     </message>
     <message>
         <location filename="../src/interface/subjectsstatisticsform_template.ui" line="50"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
 </context>
 <context>
@@ -51934,30 +51950,30 @@ Bottom: %4</source>
         <location filename="../src/engine/teacher.cpp" line="50"/>
         <source>N:%1</source>
         <comment>The name of the teacher</comment>
-        <translation type="unfinished">Ο:%1</translation>
+        <translation>Ο:%1</translation>
     </message>
     <message>
         <location filename="../src/engine/teacher.cpp" line="54"/>
         <source>C: %1</source>
         <comment>Comments</comment>
-        <translation type="unfinished">Σ: %1</translation>
+        <translation>Σ: %1</translation>
     </message>
     <message>
         <location filename="../src/engine/teacher.cpp" line="61"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/engine/teacher.cpp" line="63"/>
         <source>Name=%1</source>
         <comment>The name of the teacher</comment>
-        <translation type="unfinished">Όνομα=%1</translation>
+        <translation>Όνομα=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/teacher.cpp" line="66"/>
         <source>Target number of hours=%1</source>
         <comment>The target number of hours for the teacher</comment>
-        <translation type="unfinished"></translation>
+        <translation>Επιδιωκόμενες ώρες=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/teacher.cpp" line="69"/>
@@ -51968,17 +51984,17 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/teacher.cpp" line="78"/>
         <source>Comments=%1</source>
-        <translation type="unfinished">Σχόλια=%1</translation>
+        <translation>Σχόλια=%1</translation>
     </message>
     <message>
         <location filename="../src/engine/teacher.cpp" line="90"/>
         <source>Time constraints directly related to this teacher:</source>
-        <translation type="unfinished"></translation>
+        <translation>Χρονικοί περιορισμοί άμεσα σχετιζόμενοι με τον εκπαιδευτικό αυτό :</translation>
     </message>
     <message>
         <location filename="../src/engine/teacher.cpp" line="101"/>
         <source>Space constraints directly related to this teacher:</source>
-        <translation type="unfinished"></translation>
+        <translation>Χωρικοί περιορισμοί άμεσα σχετιζόμενοι με τον εκπαιδευτικό αυτό:</translation>
     </message>
 </context>
 <context>
@@ -51995,43 +52011,43 @@ Bottom: %4</source>
         <location filename="../src/interface/teachersubjectsqualificationsform_template.ui" line="14"/>
         <source>Teacher subjects qualifications</source>
         <extracomment>This is the title of the dialog to input the qualification of teachers to teach certain subjects</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Εκπαιδευτικός - προσόντα για αντικείμενα</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersubjectsqualificationsform_template.ui" line="28"/>
         <source>Selected</source>
         <comment>It refers to a list of selected subjects</comment>
-        <translation type="unfinished"></translation>
+        <translation>Επιλεγμένα</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersubjectsqualificationsform_template.ui" line="41"/>
         <source>Clear</source>
-        <translation type="unfinished">Καθαρισμός</translation>
+        <translation>Καθαρισμός</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersubjectsqualificationsform_template.ui" line="58"/>
         <source>Subjects</source>
-        <translation type="unfinished">Αντικείμενα</translation>
+        <translation>Αντικείμενα</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersubjectsqualificationsform_template.ui" line="71"/>
         <source>All</source>
-        <translation type="unfinished"></translation>
+        <translation>Όλα</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersubjectsqualificationsform_template.ui" line="80"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersubjectsqualificationsform_template.ui" line="92"/>
         <source>OK</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersubjectsqualificationsform_template.ui" line="99"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
 </context>
 <context>
@@ -52147,12 +52163,12 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/teachersform.cpp" line="339"/>
         <source>Activated a number of %1 activities</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ενεργοποιήθηκαν %1 δραστηριότητες</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform.cpp" line="351"/>
         <source>De-activated a number of %1 activities</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Απενεργοποιήθηκαν %1 δραστηριότητες</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform.cpp" line="367"/>
@@ -52176,71 +52192,71 @@ Bottom: %4</source>
         <location filename="../src/interface/teachersform_template.ui" line="14"/>
         <source>Teachers</source>
         <extracomment>Title of dialog</extracomment>
-        <translation type="unfinished">Εκπαιδευτικοί</translation>
+        <translation>Εκπαιδευτικοί</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform_template.ui" line="37"/>
         <source>Add</source>
-        <translation type="unfinished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform_template.ui" line="44"/>
         <source>Rename</source>
-        <translation type="unfinished">Μετονομασία</translation>
+        <translation>Μετονομασία</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform_template.ui" line="51"/>
         <source>Remove</source>
-        <translation type="unfinished">Διαγραφή</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform_template.ui" line="58"/>
         <source>Comments</source>
-        <translation type="unfinished">Σχόλια</translation>
+        <translation>Σχόλια</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform_template.ui" line="69"/>
         <source>Target hours</source>
         <comment>It means the target number of hours for a teacher, but keep translation short</comment>
-        <translation type="unfinished"></translation>
+        <translation>Επιδιωκόμενες ώρες</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform_template.ui" line="76"/>
         <source>Qualified subjects</source>
         <comment>It means a list of qualified (allowed) subjects for the teacher. Keep translation short.</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Αντικείμενα εντός προσόντων</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform_template.ui" line="92"/>
         <source>Deactivate all activities for selected teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>Ανενεργές όλες οι δραστηριότητες για τον επιλεγμένο εκπαιδευτικό</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform_template.ui" line="101"/>
         <source>Up</source>
         <comment>It means move the item up in the list</comment>
-        <translation type="unfinished">Πάνω</translation>
+        <translation>Πάνω</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform_template.ui" line="108"/>
         <source>Down</source>
         <comment>It means move the item down in the list</comment>
-        <translation type="unfinished">Κάτω</translation>
+        <translation>Κάτω</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform_template.ui" line="115"/>
         <source>Sort</source>
-        <translation type="unfinished">Ταξινόμηση</translation>
+        <translation>Ταξινόμηση</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform_template.ui" line="122"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersform_template.ui" line="85"/>
         <source>Activate all activities for selected teacher</source>
-        <translation type="unfinished"></translation>
+        <translation>Ενεργές όλες οι δραστηριότητες για τον επιλεγμένο εκπαιδευτικό</translation>
     </message>
 </context>
 <context>
@@ -52248,23 +52264,23 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/teachersstatisticsform.cpp" line="110"/>
         <source>Teacher</source>
-        <translation type="unfinished">Εκπαιδευτικός</translation>
+        <translation>Εκπαιδευτικός</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersstatisticsform.cpp" line="111"/>
         <source>No. of activities</source>
-        <translation type="unfinished"></translation>
+        <translation>Αρ. δραστηριοτήτων</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersstatisticsform.cpp" line="112"/>
         <source>Duration</source>
-        <translation type="unfinished">Διάρκεια</translation>
+        <translation>Διάρκεια</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersstatisticsform.cpp" line="113"/>
         <source>Target duration</source>
         <comment>It means the target duration of activities for each teacher</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Επιδιωκόμενη διάρκεια</translation>
     </message>
 </context>
 <context>
@@ -52273,23 +52289,23 @@ Bottom: %4</source>
         <location filename="../src/interface/teachersstatisticsform_template.ui" line="14"/>
         <source>Teachers statistics</source>
         <extracomment>Title of dialog</extracomment>
-        <translation type="unfinished">Στατιστικά εκπαιδευτικών</translation>
+        <translation>Στατιστικά εκπαιδευτικών</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersstatisticsform_template.ui" line="23"/>
         <source>Options</source>
-        <translation type="unfinished">Επιλογές</translation>
+        <translation>Επιλογές</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersstatisticsform_template.ui" line="29"/>
         <source>Hide full teachers</source>
         <comment>It refers to teachers who have their number of hours fulfilled. Please keep translation short</comment>
-        <translation type="unfinished">Απόκρυψη πλήρων εκπαιδευτικών</translation>
+        <translation>Απόκρυψη πλήρων εκπαιδευτικών</translation>
     </message>
     <message>
         <location filename="../src/interface/teachersstatisticsform_template.ui" line="82"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
 </context>
 <context>
@@ -52817,7 +52833,7 @@ Bottom: %4</source>
         <location filename="../src/engine/timetableexport.cpp" line="9705"/>
         <location filename="../src/engine/timetableexport.cpp" line="9823"/>
         <source>Teachers&apos; Free Periods</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ελεύθερες περίοδοι εκπαιδευτικών</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="4625"/>
@@ -52848,7 +52864,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2228"/>
         <source>Activity Tags</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ετικέτες Δραστηριοτήτων</translation>
     </message>
     <message>
         <location filename="../src/engine/timetableexport.cpp" line="2524"/>
@@ -53771,7 +53787,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegenerateform.cpp" line="618"/>
         <source>Soft conflicts</source>
         <comment>Title of dialog</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ήπιες συγκρούσεις</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform.cpp" line="629"/>
@@ -53853,69 +53869,69 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegenerateform_template.ui" line="23"/>
         <source>Current stage:</source>
-        <translation type="unfinished"></translation>
+        <translation>Τρέχον στάδιο:</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform_template.ui" line="69"/>
         <source>Without stopping the simulation</source>
         <extracomment>This is the title of a group box with more buttons, and all buttons do their function without stopping the simulation</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Χωρίς διακοπή της προσομοίωσης</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform_template.ui" line="98"/>
         <source>Write current timetable</source>
-        <translation type="unfinished"></translation>
+        <translation>Εγγραφή τρέχοντος ωρολογίου προγράμματος</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform_template.ui" line="108"/>
         <source>Write highest stage timetable</source>
-        <translation type="unfinished"></translation>
+        <translation>Εγγραφή του πληρέστερου ωρολογίου</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform_template.ui" line="134"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform_template.ui" line="127"/>
         <source>Help</source>
-        <translation type="unfinished">Βοήθεια</translation>
+        <translation>Βοήθεια</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform_template.ui" line="17"/>
         <source>Generate new timetable</source>
         <extracomment>Title of dialog of generation of a new timetable</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Δημιουργία νέου ωρολογίου προγράμματος</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform_template.ui" line="40"/>
         <source>Stop simulation and...</source>
-        <translation type="unfinished"></translation>
+        <translation>Διακοπή προσομοίωσης και...</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform_template.ui" line="49"/>
         <source>View current timetable and impossible activities</source>
-        <translation type="unfinished"></translation>
+        <translation>Προβολή τρέχοντος ωρολογίου και αδιάθετων δραστηριοτήτων</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform_template.ui" line="59"/>
         <source>View highest stage timetable</source>
-        <translation type="unfinished"></translation>
+        <translation>Προβολή του πληρέστερου ωρολογίου</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform_template.ui" line="78"/>
         <source>View initial order of placing the activities</source>
-        <translation type="unfinished"></translation>
+        <translation>Προβολή αρχικής διάταξης της τοποθέτησης των δραστηριοτήτων</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform_template.ui" line="88"/>
         <source>View difficult activities</source>
-        <translation type="unfinished"></translation>
+        <translation>Προβολή δύσκολων στην τοποθέτησή τους δραστηριοτήτων</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegenerateform_template.ui" line="118"/>
         <source>Start</source>
-        <translation type="unfinished"></translation>
+        <translation>Έναρξη</translation>
     </message>
 </context>
 <context>
@@ -54007,7 +54023,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="243"/>
         <source>Limit for each timetable</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Όριο για κάθε ωρολόγιο</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="243"/>
@@ -54029,7 +54045,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="350"/>
         <source>Soft conflicts</source>
         <comment>Title of dialog</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ήπιες συγκρούσεις</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform.cpp" line="353"/>
@@ -54084,49 +54100,49 @@ Bottom: %4</source>
         <location filename="../src/interface/timetablegeneratemultipleform_template.ui" line="39"/>
         <source>Limit for each timetable</source>
         <extracomment>In fact this is the time limit for search of each timetable, but I keep length short</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Όριο για κάθε ωρολόγιο</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform_template.ui" line="64"/>
         <source>minutes</source>
         <extracomment>This is a label with the measure of time limit units for each timetable</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>λεπτά</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform_template.ui" line="74"/>
         <source>Number of timetables</source>
-        <translation type="unfinished"></translation>
+        <translation>Αριθμός ωρολογίων</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform_template.ui" line="98"/>
         <source>Start</source>
-        <translation type="unfinished"></translation>
+        <translation>Έναρξη</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform_template.ui" line="108"/>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Διακοπή</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform_template.ui" line="122"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform_template.ui" line="115"/>
         <source>Help</source>
-        <translation type="unfinished">Βοήθεια</translation>
+        <translation>Βοήθεια</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform_template.ui" line="14"/>
         <source>Generate multiple timetables</source>
         <extracomment>Title of dialog</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Δημιουργία πολλαπλών ωρολογίων προγραμμάτων</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablegeneratemultipleform_template.ui" line="20"/>
         <source>Current timetable: 0 out of 0 activities placed</source>
-        <translation type="unfinished"></translation>
+        <translation>Τρέχον ωρολόγιο πρόγραμμα: τοποθετήθηκαν 0 από 0 δραστηριότητες</translation>
     </message>
 </context>
 <context>
@@ -54139,37 +54155,37 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="167"/>
         <source>Subgroups</source>
-        <translation type="unfinished">Υποτμήματα</translation>
+        <translation>Υποτμήματα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="160"/>
         <source>Print timetable dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Διάλογος εκτύπωσης ωρολογίου προγράμματος</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="168"/>
         <source>Groups</source>
-        <translation type="unfinished">Τμήματα</translation>
+        <translation>Τμήματα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="169"/>
         <source>Years</source>
-        <translation type="unfinished">Έτη</translation>
+        <translation>Έτη</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="170"/>
         <source>Teachers</source>
-        <translation type="unfinished">Εκπαιδευτικοί</translation>
+        <translation>Εκπαιδευτικοί</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="172"/>
         <source>Rooms</source>
-        <translation type="unfinished">Αίθουσες</translation>
+        <translation>Αίθουσες</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="173"/>
         <source>Subjects</source>
-        <translation type="unfinished">Αντικείμενα</translation>
+        <translation>Αντικείμενα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="175"/>
@@ -54177,91 +54193,91 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableprintform.cpp" line="872"/>
         <location filename="../src/interface/timetableprintform.cpp" line="891"/>
         <source>All activities</source>
-        <translation type="unfinished"></translation>
+        <translation>Όλες οι δραστηριότητες</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="197"/>
         <source>Print</source>
-        <translation type="unfinished">Εκτύπωση</translation>
+        <translation>Εκτύπωση</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="199"/>
         <source>Days horizontal</source>
-        <translation type="unfinished">Ημέρες οριζόντια</translation>
+        <translation>Ημέρες οριζόντια</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="200"/>
         <source>Days vertical</source>
-        <translation type="unfinished"></translation>
+        <translation>Ημέρες κατακόρυφα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="201"/>
         <source>Time horizontal</source>
-        <translation type="unfinished">Χρόνος οριζόντια</translation>
+        <translation>Χρόνος οριζόντια</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="202"/>
         <source>Time vertical</source>
-        <translation type="unfinished"></translation>
+        <translation>Χρόνος κατακόρυφα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="220"/>
         <source>Options</source>
-        <translation type="unfinished">Επιλογές</translation>
+        <translation>Επιλογές</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="185"/>
         <source>All</source>
         <comment>Refers to a list of items, select all. Please keep translation short</comment>
-        <translation type="unfinished"></translation>
+        <translation>Όλα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="171"/>
         <source>Teachers&apos; Free Periods</source>
-        <translation type="unfinished"></translation>
+        <translation>Ελεύθερες περίοδοι εκπαιδευτικών</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="174"/>
         <source>Activity Tags</source>
-        <translation type="unfinished"></translation>
+        <translation>Ετικέτες Δραστηριοτήτων</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="176"/>
         <source>Students Statistics</source>
-        <translation type="unfinished"></translation>
+        <translation>Στατιστικά Μαθητών</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="177"/>
         <source>Teachers Statistics</source>
-        <translation type="unfinished"></translation>
+        <translation>Στατιστικά Εκπαιδευτικών</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="187"/>
         <source>None</source>
         <comment>Refers to a list of items, select none. Please keep translation short</comment>
-        <translation type="unfinished"></translation>
+        <translation>Κανένα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="206"/>
         <source>Time horizontal per day</source>
-        <translation type="unfinished"></translation>
+        <translation>Χρόνος οριζόντια ανά ημέρα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="207"/>
         <source>Time vertical per day</source>
-        <translation type="unfinished"></translation>
+        <translation>Χρόνος κατακόρυφα ανά ημέρα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="225"/>
         <source>Page-break: none</source>
         <comment>No page-break between timetables. Please keep translation short</comment>
-        <translation type="unfinished"></translation>
+        <translation>Αλλαγή σελίδας: καμία</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="226"/>
         <source>Page-break: always</source>
         <comment>Page-break after each timetable. Please keep translation short</comment>
-        <translation type="unfinished"></translation>
+        <translation>Αλλαγή σελίδας: πάντα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="227"/>
@@ -54542,24 +54558,24 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableprintform.cpp" line="513"/>
         <source>Preview</source>
         <comment>Full print preview. Please keep translation short</comment>
-        <translation type="unfinished"></translation>
+        <translation>Προεπισκόπηση</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="514"/>
         <source>Print</source>
         <comment>Please keep translation short</comment>
-        <translation type="unfinished">Εκτύπωση</translation>
+        <translation>Εκτύπωση</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="516"/>
         <source>Close</source>
         <comment>Please keep translation short</comment>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="780"/>
         <source>All teachers</source>
-        <translation type="unfinished">Όλοι οι εκπαιδευτικοί</translation>
+        <translation>Όλοι οι εκπαιδευτικοί</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="1097"/>
@@ -54576,7 +54592,7 @@ Bottom: %4</source>
         <location filename="../src/interface/timetableprintform.cpp" line="1412"/>
         <location filename="../src/interface/timetableprintform.cpp" line="1429"/>
         <source>FET warning</source>
-        <translation type="unfinished">FET - Προειδοποίηση</translation>
+        <translation>FET - Προειδοποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableprintform.cpp" line="1295"/>
@@ -54604,7 +54620,7 @@ Bottom: %4</source>
     <message>
         <location filename="../src/interface/timetableshowconflictsform_template.ui" line="20"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
 </context>
 <context>
@@ -55013,46 +55029,46 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="14"/>
         <source>View rooms days horizontal timetable</source>
         <extracomment>Title of dialog</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προβολή ωρολογίου προγράμματος: &quot;Αίθουσες - ημέρες οριζόντια&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="38"/>
         <source>Lock/unlock</source>
         <extracomment>This is a group box for locking/unlocking buttons</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Κλείδωμα / ξεκλείδωμα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="46"/>
         <source>Time</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Χρόνος</translation>
+        <translation>Χρόνος</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="53"/>
         <source>Space</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Χώρος</translation>
+        <translation>Χώρος</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="62"/>
         <source>Both</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Χρόνος + χώρος</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="84"/>
         <source>Help</source>
-        <translation type="unfinished">Βοήθεια</translation>
+        <translation>Βοήθεια</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="91"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomsdayshorizontalform_template.ui" line="112"/>
         <source>Room&apos;s name</source>
-        <translation type="unfinished"></translation>
+        <translation>Όνομα αίθουσας</translation>
     </message>
 </context>
 <context>
@@ -55080,7 +55096,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="988"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="994"/>
         <source>FET warning</source>
-        <translation type="unfinished">FET - Προειδοποίηση</translation>
+        <translation>FET - Προειδοποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="205"/>
@@ -55149,13 +55165,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1009"/>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1126"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="766"/>
         <source>Allocation in course.
 Please stop simulation before this.</source>
-        <translation type="unfinished">Κατάρτιση ωρολογίου προγράμματος σε εξέλιξη.
+        <translation>Κατάρτιση ωρολογίου προγράμματος σε εξέλιξη.
 Παρακαλώ σταματήστε την κατάρτιση πριν συνεχίσετε.</translation>
     </message>
     <message>
@@ -55254,7 +55270,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform.cpp" line="1193"/>
         <source>FET help</source>
-        <translation type="unfinished">FET - Βοήθεια</translation>
+        <translation>FET - Βοήθεια</translation>
     </message>
 </context>
 <context>
@@ -55263,75 +55279,75 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="14"/>
         <source>View rooms time horizontal timetable</source>
         <extracomment>Title of dialog to view the rooms timetable</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προβολή ωρολογίου προγράμματος: &quot;Αίθουσες - χρόνος οριζόντια&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="39"/>
         <source>Width</source>
-        <translation type="unfinished"></translation>
+        <translation>Πλάτος</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="46"/>
         <source>Height</source>
-        <translation type="unfinished"></translation>
+        <translation>Ύψος</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="70"/>
         <source>Lock</source>
-        <translation type="unfinished">Κλείδωμα</translation>
+        <translation>Κλείδωμα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="77"/>
         <source>Unlock</source>
-        <translation type="unfinished">Ξεκλείδωμα</translation>
+        <translation>Ξεκλείδωμα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="84"/>
         <source>Toggle</source>
-        <translation type="unfinished"></translation>
+        <translation>Αντιστροφή</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="100"/>
         <source>Students</source>
-        <translation type="unfinished">Μαθητές</translation>
+        <translation>Μαθητές</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="107"/>
         <source>Subjects</source>
-        <translation type="unfinished">Αντικείμενα</translation>
+        <translation>Αντικείμενα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="114"/>
         <source>Teachers</source>
-        <translation type="unfinished">Εκπαιδευτικοί</translation>
+        <translation>Εκπαιδευτικοί</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="132"/>
         <source>Time</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Χρόνος</translation>
+        <translation>Χρόνος</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="146"/>
         <source>Space</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Χώρος</translation>
+        <translation>Χώρος</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="160"/>
         <source>Both</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Χρόνος + χώρος</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="175"/>
         <source>Help</source>
-        <translation type="unfinished">Βοήθεια</translation>
+        <translation>Βοήθεια</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewroomstimehorizontalform_template.ui" line="182"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
 </context>
 <context>
@@ -55359,7 +55375,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="804"/>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="817"/>
         <source>FET warning</source>
-        <translation type="unfinished">FET - Προειδοποίηση</translation>
+        <translation>FET - Προειδοποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="229"/>
@@ -55532,7 +55548,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform.cpp" line="994"/>
         <source>FET help</source>
-        <translation type="unfinished">FET - Βοήθεια</translation>
+        <translation>FET - Βοήθεια</translation>
     </message>
 </context>
 <context>
@@ -55541,51 +55557,51 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform_template.ui" line="14"/>
         <source>View students days horizontal timetable</source>
         <extracomment>Title of dialog</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προβολή ωρολογίου προγράμματος: &quot;Μαθητές - ημέρες οριζόντια&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform_template.ui" line="39"/>
         <source>Lock/unlock</source>
         <extracomment>This is a group box for locking/unlocking buttons</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Κλείδωμα / ξεκλείδωμα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform_template.ui" line="47"/>
         <source>Time</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Χρόνος</translation>
+        <translation>Χρόνος</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform_template.ui" line="54"/>
         <source>Space</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Χώρος</translation>
+        <translation>Χώρος</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform_template.ui" line="63"/>
         <source>Both</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Χρόνος + χώρος</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform_template.ui" line="85"/>
         <source>Help</source>
-        <translation type="unfinished">Βοήθεια</translation>
+        <translation>Βοήθεια</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform_template.ui" line="92"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform_template.ui" line="117"/>
         <source>Class name</source>
-        <translation type="unfinished"></translation>
+        <translation>Όνομα τάξης</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentsdayshorizontalform_template.ui" line="147"/>
         <source>Details</source>
-        <translation type="unfinished">Λεπτομέρειες</translation>
+        <translation>Λεπτομέρειες</translation>
     </message>
 </context>
 <context>
@@ -55621,7 +55637,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1182"/>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1188"/>
         <source>FET warning</source>
-        <translation type="unfinished">FET - Προειδοποίηση</translation>
+        <translation>FET - Προειδοποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="486"/>
@@ -55773,7 +55789,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform.cpp" line="1387"/>
         <source>FET help</source>
-        <translation type="unfinished">FET - Βοήθεια</translation>
+        <translation>FET - Βοήθεια</translation>
     </message>
 </context>
 <context>
@@ -55782,70 +55798,70 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="14"/>
         <source>View students time horizontal timetable</source>
         <extracomment>Title of dialog to view the students timetable</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προβολή ωρολογίου προγράμματος: &quot;Μαθητές - χρόνος οριζόντια&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="39"/>
         <source>Width</source>
-        <translation type="unfinished"></translation>
+        <translation>Πλάτος</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="46"/>
         <source>Height</source>
-        <translation type="unfinished"></translation>
+        <translation>Ύψος</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="70"/>
         <source>Lock</source>
-        <translation type="unfinished">Κλείδωμα</translation>
+        <translation>Κλείδωμα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="77"/>
         <source>Unlock</source>
-        <translation type="unfinished">Ξεκλείδωμα</translation>
+        <translation>Ξεκλείδωμα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="84"/>
         <source>Toggle</source>
-        <translation type="unfinished"></translation>
+        <translation>Αντιστροφή</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="100"/>
         <source>Teachers</source>
-        <translation type="unfinished">Εκπαιδευτικοί</translation>
+        <translation>Εκπαιδευτικοί</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="107"/>
         <source>Subjects</source>
-        <translation type="unfinished">Αντικείμενα</translation>
+        <translation>Αντικείμενα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="125"/>
         <source>Time</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Χρόνος</translation>
+        <translation>Χρόνος</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="139"/>
         <source>Space</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Χώρος</translation>
+        <translation>Χώρος</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="153"/>
         <source>Both</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Χρόνος + χώρος</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="168"/>
         <source>Help</source>
-        <translation type="unfinished">Βοήθεια</translation>
+        <translation>Βοήθεια</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewstudentstimehorizontalform_template.ui" line="175"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
 </context>
 <context>
@@ -55871,7 +55887,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="703"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="716"/>
         <source>FET warning</source>
-        <translation type="unfinished">FET - Προειδοποίηση</translation>
+        <translation>FET - Προειδοποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="187"/>
@@ -55936,13 +55952,13 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="731"/>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="850"/>
         <source>FET information</source>
-        <translation type="unfinished">FET - Πληροφορίες</translation>
+        <translation>FET - Πληροφορίες</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="543"/>
         <source>Allocation in course.
 Please stop simulation before this.</source>
-        <translation type="unfinished">Κατάρτιση ωρολογίου προγράμματος σε εξέλιξη.
+        <translation>Κατάρτιση ωρολογίου προγράμματος σε εξέλιξη.
 Παρακαλώ σταματήστε την κατάρτιση πριν συνεχίσετε.</translation>
     </message>
     <message>
@@ -56025,7 +56041,7 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform.cpp" line="893"/>
         <source>FET help</source>
-        <translation type="unfinished">FET - Βοήθεια</translation>
+        <translation>FET - Βοήθεια</translation>
     </message>
 </context>
 <context>
@@ -56034,46 +56050,46 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform_template.ui" line="14"/>
         <source>View teachers days horizontal timetable</source>
         <extracomment>Title of dialog to view the teachers timetable</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προβολή ωρολογίου προγράμματος: &quot;Εκπαιδευτικοί - ημέρες οριζόντια&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform_template.ui" line="38"/>
         <source>Lock/unlock</source>
         <extracomment>This is a group box for locking/unlocking buttons</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Κλείδωμα / ξεκλείδωμα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform_template.ui" line="46"/>
         <source>Time</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Χρόνος</translation>
+        <translation>Χρόνος</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform_template.ui" line="53"/>
         <source>Space</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Χώρος</translation>
+        <translation>Χώρος</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform_template.ui" line="62"/>
         <source>Both</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Χρόνος + χώρος</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform_template.ui" line="84"/>
         <source>Help</source>
-        <translation type="unfinished">Βοήθεια</translation>
+        <translation>Βοήθεια</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform_template.ui" line="91"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteachersdayshorizontalform_template.ui" line="112"/>
         <source>Teacher&apos;s name</source>
-        <translation type="unfinished"></translation>
+        <translation>Όνομα εκπαιδευτικού</translation>
     </message>
 </context>
 <context>
@@ -56278,70 +56294,70 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="14"/>
         <source>View teachers time horizontal timetable</source>
         <extracomment>Title of dialog to view the teachers timetable</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Προβολή ωρολογίου προγράμματος: &quot;Εκπαιδευτικοί - χρόνος οριζόντια&quot;</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="39"/>
         <source>Width</source>
-        <translation type="unfinished"></translation>
+        <translation>Πλάτος</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="46"/>
         <source>Height</source>
-        <translation type="unfinished"></translation>
+        <translation>Ύψος</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="70"/>
         <source>Lock</source>
-        <translation type="unfinished">Κλείδωμα</translation>
+        <translation>Κλείδωμα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="77"/>
         <source>Unlock</source>
-        <translation type="unfinished">Ξεκλείδωμα</translation>
+        <translation>Ξεκλείδωμα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="84"/>
         <source>Toggle</source>
-        <translation type="unfinished"></translation>
+        <translation>Αντιστροφή</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="100"/>
         <source>Students</source>
-        <translation type="unfinished">Μαθητές</translation>
+        <translation>Μαθητές</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="107"/>
         <source>Subjects</source>
-        <translation type="unfinished">Αντικείμενα</translation>
+        <translation>Αντικείμενα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="125"/>
         <source>Time</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Χρόνος</translation>
+        <translation>Χρόνος</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="139"/>
         <source>Space</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished">Χώρος</translation>
+        <translation>Χώρος</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="153"/>
         <source>Both</source>
         <extracomment>This is a button in a timetable view dialog (There are 3 buttons in total, user can toggle locked/unlocked time, space or both).</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Χρόνος + χώρος</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="168"/>
         <source>Help</source>
-        <translation type="unfinished">Βοήθεια</translation>
+        <translation>Βοήθεια</translation>
     </message>
     <message>
         <location filename="../src/interface/timetableviewteacherstimehorizontalform_template.ui" line="175"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
 </context>
 <context>
@@ -56349,97 +56365,97 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="14"/>
         <source>Select the categories of timetables to be written on disk</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιλογή κατηγοριών ωρολογίων προγραμμάτων προς εγγραφή στον δίσκο</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="31"/>
         <source>Soft conflicts</source>
-        <translation type="unfinished"></translation>
+        <translation>Ήπιες συγκρούσεις</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="53"/>
         <source>Subgroups</source>
-        <translation type="unfinished">Υποτμήματα</translation>
+        <translation>Υποτμήματα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="63"/>
         <source>Groups</source>
-        <translation type="unfinished">Τμήματα</translation>
+        <translation>Τμήματα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="73"/>
         <source>Years</source>
-        <translation type="unfinished">Έτη</translation>
+        <translation>Έτη</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="83"/>
         <source>Teachers</source>
-        <translation type="unfinished">Εκπαιδευτικοί</translation>
+        <translation>Εκπαιδευτικοί</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="93"/>
         <source>Teachers free periods</source>
-        <translation type="unfinished"></translation>
+        <translation>Εκπαιδευτικοί - ελεύθερες περίοδοι</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="103"/>
         <source>Rooms</source>
-        <translation type="unfinished">Αίθουσες</translation>
+        <translation>Αίθουσες</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="113"/>
         <source>Subjects</source>
-        <translation type="unfinished">Αντικείμενα</translation>
+        <translation>Αντικείμενα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="123"/>
         <source>Activities</source>
-        <translation type="unfinished">Δραστηριότητες</translation>
+        <translation>Δραστηριότητες</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="133"/>
         <source>Activity tags</source>
-        <translation type="unfinished">Ετικέτες δραστηριοτήτων</translation>
+        <translation>Ετικέτες δραστηριοτήτων</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="155"/>
         <source>Statistics</source>
-        <translation type="unfinished">Στατιστικά</translation>
+        <translation>Στατιστικά</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="165"/>
         <source>XML</source>
-        <translation type="unfinished">XML</translation>
+        <translation>XML</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="175"/>
         <source>Days horizontal</source>
-        <translation type="unfinished">Ημέρες οριζόντια</translation>
+        <translation>Ημέρες οριζόντια</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="185"/>
         <source>Days vertical</source>
-        <translation type="unfinished"></translation>
+        <translation>Ημέρες κατακόρυφα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="195"/>
         <source>Time horizontal</source>
-        <translation type="unfinished">Χρόνος οριζόντια</translation>
+        <translation>Χρόνος οριζόντια</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="205"/>
         <source>Time vertical</source>
-        <translation type="unfinished"></translation>
+        <translation>Χρόνος κατακόρυφα</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="248"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
     <message>
         <location filename="../src/interface/timetablestowriteondiskform_template.ui" line="255"/>
         <source>OK</source>
-        <translation type="unfinished">ΟΚ</translation>
+        <translation>ΟΚ</translation>
     </message>
 </context>
 <context>
@@ -56449,7 +56465,7 @@ Please stop simulation before this.</source>
         <location filename="../src/interface/centerwidgetonscreen.cpp" line="234"/>
         <location filename="../src/interface/centerwidgetonscreen.cpp" line="247"/>
         <source>FET warning</source>
-        <translation type="unfinished">FET - Προειδοποίηση</translation>
+        <translation>FET - Προειδοποίηση</translation>
     </message>
     <message>
         <location filename="../src/interface/centerwidgetonscreen.cpp" line="223"/>
@@ -56521,12 +56537,12 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/yearsform.cpp" line="273"/>
         <source>Activated a number of %1 activities</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ενεργοποιήθηκαν %1 δραστηριότητες</translation>
     </message>
     <message>
         <location filename="../src/interface/yearsform.cpp" line="285"/>
         <source>De-activated a number of %1 activities</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Απενεργοποιήθηκαν %1 δραστηριότητες</translation>
     </message>
     <message>
         <location filename="../src/interface/yearsform.cpp" line="317"/>
@@ -56575,12 +56591,12 @@ Please stop simulation before this.</source>
     <message>
         <location filename="../src/interface/yearsform_template.ui" line="74"/>
         <source>Activate all activities for selected year</source>
-        <translation>Ενεργοποίηση όλων των δραστηριότητων για το επιλεγμένο έτος</translation>
+        <translation>Ενεργές όλες οι δραστηριότητες για το επιλεγμένο έτος</translation>
     </message>
     <message>
         <location filename="../src/interface/yearsform_template.ui" line="81"/>
         <source>Deactivate all activities for selected year</source>
-        <translation type="unfinished">Απενεργοποίηση όλων των δραστηριότητων για το επιλεγμένο έτος</translation>
+        <translation>Ανενεργές όλες οι δραστηριότητες για το επιλεγμένο έτος</translation>
     </message>
     <message>
         <location filename="../src/interface/yearsform_template.ui" line="90"/>
