@@ -438,7 +438,7 @@ void GroupActivitiesInInitialOrderItemsForm::itemComments()
 
 	QDialog getCommentsDialog(this);
 	
-	getCommentsDialog.setWindowTitle(tr("Group activities in initial form item comments"));
+	getCommentsDialog.setWindowTitle(tr("Group activities in initial order item comments"));
 	
 	QPushButton* okPB=new QPushButton(tr("OK"));
 	okPB->setDefault(true);
